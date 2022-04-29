@@ -6,9 +6,9 @@ Let’s now connect to our Cosmos DB Cosmos DB Core (SQL) API analytical store u
 
 1.	Expand the **AdventureWorksSQL linked service** in the explorer view and click on the **Sale container (1)**
 
-2.	Click on the **Actions ellipsis “…”**
+2.	Right click the **Sales container (1)**.
 
-3.	Click on **new notebook** to expose the list of New SQL Script actions **(3)** 
+3.	Click on **New SQL script (3)** 
 
 4.	Click on Select TOP 100 rows **(4)**, to load a SQL script window to retrieve the top 100 records from the Linked Server and its associated analytical store.
  

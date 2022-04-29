@@ -4,8 +4,8 @@ metadata:
   title: Features of Azure Monitor logs
   description: Features of Azure Monitor logs
   ms.date: 09/06/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Features of Azure Monitor logs
@@ -36,4 +36,4 @@ quiz:
       explanation: "You might be able to track which users are connecting to your system, but items such as passwords are not recorded."
     - content: "Email notifications and errors"
       isCorrect: false
-      explanation: "Use Azure Monitor to send an email notification for Azure Security Center alerts. Azure Security Center allows you to provide a security contact that will receive email notifications for security alerts."
+      explanation: "Use Azure Monitor to send an email notification for Microsoft Defender for Cloud alerts. Microsoft Defender for Cloud allows you to provide a security contact that will receive email notifications for security alerts."

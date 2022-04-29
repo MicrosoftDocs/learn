@@ -8,9 +8,11 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 ## Find your connection details
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
-1. Go to the storage account. Select **All resources** > **extendcadfiles**.
-1. Under **Security + networking**, select **Access keys**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. Go to the storage account. Select **All resources** > **extendcadfiles**. Your **Storage account** pane appears.
+
+1. In the middle menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
 
    ![Screenshot of the Access keys option under Security + settings.](../media/10-access-keys-option.png)
 
@@ -19,38 +21,48 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 ## Create a mapped drive to the Azure file share
 
 1. If you closed your Remote Desktop connection, use these steps to connect to the VM:
-    1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+    1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
     1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File**, and then open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
     1. Enter the user name **learnadmin** and the password you used when you created the VM.
+
 1. On the toolbar, select **File Explorer**, and then select **This PC**.
+
 1. In the menu at the top of the window, select **Computer** > **Map network drive**.
+
 1. In the **Folder** box, enter **\\\extendcadfiles.file.core.windows.net\cadfileshare**.
+
 1. Select **Connect using different credentials**.
+
 1. Select **Finish**.
+
 1. For the user name, enter **AZURE\extendcadfiles**.
+
 1. For the password, paste in the key you copied in the previous section.
+
 1. Select **OK**.
 
 ## Check the file sync
 
 1. Open a new File Explorer window.
-1. Put the two File Explorer windows side by side, with D:\CADFolder on the left and the mapped cadfileshare on the right:
+
+1. Put the two File Explorer windows side by side, with D:\\CADFolder on the left, and the mapped cadfileshare on the right:
 
     ![Screenshot of two File Explorer windows side by side.](../media/10-side-by-side.png)
 
-1. In the left window, below **CADFolder**, right-click and select **New** > **Text Document**.
+1. In the left window, below **CADFolder**, right-click, and select **New** > **Text Document**.
+
 1. Rename the file to **test**.
+
 1. Confirm that the file replicates to the Azure file share in the right window.
 
 ## Create an invalid file
 
 1. Go to the **CADFolder** folder in both windows.
-1. Open **create-bad-file.js** in the left window.
-   
-   A new file named **invalid╘«nameÉ.txt** will be created.
-   
+
+1. Open **create-bad-file.js** in the left window. A new file named **invalid╘«nameÉ.txt** will be created.
+
    This file won't replicate into the Azure file share.
 
 ## Troubleshoot file synchronization
@@ -60,11 +72,13 @@ You can troubleshoot on your on-premises server or in the Azure portal. Syncing 
 ### View the file sync issue on Windows Server
 
 1. Right-click **Start** and select **Windows PowerShell (Admin)**.
+
 1. In the console, move to the File Sync folder:
 
     ```powershell
     cd 'C:\Program Files\Azure\StorageSyncAgent\'
     ```
+
 1. Run the error report script:
 
     ```powershell
@@ -80,8 +94,11 @@ You can troubleshoot on your on-premises server or in the Azure portal. Syncing 
 ### View the file sync problem in the Azure portal
 
 1. On your local computer, return to the Azure portal.
+
 1. Go to the sync group. Select **All resources** > **CADSyncService** > **CADFiles**.
+
 1. Under server endpoints, select **FileServerLocal**.
+
 1. Next to **Transient**, select **1 files**. It might take a few minutes for the file to show up.
 
     ![Screenshot of Server Endpoint Properties showing a transient error.](../media/10-transient-error.png)
@@ -93,7 +110,9 @@ Because the file sync problems just started, they're listed as transient. If the
 ### Resolve the file sync
 
 1. Return to the Remote Desktop connection.
-1. Remove the invalid characters from the file name. In the left File Explorer, rename the **invalid╘«nameÉ.txt** file to **valid-name**.
+
+1. Remove the invalid characters from the filename. In the left File Explorer, rename the **invalid╘«nameÉ.txt** file to **valid-name**.
+
 1. The file should now sync. Confirm the sync works by running this command again:
 
     ```powershell

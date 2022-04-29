@@ -45,6 +45,3 @@ You’ll be able to reverse the restriction of applications from running at any 
 Once you have selected Restrict app execution on the device page, type a comment and select Confirm. The Action center will show the scan information, and the device timeline will include a new event.
 
 When an app is restricted, a notification is displayed to inform the user that an app is being restricted from running.
-
-
-

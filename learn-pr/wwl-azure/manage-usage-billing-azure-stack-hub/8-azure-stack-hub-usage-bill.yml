@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.usage-billing-faq
+title: Azure Stack Hub usage and billing frequently asked questions
+metadata:
+  title: Azure Stack Hub usage and billing frequently asked questions
+  description: "Azure Stack Hub usage and billing frequently asked questions"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-azure-stack-hub-usage-bill.md)]

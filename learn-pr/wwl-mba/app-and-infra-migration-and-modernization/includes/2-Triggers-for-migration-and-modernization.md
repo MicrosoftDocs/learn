@@ -2,10 +2,16 @@ Keeping up with the speed of change in the business world is challenging. Techno
 
 Businesses that decide to adopt the cloud are often motivated by specific triggers.
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to understand common triggers to modernize your apps.|
+:::column:::
+Watch this video to understand common triggers to modernize your apps.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Vt]
 
@@ -22,19 +28,28 @@ A great online shopping experience begins with great software, and Alaska Airlin
 
 -----------------------
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.|
+:::column:::
+Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2WRoM]
 
 As you saw in the video, Alaska Airlines migrated from a traditional online shopping experience hosted in physical machines to running their applications on Azure. This shift allows Alaska Airlines to deploy faster, iterate rapidly, and experiment to find out what works best for their customers.
 
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
-|
+:::column:::
+*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
+
+:::column-end:::
+:::row-end:::
 
 Now that we’ve explored common modernization triggers, let’s look more closely at application portfolio modernization.

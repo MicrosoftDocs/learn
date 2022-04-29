@@ -2,29 +2,30 @@
 uid: learn.endpoint-manager-fundamentals
 metadata:
   title: Microsoft Endpoint Manager fundamentals
-  description: This learning path help you understand the fundamentals concepts involved in managing your endpoint environment.
+  description: This learning path will help you understand the fundamentals concepts involved in managing your endpoint environment.
   brand: azure
-  ms.date: 10/27/2020
+  ms.date: 03/25/2022
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Endpoint Manager fundamentals
 summary: | 
-  This learning path helps you understand the fundamental concepts involved in managing your endpoint environment.
+  This learning path will help you understand how to manage and protect your organization's data, devices, and apps. The first module explains the products and services that encompass Microsoft Endpoint Manager, as well as the value that each provides. You'll learn about the Endpoint Manager environment and the supported platforms, such iOS, Windows, and Android. As part of managing devices, you'll understand security rules, compliance policies, and access rights. For app management, you learn how apps can be assigned, managed, and protected. You'll also learn about configuring apps, protecting app data, managing app policy assignments, and implementing app security rules. 
+  
+  There are several benefits of using Microsoft Endpoint Manager for your organization. These benefits are explained, including how Microsoft Endpoint Manager increases security and productivity, provides flexibility, and maximizes your investment.
 
   By completing this learning path, you'll:
 
   - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
   - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
-  - Understand endpoint management considerations involving the endpoint environment and available platforms. 
+  - Understand endpoint management considerations involving the endpoint environment and available platforms.
   - Learn about managing and protecting your organization's devices, apps and data.
   - Understand the how your organization's devices can be provisioned.
   - Learn about configuring and managing device security.
   - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
-  - Understand the device management lifecycle.
-  - Understand the how your organization's apps can be can be configured and protected.
-  - Understand the app management lifecycle.
+  - Understand the device and app management lifecycles.
+  - Understand how your organization's apps can be configured and protected.
   - Understand how trusted users can access organizational resources on trusted devices using trusted apps.
   - Learn how to analyze and resolve endpoint compliance issues.
   - Understand the benefits of using Microsoft Endpoint Manager.

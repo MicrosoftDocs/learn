@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Take your first DevOps steps by using an Agile approach and Azure Boards.
   ms.date: 05/20/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: kathrynee
+  ms.author: kaelli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

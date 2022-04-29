@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-services-for-azure-stack-hub.delegate-offers
+title: Delegate offers
+metadata:
+  title: Delegate offers
+  description: "Delegate offers"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-delegate-offers.md)]

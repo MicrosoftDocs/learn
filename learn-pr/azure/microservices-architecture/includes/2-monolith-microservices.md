@@ -12,7 +12,7 @@ All the services are contained within a single unit. This arrangement brings cha
 
 - Difficult to scale services independently.
 - Complex to develop and manage deployments as the codebase grows, which slows releases and new feature implementation.
-- Tied to a single technology stack, which limits innovation in new platforms and SDKs.
+- The architecture is tied to a single technology stack, which limits innovation in new platforms and SDKs.
 - Data schema updates can be increasingly difficult.
 
 These challenges can be addressed by looking at alternative architectures, such as a microservices architecture.
@@ -27,7 +27,7 @@ A microservice is small enough that a single small team of developers can write 
 
 Each service is typically responsible for its own data. Its data structure is isolated, so upgrades or changes to schema aren't dependent on other services. Requests for data typically are handled through APIs and provide a well-defined and consistent access model. Internal implementation details are hidden from service consumers.
 
-Because each service is independent, they can use different technology stacks, frameworks, and SDKs. It's common to see services rely on REST calls for service-to-service communication by using well-defined APIs instead of RPC or other custom communication methods.
+Because each service is independent, they can use different technology stacks, frameworks, and SDKs. It's common to see services rely on REST calls for service-to-service communication by using well-defined APIs instead of remote procedure calls (RPCs) or other custom communication methods.
 
 Microservice architectures are technology agnostic, but you often see containers or serverless technologies used for their implementation. Continuous deployment and continuous integration (CI/CD) is frequently used to increase the speed and quality of development activities.
 
@@ -58,7 +58,7 @@ Teams can pick the technology that best fits their service. They can use a mix o
 
 #### Resiliency
 
-If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly. An example is by implementing circuit breaking). The benefit to your end users or service consumers is an always-on experience for your application.
+If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
 
 #### Scalability
 

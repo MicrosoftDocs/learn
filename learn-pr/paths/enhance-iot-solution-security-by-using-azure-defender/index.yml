@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender
+metadata:
+  title: Enhance IoT solution security by using Azure Defender for IoT
+  description: Enhance IoT solution security by using Azure Defender for IoT
+  ms.date: 01/07/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enhance IoT solution security by using Azure Defender for IoT
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+  - Describe the features and capabilities of Azure IoT Edge.
+  - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
+summary: |
+  You will learn about security considerations that apply at each level of the solution and the Azure services and tools that can be configured to address security concerns from the ground up.
+iconUrl: /learn/achievements/azure-defender-security-solution.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-defender-iot
+- azure-iot-edge
+- azure-iot-hub
+- azure-iot-sdk
+- azure-portal
+- azure-security-center
+modules:
+- learn.wwl.examine-security-fundamentals-for-iot
+- learn.wwl.examine-azure-security-center-azure-defender-for-iot
+- learn.wwl.examine-azure-defender-for-iot-security-agents
+- learn.wwl.explore-azure-defender-for-iot-implementation
+trophy:
+  uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender.trophy

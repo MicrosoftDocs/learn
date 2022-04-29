@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "To use HorovodRunner, we have to set the number of processes by specifying the parameter `np`. What should the value for `np` be if we want to train on a single node?"
+    choices:
+    - content: "`np=2`"
+      isCorrect: false
+      explanation: "That's incorrect. This uses a cluster with two workers."
+    - content: "`np=-1`"
+      isCorrect: true
+      explanation: "That's correct. This will train the model using a single process on the driver node."
+    - content: "`np=1`"
+      isCorrect: false
+      explanation: "That's incorrect. This uses a cluster with one driver and one worker."
+  - content: "In the Horovod training script, what is the primary purpose of hvd.callbacks.BroadcastGlobalVariablesCallback(0) callback?"
+    choices:
+    - content: "To ensure consistent initialization of all workers when training is started with random weights or restored from a checkpoint."
+      isCorrect: true
+      explanation: "That's correct. It is important to start all workers with the same initial state."
+    - content: "To average metrics among workers at the end of every epoch."
+      isCorrect: false
+      explanation: "That's incorrect. The correct callback to average metrics among workers at the end of every epoch is hvd.callbacks.MetricAverageCallback()."
+    - content: "Reduce the learning rate if training plateaus."
+      isCorrect: false
+      explanation: "That's incorrect. The correct callback to reduce the learning rate if training plateaus is ReduceLROnPlateau(patience=…)."

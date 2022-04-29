@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
   ms.date: 02/10/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.games-and-platforms.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the accessibility best practices for games and platforms module.
+  ms.date: 11/23/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 2
+content: |
+  [!include[](includes/00-introduction.md)]

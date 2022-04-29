@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.implement-azure-key-vault
+metadata:
+  title: Implement Azure Key Vault
+  description: "Implement Azure Key Vault"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Azure Key Vault
+summary: Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets by using the Azure CLI.
+abstract: |
+  After completing this module, you'll be able to:
+  * Describe the benefits of using Azure Key Vault
+  * Explain how to authenticate to Azure Key Vault
+  * Set and retrieve a secret from Azure Key Vault by using the Azure CLI
+prerequisites: |
+  * You should be experienced with developer concepts and terminology.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/azure-key-vault-implement.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-key-vault
+units:
+- learn.wwl.implement-azure-key-vault.introduction
+- learn.wwl.implement-azure-key-vault.explore
+- learn.wwl.implement-azure-key-vault.discover-best-practices
+- learn.wwl.implement-azure-key-vault.authenticate-to
+- learn.wwl.implement-azure-key-vault.exercise-set-retrieve-secret-from-by-using-azure-cli
+- learn.wwl.implement-azure-key-vault.knowledge-check
+- learn.wwl.implement-azure-key-vault.summary
+badge:
+  uid: learn.wwl.implement-azure-key-vault.badge

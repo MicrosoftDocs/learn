@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databases.consider-security-recommendations-for-blob-storage
+title: Consider security recommendations for Blob storage
+metadata:
+  title: Consider security recommendations for Blob storage
+  description: "Consider security recommendations for Blob storage"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-consider-security-recommendations-blob-storage.md)]

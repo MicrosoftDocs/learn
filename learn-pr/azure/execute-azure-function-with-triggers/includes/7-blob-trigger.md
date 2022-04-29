@@ -32,7 +32,7 @@ A blob trigger is a trigger that executes a function when a file is uploaded or 
 
 ## How to create a blob trigger
 
-Just like the other triggers we've seen so far, you create a blob trigger in the Azure portal. Inside your Azure function, select **Blob trigger** from the list of predefined trigger types. Then, you enter the logic to that you want to execute when a blob is created or updated.
+Just like the other triggers we've seen so far, you create a blob trigger in the Azure portal. Inside your Azure function, select **Blob trigger** from the list of predefined trigger types. Then, you enter the logic that you want to execute when a blob is created or updated.
 
 One setting that's important to understand is the **Path**. The **Path** tells the blob trigger where to monitor to see if a blob is uploaded or updated. By default, the **Path** value is:
 

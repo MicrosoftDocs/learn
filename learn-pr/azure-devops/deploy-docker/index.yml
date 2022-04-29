@@ -4,8 +4,8 @@ metadata:
   title: Automate Docker container deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Docker containers.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Docker container deployments with Azure Pipelines

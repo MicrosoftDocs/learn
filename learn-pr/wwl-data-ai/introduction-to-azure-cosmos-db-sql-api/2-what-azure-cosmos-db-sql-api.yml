@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.what-is
+title: What is Azure Cosmos DB SQL API
+metadata:
+  title: What is Azure Cosmos DB SQL API
+  description: "What is Azure Cosmos DB SQL API"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-azure-cosmos-db-sql-api.md)]

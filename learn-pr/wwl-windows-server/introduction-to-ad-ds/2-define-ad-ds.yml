@@ -4,12 +4,13 @@ title: Define AD DS
 metadata:
   title: Define AD DS
   description: "Define AD DS"
-  ms.date: 03/01/2021
+  ms.date: 04/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-ad-ds.md)]

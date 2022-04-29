@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub
+metadata:
+  title: Offer an Event Hubs resource provider for Azure Stack Hub
+  description: "Offer an Event Hubs resource provider for Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Offer an Event Hubs resource provider for Azure Stack Hub
+summary: 'Streaming and event-based solutions are supported, for both on-premises and Azure cloud processing. This learning path help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
+abstract: |
+  * Plan an Event Hubs resource provider deployment for Azure Stack Hub.
+  * Deploy an Event Hubs resource provider for Azure Stack Hub.
+  * Update an Event Hubs resource provider for Azure Stack Hub.
+  * Rotate Event Hubs secrets and certificates for Azure Stack Hub.
+prerequisites: |
+  * Working experience with deploying cloud applications.
+  * Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
+iconUrl: /learn/achievements/offer-an-event-hubs-resource-provider-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.introduction
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.plan-deployment
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.deploy
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.update
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.rotate-secrets-certificates
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.knowledge-check
+- learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.badge

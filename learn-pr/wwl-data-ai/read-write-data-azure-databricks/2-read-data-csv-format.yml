@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-data-azure-databricks.read-data-csv-format
+title: Read data in CSV format
+metadata:
+  title: Read data in CSV format
+  description: "Read data in CSV format"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-read-data-csv-format.md)]

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.beginner-python.use-boolean-types
+metadata:
+  title: Use Boolean types in Python
+  description: Explore how to use the Boolean type in Python to craft complex expressions that apply conditional logic.
+  ms.date: 12/02/2021
+  author: ornelladotcom
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+title: Use Boolean logic in Python
+summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Use `if`, `else`, and `elif` statements to execute code under various conditions.
+  - Use `and` and `or` operators to combine conditional logic and create more complex conditions.
+prerequisites: | 
+  - Basic Python programming knowledge, including the use of variables, strings, integers, and math.
+  - Experience modifying and running code in Jupyter notebooks.
+iconUrl: /learn/achievements/python-use-boolean-types.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+units:
+- learn.beginner-python.use-boolean-types.introduction
+- learn.beginner-python.use-boolean-types.what-are-if-statements
+- learn.beginner-python.use-boolean-types.what-are-else-elif-statements
+- learn.beginner-python.use-boolean-types.exercise-write-if-statements
+- learn.beginner-python.use-boolean-types.what-are-and-or-operators
+- learn.beginner-python.use-boolean-types.exercise-use-and-or-operators
+- learn.beginner-python.use-boolean-types.knowledge-check
+- learn.beginner-python.use-boolean-types.summary
+badge:
+  uid: learn.beginner-python.use-boolean-types.badge

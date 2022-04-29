@@ -5,8 +5,8 @@ metadata:
   title: Create a web application with Visual Studio Code
   description: In this unit, you'll build a webapp in Visual Studio Code.
   ms.date: 04/23/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-nodeexpress-pythonflask

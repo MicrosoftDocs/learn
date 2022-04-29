@@ -5,8 +5,8 @@ metadata:
   title: Autoscale a web app
   description: Explain how to use the Azure portal to configure autoscaling for a web app and monitor the results.
   ms.date: 04/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

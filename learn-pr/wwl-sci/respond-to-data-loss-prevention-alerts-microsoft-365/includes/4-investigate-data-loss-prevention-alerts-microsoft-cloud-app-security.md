@@ -1,4 +1,4 @@
-After a Cloud App Security File policy is created with a DLP-related configuration, file policy violation alerts are investigated in the Alerts area of Cloud App Security.
+After a Defender for Cloud Apps File policy is created with a DLP-related configuration, file policy violation alerts are investigated in the Alerts area of Defender for Cloud Apps.
 
 To manage alerts:
 
@@ -6,7 +6,7 @@ From the Alerts page, select **Open** for the Resolution Status.
 
 This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It can help you safeguard the security posture you defined for your cloud environment.
 
-![Cloud App Security Alerts Dashboard](../media/cloud-app-security-alerts.png)
+![Defender for Cloud Apps Alerts Dashboard](../media/cloud-apps-dlp-alerts.png)
 
 For each alert, you need to investigate and determine the nature of the violation and the required response.
 
@@ -14,7 +14,7 @@ For each alert, you need to investigate and determine the nature of the violatio
 
 - Select a specific alert. Depending on what type of alert it is, you'll see various actions that can be taken before resolving the alert.
 
-- You can filter based on App - The apps listed are ones for which activities were detected by Cloud App Security.
+- You can filter based on App - The apps listed are ones for which activities were detected by Defender for Cloud Apps.
 
 - There are three types of violations you'll need to deal with when investigating alerts:
 
@@ -38,7 +38,7 @@ For each alert, you need to investigate and determine the nature of the violatio
 
     - You can dismiss the alert.
 
-Anytime you dismiss an alert, it's important to submit feedback about why you're dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine learning models for future alerts. You can follow these guidelines in deciding how to categorize the alert:
+Anytime you dismiss an alert, it's important to submit feedback about why you're dismissing the alert. The Defender for Cloud Apps team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine-learning models for future alerts. You can follow these guidelines in deciding how to categorize the alert:
 
 - If legitimate use triggered the alert and it isn't a security issue, it could be one of these types:
 
@@ -57,8 +57,8 @@ The following table provides a list of the types of alerts that can be triggered
 | Alert type| Description| Recommended resolution|
 | :--- | :--- | :--- |
 | Activity policy violation| This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them. Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls. If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|
-| File policy violation| This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them. Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls. Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.|
-| Compromised account| This type of alert is triggered when Cloud App Security identifies an account that was compromised. This means there's a high probability that the account was used in an unauthorized way.| We recommend that you suspend the account until you can reach the user and make sure they change their password.|
+| File policy violation| This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them. Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.|
+| Compromised account| This type of alert is triggered when Defender for Cloud Apps identifies an account that was compromised. This means there's a high probability that the account was used in an unauthorized way.| We recommend that you suspend the account until you can reach the user and make sure they change their password.|
 | Inactive account| This alert is triggered when an account hasn't been used in 60 days in one of your connected cloud apps.| Contact the user and the user's manager to determine whether the account is still active. If not, suspend the user and terminate the license for the app.|
 | New admin user| Alerts you to changes in your privileged accounts for connected apps.| Confirm that the new admin permissions are required for the user. If they aren't, recommend revoking admin privileges to reduce exposure.|
 | New admin location| Alerts you to changes in your privileged accounts for connected apps.| Confirm that the sign-in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.grow-cognitive-flexibility.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which of the following strategies can help you improve your cognitive flexibility?"
+      choices:
+        - content: "Shifting from a fixed mindset to a growth mindset."
+          isCorrect: true
+          explanation: "Correct. By shifting from a fixed mindset to a growth mindset, you can open yourself to alternative solutions for overcoming a problem."
+        - content: "Sticking to your perspectives and original plan."
+          isCorrect: false
+          explanation: "Incorrect. For cognitive flexibility, you should be open to multiple perspectives and be willing to consider a problem from various angles."
+        - content: "Finding the one right solution for every problem."
+          isCorrect: false
+          explanation: "Incorrect. By trying to arrive at a single right solution for every problem, you'll be limiting the options available. There might be alternative ways of approaching and solving a problem."
+    - content: "One of the participants in your workshop is intimidated about the new software that she'll be working with in her job. Although she's experienced, she's not comfortable with technology. As part of enhancing her cognitive flexibility, which of the following strategies would you recommend?"
+      choices:
+        - content: "Stay in your comfort zone."
+          isCorrect: false
+          explanation: "Incorrect. If she stays in her comfort zone, she won't seek out new experiences or visualize alternative ways of approaching a problem. Stepping out of her comfort zone is one way to improve her cognitive flexibility."
+        - content: "Continue her original methods of approach."
+          isCorrect: false
+          explanation: "Incorrect. If she continues to pursue her original methods of approach, she's blocking herself to innovations or improvements to her existing process."
+        - content: "Reevaluate her goals and mindset."
+          isCorrect: true
+          explanation: "Correct. If she reevaluates her individual goals and mindset, she'll be in a better position to overcome challenges and do better with the new technology."
+  

@@ -3,11 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.3-visual-studio-cod
 metadata:
   title: Discover the power to solve problems using Visual Studio Code
   description: Learn what Visual Studio Code is.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22
 title: Discover the power to solve problems using Visual Studio Code
 durationInMinutes: 3
 content: |

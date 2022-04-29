@@ -25,7 +25,7 @@ ExpressRoute works by peering your on-premises networks with networks running in
 
 - Ensure that BGP sessions for routing domains have been configured. Depending on your partner, this might be their or your responsibility. Additionally, for each ExpressRoute circuit, Microsoft requires redundant BGP sessions between Microsoft’s routers and your peering routers.
 - You or your providers need to translate the private IP addresses used on-premises to public IP addresses by using a NAT service. Microsoft will reject anything except public IP addresses through Microsoft peering.
-- Reserve several blocks of IP addresses in your network for routing traffic to the Microsoft cloud. You configure these blocks as either a /29 subnet or two /30 subnets in your IP address space. One of these subnets is used to configure the primary circuit to the Microsoft cloud, and the other implements a secondary circuit. You use the first address in these subnets to communicate with services in the Microsoft cloud. Microsoft uses the second address to establish a BGP session.
+- Reserve several blocks of IP addresses in your network for routing traffic to the Microsoft cloud. You configure these blocks as either a /29 subnet or two /30 subnets in your IP address space. One of these subnets is used to configure the primary link to the Microsoft cloud, and the other implements a secondary link. The first address in these subnets represent your end of the BGP peer and the second address is Microsoft's BGP peer IP.
 
 ExpressRoute supports two peering schemes:
 
@@ -43,27 +43,39 @@ Establishing a connection to Azure through ExpressRoute is a multistep process. 
 
 ### Create a circuit
 
-When you're using the Azure portal, select **Create a resource** > **Networking** > **ExpressRoute**. The **Create ExpressRoute circuit** page requires you to complete the following fields:
+When you're using the Azure portal, select **+ Create a resource** and search for **ExpressRoute**. The **Create ExpressRoute circuit** page requires you to complete the following fields:
+
+#### Basics tab
 
 | Property  | Value  |
 |---|---|
-| **Circuit name** | A meaningful name for your circuit, without any white space or special characters. |
+| **Subscription** | The subscription you've registered with your ExpressRoute provider. |
+| **Resource group** | The Azure resource group in which to create the circuit. |
+| **Region** | The Azure location in which to create the circuit. |
+| **Name** | A meaningful name for your circuit, without any white space or special characters. |
+
+:::image type="content" source="../media/3-create-circuit-basics.png" alt-text="Create a circuit basics tab by using the Azure portal.":::
+
+#### Configuration tab
+
+| Property  | Value  |
+|---|---|
+| **Port type** | Select **Provider** if you're connecting through a service provider or select **Direct** if you're connecting directly to Microsoft. |
+| **Create new or import from classic** | Create a new circuit or select **Import** to move an existing circuit from classic model to Resource Manager. |
 | **Provider** | The ExpressRoute provider with which you've registered your subscription.  |
 | **Peering location** | A location enabled by the ExpressRoute provider in which to create your circuit. |
 | **Bandwidth** | Select your bandwidth, from 50 Mbps up to 10 Gbps. Start with a low value. You can increase it later with no interruption to service. However, you can't reduce the bandwidth if you set it too high initially. |
-| **SKU** | Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geographical region. Otherwise, select **Premium**. |
-| **Billing model** | Select **Unlimited** to pay a flat fee regardless of usage. Or select **Metered** to pay according to the volume of traffic that enters and exits the circuit.
-| **Subscription** | The subscription you've registered with your ExpressRoute provider. |
-| **Resource group** | The Azure resource group in which to create the circuit. |
-| **Location** | The Azure location in which to create the circuit. |
+| **SKU** | Select **Local** (if available) if you only need to connect to Azure resource in 1 or 2 Azure regions in the same metro. Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geographical region. Otherwise, select **Premium** which will allows you to connect more than 10 virtual networks and global connectivity to Azure resources. |
+| **Billing model** | Select **Unlimited** to pay a flat fee regardless of usage. Or select **Metered** to pay according to the volume of traffic that enters and exits the circuit. |
+| **Allow classic operations** | Select **Yes** allows classic virtual networks to connect to the circuit. Otherwise, select **No**. |
 
-![Creating a circuit by using the Azure portal.](../media/3-create-connection.png)
+:::image type="content" source="../media/3-create-circuit-configuration.png" alt-text="Creating a circuit configuration tab by using the Azure portal.":::
 
-Circuit creation can take several minutes. After the circuit has been provisioned, you can use the Azure portal to view the properties. You'll see that **Circuit status** is enabled, meaning that the Microsoft side of the circuit is ready to accept connections. **Provider status** will be **Not provisioned** initially. This is because the provider hasn't configured their side of the circuit for connecting to your network. 
+Circuit creation can take several minutes. After the circuit has been provisioned, you can use the Azure portal to view the properties. You'll see that **Circuit status** is enabled, meaning that the Microsoft side of the circuit is ready to accept connections. **Provider status** will be **Not provisioned** initially. This is because the provider hasn't configured their side of the circuit for connecting to your network.
 
 You send the provider the value in the **Service key** field to enable them to configure the connection. This can take several days. You can revisit this page to check the provider status.
 
-![Provisioning a circuit by using the Azure portal.](../media/3-provision-circuit.png)
+:::image type="content" source="../media/3-provision-circuit.png" alt-text="Provisioning a circuit by using the Azure portal.":::
 
 ### Create a peering configuration
 
@@ -76,14 +88,16 @@ The **ExpressRoute circuit** page (shown earlier) lists each peering and its pro
 You use private peering to connect your network to your virtual networks running in Azure. To configure private peering, you must provide the following information:
 
 - **Peer ASN**. The autonomous system number for your side of the peering. This ASN can be public or private, and 16 bits or 32 bits.
+- **Subnets**. Select if you want to use IPv4, IPv6 or both for the peering subnets.
 - **Primary subnet**. This is the address range of the primary /30 subnet that you created in your network. You'll use the first IP address in this subnet for your router. Microsoft uses the second for its router.
 - **Secondary subnet**. This is the address range of your secondary /30 subnet. This subnet provides a secondary link to Microsoft. The first two addresses are used to hold the IP address of your router and the Microsoft router.
+- **Enable IPv4 Peering**. This option allows you to enable and disable the private peering BGP session.
 - **VLAN ID**. This is the VLAN on which to establish the peering. The primary and secondary links will both use this VLAN ID.
 - **Shared key**. This is an optional MD5 hash that's used to encode messages passing over the circuit.
 
 ### Configure Microsoft peering
 
-You use Microsoft peering to connect to Office 365 and its associated services. To configure Microsoft peering, you provide a peer ASN, a primary subnet address range, a secondary subnet address range, a VLAN ID, and an optional shared key as described for a private peering. You must also provide the following information:
+You use Microsoft peering to connect to Office 365 and its associated services. To configure Microsoft peering, you provide a peer ASN, a primary subnet address range, a secondary subnet address range, subnet IP version, a VLAN ID, and an optional shared key as described for a private peering. You must also provide the following information:
 
 - **Advertised public prefixes**. This is a list of the address prefixes that you use over the BGP session. These prefixes must be registered to you, and must be prefixes for public address ranges.
 - **Customer ASN**. This is optional. It's the client-side autonomous system number to use if you are advertising prefixes that aren't registered to the peer ASN.
@@ -93,14 +107,14 @@ You use Microsoft peering to connect to Office 365 and its associated services. 
 
 After the ExpressRoute circuit has been established, Azure private peering is configured for your circuit, and the BGP session between your network and Microsoft is active, you can enable connectivity from your on-premises network to Azure.
 
-Before you can connect to a private circuit, you must create an Azure virtual network gateway by using a subnet on one of your Azure virtual networks. The virtual network gateway provides the entry point to network traffic that enters from your on-premises network. It directs incoming traffic through the virtual network to your Azure resources. 
+Before you can connect to a private circuit, you must create an Azure virtual network gateway by using a subnet on one of your Azure virtual networks. The virtual network gateway provides the entry point to network traffic that enters from your on-premises network. It directs incoming traffic through the virtual network to your Azure resources.
 
 You can configure network security groups and firewall rules to control the traffic that's routed from your on-premises network. You can also block requests from unauthorized addresses in your on-premises network.
 
 > [!NOTE]
 > You must create the virtual network gateway by using the type **ExpressRoute** and not **VPN**.
 >
-> ![Creating a virtual network gateway with the gateway type set to ExpressRoute.](../media/3-create-virtual-network-gateway.png)
+> :::image type="content" source="../media/3-create-virtual-network-gateway.png" alt-text="Creating a virtual network gateway with the gateway type set to ExpressRoute.":::
 
 Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geographical region as the ExpressRoute circuit. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
 

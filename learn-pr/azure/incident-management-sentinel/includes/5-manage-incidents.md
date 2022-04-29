@@ -1,11 +1,10 @@
-
-After you start using Azure Sentinel to generate incidents, you and the IT team at Contoso will want to investigate those incidents. You can use the advanced investigation and analysis tools to gather information and determine remediation steps.
+After you start using Microsoft Sentinel to generate incidents, you and the IT team at Contoso will want to investigate those incidents. You can use the advanced investigation and analysis tools to gather information and determine remediation steps.
 
 ## Investigate incidents
 
-To identify and resolve security issues at Contoso, you'll first want to investigate any incidents. The **Overview** page in Azure Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the **Incidents** page, which displays all incidents in the current workspace and details about those incidents.
+To identify and resolve security issues at Contoso, you'll first want to investigate any incidents. The **Overview** page in Microsoft Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the **Incidents** page, which displays all incidents in the current workspace and details about those incidents.
 
-:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays a list of incidents in Azure Sentinel.":::
+:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays a list of incidents in Microsoft Sentinel.":::
 
 From this page, you can take various steps to investigate incidents.
 
@@ -14,7 +13,7 @@ From this page, you can take various steps to investigate incidents.
 
 ### Review incidents
 
-The **Incidents** page provides a complete list of incidents in Azure Sentinel. It also provides basic incident information, including severity, ID, title, alerts, product names, created time, last update time, owner, and status. You can sort by any incident column and filter the incident list by name, severity, status, product name, or owner.
+The **Incidents** page provides a complete list of incidents in Microsoft Sentinel. It also provides basic incident information, including severity, ID, title, alerts, product names, created time, last update time, owner, and status. You can sort by any incident column and filter the incident list by name, severity, status, product name, or owner.
 
 Selecting any incident will display more information about the incident in the **Details** column. This information can help you clarify the nature, context, and course of action for an incident.
 
@@ -28,11 +27,11 @@ You can reference all these details to better understand the context of the inci
 
 ### Manage incident ownership, status, and severity
 
-Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you:
+Each incident created in Microsoft Sentinel has manageable metadata attached to it. This information can help you:
 
-- Set and track the status of an incident from creation to resolution.
-- Set and review severity.
-- Assign and track ownership for the incident.
+- Set and track the status of an incident from creation to resolution
+- Set and review severity
+- Assign and track ownership for the incident
 
 :::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot displays the section of the Incidents page where you can assign ownership, status, and severity." :::
 
@@ -42,7 +41,7 @@ In a typical environment, each incident should be assigned an owner from your se
 
 #### Status
 
-Every new incident that's created in Azure Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation, set the status to **Active**. When an incident is fully resolved, set the status to **Closed**. 
+Every new incident created in Microsoft Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation, set the status to **Active**. When an incident is fully resolved, set the status to **Closed**. 
 
 When you set the status to **Closed**, you'll be prompted to choose one of the following from a drop-down list:
 
@@ -69,5 +68,3 @@ You can select each entity on the graph to observe more information about the en
 #### Review incident details
 
 You can select the incident item on the graph to observe important incident metadata related to the incident's security and environment context.
-
-Choose the best response for each of the following questions. Then select **Check your answers**.

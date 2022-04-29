@@ -4,16 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/15/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You want to use the Text Analytics service to determine the key talking points in a text document. Which feature of the service should you use?"
+  - content: "You want to use the Language service to determine the key talking points in a text document. Which feature of the service should you use?"
     choices:
     - content: "Sentiment analysis"
       isCorrect: false
@@ -24,7 +25,7 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use the Text Analytics service to perform sentiment analysis on a document, and a score of 0.99 is returned. What does this score indicate about the document sentiment?"
+  - content: "You use the Language service to perform sentiment analysis on a document, and a score of 0.99 is returned. What does this score indicate about the document sentiment?"
     choices:
     - content: "The document is positive."
       isCorrect: true

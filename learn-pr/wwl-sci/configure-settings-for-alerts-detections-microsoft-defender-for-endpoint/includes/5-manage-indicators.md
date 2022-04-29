@@ -38,7 +38,7 @@ There is a limit of 15,000 indicators per tenant.
 
 To manage indicators:
 
-- In the navigation pane, select Settings > Indicators.
+- In the navigation pane, select **Settings > Endpoints** and then select **Indicators** in the Rules area.
 
 - Select the tab of the entity type you'd like to manage.
 
@@ -56,7 +56,7 @@ There are two ways you can create indicators for files:
 
 ### Prerequisites
 
-Before you create indicators for files you should understand the following prerequisites:
+Before you create indicators for files, you should understand the following prerequisites:
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see Manage cloud-based protection.
 
@@ -72,24 +72,6 @@ Before you create indicators for files you should understand the following prere
 > The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
 > Trusted signed files will be treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
 > Typically, file blocks are enforced within a couple of minutes but can take upwards of 30 minutes.
-
-### Create an indicator for files
-
-1. In the navigation pane, select **Settings > Indicators**.
-
-1. Select the File hash tab.
-
-1. Select **Add indicator**.
-
-1. Specify the following details:
-
-    - Indicator - Specify the entity details and define the expiration of the indicator.
-
-    - Action - Specify the action to be taken and provide a description.
-
-    - Scope - Define the scope of the machine group.
-
-1. Review the details in the Summary tab, then select **Save**.
 
 ### Create a contextual indicator from the file details page
 
@@ -151,7 +133,7 @@ There may be up to 2 hours of latency (usually less) between the time the action
 
 You can create indicators for certificates. Some common use cases include:
 
-- Scenarios when you need to deploy blocking technologies, such as attack surface reduction rules and controlled folder access but need to allow behaviors from signed applications by adding the certificate in the allow list.
+- Scenarios when you need to deploy blocking technologies, such as attack surface reduction rules and controlled folder access but need to allow behaviors from signed applications by adding the certificate in the allowlist.
 
 - Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Windows Defender AV will prevent file executions (block and remediate), and the Automated Investigation and Remediation will behave the same.
 
@@ -175,11 +157,11 @@ It can take up to 3 hours to create and remove a certificate IoC.
 
 ### Create an indicator for certificates:
 
-1. In the navigation pane, select **Settings > Indicators**.
+1. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Indicators**.
 
 1. Select the Certificate tab.
 
-1. Select **Add indicator**.
+1. Select **+ Add item**.
 
 1. Specify the following details:
 
@@ -197,7 +179,7 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 
 Download the sample CSV to know the supported column attributes.
 
-1. In the navigation pane, select **Settings > Indicators**.
+1. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Indicators**.
 
 1. Select the tab of the entity type you'd like to import indicators for.
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.failback-from-to-production-site
+title: Failback from a disaster recovery to a production site
+metadata:
+  title: Failback from a disaster recovery to a production site
+  description: "Failback from a disaster recovery to a production site"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-failback-from-disaster-recovery-to-production-site.md)]

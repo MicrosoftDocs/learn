@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.why-belonging-matters-tech
+title: Explore why belonging matters in tech
+metadata:
+  title: Explore why belonging matters in tech
+  description: Learn about the business impact of caring about belongingness, both what happens if you care and the negative consequences of not caring about it.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-why-belonging-matters-tech.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.navigate-microsoft-learn-for-educators-school-leaders
+metadata:
+  moduleType: standard
+  title: "Navigate Microsoft Learn for Educators and School Leaders"
+  description: "The Microsoft Educator Center (MEC) is merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. Learn how to navigate Microsoft Learn and get access to professional development training, curriculum, hands-on experiences, and certifications." # user input: a description for site search and SEO
+  ms.date: 9/1/2021
+  author: sadadow
+  ms.author: saadad
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-m365
+title: Navigate Microsoft Learn for Educators and School Leaders
+summary: |
+  The Microsoft Educator Center will be merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. 
+  - What does that mean for your professional development? 
+  - What are the benefits of moving to Learn? 
+  - How will Learn grow to support education audiences? 
+  - What happens to my existing progress?
+
+  This module will give you the essentials for using Microsoft Learn and provide a gateway to exciting professional development content for educator tools.  
+abstract: | 
+  By the end of this module, you'll be able to:
+    - Set up your Learn profile
+    - Find your completion history and achievements
+    - Browse content for K-12 educators, higher-ed educators, parents/guardians and school leaders
+    - Provide feedback to improve the experience 
+prerequisites: | 
+  - Familiarity with the Microsoft Educator Center (optional)
+iconUrl: /learn/achievements/educator/microsoft-learn-for-educators-pioneer.svg
+hidden: true
+levels: 
+  - beginner
+roles: 
+  - k-12-educator
+  - higher-ed-educator
+  - school-leader
+products:
+- m365	
+units:
+- learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
+- learn.navigate-microsoft-learn-for-educators-school-leaders.find-educator-content-in-learn
+- learn.navigate-microsoft-learn-for-microsoft-educator-center-users.create-collection
+- learn.navigate-microsoft-learn-for-educators-school-leaders.navigate-your-learn-profile
+- learn.navigate-microsoft-learn-for-educators-school-leaders.exercise
+- learn.navigate-microsoft-learn-for-educators-school-leaders.knowledge-check
+- learn.navigate-microsoft-learn-for-educators-school-leaders.summary
+badge:
+  uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge

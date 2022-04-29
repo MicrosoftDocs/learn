@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-user-environments-apps
+metadata:
+  title: Manage user environments and apps for Azure Virtual Desktop
+  description: Manage user environments and apps for Azure Virtual Desktop
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage user environments and apps for Azure Virtual Desktop
+prerequisites: |
+  *  Familiarity with server and client management concepts and tools
+  *  Familiarity with Windows virtualization technologies, like Remote Desktop Services
+  *  Familiarity with Microsoft Azure and cloud concepts
+summary: |
+  Learn how to plan for FSLogix, configure Cloud Cache, and implement OneDrive for Business for a multi-session environment. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
+iconUrl: /learn/achievements/manage-user-environments-and-apps.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+modules:
+- learn.wwl.implement-manage-fslogix
+- learn.wwl.configure-user-experience-settings
+- learn.wwl.install-configure-apps-session-host
+trophy:
+  uid: learn.wwl.manage-user-environments-apps.trophy

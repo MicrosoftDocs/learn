@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-security-fundamentals-for-iot.examine-threat-modeling-mitigation-techniques
+title: Examine threat modeling and mitigation techniques
+metadata:
+  title: Examine threat modeling and mitigation techniques
+  description: "Examine threat modeling and mitigation techniques"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-iot-security-architecture-threat-modeling.md)]

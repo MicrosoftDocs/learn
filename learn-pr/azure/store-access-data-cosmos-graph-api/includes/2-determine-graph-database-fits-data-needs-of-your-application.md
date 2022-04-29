@@ -2,13 +2,13 @@ Companies sometimes find that the inflexibility of relational databases can be a
 
 In your e-commerce company, you want to know which databases may work better as graph databases.
 
-In this unit, you will learn how graph databases differ from relational databases.
+In this unit, you'll learn how graph databases differ from relational databases.
 
-# What is a graph database?
+## What is a graph database?
 
-Most developers are familiar with relational databases and their fundamental concept: tables. Tables are where we store our data, which is composed of rows and columns. Tabular data with a consistent structure is ideal for a relational database. However if your application requires a more flexible structure, then an alternative to relational database would be graph databases.
+Most developers are familiar with relational databases and their fundamental concept: tables. Tables are where we store our data, which is composed of rows and columns. Tabular data with a consistent structure is ideal for a relational database. However, if your application requires a more flexible structure, then an alternative to relational database would be graph databases.
 
-In order to understand graph databases, you first need to know what we mean by a graph. A graph is a structure that's composed of vertices and edges. Both vertices and edges can have an arbitrary number of properties.
+To understand graph databases, you first need to know what we mean by a graph. A graph is a structure that's composed of vertices and edges. Both vertices and edges can have an arbitrary number of properties.
 
 | Component | Description  |
 |---|---|
@@ -40,11 +40,11 @@ In graph databases, it's easy to add to an existing structure without affecting 
 
 ### Deficiencies
 
-Graph databases are not as efficient at processing high volumes of transactions, nor are they as effective at handling queries that traverse an entire database.
+Graph databases aren't as efficient at processing high volumes of transactions, nor are they as effective at handling queries that traverse an entire database.
 
-Graph databases do not create better relationships; instead, they provide rapid data retrieval for connected data. This increases the need for efficient data design, because any performance gains from graph searches can be reduced by failing to model the relationships between your nodes efficiently.
+Graph databases don't create better relationships; instead, they provide rapid data retrieval for connected data. This increases the need for efficient data design, because any performance gains from graph searches can be reduced by failing to model the relationships between your nodes efficiently.
 
-## Examining the data model for fit
+## Examine the data model for fit
 
 As previously described, there are two fundamental components that form a graph:
 
@@ -69,9 +69,9 @@ Nodes can contain properties that hold name-value pairs of data. Nodes can be as
 
 ### Relationships or Edges
 
-A relationship connects two nodes, the power of graphs is that both the relationship and the nodes can be queried in order to find related data. A relationship has a source node and a target node, and is represented in a graph diagram by a line or an arrow. You can often determine relationships for the graph model by identifying actions or verbs in your domain.
+A relationship connects two nodes. The power of graphs is that both the relationship and the nodes can be queried in order to find related data. A relationship has a source node and a target node, and is represented in a graph diagram by a line or an arrow. You can often determine relationships for the graph model by identifying actions or verbs in your domain.
 
-For example, you may identify relationships such as these:
+For example, you may identify relationships, such as these:
 
 - Likes
 - Places
@@ -82,7 +82,7 @@ For example, you may identify relationships such as these:
 
 In this unit, we have been describing the process of creating a basic graph data model for an e-commerce company, which shows the interactions between customers, products, and orders.
 
-When you have identified your nodes and relationships, your data model begins to take shape. For example:
+When you've identified your nodes and relationships, your data model begins to take shape. For example:
 
 | Node | Relationship | Node |
 |---|---|---|
@@ -97,7 +97,7 @@ You can further enhance your data model by defining attributes for each of these
 
 Properties are name-value pairs that you can define for nodes or relationships, which enable you to store relevant data about the node or relationship you're describing.
 
-To determine what kind of properties you can use, you could ask some relevant questions about the data you are capturing:
+To determine what kind of properties you can use, you could ask some relevant questions about the data you're capturing:
 
 - When did the customer place the order?
 - What was the product price?

@@ -1,0 +1,10 @@
+name: deploy-toy-website
+
+on: [workflow_dispatch]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'placeholder step'
+        run: echo "Hello world!"

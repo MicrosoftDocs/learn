@@ -49,16 +49,16 @@ Now, you'll get the source code from GitHub and set up Visual Studio Code so tha
 
 ### Create a fork
 
-The first step is to fork the *Space Game* web project so you can work with and modify the source files.
+The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and lets you make any changes you want without affecting the original project.
 
-A *fork* is a copy of a GitHub repository. The copy exists in your account and enables you to make any changes you want without affecting the original project.
+Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
 
-Although you can propose changes to the original project, here, you'll work with the *Space Game* web project as though it were the original project owned by Mara and her team.
-
-To fork the *Space Game* web project into your GitHub account:
+Let's fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
+
 1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
+
 1. Select **Fork**:
 
     :::image type="content" source="../media/3-github-fork-button.png" alt-text="GitHub showing the location of the Fork button.":::
@@ -67,24 +67,25 @@ To fork the *Space Game* web project into your GitHub account:
 
 ### Clone your fork locally
 
-You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.
+Now that you have a copy of the *Space Game* web project in your GitHub account, you can download, or *clone*, a copy to your computer so you can work with it locally.
 
-A clone, just like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
+A clone, like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project on GitHub.
-1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
+
+1. In the command bar, select **Code**. A pane displays showing the Clone option with tabs for types of cloning. From the **HTTPS** tab, select the copy icon next to the URL to copy the URL to your clipboard.
 
     :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
 
-1. In Visual Studio Code, go to the terminal window, and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
+1. In Visual Studio Code, go to the terminal window and enter `git clone`, then paste the URL from your clipboard. It should look similar to:
 
     ```bash
-    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
+    git clone https://github.com/username/mslearn-tailspin-spacegame-web.git
     ```
 
-1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
+1. After the `Cloning 'mslearn-tailspin-spacegame-web'...` operation completes, enter the following command to change to the `mslearn-tailspin-spacegame-web`directory. This is the root directory of your repository.
 
     ```bash
     cd mslearn-tailspin-spacegame-web
@@ -92,22 +93,22 @@ To clone the *Space Game* web project to your computer:
 
 ### Set the upstream remote
 
-A *remote* is a Git repository where team members collaborate (like a repository on GitHub). Here you list your remotes and add a remote that points to Microsoft's copy of the repository so that you can get the latest sample code.
+A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so you can get the latest sample code.
 
-1. To list your remotes, run this `git remote` command.
+1. To list your remotes, run the `git remote` command.
 
     ```bash
     git remote -v
     ```
 
-    You see that you have both fetch (download) and push (upload) access to your repository:
+    You have both fetch (download) and push (upload) access to your repository:
 
     ```output
     origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
     origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
     ```
 
-    *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
+    *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) *upstream*.
 
 1. To create a remote named *upstream* that points to the Microsoft repository, run this `git remote add` command.
 
@@ -131,7 +132,7 @@ A *remote* is a Git repository where team members collaborate (like a repository
 
 ### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, from the file explorer, you'll now open the project.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. Let's open the project to view its structure and work with files.
 
 1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
 
@@ -140,12 +141,15 @@ In Visual Studio Code, your terminal window points to the root directory of the 
     ```
 
     You see the directory and file tree in the file explorer.
+    
 1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 
 If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
 
 1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+
 1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
+
 1. Repeat the previous procedure to open the project in the file explorer.
 
 ## Build and run the web app

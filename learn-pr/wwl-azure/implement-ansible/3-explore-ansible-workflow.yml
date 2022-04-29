@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ansible.explore-ansible-workflow
+title: Explore Ansible workflow
+metadata:
+  title: Explore Ansible workflow
+  description: "Explore Ansible workflow"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-ansible-workflow.md)]

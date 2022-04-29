@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.languages.csharp-data
 metadata:
-  title: Work with data in C#
+  title: 'Work with data in C#'
   description: Dive deeper into data and types, learning how to manipulate string and numeric data.
   brand: azure
   ms.date: 11/06/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   #ms.learn-contact: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -25,6 +25,9 @@ prerequisites: |
     - Beginner level experience with C# concepts including declaring, initializing, and using variables
     - Beginner level experience with the `if-elseif-else` statement
     - Beginner level experience with arrays and the `foreach` statement
+video:
+  title: "Work with data in C#"
+  url: https://www.microsoft.com/videoplayer/embed/RWVrBc
 iconUrl: /learn/achievements/csharp-data.svg
 levels:
 - beginner

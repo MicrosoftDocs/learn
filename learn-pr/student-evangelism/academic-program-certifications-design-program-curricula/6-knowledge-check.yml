@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-curricula.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge on design a program curriculum to implement certification.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: Which of the following benefits are key to implementing certification opportunities as part of a degree program?
+    choices:
+    - content: Certification completely replaces academic course learning materials.
+      isCorrect: false
+      explanation: Incorrect. Academic courses that implement certification contain a blend of academic and certification learning materials.
+    - content: Certification enhances graduate employability. 
+      isCorrect: true
+      explanation: Correct. Research finds that graduates are more desirable employee candidates when they achieve certification for in-demand skillsets.
+    - content: Students are more likely to complete their academic courses.
+      isCorrect: false
+      explanation: Incorrect. Implementing certifications in academic courses doesn't increase student success in completing their courses compared to courses that don't implement certification. 
+  - content: A university is planning to run a Microsoft certification course for the first time for students who are just beginning their degree program. Which of the following certification types would be the most suitable for these learners?
+    choices:
+    - content: Associate certification.
+      isCorrect: false
+      explanation: Incorrect. Microsoft Associate-level certifications are more suited to post-graduates and students who have some industry experience.
+    - content: Expert certification.
+      isCorrect: false
+      explanation: Incorrect. Microsoft Expert-level certifications are suited to graduates who have several years of experience working in a relevant industry role that aligns with the certification course.
+    - content: Fundamentals certification.
+      isCorrect: true
+      explanation: Correct. The Fundamentals certification courses are ideal for beginners to learn the basic concepts of technologies like cloud, AI, and data.
+  - content: What important task must be done when an educator implements a Microsoft certification course inside an academic course for credit?
+    choices:
+    - content: Map the academic course outcomes to the certification outcomes.
+      isCorrect: true
+      explanation: Correct. The academic course learning outcomes should be broadly mapped to the outcomes of the certification course. Institutions can then offer academic credit for achieving the certification exam as part of the academic course.
+    - content: Remove all academic learning materials.
+      isCorrect: false
+      explanation: Incorrect. Academic learning materials should still be part of the course and should map to learning outcomes. The materials should complement the certification learning materials.
+    - content: Rename the academic course to the title of the Microsoft certification.
+      isCorrect: false
+      explanation: Incorrect. The academic course should retain a course title that fits in the program of study. For example, to implement certification for the AI-900 Microsoft Azure AI Fundamentals course, the academic course might be titled *Introduction to AI*.
+  - content: To implement a Microsoft certification course inside an academic course for credit, what would be a suitable weighting split for the academic coursework and certification exam?
+    choices:
+    - content: 0% academic coursework and 100% certification exam.
+      isCorrect: false
+      explanation: Incorrect. Academic coursework with a weighting of 0% means that no academic learning outcomes are mapped in the course.
+    - content: 100% academic coursework and 0% certification exam.
+      isCorrect: false
+      explanation: Incorrect. A weighting of 0% for the certification exam means that no academic credit is available for the certification exam.
+    - content: 60% academic coursework and 40% certification exam.
+      isCorrect: true
+      explanation: Correct. The preference is to try to balance the academic and certification content. This approach presents a robust learning experience for the student in which they learn the underpinning academic concepts and practical application of the technologies.

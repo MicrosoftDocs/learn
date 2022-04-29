@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.run-azure-datacenter
+title: Running Azure in your datacenter
+metadata:
+  title: Running Azure in your datacenter
+  description: "Running Azure in your datacenter"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-run-azure-datacenter.md)]

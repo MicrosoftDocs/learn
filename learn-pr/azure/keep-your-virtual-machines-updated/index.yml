@@ -4,8 +4,8 @@ metadata:
   title: Keep your virtual machines updated
   description: Learn to use Azure Update Management to update virtual machines, verify agent connectivity, and use Azure Log Analytics in your cloud environment.
   ms.date: 01/07/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Keep your virtual machines updated

@@ -3,9 +3,9 @@ uid: learn.run-docker-containers-aci.4-use-environment-variables
 metadata:
   title: Exercise - Set environment variables
   description: Set environment variables in Azure Container Instances.
-  ms.date: 07/26/2019
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 04/28/2022
+  author: v-tcassi
+  ms.author: tomcassidy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set environment variables

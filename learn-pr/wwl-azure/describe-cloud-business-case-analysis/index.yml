@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.describe-cloud-business-case-analysis
+metadata:
+  title: Describe Cloud Business Case Analysis
+  description: "Understand a cloud business case analysis through a business case analysis, analysis of alternatives, and non-financial operational benefits."
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe Cloud Business Case Analysis
+summary: Understand a cloud business case analysis through a business case analysis, analysis of alternatives, and non-financial operational benefits.
+abstract: |
+  After completing this module, you'll be able to describe:
+  - How to perform a Business Case Analysis (BCA).
+  - How the analysis of alternatives (AoA) process works.
+  - How Non-financial operational benefits (NFO) work.
+  - How to perform a risk analysis.
+  - How to plan an adoption strategy for cloud computing technologies.
+prerequisites: |
+  - You should have an understanding of why business case analysis is necessary.
+  - You should understand several of the factors that go into making major decisions on cloud computing workloads.
+iconUrl: /learn/achievements/cloud-business-describe-case-analysis.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- azure-sovereign-us
+units:
+- learn.wwl.describe-cloud-business-case-analysis.introduction
+- learn.wwl.describe-cloud-business-case-analysis.perform-bca
+- learn.wwl.describe-cloud-business-case-analysis.describe-analysis-of-alternatives-aoa
+- learn.wwl.describe-cloud-business-case-analysis.explain-non-financial-operational-benefits-nfos
+- learn.wwl.describe-cloud-business-case-analysis.perform-risk-analysis
+- learn.wwl.describe-cloud-business-case-analysis.adoption-strategy-planning
+- learn.wwl.describe-cloud-business-case-analysis.knowledge-check
+- learn.wwl.describe-cloud-business-case-analysis.summary
+badge:
+  uid: learn.wwl.describe-cloud-business-case-analysis.badge

@@ -4,12 +4,13 @@ title: Implement and manage tenant restrictions
 metadata:
   title: Implement and manage tenant restrictions
   description: "Implement and manage tenant restrictions"
-  ms.date: 07/23/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/6-implement-manage-tenant-restrictions.md)]

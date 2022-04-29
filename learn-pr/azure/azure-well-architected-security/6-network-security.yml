@@ -5,8 +5,8 @@ metadata:
   title: Network security
   description: In this unit, we'll discuss how to secure your network infrastructure
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

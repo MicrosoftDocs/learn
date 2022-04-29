@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-transactions-transact-sql.describe-concurrency
+title: Describe concurrency
+metadata:
+  title: Describe concurrency
+  description: "Describe concurrency"
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5a-concurrency.md)]

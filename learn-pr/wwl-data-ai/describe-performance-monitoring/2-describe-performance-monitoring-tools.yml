@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.tools
+title: Describe performance monitoring tools
+metadata:
+  title: Describe performance monitoring tools
+  description: "Describe performance monitoring tools"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-describe-performance-monitoring-tools.md)]

@@ -1,4 +1,4 @@
-When accessing your Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com/?azure-portal=true)) for the first time, a wizard will guide you through some initial steps. You must be a global administrator or security administrator for the tenant. On the Set up preferences page, you can set the:
+When accessing your Microsoft 365 Defender portal settings for Endpoints for the first time, you will be able to configure many attributes. You must be a global administrator or security administrator for the tenant. On the Set-up preferences page, you can set the:
 
 **Data storage location** - Determine where you want to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation.
 
@@ -6,7 +6,12 @@ When accessing your Microsoft Defender Security Center ([https://securitycenter.
 
 **Enable preview features** - The default is on, can be changed later.
 
-At the end of the setup wizard, there will be a dedicated cloud instance of Defender for Endpoint created.
+To access the Microsoft 365 Defender portal settings for Endpoints do the following action:
+
+1. Go to ([https://security.microsoft.com](https://security.microsoft.com/?azure-portal=true))
+2. Select **Settings**.
+3. Select **Endpoints**.
+
 
 ## Network configuration
 
@@ -21,6 +26,3 @@ Autodiscovery methods:
 - Web Proxy Autodiscovery Protocol (WPAD)
 
 If a Transparent proxy or WPAD has been implemented in the network topology, there is no need for special configuration settings.
-
-
-

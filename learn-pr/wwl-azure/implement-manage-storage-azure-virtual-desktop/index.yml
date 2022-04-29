@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop
+metadata:
+  title: Implement and manage storage for Azure Virtual Desktop
+  description: "Implement and manage storage for Azure Virtual Desktop"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement and manage storage for Azure Virtual Desktop
+summary: FSLogix roams profiles in remote computing environments, such as Azure Virtual Desktop. You set up a FSLogix profile container share for a host pool using a virtual machine-based file share.
+abstract: |
+  After completing this module, you'll be able to:
+  * Choose appropriate storage for FSLogix components.
+  * Configure storage for FSLogix components.
+  * Configure storage accounts for Azure Files.
+  * Configure a new managed data disk to a Windows virtual machine for Azure Virtual Desktop.
+  * Create file shares for a storages account for Azure Virtual Desktop.
+prerequisites: ""
+iconUrl: /learn/achievements/2-implement-and-manage-storage-for-azure-virtual-desktop.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.introduction
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.fslogix-components
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.configure-fslogix-components
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.configure-storage-accounts
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.create-file-shares
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.configure-disks
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.knowledge-check
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.summary
+badge:
+  uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.badge

@@ -5,8 +5,8 @@ metadata:
   title: How to provision Azure resources for data-driven ASP.NET apps
   description: Learn about infrastructure as code and template deployment.
   ms.date: 01/26/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

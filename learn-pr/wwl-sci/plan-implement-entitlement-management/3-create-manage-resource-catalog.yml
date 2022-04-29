@@ -4,12 +4,13 @@ title: Exercise create and manage a resource catalog with Azure AD entitlement
 metadata:
   title: Exercise create and manage a resource catalog with Azure AD entitlement
   description: "Exercise create and manage a resource catalog with Azure AD entitlement"
-  ms.date: 08/04/2021
+  ms.date: 02/08/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/3-create-manage-resource-catalog.md)]

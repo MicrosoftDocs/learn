@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-paas-solutions-with-azure-sql.understand-sql-database-hyperscale
+title: Understand SQL database hyperscale
+metadata:
+  title: Understand SQL database hyperscale
+  description: "Understand SQL database hyperscale"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-understand-sql-database-hyperscale.md)]

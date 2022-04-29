@@ -4,8 +4,8 @@ metadata:
   title: Understand Azure AD licenses and terminology
   description: Understand Azure AD licenses and terminology
   ms.date: 02/25/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand Azure AD licenses and terminology
@@ -36,4 +36,4 @@ quiz:
       explanation: You need Azure Active Directory Premium P2 to use Identity Protection.
     - content: Azure Active Directory Premium P2
       isCorrect: true
-      explanation: Identity Protection helps you configure risk-based conditional access for your applications to protect them from identity-based risks.
+      explanation: Identity Protection helps you configure risk-based Conditional Access for your applications to protect them from identity-based risks.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks.exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: "Exercise"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise.md)]

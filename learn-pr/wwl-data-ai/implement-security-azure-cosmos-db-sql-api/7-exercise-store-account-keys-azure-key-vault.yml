@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.exercise-store-account-keys-azure-key-vault
+title: 'Exercise: Store Azure Cosmos DB SQL API account keys in Azure Key Vault'
+metadata:
+  title: 'Exercise: Store Azure Cosmos DB SQL API account keys in Azure Key Vault'
+  description: "Exercise: Store Azure Cosmos DB SQL API account keys in Azure Key Vault"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107596
+labModal: true
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-store-account-keys-azure-key-vault.md)]

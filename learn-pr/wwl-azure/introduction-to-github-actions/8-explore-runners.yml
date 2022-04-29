@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-github-actions.explore-runners
+title: Explore runners
+metadata:
+  title: Explore runners
+  description: "Explore runners"
+  ms.date: 02/15/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-explore-runners.md)]

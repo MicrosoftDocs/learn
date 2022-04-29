@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 04/28/2022
+  author: v-tcassi
+  ms.author: tomcassidy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Environment variable are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
     - content: "False"
       isCorrect: false
-      explanation: "Environment variable are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
 
   - content: "Which troubleshooting command can be used to view container startup events?"
     choices:

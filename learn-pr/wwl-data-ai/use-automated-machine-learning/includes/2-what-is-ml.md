@@ -18,7 +18,7 @@ The specific operation that the ***f*** function performs on *x* to calculate *y
 
 The following video discusses the various kinds of machine learning model you can create, and the process generally followed to train and use them.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xAok]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4xAok]
 
 ## Azure Machine Learning
 

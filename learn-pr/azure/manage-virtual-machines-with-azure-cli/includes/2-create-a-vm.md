@@ -2,7 +2,7 @@ Let's start with the most obvious task: creating an Azure Virtual Machine.
 
 ## Logins, subscriptions, and resource groups
 
-You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription - this will be done for you. In addition, normally you would create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you which will be used to execute all the commands.
+You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription; this will be done for you. You would also normally create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you, which you will use to execute all the commands.
 
 ## Create a Linux VM with the Azure CLI
 
@@ -22,7 +22,7 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 | `update` | Update a property of a virtual machine |
 
 > [!NOTE]
-> For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index?view=azure-cli-latest).
+> For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index).
 
 Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
 
@@ -32,7 +32,7 @@ Let's start with the first one: `az vm create`. This command is used to create a
 > | `--resource-group` | The resource group that will own the virtual machine, use **<rgn>[sandbox Resource Group]</rgn>**. |
 > | `--name` | The name of the virtual machine - must be unique within the resource group. |
 > | `--image` | The operating system image to use to create the VM. |
-> | `--location` | The region to place the VM in. Typically this would be close to the consumer of the VM. In this exercise, choose a location nearby from the following list. |
+> | `--location` | The region in which to place the VM. Typically, this would be close to the VM's consumer. In this exercise, choose a location nearby from the following list. |
 
 In addition, it's helpful to add the `--verbose` flag to see progress while the VM is being created. 
 
@@ -61,9 +61,9 @@ We are specifying the administrator account name through the `--admin-username` 
 > [!NOTE]
 > Common names such as "root" and "admin" are not allowed for most images.
 
-We are also using the `generate-ssh-keys` flag. This parameter is used for Linux distributions and creates a pair of security keys so we can use the `ssh` tool to access the virtual machine remotely. The two files are placed into the `.ssh` folder on your machine and in the VM. If you already have an SSH key named `id_rsa` in the target folder, then it will be used rather than having a new key generated.
+We are also using the `generate-ssh-keys` flag. This parameter is used for Linux distributions, and creates a pair of security keys so we can use the `ssh` tool to access the virtual machine remotely. The two files are placed into the `.ssh` folder on your machine and in the VM. If you already have an SSH key named `id_rsa` in the target folder, then that SSH key will be used rather than generating a new key.
 
-Once it finishes creating the VM, you will get a JSON response which includes the current state of the virtual machine and its public and private IP addresses assigned by Azure:
+Once Azure CLI finishes creating the VM, you will get a JSON response which includes the current state of the virtual machine and its public and private IP addresses assigned by Azure:
 
 ```json
 {

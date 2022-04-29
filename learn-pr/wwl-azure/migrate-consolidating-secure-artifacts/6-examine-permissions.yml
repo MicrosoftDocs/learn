@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-permissions
+title: Examine permissions
+metadata:
+  title: Examine permissions
+  description: "Examine permissions"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-examine-permissions.md)]

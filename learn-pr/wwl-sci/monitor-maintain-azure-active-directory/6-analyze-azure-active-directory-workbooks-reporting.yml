@@ -4,12 +4,13 @@ title: Analyze Azure Active Directory workbooks and reporting
 metadata:
   title: Analyze Azure Active Directory workbooks and reporting
   description: "Analyze Azure Active Directory workbooks and reporting"
-  ms.date: 08/04/2021
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-analyze-azure-active-directory-workbooks-reporting.md)]

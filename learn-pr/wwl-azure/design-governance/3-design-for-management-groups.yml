@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-governance.design-for-management-groups
+title: Design for management groups
+metadata:
+  title: Design for management groups
+  description: "Design for management groups"
+  ms.date: 04/08/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-design-for-management-groups.md)]

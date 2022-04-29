@@ -4,13 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/01/2021
+  ms.date: 04/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -36,7 +39,7 @@ quiz:
     - content: "A Shortcut trust"
       isCorrect: false
       explanation: "That's incorrect. You configure shortcut trusts to reduce the time taken to authenticate between AD DS domains that are in different parts of an AD DS forest."
-  - content: "Which of the following is a built-in container in an AD DS domain that can manage home computer accounts?"
+  - content: "Which of the following is a built-in container in an AD DS domain that can hold computer accounts?"
     choices:
     - content: "The Domain Controllers OU"
       isCorrect: true

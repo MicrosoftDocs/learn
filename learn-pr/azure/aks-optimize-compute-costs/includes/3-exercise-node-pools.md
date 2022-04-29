@@ -23,7 +23,7 @@ Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-    You can check each value by using the `echo` command, for example, `echo $REGION_NAME`.
+    You can check each value by running the `echo` command, for example, `echo $REGION_NAME`.
 
 1. Make a note of your new cluster's name. You'll use this value later when you clean up resources, and in configuration settings for the cluster.
 
@@ -43,7 +43,7 @@ Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster
 
 With the resource group in place, you can now create the AKS cluster. Your first step is to get the version of the latest, non-preview version of Kubernetes in your selected region. You'll use this version in configuring the cluster.
 
-1. To get the latest, non-preview Kubernetes version, use the `az aks get-versions` command. Store the value that the command returns in a Bash variable named `VERSION`. To retrieve and store the version number, run the following command:
+1. To get the latest, non-preview Kubernetes version, run the `az aks get-versions` command. Store the value that the command returns in a Bash variable named `VERSION`. To retrieve and store the version number, run the following command:
 
     ```azurecli
     VERSION=$(az aks get-versions \
@@ -73,7 +73,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
         --generate-ssh-keys
     ```
 
-    Notice that two nodes are configured in the default node pool by using the `--node-count 2` parameter. Recall from earlier discussion that essential system services run across this system node pool. It's important that production clusters use at least `--node-count 3` for reliability in cluster operation. We're using only two nodes here for cost considerations in this exercise.
+    Notice that two nodes are configured in the default node pool by using the `--node-count 2` parameter. Recall from previous description that essential system services run across this system node pool. It's important that production clusters use at least `--node-count 3` for reliability in cluster operation. We're using only two nodes here for cost considerations in this exercise.
 
 1. Run the `az aks nodepool list` command to list the node pools in your new cluster:
 
@@ -107,7 +107,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
 
 ## Add a node pool
 
-1. Your cluster has a single node pool. Add a second node pool by using the `az aks nodepool add` command. Use the command in this step to create a user node pool with three nodes and the name `batchprocpl`. Keep in mind that node-pool names must start with a lowercase letter and contain only alphanumeric characters. Node-pool names are limited to 12 characters for Linux node pools and six characters for Windows node pools.
+1. Your cluster has a single node pool. Add a second node pool by running the `az aks nodepool add` command. Run the command in this step to create a user node pool with three nodes and the name `batchprocpl`. Keep in mind that node-pool names must start with a lowercase letter and contain only alphanumeric characters. Node-pool names are limited to 12 characters for Linux node pools and six characters for Windows node pools.
 
     Run the following command:
 
@@ -168,7 +168,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
 
 ## Scale the node-pool node count to zero
 
-You use the `az aks nodepool scale` command to scale nodes in a node pool manually.
+You run the `az aks nodepool scale` command to scale nodes in a node pool manually.
 
 Run the `az aks nodepool scale` command and use the `--node-count` parameter to set the node-count value to 0.
 
@@ -225,7 +225,7 @@ Notice that the node pool `count` parameter value is 0 and that the `enableAutoS
 
 In the output from the previous command, the node pool count is set to 0. You can confirm the available nodes in the cluster by running the `kubectl get nodes` command.
 
-1. You use `kubectl` to interact with your cluster's API server. You have to configure a Kubernetes cluster context to allow `kubectl` to connect. The context contains the cluster's address, a user, and a namespace. Use the `az aks get-credentials` command to configure the Kubernetes context in Cloud Shell.
+1. You run `kubectl` to interact with your cluster's API server. You have to configure a Kubernetes cluster context to allow `kubectl` to connect. The context contains the cluster's address, a user, and a namespace. Run the `az aks get-credentials` command to configure the Kubernetes context in Cloud Shell.
 
     Retrieve the cluster credentials by running this command:
 

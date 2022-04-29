@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-branches-workflows.explore-gitflow-branch-workflow
+title: Explore GitFlow branch workflow
+metadata:
+  title: Explore GitFlow branch workflow
+  description: "Explore GitFlow branch workflow"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-explore-gitflow-branch-workflow.md)]

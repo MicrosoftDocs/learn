@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-system-health-azure-stack-hub.send-diagnostic-logs-by-using-privileged-endpoint
+title: Send Azure Stack Hub diagnostic logs by using the privileged endpoint
+metadata:
+  title: Send Azure Stack Hub diagnostic logs by using the privileged endpoint
+  description: "Send Azure Stack Hub diagnostic logs by using the privileged endpoint"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-send-azure-stack-hub-diagnostic-logs-privileged-endpoint.md)]

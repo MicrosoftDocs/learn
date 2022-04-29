@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-windows-server-roles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator is migrating a number of server roles from a computer running Windows Server 2016 to a new server running Windows Server 2022. What is the first step the administrator should perform on the destination computer?"
+    choices:
+    - content: "Run the `SmigDeploy.exe` command."
+      isCorrect: false
+      explanation: "Incorrect. This command is run on the source computer."
+    - content: "Install the Windows Server Migration Tools feature."
+      isCorrect: true
+      explanation: "Correct. After installing this required feature, the migration can begin."
+    - content: "Copy the migration store from the source to the destination server."
+      isCorrect: false
+      explanation: "Incorrect. This is almost the last thing the administrator will do."
+  - content: "An administrator is migrating a number of server roles from a computer running Windows Server 2016 to a new server running Windows Server 2022. Which is the first cmdlet that they must run on the destination computer?"
+    choices:
+    - content: "`Get-SmigServerFeature`."
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet is run on the source server computer, and it's the second command to be run, typically."
+    - content: "`Export-SmigServerSetting`."
+      isCorrect: false
+      explanation: "Incorrect. This command is run on the source computer, and it's run after several other cmdlets."
+    - content: "`Add-PSSnapin`."
+      isCorrect: true
+      explanation: "Correct. This enables the migration cmdlets."
+  - content: "On which computer(s) should an administrator run the `SmigDeploy.exe` command, with no parameters, when preparing to migrate from Windows Server 2016 to Windows Server 2022?"
+    choices:
+    - content: "Only on the destination server computer."
+      isCorrect: false
+      explanation: "Incorrect. You only run this command, if it's needed, on the destination computer with parameters that define the architecture of the source computer."
+    - content: "Only on the source server computer."
+      isCorrect: true
+      explanation: "Correct. This registers the Windows Server Migration Tools on the source server."
+    - content: "On both the destination and source server computers."
+      isCorrect: false
+      explanation: "Incorrect. It's not always necessary to run this command on the destination server. And if it's needed, it will require parameters to define the architecture of the source computer."

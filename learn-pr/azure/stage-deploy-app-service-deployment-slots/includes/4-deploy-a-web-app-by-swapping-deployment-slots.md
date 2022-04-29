@@ -16,25 +16,25 @@ To view and configure settings for the swap, go to the web app resource and foll
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and select the deployment slot you want to configure.
 
-1. Navigate to the **Configuration** page.
+1. Go to the **Configuration** pane.
 
 1. On the **Application settings** tab, observe whether the settings you're interested in contain a checkmark in the **deployment slot setting** field. To set or unset a checkmark on a given setting, select the setting's pencil button to edit it, then toggle the **deployment slot setting** checkbox to the desired value, and select **OK**.
 
-    ![Configure slot settings.](../media/4-configure-slot-settings.png)
+    :::image type="content" source="../media/4-configure-slot-settings.png" alt-text="Configure slot settings." lightbox="../media/4-configure-slot-settings.png":::
 
-    ![Toggle deployment slot setting.](../media/4-deployment-slot-setting.png)
+    :::image type="content" source="../media/4-deployment-slot-setting.png" alt-text="Toggle deployment slot setting.":::
 
-1. Select **Save** on the Configuration page when you are finished to save your settings.
+1. Select **Save** on the Configuration pane when you are finished to save your settings.
 
 ### Swap slots in the Azure portal
 
 To swap two slots in the Azure portal:
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and navigate to any of the deployment slots for the web app and select the **Deployment Slots** page.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and go to any of the deployment slots for the web app, and select the **Deployment Slots** pane.
 
 1. Select **Swap**.
 
-1. In the **Swap** dialog box, you can select the source and target slots and see a summary of the settings that will be applied to the swapped slots.
+1. In the **Swap** dialog box, you can select the source and target slots, and see a summary of the settings that will be applied to the swapped slots.
 
     ![Swapping two slots.](../media/4-swap-slots.png)
 
@@ -44,7 +44,7 @@ When you swap slots, the settings in the target slot (which is typically the pro
 
 To help you discover problems before your app goes live into production, Azure App Service offers a swap-with-preview feature. When you choose this option, the swap proceeds in two phases:
 
-- **Phase 1**: Slot settings from the target slot are applied to the web app in the source slot. Then Azure warms up the staging slot. At this point, the swap operation pauses so you can test the app in the source slot to make sure it works with the target slot configuration. If you find no problems, begin the next phase.
+- **Phase 1**: Slot settings from the target slot are applied to the web app in the source slot. Azure then warms up the staging slot. At this point, the swap operation pauses so you can test the app in the source slot to make sure it works with the target slot configuration. If you find no problems, begin the next phase.
 - **Phase 2**: The hostnames for the two sites are swapped. The version of the app now in the source slot receives its slot settings.
 
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ If you want to be able to test before you swap, you'll need a more complex deplo
 
 ### Configure auto swap
 
-To configure auto swap for a slot, navigate to the **Configuration > General settings** pane for the slot in the Azure portal. Under **Deployment Slot**, set **Auto swap enabled** to **On**, select the target slot from the dropdown menu, and then select **Save** at the top.
+To configure auto swap for a slot, go to the **Configuration > General settings** pane for the slot in the Azure portal. Under **Deployment Slot**, set **Auto swap enabled** to **On**, select the target slot from the dropdown list, and then select **Save** on the top menu bar.
 
 ![Configure auto swap.](../media/4-configure-auto-swap.png)
 

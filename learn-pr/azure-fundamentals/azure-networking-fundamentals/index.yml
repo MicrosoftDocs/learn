@@ -3,7 +3,7 @@ uid: learn.azure.azure-networking-fundamentals
 metadata:
   title: Explore Azure networking services
   description: "Learn about the core networking resources that are available in Azure, such as Azure Virtual Network, Azure VPN Gateway, and Azure ExpressRoute. Prepare for AZ-900."
-  ms.date: 05/13/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial

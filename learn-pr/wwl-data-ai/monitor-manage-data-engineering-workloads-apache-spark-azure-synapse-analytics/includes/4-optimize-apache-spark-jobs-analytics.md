@@ -112,3 +112,4 @@ As stated before, it's important to keep monitoring the performance, especially 
 If there is an optimization necessary in relation to the optimization of a job execution, make sure you keep in mind the caching (an example might be using the data twice, but cache it). If you broadcast variables on all the executors you set up, due to the variables only being serialized once, you'll have faster lookups. 
 
 In another case you might use the thread pool that runs on the driver, which could result in faster operations for many tasks. 
+

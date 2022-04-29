@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-deploy-microservices-kubernetes.exercise-deploy-to-kubernetes
+title: Exercise - Deploy a microservice container to Kubernetes
+metadata:
+  title: Exercise - Deploy a microservice container to Kubernetes
+  description: Learn how to create a deployment file that describes to Kubernetes how to manage your containerized microservice.
+  ms.date: 08/13/2021
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-09032021
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-deploy-to-kubernetes.md)]

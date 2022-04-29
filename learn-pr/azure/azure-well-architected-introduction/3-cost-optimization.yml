@@ -5,8 +5,8 @@ metadata:
   title: Cost optimization
   description: Learn about how you can design your cloud architecture to optimize for cost.
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

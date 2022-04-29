@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.design-solution-to-log-monitor-azure-resources
+metadata:
+  title: Design a solution to log and monitor Azure resources
+  description: "Azure Architects design and recommend logging and monitoring solutions."
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a solution to log and monitor Azure resources
+summary: Azure Architects design and recommend logging and monitoring solutions.
+abstract: |
+  In this module, you’ll learn how to:
+  - Design for Azure Monitor data sources
+  - Design for Log Analytics
+  - Design for Azure workbooks and Azure Insights
+  - Design for Azure Data Explorer
+  - Monitor resources for performance efficiency
+prerequisites: |
+  - Working experience with monitoring and logging cloud environments
+  - Conceptual knowledge of monitoring and logging
+iconUrl: /learn/achievements/azure-resources-design-solution.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+- azure-data-explorer
+- azure-log-analytics
+- azure-monitor
+units:
+- learn.wwl.design-solution-to-log-monitor-azure-resources.introduction
+- learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-monitor-data-sources
+- learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-log-analytics
+- learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-workbooks-insights
+- learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-data-explorer
+- learn.wwl.design-solution-to-log-monitor-azure-resources.monitor-resources-for-performance-efficiency
+- learn.wwl.design-solution-to-log-monitor-azure-resources.knowledge-check
+- learn.wwl.design-solution-to-log-monitor-azure-resources.summand-resources
+badge:
+  uid: learn.wwl.design-solution-to-log-monitor-azure-resources.badge

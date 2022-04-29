@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.describe-federal-government-cio-council
+title: Describe the Federal Government Chief Information Officer (CIO) Council
+metadata:
+  title: Describe the Federal Government Chief Information Officer (CIO) Council
+  description: "Describe the Federal Government Chief Information Officer (CIO) Council"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-describe-federal-government-cio-council.md)]

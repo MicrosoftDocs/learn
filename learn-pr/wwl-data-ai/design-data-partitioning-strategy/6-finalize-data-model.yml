@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-partitioning-strategy.finalize-data-model
+title: Finalize the data model
+metadata:
+  title: Finalize the data model
+  description: "Finalize the data model"
+  ms.date: 12/20/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-finalize-data-model.md)]

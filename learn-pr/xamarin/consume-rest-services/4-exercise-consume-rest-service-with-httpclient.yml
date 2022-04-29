@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Consume a REST service with HttpClient
   description: Exercise - Consume a REST service with HttpClient
   ms.date: 4/15/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 interactive: bash
 azureSandbox: true
 durationInMinutes: 20

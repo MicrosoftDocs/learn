@@ -4,12 +4,13 @@ title: Establish baseline metrics
 metadata:
   title: Establish baseline metrics
   description: "Establish baseline metrics"
-  ms.date: 03/08/2021
+  ms.date: 04/29/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-establish-baseline-metrics.md)]

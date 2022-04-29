@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-azure-blob-storage.exercise-create-resources-by-using-dotnet-client-library
+title: 'Exercise: Create Blob storage resources by using the .NET client library'
+metadata:
+  title: 'Exercise: Create Blob storage resources by using the .NET client library'
+  description: "Exercise: Create Blob storage resources by using the .NET client library"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-develop-blob-storage-dotnet.md)]

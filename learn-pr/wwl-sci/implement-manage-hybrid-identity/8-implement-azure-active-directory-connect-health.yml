@@ -4,12 +4,13 @@ title: Implement Azure Active Directory Connect Health
 metadata:
   title: Implement Azure Active Directory Connect Health
   description: "Implement Azure Active Directory Connect Health"
-  ms.date: 07/23/2021
+  ms.date: 12/21/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/8-implement-azure-active-directory-connect-health.md)]

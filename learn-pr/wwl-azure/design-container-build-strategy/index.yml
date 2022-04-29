@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.design-container-build-strategy
+metadata:
+  title: Design a container build strategy
+  description: "Design a container build strategy"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a container build strategy
+summary: This module helps you plan a container build strategy, explains containers and their structure, introduces Docker, microservices, Azure Container Registry, and related services.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Design a container strategy
+  *   Work with Docker Containers
+  *   Create an Azure Container Registry
+  *   Explain Docker microservices and containers
+prerequisites: |
+  None
+iconUrl: /learn/achievements/1-design-a-container-build-strategy.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.design-container-build-strategy.introduction
+- learn.wwl.design-container-build-strategy.why-containers
+- learn.wwl.design-container-build-strategy.examine-structure-of-containers
+- learn.wwl.design-container-build-strategy.explore-docker-containers-development
+- learn.wwl.design-container-build-strategy.work-docker-containers
+- learn.wwl.design-container-build-strategy.explore-microservices-containers
+- learn.wwl.design-container-build-strategy.explore-azure-container-related-services
+- learn.wwl.design-container-build-strategy.explore-docker-container-registries
+- learn.wwl.design-container-build-strategy.exercise-create-azure-container-registry
+- learn.wwl.design-container-build-strategy.understand-dockerfile-core-concepts
+- learn.wwl.design-container-build-strategy.knowledge-check
+- learn.wwl.design-container-build-strategy.summary
+badge:
+  uid: learn.wwl.design-container-build-strategy.badge

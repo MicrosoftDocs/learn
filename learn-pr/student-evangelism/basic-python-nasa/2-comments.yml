@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Add comments to Python Notebooks to add clarity to your code
 durationInMinutes: 5
 sandbox: true

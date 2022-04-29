@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-docker-multi-stage-builds.manage-multiple-projects-solutions
+title: Manage multiple projects and solutions
+metadata:
+  title: Manage multiple projects and solutions
+  description: "Manage multiple projects and solutions"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-manage-multiple-projects-solutions.md)]

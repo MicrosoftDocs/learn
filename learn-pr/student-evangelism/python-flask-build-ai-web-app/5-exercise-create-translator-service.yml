@@ -4,11 +4,12 @@ title: Exercise - Create Translator service
 metadata:
   title: Exercise - Create Translator service
   description: Create and configure your Translator service.
-  ms.date: 10/23/2020
-  author: GeekTrainer
+  ms.date: 04/08/2022
+  author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-translator-service.md)]

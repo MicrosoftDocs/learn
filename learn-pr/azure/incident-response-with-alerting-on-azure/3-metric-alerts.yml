@@ -4,8 +4,8 @@ metadata:
   title: Use metric alerts for alerts about performance issues in your Azure environment
   description: Investigate the different kinds of metric alerts that Azure Monitor supports.
   ms.date: 10/10/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use metric alerts for alerts about performance issues in your Azure environment

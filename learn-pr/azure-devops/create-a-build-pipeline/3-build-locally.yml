@@ -5,12 +5,10 @@ metadata:
   title: Exercise - Get the sample application
   description: Build and run the sample application locally to help ensure it will build in your pipeline.
   ms.date: 05/24/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-build-locally.md)]
-
-

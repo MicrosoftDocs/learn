@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 durationInMinutes: 30
 content: |
   [!include[](includes/5-combine-datasets.md)]

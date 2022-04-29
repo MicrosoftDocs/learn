@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-durable-functions.explore-app-patterns
+title: Explore Durable Functions app patterns
+metadata:
+  title: Explore Durable Functions app patterns
+  description: "Explore Durable Functions app patterns"
+  ms.date: 01/11/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-durable-functions-overview.md)]

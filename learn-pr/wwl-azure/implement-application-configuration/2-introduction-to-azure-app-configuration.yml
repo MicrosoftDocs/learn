@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-configuration.introduction-to-azure-app-configuration
+title: Introduction to Azure App Configuration
+metadata:
+  title: Introduction to Azure App Configuration
+  description: "Introduction to Azure App Configuration"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-introduction-to-azure-app-configuration.md)]

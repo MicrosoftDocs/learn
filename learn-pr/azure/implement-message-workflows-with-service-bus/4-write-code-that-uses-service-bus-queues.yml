@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.4-write-code-that-uses-service-bus-queues
-title: Write code that uses Service Bus queues
+title: Write code to send and receive messages by using a queue
 metadata:
-  title: Write code that uses Service Bus queues
-  description: Write code that uses Service Bus queues
+  title: Write code to send and receive messages by using a queue
+  description: Learn how to write code that sends messages to and receives messages from a Service Bus queue.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

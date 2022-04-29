@@ -2,7 +2,7 @@ Let's start this module by looking at how to declare and use variables in Go. Th
 
 We're including code snippets in this section that you can run in Visual Studio Code or in the Go Playground.
 
-## Declaring variables
+## Declare variables
 
 To declare a variable, you need to use the `var` keyword:
 
@@ -32,7 +32,7 @@ var (
 )
 ```
 
-## Initializing variables
+## Initialize variables
 
 You've only declared variables at this point, but there will be times when you need them to have an initial value. In Go, you can initialize variables in various ways. For instance, continuing with the same example from earlier, you could initialize each variable by using this code:
 
@@ -69,20 +69,27 @@ var (
 There's another way you can declare and initialize variables. This method is the most common way to do so in Go. The same example we've been using could look like this:
 
 ```go
+package main
+
+import "fmt"
+
 func main() {
     firstName, lastName := "John", "Doe"
     age := 32
-    println(firstName, lastName, age)
+    fmt.Println(firstName, lastName, age)
 }
 ```
 
+> [!Note]
+> Notice the `import "fmt"` statement. We use the `import` keyword to bring the contents of a package into scope. We're importing the "fmt" package so we can use the `Println` method in our code. We'll take a closer look at this keyword in a later unit. 
+
 Run the preceding code to confirm that this way of declaring and initializing variables works.
 
-Notice that here you need to include a colon equal sign (`:=`) and its corresponding value right after you define the variable name. When you use the colon equal sign, *the variable you're declaring has to be a new one*. If you use a colon equal sign and the variable has been declared already, the program won't compile. Go ahead and give it a try.
+Notice that here you need to include a colon equal sign (`:=`) and its corresponding value right after you define the variable name. When you use the colon equal sign, *the variable you're declaring has to be a new one*. If you use a colon equal sign and the variable has been declared already, the program won't compile. Add the age as a constant (see next section), but use the colon equal sign (`:=`) and give it a try.
 
 Finally, *you can use the colon equal sign only inside a function*. When you declare variables outside of a function, you must do it by using the `var` keyword. Don't worry if you're not familiar with functions. We'll introduce functions in a later unit.
 
-## Declaring constants
+## Declare constants
 
 There will be times when you need to have static values in your code, known as *constants*. Go supports the use of constants. The keyword to declare one is `const`.
 
@@ -113,7 +120,7 @@ Although there are similarities between constants and variables, there are some 
 
 Something fundamental you need to keep in mind in Go is that when you declare a variable and don't use it, Go throws an error, not a warning as in some other programming languages.
 
-For example, let's go back to one of our previous examples and remove the `println` call:
+For example, let's go back to one of our previous examples and remove the `fmt.Println` call:
 
 ```go
 func main() {

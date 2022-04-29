@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-vpn-gateway.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 12/22/2021
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom:
+  - team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - orthomas-01072022
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: You are planning an Azure VPN gateway for an Azure virtual network. The Azure virtual network already includes an Azure ExpressRoute gateway. Which of the following Azure VPN gateway types can you deploy on this Azure virtual network?
+      choices:
+        - content: A policy-based VPN gateway.
+          isCorrect: false
+          explanation: Incorrect. A policy-based VPN gateway can be deployed only on a virtual network that doesn't have an Azure ExpressRoute gateway.
+        - content: A route-based VPN gateway.
+          isCorrect: true
+          explanation: Correct. If an Azure ExpressRoute gateway is present on an Azure virtual network, you can deploy only a route-based VPN gateway.
+        - content: You can't deploy a VPN gateway in this virtual network.
+          explanation: Incorrect. You can deploy a route-based VPN gateway if an Azure ExpressRoute gateway is already present.
+          isCorrect: false
+    - content: Which of the following subnet names must be present on an Azure virtual network to support an Azure VPN gateway?
+      choices: 
+        - content: EncryptedSubnet
+          explanation: Incorrect. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway. A subnet named EncryptedSubnet doesn't need to be present.
+          isCorrect: false
+        - content: BorderSubnet
+          explanation: Incorrect. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway. A subnet named BorderSubnet doesn't need to be present.
+          isCorrect: false
+        - content: GatewaySubnet
+          explanation: Correct. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway.
+          isCorrect: true
+    - content: Adatum has determined that it wants to have its Azure VPN connections support an aggregate throughput of 1.25 Gbps. Which of the following Azure VPN gateway SKUs should Adatum deploy?
+      choices:
+        - content: VpnGw1
+          explanation: Incorrect. VpnGw1 supports an aggregate throughput of 650 Mbps.
+          isCorrect: false
+        - content: VpnGw2
+          explanation: Incorrect. VpnGw2 supports an aggregate throughput of 1 Gbps.
+          isCorrect: false
+        - content: VpnGw3
+          explanation: Correct. VpnGw3 supports an aggregate throughput of 1.25 Gbps.
+          isCorrect: true
+
+
+        

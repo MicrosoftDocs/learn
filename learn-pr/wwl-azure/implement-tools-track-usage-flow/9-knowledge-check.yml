@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-tools-to-track-usage-flow.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices Azure Monitor lets you create custom dashboards based on?"
+    choices:
+    - content: "Alerts, Action Groups."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor lets you create custom dashboards based on Metrics and Logs."
+    - content: "Metrics, Logs."
+      isCorrect: true
+      explanation: "Correct. Azure Monitor lets you create custom dashboards based on Metrics and Logs."
+    - content: "Action Groups, Workflows."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor lets you create custom dashboards based on Metrics and Logs."
+  - content: "Which of the following query languages can you use to query Azure Log Analytics?"
+    choices:
+    - content: "Kusto."
+      isCorrect: true
+      explanation: "Correct. Kusto is the primary way to query Log Analytics. It provides both a query language and a set of control commands."
+    - content: "T-SQL."
+      isCorrect: false
+      explanation: "Incorrect. Kusto is the primary way to query Log Analytics. It provides both a query language and a set of control commands."
+    - content: "Xpath."
+      isCorrect: false
+      explanation: "Incorrect. Kusto is the primary way to query Log Analytics. It provides both a query language and a set of control commands."
+  - content: "Which of the following choices is the unique key configured by Application Insights used by the Application Insights SDK?"
+    choices:
+    - content: "ApplicationInsights Key."
+      isCorrect: false
+      explanation: "Incorrect. Application Insights configures a unique key called AppInsights Key in your application. The Application Insights SDK uses this key to identify the Azure App Insights workspace the telemetry data needs to be uploaded."
+    - content: "AppInsightsSDK Key."
+      isCorrect: false
+      explanation: "Incorrect. Application Insights configures a unique key called AppInsights Key in your application. The Application Insights SDK uses this key to identify the Azure App Insights workspace the telemetry data needs to be uploaded."
+    - content: "AppInsights Key."
+      isCorrect: true
+      explanation: "Correct. Application Insights configures a unique key called AppInsights Key in your application. The Application Insights SDK uses this key to identify the Azure App Insights workspace the telemetry data needs to be uploaded."

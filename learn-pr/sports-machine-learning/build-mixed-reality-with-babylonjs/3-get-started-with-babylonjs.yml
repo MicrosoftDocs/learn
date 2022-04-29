@@ -4,10 +4,11 @@ metadata:
   title: Get started with Babylon.js
   description: Get started with Babylon.js.
   ms.date: 06/15/2021
-  author: cassieview
+  author: cassiebreviu
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Get started with Babylon.js
 durationInMinutes: 2
 content: |

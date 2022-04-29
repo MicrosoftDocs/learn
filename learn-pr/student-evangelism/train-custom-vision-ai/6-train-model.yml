@@ -4,10 +4,11 @@ metadata:
   title: Exercise - Train the Custom Vision service
   description: This unit walks you through training the Custom Vision service by tagging the area in various images where the object appears.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Train the Custom Vision service
 durationInMinutes: 3
 content: |

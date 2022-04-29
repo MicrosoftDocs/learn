@@ -8,8 +8,10 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Preview Azure deployment changes by using what-if
-summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so.
+summary: |
+  Preview the effects of your deployments. Understand the types of changes detected by the what-if operation. Deploy your templates using incremental and complete mode.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the two deployment modes in Azure and their effects
@@ -21,6 +23,8 @@ roles:
   - developer
   - administrator
   - solution-architect
+languages:
+  - bicep
 products:
   - azure
   - azure-clis
@@ -36,7 +40,7 @@ prerequisites: |
     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
     - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&preserve-view=true) tools installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?&azure-portal=true) version installed locally.
 units:
   - learn.arm-template-whatif.1-introduction

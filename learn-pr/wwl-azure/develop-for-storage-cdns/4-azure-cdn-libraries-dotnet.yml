@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-for-storage-cdns.interact-azure-content-delivery-networks-by-using-net
+title: Interact with Azure Content Delivery Networks by using .NET
+metadata:
+  title: Interact with Azure Content Delivery Networks by using .NET
+  description: "Interact with Azure Content Delivery Networks by using .NET"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-azure-cdn-libraries-dotnet.md)]

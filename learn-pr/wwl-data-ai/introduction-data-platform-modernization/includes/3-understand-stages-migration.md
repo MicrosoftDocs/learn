@@ -50,7 +50,7 @@ The planning stage of a data platform modernization project is used to determine
 
     - **Infrastructure as a Service (IaaS)** - In this approach, you will migrate your data to a virtual machine that has SQL Server installed.
 
-    - **Platform as a Service (PaaS)** - In this approach, you will migrate your data to a data platform service that suits your workload. For transactional workloads, that would involve Azure SQL Database or Cosmos DB. For Online Analytical Processing (OLAP) type workloads, this would involve Azure SQL Data Warehouse.
+    - **Platform as a Service (PaaS)** - In this approach, you will migrate your data to a data platform service that suits your workload. For transactional workloads, that would involve Azure SQL Database or Cosmos DB. For Online Analytical Processing (OLAP) type workloads, this would involve Azure Synapse Analytics.
 
 - **Choosing target platform by features**
 
@@ -65,8 +65,6 @@ The planning stage of a data platform modernization project is used to determine
         - DQS
         - MDS
         - Database Mail
-        - Filestream
-        - Filetable
         - Polybase
         - Support for Linked Servers
         - Supports new Azure cloud services such as Threat Detection
@@ -77,7 +75,7 @@ The planning stage of a data platform modernization project is used to determine
         - SSAS
         - SSIS
 
-    - **Azure SQL Data Warehouse** - Use if you have applications that run complex queries across petabytes of data that can leverage massively parallel processing (MPP) to reduce query processing times from hours to minutes.
+    - **Azure Synapse Analytics** - Use if you have applications that run complex queries across petabytes of data that can leverage massively parallel processing (MPP) to reduce query processing times from hours to minutes.
 
 - **Choosing target platform by cost**
 
@@ -89,7 +87,7 @@ The planning stage of a data platform modernization project is used to determine
 
     - **SQL Server on Azure VMs** - VMs impose higher compute, storage, and management costs over the Azure SQL Database offerings but grants greater control across the SQL Server and infrastructure.
 
-    - **Azure SQL Data Warehouse** - Azure SQL Data Warehouse can reduce your cost by leveraging the MPP architecture to process complex queries in minutes rather than hours.
+    - **Azure Synapse Analytics** - Azure Synapse Analytics can reduce your cost by leveraging the MPP architecture to process complex queries in minutes rather than hours.
 
 - **Offline versus online migrations**
 

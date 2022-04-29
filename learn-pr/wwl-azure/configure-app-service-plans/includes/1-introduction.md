@@ -1,6 +1,6 @@
 ## Scenario
 
-It's important to be able to scale a web app.:
+It's important to be able to scale a web app.
 
  -  Scaling enables the app to remain responsive during periods of high demand.
  -  Scaling helps to save money by reducing the resources required when demand drops.

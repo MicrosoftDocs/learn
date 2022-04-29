@@ -5,12 +5,10 @@ metadata:
   title: Introduction
   description: In this module, you learn how to set up a build agent that runs on an Azure virtual machine.
   ms.date: 06/04/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
-

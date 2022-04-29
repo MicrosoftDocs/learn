@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.startups
+metadata:
+  title: Build an early-stage startup
+  description: Learn how to launch a startup. Understand how to validate an idea and generate revenue. See tips on branding, team building, fundraising, and pitching.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+title: Build an early-stage startup
+summary: |
+  This learning path is for early-stage startup founders, and anyone working on an idea for a startup. It acts as a guide to the core business concepts you need to know to launch a successful startup.
+
+  The modules are based on industry best practices. The content also draws from the deep experience of the Microsoft for Startups team and from the knowledge of thought leaders such as Eric Ries, Steve Blank, Ash Maurya, Paul Graham, David Bland, and Cindy Alvarez.
+
+  By completing this learning path, you'll acquire an understanding of:
+
+  - Startup fundamentals.
+  - Validating your startup idea with customers.
+  - Getting to revenue.
+  - Naming and branding.
+  - Building your team.
+  - Fundraising for your startup.
+  - How to pitch your company.
+
+  You'll also learn what actions are likely to increase the chances of your startup being successful, and what common pitfalls you should avoid. 
+
+prerequisites: None
+iconUrl: /learn/achievements/introduction-to-founders-hub.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-analyst
+- functional-consultant
+- student
+products:
+- consumer
+modules:
+- learn.startups.fundamentals
+- learn.startups.validate-idea
+- learn.startups.revenue
+- learn.startups.name-brand
+- learn.startups.build-team
+- learn.startups.fundraising
+- learn.startups.pitch-company
+trophy:
+  uid: learn.startups.trophy

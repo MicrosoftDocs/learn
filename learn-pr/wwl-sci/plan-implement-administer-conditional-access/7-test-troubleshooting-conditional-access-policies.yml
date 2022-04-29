@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-administer-conditional-access.test-troubleshoot-policies
-title: Test and troubleshoot conditional access policies
+title: Test and troubleshoot Conditional Access policies
 metadata:
-  title: Test and troubleshoot conditional access policies
-  description: "Test and troubleshoot conditional access policies"
-  ms.date: 07/23/2021
+  title: Test and troubleshoot Conditional Access policies
+  description: "Test and troubleshoot Conditional Access policies"
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-test-troubleshooting-conditional-access-policies.md)]

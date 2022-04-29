@@ -48,9 +48,16 @@ AI for Earth empowers people and organizations to innovate in the ways we monito
 
 Seeing AI is a Microsoft research project that combines the power of the cloud and AI to deliver an intelligent app designed to help you navigate your day.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see the application in action.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to see the application in action.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWptJr]
 

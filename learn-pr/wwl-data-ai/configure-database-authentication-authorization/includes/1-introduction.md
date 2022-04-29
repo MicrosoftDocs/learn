@@ -6,16 +6,8 @@ This module explores the practices of granting permissions and what the various 
 
 In this module you will learn about:
 
-- The differences between Active Directory and Azure Active Directory
-- Authentication Options for Azure SQL Database
-- Security Principals
-- Object permissions
-- Execute as user
-- The concept of least privilege
-
-## Pre-requisites
-
-- Ability to use tools for running queries against a Microsoft SQL database, either on-premises or cloud-based
-- Understanding of why security is a crucial part of database system planning
-- Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
-- Experience creating and configuring resources using the Azure portal
+- Describe the differences between Active Directory and Azure Active Directory
+- Explain authentication Options for Azure SQL Database
+- Describe security principals
+- Explain object permissions
+- Identify authentication and authorization failures

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 11/09/2021
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'The DeepStream Graph Composer can be described as a collection of the following features and functionalities:'
+    choices: 
+    - content: 'An SDK that contains optimized libraries for GPU accelerated inference tasks'
+      isCorrect: false
+      explanation: Incorrect. This choice is more descriptive of the DeepStream SDK itself, which is used by the DeepStream Graph Composer.
+    - content: 'Tooling for drawing charts that display inference detections in DeepStream apps'
+      isCorrect: false
+      explanation: Incorrect. This choice isn't a feature of the DeepStream Graph Composer.
+    - content: 'A visual environment for developing IVA applications that make use of the NVIDIA DeepStream SDK, a registry tool that provides extensions and components for use in the visual environment, and tooling for packaging NVIDIA DeepStream Graphs into containerized applications'
+      isCorrect: true
+      explanation: Correct. All these features and functionalities are provided by the DeepStream Graph Composer.
+  - content: 'When you run a container application that requires access to the X11 environment for drawing a user interface, the following details must be accounted for:'
+    choices: 
+    - content: The container runtime will configure itself and just work.
+      isCorrect: false
+      explanation: "Incorrect. Unfortunately, this capability won't work without extra configuration prior to running and at runtime."
+    - content: Before you run the workload in question, the host machine needs to enable access to the X11 environment, which can be accomplished with `sudo xhost +`. The container must also mount in the system X11 socket at runtime.
+      isCorrect: true
+      explanation: Correct. These steps will enable access to the X11 environment from a container.
+    - content: 'Enable the option for X11 access when you build the container.'
+      isCorrect: false
+      explanation: "Incorrect. Access to the X11 environment requires system-level modification and configuration of the container at runtime. There's no such option available to accomplish this access during the building of the container."
+  - content: 'Distributing a GPU accelerated workload as a container provides the following benefits:'
+    choices: 
+    - content: 'Containerized workloads can be deployed across various architectures without the need for repackaging.'
+      isCorrect: false
+      explanation: Incorrect. Containers are capable of targeting multiple platform architectures but typically require a separate image for each platform target.
+    - content: "Containerized workloads are guaranteed to exhibit similar runtime behavior when deployed to homogenous hardware. Time to deployment is potentially reduced because a full download of incremental image updates isn't required. Easy-to-understand required solution dependencies are created by inspecting the associated Docker file of a given container image."
+      isCorrect: true
+      explanation: Correct. These features are all beneficial to running a GPU accelerated workload as a container.
+    - content: "GPU acceleration isn't possible because of access limitations when you run workloads as a container."
+      isCorrect: false
+      explanation: Incorrect. Containerized workloads can theoretically access any devices made accessible to the host kernel, which includes GPU acceleration hardware.

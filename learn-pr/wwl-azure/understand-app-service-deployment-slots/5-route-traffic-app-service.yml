@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-app-service-deployment-slots.route-traffic
+title: Route traffic in App Service
+metadata:
+  title: Route traffic in App Service
+  description: "Route traffic in App Service"
+  ms.date: 03/08/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-route-traffic-app-service.md)]

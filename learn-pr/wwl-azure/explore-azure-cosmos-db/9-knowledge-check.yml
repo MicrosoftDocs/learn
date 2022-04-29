@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When setting up Azure Cosmos DB there are three account type options. Which of the account type options below is used to specify the number of RUs for an application on a per-second basis?"
+    choices:
+    - content: "Provisioned throughput"
+      isCorrect: true
+      explanation: "That's correct. In this mode, you provision the number of RUs for your application on a per-second basis in increments of 100 RUs per second."
+    - content: "Serverless"
+      isCorrect: false
+      explanation: "That's incorrect. In this mode, you don't have to provision any throughput when creating resources in your Azure Cosmos account."
+    - content: "Autoscale"
+      isCorrect: false
+      explanation: "That's incorrect. In this mode, you can automatically and instantly scale the throughput (RU/s)."
+  - content: "Which of the following consistency levels below offers the greatest throughput?"
+    choices:
+    - content: "Strong"
+      isCorrect: false
+      explanation: "That's incorrect. The eventual consistency level offers the greatest throughput at the cost of weaker consistency."
+    - content: "Session"
+      isCorrect: false
+      explanation: "That's incorrect. The eventual consistency level offers the greatest throughput at the cost of weaker consistency."
+    - content: "Eventual"
+      isCorrect: true
+      explanation: "That's correct. The eventual consistency level offers the greatest throughput at the cost of weaker consistency."

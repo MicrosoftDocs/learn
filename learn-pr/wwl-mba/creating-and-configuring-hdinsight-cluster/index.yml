@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster
 metadata:
-  title: Creating and configuring a HDInsight Cluster
-  description: Creating and configuring a HDInsight Cluster
-  ms.date: 10/25/2019
+  title: Creating and configuring a HDInsight cluster
+  description: "Creating and configuring a HDInsight cluster"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Creating and configuring a HDInsight cluster
@@ -16,12 +16,12 @@ abstract: |
   - Execute queries on an HDInsight Spark Cluster
   - Monitor an HDInsight Spark Cluster
   - Learn how to fix common provisioning issues
-ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed:
   - Successfully login to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
+  - Create and configure a HDInsight Cluster in the Azure portal
 iconUrl: /learn/achievements/creating-and-configuring-a-hdinsight-cluster.svg
 levels:
 - beginner

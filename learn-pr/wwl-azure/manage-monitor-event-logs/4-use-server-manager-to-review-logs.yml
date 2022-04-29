@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-event-logs.use-server-manager-to-review-logs
+title: Use Server Manager to review logs
+metadata:
+  title: Use Server Manager to review logs
+  description: "Use Server Manager to review logs"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-use-server-manager-to-review-logs.md)]

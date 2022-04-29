@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-processes-to-automate-application-analytics.integrate-telemetry
+title: Integrate telemetry
+metadata:
+  title: Integrate telemetry
+  description: "Integrate telemetry"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-integrate-telemetry.md)]

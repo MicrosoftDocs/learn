@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.manage-access
+metadata:
+  title: Manage access for Azure Virtual Desktop
+  description: "Manage access for Azure Virtual Desktop"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage access for Azure Virtual Desktop
+summary: Azure Virtual Desktop uses Azure role-based access controls (RBAC) to assign roles to users and admins. Azure Virtual Desktop has additional roles that let you separate management roles for host pools, app groups, and workspaces.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Describe Azure role-based access controls (RBAC) for Azure Virtual Desktop.
+  *  Plan and implement Azure roles and RBAC for Azure Virtual Desktop.
+  *  Describe how to configure Azure Virtual Desktop with Intune.
+prerequisites: ""
+iconUrl: /learn/achievements/1-manage-access.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.manage-access.introduction
+- learn.wwl.manage-access.rbac-for-azure-virtual-desktop
+- learn.wwl.manage-access.plan-implement-azure-roles-rbac-for-window-virtual-desktop
+- learn.wwl.manage-access.using-azure-virtual-desktop-intune
+- learn.wwl.manage-access.configuring-screen-capture-protection-for-azure-virtual-desktop
+- learn.wwl.manage-access.knowledge-check
+- learn.wwl.manage-access.summary
+badge:
+  uid: learn.wwl.manage-access.badge

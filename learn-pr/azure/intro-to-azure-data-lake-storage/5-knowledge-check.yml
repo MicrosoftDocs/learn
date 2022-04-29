@@ -7,8 +7,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge of Azure Data Lake Storage.
   ms.date: 06/17/2021
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
 durationInMinutes: 5
 content: |

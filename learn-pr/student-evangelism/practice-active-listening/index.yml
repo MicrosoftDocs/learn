@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.student-evangelism.practice-active-listening
+metadata:
+  title: 'Work with others by practicing active listening'
+  description: Learn how to work with others by practicing active listening.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: 'Work with others by practicing active listening'
+summary: Learn how to work with others by practicing active listening.
+abstract:  | 
+  After completing this module, you'll be able to:
+  - Realize how active listening creates more effective communication.
+  - Improve relationships in your technology workplace by using active listening.
+  - Set ground rules for respectful and effective communication.
+  - Apply active listening strategies in computer science.
+  
+prerequisites: |
+  - An open mind and a willingness to learn about the expectations and responsibilities of managing, mentoring, or collaborating with others in a technology workspace or educational environment.
+
+iconUrl: /learn/achievements/tech-resilience/practice-active-listening.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.practice-active-listening.introduction
+- learn.student-evangelism.practice-active-listening.what-is-effective-communication
+- learn.student-evangelism.practice-active-listening.role-active-listening-teamwork
+- learn.student-evangelism.practice-active-listening.exercise-reflect-experiences
+- learn.student-evangelism.practice-active-listening.ground-rules-effective-communication
+- learn.student-evangelism.practice-active-listening.practice-active-listening-strategies
+- learn.student-evangelism.practice-active-listening.exercise-reflect-active-listening-techniques
+- learn.student-evangelism.practice-active-listening.knowledge-check
+- learn.student-evangelism.practice-active-listening.summary
+badge:
+  uid: learn.student-evangelism.practice-active-listening.badge

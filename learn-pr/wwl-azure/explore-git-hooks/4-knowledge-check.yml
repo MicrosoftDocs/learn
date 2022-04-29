@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-git-hooks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices isn't a Git hook event?"
+    choices:
+    - content: "Post-checkout."
+      isCorrect: false
+      explanation: "Incorrect. Hooks must be stored in the .git/hooks folder in the repo root, and they must be named to match the corresponding events like post-checkout, pre-commit, post-commit, update, and so on."
+    - content: "Pre-commit."
+      isCorrect: false
+      explanation: "Incorrect. Hooks must be stored in the .git/hooks folder in the repo root, and they must be named to match the corresponding events like post-checkout, pre-commit, post-commit, update, and so on."
+    - content: "After-commit."
+      isCorrect: true
+      explanation: "Correct. Hooks must be stored in the .git/hooks folder in the repo root, and they must be named to match the corresponding events like post-checkout, pre-commit, post-commit, update, and so on."
+  - content: "Which of the following choices is a practical use case for using Git hooks?"
+    choices:
+    - content: "Enforce preconditions for merging applying custom code with the event post-merge."
+      isCorrect: false
+      explanation: "Incorrect. There are some examples of where you can use hooks to enforce policies and one is sending notifications to your team’s chat room (Teams, Slack, HipChat, and so on)."
+    - content: "Send notifications to your team’s chat room."
+      isCorrect: true
+      explanation: "Correct. There are some examples of where you can use hooks to enforce policies and one is sending notifications to your team’s chat room (Teams, Slack, HipChat, and so on)."
+    - content: "Validate code and merge branches automatically using the commit-msg event."
+      isCorrect: false
+      explanation: "Incorrect. There are some examples of where you can use hooks to enforce policies and one is sending notifications to your team’s chat room (Teams, Slack, HipChat, and so on)."
+  - content: "Which of the following choices is a valid event to verify Work Item ID association in your commit message before commit?"
+    choices:
+    - content: "Commit-msg."
+      isCorrect: true
+      explanation: "Correct. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
+    - content: "Commit-msg-id."
+      isCorrect: false
+      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
+    - content: "Msg-commit."
+      isCorrect: false
+      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."

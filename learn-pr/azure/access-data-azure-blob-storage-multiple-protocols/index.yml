@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.access-data-azure-blob-storage-multiple-protocols
+metadata:
+  moduleType: standard
+  title: Access data from Azure Blob Storage by using multiple protocols
+  description: You can access your data from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
+  ms.date: 12/27/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Access data from Azure Blob Storage by using multiple protocols
+summary: You can access your data from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
+abstract: |
+  By the end of this module, you'll be able to:
+  - Differentiate between the available protocols that can access data from Azure Blob Storage.
+  - Explain the requirements for configuring each protocol.
+  - Create a storage account that users can access by using multiple protocols.
+  - Access data by using multiple protocols.
+prerequisites: |
+  - Ability to navigate the Azure portal
+  - Basic knowledge of Azure PowerShell and Azure command-line interface (CLI)
+  - Experience with Windows and Linux
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - data-engineer
+  - solution-architect
+products:
+  - azure-blob-storage
+  - azure-data-lake-storage
+units:
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.1-introduction
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.2-understand-object-storage-solutions
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.3-access-data-azure-blob-storage-rest-protocol
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.4-access-data-azure-blob-storage-nfs-protocol
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.5-access-data-azure-blob-storage-sftp-protocol
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.6-knowledge-check
+- learn.azure.access-data-azure-blob-storage-multiple-protocols.7-summary
+badge:
+  uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.badge

@@ -4,8 +4,8 @@ metadata:
   title: Azure Kubernetes Service deployment pipeline and GitHub Actions
   description: Explore how to use GitHub Actions to create an automated Azure Kubernetes Service deployment pipeline.
   ms.date: 10/08/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: github
 title: Azure Kubernetes Service deployment pipeline and GitHub Actions

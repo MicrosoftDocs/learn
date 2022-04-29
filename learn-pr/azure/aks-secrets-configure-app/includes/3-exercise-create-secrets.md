@@ -1,25 +1,32 @@
-As we previously mentioned in the ["Before We Start"](https://docs.microsoft.com/learn/modules/aks-secrets-configure-app/1-introduction) step, we'll assume there's an AKS cluster already created. So now you'll create the needed resources to support the application's backend.
+<!--
+
+As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-app/1-introduction) exercise, we'll assume an AKS cluster has already been created. So, you'll create the needed resources to support the application's backend.
 
 ## Activate the Azure sandbox
 
-1. Start by **activating the Azure sandbox above.**
+>[!NOTE]
+> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
 
-1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Start by **activating the Azure sandbox.**
+
+1. When the sandbox is activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+
+-->
 
 ## Before we start
 
-We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+Before creating a new cluster, run the following commands to create a resource group. Update the LOCATION variable with the region closest to you; for example, `eastus`:
 
 ```azurecli-interactive
-export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export RESOURCE_GROUP=rg-ship-manager
 export CLUSTER_NAME=ship-manager-cluster
+export LOCATION={location}
+az group create --location $LOCATION --name $RESOURCE_GROUP
 ```
 
-```azurecli-interactive
-az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP
-```
-
-If the list is empty, proceed to create your AKS cluster, running the following commands in a Cloud Shell environment:
+Then, create your AKS cluster by running the following command in a Cloud Shell environment:
 
 ```azurecli-interactive
 az aks create \
@@ -31,7 +38,7 @@ az aks create \
  --enable-addons http_application_routing
 ```
 
-After the previous command runs, or if the list is not empty (the cluster is already created), get the administration config:
+After your cluster is created, get the administration config:
 
 ```azurecli-interactive
 az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
@@ -44,9 +51,9 @@ The complete cluster creation can take up to five minutes.
 
 ## Create the Secret
 
-According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application: the front end and the back end. Only the back end will need to use a Secret as it has the MongoDB connection string as an environment variable.
+According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application: the front end, and the back end. Only the back end will need to use a Secret, because it has the MongoDB connection string as an environment variable.
 
-1. The first step is to deploy a MongoDB database to support this application; for that, you'll use CosmosDB:
+1. The first step is to deploy a MongoDB database to support this application by using CosmosDB:
 
     ```azurecli-interactive
     export DATABASE_NAME=contoso-ship-manager-$RANDOM && \
@@ -57,7 +64,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
      --enable-free-tier
     ```
 
-    The database creation can take up to three minutes. Once the database is created, you'll fetch the connection string:
+    The database creation can take up to three minutes. Once the database is created, fetch the connection string:
 
     ```azurecli-interactive
     az cosmosdb keys list \
@@ -76,7 +83,13 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
     touch backend-secret.yaml
     ```
 
-1. Use `code backend-secret.yaml` to open the editor and edit the file. In this file, you'll create the Secret spec.
+1. Enter the following command to open the file in the editor. 
+
+    ```bash
+    code backend-secret.yaml
+    ```
+
+1. Add the following code to this file to create the Secret spec. Be sure to replace the placeholder string with the connection string.
 
     ```yaml
     apiVersion: v1
@@ -89,9 +102,9 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
       database_mongodb_uri: "<paste the connection string here>"
     ```
 
-    Save and close the file.
+1. Save and close the file.
 
-1. Apply the secret running the `kubectl apply command`:
+1. Apply the secret by running the `kubectl apply` command:
 
     ```azurecli-interactive
     kubectl apply -f backend-secret.yaml
@@ -103,7 +116,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
     kubectl get secret ship-manager-database
     ```
 
-    You should get an output similar to the following:
+    You should get an output similar to:
 
     ```output
     NAME                    TYPE     DATA   AGE
@@ -112,7 +125,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
 
 ## Create the application
 
-Now it's time to create the application and apply the secret to this application.
+Let's create the application and apply the secret to this application.
 
 1. Get the DNS zone that has been made available with the HTTP application routing add-on:
 
@@ -126,11 +139,14 @@ Now it's time to create the application and apply the secret to this application
 
     Copy the output value for later use.
 
-1. Create a new file called `backend-application.yaml`.
+1. Create a new file called `backend-application.yaml` and open it in the editor.
 
-1. Open the file running `code backend-application.yaml`.
+    ```bash
+    touch backend-application.yaml
+    code backend-application.yaml
+    ```
 
-1. Create the Deployment specification as follows:
+1. Create the Deployment specification by adding the following code to the file:
 
     ```yaml
     apiVersion: apps/v1
@@ -164,7 +180,7 @@ Now it's time to create the application and apply the secret to this application
                   value: ship_manager
     ```
 
-    Notice that we're using the `valueFrom` and then `secretKeyRef` keys in the `env` section. This is telling the deployment that we'll use the value from the `key` present in the Secret defined in the `name` key.
+    Notice that we're using the `valueFrom` and then `secretKeyRef` keys in the `env` section. The order of these keys is telling the deployment that we'll use the value from the `key` present in the Secret defined in the `name` key.
 
 1. Add three dashes below the last line to separate the Deployment from the Service you're about to create.
 
@@ -180,17 +196,17 @@ Now it's time to create the application and apply the secret to this application
     spec:
       selector:
         app: ship-manager-backend
-    ports:
-      - name: http
-        port: 80
-        targetPort: 3000
+      ports:
+        - name: http
+          port: 80
+          targetPort: 3000
     ---
     ```
 
-1. Let's add the Ingress so we can access the application, below the last three dashes, add the following YAML:
+1. Let's add the Ingress so that we can access the application. Below the last three dashes, add the following code:
 
     ```yaml
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -203,13 +219,20 @@ Now it's time to create the application and apply the secret to this application
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-backend
-                  servicePort: http
+                  service:
+                    name: ship-manager-backend
+                    port:
+                      name: http
     ```
 
 1. Save and close the file.
 
-1. Apply the changes running `kubectl apply -f backend-application.yaml`.
+1. Apply the changes by running the following command:
+
+    ```bash
+    kubectl apply -f backend-application.yaml
+    ```
 
     The changes can take up to five minutes to propagate.

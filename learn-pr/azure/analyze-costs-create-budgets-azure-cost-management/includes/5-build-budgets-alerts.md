@@ -1,6 +1,6 @@
-You can create an Azure subscription budget for a monthly, quarterly, or annual period. Your navigational content in the Azure portal determines whether you create a budget for a subscription or for a management group.
+You can create an Azure subscription budget for a monthly, quarterly, or annual period. Your navigational context in the Azure portal determines whether you create a budget for a subscription or for a management group.
 
-To create or view a budget, open the desired scope in the Azure portal, and select **Budgets** in the menu. For example, navigate to **Subscriptions**, select a subscription from the list, and then select **Budgets** in the menu. Use the **Scope** pill to switch to a different scope, like a management group, in Budgets.
+To create or view a budget, open the desired scope in the Azure portal and select **Budgets** in the menu. For example, navigate to **Subscriptions**, select a subscription from the list, and then select **Budgets** in the menu. Use the **Scope** pill to switch to a different scope, like a management group, in Budgets.
 
 After you create budgets, they show a simple view of your current spending against them.
 
@@ -10,9 +10,9 @@ Let's create a budget. Select **Add**.
 
 ![Screenshot listing Cost Management budgets already created.](../media/5-budgets01.png)
 
-In the **Create budget** window, make sure that the scope shown is correct. Select any filters that you want to add. Filters enable you to create budgets on specific costs, such as resource groups in a subscription, or a service like virtual machines. Any filter you can use in cost analysis can also be applied to a budget.
+In the **Create budget** window, make sure that the scope shown is correct. Select any filters that you want to add. Filters allow you to create budgets on specific costs, such as resource groups in a subscription, or a service like virtual machines. Any filter you can use in cost analysis can also be applied to a budget.
 
-After you've identified your scope and filters, enter a budget name. Then, select a monthly, quarterly, or annual budget reset period. This reset period determines the time window that's analyzed by the budget. The cost evaluated by the budget starts at zero at the beginning of each new period. When you create a quarterly budget, it works in the same way as a monthly budget. The difference is that the budget amount for the quarter is evenly divided among the three months of the quarter. An annual budget amount is evenly divided among all twelve months of the calendar year.
+After you've identified your scope and filters, enter a budget name, then select a monthly, quarterly, or annual budget reset period. This reset period determines the time window that's analyzed by the budget. The cost evaluated by the budget starts at zero at the beginning of each new period. When you create a quarterly budget, it works in the same way as a monthly budget. The difference is that the budget amount for the quarter is evenly divided among the three months of the quarter. An annual budget amount is evenly divided among all twelve months of the calendar year.
 
 If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those subscription types and resource groups, you can create a budget that's aligned to your invoice period or to calendar months. To create a budget aligned to your invoice period, select a reset period of **Billing month**, **Billing quarter**, or **Billing year**. To create a budget aligned to the calendar month, select a reset period of  **Monthly**, **Quarterly**, or **Annually**.
 
@@ -24,11 +24,11 @@ Based on the fields you've selected in the budget so far, a graph appears to hel
 
 ## Email and alert configuration
 
-After you configure the budget amount, select **Next** to configure budget alerts. Budgets require at least one cost threshold (% of budget), and a corresponding email address. You can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are normally received in less than eight hours.
+After you configure the budget amount, select **Next** to configure budget alerts. Budgets require at least one cost threshold (% of budget) and a corresponding email address. You can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are normally received in less than eight hours.
 
 Set an alert condition when 90% of the budget is reached.
 
-After you create a budget, it appears in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as described in **Unit 4 – Evaluate your costs using Cost Analysis**.
+After you create a budget, it appears in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as described in **Unit 3 – Evaluate your costs using Cost Analysis**.
 
 ![Screenshot of budget and spending shown in cost analysis with several charts and graphs.](../media/5-cost-analysis.png)
 
@@ -40,11 +40,11 @@ When you create or edit a budget for a subscription or resource group scope, you
 
 ## Cost alerts
 
-Previously, you created a budget alert by setting an alert condition for the budget. Cost Management also supports other types of alerts and all active Cost Management and Billing alerts appear together in one place. Alerts are generated by Cost Management when your consumption reaches a given threshold. There are three types of cost alerts:
+Previously, you created a budget alert by setting an alert condition for the budget. Cost Management also supports other types of alerts, and all active Cost Management and Billing alerts appear together in one place. Cost Management generates alerts when your consumption reaches a given threshold. There are three types of cost alerts:
 
 - Budget alerts
 - Credit alerts
-- Department spending quota alerts.
+- Department spending quota alerts
 
 ### Budget alerts
 
@@ -54,11 +54,11 @@ In the Azure portal, budgets are defined by cost. Using the Azure Consumption AP
 
 ### Credit alerts
 
-Credit alerts notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with Enterprise Agreements (EAs). Credit alerts are generated automatically at 90% and at 100% of your Azure credit balance. Whenever an alert is generated, it's reflected in cost alerts, and in the email sent to the account owners.
+Credit alerts notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with Enterprise Agreements (EAs). Credit alerts are generated automatically at 90% and at 100% of your Azure credit balance. Whenever an alert is generated, it's reflected in cost alerts and in the email sent to the account owners.
 
 ### Department spending quota alerts
 
-Department spending quota alerts notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the EA portal. Whenever a threshold is met, it generates an email to department owners, and appears in cost alerts. For example, 50% or 75% of the quota.
+Department spending quota alerts notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the EA portal. Whenever a threshold is met, it generates an email to department owners and appears in cost alerts. For example, you can configure alerts for 50% or 75% of the quota.
 
 ### Supported alert features by offer categories
 
@@ -78,10 +78,10 @@ To view cost alerts, open the desired scope in the Azure portal, and select **Bu
 
 The total number of active and dismissed alerts appears on the cost alerts page.
 
-All alerts show the alert type. A budget alert shows the reason why it was generated, and the name of the budget it applies to. Each alert shows the date it was generated, its status, and the scope (subscription or management group) that the alert applies to.
+All alerts show the alert type. A budget alert shows the reason it was generated and the name of the budget to which it applies. Each alert shows the date it was generated, its status, and the scope (subscription or management group) to which the alert applies.
 
-Possible status includes **active** and **dismissed**. Active status indicates that the alert is still relevant. Dismissed status indicates that someone has marked the alert to set it as no longer relevant.
+Possible statuses include **Active** and **Dismissed**. Active status indicates that the alert is still relevant. Dismissed status indicates that someone has marked the alert to set it as no longer relevant.
 
-Select an alert from the list to view its details. Alert details show more information about the alert. Budget alerts include a link to the budget. If a recommendation is available for a budget alert, then a link to the recommendation also appears. Budget, credit, and department spending quota alerts have a link to analyze in cost analysis where you can explore costs for the alert's scope.
+Select an alert from the list to view its details. Alert details show more information about the alert. Budget alerts include a link to the budget. If a recommendation is available for a budget alert, then a link to the recommendation also appears. Budget, credit, and department spending quota alerts have a link to analyze in cost analysis, where you can explore costs for the alert's scope.
 
 When you view the details of a dismissed alert, you can **Reactivate** it if manual action is needed.

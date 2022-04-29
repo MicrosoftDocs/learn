@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-application-gateway
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Application Gateway
+  description: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.
+  ms.date: 02/16/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Application Gateway
+summary: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.  
+abstract: |
+  In this module, you will:
+  - Learn what Azure Application Gateway is and the functionality it provides.
+  - Determine whether Application Gateway meets the needs of your organization.
+prerequisites: |
+  - Understanding of basic networking concepts.
+  - Familiarity with Azure virtual machines and Azure App Service.
+  - Familiarity with Azure virtual networking.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-application-gateway
+units:
+  - learn.azure.intro-to-azure-application-gateway.introduction
+  - learn.azure.intro-to-azure-application-gateway.what-is-azure-application-gateway
+  - learn.azure.intro-to-azure-application-gateway.how-azure-application-gateway-works
+  - learn.azure.intro-to-azure-application-gateway.when-to-use-azure-application-gateway
+  - learn.azure.intro-to-azure-application-gateway.knowledge-check
+  - learn.azure.intro-to-azure-application-gateway.summary
+badge:
+  uid: learn.azure.intro-to-azure-application-gateway.badge

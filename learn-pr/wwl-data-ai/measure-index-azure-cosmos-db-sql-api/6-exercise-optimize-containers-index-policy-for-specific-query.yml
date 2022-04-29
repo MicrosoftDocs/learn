@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.exercise-optimize-containers-index-policy-for-specific-query
+title: Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for a specific query
+metadata:
+  title: Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for a specific query
+  description: "Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for a specific query"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107592
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-optimize-containers-index-policy-for-specific-query.md)]

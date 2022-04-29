@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.design-for-user-identities-profiles
+metadata:
+  title: Design for user identities and profiles
+  description: "Design for user identities and profiles"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design for user identities and profiles
+summary: Your users require access to those applications both on-premises and in the cloud. You use the Remote Desktop client for Windows Desktop to access Windows apps and desktops remotely from a different Windows device.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Select a licensing model for Azure Virtual Desktop.
+  *  Describe personal and multi-session desktop scenarios.
+  *  Plan a storage solution storing FSLogix profile containers.
+  *  Plan for a Desktop client deployment
+  *  Deploy Windows Desktop client to multiple devices.
+  *  Describe Hybrid Identity for Azure Virtual Desktop.
+prerequisites: ""
+iconUrl: /learn/achievements/3-design-for-user-identities-and-profiles.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.design-for-user-identities-profiles.introduction
+- learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model-for-azure-virtual-desktop-based-requirements
+- learn.wwl.design-for-user-identities-profiles.personal-multi-session-desktop-scenarios
+- learn.wwl.design-for-user-identities-profiles.recommend-appropriate-storage-solution
+- learn.wwl.design-for-user-identities-profiles.plan-for-desktop-client-deployment
+- learn.wwl.design-for-user-identities-profiles.plan-for-azure-virtual-desktop-client-deployment-remote-desktop-protocol-rdp
+- learn.wwl.design-for-user-identities-profiles.windows-desktop-client-to-multiple-devices
+- learn.wwl.design-for-user-identities-profiles.hybrid-identity-azure-active-directory
+- learn.wwl.design-for-user-identities-profiles.plan-for-azure-ad-connect
+- learn.wwl.design-for-user-identities-profiles.knowledge-check
+- learn.wwl.design-for-user-identities-profiles.summary
+badge:
+  uid: learn.wwl.design-for-user-identities-profiles.badge

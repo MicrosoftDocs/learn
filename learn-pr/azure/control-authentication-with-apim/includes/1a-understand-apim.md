@@ -4,7 +4,7 @@ To use APIM, administrators define _APIs_ in the portal. Each API consists of on
 
 * Securing mobile infrastructure by gating access with API keys, preventing denial of service attacks (DoS) by using throttling, or using advanced security policies like JSON Web Token (JWT) validation.
 
-* Enabling independent software vendor (ISV) partner ecosystems by offering fast partner onboarding through the developer portal, and building an API facade to decouple from internal implementations that are not ready for partner consumption.
+* Enabling independent software vendor (ISV) partner ecosystems by offering fast partner onboarding through the developer portal, and building an API facade to decouple from internal implementations that aren't ready for partner consumption.
 
 * Running an internal API program by offering a centralized location for the organization to communicate on a secured channel between the API gateway and the backend about the availability and latest changes to APIs, and gating access based on organizational accounts.
 

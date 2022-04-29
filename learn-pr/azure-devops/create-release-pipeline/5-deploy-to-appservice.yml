@@ -2,11 +2,12 @@
 uid: learn.azdo.create-release-pipeline.5-deploy-to-appservice
 title: Exercise - Deploy the web application to Azure App Service
 metadata:
+  unitType: exercise
   title: Exercise - Deploy the web application to Azure App Service
   description: Deploy your web application to Azure App Service.
   ms.date: 06/21/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 13

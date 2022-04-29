@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-operate-premises-hybrid
+metadata:
+  title: Implement and operate an on-premises and hybrid networking infrastructure
+  description: Implement and operate an on-premises and hybrid networking infrastructure
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement and operate an on-premises and hybrid networking infrastructure
+prerequisites: |
+  - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure
+  - Basic knowledge of Azure Active Directory
+  - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR)
+  - Basic knowledge of PowerShell scripting
+summary: |
+  Learn to implement and manage networking services in Windows Server. Learn to deploy and manage DHCP, secure DNS, and implement IP Address Management (IPAM) and Web Application Proxy. You'll also learn about Azure IaaS networking.
+iconUrl: /learn/achievements/implement-operate-on-premises-hybrid-networking-infrastructure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- windows-server
+modules:
+- learn.wwl.implement-dns-for-windows-server-iaas-vms
+- learn.wwl.deploy-manage-dhcp
+- learn.wwl.implement-windows-server-dns
+- learn.wwl.implement-ip-address-management
+- learn.wwl.implement-remote-access
+- learn.wwl.implement-hybrid-network-infrastructure
+- learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing
+trophy:
+  uid: learn.wwl.implement-operate-premises-hybrid.trophy

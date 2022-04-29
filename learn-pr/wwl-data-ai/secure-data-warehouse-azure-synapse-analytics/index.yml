@@ -3,9 +3,9 @@ uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics
 metadata:
   title: Secure a data warehouse in Azure Synapse Analytics
   description: "Secure a data warehouse in Azure Synapse Analytics"
-  ms.date: 06/17/2021
+  ms.date: 02/24/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure a data warehouse in Azure Synapse Analytics
@@ -13,7 +13,7 @@ summary: Learn how to approach and implement security to protect your data with 
 abstract: |
   In this module, you will:
   - Understand network security options for Azure Synapse Analytics
-  - Configure conditional access
+  - Configure Conditional Access
   - Configure Authentication
   - Manage authorization through column and row level security
   - Manage sensitive data with Dynamic Data masking

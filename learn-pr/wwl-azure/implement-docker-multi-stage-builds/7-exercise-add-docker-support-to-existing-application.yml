@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-docker-multi-stage-builds.exercise-add-docker-support-to-existing-application
+title: Exercise - Add Docker support to an existing application
+metadata:
+  title: Exercise - Add Docker support to an existing application
+  description: "Exercise - Add Docker support to an existing application"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-add-docker-support-to-existing-application.md)]

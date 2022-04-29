@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-pipeline-strategy.configure-agent-demands
+title: Configure agent demands
+metadata:
+  title: Configure agent demands
+  description: "Configure agent demands"
+  ms.date: 02/15/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-configure-agent-demands.md)]

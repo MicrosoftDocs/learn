@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Respond to item selection in your drawer menu
   description: "Implement MasterDetailpage coordination between the navigation page list and the requested detail page."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-respond-to-item-selection-in-your-drawer-menu.md)]

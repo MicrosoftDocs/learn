@@ -19,7 +19,7 @@ To set up everything in your Azure DevOps organization, run a template.
 
 On the Azure DevOps Demo Generator site, to run the template, perform these steps.
 
-1. Select **Sign In**, and accept the usage terms.
+1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization, and enter a project name, like *Space Game - web - Pipeline*. Next, select **Create Project**.
 
     :::image type="content" source="../media/5-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::

@@ -4,12 +4,13 @@ title: Design and implement Azure VPN Gateway
 metadata:
   title: Design and implement Azure VPN Gateway
   description: "Design and implement Azure VPN Gateway"
-  ms.date: 07/15/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 24
 content: |
   [!include[](includes/2-design-implement-vpn-gateway.md)]

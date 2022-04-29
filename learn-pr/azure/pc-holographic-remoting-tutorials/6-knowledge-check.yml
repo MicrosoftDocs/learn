@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.pc-holographic-remoting-tutorials-mrtk.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following scripts is attached to a Button Parent Object?"
+      choices:
+        - content: "Interactable script"
+          isCorrect: false
+          explanation: The Interactable component is an all-in-one container to make any object easily interactable and responsive to input.
+        - content: "View Button control script"
+          isCorrect: true
+          explanation: This script is used in adding the 3D models.
+        - content: "Toggle Button script"
+          isCorrect: false
+          explanation: This script is used to add the clipping objects to the script.
+    - content: "Which of the following additional capabilities are selected?"
+      choices:
+        - content: "PrivateNetworkClientServer"
+          isCorrect: true
+          explanation: On Windows, this provides access to a home or work network – the app can send information to or from your computer and other computers on the same network.
+        - content: "Removable Storage"
+          isCorrect: false
+          explanation: Removable storage, such as an external hard drive or USB flash drive, or MTP portable device, including the capability to add, change, or delete specific files. 
+        - content: "VideosLibrary"
+          isCorrect: false
+          explanation: Your videos library, including the capability to add, change, or delete files.
+    - content: "In the OpenXR feature group we select: "
+      choices:
+        - content: "Mock Runtime"
+          isCorrect: false
+          explanation: Enabling this will take over whatever current OpenXR runtime you might be using.
+        - content: "Runtime Debugger"
+          isCorrect: false
+          explanation: A runtime debugger feature. Intercepts all OpenXR calls and forwards them over player connection to an editor window.
+        - content: "Holographic App Remoting"
+          isCorrect: true
+          explanation: The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting.
+
+   

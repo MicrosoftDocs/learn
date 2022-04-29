@@ -4,7 +4,4 @@ Using the `for` statement, we iterated a hard-coded number of times, and used th
 
 If you're following this learning path in order, we've now learned about the `foreach` and the `for` iteration statements.  Next, we'll use the `while` and `do-while` iteration statements to loop until a condition in the body of the code block is met.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]

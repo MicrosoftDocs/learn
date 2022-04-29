@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.create-cross-product-queries
+title: Paginate query results
+metadata:
+  title: Paginate query results
+  description: "Paginate query results"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-paginate-query-results.md)]

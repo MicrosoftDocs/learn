@@ -1,4 +1,4 @@
-In this module and throughout the exercises, you got hands on with many security capabilities and scenarios that are enabled for Azure SQL. 
+In this module and throughout the exercises, you got hands on with many security capabilities and scenarios that are enabled for Azure SQL.
 
 When you're securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools, such as those available in the Advanced Data Security suite.
 
@@ -14,7 +14,7 @@ People learn in different ways. With that in mind, we created a video series rel
 
 #### Network security
 
-For more information about Private Link, see [Azure Private Link for Azure SQL Database and Azure Synapse Analytics](/azure/sql-database/sql-database-private-endpoint-overview?azure-portal=true). 
+For more information about Private Link, see [Azure Private Link for Azure SQL Database and Azure Synapse Analytics](/azure/sql-database/sql-database-private-endpoint-overview?azure-portal=true).
 
 For more information about the subnet requirements for Azure SQL Managed Instance, see [Create a virtual network for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/virtual-network-subnet-create-arm-template?azure-portal=true).  
 
@@ -51,6 +51,6 @@ For more information about some of the features discussed for managing security,
 * [Vulnerability Assessment](/azure/sql-database/sql-vulnerability-assessment?azure-portal=true)  
 * [Advanced Threat Protection](/azure/sql-database/sql-database-threat-detection-overview?azure-portal=true)  
 
-For information about how to query various [Azure Monitor logs](/azure/azure-monitor/log-query/log-query-overview?azure-portal=true) with Kusto Query Language, see the [Overview of Kusto queries](/azure/kusto/query/?azure-portal=true). 
+For information about how to query various [Azure Monitor logs](/azure/azure-monitor/log-query/log-query-overview?azure-portal=true) with Kusto Query Language, see the [Overview of Kusto queries](/azure/kusto/query/?azure-portal=true).
 
-To learn more about Azure Security Center and how you can use it to monitor and manage your entire Azure estate, see [What is Azure Security Center?](/azure/security-center/security-center-intro?azure-portal=true).
+To learn more about Microsoft Defender for Cloud and how you can use it to monitor and manage your entire Azure estate, see [What is Microsoft Defender for Cloud?](/azure/security-center/security-center-intro?azure-portal=true).

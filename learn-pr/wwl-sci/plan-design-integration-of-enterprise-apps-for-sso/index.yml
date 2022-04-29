@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 metadata:
   title: Plan and design the integration of enterprise apps for SSO
-  description: "Plan and design the integration of enterprise apps for SSO"
-  ms.date: 08/04/2021
+  description: "Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports."
+  ms.date: 04/08/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

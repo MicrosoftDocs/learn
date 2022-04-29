@@ -1,0 +1,95 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/25-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The US Government’s strategy toward the cloud frames all efforts under the four categories of"
+    choices:
+    - content: "Governance, Technology, Security, and Compliance."
+      isCorrect: true
+      explanation: "That's correct. The E-Government Act of 2002 provides a number of observations about how the government can provide better citizen services by learning from the private sector, and aligns all actions of the act with governance, technology, security, or compliance."
+    - content: "Software sovereignty, operational sovereignty, data sovereignty, hardware sovereignty."
+      isCorrect: false
+      explanation: "That's incorrect. The E-Government Act of 2002 provides a number of observations about how the government can provide better citizen services by learning from the private sector, and aligns all actions of the act with governance, technology, security, or compliance."
+    - content: "Cost reduction, data transparency, data residency, information security"
+      isCorrect: false
+      explanation: "That's incorrect. The E-Government Act of 2002 provides a number of observations about how the government can provide better citizen services by learning from the private sector, and aligns all actions of the act with governance, technology, security, or compliance."
+    - content: "Learning from the private sector, public private partnerships, cybersecurity, and data center reliance."
+      isCorrect: false
+      explanation: "That's incorrect. The E-Government Act of 2002 provides a number of observations about how the government can provide better citizen services by learning from the private sector. It aligns all actions of the act with governance, technology, security, or compliance."
+  - content: "All government agencies must connect to cloud service providers through what?"
+    choices:
+    - content: "ExpressRoute"
+      isCorrect: false
+      explanation: "That's incorrect. While an agency may connect over an ExpressRoute circuit, it must traverse a TIC/CAP. In November 2007, the Office of Management and Budget through Memorandum M-08-05 introduced the Trusted Internet Connection initiative, which requires all agencies to connect to a cloud service provider using a TIC or Cloud Access Point (CAP)."
+    - content: "TIC/CAP"
+      isCorrect: true
+      explanation: "That's correct. In November 2007, the Office of Management and Budget through Memorandum M-08-05, introduced the Trusted Internet Connection initiative. This initiative requires all agencies to connect to a cloud service provider using a TIC or Cloud Access Point (CAP)."
+    - content: "Site-to-Site VPN"
+      isCorrect: false
+      explanation: "That's incorrect.  While an agency may connect over a Site-to-Site VPN, it must traverse a TIC/CAP. In November 2007, the Office of Management and Budget through Memorandum M-08-05, introduced the Trusted Internet Connection initiative. This initiative requires all agencies to connect to a cloud service provider using a TIC or Cloud Access Point (CAP)."
+    - content: "DODIN"
+      isCorrect: false
+      explanation: "That's incorrect. DODIN is the Department of Defense's Information Network. In November 2007, the Office of Management and Budget through Memorandum M-08-05, introduced the Trusted Internet Connection initiative. This initiative requires all agencies to connect to a cloud service provider using a TIC or Cloud Access Point (CAP)."
+    - content: "DISN"
+      isCorrect: false
+      explanation: "That's incorrect. DISN is the Department of Defense's Information System Network. In November 2007, the Office of Management and Budget through Memorandum M-08-05, introduced the Trusted Internet Connection initiative. This initiative requires all agencies to connect to a cloud service provider using a TIC or Cloud Access Point (CAP)."
+  - content: "What is the standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services used by the United States Government?"
+    choices:
+    - content: "FISMA"
+      isCorrect: false
+      explanation: "That's incorrect. FISMA is the Federal Information Security Management Act. FISMA requires federal agencies to implement information security plans. However, FedRAMP is the standardized approach and program for security assessment, authorization, and continuous monitoring."
+    - content: "TIC"
+      isCorrect: false
+      explanation: "That's incorrect. TIC is the Trusted Internet Connection initiative. TIC enforces security of agency data over a TIC device or TIC software. However, FedRAMP is the standardized approach and program for security assessment, authorization, and continuous monitoring. However, FedRAMP is the standardized approach and program for security assessment, authorization, and continuous monitoring."
+    - content: "FITARA"
+      isCorrect: false
+      explanation: "That's incorrect. FITARA is the Federal Information Technology Acquisition Reform Act. FITARA focuses on streamlining the acquisition of IT services, and reducing waste of duplicated services."
+    - content: "FedRAMP"
+      isCorrect: true
+      explanation: "That's correct. FedRAMP is the standardized approach and program for security assessment, authorization, and continuous monitoring."
+    - content: "FAR"
+      isCorrect: false
+      explanation: "That's incorrect. FAR is Federal Acquisition Regulation. FAR is how the US Government procures services. FedRAMP is the standardized approach and program for security assessment, authorization, and continuous monitoring."
+  - content: "What is the importance of DoD Instruction 8500.01, which focuses on cybersecurity?"
+    choices:
+    - content: "It creates the Cybersecurity and Infrastructure Security Agency."
+      isCorrect: false
+      explanation: "That's incorrect. The Cybersecurity Infrastructure Agency Act of 2018 created the Cybersecurity and Infrastructure Security Agency."
+    - content: "It specifies how the United States must protect federal agencies and citizens by using the cybersecurity maturity model certification."
+      isCorrect: false
+      explanation: "That's incorrect. DoD Instruction 8500.01 doesn't include any information on CMMC."
+    - content: "It tasks US Cyber Command with ensuring the cybersecurity of all Federal agencies, including civilian, defense, and intelligence."
+      isCorrect: false
+      explanation: "That's incorrect. While US Cyber Command does provide cybersecurity capabilities to protect the United States, each DoD component is responsible for protecting its own systems, in the cloud or on premises."
+    - content: "It details the actions that all DoD components must undertake to protect DoD systems, and includes either the cloud or on premises as they relate to cyber security. This ensures that data is labeled properly and is only accessible by those who should have access to it."
+      isCorrect: true
+      explanation: "That's correct. DoD Instruction 8500.01 details the responsibilities of DoD components and data labeling, as well as who should have access to data."
+  - content: "Which government role is responsible for overseeing the execution of a government contract, and preventing fraud, waste, and abuse?"
+    choices:
+    - content: "COR"
+      isCorrect: true
+      explanation: "That's correct. The COR (Contract Officer Representative) is responsible for overseeing the execution of government contracts."
+    - content: "CIO"
+      isCorrect: false
+      explanation: "That's incorrect. The CIO (Chief Information Officer) isn't responsible for overseeing the execution of government contracts."
+    - content: "CISO"
+      isCorrect: false
+      explanation: "That's incorrect. The CISO (Chief Information Security Officer) isn't responsible for overseeing the execution of government contracts."
+    - content: "SAORM"
+      isCorrect: false
+      explanation: "That's incorrect. The SAORM (Senior Agency Official for Records Management) isn't responsible for overseeing the execution of government contracts."

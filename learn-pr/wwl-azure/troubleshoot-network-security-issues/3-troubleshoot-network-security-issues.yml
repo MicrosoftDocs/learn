@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-network-security-issues.troubleshoot-network-security-issues
+title: Troubleshoot network security issues
+metadata:
+  title: Troubleshoot network security issues
+  description: "Troubleshoot network security issues"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-troubleshoot-network-security-issues.md)]

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.publish-container-image-to-azure-container-registry
+metadata:
+  title: Manage container images in Azure Container Registry
+  description: "Learn how to use Azure Container Registry to store your container images, and automate builds and deployments."
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage container images in Azure Container Registry
+summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Explain the features and benefits Azure Container Registry offers.
+  *   Describe how to use ACR Tasks to automate builds and deployments.
+  *   Explain the elements in a Dockerfile.
+  *   Build and run an image in the ACR by using Azure CLI.
+prerequisites: |
+  * You should be familiar with container concepts and terminology.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/azure-container-registry-publish.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-container-registry
+units:
+- learn.wwl.publish-container-image-to-azure-container-registry.introduction
+- learn.wwl.publish-container-image-to-azure-container-registry.discover
+- learn.wwl.publish-container-image-to-azure-container-registry.explore-storage-capabilities
+- learn.wwl.publish-container-image-to-azure-container-registry.build-manage-containers-tasks
+- learn.wwl.publish-container-image-to-azure-container-registry.explore-elements-of-dockerfile
+- learn.wwl.publish-container-image-to-azure-container-registry.exercise-build-run-container-image-by-using-tasks
+- learn.wwl.publish-container-image-to-azure-container-registry.knowledge-check
+- learn.wwl.publish-container-image-to-azure-container-registry.summary
+badge:
+  uid: learn.wwl.publish-container-image-to-azure-container-registry.badge

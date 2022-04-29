@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-setup.hardware
+title: Azure Sphere hardware options for the Altair emulator
+metadata:
+  title: Azure Sphere hardware options for the Altair emulator
+  description: Learn about Azure Sphere hardware options for the Altair emulator.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: |
+  [!include[](includes/02-hardware.md)]

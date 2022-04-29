@@ -546,6 +546,5 @@ Consider the following guidelines to make your T-SQL code easily readable (and t
 
  *  Capitalize T-SQL keywords, like SELECT, FROM, AS, and so on. Capitalizing keywords is a commonly used convention that makes it easier to find each clause of a complex statement.
  *  Start a new line for each major clause of a statement.
- *  If the SELECT list contains numerous columns, expressions, or aliases, consider listing each column on its own line.
  *  If the SELECT list contains more than a few columns, expressions, or aliases, consider listing each column on its own line.
  *  Indent lines containing subclauses or columns to make it clear which code belongs to each major clause.

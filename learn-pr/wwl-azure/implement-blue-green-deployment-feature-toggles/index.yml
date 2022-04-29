@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.implement-blue-green-deployment-feature-toggles
+metadata:
+  title: Implement blue-green deployment and feature toggles
+  description: "Implement blue-green deployment and feature toggles"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement blue-green deployment and feature toggles
+summary: This module describes the blue-green deployment process and introduces feature toggle techniques to implement in the development process.
+abstract: |
+  &quot;By the end of this module, you'll be able to:
+  - Explain deployment strategies
+  - Implement blue green deployment
+  - Understand deployment slots
+  - Implement and manage feature toggles&quot;
+prerequisites: ""
+iconUrl: /learn/achievements/5-implement-blue-green-deployment-and-feature-toggles.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-blue-green-deployment-feature-toggles.introduction
+- learn.wwl.implement-blue-green-deployment-feature-toggles.what-blue-green-deployment
+- learn.wwl.implement-blue-green-deployment-feature-toggles.explore-deployment-slots
+- learn.wwl.implement-blue-green-deployment-feature-toggles.exercise-set-up-blue-green-deployment
+- learn.wwl.implement-blue-green-deployment-feature-toggles.introduction-feature-toggles
+- learn.wwl.implement-blue-green-deployment-feature-toggles.describe-feature-toggle-maintenance
+- learn.wwl.implement-blue-green-deployment-feature-toggles.knowledge-check
+- learn.wwl.implement-blue-green-deployment-feature-toggles.summary
+badge:
+  uid: learn.wwl.implement-blue-green-deployment-feature-toggles.badge

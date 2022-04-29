@@ -2,14 +2,15 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.4-opening-jupyter-notebook-hdinsight-spark-cluster
 title: Opening a Jupyter Notebook on HDInsight Spark cluster
 metadata:
-  title: Opening a Jupyter Notebook on HDInsight Spark Cluster
-  description: Opening a Jupyter Notebook on HDInsight Spark Cluster
-  ms.date: 10/25/2019
+  title: Opening a Jupyter Notebook on HDInsight Spark cluster
+  description: "Opening a Jupyter Notebook on HDInsight Spark cluster"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-opening-jupyter-notebook-hdinsight-spark-cluster.md)]

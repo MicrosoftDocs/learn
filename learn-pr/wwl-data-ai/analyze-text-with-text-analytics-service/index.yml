@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
-  title: Analyze text with the Text Analytics service
-  description: "Analyze text with the Text Analytics service"
-  ms.date: 06/15/2021
+  title: Analyze text with the Language service
+  description: "Analyze text with the Language service"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Analyze text with the Text Analytics service
-summary: The Text Analytics service is a cloud-based service that provides advanced natural language processing over raw text for sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+title: Analyze text with the Language service
+summary: Explore text mining and text analysis with the Language service's Natural Language Processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: |
-  Learn how to use the Text Analytics service for text analysis
+  Learn how to use the Language service for text analysis
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg

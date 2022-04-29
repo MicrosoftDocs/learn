@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.set-up-active-directory-dns
+title: Set up disaster recovery for Active Directory and DNS
+metadata:
+  title: Set up disaster recovery for Active Directory and DNS
+  description: "Set up disaster recovery for Active Directory and DNS"
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/9-exercise-set-up-disaster-recovery-active-directory-dns.md)]

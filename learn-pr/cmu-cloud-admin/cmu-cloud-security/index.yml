@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Cloud security
 summary: Keeping your cloud secure means more than just adding permissions to resources. Learn about what cloud security means, including threats and cryptography.
 abstract: | 

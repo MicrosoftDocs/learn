@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.upload-to-blob-storage
+title: Describe uploading to Blob Storage
+metadata:
+  title: Describe uploading to Blob Storage
+  description: Describe uploading images to Blob Storage by using shared access signatures and cross-origin resource sharing to provide access to storage containers.
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-upload-to-blob-storage.md)]

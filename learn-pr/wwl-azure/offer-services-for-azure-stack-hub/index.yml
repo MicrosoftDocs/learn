@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.offer-services-for-azure-stack-hub
+metadata:
+  title: Offer services for Azure Stack Hub
+  description: "Offer services for Azure Stack Hub"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Offer services for Azure Stack Hub
+summary: 'You configure and deliver offers, plans, and subscriptions as an Azure Stack Hub operator. This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
+abstract: |
+  * Describe Azure Stack Hub quotas, plans, offers, and subscriptions.
+  * Create a Plan for Azure Stack Hub.
+  * Create an add-on plan for Azure Stack Hub.
+  * Create and manage offers for Azure Stack Hub.
+  * Delegate offers for Azure Stack Hub.
+  * Create user subscriptions for Azure Stack Hub.
+  * Manage subscriptions, plans, and offers using PowerShell for Azure Stack Hub.
+  * Change user subscription owner for Azure Stack Hub.
+prerequisites: |
+  *   Working experience with deploying cloud applications.
+  *   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
+iconUrl: /learn/achievements/4-offer-services-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.offer-services-for-azure-stack-hub.introduction
+- learn.wwl.offer-services-for-azure-stack-hub.quotas-plans-offers-subscriptions
+- learn.wwl.offer-services-for-azure-stack-hub.create-plan
+- learn.wwl.offer-services-for-azure-stack-hub.create-add-plan
+- learn.wwl.offer-services-for-azure-stack-hub.create-manage-offers
+- learn.wwl.offer-services-for-azure-stack-hub.delegate-offers
+- learn.wwl.offer-services-for-azure-stack-hub.create-user-subscriptions
+- learn.wwl.offer-services-for-azure-stack-hub.manage-subscriptions-plans-offers-using-powershell
+- learn.wwl.offer-services-for-azure-stack-hub.change-user-subscription-owner
+- learn.wwl.offer-services-for-azure-stack-hub.knowledge-check
+- learn.wwl.offer-services-for-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.offer-services-for-azure-stack-hub.badge

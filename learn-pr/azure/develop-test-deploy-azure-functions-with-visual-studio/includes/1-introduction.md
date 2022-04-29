@@ -1,18 +1,18 @@
-Serverless architecture makes use of infrastructure provided by the cloud. You don't have to provision, manage, scale, and maintain any machinery or networks. Azure Functions is a fully managed Platform as a service (PaaS) offered by Microsoft Azure to implement serverless architecture. Azure Functions is a fully scalable, resilient, reliable, and secure service.
+Serverless architecture makes use of infrastructure provided by the cloud, so you don't have to provision, manage, scale, or maintain any machinery or networks. Azure Functions is a fully managed platform as a service (PaaS) offered by Microsoft Azure to implement serverless architecture. Azure Functions is a serverless, event-driven compute service that is fully scalable, resilient, reliable, and secure.
 
-Imagine that you're a senior web developer in a research role for an online luxury watch dealer, building a website based on Azure Web Apps. You've been asked to provide new functionality by writing and deploying individual methods that can be deployed, manually executed, scheduled, or even triggered by other Azure services.
+Let's say you're a senior web developer in a research role for an online luxury watch dealer. You're building a website based on Azure Web Apps. You've been asked to provide new functionality, which involves creating individual methods that can be deployed, manually executed, scheduled, or even triggered by other Azure services.
 
-The company follows a test-driven development process, so you're also required to write automated unit tests for the new services. You have a team of developers well-versed with Microsoft technologies, including the .NET framework and Visual Studio. You decide to investigate the use of Azure Functions to meet your requirements.
+The company has a test-driven development process, so you're also required to write automated unit tests for new services. You have a team of developers who are well versed in Microsoft technologies, including the .NET framework and Visual Studio. You decide to investigate the use of Azure Functions to meet your requirements.
 
-By the end of this module, you'll be able to build and test an Azure Function locally using Visual Studio 2019. You'll then see how to deploy the function to Azure from Visual Studio.
+By the end of this module, you can build and test an Azure function locally using Visual Studio 2019, and deploy the function to Azure from Visual Studio.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Develop an Azure Function in Visual Studio 2019
-- Test and debug an Azure Function in Visual Studio 2019
-- Deploy an Azure Function directly from Visual Studio 2019 to Azure
+- Develop an Azure function in Visual Studio 2019
+- Test and debug an Azure function in Visual Studio 2019
+- Deploy an Azure function directly from Visual Studio 2019 to Azure
 - Manage Azure Functions code
 
 ## Prerequisites

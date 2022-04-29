@@ -2,10 +2,10 @@
 uid: learn-xamarin.build-mobile-apps-with-xamarin-forms
 metadata:
   title: Build mobile apps with Xamarin.Forms
-  description: In this learning path, use C# and Visual Studio with Xamarin.Forms to create a mobile app that includes visual controls to run on Android and iOS.
+  description: 'In this learning path, use C# and Visual Studio with Xamarin.Forms to create a mobile app that includes visual controls to run on Android and iOS.'
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Build mobile apps with Xamarin.Forms

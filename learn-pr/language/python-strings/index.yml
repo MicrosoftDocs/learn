@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.beginner-python.use-strings
+metadata:
+  title: Use strings in Python
+  description: Strings and string operations are among the main core types in Python. Manipulating text is an essential developer skill, and Python offers several ways to work with strings.
+  ms.date: 12/02/2021
+  author: alfredodeza
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+title: Use strings in Python
+summary: Use one of the most common types in Python to represent text. From simple formatting to representing variables, using operating strings is a critical skill for Python developers.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use the most common string helper functions.
+  - Implement a variety of formatting techniques.
+prerequisites: |
+  - Basic programming knowledge, such as using and assigning variables.
+  - Some experience using Jupyter notebooks, including adding and modifying code.
+iconUrl: /learn/achievements/python-use-strings.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+units:
+- learn.beginner-python.use-strings.introduction
+- learn.beginner-python.use-strings.string-basics
+- learn.beginner-python.use-strings.string-methods
+- learn.beginner-python.use-strings.exercise-transform-strings
+- learn.beginner-python.use-strings.string-format
+- learn.beginner-python.use-strings.exercise-format-strings
+- learn.beginner-python.use-strings.knowledge-check
+- learn.beginner-python.use-strings.summary
+badge:
+  uid: learn.beginner-python.use-strings.badge

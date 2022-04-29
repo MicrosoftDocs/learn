@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which method of the **Container** class is used to create a new change feed estimator?"
+    choices:
+    - content: "``GetChangeFeedProcessorBuilder<>``"
+      isCorrect: false
+      explanation: "That's incorrect. The processor builder is used to create the actual change feed processor, not the estimator."
+    - content: "``GetChangeFeedEstimatorBuilder``"
+      isCorrect: true
+      explanation: "That's correct. The ``GetChangeFeedEstimatorBuilder`` method constructs an estimator that will run side by side with a processor."
+    - content: "``GetChangeFeedIterator<>``"
+      isCorrect: false
+      explanation: "That's incorrect. This method creates an iterator to manually consume a change feed."
+  - content: "Which method of the **ChangeFeedProcessor** class should you invoke to start consuming changes from the change feed?"
+    choices:
+    - content: "``GetChangeFeedProcessorBuilder<>``"
+      isCorrect: false
+      explanation: "That's incorrect. This is a method of the **Container** class that creates the builder to eventually build a change feed processor."
+    - content: "``StartAsync``"
+      isCorrect: true
+      explanation: "That's correct. This method is a member of the **ChangeFeedProcessor** class and is invoked to start consuming changes from the change feed."
+    - content: "``Build``"
+      isCorrect: false
+      explanation: "That's incorrect. This method is invoked at the end of building a change feed processor (or estimator) and is not a method of the **ChangeFeedProcessor** class."

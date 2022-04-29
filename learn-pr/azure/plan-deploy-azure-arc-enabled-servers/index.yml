@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers
+metadata:
+  title: Plan and deploy Azure Arc-enabled servers at scale 
+  description: Understand the capabilities and architecture of Azure Arc-enabled servers. Learn how to test and select the right deployment method for your machines. Finally, adopt best practices and advanced security considerations for Azure Arc-enabled servers.
+  ms.date: 10/18/2021
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan and deploy Azure Arc-enabled servers at scale 
+summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc-enabled servers extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about planning and securely deploying Azure Arc-enabled servers at scale.
+abstract: | 
+  After completing this module, you'll be able to:
+  - Understand Azure Arc's built-in and supplemental security functions  
+  - Evaluate different deployment and testing channels for Azure Arc-enabled servers  
+  - Apply best practices for Azure Arc-enabled servers architecture and management  
+prerequisites: | 
+  For the best learning experience from this module, you should have knowledge of, and experience with, the following:
+  - Basic characteristics of Azure services and Azure Arc 
+  - Core compute, storage, networking, and virtualization technologies 
+  - Basic Windows Server and Linux administration tasks 
+iconUrl: /learn/achievements/plan-deploy-azure-arc-enabled-servers.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-arc
+units:
+- learn.azure.plan-deploy-azure-arc-enabled-servers.introduction
+- learn.azure.plan-deploy-azure-arc-enabled-servers.what-is-azure-arc-enabled-servers
+- learn.azure.plan-deploy-azure-arc-enabled-servers.test-azure-arc-enabled-server-capabilities
+- learn.azure.plan-deploy-azure-arc-enabled-servers.plan-secure-configuration
+- learn.azure.plan-deploy-azure-arc-enabled-servers.explore-methods-onboard-servers
+- learn.azure.plan-deploy-azure-arc-enabled-servers.best-practices-server-management
+- learn.azure.plan-deploy-azure-arc-enabled-servers.knowledge-check
+- learn.azure.plan-deploy-azure-arc-enabled-servers.summary
+badge:
+  uid: learn.azure.plan-deploy-azure-arc-enabled-servers.badge

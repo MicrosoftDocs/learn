@@ -18,4 +18,4 @@ The following table shows some of the most common enhancements to a management b
 | IT Service Management Connector | Automated ITSM connection to create awareness sooner and enrich work items |  [IT Service Management Connector overview](/azure/azure-monitor/alerts/itsmc-overview) |
 | Azure Automation | Automation of: <li> Responses to changes</li><li>Resource-specific scaling or sizing issues</li><li> Operations across multiple clouds</li> |  [Azure Automation product page](https://azure.microsoft.com/services/automation/) |
 | Azure Automation State Configuration 	| Code-based configuration of guest operating systems to reduce configuration drifting and quickly find errors | [State Configuration overview](/azure/automation/automation-dsc-overview) |
-| Azure Security Center	| Extended protection to include recovery triggers for security breaches | [Azure Security Center product page](https://azure.microsoft.com/services/security-center/) |
+| Microsoft Defender for Cloud	| Extended protection to include recovery triggers for security breaches | [Microsoft Defender for Cloud product page](https://azure.microsoft.com/services/security-center/) |

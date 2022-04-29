@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.examine-sample-functional-workflow
+title: Examine a sample functional workflow
+metadata:
+  title: Examine a sample functional workflow
+  description: "Examine a sample functional workflow"
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-examine-sample-functional-workflow.md)]

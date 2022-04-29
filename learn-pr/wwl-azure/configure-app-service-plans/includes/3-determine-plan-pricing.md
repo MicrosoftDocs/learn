@@ -1,13 +1,13 @@
 The pricing tier of an App Service plan determines what App Service features you get and how much you pay for the plan. There are a few categories of pricing tiers.
 
-|     Selected Feature     |   Free   |  Shared  |       Basic        |       Standard       |            Premium             |                 Isolated                  |
-|:------------------------:|:--------:|:--------:|:------------------:|:--------------------:|:------------------------------:|:-----------------------------------------:|
-|          Usage           | dev/test | dev/test | dedicated dev/test | production workloads | enhanced scale and performance | high performance, security, and isolation |
-| Web, mobile, or API apps |    10    |   100    |     Unlimited      |      Unlimited       |           Unlimited            |                 Unlimited                 |
-|        Disk space        |   1 GB   |   1 GB   |       10 GB        |        50 GB         |             250 GB             |                   1 TB                    |
-|        Auto scale        |    -     |    -     |         -          |      Supported       |           Supported            |                 Supported                 |
-|     Deployment slots     |    -     |    -     |         -          |          5           |               20               |                    20                     |
-|      Max instances       |    -     |    -     |      Up to 3       |       Up to 10       |            Up to 30            |                 Up to 100                 |
+|   **Selected Feature**   | **Free** | **Shared** |     **Basic**      |     **Standard**     |          **Premium**           |               **Isolated**                |
+|:------------------------:|:--------:|:----------:|:------------------:|:--------------------:|:------------------------------:|:-----------------------------------------:|
+|          Usage           | dev/test |  dev/test  | dedicated dev/test | production workloads | enhanced scale and performance | high performance, security, and isolation |
+| Web, mobile, or API apps |    10    |    100     |     Unlimited      |      Unlimited       |           Unlimited            |                 Unlimited                 |
+|        Disk space        |   1 GB   |    1 GB    |       10 GB        |        50 GB         |             250 GB             |                   1 TB                    |
+|        Auto scale        |    -     |     -      |         -          |      Supported       |           Supported            |                 Supported                 |
+|     Deployment slots     |    -     |     -      |         -          |          5           |               20               |                    20                     |
+|      Max instances       |    -     |     -      |      Up to 3       |       Up to 10       |            Up to 30            |                 Up to 100                 |
 
  -  **Free and Shared**. The Free and Shared service plans are base tiers that run on the same Azure VMs as other apps. Some apps may belong to other customers. These tiers are intended to be used only for development and testing purposes. There is no SLA provided for Free and Shared service plans. Free and Shared plans are metered on a per App basis.
  -  **Basic**. The Basic service plan is designed for apps that have lower traffic requirements, and don't need advanced auto scale and traffic management features. Pricing is based on the size and number of instances you run. Built-in network load-balancing support automatically distributes traffic across instances. The Basic service plan with Linux runtime environments supports Web App for Containers.

@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: 'Exercise - Data cleansing part 1 - Find missing values'
 durationInMinutes: 3
 content: |

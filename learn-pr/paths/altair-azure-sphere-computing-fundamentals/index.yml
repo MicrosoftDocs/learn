@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.altair-azure-sphere-computing-fundamentals
+metadata:
+  title: Learn computing fundamentals with Altair 8800 and Azure Sphere 
+  description: In this learning path, learn the computing fundamentals of the Altair 8800 and Azure Sphere by creating a cloud-enabled Altair on Azure Sphere solution.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Learn computing fundamentals with Altair 8800 and Azure Sphere
+summary: |
+  In this learning path, learn computing fundamentals by creating a cloud-enabled Altair 8800 on Azure Sphere solution.
+  
+  By the end of this learning path, you will be able to: 
+  - Understand the fundamentals of setting up an Altair emulator and Azure Sphere.  
+  - Configure the development environment to run a cloud-enabled Altair on Azure Sphere solution.  
+  - Build, configure, and deploy the apps that run the solution in a secure environment.
+prerequisites: |
+  - A computer with an x86-64-based processor running one of the following operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-computing-fundamentals.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+modules:
+- learn.student-evangelism.altair-azure-sphere-introduction
+- learn.student-evangelism.altair-azure-sphere-setup
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application
+- learn.student-evangelism.altair-azure-sphere-secure-emulator
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal
+- learn.student-evangelism.altair-azure-sphere-program-emulator
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
+trophy:
+  uid: learn.altair-azure-sphere-computing-fundamentals.trophy

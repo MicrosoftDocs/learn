@@ -22,5 +22,5 @@ Now that you have reviewed this module, you should be able to:
 ## References
 
 1. [Harvard Business Review, “A Study of 46,000 Shoppers Shows That Omnichannel Retailing Works,” 2017](https://hbr.org/2017/01/a-study-of-46000-shoppers-shows-that-omnichannel-retailing-works)
-1. [Segment, “2017 State of Personalization Report,” 2017](https://www.ecommercewiki.org/reports/615/the-2017-state-of-personalization-report)  
+1. [Segment, “2017 State of Personalization Report,” 2017](http://grow.segment.com/Segment-2017-Personalization-Report.pdf)  
 1. [Relex, “State of the Retail Supply Chain 2017,” 2017](https://hub.relexsolutions.com/state-of-the-retail-supply-chain-2017-b)

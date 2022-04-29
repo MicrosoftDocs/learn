@@ -8,10 +8,10 @@ For example, if you want to display a message if a number is even or odd, you ca
 
 ```javascript
 const number = 3;
-console.log(number % 2 ? 'The number is even' : 'The number is odd');
+console.log(number % 2 ? 'The number is odd' : 'The number is even');
 ```
 
-You start the expression with your Boolean value (`number % 2`). If the number is even, the Boolean value is true; the first value (`The number is even`) will be used. If the number is odd, the Boolean value is false, and the second value will be used (`The number is odd`). The previous code results in the message, `The number is odd`.
+You start the expression with your Boolean value (`number % 2`). If the number is odd, the Boolean value (remainder) is 1, or true; the first value (`The number is odd`) will be returned. If the number is even, the remainder is 0, so the Boolean value is false; the second value (`The number is even`) will be returned. The previous code results in the message, `The number is odd`.
 
 ## Ternary and JSX
 

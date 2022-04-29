@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-technical-debt.introduction-technical-debt
+title: Introduction to technical debt
+metadata:
+  title: Introduction to technical debt
+  description: "Introduction to technical debt"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-introduction-technical-debt.md)]

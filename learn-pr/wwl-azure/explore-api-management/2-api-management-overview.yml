@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-api-management.discover-service
+title: Discover the API Management service
+metadata:
+  title: Discover the API Management service
+  description: "Discover the API Management service"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-api-management-overview.md)]

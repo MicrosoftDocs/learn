@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-network-monitoring
 metadata:
   title: Design and implement network monitoring
   description: "You will learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher."
-  ms.date: 07/15/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
   - You should have experience with network connectivity methods, such as VPN or WAN
   - You should have experience with the Azure portal and Azure PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/network-monitoring-design-implement.svg
 levels:
 - intermediate
 roles:

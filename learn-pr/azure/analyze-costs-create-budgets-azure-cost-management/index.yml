@@ -1,14 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.analyze-costs-create-budgets-azure-cost-management
 metadata:
-  title: "Analyze costs and create budgets with Azure Cost Management"
+  title: "Introduction to analyzing costs and creating budgets with Azure Cost Management"
   description: "Learn how to use cost analysis to understand how your costs accrue each month."
-  ms.date: 11/20/2019
+  ms.date: 04/28/2022
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Analyze costs and create budgets with Azure Cost Management"
+  ms.service: cost-management-billing
+title: "Introduction to analyzing costs and creating budgets with Azure Cost Management"
 summary: "Learn how to use cost analysis to understand how your costs accrue each month. Use this understanding to create an Azure budget to monitor and alert on your costs."
 abstract: |
   In this module, you will:

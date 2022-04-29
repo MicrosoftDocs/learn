@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.interact-with-data-blazor-web-apps.exercise-share-data-in-blazor-applications
+title: Exercise - Share data in Blazor applications
+metadata:
+  unitType: learning-content
+  title: Exercise - Share data in Blazor applications
+  description: "Add functionality to pass data by using parameters and store app state in a container service."
+  ms.date: 8/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-exercise-share-data-in-blazor-applications.md)]

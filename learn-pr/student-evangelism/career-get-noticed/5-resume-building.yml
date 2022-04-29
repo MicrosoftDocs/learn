@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.career-get-noticed.5-resume-building
+title: Build your resume
+metadata:
+  title: Build your resume
+  description: This unit describes the sections that make up your resume and how to write them in an appealing way.
+  ms.date: 08/19/2021
+  author: gcordido
+  ms.author: gcordido
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - gcordido-09022021
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-resume-building.md)]

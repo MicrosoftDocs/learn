@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-app-performance.explore-azure-monitor
+title: Explore Azure Monitor
+metadata:
+  title: Explore Azure Monitor
+  description: "Explore Azure Monitor"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-monitor-overview.md)]

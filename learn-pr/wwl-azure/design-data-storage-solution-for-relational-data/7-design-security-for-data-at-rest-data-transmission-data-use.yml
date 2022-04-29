@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-storage-solution-for-relational-data.design-encryption-for-data-at-rest-data-transmission-data-use
+title: Design security for data at rest, data in transit, and data in use
+metadata:
+  title: Design security for data at rest, data in transit, and data in use
+  description: "Design security for data at rest, data in transit, and data in use"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-design-security-for-data-at-rest-data-transmission-data-use.md)]

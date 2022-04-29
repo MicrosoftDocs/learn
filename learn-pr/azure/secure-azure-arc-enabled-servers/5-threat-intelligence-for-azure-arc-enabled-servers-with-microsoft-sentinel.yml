@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-azure-arc-enabled-servers.threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel
+title: Threat intelligence for Azure Arc-enabled servers with Microsoft Sentinel
+metadata:
+  title: Threat intelligence for Azure Arc-enabled servers with Microsoft Sentinel
+  description: Threat intelligence for Azure Arc-enabled servers with Microsoft Sentinel
+  ms.date: 02/02/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel.md)]

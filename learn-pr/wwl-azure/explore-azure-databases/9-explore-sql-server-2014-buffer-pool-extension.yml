@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databases.explore-sql-server-2014-buffer-pool-extension
+title: Explore the SQL Server 2014 Buffer Pool Extension
+metadata:
+  title: Explore the SQL Server 2014 Buffer Pool Extension
+  description: "Explore the SQL Server 2014 Buffer Pool Extension"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-explore-sql-server-2014-buffer-pool-extension.md)]

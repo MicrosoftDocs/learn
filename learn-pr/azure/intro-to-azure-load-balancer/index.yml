@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-load-balancer
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Load Balancer
+  description: This module explains what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution to meet your organization's needs.
+  ms.date: 02/16/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Load Balancer
+summary: This module explains what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution to meet your organization's needs.  
+abstract: |
+  In this module, you will:
+  - Learn what Azure Load Balancer is and the functionality it provides.
+  - Determine whether Load Balancer meets the needs of your organization.
+prerequisites: |
+  - Understanding of basic networking concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-load-balancer
+units:
+  - learn.azure.intro-to-azure-load-balancer.introduction
+  - learn.azure.intro-to-azure-load-balancer.what-is-azure-load-balancer
+  - learn.azure.intro-to-azure-load-balancer.how-azure-load-balancer-works
+  - learn.azure.intro-to-azure-load-balancer.when-to-use-azure-load-balancer
+  - learn.azure.intro-to-azure-load-balancer.knowledge-check
+  - learn.azure.intro-to-azure-load-balancer.summary
+badge:
+  uid: learn.azure.intro-to-azure-load-balancer.badge

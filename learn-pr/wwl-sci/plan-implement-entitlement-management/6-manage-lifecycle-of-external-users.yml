@@ -4,12 +4,13 @@ title: Exercise manage the lifecycle of external users with Azure AD identity go
 metadata:
   title: Exercise manage the lifecycle of external users with Azure AD identity governance
   description: "Exercise manage the lifecycle of external users with Azure AD identity governance"
-  ms.date: 08/04/2021
+  ms.date: 02/08/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/6-manage-lifecycle-of-external-users.md)]

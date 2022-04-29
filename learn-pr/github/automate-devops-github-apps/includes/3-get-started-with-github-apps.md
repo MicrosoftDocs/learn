@@ -1,22 +1,20 @@
-In this exercise you use GitHub Learning Lab to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
+In this exercise, you'll navigate to a GitHub repository to validate your ability to install a GitHub App for a GitHub organization.
 
-GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
+This GitHub exercise is graded automatically once you have attempted a solution to the challenge. The results of your actions, as well as helpful feedback, are provided in real-time within the `grade-learner` workflow logs.
 
-Here are a few suggestions to make the Learning Lab exercise more enjoyable.
+Here are some helpful tips before you begin the exercise:
 
-- GitHub Learning Lab is installed on your account in the first step of this lab. If you're asked, be sure to *install it on all repositories*. This won't affect the organizations that you're a member of, just the personal repositories that the lab creates for you.
-- After the install, you may be returned to the main page. To get back to your lab, just use the button on the bottom of this page.
-- GitHub will create a repository for you to use. Give permissions to GitHub Learning Lab.
-- GitHub Learning Lab will set itself as a reviewer on your pull requests so that it can give you the next steps just in time. Sometimes reviewing your pull request will take a few minutes.
-- When you're given a link for creating or editing a file or told to open a tab, **be sure to open it in another tab in your browser**. This way you can come back to the instructions without leaving the file.
-- Comments and instructions will continue on your pull request or in an issue on your repository.
+- Read the **About this exercise** section in the exercise's repository README to understand how the exercise works.
+- Follow the steps provided in the **Instructions** section to successfully complete the exercise.
+- To see the results of your exercise, navigate to the the **Actions** tab of your cloned repository and click on the most recent run on the **Grading** workflow.
+- Stuck on what to do? Revisit the content in the last unit or check out the **Useful resources** section in the exercise's repository README for some additional resources.
 
-When you've finished the exercise in GitHub, return here for:
+>[!Note]
+> A grading script exists under `.github/workflows/grading.yml`. You do not need to modify this workflow to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
 
-> [!div class="checklist"]
-> * A quick knowledge check 
-> * A summary of what you've learned
-> * To earn a badge for completing this module
+This exercise is a challenge based on content covered in this module and there could be more than one way to successfully complete the exercise. If you get stuck, revisit previous content in this module or navigate to some of the additional resources provided.
+
+When you've finished the exercise in GitHub, return here to continue with the module.
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/getting-started-with-github-apps?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/githubtraining/exercise-check-installed-apps?azure-portal=true)

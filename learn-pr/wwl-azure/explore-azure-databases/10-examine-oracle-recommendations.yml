@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databases.examine-oracle-recommendations
+title: Examine Oracle recommendations
+metadata:
+  title: Examine Oracle recommendations
+  description: "Examine Oracle recommendations"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-examine-oracle-recommendations.md)]

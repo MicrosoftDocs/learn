@@ -85,7 +85,7 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
     ```
 
     > [!NOTE]
-    > Installing the .NET Core SDK can take a few minutes to complete.
+    > Installing the .NET SDK can take a few minutes to complete.
 
 1. Download the source code for this module's sample app.
 

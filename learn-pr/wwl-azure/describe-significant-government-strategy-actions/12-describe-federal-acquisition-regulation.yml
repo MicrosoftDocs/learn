@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-federal-acquisition-regulation
+title: Describe Federal Acquisition Regulation 12.301 (FAR 301)
+metadata:
+  title: Describe Federal Acquisition Regulation 12.301 (FAR 301)
+  description: "Describe Federal Acquisition Regulation 12.301 (FAR 301)"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-describe-federal-acquisition-regulation.md)]

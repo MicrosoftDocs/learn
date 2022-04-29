@@ -6,43 +6,43 @@ You'll start by scaffolding a new F# project, and then you'll take a piece of co
 
 1. Create a new F# project by running `dotnet new`.
 
-    ```bash
-    dotnet new console --language F# -o Functions
-    cd Functions
-    ```
+   ```bash
+   dotnet new console --language F# -o Functions
+   cd Functions
+   ```
 
-    Now you have a new project. Let's look at the code next.
+   Now that you have a new project, let's look at the code.
 
-    Here's the code from your colleague.
+   Here's the code from your colleague.
 
-    ```fsharp
-    let no = card % 13
-    if no = 14 || no = 1 then "Ace"
-    elif no = 13 then "King"
-    elif no = 12 then "Queen"
-    elif no = 11 then "Jack"
-    else string no
-    ```
+   ```fsharp
+   let no = card % 13
+   if no = 1 then "Ace"
+   elif no = 0 then "King"
+   elif no = 12 then "Queen"
+   elif no = 11 then "Jack"
+   else string no
+   ```
 
-1. Above the `main()` method, place the following code:
+1. Replace the default code in the _Program.fs_ file with the following code:
 
-    ```fsharp
-    let cardFace card = 
-       let no = card % 13
-       if no = 14 || no = 1 then "Ace"
-       elif no = 13 then "King"
-       elif no = 12 then "Queen"
-       elif no = 11 then "Jack"
-       else string no
-    ```
+   ```fsharp
+   let cardFace card = 
+      let no = card % 13
+      if no = 1 then "Ace"
+      elif no = 0 then "King"
+      elif no = 12 then "Queen"
+      elif no = 11 then "Jack"
+      else string no
+   ```
 
-    The top part of this code `let cardFace card` makes it into a function. It's now a function called `cardFace` that takes the parameter `card`.
+    The first line of this code `let cardFace card` makes it into a function. It's now a function called `cardface()` that takes the parameter `card`.
 
-1. Add the following code to the `main()` method.
+1. Add the following code below the `cardface()` function.
 
-    ```fsharp
-    printfn "%s" (cardFace 11)
-    ```
+   ```fsharp
+   printfn "%s" (cardFace 11)
+   ```
 
 1. Run the project by calling `dotnet run` in the console.
 
@@ -62,13 +62,13 @@ Congratulations! You've taken a piece of code that you wanted to make reusable a
 
 You've turned your colleague's code into a function. To make this code more readable, you decide to add type definitions to it.
 
-1. Modify your existing function `cardFace()` to look like so:
+1. Modify your existing `cardface()` function  to look like so:
 
    ```fsharp
    let cardFace (card:int) = 
        let no = card % 13
-       if no = 14 || no = 1 then "Ace"
-       elif no = 13 then "King"
+       if no = 1 then "Ace"
+       elif no = 0 then "King"
        elif no = 12 then "Queen"
        elif no = 11 then "Jack"
        else string no
@@ -80,12 +80,15 @@ You've turned your colleague's code into a function. To make this code more read
    dotnet run
    ```
 
-   You get a long error message back that starts with text "error FS0001: The 'if' expression needs to have type 'int' to satisfy context type requirements. It currently has type 'string'."
+   You now see the following output:
 
-   > [!TIP]
-   > Stop here for a second and think about what you need to do to make the code work.
+   ```output
+   Jack
+   ```
 
-1. Alter your `cardFace()` function to look like so:
+   The code still works and you've made it clearer by adding a type to the input parameter.
+
+1. Alter your `cardface()` function to look like so:
 
    ```fsharp
    let cardFace (card:int) :string = 
@@ -96,6 +99,8 @@ You've turned your colleague's code into a function. To make this code more read
        elif no = 11 then "Jack"
        else string no
    ```
+
+   At this point, you've added a return type to the function `:string`, means the function will return a string.
 
 1. Run the project `dotnet run`.
 
@@ -108,7 +113,5 @@ You've turned your colleague's code into a function. To make this code more read
    ```output
    Jack
    ```
-
-Now there's no error message because you added a return type to your function. When you look at the function header, you see the code `let cardFace (card:int) :string`, the input parameter is of type `int`, and it returns `string`.
 
 Congratulations! Your code now has types added to it.

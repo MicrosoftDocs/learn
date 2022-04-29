@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-cosmos-db-sql-api-solution-using-devops-practices
+metadata:
+  title: Manage an Azure Cosmos DB SQL API solution using DevOps practices
+  description: Manage an Azure Cosmos DB SQL API solution using DevOps practices
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage an Azure Cosmos DB SQL API solution using DevOps practices
+prerequisites: |
+  Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+summary: |
+  Use the command line and Azure Resource Manager to automate common management tasks for Azure Cosmos DB SQL API.
+iconUrl: /learn/achievements/azure-cosmos-db-devops-practice.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+modules:
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api
+trophy:
+  uid: learn.wwl.manage-cosmos-db-sql-api-solution-using-devops-practices.trophy

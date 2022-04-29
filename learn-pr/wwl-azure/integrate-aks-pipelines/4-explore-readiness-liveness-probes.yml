@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-aks-pipelines.explore-readiness-liveness-probes
+title: Explore readiness and liveness probes
+metadata:
+  title: Explore readiness and liveness probes
+  description: "Explore readiness and liveness probes"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-explore-readiness-liveness-probes.md)]

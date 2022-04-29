@@ -72,3 +72,9 @@ The following video demonstrates how to configure DNSSEC in Windows Server DNS u
 9. Select **Enable DNSSEC in this rule**, select the **Require DNS clients to check that the name and address data has been validated by the DNS server**, and then select **Create**.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxT9k]
+
+---
+
+
+
+---

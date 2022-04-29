@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-hyperparameters-azure-databricks.hyperparameter-tuning-hyperopt
+title: Hyperparameter tuning with Hyperopt
+metadata:
+  title: Hyperparameter tuning with Hyperopt
+  description: "Hyperparameter tuning with Hyperopt"
+  ms.date: 01/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-hyperparameter-tuning-hyperopt.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.manage-sensitive-data-security-policies
+metadata:
+  title: Manage sensitive data and security policies within GitHub
+  description: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
+  ms.date: 09/13/2021
+  author: sterling463
+  ms.author: csterling 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage sensitive data and security policies within GitHub
+summary: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
+abstract: |
+  In this module, you'll learn how to:
+  - Create documentation that details security guidelines and useful information for collaborators.
+  - Set permissions and other rules.
+  - Automate processes that prevent security breaches.
+  - Respond to security breaches.
+prerequisites:  |
+  - A GitHub Enterprise Cloud or Enterprise Server account
+  - Working knowledge of GitHub Actions and workflows
+ratingEnabled: true
+iconUrl: /learn/achievements/manage-sensitive-data-security-policies.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.manage-sensitive-data-security-policies.introduction 
+  - learn.github.manage-sensitive-data-security-policies.set-security-policies
+  - learn.github.manage-sensitive-data-security-policies.scrub-sensitive-data-from-repository
+  - learn.github.manage-sensitive-data-security-policies.report-logs
+  - learn.github.manage-sensitive-data-security-policies.exercise
+  - learn.github.manage-sensitive-data-security-policies.knowledge-check
+  - learn.github.manage-sensitive-data-security-policies.summary
+
+badge:
+  uid: learn.github.manage-sensitive-data-security-policies.badge

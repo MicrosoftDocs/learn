@@ -1,6 +1,6 @@
 You can use the *Endpoint security* node in Microsoft Endpoint Manager to configure device security and to manage security tasks for devices when those devices are at risk. The Endpoint security policies are designed to help you focus on the security of your devices and mitigate risk. The tasks that are available help you identify devices that are at risk, to remediate those devices, and restore them to a compliant or more secure state.
 
-[ ![Screenshot of the Endpoint Security workload in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-20.png) ](../media/intro-to-endpoint-manager-20.png#lightbox)
+[![Screenshot of the Endpoint Security workload in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-20.png)](../media/intro-to-endpoint-manager-20.png#lightbox)
 
 The Endpoint security node groups the tools that are available through Endpoint Manager that you use to keep devices secure:
 

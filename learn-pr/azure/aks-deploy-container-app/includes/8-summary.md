@@ -37,13 +37,13 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Prepare an application for AKS](/azure/aks/tutorial-kubernetes-prepare-app?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [HTTP application routing](/azure/aks/http-application-routing?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Azure CLI documentation on Microsoft Docs](/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Azure CLI command docs](/cli/azure/aks?view=azure-cli-latest&WT.mc_id=deploycontainerapps_summary-learn-ludossan#az-aks-create)
+- [AKS documentation on Microsoft Docs](/azure/aks/)
+- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
+- [Prepare an application for AKS](/azure/aks/tutorial-kubernetes-prepare-app)
+- [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)
+- [HTTP application routing](/azure/aks/http-application-routing)
+- [Azure CLI documentation on Microsoft Docs](/azure/aks/kubernetes-walkthrough)
+- [Azure CLI command docs](/cli/azure/aks/#az-aks-create)
 - [AKS HTTPS ingress controller docs](/azure/aks/ingress-tls)
 - [Kubernetes ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [Kubernetes documentation](https://kubernetes.io/docs/home/)

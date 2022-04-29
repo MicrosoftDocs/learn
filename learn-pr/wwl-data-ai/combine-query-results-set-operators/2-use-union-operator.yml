@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-query-results-set-operators.use-union-operator
+title: Use the UNION operator
+metadata:
+  title: Use the UNION operator
+  description: "Use the UNION operator"
+  ms.date: 01/10/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-use-union-operator.md)]

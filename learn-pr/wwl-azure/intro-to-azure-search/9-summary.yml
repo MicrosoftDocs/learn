@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

@@ -47,3 +47,9 @@ The following video demonstrates how to implement DNS policies by using Windows 
 10. Switch back to the client, purge the resolver cache, and then test name resolution for the `www.Contoso.com`record.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxDP5]
+
+---
+
+
+
+---

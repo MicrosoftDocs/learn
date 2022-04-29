@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sap-hana-azure-large-instances.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "By default, the transitive routing between HANA Large Instance units and on-premises (and between HANA Large Instances that are deployed in two different regions) does not work. What is the standard approach for enabling transitive routing in this scenario?"
+    choices:
+    - content: "Azure Firewall"
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute Global Reach can be used to enable direct access from on-premises to your HANA Large Instance units deployed in different regions, and to enable direct communication between your HANA Large Instance units deployed in different regions. Other solutions do exist, but may not be supported by Microsoft, and may result in certain IP addresses being blocked or explicitly allowed."
+    - content: "A reverse proxy such as F5 BIG-IP or NGINX"
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute Global Reach can be used to enable direct access from on-premises to your HANA Large Instance units deployed in different regions, and to enable direct communication between your HANA Large Instance units deployed in different regions. Other solutions do exist, but may not be supported by Microsoft, and may result in certain IP addresses being blocked or explicitly allowed."
+    - content: "ExpressRoute Global Reach"
+      isCorrect: true
+      explanation: "Correct. ExpressRoute Global Reach can be used to enable direct access from on-premises to your HANA Large Instance units deployed in different regions, and to enable direct communication between your HANA Large Instance units deployed in different regions. Other solutions do exist, but may not be supported by Microsoft, and may result in certain IP addresses being blocked or explicitly allowed."
+  - content: "Whose responsibility is it to maintain the SAP HANA on Azure (Large Instances) unit's operating system?"
+    choices:
+    - content: "The customer"
+      isCorrect: true
+      explanation: "Correct. During HLI unit provisioning, the Microsoft Operations team installs the operating system. You are required to maintain the operating system. Before making major changes to the operating system, contact Microsoft Operations team by opening a support ticket to consult."
+    - content: "Microsoft Operations team"
+      isCorrect: false
+      explanation: "Incorrect. During HLI unit provisioning, the Microsoft Operations team installs the operating system. You are required to maintain the operating system. Before making major changes to the operating system, contact Microsoft Operations team by opening a support ticket to consult."
+    - content: "SAP Operations team"
+      isCorrect: false
+      explanation: "Incorrect. During HLI unit provisioning, the Microsoft Operations team installs the operating system. You are required to maintain the operating system. Before making major changes to the operating system, contact Microsoft Operations team by opening a support ticket to consult."
+  - content: "How can the bandwidth of an ExpressRoute circuit for SAP HANA on Azure (Large Instances) be increased?"
+    choices:
+    - content: "Through the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. You can create an Azure service request to increase the bandwidth of the SAP HANA on Azure (Large Instances) ExpressRoute circuit, after consulting with SAP HANA on Microsoft Service Management."
+    - content: "By creating an Azure support request"
+      isCorrect: true
+      explanation: "Correct. You can create an Azure service request to increase the bandwidth of the SAP HANA on Azure (Large Instances) ExpressRoute circuit, after consulting with SAP HANA on Microsoft Service Management."
+    - content: "Delete the circuit and request a new one from SAP HANA on Microsoft Service Management"
+      isCorrect: false
+      explanation: "Incorrect. You can create an Azure service request to increase the bandwidth of the SAP HANA on Azure (Large Instances) ExpressRoute circuit, after consulting with SAP HANA on Microsoft Service Management."
+  - content: "In what increments can additional storage be purchased, for scaling up SAP HANA on Azure (Large Instances) storage capacity?"
+    choices:
+    - content: "1 TB"
+      isCorrect: true
+      explanation: "Correct. You can add storage by purchasing additional storage in 1 TB units. This additional storage can be added as additional volume. It also can be used to extend one or more of the existing volumes. The storage volumes are attached to the HANA Large Instance units as NFS4 volumes."
+    - content: "5 TB"
+      isCorrect: false
+      explanation: "Incorrect. You can add storage by purchasing additional storage in 1 TB units. This additional storage can be added as additional volume. It also can be used to extend one or more of the existing volumes. The storage volumes are attached to the HANA Large Instance units as NFS4 volumes."
+    - content: "10 TB"
+      isCorrect: false
+      explanation: "Incorrect. You can add storage by purchasing additional storage in 1 TB units. This additional storage can be added as additional volume. It also can be used to extend one or more of the existing volumes. The storage volumes are attached to the HANA Large Instance units as NFS4 volumes."

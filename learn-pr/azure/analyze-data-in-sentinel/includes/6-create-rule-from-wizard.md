@@ -2,9 +2,9 @@ You can create a custom analytics rule to search for suspicious activities and t
 
 ## Create a custom scheduled analytics rule
 
-Creating a custom rule from a scheduled query rule type provides you with the highest level of customization. You can define your own KQL code, set a schedule to run an alert, and provide an automated action by associating the rule with an Azure Sentinel Playbook.
+Creating a custom rule from a scheduled query rule type provides you with the highest level of customization. You can define your own KQL code, set a schedule to run an alert, and provide an automated action by associating the rule with a Microsoft Sentinel Playbook.
 
-To create a scheduled query rule, in the Azure portal, under **Azure Sentinel**, select  **Analytics**. In the header bar, select  **+Create**, and then select  **Scheduled query rule.**
+To create a scheduled query rule, in the Azure portal, under **Microsoft Sentinel**, select  **Analytics**. In the header bar, select  **+Create**, and then select  **Scheduled query rule.**
 
 > [!NOTE]
 > You can also create a scheduled rule by selecting a scheduled rule from the Rules and Templates list in the Analytics pane and then selecting **Create rule** in the details pane.
@@ -25,7 +25,7 @@ The following table lists the input fields on the **General** pane.
 
 ## Set rule logic tab
 
-On the **Set rule logic** tab, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
+On the **Set rule logic** tab, you can define the detection method by specifying KQL code that will run against the Microsoft Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
 
 When you enter the KQL query string in the **Rule query** field, you can use the **Results simulation (preview)** section to review the results of the query. The **Results simulation (preview)** section will help you determine whether your query returned the expected results.
 
@@ -35,8 +35,8 @@ The following sample query alerts you when an anomalous number of resources is c
 
 ```kusto
 AzureActivity
-| where OperationName == &quot;Create or Update Virtual Machine&quot;or OperationName ==&quot;Create Deployment&quot;
-| where ActivityStatus == &quot;Succeeded&quot;
+| where OperationName == "Create or Update Virtual Machine" or OperationName == "Create Deployment"
+| where ActivityStatus == "Succeeded"
 
 | make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
@@ -82,7 +82,7 @@ In the **Event grouping** section, you can select one of the following two optio
 
 ### Suppression
 
-In the **Suppression** section, you can set the **Stop running the Query after the alert is generated** option to  **On**  or  **Off**. When you select **On**, Azure Sentinel pauses the creation of additional incidents if the rule is triggered again for the duration you want the rule to be suppressed.
+In the **Suppression** section, you can set the **Stop running the Query after the alert is generated** option to  **On**  or  **Off**. When you select **On**, Microsoft Sentinel pauses the creation of additional incidents if the rule is triggered again for the duration you want the rule to be suppressed.
 
 ## Incident settings (Preview)
 
@@ -102,9 +102,9 @@ Not used in this exercise.
 
 ## Set rule logic tab - Exercise
 
-On the **Automated Response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector appear.
+On the **Automated Response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Microsoft Sentinel connector appear.
 
-For more information about how to create a playbook and run the automated activity on an incident creation, see the "Threat response with Azure Sentinel Playbooks" module.
+For more information about how to create a playbook and run the automated activity on an incident creation, see the "Threat response with Microsoft Sentinel Playbooks" module.
 
 ## Review and create tab
 

@@ -4,11 +4,10 @@ metadata:
   title: Apply user accessibility choices by using built-in styles
   description: Explore the options for applying user accessibility choices by using built-in styles in Xamarin.Forms.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Apply user accessibility choices by using built-in styles
 durationInMinutes: 3
 content: |

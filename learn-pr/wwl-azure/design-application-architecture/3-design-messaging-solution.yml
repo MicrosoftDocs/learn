@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-application-architecture.design-messaging-solution
+title: Design a messaging solution
+metadata:
+  title: Design a messaging solution
+  description: "Design a messaging solution"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-design-messaging-solution.md)]

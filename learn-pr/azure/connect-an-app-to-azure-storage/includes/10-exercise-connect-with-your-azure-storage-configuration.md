@@ -1,4 +1,4 @@
-Let's add code to upload an image to our Azure Storage account. In this example, we're going to upload the following image to our Azure Storage container.  
+Let's add code to upload an image to our Azure Storage account. In this example, we're going to upload the following image to our Azure Storage container.
 
 ![An image of the Microsoft Docs and Azure mascots taking a selfie.](../media/docs-and-friends-selfie-stick.png)
 
@@ -119,7 +119,7 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 
 To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object.  Then, you can use the `uploadFile` method to upload your image to Azure Storage.
 
-1. Add this code to your program immediately after the code that creates the container.
+1. Add this code to your *index.js* program immediately after the code that creates the container.
 
     ```javascript
     const filename = 'docs-and-friends-selfie-stick.png';
@@ -133,8 +133,10 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
     ```javascript
     let blobs = containerClient.listBlobsFlat();
-    for await (const blob of blobs) {
-    console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+    let blob = await blobs.next();
+    while (!blob.done) {
+        console.log(`${blob.value.name} --> Created: ${blob.value.properties.createdOn}   Size: ${blob.value.properties.contentLength}`);
+        blob = await blobs.next();
     }
     ```
 
@@ -170,8 +172,10 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
     // Get a list of all the blobs in the container
     let blobs = containerClient.listBlobsFlat();
-    for await (const blob of blobs) {
-      console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`)
+    let blob = await blobs.next();
+    while (!blob.done) {
+        console.log(`${blob.value.name} --> Created: ${blob.value.properties.createdOn}   Size: ${blob.value.properties.contentLength}`);
+        blob = await blobs.next();
     }
     }
     main();

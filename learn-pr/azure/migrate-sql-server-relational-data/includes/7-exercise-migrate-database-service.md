@@ -2,9 +2,9 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 ## Create the Database Migration Service instance
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Create a resource**.
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search services and marketplace** box, enter *Azure Database Migration Service*, and press <kbd>Enter</kbd>. The **Azure Database Migration Service** pane appears.
+1. In the *Search services and marketplace* search box, enter *Azure Database Migration Service*, and press <kbd>Enter</kbd>. The **Azure Database Migration Service** pane appears.
 
 1. Select **Create**. The **Create Migration Service** pane appears.
 
@@ -14,9 +14,9 @@ In this exercise, you migrate the data in your database by using Azure Database 
     |---------|---------|
     | **Project details** |
     | Subscription | Select your subscription |
-    | Resource group | From the dropdown list, select *admsdemorg* |
+    | Resource group | From the dropdown list, select **admsdemorg** |
     | **Instance details** |
-    | Migration service name | admsdemodms |
+    | Migration service name | Enter *admsdemodms* |
     | Location    | Select the same region where your resources are located |
     | Pricing tier | Standard 1 vCores |
     |||
@@ -37,7 +37,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 After the service instance is created, you create a project to migrate the database.
 
-1. Select **New migration project**. The **New migration project** pane appears.
+1. In the top menu bar, select **New Migration Project**. The **New migration project** pane appears.
 
 1. Enter the following values for each setting.
 

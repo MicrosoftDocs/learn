@@ -2,10 +2,10 @@
 uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
 metadata:
   title: Deploy ASP.NET web apps with Azure Pipelines
-  description: Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store. 
+  description: Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.
   ms.date: 01/26/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy ASP.NET web apps with Azure Pipelines

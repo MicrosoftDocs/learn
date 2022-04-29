@@ -3,7 +3,7 @@ uid: learn.wwl.configure-virtual-networks
 metadata:
   title: Configure virtual networks
   description: "You will learn to configure virtual networks and subnets, including IP addressing."
-  ms.date: 07/23/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Create virtual networks.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/virtual-network-configure.svg
 levels:
 - intermediate
 roles:

@@ -4,19 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/26/2021
+  ms.date: 04/20/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Suppose a company wants to allow access to an Azure SQL Database instance. Which of the following network rule types should they use to configure Azure firewall?"
+  - content: "Suppose a company wants to allow access to an Azure SQL Database instance using a FQDN address. Which of the following network rule types should they use to configure Azure firewall?"
     choices:
     - content: "Application"
       isCorrect: true

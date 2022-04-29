@@ -3,11 +3,12 @@ uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview
 metadata:
   title: Foundations of cloud computing for developers
   description: Carnegie Mellon University's Cloud Developer course. Discover what the cloud is, the history of cloud computing, what types of clouds are available, and how you might use the cloud.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Foundations of cloud computing for developers
 summary: Discover what the cloud is, the history of cloud computing, what types of clouds are available, and how you might use the cloud.
 abstract: | 
@@ -24,6 +25,7 @@ abstract: |
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: None.
 iconUrl: /learn/achievements/cmu-cloud-developer/foundations-of-cloud-computing-for-developers.svg
+hidden: true
 levels:
 - beginner
 roles:

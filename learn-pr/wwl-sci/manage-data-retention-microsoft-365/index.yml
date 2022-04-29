@@ -3,7 +3,7 @@ uid: learn.wwl.manage-data-retention-microsoft-365
 metadata:
   title: Manage data retention in Microsoft 365 workloads
   description: "Manage data retention in Microsoft 365 workloads"
-  ms.date: 06/02/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   - Describe the retention features in Microsoft 365 workloads.
   - Configure retention settings in Microsoft Teams and SharePoint Online.
   - Recover content protected by retention settings.
-  - Implement retention for Exchange Mailbox items.
+  - Implement archive mailboxes in Microsoft Exchange.
   - Apply mailbox holds on Exchange Mailboxes.
   - Regain protected items from Exchange Mailboxes.
 prerequisites: |

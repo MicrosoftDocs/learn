@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title:  Use the grep command to match regular expressions
 durationInMinutes: 2
 azureSandbox: true

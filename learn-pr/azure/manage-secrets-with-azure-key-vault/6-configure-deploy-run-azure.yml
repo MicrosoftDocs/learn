@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-secrets-with-azure-key-vault.6-configure-deploy-run-azure
-title: Exercise - Configure, deploy, and run in Azure
+title: Exercise - Configure, deploy, and run your app in Azure
 metadata:
-  title: Exercise - Configure, deploy, and run in Azure
-  description: Exercise - Configure, deploy, and run in Azure
+  title: Exercise - Configure, deploy, and run your app in Azure
+  description: Exercise - Configure, deploy, and run your app in Azure
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   zone_pivot_groups: dev-lang-csharp-javascript
   ms.prod: learning-azure
@@ -15,10 +15,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-configure-deploy-run-azure.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-  hint: "Use the instructions above to create a web app and deploy your site."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+#   hint: "Use the instructions above to create a web app and deploy your site."

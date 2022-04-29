@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-defender-cloud-workload-protection.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a protection provided by Microsoft Defender for DNS?"
+    choices:
+    - content: "Malware communicating with C&C server"
+      isCorrect: true
+      explanation: "Correct.  Command and Control detection over DNS is detected."
+    - content: "Malware encrypting data on a Device"
+      isCorrect: false
+      explanation: "Incorrect.  Command and Control detection over DNS is detected."
+    - content: "Malware enumerating user on a Device"
+      isCorrect: false
+      explanation: "Incorrect.  Command and Control detection over DNS is detected."
+  - content: "Microsoft Defender for Containers does which of the following?"
+    choices:
+    - content: "Environmental hardening, Vulnerability assessment, and endpoint management"
+      isCorrect: false
+      explanation: "Incorrect.  Endpoint management is not part of it."
+    - content: "Environmental hardening, User risk management, and Run-time threat protection"
+      isCorrect: false
+      explanation: "Incorrect.  User risk management is not part of it."
+    - content: "Environmental hardening, Vulnerability assessment, and Run-time threat protection"
+      isCorrect: true
+      explanation: "Correct. It performs all three of these services."
+  - content: "Which feature of Microsoft Defender for Servers examines files and registries of the operating system, application software, and others for changes that might indicate an attack?"
+    choices:
+    - content: "Adaptive application controls"
+      isCorrect: false
+      explanation: "Incorrect. This option is related to Applications."
+    - content: "Adaptive network hardening"
+      isCorrect: false
+      explanation: "Incorrect. This option is related to Network Security Groups."
+    - content: "File integrity monitoring"
+      isCorrect: true
+      explanation: "Correct. File integrity monitoring examines files."

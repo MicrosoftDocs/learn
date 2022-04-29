@@ -165,9 +165,7 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     :::image type="content" source="../media/dp-3300-module-66-lab-45.png" alt-text="Screenshot of creating a runbook.":::
 
-    Once the runbook has been created, the process should drop you directly into the runbook.
-‎
-1. Using Windows Explorer open the **create-db-credentials.ps1** file from the **D:\LabFIles\Automate Resources** folder. The PowerShell IDE will open.
+1. Once the runbook has been created, open the **create-db-credentials.ps1** file from the **D:\LabFIles\Automate Resources** folder. The PowerShell IDE will open.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-47.png" alt-text="Screenshot of editing the PowerShell command and adding the SQL server name.":::
 

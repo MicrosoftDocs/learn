@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-manage-fslogix
+metadata:
+  title: Implement and manage FSLogix
+  description: "Implement and manage FSLogix"
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement and manage FSLogix
+summary: A user profile contains data elements about an user information like desktop settings, persistent network connections, and application settings.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Plan for FSLogix.
+  *   Recommend best practices for FSLogix profile containers and Azure files.
+  *   Install FXLogix.
+  *   Recommend storage options for FSLogix profile containers.
+  *   Configure Cloud Cache.
+  *   Configure Profile Containers.
+  *   Manage Rule Sets and application masking.
+prerequisites: ""
+iconUrl: /learn/achievements/1-implement-and-manage-fslogix.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.implement-manage-fslogix.introduction
+- learn.wwl.implement-manage-fslogix.plan-for-fslogix
+- learn.wwl.implement-manage-fslogix.fslogix-profile-containers-azure-files
+- learn.wwl.implement-manage-fslogix.install-fslogix
+- learn.wwl.implement-manage-fslogix.storage-options-for-fslogix-profile-containers
+- learn.wwl.implement-manage-fslogix.profile-container-vs-office-container
+- learn.wwl.implement-manage-fslogix.configure-cloud-cache
+- learn.wwl.implement-manage-fslogix.configure-profile-containers
+- learn.wwl.implement-manage-fslogix.manage-rule-sets-application-masking
+- learn.wwl.implement-manage-fslogix.knowledge-check
+- learn.wwl.implement-manage-fslogix.summary
+badge:
+  uid: learn.wwl.implement-manage-fslogix.badge

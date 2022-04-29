@@ -12,7 +12,7 @@ title: Refine and test machine learning models
 summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning but also give us some confidence about how well our models will work when faced with data we have never seen before.
 abstract: | 
   In this module, you will:
-  - Define feature normalization
+  - Define feature scaling
   - Create and work with test datasets
   - Articulate how testing models can both improve and harm training
 prerequisites: Familiarity with machine learning models

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.review-write-heavy-index-patterns
+title: Review write-heavy index patterns
+metadata:
+  title: Review write-heavy index patterns
+  description: "Review write-heavy index patterns"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-review-write-heavy-index-patterns.md)]

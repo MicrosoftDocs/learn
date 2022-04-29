@@ -1,21 +1,21 @@
 - The Hadoop Distributed File System (HDFS) is an open-source clone of Google File System (GFS).
 - HDFS is designed to run on a cluster of nodes and supports the MapReduce programming model by providing a distributed file system (DFS) for the model's I/O<!-- input and output --> data.
 - HDFS has a common, cluster-wide namespace; is able to store large files; is optimized for write-once, read-many access; and is designed to provide high availability in the presence of node failures. 
-- HDFS follows a master-slave topology; the NameNode handles the metadata, and the data is stored on the DataNodes.
-- Files in HDFS are split into blocks (also called _chunks_), with a default size of 128MB.
+- HDFS follows a primary-secondary topology; the NameNode handles the metadata, and the data is stored on the DataNodes.
+- Files in HDFS are split into blocks (also called _chunks_), with a default size of 128 MB.
 - Blocks are replicated by default three times (<!-- also -->called _replication factor_) over the entire cluster.
 - HDFS assumes a tree-style cluster topology, <!-- and -->optimizes file access to improve performance, and attempts to place block replicas across racks. 
 - The original HDFS design follows immutable semantics and does not allow existing files to be opened for writes. Newer versions of HDFS support file appends.
 - HDFS is strongly consistent because a file write is marked complete only after all the replicas have been written.
-- The NameNode keeps track of DataNode failures using a heartbeat mechanism; if DataNodes fail to respond, they are marked as dead, and additional copies of the blocks that were on that DataNode are created to maintain the desired replication factor. 
+- The NameNode keeps track of DataNode failures using a heartbeat mechanism; if DataNodes fail to respond, they are marked as dead, and more copies of the blocks that were on that DataNode are created to maintain the desired replication factor. 
 - The NameNode is a single point of failure (SPOF) in the original HDFS design. A secondary NameNode can be designated to periodically copy metadata from the primary NameNode but does not provide full failover redundancy.
 - HDFS provides high bandwidth for MapReduce, high reliability, low costs per byte, and good scalability.
 - HDFS is inefficient with small files (owing to large default block size), is non-POSIX compliant, and does not allow for file rewrites, except for appends in the latest versions of HDFS. 
 - Ceph is a storage system designed for cloud applications. Ceph is based on a distributed object store with services layered on top of it.
-- At the core of Ceph is RADOS, a self-managing cluster of object store daemons (OSDs) and monitor nodes. The nodes use advanced techniques to be self-managing, fault-tolerant and scalable.
+- At the core of Ceph is RADOS, a self-managing cluster of object store daemons (OSDs) and monitor nodes. The nodes use advanced techniques to be self-managing, fault-tolerant, and scalable.
 - An object in RADOS is hashed to a placement group and is then associated to an OSD using the CRUSH algorithm.
 - RADOS can be accessed through **librados**, a native RADOS client that works with different programming languages.
 - Applications can also access data in RADOS as Objects through the RADOS Gateway, which supports the S3 and Swift protocols through a REST interface.
-- RADOS can also export block storage devices through the use of RBD. These can be used as disk images for virtual machines.
-- Ceph FS is a filesystem layered over RADOS. This is achieved through the use of special Metadata nodes which keep track of the filesystem metadata. Metadata nodes partition the filesystem tree dynamically through a special algorithm. Metadata entries are also journaled to RADOS for fault-tolerance.
+- RADOS can also export block storage devices by using RBD. These can be used as disk images for virtual machines.
+- Ceph FS is a filesystem layered over RADOS. This is achieved by using special Metadata nodes that keep track of the filesystem metadata. Metadata nodes partition the filesystem tree dynamically through a special algorithm. Metadata entries are also journaled to RADOS for fault-tolerance.
 <!-- Commented on 1/18/2018 to merge quizzes 8 and 9 <section> <title>Cloud Storage Quiz</title> <body> <p>This checkpoint will test your understanding of the material you have learned in this unit.</p> <activity idref="u04_quiz_02" purpose="checkpoint"/> </body> </section> -->

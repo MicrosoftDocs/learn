@@ -14,10 +14,10 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps works, along with the kinds of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
+This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps works, and with the kinds of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 * [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 
-This module also assumes you are already familiar with Python, although that is not a requirement for completing the steps involved. If you would like to learn more about the basics of Python first, see [Take your first steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true).
+This module also assumes you’re already familiar with Python, although that isn’t a requirement for completing the steps involved. If you would like to learn more about the basics of Python first, see [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true).

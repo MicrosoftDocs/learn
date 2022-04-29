@@ -4,12 +4,13 @@ title: Understand well defined schemas
 metadata:
   title: Understand well defined schemas
   description: "Understand well defined schemas"
-  ms.date: 07/28/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/6-understand-well-defined-schemas.md)]

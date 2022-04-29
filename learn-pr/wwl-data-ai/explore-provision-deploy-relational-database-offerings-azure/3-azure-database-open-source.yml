@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.azure-open-source-databases
+title: Describe Azure services for open-source databases
+metadata:
+  title: Describe Azure services for open-source databases
+  description: "Describe Azure services for open-source databases"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-azure-database-open-source.md)]

@@ -4,12 +4,13 @@ title: Configure peering for an ExpressRoute deployment
 metadata:
   title: Configure peering for an ExpressRoute deployment
   description: "Configure peering for an ExpressRoute deployment"
-  ms.date: 08/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-peering-for-expressroute-deployment.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "An engineer wants to consume a specific set of services through Microsoft peering. Which feature should be configured?"
     choices:
-    - content: "Route filters."
-      isCorrect: true
-      explanation: "Correct. Route filters are a way to consume a subset of supported services through Microsoft peering."
     - content: "Network Firewall."
       isCorrect: false
       explanation: "Incorrect. Network Firewall allows control traffic flow using rules that specify allowed or blocked IP address and ports."
+    - content: "Route filters."
+      isCorrect: true
+      explanation: "Correct. Route filters are a way to consume a subset of supported services through Microsoft peering."
     - content: "You cannot consume only a subset of services."
       isCorrect: false
       explanation: "Incorrect. You can configure Microsoft peering to consume only a subset of services."
   - content: "To provide connectivity to Microsoft 365 and PaaS services. Which peering service should select?"
     choices:
-    - content: "Microsoft Peering."
-      isCorrect: true
-      explanation: "Correct. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering."
     - content: "Private peering."
       isCorrect: false
       explanation: "Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through private peering."
     - content: "Public peering."
       isCorrect: false
       explanation: "Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through public peering."
+    - content: "Microsoft Peering."
+      isCorrect: true
+      explanation: "Correct. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering."

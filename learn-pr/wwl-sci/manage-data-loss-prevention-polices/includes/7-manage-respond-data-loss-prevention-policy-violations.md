@@ -16,7 +16,7 @@ For example, you open the false positives and overrides report and notice a high
 
 You decide to adjust the Tax identification number DLP policy to exclude instances where it matches your custom sensitive information type for Product Number. To do this, follow these steps:
 
-1. In the M365 compliance center, on the **Policies** page, expand Data and select **Data loss prevention**.
+1. In the Microsoft 365 compliance center, on the **Policies** page, expand Data and select **Data loss prevention**.
 
 1. Check the Tax identification number policy and select **Edit Policy**.
 

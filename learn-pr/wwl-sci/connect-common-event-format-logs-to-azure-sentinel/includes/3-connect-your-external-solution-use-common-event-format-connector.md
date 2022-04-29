@@ -1,16 +1,16 @@
-You need to designate and configure a Linux machine to forward the logs from your security solution to your Azure Sentinel workspace. This machine can be physical or virtual in your on-premises environment, an Azure VM, or a VM in another cloud. Using the link provided, you will run a script on the designated machine that performs the following tasks:
+You need to designate and configure a Linux machine to forward the logs from your security solution to your Microsoft Sentinel workspace. This machine can be physical or virtual in your on-premises environment, an Azure VM, or a VM in another cloud. Using the link provided, you will run a script on the designated machine that performs the following tasks:
 
 Installs the Log Analytics agent for Linux (also known as the OMS agent) and configures it for the following purposes:
 
-- listening for CEF messages from the built-in Linux Syslog daemon on TCP port 25226
+- Listening for CEF messages from the built-in Linux Syslog daemon on TCP port 25226
 
-- sending the messages securely over TLS to your Azure Sentinel workspace, where they are parsed and enriched
+- Sending the messages securely over TLS to your Microsoft Sentinel workspace, where they are parsed and enriched
 
 Configures the built-in Linux Syslog daemon (rsyslog.d/syslog-ng) for the following purposes:
 
-- listening for Syslog messages from your security solutions on TCP port 514
+- Listening for Syslog messages from your security solutions on TCP port 514
 
-- forwarding only the messages it identifies as CEF to the Log Analytics agent on localhost using TCP port 25226
+- Forwarding only the messages it identifies as CEF to the Log Analytics agent on localhost using TCP port 25226
 
 ## Run the deployment script
 

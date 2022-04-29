@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-pybryt.2-annotation-options
+title: Annotation options
+metadata:
+  title: Annotation options
+  description: Advanced options for customizing the behavior of annotations
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 1/10/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-annotation-options.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: |
+        Which of the following calls caps the number of times that the `lst` variable is tracked at five times?
+      choices:
+        - content: "`pybryt.Value(lst, limit=5)`"
+          isCorrect: false
+          explanation: "Not quite. The `limit` option requires the annotation to be named."
+        - content: '`pybryt.Value(lst, name="lst", limit=5)`'
+          isCorrect: true
+          explanation: "Correct!"
+        - content: '`pybryt.Value(lst, group="lst", limit=5)`'
+          isCorrect: false
+          explanation: "Not quite. The `group` and `limit` options are unrelated."
+    - content: "What is the purpose of the `group` option?"
+      choices:
+        - content: "To group together annotations that represent the same variable"
+          isCorrect: false
+          explanation: "Not quite. This is what the `name` option is for."
+        - content: "To prevent duplicate messages from being provided to the student"
+          isCorrect: false
+          explanation: "Not quite. This is one effect of the `name` option."
+        - content: 'To group together annotations that represent a single problem so that they can be run as a subset of the whole reference'
+          isCorrect: true
+          explanation: "Correct!"
+    - content: |
+        Suppose we create a reference with the following code:
+
+        ```python
+        for i in range(10):
+            pybryt.Value(foo(i), name="foo", limit=5)
+            pybryt.Value(bar(i), group="foo")
+            pybryt.Value(baz(i), name="baz")
+        ```
+
+        How many annotations are in the reference?
+      choices:
+        - content: "30"
+          isCorrect: false
+          explanation: "Not quite. Think about the use of `limit`."
+        - content: "25"
+          isCorrect: true
+          explanation: "Correct!"
+        - content: "15"
+          isCorrect: false
+          explanation: "Not quite. The value of `group` has no effect on `name` or `limit` (event if they're the same)."

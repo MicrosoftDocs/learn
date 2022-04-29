@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-defender-cloud-workload-protection.for-container-registries
+title: Understand Microsoft Defender for Containers
+metadata:
+  title: Understand Microsoft Defender for Containers
+  description: "Understand Microsoft Defender for Containers"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-understand-azure-defender-for-container-registries.md)]

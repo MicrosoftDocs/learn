@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-identity-services.explore-sap-cloud-platform-identity-authentication
+title: Explore SAP Cloud Platform Identity authentication
+metadata:
+  title: Explore SAP Cloud Platform Identity authentication
+  description: "Explore SAP Cloud Platform Identity authentication"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-explore-sap-cloud-platform-identity-authentication.md)]

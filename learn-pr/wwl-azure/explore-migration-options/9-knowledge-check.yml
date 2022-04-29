@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-migration-options.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/21/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following options is a potential disadvantage of a purely horizontal strategy when migrating SAP systems to Microsoft Azure?"
+    choices:
+    - content: "There is no opportunity to gain experience with production systems on Azure prior to the migration."
+      isCorrect: true
+      explanation: "Correct. A horizontal strategy allows you to evaluate the potential cost savings, performance, and optimization of your migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
+    - content: "If something goes wrong, large numbers of users or mission-critical business functions are likely to be affected."
+      isCorrect: false
+      explanation: "Incorrect. A horizontal strategy allows you to evaluate the potential cost savings, performance, and optimization of your migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
+    - content: "There is no opportunity to analyze potential cost savings, performance, and optimization potential."
+      isCorrect: false
+      explanation: "Incorrect. A horizontal strategy allows you to evaluate the potential cost savings, performance, and optimization of your migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
+  - content: "Why is classical migration commonly referred to as \"two-step migration\", while the SAP database migration option (DMO) is referred to as \"one-step migration\"?"
+    choices:
+    - content: "Classical migration is a manual process, while DMO is automated."
+      isCorrect: false
+      explanation: "Incorrect. While it true that classical migration is a manual process, while DMO is automated, it is not the reason for the terminology."
+    - content: "Classical migration involves a database migration and an SAP update, while DMO only includes a database migration."
+      isCorrect: false
+      explanation: "Incorrect. DMO facilitates both an SAP upgrade and a database migration to the SAP HANA database via one tool"
+    - content: "DMO carries out a database migration and an SAP upgrade as a single step, while in classical migration they are separate steps."
+      isCorrect: true
+      explanation: "Correct. DMO facilitates both an SAP upgrade and a database migration to the SAP HANA database via one tool. While it true that classical migration is a manual process, while DMO is automated, it is not the reason for the terminology."
+  - content: "Which file transfer mode should be selected during a one-step migration, to minimize migration downtime?"
+    choices:
+    - content: "Parallel Data Transfer"
+      isCorrect: true
+      explanation: "Correct. In Parallel Data Transfer mode, data is immediately transferred to the Azure target after the export is completed for each file via the dmotocloud.sh script. This mode can be used to minimize migration downtime."
+    - content: "Sequential Data Transfer"
+      isCorrect: false
+      explanation: "Incorrect. In Parallel Data Transfer mode, data is immediately transferred to the Azure target after the export is completed for each file via the dmotocloud.sh script. This mode can be used to minimize migration downtime."
+    - content: "Both modes result in the same migration downtime"
+      isCorrect: false
+      explanation: "Incorrect. In Parallel Data Transfer mode, data is immediately transferred to the Azure target after the export is completed for each file via the dmotocloud.sh script. This mode can be used to minimize migration downtime."
+  - content: "Broadly speaking, the potential for DMO performance optimizations can be seen in which three areas?"
+    choices:
+    - content: "CPU, I/O, memory"
+      isCorrect: false
+      explanation: "Incorrect. Broadly speaking, the potential for DMO performance optimizations can be seen in the following three areas: Export, file transfer, import."
+    - content: "Network speed, bandwidth, latency"
+      isCorrect: false
+      explanation: "Incorrect. Broadly speaking, the potential for DMO performance optimizations can be seen in the following three areas: Export, file transfer, import."
+    - content: "Export, file transfer, import"
+      isCorrect: true
+      explanation: "Correct. Broadly speaking, the potential for DMO performance optimizations can be seen in the following three areas: Export, file transfer, import."

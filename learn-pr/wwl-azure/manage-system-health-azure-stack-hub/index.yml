@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.manage-system-health-azure-stack-hub
+metadata:
+  title: Manage system health on Azure Stack Hub
+  description: "Manage system health on Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage system health on Azure Stack Hub
+summary: |
+  Use syslog to integrate Azure Stack Hub infrastructure with security solutions already deployed in your datacenter.
+  This module prepares you for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  *   Monitor health and alerts in Azure Stack Hub.
+  *   Integrate external monitoring with Azure Stack Hub.
+  *   Monitor system health by using Syslog Server.
+  *   Manage field replacement or repair for Azure Stack Hub.
+  *   Configure automatic diagnostic log collection for Azure Stack Hub.
+  *   Find your Cloud ID for Azure Stack Hub.
+  *   Collect diagnostic logs on demand by using PowerShell for Azure Stack Hub.
+  *   Send Azure Stack Hub diagnostic logs by using the privileged endpoint.
+prerequisites: |
+  Working experience with monitoring and logging cloud environments.
+  Conceptual knowledge of monitoring and logging.
+iconUrl: /learn/achievements/1-manage-system-health-on-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.manage-system-health-azure-stack-hub.introduction
+- learn.wwl.manage-system-health-azure-stack-hub.monitor-health-alerts
+- learn.wwl.manage-system-health-azure-stack-hub.integrate-external-monitoring
+- learn.wwl.manage-system-health-azure-stack-hub.monitor-by-using-syslog-server
+- learn.wwl.manage-system-health-azure-stack-hub.manage-field-replacement-repair
+- learn.wwl.manage-system-health-azure-stack-hub.configure-automatic-diagnostic-log-collection
+- learn.wwl.manage-system-health-azure-stack-hub.find-your-cloud-id
+- learn.wwl.manage-system-health-azure-stack-hub.collect-diagnostic-logs-demand-by-using-powershell
+- learn.wwl.manage-system-health-azure-stack-hub.send-diagnostic-logs-by-using-privileged-endpoint
+- learn.wwl.manage-system-health-azure-stack-hub.knowledge-check
+- learn.wwl.manage-system-health-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.manage-system-health-azure-stack-hub.badge

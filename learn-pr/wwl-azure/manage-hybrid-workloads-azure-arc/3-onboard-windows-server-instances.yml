@@ -3,14 +3,14 @@ uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.onboard-windows-server-ins
 title: Onboard Windows Server instances
 metadata:
   title: Onboard Windows Server instances
-  description: Onboard Windows Server instances
-  ms.date: 09/24/2020
+  description: "Onboard Windows Server instances"
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-onboard-windows-server-instances.md)]

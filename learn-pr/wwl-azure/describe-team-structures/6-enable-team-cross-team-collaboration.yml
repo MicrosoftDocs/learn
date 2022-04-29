@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-team-structures.enable-team-cross-team-collaboration
+title: Enable in-team and cross-team collaboration
+metadata:
+  title: Enable in-team and cross-team collaboration
+  description: "Enable in-team and cross-team collaboration"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-enable-team-cross-team-collaboration.md)]

@@ -3,12 +3,12 @@ uid: learn.protect-virtual-desktop-deployment-azure-firewall.plan-azure-firewall
 title: Plan Azure Firewall deployment 
 metadata:
   unitType: learning-content
-  title: Plan Azure Firewall deployment 
-  description: Plan Azure Firewall deployment 
+  title: Plan Azure Firewall deployment
+  description: Plan Azure Firewall deployment
   ms.date: 07/05/2021
-  author: cwatson-cat 
-  ms.author: cwatson 
-  ms.topic: interactive-tutorial 
+  author: vhorne
+  ms.author: victorh
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |

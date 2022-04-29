@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An organization deploys Azure Virtual Desktop with session hosts joined to an on-premises Active Directory (AD) domain named westwind.com. They need to limit user sessions to three hours. What should they configure?"
+    choices:
+    - content: "Run Register-AzWvdApplicationGroup"
+      isCorrect: false
+      explanation: "That's incorrect. Register-AzWvdApplicationGroup registers a Windows virtual desktop application group."
+    - content: "Configure a Run As account in Azure Automation"
+      isCorrect: false
+      explanation: "That's incorrect. Run As accounts in Azure Automation provide authentication for managing resources on the Azure Resource Manager or Azure Classic deployment model using Automation runbooks and other Automation features."
+    - content: "A Group Policy Object (GPO) in westwind.com"
+      isCorrect: true
+      explanation: "That's correct. Configure a Group Policy Object (GPO) and set the LimitSecondsToForceLogOffUser parameter to zero. This allows the session configuration setting in specified group policies to handle signing off user sessions."
+  - content: "An organization deploys Azure Virtual Desktop using the Start/Stop VMs during off- hours solution in Azure. They want to isolate virtual machines that should never be stopped by the solution. What should they configure?"
+    choices:
+    - content: "Remote Desktop Diagnostics"
+      isCorrect: false
+      explanation: "That's incorrect. Remote Desktop Diagnostics is an event-based aggregator that marks each user or administrator action on the Azure Virtual Desktop deployment as a success or failure. Administrators can query the event aggregation to identify failing components.."
+    - content: "Remote Connection Gateway service"
+      isCorrect: false
+      explanation: "That's incorrect. The Remote Connection Gateway service connects remote users to Azure Virtual Desktop apps and desktops from any internet-connected device that can run an Azure Virtual Desktop client. The client connects to a gateway, which then orchestrates a connection from a VM back to the same gateway."
+    - content: "An Azure Automation account variable"
+      isCorrect: true
+      explanation: "That's correct. The scaling tool in Azure Automation account provides start and stop based on Peak and Off-Peak business hours."

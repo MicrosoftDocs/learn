@@ -35,12 +35,12 @@ When you deploy a domain controller in a branch office that can't guarantee phys
 
 ## Upgrade domain controllers from the previous version
 
-The process for upgrading a domain controller is the same for any version of Windows Server starting with Windows Server 2012 R2 through Windows Server 2019. You can upgrade to a Windows Server 2019 domain using either of the following methods:
+The process for upgrading a domain controller is the same for any version of Windows Server starting with Windows Server 2012 R2 through Windows Server 2022. You can upgrade to a Windows Server 2022 domain using either of the following methods:
 
 - Upgrade the OS on existing domain controllers that are running Windows Server 2012 R2 or later.
-- Add servers running Windows Server 2019 as domain controllers in a domain that already has domain controllers running earlier Windows Server versions.
+- Add servers running Windows Server 2022 as domain controllers in a domain that already has domain controllers running earlier Windows Server versions.
 
-We recommend the latter method, because when you finish you'll have a clean installation of both the Windows Server 2019 OS and the AD DS database. Whenever you add a new domain controller, Windows Server automatically updates the domain DNS records so clients will be able to locate and use this domain controller.
+We recommend the latter method, because when you finish you'll have a clean installation of both the Windows Server 2022 OS and the AD DS database. Whenever you add a new domain controller, Windows Server automatically updates the domain DNS records so clients will be able to locate and use this domain controller.
 
 ## Deploy AD DS domain controllers in Azure virtual machines (VMs)
 

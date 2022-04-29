@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.understand-server-response-time-degradation
+title: Understand server response time degradation
+metadata:
+  title: Understand server response time degradation
+  description: "Understand server response time degradation"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-understand-server-response-time-degradation.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.exercise-optimize-containers-index-policy-for-common-operations
+title: Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for common operations
+metadata:
+  title: Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for common operations
+  description: "Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for common operations"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107591
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-optimize-containers-index-policy-common-operations.md)]

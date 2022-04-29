@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub.compare-azure-stack-hci-azure-stack-edge
+title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
+metadata:
+  title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
+  description: "Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-compare-azure-stack-hub.md)]

@@ -39,12 +39,16 @@ When you create a service principal, you generally ask Azure to create a key at 
 > [!NOTE]
 > Do you remember our earlier discussion on how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Azure AD configuration, and then go to the application registrations, you can create and delete keys there too.
 
-Azure shows you the key you when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose the key, you must delete it and create a new one.
+Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose the key, you must delete it and create a new one.
+
+## Manage service principals for Azure Pipelines and GitHub Actions
+
+When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing or transmitting the key unnecessarily. 
+
+Pipeline tools include secure ways to specify your service principal's application ID and key. Never store credentials of any kind in source control. Instead, use *secrets* with GitHub Actions, and use *service connections* when you work with Azure Pipelines. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
 
 > [!TIP]
-> When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing or transmitting the key unnecessarily. 
->
-> Pipeline tools include secure ways to specify your service principal's application ID and key. Use _encrypted secrets_ with GitHub Actions, and use _service connections_ when you work with Azure Pipelines. Never store credentials of any kind in source control. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
+> Azure Pipelines can create service principals for you automatically. In this module, you'll manually create and manage your service principals so you have a better understanding of what's happening. In other modules, you'll use the automatic creation method for simplicity.
 
 ## Create a service principal and key
 
@@ -54,8 +58,9 @@ To create a service principal and a key, use the `az ad sp create-for-rbac` comm
 
 ```azurecli
 az ad sp create-for-rbac \
-  --name MyPipeline \
-  --skip-assignment
+  --role Contributor \
+  --scopes /subscriptions/<SUBSCRIPTION-ID> \
+  --name MyPipeline
 ```
 
 When you run this command, the Azure CLI returns a JSON response with a `password` property. This property is the service principal's key. You can't get this key again, so be sure to use it immediately or save it somewhere securely.

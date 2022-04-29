@@ -8,7 +8,7 @@ Because we’re dealing with big data here, we don’t want to import this data 
 
 3. If the Connecting to a third-party service window is displayed, click **Don’t warn me again for this connector**, and then click **Continue**. 
 4. In the HDInsight Interactive Query box, do the following: 
-    - **Server**: Enter **servername.azurehdinsight.net**. where **servername** is the name of your cluster.
+    - **Server**: Enter **servername**.azurehdinsight.net. where **servername** is the name of your cluster.
     - **Database**: Enter newyorkrealestate.
     - **Data Connectivity Mode**: Select DirectQuery.
 
@@ -16,7 +16,7 @@ Because we’re dealing with big data here, we don’t want to import this data 
 
 5. Enter the username (admin) and password you created for the cluster and click **Connect**.
 
-6. In the Navigator window, check the **propertysales** table on the left menu, and then click **Edit**. 
+6. In the Navigator window, check the **propertysales** table on the left menu, and then click **Load**. 
 
 ![Power BI Navigator screen](../media/7-powerbi-navigator.png)
 
@@ -45,7 +45,7 @@ Because we’re dealing with big data here, we don’t want to import this data 
 ![Power BI dashboard](../media/7-power-bi-visualizations.png)
 
 10. Click **File > Save As**, name the file RealEstate and save your pbix file locally. 
-11. Click **Publish > My workspace > select a destination**. 
+11. Click **Publish > Save > and select My workspace** as a destination. 
 12. In the Publishing to Power BI window, click **Open ‘Real Estate.pbix’** in Power BI. If you get a message about adding permissions, enter your username (admin) and password, and then set the permissions to Organization.
 
 You can now use the Share button to share your report with your organization.

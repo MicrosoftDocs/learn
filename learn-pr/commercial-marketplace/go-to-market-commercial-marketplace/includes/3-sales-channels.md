@@ -6,7 +6,7 @@ When you list your company’s products and services in the commercial marketpla
 - In direct collaboration with Microsoft sales professionals through the **Co-sell program**
 
 > [!Note]
->The Co-sell program is reserved for software built with your intellectual property (IP) as repeatable, packaged offers and for services with Microsoft technology embedded. If you’re interested in learning more about Co-sell program eligibility and benefits, you can reference the **[Co-sell partner engagement article](/azure/marketplace/marketplace-co-sell)** in our documentation.
+>The Co-sell program is reserved for software built with your intellectual property (IP) as repeatable, packaged offers and for services with Microsoft technology embedded. If you’re interested in learning more about Co-sell program eligibility and benefits, you can reference the **[Co-sell partner engagement article](/partner-center/co-sell-overview)** in our documentation.
 
 Now we'll share some things you can consider as you prepare to sell your products and services through each channel.
 
@@ -48,4 +48,4 @@ If you qualify for the program, you will be required to provide additional resou
 - One-page document that summarize the value your solution creates for users
 - Customer-focused presentations that go into more detail on your solution
 
-For more information on how to provide required Co-sell program information on your solution in Partner Center, you can read our documentation on the [Co-sell option in Partner Center](/azure/marketplace/partner-center-portal/commercial-marketplace-co-sell).
+For more information on how to provide required Co-sell program information on your solution in Partner Center, you can read our documentation on the [Co-sell option in Partner Center](/partner-center/co-sell-overview).

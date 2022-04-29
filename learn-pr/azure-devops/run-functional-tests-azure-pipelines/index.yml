@@ -4,8 +4,8 @@ metadata:
   title: Run functional tests in Azure Pipelines
   description: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure

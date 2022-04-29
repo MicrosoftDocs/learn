@@ -1,15 +1,15 @@
 **Digital transformation** is about reimagining how you bring together people, data, and processes to create value for your customers and maintain a competitive advantage in a digital-first world.  
 
 Digital technologies create new opportunities for businesses across the globe by changing the way that goods and services are produced, sold, and consumed. These technologies help your organization adapt in the face of competitive pressures and evolving customer needs. Doing so often involves reimagining the digital platform, culture, and overall approach to transformation with a focus on customer engagement, business processes, and data and intelligence.
-Microsoft enables impactful digital transformation across four pillars: 
+Microsoft enables impactful digital transformation across four pillars:
 
 
-|  |  |  |
-|---------|---------|---------|
-|![Icon for Empower employees shows a wrench and screwdriver](../media/empower-employees.png)|**Empower employees**|Help your employees achieve more by creating a work environment that’s intelligent, flexible, and secure.|
-|![Icon for Engage customers shows a pair of dialog balloons](../media/engage-customers.png)|**Engage customers**|Tailor individual customer experiences by harnessing data and drawing actionable insights.|
-|![Icon for Optimize operations shows a set of gears](../media/optimize-operations.png)|**Optimize operations**|Accelerate the responsiveness of your business, improve service levels, and reduce costs with intelligent processes.|
-|![Icon for Transform products shows a simple hypercube](../media/transform-products.png)|**Transform products**|Find and capture the best new opportunities by using data as a strategic asset and shifting from hindsight to foresight.|
+| Pillars | Advantages |
+|:--:|---|
+|![Icon for Empower employees shows a wrench and screwdriver](../media/empower-employees.png)</BR>**Empower employees**|Help your employees achieve more by creating a work environment that’s intelligent, flexible, and secure.|
+|![Icon for Engage customers shows a pair of dialog balloons](../media/engage-customers.png)</BR>**Engage customers**|Tailor individual customer experiences by harnessing data and drawing actionable insights.|
+|![Icon for Optimize operations shows a set of gears](../media/optimize-operations.png)</BR>**Optimize operations**|Accelerate the responsiveness of your business, improve service levels, and reduce costs with intelligent processes.|
+|![Icon for Transform products shows a simple hypercube](../media/transform-products.png)</BR>**Transform products**|Find and capture the best new opportunities by using data as a strategic asset and shifting from hindsight to foresight.|
 
 ## Digital feedback loop
 
@@ -33,11 +33,20 @@ Organizations transform by developing new capabilities across these four pillars
 
 Let’s dive deeper with Judson Althoff, Microsoft Executive VP, Worldwide Commercial Business, and look at how Microsoft 365, Dynamics 365, Microsoft Azure, and Microsoft’s commitment to continued innovation are delivering the most complete, most secure cloud productivity service to business customers, supporting companies on their digital transformation journey.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video from Judson Althoff and begin to envision what it means to be digital and see the possibilities unlocked by Microsoft solutions.|
+</br>
+
+---
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video from Judson Althoff and begin to envision what it means to be digital and see the possibilities unlocked by Microsoft solutions.
+
+:::column-end:::
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDFw]
+
+:::row-end:::
 
 The role of Microsoft is to help organizations realize the benefits of their digital transformation.
 

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-sap-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which item describes a benefit of running SAP applications on Azure?"
+    choices:
+    - content: "Hyper-V snapshot support"
+      isCorrect: false
+      explanation: "Incorrect. Hyper-V snapshot support is not one of the benefits of running SAP applications on Azure."
+    - content: "Guaranteed 100% uptime"
+      isCorrect: false
+      explanation: "Incorrect. Running SAP applications on Azure does not guarantee 100% uptime."
+    - content: "Lower TCO"
+      isCorrect: true
+      explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
+  - content: "Which Microsoft technology is used to build advanced pipelines to automate data movement and transformation in SAP on Azure environments?"
+    choices:
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Lake is not the technology that allows you to build advanced pipelines to automate data movement and transformation in your SAP on Azure environment."
+    - content: "Azure Data Factory"
+      isCorrect: true
+      explanation: "Correct. Azure Data Factory allows you to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
+    - content: "Microsoft Power BI"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Power BI is not the technology that allows you to build advanced pipelines to automate data movement and transformation in your SAP on Azure environment."

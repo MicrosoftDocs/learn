@@ -11,7 +11,7 @@
     Azure SQL Managed Instance is a scalable cloud data service that provides the broadest SQL Server database engine compatibility with all the benefits of a fully managed platform as a service. Depending on your scenario, Azure SQL Managed Instance might offer more options for your database needs.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-service-managed-sql-instance-417013a9.png" alt-text="icon.":::
+    :::image type="content" source="../media/icon-service-managed-sql-instance-417013a9.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::

@@ -46,4 +46,4 @@ The main steps in the process are:
 1. Run the container in interactive mode.
 1. Exit the running container.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MzHK]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MzHK]

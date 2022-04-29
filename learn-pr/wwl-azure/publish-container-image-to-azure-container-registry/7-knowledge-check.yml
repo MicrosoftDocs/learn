@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.publish-container-image-to-azure-container-registry.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following Azure Container Registry support geo-replication to manage a single registry across multiple regions?"
+    choices:
+    - content: "Basic"
+      isCorrect: false
+      explanation: "That's incorrect. The basic tier does not support geo-replication."
+    - content: "Standard"
+      isCorrect: false
+      explanation: "That's incorrect. The standard tier does not support geo-replication."
+    - content: "Premium"
+      isCorrect: true
+      explanation: "That's correct. The premium tier adds geo-replication as a feature."

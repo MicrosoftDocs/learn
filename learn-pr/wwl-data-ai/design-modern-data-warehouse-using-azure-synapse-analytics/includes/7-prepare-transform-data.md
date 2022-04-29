@@ -74,7 +74,7 @@ The main tasks for this are as follows:
   
 ### Task 3: Using Mapping Data Flow transformation
 
-1. **Add a Select transformation to rename and drop a column**. In the preview of the data, you may have noticed that the "Rotton Tomatoes" column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](https://docs.microsoft.com/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
+1. **Add a Select transformation to rename and drop a column**. In the preview of the data, you may have noticed that the "Rotton Tomatoes" column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
     
     > [!div class="mx-imgBorder"]
     > ![Adding a Transformation to a Mapping Data Flow in Azure Data Factory](../media/add-transformation.png)
@@ -84,7 +84,7 @@ The main tasks for this are as follows:
     > [!div class="mx-imgBorder"]
     > ![Using the Select Transformation to a Mapping Data Flow in Azure Data Factory](../media/select-transformation.png)
 
-1. **Add a Filter Transformation to filter out unwanted years**. Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** will convert the string year value to an integer and filter rows if that value is above 1950.
+1. **Add a Filter Transformation to filter out unwanted years**. Say you are only interested in movies made after 1951. You can add a [Filter transformation](/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Click on the **expression box** to open up the [Expression builder](/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** will convert the string year value to an integer and filter rows if that value is above 1950.
 
     > [!div class="mx-imgBorder"]
     > ![Using the Filter Transformation to a Mapping Data Flow in Azure Data Factory](../media/filter-transformation.png)
@@ -95,7 +95,7 @@ The main tasks for this are as follows:
     > ![Using the Expression Builder in the Mapping Data Flow in Azure Data Factory](../media/expression-builder-mapping-data.png)
 
 
-1. **Add a Derive Transformation to calculate primary genre**. As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the *first* genre in each column, you can derive a new column named **PrimaryGenre** via the [Derived Column](https://docs.microsoft.com/azure/data-factory/data-flow-derived-column) transformation by clicking on the **+ icon** next to your Filter transformation and choosing Derived under Schema Modifier. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.
+1. **Add a Derive Transformation to calculate primary genre**. As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the *first* genre in each column, you can derive a new column named **PrimaryGenre** via the [Derived Column](/azure/data-factory/data-flow-derived-column) transformation by clicking on the **+ icon** next to your Filter transformation and choosing Derived under Schema Modifier. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.
 
     > [!div class="mx-imgBorder"]
     > ![Using the Derived Transformation to a Mapping Data Flow in Azure Data Factory](../media/derived-transformation.png)
@@ -103,7 +103,7 @@ The main tasks for this are as follows:
     In this scenario, you are trying to extract the first genre from the genres column, which is formatted as 'genre1|genre2|...|genreN'. Use the **locate** function to get the first 1-based index of the '|' in the genres string. Using the **iif** function, if this index is greater than 1, the primary genre can be calculated via the **left** function, which returns all characters in a string to the left of an index. Otherwise, the PrimaryGenre value is equal to the genres field. You can verify the output via the expression builder's Data preview pane.
 
    
-1. **Rank movies via a Window Transformation**. Say you are interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](https://docs.microsoft.com/azure/data-factory/data-flow-window) to define window-based aggregations by clicking on the **+ icon** next to your Derived Column transformation and clicking Window under Schema modifier. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, and calculate a new column called RatingsRank that is equal to the rank each movie has within its specific genre-year.
+1. **Rank movies via a Window Transformation**. Say you are interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](/azure/data-factory/data-flow-window) to define window-based aggregations by clicking on the **+ icon** next to your Derived Column transformation and clicking Window under Schema modifier. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, and calculate a new column called RatingsRank that is equal to the rank each movie has within its specific genre-year.
 
     > [!div class="mx-imgBorder"]
     > ![Window Over](../media/window-over.png)
@@ -115,7 +115,7 @@ The main tasks for this are as follows:
 
     ![Window Rank](../media/window-rank.png)
 
-1. **Aggregate ratings with an Aggregate Transformation**. Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](https://docs.microsoft.com/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by clicking on the **+ icon** next to your Window transformation and clicking Aggregate under Schema modifier. As you did in the window transformation, lets group movies by PrimaryGenre and year
+1. **Aggregate ratings with an Aggregate Transformation**. Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by clicking on the **+ icon** next to your Window transformation and clicking Aggregate under Schema modifier. As you did in the window transformation, lets group movies by PrimaryGenre and year
 
     > [!div class="mx-imgBorder"]
     > ![Using the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](../media/use-aggregate-transformation.png)
@@ -128,7 +128,7 @@ The main tasks for this are as follows:
     * To see how the aggregate transformation changes your data, use the Data Preview tab
    
 
-1. **Specify Upsert condition via an Alter Row Transformation**. If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](https://docs.microsoft.com/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier. Since you are always inserting and updating, you can specify that all rows will always be upserted.
+1. **Specify Upsert condition via an Alter Row Transformation**. If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier. Since you are always inserting and updating, you can specify that all rows will always be upserted.
 
     > [!div class="mx-imgBorder"]
     > ![Using the Alter Row Transformation to a Mapping Data Flow in Azure Data Factory](../media/alter-row-transformation.png)
@@ -162,7 +162,7 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
 ## Task 5: Running the pipeline
 
-1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
+1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
 
     ![PolyBase configuration in Azure Data Factory](../media/polybase-configuration.png)
 
@@ -170,6 +170,6 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
 1. Once both activities succeeded, you can click on the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
 
-1. If you used the same logic described in this lab, your Data Flow will write 737 rows to your SQL DW. You can go into [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.
+1. If you used the same logic described in this lab, your Data Flow will write 737 rows to your SQL DW. You can go into [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.
 
     ![Querying the results in SQL Server Management Studio](../media/query-results.png)

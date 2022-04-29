@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which security object is required in order to enable transparent data encryption?"
+    choices:
+    - content: "Credential"
+      isCorrect: false
+      explanation: "Incorrect. A credential is not used with TDE."
+    - content: "Master Key"
+      isCorrect: true
+      explanation: "Correct. A master key is required in order to encrypt databases."
+    - content: "User"
+      isCorrect: false
+      explanation: "Incorrect. A user is not required to enable TDE."
+  - content: "Which feature prevents members of the sysadmin role from viewing the values of data in a table?"
+    choices:
+    - content: "Always Encrypted"
+      isCorrect: true
+      explanation: "Correct. Always Encrypted only stores encrypted data in the SQL Server so the data is never visible to a user of the database without the column key, held by the application."
+    - content: "Dynamic Data Masking"
+      isCorrect: false
+      explanation: "Incorrect. Dynamic masking does not work with admin users, as they can see the data."
+    - content: "Transparent Data Encryption"
+      isCorrect: false
+      explanation: "Incorrect. TDE does not encrypt the data in the tables."
+  - content: "Which TLS version offers the most secure option for encryption?"
+    choices:
+    - content: "TLS 1.1 version"
+      isCorrect: false
+      explanation: "Incorrect. TLS 1.1 version is not the most secure option for encryption."
+    - content: "TLS 1.0 version"
+      isCorrect: false
+      explanation: "Incorrect. TLS 1.0 version is not the most secure option for encryption."
+    - content: "TLS 1.2 version"
+      isCorrect: true
+      explanation: "Correct. TLS 1.2 version is the most secure TLS version."
+  - content: "Which feature provides a private IP address for an Azure SQL Database?"
+    choices:
+    - content: "Network Endpoints"
+      isCorrect: false
+      explanation: "Incorrect. Network endpoints allow connectivity from a vNet, but do not provide a private IP address."
+    - content: "Private Link"
+      isCorrect: true
+      explanation: "Correct. Private link provides a private IP address in an Azure vNet for an Azure SQL Database."
+    - content: "Database Firewall"
+      isCorrect: false
+      explanation: "Incorrect. Database firewalls allow for public IP addresses to access your Azure SQL Database."
+  - content: "Which technique can be used to create database firewall rules in Azure SQL Database?"
+    choices:
+    - content: "Running a PowerShell script"
+      isCorrect: false
+      explanation: "Incorrect. PowerShell only supports creating server level firewall rules."
+    - content: "Running an Azure CLI script"
+      isCorrect: false
+      explanation: "Incorrect. CLI only supports creating server level firewall rules."
+    - content: "Executing a T-SQL statement"
+      isCorrect: true
+      explanation: "Correct. This is the only way to create a database firewall rule."

@@ -6,9 +6,11 @@ metadata:
   description: Knowledge check
   ms.date: 09/21/2020
   author: deanobalino
-  ms.author: debryen
+  ms.author: deanbryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: debryen-11292021
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -16,19 +18,19 @@ quiz:
   title: ""
   questions:
 
-  - content: 'What does Azure Sentinel provide?'
+  - content: 'What does Microsoft Sentinel provide?'
     choices:
     - content: 'A solution for checking your security posture in the cloud'
       isCorrect: false
-      explanation: 'Being aware of your security posture in the cloud is important. But Azure Security Center, not Azure Sentinel, is a product that helps you to understand your security posture.'
+      explanation: 'Being aware of your security posture in the cloud is important. But Microsoft Defender for Cloud, not Microsoft Sentinel, is a product that helps you to understand your security posture.'
     - content: 'An end-to-end solution for security operations'
       isCorrect:  true
-      explanation: 'Yes, Azure Sentinel gives you an end-to-end solution for security operations. The solution includes visibility, analytics, hunting, incident management, and automation.'
+      explanation: 'Yes, Microsoft Sentinel gives you an end-to-end solution for security operations. The solution includes visibility, analytics, hunting, incident management, and automation.'
     - content: 'A solution for securely storing keys and secrets in the cloud'
       isCorrect: false
-      explanation: 'Azure Key Vault helps you store keys and secrets. Azure Sentinel is focused on security operations.'
+      explanation: 'Azure Key Vault helps you store keys and secrets. Microsoft Sentinel is focused on security operations.'
 
-  - content: 'Which language is used to query data within Azure Sentinel?'
+  - content: 'Which language is used to query data within Microsoft Sentinel?'
     choices:
     - content: 'SQL'
       isCorrect: false
@@ -38,25 +40,25 @@ quiz:
       explanation: 'GraphQL is a specification for querying API data.'
     - content: 'KQL'
       isCorrect: true
-      explanation: 'Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Azure Sentinel holds its data.'
+      explanation: 'Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Microsoft Sentinel holds its data.'
 
-  - content: 'Which Azure service stores the log data that is ingested into Azure Sentinel?'
+  - content: 'Which Azure service stores the log data that is ingested into Microsoft Sentinel?'
     choices:
     - content: 'Azure Data Factory'
       isCorrect: false
-      explanation: 'Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+      explanation: 'Log Analytics is the underlying service that stores the log data for Microsoft Sentinel.'
     - content: 'Log Analytics'
       isCorrect: true
-      explanation: 'Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+      explanation: 'Log Analytics is the underlying service that stores the log data for Microsoft Sentinel.'
     - content: 'Azure Monitor'
       isCorrect: false
-      explanation: 'Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+      explanation: 'Log Analytics is the underlying service that stores the log data for Microsoft Sentinel.'
 
-  - content: 'Within Azure Sentinel, which Azure product is used to run automated playbooks in response to alerts?'
+  - content: 'Within Microsoft Sentinel, which Azure product is used to run automated playbooks in response to alerts?'
     choices:
     - content: 'Log Analytics'
       isCorrect: false
-      explanation: 'Log Analytics is the underlying system that stores log data within Azure Sentinel.'
+      explanation: 'Log Analytics is the underlying system that stores log data within Microsoft Sentinel.'
     - content: 'Azure Monitor'
       isCorrect: false
       explanation: 'Azure Monitor is used for performance management for infrastructure and applications.'

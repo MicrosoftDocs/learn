@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.student-evangelism.self-regulation-work-strategically
+metadata:
+  title: 'Use self-regulation to work strategically'
+  description: Learn how to use self-regulation to work strategically.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: 'Use self-regulation to work strategically'
+summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
+abstract:  | 
+  In this module, you will:
+  - Explore self-regulation, metacognition, and emotional intelligence.
+  - Explore using self-regulated learning to work strategically.
+  - Discover goal orientation as a part of self-regulated learning.
+  - Learn about supporting self-regulation and self-regulated learning in others.
+prerequisites: |
+  - To get the best learning experience from this module, you should have an open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
+iconUrl: /learn/achievements/tech-resilience/self-regulation.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.self-regulation-work-strategically.introduction
+- learn.student-evangelism.self-regulation-work-strategically.what-is-self-regulation
+- learn.student-evangelism.self-regulation-work-strategically.exercise-approach-challenges
+- learn.student-evangelism.self-regulation-work-strategically.use-self-regulated-learning-work-through-challenges
+- learn.student-evangelism.self-regulation-work-strategically.exercise-self-regulated-learning
+- learn.student-evangelism.self-regulation-work-strategically.goal-orientation-component-self-regulation
+- learn.student-evangelism.self-regulation-work-strategically.exercise-reflect-on-use-self-regulated-learning
+- learn.student-evangelism.self-regulation-work-strategically.knowledge-check
+- learn.student-evangelism.self-regulation-work-strategically.summary
+badge:
+  uid: learn.student-evangelism.self-regulation-work-strategically.badge 

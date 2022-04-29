@@ -2,7 +2,7 @@ Organizations often need to run web apps in isolated environments to test them b
 
 Suppose you're trying to decide whether to use slots as a streamlined way to deploy a web app in your social media system. You want to find out if deployment slots will reduce downtime during deployments if they'll ease rollbacks, and if you can set them up in Azure.
 
-Here you'll learn how deployment slots ease the testing and rollout of new code.
+Here, you'll learn how deployment slots ease the testing and rollout of new code.
 
 ## Use a deployment slot
 
@@ -18,7 +18,7 @@ If you find that, in spite of your careful testing, the new version has a proble
 
 ## Understand slots as separate Azure resources
 
-When you use more than one deployment slot for a web app, those slots are treated as separate instances of that web app. For example, they're listed separately on the **All resources** page in the Azure portal. They each have their own URL. However, each slot shares the resources of the App Service plan, including virtual machine memory and CPU as well as disk space.
+When you use more than one deployment slot for a web app, those slots are treated as separate instances of that web app. For example, they're listed separately on the **All resources** page in the Azure portal. They each have their own URL. However, each slot shares the resources of the App Service plan, including virtual machine memory and CPU, as well as disk space.
 
 ## Create deployment slots and tiers
 
@@ -45,7 +45,7 @@ Before you create a slot, make sure your web app is running in the Standard, Pre
 
 1. Open your web app in the Azure portal.
 
-1. Select the **Deployment Slots** page. 
+1. Select the **Deployment Slots** pane.
 
 1. Select **Add Slot**.
 
@@ -58,7 +58,7 @@ Before you create a slot, make sure your web app is running in the Standard, Pre
 > [!NOTE]
 > Although you can clone settings to a new slot, you can't clone content. New slots always begin with no content. You must deploy content by using git or another deployment strategy. The clone operation copies the configuration to the new slot. After you clone the settings, the configuration of the two slots can be changed independently.
 
-Select **Add** to create the new slot. You now see the new slot in the list on the **Deployment Slots** page. Select the slot to view its management page.
+Select **Add** to create the new slot. You now see the new slot in the list on the **Deployment Slots** page. Select the slot to view its management pane.
 
 ![The list of deployment slots for a web app.](../media/2-list-of-slots.png)
 

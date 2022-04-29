@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.implement-tools-to-track-usage-flow
+metadata:
+  title: Implement tools to track usage and flow
+  description: "Implement tools to track usage and flow"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement tools to track usage and flow
+summary: This module introduces you to continuous feedback practices and tools to track usage and flow, such as Azure Logs Analytics, Kusto Query Language (KQL), and Application Insights.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Implement tools to track feedback
+  *   Plan for continuous monitoring
+  *   Implement Application Insights
+  *   Use Kusto Query Language (KQL)
+prerequisites: |
+  None
+iconUrl: /learn/achievements/1-implement-tools-to-track-usage-and-flow.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-tools-to-track-usage-flow.introduction
+- learn.wwl.implement-tools-to-track-usage-flow.understand-inner-loop
+- learn.wwl.implement-tools-to-track-usage-flow.introduction-to-continuous-monitoring
+- learn.wwl.implement-tools-to-track-usage-flow.explore-azure-monitor-log-analytics
+- learn.wwl.implement-tools-to-track-usage-flow.examine-kusto-query-language-kql
+- learn.wwl.implement-tools-to-track-usage-flow.explore-application-insights
+- learn.wwl.implement-tools-to-track-usage-flow.implement-application-insights
+- learn.wwl.implement-tools-to-track-usage-flow.exercise-add-application-insights-asp-net-core-application
+- learn.wwl.implement-tools-to-track-usage-flow.knowledge-check
+- learn.wwl.implement-tools-to-track-usage-flow.summary
+badge:
+  uid: learn.wwl.implement-tools-to-track-usage-flow.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-api-management.gateways
+title: Explore API gateways
+metadata:
+  title: Explore API gateways
+  description: "Explore API gateways"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-api-gateways.md)]

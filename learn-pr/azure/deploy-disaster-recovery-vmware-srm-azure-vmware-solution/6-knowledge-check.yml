@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.6-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: Knowledge_check
+  title: Knowledge check
+  description: This is a knowledge check unit.
+  ms.date: 12/28/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Your company is considering deploying VMware SRM to provide disaster recovery for their Azure VMware Solution. What is the recommended connection that needs to exist between both the primary and secondary Azure VMware Solution site?"
+    choices:
+    - content: "Peering between Azure VMware Solution sites."
+      isCorrect: false
+      explanation: "Incorrect. Each Azure VMware Solution environment is its own ExpressRoute region (its own virtual MSEE device), so it requires ExpressRoute Global Reach."
+    - content: "ExpressRoute Global Reach."
+      isCorrect: true
+      explanation: "Correct. ExpressRoute Global Reach enables connectivity from the primary to secondary Azure VMware Solution, fully routed privately within the Microsoft global network."
+    - content: "Virtual network to virtual private network"
+      isCorrect: false
+      explanation: "Incorrect. Each Azure VMware Solution environment is its own ExpressRoute region (its own virtual MSEE device), so it requires ExpressRoute Global Reach."
+  - content: "Which of the following scenarios does VMware SRM not support for implementation of BCDR?"
+    choices:
+    - content: "From an on-premises VMware vCenter site to the recovery site in Azure VMware Solution private cloud."
+      isCorrect: false
+      explanation: "Incorrect. Azure supports this scenario."
+    - content: "From a primary Azure VMware Solution site in one Azure region to a secondary Azure VMware Solution site in another region."
+      isCorrect: false
+      explanation: "Incorrect. Azure supports this scenario."
+    - content: "From on-premises VMware vCenter site to Azure VMs."
+      isCorrect: true
+      explanation: "Correct. VMware Site Recovery Manager is a BCDR solution that helps you plan, test, and run the recovery of VMs between a protected vCenter Server site and a recovery vCenter Server site."
+  - content: "An administrator has established connectivity between a primary and secondary Azure VMware Solution sites. What are the next steps in the process for setting up protection for their workload?"
+    choices:
+    - content: "Replicate VMs between sites."
+      isCorrect: false
+      explanation: "Incorrect. First you should install VMware Site Recovery and the vSphere Replication appliance."
+    - content: "Install VMware Site Recovery and vSphere Replication appliance."
+      isCorrect: true
+      explanation: "Correct. First, you should install VMware Site Recovery and vSphere Replication appliance."
+    - content: "Deploy a new ExpressRoute gateway."
+      isCorrect: false
+      explanation: "Incorrect. First, you should install VMware Site Recovery and vSphere Replication appliance."
+content: |
+  [!include[](includes/6-knowledge-check.md)]

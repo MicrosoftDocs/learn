@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-non-relational-data-model.whats-difference-between-nosql-relational-databases
+title: What's the difference between NoSQL and relational databases?
+metadata:
+  title: What's the difference between NoSQL and relational databases?
+  description: "What's the difference between NoSQL and relational databases?"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-whats-difference-between-nosql-relational-databases.md)]

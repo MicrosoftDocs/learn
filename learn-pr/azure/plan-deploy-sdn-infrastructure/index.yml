@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.plan-deploy-sdn-infrastructure
+metadata:
+  moduleType: standard
+  title: Plan for and deploy SDN infrastructure on Azure Stack HCI
+  description: This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan for and deploy SDN infrastructure on Azure Stack HCI
+summary: "This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe SDN on Azure Stack HCI.
+  - Plan for deploying SDN infrastructure on Azure Stack HCI.
+  - Deploy SDN infrastructure on Azure Stack HCI.
+prerequisites: |
+  - Good understanding of networking technologies and their implementation on the Windows operating system platform
+  - General familiarity of SDN concepts
+  - Experience in implementing Azure Stack HCI 
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - security-engineer
+  - solution-architect
+products:
+  - azure
+  - azure-stack-hci
+units:
+- learn.azure.plan-deploy-sdn-infrastructure.1-introduction
+- learn.azure.plan-deploy-sdn-infrastructure.2-describe-sdn-on-azure-stack-hci
+- learn.azure.plan-deploy-sdn-infrastructure.3-describe-network-controller
+- learn.azure.plan-deploy-sdn-infrastructure.4-plan-sdn-infrastructure-on-azure-stack-hci
+- learn.azure.plan-deploy-sdn-infrastructure.5-deploy-sdn-infrastructure-on-azure-stack-hci
+- learn.azure.plan-deploy-sdn-infrastructure.6-knowledge-check
+- learn.azure.plan-deploy-sdn-infrastructure.7-summary
+badge:
+  uid: learn.azure.plan-deploy-sdn-infrastructure.badge

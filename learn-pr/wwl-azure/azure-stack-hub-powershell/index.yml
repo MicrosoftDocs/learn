@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.azure-stack-hub-powershell
+metadata:
+  title: Azure Stack Hub PowerShell
+  description: "Azure Stack Hub PowerShell"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Stack Hub PowerShell
+summary: |
+  See how resource providers in Azure Stack Hub can be configure with PowerShell to enhance Azure capabilities.
+  This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  - Understand the resource providers and Azure PowerShell modules used for Azure Stack Hub.
+  - Work with PowerShell in Azure Stack Hub.
+prerequisites: |
+  - Conceptual knowledge of Azure compute solutions.
+  - Working experience with Azure PowerShell.
+iconUrl: /learn/achievements/3-azure-stack-hub-powershell.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack-hub
+units:
+- learn.wwl.azure-stack-hub-powershell.introduction
+- learn.wwl.azure-stack-hub-powershell.get-started-powershell
+- learn.wwl.azure-stack-hub-powershell.working-powershell
+- learn.wwl.azure-stack-hub-powershell.connect-to-azure-stack-hub-powershell-user
+- learn.wwl.azure-stack-hub-powershell.knowledge-check
+- learn.wwl.azure-stack-hub-powershell.summary
+badge:
+  uid: learn.wwl.azure-stack-hub-powershell.badge
