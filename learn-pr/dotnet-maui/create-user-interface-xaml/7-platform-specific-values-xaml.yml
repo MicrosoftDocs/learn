@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.dotnet-maui.create-user-interface-xaml.platform-specific-values-xaml
+title: Platform-specific values in XAML 
+metadata:
+  unitType: unit 
+  title: "Platform-specific values in XAML"
+  description: "Describe how to fine-tune the UI for different platforms"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-platform-specific-values-xaml.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which mark-up extension can you use in your XAML code to detect the platform on which the app is running?"
+    choices:
+    - content: "`RuntimePlatform`"
+      isCorrect: false
+      explanation: "No. `RuntimePlatform` is a property of the Device class, intended for use in C# code. Use the `OnPlatform` mark-up extension in your XAML code."
+    - content: "`Device`"
+      isCorrect: false
+      explanation: "No. The `Device` is intended for use in C# code. Use the `OnPlatform` mark-up extension in your XAML code."
+    - content: "`OnPlatform`"
+      isCorrect: true
+      explanation: "This is the correct answer."
+  - content: "What is the purpose of the `TypeArguments` attribute for the `OnPlatform` extension?"
+    choices:
+    - content: "It specifies the type parameter for the extension, and ensures that the correct type of extension is created."
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "It specifies the type of the platform on which the app is running"
+      isCorrect: false
+      explanation: "No. It specifies the type parameter for the extension."
+    - content: "It enables you to specify the property to be set with a platform-specific value."
+      isCorrect: false
+      explanation: "No. It specifies the type parameter for the extension."
+

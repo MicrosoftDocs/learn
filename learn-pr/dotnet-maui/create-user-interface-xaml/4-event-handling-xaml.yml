@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.dotnet-maui.create-user-interface-xaml.event-handling-xaml
+title: Event handling in XAML 
+metadata:
+  unitType: unit 
+  title: "Event handling in XAML"
+  description: "Describe how to wire up and create event handlers for a XAML UI"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5 
+content: |
+  [!include[](includes/4-event-handling-xaml.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What are the parameters passed to an event-handling method?"
+    choices:
+    - content: "The name of the event and the name of the control that raised the event."
+      isCorrect: false
+      explanation: "No. The parameters are a reference to the control that raised the event, and an `EventArgs` object that contains any additional information required to process the event."
+    - content: "A reference to the XAML page and the control on the page that raised the event"
+      isCorrect: false
+      explanation: "No. The parameters are a reference to the control that raised the event, and an `EventArgs` object that contains any additional information required to process the event."
+    - content: "A reference to the control that raised the event, and an `EventArgs` object that contains any additional information required to process the event."
+      isCorrect: true
+      explanation: "This is the correct answer."
+  - content: "Which operator can you use to wire up an event-handler to an event in C#?"
+    choices:
+    - content: "Use the `+=` operator."
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "Use the `subscribe` operator"
+      isCorrect: false
+      explanation: "No. The subscribe operator is not a valid operator in C#."
+    - content: "You can't wire up event handling using C#. You must use XAML."
+      isCorrect: false
+      explanation: "No. Both XAML and C# provide a means to wire up event handling."
