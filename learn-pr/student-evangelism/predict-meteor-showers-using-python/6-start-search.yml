@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Write a predictor function - Part 1'
   description: Learn how to write a function to predict meteor showers by using data stored in pandas DataFrames.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Choose the machine learning algorithm to predict rocket launch success
   description: Learn about machine learning algorithms, and choose the one we'll use for this project.
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

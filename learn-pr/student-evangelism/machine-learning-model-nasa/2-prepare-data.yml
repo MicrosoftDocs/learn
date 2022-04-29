@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Determine columns to include in a machine learning model
   description: Decide which aspects of the weather data we're going to use to train the model.
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

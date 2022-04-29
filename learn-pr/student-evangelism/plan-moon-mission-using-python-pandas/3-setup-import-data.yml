@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Get the rock sample data into Visual Studio Code
   description: Get the rock sample data into pandas DataFrames for exploration in Visual Studio Code.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
