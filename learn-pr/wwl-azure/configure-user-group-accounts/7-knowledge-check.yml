@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/25/2021
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -28,11 +28,11 @@ quiz:
     - content: "Reader"
       isCorrect: false
       explanation: "That's incorrect. Reader can view all resources, but cannot make any changes."
-  - content: "What kind of account would be created to allow an external organization easy access?"
+  - content: "What type of user account would be created to allow an external organization easy access?"
     choices:
-    - content: "An external account for each member of the team."
+    - content: "A Contributor user account for each member of the team."
       isCorrect: false
-      explanation: "That's incorrect. There's no such thing as an external account."
+      explanation: "That's incorrect. Contributor is a type of role and not a type of user account."
     - content: "An administrator account for each member of the team."
       isCorrect: false
       explanation: "That's incorrect. Administrator accounts should be restricted to a limited number of users responsible for your organization's identity management."
