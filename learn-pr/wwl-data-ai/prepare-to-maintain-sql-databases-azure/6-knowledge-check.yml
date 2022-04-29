@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Premium SSD"
       isCorrect: false
-      explanation: "Incorrect. Premium SSD does not offer the lowest latency of the three storage types."
+      explanation: "Incorrect. Premium SSD doesn't offer the lowest latency of the three storage types."
     - content: "Ultra SSD"
       isCorrect: true
       explanation: "Correct. Ultra Disk offers the lowest latency of the three storage types."
     - content: "Standard SSD"
       isCorrect: false
-      explanation: "Incorrect. Standard SSD does not offer the lowest latency of the three storage types."
+      explanation: "Incorrect. Standard SSD doesn't offer the lowest latency of the three storage types."
   - content: "What option should you select to change the auto-pause setting of a serverless SQL Database?"
     choices:
     - content: "The auto-pause setting can't be changed, and it's fixed at one hour"
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. You can adjust the auto-pause setting through the Azure portal."
     - content: "Ensure that there are no active transactions in the database, as the auto-pause change will result in a disconnection"
       isCorrect: false
-      explanation: "Incorrect. Changes to auto-pause setting do not cause disruption."
+      explanation: "Incorrect. Changes to auto-pause setting don't cause disruption."
     - content: "The Azure portal allows you to change the auto-pause setting at any time"
       isCorrect: true
       explanation: "Correct. You can change the auto-pause setting at any time through the Azure portal."
