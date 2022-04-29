@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.exercise
-title: 'Exercise: Plan and implement a high availability and disaster recovery environment'
+title: 'Exercise: Configure geo replication for Azure SQL Database'
 metadata:
-  title: 'Exercise: Plan and implement a high availability and disaster recovery environment'
-  description: "Exercise: Plan and implement a high availability and disaster recovery environment"
-  ms.date: 02/11/2022
+  title: 'Exercise: Configure geo replication for Azure SQL Database'
+  description: "Exercise: Configure geo replication for Azure SQL Database"
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
