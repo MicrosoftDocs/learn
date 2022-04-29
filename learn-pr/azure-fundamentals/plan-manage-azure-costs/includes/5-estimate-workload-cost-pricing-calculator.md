@@ -1,4 +1,4 @@
-In this exercise, you use the Pricing calculator to estimate the cost of running a basic web application on Azure.
+In this exercise, you'll use the Pricing calculator to estimate the cost of running a basic web application on Azure.
 
 With an understanding of the more important cost factors associated with running on Azure, Tailwind Traders wants to take a typical workload and estimate how much it would cost each month to run it on Azure.
 
@@ -13,15 +13,13 @@ Let's start by defining which Azure services you need.
 
 Before you run the Pricing calculator, you first need a sense of what Azure services you need.
 
-You meet with the application development team to discuss their migration project.
-
-In their datacenter, the team has an ASP.NET web application that runs on Windows. The web application provides information about product inventory and pricing. They have two virtual machines that are connected through a central load balancer. The web application connects to a SQL Server database that holds inventory and pricing information.
+You've met with the application development team to discuss their migration project. In their datacenter, the team has an ASP.NET web application that runs on Windows. The web application provides information about product inventory and pricing. They have two virtual machines that are connected through a central load balancer. The web application connects to a SQL Server database that holds inventory and pricing information.
 
 The team decides to:
 
-* Use Azure Virtual Machines instances, similar to the virtual machines they use in the datacenter.
-* Use Azure Application Gateway for load balancing.
-* Use Azure SQL Database to hold inventory and pricing information.
+* Use Azure Virtual Machines instances, similar to the virtual machines they use in the datacenter
+* Use Azure Application Gateway for load balancing
+* Use Azure SQL Database to hold inventory and pricing information
 
 Here's a diagram that shows the basic configuration:
 
@@ -29,7 +27,7 @@ Here's a diagram that shows the basic configuration:
 
 In practice, you would define your requirements in greater detail. But here are some basic facts and requirements that came up during the meeting:
 
-* The application is used by Tailwind Traders employees at their retail stores. It's not accessible to customers.
+* Tailwind Traders employees use the application at their retail stores. It's not accessible to customers.
 * This application doesn't require a massive amount of computing power.
 * The virtual machines and the database run all the time (730 hours per month).
 * The network processes about 1 TB of data per month.
@@ -47,10 +45,10 @@ Let's start with a quick tour of the Pricing calculator.
 
     * **Products**
     
-        This is where you choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
+        This is where you can choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
     * **Example Scenarios**
     
-        Here you'll find several _reference architectures_, or common cloud-based solutions that you can use as a starting point.
+        Here you'll find several *reference architectures*, or common cloud-based solutions that you can use as a starting point.
     * **Saved Estimates**
     
         Here you'll find your previously saved estimates.
@@ -60,7 +58,7 @@ Let's start with a quick tour of the Pricing calculator.
     
 ## Estimate your solution
 
-Here you add each Azure service that you need to the calculator. Then you configure each service to fit your needs.
+Here you'll add each Azure service that you need to the calculator. Then you configure each service to fit your needs.
 
 > [!TIP]
 > Make sure you have a clean calculator with nothing listed in the estimate. You can reset the estimate by selecting the trash can icon next to each item.
@@ -75,7 +73,7 @@ Here you add each Azure service that you need to the calculator. Then you config
     | Databases | **Azure SQL Database** |
     | Networking | **Application Gateway** |
 
-1. Scroll to the bottom of the page. You see that each service is listed with its default configuration.
+1. Scroll to the bottom of the page. You'll see that each service is listed with its default configuration.
 
     :::image type="content" source="../media/5-pricing-calculator-estimate.png" alt-text="A screenshot of the Pricing calculator showing the configuration options for virtual machines.":::
 
@@ -124,15 +122,15 @@ Here you add each Azure service that you need to the calculator. Then you config
 
 ## Review, share, and save your estimate
 
-At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you want.
+At the bottom of the page, you'll see the total estimated cost of running the solution. You can change the currency type if you want.
 
 :::image type="content" source="../media/5-pricing-calculator-estimated-cost.png" alt-text="A screenshot of the Pricing calculator showing a total estimated cost of $1,902.64.":::
 
 At this point, you have a few options:
 
-* Select **Export** to save your estimate as an Excel document.
-* Select **Save** or **Save as** to save your estimate to the **Saved Estimates** tab for later.
-* Select **Share** to generate a URL so you can share the estimate with your team.
+* Select **Export** to save your estimate as an Excel document
+* Select **Save** or **Save as** to save your estimate to the **Saved Estimates** tab for later
+* Select **Share** to generate a URL so you can share the estimate with your team
 
 You now have a cost estimate that you can share with your team. You can make adjustments as you discover any changes to your requirements.
 
