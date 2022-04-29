@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-system-health-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator receives a critical alert for an Azure Event Hubs event that occurred 8 hours prior. A Microsoft support engineer requests the operator send the Event Hubs log. The request was for six hours following the alert. Which command should the operator run?"
+    choices:
+    - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
+      isCorrect: true
+      explanation: "Correct. These are the parameters for collecting logs for Event Hubs and Collect logs from virtual machines with the date filtering for the period between 8 hours ago and 2 hours ago."
+    - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByRole “EventHub”```"
+      isCorrect: false
+      explanation: "Incorrect. The correct command is ```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
+    - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByNode “EventHub”```"
+      isCorrect: false
+      explanation: "Incorrect. The correct command is ```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
+  - content: "An Azure Stack Hub operator is working with a Microsoft Support Engineer to troubleshoot a system. The Support Engineer wants to review automatically uploaded logs. What should the operator make available?"
+    choices:
+    - content: "The Azure Stack Hub Cloud Identification (ID)"
+      isCorrect: true
+      explanation: "Correct. Obtain the Cloud Identification (ID) using the Administrator portal or the privileged endpoint (PEP)."
+    - content: "The Azure Partner Network (MPN) number"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Partner Network (MPN) number is the unique identification for an Azure Partner."
+    - content: "The Azure Active Directory tenant ID"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Active Directory tenant ID is the trust relationship between Azure subscriptions and Azure Active Directory (AAD)."

@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.plan-foster-inner-source
+metadata:
+  title: Plan foster inner source
+  description: "Plan foster inner source"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan foster inner source
+summary: This module explains how to use Git to foster inner sources across the organization, implement Fork and its workflows.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use Git to foster inner source across the organization
+  - Implement fork workflow
+  - Choose between branches and forks
+  - Share code between forks
+prerequisites: ""
+iconUrl: /learn/achievements/5-plan-fostering-inner-source.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.plan-foster-inner-source.introduction
+- learn.wwl.plan-foster-inner-source.explore-foster-inner-source
+- learn.wwl.plan-foster-inner-source.implement-fork-workflow
+- learn.wwl.plan-foster-inner-source.describe-forks
+- learn.wwl.plan-foster-inner-source.knowledge-check
+- learn.wwl.plan-foster-inner-source.summary
+badge:
+  uid: learn.wwl.plan-fostering-inner-source.badge

@@ -8,6 +8,11 @@ metadata:
   ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  products:
+    - azure
+    - azure-lighthouse
+  ms.custom: team=cloud_advocates
+  ms.contributors: socuff-04232021
 title: Introduction
 durationInMinutes: 2
 content: |

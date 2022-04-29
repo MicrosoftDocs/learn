@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.end-to-end-encryption-with-app-gateway.4-exercise-configure-backend-pools-for-encryption
 metadata:
-  title: Exercise - Configure backend pools for encryption
-  description: Exercise - Create an application gateway and configure backend pools for encryption
-  ms.date: 06/28/2019
-  author: jboeshart
-  ms.author: jaboes
+  title: Exercise - Configure back-end pools for encryption
+  description: Exercise - Create an application gateway and configure back-end pools for encryption
+  ms.date: 02/22/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Configure backend pools for encryption
+title: Exercise - Configure back-end pools for encryption
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-configure-backend-pools-for-encryption.md)]

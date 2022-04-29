@@ -5,8 +5,8 @@ metadata:
   title: Use a workflow automation to automate responses
   description: Use a workflow automation to automate responses
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

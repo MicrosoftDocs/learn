@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-blue-green-deployment-feature-toggles.explore-deployment-slots
+title: Explore deployment slots
+metadata:
+  title: Explore deployment slots
+  description: "Explore deployment slots"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-deployment-slots.md)]

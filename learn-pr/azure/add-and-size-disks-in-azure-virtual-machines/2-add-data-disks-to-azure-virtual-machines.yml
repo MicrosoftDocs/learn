@@ -5,8 +5,8 @@ metadata:
   title: Understand storage options for virtual machines (VMs)
   description: Understand storage options for virtual machines (VMs)
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

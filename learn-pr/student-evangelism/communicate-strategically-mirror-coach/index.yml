@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.student-evangelism.communicate-strategically-mirror-coach
+metadata:
+  title: 'Communicate with others strategically through mirroring and coaching'
+  description: Learn how to communicate with others strategically by using the mirror and coach roles.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: 'Communicate with others strategically through mirroring and coaching'
+summary: Learn how to communicate with others strategically through mirroring and coaching.
+abstract:  | 
+  In this module, you will:
+  - Explore the importance of the mirror and coach roles in the workplace. 
+  - Identify how to play the role of mirror or coach to support teamwork in computer science.
+  - Learn to use key listening skills to improve your understanding of work processes in technology.
+prerequisites: |
+  - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
+iconUrl: /learn/achievements/tech-resilience/communicate-strategically.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.communicate-strategically-mirror-coach.introduction
+- learn.student-evangelism.communicate-strategically-mirror-coach.what-is-mirror
+- learn.student-evangelism.communicate-strategically-mirror-coach.what-is-coach
+- learn.student-evangelism.communicate-strategically-mirror-coach.exercise-mirror-coach-support-learning
+- learn.student-evangelism.communicate-strategically-mirror-coach.play-role-mirror-coach
+- learn.student-evangelism.communicate-strategically-mirror-coach.knowledge-check
+- learn.student-evangelism.communicate-strategically-mirror-coach.summary
+badge:
+  uid: learn.student-evangelism.communicate-strategically-mirror-coach.badge

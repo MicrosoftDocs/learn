@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.identify-threats-with-azure-security-center.customize-collection-options
-title: Customize Azure Security Center options
+title: Customize Microsoft Defender for Cloud options
 metadata:
-  title: Customize Azure Security Center options
-  description: Customize Azure Security Center options
-  ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  title: Customize Microsoft Defender for Cloud options
+  description: Customize Microsoft Defender for Cloud options
+  ms.date: 03/23/2022
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

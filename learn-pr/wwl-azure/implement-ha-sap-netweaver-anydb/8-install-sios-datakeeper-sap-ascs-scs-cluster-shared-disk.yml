@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.install-sios-datakeeper-cluster-edition-for-sap-ascs-scs-cluster-shared-disk
+title: Install SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk
+metadata:
+  title: Install SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk
+  description: "Install SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-install-sios-datakeeper-sap-ascs-scs-cluster-shared-disk.md)]

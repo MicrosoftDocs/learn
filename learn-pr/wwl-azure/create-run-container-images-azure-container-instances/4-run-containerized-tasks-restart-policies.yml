@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-container-images-azure-container-instances.run-containerized-tasks-restart-policies
+title: Run containerized tasks with restart policies
+metadata:
+  title: Run containerized tasks with restart policies
+  description: "Run containerized tasks with restart policies"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-run-containerized-tasks-restart-policies.md)]

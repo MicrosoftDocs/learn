@@ -4,9 +4,9 @@ title: Exercise - Verify virtual network peering by using SSH between Azure virt
 metadata:
   title: Exercise - Verify virtual network peering by using SSH between Azure virtual machines
   description: Verify virtual network peering using SSH (Secure Shell) between Azure virtual machines.
-  ms.date: 03/31/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 03/02/2022
+  author: kumudd
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

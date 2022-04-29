@@ -4,8 +4,8 @@ metadata:
   title: Scenarios for HPC and Batch technologies
   description: In this unit, you'll learn about some uses that HPC resources are often put to, and how the technologies you've learned about can address these scenarios.
   ms.date: 10/10/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: lauradolan
+  ms.author: ladolan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Scenarios for HPC and Batch technologies

@@ -3,9 +3,9 @@ uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 metadata:
   title: Design a multidimensional schema to optimize analytical workloads
   description: "Design a multidimensional schema to optimize analytical workloads"
-  ms.date: 04/06/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a multidimensional schema to optimize analytical workloads

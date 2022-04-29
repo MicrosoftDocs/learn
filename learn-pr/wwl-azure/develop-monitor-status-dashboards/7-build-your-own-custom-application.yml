@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.build-your-own-custom-application
+title: Build your own custom application
+metadata:
+  title: Build your own custom application
+  description: "Build your own custom application"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-build-your-own-custom-application.md)]

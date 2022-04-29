@@ -64,7 +64,7 @@ There are two options for completing this exercise:
 
 Both exercises contain the same commands and content, so you can choose the option that you prefer.
 
-### Option 1: T-SQL is SSMS
+### Option 1: T-SQL in SSMS
 
 In this option, you'll walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. You'll see which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
 

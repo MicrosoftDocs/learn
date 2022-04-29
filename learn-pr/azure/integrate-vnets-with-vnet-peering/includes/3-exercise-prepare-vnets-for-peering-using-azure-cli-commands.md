@@ -76,7 +76,7 @@ Let's take a quick look at what you created.
 
 Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual networks. These VMs simulate the services in each virtual network. In the final unit of this module, you'll use these VMs to test connectivity between the virtual networks. 
 
-1. In Cloud Shell, run the following command to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. In the command, replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. In Cloud Shell, run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. Note this password for later use.
 
     ```azurecli
     az vm create \
@@ -94,7 +94,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
     > [!NOTE]
     > The `--no-wait` parameter in this command lets you continue working in Cloud Shell while the VM is building.
 
-1. Run the following command to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. Run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Note this password for later use. The VM may take a minute or two to be created.
 
     ```azurecli
     az vm create \
@@ -109,7 +109,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
         --admin-password <password>
     ```
 
-1. Run the following command to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. Run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Note this password for later use.
 
     ```azurecli
     az vm create \
@@ -126,7 +126,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
 
     The VMs might take several minutes to reach a running state.
 
-1. To confirm that the VMs are running, run the following command. This uses the Linux `watch` command which will refresh every five seconds.
+1. To confirm that the VMs are running, run the following command. This uses the Linux `watch` command, which is configured to refresh every five seconds.
 
     ```bash
     watch -d -n 5 "az vm list \
@@ -136,4 +136,6 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
         --output table"
     ```
 
-    A **ProvisioningState** of **Succeeded** and a **PowerState** of **VM running** indicates a successful deployment. When your VMs are running, you're ready to move on. Press `Ctrl-c` to stop the command and continue on with the exercise.
+    A **ProvisioningState** of **Succeeded** and a **PowerState** of **VM running** indicates a successful deployment for the VM. 
+    
+1.    When your VMs are running, you're ready to move on. Press `Ctrl-c` to stop the command and continue on with the exercise.

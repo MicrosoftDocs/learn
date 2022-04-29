@@ -3,10 +3,10 @@ uid: learn.azure-security.create-security-baselines.create-an-identity-access-ma
 title: Create an Identity & Access Management (IAM) baseline
 metadata:
   title: Create an Identity & Access Management (IAM) baseline
-  description: Create an Identity & Access Management (IAM) baseline
-  ms.date: 09/9/2019
-  author: adrianstevens
-  ms.author: adsteven
+  description: Learn how to create an Identity & Access Management (IAM) baseline to help secure and control your cloud based assets.
+  ms.date: 02/03/2022
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

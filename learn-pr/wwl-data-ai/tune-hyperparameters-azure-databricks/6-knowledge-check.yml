@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-hyperparameters-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "A Python script to train a model is created in Azure Databricks and attached to a cluster with the Databricks Runtime for Machine Learning. To run the code and enable automated MLflow when tuning hyperparameters, which method should be used?"
+    choices:
+    - content: "`ParamGridBuilder()`"
+      isCorrect: false
+      explanation: "That's incorrect. `ParamGridBuilder()` is used to define the search space."
+    - content: "`CrossValidator`"
+      isCorrect: true
+      explanation: "That's correct. `CrossValidator` or `TrainValidationSplit` can be used to tune hyperparameters with automated MLflow."
+    - content: "`RegressionEvaluator()`"
+      isCorrect: false
+      explanation: "That's incorrect. `RegressionEvaluator()` can be used with regression models to evaluate the models that are trained."
+  - content: "Which arguments are needed to run the Hyperopt function `fmin()`?"
+    choices:
+    - content: "The evaluation metric, the model, and the data."
+      isCorrect: false
+      explanation: "That's incorrect. Although you need these things, they are not direct arguments for the `fmin()` function."
+    - content: "The objective function, the search space, and the model."
+      isCorrect: false
+      explanation: "That's incorrect. The model is not an argument for the `fmin()` function."
+    - content: "The objective function, the search space, and the search algorithm."
+      isCorrect: true
+      explanation: "That's correct. The objective function `fn`, the search space `space`, and the search algorithm `algo` are arguments for the `fmin()` function."

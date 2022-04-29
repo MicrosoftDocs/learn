@@ -23,7 +23,7 @@ Let's look closely at what makes up this definition:
 - As you would with a normal resource, you include the `resource` keyword, a symbolic name, and the resource type and API version.
   
   > [!NOTE]
-  > Remember, the symbolic name is used only within this Bicep file. If you create this resource by using another Bicep file, the symbolic names don't have to match.
+  > Remember, the symbolic name is used only within this Bicep file. If you create this resource by using one Bicep file and refer to it by using the `existing` resource in a different Bicep file, the symbolic names don't have to match.
 
 - The `existing` keyword indicates to Bicep that this resource definition is a reference to an already-created resource, and that Bicep shouldn't try to deploy it.
 - The `name` property is the Azure resource name of the storage account that was previously deployed.
@@ -84,10 +84,13 @@ In this example, because the instrumentation key isn't considered sensitive data
 
 :::code language="bicep" source="code/6-existing-listkeys.bicep" highlight="1-3,15":::
 
-Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array.
+Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array. Each resource type has different information available from the `listKeys()` function. The Bicep extension for Visual Studio Code gives you hints to help you to understand the data that each resource's `listKeys()` function returns. The screenshot below shows the `listKeys()` function's output for a storage account:
 
-> [!TIP]
-> Different resource types have different information available from the `listKeys()` function. Some resources don't support `listKeys()` at all, or use other function names instead.
+:::image type="content" source="../media/6-code-hint-listkeys-storage.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several the information returned by the listKeys function for a storage account." border="true":::
 
-> [!NOTE]
+Some resources support other functions, too. Visual Studio Code's IntelliSense lists the functions available for each resource. In the screenshot below, you can see that storage accounts provide functions named `listAccountSas()` and `listServiceSas()` in addition to `listKeys()`:
+
+:::image type="content" source="../media/6-code-hint-functions.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several functions available for the storage account." border="true":::
+
+> [!IMPORTANT]
 > The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.

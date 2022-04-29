@@ -1,6 +1,6 @@
 Environment variables enable you to dynamically configure the application or script the container runs. You can use the Azure CLI, PowerShell, or the Azure portal to set variables when you create the container. Secured environment variables enable you to prevent sensitive information from displaying in the container's output.
 
-Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You will create both an environment variable and a secured environment variable so you can see the difference between them.
+Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You'll create both an environment variable and a secured environment variable so you can see the difference between them.
 
 ## Deploy Azure Cosmos DB
 
@@ -36,7 +36,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
 ## Deploy a container that works with your database
 
-Here you'll create an Azure container instance that can read from and write records to your Azure Cosmos DB instance.
+Here, you'll create an Azure container instance that can read from and write records to your Azure Cosmos DB instance.
 
 The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT` and `COSMOS_DB_MASTERKEY`, hold the values you need to connect to the Azure Cosmos DB instance.
 
@@ -54,7 +54,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
         COSMOS_DB_MASTERKEY=$COSMOS_DB_MASTERKEY
     ```
 
-    **azuredocs/azure-vote-front:cosmosdb** refers to a Docker image that runs a fictitious voting app.
+    **azuredocs/azure-vote-front:cosmosdb** refers to a container image that runs a fictitious voting app.
 
     Note the `--environment-variables` argument. This argument specifies environment variables that are passed to the container when the container starts. The container image is configured to look for these environment variables. Here, you pass the name of the Azure Cosmos DB endpoint and its connection key.
 
@@ -71,9 +71,9 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 1. In a browser, go to your container's IP address.
 
     > [!IMPORTANT]
-    > Sometimes containers take a minute or two to fully start up and be able to receive connections. If there's no response when you navigate to the IP address in your browser, wait a few moments and refresh the page.
+    > Sometimes containers take a minute or two to fully start and be able to receive connections. If there's no response when you go to the IP address in your browser, wait a few moments, and refresh the page.
 
-    Once the app is available, you see this.
+    Once the app is available, you'll see this.
 
     :::image type="content" source="../media/4-azure-vote.png" alt-text="Screenshot that shows the Azure voting application with two choices in a browser. Cats and Dogs." loc-scope="other"::: <!-- no-loc -->
 
@@ -111,7 +111,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
     ]
     ```
 
-    Although these values don't appear to your users through the voting application, it's a good security practice to ensure that sensitive information, such as connection keys, are not stored in plain text.
+    Although these values don't appear to your users through the voting application, it's a good security practice to ensure that sensitive information, such as connection keys, aren't stored in plain text.
 
     Secure environment variables prevent clear text output. To use secure environment variables, you use the `--secure-environment-variables` argument instead of the `--environment-variables` argument.
 
@@ -140,7 +140,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
       --query containers[0].environmentVariables
     ```
 
-    This time, you see that your environment variables do not appear in plain text.
+    This time, you see that your environment variables don't appear in plain text.
 
     ```json
     [
@@ -157,4 +157,4 @@ In this part, you'll learn how to prevent sensitive information, such as connect
     ]
     ```
 
-    In fact, the values of your environment variables do not appear at all. That's OK because these values refer to sensitive information. Here, all you need to know is that the environment variables exist.
+    In fact, the values of your environment variables don't appear at all. That's OK because these values refer to sensitive information. Here, all you need to know is that the environment variables exist.

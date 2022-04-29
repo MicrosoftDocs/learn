@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-query-results-set-operators.use-apply-operator
+title: Use the APPLY operator
+metadata:
+  title: Use the APPLY operator
+  description: "Use the APPLY operator"
+  ms.date: 01/10/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-apply-operator.md)]

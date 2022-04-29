@@ -39,4 +39,4 @@ The following video demonstrates how to implement complete post-installation con
 3. Reconfigure the date and time.
 4. Review the network settings.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Mfs4]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfs4]

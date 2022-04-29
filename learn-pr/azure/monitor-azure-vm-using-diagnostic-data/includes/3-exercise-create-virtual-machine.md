@@ -6,7 +6,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 ## Task 1: Create a storage account and VM
 
-1. On the right, use Azure Cloud Shell to create a storage account to store boot diagnostics.
+1. On the right, run the following command in Azure Cloud Shell to create a storage account to store boot diagnostics.
 
     ```azurecli
     STORAGE=metricsstorage$RANDOM
@@ -18,7 +18,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Create your VM with boot diagnostics enabled.
+1. Run the following command to create your VM with boot diagnostics enabled.
 
     ```azurecli
     az vm create \
@@ -38,35 +38,35 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**. The **Virtual machines** pane appears.
 
-1. Select the **monitored-linux-vm** virtual machine that you created.
+1. Select the **monitored-linux-vm** virtual machine that you created. The **monitored-linux-vm** virtual machine pane appears.
 
-1. In the middle menu pane, scroll down, and under **Monitoring**, select **Metrics**.
+1. In the middle menu pane, scroll down, and under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your **monitored-linux-vm** VM.
 
-1. Select the following values:
+1. Select the following values for each setting:
 
-    ![Screenshot of the metrics page for a VM.](../media/3-view-host-level-metrics.png)
-
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
-   |Metric Namespace  |   Virtual Machine Host     |
-   |Metric    |   Percentage CPU  |
-   |Aggregation   |    Max     |  
+   | Metric Namespace | Virtual Machine Host     |
+   | Metric  | Percentage CPU  |
+   | Aggregation |  Max     |
+
+    ![Screenshot of the metrics page for a VM.](../media/3-view-host-level-metrics.png) 
 
 1. Select **Add metric**.
 
-1. Select the following values:
+1. Select the following values for each setting:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
-   |Metric Namespace    |   Virtual Machine Host     |
-   |Metric     |   Inbound Flows  |
-   |Aggregation    |    Avg     |  
+   | Metric Namespace  |  Virtual Machine Host     |
+   | Metric     | Inbound Flows  |
+   | Aggregation  |    Avg     |  
 
-1. In the upper right, select the **Local Time: Last 24 hours (Automatic - 5 minutes)** field, and under **Time Range**, change to **Last 30 minutes**, and select **Apply**.
+1. In the upper right, select the **Local Time: Last 24 hours (Automatic - 5 minutes)** setting, and under **Time Range**, change to **Last 30 minutes**, and select **Apply**.
 
-1. You should now have a graph that looks something like the following:
+    You should now have a graph that looks something like the following:
 
     :::image type="content" source="../media/3-metric-graph.png" alt-text=" Screenshot that shows a graph of CPU usage and inbound traffic.":::
 
@@ -74,13 +74,13 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 ## Task 3: View boot diagnostics
 
-1. On the left menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
+1. In the middle menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
 
 1. In the upper menu bar, select **Settings**. The **Boot diagnostics** pane appears.
 
-1. Under **Status**, select **Enable with managed storage account (recommended)**, and then select **Save**.
+1. Select **Settings**, select **Enable with managed storage account (recommended)**, and in the top menu bar, select **Save**.
 
-1. After boot diagnostics successfully deploys, scroll to your left, and on the **Boot diagnostics** pane for your virtual machine, review the screenshot to verify that your virtual machine started correctly.
+1. After boot diagnostics successfully deploys, scroll to your left, and on the **Boot diagnostics** pane for your virtual machine, review the screenshot to verify that your virtual machine started correctly. You may need to select **Refresh** in the top menu bar for verification.
 
     :::image type="content" source="../media/3-boot-diagnostics.png" alt-text=" Screenshot that shows the boot diagnostic image captured.":::
 

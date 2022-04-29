@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.update-guest-tenant-directory
+title: Update guest tenant directory
+metadata:
+  title: Update guest tenant directory
+  description: "Update guest tenant directory"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-update-guest-tenant-directory.md)]

@@ -5,44 +5,44 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 04/10/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your Knowledge
+  title: Check your knowledge
   questions:
   - content: "In the television advert company, which technology would you use for the advert review process?"
     choices:
     - content: "Microsoft Power Automate"
       isCorrect: true
-      explanation: "Implement the workflow using Microsoft Power Automate because this allows the creative team, who are not developers, to manage the flow."
+      explanation: "Implement the workflow using Microsoft Power Automate, as this allows the creative team members, who aren't developers, to manage the flow."
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "Azure Logic Apps don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Power Automate."
+      explanation: "Azure Logic Apps doesn't permit the creative team, who aren't developers, to manage the process. Instead use Microsoft Power Automate."
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Azure Functions don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Power Automate."
+      explanation: "Azure Functions doesn't permit the creative team members, who aren't developers, to manage the process. Instead use Microsoft Power Automate."
     - content: "Azure App Service WebJobs" 
       isCorrect: false
-      explanation: "Azure WebJobs don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Power Automate."
+      explanation: "Azure WebJobs doesn't permit the creative team members, who aren't developers, to manage the process. Instead, use Microsoft Power Automate."
   - content: "In the television advert company, which technology would you use for the feedback collection process?"
     choices: 
     - content: "Microsoft Power Automate"
       isCorrect: false
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
     - content: "Azure App Service WebJobs" 
       isCorrect: true
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
   - content: "In the merged camera company, which technology would you use for the lens quality control procedure?"
     choices: 
     - content: "Microsoft Power Automate"
@@ -70,4 +70,4 @@ quiz:
       explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
     - content: "Azure App Service WebJobs" 
       isCorrect: false
-      explanation: "Its not necessary to write a WebJob as part of the existing Azure App Service application, because you want to manage the procedure code separately. Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+      explanation: "It's not necessary to write a WebJob as part of the existing Azure App Service application, because you want to manage the procedure code separately. Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."

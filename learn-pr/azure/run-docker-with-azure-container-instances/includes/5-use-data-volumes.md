@@ -4,7 +4,7 @@ Here, you'll mount an Azure file share to an Azure container instance so you can
 
 ## Create an Azure file share
 
-Here you'll create a storage account and a file share that you'll later make accessible to an Azure container instance.
+Here, you'll create a storage account and a file share that you'll later make accessible to an Azure container instance.
 
 1. Your storage account requires a unique name. For learning purposes, run the following command to store a unique name in a Bash variable.
 
@@ -43,11 +43,11 @@ Here you'll create a storage account and a file share that you'll later make acc
 
 To mount an Azure file share as a volume in Azure Container Instances, you need these three values:
 
-* The storage account name
-* The share name
-* The storage account access key
+* Storage account name
+* Share name
+* Storage account access key
 
-You already have the first two values. The storage account name is stored in the `STORAGE_ACCOUNT_NAME` Bash variable. You specified **aci-share-demo** as the share name in the previous step. Here you'll get the remaining value &mdash; the storage account access key.
+You already have the first two values. The storage account name is stored in the `STORAGE_ACCOUNT_NAME` Bash variable. You specified **aci-share-demo** as the share name in the previous step. Here, you'll get the remaining value&mdash;the storage account access key.
 
 1. Run the following command to get the storage account key.
 
@@ -77,7 +77,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name aci-demo-files \
-      --image microsoft/aci-hellofiles \
+      --image mcr.microsoft.com/azuredocs/aci-hellofiles \
       --location eastus \
       --ports 80 \
       --ip-address Public \
@@ -101,7 +101,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
 
     :::image type="content" source="../media/5-files-ui.png" alt-text="Screenshot of the Azure Container Instances file share demo running in a browser." loc-scope="other"::: <!-- no-loc -->
 
-1. Enter some text into the form and click **Submit**. This action creates a file that contains the text you entered in the Azure file share.
+1. Enter some text into the form, and select **Submit**. This action creates a file that contains the text you entered in the Azure file share.
 
 1. Run this `az storage file list` command to display the files that are contained in your file share.
 

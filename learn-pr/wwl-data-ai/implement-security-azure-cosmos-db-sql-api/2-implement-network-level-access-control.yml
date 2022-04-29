@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.implement-network-level-access-control
+title: Implement network-level access control
+metadata:
+  title: Implement network-level access control
+  description: "Implement network-level access control"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-implement-network-level-access-control.md)]

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks-delta-lake-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What is a lambda architecture and what does it try to solve?"
+    choices:
+    - content: "An architecture that defines a data processing pipeline whereby microservices act as compute resources for efficient large-scale data processing"
+      isCorrect: false
+      explanation: "Incorrect. A lambda architecture does not define the type of compute used for data processing."
+    - content: "An architecture that splits incoming data into two paths - a batch path and a streaming path. This architecture helps address the need to provide real-time processing in addition to slower batch computations."
+      isCorrect: true
+      explanation: "Correct. The lambda architecture is a big data processing architecture that combines both batch- and real-time processing methods."
+    - content: "An architecture that employs the latest Scala runtimes in one or more Databricks clusters to provide the most efficient data processing platform available today"
+      isCorrect: false
+      explanation: "Incorrect. The lambda architecture does not define the type of compute nor specific versions of runtime libraries for data processing."
+  - content: "What command should be issued to view the list of active streams?"
+    choices:
+    - content: "Invoke **spark.streams.active**"
+      isCorrect: true
+      explanation: "That's the correct syntax to view the list of active streams."
+    - content: "Invoke **spark.streams.show**"
+      isCorrect: false
+      explanation: "The syntax isn't correct for this operation."
+    - content: "Invoke **spark.view.active**"
+      isCorrect: false
+      explanation: "The syntax isn't correct for this operation."
+  - content: "What is required to specify the location of a checkpoint directory when defining a Delta Lake streaming query?"
+    choices:
+    - content: ".writeStream.format(\"delta\").checkpoint(\"location\", checkpointPath) ..."
+      isCorrect: false
+      explanation: "The syntax isn't correct for this operation."
+    - content: ".writeStream.format(\"delta\").option(\"checkpointLocation\", checkpointPath) ..."
+      isCorrect: true
+      explanation: "That's the correct syntax to specify the checkpoint directory on a Delta Lake streaming query."
+    - content: ".writeStream.format(\"parquet\").option(\"checkpointLocation\", checkpointPath) ..."
+      isCorrect: false
+      explanation: "Incorrect. You must specify delta as the format for a Delta Lake streaming query."

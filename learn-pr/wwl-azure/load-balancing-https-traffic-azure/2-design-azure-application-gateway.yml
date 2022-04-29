@@ -4,12 +4,13 @@ title: Design Azure Application Gateway
 metadata:
   title: Design Azure Application Gateway
   description: "Design Azure Application Gateway"
-  ms.date: 07/15/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-design-azure-application-gateway.md)]

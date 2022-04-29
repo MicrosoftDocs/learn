@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.host-security.endpoint-protection
+title: Enable endpoint protection
+metadata:
+  title: Enable endpoint protection
+  description: "Enable endpoint protection"
+  ms.date: 04/12/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-endpoint-protection.md)]

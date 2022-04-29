@@ -7,7 +7,7 @@ In this unit, you'll learn:
 
 ## Identify your resource types
 
-First you need to identify the resource type of the resources you want to move. In the Azure portal, you can see the resource type for each resource on the **All resources** page. The same **Type** column is also included in the list of resources in a resource group.
+First, you need to identify the resource type of the resources you want to move. In the Azure portal, you can see the resource type for each resource on the **All resources** pane. The same **Type** column is also included in the list of resources in a resource group.
 
 ![Screenshot that shows the resource type column on the All resources page.](../media/4-view-resource-types.png)
 

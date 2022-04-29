@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.security-monitoring-and-governance
+metadata:
+  title: Security Monitoring and Governance
+  description: "Security Monitoring and Governance"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Security Monitoring and Governance
+summary: This module describes security monitoring and governance with Microsoft Defender for Cloud and its usage scenarios, Azure Policies, Microsoft Defender for Identity, and security practices related to the tools.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Configure Microsoft Defender for Cloud
+  - Understand Azure policies
+  - Describe initiatives, resource locks and Azure Blueprints
+  - Work with Microsoft Defender for Identity
+prerequisites: ""
+iconUrl: /learn/achievements/azure-security-center-introduction.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.security-monitoring-and-governance.introduction
+- learn.wwl.security-monitoring-and-governance.implement-pipeline-security
+- learn.wwl.security-monitoring-and-governance.explore-microsoft-defender-cloud
+- learn.wwl.security-monitoring-and-governance.examine-microsoft-defender-cloud-usage-scenarios
+- learn.wwl.security-monitoring-and-governance.explore-azure-policy
+- learn.wwl.security-monitoring-and-governance.understand-policies
+- learn.wwl.security-monitoring-and-governance.explore-initiatives
+- learn.wwl.security-monitoring-and-governance.explore-resource-locks
+- learn.wwl.security-monitoring-and-governance.explore-azure-blueprints
+- learn.wwl.security-monitoring-and-governance.understand-microsoft-defender-identity
+- learn.wwl.security-monitoring-and-governance.knowledge-check
+- learn.wwl.security-monitoring-and-governance.summary
+badge:
+  uid: learn.wwl.security-monitoring-and-governance.badge

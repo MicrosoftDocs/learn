@@ -5,9 +5,10 @@ metadata:
   description: "This module introduces 5G business models for Azure cloud technologies."
   ms.date: 07/13/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot
+  ms.custom: team=nextgen
 title: "5G business models for Azure cloud technologies in enterprise"
 summary: "Characterize the types of business services that could be built using 5G technologies and Azure private multi-access edge compute (MEC). Describe the types of data that can be captured and potential new services created by combining data with 5G technologies and analytics."
 abstract: | 

@@ -4,12 +4,13 @@ title: Exercise - Check for skewed data and space usage
 metadata:
   title: Exercise - Check for skewed data and space usage
   description: "Exercise - Check for skewed data and space usage"
-  ms.date: 06/03/2021
+  ms.date: 03/18/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-check-for-skewed-data-space-usage.md)]

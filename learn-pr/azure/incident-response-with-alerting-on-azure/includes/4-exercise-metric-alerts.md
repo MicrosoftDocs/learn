@@ -40,27 +40,27 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Overview** pane for Monitor appears.
+1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The Monitor **Overview** pane appears.
 
-1. In the left menu pane, select **Alerts**.
+1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane appears.
 
-1. In the top menu bar, select **New alert rule**. The **Create alert rule** pane appears.
+1. On the command bar, select **Create +** and select **Alert rule**. The **Create an alert rule** pane appears.
 
-    ![Screenshot that shows the "Create alert rule" pane.](../media/4-create-monitor-rule.png)
+    :::image type="content" source="../media/4-create-monitor-rule.png" alt-text="Screenshot that shows the 'Create alert rule' pane.":::
 
 1. Under **Scope**, select the **Select resource** link. The **Select a resource** pane appears.
 
-1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
+1. The **Filter by subscription** should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
 1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
 
-    ![Screenshot showing the "Select a resource" pane.](../media/4-select-resource.png)
+    :::image type="content" source="../media/4-select-resource.png" alt-text="Screenshot showing the 'Select a resource' pane.":::
 
-1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** pane, under the **Condition** section, select the **Add condition** link. The **Select a signal** pane appears.
+1. Next, you'll configure the conditional logic for this resource. From the **Create an alert rule** pane, select the **Condition** tab and select the **+ Add condition** link. The **Select a signal** pane appears.
 
 1. For **Signal type**, from the dropdown list, select **Metrics**. For **Monitor service**, select **All**.
 
-1. The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
+1. The list of available signals will change depending on the selected signal type. From the list of available signal types, search for and select **Percentage CPU**.
 
     ![Screenshot that shows the "Configure signal logic" pane.](../media/4-configure-signal-logic.png)
 
@@ -83,21 +83,23 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Screenshot that shows the settings for metric condition logic.](../media/4-metric-alert-logic.png)
 
-1. From the **Create alert rule** pane, under the **Alert rule details** section, enter the following values for each setting.
+1. From the **Create an alert rule** pane, select the **Details** tab. Under the **Alert rule details** section, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
+    | Severity | Sev 2 - Warning |
     | Alert rule name | Cpu90PercentAlert |
     | Description | Virtual machine is running at or greater than 90% CPU utilization |
-    | Severity | Sev 2 - Warning |
     | Enable alert rule upon creation | Yes (checked) |
-    | | |
+    | Automatically resolve alerts | Yes (checked) |
 
-    ![Screenshot that shows a completed section for alert details.](../media/4-metric-alert-details.png)
+    :::image type="content" source="../media/4-metric-alert-details.png" alt-text="Screenshot that shows a completed section for alert details.' pane.":::
 
-1. Select **Create alert rule**.
+1. Select **Review + create** to validate your input.
 
-You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the VM exceeds 90 percent. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
+1. Select **Create**.
+
+You've successfully created a metric alert rule that will trigger an alert when the CPU percentage on the VM exceeds 90 percent. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
 ## Create the metric alert through the CLI
 
@@ -141,7 +143,7 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
    This step presents the alert summary pane, where you can see the count of the number of alerts.
 
-    ![Screenshot that shows the alert summary pane.](../media/4-alert-summary-pane.png)
+   :::image type="content" source="../media/4-alert-summary-pane.png" alt-text="Screenshot that shows the alert summary pane.' pane.":::
 
 1. You configured your metric alerts with severities of 2 and 3. Select one of the alerts to view the severity level.
 

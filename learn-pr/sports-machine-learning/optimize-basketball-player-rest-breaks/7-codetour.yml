@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Use CodeTour to build your web app functionality
 durationInMinutes: 5
 content: |

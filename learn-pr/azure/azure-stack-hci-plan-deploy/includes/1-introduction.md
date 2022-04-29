@@ -25,7 +25,7 @@ After completing this module, you'll be able to:
 
 To get the best learning experience from this module, you should have the basic knowledge of the following concepts:
 
-- Azure.
-- Windows Server Hyper-V.
-- Windows Server software-defined storage.
-- Windows Server software-defined networking.
+- Azure
+- Windows Server Hyper-V
+- Windows Server software-defined storage
+- Windows Server software-defined networking

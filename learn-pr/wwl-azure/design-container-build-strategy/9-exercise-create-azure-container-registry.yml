@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-container-build-strategy.exercise-create-azure-container-registry
+title: Exercise - Create an Azure Container Registry
+metadata:
+  title: Exercise - Create an Azure Container Registry
+  description: "Exercise - Create an Azure Container Registry"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-exercise-create-azure-container-registry.md)]

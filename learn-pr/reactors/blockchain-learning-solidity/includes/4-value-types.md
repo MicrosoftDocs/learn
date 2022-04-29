@@ -2,10 +2,10 @@ In this unit, you'll learn about the main value types in Solidity. Value types a
 
 ## Integers
 
-Integers are used in every Solidity source file. They represent whole numbers and can either be signed or unsigned. Integers range from 8 bits to 256 bits that they can store.
+Integers are used in every Solidity source file. They represent whole numbers and can either be signed or unsigned. Integers range in storage size from 8 bits to 256 bits.
 
-- Signed: Include negative and positive numbers. Can represent as **int**.
-- Unsigned: Includes positive numbers only. Can represent as **uint**.
+- Signed: Includes negative and positive numbers. Can be represented as **int**.
+- Unsigned: Includes positive numbers only. Can be represented as **uint**.
 
 If the number of bits aren't specified, the default value is 256 bits.
 
@@ -39,7 +39,7 @@ bool purchased; //true if an item has been purchased
 
 Booleans are commonly used in comparison statements. For example:
 
- ```solidity
+```solidity
 if(balance > 0 & balance > price) {
     return true;
 }
@@ -47,7 +47,7 @@ if(balance > 0 & balance > price) {
 if(price > balance) {
     return false;
 }
- ```
+```
 
 And booleans can also be used in function parameters and return types.
 
@@ -64,7 +64,7 @@ String literals are also used in most contract files. They're characters or word
 ```solidity
     String shipped = "shipped"; // shipped
     String delivered = 'delivered'; // delivered
-    String newItem = "new" "Item"; // newItem
+    String newItem = "newItem"; // newItem
 ```
 
 Additionally, the following escape characters can be used with string literals:
@@ -91,7 +91,7 @@ function transfer(address buyer, uint price) {
 
 ## Enums
 
-In Solidity, you can use enums to create a user-defined type in Solidity. It's called user-defined because the person creating the contract decides what values to include. Enums can be used to present many selectable choices, one of which is required.
+In Solidity, you can use enums to create a user-defined type. It's called user-defined because the person creating the contract decides what values to include. Enums can be used to present many selectable choices, one of which is required.
 
 An **enum** could be used, for example, to present different statuses for an item. You can think of enums as representing multiple-choice answers where all the values are pre-defined, and you have to select one. Enums can be declared in contract or library definitions.
 
@@ -107,5 +107,4 @@ Status public status;
 constructor() public {
     status = Status.Pending;
 }
-
 ```

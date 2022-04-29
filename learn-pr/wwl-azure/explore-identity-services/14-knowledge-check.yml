@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-identity-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/14-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Azure Active Directory Free provides user and group management, on-premises directory synchronization, basic reports, and single sign-on across Azure, Office 365, and many popular SaaS apps. Which of the following versions also offers Azure Active Directory Identity Protection?"
+    choices:
+    - content: "Azure Active Directory Basic"
+      isCorrect: false
+      explanation: "Incorrect. Azure Active Directory Basic does not offer Azure Active Directory Identity Protection."
+    - content: "Azure Active Directory Premium P1"
+      isCorrect: false
+      explanation: "Incorrect. Azure Active Directory Premium P1 does not offer Azure Active Directory Identity Protection."
+    - content: "Azure Active Directory Premium P2"
+      isCorrect: true
+      explanation: "Correct. In addition to the Free, Basic, and P1 features, Azure Active Directory Premium P2 also offers Azure Active Directory Identity Protection to help provide risk-based Conditional Access to your apps and critical company data; and Privileged Identity Management (PIM) to help discover, restrict, and monitor administrators and their access to resources and to provide just-in-time access when needed."
+  - content: "Do Active Directory Domain Services and Azure Active Directory Domain Services share exactly the same feature set?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. There are some important differences between AD DS and Azure AD DS. For example, Azure AD DS does not allow you to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Azure AD DS does not support LDAP writes."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. There are some important differences between AD DS and Azure AD DS. For example, Azure AD DS does not allow you to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Azure AD DS does not support LDAP writes."
+    - content: "Azure AD DS does not support LDAP writes, but there are no other differences"
+      isCorrect: false
+      explanation: "Incorrect. Azure AD DS does not support LDAP writes, but there are some other important differences between AD DS and Azure AD DS. For example, Azure AD DS does not allow you to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects."
+  - content: "There are several ways to integrate Linux VMs with Active Directory. Which of the following options does not allow users to change their passwords from the Linux client?"
+    choices:
+    - content: "LDAP Authentication / Authorization"
+      isCorrect: true
+      explanation: "Correct. With LDAP Authentication / Authorization users cannot change their password from the Linux client. To remediate this shortcoming, you should implement a password change process that conforms to your password expiration policy."
+    - content: "Kerberos 5 Authentication / LDAP Authorization"
+      isCorrect: false
+      explanation: "Incorrect. With Kerberos 5 Authentication and LDAP Authorization, users can change their passwords from the Linux client."
+    - content: "Winbind Authentication / Authorization"
+      isCorrect: false
+      explanation: "Incorrect. With Winbind Authentication and Authorization, users can change their passwords from the Linux client."

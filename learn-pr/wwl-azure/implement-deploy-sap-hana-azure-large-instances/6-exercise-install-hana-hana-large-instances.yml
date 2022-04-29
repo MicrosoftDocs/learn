@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.install-hana
+title: Install HANA on SAP HANA on Azure (Large Instances)
+metadata:
+  title: Install HANA on SAP HANA on Azure (Large Instances)
+  description: "Install HANA on SAP HANA on Azure (Large Instances)"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-exercise-install-hana-hana-large-instances.md)]

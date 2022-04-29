@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-docker-multi-stage-builds.explore-multiple-stage-builds
+title: Explore multiple stage builds
+metadata:
+  title: Explore multiple stage builds
+  description: "Explore multiple stage builds"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-explore-multiple-stage-builds.md)]

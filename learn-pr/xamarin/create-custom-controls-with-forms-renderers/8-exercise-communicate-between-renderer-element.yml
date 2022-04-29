@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Communicate between an element and a renderer
   description: Exercise - Communicate between an element and a renderer
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Exercise - Communicate between an element and a renderer
 durationInMinutes: 10
 content: |

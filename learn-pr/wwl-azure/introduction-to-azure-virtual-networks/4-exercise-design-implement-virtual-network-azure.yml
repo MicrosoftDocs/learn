@@ -4,12 +4,13 @@ title: 'Exercise: Design and implement a virtual network in Azure'
 metadata:
   title: 'Exercise: Design and implement a virtual network in Azure'
   description: "Exercise: Design and implement a virtual network in Azure"
-  ms.date: 07/28/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-design-implement-virtual-network-azure.md)]

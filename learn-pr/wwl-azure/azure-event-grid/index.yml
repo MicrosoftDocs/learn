@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.azure-event-grid
+metadata:
+  title: Explore Azure Event Grid
+  description: "Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI."
+  ms.date: 03/08/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Event Grid
+summary: Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI.
+abstract: |
+  After completing this module, you'll be able to:
+  * Describe how Event Grid operates and how it connects to services and event handlers.
+  * Explain how Event Grid delivers events and how it handles errors.
+  * Implement authentication and authorization.
+  * Route custom events to web endpoint by using Azure CLI.
+prerequisites: |
+  *   You should be familiar with developer concepts and terminology.
+  *   An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/1-explore-azure-event-grid.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-event-grid
+units:
+- learn.wwl.azure-event-grid.introduction
+- learn.wwl.azure-event-grid.event-grid-overview
+- learn.wwl.azure-event-grid.discover-event-schemas
+- learn.wwl.azure-event-grid.explore-event-delivery-durability
+- learn.wwl.azure-event-grid.control-access-to-events
+- learn.wwl.azure-event-grid.receive-events-by-using-webhooks
+- learn.wwl.azure-event-grid.filter-events
+- learn.wwl.azure-event-grid.exercise-route-custom-events-to-web-endpoint-by-using-azure-cli
+- learn.wwl.azure-event-grid.knowledge-check
+- learn.wwl.azure-event-grid.summary
+badge:
+  uid: learn.wwl.azure-event-grid.badge

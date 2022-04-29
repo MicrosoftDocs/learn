@@ -4,12 +4,13 @@ title: Exercise - change group license assignments
 metadata:
   title: Exercise - change group license assignments
   description: "Exercise - change group license assignments"
-  ms.date: 07/21/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 5
+labModal: false
+durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-change-group-license-assignments.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.configure-resources-arm-templates
 metadata:
   title: Configure resources with Azure Resource Manager templates
   description: "Configure resources with Azure Resource Manager templates"
-  ms.date: 07/27/2021
+  ms.date: 03/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Locate and use Azure QuickStart templates.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/arm-templates-resources.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,7 @@ units:
 - learn.wwl.configure-resources-arm-templates.review-arm-template-advantages
 - learn.wwl.configure-resources-arm-templates.explore-arm-template-schema
 - learn.wwl.configure-resources-arm-templates.explore-arm-template-parameters
+- learn.wwl.configure-resources-arm-templates.consider-bicep-templates
 - learn.wwl.configure-resources-arm-templates.review-quickstart-templates
 - learn.wwl.configure-resources-arm-templates.knowledge-check
 - learn.wwl.configure-resources-arm-templates.summary-resources

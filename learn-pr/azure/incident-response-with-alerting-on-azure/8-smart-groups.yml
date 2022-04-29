@@ -4,8 +4,8 @@ metadata:
   title: Use smart groups to reduce alert noise in Azure Monitor
   description: Investigate how to use smart groups, and see how they can help you manage alerts in Azure Monitor.
   ms.date: 10/10/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use smart groups to reduce alert noise in Azure Monitor

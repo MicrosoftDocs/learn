@@ -29,7 +29,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups.svg" alt-text="Scatter plot output with three variables for Africa, O E C D, and other. The variables are G D P per capita, percent urbanized, and life expectancy.":::
 
 ***
 
@@ -73,7 +73,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries.svg" alt-text="Scatter plot output shows a linear model for Africa, O E C D, and other.":::
 
 ***
 
@@ -130,7 +130,7 @@ Changing the color map for 3D plots like these can sometimes make details cleare
   > [!div class="alert is-tip"]
   > Output
 
-  :::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries-viridis.svg" alt-text="Scatter plot output":::
+  :::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries-viridis.svg" alt-text="Scatter plot output shows a linear model. The colors for the three d plots have been changed in the color map.":::
 
   ***
 
@@ -268,7 +268,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output.":::
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output shows a polynomial model for Africa, O E C D, and other.":::
 
 ***
 
@@ -317,7 +317,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots.svg" alt-text="Scatter plot output.":::
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots.svg" alt-text="Three separate scatter plot outputs show polynomial models for Africa, O E C D, and other.":::
 
 ***
 
@@ -447,7 +447,7 @@ Now that you have a better polynomial degree to use in the models, re-run the co
 
   The output is:
 
-  :::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots-degree.svg" alt-text="Scatter plot output.":::
+  :::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots-degree.svg" alt-text="Three separate scatter plot outputs show better polynomial degree models for Africa, O E C D, and other.":::
 
 </details>
 

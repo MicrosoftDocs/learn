@@ -9,6 +9,8 @@ metadata:
   ms.author: stmuraws
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors: stmuraws-12142021
+  ms.custom: team=cloud_advocates
 title: Extend ARM templates by using deployment scripts
 summary: |
   Add custom steps to your Bicep or JSON Azure Resource Manager templates (ARM templates).
@@ -27,6 +29,8 @@ roles:
 products:
   - azure
   - azure-resource-manager
+languages:
+  - bicep
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic ARM templates, using either Bicep or JSON.
@@ -39,7 +43,7 @@ prerequisites: |
     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.
     - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension, installed locally.
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&preserve-view=true) tools installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true) version installed locally.
 units:
   - learn.azure.extend-resource-manager-template-deployment-scripts.1-introduction

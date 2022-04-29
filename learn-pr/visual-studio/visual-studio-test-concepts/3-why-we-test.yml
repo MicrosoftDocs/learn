@@ -5,9 +5,10 @@ metadata:
   unitType: learning-content
   title: Why we test
   description: Why do we test? Testing can help improve the quality of your code by consistently running checks against the behavior of your app. This practice makes your code more stable and builds confidence in your code health.
-  ms.date: 6/28/2021
+  ms.date: 03/08/2022
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 5
@@ -22,19 +23,19 @@ quiz:
       explanation: "Tests do encourage a more modular architecture. Unit tests encourage separating methods by functionality that can be called independently."
     - content: "The code coverage tests provide is the ultimate indication of repo health."
       isCorrect: true
-      explanation: "Code coverage isn't the ultimate indicator of a healthy repo. There could be many other factors involved such as number of contributors over time or number of open bugs or issues."
+      explanation: "Code coverage isn't the ultimate indicator of a healthy repo. There could be many other factors involved, such as the number of contributors over time or the number of open bugs or issues."
     - content: "Tests help keep track of the different capabilities of a program."
       isCorrect: false
-      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly as new code is added."
-  - content: "The correct code coverage goal in a repo is"
+      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly as you add new code."
+  - content: "The correct code coverage goal in a repo is:"
     choices:
-    - content: "100%"
+    - content: "100 percent"
       isCorrect: false
-      explanation: "100% code coverage can often be an unrealistic and unhelpful goal for modern code bases. Not *all* code needs testing. No one wants to require a team to do any busy work just to reach a complete percentage that doesn't actually improve code quality. Over investing in tests can also be harmful if it comes at the cost of expanding your app and business."
-    - content: "70%"
+      explanation: "100 percent code coverage can often be an unrealistic and unhelpful goal for modern code bases. Not *all* code needs testing. No one wants to require a team to do any busy work just to reach a complete percentage that doesn't actually improve code quality. Over-investing in tests can also be harmful if it comes at the cost of expanding your app and business."
+    - content: "70 percent"
       isCorrect: false
-      explanation: "There's some advice that indicates 70% code coverage could be a happy medium of code coverage. However, there isn't much empirical evidence supporting this specific number today. Most commonly, developers observe a drop in efficacy of code coverage as it increases between 70% and 100%. At a certain point fewer bugs are found and writing tests just to cover corner cases becomes more time consuming. Thinking holistically about testing different behaviors of your code can be a better strategy than aiming for 100% code coverage."
+      explanation: "There's some advice that indicates 70 percent code coverage could be a happy medium of code coverage. However, there isn't much empirical evidence supporting this specific number today. Most commonly, developers observe a drop in efficacy of code coverage as it increases between 70 percent and 100 percent. At a certain point, fewer bugs are found and writing tests just to cover corner cases becomes more time consuming. Thinking holistically about testing different behaviors of your code can be a better strategy."
     - content: "There's no one true answer. Your code coverage goal depends on the repository."
       isCorrect: true
-      explanation: "There's no one true answer that can be applied to all code bases equally. It's best to agree as a team on a metric. New code that causes code coverage to decrease may indicate it's time to test the newly added functionality."
+      explanation: "There's no one true answer that can be applied to all code bases equally. It's best to agree as a team on a metric. New code that causes code coverage to decrease might indicate it's time to test the newly added functionality."
       

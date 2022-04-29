@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-data-visualization.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which tool should you use to import data from multiple data sources and create a report?"
+    choices:
+    - content: "Power BI Desktop"
+      isCorrect: true
+      explanation: "That's correct. Use Power BI Desktop to create reports from a wide range of data sources."
+    - content: "Power BI Phone App"
+      isCorrect: false
+      explanation: "That's incorrect. The Power BI phone app is used to consume reports on a mobile device."
+    - content: "Azure Data Factory"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Data Factory is used to create data pipelines, not reports."
+  - content: "What should you define in your data model to enable drill-up/down analysis?"
+    choices:
+    - content: "A measure"
+      isCorrect: false
+      explanation: "That's incorrect. A measure is a numeric value that is aggregated in the model"
+    - content: "A hierarchy"
+      isCorrect: true
+      explanation: "That's correct. A hierarchy defines multiple levels of attributes."
+    - content: "A relationship"
+      isCorrect: false
+      explanation: "That's incorrect. A relationship joins two tables based on a common key."
+  - content: "Which kind of visualization should you use to analyze pass rates for multiple exams over time?"
+    choices:
+    - content: "A pie chart"
+      isCorrect: false
+      explanation: "That's incorrect. A pie chart is used to compare proportional categorized values."
+    - content: "A scatter plot"
+      isCorrect: false
+      explanation: "That's incorrect. A scatter plot is used to compare correlation between two numeric values."
+    - content: "A line chart"
+      isCorrect: true
+      explanation: "That's correct. A line chart is ideal for visualizing values over time."

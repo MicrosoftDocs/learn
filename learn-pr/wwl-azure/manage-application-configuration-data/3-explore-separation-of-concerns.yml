@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-configuration-data.explore-separation-of-concerns
+title: Explore separation of concerns
+metadata:
+  title: Explore separation of concerns
+  description: "Explore separation of concerns"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-explore-separation-of-concerns.md)]

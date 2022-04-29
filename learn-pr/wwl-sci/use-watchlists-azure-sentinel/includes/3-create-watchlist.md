@@ -1,6 +1,6 @@
 To create a watchlist from the Azure portal do the following:
 
-1. Go to **Azure Sentinel > Configuration > Watchlist** and select **Add new**.
+1. Go to **Microsoft Sentinel > Configuration > Watchlist** and select **Add new**.
 
     [![Watchlist List](../media/watchlist-create.png)](../media/watchlist-create.png#lightbox)
 

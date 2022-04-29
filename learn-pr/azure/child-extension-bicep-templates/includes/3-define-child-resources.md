@@ -1,4 +1,4 @@
-It makes sense to deploy some resources only within the context of their parent. These are called _child resources_. There are many different child resources in Azure. Here are a few examples:
+It makes sense to deploy some resources only within the context of their parent. These are called _child resources_. There are many child resource types in Azure. Here are a few examples:
 
 | Name | Resource type |
 | --- | --- |
@@ -15,7 +15,7 @@ For example, let's consider a storage blob container. A blob container must be d
 Child resource types have longer names with multiple parts to them. A storage blob container has this fully qualified type name: `Microsoft.Storage/storageAccounts/blobServices/containers`. The resource ID for a blob container includes the name of the storage account that contains the container, and the container's name.
 
 > [!NOTE]
-> Some child resources might have the same name as other child resource types from different parents. For example, `containers` is a child type of both storage accounts and Azure Cosmos DB databases. The names are the same, but they represent different resources.
+> Some child resources might have the same name as other child resource types from different parents. For example, `containers` is a child type of both storage accounts and Azure Cosmos DB databases. The names are the same, but they represent different resources, and their fully qualified type names are different.
 
 ## How are child resources defined?
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.understand-indexing-policies
+title: Understand indexing policies
+metadata:
+  title: Understand indexing policies
+  description: "Understand indexing policies"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-understand-indexing-policies.md)]

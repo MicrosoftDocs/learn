@@ -12,11 +12,9 @@ Upon completion of this module, you should be able to:
 
 - Manage protection settings and marking for applied sensitivity labels.
 
-- Apply protections and restrictions to email.
-
-- Apply protections and restrictions to files.
+- Apply protections and restrictions to email and files.
 
 ## Prerequisites
 
-- Fundamentals of Information Governance.
+- Fundamental knowledge of information governance concepts.
 

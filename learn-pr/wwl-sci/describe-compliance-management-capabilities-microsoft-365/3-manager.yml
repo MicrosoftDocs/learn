@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365.manager
+title: Describe Compliance Manager
+metadata:
+  title: Describe Compliance Manager
+  description: "Describe Compliance Manager"
+  ms.date: 04/24/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-manager.md)]

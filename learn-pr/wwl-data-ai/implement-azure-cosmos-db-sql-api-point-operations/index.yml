@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
+metadata:
+  title: Implement Azure Cosmos DB SQL API point operations
+  description: "Write code to create, read, update, and delete items in Azure Cosmos DB SQL API."
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Azure Cosmos DB SQL API point operations
+summary: Write code to create, read, update, and delete items in Azure Cosmos DB SQL API.
+abstract: |
+  After completing this module, you'll be able to:
+  - Perform CRUD operations using the SDK
+  - Configure TTL for a specific item
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-implement-operations.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.introduction
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.understand
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.create-documents
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.read-document
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.update-documents
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.configure-ttl-for-document
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.delete-documents
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.exercise-create-update-documents-sdk
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.knowledge-check
+- learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.summary
+badge:
+  uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.badge

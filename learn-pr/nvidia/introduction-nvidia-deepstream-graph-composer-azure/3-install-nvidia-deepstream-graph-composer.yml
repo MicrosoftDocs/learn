@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.3-install-nvidia-deepstream-graph-composer
+title: Exercise - Install NVIDIA DeepStream Graph Composer
+metadata:
+  title: Exercise - Install NVIDIA DeepStream Graph Composer
+  description: Exercise - Install NVIDIA DeepStream Graph Composer.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 11/09/2021
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-install-nvidia-deepstream-graph-composer.md)]

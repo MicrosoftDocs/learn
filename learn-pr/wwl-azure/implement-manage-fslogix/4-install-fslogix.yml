@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.install-fslogix
+title: Install FSLogix
+metadata:
+  title: Install FSLogix
+  description: "Install FSLogix"
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-install-fslogix.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-compute-solution.design-for-logic-app-solutions
+title: Design for Logic App solutions
+metadata:
+  title: Design for Logic App solutions
+  description: "Design for Logic App solutions"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-design-for-logic-app-solutions.md)]

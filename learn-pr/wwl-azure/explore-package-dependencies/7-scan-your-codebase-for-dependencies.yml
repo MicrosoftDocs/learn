@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-package-dependencies.scan-your-codebase-for-dependencies
+title: Scan your codebase for dependencies
+metadata:
+  title: Scan your codebase for dependencies
+  description: "Scan your codebase for dependencies"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-scan-your-codebase-for-dependencies.md)]

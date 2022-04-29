@@ -6,7 +6,7 @@ The prerequisites to use Storage Replica include:
 
 - Servers hosting replicated volumes must be members of the same or trusted Active Directory Domain Services (AD DS) forest.
 - Each server should have at least 2 GB of RAM and two CPU cores.
-- Each server should be running Windows Server 2019 Datacenter or Windows Server 2016 Datacenter edition.
+- Each server should be running Windows Server 2019 Datacenter, Windows Server 2016 Datacenter, or Windows Server 2022 DataCenter edition.
 
     > [!NOTE] 
     > It's possible to use Windows Server 2019 Standard edition, but this configuration supports replication of only a single volume of up to 2 terabytes (TB) in size.

@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-azure-sentinel-workspaces
 metadata:
-  title: Create and manage Azure Sentinel workspaces
-  description: "Create and manage Azure Sentinel workspaces"
-  ms.date: 07/12/2021
+  title: Create and manage Microsoft Sentinel workspaces
+  description: "Create and manage Microsoft Sentinel workspaces"
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create and manage Azure Sentinel workspaces
-summary: Learn about the architecture of Azure Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements.
+title: Create and manage Microsoft Sentinel workspaces
+summary: Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe Azure Sentinel workspace architecture
-  - Install Azure Sentinel workspace
-  - Manage an Azure Sentinel workspace
+  - Describe Microsoft Sentinel workspace architecture
+  - Install Microsoft Sentinel workspace
+  - Manage an Microsoft Sentinel workspace
 prerequisites: |
   Basic experience with Azure services
 iconUrl: /learn/achievements/create-and-manage-azure-sentinel-workspaces.svg
@@ -29,9 +29,9 @@ units:
 - learn.wwl.create-manage-azure-sentinel-workspaces.introduction
 - learn.wwl.create-manage-azure-sentinel-workspaces.plan-for-workspace
 - learn.wwl.create-manage-azure-sentinel-workspaces.create-workspace
+- learn.wwl.create-manage-azure-sentinel-workspaces.manage-workspaces-across-tenants-using-azure-lighthouse
 - learn.wwl.create-manage-azure-sentinel-workspaces.understand-permissions-roles
 - learn.wwl.create-manage-azure-sentinel-workspaces.settings
-- learn.wwl.create-manage-azure-sentinel-workspaces.manage-workspaces-across-tenants-using-azure-lighthouse
 - learn.wwl.create-manage-azure-sentinel-workspaces.knowledge-check
 - learn.wwl.create-manage-azure-sentinel-workspaces.summary-resources
 badge:

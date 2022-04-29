@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solution-for-backup-disaster-recovery.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/21/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which storage redundancy option is best for the unstructured data?"
+    choices:
+    - content: "LRS"
+      isCorrect: false
+      explanation: "That’s incorrect. LRS only protects if a node within a data center becomes unavailable."
+    - content: "ZRS"
+      isCorrect: false
+      explanation: "That’s incorrect. ZRS provides the same protection as LRS plus protection at the data center level."
+    - content: "RA-GZRS"
+      isCorrect: true
+      explanation: "That’s correct. RA-GZRS provides read access in a secondary region if the primary region becomes unavailable."
+  - content: "What replication option would be best for the Azure virtual machine backups?"
+    choices:
+    - content: "Azure Site Recovery"
+      isCorrect: true
+      explanation: "That’s correct. Azure Site Recovery is designed to provide continuous replication to a secondary region."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "That’s incorrect. Azure Backup is designed to provide scheduled backups to a storage vault."
+    - content: "Active geo-replication"
+      isCorrect: false
+      explanation: "That’s incorrect. Active geo-replication refers to database solutions."
+  - content: "What backup solution is best for the on-premises virtual machines?"
+    choices:
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "That’s incorrect. Azure Site Recovery is designed to provide replication to a secondary region."
+    - content: "Azure Backup"
+      isCorrect: true
+      explanation: "That’s correct. Azure Backup can protect on-premises virtual machines."
+    - content: "Active geo-replication"
+      isCorrect: false
+      explanation: "That’s incorrect. Active geo-replication refers to database solutions."
+  - content: "What solution would be best for the Azure SQL database requirement?"
+    choices:
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "That’s incorrect. Azure Site Recovery is designed to provide replication to a secondary region."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "That’s incorrect. Azure Backup isn’t used for databases unless the databases are running on virtual machines."
+    - content: "Active geo-replication."
+      isCorrect: true
+      explanation: "That’s correct. Active geo-replication can fail over to a secondary database if your primary database fails or needs to be taken offline."
+  - content: "‎To address the company’s concern with accidental data deletion, which of these solutions is best?"
+    choices:
+    - content: "Disk caching"
+      isCorrect: false
+      explanation: "That’s incorrect. Disk caching is about optimizing read and write access to the VHD files."
+    - content: "Soft delete"
+      isCorrect: true
+      explanation: "That’s correct. With soft delete you can specify a retention period. The data is retained during the retention period and can be recovered."
+    - content: "Add a resource lock to the storage account"
+      isCorrect: false
+      explanation: "That’s incorrect. Resource locks prevent resources from being accidentally deleted or changed. The lock won't help with restoring data."

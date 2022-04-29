@@ -1,4 +1,4 @@
-Your database is created. Now you will configure and deploy a web application that academic advisors can use to discuss courses and plans of study with students. The app will use the `System.Data.SqlClient` library to retrieve and display the details of courses and modules that a student must pass to complete a course.
+Your database is created. Now you'll configure and deploy a web application that academic advisors can use to discuss courses and plans of study with students. The app will use the `System.Data.SqlClient` library to retrieve and display the details of courses and modules that a student must pass to complete a course.
 
 To save time, you'll work with a pre-existing web application. You'll add the code that connects this app to your database. The following diagram shows the primary components of this app:
 
@@ -160,9 +160,9 @@ Now let's add to the application the code to retrieve course data from the datab
 
 1. Leave the code editor open, and switch to the Azure portal.
 
-1. On the Azure portal menu, select **SQL databases**, and select your database.
+1. On the Azure portal menu, select **SQL databases**, and then select your database. The **SQL database** for *coursedatabase<em>NNN</em>* appears.
 
-1. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
+1. In the left menu pane, under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
     ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
@@ -227,7 +227,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
     This statement closes the connection to the database and releases any resources that were held.
 
-1. The completed class should contain the following code, which includes the connection string for your database.
+    The completed class should contain the following code, which includes the connection string for your database.
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -286,7 +286,7 @@ Now let's add to the application the code to retrieve course data from the datab
     }
     ```
 
-    Save the file, and close the **Code** editor.
+1. Save the file, and close the **Code** editor.
 
 ## Add code to the web app to display the data
 
@@ -351,7 +351,7 @@ The application can now retrieve the course data. Now, update the app to display
     CoursesAndModules = dac.GetAllCoursesAndModules().ToList();
     ```
 
-1. The completed file should contain the following code. Save the file, and close the code editor.
+    The completed file should contain the following code.
 
     ```C#
     using System;
@@ -380,6 +380,8 @@ The application can now retrieve the course data. Now, update the app to display
         }
     }
     ```
+
+1. Save the file, and close the code editor.
 
 1. Use the code editor to open the file **Index.cshtml**.
 
@@ -436,7 +438,7 @@ The application can now retrieve the course data. Now, update the app to display
 
     This code iterates through the rows in the model and outputs the data in each field.
 
-1. The completed **Index.cshtml** file should contain the following code.
+    The completed **Index.cshtml** file should contain the following code.
 
     ```cshtml
     @page
@@ -481,7 +483,7 @@ The application can now retrieve the course data. Now, update the app to display
     </div>
     ```
 
-    Save the file, and close the code editor.
+1. Save the file, and close the code editor.
 
 ## Deploy and test the updated web app
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-versioning-strategy.examine-release-views
+title: Examine release views
+metadata:
+  title: Examine release views
+  description: "Examine release views"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-examine-release-views.md)]

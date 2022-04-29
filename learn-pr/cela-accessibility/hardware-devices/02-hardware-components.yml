@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.hardware-devices.hardware-components
+title: Hardware component accessibility
+metadata:
+  title: Implement accessible hardware components
+  description: This content is part of the accessibility best practices for gaming hardware module.
+  ms.date: 11/14/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hardware-devices
+durationInMinutes: 12
+content: |
+  [!include[](includes/02-hardware-components.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can developers best ensure that players can connect their assistive technologies to their gaming hardware devices?"
+    choices:
+    - content: "Provide custom adaptors that customers can purchase at extra cost to convert the proprietary connections on their new device to the connection types that their assistive technologies use."
+      isCorrect: false
+      explanation: "Incorrect. While custom adaptors can help bridge compatibility between a gaming device and an assistive technology, developers shouldn't assume that all customers can afford or acquire a custom adaptor. Therefore, this wouldn't be the best option."
+    - content: "Include standard connection options on the device like USB and Bluetooth."
+      isCorrect: true
+      explanation: "Correct. In addition to any proprietary or other connection types, developers can also ensure that a standard connection is provided to support assistive technology device use."
+    - content: "Offer custom assistive technology devices that are compatible with the gaming hardware device."
+      isCorrect: false
+      explanation: "Incorrect. Players shouldn't have to purchase more assistive technologies or devices for each individual gaming device they want to use. Players should be able to use the assistive technology they already have with all other compatible devices."
+  - content: "A hardware team is designing a new gaming headset. After the design is already locked, the team realizes that the twisting motion needed to adjust the volume might be too difficult for players with limited mobility in their arms and hands. What can the team do to support a more accessible experience despite not being able to change the form factor of the headset controls?"
+    choices:
+    - content: "Allow customers with disabilities to return the headset for a full refund after purchase."
+      isCorrect: false
+      explanation: "Incorrect. Although it's important to support customers who encounter inaccessible experiences during new product use by providing product refunds, this option alone doesn't address actual design and implementation efforts that the team can use to provide more accessibility for the device, prior to the point of customer returns."
+    - content: "Revisit the original design and begin the development process over from start to finish."
+      isCorrect: false
+      explanation: "Incorrect. It's not likely that beginning the development process from scratch would be a viable option for this team. For this reason, this option doesn't adequately address this scenario."
+    - content: "Allow players to control the physical hardware components on the device through software-based UI menus."
+      isCorrect: true
+      explanation: "Correct. Ideally, the physical actions needed to control the device will be accessible. If this isn't possible, another way to support accessible experiences would be to allow users to control these actions via software UI."

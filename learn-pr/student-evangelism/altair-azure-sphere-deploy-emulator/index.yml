@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator
+metadata:
+  title: Deploy the Altair emulator to Azure Sphere
+  description: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Deploy the Altair emulator to Azure Sphere
+summary: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
+abstract:  |
+  In this module, you will:
+  - Learn about the architecture of Azure Sphere. 
+  - Learn about the application architecture of the Altair emulator. 
+  - Start the app build and deployment process. 
+  - Understand the virtual disk cache-aside server. 
+prerequisites: |
+  - A computer with an x86-64-based processor running one of the following operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-deploy-emulator.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.introduction
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.app-deployment
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy-apps
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.deployment
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.badge

@@ -3,7 +3,7 @@ uid: learn.wwl.detect-objects-images-custom-vision
 metadata:
   title: Detect objects in images with the Custom Vision service
   description: "Detect objects in images with the Custom Vision service"
-  ms.date: 06/21/2021
+  ms.date: 04/14/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -27,6 +27,7 @@ products:
 - azure-cognitive-services
 units:
 - learn.wwl.detect-objects-images-custom-vision.introduction
+- learn.wwl.detect-objects-images-custom-vision.what-is-object-detection
 - learn.wwl.detect-objects-images-custom-vision.get-started
 - learn.wwl.detect-objects-images-custom-vision.exercise
 - learn.wwl.detect-objects-images-custom-vision.knowledge-check

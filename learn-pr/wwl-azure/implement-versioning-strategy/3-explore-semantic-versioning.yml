@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-versioning-strategy.explore-semantic-versioning
+title: Explore semantic versioning
+metadata:
+  title: Explore semantic versioning
+  description: "Explore semantic versioning"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-semantic-versioning.md)]

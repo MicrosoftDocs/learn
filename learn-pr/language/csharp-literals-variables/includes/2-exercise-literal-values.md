@@ -102,7 +102,7 @@ False
 
 The term *bool* is short for *boolean*, which you may also recognize from studying math. In C#, they're officially referred to as "bool", but often developers use the term "boolean".
 
-The bool literals represent the idea of truthhood and falsehood. We'll use bool values extensively when we start to add decision logic to our applications. We'll evaluate expressions to see whether the expression is true or false.
+The bool literals represent the idea of truth and falsehood. We'll use bool values extensively when we start to add decision logic to our applications. We'll evaluate expressions to see whether the expression is true or false.
 
 ### Why emphasize data types?
 

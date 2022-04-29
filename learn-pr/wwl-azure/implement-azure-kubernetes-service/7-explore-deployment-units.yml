@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-kubernetes-service-aks.explore-deployment-units
+title: Explore deployment units
+metadata:
+  title: Explore deployment units
+  description: "Explore deployment units"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-explore-deployment-units.md)]

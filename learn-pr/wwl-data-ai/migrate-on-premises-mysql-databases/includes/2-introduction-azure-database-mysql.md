@@ -23,7 +23,7 @@ Pricing tiers enable a wide range of performance and capacity from one to 64 vCo
 
 [![Image showing the pricing tiers in the Azure portal](../media/2-pricing-tiers.png)](../media/2-pricing-tiers.png#lightbox)
 
-There are connection limits based on pricing tiers and the number of vCores. See [Limitations in  Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-limits) for more information.
+There are connection limits based on pricing tiers and the number of vCores. See [Limitations in  Azure Database for MySQL](/azure/mysql/concepts-limits) for more information.
 
 ### Versioning and upgrades
 
@@ -47,7 +47,7 @@ Azure Database for MySQL includes a financially-backed service level agreement (
 
 If an Azure Database for MySQL server instance is scaled up or scaled down, a similar process occurs with the data storage being attached to the new instance. If a failover takes place, a scale up or scale down occurs, or there's any interruption in internet traffic between the client and Azure, a transient connectivity error might happen at the client. It's important to have retry logic in applications. In the case of a failover, a gateway will direct traffic to the new node with no configuration required at the client.
 
-For information on handling transient errors, see [Handling of transient connectivity errors for Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-connectivity).
+For information on handling transient errors, see [Handling of transient connectivity errors for Azure Database for MySQL](/azure/mysql/concepts-connectivity).
 
 ## Replicate data in Azure Database for MySQL
 
@@ -73,7 +73,7 @@ There's a number of steps to configure Data-in Replication:
 * Dump and restore the master server.
 * Use Data-in Replication stored procedures to configure the target server.
 
-See [How to configure Azure Database for MySQL Data-in Replication](https://docs.microsoft.com/azure/mysql/howto-data-in-replication) for more information.
+See [How to configure Azure Database for MySQL Data-in Replication](/azure/mysql/howto-data-in-replication) for more information.
 
 ### Read replicas
 
@@ -104,7 +104,7 @@ You then specify the name and region of the replica:
 > [!NOTE]
 > Read replicas aren't available in the basic pricing tier.
 
-For more information on read replicas, see [Read replicas in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-read-replicas).
+For more information on read replicas, see [Read replicas in Azure Database for MySQL](/azure/mysql/concepts-read-replicas).
 
 ## Management and monitoring
 
@@ -120,15 +120,15 @@ The tools available in the Azure portal for managing and monitoring Azure Databa
 
     [![Image showing Azure metrics](../media/2-metric.png)](../media/2-metric.png#lightbox)
 
-    See [Azure Monitor data platform](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform) for more information.
+    See [Azure Monitor data platform](/azure/azure-monitor/platform/data-platform) for more information.
 
 * **Server and audit logs**. You enable server logs to monitor slow queries and provide audit logging for your server. Server logs are available outside SQL Database for MySQL through Azure Diagnostic Logs.
 
     [![Image showing Azure server logs](../media/2-server-logs.png)](../media/2-server-logs.png#lightbox)
 
-    See [Slow query logs in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-server-logs) for more information.
+    See [Slow query logs in Azure Database for MySQL](/azure/mysql/concepts-server-logs) for more information.
   Audit logs are a preview feature to provide audit logging to track database activity. To turn on audit logging, set the **audit_log_enabled** parameter to **ON**.
-    For more information on audit logs, see [Audit Logs in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-audit-logs).
+    For more information on audit logs, see [Audit Logs in Azure Database for MySQL](/azure/mysql/concepts-audit-logs).
 
 * **Query Store**. This is used to track the performance of your server over time and give troubleshooting information. Query Store retains query history and run-time statistics so you can identify resource intensive or long running queries.
     To enable Query Store, set the **query_store_capture_mode** server parameter to **ALL**:
@@ -145,19 +145,19 @@ The tools available in the Azure portal for managing and monitoring Azure Databa
     > [!NOTE]
     > Query Store is a preview feature and is not available in the basic pricing tier.
 
-    For more information on Query Store, see [Monitor Azure Database for MySQL performance with Query Store](https://docs.microsoft.com/azure/mysql/concepts-query-store).
+    For more information on Query Store, see [Monitor Azure Database for MySQL performance with Query Store](/azure/mysql/concepts-query-store).
     
 * **Query Performance Insight**. Query Performance Insight displays data from Query Store as visualizations to enable you to identify queries that affect performance. Query Performance Insight is in the **Intelligent Performance** section of your Azure Database for MySQL, in the Azure portal.
     > [!NOTE]
     > Query Performance Insight is a preview feature and is not available in the basic pricing tier.
 
-    For more information on Query Performance Insight, see [Query Performance Insight in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-query-performance-insight).
+    For more information on Query Performance Insight, see [Query Performance Insight in Azure Database for MySQL](/azure/mysql/concepts-query-performance-insight).
 
 * **Performance Recommendations**. Performance Recommendations uses data from the Query Store to analyze workloads, and combines this with database characteristics to suggest new indexes to improve performance. Performance Recommendations is in the **Intelligent Performance** section of your Azure Database for MySQL in the Azure portal.
     > [!NOTE]
     > Performance Recommendations is a preview feature and is not available in the basic pricing tier.
 
-    For more information on Performance Recommendations, see [Performance Recommendations in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-performance-recommendations).
+    For more information on Performance Recommendations, see [Performance Recommendations in Azure Database for MySQL](/azure/mysql/concepts-performance-recommendations).
 
 ## Client connectivity
 
@@ -167,7 +167,7 @@ Azure Database for MySQL uses the MySQL community edition and is compatible with
 
 [![Image showing connection strings](../media/2-connection-strings.png)](../media/2-connection-strings.png#lightbox)
 
-For more information on MySQL drivers, see [MySQL drivers and management tools compatible with Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-compatibility)
+For more information on MySQL drivers, see [MySQL drivers and management tools compatible with Azure Database for MySQL](/azure/mysql/concepts-compatibility)
 
 ### Configure the firewall
 
@@ -183,7 +183,7 @@ If you've configured read-only replicas, you must add a firewall rule to each on
 
 When you connect to a database over the internet, transient connection errors are inevitable and should be handled by client applications.
 
-For information on transient connectivity errors, see [Handling of transient connectivity errors for Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-connectivity).
+For information on transient connectivity errors, see [Handling of transient connectivity errors for Azure Database for MySQL](/azure/mysql/concepts-connectivity).
 
 ## MySQL features that aren't supported in Azure Database for MySQL
 

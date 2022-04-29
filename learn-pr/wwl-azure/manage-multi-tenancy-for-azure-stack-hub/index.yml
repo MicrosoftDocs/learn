@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub
+metadata:
+  title: Manage multi-tenancy for Azure Stack Hub
+  description: "Manage multi-tenancy for Azure Stack Hub"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage multi-tenancy for Azure Stack Hub
+summary: |
+  Learn how to configure Azure Stack Hub to allow sign-ins from Azure AD directory tenants.
+  This module helps you to prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  * Configure multi-tenancy for Azure Stack Hub.
+  * Configure Azure Stack Hub guest directory.
+  * Direct users to sign in for Azure Stack Hub.
+  * Disable multi-tenancy for Azure Stack Hub.
+  * Update guest tenant directory for Azure Stack Hub.
+prerequisites: |
+  * Working experience creating, assigning, and securing corporate identities.
+  * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+iconUrl: /learn/achievements/1-manage-multi-tenancy-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.introduction
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.configure-multi-tenancy
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.configure-guest-directory
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.direct-users-to-sign
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.disable
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.update-guest-tenant-directory
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.knowledge-check
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.badge

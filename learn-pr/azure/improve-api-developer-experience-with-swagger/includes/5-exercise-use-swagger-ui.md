@@ -1,19 +1,19 @@
 
 In this exercise, you'll enrich the documentation a developer sees about your API by adding comments and annotations to your code. First, let's see what we get from Swagger UI by default.
 
-1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, in your browser, navigate to http://localhost/swagger. You should see output in the browser similar to the following, when  you select the **Get** method.
+1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, navigate to http://localhost:5000/swagger in your browser. You should see output similar to the following when you select the **Get** method.
 
     :::image type="content" source="../media/swagger-ui-initial.png" alt-text="Default Swagger UI for our API." loc-scope="third-party":::
 
-    Swagger UI gives us some useful information about the API. It shows the methods that you can call (in your simple case, one method called **PriceFrame**). You see it is an HTTP Get operation and takes two required parameters, namely, Height and Width. You can also select **Try it out**, enter values for Height and Width, and to see the API call in action, select **Execute**. 
+    Swagger UI gives us some useful information about the API. It shows the methods you can call (in your simple case, one method called **PriceFrame**). You see it is an HTTP Get operation and takes two required parameters, namely Height and Width. To see the API Call in action, you can also **Try it out**, enter values for Height and Width, and select **Execute**. 
 
-    Users of the API don't have enough information to know what the limitations are on the PriceFrame method. Let's help them out with some more detailed information through XML comments.
+    The API users don't have enough information to know the limitations of the PriceFrame method. Let's help them out with some more detailed information through XML comments.
 
 #### Add XML comments to your API
 
 1. Go back to the instance of Visual Studio Code that you used for the last exercise.
 
-1. To activate XML documentation in your project, update **PrintFramerAPI.csproj** project file, and add the `GenerateDocumentationFile` tag to the existing `<PropertyGroup>` and set it to `true`.
+1. To activate XML documentation in your project, update the **PrintFramerAPI.csproj** project file, add the `GenerateDocumentationFile` tag to the existing `<PropertyGroup>`, and set it to `true`.
 
    ```XML
    <PropertyGroup>
@@ -30,7 +30,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     using System.IO;
     ```
 
-1. In **Startup.cs**, to tell Swashbuckle to use XML documentation, update the call to the `AddSwaggerGen()` in `ConfigureServices`.
+1. In **Startup.cs**, to tell Swashbuckle to use XML documentation by updating the call to the `AddSwaggerGen()` in `ConfigureServices`.
 
    ```csharp
     public void ConfigureServices(IServiceCollection services)
@@ -62,7 +62,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     }
    ```
 
-    In the preceding code, reflection is used to determine the name of the XML file to load XML comments.
+    In the preceding code, reflection determines the name of the XML file to load XML comments.
 
 1. In **PriceFrameController.cs**, add the following XML comment block above the *HttpGet* attribute of the `GetPrice` method. Adding triple-slash comments to an action enhances the Swagger UI by adding the description to the section header.
 
@@ -95,7 +95,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
 exercise.
 
 
-1. To see these changes run the ASP.NET application locally. Type the following in the terminal window in Visual Studio Code:
+1. To see your changes, run the ASP.NET application locally by entering the following in the Visual Studio Code terminal window:
 
     ```bash
     dotnet run
@@ -165,9 +165,9 @@ Also update the HTTP verb filter constructor to include the `Name` property. Thi
 
     This code update makes the following changes:
     - The method uses the `BadRequest()` and `Ok()` methods to create a BadRequest (400) and an Ok status respectively, passing in the string result to the response.
-    - The XML comments describe each status code that can be returned from this method.  
+    - The XML comments describe each status code this method can return.  
     - The HttpGet includes a Name property to emit the OpenAPI operationId parameter.
-    - The ProducesResponseTypeAttribute lists the different responses that can be returned by the action. These attributes are combined with XML comments, as previously described, to include human-friendly descriptions with each response in the generated Swagger
+    - The ProducesResponseTypeAttribute lists the different responses that the action can return. These attributes are combined with XML comments, as previously described, to include human-friendly descriptions with each response in the generated Swagger
 
 1. Rebuild and run the web API with the following command:
 

@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: This unit summarizes what you've learned and provides additional resources.
   ms.date: 05/26/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

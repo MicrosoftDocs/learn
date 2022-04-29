@@ -3,11 +3,12 @@ uid: learn.language.rust-introduction
 metadata:
   title: What is Rust?
   description: A quick introduction to Rust language features and how Rust compares with other programming languages.
-  ms.date: 07/26/2021
+  ms.date: 09/01/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: What is Rust
 summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
 abstract: |
@@ -15,6 +16,7 @@ abstract: |
   - Get a brief introduction to Rust.
   - Discover why developers choose Rust over other programming languages.
   - Understand the basic components and tools for using Rust.
+  - Try working with code in the Rust playground.
 prerequisites: | 
   - Knowledge of programming languages, such as Python or C++
 iconUrl: /learn/achievements/rust-get-started.svg 
@@ -31,6 +33,7 @@ units:
 - learn.language.rust-introduction.2-rust-overview
 - learn.language.rust-introduction.3-rust-features
 - learn.language.rust-introduction.4-rust-playground
+- learn.language.rust-introduction.playground-exercise
 - learn.language.rust-introduction.5-summary
 badge:
   uid: learn.language.rust-introduction.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-services-for-azure-stack-hub.create-manage-offers
+title: Create and manage offers
+metadata:
+  title: Create and manage offers
+  description: "Create and manage offers"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-create-manage-offers.md)]

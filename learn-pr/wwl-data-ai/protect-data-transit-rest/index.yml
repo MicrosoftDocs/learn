@@ -3,9 +3,9 @@ uid: learn.wwl.protect-data-transit-at-rest
 metadata:
   title: Protect data in-transit and at rest
   description: "Protect data in-transit and at rest"
-  ms.date: 12/14/2020
+  ms.date: 02/11/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect data in-transit and at rest

@@ -4,11 +4,10 @@ metadata:
   title: Add views to your app
   description: "Learn about the iOS layout system and how to add views in your app."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Add views to your app
 durationInMinutes: 7
 content: |

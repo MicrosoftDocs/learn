@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hardening-windows-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these is a capability of LAPS (Local Administrator Password Solution)?"
+    choices:
+    - content: "Verifies the local administrator password is the same on all managed servers."
+      isCorrect: false
+      explanation: "Incorrect. LAPS ensures that local administrator passwords are unique across all managed computers."
+    - content: "Ensures that local administrator passwords are unique on each managed server."
+      isCorrect: true
+      explanation: "Correct. Local administrator passwords are unique on each computer that LAPS manages"
+    - content: "Prevents local administrator passwords from expiring."
+      isCorrect: false
+      explanation: "Incorrect. LAPS ensures that local administrator passwords are regularly changed."
+  - content: "Which of the following should you do when configuring a PAW (Privileged Access Workstation)?"
+    choices:
+    - content: "Configure Encrypting File System to use an Enterprise Root Certificate Authority."
+      isCorrect: false
+      explanation: "Incorrect. You should enable BitLocker on a PAW but using an Enterprise Root Certificate Authority with Encrypting File System does not increase the PAWs security."
+    - content: "Enable Windows Defender Credential Guard."
+      isCorrect: true
+      explanation: "Correct. Windows Defender Credential Guard protects against stored credentials being harvested by malware."
+    - content: "Ensure that all domain users can sign in to the PAW."
+      isCorrect: false
+      explanation: "Incorrect. Only users who need to perform administrative tasks should be able to sign into the PAW."
+  - content: "Which of the following methods can you use to secure a domain controller?"
+    choices:
+    - content: "Configure the perimeter firewall to allow outbound connections to hosts in Azure."
+      isCorrect: false
+      explanation: "Incorrect. You should block domain controllers from connecting to hosts on the internet, including those in Azure unless there is a specific reason to allow this communication."
+    - content: "Restrict RDP connections so that they can only be made from computers that have public IPv4 addresses."
+      isCorrect: false
+      explanation: "Incorrect. You should limit RDP connections so that they can only be made from known secure hosts."
+    - content: "Deploy domain controllers by using the Server Core installation option."
+      isCorrect: true
+      explanation: "Correct. You should deploy domain controllers using the Server Core installation option."

@@ -1,6 +1,6 @@
 Securely managing certificates is a challenge for every organization. You must ensure that the private key is kept safe, and, as Steve from PetDash found out, certificates have an expiration date and have to be renewed periodically to ensure your website traffic is secure.
 
-## Adding certificates to a Key Vault
+## Add certificates to a Key Vault
 
 Azure Key Vault manages X.509 based certificates that can come from several sources.
 
@@ -50,7 +50,7 @@ $secretContentType = 'application/x-pkcs12'
 Set-AzKeyVaultSecret -VaultName <vault-name> -Name <key-name> -SecretValue $secret -ContentType $secretContentType
 ```
 
-## Retrieving certificates from a Key Vault
+## Retrieve certificates from a Key Vault
 
 Once a certificate is stored in your Azure Key Vault, you can use the Azure portal to explore the certificate properties as well as enable or disable a certificate to make it unavailable to clients.
 
@@ -62,13 +62,12 @@ Once you have a public/private key pair certificate in your Azure Key Vault, you
 
 1. Select **TLS/SSL settings** under **Settings**.
 1. Select the **Private Key Certificate (.pfx)** tab.
-1. Select **+ Import Key Vault Certificate** as shown in the following screenshot.
+1. Select **Import Key Vault Certificate** as shown in the following screenshot.
 
     ![Screenshot of the Azure portal where you can load a Key Vault certificate to an Azure App Service web app.](../media/5-add-cert-to-webapp.png)
 
 1. You can then select the vault, which must be in the same subscription, and the secret containing the certificate.
-    - The certificate must be an X.509 cert with a content type of `application/x-pkcs12` and cannot have a password. 
+    - The certificate must be an X.509 cert with a content type of `application/x-pkcs12` and cannot have a password.
 
 Finally, once the certificate is in place, you'll want to set up a _custom domain_. There's already a built-in certificate for `*.azurewebsites.net`. You can then associate your custom domain with the certificate you've assigned so the server uses your certificate to secure the connection to the browser.
 
->

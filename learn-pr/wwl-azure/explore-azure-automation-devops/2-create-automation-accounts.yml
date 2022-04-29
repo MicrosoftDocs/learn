@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-automation-devops.create-automation-accounts
+title: Create automation accounts
+metadata:
+  title: Create automation accounts
+  description: "Create automation accounts"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-create-automation-accounts.md)]

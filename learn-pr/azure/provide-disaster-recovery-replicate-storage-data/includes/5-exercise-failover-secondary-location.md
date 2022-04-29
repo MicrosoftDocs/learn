@@ -16,7 +16,7 @@ Let's simulate a region-wide failure by manually initiating a failover.
 
 1. Select the storage account you created from the list of resources in your resource group.
 
-1. In the pane on the left, under the **Settings** section, select **Geo-replication**.
+1. In the pane on the left, under the **Data management** section, select **Geo-replication**.
 
 1. Select **Prepare for failover**. This button isn't enabled until the initial sync from the primary to the secondary region is complete.
 

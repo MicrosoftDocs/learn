@@ -4,17 +4,19 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/09/2021
+  ms.date: 09/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to use the Computer Vision Analyze Image function to generate an appropriate caption for an image.Which visual feature should you specify?"
+  - content: "You want to use the Computer Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
       isCorrect: false

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-technical-debt.examine-complexity-quality-metrics
+title: Examine complexity and quality metrics
+metadata:
+  title: Examine complexity and quality metrics
+  description: "Examine complexity and quality metrics"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-examine-complexity-quality-metrics.md)]

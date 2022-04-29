@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-azure-virtual-desktop-architecture.recommendations-for-using-subscriptions-management-groups
+title: Recommendations for using subscriptions and management groups
+metadata:
+  title: Recommendations for using subscriptions and management groups
+  description: "Recommendations for using subscriptions and management groups"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-recommendations-subscriptions-management-groups.md)]

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-audio-classification-tensorflow.visualizations-transforms
+title: Visualizing and transforming data
+metadata:
+  title: Visualizing and transforming data
+  description: Visualizing and transforming data
+  author: cassiebreviu
+  ms.author: cassieb
+  ms.date: 08/03/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.product: learning-tensorflow
+  ms.contributors:
+  - cassieb-08202021
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/3-visualizations-transforms.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "When you resample the audio you are..."
+      choices:
+        - content: "increasing the size."
+          isCorrect: false
+          explanation: "Incorrect."
+        - content: "reducing the size."
+          isCorrect: true
+          explanation: "Correct! We can reduce the size of the file by reducing the sample rate for the audio track."
+    - content: "What is a spectrogram?"
+      choices:
+        - content: "Maps the frequency to time of an audio file."
+          isCorrect: true
+          explanation: "Correct!"
+        - content: "The audio channels."
+          isCorrect: false
+          explanation: "Incorrect."
+        - content: "Sample rate and frequency visualized."
+          isCorrect: false
+          explanation: "Incorrect this is a waveform."
+    - content: "Audio classification can only be done with computer vision on spectrograms."
+      choices:
+        - content: "True"
+          isCorrect: False
+          explanation: "Incorrect. There is more than one way to build audio classification models."
+        - content: "False"
+          isCorrect: True
+          explanation: "Correct! There is more than one way to build audio classification models."

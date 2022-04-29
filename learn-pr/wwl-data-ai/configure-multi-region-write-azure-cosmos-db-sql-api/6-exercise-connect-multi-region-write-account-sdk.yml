@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.exercise-connect-to-multi-region-write-account-sdk
+title: 'Exercise: Connect multi-region write account with the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Connect multi-region write account with the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Connect multi-region write account with the Azure Cosmos DB SQL API SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107590
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-connect-multi-region-write-account-sdk.md)]

@@ -5,9 +5,10 @@ metadata:
   description: Work with state and events in React and JavaScript.
   ms.date: 02/03/2021
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: React state and events
 summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
 abstract: | 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.evaluate-composite-indexes
+title: Evaluate composite indexes
+metadata:
+  title: Evaluate composite indexes
+  description: "Evaluate composite indexes"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-evaluate-composite-indexes.md)]

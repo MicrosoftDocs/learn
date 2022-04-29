@@ -1,0 +1,9 @@
+{
+  "moduleAliases": {
+    "br": {
+      "ToyCompanyRegistry": {
+        "registry": "YOUR_CONTAINER_REGISTRY_NAME.azurecr.io"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.create-bulk-operations-sdk
+title: Create bulk operations with the SDK
+metadata:
+  title: Create bulk operations with the SDK
+  description: "Create bulk operations with the SDK"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-create-bulk-operations-sdk.md)]

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.cloud-hybrid-connectivity
+metadata:
+  title: Troubleshoot cloud and hybrid connectivity in Microsoft Azure
+  description: "Troubleshooting cloud and hybrid connectivity includes Microsoft ExpressRoute, Azure virtual networks, and Azure Virtual WAN. This module enables you to manage and troubleshoot different network configurations to support your organization’s needs. AZ720 AZ-720 az-720 networking"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot cloud and hybrid connectivity in Microsoft Azure
+summary: Troubleshooting cloud and hybrid connectivity includes Microsoft ExpressRoute, Azure virtual networks, and Azure Virtual WAN. This module enables you to manage and troubleshoot different network configurations to support your organization’s needs.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Troubleshoot ExpressRoute connectivity
+  - Troubleshoot site to site VPNs
+  - Troubleshoot point to site VPNs
+  - Troubleshoot virtual network connectivity
+  - Troubleshoot virtual WAN issues
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of Azure CLI
+  - Demonstrate an understanding of PowerShell
+  - Know how to run Cloud Shell to run commands
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- support-engineer
+products:
+- azure-expressroute
+units:
+- learn.wwl.cloud-hybrid-connectivity.introduction
+- learn.wwl.cloud-hybrid-connectivity.setup-troubleshooting-environment
+- learn.wwl.cloud-hybrid-connectivity.troubleshoot-expressroute-connectivity
+- learn.wwl.cloud-hybrid-connectivity.troubleshoot-site-to-site-vpns
+- learn.wwl.cloud-hybrid-connectivity.troubleshoot-virtual-wan-issues
+- learn.wwl.cloud-hybrid-connectivity.lab-exercise
+- learn.wwl.cloud-hybrid-connectivity.knowledge-check
+- learn.wwl.cloud-hybrid-connectivity.summary
+badge:
+  uid: learn.wwl.cloud-hybrid-connectivity.badge

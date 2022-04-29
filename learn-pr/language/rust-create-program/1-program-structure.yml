@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-program.1-program-structure
+metadata:
+  title: Understand the basic Rust program structure
+  description: Review the basic structure of a Rust program, including the main function, and the println! macro.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Understand the basic Rust program structure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-program-structure.md)]
+
+quiz:
+  questions:
+
+  - content: "How many main functions can there be in a Rust program?"
+    choices:
+    - content: "A Rust program can have as many `main` functions as needed."
+      isCorrect: false
+      explanation: "Incorrect. A Rust program can have only one `main` function."
+    - content: "Any function in Rust can have a subfunction named `main`."
+      isCorrect: false
+      explanation: "Incorrect. A Rust program can have only one `main` function."
+    - content: "Every Rust program must have only one function named `main`."
+      isCorrect: true
+      explanation: "Correct! A Rust program can have only one `main` function."
+
+  - content: "What Rust keyword is used to declare a new function?"
+    choices:
+    - content: "`function`"
+      isCorrect: false
+      explanation: "Incorrect. The keyword to use is an abbreviation of the word `function`."
+    - content: "`fn`"
+      isCorrect: true
+      explanation: "Correct! The `fn` keyword is used to declare any function, including the `main` function."      
+    - content: "`func`"
+      isCorrect: false
+      explanation: "Incorrect. The keyword to use is a shorter form of the abbreviation `func`."
+
+  - content: "What's the output from this call to the `println!` macro?<br>
+             `println!(\"{} is a number. {} is a word.\", 1, \"Two\");`"
+    choices:
+    - content: "1 is a number. Two is a word."
+      isCorrect: true
+      explanation: "Correct! The `println!` macro replaces each instance of curly brackets `{}` with the next argument value."      
+    - content: "{} is a number. {} is a word."
+      isCorrect: false
+      explanation: "Incorrect. The `println!` macro replaces each instance of curly brackets `{}` with the next argument value."
+    - content: "{1} is a number. {\"Two\"} is a word."
+      isCorrect: false
+      explanation: "Incorrect. The `println!` macro output doesn't show the curly brackets `{}` or quote marks."
+      

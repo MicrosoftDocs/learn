@@ -4,12 +4,13 @@ title: 'Exercise: Migrate on-premises MySQL database to Azure Database for MySQL
 metadata:
   title: 'Exercise: Migrate on-premises MySQL database to Azure Database for MySQL'
   description: "Exercise: Migrate on-premises MySQL database to Azure Database for MySQL"
-  ms.date: 02/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/4a-exercise-migrate-mysql-azure-database.md)]

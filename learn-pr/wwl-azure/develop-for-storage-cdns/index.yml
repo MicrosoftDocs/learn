@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.develop-for-storage-cdns
+metadata:
+  title: Develop for storage on CDNs
+  description: "Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET."
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Develop for storage on CDNs
+summary: Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET.
+abstract: |
+  After completing this module, you'll be able to:
+  * Explain how the Azure Content Delivery Network works and how it can improve the user experience.
+  * Control caching behavior and purge content.
+  * Perform actions on Azure CDN by using the Azure CDN Library for .NET.
+prerequisites: |
+  * You should be familiar with developer concepts and terminology.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/cdn-develop-storage.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cdn
+units:
+- learn.wwl.develop-for-storage-cdns.introduction
+- learn.wwl.develop-for-storage-cdns.explore-azure-content-delivery-networks
+- learn.wwl.develop-for-storage-cdns.control-cache-behavior-azure-content-delivery-networks
+- learn.wwl.develop-for-storage-cdns.interact-azure-content-delivery-networks-by-using-net
+- learn.wwl.develop-for-storage-cdns.knowledge-check
+- learn.wwl.develop-for-storage-cdns.summary
+badge:
+  uid: learn.wwl.develop-for-storage-cdns.badge

@@ -1,13 +1,13 @@
 Azure API Management enables you to carefully identify and control who can access the data published by your APIs.
 
-Suppose you work for a meteorological company, which has an API that customers use to access weather data for forecasts and research. There is proprietary information in this data, and you would like to ensure that only paying customers have access. You want to use **Azure API Management** to properly secure this API from unauthorized use.
+Suppose you work for a meteorological company, which has an API that customers use to access weather data for forecasts and research. There's proprietary information in this data, and you would like to ensure that only paying customers have access. You want to use **Azure API Management** to properly secure this API from unauthorized use.
 
-In this module, you will use two different methods to secure access to an API in Azure API Management:
+In this module, you'll use two different methods to secure access to an API in Azure API Management:
 
 - Subscriptions
 - Client Certificates
 
-By the end of this module, you will be able to ensure that only people with the right credentials can access the information in your API.
+By the end of this module, you'll be able to ensure that only people with the right credentials can access the information in your API.
 
 ## Learning objectives
 

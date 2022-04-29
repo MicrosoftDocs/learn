@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.publish-custom-item
+title: Publish a custom Azure Stack Hub Marketplace item
+metadata:
+  title: Publish a custom Azure Stack Hub Marketplace item
+  description: "Publish a custom Azure Stack Hub Marketplace item"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/8-publish-custom-azure-stack-hub-marketplace-item.md)]

@@ -4,12 +4,13 @@ title: Determine app service plan pricing
 metadata:
   title: Determine app service plan pricing
   description: "Determine app service plan pricing"
-  ms.date: 07/23/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-determine-plan-pricing.md)]

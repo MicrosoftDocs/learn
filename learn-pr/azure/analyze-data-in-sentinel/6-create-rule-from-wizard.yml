@@ -4,8 +4,8 @@ metadata:
   title: Create an analytics rule from wizard
   description: Describes how to create an analytics rule by using the wizard.
   ms.date: 12/15/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an analytics rule from wizard
@@ -19,14 +19,14 @@ quiz:
     choices:
     - content: "Set rule logic"
       isCorrect: true
-      explanation: "In the Set rule logic section, you can define the detection method by specifying the KQL code that will run against the Azure Sentinel workspace."
+      explanation: "In the Set rule logic section, you can define the detection method by specifying the KQL code that will run against the Microsoft Sentinel workspace."
     - content: "Incident Settings"
       isCorrect: false
       explanation: "The Incident settings page can create an incident from the alerts that are triggered by the analytics rule."
     - content: "Automated response"
       isCorrect: false
       explanation: "The Automated Response section allows you to select a playbook to run automatically when the alert is generated."
-  - content: "Which of the following statements about Scheduled Alert is true?"
+  - content: "Which of the following statements about scheduled query rules is true?"
     choices:
     - content: "They are precreated by default."
       isCorrect: false
@@ -34,7 +34,6 @@ quiz:
     - content: "They can only be enabled without customization."
       isCorrect: false
       explanation: "The Scheduled query rule type provides the highest level of customization."
-    - content: "You can create you own query to define the detection of the threat."
+    - content: "You can create your own query to define the detection of the threat."
       isCorrect: true
       explanation: "You can use either a predefined or a custom query to detect threats."
-

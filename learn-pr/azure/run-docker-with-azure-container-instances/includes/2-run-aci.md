@@ -19,11 +19,11 @@ For scenarios where you need full container orchestration, including service dis
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Open Azure Cloud Shell from the Azure portal using the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
+1. Open Azure Cloud Shell from the Azure portal by selecting the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
-1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
+1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
 
     ```azurecli
     az group create --name learn-deploy-aci-rg --location eastus
@@ -43,13 +43,13 @@ For scenarios where you need full container orchestration, including service dis
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name mycontainer \
-      --image microsoft/aci-helloworld \
+      --image mcr.microsoft.com/azuredocs/aci-helloworld \
       --ports 80 \
       --dns-name-label $DNS_NAME_LABEL \
       --location eastus
     ```
 
-    `$DNS_NAME_LABEL` specifies your DNS name. The image name, **microsoft/aci-helloworld**, refers to a Docker image hosted on Docker Hub that runs a basic Node.js web application.
+    `$DNS_NAME_LABEL` specifies your DNS name. The image name, **azuredocs/aci-helloworld**, refers to a container image hosted on Microsoft Container Registry that runs a basic Node.js web application.
 
 1. When the `az container create` command completes, run `az container show` to check its status.
 
@@ -66,12 +66,12 @@ For scenarios where you need full container orchestration, including service dis
     ```output
     FQDN                                    ProvisioningState
     --------------------------------------  -------------------
-    aci-demo.eastus.azurecontainer.io       Succeeded
+    aci-demo-0000.eastus.azurecontainer.io  Succeeded
     ````
 
     If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
 
-1. From a browser, navigate to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of *aci-demo...* string. You see this.
+1. From a browser, go to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of the *aci-demo...* string. You should see this welcome page.
 
     :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser." loc-scope="other"::: <!-- no-loc -->
 

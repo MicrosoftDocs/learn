@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.identity-considerations
+title: Choose an identity provider
+metadata:
+  title: Choose an identity provider
+  description: "Choose an identity provider"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-identity-considerations.md)]

@@ -4,12 +4,13 @@ title: 'Exercise: Configure domain name servers settings in Azure'
 metadata:
   title: 'Exercise: Configure domain name servers settings in Azure'
   description: "Exercise: Configure domain name servers settings in Azure"
-  ms.date: 07/28/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-configure-domain-name-servers-configuration-azure.md)]

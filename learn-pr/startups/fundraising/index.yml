@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.startups.fundraising
+metadata:
+  title: Fundraising for your startup
+  description: Learn how to raise money from investors such as angels and venture capital funds. See practical tips for asking potential investors for funding.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+title: Fundraising for your startup
+summary: >
+  This module describes the process of raising money from early-stage investors and gives practical advice on how and when to approach different types of investors, such as angel investors and venture capital funds.
+abstract: | 
+  In this module, you'll:
+
+  - Understand external funding and bootstrapping.
+  - Familiarize yourself with different types of investors.
+  - See tips for asking potential investors for funding.
+  - Learn strategies for raising funding rounds.
+  - Appreciate the growth and scale needed to generate an acceptable return to investors.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- business-owner
+- business-analyst
+- functional-consultant
+- student
+products:
+- consumer
+units:
+- learn.startups.fundraising.introduction
+- learn.startups.fundraising.how-investment-works
+- learn.startups.fundraising.investor-types
+- learn.startups.fundraising.funding-rounds
+- learn.startups.fundraising.knowledge-check
+- learn.startups.fundraising.summary
+badge:
+  uid: learn.startups.fundraising.badge

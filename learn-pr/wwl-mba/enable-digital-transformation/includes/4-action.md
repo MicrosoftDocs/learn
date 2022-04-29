@@ -14,10 +14,12 @@ The power of our solution areas is when they come together – for you. We start
 
 :::row:::
 ![A graphic of a quote](../media/quote.png)
+
 :::column:::
 ***”We’ve never had the depth of communication and collaboration we have now.”***
-Anders Munck 
-Enterprise Architect, The Carlsberg Group 
+</br>Anders Munck
+</br>Enterprise Architect, The Carlsberg Group
+
 :::column-end:::
 :::row-end:::
 
@@ -28,11 +30,14 @@ The introduction to Microsoft 365 also played an integral role in streamlining C
 
 :::row:::
 ![A graphic of a quote](../media/quote.png)
+
 :::column:::
-***”The business value of moving quickly to achieve our strategic goals is huge. Today, we have a single, agile, and scalable supply chain to optimize supply to our global markets.”***
+***”The business value of moving quickly to achieve our strategic goals is huge. Today, we have a single, agile, and scalable supply chain to optimize supply to our global markets.”***</br>
+
 ***”We are launching products with more efficiency. We are developing processes and systems once and deploying them everywhere. These are great global benefits, and Office 365 helped us achieve them faster.”***
-Peter Jibrandt
-Western Europe KAM, Global Business Services, The Carlsberg Group 
+</br>Peter Jibrandt
+</br>Western Europe KAM, Global Business Services, The Carlsberg Group
+
 :::column-end:::
 :::row-end:::
 
@@ -48,22 +53,34 @@ Now that you understand how a modern workplace solution from Microsoft helped Th
 
 **The business outcomes:** To reach its goals, Ørsted developed a digital strategy that includes Azure IoT, AI and advanced analytics with Power BI, and Microsoft 365.
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Ørsted uses and integrates Microsoft solutions.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to see how Ørsted uses and integrates Microsoft solutions.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MHLi]
 
 Microsoft solutions help Ørsted optimize its operations by transforming data from its 1,300 offshore wind turbines into insights for predictive maintenance that save time and resources. Furthermore, the company is transforming their products and making it faster to build new wind farms.
 
+</br>
+
 :::row:::
 ![A graphic of a quote](../media/quote.png)
+
 :::column:::
 ***”When we engineer new wind farms, the computations for the foundations alone used to take weeks. Now with the cloud, it takes between 4 and 8 hours.”***
-Michael Judén
-Head of Digital Strategy, Ørsted 
+</br>Michael Judén
+</br>Head of Digital Strategy, Ørsted
+
 :::column-end:::
 :::row-end:::
+
 
 Finally, Ørsted has put its employees at the center of their transformation with Microsoft 365. Modern, cloud-based tools are helping Ørsted’s 5,900 employees work and collaborate more efficiently.
 

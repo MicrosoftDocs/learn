@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-qna-solution-qna-maker.exercise-create
-title: Exercise - Create a QnA solution
+title: Exercise - Create a question answering solution
 metadata:
-  title: Exercise - Create a QnA solution
-  description: "Exercise - Create a QnA solution"
-  ms.date: 07/08/2021
+  title: Exercise - Create a question answering solution
+  description: "Exercise - Create a question answering solution"
+  ms.date: 01/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,6 +12,6 @@ metadata:
 azureSandbox: false
 labId: 100989
 labModal: true
-durationInMinutes: 3
+durationInMinutes: 20
 content: |
   [!include[](includes/10-exercise-create.md)]

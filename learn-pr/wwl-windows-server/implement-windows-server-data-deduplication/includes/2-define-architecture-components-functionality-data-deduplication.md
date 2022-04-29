@@ -49,4 +49,4 @@ Data Deduplication process all the data on a selected volume, with a few excepti
 - Files smaller than 32 KB.
 
 > [!NOTE]
-> Resilient File System (ReFS) in Windows Server 2019 supports data deduplication for volumes of up to 64 terabytes (TB) in size and files of up to 4 TB in size. It also relies on a variable-size chunk store that includes optional compression to maximize disk space savings, while the multiple-threaded post-processing architecture keeps performance impact at minimum.
+> Since Windows Server 2019, Resilient File System (ReFS) supports data deduplication for volumes of up to 64 terabytes (TB) in size and files of up to 4 TB in size. It also relies on a variable-size chunk store that includes optional compression to maximize disk space savings, while the multiple-threaded post-processing architecture keeps performance impact at minimum.

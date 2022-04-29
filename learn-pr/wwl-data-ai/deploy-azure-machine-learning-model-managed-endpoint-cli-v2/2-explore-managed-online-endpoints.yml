@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.explore-managed-online-endpoints
+title: Explore managed online endpoints
+metadata:
+  title: Explore managed online endpoints
+  description: "Explore managed online endpoints"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-managed-online-endpoints.md)]

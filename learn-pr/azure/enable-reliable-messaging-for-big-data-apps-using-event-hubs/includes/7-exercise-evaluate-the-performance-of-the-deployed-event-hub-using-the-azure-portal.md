@@ -16,7 +16,7 @@ In this unit, you'll use the Azure portal to verify your Event Hub is working ac
 
 Perform the following steps to see what happens when an application sends messages to an Event Hub while it's temporarily unavailable.
 
-1. Resend messages to the Event Hub using the SimpleSend application. Run the following command.
+1. Resend messages to the Event Hub using the SimpleSend application. Run the following command in Cloud Shell.
 
     ```azurecli
     cd ~
@@ -26,19 +26,20 @@ Perform the following steps to see what happens when an application sends messag
 
 1. When you see **Send Complete**, press <kbd>Enter</kbd>.
 
-1. Select your Event Hub in the **Overview** screen - this will show details specific to the Event Hub. You can also get to this screen with the **Event Hubs** entry from the namespace page.
+1. Return to the Azure portal. On the **Overview** page of your **Event Hubs Namespace** pane, select your Event Hub from the list at the bottom. This will show details specific to the Event Hub. You can also get to this pane with the **Event Hubs** entry from the namespace page. The **Event Hubs Instance** pane appears.
 
-1. Select **Settings** > **Properties**.
+1. In the left menu pane, under **Settings**, select **Properties**. The **Properties** pane appears for your Event Hubs Instance.
 
-1. Under **EVENT HUB STATUS**, select **Disabled**. Save the changes.
+1. Under **EVENT HUB STATUS**, select **Disabled**, and in the top menu bar, select **Save changes**.
 
     ![Disable Event Hub.](../media/7-disable-event-hub.png)
 
-    **Wait for a minimum of five minutes.**
+    >[!IMPORTANT]
+    >Wait for a minimum of five minutes before proceeding.
 
-1. Select **Active** under Event Hub state to re-enable your Event Hub, and save your changes.
+1. Select **Active** under **EVENT HUB STATUS** to re-enable your Event Hub, and in the top menu bar, select **Save changes**.
 
-1. Rerun the EventProcessorSample application to receive messages. Run the following command.
+1. In Cloud Shell, rerun the EventProcessorSample application to receive messages. Run the following command.
 
     ```azurecli
     cd ~
@@ -50,15 +51,15 @@ Perform the following steps to see what happens when an application sends messag
 
 1. Back in the Azure portal, go back to your Event Hub Namespace. If you're still on the Event Hub page, you can use the breadcrumb on the top of the screen to go backwards. Or you can search for the namespace, and select it.
 
-1. Select **Monitoring** > **Metrics**.
+1. In the middle menu pane, under **Monitoring**, select **Metrics**.
 
     ![Screenshot showing the Event Hub Metrics with number of incoming and outgoing messages displayed.](../media/7-event-hub-metrics.png)
 
-1. From the **Metric** list, select **Incoming Messages**, and then select **Add metric**.
+1. From the **Metric** dropdown list, select **Incoming Messages**, and in the taskbar, select **Add metric**.
 
-1. From the **Metric** list, select **Outgoing Messages**, and then select **Add metric**.
+1. From the **Metric** dropdown list, select **Outgoing Messages**, and in the taskbar, select **Add metric**.
 
-1. At the top right of the chart, select **Last 24 hours (Automatic)** to change the time period to **Last 30 minutes** to expand the data graph.
+1. At the top right of the chart, select **Last 24 hours (Automatic)**, and in the dialog box that appears, change the time period to **Last 30 minutes** to expand the data graph. Select **Apply**.
 
 You'll see that though the messages were sent before the Event Hub was taken offline for a period, all 100 messages were successfully transmitted.
 

@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.set-up-azure-integration-runtime
-title: Set up the Azure integration runtime
+title: "Exercise - Set up the Azure integration runtime"
 metadata:
-  title: Set up the Azure integration runtime
-  description: "Set up the Azure integration runtime"
-  ms.date: 08/03/2021
+  title: Exercise - Set up the Azure integration runtime
+  description: "Exercise - Set up the Azure integration runtime"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-set-up-azure-integration-runtime.md)]

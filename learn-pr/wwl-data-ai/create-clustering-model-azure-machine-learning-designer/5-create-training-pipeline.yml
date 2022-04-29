@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.create-training-pipeline
+title: Create and run a training pipeline
+metadata:
+  title: Create and run a training pipeline
+  description: "Create and run a training pipeline"
+  ms.date: 03/07/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-create-training-pipeline.md)]

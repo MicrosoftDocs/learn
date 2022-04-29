@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.explore-diagnostic-tools
+title: Explore diagnostic tools
+metadata:
+  title: Explore diagnostic tools
+  description: "Explore diagnostic tools"
+  ms.date: 02/02/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-explore-diagnostic-tools.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.create-azure-logic-app-execution-schedule
+title: Create the Azure Logic App and execution schedule
+metadata:
+  title: Create the Azure Logic App and execution schedule
+  description: "Create the Azure Logic App and execution schedule"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-create-azure-logic-app-execution-schedule.md)]

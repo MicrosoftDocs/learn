@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.recommend-certificate-strategy
+title: Recommend certificate strategy
+metadata:
+  title: Recommend certificate strategy
+  description: "Recommend certificate strategy"
+  ms.date: 02/28/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-recommend-certificate-strategy.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.faqs
+title: Azure Stack Hub Marketplace frequently asked questions
+metadata:
+  title: Azure Stack Hub Marketplace frequently asked questions
+  description: "Azure Stack Hub Marketplace frequently asked questions"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-azure-stack-hub-marketplace-frequent-questions.md)]

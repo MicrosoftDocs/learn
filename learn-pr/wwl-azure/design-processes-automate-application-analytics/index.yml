@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.design-processes-to-automate-application-analytics
+metadata:
+  title: Design processes to automate application analytics
+  description: "Design processes to automate application analytics"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design processes to automate application analytics
+summary: This module helps designing process to Application Insights, explores telemetry and monitoring tools and technologies.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Automate application analytics
+  *   Assist DevOps with rapid responses and augmented search
+  *   Integrate telemetry
+  *   Implement monitoring tools and technologies
+prerequisites: |
+  None
+iconUrl: /learn/achievements/7-design-processes-to-automate-application-analytics.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.design-processes-to-automate-application-analytics.introduction
+- learn.wwl.design-processes-to-automate-application-analytics.explore-rapid-responses-augmented-search
+- learn.wwl.design-processes-to-automate-application-analytics.integrate-telemetry
+- learn.wwl.design-processes-to-automate-application-analytics.examine-monitoring-tools-technologies
+- learn.wwl.design-processes-to-automate-application-analytics.knowledge-check
+- learn.wwl.design-processes-to-automate-application-analytics.summary
+badge:
+  uid: learn.wwl.design-processes-to-automate-application-analytics.badge

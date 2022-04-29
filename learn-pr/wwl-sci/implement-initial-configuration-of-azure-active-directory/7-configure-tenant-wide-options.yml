@@ -4,12 +4,13 @@ title: Configure tenant-wide setting
 metadata:
   title: Configure tenant-wide setting
   description: "Configure tenant-wide setting"
-  ms.date: 07/22/2021
+  ms.date: 03/04/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/7-configure-tenant-wide-options.md)]

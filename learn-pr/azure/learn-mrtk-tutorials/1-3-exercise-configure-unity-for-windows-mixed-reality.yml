@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.learn-introduction-tutorials-mrtk.1-3-exercise-configure-unity-for-windows-mixed-reality
+title: Exercise - Configure Unity for Windows Mixed Reality
+metadata:
+  title: Exercise - Configure Unity for Windows Mixed Reality
+  description: Introduction for Configure Unity for Windows Mixed Reality
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-3-exercise-configure.md)]

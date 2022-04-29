@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction to building a basic deployment workflow for Bicep by using GitHub Actions.
+  ms.date: 08/11/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

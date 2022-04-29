@@ -6,8 +6,8 @@ metadata:
   title: What is Azure API Management?
   description: Learn the basic features and concepts of Azure API Management
   ms.date: 06/16/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

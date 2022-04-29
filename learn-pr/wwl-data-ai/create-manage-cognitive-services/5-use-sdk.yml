@@ -4,12 +4,14 @@ title: Use an SDK
 metadata:
   title: Use an SDK
   description: "Use an SDK"
-  ms.date: 07/21/2021
+  ms.date: 12/07/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-use-sdk.md)]

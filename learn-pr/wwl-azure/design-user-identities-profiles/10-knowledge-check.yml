@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-for-user-identities-profiles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is used with Azure AD Connect to configure a hybrid environment using an on-premises Active Directory Federation Services (AD FS) infrastructure?"
+    choices:
+    - content: "Federation integration"
+      isCorrect: true
+      explanation: "That's correct. Federation integration is an option in Azure AD Connect used to configure a hybrid environment using on-premises Active Directory Federation Services (AD FS). It also provides AD FS management capabilities such as certificate renewal and additional AD FS server deployments."
+    - content: "Azure Synchronization Manager"
+      isCorrect: false
+      explanation: "That's incorrect. The Synchronization Service Manager is used to configure more advanced aspects of the sync engine and to see the operational aspects of the service"
+    - content: "Azure Service Health"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime."
+  - content: "What is used to enable roaming profiles in remote computing environments?"
+    choices:
+    - content: "Azure NetApp Files"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure NetApp Files service is an enterprise-class, high-performance, metered file storage service."
+    - content: "Storage Spaces Direct"
+      isCorrect: false
+      explanation: "That's incorrect. Storage Spaces Direct uses industry-standard servers with local-attached drives to create highly available, highly scalable software-defined storage at a lower cost of traditional SAN or NAS arrays."
+    - content: "FSLogix"
+      isCorrect: true
+      explanation: "That's correct. Azure Virtual Desktop offers FSLogix profile containers as the recommended user profile solution. FSLogix is designed to roam profiles in remote computing environments, such as Azure Virtual Desktop."

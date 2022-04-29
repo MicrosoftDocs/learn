@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-route-for-mobile-application-crash-report-data.create-bug-tracker
+title: Create a bug tracker
+metadata:
+  title: Create a bug tracker
+  description: "Create a bug tracker"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-create-bug-tracker.md)]

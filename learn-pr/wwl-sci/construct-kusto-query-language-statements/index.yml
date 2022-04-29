@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.construct-kql-statements
 metadata:
-  title: Construct KQL statements for Azure Sentinel
-  description: "Construct KQL statements for Azure Sentinel"
-  ms.date: 03/04/2021
+  title: Construct KQL statements for Microsoft Sentinel
+  description: "Construct KQL statements for Microsoft Sentinel"
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Construct KQL statements for Azure Sentinel
-summary: KQL is the query language used to perform analysis on data to create analytics, workbooks, and perform hunting in Azure Sentinel.  Learn how basic KQL statement structure provides the foundation to build more complex statements.
+title: Construct KQL statements for Microsoft Sentinel
+summary: KQL is the query language used to perform analysis on data to create analytics, workbooks, and perform hunting in Microsoft Sentinel.  Learn how basic KQL statement structure provides the foundation to build more complex statements.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Construct KQL statements

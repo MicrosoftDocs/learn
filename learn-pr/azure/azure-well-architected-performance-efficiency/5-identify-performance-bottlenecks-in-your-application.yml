@@ -5,8 +5,8 @@ metadata:
   title: Identify performance bottlenecks in your application
   description: In this unit, you'll learn how to identify performance bottlenecks in your application.
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 9

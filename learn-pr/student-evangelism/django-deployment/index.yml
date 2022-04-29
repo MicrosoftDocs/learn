@@ -5,9 +5,10 @@ metadata:
   description: Learn how to deploy a application built with the Python framework Django.
   ms.date: 03/01/2021
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Deploy a Django application to Azure by using PostgreSQL
 summary: To make your application available to the world, you need to host it somewhere. Here you'll deploy your application to Azure and create a database for the data.
 abstract: | 

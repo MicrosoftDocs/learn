@@ -3,7 +3,7 @@ uid: learn.wwl.configure-network-routing-endpoints
 metadata:
   title: Configure network routing and endpoints
   description: "You will learn how to configure routes including endpoints and private links."
-  ms.date: 07/23/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Identify features and usage cases for private links and endpoint services.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/network-routing-endpoints-configure.svg
 levels:
 - intermediate
 roles:

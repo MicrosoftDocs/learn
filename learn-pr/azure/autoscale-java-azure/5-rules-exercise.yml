@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.autoscale-java-azure.rules-exercise
+title: Exercise - Autoscaling rules
+metadata:
+  unitType: exercise
+  title: Exercise - Autoscaling rules
+  description: We'll look at an exercise for autoscale rules
+  ms.date: 11/18/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: ropreddy-12032021
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-rules-exercise.md)]

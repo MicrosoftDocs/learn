@@ -24,8 +24,8 @@ If you're not running your code through a debugger, that means you're probably *
 Every debugger has its own set of features. The two most important ones that come with almost all of them are:
 
 - Control of your program execution. You can pause your program and run it step by step, which allows you to see which code is executed and how it affects your program's state.
-- Observation of your program's state. For example, you can look at your variables' value and function parameters at any point during your code execution.
+- Observation of your program's state. For example, you can look at the value of your variables and function parameters at any point during your code execution.
 
-Mastering debugger usage is an important skill for a developer that's often overlooked. It makes you more efficient at hunting bugs in your code. It can also help you quickly understand how a program works.
+Mastering debugger usage is an important skill for a developer that's often overlooked. It makes you more efficient at hunting bugs in your code and can help you quickly understand how a program works.
 
 Let's discover that in the next unit.

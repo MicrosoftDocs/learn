@@ -100,7 +100,7 @@ As an example, here are the actions for the three roles we looked at previously.
 | Built-in Role | Actions | NotActions |
 | ------------- |---------| -------|
 |Owner (allow all actions)|`*`| - |
-|Contributor (allow all actions except writing or deleting role assignments)|`*`|`Microsoft.Authorization/*/Delete, Microsoft.Authorization/*/Write, Microsoft.Authorization/*/elevateAccess/Action`|
+|Contributor (allow all actions except writing or deleting role assignments)|`*`|`Microsoft.Authorization/*/Delete, Microsoft.Authorization/*/Write, Microsoft.Authorization/elevateAccess/Action`|
 |Reader (allow all read actions)|`*/read`| - |
 
 The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions; or in other words, this role can manage everything, including actions defined in the future, as Azure adds new resource types. With the **Reader** role, only the `read` action is allowed.

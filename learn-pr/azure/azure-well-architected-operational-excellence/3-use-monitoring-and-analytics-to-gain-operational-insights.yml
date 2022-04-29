@@ -5,8 +5,8 @@ metadata:
   title: Use monitoring and analytics to gain operational insights
   description: In this unit, we'll discuss how to use monitoring and analytics to gain operational insights into your application's performance.
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

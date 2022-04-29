@@ -3,13 +3,13 @@ uid: learn.fsharp-first-program.2-variables-types
 title: Use variables to store values
 metadata:
   title: Use variables to store values
-  description: In this unit, you learn about variables and different data types.
-    You also learn how to print variables to the screen.
+  description: In this unit, you learn about variables and different data types. You also learn how to print variables to the screen.
   author: softchris
   ms.author: chnoring
   ms.date: 07/21/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/2-variables-types.md)]

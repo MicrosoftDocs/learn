@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.monitor-performance-windows-admin-center
+title: Monitor performance with Windows Admin Center
+metadata:
+  title: Monitor performance with Windows Admin Center
+  description: "Monitor performance with Windows Admin Center"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-monitor-performance-with-windows-admin-center.md)]

@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.blazor-build-reusable-components.concepts-razor-class-library
+title: Razor class library creation and concepts
+metadata:
+  unitType: learning-content
+  title: Razor class library creation and concepts
+  description: "In this unit, you'll learn about Razor class libraries, how to create one, and how they differ from other .NET class libraries."
+  ms.date: 10/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-concepts-razor-class-library.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Razor class libraries can ship with what type of content?"
+      choices:
+      - content: "Razor components"
+        isCorrect: false
+        explanation: "Incorrect. Razor class libraries can deliver more than just Razor components."
+      - content: "CSS files"
+        isCorrect: false
+        explanation: "Incorrect. Razor class libraries can deliver more than just cascading style sheets."
+      - content: "JavaScript files"
+        isCorrect: false
+        explanation: "Incorrect. Razor class libraries can deliver more than just JavaScript files."
+      - content: "All of the above"
+        isCorrect: true
+        explanation: "Razor class libraries can deliver Razor components, CSS files, JavaScript files, images, and any static web content that your components need."

@@ -5,9 +5,10 @@ metadata:
   description: "Discover the fundamentals of Mixed Reality, and prepare the resources you need to create an interactive experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*."
   ms.date: 06/15/2021
   author: drguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Prepare to bring the basketball court into a Mixed Reality space
 summary: "Discover the fundamentals of Mixed Reality and prepare the resources you need to create an interactive experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*."
 abstract:  |
@@ -20,7 +21,7 @@ abstract:  |
 
 prerequisites: | 
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/mixed-reality-for-sports-fans.svg
 levels:
 - beginner
 roles:

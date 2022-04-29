@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator wants to name a guest directory Fabrikam. Which of the following is used to set the value for the guest tenant directory name to fabrikam.onmicrosoft.com?"
+    choices:
+    - content: "Register-AzResourceProvider"
+      isCorrect: false
+      explanation: "Incorrect. The Register-AzResourceProvider cmdlet registers an Azure resource provider."
+    - content: "Remove-AzRoleAssignment"
+      isCorrect: false
+      explanation: "Incorrect. Remove-AzRoleAssignment removes a role assignment to the specified principal assigned to a particular role."
+    - content: "$guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\""
+      isCorrect: true
+      explanation: "Correct. Running $guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\" sets the value for the guest tenant directory to fabrikam.onmicrosoft.com."
+  - content: "An Azure Stack Hub operator is configuring multi-tenancy for Azure Stack Hub. They begin by configuring Azure Stack Hub to allow signing in from Azure Active Directory (AD) directory guest tenants. What should they do?"
+    choices:
+    - content: "Onboard the guest directory tenant to Azure Stack Hub by configuring Azure Resource Manager to accept users and service principals from the guest directory tenant."
+      isCorrect: true
+      explanation: "Correct. Multi-tenancy for Azure Stack Hub allows signing in from Azure Active Directory (AD) directory guest tenants. Azure Resource Manager accepts users and service principals from the guest directory tenant to allow the guest directory tenant."
+    - content: "Run Get-AzProviderOperation \"Microsoft.Support/*\" | FT Operation, Description -AutoSize"
+      isCorrect: false
+      explanation: "Incorrect. Get-AzProviderOperation command gets the list of operations for the Microsoft.Support resource provider."
+    - content: "The administrator of the guest directory runs Unregister-AzsWithMyDirectoryTenant."
+      isCorrect: false
+      explanation: "Incorrect. The administrator of the guest directory runs Unregister-AzsWithMyDirectoryTenant to disable multi-tenancy"

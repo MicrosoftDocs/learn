@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-error-handling.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: "Introducing exceptions, tracebacks, and managing errors in Python."
+  ms.date: 12/10/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

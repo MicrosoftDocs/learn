@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.configure-database-container-provisioned-throughput
+title: Configure database or container-provisioned throughput
+metadata:
+  title: Configure database or container-provisioned throughput
+  description: "Configure database or container-provisioned throughput"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-configure-database-container-provisioned-throughput.md)]

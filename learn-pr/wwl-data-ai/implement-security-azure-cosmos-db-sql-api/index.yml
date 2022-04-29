@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-azure-cosmos-db-sql-api
+metadata:
+  title: Implement security in Azure Cosmos DB SQL API
+  description: "We will learn the different security models that Azure Cosmos DB uses."
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement security in Azure Cosmos DB SQL API
+summary: We will learn the different security models that Azure Cosmos DB uses.
+abstract: |
+  - Implement network level access control
+  - Review data encryption options
+  - Use role-based access control (RBAC)
+  - Access Account Resources using Azure Active Directory
+  - Understand Always Encrypted
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-security.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.introduction
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.implement-network-level-access-control
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.review-data-encryption-options
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.use-role-based-access-control-rbac
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.access-account-resources-using-aad
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.understand-always-encrypted
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.exercise-store-account-keys-azure-key-vault
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.implement-security-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.badge

@@ -3,7 +3,7 @@ uid: learn.wwl.configure-network-security-groups
 metadata:
   title: Configure network security groups
   description: "You will learn how to implement network security groups and ensure network security group rules are correctly applied."
-  ms.date: 07/22/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Evaluate network security group effective rules.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/network-security-groups.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,7 @@ units:
 - learn.wwl.configure-network-security-groups.determine-nsg-rules
 - learn.wwl.configure-network-security-groups.determine-nsg-effective-rules
 - learn.wwl.configure-network-security-groups.create-nsg-rules
+- learn.wwl.configure-network-security-groups.implement-asgs-new
 - learn.wwl.configure-network-security-groups.knowledge-check
 - learn.wwl.configure-network-security-groups.summary-resources
 badge:

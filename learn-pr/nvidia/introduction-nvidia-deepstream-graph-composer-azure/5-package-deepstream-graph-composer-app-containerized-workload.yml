@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.5-package-deepstream-graph-composer-app-containerized-workload
+title: Exercise - Package an NVIDIA DeepStream Graph Composer application into a containerized workload
+metadata:
+  title: Exercise - Package an NVIDIA DeepStream Graph Composer application into a containerized workload
+  description: Exercise - Package an NVIDIA DeepStream Graph Composer application into a containerized workload.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 11/09/2021
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-package-deepstream-graph-composer-app-containerized-workload.md)]

@@ -2,11 +2,11 @@
 uid: learn.azure.deploy-run-container-app-service.3-exercise-build-images
 title: Exercise - Build and store an image by using Azure Container Registry  
 metadata:
-  title: Exercise - Build and store an image by using Azure Container Registry  
+  title: Exercise - Build and store an image by using Azure Container Registry
   description: Create a container registry, and then build and deploy a Docker image to Azure Container Registry.
   ms.date: 03/28/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript

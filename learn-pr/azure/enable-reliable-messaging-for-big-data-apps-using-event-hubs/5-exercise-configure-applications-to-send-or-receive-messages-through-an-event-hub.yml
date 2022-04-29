@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Configure applications to send or receive messages through an Event Hub
   description: Configure applications to send or receive messages through an Event Hub
   ms.date: 08/26/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash		

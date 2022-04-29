@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.configure-avd-session-hosts-using-azure-bastion
+title: Configure Azure Virtual Desktop session hosts using Azure Bastion
+metadata:
+  title: Configure Azure Virtual Desktop session hosts using Azure Bastion
+  description: "Configure Azure Virtual Desktop session hosts using Azure Bastion"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-configure-azure-virtual-desktop-session-hosts-using-azure-bastion.md)]

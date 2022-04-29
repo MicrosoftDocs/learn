@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-pipeline-agents-pools.understand-typical-situations-for-agent-pools
+title: Understand typical situations for agent pools
+metadata:
+  title: Understand typical situations for agent pools
+  description: "Understand typical situations for agent pools"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-understand-typical-situations-for-agent-pools.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-desired-state-configuration-dsc.explore-azure-automation
+title: Explore Azure Automation State configuration (DSC)
+metadata:
+  title: Explore Azure Automation State configuration (DSC)
+  description: "Explore Azure Automation State configuration (DSC)"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-explore-azure-automation.md)]

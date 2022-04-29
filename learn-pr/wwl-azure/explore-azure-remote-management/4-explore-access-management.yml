@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-remote-management.explore-access-management
+title: Explore access management
+metadata:
+  title: Explore access management
+  description: "Explore access management"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-explore-access-management.md)]

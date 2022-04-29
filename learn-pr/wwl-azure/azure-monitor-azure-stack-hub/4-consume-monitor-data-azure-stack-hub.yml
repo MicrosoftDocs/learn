@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-monitor-azure-stack-hub.consume-monitoring-data-from
+title: Consume monitoring data from Azure Stack Hub
+metadata:
+  title: Consume monitoring data from Azure Stack Hub
+  description: "Consume monitoring data from Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-consume-monitor-data-azure-stack-hub.md)]

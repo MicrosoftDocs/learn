@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
-  ms.date: 03/12/2021
+  ms.date: 11/25/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -21,12 +21,12 @@ prerequisites: |
   - What infrastructure as code is, and what its benefits are.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
-  To follow along with the exercises in the module, you'll need:
-  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
-  - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
-    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+  To follow along with the exercises in the module, you'll need the following installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+  - Either the latest [Azure CLI](/cli/azure/install-azure-cli) tools, or the latest version of [Azure PowerShell](/powershell/azure/install-az-ps).
+    > [!TIP]
+    > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
 iconUrl: /learn/achievements/bicep/deploy-azure-resources-by-using-bicep-templates.svg
 levels:
   - beginner
@@ -34,6 +34,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:  
   - azure-resource-manager
 units:  

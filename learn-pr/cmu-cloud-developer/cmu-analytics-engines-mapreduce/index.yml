@@ -3,11 +3,12 @@ uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapredu
 metadata:
   title: 'Distributed computing on the cloud: MapReduce'
   description: Carnegie Mellon University's cloud developer course. MapReduce was a breakthrough in big data processing that has become mainstream and been improved upon significantly. Learn about how MapReduce works.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: 'Distributed computing on the cloud: MapReduce'
 summary: MapReduce was a breakthrough in big data processing that has become mainstream and been improved upon significantly. Learn about how MapReduce works.
 abstract: | 
@@ -40,6 +41,7 @@ prerequisites: |
   - Be familiar with NoSQL databases and object storage, and how they work
   - Know what distributed programming is and why it's useful for the cloud
 iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-mapreduce.svg
+hidden: true
 levels:
 - beginner
 roles:

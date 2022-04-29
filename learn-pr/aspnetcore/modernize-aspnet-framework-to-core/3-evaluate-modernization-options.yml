@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.modernize-aspnet-framework-to-core.3-evaluate-modernization-options
+metadata:
+  title: Evaluate modernization options and opportunities for ASP.NET applications
+  description: Understand the options and opportunities available for existing ASP.NET applications to be modernized to ASP.NET Core.
+  ms.date: 01/11/2022
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Evaluate modernization options and opportunities for ASP.NET applications
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-evaluate-modernization-options.md)]

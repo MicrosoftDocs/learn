@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Switch between pages by using tab navigation
   description: "Implement tab navigation in the sample Astronomy app by using a TabbedPage."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-navigate-between-pages-using-tab-navigation.md)]

@@ -2,31 +2,30 @@ The operations team doesn't currently have enough information about the behavior
 
 In particular, the team is interested in monitoring security events to check for possible attempts to break into the system. An attacker might try to manipulate the applications running on the system, so the team also wants to gather application data for further analysis. An attacker might also try to halt the computers that compose the system, so the team wants to examine how and when machines are stopped and restarted.
 
-In this exercise, you'll practice performing Azure Monitor log queries. You'll use a demonstration set of data.
+In this exercise, you'll practice performing Azure log queries against a demo project that contains sample data in tables, logs, and queries. 
 
 ## Create basic Azure Monitor log queries to extract information from log data
 
-Let's use the **Azure Monitor Demo Logs pane** to practice writing queries against sample data. This site is provided for demonstration with pre-populated sample data. The user interface is similar to the Azure portal, and you can use the Kusto language.
+Let's use the **Azure Demo Logs pane** to practice writing queries. The demo project workspace is pre-populated with sample data. Azure offers an optimized SQL-like query with visualization options of its data in a language called KQL (Kusto Query Language.)
 
-1. In your browser, open the [Azure Monitor Demo Logs pane](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true) in the Azure portal.
-
-1. Enter a basic query in the **Type your query here** box. This example query retrieves the details of the ten most recent security events.
+1. Open the [Logs demo environment](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true). In the top left corner, under New Query 1, you see **Demo** which identifies the workspace, or the scope of the query. The left side of this pane contains several tabs: Tables, Queries, Functions. The right side has a scratchpad for creating or editing queries.
+1. On the **New Query 1** tab, enter a basic query on the first line of the scratchpad. This query retrieves the details of the ten most recent security events.
 
     ```kusto
     SecurityEvent
         | take 10
     ```
 
-1. Select **Run** to execute the query, and see the results. You can view each row in the results for more information.
+1. In the command bar, select **Run** to execute the query, and view the results. You can expand each row in the results pane for more information.
 
-1. Sort the data by time by running the following query.
+1. Sort the data by time by adding a filter to your query.
 
     ```kusto
     SecurityEvent
         | top 10 by TimeGenerated
     ```
 
-1. Enter a query by using a filter clause and a time range. Run this query to fetch records that are more than 30 minutes old, and that have a level of 10 or more.
+1. Add a filter clause and a time range. Run this query to fetch records that are more than 30 minutes old, and that have a level of 10 or more.
 
     ```kusto
         SecurityEvent
@@ -50,12 +49,24 @@ Let's use the **Azure Monitor Demo Logs pane** to practice writing queries again
         | summarize dcount(Computer) by endofweek(TimeGenerated) | render barchart kind=default
     ```
 
-In addition to writing queries from scratch, the operations team can also take advantage of predefined example queries in Azure Monitor Logs that answer common questions related to the health, availability, usage and performance of their resources. Use the **Time Range** parameter above the query editor to select **Last 24 hours** as the time period of concern. Go to the **Queries** tab located to the right to view a list of the sample queries grouped by Category, Resource Type, Solution, or Topic.
+## Use predefined Azure log queries to extract information from log data
 
-1. Leave the Group by setting on **Resource Type**, expand **IT & Management Tools**, and run the query called **Distinct missing updates cross computers**. This query returns a list missing Windows updates from Virtual Machines sending logs into the workspace.
+In addition to writing queries from scratch, the operations team can also take advantage of predefined queries in Azure Logs that answer common questions related to the health, availability, usage, and performance of their resources.
 
-1. Change the Group by setting to **Category**, expand **Azure Monitor**, and run the query called **Computers availability today**. This query shows a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
+1. Use the **Time Range** parameter in the command bar to set a custom range. Select the month, year, and day to a range from January to today. You can set and apply a custom time to any query.
 
-1. Change the Group by setting to **Topic**, expand **Firewall Logs**, and run the query called **Network rule log data**. This query returns a list of firewall actions the details of the associated network flows.
+1. On the tool bar, select **Queries**. The **Queries** pane appears. Here, in the dropdown list in the left menu, you can view a list of the sample queries grouped by *Category*, *Query type*, *Resource type*, *Solution*, or *Topic*.
+
+1. In the dropdown list, select **Category**, and then select **IT & Management Tools**.
+
+1. In the search box, enter *Distinct missing updates cross computers*. Select **Run**. The **Logs** pane reappears with the query returning a list of Windows updates missing from virtual machines that are sending logs to the workspace.
+
+    > [!NOTE]
+    > You can also run this same query from the **Logs** pane. In the left pane, select **Queries**, and then, in the **Group by** dropdown list, select **Category**. Now scroll down the list, expand **IT & Management Tools**, and select **Distinct missing updates cross computers**.
+    > When you select a predefined query in the left pane, the query code is appended to whatever query exists in the scratchpad. Remember to clear the scratchpad before opening or adding a new query to run.
+
+1. In the left pane, select **Queries**, and then, in the **Group by** dropdown list, select **Category**. Expand **Azure Monitor**, and select **Computers availability today**. Select **Run**. This query creates a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
+
+1. In the **Group by** dropdown list, select **Topic**, scroll down to expand **Function App**, and then select **Show application logs from Function Apps**. Select **Run**. This query returns a list of application logs, sorted by time with the latest logs shown first.
 
 You can see from the Kusto queries you used here that it's easy to target a query to a specific time window, event level, or event log type. The security team can easily examine heartbeats to identify when servers are unavailable, which might indicate a denial-of-service attack. If the team spots the time when a server was unavailable, it can query for events in the security log around that time to diagnose whether an attack caused the interruption. Additionally, pre-defined queries can also evaluate the availability of VMs, identify missing Windows updates, and review firewall logs to view denied network flows intended for the VMs of interest.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access-for-azure-stack-hub.set-access-permissions-using-role-based-access-control
+title: Set access permissions using role-based access control
+metadata:
+  title: Set access permissions using role-based access control
+  description: "Set access permissions using role-based access control"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-set-access-permissions-role-based-access-control.md)]

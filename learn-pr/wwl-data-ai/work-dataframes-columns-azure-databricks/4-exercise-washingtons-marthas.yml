@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-dataframes-columns-azure-databricks.exercise-washingtons-marthas
+title: 'Exercise: Washingtons and Marthas'
+metadata:
+  title: 'Exercise: Washingtons and Marthas'
+  description: "Exercise: Washingtons and Marthas"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-washingtons-marthas.md)]

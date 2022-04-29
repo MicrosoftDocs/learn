@@ -4,12 +4,13 @@ title: Describe Azure Synapse Analytics SQL
 metadata:
   title: Describe Azure Synapse Analytics SQL
   description: "Describe Azure Synapse Analytics SQL"
-  ms.date: 06/03/2021
+  ms.date: 04/19/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-describe-sql.md)]

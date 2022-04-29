@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.career-get-noticed.6-exercise-resume-building
+title: Exercise - Build your resume
+metadata:
+  title: Exercise - Build your resume
+  description: In this exercise, you practice describing your experiences and arranging them by impact.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 08/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-resume-building.md)]

@@ -4,12 +4,13 @@ title: Secure your networks with Azure Firewall Manager
 metadata:
   title: Secure your networks with Azure Firewall Manager
   description: "Secure your networks with Azure Firewall Manager"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/8-secure-networks-with-azure-firewall-manager.md)]

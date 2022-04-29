@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.give-receive-effective-feedback
+metadata:
+  title: 'Give and receive effective feedback'
+  description: In this module, you'll learn how to give and receive effective feedback.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: 'Give and receive effective feedback'
+summary: In this module, you'll learn how to give and receive effective feedback.
+abstract:  | 
+  In this module, you will:
+  - Explore the characteristics of effective feedback.
+  - Learn about the effectiveness and characteristics of wise feedback.
+  - Learn how to provide and receive effective feedback.
+prerequisites: |
+  - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
+iconUrl: /learn/achievements/tech-resilience/give-receive-feedback.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.student-evangelism.give-receive-effective-feedback.introduction
+- learn.student-evangelism.give-receive-effective-feedback.characteristics-components-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.wise-feedback-technical-environments
+- learn.student-evangelism.give-receive-effective-feedback.provide-receive-wise-feedback
+- learn.student-evangelism.give-receive-effective-feedback.tips-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.exchange-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.exercise-reflect-effective-feedback
+- learn.student-evangelism.give-receive-effective-feedback.summary
+badge:
+  uid: learn.student-evangelism.give-receive-effective-feedback.badge 

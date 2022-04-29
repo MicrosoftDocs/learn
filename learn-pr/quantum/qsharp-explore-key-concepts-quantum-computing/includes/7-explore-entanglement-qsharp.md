@@ -1,32 +1,196 @@
-Now you'll create quantum entanglement in Q#. You'll also
-estimate the resources that you need to run our algorithms. To estimate resources, you'll use the 
-`ResourcesEstimator` tool that the Quantum Development Kit (QDK) provides.
+Now you'll create quantum entanglement in Q#. This time, instead of writting and running your program locally, you'll write a Q# program using an online Jupyter notebook in your Azure Quantum workspace. 
 
-## Create the project
+A [Jupyter](https://jupyter.org/) notebook is a document that contains both rich text and code and can run in your browser, and can run Q# and Python code in Azure Quantum.  Notebooks can be created directly in the Azure Quantum portal and offer features such as preloaded connection information and standard Q# libraries. 
 
-Start by creating a Q# project like you did previously in this module: 
+If you don´t have an Azure Quantum workspace yet, check the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 
-1. On the **View** menu, select **Command Palette**.
-1. Enter *Q#: Create New Project*.
-1. Select **Standalone console application**.
-1. Select a directory to hold your project. For example, use your home directory. Enter *ExploringEntanglement* as the project name. Then select **Create Project**.
-1. In the window that appears below, select **Open new project**.
+## Create a new Notebook in your workspace
 
-Like before, you see two files: the project file and *Program.qs*, which contains starter code.
+1. Log in to the [Azure portal](https://portal.azure.com/) and select the workspace you created in the previous step.
+1. In the left blade, select **Notebooks**.
+1. Click **My Notebooks** and click **Add New**.
+1. In **Kernel Type**, select **IQ#**.
+1. Type a name for the file, for example *Entanglement.ipynb*, and click **Create file**. 
 
-## Create entanglement in Q\#
+When your new Notebook opens, it automatically creates the code for the first cell, based on your subscription and workspace information.
+
+```dotnetcli
+%azure.connect "/subscriptions/\<subscription ID>/\<resource group>/providers/Microsoft.Quantum/Workspaces/\<workspace>" \<location>
+```
+
+> [!NOTE]
+> *%azure.connect* is an IQ# Magic command, a set of commands that help streamline tasks in Jupyter Notebooks.
+
+If you run this cell, it should authenticate to your subscription and display a list of available providers and their targets. 
+
+## Initialize a qubit using measurement
+
+The first step is to define a Q# operation that  initializes a qubit to a known state. You call this to set a qubit to a *classical* state, meaning it either returns `Zero` 100% of the time or returns `One` 100% of the time. `Zero` and `One` are Q# values that represent the only two possible results of a measurement of a qubit.
+
+Click **+Code** to add a new cell and add the following code:
+
+```qsharp
+operation SetQubitState(desired : Result, target : Qubit) : Unit {
+    if desired != M(target) {
+        X(target);
+    }
+}
+```
+
+> [!NOTE]
+> The `Microsoft.Quantum.Intrinsic` and `Microsoft.Quantum.Canon` namespaces, which are used by operations in this code, are automatically opened in every cell of an Azure Quantum notebook.
+
+The code example introduces two standard operations, `M` and `X`, which transform the state of a qubit. 
+
+The  `SetQubitState` operation:
+
+1. Takes two parameters: a type `Result`, named `desired`, that represents the desired state for the qubit to be in (0 or 1), and a type `Qubit`. 
+1. Performs a measurement operation, `M`, which measures the state of the qubit (`Zero` or `One`) and compares the result to the value specified in `desired`.
+1. If the measurement does not match the compared value, it runs an `X` operation, which flips the state of the qubit to where the probabilities of a measurement returning `Zero` and `One` are reversed. This way, `SetQubitState` always puts the target qubit in the desired state. 
+
+## Test the measurement
+
+Next, to demonstrate the effect of the `SetQubitState` operation, create another operation named `TestBellState`. 
+
+Add another new cell and add the following code:
+
+```qsharp
+operation TestBellState(count : Int, initial : Result) : (Int, Int, Int, Int) {
+    mutable numOnesQ1 = 0;
+    mutable numOnesQ2 = 0;
+
+    // allocate the qubits
+    use (q1, q2) = (Qubit(), Qubit());   
+    for test in 1..count {
+        SetQubitState(initial, q1);
+        SetQubitState(Zero, q2);
+        
+        // measure each qubit
+        let resultQ1 = M(q1);            
+        let resultQ2 = M(q2);           
+
+        // Count the number of 'Ones':
+        if resultQ1 == One {
+            set numOnesQ1 += 1;
+        }
+        if resultQ2 == One {
+            set numOnesQ2 += 1;
+        }
+    }
+
+    // reset the qubits
+    SetQubitState(Zero, q1);             
+    SetQubitState(Zero, q2);
+    
+
+    // Return number of |0> states, number of |1> states
+    Message("q1:Zero, One  q2:Zero, One");
+    return (count - numOnesQ1, numOnesQ1, count - numOnesQ2, numOnesQ2 );
+
+}
+```
+
+The `TestBellState`operation:
+
+1. Takes two parameters: `count`, the number of times to run a measurement, and `initial`, the desired state to initialize the qubit. 
+1. Calls the `use` statement to initialize two qubits.
+1. Loops for `count` iterations. For each loop, it
+    1. Calls `SetQubitState` to set a specified `initial` value on the first qubit.
+    1. Calls `SetQubitState` again to set the second qubit to a `Zero` state. 
+    1. Uses the `M` operation to measure each qubit.
+    1. Stores the number of measurements for each qubit that return `One`.
+1. After the loop completes, it calls `SetQubitState` again to reset the qubits to a known state (`Zero`) to allow others to
+allocate the qubits in a known state. This is required by the `use` statement. 
+1. Finally, it uses the `Message` function to display a message to the console before returning the results.
+
+### Test the code
+
+Before moving on to the procedures for superposition and entanglement, test the code up to this point to see the initialization and measurement of the qubits. 
+
+To run the `TestBellState` operation, you use the `%simulate` magic command to call the Azure Quantum full-state simulator. You need to specify the `count` and `initial` arguments, for example, `count=1000` and `initial=1`. This initializes the first qubit to `One` and measures each qubit 1000 times. Add a new cell with the following command and click **Run all**:
+
+```dotnetcli
+%simulate TestBellState count=1000 initial=1
+```
+
+and you should observe the following output:
+
+```output
+q1:Zero, One  q2:Zero, One
+(0, 1000, 1000, 0)
+```
+
+Because the qubits haven't been manipulated yet, they have retained their initial values: the first qubit returns `One` every time, and the second qubit returns `Zero`.
+
+If you run the cell again with `initial=0`, you should observe that the first qubit also returns `Zero` every time.
+
+```dotnetcli
+%simulate TestBellState count=1000 initial=0
+```
+
+```output
+q1:Zero, One q2:Zero, One
+(1000, 0, 1000, 0)
+```
+
+## Put a qubit in superposition in Q\#
+
+Currently, the qubits in the program are all in a *classical* state, that is, they are either 1 or 0. You know this because the program initializes the qubits to a known state, and you haven't added any processes to manipulate them.  Before entangling the qubits, you will put the first qubit into a *superposition* state, where a measurement of the qubit will return `Zero` 50% of the time and `One` 50% of the time. Conceptually, the qubit can be thought of as being in a linear combination of all states between the `Zero` and `One`.
+
+To put a qubit in superposition, Q# provides the `H`, or *Hadamard*, operation. Recall the `X` operation from the [Initialize a qubit using measurement](#initialize-a-qubit-using-measurement) procedure earlier, which flipped a qubit from 0 to 1 (or vice versa); the `H` operation flips the qubit *halfway* into a state of equal probabilities of 0 or 1. When measured, a qubit in superposition should return roughly an equal number of `Zero` and `One` results.
+
+In the previous cell with the `TestBellState`, add the `H` operation inside the `for` loop:
+
+```qsharp
+    for test in 1..count {
+        use (q1, q2) = (Qubit(), Qubit());   
+        for test in 1..count {
+            SetQubitState(initial, q1);
+            SetQubitState(Zero, q2);
+            
+            H(q1);                // Add the H operation after initialization and before measurement
+
+            // measure each qubit
+            let resultQ1 = M(q1);            
+            let resultQ2 = M(q2); 
+```
+
+Initialize the qubit to 1 again in the `%simulate` command and click **Run all**, and you can see the results of the first qubit in superposition:
+
+```dotnetcli
+%simulate TestBellState count=1000 initial=1
+```
+
+```output
+q1:Zero, One  q2:Zero, One
+(523, 477, 1000, 0)      // results will vary
+```
+
+Every time you run the program, the results for the first qubit will vary slightly, but will be close to 50% `One` and 50% `Zero`, while the results for the second qubit will remain `Zero` all the time.
+
+```output
+Q1:Zero/One  Q2:Zero/One
+(510, 490, 1000, 0)
+```
+
+Initializing the first qubit to `Zero` returns similar results.
+
+```dotnetcli
+%simulate TestBellState count=1000 initial=0
+```
+
+```output
+Q1:Zero/One  Q2:Zero/One
+(504, 496, 1000, 0)
+```
+
+## Create entanglement between two qubits in Q\#
 
 Until now, you've used only single-qubit operations. These operations act
 on single qubits individually. To entangle qubits, you need
 *multiqubit gates*.
 
-The most prominent example of a multiqubit gate is the
-[`CNOT`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true)
-operation. This operation takes two qubits as input. Then it flips the state of the
-second qubit (the target qubit) if, and only if, the state of the first qubit (the control
-qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can
-transform a register in the state $|00\rangle$ to the entangled state
-$\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
+The most prominent example of a multiqubit gate is the `CNOT` operation, which stands for *Controlled-NOT*. This operation takes two qubits as input. Then it flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can transform a register in the state $|00\rangle$ to the entangled state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
 
 Here's how it works:
 
@@ -43,46 +207,64 @@ the target qubit in the state $|0_t\rangle$.
 
    $$CNOT \frac{1}{\sqrt2}(|0_c0_t\rangle+|1_c0_t\rangle)=\frac{1}{\sqrt2}(CNOT|0_c0_t\rangle+CNOT|1_c0_t\rangle)= \frac{1}{\sqrt2}(|0_c0_t\rangle+|1_c1_t\rangle)$$
 
-To implement this pattern in Q#:
 
-1. Modify *Program.qs* like the following example. Then save the file.
+To enable entanglement, Q# provides the `CNOT` operation. The result of running this operation on two qubits is to flip the second qubit if the first qubit is `One`.
 
-   :::code language="qsharp" source="code/7-program-1.qs" highlight="11":::
+Add the `CNOT` operation to the `for` loop immediately after the `H` operation. The `TestBellState` operation should now look like this:
 
-1. Open the integrated terminal. On the **Terminal** menu, select **New Terminal**.
+```qsharp
+operation TestBellState(count : Int, initial : Result) : (Int, Int, Int, Int) {
+    mutable numOnesQ1 = 0;
+    mutable numOnesQ2 = 0;
 
-1. In the terminal, run `dotnet run`:
+    // allocate the qubits
+    use (q1, q2) = (Qubit(), Qubit());   
+    for test in 1..count {
+        SetQubitState(initial, q1);
+        SetQubitState(Zero, q2);
 
-   ```dotnetcli
-   dotnet run
-   ```
+        H(q1);
+        CNOT(q1, q2);                   // added CNOT operation
+        
+        // measure each qubit
+        let resultQ1 = M(q1);            
+        let resultQ2 = M(q2);           
 
-Your output looks something like this:
+        // Count the number of 'Ones':
+        if resultQ1 == One {
+            set numOnesQ1 += 1;
+        }
+        if resultQ2 == One {
+            set numOnesQ2 += 1;
+        }
+    }
 
-```output
-Entangled state before measurement:
-# wave function for qubits with ids (least to most significant): 0;1
-|0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
-|1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
-|2⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
-|3⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+    // reset the qubits
+    SetQubitState(Zero, q1);             
+    SetQubitState(Zero, q2);
+    
 
-State after measurement:
-# wave function for qubits with ids (least to most significant): 0;1
-|0⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
-|1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
-|2⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
-|3⟩:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
-[One,One]
+    // Return number of |0> states, number of |1> states
+    Message("q1:Zero, One  q2:Zero, One");
+    return (count - numOnesQ1, numOnesQ1, count - numOnesQ2, numOnesQ2 );
+
+}
+
 ```
 
-You obtained the same outcome for both qubits, as you might
-expect if the state were entangled. But to thoroughly check for entanglement, you must
-run this code multiple times to make sure that the result wasn't just luck. Run the
-code several times to see if the results are consistent.
+Click **Run all** to run the updated operation and you should see:
+
+```output
+Q1:Zero/One  Q2:Zero/One
+(502, 498, 502, 498)      // actual results will vary
+```
+
+The statistics for the first qubit haven't changed (a 50/50 chance of a `Zero` or a `One` after measurement), but the measurement results for the second qubit are **always** the same as the measurement of the first qubit, regardless of what the qubit is initialized to. The `CNOT` operation has entangled the two qubits, so that whatever happens to one of them, happens to the other. 
+
+> [!NOTE]
+> To thoroughly check for entanglement, you must run this code multiple times to make sure that the result wasn't just luck. Click **Run all** to run the code several times to see if the results are consistent.
    
-The state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$ isn't the only entangled state
-you can obtain by applying the operators $H$ and $CNOT$ sequentially. For example,
+The state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$ isn't the only entangled state you can obtain by applying the operators $H$ and $CNOT$ sequentially. For example,
 you can obtain the state $\frac1{\sqrt2}(|01\rangle+|10\rangle)$ if your initial
 state is $|01\rangle$. 
 
@@ -108,19 +290,57 @@ Q# is a versatile language. You can choose various ways to achieve the
 same result. Now you're going to replicate the code by using `Controlled X` instead of
 `CNOT`.
 
-1. Modify *Program.qs* like the following code. Then save the file.
+1. Add a new cell and replace the `CNOT(q1, q2)` operation with the `Controlled X(q1, q2)` operation. Your program should look like this:
 
-   :::code language="qsharp" source="code/7-program-2.qs":::
+   ```qsharp
+   operation TestBellState(count : Int, initial : Result) : (Int, Int, Int, Int) {
+       mutable numOnesQ1 = 0;
+       mutable numOnesQ2 = 0;
 
-1. In the terminal, run `dotnet run`:
+       // allocate the qubits
+       use (q1, q2) = (Qubit(), Qubit());   
+       for test in 1..count {
+           SetQubitState(initial, q1);
+           SetQubitState(Zero, q2);
 
-   ```dotnetcli
-   dotnet run
+           H(q1);
+           Controlled X(q1, q2);                   // added CONTROLLED-X operation
+
+           // measure each qubit
+           let resultQ1 = M(q1);            
+           let resultQ2 = M(q2);           
+
+           // Count the number of 'Ones':
+           if resultQ1 == One {
+               set numOnesQ1 += 1;
+           }
+           if resultQ2 == One {
+               set numOnesQ2 += 1;
+           }
+       }
+
+       // reset the qubits
+       SetQubitState(Zero, q1);             
+       SetQubitState(Zero, q2);
+
+
+       // Return number of |0> states, number of |1> states
+       Message("q1:Zero, One  q2:Zero, One");
+       return (count - numOnesQ1, numOnesQ1, count - numOnesQ2, numOnesQ2 );
+
+   }
+
    ```
 
-Your program should behave exactly like the program you created in the
-previous example, because the operations are equivalent.
+1. Click **Run all** to run the updated operation and you should see:
 
+   ```output
+   Q1:Zero/One  Q2:Zero/One
+   (502, 498, 502, 498)      // actual results will vary
+   ```
+
+
+Your program should behave exactly like the program you created in the previous example, because the operations are equivalent.
 
 
 > [!NOTE]
@@ -137,78 +357,6 @@ previous example, because the operations are equivalent.
 > about these functors and many other Q# features, see the [Q# user
 > guide](/quantum/user-guide/).
 
-## Estimate resources by using Q\#
 
-The QDK provides a built-in tool that allows you to estimate the
-resources that a quantum computer requires to run a given Q# code. The tool is called
-[`ResourcesEstimator`](/quantum/user-guide/machines/resources-estimator?azure-portal=true).
-It "runs" the quantum operation without actually simulating the state of a quantum
-computer. For this reason, it can estimate resources for Q# operations that use
-thousands of qubits, if the classical part of the code can be run in a
-reasonable time frame. 
-
-To use `ResourcesEstimator`:
-
-1. Run your program from the command line, and select `ResourcesEstimator` as
-   your simulator.
-
-   ```dotnetcli
-   dotnet run --simulator ResourcesEstimator
-   ```
-
-   You can use `ResourcesEstimator` without changing your Q#
-   code.
-
-2. Review the printed list of the quantum resources that are required to execute the code.
-
-For example, if you run the program by using the preceding Q# code block, you get this output:
-
-```output
-Metric          Sum    Max
-CNOT            1       1
-QubitClifford   1       1
-R               0       0
-Measure         2       2
-T               0       0
-Depth           0       0
-Width           2       2
-BorrowedWidth   0       0
-```
-
-> [!NOTE] 
-> The output includes two columns. For the moment, you don't need to
-> worry about how the columns differ, because both columns display the same content. They might
-> not be identical for some advanced applications of the QDK that are out of scope for
-> this module.
-
-In this example, the program contains only one operation. The output shows that the following resources are needed to
-obtain the qubits results:
-- 1 CNOT gate
-- 1 Clifford gate to apply `H`
-- 2 measurements 
-
-The width of the circuit is the number of qubits that are
-needed to run a program. In the output, the width is 2 because you used only two qubits.
-
-For this example, you could easily know how many resources you needed
-without using `ResourcesEstimator`. But Q# is a high-level
-programming language. It's virtually impossible to know
-directly how many resources most programs need. You'll find 
-`ResourcesEstimator` to be a useful tool as you advance 
-as a Q# quantum developer.
-
->[!NOTE]
-> Clifford gates are a basic kind of quantum operation. They help you
-> estimate how many resources you need to perform a quantum
-> computation. Both $H$ and $CNOT$ are examples of Clifford operations. The
-> `QubitClifford` row includes only single-qubit Clifford operations. 
->
->For more information,
-> see the Wikipedia page about [Clifford
-> gates](https://en.wikipedia.org/wiki/Clifford_gates).
-
-For more information about `ResourcesEstimator`, about each of
-the parameters in the output, and about other estimation tools, 
-see [QDK resources estimator](/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 
 In the next part, you'll explore two quantum algorithms that use superposition, interference, and entanglement to outperform classical computers.

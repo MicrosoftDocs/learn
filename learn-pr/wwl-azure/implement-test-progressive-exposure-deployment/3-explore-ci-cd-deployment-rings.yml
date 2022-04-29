@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-testing-progressive-exposure-deployment.explore-ci-cd-deployment-rings
+title: Explore CI-CD with deployment rings
+metadata:
+  title: Explore CI-CD with deployment rings
+  description: "Explore CI-CD with deployment rings"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-explore-ci-cd-deployment-rings.md)]

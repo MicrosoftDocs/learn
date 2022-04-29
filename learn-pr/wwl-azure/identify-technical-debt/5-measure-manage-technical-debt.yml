@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-technical-debt.measure-manage-technical-debt
+title: Measure and manage technical debt
+metadata:
+  title: Measure and manage technical debt
+  description: "Measure and manage technical debt"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-measure-manage-technical-debt.md)]

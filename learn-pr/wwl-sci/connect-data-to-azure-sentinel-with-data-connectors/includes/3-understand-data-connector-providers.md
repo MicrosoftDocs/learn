@@ -1,8 +1,8 @@
 ### Microsoft 365 Defender
 
-The Microsoft 365 Defender and related data connectors provide alerts and data that has already been normalized and used in the Microsoft 365 Defender portal.
+The Microsoft 365 Defender and related data connectors provide alerts and data that have already been normalized and used in the Microsoft 365 Defender portal.
 
-The Microsoft 365 Defender products include:
+The Microsoft 365 Defender products include (but are not limited to):
 
 - Microsoft Defender for Endpoint
 
@@ -10,7 +10,11 @@ The Microsoft 365 Defender products include:
 
 - Microsoft Defender for Office 365
 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
+
+- Microsoft 365 Defender
+
+- Microsoft 365 Insider Risk Management (IRM) 
 
 ### Microsoft/Azure Services
 
@@ -24,17 +28,15 @@ The connectors for Microsoft and Azure-related services include (but are not lim
 
 - Azure DDoS Protection
 
-- Azure Defender for IoT (formerly Azure Security Center for IoT)
+- Microsoft Defender for IoT 
 
 - Azure Information Protection
 
 - Azure Firewall
 
-- Azure Security Center - alerts from Azure Defender solutions
+- Microsoft Defender for Cloud
 
 - Azure Web Application Firewall (WAF) (formerly Microsoft WAF)
-
-- Cloud App Security
 
 - Domain name server
 
@@ -46,20 +48,20 @@ The connectors for Microsoft and Azure-related services include (but are not lim
 
 ### Vendor connectors
 
-Azure Sentinel provides an ever-growing list of vendor-specific data connectors.  These connectors primarily use the CEF and Syslog connector.
+Microsoft Sentinel provides an ever-growing list of vendor-specific data connectors.  These connectors primarily use the CEF and Syslog connector.
 
 > [!TIP]
 > Remember to check the connector page to see the Data Type (table) that the connector writes to
 
 ### Custom connectors using the Log Analytics API
 
-You can use the Log Analytics Data Collector API to send log data to the Azure Sentinel Log Analytics workspace.
+You can use the Log Analytics Data Collector API to send log data to the Microsoft Sentinel Log Analytics workspace.
 
 ### Logstash plugin
 
-Using Azure Sentinel's output plugin for the Logstash data collection engine, you can send any log you want through Logstash directly to your Log Analytics workspace in Azure Sentinel. The logs are written to a custom table that you define using the output plugin.
+Using Microsoft Sentinel's output plugin for the Logstash data collection engine, you can send any log you want through Logstash directly to your Log Analytics workspace in Microsoft Sentinel. The logs are written to a custom table that you define using the output plugin.
 
-## CEF and Syslog connector
+## Common Event Format and Syslog connector
 
 If there is no vendor-provided connector, you can use the generic Common Event Format(CEF) or Syslog Connector.
 
@@ -69,17 +71,17 @@ Common Event Format (CEF) is an industry-standard format on top of Syslog messag
 
 ### Syslog vs. Common Event Format
 
-CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you will need to write a parser to extract the specific fields.   The process to create a Parser for a Syslog message will be demonstrated in a later module.
+CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you will need to write a parser to extract the specific fields.  The process to create a Parser for a Syslog message will be demonstrated in a later module.
 
 ### Connector architecture options
 
-To connect the CEF or Syslog Collector to Azure Sentinel, the agent must deploy on a dedicated Azure virtual machine (VM) or an on-premises system to support the appliance's communication with Azure Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is a Virtual Machine in Azure.
+To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must deploy on a dedicated Azure virtual machine (VM) or an on-premises system to support the appliance's communication with Microsoft Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is a Virtual Machine in Azure.
 
-The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Azure Sentinel agent.
+The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Microsoft Sentinel agent.
 
 ![sending Syslog data to a dedicated Azure VM running](../media/learn-path-01.png)
 
-Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Azure Sentinel agent.
+Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Microsoft Sentinel agent.
 
 ![on-premises systems sending Syslog data to a dedicated on-premises system](../media/learn-path-02.png)
 

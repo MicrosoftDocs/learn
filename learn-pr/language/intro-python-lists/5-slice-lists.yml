@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.intro-python-lists.slice-lists
+title: Manipulate list data
+metadata:
+  unitType: learning-content
+  title: Manipulate list data
+  description: Python allows you to perform numerous operations on list data, including the ability to create smaller sections as slices, joining them together, and sorting them. We'll explore these operations.
+  ms.date: 12/03/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-languages
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-slice-lists.md)]

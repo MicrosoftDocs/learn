@@ -4,12 +4,13 @@ title: Query logs in the logs page
 metadata:
   title: Query logs in the logs page
   description: "Query logs in the logs page"
-  ms.date: 03/30/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/2-query-logs-page.md)]

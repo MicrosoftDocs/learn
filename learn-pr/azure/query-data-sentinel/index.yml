@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: azure.query-data-sentinel
 metadata:
-  title: Query, visualize, and monitor data in Azure Sentinel
-  description: Describe how to query, visualize, and monitor data in Azure Sentinel.
+  title: Query, visualize, and monitor data in Microsoft Sentinel
+  description: Describe how to query, visualize, and monitor data in Microsoft Sentinel.
   ms.date: 12/17/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Query, visualize, and monitor data in Azure Sentinel
-summary: This module describes how to query, visualize, and monitor data in Azure Sentinel.
+title: Query, visualize, and monitor data in Microsoft Sentinel
+summary: This module describes how to query, visualize, and monitor data in Microsoft Sentinel.
 abstract: |
   In this module you will:
-  - Visualize security data using Azure Sentinel Workbooks.
+  - Visualize security data using Microsoft Sentinel Workbooks.
   - Understand how queries work.
   - Explore workbook capabilities.
-  - Create an Azure Sentinel Workbook.
+  - Create a Microsoft Sentinel Workbook.
 prerequisites: |
   - Familiarity with security operations in an organization
   - Basic experience with Azure services
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
-  - An Azure Sentinel instance in your Azure subscription
+  - A Microsoft Sentinel instance in your Azure subscription
 iconUrl: /learn/achievements/query-data-sentinel.svg
 levels:
 - beginner

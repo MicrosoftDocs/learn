@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-integration.solution-azure-data-factory
+title: Design a data integration solution with Azure Data Factory
+metadata:
+  title: Design a data integration solution with Azure Data Factory
+  description: "Design a data integration solution with Azure Data Factory"
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-solution-azure-data-factory.md)]

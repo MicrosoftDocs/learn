@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api
+metadata:
+  title: Move data into and out of Azure Cosmos DB SQL API
+  description: "Migrate data into and out of Azure Cosmos DB SQL API using Azure services and open-source solutions."
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Move data into and out of Azure Cosmos DB SQL API
+summary: Migrate data into and out of Azure Cosmos DB SQL API using Azure services and open-source solutions.
+abstract: |
+  After completing this module, you'll be able to:
+  - Migrate data using Azure services
+  - Migrate data using Spark or Kafka
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-moving-data.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.introduction
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-azure-data-factory
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-kafka-connector
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-stream-analytics
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-spark-connector
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.exercise-migrate-existing-data-using-azure-data-factory
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.badge

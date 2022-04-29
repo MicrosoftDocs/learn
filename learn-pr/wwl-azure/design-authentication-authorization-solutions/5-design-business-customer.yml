@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2c
+title: Design for Azure Active Directory Business to Customer
+metadata:
+  title: Design for Azure Active Directory Business to Customer
+  description: "Design for Azure Active Directory Business to Customer"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-design-business-customer.md)]

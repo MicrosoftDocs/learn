@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.codebase-representation-codeql
+metadata:
+  title: "Identify security vulnerabilities in your codebase with CodeQL" # user input: module title for browser tab and search results
+  description: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
+  ms.date: 2/10/2022
+  author: sterling463
+  ms.author: csterling 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+title: Identify security vulnerabilities in your codebase with CodeQL
+summary: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+ By the end of this module, you'll be able to:
+  - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase
+  - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities
+  - Understand CodeQL scan results using queries created by GitHub, or your own custom queries
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - Basic knowledge of GitHub Actions
+  - Familiarity with GitHub code scanning
+  - Administrative access to a repository
+  - Familiarity with SQL, Prolog, Datalog
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - intermediate 
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - devops-engineer
+  - administrator
+  - developer
+  - student
+products:
+  - github
+units:
+- learn.codebase-representation-codeql.1-introduction
+- learn.codebase-representation-codeql.2-how-prepare-database-codeql
+- learn.codebase-representation-codeql.3-run-codeql-database
+- learn.codebase-representation-codeql.4-understand-results
+- learn.codebase-representation-codeql.5-troubleshoot-your-results
+- learn.codebase-representation-codeql.6-knowledge-check
+- learn.codebase-representation-codeql.7-summary
+badge:
+  uid: learn.codebase-representation-codeql.badge

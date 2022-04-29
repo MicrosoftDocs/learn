@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking.firewall
+title: Explore Azure Firewall
+metadata:
+  title: Explore Azure Firewall
+  description: "Explore Azure Firewall"
+  ms.date: 03/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-explore-azure-firewall.md)]

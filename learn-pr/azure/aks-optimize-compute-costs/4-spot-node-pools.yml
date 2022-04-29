@@ -6,8 +6,8 @@ metadata:
   title: Configure multiple node pools by using AKS spot node pools with the cluster autoscaler
   description: Use spot VMs for user nodes with your AKS cluster to take advantage of unused capacity in Azure and to optimize costs. Here you'll explore how to configure a spot node pool and enable the autoscaler on the node pool. You'll also see how to deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
   ms.date: 7/10/2020
-  author: cryophobia
-  ms.author: chrvaw
+  author: Nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 
@@ -51,6 +51,6 @@ quiz:
     - content: "Configure the workload manifest file with a `nodeTaint` value of `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`"
       isCorrect: false
       explanation: "The `nodeTaint` value of `kubernetes.azure.com/scalesetpriority=spot:NoSchedule` is automatically applied to the spot node pool. You configure the workload manifest file with a toleration, which tells the system to schedule the workload on the nodes in the spot node pool."
-    - content: "Configure the workload manifest file with a toleration that uses the key `kubernetes.azure.com/scalesetpriority` and applies the `NoSchedule` effect. This configuration tells the system to schedule the workload on the nodes in the spot node pool."
+    - content: "Configure the workload manifest file with a toleration that applies the `NoSchedule` effect. Both the affinity and toleration use the key `kubernetes.azure.com/scalesetpriority`. This configuration tells the system to schedule the workload on the nodes in the spot node pool."
       isCorrect: true
-      explanation: "You configure the workload manifest file with a toleration as described."
+      explanation: "You configure the workload manifest file with a toleration and node affinity as described."

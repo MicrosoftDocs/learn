@@ -1,13 +1,13 @@
-The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
+The following steps guide you on how to create roles in the Microsoft 365 Defender portal. It assumes that you have already created Azure Active Directory user groups.
 
-1. Access the Microsoft Defender Security Center using an account with a Security administrator or Global administrator role assigned.
-1. In the navigation pane, select **Settings > Roles**.
-1. Select **Add** item.
+1. Access the Microsoft 365 Defender portal using an account with a Security administrator or Global administrator role assigned.
+1. In the navigation pane, select **Settings** then select **Endpoints**.  Under the **Permissions** area select **Roles**. 
+1. Select **+ Add item**.
 1. Enter the role name, description, and permissions you'd like to assign to the role.
 1. Select **Next** to assign the role to an Azure AD Security group.
-1. Use the filter to select the Azure AD group that you'd like to add to this role to.
-1. Save and close.
-1. Apply the configuration settings.
+1. Use the filter to select the Azure AD group that you would like to add this role to.
+1. Select **Save**.
+
 
 > [!IMPORTANT]
 > After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
@@ -31,8 +31,6 @@ The permission options:
   - Threat and vulnerability management - Remediation handling - Submit new remediation requests, create tickets, and manage existing remediation activities
 
 - Alerts investigation - Manage alerts, start automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
-
-- Manage portal system settings - Configure storage settings, SIEM, and threat intel API settings (applies globally), advanced settings, automated file uploads, roles, and device groups
 
 - Manage security settings in Security Center - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 

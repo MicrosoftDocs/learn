@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Encrypt existing VM disks
   description: Exercise - Encrypt existing VM disks
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: powershell

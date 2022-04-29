@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cpp-write-your-first-program.exercise-fixing-broken-code
+title: Exercise - Fix broken code
+metadata:
+  title: Exercise - Fix broken code
+  description: Practice fixing broken C++ code and solving programming errors.
+  author: saifeemustafaq
+  ms.author: chnoring
+  ms.date: 11/18/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: nextgen
+durationInMinutes: 7
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/5-exercise-fixing-broken-code.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is *wrong* with this line of code?  `cout << "Hello World" <<
+        endl`
+      choices:
+        - content: The `c` in `cout` should be uppercase.
+          isCorrect: false
+          explanation: Incorrect. The `c` in `cout` should be lowercase.
+        - content: It's missing a semicolon at the end.
+          isCorrect: true
+          explanation: Correct! You must use a semicolon at the end of a code statement.
+        - content: The string should use single quotes.
+          isCorrect: false
+          explanation: Incorrect. A string literal must be surrounded by double quotes. A char literal is surrounded by single quotes.

@@ -8,6 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-django
+  ms.custom: team=nextgen
 title: Get the starter
 durationInMinutes: 2
 content: |

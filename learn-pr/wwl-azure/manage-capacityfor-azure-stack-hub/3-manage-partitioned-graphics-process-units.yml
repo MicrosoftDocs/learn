@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-capacityfor-azure-stack-hub.manage-partitioned-gpus
+title: Manage partitioned GPUs
+metadata:
+  title: Manage partitioned GPUs
+  description: "Manage partitioned GPUs"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-manage-partitioned-graphics-process-units.md)]

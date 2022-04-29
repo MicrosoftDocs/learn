@@ -4,8 +4,8 @@ metadata:
   title: Automate Node.js deployments with Azure Pipelines
   description: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or webpack apps with Azure Pipelines.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Node.js deployments with Azure Pipelines

@@ -4,12 +4,13 @@ title: Remove resources and resource groups
 metadata:
   title: Remove resources and resource groups
   description: "Remove resources and resource groups"
-  ms.date: 07/27/2021
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-remove-resources-groups.md)]

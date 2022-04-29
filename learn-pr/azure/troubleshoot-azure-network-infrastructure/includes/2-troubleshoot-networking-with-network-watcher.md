@@ -1,6 +1,6 @@
-Azure Network Watcher includes several tools that you can use to monitor your virtual networks and virtual machines (VMs). To effectively make use of Network Watcher, it's essential to understand all the available options and the purpose of each tool.
+Azure Network Watcher includes several tools you can use to monitor your virtual networks and virtual machines (VMs). To effectively make use of Network Watcher, it's essential to understand all the available options and the purpose of each tool.
 
-In your engineering company, you want to enable your staff to choose the right Network Watcher tool for each troubleshooting task. They need to understand all the options available and the kinds of problems that each tool can solve.
+In your engineering company, you want to help your staff to choose the right Network Watcher tool for each troubleshooting task. They need to understand all the options available and the kinds of problems that each tool can solve.
 
 Here, you'll look at the Network Watcher tool categories, the tools in each category, and how each tool is applied in example use cases.
 
@@ -15,7 +15,7 @@ With tools to monitor for and diagnose problems, Network Watcher gives you a cen
 
 ## Network Watcher monitoring tools
 
-Network Watchers provides three monitoring tools:
+Network Watcher provides three monitoring tools:
 
 - Topology
 - Connection Monitor
@@ -27,18 +27,18 @@ Let's look at each of these tools.
 
 The topology tool generates a graphical display of your Azure virtual network, its resources, its interconnections, and their relationships with each other.
 
-Suppose you have to troubleshoot a virtual network created by your colleagues. Unless you were involved in the creation process of the network, you might not know about all the aspects of the infrastructure. You can use the topology tool to visualize and understand the infrastructure you're dealing with before you start troubleshooting.
+Suppose you have to troubleshoot a virtual network created by your colleagues. Unless you were involved in the network creation process, you might not know about all the aspects of the infrastructure. You can use the topology tool to visualize and understand the infrastructure you're dealing with before you start troubleshooting.
 
 You use the Azure portal to view the topology of an Azure network. In the Azure portal:
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and select **All services**. Then, search for **Network Watcher**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and then search for and select **Network Watcher**.
 
-1. Select **Topology**.
+1. In the Network Watcher menu, under **Monitoring**, select **Topology**.
 
 1. Select a subscription, the resource group of a virtual network, and then the virtual network itself.
 
     > [!NOTE]
-    > To generate the topology, you need a Network Watcher instance in the same region as the virtual network.
+    > To generate the topology, you need the Network Watcher instance in the same geographical region as the virtual network.
 
     Here's an example of a topology generated for a virtual network named MyVNet.
 
@@ -46,7 +46,7 @@ You use the Azure portal to view the topology of an Azure network. In the Azure 
 
 ### What is the Connection Monitor tool?
 
-The Connection Monitor tool provides a way to check that connections work between Azure resources. To check that two VMs can communicate if you want them to, use this tool.
+The Connection Monitor tool provides a way to check that connections work between Azure resources. Use this tool to verify that two VMs can communicate if you want them to.
 
 This tool also measures the latency between resources. It can catch changes that will affect connectivity, such as changes to the network configuration or changes to network security group (NSG) rules. It can probe VMs at regular intervals to look for failures or changes.
 
@@ -54,22 +54,23 @@ If there's an issue, Connection Monitor tells you why it occurred and how to fix
 
 ### What is the Network Performance Monitor tool?
 
-The Network Performance Monitor tool enables you to track and alert on latency and packet drops over time. It gives you a centralized view of your network.
+The Network Performance Monitor tool lets you track and alert on latency and packet drops over time. It gives you a centralized view of your network.
 
-When you decide to monitor your hybrid connections by using Network Performance Monitor, check that the associated workspace is in a supported region.
+When you decide to monitor your hybrid connections using Network Performance Monitor, check that the associated workspace is in a supported region.
 
 You can use Network Performance Monitor to monitor endpoint-to-endpoint connectivity:
 
-- Between branches and datacenters.
-- Between virtual networks.
-- For your connections between on-premises and the cloud.
-- For Azure ExpressRoute circuits.
+- Between branches and datacenters
+- Between virtual networks
+- For your connections between on-premises and the cloud
+- For Azure ExpressRoute circuits
 
 ## Network Watcher diagnostic tools
 
-Network Watcher includes six diagnostic tools:
+Network Watcher includes the following diagnostic tools:
 
 - IP flow verify
+- NSG diagnostic
 - Next hop
 - Effective security rules
 - Packet capture
@@ -80,15 +81,21 @@ Let's examine each tool and find out how they can help you solve problems.
 
 ### What is the IP flow verify tool?
 
-The IP flow verify tool tells you if packets are allowed or denied for a specific virtual machine. If a network security group denies a packet, the tool tells you the name of that group so that you can fix the problem.
+The IP flow verify tool tells you whether packets are allowed or denied for a specific virtual machine. If a network security group denies a packet, the tool tells you the name of that group so you can fix the problem.
 
 This tool uses a 5-tuple packet parameter-based verification mechanism to detect whether packets inbound or outbound are allowed or denied from a VM. Within the tool, you specify a local and remote port, the protocol (TCP or UDP), the local IP, the remote IP, the VM, and the VM's network adapter.
 
+### What is the NSG diagnostic tool?
+
+The Network Security Group (NSG) Diagnostics tool provides detailed information to help you understand and debug the security configuration of your network. 
+
+For a given source-destination pair, the tool shows you the NSGs that will be traversed, the rules that will be applied in each NSG, and the final allow/deny status for the flow. By understanding which traffic flows will be allowed or denied in your Azure Virtual Network, you can determine if your NSG rules are configured correctly.
+
 ### What is the next hop tool?
 
-When a VM sends a packet to a destination, it might take multiple hops in its journey. For example, if the destination is a VM in a different virtual network, the next hop might be the virtual network gateway that routes the packet to the destination VM.
+When a VM sends a packet to a destination, it might take multiple hops in its journey. For example, if the destination is a VM in a different virtual network, the next hop might be to the virtual network gateway that routes the packet to the destination VM.
 
-With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source network adapter, source IP address, and destination IP address. The tool then determines the packet's destination. You can use this tool to diagnose problems caused by incorrect routing tables.
+With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source network adapter, source IP address, and destination IP address. The tool then determines the packet's route. You can use this tool to diagnose problems caused by incorrect routing tables.
 
 ### What is the effective security rules tool?
 
@@ -104,13 +111,13 @@ You can also use the tool to spot vulnerabilities for your VM caused by unnecess
 
 ### What is the packet capture tool?
 
-You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the capture to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
+The packet capture tool records all of the packets sent to and from a VM. When enabled, you can review the capture to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
 
-The packet capture tool is a virtual machine extension that is remotely started through Network Watcher and happens automatically when you start a packet capture session.
+The packet capture tool is a virtual machine extension started remotely through Network Watcher. It starts automatically when you start a packet capture session.
 
-Keep in mind that there is a limit to the amount of packet capture sessions allowed per region. The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
+Keep in mind that there's a limit to the number of packet-capture sessions allowed per region. The default usage limit is 100 packet-capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
 
-Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. For links to instructions that detail the installation of the extension on both Windows and Linux VMs, see the "Learn more" section at the end of this module.
+Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. For links to instructions that detail the installation of the extension on Windows and Linux VMs, see the "Learn more" section at the end of this module.
 
 ### What is the connection troubleshoot tool?
 

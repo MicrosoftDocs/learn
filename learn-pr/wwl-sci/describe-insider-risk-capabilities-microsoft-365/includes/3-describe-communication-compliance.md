@@ -1,6 +1,9 @@
-Communication compliance in Microsoft 365 compliance center helps minimize communication risks by enabling organizations to detect, capture, and take remediation actions for inappropriate messages. Predefined and custom policies in communication compliance make it possible to scan internal and external communications for policy matches so they can be examined by chosen reviewers.
+> [!NOTE]
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft 365 Communication Compliance is now Microsoft Purview Communication Compliance. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
-Identifying and resolving compliance issues with communication compliance in Microsoft 365 uses the following workflow:
+Communication compliance in the Microsoft Purview compliance portal helps minimize communication risks by enabling organizations to detect, capture, and take remediation actions for inappropriate messages. Predefined and custom policies in communication compliance make it possible to scan internal and external communications for policy matches so they can be examined by chosen reviewers.
+
+Identifying and resolving compliance issues with communication compliance in Microsoft Purview uses the following workflow:
 
 :::image type="content" source="../media/3-communication-compliance-workflow-inline.png" lightbox="../media/3-communication-compliance-workflow-expanded.png" alt-text="Diagram showing the communication compliance workflow.":::
 
@@ -17,8 +20,13 @@ Some important compliance areas where communication compliance policies can assi
 - **Risk management** - Communication compliance can help admins scan for unauthorized communication about projects that are considered to be confidential, such as acquisitions, earnings disclosures, and more.
 - **Regulatory compliance** - Most organizations are expected to follow some regulatory compliance standards during their day-to-day operations. For example, a regulation might require organizations to review communications of its brokers to safeguard against potential insider trading, money laundering, or bribery. Communication compliance enables the organization to scan and report on these types of communications in a way that meets their requirements.
 
-Watch the video below for a walkthrough of communication compliance in compliance center:
+Watch the video below for a walk-through of Microsoft Purview Communication Compliance.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xlaF]
+> [!NOTE]
+> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4xlaF]
 
 Communication compliance is a powerful tool, that can help maintain and safeguard your staff, your data and your organization.

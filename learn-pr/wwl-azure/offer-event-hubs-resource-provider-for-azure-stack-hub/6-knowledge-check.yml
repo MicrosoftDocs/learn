@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator wants to rotate certificates for an Azure Stack Hub instance. Which PowerShell cmdlet should be used to rotate internal and external secrets?"
+    choices:
+    - content: "Get-AzKeyVaultSecret"
+      isCorrect: false
+      explanation: "Incorrect. Get-AzKeyVaultSecret gets the secrets in a key vault."
+    - content: "Invoke-AzsProductRotateSecretsAction"
+      isCorrect: true
+      explanation: "Correct. Invoke-AzsProductRotateSecretsAction -ProductId $productId, with ProductId provides the product ID of the latest resource provider deployment."
+    - content: "Set-AzsProductSecret"
+      isCorrect: false
+      explanation: "Incorrect. Set-AzsProductSecret cmdlet imports new certificate to Key Vault."
+  - content: "An Azure Stack Hub operator plans on deploying an Event Hubs resource provider within Azure Stack Hub that provides a CU Azure Event Hubs cluster with 5x D11 _V2 virtual machines. What other management resources are required for the Event Hubs resource provider?"
+    choices:
+    - content: "A cluster of 3x D2_V2 virtual machines that scales linearly to a maximum of 10 as Event Hubs clusters are added."
+      isCorrect: false
+      explanation: "Incorrect. The resource consumption by the Event Hubs resource provider is constant, and independent of the number of clusters created."
+    - content: "A cluster of 3x D2_V2 virtual machines that does not scale as Event Hubs clusters are added."
+      isCorrect: true
+      explanation: "Correct. The resource consumption by the Event Hubs resource provider is constant, and independent of the number or sizes of clusters created by users."
+    - content: "A 1x D2_V2 virtual machine that does not scale as Event Hubs clusters are added."
+      isCorrect: false
+      explanation: "That's incorrect. The resource consumption by the Event Hubs resource provider is constant, and independent of the number or sizes of clusters created by users."

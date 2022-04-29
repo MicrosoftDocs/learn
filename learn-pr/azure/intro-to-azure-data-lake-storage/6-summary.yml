@@ -7,8 +7,8 @@ metadata:
   title: Summary
   description: Summary for the Introduction to Azure Data Lake Storage module.
   ms.date: 06/17/2021
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
 durationInMinutes: 2
 content: |

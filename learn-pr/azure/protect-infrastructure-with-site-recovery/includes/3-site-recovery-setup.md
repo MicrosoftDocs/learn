@@ -6,12 +6,12 @@ Here, we'll explore how to take advantage of the automated features in Site Reco
 
 ## Environment setup
 
-We need to set up our environment for our later exercises. As this setup takes a few minutes to complete, we'll start the process now, and then we can work through some of the theory while the configuration completes in the background.
+We need to set up our environment for exercises in subsequent units. Because this setup takes a few minutes to complete, we'll start the process now, and then we can work through some of the theory while the configuration completes in the background.
 
 > [!NOTE]
 > If you want to complete the following setup, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Let's assume, we have two VMs configured in the organization. We'll configure the following services in the West US region to simulate the configured VMs.
+Let's assume we have two VMs configured in the organization. We'll configure the following services in the East US region to simulate the configured VMs.
 
 - A virtual network
 - Two VMs
@@ -23,7 +23,7 @@ Our first step is to create our exercise environment. We'll run a script that cr
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with your credentials, and start a Cloud Shell session.
 
-1. Make sure you're running a Bash session in Cloud Shell.
+1. In Cloud Shell toolbar, make sure you're running a Bash session.
 
 1. Copy the Azure Resource Manager JSON templates to create your company's infrastructure.
 
@@ -31,7 +31,7 @@ Our first step is to create our exercise environment. We'll run a script that cr
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-protect-infrastructure-with-azure-site-recovery/master/deploy.json > deploy.json
     ```
 
-1. Run the following command to create resource groups and the company's infrastructure.
+1. Run the following commands to create resource groups and the company's infrastructure.
 
     ```bash
     az group create --name east-coast-rg --location eastus2
@@ -44,7 +44,7 @@ Our first step is to create our exercise environment. We'll run a script that cr
         --resource-group west-coast-rg
     ```
 
-Configuring the environment can take up to five minutes to complete. We're now ready to continue with the rest of this unit while the deployment completes.
+Configuring the environment can take up to five minutes to complete. We can continue with the rest of this unit while the deployment completes.
 
 ## Disaster recovery preparation with Azure Site Recovery
 
@@ -55,11 +55,11 @@ Site Recovery will manage and orchestrate our DR process for Azure VMs or on-pre
 - Configure outbound network connectivity
 - Set up replication on existing VMs
 
-![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/3-enable-replication-step-2.png)
+:::image type="content" source="../media/3-enable-replication-step-2.png" alt-text="Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region." border="false":::
 
 ### What is a Recovery Services vault?
 
-A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, provision a recovery services vault using the portal or the Azure CLI.
+A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we will provision a recovery services vault using the portal or the Azure CLI.
 
 ### What are the target resources?
 

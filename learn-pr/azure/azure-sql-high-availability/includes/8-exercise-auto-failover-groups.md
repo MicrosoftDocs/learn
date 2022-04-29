@@ -23,7 +23,7 @@ This exercise will guide you through configuring auto-failover groups for your A
     ```powershell
     # Add your info
     $password = "password"
-    $drLocation = "eastus2"
+    $drLocation = "westus2"
     $ipAddress = "xx.xx.xx.xx"
     ```
 

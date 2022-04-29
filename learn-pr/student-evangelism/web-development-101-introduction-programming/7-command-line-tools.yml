@@ -4,10 +4,11 @@ metadata:
   title: Command-line tools
   description: In this unit, you learn about command-line tools and how to use them.
   ms.date: 03/24/2021
-  author: chloecodesthings
-  ms.author: chcondon
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Command-line tools
 durationInMinutes: 2
 content: |

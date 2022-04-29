@@ -14,9 +14,9 @@ In Azure Functions, bindings provide a declarative way to connect to data from w
 
 There are two kinds of bindings you can use with functions:
 
-- **Input binding** - Connects to a data **source**. Our function can read data from these inputs.
+- **Input binding** - Connects to a data **source**. Our function can read data from these input sources.
 
-- **Output binding** - Connects to a data **destination**. Our function can write data to these destinations.
+- **Output binding** - Connects to a data **destination**. Our function can write data to these output destinations.
 
 There are also _triggers_, which are special types of input bindings that cause a function to run. For example, an Azure Event Grid notification can be configured as a trigger. When an event occurs, the function will run.
 
@@ -26,7 +26,8 @@ The *type* of binding defines where we are reading or sending data. There is a b
 
 A binding type can be used as an input, an output, or both. For example, a function can write to a Blob Storage output binding, but a Blob Storage update could trigger another function.
 
-Some common binding types follow:
+Common binding types include:
+
 - Blob Storage
 - Azure Service Bus Queues
 - Azure Cosmos DB
@@ -39,7 +40,7 @@ These types are just a sample. There are more, plus functions have an extensibil
 
 ### Binding properties
 
-Three properties are required in all bindings. You may have to supply additional properties based on the type of binding and storage you are using.
+Three properties are required in all bindings. You may have to supply additional properties based on the type of binding and storage you're using.
 
 - **Name** - Defines the function parameter through which you access the data (for example, in a queue input binding, this is the name of the function parameter that receives the queue message content).
 
@@ -75,7 +76,7 @@ To create this binding, we:
 
 1. Provide the value for the `name` variable. In this example, the variable holds the blob data.
 
-1. Provide the storage `type`. In the preceding example, we are using Blob Storage.
+1. Provide the storage `type`. In the preceding example, we're using Blob Storage.
 
 1. Provide the `path`, which specifies the container and the item name that goes in it. The `path` property is required when using the blob trigger, and should be provided in the style shown here, with curly braces around the filename portion of the path. This creates a *binding expression* that allows you to reference the blob's name in other bindings, and in your function's code. In this example, a parameter on the function named *filename* would be populated with the filename of the blob that triggered the function.
 

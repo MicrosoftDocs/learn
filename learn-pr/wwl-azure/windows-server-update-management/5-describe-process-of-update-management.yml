@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.windows-server-update-management.describe-process-of-update-management
+title: Describe the process of Update Management
+metadata:
+  title: Describe the process of Update Management
+  description: "Describe the process of Update Management"
+  ms.date: 12/14/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-describe-process-of-update-management.md)]

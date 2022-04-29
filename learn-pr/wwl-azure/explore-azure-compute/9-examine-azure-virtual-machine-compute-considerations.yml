@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-compute.examine-azure-virtual-machine-compute-considerations
+title: Examine Azure virtual machine compute considerations
+metadata:
+  title: Examine Azure virtual machine compute considerations
+  description: "Examine Azure virtual machine compute considerations"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-examine-azure-virtual-machine-compute-considerations.md)]

@@ -1,16 +1,14 @@
-
 Azure AD External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources, while letting them sign in using whatever identity they prefer. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD to keep your resources protected.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram of the different ways an external user account can be generated and verified, as they are invited to you Azure AD.](../media/sc300-external-user-state-diagram.png)
+:::image type="content" source="../media/sc300-external-user-state-diagram-14825cd5.png" alt-text="Diagram of the different ways an external user account can be generated and verified, as they are invited to you Azure AD.":::
+
 
 Depending on the inviting organization's needs, an Azure AD B2B collaboration user can be in one of the following account states:
 
-- State 1: Homed in an external instance of Azure AD and represented as a guest user in the inviting organization. In this case, the B2B user signs in by using an Azure AD account that belongs to the invited tenant. If the partner organization doesn't use Azure AD, the guest user in Azure AD is still created. The requirements are that they redeem their invitation and Azure AD verifies their email address. This arrangement is also called a just-in-time (JIT) tenancy or a "viral" tenancy.
-- State 2: Homed in a Microsoft or other account and represented as a guest user in the host organization. In this case, the guest user signs in with a Microsoft account or a social account. The invited user's identity is created as a Microsoft account in the inviting organization’s directory during offer redemption.
-- State 3: Homed in the host organization's on-premises Active Directory and synced with the host organization's Azure AD. You can use Azure AD Connect to sync the partner accounts to the cloud as Azure AD B2B users with UserType = Guest. See Grant locally-managed partner accounts access to cloud resources.
-- State 4: Homed in the host organization's Azure AD with UserType = Guest and credentials that the host organization manages.
-
+ -  State 1: Homed in an external instance of Azure AD and represented as a guest user in the inviting organization. In this case, the B2B user signs in by using an Azure AD account that belongs to the invited tenant. If the partner organization doesn't use Azure AD, the guest user in Azure AD is still created. The requirements are that they redeem their invitation and Azure AD verifies their email address. This arrangement is also called a just-in-time (JIT) tenancy or a "viral" tenancy.
+ -  State 2: Homed in a Microsoft or other account and represented as a guest user in the host organization. In this case, the guest user signs in with a Microsoft account or a social account. The invited user's identity is created as a Microsoft account in the inviting organization’s directory during offer redemption.
+ -  State 3: Homed in the host organization's on-premises Active Directory and synced with the host organization's Azure AD. You can use Azure AD Connect to sync the partner accounts to the cloud as Azure AD B2B users with UserType = Guest. See Grant locally-managed partner accounts access to cloud resources.
+ -  State 4: Homed in the host organization's Azure AD with UserType = Guest and credentials that the host organization manages.
 
 ## External identities scenarios
 
@@ -20,19 +18,13 @@ A B2B collaboration scenario allows you to invite external users into your own t
 
 The following list identifies an example B2B collaboration scenario and details some of the capabilities it provides:
 
-- **Primary scenario** - Collaboration using Microsoft applications (Microsoft 365, Teams, and so on) or your own applications (SaaS apps, custom-developed apps, and so on).
-
-- **Intended for** - Collaborating with business partners from external organizations like suppliers, partners, vendors. Users appear as guest users in your directory. These users may or may not have managed IT.
-
-- **Identity providers supported** - External users can collaborate using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook.
-
-- **External user management** - External users are managed in the same directory as employees, but are typically annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on.
-
-- **Single sign-on (SSO)** - SSO to all Azure AD-connected apps is supported. For example, you can provide access to Microsoft 365 or on-premises apps, and to other SaaS apps such as Salesforce or Workday.
-
-- **Security policy and compliance** - Managed by the host/inviting organization (for example, with Conditional Access policies).
-
-- **Branding** - Host/inviting organization's brand is used.
+ -  **Primary scenario** \- Collaboration using Microsoft applications (Microsoft 365, Teams, and so on) or your own applications (SaaS apps, custom-developed apps, and so on).
+ -  **Intended for** \- Collaborating with business partners from external organizations like suppliers, partners, vendors. Users appear as guest users in your directory. These users may or may not have managed IT.
+ -  **Identity providers supported** \- External users can collaborate using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook.
+ -  **External user management** \- External users are managed in the same directory as employees, but are typically annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on.
+ -  **Single sign-on (SSO)** \- SSO to all Azure AD-connected apps is supported. For example, you can provide access to Microsoft 365 or on-premises apps, and to other SaaS apps such as Salesforce or Workday.
+ -  **Security policy and compliance** \- Managed by the host/inviting organization (for example, with Conditional Access policies).
+ -  **Branding** \- Host/inviting organization's brand is used.
 
 ## Manage external collaboration settings in Azure Active Directory
 
@@ -46,13 +38,9 @@ Azure AD allows you to restrict what external guest users can see in your Azure 
 
 With Azure AD B2B (Business to Business) collaboration, a tenant admin can set the following invitation policies:
 
-- Turn off invitations
-
-- Only admins and users in the Guest Inviter role can invite
-
-- Admins, the Guest Inviter role, and members can invite
-
-- All users, including guests, can invite
+ -  Turn off invitations (no external users can be invited)
+ -  Only admins and users in the Guest Inviter role can invite (only admins and users in the Guest Inviter role can invite)
+ -  Admins, the Guest Inviter role, and members can invite (same as above setting, but invited members can also invite external users)
+ -  All users, including guests, can invite (as the name implies, all users in the tenant can invite external users)
 
 By default, all users, including guests, can invite guest users.
-

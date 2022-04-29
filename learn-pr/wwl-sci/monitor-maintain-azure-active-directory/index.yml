@@ -3,20 +3,20 @@ uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
   title: Monitor and maintain Azure Active Directory
   description: "Monitor and maintain Azure Active Directory"
-  ms.date: 08/04/2021
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor and maintain Azure Active Directory
-summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution.  Learn to monitor, troubleshoot, and analyze sign-in data.
+summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution.  Learn to monitor, troubleshoot, and analyze sign in data.
 abstract: |
-  By the end of this module, you will be able to:
-  - Analyze and investigate sign-in logs to troubleshoot access issues
+  By the end of this module, you'll be able to:
+  - Analyze and investigate sign in logs to troubleshoot access issues
   - Review and monitor Azure AD audit logs
   - Enable and integrate Azure AD diagnostic logs with Log Analytics / Azure Sentinel
-  - Export sign-in and audit logs to a third-party SIEM
-  - Review Azure AD activity by using Log Analytics / Azure Sentinel, excluding KQL use
+  - Export sign in and audit logs to a third-party SIEM (security information and event management)
+  - Review Azure AD activity by using Log Analytics / Azure Sentinel, excluding KQL (kusto query language) use
   - Analyze Azure Active Directory workbooks / reporting
   - Configure notifications
 prerequisites: |

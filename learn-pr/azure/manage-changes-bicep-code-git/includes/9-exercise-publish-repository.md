@@ -87,7 +87,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ## Configure your local Git repository
 
-1. Ensure you're on the **main** branch by entering the following command in the Visual Studio Code terminal:
+1. Ensure you're on the *main* branch by entering the following command in the Visual Studio Code terminal:
 
    ```bash
    git checkout main
@@ -111,7 +111,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
    git push -u origin main
    ```
 
-   Because your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote repository.
+   Because your current local branch is *main*, this command tells Git that your local *main* branch _tracks_ the *main* branch in your remote repository. It also _pushes_ the commits from your local repository to the remote repository.
 
 1. This is the first time you've used this remote repository, so the terminal prompts you to select how to authenticate. Choose the option to use the browser.
 
@@ -144,7 +144,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
    git push -u origin main
    ```
 
-   Because your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
+   Because your current local branch is *main*, this command tells Git that your local *main* branch _tracks_ the *main* branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
 
 1. This is the first time you've used this repository, so you're prompted to sign in.
 

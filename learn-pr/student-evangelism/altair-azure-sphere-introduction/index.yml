@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-introduction
+metadata:
+  title: Introduction to the Altair 8800 and Azure Sphere
+  description: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Introduction to the Altair 8800 and Azure Sphere
+summary: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
+abstract:  |
+  In this module, you will:
+  - Learn about the history of the Altair 8800, the computer that kick-started the personal computer revolution.
+  - Learn about the three components of Azure Sphere and how they provide a platform for improved-security IoT.
+  - Apply the Azure IoT services that are used to connect the Altair 8800 to the cloud.
+prerequisites: |
+  - A computer that has an x86-64-based processor and that runs one of these operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-introduction.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-introduction.introduction-altair
+- learn.student-evangelism.altair-azure-sphere-introduction.altair
+- learn.student-evangelism.altair-azure-sphere-introduction.azure-sphere
+- learn.student-evangelism.altair-azure-sphere-introduction.architecture
+- learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-introduction.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-introduction.badge

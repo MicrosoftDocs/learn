@@ -12,9 +12,9 @@ Now that you have completed this module, you should be able to:
 
 Use these resources to discover more.
 
-- [Create custom sensitive information types with Exact Data Match - Microsoft 365 Compliance | Microsoft Docs](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Create exact data match sensitive information type/rule package](/microsoft-365/compliance/sit-get-started-exact-data-match-create-rule-package?view=o365-worldwide?azure-portal=true)
 
-- [Use mail flow rules to inspect message attachments in Exchange Online | Microsoft Docs](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [Use mail flow rules to inspect message attachments in Exchange Online | Microsoft Docs](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments?azure-portal=true)
 
-- [Regular Expression Language - Quick Reference | Microsoft Docs](/dotnet/standard/base-types/regular-expression-language-quick-reference)
+- [Regular Expression Language - Quick Reference | Microsoft Docs](/dotnet/standard/base-types/regular-expression-language-quick-reference?azure-portal=true)
 

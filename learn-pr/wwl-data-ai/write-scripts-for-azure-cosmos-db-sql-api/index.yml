@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
+metadata:
+  title: Write management scripts for Azure Cosmos DB SQL API
+  description: "Learn how to manage Azure Cosmos DB SQL API accounts, databases, and containers using the Azure CLI."
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write management scripts for Azure Cosmos DB SQL API
+summary: Learn how to manage Azure Cosmos DB SQL API accounts, databases, and containers using the Azure CLI.
+abstract: |
+  After completing this module, you'll be able to:
+  - View arguments, groups, and subgroups for a specific CLI command
+  - Create Azure Cosmos DB accounts, databases, and containers using the CLI
+  - Manage an indexing policy using the CLI
+  - Configure database or container throughput using the CLI
+  - Initiate failovers and manage failover regions using the CLI
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-write-scripts.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.introduction
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.create-resources
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.manage-index-policies
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.configure-database-container-provisioned-throughput
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.migrate-standard-autoscale-throughput
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.change-region-failover-priority
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.initiate-failovers
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.exercise-adjust-provisioned-throughput-using-azure-cli-script
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.badge

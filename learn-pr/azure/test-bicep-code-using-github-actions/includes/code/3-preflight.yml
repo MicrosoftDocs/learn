@@ -1,0 +1,21 @@
+jobs: 
+  lint: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - script: |
+        az bicep build --file deploy/main.bicep
+  
+  validate: 
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      name: Run preflight validation
+      with:
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: ./deploy/main.bicep
+        deploymentMode: Validate

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.autoscale-java-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check of what you've learned
+  ms.date: 11/18/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: ropreddy-12032021
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "Which of these statements best describes autoscaling?"
+    choices:
+    - content: "Autoscaling is a scale up/scale down solution. It migrates an application to more powerful hardware during periods of high demand, and moves it back to less powerful hardware when demand drops."
+      isCorrect: false
+      explanation: "No. Autoscaling is a scale out/scale in solution. It adds and removes instances of resources rather than migrating to more powerful hardware."
+    - content: "Autoscaling requires an administrator to actively monitor the workload on a system. If the workload increases and response times start to drop, the administrator can trigger autoscaling to help increase the throughput of the system."
+      isCorrect: false
+      explanation: "No. Autoscaling is an automated process that doesn't require manual intervention. You define autoscale rules, which monitor resource usage. When these rules determine that usage exceeds a certain threshold, autoscaling will increase the resources available by scaling out. When the usage falls, autoscaling can remove these resources."
+    - content: "Autoscaling is a scale out/scale in solution. The system can scale out when specified resource metrics indicate increasing usage, and scale in when these metrics drop."
+      isCorrect: true
+      explanation: "This answer is correct"
+    - content: "Scaling in and out provides better availability than autoscaling."
+      isCorrect: false
+      explanation: "No. Autoscaling increases availability by adding more instances of services. If one of these instances fails, the others should still be available. In a scale up solution, the failure of a single instance could stop the entire service."
+  - content: "Which of these scenarios is a suitable candidate for autoscaling?"
+    choices:
+    - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on a Friday than other days of the week."
+      isCorrect: true
+      explanation: "This answer is correct"
+    - content: "The system is subject to a sudden influx of requests that grinds your system to a halt. The workload has increased exponentially and there appears to be no reason for this surge of activity."
+      isCorrect: false
+      explanation: "The increasing burst of activity could be caused by a Denial of Service attack that is attempting to overwhelm your system. Autoscaling wouldn't solve the problem. Filter these requests out using your security infrastructure before they reach the servers hosting your system."
+    - content: "Your organization is running a promotion and expects to see increased traffic to their web site for the next couple of weeks. You base your autoscaling strategy on counters that measure business processes."
+      isCorrect: false
+      explanation: "If you base your autoscaling strategy on counters that measure business processes, such as the number of orders placed per hour or the average execution time of a complex transaction, ensure that you fully understand the relationship between the results from these types of counters and the actual compute capacity requirements."
+  - content: "The DevOps team for a large food delivery company is configuring an Azure Spring Cloud implementation. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following autoscale rule types should be configured?"
+    choices:
+    - content: "A metric-based rule."
+      isCorrect: false
+      explanation: "That's incorrect. Metric-based rules measure application load and add or remove applications instances based on that load."
+    - content: "An app-insight rule."
+      isCorrect: false
+      explanation: "That's incorrect. App-insight rule isn't a valid choice."
+    - content: "A schedule-based rule."
+      isCorrect: true
+      explanation: "That's correct. Schedule-based rules allow scaling based on time patterns."

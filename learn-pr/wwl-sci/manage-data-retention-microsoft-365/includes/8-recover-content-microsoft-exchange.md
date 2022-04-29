@@ -2,9 +2,7 @@ Recovering content in Exchange Online, that is stored in the folder structure of
 
 Perform the following steps to create an eDiscovery case and export data from mailboxes:
 
-1. Navigate to the **Microsoft 365 Compliance Center**.
-
-1. Select **... Show all** to display all settings.
+1. Navigate to the **Microsoft 365 Compliance center**.
 
 1. Select **eDiscovery** > **Core** in the left navigation pane.
 
@@ -55,7 +53,7 @@ New-ComplianceSearchAction -SearchName <case name> -Export
 
 To gain access to the PST-Files, you need to visit the Security & Compliance Center and download them using the ClickOnce application.
 
-1. In the **Security & Compliance Center**, select **Search** > **Content Search**.
+1. In the **Microsoft 365 Compliance center**, under Solutions select **Content search**.
 
 1. Go to the **Exports** tab and select the Export you generated.
 

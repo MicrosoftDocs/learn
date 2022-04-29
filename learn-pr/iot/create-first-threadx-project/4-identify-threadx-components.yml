@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.create-first-threadx-project.identify-threadx-components
+title: Identify ThreadX components
+metadata:
+  title: Identify ThreadX components
+  description: Overview of the ThreadX resources needed for the Hello World project.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-identify-threadx-components.md)]

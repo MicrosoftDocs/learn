@@ -3,9 +3,9 @@ uid: learn.wwl.backup-restore-databases
 metadata:
   title: Back up and restore databases
   description: "Back up and restore databases"
-  ms.date: 02/12/2021
+  ms.date: 01/10/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Back up and restore databases

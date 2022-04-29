@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.exercise-process-change-feed-events-using-sdk
+title: 'Exercise: Process change feed events using the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Process change feed events using the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Process change feed events using the Azure Cosmos DB SQL API SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107583
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-process-change-feed-events-use-sdk.md)]

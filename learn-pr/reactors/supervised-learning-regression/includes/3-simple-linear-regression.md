@@ -86,11 +86,11 @@ The output is:
 
 > |  | region | group | fertility | ppgdp | lifeExpF | pctUrban | log_ppgdp |
 > | --- | --- | --- | --- | --- | --- | --- | --- |
-> | 0 | Asia | other | 5.968 | 499.0 | 49.49 | 23 | 2.698101 |
-> | 1 | Europe | other | 1.525 | 3677.2 | 80.40 | 53 | 3.565517 |
-> | 2 | Africa | africa | 2.142 | 4473.0 | 75.00 | 67 | 3.650599 |
-> | 3 | Africa | africa | 5.135 | 4321.9 | 53.17 | 59 | 3.635675 |
-> | 4 | Caribbean | other | 2.000 | 13750.1 | 81.10 | 100 | 4.138306 |
+> | **0** | Asia | other | 5.968 | 499.0 | 49.49 | 23 | 2.698101 |
+> | **1** | Europe | other | 1.525 | 3677.2 | 80.40 | 53 | 3.565517 |
+> | **2** | Africa | africa | 2.142 | 4473.0 | 75.00 | 67 | 3.650599 |
+> | **3** | Africa | africa | 5.135 | 4321.9 | 53.17 | 59 | 3.635675 |
+> | **4** | Caribbean | other | 2.000 | 13750.1 | 81.10 | 100 | 4.138306 |
 
 Let's now plot our new `log_ppgdp` column against `lifeExpF` to see if there is a more linear relationship.
 
