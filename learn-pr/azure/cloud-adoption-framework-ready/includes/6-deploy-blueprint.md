@@ -1,12 +1,12 @@
-The first step toward the deployment of an Azure landing zone is the implementation of a Cloud Adoption Framework template. When you're following the *start small and expand* approach, you start with the CAF Migration landing zone blueprint.
+The first step toward the deployment of an Azure landing zone is the implementation of a Cloud Adoption Framework template. When you're following the *start small and expand* approach, you'll start with the CAF Migration landing zone blueprint.
 
 ## Deploy the blueprint sample
 
 Starting with an empty Azure subscription, you'll deploy the blueprint sample by doing the following tasks:
 
-- Create a new blueprint from the sample.
-- Mark your copy of the sample as **Published**.
-- Assign your copy of the blueprint to a current subscription.
+- Create a new blueprint from the sample
+- Mark your copy of the sample as **Published**
+- Assign your copy of the blueprint to a current subscription
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
@@ -18,7 +18,7 @@ First, implement the blueprint sample by creating a new blueprint in your enviro
 
 1. From the **Getting started** page on the left, select the **Create** button under **Create a blueprint**.
 
-1. Find the **CAF Migration landing zone** blueprint sample under **Other Samples** and select **Use this sample**.
+1. Find the **CAF Migration landing zone** blueprint sample under **Other Samples**.
 
 1. Under **Basics**, enter the following information:
    - For **Blueprint name**, provide a name for your copy of the sample CAF Migration landing zone blueprint.
@@ -31,6 +31,8 @@ First, implement the blueprint sample by creating a new blueprint in your enviro
 ## Publish the sample copy
 
 Your copy of the blueprint sample has now been created in your environment. It's created in **Draft** mode and must be in **Published** mode before you can assign and deploy it. The copy of the blueprint sample can be customized to your environment and needs, but that modification might move it away from the guidance for the CAF Migrate landing zone blueprint.
+
+1. Go to the [Azure portal](https://portal.azure.com).
 
 1. Select **All services** on the left pane. Search for and select **Blueprints**.
 
@@ -61,7 +63,7 @@ After the copy of the blueprint sample has been successfully published, you can 
      - **Location**: Select a region in which to create the managed identity. Azure Blueprints uses this managed identity to deploy all artifacts in the assigned blueprint.
      - **Blueprint definition version**: Pick a **Published** version of your copy of the blueprint sample.
    - Under **Lock assignment**, select the blueprint lock setting for your environment.
-   - Under **Managed identity**, choose either the default **system assigned** identity option or the **user assigned** identity option.
+   - Under **Managed identity**, choose either the default **System assigned** identity option or the **User assigned** identity option.
    - Under **Blueprint parameters**, define the following parameters. Many of the artifacts in the blueprint definition use these parameters to provide consistency.
 
        - **Organization**: Enter your organization's name. It must be unique.
@@ -80,8 +82,8 @@ The following table lists the parameters for blueprint artifacts:
 
 |Artifact name|Artifact type|Parameter name|Description|
 |-|-|-|-|
-| Deploy VNet landing zone | Azure Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets (for example, 10.0). |
-| Deploy Key Vault | Azure Resource Manager template | `KV-AccessPolicy` | **Locked** - The group or user object ID to grant permissions to in Azure Key Vault. |
-| Deploy Log Analytics | Azure Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The number of days that data will be retained in Log Analytics. |
-| Deploy Log Analytics | Azure Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used for establishing the workspace. |
-| Deploy Azure Migrate | Azure Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate. |
+| Deploy VNet landing zone | Azure Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets (for example, 10.0) |
+| Deploy Key Vault | Azure Resource Manager template | `KV-AccessPolicy` | **Locked** - The group or user object ID to grant permissions to in Azure Key Vault |
+| Deploy Log Analytics | Azure Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The number of days that data will be retained in Log Analytics |
+| Deploy Log Analytics | Azure Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used for establishing the workspace |
+| Deploy Azure Migrate | Azure Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate |

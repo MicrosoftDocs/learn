@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-vpn-gateway.how-vpn-gateway-works
+title: How Azure VPN Gateway works
+metadata:
+  title: How Azure VPN Gateway works
+  description: Learn how Azure VPN Gateway works and how to implement it in your organization.
+  ms.date: 12/22/2021
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom:
+  - team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - orthomas-01082022
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-vpn-gateway-works.md)]

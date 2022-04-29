@@ -3,11 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.10-summary
 metadata:
   title: Summary
   description: Summary.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22
 title: Summary
 durationInMinutes: 1
 content: |

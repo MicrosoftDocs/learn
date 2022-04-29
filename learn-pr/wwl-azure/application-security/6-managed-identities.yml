@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.application-security.managed-identities
+title: Enable managed identities
+metadata:
+  title: Enable managed identities
+  description: "Enable managed identities"
+  ms.date: 04/19/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-managed-identities.md)]

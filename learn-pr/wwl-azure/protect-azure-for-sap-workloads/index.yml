@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.protect-azure-for-sap-workloads
+metadata:
+  title: Securely connect to SAP on Azure
+  description: "Learn to describe Azure Networking services and components for connecting and securing SAP S/4 HANA in Azure, and learn how different requirements might adjust networking services requirements."
+  ms.date: 12/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Securely connect to SAP on Azure
+summary: Learn to describe Azure Networking services and components for connecting and securing SAP S/4 HANA in Azure, and learn how different requirements might adjust networking services requirements.
+abstract: |
+  After completing this module, you will be able to:
+  *   Describe Azure Networking services and components for connecting and securing SAP S/4 HANA in Azure.
+  *   Describe Azure Networking services for accelerating web application delivery.
+  *   Describe Azure services for monitoring and analyzing security signals.
+  *   Describe Azure services for authentication and multifactor authentication.
+prerequisites: |
+  - AZ-104 certification or equivalent knowledge.
+  - Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
+iconUrl: /learn/achievements/sap-network-security-service.svg
+levels:
+- intermediate
+roles:
+- administrator
+- functional-consultant
+products:
+- azure
+- power-platform
+units:
+- learn.wwl.protect-azure-for-sap-workloads.introduction
+- learn.wwl.protect-azure-for-sap-workloads.explore-scenario
+- learn.wwl.protect-azure-for-sap-workloads.support-access-to-premises-networks
+- learn.wwl.protect-azure-for-sap-workloads.support-access-for-regional-roaming
+- learn.wwl.protect-azure-for-sap-workloads.access-azure-infrastructure
+- learn.wwl.protect-azure-for-sap-workloads.mechanisms-azure-sap-administration
+- learn.wwl.protect-azure-for-sap-workloads.knowledge-check
+- learn.wwl.protect-azure-for-sap-workloads.summary
+badge:
+  uid: learn.wwl.protect-azure-for-sap-workloads.badge

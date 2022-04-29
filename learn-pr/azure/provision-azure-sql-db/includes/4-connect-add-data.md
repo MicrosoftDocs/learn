@@ -34,16 +34,16 @@ Here, you use the `az` utility to list your databases and show some information 
 
 1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
 
-    Replace `[server-name]` with the name of your Azure SQL logical server.
+    Replace `[server-name]` with the name of the Azure SQL logical server you created.
 
     ```azurecli
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn> sql-server=[server-name]
     ```
 
     > [!NOTE]
-    > Depending on the pane you are on in the portal, your SQL server name may be displayed as a FQDN (e.g. servername.database.windows.net). However, for this command, you only need the logical name without the .database.windows.net suffix.
+    > Depending on the pane you are on in the portal, your SQL server name may be displayed as a FQDN (for example, servername.database.windows.net). However, for this command, you only need the logical name without the .database.windows.net suffix.
 
-1. Run this `az sql db list` command to list all databases on your Azure SQL logical server.
+1. Run the following `az sql db list` command to list all databases on your Azure SQL logical server.
 
     ```azurecli
     az sql db list
@@ -70,9 +70,9 @@ Here, you use the `az` utility to list your databases and show some information 
     ]
     ```
 
-    **Logistics** is your database. Like SQL Server, **master** includes server metadata, such as sign-in accounts and system configuration settings.
+    *Logistics* is your database. Like SQL Server, *master* includes server metadata, such as sign-in accounts and system configuration settings.
 
-1. Run this `az sql db show` command to get details about the **Logistics** database.
+1. Run the following `az sql db show` command to get details about the **Logistics** database.
 
     ```azurecli
     az sql db show --name Logistics
@@ -102,13 +102,13 @@ Now that you understand a bit about your database, let's connect to it using `sq
 
 Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These terms refer to operations you perform on table data, and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
 
-1. Run this `az sql db show-connection-string` command to get the connection string to the **Logistics** database in a format that `sqlcmd` can use.
+1. Run the following `az sql db show-connection-string` command to get the connection string to the **Logistics** database in a format that `sqlcmd` can use.
 
     ```azurecli
     az sql db show-connection-string --client sqlcmd --name Logistics
     ```
 
-    Your output resembles this.
+    Your output resembles this. Copy this output for use in the next step.
 
     ```output
     "sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
@@ -140,13 +140,15 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
 
     - Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    - Search for and select your database.
+    - From the Azure **Home page**, under **Azure services**, select **All resources**. The **All resources** pane appears.
 
-    - Select **Set server firewall**.
+    - Search for and select your database. The **Logistics** pane for your SQL database appears.
+
+    - On the top menu bar, select **Set server firewall**. The **Firewall settings** pane appears.
 
     - Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
 
-    - Select **Save**.
+    - On the top menu bar, select **Save**.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
 

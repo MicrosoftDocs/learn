@@ -2,10 +2,10 @@ You have been given more details about a large project's technology and function
 
 |   | Core (SQL) | MongoDB | Cassandra | Azure Table | Gremlin |
 |---|------------|---------|-----------|-------------|---------|
-| New projects being created from scratch | &#x2714; | | | | |
-| Existing MongoDB, Cassandra, Azure Table, or Gremlin data | | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
-| Analysis of the relationships between data | | | | | &#x2714; |
-| All other scenarios | &#x2714; | | | | |
+| **New projects being created from scratch** | &#x2714; | | | | |
+| **Existing MongoDB, Cassandra, Azure Table, or Gremlin data** | | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+| **Analysis of the relationships between data** | | | | | &#x2714; |
+| **All other scenarios** | &#x2714; | | | | |
 
 The above matrix tries to encapsulate the criteria that you can use to help choose between each API, and it is based on asking the following questions about project environment.
 

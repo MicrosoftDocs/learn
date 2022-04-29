@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
@@ -20,7 +21,7 @@ quiz:
       explanation: "Incorrect. To predict a numeric value, use a regression model."
     - content: "Regression"
       isCorrect: true
-      explanation: "That is correct. To predict a numeric value, use a regression model."
+      explanation: "Correct. To predict a numeric value, use a regression model."
     - content: "Time series forecasting"
       isCorrect: false
       explanation: "Incorrect. To predict a numeric value, use a regression model."
@@ -28,7 +29,7 @@ quiz:
     choices:
     - content: "Classification"
       isCorrect: true
-      explanation: "That is correct. To predict a category, or class, use a classification model."
+      explanation: "Correct. To predict a category, or class, use a classification model."
     - content: "Regression"
       isCorrect: false
       explanation: "Incorrect. To predict a category, or class, use a classification model."
@@ -39,7 +40,7 @@ quiz:
     choices:
     - content: "Set the Primary metric to R2 score"
       isCorrect: true
-      explanation: "That is correct. The primary metric determines the metric used to evaluate the best performing model."
+      explanation: "Correct. The primary metric determines the metric used to evaluate the best performing model."
     - content: "Block all algorithms other than GradientBoosting"
       isCorrect: false
       explanation: "Incorrect. The choice of algorithms does not determine the metric used to evaluate the best performing model."

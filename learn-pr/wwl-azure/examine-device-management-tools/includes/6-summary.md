@@ -1,0 +1,1 @@
+Your team will be responsible for managing the IoT devices that the company deploys as part of their IoT solution. Understanding the Azure CLI and Visual Studio Code features that apply to device management prepares you for your upcoming device management responsibilities.

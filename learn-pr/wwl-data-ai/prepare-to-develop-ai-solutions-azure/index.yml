@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure
 metadata:
   title: Prepare to develop AI solutions on Azure
   description: "Prepare to develop AI solutions on Azure"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ abstract: |
   - Understand capabilities of Azure Cognitive Search
 prerequisites: |
   Before starting this module, you should already have familiarity with Azure and the Azure portal, and a basic understanding of software engineering.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-develop-ai-solutions.svg
 levels:
 - intermediate
 roles:

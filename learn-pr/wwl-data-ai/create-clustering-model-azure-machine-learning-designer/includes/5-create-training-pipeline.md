@@ -4,7 +4,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 To train a clustering model, you need to apply a clustering algorithm to the data, using only the features that you have selected for clustering. You'll train the model with a subset of the data, and use the rest to test the trained model.
 
-In this exercise, you're going to extend the **Train Penguin Clustering** pipeline as shown here:
+In this exercise, you're going to work through steps to extend the **Train Penguin Clustering** pipeline as shown here:
 
 > [!div class="centered"]
 > ![split data, then use the K-Means Clustering algorithm to train a model and the Assign Data to Modules module to test it](../media/k-means.png)
@@ -48,7 +48,7 @@ Now you're ready to run the training pipeline and train the model.
 
 2. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-penguin-training** on your compute cluster.
 2. Wait for the experiment run to finish. This may take 5 minutes or more.
-3. When the experiment run has finished, select the **Assign Data to Clusters** module and in its settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Results dataset** section, use the **Visualize** icon to view the results.
+3. When the experiment run has finished, select the **Assign Data to Clusters** module and in its settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Results dataset** section, use the **Preview data** icon to view the results.
 4. Scroll to the right, and note the **Assignments** column, which contains the cluster (0, 1, or 2) to which each row is assigned. There are also new columns indicating the distance from the point representing this row to the centers of each of the clusters - the cluster to which the point is closest is the one to which it is assigned.
 5. Close the **Assign Data to Clusters** visualization.
 

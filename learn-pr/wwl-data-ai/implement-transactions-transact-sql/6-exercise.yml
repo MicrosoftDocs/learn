@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-transactions-transact-sql.exercise
+title: 'Exercise: Implement transactions with Transact-SQL'
+metadata:
+  title: 'Exercise: Implement transactions with Transact-SQL'
+  description: "Exercise: Implement transactions with Transact-SQL"
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 105122
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

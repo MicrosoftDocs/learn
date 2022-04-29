@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.exercise-serverless
+title: Exercise - Build your serverless backend
+metadata:
+  title: Exercise - Build the serverless backend
+  description: Builds the serverless backend that generates shared access signatures and serves them via a REST API 
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-serverless.md)]

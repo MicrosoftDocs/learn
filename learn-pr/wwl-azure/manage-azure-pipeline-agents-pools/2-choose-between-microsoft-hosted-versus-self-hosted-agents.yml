@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-pipeline-agents-pools.choose-between-microsoft-hosted-versus-self-hosted-agents
+title: Choose between Microsoft-hosted versus self-hosted agents
+metadata:
+  title: Choose between Microsoft-hosted versus self-hosted agents
+  description: "Choose between Microsoft-hosted versus self-hosted agents"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-choose-between-microsoft-hosted-versus-self-hosted-agents.md)]

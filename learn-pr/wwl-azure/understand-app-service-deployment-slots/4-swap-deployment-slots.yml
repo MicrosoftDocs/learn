@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-app-service-deployment-slots.swap
+title: Swap deployment slots
+metadata:
+  title: Swap deployment slots
+  description: "Swap deployment slots"
+  ms.date: 03/08/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-swap-deployment-slots.md)]

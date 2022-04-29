@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.host-security.securing-azure-workloads
+title: Secure Azure workloads with Azure Security Benchmarks
+metadata:
+  title: Secure Azure workloads with Azure Security Benchmarks
+  description: "Secure Azure workloads with Azure Security Benchmarks"
+  ms.date: 04/12/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-secure-azure-workloads.md)]

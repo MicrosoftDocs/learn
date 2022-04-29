@@ -22,7 +22,7 @@ It's important that your template is easy for anyone in your organization to und
 
 :::code language="bicep" source="code/3-parameter.bicep" highlight="1-5, 8-9, 12, 15-16" :::
 
-In the example, the template parameters use the `@allowedValues`, `@maxValue`, and `@description` decorators to make clear what the parameters are for and what the impact of setting their values is. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
+In the example, the template parameters use the `@allowed`, `@maxValue`, and `@description` decorators to make clear what the parameters are for and what the impact of setting their values is. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
 
 ::: zone-end
 
@@ -44,28 +44,6 @@ After you've written your template, instead of submitting the template to Azure 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-Template specs don't yet support Bicep files directly. You need to convert your Bicep file to a JSON template before you publish it, by using this command:
-
-::: zone-end
-
-::: zone pivot="bicepcli"
-
-```azurecli
-az bicep build --file main.bicep --outfile azuredeploy.json
-```
-
-::: zone-end
-
-::: zone pivot="biceppowershell"
-
-```powershell
-bicep build main.bicep --outfile azuredeploy.json
-```
-
-::: zone-end
-
-::: zone pivot="bicepcli,biceppowershell"
-
 [!INCLUDE [Note that Bicep template specs are not roundtrippable](./code/note-bicep-roundtrip.md)]
 
 ::: zone-end
@@ -74,7 +52,21 @@ bicep build main.bicep --outfile azuredeploy.json
 
 To create a template spec, use the `New-AzTemplateSpec` cmdlet. The following example shows how you can create a template spec for your storage account template:
 
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+:::code language="azurepowershell" source="code/3-create.ps1" range="1-6, 8" :::
+
+::: zone-end
+
+::: zone pivot="jsonpowershell"
+
 :::code language="azurepowershell" source="code/3-create.ps1" range="1-7" :::
+
+::: zone-end
+
+::: zone pivot="biceppowershell,jsonpowershell"
 
 Let's look at each of the parameters:
 
@@ -91,7 +83,21 @@ Let's look at each of the parameters:
 
 To create a template spec, use the `az ts create` command. The following example shows how you can create a template spec for your storage account template:
 
+::: zone-end
+
+::: zone pivot="bicepcli"
+
+:::code language="azurecli" source="code/3-create.sh" range="1-6, 8" :::
+
+::: zone-end
+
+::: zone pivot="jsoncli"
+
 :::code language="azurecli" source="code/3-create.sh" range="1-7" :::
+
+::: zone-end
+
+::: zone pivot="jsoncli,bicepcli"
 
 Let's look at each of the arguments:
 

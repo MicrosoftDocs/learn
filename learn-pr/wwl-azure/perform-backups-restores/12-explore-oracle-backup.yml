@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-backups-restores.explore-oracle-backup
+title: Explore Oracle backup
+metadata:
+  title: Explore Oracle backup
+  description: "Explore Oracle backup"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-explore-oracle-backup.md)]

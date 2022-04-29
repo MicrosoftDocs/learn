@@ -111,9 +111,6 @@ Here's a visual representation of the same ID:
 
 :::image type="content" source="../media/2-role-mg-scope-resource-id.png" alt-text="Resource ID for a role definition that's deployed at a management group scope." border="false":::
 
-> [!IMPORTANT]
-> In Bicep, you normally use the `.id` property of a resource to access its resource ID. However, the `.id` property doesn't currently work for management group-scoped resources. It returns a partial resource ID instead of the full resource ID. This will be changed in the future, but in the meantime, you'll see how to work around this limitation later in this module.
-
 Another role definition might be defined at a subscription scope, so its resource ID looks a little different:
 
 ```

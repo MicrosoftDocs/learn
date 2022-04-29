@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ad-identity-protection.conditional-access-conditions
+title: Configure conditional access conditions
+metadata:
+  title: Configure conditional access conditions
+  description: "Configure conditional access conditions"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-conditional-access-conditions.md)]

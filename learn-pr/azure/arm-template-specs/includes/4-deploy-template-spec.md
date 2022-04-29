@@ -66,27 +66,29 @@ When you have parameters to provide to the template spec deployment, you use the
 
 ::: zone pivot="biceppowershell,bicepcli"
 
-## Use a template spec within a Bicep file
+## Use a template spec as a Bicep module
 
-To use a template spec from within a Bicep file, you create a reference to the template spec, and then you create a deployment that uses that reference. Let's take a look at how to do this.
+You can use a template spec as a module within a Bicep file:
 
-First, you use the `existing` keyword to create a reference to the template spec, and to the version of the template spec that you're using:
+:::code language="bicep" source="code/4-template.bicep" range="3-4, 8" :::
 
-:::code language="bicep" source="code/4-template.bicep" range="6-12" :::
+Notice that the module path uses a special format:
 
-Now that you have a reference to the template spec, you can create a deployment. In Azure, a deployment is a resource that has the resource type `Microsoft.Resources/deployments`. When you deploy a Bicep file, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
+:::image type="content" source="../media/4-template-spec-module-path.png" alt-text="Diagram showing the components of the template spec path." border="false":::
 
-:::code language="bicep" source="code/4-template.bicep" range="14-20, 26-27" highlight="5-7" :::
+There are three components to the module path, separated by the colon (`:`) character:
 
-Notice that the deployment includes a reference to the template spec version. It uses the child resource accessor operator (`::`) to refer to the version, because the template spec version is a child resource of the template spec resource.
-
-When you have parameters to provide to the template spec deployment, you use the `parameters` property:
-
-:::code language="bicep" source="code/4-template.bicep" range="14-27" highlight="8-12" :::
-
-::: zone-end
-
-Each parameter is specified as an object, with a `value` property that specifies the value to use.
+- **Scheme:** Bicep supports several types of module, which are called *schemes*. When you use a template spec as a module, you use `ts` as the scheme.
+- **Subscription ID, resource group name, and template spec name:** These should specify the location of the template spec resource that you previously published. You use forward slashes (`/`) to separate the subscription ID, resource group name, and template spec name. Note that this isn't the full resource ID of the template spec - it's just a few of the components of the resource ID.
+- **Version:** The template spec version needs to be included.
 
 > [!NOTE]
-> You can deploy the resources in the template spec to a different resource group by using the `resourceGroup` and `subscriptionId` properties on the deployment resource.
+> You can't use variables, parameters, or string interpolation when you specify the path to a module. The full template spec path needs to be saved into your Bicep file.
+
+When you have parameters to provide to the template spec, you use the `params` property:
+
+:::code language="bicep" source="code/4-template.bicep" range="3-8" highlight="3-5" :::
+
+The template spec file is downloaded and copied (*transpiled*) into your JSON ARM template when the Bicep file is built. Normally this happens when you deploy your Bicep file, but you can also use the Bicep tooling to do this explicitly by running the `bicep build` command.
+
+::: zone-end

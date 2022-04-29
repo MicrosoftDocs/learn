@@ -1,31 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.build-qna-solution-qna-maker
 metadata:
-  title: Build a QnA solution with QnA Maker
-  description: "Build a QnA solution with QnA Maker"
-  ms.date: 07/08/2021
+  title: Build a question answering solution
+  description: "Build a question answering solution"
+  ms.date: 01/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a QnA solution with QnA Maker
-summary: The QnA Maker service makes it easy to build applications in which users ask questions using natural language, and receive appropriate answers.
+title: Build a question answering solution
+summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
 abstract: |
   After completing this module, you will be able to:
-  - Understand QnA Maker
-  - Compare QnA Maker to Language Understanding
+  - Understand question answering
+  - Compare question answering to language understanding
   - Create a knowledge base
   - Implement multi-turn conversation
   - Test and publish a knowledge base
-  - Consume QnA client interfaces
+  - Consume a knowledge base
   - Implement active learning
-  - Create a QnA bot
+  - Create a question answering bot
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/qna-maker-solution.svg
 levels:
 - intermediate
 roles:
@@ -33,7 +33,6 @@ roles:
 - developer
 products:
 - azure-cognitive-services
-- azure-qna-maker
 units:
 - learn.wwl.build-qna-solution-qna-maker.introduction
 - learn.wwl.build-qna-solution-qna-maker.understand

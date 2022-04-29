@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.bicep-azure-pipelines
+metadata:
+  title: Deploy Azure resources by using Bicep and Azure Pipelines
+  description: Learn how to use Azure Pipelines to deploy your Bicep code in an automated way.
+  brand: azure
+  ms.date: 04/28/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure resources by using Bicep and Azure Pipelines
+summary: |
+  Gain all of the benefits of infrastructure as code by using an automated pipeline to deploy your Bicep templates, 
+  and integrate other deployment activities with your pipelines. You'll build pipelines using Azure Pipelines.
+
+  Take this learning path to learn how to:
+
+  * Build a pipeline that deploys your Bicep files.
+  * Create a service principal that can securely connect your pipeline to Azure.
+  * Ensure your Bicep code quality by validating and testing it within your pipeline.
+  * Work with multiple environments, and handle parameters and approvals.
+  * Deploy other Azure configuration settings, applications, and databases.
+  * Build pipelines that publish reusable Bicep files to template specs and modules.
+  * Secure your pipelines, and ensure all of your Azure deployments follow your organization's standards.
+
+  [!include[](../../includes/bicep-paths.md)]
+prerequisites: |
+  This learning path assumes you have familiarity with deploying infrastructure using Bicep.
+iconUrl: /learn/achievements/bicep/bicep-azure-pipelines.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
+- learn.azure.authenticate-azure-deployment-pipeline-service-principals
+- learn.azure.test-bicep-code-using-azure-pipelines
+- learn.azure.manage-multiple-environments-using-bicep-azure-pipelines
+- learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code
+trophy:
+  uid: learn.bicep-pipelines-azdo.trophy

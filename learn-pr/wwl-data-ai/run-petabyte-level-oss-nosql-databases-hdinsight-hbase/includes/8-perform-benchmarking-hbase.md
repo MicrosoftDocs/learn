@@ -39,7 +39,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. Let’s now start deploying an HDInsight HBase cluster with Accelerated writes. Select **Create a resource -> Analytics -> HDInsight**
 
-	![Create Azure HDInsight in the Azure Portal.](../media/create-azure-hdinsight-azure-portal.png)
+	![Screenshot shows Azure H D insight highlighted in Analytics in the Azure Marketplace.](../media/create-azure-hdinsight-azure-portal.png)
 
 1. On the Basics Tab, populate the below fields towards the creation of an HBase cluster.
 	- **Subscription**: Should be autopopulated with the subscription details
@@ -88,7 +88,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- Use a normal blob storage account that is recommended by default
 	- Keep the Enable Accelerated Writes checkbox unchecked on the Storage tab.
 
-		![Create Azure HDInsight in the Azure Portal.](../media/hdinsight-azure-portal.png)
+		![Screenshot shows Enable Accelerated Writes checkbox unchecked, in the Create H D Insight cluster page.](../media/hdinsight-azure-portal.png)
 
 1. In the **Configuration + pricing** tab for this cluster, note that the Node configuration section does NOT have a **Premium disks per worker node** line item.
 
@@ -106,7 +106,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 1. Log in to HDInsight shell
 	- Steps to set up and run YCSB tests on both clusters are identical.
 	- On the cluster page on the Azure portal , navigate to the SSH + Cluster log in and use the Hostname and SSH path to ssh into the cluster. The path should have below format.
-	- ssh <sshuser>@<clustername>.azurehdinsight.net 
+	- ssh \<sshuser\>@\<clustername\>.azurehdinsight.net 
 
 		![Connecting to the Azure HDInsight cluster in the Azure Portal.](../media/connect-hdinsight.png)
 

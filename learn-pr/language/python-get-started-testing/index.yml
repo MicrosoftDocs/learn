@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.python-get-started-testing
+metadata:
+  title: Get started with testing in Python
+  description: "Use Python's standard library module to write unit tests, and then get exposed to the concepts of other types of testing and how to apply them."
+  ms.date: 1/14/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language # Edit as appropriate for your portfolio area
+title: Get started with testing in Python
+summary: "Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Write tests using `unittest`: Python's standard library testing module
+    - Identify and fix failures by reading test failure reports
+    - Differentiate between unit, functional, and integration testing types
+prerequisites: |
+  - Ability to write Python scripts
+  - Familiarity with command-line tools and executing scripts
+  - Python 3.6 or later installed on your computer. Follow the steps in the [Install Python 3](/learn/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+units:
+- learn.python-get-started-testing.introduction
+- learn.python-get-started-testing.python-unittest
+- learn.python-get-started-testing.exercise
+- learn.python-get-started-testing.challenges-with-testing
+- learn.python-get-started-testing.testing-types
+- learn.python-get-started-testing.knowledge-check
+- learn.python-get-started-testing.summary
+badge:
+  uid: learn.python-get-started-testing.badge

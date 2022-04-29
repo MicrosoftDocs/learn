@@ -30,14 +30,14 @@ Now let's modify the read region for your database.
 
  The following steps apply when you have a single-region write Azure Cosmos DB account. If you enabled multi-region writes when you created your Azure Cosmos DB account, you can't complete the following steps.
 
-1. Select **disable** on the **Configure regions Multi-region writes**.
+1. Select **Disable** on **Configure regions Multi-region writes**.
 2. In the Azure portal, on the **Replicate data globally** screen, click **Automatic Failover**. Automatic failover is only enabled if the database has already been replicated to more than one region.
 3. On the **Automatic Failover** screen, change **Enable Automatic Failover** to **ON**.
 4. In the **Read regions** section, click the left portion of the **East US** row, and then drag and drop at the top position.
 5. Click the left portion of the **Japan East** row, and then drag and drop to the second position.
 6. Click **OK**.
 
-    ![Change read regions in the portal.](../media/4-change-priorities/change-read-priorities.gif)
+    :::image type="content" source="../media/4-change-priorities/azure-cosmos-db-set-automatic-failover.gif" alt-text="Animated screenshot that shows the automatic failover regions being configured.":::
 
 ## Summary
 

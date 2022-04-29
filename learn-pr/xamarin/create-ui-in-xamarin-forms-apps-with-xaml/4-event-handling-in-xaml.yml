@@ -4,11 +4,10 @@ metadata:
   title: Event handling in XAML
   description: "Learn how to manage UI behavior with XAML"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Event handling in XAML
 durationInMinutes: 7
 content: |

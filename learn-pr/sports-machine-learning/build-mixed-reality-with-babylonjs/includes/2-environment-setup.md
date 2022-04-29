@@ -16,7 +16,7 @@ To get started, create a GitHub repository for this app. Go to [the page to crea
 
 In this option, you start with a plain Babylon.js project and write all of the code after this module.
 
-To get started, create a GitHub repo for this app. Go to [the page to create a repository based on the template](https://github.com/cassieview/babylonjs-webpack-typescript-starter-project/generate?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-babylonjs*. You can make this repo public or private, but be sure to include all branches.
+To get started, create a GitHub repo for this app. Go to [the page to create a repository based on the template](https://github.com/cassiebreviu/babylonjs-webpack-typescript-starter-project/generate?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-babylonjs*. You can make this repo public or private, but be sure to include all branches.
 
 ![Screenshot that shows creating a repository for the project by using the GitHub template, for a plain experience.](../media/babylonjs-github-template.png)
 

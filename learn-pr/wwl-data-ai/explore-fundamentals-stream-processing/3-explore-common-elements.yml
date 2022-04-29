@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-stream-processing.explore-common-elements-architecture
+title: Explore common elements of stream processing architecture
+metadata:
+  title: Explore common elements of stream processing architecture
+  description: "Explore common elements of stream processing architecture"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-common-elements.md)]

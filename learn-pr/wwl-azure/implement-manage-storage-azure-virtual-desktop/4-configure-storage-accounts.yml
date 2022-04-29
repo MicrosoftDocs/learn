@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.configure-storage-accounts
+title: Configure storage accounts
+metadata:
+  title: Configure storage accounts
+  description: "Configure storage accounts"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-storage-accounts.md)]

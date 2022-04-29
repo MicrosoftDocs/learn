@@ -4,9 +4,9 @@ title: Manage tiered storage in app code
 metadata:
   title: Manage tiered storage in app code
   description: Manage tiered storage in app code
-  ms.date: 04/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 09/30/2021
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

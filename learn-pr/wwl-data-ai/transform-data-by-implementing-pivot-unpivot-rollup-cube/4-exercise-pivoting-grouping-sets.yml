@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube.exercise-pivoting-grouping-sets
+title: 'Exercise: Pivoting and grouping sets'
+metadata:
+  title: 'Exercise: Pivoting and grouping sets'
+  description: "Exercise: Pivoting and grouping sets"
+  ms.date: 10/14/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 105118
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-pivoting-grouping-sets.md)]

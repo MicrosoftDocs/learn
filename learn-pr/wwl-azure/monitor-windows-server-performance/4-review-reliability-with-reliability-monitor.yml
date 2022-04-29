@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.review-reliability-reliability-monitor
+title: Review reliability with Reliability Monitor
+metadata:
+  title: Review reliability with Reliability Monitor
+  description: "Review reliability with Reliability Monitor"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-review-reliability-with-reliability-monitor.md)]

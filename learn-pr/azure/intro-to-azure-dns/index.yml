@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-dns
+metadata:
+  title: Introduction to Azure DNS
+  description: Azure DNS is a cloud service that allows you to host and manage domain name system (DNS) domains, also known as DNS zones.
+  ms.date: 12/10/2021
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: orthomas-12172021
+title: Introduction to Azure DNS
+summary: This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
+abstract:  |
+  In this module, you will:
+  - Learn what Azure DNS is and the functionality it provides.
+  - Determine whether Azure DNS meets the needs of your organization.
+  - Understand the difference between Azure DNS public and private zones.
+prerequisites: Understanding of basic DNS concepts including DNS records, DNS zones, and DNS name resolution.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+products:
+- azure
+- azure-dns
+units:
+- learn.introduction-to-azure-dns.introduction
+- learn.introduction-to-azure-dns.what-is-azure-dns
+- learn.introduction-to-azure-dns.how-azure-dns-works
+- learn.introduction-to-azure-dns.when-to-use-azure-dns
+- learn.introduction-to-azure-dns.knowledge-check
+- learn.introduction-to-azure-dns.summary
+badge:
+  uid: learn.introduction-to-azure-dns.badge

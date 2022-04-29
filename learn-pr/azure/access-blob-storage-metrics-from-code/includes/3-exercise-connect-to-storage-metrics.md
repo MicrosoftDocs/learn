@@ -10,7 +10,7 @@ You must start by creating the Azure Storage account that will send data to Azur
 
 1. Go to the [Azure portal](https://portal.azure.com/) and in the left nav bar, select **Create a resource**.
 
-1. In the **Search the marketplace** textbox, enter **Storage Account**, and then press <kbs>Enter</kbd>.
+1. In the **Search the marketplace** textbox, enter **Storage Account**, and then press <kbd>Enter</kbd>.
 
 1. In the list of results, select **Storage Account**, and then select **Create**. The **Create a storage account** window appears. Enter the following information.
 

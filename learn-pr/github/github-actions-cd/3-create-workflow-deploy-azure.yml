@@ -2,11 +2,11 @@
 uid: learn.github.github-actions-cd.3-create-workflow-deploy-azure
 title:  Exercise - Create a workflow that deploys a web app to Azure
 metadata:
-  title:  Exercise - Create a workflow that deploys a web app to Azure
+  title: Exercise - Create a workflow that deploys a web app to Azure
   description: TBD.
   ms.date: 05/19/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 40

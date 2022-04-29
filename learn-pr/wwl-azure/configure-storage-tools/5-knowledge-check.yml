@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/23/2021
+  ms.date: 03/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -20,32 +21,32 @@ quiz:
     choices:
     - content: "Azure Data Box"
       isCorrect: false
-      explanation: "That's incorrect. Data Box would be better for importing and exporting very large data sets to Azure."
+      explanation: "Incorrect. Data Box would be better for importing and exporting very large data sets to Azure."
     - content: "Robocopy"
       isCorrect: false
-      explanation: "That's incorrect. Robocopy would be better for copying large datasets or lots of files across volumes."
+      explanation: "Incorrect. Robocopy would be better for copying large datasets or lots of files across volumes."
     - content: "Azure Storage Explorer"
       isCorrect: true
-      explanation: "That's correct. Azure Storage Explorer is the best choice of the finance department doesn't want to use the Azure portal."
-  - content: "These is an existing storage account in Azure that stores unstructured data. The organization creates a new storage account. What is the best way to move the existing data to the new storage account?"
+      explanation: "Correct. Azure Storage Explorer is the best choice of the finance department doesn't want to use the Azure portal."
+  - content: "There is an existing storage account in Azure that stores unstructured data. The organization creates a new storage account. What is the best way to move the existing data to the new storage account?"
     choices:
     - content: "Use the Azure portal"
       isCorrect: false
-      explanation: "That's incorrect. Is there another Azure tool more focused on storage?"
+      explanation: "Incorrect. Is there another Azure tool more focused on storage?"
     - content: "Use the Robocopy command-line tool"
       isCorrect: false
-      explanation: "That's incorrect. It will be difficult to move data between cloud storage accounts."
+      explanation: "Incorrect. It will be difficult to move data between cloud storage accounts."
     - content: "Use the AzCopy command-line tool"
       isCorrect: true
-      explanation: "That's correct. The key in this scenario is to move data between storage accounts. The AzCopy tool can work with two different storage accounts. The other tools do not copy data between storage accounts. Alternatively, although not one of the answer choices, Storage Explorer can be used to copy data between storage accounts."
+      explanation: "Correct. The key in this scenario is to move data between storage accounts. The AzCopy tool can work with two different storage accounts. The other tools do not copy data between storage accounts. Alternatively, although not one of the answer choices, Storage Explorer can be used to copy data between storage accounts."
   - content: "The finance team needs to transfer a series of large files to blob storage. It may take several hours to upload each file. Everyone is concerned if the transfer fails, it will have to be restarted. Which tool is the most appropriate for this task?"
     choices:
     - content: "Azure CLI"
       isCorrect: false
-      explanation: "That's incorrect. Is there another tool that might more appropriate for this task?"
+      explanation: "Incorrect. Is there another tool that might more appropriate for this task?"
     - content: "AzCopy"
       isCorrect: true
-      explanation: "That's correct. AzCopy is ideal for transferring large files as it can run in the background."
+      explanation: "Correct. AzCopy is ideal for transferring large files as it can run in the background."
     - content: "Azure Storage Explorer"
       isCorrect: false
-      explanation: "That's incorrect. Is there another tool that might more appropriate for this task?"
+      explanation: "Incorrect. Is there another tool that might more appropriate for this task?"

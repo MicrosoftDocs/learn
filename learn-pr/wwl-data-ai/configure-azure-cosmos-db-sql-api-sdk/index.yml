@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk
+metadata:
+  title: Configure the Azure Cosmos DB SQL API SDK
+  description: "Learn how to configure the Azure Cosmos DB SQL API SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger."
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure the Azure Cosmos DB SQL API SDK
+summary: Learn how to configure the Azure Cosmos DB SQL API SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger.
+abstract: |
+  After completing this module, you'll be able to:
+  - Configure the SDK for offline development
+  - Troubleshoot common connection errors
+  - Implement parallelism in the SDK
+  - Configure logging using the SDK
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-configure.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.introduction
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.enable-offline-development
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.handle-connection-errors
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.implement-threading-parallelism
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.configure-logging
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.exercise-for-offline-development
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.knowledge-check
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk.summary
+badge:
+  uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.badge

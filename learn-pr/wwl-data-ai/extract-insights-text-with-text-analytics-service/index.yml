@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.extract-insights-text-with-text-analytics-service
 metadata:
-  title: Extract insights from text with the Text Analytics service
-  description: "Extract insights from text with the Text Analytics service"
-  ms.date: 06/28/2021
+  title: Extract insights from text with the Language service
+  description: "Extract insights from text with the Language service"
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Extract insights from text with the Text Analytics service
-summary: The Text Analytics service enables you to create intelligent apps and services that extract semantic information from text.
+title: Extract insights from text with the Language service
+summary: The Language service enables you to create intelligent apps and services that extract semantic information from text.
 abstract: |
-  In this module, you will learn how to use the Text Analytics service to:
+  In this module, you will learn how to use the Language service to:
   - Detect language
   - Extract key phrases
   - Analyze sentiment
@@ -21,7 +21,7 @@ prerequisites: |
   Before starting this module, you will need
   - Familiarity with Microsoft Azure and the Azure portal.
   - Experience programming with C# or Python.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
 levels:
 - intermediate
 roles:

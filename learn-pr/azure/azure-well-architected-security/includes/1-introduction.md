@@ -1,6 +1,6 @@
-Security is one of the most important aspects of any architecture. Ensuring that your business data and customer data are secure is critical. A public data breach can ruin a company's reputation as well as cause significant personal and financial harm.
+Security is one of the most important aspects of any architecture. Ensuring that your business data and customer data are secure is critical. A public data breach can ruin a company's reputation, as well as cause significant personal and financial harm.
 
-Gone are the days when security focused solely on a strong perimeter defense to keep out malicious hackers. Anything outside the perimeter was treated as hostile, whereas inside the wall, an organization's systems were trusted. Today's security posture is to assume breach and use the _Zero Trust model_. 
+Gone are the days when security focused solely on a strong perimeter defense to keep out malicious hackers. Anything outside the perimeter was treated as hostile, whereas inside the wall, an organization's systems were trusted. Today's security posture is to assume breach and use the *Zero Trust model*.
 
 Security professionals no longer focus on perimeter defense. Modern organizations have to support access to data and services evenly from both inside and outside the corporate firewall.
 

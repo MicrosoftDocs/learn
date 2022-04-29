@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-program.4-tuples-structs
+metadata:
+  title: Define data collections by using tuples and structs
+  description: Explore how to use tuple and struct data types for collections and compound data in Rust.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Define data collections by using tuples and structs
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-tuples-structs.md)]
+
+quiz:
+  questions:
+
+  - content: "What's a `tuple` in Rust?"
+    choices:
+    - content: "A tuple is a collection of values of different types. The data type is based on the data types of its elements, and the length is fixed based on the number of elements."
+      isCorrect: true
+      explanation: "Correct! A tuple is a grouping of values of different data types that are collected into a compound value."
+    - content: "A tuple is a collection of values of different types. The data type is based on the data types of its elements. The length can grow and shrink as elements are added or removed."
+      isCorrect: false
+      explanation: "Incorrect. After a tuple is declared, the length is fixed based on the number of its elements. A tuple can't grow and shrink after it's declared."     
+    - content: "A tuple is a collection of values of the same data type. All elements in the tuple must have the same data type. The tuple length is fixed based on the number of its elements."
+      isCorrect: false
+      explanation: "Incorrect. A tuple combines elements of different data types together into a compound value, such as `i8`, `char`, and `boolean`." 
+
+  - content: "What's the main difference between a classic struct and a tuple struct in Rust?"
+    choices:
+    - content: "All fields in a classic struct must be the same data type. The fields in a tuple struct can be different data types."
+      isCorrect: false
+      explanation: "Incorrect. The fields in both a classic struct and a tuple struct can be different data types."
+    - content: "The values in a tuple struct can be accessed by using indexing. The values in a classic struct can be accessed only by field name."
+      isCorrect: false
+      explanation: "Incorrect. There are several ways to access field values in a classic struct."
+    - content: "Each field in a classic struct has a name and a data type. The fields in a tuple struct don't have names."
+      isCorrect: true
+      explanation: "Correct! Each field in a classic struct has a name and a data type. The fields in a tuple struct don't have names."

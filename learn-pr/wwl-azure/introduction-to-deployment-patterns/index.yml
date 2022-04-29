@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-deployment-patterns
+metadata:
+  title: Introduction to deployment patterns
+  description: "Introduction to deployment patterns"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to deployment patterns
+summary: This module introduces deployment patterns and explains microservices architecture to help improve the deployment cycle and examine classical and modern deployment patterns.
+abstract: |
+  - Describe deployment patterns
+  - Explain microservices architecture
+  - Understand classical and modern deployment patterns
+  - Plan and design your architecture
+prerequisites: ""
+iconUrl: /learn/achievements/4-introduction-to-deployment-patterns.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.introduction-to-deployment-patterns.introduction
+- learn.wwl.introduction-to-deployment-patterns.explore-microservices-architecture
+- learn.wwl.introduction-to-deployment-patterns.examine-classical-deployment-patterns
+- learn.wwl.introduction-to-deployment-patterns.understand-modern-deployment-patterns
+- learn.wwl.introduction-to-deployment-patterns.knowledge-check
+- learn.wwl.introduction-to-deployment-patterns.summary
+badge:
+  uid: learn.wwl.introduction-to-deployment-patterns.badge

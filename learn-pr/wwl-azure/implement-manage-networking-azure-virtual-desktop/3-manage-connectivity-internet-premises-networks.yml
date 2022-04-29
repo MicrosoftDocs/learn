@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.manage-connectivity-to-internet-premises-networks
+title: Manage connectivity to the internet and on-premises networks
+metadata:
+  title: Manage connectivity to the internet and on-premises networks
+  description: "Manage connectivity to the internet and on-premises networks"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-manage-connectivity-internet-premises-networks.md)]

@@ -1,8 +1,8 @@
-Now let's look at another process from our bike rental business and decide what technology best fits our needs. We'll consider the technical aspects of the process as well as audience and how our process needs to evolve.
+Now let's look at another process from our bike rental business and decide what technology best fits our needs. We'll consider the technical aspects of the process, the audience, and how our process needs to evolve.
 
 ## Scenario
 
-Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
+Your bike technicians currently use a spreadsheet to record the actions they take to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff has no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
 
 You want to build a system that governs the maintenance and repair process and allows everyone to find answers to the following questions.
 
@@ -17,7 +17,7 @@ You want to build a system that governs the maintenance and repair process and a
 
 You'd like to integrate this system with the bike booking and rental process from the last unit. In doing so, when shop staff search for available bikes, they find only those bicycles that are currently available to rent. Your manager has asked you to be the developer on this project.
 
-## Business Process
+## Business process
 
 You want to ensure that bike technicians on both campuses stick to the following workflow when they maintain a bike following a rental:
 
@@ -49,7 +49,7 @@ As in the previous scenario, any of these technologies could be used to build th
 
 ### Design-first or code-first?
 
-To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system and place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
+To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system and place orders with a third-party parts company. This is new business logic and there's no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
 
 ### Azure Functions or Azure Apps Service WebJobs?
 
@@ -61,6 +61,6 @@ We have to make a decision between the following two technologies.
 The following factors will influence your choice:
 
 - Cost: With Web Jobs, you pay for the entire VM or App Service Plan that hosts the job. Azure Function can run on a consumption plan, so you only pay when the function runs. Since this process only kicks off when a bike is returned, we might stand to save by selecting Azure Functions.
-- Integrations: You want to integrate the maintenance workflow with the Logic App that you build for the bike booking and rental process in the previous unit. Although it is possible to call a WebJob from a Logic App, the integration between Logic Apps and Functions is closer. For example, you can more easily control your call to a Function from the Logic Apps designer.
+- Integrations: You want to integrate the maintenance workflow with the Logic App that you build for the bike booking and rental process in the previous unit. Although it's possible to call a WebJob from a Logic App, the integration between Logic Apps and Functions is closer. For example, you can more easily control your call to a Function from the Logic Apps designer.
 
-For these reasons, we'll select Azure Function to manage your bike maintenance business process.
+For these reasons, we'll select Azure Functions to manage your bike maintenance business process.

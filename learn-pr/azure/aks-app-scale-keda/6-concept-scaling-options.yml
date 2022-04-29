@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your workload to scale performs cpu intensive photo transformation, which option should you choose?"
+  - content: "Your workload to scale performs CPU-intensive photo transformation, which option should you choose?"
     choices:
     - content: "KEDA"
       isCorrect: false
-      explanation: "Although you can use KEDA to scale cpu intensive workloads, a HPA is the best choice."
+      explanation: "Although you can use KEDA to scale CPU-intensive workloads, a HPA is the best choice."
     - content: "HPA"
       isCorrect: true
-      explanation: "In this case, using a HPA is the best choice for cpu intensive workloads."
+      explanation: "In this case, using a HPA is the best choice for CPU-intensive workloads."
     - content: "Cluster Autoscaler"
       isCorrect: false
-      explanation: "Cluster autoscaler is for scaling the number of nodes in a kubernetes cluster"
+      explanation: "Cluster autoscaler is for scaling the number of nodes in a Kubernetes cluster"
   - content: "Your cluster is getting close to utilizing all its available resources during peak times.  Which option should you use?"
     choices:
     - content: "KEDA"
@@ -36,7 +36,7 @@ quiz:
       explanation: "Using a HPA will not increase the total available resources for a cluster"
     - content: "Cluster Autoscaler"
       isCorrect: true
-      explanation: "Cluster autoscaler is for scaling the number of nodes in a kubernetes cluster"
+      explanation: "Cluster autoscaler is for scaling the number of nodes in a Kubernetes cluster"
   - content: "Your service processes messages from an Apache Kafka queue, which option should you choose?"
     choices:
     - content: "KEDA"
@@ -47,4 +47,4 @@ quiz:
       explanation: "Although you can use a HPA to scale this service, it is not efficient and fails to measure the quantity of messages in the queue."
     - content: "Cluster Autoscaler"
       isCorrect: false
-      explanation: "Cluster autoscaler is for scaling the number of nodes in a kubernetes cluster"
+      explanation: "Cluster autoscaler is for scaling the number of nodes in a Kubernetes cluster"

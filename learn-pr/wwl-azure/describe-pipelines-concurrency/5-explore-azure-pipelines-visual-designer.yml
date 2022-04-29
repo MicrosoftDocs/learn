@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-pipelines-concurrency.explore-azure-pipelines-visual-designer
+title: Explore Azure Pipelines and Visual Designer
+metadata:
+  title: Explore Azure Pipelines and Visual Designer
+  description: "Explore Azure Pipelines and Visual Designer"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-explore-azure-pipelines-visual-designer.md)]

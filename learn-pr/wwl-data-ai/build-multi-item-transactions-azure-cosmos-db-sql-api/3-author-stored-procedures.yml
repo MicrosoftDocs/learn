@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.author-stored-procedures
+title: Author Stored procedures
+metadata:
+  title: Author Stored procedures
+  description: "Author Stored procedures"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-author-stored-procedures.md)]

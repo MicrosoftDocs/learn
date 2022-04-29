@@ -4,10 +4,11 @@ metadata:
   title: Exercise - Test and iterate on Custom Vision training
   description: This unit describes the iterative test-train process for the Custom Vision service.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Test and iterate on Custom Vision training
 durationInMinutes: 3
 content: |

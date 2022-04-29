@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/28/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -20,32 +21,32 @@ quiz:
     choices:
     - content: "Compute optimized"
       isCorrect: true
-      explanation: "That's correct. Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Correct. Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: "Memory optimized"
       isCorrect: false
-      explanation: "That's incorrect. Memory optimized virtual machines are better for large in-memory business critical workloads requiring massive parallel compute power."
+      explanation: "Incorrect. Memory optimized virtual machines are better for large in-memory business critical workloads requiring massive parallel compute power."
     - content: "Storage optimized"
       isCorrect: false
-      explanation: "That's incorrect. Storage optimized virtual machines are better for data warehousing applications and large transactional databases."
+      explanation: "Incorrect. Storage optimized virtual machines are better for data warehousing applications and large transactional databases."
   - content: "An organization has a security policy that prohibits exposing SSH ports to the outside world. What is the best way to connect to the Azure Linux virtual machines and install software?"
     choices:
     - content: "Configure the Bastion service."
       isCorrect: true
-      explanation: "That's correct. The Azure Bastion service is a new fully platform-managed PaaS service provisioned inside a virtual network. Bastion provides secure and seamless RDP and SSH connectivity to virtual machines. The access uses the Azure portal and SSL."
+      explanation: "Correct. The Azure Bastion service is a new fully platform-managed PaaS service provisioned inside a virtual network. Bastion provides secure and seamless RDP and SSH connectivity to virtual machines. The access uses the Azure portal and SSL."
     - content: "Configure a Guest configuration on the virtual machine."
       isCorrect: false
-      explanation: "That's incorrect. The guest configuration is not a valid solution. Is there a better answer?"
+      explanation: "Incorrect. The guest configuration is not a valid solution. Is there a better answer?"
     - content: "Create a custom script extension."
       isCorrect: false
-      explanation: "That's incorrect. Custom script extensions are for post deployment configuration, software installation, or any other configuration or management tasks."
+      explanation: "Incorrect. Custom script extensions are for post deployment configuration, software installation, or any other configuration or management tasks."
   - content: "What is the effect of the default network security settings for a new virtual machine?"
     choices:
     - content: "Neither outbound nor inbound requests are allowed."
       isCorrect: false
-      explanation: "That's incorrect. Outbound requests are allowed by default."
+      explanation: "Incorrect. Outbound requests are allowed by default."
     - content: "Outbound request is allowed. Inbound traffic is only allowed from within the virtual network."
       isCorrect: true
-      explanation: "That's correct. Outbound requests are considered low risk, so they are allowed by default. Inbound traffic from within the virtual network is allowed. By placing a VM in a virtual network, the VM owner is implicitly opting-in to communication among the resources in the virtual network."
+      explanation: "Correct. Outbound requests are considered low risk, so they are allowed by default. Inbound traffic from within the virtual network is allowed. By placing a VM in a virtual network, the VM owner is implicitly opting in to communication among the resources in the virtual network."
     - content: "There are no restrictions: all outbound and inbound requests are allowed."
       isCorrect: false
-      explanation: "That's incorrect. There are restrictions on inbound traffic."
+      explanation: "Incorrect. There are restrictions on inbound traffic."

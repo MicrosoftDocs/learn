@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.install-configure-apps-session-host
+metadata:
+  title: Install and configure apps on a session host
+  description: "Install and configure apps on a session host"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Install and configure apps on a session host
+summary: MSIX app attach is a way to deliver MSIX applications to both physical and virtual machines. MSIX app attach is different from regular MSIX because it’s specifically for Azure Virtual Desktop.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Describe MSIX app attach for Azure Virtual Desktop.
+  *  Explain how MSIX app attach works.
+  *  Set up a file share for MSIX app attach.
+  *  Use the OneDrive sync app on Azure Virtual Desktops.
+  *  Use Microsoft Teams on Azure Virtual Desktop.
+  *  Publish built-in apps in Azure Virtual Desktop.
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.install-configure-apps-session-host.introduction
+- learn.wwl.install-configure-apps-session-host.msix-app-attach
+- learn.wwl.install-configure-apps-session-host.how-msix-app-attach-works
+- learn.wwl.install-configure-apps-session-host.set-up-file-share-for-msix-app-attach
+- learn.wwl.install-configure-apps-session-host.demonstration-for-users
+- learn.wwl.install-configure-apps-session-host.using-onedrive-sync-app-virtual-desktops
+- learn.wwl.install-configure-apps-session-host.using-microsoft-teams-azure-virtual-desktop
+- learn.wwl.install-configure-apps-session-host.publish-built-apps-azure-virtual-desktop
+- learn.wwl.install-configure-apps-session-host.troubleshoot-application-issues-related-to-azure-virtual-desktop-using-user-inpu
+- learn.wwl.install-configure-apps-session-host.knowledge-check
+- learn.wwl.install-configure-apps-session-host.summary
+badge:
+  uid: learn.wwl.install-configure-apps-session-host.badge

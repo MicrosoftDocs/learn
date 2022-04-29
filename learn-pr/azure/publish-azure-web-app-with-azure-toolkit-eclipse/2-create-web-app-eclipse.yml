@@ -5,8 +5,8 @@ metadata:
   title: Build a web app in Eclipse
   description: Building and testing a web app using Eclipse
   ms.date: 02/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

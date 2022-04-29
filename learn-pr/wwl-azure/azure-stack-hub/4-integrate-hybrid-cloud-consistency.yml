@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub.integrate-hybrid-cloud-consistency
+title: Integrate hybrid cloud consistency
+metadata:
+  title: Integrate hybrid cloud consistency
+  description: "Integrate hybrid cloud consistency"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-integrate-hybrid-cloud-consistency.md)]

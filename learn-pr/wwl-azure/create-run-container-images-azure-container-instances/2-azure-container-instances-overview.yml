@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-container-images-azure-container-instances.explore
+title: Explore Azure Container Instances
+metadata:
+  title: Explore Azure Container Instances
+  description: "Explore Azure Container Instances"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-container-instances-overview.md)]

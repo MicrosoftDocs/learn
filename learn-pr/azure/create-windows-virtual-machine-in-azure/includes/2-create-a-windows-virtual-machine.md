@@ -1,4 +1,4 @@
-Your company has decided to manage the video data from their traffic cameras in Azure using VMs. In order to run the multiple codecs, we first need to create the VMs. We also need to connect and interact with the VMs. In this unit, you will learn how to create a VM using the Azure portal. You will configure the VM for remote access, select a VM image, and choose the proper storage option.
+Your company has decided to manage the video data from their traffic cameras in Azure using VMs. In order to run the multiple codecs, we first need to create the VMs. We also need to connect and interact with the VMs. In this unit, you'll learn how to create a VM using the Azure portal. You'll configure the VM for remote access, select a VM image, and choose the proper storage option.
 
 ## Introduction to Windows virtual machines in Azure
 
@@ -6,7 +6,7 @@ Azure VMs are an on-demand scalable cloud computing resource. They're similar to
 
 ## Creating an Azure VM
 
-VMs can be defined and deployed on Azure in several ways: the Azure portal, a script (using the Azure CLI or Azure PowerShell), or through an Azure Resource Manager template. In all cases, you will need to supply several pieces of information, which we'll cover shortly.
+VMs can be defined and deployed on Azure in several ways: the Azure portal, a script (using the Azure CLI or Azure PowerShell), or through an Azure Resource Manager template. In all cases, you'll need to supply several pieces of information, which we'll cover shortly.
 
 The Azure Marketplace also provides pre-configured images that include both an OS and popular software tools installed for specific scenarios.
 
@@ -38,7 +38,7 @@ Any application that can be supported by the computer can be included in the VM 
 Just as a physical machine has a certain amount of memory and CPU power, so does a virtual machine. Azure offers a range of VMs of differing sizes at different price points. The size that you choose will determine the VMs processing power, memory, and max storage capacity.
 
 > [!WARNING]
-> There are quota limits on each subscription that can impact VM creation. By default, you cannot have more than 20 virtual _cores_ across all VMs within a region. You can either split up VMs across regions or file an [online request](/azure/azure-supportability/resource-manager-core-quotas-request) to increase your limits.
+> There are quota limits on each subscription that can impact VM creation. In the classic deployment model, you cannot have more than 20 virtual _cores_ across all VMs within a region. You can either split up VMs across regions or file an [online request](/azure/azure-supportability/resource-manager-core-quotas-request) to increase your limits.
 
 VM sizes are grouped into categories, starting with the B-series for basic testing and running up to the H-series for massive computing tasks. You should select the size of the VM based on the workload you want to perform. It is possible to change the size of a VM after it's been created, but the VM must be stopped first so it's best to size it appropriately from the start if possible.
 
@@ -90,7 +90,7 @@ Managed disks are the newer and recommended disk storage model. They elegantly s
 
 - **Increased reliability**: Azure ensures that VHDs associated with high-reliability VMs will be placed in different parts of Azure storage to provide similar levels of resilience.
 - **Better security**: Managed disks are truly managed resources in the resource group. This means they can use role-based access control to restrict who can work with the VHD data.
-- **Snapshot support**: Snapshots can be used to create a read-only copy of a VHD. You have to shut down the owning VM but creating the snapshot only takes a few seconds. Once it's done, you can power on the VM and use the snapshot to create a duplicate VM to troubleshoot a production issue or rollback the VM to the point in time that the snapshot was taken.
+- **Snapshot support**: Snapshots can be used to create a read-only copy of a VHD. You have to shut down the owning VM but creating the snapshot only takes a few seconds. Once it's done, you can power on the VM and use the snapshot to create a duplicate VM to troubleshoot a production issue or roll back the VM to the point in time that the snapshot was taken.
 - **Backup support**: Managed disks can be automatically backed up to different regions for disaster recovery with Azure Backup all without affecting the service of the VM.
 
 ## Network communication
@@ -99,8 +99,8 @@ Virtual machines communicate with external resources using a virtual network (VN
 
 ### Planning your network
 
-When you create a new VM, you will have the option of creating a new virtual network, or using an existing VNet in your region.
+When you create a new VM, you'll have the option of creating a new virtual network, or using an existing VNet in your region.
 
-Having Azure create the network together with the VM is simple but it's likely not ideal for most scenarios. It's better to plan your network requirements _up-front_ for all the components in your architecture and create the VNet structure you will need separately. Then create the VMs and place them into the already-created VNets.
+Having Azure create the network together with the VM is simple but it's likely not ideal for most scenarios. It's better to plan your network requirements _up-front_ for all the components in your architecture and create the VNet structure you'll need separately. Then create the VMs and place them into the already-created VNets.
 
 We'll look more at virtual networks a bit later in this module. Let's apply some of this knowledge and create a VM in Azure.

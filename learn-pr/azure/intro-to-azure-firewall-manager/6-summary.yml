@@ -2,13 +2,13 @@
 uid: learn.intro-to-azure-firewall-manager.6-summary  
 title: Summary  
 metadata:
-  unitType: summary  
+  unitType: summary
   title: Summary
   description: Summary
-  ms.date: 03/14/2021  
-  author: micrum
-  ms.author: micrum  
-  ms.topic: interactive-tutorial 
+  ms.date: 03/14/2021
+  author: vhorne
+  ms.author: victorh
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

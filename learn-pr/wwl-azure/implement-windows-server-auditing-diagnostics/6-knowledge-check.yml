@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-auditing-diagnostics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator wants to track user sign-ins. Which of the following advanced audit categories should they select?"
+    choices:
+    - content: "Account Logon."
+      isCorrect: true
+      explanation: "Correct. These settings enable auditing the validation of credentials and other Kerberos-specific authentication and ticket operation events."
+    - content: "Account Management."
+      isCorrect: false
+      explanation: "Incorrect. This category relates to the modification of user accounts, computer accounts, and groups."
+    - content: "Audit logon events."
+      isCorrect: false
+      explanation: "Incorrect. This is a basic audit event category."
+  - content: "An administrator wants to establish auditing on specific files. They've configured the folder that contains the files using the Auditing tab on the Advanced Security Settings page. However, when they review the Security log, there are no entries relating to file access in the configured folder. What does the administrator need to do?"
+    choices:
+    - content: "The administrator needs to turn on Audit object access in the audit policy. They must indicate Success or Failure or both."
+      isCorrect: true
+      explanation: "Correct. This policy must be defined in addition to the folder settings already defined."
+    - content: "The administrator must define an expression-based audit policy for file and folder objects."
+      isCorrect: false
+      explanation: "Incorrect. This is not necessary."
+    - content: "The administrator must use advanced auditing categories and enable Detailed Tracking."
+      isCorrect: false
+      explanation: "Incorrect. These settings control the auditing of encryption events, Windows process creation and termination events, and remote procedure call (RPC) events."
+  - content: "An administrator is configuring Setup and Boot Event Collection. On which computer must they install the SetupAndBootEventCollection feature?"
+    choices:
+    - content: "On the designated collector computer."
+      isCorrect: true
+      explanation: "Correct. This feature runs on the collector computer and accepts events from the targets."
+    - content: "On the target computer."
+      isCorrect: false
+      explanation: "Incorrect. The target computers don't have this feature."
+    - content: "On all computers."
+      isCorrect: false
+      explanation: "Incorrect. Not all computers require this feature."

@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-format-strings
 metadata:
-  title: Format alphanumeric data for presentation in C#
-  description: Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.
+  title: 'Format alphanumeric data for presentation in C#'
+  description: 'Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.'
   ms.date: 1/3/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Format alphanumeric data for presentation in C#

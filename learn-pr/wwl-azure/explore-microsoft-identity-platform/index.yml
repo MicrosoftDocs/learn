@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.explore-microsoft-identity-platform
+metadata:
+  title: Explore the Microsoft identity platform
+  description: "Learn the core features and functionality of the Microsoft identity platform which includes authentication service, open-source libraries, and application management tools to enable and control access to resources."
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the Microsoft identity platform
+summary: Learn the core features and functionality of the Microsoft identity platform which includes authentication service, open-source libraries, and application management tools to enable and control access to resources.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Identify the components of the Microsoft identity platform.
+  *   Describe the three types of service principals and how they relate to application objects.
+  *   Explain how permissions and user consent operate, and how conditional access impacts your application.
+prerequisites: |
+  * You should be familiar with developer concepts and terminology.
+  * Experience working with OAuth or other authentication protocols.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/identity-platform-explore.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-active-directory
+- microsoft-identity-web
+units:
+- learn.wwl.explore-microsoft-identity-platform.introduction
+- learn.wwl.explore-microsoft-identity-platform.microsoft-identity-platform-overview
+- learn.wwl.explore-microsoft-identity-platform.explore-service-principals
+- learn.wwl.explore-microsoft-identity-platform.discover-permissions-consent
+- learn.wwl.explore-microsoft-identity-platform.discover-conditional-access
+- learn.wwl.explore-microsoft-identity-platform.knowledge-check
+- learn.wwl.explore-microsoft-identity-platform.summary
+badge:
+  uid: learn.wwl.explore-microsoft-identity-platform.badge

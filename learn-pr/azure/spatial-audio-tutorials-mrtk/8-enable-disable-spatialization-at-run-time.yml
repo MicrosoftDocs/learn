@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spatial-audio-tutorials-mrtk.8-enable-disable-spatialization-at-run-time
+title: Enable and disable spatialization at run time
+metadata:
+  title: Enable and disable spatialization at run time
+  description: Description to Enable and disable spatialization at run time
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-enable-disable-spatialization-at-run-time.md)]

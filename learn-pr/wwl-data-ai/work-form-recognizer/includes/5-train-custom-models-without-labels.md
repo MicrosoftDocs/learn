@@ -11,4 +11,4 @@ To train a model with unlabeled sample forms:
     ![Unsupervised learning workflow diagram](../media/unsupervised-learning-workflow.png)
 
 >[!NOTE]
->You can [generate a SAS URL](/azure/cognitive-services/form-recognizer/quickstarts/client-library#train-a-custom-model) for the container through the Azure Portal.   
+>You can [generate a SAS URL](/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api#train-a-custom-model) for the container through the Azure Portal.   

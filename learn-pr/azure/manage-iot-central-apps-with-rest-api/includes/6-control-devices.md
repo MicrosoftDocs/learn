@@ -8,7 +8,7 @@ Here, you'll learn how to use the REST API to retrieve telemetry values, read an
 
 The telemetry a device sends is defined in the device template. Each telemetry definition includes a name and a type. Telemetry types can be simple types such as integers and strings, or complex types such as enumerations or objects.
 
-The IoT Central REST API lets you retrieve the last known value of any telemetry type for a connected device.
+The IoT Central REST API lets you retrieve the last known value of any telemetry type for a connected device or run queries to retrieve device telemetry.
 
 ## Device properties
 
@@ -22,6 +22,7 @@ An example of a cloud property is the date the device was last serviced. The dev
 
 The IoT Central REST API lets you:
 
+- Run queries to retrieve device property values
 - Get the device properties for a device
 - Update the writeable device properties for a device
 - Get the cloud properties associated with a device

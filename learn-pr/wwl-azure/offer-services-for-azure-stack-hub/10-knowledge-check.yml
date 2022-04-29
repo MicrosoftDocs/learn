@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-services-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator provides an offer for users to subscribe to. They want to prevent the creation of new subscriptions based on the offer without affecting the existing user subscriptions. What should they do?"
+    choices:
+    - content: "Change the offer state Decommissioned"
+      isCorrect: true
+      explanation: "Correct. You could change the offer state to decommissioned. Offers must be made public for users to get the full view when they subscribe."
+    - content: "Change the offer state to private"
+      isCorrect: false
+      explanation: "Incorrect. Setting to private is only visible to cloud administrators."
+    - content: "Change state to public"
+      isCorrect: false
+      explanation: "That's incorrect. Setting to public makes it visible to all users."
+  - content: "An Azure Stack Hub operator wants to create a new offer used only by Azure Stack Hub operators to provision user subscriptions. Which type of offer should they create?"
+    choices:
+    - content: "Delegated with a base plan only"
+      isCorrect: false
+      explanation: "Incorrect. A delegated provider does not construct an offer from base plans and add-on plans."
+    - content: "Private with a base plan only"
+      isCorrect: true
+      explanation: "Correct. The offer you should create is private with a base plan only. They can create a base plan that is private and only visible to cloud administrators."
+    - content: "Public with a base plan only"
+      isCorrect: false
+      explanation: "Incorrect. They have the option of making the offer public and letting users sign up for it. Or they can keep it private and allow the Azure Stack Hub operator manage the signing up."

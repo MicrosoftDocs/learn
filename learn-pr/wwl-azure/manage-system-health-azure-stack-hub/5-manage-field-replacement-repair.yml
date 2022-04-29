@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-system-health-azure-stack-hub.manage-field-replacement-repair
+title: Manage field replacement or repair
+metadata:
+  title: Manage field replacement or repair
+  description: "Manage field replacement or repair"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-manage-field-replacement-repair.md)]

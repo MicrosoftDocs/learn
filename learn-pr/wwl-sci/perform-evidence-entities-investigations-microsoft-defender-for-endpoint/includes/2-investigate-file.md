@@ -70,7 +70,7 @@ Use the deep analysis feature to investigate the details of any file, usually du
 
 Submit for deep analysis is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.  You can also manually submit a sample through the Microsoft Security Center Portal if the file was not observed on a Windows 10 device and wait for Submit for deep analysis button to become available.
 
-When the sample is collected, Defender for Endpoint runs the file in is a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
+When the sample is collected, Defender for Endpoint runs the file in  a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
 
 Submit files for deep analysis:
 

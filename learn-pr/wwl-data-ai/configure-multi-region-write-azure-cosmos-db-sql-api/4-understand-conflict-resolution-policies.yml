@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.understand-conflict-resolution-policies
+title: Understand conflict resolution policies
+metadata:
+  title: Understand conflict resolution policies
+  description: "Understand conflict resolution policies"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-understand-conflict-resolution-policies.md)]

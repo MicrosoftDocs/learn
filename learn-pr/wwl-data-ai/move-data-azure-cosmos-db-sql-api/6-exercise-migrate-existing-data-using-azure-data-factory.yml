@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.exercise-migrate-existing-data-using-azure-data-factory
+title: 'Exercise: Migrate existing data using Azure Data Factory'
+metadata:
+  title: 'Exercise: Migrate existing data using Azure Data Factory'
+  description: "Exercise: Migrate existing data using Azure Data Factory"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107572
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-migrate-existing-data-using-azure-data-factory.md)]

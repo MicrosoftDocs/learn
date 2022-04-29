@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-jupyter-notebook.exercise-advanced-commands
+title: Exercise - Use advanced commands
+metadata:
+  title: Exercise - Use advanced commands
+  description: Continue your work building a ship's manual by building a chart and running a math equation in your notebook.
+  ms.date: 12/02/2021
+  author: jlooper
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-advanced-commands.md)]

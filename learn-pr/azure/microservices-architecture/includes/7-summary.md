@@ -2,11 +2,11 @@ Your application architecture will likely have more complexity, different challe
 
 ## Learn more
 
-To learn more about microservices, check out the following docs:
+To learn more about microservices, check out the following documents:
 
 - [Introduction to microservices](/azure/architecture/microservices/introduction)
 - [Design a microservices architecture](/azure/architecture/microservices/design/)
 - [Use domain analysis to model microservices](/azure/architecture/microservices/model/domain-analysis)
 - [.NET microservices architecture guidance](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture)
 
-For more background on domain-driven design, we recommend *Domain-Driven Design* by Eric Evans. This book first introduced the term. Another good reference is *Implementing Domain-Driven Design* by Vaughn Vernon.
+For more background on domain-driven design, we recommend *Domain-Driven Design* by Eric Evans. This book first introduced the term, domain-driven design. Another good reference is *Implementing Domain-Driven Design* by Vaughn Vernon.

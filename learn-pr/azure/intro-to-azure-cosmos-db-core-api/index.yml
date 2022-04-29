@@ -2,8 +2,7 @@
 uid: learn.azure.intro-to-azure-cosmos-db-core-api
 metadata:
   title: Introduction to Azure Cosmos DB SQL API
-  description: >
-    In this module, you will learn the core features of Azure Cosmos DB SQL API and determine if it's a good fit for your projects.
+  description: In this module, you will learn the core features of Azure Cosmos DB SQL API and determine if it's a good fit for your projects.
   ms.date: 05/01/2021
   author: GaryHopeMS
   ms.author: garyhope

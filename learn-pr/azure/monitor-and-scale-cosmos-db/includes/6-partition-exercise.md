@@ -20,13 +20,13 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
     :::image type="content" source="../media/6-request-peak.png" alt-text="Screenshot that shows the chart for Azure Cosmos DB requests over time." loc-scope="other"::: <!-- no-loc -->
 
-1. Enter that time on the **Max consumed RU/s by each partition key range** chart, and select **Apply**.
+1. Enter that time on the **Max consumed RU/s by each partition key range** chart.
 
     ![Screenshot that shows the chart for uneven distribution of partition access.](../media/6-hot-partition-throughput.png)
 
     Notice the imbalance between the two partitions. Most of the requests are for the first partition, which is being overused. The other partition is being underused. The **HotPartition** collection isn't configured to efficiently use its total allocated Request Units (7,000 RU/s). The first partition is in danger of being throttled, while the second has plenty of capacity available.
 
-1. Select the blue column for the first partition (Partition 0). With the partition selected, you see a list to the right of the chart that shows the partition key values that are dominating the partition. In this case, `Books` values make up the largest logical partition.
+1. Select the blue column for the first partition (Partition 0). With the partition selected, you see a list to the right of the chart that shows the partition key values that are dominating the partition. In this case, **Books** values make up the largest logical partition.
 
 ### Review evenly distributed partitions for throughput
 
@@ -34,7 +34,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 1. On the **Number of requests** chart, find the time that you populated this collection.
 
-1. Enter that time on the **Max consumed RU/s by each partition key range** chart, and select **Apply**.
+1. Enter that time on the **Max consumed RU/s by each partition key range** chart.
 
     ![Chart for even partition throughput.](../media/6-even-partitions-throughput.png)
 
@@ -58,7 +58,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
     ![Chart for uneven partition storage.](../media/6-hot-partition-storage.png)
 
-1. Select the blue column for the largest partition. The dominant partition key values appear to the right of the chart. In this case, the **Books** category is dominant.
+1. Hover on the blue column for the largest partition. The dominant partition key values appear to the right of the chart. In this case, the **Books** category is dominant.
 
 ### Review evenly distributed partitions for storage
 

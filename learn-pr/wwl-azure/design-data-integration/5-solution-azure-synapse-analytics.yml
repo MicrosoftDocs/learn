@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-integration.solution-azure-synapse-analytics
+title: Design a data integration and analytic solution with Azure Synapse Analytics
+metadata:
+  title: Design a data integration and analytic solution with Azure Synapse Analytics
+  description: "Design a data integration and analytic solution with Azure Synapse Analytics"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-solution-azure-synapse-analytics.md)]

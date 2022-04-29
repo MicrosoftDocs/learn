@@ -4,12 +4,13 @@ title: Configure AKS networking
 metadata:
   title: Configure AKS networking
   description: "Configure AKS networking"
-  ms.date: 07/28/2021
+  ms.date: 11/15/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-kubernetes-networking.md)]

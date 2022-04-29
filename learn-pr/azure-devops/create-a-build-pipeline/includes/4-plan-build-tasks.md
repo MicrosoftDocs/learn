@@ -1,16 +1,16 @@
-Mara now has a copy of the *Space Game* code on her local machine. She's going to build it by using Microsoft Azure Pipelines instead of the existing Ubuntu 20.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
+Mara now has a copy of the *Space Game* code on her local machine. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 20.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
 
 Here are some notes that Mara collected when she talked to Andy, the dev lead:
 
-* The build machine is running Ubuntu 20.04.
+* The build machine is running Ubuntu 20.04
 * The build machine includes build tools like:
-  * npm, the package manager for Node.js.
-  * NuGet, the package manager for .NET.
-  * .NET SDK.
-* The project uses Sass to make it easier to author cascading style sheets (CSS) files.
-* The project uses gulp to minify JavaScript and CSS files.
+  * npm, the package manager for Node.js
+  * NuGet, the package manager for .NET
+  * .NET SDK
+* The project uses Sass to make it easier to author cascading style sheets (CSS) files
+* The project uses gulp to minify JavaScript and CSS files
 
-A minified asset excludes unneeded data like whitespace and shortens variable names to help it download faster.
+A minified asset excludes unneeded data (like whitespace) and shortens variable names to help it download faster.
 
 Here are the steps that happen during the build process:
 
@@ -105,13 +105,13 @@ Next, Mara's going to map the existing script commands to Azure Pipelines tasks.
 
 Mara can use one of two methods to configure her pipeline:
 
-* The visual designer. Here, you drag tasks onto a form, and then configure each task to do exactly what you need.
+* The visual designer: Here, you drag tasks onto a form, and then configure each task to do exactly what you need.
 
     :::image type="content" source="../media/4-visual-designer.png" alt-text="The Azure Pipelines visual designer showing build tasks for a .NET application.":::
 
-* A YAML file. YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
+* A YAML file: YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
 
-Mara considers her options. She's used YAML previously to define similar build tasks and configurations. And she likes the idea of maintaining the build definition as code, just as she would any other part of her project.
+Mara considers her options. She's used YAML previously to define similar build tasks and configuration. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
 _Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code.
 
@@ -130,7 +130,7 @@ Now, you'll follow along as Mara maps commands from her script to Azure Pipeline
 
 To map each command, Mara refers to the [reference documentation](/azure/devops/pipelines/tasks/?azure-portal=true). The documentation categorizes tasks by function, like build or deploy.
 
-For example, the [.NET Core task](/azure/devops/pipelines/tasks/build/dotnet-core?azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
+For example, the [.NET Core CLI task](/azure/devops/pipelines/tasks/build/dotnet-core-cli?azure-portal=true) `DotNetCoreCLI@2` helps you run `dotnet` commands.
 
 This table associates the script commands with the new Azure Pipelines tasks:
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.migrate-standard-autoscale-throughput
+title: Migrate between standard and autoscale throughput
+metadata:
+  title: Migrate between standard and autoscale throughput
+  description: "Migrate between standard and autoscale throughput"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-migrate-standard-autoscale-throughput.md)]

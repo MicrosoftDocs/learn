@@ -35,11 +35,11 @@ To analyze incident details, the investigation page includes the following tabs:
 
 - devices
 
-- investigations
+- Investigations
 
-- evidence
+- Evidence
 
-- graph
+- Graph
 
 :::image type="content" source="../media/incident-alert.png" alt-text="Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident":::
 

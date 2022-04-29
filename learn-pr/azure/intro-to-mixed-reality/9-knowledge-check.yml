@@ -14,26 +14,26 @@ quiz:
   questions:
   - content: "What is mixed reality?"
     choices:
-    - content: "A set of virtual-reality hardware devices sold by Microsoft"
+    - content: "A set of virtual reality hardware devices sold by Microsoft"
       isCorrect: false
-      explanation: "Virtual-reality hardware devices are only a part of mixed reality."
+      explanation: "Virtual reality hardware devices are only a part of mixed reality."
     - content: "A spectrum of immersive experiences, connecting and blending physical and digital worlds together"
       isCorrect: true
-      explanation: "Mixed reality can include experiences that overlay virtual content over objects or places in the physical world, as in augmented-reality apps, or an immersive virtual experience where the user doesn't have any input from the real world, as in virtual-reality apps."
-    - content: "An augmented-reality platform application that comes with Microsoft HoloLens" 
+      explanation: "Mixed reality can include experiences that overlay virtual content over objects or places in the physical world, as in augmented reality apps, or an immersive virtual experience where the user doesn't have any input from the real world, as in virtual reality apps."
+    - content: "An augmented reality platform application that comes with Microsoft HoloLens" 
       isCorrect: false
       explanation: "Mixed reality is not limited to augmented reality or Microsoft HoloLens."
-  - content: "What is the difference between virtual-reality and augmented-reality experiences?"
+  - content: "What is the difference between virtual reality and augmented reality experiences?"
     choices:
     - content: "Virtual reality fully immerses a user in a digital environment, whereas augmented reality keeps users in their physical environment."
       isCorrect: true
-      explanation: "Virtual-reality users aren't aware of their real-world surroundings, but augmented reality relies on the surrounding environment."
+      explanation: "Virtual reality users aren't aware of their real-world surroundings, but augmented reality relies on the surrounding environment."
     - content: "Augmented reality fully immerses a user in a digital environment, whereas virtual reality keeps users in their physical environment."
       isCorrect: false
-      explanation: "Augmented-reality applications use the surrounding real-world environment, whereas virtual-reality content is totally immersive."
-    - content: "Virtual-reality content is available only on holographic devices, whereas augmented-reality content can run only on immersive equipment."
+      explanation: "Augmented reality applications use the surrounding real-world environment, whereas virtual reality content is totally immersive."
+    - content: "Virtual reality content is available only on holographic devices, whereas augmented reality content can run only on immersive equipment."
       isCorrect: false
-      explanation: "Virtual-reality content is run on immersive headsets, whereas augmented-reality content is run on holographic devices."
+      explanation: "Virtual reality content is run on immersive headsets, whereas augmented reality content is run on holographic devices."
   - content: "How would you describe a hologram?"
     choices:
     - content: "Immersive 3D objects made of opaque pixels"
@@ -45,7 +45,7 @@ quiz:
     - content: "Digital objects made of light and sound"
       isCorrect: true
       explanation: "Holograms are digital objects rendered in front of the user's view when the user is wearing a HoloLens device."
-  - content: "What tool would a design team use to prototype mixed-reality digital interactions, objects, and UI by using crafting materials?"
+  - content: "What tool would a design team use to prototype mixed reality digital interactions, objects, and UI by using crafting materials?"
     choices:
     - content: "Storyboarding"
       isCorrect: false

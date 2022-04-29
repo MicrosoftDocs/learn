@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-provision-environments.set-up-run-availability-tests
+title: Set up and run availability tests
+metadata:
+  title: Set up and run availability tests
+  description: "Set up and run availability tests"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-set-up-run-availability-tests.md)]

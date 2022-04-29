@@ -24,6 +24,7 @@ You have three options to scope a reservation, depending on your needs:
   - For individual subscriptions with pay-as-you-go rates, the billing scope includes all eligible subscriptions created by the account administrator.
 - Single subscription scope - Applies the reservation discount to the matching resources in the selected subscription.
 - Single resource group scope - Applies the reservation discount to the matching resources in the selected resource group only.
+- Management group - Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
 
 ## Purchase a reservation
 
@@ -47,8 +48,8 @@ You can view and manage reservations in the Azure portal at Reservations. Reserv
 
 You can also make reservation purchases programmatically using any of the following methods:
 
-- REST API: https://docs.microsoft.com/rest/api/reserved-vm-instances/reservationorder
-- Azure PowerShell: https://docs.microsoft.com/powershell/module/azurerm.reservations
-- Azure CLI: https://docs.microsoft.com/cli/azure/reservations/reservation-order
+- [REST API](/rest/api/reserved-vm-instances/reservationorder)
+- [Azure PowerShell](/powershell/module/azurerm.reservations)
+- [Azure CLI](/cli/azure/reservations/reservation-order)
 
 After you've made a reservation purchase, you can manage it in several ways outlined in the next unit.

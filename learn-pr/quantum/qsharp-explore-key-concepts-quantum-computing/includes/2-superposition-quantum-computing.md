@@ -150,11 +150,10 @@ information about the superposition. We obtain only the results after a measurem
 
 ![Figure explaining that the number of possible configurations grows exponentially with the number of qubits as 2 to the N. The number of possible combinations of amplitude is infinite, as long as their squares add up to 1.](../media/2-scale.png)
 
-In the example state we produced for the quantum random bit generator,
-$|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability
-for each state is
+In the example state we produced for the quantum random bit generator, $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability for each state is
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
+
 $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 
 Each state has a 50-percent probability of being measured, so we have a balanced

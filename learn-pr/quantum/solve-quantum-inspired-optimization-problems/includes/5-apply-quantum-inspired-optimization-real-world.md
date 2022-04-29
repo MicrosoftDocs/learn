@@ -1,4 +1,4 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated with it, and you want to partition these weights into two sets: $W_A$ and $W_B$.
+Now that you understand the basics of quantum-inspired optimization, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated with it, and you want to partition these weights into two sets: $W_A$ and $W_B$.
 
 The two sets correspond to the mineral chunks to be loaded onto container A or container B, and we define $\Delta$ as the weight difference between the two containers.
 
@@ -6,10 +6,10 @@ This short animation shows one possible way that an optimizer might distribute t
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFtm]
 
-In the next section, we'll use quantum-inspired optimization to solve the problem.
+In this section, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although it's classified as NP-hard, in practice other efficient algorithms exist that can provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight-balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, because it's a familiar and easily understood example. In a later module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-optimization-azure-quantum/), we'll tackle a more challenging problem where QIO might provide a practical advantage.
+> This problem is known as a *number partitioning problem*. Although it's classified as NP-hard, in practice other efficient algorithms exist that can provide approximate solutions much faster than quantum-inspired optimization might. Nevertheless, we'll use the freight-balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, because it's a familiar and easily understood example. In a later module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-optimization-azure-quantum/), we'll tackle a more challenging problem where quantum-inspired optimization might provide a practical advantage.
 
 ## Express the problem
 
@@ -50,20 +50,34 @@ This final model gives us a cost function with the required properties.
 
 ## Solve the problem with Azure Quantum
 
-Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we're ready to invoke a QIO solver to compute solutions for us. We'll use Python to connect to the Azure Quantum services. As you make your way through the rest of this section, copy the code sequences into a Jupyter notebook to execute them. Feel free to play with the problem parameters and observe how the results change.
+Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we're ready to invoke a QIO solver to compute solutions for us. As you make your way through the rest of this section, copy the code sequences into a Jupyter notebook to execute them. Feel free to play with the problem parameters and observe how the results change.
 
-### Setup
+### Create a new Notebook in your workspace
 
-First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the following settings, which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by opening a command prompt and running `az quantum workspace show` through the Azure CLI. Open a new python file and run the following lines:
+1. Log in to the [Azure portal](https://portal.azure.com/) and select the workspace you created in the previous step.
+1. In the left blade, select **Notebooks**.
+1. Click **My Notebooks** and click **Add New**.
+1. In **Kernel Type**, select **IPython**.
+1. Type a name for the file, for example *MineralWeightsOptimization.ipynb*, and click **Create file**. 
 
-```python
+When your new Notebook opens, it automatically creates the code for the first cell, based on your subscription and workspace information.
+
+```py
 from azure.quantum import Workspace
+workspace = Workspace (
+    subscription_id = <your subscription ID>, 
+    resource_group = <your resource group>,   
+    name = <your workspace name>,          
+    location = <your location>        
+    )
+```
 
-# Copy the following settings for your workspace
-workspace = Workspace(
-    resource_id = "", # add the Resource ID of the Azure Quantum workspace you created
-    location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
-)
+You'll need to import two additional modules. Click **+ Code** to add a new cell and add the following lines:
+
+
+```py
+from typing import List
+from azure.quantum.optimization import Term
 ```
 
 ### Problem instantiation
@@ -113,6 +127,8 @@ In Python, we would thus introduce the following `Terms`:
 
 The following function generalizes the `Term` creation for any number of weights by using some for loops. It takes an array of mineral weights and returns a `Problem` object that contains the cost function.
 
+Click **+ Code** to add another new cell and add the following lines:
+
 ```python
 from typing import List
 from azure.quantum.optimization import Problem, ProblemType, Term
@@ -138,7 +154,9 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     return Problem(name="Freight Balancing Problem", problem_type=ProblemType.ising, terms=terms)
 ```
 
-Before we submit the problem to Azure Quantum, we instantiate it by defining a list of mineral chunks via their weights:
+Before we submit the problem to Azure Quantum, we instantiate it by defining a list of mineral chunks via their weights. 
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
 # This array contains the weights of all the mineral chunks
@@ -150,32 +168,32 @@ problem = createProblemForMineralWeights(mineralWeights)
 
 ### Submit the problem to Azure Quantum
 
-You're now ready to submit your problem to Azure Quantum using the `QuantumMonteCarlo` solver:
+You're now ready to submit your problem to Azure Quantum using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use the parametrized Quantum Monte Carlo solver as an example of a QIO solver. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use the Parallel Tempering solver as an example of a Microsoft QIO solver. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
+
+Add another cell with the following code that opens the solver, submits the problem, and displays the result:
 
 ```python
-from azure.quantum.optimization import QuantumMonteCarlo
-import time
+from azure.quantum.optimization import ParallelTempering
 
-# Instantiate a solver to solve the problem.
-solver = QuantumMonteCarlo(workspace, sweeps = 2, trotter_number = 10, restarts = 72, seed = 22, beta_start = 0.1, transverse_field_start = 10, transverse_field_stop = 0.1)
+solver = ParallelTempering(workspace, timeout=100)
 
-# Optimize the problem
-print('Submitting problem...')
-start = time.time()
 result = solver.optimize(problem)
-timeElapsed = time.time() - start
-print(f'Result in {timeElapsed} seconds: ', result)
+print(result)
 ```
+This method submits the problem to Azure Quantum for optimization and synchronously wait for it to be solved. 
+
+Click **Run all** and you'll see output like the following in your Notebook:
 
 ```output
-Submitting problem...
-..Result in 9.753058433532715 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': 1, '2': -1, '3': -1, '4': 1, '5': -1, '6': -1, '7': -1, '8': -1, '9': 1}, 'cost': -2052.0}
+......{'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -2052.0, 'parameters': {'all_betas': [0.00020408163265306123, 0.0010031845282727856, 0.004931258069052868, 0.024240112818991428, 0.00020408163265306123, 0.00041416312947479666, 0.0008405023793001501, 0.0017057149691356173, 0.0034615768230851457, 0.007024921700835206, 0.014256371424073268, 0.028931870679351317, 0.058714319100389226, 0.00020408163265306123, 0.0003216601955060876, 0.000506979878727771, 0.0007990687098552142, 0.0012594401274306443, 0.001985047612326009, 0.003128702935041415, 0.0049312580690528685, 0.007772328229454337, 0.012250238227336452, 0.019308028713685834, 0.030432059025318557, 0.04796503207311015, 0.07559936381105262, 0.00020408163265306123, 0.0002853639172320586, 0.0003990195697643234, 0.0005579423586529702, 0.000780161423569038, 0.0010908866075247, 0.0015253684103382742, 0.0021328970135012235, 0.0029823940494438134, 0.004170231478526455, 0.0058311645933360684, 0.008153619454858395, 0.011401069057563778, 0.015941923261808107, 0.022291323383991948, 0.031169582869598398, 0.043583903904173556, 0.06094264037716683, 0.08521506986401543, 0.00020408163265306123, 0.0002661133962019146, 0.0003470000642267741, 0.0004524726913109797, 0.0005900043184095882, 0.0007693394594342792, 0.0010031845282727856, 0.001308108124995844, 0.0017057149691356171, 0.002224176656606702, 0.002900227698828882, 0.0037817682692016645, 0.004931258069052867, 0.006430141778288393, 0.0083846196467327, 0.010933172089261346, 0.01425637142407326, 0.018589675944162696, 0.02424011281899142, 0.031608031858238926, 0.04121547145476594, 0.05374314651596505, 0.0700786790855087, 0.09137948893466513], 'replicas': 70, 'sweeps': 600}, 'solutions': [{'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -2052.0}]}
 ```
 
-Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the following function to print a summary of what the solution means:
+Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the following function to print a summary of what the solution means. 
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
 def printResultSummary(result):
@@ -202,26 +220,28 @@ printResultSummary(result)
 
 ```output
 Mineral chunk 0 with weight 1 was placed on Container A
-Mineral chunk 1 with weight 5 was placed on Container A
-Mineral chunk 2 with weight 9 was placed on Container B
-Mineral chunk 3 with weight 21 was placed on Container B
-Mineral chunk 4 with weight 35 was placed on Container A
+Mineral chunk 1 with weight 5 was placed on Container B
+Mineral chunk 2 with weight 9 was placed on Container A
+Mineral chunk 3 with weight 21 was placed on Container A
+Mineral chunk 4 with weight 35 was placed on Container B
 Mineral chunk 5 with weight 5 was placed on Container B
 Mineral chunk 6 with weight 3 was placed on Container B
 Mineral chunk 7 with weight 5 was placed on Container B
-Mineral chunk 8 with weight 10 was placed on Container B
+Mineral chunk 8 with weight 10 was placed on Container A
 Mineral chunk 9 with weight 11 was placed on Container A
 
-Total weights:
-    Container A: 52 tons
-    Container B: 53 tons
+Total weights: 
+	Container A: 52 tons 
+	Container B: 53 tons
 ```
 
 Great! The solver found a partition such that the containers are within 1&nbsp;ton of each other. This outcome is satisfactory, because a perfectly balanced solution doesn't exist for this problem instance.
 
 ## Improve the cost function
 
-The cost function you've built works well so far, but let's take a closer look at the `Problem` that was generated:
+The cost function you've built works well so far, but let's take a closer look at the `Problem` that was generated.
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
 print(f'The problem has {len(problem.terms)} terms for {len(mineralWeights)} mineral chunks:')
@@ -241,7 +261,8 @@ This duplicate encodes the exact same information in our cost function. However,
 
 Notice that we've expanded the square in our previous cost function to a summation over two indices, $i$ and $j$. With the constraint $i<j$, we exclude the symmetric copies of terms mentioned above. As a bonus, "constant" $i=j$ terms, which don't contribute to the solution, are excluded as well.
 
-To implement the improved cost function, modify your `createProblemForMineralWeights` function as follows:
+To implement the improved cost function, modify your `createProblemForMineralWeights` function as follows. Add another cell with the following code:
+
 
 ```python
 def createSimplifiedProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
@@ -273,7 +294,9 @@ print(f'The simplified problem has {len(simplifiedProblem.terms)} terms')
 The simplified problem has 45 terms
 ```
 
-Success! The problem has half as many terms. Now let's run it and verify the result:
+Success! The problem has half as many terms. Now let's run it and verify the result. 
+
+Click **+ Code** to add another new cell and add the following code:
 
 ```python
 # Optimize the problem
@@ -304,4 +327,4 @@ Total weights:
     Container B: 53 tons
 ```
 
-As you can see, the quality of the solution is the same for both cost functions. The container loads are within 1&nbsp;ton of each other. This reveals an important fact about using QIO solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.
+As you can see, the quality of the solution is the same for both cost functions. The container loads are within 1&nbsp;ton of each other. This reveals an important fact about using quantum-inspired optimization solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.

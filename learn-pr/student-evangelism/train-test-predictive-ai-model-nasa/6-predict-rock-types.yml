@@ -4,10 +4,11 @@ metadata:
   title: Exercise - Predict the type of space rock in a random photo
   description: Run code to use your AI model to predict types of space rocks in a set of random photos.
   ms.date: 04/28/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Predict the type of space rock in a random photo
 durationInMinutes: 5
 content: |

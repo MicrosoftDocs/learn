@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.design-application-architecture
+metadata:
+  title: Design an application architecture
+  description: "Design an application architecture"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design an application architecture
+summary: Azure Architects design and recommend application architectures.
+abstract: |
+  In this module, you’ll learn how to:
+  *   Describe message and event scenarios.
+  *   Design a messaging solution.
+  *   Design an Event Hub messaging solution.
+  *   Design an event-driven solution.
+  *   Design an automated app deployment solution.
+  *   Design API integration.
+  *   Design an application configuration management solution.
+  *   Design a caching solution.
+prerequisites: |
+  - Working experience with developing cloud applications.
+  - Conceptual knowledge of messaging, events, deployments, configurations, API, and caching.
+iconUrl: /learn/achievements/design-application-architecture.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure-app-configuration
+- azure-cache-redis
+- azure-event-grid
+- azure-event-hubs
+units:
+- learn.wwl.design-application-architecture.introduction
+- learn.wwl.design-application-architecture.describe-message-event-scenarios
+- learn.wwl.design-application-architecture.design-messaging-solution
+- learn.wwl.design-application-architecture.design-event-hub-messaging-solution
+- learn.wwl.design-application-architecture.design-event-driven-solution
+- learn.wwl.design-application-architecture.design-caching-solution
+- learn.wwl.design-application-architecture.design-api-integration
+- learn.wwl.design-application-architecture.design-automated-app-deployment-solution
+- learn.wwl.design-application-architecture.configuration-management-solution
+- learn.wwl.design-application-architecture.knowledge-check
+- learn.wwl.design-application-architecture.summary-resources
+badge:
+  uid: learn.wwl.design-application-architecture.badge

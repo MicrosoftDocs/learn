@@ -4,12 +4,13 @@ title: Create a network virtual appliance (NVA) in a virtual hub
 metadata:
   title: Create a network virtual appliance (NVA) in a virtual hub
   description: "Create a network virtual appliance (NVA) in a virtual hub"
-  ms.date: 07/15/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/8-create-network-virtual-appliance-virtual-hub.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "A network engineer wants to provide VMware SD-WAN connectivity for their clients. Which Azure resource should they deploy?"
     choices:
-    - content: "Network Virtual Appliance (NVA)."
-      isCorrect: true
-      explanation: "Correct, Azure Virtual WAN supports connections from networking partners, such as VMware SD-WAN. These types of devices are known as network virtual appliances (NVAs)."
     - content: "Point-to-site VPN Gateway"
       isCorrect: false
       explanation: "Incorrect, A point-to-site VPN Gateway supports connections from individual computers."
     - content: "Local network gateway"
       isCorrect: false
       explanation: "Incorrect, A local network gateway represents the on-premises network."
+    - content: "Network Virtual Appliance (NVA)."
+      isCorrect: true
+      explanation: "Correct, Azure Virtual WAN supports connections from networking partners, such as VMware SD-WAN. These types of devices are known as network virtual appliances (NVAs)."
   - content: "Where can an NVA be deployed?"
     choices:
-    - content: "NVAs are deployed directly into a Virtual WAN hub."
-      isCorrect: true
-      explanation: "Correct, NVAs are deployed directly into a Virtual WAN hub and have an externally facing public IP address."
     - content: "NVAs are deployed into an on-premises subnet."
       isCorrect: false
       explanation: "Incorrect, NVAs are not deployed into an on-premises subnet."
+    - content: "NVAs are deployed directly into a Virtual WAN hub."
+      isCorrect: true
+      explanation: "Correct, NVAs are deployed directly into a Virtual WAN hub and have an externally facing public IP address."
     - content: "NVAs are deployed into a security-isolated subnet."
       isCorrect: false
       explanation: "Incorrect, NVAs do not require security isolation."

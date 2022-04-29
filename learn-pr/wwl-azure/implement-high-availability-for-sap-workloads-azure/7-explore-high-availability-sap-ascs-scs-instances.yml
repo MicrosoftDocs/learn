@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-of-sap-ascs-scs-instances
+title: Explore high availability of SAP ASCS-SCS instances
+metadata:
+  title: Explore high availability of SAP ASCS-SCS instances
+  description: "Explore high availability of SAP ASCS-SCS instances"
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-explore-high-availability-sap-ascs-scs-instances.md)]

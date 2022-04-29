@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.advanced-pybryt
+metadata:
+  title: Advanced PyBryt for Classroom Auto-assessment
+  description: Learn advanced patterns in auto-assessment with PyBryt.
+  ms.date: 1/10/2022
+  author: chrispyles
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Advanced PyBryt for Classroom Auto-assessment
+summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool for creating assignments with targeted feedback and generalizable grading.
+abstract: |
+  In this module you will:
+  - Learn how to customize how annotations are tracked and grouped
+  - Understand the concept of relational annotations and how to create and leverage them
+  - Create scaffold for checking the complexity of student code
+  - Explore different options for creating a grading pipeline that uses PyBryt
+iconUrl: /learn/achievements/student-evangelism/advanced-pybryt.svg
+levels:
+  - advanced
+roles:
+  - student
+  - developer
+  - higher-ed-educator
+  - school-leader
+products:
+  - vs-code
+prerequisites: |
+  - Basic Python knowledge
+  - Basic understanding of PyBryt annotations and reference implementations
+units:
+  - learn.advanced-pybryt.1-introduction
+  - learn.advanced-pybryt.2-annotation-options
+  - learn.advanced-pybryt.3-relational-annotations
+  - learn.advanced-pybryt.4-complexity-annotations
+  - learn.advanced-pybryt.5-grading-pipelines
+  - learn.advanced-pybryt.6-summary
+badge:
+  uid: learn.advanced-pybryt.badge

@@ -26,6 +26,7 @@ roles:
 - data-engineer
 products:
 - azure
+- azure-cosmos-db
 units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.introduction
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview

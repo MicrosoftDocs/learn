@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-tensorflow.tensors-variables
+title: Tensors and variables
+metadata:
+  title: Tensors and variables
+  description: Learn about TensorFlow's tensors and variables
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors: bstollnitz-08202021
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+sandbox: true
+notebook: notebooks/2-tensors-variables.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the difference between a `Tensor` and a `Variable` in TensorFlow?"
+    choices:
+    - content: "There is no difference."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "Tensors are mutable, variables are immutable."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Variables are mutable, tensors are immutable."
+      isCorrect: true
+      explanation: "Correct!"

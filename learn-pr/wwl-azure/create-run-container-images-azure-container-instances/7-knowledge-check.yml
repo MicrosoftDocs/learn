@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-container-images-azure-container-instances.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the methods below is recommended when deploying a multi-container group that includes only containers?"
+    choices:
+    - content: "Azure Resource Management template"
+      isCorrect: false
+      explanation: "That's incorrect. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
+    - content: "YAML file"
+      isCorrect: true
+      explanation: "That's correct. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
+    - content: "`az container create` command"
+      isCorrect: false
+      explanation: "That's incorrect. This command is not specific to this scenario."

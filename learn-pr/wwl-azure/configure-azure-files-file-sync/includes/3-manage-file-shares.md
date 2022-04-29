@@ -1,11 +1,11 @@
-To access your files, you will need a storage account. After the storage account is created, provide the file share **Name** and the **Quota**. Quota refers to total size of files on the share.
+To access your files, you will need a storage account. After the storage account is created, you can create the file share. 
 
 :::image type="content" source="../media/create-file-shares-bf2e2f1d.png" alt-text="Screenshot Add a file share page from the portal":::
 
 
 ## Mapping file shares (Windows)
 
-You can connect to your Azure file share with Windows or Windows Server. Just select **Connect** from your file share page.
+You can connect to your Azure file share with Windows or Windows Server. Just select **Connect** from your virtual machine page.
 
 :::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot of This PC page. Map a Network Drive is highlighted.":::
 
@@ -15,10 +15,7 @@ You can connect to your Azure file share with Windows or Windows Server. Just se
 
 ## Mounting file shares (Linux)
 
-:::image type="content" source="../media/map-file-shares-linux-1639a49a.png" alt-text="Screenshot of the file share connect page for linux. The sudo command is shown.":::
-
-
-Azure file shares can be mounted in Linux distributions using the CIFS kernel client. File mounting can be done on-demand with the mount command or on-boot (persistent) by creating an entry in /etc/fstab.
+You can also connect to your Azure file share with Linux machines. Just select **Connect** from the virtual machine page. Azure file shares can be mounted in Linux distributions using the CIFS kernel client. File mounting can be done on-demand with the mount command or on-boot (persistent) by creating an entry in /etc/fstab.
 
 ## Secure transfer required
 

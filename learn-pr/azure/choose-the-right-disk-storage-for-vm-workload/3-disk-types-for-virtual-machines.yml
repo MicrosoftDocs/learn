@@ -5,8 +5,8 @@ metadata:
   title: Disk types for virtual machines
   description: Disk types for virtual machines
   ms.date: 11/06/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

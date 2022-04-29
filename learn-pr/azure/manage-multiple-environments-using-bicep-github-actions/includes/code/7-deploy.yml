@@ -1,0 +1,92 @@
+name: deploy
+
+on:
+  workflow_call:
+    inputs:
+      environmentType:
+        required: true
+        type: string
+      resourceGroupName:
+        required: true
+        type: string
+      reviewApiUrl:
+        required: true
+        type: string
+    secrets:
+      AZURE_CREDENTIALS:
+        required: true
+      reviewApiKey:
+        required: true
+
+jobs:
+  validate:
+     runs-on: ubuntu-latest
+     steps: 
+     - uses: actions/checkout@v2
+     - uses: azure/login@v1
+       name: Sign in to Azure
+       with:
+         creds: ${{ secrets.AZURE_CREDENTIALS }}
+     - if: inputs.environmentType != 'Production'
+       uses: azure/arm-deploy@v1
+       name: Run preflight validation
+       with:
+         deploymentName: ${{ github.run_number }}
+         resourceGroupName: ${{ inputs.resourceGroupName }}
+         template: ./deploy/main.bicep
+         parameters: >
+           environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
+         deploymentMode: Validate
+     - if: inputs.environmentType == 'Production'
+       uses: Azure/cli@v1
+       name: Run what-if
+       with:
+         inlineScript: |
+             az deployment group what-if \
+               --resource-group ${{ inputs.resourceGroupName }} \
+               --template-file ./deploy/main.bicep \
+               --parameters environmentType=${{ inputs.environmentType }} \
+                            reviewApiUrl=${{ inputs.reviewApiUrl }} \
+                            reviewApiKey=${{ secrets.reviewApiKey }}
+ 
+  deploy:
+    needs: validate
+    environment: ${{ inputs.environmentType }}
+    runs-on: ubuntu-latest
+    outputs:
+      appServiceAppHostName: ${{ steps.deploy.outputs.appServiceAppHostName }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      name: Sign in to Azure
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      id: deploy
+      name: Deploy Bicep file
+      with:
+        failOnStdErr: false
+        deploymentName: ${{ github.run_number }}
+        resourceGroupName: ${{ inputs.resourceGroupName }}
+        template: ./deploy/main.bicep
+        parameters: >
+           environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
+
+  smoke-test:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps: 
+    - uses: actions/checkout@v2
+    - run: |
+        $container = New-PesterContainer `
+          -Path 'deploy/Website.Tests.ps1' `
+          -Data @{ HostName = '${{needs.deploy.outputs.appServiceAppHostName}}' }
+        Invoke-Pester `
+          -Container $container `
+          -CI
+      name: Run smoke tests
+      shell: pwsh

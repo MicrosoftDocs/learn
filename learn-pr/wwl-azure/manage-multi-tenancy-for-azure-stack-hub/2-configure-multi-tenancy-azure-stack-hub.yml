@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.configure-multi-tenancy
+title: Configure multi-tenancy in Azure Stack Hub
+metadata:
+  title: Configure multi-tenancy in Azure Stack Hub
+  description: "Configure multi-tenancy in Azure Stack Hub"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-configure-multi-tenancy-azure-stack-hub.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-qna-solution
 metadata:
-  title: Build a QnA solution
-  description: Build a QnA solution
-  ms.date: 07/08/2021
+  title: Build a question answering solution
+  description: Build a question answering solution
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a QnA solution
+title: Build a question answering solution
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
@@ -16,7 +16,7 @@ prerequisites: |
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path before starting this one.
 summary: |
   A common pattern for intelligent apps is to enable users to ask questions using natural language, and receive appropriate answers. This kind of solution brings conversational intelligence to a traditional frequently asked questions (FAQ) publication.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/qna-maker-build-solution.svg
 levels:
 - intermediate
 roles:
@@ -24,7 +24,6 @@ roles:
 - developer
 products:
 - azure-cognitive-services
-- azure-qna-maker
 modules:
 - learn.wwl.build-qna-solution-qna-maker
 trophy:

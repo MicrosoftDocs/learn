@@ -53,7 +53,8 @@ Set-AzVM -ResourceGroupName <resource group> `
 
 ```azurecli
 az vm generalize \
-    --name <virtual machine name>
+     --resource-group <resource group> \
+     --name <virtual machine name>
 ```
 
 ## Generalize a Linux virtual machine

@@ -8,6 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
+  ms.custom: team=nextgen
 title: Exercise - Bind data to forms
 durationInMinutes: 4
 content: |

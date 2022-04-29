@@ -4,12 +4,13 @@ title: Troubleshoot ExpressRoute connection issues
 metadata:
   title: Troubleshoot ExpressRoute connection issues
   description: "Troubleshoot ExpressRoute connection issues"
-  ms.date: 08/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/10-troubleshoot-expressroute-connection-issues.md)]

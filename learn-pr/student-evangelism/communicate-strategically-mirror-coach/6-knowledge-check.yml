@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What's the first step in approaching and solving problems strategically?"
+    choices:
+    - content: 'Create a plan.'
+      isCorrect: false
+      explanation: "Incorrect. Creating a plan is an important part of strategic problem-solving, but it isn't the first step."
+    - content: 'Develop metacognition.'
+      isCorrect: true
+      explanation: 'Correct. To approach and solve problems strategically, a crucial first step is to develop your metacognition, which is the awareness and understanding you have of your own thought processes.'
+    - content: 'Evaluate your actions.'
+      isCorrect: false
+      explanation: "Incorrect. Evaluating your actions is an important part of strategic problem-solving, but it isn't the first step."
+  - content: 'What should a coach do to support their peers?'
+    choices:
+    - content: "Focus on the usefulness of the strategy they're explaining."
+      isCorrect: true
+      explanation: "Correct. Coaches should focus on the usefulness of the strategy they're explaining."
+    - content: 'Explain how they would approach a situation.'
+      isCorrect: false
+      explanation: "Incorrect. Coaches should avoid saying what they would do and focus instead on the strategy they're explaining."
+    - content: 'When a group is sharing information, make sure to comment after each person.'
+      isCorrect: false
+      explanation: 'Incorrect. When the group is sharing information, coaches should avoid commenting after each person and only ask necessary clarifying questions.'
+  - content: 'Which of the following statements is accurate?'
+    choices:
+    - content: "It's important to always maintain a balance between mirroring and coaching."
+      isCorrect: true
+      explanation: 'Correct. Remember to strike a balance to help people in the best manner possible for the situation at hand. Frame the challenge and stay flexible.'
+    - content: 'To help others, a person can choose to be either a mirror or a coach, but not both.'
+      isCorrect: false
+      explanation: 'Incorrect. You can use both mirroring and coaching to help people solve problems, build their resilience and team skills, and manage challenges better.'
+    - content: 'By playing a strong role in leading team members through a plan, a person can help them strategize their own solutions and work through challenges.'
+      isCorrect: false
+      explanation: "Incorrect. If you play too strong of a role as you lead your team through a plan, they won't learn how to strategize their own solutions or work through challenges."

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-if-else-expressions.1-arrays
+metadata:
+  title: Create and use arrays
+  description: Explore how to work with array data in Rust.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Create and use arrays
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-arrays.md)]
+
+quiz:
+  questions:
+
+  - content: "Which syntax can be used to declare and initialize an array?"
+    choices:
+    - content: "`let multiples [5, 10, 15, 20, 25];`"
+      isCorrect: false
+      explanation: "Incorrect. The element values in square brackets must be bound to the array by using the equals sign (=)."
+    - content: "`let multiples = [5: 5];`"
+      isCorrect: false
+      explanation: "Incorrect. The initial array element value `5` must be followed by a semicolon."
+    - content: "`let multiples = [5; 5];`"
+      isCorrect: true
+      explanation: "Correct. The array is defined with a length of 5, and the first element is initialized to 5."
+
+  - content: "What happens if you try to access an array element with an index greater than the array size?"
+    choices:
+    - content: "The program panics during runtime."
+      isCorrect: false
+      explanation: "Incorrect. The compiler returns an error. No executable program is produced."
+    - content: "The compiler returns an error."
+      isCorrect: true
+      explanation: "Correct. The compiler returns an *index out of bounds* error."
+    - content: "A null value is returned."
+      isCorrect: false
+      explanation: "Incorrect. The compiler returns an error. There's no executable program to run, or to produce output."

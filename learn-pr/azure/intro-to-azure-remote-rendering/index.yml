@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience building mixed reality apps.
   - Experience working with Microsoft HoloLens 2.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-azure-remote-rendering.svg
 levels:
   - beginner
 roles:

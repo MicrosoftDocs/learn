@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-administer-conditional-access.exercise-implement-conditional-access-policies-roles-assignments
-title: Exercise - Implement conditional access policies roles and assignments
+title: Exercise - Implement Conditional Access policies roles and assignments
 metadata:
-  title: Exercise - Implement conditional access policies roles and assignments
-  description: "Exercise - Implement conditional access policies roles and assignments"
-  ms.date: 07/23/2021
+  title: Exercise - Implement Conditional Access policies roles and assignments
+  description: "Exercise - Implement Conditional Access policies roles and assignments"
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-implement-conditional-access-policies-roles-assignments.md)]

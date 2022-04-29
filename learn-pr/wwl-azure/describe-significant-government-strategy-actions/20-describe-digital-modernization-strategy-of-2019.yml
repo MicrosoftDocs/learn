@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-digital-modernization-strategy-of-2019
+title: Describe the Department of Defense's Digital Modernization Strategy of 2019
+metadata:
+  title: Describe the Department of Defense's Digital Modernization Strategy of 2019
+  description: "Describe the Department of Defense's Digital Modernization Strategy of 2019"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/20-describe-digital-modernization-strategy-of-2019.md)]

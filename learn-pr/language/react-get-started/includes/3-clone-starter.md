@@ -42,7 +42,7 @@ Let's explore the folders and files in the starter project:
       - It virtually builds all JavaScript and HTML files.
       - It hosts and automatically restarts the server as files are changed.
     - **build** to generate production files for deployment
-- **snowpack.config.json** contains the core configuration for Snowpack.
+- **snowpack.config.js** contains the core configuration for Snowpack.
   - **mount** creates two virtual directories for our Snowpack server.
     - **public** contains all static files (such as HTML, CSS, and images). It's hosted as `/`.
     - **src** contains all JSX files and associated React files. It's hosted as `dist`.

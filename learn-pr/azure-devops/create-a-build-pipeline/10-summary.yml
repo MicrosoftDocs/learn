@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Get a summary of what you've learned and discover resources to learn more.
   ms.date: 05/24/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

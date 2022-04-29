@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-keras.predict
+title: Making a prediction
+metadata:
+  title: Making a prediction
+  description: Learn how to make a prediction using your trained neural network
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors:
+  - bstollnitz-08202021
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/5-predict.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What kind of images can we use as input in the prediction phase?"
+    choices:
+    - content: "Any image at all."
+      isCorrect: false
+      explanation: "Not quite. The model we trained does not accept color images, for example."
+    - content: "Only images in the training data."
+      isCorrect: false
+      explanation: "Incorrect. Our model generalizes beyond the training data. In fact, you saw it make good predictions for test data."
+    - content: "Only images in the training data or test data."
+      isCorrect: false
+      explanation: "Incorrect. You saw it work for test data that the model hadn't seen during training. You can imagine that it will work similarly for other images it hasn't seen."
+    - content: "Any image, so long as it's in the format expected by the model."
+      isCorrect: true
+      explanation: "Correct! The more similar the prediction images are to the images in the training data, the better the predictions will be."

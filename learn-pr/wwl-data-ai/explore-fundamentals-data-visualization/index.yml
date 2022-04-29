@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.explore-fundamentals-of-data-visualization
+metadata:
+  title: Explore fundamentals of data visualization
+  description: "Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action."
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore fundamentals of data visualization
+summary: Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe a high-level process for creating reporting solutions with Microsoft Power BI
+  - Describe core principles of analytical data modeling
+  - Identify common types of data visualization and their uses
+  - Create an interactive report with Power BI Desktop
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+- database-administrator
+products:
+- azure
+- power-bi
+units:
+- learn.wwl.explore-fundamentals-of-data-visualization.introduction
+- learn.wwl.explore-fundamentals-of-data-visualization.describe-power-bi-tools-workflow
+- learn.wwl.explore-fundamentals-of-data-visualization.describe-core-concepts-modeling
+- learn.wwl.explore-fundamentals-of-data-visualization.describe-considerations-for
+- learn.wwl.explore-fundamentals-of-data-visualization.exercise-visualize-data-power-bi
+- learn.wwl.explore-fundamentals-of-data-visualization.knowledge-check
+- learn.wwl.explore-fundamentals-of-data-visualization.summary
+badge:
+  uid: learn.wwl.explore-fundamentals-of-data-visualization.badge

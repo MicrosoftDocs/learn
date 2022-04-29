@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-azure-pipelines
+metadata:
+  title: Integrate with Azure Pipelines
+  description: "Integrate with Azure Pipelines"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate with Azure Pipelines
+summary: This module details Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline. Also, it explores communication to deploy using Azure Pipelines to target servers.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe advanced Azure Pipelines anatomy and structure
+  - Detail templates and YAML resources
+  - Implement and use multiple repositories
+  - Explore communication to deploy using Azure Pipelines
+prerequisites: ""
+iconUrl: /learn/achievements/6-integrate-with-azure-pipelines.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.integrate-azure-pipelines.introduction
+- learn.wwl.integrate-azure-pipelines.describe-anatomy-of-pipeline
+- learn.wwl.integrate-azure-pipelines.understand-pipeline-structure
+- learn.wwl.integrate-azure-pipelines.detail-templates
+- learn.wwl.integrate-azure-pipelines.explore-yaml-resources
+- learn.wwl.integrate-azure-pipelines.use-multiple-repositories-your-pipeline
+- learn.wwl.integrate-azure-pipelines.communicate-with-azure-pipelines
+- learn.wwl.integrate-azure-pipelines.communicate-to-deploy-to-target-servers
+- learn.wwl.integrate-azure-pipelines.examine-other-considerations
+- learn.wwl.integrate-azure-pipelines.knowledge-check
+- learn.wwl.integrate-azure-pipelines.summary
+badge:
+  uid: learn.wwl.integrate-azure-pipelines.badge

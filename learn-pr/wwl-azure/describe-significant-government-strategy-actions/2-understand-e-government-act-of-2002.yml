@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.understand-e-government-act-of-2002
+title: Understand the e-Government Act of 2002
+metadata:
+  title: Understand the e-Government Act of 2002
+  description: "Understand the e-Government Act of 2002"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-e-government-act-of-2002.md)]

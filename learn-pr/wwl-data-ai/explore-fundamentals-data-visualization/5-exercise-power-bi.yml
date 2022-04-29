@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-data-visualization.exercise-visualize-data-power-bi
+title: Exercise – Visualize data with Power BI
+metadata:
+  title: Exercise – Visualize data with Power BI
+  description: "Exercise – Visualize data with Power BI"
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-power-bi.md)]

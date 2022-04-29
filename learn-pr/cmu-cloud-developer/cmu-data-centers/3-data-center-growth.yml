@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 8
 content: |
   [!include[](includes/3-data-center-growth.md)]
@@ -17,7 +18,7 @@ quiz:
   questions:
 
 # Did I get this block 1  
-  - content: "Let's consider a datacenter for organization X that spans about 5,000 square feet. Based on the average power density of datacenters in 2010 (see Figure 19), and assuming the entire area is populated with IT equipment, what's the approximate power consumption of the entire datacenter?"
+  - content: "Let's consider a datacenter for organization X that spans about 5,000 square feet. Based on the average power density of datacenters in 2010 (see Figure 18), and assuming the entire area is populated with IT equipment, what's the approximate power consumption of the entire datacenter?"
     choices:
     - content: "2.5 MW"
       isCorrect: true

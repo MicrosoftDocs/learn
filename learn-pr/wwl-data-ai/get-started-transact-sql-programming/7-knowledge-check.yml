@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-transact-sql-programming.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Suppose someone runs this T-SQL batch script to insert three rows. After execution they get an error, how many rows will be created? ```INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Database Administration', 'IT Professional', 5);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('C#.NET', 'Developer', 4);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Project Management', 'Management', 'Two');GO```"
+    choices:
+    - content: "0"
+      isCorrect: false
+      explanation: "Incorrect. There are no syntax errors in this batch. But one of the data values is the wrong type."
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. There are no syntax errors in this batch. But one of the data values is the wrong type."
+    - content: "2"
+      isCorrect: true
+      explanation: "Correct. Two rows are created. There's no syntax error in this batch, so SQL can begin to execute the statement. The first two INSERT statements are executed before the error arises."
+  - content: "Someone wants to populate a table by creating 15 new rows. Before they create the rows, they need to check that the table exists. From the following T-SQL keywords, which one will they need to use?"
+    choices:
+    - content: "IF"
+      isCorrect: true
+      explanation: "Correct. They'll use the IF statement to check that the table exists before they begin inserting the rows."
+    - content: "WHILE"
+      isCorrect: false
+      explanation: "Incorrect. The WHILE statement is a loop construct, and wouldn't be used in this context."
+    - content: "INSERT"
+      isCorrect: false
+      explanation: "Incorrect. The INSERT statement is used to insert the 15 rows into the table."
+  - content: "Can a variable be declared in one batch and referenced multiple batches?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. Variables are local to the batch in which they're declared."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. Variables are local to the batch in which they're declared."
+    - content: "Sometimes"
+      isCorrect: false
+      explanation: "Incorrect. Variables are local to the batch in which they're declared."

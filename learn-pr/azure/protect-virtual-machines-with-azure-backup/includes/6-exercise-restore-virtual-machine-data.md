@@ -1,4 +1,4 @@
-A few days after you backed up your first Azure virtual machine (VM), the server had issues. It needs to be restored from a backup. You want to restore the virtual machine's disk and attach it to the problematic live server, and then track the restore to ensure that it has finished successfully.
+A few days after you backed up your first Azure virtual machine (VM), the server had issues. The VM needs to be restored from a backup. You want to restore the virtual machine's disk and attach it to the problematic live server, and then track the restore to ensure that it has finished successfully.
 
 In this exercise, you'll see how to restore a successful backup to replace a VM that has become corrupted, and monitor its progress.
 
@@ -6,15 +6,15 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 ### Create a storage account to use as a staging location
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) by using the same account that you used in the previous exercise.
+1. If you closed Azure, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) by using the same account that you used in the previous exercise.
 
-1. In the Azure portal, search for and select **Storage accounts**.
+1. In the Azure portal, enter **Storage accounts** in the top search bar, and then select it.
 
     ![Select storage accounts.](../media/6-select-storage-accounts.png)
 
     The **Storage accounts** pane appears.
 
-1. In the top menu bar, select **Create**. The **Create a storage account** pane appears.
+1. In the menu bar, select **Create**. The **Create a storage account** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting to create a storage account.
 
@@ -35,19 +35,19 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 ### Stop the virtual machine to allow for the restore
 
-A backup can't be restored if the VM is allocated and running. If you forget to stop the VM, you'll see an error that's similar to the following example.
+A backup can't be restored if the VM is allocated and running. If you forget to stop the VM and attempt to restore it, you'll see an error that's similar to the following example.
 
 ![Screenshot that shows the error details when a VM is running.](../media/6-restore-error.png)
 
 To prevent this error, follow these steps:
 
-1. In the Azure portal, search for and select **Virtual machines**, and then select **NW-APP01**.
+1. In the top left of the Azure portal, select **Home**, select **Virtual Machines**, and then select **NW-APP01**.
 
     ![Screenshot of the VM overview page.](../media/6-vm-overview.png)
 
     The **NW-APP01** virtual machine pane appears.
 
-1. In the top menu bar, select **Stop** to shut down the VM.
+1. In the menu bar, select **Stop**.
 
     ![Screenshot of stopping the VM.](../media/6-stop-vm.png)
 
@@ -59,21 +59,21 @@ To prevent this error, follow these steps:
 
 The Recovery Services vaults are accessible at the subscription level. When you're viewing the VM, Azure provides a quick link to the specific vault under **Operations**.
 
-1. In the middle menu pane, under **Operations**, select **Backup**.
+1. In the menu pane, scroll to **Operations**, and select **Backup**.
 
     ![Screenshot of the "Backup" operation for a VM](../media/6-vm-backup-menu.png)
 
-1. To restore the virtual machine, in the top menu bar, select **Restore VM**. The **Restore Virtual Machine** pane appears for nw-app01.
+1. To restore the virtual machine, in the menu bar, select **Restore VM**. The **Restore Virtual Machine** pane for *nw-app01* appears.
 
 1. Under the **Restore point** text box, select **Select**. The **Select restore point** pane appears.
 
-1. Select the restore point to use for the recovery, and then select **OK**.
+1. By default the start and end date are set for a two week range. Set the **Start date** to an appropriate date for our restore points (07/05/2021), select the restore point to use for the recovery, and then select **OK**.
 
     ![Screenshot of selecting a restore point.](../media/6-restore-point.png)
 
-    The **Restore Virtual Machine** pane for nw-app01 appears.
+    The **Restore Virtual Machine** pane for *nw-app01* appears.
 
-1. Enter the following values for each setting.
+1. Configure the restore point using the following values for each setting.
 
     | Setting | Value |
     |-|-|
@@ -83,24 +83,23 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     ![Screenshot that shows the restore configuration options.](../media/6-restore-configuration.png)
 
-1. Select **Restore**. The **Backup** pane for the NW-APP01 virtual machine appears.
+1. Select **Restore**. The **Backup** pane for the NW-APP01 virtual machine appears. Notice the notifications in the top right of the toolbar. The latest notification shows   **Triggering restore for NW-APP01**
 
 ## Track a restore
 
-1. In the top section, under **Alerts and Jobs**, select **View all Jobs**.
+1. In the **Alerts and Jobs** section, select **View all Jobs**. The **Backup Jobs** pane appears.
 
     ![Screenshot of viewing all jobs.](../media/6-review-jobs.png)
+    
+1. In the **Details** column, select **View details** for the **Restore** job.
 
-    The **Backup Jobs** pane appears.
+    :::image type="content" source="../media/6-restore-progress.png" alt-text="Screenshot of the restore progress." lightbox="../media/6-restore-progress.png":::
 
-1. Under **Details**, select **View details** for the *Restore* job.
+    The **Restore** pane appears for nw-app01.
 
-    ![Screenshot of the restore progress.](../media/6-restore-progress.png)
-
-    The **Backup** pane appears for nw-app01.
-
-1. You can now monitor the progress of the VM restore:
-    - **Job details**: Real-time percentage of the job as a whole.
-    - **Sub tasks**: Status of the current task within the job.
+1. You can monitor the progress of the VM restore job:
+    - **Job details**: Details about the restore job you launched for this VM.
+    - **Job status**: Real-time progress of the restore job.
+    - **Sub tasks**: Name and status of the tasks within the job.
 
     ![Screenshot of the job details.](../media/6-job-details.png)

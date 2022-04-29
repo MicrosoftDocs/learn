@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access-for-azure-stack-hub.authentication-authorization
+title: Authentication and authorization
+metadata:
+  title: Authentication and authorization
+  description: "Authentication and authorization"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-authentication-authorization.md)]

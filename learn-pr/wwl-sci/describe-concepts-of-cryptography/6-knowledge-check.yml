@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-concepts-of-cryptography.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many keys are required when using symmetric encryption?"
+    choices:
+    - content: "Three."
+      isCorrect: false
+      explanation: "That's incorrect. Symmetric encryption doesn't need that many keys."
+    - content: "One."
+      isCorrect: true
+      explanation: "That's correct. Symmetric encryption uses one secret encryption key that's shared with all parties."
+    - content: "Two."
+      isCorrect: false
+      explanation: "That's incorrect. Asymmetric encryption uses two keys, one private and one public."
+  - content: "When using asymmetric encryption, which key shouldn't be shared?"
+    choices:
+    - content: "Private key."
+      isCorrect: true
+      explanation: "That's correct. The private key should always be kept safe and never shared."
+    - content: "Public key."
+      isCorrect: false
+      explanation: "That's incorrect. Asymmetric encryption requires that you share the public key to turn a plaintext message into ciphertext."
+    - content: "Key pair."
+      isCorrect: false
+      explanation: "That's incorrect. The key pair contains both the public and private keys."
+  - content: "What is a hashing function?"
+    choices:
+    - content: "A hashing function is an algorithm that creates a new ciphertext message from the plaintext."
+      isCorrect: false
+      explanation: "That's incorrect. A hashing function creates a value that represents the content of plaintext and can be used to verify the source."
+    - content: "A hashing function is an algorithm that's used to decrypt ciphertext from the sender."
+      isCorrect: false
+      explanation: "That's incorrect. A hashing function creates a value that represents the content of plaintext and can be used to verify the source."
+    - content: "A hashing function is an algorithm that creates a fixed-length hexadecimal value of the plaintext."
+      isCorrect: true
+      explanation: "That's correct. The hashing function creates a value that represents the content of plaintext and can be used to verify that the source document hasn't changed."

@@ -4,12 +4,13 @@ title: Considerations for migration
 metadata:
   title: Considerations for migration
   description: "Considerations for migration"
-  ms.date: 04/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 24
 content: |
   [!include[](includes/3-considerations-migration.md)]

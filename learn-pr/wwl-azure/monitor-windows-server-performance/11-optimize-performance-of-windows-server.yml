@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.optimize-performance-of
+title: Optimize the performance of Windows Server
+metadata:
+  title: Optimize the performance of Windows Server
+  description: "Optimize the performance of Windows Server"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/11-optimize-performance-of-windows-server.md)]

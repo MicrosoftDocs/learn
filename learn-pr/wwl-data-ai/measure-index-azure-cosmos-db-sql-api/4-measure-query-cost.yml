@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.measure-query-cost
+title: Measure query cost
+metadata:
+  title: Measure query cost
+  description: "Measure query cost"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-measure-query-cost.md)]

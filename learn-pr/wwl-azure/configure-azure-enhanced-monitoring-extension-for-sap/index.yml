@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap
+metadata:
+  title: Configure the Azure Enhanced Monitoring Extension for SAP
+  description: "This module covers the configuration of the Azure Enhanced Monitoring Extension for SAP. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure the Azure Enhanced Monitoring Extension for SAP
+summary: This module covers the configuration of the Azure Enhanced Monitoring Extension for SAP.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore the Azure Enhanced Monitoring Extension for SAP.
+  - Configure the Azure Enhanced Monitoring Extension for SAP.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/2-configure-the-azure-enhanced-monitoring-extension-for-sap.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.introduction
+- learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.explore
+- learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.configure-azure-enhanced-monitoring-extension-for-sap
+- learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.knowledge-check
+- learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.summary
+badge:
+  uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.badge

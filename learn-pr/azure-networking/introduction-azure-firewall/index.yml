@@ -4,8 +4,8 @@ metadata:
   title: "Introduction to Azure Firewall"
   description: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
   ms.date: 02/10/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to Azure Firewall"
@@ -13,7 +13,8 @@ summary: Describe how Azure Firewall protects Azure Virtual Network resources, i
 abstract: |
   After completing this module, you’ll be able to:
   - Explain how Azure Firewall and Azure Firewall Manager work together to protect Azure virtual networks. 
-  - Evaluate whether Azure Firewall is the right solution to protect your Azure virtual networks from malicious incoming and outgoing traffic. 
+  - Evaluate whether Azure Firewall is the right solution to protect your Azure virtual networks from malicious incoming and outgoing traffic.
+  - Evaluate whether Azure Firewall Premium is the right solution to protect your Azure virtual networks from malicious incoming and outgoing traffic. 
   - Evaluate whether Azure Firewall Manager is the right solution for deploying policies across multiple firewalls.
   - Identify and describe use cases for Azure Firewall and Azure Firewall Manager. 
 prerequisites: |
@@ -38,7 +39,8 @@ units:
 - learn.introduction-azure-firewall.2-what-is-azure-firewall
 - learn.introduction-azure-firewall.3-how-azure-firewall-works
 - learn.introduction-azure-firewall.4-when-to-use-azure-firewall
-- learn.introduction-azure-firewall.5-knowledge-check
-- learn.introduction-azure-firewall.6-summary
+- learn.introduction-azure-firewall.5-when-to-use-azure-firewall-premium
+- learn.introduction-azure-firewall.6-knowledge-check
+- learn.introduction-azure-firewall.7-summary
 badge:
   uid: learn.introduction-azure-firewall.badge

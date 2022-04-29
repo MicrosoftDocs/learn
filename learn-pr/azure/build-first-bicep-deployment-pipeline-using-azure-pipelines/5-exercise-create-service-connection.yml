@@ -4,8 +4,8 @@ title: Exercise - Create a service connection
 metadata:
   unitType: exercise
   title: Exercise - Create a service connection
-  description: Learn how to create a service principal and service connection for a Bicep deployment pipeline.
-  ms.date: 07/20/2021
+  description: Create a service principal and a service connection for a Bicep deployment pipeline.
+  ms.date: 08/30/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

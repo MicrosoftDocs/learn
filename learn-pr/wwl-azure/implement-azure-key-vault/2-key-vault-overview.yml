@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-key-vault.explore
+title: Explore Azure Key Vault
+metadata:
+  title: Explore Azure Key Vault
+  description: "Explore Azure Key Vault"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-key-vault-overview.md)]

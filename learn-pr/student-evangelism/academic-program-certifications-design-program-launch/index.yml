@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.academic-program-certifications-design-program-launch
+metadata:
+  title: Design a program launch strategy
+  description: Ensure that your program’s unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program. 
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Design a program launch strategy
+summary: Ensure that your program’s unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program.
+abstract: |
+    After completing this module, you will be able to:
+    - Demonstrate the shared goals of your institution and Microsoft in offering certifications as part of an academic program
+    - Describe the unique selling points of certification as part of a marketing strategy
+    - Understand the value of co-branding as a marketing tool for certification offerings
+prerequisites: |
+    - Familiarity with academic processes in higher education for course development
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-design-program-launch.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+- higher-ed-educator
+- school-leader
+products:
+- azure
+units:
+- learn.student-evangelism.academic-program-certifications-design-program-launch.introduction
+- learn.student-evangelism.academic-program-certifications-design-program-launch.explore-shared-goals
+- learn.student-evangelism.academic-program-certifications-design-program-launch.describe-certification-selling-points
+- learn.student-evangelism.academic-program-certifications-design-program-launch.understand-co-branding
+- learn.student-evangelism.academic-program-certifications-design-program-launch.knowledge-check
+- learn.student-evangelism.academic-program-certifications-design-program-launch.summary
+badge:
+  uid: learn.student-evangelism.academic-program-certifications-design-program-launch.badge

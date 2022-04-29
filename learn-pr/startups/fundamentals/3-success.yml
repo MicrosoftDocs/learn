@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.success
+title: What makes startups succeed?
+metadata:
+  title: What makes startups succeed?
+  description: Learn how startups succeed. An original idea and a team of employees can lead to success, as can a scalable business model and good timing.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-success.md)]

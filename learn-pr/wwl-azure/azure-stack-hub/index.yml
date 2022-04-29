@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.azure-stack-hub
+metadata:
+  title: Azure Stack Hub
+  description: "Azure Stack Hub"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Stack Hub
+summary: |
+  Azure Stack Hub runs apps in an on-premises environment and delivers Azure services in your datacenter.
+  This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  -Describe edge and disconnected solutions.
+  -Describe Azure Stack Hub integrated systems architecture.
+  -Explain Azure Stack Hub deployment options.
+  -Define differences between Azure Stack Hub, Azure Stack HCI, and global Azure.
+prerequisites: |
+  * Conceptual knowledge of Azure compute solutions.
+  * Working experience with virtual machines, containers, and app service.
+iconUrl: /learn/achievements/1-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack-hub
+units:
+- learn.wwl.azure-stack-hub.introduction
+- learn.wwl.azure-stack-hub.what-is
+- learn.wwl.azure-stack-hub.compare-azure-stack-hci-azure-stack-edge
+- learn.wwl.azure-stack-hub.integrate-hybrid-cloud-consistency
+- learn.wwl.azure-stack-hub.systems
+- learn.wwl.azure-stack-hub.how-is-managed
+- learn.wwl.azure-stack-hub.resource-providers
+- learn.wwl.azure-stack-hub.knowledge-check
+- learn.wwl.azure-stack-hub.summary
+badge:
+  uid: learn.wwl.azure-stack-hub.badge

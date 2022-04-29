@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-compute-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which compute option is best to support the company’s real-time inventory tracking requirement?"
+    choices:
+    - content: "Azure Logic Apps"
+      isCorrect: false
+      explanation: "That’s incorrect. It's possible to implement the same logic in Azure Logic Apps. However, because the team has already invested time in building the service in C#, it can use the same code in an Azure function."
+    - content: "Azure Functions"
+      isCorrect: true
+      explanation: "That’s correct. Because the Tailwind Traders developers’ team has already written the logic in C#, it would make sense to copy the relevant C# code from the Windows service and port it to an Azure function. The developers would bind the function to trigger each time a new message appears on a specific queue."
+    - content: "Azure virtual machines"
+      isCorrect: false
+      explanation: "That’s incorrect. Deploying virtual machines would not be the best solution."
+  - content: "Which type of virtual machine is best for the data center migration requirement?"
+    choices:
+    - content: "General purpose"
+      isCorrect: false
+      explanation: "That’s incorrect. General-purpose VMs are designed to have a balanced CPU-to-memory ratio. Ideal for testing and development, small to medium databases, and low to medium traffic web servers."
+    - content: "Compute optimized"
+      isCorrect: false
+      explanation: "That’s incorrect. Compute optimized VMs are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+    - content: "Memory optimized"
+      isCorrect: true
+      explanation: "That’s correct. Memory optimized VMs are designed to have a high memory-to-CPU ratio. Great for relational database servers, medium to large caches, and in-memory analytics."
+  - content: "What compute solution is best for hosting the company’s data processing app?"
+    choices:
+    - content: "Azure Container Instances"
+      isCorrect: true
+      explanation: "That’s correct. This is an ideal use for containers. The company will achieve significant cost saving through per-second billing."
+    - content: "Azure virtual machines"
+      isCorrect: false
+      explanation: "That’s incorrect. Provisioning virtual machines would be more expensive and underutilized."
+    - content: "Azure functions."
+      isCorrect: false
+      explanation: "That’s incorrect. Functions are best where connections are needed rather than standalone processing."

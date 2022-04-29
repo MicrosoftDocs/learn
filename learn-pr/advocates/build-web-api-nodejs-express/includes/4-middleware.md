@@ -18,7 +18,7 @@ The method passed into **use()** has three parameters, **req**, **res**, and **n
 
 - **req**: This parameter is the incoming request. It contains request headers and the calling URL. It might also have a body of data if the client sent data with their request.
 - **res**: This parameter is a response stream. Use this stream to write information, such as headers and data that you want to send back to the calling client.
-- **next**: This parameter signals that the request is OK and that you are ready to process it. If **next()** isn't called, processing of the request stops. Also, it's good practice to tell the client why the request is not processed, for example, call **res.send('<specify a reason why the request is stopped>')**.
+- **next**: This parameter signals that the request is OK and that you are ready to process it. If **next()** isn't called, processing of the request stops. Also, it's good practice to tell the client why the request is not processed, for example, call **res.send('\<specify a reason why the request is stopped>'\)**.
 
 ## Request pipeline
 

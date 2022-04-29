@@ -5,11 +5,10 @@ metadata:
   title: Dynamically add and remove ListView items
   description: Dynamically add and remove ListView items.
   ms.date: 2/27/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 15
 content: |
   [!include[](includes/4-dynamically-add-and-remove-listview-items.md)]

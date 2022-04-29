@@ -59,7 +59,7 @@ If bandwidth is a concern, you do have ways to reduce bandwidth that your tenant
     A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet. For related information, see [Use a proxy server to cache content requests](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#use-a-proxy-server-to-cache-content-requests).
  
 - **Delivery Optimization:**<br>
-    Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10 devices download applications and updates. For related information, see [Delivery Optimization](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#delivery-optimization).
+    Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10/11 devices download applications and updates. For related information, see [Delivery Optimization](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#delivery-optimization).
 
 - **Background Intelligent Transfer Service (BITS) and BranchCache:**<br>
     You can use Microsoft Intune to manage Windows PCs either as [mobile devices with mobile device management (MDM)](/mem/intune/enrollment/windows-enroll?azure-portal=true) or as computers with the Intune software client. Microsoft recommends that you use the MDM management solution whenever possible. For more information, see [Background Intelligent Transfer Service (BITS) and BranchCache](/mem/intune/fundamentals/network-bandwidth-use?azure-portal=true#background-intelligent-transfer-service-bits-and-branchcache).

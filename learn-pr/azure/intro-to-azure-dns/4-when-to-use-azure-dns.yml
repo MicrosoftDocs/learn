@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-dns.when-to-use-azure-dns
+title: When to use Azure DNS
+metadata:
+  title: When to use Azure DNS
+  description: When to use Azure DNS
+  ms.date: 12/10/2021
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: orthomas-12162021
+durationInMinutes: 5
+content:   |
+  [!include[](includes/4-when-to-use-azure-dns.md)]

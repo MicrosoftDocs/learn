@@ -204,9 +204,9 @@ This solution requires several Azure resources for deployment, which you create 
 
     ```azurecli
     clientId=$(az aks show \
-      --name $aksName \
       --resource-group $rgName \
-      --query "servicePrincipalProfile.clientId" \
+      --name $aksName \
+      --query "identityProfile.kubeletidentity.clientId" \
       --output tsv)
     ```
 
@@ -242,7 +242,7 @@ This solution requires several Azure resources for deployment, which you create 
     ```azurecli
     az role assignment create \
       --assignee $clientId \
-      --role acrpull \
+      --role AcrPull \
       --scope $acrId
     ```
 

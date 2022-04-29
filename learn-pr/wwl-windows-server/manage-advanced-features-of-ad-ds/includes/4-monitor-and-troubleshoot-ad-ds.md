@@ -53,10 +53,10 @@ Active Directory Domain Services Management Pack for Operations Manager includes
 
 Windows Server supports Windows PowerShell cmdlets that facilitate monitoring AD DS replication and reviewing its configuration. The following list describes some of them.
 
-- ```Get-ADReplicationConnection```. Provides a specific AD DS replication connection or a set of AD DS replication connection objects based on a specified filter
-- ```Get-ADReplicationFailure```. Provides a description of an AD DS replication failure
-- ```Get-ADReplicationPartnerMetadata```. Provides replication metadata for a set of one or more replication partners
-- ```Get-ADReplicationSite```. Provides a specific AD DS replication site or a set of replication site objects based on a specified filter
-- ```Get-ADReplicationSiteLink```. Provides a specific Active Directory site link or a set of site links based on a specified filter
-- ```Get-ADReplicationSiteLinkBridge```. Provides a specific Active Directory site link bridge or a set of site link bridge objects based on a specified filter
-- ```Get-ADReplicationSubnet```. Provides an Active Directory subnet or a set of Active Directory subnets based on a specified filter.
+- `Get-ADReplicationConnection`. Provides a specific AD DS replication connection or a set of AD DS replication connection objects based on a specified filter
+- `Get-ADReplicationFailure`. Provides a description of an AD DS replication failure
+- `Get-ADReplicationPartnerMetadata`. Provides replication metadata for a set of one or more replication partners
+- `Get-ADReplicationSite`. Provides a specific AD DS replication site or a set of replication site objects based on a specified filter
+- `Get-ADReplicationSiteLink`. Provides a specific Active Directory site link or a set of site links based on a specified filter
+- `Get-ADReplicationSiteLinkBridge`. Provides a specific Active Directory site link bridge or a set of site link bridge objects based on a specified filter
+- `Get-ADReplicationSubnet`. Provides an Active Directory subnet or a set of Active Directory subnets based on a specified filter.

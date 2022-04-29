@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-configuration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices isn't a scenario that App Configuration makes it easier to implement?"
+    choices:
+    - content: "Centralize management and distribution of hierarchical configuration data for different environments and geographies."
+      isCorrect: false
+      explanation: "Incorrect. App Configuration makes it easier to implement the following scenarios, Centralize management and distribution of hierarchical configuration data for different environments and geographies. Dynamically change application settings without the need to redeploy or restart an application. Control feature availability in real-time."
+    - content: "Dynamically change application settings without the need to redeploy or restart an application."
+      isCorrect: false
+      explanation: "Incorrect. App Configuration makes it easier to implement the following scenarios, Centralize management and distribution of hierarchical configuration data for different environments and geographies. Dynamically change application settings without the need to redeploy or restart an application. Control feature availability in real-time."
+    - content: "Create, manage and centralize packages as a Package Management."
+      isCorrect: true
+      explanation: "Correct. App Configuration makes it easier to implement the following scenarios, Centralize management and distribution of hierarchical configuration data for different environments and geographies. Dynamically change application settings without the need to redeploy or restart an application. Control feature availability in real-time."
+  - content: "Which of the following choices isn't a general approach to naming keys used for configuration data?"
+    choices:
+    - content: "Cross-key."
+      isCorrect: true
+      explanation: "Correct. There are two general approaches, Flat and Hierarchical."
+    - content: "Flat."
+      isCorrect: false
+      explanation: "Incorrect. There are two general approaches, Flat and Hierarchical."
+    - content: "Hierarchical."
+      isCorrect: false
+      explanation: "Incorrect. There are two general approaches, Flat and Hierarchical."
+  - content: "Which of the following choices isn't one of two components working in concert for effective implementation of feature management?"
+    choices:
+    - content: "An application that makes use of feature flags."
+      isCorrect: false
+      explanation: "Incorrect. Effective implementation of feature management consists of at least two components working in concert, an application that uses feature flags and a separate repository that stores the feature flags and their current states."
+    - content: "A monolith application that needs a redesign to microservices."
+      isCorrect: true
+      explanation: "Correct. Effective implementation of feature management consists of at least two components working in concert, an application that uses feature flags and a separate repository that stores the feature flags and their current states."
+    - content: "A separate repository that stores the feature flags and their current states."
+      isCorrect: false
+      explanation: "Incorrect. Effective implementation of feature management consists of at least two components working in concert, an application that uses feature flags and a separate repository that stores the feature flags and their current states."

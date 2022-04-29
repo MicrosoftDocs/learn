@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
+  ms.custom: team=nextgen
 title: Introduction to Git
 summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.
 abstract:  |
@@ -32,10 +33,6 @@ units:
 - learn.student-evangelism.introduction-to-git.1-what-is-vc
 - learn.student-evangelism.introduction-to-git.2-exercise-configure-git
 - learn.student-evangelism.introduction-to-git.3-basic-git-commands
-- learn.student-evangelism.introduction-to-git.4-exercise-start-a-project
-- learn.student-evangelism.introduction-to-git.5-exercise-make-and-track-changes
-- learn.student-evangelism.introduction-to-git.6-fix-simple-mistakes
-- learn.student-evangelism.introduction-to-git.7-exercise-fix-mistakes
 - learn.student-evangelism.introduction-to-git.7a-knowledge-check
 - learn.student-evangelism.introduction-to-git.8-summary
 badge:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.add-remove-custom-vm-image-to
+title: Add and remove a custom virtual machine image to Azure Stack Hub
+metadata:
+  title: Add and remove a custom virtual machine image to Azure Stack Hub
+  description: "Add and remove a custom virtual machine image to Azure Stack Hub"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-add-remove-custom-virtual-machine-image-azure-stack-hub.md)]

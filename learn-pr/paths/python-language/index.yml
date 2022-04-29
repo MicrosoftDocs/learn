@@ -32,5 +32,6 @@ modules:
 - learn.student-evangelism.intro-to-python
 - learn.student-evangelism.python-object-oriented-programming
 - learn.student-evangelism.python-flask-build-ai-web-app
+- learn.python-get-started-testing
 trophy:
   uid: learn.languages.python-apps.trophy

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-anomaly-detector.3-how-anomaly-detector-works
+title: How Anomaly Detector works
+metadata:
+  title: How Anomaly Detector works
+  description: "Learn the basics of anomaly detector functionality"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-anomaly-detector-works.md)]

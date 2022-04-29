@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.build-inclusive-environments
+title: Build inclusive environments 
+metadata:
+  title: Build inclusive environments 
+  description: Learn how to build inclusive environments.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-build-inclusive-environments.md)]

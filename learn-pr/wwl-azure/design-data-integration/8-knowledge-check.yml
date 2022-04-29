@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-integration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Based on the manufacturing data requirement what solution meets the requirements?"
+    choices:
+    - content: "Azure Data Factory"
+      isCorrect: true
+      explanation: "that’s correct. Azure Data Factory can connect different data sources and run stored procedures on the data."
+    - content: "Azure Databricks"
+      isCorrect: false
+      explanation: "that’s incorrect. Azure Databricks does not meet the requirement for the manufacturing data."
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "that’s incorrect. Azure Data Lake does not meet the requirement for the manufacturing data."
+  - content: "Based on the real time data requirements what solution provides real-time data ingestion and storage of multiple data sources?"
+    choices:
+    - content: "Azure Data Lake"
+      isCorrect: true
+      explanation: "that’s correct. Azure Data Lake can ingest real-time data directly from multiple sources."
+    - content: "Azure Databricks"
+      isCorrect: false
+      explanation: "that’s incorrect. Azure Databricks does not meet the requirement for real-time data ingestion."
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "that’s incorrect. Azure Databricks does not meet the requirement for real-time data ingestion from multiple data sources."
+  - content: "Based on the historical company data requirements what solution meets the requirements?"
+    choices:
+    - content: "Cold storage"
+      isCorrect: true
+      explanation: "that’s correct. Cold storage is the appropriate solution for data that is rarely used"
+    - content: "Hot storage"
+      isCorrect: false
+      explanation: "that’s incorrect. Hot storage would be a more expensive solution for storing the data"
+    - content: "Warm storage"
+      isCorrect: false
+      explanation: "that’s incorrect. Warm storage is not the best solution for data that is rarely accessed."

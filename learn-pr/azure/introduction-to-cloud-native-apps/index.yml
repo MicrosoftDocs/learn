@@ -28,6 +28,7 @@ roles:
 - student
 products:
 - azure
+- azure-kubernetes-service
 units:
 - learn.azure.intro-to-cloud-native-apps.1-introduction
 - learn.azure.intro-to-cloud-native-apps.2-what-are-cloud-native-apps

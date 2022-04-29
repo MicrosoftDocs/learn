@@ -24,7 +24,7 @@ A few receipt model uses include:
 - Analyzing consumer behavior and shopping trends 
 
 >[!NOTE]
->You can learn more about the prebuilt receipt model with this separate <a href="/learn/modules/analyze-receipts-form-recognizer/" target="_blank">Form Recognizer service module</a>.  
+>You can learn more about the prebuilt receipt model with this separate <a href="https://docs.microsoft.com/learn/modules/analyze-receipts-form-recognizer/" target="_blank">Form Recognizer service module</a>.  
 
 ## Invoices (preview)
 

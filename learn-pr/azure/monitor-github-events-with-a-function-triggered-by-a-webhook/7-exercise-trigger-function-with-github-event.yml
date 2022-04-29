@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Trigger an Azure Function with a GitHub event
   description: Exercise - Trigger an Azure Function with a GitHub event
   ms.date: 04/30/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Trigger an Azure Function with a GitHub event

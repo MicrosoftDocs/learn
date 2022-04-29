@@ -4,10 +4,11 @@ title: Testing schools of thought
 metadata:
   unitType: learning-content
   title: Testing schools of thought
-  description: There are many different schools of thought when it comes to testing. Find a summary of test driven development (TDD), behavior driven development (BDD), red/green/refactor, and "Don't repeat yourself" (DRY) and the advantages of each strategy.
-  ms.date: 6/28/2021
+  description: There are many different schools of thought when it comes to testing. Find a summary of test driven development (TDD), behavior driven development (BDD), red/green/refactor, and "Don't repeat yourself" (DRY), and the advantages of each strategy.
+  ms.date: 03/08/2022
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 3
@@ -17,23 +18,23 @@ quiz:
   questions:
   - content: "What does TDD stand for?"
     choices:
-    - content: "Test Driven Design"
+    - content: "Test driven design"
       isCorrect: false
       explanation: "Not quite! Try again."
-    - content: "Test Driven Development"
+    - content: "Test driven development"
       isCorrect: true
-      explanation: "You're correct. TDD centers around the idea of writing tests before the code and letting the tests drive development."
-    - content: "Technical Data Development"
+      explanation: "You're correct. TDD centers around the idea of writing tests before the code, and letting the tests drive development."
+    - content: "Technical data development"
       isCorrect: false
       explanation: "Not quite! Try again."
   - content: "What is the best recommended testing approach?"
     choices:
     - content: "TDD"
       isCorrect: false
-      explanation: "While many may prefer TDD over other methods, there's no empirical evidence indicating it's the best way for all humans to write code."
+      explanation: "Although many prefer TDD over other methods, there's no empirical evidence indicating it's the best way for all humans to write code."
     - content: "It depends on the needs of the repo and the team!"
       isCorrect: true
       explanation: "Every developer and team is different. While it's good to keep much of this guidance in mind, the important thing is choosing what works best for you."
     - content: "BDD"
       isCorrect: false
-      explanation: "While many may prefer BDD over other methods, there's no empirical evidence indicating it's the best way for all humans to write code."
+      explanation: "Although many prefer BDD over other methods, there's no empirical evidence indicating it's the best way for all humans to write code."

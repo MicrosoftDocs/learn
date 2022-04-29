@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.host-security.virtual-machine-templates
+title: Create virtual machine templates
+metadata:
+  title: Create virtual machine templates
+  description: "Create virtual machine templates"
+  ms.date: 04/12/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-virtual-machine-templates.md)]

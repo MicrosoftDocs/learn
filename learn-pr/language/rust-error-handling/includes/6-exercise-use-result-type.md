@@ -1,38 +1,29 @@
-This challenge involves handling errors that result in reading files from a computer.
+In this exercise, you'll add error handling to a program that reads files from a computer. In the sample program, the `read_file_contents` function receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. The function does the following tasks:
 
-If you plan to run this code on your local computer, make sure that it's written in the file called *src/main.rs*, at the root of a Cargo project. If you have any questions about how to set up a new Cargo project, review the first module in this learning path.
+1. Create a mutable empty `String` variable.
+1. Access a file at a specified path.
+1. Read the file contents into the `String` variable with the `read_to_string` method.
+1. Return the modified `String` variable.
 
-If you plan to complete this exercise on the [Rust playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6cb6629db5c1460f070ba672ff2d5c41?azure-portal=true), understand that, by using the playground, you can read your own code as a file named *src/main.rs*, which is on its own virtual path.
-
-In this exercise, you'll replace the `todo!` macro inside `read_file_contents` to make
-it compile and run without panics.
-
-Here are a few helpful points for this challenge:
-
-- The `read_file_contents` function receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. The function does the following, in order:
-
-  1. Creates a new mutable and empty `String`.
-  1. Tries to access a file at a specified path.
-  1. Tries to read the contents from that file into the `String` you just created by using the `read_to_string` method.
-  1. Returns the modified `String.`
-
-- The program use some structs and a trait. The first three lines of code bring these data types into scope.
-- Some of the `match` arms introduce variables like `file_handle` and `io_error`. Since their scope is limited to the `match` expression, they aren't declared in code that precedes `match`.
-- The `open` method returns a `Result<File, Error>` enum. In other words, when no errors occur, it returns a file handle wrapped in an `Ok` variant.
-- The `read_to_string` method appends the file contents to the `string` parameter that you pass to it, not to a return value.
+Here are some details about the code:
+- The program uses some structs and a trait. The first three lines of code bring these data types into scope.
+- Some of the `match` arms introduce variables like `file_handle` and `io_error`. Because their scope is limited to the `match` expression, they aren't declared in code that precedes `match`.
+- The `open` method returns a `Result<File, Error>` enum. When no errors occur, it returns a file handle wrapped in an `Ok` variant.
+- The `read_to_string` method appends the file contents to the passed `string` parameter, not to a return value.
 - The program uses a `match` expression to assign a value to a variable. Within that assignment statement, you can also use `match` arms to return from the function early.
 
-## Exercise steps
 
-To complete this exercise, follow the instructions in each of the three Rust inline "TODO" comments:
+## Open the sample program
 
-1. **TODO #1**: Expects you to handle both the success and failure scenarios inside a `match` expression.
+To work on the sample code for this exercise, you have two options:
+- Copy the following code and edit it in your local development environment. 
+- Open the code in this prepared [Rust Playground][RustPlay-exercise].
 
-   The `Ok(value)` case must provide that inner `value`, and the `Err(error_value)` must be returned early from the `read_file_contents` function.
+### Edit in local development environment
+To run this code on your local computer, write the code in a *src/main.rs* file. The file must be at the root of a Cargo project. For questions about how to set up a new Cargo project, review the [first module in this learning path][Rust-cargo].
 
-1. **TODO #2**: Expects you to handle the `Err` case exactly as you've done in the TODO #1 exercise.
-
-1. **TODO #3**: Expects you to return the modified `String` inside an `Ok` variant, which expresses that it's the expected successful output of that function.
+### Work in the Rust Playground
+To complete the exercise in the Rust Playground, you can read your own code as a file named *src/main.rs*. This file is on its own virtual path.
 
 ```rust
 use std::fs::File;
@@ -42,26 +33,27 @@ use std::path::PathBuf;
 fn read_file_contents(path: PathBuf) -> Result<String, Error> {
     let mut string = String::new();
 
-    // TODO #1: Handle this match expression.
-    // --------------------------------------
-    // Pass the variable to the `file` variable on success, or
-    // Return from the function early if it is an error.
+    // Access a file at a specified path
+    // ---------------------------------
+    // TODO #1:
+    // - Pass variable to `file` variable on success, or
+    // - Return from function early if there's an error
     let mut file: File = match File::open(path) {
-        Ok(file_handle) => todo!()
-        Err(io_error) => todo!()
+        Ok(file_handle) => todo!("Pass variable to `file` variable on success"),
+        Err(io_error) => todo!("Return from function early if there's an error")
     };
 
-    // TODO #2: Handle this error.
-    // ---------------------------
-    // The success path is already filled in for you.
-    // Return from the function early if it is an error.
+    // Read file contents into `String` variable with `read_to_string`
+    // ---------------------------------
+    // Success path is already filled in
+    // TODO #2: Return from function early if there's an error
     match file.read_to_string(&mut string) {
         Ok(_) => (),
-        Err(io_error) => todo!()
+        Err(io_error) => todo!("Return from function early if there's an error")
     };
 
-    // TODO #3: Return the `string` variable as expected by this function signature.
-    todo!()
+    // TODO #3: Return `string` variable as expected by function signature
+    todo!("Return `string` variable")
 }
 
 fn main() {
@@ -74,4 +66,83 @@ fn main() {
 }
 ```
 
-Get a [solution to this exercise](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ff38d6c708fe9fcd298e4c9ea4b4f72f).
+
+## Handle success and failure scenarios
+
+Your first task is to add code to handle the success and failure scenarios.
+
+> [!Note]
+> In the sample code, look for the `TODO` comments and the `todo!` macro. The comments explain the task to complete. This macro indicates code that needs to be finished or updated.
+
+Update the following code to handle the success and failure scenarios inside a `match` expression.
+
+```rust
+    // Access a file at a specified path
+    // ---------------------------------
+    // TODO #1:
+    // - Pass variable to `file` variable on success, or
+    // - Return from function early if there's an error
+    let mut file: File = match File::open(path) {
+        Ok(file_handle) => todo!("Pass variable to `file` variable on success"),
+        Err(io_error) => todo!("Return from function early if there's an error")
+    };
+```
+
+As you complete the task, address these programming goals:
+- The `Ok(value)` case must provide the inner `value`.
+- The `Err(error_value)` value must be returned early from the `read_file_contents` function.
+
+
+## Handle error scenarios
+
+Your next task is to add error handling. Update the following code to support the `Err` case.
+
+```rust
+    // Read file contents into `String` variable with `read_to_string`
+    // ---------------------------------
+    // Success path is already filled in
+    // TODO #2: Return from function early if there's an error
+    match file.read_to_string(&mut string) {
+        Ok(_) => (),
+        Err(io_error) => todo!("Return from function early if there's an error")
+    };
+```
+
+As you work on this task, address the following programming goals:
+- The `Ok(value)` case must provide the inner `value`.
+- The `Err(error_value)` value must be returned early from the `read_file_contents` function.
+
+
+## Return a String
+
+Your final task is to revise the code to return the modified `String` variable inside an `Ok` variant. The implementation should express that the return value is the expected successful output of the function.
+
+```rust
+fn read_file_contents(path: PathBuf) -> Result<String, Error> {
+    ...
+    // TODO #3: Return `string` variable as expected by function signature
+    todo!("Return `string` variable")
+}
+```
+
+
+## Build the program
+
+After you complete the tasks, build and run your program. You should see the following output:
+
+```output
+The program found the main file.
+The program reported an error for the file that doesn't exist.
+```
+
+
+## Solution
+
+You can compare your code with the prepared solution in this [Rust Playground][RustPlay-answer].
+
+
+<!-- Links -->
+
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c76ec6ab0bca6572dda78ded96d90faa?azure-portal=true
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=218fec0300bf94b1aeb8178d9db62050?azure-portal=true
+[Rust-cargo]: /learn/modules/rust-set-up-environment/5-hello-world?azure-portal=true

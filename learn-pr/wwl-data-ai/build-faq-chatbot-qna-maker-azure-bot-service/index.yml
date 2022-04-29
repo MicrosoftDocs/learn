@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
-  title: Build a bot with QnA Maker and Azure Bot Service
-  description: "Build a bot with QnA Maker and Azure Bot Service"
-  ms.date: 06/15/2021
+  title: Build a bot with the Language Service and Azure Bot Service
+  description: "Build a bot with the Language Service and Azure Bot Service"
+  ms.date: 01/04/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a bot with QnA Maker and Azure Bot Service
-summary: Bots are a popular way to provide support through multiple communication channels. This module describes how to use the QnA Maker service and Azure Bot Service to create a bot that answers user questions.
+title: Build a bot with the Language Service and Azure Bot Service
+summary: Bots are a popular way to provide support through multiple communication channels. This module describes how to use a knowledge base and Azure Bot Service to create a bot that answers user questions.
 abstract: |
-  After completing this module, you'll be able to create a QnA Maker knowledge base with an Azure Bot Service bot.
+  After completing this module, you'll be able to create a knowledge base with an Azure Bot Service bot.
 prerequisites: |
   Ability to navigate the Azure portal
 iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg

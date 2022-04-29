@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-user-accounts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/18/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which security setting when enabled reduces rather than improves the security of administrative user accounts?"
+    choices:
+    - content: "This account supports Kerberos AES (Advanced Encryption Standard) 256-bit encryption."
+      isCorrect: false
+      explanation: "Incorrect. Enabling Kerberos AES 256-bit encryption strengthens the security of an administrative user account."
+    - content: "Don't require Kerberos preauthentication."
+      isCorrect: true
+      explanation: "Correct. Kerberos preauthentication reduces the risk of replay attacks. That's why you should not enable this option."
+    - content: "Account is sensitive and cannot be delegated."
+      isCorrect: false
+      explanation: "Incorrect. Enabling the setting to block delegation strengthens the security of an administrative user account."
+  - content: "Which feature allows you to configure TGT (Ticket-granting tickets) lifetime and access-control conditions for a user?"
+    choices:
+    - content: "Authentication policies."
+      isCorrect: true
+      explanation: "Correct. Authentication policies allow you to configure TGT lifetime and access control conditions for a user, service, or computer account."
+    - content: "Authentication policy silos."
+      isCorrect: false
+      explanation: "Incorrect. Authentication policy silos allow administrators to assign authentication policies to user, computer, and service accounts but does not control the contents of those policies."
+    - content: "Protected Users group."
+      isCorrect: false
+      explanation: "Incorrect. Whilst adding an account to the protected users group increases security, it does not allow you to configure TGT lifetime and access control conditions."
+  - content: "Which of the following problematic user accounts you should check for regularly?"
+    choices:
+    - content: "Users with passwords that do not expire."
+      isCorrect: true
+      explanation: "Correct. Accounts should regularly have new passwords assigned. When a password is compromised, an account that has its password regularly updated will eventually change the compromised password to a new one."
+    - content: "Users with few administrative permissions."
+      isCorrect: false
+      explanation: "Incorrect. Accounts should have a minimal set of permissions to conform to the principle of least privilege rather than being loaded with permissions. If an account is compromised, it is better to have the compromised account be as limited as possible rather than over-privileged."
+    - content: "Users with complex passwords."
+      isCorrect: false
+      explanation: "Incorrect. Accounts should have complex passwords rather than simple ones that are easy to guess or attack using brute force methods."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-kubernetes-service-aks.introduction-to-kubernetes
+title: Introduction to Kubernetes
+metadata:
+  title: Introduction to Kubernetes
+  description: "Introduction to Kubernetes"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-introduction-to-kubernetes.md)]

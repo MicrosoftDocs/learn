@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-docker-multi-stage-builds.explore-builder-pattern
+title: Explore builder pattern
+metadata:
+  title: Explore builder pattern
+  description: "Explore builder pattern"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-explore-builder-pattern.md)]

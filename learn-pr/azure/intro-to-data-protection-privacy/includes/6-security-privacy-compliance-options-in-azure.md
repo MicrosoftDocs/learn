@@ -54,15 +54,15 @@ You can opt for in-country/region storage of your at-rest data to accommodate co
 
 - Read-access geo-redundant storage and read-access geo-zone-redundant storage
 
-Azure has several services that you can use to help monitor data storage, including Azure Defender for Storage and Azure Defender for SQL Database.
+Azure has several services that you can use to help monitor data storage, including Microsoft Defender for Storage and Microsoft Defender for SQL Database.
 
-#### Azure Defender for Storage
+#### Microsoft Defender for Storage
 
-Azure Defender for Storage provides a security-intelligence layer that detects unusual and potentially harmful attempts to access or exploit storage accounts. This protection layer enables you to address threats without having to be a security expert or manage security-monitoring systems. Activity anomalies detected by Azure Defender for Storage trigger security alerts that integrate with Azure Security Center. These alerts are also sent through email to subscription administrators. The alerts contain details about suspicious activity and recommendations about how to investigate and remediate threats.
+Microsoft Defender for Storage provides a security-intelligence layer that detects unusual and potentially harmful attempts to access or exploit storage accounts. This protection layer enables you to address threats without having to be a security expert or manage security-monitoring systems. Activity anomalies detected by Microsoft Defender for Storage trigger security alerts that integrate with Microsoft Defender for Cloud. These alerts are also sent through email to subscription administrators. The alerts contain details about suspicious activity and recommendations about how to investigate and remediate threats.
 
-#### Azure Defender for SQL
+#### Microsoft Defender for SQL
 
-Azure Defender for SQL is part of an advanced data-security offering. This unified package provides advanced Azure SQL security capabilities. It detects and provides alerts on anomalous activities that could indicate unusual and potentially harmful attempts to access or exploit databases., enabling customers to detect and respond to potential threats.
+Microsoft Defender for SQL is part of an advanced data-security offering. This unified package provides advanced Azure SQL security capabilities. It detects and provides alerts on anomalous activities that could indicate unusual and potentially harmful attempts to access or exploit databases., enabling customers to detect and respond to potential threats.
 
 ### Data destruction
 

@@ -5,8 +5,8 @@ metadata:
   title: Use policies to enforce standards
   description: In this unit, we'll discuss how to use policies to enforce standards
   ms.date: 03/25/2020
-  author: patridge
-  ms.author: adpatrid
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

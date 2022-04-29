@@ -8,8 +8,8 @@ The following example declares a variable of type `any` and assigns values to it
 
 ```typescript
 let randomValue: any = 10;
-randomValue = true;      // OK
 randomValue = 'Mateo';   // OK
+randomValue = true;      // OK
 ```
 
 When this example is compiled, it doesn't throw an error because the `any` type encompasses values of every possible type. The `any` type opts out of type checking and doesn't force you to do any checking before you call, construct, or access properties on these values.
@@ -20,7 +20,7 @@ Using the `any` type in this example allows you to call:
 - `randomValue` as a function.
 - A method that only applies to a `string` type.
 
-The following statements all generate errors or unexpected behavior at runtime.
+Because `randomValue` is registered as `any`, all of the following examples are valid TypeScript and will **not** generate a compile-time error. However, runtime errors may occur depending on the actual datatype of the variable. Given the previous example where `randomValue` is set to a Boolean value, the following lines of code will generate issues at runtime:
 
 ```typescript
 console.log(randomValue.name);  // Logs "undefined" to the console

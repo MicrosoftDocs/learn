@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-app-service.azure-app-service-plans
+title: Examine Azure App Service plans
+metadata:
+  title: Examine Azure App Service plans
+  description: "Examine Azure App Service plans"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-azure-app-service-plans.md)]

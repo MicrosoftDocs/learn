@@ -1,0 +1,90 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.develop-growth-mindset.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that test whether you achieved the learning objectives.
+  ms.date: 08/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+    - content: When you have a growth mindset, you understand that learning includes
+        something that's inevitable and necessary. What is it?
+      choices:
+        - content: Avoiding asking others for help.
+          isCorrect: false
+          explanation: Incorrect. Asking others for help can be a critical part of the
+            learning process. Especially if you're learning in an area that's new to you or that you find difficult.
+        - content: Making mistakes.
+          isCorrect: true
+          explanation: Correct. Making mistakes is an inevitable and necessary part of the
+            learning process.
+        - content: Completing tasks correctly the first time you attempt them.
+          isCorrect: false
+          explanation: Incorrect. To learn from an experience, you don't have to complete tasks correctly the first time you attempt them.
+    - content: You ask a peer to help you with a section of code. To write the code,
+        both of you need to learn new skills. Which of the following responses
+        indicate that your peer has a growth mindset?
+      choices:
+        - content: You should ask someone else. I'm not cut out for that sort of thing.
+          isCorrect: false
+          explanation: Incorrect. Your peer believes that he either has an innate
+            ability for the task or he doesn't. His statement indicates that he
+            has a fixed mindset.
+        - content: I don't know how to do it yet. Let's learn how to do it together.
+          isCorrect: true
+          explanation: Correct. Your peer knows that he doesn't know how to do it yet, but
+            he's sure he can learn. His statement indicates that he
+            has a growth mindset.
+        - content: I'll never be good at writing code. I tried it once and it didn't work
+            out.
+          isCorrect: false
+          explanation: Incorrect. Your peer believes that he'll never be good at coding
+            because he tried previously and it didn't go well. His statement
+            indicates that he has a fixed mindset.
+    - content: Which one of the following statements is true?
+      choices:
+        - content: Inner dialogue that implies a growth mindset, like "I can do it,"
+            means you can't fail.
+          isCorrect: false
+          explanation: There's always opportunity for mistakes and failure. With a growth
+            mindset, you recognize that failure is possible as part of the
+            learning process. The risk of failure doesn't stop you from trying.
+        - content: Inner dialogue that implies a fixed mindset, like "I'll never be
+            able to do it," means you should give up. The thought will prevent
+            you from completing the activity.
+          isCorrect: false
+          explanation: Although giving up is an option, it's not the only option or the best option. Change your inner dialogue to allow for the learning of new skills necessary for the activity.
+        - content: Changing your inner dialogue from "I can't do it" to "I can't do it
+            yet, but I can learn how" is an example of changing from a fixed to
+            a growth mindset.
+          isCorrect: true
+          explanation: Understanding that you can learn new things is part of a growth
+            mindset.
+    - content: Which of the following statements is one reason a growth mindset is beneficial in technology?
+      choices:
+        - content: A growth mindset is beneficial in technology because you're motivated
+            to stretch yourself and learn new things. That motivation is crucial in a
+            field that's always evolving.
+          isCorrect: true
+          explanation: Correct. One aspect of growth mindset is the motivation to learn
+            rather than to seek approval.
+        - content: A growth mindset is beneficial in technology because you can use it to
+            find out whether you were meant to be in technology in the first
+            place.
+          isCorrect: false
+          explanation: Incorrect. One component of a fixed mindset is the belief that
+            you're born with certain abilities or traits and that you can't
+            learn new things.
+        - content: A growth mindset is beneficial in technology because the field of
+            technology is growing and always needs more people.
+          isCorrect: false
+          explanation: Incorrect. Growth mindset refers to your personal growth, not the
+            growth of technology.

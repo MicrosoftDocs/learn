@@ -4,8 +4,8 @@ metadata:
   title: Understand application images
   description: Understand concepts about application images you use to deploy a cloud-native application by using GitHub Actions.
   ms.date: 10/08/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: github
 title: Understand application images

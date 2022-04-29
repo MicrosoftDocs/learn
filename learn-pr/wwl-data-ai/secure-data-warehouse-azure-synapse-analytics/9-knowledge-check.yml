@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2021
+  ms.date: 02/24/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   questions:
@@ -18,13 +19,13 @@ quiz:
     - content: "Azure Synapse Studio does not support the creation of private endpoints."
       isCorrect: false
       explanation: "Incorrect. Azure Synapse Studio does support the creation of private endpoints."
-    - content: "A conditional access policy has to be defined first."
+    - content: "A Conditional Access policy has to be defined first."
       isCorrect: false
-      explanation: "Incorrect. A conditional access policy is not required to create a private endpoint."
+      explanation: "Incorrect. A Conditional Access policy is not required to create a private endpoint."
     - content: "A managed virtual network has not been created."
       isCorrect: true
       explanation: "Correct. In order to create a private endpoint, you first must create a managed virtual network."
-  - content: "You require you Azure Synapse Analytics Workspace to access an Azure Data Lake Store using the benefits of the security provided by Azure Active Directory. What is the best authentication method to use?"
+  - content: "You require an Azure Synapse Analytics Workspace to access an Azure Data Lake Store using the benefits of the security provided by Azure Active Directory. What is the best authentication method to use?"
     choices:
     - content: "Storage account keys."
       isCorrect: false

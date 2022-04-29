@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.navigate-microsoft-learn-for-microsoft-educator-center-users.create-collection
+title: Create and share collections of content
+metadata:
+  unitType: learning-content
+  title: "Create and share collections of content" # user input: module title for browser tab and search results
+  description: "In this unit, learn how to create a collection on Microsoft Learn." # user input: a description for site search and SEO
+  ms.date: 9/1/2021
+  author: sadadow
+  ms.author: saadad
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-m365
+durationInMinutes: 2 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-create-collection.md)]

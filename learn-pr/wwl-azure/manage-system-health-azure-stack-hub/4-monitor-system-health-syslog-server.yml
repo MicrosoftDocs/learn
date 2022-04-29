@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-system-health-azure-stack-hub.monitor-by-using-syslog-server
+title: Monitor system health by using Syslog Server
+metadata:
+  title: Monitor system health by using Syslog Server
+  description: "Monitor system health by using Syslog Server"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-monitor-system-health-syslog-server.md)]

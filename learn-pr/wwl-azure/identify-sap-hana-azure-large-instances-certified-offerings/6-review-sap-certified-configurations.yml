@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.review-sap-certified-configurations
+title: Review SAP-certified configurations
+metadata:
+  title: Review SAP-certified configurations
+  description: "Review SAP-certified configurations"
+  ms.date: 01/31/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-review-sap-certified-configurations.md)]

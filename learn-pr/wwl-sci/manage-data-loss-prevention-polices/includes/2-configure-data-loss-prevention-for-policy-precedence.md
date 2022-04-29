@@ -10,7 +10,7 @@ If the financial data policy from the example above was ordered so a rule for a 
 
 To change the order in which the DLP rules inside a policy are prioritized, you need the DLP Compliance Management role and follow these steps:
 
-1. In the Microsoft 365 Compliance Center, select **Policies**.
+1. In the Microsoft 365 Compliance center, select **Policies**.
 
 1. Expand **Data** and select **Data loss prevention**.
 
@@ -33,7 +33,7 @@ Set-DLPComplianceRule -Identity "Low Volume of Financial Data" -Priority 0
 
 When you create more than one DLP policy, you can change the priority (or order). For example, if you have a personal data DLP policy and another financial data DLP policy and you want the personal data DLP policy to take precedence, follow these steps.
 
-1. In the Microsoft 365 Compliance Center, select **Policies** > **Data loss prevention**.
+1. In the Microsoft 365 Compliance Center, select **Policies** then select **Data loss prevention**.
 
 1. Select the **three vertical dots** behind the name of the personal data policy.
 

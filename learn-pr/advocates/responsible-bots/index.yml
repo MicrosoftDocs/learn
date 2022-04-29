@@ -1,24 +1,22 @@
 ### YamlMime:Module
 uid: learn.advocates.responsible-bots
-hidden: true
 metadata:
-  title: Create a chat bot to help students learn with Azure Bot Services
-  description: Learn how to build responsible conversational UI by using bots.
-  ms.date: 04/09/2021
-  author: shwars
-  ms.author: dmitryso
+  title: Create a chatbot to help students learn geography
+  description: Learn how to build bots that can complete tedious tasks. Improve customer service by making bots responsible.
+  ms.date: 12/03/2021
+  author: JKirsch1
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
-title: Create a chat bot to help students learn with Azure Bot Services
-summary: Learn how to build a simple bot called **GeoFriend**, to help students learn the basics of geography. This module covers the principles of responsible conversational AI and how to make bots that a user can trust and enjoy speaking to. Our bot will help school children to learn more about geography and answer some questions, and learn some study techniques!
+  ms.custom: team=nextgen
+title: Create a chatbot to help students learn geography
+summary: Learn how to build a basic bot called **GeoFriend** that helps students with geography facts. This module covers the basics of bot development and the main principles of responsible conversational AI. See how to create a helpful bot that a user can trust and enjoy speaking to. Our bot will make it fun for school children to improve geography skills.
 abstract: |
-  In this module, you'll:
-  - Learn the basic building blocks to create conversational UI for users
-  - Understand the principles to develop responsible bots
-  - Create a simple educational bot by using Azure Bot Services
-  - Improve upon your bot's ability to understand by adding LUIS
-  - Give your bot personality with Azure QnA Maker
-  - Explore how your bot can be more culturally sensitive
+  After you've completed this module, you'll be able to:
+  - Explain basic building blocks for creating conversational AI for users.
+  - Understand principles for developing responsible bots.
+  - Create a basic educational bot by using a template in Visual Studio.
+  - Configure your bot to be more culturally sensitive.
 iconUrl: /learn/achievements/advocates/responsible-bots.svg
 levels:
 - beginner
@@ -30,23 +28,17 @@ products:
 - vs
 prerequisites: |
   - Basic knowledge of C\#
-  - An Azure account
-  - Visual Studio installed and set up on your local machine
+  - ASP.NET Core Runtime 3.1 installed on your local machine
 
 units:
 - learn.advocates.responsible-bots.1-introduction
-- learn.advocates.responsible-bots.2-responsible-conversational-ui
-- learn.advocates.responsible-bots.3-bot-framework
-# learn.advocates.responsible-bots.4-bot-development
-- learn.advocates.responsible-bots.4a-develop-bot-online-editor
-- learn.advocates.responsible-bots.4b-develop-bot-visual-studio
-# learn.advocates.responsible-bots.5-add-language-understanding
-- learn.advocates.responsible-bots.5a-luis-integration
-- learn.advocates.responsible-bots.5b-connect-luis-bot-code
-- learn.advocates.responsible-bots.6-add-question-answering
-- learn.advocates.responsible-bots.7-more-responsible-ui
-- learn.advocates.responsible-bots.8-publish
-- learn.advocates.responsible-bots.9-knowledge-check
-- learn.advocates.responsible-bots.10-summary
+- learn.advocates.responsible-bots.2-bot-framework-responsible-principles
+- learn.advocates.responsible-bots.3-install-visual-studio
+- learn.advocates.responsible-bots.4-create-bot
+- learn.advocates.responsible-bots.5-run-bot
+- learn.advocates.responsible-bots.6-add-dictionary
+- learn.advocates.responsible-bots.7-edit-welcome-message
+- learn.advocates.responsible-bots.8-knowledge-check
+- learn.advocates.responsible-bots.9-summary
 badge:
   uid: learn.advocates.responsible-bots.badge

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.explore-high-level-architecture-of
+title: Explore the high-level architecture of SAP HANA on Azure (Large Instances)
+metadata:
+  title: Explore the high-level architecture of SAP HANA on Azure (Large Instances)
+  description: "Explore the high-level architecture of SAP HANA on Azure (Large Instances)"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-high-level-architecture-hana-large-instances.md)]

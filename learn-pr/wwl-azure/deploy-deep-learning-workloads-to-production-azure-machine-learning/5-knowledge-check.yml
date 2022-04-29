@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "To use no-code deployment with Triton in Azure Machine Learning, what model format should be specified when registering the model?"
+    choices:
+    - content: "ONNX"
+      isCorrect: false
+      explanation: "That's incorrect. You can use an ONNX model, but the model format should be specified differently."
+    - content: "Triton"
+      isCorrect: true
+      explanation: "That's correct. The model needs to be registered with Triton format."
+    - content: "PyTorch"
+      isCorrect: false
+      explanation: "That's incorrect. You can use a PyTorch model, but if the model format is set to PyTorch, you'll have to include the scoring script and environment when creating the deployment."
+  - content: "What could be a reason to convert your model to the ONNX format?"
+    choices:
+    - content: "To optimize your model's performance during inferencing."
+      isCorrect: true
+      explanation: "That's correct. It allows you to use the ONNX Runtime, which gives higher performance during inferencing."
+    - content: "To reduce training time."
+      isCorrect: false
+      explanation: "That's incorrect. You convert your model after training is complete."
+    - content: "To distribute your model's inferencing over different GPU devices."
+      isCorrect: false
+      explanation: "That's incorrect. ONNX doesn't take care of model distribution for you."

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-application-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which the following solutions should be used for the transaction processing requirement?"
+    choices:
+    - content: "Azure Queue storage"
+      isCorrect: false
+      explanation: "Incorrect. Azure queues are for simple queues to organize messages. It would not be able to group messages into a transaction."
+    - content: "Azure Service Bus queues"
+      isCorrect: true
+      explanation: "Correct. Azure Service Bus queues provide advanced message handing. For example, the ability to group messages into a transaction."
+    - content: "Azure Service Bus topics"
+      isCorrect: false
+      explanation: "Incorrect. Azure Service Bus topics is better for multiple receivers with multiple destinations."
+  - content: "Which of the following solutions should be used for the update management requirement?"
+    choices:
+    - content: "Azure Resource Manager templates"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Manager templates define the infrastructure and configuration for your deployment."
+    - content: "Azure Bicep templates"
+      isCorrect: false
+      explanation: "Incorrect. Azure Bicep is a template language that's used to declaratively deploy Azure resources."
+    - content: "Azure Automation"
+      isCorrect: true
+      explanation: "Correct. Azure Automation gives you complete control of update management."
+  - content: "Which of the following solutions should be used for the event handling requirement?"
+    choices:
+    - content: "Azure Event Hub"
+      isCorrect: true
+      explanation: "Correct. Azure Event Hub can handle millions of events with low latency. Azure Event Hub can stream events to blob storage."
+    - content: "Azure Event Grid"
+      isCorrect: false
+      explanation: "Incorrect. Azure Event Grid distributes events from different sources to different handlers."
+    - content: "Azure IoT Hub"
+      isCorrect: false
+      explanation: "Incorrect. Azure IoT Hub enables secure and reliable communication between an IoT solution and the devices it manages."

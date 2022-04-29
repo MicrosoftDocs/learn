@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.functions-python.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Improve your Python programming skills by using functions to make code reusable and easier to maintain. 
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

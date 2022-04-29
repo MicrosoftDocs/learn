@@ -4,12 +4,13 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 02/05/2021
+  ms.date: 02/11/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

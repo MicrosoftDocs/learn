@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-wrangling-data
-title: Use Azure Data Factory wrangling data
+title: Exercise - Use Azure Data Factory wrangling data
 metadata:
-  title: Use Azure Data Factory wrangling data
-  description: "Use Azure Data Factory wrangling data"
-  ms.date: 07/07/2021
+  title: Exercise - Use Azure Data Factory wrangling data
+  description: "Exercise - Use Azure Data Factory wrangling data"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/6-use-wrangling-data.md)]

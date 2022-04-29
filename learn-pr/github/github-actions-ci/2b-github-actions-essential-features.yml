@@ -5,8 +5,8 @@ metadata:
   title: Customize your workflow with environment variables and artifact data
   description: Learn how to use essential customization techniques such as using variables, running scripts, and sharing data and artifacts between jobs.
   ms.date: 04/13/2021
-  author: a-a-ron
-  ms.author: aastewar
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

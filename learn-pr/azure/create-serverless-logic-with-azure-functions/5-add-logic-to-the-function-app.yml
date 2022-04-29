@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add logic to the function app
   description: Add the business logic + trigger into the Function App
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-javascript-powershell

@@ -10,6 +10,8 @@ metadata:
   ms.author: juyoo
   ms.topic: interactive-tutorial  
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: juyoo-01192022
 abstract: |
   In this module, you will:
   - Add a web API described with an OpenAPI document to Azure API Management through Visual Studio.
@@ -27,6 +29,7 @@ products:
 - aspnet-core
 - dotnet
 - dotnet-core
+- vs-ide
 units:
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.1-introduction
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.2-activate-openapi-to-web-api-using-swashbuckle
@@ -38,4 +41,3 @@ units:
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.8-summary
 badge:
   uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.badge
-

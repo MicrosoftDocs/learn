@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-tensorflow.predict
+title: Making a prediction
+metadata:
+  title: Making a prediction
+  description: Learn how to make a prediction using your trained neural network using TensorFlow
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors: bstollnitz-08202021
+  ms.custom: team=cloud_advocates
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/7-predict.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Graph execution can be used during training and testing, but not during inference. True or false?"
+    choices:
+    - content: "True."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "False."
+      isCorrect: true
+      explanation: "Correct!"

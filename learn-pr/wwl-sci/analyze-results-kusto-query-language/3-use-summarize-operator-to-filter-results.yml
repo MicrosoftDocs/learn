@@ -4,12 +4,13 @@ title: Use the summarize operator to filter results
 metadata:
   title: Use the summarize operator to filter results
   description: "Use the summarize operator to filter results"
-  ms.date: 04/22/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-use-summarize-operator-to-filter-results.md)]

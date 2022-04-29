@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.functions-python.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: In this module, we covered how functions work in Python and some flexible input types that you can use when calling a function.
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

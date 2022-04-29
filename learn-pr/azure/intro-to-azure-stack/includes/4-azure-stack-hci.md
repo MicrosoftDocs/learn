@@ -23,9 +23,9 @@ The clustered servers share common configuration and resources by leveraging the
 
 Unlike with Azure Stack Hub, which allows only a restricted set of administrative tasks via well-defined, constrained interfaces, you have full, direct access to the underlying hardware and the operating system running on cluster nodes. You can manage Azure Stack HCI operations the same way as any other Windows Server-based cluster, leveraging such tools as Windows PowerShell and Server Manager. Also, to optimize your experience, it is recommended to use Windows Admin Center.
 
-Azure Stack HCI also offers disaster recovery capabilities that leverage its support for stretched clustering. By deploying a stretched Azure Stack HCI cluster, you can synchronously replicate its workloads across two separate on-premises locations and automatically failover between them.
+Azure Stack HCI also offers disaster recovery capabilities that leverage its support for stretched clustering. By deploying a stretched Azure Stack HCI cluster, you can synchronously replicate its workloads across two separate on-premises locations and automatically failover between them. Azure Stack HCI also runs Platform-as-a-Service (PaaS) services on-premises with Azure Arc.
 
-On the other hand, Azure Stack HCI doesn't support implementation of Azure PaaS services and the Azure-based deployment methodologies that rely on Azure Resource Manager, both of which are available on Azure Stack Hub. In addition, Azure Stack HCI doesn't inherently enforce or provide multitenancy.
+On the other hand, Azure Stack HCI doesn't support implementation the Azure-based deployment methodologies that rely on Azure Resource Manager, which is available on Azure Stack Hub. In addition, Azure Stack HCI doesn't inherently enforce or provide multitenancy.
 
 ## Common use cases of Azure Stack HCI
 

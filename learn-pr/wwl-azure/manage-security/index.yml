@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.manage-security
+metadata:
+  title: Manage security for Azure Virtual Desktop
+  description: "Manage security for Azure Virtual Desktop"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage security for Azure Virtual Desktop
+summary: The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop on local machines. You’ll learn the critical actions for keeping your users safe.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Plan and implement Conditional Access policies for connections to Azure Virtual Desktop.
+  *  Plan and implement multifactor authentication (MFA) in Azure Virtual Desktop.
+  *  Understand Conditional Access policy components.
+  *  Manage security by using Azure Security Center.
+  *  Understand Microsoft Defender Antivirus for session hosts.
+prerequisites: ""
+iconUrl: /learn/achievements/2-manage-security.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.manage-security.introduction
+- learn.wwl.manage-security.plan-implement-conditional-access-policies-for-connections-to-azure-virtual-desk
+- learn.wwl.manage-security.plan-implement-mfa-azure-virtual-desktop
+- learn.wwl.manage-security.understand-conditional-access-policy-components
+- learn.wwl.manage-security.by-using-azure-security-center
+- learn.wwl.manage-security.security-posture-management-threat-protection
+- learn.wwl.manage-security.microsoft-defender-antivirus-for-session-hosts
+- learn.wwl.manage-security.knowledge-check
+- learn.wwl.manage-security.summary
+badge:
+  uid: learn.wwl.manage-security.badge

@@ -6,10 +6,9 @@ metadata:
   title: Exercise - Use application-wide resources
   description: Exercise - Use application-wide resources.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 content: |
   [!include[](includes/9-exercise-use-application-wide-resources.md)]

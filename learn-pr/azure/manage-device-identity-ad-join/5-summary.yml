@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review what you've learned about Azure AD join and Enterprise State Roaming.
   ms.date: 04/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

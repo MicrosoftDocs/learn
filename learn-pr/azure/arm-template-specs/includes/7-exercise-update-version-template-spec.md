@@ -36,26 +36,6 @@ During the process, you'll:
 
 1. Save the file.
 
-## Convert the Bicep file to a JSON ARM template
-
-Convert your updated Bicep file to a JSON template before you publish it, by using this command:
-
-::: zone-end
-
-::: zone pivot="bicepcli"
-
-```azurecli
-az bicep build --file main.bicep --outfile azuredeploy.json
-```
-
-::: zone-end
-
-::: zone pivot="biceppowershell"
-
-```powershell
-bicep build main.bicep --outfile azuredeploy.json
-```
-
 ::: zone-end
 
 ## Publish a new version of the template spec
@@ -64,6 +44,16 @@ bicep build main.bicep --outfile azuredeploy.json
 
 Publish the template spec by using this Azure PowerShell cmdlet in the Visual Studio Code terminal:
 
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+:::code language="azurepowershell" source="code/7-add-version.ps1" range="1-5, 7" :::
+
+::: zone-end
+
+::: zone pivot="jsonpowershell"
+
 :::code language="azurepowershell" source="code/7-add-version.ps1" range="1-6" :::
 
 ::: zone-end
@@ -71,6 +61,16 @@ Publish the template spec by using this Azure PowerShell cmdlet in the Visual St
 ::: zone pivot="bicepcli,jsoncli"
 
 Publish the template spec by using this Azure CLI command in the Visual Studio Code terminal:
+
+::: zone-end
+
+::: zone pivot="bicepcli"
+
+:::code language="azurecli" source="code/7-add-version.sh" range="1-4, 6" :::
+
+::: zone-end
+
+::: zone pivot="jsoncli"
 
 :::code language="azurecli" source="code/7-add-version.sh" range="1-5" :::
 

@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-azure-expressroute
 metadata:
   title: Design and implement Azure ExpressRoute
   description: "You will learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath, and when to use each service according to your environments requirements."
-  ms.date: 08/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
   - You should have experience with network connectivity methods, such as VPN or WAN
   - You should have experience with the Azure portal and Azure PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/express-route-design-implement.svg
 levels:
 - intermediate
 roles:

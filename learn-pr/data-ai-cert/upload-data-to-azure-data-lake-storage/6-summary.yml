@@ -3,39 +3,14 @@ uid: learn.data-ai.upload-data-to-azure-data-lake-storage.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 01/31/2019
+  description: "Summary"
+  ms.date: 03/25/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: "Your company has a Data Lake Storage Gen2 account. If you want to upload a single file by using a tool that you don't have to install or configure, which tool should you use?"
-    choices: 
-    - content: "Azure Data Factory"
-      isCorrect: false
-      explanation: "Data Factory requires provisioning and configuring."
-    - content: "Azure Storage Explorer"
-      isCorrect: false
-      explanation: "You would have to install Storage Explorer before you could use it."
-    - content: "The Azure portal"
-      isCorrect: true
-      explanation: "Correct. The Azure portal requires no installation or configuration. To upload a file, you only have to sign in and a select an Upload button."
-
-  - content: "Your company has a Data Lake Storage Gen2 account. If you want to move hundreds of files from Amazon S3 to Azure Data Lake Storage, which tool should you use?"
-    choices: 
-    - content: "Azure Data Factory"
-      isCorrect: true
-      explanation: "Correct. Azure Data Factory can efficiently move data from Amazon S3 to Azure Data Lake Storage."
-    - content: "Azure Data Catalog"
-      isCorrect: false
-      explanation: "Data Catalog is the wrong tool for this job. Its purpose is to record information about data stores."
-    - content: "The Azure portal"
-      isCorrect: false
-      explanation: "The Azure portal can't copy files from Amazon S3."

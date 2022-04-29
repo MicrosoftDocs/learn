@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 Mobile applications often display lists of data in a scrollable panel. They use this style because mobile devices are small and screen space is limited.
 
 Suppose you're building an educational app about the flags of various countries. Your UI will show a list of countries and their respective flags along with some extra information like the date the flag was adopted. The list of the countries can't fit on one screen.  You need a control to display the list in a scrollable panel. Xamarin.Forms provides the `ListView` control for this type of situation.

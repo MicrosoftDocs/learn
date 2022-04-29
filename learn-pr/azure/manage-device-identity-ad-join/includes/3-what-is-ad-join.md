@@ -1,4 +1,4 @@
-You now have a better understanding of device identity and conditional access. You want to investigate Azure Active Directory (Azure AD) join and how it might be used to improve device management for both Azure and on-premises Active Directory Domain Services.
+You now have a better understanding of device identity and Conditional Access. You want to investigate Azure Active Directory (Azure AD) join and how it might be used to improve device management for both Azure and on-premises Active Directory Domain Services.
 
 In this unit, you'll learn about Azure AD join, and how to use it for infrastructure and device management.
 

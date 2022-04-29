@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-platform-service-issues.exercise-troubleshoot-paas-connection
+title: 'Exercise: Troubleshoot virtual machine connection'
+metadata:
+  title: 'Exercise: Troubleshoot virtual machine connection'
+  description: "Exercise: Troubleshoot virtual machine connection"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-exercise-troubleshoot-connection.md)]
+interactive: bash

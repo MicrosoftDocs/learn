@@ -5,8 +5,8 @@ metadata:
   title: How do Azure and Azure DevOps support Node.js applications?
   description: Understand what Node.js is and how it can be deployed to Azure.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

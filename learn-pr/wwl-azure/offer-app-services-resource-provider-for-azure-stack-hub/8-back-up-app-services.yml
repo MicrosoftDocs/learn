@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub.back-up
+title: Back up App Services
+metadata:
+  title: Back up App Services
+  description: "Back up App Services"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/8-back-up-app-services.md)]

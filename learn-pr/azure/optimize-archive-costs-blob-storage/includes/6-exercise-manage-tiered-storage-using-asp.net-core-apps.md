@@ -18,17 +18,21 @@ You'll now create a new BlobStorage account, and retrieve the account storage ke
 1. Run the following commands in the Cloud Shell to create a new BlobStorage account set to Cool:
 
    ```azurecli
-   export STORAGE_GROUP=`az group list --query [0].name | tr -d \"`
+   export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
    
    export AZURE_STORAGE_ACCOUNT=<your name or initials>storageaccount
    
-   az storage account create --resource-group $STORAGE_GROUP --name $AZURE_STORAGE_ACCOUNT --kind BlobStorage --access-tier Cool
+   az storage account create \
+       --resource-group $RESOURCE_GROUP \
+       --name $AZURE_STORAGE_ACCOUNT \
+       --kind BlobStorage \
+       --access-tier Cool
    ```
 
 1. Run the following command in the Cloud Shell to retrieve the storage key for the account:
 
-   ```azurecli
-   export AZURE_STORAGE_KEY=`az storage account keys list --account-name $AZURE_STORAGE_ACCOUNT --query [0].value | tr -d \"`
+   ```bash
+   export AZURE_STORAGE_KEY=`az storage account keys list -g $RESOURCE_GROUP -n $AZURE_STORAGE_ACCOUNT --query [0].value --output tsv`
    ```
 
 ## Create container and upload data
@@ -38,7 +42,10 @@ In this step, you'll create a blob container and three blobs, each containing so
 1. Run the following command in the Cloud Shell to create a new container:
 
    ```azurecli
-   az storage container create --name blobcontainer
+   az storage container create \
+       --name blobcontainer \
+       --account-name $AZURE_STORAGE_ACCOUNT \
+       --account-key $AZURE_STORAGE_KEY
    ```
 
 1. Run the following commands in the Cloud Shell to blobs with sample data:
@@ -57,19 +64,28 @@ In this step, you'll set the access tier for each blob.
 1. Run the following command in the Cloud Shell to set blob1 as Archive:
 
    ```azurecli
-   az storage blob set-tier --container-name blobcontainer --name blob1 --tier Archive
+   az storage blob set-tier \
+       --container-name blobcontainer \
+       --name blob1 \
+       --tier Archive
    ```
 
 1. Run the following command in the Cloud Shell to set blob2 as Cool:
 
    ```azurecli
-   az storage blob set-tier --container-name blobcontainer --name blob2 --tier Cool
+   az storage blob set-tier \
+       --container-name blobcontainer \
+       --name blob2 \
+       --tier Cool
    ```
 
 1. Run the following command in the Cloud Shell to set blob3 as Hot:
 
    ```azurecli
-   az storage blob set-tier --container-name blobcontainer --name blob3 --tier Hot
+   az storage blob set-tier \
+       --container-name blobcontainer \
+       --name blob3 \
+       --tier Hot
    ```
 
 ## Manage storage tiers in code
@@ -79,8 +95,7 @@ You're now ready to deploy and test out some code. First you'll set the environm
 1. Run the following commands in the Cloud Shell to store the environment variables used by the app:
 
    ```bash
-   export CONNECTION_STRING=`az storage account show-connection-string --name $AZURE_STORAGE_ACCOUNT --query connectionString | tr -d \"`
-   
+   export STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g $RESOURCE_GROUP -n $AZURE_STORAGE_ACCOUNT --output tsv`
    export CONTAINER_NAME=blobcontainer
    ```
 
@@ -92,31 +107,55 @@ You're now ready to deploy and test out some code. First you'll set the environm
    dotnet run
    ```
 
-1. The ManageStorageTiers app now connects to your blob storage, queries the three blobs named blob1, blob2, and blob3. It will then changes the storage tier of all three blobs, and query the storage tier of each blob again to verify the change. The Archive tier will not have changed, due to rehydration latency.
+1. The ManageStorageTiers app now connects to your blob storage, queries the three blobs named blob1, blob2, and blob3. It will then change the storage tier of all three blobs, and query the storage tier of each blob again to verify the change. The Archive tier will not have changed, due to rehydration latency.
 
 ## Review the app code
-
-<!-- REVIEW: I could not check this part since the sample repro has not been set up -->
 
 In this final step, you'll take a look at the code used by the ManageStorageTiers app to manage and change access tiers.
 
 1. In the Cloud Shell, use the editor to open ManageStorageTiers\Program.cs.
 
-1. The key parts of the app are the lines of code that look like this:
+1. This code displays the storage tiers for all of the blobs in a container:
 
    ```csharp
-   CloudBlockBlob blob1 = cloudBlobContainer.GetBlockBlobReference("blob1");
-   blob1.SetStandardBlobTier(StandardBlobTier.Cool);
+   private static async Task DisplayBlobTiers(BlobContainerClient blobContainerClient)
+   {
+       AsyncPageable<BlobItem> blobItems = blobContainerClient.GetBlobsAsync();
+
+       await foreach (var blobItem in blobItems)
+       {
+           Console.WriteLine($"  Blob name {blobItem.Name}:   Tier {blobItem.Properties.AccessTier}");
+       }
+   }
    ```
 
-1. This code sets the storage tier for a block blob.
-
-1. The code in the **DisplayBlobTiers** method retrieves the storage tier for blobs. The important line is:
+1. The following methods work together to update the storage tier for a set of blobs in a container.
 
    ```csharp
-   Console.WriteLine($"Blob name {item.Name}: Tier {item.Properties.StandardBlobTier}");
+   private static async Task UpdateBlobTiers(BlobContainerClient blobContainerClient)
+   {
+       AsyncPageable<BlobItem> blobItems = blobContainerClient.GetBlobsAsync();
+
+       await foreach (var blobItem in blobItems)
+       {
+           string blobName = blobItem.Name;
+           AccessTier? currentAccessTier = blobItem.Properties.AccessTier;
+           AccessTier newAccessTier = GetNewAccessTier(currentAccessTier);
+
+           Console.WriteLine($"  Blob name: {blobItem.Name}   Current tier: {currentAccessTier}   New tier: {newAccessTier}");
+
+           BlobClient blobClient = blobContainerClient.GetBlobClient(blobItem.Name);
+           blobClient.SetAccessTier(newAccessTier);
+       }
+   }
+
+   private static AccessTier GetNewAccessTier(AccessTier? accessTier)
+   {
+       if (accessTier == AccessTier.Hot)
+           return AccessTier.Cool;
+       else if (accessTier == AccessTier.Cool)
+           return AccessTier.Archive;
+       else
+           return AccessTier.Hot;
+   }
    ```
-
-<!-- REVIEW: Shouldn't this syntax be Console.WriteLine($"Blob name {0}: Tier {1}", item.Name, item.Properties.StandardBlobTier); -->
-
-1. This code obtains the storage tier from the Properties collection of the blob.

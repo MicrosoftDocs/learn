@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-compute-solution.design-for-azure-kubernetes-solutions
+title: Design for Azure Kubernetes solutions
+metadata:
+  title: Design for Azure Kubernetes solutions
+  description: "Design for Azure Kubernetes solutions"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-design-for-azure-kubernetes-solutions.md)]

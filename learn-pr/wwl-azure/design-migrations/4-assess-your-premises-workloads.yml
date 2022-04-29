@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-migrations.assess-your-premises-workloads
+title: Assess your on-premises workloads
+metadata:
+  title: Assess your on-premises workloads
+  description: "Assess your on-premises workloads"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-assess-your-premises-workloads.md)]

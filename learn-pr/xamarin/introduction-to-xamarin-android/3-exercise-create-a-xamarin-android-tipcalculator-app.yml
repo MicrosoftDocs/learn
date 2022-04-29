@@ -4,11 +4,10 @@ metadata:
   title: "Exercise - Create a Xamarin.Android TipCalculator app"
   description: "Create a TipCalculator app in Visual Studio 2019."
   ms.date: 04/17/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: "Exercise - Create a Xamarin.Android TipCalculator app"
 durationInMinutes: 4
 content: |

@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/28/2021
+  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -27,7 +28,7 @@ quiz:
     - content: "Change the CPU percentage to 50%."
       isCorrect: false
       explanation: "That's incorrect. There is no need to change the CPU percentage requirement."
-  - content: "The DevOps team for a large food delivery company is configuring a virtual machine scale set. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following virtual machine scale set features should be configured?"
+  - content: "The DevOps team for a large food delivery company is configuring a virtual machine scale set. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following virtual machine scale set features should be configured to add more machines during that time?"
     choices:
     - content: "Autoscale"
       isCorrect: false

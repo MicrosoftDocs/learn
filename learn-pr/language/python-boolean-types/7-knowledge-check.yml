@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-boolean-types.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about using Boolean logic in Python.
+  ms.date: 12/02/2021
+  author: ornelladotcom
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "Under what conditions does a test expression that uses the `and` operator evaluate to `True`?"
+    choices:
+    - content: "A test expression that uses the `and` operator evaluates to `True` when both subexpressions are true."
+      isCorrect: true
+      explanation: "Correct! Both conditions in the test expression must be true for the entire test expression to evaluate to `true`. "
+    - content: "A test expression that uses the `and` operator evaluates to `True` when one subexpression is true and the other is false."
+      isCorrect: false
+      explanation: "Incorrect. This answer is true for the `or` operator, but not the `and` operator."
+    - content: "A test expression that uses the `and` operator evaluates to `True` when both subexpressions are false."
+      isCorrect: false
+      explanation: "Incorrect. If a test expression uses the `and` operator and both subexpressions are false, the value of the whole test expression evaluates to `False`."
+  - content: "What is the keyword `elif` short for in Python?"
+    choices:
+    - content: "else if"
+      isCorrect: true
+      explanation: "Correct! You can use the `elif` keyword to add multiple test expressions to your program."
+    - content: "only if"
+      isCorrect: false
+      explanation: "Incorrect. If you want to run a code block only if a certain condition is true, you might use an `if` statement."
+    - content: "else"
+      isCorrect: false
+      explanation: "Incorrect. `else` is a separate keyword in Python."
+  - content: "What values in a test expression are always interpreted as false?"
+    choices:
+    - content: "Any non-zero values"
+      isCorrect: false
+      explanation: "Incorrect. Some non-zero values might be false, depending on the test expression."
+    - content: "Empty"
+      isCorrect: false
+      explanation: "Incorrect. Empty is not a valid Python value."
+    - content: "None and 0"
+      isCorrect: true
+      explanation: "Correct! None and 0 are interpreted as false in Python."

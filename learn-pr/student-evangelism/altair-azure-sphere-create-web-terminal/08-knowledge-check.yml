@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 
+content: |
+  Choose the best response for each question, and then select **Check your answers**.
+quiz:
+  questions:
+  - content: "Which answer best describes how the Azure IoT Central application is used?"
+    choices:
+    - content: "You can chart data that is sent from the Altair emulator that's running on Azure Sphere."
+      isCorrect: false
+      explanation: "You can set the Altair emulator configuration and chart data."
+    - content: "You can configure the Altair emulator startup settings and chart data."
+      isCorrect: true
+      explanation: "You can configure the Altair emulator startup settings and chart data."
+    - content: "You can configure the Altair emulator startup settings."
+      isCorrect: false
+      explanation: "You can configure the Altair emulator startup settings and chart data."
+  - content: "Which answer best describes the web terminal?"
+    choices:
+    - content: "You can run the Altair emulator as an Azure static web app and connect from the web terminal."
+      isCorrect: false
+      explanation: "The Altair emulator runs on Azure Sphere. Keyboard and terminal messages are routed over MQTT and via an MQTT broker to the web terminal that's running in your web browser."
+    - content: "The Altair emulator redirects keyboard and terminal messages over MQTT. These messages are routed to the web terminal via an MQTT broker. "
+      isCorrect: true
+      explanation: "The Altair emulator runs on Azure Sphere. Keyboard and terminal messages are routed over MQTT and via an MQTT broker to the web terminal that's running in your web browser."
+    - content: "The web terminal runs on Azure Sphere alongside the Altair emulator."
+      isCorrect: false
+      explanation: "The Altair emulator runs on Azure Sphere. Keyboard and terminal messages are routed over MQTT and via an MQTT broker to the web terminal that's running in your web browser."
+ 

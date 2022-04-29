@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-developer-tools.examine-azure-iot-hub-service-sdks
+title: Examine the Azure IoT Hub Service SDKs
+metadata:
+  title: Examine the Azure IoT Hub Service SDKs
+  description: "Examine the Azure IoT Hub Service SDKs"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-azure-iot-hub-service-software-development-kit.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-tools-to-track-usage-flow.implement-application-insights
+title: Implement Application Insights
+metadata:
+  title: Implement Application Insights
+  description: "Implement Application Insights"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-implement-application-insights.md)]

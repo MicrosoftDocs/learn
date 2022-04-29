@@ -8,6 +8,6 @@ In this module, you worked with Python, which is just one of the many platforms 
 
 In addition to supporting multiple platforms, Azure also provides a variety of resources that can be used from Python solutions. For a learning path full of examples on how to use Python with Azure's data analysis and machine learning tools, see [Introduction to machine learning with Python and Azure Notebooks](../../../paths/intro-to-ml-with-python/index.yml?azure-portal=true). You may also be interested in using Python with Azure Cognitive Services, which is covered in [Build an AI web app by using Python and Flask](/learn/modules/python-flask-build-ai-web-app/?azure-portal=true).
 
-If you are new to Python, check out the learning path [Take your first steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true). It includes hours of instructional modules like that help you get started with the basics of building Python applications.
+If you are new to Python, check out the learning path [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true). It includes hours of instructional modules like that help you get started with the basics of building Python applications.
 
 In this module, you ran a functional test that uses Selenium. To learn more about functional tests, including how to write a Selenium test, see [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines/?azure-portal=true).

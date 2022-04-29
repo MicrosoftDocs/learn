@@ -3,7 +3,7 @@ uid: learn.wwl.automate-deployment-of-sap-azure
 metadata:
   title: Automate Deployment of SAP on Azure
   description: "After this module, you will be able to run automated deployments of SAP on Azure infrastructure."
-  ms.date: 07/30/2021
+  ms.date: 12/10/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Basic understanding of scripting and JSON
   - AZ-104 certification or equivalent knowledge
   - Knowledge of SAP products such as SAP HANA or SAP NetWeaver
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/automate-deployment-of-sap-on-azure.svg
 levels:
 - advanced
 roles:

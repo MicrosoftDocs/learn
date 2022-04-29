@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-hyperparameters-azure-databricks.automated-mlflow-for-model-tuning
+title: Automated MLflow for model tuning
+metadata:
+  title: Automated MLflow for model tuning
+  description: "Automated MLflow for model tuning"
+  ms.date: 01/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-automated-mlflow-for-model-tuning.md)]

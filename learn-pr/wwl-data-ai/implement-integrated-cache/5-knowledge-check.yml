@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-integrated-cache.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "In the .NET SDK for Azure Cosmos DB SQL API, how should you configure the **CosmosClientOptions.ConnectionMode** property so that your application can use the integrated cache?"
+    choices:
+    - content: "Configure the connectivity mode to ``ConnectionMode.Direct``"
+      isCorrect: false
+      explanation: "That's incorrect. The direct connectivity mode will bypass the dedicated gateway."
+    - content: "Configure the connectivity mode to ``ConnectionMode.Gateway``"
+      isCorrect: true
+      explanation: "That's correct. The gateway connectivity mode will correctly use the dedicated gateway and is part of an overall solution to enable the integrated cache."
+    - content: "Leave the connectivity mode to the default value"
+      isCorrect: false
+      explanation: "That's incorrect. The default setting is to use the direct connectivity mode, which will bypass the dedicated gateway."
+  - content: "Which property of the **ItemRequestOptions** class should you configure to manually adjust how long items will remain in the cache?"
+    choices:
+    - content: "``SessionToken``"
+      isCorrect: false
+      explanation: "That's incorrect. Getting the session token will not influence the time items remain in the cache."
+    - content: "``ConsistencyLevel``"
+      isCorrect: false
+      explanation: "That's incorrect. Setting the consistency level correctly is a part of enabling the integrated cache, but it does not influence the time items remain in the cache."
+    - content: "``DedicatedGatewayRequestOptions.MaxIntegratedCacheStaleness``"
+      isCorrect: true
+      explanation: "That's correct. The ``MaxIntegratedCacheStaleness`` property will configure a **TimeSpan** that is used to determine how long items will remain in the cache."

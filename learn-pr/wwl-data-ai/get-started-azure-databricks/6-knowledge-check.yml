@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Alice creates a notebook on Azure Databricks to train her datasets, before using them with Spark ML. Which of the following languages are supported for doing that in a notebook?"
+    choices:
+    - content: "Java"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Databricks can run Spark jobs from a Java application but you can't use this language in a notebook."
+    - content: "Python"
+      isCorrect: true
+      explanation: "That's correct. Azure Databricks supports the following programming languages in runnable notebook cells: Python, Scala, SQL, and R."
+    - content: "C#"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Databricks doesn't support C# as a programming language in a notebook."
+  - content: "You want to train a neural network with TensorFlow. You don't want to install the library manually to avoid extra overhead. What should you do?"
+    choices:
+    - content: "Create a cluster with the Databricks Runtime for Machine Learning."
+      isCorrect: true
+      explanation: "That's correct. The Databricks Runtime for Machine Learning adds multiple libraries, including TensorFlow."
+    - content: "Create a single node cluster."
+      isCorrect: false
+      explanation: "That's incorrect. A single node cluster can be used with TensorFlow but doesn't include the library out-of-the-box."
+    - content: "Create a Python notebook."
+      isCorrect: false
+      explanation: "That's incorrect. Choosing to use a Python notebook doesn't install the library. You will be using the notebook to write the code to train your model."
+  - content: "Which description of DBFS is correct?"
+    choices:
+    - content: "You can upload a file to the DBFS using the UI."
+      isCorrect: true
+      explanation: "That's correct. You can upload a file to the DBFS using the UI as well as in your notebook."
+    - content: "You can only access data in Azure Databricks if it's stored on DBFS."
+      isCorrect: false
+      explanation: "That's incorrect. You can also use the mount command to use remote storage. Data doesn't have to be stored on DBFS to access it."
+    - content: "Data uploaded to the DBFS is only stored as long as your cluster is running."
+      isCorrect: false
+      explanation: "That's incorrect. The lifetime of files in the DBFS is NOT tied to the lifetime of your cluster. Data is actually persisted to the object store."

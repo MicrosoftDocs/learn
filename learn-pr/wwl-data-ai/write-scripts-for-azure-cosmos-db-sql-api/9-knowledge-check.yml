@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which Azure CLI command will create a new Azure Cosmos DB account using the SQL API?"
+    choices:
+    - content: "``az cosmosdb create``"
+      isCorrect: true
+      explanation: "That's correct. The ``az cosmosdb create`` command will create a SQL API account by default."
+    - content: "``az cosmosdb sql create``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``az cosmosdb sql`` command group does not have a ``create`` command/verb."
+    - content: "``az cosmosdb create --api sql``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``az cosmosdb create`` command does not have an ``--api`` argument."
+  - content: "Which Azure CLI command will change the maximum amount of throughput for a container using autoscale throughput?"
+    choices:
+    - content: "``az cosmosdb sql container throughput migrate --throughput-type``"
+      isCorrect: false
+      explanation: "That's incorrect. The **migrate** command changes the method of throughput provisioning for a container based on the value of the **--throughput-type** parameter."
+    - content: "``az cosmosdb sql container throughput update --throughput``"
+      isCorrect: false
+      explanation: "That's incorrect. The **update** command with the **--throughput** argument changes the manually provisioned throughput amount for a container."
+    - content: "``az cosmosdb sql container throughput update --max-throughput``"
+      isCorrect: true
+      explanation: "That's correct. The **update** command with the **--max-throughput** argument changes the maximum amount of throughput for a container."
+  - content: "How can you initiate a manual failover to another region in your Azure Cosmos DB SQL API account?"
+    choices:
+    - content: "Use the ``az cosmosdb failover-priority-change --failover-policies`` command to change the priority of any region."
+      isCorrect: false
+      explanation: "That's incorrect. You must specifically change the priority of the primary region to cause a manual failover event."
+    - content: "Use the ``az cosmosdb failover-priority-change --failover-policies`` command ensuring that you specifically change the priority of the region with a priority **= 0**."
+      isCorrect: true
+      explanation: "That's correct. Changing the priority of the primary region will cause a manual failover event."
+    - content: "Use the ``az cosmosdb update`` command to \"bounce\" the service"
+      isCorrect: false
+      explanation: "That's incorrect. This command changes only the characteristics of the service without affecting a manual failover event."

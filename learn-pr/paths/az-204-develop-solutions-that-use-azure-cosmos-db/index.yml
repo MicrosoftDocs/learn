@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db
+metadata:
+  title: 'AZ-204: Develop solutions that use Azure Cosmos DB'
+  description: 'AZ-204: Develop solutions that use Azure Cosmos DB'
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-204: Develop solutions that use Azure Cosmos DB'
+prerequisites: |
+  * At least one year of experience developing scalable solutions through all phases of software development.
+  * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+summary: |
+  Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, choose and create a partition key, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
+iconUrl: /learn/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+modules:
+- learn.wwl.explore-azure-cosmos-db
+- learn.wwl.implement-partitioning-azure-cosmos-db
+- learn.wwl.work-with-cosmos-db
+trophy:
+  uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db.trophy

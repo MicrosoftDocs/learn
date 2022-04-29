@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-federal-cloud-computing-strategy-of-2011
+title: Describe the Federal Cloud Computing Strategy of 2011
+metadata:
+  title: Describe the Federal Cloud Computing Strategy of 2011
+  description: "Describe the Federal Cloud Computing Strategy of 2011"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-describe-federal-cloud-computing-strategy-of-2011.md)]

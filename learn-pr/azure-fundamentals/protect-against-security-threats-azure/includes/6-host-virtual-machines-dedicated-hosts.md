@@ -4,15 +4,16 @@ Some organizations must follow regulatory compliance that requires them to be th
 
 Here's a diagram that shows how VMs relate to dedicated hosts and host groups. A *dedicated host* is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
 
-:::image type="content" source="../media/6-dedicated-hosts.png" alt-text="A diagram that shows the relationship among virtual machines, dedicated hosts, and host groups." border="false":::
+:::image type="content" source="../media/6-dedicated-hosts-cab8e670.png" alt-text="A diagram that shows the relationship among virtual machines, dedicated hosts, and host groups.":::
+
 
 ## What are the benefits of Azure Dedicated Host?
 
 Azure Dedicated Host:
 
-* Gives you visibility into, and control over, the server infrastructure that's running your Azure VMs.
-* Helps address compliance requirements by deploying your workloads on an isolated server.
-* Lets you choose the number of processors, server capabilities, VM series, and VM sizes within the same host.
+ -  Gives you visibility into, and control over, the server infrastructure that's running your Azure VMs.
+ -  Helps address compliance requirements by deploying your workloads on an isolated server.
+ -  Lets you choose the number of processors, server capabilities, VM series, and VM sizes within the same host.
 
 ## Availability considerations for Dedicated Host
 

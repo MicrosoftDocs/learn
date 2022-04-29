@@ -2,29 +2,29 @@ Azure enables you to take action on the metrics you're capturing. You can create
 
 Now, you'll create an alert based on your web server's CPU usage. If the CPU usage goes above the set threshold of 90 percent for five minutes, you get an email.
 
-In this unit, you'll add an alert for your VM. Next, you'll cause the VM CPU usage to spike, and receive the alert email.
+In this unit, you'll add an alert for your virtual machine (VM). Next, you'll cause the VM CPU usage to spike, and receive the alert email.
 
 ## Create an alert based on CPU usage
 
-If CPU usage goes above 90 percent for one minute, you'd like to get a notification. 
+If CPU usage goes above 90 percent for one minute, you'd like to get a notification.
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
 
 1. On the Azure portal menu, or from the **Home** page, select **Virtual machines**.
 
-1. Select the **monitored-linux-vm** virtual machine that you created.
+1. Select the **monitored-linux-vm** virtual machine that you created. The **monitored-linux-vm** virtual machine appears.
 
-1. On the left menu pane, scroll down, and select **Metrics**.
+1. On the left menu pane, scroll down, and select **Metrics**. The **Metrics** pane appears for the **monitored-linux-vm** virtual machine.
 
-1. Select **New alert rule**. The **Create alert rule** pane appears.
+1. To the right, select **New alert rule**. The **Create alert rule** pane appears.
 
     ![Screenshot that shows the button for a new alert rule on the metrics pane.](../media/8-metrics-new-alert-rule-button.png)
 
 ### Select the resource
 
-1. Under **Scope**, select the **Select resource** link.
+1. Under **Scope**, select the **Select resource** link. The **Select a resource** pane appears.
 
-1. In the **Filter by resource type** field, select **Virtual machines**.
+1. In the **Filter by resource type** field, scroll down and select **Virtual machines**.
 
 1. Under **Resource**, select **monitored-linux-vm**.
 
@@ -35,52 +35,54 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 ### Create the condition
 
 1. Under **Condition**, select the **Add condition** link. The **Select a signal** pane appears.
-
-1. Under **Signal name**, select **Percentage CPU**. The **Configure signal logic** pane appears.
+1. In the search box, enter **Percentage CPU**.
+1. Select **Percentage CPU**.
 
     ![Screenshot that shows "Percentage CPU" selected as the signal name](../media/8-configure-signal-logic-percentage-cpu.png)
 
+    The **Configure signal logic** pane appears.
+
 1. Under **Alert logic**, enter the following values.
 
-   |Field |value  |
+   | Setting | Value  |
    |---------|---------|
-   |Operator |    Greater than or equal to     |
-   |Aggregation type   |  Average       |
-   |Threshold value   |    90     |
+   | Operator |    Greater than or equal to     |
+   | Aggregation type   |  Average       |
+   | Threshold value   |    90     |
 
     ![Screenshot that shows the section for alert logic filled out.](../media/8-alert-logic.png)
 
-1. Select **Done**. The **Create alert rule** pane appears.
+1. Select **Done**. The **Create alert rule** pane reappears.
 
 ### Add an action
 
 1. Under **Actions**, select the **Add action groups** link. The **Add action groups** pane appears.
 
-1. Select **Create action group**.
+1. Select **Create action group**. The **Create action group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
-    |Setting  |Value  |
+    | Setting  |Value  |
     |---|---|
     | **Project details** |
-    |Subscription       | Concierge Subscription               |
-    |Resource group       | <rgn>[sandbox resource group name]</rgn> |
+    | Subscription  | Concierge Subscription |
+    | Resource group  | <rgn>[sandbox resource group name]</rgn> |
     | **Instance details** |
-    |Action group name | Email alerts |
+    | Action group name | Enter *Email alerts* |
 
    ![Screenshot that shows the "Add action group" pane filled out.](../media/8-create-action-group-basics.png)
 
 1. Select **Next: Notifications**, and enter the following values for each setting.
 
-    |Setting  |Value  |
+    | Setting  |Value  |
     |---|---|
     | **Notifications** |
-    |Notification type      | Email/SMS/Push/Voice |
-    |Name     | High CPU usage       |
+    | Notification type      | Email/SMS/Push/Voice |
+    | Name     | High CPU usage       |
+
+    ![Screenshot that shows the notifications pane filled out with the information from the following table.](../media/8-create-action-group-notifications.png)
 
     The **Email/SMS message/Push/Voice** pane appears.
-
-   ![Screenshot that shows the notifications pane filled out with the information from the following table.](../media/8-create-action-group-notifications.png)
 
 1. Tick the **Email** checkbox, and enter your email address to receive the alert notification. If this pane doesn't appear, select **Edit** for the notification type.
   
@@ -92,12 +94,12 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Enter alert rule details
 
-1. Under **Alert rule details**, enter the following values.
+1. Under **Alert rule details**, enter the following values for each setting.
 
-    |Field  |Value  |
+    | Setting  | Value  |
     |---|---|
-    |Alert rule name | Web server CPU running hot    |
-    |Description     | Email alert notifies when the CPU is over 90% |
+    | Alert rule name | Enter *Web server CPU running hot*    |
+    | Description     | Enter *Email alert notifies when the CPU is over 90%* |
 
    ![Screenshot that shows the fields for alert details.](../media/8-alert-rule-details.png)
 
@@ -107,15 +109,15 @@ Wait a few minutes for this rule to activate.
 
 ## Trigger the alert
 
-1. Go to the VM **Overview** pane.
+1. In the left menu pane, go to the **Overview** pane for the **monitored-linux-vm** virtual machine.
 
 1. In the upper menu bar, select **Connect**, and then select **SSH**. The **Connect** pane for your VM appears.
 
    ![Screenshot that shows the "Connect" button on the VM overview pane](../media/8-vm-overview-connect-button.png)
 
-1. Under step 4 (**Run the example command below to connect to your VM**), copy the **azureuser**@ and IP address that follows.
+1. Under step 4 on the **Connect** page, copy the **azureuser**@ and IP address that follows.
 
-1. In Azure Cloud Shell to the right, enter **SSH**, and paste what you copied in the previous step. It should look like the following command.
+1. In Azure Cloud Shell to the right, enter *SSH*, and paste what you copied in the previous step. It should look like the following command.
 
     ```bash
     ssh azureuser@<ipaddress>
@@ -123,7 +125,8 @@ Wait a few minutes for this rule to activate.
 
     If Cloud Shell times out, select **Reconnect**.
 
-1. When you're prompted, enter **yes** to connect to the VM.
+1. When you're prompted, enter *yes* to connect to the VM.
+
 1. Run the following command to update the list of available updates.
 
     ```bash
@@ -142,11 +145,9 @@ Wait a few minutes for this rule to activate.
     sudo stress --cpu 16 -v -t 10m
     ```
 
-1. Return to the Azure portal.
+1. Return to the Azure portal and in the upper left corner, select the **&#9776;** icon, and then select **Dashboard**. The **KPI Dashboard** appears.
 
-1. On the Azure portal menu, or from the **Home** page, select **Dashboard**, and then select **KPI Dashboard**.
-
-1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses (**...**) on the upper right, and then select **Refresh**.
+1. On the **Max cpu/usage_active for monitored-linux-vm** graph, select the ellipses (**...**) on the upper right, and then select **Refresh**.
 
 1. After a few minutes, the CPU should approach 100 percent, and you'll receive an alert email.
 

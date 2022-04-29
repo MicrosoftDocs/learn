@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.describe-extended-events
+title: Explore extended events
+metadata:
+  title: Explore extended events
+  description: "Explore extended events"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-explore-extended-events.md)]

@@ -3,10 +3,10 @@ uid: learn.languages.csharp-write-first.challenge
 title: Challenge
 metadata:
   title: Challenge
-  description: Use what you just learned about C# to print messages to output.
+  description: 'Use what you just learned about C# to print messages to output.'
   ms.date: 08/30/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

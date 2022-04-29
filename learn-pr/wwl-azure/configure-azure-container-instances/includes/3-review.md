@@ -56,7 +56,7 @@ Containers are becoming the preferred way to package, deploy, and manage cloud a
     Linux and Windows Containers
   :::column-end:::
   :::column:::
-    Container instances supports scheduling of multi-container groups that share host machine resources.
+    Container instances can schedule both Windows and Linux containers. Simply specify the OS type when you create your container groups.
   :::column-end:::
 :::row-end:::
 :::row:::

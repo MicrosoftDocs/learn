@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "One reason your request are getting a 403 status code returned is?"
+    choices:
+    - content: "Because by default Azure Cosmos DB blocks access to all incoming IPs."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Cosmos DB by default allows access to all IPs. A 403 status code means that your connection is forbidden."
+    - content: "Because by default Azure Cosmos DB allows access to all incoming IPs."
+      isCorrect: false
+      explanation: "That's incorrect. A 403 status code means that your connection is forbidden so you wouldn't get it if all IPs are allowed."
+    - content: "Because the firewall is enabled, and your application's IP must be added to the firewall's allowed access list."
+      isCorrect: true
+      explanation: "That's correct. If the firewall is enabled, your application's IP must be added to the allowed access list."
+  - content: "What do you need to do to use the Data Explorer with RBAC?"
+    choices:
+    - content: "Access the Azure Cosmos DB Data Explorer with the specific `?feature.enableAadDataPlane=true` query parameter and sign-in."
+      isCorrect: false
+      explanation: "That's incorrect. Data Explorer doesn't support RBAC. The proposed solution is to use **Azure Cosmos DB Explorer** to query your data."
+    - content: "Use CLI or PowerShell to enable the feature `enableAadDataPlane=true`."
+      isCorrect: false
+      explanation: "That's incorrect. You can't enable RBAC data explorer access in any way."
+    - content: "Data Explorer doesn't support RBAC."
+      isCorrect: true
+      explanation: "That's correct. Data Explorer doesn't support RBAC, to query your data, use **Azure Cosmos DB Explorer** instead."
+  - content: "What is the proper set of steps to set up Always Encrypted for Cosmos DB?"
+    choices:
+    - content: "Create a CMKs in Azure Key Vault, Use the SDK to create the DEKs (with the CMKs) on a database, add the DEK and the encryption policies to an existing container."
+      isCorrect: false
+      explanation: "That's incorrect. You can only set up Always Encrypted at the container's creation time and can't modify or add Always Encrypted to an existing container."
+    - content: "Create a CMKs in Azure Key Vault, Use the SDK to create the DEKs (with the CMKs) on a database, create a container with the DEK and encryption policies."
+      isCorrect: true
+      explanation: "That's correct. You can only set up Always Encrypted at the container's creation time."
+    - content: "Create a CMKs in Azure Key Vault, Use the SDK to create the DEKs (with the CMKs) on a new or existing container with the encryption policies."
+      isCorrect: false
+      explanation: "That's incorrect. First, you need to set up the DEK on the database. Then, you can only set up Always Encrypted at the container's creation time and can't modify or add Always Encrypted to an existing container."

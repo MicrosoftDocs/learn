@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.nvidia-deepstream-development-azure
+metadata:
+  title: NVIDIA DeepStream development with Microsoft Azure
+  description: Learn how to develop and securely deploy custom NVIDIA DeepStream applications to NVIDIA-powered IoT Edge devices.
+  brand: azure
+  ms.date: 10/01/2021
+  author: toolboc
+  ms.author: pdecarlo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - pdecarlo-01212022
+  ms.custom:
+  - team=cloud_advocates
+title: NVIDIA DeepStream development with Microsoft Azure
+prerequisites: |
+  - Knowledge of containers  
+  - Familiarity with Azure IoT Edge
+  - X86 Based System running Ubuntu 18.04 OS
+  - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
+  - [NVIDIA Jetson Embedded Device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) provisioned with [JetPack 4.6](https://developer.nvidia.com/jetpack-sdk-46)
+summary: |
+  With NVIDIA DeepStream, you can seamlessly develop optimized Intelligent Video Applications that can consume multiple video, image, and audio sources. You can also apply single or cascading inference operations to video frames in real-time, and transmit inference results to the cloud for archiving or additional processing.
+
+  Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream-based AI workloads to NVIDIA-powered IoT Edge devices.
+
+iconUrl: /learn/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- azure-iot
+- azure-container-registry
+- azure-iot-edge
+- azure-iot-hub
+modules:
+- learn.nvidia.setup-configure-nvidia-deepstream-development
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure
+- learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
+trophy:
+  uid: learn.nvidia-deepstream-development-azure.trophy

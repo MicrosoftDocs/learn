@@ -1,12 +1,12 @@
-Azure Sentinel contains powerful query tools that can help you, as part of the Security Operations Center team, find and isolate security threats and unwanted activity in Contoso's environment.
+Microsoft Sentinel contains powerful query tools that can help you, as part of the Security Operations Center team, find and isolate security threats and unwanted activity in Contoso's environment.
 
 ## Hunt by using built-in queries
 
-You can use the search and query tools in Azure Sentinel to hunt for security threats and tactics throughout your environment. Hunting queries enable you to filter through large amounts of events and security data sources to identify potential threats or track down known or expected threats.
+You can use the search and query tools in Microsoft Sentinel to hunt for security threats and tactics throughout your environment. Hunting queries enable you to filter through large amounts of events and security data sources to identify potential threats or track down known or expected threats.
 
-The **Hunting** page in Azure Sentinel has built-in queries. These queries can guide your hunting process and help you pursue the appropriate hunting paths to uncover issues in your environment. Hunting queries can expose issues that aren't significant enough on their own to generate an alert but have happened often enough over time to warrant investigation.
+The **Hunting** page in Microsoft Sentinel has built-in queries. These queries can guide your hunting process and help you pursue the appropriate hunting paths to uncover issues in your environment. Hunting queries can expose issues that aren't significant enough on their own to generate an alert but have happened often enough over time to warrant investigation.
 
-:::image type="content" source="../media/3-hunting-page.png" alt-text="Screenshot that shows the Hunting page in Azure Sentinel." :::
+:::image type="content" source="../media/3-hunting-page.png" alt-text="Screenshot that shows the Hunting page in Microsoft Sentinel." :::
 
 The **Hunting** page provides a list all hunting queries. You can filter and sort queries by name, provider, data source, results, and tactics. You can save queries by selecting the **Favorites** star icon for the query in the list.
 
@@ -17,14 +17,14 @@ The **Hunting** page provides a list all hunting queries. You can filter and sor
 
 When you select a query from the list, the query details appear on a new pane. The query details pane contains a description, code, and other information about the query. That information includes related entities and identified tactics. You can run a query interactively by selecting **Run Query** on the details pane.
 
-### Hunt for threats y using the MITRE ATT&CK framework
+### Hunt for threats by using the MITRE ATT&CK framework
 
-Azure Sentinel uses the MITRE ATT&CK framework to categorize and order queries by tactics. ATT&CK is a knowledge base of tactics and techniques that are used and observed in the global threat landscape. You can use MITRE ATT&CK to develop and inform your threat-hunting models and methods in Azure Sentinel. When you're threat hunting in Azure Sentinel, you can use the ATT&CK framework to categorize and run queries by using the MITRE ATT&CK tactics timeline.
+Microsoft Sentinel uses the MITRE ATT&CK framework to categorize and order queries by tactics. ATT&CK is a knowledge base of tactics and techniques that are used and observed in the global threat landscape. You can use MITRE ATT&CK to develop and inform your threat-hunting models and methods in Microsoft Sentinel. When you're threat hunting in Microsoft Sentinel, you can use the ATT&CK framework to categorize and run queries by using the MITRE ATT&CK tactics timeline.
 
 >[!NOTE]
 >You can select individual MITRE ATT&CK tactics from the timeline on the **Hunting** page.
 
-:::image type="content" source="../media/3-attack-timeline.png" alt-text="Screenshot of the tactics timeline on the Hunting page in Azure Sentinel." :::
+:::image type="content" source="../media/3-attack-timeline.png" alt-text="Screenshot of the tactics timeline on the Hunting page in Microsoft Sentinel." :::
 
 Selecting any tactic will filter the available queries by the selected tactic. Tactics include:
 
@@ -43,11 +43,11 @@ Selecting any tactic will filter the available queries by the selected tactic. T
 
 ## Create custom queries to refine threat hunting
 
-All Azure Sentinel hunting queries use Kusto Query Language (KQL) syntax used in Log Analytics. You can modify a query in the details pane and run the new query. Or you can save it as a new query that can be reused in your Azure Sentinel workspace.
+All Microsoft Sentinel hunting queries use Kusto Query Language (KQL) syntax used in Log Analytics. You can modify a query in the details pane and run the new query. Or you can save it as a new query that can be reused in your Microsoft Sentinel workspace.
 
 You can also create your own custom queries by using KQL code to hunt for threats.
 
-:::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The page for creating a custom query in Azure Sentinel." :::
+:::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The page for creating a custom query in Microsoft Sentinel." :::
 
 Custom queries enable you to define the following:
 
@@ -60,10 +60,10 @@ Custom queries enable you to define the following:
 
 Custom queries are listed alongside built-in queries for management.
 
-## Explore the Azure Sentinel repository on GitHub
+## Explore the Microsoft Sentinel repository on GitHub
 
-The Azure Sentinel repository contains out-of-the-box detections, exploration queries, hunting queries, workbooks, playbooks, and much more to help you secure your environment and hunt for threats. Microsoft and the Azure Sentinel community contribute to this repo.
+The Microsoft Sentinel repository contains out-of-the-box detections, exploration queries, hunting queries, workbooks, playbooks, and much more to help you secure your environment and hunt for threats. Microsoft and the Microsoft Sentinel community contribute to this repo.
 
-The repo contains folders with contributed content for several areas of Azure Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
+The repo contains folders with contributed content for several areas of Microsoft Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Microsoft Sentinel workspace.
 
-Choose the best response for the following question. Then select **Check your answers**.
+Choose the best response for the following question. Then, select **Check your answers**.

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-event-logs.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator has created an event log subscription. The subscription is collector initiated. The computers from which event logs will be collected are all running Windows Server 2022. What command does the administrator need to run on these source computers?"
+    choices:
+    - content: "The administrator needs to run `Wecutil qc` on all source computers."
+      isCorrect: false
+      explanation: "Incorrect. This command should be run on the collector computer."
+    - content: "The administrator needs to run `Winrm quickconfig` on all source computers."
+      isCorrect: false
+      explanation: "Incorrect. Windows Remote Management is enabled on Windows Server by default, therefore no command needs to be run."
+    - content: "No commands need to be run."
+      isCorrect: true
+      explanation: "Correct. Windows Remote Management is enabled on Windows Server by default."
+  - content: "An administrator is responding to a report of problems with a departmental server. They review the event logs on the server using Event Viewer. Which of the following types of Application and service logs typically provide guidance on a well-defined solution for an indicated problem?"
+    choices:
+    - content: "Admin logs."
+      isCorrect: true
+      explanation: "Correct. These logs usually provide a well-defined solution upon which an administrator can act."
+    - content: "Analytic and Debug logs."
+      isCorrect: false
+      explanation: "Incorrect. Analytic and Debug logs don't usually provide well-defined solutions, and might prove more useful to developers."
+    - content: "Operational logs."
+      isCorrect: false
+      explanation: "Incorrect. Operational logs don't usually provide well-defined solutions."
+  - content: "Which of the following statements about Windows Server event logs is true?"
+    choices:
+    - content: "All Windows logs are 20,480 KB in size."
+      isCorrect: false
+      explanation: "Incorrect. The Setup log is 1,024 KB in size. All others are, however, 20,480 KB in size. These settings can be changed."
+    - content: "All Windows logs are overwritten as necessary."
+      isCorrect: true
+      explanation: "Correct, although you can reconfigure this setting."
+    - content: "The Applications and Services Logs node stores events that have system-wide effects."
+      isCorrect: false
+      explanation: "Incorrect. The Applications and Services Logs node stores events from a single application or component rather than events that might have system-wide effects."

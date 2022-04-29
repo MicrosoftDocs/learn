@@ -4,10 +4,11 @@ metadata:
   title: What is programming?
   description: Learn about a programmer's tools
   ms.date: 03/24/2021
-  author: chloecodesthings
-  ms.author: chcondon
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: What is programming?
 durationInMinutes: 2
 content: |

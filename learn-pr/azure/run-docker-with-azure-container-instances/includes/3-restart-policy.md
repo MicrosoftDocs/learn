@@ -14,7 +14,7 @@ Azure Container Instances has three restart-policy options:
 
 ## Run a container to completion
 
-To see the restart policy in action, create a container instance from the **microsoft/aci-wordcount** Docker image and specify the **OnFailure** restart policy. This container runs a Python script that analyzes the text of Shakespeare's Hamlet, writes the 10 most common words to standard output, and then exits.
+To see the restart policy in action, create a container instance from the **azuredocs/aci-wordcount** container image and specify the **OnFailure** restart policy. This container runs a Python script that analyzes the text of Shakespeare's Hamlet, writes the 10 most common words to standard output, and then exits.
 
 1. Run this `az container create` command to start the container.
 
@@ -35,7 +35,7 @@ To see the restart policy in action, create a container instance from the **micr
     az container show \
       --resource-group learn-deploy-aci-rg \
       --name mycontainer-restart-demo \
-      --query containers[0].instanceView.currentState.state
+      --query "containers[0].instanceView.currentState.state"
     ```
 
     Repeat the command until it reaches the **Terminated** status.
@@ -50,7 +50,7 @@ To see the restart policy in action, create a container instance from the **micr
 
     You see this.
 
-    ```json
+    ```output
     [('the', 990),
      ('and', 702),
      ('of', 628),

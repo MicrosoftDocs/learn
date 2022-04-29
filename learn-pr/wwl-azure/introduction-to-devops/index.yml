@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-devops
+metadata:
+  title: Introduction to DevOps
+  description: "Introduction to DevOps"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to DevOps
+summary: This module explores the key areas that organizations must apply to start their DevOps transformation Journey, changing the team's mindset, and defining timelines and goals.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand what DevOps is and the steps to accomplish it
+  - Identify teams to implement the process
+  - Plan for the transformation with shared goals and timelines
+  - Plan and define timelines for goals
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.introduction-to-devops.introduction
+- learn.wwl.introduction-to-devops.what-is-devops
+- learn.wwl.introduction-to-devops.explore-devops-journey
+- learn.wwl.introduction-to-devops.identify-transformation-teams
+- learn.wwl.introduction-to-devops.explore-shared-goals-define-timelines
+- learn.wwl.introduction-to-devops.knowledge-check
+- learn.wwl.introduction-to-devops.summary
+badge:
+  uid: learn.wwl.introduction-to-devops.badge

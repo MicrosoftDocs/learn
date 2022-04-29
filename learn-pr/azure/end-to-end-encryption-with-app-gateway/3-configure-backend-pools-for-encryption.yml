@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.end-to-end-encryption-with-app-gateway.3-configure-backend-pools-for-encryption
 metadata:
-  title: Configure backend pools for encryption
-  description: Configure backend pools for encryption
-  ms.date: 06/28/2019
-  author: jboeshart
-  ms.author: jaboes
+  title: Configure back-end pools for encryption
+  description: Configure back-end pools for encryption
+  ms.date: 02/22/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure backend pools for encryption
+title: Configure back-end pools for encryption
 durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-backend-pools-for-encryption.md)]

@@ -17,7 +17,7 @@ Arguments
 
 - text: A string to search.
 
-- typeLiteral: An optional type literal (e.g., typeof(long)). If provided, the extracted substring is converted to this type.
+- typeLiteral: An optional type literal (for example, typeof(long)). If provided, the extracted substring is converted to this type.
 
 Returns
 

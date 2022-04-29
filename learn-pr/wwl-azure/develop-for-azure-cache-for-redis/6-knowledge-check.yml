@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-for-azure-cache-for-redis.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/18/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the Azure Cache for Redis service tiers is the lowest tier recommended for use in production scenarios?"
+    choices:
+    - content: "Basic"
+      isCorrect: false
+      explanation: "That's incorrect. The basic tier has no service-level agreement and is ideal for development/test and non-critical workloads."
+    - content: "Standard"
+      isCorrect: true
+      explanation: "That's correct. The standard tier is the lowest tier that offers replication which is always recommended for production scenarios."
+    - content: "Premium"
+      isCorrect: false
+      explanation: "That's incorrect. The premium tier is suitable for production, but it isn't the lowest tier recommended for production."
+  - content: "Caching is important because it allows us to store commonly used values in memory. However, we also need a way to expire values when they are stale. In Redis this is done by applying a time to live (TTL) to a key. Which value represents the expire time resolution?"
+    choices:
+    - content: "1 millisecond"
+      isCorrect: true
+      explanation: "That's correct. The expire time resolution is always 1 millisecond."
+    - content: "10 milliseconds"
+      isCorrect: false
+      explanation: "That's incorrect. The expire time resolution is always 1 millisecond."
+    - content: "seconds or milliseconds"
+      isCorrect: false
+      explanation: "That's incorrect. Expirations can be set using seconds or milliseconds precision, but the expire time resolution is always 1 millisecond."

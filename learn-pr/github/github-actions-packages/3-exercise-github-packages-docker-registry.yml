@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-actions-packages.exercise-github-packages-docker-registry
-title: Exercise - Use GitHub Packages as a Docker Registry
+title: Exercise - Publish to a GitHub Packages registry
 metadata:
-  title: Exercise - Use GitHub Packages as a Docker Registry
+  title: Exercise - Publish to a GitHub Packages registry
   description: Learn how to set up a CI pipeline that will build and push a container image into GitHub Packages
-  ms.date: 04/27/2021
-  author: cmaneu
-  ms.author: chmaneu
+  ms.date: 09/30/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25

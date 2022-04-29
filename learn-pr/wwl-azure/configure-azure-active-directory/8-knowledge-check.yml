@@ -4,29 +4,30 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/27/2021
+  ms.date: 02/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Users want to sign-in to devices, apps, and services from anywhere. They want to sign-in using an organizational work or school account instead of a personal account. IT requires that corporate assets are protected and that devices meet standards for security and compliance. What should be done?"
+  - content: "Which of the following correctly describes Azure Active Directory?"
     choices:
-    - content: "Add the device in Azure Active Directory"
+    - content: "Azure AD can be queried through LDAP."
       isCorrect: false
-      explanation: "That's incorrect. To get a device under the control of Azure AD either join or register the device."
-    - content: "Join the device to Azure Active Directory"
+      explanation: "That's incorrect. Because Azure AD is HTTP/HTTPS based, it cannot be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS."
+    - content: "Azure AD is primarily an identity solution"
       isCorrect: true
-      explanation: "That's correct. Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Azure AD. The identity can be used to enable or disable a device."
-    - content: "Register a device in Azure Active Directory."
+      explanation: "That's correct. Azure AD is primarily an identity solution, and it is designed for Internet-based applications by using HTTP and HTTPS communications."
+    - content: "Azure AD uses Organizational Units (OUs) and Group Policy Objects (GPOs)."
       isCorrect: false
-      explanation: "That's incorrect. Joining a device is an extension to registering a device. Joining provides the benefits of registering and changes the local state of a device. Changing the local state enables users to sign-in to a device using an organizational work or school account instead of a personal account."
+      explanation: "That's incorrect. Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs)."
   - content: "A dedicated and trusted instance of Azure Active Directory is often referred to as?"
     choices:
     - content: "An Azure tenant"
@@ -40,9 +41,9 @@ quiz:
       explanation: "That's incorrect. An Azure AD Account is an identity created through Azure AD or another Microsoft cloud service, such as Office 365. Identities are stored in Azure AD and accessible to the organization's cloud service subscriptions. This account is also sometimes called a Work or school account."
   - content: "When Self-Service Password Reset is enabled it means?"
     choices:
-    - content: "Users can change their password when they're signed in."
+    - content: "Users must wait for the Administrator if they are locked out."
       isCorrect: false
-      explanation: "That's incorrect. Even without SSPR enabled, users can change their password when they're signed in to Azure AD."
+      explanation: "That's incorrect. The purpose of SSPR is for users to be able to reset their passwords."
     - content: "Administrators can reset their password by using one authentication method."
       isCorrect: false
       explanation: "That's incorrect. At least two methods are required to authenticate a password reset for an admin account."

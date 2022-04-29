@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.design-solution-for-backup-disaster-recovery
+metadata:
+  title: Design a solution for backup and disaster recovery
+  description: "During this module, you learned how to select appropriate backup solutions for Azure workloads. You also learned how to select appropriate disaster recovery options for these workloads. Having completed this module, you’ll now be able to select appropriate backup and recovery solutions for your workloads."
+  ms.date: 04/21/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a solution for backup and disaster recovery
+summary: Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads.
+abstract: |
+  In this module, you’ll learn how to:
+  •	Design for backup and recovery.
+  •	Design for Azure Backup.
+  •	Design for Azure blob backup and recovery.
+  •	Design for Azure Files backup and recovery.
+  •	Design for Azure virtual machine backup and recovery.
+  •	Design for6 Azure SQL backup and recovery.
+  •	Design for Azure Site Recovery.
+prerequisites: |
+  •	Conceptual knowledge of Business Continuity and Disaster Recovery solutions.
+  •	Working experience with object replication, backup solution tools, and recovery options.
+iconUrl: /learn/achievements/design-solution-backup-recovery-disaster-recovery.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure-backup
+- azure-site-recovery
+units:
+- learn.wwl.design-solution-for-backup-disaster-recovery.introduction
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-recovery
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-backup
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-blob-backup-recovery
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-files-backup-recovery
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-virtual-machine-backup-recovery
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-sql-backup-recovery
+- learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-site-recovery
+- learn.wwl.design-solution-for-backup-disaster-recovery.knowledge-check
+- learn.wwl.design-solution-for-backup-disaster-recovery.summary-resources
+badge:
+  uid: learn.wwl.design-solution-for-backup-disaster-recovery.badge

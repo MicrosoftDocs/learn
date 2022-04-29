@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.monitor-virtual-machines-running
+title: Monitor virtual machines running Windows Server
+metadata:
+  title: Monitor virtual machines running Windows Server
+  description: "Monitor virtual machines running Windows Server"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-monitor-virtual-machines-running-windows-server.md)]

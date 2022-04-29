@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/02/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the built-in monitoring package provided with SAP HANA on Azure (Large Instances)?"
+    choices:
+    - content: "SAP HANA Studio"
+      isCorrect: false
+      explanation: "Incorrect. HANA Large Instances doesn't come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
+    - content: "Log Analytics"
+      isCorrect: false
+      explanation: "Incorrect. HANA Large Instances doesn't come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
+    - content: "HANA Large Instances doesn't come with built-in monitoring tools"
+      isCorrect: true
+      explanation: "Correct. HANA Large Instances doesn't come with built-in monitoring tools. Instead, Microsoft offers resources to help you troubleshoot and monitor according to your organization’s requirements, and the Microsoft support can assist you in troubleshooting technical issues. Monitor HANA Large Instances resources such as CPU, memory, network bandwidth, and storage space using SAP HANA Studio, SAP HANA Cockpit, SAP Solution Manager, and native Linux tools."
+  - content: "SAP HANA Studio can display all SAP HANA alerts for specific values that fall outside their set minimum and maximum thresholds. How often are alerts checks performed?"
+    choices:
+    - content: "Every minute"
+      isCorrect: false
+      explanation: "Incorrect. By default, checks are refreshed every 15 minutes."
+    - content: "Every 15 minutes"
+      isCorrect: true
+      explanation: "Correct. By default, checks are refreshed every 15 minutes."
+    - content: "Every hour"
+      isCorrect: false
+      explanation: "Incorrect. By default, checks are refreshed every 15 minutes."
+  - content: "Which tool is used to raise support requests for SAP HANA on Azure (Large Instances)?"
+    choices:
+    - content: "Azure portal"
+      isCorrect: true
+      explanation: "Correct. In the Azure portal, from the page displaying HANA Large Instance units, you can create support requests specifically for that unit. Select the \"New support request\" link."
+    - content: "SAP HANA Studio"
+      isCorrect: false
+      explanation: "Incorrect. In the Azure portal, from the page displaying HANA Large Instance units, you can create support requests specifically for that unit. Select the \"New support request\" link."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Incorrect. In the Azure portal, from the page displaying HANA Large Instance units, you can create support requests specifically for that unit. Select the \"New support request\" link."

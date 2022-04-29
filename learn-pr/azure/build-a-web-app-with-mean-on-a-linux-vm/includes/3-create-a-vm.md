@@ -4,12 +4,12 @@ Here you'll run your application on a VM running on Azure. MEAN supports many di
 
 ## Create an Ubuntu Linux VM
 
-Normally, you create a _resource group_ before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when you are working in your own Azure subscription, you would use the following command to create a resource group in a location near you.
+Normally, you create a _resource group_ before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when working in your own Azure subscription, you would run the following command to create a resource group in a location near you.
 
-> [!NOTE] 
->  The below example code is for you to use with your own account, not this sandbox!
+> [!NOTE]
+> The following code sample is for you to run with your own account, not this sandbox!
 
-```azurecli 
+```azurecli
 az group create \
   --name <resource-group-name> \
   --location <resource-group-location>
@@ -21,14 +21,14 @@ az group create \
     az vm create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name MeanStack \
-      --image Canonical:UbuntuServer:16.04-LTS:latest \
+      --image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
       --admin-username azureuser \
       --generate-ssh-keys
     ```
 
     The command takes about two minutes to complete. When the command finishes, you'll see output similar to this.
 
-    ```json 
+    ```json
     (Output Example)
     {
       "fqdns": "",
@@ -43,7 +43,7 @@ az group create \
     }
     ```
 
-    The VM's name is "MeanStack". You'll use this name in future commands to identify the VM you want to work with.
+    The VM's name is *MeanStack*. You'll use this name in future commands to identify the VM you want to work with.
 
 1. Open port 80 on the VM to allow incoming HTTP traffic to the web application you'll later create.
 
@@ -69,13 +69,13 @@ az group create \
       --output tsv)
     ```
 
-    Connect to your VM like this.
+1. Connect to your VM like this.
 
     ```bash
     ssh azureuser@$ipaddress
     ```
 
-    When prompted, answer "yes" to save the VM's identity locally so future connections are trusted.
+    When prompted, enter *yes* to save the VM's identity locally so future connections are trusted.
 
     You'll use the SSH connection to configure software on the virtual machine in the next parts.
 

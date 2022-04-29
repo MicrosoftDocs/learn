@@ -3,9 +3,9 @@ uid: learn.azure.azure-stack-hci-plan-deploy.3-plan
 metadata:
   title: Plan for Azure Stack HCI workloads
   description: An overview of planning for Azure Stack HCI workloads
-  ms.date: 12/09/2020
-  author: micrum
-  ms.author: micrum
+  ms.date: 03/24/2022
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
@@ -29,14 +29,14 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
 
-  - content: "What is the maximum round-trip latency supported for Azure Stack HCI stretched clusters?"
+  - content: "What does Network ATC do?"
     choices:
-    - content: "1"
+    - content: "Route network traffic between on-premises networks and Azure"
       isCorrect: false
-      explanation: "That's incorrect. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
-    - content: "5"
+      explanation: "That's incorrect. Network ATC doesn't route network traffic between on-premises networks and Azure. Rather, it deploys and maintains a consistent host network configuration across the cluster."
+    - content: "Deploy and maintain a consistent host network configuration across the cluster"
       isCorrect: true
-      explanation: "That's correct. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
-    - content: "250"
+      explanation: "That's correct. Network ATC deploys and maintains a consistent host network configuration across the cluster."
+    - content: "Create and manage virtual networks for workloads"
       isCorrect: false
-      explanation: "That's incorrect. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
+      explanation: "That's incorrect. Network ATC doesn't create and manage virtual networks for workloads. Rather, it deploys and maintains a consistent host network configuration across the cluster."

@@ -4,10 +4,11 @@ metadata:
   title: Set up your development environment
   description: Set up your development environment with starter code.
   ms.date: 06/15/2021
-  author: cassieview
+  author: cassiebreviu
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Set up your development environment
 durationInMinutes: 2
 content: |

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-key-vault.keys
+title: Create Key Vault keys
+metadata:
+  title: Create Key Vault keys
+  description: "Create Key Vault keys"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-keys.md)]

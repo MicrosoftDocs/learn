@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-azure-pipelines.understand-pipeline-structure
+title: Understand the pipeline structure
+metadata:
+  title: Understand the pipeline structure
+  description: "Understand the pipeline structure"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-understand-pipeline-structure.md)]

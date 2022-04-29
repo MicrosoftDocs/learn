@@ -5,8 +5,8 @@ metadata:
   title: Choose a message-based delivery with queues
   description: Choose a message-based delivery with queues
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

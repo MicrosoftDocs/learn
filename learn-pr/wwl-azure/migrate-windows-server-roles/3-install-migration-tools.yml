@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-windows-server-roles.install-migration-tools
+title: Install the Migration Tools
+metadata:
+  title: Install the Migration Tools
+  description: "Install the Migration Tools"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-install-migration-tools.md)]

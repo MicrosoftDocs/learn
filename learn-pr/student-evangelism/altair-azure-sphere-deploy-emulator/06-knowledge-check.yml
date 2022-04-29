@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "What does the Azure Sphere microcontroller consist of?"
+    choices:
+    - content: "Three developer-accessible cores, two high-level cores, and one real-time core"
+      isCorrect: false
+      explanation: "That answer is only partially correct."
+    - content: "Two developer-accessible cores, one high-level core, and one real-time core"
+      isCorrect: false
+      explanation: "That answer is only partially correct."
+    - content: "Three developer-accessible cores, one high-level core, and two real-time cores"
+      isCorrect: true
+      explanation: "That's the correct breakdown of cores for the Azure Sphere microcontroller."
+  - content: "The Altair emulator configuration requires which of the following?"
+    choices:
+    - content: "You must declare the ID scope of the Azure IoT Central application, the declaration of the Azure IoT Central and test.mosquitto.org network endpoints, and the Azure Sphere tenant ID."
+      isCorrect: true
+      explanation: "Correct. The ID scope, network endpoints, and Azure Sphere tenant ID are all needed."
+    - content: "Azure Sphere is secure by default, and you only need to declare the Azure IoT Central ID scope."
+      isCorrect: false
+      explanation: "There's more to declare than just the Azure IoT Central ID scope."
+    - content: "You only need to declare the Azure IoT Central ID scope and network endpoints in the capability section of the app_manifest.json file."
+      isCorrect: false
+      explanation: "There's more to declare than just the Azure IoT Central ID scope and the network endpoints."
+      

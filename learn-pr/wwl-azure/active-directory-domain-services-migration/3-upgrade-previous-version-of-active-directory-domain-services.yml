@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.active-directory-domain-services-migration.upgrade-previous-version-of-ad-ds-to-windows-server-2022
+title: Upgrade a previous version of Active Directory Domain Services to Windows Server 2022
+metadata:
+  title: Upgrade a previous version of Active Directory Domain Services to Windows Server 2022
+  description: "Upgrade a previous version of Active Directory Domain Services to Windows Server 2022"
+  ms.date: 12/10/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-upgrade-previous-version-of-active-directory-domain-services.md)]

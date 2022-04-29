@@ -3,9 +3,9 @@ uid: learn.run-docker-containers-aci.6-troubleshoot-aci
 metadata:
   title: Exercise - Troubleshoot Azure Container Instances
   description: Troubleshoot Azure Container Instances.
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 04/28/2022
+  author: v-tcassi
+  ms.author: tomcassidy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Troubleshoot Azure Container Instances

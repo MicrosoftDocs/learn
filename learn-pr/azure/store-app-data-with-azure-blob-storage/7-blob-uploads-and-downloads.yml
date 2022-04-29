@@ -4,11 +4,12 @@ title: Exercise - Blob uploads and downloads
 metadata:
   title: Exercise - Blob uploads and downloads
   description: Exercise - Blob uploads and downloads
-  ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 09/28/2021
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-java
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

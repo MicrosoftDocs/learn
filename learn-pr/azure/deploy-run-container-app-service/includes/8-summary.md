@@ -2,7 +2,7 @@ You can use Azure Container Registry to hold Docker images, and you can construc
 
 ## Clean up resources
 
-In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
+In this module, you created resources using your Azure subscription. You want to clean up these resources so that you won't continue to be charged for them.
 
    1. In Azure, select **Resource groups**.
 
@@ -18,4 +18,4 @@ In this module you created resources using your Azure subscription. You want to 
 - [Use a custom Docker image for Web App for Containers](/azure/app-service/containers/tutorial-custom-docker-image)
 - [Tutorial: Build and deploy container images in the cloud with Azure Container Registry Tasks](/azure/container-registry/container-registry-tutorial-quick-task)
 - [Tutorial: Automate container image builds in the cloud when you commit source code](/azure/container-registry/container-registry-tutorial-build-task)
-- [List of Azure CLI commands to manage private Azure Container Registries](/cli/azure/acr?view=azure-cli-latest)
+- [List of Azure CLI commands to manage private Azure Container Registries](/cli/azure/acr)

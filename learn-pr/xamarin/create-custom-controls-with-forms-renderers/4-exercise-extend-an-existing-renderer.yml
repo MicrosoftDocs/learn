@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Extend an existing renderer
   description: Exercise - Extend an existing renderer
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Exercise - Extend an existing renderer
 durationInMinutes: 10
 content: |

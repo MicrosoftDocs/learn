@@ -5,8 +5,8 @@ metadata:
   title: Diagnose issues by reviewing configurations and metrics
   description: Diagnose issues by reviewing configurations and metrics
   ms.date: 03/06/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

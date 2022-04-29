@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-set-visibility
+title: Position game objects and set visibility
+metadata:
+  title:  Position game objects and set visibility
+  description: Introduction to position game objects and set visibility
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-2-position-game-objects-set-visibility.md)]

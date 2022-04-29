@@ -71,3 +71,9 @@ The following video demonstrates how to deploy the DHCP Server role by using Win
 5. Complete installation of the role, and then Authorize the server in AD DS.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxT9j]
+
+---
+
+
+
+---

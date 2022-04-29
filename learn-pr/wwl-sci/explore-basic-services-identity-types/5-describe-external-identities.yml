@@ -4,12 +4,13 @@ title: Describe the types of external identities
 metadata:
   title: Describe the types of external identities
   description: "Describe the types of external identities"
-  ms.date: 06/16/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-describe-external-identities.md)]

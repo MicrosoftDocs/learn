@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/31/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "For multiple complete SAP HANA Large Instance stamps, is network communication possible directly between different tenants at the infrastructure stamp level?"
+    choices:
+    - content: "No."
+      isCorrect: true
+      explanation: "Correct. The network isolation of tenants prohibits network communication between tenants in the infrastructure stamp level, even if the tenants belong to the same customer."
+    - content: "Yes."
+      isCorrect: false
+      explanation: "Incorrect. The network isolation of tenants prohibits network communication between tenants in the infrastructure stamp level, even if the tenants belong to the same customer."
+    - content: "Only if both of the tenants belong to the same customer."
+      isCorrect: false
+      explanation: "Incorrect. The network isolation of tenants prohibits network communication between tenants in the infrastructure stamp level, even if the tenants belong to the same customer."
+  - content: "Which of the following isn't an SAP-certified operating system supported for SAP products on SAP HANA on Azure (Large Instances)?"
+    choices:
+    - content: "SUSE Linux Enterprise Server 12 for SAP Applications"
+      isCorrect: false
+      explanation: "Incorrect. SAP HANA is designed to run only on Linux-based systems, specifically versions of Red Hat Enterprise Linux and SUSE Linux Enterprise Server."
+    - content: "Red Hat Enterprise Linux 6.7 or 7.x for SAP HANA"
+      isCorrect: false
+      explanation: "Incorrect. SAP HANA is designed to run only on Linux-based systems, specifically versions of Red Hat Enterprise Linux and SUSE Linux Enterprise Server."
+    - content: "Microsoft Windows Server"
+      isCorrect: true
+      explanation: "Correct. SAP HANA is designed to run only on Linux-based systems, specifically versions of Red Hat Enterprise Linux and SUSE Linux Enterprise Server."
+  - content: "Where is the most up-to-date list of SAP-certified SAP HANA on Azure (Large Instances)?"
+    choices:
+    - content: "This training"
+      isCorrect: false
+      explanation: "Incorrect. The SAP HANA hardware directory is always the most up-to-date and reliable resource for information about SAP-certified SAP HANA on Azure (Large Instances)."
+    - content: "The SAP HANA hardware directory"
+      isCorrect: true
+      explanation: "Correct. The SAP HANA hardware directory is always the most up-to-date and reliable resource for information about SAP-certified SAP HANA on Azure (Large Instances)."
+    - content: "SAP HANA on Azure (Large Instances) articles on docs.microsoft.com"
+      isCorrect: false
+      explanation: "Incorrect. The SAP HANA hardware directory is always the most up-to-date and reliable resource for information about SAP-certified SAP HANA on Azure (Large Instances)."

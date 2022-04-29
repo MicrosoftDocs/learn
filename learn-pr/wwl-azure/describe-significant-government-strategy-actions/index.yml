@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.describe-significant-government-strategy-actions
+metadata:
+  title: Describe significant government strategy actions
+  description: "Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach."
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe significant government strategy actions
+summary: Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach.
+abstract: |
+  After completing this module, you'll be able to describe:
+  - The government's desire and approach to leveraging cloud computing technologies.
+  - The government's security requirements when planning, designing, implementing, and deploying cloud computing technologies.
+  - The government's intentions to ensure cloud computing technologies comply with its standards.
+  - How and why the government seeks to govern the usage of cloud computing technologies.
+prerequisites: |
+  - You should have an understanding of technology innovations since the year 1995.
+  - You should understand the consumers of private sector services (consumers) and public sector services (citizens).
+iconUrl: /learn/achievements/government-significant-strategy-actions.svg
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure-sovereign-us
+units:
+- learn.wwl.describe-significant-government-strategy-actions.introduction
+- learn.wwl.describe-significant-government-strategy-actions.understand-e-government-act-of-2002
+- learn.wwl.describe-significant-government-strategy-actions.describe-trusted-internet-connections
+- learn.wwl.describe-significant-government-strategy-actions.understand-federal-risk-authorization-management-program-fedramp
+- learn.wwl.describe-significant-government-strategy-actions.describe-federal-cloud-computing-strategy-of-2011
+- learn.wwl.describe-significant-government-strategy-actions.understand-continuous-diagnostics-mitigation-program-cdm
+- learn.wwl.describe-significant-government-strategy-actions.understand-department-defenses-designation-disa-as-dod-enterprise-cloud-se
+- learn.wwl.describe-significant-government-strategy-actions.describe-supplemental-guidance-department-of-defenses-acquisition-secu
+- learn.wwl.describe-significant-government-strategy-actions.describe-enterprise-information-technology-standard-business-ca
+- learn.wwl.describe-significant-government-strategy-actions.describe-department-instruction-cybersecurity
+- learn.wwl.describe-significant-government-strategy-actions.describe-updated-guidance-acquisition-use-of-cloud-computing-services
+- learn.wwl.describe-significant-government-strategy-actions.describe-federal-acquisition-regulation
+- learn.wwl.describe-significant-government-strategy-actions.understand-federal-information-technology-acquisition-reform-act
+- learn.wwl.describe-significant-government-strategy-actions.describe-office-of-management-budget-circular
+- learn.wwl.describe-significant-government-strategy-actions.understand-executive-order-13800
+- learn.wwl.describe-significant-government-strategy-actions.describe-federal-gov-it-modernization-report-of-2017
+- learn.wwl.describe-significant-government-strategy-actions.understand-memorandum-strengthening-cybersecurity-of-federal-agenc
+- learn.wwl.describe-significant-government-strategy-actions.describe-cybersecurity-infrastructure-security-agency-act-of-2018
+- learn.wwl.describe-significant-government-strategy-actions.understand-defense-cloud-strategy-of-20188
+- learn.wwl.describe-significant-government-strategy-actions.describe-digital-modernization-strategy-of-2019
+- learn.wwl.describe-significant-government-strategy-actions.describe-clarifying-lawful-overseas-use-of-data-act-cloud-of-2018
+- learn.wwl.describe-significant-government-strategy-actions.describe-memorandum-making-smarter-use-of-common-contract-solution
+- learn.wwl.describe-significant-government-strategy-actions.understand-2021-national-defense-authorization-act
+- learn.wwl.describe-significant-government-strategy-actions.explain-cybersecurity-maturity-model-certification-cmmc
+- learn.wwl.describe-significant-government-strategy-actions.knowledge-check
+- learn.wwl.describe-significant-government-strategy-actions.summary
+badge:
+  uid: learn.wwl.describe-significant-government-strategy-actions.badge

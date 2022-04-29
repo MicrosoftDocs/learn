@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-compute-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "A data scientist wants to train a deep learning model. To allow for experimentation with datasets and algorithms, which GPU compute should be made available to the data scientist?"
+    choices:
+    - content: "A low-priority compute cluster."
+      isCorrect: true
+      explanation: "That's correct. A low-priority compute cluster will automatically scale down when idle and is more cost-efficient than a dedicated cluster."
+    - content: "A dedicated compute cluster."
+      isCorrect: false
+      explanation: "That's incorrect. A dedicated cluster is not the most cost-efficient option."
+    - content: "A compute instance."
+      isCorrect: false
+      explanation: "That's incorrect. Though a compute instance may be more user-friendly for the data scientist, the instance doesn't automatically scale down when idle and may result in wasted resources."
+  - content: "Which approach should be used to monitor the GPU usage of a specific Azure Machine Learning run?"
+    choices:
+    - content: "Explore the metrics of the Azure Machine Learning workspace in the Azure portal."
+      isCorrect: false
+      explanation: "That's incorrect. The metrics in the portal will not show details for each run."
+    - content: "Explore the Details tab of the run in the Azure Machine Learning Studio."
+      isCorrect: false
+      explanation: "That's incorrect. The Details will show the compute duration for the run, but not the GPU usage."
+    - content: "Explore the Monitoring tab of the run in the Azure Machine Learning Studio."
+      isCorrect: true
+      explanation: "That's correct. The Monitoring tab will show the average GPU utilization for the run."

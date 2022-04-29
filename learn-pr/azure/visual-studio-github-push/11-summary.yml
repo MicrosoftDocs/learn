@@ -4,11 +4,13 @@ title: Summary
 metadata:
   title: Summary
   description: Review of what you learned about GitHub and Visual Studio
-  ms.date: 03/31/2021
+  ms.date: 02/25/2022
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
+  ms.custom: devdivchpfy22
 durationInMinutes: 2
 content: |
   [!include[](includes/11-summary.md)]
+  

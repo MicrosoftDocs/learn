@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/03/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   questions:
@@ -31,7 +32,7 @@ quiz:
       explanation: "Incorrect. Workload classification allows workload policies to be applied to requests through assigning resource classes and importance.."
     - content: "Workload importance."
       isCorrect: true
-      explanation: "Correct. Workload importance indexes write multiple data types and values per row of data and so compression functions are less likely to be able to reduce the size through pattern matching and offsets."
+      explanation: "Correct. Workload importance influences the order in which a request gets access to resources. On a busy system, a request with higher importance has first access to resources."
     - content: "Workload isolation."
       isCorrect: false
       explanation: "Incorrect. Workload isolation reserves resources for a workload group."

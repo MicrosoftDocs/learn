@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-versioning-strategy.understand-versioning-of-artifacts
+title: Understand versioning of artifacts
+metadata:
+  title: Understand versioning of artifacts
+  description: "Understand versioning of artifacts"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-understand-versioning-of-artifacts.md)]

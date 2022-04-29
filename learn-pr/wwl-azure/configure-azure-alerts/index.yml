@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-alerts
 metadata:
   title: Configure Azure alerts
   description: "You will learn how to configure Azure alerts including action groups."
-  ms.date: 07/26/2021
+  ms.date: 01/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Create alert rules and action groups.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-alerts-configure.svg
 levels:
 - intermediate
 roles:

@@ -4,14 +4,13 @@ title: Exercise - Translate text and speech
 metadata:
   title: Exercise - Translate text and speech
   description: "Exercise - Translate text and speech"
-  ms.date: 06/15/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 88766
-labModal: true
+labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-translate-text-use-azure.md)]

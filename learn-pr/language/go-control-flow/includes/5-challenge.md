@@ -13,14 +13,13 @@ First, write a program that prints numbers 1 through 100, with the following cha
 
 Try to use the `switch` statement.
 
-
 ## Find the primes
 
 Write a program to find all prime numbers less than 20. A prime number is any number greater than 1 that can be evenly divided only by itself and 1. To be "evenly divided" means, there's no remainder after the division operation. Like most programming languages, Go provides a way to check if a division operation produces a remainder. We can use the modulus `%` (percent sign) operator.
 
 In this exercise, you'll update a function named `findprimes` to check if a number is prime. The function has one integer argument and returns a boolean. The function tests if the input number is a prime by checking for a remainder. If the number is a prime, the function returns true. 
 
-Use the following code snippet as a starting point:
+Use the following code snippet as a starting point and replace all instances of `??` with the correct syntax:
 
 ```go
 package main
@@ -59,9 +58,7 @@ This program checks numbers 1 through 20, and prints the number if it's prime. M
 - In the `findprimes` loop, start from 2 and repeat until the counter is more than the `number` value.
 - Check if the `number` is evenly divisible by the current counter value. If it is, exit the loop.
 - When the `number` is prime, return true; otherwise, return false.
-- Where you see instances of `??` in the code, correct the syntax.
 - Hint: Be sure to correctly handle the case where the input number is 1.
-
 
 ## Ask a number, panic if negative
 

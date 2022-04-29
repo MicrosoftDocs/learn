@@ -8,13 +8,11 @@ Azure Data Factory will give you the opportunity to perform code-free Extract Tr
 
 When you are a data provider, you are enabled to share datasets with third parties or between departments within your organization. You can share data from multiple resources like an Azure SQL Database. You can also configure a snapshot schedule, so that your data consumers (the party that you want to share the data with) have an option to automatically get refreshed data.
 
-If you are a data consumer, you will get sent a dataset. On receiving a dataset, you need to accept an invitation that will be sent out by the data consumer. To receive the data, you can configure the storage account where you’re going to land the data that is shared with you. You can map the datasets to, for example, an Azure Data Lake Store Gen2 (ADLS Gen 2) account. It is also possible to trigger a snapshot to get a copy of the latest refresh of the data that was shared with you in the set-up of the ADLS Gen 2 account. 
+If you are a data consumer, you will get sent a dataset. On receiving a dataset, you need to accept an invitation that will be sent out by the data provider. To receive the data, you can configure the storage account where you’re going to land the data that is shared with you. You can map the datasets to, for example, an Azure Data Lake Store Gen2 (ADLS Gen 2) account. It is also possible to trigger a snapshot to get a copy of the latest refresh of the data that was shared with you in the set-up of the ADLS Gen 2 account. 
 
 To complete the following exercises, you must import the NYC Taxi Data dataset into a SQL Database. Download the taxi data bacpac file here: https://github.com/djpmsft/ADF_Labs/blob/master/sample-data/taxi-data.bacpac.
 
 ![Download bacpac file](../media/download-bacpack-file.png)
 
 
-A pop-up will appear and click **Save as**, and save the file to a folder on your machine. 
-
-Now that you understand how to receive data with Azure Data Share and transform with Azure Data Factory, in the next unit let’s get some hands-on practice sharing and receiving data.
+A pop-up will appear and click **Save as**, and save the file to a folder on your machine.

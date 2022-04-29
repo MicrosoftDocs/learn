@@ -42,7 +42,7 @@ Traditionally, NTFS has been the most common choice of the file system for the W
 
 Microsoft introduced ReFS in Windows Server 2012 to enhance the capabilities of NTFS. One of primary strengths of ReFS, as indicated by its name, is its enhanced resiliency to data corruption through a more accurate detection mechanism and the ability to remediate integrity issues online. ReFS also offers support for larger sizes of individual files and volumes, including their deduplication.
 
-In most cases, ReFS is the optimal file system choice for data volumes in Windows Server 2019. However, you should keep in mind that ReFS doesn't offer full feature parity with NTFS. For example, ReFS doesn't support file-level compression and encryption. It's also not suitable for boot volumes and removable media.
+In most cases, ReFS is the optimal file system choice for data volumes in Windows Server 2022. However, you should keep in mind that ReFS doesn't offer full feature parity with NTFS. For example, ReFS doesn't support file-level compression and encryption. It's also not suitable for boot volumes and removable media.
 
 ## What are sectors and allocation units?
 

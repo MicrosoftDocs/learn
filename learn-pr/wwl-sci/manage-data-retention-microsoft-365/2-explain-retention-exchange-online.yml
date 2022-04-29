@@ -4,12 +4,13 @@ title: Explain retention in Exchange Online
 metadata:
   title: Explain retention in Exchange Online
   description: "Explain retention in Exchange Online"
-  ms.date: 06/02/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explain-retention-exchange-online.md)]

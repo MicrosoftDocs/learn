@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-machine-learning-models-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/18/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Lucas has trained a model using Azure Databricks and now wants to serve it for real-time scoring. What should be the next action?"
+    choices:
+    - content: "Version the model."
+      isCorrect: false
+      explanation: "That's incorrect. Versioning the model helps to perform comparisons between different historical versions of models."
+    - content: "Transition the model to the archived stage."
+      isCorrect: false
+      explanation: "That's incorrect. Transitioning a model to the archived stage is done when the model is no longer intended for use, usually because it has been supplanted by a superior model version."
+    - content: "Register the model."
+      isCorrect: true
+      explanation: "That's correct. Registering a model with Mlflow allows you to serve the model for real-time scoring. It makes using the trained model easy as the serving process builds a wrapper and exposes a REST API for scoring automatically."
+  - content: "An MLflow run executes a Python script to train a model. The model is logged during the run but should also be registered. What should be included in the code to register the model during the run?"
+    choices:
+    - content: "`register_model`"
+      isCorrect: false
+      explanation: "That's incorrect. This method is used when registering a model directly from an experiment."
+    - content: "`registered_model_name`"
+      isCorrect: true
+      explanation: "That's correct. During a run, you can register a model by naming `registered_model_name`."
+    - content: "`log_model`"
+      isCorrect: false
+      explanation: "That's incorrect. This method is used to log artifacts but doesn't specify on itself that the model should be registered."
+  - content: "Hanna has Read permissions and wants to transition a model from Staging to Production through the Azure Databricks UI. What can someone with Read permissions do?"
+    choices:
+    - content: "Perform the transition."
+      isCorrect: false
+      explanation: "That's incorrect. She doesn't have enough permissions to perform the transition."
+    - content: "Request the transition."
+      isCorrect: true
+      explanation: "That's correct. Any user with Read permissions or better may request a transition."
+    - content: "She can only read the current stage."
+      isCorrect: false
+      explanation: "That's incorrect. With Read permissions or better you may still request a transition."

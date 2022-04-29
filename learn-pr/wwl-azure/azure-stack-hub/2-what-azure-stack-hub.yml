@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub.what-is
+title: What is Azure Stack Hub
+metadata:
+  title: What is Azure Stack Hub
+  description: "What is Azure Stack Hub"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-azure-stack-hub.md)]

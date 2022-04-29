@@ -7,13 +7,31 @@ Before you deploy HCX Connector in the on-premises vCenter, download the VMware 
 
 1. Search for and select the Azure VMware Solution private cloud in the Azure portal.
 
-1. Under **Manage**, select **Connectivity**.
+1. Under **Manage**, select **Add-ons**.
 
-1. Select the HCX tab to locate the IP address of the Azure VMware Solution HCX Cloud Manager.
+1. Select the **Migration using HCX** tab, place a check mark next to **I agree with terms and conditions**, and select **Enable and deploy**.
 
-    :::image type="content" source="../media/3-find-hcx-address.png" alt-text="Screenshot of where to find the HCX IP address in the Azure Resource Manager portal.":::
+    :::image type="content" source="../media/3-enable-deploy-hcx.png" alt-text="Screenshot displaying how to enable the HCX add-on within the Azure portal.":::
 
-1. Under **Manage**, select **Identity**.
+1. This action triggers a build of VMware HCX Advanced within the Azure VMware Solution private cloud.
+
+1. After the build completes, you should see a similar screen as what's shown below:
+
+    :::image type="content" source="../media/3-hcx-deployment-complete.png" alt-text="Screenshot displaying that the HCX add-on installed after enabling the service within the Azure VMware Solution private cloud.":::
+
+1. Within the Azure VMware Solution resource, under **Manage**, select **Add-ons** again.
+
+1. Underneath **Migration using HCX**, you should now see **HCX plan**, **Configure HCX appliance**, and **Connect with on-premise using HCX keys**. All of these new options for configuration built out during the HCX Advanced deployment on the private cloud.
+
+    :::image type="content" source="../media/3-migration-hcx-start.png" alt-text="Screenshot showing that the HCX add-on is enabled and that there are more options to configure after the add-on finishes installing.":::
+
+1. Underneath **Connect with on-premise using HCX keys**, select **+ Add** to generate a key that you'll use for the on-premises HCX Connector installation.
+
+1. Supply an HCX key name and you'll see the activation key show up within this pane. This is the key you'll use to activate the on-premises HCX Connector appliance.
+
+    :::image type="content" source="../media/3-add-hcx-key-portal.png" alt-text="Screenshot that shows where to add the HCX key in the Azure portal for use on-premises.":::
+
+1. Next, under **Manage** on the Azure VMware Solution private cloud, select **Identity**.
 
 1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager will appear. Use the copy feature to paste credential information into the web browser on the jump host VM.
 

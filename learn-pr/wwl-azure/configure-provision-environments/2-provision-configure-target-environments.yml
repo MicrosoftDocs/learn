@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-provision-environments.provision-configure-target-environments
+title: Provision and configure target environments
+metadata:
+  title: Provision and configure target environments
+  description: "Provision and configure target environments"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-provision-configure-target-environments.md)]

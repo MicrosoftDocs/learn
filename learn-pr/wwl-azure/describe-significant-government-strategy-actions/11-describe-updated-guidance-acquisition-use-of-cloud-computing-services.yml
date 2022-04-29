@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-updated-guidance-acquisition-use-of-cloud-computing-services
+title: Describe the Department of Defense's updated guidance on acquisition and use of cloud computing services
+metadata:
+  title: Describe the Department of Defense's updated guidance on acquisition and use of cloud computing services
+  description: "Describe the Department of Defense's updated guidance on acquisition and use of cloud computing services"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-describe-updated-guidance-acquisition-use-of-cloud-computing-services.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Enable OpenAPI documentation in an ASP.NET Core Web API app
   description: Practice enabling OpenAPI and Swashbuckle in an ASP.NET Core Web API app
   ms.date: 05/06/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

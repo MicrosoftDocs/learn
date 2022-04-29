@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of how to deploy and help secure a private MQTT broker.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/05-summary.md)]
