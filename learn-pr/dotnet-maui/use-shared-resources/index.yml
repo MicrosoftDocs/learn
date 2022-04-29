@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.use-shared-resources
+metadata:
+  moduleType: standard
+  title: "Design consistent .NET MAUI XAML pages by using shared resources"
+  description: "Learn how to use static and dynamic shared resources to build a MAUI user interface. And see how styles can make the user interface both consistent and accessible."
+  ms.date: 04/29/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+title: Design consistent .NET MAUI XAML pages by using shared resources
+summary: "Learn how to use shared resources and styles in .NET MAUI XAML"
+abstract: | 
+  By the end of this module, you'll be able to:
+    - Create and use static resources in a MAUI XAML user interface
+    - Create and use dynamic resources
+    - Create a consistent user interface by using styles
+    - Create and use application-wide resources
+    - Apply user accessibility choices by using built-in styles
+prerequisites: | 
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+iconUrl: /learn/achievements/use-shared-resources.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - student
+products:
+- vs
+- dotnet
+# - maui
+units:
+- learn.dotnet-maui.use-shared-resources.introduction
+- learn.dotnet-maui.use-shared-resources.define-and-use-resources
+- learn.dotnet-maui.use-shared-resources.exercise-use-page-level-resources
+- learn.dotnet-maui.use-shared-resources.use-and-update-dynamic-resources
+- learn.dotnet-maui.use-shared-resources.exercise-use-dynamic-resources-to-update-element
+- learn.dotnet-maui.use-shared-resources.create-a-consistent-ui-by-using-styles
+- learn.dotnet-maui.use-shared-resources.exercise-create-and-apply-a-style
+- learn.dotnet-maui.use-shared-resources.create-and-use-application-wide-resources
+- learn.dotnet-maui.use-shared-resources.exercise-use-application-wide-resources
+- learn.dotnet-maui.use-shared-resources.apply-user-accessibility-choices-by-using-built-in-styles
+- learn.dotnet-maui.use-shared-resources.summary
+badge:
+  uid: learn.dotnet-maui.use-shared-resources.badge
