@@ -46,7 +46,7 @@ Using a single Azure SQL Database service will suit many business requirements t
 
 ## Azure SQL Database managed instance
 
-For organizations looking to migrate large numbers of SQL Server databases from on-premises, with as low effort as possible, managed instance provides a simple, secure, and economical migration destination. Managed instances offer broad SQL Server compatibility and network isolation making it easy to lift-and-shift SQL Server databases to Azure. You can now backup an on-premise database and restore it into an Azure SQL Database managed instance. Built on the same fully managed service offering infrastructure as Azure SQL Database and maintaining all the Azure SQL Database features. It also adds support for database sizes up to 8 TB and SQL Server features like SQL Agent, cross-database querying, and replication.
+For organizations looking to migrate large numbers of SQL Server databases from on-premises, with as low effort as possible, managed instance provides a simple, secure, and economical migration destination. Managed instances offer broad SQL Server compatibility and network isolation making it easy to lift-and-shift SQL Server databases to Azure. You can now backup an on-premises database and restore it into an Azure SQL Database managed instance. Built on the same fully managed service offering infrastructure as Azure SQL Database and maintaining all the Azure SQL Database features. It also adds support for database sizes up to 8 TB and SQL Server features like SQL Agent, cross-database querying, and replication.
 
 Using Azure SQL Database managed instance brings about the following benefits:
 

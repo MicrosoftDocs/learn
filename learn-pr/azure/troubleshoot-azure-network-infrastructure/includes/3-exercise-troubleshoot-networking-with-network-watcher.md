@@ -14,20 +14,22 @@ Let's start by creating the infrastructure. We'll also purposely be creating a c
 
 1. Open the directory in which you want to create resources.
 
+1. Select **Bash** in the top left of the **Cloud Shell** menu bar.
+
 1. List the supported regions for your subscription.
 
     ```azurecli
     az account list-locations
     ```
 
-1. Create a resource group and assign it to the variable name **RG** by running the following code, replacing `<resource group name>` with a name for your resource group, and `<name>` with the *name* of the region from previous output.
+1. Create a resource group and assign it to the variable name **RG** by running the following code, replacing `<resource group name>` with a name for your resource group, and `<name>` with the *name* of a region from the previous output.
 
     ```azurecli
     az group create --name <resource group name> --location <name>
     RG=<resource group name>
     ```
 
-1. Create a virtual network named **MyVNet1** with a subnet named **FrontendSubnet**by running this command.
+1. Create a virtual network named **MyVNet1** with a subnet named **FrontendSubnet** by running this command.
 
     ```azurecli
     az network vnet create \
@@ -56,7 +58,7 @@ Let's start by creating the infrastructure. We'll also purposely be creating a c
         --name FrontendVM \
         --vnet-name MyVNet1 \
         --subnet FrontendSubnet \
-         --image Win2019Datacenter \
+        --image Win2019Datacenter \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -139,7 +141,7 @@ Let's start by creating the infrastructure. We'll also purposely be creating a c
 
 ## Enable Network Watcher for your region
 
-Now, let's use Azure CLI to set up Network Watcher in the same region as the infrastructure. 
+Now, let's use Azure CLI to set up Network Watcher in the same region as the infrastructure.
 
 1. Enable Network Watcher by running this command, replacing `<location>` with the Azure region you used when you created your resource group at the beginning of this session.
 
@@ -183,7 +185,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. For Test group name, enter **Back-to-front-HTTP-test-group**.
+1. For Test group name, enter *Back-to-front-HTTP-test-group*.
 
 1. In the **Sources** box, select **Add sources**. The **Add Sources** pane appears. 
  
@@ -216,7 +218,7 @@ The topology appears to be correct. To get more information, let's set up some t
 1. Select **Add Test configuration** to add this test configuration to your test group.  The **Add test group details** reappears with your test configuration identified.
 
 1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. 
- 
+
 1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
@@ -229,15 +231,15 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. On the **Test groups** tab, notice that your test group is listed with source as backend and destination as frontend.
 
-1. Select **Review + create**.
+1. Select **Review + create** and **Create**.
 
-The results should show that, because the NSG is associated with the backend subnet, traffic flows without issues from the backend VM to the frontend VM.
+If your test does not appear on the **Connection Monitor** pane, select the **Refresh** button. The results of the Back-to-front-HTTP-test should show that, because the NSG is associated with the backend subnet, traffic flows without issues from the backend VM to the frontend VM.
 
 ## Use Connection Monitor to run tests from the frontend to the backend
 
 Run the same test in the opposite direction. Let's set up another test in Connection Monitor. Start by creating a test from the frontend VM to the backend VM.
 
-1. On the **Connection Monitor** pane, select **Create** twice.
+1. On the **Connection Monitor** pane, select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -249,13 +251,13 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. In **Test group name**, enter 'Front-to-back-HTTP-test-group', then select **Add sources** in the Sources box. The **Add Sources** pane appears. 
+1. In **Test group name**, enter *Front-to-back-HTTP-test-group*, then select **Add sources** in the Sources box. The **Add Sources** pane appears. 
 
 1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**, and then select **FrontendVM** from the list.
 
-1. Select **Add endpoints**. The **Add test group details** pane reappears. Add FrontendSubnet for the source endpoint name.
+1. Select **Add endpoints**. The **Add test group details** pane reappears. Select **Edit** and change the source endpoint name to *FrontendSubnet*.
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 
@@ -272,7 +274,7 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 1. Select **Add Test configuration**. The **Add test group details** reappears with your test configuration identified.
 
 1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears. 
- 
+
 1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
@@ -285,7 +287,9 @@ Run the same test in the opposite direction. Let's set up another test in Connec
 
 1. On the **Test groups** tab, notice that your Front-to-back-HTTP-test-group is now listed.
 
-The results should show that, because the NSG is associated with the backend subnet, no traffic flows from the frontend VM to the backend VM.
+1. Select **Review + create** and **Create**.
+
+If your test does not appear on the **Connection Monitor** pane, select the **Refresh** button. The results of the Front-to-back-HTTP-test should show that, because the NSG is associated with the backend subnet, no traffic flows from the frontend VM to the backend VM.
 
 ## Use IP flow verify to test the connection
 

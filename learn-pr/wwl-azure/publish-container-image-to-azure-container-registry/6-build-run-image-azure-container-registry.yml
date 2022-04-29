@@ -4,13 +4,12 @@ title: 'Exercise: Build and run a container image by using Azure Container Regis
 metadata:
   title: 'Exercise: Build and run a container image by using Azure Container Registry Tasks'
   description: "Exercise: Build and run a container image by using Azure Container Registry Tasks"
-  ms.date: 12/21/2021
+  ms.date: 04/28/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
