@@ -3,7 +3,7 @@ uid: learn.wwl.describe-significant-government-strategy-actions
 metadata:
   title: Describe significant government strategy actions
   description: "Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach."
-  ms.date: 03/11/2022
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
   ms.topic: interactive-tutorial
@@ -20,7 +20,6 @@ prerequisites: |
   - You should have an understanding of technology innovations since the year 1995.
   - You should understand the consumers of private sector services (consumers) and public sector services (citizens).
 iconUrl: /learn/achievements/government-significant-strategy-actions.svg
-hidden: true
 levels:
 - beginner
 roles:
