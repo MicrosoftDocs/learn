@@ -5,6 +5,8 @@
     3. Understand what you need to do/where you need to start for any data type.
 -->
 
+# Register and scan
+
 Now that \<Corporation Name> has a Microsoft Purview account and created collections that reflect their business structure, the next step to understanding their data is to connect Microsoft Purview to their data sources and giving Microsoft Purview access to process these sources.
 
 This connection is a two step process in Microsoft Purview:
@@ -18,11 +20,11 @@ This is how your data map and data catalog are populated, and all of Microsoft P
 
 ## Registration
 
-Registering a data source tells Microsoft Purview where to find that data source, and associates your source to one of your collections. Think of it as providing an address book for your collection.  This doesn't affect the data in the source: your data remains in it's current location. 
+Registering a data source tells Microsoft Purview where to find that data source, and associates your source to one of your collections. Think of it as providing an address book for your collection.  This doesn't affect the data in the source: your data remains in it's current location.
 
 You'll want to chose a collection that relates your data source to its logical location in your organization. Where that will be depends on how you've structured your collections.
 
-In our example \<Corporation Name> has \<these collections>. Registering a resource to \<restricted low level collection> will restrict discovery to that priveleged group, which may be useful for sensitived data repositories. Registering the resource to \<higher level collection> will allow all users in that \<region or organization> to discover and use the data source. This would be useful for general data used by many teams for reporting.
+In our example \<Corporation Name> has \<these collections>. Registering a resource to \<restricted low level collection> will restrict discovery to that privileged group, which may be useful for sensitive data repositories. Registering the resource to \<higher level collection> will allow all users in that \<region or organization> to discover and use the data source. This would be useful for general data used by many teams for reporting.
 
 When you're choosing which collection to register your data source to, consider who might want to access it, the sensitivity of the data, and useability of the data.
 
@@ -51,7 +53,6 @@ Scanning is the process Microsoft Purview uses to access your data sources to ga
 
 This will allow you to audit and govern your data sources without having to manually investigate each individual file and source.
 
-
 ### Authentication
 
 While the registration process was straight forward, the scanning process is a little more complex. Registration only required the connection information, or the address, of your data source. Scanning requires that Microsoft Purview is able to authenticate directly with your data source to be able to access the metadata and schema information. Again, this does not affect the data in the source, or move it, but it does require that Microsoft Purview has permissions to the source. Depending on your network and security, this can be a complex process. You can store the credentials in an Azure Key Vault for security and ease of access by your scan rules.
@@ -64,9 +65,9 @@ For authentication within Azure there are several options available:
 - Account Key (using Key Vault)
 - Service Principal (using Key Vault)
 
-If you're enabling connectivity for the first time, it can be difficult to choose between these different kinds of authenitcation. Each source will have its own best practices, that you can find in the documentation, but here are some good general guidelines:
+If you're enabling connectivity for the first time, it can be difficult to choose between these different kinds of authentication. Each source will have its own best practices, that you can find in the documentation, but here are some good general guidelines:
 
-- **Microsoft Purview system or user assigned Managed Identity** - This authentication method is usually the recommended method for Azure sources, and is one of the most straight-forward authentication methods between Azure resources. A managed identity is an indentity in active directory that can be assigned roles just like a user or a group, but rather than being associated with a person, it is associated directly with an Azure resource. In this instance, Microsoft Purview. This allowes Microsoft Purview to directly authenticate against your resource, rather than using a go-between identity. This allows you assign permissions to your Microsoft Purview account, instead of needing to manage a separate role. A system-assigned managed identity is created automatically when a resource is deployed. User-assigned managed identities can be used in the same way, but are user created, assigned, and managed, rather than being managed by Azure.
+- **Microsoft Purview system or user assigned Managed Identity** - This authentication method is usually the recommended method for Azure sources, and is one of the most straight-forward authentication methods between Azure resources. A managed identity is an identity in active directory that can be assigned roles just like a user or a group, but rather than being associated with a person, it is associated directly with an Azure resource. In this instance, Microsoft Purview. This allows Microsoft Purview to directly authenticate against your resource, rather than using a go-between identity. This allows you assign permissions to your Microsoft Purview account, instead of needing to manage a separate role. A system-assigned managed identity is created automatically when a resource is deployed. User-assigned managed identities can be used in the same way, but are user created, assigned, and managed, rather than being managed by Azure.
 
 - **Service Principal** - A service principal is a good option if you need a single role to authenticate against multiple resources in your Azure subscription. A service principal is an application that functions as an identity that you can use to authenticate against Azure resources. Once it is created, you can assign roles to a service principal like you would for any user or group. One benefit of using a service principal, is that it has certificates and secrets that can be set to expire after a set time limit.
 
@@ -77,10 +78,10 @@ Once you've decided on authentication method and gathered the connection informa
 <!-- SCREENSHOT -->
 
 Initially you will be able to input your credentials and test your connection. Often this is where users run into trouble. If you do:
+
 1. Check your credentials to confirm that they are correct.
 1. Check documentation for your source to confirm any special cases or unsupported scenarios.
 1. Confirm network connectivity between Azure and your source. Source documentation should have further information to check this connection as well.
-
 
 ### Scanning 
 
@@ -92,29 +93,28 @@ The **scope** of a scan determines what parts of a data source you want to scan.
 
 Choosing a subset of folders might be useful if your organization has a single data lake that is organized by team or effort. The scope will be dependant on the data source type.
 
-
 The **scan rule set** is a set of instructions that allow you customize the kinds of data that will have their metadata and schema extracted, as well as the kinds of data that will be extracted.
 
 For example, the default Data Lake scan rule set extracts metadata from these kinds of files:
 
 CSV, JSON, PSV, SSV, TSV, GZIP, TXT, XML, PARQUET, AVRO, ORC, DOC, DOCM, DOCX, DOT, ODP, ODS, ODT, PDF, POT, PPS, PPSX, PPT, PPTM, PPTX, XLC, XLS, XLSB, XLSM, XLSX, XLT
 
-It also tags data with all availalbe classifications. This can be useful for broad-spectrum scanning. But if you are storing a certain kind of information, or only a certain file type, you can streamline the scanning process by creating a custom scan rule set. This allows you to choose file and data types to extract metadata from during a scan, as well as classification types you're looking for. For example, if your data is only for customers in the Americas, you can use a custom scan rule set to exclue European drivers license number from your scan, as your data won't contain that information.
+It also tags data with all available classifications. This can be useful for broad-spectrum scanning. But if you are storing a certain kind of information, or only a certain file type, you can streamline the scanning process by creating a custom scan rule set. This allows you to choose file and data types to extract metadata from during a scan, as well as classification types you're looking for. For example, if your data is only for customers in the Americas, you can use a custom scan rule set to exclude European drivers license number from your scan, as your data won't contain that information.
 
-The **schedule** of your scan will determine how often your scan will run. This is an important descision as scanning is how your Microsoft Purview data catalog maintains an accurate understanding of your data landscape, but Microsoft Purview is also billed by compute power used during scanning.
+The **schedule** of your scan will determine how often your scan will run. This is an important decision as scanning is how your Microsoft Purview data catalog maintains an accurate understanding of your data landscape, but Microsoft Purview is also billed by compute power used during scanning.
 
 There are two types of scans: Once and reoccurring.
 
 - **Once** - This scan will only run one time and is useful for proof of concept scenarios, or for legacy datasets that will remain completely unchanged.
-- **Recurring** - This scan will be set to run on a schedule, either monthly or weekly, at a specific time. Schedule a reoccuring scan for data sets that are regularly updated or changing. This will allow you to maintain an accurate picture of your data landscape, and audit sensitive data.
+- **Recurring** - This scan will be set to run on a schedule, either monthly or weekly, at a specific time. Schedule a recurring scan for data sets that are regularly updated or changing. This will allow you to maintain an accurate picture of your data landscape, and audit sensitive data.
 
 Here are some best practices to consider when scheduling your scan:
+
 - Run scans during non-business or off-peak hours to avoid process overhead.
 - For some sources, when using a recurring scan, the first scan scans the entire source, but all scans after that scan only new or updated information.
 - Scan frequency should align with your change management schedule for a source.
 
-
-Once you have determined your scope, rule set, and schedule select save and run and your scan will begin running. 
+Once you have determined your scope, rule set, and schedule select save and run and your scan will begin running.
 
 <!-- SCREENSHOT -->
 
