@@ -7,11 +7,11 @@ We'll need to apply some fundamental OOP concepts, such as classes, objects, and
 
 ## What is an object?
 
-The concept of objects has been mentioned a few times already as part of trying to _model_ problem domains. An object is an actor. It's something that does something within a system. As a result of taking an action, it changes state within itself or other objects.
+The concept of objects has been mentioned a few times already as part of trying to *model* problem domains. An object is an actor. It's something that does something within a system. As a result of taking an action, it changes state within itself or other objects.
 
 Let's imagine an object in the real world. You're in a car park; what do you see? You're likely to see many cars, in different shapes, sizes, and colors. To describe a car, you can use properties like make, model, color, and type of car. If you assign values to these properties, it quickly becomes clear whether you're talking about a red Ferrari, or a four-wheel-drive Jeep, or a yellow Mustang, and so on.
 
-:::image type="content" source="../media/car.png" alt-text="Visualization that shows a car object with the properties color and make.":::
+:::image type="content" source="../media/car.png" alt-text="Visualization that shows a car object with the properties color and make." border="false":::
 
 In another scene, picture a deck of cards in Las Vegas. You look at two different cards, which are two objects. You realize they have some common properties, namely, suit. The suit for the objects can be clubs, hearts, diamonds, or spades. Their values can be ace, king, nine, and so on.
 
@@ -36,7 +36,7 @@ Here's a table of some examples of classes and their resulting objects:
 
 The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object, your program asks the operating system for resources, namely memory, to be able to construct the object. Conversely, when a car is made from a blueprint, the factory asks for resources like metal, rubber, and glass to be able to assemble the car.
 
-:::image type="content" source="../media/car-assembly.png" alt-text="Visualization that shows assembling a car in a factory.":::	
+:::image type="content" source="../media/car-assembly.png" alt-text="Visualization that shows assembling a car in a factory." border="false":::	
 
 ## Create a class
 
@@ -82,7 +82,7 @@ Many program languages have the notion of a constructor, the special function th
 In Python, the constructor has the name `__init()__`. You also need to pass a special keyword, `self`, as a parameter to the constructor. The keyword `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self`, it will instead be treated as a temporary variable that won't exist after `__init()__` is done executing.
 
 > [!NOTE]
-> They keyword `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
+> The keyword `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
 
 ### Add and initialize attributes on a class
 

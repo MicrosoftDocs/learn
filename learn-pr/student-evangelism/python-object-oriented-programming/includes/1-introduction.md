@@ -11,3 +11,16 @@ After you complete this module, you'll be able to:
 - Model problems by using OOP concepts
 - Describe the basic concepts involved in OOP
 - Distinguish classes from objects
+
+## Prerequisites
+
+- Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console
+- Familiarity with using a text editor or IDE  
+- Knowledge on how to execute a Python program
+- Python keywords
+- Knowing how to raise exceptions in Python
+
+You can use the following resources to improve your knowledge of Python:
+
+- [Introduction to Python](/learn/student-evangelism/intro-to-python?azure-portal=true)
+- [Python for beginners](learn/paths/beginner-python?azure-portal=true)
