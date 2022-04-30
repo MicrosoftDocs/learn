@@ -30,18 +30,18 @@ When you're choosing which collection to register your data source to, consider 
 
 Once you've decided on a collection, we can register the data source from within the Microsoft Purview Governance Portal by going to the Data Map and selecting **Register**
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.01-register-source.png" alt-text="Register a data source":::
 
 Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. For any one of these data sources, information is needed to be able to register the source, and different information is required depending on the source. For example, if your data source resides in your Azure subscription, you will choose the necessary subscription, storage source name, and the collection where it will reside.
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.02-register-adls.png" alt-text="Register Azure Data Lake Storage Gen2 source":::
 
 For all data sources available in Microsoft Purview, requirements for registration depend on where the data is located, and what information is needed to build a connection. Each source page in the documentation will tell you what information you'll need.
 For example, sources in Azure typically require a subscription ID and the name of the resource, while data stored in Amazon S3 bucket requires a bucket URL.
 
 Once you have provided these details and select **Register** your data source will be listed under your selected collection.
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.03-data-source.png" alt-text="Data source":::
 
 ## Scanning
 
@@ -75,7 +75,7 @@ If you're enabling connectivity for the first time, it can be difficult to choos
 
 Once you've decided on authentication method and gathered the connection information, you can authenticate with your source through the Azure Portal. In your Data Map in the Microsoft Purview Governance Portal, select your data source and select **New Scan**.
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.04-new-scan.png" alt-text="New scan":::
 
 Initially you will be able to input your credentials and test your connection. Often this is where users run into trouble. If you do:
 
@@ -89,7 +89,7 @@ Once your credentials are successfully validated, it's time to set up your scan.
 
 The **scope** of a scan determines what parts of a data source you want to scan. For example, in Data Lake you can choose to scan an entire data lake, or a subset of folders.
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.05-scope-scan.png" alt-text="Scope your scan":::
 
 Choosing a subset of folders might be useful if your organization has a single data lake that is organized by team or effort. The scope will be dependant on the data source type.
 
@@ -116,11 +116,11 @@ Here are some best practices to consider when scheduling your scan:
 
 Once you have determined your scope, rule set, and schedule select save and run and your scan will begin running.
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.06-run-scan.png" alt-text="Save and run scan configuration":::
 
 Depending on the size of your data source and the scope of your scan, a scan can take a long time to run. You can check its progress in your data source details.
 
-<!-- SCREENSHOT -->
+:::image type="content" source="../media/08.07-scan-details.png" alt-text="View scan details":::
 
 Select Refresh to periodically update the status of the scan.
 
