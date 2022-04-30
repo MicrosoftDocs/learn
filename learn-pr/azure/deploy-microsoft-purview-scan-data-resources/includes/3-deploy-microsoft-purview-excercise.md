@@ -1,3 +1,5 @@
+# Exercise - Deploy a Microsoft Purview Account
+
 In this unit, you will use the Azure portal to create a Microsoft Purview account.
 
 1. Sign in to the Azure portal, expand the portal menu and click **Create a resource**.  
@@ -7,11 +9,11 @@ In this unit, you will use the Azure portal to create a Microsoft Purview accoun
 ![Create Microsoft Purview account](../media/01.02-create-purview.png)
 
 3. Provide the necessary inputs on the **Basics** tab.
-* Select an existing Azure susbcription.
-* Select an existing resource group or create a new resource group.
-* Enter a globally unique Microsoft Purview account name.
-* Select a location.
-* Optionally, overwrite the auto-generated managed resource group name.  
+    * Select an existing Azure subscription.
+    * Select an existing resource group or create a new resource group.
+    * Enter a globally unique Microsoft Purview account name.
+    * Select a location.
+    * Optionally, overwrite the auto-generated managed resource group name.  
 ![Microsoft Purview account creation - Basic tab](../media/01.03-create-basic.png)
 
 4. On the **Networking** tab, select **All networks**.  

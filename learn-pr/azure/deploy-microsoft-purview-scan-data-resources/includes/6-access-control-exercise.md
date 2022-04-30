@@ -1,3 +1,5 @@
+# Exercise - Access Control
+
 In this unit, you will use the Microsoft Purview Governance Portal to provide a user within your Azure Active Directory read access to the data catalog.
 
 1. On the left-hand size of Microsoft Purview Governance Portal, navigate to **Data map**.  
