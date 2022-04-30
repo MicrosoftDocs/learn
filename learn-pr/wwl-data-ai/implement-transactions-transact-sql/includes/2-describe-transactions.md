@@ -20,7 +20,7 @@ The keywords BEGIN TRANSACTION and either COMMIT or ROLLBACK start and end each 
 
 A transaction is started when the previous transaction has completed. Each transaction is explicitly completed with a COMMIT or ROLLBACK statement.
 
-## ACID semantics
+## ACID characteristics
 Online Transactional Processing (OLTP) systems require transactions to meet "ACID" characteristics:
 * **Atomicity** – each transaction is treated as a single unit, which succeeds completely or fails completely. For example, a transaction that involved debiting funds from one account and crediting the same amount to another account must complete both actions. If either action can't be completed, then the other action must fail.
 * **Consistency** – transactions can only take the data in the database from one valid state to another. To continue the debit and credit example above, the completed state of the transaction must reflect the transfer of funds from one account to the other.
