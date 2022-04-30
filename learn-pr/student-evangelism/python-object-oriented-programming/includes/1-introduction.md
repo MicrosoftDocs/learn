@@ -23,4 +23,4 @@ After you complete this module, you'll be able to:
 You can use the following resources to improve your knowledge of Python:
 
 - [Introduction to Python](/learn/student-evangelism/intro-to-python?azure-portal=true)
-- [Python for beginners](learn/paths/beginner-python?azure-portal=true)
+- [Python for beginners](/learn/paths/beginner-python?azure-portal=true)
