@@ -3,9 +3,9 @@ uid: learn.wwl.modify-data-with-transact-sql
 metadata:
   title: Modify data with T-SQL
   description: "Modify data with T-SQL"
-  ms.date: 06/30/2021
+  ms.date: 04/29/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Modify data with T-SQL
