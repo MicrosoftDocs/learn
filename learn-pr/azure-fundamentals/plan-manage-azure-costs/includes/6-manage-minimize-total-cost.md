@@ -28,11 +28,11 @@ For example, when you spend all the credit included with your Azure free account
 
 If you have a credit-based subscription and you reach your configured spending limit, Azure suspends your subscription until a new billing period begins.
 
-A related concept is _quotas_, or limits on the number of similar resources you can provision within your subscription. For example, you can allocate up to 25,000 VMs per region. These limits mainly help Microsoft plan its datacenter capacity.
+A related concept is *quotas*, or limits on the number of similar resources you can provision within your subscription. For example, you can allocate up to 25,000 VMs per region. These limits mainly help Microsoft plan its datacenter capacity.
 
 ## Use Azure Reservations to prepay
 
-Azure Reservations offers discounted prices on certain Azure services. Azure Reservations can save you up to 72 percent as compared to pay-as-you-go prices. To receive a discount, you reserve services and resources by paying in advance.
+Azure Reservations offers discounted prices on certain Azure services. Azure Reservations can save you up to 72 percent as compared to pay-as-you-go prices. To receive a discount, you can reserve services and resources by paying in advance.
 
 For example, you can prepay for one year or three years of use of VMs, database compute capacity, database throughput, and other Azure resources.
 
@@ -86,9 +86,9 @@ Azure Cost Management + Billing features include:
 
 ## Apply tags to identify cost owners
 
-_Tags_ help you manage costs associated with the different groups of Azure products and resources. You can apply tags to groups of Azure resources to organize billing data.
+*Tags* help you manage costs associated with the different groups of Azure products and resources. You can apply tags to groups of Azure resources to organize billing data.
 
-For example, if you run several VMs for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Test or Production.
+For example, if you run several VMs for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance; or by environment, such as Test or Production.
 
 Tags make it easier to identify groups that generate the biggest Azure costs, which can help you adjust your spending accordingly.
 
@@ -112,7 +112,7 @@ Keep in mind that resizing a VM requires it to be stopped, resized, and then res
 
 ## Deallocate virtual machines during off hours
 
-Recall that to _deallocate_ a VM means to no longer run the VM, but preserve the associated hard disks and data in Azure.
+Recall that to *deallocate* a VM means to no longer run the VM, but preserve the associated hard disks and data in Azure.
 
 If you have VM workloads that are only used during certain periods, but you're running them every hour of every day, you're wasting money. These VMs are great candidates to shut down when not in use and start back when you need them, saving you compute costs while the VM is deallocated.
 
@@ -126,7 +126,7 @@ Regularly review your environment, and work to identify these systems. Shutting 
 
 ## Migrate from IaaS to PaaS services
 
-As you move your workloads to the cloud, a natural evolution is to start with infrastructure as a service (IaaS) services because they map more directly to concepts and operations you're already familiar with.
+As you move your workloads to the cloud, a natural evolution is to start with infrastructure as a service (IaaS) services, because they map more directly to concepts and operations you're already familiar with.
 
 Over time, one way to reduce costs is to gradually move IaaS workloads to run on platform as a service (PaaS) services. While you can think of IaaS as direct access to compute infrastructure, PaaS provides ready-made development and deployment environments that are managed for you.
 
@@ -136,7 +136,7 @@ Not only are PaaS services such as Azure SQL Database often less expensive to ru
 
 ## Save on licensing costs
 
-Licensing is another area that can dramatically impact your cloud spending. Let's look at some ways you can reduce your licensing costs.
+Licensing is another area that can dramatically affect your cloud spending. Let's look at some ways you can reduce your licensing costs.
 
 ### Choose cost-effective operating systems
 
@@ -146,4 +146,4 @@ Many Azure services provide a choice of running on Windows or Linux. In some cas
 
 If you've purchased licenses for Windows Server or SQL Server, and your licenses are covered by [Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default?azure-portal=true), you might be able to repurpose those licenses on VMs on Azure.
 
-Some of the details vary between Windows Server or SQL Server. We'll provide resources at the end of this module where you can learn more.
+Some of the details vary between Windows Server or SQL Server. We'll provide resources for you to learn more at the end of this module.
