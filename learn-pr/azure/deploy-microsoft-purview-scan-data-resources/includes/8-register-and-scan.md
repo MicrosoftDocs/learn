@@ -26,7 +26,7 @@ In our example \<Corporation Name> has \<these collections>. Registering a resou
 
 When you're choosing which collection to register your data source to, consider who might want to access it, the sensitivity of the data, and useability of the data.
 
-Once you've decided on a collection, we can register the data source from within the Microsoft Purview studio by going to the Data Map and selecting **Register**
+Once you've decided on a collection, we can register the data source from within the Microsoft Purview Governance Portal by going to the Data Map and selecting **Register**
 
 <!-- SCREENSHOT -->
 
@@ -72,7 +72,7 @@ If you're enabling connectivity for the first time, it can be difficult to choos
 
 - **Account Key** - for storage accounts in Azure, an account key gives you general access to a storage account without needing to provide authorization to a specific role or user. These keys can be rotated and regenerated to maintain security for your storage accounts. Account keys can be useful to securely manage broad-spectrum access across multiple applications without needing to provide roles for individual users.
 
-Once you've decided on authentication method and gathered the connection information, you can authenticate with your source through the Azure Portal. In your Data Map in the Microsoft Purview Studio, select your data source and select **New Scan**.
+Once you've decided on authentication method and gathered the connection information, you can authenticate with your source through the Azure Portal. In your Data Map in the Microsoft Purview Governance Portal, select your data source and select **New Scan**.
 
 <!-- SCREENSHOT -->
 
