@@ -4,14 +4,14 @@ The first step in creating a holistic, up-to-date map of your data landscape, is
 
 ## Microsoft Purview account name
 
-The name of the Microsoft Purview account. This name is used to programmatically access the Microsoft Purview account and cannot be changed. The Microsoft Purview account name must be:
+The Microsoft Purview account name is used to programmatically access the Microsoft Purview account and cannot be changed. When creating a Microsoft Purview account, the name must adhere to the following restrictions:
 
 * Globally unique
 * Can contain only letters, numbers and hyphens
 * The first and last characters must be a letter or number
 * Spaces are not allowed
 
-![Microsoft Purview account name](../media/03.01-purview-account-name.png)
+:::image type="content" source="../media/03.01-purview-account-name.png" alt-text="Microsoft Purview account name":::
 
 ## Managed resources
 
@@ -20,13 +20,13 @@ Microsoft Purview provisions a storage account and an Azure Event Hubs account a
 * The name of the managed resource group will be auto-generated but can be changed during the Microsoft Purview account creation process.
 * The names of the storage account and Azure Event Hubs namespace will be auto-generated during account creation and cannot be changed.
 
-![Microsoft Purview managed resources](../media/03.02-purview-managed-resources.png)
+:::image type="content" source="../media/03.02-purview-managed-resources.png" alt-text="Microsoft Purview managed resources":::
 
 ## Microsoft Purview Data Map
 
 The Microsoft Purview Data Map is central to the Microsoft Purview service as it is responsible for storing and serving metadata, lineage, classifications, and other annotations associated with data assets. The size of the Data Map is measured in Capacity Units. There is no need to predetermine the number of Capacity Units required as Microsoft Purview will **auto-scale** up and down based on usage.
 
-![Microsoft Purview data map](../media/03.04-purview-data-map.png)
+:::image type="content" source="../media/03.04-purview-data-map.png" alt-text="Microsoft Purview data map":::
 
 ## Capacity Units
 
@@ -45,4 +45,4 @@ The compute required to facilitate the automated population of the Data Map is s
 
 You can connect to your Microsoft Purview account either publicly, via public IP addresses or service endpoints, or privately, using a private endpoint. [Learn more about private endpoints for your Microsoft Purview account](https://docs.microsoft.com/azure/purview/catalog-private-link).
 
-![Microsoft Purview networking](../media/03.03-purview-networking.png)
+:::image type="content" source="../media/03.03-purview-networking.png" alt-text="Microsoft Purview networking":::
