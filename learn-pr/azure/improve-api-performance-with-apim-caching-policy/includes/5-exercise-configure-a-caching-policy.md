@@ -9,9 +9,9 @@ Now, as the developer for a board game company, you decide to implement caching 
 
 ## Create a Redis cache
 
-We'll use the Consumption tier for Azure API Management for this module. That's because Azure configures API Management instances for that tier in just a minute or so. Other tiers can take up to 30 minutes.
+We'll use the Consumption tier for Azure API Management, for this module. That's because Azure configures API Management instances for this tier in just a minute or so. Other tiers can take up to 30 minutes.
 
-The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It is a tier that has no internal cache. We must create an external Redis cache and then configure a caching policy for API Management to use it.
+The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It is a tier that has no internal cache. We must therefore create an external Redis cache and then configure a caching policy for API Management to use it.
 
 Let's now create a cache. This will allow the setup to run behind the scenes while we work on other steps:
 
@@ -40,9 +40,9 @@ Let's now create a cache. This will allow the setup to run behind the scenes whi
 
 ## Create a web API in Azure App Service
 
-Let's create a web API in Azure App Service in the sandbox environment, with this two-step process:
+To create an Azure App Service, web API in the sandbox environment, we use a two-step process:
 
-1. In Azure Cloud Shell, clone the sample web API by running the following command:
+1. In Azure Cloud Shell, clone the sample web API, by running the following command:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
@@ -67,9 +67,9 @@ Setup.sh has seven parts that take several minutes to run.  When it completes, t
 
 When the web API is successfully created in Cloud Shell, then you can test it. Run a test by submitting a GET request in the browser or by checking the OpenAPI definition. This test runs against the web API in the **azurewebsites.net** domain, before it's added to API Management:
 
-1. On the Azure portal **Resource** menu, or the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
+1. On the Azure portal **Resource** menu, or the Home page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
-1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message, the browser displays the message "No webpage found for this address". This occurs because the web API doesn't implement an Azure website user interface.
+1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message "No webpage found for this address". This occurs because the web API doesn't implement an Azure website user interface.
 
 1. In a new browser tab, paste the web API test URL that you previously copied, and select <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time, with the label **quotePreparedTime**.
 
@@ -83,7 +83,7 @@ Leave these tabs open; they'll be handy later.
 
 Now that we have a functional API, let's set up API Management:
 
-1. On the Azure portal **Resource** menu, or the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal **Resource** menu, or the Home page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a Resource** menu, select **Web**, and then select **API Management** from the result list. The **Create API Management** pane appears.
 
@@ -109,7 +109,7 @@ Now that we have a functional API, let's set up API Management:
 
 You can configure the API Management instance to use your Redis cache as an external cache only when the Redis cache is completely deployed:
 
-1. On the Azure portal **Resource** menu, or the **Home** page, select **All resources**. Then select the *Azure Cache for Redis* resource type. An **Azure Cache for Redis** pane appears.
+1. On the Azure portal **Resource** menu, or the Home page, select **All resources**. Then select the *Azure Cache for Redis* resource type. An **Azure Cache for Redis** pane appears.
 
 1. In the **Essentials** section of the pane, the resource status should display as **Running**. Continue to check the status every few minutes, by clicking the **Refresh** link. Proceed only when your Redis cache deployment is running.
 
@@ -221,7 +221,7 @@ We'll run the same test as in the previous section on the API, in API Management
 
 ## Configure the cache to vary results based on query parameters
 
-You need to configure the cache to serve unique prices based on the *Height* query parameter. Board *Width* isn't used to calculate cost, so it won't be configured.
+The cache must be configured to serve unique prices based on the *Height* query parameter. Board *Width* isn't used to calculate cost, so it won't be configured.
 
 1. In the **APIs** pane for your API Management service, select the **Design** tab. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
@@ -271,7 +271,7 @@ The cache should now deliver unique responses based on the *Height* query parame
 
 1. Select **Send**.
 
-1. Review the results. This time, the result is updated and changed. A cache wasn't used because the *Height* query parameter was changed in the request. This response is correct for our API.
+1. Review the result. This time, the result is updated and changed. A cache wasn't used because the *Height* query parameter was changed in the request. This response is correct for our API.
 
 1. Let's test the *Width* parameter. Enter the following values as *Template parameters* and *Query parameters*.
 
