@@ -44,7 +44,7 @@ Now, you can add a smoke test job that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **smoke-test** job:
 
-   :::code language="yaml" source="code/9-workflow.yml" range="78-92" :::
+   :::code language="yaml" source="code/9-workflow.yml" range="79-92" :::
 
    This code defines the job. The job contains a step to check out the code, and a step to run tests by using Pester.
    
