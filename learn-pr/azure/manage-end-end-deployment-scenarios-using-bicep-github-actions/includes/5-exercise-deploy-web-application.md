@@ -69,7 +69,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. At the end of the file contents, add the App Service app's name as an output: 
 
-   :::code language="bicep" source="code/5-main.bicep" range="102-103" highlight="1" :::
+   :::code language="bicep" source="code/5-main.bicep" range="110-111" highlight="1" :::
 
 1. Save your changes to the file.
 
@@ -81,13 +81,13 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. In the *deploy* job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="54-61" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="55-62" highlight="6" :::
 
 ## Add a job to deploy the website
 
 1. Below the *deploy* job definition, and above the *smoke-test* job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="80-94" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="81-95" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
@@ -102,7 +102,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. Verify that your *deploy.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="59, 80-94" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="60, 81-95" :::
 
 1. Save your changes to the file.
 
