@@ -41,6 +41,9 @@ languages:
 - bicep
 products:
 - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.migrate-azure-resources-bicep.introduction
 - learn.azure.migrate-azure-resources-bicep.convert-migrate-resources-bicep-file
