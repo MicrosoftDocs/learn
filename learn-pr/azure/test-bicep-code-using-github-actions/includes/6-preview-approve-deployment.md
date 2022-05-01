@@ -14,15 +14,11 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 :::image type="content" source="../media/6-jobs-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview jobs. The Preview job executes a what-if operation against Azure." border="false":::
 
-The `arm-deploy` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
+The `arm-deploy` action supports triggering what-if operation by using the `additionalArguments` property:
 
-:::code language="yaml" source="code/6-what-if.yml" highlight="10-17" :::
+:::code language="yaml" source="code/6-what-if.yml" highlight="10-18" :::
 
-::: zone pivot="powershell"
-
-If you build your own PowerShell-based workflow, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
-
-::: zone-end
+The code above is equivalent to running the deployment by using Azure CLI, with the `--what-if` argument included.
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
 

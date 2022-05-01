@@ -17,15 +17,13 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
 1. Between the **validate** and **deploy** jobs, add the following definition for the **preview** job:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="38-54" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="38-55" :::
 
    Notice that the **preview** job depends on the successful completion of the **validate** and **lint** jobs.
 
-   The **preview** job uses the `azure/cli` action. Currently, the what-if operation is not supported by the `azure/arm-deploy` action.
-
 1. Update the **deploy** job to make it depend on the **preview** job:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="56-57, 59-73" highlight="3" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="57-58, 60-74" highlight="3" :::
 
 1. Save your changes to the file.
 
@@ -61,7 +59,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Add the `environment` parameter to the **deploy** job. Set the value to `Website`, to match the name of the environment you just created:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="56-73" highlight="3" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="57-74" highlight="3" :::
 
 1. Save the file.
 
@@ -69,7 +67,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Verify that your *workflow.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="38-54, 58-59" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="38-55, 59-60" :::
 
    If it doesn't, update it to match this example, and then save it.
 
