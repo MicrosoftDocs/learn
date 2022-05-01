@@ -3,4 +3,4 @@ on:
 
 jobs:
   job:
-    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    uses: ./.github/workflows/script.yml@main

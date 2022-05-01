@@ -42,11 +42,11 @@ When you create a reusable workflow, you use the `workflow_call` trigger to tell
 
 :::code language="yaml" source="code/3-called-workflow.yml" highlight="2" :::
 
-In the caller workflow, you refer to the called workflow by including the `uses:` keyword and specifying the path to the called workflow:
+In the caller workflow, you refer to the called workflow by including the `uses:` keyword and specifying the path to the called workflow within the current repository:
 
 :::code language="yaml" source="code/3-caller-workflow.yml" highlight="6" :::
 
-Ensure the path includes your GitHub username, the repository name, and the path to the called workflow file you're referencing.
+You can also refer to a workflow definition file in another repository.
 
 ## Called workflow inputs and secrets
 
