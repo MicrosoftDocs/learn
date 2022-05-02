@@ -5,14 +5,14 @@ metadata:
   unitType: learning-content
   title: "Implement tab navigation with the TabbedPage layout"
   description: "Use the TabbedPage layout to create multiple tab pages"
-  ms.date: 03/01/2022
-  author: jamesmontemagno
-  ms.author: jamont
+  ms.date: 05/02/2022
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-implement-tab-navigation.md)]
+  [!include[](includes/4-implement-tab-navigation.md)]
 quiz:
   questions:
   - content: "When is tab navigation a good choice for an app?"

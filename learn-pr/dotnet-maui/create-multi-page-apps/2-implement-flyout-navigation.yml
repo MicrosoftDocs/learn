@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.implement-flyout-navigation
+title: implement-flyout-navigation
+metadata:
+  unitType: learning-content
+  title: implement-flyout-navigation
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 5/2/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-implement-flyout-navigation.md)]

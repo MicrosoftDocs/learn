@@ -2,20 +2,20 @@
 uid: learn.dotnet-maui.create-multi-page-apps
 metadata:
   moduleType: standard
-  title: "Create multi-page .NET MAUI apps with tab navigation"
-  description: "Use tab navigation to create .NET MAUI apps with multiple pages"
-  ms.date: 03/01/2022
-  author: jamesmontemagno
-  ms.author: jamont
+  title: "Create multi-page .NET MAUI apps with tab and flyout navigation"
+  description: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."
+  ms.date: 05/02/2022
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial 
-title: Create multi-page .NET MAUI apps with tab navigation
-summary: "Use tab navigation to create .NET MAUI apps with multiple pages"
-abstract: | 
+title: Create multi-page .NET MAUI apps with tab and flyout navigation
+summary: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."
+abstract: |
   By the end of this module, you'll be able to:
-    - Implement tab navigation with the TabbedPage layout
-    - Configure platform-specific settings for tabs
+    - Implement tab navigation with .NET MAUI Shell
     - Use navigation pages within tabbed pages
-prerequisites: | 
+    - Implement flyout navigation with .NET MAUI Shell    
+prerequisites: |
   - Visual Studio 2022 with the MAUI workload installed
   - Familiarity with C# and .NET
 iconUrl: /learn/achievements/create-multi-page-apps.svg
@@ -30,10 +30,10 @@ products:
 # - maui
 units:
 - learn.dotnet-maui.create-multi-page-apps.introduction
+- learn.dotnet-maui.create-multi-page-apps.implement-flyout-navigation
+- learn.dotnet-maui.create-multi-page-apps.exercise-implement-flyout-navigation
 - learn.dotnet-maui.create-multi-page-apps.implement-tab-navigation
 - learn.dotnet-maui.create-multi-page-apps.exercise-implement-tab-navigation
-- learn.dotnet-maui.create-multi-page-apps.configure-platform-specific-settings-for-tabs
-- learn.dotnet-maui.create-multi-page-apps.exercise-configure-platform-specific-settings-for-tab-navigation
 - learn.dotnet-maui.create-multi-page-apps.use-tabbed-pages-with-navigation-pages
 - learn.dotnet-maui.create-multi-page-apps.exercise-use-tabbed-pages-with-navigation-pages
 - learn.dotnet-maui.create-multi-page-apps.summary
