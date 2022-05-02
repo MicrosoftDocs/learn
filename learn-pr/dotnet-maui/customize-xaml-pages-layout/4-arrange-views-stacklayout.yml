@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.customize-xaml-pages-layout.arrange-views-stacklayout
+title: Arrange views with StackLayout
+metadata:
+  title: Arrange views with StackLayout
+  description: Arrange views horizontally or vertically with a StackLayout.
+  ms.date: 02/11/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-arrange-views-stacklayout.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "How can you add child views to a `StackLayout`?"
+    choices:
+    - content: "Adding child views to the `ChildViews` property in C#."
+      isCorrect: false
+      explanation: "There is not a `ChildViews` property in .NET MAUI."
+    - content: "Through XAML or C# code."
+      isCorrect: true
+      explanation: "Correct. You can add child views to a `StackLayout` by using XAML or in the code-behind page using C#."
+    - content: "Declare the child views and then use either `HorizontalOptions` or `VerticalOptions` depending on how you'd like the views to be displayed."
+      isCorrect: false
+      explanation: "While `HorizontalOptions` and `VerticalOptions` does control how the views will be rendered, they are not properties in .NET MAUI."
