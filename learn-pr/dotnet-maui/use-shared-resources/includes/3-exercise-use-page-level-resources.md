@@ -2,12 +2,12 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
 ## Open the starter solution
 
+> [!NOTE]
+> If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
 **TBD: REPLACE URL FOR GITHUB REPO BELOW**
 
 1. Clone or download the exercise repo from [GitHub](https://github.com/ADD-REPO-HERE).
-
-> [!NOTE]
-> If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
 1. Open the starter solution from the **exercise1/start/TipCalculator** folder by using Visual Studio.
 
@@ -17,13 +17,13 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
     The application provides two pages. The **StandardTipPage** page is a simple tip calculator. You enter a value, and the page calculates the tip (15%) and the total due. The image below shows the application running on an Android device:
 
-    :::image type="content" source="../media/3-standard-tip-page.png" alt-text="The StandardTipPage of the Tip Calculator in Android.":::
+    :::image type="content" source="../media/3-standard-tip-page.png" alt-text="A screenshot of the standard tip page of tip calculator app running on Android. It shows the bill amount, the tip, and total. It also has a button to navigate to the custom tip screen and 2 buttons at the bottom of the screen to change between light and dark mode. ":::
 
     The **Light** and **Dark** buttons enable you to change the color theme of the page. The default is the Light theme. If you select **Dark**, the colors for the background and text are reversed.
 
     The **Use Custom Calculator** button switches the display to the **CustomTipPage** page. This page enables you to vary the tip percentage by using a slider. You can also select the 15% and 20% buttons to calculate the tip based on predefined rates.
 
-    :::image type="content" source="../media/3-custom-tip-page.png" alt-text="The CustomTipPage of the Tip Calculator in Android.":::
+    :::image type="content" source="../media/3-custom-tip-page.png" alt-text="A screenshot of the custom tip page of the Tip Calculator in Android. It shows the amounts for the bill, tip, and total. At the bottom of the screen there is a slider to adjust the tip percentage and then 2 buttons; one to decrease the tip, the other to raise it.":::
 
 ## Find repeated XAML
 

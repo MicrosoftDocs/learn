@@ -18,7 +18,7 @@ Let's verify that resources defined on one page aren't available on another page
 
 1. Select **Use Custom Calculator** to display the **CustomTipPage** page. Look at the Bill label. The font size should be smaller than the other labels and it isn't bold. This is because the page hasn't found a resource named **infoLabelStyle** (it's in the resource dictionary for a different page), so the default values are used for the font size and font attributes.
 
-    :::image type="content" source="../media/9-custom-tip-page.png" alt-text="The CustomTipPage page. The Bill label isn't styled correctly.":::
+    :::image type="content" source="../media/9-custom-tip-page.png" alt-text="A screenshot of the CustomTipPage page. The Bill label isn't styled correctly.":::
 
 ## Create a dictionary for application-level resources
 

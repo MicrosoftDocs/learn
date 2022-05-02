@@ -16,9 +16,9 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "What feature does a `DynamicResource` provide that a `StaticResource` does not?"
+  - content: "What feature does a `DynamicResource` provide that a `StaticResource` doesn't?"
     choices:
-    - content: "It is easier to use."
+    - content: "It's easier to use."
       isCorrect: false
       explanation: "This is incorrect. The usage of a `StaticResource` and a `DynamicResource` are similar, only keywords are different in a practical sense."
     - content: "It listens for changes in the backing Dictionary and updates the user interface on a change."
@@ -26,4 +26,4 @@ quiz:
       explanation: "Correct. `DynamicResource` is an extension for looking up values in a dictionary, but will propagate any changes in those values to the user interface."
     - content: "The `DynamicResource` will throw an exception if you try to access a value for a non-existent key."
       isCorrect: false
-      explanation: "This is incorrect. If the `DynamicResource` cannot find the key in the Dictionary, it will leave the property unset."
+      explanation: "This is incorrect. If the `DynamicResource` can't find the key in the Dictionary, it will leave the property unset."

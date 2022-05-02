@@ -11,7 +11,7 @@ The following illustration shows the structure of a typical application. Each of
 > [!NOTE]
 > This diagram shows a much simplified depiction of how the items in an application are organized. In this diagram, the term *View* refers to a singleton control such as **Button** or **Label** that doesn't acts as a container for any child controls. Also, the term *Layout* implies a container that is responsible for organizing the layout of its child controls. A layout can be nested. For example a **Grid** control could be held within a **StackLayout** control.
 
-:::image type="content" source="../media/8-resource-scope.png" alt-text="The  high-level structure of a typical .NET MAUI application.":::
+:::image type="content" source="../media/8-resource-scope.png" alt-text="A diagram of the  high-level structure of a typical .NET MAUI application. It represents on views are hosted within layouts. Layouts are hosted within pages. And pages are hosted within an application.":::
 
 ## How to define application-level resources and styles
 
@@ -43,7 +43,7 @@ Suppose you apply a resource to one of your controls as shown in the following c
 
 The search returns the first item found with a matching **x:Key** value. The following image summarizes the resource lookup sequence.
 
-:::image type="content" source="../media/8-lookup-rules.png" alt-text="Diagram illustrating the search path for resources.":::
+:::image type="content" source="../media/8-lookup-rules.png" alt-text="A diagram illustrating the search path for resources. It is the same diagram as before, but indicates that .NET MAUI will start the search for resources at the view level and then traverse through layouts, then pages, then to the application.":::
 
 In practice, most developers ignore the **Resources** property in views and layouts. They use the page-level dictionaries for things they use on a single page. Resources and styles they want to share across multiple pages are defined at the application level. The lookup process then needs to check only two dictionaries: the one in the current page instance and the one in application.
 
