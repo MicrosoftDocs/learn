@@ -1,3 +1,7 @@
+variables:
+  - name: deploymentDefaultLocation
+    value: westus # TODO check this
+
 stages:
 
 - stage: Preview
@@ -23,12 +27,12 @@ stages:
           deploy:
             steps:
             - checkout: self
-            - task: AzureCLI@2
+
+            - task: AzureResourceManagerTemplateDeployment@3
+              name: Deploy
+              displayName: Deploy to Azure
               inputs:
-                azureSubscription: 'MyServiceConnection'
-                scriptType: 'bash'
-                scriptLocation: 'inlineScript'
-                inlineScript: |
-                  az deployment group create \
-                    --resource-group $(ResourceGroupName) \
-                    --template-file deploy/main.bicep
+                connectedServiceName: 'MyServiceConnection'
+                location: $(deploymentDefaultLocation) # TODO check
+                resourceGroupName: $(ResourceGroupName)
+                csmFile: deploy/main.bicep

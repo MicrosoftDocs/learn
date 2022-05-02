@@ -4,6 +4,10 @@ trigger:
     include:
     - main
 
+variables:
+  - name: deploymentDefaultLocation
+    value: westus # TODO check this
+
 pool:
   vmImage: ubuntu-latest
 
@@ -24,18 +28,17 @@ stages:
   - job: ValidateBicepCode
     displayName: Validate Bicep code
     steps:
-      - task: AzureCLI@2
+      - task: AzureResourceManagerTemplateDeployment@3
         name: RunPreflightValidation
         displayName: Run preflight validation
         inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group validate \
-              --resource-group $(ResourceGroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
+          connectedServiceName: $(ServiceConnectionName)
+          location: $(deploymentDefaultLocation)
+          deploymentMode: Validation
+          resourceGroupName: $(ResourceGroupName)
+          csmFile: deploy/main.bicep
+          overrideParameters: >
+            -environmentType $(EnvironmentType)
 
 - stage: Preview
   jobs: 
@@ -65,16 +68,15 @@ stages:
         deploy:
           steps:
             - checkout: self
-            - task: AzureCLI@2
+
+            - task: AzureResourceManagerTemplateDeployment@3
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: $(ServiceConnectionName)
-                scriptType: 'bash'
-                scriptLocation: 'inlineScript'
-                inlineScript: |
-                  az deployment group create \
-                    --name $(Build.BuildNumber) \
-                    --resource-group $(ResourceGroupName) \
-                    --template-file deploy/main.bicep \
-                    --parameters environmentType=$(EnvironmentType)
+                connectedServiceName: $(ServiceConnectionName)
+                deploymentName: $(Build.BuildNumber)
+                location: $(deploymentDefaultLocation) # TODO check this
+                resourceGroupName: $(ResourceGroupName)
+                csmFile: deploy/main.bicep
+                overrideParameters: >
+                  -environmentType $(EnvironmentType)

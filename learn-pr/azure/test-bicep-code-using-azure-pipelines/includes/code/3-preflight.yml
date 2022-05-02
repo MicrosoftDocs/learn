@@ -1,3 +1,7 @@
+variables:
+  - name: deploymentDefaultLocation
+    value: westus # TODO check this
+
 stages:
 
 - stage: Lint
@@ -11,12 +15,10 @@ stages:
   jobs: 
   - job: Validate
     steps:
-    - task: AzureCLI@2
-      inputs:
-        azureSubscription: 'MyServiceConnection'
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: |
-          az deployment group validate \
-            --resource-group $(ResourceGroupName) \
-            --template-file deploy/main.bicep
+      - task: AzureResourceManagerTemplateDeployment@3
+        inputs:
+          connectedServiceName: 'MyServiceConnection'
+          location: $(deploymentDefaultLocation)
+          deploymentMode: Validation
+          resourceGroupName: $(ResourceGroupName)
+          csmFile: deploy/main.bicep

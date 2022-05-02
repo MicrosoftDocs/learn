@@ -4,6 +4,10 @@ trigger:
     include:
     - main
 
+variables:
+  - name: deploymentDefaultLocation
+    value: westus # TODO check this
+
 pool:
   vmImage: ubuntu-latest
 
@@ -24,18 +28,17 @@ stages:
   - job: ValidateBicepCode
     displayName: Validate Bicep code
     steps:
-      - task: AzureCLI@2
+      - task: AzureResourceManagerTemplateDeployment@3
         name: RunPreflightValidation
         displayName: Run preflight validation
         inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group validate \
-              --resource-group $(ResourceGroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
+          connectedServiceName: $(ServiceConnectionName)
+          location: $(deploymentDefaultLocation)
+          deploymentMode: Validation
+          resourceGroupName: $(ResourceGroupName)
+          csmFile: deploy/main.bicep
+          overrideParameters: >
+            -environmentType $(EnvironmentType)
 
 - stage: Preview
   jobs: 
@@ -69,25 +72,28 @@ stages:
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: $(ServiceConnectionName)
-                scriptType: 'bash'
-                scriptLocation: 'inlineScript'
-                inlineScript: |
-                  set -e
-                  deploymentOutput=$(az deployment group create \
-                    --name $(Build.BuildNumber) \
-                    --resource-group $(ResourceGroupName) \
-                    --template-file deploy/main.bicep \
-                    --parameters environmentType=$(EnvironmentType))
-                  appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
-                  echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
+                connectedServiceName: $(ServiceConnectionName)
+                deploymentName: $(Build.BuildNumber)
+                location: $(deploymentDefaultLocation)
+                resourceGroupName: $(ResourceGroupName)
+                csmFile: deploy/main.bicep
+                overrideParameters: >
+                  -environmentType $(EnvironmentType))
+                deploymentOutputs: deploymentOutputs
+
+            - bash: |
+                echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.appServiceAppHostName.value')"
+              name: SaveDeploymentOutputs
+              displayName: Save deployment outputs into variables
+              env:
+                DEPLOYMENT_OUTPUTS: $(deploymentOutputs)
 
 - stage: SmokeTest
   jobs:
   - job: SmokeTest
     displayName: Smoke test
     variables:
-      appServiceAppHostName: $[ stageDependencies.Deploy.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+      appServiceAppHostName: $[ stageDependencies.Deploy.DeployWebsite.outputs['DeployWebsite.SaveDeploymentOutputs.appServiceAppHostName'] ]
     steps:
       - task: PowerShell@2
         name: RunSmokeTests
