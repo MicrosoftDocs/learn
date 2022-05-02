@@ -1,4 +1,11 @@
-In this exercise, you'll create your App Service and Application Insights resources.
+In this exercise, you'll set up your local development environment. This isn't required to use the Azure cloud. 
+
+## Install Node.js and Docker
+
+If you don't have Node.js and Docker on your local computer, install them.
+
+* [Node.js](https://nodejs.org/)
+* [Docker](https://docs.docker.com/get-docker/) - to use a local MongoDB database
 
 ## Fork the GitHub sample repository
 
@@ -25,16 +32,18 @@ In this exercise, you'll create your App Service and Application Insights resour
     npm install
     ```
 
-1. Close Visual Studio Code then reopen to the **3-Add-cosmosdb-mongodb** folder. Keep Visual Studio open at this level. 
+1. Close Visual Studio Code then reopen to the **3-Add-cosmosdb-mongodb** folder, so that this folder is the root of the File Explorer for Visual Studio Code. Keep Visual Studio open at this level for the rest of the module. 
 
 > [!Note]
-> All files used in this module is in the **3-Add-cosmosdb-mongodb** folder of the sample repo. 
+> All files used in this module are in the **3-Add-cosmosdb-mongodb** folder of the sample repo. 
 
 ## Sign in to the Learn sandbox
 
 Select the **Sign in to activate sandbox** button to sign in. This step might include reviewing permissions. When you see **Sandbox activated!** with a time remaining on this page, this step is complete.
 
-Make sure you use the same account to sign in to the sandbox and Azure from Visual Studio Code.
+Make sure you use the same user account to sign in both of the following:
+* Learn sandbox
+* Azure, from Visual Studio Code.
 
 ## Find the subscription in Visual Studio Code
 
@@ -59,42 +68,12 @@ Find the free sandbox subscription in Visual Studio Code.
 In Visual Studio Code, install the following extensions:
 
 * [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
-* [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
-* [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) - used to provide your local computer with a database in a container
-
-## Create Azure resources
-
-Create your web app resources. The database resource creation is handled in a later unit. 
-
-1. Copy this [setup.sh](https://raw.githubusercontent.com/Azure-Samples/msdocs-javascript-nodejs-server/main/3-Add-cosmosdb-mongodb/setup-in-sandbox.sh) script from the GitHub sample repository into your local computer's clipboard. 
-1. In the Learn sandbox terminal, open a new file with the nano editor:
-
-    ```bash
-    nano
-    ```
-
-1. Paste the script from the clipboard with your local computer operating system's paste command.
-1. Use the nano command to save the file: <kbd>ctrl</kbd> + <kbd>v</kbd>.
-1. When asked if you want to save the file, select `yes` and enter the script name, `setup.sh`.
-1. Run the script with the following command:
-
-    ```bash
-    bash setup.sh
-    ```
-
-1. Optionally, list the resources you just created by running the following Azure CLI command in the Learn sandbox terminal. 
-
-    ```azurecli
-    az resource list --query [].type --output tsv | uniq
-    ```     
-
-## View the resources in Visual Studio Code
-
-1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. In the **App Service** section, right-click the sandbox subscription name. 
-1. View the new App Service created by the script.
+* [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) - to access your local MongoDB database
+* [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) - to access your remote Cosmos DB database
+* [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) - dev containers include Node.js + MongoDB
 
 ## Check your work
 
-* In Visual Studio Code, you're signed into Azure.
-* In the Azure pane, you see your App Service resource.
+* In Visual Studio Code, you're:
+    * Signed into Azure.
+    * File Explorer shows the root with package.json and other sample files

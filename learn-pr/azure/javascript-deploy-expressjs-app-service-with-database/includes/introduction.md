@@ -17,12 +17,13 @@ The entire source code is provided as part of this module. You won't be required
 You'll deploy an Express.js app which stores data in Cosmos DB for the MongoDB API, then configure the Azure App Service and deploy to Azure:
 
 - Use the free Learn sandbox subscription - no credit card needed.
-- Run the sample application on your local computer.
-- Create a Cosmos DB database.
-- Configure the App Service to connect to your CosmosDB database.
-- Deploy the web app from your local computer with Visual Studio Code.
+- Set up local development environment.
+- Run the sample application on your local computer with local database.
+- Create Azure Cosmos DB resource.
+- Configure the Azure App Service to connect to your CosmosDB database.
+- Deploy the Express.js app from your local computer with Visual Studio Code.
 - Analyze the database.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to create and integrate Cosmos DB API for MongoDB into an Express.js web app and deploy to your own App Service resource.
+By the end of this module, you'll be able to create and integrate a MongoDB database, using Cosmos DB API for MongoDB, into an Express.js web app and deploy to your own App Service resource.

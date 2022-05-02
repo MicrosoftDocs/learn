@@ -16,13 +16,14 @@ abstract: |
   By the end of this module, you'll be able to:
     - Configure your Express.js app to connect to a MongoDB database.
     - Use a local emulator for Cosmos DB.
-    - Create and configure Cosmos DB for MongoDB API.
+    - Create Azure App Service and Azure Monitor resources.
+    - Create and configure Azure Cosmos DB for MongoDB API resource.
     - Deploy an Express.js data web application to Azure.
     - Understand how to review CosmosDB logs.
 prerequisites: |
   - GitHub user account
   - Visual Studio Code
-  - Docker for local MongoDB dev container - macOS/Linux users
+  - Docker for local MongoDB database in dev container
   - JavaScript Express.js web development experience
   - Conceptual understanding of cloud development and deployment
 iconUrl: /learn/achievements/generic-badge.svg
@@ -41,6 +42,9 @@ units:
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-setup
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-local-database
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-local-database
+
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.setup-azure-resources
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-setup-azure-resources
 
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmosdb-resource
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-create-cosmosdb-resource
