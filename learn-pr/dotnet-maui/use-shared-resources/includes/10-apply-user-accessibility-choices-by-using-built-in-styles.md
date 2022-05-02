@@ -10,7 +10,7 @@ Your applications should respect the user's device-wide preferences for appearan
 
 Most built-in styles target the **Label** class. The main goal is to let your application incorporate the user's choice for text size. The styles are designed around specific use cases. For example, there's a built-in style intended for titles, another one for body text, and so on. The following screenshot shows several labels with various built-in styles applied. The screenshot displays the name of the built-in style as the label text.
 
-:::image type="content" source="../media/10-style-example.png" alt-text="A screenshot showing examples of built-in styles and how the appear differently on the screen. Styles include body, caption (smaller font than body), list item detail (larger font than body), list item text (same font size as body), subtitle (smaller font than body) and title (smaller and bold font than body).":::
+:::image type="content" source="../media/10-style-example.png" alt-text="A screenshot showing examples of built-in styles and how the appear differently on the screen.":::
 
 ## How to apply a built-in style
 
