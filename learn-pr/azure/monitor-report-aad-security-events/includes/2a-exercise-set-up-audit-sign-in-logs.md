@@ -6,7 +6,7 @@ In this exercise, you'll:
 - Change columns to view in your sign-in logs.
 - Filter data to include in your sign-in logs view.
 - Download sign-in logs.
-- View audit logs through the **Users** menu
+- View audit logs through the **Users** menu.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics to view your sign-in and audit logs.

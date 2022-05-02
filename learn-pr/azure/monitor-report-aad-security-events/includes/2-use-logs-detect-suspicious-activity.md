@@ -1,6 +1,6 @@
 Data loss occurs primarily when user accounts are compromised and then used to access confidential assets or resources on your network. Azure offers logging and auditing capabilities that can help you assess whether your users' recent behavior is consistent with their typical behavior. When user behavior deviates from normal, it's flagged as suspicious. 
 
-Your security team members are worried about a repeat of a recent breach. They want to know what Azure features and services might help prevent it. To reassure the team, you want to learn more about what Azure offers for logging user activities and how to use logging to identify suspicious sign-in behavior.
+Your security team members are worried about a repeat of a recent breach. They want to know what Azure features and services might help prevent a data breach. To reassure the team, you want to learn more about what Azure offers for logging user activities and how to use logging to identify suspicious sign-in behavior.
 
 In this unit, you'll see two approaches to monitoring user behavior. The first approach focuses on user sign-in details, which are stored in *sign-in* log files. The second approach looks at user activity while signed in. These activities are stored in *audit* files.
 
@@ -10,19 +10,19 @@ Azure Active Directory captures log information for your entire Azure tenant. Yo
 
 Activity logs cover all of a user's behaviors and interactions with your network and its assets. You want to pay particular attention to two types of log files:
 
-- **Sign-in logs**: Hold details about all user activity and the applications that requested them.
-- **Audit logs**: Show what a user or group did while they were signed in to your network.
+- **Sign-in logs**: Sign-in logs hold details about all user activity and the applications that requested authentication for sign-in.
+- **Audit logs**: Audit logs show what a user or group did while signed in to your network.
 
-Security logs represent a list of the exceptions found in the activity logs. It's important to pay attention to two key log files:
+Security logs represent a list of the exceptions found in the activity logs. It's important to pay attention to two key security log files:
 
-- **Risky sign-ins**: Hold data about user accounts where the sign-in behavior is inconsistent with earlier sign-in attempts.
-- **Users flagged for risk**: Show all users who have been flagged as a risky user.
+- **Risky sign-ins**: Risky sign-in logs hold data about user accounts in which the sign-in behavior is inconsistent with earlier sign-in attempts.
+- **Users flagged for risk**: Logs of users flagged for risk show all users who are flagged as risky users.
 
 For the moment, though, you're interested in tracking only user sign-ins and activity logs.
 
 ## Azure sign-in log files
 
-Sign-in log files hold a copy of all attempts to sign in to your network. The logs track only traditional sign-ins that use user credentials. The sign-in log files don't record automatic authentication that's used in server-to-server connections.
+Sign-in log files hold a copy of all attempts to sign in to your network. The logs track only traditional sign-ins that used user credentials. The sign-in log files don't record automatic authentication that's used in server-to-server connections.
 
 You can use sign-in log files to identify:
 
@@ -39,11 +39,11 @@ Because of the sensitive nature of log data that's captured by sign-in logs, acc
 
 ### Structure of a sign-in log file
 
-The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  Access the sign-in log file in your Azure Active Directory instance in the Azure portal.
+The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made a sign-in request, and more. You access the sign-in log file in your Azure Active Directory instance in the Azure portal.
 
 To see the sign-in logs for your tenant, in the left menu under **Monitoring**, select **Sign-in logs**. The following example displays a typical view of the sign-in table data:
 
-:::image type="content" source="../media/sign-in-activity.png" alt-text="Screenshot that shows the default table columns in the sign-in logs.":::
+:::image type="content" source="../media/sign-in-activity-concept.png" alt-text="Screenshot that shows default table columns in sign-in logs.":::
 
 The default table columns display the following information:
 
@@ -54,7 +54,7 @@ The default table columns display the following information:
 - Risk detection status
 - Multifactor authentication status
 
-As with all reporting in Azure, you can customize the report structure by adding and removing columns. To change the columns, in the menu bar, select **Columns**. In the **Columns** pane, you can add or remove columns based on your needs. In addition to the default columns, you can choose columns that display the following options:
+As with all reporting in Azure, you can customize the report structure by adding and removing columns. To change the columns, in the sign-in logs menu bar, select **Columns**. In the **Columns** pane, you can add or remove columns based on your needs. In addition to the default columns, you can choose columns that display the following options:
 
 - Request ID
 - User
@@ -66,11 +66,13 @@ As with all reporting in Azure, you can customize the report structure by adding
 - Conditional Access
 - Alternate sign-in name
 
+:::image type="content" source="../media/columns-select-concept.png" alt-text="Screenshot that shows how to select columns to show for sign-in logs.":::
+
 ### Filter log data
 
 Even after you've selected all the sign-in columns you're interested in viewing, you still have a large amount of data. To manage data volumes and to get to the data you need, you can apply filters. For example, you might want to see only sign-in records in which users have been flagged as a risk, or records in which multifactor authentication failed.  By using filters, you can view the raw data in various ways to identify trends or patterns.
 
-To use filters, in the menu bar, select **Add filters**, and then select the filters you want to use.
+To use filters, in the sign-in logs menu bar, select **Add filters**, and then select the filters you want to use.
 
 :::image type="content" source="../media/sign-in-activity-filter-list.png" alt-text="Screenshot of the Add filters button and the list of filters.":::
 
@@ -78,7 +80,7 @@ Here are a few key filters and what you would use them for:
 
 - **User**: Use to look for specific users, by either name or by user principal name.
 - **Application**: Use to find sign-in requests from specific applications.
-- **Status**: Use to narrow results to users who successfully signed or those who failed.
+- **Status**: Use to narrow results to users who successfully signed in or to those for whom sign-in failed.
 - **Conditional Access**: Use to examine whether any applicable Conditional Access policies have been applied.
 - **Date**: Use to adjust the timeframe of the data you're looking at, from a month to a single day.
 
@@ -88,15 +90,15 @@ You've determined which columns have the information you want, and you've applie
 
 When you download sign-in logs, you're limited to the most recent 250,000 records, based on the filter criteria that you've applied.
 
-To download the data in your view, in the menu bar, select **Download**. In the **Download Sign-ins** pane, select a format to use for the data, CSV or JSON. Enter a file name, and then select **Download**.
+To download the data in your view, in the sign-in logs menu bar, select **Download**. You'll select a format to use for the data, CSV or JSON and enter a file name for the download file.
+
+:::image type="content" source="../media/download-select-concept.png" alt-text="Screenshot that shows the Download dialog details.":::
 
 ### Sign-in error codes
 
 Analyzing failed sign-ins is key to maintaining a secure and healthy Azure environment. When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
 
-:::image type="content" source="../media/sign-in-status-failure.png" alt-text="Screenshot of the Sign-in status drop-down control, with Failure selected.":::
-
-As described earlier, when this filter is applied, the table displays only failed sign-ins.
+:::image type="content" source="../media/sign-in-status-failure-concept.png" alt-text="Screenshot that shows how to use the Sign-in status control, with Failure selected.":::
 
 When you select any sign-in record in the results list, you see a snapshot of the record, including sign-in status, sign-in error code, and the failure reason.  
 
@@ -123,7 +125,7 @@ In the summary unit of this module, you'll find a link to a complete list of err
 
 ## Azure audit log files
 
-Audit files provide a history of every task that's done in your Azure Active Directory tenant. Audit logs are maintained for compliance. They keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
+Audit files provide a history of every task that's done in your Azure Active Directory tenant. Audit logs are maintained for compliance and they keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
 
 ### Audit log prerequisites
 
@@ -138,37 +140,45 @@ Like sign-in logs, you can modify audit logs to meet your specific needs. The de
 - Date
 - Service
 - Category
-- Status
-- Target
-- Initiated By
-
-You also can add the following columns:
-
 - Activity
-- Status Reason
+- Status
+- Status reason
+- Target (s)
+- Initiated by (actor)
+
+You also can add the column **User Agent**.
+
+:::image type="content" source="../media/audit-logs-columns.png" alt-text="Screenshot that shows audit log columns and options.":::
 
 ### Filter the audit log results
 
 Audit logs might contain hundreds of thousands of entries from your entire Azure environment. To manage the data volume, you can apply filters to the results to display the data you need. You can filter data in the following fields only:
 
-- **Service**: Narrows down the services in the results. The Service field is limited to access reviews, accounts provisioning, application SSO, authentication methods, B2C, Conditional Access, core directories, entitlement management, identity protection, invited users, Privileged Identity Management (PIM), self-service group and password management, and terms of use.
-- **Category**: Specifies what category of audit you want. The selection might be: administrative unit, application management, authentication, authorization, contact, device, device configuration, directory management, entitlement management, group management, policy resource management, role management, and user management.
-- **Activity**: Options depend on the type of service and category you've previously selected.
-- **Status**: Identifies the activity's success or failure.
-- **Target**: Lets you use a target name or a user principal name.
-- **Initiated by**: Lets you specify a user name or a universal principal name. Both are case-sensitive.
-- **Date (range)**: Lets you specify a date range, which can vary from one month to one day.
+- **Date**: Specify a date range, which can vary from one month to one day, or a custom interval.
+- **Show dates as**: Select **Local** or **UTC**.
+- **Service**: Narrow the services that are included in the results.
+- **Category**: Specify what category of audit you want. For example, you might choose administrative unit or user management.
+- **Activity**: Options depend on the type of service and category you've selected.
+- **Status**: Filter by the activity's success or failure.
+
+Select **Add filters** to select one of the following filters:
+
+- **Target**: Filter on a target name or a user principal name.
+- **Initiated by (actor)**: Specify a user name or a universal principal name to filter on. Both are case-sensitive.
+- **User Agent**: Filter by a user agent name.
 
 ### Download the audit log
 
-When you've applied the filters to narrow the data to a manageable and specific subset, you can download it. When you download audit log records, you're limited to the most recent 250,000 records, based on the applied filter criteria.
+When you've applied the filters to narrow the data to a manageable and specific subset, you can download the data. When you download audit log records, you're limited to the most recent 250,000 records, based on the applied filter criteria.
 
-In the **Download Audit Logs** pane, select a format to use for the data, CSV or JSON. Enter a file name, and then select **Download**.
+Like with sign-in logs, select a format to use for the data, CSV or JSON, and then enter a file name for the download.
 
-### Access audit logs through users, groups, and enterprise applications
+## Access logs through users, groups, and enterprise applications
 
-You also can access audit log data through your Azure Active Directory instance. But you also can access the audit logs directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the audit logs through users, you see only audit log data that's related to users. The same applies to groups and enterprise applications.
+You also can access sign-in logs and audit logs through your Azure Active Directory instance. But you also can access the audit logs directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the logs through users, you see only log data that's related to users. The same applies to groups and enterprise applications.
 
-To access the user audit logs from your Azure Active Directory instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select **Audit logs**.
+To access user sign-in logs or user audit logs from your Azure Active Directory instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select the type of log you want to view.
+
+:::image type="content" source="../media/audit-logs-users-concept.png" alt-text="Screenshot of the logs you can select through the Users menu.":::
 
 To access a group's audit logs from your Azure Active Directory instance, select **Groups** in the left menu.
