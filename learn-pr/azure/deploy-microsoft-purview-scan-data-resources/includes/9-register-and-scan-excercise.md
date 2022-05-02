@@ -1,6 +1,6 @@
-## Grant the Microsoft Purview managed identity access
+# Grant the Microsoft Purview managed identity access
 
-To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
+To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 
 * Managed Identity (recommended)
 * Service Principal
@@ -34,7 +34,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 ## Register the source
 
-1. Open Purview Studio, navigate to **Data Map** > **Sources**, and select**Register**.
+1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and select **Register**.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.20-sources-register.png" alt-text="Alt text that describes the content of the image.":::
 
@@ -50,7 +50,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 ## Scan source with the Microsoft Purview managed identity
 
-1. Open Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, select the **New Scan** button.
+1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, select the **New Scan** button.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.23-scan-new.png" alt-text="Alt text that describes the content of the image.":::
 
@@ -64,7 +64,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 1. Select the system default scan rule set and select **Continue**.
 
-    [Scan Rule Sets](https://docs.microsoft.com/en-us/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
+    [Scan Rule Sets](https://docs.microsoft.com/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.26-scan-ruleset.png" alt-text="Alt text that describes the content of the image.":::
 
@@ -89,7 +89,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 ## View Assets
 
-1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
+1. Navigate to **Purview Governance Portal** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.80-wildcard-search.png" alt-text="Alt text that describes the content of the image.":::
 
