@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.dotnet-maui.create-user-interface-xaml.xaml-markup-extensions
+title: XAML mark-up extensions 
+metadata:
+  unitType: unit
+  title: "XAML mark-up extensions"
+  description: "Describe how to create and use mark-up extensions for XAML"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-xaml-markup-extensions.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which mark-up extension allows you to set a XAML property to a static value that's defined in a code-behind class?"
+    choices:
+    - content: "StaticResource"
+      isCorrect: false
+      explanation: "The StaticResource markup extension performs a single dictionary lookup."
+    - content: "Binding"
+      isCorrect: false
+      explanation: "The binding extension allows you to link pairs of properties between two objects, one of which is usually a user interface object."
+    - content: "Static"
+      isCorrect: true
+      explanation: "Correct. Reference it as `x:Static` in your XAML code."
+  - content: "Which interface do you use to create a custom markup extension?"
+    choices:
+    - content: "IMarkup"
+      isCorrect: false
+      explanation: "IMarkup isn't a valid interface."
+    - content: "IMarkupExtension"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "IValueConverter"
+      isCorrect: false
+      explanation: "No. IValueConverter is an interface to define methods for two-way value conversion between types."

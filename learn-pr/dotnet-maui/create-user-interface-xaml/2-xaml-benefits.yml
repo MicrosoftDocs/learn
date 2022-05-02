@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.dotnet-maui.create-user-interface-xaml.benefits-xaml
+title: Benefits of using XAML 
+metadata:
+  unitType: unit
+  title: " Benefits of using XAML"
+  description: "Describe why to use XAML to design the UI for a .NET MAUI app"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-xaml-benefits.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which method must you call in the constructor of a page to read the XAML description of the page, loads the various controls on that page, and sets their properties?"
+    choices:
+    - content: "InitializeComponent"
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "MainPage"
+      isCorrect: false
+      explanation: "No MainPage can be a name of a Page, it does not load the XAML declaration."
+    - content: "ConfigureApp"
+      isCorrect: false
+      explanation: "No. Use the InitializeComponent method."
+  - content: "Which of these is a major benefit of using XAML to define your UI?"
+    choices:
+    - content: "XAML runs more efficiently than C# code for constructing the UI at runtime."
+      isCorrect: false
+      explanation: "No. There may be some minor difference in performance, but it could also be that in some cases defining the UI by using C# code results in more efficient code."
+    - content: "You can separate the definition of the UI from the logic of the app."
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "XAML is more portable than C# code."
+      isCorrect: false
+      explanation: "No. XAML and C# are both .NET technologies. You can run C# anywhere you can use XAML."

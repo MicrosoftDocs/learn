@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn-pr.dotnet-maui.create-user-interface-xaml
+metadata:
+  moduleType: standard
+  title: "Create a UI in a .NET MAUI app by using XAML"
+  description: "Learn how to design a UI for a .NET MAUI app using XAML"
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+title: Create a UI in a .NET MAUI app by using XAML
+summary: "Learn how to design a UI for a .NET MAUI app using XAML"
+abstract: |
+  By the end of this module, you'll be able to describe:
+  - The benefits of using XAML over defining the UI for a .NET MAUI app in C#  
+  - The types available for defining a .NET MAUI app using XAML, and the properties these types expose
+  - How to handle UI events and wire them up in XAML
+  - How to create and use XAML mark-up extensions
+  - How to set platform-specific values in XAML mark-up
+prerequisites: |
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+iconUrl: /learn/achievements/create-user-interface-xaml.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+- vs
+- dotnet
+# - maui # not yet available as a product in Learn
+units:
+- learn-pr.dotnet-maui.create-user-interface-xaml.introduction
+- learn-pr.dotnet-maui.create-user-interface-xaml.benefits-xaml
+- learn-pr.dotnet-maui.create-user-interface-xaml.types-properties-xaml
+- learn-pr.dotnet-maui.create-user-interface-xaml.event-handling-xaml
+- learn-pr.dotnet-maui.create-user-interface-xaml.exercise-create-first-xaml-page
+- learn-pr.dotnet-maui.create-user-interface-xaml.xaml-markup-extensions
+- learn-pr.dotnet-maui.create-user-interface-xaml.platform-specific-values-xaml
+- learn-pr.dotnet-maui.create-user-interface-xaml.exercise-add-behavior-xaml-page
+- learn-pr.dotnet-maui.create-user-interface-xaml.summary
+badge:
+  uid: learn-pr.dotnet-maui.create-user-interface-xaml.badge

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.dotnet-maui.create-user-interface-xaml.types-properties-xaml
+title: Types and properties in .NET MAUI XAML 
+metadata:
+  unitType: unit
+  title: "Types and properties in .NET MAUI XAML"
+  description: "Explain the different types available in XAML, and describe how to instantiate objects and set properties" 
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-types-properties-maui-xaml.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What does a Type Converter do?"
+    choices:
+    - content: "A Type Converter converts the XAML description of a page into the equivalent C# code."
+      isCorrect: false
+      explanation: "No. A Type Converter is used to convert an XML attribute value specified as a string to its correct type."
+    - content: "A Type Converter can convert C# code into the XAML representation of a page."
+      isCorrect: false
+      explanation: "No. A Type Converter is used to convert an XML attribute value specified as a string to its correct type."
+    - content: "A Type Converter is used to convert an XML attribute value specified as a string to its correct type."
+      isCorrect: true
+      explanation: "This is the correct answer."
+  - content: "How do you bring your own custom types into scope in an XAML file?"
+    choices:
+    - content: "Use the `xmlns` attribute of the page, and give the namespace that contains your custom types an alias that you can reference from the XAML controls on the page."
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "Add a C# `using` directive to the XAML file."
+      isCorrect: false
+      explanation: "No. A C# `using` directive is not valid within a XAML file."
+    - content: "Apply the `x:FieldModifier` namespace attribute to named XAML elements."
+      isCorrect: false
+      explanation: "No. The `x:FieldModifer` specifies the access level for generated fields."
