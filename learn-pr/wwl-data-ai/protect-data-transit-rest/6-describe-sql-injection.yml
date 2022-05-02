@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.describe-sql-injection
+title: Describe SQL injection
+metadata:
+  title: Describe SQL injection
+  description: "Describe SQL injection"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-describe-sql-injection.md)]

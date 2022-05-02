@@ -1,20 +1,20 @@
 It's rare that we can exactly predict the load on our systems. A public-facing application might grow rapidly in popularity and usage, or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat. Retailers have more demand during the holidays, and sports websites peak during the playoff seasons.
 
 In this unit, we will:
-- Define scaling up or down and scaling out or in.
-- Discuss some ways Azure can improve your scaling capabilities.
-- Look at how serverless and container technologies can improve your architecture's ability to scale.
+- Define scaling up or down and scaling out or in
+- Discuss some ways Azure can improve your scaling capabilities
+- Look at how serverless and container technologies can improve your architecture's ability to scale
 
 ## What is scaling?
 
 When we look at ways to increase or decrease the compute capacity and relative costs for your applications, it's important to define two key concepts: *scaling* and *resources*.
 
 - **Scaling** is the process of managing your resources to help your application meet a set of performance requirements. When you have too many resources serving your users, you won't be using those resources efficiently, and you'll be wasting money. When you have too few resources available, the performance of your application can be adversely affected. Your goal is to meet your defined performance requirements while optimizing for cost.
-- **Resources** can refer to anything you need to manage and run your applications. Memory and CPUs for virtual machines are the most obvious resources. But some Azure services might require you to consider bandwidth or abstractions, like Request Units (RUs) for Azure Cosmos DB.
+- **Resources** can refer to anything you need to manage and run your applications. Memory and CPUs for virtual machines are the most obvious resources, but some Azure services might require you to consider bandwidth or abstractions, like Request Units (RUs) for Azure Cosmos DB.
 
-In a hypothetical world where application demand was constant, it would be easy to predict the right amount of resources you'd need. But in the real world, the demands of applications change over time, so the right amount of resources you'll need can be harder to predict. If you're lucky, that change will be predictable or seasonal, but that's not typical of all scenarios. Ideally, you want to provision the right amount of resources to meet demand and then adjust the amount as demand changes.
+In a hypothetical world where application demand was constant, it would be easy to predict the right amount of resources you'd need. But in the real world, the demands of applications change over time, so the right amount of resources you'll need can be harder to predict. If you're lucky, that change will be predictable or seasonal, but that's not typical of all scenarios. Ideally, you want to provision the right amount of resources to meet demand, then adjust the amount as demand changes.
 
-Scaling is difficult in an on-premises scenario, where you purchase and manage your own servers. Adding resources can be costly, and often takes too much time to bring resources online. Sometimes it can take longer than your actual need for the increased capacity. It also can be difficult to reduce your resources during times of low demand on the system, so you might be stuck with the increased cost.
+Scaling is difficult in an on-premises scenario, where you purchase and manage your own servers. Adding resources can be costly, and often it takes too much time to bring resources online. Sometimes it can take longer than your actual need for the increased capacity. It also can be difficult to reduce your resources during times of low demand on the system, so you might be stuck with the increased cost.
 
 Easy scaling is a key benefit of Azure. Most Azure resources let you easily add or remove resources as demand changes. Many services have automated options that monitor demand and adjust for you. This automatic scaling capability is commonly known as *autoscaling*. Autoscaling lets you set thresholds for the minimum and maximum level of instances that should be available. It also adds or removes instances based on a performance metric. An example is CPU utilization.
 
@@ -43,7 +43,7 @@ You might need to consider the impact of scaling up in your solution. Your decis
 
 For example, if you choose to scale up in Azure SQL Database, the service deals with scaling up individual nodes and continues the operation of your service. Changing the service tier or performance level of a database creates a replica of the original database at the new performance level. Connections are then switched over to the replica. No data is lost during this process. There's only a brief interruption when the service switches over to the replica. The interruption is typically less than four seconds.
 
-Alternatively, if you choose to scale up or down a virtual machine, you do so by selecting a different instance size. In most situations, if the VM is already running, you're required to restart the VM. With that in mind, expect that a reboot will be required when you scale your VMs. You'll need to account for that eventuality in your planning.
+Alternatively, if you choose to scale a virtual machine up or down, you'll do so by selecting a different instance size. In most situations, if the VM is already running, you're required to restart the VM. With that in mind, expect that a reboot will be required when you scale your VMs. You'll need to account for that eventuality in your planning.
 
 Finally, you should always look for places where scaling down is an option. If your application can provide adequate performance at a lower price tier, your Azure bill could be reduced.
 
@@ -70,7 +70,7 @@ Scaling out is easily performed via the Azure portal, command-line tools, or Azu
 
 ### Autoscale
 
-You can configure some of these services to use a feature called *autoscale*. With autoscale, you no longer have to worry about scaling services manually. Instead, you can set a minimum and maximum threshold of instances. You can scale based on specific metrics like queue length or CPU utilization. You also can scale based on schedules. An example is weekdays between 5:00 PM and 7:00 PM. The following illustration shows how the autoscale feature manages instances to handle the load.
+You can configure some of these services to use a feature called *autoscale*. With autoscale, you no longer have to worry about scaling services manually. Instead, you can set a minimum and maximum threshold of instances. You can scale based on specific metrics, like queue length or CPU utilization. You also can scale based on schedules. An example is weekdays between 5:00 PM and 7:00 PM. The following illustration shows how the autoscale feature manages instances to handle the load.
 
 ![An illustration showing how autoscale monitors the CPU levels of a pool of virtual machines and adds instances when the CPU utilization is above the threshold.](../media/2-autoscale.png)
 
@@ -82,13 +82,13 @@ You also need to think about how your application handles state. When the applic
 
 ## Throttling
 
-We've established that the load on an application varies over time. This variation might be because of the number of active or concurrent users and the activities that are being performed. You can use autoscaling to add capacity. But you can also use a throttling mechanism to limit the number of requests from a source. You can safeguard performance limits by putting known limits into place at the application level. In this way, you prevent the application from breaking. Throttling is most frequently used in applications that expose API endpoints.
+We've established that the load on an application varies over time. This variation might be because of the number of active or concurrent users and the activities being performed. You can use autoscaling to add capacity, but you can also use a throttling mechanism to limit the number of requests from a source. You can safeguard performance limits by putting known limits into place at the application level. In this way, you prevent the application from breaking. Throttling is most frequently used in applications that expose API endpoints.
 
 After the application has identified that it would breach a limit, throttling could begin and ensure the overall system SLA isn't breached. For example, if you exposed an API for customers to get data, you could limit the number of requests to 100 per minute. If any single customer exceeded this limit, you could respond with an HTTP 429 status code and include the wait time before another request can successfully be submitted.
 
 ## Serverless
 
-Serverless computing provides a cloud-hosted execution environment that runs your apps but completely abstracts the underlying environment. You create an instance of the service, and you add your code. No infrastructure management or maintenance is required or even allowed.
+Serverless computing provides a cloud-hosted execution environment that runs your apps, but completely abstracts the underlying environment. You create an instance of the service, and you add your code. No infrastructure management or maintenance is required or even allowed.
 
 You configure your serverless apps to respond to events. An event can be a REST endpoint, a timer, or a message received from another Azure service. The serverless app runs only when it's triggered by an event.
 
@@ -106,7 +106,7 @@ Although you can run containers on virtual machines, there are a couple of Azure
 
     With Azure Kubernetes Service, you can set up virtual machines to act as your nodes. Azure hosts the Kubernetes management plane. You're charged only for the running worker nodes that host your containers.
 
-    To increase the number of your worker nodes in Azure, you can use the Azure CLI to increase that number manually. At the time of this writing, a preview of Cluster Autoscaler on AKS is available. It enables autoscaling of your worker nodes. On your Kubernetes cluster, you can use the Horizontal Pod Autoscaler to scale out the number of instances of the container to be deployed.
+    To increase the number of your worker nodes in Azure, you can use the Azure CLI to increase that number manually. At the time of this writing, you can use Cluster Autoscaler on AKS to autoscale your worker nodes. On your Kubernetes cluster, you can use the Horizontal Pod Autoscaler to scale out the number of instances of the container to be deployed.
 
     AKS can also scale with the Virtual Kubelet, which is described in the next section.
 
@@ -114,4 +114,4 @@ Although you can run containers on virtual machines, there are a couple of Azure
   
     Azure Container Instances is a serverless approach that lets you create and execute containers on demand. You're charged only for the execution time per second.
 
-    You can use Virtual Kubelet to connect Azure Container Instances into your Kubernetes environment, which includes AKS. With Virtual Kubelet, when your Kubernetes cluster demands additional container instances, those demands can be met from Container Instances. Because Container Instances is serverless, there's no need to have reserved capacity. You can take advantage of the control and flexibility of Kubernetes scaling with the per-second-billing of serverless. At the time of this writing, the Virtual Kubelet is described as experimental software and shouldn't be used in production scenarios.
+    You can use virtual nodes to connect Azure Container Instances into your Kubernetes environment, which includes AKS. The virtual nodes add-on for AKS is based on the open-source Virtual Kubelet. With virtual nodes, when your Kubernetes cluster demands additional container instances, those demands can be met from Container Instances. Because Container Instances is serverless, there's no need to have reserved capacity. You can take advantage of the control and flexibility of Kubernetes scaling with the per-second-billing of serverless. 

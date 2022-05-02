@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-databases-for-optimal-performance.describe-automatic-tuning
+title: Describe automatic tuning
+metadata:
+  title: Describe automatic tuning
+  description: "Describe automatic tuning"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-describe-automatic-tuning.md)]

@@ -1,4 +1,5 @@
-Ranking and rowset functions are not scalar functions because they do not return a single value. They work with a set of rows as input and return a set of rows as output.
+Ranking and rowset functions aren't scalar functions because they don't return a single value. These functions work accept a set of rows as input and return a set of rows as output.
+
 
 ## Ranking functions
 
@@ -13,7 +14,7 @@ FROM Production.Product AS p
 ORDER BY RankByPrice;
 ```
 
-The results of this query might look similar to the following:
+The query results might look like:
 
 :::row:::
   :::column:::
@@ -127,6 +128,9 @@ The results of this query might look similar to the following:
     ...
   :::column-end:::
 :::row-end:::
+
+
+### OVER ###
 
 You can use the OVER clause to define partitions, or groupings within the data. For example, the following query extends the previous example to calculate price-based rankings for products within each category.
 
@@ -310,6 +314,11 @@ The results of this query might look something like this:
   :::column-end:::
 :::row-end:::
 
+
+> [!NOTE]
+> Notice that several rows have the same rank value and some values are skipped. This is because we are using RANK only. Depending on the requirement, you may want to avoid ties at the same rank value. You can control the rank value with other functions, DENSE_RANK, NTILE, and ROW_NUMBER, as needed. For details on these functions, see the [Transact-SQL reference documentation](/sql/t-sql/functions/ranking-functions-transact-sql).
+
+
 ## Rowset functions
 
 Rowset functions return a virtual table that can be used in the FROM clause as a data source. These functions take parameters specific to the rowset function itself. They include OPENDATASOURCE, OPENQUERY, OPENROWSET, OPENXML, and OPENJSON.
@@ -327,4 +336,4 @@ To use remote servers, you must enable some advanced options in the SQL Server i
 
 The OPENXML and OPENJSON functions enable you to query structured data in XML or JSON format and extract values into a tabular rowset.
 
-A detailed exploration of rowset functions is beyond the scope of this module. See the [Transact-SQL reference documentation](/sql/t-sql/functions/functions) for more information.
+A detailed exploration of rowset functions is beyond the scope of this module. For more information, see the [Transact-SQL reference documentation](/sql/t-sql/functions/functions).

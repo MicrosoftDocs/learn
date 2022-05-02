@@ -1,4 +1,4 @@
-Azure Cost Management provides a solution that you can use to start analyzing costs immediately in Power BI with a set of reports. This unit explains how to install the app and which reports are used to get an understanding of your organization's costs. Reports provide a way to quickly see costs for your subscriptions and resource groups, to determine your top cost drivers, and find anomalous spending patterns over time.
+Azure Cost Management provides a solution that you can use to start analyzing costs immediately in Power BI with a set of reports. This unit explains how to install the app and which reports you can use to get an understanding of your organization's costs. Reports provide a way to quickly see costs for your subscriptions and resource groups, to determine your top cost drivers, and find anomalous spending patterns over time.
 
 ## Install and configure
 
@@ -31,9 +31,9 @@ After the data refresh is complete, select the Azure Cost Management App to view
 
 ## Analyze your costs using the app
 
-Now that you have the application up and running in Power BI you're ready to begin analyzing your costs. There are several reports that each can be used to answer different questions on your costs.
+Now that you have the application up and running in Power BI, you're ready to begin analyzing your costs. There are several reports, each of which you can use to answer different questions on your costs.
 
-**Billing account overview** - If you want a high-level view of the costs across your organization, use the _Billing account overview_ report. It helps you quickly identify spending trends across your organization. The report shows a monthly summary of information, including:
+**Billing account overview:** If you want a high-level view of the costs across your organization, use the *Billing account overview* report. It helps you quickly identify spending trends across your organization. The report shows a monthly summary of information, including:
 
 - Charges against credits
 - New purchases
@@ -42,14 +42,14 @@ Now that you have the application up and running in Power BI you're ready to beg
 
 :::image type="content" source="../media/2-power-bi-billing-account-overview.png" alt-text="Screenshot showing the billing account overview page." lightbox="../media/2-power-bi-billing-account-overview.png" :::
 
-**Usage by Subscriptions and Resource Groups** – This report provides a cost over time view and charts showing cost by subscription and resource group. You can use this to get a more fine-grained view of the costs in your organization.
+**Usage by Subscriptions and Resource Groups:** This report provides a cost over time view and charts showing cost by subscription and resource group. You can use this to get a more fine-grained view of the costs in your organization.
 
 :::image type="content" source="../media/2-power-bi-usage-subscription-resource-groups.png" alt-text="Screenshot showing the Usage by Subscription and Resource Group report." lightbox="../media/2-power-bi-usage-subscription-resource-groups.png" :::
 
-**Top 5 Usage drivers** - The report shows a filtered cost summarization by the top 5 MeterCategory and corresponding MeterName. For example, maybe your networking costs for your eCommerce app increased significantly last month. That might be a cost anomaly to examine to identify which resources specifically led to the increase in networking charges.
+**Top 5 Usage drivers:** The report shows a filtered cost summarization by the top 5 MeterCategory and corresponding MeterName. For example, maybe your networking costs for your eCommerce app increased significantly last month. That might be a cost anomaly to examine to identify which resources specifically led to the increase in networking charges.
 
 :::image type="content" source="../media/2-top-5-usage-drivers.png" alt-text="Screenshot showing the Top 5 Usage drivers report." lightbox="../media/2-top-5-usage-drivers.png" :::
 
-**Usage by Services** – The report provides a view over time of usage by MeterCategory. Each resource you spin up in Azure has different meter's associated with it. This view helps you understand how the underlying charges for meters across resources are changing. You can track your usage data and drill into any anomalies to understand usage spikes or dips.
+**Usage by Services:** The report provides a view over time of usage by MeterCategory. Each resource you spin up in Azure has different meter's associated with it. This view helps you understand how the underlying charges for meters across resources are changing. You can track your usage data and drill into any anomalies to understand usage spikes or dips.
 
 :::image type="content" source="../media/2-usage-by-services.png" alt-text="Screenshot showing the Usage by Services report." lightbox="../media/2-usage-by-services.png" :::
