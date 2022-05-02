@@ -17,7 +17,7 @@ Here, you add a new stage to your pipeline that runs the what-if operation.
 
 1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="40-56" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="40-56" ::: <!-- TODO -->
 
 1. Save your changes to the file.
 
@@ -68,7 +68,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="58-80" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="58-80" ::: <!-- TODO -->
 
    Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
 
@@ -78,7 +78,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Verify that your *azure-pipelines.yml* file looks like the following code:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="40-56, 58-80" :::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="40-56, 58-80" ::: <!-- TODO -->
 
    If it doesn't, update it to match this example, and then save it.
 

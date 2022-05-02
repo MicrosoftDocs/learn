@@ -23,15 +23,15 @@ Your Bicep file already defines a storage account, but it doesn't define a blob 
 
 1. Update the `storageAccount` resource to define the blob container:
 
-   :::code language="bicep" source="code/7-main.bicep" range="134-153" highlight="9-19" :::
+   :::code language="bicep" source="code/7-main.bicep" range="144-161" highlight="7-15" :::
 
 1. Update the app's `appSettings` property to add two new application settings, one for the storage account name and one for the blob container name:
 
-   :::code language="bicep" source="code/7-main.bicep" range="78-113, 118-121" highlight="25-36" :::
+   :::code language="bicep" source="code/7-main.bicep" range="88-123, 128-131" highlight="25-36" :::
 
 1. At the end of the file contents, add new outputs to expose the names of the storage account and blob container:
 
-   :::code language="bicep" source="code/7-main.bicep" range="182-183" :::
+   :::code language="bicep" source="code/7-main.bicep" range="190-191" :::
 
 1. Save your changes to the file.
 
@@ -63,19 +63,19 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
 1. Near the end of the file contents, above the outputs, add the Azure SQL logical server and database resources:
 
-   :::code language="bicep" source="code/7-main.bicep" range="155-178" :::
+   :::code language="bicep" source="code/7-main.bicep" range="163-186" :::
 
 1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
 
-   :::code language="bicep" source="code/7-main.bicep" range="42-70" highlight="9-14, 22-27" :::
+   :::code language="bicep" source="code/7-main.bicep" range="42-80" highlight="14-19, 32-37" :::
 
 1. Add an additional app setting to your App Service app for the database connection string:
 
-   :::code language="bicep" source="code/7-main.bicep" range="78-120" highlight="37-40" :::
+   :::code language="bicep" source="code/7-main.bicep" range="78-121" highlight="37-40" :::
 
 1. At the bottom of the file, add outputs to expose the host name of the Azure SQL logical server and the name of the database:
 
-   :::code language="bicep" source="code/7-main.bicep" range="180-185" highlight="5-6" :::
+   :::code language="bicep" source="code/7-main.bicep" range="188-193" highlight="5-6" :::
 
 1. Save your changes to the file.
 
@@ -133,24 +133,24 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 1. Update the *Validate* stage's *RunPreflightValidation* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" ::: <!-- TODO -->
 
    > [!IMPORTANT]
    > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
 
 1. Update the *Preview* stage's *RunWhatIf* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" ::: <!-- TODO -->
 
 ## Add parameter values to the Deploy stage
 
 1. Update the *Deploy* stage's *DeployBicepFile* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="82-92" highlight="9-11" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="82-92" highlight="9-11" ::: <!-- TODO -->
 
 1. Create pipeline variables that contain the values of the Bicep outputs you recently added for the storage account and Azure SQL resources:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="93-104" highlight="3-6, 9-12" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="93-104" highlight="3-6, 9-12" ::: <!-- TODO -->
 
 ## Add database deployment steps
 
@@ -158,29 +158,29 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy the DACPAC file:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="117-129" ::: <!-- TODO -->
 
 1. Below the step you just added, define a step to seed the database with sample data.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="131-143" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="131-143" ::: <!-- TODO -->
 
    Notice that this step has a condition applied to it. That is, it runs only for non-production environments.
 
 1. Below the step you just added, and still within the scope of the condition, add a step to upload some sample toy images to the blob container by using the Azure CLI:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="145-156" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="145-156" ::: <!-- TODO -->
 
 ## Verify files and commit your changes
 
 1. Verify that your *main.bicep* file looks like this:
 
-   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-36, 38-39, 50-55, 63-68, 102-117, 142-152, 155-178, 182-185" :::
+   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-36, 38-39, 55-60, 73-78, 112-127, 150-160, 163-186, 190-193" :::
 
    If it doesn't, update it to match the file contents.
 
 1. Verify that your *deploy.yml* file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" highlight="29-31, 55-57, 90-93, 95-99, 100-104, 117-156" :::
+   :::code language="yaml" source="code/7-deploy.yml" highlight="29-31, 55-57, 90-93, 95-99, 100-104, 117-156" ::: <!-- TODO -->
 
    If it doesn't, update it to match the file contents.
 

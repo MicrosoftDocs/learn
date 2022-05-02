@@ -38,7 +38,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Paste the following pipeline template parameters into the file:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="1-7" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="1-7" ::: <!-- TODO -->
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -51,7 +51,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Below the parameters, paste the definition of the validation stage:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="9-29" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="9-29" ::: <!-- TODO -->
 
    Notice that a condition is applied to this stage. It runs only for non-production environments.
 
@@ -59,17 +59,17 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Below the validation stage, paste the definition of the preview stage:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="31-49" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="31-49" ::: <!-- TODO -->
 
    Notice that this stage has a condition applied too, but it's the opposite of the validation stage's condition. The preview stage runs only for the production environment.
 
 1. Below the preview stage, paste the definition of the deploy stage:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="51-77" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="51-77" ::: <!-- TODO -->
 
 1. Below the deploy stage, paste the definition of the smoke test stage:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="79-106" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="79-106" ::: <!-- TODO -->
 
    Notice that the `appServiceAppHostName` variable definition incorporates the `environmentType` parameter when it refers to the stage that published the host name. This parameter ensures that each smoke test stage runs against the correct environment.
 

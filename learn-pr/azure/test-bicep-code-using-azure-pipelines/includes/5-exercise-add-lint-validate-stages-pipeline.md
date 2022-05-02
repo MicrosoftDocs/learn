@@ -19,7 +19,7 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. At the bottom of the file, add the following code:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="10-11, 40-56" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="10-11, 40-56" ::: <!-- TODO -->
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
@@ -28,13 +28,13 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. Below the `stages:` line, add a lint stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="12-20" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="12-20" ::: <!-- TODO -->
 
    This stage defines a single step that runs the `az bicep build` command to lint the Bicep file.
 
 1. Below the lines that you just added, add a validation stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="22-38" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="22-38" ::: <!-- TODO -->
 
    This stage defines a single step that runs the `az deployment group validate` command. Notice that this step includes a reference to your service connection, because the preflight validation process requires communicating with Azure.
 

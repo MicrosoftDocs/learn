@@ -81,9 +81,9 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 ::: zone-end
 
-You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation:
+You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation: <!-- TODO -->
 
-:::code language="yaml" source="code/3-preflight.yml" highlight="14-22" :::
+:::code language="yaml" source="code/3-preflight.yml" highlight="14-22" ::: <!-- TODO -->
 
 This command is similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
 

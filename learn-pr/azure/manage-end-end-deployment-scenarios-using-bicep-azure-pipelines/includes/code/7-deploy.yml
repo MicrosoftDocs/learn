@@ -21,7 +21,6 @@ stages:
           displayName: Run preflight validation
           inputs:
             connectedServiceName: ToyWebsite${{parameters.environmentType}}
-            deploymentName: $(Build.BuildNumber)
             location: ${{parameters.deploymentDefaultLocation}}
             deploymentMode: Validation
             resourceGroupName: $(ResourceGroupName)

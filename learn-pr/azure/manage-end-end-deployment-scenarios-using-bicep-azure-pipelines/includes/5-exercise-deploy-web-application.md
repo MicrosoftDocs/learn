@@ -57,7 +57,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. At the end of the file contents, add the App Service app's name as an output: 
 
-   :::code language="bicep" source="code/5-main.bicep" range="102-103" highlight="1" :::
+   :::code language="bicep" source="code/5-main.bicep" range="110-111" highlight="1" :::
 
 1. Save your changes to the file.
 
@@ -67,19 +67,19 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. In the definition of the *Deploy* stage's deployment job (near line 59) configure the job to use the Windows hosted agent pool:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="55-64" highlight="6-7" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="55-64" highlight="6-7" ::: <!-- TODO -->
 
    Some of the pipeline steps that you'll add later to work with your database require the Windows operating system to run. You can use different agent pools for different jobs in your pipeline, so the other jobs continue to use the Ubuntu Linux pipeline agent pool.
 
 1. In the *Deploy* job's *DeployBicepFile* step, add a new pipeline variable with the value of the app name from the Bicep output:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="78-90" highlight="10, 12" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="78-90" highlight="10, 12" ::: <!-- TODO -->
 
    Notice that the `appServiceAppHostName` variable has the `isOutput=true` property applied to it, because that variable is used in the smoke test stage. The `appServiceAppName` is used in the same pipeline stage and job that it's set within, so it doesn't need the `isOutput=true` setting.
 
 1. At the end of the *Deploy* job contents, add a new step to deploy the app to Azure App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="68-101" highlight="25-34" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="68-101" highlight="25-34" ::: <!-- TODO -->
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new deployment step is indented at the same level as the `DeployBicepFile` step. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
@@ -90,7 +90,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Verify that your *deploy.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="60-61, 87, 89, 92-101" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="60-61, 87, 89, 92-101" ::: <!-- TODO -->
 
 1. Save your changes to the file.
 

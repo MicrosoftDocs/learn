@@ -59,27 +59,27 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` parameter.
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" ::: <!-- TODO -->
 
 1. Update the `ValidateBicepCode` job to import the variable group:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-15" highlight="7-8" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-15" highlight="7-8" ::: <!-- TODO -->
 
 1. Update the `ValidateBicepCode` job to automatically infer the service connection name based on the `environmentType` parameter value:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-21" highlight="14" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-21" highlight="14" ::: <!-- TODO -->
 
 1. Update the `ValidateBicepCode` job to use the imported variable group to set the resource group name and environment type parameters for the Azure CLI task:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="19, 21" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="19, 21" ::: <!-- TODO -->
 
 1. Make the changes to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 14, 19, 21" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 14, 19, 21" ::: <!-- TODO -->
 
 1. Make the same changes to the `Deploy` deployment job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="51-79" highlight="6-7, 18, 25, 27" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="51-79" highlight="6-7, 18, 25, 27" ::: <!-- TODO -->
 
 1. Verify that your *deploy.yml* file now looks like the following code:
 
@@ -114,7 +114,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="53-80" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
 
 1. Save your changes to the file.
 
@@ -156,18 +156,18 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. In the `ValidateBicepCode` job, add the review API parameter values to the Azure CLI task:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" ::: <!-- TODO -->
 
    > [!IMPORTANT]
    > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
 
 1. Make the same change to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="31-53" highlight="21-23" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="31-53" highlight="21-23" ::: <!-- TODO -->
 
 1. Make the same change to the `Deploy` job:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="55-85" highlight="27-29" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="55-85" highlight="27-29" ::: <!-- TODO -->
 
 1. Verify that your *deploy.yml* file now looks like the following code:
 

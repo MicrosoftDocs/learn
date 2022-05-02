@@ -34,7 +34,7 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In the **Deploy** stage, update `inlineScript` to the following code:
 
-   :::code language="bash" source="code/9-pipeline.yml" range="76-83" highlight="1-2, 7-8" :::
+   :::code language="bash" source="code/9-pipeline.yml" range="76-83" highlight="1-2, 7-8" ::: <!-- TODO -->
 
    Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
 
@@ -53,19 +53,19 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="85-90" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="85-90" ::: <!-- TODO -->
 
    This code defines the stage and a job. It also creates a variable in the job named `appServiceAppHostName`. This variable takes its value from the output variable that you created in the preceding section.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="91-103" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="91-103" ::: <!-- TODO -->
 
    This step runs a PowerShell script to run the test script that you wrote earlier by using the Pester testing tool.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="105-111" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="105-111" ::: <!-- TODO -->
 
    This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how this is displayed shortly.
 
@@ -77,7 +77,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="76-83, 85-111" :::
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="76-83, 85-111" ::: <!-- TODO -->
 
    If it doesn't, update it to match this example, and then save it.
 
