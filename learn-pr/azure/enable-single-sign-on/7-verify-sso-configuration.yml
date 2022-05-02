@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-single-sign-on.verify-sso-property-configuration
+uid: learn.enable-single-sign-on.verify-sso-configuration
 title: Verify the single sign-on configuration
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-verify-sso-property-configuration.md)]
+  [!include[](includes/7-verify-sso-configuration.md)]

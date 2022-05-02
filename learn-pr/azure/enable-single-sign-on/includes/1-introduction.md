@@ -16,4 +16,4 @@ For single sign-on, a combination of tasks are required both in the identity pro
 
 ## What is the main goal?
 
-Upon completion of this module, the learner will be able to creating a trust relationship between the identity provider and the service provider to enable users to sign in once to access all the applications they need.
+Upon completion of this module, the learner will be able to create a trust relationship between the identity provider and the service provider to enable users to sign in once to access all the applications they need.

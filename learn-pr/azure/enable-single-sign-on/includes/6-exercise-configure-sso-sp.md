@@ -1,8 +1,8 @@
-Register the user account that you created and assigned in the Azure AD tenant, and configure single sign-on for the account.
+Register the user account that matches the account that was created at the identity provider, and then configure single sign-on for the account.
 
 ## Register a new user account
 
-Matching accounts must be created in both the Azure portal and at the application host. Some applications in the gallery can be configured directly, but others require a request be made to the application support team to do the configuration.
+Matching accounts must be created at both the identity provider and the service provider. Some applications in the gallery can be configured directly, but others require a request be made to the application support team to do the configuration.
 
 In this module, the **Azure AD SAML Toolkit** application represents an application that was requested by a team in the organization to help with productivity. This application has been set up to allow the administrator to register user accounts and configure single sign-on without having to contact the support team.
 
@@ -19,28 +19,28 @@ To register a user account with the **Azure AD SAML Toolkit** application:
 
 ## Configure single sign-on
 
-Use the values that were recorded in the previous unit to configure single sign-on at the application host.
+Use the values that were recorded in the previous unit to configure single sign-on at the service provider.
 
-To configure SAML setting for the application:
+To configure SAML settings for the application:
 
 1. Signed in with the credentials of the user account that you created, select **SAML Configuration** at the upper-left corner of the page.
 1. Select **Create** in the middle of the page.
 
-    :::image type="content" source="../media/saml-config-host.png" alt-text="Screenshot showing where to configure single sign-on at the application host." border="true":::
+    :::image type="content" source="../media/saml-config-host.png" alt-text="Screenshot showing where to configure single sign-on at the service provider." border="true":::
 
 1. For **Login URL**, **Azure AD Identifier**, and **Logout URL**, enter the values that you recorded earlier.
 1. Select **Choose file** to upload the certificate that you previously downloaded.
 1. Select **Create**.
 
-    :::image type="content" source="../media/saml-add-urls-host.png" alt-text="Screenshot showing the URLs to add for single sign-on at the application host." border="true":::
+    :::image type="content" source="../media/saml-add-urls-sp.png" alt-text="Screenshot showing the URLs to add for single sign-on at the service provider." border="true":::
 
 1. Copy the values of the **SP Initiated Login URL** and the **Assertion Consumer Service (ACS) URL** to be used in the next section.
 
-    :::image type="content" source="../media/saml-record.png" alt-text="Screenshot showing the URLs to record for single sign-on in the Azure AD tenant." border="true":::
+    :::image type="content" source="../media/saml-record.png" alt-text="Screenshot showing the URLs to record for single sign-on at the identity provider." border="true":::
 
-## Update values in the Azure AD tenant
+## Update values at the identity provider
 
-The temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant need to be replaced with values from the application host.
+The temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant need to be replaced with values from the service provider.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
