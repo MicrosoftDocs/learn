@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.consume-rest-services
+metadata:
+  moduleType: standard
+  title: "Consume REST web services in .NET MAUI apps"
+  description: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You will detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+title: Consume REST web services in .NET MAUI apps
+summary: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You will detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance." 
+abstract: | 
+  In this module, you will:
+  - Detect if your device is connected to the internet
+  - Consume a REST web service by using HttpClient
+  - Take advantage of the native networking stacks while using HttpClient
+prerequisites: | 
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+  - Basic knowledge of REST
+iconUrl: /learn/achievements/consume-rest-web-services-dotnet-maui-app.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - student
+products:
+  - vs
+  - dotnet
+  # - maui # not yet available as a product in Learn
+units:
+- learn.dotnet-maui.consume-rest-services.introduction
+- learn.dotnet-maui.consume-rest-services.detect-network-connectivity
+- learn.dotnet-maui.consume-rest-services.consume-rest-web-service
+- learn.dotnet-maui.consume-rest-services.use-platform-specific-features
+- learn.dotnet-maui.consume-rest-services.exercise-consume-rest-web-service
+- learn.dotnet-maui.consume-rest-services.summary
+
+badge:
+  uid: learn.dotnet-maui.consume-rest-services.badge
