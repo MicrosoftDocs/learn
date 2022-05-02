@@ -90,4 +90,4 @@ There are a few scenarios where Query Store hints can help with query-level perf
 > [!NOTE]
 > Query Store hints are also supported by SQL Managed Instance.
 
-For more information about Query Store hints, see [Query Store hints (Preview)](/sql/relational-databases/performance/query-store-hints?view=azuresqldb-current).
+For more information about Query Store hints, see [Query Store hints](/sql/relational-databases/performance/query-store-hints).
