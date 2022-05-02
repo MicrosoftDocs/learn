@@ -1,27 +1,43 @@
 ## What is Microsoft Purview?
 
-Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS) data as well as multi-cloud (Azure, GCP, AWS, and many more cloud providers converged into a holistic unified Data Governance experience). Easily create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, business glossary, and approval workflows support. Empower data consumers, CDOs, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it is located.
+Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS), and multi-cloud data. Use Microsoft Purview to create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, and a business glossary. Empower data consumers, data officers, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it is located.
 
-### How does Microsoft Purview benefit a CDO?
+### How does Microsoft Purview benefit an organization?
 
 Microsoft Purview helps CDOs, data analysts, BI engineers, data stewards, governance experts and admins to answer these kinds of questions:
 
 - What data does my org have?
-- Where did this data originate?
+- Where did this data come from?
 - Where is data stored?
 - What’s my exposure to risk?
-- Is my usage compliant?
+- What is the data being used for?
+- Is my data useage compliant?
 - How do I control access & use?
 - What is required by regulation X (read GDPR, CELA, HIPAA) etc.?
-- What data is being collected?
 - For what business purpose?
-- Where is the sensitive data?  
+- Where is the sensitive data?
+
+## Example Scenario : 1
+
+Scenario: The CDO (Chief Data Officer) of Fabrikam Corp Inc. wants to set up a daily dashboard view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
+
+Problem: "Suppose you work at an athletic shoe company named Fabrikam Corp Inc as a business intelligence and analytics engineer. The CDO of your company has assigned to you the task of setting up a daily dashboard view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
+
+Microsoft Purview Solution: "During Purview's scanning process, Purview's classification engine will determine and apply classifications on each table or schema level hosted in the data estate. The Insights feature will help you build reports to view detailed analytics on each of the classified data sources, databases or files as well as what classifications and sensitivity labels were applied. You may even use Purview Insights APIs to build custom reports using and data visualization tools such as Power BI or Tableau etc."
+
+Getting Started: Before deploying Microsoft Purview in your environment, it is best to start with a proof of concept. In this guide we will develop a small proof of concept to start Fabrikam on their journey to using Microsoft Purview to govern their data estate.
+
+## Example Scenario : 2
+
+The Fabricam Corp shoe company has expanded rapidly over the last year, going from a handful of employees and a single data lake, to a multi-regional business with data across several platforms. In the expansion, keeping track of what data Fabricam stores and where has mostly fallen to department heads. Data officers often have to repeat security procedures as new data repositories surface, data experts and officers are flooded with requests for data access and questions about their data. Before the company can go international, Fabricam needs a solution to help them understand and take command of their full data estate.
+
+Microsoft Purview will allow Fabricam to register all their data sources, manage access and data discovery by department, and even understand where data comes from and what kind of data it is.
+
+You've been requested to create a Microsoft Purview proof of concept for Fabricam, to understand how to deploy Microsoft Purview in an environment and onboard resources.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to understand and appreciate the salient features of Microsoft Purview service and how it encompasses a wide range of data sources across on-prem, multi-cloud (Azure, GCP, AWS), and 30+ varieties of databases and 10+ different file types including JSON, CSV, TSV, TXT, Parquet etc.
-
-This learn module will walk you through the steps to set up Microsoft Purview and highlight the salient features supported by Microsoft Purview Data Catalog as we go along.
+By the end of this session, you'll have deployed a Microsoft Purview account in your Azure environment, registered an Azure Data Lake Gen 2 Storage Account, and scanned the storage account so Microsoft Purview can classify the data, and add the metadata to its data map.
 
 ## Prerequisites
 
@@ -29,14 +45,6 @@ In order to proceed with the hands-on components of this module, you will requir
 
 - An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
 - Owner permissions within a Resource Group to create resources and manage role assignments.
-
-## Example Scenario
-
-Scenario: The CDO (Chief Data Officer) of Fabrikam Corp Inc. wants to set up a daily dashboard view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
-
-Problem: "Suppose you work at an athletic shoe company named Fabrikam Corp Inc as a business intelligence and analytics engineer. The CDO of your company has assigned to you the task of setting up a daily dashboard view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
-
-Purview Solution: "During Purview's scanning process, Purview's classification engine will determine and apply classifications on each table or schema level hosted in the data estate. The Insights feature will help you build reports to view detailed analytics on each of the classified data sources, databases or files as well as what classifications and sensitivity labels were applied. You may even use Purview Insights APIs to build custom reports using and data visualization tools such as Power BI or Tableau etc."
 
 ## Prepare environment
 
