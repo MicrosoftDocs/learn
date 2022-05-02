@@ -1,4 +1,4 @@
-A **transaction** is one or more T-SQL statements that are treated as a unit. If any one of the statements fail, then all the statements fail. If a transaction is successful, you know that all the data modification statements in the transaction were successful and committed to the database.
+A **transaction** is one or more T-SQL statements that are treated as a unit. If a single transaction fails, then all of the statements fail. If a transaction is successful, you know that all the data modification statements in the transaction were successful and committed to the database.
 
 Transactions ensure all statements within a transaction either succeed or all fail, no partial completion is permitted. Transactions encapsulate operations that must logically occur together, such as multiple entries into related tables that are part of a single operation.
 
