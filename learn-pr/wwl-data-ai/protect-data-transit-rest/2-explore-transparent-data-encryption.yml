@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.explore-transparent-data-encryption
+title: Explore Transparent Data Encryption
+metadata:
+  title: Explore Transparent Data Encryption
+  description: "Explore Transparent Data Encryption"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-transparent-data-encryption.md)]

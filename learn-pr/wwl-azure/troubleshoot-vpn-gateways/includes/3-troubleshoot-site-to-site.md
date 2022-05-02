@@ -46,7 +46,7 @@ A site-to-site VPN gateway is a connection over an IPsec/IKE (IKEv1 or IKEv2) VP
 
 - [VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings) – sends encrypted traffic across the public internet.
 
-- [ExpressRoute](/azure/expressroute/expressroute-about-virtual-network-gateways) – sends encrypted traffic on a private connection.
+- [ExpressRoute](/azure/expressroute/expressroute-about-virtual-network-gateways) – sends network traffic on a private connection.
 
 ### SKU size
 

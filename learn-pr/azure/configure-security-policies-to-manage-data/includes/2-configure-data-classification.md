@@ -42,7 +42,7 @@ Data discovery and classification (currently in preview) provides advanced capab
 * Addressing various security scenarios such as monitoring, auditing, and alerting on anomalous access to sensitive data
 * Controlling access to and hardening the security of databases containing highly sensitive data
 
-Data discovery and classification is part of the [Microsoft Defender for SQL](/azure/sql-database/azure-defender-for-sql) offering, which is a unified package for advanced Microsoft SQL Server security capabilities. You access and manage data discovery and classification via the Azure SQL Database pane in the Azure portal.
+Data discovery and classification is part of the [Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql) offering, which is a unified package for advanced Microsoft SQL Server security capabilities. You access and manage data discovery and classification via the Azure SQL Database pane in the Azure portal.
 
 Data discovery and classification introduces a set of advanced services and SQL capabilities, forming a SQL Information Protection paradigm aimed at protecting the data, not just the database:
 

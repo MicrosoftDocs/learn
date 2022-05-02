@@ -44,5 +44,6 @@ modules:
 - learn.azure.cloud-adoption-framework-govern
 - learn.cloud-adoption-framework-manage
 - learn.innovate-applications-azure-cloud-technologies
+- learn.azure.cloud-adoption-framework-security
 trophy:
   uid: learn.cloud-adoption-framework.trophy

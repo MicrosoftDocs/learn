@@ -24,6 +24,6 @@ quiz:
       - content: "Chain the `ToListAsync()` method call to the LINQ query or fluent method chain."
         isCorrect: false
         explanation: "Incorrect. The `ToListAsync` method returns the result set as a `List<T>` collection."
-      - content: "Chain the `AsNoTracking()` method call to the entity object."
+      - content: "Chain the `AsNoTracking()` method call to the `DbSet` object for the entity."
         isCorrect: true
         explanation: "Correct! By default, change tracking is enabled for queries that return entity types."

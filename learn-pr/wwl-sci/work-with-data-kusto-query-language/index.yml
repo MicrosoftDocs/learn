@@ -3,7 +3,7 @@ uid: learn.wwl.work-with-data-kql
 metadata:
   title: Work with data in Microsoft Sentinel using Kusto Query Language
   description: "Work with data in Microsoft Sentinel using Kusto Query Language"
-  ms.date: 11/08/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
