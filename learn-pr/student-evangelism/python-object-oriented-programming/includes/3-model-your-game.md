@@ -11,7 +11,7 @@ The concept of objects has been mentioned a few times already as part of trying 
 
 Let's imagine an object in the real world. You're in a car park; what do you see? You're likely to see many cars, in different shapes, sizes, and colors. To describe a car, you can use properties like make, model, color, and type of car. If you assign values to these properties, it quickly becomes clear whether you're talking about a red Ferrari, or a four-wheel-drive Jeep, or a yellow Mustang, and so on.
 
-:::image type="content" source="../media/car.png" alt-text="Visualization that shows a car object with the properties color and make." border="false":::
+:::image type="content" source="../media/car.png" alt-text="Illustration that shows a car object with the properties type and color." border="false":::
 
 In another scene, picture a deck of cards in Las Vegas. You look at two different cards, which are two objects. You realize they have some common properties, namely, suit. The suit for the objects can be clubs, hearts, diamonds, or spades. Their values can be ace, king, nine, and so on.
 
@@ -36,7 +36,7 @@ Here's a table of some examples of classes and their resulting objects:
 
 The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object, your program asks the operating system for resources, namely memory, to be able to construct the object. Conversely, when a car is made from a blueprint, the factory asks for resources like metal, rubber, and glass to be able to assemble the car.
 
-:::image type="content" source="../media/car-assembly.png" alt-text="Visualization that shows assembling a car in a factory." border="false":::	
+:::image type="content" source="../media/car-assembly.png" alt-text="Illustration showing the resource inputs required to assemble a car from a blueprint." border="false":::	
 
 ## Create a class
 

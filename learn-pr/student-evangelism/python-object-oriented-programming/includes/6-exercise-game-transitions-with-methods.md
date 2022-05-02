@@ -164,17 +164,20 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 
    ```python
      def toNumericalChoice(self):
-      switcher = {
-        "rock": 0,
-        "paper": 1,
-        "scissor": 2
-      }
-      return switcher[self.choice]
+       switcher = {
+         "rock": 0,
+         "paper": 1,
+         "scissor": 2
+       }
+       return switcher[self.choice]
    ```
 
    The preceding method will convert your command-line string input to an integer. It will make it easier to determine who won a round.
 
-1. Locate the `GameRound` class, and add the `compareChoices()` method:
+   > [!TIP]
+   > Be sure to position your cursor to indent the code correctly.
+
+1. Locate the `GameRound` class, and update the `compareChoices()` method:
 
    ```python
      def compareChoices(self, p1, p2):
@@ -237,7 +240,7 @@ Scoring the game is about assigning points to the correct player after play has 
    ```python
       if result > 0:
          p1.incrementPoint()
-       elif result < 0:
+      elif result < 0:
          p2.incrementPoint()
    ```
 
@@ -260,7 +263,7 @@ A continuation query is a question at the end of the game round asking the playe
        print(resultString)
    ```
 
-1. In the same class, implement the method `checkEndCondition()`:
+1. In the same class, update the method `checkEndCondition()`:
 
    ```python
      def checkEndCondition(self):
