@@ -16,6 +16,15 @@ To access the web app and database, the sample app has already configured the `.
 
 The Learn sandbox allows you to create and use Azure resources with no cost to you and without any credit card. The Learn sandbox is contained in a separate tenant. Once you have access to that tenant, you can create the Azure resources used in this module. 
 
+The following Learn sandbox information may be useful to troubleshoot connection issues that may occur:
+
+|Name|Value|
+|--|--|
+|Azure cloud|AzureCloud|
+|Tenant|604c1504-c6a3-4080-81aa-b33091104187|
+|Subscription name|Concierge Subscription|
+|Subscription Id|2e3431a6-9673-485f-a9d9-2296d848d530|
+
 ## Visual Studio Code extensions
 
 To create and manage those Azure resources and your local MongoDB database, install Visual Studio Code extensions. This allows you to manage those resources from within Visual Studio Code. 
