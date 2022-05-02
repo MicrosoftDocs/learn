@@ -34,7 +34,7 @@ You can use sign-in log files to identify:
 
 Because of the sensitive nature of log data that's captured by sign-in logs, access to the logs is reserved and limited. To use the sign-in log files, you must have:
 
-- An Azure Active Directory Premium or higher subscription.
+- An Azure Active Directory Premium 1 or Premium 2 subscription.
 - At least one user who has a Global Administrator, Report Reader, Security Reader, or Security Administrator role.
 
 ### Structure of a sign-in log file

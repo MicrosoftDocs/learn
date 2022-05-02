@@ -75,7 +75,7 @@ Next, begin with a workbook template to create a workbook that will hold a query
     | sort by auditCount desc
     ```
 
-1. In the menu bar, select **Run**, and then select **Done editing**:
+1. In the menu bar, select **Run Query**, and then select **Done editing**:
 
    :::image type="content" source="../media/workbooks-new-workbook.png" alt-text="Screenshot that shows adding a query to a workbooks template and selecting run.":::
 
