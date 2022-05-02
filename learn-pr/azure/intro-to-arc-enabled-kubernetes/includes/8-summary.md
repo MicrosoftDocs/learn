@@ -7,9 +7,9 @@ While Contoso will need to continue to operate in a hybrid environment for the f
 You can learn more by reviewing the following resources:
 
 - [Azure Arc documentation](/azure/azure-arc?azure-portal=true)
-- [Connect an Azure Arc-enabled Kubernetes cluster (Preview)](/azure/azure-arc/kubernetes/connect-cluster)
-- [What is Azure Arc-enabled Kubernetes Preview?](/azure/azure-arc/kubernetes/overview?azure-portal=true)
-- [Deploy configurations using GitOps on Arc-enabled Kubernetes cluster (Preview)](/azure/azure-arc/kubernetes/use-gitops-connected-cluster?azure-portal=true)
-- [Use Azure Policy to apply cluster configurations at scale (Preview)](/azure/azure-arc/kubernetes/use-azure-policy)
+- [Connect an Azure Arc-enabled Kubernetes cluster](/azure/azure-arc/kubernetes/connect-cluster)
+- [What is Azure Arc-enabled Kubernetes?](/azure/azure-arc/kubernetes/overview?azure-portal=true)
+- [Deploy configurations using GitOps on Arc-enabled Kubernetes cluster](/azure/azure-arc/kubernetes/use-gitops-connected-cluster?azure-portal=true)
+- [Use Azure Policy to apply cluster configurations at scale](/azure/azure-arc/kubernetes/use-azure-policy)
 - [Enable monitoring of Azure Arc-enabled Kubernetes cluster](/azure/azure-monitor/insights/container-insights-enable-arc-enabled-clusters?azure-portal=true)
 - [Azure Arc Jumpstart](https://azurearcjumpstart.io/)
