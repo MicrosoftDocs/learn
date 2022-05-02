@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.configure-platform-specific-settings-for-tabs
+title: Configure platform-specific settings for tabs
+metadata:
+  unitType: learning-content
+  title: "Configure platform-specific settings for tabs"
+  description: "Configure specific tab settings for iOS, Android, and other platforms"
+  ms.date: 03/01/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5 
+content: |
+  [!include[](includes/4-configure-platform-specific-settings-for-tabs.md)]

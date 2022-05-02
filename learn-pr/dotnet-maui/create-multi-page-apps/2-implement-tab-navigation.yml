@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.implement-tab-navigation
+title: Implement tab navigation with the TabbedPage layout
+metadata:
+  unitType: learning-content
+  title: "Implement tab navigation with the TabbedPage layout"
+  description: "Use the TabbedPage layout to create multiple tab pages"
+  ms.date: 03/01/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-implement-tab-navigation.md)]
+quiz:
+  questions:
+  - content: "When is tab navigation a good choice for an app?"
+    choices:
+    - content: "You have only a few pages in your app and the pages all have equal importance."
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "The app's pages tend to be traversed from general to more specific."
+      isCorrect: false
+      explanation: "No. Stack navigation is the most appropriate choice for this scenario."
+    - content: "The app's pages require extensive scrolling"
+      isCorrect: false
+      explanation: "No. The use of tab navigation is unrelated to the scrolling requirements of the pages it presents."
+  - content: "Suppose you're a developer using TabbedPage for a tabbed UI. How do you present the new page when the user selects a tab?"
+    choices:
+    - content: "First, you call a method to dismiss the old page. Second, you call a different method to present the new page.."
+      isCorrect: false
+      explanation: "TabbedPage doesn't provide any methods to manage the visibility of the pages it hosts."
+    - content: "Call a method to present the appropriate page to the user."
+      isCorrect: false
+      explanation: "No. TabbedPage doesn't provide any methods to manage the visibility of the pages it hosts."
+    - content: "There's nothing for you to do. TabbedPage presents the appropriate page automatically."
+      isCorrect: true
+      explanation: "This is the correct answer."

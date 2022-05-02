@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.use-tabbed-pages-with-navigation-pages
+title: Use tabbed pages with pages on the navigation stack
+metadata:
+  unitType: learning-content
+  title: "Use tabbed pages with pages on the navigation stack"
+  description: "Integrate tabbed pages with navigation pages on the navigation stack"
+  ms.date: 03/01/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5 
+content: |
+  [!include[](includes/6-use-tabbed-pages-with-navigation-pages.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When is tab navigation a good choice for an app?"
+    choices:
+    - content: "You have only a few pages in your app and the pages all have equal importance."
+      isCorrect: true
+      explanation: "Tabs make it fast for the user to switch between the pages. This navigation style works well with pages of equal importance, because it's likely that the user will need to switch pages frequently."
+    - content: "The app's pages tend to be traversed from general to more specific."
+      isCorrect: false
+      explanation: "Tabs aren't well-suited to traversing a hierarchy of pages, because they don't remember the user's navigation sequence."
+    - content: "The app's pages require extensive scrolling."
+      isCorrect: false
+      explanation: "The use of tab navigation is unrelated to the scrolling requirements of the pages it presents."
+  - content: "Suppose you're a developer using `TabbedPage` for a tabbed UI. How do you present the new page when the user selects a tab?"
+    choices:
+    - content: "First, you call a method to dismiss the old page. Second, you call a different method to present the new page."
+      isCorrect: false
+      explanation: "`TabbedPage` doesn't provide any methods to manage the visibility of the pages it hosts."
+    - content: "Call a method to present the appropriate page to the user."
+      isCorrect: false
+      explanation: "`TabbedPage` doesn't provide any methods to manage the visibility of the pages it hosts."
+    - content: "There's nothing for you to do. `TabbedPage` presents the appropriate page automatically."
+      isCorrect: true
+      explanation: "`TabbedPage` handles the page-switching for you. There's no code for you to write."
