@@ -10,7 +10,7 @@ Because mobile devices have these challenges, you must write code to protect aga
 
 You also want to provide a good user experience when your application can't connect to the Internet. If your application stops working because there's no Internet service, your users might be left confused. The best thing to do is to provide information to your users. Tell them that you don't have an Internet connection and that your application might not perform fully without it. The following image shows an example:
 
-:::image type="content" source="../media/2-internet-error.png" alt-text="Image of an app showing a warning about limited network connectivity":::
+:::image type="content" source="../media/2-internet-error.png" alt-text="Screenshot of an app showing a warning about limited network connectivity.":::
 
 In this example, the application developer informs the user that they don't have an internet connection and they should attempt to connect to Wi-Fi.
 

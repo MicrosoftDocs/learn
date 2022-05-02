@@ -31,7 +31,7 @@ A REST web service enables a client to perform operations against data through a
 
 - The `DELETE` verb indicates that you want to delete a resource.
 
-![Diagram showing the basic CRUD operations that a REST service can implement](..\media\3-data-operations.png)
+![Diagram showing the basic CRUD operations that a REST service can implement, including get, post, put and delete.](..\media\3-data-operations.png)
 
 ### Create a new resource with HttpClient
 

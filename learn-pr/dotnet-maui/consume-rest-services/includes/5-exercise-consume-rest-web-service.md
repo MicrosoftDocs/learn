@@ -141,7 +141,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Build and run the app using an Android emulator or an iOS simulator. When the app starts, the List Parts tab should be displayed and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
 
-    :::image type="content" source="../media/5-browse-data.png" alt-text="The Parts Client app running on Android. The LIST PARTS tab is displayed the parts retrieved from the web service.":::
+    :::image type="content" source="../media/5-browse-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed the parts retrieved from the web service.":::
 
 1. When you have finished browsing the data, close the app and return to Visual Studio.
 
@@ -192,7 +192,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Build and run the app using an Android emulator or an iOS simulator. Select the ADD NEW PART tab and enter a name, type, and supplier to create a new part. Swipe right from the left edge of the panel showing the details for the new part and select **Save Changes**. This action invokes the **Add** method in the **PartsManager** class, which creates the new part in the web service. If the operation is successful, you should see an alert appear with the message **Changes Saved**:
 
-    :::image type="content" source="../media/5-add-data.png" alt-text="The Parts Client app running on Android. The ADD NEW PART tab is displayed. The user has provided the details for a new part to be added through the web service.":::
+    :::image type="content" source="../media/5-add-data.png" alt-text="A screenshot of the Parts Client app running on Android. The ADD NEW PART tab is displayed. The user has provided the details for a new part to be added through the web service.":::
 
     > [!NOTE]
     > If you select **Save Changes** more than once, the page will create multiple new parts with the same values that you have entered, but with different part IDs. If you do this accidentally, you will be able to delete the duplicate parts from the **LIST PARTS** tab once you have implemented the delete functionality later in this exercise.
@@ -203,7 +203,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Scroll to the end of the list and verify that the new part appears. The data for the **Part ID** and **Available** fields are generated when the new part was saved:
 
-    :::image type="content" source="../media/5-data-added.png" alt-text="The Parts Client app running on Android. The LIST PARTS tab is displayed. The new part is highlighted.":::
+    :::image type="content" source="../media/5-data-added.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed. The new part is highlighted.":::
 
 1. When you have finished browsing the data, close the app and return to Visual Studio.
 
@@ -237,7 +237,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Swipe right from the left edge of the panel showing the details for the edited part and select **Save Changes**. This action calls the **Update** method in the **PartsManager** class to send the changes to the web service. Verify that the message **Changes Saved** appears in an alert:
 
-    :::image type="content" source="../media/5-edit-data.png" alt-text="The Parts Client app running on Android. The LIST PARTS tab is displayed. The user has modified the details for a part and has selected the **Save Changes** command.":::
+    :::image type="content" source="../media/5-edit-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed. The user has modified the details for a part and has selected the **Save Changes** command.":::
 
     > [!NOTE]
     > The part you added in the previous task will not appear on the **LIST PARTS** page. The data used by the app is reset to a list of predefined parts each tome the app runs. This is to provide consistency for testing the app.
@@ -258,7 +258,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. In the method body:
 
     a. Get an HTTP client from the **GetClient** method.
-    
+
     b. Call the **DeleteAsync** method of the HTTP client object. The URL to which the request should be sent is the base address of the REST web service with the **PartID** field of the **Part** object appended.
 
     ```csharp

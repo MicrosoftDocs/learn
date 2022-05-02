@@ -10,7 +10,7 @@ If your app doesn't adhere to these rules, it will be denied network access. To 
 
 To opt out of App Transport Security, add a new key to the **Info.plist** file, called `NSAppTransportSecurity`. You'll find the **Info.plist** file under the **iOS** folder in the **Platforms** folder for the project in Solution Explorer. This key is actually a dictionary. Add another key called `NSExceptionDomains` to this dictionary. This key contains a child for each of the endpoints you want to target. Each endpoint can have its own configuration, specifying which features to allow or disallow. You can add this key either using the generic plist editor in Visual Studio, or by opening it as an XML file. 
 
-:::image type="content" source="../media/4-edit-info-plist.png" alt-text="Opening the info.plist file using the XML editor in Visual Studio.":::
+:::image type="content" source="../media/4-edit-info-plist.png" alt-text="Screenshot of 2 menus. On the left is context menu shown by right clicking on the info p list file with the open menu item selected. On the right is the window Visual Studio opens to ask what type of editor to use to edit the info p list file. X M L (text) editor is highlighted.":::
 
 Here's an example configuration for one endpoint shown as XML:
 

@@ -26,7 +26,7 @@ quiz:
       explanation: "No. Use `PUT` to update an existing resource."
     - content: "`ADD`"
       isCorrect: false
-      explanation: "No. There is no such HTTP verb."
+      explanation: "No. There's no such HTTP verb."
   - content: Which method of the `HttpResponseMessage` class should you call to verify that an HTTP request was successful?"
     choices:
     - content: "`IsSuccessful`"
@@ -37,4 +37,4 @@ quiz:
       explanation: "This is the correct answer."
     - content: "`CheckStatusCode`"
       isCorrect: false
-      explanation: "No. This is not a valid method."
+      explanation: "No. This isn't a valid method."
