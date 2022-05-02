@@ -25,7 +25,7 @@ quiz:
       explanation: "This is the correct answer, you use the Documents folder to store user generated content."
     - content: "Library"
       isCorrect: false
-      explanation: "No.The Library folder is designed to store app-generated data. The music content is data that the user specifically asks to save. You would use the Library folder for files created without any direct action from the user. Use the Documents folder for this scenario."
+      explanation: "No. The Library folder is designed to store app-generated data. The music content is data that the user specifically asks to save. You would use the Library folder for files created without any direct action from the user. Use the Documents folder for this scenario."
   - content: "Suppose you want to store a small piece of data so that it's accessible between application launches. Which data storage option is the most appropriate?"
     choices:
     - content: "Preferences."
