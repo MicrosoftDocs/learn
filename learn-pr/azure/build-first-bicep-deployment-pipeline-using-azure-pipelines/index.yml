@@ -45,6 +45,9 @@ products:
   - azure-resource-manager
   - azure-devops
   - azure-pipelines
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.introduction
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.understand-azure-pipelines
