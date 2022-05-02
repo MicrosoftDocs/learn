@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.use-shared-resources.create-a-consistent-ui-by-using-styles
+title: Create a consistent UI by using styles
+metadata:
+  unitType: learning-content
+  title: "Create a consistent UI by using styles"
+  description: "Learn how to define and use styles"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-create-a-consistent-ui-by-using-styles.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Why would you define a style within a `ResourceDictionary`?"
+    choices:
+    - content: "The resource dictionary makes it easy for a style to target particular UI controls."
+      isCorrect: false
+      explanation: "This is incorrect. You use the `TargetType` property to target particular UI control types."
+    - content: "A resource dictionary makes it easy to use the style across multiple controls on the same page."
+      isCorrect: true
+      explanation: "Correct. You can access the values easily by referring to the resource dictionary's key."
+    - content: "Having a style within a resource dictionary is the only way it can inherit from a style."
+      isCorrect: false
+      explanation: "This is not correct. A style can inherit from another by using the `BasedOn` property."
