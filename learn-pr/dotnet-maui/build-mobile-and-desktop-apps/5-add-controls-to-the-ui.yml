@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.build-mobile-and-desktop-apps.add-controls-to-the-ui
+title: Add visual controls to a .NET MAUI app 
+metadata:
+  unitType: unit
+  title: "Add visual controls to a .NET MAUI app"
+  description: "Describe how to lay out controls on a .NET MAUI page and respond to events"
+  ms.date: 04/27/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 5 
+content: |
+  [!include[](includes/5-add-controls-to-the-ui.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which of these is not a layout type in .NET MAUI?"
+    choices:
+    - content: "DockableLayout"
+      isCorrect: true
+      explanation: "This is the correct answer"
+    - content: "RelativeLayout"
+      isCorrect: false
+      explanation: "No. RelativeLayout is a valid layout type in .NET MAUI."
+    - content: "StackLayout"
+      isCorrect: false
+      explanation: "No. StackLayout is a valid layout type in .NET MAUI."
+    - content: "Grid"
+      isCorrect: false
+      explanation: "No. Grid is a valid layout type in .NET MAUI."
+  - content: "What is the class used to create a screen in .NET MAUI?"
+    choices:
+    - content: "Screen"
+      isCorrect: false
+      explanation: "Incorrect. There is no Screen class in .NET MAUI."
+    - content: "Page"
+      isCorrect: true
+      explanation: "This is the correct answer. Page is the base class of ContentPage and other types of page."
+    - content: "ContentView"
+      isCorrect: false
+      explanation: "Incorrect. A ContentView is a control that enables the creation of custom controls."
+    - content: "Grid"
+      isCorrect: false
+      explanation: "Incorrect. Grid's allow you to place control's onto a page in a 2 dimensional pattern."
