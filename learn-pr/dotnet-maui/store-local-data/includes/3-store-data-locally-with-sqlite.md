@@ -108,7 +108,7 @@ public List<User> GetAllUsers()
 }
 ```
 
-The **Table** method returns a **TableQuery<T>** object. To get a **List**, use the **ToList** method as shown above.
+The **Table** method returns a **TableQuery\<T>** object. To get a **List**, use the **ToList** method as shown above.
 
 ## Execute a SQLite query by using LINQ
 

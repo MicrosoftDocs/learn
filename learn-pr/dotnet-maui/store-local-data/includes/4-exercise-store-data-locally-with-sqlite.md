@@ -2,7 +2,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 ## Open the starter solution
 
-1. Clone or download the [exercise repo](https://repo.address.to.go.here).
+1. Clone or download the [exercise repo](https://repo.address.to.go.here). THIS WILL BE ADDED AS WE GET CLOSER TO BUILD CONFERENCE AND BEFORE FINAL PR to MAIN.
 
     > [!NOTE]
     > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
