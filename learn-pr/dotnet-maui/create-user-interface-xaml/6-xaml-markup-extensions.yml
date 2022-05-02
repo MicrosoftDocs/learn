@@ -26,15 +26,15 @@ quiz:
       explanation: "The binding extension allows you to link pairs of properties between two objects, one of which is usually a user interface object."
     - content: "Static"
       isCorrect: true
-      explanation: "This is the correct answer. Reference it as `x:Static` in your XAML code."
+      explanation: "Correct. Reference it as `x:Static` in your XAML code."
   - content: "Which interface do you use to create a custom markup extension?"
     choices:
     - content: "IMarkup"
       isCorrect: false
-      explanation: "IMarkup is not a valid interface."
+      explanation: "IMarkup isn't a valid interface."
     - content: "IMarkupExtension"
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Correct."
     - content: "IValueConverter"
       isCorrect: false
       explanation: "No. IValueConverter is an interface to define methods for two-way value conversion between types."

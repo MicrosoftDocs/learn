@@ -17,7 +17,7 @@ You'll create a static class to hold the values for the font color and backgroun
 
 1. In the **Add New Item** dialog box, make sure the **Class** template is selected. Name the new class file **SharedResources.cs**, and then select **Add**:
 
-    :::image type="content" source="../media/8-add-class-file.png" alt-text="The Add New Item dialog box. The user is adding a class named SharedResources.":::
+    :::image type="content" source="../media/8-add-class-file.png" alt-text="A screenshot of the Add New Item dialog box. The user is adding a class named SharedResources.":::
 
 1. In the **SharedResources.cs** file, replace the `using` directives with that shown below, and mark the **SharedResources** class as `static`:
 
@@ -123,7 +123,7 @@ You'll create a static class to hold the values for the font color and backgroun
 
 1. Rebuild the app and run it using Windows. Verify that the colors match those you specified in the **SharedResources** class. If you have time, also try running the app using the Android emulator:
 
-    :::image type="content" source="../media/8-windows-android-app-colors.png" alt-text="The Notes app running on Windows and Android. The text and background colors have been updated.":::
+    :::image type="content" source="../media/8-windows-android-app-colors.png" alt-text="A screenshot of the Notes app running on Windows and Android. The text and background colors have been updated to the changes made.":::
 
 1. Return to Visual Studio when you're done.
 
@@ -144,4 +144,4 @@ You'll create a static class to hold the values for the font color and backgroun
 
 1. Rebuild the app and run it using Windows and then on Android. The app should look like this on each platform:
 
-    :::image type="content" source="../media/8-windows-android-editor-screen.png" alt-text="The Notes app running on Windows and Android.":::
+    :::image type="content" source="../media/8-windows-android-editor-screen.png" alt-text="A screenshot of the Notes app running on Windows and Android. The text entry box and buttons on the Android version are now located near the bottom of the screen. On the Windows app the text entry box and buttons are located where they were previously":::

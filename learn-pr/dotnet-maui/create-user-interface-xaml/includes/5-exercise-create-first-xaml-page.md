@@ -71,7 +71,7 @@ You've been asked to add some further features to this page. Before you start, y
 
     The diagram below illustrates the structure of the UI:
 
-    :::image type="content" source="../media/5-ui-layout.png" alt-text="The structure of the UI for the Notes app":::
+    :::image type="content" source="../media/5-ui-layout.png" alt-text="A diagram of t structure of the UI for the Notes app. It shows a grid with 3 rows. The last row has 2 columns, the rest only have 1. The grid is hosted in a stack layout.":::
 
     Note the **MainPage** class also contains event-handling methods for the buttons, and some code that initializes the `Editor` control. This code isn't distinguished from the UI definition.
 
