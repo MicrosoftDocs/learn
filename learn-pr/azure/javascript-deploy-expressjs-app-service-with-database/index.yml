@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database-with-database
+uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database
 metadata:
   moduleType: standard
   title: Deploy Express.js data web app to Azure App Service
