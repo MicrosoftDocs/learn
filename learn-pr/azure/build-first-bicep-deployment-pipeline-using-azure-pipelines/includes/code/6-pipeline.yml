@@ -3,18 +3,21 @@ trigger: none
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- name: deploymentDefaultLocation
+  value: westus # TODO check this
+
 jobs:
 - job:
   steps:
   
-  - task: AzureCLI@2
+  - task: AzureResourceManagerTemplateDeployment@3
     inputs:
-      azureSubscription: $(ServiceConnectionName)
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: |
-        az deployment group create \
-          --name $(Build.BuildNumber) \
-          --resource-group $(ResourceGroupName) \
-          --template-file deploy/main.bicep \
-          --parameters environmentType=$(EnvironmentType) deployToyManualsStorageAccount=$(DeployToyManualsStorageAccount)
+      connectedServiceName: $(ServiceConnectionName)
+      deploymentName: $(Build.BuildNumber)
+      location: $(deploymentDefaultLocation)
+      resourceGroupName: $(ResourceGroupName)
+      csmFile: deploy/main.bicep
+      overrideParameters: >
+        -environmentType $(EnvironmentType)
+        -deployToyManualsStorageAccount $(DeployToyManualsStorageAccount)
