@@ -1,6 +1,9 @@
 parameters:
 - name: environmentType
   type: string
+- name: deploymentDefaultLocation
+  type: string
+  default: westus
 
 stages:
 
@@ -13,22 +16,22 @@ stages:
       variables:
       - group: ToyWebsite${{parameters.environmentType}}
       steps:
-        - task: AzureCLI@2
+        - task: AzureResourceManagerTemplateDeployment@3
           name: RunPreflightValidation
           displayName: Run preflight validation
           inputs:
-            azureSubscription: ToyWebsite${{parameters.environmentType}}
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              az deployment group validate \
-                --resource-group $(ResourceGroupName) \
-                --template-file deploy/main.bicep \
-                --parameters environmentType=$(EnvironmentType) \
-                             reviewApiUrl=$(ReviewApiUrl) \
-                             reviewApiKey=$(ReviewApiKey) \
-                             sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
-                             sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword)
+            connectedServiceName: ToyWebsite${{parameters.environmentType}}
+            deploymentName: $(Build.BuildNumber)
+            location: ${{parameters.deploymentDefaultLocation}}
+            deploymentMode: Validation
+            resourceGroupName: $(ResourceGroupName)
+            csmFile: deploy/main.bicep
+            overrideParameters: >
+              -environmentType $(EnvironmentType)
+              -reviewApiUrl $(ReviewApiUrl)
+              -reviewApiKey $(ReviewApiKey)
+              -sqlServerAdministratorLogin $(SqlServerAdministratorLogin)
+              -sqlServerAdministratorLoginPassword $(SqlServerAdministratorLoginPassword)
 
 - ${{ if eq(parameters.environmentType, 'Production') }}:
   - stage: Preview_${{parameters.environmentType}}
@@ -72,36 +75,34 @@ stages:
           steps:
             - checkout: self
 
-            - task: AzureCLI@2
+            - task: AzureResourceManagerTemplateDeployment@3
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: ToyWebsite${{parameters.environmentType}}
-                scriptType: 'bash'
-                scriptLocation: 'inlineScript'
-                inlineScript: |
-                  set -e
-                  deploymentOutput=$(az deployment group create \
-                    --name $(Build.BuildNumber) \
-                    --resource-group $(ResourceGroupName) \
-                    --template-file deploy/main.bicep \
-                    --parameters environmentType=$(EnvironmentType) \
-                                 reviewApiUrl=$(ReviewApiUrl) \
-                                 reviewApiKey=$(ReviewApiKey) \
-                                 sqlServerAdministratorLogin=$(SqlServerAdministratorLogin) \
-                                 sqlServerAdministratorLoginPassword=$(SqlServerAdministratorLoginPassword))
-                  appServiceAppName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppName.value')
-                  appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
-                  storageAccountName=$(echo $deploymentOutput | jq -r '.properties.outputs.storageAccountName.value')
-                  storageAccountImagesBlobContainerName=$(echo $deploymentOutput | jq -r '.properties.outputs.storageAccountImagesBlobContainerName.value')
-                  sqlServerFullyQualifiedDomainName=$(echo $deploymentOutput | jq -r '.properties.outputs.sqlServerFullyQualifiedDomainName.value')
-                  sqlDatabaseName=$(echo $deploymentOutput | jq -r '.properties.outputs.sqlDatabaseName.value')
-                  echo "##vso[task.setvariable variable=appServiceAppName]$appServiceAppName"
-                  echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
-                  echo "##vso[task.setvariable variable=storageAccountName]$storageAccountName"
-                  echo "##vso[task.setvariable variable=storageAccountImagesBlobContainerName]$storageAccountImagesBlobContainerName"
-                  echo "##vso[task.setvariable variable=sqlServerFullyQualifiedDomainName]$sqlServerFullyQualifiedDomainName"
-                  echo "##vso[task.setvariable variable=sqlDatabaseName]$sqlDatabaseName"
+                connectedServiceName: ToyWebsite${{parameters.environmentType}}
+                deploymentName: $(Build.BuildNumber)
+                location: ${{parameters.deploymentDefaultLocation}}
+                resourceGroupName: $(ResourceGroupName)
+                csmFile: deploy/main.bicep
+                overrideParameters: >
+                  -environmentType $(EnvironmentType)
+                  -reviewApiUrl $(ReviewApiUrl)
+                  -reviewApiKey $(ReviewApiKey)
+                  -sqlServerAdministratorLogin $(SqlServerAdministratorLogin)
+                  -sqlServerAdministratorLoginPassword $(SqlServerAdministratorLoginPassword)
+                deploymentOutputs: deploymentOutputs
+
+            - bash: |
+                echo "##vso[task.setvariable variable=appServiceAppName]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.appServiceAppName.value')"
+                echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.appServiceAppHostName.value')"
+                echo "##vso[task.setvariable variable=storageAccountName]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.storageAccountName.value')"
+                echo "##vso[task.setvariable variable=storageAccountImagesBlobContainerName]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.storageAccountImagesBlobContainerName.value')"
+                echo "##vso[task.setvariable variable=sqlServerFullyQualifiedDomainName]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.sqlServerFullyQualifiedDomainName.value')"
+                echo "##vso[task.setvariable variable=sqlDatabaseName]$(echo $DEPLOYMENT_OUTPUTS | jq -r '.sqlDatabaseName.value')"
+              name: SaveDeploymentOutputs
+              displayName: Save deployment outputs into variables
+              env:
+                DEPLOYMENT_OUTPUTS: $(deploymentOutputs) # TODO do we need this
 
             - task: AzureRmWebAppDeployment@4
               name: DeployWebsiteApp
@@ -161,7 +162,7 @@ stages:
   - job: SmokeTest
     displayName: Smoke test
     variables:
-      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentType}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentType}}.DeployWebsite.outputs['DeployWebsite.SaveDeploymentOutputs.appServiceAppHostName'] ]
     steps:
       - task: PowerShell@2
         name: RunSmokeTests
