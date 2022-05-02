@@ -101,6 +101,6 @@ Virtual machines communicate with external resources using a virtual network (VN
 
 When you create a new VM, you'll have the option of creating a new virtual network, or using an existing VNet in your region.
 
-Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements *up front* for all the components in your architecture and create the VNet structure you'll need separately, then create the VMs and place them into the already-created VNets.
+Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements *up front* for all the components in your architecture and create the VNet structure you'll need separately, and then create the VMs and place them into the already-created VNets.
 
 We'll look more at virtual networks a bit later in this module. Let's apply some of this knowledge and create a VM in Azure.
