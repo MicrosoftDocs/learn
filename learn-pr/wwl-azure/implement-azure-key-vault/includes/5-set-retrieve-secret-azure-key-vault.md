@@ -8,9 +8,9 @@ In this exercise you'll learn how to perform the following actions by using the 
 * * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free)
 
 
-## Login to Azure and start the Cloud Shell
+## Log in to Azure and start the Cloud Shell
 
-1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+1. Log in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
     :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
@@ -71,5 +71,5 @@ You have created a Key Vault, stored a secret, and retrieved it.
 When you no longer need the resources in this exercise use the following command to delete the resource group and associated Key Vault.
 
 ```azurecli
-az group delete --name az204-vault-rg --no-wait 
+az group delete --name az204vault-rg --no-wait 
 ```

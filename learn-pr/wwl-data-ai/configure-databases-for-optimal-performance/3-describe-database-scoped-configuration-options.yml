@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-databases-for-optimal-performance.describe-database-scoped-configuration-options
+title: Describe database scoped configuration options
+metadata:
+  title: Describe database scoped configuration options
+  description: "Describe database scoped configuration options"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-describe-database-scoped-configuration-options.md)]

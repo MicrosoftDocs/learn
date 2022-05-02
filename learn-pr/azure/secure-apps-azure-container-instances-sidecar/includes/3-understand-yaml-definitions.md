@@ -1,9 +1,8 @@
-
-In the previous unit, you specified the container options as arguments to the `az container create` Azure CLI command, such as the Virtual Network or the environment variables. However, this is not your only choice: You can specify the Azure Container Instance properties in YAML format as well, to specify more sophisticated configuration in your Azure Container Instance. YAML stands for "Yet Another Markup Language", and it was born to provide a more human-readable description language than XML or JSON. It avoids using delimiters such as curly or square brackets that make human readability difficult. Instead, it relies on a prescriptive usage of indentation to structure information in a hierarchy.
+In the previous unit, you specified the container options as arguments to the `az container create` Azure CLI command, such as the Virtual Network or the environment variables. However, this isn't your only choice; you can specify the Azure Container Instance properties in YAML format as well. YAML allows you to specify more sophisticated configuration in your Azure Container Instance. YAML stands for "Yet Another Markup Language," and it was born to provide a more human-readable description language than XML or JSON. It avoids using delimiters such as curly and square brackets, which make human readability difficult. Instead, it relies on a prescriptive usage of indentation to structure information in a hierarchy.
 
 Kubernetes is a container orchestration system that uses YAML to describe its objects. The popularity of Kubernetes has driven YAML to become a *de facto* standard for declarative definitions of containers structures. If you are already familiar with Kubernetes YAML, you will recognize many of the constructs used in Azure Container Instances YAML.
 
-YAML is one of the different ways in which you can declaratively deploy Azure Container Instances, others include ARM templates and Terraform. There is not a specific reason why one would be better than the other, but YAML tends to be convenient when working with more complex container groups, such as the sidecar pattern you will deploy in this unit.
+YAML is one of the different ways in which you can declaratively deploy Azure Container Instances; ARM templates and Terraform are additional alternative methods. There isn't a specific reason why one would be better than the other, but YAML tends to be convenient when working with more complex container groups, such as the sidecar pattern you will deploy in this unit.
 
 ## Extract YAML code out of an existing container group
 
@@ -25,9 +24,9 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     az container export -n $aci_name -g $rg -f /tmp/aci.yaml
     more /tmp/aci.yaml
     ```
-    
-    Here a sample output, you should see something similar when inspecting the generated YAML code, for example with `cat /tmp/aci.yaml`:
-    
+
+    Here a sample output, you should see something similar when inspecting the generated YAML code--for example with `cat /tmp/aci.yaml`:
+
     ```yml
     additional_properties: {}
     apiVersion: '2018-10-01'
@@ -66,26 +65,26 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     tags: {}
     type: Microsoft.ContainerInstance/containerGroups
     ```
-    
+
     > [!NOTE]
     > The sections in the auto-generated YAML file are ordered alphabetically.
-    
-    There are some interesting characteristics of this YAML description worthy to highlight:
-    
-    - Note that YAML is very sensitive to indentation. If you remove or add a blank space in the previous file, it won't be syntactically correct. Only spaces are supported for indentation (no tabs), so be careful with the your text editor.
+
+    There are some interesting characteristics of this YAML description that are worth highlighting:
+
+    - Note that YAML is very sensitive to indentation. If you remove or add a blank space in the previous file, it won't be syntactically correct. Only spaces are supported for indentation (no tabs), so be careful with your text editor.
     - Properties and attributes are specified hierarchically in key-value pairs.
     - If you are familiar with Kubernetes, you will recognize many of the labels. For example, resource requests follow the same syntax. However, do not expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes would use the `env` key word.
-    - If you look into the environment variables, you see them in clear text. While this is probably acceptable for most environment variables, others should not be written in the open, such as the SQL password used in this example. A better way of defining this sensitive information would be with ACI Secure Values. In your case, you do not want that your customer is able to see the database password, so you need to masquerade it.
+    - If you look into the environment variables, you see them in clear text. While this is probably acceptable for most environment variables, others should not be written in the open, such as the SQL password used in this example. A better way of defining this sensitive information would be with ACI Secure Values. In your case, you don't want your customer to be able to see the database password, so you need to mask it.
 
 ## Modify and deploy YAML file
 
-1. While you could change the environment variable for the SQL password into a secure environment variable using the Azure CLI, you will use YAML in preparation for future requirements. In order to generated the required YAML, you can manually edit the file automatically generated in this unit and redeploy it to created the modified Azure Container Instance. Use your favorite text editor to change line 13 of `/tmp/aci.yaml` from `        value: Microsoft123!` into `        secureValue: Microsoft123!` (do not change indentation). Instead, you can use the online text editor `sed` to perform the change:
+1. While you could change the environment variable for the SQL password into a secure environment variable using the Azure CLI, you will use YAML in preparation for future requirements. In order to generate the required YAML, you can manually edit the file automatically generated in this unit and redeploy it to create the modified Azure Container Instance. Use your favorite text editor to change line 13 of `/tmp/aci.yaml` from `        value: Microsoft123!` into `        secureValue: Microsoft123!` (do not change indentation). Instead, you can use the online text editor `sed` to perform the change:
 
     ```bash
     # Modify auto-generated YAML
     sed -i 's/        value: Microsoft123!/        secureValue: Microsoft123!/g' /tmp/aci.yaml
     ```
-    
+
 1. After modifying the file, you can redeploy the new YAML. The Azure CLI command `az container create` takes the argument `--file` where you can input the YAML description of the container to be created. Note that you only need to specify the resource group where the new Azure Container Instance should be created, since all other information is contained in the YAML file, including the Azure Container Instance name:
 
     ```azurecli
@@ -93,7 +92,7 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     az container delete -n $aci_name -g $rg -y
     az container create -g $rg --file /tmp/aci.yaml
     ```
-    
+
 1. If you export the new Azure Container Instance to a different YAML file `/tmp/aci2.yaml`, you will note that the changes you did to the YAML are now in effect: the SQL password is not exposed anymore as clear text.
 
     ```bash
@@ -101,10 +100,10 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     az container export -n $aci_name -g $rg -f /tmp/aci2.yaml
     more /tmp/aci2.yaml
     ```
-    
+
     You can find additional properties that can be used in Azure Container Instances YAML declarations in the ACI YAML reference.
-    
-1. As next step, you can delete the container created in this unit, so that we can move on to the next one.
+
+1. Delete the container created in this unit, so that we can move on to the next one.
 
     ```azurecli
     # Cleanup unit 3
@@ -113,4 +112,4 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
 
 ## Summary
 
-You exported the properties of an existing Azure Container Instance to YAML format. You modified the YAML file to change some of its attributes, and deployed a new Azure Container Instance with updated properties.
+You exported the properties of an existing Azure Container Instance to YAML format. You modified the YAML file to change some of its attributes and deployed a new Azure Container Instance with updated properties.
