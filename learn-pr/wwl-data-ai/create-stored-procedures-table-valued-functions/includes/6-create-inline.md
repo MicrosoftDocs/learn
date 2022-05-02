@@ -3,6 +3,7 @@ User-defined functions (UDF) are similar to stored procedures in that they're st
 We'll review three types of user-defined functions. For more details of the different functions, review the [T-SQL reference documentation](/sql/relational-databases/user-defined-functions/user-defined-functions).
 
 ## Inline table-valued functions
+
 Inline table-valued functions (TVF) are the simplest function created based on a SELECT statement, and they're the preferred choice for performance.
 
 In the following example, a table-valued function is created with an input parameter for **unitprice**.
@@ -26,7 +27,8 @@ SELECT Name, ListPrice
 FROM SalesLT.ProductsListPrice(500);
 ```
 
-## Multi-statement table-valued function
+## Multi-statement table-valued functions
+
 Unlike the inline TVF, a multi-statement table-valued function (MSTVF) can have more than one statement and has different syntax requirements.
 
 Notice how in the following code, we use a BEGIN/END in addition to RETURN:
@@ -58,11 +60,13 @@ FROM Sales.mstvf_OrderStatus(22);
 ```
 
 ### Performance considerations
-The Query Optimizer is unable to estimate how many rows will return for a multi-statement table-valued function, but can with the inline table-valued function. Therefore, use the inline TVF when possible for better performance. If you don't need to join the MSTVF with other tables and/or you know the result will only be a few rows, then the performance impact isn't as concerning. If you expect a large result set and need to join with other tables, instead consider using a temp table to store the results and then join to the temp table. 
+
+The Query Optimizer is unable to estimate how many rows will return for a multi-statement table-valued function, but can with the inline table-valued function. Therefore, use the inline TVF when possible for better performance. If you don't need to join the MSTVF with other tables and/or you know the result will only be a few rows, then the performance impact isn't as concerning. If you expect a large result set and need to join with other tables, instead consider using a temp table to store the results and then join to the temp table.
 
 In SQL Server versions 2017 and higher, Microsoft introduced features for intelligent query processing to improve performance for MSTVF. See more details about the Intelligent Query Processing features in the [T-SQL Reference Documentation](/sql/relational-databases/performance/intelligent-query-processing?#interleaved-execution-for-mstvfs).
 
-## Scalar user-defined function
+## Scalar user-defined functions
+
 A scalar user-defined function returns only one value unlike table-valued functions and therefore is often used for simple, frequent statements.
 
 Here's an example to get the product list price for a specific product on a certain day:
@@ -88,12 +92,13 @@ GO
 For this function, both parameters must be provided to get the value. Depending on the function, you can list the function in the SELECT statement in a more complex query.
 
 ```sql
-	SELECT dbo.ufn_GetProductListPrice (707, '2011-05-31')
+    SELECT dbo.ufn_GetProductListPrice (707, '2011-05-31')
 ```
 
-### SCHEMABINDING
-Specifying SCHEMABINDING when you create the function binds the function to the referenced objects, and the objects can't be modified without the function also being modified. The function must first be modified or dropped to remove dependencies before modifying the object. SCHEMABINDING isn't the default so you must specify, otherwise changes can be made to referenced objects and affect your function.
+### Bind function to referenced objects
+
+SCHEMABINDING is optional when creating the function. When you specify SCHEMABINDING, it binds the function to the referenced objects, and then objects can't be modified without also modifying the function. The function must first be modified or dropped to remove dependencies before modifying the object.
 
 SCHEMABINDING is removed if any of the following occur:
- * The function is dropped
- * The function is modified with ALTER statement without specifying SCHEMABINDING
+ *The function is dropped
+ *The function is modified with ALTER statement without specifying SCHEMABINDING
