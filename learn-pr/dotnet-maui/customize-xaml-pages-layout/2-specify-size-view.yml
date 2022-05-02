@@ -25,4 +25,4 @@ quiz:
       explanation: "This is incorrect. A `StackLayout`, arranges its child views in a single row or column."
     - content: "Encapsulates the layout options, such as `LayoutAlignment` and `Expands`."
       isCorrect: false
-      explanation: "This is incorrect. The `LayoutOptions` type encapsulates those 2 values which are related to positioning."
+      explanation: "This is incorrect. The `LayoutOptions` type encapsulates those two values which are related to positioning."
