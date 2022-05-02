@@ -6,11 +6,11 @@ The Commissioned Forrester Consulting TEI study on HoloLens 2<sup>1</sup> estima
 
 *"An immense breadth of mixed reality use cases across industries and roles are possible with HoloLens 2, powered by a comprehensive ecosystem of applications and services from Microsoft and myriad third-party partners. Mixed reality on HoloLens 2 is broadly extensible; its support for custom code and cloud services has led to a growing market of customers and partners that continually expand the bounds of possibility."*
 
-:::image type="content" source="../media/forrester-info-graph.png" alt-text="HoloLens 2 Forrester Info Graph." :::
+:::image type="content" source="../media/forrester-info-graph.png" alt-text="Info graph of HoloLens 2 Forrester Market data." :::
 
 Over half of the Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
-:::image type="content" source="../media/company-rois.png" alt-text="HoloLens 2 Company ROIs." :::
+:::image type="content" source="../media/company-rois.png" alt-text="Info graph of HoloLens 2 Company ROIs." :::
 
 ## HoloLens 2 solutions
 
@@ -18,7 +18,7 @@ For a technology manager designing your next product innovation, an IT professio
 
 Here are some application categories that might fit the needs of your organization. 
 
-:::image type="content" source="../media/why.png" alt-text="Use cases supported by HoloLens.":::
+:::image type="content" source="../media/why.png" alt-text="Diagram of use cases supported by HoloLens.":::
 
 * **Design and prototyping** - Holographic visualization of prototypes can reduce design and alteration costs.
 * **Training and development** - HoloLens can assist with designing, developing, and deploying training and simulation experiences. With HoloLens 2, trainees can learn-by-doing from anywhere with holographic instructions.
@@ -50,8 +50,8 @@ With Mixed Reality, architecture, engineering, and construction (AEC) firms are 
 
 Common scenarios in which AEC organizations benefit from mixed reality on Microsoft HoloLens 2:
 
-1. **Clash detection**: Enable onsite workers to preemptively identify issues, detect clashes, and gain buy-in of onsite workers and key stakeholders with overlay designs on physical locations. This mitigates late-stage design changes that could result in rework, budget overrun, and project delays.
-1. **3D plan and model demonstrations**: Empower project leaders, designers, and engineers and improve customer service and sales with 3D demonstration and immersive visualizations.
+* **Clash detection**: Enable onsite workers to preemptively identify issues, detect clashes, and gain buy-in of onsite workers and key stakeholders with overlay designs on physical locations. This mitigates late-stage design changes that could result in rework, budget overrun, and project delays.
+* **3D plan and model demonstrations**: Empower project leaders, designers, and engineers and improve customer service and sales with 3D demonstration and immersive visualizations.
 Self-guided learning: Equip onsite workers to view task instructions, essential data, and model visualizations while in the flow of work, increasing speed, quality, and safety.
 
 *“We use Dynamics 365 Remote Assist on HoloLens 2 to work more effectively and share expertise at critical milestones. This not only saves us money but also helps us construct data centers for our customers more quickly.”* — Microsoft. Read the full customer story<sup>2</sup>.
@@ -62,13 +62,13 @@ Healthcare providers are faced with a unique challenge: the work itself is hands
 
 Mixed reality is empowering providers, payors, and health science experts to reimagine healthcare by accelerating diagnoses, reducing time-to-care, and enabling personalization. Using Microsoft mixed reality, healthcare providers reduced average consumables by 80%, saving $4,000 per trainee<sup>1</sup>. 
 
-:::image type="content" source="../media/hololens2-healthcare.png" alt-text="medical students with brain hologram.":::
+:::image type="content" source="../media/hololens2-healthcare.png" alt-text="Photo of medical students with a hologram of the human brain.":::
 
 Common scenarios in which healthcare providers benefit from mixed reality on Microsoft HoloLens 2:
 
-1. **Holographic patient consultation**: Enable healthcare providers to project 3D holographic visualizations of patients’ internal systems that provide procedural understanding—building confidence in upcoming procedures and/or treatments.
-1. **Remote expert consultation**: Support remote consultation and enable medical staff to consult colleagues with heads-up and hands-free through an interactive collaborative experience from anywhere in the world.
-1. **Training simulations**: Train medical staff with holographic step-by-step guidance without subject matter experts being physically present.
+* **Holographic patient consultation**: Enable healthcare providers to project 3D holographic visualizations of patients’ internal systems that provide procedural understanding—building confidence in upcoming procedures and/or treatments.
+* **Remote expert consultation**: Support remote consultation and enable medical staff to consult colleagues with heads-up and hands-free through an interactive collaborative experience from anywhere in the world.
+* **Training simulations**: Train medical staff with holographic step-by-step guidance without subject matter experts being physically present.
 
 *“Using Dynamics 365 Remote Assist, doctors wearing HoloLens, can hold “hands-free” and “heads-up” Teams video calls with colleagues and experts anywhere in the world. They can receive advice, interacting with the caller and the patient at the same time, while medical notes and X-rays can also be placed alongside the call in the wearer’s field of view.”* — Imperial College Healthcare NHS Trust. Read more about the Imperial College Healthcare NHS Trust customer story<sup>3</sup>.
 
@@ -78,9 +78,9 @@ Educators are turning to Microsoft HoloLens 2 and mixed reality applications to 
 
 Common scenarios in which educators benefit from mixed reality on Microsoft HoloLens 2:
 
-1. **Augmented teaching**: Captivate students and bring education to life with impressionable, high-impact 3D visualization models that enable virtual collaboration and instruction.
-1. **Experiential learning**: Enable educators to build an experience-based lesson plan, integrating textbook concepts into physical environments to create a simple “learn by doing” approach for students—hands-on and unmediated.
-1. **Scaled learning and research**: Develop a scalable research collaboration model that improves efficiency of research, lab work, and medical training.
+* **Augmented teaching**: Captivate students and bring education to life with impressionable, high-impact 3D visualization models that enable virtual collaboration and instruction.
+* **Experiential learning**: Enable educators to build an experience-based lesson plan, integrating textbook concepts into physical environments to create a simple “learn by doing” approach for students—hands-on and unmediated.
+* **Scaled learning and research**: Develop a scalable research collaboration model that improves efficiency of research, lab work, and medical training.
 
 *“We did a trial back with our medical students. The students that had been in the HoloLens lab scored 50 percent better compared to the rest of the med school class.”* — Case Western. Read more about the Case Western customer story<sup>4</sup>.
 

@@ -24,7 +24,7 @@ Here are some solutions that have produced outstanding results for HoloLens cust
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/mda-hl2.jpg" alt-text="HoloLens worker immersed in digital imagery.":::
+        :::image type="content" source="../media/mda-hl2.jpg" alt-text="Photo of a HoloLens worker immersed in digital imagery.":::
     :::column-end:::
     :::column span="2":::
         ##### MDA, a Canadian space technology company, uses HoloLens to train employees by creating immersive mixed reality experiences.
@@ -34,7 +34,7 @@ Here are some solutions that have produced outstanding results for HoloLens cust
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/zf-group.png" alt-text="HoloLens field service worker.":::
+        :::image type="content" source="../media/zf-group.png" alt-text="Photo of a HoloLens field service worker.":::
     :::column-end:::
     :::column span="2":::
         ##### ZF Group, a global technology company, uses HoloLens to ensure efficient use of the automotive systems it manufactures. 
@@ -44,7 +44,7 @@ Here are some solutions that have produced outstanding results for HoloLens cust
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/sheba.png" alt-text="HoloLens healthcare working operating a ventilator.":::
+        :::image type="content" source="../media/sheba.png" alt-text="Photo of a HoloLens healthcare worker operating a ventilator.":::
     :::column-end:::
     :::column span="2":::
         ##### Sheba Medical Center uses HoloLens to expedite training for busy staff, who must operate complex but critical medical equipment. 
@@ -54,7 +54,7 @@ Here are some solutions that have produced outstanding results for HoloLens cust
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/tokyu.png" alt-text="Construction worker using HoloLens to examine a digital blueprint.":::
+        :::image type="content" source="../media/tokyu.png" alt-text="Photo of a construction worker using HoloLens to examine a digital blueprint.":::
     :::column-end:::
     :::column span="2":::
         ##### Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2. 
@@ -65,7 +65,7 @@ Here are some solutions that have produced outstanding results for HoloLens cust
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/eaton.png" alt-text="HoloLens auto worker.":::
+        :::image type="content" source="../media/eaton.png" alt-text="Photo of a HoloLens auto worker.":::
     :::column-end:::
     :::column span="2":::
         ##### Eaton’s Vehicle Group uses HoloLens with Dynamics 365 guides to train employees. 

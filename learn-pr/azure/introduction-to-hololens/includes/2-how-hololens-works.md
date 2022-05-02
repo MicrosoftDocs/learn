@@ -1,6 +1,6 @@
 On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world. Even when digital imageries are all around you, you can always see your surroundings, move freely, and interact with people and objects. Thanks to HoloLens 2 and Mixed Reality applications, workers can now collaborate without boundaries, act with precision, and increase productivity.
 
-:::image type="content" source="../media/MRTK-periodictable.jpg" alt-text="HoloLens worker immersed in digital imagery.":::
+:::image type="content" source="../media/MRTK-periodictable.jpg" alt-text="Photo of HoloLens worker immersed in digital imagery.":::
 
 * The holographic frame positions digital images where your eyes are most sensitive to detail. 
 * The see-through lenses leave your peripheral vision unobstructed. 
@@ -12,7 +12,7 @@ Because HoloLens understands your physical environment, you can place holograms 
 
 HoloLens has sensors that can see a few feet to either side of you, and the frame moves with you as you move around. You can touch and interact with holograms with precision.
 
-![HoloLens 2 Development Edition.](../media/hololens-2-dev-ed.png)
+:::image type="content" alt-text="Photo of HoloLens 2 Development Edition." source="../media/hololens-2-dev-ed.png":::
 
 Working with HoloLens 2 is intuitive. Once you get connected, you'll find yourself wanting to use your hands to touch and manipulate the holographic imagery. 
 
@@ -22,7 +22,7 @@ It's easy to learn a few gestures that give you control of the windows, menus, a
 
 HoloLens 2 is currently used in manufacturing, construction, retail, healthcare, education, and aerospace industries, but it's so flexible that it can be used almost anywhere. It builds a digital framework between your employees and their physical workspace by adding 3D models and simulations of real-life scenarios to the local environment.
 
-:::image type="content" alt-text="remote_assist_demo" source="../media/HLS19_remoteAssistHologram_001.jpg":::
+:::image type="content" alt-text="Photo of a worker using HoloLens with Dynamics 365 Remote Assist." source="../media/HLS-19-remoteAssistHologram-001.jpg":::
 
 ### Scenarios
 

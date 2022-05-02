@@ -1,4 +1,4 @@
-:::image type="content" source="../media/21H2-02-hero-image.png" alt-text="HoloLens hero image.":::
+:::image type="content" source="../media/21H2-02-hero-image.png" alt-text="Hero image of HoloLens 2.":::
 
 Microsoft HoloLens 2 is an untethered holographic computer. It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens runs on the Windows Holographic OS, which is based on a "flavor" of Windows 10 that provides users, admins, and developers with a robust, performant, secure, and manageable at-scale platform.
 
@@ -12,7 +12,7 @@ HoloLens 2 has four visible light cameras for head tracking, two infrared camera
 
 The following diagram will help you understand the complexity of a HoloLens 2 device. The external headset controls are simple and user-friendly.
 
-:::image type="content" source="../media/hololens2-exploded-view-diagram.png#lightbox" alt-text="HoloLens exploded diagram of parts." lightbox="../media/hololens2-exploded-view-diagram.png#lightbox":::
+:::image type="content" source="../media/hololens2-exploded-view-diagram.png#lightbox" alt-text="Diagram of HoloLens 2 exploded into parts." lightbox="../media/hololens2-exploded-view-diagram.png#lightbox":::
 
 You'll find a complete description for each of the components you'll be using to operate the HoloLens 2 device in the following table.
 
