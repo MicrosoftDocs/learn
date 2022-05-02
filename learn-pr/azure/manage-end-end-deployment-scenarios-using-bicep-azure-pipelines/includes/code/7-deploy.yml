@@ -102,7 +102,7 @@ stages:
               name: SaveDeploymentOutputs
               displayName: Save deployment outputs into variables
               env:
-                DEPLOYMENT_OUTPUTS: $(deploymentOutputs) # TODO do we need this
+                DEPLOYMENT_OUTPUTS: $(deploymentOutputs)
 
             - task: AzureRmWebAppDeployment@4
               name: DeployWebsiteApp
