@@ -12,7 +12,7 @@ While the BCL enables applications running on different types of devices to shar
 
 There may be times when you need to implement a platform-specific feature. In these situations, you can invoke methods in the platform-specific framework, as highlighted by arrow 3 in the following diagram,
 
-:::image type="content" source="../media/2-architecture.png" alt-text="The .NET MAUI technology stack":::
+:::image type="content" source="../media/2-architecture.png" alt-text="Diagram of the .NET MAUI technology stack. The diagram highlights what was just talked about.":::
 
 ## How does .NET MAUI work?
 
@@ -29,7 +29,7 @@ This example defines the label for the button ("Click me"), and specifies that a
 
 .NET MAUI always generates native code for the target device, so you get optimal performance. .NET MAUI uses "handlers" specific to each platform and UI element to carry out an operation. For example, if you target iOS for the app, a .NET MAUI handler will map this code to an iOS UIButton. If you run on Android, you'll get an Android AppCompatButton. These handlers are accessed indirectly through a control-specific interface provided by .NET MAUI, such as IButton for a button.
 
-:::image type="content" source="../media/2-button-handler.png" alt-text="How .NET MAUI maps a XAML control to a native control":::
+:::image type="content" source="../media/2-button-handler.png" alt-text="Diagram of how .NET MAUI maps a XAML control to a native control. It shows the .NET MAUI control implements an interface which each native handler also implements.":::
 
 > [!NOTE]
 > If you prefer, you can also create the UI dynamically using C# code. This approach enables you to modify the layout according to the environment. For example, you might not want certain controls to appear if the user doesn't have an appropriate level of authorization.
@@ -56,9 +56,9 @@ To create .NET MAUI apps, you currently require Visual Studio version 17.0.0 Pre
 
 Additionally, if you want to build MAUI Blazor apps, you must install the ASP.NET and web development workload
 
-:::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Visual Studio installer showing the workloads required to support .NET MAUI development":::
+:::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio installer showing the workloads required to support .NET MAUI development":::
 
-After you have installed Visual Studio with the appropriate workloads, you must also setup the following items:
+After you have installed Visual Studio with the appropriate workloads, you must also set up the following items:
 
 - The [Visual Studio Single-project MSIX Packaging Tools for VS 2022](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftSingleProjectMSIXPackagingToolsDev17). This is a Visual Studio extension available from the Visual Studio Marketplace. This extension is necessary for building MAUI Windows applications.
 - The Android 31 SDK. You can download and install this SDK using [Android Studio](https://developer.android.com/studio)

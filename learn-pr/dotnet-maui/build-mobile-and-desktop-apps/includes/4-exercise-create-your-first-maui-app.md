@@ -6,17 +6,17 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. Select the **MAUI** app type, select the **.NET MAUI App template**, and then tap **Next**
 
-    :::image type="content" source="../media/4-create-maui-app .png" alt-text="The Create a new project dialog box. The user has selected the .NET MAUI App template.":::
+    :::image type="content" source="../media/4-create-maui-app .png" alt-text="A screenshot of the Create a new project dialog box. The user has selected the .NET MAUI App template.":::
 
 1. On the **Configure your new project** page, name the project **Phoneword**, and save it in a location of your choice. Tap **Create** to create the app.
 
-    :::image type="content" source="../media/4-configure-project.png" alt-text="The Configure you new project dialog box. The user has named the project Phoneword.":::
+    :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user has named the project Phoneword and selected a location on their hard drive to store it.":::
 
 ## Examine the solution structure
 
 1. In the Solution Explorer window, expand the **Phoneword** project. Expand the **Resources** folder and its subfolders, expand the **App.xaml** node and the **MainPage.xaml** node.
 
-    :::image type="content" source="../media/4-phoneword-project.png" alt-text="The Phoneword project in the Solution Explorer window":::
+    :::image type="content" source="../media/4-phoneword-project.png" alt-text="A screenshot of the Phoneword project in the Visual Studio solution explorer window. It shows the files included as part of the project including fonts and images.":::
 
 1. In the project, note the following items:
 
@@ -34,7 +34,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. On the **Project** menu, select **Edit Project File**.
 
-    :::image type="content" source="../media/4-edit-project-file.png" alt-text="The Project menu in Visual Studio. The user has selected the Edit Project File command":::
+    :::image type="content" source="../media/4-edit-project-file.png" alt-text="A screenshot of the Project menu in Visual Studio. The user has selected the Edit Project File command":::
 
 1. In the **\<PropertyGroup\>** element near the start of the file, uncomment the line that enables the target framework for .NET 6.0 running on Windows:
 
@@ -52,15 +52,15 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select the **.net6.0-windows** framework from the list in the frameworks drop-down list box.
 
-    :::image type="content" source="../media/4-set-startup-profile.png" alt-text="The Solution Explorer window. The user has set the Windows.Machine profile as the startup profile for the solution.":::
+    :::image type="content" source="../media/4-set-startup-profile.png" alt-text="A screenshot of the target runtime dropdown in Visual Studio. The user has set the Windows.Machine profile as the startup profile for the solution.":::
 
 1. On the **Debug** menu, select **Start Debugging**. This action will build, deploy, and run the app on Windows:
 
-    :::image type="content" source="../media/4-start-debugging.png" alt-text="The Visual Studio Debug menu. The user has started debugging the app using the Windows Machine profile.":::
+    :::image type="content" source="../media/4-start-debugging.png" alt-text="A screenshot of the Visual Studio debug menu. The user has started debugging the app using the Windows Machine profile.":::
 
 1. Verify that the WinUI version of the app starts up. Select the **Click me** button several times. The count displayed in the window should increment with each tap.
 
-    :::image type="content" source="../media/4-winui-app.png" alt-text="The WinUI app running. The user has tapped the 'Click me' button four times.":::
+    :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the WinUI app running. The user has tapped the 'Click me' button four times. The text on the screen indicates the user has tapped the button four times.":::
 
 1. While the app is still running, return to Visual Studio. You should see the **XAML Live Preview** window displaying the app while it is running.
 
@@ -80,7 +80,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. In the Visual Studio toolbar, select the **Hot Reload** button:
 
-    :::image type="content" source="../media/4-hot-reload-button.png" alt-text="The Visual Studio toolbar. The Apply Code Changes button is highlighted.":::
+    :::image type="content" source="../media/4-hot-reload-button.png" alt-text="A screenshot of the Visual Studio toolbar. The Apply Code Changes button is highlighted.":::
 
 1. Switch back to the app and select the **Click me** button. Verify that the count is now incremented by 5.
 
@@ -95,24 +95,24 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. On the **Tools** menu, select **Android** and then select **Android Device Manager**.
 
-    :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="The Visual Studio tools menu. The user is starting the Android Device Manager.":::
+    :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="A screenshot of the Visual Studio tools menu. The user has selected the Android Device Manager option.":::
 
 1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window select the **Pixel 3a (+ Store)** base device, select the **API 30** OS, and then tap **Create**. Wait while the various libraries are downloaded and the device is configured.
 
-    :::image type="content" source="../media/4-new-device.png" alt-text="The New Device window. The user is creating a new Pixel 3 device.":::
+    :::image type="content" source="../media/4-new-device.png" alt-text="A screenshot of the New Device window from the Android SDK. The user is creating a new Pixel 3 device with a p i 30 selected.":::
 
 1. When the device has been created return to Visual Studio.
 
 1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile, and select the **pixel_31-api_30** device. This is the device you just created.
 
-    :::image type="content" source="../media/4-select-android-emulator.png" alt-text="The Visual Studio toolbar. The user has specified the pixel 31 a p i 30 profile for the Android emulator":::
+    :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user has specified the pixel 3 with the a p i 30 profile for the Android emulator to start debugging with.":::
 
 1. Start debugging use the **pixel_31-api_30** profile. This action will build, deploy, and run the app on the Android device.
 
-    :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="The Visual Studio toolbar. The user has selected the pixel 31 a p i 30 profile.":::
+    :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile has been selected and ready to start debugging with as soon as the user presses the play button.":::
 
 1. When the app starts running on the emulator, tap the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
 
-    :::image type="content" source="../media/4-android-app.png" alt-text="The Android version of the app running in the emulator.":::
+    :::image type="content" source="../media/4-android-app.png" alt-text="A screenshot of the Android version of the Phoneword application running in the selected emulator.":::
 
 1. Return to Visual Studio and stop debugging.

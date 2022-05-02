@@ -14,7 +14,7 @@ You'll continue with the Phoneword solution you created in the previous exercise
 
     :::row:::
         :::column span="2":::
-            :::image type="content" source="../media/6-add-class.png" alt-text="Adding a new class to the Phoneword project":::
+            :::image type="content" source="../media/6-add-class.png" alt-text="A screenshot of the context menu that is shown by right clicking on the PhoneWork project node in the solution explorer of Visual Studio. The add sub menu is expanded with the add class option selected.":::
         :::column-end:::
         :::column span="":::
         :::column-end:::
@@ -24,7 +24,7 @@ You'll continue with the Phoneword solution you created in the previous exercise
 
 1. In the **Add New Item** dialog box, name the class file **PhonewordTranslator.cs**, and then select **Add**.
 
-    :::image type="content" source="../media/6-add-new-item.png" alt-text="The Add New Item dialog box. The user has named the class file PhonewordTranslator.cs":::
+    :::image type="content" source="../media/6-add-new-item.png" alt-text="A screenshot of the Add new item dialog box. The user has named the class file PhonewordTranslator.cs":::
 
 ## Add the translation logic
 
@@ -276,11 +276,11 @@ namespace Core
 
 1. Tap the **Translate** button to convert the default text to a valid phone number. The caption on the **Call** button should change to **Call 1-555-6386284**:
 
-    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="The Phoneword UI. The user has translated the text to a valid phone number.":::
+    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="A screenshot of the Phoneword u i. The user has translated the text to a valid phone number.":::
 
 1. Tap the **Call** button. Verify that a prompt appears asking you to confirm the operation. Select **No**.
 
-    :::image type="content" source="../media/6-prompt.png" alt-text="The Dial a Number prompt":::
+    :::image type="content" source="../media/6-prompt.png" alt-text="A screenshot of the PhoneWord user interface's Dial a Number prompt.":::
 
 1. Return to Visual Studio and stop debugging.
 

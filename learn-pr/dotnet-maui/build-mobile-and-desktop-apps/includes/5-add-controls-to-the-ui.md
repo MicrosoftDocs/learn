@@ -47,7 +47,7 @@ A content page typically displays a view. A view enables you to retrieve and pre
 > [!NOTE]
 > The `ListView` control is supported for backwards compatibility with Xamarin.Forms apps through Xamarin renderers and **FormsCompatibility** mode. For new applications, use the `CollectionView` control.
 
-## Controls and Layouts
+## Controls and layouts
 
 A view can contain a single control such as a button, label, or text boxes. (Strictly speaking, a view is itself a control, so a view can contain another view.). However, a user interface restricted to a single control wouldn't be very useful, so controls are positioned in a layout. A layout defines the rules by which the controls are displayed relative to each other. A layout is also a control, so you can add it to a view. If you look at the default MainPage.xaml file, you'll see this page/view/layout/control hierarchy in action. In this XAML code, the `Grid` element is just another control that enables you to fine-tune the layout of other controls.
 
@@ -71,19 +71,19 @@ Some of the common controls used to define layouts are:
 
 - `StackLayout`, which lays out controls in a top-to-bottom or left-to-right stack depending on an orientation property. The StackLayout has a property named `StackOrientation`, which you can set to `Horizontal` or `Vertical`. On a tablet or phone, modifying this property in your application code enables you to adjust the display if the user rotates the device:
 
-    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="The horizontal and vertical orientations for the StackLayout":::
+    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="A diagram of how the horizontal and vertical orientations for the StackLayout will layout controls.":::
 
 - `AbsoluteLayout`, which lets you set exact coordinates for controls.
 
 - `FlexLayout`, which is similar to `StackLayout` except that it enables you to wrap the child controls it contains if they don't fit in a single row or column. This layout also provides additional options for alignment and adapting to different screen sizes. For example, a FlexLayout control can align its child control to the left, right, or center when arranged vertically. When aligned horizontally, controls can be justified to ensure even spacing. You could use a horizontal `FlexLayout` inside a `ScrollView` to display a horizontally scrollable series of frames (each frame could itself be a vertically arranged `FlexLayout`):
 
-     :::image type="content" source="../media/5-flexlayout-example.png" alt-text="An example of an app running with the FlexLayout rendered to the screen. First an image is rendered, then a title, then a text label. All of those are located within a box.":::
+     :::image type="content" source="../media/5-flexlayout-example.png" alt-text="A screenshot from an app running with the FlexLayout rendered to the screen. First an image is rendered, then a title, then a text label then a button. All of those are rendered vertically within a box.":::
 
 - `Grid`, which lays out its controls according to a column and row location we set. You can define the column and row sizes as well as spans, so grid layouts don't necessarily have a "checkerboard look" to them.
 
 The image below summarizes the key attributes of these common layout types:
 
-:::image type="content" source="../media/5-layout-types.png" alt-text="The layouts most frequently used in a .NET MAUI U I. The stack layout shows 4 boxes arranged vertically. The absolute layout shows 4 boxes arranged on the screen exactly where the developer specified. The Flex Layout shows several boxes laid out on the screen to best make use of the screen area. The Grid layout shows several boxes on the screen laid out in a grid pattern.":::
+:::image type="content" source="../media/5-layout-types.png" alt-text="A diagram of the layouts most frequently used in a .NET MAUI U I. The stack layout shows 4 boxes arranged vertically. The absolute layout shows 4 boxes arranged on the screen exactly where the developer specified. The Flex Layout shows several boxes laid out on the screen to best make use of the screen area. The Grid layout shows several boxes on the screen laid out in a grid pattern.":::
 
 All controls have properties. You can set initial values for these properties using XAML. In many cases, you can modify these properties in the C# code of your application. For example, the code that handles the `Clicked` event for the **Click me** button in the default .NET MAUI app looks like this:
 

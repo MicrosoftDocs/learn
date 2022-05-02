@@ -18,23 +18,23 @@ quiz:
   questions:
   - content: "Which environment provides the runtime support for a WinUI application?"
     choices:
-    - content: "Mono"
+    - content: "The Mono runtime"
       isCorrect: false
-      explanation: "No. WinUI applications run using WinRT"
-    - content: "WinRT"
+      explanation: "Incorrect, Mono applications run using WinRT."
+    - content: "The WinRT runtime"
       isCorrect: true
-      explanation: "This is the correct answer"
+      explanation: "Correct, WinRT provides runtime support for WinUI."
     - content: "WinMAUI"
       isCorrect: false
-      explanation: "No. WinUI applications run using WinRT"
-  - content: "Which markup language can you use to layout the UI for a .NET MAUI application?"
+      explanation: "Incorrect. WinMAUI isn't an architecture."
+  - content: "Which markup language can you use to lay out the UI for a .NET MAUI application?"
     choices:
     - content: "JSON"
       isCorrect: false
-      explanation: "No. You can define the UI for a .NET MAUI app using XAML"
+      explanation: "Incorrect, JSON isn't a markup language."
     - content: "CSV"
       isCorrect: false
-      explanation: "No. You can define the UI for a .NET MAUI app using XAML"
+      explanation: "Incorrect, CSV isn't a markup language."
     - content: "XAML"
       isCorrect: true
-      explanation: "This is the correct answer"
+      explanation: "Correct, XAM is the language you use to lay out a .NET MAUI application's UI."
