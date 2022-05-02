@@ -1,6 +1,9 @@
 parameters:
 - name: environmentType
   type: string
+- name: deploymentDefaultLocation
+  type: string
+  default: westus
 
 stages:
 
@@ -13,18 +16,17 @@ stages:
       variables:
       - group: ToyWebsite${{parameters.environmentType}}
       steps:
-        - task: AzureCLI@2
+        - task: AzureResourceManagerTemplateDeployment@3
           name: RunPreflightValidation
           displayName: Run preflight validation
           inputs:
-            azureSubscription: ToyWebsite${{parameters.environmentType}}
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              az deployment group validate \
-                --resource-group $(ResourceGroupName) \
-                --template-file deploy/main.bicep \
-                --parameters environmentType=$(EnvironmentType)
+            connectedServiceName: ToyWebsite${{parameters.environmentType}}
+            location: ${{parameters.deploymentDefaultLocation}}
+            deploymentMode: Validation
+            resourceGroupName: $(ResourceGroupName)
+            csmFile: deploy/main.bicep
+            overrideParameters: >
+              -environmentType $(EnvironmentType)
 
 - ${{ if eq(parameters.environmentType, 'Production') }}:
   - stage: Preview_${{parameters.environmentType}}

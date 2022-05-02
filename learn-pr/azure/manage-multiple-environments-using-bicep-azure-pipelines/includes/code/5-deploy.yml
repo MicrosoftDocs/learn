@@ -5,6 +5,9 @@ parameters:
   type: string
 - name: serviceConnectionName
   type: string
+- name: deploymentDefaultLocation
+  type: string
+  default: westus
 
 stages:
 
@@ -15,18 +18,17 @@ stages:
     - job: ValidateBicepCode
       displayName: Validate Bicep code
       steps:
-        - task: AzureCLI@2
+        - task: AzureResourceManagerTemplateDeployment@3
           name: RunPreflightValidation
           displayName: Run preflight validation
           inputs:
-            azureSubscription: ${{parameters.serviceConnectionName}}
-            scriptType: 'bash'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              az deployment group validate \
-                --resource-group ${{parameters.resourceGroupName}} \
-                --template-file deploy/main.bicep \
-                --parameters environmentType=${{parameters.environmentType}}
+            connectedServiceName: ${{parameters.serviceConnectionName}}
+            location: ${{parameters.deploymentDefaultLocation}}
+            deploymentMode: Validation
+            resourceGroupName: ${{parameters.resourceGroupName}}
+            csmFile: deploy/main.bicep
+            overrideParameters: >
+              -environmentType ${{parameters.environmentType}}
 
 - ${{ if eq(parameters.environmentType, 'Production') }}:
   - stage: Preview_${{parameters.environmentType}}
