@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-optimize-operational-resources-sql-server
 metadata:
-  title: Monitor and optimize operational resources in SQL Server
-  description: Configure hardware and server resources for optimum performance after establishing a baseline. Identify sources of performance problems. Troubleshoot using Azure SQL Intelligent Insights.
-  ms.date: 10/14/2020
+  title: Monitor and optimize operational resources in Azure SQL
+  description: Monitor and optimize operational resources in Azure SQL
+  ms.date: 04/28/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor and optimize operational resources in SQL Server
+title: Monitor and optimize operational resources in Azure SQL
 prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal
@@ -27,9 +27,7 @@ products:
 - azure
 modules:
 - learn.wwl.describe-performance-monitoring
-- learn.wwl.explore-causes-of-performance-issues
 - learn.wwl.configure-sql-server-resources-for-optimal-performance
-- learn.wwl.configure-databases-for-performance
-- learn.wwl.describe-performance-related-maintenance-tasks-sql-server
+- learn.wwl.configure-databases-for-optimal-performance
 trophy:
   uid: learn.wwl.monitor-optimize-operational-resources-sql-server.trophy
