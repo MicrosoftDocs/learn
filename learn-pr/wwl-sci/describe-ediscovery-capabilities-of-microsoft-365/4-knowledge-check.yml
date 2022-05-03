@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2022
+  ms.date: 05/03/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -41,9 +41,9 @@ quiz:
       explanation: "Correct. The eDiscovery (Premium) solution allows you to collect and copy data into review sets, where you can filter, search, and tag content so you can identify and focus on content that's most relevant."
   - content: "The compliance team needs to preserve the records for high-value crucial events that can help the organization investigate possible security or compliance breaches and determine the scope of compromise. Which solution can best address that need?"
     choices:
-    - content: "Auditing (Premium)."
+    - content: "Audit (Premium)."
       isCorrect: true
-      explanation: "Correct. Auditing (Premium) helps organizations to conduct forensic and compliance investigations by providing access to these crucial events."
+      explanation: "Correct. Audit (Premium) helps organizations to conduct forensic and compliance investigations by providing access to these crucial events."
     - content: "Search."
       isCorrect: false
       explanation: "Incorrect. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer."
