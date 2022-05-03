@@ -3,8 +3,8 @@ uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio
 metadata:
   title: Share your location as a text message using Azure Functions and Twilio
   description: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
-  ms.date: 09/24/2018
-  author: jimbobbennett 
+  ms.date: 05/06/2022
+  author: acomfort248 
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -21,7 +21,9 @@ abstract:  |
   - Bind the Azure Functions to Twilio to send an SMS message
   - Publish an Azure Functions app to Azure
 prerequisites: | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  - Visual Studio 
+  - A free Twilio account 
+  - [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
 levels:
 - intermediate

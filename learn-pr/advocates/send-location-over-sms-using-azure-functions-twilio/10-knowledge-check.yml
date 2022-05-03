@@ -38,3 +38,4 @@ quiz:
       - content: "Application settings published to Azure"
         isCorrect: false
         explanation: "Incorrect. The Application Settings dialog displays application settings with both a local and remote value."
+        

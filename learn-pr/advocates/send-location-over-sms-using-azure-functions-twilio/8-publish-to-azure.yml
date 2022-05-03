@@ -4,9 +4,9 @@ title: Exercise - Publish the function to Azure
 metadata:
   title: Publish the function to Azure
   description: Publish the function to Azure, configure it, and call it from the mobile app
-  ms.date: 09/24/2018
+  ms.date: 05/06/2022
   #TODO: Update with real author name.
-  author: adrianstevens
+  author: acomfort248
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
