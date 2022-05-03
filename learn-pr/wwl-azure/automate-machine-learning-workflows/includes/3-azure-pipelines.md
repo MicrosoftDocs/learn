@@ -1,6 +1,6 @@
 One option to automate workflows is to use **Azure Pipelines**, which is part of the  Azure DevOps Services. With Azure Pipelines, you can automatically build, test, and deploy your code.
 
-Within a machine learning project, you can use Azure Pipelines to create any Azure Machine learning workspace assets like the workspace itself, data assets, compute clusters, or jobs to run an Azure Machine Learning pipeline.
+Within a machine learning project, you can use Azure Pipelines to create any Azure Machine learning workspace assets like the workspace itself, data assets, compute clusters, or jobs to run Azure Machine Learning pipelines.
 
 > [!Note]
 > To use Azure Pipelines with Azure Machine Learning pipelines, you need to [connect Azure DevOps to your Azure Machine Learning workspace through a **service connection**](/learn/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
@@ -9,15 +9,15 @@ You'll learn how to use Azure Pipelines to run an Azure Machine Learning pipelin
 
 ## Create an Azure Pipeline
 
-Azure Pipelines helps you to automate your work by executing steps whenever a trigger occurs. To use Azure Pipelines to automate machine learning workloads, an Azure Machine Learning pipeline will be triggered. 
+Azure Pipelines helps you to automate your work by executing steps whenever a trigger occurs. To use Azure Pipelines to automate machine learning workloads, you'll trigger an Azure Machine Learning pipeline with Azure Pipelines. 
 
 ![Diagram of the hierarchy of pipelines.](../media/03-01-pipeline-hierarchy.png)
 
-1. Trigger an Azure Pipeline. Commonly with a change to the repo (commit or pull request).
-2. Run the Azure Pipeline, a group of jobs which consist of steps.
-3. A step initiates an Azure Machine Learning pipeline.
-4. An Azure Machine Learning pipeline runs scripts or Azure Machine Learning components.
-5. A script or component represents a machine learning task.
+1. **Trigger** an Azure Pipeline. Commonly with a change to the repo (commit or pull request).
+2. Run the **Azure Pipeline**, a group of jobs which consist of steps.
+3. A **step** initiates an Azure Machine Learning pipeline.
+4. An **Azure Machine Learning pipeline** runs scripts or Azure Machine Learning components.
+5. A **script** or **component** represents a machine learning task.
 
 To create the Azure Pipeline, you define the steps you want to include in a YAML file. In the YAML file of the Azure Pipeline, you'll include:
 
@@ -99,7 +99,7 @@ After you've created the YAML files and stored it in your Azure Repo, you can co
 6. Choose the path that points to the YAML file you created for the Azure Pipeline.
 7. After you review the pipeline, you can **Save and run**. 
 
-The pipeline is triggered by a commit to the **main** branch. When you configure the pipeline, Azure Pipelines will commit a change to the **main** branch, which will trigger the pipeline to run for the first time. Anytime after set-up, you can trigger the pipeline by committing to the repo from Visual Studio Code or Azure Repos.
+The pipeline is triggered by a commit to the **main** branch. When you configure the pipeline, Azure Pipelines will commit a change to the **main** branch, which will trigger the pipeline to run for the first time. Anytime after set-up, you can trigger the pipeline by pushing commits to the repo from Visual Studio Code or Azure Repos.
 
 ![Screenshot of failed job in Azure Pipelines.](../media/03-03-failed-job.png)
 

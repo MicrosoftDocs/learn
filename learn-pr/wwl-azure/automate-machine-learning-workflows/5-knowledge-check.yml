@@ -27,12 +27,12 @@ quiz:
       explanation: "Incorrect. Store YAML files for Azure Pipelines in this directory when working with Azure DevOps."
   - content: "An Azure Machine Learning pipeline to train a model is triggered with Azure Pipelines. All jobs in Azure Pipelines ran successfully but no new model is found in the specified outputs. Where should the data scientist navigate to, to find the error message?"
     choices:
-    - content: "In the **Pipelines** tab of Azure DevOps."
+    - content: "The **Pipelines** tab of Azure DevOps."
       isCorrect: false
       explanation: "Incorrect. When all jobs run successfully, no error messages will show."
-    - content: "In the **Experiments** tab in Azure Machine Learning."
+    - content: "The **Experiments** tab in Azure Machine Learning."
       isCorrect: true
       explanation: "Correct. Error messages are stored with the output of an experiment run."
-    - content: "In the **Models** tab in Azure Machine Learning."
+    - content: "The **Models** tab in Azure Machine Learning."
       isCorrect: false
       explanation: "Incorrect. Only trained and registered models are visible in the Models tab."

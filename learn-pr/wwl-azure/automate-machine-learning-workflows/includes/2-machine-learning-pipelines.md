@@ -19,6 +19,8 @@ Assuming you experiment in a Jupyter notebook (`.ipynb` files), you'll want to c
 - Creating unit tests for each Python script.
 - Create a pipeline to group scripts into a workflow that can be automated.
 
+Once your code is ready for production, you can automate the execution of scripts with Azure Machine Learning pipelines.
+
 ## Create Azure Machine Learning pipelines
 
 The concept of a pipeline is found throughout various tools, often providing a way to group tasks in a certain order. The main advantage of a pipeline is that you can schedule it or trigger it to run.
