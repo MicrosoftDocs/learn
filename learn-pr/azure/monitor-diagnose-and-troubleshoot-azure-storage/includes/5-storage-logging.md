@@ -1,97 +1,53 @@
-Storage Analytics logging records each operation performed in your storage account, as well as the outcome of these operations. The storage log provides details about each request made rather than providing the minute-by-minute summary of operations that the metrics show. Using the logging information, you can examine the nature of requests made to a storage account and whether these requests are successful.
+Azure Storage resource logs capture each operation performed in your storage account, as well as the outcome of these operations. These logs provide details about each request made rather than providing the minute-by-minute summary of operations that the metrics show. Using the logging information, you can examine the nature of requests made to a storage account and whether these requests are successful.
 
-In the example scenario, you've decided that you need to trace each file upload and download operation done against the new Customer Portal. Azure Storage Analytics logging provides an ideal way to capture this information.
+In the example scenario, you've decided that you need to trace each file upload and download operation done against the new Customer Portal. Azure Storage resource logs  provide an ideal way to capture this information.
 
-In this unit, you'll learn about Storage Analytics logging. You'll see how to enable logging, the different types of information captured when you enable logging, and how you might use this information to detect problems that might occur when an application uses Azure Storage.
+In this unit, you'll learn about Azure Storage resource logs in Azure Monitor. You'll see the different types of information captured in logs, and how you might use this information to detect problems that might occur when an application uses Azure Storage.
 
-## Azure Storage Analytics logging
+## Resource Logs in Azure Monitor
 
-Storage Analytics logs detailed information about requests to your storage service. This information is used to monitor individual requests and to diagnose issues with a storage service. Log entries are created when requests are made against the service endpoint. However, requests are recorded on a *best effort* basis. Occasionally, a small number of requests might not be logged, and others might be duplicated. You shouldn't treat the log as a definitive list of operations, but rather a means of examining the workload for the storage account.
+Sometimes you want to see more detail about storage transactions than performance-related metrics. Metrics are useful for tracking overall trends in performance or demand, but monitoring the transaction metrics can't reveal the requested URLs. Also, none of the available storage metrics can give error messages that relate to a specific request.
 
-Storage Analytics logs record authenticated and anonymous requests made to a storage account. The following types of authenticated requests are logged:
+Resource logs in Azure Monitor capture this kind of detailed information and they are useful for examining the detail behind specific requests. For example, you can use these logs if you want to know how many requests for a specific resource are authenticated or anonymous, or successful or failed.
 
-- Successful requests
-- Failed requests, including timeout, throttling, network, authorization, and other errors
-- Requests using a Shared Access Signature (SAS) or OAuth, including failed and successful requests
+To collect resource logs, you must create a diagnostic setting. Resource logs will list successful and failed requests for a storage account. Requests are recorded as read, write, or delete operations against the specific storage service: Azure Blob Storage, Table Storage, or Queue Storage. By using a diagnostic setting, you can route logs to Log Analytics, a storage account, stream them to an event hub, or to a partner solution.
 
-Details for the following types of anonymous requests are also recorded:
+You can use resource logs to review different types and frequency of requests, or to troubleshoot failed requests. Logs are generated only when transactions occur, and only for the specific service endpoint. So if you're using storage in the Blob Storage and Queue Storage endpoints, but only the Blob Storage endpoint has requests or transactions, then the system will create logs only for Blob Storage.
 
-- Successful requests
-- Server errors
-- Time out errors for both client and server
-- Failed GET requests with error code 304 (*Not Modified*)
+When you enable logging, these types of requests are logged:
 
-Requests made by the Storage Analytics service itself aren't recorded.
+* Authenticated requests
+* Anonymous requests
+* Successful requests
+* Failed requests, such as timeouts, throttling, network errors, and authorization errors
+* Server errors
+* Requests that use a shared access signature, both failed and successful
+* Timeout errors for client and server
+* Requests to analytics data
+* GET requests with error code 304 ("Not Modified")
 
-Diagnostic data the Storage Analytics service collects is written to blobs in the **\$logs** blob container in your storage account. The data in the container is structured as a hierarchical collection of blobs, organized by storage service (blob, file, queue, table) and the date, in the format **\<storage service\>/YYYY/MM/DD/hhmm/\<counter\>.log**.
+## Storage of resource logs in Azure Monitor
 
-## Enable Storage Analytics logging
+Resource logs are automatically generated for your storage account, but those logs aren't available to be viewed unless you send them to a destination. You specify where to send them by using a diagnostic setting.
 
-Unlike Storage Analytics metrics, Storage Analytics logging isn't enabled by default for your storage account. You can enable it in the Azure portal from the **Diagnostic settings (classic)** page. You can specify whether you want to record read, write, and delete operations performed against your storage account. You enable logging individually for each service (blob, file, table, queue).
+When you create a diagnostic setting, you'll choose the type of storage that you are interested in routing logs for (For example: Blob Storage or File Storage). Then, you'll choose which types of operations you want to appear in logs (For example: read, write, or delete operations). Finally, you'll choose where you would like logs to be sent. You can send log to any of these locations:
 
-![Screenshot of the diagnostic settings page in the Azure portal, showing how to enable logging.](../media/5-enable-logging.png)
+- Log Analytics
 
-> [!NOTE]
-> The portal gives you a choice in the format of the data written to the log records. You can select Logging version 1.0 or Logging version 2.0. Logging Version 2.0 provides additional fields to support authentication mechanisms such as OAuth 2.0 and Azure Active Directory. It is recommended for all new storage accounts to use Logging version 2.0. For more information on these formats, see [Storage Analytics log format](/rest/api/storageservices/storage-analytics-log-format).
+- Storage account
 
-You can also enable Storage Analytics programmatically via PowerShell or the Azure CLI. If you're using PowerShell, run the `Set-AzureStorageServiceLoggingProperty` cmdlet:
+- Event hub
 
-```powershell
-$context = New-AzureStorageContext -StorageAccountName <storage account name> -StorageAccountKey <storage account key>
+- A partner solution
 
-Set-AzureStorageServiceLoggingProperty -Context $context -ServiceType Blob -LoggingOperations read,write,delete -RetentionDays 7
-```
+You can access logs sent to a Log Analytics workspace by using Azure Monitor log queries.
 
-You can disable logging for a service by running the same command and setting the `LoggingOperations` parameter to `none`.
+If you route logs to a storage account, those logs appear as blobs stored to a container. Data is collected and stored inside a single blob as a line-delimited JSON payload. The name of the blob follows this naming convention:
 
-If you're using the Azure CLI, run the `az storage logging update` command to enable logging. The example below enables read, write, and delete (`rwd`) logging for blob (`b`) storage:
+`https://<destination-storage-account>.blob.core.windows.net/insights-logs-<storage-operation>/resourceId=/subscriptions/<subscription-ID>/resourceGroups/<resource-group-name>/providers/Microsoft.Storage/storageAccounts/<source-storage-account>/blobServices/default/y=<year>/m=<month>/d=<day>/h=<hour>/m=<minute>/PT1H.json`
 
-```azurecli
-az storage logging update \
-    --log rwd \
-    --services b \
-    --retention 7 \
-    --version 2 \
-    --connection-string <storage account connection string>
-```
+Logs sent to an event hub aren't stored as a file, but you can verify that the event hub received the log information by opening your event hub in the Azure portal, and then examining the incoming messages count.
 
-## Download logs
+You can also send platform metrics and logs to certain Azure Monitor partners. You must first install a partner integration into your subscription. Configuration options will vary by partner.
 
-Like the **\$Metrics** tables, the **\$logs** container isn't visible to many tools. However, you can read blobs in the **\$logs** container using the desktop version of Azure Storage Explorer, using PowerShell, using the AzCopy command as described in unit 2, or by writing your own code. The example below shows PowerShell. The storage account is specified by using the **New-AzureStorageContext** cmdlet.
-
-```PowerShell
-$context = New-AzureStorageContext -StorageAccountName <your-storage-account-name> -StorageAccountKey <storage account key>
-
-$logBlobs = Get-AzureStorageBlob -Container '$logs' -Context $context
-$destination = "C:\Logs"
-
-foreach ($logFile in $logBlobs)
-{
-      Get-AzureStorageBlobContent -Container '$logs' -Blob $logFile.Name -Destination $destination -Context $context
-}
-
-```
-
-Each blob holding diagnostic information includes metadata you can query to filter the diagnostic information. This metadata includes type of operation (read, write, or delete), and the earliest and latest time for operations in the blob. The following example shows the PowerShell `Get-AzureStorageBlob` command with a filter to list all blobs that contain diagnostic information about blob requests made on 20 June 2019 between 3:00 pm and 3:59 pm. 
-
-```PowerShell
-Get-AzureStorageBlob -Context $context -Container '$logs' |  
-Where-Object {  
-    $_.Name -match 'blob/2019/06/20/1500'
-} |  
-ForEach-Object {  
-    "{0}  {1}  {2}" –f $_.Name,
-    $_.ICloudBlob.Metadata.StartTime,
-    $_.ICloudBlob.Metadata.EndTime  
-}
-```
-
-In this case, the output below shows three blobs named **000000.log**, **000001.log**, and **000002.log**. You can see the exact periods that they encompass.  
-
-```Text
-blob/2019/06/20/1500/000000.log  2019-06-20T15:03:38.2255816Z  2019-06-20T15:09:13.9255710Z
-blob/2019/06/20/1500/000001.log  2019-06-20T15:13:26.1037441Z  2019-06-20T15:13:26.2978805Z
-blob/2019/06/20/1500/000002.log  2019-06-20T15:19:05.7895237Z  2019-06-20T15:19:05.8135391Z
-```
-
-As well as using PowerShell, you can download these blobs from the **\$logs** container using the AzCopy utility, as described in the previous unit.
+You can't set a retention policy for log data. If you send logs to Log Analytics, you can manage the data retention period at the workspace level or even specify different retention settings by data type. If you archive logs to a storage account, you can manage the retention policy of a log container by defining a lifecycle management policy.

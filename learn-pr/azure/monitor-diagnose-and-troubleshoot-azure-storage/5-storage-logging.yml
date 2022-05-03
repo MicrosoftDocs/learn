@@ -2,7 +2,7 @@
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.5-storage-logging
 metadata:
   title: Troubleshoot with storage logging
-  description: In this unit, we'll discuss the methods you use to enable, access, and download storage account analytics logs.
+  description: In this unit, we'll learn about resource logs and how to route them to various destinations for analysis.
   ms.date: 11/15/2019
   author: normesta
   ms.author: normesta
