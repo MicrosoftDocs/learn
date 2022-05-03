@@ -61,4 +61,4 @@ The [documentation](/azure/azure-sql/database/service-tiers-general-purpose-busi
 
 ### Management interfaces
 
-To learn more about the tools, you can check out the [tools documentation](/sql/tools/overview-sql-tools?azure-portal=true&view=sql-server-ver15), which includes information about and guidance on the various options discussed in this module (and more).
+To learn more about the tools, you can check out the [tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module (and more).
