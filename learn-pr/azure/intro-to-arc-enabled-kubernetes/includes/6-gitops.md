@@ -8,7 +8,7 @@ In the context of Azure Arc-enabled Kubernetes clusters, a Git repository hosts 
 
 Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool. The Flux extension is installed in the cluster, and is then used to configure the pods responsible for tracking changes to the Git repository you designate and applying them to the local cluster. In addition, the containerized Flux operator also periodically reviews the existing cluster configuration to ensure that it matches the one residing in the Git repository. If there is a configuration drift, the Flux agent remediates it by reapplying the desired configuration.
 
-:::image type="content" source="../media/arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update.":::
+:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update.":::
 
 GitOps simplifies standardizing Kubernetes configuration across your organization. You can define a baseline configuration that you want to apply to every cluster and its components, including, for example, the delegation model, monitoring and logging settings, as well as characteristics of cluster-wide services.
 
@@ -19,7 +19,7 @@ GitOps associates your Kubernetes cluster with one or more Git repositories, whe
 > [!NOTE]
 > When using Helm charts, the Flux operator interacts with the containerized Helm operator to deploy packaged applications.
 
-![A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc-enabled clusters.](../media/6-arc-enabled-k8s-gitops.png)
+:::image type="content" source="A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc-enabled clusters." alt-text="Diagram of the GitOps flow showing an application update.":::
 
 After the microsoft.flux cluster extension is installed, you can create one or more fluxConfigurations resources that sync your Git repository sources to the cluster and reconcile the cluster to the desired state. With GitOps, you can use your Git repository as the source of truth for cluster configuration and application deployment.
 

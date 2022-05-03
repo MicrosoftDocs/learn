@@ -41,7 +41,7 @@ As the business technology landscape evolves, it can become increasingly complex
 
 Azure Arc is one of these solutions. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. Azure Arc provides a centralized, scalable, and consistent governance and management platform spanning multi-cloud and on-premises. It facilitates adoption of automation, single-pane-of-glass monitoring and comprehensive security, and enables a cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc allows you to continue using traditional ITOps tools and practices as you transition to the DevOps model to fully benefit from cloud native architectural and operational patterns.
 
-![Diagram illustrating different scenarios that leverage Azure Arc to optimize administration of SQL Server instances residing on-premises or hosted by third-party cloud providers. The first group of scenarios consists of SQL Server instances running on physical servers or virtual machines. The second group of scenarios comprises on-premises, third-party cloud hosted Kubernetes clusters, or Azure Kubernetes Service clusters running on Azure Stack HCI, with Azure Arc data controller serving as an intermediary management layer. All of these scenarios offer integration with a range of Azure services, such as Azure Monitor and Log Analytics, Azure Policy, Microsoft Defender for Cloud, and Microsoft Sentinel.](../media/2-azure-arc.png)
+:::image type="content" source="../media/2-azure-arc.png" alt-text="Diagram showing the GitOps workflow for Azure Arc-enabled Kubernetes, including an application update.":::
 
 ### What types of resources support Azure Arc?
 
