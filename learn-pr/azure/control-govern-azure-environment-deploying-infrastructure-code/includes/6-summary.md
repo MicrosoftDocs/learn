@@ -43,5 +43,7 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 Azure security and governance include many elements. The following links provide more information about the topics introduced in this module.
 
 - [Break-glass accounts in Azure AD](/azure/active-directory/roles/security-emergency-access)
-- [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)
+- Azure AD Privileged Identity Management
+  - [What is Privileged Identity Management and why use it?](https://medium.com/@olafwrieden/what-is-privileged-identity-management-and-why-use-it-7f383b3b797a) (blog)
+  - [Privileged Identity Management documentation](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Microsoft Sentinel](/azure/sentinel/overview)
