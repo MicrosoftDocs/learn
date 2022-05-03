@@ -4,9 +4,9 @@ title: Check your knowledge
 metadata:
   title: Summary and clean-up
   description: Knowledge check
-  ms.date: 09/24/2018
+  ms.date: 05/06/2022
   #TODO: Update with real author name.
-  author: adrianstevens
+  author: acomfort248
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -19,18 +19,22 @@ quiz:
       choices:
       - content: "By returning the SMS messages as the return value of the Function"
         isCorrect: false
+        explanation: "Incorrect. Bindings for Azure Functions are defined using parameters to the function."
       - content: "A function parameter"
         isCorrect: true
-        explanation: "SMS messages are added to a collection passed to the function as a parameter decorated with the `[TwilioSms]` attribute. The Function's runtime will send these messages to Twilio once the function returns."
+        explanation: "Correct. SMS messages are added to a collection passed to the function as a parameter decorated with the `[TwilioSms]` attribute. The Function's runtime will send these messages to Twilio once the function returns."
       - content: "Direct call to the Twilio API"
         isCorrect: false
+        explanation: "Incorrect. Sending SMS messages via Twilio requires an output binding that's configured with your account subscription ID (SID) and auth token."
 
     - content: "Where do you define your Twilio account SID and auth token when running your function locally?"
       choices:
       - content: "In the `local.settings.json` file."
         isCorrect: true
-        explanation: "The `local.settings.json` file is used to store local settings that are only used when running locally, not when published to Azure. Be careful to not check this into source code control if it contains private keys and your repo is public."
+        explanation: "Correct. The `local.settings.json` file is used to store local settings that are only used when running locally, not when published to Azure. Be careful to not check this into source code control if it contains private keys and your repo is public."
       - content: "In the `[TwilioSms]` attribute"
         isCorrect: false
+        explanation: "Incorrect. The `[TwilioSms]` attribute includes the SID and auth token parameters, not the variables."
       - content: "Application settings published to Azure"
         isCorrect: false
+        explanation: "Incorrect. The Application Settings dialog displays application settings with both a local and remote value."
