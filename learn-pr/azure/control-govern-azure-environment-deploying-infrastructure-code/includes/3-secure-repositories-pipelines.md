@@ -1,25 +1,25 @@
-When you use automation to deploy your infrastructure, your pipeline and repository becomes very powerful and important because they represent the only way that changes are applied to your controlled environments.
+When you use automation to deploy your infrastructure, your pipeline and repository become powerful and important because they represent the only way that changes are applied to your controlled environments.
 
-There are many different parts of your Azure DevOps organization, GitHub repository, and pipelines that each need to be protected. The table below provides some of the most important elements to protect, and an example of a vulnerability that might occur if you don't protect it adequately.
+Many parts of your Azure DevOps organization, GitHub repository, and pipelines need to be protected. The table below provides some of the most important elements to protect, along with examples of vulnerabilities that might occur if you don't protect those elements adequately.
 
 | Element to protect | Example vulnerability |
 |-|-|
 | Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | A disgruntled ex-employee deletes your code repository. |
-| Important branches in your repository, and what needs to happen to change the code on those branches. | Somebody accidentally commits some insecure Bicep code onto your repository's *main* branch. |
+| Important branches in your repository, and what needs to happen to change the code on those branches. | Somebody accidentally commits some nonsecure Bicep code onto your repository's *main* branch. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | Somebody forgets to test the code they've just written, and it doesn't work correctly when it's released to production. |
 | The pipeline definition. | Somebody inadvertently adds a pipeline step that writes a database connection string into the pipeline's log. |
 | The agents or runners that execute your pipeline. | A pipeline running against a draft pull request installs a security vulnerability onto the agent, which is later used for a production deployment. |
 | Any third-party tasks or components that might run within your pipeline. | A third-party pipeline task sends your service principal's credentials to a malicious website. |
 | The service principals that your pipeline uses to access Azure. | A non-production service principal accidentally makes a change to your production environment. |
-| The secrets that your pipeline uses to access external systems. | A team member writes a new pipeline definition file for a prototype, and accidentally connects it to your production environment. |
+| The secrets that your pipeline uses to access external systems. | A team member writes a new pipeline definition file for a prototype and accidentally connects it to your production environment. |
 
-Throughout the rest of this unit, you'll learn about some of the approaches you can use to apply governance and controls around your code repository and deployment pipelines, both in Azure DevOps and GitHub.
+Throughout the rest of this unit, you'll learn about some of the approaches that you can use to apply governance and controls around your code repository and deployment pipelines, both in Azure DevOps and in GitHub.
 
 ## Manage users and permissions
 
-Consider how you'll grant access to your Azure DevOps organization or GitHub repository, including both who has access and what they can do.
+Consider how you'll grant access to your Azure DevOps organization or GitHub repository. Think about who has access and what they can do.
 
-It's a good practice to use your organization's Azure AD as your pipeline's identity provider. Then, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
+It's a good practice to use your organization's Azure Active Directory (Azure AD) instance as your pipeline's identity provider. Then, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
 
 > [!NOTE]
 > To use Azure AD integration with GitHub, your organization needs a GitHub Enterprise license.
