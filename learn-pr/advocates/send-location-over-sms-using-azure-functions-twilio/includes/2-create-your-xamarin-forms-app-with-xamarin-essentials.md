@@ -1,35 +1,33 @@
 The application you're building is a cross-platform mobile app that talks to the Azure Functions to share your location. In this unit, you'll create a blank mobile app using Visual Studio and install a NuGet package that has an API for getting the user's location.
 
-To complete the steps in this unit, you need Xamarin.Forms cross-platform UI toolkit installed in your Visual Studio. If you do not have this already, visit [installing Xamarin](/xamarin/get-started/installation/?tabs=windows).
+To complete the steps in this unit, you need Xamarin.Forms cross-platform UI toolkit and the Universal Windows Platform Development workload installed in your Visual Studio. If you do not have this already, visit [installing Xamarin](/xamarin/get-started/installation/?tabs=windows).
 
 ## Create the Xamarin.Forms project
 
 1. From Visual Studio, select *File > New > Project...*.
 
-1. From the tree on the left-hand side, select *Visual C# > Cross-Platform* and then select *Mobile App (Xamarin.Forms)* from the panel in the center.
+1. Use the search bar to find *Mobile App (Xamarin.Forms)*, select it, and click **Next**.
 
 1. Name the solution "ImHere".
 
 1. Choose an appropriate location for the solution.
 
-1. Click **OK**.
+1. Click **Create**.
 
     ![The New Solution dialog.](../media/2-new-solution-dialog.png)
 
-1. From the **New Cross Platform App** dialog, select the *Blank App* template.
+1. From the **New Mobile App** dialog, select the *Blank App* template.
 
-1. For this module you will build a UWP app, so uncheck iOS and Android and leave UWP checked.
+1. For this module you will build a UWP app, so uncheck iOS and Android and leave Windows UWP checked.
 
-1. For the *Code Sharing Strategy*, select **.NET Standard**.
-
-1. Click **OK**.
+1. Click **Create**.
 
     ![The configure new solution dialog.](../media/2-configure-solution-dialog.png)
 
 Visual Studio will create two projects for you
 
-   - a UWP app called `ImHere.UWP`
-   - a .NET Standard library, `ImHere`
+- a UWP app called `ImHere.UWP`
+- a .NET Standard library, `ImHere`
 
 Xamarin.Forms apps are made up of two parts
     - one or more platform-specific app projects, and
@@ -43,10 +41,10 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Right-click on the `ImHere` solution (the top level solution, not the `ImHere` .NET Standard project) in the Visual Studio Solution Explorer and select *Manage NuGet Packages for Solution...*.
 
-1. Select the **Browse** tab and search for "Xamarin.Essentials". This package is currently available as a prerelease NuGet package, so check the *include prelease* box.
+1. Select the **Browse** tab and search for "Xamarin.Essentials".
 
     > [!TIP]
-    > If you do not see the Xamarin.Essentials NuGet package, double check that *include prelease* is checked. 
+    > If you do not see the Xamarin.Essentials NuGet package, double check that *include prelease* is checked.
 
 1. Select the **Xamarin.Essentials** NuGet package.
 

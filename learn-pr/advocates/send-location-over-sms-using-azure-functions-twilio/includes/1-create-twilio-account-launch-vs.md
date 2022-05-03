@@ -26,7 +26,7 @@ To be able to send SMS messages from an Azure Function, you'll need a Twilio acc
 
     ![Screenshot of the Account Info panel.](../media/project-info.png)
 
-1. Note your **ACCOUNT SID** and **AUTH TOKEN** because you will need these values later.
+1. Note your **Account SID** and **Auth Token** because you will need these values later.
 
 ## Launch Visual Studio
 
@@ -39,4 +39,4 @@ Launch Visual Studio 2022 on your system.
 In this unit, you created a Twilio account that you'll use to send SMS and launched Visual Studio. Next, you'll learn how to create a Xamarin.Forms app and add the Xamarin.Essentials NuGet package.
 
 > [!IMPORTANT]
-> Keep note of the Twilio  **ACCOUNT SID** and **AUTH TOKEN** and **Active Phone Number** values that you gathered in this unit, because you'll need these values later.
+> Keep note of the Twilio  **Account SID** and **Auth Token** and **My Twilio phone number** values that you gathered in this unit, because you'll need these values later.
