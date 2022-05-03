@@ -21,15 +21,15 @@ quiz:
       explanation: "Single sign-on supportability information can be found on the overview page for the application."
     - content: "Find the information on the applications list page in Enterprise applications."
       isCorrect: false
-      explanation: "Single sign-on supportability information is not shown the application in Enterprise applications list."
+      explanation: "Single sign-on supportability information isn't shown the application in Enterprise applications list."
     - content: "Contact the owner of the application and ask what methods are supported."
       isCorrect: false
-      explanation: "Application owners are not typically available to answer single sign-on supportability questions."
+      explanation: "Application owners aren't typically available to answer single sign-on supportability questions."
   - content: "How does the administrator know which single sign-on flow that a gallery application supports?"
     choices:
     - content: "Single sign-on flow information can be found on the overview page for the application."
       isCorrect: false
-      explanation: "Supported single sign-on flow information is not available in the Azure portal."
+      explanation: "Supported single sign-on flow information isn't available in the Azure portal."
     - content: "Single sign-on flow information can be found at the service provider."
       isCorrect: false
       explanation: "Although the information may be available at the service provider, it can't be counted on for all applications."
@@ -40,21 +40,21 @@ quiz:
     choices:
     - content: "**Reply URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: false
-      explanation: "**Reply URL** is not a required property for configuring single sign-on at the service provider."
+      explanation: "**Reply URL** isn't a required property for configuring single sign-on at the service provider."
     - content: "**Sign on URL**, **Reply URL**, and **Sign out URL**."
       isCorrect: false
-      explanation: "**Sign on URL** and **Reply URL** are not required properties for configuring single sign-on at the service provider."
+      explanation: "**Sign on URL** and **Reply URL** aren't required properties for configuring single sign-on at the service provider."
     - content: "**Login URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: true
       explanation: "The **Login URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the service provider."
-  - content: "What is the purpose of the **Azure AD Identifier**?"
+  - content: "What's the purpose of the **Azure AD Identifier**?"
     choices:
     - content: "Identifies the Azure AD subscription."
       isCorrect: false
-      explanation: "The **Azure AD Identifier** is not associated with the subscription."
-    - content: "Identifies the application in the Azure AD tenant where it is registered."
+      explanation: "The **Azure AD Identifier** isn't associated with the subscription."
+    - content: "Identifies the application in the Azure AD tenant where it's registered."
       isCorrect: true
       explanation: "The **Azure AD Identifier** is associated with the Azure AD tenant where the application is registered."
     - content: "Identifies the service principal of the application."
       isCorrect: false
-      explanation: "The **Azure AD Identifier** is not associated with the service principal of the application."
+      explanation: "The **Azure AD Identifier** isn't associated with the service principal of the application."

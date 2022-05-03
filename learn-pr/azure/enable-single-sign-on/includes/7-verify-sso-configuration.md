@@ -4,9 +4,9 @@ In the previous units, the application was configured for single sign-on at the 
 
 Testing the single sign-on configuration can be done in any of the following ways:
 
-- Select **Test** on the single sign-on configuration pane for the application in Azure portal. This redirects to the sign-on URL where the sign-in flow can be initiated.
+- Select **Test** on the single sign-on configuration pane for the application in Azure portal. The sign-in process is redirected to the sign-on URL where the sign-in flow can be initiated.
 - Go to the sign-on URL directly and initiate the sign-on flow from there.
-- Use the My Apps portal. When you select the application tile in My Apps, this redirects to the sign-on URL.
+- Use the My Apps portal. When you select the application tile in My Apps, the sign-in process is redirected to the sign-on URL.
 
 ## Test from the Azure portal
 

@@ -1,6 +1,6 @@
-The application that the team requested requires user accounts to be registered and single sign-on to be configured for them at the service provider, which is where the application is hosted.
+The application that the team requested requires user accounts to be registered at the service provider. After registering the user account, single sign-on is configured for the application.
 
-Service providers may allow the configuration of user accounts and single sign-on directly. Many may require you to gather the identifying information and URLs, the signing certificate, or the Federation Metadata XML, and then send them to the administration team who will configure single sign-on and create user accounts.
+Service providers may allow the configuration of user accounts and single sign-on directly. Many service providers require the information to be collected and sent to them to configure single sign-on. Information that is sent includes URLs, the signing certificate, or the Federation Metadata XML.
 
 ## Identifiers and identity provider URLs
 
@@ -10,7 +10,7 @@ Depending on the application, a combination of some or all of the following valu
 - **Reply URL (Assertion Consumer Service URL)** - The location where the application expects to receive the authentication token.
 - **Sign on URL** - The sign-in page URL for the application.
 
-For the Azure AD SAML Toolkit application, these values are not needed at the service provider.
+For the Azure AD SAML Toolkit application, these values aren't needed at the service provider.
 
 ## Certificates
 

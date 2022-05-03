@@ -27,8 +27,8 @@ In this module, Azure AD is being used as the identity provider in the single si
 
 1. In the **Basic SAML Configuration** box, select **Edit**.
 1. Specify the **Identifier (Entity ID)**. A value is provided that follows a suggested pattern. Each application in the gallery has a unique set of suggested patterns for URLs. For this application, accept the default value of `https://samltoolkit.azurewebsites.net`.
-1. Specify the **Reply URL (Assertion Consumer Service URL)**. The value entered at this point in the configuration process is only temporary, you will come back to this property and revise the value. Select **Add reply URL** and enter the suggested pattern of `https://samltoolkit.azurewebsites.net/SAML/Consume`.
-1. Specify the **Sign on URL** - Used to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. The value entered at this point in the configuration process is only temporary, you will come back to this property and revise the value. This field is unnecessary if you want to perform identity provider-initiated single sign-on. Enter the default pattern of `https://samltoolkit.azurewebsites.net/`.
+1. Specify the **Reply URL (Assertion Consumer Service URL)**. The value entered at this point in the configuration process is only temporary, you'll come back to this property and revise the value. Select **Add reply URL** and enter the suggested pattern of `https://samltoolkit.azurewebsites.net/SAML/Consume`.
+1. Specify the **Sign on URL** - Used to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. The value entered at this point in the configuration process is only temporary, you'll come back to this property and revise the value. This field is unnecessary if you want to perform identity provider-initiated single sign-on. Enter the default pattern of `https://samltoolkit.azurewebsites.net/`.
 
     :::image type="content" source="../media/saml-url-temp.png" alt-text="Screenshot showing the temporary URLs that are defined for the application." border="true":::
 
@@ -50,7 +50,7 @@ As the administrator of the application, you want to control access based on the
 
 ## Download the certificate
 
-For this exercise a certificate is being downloaded that is then uploaded at the service provider. In some instances, other certificate formats or the **App Federation Metadata Url** may be required.
+For this exercise, a certificate is being downloaded that is then uploaded at the service provider. In some instances, other certificate formats or the **App Federation Metadata Url** may be required.
 
 1. In the **SAML Signing Certificate** box, select **Download for Certificate (Raw)** to download the SAML signing certificate and save it to be used later.
 
@@ -64,7 +64,7 @@ Applications in the gallery can require different URLs and identifiers. Refer to
 
 1. For this exercise, you don't need the values in the **Set up Azure AD SAML Toolkit** box for configuration at the service provider. But, for other applications in the gallery, the **Identifier (Entity ID)**,
 **Reply URL (Assertion Consumer Service URL)**, and **Sign on URL** may be needed when configuring single sign-on at the service provider.
-1. For this exercise, you need the values of **Login URL**, **Azure AD Identifier**, and **Logout URL**. Other applications in the gallery may require any combination of these to configure single sign-on at the service provider.
+1. For this exercise, you need the values of **Login URL**, **Azure AD Identifier**, and **Logout URL**. Other applications in the gallery may require any combination of properties to configure single sign-on at the service provider.
 
 >[!NOTE]
 >In some instances, the basic SAML configuration values may also need to be recorded to be provided at the service provider.
