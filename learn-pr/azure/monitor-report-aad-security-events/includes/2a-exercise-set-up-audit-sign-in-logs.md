@@ -49,7 +49,7 @@ Next, add filters for the data in your sign-in logs:
 
    :::image type="content" source="../media/filter-pick.png" alt-text="Screenshot of the filter pick a field dialog.":::
 
-1. In the **Flag for review** dialog, select **Yes**, and then select **Apply**.
+1. In the **Flagged for review** dialog, select **Yes**, and then select **Apply**.
 
 ## Download the sign-in logs
 
@@ -65,7 +65,7 @@ Now, download the data in your view:
 
 ## View audit logs by using the Users menu
 
-To access audit logs through your Azure Active Directory **Users** menu:
+To access audit logs through the **Users** menu in your Azure Active Directory instance:
 
 1. In the left menu under **Manage**, select **Users**:
 

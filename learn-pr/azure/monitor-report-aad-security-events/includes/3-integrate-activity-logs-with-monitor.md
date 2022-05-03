@@ -42,11 +42,11 @@ It's important to understand how much storage your workspace is likely to consum
 
 To put that into perspective, if your tenant has 1,000 users, your audit log would generate about 15,000 events each day. There would be a daily storage volume of about 30 megabytes (MB) per day or 900 MB per month. The numbers are a little larger for the sign-in logs. Assuming an Azure tenant of 1,000 users, the sign-in logs will generate 34,800 events per day, which is about 140 MB per day or 4 GB of storage per month.
 
-## Send user logs to the Log Analytics workspace
+## Send logs to the Log Analytics workspace
 
 Now that you've created a Log Analytics workspace, you assign the user audit logs and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace. In the Azure portal, go to your Azure Active Directory instance. Select the **Monitoring** tab, and then select **Diagnostics settings**.
 
-Select **Add diagnostic setting**. Here, you create a connection between the two log files and your Log Analytics workspace.
+To create a connection between the two log files and your Log Analytics workspace, select **Add diagnostic setting**.
 
 :::image type="content" source="../media/diagnostic-setting-concept.png" alt-text="Screenshot that shows how to create a new diagnostic setting.":::
 
@@ -58,7 +58,7 @@ Select the **Send to Log Analytics** option, and then specify or create a Log An
 
 You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because it's a new service, it takes about 15 minutes for any data to appear in the workspace.
 
-## Analyze the log files in Azure Monitor logs
+## Analyze the log files
 
 You've set up your Log Analytics workspace to receive user activity data. Now you can use the power of Azure Monitor logs to view the activity within your environment. With Azure Monitor logs, you can query your data to spot trends, specific events, or correlate multiple data sources.  
 

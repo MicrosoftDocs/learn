@@ -1,4 +1,4 @@
-In this exercise, you implement a dashboard for the security team, so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior. You'll do these tasks:
+In this exercise, you set up a dashboard for the security team, so they can see the potential of Azure logs and alerts in monitoring user behavior. You'll do these tasks:
 
 - Create a security dashboard.
 - Build a query for the dashboard.
@@ -7,7 +7,7 @@ In this exercise, you implement a dashboard for the security team, so they can s
 - Export a report to Excel.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
+> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use your Log Analytics workspace and dashboards.
 >
 > If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
@@ -19,7 +19,7 @@ In this exercise, you implement a dashboard for the security team, so they can s
 
     :::image type="content" source="../media/dashboard-blank.png" alt-text="Screenshot that shows how to create a new dashboard.":::
 
-1. At the prompt, name the dashboard **SecurityDashboard**, and then select **Save**. For now, leave the dashboard blank. In the next few steps, you'll be adding a report query to the dashboard.
+1. Name the dashboard **SecurityDashboard**, and then select **Save**. For now, leave the dashboard blank. In the next few steps, you'll add a report query to the dashboard.
 
     :::image type="content" source="../media/dashboard-save.png" alt-text="Screenshot that shows how to save a dashboard.":::
 
@@ -35,7 +35,7 @@ In this exercise, you implement a dashboard for the security team, so they can s
   
 1. Select **Publish** to make the empty dashboard available.
 
-    :::image type="content" source="../media/dashboard-share-access.png" alt-text="Screenshot of the Sharing + access control pane.":::
+    :::image type="content" source="../media/dashboard-share-access.png" alt-text="Screenshot of the Sharing and access control pane.":::
 
 ## Build a query for the dashboard
 
@@ -47,7 +47,7 @@ To build a query for a dashboard:
 
 1. Under **General**, select **Logs**.
 
-1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query.
+1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query:
 
     ```kusto
     AuditLogs
@@ -96,7 +96,7 @@ To change the title of an item in a dashboard or change the dashboard view:
 
 1. If you have multiple dashboards, in the dashboard dropdown menu, select **SecurityDashboard**.
 
-1. On a tile, select the horizontal ellipsis, and then select **Configure tile settings** (gear icon) in the item tile.
+1. On a tile, select the ellipsis, and then select **Configure tile settings** (the gear icon) in the item tile.
 
 1. In the **Configure tile settings** pane, change the title to **Top User Events past week**.
 
@@ -104,7 +104,7 @@ To change the title of an item in a dashboard or change the dashboard view:
 
     :::image type="content" source="../media/dashboard-edit.png" alt-text="Screenshot of editing a report on the dashboard.":::
 
-1. To change how an item appears in the dashboard, select the horizontal ellipsis, and then select **Customize** (pencil icon). Select from the options to change the tile appearance on the dashboard, and then select **Done customizing**.
+1. To change how an item appears in the dashboard, select the ellipsis, and then select **Customize** (the pencil icon). Select from the options to change the tile appearance on the dashboard, and then select **Done customizing**.
 
    :::image type="content" source="../media/dashboard-customize.png" alt-text="Screenshot of customizing a report on the dashboard.":::
 

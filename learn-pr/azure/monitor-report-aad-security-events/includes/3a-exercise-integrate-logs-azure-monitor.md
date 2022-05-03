@@ -1,4 +1,4 @@
-In this exercise, you create a Log Analytics workspace in the Azure portal. You then direct the audit and sign-in log files to your Log Analytics workspace. Finally, you use a template workbook to create a workbook that holds a query report.
+In this exercise, you create a Log Analytics workspace in the Azure portal. You then direct the audit and sign-in log files to your Log Analytics workspace. Finally, you use a workbook template to create a workbook that holds a query report.
 
 In this exercise, you'll:
 
@@ -14,9 +14,7 @@ In this exercise, you'll:
 
 ## Create a Log Analytics workspace
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
-
-1. Select **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select **Create a resource**.
 
 1. In the **Search** box, enter **log analytics**.
   
@@ -34,7 +32,7 @@ In this exercise, you'll:
 
 1. Select **Create**.
 
-## Send log files to your Log Analytics workspace
+## Send logs to your Log Analytics workspace
 
 To stream the audit and sign-in logs to your Log Analytics workspace:
 

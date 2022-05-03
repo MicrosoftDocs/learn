@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.4-visualize-reports-dashboards
 metadata:
-  title: Set up reports and dashboards to visualize log data
-  description: Set up reports and dashboards to visualize log data.
+  title: Set up dashboards and reports to visualize log data
+  description: Set up dashboards and reports to visualize log data.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Set up reports and dashboards to visualize log data
+title: Set up dashboards and reports to visualize log data
 durationInMinutes: 6
 content: |
   [!include[](includes/4-visualize-reports-dashboards.md)]
@@ -17,16 +17,16 @@ quiz:
   questions:
   - content: 'Which Azure resource do you use to create a dashboard?'
     choices:
-    - content: Log Analytics
+    - content: Log Analytics workspace
       isCorrect: false
-      explanation: You use Log Analytics to create queries that you can pin to a dashboard, but you don't create a dashboard in the Log Analytics workspace.
+      explanation: You use a Log Analytics workspace to create queries that you can pin to a dashboard, but you don't create a dashboard in the Log Analytics workspace.
     - content: Azure Active Directory
       isCorrect: false
       explanation: You use data that's collected in your Azure Active Directory tenant to create queries you can pin to a dashboard, but you don't create a dashboard in Azure Active Directory.
     - content: Your Azure subscription
       isCorrect: true
       explanation: A dashboard is created for your Azure subscription. You can pin resources from different Azure resources to a dashboard you create for your Azure subscription.
-  - content: 'When you export reports, which one of the following is a supported export type?'
+  - content: 'When you export reports, which one of the following export types is supported?'
     choices:
     - content: Excel
       isCorrect: true

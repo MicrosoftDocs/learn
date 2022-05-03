@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.5-exercise-visualize-reports-dashboards
 metadata:
-  title: Exercise - Set up reports and dashboards to visualize log data
+  title: Exercise - Set up a dashboard and add a report
   description: Exercise - Set up reports and dashboards to visualize log data.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Set up reports and dashboards to visualize log data
+title: Exercise - Set up a dashboard and add a report
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-visualize-reports-dashboards.md)]

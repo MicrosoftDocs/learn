@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
 metadata:
-  title: Integrate Azure Active Directory activity logs with Log Analytics
-  description: Integrate Azure Active Directory activity logs with Log Analytics.
+  title: Integrate logs with a Log Analytics workspace
+  description: Integrate Azure Active Directory logs with a Log Analytics workspace.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrate activity logs with Log Analytics
+title: Integrate logs with a Log Analytics workspace
 durationInMinutes: 7
 content: |
   [!include[](includes/3-integrate-activity-logs-with-monitor.md)]
