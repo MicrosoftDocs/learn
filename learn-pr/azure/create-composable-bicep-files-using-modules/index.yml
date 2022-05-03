@@ -38,6 +38,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.create-composable-bicep-files-using-modules.introduction
 - learn.azure.create-composable-bicep-files-using-modules.create-use-bicep-modules

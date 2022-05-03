@@ -1,4 +1,4 @@
-You can store application connection strings, credentials, passwords, and other sensitive information in Azure Key Vault. To access Key Vault, you need to provide credentials. If you're using managed identity, you can use the service principal that you created to generate an access token to authenticate to Key Vault.
+You can store application connection strings, credentials, passwords, and other sensitive information in Azure Key Vault. To access Key Vault, you need to provide credentials. Now as part of the application move to an Azure VM, you can update it to use managed identities to get an access token to authenticate to Key Vault.
 
 Your stock-tracking application connects to Azure SQL Database. Previously, your on-premises app stored the connection string in configuration files. As part of the migration to Azure, you now securely store all credentials and connection strings in an Azure Key Vault.
 
