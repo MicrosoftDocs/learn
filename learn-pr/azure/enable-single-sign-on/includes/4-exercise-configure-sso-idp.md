@@ -26,7 +26,7 @@ In this module, Azure AD is being used as the identity provider in the single si
     :::image type="content" source="../media/saml-selection.png" alt-text="Screenshot showing the selection of SAML as the single sign-on method." border="true":::
 
 1. In the **Basic SAML Configuration** box, select **Edit**.
-1. Specify the **Identifier (Entity ID)**. A value is provided that follows a suggested pattern. Each application in the gallery has a unique set of suggested patterns for URLs. For this application, accept the default value of `https://samltoolkit.azurewebsites.net`.
+1. Specify the **Identifier (Entity ID)**. The provided value follows a suggested pattern. Each application in the gallery has a unique set of suggested patterns for URLs. For this application, accept the default value of `https://samltoolkit.azurewebsites.net`.
 1. Specify the **Reply URL (Assertion Consumer Service URL)**. The value entered at this point in the configuration process is only temporary, you'll come back to this property and revise the value. Select **Add reply URL** and enter the suggested pattern of `https://samltoolkit.azurewebsites.net/SAML/Consume`.
 1. Specify the **Sign on URL** - Used to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. The value entered at this point in the configuration process is only temporary, you'll come back to this property and revise the value. This field is unnecessary if you want to perform identity provider-initiated single sign-on. Enter the default pattern of `https://samltoolkit.azurewebsites.net/`.
 

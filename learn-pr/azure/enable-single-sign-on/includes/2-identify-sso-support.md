@@ -6,11 +6,11 @@ Employees in the retail company likely already have an account in the tenant for
 
 ## Find and add an application
 
-Azure AD has a gallery that contains thousands of pre-integrated applications. Many of the applications that the retail company uses are probably already in the gallery. When adding an application to the company's tenant, the following tasks are completed:
+Azure AD has a gallery that contains thousands of pre-integrated applications. Many of the applications that the retail company uses are probably already in the gallery. When the administrator adds an application to the company's tenant, the following tasks are completed:
 
-- Properties can be configured for managing the application
-- User access can be assigned
-- Single sign-on can be set up so that the employees can sign in to it with their Azure AD credentials
+- Properties are configured for managing the application
+- User are assigned access
+- Single sign-on is set up so that the employees can sign in with their Azure AD credentials
 
 In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
 
@@ -30,7 +30,7 @@ Sign in the Azure portal and then access the application gallery through the **E
 
 ## Find and add the requested application
 
-When searching for an application to add from the gallery, the following filters can be used:
+When the administrator searches for an application to add from the gallery, the following filters can be used:
 
 - **Single sign-on options** – Search for applications that support these SSO options: SAML, OpenID Connect (OIDC), Password, or Linked.
 - **User account management** – The only option available is automated provisioning.
