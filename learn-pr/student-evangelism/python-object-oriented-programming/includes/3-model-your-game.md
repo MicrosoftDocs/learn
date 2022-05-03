@@ -79,10 +79,10 @@ Knowing what attributes (variables) should be added to your class is part of mod
 
 Many program languages have the notion of a constructor, the special function that's only invoked when the object is first being created. The constructor will be called only once. In this method, you create the attributes the object should have. Additionally, you assign any starter values to the created attributes.
 
-In Python, the constructor has the name `__init()__`. You also need to pass a special keyword, `self`, as a parameter to the constructor. The keyword `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self`, it will instead be treated as a temporary variable that won't exist after `__init()__` is done executing.
+In Python, the constructor has the name `__init()__`. You also need to pass a special parameter, `self`, to the constructor. The parameter `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self`, it will instead be treated as a temporary variable that won't exist after `__init()__` is done executing.
 
 > [!NOTE]
-> The keyword `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
+> The parameter `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
 
 ### Add and initialize attributes on a class
 
@@ -109,7 +109,7 @@ elevator = Elevator(1)
 
 ### Incorrect use of `self`
 
-To emphasize how the keyword `self` works, consider the following code in which two attributes, `color` and `make`, are being assigned in the constructor `__init__()`:
+To emphasize how the parameter `self` works, consider the following code in which two attributes, `color` and `make`, are being assigned in the constructor `__init__()`:
 
 ```python
 class Car:

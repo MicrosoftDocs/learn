@@ -34,7 +34,7 @@ quiz:
         - content: It uses prefixes. One underscore, `_`, at the beginning of the name indicates this variable is _protected_. Two underscores, `__`, make the variable _private_ and will raise an exception if assigned.
           isCorrect: true
           explanation: Correct. Using prefixes on the variable name is how Python uses accessors and is able to hide your data at different levels.
-        - content: It uses the keywords _private_ and _public_.
+        - content: It uses keywords _private_ and _public_.
           isCorrect: false
           explanation: Incorrect. Languages like Java and C#, for example, use private and public. Python uses prefixes on the naming of the variable.
         - content: Everything in a Python class is hidden by default and must be exposed by adding methods that return the variables' values.
@@ -43,17 +43,17 @@ quiz:
         - content: Add the decorator @public or @private to make something public or private.
           isCorrect: false
           explanation: Incorrect. Python makes heavy use of decorators. These two mentioned decorators don't exist.
-    - content: Choose the best explanation that explains the keyword `self`.
+    - content: Choose the best explanation that explains the parameter `self`.
       choices:
-        - content: It's a keyword that refers to the object instance. You can also use the `this` keyword.
+        - content: It's a parameter that refers to the object instance. You can also use `this`.
           isCorrect: false
-          explanation: Incorrect. While it's true that `self` refers to the object instance, you can't use the `this` keyword to refer to an object instance.
-        - content: The `self` keyword refers to the underlying class of the object.
+          explanation: Incorrect. While it's true that `self` refers to the object instance, you shouldn't use `this`. The name `self` has no special meaning, but it is a convention that makes your code more readable to other Python programmers.
+        - content: The `self` parameter refers to the underlying class of the object.
           isCorrect: false
-          explanation: Incorrect. The `self` keyword refers to the underlying object instance, not the class.
-        - content: The only time the `self` keyword is used is to refer to members of the object, and it's passed as a parameter.
+          explanation: Incorrect. The `self` parameter refers to the underlying object instance, not the class.
+        - content: The only time `self` is used is to refer to members of the object, and it's passed as a parameter.
           isCorrect: false
           explanation: Incorrect. It's true that `self` is passed as a parameter if the method wants to refer to members of the object. However, you need `self` as well when you add variables to the object instance at construction time. 
-        - content: The `self` keyword refers to the object instance. Variables that are part of the object instance need to be assigned to `self`.  The `self` keyword is also passed to every method of a class that needs to access the object instance.
+        - content: The `self` parameter refers to the object instance. Assignment to `self` means that the attribute ends up on the object instance.
           isCorrect: true
-          explanation: Correct. The `self` keyword is passed to methods that need access to members on the object. In any kind of communication with the object instance, the `self` keyword needs to be used. It's used to refer to attributes on the instance and methods. 
+          explanation: Correct. The `self` parameter is passed to methods that need access to members on the object. In any kind of communication with the object instance, the `self` parameter needs to be used. It's used to refer to attributes on the instance and methods. If you don't add an attribute to `self``, it will be treated as a temporary variable.

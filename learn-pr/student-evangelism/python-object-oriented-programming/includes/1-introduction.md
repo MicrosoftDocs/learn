@@ -20,7 +20,7 @@ After you complete this module, you'll be able to:
 - Python keywords
 - Knowing how to raise exceptions in Python
 
-You can use the following resources to improve your knowledge of Python:
+You can use the following resources to learn the basics of Python:
 
-- [Introduction to Python](/learn/student-evangelism/intro-to-python?azure-portal=true)
-- [Python for beginners](/learn/paths/beginner-python?azure-portal=true)
+- Module 1 in this learning path: [Introduction to Python](/learn/student-evangelism/intro-to-python?azure-portal=true)
+- Learning path: [Python for beginners](/learn/paths/beginner-python?azure-portal=true)
