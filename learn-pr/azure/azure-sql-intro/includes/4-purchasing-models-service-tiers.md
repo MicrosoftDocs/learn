@@ -14,7 +14,7 @@ In the vCore model, you pay for:
 
 - **Compute resources:** The service tier + the number of vCores and the amount of memory + the generation of hardware.
 - **Data and log storage:** The type and amount of data and log storage.
-- **Backup storage location:** Read-access geo-redundant storage (RA-GRS), Zone-redundant storage (ZRS), or locally-redundant storage (LRS).  
+- **Backup storage location:** Read-access geo-redundant storage (RA-GRS), Zone-redundant storage (ZRS), or locally redundant storage (LRS).  
 
 The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
 
