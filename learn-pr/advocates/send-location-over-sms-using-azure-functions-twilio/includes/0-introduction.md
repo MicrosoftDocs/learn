@@ -1,5 +1,5 @@
 
-When you book cab using your mobile app, have you ever wondered how your exact location gets shared with the cab driver via SMS. Just Imagine if you could have access to similar aap of your own that could share your exact geographical location through an SMS with a bunch of your friends at the same time, all in a single click. You can easliy do this by creating a mobile app using Azure Functions and Twilio. 
+When you book a cab using your mobile app, have you ever wondered how your exact location gets shared with the cab driver via SMS. Just Imagine if you could have access to similar app of your own that could share your exact geographical location through an SMS with a bunch of your friends at the same time, all in a single click. You can easily do this by creating a mobile app using Azure Functions and Twilio. 
 
 Twilio is a communications platform that is supported by Azure Functions using Twilio SMS output bindings. In this module, you'll create a cross-platform Xamarin.Forms app with a serverless back end. This app will get the user's location from their device and send it with a list of phone numbers to Azure Functions. The function will then use a binding to a third-party service (Twilio) to send your location as an SMS message to all the phone numbers provided.
 
