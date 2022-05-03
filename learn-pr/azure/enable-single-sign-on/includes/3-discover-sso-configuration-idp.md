@@ -1,6 +1,6 @@
 After successfully adding an application that supports single sign-on, properties must be configured for it at the identity provider to enable the trust relationship with the service provider.
 
-Choose SAML single sign-on whenever possible for existing applications that don't use OpenID Connect or OAuth. In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team to help with company promotion. This application supports both Linked and SAML based single sign-on methods.
+Choose SAML single sign-on whenever possible for existing applications that don't use OpenID Connect or OAuth. In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team to help with company promotion. This application supports both Linked and SAML-based single sign-on methods.
 
 To configure single sign-on for the application:
 

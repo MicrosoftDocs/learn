@@ -1,4 +1,4 @@
-The application that the team requested requires user accounts to be registered at the service provider. After an administrator registers the user account, single sign-on is configured for the application.
+The application that the team requested requires user accounts to be registered at the service provider. After an administrator registers the user account, they configure single sign-on for the account.
 
 Service providers may allow the configuration of user accounts and single sign-on directly. Many service providers require the information to be collected and sent to them to configure single sign-on. Information that is sent includes URLs, the signing certificate, or the Federation Metadata XML.
 

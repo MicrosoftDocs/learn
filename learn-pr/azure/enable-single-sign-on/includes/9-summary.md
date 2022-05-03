@@ -8,9 +8,9 @@ To set up single sign-on for the new application, the administrator completed th
 - Accessed the integration documentation for the application to identify the supported single sign-on flows and any particular single sign-on requirements.
 - Created a user account and assigned it to the application for testing single sign-on before rolling the feature out to all employees.
 - Defined URLs in the basic SAML configuration for the application and recorded them to help with setting up single sign-on at the service provider.
-- Added a `department` claim to the SAML token that is exchanged with the application to help with controlling access to information.
+- Added a claim to the SAML token that is exchanged with the application to help with controlling access to information.
 - Set up the trust relationship between the identity provider and the service provider by downloading and then uploading a SAML certificate.
-- Created a user account at the service provider that matches the user account that was created at the identity provider.
+- Registered a user account at the service provider that matches the user account that was created at the identity provider.
 - Configured single sign-on at the service provider using the URLs that were recorded at the identity provider.
 - Updated the URLs at the identity provider using the URLs that were recorded from the service provider.
 - Finally, tested the single sign-on configuration using the test user account that was created.
