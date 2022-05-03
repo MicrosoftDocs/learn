@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-governmental-cloud-strategy
+metadata:
+  title: Describe governmental cloud strategy
+  description: Describe governmental cloud strategy
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe governmental cloud strategy
+prerequisites: |
+  - You should be familiar with basic cloud computing concepts and terminology.
+  - You should have a general understanding of why government exists and the purpose it serves.
+summary: |
+  Understand the US Government's cloud computing approach.
+iconUrl: /learn/achievements/governmental-cloud-strategy.svg
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure-sovereign-us
+modules:
+- learn.wwl.describe-government-its-structure
+- learn.wwl.describe-significant-government-strategy-actions
+- learn.wwl.describe-cloud-business-case-analysis
+trophy:
+  uid: learn.wwl.describe-governmental-cloud-strategy.trophy

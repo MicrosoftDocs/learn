@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-vn-integration
+title: Troubleshoot integration of virtual machines with virtual networks in Microsoft Azure
+metadata:
+  title: Troubleshoot integration of virtual machines with virtual networks in Microsoft Azure
+  description: "Troubleshoot integration of virtual machines with virtual networks in Microsoft Azure"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-troubleshoot-integration-with-virtual-networks.md)]

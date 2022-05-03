@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.exercise
+title: 'Exercise: Isolate problems with monitoring'
+metadata:
+  title: 'Exercise: Isolate problems with monitoring'
+  description: "Exercise: Isolate problems with monitoring"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 119401
+labModal: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-exercise-isolate-problems.md)]

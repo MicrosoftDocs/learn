@@ -3,7 +3,7 @@ uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
   description: "Describe performance monitoring"
-  ms.date: 03/02/2022
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -37,7 +37,8 @@ units:
 - learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
 - learn.wwl.describe-performance-monitoring.establish-baseline-metrics
 - learn.wwl.describe-performance-monitoring.describe-extended-events
-- learn.wwl.describe-performance-monitoring.describe-azure-intelligent-insights
+- learn.wwl.describe-performance-monitoring.describe-azure-sql-insights
+- learn.wwl.describe-performance-monitoring.explore-query-performance-insight
 - learn.wwl.describe-performance-monitoring.exercise
 - learn.wwl.describe-performance-monitoring.knowledge-check
 - learn.wwl.describe-performance-monitoring.summary

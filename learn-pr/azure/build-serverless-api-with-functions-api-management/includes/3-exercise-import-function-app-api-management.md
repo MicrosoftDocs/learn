@@ -1,6 +1,6 @@
 To present Azure Functions to users as parts of a single API, you can add them to Azure API Management.
 
-In your online store company, your developers have created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into single API.
+In your online store company, your developers have created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into a single API.
 
 In this exercise, you'll create a new API Management instance and then add a Product Details function to it.
 
@@ -132,6 +132,6 @@ You now have a `ProductDetails` API in the API Management instance that you crea
 
 1. In the **NAME** field, enter *id*, and in the **VALUE** field, enter *1*, and then select **Send** to generate a GET request.
 
-    The **HTTP response** section of the console has two tabs, Message and Trace. The Message tab is populated with HTTP response. The product details appear in JSON format at the end of the response. Scroll up to the **HTTP request** section and notice the format of the request. The request was sent to a destination in the **azure-api.net** domain. This location is different from the **azurewebsites.net** domain where the function app is hosted. You can test this API with other query parameters, such as *id=2* or *id=3*.
+    The **HTTP response** section of the console has two tabs, Message and Trace. The Message tab is populated with the HTTP response. The product details appear in JSON format at the end of the response. Scroll up to the **HTTP request** section and notice the format of the request. The request was sent to a destination in the **azure-api.net** domain. This location is different from the **azurewebsites.net** domain where the function app is hosted. You can test this API with other query parameters, such as *id=2* or *id=3*.
 
    :::image type="content" source="../media/3-api-http-response.png" alt-text="Screenshot showing the **Http request** and **HTTP response** message.":::

@@ -3,11 +3,15 @@ uid: learn.dotnet-files
 metadata:
   title: Work with files and directories in a .NET app
   description: Learn how to use .NET, C#, and System.IO to work with directories, paths, files, and the file system.
-  ms.date: 10/28/2020
+  ms.date: 01/04/2022
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-06132021
 title: Work with files and directories in a .NET app
 summary: Build an app that manipulates files and directories with C# and .NET.
 abstract: |   

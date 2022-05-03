@@ -3,25 +3,24 @@ uid: learn.wwl.protect-data-transit-at-rest
 metadata:
   title: Protect data in-transit and at rest
   description: "Protect data in-transit and at rest"
-  ms.date: 02/11/2022
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect data in-transit and at rest
-summary: Explore encryption options available within Azure SQL, on-premises SQL Server and Open Source data platforms and Secure Enclaves. Implement database and instance firewalls.
+summary: Explore encryption options available within Azure SQL, including firewall rules, Always Encrypted, and Transport Layer Security. Understand how SQL Injection works.
 abstract: |
   After completing this module, you will be able to:
   - Understand the data encryption options available in the various platforms
-  - Configure encryption for data at rest and in transit
   - Implement object level encryption
-  - Configure SQL Server to use Azure Key Vault
-  - Understand the difference between database and instance firewalls in Azure SQL Database
-  - Explore Secure Enclaves
+  - Understand the difference between database and server firewall rules for Azure SQL Database
+  - Explore Always Encrypted with secure enclaves
 prerequisites: |
-  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
-  - Understanding of why security is a crucial part of database system planning.
-  - Experience creating and configuring resources using the Azure portal.
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises or cloud-based
+  - Understanding of why security is a crucial part of database system planning
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal
 iconUrl: /learn/achievements/protect-data-in-transit-and-at-rest.svg
 levels:
 - intermediate
@@ -35,11 +34,12 @@ products:
 - sql-server
 units:
 - learn.wwl.protect-data-transit-at-rest.introduction
-- learn.wwl.protect-data-transit-at-rest.describe-role-of-firewalls
-- learn.wwl.protect-data-transit-at-rest.explain-encryption
-- learn.wwl.protect-data-transit-at-rest.describe-role-of-azure-key-vault-transparent-data-encryption
+- learn.wwl.protect-data-transit-at-rest.explore-transparent-data-encryption
+- learn.wwl.protect-data-transit-at-rest.configure-server-and-database-firewall
 - learn.wwl.protect-data-transit-at-rest.explain-object-encryption-secure-enclaves
-- learn.wwl.protect-data-transit-at-rest.explain-dynamic-data-masking
+- learn.wwl.protect-data-transit-at-rest.enable-encrypted-connections
+- learn.wwl.protect-data-transit-at-rest.describe-sql-injection
+- learn.wwl.protect-data-transit-at-rest.understand-azure-key-vault
 - learn.wwl.protect-data-transit-at-rest.exercise-configure-azure-sql-database-firewall
 - learn.wwl.protect-data-transit-at-rest.knowledge-check
 - learn.wwl.protect-data-transit-at-rest.summary

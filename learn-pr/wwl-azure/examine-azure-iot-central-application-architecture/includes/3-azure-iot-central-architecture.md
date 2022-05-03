@@ -9,8 +9,16 @@ Devices exchange data with your Azure IoT Central application. A device can:
 
  -  Send measurements such as telemetry.
  -  Synchronize settings with your application.
+ -  Upload files to an Azure storage account.
 
-In Azure IoT Central, the data that a device can exchange with your application is specified in a device template.
+In Azure IoT Central, the data that a device can exchange with your application is specified in a device template. IoT Central device templates provide a device definition that includes:
+
+ -  **Device capability model**: Device capability models specify the capabilities of a device such as the telemetry it sends, the properties that define the device state, and the commands the device responds to. Device capabilities are organized into one or more interfaces.
+ -  **Cloud properties**: Cloud properties specify the properties IoT Central stores for a device. These properties are only stored in IoT Central and are never sent to a device.
+ -  **Views**: Views specify the dashboards and forms the builder creates to let the operator monitor and manage the devices.
+ -  **Customizations**: Customizations let the builder override some of the definitions in the device capability model to make them more relevant to the IoT Central application.
+
+An IoT Central application can have one or more simulated and real devices based on each device template.
 
 ## Azure IoT Edge devices
 
@@ -25,7 +33,7 @@ Azure IoT Central is not limited to IoT devices, you can also connect Azure IoT 
 :::image type="content" source="../media/m12-l01-iot-central-iot-edge-device-connection-115ec5e2.png" alt-text="Diagram that shows an Azure IoT Edge device connecting to IoT Central.":::
 
 
-IoT Central enables the following capabilities to for IoT Edge devices:
+IoT Central enables the following capabilities for IoT Edge devices:
 
  -  Device templates are used to describe the capabilities of an IoT Edge device, such as:
     
@@ -50,7 +58,7 @@ IoT Central classifies IoT Edge device types as follows:
  -  Gateway devices with downstream devices. Both gateway device and downstream devices are provisioned in IoT Central.
 
 > [!NOTE]
-> IoT Central currently doesn't support connecting an IoT Edge device as a downstream device to an IoT Edge gateway. All devices that connect to IoT Central are provisioned using the Device Provisioning Service (DPS) and DPS doesn't support nested IoT Edge scenarios.
+> IoT Central currently doesn't support connecting an IoT Edge device as a downstream device to an IoT Edge transparent gateway. This is because all devices that connect to IoT Central are provisioned using the Device Provisioning Service (DPS) and DPS doesn't currently support nested IoT Edge scenarios.
 
 ## Cloud gateway
 
@@ -65,28 +73,15 @@ Azure IoT Central stores application data in the cloud. Application data stored 
  -  Device metadata.
  -  User and role data.
 
-Azure IoT Central uses a time series store for the measurement data sent from your devices. IoT Hub enables:
-
- -  Data ingestion at scale in the cloud.
- -  Device management.
- -  Secure device connectivity.
+Azure IoT Central uses a time series store for the telemetry sent from your devices.
 
 ## Analytics
 
-The analytics service is responsible for generating the custom reporting data that the application displays. An operator can customize the analytics displayed in the application. The analytics service is built on top of Azure Time Series Insights and processes the measurement data sent from your devices.
+The analytics service is responsible for generating the custom reporting data that the application displays. An operator can customize the analytics displayed in the application.
 
 ## Rules and actions
 
 Rules and actions work closely together to automate tasks within the application. A builder can define rules based on device telemetry such as the temperature exceeding a defined threshold. Azure IoT Central uses a stream processor to determine when the rule conditions are met. When a rule condition is met, it triggers an action defined by the builder. For example, an action can send an email to notify an engineer that the temperature in a device is too high.
-
-IoT Central device templates provide a device definition that includes:
-
- -  **Device capability model**: Device capability models specify the capabilities of a device such as the telemetry it sends, the properties that define the device state, and the commands the device responds to. Device capabilities are organized into one or more interfaces.
- -  **Cloud properties**: Cloud properties specify the properties IoT Central stores for a device. These properties are only stored in IoT Central and are never sent to a device.
- -  **Views**: Views specify the dashboards and forms the builder creates to let the operator monitor and manage the devices.
- -  **Customizations**: Customizations let the builder override some of the definitions in the device capability model to make them more relevant to the IoT Central application.
-
-An IoT Central application can have one or more simulated and real devices based on each device template.
 
 ## Data export
 
@@ -98,7 +93,7 @@ In an Azure IoT Central application, you can create and run jobs to manage conne
 
 ## Role-based access control (RBAC)
 
-An administrator can define access rules for an Azure IoT Central application using the predefined roles. An administrator can assign users to roles that determine what areas of the application the user has access to.
+An administrator can define access rules for an Azure IoT Central application using the predefined roles. An administrator can assign users to roles that determine what areas of the application the user has access to. You can also create custom roles if you require finer-grained control.
 
 ## Security
 

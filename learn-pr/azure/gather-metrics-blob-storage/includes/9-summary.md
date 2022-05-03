@@ -1,8 +1,6 @@
-In this module, you viewed Azure Blob Storage metric information in the Azure portal. You then created custom dashboards in the Azure portal, and retrieved Azure Storage Analytics logs.
+In this module, you viewed Azure Blob Storage metric information in the Azure portal. You then created custom dashboards in the Azure portal, and retrieved resource logs.
 
 ## More information
-
-Blob storage supports Azure Data Lake Storage Gen2. For more information, see [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction).
 
 Transaction metrics are sent to Azure Monitor every minute, and are available both for the account and the service. For more information, see [Monitoring Azure Blob Storage](/azure/storage/common/storage-metrics-in-azure-monitor).
 

@@ -1,43 +1,43 @@
 In the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions below.
 
-If you determined that you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
+Once you're certain that Python 3 is installed, you can scroll to the bottom of this page and select **Continue**.
 
-When this module was written, Python 3.9 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames that you see may differ slightly from those in these instructions.
+When this module was written, Python 3.10 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instructions.
 
 ::: zone pivot="windows"
 
 > [!NOTE]
-> These instructions are specifically for Windows 10. If you're using a different version of Windows, refer to the [official Python downloads page](https://www.python.org/downloads/?azure-portal=true) for more information. 
+> These instructions are specifically for Windows 10 and Windows 11. For more information about installation instructions on different versions of Windows, see the [official Python downloads page](https://www.python.org/downloads/?azure-portal=true).
 
 ## Install Python on Windows from the Microsoft Store
 
-1. Open the Microsoft Store by selecting *Start*, and then typing *start Microsoft Store*. 
+1. Open the Microsoft Store by selecting *Start*, and then typing *start Microsoft Store*.
 
 1. Once open, search for **Python**.
 
-    You'll be presented with a list of various options.
+    You'll find a list of various options.
 
 1. Select the most recent version of Python.
 
-    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python showing Python 3.9 highlighted.":::
+    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python, highlighting Python 3.10.":::
 
-1. On the Home tab, select *Install*.
+1. On the Home tab, select *Get or Install*.
 
     :::image type="content" source="../media/windows-install-python-splash.png" alt-text="Screenshot of the Python Home tab in the Microsoft Store with Install highlighted.":::
 
     
     > [!NOTE]
-    > If you are unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python39.
+    > If you are unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python310.
 
     Python installs in the background. The installation may take a couple of minutes depending on the speed of your system.
 
     :::image type="content" source="../media/windows-install-python-progress.png" alt-text="Screenshot of installation progress for Python from the Microsoft Store.":::
 
-1. After Python installs, return to the command prompt. 
+1. After Python installs, return to the command prompt.
 
 1. Enter the following command `python --version` and then select <kbd>Enter</kbd> to see the version of Python:
 
-    ```bash
+    ```console
     python --version
     ```
 
@@ -73,7 +73,7 @@ If you use APT, you can use these instructions to install Python 3.
 1. Run the following command to install Python 3 at a Bash prompt
 
     ```bash
-    sudo apt-get install python3
+    sudo apt-get install python3.10
     ```
 
     > [!NOTE]
@@ -82,13 +82,13 @@ If you use APT, you can use these instructions to install Python 3.
 1. Run the `python3`command to confirm that Python 3 installed correctly:
 
     ```bash
-    python3 --version
+    python3.10 --version
     ```
 
    The output should contain the word `Python` with a set of numbers separated by `.` characters. The following example shows the output you might see.
 
     ```output
-    Python 3.9.1
+    Python 3.10.0
     ```
 
     As long as the first number is `3`, Python 3 installed successfully.
@@ -112,19 +112,19 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
 1. Run the following command `yum install` to install Python 3
 
     ```bash
-    yum install rh-python39
+    sudo yum install rh-python3.10
     ```
 
-1. Run `python3 --version` to verify installation:
+1. Run `python3.10 --version` to verify installation:
 
     ```bash
-    python3 --version
+    python3.10 --version
     ```
 
     The output includes the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
-    Python 3.9.1
+    Python 3.10.0
     ```
 
     As long as the first number is `3`, Python 3 installed successfully.
@@ -133,24 +133,24 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
 
 #### (Optional) Enable the Software Collections feature in Bash
 
-Software Collections enables you to install multiple versions of the same software components on your Red Hat system. When you run the scl tool, it creates a child process (subshell) of the current shell. Running the command again then creates a subshell of the subshell. When the Software Collections tool is enabled, you need to specify which version of Python you want to run in the shell.
+Software Collections enables you to install multiple versions of the same software components on your Red Hat system. When you run the SCL tool, it creates a child process (subshell) of the current shell. Running the command again then creates a subshell of the subshell. When the Software Collections tool is enabled, you need to specify which version of Python you want to run in the shell.
 
 1. Run the `scl enable` command at a Bash prompt:
 
     ```bash
-    scl enable rh-python39 bash
+    scl enable rh-python3.10 bash
     ```
 
-1. Again, verify that everything is OK by running `python3 --version`.
+1. Again, verify that everything is OK by running `python3.10 --version`.
 
     ```bash
-    python3 --version
+    python3.10 --version
     ```
 
-    The output of that command should resemble the following:
+    The output of that command should resemble the following format:
 
     ```output
-    Python 3.9.1
+    Python 3.10.0
     ```
 
     As long as the first number is `3`, Python 3 installed successfully, in the context of a Software Collection.
@@ -158,10 +158,10 @@ Software Collections enables you to install multiple versions of the same softwa
     `scl enable python36` starts a new Bash session, setting Python 3.6 as the default Python version. But Python 3.6 is the default version only for the current shell session. If you exit the session or open a new session from another terminal, Bash will revert to the default Python version.
 
     For more information, see
-    [Red Hat Software Collections 2.4](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
+    [Red Hat Software Collections 3.8](https://access.redhat.com/documentation/en-us/red_hat_software_collections/3/html/3.8_release_notes/chap-rhscl#sect-RHSCL-About).
 
     > [!IMPORTANT]
-    > If you needed to use `scl enable` to run `python3 --version`, you might need to run that command every time you want to work in Python. There are workarounds, but this is the intended functionality of Software Collections.  See [Make a Red Hat Software Collection persist](https://access.redhat.com/solutions/527703?azure-portal=true) for a possible workaround.
+    > If you needed to use `scl enable` to run `python3.10 --version`, you might need to run that command every time you want to work in Python. There are workarounds, but this is the intended functionality of Software Collections. See [Make a Red Hat Software Collection persist](https://access.redhat.com/solutions/527703?azure-portal=true) for a possible workaround.
 
 ::: zone-end
 
@@ -172,7 +172,7 @@ Software Collections enables you to install multiple versions of the same softwa
 Follow these steps to download the Python installer from the Python website.
 
 > [!NOTE]
-> You can use Homebrew to install Python and Visual Studio Code. For instructions, see 
+> You can use Homebrew to install Python and Visual Studio Code. For instructions, see
 [Homebrew documentation](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true).
 
 1. Download the installer from [Python download page](https://www.python.org/downloads/macos).
@@ -181,7 +181,7 @@ Follow these steps to download the Python installer from the Python website.
 
     You may see a dialog box prompting you to allow downloads from python.org. Select **Allow**.
 
-    After a moment, a file named _python-3.9.0-mascosx10.9.pkg_ (or similar) should download to the Downloads stack in your Dock.
+    After a moment, a file named _python-3.10.2-macos11.pkg_ (or similar) should download to the Downloads stack in your Dock.
 
 1. To start the installer, double-click the _.pkg_ file that you downloaded. The Python installer prompts you to install, verify, and accept various options and license agreements. Take the time to read through these prompts to understand what the installer will do to your computer.
 
@@ -189,16 +189,16 @@ Follow these steps to download the Python installer from the Python website.
 
     If you're prompted to move the Python installer to the trash, you can do so.
 
-1. Verify installation by running `python3 --version` in a terminal window:
+1. Verify installation by running `python3.10 --version` in a terminal window:
 
     ```bash
-    python3 --version
+    python3.10 --version
     ```
 
     The output includes the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
-    Python 3.9.7
+    Python 3.10.0
     ```
 
     As long as the first number is `3`, Python 3 installed successfully.

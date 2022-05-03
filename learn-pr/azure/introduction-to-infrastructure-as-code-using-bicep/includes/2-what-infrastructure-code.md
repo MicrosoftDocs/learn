@@ -73,7 +73,7 @@ Here are some of the key ways infrastructure as code can help you manage your en
 
 Infrastructure as code can help you better understand the state of your cloud resources:
 
-- **Audit trail**: Changes to your infrastructure as code configurations are version-controlled in the same way your application source code is. These changes are tracked in your tooling, like with Git's version history. This audit trail means that you can review the details of each change, who made the change, and when the change was made.
+- **Audit trail**: Changes to your infrastructure as code configurations are version-controlled in the same way as your application source code. These changes are tracked in your tooling, like with Git's version history. This audit trail means that you can review the details of each change, who made the change, and when the change was made.
 
 - **Documentation**: You can use many infrastructure as code configurations to add metadata, like comments, which describe the purpose of the code in your configuration. If your organization already follows a code documentation process, consider adopting these same procedures with your infrastructure code.
 

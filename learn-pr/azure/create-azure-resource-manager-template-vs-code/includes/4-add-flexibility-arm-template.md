@@ -11,21 +11,21 @@ In the `parameters` section of the template, you specify which values you can in
 The available properties for a parameter are:
 
 ```json
-"parameters":{
-   "<parameter-name>":{
-      "type":"<type-of-parameter-value>",
-      "defaultValue":"<default-value-of-parameter>",
-      "allowedValues":[
-         "<array-of-allowed-values>"
-      ],
-      "minValue":"<minimum-value-for-int>",
-      "maxValue":"<maximum-value-for-int>",
-      "minLength":"<minimum-length-for-string-or-array>",
-      "maxLength":"<maximum-length-for-string-or-array-parameters>",
-      "metadata":{
-         "description":"<description-of-the-parameter>"
-      }
-   }
+"parameters": {
+  "<parameter-name>": {
+    "type": "<type-of-parameter-value>",
+    "defaultValue": "<default-value-of-parameter>",
+    "allowedValues": [
+      "<array-of-allowed-values>"
+    ],
+    "minValue": <minimum-value-for-int>,
+    "maxValue": <maximum-value-for-int>,
+    "minLength": <minimum-length-for-string-or-array>,
+    "maxLength": <maximum-length-for-string-or-array-parameters>,
+    "metadata": {
+      "description": "<description-of-the-parameter>"
+    }
+  }
 }
 ```
 
@@ -52,20 +52,20 @@ In the parameters section of the ARM template, specify the parameters that can b
 Here's an example of a template file with a parameter for the storage account SKU defined in the parameters section of the template. You can provide a default for the parameter to be used if no value is specified at execution.
 
 ```json
-"parameters":{
+"parameters": {
   "storageAccountType": {
-      "type": "string",
-      "defaultValue": "Standard_LRS",
-      "allowedValues": [
-        "Standard_LRS",
-        "Standard_GRS",
-        "Standard_ZRS",
-        "Premium_LRS"
-      ],
-      "metadata": {
-        "description": "Storage Account type"
-      }
-    },
+    "type": "string",
+    "defaultValue": "Standard_LRS",
+    "allowedValues": [
+      "Standard_LRS",
+      "Standard_GRS",
+      "Standard_ZRS",
+      "Premium_LRS"
+    ],
+    "metadata": {
+      "description": "Storage Account type"
+    }
+  }
 }
 ```
 
@@ -73,21 +73,20 @@ Then, use the parameter in the resource definition. The syntax is ```[parameters
 
 ```json
 "resources": [
-     {
-       "type": "Microsoft.Storage/storageAccounts",
-       "apiVersion": "2019-04-01",
-       "name": "learntemplatestorage123",
-       "location": "{Location}",
-       "sku": {
-         "name": "[parameters('storageAccountType')]"
-       },
-       "kind": "StorageV2",
-       "properties": {
-         "supportsHttpsTrafficOnly": true
-       }
-     }
-   ]
-  
+  {
+    "type": "Microsoft.Storage/storageAccounts",
+    "apiVersion": "2019-04-01",
+    "name": "learntemplatestorage123",
+    "location": "[resourceGroup().location]",
+    "sku": {
+      "name": "[parameters('storageAccountType')]"
+    },
+    "kind": "StorageV2",
+    "properties": {
+      "supportsHttpsTrafficOnly": true
+    }
+  }
+]
 ```
 
 When you deploy the template, you can give a value for the parameter. Notice the last line in the following command:
@@ -99,13 +98,13 @@ templateFile="azuredeploy.json"
 az deployment group create \
   --name testdeployment1 \
   --template-file $templateFile \
-  --parameters storageAccountType=Standard_LRS
+  --parameters StorageAccountType=Standard_LRS
 ```
 
 # [PowerShell](#tab/azure-powershell)
 
 ```azurepowershell
-$templateFile = "azuredeploy.json"
+$templateFile="azuredeploy.json"
 New-AzResourceGroupDeployment `
   -Name testdeployment1 `
   -TemplateFile $templateFile `
@@ -120,17 +119,18 @@ In the outputs section of your ARM template, you can specify values that will be
 
 ```json
 "outputs": {
-   "<output-name>": {
-       "condition": "<boolean-value-whether-to-output-value>",
-       "type": "<type-of-output-value>",
-       "value": "<output-value-expression>",
-       "copy": {
-           "count": <number-of-iterations>,
-           "input": <values-for-the-variable>
-       }
-   }
+  "<output-name>": {
+    "condition": "<boolean-value-whether-to-output-value>",
+    "type": "<type-of-output-value>",
+    "value": "<output-value-expression>",
+    "copy": {
+      "count": <number-of-iterations>,
+      "input": <values-for-the-variable>
+    }
+  }
 }
 ```
+
 | Element | Description |
 |--- | --- |
 | **output-name** | Must be a valid JavaScript identifier. |
@@ -144,12 +144,12 @@ In the outputs section of your ARM template, you can specify values that will be
 Here's an example to output the storage account's endpoints.
 
 ```json
- "outputs": {
-       "storageEndpoint": {
-           "type": "object",
-           "value": "[reference('learntemplatestorage123').primaryEndpoints]"
-       }
-   }
+"outputs": {
+  "storageEndpoint": {
+    "type": "object",
+    "value": "[reference('learntemplatestorage123').primaryEndpoints]"
+  }
+}
 ```
 
 Notice the ```reference``` part of the expression. This function gets the runtime state of the storage account.

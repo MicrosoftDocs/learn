@@ -8,8 +8,9 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: shkuehn-03222021
 title: Configure NSX-T network components
 durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-nsx-t-network-components.md)]
-

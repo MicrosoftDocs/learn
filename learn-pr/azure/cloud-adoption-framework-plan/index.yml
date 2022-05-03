@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-plan
 metadata:
   title: "Prepare for cloud adoption with a data-driven plan"
   description: Prepare for cloud adoption with a data-driven cloud adoption plan from the Cloud Adoption Framework. For new innovations, learn from others who have used the target platforms. For migrations, understand how to evaluate your assets and plan the efforts required to move them to the cloud.
-  ms.date: 02/22/2021
+  ms.date: 04/19/2022
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
