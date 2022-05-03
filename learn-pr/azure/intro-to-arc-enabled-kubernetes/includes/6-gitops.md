@@ -19,7 +19,7 @@ GitOps associates your Kubernetes cluster with one or more Git repositories, whe
 > [!NOTE]
 > When using Helm charts, the Flux operator interacts with the containerized Helm operator to deploy packaged applications.
 
-:::image type="content" source="A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc-enabled clusters." alt-text="Diagram of the GitOps flow showing an application update.":::
+:::image type="content" source="../media/6-arc-enabled-k8s-gitops.png" alt-text="Diagram showing the process of applying GitOps-based configuration to multiple Azure Arc enabled clusters.":::
 
 After the microsoft.flux cluster extension is installed, you can create one or more fluxConfigurations resources that sync your Git repository sources to the cluster and reconcile the cluster to the desired state. With GitOps, you can use your Git repository as the source of truth for cluster configuration and application deployment.
 
