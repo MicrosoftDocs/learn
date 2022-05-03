@@ -29,15 +29,36 @@ content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
   questions:
-  - content: "Question 1"
+  - content: "Which Azure resource supports MongoDB databases?"
     choices:
-      - content: "a"
+      - content: "Cosmos DB"
         isCorrect: false
-        explanation: "Incorrect. The name has to be unique globally across all App Service resources."
-      - content: "b"
+        explanation: "Incorrect. Cosmos DB supports a variety of databases. To create a MongoDB compatible database, you must create the Cosmos DB API for MongoDB resource. "
+      - content: "Cosmos DB Core"
         isCorrect: false
-        explanation: "Incorrect. The name has to be unique globally across all App Service resources."
-      - content: "c"
+        explanation: "Incorrect.  Cosmos DB supports a variety of databases. The __Core__ database supports SQL."
+      - content: "Cosmos DB API for MongoDB"
         isCorrect: true
-        explanation: "Correct. The resource name must be globally unique."
-    
+        explanation: "Correct. This is the correct name for a compatible MongoDB database."
+  - content: "What type of Cosmos DB connections are provided to connect to MongoDB?"
+    choices:
+      - content: "Keys"
+        isCorrect: false
+        explanation: "Incorrect. MongoDB-compatible connection strings are provided by Cosmos DB."
+      - content: "Connection strings"
+        isCorrect: true
+        explanation: "Correct. Cosmos DB provides MongoDB-compatible connection strings."
+      - content: "Managed identity"
+        isCorrect: false
+        explanation: "Incorrect.  Managed identity is an Azure-specific connection."
+  - content: "Where should you store the Cosmos DB connection information in an App Service?"
+    choices:
+      - content: "App settings"
+        isCorrect: true
+        explanation: "Correct. Store the Cosmos DB connection string in an app settings."
+      - content: "Key Vault"
+        isCorrect: false
+        explanation: "Incorrect. Key Vault isn't stored in an App Service, but a reference, such as a Key Vault secret containing a connection string, can be stored in an app setting."
+      - content: "Managed identity"
+        isCorrect: false
+        explanation: "Incorrect.  Managed identity isn't currently used to connect to Cosmos DB API for MongoDB from any MongoDB client packages."        

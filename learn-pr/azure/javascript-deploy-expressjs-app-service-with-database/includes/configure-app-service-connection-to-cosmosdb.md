@@ -8,7 +8,7 @@ There are several connection methods depending on which Azure resources you are 
 
 Authentication _secrets_ provided by the resource, such as a connection string or key are available from many Azure resources. These secrets are specific to the originating resource and not to the identity the secret is handed off to. These Azure resources provide 2 secrets for connectivity. One form of these secrets is 2 secrets, which you would hand out to 2 separate developers or connecting resources. Each secret can be cycled for a new secret. Another form of these secrets in a **read** and a **read/write** form where the developer would need to use the correct secret based on their scenario. Once you have the connection secret, you can directly store it in an **app setting** for the App Service. When you need to rotate the secret, you need access to the original Azure resource and the Azure App Service.
 
-:::image type="content" source="../media/app-service-app-setting-connection-string.png" alt-text="Conceptual image showing connection from App Service to Cosmos DB with a connection string.":::
+:::image type="content" source="../media/app-service-connect-app-setting-connection-string.png" alt-text="Conceptual image showing connection from App Service to Cosmos DB with a connection string.":::
 
 If you want to restrict access to the App Service to a group different than the owners of the connected Azure resource, you may choose to store the secret in an **Azure Key Vault** then reference the secret by the App Service as an app setting. When you need to rotate the secret, you only need access to the Azure Key Vault. 
 

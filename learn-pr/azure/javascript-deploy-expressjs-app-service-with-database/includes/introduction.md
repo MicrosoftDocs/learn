@@ -22,7 +22,6 @@ You'll deploy an Express.js app which stores data in Cosmos DB for the MongoDB A
 - Create Azure Cosmos DB resource.
 - Configure the Azure App Service to connect to your CosmosDB database.
 - Deploy the Express.js app from your local computer with Visual Studio Code.
-- Analyze the database.
 
 ## What is the main goal?
 
