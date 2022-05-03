@@ -1,10 +1,10 @@
 In this exercise, you implement a dashboard for the security team, so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior. You'll do these tasks:
 
-- Create a security dashboard
-- Build a query for the dashboard
-- Pin query results to your dashboard
-- Edit or customize an item in your dashboard
-- Export a report to Excel
+- Create a security dashboard.
+- Build a query for the dashboard.
+- Pin query results to your dashboard.
+- Edit or customize an item in your dashboard.
+- Export a report to Excel.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
