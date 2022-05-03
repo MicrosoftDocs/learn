@@ -27,11 +27,11 @@ To access the integration guide for an application, select the **configuration g
 
 ### IdP-initiated SSO
 
-In the IdP-initiated SSO flow, the user signs in to the identity provider, and then is redirected back to the application using the SAML response. In Azure AD, this would occur when a signed-in user starts an application in a launcher such as the My Apps portal, and then is redirected to that application. For configuration, it is important to have **Relay State URL** included when setting up single sign-on for the application so that the identity provider knows where to send users after they have successfully authenticated.
+In the IdP-initiated SSO flow, the user signs in to the identity provider, and then is redirected back to the application using the SAML response. In Azure AD, this would occur when a signed-in user starts an application in a launcher such as the My Apps portal, and then is redirected to that application. For configuration, it's important to have **Relay State URL** included when setting up single sign-on for the application so that the identity provider knows where to send users after they've successfully authenticated.
 
 ### SP-initiated SSO
 
-In SP-initiated SSO, the application initiates the request to sign in. When the user attempts to sign in to the service provider, they are redirected to the identity provider to be authenticated. The user is authenticated and are sent back to the application using the SAML response. To configure this process, the **Sign on URL** must be defined which tells the identity provider where to locate the sign-in page of the application.
+In SP-initiated SSO, the application initiates the request to sign in. When the user attempts to sign in to the service provider, they are redirected to the identity provider to be authenticated. The user is authenticated and then sent back to the application using the SAML response. To configure this process, the **Sign on URL** must be defined which tells the identity provider where to locate the sign-in page of the application.
 
 :::image type="content" source="../media/sp-initiated-sso.png" alt-text="Diagram showing the flow of service provider initiated single sign-on." border="true":::
 
@@ -41,13 +41,13 @@ The basic configuration for SAML-based single sign-on requires properties that a
 
 :::image type="content" source="../media/saml-urls.png" alt-text="Screenshot showing the URLs that need to be defined for SAML single sign-on." border="false":::
 
-- **Identifier (Entity ID)** - The unique ID that identifies your application to the identity provider. The identifier is used as a way to signal who is sending the SAML request. When using SP-initiated SSO, the identity provider is not the initiator, so no audience field value is necessary in the token, but it is necessary when using IdP-initiated SSO as the `audience` claim. This value must be unique across all applications in the identity provider.
-- **Reply URL (Assertion Consumer Service URL)** - The location where the application expects to receive the authentication token. This is also referred to as the **Assertion Consumer Service (ACS)** in SAML. This is the destination where requests or responses are sent back and forth to. For IdP-initiated SSO, The value is sent as the `destination` claim, and that’s also where the initial request is sent. For SP-initiated SSO, it is where the response is sent after the initial request, but the `destination` claim isn’t necessary for this flow.
-- **Sign on URL** - This value is the sign-in page URL for your application. Used if you would like to perform SP-initiated SSO. This field is not needed if you want to perform IdP-initiated SSO.
-- **Relay State** - Instructs the application where to redirect users after authentication is completed. The value is typically a URL or URL path that takes users to a specific location within the application. This value only takes effect in an IdP-initiated SSO flow. If your application uses SP-initiated SSO, then the service provider needs to send the **Relay State** as a parameter in the SAML request.
+- **Identifier (Entity ID)** - The unique ID that identifies the application to the identity provider. The identifier is used as a way to signal who is sending the SAML request. When using SP-initiated SSO, the identity provider is not the initiator, so no audience field value is necessary in the token, but it is necessary when using IdP-initiated SSO as the `audience` claim. This value must be unique across all applications in the identity provider.
+- **Reply URL (Assertion Consumer Service URL)** - The location where the application expects to receive the authentication token. This is also referred to as the **Assertion Consumer Service (ACS)** in SAML. This is the destination where requests or responses are sent back and forth. For IdP-initiated SSO, The value is sent as the `destination` claim, and that’s also where the initial request is sent. For SP-initiated SSO, it's where the response is sent after the initial request, but the `destination` claim isn’t necessary for this flow.
+- **Sign on URL** - This value is the sign-in page URL for the application in the SP-initiated SSO flow. This field is not needed if you want to perform IdP-initiated SSO.
+- **Relay State** - Instructs the application where to redirect users after authentication is completed. The value is typically a URL that takes users to a specific location within the application. This value only takes effect in an IdP-initiated SSO flow. If your application uses SP-initiated SSO, then the service provider needs to send the **Relay State** as a parameter in the SAML request.
 - **Logout URL** - Used to send the SAML logout response back to the application.
 
-For some applications, you can download a metadata file from the service provider that contains the single sign-on configuration, and then upload it to the identity provider:
+For some applications, a metadata file can be downloaded from the service provider that contains the single sign-on configuration, and then be uploaded to the identity provider.
 
 :::image type="content" source="../media/metadata-link.png" alt-text="Screenshot showing where to upload a metadata file." border="true":::
 
@@ -62,7 +62,7 @@ There are two possible reasons why you might need to edit the claims issued in t
 - The application requires the NameIdentifier or NameID claim to be something other than the username (or user principal name) stored in Azure AD.
 - The application has been written to require a different set of claim URIs or claim values.
 
-Default claims in the token include:
+Default claims in the token are shown in the following diagram:
 
 :::image type="content" source="../media/saml-claims.png" alt-text="Screenshot showing the claims that can be defined for SAML single sign-on." border="false":::
 
@@ -78,7 +78,7 @@ The certificate can be used as a raw (binary) certificate or a Base64 (base 64-e
 
 ## Service provider settings
 
-All applications that have been added to the application gallery have their own way of registering user accounts and configuring single sign-on. To make single sign on work, an account must exist for the user both at the identity provider and at the service provider. For most applications, the following URLs and identifier are defined at the service provider:
+All applications that have been added to the application gallery have their own way of registering user accounts and configuring single sign-on. In most cases, to make single sign on work, an account must exist for the user both at the identity provider and at the service provider. For most applications, the following URLs and identifier are defined at the service provider:
 
 - **Login URL** - The URL that is used to sign in to the application at the identity provider.
 - **Azure AD Identifier** - The identifier of the application at the identity provider.

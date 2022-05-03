@@ -1,8 +1,8 @@
-Identify an application that supports SAML-based single sign-on and add it to the tenant.
+Identify an application that supports SAML-based single sign-on and add it to the Azure Active Directory (Azure AD) tenant.
 
-A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate. To make the requested application available, it's found in the gallery and if it supports single sign-on, it's added to the Azure Active Directory (Azure AD) tenant, which is also referred to as the identity provider.
+A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate. To make the requested application available, it's found in the gallery and if it supports single sign-on, it's added to the Azure AD tenant, which is also referred to as the identity provider.
 
-Employees in the retail company likely already have an account in the tenant for the organization and will eventually be assigned to the application. But, for the purpose of testing single sign-on for the application, a user account should be created. After successful testing, the application with single sign-on configured can be rolled out to the employees.
+Employees in the retail company likely already have an account in the tenant for the organization. But, for the purpose of testing single sign-on for the application, a test user account should be created. After successful testing the application with single sign-on configured, it can be made available to the employees.
 
 ## Find and add an application
 
@@ -40,7 +40,7 @@ Federated single sign-on support can be identified by looking for the **Federate
 
     :::image type="content" source="../media/add-application.png" alt-text="Screenshot showing the addition of a new enterprise application." border="true":::
 
-1. In the application overview pane that appears, enter a name for the application.
+1. In the application overview pane that appears, enter a name for the application. For this exercise, accept the default name.
 1. Select **Create**
 
     :::image type="content" source="../media/create-application.png" alt-text="Screenshot showing the overview and creation of a new enterprise application." border="true":::

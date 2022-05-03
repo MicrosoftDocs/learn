@@ -1,4 +1,4 @@
-Register the user account that matches the account that was created at the identity provider, and then configure single sign-on for the account.
+Register the user account at the service provider that matches the account that was created at the identity provider, and then configure single sign-on for the account.
 
 ## Register a new user account
 
@@ -23,7 +23,7 @@ Use the values that were recorded in the previous unit to configure single sign-
 
 To configure SAML settings for the application:
 
-1. Signed in with the credentials of the user account that you created, select **SAML Configuration** at the upper-left corner of the page.
+1. Signed in with the credentials of the user account that you registered, and then select **SAML Configuration** at the upper-left corner of the page.
 1. Select **Create** in the middle of the page.
 
     :::image type="content" source="../media/saml-config-host.png" alt-text="Screenshot showing where to configure single sign-on at the service provider." border="true":::

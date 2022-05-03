@@ -30,23 +30,23 @@ quiz:
     - content: "Single sign-on flow information can be found on the overview page for the application."
       isCorrect: false
       explanation: "Supported single sign-on flow information is not available in the Azure portal."
-    - content: "Single sign-on flow information can be found at the application host."
+    - content: "Single sign-on flow information can be found at the service provider."
       isCorrect: false
-      explanation: "Although the information may be available at the application host, it can't be counted on for all applications."
+      explanation: "Although the information may be available at the service provider, it can't be counted on for all applications."
     - content: "Single sign-on flow information can be found in the integration guide for the application."
       isCorrect: true
       explanation: "Single sign-on flow information can be found in the **Scenario description** section of the integration guide for the application."
-  - content: "Which single sign-on properties are typically needed to configure the application at its host?"
+  - content: "Which single sign-on properties are typically needed to configure the application at the service provider?"
     choices:
     - content: "**Reply URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: false
-      explanation: "**Reply URL** is not a required property for configuring single sign-on at the application host."
+      explanation: "**Reply URL** is not a required property for configuring single sign-on at the service provider."
     - content: "**Sign on URL**, **Reply URL**, and **Sign out URL**."
       isCorrect: false
-      explanation: "**Sign on URL** and **Reply URL** are not required properties for configuring single sign-on at the application host."
+      explanation: "**Sign on URL** and **Reply URL** are not required properties for configuring single sign-on at the service provider."
     - content: "**Login URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: true
-      explanation: "The **Login URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the application host."
+      explanation: "The **Login URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the service provider."
   - content: "What is the purpose of the **Azure AD Identifier**?"
     choices:
     - content: "Identifies the Azure AD subscription."
