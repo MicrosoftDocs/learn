@@ -4,9 +4,9 @@ One of the primary benefits of Azure Arc is facilitating implementation of DevOp
 
 GitOps is a DevOps practice that relies on a Git repository to host files that contain the configuration representing the expected state of a resource. An agent running on the cluster monitors the state of the repository. When there is a change in the repository, the agent pulls the changed files to the cluster and applies the new configuration.
 
-In the context of Azure Arc-enabled Kubernetes clusters, a Git repository hosts a configuration of a Kubernetes cluster, including its resources such as pods and deployments. A pod or a set of pods running on the cluster polls the status of the repository. Once it detects a change, it pulls and applies the new configuration to the cluster.
+In the context of Azure Arc-enabled Kubernetes clusters, a Git repository hosts a configuration of a Kubernetes cluster, including its resources such as pods and deployments. A pod or a set of pods running on the cluster polls the status of the repository. Once it detects a change, it pulls and applies the new configuration to the cluster, ensuring that the cluster remains in the desired state.
 
-Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool. The Flux extension is installed in the cluster, and is then used to configure the pods responsible for tracking changes to the Git repository you designate and applying them to the local cluster. In addition, the containerized Flux operator also periodically reviews the existing cluster configuration to ensure that it matches the one residing in the Git repository. If there is a configuration drift, the Flux agent remediates it by reapplying the desired configuration.
+Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps deployment tool. Flux is an operator that configures the pods to automate GitOps configuration deployments in the cluster. Flux provides support for common file sources (Git repositories, Helm repositories, Buckets) and template types (YAML, Helm, and Kustomize).
 
 :::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update.":::
 
@@ -25,7 +25,7 @@ After the microsoft.flux cluster extension is installed, you can create one or m
 
 Each association between an Azure Arc-enabled Kubernetes cluster configuration and the corresponding GitOps repository resides in Azure, as part of the Azure Resource Manager resource representing the Azure Arc-enabled Kubernetes clusters. You can configure that association via traditional Azure management interfaces, such as the Azure portal or Azure CLI.
 
-To use GitOps with Azure Arc-enabled Kubernetes cluster, the following high-level steps are required:
+To use GitOps with an Azure Arc-enabled Kubernetes cluster, the following high-level steps are required:
 
 1. Verify that you satisfy all the prerequisites. You'll need:
 
