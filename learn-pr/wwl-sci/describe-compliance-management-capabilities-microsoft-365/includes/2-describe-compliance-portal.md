@@ -15,7 +15,7 @@ When an admin signs in to the Microsoft Purview compliance portal, the card sect
 
 The default compliance portal home page contains several cards including:
 
-- The **Compliance Manager** card. This card leads you to the Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
+- The **Compliance Manager** card. This card leads you to the Microsoft Purview Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
   :::image type="content" source="../media/3-compliance-scorecard-inline.png" lightbox="../media/3-compliance-scorecard-expanded.png" alt-text="The compliance score card":::
 

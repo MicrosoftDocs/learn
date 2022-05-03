@@ -43,7 +43,6 @@ An assessment is a grouping of controls from a specific regulation, standard, or
 
 An assessment consists of several components including the services that are in-scope, the controls, and an assessment score that shows progress towards completing the actions needed for compliance.
 
-
 ### Templates
 
 Compliance Manager provides templates to help admins to quickly create assessments. They can modify these templates to create an assessment optimized for their needs. Admins can also build a custom assessment by creating a template with their own controls and actions. For example, the admin may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of Microsoft’s 150-plus prebuilt assessment templates.

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365.explore-compliance-center
-title: Describe the Microsoft 365 Compliance Center
+title: Describe the Microsoft Purview compliance portal
 metadata:
-  title: Describe the Microsoft 365 Compliance Center
-  description: "Describe the Microsoft 365 Compliance Center"
-  ms.date: 04/24/2022
+  title: Describe the Microsoft Purview compliance portal
+  description: "Describe the Microsoft Purview compliance portal"
+  ms.date: 05/03/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-describe-compliance-center.md)]
+  [!include[](includes/2-describe-compliance-portal.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365
 metadata:
-  title: Describe the compliance management capabilities in Microsoft 365
-  description: "Describe the compliance management capabilities in Microsoft 365"
-  ms.date: 04/24/2022
+  title: Describe the compliance management capabilities in Microsoft Purview
+  description: "Describe the compliance management capabilities in Microsoft Purview"
+  ms.date: 05/03/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: Describe the compliance management capabilities in Microsoft 365
+title: Describe the compliance management capabilities in Microsoft Purview
 summary: Explore the Microsoft 365 compliance center, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
 abstract: |
   After completing this module, you'll be able to:
