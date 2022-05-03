@@ -8,7 +8,7 @@ You’ve already set up an Microsoft Purview account by adding the Data Source A
 
 Before you can register an Azure SQL database source, you need to ensure that the Microsoft Purview account has connectivity to the database and has the correct credentials to access it.
 
-## Configure the firewall settings for an Azure SQL Database
+### Configure the firewall settings for an Azure SQL Database
 
 It’s important that you provide connectivity to your Azure SQL Database before you scan the data source. The firewall settings on the Azure SQL Server specify which IP addresses are allowed to connect to the SQL databases. You can configure the firewall to allow connections to an Azure SQL Database from your Microsoft Purview account using one of the following methods:
 
@@ -16,26 +16,26 @@ It’s important that you provide connectivity to your Azure SQL Database before
 
 - Install a self-hosted integration runtime and give it access through the firewall. To use this configuration, you must integrate your Azure SQL Database with your virtual network by using a private endpoint. Deploy a virtual machine (VM) in that virtual network and then install a self-hosted integration runtime that runs a scan in the Azure SQL Database. Additionally, ensure that the configuration of the VM’s IP address allows it to bypass the SQL Database firewall.
 
-## Authentication for scanning the Azure SQL Database
+### Authentication for scanning the Azure SQL Database
 
 To access an Azure SQL Database from your Microsoft Purview account, use one of the following three authentication methods:
 
 1. SQL Authentication. If your database is already configured for SQL Authentication, you can use the same method to authenticate and run scans. Use the existing name and password to sign in, or you can create new credentials that have the **db_datareader** permission for the dataset that you plan to scan.
 
-You must store the password for the account used for scanning the SQL Database in Azure Key Vault as a secret. Your Microsoft Purview Account must be authorized to access that secret. You can also use this method if you’re configuring a self-hosted integration account.
+    You must store the password for the account used for scanning the SQL Database in Azure Key Vault as a secret. Your Microsoft Purview Account must be authorized to access that secret. You can also use this method if you’re configuring a self-hosted integration account.
 
->[!Note]
->Microsoft Purview supports lineage from Azure SQL Database. To sign in, the account requires **db_owner** permission for the dataset.
+    >[!Note]
+    >Microsoft Purview supports lineage from Azure SQL Database. To sign in, the account requires **db_owner** permission for the dataset.
 
 1. Managed identity. Use manage identity as the preferred method if you’ve configured Azure Active Directory (Azure AD) authentication with your Azure SQL database. You can use either a system- or a user-assigned managed identity to authenticate and scan the Azure SQL Database. The managed identity needs permission to get metadata for the database, schemas, and tables.
 
-Assign the **db_datareader** permission to the managed identity so it’s authorized to query the tables to sample for classification. You should also give your Microsoft Purview managed account permission to scan the Azure SQL Database either at subscription, resources group, or resource level.
+    Assign the **db_datareader** permission to the managed identity so it’s authorized to query the tables to sample for classification. You should also give your Microsoft Purview managed account permission to scan the Azure SQL Database either at subscription, resources group, or resource level.
 
 1. Service principal. The service principal is created in Azure AD as a new app registration. Add the **client secret** to the newly registered app. Preferably, store the secret in Azure Key Vault.
 
-The service principal needs permission to get metadata for the database, schemas, and tables. You can provide the correct level of permission by creating an Azure AD user in the SQL Database using the previously created service principal.
+    The service principal needs permission to get metadata for the database, schemas, and tables. You can provide the correct level of permission by creating an Azure AD user in the SQL Database using the previously created service principal.
 
-## Register an Azure SQL Database
+### Register an Azure SQL Database
 
 Use the following steps to register an Azure SQL Database source in Microsoft Purview:
 
@@ -47,11 +47,11 @@ Use the following steps to register an Azure SQL Database source in Microsoft Pu
 
 1. On the **Register sources** pane, select the **Azure SQL Database** source tile, and then select **Continue.**
 
-    :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview"  border="false":::
+    :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview"  border="true":::
 
 1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL server, enter the public **endpoint**, select the **collection**, and then select **Register.**
 
-    :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane" border="false":::
+    :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane" border="true":::
 
 The Azure SQL Server Database is now listed under the selected collection.
 
@@ -75,7 +75,7 @@ To scan your Azure SQL database with system-managed or user-managed identities, 
 
 - Grant the Microsoft Purview account managed identity the **Reader** role at the **Subscription** or **Resource group** where your Azure SQL Database is created.
 
-    :::image type="content" source="../media/2-managed-identities.png" alt-text="Screenshot depicting how to scan an Azure SQL Database with system-managed or user-managed identities." border="false":::
+    :::image type="content" source="../media/2-managed-identities.png" alt-text="Screenshot depicting how to scan an Azure SQL Database with system-managed or user-managed identities." border="true":::
 
 To scan an Azure SQL Database that’s been configured using managed identities, follow these steps:
 
@@ -85,7 +85,7 @@ To scan an Azure SQL Database that’s been configured using managed identities,
 
 1. Under the **Azure SQL DB** you registered earlier, select the **New Scan** icon.
 
-    :::image type="content" source="../media/2-scan-azuresqldatabase.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database that's been configured using managed identities." border="false":::
+    :::image type="content" source="../media/2-scan-azuresqldatabase.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database that's been configured using managed identities." border="true":::
 
 1. Provide the following information and then select **Continue**:
 
@@ -135,7 +135,7 @@ To configure a scan of a database configured with SQL authentication, you need t
 >[!Note]
 >Be sure to configure the access policy for Azure Key Vault to grant **Get** and **List** secret permission for your Microsoft Purview account.
 
-:::image type="content" source="../media/2-register-key-vault-connection.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Microsoft Purview." border="false":::
+:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Azure Purview." border="true":::
 
 After you establish a connection with Azure Key Vault, create credentials that use **SQL** **authentication** for your Azure SQL database.
 
