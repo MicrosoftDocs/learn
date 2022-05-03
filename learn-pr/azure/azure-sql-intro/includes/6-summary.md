@@ -51,7 +51,7 @@ If you want to learn more about deployment options and how to choose one, check 
 
 - [Blog announcement for Azure SQL](https://techcommunity.microsoft.com/t5/Azure-SQL-Database/Unified-Azure-SQL-experience/ba-p/815368?azure-portal=true) explains Azure SQL and some of the views and experiences available in the Azure portal.
 - [Choosing your database migration path to Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/choosing-your-database-migration-path-to-azure/Choosing_your_database_migration_path_to_Azure.pdf?azure-portal=true) is a white paper about tools for discovering, assessing, planning, and migrating SQL databases to Azure. This learning path refers to it several times, and we recommend that you read it. Chapter 5 includes an in-depth discussion about choosing the right deployment option.  
-- [Feature comparison among SQL Database, SQL Managed Instance, and SQL Server](azure/azure-sql/database/features-comparison) can help you learn about the differences among these options.
+- [Feature comparison among SQL Database, SQL Managed Instance, and SQL Server](/azure/azure-sql/database/features-comparison) can help you learn about the differences among these options.
 
 ### Purchasing models and service tiers
 
