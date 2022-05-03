@@ -26,7 +26,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 > As you add or change settings in the wizard, Azure validates each value and places a green check mark next to a validated field, or red error indicator below the field. You can hover over an error indicator to get more information about a validation issue.
 
 > [!NOTE]
-> It's a best practice to use a standard naming convention for resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
+> It's a best practice to use a standard naming convention for resource names so you can easily identify their purpose. Windows VM names are a bit limited; they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
