@@ -31,9 +31,13 @@ You'll set these values in the Express.js project `.env` file later in the modul
 
 This sample app provides JSON data to seed the collection.
 
-1. In the Azure pane, expand the **Databases** section's Learn subscription and find the database's collection.
+1. In the **Azure** pane, expand the **Databases** section's Learn subscription and find the database's collection.
 1. Right-click and select **Import Document into a Collection**. 
 1. From your local computer, within your cloned version of the sample app, select the `./3-Add-cosmosdb-mongodb/data/fake-rentals.json` file.
 1. Expand the collection to see the imported rental properties. 
 
 ## Check your work
+
+* The Cosmos DB resource is created, targeting MongoDB.
+* The database is named `js-rentals`. The collection is named `rentals`.
+* The sample data is uploaded to the database.
