@@ -2,170 +2,115 @@ It's important to understand storage metrics so you know which metrics to examin
 
 The automobile parts distributor is experiencing issues with file uploads to the Customer Portal. Collecting metrics for the storage accounts the Automobile Distribution Customer Portal uses will let you visualize how storage requests are being processed, examine trends in performance, and spot any issues that might lead to failures in the application.
 
-In this unit, you'll learn about Azure Storage Analytics, what information it reports on, and how you can use the metrics it provides to identify problems with how your applications are using Azure Storage.
+In this unit, you'll learn about metrics in Azure Monitor, what information it reports on, and how you can use the metrics it provides to identify problems with how your applications are using Azure Storage.
 
-## Understand Storage Analytics metrics
+## Understand metrics
 
-Storage Analytics captures transactional metrics for all types of storage and capacity metrics for blob storage. The metrics provide an aggregated view of the work applications request in the storage account. If you need detail on individual requests, turn on storage logging (described in unit 5).
-
-### Transaction metrics
-
-Storage operations are transactional. If a write operation fails, its effects are undone. If a write succeeds, the changes are committed to storage. The metrics summarize information about each type of request; whether it's a read, a write, or a delete operation, and whether the operation succeeded or failed, and if it failed, what error occurred. Storage analytics also records information about rates of ingress and egress to and from storage, and storage availability. This information is useful if errors occur because storage is temporarily unavailable. Transactions are summarized for each type of storage service (blob, file, queue, table) by default, but you can also choose to summarize metrics for each storage API call. For example, if you enable API metrics, you'll see metrics for API calls such as `GetBlob`, `PutBlob`, `ListBlobs`, and so on, as well as the overall metrics for the service.
-
-At the service level, operations are aggregated hourly, even with zero requests made to the service. At the API operation level, statistics are only recorded when invoking an operation. For example, if you do a `GetBlob` operation in your blob storage, Storage Analytics will log a request and include it in the aggregated data for the Blob service as well as the `GetBlob` operation. However, if no `GetBlob` operation is requested within the hour, no summary will be generated for that operation.
+Storage metrics are captured automatically. Therefore, you don't have to enable any sort of setting to begin collecting them. Azure Storage generates these metrics and they are stored in an Azure Monitor data platform. Azure Monitor collects *capacity* metrics and *transaction* metrics at both the storage account level and the storage service level (For example: Blob Storage or File Storage).
 
 ### Capacity metrics
 
-Capacity metrics are only available for blob storage. Capacity data is sent to the analytics service hourly, but the aggregated statistics are only updated daily.
+Capacity metrics describe the storage of data (For example: bytes stored, bytes still available for storage). Capacity metrics values are refreshed daily (up to 24 Hours). The time grain defines the time interval for which metrics values are presented. The supported time grain for all capacity metrics is one hour (PT1H).
 
-The statistics reported are:
+### Transaction metrics
 
-- **Capacity**, which records the sum total of the storage occupied by the blobs in your storage account.
-- **Container count**, which shows how many containers have been created across blob storage in your storage account.
-- **Object count**, which displays the total number of blobs created across all of your containers.
+Transaction metrics describe account activity (For example: number of transactions or number of bytes read). Transaction metrics are emitted on every request to a storage account from Azure Storage to Azure Monitor. In the case of no activity on your storage account, there will be no data on transaction metrics in the period. The time grain defines the time interval that metric values are presented. The supported time grains for all transaction metrics are PT1H and PT1M.
 
-## Capture Storage Analytics metrics
+## Analyze metrics
 
-Storage Analytics records aggregated transaction statistics and capacity data about requests made to the Azure Storage service. The metrics data is stored in a set of tables in your storage account. Each table is named after the type of storage monitored and whether the transaction occurred in primary or secondary storage. For example, the metrics for blob storage are stored in tables named **\$MetricsHourPrimaryTransactionsBlob** and **\$MetricsHourSecondaryTransactionsBlob**. Similarly, the metrics for table storage are recorded in tables named **\$MetricsHourPrimaryTransactionsTable** and **\$MetricsHourSecondaryTransactionsTable**. Capacity metrics, which are only available for blob storage, are held in the **\$MetricsCapacityBlob** table.
+You can get metric values by using the Azure portal, PowerShell, Azure CLI, or by using code that targets Azure client libraries. To get an individual metric or series of metrics, specify the time range, time interval, metric namespace, metric and type of aggregation. Here's a description of each element:
 
-Metrics capture for all storage types (blob, file, table, queue) is automatically enabled when you create a new storage account. You can selectively disable (and re-enable) metrics captured in several ways:
+- Time range
+  
+  The period of time that you want to capture (For example: yesterday, or the last month).
 
-- Using the Azure portal. Select **Diagnostic settings (classic)** on the page for your storage account, select the storage type and change the **Status** to **On** or **Off** as required. By default, the data captured includes the metrics for each type of storage API call. You can also set the retention period for the metrics data. When this period expires, the metrics are deleted from table storage.
+- Time interval
+  
+  The granularity of time reflected by a metric value. (For example: a value that reflects 1 hour or 1 day).
 
-    ![Screenshot of the Diagnostic Settings page in the Azure portal.](../media/3-diagnostic-settings.png)
+- Metric namespace
 
-- Using PowerShell. The `Set-AzureStorageServiceMetricsProperty` cmdlet allows you to enable and disable metrics capture for each type of storage in your account. The snippet below shows an example
+  The namespace of the metric. This specifies whether to get a metric at the storage account level, or at the level of a specific storage service (For example: File Storage).
 
-    ```PowerShell
-    $context = New-AzureStorageContext -StorageAccountName <storage account name> -StorageAccountKey <storage account key>
+- Metric
 
-    Set-AzureStorageServiceMetricsProperty -Context $context -ServiceType Blob -MetricsType Hour -MetricsLevel ServiceAndApi -PassThru -RetentionDays 7
-    ```
+  The metric you are interested in (For example: egress).
 
-- Using the Azure CLI. Use the `az storage metrics update` command. The `services` flag specifies the type of storage for which you want to enable metrics capture. It can be **b** (blob), **f** (file), **t** (table), **q** (queue), or any combination of these characters (**bt** means *blob and table*, for example):
+- Aggregation
 
-    ```azurecli
-    az storage metrics update \
-        --hour true \
-        --api true \
-        --services b \
-        --retention 7 \
-        --connection-string <storage account connection string>
-    ```
+  How you want that value calculated. In most cases, you'll choose either a sum or an average.
 
-By default, the Storage Analytics service aggregates data by the hour. You may have to wait for several minutes before you see any results. You can also generate metrics broken down by the minute if you require a more detailed analysis.
+For metrics that support dimensions, you can filter the metric with the desired dimension value. Dimensions are name/value pairs that carry additional data to describe the metric value. For example, authentication type is a dimension for transactions. If you are interested in seeing only transactions authorized by using an account key, you can filter by that type of authentication.
 
-Switch to the Azure portal. Select **Enable** on the **Diagnostic settings (classic)** page, under **Minute metrics**. If you're using the PowerShell `Set-AzureStorageServiceMetricsProperty` cmdlet, set the `MetricsType` option to `Minute`. If you're using the Azure CLI `az storage metrics update` command, specify `--minute true`. The following snippets show examples:
+The **ResponseType** dimension reveals the success and failure rate, and the reasons for failure, such as timeouts, throttling, network errors, authorization failure, and so on. This information can give you a good insight as to why the performance of your applications may be suffering. For example, frequent throttling and timeout errors can indicate a high level of contention occurring for limited resources, and you might need to re-architect your system to the use the **Premium** rather than the **Standard** tier for your storage accounts. You might also need to spread the load across multiple storage accounts or select a different organization for any blob containers and tables that your application is using.
 
-```PowerShell
-# PowerShell
-$context = New-AzureStorageContext -StorageAccountName <storage account name> -StorageAccountKey <storage account key>
+### Azure portal
 
-Set-AzureStorageServiceMetricsProperty -Context $context -ServiceType Blob -MetricsType Minute -MetricsLevel ServiceAndApi -PassThru -RetentionDays 7
+The previous unit presented different ways to view metrics in the Azure portal. You can define the elements that appear in those views by using Metrics Explorer. In Metrics Explorer, you can specify the time range, time interval, metric namespace, metric, and aggregation for each value you want to analyze. You can also filter by dimensions. You can create charts based on these metrics and then pin them to dashboards for easy access in future.
+
+Screenshot goes here.
+
+### Command line and scripts
+
+You get metrics by running commands at the command line or by arranging commands in a script that you can run later as part of a scheduled task (PowerShell) or job (Azure CLI).
+
+#### PowerShell
+
+You can get metric values by using the [Get-AzMetric](/powershell/module/Az.Monitor/Get-AzMetric) cmdlet. This example gets the total number of read transactions for a storage account.
+
+```powershell
+$resourceId = "<resource-ID>"
+$dimFilter = [String](New-AzMetricFilter -Dimension ApiName -Operator eq -Value "GetBlob" 3> $null)
+Get-AzMetric -ResourceId $resourceId -MetricName Transactions -TimeGrain 01:00:00 -MetricFilter $dimFilter -AggregationType "Total"
 ```
+
+#### Azure CLI
+
+You can get metric values by using the [az monitor metrics list](/cli/azure/monitor/metrics#az-monitor-metrics-list) command. This example gets the total number of read transactions for a storage account.
 
 ```azurecli
-# Azure CLI
-az storage metrics update \
-    --minute true \
-    --api true \
-    --services b \
-    --retention 7 \
-    --connection-string <storage account connection string>
+az monitor metrics list --resource <resource-ID> --metric "Transactions" --interval PT1H --filter "ApiName eq 'GetBlob' " --aggregation "Total" 
 ```
 
-When you enable minute-level metrics, Storage Analyzer creates additional tables in your storage account to hold this data. These tables are named **\$MetricsMinutePrimaryTransactionsBlob**, **\$MetricsMinuteSecondaryTransactionsBlob**, and so on. Again, there will be a lag of several minutes before you see these metrics start to appear.
+### Application code
 
-## View Storage Analytics metrics
+You can get metric values by writing code that uses any of the Azure SDKs. The following example uses the [Azure SDK for .NET](/dotnet/azure/sdk/azure-sdk-for-dotnet?view=azure-dotnet) to get the average amount of Blob storage used in a storage account over a specified time period.
 
-As described earlier, you can view the metrics gathered for a storage account using the **Metrics** page for the account in the Azure portal. This pane displays the information captured by Azure Monitor. This data is managed separately, and isn't derived from the statics held in the **\$Metrics** tables in your storage account.
-
-The **Overview** page provides a useful overview of the performance of your storage account, but you may need more detail, especially if there are errors and failures in your applications. You can see a more detailed breakdown of the metrics by examining the data in the **\$Metrics** tables directly. A useful tool for gaining a quick view of this data is the desktop version of Azure Storage Explorer. The statistics gathered are broken down by requester (**user** for requests made by applications, and **system** for requests made by the Storage Analytics service). If you haven't captured metrics by API, you will see **user: All** and **system: All** for each hour's worth of metrics.
-
-If you have chosen to capture metrics by API, you'll see aggregated data for each API for each hour (or minute, if you're collecting minute-level metrics). There are a large number of values gathered for each API, including the success and failure rate, and the reasons for failure, such as timeouts, throttling, network errors, authorization failure, and so on. This information can give you a good insight as to why the performance of your applications may be suffering. For example, frequent throttling and timeout errors can indicate a high level of contention occurring for limited resources, and you might need to re-architect your system to the use the **Premium** rather than the **Standard** tier for your storage accounts. You might also need to spread the load across multiple storage accounts or select a different organization for any blob containers and tables that your application is using.
-
- ![Screenshot of the Azure Storage Explorer showing the hourly statistics captured for the blob service in a storage account.](../media/3-Azure-Storage-Explorer.png)
-
-For a description of the metrics gathered by Storage Analytics, visit [Storage Analytics Logged Operations and Status Messages](/rest/api/storageservices/storage-analytics-logged-operations-and-status-messages).
-
-## Analyze Storage Analytics metrics
-
-Microsoft provides the `WindowsAzure.Storage` client library you can use to retrieve the metrics for a storage account. The key class in this library is `CloudAnalyticsClient`. You can use this class to run queries over the metrics held in the **\$Metrics** tables. The code below shows an example that fetches all the metrics for each service in a storage account.
-
-```C#
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Analytics;
-using Microsoft.WindowsAzure.Storage.Auth;
-using Microsoft.WindowsAzure.Storage.Shared.Protocol;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace StorageAnalytics
+```csharp
+public static async Task ReadStorageMetricValueTest()
 {
-    class Program
+    // Resource ID for blob storage
+    var resourceId = "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{storageAccountName}/blobServices/default";
+
+    var subscriptionId = "<subscription-ID}";
+    var tenantId = "<tenant-ID>";
+    var applicationId = "<application-ID>";
+    var accessKey = "<accessKey>";
+
+    MonitorManagementClient readOnlyClient = AuthenticateWithReadOnlyClient(tenantId, applicationId, accessKey, subscriptionId).Result;
+
+    Microsoft.Azure.Management.Monitor.Models.Response Response;
+
+    string startDate = DateTime.Now.AddHours(-3).ToUniversalTime().ToString("o");
+    string endDate = DateTime.Now.ToUniversalTime().ToString("o");
+    string timeSpan = startDate + "/" + endDate;
+
+    ODataQuery<MetadataValue> odataFilterMetrics = new ODataQuery<MetadataValue>(
+        string.Format("BlobType eq '{0}'", "BlockBlob"));
+
+    Response = readOnlyClient.Metrics.List(
+                    resourceUri: resourceId,
+                    timespan: timeSpan,
+                    interval: System.TimeSpan.FromHours(1),
+                    metricnames: "BlobCapacity",
+                    odataQuery: odataFilterMetrics,
+                    aggregation: "Average",
+                    resultType: ResultType.Data);
+
+    foreach (var metric in Response.Value)
     {
-        static void Main(string[] args)
-        {
-            StorageUri blobStorageUri = new StorageUri(new Uri("https://<your storage account name>.blob.core.windows.net"));
-            StorageUri tableStorageUri = new StorageUri(new Uri("https://<your storage account name>.table.core.windows.net"));
-            StorageCredentials credentials = new StorageCredentials("<your storage account name>", "<your account key>");
-            CloudAnalyticsClient client = new CloudAnalyticsClient(blobStorageUri, tableStorageUri, credentials);
-
-            PrintMinuteMetrics(client);
-        }
-
-        private static void PrintMinuteMetrics(CloudAnalyticsClient analyticsClient)
-        {
-            var services = Enum.GetValues(typeof(StorageService));
-            foreach (StorageService service in services)
-            {
-                Console.WriteLine($"Minute Metrics for Service {service}");
-                var metricsQuery = analyticsClient.CreateMinuteMetricsQuery(service, StorageLocation.Primary);
-                var t = analyticsClient.GetMinuteMetricsTable(service);
-                var opContext = new OperationContext();
-                var query =
-                        from entity in metricsQuery
-                        select entity;
-
-                var results = query.ToList().Where(m => m.RowKey.StartsWith("user"));
-                var resultString = results.Aggregate(new StringBuilder(), (builder, metrics) => builder.AppendLine(MetricsString(metrics, opContext))).ToString();
-                Console.WriteLine($"{resultString}");
-            }
-        }
-
-        private static string MetricsString(MetricsEntity entity, OperationContext opContext)
-        {
-            var entityProperties = entity.WriteEntity(opContext);
-            var entityString =
-                    string.Format("Time: {0}, ", entity.Time) +
-                    string.Format("AccessType: {0}, ", entity.AccessType) +
-                    string.Format("TransactionType: {0}, ", entity.TransactionType) +
-                    string.Join(",", entityProperties.Select(e => new KeyValuePair<string, string>(e.Key.ToString(), e.Value.PropertyAsObject.ToString())));
-            return entityString;
-        }
+       // process value here.
     }
 }
 ```
 
-The output from this application will be similar to this output:
-
-```Text
-Minute Metrics for Service Blob
-Time: 24/06/2019 11:07:00 +00:00, AccessType: user, TransactionType: All, [TotalIngress, 1241],[TotalEgress, 1356],[TotalRequests, 2],[TotalBillableRequests, 2],[Availability, 100],[AverageE2ELatency, 3],[AverageServerLatency, 3],[PercentSuccess, 100],[PercentThrottlingError, 0],[PercentTimeoutError, 0],[PercentServerOtherError, 0],[PercentClientOtherError, 0],[PercentAuthorizationError, 0],[PercentNetworkError, 0],[Success, 0],[AnonymousSuccess, 1],[SASSuccess, 1],[ThrottlingError, 0],[AnonymousThrottlingError, 0],[SASThrottlingError, 0],[ClientTimeoutError, 0],[AnonymousClientTimeoutError, 0],[SASClientTimeoutError, 0],[ServerTimeoutError, 0],[AnonymousServerTimeoutError, 0],[SASServerTimeoutError, 0],[ClientOtherError, 0],[SASClientOtherError, 0],[AnonymousClientOtherError, 0],[ServerOtherError, 0],[AnonymousServerOtherError, 0],[SASServerOtherError, 0],[AuthorizationError, 0],[AnonymousAuthorizationError, 0],[SASAuthorizationError, 0],[NetworkError, 0],[AnonymousNetworkError, 0],[SASNetworkError, 0]
-Time: 24/06/2019 11:07:00 +00:00, AccessType: user, TransactionType: BlobPreflightRequest, [TotalIngress, 619],[TotalEgress, 332],[TotalRequests, 1],[TotalBillableRequests, 1],[Availability, 100],[AverageE2ELatency, 3],[AverageServerLatency, 3],[PercentSuccess, 100],[PercentThrottlingError, 0],[PercentTimeoutError, 0],[PercentServerOtherError, 0],[PercentClientOtherError, 0],[PercentAuthorizationError, 0],[PercentNetworkError, 0],[Success, 0],[AnonymousSuccess, 1],[SASSuccess, 0],[ThrottlingError, 0],[AnonymousThrottlingError, 0],[SASThrottlingError, 0],[ClientTimeoutError, 0],[AnonymousClientTimeoutError, 0],[SASClientTimeoutError, 0],[ServerTimeoutError, 0],[AnonymousServerTimeoutError, 0],[SASServerTimeoutError, 0],[ClientOtherError, 0],[SASClientOtherError, 0],[AnonymousClientOtherError, 0],[ServerOtherError, 0],[AnonymousServerOtherError, 0],[SASServerOtherError, 0],[AuthorizationError, 0],[AnonymousAuthorizationError, 0],[SASAuthorizationError, 0],[NetworkError, 0],[AnonymousNetworkError, 0],[SASNetworkError, 0]
-...
-Minute Metrics for Service Queue
-...
-Minute Metrics for Service Table
-...
-Minute Metrics for Service File
-...
-```
-
-The `WindowsAzure.Storage` client library is available as a NuGet package. However, the .NET Core version of this application doesn't include support for cloud analytics. This feature is only available to the .NET SDK.
-
-If you're monitoring the lifetimes of blobs and you're interested in when they're added and deleted, you can create an event subscription for your storage account. The subscription can post events to several types of destination, such as an Azure Storage Queue or an Event Hub. If you select an Event Hub, you can connect it as an input to an analytics solution such as Azure Stream Analytics.
-
-![Screenshot showing the Events page for a storage account.](../media/3-events.png)

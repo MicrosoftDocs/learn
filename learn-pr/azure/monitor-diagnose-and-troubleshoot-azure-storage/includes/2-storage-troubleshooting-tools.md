@@ -1,4 +1,4 @@
-Diagnosing and troubleshooting issues for an application hosted in a cloud environment can be more complicated than in traditional environments. To support these types of applications successfully, you should monitor them and understand how to diagnose and troubleshoot any aspects of them and their dependent technologies. You can use a combination of tools and logging to identify issues. 
+Diagnosing and troubleshooting issues for an application hosted in a cloud environment can be more complicated than in traditional environments. To support these types of applications successfully, you should monitor them and understand how to diagnose and troubleshoot any aspects of those applications and their dependent technologies. You can use a combination of tools and logging to identify issues. 
 
 The new Automobile Distribution customer portal uses Azure Storage to store uploaded files. As there are some concerns about the performance of storing data in the portal, the first step to diagnosing any issues is knowing which troubleshooting tools you can use.
 
