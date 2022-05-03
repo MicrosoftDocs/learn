@@ -38,9 +38,9 @@ To use GitOps with Azure Arc-enabled Kubernetes cluster, the following high-leve
 
 Once you have applied your configuration, you can use the Azure portal to view compliance details. You can also create, update, and delete GitOps configurations in the Azure portal.
 
-Alternatively, you can use Azure Policy to automate this process, allowing you to apply it consistently at scale. To create an Azure Policy assignment in the Azure portal, use the following sequence of high-level steps:
+Alternatively, you can use Azure Policy to automate this process, allowing you to apply it consistently at scale. To create an Azure Policy assignment in the Azure portal, follow these high-level steps:
 
-1. In the Azure portal, displaying Azure policy definitions, search for the **Deploy GitOps to Kubernetes cluster** built-in policy. To speed up the search by filtering the list of policy definitions based on the **Kubernetes** category.
+1. In the Azure portal, displaying Azure policy definitions, search for "Configure Kubernetes clusters with specified GitOps configuration" and select one of the built-in policies.
 1. Create a policy assignment by specifying the following settings:
 
    - Set the scope to the management group, subscription, or resource group where the policy assignment will apply.
