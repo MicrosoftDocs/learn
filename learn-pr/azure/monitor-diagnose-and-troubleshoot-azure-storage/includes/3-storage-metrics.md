@@ -16,39 +16,39 @@ Capacity metrics describe the storage of data (For example: bytes stored, bytes 
 
 Transaction metrics describe account activity (For example: number of transactions or number of bytes read). Transaction metrics are emitted on every request to a storage account from Azure Storage to Azure Monitor. In the case of no activity on your storage account, there will be no data on transaction metrics in the period. The time grain defines the time interval that metric values are presented. The supported time grains for all transaction metrics are PT1H and PT1M.
 
-## Analyze metrics
+## The anatomy of a metric value
 
-You can get metric values by using the Azure portal, PowerShell, Azure CLI, or by using code that targets Azure client libraries. To get an individual metric or series of metrics, specify the time range, time interval, metric namespace, metric and type of aggregation. Here's a description of each element:
+Get metric values by providing a time range, time interval, metric namespace, metric name and the type of aggregation. Here's a description of each element:
 
-- Time range
-  
-  The period of time that you want to capture (For example: yesterday, or the last month).
+| Element | Description |
+|---|---|
+| Time range | The period of time that you want to capture (For example: yesterday, or the last month). |
+| Time interval | The granularity of time reflected by a metric value. (For example: a value that reflects 1 hour or 1 day). |
+| Metric namespace | The namespace of the metric. This specifies whether to get a metric at the storage account level, or at the level of a specific storage service (For example: File Storage). |
+| Metric name | The metric you are interested in (For example: egress). |
+| Aggregation | How you want that value calculated. In most cases, you'll choose either a sum or an average. |
 
-- Time interval
-  
-  The granularity of time reflected by a metric value. (For example: a value that reflects 1 hour or 1 day).
-
-- Metric namespace
-
-  The namespace of the metric. This specifies whether to get a metric at the storage account level, or at the level of a specific storage service (For example: File Storage).
-
-- Metric
-
-  The metric you are interested in (For example: egress).
-
-- Aggregation
-
-  How you want that value calculated. In most cases, you'll choose either a sum or an average.
-
-For metrics that support dimensions, you can filter the metric with the desired dimension value. Dimensions are name/value pairs that carry additional data to describe the metric value. For example, authentication type is a dimension for transactions. If you are interested in seeing only transactions authorized by using an account key, you can filter by that type of authentication.
+For metrics that support dimensions, you can filter the metric with the desired dimension value. Dimensions are name/value pairs that carry additional data to describe the metric value. For example, authentication type is a dimension for transactions. If you are interested in seeing only transactions that were authorized by using an account key, you can use the authentication dimension and filter on account key.
 
 The **ResponseType** dimension reveals the success and failure rate, and the reasons for failure, such as timeouts, throttling, network errors, authorization failure, and so on. This information can give you a good insight as to why the performance of your applications may be suffering. For example, frequent throttling and timeout errors can indicate a high level of contention occurring for limited resources, and you might need to re-architect your system to the use the **Premium** rather than the **Standard** tier for your storage accounts. You might also need to spread the load across multiple storage accounts or select a different organization for any blob containers and tables that your application is using.
 
+## View and analyze metrics
+
+You can get metric values by using the Azure portal, PowerShell, Azure CLI, or by using code that targets Azure client libraries.
+
 ### Azure portal
 
-The previous unit presented different ways to view metrics in the Azure portal. You can define the elements that appear in those views by using Metrics Explorer. In Metrics Explorer, you can specify the time range, time interval, metric namespace, metric, and aggregation for each value you want to analyze. You can also filter by dimensions. You can create charts based on these metrics and then pin them to dashboards for easy access in future.
+The previous unit presented different ways to view metrics in the Azure portal. You can define the elements that appear in those views by using [Metrics Explorer](/azure/azure-monitor/essentials/metrics-getting-started). In Metrics Explorer, you can specify the time range, time interval, metric namespace, metric, and aggregation for each value you want to analyze. You can also filter by dimensions. You can create charts based on these metrics and then pin them to dashboards for easy access in future.
 
-Screenshot goes here.
+The following image shows a metric configuration that gets the total number of transactions in the past 24 hours. Each data point reflects 15 minutes of data.
+
+> [!div class="mx-imgBorder"]
+> ![Getting a transaction metric in Metrics Explorer](../media/3-metrics-explorer-transactions.png)
+
+The following image shows the API dimension being used to get only read transactions.
+
+> [!div class="mx-imgBorder"]
+> ![Applying a dimension in Metrics Explorer](../media/3-metrics-explorer-transactions-api-dimension.png)
 
 ### Command line and scripts
 
@@ -74,7 +74,7 @@ az monitor metrics list --resource <resource-ID> --metric "Transactions" --inter
 
 ### Application code
 
-You can get metric values by writing code that uses any of the Azure SDKs. The following example uses the [Azure SDK for .NET](/dotnet/azure/sdk/azure-sdk-for-dotnet?view=azure-dotnet) to get the average amount of Blob storage used in a storage account over a specified time period.
+You can get metric values by writing code that uses any of the Azure SDKs. The following example uses the [Azure SDK for .NET](/dotnet/azure/sdk/azure-sdk-for-dotnet) to get the average amount of Blob storage used in a storage account over a specified time period.
 
 ```csharp
 public static async Task ReadStorageMetricValueTest()
