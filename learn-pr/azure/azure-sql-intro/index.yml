@@ -3,7 +3,7 @@ uid: learn.azure-sql-intro
 metadata:
   title: Introduction to Azure SQL
   description: This module introduces Azure SQL. Learn about various deployment options and service tiers and what to use for your organization. 
-  ms.date: 08/05/2020
+  ms.date: 05/03/2022
   author: amthomas46
   ms.author: bobward
   ms.topic: interactive-tutorial
