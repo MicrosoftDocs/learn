@@ -100,5 +100,5 @@ For this function, both parameters must be provided to get the value. Depending 
 SCHEMABINDING is optional when creating the function. When you specify SCHEMABINDING, it binds the function to the referenced objects, and then objects can't be modified without also modifying the function. The function must first be modified or dropped to remove dependencies before modifying the object.
 
 SCHEMABINDING is removed if any of the following occur:
- *The function is dropped
- *The function is modified with ALTER statement without specifying SCHEMABINDING
+ - The function is dropped
+ - The function is modified with ALTER statement without specifying SCHEMABINDING
