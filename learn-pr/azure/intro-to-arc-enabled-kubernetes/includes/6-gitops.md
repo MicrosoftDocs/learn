@@ -8,6 +8,8 @@ In the context of Azure Arc-enabled Kubernetes clusters, a Git repository hosts 
 
 Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool. The Flux extension is installed in the cluster, and is then used to configure the pods responsible for tracking changes to the Git repository you designate and applying them to the local cluster. In addition, the containerized Flux operator also periodically reviews the existing cluster configuration to ensure that it matches the one residing in the Git repository. If there is a configuration drift, the Flux agent remediates it by reapplying the desired configuration.
 
+:::image type="content" source="../media/arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update.":::
+
 GitOps simplifies standardizing Kubernetes configuration across your organization. You can define a baseline configuration that you want to apply to every cluster and its components, including, for example, the delegation model, monitoring and logging settings, as well as characteristics of cluster-wide services.
 
 ## How to configure GitOps
@@ -40,7 +42,7 @@ Once you have applied your configuration, you can use the Azure portal to view c
 
 Alternatively, you can use Azure Policy to automate this process, allowing you to apply it consistently at scale. To create an Azure Policy assignment in the Azure portal, follow these high-level steps:
 
-1. In the Azure portal, displaying Azure policy definitions, search for "Configure Kubernetes clusters with specified GitOps configuration" and select one of the built-in policies.
+1. In the Azure portal, displaying Azure policy definitions, search for "Configure Kubernetes clusters with specified GitOps configuration" and select one of the built-in policy definitions.
 1. Create a policy assignment by specifying the following settings:
 
    - Set the scope to the management group, subscription, or resource group where the policy assignment will apply.
