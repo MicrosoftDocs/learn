@@ -15,11 +15,7 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
 
 1. On the virtual machine scale set page, under **Settings**, select **Scaling**.
 
-1. Select **Custom autoscale**.
-
-    ![Screenshot of the virtual machine scale set page with a callout featuring the Custom autoscale option.](../media/5-enable-autoscale.png)
-
-1. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **+ Add a rule**.
+1. Select **Custom autoscale**. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **+ Add a rule**.
 
    ![Screenshot of the virtual machine scale set page with a callout featuring the Scale based on a metric option and the Add a rule link.](../media/5-add-rule.png)
 
