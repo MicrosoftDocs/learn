@@ -33,7 +33,7 @@ A private endpoint is a more secure method to connect to an Azure SQL Database m
 
 1. From the **Target sub-resource** drop-down list, select **account,** and then select **Next: Virtual Network**.
 
-    :::image type="content" source="../media/3-create-private-endpoint.png" alt-text="Screenshot depicting how to configure a private endpoint for an Microsoft Purview account." border="true":::
+    :::image type="content" source="../media/3-create-private-endpoint.png" alt-text="Screenshot depicting how to configure a private endpoint for an Microsoft Purview account." border="true" lightbox="../media/3-create-private-endpoint.png":::
 
 1. On the **Virtual Network** pane, select the virtual network and subnet. Optionally, select **Azure Private DNS zone** to create a new Azure DNS Zone.
 
@@ -85,7 +85,7 @@ Use these steps in Microsoft Purview Studio to register a data source from an Az
 
 1. Select **Azure SQL Database Managed Instance**, and then select **Continue**.
 
-    :::image type="content" source="../media/3-register-sql-managed-instance.png" alt-text="Screenshot that represents the process of registering a data source with Microsoft Purview Studio." border="true":::
+    :::image type="content" source="../media/3-register-sql-managed-instance.png" alt-text="Screenshot that represents the process of registering a data source with Microsoft Purview Studio." border="true" lightbox="../media/3-register-sql-managed-instance.png":::
 
 1. In the **Register sources (Azure SQL Database Managed Instance)** pane, provide the following information:
 
