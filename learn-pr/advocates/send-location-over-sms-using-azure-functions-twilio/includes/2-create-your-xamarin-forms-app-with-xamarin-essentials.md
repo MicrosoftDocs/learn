@@ -14,7 +14,7 @@ To complete the steps in this unit, you need Xamarin.Forms cross-platform UI too
 
 1. Click **Create**.
 
-    ![The New Solution dialog.](../media/2-new-solution-dialog.png)
+    :::image type="content" source="../media/2-new-solution-dialog.png" alt-text="The New Solution dialog.":::
 
 1. From the **New Mobile App** dialog, select the *Blank App* template.
 
@@ -22,7 +22,7 @@ To complete the steps in this unit, you need Xamarin.Forms cross-platform UI too
 
 1. Click **Create**.
 
-    ![The configure new solution dialog.](../media/2-configure-solution-dialog.png)
+    :::image type="content" source="../media/2-configure-solution-dialog.png" alt-text="The configure new solution dialog.":::
 
 Visual Studio will create two projects for you
 
@@ -52,7 +52,7 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Click the **Install** button to install the NuGet package. You'll need to accept the license to continue.
 
-    ![Adding the Xamarin.Essentials NuGet package to all projects in the solution.](../media/2-add-essentials-nuget.png)
+    :::image type="content" source="../media/2-add-essentials-nuget.png" alt-text="Adding the Xamarin.Essentials NuGet package.":::
 
 ## Building and running the app
 
@@ -60,11 +60,11 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Set the build configuration to **Debug**, the platform to **x86**, and the device to run on to **Local Machine**.
 
-    ![Setting the Debug x86 configuration to run on the local device.](../media/2-debug-configuration.png)
+    :::image type="content" source="../media/2-debug-configuration.png" alt-text="Setting the Debug x86 configuration to run on the local device.":::
 
 1. Start debugging the app.
 
-    ![The app running.](../media/2-debuging-app.png)
+    :::image type="content" source="../media/2-debuging-app.png" alt-text="The app running.":::
 
 ## Summary
 
