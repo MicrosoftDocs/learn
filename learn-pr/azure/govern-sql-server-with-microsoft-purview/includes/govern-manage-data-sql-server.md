@@ -20,7 +20,7 @@ Establish connectivity with an on-premises network by using either a virtual pri
 
 The next step is to create a [self-hosted integration runtime (SHIR)](/azure/purview/manage-integration-runtimes) in your Microsoft Purview account. Microsoft Purview uses the SHIR component to run data scans across different network environments. You first must create a Microsoft integration runtime in your Microsoft Purview account, and then download and install binaries on the on-premises machine that runs any supported 64-bit version of the Windows operating system.
 
-:::image type="content" source="../media/3-data-map-integration-runtime-settings.png" alt-text="The Data map integration runtime settings pane" border="false":::
+:::image type="content" source="../media/3-data-map-integration-runtime-settings.png" alt-text="The Data map integration runtime settings pane" border="true" lightbox="../media/3-data-map-integration-runtime-settings.png":::
 
 >[!Note]
 >SHIR installation on a domain controller isn’t supported.
@@ -31,7 +31,7 @@ Also, you should configure an appropriate power plan on the computer on which yo
 
 The computer that will host the Microsoft Integration Runtime component needs to have connectivity with your on-premises SQL Server.
 
-:::image type="content" source="../media/3-SHIR-registration.png" alt-text="Screenshot of the Microsoft Integration Runtime Configuration Manager used to register new self hosted integration runtime." border="false":::
+:::image type="content" source="../media/3-SHIR-registration.png" alt-text="Screenshot of the Microsoft Integration Runtime Configuration Manager used to register new self hosted integration runtime." border="true" lightbox="../media/3-SHIR-registration.png":::
 
 It’s a best practice to test the connectivity to the on-premises SQL Server from the computer that’s hosting the Microsoft Integration Runtime infrastructure. To test the connection:
 
@@ -44,13 +44,13 @@ It’s a best practice to test the connectivity to the on-premises SQL Server fr
     > [!Tip]
     > If you experience any issues while running the test, create a support ticket by selecting the **Send logs** button.
 
-:::image type="content" source="../media/3-SHIR-test-connection.png" alt-text="The Microsoft Integration Runtime Configuration Manager Diagnostics Tool." border="false":::
+:::image type="content" source="../media/3-SHIR-test-connection.png" alt-text="The Microsoft Integration Runtime Configuration Manager Diagnostics Tool." border="true" lightbox="../media/3-SHIR-test-connection.png":::
 
 ## Prepare credentials in Azure Key Vault
 
 Use Azure Key Vault to store credentials for accessing a data source from SQL Server in Azure VM. You need to create a credentials object, or *secret*, that contains a password for authenticating the data source. Ensure that the managed identity that’s representing the Microsoft Purview account has **Get** and **List** permissions for secrets. In Azure Key Vault, modify the access policy to include the Microsoft Purview account and on the **Add access policy** pane, for **Secret Management Operations**, select **Get** and **List**.
 
-:::image type="content" source="../media/3-add-access-policy.png" alt-text="The add access policy pane" border="false":::
+:::image type="content" source="../media/3-add-access-policy.png" alt-text="The add access policy pane" border="true" lightbox="../media/3-add-access-policy.png":::
 
 > [!Note]
 > You can configure the Key Vault to disable public access. However, if you do, you must enable access to trusted Microsoft services to bypass firewalls.
@@ -65,7 +65,7 @@ Once you create the Azure Key Vault and configure the secret, follow these steps
 
 1. In the **New Key Vault** pane, enter the required information including name, description, your Azure subscription, and a new Key Vault name, and then select **Create**.
 
-:::image type="content" source="../media/3-Purview-KeyVault-Connection.png" alt-text="The Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="false":::
+:::image type="content" source="../media/3-Purview-KeyVault-Connection.png" alt-text="The Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-Purview-KeyVault-Connection.png":::
 
 #### Create a credentials object
 
@@ -84,12 +84,10 @@ The next step is to create a credentials object that you’ll use to authenticat
     1. In the **Password** section:
 
         1. From the **Key Vault connection** drop-down list, select a Key Vault connection.
-
         1. In the **Secret name** text box, enter the name of the secret that contains the password for SQL authentication or Windows authentication.
-
         1. Optionally, in the **Secret version** text box, enter the version of the secret.
 
-:::image type="content" source="../media/3-Credential Object.png" alt-text="The New credential pane" border="false":::
+:::image type="content" source="../media/3-Credential Object.png" alt-text="The New credential pane" border="true" lightbox="../media/3-Credential Object.png":::
 
 ## Register a data source from the Azure Portal
 
@@ -101,7 +99,7 @@ When you meet all the prerequisites, use the Azure Portal to register your on-pr
 
 1. On the **Register sources** pane, select **SQL Server** and then select **Continue**.
 
-:::image type="content" source="../media/3-Register-SQL-Server.png" alt-text="Microsoft Purview Data map page with the Sources pane open and SQL Server selected as the register source." border="false":::
+    :::image type="content" source="../media/3-Register-SQL-Server.png" alt-text="Microsoft Purview Data map page with the Sources pane open and SQL Server selected as the register source." border="true" lightbox="../media/3-Register-SQL-Server.png":::
 
 1. On the **Register sources (SQL Server)** pane, in the **Name** text box, enter a name for the source.
 
@@ -109,13 +107,13 @@ When you meet all the prerequisites, use the Azure Portal to register your on-pr
 
 1. From the **Select a collection** drop-down list, select a collection, and then select **Register**.
 
-:::image type="content" source="../media/3-Register-SQL-Server-on-premises.png" alt-text="The Register sources (SQL Server) pane displaying a name, server endpoint (IP address), and collection." border="false":::
+    :::image type="content" source="../media/3-Register-SQL-Server-on-premises.png" alt-text="The Register sources (SQL Server) pane displaying a name, server endpoint (IP address), and collection." border="true"  lightbox="../media/3-Register-SQL-Server-on-premises.png":::
 
 ## Scan data from SQL Server on-premises
 
 Now that your data source is integrated with your Microsoft Purview account, you’re ready to create *scan rule sets*, which are a group of scan rules that you associate with a scan.
 
-:::image type="content" source="../media/3-System-scan-set-rule.png" alt-text="The Microsoft Purview Data map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="false":::
+:::image type="content" source="../media/3-System-scan-set-rule.png" alt-text="The Microsoft Purview Data map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="true" lightbox="../media/3-System-scan-set-rule.png":::
 
 You can create a custom scan rule set that includes different file types or classifications:
 
@@ -129,7 +127,7 @@ To create a new scan rule set:
 
 1. In the **Select classification rules** pane, select one or more **System rules**.
 
-:::image type="content" source="../media/3-scan-rule-sets-dialog.png" alt-text="The Scan rule sets dialog and the Select classification rules pane are open during the process of creating a scan rule set." border="false":::
+    :::image type="content" source="../media/3-scan-rule-sets-dialog.png" alt-text="The Scan rule sets dialog and the Select classification rules pane are open during the process of creating a scan rule set." border="true" lightbox="../media/3-scan-rule-sets-dialog.png":::
 
 The SQL Server scanning process captures metadata such as names and file sizes by extracting the schema from the SQL Server database.
 
@@ -139,7 +137,7 @@ Use the following steps to scan an on-premises SQL Server instance:
 
 1. Select the SQL Server source that you registered previously and then select the **New scan** button.
 
-:::image type="content" source="../media/3-New-Scan.png" alt-text="The New scan button to initiate a scan for data sources hosted in an on-premises SQL Server instance." border="false":::
+    :::image type="content" source="../media/3-New-Scan.png" alt-text="The New scan button to initiate a scan for data sources hosted in an on-premises SQL Server instance." border="true" lightbox="../media/3-New-Scan.png":::
 
 1. In the **Scan** pane, provide the following information:
 
@@ -155,7 +153,7 @@ Use the following steps to scan an on-premises SQL Server instance:
 
     1. From the **Select a collection** drop-down list, select a collection, and then select **Continue**.
 
-:::image type="content" source="../media/3-New-Scan-credentials.png" alt-text="The Scan setup panel" border="false":::
+    :::image type="content" source="../media/3-New-Scan-credentials.png" alt-text="The Scan setup panel" border="true" lightbox="../media/3-New-Scan-credentials.png":::
 
 1. In the **Scope your scan** text box, enter your SQL database name, and then select **Continue**.
 
