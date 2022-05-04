@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.choose-power-bi-model-framework
+metadata:
+  title: Choose a Power BI model framework
+  description: "Describe Power BI data model frameworks, their benefits and limitations, and features to help optimize your Power BI data models."
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose a Power BI model framework
+summary: Describe model frameworks, their benefits and limitations, and features to help optimize your Power BI data models.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Describe Power BI model fundamentals.
+  - Determine when to develop an import model.
+  - Determine when to develop a DirectQuery model.
+  - Determine when to develop a composite model.
+  - Choose an appropriate Power BI model framework.
+prerequisites: |
+  - Experience developing Power BI data models, reports, and dashboards.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- power-bi
+units:
+- learn.wwl.choose-power-bi-model-framework.introduction
+- learn.wwl.choose-power-bi-model-framework.describe-power-bi-model-fundamentals
+- learn.wwl.choose-power-bi-model-framework.determine-when-to-develop-import-model
+- learn.wwl.choose-power-bi-model-framework.determine-when-to-develop-directquery-model
+- learn.wwl.choose-power-bi-model-framework.determine-when-to-develop-composite-model
+- learn.wwl.choose-power-bi-model-framework.choose-model-framework
+- learn.wwl.choose-power-bi-model-framework.knowledge-check
+- learn.wwl.choose-power-bi-model-framework.summary
+badge:
+  uid: generic-badge.svg

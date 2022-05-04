@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-power-bi-model-framework.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Geoffrey is a data modeler at Adventure Works who developed a DirectQuery model that connects to the data warehouse. To improve the query performance of higher-grain sales queries, Geoffrey added an import aggregation table.What else should Geoffrey do to improve query performance of the higher-grain queries?"
+    choices:
+    - content: "Set related dimension tables as aggregation tables."
+      isCorrect: false
+      explanation: "Incorrect. It’s not possible to set a model table as an aggregation table. You can add aggregation tables to a model as a higher-grain perspective of a fact table."
+    - content: "Set related dimension tables to dual storage mode."
+      isCorrect: true
+      explanation: "Correct. Setting the related dimension tables to dual storage mode will allow Power BI to satisfy higher-grain queries entirely from cache."
+    - content: "Set related dimension tables to import storage mode."
+      isCorrect: false
+      explanation: "Incorrect. Setting the related dimension tables to import storage mode will allow Power BI to satisfy higher-grain queries entirely from cache. However, lower-grain queries will take longer to process because they can’t be satisfied entirely from the data source."
+  - content: "Breana is a data modeler at Adventure Works who developed a manufacturing model, which is an import model. Breana needs to ensure that manufacturing reports deliver real-time results.Which type of table should Breana create?"
+    choices:
+    - content: "Aggregation table."
+      isCorrect: false
+      explanation: "Incorrect. An aggregation table supports fast higher-grain queries."
+    - content: "Hybrid table."
+      isCorrect: true
+      explanation: "Correct. A hybrid table includes a DirectQuery partition for the current period to deliver near-real time results."
+    - content: "Partitioned table."
+      isCorrect: false
+      explanation: "Incorrect. A partitioned table allows refreshing an import table for specific time periods."
+  - content: "Mousef is a business analyst at Adventure Works who wants to create a new model by extending the sales dataset, which is delivered by IT. Mousef wants to add a new table of census population data sourced from a web page.Which model framework should Mousef use?"
+    choices:
+    - content: "Composite."
+      isCorrect: true
+      explanation: "Correct. A composite model would comprise a DirectQuery source group containing the sales dataset tables, and an import source group containing the imported web page data."
+    - content: "DirectQuery."
+      isCorrect: false
+      explanation: "Incorrect. A DirectQuery model can’t connect to a web page."
+    - content: "Live connection."
+      isCorrect: false
+      explanation: "Incorrect. Live connection isn’t a model framework. Rather, it’s a technique to connect to a dataset when authoring a Power BI report."

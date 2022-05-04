@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-power-bi-model-framework.determine-when-to-develop-directquery-model
+title: Determine when to develop a DirectQuery model
+metadata:
+  title: Determine when to develop a DirectQuery model
+  description: "Determine when to develop a DirectQuery model"
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-determine-when-to-develop-directquery-model.md)]

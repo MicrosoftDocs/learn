@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-power-bi-model-framework.determine-when-to-develop-composite-model
+title: Determine when to develop a composite model
+metadata:
+  title: Determine when to develop a composite model
+  description: "Determine when to develop a composite model"
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-determine-when-to-develop-composite-model.md)]

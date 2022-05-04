@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-power-bi-model-framework.determine-when-to-develop-import-model
+title: Determine when to develop an import model
+metadata:
+  title: Determine when to develop an import model
+  description: "Determine when to develop an import model"
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-determine-when-to-develop-import-model.md)]
