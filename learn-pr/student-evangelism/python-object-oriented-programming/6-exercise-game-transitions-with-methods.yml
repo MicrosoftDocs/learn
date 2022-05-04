@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
-durationInMinutes: 6
+durationInMinutes: 7
 azureSandbox: true
 interactive: bash
 content: |

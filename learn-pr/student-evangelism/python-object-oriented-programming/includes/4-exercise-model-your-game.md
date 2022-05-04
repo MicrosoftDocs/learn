@@ -39,10 +39,10 @@ Rock, paper, scissors is a game played by two participants. The game consists of
 
 ## Create classes and state
 
-The preceding table tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you can *scaffold* some initial code that will help support the creation of the game.
+The preceding table tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you can *scaffold* some initial code as a foundation on which to build the game.
 
 
-1. Create a file `rock-paper-scissor.py` by using the terminal and open the editor: 
+1. Copy the code below into the terminal and press <kbd>Enter</kbd>, to create a file `rock-paper-scissor.py` and open the editor: 
 
    ```bash
    touch rock-paper-scissor.py
@@ -51,8 +51,7 @@ The preceding table tells the story of how the game progresses through different
 
    > [!TIP]
    > - Paste the code into the terminal by using the contextual menu (mouse right-click).
-   > - Press <kbd>Enter</kbd> to execute the code - `code .` opens the editor.
-
+  
 1. Give it the following content and save the file (<kbd>Ctrl+S</kbd> or <kbd>Command+S</kbd> on macOS):
 
    ```python
@@ -83,6 +82,9 @@ The preceding table tells the story of how the game progresses through different
         self.secondParticipant = Participant()
 
    ```
+
+   > [!TIP]
+   > You can type `code .` in the terminal to reopen the editor.
 
    We gave the `Participant` class the attributes `points` and `choice` as indicated by the first and third line of our table.
 

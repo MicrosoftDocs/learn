@@ -56,4 +56,4 @@ quiz:
           explanation: Incorrect. It's true that `self` is passed as a parameter if the method wants to refer to members of the object. However, you need `self` as well when you add variables to the object instance at construction time. 
         - content: The `self` parameter refers to the object instance. Assignment to `self` means that the attribute ends up on the object instance.
           isCorrect: true
-          explanation: Correct. The `self` parameter is passed to methods that need access to members on the object. In any kind of communication with the object instance, the `self` parameter needs to be used. It's used to refer to attributes on the instance and methods. If you don't add an attribute to `self``, it will be treated as a temporary variable.
+          explanation: Correct. The `self` parameter is passed to methods that need access to members on the object. In any kind of communication with the object instance, the `self` parameter needs to be used. It's used to refer to attributes on the instance and methods. If you don't add an attribute to `self`, it will be treated as a temporary variable.
