@@ -33,7 +33,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     | **Instance Details** |
     | Name | *\<your-webapp-name\>* |
     | Publish | Code |
-    | Runtime stack | .NET Core 2.1 |
+    | Runtime stack | .NET Core 3.1 (LTS) |
     | Operating System | Windows |
     | Region | Select a region close to you |
 

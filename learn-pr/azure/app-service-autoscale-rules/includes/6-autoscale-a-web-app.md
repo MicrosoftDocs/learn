@@ -1,6 +1,6 @@
 By default, an App Service Plan only implements manual scaling. The hotel reservation system in the scenario requires you to configure autoscaling.
 
-In this unit, you will see how to enable autoscaling, create autoscale rules, and monitor autoscaling activity
+In this unit, you'll see how to enable autoscaling, create autoscale rules, and monitor autoscaling activity
 
 ## Enable autoscaling
 
