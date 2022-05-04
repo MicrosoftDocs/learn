@@ -2,11 +2,12 @@
 uid: learn.azure.cloud-adoption-framework-ready.1-introduction
 title: Introduction
 metadata:
+  unitType: learning-content
   title: Introduction
   description: Introduction
-  ms.date: 09/22/2020
+  ms.date: 05/12/2022
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

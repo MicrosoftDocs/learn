@@ -15,7 +15,7 @@ In this module, you'll:
 - Review the getting-started Learn module about the Cloud Adoption Framework
 - An understanding of your organization's cloud adoption strategy
 - Familiarity with Azure cloud environment, including network configuration, network connectivity, and Azure Active Directory
-- Familiarity with Azure governance tools, including Azure Policy, Azure Blueprints, and Azure Resource Manager templates
+- Familiarity with Azure governance tools, including Azure Policy and Azure Resource Manager templates
 - A general understanding of the environmental requirements needed to proceed with your cloud adoption plan
 - A basic understanding of the following two terms:
   - **Azure landing zones:** Azure landing zones provide an accelerated approach to deploying your cloud platform. That platform consists of critical design areas that should be included in your cloud environment. After you deploy the platform, you can modify the architectures that define Azure landing zones to meet your business, operations, and technical requirements.
