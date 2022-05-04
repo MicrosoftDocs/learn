@@ -11,7 +11,7 @@ Browse the Microsoft Purview Data Catalog to explore the discovered assets eithe
 
 - Browse by collection to get a list of assets in that collection. You can filter the asset list further, for example, by tables, folders, files, or data pipelines. Narrow the results by selecting a different classification, label, or glossary term.
 
-    :::image type="content" source="../media/4-browse-asset.png" alt-text="Screenshot that depicts how to browse the Microsoft Purview Data Catalog." border="true":::
+    :::image type="content" source="../media/4-browse-asset.png" alt-text="Screenshot that depicts how to browse the Microsoft Purview Data Catalog." border="true" lightbox="../media/4-browse-asset.png":::
 
 ## Search the Microsoft Purview Data Catalog
 
@@ -23,7 +23,7 @@ Use search to speed up the process of data discovery in Microsoft Purview Data C
 
 - If the top results don’t include the assets you’re searching for, use facets to further filter the search results using different glossary terms, classifications, and other object types, such as dashboards and files.
 
-:::image type="content" source="../media/4-search-asset.png" alt-text="Screenshot that depicts how to search the Microsoft Purview Data Catalog." border="true":::
+:::image type="content" source="../media/4-search-asset.png" alt-text="Screenshot that depicts how to search the Microsoft Purview Data Catalog." border="true" lightbox="../media/4-search-asset.png":::
 
 Select an item from the search results to display details about it, such as its schema, lineage, or classification.
 
@@ -38,7 +38,7 @@ The search can contain glossary terms, an asset description, or an asset name. T
 
 Use the **asset insights** reports to get a high-level overview of your data estate, including whether it’s distributed by source type or by classification. Use these reports to determine how many assets there are with a specific classification, to get information by source types and top folders, and to display the list of assets for further investigation.
 
-:::image type="content" source="../media/4-asset-insights-pane.png" alt-text="Screenshot that depicts the Asset insights (preview) pane" border="true":::
+:::image type="content" source="../media/4-asset-insights-pane.png" alt-text="Screenshot that depicts the Asset insights (preview) pane" border="true" lightbox="../media/4-asset-insights-pane.png":::
 
 ### Microsoft Purview scanning best practices
 
