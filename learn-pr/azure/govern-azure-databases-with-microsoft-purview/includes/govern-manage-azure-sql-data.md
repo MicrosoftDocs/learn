@@ -60,7 +60,7 @@ Glossary terms can be defined in a hierarchy that matches your business domain, 
 >[!Note] 
 >Glossary terms aren’t applied automatically to the newly discovered assets. To make manually assigning terms faster, use the **Bulk Edit** mode.
 
-:::image type="content" source="../media/4-glossary-terms.png" alt-text="Screenshot that depicts the process of creating a glossary term in the Glossary terms pane." border="true":::
+:::image type="content" source="../media/4-glossary-terms.png" alt-text="Screenshot that depicts the process of creating a glossary term in the Glossary terms pane." border="true" lightbox="../media/4-glossary-terms.png":::
 
 Microsoft Purview provides default attributes that you can use when you create glossary terms. You can also import glossary terms from CSV files. Before you import them, remove any terms in the file that duplicate existing terms or existing terms will be overwritten, which will break the connection they have with existing assets.
 
@@ -105,4 +105,4 @@ The **Sensitivity label insights** report has details about the sensitivity labe
 
 - Labeling activity
 
-:::image type="content" source="../media/4-sensitivity-labels.png" alt-text="Screenshot that depicts the Sensitivity labels insights (preview) pane." border="true":::
+:::image type="content" source="../media/4-sensitivity-labels.png" alt-text="Screenshot that depicts the Sensitivity labels insights (preview) pane." border="true" lightbox="../media/4-sensitivity-labels.png":::
