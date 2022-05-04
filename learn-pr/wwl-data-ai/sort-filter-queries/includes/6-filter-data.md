@@ -1,4 +1,4 @@
-The simplest SELECT statements with only SELECT and FROM clauses will evaluate every row in a table. By using a WHERE clause, you define conditions that determine which rows will be processed and potentially reduce resultset. 
+The simplest SELECT statements with only SELECT and FROM clauses will evaluate every row in a table. By using a WHERE clause, you define conditions that determine which rows will be processed and potentially reduce result set. 
 
 ## The structure of the WHERE clause
 
@@ -66,7 +66,7 @@ Transact-SQL includes comparison operators that can help simplify the WHERE clau
 
 ### IN
 
-The IN operator is a shortcut for multiple equality conditions for the same column connected with OR. There's nothing wrong using multiple OR conditions in a query, as in the following example:
+The IN operator is a shortcut for multiple equality conditions for the same column connected with OR. There's nothing wrong with using multiple OR conditions in a query, as in the following example:
 
 ```sql
 SELECT ProductCategoryID AS Category, ProductName
