@@ -2,8 +2,8 @@
 uid: learn.wwl.automate-machine-learning-workflows
 metadata:
   title: Automate machine learning workflows
-  description: "Machine learning operations, MLOps"
-  ms.date: 05/03/2022
+  description: "Learn about DevOps for machine learning, machine learning operations, and MLOps."
+  ms.date: 05/04/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,8 @@ summary: Automate machine learning workflows with Azure Machine Learning pipelin
 abstract: |
   - How to use Azure Machine Learning pipelines.
   - How to use Azure Pipelines and GitHub Actions to automate workflows.
-prerequisites: ""
+prerequisites: |
+  Some familiarity with machine learning and Azure Machine Learning.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
