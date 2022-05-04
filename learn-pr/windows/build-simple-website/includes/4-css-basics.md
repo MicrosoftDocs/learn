@@ -72,7 +72,7 @@ As you'll see next, you can define your own custom names for elements.
     }
     ```
 
-   The preceding code contains 3 CSS rules, with the last two rules using custom attributes to select elements: `.list` and `#msg`.
+   The preceding code contains three CSS rules, with the last two rules using custom attributes to select elements: `.list` and `#msg`.
 
    * `.list` is a *class selector*. Each HTML element that contains a `class` attribute set to `list` will get the styles that are defined within this selector.
 
@@ -91,7 +91,7 @@ As you'll see next, you can define your own custom names for elements.
 
    The webpage opens in your default browser.
 
-   ![Screenshot of website with font styles applied.](../media/applied-font-styles.png)
+   :::image type="content" source="../media/applied-font-styles.png" alt-text="Screenshot of the website with the font styles applied." lightbox="../media/applied-font-styles.png":::
 
 Are the font styles what you expected to see? It's interesting how styles applied to the `<body>` are inherited on the `<h1>` element. We didn't define anything for `<h1>`, but it still got the font that was defined on `<body>`. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li>` elements have a different font, overriding the one set on `<body>` because they're also descendants of the `<ul>` element which you defined a style for.
 
@@ -126,7 +126,7 @@ Next, you'll add support for a color theme for your website. Begin by defining a
 
   Notice that the light theme using a green background appears.
 
-  ![Screenshot of website with light theme applied.](../media/light-theme.png)
+   :::image type="content" source="../media/light-theme.png" alt-text="Screenshot of the website with its light theme applied." lightbox="../media/light-theme.png":::
 
 ## View applied CSS
 
@@ -142,7 +142,7 @@ Next, you'll add support for a color theme for your website. Begin by defining a
 
 1. Select the unordered list `<ul>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
-![Screenshot of website in dev tools with light theme applied.](../media/light-theme-in-dev-tools.png)
+:::image type="content" source="../media/light-theme-in-dev-tools.png" alt-text="Screenshot of the website with its light theme applied and the Developer Tools next to it showing the Elements panel with the HTML and CSS code." lightbox="../media/light-theme-in-dev-tools.png":::
 
 To learn more about viewing CSS styles in Developer Tools, check out the [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/) article.
 
@@ -177,7 +177,7 @@ To add support for a dark theme to your CSS, use the following steps.
     }
     ```
 
-   In the preceding code, you defined two new variables, `bg` and `fontColor`, which specify a background and font color. These variables use the `var` keyword to set their property values the variables previously specified in your `:root` selector.
+   In the preceding code, you defined two new variables, `bg` and `fontColor`, which specify a background and font color. These variables use the `var` keyword to set their property values to the variables previously specified in your `:root` selector.
 
 1. Next, in your CSS file, replace the current `body` selector with the following code.
 
@@ -195,7 +195,7 @@ To add support for a dark theme to your CSS, use the following steps.
 
 1. To view the dark theme, open the file `index.html` and manually edit the default theme in the `<body>` class attribute to dark theme (`dark-theme`), and then reload the page in the browser.
 
-   ![Screenshot of website with dark theme applied.](../media/dark-theme.png)
+   :::image type="content" source="../media/dark-theme.png" alt-text="Screenshot of the website with its dark theme applied and the Developer Tools next to it." lightbox="../media/dark-theme.png":::
 
 1. Edit the `<body>` class attribute to switch the default back to light theme.
 

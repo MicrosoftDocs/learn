@@ -8,13 +8,13 @@ In this unit, you'll create a small project structure using Visual Studio Code. 
 
    When you open Visual Studio Code, the **Get Started** page opens. Notice that you can create a new file or open a folder in the **Start** list.
 
-   ![Screenshot of Visual Studio Code Get Started page.](../media/vs-code-get-started.png)
+   :::image type="content" source="../media/vs-code-get-started.png" alt-text="Screenshot of the Visual Studio Code Get Started page." lightbox="../media/vs-code-get-started.png":::
 
    If the **Get Started** page isn't visible, you can display it by selecting **Help > Get Started** on the menu. (Alternatively, you can display the **Get Started** page by opening the **Command Palette** using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on a macOS, or by selecting **View > Command Palette** from the Visual Studio Code menu. When the **Command Palette** displays, enter **>Help: Get Started** in the search field to open the **Get Started** page.)
 
 1. Select **Open folder** in the **Start** list of the **Get Started** page, or select **File > Open Folder** from the Visual Studio Code menu.
 
-   ![Screenshot of Visual Studio Code open folder.](../media/vs-code-open-folder.png)
+   :::image type="content" source="../media/vs-code-open-folder.png" alt-text="Screenshot of the Windows operating system folder open dialog." lightbox="../media/vs-code-open-folder.png":::
 
    When opening a folder, the operating system has a menu option to create a **New Folder**.
 
@@ -36,7 +36,7 @@ In this unit, you'll create a small project structure using Visual Studio Code. 
    - main.css
    - app.js
 
-   ![Screenshot of your files in Visual Studio Code Explorer view.](../media/vs-code-explorer-view.png)
+   :::image type="content" source="../media/vs-code-explorer-view.png" alt-text="Screenshot of your files in the Visual Studio Code Explorer view." lightbox="../media/vs-code-explorer-view.png":::
 
 You could build a website by including all of your HTML, CSS styles, and JavaScript code within a single file. However, in this exercise you're using an HTML file for your content, a CSS file for your styling, and a JavaScript file for your interactivity.
 
@@ -56,7 +56,7 @@ To install this extension, use the following steps:
 
 1. Select **Install**, and Visual Studio Code will install the extension.
 
-   ![Screenshot of finding a Visual Studio Code extension.](../media/vs-code-get-extension.png)
+   :::image type="content" source="../media/vs-code-get-extension.png" alt-text="Screenshot showing the Visual Studio Code extension sidebar with the words 'open in' in the search field and a list of matching extensions below." lightbox="../media/vs-code-get-extension.png":::
 
 1. Switch back to **Explorer** by clicking the top icon in the **Activity Bar**, or use <kbd>Control+Shift-E</kbd> on Windows or <kbd>Command+Shift-E</kbd> on macOS.
 

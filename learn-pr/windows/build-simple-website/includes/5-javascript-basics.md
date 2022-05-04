@@ -198,11 +198,11 @@ You can define a text *string* with single or double quotes around the text.
 
 1. To preview, select `index.html`, and select **Open In Default Browser**, or reload the same browser tab by pressing <kbd>F5</kbd>.
 
-   ![Screenshot of website with the button.](../media/light-theme-with-button.png)
+   :::image type="content" source="../media/light-theme-with-button.png" alt-text="Screenshot of the website showing the new button." lightbox="../media/light-theme-with-button.png":::
 
 1. Select the new **Dark** button to switch to the dark theme.
 
-   ![Screenshot of website after switching to dark theme.](../media/dark-theme-with-button.png)
+   :::image type="content" source="../media/dark-theme-with-button.png" alt-text="Screenshot of the website after switching to dark theme." lightbox="../media/dark-theme-with-button.png":::
 
 1. Make sure that everything looks correct and behaves as expected. If not, you should review the preceding steps to see if you missed something
 
@@ -220,7 +220,7 @@ You can define a text *string* with single or double quotes around the text.
 
 1. Select the **Console** tab to see the `console.log` message, `current class name: dark-theme`.
 
-![Screenshot of console message in Chrome.](../media/console-output.png)
+:::image type="content" source="../media/console-output.png" alt-text="Screenshot of the browser window with the website and the Developer Tools console open showing the console  message." lightbox="../media/console-output.png":::
 
 Using the console, you can get interesting insights from your JavaScript code. Add more console messages to understand which parts of your code are getting executed and to know the current values of other variables.
 
