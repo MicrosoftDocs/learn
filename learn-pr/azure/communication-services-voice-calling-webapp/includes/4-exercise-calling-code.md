@@ -56,17 +56,7 @@ So let's also add these buttons underneath the inputs from the previous step:
 With this done, we've completed most the HTML for this app. If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app, you should see the following app in your browser:
 :::image type="content" source="../media/4-html-complete.png" alt-text="Our blank web app showing in a browser.":::
 
-This app may not look like a lot, but its all we the visual elements we need to create a simple voice calling app.
-
-## Create and link the JavaScript file
-
-Next we'll need a JavaScript file to contain our app's code and actually make and handle the call. To do this create a new file in your app directory called `app.js`. Its ok to leave it blank just for now. Now inside `index.html` add the following HTML, just underneath our hang up button:
-
-```html
-<script src="./app.js" type="module"></script>
-```
-
-This line links our JavaScript file into our HTML so it loads when we open the app. Its also the last line of HTML we need. The rest of this unit will deal with the JavaScript.
+This app may not look like a lot, but its all we the visual elements we need to create a simple voice calling app. We're now done with the HTML of our app. The rest of the code will use JavaScript.
 
 ## Import some dependencies
 
