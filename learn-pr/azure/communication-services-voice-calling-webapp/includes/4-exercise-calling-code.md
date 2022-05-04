@@ -4,7 +4,7 @@ In this unit, we'll add more code to the web app created in the previous unit. T
 
 To make a call, we'll need two important pieces of information:
 
-1. Who the user making the call is, an Azure Communication Services authentication token.
+1. An Azure Communication Services user access token for the user making the call. This identifies and authorizes the user to contact the service and initiate voice calling..
 1. Who the user wants to call, an Azure Communication Services user ID.
 
 To get this information from the user, we'll use some standard HTML form inputs. So let's add them to our `index.html` file:
@@ -77,7 +77,7 @@ import { CallClient } from "@azure/communication-calling";
 import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 ```
 
-The first import, imports CallClient, which will be used later to actually make our calls. It handles microphones, audio etc all for you. The second import is used to handle the authentication requirements for Azure Communication Services. Authentication ensures know who a user is when they place a call.
+The first import is a `CallClient`, which will be used later to actually make our calls. It handles microphones, audio etc all for you. The second import, `AzureCommunicationTokenCredential` is used to handle the authentication requirements for Azure Communication Services. Authentication ensures we know who a user is when they place a call.
 
 ## Getting references to our HTML
 
