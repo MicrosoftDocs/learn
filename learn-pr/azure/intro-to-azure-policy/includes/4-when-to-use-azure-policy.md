@@ -31,7 +31,7 @@ Example scenarios where you could use Azure Policy:
 * **Governance**
   * Ensure the proper tag usage as well tag enforcement on resources
   * Audit virtual machines with a pending reboot
-  * Manage your organizational-compliance requirements by specifying whether a SSL certificate lifetime action is triggered at a specific percentage of its lifetime or at a certain number of days prior to its expiration
+  * Manage your organizational-compliance requirements by specifying whether an SSL certificate lifetime action is triggered at a specific percentage of its lifetime or at a certain number of days prior to its expiration
 
 * **Actions at scale**
   * Deploy Azure Monitor agent to all your virtual machines
@@ -49,13 +49,13 @@ Here are four important topics to be considered for a successful implementation:
 * Deploy
 * Check
 
-The assessment is where you will find an overview about the status of your environment. Then, before making changes in your environment through policies to take actions, assign a policy just to audit your environment. You can use the Overview option from the menu to get this functionality.
+The assessment is where you'll find an overview about the status of your environment. Then, before making changes in your environment through policies to take actions, assign a policy just to audit your environment. You can use the Overview option from the menu to get this functionality.
 
 Before creating policies, which will make changes in your environment, make sure to test everything.
 
 Validate your policy syntax, the actions that will be taken and the scope in use (Management Groups, Subscriptions, and Resource Groups). Validate all policy inclusions, exclusions, and exemptions.
 
-For the initial deployment, make sure you will be running your policy against a controlled environment or dedicated subscription. Be aware that Azure Policy assignments don’t come into effect immediately. There is a policy evaluation delay, which is around 30 minutes or so. Also, auditing your resources might take some time, as the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
+For the initial deployment, make sure you'll be running your policy against a controlled environment or dedicated subscription. Be aware that Azure Policy assignments don’t come into effect immediately. There's a policy evaluation delay, which is around 30 minutes or so. Also, auditing your resources might take some time, as the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
 
 Finally, use the Compliance option to check the results of your policy assignments.
 
