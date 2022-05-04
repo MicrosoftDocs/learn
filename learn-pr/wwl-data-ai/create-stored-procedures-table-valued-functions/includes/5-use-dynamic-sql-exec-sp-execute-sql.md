@@ -1,4 +1,4 @@
-Dynamic SQL allows you to construct a character string that can be executed as T-SQL. This is an alternative to stored procedures and is useful when you do not know certain values until execution time. 
+Dynamic SQL allows you to build a character string that can be executed as T-SQL as an alternative to stored procedures. Dynamic SQL is useful when you don't know certain values until execution time. 
 
 There are two ways of creating dynamic SQL, either using:
 
@@ -7,7 +7,7 @@ There are two ways of creating dynamic SQL, either using:
 
 ## Dynamic SQL using EXECUTE or EXEC
 
-To write a simple dynamic SQL statement with EXECUTE or EXEC, the syntax is:
+To write a dynamic SQL statement with EXECUTE or EXEC, the syntax is:
 
 `EXEC (@string_variable);`
 
@@ -23,7 +23,7 @@ GO
 
 ## Dynamic SQL using Sp_executesql
 
-Sp_executesql allows you to execute a T-Sql statement with parameters. sp_executesql can be used instead of stored procedures when you want to pass a different value to the statement. The Transact-SQL statement stays the same, and only the parameter values change. Like stored procedures, this means that the SQL Server query optimizer is likely to reuse the execution plan.
+Sp_executesql allows you to execute a T-SQL statement with parameters. Sp_executesql can be used instead of stored procedures when you want to pass a different value to the statement. The T-SQL statement stays the same, and only the parameter values change. Like stored procedures, it's likely that the SQL Server query optimizer will reuse the execution plan.
 
 Sp_executesql takes a T-SQL statement as an argument, which can be either a Unicode constant or a Unicode valuable. For example, both these code examples are valid:
 

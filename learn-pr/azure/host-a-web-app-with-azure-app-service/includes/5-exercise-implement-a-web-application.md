@@ -212,7 +212,7 @@ While you are running the helloworld web app, you can verify it is running local
 
 To create a starter web application, we'll use the web application framework Flask.
 
-1. Run the following commands to set up a virtual environment, and install Flask in your profile.
+1. Run the following commands to set up a virtual environment and install Flask in your profile.
 
     ```bash
     python3 -m venv venv
