@@ -11,7 +11,7 @@ Browse the Microsoft Purview Data Catalog to explore the discovered assets eithe
 
 - Browse by collection to get a list of assets in that collection. You can filter the asset list further, for example, by tables, folders, files, or data pipelines. Narrow the results by selecting a different classification, label, or glossary term.
 
-    :::image type="content" source="../media/4-browse-asset.png" alt-text="Screenshot that depicts how to browse the Microsoft Purview Data Catalog." border="false":::
+    :::image type="content" source="../media/4-browse-asset.png" alt-text="Screenshot that depicts how to browse the Microsoft Purview Data Catalog." border="true":::
 
 ## Search the Microsoft Purview Data Catalog
 
@@ -23,7 +23,7 @@ Use search to speed up the process of data discovery in Microsoft Purview Data C
 
 - If the top results don’t include the assets you’re searching for, use facets to further filter the search results using different glossary terms, classifications, and other object types, such as dashboards and files.
 
-:::image type="content" source="../media/4-search-asset.png" alt-text="Screenshot that depicts how to search the Microsoft Purview Data Catalog." border="false":::
+:::image type="content" source="../media/4-search-asset.png" alt-text="Screenshot that depicts how to search the Microsoft Purview Data Catalog." border="true":::
 
 Select an item from the search results to display details about it, such as its schema, lineage, or classification.
 
@@ -38,7 +38,7 @@ The search can contain glossary terms, an asset description, or an asset name. T
 
 Use the **asset insights** reports to get a high-level overview of your data estate, including whether it’s distributed by source type or by classification. Use these reports to determine how many assets there are with a specific classification, to get information by source types and top folders, and to display the list of assets for further investigation.
 
-:::image type="content" source="../media/4-asset-insights-pane.png" alt-text="Screenshot that depicts the Asset insights (preview) pane" border="false":::
+:::image type="content" source="../media/4-asset-insights-pane.png" alt-text="Screenshot that depicts the Asset insights (preview) pane" border="true":::
 
 ### Microsoft Purview scanning best practices
 
@@ -60,7 +60,7 @@ Glossary terms can be defined in a hierarchy that matches your business domain, 
 >[!Note] 
 >Glossary terms aren’t applied automatically to the newly discovered assets. To make manually assigning terms faster, use the **Bulk Edit** mode.
 
-:::image type="content" source="../media/4-glossary-terms.png" alt-text="Screenshot that depicts the process of creating a glossary term in the Glossary terms pane." border="false":::
+:::image type="content" source="../media/4-glossary-terms.png" alt-text="Screenshot that depicts the process of creating a glossary term in the Glossary terms pane." border="true":::
 
 Microsoft Purview provides default attributes that you can use when you create glossary terms. You can also import glossary terms from CSV files. Before you import them, remove any terms in the file that duplicate existing terms or existing terms will be overwritten, which will break the connection they have with existing assets.
 
@@ -75,7 +75,7 @@ Microsoft Purview can automatically classify your discovered assets using built-
 - Dictionary. This method contains lists of values in the dictionary file.
 
 >[!Tip] 
->Microsoft Purview uses the same sensitive-information types as Microsoft 361. This makes it easier to use existing Microsoft 365 security policies and protection across your entire data estate.
+>Microsoft Purview uses the same sensitive-information types as Microsoft 365. This makes it easier to use existing Microsoft 365 security policies and protection across your entire data estate.
 
 Use the **classification insight** report to get an overview of the number of:
 
@@ -105,4 +105,4 @@ The **Sensitivity label insights** report has details about the sensitivity labe
 
 - Labeling activity
 
-:::image type="content" source="../media/4-sensitivity-labels.png" alt-text="Screenshot that depicts the Sensitivity labels insights (preview) pane." border="false":::
+:::image type="content" source="../media/4-sensitivity-labels.png" alt-text="Screenshot that depicts the Sensitivity labels insights (preview) pane." border="true":::
