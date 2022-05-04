@@ -1,26 +1,26 @@
-Defining your infrastructure as code provides you with the most benefit when you deploy *all* of your infrastructure from code, and use pipelines to automate the deployment process. In this module, you learned how to enforce the deployment of Azure infrastructure as code, and how to apply controls and governance to secure your repositories, pipelines, and Azure estate in the process.
+Defining your infrastructure as code provides you with the most benefit when you deploy *all* of your infrastructure from code and use pipelines to automate the deployment process. This module described how to enforce the deployment of Azure infrastructure as code. It also described how to apply controls and governance to help secure your repositories, pipelines, and Azure estate in the process.
 
-You learned how to plan your environments so that you can strategically target your controls where they’ll have the most impact. Then, because deployment pipelines and code are so important, you learned how to apply controls to your pipelines and repositories. Finally, you learned how to configure your Azure environment to ensure that all changes are deployed by using your approved process, while still allowing for emergency access when required.
+You learned how to plan your environments so that you can strategically target your controls where they'll have the most impact. Then, because deployment pipelines and code are so important, you learned how to apply controls to your pipelines and repositories. Finally, you learned how to configure your Azure environment to ensure that all changes are deployed by using your approved process, while still allowing for emergency access when required.
 
-Now, you’re able to increase your confidence in, and the security of, your Azure deployments by ensuring that changes follow a consistent process, are audited and logged, and can only be performed by authorized users.
+The purpose of this module was to increase your confidence in, and the security of, your Azure deployments. This module has helped you ensure that changes follow a consistent process, are audited and logged, and can be performed by only authorized users.
 
 ## More resources
 
 - To learn more about governance of your deployment processes, see [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure).
 - Learn more about [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/).
-- In the Bicep documentation, there is guidance about using Bicep to deploy several types of Azure resources:
+- The Bicep documentation includes guidance for using Bicep to deploy several types of Azure resources:
   - [Create Azure RBAC resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-rbac)
   - [Manage secrets by using Bicep](/azure/azure-resource-manager/bicep/scenarios-secrets)
   - [Create virtual network resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-virtual-networks)
 
 ### Secure your repositories and pipelines
 
-To learn more about securing and hardening your Azure DevOps and GitHub environments, review these resources.
+To learn more about securing and hardening your Azure DevOps and GitHub environments, review these resources:
 
-- Manage users, groups. and permissions
+- Manage users, groups, and permissions
   - [Conditional Access](/azure/active-directory/conditional-access/overview)
-  - [Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
-  - [Azure AD SSO integration with a GitHub Enterprise Cloud Organization](/azure/active-directory/saas-apps/github-tutorial)
+  - [Multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
+  - [Azure AD SSO integration with a GitHub Enterprise Cloud organization](/azure/active-directory/saas-apps/github-tutorial)
 - Protect important code branches
   - [Azure Repos branch policies](/azure/devops/repos/git/branch-policies)
   - [Protected branches in GitHub](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
@@ -40,7 +40,7 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 
 ### Secure your Azure environment
 
-Azure security and governance include many elements. The following links provide more information about the topics introduced in this module.
+Azure security and governance include many elements. The following links provide more information about the topics introduced in this module:
 
 - [Break-glass accounts in Azure AD](/azure/active-directory/roles/security-emergency-access)
 - [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)
