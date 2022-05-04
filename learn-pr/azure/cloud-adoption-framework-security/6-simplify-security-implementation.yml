@@ -7,7 +7,7 @@ metadata:
   description: Landing zones provide cloud adoption teams with a well-managed environment for their workloads.
   ms.date: 04/26/2022
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
