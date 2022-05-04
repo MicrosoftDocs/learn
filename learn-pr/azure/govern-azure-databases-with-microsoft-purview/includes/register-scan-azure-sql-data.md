@@ -47,11 +47,11 @@ Use the following steps to register an Azure SQL Database source in Microsoft Pu
 
 1. On the **Register sources** pane, select the **Azure SQL Database** source tile, and then select **Continue.**
 
-    :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview"  border="true":::
+    :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview"  border="true" lightbox="../media/2-register-azure-sql-database.png":::
 
 1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL server, enter the public **endpoint**, select the **collection**, and then select **Register.**
 
-    :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane" border="true":::
+    :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane" border="true" lightbox="../media/2-provide-name-sql.png":::
 
 The Azure SQL Server Database is now listed under the selected collection.
 
@@ -75,7 +75,7 @@ To scan your Azure SQL database with system-managed or user-managed identities, 
 
 - Grant the Microsoft Purview account managed identity the **Reader** role at the **Subscription** or **Resource group** where your Azure SQL Database is created.
 
-    :::image type="content" source="../media/2-managed-identities.png" alt-text="Screenshot depicting how to scan an Azure SQL Database with system-managed or user-managed identities." border="true":::
+    :::image type="content" source="../media/2-managed-identities.png" alt-text="Screenshot depicting how to scan an Azure SQL Database with system-managed or user-managed identities." border="true" lightbox="../media/2-managed-identities.png":::
 
 To scan an Azure SQL Database that’s been configured using managed identities, follow these steps:
 
@@ -85,7 +85,7 @@ To scan an Azure SQL Database that’s been configured using managed identities,
 
 1. Under the **Azure SQL DB** you registered earlier, select the **New Scan** icon.
 
-    :::image type="content" source="../media/2-scan-azuresqldatabase.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database that's been configured using managed identities." border="true":::
+    :::image type="content" source="../media/2-scan-azuresqldatabase.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database that's been configured using managed identities." border="true" lightbox="../media/2-scan-azuresqldatabase.png":::
 
 1. Provide the following information and then select **Continue**:
 
@@ -130,12 +130,12 @@ To configure a scan of a database configured with SQL authentication, you need t
 
 1. On the **Manage Key Vault connections** pane, select **New**, provide a name for the connection, and then select the existing Key Vault.
 
-:::image type="content" source="../media/2-register-key-vault-connection.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database configured with SQL authentication by connecting your Microsoft Purview Account with the Azure Key Vault service." border="true":::
+:::image type="content" source="../media/2-register-key-vault-connection.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database configured with SQL authentication by connecting your Microsoft Purview Account with the Azure Key Vault service." border="true" lightbox="../media/2-register-key-vault-connection.png":::
 
 >[!Note]
 >Be sure to configure the access policy for Azure Key Vault to grant **Get** and **List** secret permission for your Microsoft Purview account.
 
-:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Azure Purview." border="true":::
+:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Azure Purview." border="true" lightbox="../media/2-add-access-policy.png":::
 
 After you establish a connection with Azure Key Vault, create credentials that use **SQL** **authentication** for your Azure SQL database.
 
@@ -145,7 +145,7 @@ When you create the scan for Azure SQL Database, follow the same procedure descr
 
 To check the status of the scan after the data scan finishes, navigate to the Microsoft Purview collection that contains your data source, and then select **View Details**.
 
-:::image type="content" source="../media/2-view-the-scan.png" alt-text="Screenshot depicting the status of the scan." border="true":::
+:::image type="content" source="../media/2-view-the-scan.png" alt-text="Screenshot depicting the status of the scan." border="true" lightbox="../media/2-view-the-scan.png":::
 
 >[!Tip]
 >When you select an existing scan, you can also trigger a manual scan or edit the scan to configure a different schedule.
