@@ -46,12 +46,12 @@ Use Microsoft Purview Studio to create a credentials object needed to scan the d
 
     1. In the **Role ARN** text box, enter the value of the Role ARN obtained in the process of creation of the AWS Role for Microsoft.
 
-### Deploy an Azure Multicloud Scanning Connector
+### Deploy a Multi-Cloud Scanning Connector for Microsoft Purview
 
-To deploy an Azure Multicloud Scanning Connector:
+To deploy a Multi-Cloud Scanning Connector for Microsoft Purview:
 
-1. Install the **Azure Multicloud Scanning Connector** in a separate VPC.
-1.  Use AWS PrivateLink to connect to the VPC where your RDS database resides.
+1. Install the **Multi-Cloud Scanning Connector for Microsoft Purview** in a separate VPC.
+1. Use AWS PrivateLink to connect to the VPC where your RDS database resides.
 
 :::image type="content" source="../media/4-Amazon-vpc.png"  alt-text="Illustration depicting using AWS PrivateLink to connect to the VPC where the RDS database resides." border="true" lightbox="../media/4-Amazon-vpc.png":::
 
@@ -123,7 +123,7 @@ Before you begin scanning an Amazon RDS database’s data source, you must prepa
 You also need to create a credentials object in Microsoft Purview to use when you scan your Amazon RDS database. Create the credentials object in the Microsoft Purview Management area and configure it with the **SQL Authentication** method. The credentials object should contain the details for the Key Vault service that’s storing the authentication information.
 
 >[!Tip]
->To create a credential object to use for scanning an Amazon RDS database, use the same procedure as the one described in **Prepare credentials in Azure Key Vault** in the <a href="govern-manage-data-sql-server.html">Govern and manage data from SQL Server by using Azure Purview</a> unit.
+>To create a credential object to use for scanning an Amazon RDS database, use the same procedure as the one described in the **Prepare credentials in Azure Key Vault** section in the **Govern and manage data from SQL Server by using Azure Purview** unit.
 
 ### Create a scan rule set
 
@@ -146,7 +146,7 @@ Microsoft Purview provides default scan rule sets that group scan rules together
 
 ### Set up a scan
 
-To configure an Microsoft Purview scan for your Amazon RDS database, from the Microsoft Purview **Sources** pane, select the Amazon RDS data source. You also need to provide the scan’s name, select the database that you want to scan, and specify credentials for the multicloud scanning connector.
+To configure an Microsoft Purview scan for your Amazon RDS database, from the Microsoft Purview **Sources** pane, select the Amazon RDS data source. You also need to provide the scan’s name, select the database that you want to scan, and specify credentials for the Multi-Cloud Scanning Connector for Microsoft Purview.
 
 >[!Note]
 >The scan rule can be part of an existing scan rule set or a new scan rule set. It should contain the file type for schema extraction and classification.
