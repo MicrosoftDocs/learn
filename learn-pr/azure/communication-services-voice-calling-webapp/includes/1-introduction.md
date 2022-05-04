@@ -13,5 +13,5 @@ By the end of this module, you'll be able to:
 ## Prerequisites
 
 - Basic familiarity with JavaScript and Node.js
-- The LTS(Long Term Support) or latest version of Node.js
+- The LTS (Long Term Support) or latest version of Node.js
 - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
