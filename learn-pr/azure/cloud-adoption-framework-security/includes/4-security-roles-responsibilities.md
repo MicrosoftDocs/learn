@@ -7,7 +7,7 @@ This diagram depicts the specific organizational functions within security. It r
 
 :::image type="content" source="../media/security-organizational-functions.png" lightbox="../media/security-organizational-functions.png" alt-text="A diagram that illustrates the organizational functions within security." border="false":::
 
-The following articles provide information about each function and include a summary of objectives. They discuss how the function can evolve because of the threat environment or cloud technology changes. They also explore the relationships and dependencies that are critical to the function's success.
+The following articles provide information about each function and include a summary of objectives. They discuss how the function can evolve because of the threat environment or cloud technology changes. They also explore the relationships and dependencies that are critical to the function's success:
 
 - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)
 - [Security operations](/azure/cloud-adoption-framework/organize/cloud-security-operations-center)
@@ -36,7 +36,7 @@ Security is a discipline with its own unique functions. A critical element is in
 
 ## Role types
 
-The dark blue labels group these responsibilities into typical roles that have common skill sets and career profiles. These groupings also help provide clarity on how industry trends affect security professionals:
+In the preceding diagram, the dark labels group these responsibilities into typical roles that have common skill sets and career profiles. These groupings also help provide clarity on how industry trends affect security professionals:
 
 - **Security leadership**: These roles frequently span across functions. They ensure that teams coordinate with each other, prioritize, and set cultural norms, policies, and standards for security.
 - **Security architect**: These roles span across functions and provide a key governance capability to ensure all the technical functions work harmoniously within a consistent architecture.
