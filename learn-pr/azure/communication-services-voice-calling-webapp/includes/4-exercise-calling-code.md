@@ -219,7 +219,7 @@ Your browser may prompt you with some microphone permission dialogs so please en
 
 ### Calling another user
 
-You can also call another user with this app. To do this:
+You can also call another user with this app. To do this, you'll need the second set of credentials which you generated earlier:
 
 1. Open two copies of the app, multiple tabs or windows should be used to simulate calling another user.
 1. In the first copy, enter the first user token saved from the credential generator and press "Submit"
