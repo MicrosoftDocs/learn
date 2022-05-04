@@ -22,13 +22,13 @@ Before you add an Amazon RDS database as an Microsoft Purview data source, ensur
 
 ### Create a Microsoft account for secure access to AWS
 
-Deploy Microsoft Purview scanner in a Microsoft account in AWS. Microsoft Purview Scanner needs access to your Amazon RDS, and for this purpose, you must create a dedicated role in the AWS portal. For the AWS role, provide the **Microsoft Account ID** and the **External ID** from Microsoft Purview.
+Deploy Microsoft Purview Scanner in a Microsoft account in AWS. Microsoft Purview Scanner needs access to Amazon RDS, and for this purpose, you must create a dedicated role in the AWS portal. For the AWS role, provide the **Microsoft Account ID** and the **External ID** from Microsoft Purview.
 
 To obtain the Microsoft Account ID and the External ID, in **Microsoft Purview Studio**, on the **Management pane**, create a new **Credentials** object. For the **Authentication method**, select **Role ARN**.
 
 Obtain the **Role ARN** value from the created AWS role. You’ll need it in the next step to create an Microsoft Purview credential.
 
-:::image type="content" source="../media/4-new-crediential.png" alt-text="The New credential pane displaying authentication method, Microsoft account ID, and external ID." border="false":::
+:::image type="content" source="../media/4-new-crediential.png" alt-text="The New credential pane displaying authentication method, Microsoft account ID, and external ID." border="true" lightbox="../media/4-new-crediential.png":::
 
 ### Create an Microsoft Purview credential for your Amazon RDS
 
@@ -51,12 +51,9 @@ Use Microsoft Purview Studio to create a credentials object needed to scan the d
 To deploy an Azure Multicloud Scanning Connector:
 
 1. Install the **Azure Multicloud Scanning Connector** in a separate VPC.
+1.  Use AWS PrivateLink to connect to the VPC where your RDS database resides.
 
-<!---->
-
-9.  Use AWS PrivateLink to connect to the VPC where your RDS database resides.
-
-:::image type="content" source="../media/4-Amazon-vpc.png"  alt-text="Illustration depicting use AWS PrivateLink to connect to the VPC where the RDS database resides." border="false":::
+:::image type="content" source="../media/4-Amazon-vpc.png"  alt-text="Illustration depicting using AWS PrivateLink to connect to the VPC where the RDS database resides." border="true" lightbox="../media/4-Amazon-vpc.png":::
 
 >[!Note]
 >*Amazon VPC* is a virtual network in an AWS account. Use Amazon VPC to configure IP addresses to use for resources within Amazon VPC. Additionally, Amazon VPC hosts other network services such as load balancers or firewalls. AWS PrivateLink provides private connectivity between VPCs, AWS services (in this case Amazon RDS), and your on-premises networks.
@@ -103,7 +100,7 @@ Once you establish a connection, you should start sourcing your data by register
 
 1. From the available sources, select either **Amazon RDS (SQL)** or **Amazon RDS (PostgreSQL)**, and then select **Continue**.
 
-    :::image type="content" source="../media/4-register-sources.png" alt-text="Register sources Amazon RDS (SQL) pane" border="false":::
+    :::image type="content" source="../media/4-register-sources.png" alt-text="Register sources Amazon RDS (SQL) pane" border="true" lightbox="../media/4-register-sources.png":::
 
 1. Provide the following information, and then select **Register**:
 
@@ -126,7 +123,7 @@ Before you begin scanning an Amazon RDS database’s data source, you must prepa
 You also need to create a credentials object in Microsoft Purview to use when you scan your Amazon RDS database. Create the credentials object in the Microsoft Purview Management area and configure it with the **SQL Authentication** method. The credentials object should contain the details for the Key Vault service that’s storing the authentication information.
 
 >[!Tip]
->To create a credential object to use for scanning an Amazon RDS database, use the same procedure as the one described to **Prepare credentials in Azure Key Vault**.
+>To create a credential object to use for scanning an Amazon RDS database, use the same procedure as the one described in **Prepare credentials in Azure Key Vault** in the <a href="govern-manage-data-sql-server.html">Govern and manage data from SQL Server by using Azure Purview</a> unit.
 
 ### Create a scan rule set
 
