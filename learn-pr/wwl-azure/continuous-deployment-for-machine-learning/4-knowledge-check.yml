@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.continuous-deployment-for-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist is experimenting with model training. After some iterations, one model seems suitable for deployment but isn't quite ready for consumption yet. An Azure Pipeline is created to train the model. Which environment should the model be trained in first?"
+    choices:
+    - content: "Production"
+      isCorrect: false
+      explanation: "Incorrect. You should deploy to production when everything has been tested."
+    - content: "Pre-production"
+      isCorrect: false
+      explanation: "Incorrect. You should deploy the model to pre-production when its ready for production, but you want to test it before it moves to production."
+    - content: "Development"
+      isCorrect: true
+      explanation: "Correct. A safe first step is to train a model in the development environment, triggered by an Azure Pipeline."
+  - content: "How can a machine learning engineer control the movement of a model from development to pre-production?"
+    choices:
+    - content: "Add a trigger."
+      isCorrect: false
+      explanation: "Incorrect. A trigger is needed to run a pipeline or workflow."
+    - content: "Add an approval check."
+      isCorrect: true
+      explanation: "Correct. An approval check will require someone to review a pipeline before it's executed."
+    - content: "Add RBAC."
+      isCorrect: false
+      explanation: "Incorrect. Use RBAC to give access to resources like the Azure Machine Learning pipeline."

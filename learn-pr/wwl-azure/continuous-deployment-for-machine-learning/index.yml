@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.wwl.continuous-deployment-for-machine-learning
+metadata:
+  title: Continuous deployment for machine learning
+  description: "Learn about DevOps for machine learning, machine learning operations, and MLOps."
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Continuous deployment for machine learning
+summary: Learn how to work with environments for continuous deployment of machine learning models.
+abstract: |
+  - How to set up environments for development and production.
+  - How to control deployments with approval gates.
+prerequisites: |
+  Some familiarity with machine learning and Azure Machine Learning.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-devops
+- azure-machine-learning
+- github
+units:
+- learn.wwl.continuous-deployment-for-machine-learning.introduction
+- learn.wwl.continuous-deployment-for-machine-learning.set-up-environments-for-development-production
+- learn.wwl.continuous-deployment-for-machine-learning.control-deployments-approval-gates
+- learn.wwl.continuous-deployment-for-machine-learning.knowledge-check
+- learn.wwl.continuous-deployment-for-machine-learning.summary
+badge:
+  uid: learn.wwl.continuous-deployment-for-machine-learning.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.continuous-deployment-for-machine-learning.control-deployments-approval-gates
+title: Control deployments with approval gates
+metadata:
+  title: Control deployments with approval gates
+  description: "Control deployments with approval gates"
+  ms.date: 05/04/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-control-deployments-approval-gates.md)]
