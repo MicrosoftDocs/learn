@@ -1,4 +1,4 @@
-The Cloud Adoption Framework Secure methodology provides a vision of the complete end state to guide the improvement of your security program over time. The Cloud Adoption Framework Secure methodology provides a bridge between your business digital transformation and your security program and strategy. It also provides structured guidance for modernizing your security disciplines. 
+The Secure methodology of the Microsoft Cloud Adoption Framework for Azure provides a vision of the complete end state to guide the improvement of your security program over time. The Secure methodology provides a bridge between your business digital transformation and your security program and strategy. It also provides structured guidance for modernizing your security disciplines.
 
 Watch the following video to learn more about the Secure methodology and how it helps guide continuing security improvements over time.
 
