@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2022
+  ms.date: 04/20/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -27,8 +27,8 @@ quiz:
       explanation: "Generate a SAS token for the container. The SAS can provide read-only access."
     - content: "Share the container entity tag (Etag) with the contingent staff member."
       isCorrect: false
-      explanation: "An access token is required in the scenario, not an Etag."
-  - content: "A company has both a development and production environment. The development environment needs time-limited access to storage. The production environment needs unrestricted access to storage resources. To configure storage access to meet the requirements, What configuration choices should be done?"
+      explanation: "A access token is required in the scenario, not an Etag."
+  - content: "A company has both a development and production environment. The development environment needs time-limited access to storage. The production environment needs unrestricted access to storage resources. To configure storage access to meet the requirements, what configuration choices should be done?"
     choices:
     - content: "Use shared access signatures for the development apps. And use access keys for the production apps."
       isCorrect: true

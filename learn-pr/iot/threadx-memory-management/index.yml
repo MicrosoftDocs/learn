@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.iot.threadx-memory-management
+metadata:
+  title: Azure RTOS ThreadX memory management
+  description: Learn about the memory management options that are available in Azure RTOS ThreadX.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure RTOS ThreadX memory management
+summary: Learn about the memory management options that are available in Azure RTOS ThreadX.
+abstract:  | 
+  In this module, you will:
+  - View an overview of Azure RTOS ThreadX services
+  - Learn about ThreadX primitive data types and service data types
+  - Learn about ThreadX memory byte pools
+  - Learn about memory allocation for thread stacks
+  - Learn about ThreadX memory block pools
+prerequisites: |
+  - Working knowledge of C or C++
+  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+iconUrl: /learn/achievements/iot/threadx-memory-management.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+- azure-rtos
+units:
+- learn.iot.threadx-memory-management.introduction
+- learn.iot.threadx-memory-management.threadx-overview
+- learn.iot.threadx-memory-management.memory-management
+- learn.iot.threadx-memory-management.memory-thread-stacks
+- learn.iot.threadx-memory-management.knowledge-check
+- learn.iot.threadx-memory-management.summary
+badge:
+  uid: learn.iot.threadx-memory-management.badge 

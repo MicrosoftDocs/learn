@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,25 +17,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An Azure Stack Hub operator has a multi-tenant Azure Stack Hub system used by multiple customers. They need to configure access for a support specialist to assist in the management. The support specialist should be prevented from accessing customer resources. Also, the support specialist should be able to monitor the status of infrastructure backups. Which built-in role should be assigned to the support specialist?"
+  - content: "An Azure Stack Hub operator has a multi-tenant Azure Stack Hub system used by customers. They need to configure access for a support specialist. The support specialist should be able to monitor the status of infrastructure backups. Also, the support specialist should be prevented from accessing customer resources. Which built-in role should be assigned?"
     choices:
     - content: "Reader and Data Access"
       isCorrect: false
-      explanation: "That's incorrect. Reader and Data Access allows a view of everything but does not allow deletion or creation of storage accounts."
+      explanation: "Incorrect. The Reader and Data Access role allows a view of everything but does not allow deletion or creation of storage accounts."
     - content: "Contributor"
       isCorrect: true
-      explanation: "That's correct. The Contributor is a user that can manage everything except access to customer resources."
+      explanation: "Correct. The Contributor is a user that manages everything except access to customer resources."
     - content: "User Access Administrator"
       isCorrect: false
-      explanation: "That's incorrect. User Access Administrator grants permission to assign roles in all Azure subscriptions and management groups associated with the Azure Active Directory."
-  - content: "Which identity provider is used in a disconnected mode while deploying Azure Stack Hub?"
+      explanation: "Incorrect. The User Access Administrator role allows assigning roles in all Azure subscriptions and management groups associated with the Azure Active Directory."
+  - content: "Which identity provider is used in disconnected mode while deploying Azure Stack Hub?"
     choices:
     - content: "Azure Active Directory (Azure AD)"
       isCorrect: false
-      explanation: "That's incorrect. When deploying Azure Stack Hub in a connected mode either Azure Active Directory (AD) or Active Directory Federation Services (AD FS) is used."
+      explanation: "Incorrect. When deploying Azure Stack Hub in a connected mode either Azure Active Directory (AD) or Active Directory Federation Services (AD FS) is used."
     - content: "Active Directory Federation Services (AD FS)"
       isCorrect: true
-      explanation: "That's correct. When deploying Azure Stack Hub in a disconnected mode, only Active Directory Federation Services (AD FS) is supported."
+      explanation: "Correct. When deploying Azure Stack Hub in a disconnected mode, only Active Directory Federation Services (AD FS) is supported."
     - content: "Active Directory Domain Services (AD DS)"
       isCorrect: false
-      explanation: "That's incorrect. Active Directory stores information about objects on the network and makes this information easy for administrators and users to find."
+      explanation: "Incorrect. Active Directory stores information about objects on the network for administrators and users to find."

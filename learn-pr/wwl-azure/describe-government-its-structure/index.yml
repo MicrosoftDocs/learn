@@ -3,7 +3,7 @@ uid: learn.wwl.describe-government-its-structure
 metadata:
   title: Describe the government and its structure
   description: "Understand government and how it is organized."
-  ms.date: 03/11/2022
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
   ms.topic: interactive-tutorial
@@ -20,7 +20,6 @@ prerequisites: |
   - You should be familiar with basic cloud computing concepts and terminology.
   - You should have a general understanding of why government exists and the purpose it serves.
 iconUrl: /learn/achievements/government-describe-structure.svg
-hidden: true
 levels:
 - beginner
 roles:

@@ -3,7 +3,7 @@ uid: learn.publish-azure-web-app-with-visual-studio
 metadata:
   title: Publish a web app to Azure with Visual Studio
   description: Learn how to use Azure App Service to create a new ASP.NET-based web app, then publish and update directly from Visual Studio.
-  ms.date: 05/02/2020
+  ms.date: 04/12/2022
   author: mikejo5000
   ms.author: mikejo
   ms.topic: interactive-tutorial

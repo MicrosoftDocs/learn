@@ -3,7 +3,7 @@ uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
 metadata:
   title: Write management scripts for Azure Cosmos DB SQL API
   description: "Learn how to manage Azure Cosmos DB SQL API accounts, databases, and containers using the Azure CLI."
-  ms.date: 12/21/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

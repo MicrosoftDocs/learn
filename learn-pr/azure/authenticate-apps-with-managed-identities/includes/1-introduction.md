@@ -1,6 +1,4 @@
-One of the issues that faces application developers who want to integrate their application with on-premises, external, or cloud services is authentication. What's the most practical way to access resources like databases without compromising security?
-
-Storing credentials, tokens, or secret keys in configuration files that your applications access isn't a secure solution. It also creates an ongoing technical debt, requiring you to modify and redistribute your application each time credentials change.
+Developers integrating applications with on-premises, external or cloud services face the issue of authentication. In the past, accessing resources like databases frequently involved options that could compromise security. For example, storing credentials, tokens, or secret keys in configuration files accessible to your applications isn’t recommended from a security standpoint. This approach requires ongoing updates to modify and redistribute applications each time credentials change.
 
 Azure provides a better solution using authentication tools. These tools include *service principals* and *managed identities*.
 

@@ -3,23 +3,24 @@ uid: learn.wwl.configure-database-authentication-authorization
 metadata:
   title: Configure database authentication and authorization
   description: "Configure database authentication and authorization"
-  ms.date: 12/01/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure database authentication and authorization
-summary: Contrast authentication using Azure Active Directory vs Windows Active Directory vs SQL Server authentication. Implement various security principals and configure permissions.
+summary: Contrast authentication using Azure Active Directory, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |
   After completing this module, you will be able to:
   - Learn about authentication options for Azure SQL Database
   - Create various security principals
   - Configure permissions within a SQL database
+  - Identify authentication and authorization failures
 prerequisites: |
-  - Basic understanding of Active Directory.
-  - Understanding of why security is a crucial part of database system planning.
-  - Ability to write code in the SQL language, particular the Microsoft T-SQL dialect, at a basic level.
-  - Experience creating and configuring resources using the Azure portal.
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises or cloud-based
+  - Understanding of why security is a crucial part of database system planning
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level
+  - Experience creating and configuring resources using the Azure portal
 iconUrl: /learn/achievements/configure-database-authentication-and-authorization.svg
 levels:
 - intermediate
@@ -33,8 +34,7 @@ units:
 - learn.wwl.configure-database-authentication-authorization.describe-authentication-identities
 - learn.wwl.configure-database-authentication-authorization.describe-security-principals
 - learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions
-- learn.wwl.configure-database-authentication-authorization.explain-execute-as-user
-- learn.wwl.configure-database-authentication-authorization.explain-policy-of-least-privilege
+- learn.wwl.configure-database-authentication-authorization.identify-authentication-and-authorization
 - learn.wwl.configure-database-authentication-authorization.exercise-authorize-access-sql-database-azure-active-directory
 - learn.wwl.configure-database-authentication-authorization.knowledge-check
 - learn.wwl.configure-database-authentication-authorization.summary

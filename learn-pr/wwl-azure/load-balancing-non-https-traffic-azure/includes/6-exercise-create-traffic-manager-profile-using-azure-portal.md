@@ -24,7 +24,7 @@ In this exercise, you will:
 
 In this section, you will create two instances of a web application deployed in the two different Azure regions.
 
-1.  On the Azure portal home page, click **Create a resource**, then select **Web App** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+1.  On the Azure portal home page, select **Create a resource**, then select **Web App** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
 2.  On the **Create Web App** page, on the **Basics** tab, use the information in the table below to create the first web application.
     
     :::row:::
@@ -108,14 +108,14 @@ In this section, you will create two instances of a web application deployed in 
       :::column-end:::
     :::row-end:::
     
-3.  Click **Next : Deployment**, then click **Next : Monitoring**.
-4.  On the **Monitoring** tab, select the **No** option for **Enable Application Insights**.
-5.  Click **Review + create**.
+3.  Select the **Monitoring** tab.
+4.  Under **Monitoring** set **Application Insights** to **No**.
+5.  Select  **Review + create**.
 
     :::image type="content" source="../media/create-web-app-1-d09fee7f.png" alt-text="create a web app":::
 
 
-6.  Click **Create**. When the Web App successfully deploys, it creates a default web site.
+6.  Select **Create**. When the Web App successfully deploys, it creates a default web site.
 7.  Repeat steps 1-6 above to create a second web app. Use the same settings as before except for the information in the table below.
     
     :::row:::
@@ -159,7 +159,7 @@ In this section, you will create two instances of a web application deployed in 
       :::column-end:::
     :::row-end:::
     
-8.  On the Azure home page, click **All services**, in the left navigation menu, select **Web**, and then click **App Services**.
+8.  On the Azure home page, select **All services**, in the left navigation menu, select **Web**, and then select **App Services**.
 9.  You should see the two new web apps listed.
 
     :::image type="content" source="../media/create-web-app-2-621589aa.png" alt-text="showing two web apps listed in the Azure portal":::
@@ -169,13 +169,13 @@ In this section, you will create two instances of a web application deployed in 
 
 Now you will create a Traffic Manager profile that directs user traffic based on endpoint priority.
 
-1.  On the Azure portal home page, click **Create a resource**.
+1.  On the Azure portal home page, select **Create a resource**.
 2.  In the search box at the top of the page, type **Traffic Manager profile**, and then select it from the pop-up list.
 
     :::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="search results for traffic manager profile":::
 
 
-3.  Click **Create**.
+3.  Select **Create**.
 4.  On the **Create Traffic Manager profile** page, use the information in the table below to create the Traffic Manager profile.
     
     :::row:::
@@ -227,14 +227,14 @@ Now you will create a Traffic Manager profile that directs user traffic based on
       :::column-end:::
     :::row-end:::
     
-5.  Click **Create**.
+5.  Select **Create**.
 
 ## Task 3: Add Traffic Manager endpoints
 
 In this section, you will add the website in the East US as the primary endpoint to route all the user traffic. You will then add the website in West Europe as a failover endpoint. If the primary endpoint becomes unavailable, then traffic will automatically be routed to the failover endpoint.
 
-1.  On the Azure portal home page, click **All resources**, then click on **Contoso-TMProfile** in the resources list.
-2.  Under **Settings**, select **Endpoints**, and then click **Add**.
+1.  On the Azure portal home page, select **All resources**, then select on **Contoso-TMProfile** in the resources list.
+2.  Under **Settings**, select **Endpoints**, and then select **Add**.
 
     :::image type="content" source="../media/create-traffic-manager-endpoints-1-e7c38a4d.png" alt-text="add endpoints":::
 
@@ -290,7 +290,7 @@ In this section, you will add the website in the East US as the primary endpoint
       :::column-end:::
     :::row-end:::
     
-4.  Click **Add**.
+4.  Select **Add**.
 5.  Repeat steps 2-4 above to create the failover endpoint. Use the same settings as before except for the information in the table below.
     
     :::row:::
@@ -336,7 +336,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
 In this section, you will check the DNS name of your Traffic Manager profile, and then you will configure the primary endpoint so that it is unavailable. You will then verify that the web app is still available, to test that the Traffic Manager profile is successfully sending traffic to the failover endpoint.
 
-1.  On the **Contoso-TMProfile** page, click **Overview**.
+1.  On the **Contoso-TMProfile** page, select **Overview**.
 2.  On the **Overview** screen, copy the **DNS name** entry to the clipboard (or take note of it somewhere).
 
     :::image type="content" source="../media/check-dns-name-1-dd70a336.png" alt-text="traffic manager DNS name":::
@@ -351,12 +351,12 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 5.  Currently all traffic is being sent to the primary endpoint as you set its **Priority** to **1**.
 6.  To test the failover endpoint is working properly, you need to disable the primary site.
 7.  On the **Contoso-TMProfile** page, on the overview screen, select **myPrimaryEndpoint**.
-8.  On the **myPrimaryEndpoint** page, under **Status**, click **Disabled**, and then click **Save**.
+8.  On the **myPrimaryEndpoint** page, under **Status**, select **Disabled**, and then select **Save**.
 
     :::image type="content" source="../media/disable-primary-endpoint-1-d06833d5.png" alt-text="disable primary endpoint":::
 
 
-9.  Close the **myPrimaryEndpoint** page (click the **X** in the top right corner of the page).
+9.  Close the **myPrimaryEndpoint** page (select the **X** in the top right corner of the page).
 10. On the **Contoso-TMProfile** page, the **Monitor status** for **myPrimaryEndpoint** should now be **Disabled**.
 11. Open a new web browser session, and paste (or enter) the **DNS name** entry (contoso-tmprofile.trafficmanager.net) into the address bar, and press Enter.
 12. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.

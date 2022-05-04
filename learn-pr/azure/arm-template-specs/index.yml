@@ -40,6 +40,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.arm-template-specs.introduction
 - learn.azure.arm-template-specs.understand-template-specs

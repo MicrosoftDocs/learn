@@ -57,7 +57,7 @@ It's time to create your application's backend. For that you are going to create
 
 2. Create a file inside the `credentials` folder and call it `utils.js`. Paste the content from this file inside there: [utils.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/utils.js)
 
-3. Require the `extractConnectionStringParts` function in your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string.
+3. In the `index.js` file, require the `extractConnectionStringParts` function in your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string.
 
     Your `require` section should now look like this:
 
