@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.setup-first-lab-using-azure-lab-services
+metadata:
+  moduleType: standard
+  title: Set up your first classroom lab by using Azure Lab Services
+  description: "Learn how to set up your first classroom lab by using Azure Lab Services. You'll create a lab plan and a classroom lab based on a virtual machine from a base image."
+  ms.date: 05/04/2022
+  author: mikejo5000
+  ms.author: mikejo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+title: Set up your first lab using Azure Lab Services
+summary: "tbd."
+abstract: |
+  By the end of this module, you'll be able to:
+    - tbd
+prerequisites: |
+  - tbd.
+iconUrl: /learn/achievements/set-up-first-lab-with-azure-lab-services.svg
+levels: 
+  - beginner
+roles: 
+  - administrator
+products: 
+- azure
+- azure-lab-services
+- azure-portal
+units:
+- learn.setup-first-lab-using-azure-lab-services.introduction
+- learn.setup-first-lab-using-azure-lab-services.create-lab-plan
+- learn.setup-first-lab-using-azure-lab-services.exercise-create-lab-plan
+- learn.setup-first-lab-using-azure-lab-services.create-lab
+- learn.setup-first-lab-using-azure-lab-services.exercise-create-lab
+- learn.setup-first-lab-using-azure-lab-services.knowledge-check
+- learn.setup-first-lab-using-azure-lab-services.summary
+badge:
+  uid: learn.setup-first-lab-using-azure-lab-services.badge
