@@ -1,5 +1,5 @@
 
-The goal of this module was help you understand the main capabilities of Azure Service Health, and to  know how use it to be aware of what's happening from the Azure platform side. In thhis module, you've learned:
+The goal of this module was help you understand the main capabilities of Azure Service Health, and to know how to use it to be aware of what's happening from the Azure platform side. In this module, you've learned:
 
 * What is Azure Service Health and its components
 * The kind of information available from Azure Service Health
