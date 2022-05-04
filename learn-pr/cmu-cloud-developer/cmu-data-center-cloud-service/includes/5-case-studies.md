@@ -32,7 +32,7 @@ Swift is a highly available, distributed, eventually consistent object store, si
 
 ## Block storage volume management service (Cinder)
 
-Cinder is an OpenStack project to provide "block storage as a service," similar to Azure's Block Bob Storage service. Cinder allows users to define block storage devices and attach them as volumes to individual virtual machines. Cinder virtualizes pools of block storage devices and provides end users with a self-service API to request and consume those resources without requiring any knowledge of where their storage is actually deployed or on what type of device. Cinder is also used by the Glance service to instantiate volumes from virtual machine images. Cinder is designed to work with a growing number of storage systems and devices, including storage area network (SAN) appliances and distributed file systems. 
+Cinder is an OpenStack project to provide "block storage as a service," similar to block blob storage in Azure Blob Storage. Cinder allows users to define block storage devices and attach them as volumes to individual virtual machines. Cinder virtualizes pools of block storage devices and provides end users with a self-service API to request and consume those resources without requiring any knowledge of where their storage is actually deployed or on what type of device. Cinder is also used by the Glance service to instantiate volumes from virtual machine images. Cinder is designed to work with a growing number of storage systems and devices, including storage area network (SAN) appliances and distributed file systems. 
 
 ## Cluster provisioning and management service (Sahara)
 
