@@ -12,8 +12,8 @@ Before you register your data source that runs in an Azure SQL Database managed 
 
 - Integrating the Microsoft Purview account with the virtual network used by the Azure SQL Database managed instance and then using a private endpoint to more securely access the database.
 
-    >[!Note]
-    >A public endpoint for a managed instance allows access from outside from the virtual network to databases that are hosted on the managed instance.
+>[!Note]
+>A public endpoint for a managed instance allows access from outside from the virtual network to databases that are hosted on the managed instance.
 
 ### Configure a private endpoint for an Microsoft Purview account
 
@@ -109,23 +109,19 @@ To create this scan, follow this procedure, which is the same as the procedure p
 
 1. Provide the following information and then select **Continue**:
 
-    1. **Name**: Provide a meaningful name for your scan.
+    - **Name**: Provide a meaningful name for your scan.
 
-    1. **Connect via integration runtime**: Select **Azure AutoResolveIntegrationRuntime**.
+    - **Connect via integration runtime**: Select **Azure AutoResolveIntegrationRuntime**.
 
-    1. **Database selection method**: Select **From Azure subscription**.
+    - **Database selection method**: Select **From Azure subscription**.
 
-    1. **Database name**: Select your Azure SQL Database.
+    - **Database name**: Select your Azure SQL Database.
 
-    1. **Credential**: Select one of the following:
-
-    - Managed Identity
-
-    - Service Principal
-
-    - SQL Authentication
-
-    1. **Select a collection**: Select your existing collection.
+    - **Credential**: Select one of the following:
+        - Managed Identity
+        - Service Principal
+        - SQL Authentication
+    - **Select a collection**: Select your existing collection.
 
 1. On the **Scope your scan** pane, select the specific folders and subfolders to selectively choose the scanning activities, and then select **Continue**.
 
