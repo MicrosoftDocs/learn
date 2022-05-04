@@ -1,6 +1,19 @@
-Run a local MongoDB server to develop your data application. 
+Run a local MongoDB server to develop your data application. This process isn't required to use a Azure Cosmos DB database or deploy to Azure App Service.
 
-## Start the dev containers for Node.js and MongoDB
+## Install and run MongoDB
+
+Select a method to install and run a local MongoDB database. The MongoDB needs to be able to respond to requests on the default local address and port: `mongodb://127.0.0.1:27017`.
+
+### [Install and run MongoDB locally](#tab/install-local)
+
+If you MongoDB installed, you can skip this section. 
+
+1. Download [MongoDB Community](https://www.mongodb.com/docs/manual/installation/) edition.
+1. Install MongoDB community edition 4.2+.
+1. Start your local MongoDB Server.
+
+### [Install and run MongoDB container](#tab/install-container)
+
 
 1. In Visual Studio Code, select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
 1. Search for **Remote-Containers: Reopen in Container**. 
@@ -10,6 +23,8 @@ Run a local MongoDB server to develop your data application.
 1. Wait until the web and database containers are started and the integrated terminal shows the container's prompt of `node ➜ /workspace $ `
 
     When you need to use the terminal for either your web app or database, make sure you are in this container-connected terminal.
+
+---
 
 ## Set the Express.js connection properties
 
@@ -46,6 +61,22 @@ Use the MongoDB extension's playground feature to upload data into the local Mon
 
 ## Run local web app
 
+### [Run app with MongoDB locally](#tab/run-local)
+
+1. In the Visual Studio Code integrated terminal, start the local web app to verify it connects to the database:
+
+    ```bash
+    npm start
+    ```
+
+1. Open a web browser with the following URL to view the sample application:
+
+    ```
+    http://localhost:8080
+    ```
+
+### [Run app with MongoDB container](#tab/run-container)
+
 1. In the integrated terminal for the dev container, start the local web app to verify it connects to the database:
 
     ```bash
@@ -58,8 +89,10 @@ Use the MongoDB extension's playground feature to upload data into the local Mon
     http://localhost:8080
     ```
 
+---
+
 ## Check your work
 
-* The local dev container is running.
+* The local MongoDB is running.
 * The local web app is running in the browser.
 

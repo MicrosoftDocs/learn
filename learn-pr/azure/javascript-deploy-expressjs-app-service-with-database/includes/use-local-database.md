@@ -7,7 +7,20 @@ This module uses a local database for local development. This is beneficial beca
 * It doesn't usually require any special security configuration initially to use.
 * You can develop your Express.js application without the need for cloud resources.
 
-## Node.js + MongoDB dev container
+The sample application expects MongoDB 4.2+.
+
+## Installing a local MongoDB server
+
+You can use a local MongoDB server as one of the following:
+
+* Install MongoDB on your local computer.
+* Use a MongoDB container on your local computer
+
+## Install MongoDB on your local computer
+
+You can install MongoDB Community edition locally then connect to the local server from Visual Studio. When you install locally, then start MongoDB.
+
+## Use a MongoDB container on your local computer
 
 The Visual Studio Code **Node.js + MongoDB** dev container allows you to run both the Express.js app and the database in separate containers. You expose the ports for each container (8080 for web, 27017 for MongoDB) to access the containers from your local (_host_) computer.
 
