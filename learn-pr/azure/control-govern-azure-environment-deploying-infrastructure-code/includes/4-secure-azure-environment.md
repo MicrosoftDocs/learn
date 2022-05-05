@@ -1,4 +1,4 @@
-Now that you understand how to control your environments and secure your deployment pipelines, you can consider disabling human access to your controlled environments. In this unit, you'll learn how you can structure your users' permissions to Azure environments, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
+Now that you understand how to control your environments and secure your deployment pipelines, you can consider disabling human access to your controlled environments. In this unit, you'll learn how to structure your users' permissions to Azure environments, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
 
 ## Block human access
 
@@ -38,7 +38,7 @@ Here's how you might configure your role assignments for your toy company's envi
 | PR reviews  | Uncontrolled  | Owner | Owner |
 | Development sandboxes | Uncontrolled  | Owner | Owner |
 
-When you plan your role assignments, ensure that you test them thoroughly. Sometimes, management operations might require permissions that aren't obvious. Ensure that your team members have the opportunity to test all of their day-to-day work with the permissions that you plan to use. Review any problems that they experience.
+When you plan your role assignments, ensure that you test them thoroughly. Sometimes, management operations might require permissions that aren't obvious. Give your team members the opportunity to test all of their day-to-day work with the permissions that you plan to use. Review any problems that they experience.
 
 Audit your role assignments regularly. Ensure that you haven't accidentally granted access to the wrong people or granted access that's too wide.
 
@@ -46,8 +46,8 @@ Audit your role assignments regularly. Ensure that you haven't accidentally gran
 
 There are two types of operations in Azure: 
 
-- Use *control plane operations* to manage the resources in your subscription.
-- Use *data plane operations* to access features that a resource exposes. 
+- *Control plane operations* to manage the resources in your subscription.
+- *Data plane operations* to access features that a resource exposes. 
 
 For example, you use a control plane operation to create a storage account. You use a data plane operation to connect to the storage account and access the data that it contains.
 
@@ -65,22 +65,22 @@ One approach to consider is a *break-glass account*, which is a special user acc
 
 The sequence of steps for using a break-glass account is:
 
-1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because their normal user account doesn't have sufficient permission.
+1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because the normal user account doesn't have sufficient permission.
 1. The user accesses the credentials for the break-glass account and signs in as that user.
 1. The user (acting as the break-glass account) is allowed to perform the operation.
 
 The use of break-glass accounts requires a high level of discipline. Their use should be reserved for true emergency situations. Carefully manage and protect their credentials, because the account is highly privileged. It's a good practice to change the credentials for break-glass accounts frequently, to minimize the chance that they've been exposed or compromised. 
 
-Break-glass accounts are often shared within a team, so it's hard to trace who has used them and what they did. An alternative approach to break-glass accounts is to adopt the Azure AD Privileged Identity Management (PIM) feature. It allows a user's own account to be temporarily granted a higher level of permission.
+Break-glass accounts are often shared within a team, so it's hard to trace who has used them and what those users did. An alternative approach to break-glass accounts is to adopt the Azure AD Privileged Identity Management (PIM) feature. It allows a user's own account to be temporarily granted a higher level of permission.
 
 :::image type="content" source="../media/4-privileged-identity-management.png" alt-text="Diagram that shows the sequence of operations for Privileged Identity Management elevation and access to Azure." border="false":::
 
 The sequence of steps for using PIM is:
 
-1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because the user account doesn't have sufficient permissions.
-1. The user contacts PIM and requests their permissions to be elevated temporarily.
+1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because the normal user account doesn't have sufficient permissions.
+1. The user contacts PIM and requests a temporary elevation of permissions.
    
-   PIM might perform additional validation of their identity or ask for approval from somebody, depending on how it's configured for the organization.
+   PIM might perform additional validation of the user's identity or ask for approval from somebody, depending on how it's configured for the organization.
    
    If the request is authorized, PIM updates the user's permissions temporarily.
 1. The user is allowed to perform the operation.
@@ -99,11 +99,11 @@ After an emergency ends, it's important to have a process to return to normal op
 Carefully review the Azure and PIM audit logs to understand the changes that were performed in your controlled environments, and especially your production environment.
 
 > [!IMPORTANT]
-> Somebody who uses PIM or a break-glass account might have the opportunity to grant their regular user account broader access than they should have. They might also use the temporary permissions to gain access to data plane keys that they can continue to use after their permissions are revoked. 
+> Somebody who uses PIM or a break-glass account might have the opportunity to grant their regular user account broader access than it should have. They might also use the temporary permissions to gain access to data plane keys that they can continue to use after their permissions are revoked. 
 >
 > Carefully audit all use of your break-glass accounts or PIM. Revoke or rotate any keys that might have been exposed during the emergency.
 
-Soon after the emergency, *resynchronize* your infrastructure as code (IaC) assets with any changes that were made during the emergency. For example, suppose that as part of resolving an urgent issue, an administrator manually increased the SKU of an Azure App Service plan. Update your deployment templates to include the new SKU in the resource configuration. Otherwise, during the next regular deployment from your pipeline, the SKU might be reset to the previous value and cause another outage.
+Soon after the emergency, *resynchronize* your infrastructure-as-code assets with any changes that were made during the emergency. For example, suppose that as part of resolving an urgent issue, an administrator manually increased the SKU of an Azure App Service plan. Update your deployment templates to include the new SKU in the resource configuration. Otherwise, during the next regular deployment from your pipeline, the SKU might be reset to the previous value and cause another outage.
 
 ## Audit changes to your Azure environment
 

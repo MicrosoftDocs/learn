@@ -6,17 +6,17 @@ In this unit, you'll learn about the benefit of consistently using code for all 
 
 Azure deployment and configuration cover far more than applications, virtual machines, storage services, and networking. For example, each of the following items is a form of configuration, with corresponding Azure resources:
 
-- Creating resource groups, subscriptions, and management groups to organize your resources.
-- Defining and applying Azure Policy definitions, initiatives, and assignments to control how other resources should be configured.
-- Assigning roles to allow users, groups, and service principals to access Azure resources.
-- Configuring monitoring, including alerts, to observe your Azure resources and ensure that they behave the way you expect.
+- Creating resource groups, subscriptions, and management groups to organize your resources
+- Defining and applying Azure Policy definitions, initiatives, and assignments to control how other resources should be configured
+- Assigning roles to allow users, groups, and service principals to access Azure resources
+- Configuring monitoring, including alerts, to observe your Azure resources and ensure that they behave the way you expect
 
 When you first start defining your infrastructure as code, you might not be aware that all of these items can be defined in your templates or definitions. As your use of automation matures, it's a good practice to define everything about your environment as code. By doing so, you can use a consistent, tested, and approved process for *all* of your Azure configuration. And because the code is versioned and tracked in a Git repository, you can review how your Azure environment has changed over time. You can trace the history of each change.
 
 For example, suppose you need to configure your Azure Monitor alerts. At first, you might think that using automation to deploy alerts wouldn't make sense. But alerts are an important part of your Azure configuration. If an alert isn't created correctly, you might miss notifications of critical production issues. By defining your alerts in code:
 
 - Your team members can review the alerts and their configuration.
-- You can deploy the alerts to non-production environments first if you need to test them.
+- You can deploy the alerts to non-production environments first, if you need to test them.
 - You have full traceability of the changes to your Azure configuration.
 
 ## Environments
@@ -24,14 +24,14 @@ For example, suppose you need to configure your Azure Monitor alerts. At first, 
 When you plan to deploy your infrastructure automatically, it's helpful to list out the environments that you plan to use. Many organizations have a variety of environment types, each with different characteristics. For example:
 
 - Some environments run production code, whereas others run non-production versions of the same code but maybe with different configurations. 
-- Some environments are long lived and never meant to be deleted. Others are ephemeral--created automatically and destroyed when they're no longer used. 
+- Some environments are long lived and never meant to be deleted. Others are *ephemeral*--created automatically and destroyed when they're no longer used. 
 - Some environments might be used by your infrastructure or software development team. Others might be used by your security team, or even by your sales team when it needs to demonstrate a product to potential customers.
 
 Consider the environments that your toy company might use for your website:
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows the sequence of environments." border="false":::
 
-When you make and commit changes to your application or to your infrastructure, your pipeline deploys your changes through a sequence of non-production environments: development, test, and staging. You might also have manual approval steps at different points that enable defined team members to verify the configuration or look at the pipeline log before the deployment continues. Then, your pipeline eventually deploys your changes to your production environment.
+When you make and commit changes to your application or to your infrastructure, your pipeline deploys your changes through a sequence of non-production environments: development, test, and staging. You might also have manual approval steps at certain points so that defined team members can verify the configuration or look at the pipeline log before the deployment continues. Then, your pipeline eventually deploys your changes to your production environment.
 
 In addition to those environments, your sales team has its own *demo* environment that it uses for talking to customers. The sales team takes a copy of the production environment to create its demo environment. Your security and test teams occasionally create temporary copies of the production environment for penetration testing and performance testing, respectively.
 
@@ -39,12 +39,12 @@ Your development team has its own sets of environments, too. It has *sandboxes* 
 
 ### Controlled environments
 
-In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. The production environment should always be controlled. It's a good practice to apply controls to some of the non-production environments, too. By doing this, you can ensure that any restrictions imposed by the controls are well understood and tested before the production deployment.
+In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. The production environment should always be controlled. It's a good practice to apply controls to some of the non-production environments, too. By doing this, you can ensure that any restrictions that the controls impose are well understood and tested before the production deployment.
 
 In contrast, *uncontrolled environments* don't have many, or any, formal controls. They might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes. In an uncontrolled environment, users might be allowed to modify the configuration by using the Azure portal or by directly running Azure CLI/Azure PowerShell commands. They might also be able to create resources without using the organization's approved process. Changes made in uncontrolled environments must be captured in code before they can start to be applied to controlled environments like the production environment.
 
 > [!NOTE]
-> Sometimes, an *environment* might actually represent multiple physical environments or deployments. For example, when you create ephemeral environments for pull request reviews, some of those environments might be active at a single time because your team has multiple pull requests open. But for the purpose of planning your environments, you can consider them to be equivalent because they have the same characteristics and controls.
+> Sometimes, an *environment* might actually represent multiple physical environments or deployments. For example, when you create ephemeral environments for pull request reviews, some of those environments might be active at the same time because your team has multiple pull requests open. But for the purpose of planning your environments, you can consider them to be equivalent because they have the same characteristics and controls.
 
 After some discussions with your team, you designate which environments are controlled and uncontrolled. You also decide who owns each environment.
 
@@ -108,11 +108,11 @@ If you use manual approval gates for deployments, follow these recommended pract
 >
 > * **Clearly define who's allowed to approve a deployment.** Use Azure Active Directory groups to define approvers, instead of specifying individual users. You can easily change the list of approvers in the future.
 > * **Have a process for emergency deployments.** Plan who can approve a deployment if the normal approvers aren't available. An emergency deployment might need to happen in the middle of the night or during a vacation period.
-> * **Limit human intervention to just approving or rejecting a deployment.** Avoid requiring humans to execute any of the deployment operations, unless there's a step that you can't automate.
+> * **Limit human intervention to just approving or rejecting a deployment.** Avoid requiring humans to run any of the deployment operations, unless there's a step that you can't automate.
 
 ## Governance
 
-Azure provides a set of tools and capabilities to help you govern your environment, including:
+Azure provides tools and capabilities to help you govern your environment, including:
 
 - Azure Policy, to detect resources that have been configured in ways that don't fit with your organization's requirements. It can also help prevent resources from being created or reconfigured in a way that will cause them to be out of compliance.
 - Locks, to prevent changes to or deletion of important resources.

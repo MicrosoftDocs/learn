@@ -47,7 +47,7 @@ Any changes to pipeline definition files need to be thoroughly reviewed. Make su
 
 ## Protect your pipeline agents and runners
 
-Your pipeline runs on *agents* (for Azure Pipelines) or *runners* (for GitHub Actions). You can think of agents and runners as being virtual machines. Your pipeline definition controls those virtual machines by running the tasks and scripts that you've provided.
+Your pipeline runs on *agents* (for Azure Pipelines) or *runners* (for GitHub Actions). You can think of agents and runners as virtual machines. Your pipeline definition controls those virtual machines by running the tasks and scripts that you've provided.
 
 Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, which Microsoft or GitHub configures and maintains. The platform owner configures the machines to be compliant with recommended security practices. The platform owner's responsibilities include patching operating system vulnerabilities. 
 
@@ -63,7 +63,7 @@ For these reasons, it's a good practice to use Microsoft-hosted agents and GitHu
 
 If you use community-provided GitHub Actions or Azure DevOps extensions, understand who built them and what they do. Third-party pipeline components might have access to your service principal's credentials and therefore your entire environment in Azure.
 
-In Azure DevOps, the organization administrator typically approves every extension before it can be used. If you're the administrator for your organization, consider the security risk involved in each component that you use. You're responsible for verifying that they're trustworthy and safe to use.
+In Azure DevOps, the organization administrator typically approves every extension before it can be used. If you're the administrator for your organization, consider the security risk involved in each component that you use. You're responsible for verifying that they're trustworthy and safe.
 
 Whenever you use a third-party action or task, you specify the version. Consider specifying only the version that you've reviewed. Allowing the pipeline to automatically use a later version might introduce a risk that you haven't reviewed.
 
@@ -83,7 +83,7 @@ Next, think about the permissions that you grant to service principals:
 
 > [!div class="checklist"]
 >
-> * Apply Azure AD *conditional access* policies to your pipeline's service principals. These policies help identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, conditional access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
+> * Apply Azure AD Conditional Access policies to your pipeline's service principals. These policies help identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, Conditional Access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
 > * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant only *Reader* access to that service principal, because the service principal doesn't need to do anything that requires more privileges.
 > * Use the minimum *scope* for each permission that you assign to a service principal. For example, if your service principal needs to deploy to only a single resource group, then scope the role assignment to that resource group instead of to the whole subscription.
 > * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
@@ -107,7 +107,7 @@ GitHub provides security features that you should evaluate and use. These featur
 - *Auditing*, to understand who has made changes to your GitHub configuration.
 - *Security overview*, which consolidates all of your security alerts across your organization's repositories.
 
-## Use Azure DevOps audit logging
+## Use Azure DevOps audit logs
 
 Azure DevOps provides *audit logs* to help you understand who has made changes to your pipelines, branch policies, repositories, and other resources. It's a good practice to enable auditing and to review the audit logs regularly.
 
