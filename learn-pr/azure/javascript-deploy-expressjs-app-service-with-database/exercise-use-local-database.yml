@@ -4,7 +4,7 @@ title: Exercise - use local MongoDB database
 metadata:
   unitType: exercise
   title: Exercise - use local MongoDB database
-  description: "In this module, ."
+  description: "In this unit, install MongoDB for local development."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry

@@ -1,4 +1,12 @@
-In this section, you need to setup the local development environment for the Express.js sample application and the MongoDB database.
+In this unit, understand the sample application and Visual Studio code extensions.
+
+## Required development tools
+
+To develop an Express.js app, the following tools are used in this module:
+
+* Node.js
+* Visual Studio Code
+* GitHub sample repository
 
 ## Express.js local development
 

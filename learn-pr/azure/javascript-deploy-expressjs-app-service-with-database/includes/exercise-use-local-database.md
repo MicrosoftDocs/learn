@@ -2,7 +2,7 @@ Run a local MongoDB server to develop your data application. This process isn't 
 
 ## Install and run MongoDB
 
-Select a method to install and run a local MongoDB database. The MongoDB needs to be able to respond to requests on the default local address and port: `mongodb://127.0.0.1:27017`.
+Select a method to install and run a local MongoDB database. The MongoDB needs to be running and able to respond to requests on the default local address and port: `mongodb://127.0.0.1:27017`.
 
 ### [Install and run MongoDB locally](#tab/install-local)
 
@@ -40,7 +40,7 @@ Configure the web app to use the local database.
     MONGODB_URI_COLLECTION_NAME=rentals
     ```
 
-1. Rename the file to `.env` so its values are added to your local computer's environment. The sample project's `.gitignore` is set to ignore this file from source control checkins. 
+1. The sample application uses this file to connect to the local MongoDB database.  
 
 ## Configure MongoDB extension
 

@@ -4,7 +4,7 @@ title: Exercise - Setup local environment
 metadata:
   unitType: exercise
   title: Exercise - Setup local environment
-  description: "Prepare your development environment by bringing the sample app's GitHub repository to your local computer and installing Visual Studio Code extensions related to this module."
+  description: "Exercise: set up local computer's development environment to use sample project and Azure resources."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry
