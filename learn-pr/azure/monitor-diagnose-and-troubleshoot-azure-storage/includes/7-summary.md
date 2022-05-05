@@ -1,11 +1,16 @@
-In this module, you learned how to troubleshoot and diagnose Azure Storage performance issues. You identified the tools you can use to troubleshoot issues with Azure Storage. You learned how to configure a storage account to capture metrics and generate diagnostic log information. 
-
-You also learned how to use the desktop version of Azure Storage Explorer to examine these metrics and log files.
+In this module, you learned how to troubleshoot and diagnose Azure Storage issues. You identified the tools you can use to troubleshoot issues with Azure Storage. You learned how to configure a storage account to capture metrics and generate diagnostic log information. 
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
 
-- [Azure Storage analytics logging](/azure/storage/common/storage-analytics-logging)
-- [Get started with AzCopy](/azure/storage/common/storage-use-azcopy)
-- [End-to-end troubleshooting using Azure Storage metrics and logging, AzCopy, and Message Analyzer](/azure/storage/common/storage-e2e-troubleshooting)
+- [Monitoring Azure Blob Storage](/azure/storage/blobs/monitor-blob-storage)
+- [Monitoring Azure Files](/azure/storage/files/storage-files-monitoring)
+- [Monitoring Azure Queue Storage](/azure/storage/queues/monitor-queue-storage)
+- [Monitoring Azure Table storage](/azure/storage/tables/monitor-table-storage)
+- [Monitoring your storage service with Azure Monitor Storage insights](/azure/storage/common/storage-insights-overview)
+- [Best practices for monitoring Azure Blob Storage](/azure/storage/blobs/blob-storage-monitoring-scenarios)
+- [Getting started with Azure Metrics Explorer](/azure/azure-monitor/essentials/metrics-getting-started)
+- [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview)
+- [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics)
+- [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs)

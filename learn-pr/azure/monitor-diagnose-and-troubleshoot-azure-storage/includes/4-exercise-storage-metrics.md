@@ -84,30 +84,32 @@ Transaction metrics are emitted on every request to a storage account, so you sh
    > [!div class="mx-imgBorder"]
    > ![bar chart showing upload operations in Metrics Explorer](../media/4-chart-ingress.png)
 
-   Most likely, one upload operation requires multiple API calls (For example: a container listing operation). When you uploaded a file, the Azure portal made several API calls to complete the upload. You can use splitting and filtering to look closer at API calls, the bytes transferred by those calls etc. Splitting and filtering leverage metric dimensions to give you a finer grain view of your metrics.
+## Split a metric
+
+Splitting a metric enables you to view additional dimensions in the data. For each file that you uploaded, the Azure portal made several API calls. Each request resulted in bytes transferred. You can split the ingress metric by the API dimension to see the breakdown of bytes transferred by API call. To split a metric, complete the following steps:
+
+1. Select **Apply splitting**
+
+2. In the **Splitting** oval, from the drop-down list, select **API name**.
+
+   View the output in the chart window. The following image shows bytes transferred by API call.
+
+   > [!div class="mx-imgBorder"]
+   > ![Bytes transferred by API call in Metrics Explorer](../media/4-bar-chart-option-split-chart.png)
 
 ## Add a filter
 
-Filtering enables you to look at the metrics with greater granularity. You can use a filter to look only at specific API calls used for your upload operation.
+Filtering enables you to look at the metrics with greater granularity. You can use a filter to look only at specific API calls used for your upload operation. In this case, we are interested only in bytes related to the file transfer. We want to exclude traffic related to other API calls used to complete the transfer.
 
 1. Select **Add filter**.
 
 2. Under **Property**, select **API name**.
 
-3. Under **Values**, select **ListBlob**.
+3. Under **Values**, select **PutBlob**.
 
-   The chart shows transactions related to listing blobs in container view. When you list blobs, the **ListBlob** REST API was called.
-
-   > [!div class="mx-imgBorder"]
-   > ![bar chart showing list operations associated with the upload in Metrics Explorer](../media/4-bar-chart-option-list-operations.png)
-
-4. Under **Values**, clear the **ListBlob** check box. Then, select **PutBlob**.
-
-   The chart shows bars that represent the REST call to the **Put Blob** API. These bars represent the actual upload of a file.
+   The chart shows bars that represent the REST call to the **Put Blob** API.
 
    > [!div class="mx-imgBorder"]
    > ![bar chart showing put operations associated with the upload in Metrics Explorer](../media/4-bar-chart-option-put-operations.png)
 
-   To see all of the APIs called in a period of time, you can use the **Apply splitting** feature.
-
-5. Select the **X** to the right of the filter oval to remove the filter.
+4. Select the **X** to the right of the filter oval to remove the filter.
