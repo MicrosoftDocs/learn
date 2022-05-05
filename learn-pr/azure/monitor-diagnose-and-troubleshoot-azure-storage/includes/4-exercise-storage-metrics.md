@@ -77,7 +77,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
 
 7. Change the **metric namespace** to **Blob**, select **ingress** for **metric**.
 
-   The following image shows a bar for every file upload operations in the last hour.
+   The following image shows a bar for every file upload operation in the last hour.
 
    > [!div class="mx-imgBorder"]
    > ![bar chart showing upload operations in Metrics Explorer](../media/4-chart-ingress.png)

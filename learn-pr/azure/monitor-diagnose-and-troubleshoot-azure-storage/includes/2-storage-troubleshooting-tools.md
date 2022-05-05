@@ -30,7 +30,7 @@ You can create **dashboards** and add charts that closely monitor key metrics, s
 
 ### Storage insights
 
-Storage insights provides a unified view of your Azure Storage services performance, capacity, and availability. You can observe storage capacity, and performance in two ways, view directly from a storage account or view from Azure Monitor to see across groups of storage accounts.
+Storage insights provide a unified view of your Azure Storage services performance, capacity, and availability. You can observe storage capacity, and performance in two ways, view directly from a storage account or view from Azure Monitor to see across groups of storage accounts.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of storage insights in the Azure portal](../media/2-storage-insights.png)
