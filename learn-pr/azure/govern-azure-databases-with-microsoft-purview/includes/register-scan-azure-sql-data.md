@@ -10,7 +10,7 @@ Before you can register an Azure SQL database source, you need to ensure that th
 
 ### Configure the firewall settings for an Azure SQL Database
 
-It’s important that you provide connectivity to your Azure SQL Database before you scan the data source. The firewall settings on the Azure SQL Server specify which IP addresses are allowed to connect to the SQL databases. You can configure the firewall to allow connections to an Azure SQL Database from your Microsoft Purview account using one of the following methods:
+It’s important that you provide connectivity to your Azure SQL Database before you scan the data source. The firewall settings on the Azure SQL Database specify which IP addresses are allowed to connect to the SQL databases. You can configure the firewall to allow connections to an Azure SQL Database from your Microsoft Purview account using one of the following methods:
 
 - Allow Azure Connections. To configure this setting, in the Azure SQL Database in the **Security** section, on the **Firewall and virtual networks** page, select **Allow Azure services and resources to access this server**.
 
@@ -49,11 +49,13 @@ Use the following steps to register an Azure SQL Database source in Microsoft Pu
 
     :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview"  border="true" lightbox="../media/2-register-azure-sql-database.png":::
 
-1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL server, enter the public **endpoint**, select the **collection**, and then select **Register.**
+1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL Server, enter the public **endpoint**, select the **collection**, and then select **Register.**
+
+1. The Azure SQL Database is now listed under the selected collection.
 
     :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane" border="true" lightbox="../media/2-provide-name-sql.png":::
 
-The Azure SQL Server Database is now listed under the selected collection.
+
 
 ## Scan an Azure SQL Database
 
