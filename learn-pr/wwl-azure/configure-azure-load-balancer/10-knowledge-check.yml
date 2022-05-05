@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/14/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -22,32 +21,32 @@ quiz:
     choices:
     - content: "An external load balancer."
       isCorrect: false
-      explanation: "That's incorrect.  Azure has two types of load balancers: public and internal."
+      explanation: "Incorrect.  Azure has two types of load balancers: public and internal."
     - content: "An internal load balancer."
       isCorrect: true
-      explanation: "That's correct. An internal load balancer directs traffic only to resources that are inside a virtual network or that use a VPN to access Azure infrastructure."
+      explanation: "Correct. An internal load balancer directs traffic only to resources that are inside a virtual network or that use a VPN to access Azure infrastructure."
     - content: "A public load balancer."
       isCorrect: false
-      explanation: "That's incorrect. A public load balancer maps the public IP address and port number of incoming traffic to the private IP address and port number of the VM."
+      explanation: "Incorrect. A public load balancer maps the public IP address and port number of incoming traffic to the private IP address and port number of the VM."
   - content: "What is the default distribution type for traffic through a load balancer?"
     choices:
     - content: "Source IP affinity"
       isCorrect: false
-      explanation: "That's incorrect. Affinity specifies that successive requests from the same client IP address and protocol combination will be handled by the same virtual machine."
+      explanation: "Incorrect. Affinity specifies that successive requests from the same client IP address and protocol combination will be handled by the same virtual machine."
     - content: "Three-tuple hash"
       isCorrect: false
-      explanation: "That's incorrect. A three-tuple hash is not the distribution type."
+      explanation: "Incorrect. A three-tuple hash is not the distribution type."
     - content: "Five-tuple hash"
       isCorrect: true
-      explanation: "That's correct.The load balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers."
+      explanation: "Correct.The load balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers."
   - content: "Which configuration is required for an internal load balancer?"
     choices:
     - content: "Virtual machines should be in the same virtual network."
       isCorrect: true
-      explanation: "That's correct. The virtual machines that use a load balancer to distribute a load to must be in the same virtual network."
+      explanation: "Correct. The virtual machines that use a load balancer to distribute a load to must be in the same virtual network."
     - content: "Virtual machines must be publicly accessible."
       isCorrect: false
-      explanation: "That's incorrect. Virtual machines that are behind an internal load balancer shouldn't be accessed publicly. The load balancer provides the access point."
+      explanation: "Incorrect. Virtual machines that are behind an internal load balancer shouldn't be accessed publicly. The load balancer provides the access point."
     - content: "Virtual machines must be in an availability set."
       isCorrect: false
-      explanation: "That's incorrect. Although this configuration is an option, it's not a requirement."
+      explanation: "Incorrect. Although this configuration is an option, it's not a requirement."
