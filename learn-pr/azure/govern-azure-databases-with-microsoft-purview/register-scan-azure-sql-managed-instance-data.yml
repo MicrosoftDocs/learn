@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-managed-instance-data
-title: Register and scan an Azure SQL Database managed instance data source by using Microsoft Purview
+title: Register and scan an Azure SQL Managed Instance data source by using Microsoft Purview
 metadata:
-  title: Register and scan an Azure SQL Database managed instance data source by using Microsoft Purview
-  description: Register and scan an Azure SQL Database managed instance data source by using Microsoft Purview.
+  title: Register and scan an Azure SQL Managed Instance data source by using Microsoft Purview
+  description: Register and scan an Azure SQL Managed Instance data source by using Microsoft Purview.
   ms.date: 4/19/2022
   author: stamatm
   ms.author: terrychr
