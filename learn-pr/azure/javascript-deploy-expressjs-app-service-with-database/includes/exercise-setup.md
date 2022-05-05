@@ -1,13 +1,24 @@
-In this exercise, you'll set up your local development environment. This isn't required to use the Azure cloud. 
+In this exercise, you'll set up your local development environment. This isn't required to use the Azure cloud but is helpful for a better understanding of developing for Azure.
 
-## Install Node.js and Docker
+## Install required development tools
 
-If you don't have Node.js and Docker on your local computer, install them.
+If you don't have Node.js and Visual Studio Code already on your local computer, install them now.
 
 * [Node.js](https://nodejs.org/)
-* [Docker](https://docs.docker.com/get-docker/) - to use a local MongoDB database
+* [Visual Studio Code](https://code.visualstudio.com/download)
 
-## Fork the GitHub sample repository
+## Download sample Express.js application
+
+You can bring the sample application to your local computer in one of several ways:
+
+* Download zipped GitHub repository
+* Fork and clone GitHub repository
+
+### [Download zipped repo](#tab/download-zip)
+
+## Download the sample application from GitHub
+
+
 
 1. Open the [GitHub sample](https://github.com/Azure-Samples/msdocs-javascript-nodejs-server) `https://github.com/Azure-Samples/msdocs-javascript-nodejs-server` repository in a new browser tab or window.
 1. Select the **Fork** button to create your own fork of the sample repository.

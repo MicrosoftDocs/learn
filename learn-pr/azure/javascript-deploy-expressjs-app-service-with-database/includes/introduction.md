@@ -8,21 +8,22 @@ You'll learn how to deploy and configure the Azure database resource you need to
 
 :::image type="content" source="../media/rental-app-website-browser.png" alt-text="Web browser that shows the main listings of a rental app.":::
 
-The rental property data web app is built with Express.js. The user interface is created with simple JavaScript and served from the Express.js server. 
+The rental property data web app is built with Express.js and MongoDB. The user interface is created with simple JavaScript and served from the Express.js server in order to focus on the core lesson of Azure service creation, configuration, and deployment. 
 
 The entire source code is provided as part of this module. You won't be required to change the code.
 
 ## What will you be doing?
 
-You'll deploy an Express.js app which stores data in Cosmos DB for the MongoDB API, then configure the Azure App Service and deploy to Azure:
+You'll deploy an Express.js app to Azure App Service, then create the database in Cosmos DB and configure the connection between the web app and the database. In order to understand each piece, the module includes a typical developer journey.
 
-- Use the free Learn sandbox subscription - no credit card needed.
-- Set up local development environment.
-- Run the sample application on your local computer with local database.
-- Create Azure Cosmos DB resource.
-- Configure the Azure App Service to connect to your CosmosDB database.
-- Deploy the Express.js app from your local computer with Visual Studio Code.
+These steps include:
+
+- Use an Azure subscription - the free Learn sandbox subscription is provided with no credit card needed.
+- Set up local development environment with the sample project and local database.
+- Create Azure web app resources and deploy web app.
+- Create database resource and upload data.
+- Configure the web app to connect to the database.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to create and integrate a MongoDB database, using Cosmos DB API for MongoDB, into an Express.js web app and deploy to your own App Service resource.
+By the end of this module, you'll be able to create and integrate a MongoDB database, using Cosmos DB API for MongoDB, into an Express.js web app and configure your App Service resource to use that database.

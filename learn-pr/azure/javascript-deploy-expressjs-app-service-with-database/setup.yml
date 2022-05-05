@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.setup
-title: Setup local environment and Azure resources for module
+title: Setup local environment
 metadata:
   unitType: learning-content
-  title: Setup local environment and Azure resources for module
-  description: "In this module, you're a data web developer or DevOps engineer who needs to deploy a web app to Azure. You're an experienced developer, but you're new to Azure. You'll learn how to deploy and configure the Azure resources needed to securely deploy the database for the web app."
+  title: Setup local environment
+  description: "Set up local computer's development environment to use sample project and Azure resources."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry

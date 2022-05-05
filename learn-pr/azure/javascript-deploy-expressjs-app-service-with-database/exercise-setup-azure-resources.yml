@@ -10,6 +10,8 @@ metadata:
   ms.author: diberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
+interactive: bash
+azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/exercise-setup-azure-resources.md)]

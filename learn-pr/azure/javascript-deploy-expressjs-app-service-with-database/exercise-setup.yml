@@ -1,17 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-setup
-title: Exercise - Setup local environment and Azure resources for module
+title: Exercise - Setup local environment 
 metadata:
   unitType: exercise
-  title: Exercise - Setup local environment and Azure resources for module
-  description: "In this module, you're a data web developer or DevOps engineer who needs to deploy a web app to Azure. You're an experienced developer, but you're new to Azure. You'll learn how to deploy and configure the Azure resources needed to securely deploy the database for the web app."
+  title: Exercise - Setup local environment
+  description: "Prepare your development environment by bringing the sample app's GitHub repository to your local computer and installing Visual Studio Code extensions related to this module."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
-#interactive: bash
-#azureSandbox: true
 content: |
   [!include[](includes/exercise-setup.md)]

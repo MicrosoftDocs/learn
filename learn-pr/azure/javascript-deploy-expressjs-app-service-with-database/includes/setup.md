@@ -1,31 +1,17 @@
-In this section, you need to setup the web app.
+In this section, you need to setup the local development environment for the Express.js sample application and the MongoDB database.
 
-## Express.js local and remote development
+## Express.js local development
 
-The sample app is provided for you. You need to fork the GitHub repository, then clone your fork to bring a copy of the sample application to your local computer. To access the local Express.js app, use port 8080 in the URL. For example, this sample application's URL is: `http://localhost:8080/`.
+The GitHub repository, for all Express.js apps in this Learn path, is provided for you. You need bring the sample repository from GitHub to your local computer then use the subdirectory `3-Add-cosmosdb-mongodb` for this module. 
 
-## Use Visual Studio Code dev container
+You can choose to:
 
-In order to use the MongoDB database, this module uses the Visual Studio Code dev container for Node.js + MongoDB. This allows you to quickly use a MongoDB locally without having to understand how to correctly install it. 
+* Fork and clone the sample app GitHub repository.
+* Download the zipped repository from GitHub.
 
-The result of this dev container is that once it is started, you won't need to understand how it works in order to develop your web app and have access to your local MongoDB database. 
-
-To access the web app and database, the sample app has already configured the `./.devcontainer/devcontainer.json` file's **forwardPorts** setting to forward the 8080 and 27017 ports to your local host computer.
-
-## Learn sandbox 
-
-The Learn sandbox allows you to create and use Azure resources with no cost to you and without any credit card. The Learn sandbox is contained in a separate tenant. Once you have access to that tenant, you can create the Azure resources used in this module. 
-
-The following Learn sandbox information may be useful to troubleshoot connection issues that may occur:
-
-|Name|Value|
-|--|--|
-|Azure cloud|AzureCloud|
-|Tenant|604c1504-c6a3-4080-81aa-b33091104187|
-|Subscription name|Concierge Subscription|
-|Subscription Id|2e3431a6-9673-485f-a9d9-2296d848d530|
+Either method works, and one of the methods should be familiar to you already. The sample app includes the typical Express.js files along with some Visual Studio Code files to improve the developer experience.
 
 ## Visual Studio Code extensions
 
-To create and manage those Azure resources and your local MongoDB database, install Visual Studio Code extensions. This allows you to manage those resources from within Visual Studio Code. 
+To create and manage Azure resources and your local MongoDB database, install Visual Studio Code extensions. These are not the only ways to manage Azure or MongoDB but they are conveniently located inside the development environment so you don't need to use other tools.  
 
