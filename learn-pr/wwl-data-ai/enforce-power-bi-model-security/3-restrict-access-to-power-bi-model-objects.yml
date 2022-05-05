@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-power-bi-model-security.restrict-access-to-power-bi-model-objects
+title: Restrict access to Power BI model objects
+metadata:
+  title: Restrict access to Power BI model objects
+  description: "Restrict access to Power BI model objects"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-restrict-access-to-power-bi-model-objects.md)]

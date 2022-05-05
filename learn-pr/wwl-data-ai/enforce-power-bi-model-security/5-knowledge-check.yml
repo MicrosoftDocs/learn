@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-power-bi-model-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Joshua is a data modeler at Adventure Works who is developing a model for a large data warehouse. The model must enforce RLS, and the Power BI reports that connect to the model should deliver the fastest possible performance.What should Joshua do?"
+    choices:
+    - content: "Apply rules to dimension tables."
+      isCorrect: true
+      explanation: "Correct. It’s efficient to apply rules to dimension tables. Power BI filters the dimension tables (that usually have a small number of rows) and uses model relationships to propagate those filters to fact tables (that contain millions of rows)."
+    - content: "Apply rules to hierarchies."
+      isCorrect: false
+      explanation: "Incorrect. It’s not possible to apply rules to hierarchies."
+    - content: "Apply rules to fact tables."
+      isCorrect: false
+      explanation: "Incorrect. While rules can be applied to fact tables, it’s not as efficient as applying rules to the dimension tables. When rules are applied to dimension tables, Power BI uses model relationships to efficiently propagate filters to the fact tables."
+  - content: "Rupali is a data modeler at Adventure Works who is developing an import model to analyze employee timesheet data. The employee table stores the employee social security number (SSN) in a column. While the model will be available for all company managers, it will also be available to employees in the Payroll department. However, reports must only reveal employee SSNs to payroll employees.What feature should Rupali use to restrict access to the SSN column?"
+    choices:
+    - content: "RLS."
+      isCorrect: false
+      explanation: "Incorrect. You can’t use RLS (row-level security) to secure the SSN column in the employee table because RLS filters table rows."
+    - content: "SSO."
+      isCorrect: false
+      explanation: "Incorrect. You can’t use SSO (single sign-on) to secure the SSN column in the employee table because Power BI uses SSO to send credentials to underlying data sources. Also, you can’t use SSO with import datasets."
+    - content: "OLS."
+      isCorrect: true
+      explanation: "Correct. You can use OLS (object-level security) to secure the SSN column in the employee table."
+  - content: "Kasper is a data modeler at Adventure Works who is developing a model that must enforce RLS. It must restrict access to only the sales regions assigned to the report consumer. The source database includes a table that stores employee usernames and their assigned region(s).What should Kasper do?"
+    choices:
+    - content: "Create an OLS role and use a dynamic rule."
+      isCorrect: false
+      explanation: "Incorrect. OLS roles don’t filter model data."
+    - content: "Create an RLS role and use a dynamic rule."
+      isCorrect: true
+      explanation: "Correct. An RLS role with a dynamic rule that uses the USERPRINCIPALNAME (or USERNAME) function can filter model data to the report consumer’s assigned region(s)."
+    - content: "Create an RLS role and use a static rule."
+      isCorrect: false
+      explanation: "Incorrect. An RLS roles with a static rule can’t filter model data based on the employee table in the database."

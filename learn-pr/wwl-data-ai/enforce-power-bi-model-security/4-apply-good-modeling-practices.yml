@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-power-bi-model-security.apply-good-modeling-practices
+title: Apply good modeling practices
+metadata:
+  title: Apply good modeling practices
+  description: "Apply good modeling practices"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-apply-good-modeling-practices.md)]

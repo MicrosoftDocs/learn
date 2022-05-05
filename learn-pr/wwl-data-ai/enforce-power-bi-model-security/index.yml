@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.enforce-power-bi-model-security
+metadata:
+  title: Enforce Power BI model security
+  description: "Enforce model security in Power BI using row-level security and object-level security."
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enforce Power BI model security
+summary: Enforce model security in Power BI using row-level security and object-level security.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Restrict access to Power BI model data with RLS.
+  - Restrict access to Power BI model objects with OLS.
+  - Apply good development practices to enforce Power BI model security.
+prerequisites: |
+  - Experience developing Power BI data models by using Power BI Desktop.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- power-bi
+units:
+- learn.wwl.enforce-power-bi-model-security.introduction
+- learn.wwl.enforce-power-bi-model-security.restrict-access-to-power-bi-model-data
+- learn.wwl.enforce-power-bi-model-security.restrict-access-to-power-bi-model-objects
+- learn.wwl.enforce-power-bi-model-security.apply-good-modeling-practices
+- learn.wwl.enforce-power-bi-model-security.knowledge-check
+- learn.wwl.enforce-power-bi-model-security.summary
+badge:
+  uid: generic-badge.svg
