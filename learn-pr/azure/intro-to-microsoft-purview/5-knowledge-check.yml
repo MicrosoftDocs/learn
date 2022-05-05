@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-purview.knowledge-check
+uid: learn.intro-to-microsoft-purview.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Knowledge check questions for the Introduction to Azure Purview module."
-  ms.date: 8/19/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  description: "Knowledge check questions for the Introduction to Microsoft Purview module."
+  ms.date: 5/05/2022 
+  author: whhender 
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
@@ -15,33 +15,33 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "What does Azure Purview do with the data it discovers from your registered sources?"
+  - content: "What does Microsoft Purview do with the data it discovers from your registered sources?"
     choices:
     - content: "It catalogs and classifies the data that is scanned."
       isCorrect: true
       explanation: "Correct: It creates a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data."
     - content: "It moves the data to your Azure subscription, automatically creating the necessary storage accounts."
       isCorrect: false
-      explanation: "Incorrect: Azure Purview does not move the data. It leaves the data in its original storage location but maintains a link to the data."
+      explanation: "Incorrect: Microsoft Purview does not move the data. It leaves the data in its original storage location but maintains a link to the data."
     - content: "It performs data transformations to match your on-premises schemas."
       isCorrect: false
-      explanation: "Incorrect: Azure Purview does not perform data transformations on the discovered data. It creates a data map along with metadata that describes the data source."
-  - content: "Where would you register your data sources for use in Azure Purview?"
+      explanation: "Incorrect: Microsoft Purview does not perform data transformations on the discovered data. It creates a data map along with metadata that describes the data source."
+  - content: "Where would you register your data sources for use in Microsoft Purview?"
     choices:
-    - content: "In the Overview tab of the Azure Purview account page."
+    - content: "In the Overview tab of the Microsoft Purview account page."
       isCorrect: false
-      explanation: "Incorrect: The overview page for the Azure Purview account provides information about that account only."
-    - content: "In the Managed Resources tab of the Azure Purview account page."
+      explanation: "Incorrect: The overview page for the Microsoft Purview account provides information about that account only."
+    - content: "In the Managed Resources tab of the Microsoft Purview account page."
       isCorrect: false
       explanation: "Incorrect: The Managed resources tab is sued to configure and manage the resource group, storage account, and event hub resources."
-    - content: "In Azure Purview Studio."
+    - content: "In the Microsoft Purview governance portal."
       isCorrect: true
-      explanation: "Correct: Azure Purview Studio is where you register your data sources."
-  - content: "What aspect of Azure Purview is used to configure the data discovery for your data sources?"
+      explanation: "Correct: The Microsoft Purview governance portal is where you register your data sources."
+  - content: "What aspect of Microsoft Purview is used to configure the data discovery for your data sources?"
     choices:
     - content: "Scan rules."
       isCorrect: true
-      explanation: "Correct: In an Azure Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization."
+      explanation: "Correct: In a Microsoft Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization."
     - content: "Collections."
       isCorrect: false
       explanation: "Incorrect: Collections are a container concept to help organize data sources into common groupings."
