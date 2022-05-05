@@ -41,15 +41,15 @@ This exercise uses an Azure CLI script. If you would rather create the resources
 
 ### [Browser terminal](#tab/browser-terminal)
 
-These instructions should be used if you are not using dev containers.
+These instructions should be used if you aren't using dev containers.
 
-1. Using the sandbox's terminal, to login to Azure CLI (already in the terminal) with the Sandbox tenant (a tenant is a specific instance of Azure AD containing accounts and groups):
+1. Using the sandbox's terminal, to sign in to Azure CLI (already in the terminal) with the Sandbox tenant (a tenant is a specific instance of Azure AD containing accounts and groups):
 
     ```azurecli
     az login -t 604c1504-c6a3-4080-81aa-b33091104187
     ```
 
-1. Complete the login experience. A browser window may open as part of that experience. 
+1. Complete the sign-in experience. A browser window may open as part of that experience. 
 1. After you select your account and sign in, close the browser.
 1. Copy the following bash script:
 
@@ -97,13 +97,13 @@ These instructions should be used if you are not using dev containers.
 
 ### [Container terminal](#tab/container-terminal)
 
-1. Using the dev container's terminal, to login to Azure CLI:
+1. Using the dev container's terminal, to sign in to Azure CLI:
 
     ```azurecli
     az login -t 604c1504-c6a3-4080-81aa-b33091104187
     ```
 
-1. Complete the login experience. A browser window may open as part of that experience. 
+1. Complete the sign-in experience. A browser window may open as part of that experience. 
 1. After you select your account and sign in, close the browser.
 1. The dev container's terminal resulting JSON array of objects includes all the subscriptions you have access to at this time. 
 
@@ -126,7 +126,7 @@ These instructions should be used if you are not using dev containers.
 ]
     ```
 
-1. To create the resources run the following script:
+1. To create the resources, run the following script:
 
     ```bash
     bash setup-in-sandbox.sh

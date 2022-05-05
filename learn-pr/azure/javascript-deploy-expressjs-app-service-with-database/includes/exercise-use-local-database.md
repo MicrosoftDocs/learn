@@ -1,4 +1,4 @@
-Run a local MongoDB server to develop your data application. This process isn't required to use a Azure Cosmos DB database or deploy to Azure App Service.
+Run a local MongoDB server to develop your data application. This process isn't required to use an Azure Cosmos DB database or deploy to Azure App Service.
 
 ## Install and run MongoDB
 
@@ -6,10 +6,10 @@ Select a method to install and run a local MongoDB database. The MongoDB needs t
 
 ### [Install and run MongoDB locally](#tab/install-local)
 
-If you MongoDB installed, you can skip this section. 
+If your MongoDB installed, you can skip this section. 
 
 1. Download [MongoDB Community](https://www.mongodb.com/docs/manual/installation/) edition.
-1. Install MongoDB community edition 4.2+.
+1. Install MongoDB community edition.
 1. Start your local MongoDB Server.
 
 ### [Install and run MongoDB container](#tab/install-container)
@@ -44,7 +44,7 @@ Configure the web app to use the local database.
 
 ## Configure MongoDB extension
 
-Configure Visual Studio Code's MongoDB extension to find and use the funning local MongoDB database on port 27017.
+Configure Visual Studio Code's MongoDB extension to find and use the running local MongoDB database on port 27017.
 
 1. In Visual Studio Code, select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
 1. Search for **MongoDB: Connect with connection string**. 

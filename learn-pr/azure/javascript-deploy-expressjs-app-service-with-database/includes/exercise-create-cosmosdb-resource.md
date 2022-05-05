@@ -9,7 +9,7 @@ Create the Cosmos DB API for MongoDB resource then create the database and conta
 1. Use the following table to answer the creation steps:
 
     | Step | Value|
-    | -- | -- |
+    |--|--|
     |Select an Azure Database Server.|Select **Azure CosmosDB for MongoDB API**.|
     |Account name|Enter `js-rentals-` and post pend the value with a random number like `3956`. The account name needs to be unique across Azure Cosmos DB resources, which the random number ensures. |
     |Select a capacity model.| Select **Serverless**.|
@@ -37,7 +37,7 @@ This sample app provides JSON data to seed the collection.
 
 ## Does the web app work yet? 
 
-The web app still works in the sense that it is running but it doesn't display database yet because the web app doesn't have the connection string in the app settings.
+The web app still works in the sense that it's running but it doesn't display database yet because the web app doesn't have the connection string in the app settings.
 
 ## Check your work
 

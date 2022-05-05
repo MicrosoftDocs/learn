@@ -5,7 +5,7 @@ When you want to use a MongoDB-enabled application on Azure, create a Cosmos DB 
 The Azure Cosmos DB API for MongoDB provides an integration layer to use Cosmos DB as if it were a MongoDB database. 
 
 * Free pricing tier.
-* Leverage your MongoDB experience on the Azure Cloud.
+* Use your MongoDB experience on the Azure Cloud.
 * Continue to use favorite client SDKs.
 * Automatic and transparent sharding with the wire protocol for MongoDB.
 * Serverless or provisioned consumption.
@@ -27,7 +27,7 @@ As part of the creation process, you need to answer a few questions such as:
 
 ### Version of MongoDB
 
-CosmosDB supports several versions of the MongoDB API. You should select the version compatible with your MongoDB functionality.
+Cosmos DB supports several versions of the MongoDB API. You should select the version compatible with your MongoDB functionality.
 
 ### Azure location of resource
 
@@ -35,7 +35,7 @@ The Azure location indicates the geographical local for your database. You shoul
 
 ### Serverless or provisioned throughput
 
-When you select serverless or provisioned throughput, you are selecting the capacity mode for the resource. Use the following chart to help you decide which mode you need:
+When you select serverless or provisioned throughput, you're selecting the capacity mode for the resource. Use the following chart to help you decide which mode you need:
 
 
 | Criteria | Provisioned throughput | Serverless |
@@ -49,7 +49,7 @@ When you select serverless or provisioned throughput, you are selecting the capa
 
 In some situations, it may be unclear whether provisioned throughput or serverless should be chosen for a given workload. To help with this decision, estimate your overall **expected consumption**, the total number of RUs, you may consume over a month.
 
-Specific pricing tier information for Cosmos DB API for MongoDB include: 
+Specific pricing tier information for Cosmos DB API for MongoDB includes: 
 
 Cosmos DB supports the MongoDB wire protocol for applications written against MongoDB. You can find the supported commands and protocol versions at [Supported MongoDB features and syntax](/azure/cosmos-db/mongodb/feature-support-32).
 
@@ -65,11 +65,11 @@ The following table lists the limits specific to MongoDB feature support. Other 
 | Maximum level of nesting for embedded objects / arrays on index definitions | 6 |
 | Idle connection timeout for server side connection closure* | 30 minutes |
 
-\* The client application should set the idle connection timeout in the driver settings to 2-3 minutes because the [default timeout for Azure LoadBalancer is 4 minutes](/azure/load-balancer/load-balancer-tcp-idle-timeout).  This timeout will ensure that idle connections are not closed by an intermediate load balancer between the client machine and Azure Cosmos DB.
+\* The client application should set the idle connection timeout in the driver settings to 2-3 minutes because the [default timeout for Azure LoadBalancer is 4 minutes](/azure/load-balancer/load-balancer-tcp-idle-timeout).  This timeout will ensure that idle connections aren't closed by an intermediate load balancer between the client machine and Azure Cosmos DB.
 
 ## Create database and collection
 
-Once the resource is created, you can access this resource in a variety of ways including: 
+Once the resource is created, you can access this resource in various ways including: 
 
 * Visual Studio Code - this is the method used in this Learn module.
 * Azure portal
@@ -79,7 +79,7 @@ The default resource doesn't have a database or a collection. You need to create
 
 ## Azure database extension and MongDB extension
 
-The Visual Studio Code extensions for Azure Databases and MongoDB has some overlap. 
+The Visual Studio Code extensions for Azure Databases and MongoDB have some overlap. 
 
 * **MongoDB**: The MongoDB extension is focused on allowing you to use MongoDB locally or remotely. As long as the connection string is correct set, the functionality of running playground scripts will work. This extension is best for tasks focused on MongoDB data interactions. In Azure terminology, this extension works with the **data plane**. 
 * **Azure Database**: The Azure database extension allows you to manage your Azure databases. The functionality isn't specific to MongoDB. This extension is best for cloud-focused resource management tasks such as creating or deleting a database or collection or getting the connection string. In Azure terminology, this extension works with the **management plane** primarily, and the **data plane** secondarily. 

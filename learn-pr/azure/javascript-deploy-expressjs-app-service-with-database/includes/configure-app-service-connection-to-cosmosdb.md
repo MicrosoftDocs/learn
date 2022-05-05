@@ -2,11 +2,11 @@ Use a connection string to connect your remote Azure App Service resource to you
 
 ## Connecting Azure resources
 
-There are several connection methods depending on which Azure resources you are using and which authentication you want to enforce, always refer to the documentation for the specific resources you would like to connect for the most up-to-date information.
+There are several connection methods depending on which Azure resources you're using and which authentication you want to enforce, always refer to the documentation for the specific resources you would like to connect for the most up-to-date information.
 
 ## Connection strings and keys
 
-Authentication _secrets_ provided by the resource, such as a connection string or key are available from many Azure resources. These secrets are specific to the originating resource and not to the identity the secret is handed off to. These Azure resources provide 2 secrets for connectivity:
+Authentication _secrets_ provided by the resource, such as a connection string or key, are available from many Azure resources. These secrets are specific to the originating resource and not to the identity the secret is handed off to. These Azure resources provide 2 secrets for connectivity:
 
 * **2 Developers**: One form of these secrets is 2 secrets, which you would hand out to 2 separate developers or connecting resources. Each secret can be cycled for a new secret. 
 * **Read/Read-write**: Another form of these secrets in a **read** and a **read/write** form where the developer would need to use the correct secret based on their scenario. 
@@ -31,6 +31,6 @@ A more secure method of connection requires the connecting resource, such as App
 
 This module uses a connection string stored in an app setting in the App Service, as the most convenient in a developer experience flow. 
 
-As your project grows in security requirements, you will eventually want to store the connection string in Key Vault and access it from App Service. 
+As your project grows in security requirements, you'll eventually want to store the connection string in Key Vault and access it from App Service. 
 
 Managed identity isn't currently a choice because the MongoDB client libraries don't support this authentication. 

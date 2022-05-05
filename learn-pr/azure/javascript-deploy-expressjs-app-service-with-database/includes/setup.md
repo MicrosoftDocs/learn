@@ -21,5 +21,5 @@ Either method works, and one of the methods should be familiar to you already. T
 
 ## Visual Studio Code extensions
 
-To create and manage Azure resources and your local MongoDB database, install Visual Studio Code extensions. These are not the only ways to manage Azure or MongoDB but they are conveniently located inside the development environment so you don't need to use other tools.  
+To create and manage Azure resources and your local MongoDB database, install Visual Studio Code extensions. These aren't the only ways to manage Azure or MongoDB but they're conveniently located inside the development environment so you don't need to use other tools.  
 

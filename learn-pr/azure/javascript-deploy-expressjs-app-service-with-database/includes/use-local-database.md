@@ -1,13 +1,11 @@
-In this unit, setup the local development environment for MongoDB. While it isn't required that you have a local database when using Azure Cosmos DB API for MongoDB, it is a common practice. 
+In this unit, set up the local development environment for MongoDB. While it isn't required that you have a local database when using Azure Cosmos DB API for MongoDB, it's a common practice. 
 
 ## Local or remote database?
 
 For local development, you can choose to use a locally available MongoDB or create a cloud resource specifically for your development use. Both are valid and each comes with decisions.
 
 * Local MongoDB: Local development allows you to work without a cloud resource, or its authentication requirements. This focuses your development work on the database and code changes. 
-* Remote MongoDB: If your code is dependent on the authentication and infrastructure of the database, a remote development server is the best choice. Your security and connectivity to the database would be just as necessary as the usage of the database.
-
-This module uses a local MongoDB 4.2+..
+* Remote MongoDB: If your code is dependent on the authentication and infrastructure of the database, a remote development server is the best choice. Your security and connectivity to the database would be as necessary as the usage of the database.
 
 ## Installing a local MongoDB server
 
