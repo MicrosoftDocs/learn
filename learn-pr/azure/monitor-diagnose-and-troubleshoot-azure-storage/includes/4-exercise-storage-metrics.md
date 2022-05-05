@@ -73,13 +73,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
 
 4. Under **Time** granularity, select **1 minute**, and then select **Apply**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select time range and granularity in Metrics Explorer](../media/4-time-range-and-granularity.png)
-
 5. On the bar that appears beneath the chart title, select **Line chart**, and then **Bar chart**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Option to select a bar chart in Metrics Explorer in Metrics Explorer](../media/4-bar-chart-option.png)
 
 6. Under **Chart Title**, select **Add metric**.
 
