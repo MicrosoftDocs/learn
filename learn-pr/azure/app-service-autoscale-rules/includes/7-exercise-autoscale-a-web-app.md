@@ -137,11 +137,11 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Add a rule that increases the instance count by one if the average CPU utilization across all instances in the web site exceeds 50 percent in the preceding five minutes. This is a scale-out rule.
 
-    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule.](../media/7-first-rule-annotated.png)
+    :::image type="content" source="../media/7-first-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule.":::
 
 1. Select **Add a rule** again. Add a rule that reduces the instance count by one if the average CPU utilization across all instances in the web site drops below 30 percent in the preceding five minutes. This is a scale-in rule. Remember that it's good practice to define scale rules in pairs.
 
-    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule.](../media/7-second-rule-annotated.png)
+    :::image type="content" source="../media/7-second-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule.":::
 
 1. In the **Default** auto scale condition window, in the **Instance limits** section, set the **Maximum** instance count to five. Name the Autoscale setting **ScaleOnCPU**, and then select **Save**.
 

@@ -11,7 +11,7 @@ You modify the App Service Plan for a web app to enable autoscaling. An App Serv
 
 You implement autoscaling by selecting and configuring a **Manual scale** or **Custom autoscale** on the **Scale out** page for an App Service Plan.
 
-![Screenshot of the Scale Out page for an App Service Plan with the **Manual scale** button highlighted.](../media/6-enable-autoscale-annotated.png)
+:::image type="content" source="../media/6-enable-autoscale-annotated.png" alt-text="Screenshot of the Scale Out page for an App Service Plan with the **Manual scale** button highlighted.":::
 
 ## Add scale conditions
 
@@ -41,4 +41,4 @@ You can use the **Run history** chart with the metrics shown on the **Overview**
 
 To disable autoscaling, select **Custom autoscale** on the **Scale out** page of the App Service Plan. Then, select the **Disable autoscale** option on the **Default** pane.
 
-![Screenshot of the Scale Out page of an App Service Plan with the **Disable autoscale** button highlighted.](../media/6-disable-autoscale-annotated.png)
+:::image type="content" source="../media/6-disable-autoscale-annotated.png" alt-text="Screenshot of the Scale Out page of an App Service Plan with the **Disable autoscale** button highlighted.":::
