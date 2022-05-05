@@ -5,5 +5,4 @@ Once your policy is in place, you can use the Compliance blade to review non-com
 
 Policy conditions are evaluated against your existing resources. Although the portal does not show the evaluation logic, the compliance state results are shown. The compliance state result is either compliant or non-compliant.
 
-> [!NOTE]
-> Policy evaluation occurs about once an hour.
+
