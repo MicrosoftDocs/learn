@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check questions for the Introduction to Microsoft Purview module."
-  ms.date: 8/19/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  ms.date: 5/05/2022 
+  author: whhender 
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

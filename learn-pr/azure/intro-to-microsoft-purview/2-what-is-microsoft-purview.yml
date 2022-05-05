@@ -3,11 +3,11 @@ uid: learn.intro-to-microsoft-purview.what-is-microsoft-purview
 title: What is Microsoft Purview?
 metadata:
   unitType: learning-content
-  title: what-is-Azure-Purview
+  title: what-is-Microsoft-Purview
   description: "This unit describes what Microsoft Purview is and provides high-level overview of the product."
-  ms.date: 8/19/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  ms.date: 5/05/2022 
+  author: whhender 
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
