@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/02/2022
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "The administrator can create system routes."
       isCorrect: false
-      explanation: "That's incorrect. The administrator cannot create system routes, only user routes."
+      explanation: "Incorrect. The administrator cannot create system routes, only user routes."
     - content: "Azure gateways are needed to route traffic between subnets."
       isCorrect: false
-      explanation: "That's incorrect. Gateways are not needed to route traffic between subnets."
+      explanation: "Incorrect. Gateways are not needed to route traffic between subnets."
     - content: "When the next hop type is none, traffic is dropped."
       isCorrect: true
-      explanation: "That's correct. Traffic routed to the None next hop type is not routed outside the subnet, but is dropped."
+      explanation: "Correct. Traffic routed to the None next hop type is not routed outside the subnet, but is dropped."
   - content: "When creating user-defined routes, which of the following is a valid next hop types?"
     choices:
     - content: "Internet"
       isCorrect: true
-      explanation: "That's correct. The valid next hop choices are virtual appliance. virtual network gateway, virtual network, internet, and none."
+      explanation: "Correct. The valid next hop choices are virtual appliance. virtual network gateway, virtual network, internet, and none."
     - content: "Load balancer"
       isCorrect: false
-      explanation: "That's incorrect. Load balancer is not a valid next hop type."
+      explanation: "Incorrect. Load balancer is not a valid next hop type."
     - content: "ExpressRoute"
       isCorrect: false
-      explanation: "That's incorrect. ExpressRoute is not a valid next hop type."
+      explanation: "Incorrect. ExpressRoute is not a valid next hop type."
   - content: "A company needs to extend their private address space in Azure by providing a direct connection to Azure resources. Which of the following should be implemented?"
     choices:
     - content: "User-defined route"
       isCorrect: false
-      explanation: "That's incorrect. User-defined routes are created so Azure Virtual Appliances can handle the traffic both between subnets and to the Internet."
+      explanation: "Incorrect. User-defined routes are created so Azure Virtual Appliances can handle the traffic both between subnets and to the Internet."
     - content: "Virtual appliance"
       isCorrect: false
-      explanation: "That's incorrect. Virtual appliances are for traffic control and high availability."
+      explanation: "Incorrect. Virtual appliances are for traffic control and high availability."
     - content: "Virtual network endpoint"
       isCorrect: true
-      explanation: "That's correct. Virtual network endpoints extend the private address space in Azure. Endpoints restrict the flow of traffic. As service endpoints are created, Azure creates routes in the route table to direct the traffic."
+      explanation: "Correct. Virtual network endpoints extend the private address space in Azure. Endpoints restrict the flow of traffic. As service endpoints are created, Azure creates routes in the route table to direct the traffic."
