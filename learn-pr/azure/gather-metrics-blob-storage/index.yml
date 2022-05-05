@@ -31,8 +31,6 @@ units:
 - learn.azure.gather-metrics-from-blob-storage.3-exercise-specify-monitor-blob-metrics
 - learn.azure.gather-metrics-from-blob-storage.4-using-dashboards-in-the-azure-portal
 - learn.azure.gather-metrics-from-blob-storage.5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard
-- learn.azure.gather-metrics-from-blob-storage.6-using-storage-analytics-logging
-- learn.azure.gather-metrics-from-blob-storage.7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs
 - learn.azure.gather-metrics-from-blob-storage.8-knowledge-check
 - learn.azure.gather-metrics-from-blob-storage.9-summary
 badge:

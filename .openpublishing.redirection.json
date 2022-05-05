@@ -311,6 +311,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/6-use-azure-resource-logs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/5-storage-logging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/6-exercise-storage-logging",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/welcome-to-azure/4-create-a-vm.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/4-exercise-create-website",
       "redirect_document_id": false
