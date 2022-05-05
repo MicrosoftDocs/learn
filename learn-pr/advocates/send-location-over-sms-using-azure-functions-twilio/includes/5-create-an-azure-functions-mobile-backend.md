@@ -10,9 +10,7 @@ At this point, the app is working to get the user's location and is ready to be 
 
     :::image type="content" source="../media/5-add-new-functions-project.png" alt-text="Screenshot of the Add New Project dialog.":::
 
-1. The **New Project** configuration dialog will appear, and it may show a spinner in the bottom-left whilst loading updated templates. If you see this, wait until this has finished loading, then if updated templates are available, click the **Refresh** option that will appear to ensure you get the latest Function templates.
-
-1. In the **New Project** configuration dialog, ensure the Functions version is set to *.NET 6*. Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the authorization level to *Anonymous*. Then click **Create**.
+1. In the **Create a new Azure Functions application** configuration dialog, ensure the Functions version is set to *.NET 6*. Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the authorization level to *Anonymous*. Then click **Create**.
 
     :::image type="content" source="../media/5-configure-trigger.png" alt-text="The Azure Functions project configuration dialog.":::
 

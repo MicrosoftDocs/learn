@@ -11,9 +11,9 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 1. Stop the local Azure Functions runtime if it's still running from the previous unit.
 
 1. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
-Make sure that you also have NuGet packages for Mcrosoft.Azure.WebJobs and latest .NET SDK installed in your function. The NuGet section for your function should look like the screenshot below:
+Make sure that you also have NuGet packages for Microsoft.Azure.WebJobs and latest .NET SDK installed in your function. The NuGet section for your function should look like the screenshot below:
 
-   ![Screenshot showing the function NuGet dependencies.](../media/Imhere-function-dependencies.png)
+   :::image type="content" source="../media/Imhere-function-dependencies.png" alt-text="Screenshot showing the function NuGet dependencies.":::
 
 1. Open the SendLocation class in the ImHere.Functions project for editing.
 
@@ -24,7 +24,7 @@ Make sure that you also have NuGet packages for Mcrosoft.Azure.WebJobs and lates
     
     ```
 
-1. Add a new parameter called `messages` of type `ICollector<CreateMessageOptions>` to the static `Run` method. 
+1. Add a new parameter called `messages` of type `ICollector<CreateMessageOptions>` to the static `Run` method.
 
     ```cs
     [FunctionName("SendLocation")]
@@ -36,6 +36,7 @@ Make sure that you also have NuGet packages for Mcrosoft.Azure.WebJobs and lates
       ```cs
     [TwilioSms(AccountSidSetting = "TwilioAccountSid",AuthTokenSetting = "TwilioAuthToken", From = "+1xxxxxxxxx")]ICollector<CreateMessageOptions> messages,
     ```
+
     This attribute has three parameters you need to set:
 
     * **AccountSidSetting** - set this to `"TwilioAccountSid"`
@@ -83,7 +84,7 @@ Function app settings can be configured locally inside the `local.settings.json`
 
 The `ICollector<CreateMessageOptions>` parameter is a collection of `CreateMessageOptions` instances and is used to collect the SMS messages you want to send. After the function has finished running, any instances of `CreateMessageOptions` added to this collection are passed to Twilio and used to create messages to be sent to the relevant recipients.
 
-1. In the `SendLocation' class` add a using directive for `Twilio.Types` to the class.
+1. In the `SendLocation` class, add a using directive for `Twilio.Types` to the class.
 
     ```cs
       using Twilio.Types;
@@ -116,7 +117,7 @@ The `ICollector<CreateMessageOptions>` parameter is a collection of `CreateMessa
     }
     ```
 
-The complete `SendLocation` method is shown below. Your active phone number would replace the placeholder in the `From` parameter.
+The complete `SendLocation` method is shown below. Enter your active phone number from Twilio to replace the placeholder in the `From` parameter.
 
 ```cs
 [FunctionName("SendLocation")]
@@ -160,15 +161,15 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
 1. Click the **Send Location** button. If the SMS message was sent successfully, you'll see a message in the Xamarin.Forms app saying, "Location sent successfully".
 
-    ![The Xamarin.Forms app showing the location as sent.](../media/7-ui-location-sent.png)
+    :::image type="content" source="../media/7-ui-location-sent.png" alt-text="The Xamarin.Forms app showing the location as sent.":::
 
 1. In the console logs for your function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they will be logged out here.
 
-    ![The Azure Functions console showing the message has been sent.](../media/7-function-message-sent.png)
+    :::image type="content" source="../media/7-function-message-sent.png" alt-text="The Azure Functions console showing the message has been sent.":::
 
 1. Check your phone for a message. Follow the link in the message to see your location.
 
-    ![The SMS message received on a mobile phone.](../media/7-message-received.png)
+    :::image type="content" source="../media/7-message-received.png" alt-text="The SMS message received on a mobile phone.":::
 
     > [!TIP]
     > The location you'll see is the location where the app is running, so will be near to the data center that the VM is running from. If this app was running on your local device then it would show your location.

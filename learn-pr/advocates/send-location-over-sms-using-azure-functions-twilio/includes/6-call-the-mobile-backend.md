@@ -12,7 +12,7 @@ Your mobile app is now up and running and you've created the initial version of 
     using Newtonsoft.Json;
     ```
 
-1. In this class, add a private `HttpClient` field called `client`. 
+1. In this class, add a private `HttpClient` field called `client`.
 
     ```cs
     HttpClient client = new HttpClient();
@@ -36,8 +36,8 @@ Your mobile app is now up and running and you've created the initial version of 
     ```
 
     > [!NOTE]
-    > This assumes that the phone numbers have been entered in the correct format, one per line in the `Editor` control. In a production-quality app, there would be validation around this to ensure one or more phone numbers were entered and were in the correct format.    
- 
+    > This assumes that the phone numbers have been entered in the correct format, one per line in the `Editor` control. In a production-quality app, there would be validation around this to ensure one or more phone numbers were entered and were in the correct format.
+
 1. To serialize the `PostData` as JSON, the easiest way is to use the Newtonsoft.Json NuGet package. Add this NuGet package to the `ImHere`.
 
      - Right-click **Dependencies** under the ImHere project and select _Manage NuGet Packages..._.
@@ -141,11 +141,11 @@ namespace ImHere
 
 ## Testing it out
 
-1. Make sure that you function is still running locally and the port matches the `SendLocation` method.
+1. Make sure that your function is still running locally and the port matches the `SendLocation` method.
 
 1. Set the UWP app as the startup app and run it. Click the **Send Location** button. You'll see output in the Functions runtime console window showing the function being called, and the logging showing the generated URL.
 
-    ![Output of the function being called.](../media/6-function-called.png)
+    :::image type="content" source="../media/6-function-called.png" alt-text="Output of the function being called.":::
 
 1. To test the URL generation, paste it from the console into a browser. It should show your current location.
 
