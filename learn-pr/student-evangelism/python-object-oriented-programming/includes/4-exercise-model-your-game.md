@@ -50,7 +50,7 @@ The preceding table tells the story of how the game progresses through different
    ```
 
    > [!TIP]
-   > - Paste the code into the terminal by using the contextual menu (mouse right-click).
+   > Use the contextual menu (mouse right-click) to paste code into the terminal.
   
 1. Give it the following content and save the file (<kbd>Ctrl+S</kbd> or <kbd>Command+S</kbd> on macOS):
 
@@ -61,7 +61,7 @@ The preceding table tells the story of how the game progresses through different
    ```
 
    > [!TIP]
-   > Use <kbd>Ctrl+V</kbd> to paste into the editor.
+   > Use <kbd>Ctrl+V</kbd> to paste code into the editor.
 
    You have the needed classes created for your game. Next, you need to think about what data you have and what class to place it on.
 
@@ -69,17 +69,17 @@ The preceding table tells the story of how the game progresses through different
 
    ```python
    class Participant:
-     def __init__(self):
-       self.points = 0
-       self.choice = ""
+       def __init__(self):
+           self.points = 0
+           self.choice = ""
 
    class GameRound:
 
    class Game:
-      def __init__(self):
-        self.endGame = False
-        self.participant = Participant()
-        self.secondParticipant = Participant()
+       def __init__(self):
+           self.endGame = False
+           self.participant = Participant()
+           self.secondParticipant = Participant()
 
    ```
 

@@ -90,9 +90,9 @@ Let's see an example of setting up attributes in a constructor:
 
 ```python
 class Elevator:
-  def __init__(self, starting_floor):
-    self.make = "The elevator company"
-    self.floor = starting_floor
+    def __init__(self, starting_floor):
+        self.make = "The elevator company"
+        self.floor = starting_floor
 
 # To create the object
 
@@ -113,9 +113,9 @@ To emphasize how the parameter `self` works, consider the following code in whic
 
 ```python
 class Car:
-  def __init__():
-    self.color = "Red" # ends up on the object
-    make = "Mercedes" # becomes a local variable in the constructor
+    def __init__():
+        self.color = "Red" # ends up on the object
+        make = "Mercedes" # becomes a local variable in the constructor
 
 car = Car()
 print(car.color) # "Red"

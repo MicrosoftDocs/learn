@@ -28,17 +28,17 @@ Here's your code so far. Let's extend it in the following steps:
 
    ```python
    class Participant:
-     def __init__(self):
-        self.points = 0
-        self.choice = ""
+       def __init__(self):
+           self.points = 0
+           self.choice = ""
     
    class GameRound:
     
    class Game:
-      def __init__(self):
-      self.endGame = False
-      self.participant = Participant()
-      self.secondParticipant = Participant()
+       def __init__(self):
+       self.endGame = False
+       self.participant = Participant()
+       self.secondParticipant = Participant()
    ```
 
 ### Start a game
@@ -49,35 +49,35 @@ The first part of the game involves setting it up, which means to instantiate th
 
     ```python
     class Participant:
-      def __init__(self, name):
-        self.name = name
-        self.points = 0
-        self.choice = ""
-      def choose(self):
-        self.choice = input("{name}, select rock, paper or scissor: ".format(name= self.name))
-        print("{name} selects {choice}".format(name=self.name, choice = self.choice))
+        def __init__(self, name):
+            self.name = name
+            self.points = 0
+            self.choice = ""
+        def choose(self):
+            self.choice = input("{name}, select rock, paper or scissor: ".format(name= self.name))
+            print("{name} selects {choice}".format(name=self.name, choice = self.choice))
     
     class GameRound:
-      def __init__(self, p1, p2):
-        p1.choose()
-        p2.choose()
-      def compareChoices(self):
-        print("implement")
-      def awardPoints(self):
-        print("implement")
+        def __init__(self, p1, p2):
+            p1.choose()
+            p2.choose()
+        def compareChoices(self):
+            print("implement")
+        def awardPoints(self):
+            print("implement")
     
     class Game:
-      def __init__(self):
-        self.endGame = False
-        self.participant = Participant("Spock")
-        self.secondParticipant = Participant("Kirk")
-      def start(self):
-        game_round = GameRound(self.participant, self.secondParticipant)
+        def __init__(self):
+            self.endGame = False
+            self.participant = Participant("Spock")
+            self.secondParticipant = Participant("Kirk")
+        def start(self):
+            game_round = GameRound(self.participant, self.secondParticipant)
     
-      def checkEndCondition(self):
-        print("implement")
-      def determineWinner(self):
-        print("implement")
+        def checkEndCondition(self):
+            print("implement")
+        def determineWinner(self):
+            print("implement")
     
     game = Game()
     game.start()
@@ -129,11 +129,11 @@ From the problem description, you read that certain choices beat other choices. 
 
 ```python
 if choice1 == "rock" and choice2 == "scissor":
-  return 1
+    return 1
 elif choice1 == "paper" and choice2 == "scissor":
-  return -1
+    return -1
 else:
-  # something else
+    # something else
 
 # and so on
 ```
@@ -152,9 +152,9 @@ You can implement the preceding table in Python by using a multidimensional arra
 
 ```python
 rules = [
- [0, -1, 1],
- [1, 0, -1],
- [-1, 1, 0]
+    [0, -1, 1],
+    [1, 0, -1],
+    [-1, 1, 0]
 ]
 
 rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
@@ -164,10 +164,10 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 
    ```python
      def toNumericalChoice(self):
-       switcher = {
-         "rock": 0,
-         "paper": 1,
-         "scissor": 2
+         switcher = {
+             "rock": 0,
+             "paper": 1,
+             "scissor": 2
        }
        return switcher[self.choice]
    ```
@@ -181,7 +181,7 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 
    ```python
      def compareChoices(self, p1, p2):
-       return self.rules[p1.toNumericalChoice()][p2.toNumericalChoice()]
+         return self.rules[p1.toNumericalChoice()][p2.toNumericalChoice()]
    ```
 
    The code will enable you to compare two choices and determine the winner.
@@ -190,12 +190,12 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 
    ```python
      def getResultAsString(self, result):
-       res = {
-         0: "draw",
-         1: "win",
-         -1: "loss"
-       }       
-       return res[result]
+         res = {
+             0: "draw",
+             1: "win",
+             -1: "loss"
+         }       
+         return res[result]
    ```
 
    This method will help determine the result and print an easy-to-understand text to the screen.
@@ -204,16 +204,16 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 
    ```python
      def __init__(self, p1, p2):
-       self.rules = [
-         [0, -1, 1],
-         [1, 0, -1],
-         [-1, 1, 0]
-       ]
+         self.rules = [
+             [0, -1, 1],
+             [1, 0, -1],
+             [-1, 1, 0]
+         ]
 
-       p1.choose()
-       p2.choose()
-       result = self.compareChoices(p1,p2)
-       print("Round resulted in a {result}".format(result = self.getResultAsString(result) ))
+         p1.choose()
+         p2.choose()
+         result = self.compareChoices(p1,p2)
+         print("Round resulted in a {result}".format(result = self.getResultAsString(result) ))
    ```
 
    The preceding code introduces the field `rules`, which contains an implementation of the rules for rock, paper, scissors. Additionally, the call to `self.compareChoices()` _compares_ the two choices made. Lastly, there's a row that prints reader-friendly results to the screen.
@@ -229,7 +229,7 @@ Scoring the game is about assigning points to the correct player after play has 
 
    ```python
      def incrementPoint(self):
-       self.points += 1
+         self.points += 1
    ```
 
    > [!TIP]
@@ -239,9 +239,9 @@ Scoring the game is about assigning points to the correct player after play has 
 
    ```python
       if result > 0:
-         p1.incrementPoint()
+          p1.incrementPoint()
       elif result < 0:
-         p2.incrementPoint()
+          p2.incrementPoint()
    ```
 
 > [!NOTE]
@@ -255,35 +255,35 @@ A continuation query is a question at the end of the game round asking the playe
 
    ```python
      def determineWinner(self):
-       resultString = "It's a Draw"
-       if self.participant.points > self.secondParticipant.points:
-         resultString = "Winner is {name}".format(name=self.participant.name)
-       elif self.participant.points < self.secondParticipant.points:
-         resultString = "Winner is {name}".format(name=self.secondParticipant.name)
-       print(resultString)
+         resultString = "It's a Draw"
+         if self.participant.points > self.secondParticipant.points:
+             resultString = "Winner is {name}".format(name=self.participant.name)
+         elif self.participant.points < self.secondParticipant.points:
+             resultString = "Winner is {name}".format(name=self.secondParticipant.name)
+         print(resultString)
    ```
 
 1. In the same class, update the method `checkEndCondition()`:
 
    ```python
      def checkEndCondition(self):
-       answer = input("Continue game y/n: ")
-       if answer == 'y':
-         GameRound(self.participant, self.secondParticipant)
-         self.checkEndCondition()
-       else:
-         print("Game ended, {p1name} has {p1points}, and {p2name} has {p2points}".format(p1name = self.participant.name, p1points= self.participant.points, p2name=self.secondParticipant.name, p2points=self.secondParticipant.points))
-         self.determineWinner()
-         self.endGame = True
+         answer = input("Continue game y/n: ")
+         if answer == 'y':
+             GameRound(self.participant, self.secondParticipant)
+             self.checkEndCondition()
+         else:
+             print("Game ended, {p1name} has {p1points}, and {p2name} has {p2points}".format(p1name = self.participant.name, p1points= self.participant.points, p2name=self.secondParticipant.name, p2points=self.secondParticipant.points))
+             self.determineWinner()
+             self.endGame = True
    ```
 
 1. In the same class, replace the code for the `start()` method with this code:
 
    ```python
      def start(self):
-       while not self.endGame:
-         GameRound(self.participant, self.secondParticipant)
-         self.checkEndCondition()
+         while not self.endGame:
+             GameRound(self.participant, self.secondParticipant)
+             self.checkEndCondition()
    ```
 
 1. Save the file.
