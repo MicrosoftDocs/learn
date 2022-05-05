@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/08/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "The cool access tier is for frequent access of objects in the storage account."
       isCorrect: false
-      explanation: "That's incorrect. The cool access tier is for infrequently used storage objects."
+      explanation: "Incorrect. The cool access tier is for infrequently used storage objects."
     - content: "The hot access tier is for storing large amounts of data that is infrequently accessed."
       isCorrect: false
-      explanation: "That's incorrect. The hot access tier is for frequently accessed storage objects."
+      explanation: "Incorrect. The hot access tier is for frequently accessed storage objects."
     - content: "The administrator can switch between hot and cool performance tiers at any time."
       isCorrect: true
-      explanation: "That's correct. The administrator can switch between hot and cool performance tiers at any time."
+      explanation: "Correct. The administrator can switch between hot and cool performance tiers at any time."
   - content: "Which of these changes between access tiers will happen immediately?"
     choices:
     - content: "Hot to Cool"
       isCorrect: true
-      explanation: "That's correct. Changes between hot and cool, and to archive, happen immediately."
+      explanation: "Correct. Changes between hot and cool, and to archive, happen immediately."
     - content: "Archive to Cool"
       isCorrect: false
-      explanation: "That's incorrect. Changes from the archive tier do not happen immediately."
+      explanation: "Incorrect. Changes from the archive tier don't happen immediately."
     - content: "Archive to Hot"
       isCorrect: false
-      explanation: "That's incorrect. Changes from the archive tier do not happen immediately."
+      explanation: "Incorrect. Changes from the archive tier don't happen immediately."
   - content: "Which of the following best describes blob object replication?"
     choices:
     - content: "Object replication doesn't require versioning to be enabled."
       isCorrect: false
-      explanation: "That's incorrect. Object replication requires that blob versioning be enabled on both the source and destination accounts."
+      explanation: "Incorrect. Object replication requires that blob versioning be enabled on both the source and destination accounts."
     - content: "Object replication doesn't support blob snapshots."
       isCorrect: true
-      explanation: "That's correct. Any snapshots on a blob in the source account are not replicated to the destination account."
+      explanation: "Correct. Any snapshots on a blob in the source account aren't replicated to the destination account."
     - content: "Object replication is supported in the archive tier."
       isCorrect: false
-      explanation: "That's incorrect. Object replication is supported when the source and the destination accounts are in the hot or cool tier."
+      explanation: "Incorrect. Object replication is supported when the source and the destination accounts are in the hot or cool tier."
