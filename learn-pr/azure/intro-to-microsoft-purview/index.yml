@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.intro-to-azure-purview
+uid: learn.intro-to-microsoft-purview
 metadata:
   moduleType: introduction        
   title: Introduction to Microsoft Purview          
@@ -44,11 +44,11 @@ products:
 - azure-purview
 
 units:
-- learn.intro-to-azure-purview.introduction
-- learn.intro-to-azure-purview.what-is-microsoft-purview
-- learn.intro-to-azure-purview.how-microsoft-purview-works
-- learn.intro-to-azure-purview.when-to-use-microsoft-purview
-- learn.intro-to-azure-purview.knowledge-check
-- learn.intro-to-azure-purview.summary
+- learn.intro-to-microsoft-purview.introduction
+- learn.intro-to-microsoft-purview.what-is-microsoft-purview
+- learn.intro-to-microsoft-purview.how-microsoft-purview-works
+- learn.intro-to-microsoft-purview.when-to-use-microsoft-purview
+- learn.intro-to-microsoft-purview.knowledge-check
+- learn.intro-to-microsoft-purview.summary
 badge:
   uid: learn.introduction-to-azure-purview.badge
