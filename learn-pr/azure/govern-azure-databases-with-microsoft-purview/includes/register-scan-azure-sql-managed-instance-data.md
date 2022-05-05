@@ -61,7 +61,7 @@ You can use one of the following authentication methods to access the Azure SQL 
 
   - For user-assigned managed identity, create the user managed identity and then assign this user identity to the Microsoft Purview account.
 
-  - For managed identity representing the Microsoft Purview account, configure permission on the Azure SQL Database managed instance. You also must create an Azure AD user account that will be mapped to the Azure AD managed identity and then assign it **db_datareader** permission. In addition, give your Microsoft Purview managed account permission to scan the Azure SQL Database managed instance either at subscription, resources group, or resource level.
+  - For managed identity representing the Microsoft Purview account, configure permission on the Azure SQL Managed Instance. You also must create an Azure AD user account that will be mapped to the Azure AD managed identity and then assign it **db_datareader** permission. In addition, give your Microsoft Purview managed account permission to scan the Azure SQL Managed Instance either at subscription, resources group, or resource level.
 
   - Microsoft Purview system-assigned managed identity is automatically created.
 
@@ -69,13 +69,13 @@ You can use one of the following authentication methods to access the Azure SQL 
 
   - Use an existing service principal or create a new service principal in Azure AD by creating a new app registration.
 
-  - The service principal needs permission on the Azure SQL Database managed instance.
+  - The service principal needs permission on the Azure SQL Managed Instance.
 
   - Use the same procedure as previously described for managed identity to create an Azure AD user account. Map it to the service principal and then assign it **db_datareader** permission.
 
 ### Steps to register a data source with Microsoft Purview Studio
 
-Use these steps in Microsoft Purview Studio to register a data source from an Azure SQL Database managed instance in an Microsoft Purview account:
+Use these steps in Microsoft Purview Studio to register a data source from an Azure SQL Managed Instance in an Microsoft Purview account:
 
 1. In the Azure portal, select your **Microsoft Purview** account, and then select **Microsoft Purview Studio**.
 
@@ -95,13 +95,13 @@ Use these steps in Microsoft Purview Studio to register a data source from an Az
     - **Endpoint**: Provide either the public or private endpoint fully qualified domain name and port number. For example: contosopurviewmi.public.41dff15771fa.database.windows.net, 3342
     - **Select a collection**: Select the existing collection (optional).
 
-1. To finish the registration of a data source hosted in an Azure SQL Database managed instance, select **Register**.
+1. To finish the registration of a data source hosted in an Azure SQL Managed Instance, select **Register**.
 
-## Scan an Azure SQL Database managed instance
+## Scan an Azure SQL Managed Instance
 
-Now that you have access to an Azure SQL Database managed instance, you can create a new scan that runs with a different schedule. You can organize multiple scans with different classification rules under a scan rule set.
+Now that you have access to an Azure SQL Managed Instance, you can create a new scan that runs with a different schedule. You can organize multiple scans with different classification rules under a scan rule set.
 
-To create this scan, follow this procedure, which is the same as the procedure previously described to scan an Azure SQL Database managed instance:
+To create this scan, follow this procedure, which is the same as the procedure previously described to scan an Azure SQL Managed Instance:
 
 1. To observe the collection hierarchy, in the Azure portal, select your **Microsoft Purview** account, select **Microsoft Purview Studio**, select **Data map**, and then select **Sources**.
 
