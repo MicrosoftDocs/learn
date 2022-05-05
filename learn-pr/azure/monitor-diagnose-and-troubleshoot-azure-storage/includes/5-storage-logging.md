@@ -1,7 +1,5 @@
 Azure Storage resource logs capture each operation performed in your storage account, as well as the outcome of these operations. These logs provide details about each request made rather than providing the minute-by-minute summary of operations that the metrics show. Using the logging information, you can examine the nature of requests made to a storage account and whether these requests are successful.
 
-In the example scenario, you've decided that you need to trace each file upload and download operation done against the new Customer Portal. Azure Storage resource logs  provide an ideal way to capture this information.
-
 In this unit, you'll learn about Azure Storage resource logs in Azure Monitor. You'll see the different types of information captured in logs, and how you might use this information to detect problems that might occur when an application uses Azure Storage.
 
 ## Resource Logs in Azure Monitor

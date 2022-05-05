@@ -1,7 +1,5 @@
 It's important to understand storage metrics so you know which metrics to examine and what these metrics indicate about the state of a storage account. Using Azure Storage metrics, you can analyze usage trends by your applications and diagnose possible issues with your storage account.
 
-The automobile parts distributor is experiencing issues with file uploads to the Customer Portal. Collecting metrics for the storage accounts the Automobile Distribution Customer Portal uses will let you visualize how storage requests are being processed, examine trends in performance, and spot any issues that might lead to failures in the application.
-
 In this unit, you'll learn about metrics in Azure Monitor, what information it reports on, and how you can use the metrics it provides to identify problems with how your applications are using Azure Storage.
 
 ## Understand metrics

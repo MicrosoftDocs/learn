@@ -1,5 +1,3 @@
-You've decided that the issues the new Customer Portal is experiencing could have something to do with the way files are stored or uploaded. You want to determine why the problem occurs by capturing the metrics for blob storage. You can use these metrics to find out how many errors occur, and whether the errors are associated with a particular time of day (possible peak periods), or some other factor.
-
 In this exercise, we'll use Azure portal and PowerShell to configure storage metrics for our storage account. We'll upload some files to Blob Storage, and then look at metrics in Metrics Explorer.
 
 ## Create a storage account

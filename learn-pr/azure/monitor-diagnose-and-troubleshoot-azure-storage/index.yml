@@ -3,7 +3,7 @@ uid: learn.monitor-diagnose-and-troubleshoot-azure-storage
 metadata:
   title: Monitor, diagnose, and troubleshoot your Azure Storage
   description: Monitor, diagnose, and troubleshoot your Azure Storage
-  ms.date: 11/15/2019
+  ms.date: 05/05/2021
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
@@ -13,11 +13,9 @@ summary: Discover the tools available to detect and correct problems with your A
 abstract: | 
   In this module, you will:
   - Identify the tools used to troubleshoot issues with Azure Storage
-  - Identify the metrics and logs that can be used to troubleshoot and diagnose storage performance
-  - Troubleshoot performance issues in Azure Storage
+  - Identify the metrics and logs that can be used to troubleshoot and diagnose storage issues
 prerequisites: | 
   - Basic familiarity with Azure Storage
-  - Ability to install software locally for troubleshooting purposes
 iconUrl: /learn/achievements/monitor-diagnose-and-troubleshoot-azure-storage.svg
 levels:
 - intermediate

@@ -1,4 +1,4 @@
-In the Customer Portal scenario, you've decided you need more detailed information on the operations in progress rather than just the metrics that summarize performance. In this exercise, you'll create a Log Analytics workspace, create a diagnostic setting that routes logs to that workspace, and then use a query to show activity in your storage account.
+In this exercise, you'll create a Log Analytics workspace, create a diagnostic setting that routes logs to that workspace, and then use a query to show activity in your storage account.
 
 ## Create a Log Analytics workspace
 
