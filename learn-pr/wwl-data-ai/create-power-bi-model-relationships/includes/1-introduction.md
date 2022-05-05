@@ -9,4 +9,4 @@ By the end of this module, you’ll be able to:
 - Understand how model relationship work.
 - Set up relationships.
 - Use DAX relationship functions.
-- Understand relationship evaluation.
+- Understand relationship evaluation. 
