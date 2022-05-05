@@ -84,7 +84,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
    > [!div class="mx-imgBorder"]
    > ![bar chart showing upload operations in Metrics Explorer](../media/4-chart-ingress.png)
 
-   Most likely, one upload operation requires multiple API calls (For example: a container listing operation). When you uploaded a file, the Azure portal made several API calls to complete the upload. You can use splitting and filtering to look closer at API calls, the bytes transferred by those calls etc. Splitting and filtering leverage metric dimensions to give you a finer grain view of your metrics. 
+   Most likely, one upload operation requires multiple API calls (For example: a container listing operation). When you uploaded a file, the Azure portal made several API calls to complete the upload. You can use splitting and filtering to look closer at API calls, the bytes transferred by those calls etc. Splitting and filtering leverage metric dimensions to give you a finer grain view of your metrics.
 
 ## Add a filter
 
