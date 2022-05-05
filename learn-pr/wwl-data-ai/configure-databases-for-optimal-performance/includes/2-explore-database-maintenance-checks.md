@@ -16,7 +16,7 @@ A rebuild can be either online or offline depending on the command executed or t
 
 The common guidance for index maintenance is:
 
-- **< 5% but < 30%** - Reorganize the index
+- **> 5% but < 30%** - Reorganize the index
 
 - **`>` 30%** - Rebuild the index
 
