@@ -26,13 +26,11 @@ roles:
   - administrator
   - solution-architect
   - technology-manager
-  - network-administrator
-products:
+ products:
   - azure
   - azure-virtual-network
   - azure-dns
-  - azure-dns-private-resolver
-units:
+ units:
 - learn.intro-to-azure-dns-private-resolver.introduction
 - learn.intro-to-azure-dns-private-resolver.what-is-azure-dns-private-resolver
 - learn.intro-to-azure-dns-private-resolver.how-azure-dns-private-resolver-works
