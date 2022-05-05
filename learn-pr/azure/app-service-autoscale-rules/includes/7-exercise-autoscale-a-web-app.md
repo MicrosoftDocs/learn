@@ -129,9 +129,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. In the Azure portal, return to your web app.
 
-1. Under **Settings**, select **Scale out (App Service plan)**, and then select **Enable autoscale**.
+1. Under **Settings**, select **Scale out (App Service plan)**, and then select **Custom autoscale**.
 
-1. In the default autoscale rule, verify that the scale mode is set to **Scale based on a metric**, and then select **Add a rule**.
+1. In the **Default** autoscale rule, verify that the scale mode is set to **Scale based on a metric**, and then select **Add a rule**.
 
     ![Screenshot of the web app in the Azure portal while configuring autoscaling.](../media/7-add-rule-annotated.png)
 

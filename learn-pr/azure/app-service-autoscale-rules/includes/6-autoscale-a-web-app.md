@@ -4,18 +4,18 @@ In this unit, you'll see how to enable autoscaling, create autoscale rules, and 
 
 ## Enable autoscaling
 
-You modify the App Service Plan for a web app to implement autoscaling. An App Service Plan has scale-out settings that you use to enable autoscaling, add autoscaling conditions, and define autoscale rules.
+You modify the App Service Plan for a web app to enable autoscaling. An App Service Plan has scale-out settings that you use to select manual or custom autoscaling, add autoscaling conditions, and define autoscale rules.
 
 > [!NOTE]
 > Not all pricing tiers support autoscaling. The development pricing tiers are either limited to a single instance (the **F1** and **D1** tiers), or they only provide manual scaling (the **B1** tier). If you've selected one of these tiers, you must first scale up to the **S1** or any of the **P** level production tiers.
 
-You enable autoscaling with the **Enable autoscale** button on the **Scale out** page for an App Service Plan.
+You implement autoscaling by selecting and configuring a **Manual scale** or **Custom autoscale** on the **Scale out** page for an App Service Plan.
 
-![Screenshot of the Scale Out page for an App Service Plan with the **Enable autoscale** button highlighted.](../media/6-enable-autoscale-annotated.png)
+![Screenshot of the Scale Out page for an App Service Plan with the **Manual scale** button highlighted.](../media/6-enable-autoscale-annotated.png)
 
 ## Add scale conditions
 
-Once you enable autoscaling, you can edit the default scale condition, and you can add your own custom scale conditions. Remember that each scale condition can either scale based on a metric, or scale to a specific instance count.
+When you implement autoscaling, you can edit the default scale condition, and you can add your own custom scale conditions. Remember that each scale condition can either scale based on a metric, or scale to a specific instance count.
 
 ![Screenshot of the condition page for an App Service Plan showing the default scale condition.](../media/6-scale-condition-annotated.png)
 
@@ -33,12 +33,12 @@ The Azure portal enables you to track when autoscaling has occurred through the 
 
 ![Screenshot of the metrics shown on the App Service Plan overview page.](../media/6-run-history.png)
 
-You can use the **Run history** chart in conjunction with the metrics shown on the **Overview** page to correlate the autoscaling events with resource utilization.
+You can use the **Run history** chart with the metrics shown on the **Overview** page to correlate the autoscaling events with resource utilization.
 
 ![Screenshot of the metrics shown on the App Service Plan overview page, showing the correlation between autoscaling events with resource utilization.](../media/6-service-plan-metrics.png)
 
 ## Disable autoscaling
 
-To disable autoscaling, you can select the **Disable autoscale** option on the **Scale out** page of the App Service Plan. Autoscaling is also disabled if you delete all of the autoscale conditions, including the default condition.
+To disable autoscaling, select **Custom autoscale** on the **Scale out** page of the App Service Plan. Then, select the **Disable autoscale** option on the **Default** pane.
 
 ![Screenshot of the Scale Out page of an App Service Plan with the **Disable autoscale** button highlighted.](../media/6-disable-autoscale-annotated.png)
