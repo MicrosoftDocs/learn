@@ -27,7 +27,7 @@ products:
 - power-bi
 units:
 - learn.wwl.create-power-bi-model-relationships.introduction
-- learn.demo-interact-with-a-computer.demo-introduction
+- learn.wwl.understand-model-relationships.md
 - learn.wwl.create-power-bi-model-relationships.setup-relationships
 - learn.wwl.create-power-bi-model-relationships.use-dax-relationship-functions
 - learn.wwl.create-power-bi-model-relationships.understand-relationship-evaluation

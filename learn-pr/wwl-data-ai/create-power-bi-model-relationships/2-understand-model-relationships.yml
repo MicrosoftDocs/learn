@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.demo-interact-with-a-computer.demo-introduction
+uid: learn.wwl.understand-model-relationships.md
 title: Understand model relationships
 metadata:
-  title: Demo-Introduction
+  title: Understand model relationships
   description: "Understand model relationships"
   ms.date: 05/05/2022
-  author: benjiang
+  author: wwlpublishing
   ms.author: benjiang
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
