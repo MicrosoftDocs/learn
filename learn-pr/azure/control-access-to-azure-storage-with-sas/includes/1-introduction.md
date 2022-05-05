@@ -1,6 +1,6 @@
 The Azure Storage platform is Microsoft's cloud storage solution for modern data storage solution. Azure Blob Storage is Microsoft's object storage solution for the cloud, and is optimized for storing massive amounts of unstructured data. Every request to access files stored in Azure requires authorization. A shared access signature (SAS) provides secure, delegated access to resources in your storage account. 
 
-You work for a healthcare organization that stores patient diagnostic images in blob storage. These images are highly sensitive, and you are developing an application for securely storing and securely accessing content. You're updating your application to integrate with other providers, and you want to authorize access to the images by using a SAS.
+You work for a healthcare organization that stores patient diagnostic images in blob storage. These images are highly sensitive, and you're developing an application for securely storing and securely accessing content. You're updating your application to integrate with other providers, and you want to authorize access to the images by using a SAS.
 
 In this module, you'll explore the options available to authorize access to your Azure storage, focusing on SAS and its different variants. You'll deploy a web app that uses a storage account and enhance the web app to use a SAS.
 
