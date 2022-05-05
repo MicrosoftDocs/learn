@@ -80,7 +80,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
    The following image shows a bar for every file upload operation in the last hour.
 
    > [!div class="mx-imgBorder"]
-   > ![bar chart showing upload operations in Metrics Explorer](../media/4-chart-ingress.png)
+   > ![Screenshot of a bar chart showing upload operations in Metrics Explorer.](../media/4-chart-ingress.png)
 
 ## Split a metric
 
@@ -93,7 +93,7 @@ Splitting a metric enables you to view additional dimensions in the data. For ea
    View the output in the chart window. The following image shows bytes transferred by API call.
 
    > [!div class="mx-imgBorder"]
-   > ![Bytes transferred by API call in Metrics Explorer](../media/4-bar-chart-option-split-chart.png)
+   > ![Screenshot that shows bytes transferred by API call in Metrics Explorer.](../media/4-bar-chart-option-split-chart.png)
 
 ## Add a filter
 
@@ -108,6 +108,6 @@ Filtering enables you to look at the metrics with greater granularity. You can u
    The chart shows bars that represent the REST call to the **Put Blob** API.
 
    > [!div class="mx-imgBorder"]
-   > ![bar chart showing put operations associated with the upload in Metrics Explorer](../media/4-bar-chart-option-put-operations.png)
+   > ![Screenshot of a bar chart showing put operations associated with the upload in Metrics Explorer.](../media/4-bar-chart-option-put-operations.png)
 
 4. Select the **X** to the right of the filter oval to remove the filter.

@@ -19,21 +19,21 @@ Azure Monitor collects numeric data (*metrics*) from your storage account and ma
 You can obtain snapshot view of common metrics by opening the **Monitoring** tab of the storage account **Overview** page. The following image shows an example that includes the ingress and egress for a storage account:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Monitoring tab of the overview page for a storage account in the Azure portal](../media/2-block-blob-metrics.png)
+> ![Screenshot of the Monitoring tab of the overview page for a storage account in the Azure portal.](../media/2-block-blob-metrics.png)
 
 ### Custom dashboards
 
 You can create **dashboards** and add charts that closely monitor key metrics, such as latency or the number of transactions being processed. You can also present other information from your Azure subscription, such as virtual machine information or other web-based content, such as notices or video content. These dashboards can be shared with other users in your Azure Active Directory organization. The following image shows an example dashboard.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of a custom dashboard in the Azure portal](../media/2-metric-dashboard.png)
+> ![Screenshot of a custom dashboard in the Azure portal.](../media/2-metric-dashboard.png)
 
 ### Storage insights
 
 Storage insights provide a unified view of your Azure Storage services performance, capacity, and availability. You can observe storage capacity, and performance in two ways, view directly from a storage account or view from Azure Monitor to see across groups of storage accounts.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of storage insights in the Azure portal](../media/2-storage-insights.png)
+> ![Screenshot of storage insights in the Azure portal.](../media/2-storage-insights.png)
 
 ### Tools and SDKs
 
@@ -54,7 +54,7 @@ Resource logs (commonly referred to as *diagnostic logs*) capture detailed infor
 If you route logs to Log Analytics, then you review log data by running queries in the Azure portal. You can use predefined queries, modify predefined queries or write new custom queries.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of query pane in the Azure portal](../media/2-log-analytic-queries.png)
+> ![Screenshot of query pane in the Azure portal.](../media/2-log-analytic-queries.png)
 
 
 ### Tools that process archived logs

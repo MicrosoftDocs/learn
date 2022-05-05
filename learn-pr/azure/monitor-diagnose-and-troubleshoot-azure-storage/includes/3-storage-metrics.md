@@ -41,12 +41,12 @@ The previous unit presented different ways to view metrics in the Azure portal. 
 The following image shows a metric configuration that gets the total number of transactions in the past 24 hours. Each data point reflects 15 minutes of data.
 
 > [!div class="mx-imgBorder"]
-> ![Getting a transaction metric in Metrics Explorer](../media/3-metrics-explorer-transactions.png)
+> ![Screenshot that shows getting a transaction metric in Metrics Explorer.](../media/3-metrics-explorer-transactions.png)
 
 The following image shows the API dimension being used to get only read transactions.
 
 > [!div class="mx-imgBorder"]
-> ![Applying a dimension in Metrics Explorer](../media/3-metrics-explorer-transactions-api-dimension.png)
+> ![Screenshot that shows applying a dimension in Metrics Explorer.](../media/3-metrics-explorer-transactions-api-dimension.png)
 
 ### Command line and scripts
 
