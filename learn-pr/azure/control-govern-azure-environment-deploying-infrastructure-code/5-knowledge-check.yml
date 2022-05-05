@@ -47,6 +47,6 @@ quiz:
     - content: PIM enables users to use a separate account to access your Azure environment with higher permissions than they usually have.
       isCorrect: false
       explanation: Incorrect. Unlike break-glass accounts, PIM doesn't require a separate user account.
-    - content: PIM enables users to request that that their accounts are temporarily granted higher permissions than they usually have.
+    - content: PIM enables users to request that their accounts are temporarily granted higher permissions than they usually have.
       isCorrect: true
       explanation: Correct. PIM allows users to use their own user accounts and identities, with a set of additional permissions granted temporarily.
