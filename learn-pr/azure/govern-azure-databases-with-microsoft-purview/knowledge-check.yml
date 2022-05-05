@@ -26,17 +26,17 @@ quiz:
     - content: "Create a firewall rule on the Microsoft Purview account to open the **1433 TCP** port."
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview is a managed service and can integrate data sources by using private or public endpoints. Individual firewall rules can't be set up on an Microsoft Purview account."
-  - content: "Which of the following authentication methods can be used to authenticate and scan an Azure SQL Database managed instance?"
+  - content: "Which of the following authentication methods can be used to authenticate and scan an Azure SQL Managed Instance?"
     choices:
     - content: "Windows integrated authentication"
       isCorrect: false
-      explanation: "Incorrect. Windows integrated authentication can't be used to set up proper credentials for authenticating the Azure SQL Database managed instance."
+      explanation: "Incorrect. Windows integrated authentication can't be used to set up proper credentials for authenticating the Azure SQL Managed Instance."
     - content: "SQL authentication"
       isCorrect: true
-      explanation: "Correct. SQL authentication can be configured for a credential object used to scan the data source for an Azure SQL Database managed instance."
+      explanation: "Correct. SQL authentication can be configured for a credential object used to scan the data source for an Azure SQL Managed Instance."
     - content: "Authentication using an Azure AD user."
       isCorrect: false
-      explanation: "Incorrect. Authentication using a user from Azure AD can't be used to set up proper credentials for authenticating the Azure SQL Database managed instance."
+      explanation: "Incorrect. Authentication using a user from Azure AD can't be used to set up proper credentials for authenticating the Azure SQL Managed Instance."
   - content: "To govern the Azure SQL Database that's integrated using a private endpoint with a virtual network, the decision is made to use self-hosted integration runtime. Where can the self-hosted integration runtime be deployed?"
     choices:
     - content: "As a container instance"
