@@ -21,35 +21,35 @@ The preceding description can be translated into this updated rules table:
 1. Locate the `Participant` class, and update the method `toNumericalChoice()` to look like so:
 
    ```python
-    def toNumericalChoice(self):
-        switcher = {
-            "rock": 0,
-            "paper": 1,
-            "scissor": 2,
-            "lizard": 3,
-            "spock": 4
-        }
-        return switcher[self.choice]
+       def toNumericalChoice(self):
+           switcher = {
+                "rock": 0,
+                "paper": 1,
+                "scissor": 2,
+                "lizard": 3,
+                "spock": 4
+           }
+           return switcher[self.choice]
    ```
 
 1. Locate the `GameRound` class. In the `__init__()` method, change the `self.rules` variable to this code:
 
    ```python
-        self.rules = [
-            [0, -1, 1, 1, -1],
-            [1, 0, -1, -1, 1],
-            [-1, 1, 0, 1, -1],
-            [-1, 1, -1, 0, 1],
-            [1, -1, 1, -1, 0]
-        ]
+           self.rules = [
+               [0, -1, 1, 1, -1],
+               [1, 0, -1, -1, 1],
+               [-1, 1, 0, 1, -1],
+               [-1, 1, -1, 0, 1],
+               [1, -1, 1, -1, 0]
+           ]
    ```
 
 1. Locate the `Participant` class. Update the method `choose` to include the new options: 
 
    ```python
-     def choose(self):
-       self.choice = input("{name}, select rock, paper, scissor, lizard or Spock: ".format(name= self.name))
-       print("{name} selects {choice}".format(name=self.name, choice = self.choice))
+       def choose(self):
+           self.choice = input("{name}, select rock, paper, scissor, lizard or Spock: ".format(name= self.name))
+           print("{name} selects {choice}".format(name=self.name, choice = self.choice))
    ```
 
 
