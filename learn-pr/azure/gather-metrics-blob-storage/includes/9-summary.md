@@ -1,4 +1,4 @@
-In this module, you viewed Azure Blob Storage metric information in the Azure portal. You then created custom dashboards in the Azure portal. For a more comprehensive learn module that helps you use both metrics as storage logs to troubleshoot issues, see [monitor-diagnose-and-troubleshoot-azure-storage](monitor-diagnose-and-troubleshoot-azure-storage/index.yml).
+In this module, you viewed Azure Blob Storage metric information in the Azure portal. You then created custom dashboards in the Azure portal. For a more comprehensive learn module that helps you use both metrics as storage logs to troubleshoot issues, see [monitor-diagnose-and-troubleshoot-azure-storage](../../monitor-diagnose-and-troubleshoot-azure-storage/index.yml).
 
 ## Learn more
 

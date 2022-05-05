@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure
+- azure-storage
+- azure-blob-storage
 units:
 - learn.azure.gather-metrics-from-blob-storage.1-introduction
 - learn.azure.gather-metrics-from-blob-storage.2-viewing-blob-metrics-in-azure-portal
