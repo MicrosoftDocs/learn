@@ -20,13 +20,13 @@ prerequisites: |
   - Knowledge of DNS
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - intermediary
+  - beginner
 roles:
   - developer
   - administrator
   - solution-architect
   - technology-manager
-  - network administrator
+  - network-administrator
 products:
   - azure
   - azure-virtual-network
@@ -34,9 +34,9 @@ products:
   - azure-dns-private-resolver
 units:
 - learn.intro-to-azure-dns-private-resolver.introduction
-- learn.intro-to-azure-dns-private-resolver.what-is-{product}
-- learn.intro-to-azure-dns-private-resolver.how-{product}-works
-- learn.intro-to-azure-dns-private-resolver.when-to-use-{product}
+- learn.intro-to-azure-dns-private-resolver.what-is-azure-dns-private-resolver
+- learn.intro-to-azure-dns-private-resolver.how-azure-dns-private-resolver-works
+- learn.intro-to-azure-dns-private-resolver.when-to-use-azure-dns-private-resolver
 - learn.intro-to-azure-dns-private-resolver.knowledge-check
 - learn.intro-to-azure-dns-private-resolver.summary
 badge:
