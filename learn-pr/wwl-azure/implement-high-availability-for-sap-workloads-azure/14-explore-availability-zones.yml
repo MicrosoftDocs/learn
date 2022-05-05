@@ -4,13 +4,13 @@ title: Explore Availability Zones
 metadata:
   title: Explore Availability Zones
   description: "Explore Availability Zones"
-  ms.date: 10/21/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 9
+durationInMinutes: 7
 content: |
   [!include[](includes/14-explore-availability-zones.md)]
