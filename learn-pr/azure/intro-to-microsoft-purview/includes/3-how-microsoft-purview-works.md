@@ -1,24 +1,24 @@
-Here is where we will take a look at how Microsoft Purview works, behind the scenes. You'll learn the core operational theory behind the functioning of Microsoft Purview for mapping and scanning your data sources. The key areas we will focus on include:
+Here's where we'll take a look at how Microsoft Purview works, behind the scenes. You'll learn the core operational theory behind the functioning of Microsoft Purview for mapping and scanning your data sources. The key areas we'll focus on include:
 
 * Loading Data in the Data Map
 * Browse and Search Information
 
 ## Loading data in the Data Map
 
-The Purview Data Map is a unified map of your data assets and their relationships that enable more effective governance for your data estate. It is a knowledge graph that is the underpinning for the Purview Data Catalog and all the features that it has to offer. It is scalable and robust to meet your enterprise compliance requirements.
+The Purview Data Map is a unified map of your data assets and their relationships that enable more effective governance for your data estate. It's a knowledge graph that is the underpinning for the Purview Data Catalog and all the features that it has to offer. It's scalable and robust to meet your enterprise compliance requirements.
 
 ### Sourcing data
-Sourcing your data starts with a process where you register data sources. Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You register the various data sources so Microsoft Purview is aware of them. The data remains in its location and is not migrated to any other platform.
+Sourcing your data starts with a process where you register data sources. Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You register the various data sources so Microsoft Purview is aware of them. The data remains in its location and isn't migrated to any other platform.
 
 Registering a data source is done from within the Azure portal. Once you have a Microsoft Purview service configured in Azure, you use the Microsoft Purview governance portal to register your data sources.
 
 :::image type="content" source="../media/purview-studio.png" alt-text="Screenshot depicting the basic Microsoft Purview governance portal screen. We see the name of the Purview account along with options to select which include Knowledge center, Register sources, Browse assets, and Manage glossary.":::
 
-Each type of data source you choose, will require specific information to complete the registration. For example, if your data sources reside in your Azure subscription, you will choose the necessary subscription and storage account name.  The following image is an example of choosing an Azure Blob Storage source.
+Each type of data source you choose, will require specific information to complete the registration. For example, if your data sources reside in your Azure subscription, you'll choose the necessary subscription and storage account name.  The following image is an example of choosing an Azure Blob Storage source.
 
 :::image type="content" source="../media/register-sources-form.png" alt-text="Screenshot depicting the dialog to register an Azure Blob Storage source for Microsoft Purview. The dialog has entries for a name, Azure subscription name and storage account name, an endpoint, and a collection to add the source to.":::
 
-Each data source will have specific requirements for authenticating and configuration, to permit scanning of the assets in that data source. If you have data stored in an Amazon S3 standard bucket, you will need to provide configuration for the connection. For this service, use Purview to provide a Microsoft account with secure access to AWS, where the Purview scanner will run. The Purview scanner uses this access to your Amazon S3 buckets to read your data, and then reports the scanning results, including only the metadata and classification, back to Azure. Use the Purview classification and labeling reports to analyze and review your data scan results.
+Each data source will have specific requirements for authenticating and configuration, to permit scanning of the assets in that data source. If you have data stored in an Amazon S3 standard bucket, you'll need to provide configuration for the connection. For this service, use Purview to provide a Microsoft account with secure access to AWS, where the Purview scanner will run. The Purview scanner uses this access to your Amazon S3 buckets to read your data, and then reports the scanning results, including only the metadata and classification, back to Azure. Use the Purview classification and labeling reports to analyze and review your data scan results.
 
 > [!NOTE]
 > Check the [Microsoft Purview connector for Amazon S3 documentation](/azure/purview/register-scan-amazon-s3) for region support related to AWS S3 sources.
@@ -35,12 +35,12 @@ A data map is the foundational platform for Microsoft Purview. Data Map = Data a
 
 Collections are a way of grouping data assets into logical collections (Categories), to simplify management and discovery of assets within the catalog.
 
-Selecting the Map view displays the data sources in a graphical view, along with the collections you have created for them.
+Selecting the Map view displays the data sources in a graphical view, along with the collections you've created for them.
 
-:::image type="content" source="../media/data-map-collections.png" alt-text="Screenshot depicting map view of the sources window in the Microsoft Purview governance portal. There are three collections listed, each with a single data source, and two other data sources that are not assigned to a collection.":::
+:::image type="content" source="../media/data-map-collections.png" alt-text="Screenshot depicting map view of the sources window in the Microsoft Purview governance portal. There are three collections listed, each with a single data source, and two other data sources that aren't assigned to a collection.":::
 
 ### Scanning data
-Once you have your data sources registered, you will need to run a scan to be able to access the metadata and browse the asset information. You configure scan rules for the data you want to scan. In a Microsoft Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization.
+Once you have your data sources registered, you'll need to run a scan to be able to access the metadata and browse the asset information. You configure scan rules for the data you want to scan. In a Microsoft Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization.
 
 A scan rule set is a container for grouping a set of scan rules together so that you can easily associate them with a scan. A scan rule set lets you select file types for schema extraction and classification, and it also let’s you define new custom file types. For example, you might create a default scan rule set for each of your data source types, and then use these scan rule sets by default for all scans within your company. You might also want users with the right permissions to create other scan rule sets with different configurations based on business need.
 
@@ -62,14 +62,14 @@ You can also select the file types to include in the scan. The file types will b
 * ORC
 * Document file types (.doc, pdf, xls, etc.)
 
-You can select which system and custom classification rules you want to run. The system classification rules are the same as the sensitive information types in Microsoft 365, which will let you extend your sensitivity labeling policies in the Microsoft 365 Compliance Center to Microsoft Purview supported stores.
+You can select which system and custom classification rules you want to run. The system classification rules are the same as the sensitive information types in Microsoft 365, which will let you extend your sensitivity labeling policies in the Microsoft Purview compliance portal to Microsoft Purview supported stores.
 
 ### Classification
 Metadata is used to help describe the data that is being scanned and made available in the catalog. During the configuration of a scan set, you can specify classification rules to apply during the scan that will also serve as metadata. The classification rules fall under five major categories:
 
 * Government - covers attributes such as government identity cards, driver license numbers, passport numbers, etc.
 * Financial - covers attributes such as bank account numbers or credit card numbers.
-* Personal - personally identifiable information such as a person's age, date of birth, email address, phone number, etc.
+* Personal - personal information such as a person's age, date of birth, email address, phone number, etc.
 * Security - attributes like passwords that may be stored.
 * Miscellaneous - attributes not covered in the other categories.
 
