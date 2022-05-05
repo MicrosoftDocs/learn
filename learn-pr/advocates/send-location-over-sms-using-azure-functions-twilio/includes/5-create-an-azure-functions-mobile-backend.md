@@ -4,19 +4,17 @@ At this point, the app is working to get the user's location and is ready to be 
 
 1. Right-click on the `ImHere` solution and select *Add > New Project...*.
 
-1. From the tree on the left-hand side, select *Visual C# > Cloud*, and then select *Azure Functions* from the panel in the center.
+1. Search for *Azure Functions*, select it, and click **Next**.
 
-1. Name the project "ImHere.Functions", and then click **OK**.
+1. Name the project "ImHere.Functions", and then click **Create**.
 
-    ![Screenshot of the Add New Project dialog with the Visual C#, Cloud option highlighted.](../media/5-add-new-functions-project.png)
+    :::image type="content" source="../media/5-add-new-functions-project.png" alt-text="Screenshot of the Add New Project dialog.":::
 
 1. The **New Project** configuration dialog will appear, and it may show a spinner in the bottom-left whilst loading updated templates. If you see this, wait until this has finished loading, then if updated templates are available, click the **Refresh** option that will appear to ensure you get the latest Function templates.
 
-    ![The new project dialog loading the latest templates.](../media/5-loading-templates.png)
+1. In the **New Project** configuration dialog, ensure the Functions version is set to *.NET 6*. Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the authorization level to *Anonymous*. Then click **Create**.
 
-1. In the **New Project** configuration dialog, ensure the Functions version is set to *Azure Functions v2 (.NET Standard)* (**NOT** _v1 (.NET Framework)_). Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the access rights to *Anonymous*. Then click **OK**.
-
-    ![The Azure Functions project configuration dialog.](../media/5-configure-trigger.png)
+    :::image type="content" source="../media/5-configure-trigger.png" alt-text="The Azure Functions project configuration dialog.":::
 
     The new project will be created and have a default function called `Function1`.
 
@@ -53,17 +51,19 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Create a new project under the `ImHere` solution by right-clicking on the solution and selecting *Add > New Project...*.
 
-1. From the tree on the left-hand side, select *Visual C# > .NET Standard*, and then select *Class Library (.NET Standard)* from the panel in the center.
+1. Search for *Class Library (.NET Standard)*, select it, and click **Next**.
 
-1. Name the project "ImHere.Data", and then click **OK**.
+    :::image type="content" source="../media/5-add-new-net-standard-project.png" alt-text="Screenshot of the Add New Project dialog with the Class Library option highlighted.":::
 
-    ![Screenshot of the Add New Project dialog with the Visual C#, .NET Standard option highlighted.](../media/5-add-new-net-standard-project.png)
+1. Name the project "ImHere.Data", and then click **Next**.
+
+1. For the Class Library Framework, select *.NET Standard 2.0*, and then click **Create**.
 
 1. Delete the auto-generated "Class1.cs" file.
 
 1. Right-click on the `ImHere.Data` project and select *Add > Class...* to create a new class.
 
-1. Name the new class "PostData" and click **OK**. Mark this new class as `public`.
+1. Name the new class "PostData" and click **Add**. Mark this new class as `public`.
 
 1. Add `double` properties for the latitude and longitude, as well as a `string[]` property for the phone numbers to send to.
 
@@ -78,7 +78,7 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Add a reference to this project in both the `ImHere.Functions` and `ImHere` projects by right-clicking on the project and then selecting *Add->Reference...*. Select *Projects* from the tree on the left-hand side, and then check the box next to *ImHere.Data*.
 
-    ![Configuring project references.](../media/5-configure-project-references.png)
+    :::image type="content" source="../media/5-configure-project-references.png" alt-text="Configuring project references.":::
 
 ## Read the data sent to the function
 
@@ -113,7 +113,7 @@ In the Azure Functions, the `req` parameter contains the HTTP request that was m
 
 The complete function is shown below.
 
-  ```cs 
+  ```cs
 
     using System.IO;
     using Microsoft.AspNetCore.Mvc;
@@ -153,7 +153,7 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 1. From the *Debug* menu, select *Start Without Debugging*. The local Azure Functions runtime will launch inside a console window and start your function, listening on an available port on `localhost`. If you see a dialog asking for firewall access, allow access to private networks (the default option).
 
-    ![The Azure Functions running locally.](../media/5-function-running-locally.png)
+    :::image type="content" source="../media/5-function-running-locally.png" alt-text="The Azure Functions running locally.":::
 
 1. Take a note of the port that the function is listening on. You'll need this in the next unit to test out the mobile app. In the image above, the function is listening on port **7071**.
 

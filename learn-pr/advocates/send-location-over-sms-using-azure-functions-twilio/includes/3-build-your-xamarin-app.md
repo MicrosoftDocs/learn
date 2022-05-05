@@ -88,9 +88,11 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
      ```
 
 1. Make this class public and derive from `BaseViewModel`.
+
     ```cs
        public class MainViewModel : BaseViewModel
     ```
+
 1. Add two `string` properties, `PhoneNumbers` and `Message`, each with a backing field. In the property setter, use the base class `Set` method to update the value and raise the `PropertyChanged` event.
 
    ```cs
@@ -196,6 +198,7 @@ Xamarin.Forms UIs can be built using XAML.
         <Editor Text="{Binding PhoneNumbers}" HeightRequest="100"/>
     </StackLayout>
     ```
+
     - The `Editor` control will be used to add phone numbers, and the `Label` above describes the purpose of this field to the user.
     - The `StackLayout` child controls stack either horizontally or vertically in the order in which the controls are added, so adding the `Label` first will put it above the `Editor`.
     - `Editor` controls are multi-line entry controls, allowing the user to enter multiple phone numbers, one per line.
@@ -219,7 +222,7 @@ Xamarin.Forms UIs can be built using XAML.
     ```
 
     The full code for this page is below.
-    
+
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -244,9 +247,8 @@ Xamarin.Forms UIs can be built using XAML.
 
     > [!NOTE]
     > When you compile this app, you will see a warning about `SendLocation` lacking `await` modifiers. You can ignore this warning as this will be resolved once more code is added to this method in the next unit.
-    
-    
-    ![The new app UI.](../media/3-new-ui.png)
+
+    :::image type="content" source="../media/3-new-ui.png" alt-text="The new app UI.":::
 
 ## Summary
 
