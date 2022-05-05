@@ -1,4 +1,4 @@
-As you deploy, use, and manage Azure SQL resources, you'll use a variety of interfaces and tools. In this unit, we'll look at the tools available, their capabilities, and when to use them.  
+As you deploy, use, and manage Azure SQL resources, you'll use a variety of interfaces and tools. In this unit, we'll look at the available tools, their capabilities, and when to use them.
 
 ### Azure portal  
 
@@ -20,7 +20,7 @@ Azure Data Studio is an open-source, cross-platform tool for querying and workin
 
 ### Languages and APIs  
 
-Because all Azure SQL services are based on the SQL Server engine, Azure SQL supports the Transact-SQL (T-SQL) language and the Tabular Data Stream (TDS) protocol. So all drivers that normally work with SQL Server work with Azure SQL.
+Because all Azure SQL services are based on the SQL Server engine, Azure SQL supports the Transact-SQL (T-SQL) language and the Tabular Data Stream (TDS) protocol. That means all drivers that normally work with SQL Server work with Azure SQL.
 
 Azure SQL also supports REST APIs for the management of SQL managed instances and SQL databases.
 

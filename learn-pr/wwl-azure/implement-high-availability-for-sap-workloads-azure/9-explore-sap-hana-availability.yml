@@ -4,13 +4,13 @@ title: Explore SAP HANA availability
 metadata:
   title: Explore SAP HANA availability
   description: "Explore SAP HANA availability"
-  ms.date: 10/21/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 9
+durationInMinutes: 6
 content: |
   [!include[](includes/9-explore-sap-hana-availability.md)]
