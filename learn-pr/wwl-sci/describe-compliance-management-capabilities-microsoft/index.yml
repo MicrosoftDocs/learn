@@ -3,17 +3,18 @@ uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
   title: Describe the Service Trust Portal and privacy at Microsoft
   description: "Describe the Service Trust Portal and privacy at Microsoft"
-  ms.date: 05/03/2022
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe the Service Trust Portal and privacy at Microsoft
-summary: Microsoft Cloud services are built on a foundation of trust, security, and compliance. The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance.
+summary: Microsoft runs on trust! Here you’ll explore the Service Trust Portal for content on how Microsoft delivers on our commitment of trust.  You’ll also learn about Microsoft Priva, a solution to help meet privacy goals.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the information available in the Service Trust Portal
-  - Describe Microsoft Privacy principles
+  - Describe the offerings of the Service Trust Portal.
+  - Describe Microsoft's Privacy principles.
+  - Describe Microsoft Priva.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.

@@ -5,7 +5,7 @@ From the main menu, you access:
   :::image type="content" source="../media/stp-top-nav-bar-inline.png" lightbox="../media/stp-top-nav-bar-expanded.png" alt-text="Service Trust Portal top navigation bar":::
 
 - **Service Trust Portal** –  This link provides a quick way to get back to the home page for the Service Trust Portal.
-- **Compliance Manager** – This link currently directs users to Compliance Manager in the Microsoft Purview compliance portal.  Users are encouraged to use the Microsoft Purview compliance portal for access to Compliance Manager and other compliance management capabilities in Microsoft 365. To find out more, see the Microsoft Compliance Manager documentation in the Learn More section of the Summary and resources unit.
+- **Compliance Manager** – This link currently directs users to Compliance Manager in the Microsoft Purview compliance portal.  Users are encouraged to use the Microsoft Purview compliance portal for access to Compliance Manager and other compliance management capabilities in Microsoft 365. To find out more, see the Compliance Manager documentation in the Learn More section of the Summary and resources unit.
 - **Trust Documents** – Trust Documents provides a wealth of security implementation and design information with the goal of making it easier for organizations to meet regulatory compliance objectives, by understanding how Microsoft Cloud services keep customer data secure. To review content, select one of the following options on the Trust Documents pull-down menu.
     - **Audit Reports** provides a list of independent audit and assessment reports on Microsoft's Cloud services is displayed. These reports provide information about Microsoft Cloud services compliance with data protection standards and regulatory requirements.
     - **Data Protection** contains a wealth of resources such as audited controls, white papers, FAQs, penetration tests, risk assessment tools, and compliance guides.
@@ -17,9 +17,9 @@ From the main menu, you access:
 - **Trust Center** – The option links to the Microsoft Trust Center, which provides more information about privacy, security, and compliance in the Microsoft Cloud.
 - **Resources** – This option provides links to Security & Compliance for Office 365, the Microsoft Global Datacenters, and Frequently Asked Questions.
 - **My Library** – This feature lets you save documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated.
-- **More** - This option provides a selection for settings and user privacy settings which are available only to Global Administrators and relate to options associated with Compliance Manager. Admins, however, are encouraged to use the Microsoft Purview compliance portal.
+- **More** - This option provides a selection for settings and user privacy settings that are available only to Global Administrators and relate to options associated with Compliance Manager. Admins, however, are encouraged to use the Microsoft Purview compliance portal.
 
-In this interactive guide, you will explore a few of the menu options available on the Service Trust Portal. Select the image below to get started and follow the prompts on the screen.
+In this interactive guide, you'll explore a few of the menu options available on the Service Trust Portal. Select the image below to get started and follow the prompts on the screen.
 
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
