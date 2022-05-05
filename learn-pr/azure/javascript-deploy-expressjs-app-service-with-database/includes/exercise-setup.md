@@ -44,6 +44,20 @@ You can bring the sample application to your local computer in one of several wa
     npm install
     ```
 
+1. Run the following command to start the app:
+
+    ```bash
+    npm run start:dev
+    ```
+
+1. Open the app in a browser:
+
+    ```
+    http://localhost:8080
+    ```
+
+1. Notice the app states that the database isn't connected yet.
+1. Stop the application with <kbd>Ctrl</kbd> + <kbd>c</kbd>.
 
 > [!Note]
 > All files used in this module are in the **3-Add-cosmosdb-mongodb** folder of the sample repo. 

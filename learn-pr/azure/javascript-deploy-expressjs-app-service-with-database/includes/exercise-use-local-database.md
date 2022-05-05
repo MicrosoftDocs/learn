@@ -30,7 +30,7 @@ If you MongoDB installed, you can skip this section.
 
 Configure the web app to use the local database.
 
-1. In Visual Studio Code, open the `.env-sample` file. It has the MongoDB connection string, database name and collection name. 
+1. In Visual Studio Code, open the `.env.sample` file. It has the MongoDB connection string, database name and collection name. 
 
     ```
     PORT=8080
@@ -44,7 +44,7 @@ Configure the web app to use the local database.
 
 ## Configure MongoDB extension
 
-Configure Visual Studio Code's MongoDB extension to find and use the local MongoDB database.
+Configure Visual Studio Code's MongoDB extension to find and use the funning local MongoDB database on port 27017.
 
 1. In Visual Studio Code, select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
 1. Search for **MongoDB: Connect with connection string**. 
@@ -52,7 +52,7 @@ Configure Visual Studio Code's MongoDB extension to find and use the local Mongo
 
 ## Upload sample data to local database
 
-Use the MongoDB extension's playground feature to upload data into the local MongoDB database. The sample comes with 6 rental properties of information. Import this data into your .
+Use the MongoDB extension's playground feature to upload data into the local MongoDB database. The sample comes with 6 rental properties of information. Import this data into the local database.
 
 1. In Visual Studio Code, select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
 1. Search for **MongoDB: Refresh Playgrounds list**. 
@@ -75,6 +75,8 @@ Use the MongoDB extension's playground feature to upload data into the local Mon
     http://localhost:8080
     ```
 
+1. The rental property cards display with data.
+
 ### [Run app with MongoDB container](#tab/run-container)
 
 1. In the integrated terminal for the dev container, start the local web app to verify it connects to the database:
@@ -89,10 +91,12 @@ Use the MongoDB extension's playground feature to upload data into the local Mon
     http://localhost:8080
     ```
 
+1. The rental property cards display with data.
+
 ---
 
 ## Check your work
 
 * The local MongoDB is running.
-* The local web app is running in the browser.
+* The local web app is running in the browser with data displayed.
 

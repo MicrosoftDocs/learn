@@ -22,9 +22,11 @@ You can install MongoDB Community edition locally then connect to the local serv
 
 ## Install and run MongoDB container
 
-The Visual Studio Code **Node.js + MongoDB** dev container allows you to run both the Express.js app and the database in containers. With containers, you don't need to install the dependencies locally because those dependencies are part of the container. You expose the ports for each container (8080 for web, 27017 for MongoDB) to access the containers from your local (_host_) computer.
+The Visual Studio Code **Node.js + MongoDB** dev container allows you to run both the Express.js app and the database in containers. With containers, you don't need to install the dependencies locally because those dependencies are part of the containers. Once the containers are started through Visual Studio Code, you won't need to understand how the containers work in order to develop on top of them Visual Studio Code abstracts and manages the Docker layer for you. 
 
 You can start up the container from Visual Studio Code, with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension. 
+
+The dev containers files are available in the `.devcontainer` folder in the sample project. As an added incentive to use the dev containers, the Azure CLI is installed, the ports for both the web app and MongoDB are exposed, and the Visual Studio Code extensions are included.
 
 ## Adding MongoDB to an Express.js app
 

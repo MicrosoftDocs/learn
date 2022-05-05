@@ -1,24 +1,19 @@
-This unit creates these resources using an Azure CLI script.  
+This unit creates the web app resources.  
 
-This module, as part of the JavaScript on Azure learning path, is a continuation from a previous learn module. If you would like to review the steps to create the Azure resources for a web app, return the to previous module in this path, [Create an Azure App Service resource](/en-us/learn/modules/javascript-deploy-expressjs-app-service/create-app-service-resource). 
+## Azure web-related resources
+
+The next exercise creates the App Service and Monitor resources for you and deploys the sample application
 
 ## Set up Azure resources
 
-The [Azure CLI script](https://github.com/Azure-Samples/msdocs-javascript-nodejs-server/blob/main/3-Add-cosmosdb-mongodb/setup-in-sandbox.sh), provided as part of the sample repo, creates the following resources for you:
+You can create Azure resources in several ways:
 
-* Azure App Service
-* Azure Monitor (Application Insights)
+|Tool|Method and purpose|
+|--|--|
+|Azure portal|A browser-based portal to control all of your Azure resources.|
+|Azure CLI|A terminal CLI used to automate resource management. <br><br>An Azure CLI script is proved in the sample application, `setup-in-sandbox.sh`. This script can be copied and run in the sandbox's interactive terminal in the next unit. If you used the dev containers in the last exercise, you can also run the bash script in the container terminal because the Azure CLI is installed in the container.|
+|Visual Studio Code|A way to keep resource management in the same environment as your other development tasks.<br><br>If you would like to create your resources with Visual Studio Code, return to the previous module's [instructions](/learn/modules/javascript-deploy-expressjs-app-service/create-app-service-resource) to create the App Service resource. Make sure to complete those instructions on this module's sandbox. |
 
-## Azure CLI in the dev container
+## Learn sandbox 
 
-The Azure CLI is included in the dev container, and defined in the `./devcontainer/devcontainer.json` file with the following **features** array:
-
-```json
-"features": {
-		"azure-cli": "latest"
-	}
-```
-
-## Use sandbox subscription
-
-This script uses the Learn sandbox because it sets and uses the `--subscription` parameter. Without this parameter, the Azure CLI would use your default subscription. 
+The Learn sandbox allows you to create and use Azure resources with no cost to you and without any credit card. The Learn sandbox is contained in a separate tenant. Once you have access to that tenant, you can create the Azure resources used in this module. 

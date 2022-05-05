@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.setup-azure-resources
-title: Setup Azure resources for module
+title: Setup Azure web app resources
 metadata:
   unitType: learning-content
-  title: Setup Azure resources for module
-  description: "Understand how and which Azure resources are expected as part of the setup of this module."
+  title: Setup Azure resources
+  description: "Understand how and which Azure resources to set up the Azure App Service web app for the Express.js sample."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry

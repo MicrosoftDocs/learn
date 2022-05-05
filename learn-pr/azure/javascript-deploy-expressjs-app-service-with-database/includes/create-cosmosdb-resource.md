@@ -1,14 +1,16 @@
-When you want to use a MongoDB-enabled application to Azure, you create a Cosmos DB API for MongoDB. 
+When you want to use a MongoDB-enabled application on Azure, create a Cosmos DB API for MongoDB resource. 
 
 ## Cosmos DB API for MongoDB
 
-The Azure Cosmos DB API for MongoDB makes it easy to use Cosmos DB as if it were a MongoDB database. 
+The Azure Cosmos DB API for MongoDB provides an integration layer to use Cosmos DB as if it were a MongoDB database. 
 
-* Leverage your MongoDB experience on the Azure Cloud
-* Automatic and transparent sharding with the wire protocol for MongoDB.
 * Free pricing tier.
-* Serverless consumption.
+* Leverage your MongoDB experience on the Azure Cloud.
+* Continue to use favorite client SDKs.
+* Automatic and transparent sharding with the wire protocol for MongoDB.
+* Serverless or provisioned consumption.
 * Compatible with several MongoDB server versions.
+* Continue to integrate MongoDB code with a connection string.
 
 :::image type="content" source="../media/cosmosdb-mongodb.png" alt-text="Azure Cosmos DB's API for MongoDB":::
 
@@ -19,7 +21,7 @@ When you need to use your MongoDB app on Azure, create a Cosmos DB API for Mongo
 As part of the creation process, you need to answer a few questions such as:
 
 * Version of MongoDB
-* Azure location of resource
+* Azure geo-location of resource
 * Serverless or provisioned throughput
 * Pricing tier 
 
@@ -33,7 +35,7 @@ The Azure location indicates the geographical local for your database. You shoul
 
 ### Serverless or provisioned throughput
 
-When you select serverless or provisioned throughput, you are select the capacity mode for the resource. Use the following chart to help you decide which mode you need:
+When you select serverless or provisioned throughput, you are selecting the capacity mode for the resource. Use the following chart to help you decide which mode you need:
 
 
 | Criteria | Provisioned throughput | Serverless |
@@ -47,14 +49,11 @@ When you select serverless or provisioned throughput, you are select the capacit
 
 In some situations, it may be unclear whether provisioned throughput or serverless should be chosen for a given workload. To help with this decision, estimate your overall **expected consumption**, the total number of RUs, you may consume over a month.
 
-### Pricing tier
-
-The throughput selection in the previous section impacts the pricing tier options and service quota limits that generally affect Cosmos DB. 
-
 Specific pricing tier information for Cosmos DB API for MongoDB include: 
 
-
 Cosmos DB supports the MongoDB wire protocol for applications written against MongoDB. You can find the supported commands and protocol versions at [Supported MongoDB features and syntax](/azure/cosmos-db/mongodb/feature-support-32).
+
+## MongoDB feature support
 
 The following table lists the limits specific to MongoDB feature support. Other service limits mentioned for the SQL (core) API also apply to the MongoDB API.
 
@@ -72,14 +71,16 @@ The following table lists the limits specific to MongoDB feature support. Other 
 
 Once the resource is created, you can access this resource in a variety of ways including: 
 
-* Visual Studio Code - this is the method used in this Learn module
+* Visual Studio Code - this is the method used in this Learn module.
 * Azure portal
 * Azure CLI
 
-The default resource doesn't have a database or a container. For this module, you need to create these before you import the sample data into the resource. 
+The default resource doesn't have a database or a collection. You need to create these in the next exercise before you import the sample data into the resource. 
 
-In this module, you will load the data twice:
-* First for your developer environment's use of the data emulator. You can play with the emulator data without affecting your cloud-based data.
-* Second for your cloud environment's use. While you can import your data with any of the common tools (such as Visual Studio Code, Azure portal, or Azure CLI), in this module, the process uses the Visual Studio Code extension for Azure databases. 
+## Azure database extension and MongDB extension
 
+The Visual Studio Code extensions for Azure Databases and MongoDB has some overlap. 
+
+* **MongoDB**: The MongoDB extension is focused on allowing you to use MongoDB locally or remotely. As long as the connection string is correct set, the functionality of running playground scripts will work. This extension is best for tasks focused on MongoDB data interactions. In Azure terminology, this extension works with the **data plane**. 
+* **Azure Database**: The Azure database extension allows you to manage your Azure databases. The functionality isn't specific to MongoDB. This extension is best for cloud-focused resource management tasks such as creating or deleting a database or collection or getting the connection string. In Azure terminology, this extension works with the **management plane** primarily, and the **data plane** secondarily. 
 
