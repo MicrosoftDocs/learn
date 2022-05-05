@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "The hostname, port, and path in the URL of the request."
       isCorrect: true
-      explanation: "That's correct. An Application Gateway uses the hostname, port and URL path."
+      explanation: "Correct. An Application Gateway uses the hostname, port and URL path."
     - content: "The region in which the servers hosting the web application are located."
       isCorrect: false
-      explanation: "That's incorrect. The Application Gateway does not directly use the region to route requests."
+      explanation: "Incorrect. The Application Gateway does not directly use the region to route requests."
     - content: "The users authentication information."
       isCorrect: false
       explanation: "That's incorrect. The Application Gateway does not consider user authentication information when routing requests."
@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "Distributes requests to each available server in a backend pool in turn, round-robin."
       isCorrect: true
-      explanation: "That's correct. The Application Gateway distributes requests using round-robin."
+      explanation: "Correct. The Application Gateway distributes requests using round-robin."
     - content: "Distributes requests to the server in the backend pool with the lightest load."
       isCorrect: false
       explanation: "That's incorrect. The Application gateway does not consider workloads."
@@ -49,4 +49,4 @@ quiz:
       explanation: "That's incorrect. An Azure Firewall would not be the best choice in this scenario."
     - content: "Install the Web Application Firewall"
       isCorrect: true
-      explanation: "That's correct. The Web Application Firewall is an optional component that handles incoming requests before they reach a listener. The Web Application Firewall checks each request for many common threats, based on the Open Web Application Security Project."
+      explanation: "Correct. The Web Application Firewall is an optional component that handles incoming requests before they reach a listener. The Web Application Firewall checks each request for many common threats, based on the Open Web Application Security Project."
