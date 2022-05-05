@@ -3,11 +3,11 @@ Let's start with a few definitions and a quick tour of the core features of Micr
 ## What is Microsoft Purview?
 Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data.
 
-The main elements are the Microsoft Purview Data Map, Purview Data Catalog, and Purview data insights. Microsoft Purview Data Map powers the Purview Data Catalog and Purview data insights as unified experiences within the Purview Studio.
+The main elements are the Microsoft Purview Data Map, Purview Data Catalog, and Purview Data Estate Insights. Microsoft Purview Data Map powers the Purview Data Catalog and Purview Data Estate Insights as unified experiences within the Microsoft Purview governance portal.
 
 :::image type="content" source="../media/data-map-sources.png" alt-text="Screenshot depicting the data map view in Microsoft Purview with data sources from Azure Data Lake Storage, Azure Files, CosmosDB, Azure Blob storage, and Azure SQL Database on the map.":::
 
-Data insights, one of the key pillars of Microsoft Purview, offers a bird's eye view into your data catalog, covering these key facets:
+Data Estate Insights, one of the key pillars of Microsoft Purview, offers a bird's eye view into your data catalog, covering these key facets:
 
 * Asset insights - a report on the data estate and source type distribution. You can view by source type, classification, and file size. View the insights as a graph or key performance indicators (KPI).
 * Scan insights - this report provides information on the health of your scans (successes, failures, or canceled).

@@ -18,7 +18,7 @@ As the data in your organization grows, the task of discovering, protecting, and
 
 Compliance with company security policies, government regulations, and customer needs, are critical considerations for data governance. Understanding which data sources contain sensitive information is key to knowing where protections are needed and how to guard against access to this sensitive data.
 
-:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System provided classifications for metadata. You would find this list in the Management pane of Purview Studio. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
+:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System provided classifications for metadata. You would find this list in the Management pane of the Microsoft Purview governance portal. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
 
 ## Apply the criteria
 Let's take a look at how Microsoft Purview can address the criteria mentioned.
@@ -26,11 +26,11 @@ Let's take a look at how Microsoft Purview can address the criteria mentioned.
 ### Does Microsoft Purview help with data discovery?
 Do you require a solution or centralized location to register data sources?  For the most part, users might be unaware of a data source unless they come into contact with it as part of another process. Microsoft Purview can help to provide a solution.
 
-Once you have data sources registered in the Purview Studio and displayed in the data map, you can set up scanning of those data sources. The metadata returned helps the catalog the data found in those sources, making it easier for users to discover what the data sources contain. The metadata is also indexed to make each data source easily discoverable via search and understandable to the users who discover it.
+Once you have data sources registered in the the Microsoft Purview governance portal and displayed in the data map, you can set up scanning of those data sources. The metadata returned helps the catalog the data found in those sources, making it easier for users to discover what the data sources contain. The metadata is also indexed to make each data source easily discoverable via search and understandable to the users who discover it.
 
 At the same time, users can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. They can also register new data sources, which are then discovered, understood, and consumed by the community of catalog users.
 
-:::image type="content" source="../media/list-view.png" alt-text="Screenshot of the Sources window in Purview Studio. It depicts the List View option for a Blob Storage data source showing columns for source name, source type, associated collection, source ID, any scans that are associated, and the date the source was registered.":::
+:::image type="content" source="../media/list-view.png" alt-text="Screenshot of the Sources window in the Microsoft Purview governance portal. It depicts the List View option for a Blob Storage data source showing columns for source name, source type, associated collection, source ID, any scans that are associated, and the date the source was registered.":::
 
 ### Does Microsoft Purview help with data governance?
 Microsoft Purview can scan and automatically classify documentation files. Microsoft Purview classifies data by RegEx and Bloom Filter. Bloom Filter classifications include attributes for city, country, place, and person information. RegEx classifications cover a broad range of attributes that cover categories such as bank information (ABA routing numbers or country-specific banking account numbers), passport numbers, country-specific identification numbers, etc. You can find the [full list of supported classifications](/azure/purview/supported-classifications) in the documentation for Microsoft Purview.

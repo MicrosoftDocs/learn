@@ -10,9 +10,9 @@ The Purview Data Map is a unified map of your data assets and their relationship
 ### Sourcing data
 Sourcing your data starts with a process where you register data sources. Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You register the various data sources so Microsoft Purview is aware of them. The data remains in its location and is not migrated to any other platform.
 
-Registering a data source is done from within the Azure portal. Once you have a Microsoft Purview service configured in Azure, you use Purview Studio to register your data sources.
+Registering a data source is done from within the Azure portal. Once you have a Microsoft Purview service configured in Azure, you use the Microsoft Purview governance portal to register your data sources.
 
-:::image type="content" source="../media/purview-studio.png" alt-text="Screenshot depicting the basic Purview Studio screen. We see the name of the Purview account along with options to select which include Knowledge center, Register sources, Browse assets, and Manage glossary.":::
+:::image type="content" source="../media/purview-studio.png" alt-text="Screenshot depicting the basic Microsoft Purview governance portal screen. We see the name of the Purview account along with options to select which include Knowledge center, Register sources, Browse assets, and Manage glossary.":::
 
 Each type of data source you choose, will require specific information to complete the registration. For example, if your data sources reside in your Azure subscription, you will choose the necessary subscription and storage account name.  The following image is an example of choosing an Azure Blob Storage source.
 
@@ -37,16 +37,16 @@ Collections are a way of grouping data assets into logical collections (Categori
 
 Selecting the Map view displays the data sources in a graphical view, along with the collections you have created for them.
 
-:::image type="content" source="../media/data-map-collections.png" alt-text="Screenshot depicting map view of the sources window in Purview Studio. There are three collections listed, each with a single data source, and two other data sources that are not assigned to a collection.":::
+:::image type="content" source="../media/data-map-collections.png" alt-text="Screenshot depicting map view of the sources window in the Microsoft Purview governance portal. There are three collections listed, each with a single data source, and two other data sources that are not assigned to a collection.":::
 
 ### Scanning data
 Once you have your data sources registered, you will need to run a scan to be able to access the metadata and browse the asset information. You configure scan rules for the data you want to scan. In a Microsoft Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization.
 
 A scan rule set is a container for grouping a set of scan rules together so that you can easily associate them with a scan. A scan rule set lets you select file types for schema extraction and classification, and it also let’s you define new custom file types. For example, you might create a default scan rule set for each of your data source types, and then use these scan rule sets by default for all scans within your company. You might also want users with the right permissions to create other scan rule sets with different configurations based on business need.
 
-Scanning the data sources will require the entry of credentials for these sources. You can store the credentials in an Azure Key Vault for security and ease of access by your scan rules. Purview Studio comes with existing system scan rule sets that you can select when creating a new scan rule, or you can specify a custom scan rule set.
+Scanning the data sources will require the entry of credentials for these sources. You can store the credentials in an Azure Key Vault for security and ease of access by your scan rules. The Microsoft Purview governance portal comes with existing system scan rule sets that you can select when creating a new scan rule, or you can specify a custom scan rule set.
 
-:::image type="content" source="../media/scan-rule-sets.png" lightbox="../media/scan-rule-sets-expanded.png" alt-text="Screenshot depicting the Management panel selected in Purview Studio and the Scan rule sets option also selected.  Displayed is a list of System provided scan rule sets that pre-configured for the various data sources such as Azure File Service, SQL Server, etc.":::
+:::image type="content" source="../media/scan-rule-sets.png" lightbox="../media/scan-rule-sets-expanded.png" alt-text="Screenshot depicting the Management panel selected in the Microsoft Purview governance portal and the Scan rule sets option also selected.  Displayed is a list of System provided scan rule sets that pre-configured for the various data sources such as Azure File Service, SQL Server, etc.":::
 
 You can also select the file types to include in the scan. The file types will be used in the schema extraction and classification of the data. Built-in file type support includes the following types:
 
@@ -73,7 +73,7 @@ Metadata is used to help describe the data that is being scanned and made availa
 * Security - attributes like passwords that may be stored.
 * Miscellaneous - attributes not covered in the other categories.
 
-:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System provided classifications for metadata. You would find this list in the Management pane of Purview Studio. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
+:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System provided classifications for metadata. You would find this list in the Management pane of the Microsoft Purview governance portal. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
 
 After you register a data source, you can then enrich its metadata. Either the user who registered the data source or another user in the enterprise adds the metadata. Any user can annotate a data source by providing descriptions, tags, or other metadata for requesting data source access. This descriptive metadata supplements the structural metadata, such as column names and data types, that's registered from the data source.
 

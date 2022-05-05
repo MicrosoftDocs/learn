@@ -34,9 +34,9 @@ quiz:
     - content: "In the Managed Resources tab of the Microsoft Purview account page."
       isCorrect: false
       explanation: "Incorrect: The Managed resources tab is sued to configure and manage the resource group, storage account, and event hub resources."
-    - content: "In Microsoft Purview Studio."
+    - content: "In the Microsoft Purview governance portal."
       isCorrect: true
-      explanation: "Correct: Microsoft Purview Studio is where you register your data sources."
+      explanation: "Correct: The Microsoft Purview governance portal is where you register your data sources."
   - content: "What aspect of Microsoft Purview is used to configure the data discovery for your data sources?"
     choices:
     - content: "Scan rules."
