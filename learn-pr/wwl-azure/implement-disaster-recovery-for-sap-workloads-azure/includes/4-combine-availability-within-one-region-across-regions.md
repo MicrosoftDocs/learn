@@ -6,12 +6,12 @@ A combination of availability within and across regions might be driven by these
 
 In these cases, you can set up what SAP calls an SAP HANA multi-tier system replication configuration by using HANA system replication.
 
-:::image type="content" source="../media/three-vms-over-two-regions-895877f6.png" alt-text="Diagram of three VMs over two regions":::
+:::image type="content" source="../media/three-vms-over-two-regions-895877f6.png" alt-text="Diagram illustrating three virtual machines over two regions":::
 
 
 SAP introduced multi-target system replication with HANA 2.0 SPS3. Multi-target system replication brings some advantages in update scenarios. For example, the DR site (Region 2) is not impacted when the secondary HA site is down for maintenance or updates.
 
-:::image type="content" source="../media/three-vms-over-two-regions-multi-target-791185ed.png" alt-text="Diagram of three VMs over two regions multi-target":::
+:::image type="content" source="../media/three-vms-over-two-regions-multi-target-791185ed.png" alt-text="Diagram illustrating three virtual machines over two regions, multi-target":::
 
 
 If the organization has requirements for high availability readiness in the second (DR) Azure region, then the architecture would look as follows:
