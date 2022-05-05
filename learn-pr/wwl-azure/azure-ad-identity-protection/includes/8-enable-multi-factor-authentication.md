@@ -1,6 +1,6 @@
-To enable MFA, go to the User Properties in Azure Active Directory, and then the Multi-Factor Authentication option. From there, you can select the users that you want to modify and enable for MFA. You can also bulk enable groups of users with PowerShell. Users states can be **Enabled**, **Enforced**, or **Disabled**.
+To enable MFA, go to the User Properties in Azure Active Directory, and then the Multi-Factor Authentication option. From there, you can select the users that you want to modify and enable for MFA. You can also bulk enable groups of users with PowerShell. User's states can be **Enabled**, **Enforced**, or **Disabled**.
 
-:::image type="content" source="../media/multi-factor%20authentication%20service%20settings%202022-5db310d1.png" alt-text="multi-factor authentication service setting 2022":::
+:::image type="content" source="../media/multi_factor_authentication_service_settings_2022-22c80c4c.jpg":::
 
 
 > [!NOTE]
