@@ -1,23 +1,23 @@
-Your company runs a significant number of databases in an Azure SQL Database managed instance environment. You’ve been asked to find a method to improve your company’s data governance framework, reinforce the overall data management strategy, increase trust in the data you use, and make your data a truly enterprise-wide asset.
+Your company runs a significant number of databases in an Azure SQL Managed Instance environment. You’ve been asked to find a method to improve your company’s data governance framework, reinforce the overall data management strategy, increase trust in the data you use, and make your data a truly enterprise-wide asset.
 
 Microsoft Purview uses automated data discovery to provide your company with an up-to-date map of their data landscape. You can use Microsoft Purview to register a data source and then enrich its metadata by providing descriptions, tags, or other metadata supplements. Your organization can use the overall data map for business intelligence, application development, or any task where the data matches their needs.
 
-To fulfill the request you’ve received, you’ve decided to integrate the data source of an Azure SQL Database managed instance with your Microsoft Purview account.
+To fulfill the request you’ve received, you’ve decided to integrate the data source of an Azure SQL Managed Instance with your Microsoft Purview account.
 
-## Register an Azure SQL Database managed instance in Microsoft Purview
+## Register an Azure SQL Managed Instance in Microsoft Purview
 
-Before you register your data source that runs in an Azure SQL Database managed instance, you need to ensure connectivity from your Microsoft Purview account. You can connect from your Microsoft Purview account to an Azure SQL Database managed instance by either:
+Before you register your data source that runs in an Azure SQL Managed Instance, you need to ensure connectivity from your Microsoft Purview account. You can connect from your Microsoft Purview account to an Azure SQL Managed Instance by either:
 
 - Using a public endpoint on the managed instance.
 
-- Integrating the Microsoft Purview account with the virtual network used by the Azure SQL Database managed instance and then using a private endpoint to more securely access the database.
+- Integrating the Microsoft Purview account with the virtual network used by the Azure SQL Managed Instance and then using a private endpoint to more securely access the database.
 
 >[!Note]
 >A public endpoint for a managed instance allows access from outside from the virtual network to databases that are hosted on the managed instance.
 
 ### Configure a private endpoint for an Microsoft Purview account
 
-A private endpoint is a more secure method to connect to an Azure SQL Database managed instance because it enables network isolation. With a private endpoint enabled on the virtual network where the Azure SQL Database managed instance is deployed, you can allow connection only from within the network using a self-hosted integration runtime that’s deployed in an Azure VM. To do this, you must create a Microsoft integration runtime in your Microsoft Purview account and then download and install binaries on an Azure VM that runs any supported 64-bit version of the Windows operating system, following these steps:
+A private endpoint is a more secure method to connect to an Azure SQL Managed Instance because it enables network isolation. With a private endpoint enabled on the virtual network where the Azure SQL Managed Instance is deployed, you can allow connection only from within the network using a self-hosted integration runtime that’s deployed in an Azure VM. To do this, you must create a Microsoft integration runtime in your Microsoft Purview account and then download and install binaries on an Azure VM that runs any supported 64-bit version of the Windows operating system, following these steps:
 
 1. In the Azure portal, select your **Microsoft Purview account.**
 
@@ -47,11 +47,11 @@ A private endpoint is a more secure method to connect to an Azure SQL Database m
 >You can also follow these steps when you select a portal for a target subresource.
 
 >[!Note]
->For both your Microsoft Purview Account and the Microsoft Purview Portal, you must create ingestion private endpoint connections with the virtual network that contains the Azure SQL Database managed instance. This is required, but you only need to do it once.
+>For both your Microsoft Purview Account and the Microsoft Purview Portal, you must create ingestion private endpoint connections with the virtual network that contains the Azure SQL Managed Instance. This is required, but you only need to do it once.
 
-### Authentication for scanning an Azure SQL Database managed instance
+### Authentication for scanning an Azure SQL Managed Instance
 
-You can use one of the following authentication methods to access the Azure SQL Database managed instance:
+You can use one of the following authentication methods to access the Azure SQL Managed Instance:
 
 - SQL authentication:
 
