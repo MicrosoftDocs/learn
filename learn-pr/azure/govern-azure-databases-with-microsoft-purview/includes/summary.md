@@ -1,6 +1,6 @@
 Your organization benefits from using cloud optimization because it stores significant amounts of data in an Azure SQL Database and in SQL Database managed instances. There were issues associated with not having an end-to-end data lineage across your data infrastructure. As a data analyst, you identified that you were spending a considerable amount of time manually annotating, cataloging, and finding trusted sources.
 
-In this module, you’ve learned how to use Microsoft Purview to connect to an Azure SQL Database and to Azure SQL Database managed instance data sources. You’ve learned how to register data sources and how to scan data. By using Microsoft Purview as a central catalog, your IT Manager can now get a complete and comprehensive overview of all your data flows, sources, transformations, and dependencies. Now your organization can understand what data the business has, its source, and its mining value.
+In this module, you’ve learned how to use Microsoft Purview to connect to an Azure SQL Database and to Azure SQL Managed Instance data sources. You’ve learned how to register data sources and how to scan data. By using Microsoft Purview as a central catalog, your IT Manager can now get a complete and comprehensive overview of all your data flows, sources, transformations, and dependencies. Now your organization can understand what data the business has, its source, and its mining value.
 
 ## Learn more
 
