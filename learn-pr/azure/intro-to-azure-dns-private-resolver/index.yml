@@ -26,7 +26,7 @@ roles:
   - administrator
   - solution-architect
   - technology-manager
- products:
+products:
   - azure
   - azure-virtual-network
   - azure-dns
