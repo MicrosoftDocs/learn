@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-power-bi-model-relationships.understand-relationship-evaluation
+title: Understand relationship evaluation
+metadata:
+  title: Understand relationship evaluation
+  description: "Understand relationship evaluation"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-understand-relationship-evaluation.md)]

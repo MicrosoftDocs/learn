@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-power-bi-model-relationships.use-dax-relationship-functions
+title: Use DAX relationship functions
+metadata:
+  title: Use DAX relationship functions
+  description: "Use DAX relationship functions"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-dax-relationship-functions.md)]

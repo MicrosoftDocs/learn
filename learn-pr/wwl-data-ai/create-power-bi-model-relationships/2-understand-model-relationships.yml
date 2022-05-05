@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.demo-interact-with-a-computer.demo-introduction
+title: Understand model relationships
+metadata:
+  title: Demo-Introduction
+  description: "Understand model relationships"
+  ms.date: 05/05/2022
+  author: benjiang
+  ms.author: benjiang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-model-relationships.md)]

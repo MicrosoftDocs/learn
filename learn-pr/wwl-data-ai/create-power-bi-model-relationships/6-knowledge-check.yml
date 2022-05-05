@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-power-bi-model-relationships.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Belle is a data modeler at Adventure Works who is developing a model for a data warehouse. The model includes a table that stores products and another table that stores sales of those products. Belle adds a relationship to relate the two tables.Which cardinality type should Belle set to achieve an optimal model?"
+    choices:
+    - content: "One-to-one."
+      isCorrect: false
+      explanation: "Incorrect. A one-to-one relationship implies that a product is sold once at most."
+    - content: "One-to-many."
+      isCorrect: true
+      explanation: "Correct. A one-to-many relationship relates the product table to the sales table. Filters applied to the product table will propagate to the sales table to allow analysis of product sales."
+    - content: "Many-to-many."
+      isCorrect: false
+      explanation: "Incorrect. While a many-to-many relationship would work it isn’t optimal. Because the product table has a unique identifier for each product, a one-to-many relationship should be set."
+  - content: "Akira is a data modeler at Adventure Works who is developing a model for a data warehouse. The model includes a table that stores products and another table that stores sales monthly targets of product categories. Akira adds a relationship to relate the two tables.Which cardinality type should Akira set to achieve an optimal model?"
+    choices:
+    - content: "One-to-one."
+      isCorrect: false
+      explanation: "Incorrect. Neither table has a unique column for product category, so it’s not possible to set a one-to-one relationship."
+    - content: "One-to-many."
+      isCorrect: false
+      explanation: "Incorrect. The product table category column will contain duplicate values, so it’s not possible to set a one-to-many relationship."
+    - content: "Many-to-many."
+      isCorrect: true
+      explanation: "Correct. The product table category column and the sales target category column will contain duplicate categories."
+  - content: "Margaret is a data modeler at Adventure Works who is adding a measure to sales model. When evaluated, the measure must filter by filters already applied to an unrelated table.Which DAX function should Margaret use to create a virtual relationship?"
+    choices:
+    - content: "`RELATEDTABLE`."
+      isCorrect: false
+      explanation: "Incorrect. The `RELATEDTABLE` function retrieves a table of rows from the \"many\" side of a relationship"
+    - content: "`TREATAS`."
+      isCorrect: true
+      explanation: "Correct. The `TREATAS` function applies the result of a table expression as filters to columns from an unrelated table."
+    - content: "`USERELATIONSHIP`"
+      isCorrect: false
+      explanation: "Incorrect. The `USERELATIONSHIP` function forces the use of a specific inactive model relationship."
