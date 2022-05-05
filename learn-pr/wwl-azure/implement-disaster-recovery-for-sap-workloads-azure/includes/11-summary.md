@@ -19,7 +19,7 @@ Now you have:
  -  [Disaster recovery failover procedure](/azure/virtual-machines/workloads/sap/hana-failover-procedure)
  -  [Configure a SQL Server Always On availability group across different Azure regions](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-dr)
  -  [Tutorial: Set up disaster recovery for Azure VMs](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication)
- -  [Create and customize recovery plans](/azure/site-recovery/site-recovery-create-recovery-plans)<br>
+ -  [Create and customize recovery plans](/azure/site-recovery/site-recovery-create-recovery-plans)
  -  [Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security)
  -  [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps)
  -  [Deploy VMs to proximity placement groups using Azure PowerShell](/azure/virtual-machines/windows/proximity-placement-groups)
