@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "The administrator can create system routes."
       isCorrect: false
-      explanation: "Incorrect. The administrator cannot create system routes, only user routes."
+      explanation: "Incorrect. The administrator can't create system routes, only user routes."
     - content: "Azure gateways are needed to route traffic between subnets."
       isCorrect: false
-      explanation: "Incorrect. Gateways are not needed to route traffic between subnets."
+      explanation: "Incorrect. Gateways aren't needed to route traffic between subnets."
     - content: "When the next hop type is none, traffic is dropped."
       isCorrect: true
-      explanation: "Correct. Traffic routed to the None next hop type is not routed outside the subnet, but is dropped."
+      explanation: "Correct. Traffic routed to the None next hop type isn't routed outside the subnet, but is dropped."
   - content: "When creating user-defined routes, which of the following is a valid next hop types?"
     choices:
     - content: "Internet"
@@ -35,10 +35,10 @@ quiz:
       explanation: "Correct. The valid next hop choices are virtual appliance. virtual network gateway, virtual network, internet, and none."
     - content: "Load balancer"
       isCorrect: false
-      explanation: "Incorrect. Load balancer is not a valid next hop type."
+      explanation: "Incorrect. Load balancer isn't a valid next hop type."
     - content: "ExpressRoute"
       isCorrect: false
-      explanation: "Incorrect. ExpressRoute is not a valid next hop type."
+      explanation: "Incorrect. ExpressRoute isn't a valid next hop type."
   - content: "A company needs to extend their private address space in Azure by providing a direct connection to Azure resources. Which of the following should be implemented?"
     choices:
     - content: "User-defined route"
