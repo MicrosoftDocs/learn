@@ -13019,6 +13019,31 @@
       "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/10-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/2-describe-dynamic-management-views-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/3-describe-wait-statistics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/2-describe-wait-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/4-tune-indexes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/5a-exercise-isolate-problem-areas-poor-performing-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/5-exercise-isolate-problem-areas-poor-performing-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/5-maintain-indexes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
+      "redirect_document_id": false
     }
   ]
 }
