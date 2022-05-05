@@ -60,7 +60,7 @@ The security of MFA two-step verification lies in its layered approach. Compromi
     Verification code from mobile app
   :::column-end:::
   :::column:::
-    The Microsoft Authenticator app generates a new OATH verification code every 30 seconds. The user enters the verification code into the sign-in interface. The Microsoft Authenticator app is available for Windows Phone, Android, and iOS. Verification code from mobile app can be used when the phone has no data connection or cellular signal.
+    The Microsoft Authenticator app generates a new OAUTH verification code every 30 seconds. The user enters the verification code into the sign-in interface. The Microsoft Authenticator app is available for Windows Phone, Android, and iOS. Verification code from mobile app can be used when the phone has no data connection or cellular signal.
   :::column-end:::
 :::row-end:::
 
