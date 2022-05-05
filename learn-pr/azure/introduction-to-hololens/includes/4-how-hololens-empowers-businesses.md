@@ -22,56 +22,13 @@ With HoloLens, your employees can collaborate in real time with remote colleague
 
 Here are some solutions that have produced outstanding results for HoloLens customers.
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/mda-hl2.jpg" alt-text="Photo of a HoloLens worker immersed in digital imagery.":::
-    :::column-end:::
-    :::column span="2":::
-        ##### MDA, a Canadian space technology company, uses HoloLens to train employees by creating immersive mixed reality experiences.
-        Mixed reality helps engineers to visualize designs and predict future usability issues. It can also help astronauts and ground controllers adapt to conditions they can't yet see or feel.   
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/zf-group.png" alt-text="Photo of a HoloLens field service worker.":::
-    :::column-end:::
-    :::column span="2":::
-        ##### ZF Group, a global technology company, uses HoloLens to ensure efficient use of the automotive systems it manufactures. 
-        When paired with Dynamics 365 guides, HoloLens helps ZF employees share knowledge, troubleshoot, and talk about the products in real time. 
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/sheba.png" alt-text="Photo of a HoloLens healthcare worker operating a ventilator.":::
-    :::column-end:::
-    :::column span="2":::
-        ##### Sheba Medical Center uses HoloLens to expedite training for busy staff, who must operate complex but critical medical equipment. 
-        During the COVID-19 pandemic, healthcare workers had to quickly learn to operate ventilators that had been deployed by the hundreds.
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/tokyu.png" alt-text="Photo of a construction worker using HoloLens to examine a digital blueprint.":::
-    :::column-end:::
-    :::column span="2":::
-        ##### Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2. 
-        It can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. 
-            
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/eaton.png" alt-text="Photo of a HoloLens auto worker.":::
-    :::column-end:::
-    :::column span="2":::
-        ##### Eaton’s Vehicle Group uses HoloLens with Dynamics 365 guides to train employees. 
-        When a plant manager explains a process to workers, they don't always understand, until they use HoloLens to view the process in real time. 
-    :::column-end:::
-:::row-end:::
+| &nbsp;      | &nbsp; |
+| ----------- | ----------- |
+| :::image type="content" source="../media/mda-hl-2.jpg" alt-text="Photo of a HoloLens worker immersed in digital imagery."::: | **MDA, a Canadian space technology company, uses HoloLens to train employees by creating immersive mixed reality experiences.** <br> Mixed reality helps engineers to visualize designs and predict future usability issues. It can also help astronauts and ground controllers adapt to conditions they can't yet see or feel. |
+| :::image type="content" source="../media/zf-group.png" alt-text="Photo of a HoloLens field service worker."::: | **ZF Group, a global technology company, uses HoloLens to ensure efficient use of the automotive systems it manufactures.** <br> When paired with Dynamics 365 guides, HoloLens helps ZF employees share knowledge, troubleshoot, and talk about the products in real time.  |
+| :::image type="content" source="../media/sheba.png" alt-text="Photo of a HoloLens healthcare worker operating a ventilator."::: | **Sheba Medical Center uses HoloLens to expedite training for busy staff, who must operate complex but critical medical equipment.** <br> During the COVID-19 pandemic, healthcare workers had to quickly learn to operate ventilators that had been deployed by the hundreds. |
+| :::image type="content" source="../media/tokyu.png" alt-text="Photo of a construction worker using HoloLens to examine a digital blueprint."::: | **Tokyu Construction improves engineering precision and increases productivity with Azure Remote Rendering on HoloLens 2.** <br> It can be challenging to look at a 2D blueprint and visualize what a building will actually look like in 3D. |
+| :::image type="content" source="../media/eaton.png" alt-text="Photo of a HoloLens auto worker."::: | **Eaton’s Vehicle Group uses HoloLens with Dynamics 365 guides to train employees.** <br>  When a plant manager explains a process to workers, they don't always understand, until they use HoloLens to view the process in real time. |
 
 ## Reference
 

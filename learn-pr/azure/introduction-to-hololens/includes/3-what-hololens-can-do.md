@@ -62,7 +62,7 @@ Healthcare providers are faced with a unique challenge: the work itself is hands
 
 Mixed reality is empowering providers, payors, and health science experts to reimagine healthcare by accelerating diagnoses, reducing time-to-care, and enabling personalization. Using Microsoft mixed reality, healthcare providers reduced average consumables by 80%, saving $4,000 per trainee<sup>1</sup>. 
 
-:::image type="content" source="../media/hololens2-healthcare.png" alt-text="Photo of medical students with a hologram of the human brain.":::
+:::image type="content" source="../media/hololens-2-health-care.png" alt-text="Photo of medical students with a hologram of the human brain.":::
 
 Common scenarios in which healthcare providers benefit from mixed reality on Microsoft HoloLens 2:
 

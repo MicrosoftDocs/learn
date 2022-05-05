@@ -1,6 +1,6 @@
 On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world. Even when digital imageries are all around you, you can always see your surroundings, move freely, and interact with people and objects. Thanks to HoloLens 2 and Mixed Reality applications, workers can now collaborate without boundaries, act with precision, and increase productivity.
 
-:::image type="content" source="../media/MRTK-periodictable.jpg" alt-text="Photo of HoloLens worker immersed in digital imagery.":::
+:::image type="content" source="../media/MRTK-periodic-table.jpg" alt-text="Photo of HoloLens worker immersed in digital imagery.":::
 
 * The holographic frame positions digital images where your eyes are most sensitive to detail. 
 * The see-through lenses leave your peripheral vision unobstructed. 
@@ -22,7 +22,7 @@ It's easy to learn a few gestures that give you control of the windows, menus, a
 
 HoloLens 2 is currently used in manufacturing, construction, retail, healthcare, education, and aerospace industries, but it's so flexible that it can be used almost anywhere. It builds a digital framework between your employees and their physical workspace by adding 3D models and simulations of real-life scenarios to the local environment.
 
-:::image type="content" alt-text="Photo of a worker using HoloLens with Dynamics 365 Remote Assist." source="../media/HLS-19-remoteAssistHologram-001.jpg":::
+:::image type="content" alt-text="Photo of a worker using HoloLens with Dynamics 365 Remote Assist." source="../media/HLS-19-remote-assist-hologram-001.jpg":::
 
 ### Scenarios
 
