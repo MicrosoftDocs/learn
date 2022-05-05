@@ -297,12 +297,12 @@
     },
     {
       "source_path": "learn-pr/azure/gather-metrics-blob-storage/6-using-storage-analytics-logging.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/6-use-azure-resource-logs",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/5-storage-logging",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/gather-metrics-blob-storage/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/7-exercise-collect-and-analyze-azure-monitor-logs-for-storage",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/6-exercise-storage-logging",
       "redirect_document_id": false
     },
     {
