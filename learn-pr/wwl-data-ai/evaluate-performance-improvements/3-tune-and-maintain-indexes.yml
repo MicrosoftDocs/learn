@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-performance-improvements.tune-and-maintain-indexes
+title: Tune and maintain indexes
+metadata:
+  title: Tune and maintain indexes
+  description: "Tune and maintain indexes"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-tune-and-maintain-indexes.md)]

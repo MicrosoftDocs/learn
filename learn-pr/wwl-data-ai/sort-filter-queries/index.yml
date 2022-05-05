@@ -3,9 +3,9 @@ uid: learn.wwl.sort-and-filter-queries
 metadata:
   title: Sort and filter results in T-SQL
   description: "Sort and filter results in T-SQL"
-  ms.date: 11/24/2021
+  ms.date: 05/05/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Sort and filter results in T-SQL
