@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-dns
 metadata:
   title: Configure Azure DNS
   description: "You will learn how to configure Azure DNS including custom domain names and record sets."
-  ms.date: 11/15/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
