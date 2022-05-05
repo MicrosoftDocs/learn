@@ -1,4 +1,4 @@
-When you host APIs with Azure API Management, you can modify API behavior without having to rewrite code, by using policies.
+When you host APIs with Azure API Management, you can modify API behavior without having to rewrite code, by use of policies.
 
 Imagine, as the developer for a board game company, you decide to implement caching for the Board Pricing API. First you need to add the API to API Management, then you write your caching policies. We'll do this in the next exercise.
 
@@ -11,9 +11,9 @@ Imagine, as the developer for a board game company, you decide to implement cach
 
 We'll use the Consumption tier for API Management, for this module. That's because Azure configures API Management instances for this tier in just a minute or so. Other tiers can take up to 30 minutes.
 
-The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It is a tier that has no internal cache. We must therefore create an external Redis cache and then configure a caching policy for API Management, to use it.
+The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It is a tier that has no internal cache. We must therefore create an external Redis cache and then configure an API Management caching policy to use it.
 
-Let's create a cache. This will allow the setup to run behind the scenes while we work on other steps:
+Let's create a cache right away. This will allow the setup to run behind the scenes while we work on other steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
 
@@ -69,7 +69,7 @@ When the web API is successfully created in Cloud Shell, then you can test it. R
 
 1. On the Azure portal **Resource** menu, or on the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
-1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message "No webpage found for this address". This occurs because the web API doesn't implement an Azure website user interface.
+1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message "No webpage found for this address". This occurs because the web API doesn't implement a web user interface.
 
 1. In a new browser tab, paste the web API test URL that you previously copied, and select <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time, with the label **quotePreparedTime**.
 
@@ -151,7 +151,7 @@ We must apply a policy to enable users to access the API. However before you can
 
 ## Test the API in API Management
 
-The API is now added to the management instance. Let's test the API before any policies are applied.
+The API is now added to the management instance. Let's test how the API functions before any policies are applied.
 
 1. In the **APIs** pane for your API Management service, select the **Test** tab and then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
@@ -197,7 +197,7 @@ We can now enable caching. This is done by adding policies to inbound processing
 
 ## Test the cache
 
-We'll run the same test as in the previous section, on the API in API Management. We'll then review the results.
+We'll run the same test on the API as in the previous section, from within API Management. We'll then review the results.
 
 1. In the **APIs** pane for your API Management service, select the **Test** tab. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
@@ -285,4 +285,4 @@ The cache should now deliver unique responses based on the *Height* query parame
 
 1. Select **Send**.
 
-1. Review the result. This time, although the *Width* query parameter is different, the result didn't change. That's because a cached response is served.
+1. Review the result. This time, although the *Width* query parameter is different, the result don't change. That's because a cached response is served.
