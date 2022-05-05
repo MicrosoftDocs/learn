@@ -10,7 +10,7 @@ With continuous delivery, a typical approach is to:
 2. Move the best model to the *staging* or *pre-prod* environment to deploy and test the model.
 3. Finally *release* the model to the *production* environment to deploy the model so that end-users can consume it.
 
-> [!Note]
+> [!NOTE]
 > In this module, we refer to the DevOps interpretation of environments. Note that Azure Machine Learning also uses the term environments to describe a collection of Python packages needed to run a script. These two concepts of environments are independent from each other. Learn more about [Azure Machine Learning environments](/azure/machine-learning/concept-environments). 
 
 ## Organize Azure Machine Learning environments
@@ -21,13 +21,13 @@ Imaging your team uses a dev, pre-prod, and prod environment. Not everyone on yo
 
 Having separate environments will make it easier to control access to resources. Each environment can then be associated with a separate Azure Machine Learning workspace. 
 
-![Diagram of multiple environments set-up.](../media/02-01-environment-setup.png)
+![Diagram of multiple environments set-up.](../media/02-01-environment-set-up.png)
 
 Within Azure, you'll use role-based access control (RBAC) to give colleagues the right level of access to the subset of resources they need to work with.
 
 Alternatively, you can use only one Azure Machine Learning workspace. When you use one workspace for development and production, you'll have a smaller Azure footprint and less management overhead. However, RBAC will apply to both dev and prod, which may mean that you're giving people too little or too much access to resources.
 
-> [!Tip]
+> [!TIP]
 > Learn more about [best practices to organize Azure Machine Learning resources](/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-resource-organization).
 
 To work with environments for different stages of the model development, you can target an environment when running an **Azure Pipeline** or workflow with **GitHub Actions**.
@@ -71,7 +71,7 @@ stages:
 
 The value for `environment` in the YAML file is `dev`, indicating the model is trained in the development environment. Through the **service connection**, you specify which Azure Machine Learning workspace you want to use for model training.
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to create and target an environment with Azure DevOps](/azure/devops/pipelines/process/environments).
 
 ## GitHub environments
@@ -121,6 +121,6 @@ jobs:
 
 In the example, the `AZURE_CREDENTIALS` secret contains the connection information to the Azure Machine Learning workspace used for this environment.
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to create and use an environment with GitHub Actions](https://docs.github.com/actions/deployment/targeting-different-environments/using-environments-for-deployment).
 

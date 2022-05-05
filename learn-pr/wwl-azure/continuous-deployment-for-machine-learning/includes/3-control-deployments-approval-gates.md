@@ -21,7 +21,7 @@ Whenever you want to run a pipeline, which targets an environment with an approv
 
 After an approver gives permission for a pipeline to run within the time-out range, the pipeline will execute. 
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to define approvals and checks in Azure Pipelines](/azure/devops/pipelines/process/approvals).
 
 ## Create an approval check within GitHub Actions
@@ -40,5 +40,5 @@ Whenever a workflow in GitHub Actions wants to deploy to an environment with an 
 
 After you as an approver have reviewed the deployment, the workflow will run.
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to add reviewers to environment protection rules in GitHub](https://docs.github.com/actions/deployment/targeting-different-environments/using-environments-for-deployment) and [how to review deployments](https://docs.github.com/actions/managing-workflow-runs/reviewing-deployments).

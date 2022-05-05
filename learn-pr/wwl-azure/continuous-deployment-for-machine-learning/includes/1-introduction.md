@@ -1,4 +1,4 @@
-**Machine learning operations** (**MLOps**) aims to scale more efficiently and easily from an experimental project to a machine learning workload in production. 
+**Machine learning operations** (**MLOps**) aims to more efficiently and easily scale from an experimental project to a machine learning workload in production. 
 
 To train a model, you'll want to experiment with many different configurations in an easy-to-use environment. On the other hand, to deploy a model to production, you want a set-up that is ready to scale and future-proof. 
 
