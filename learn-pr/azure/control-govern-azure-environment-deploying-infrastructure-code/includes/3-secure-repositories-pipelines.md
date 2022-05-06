@@ -53,9 +53,7 @@ Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, whi
 
 You can instead choose to use your own physical or virtual machines for your agents and runners. These are called *self-hosted* agents and runners. If you do this, you're responsible for ensuring that the machines are configured correctly and protected against threats.
 
-Microsoft-hosted agents and GitHub-hosted runners are ephemeral. Any files or configuration changes to an agent or runner are destroyed when a pipeline's run ends. 
-
-If you self-host your agent or runner, the same machine is likely to be used for multiple separate pipelines or environments, including production and non-production environments. Suppose that somebody creates a pipeline definition that modifies some important files on the agent's operating system and runs the pipeline from a pull request. The next time that a deployment runs against your production environment, it might reuse the agent. Now you have no way to predict what the impact of the corrupted file might be on your production environment.
+Microsoft-hosted agents and GitHub-hosted runners are ephemeral. Any files or configuration changes to an agent or runner are destroyed when a pipeline's run ends. If you self-host your agent or runner, the same machine is likely to be used for multiple separate pipelines or environments, including production and non-production environments. Suppose that somebody creates a pipeline definition that modifies some important files on the agent's operating system and runs the pipeline from a pull request. The next time that a deployment runs against your production environment, it might reuse the agent. Now you have no way to predict what the impact of the corrupted file might be on your production environment.
 
 For these reasons, it's a good practice to use Microsoft-hosted agents and GitHub-hosted runners whenever you can. If you must use self-hosted runners, carefully evaluate the risks involved in their configuration and use.
 
@@ -65,7 +63,7 @@ If you use community-provided GitHub Actions or Azure DevOps extensions, underst
 
 In Azure DevOps, the organization administrator typically approves every extension before it can be used. If you're the administrator for your organization, consider the security risk involved in each component that you use. You're responsible for verifying that they're trustworthy and safe.
 
-Whenever you use a third-party action or task, you specify the version. Consider specifying only the version that you've reviewed. Allowing the pipeline to automatically use a later version might introduce a risk that you haven't reviewed.
+Whenever you use a third-party action or task, you specify the version. Consider specifying the exact version that you've reviewed. Allowing the pipeline to automatically use a later version might introduce a risk that you haven't reviewed.
 
 ## Protect your pipeline's service principals
 
