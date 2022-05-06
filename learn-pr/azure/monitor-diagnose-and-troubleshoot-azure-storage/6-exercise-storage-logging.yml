@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.6-exercise-storage-logging
 metadata:
-  title: Exercise - Enable storage logging and view log data
-  description: In this exercise, we'll explore how to enable storage logging and view log data.
-  ms.date: 11/15/2019
+  title: Exercise - Route resource logs to Log Analytics and then view log data
+  description: In this exercise, we'll explore how to route storage resource logs, and then view log data.
+  ms.date: 05/05/2021
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Enable storage logging and view log data
+title: Exercise - Route resource logs to Log Analytics and then view log data
 durationInMinutes: 8
 interactive: powershell
 azureSandbox: true

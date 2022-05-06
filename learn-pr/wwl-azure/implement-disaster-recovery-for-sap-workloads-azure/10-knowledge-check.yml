@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/21/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -28,17 +28,17 @@ quiz:
     - content: "SQL Server databases"
       isCorrect: false
       explanation: "For SQL Server databases, SQL Always On replication is recommended."
-  - content: "Is simple availability between two Azure regions with manual failover a good choice for users who require RPO = 0?"
+  - content: "For which of the following is the recommended disaster recovery strategy to use DBMS-specific mechanisms such as SQL Server Always On or HANA System Replication?"
     choices:
-    - content: "Yes"
+    - content: "Application servers"
       isCorrect: false
-      explanation: "Incorrect. This configuration can't RPO = 0 because the HANA system replication mode is asynchronous."
-    - content: "No"
+      explanation: "Incorrect. SAP application servers do not contain business data. On Azure, a simple DR strategy is to create SAP application servers in the secondary region, then shut them down. Upon any configuration changes or kernel updates on the primary application server, the same changes must be applied to the virtual machines in the secondary region. For example, copy the SAP kernel executables to the DR virtual machines. For automatic replication of application servers to a secondary region, Azure Site Recovery is the recommended solution."
+    - content: "Central Services servers"
+      isCorrect: false
+      explanation: "Incorrect. This component of the SAP application stack does not persist business data. You can build a VM in the secondary region to run the Central Services role. To synchronize the two servers, you can use either Azure Site Recovery, to replicate the cluster nodes, or use a regularly scheduled copy job to copy /sapmnt to the DR side."
+    - content: "Database servers"
       isCorrect: true
-      explanation: "Correct. This configuration can't RPO = 0 because the HANA system replication mode is asynchronous."
-    - content: "Only if the regions are geographically adjacent"
-      isCorrect: false
-      explanation: "Incorrect. This configuration can't RPO = 0 because the HANA system replication mode is asynchronous."
+      explanation: "Correct. Use DBMS-specific mechanisms such as SQL Server Always On Availability Group or HANA System Replication to facilitate disaster recovery requirements. These mechanisms support multi-tier, asynchronous replication to a node in a separate Azure region, in addition to a local, two-node high availability setup with synchronous replication."
   - content: "Which configuration is recommended to implement SAP HANA high availability with RPO = 0 and resistance to natural catastrophes that affect large areas?"
     choices:
     - content: "Simple availability between two Azure regions"
