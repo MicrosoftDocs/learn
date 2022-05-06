@@ -2,7 +2,7 @@ You can use Azure Lab Services to create and manage classroom lab environments i
 
 ## Example scenario
 
-Suppose you work for a educational institution. You deliver classes on cybersecurity and data sciences software. Also, you provide practice environments after each class, where students develop and test code to consolidate their learning. Both classes and practice environments are currently hosted in your on-premises classrooms. You want to migrate these systems into the cloud.
+Suppose you work for an educational institution. You deliver classes on cybersecurity and data sciences software. Also, you provide practice environments after each class, where students develop and test code to consolidate their learning. Both classes and practice environments are currently hosted in your on-premises classrooms. You want to migrate these systems into the cloud.
 
 :::image type="content" source="../media/azure-lab-services-intro.png" alt-text="Screenshot that shows labs in Azure Lab Services.":::
 

@@ -2,7 +2,7 @@ Azure Lab Services includes a set of administrative objects that make it easy to
 
 In your educational institution, you want to reassure the board that cloud-based labs won't result in uncontrolled costs, either for virtual machine usage or administration. You'll investigate how administrators set up labs and ensure they remain within budget.
 
-Responsibilities for setting up, managing, and using using Azure Lab Services is neatly distributed among the three main roles, or personas: administrator, educator, and student, each of which has a different level of access:
+Responsibilities for setting up, managing, and using Azure Lab Services is neatly distributed among the three main roles, or personas: administrator, educator, and student, each of which has a different level of access:
 
 - **Administrator**. This profile is the most powerful user role and typically creates and owns the lab plan. The lab plan owner configures policies and gives permissions to instructors to create and run labs.
 - **Educator**. This profile, the Lab Creator role, is the instructor who runs labs and delivers training. The instructor creates new labs and configures the template virtual machines for it. They also add users to the lab. That is, they invite students to attend and grant them access.
