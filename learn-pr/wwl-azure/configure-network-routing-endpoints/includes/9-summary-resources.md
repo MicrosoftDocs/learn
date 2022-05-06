@@ -9,8 +9,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Virtual network traffic routing documentation](/azure/virtual-network/virtual-networks-udr-overview)
- -  [Learn - Manage and control traffic flow in your Azure deployment with routes](/learn/modules/control-network-traffic-flow-with-routes/)
+ -  [Learn - Manage and control traffic flow in your Azure deployment with routes (Sandbox)](/learn/modules/control-network-traffic-flow-with-routes/)
  -  [Learn - Introduction to Azure Private Links](/learn/modules/introduction-azure-private-link/)
