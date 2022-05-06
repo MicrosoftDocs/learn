@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Service Health 
   description: Introduction to Azure Service Health and how to get information from Azure Platform health.             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 9/1/2021   
+  ms.date: 05/04/2022   
   author: ricmmartins  
   ms.author: ricmart   
   ms.topic: interactive-tutorial  

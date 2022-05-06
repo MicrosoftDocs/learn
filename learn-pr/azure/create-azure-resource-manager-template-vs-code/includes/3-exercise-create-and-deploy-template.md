@@ -19,13 +19,13 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
     ```json
     {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {},
-    "functions": [],
-    "variables": {},
-    "resources": [],
-    "outputs": {}
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {},
+      "functions": [],
+      "variables": {},
+      "resources": [],
+      "outputs": {}
     }
     ```
 
@@ -108,7 +108,7 @@ az deployment group create \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The bottom section,  ```az  deployment group create```, deploys the template to Azure. Notice that the deployment name is `**blanktemplate**` with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The bottom section,  ```az  deployment group create```, deploys the template to Azure. Notice that the deployment name is `blanktemplate` with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
@@ -171,7 +171,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 Deploy the template to Azure by running the following commands. The ARM template doesn't have any resources yet, so you won't see resources created.
 
 ```azurepowershell
-$templateFile = "azuredeploy.json"
+$templateFile="azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="blanktemplate-"+"$today"
 New-AzResourceGroupDeployment `
@@ -179,7 +179,7 @@ New-AzResourceGroupDeployment `
   -TemplateFile $templateFile
 ```
 
-The top section of the preceding code sets Azure PowerShell variables, which includes the path to the deployment path and the name of the deployment. Then, the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `*blanktemplate*` with the date as a suffix.
+The top section of the preceding code sets Azure PowerShell variables, which includes the path to the deployment path and the name of the deployment. Then, the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `blanktemplate` with the date as a suffix.
 
 ::: zone-end
 
@@ -197,7 +197,7 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
     :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status.":::
 
-1. Select `**blanktemplate**` to see what resources were deployed. In this case, it will be empty because you didn't specify any resources in the template yet.
+1. Select `blanktemplate` to see what resources were deployed. In this case, it will be empty because you didn't specify any resources in the template yet.
 
     :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed.":::
 
@@ -256,7 +256,7 @@ az deployment group create \
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
 ```azurepowershell
-$templateFile = "azuredeploy.json"
+$templateFile="azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="addstorage-"+"$today"
 New-AzResourceGroupDeployment `

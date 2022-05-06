@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.source-control-for-machine-learning-projects
+metadata:
+  title: Source control for machine learning projects
+  description: "Source control for machine learning projects"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Source control for machine learning projects
+summary: Learn how to work with source control for your machine learning projects. Source control is an essential part of machine learning operations (MLOps).
+abstract: |
+  - Trunk-based development with Git.
+  - How to work with Git in Azure Repos and GitHub.
+  - How to develop locally with Visual Studio Code.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-devops
+- azure-machine-learning
+- github
+- vs-code
+units:
+- learn.wwl.source-control-for-machine-learning-projects.introduction
+- learn.wwl.source-control-for-machine-learning-projects.repositories-trunk-based-development
+- learn.wwl.source-control-for-machine-learning-projects.work-azure-repos-github-repos
+- learn.wwl.source-control-for-machine-learning-projects.develop-locally-visual-studio-code
+- learn.wwl.source-control-for-machine-learning-projects.verify-your-code-locally
+- learn.wwl.source-control-for-machine-learning-projects.knowledge-check
+- learn.wwl.source-control-for-machine-learning-projects.summary
+badge:
+  uid: learn.wwl.source-control-for-machine-learning-projects.badge

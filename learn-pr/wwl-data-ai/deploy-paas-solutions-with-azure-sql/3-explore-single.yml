@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-paas-solutions-with-azure-sql.explore-single
+title: Explore single SQL database
+metadata:
+  title: Explore single SQL database
+  description: "Explore single SQL database"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-explore-single.md)]

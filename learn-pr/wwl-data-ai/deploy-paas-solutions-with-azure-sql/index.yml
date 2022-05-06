@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-paas-solutions-with-azure-sql
+metadata:
+  title: Deploy PaaS solutions with Azure SQL
+  description: "Deploy PaaS solutions with Azure SQL"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy PaaS solutions with Azure SQL
+summary: Provision and deploy Azure SQL Database and Azure SQL managed instance. Select the appropriate options when performing a migration to the SQL PaaS  platform.
+abstract: |
+  After completing this module, you will be able to:
+  - Gain an understanding SQL Server in a Platform as a Service (PaaS) offering
+  - Understand PaaS provisioning and deployment options
+  - Understand elastic pools
+  - Examine Azure SQL Managed Instances
+  - Explore Azure SQL Edge
+  - Configure a template for PaaS deployment
+prerequisites: |
+  - Ability to create an on-premises SQL Server database, including the configuration of data files and log files.
+  - Experience creating and configuring resources using the Azure portal.
+iconUrl: /learn/achievements/deploy-azure-sql-database.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.deploy-paas-solutions-with-azure-sql.introduction
+- learn.wwl.deploy-paas-solutions-with-azure-sql.explain-paas-options-for-deploying-sql-server-azure
+- learn.wwl.deploy-paas-solutions-with-azure-sql.explore-single
+- learn.wwl.deploy-paas-solutions-with-azure-sql.deploy-elastic-pool
+- learn.wwl.deploy-paas-solutions-with-azure-sql.understand-sql-database-hyperscale
+- learn.wwl.deploy-paas-solutions-with-azure-sql.examine-sql-managed-instance
+- learn.wwl.deploy-paas-solutions-with-azure-sql.describe-sql-edge
+- learn.wwl.deploy-paas-solutions-with-azure-sql.exercise-deploy-azure-sql-database
+- learn.wwl.deploy-paas-solutions-with-azure-sql.knowledge-check
+- learn.wwl.deploy-paas-solutions-with-azure-sql.summary
+badge:
+  uid: learn.wwl.deploy-paas-solutions-with-azure-sql.badge

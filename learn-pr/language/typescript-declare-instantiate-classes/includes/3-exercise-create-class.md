@@ -1,6 +1,6 @@
 To create a class, define its members: properties, a `constructor`, accessors, and methods.
 
-Let's create a new class called `Car`. You can use the `Car` class on its own to create basic `Car` objects, or you can extend the `Car` class to create new classes for specific types of cars, like a `GasCar` or an `ElectricCar` class. These properties will inherit the properties and methods of the `Car` class, as well as have their own properties and methods.
+Let's create a new class called `Car`. You can use the `Car` class on its own to create basic `Car` objects, or you can extend the `Car` class to create new classes for specific types of cars, like a `GasCar` or an `ElectricCar` class. These classes will inherit the properties and methods of the `Car` class, as well as have their own properties and methods.
 
 1. Open the [Playground](https://www.typescriptlang.org/play?azure-portal=true) and remove any existing code.
 1. Create a new `class` by using the `class` keyword followed by the class name, `Car`. By convention, class names are PascalCase. Let's also add some comments to make it easier to add the class members in the correct places.
