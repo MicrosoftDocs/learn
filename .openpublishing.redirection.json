@@ -13044,6 +13044,41 @@
       "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/5-maintain-indexes.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/2-what-is-azure-purview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/2-what-is-microsoft-purview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/3-how-azure-purview-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/3-how-microsoft-purview-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/4-when-to-use-azure-purview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/4-when-to-use-microsoft-purview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/6-summary",
+      "redirect_document_id": true
     }
   ]
 }
