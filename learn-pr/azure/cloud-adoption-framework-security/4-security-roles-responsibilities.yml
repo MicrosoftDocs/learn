@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Who is responsible for security in the cloud?
+  - content: Who's responsible for security in the cloud?
     choices:
     - content: The CIO/CISO
       isCorrect: false
-      explanation: Incorrect. The CIO/CISO may lead organizational security efforts but they alone are not responsible for IT security for the entire organization.
+      explanation: Incorrect. The CIO/CISO might lead organizational security efforts, but they alone aren't responsible for IT security for the entire organization.
     - content: The cloud services provider
       isCorrect: false
-      explanation: Incorrect. The CSP plays a key role in cloud security but is not solely responsible to maintain the highest levels of security.
+      explanation: Incorrect. The cloud services provider plays a key role in cloud security but isn't solely responsible to maintain the highest levels of security.
     - content: The entire team
       isCorrect: true
       explanation: Correct. It takes effort on the part of every individual within an organization to maintain the highest levels of security.
     - content: The CEO
       isCorrect: false
-      explanation: Incorrect. The CEO may lead the company, but security is the responsibility of all the individuals within the organization.
+      explanation: Incorrect. The CEO might lead the company, but security is the responsibility of all the individuals within the organization.

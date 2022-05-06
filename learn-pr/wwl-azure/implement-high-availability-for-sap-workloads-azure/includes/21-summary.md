@@ -36,7 +36,7 @@ Now you have:
  -  [Use Certificates for a Database Mirroring Endpoint (Transact-SQL)](/sql/database-engine/database-mirroring/use-certificates-for-a-database-mirroring-endpoint-transact-sql)
  -  [KB 2854082: Update enables SQL Server Availability Group Listeners on Windows Server 2008 R2 and Windows Server 2012-based Microsoft Azure virtual machines](https://support.microsoft.com/kb/2854082)
  -  [Always On availability group on SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview)
- -  [Configure a load balancer for a SQL Server Always On availability group in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
+ -  [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
  -  [Oracle Data Guard](https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/preface.html#GUID-B6209E95-9DA8-4D37-9BAD-3F000C7E3590)
  -  [Utilize Azure infrastructure VM restart to achieve “higher availability” of an SAP system](/azure/virtual-machines/workloads/sap/sap-higher-availability-architecture-scenarios)
  -  [Service Level Agreement](https://azure.microsoft.com/support/legal/sla/)

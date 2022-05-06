@@ -1,6 +1,6 @@
 This phase should produce the following set of items:
 
-## 1. High-level design document containing:
+## High-level design document containing:
 
  -  An inventory of the planned (and, in the migration scenario, the existing) SAP landscape.
  -  A Responsibility Assignment Matrix (RACI) that defines the responsibilities and assignments of all parties involved in project delivery.
@@ -9,7 +9,7 @@ This phase should produce the following set of items:
  -  Networking architecture that provides connectivity between on-premises and Azure. You should consider aligning your design with the Virtual Datacenter blueprint for Azure.
  -  Security principles for running high business impact data in Azure. You should consider referencing Azure Security Documentation.
 
-## 2. Technical design document containing:
+## Technical design document containing:
 
  -  **A solution block diagram**.
  -  **Sizing of compute, storage, and networking components in Azure**. For SAP sizing of Azure VMs, consult [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533).
@@ -30,17 +30,17 @@ This phase should produce the following set of items:
      -  [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533). The note also provides SAP sizing of SAP-supported Azure VM SKUs.
      -  [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619). The note provides the Oracle support matrix on Azure, based on which, Oracle only supports Windows and Oracle Linux as guest OS in Azure VMs. This support statement applies to the SAP application layer running SAP instances as well. However, Oracle does not support high availability for SAP Central Services in Oracle Linux through Pacemaker. If you require high availability for ASCS on Oracle Linux, you need to leverage SIOS Protection Suite for Linux. For detailed SAP certification data, check [SAP Note \#1662610](https://launchpad.support.sap.com/#/notes/1662610). For Windows, the SAP supported Windows Failover Cluster Failover solution for SAP Central Services is supported in conjunction with Oracle as DBMS layer.
      -  [SAP Note \#2235581](https://launchpad.support.sap.com/#/notes/2235581), which provides the support matrix for SAP HANA on the different OS releases.
-     -  The [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html).
+     -  The [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas).
  -  **3-Tier designs for SAP production systems** (strongly recommended over 2-Tier designs). Combining (A)SCS and application servers on the same Azure VM is not recommended. Using multi-SID cluster configurations for SAP Central Services is supported with Windows as guest OS on Azure. Whereas SAP Central Services multi-SID cluster configurations are not supported with Linux operating systems on Azure. Documentation for the Windows guest OS case can be found in the following Microsoft docs:
     
      -  [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and shared disk on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-shared-disk)
      -  [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and file share on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-file-share)
 
-## 3. An inventory of all SAP interfaces.
+## An inventory of all SAP interfaces.
 
 Include all SAP and non-SAP interfaces.
 
-## 4. Design of foundational services, including:
+## Design of foundational services, including:
 
  -  Authentication and name resolution services (Active Directory and DNS).
  -  Network topology.
@@ -49,23 +49,23 @@ Include all SAP and non-SAP interfaces.
  -  Tagging strategy.
  -  Naming Convention for infrastructure components, including Azure VMs.
 
-## 5. Microsoft Premier Support Contract reference – including direct contact with MS Technical Account Manager (TAM).
+## Microsoft Premier Support Contract reference – including direct contact with MS Technical Account Manager (TAM).
 
 For SAP support requirements, refer to [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553).
 
-## 6. The list of Azure subscriptions and their respective core quotas.
+## The list of Azure subscriptions and their respective core quotas.
 
 If necessary, open support requests to increase quotas of Azure subscriptions.
 
-## 7. Data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios).
+## Data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios).
 
 For SAP NetWeaver systems, SAP offers guidelines on how to keep the volume of many data limited.
 
-## 8. Automated deployment approach.
+## Automated deployment approach.
 
 The goal of automation in infrastructure deployments on Azure is to ensure deterministic results. Many customers use PowerShell or Azure CLI based scripts and Azure Resource Manager templates. But there are other open-source technologies (such as Terraform and Ansible) that can be used to deploy Azure infrastructure for SAP and even install SAP software. Examples can be found on GitHub at:
 
- -  [Automated SAP Deployments in Azure Cloud](https://github.com/Azure/sap-hana)
+ -  [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation)
  -  [SAP HANA Azure Resource Manager Installation](https://github.com/AzureCAT-GSI/SAP-HANA-ARM)
 
 > [!NOTE]
