@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-json-file
+title: Create external database objects
+metadata:
+  title: Create external database objects
+  description: "Create external database objects"
+  ms.date: 05/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-external-objects.md)]
