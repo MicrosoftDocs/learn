@@ -35,7 +35,7 @@ When you make and commit changes to your application or to your infrastructure, 
 
 In addition to those environments, your sales team has its own *demo* environment that it uses for talking to customers. The sales team takes a copy of the production environment to create its demo environment. Your security and test teams occasionally create temporary copies of the production environment for penetration testing and performance testing, respectively.
 
-Your development team has its own sets of environments, too. It has *sandboxes* for development team members to use when they're exploring new features or experimenting with Azure services. The development team also creates environments for each GitHub pull request that it reviews and merges.
+Your development team has its own sets of environments, too. It has *sandboxes* for development team members to use when they're exploring new features or experimenting with Azure services. The development team also creates PR review environments for each GitHub pull request that it reviews and merges.
 
 ### Controlled environments
 
