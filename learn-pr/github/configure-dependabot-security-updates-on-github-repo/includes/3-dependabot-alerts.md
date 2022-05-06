@@ -68,7 +68,7 @@ After Dependabot alerts are enabled, you should create a process to regularly re
 The following steps explain how to resolve Dependabot alerts:
 
 1. Go to the main page of the repository.
-2. Select  the **Security** tab for the repository.
+2. Select the **Security** tab for the repository.
 3. Select **Dependabot alerts** from the security sidebar. A list of the Dependabot alerts for that repository will display.
 4. Select the alert you would like to view. 
 5. Review the alert details. In some cases, the alert may contain a pull request with an automated security update. 
