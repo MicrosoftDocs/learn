@@ -11,7 +11,7 @@ Azure deployment and configuration cover far more than applications, virtual mac
 - Assigning roles to allow users, groups, and service principals to access Azure resources
 - Configuring monitoring, including alerts, to observe your Azure resources and ensure that they behave the way you expect
 
-When you first start defining your infrastructure as code, you might not be aware that all of these items can be defined in your templates or definitions. As your use of automation matures, it's a good practice to define everything about your environment as code. By doing so, you can use a consistent, tested, and approved process for *all* of your Azure configuration. And because the code is versioned and tracked in a Git repository, you can review how your Azure environment has changed over time. You can trace the history of each change.
+When you first start defining your infrastructure as code, you might not be aware that all of these items can be defined in your templates or definitions. But as your use of automation matures, it's a good practice to define everything about your environment as code. By doing so, you can use a consistent, tested, and approved process for *all* of your Azure configuration. And because the code is versioned and tracked in a Git repository, you can review how your Azure environment has changed over time. You can use the Git repository to trace the history of each change.
 
 For example, suppose you need to configure your Azure Monitor alerts. At first, you might think that using automation to deploy alerts wouldn't make sense. But alerts are an important part of your Azure configuration. If an alert isn't created correctly, you might miss notifications of critical production issues. By defining your alerts in code:
 
