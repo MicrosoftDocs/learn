@@ -77,24 +77,24 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 
 1. Open Azure Storage Explorer, select the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
-    :::image type="content" source="../media/02.12-explorer-container.png" alt-text="Screenshot of the Microsoft Azure Storage Explorer":::
+    :::image type="content" source="../media/02.12-explorer-container.png" alt-text="Screenshot of the Microsoft Azure Storage Explorer with the storage account highlighted, blob containers selected, and the Create Blob Container option highlighted.":::
 
 1. With the container name selected, select the **Upload** button and select **Upload Folder...**.
 
-    :::image type="content" source="../media/02.13-explorer-upload.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/02.13-explorer-upload.png" alt-text="Screenshot of the new container with the upload button selected, and the upload folder option highlighed.":::
 
 1. Select the **ellipsis** to select a folder.
 
-    :::image type="content" source="../media/02.14-explorer-browse.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/02.14-explorer-browse.png" alt-text="Screenshot of the upload folder window with the ellipsis button next to the Selected folder line.":::
 
 1. Navigate to the extracted **BingCoronavirusQuerySet** folder (for example, Downloads\BingCoronavirusQuerySet) and select **Select Folder**.
 
-    :::image type="content" source="../media/02.15-explorer-folder.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/02.15-explorer-folder.png" alt-text="Screenshot showing folder browser with the BigCoronavirusQuerySet folder being selected from, for example, the downloads folder.":::
 
 1. Select **Upload**.
 
-    :::image type="content" source="../media/02.16-explorer-data.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/02.16-explorer-data.png" alt-text="Screenshot of the upload folder window with BingCoronavirusQuerySet as the selected folder and the upload button highlighted.":::
 
 1. Monitor the **Activities** until the transfer is complete.
 
-    :::image type="content" source="../media/02.17-explorer-transfer.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/02.17-explorer-transfer.png" alt-text="Screenshot of the activities window with the upload showing as successfully completed.":::
