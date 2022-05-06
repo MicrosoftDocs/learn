@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-policy
 metadata:
   title: Configure Azure policy
   description: "You will learn how to configure Azure Policy to implement compliance requirements."
-  ms.date: 11/25/2021
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
