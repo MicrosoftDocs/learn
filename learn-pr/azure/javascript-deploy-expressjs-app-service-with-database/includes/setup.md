@@ -1,4 +1,4 @@
-In this unit, understand the sample application and Visual Studio code extensions.
+In this unit, set up your local environment with the sample application and Visual Studio code extension.
 
 ## Required development tools
 
@@ -10,7 +10,7 @@ To develop an Express.js app, the following tools are used in this module:
 
 ## Express.js local development
 
-The GitHub repository, for all Express.js apps in this Learn path, is provided for you. You need bring the sample repository from GitHub to your local computer then use the subdirectory `3-Add-cosmosdb-mongodb` for this module. 
+The GitHub repository, for all Express.js apps in this Learn path, is provided for you. You need to bring the sample repository from GitHub to your local computer then use the subdirectory `3-Add-cosmosdb-mongodb` for this module. 
 
 You can choose to:
 

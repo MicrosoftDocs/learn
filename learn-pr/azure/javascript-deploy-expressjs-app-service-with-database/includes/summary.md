@@ -1,12 +1,12 @@
-In this Learn module, you deployed add a MongoDB-compatible database to an Express.js (Node.js) app hosted in Azure App Service from Visual Studio Code.
+In this Learn module, you deployed an Express.js web app integrated with MongoDB to Azure.
 
-You played the role of an experienced developer who was new to Azure. You learned how to deploy and configure the Azure resources needed to create and connect the database. In this module, you:
+You played the role of an experienced developer who is new to Azure. You learned how to deploy and configure the Azure resources and connect the database. In this module, you:
 
 - Used the free Learn sandbox subscription.
 - Set up and used the local development environment.
 - Created the web app and monitoring resources.
 - Created the Cosmos DB API for MongoDB resource.
-- Configured the App Service to use the connection string.
+- Configured the App Service to use the database connection string.
 
 You used Visual Studio Code to create and connect your database to your web app. Now, you can bring your own MongoDB-integrated Express.js app to App Service.
 

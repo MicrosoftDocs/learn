@@ -26,11 +26,11 @@ If your MongoDB installed, you can skip this section.
 
 ---
 
-## Set the Express.js connection properties
+## Review connection properties
 
-Configure the web app to use the local database.
+The web app is configured to use the local database.
 
-1. In Visual Studio Code, open the `.env.sample` file. It has the MongoDB connection string, database name and collection name. 
+1. In Visual Studio Code, open the `.env` file. It has the MongoDB connection string, database name and collection name. 
 
     ```
     PORT=8080
@@ -41,6 +41,18 @@ Configure the web app to use the local database.
     ```
 
 1. The sample application uses this file to connect to the local MongoDB database.  
+1. This file isn't deployed to Azure App Service, as defined by the `./.vscode/settings.json` file to ignore it.
+
+    ```
+    //./.vscode/settings.json
+     {
+        "appService.zipIgnorePattern": [
+            "node_modules{,/**}", 
+            ".env"
+        ],
+        "appService.deploySubpath": "."
+    }
+    ```
 
 ## Configure MongoDB extension
 
@@ -85,7 +97,7 @@ Use the MongoDB extension's playground feature to upload data into the local Mon
     npm start
     ```
 
-1. Open a web browser with the following URL to view the sample application:
+1. On your local host computer, open a web browser with the following URL to view the sample application:
 
     ```
     http://localhost:8080

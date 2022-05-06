@@ -1,8 +1,10 @@
-This unit creates the web app resources.  
+This unit briefly discusses the the web app resources.  
 
 ## Azure web-related resources
 
-The next exercise creates the App Service and Monitor resources for you and deploys the sample application
+Azure has several choices for hosting web applications. This module uses Azure App Service. The service hosts web applications and their configuration. The monitoring functionality for the web app is provided by the Azure Monitor service. 
+
+The next exercise creates these resources for you and deploys the sample application. 
 
 ## Set up Azure resources
 
@@ -16,4 +18,4 @@ You can create Azure resources in several ways:
 
 ## Learn sandbox 
 
-The Learn sandbox allows you to create and use Azure resources with no cost to you and without any credit card. The Learn sandbox is contained in a separate tenant. Once you have access to that tenant, you can create the Azure resources used in this module. 
+The Learn sandbox allows you to create and use Azure resources with no cost to you and without any credit card. The Learn sandbox is contained in a separate tenant. When you start your sandbox, you need to sign into the Learn sandbox tenant so that you have access to that tenant. With access to the tenant, you can create the Azure resources used in this module. 

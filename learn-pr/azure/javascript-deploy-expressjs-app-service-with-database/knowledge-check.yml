@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Check your Azure App Service and Azure CosmosDB knowledge for deploying a data-enabled Express.js (Node.js) app to Azure."
-  ms.date: 04/25/2022
+  description: "Check your knowledge for deploying a data-enabled Express.js (Node.js) app to Azure."
+  ms.date: 05/06/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

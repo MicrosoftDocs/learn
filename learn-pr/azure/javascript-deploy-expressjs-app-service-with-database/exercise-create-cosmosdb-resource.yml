@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise - Create Cosmos DB for MongoDB API"
   description: "Create your Azure Cosmos DB for MongoDB API resource and import data into the database."
-  ms.date: 04/25/2022
+  ms.date: 05/06/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

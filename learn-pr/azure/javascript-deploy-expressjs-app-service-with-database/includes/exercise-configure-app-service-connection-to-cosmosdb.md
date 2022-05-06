@@ -8,9 +8,6 @@ Connect your App Service resource to your Cosmos DB resource with a connection s
 1. Still in the Azure explorer, expand the **App Service** and expand your resource.
 1. Right-click **Application Settings** and select **Add New Setting**.
 1. Use the following table to create the 3 required app settings:
-1. Enter the **App Setting Name** as `MONGODB_URI_CONNECTION_STRING`.
-1. Paste the connection string.
-1. Create the database and collection app settings using the same technique with the following table:
 
     |App setting name|Value|
     |--|--|

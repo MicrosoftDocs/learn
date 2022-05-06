@@ -4,6 +4,8 @@ When you want to use a MongoDB-enabled application on Azure, create a Cosmos DB 
 
 The Azure Cosmos DB API for MongoDB provides an integration layer to use Cosmos DB as if it were a MongoDB database. 
 
+Using CosmosDB has many benefits:
+
 * Free pricing tier.
 * Use your MongoDB experience on the Azure Cloud.
 * Continue to use favorite client SDKs.
@@ -77,10 +79,10 @@ Once the resource is created, you can access this resource in various ways inclu
 
 The default resource doesn't have a database or a collection. You need to create these in the next exercise before you import the sample data into the resource. 
 
-## Azure database extension and MongDB extension
+## Azure database extension and MongoDB extension
 
 The Visual Studio Code extensions for Azure Databases and MongoDB have some overlap. 
 
-* **MongoDB**: The MongoDB extension is focused on allowing you to use MongoDB locally or remotely. As long as the connection string is correct set, the functionality of running playground scripts will work. This extension is best for tasks focused on MongoDB data interactions. In Azure terminology, this extension works with the **data plane**. 
+* **MongoDB**: The MongoDB extension is focused on allowing you to use MongoDB locally or remotely. As long as the connection string is correctly set, the functionality of running playground scripts will work. This extension is best for tasks focused on MongoDB data interactions. In Azure terminology, this extension works with the **data plane**. 
 * **Azure Database**: The Azure database extension allows you to manage your Azure databases. The functionality isn't specific to MongoDB. This extension is best for cloud-focused resource management tasks such as creating or deleting a database or collection or getting the connection string. In Azure terminology, this extension works with the **management plane** primarily, and the **data plane** secondarily. 
 
