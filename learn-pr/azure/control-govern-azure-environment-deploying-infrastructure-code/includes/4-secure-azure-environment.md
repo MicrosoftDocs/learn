@@ -20,7 +20,7 @@ Azure RBAC provides many built-in role types, including:
 It's important to grant access at an appropriate scope. If your organization follows the recommended practice of using dedicated Azure subscriptions for each environment, consider using Azure management groups to simplify the scope of your role assignments. If your organization uses a single Azure subscription for all of your environments, avoid granting humans access to the entire subscription. The reason is that all of the resources, including your controlled environments, would inherit that permission.
 
 > [!TIP]
-> Role assignments are Azure Resource Manager resources. This means that you can configure your Azure RBAC role assignments in code, such as by using Bicep.
+> Role assignments are Azure Resource Manager (ARM) resources. This means that you can configure your Azure RBAC role assignments in code, such as by using Bicep.
 
 When you plan your role assignments, you need to decide what makes sense for your organization. For example, suppose your organization creates separate subscriptions for each of your environments. You might choose to grant your administrators and developers *Reader* access to your controlled environments. With that role, they can access the production environment within the Azure portal to review the configuration of your resources, view metrics and logs, and investigate problems or bugs without making any changes to the environment.
 
