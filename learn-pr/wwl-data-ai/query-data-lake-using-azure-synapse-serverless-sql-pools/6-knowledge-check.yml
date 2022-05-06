@@ -30,7 +30,7 @@ quiz:
     - content: "&"
       isCorrect: false
       explanation: "Incorrect. The ampersand character is used to concatenate fields in the files together."
-    - content: "*"
+    - content: "\\*"
       isCorrect: true
       explanation: "Correct. The asterisk character in file path can be used to select all the file or folders that match rest of the path."
     - content: "/"
