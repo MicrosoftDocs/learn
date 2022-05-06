@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.intro-to-microsoft-purview
+metadata:
+  moduleType: introduction        
+  title: Introduction to Microsoft Purview          
+  description: "Introduction to Microsoft Purview"
+  ms.date: 5/05/2022 
+  author: whhender 
+  ms.author: whhender
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure 
+  ms.service: purview
+
+title: Introduction to Microsoft Purview
+
+summary: "In this module, you will evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs."
+
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Microsoft Purview is appropriate for data discovery and governance needs.
+    - Describe how the features of Microsoft Purview work to provide data discovery and governance.
+
+prerequisites: |
+  - Knowledge of Microsoft Azure accounts and services
+  - Knowledge of various data sources such as SQL Server, Cosmos DB, etc.
+  - Knowledge of the concepts around data governance.
+
+iconUrl: /learn/achievements/introduction-to-azure-purview.svg
+
+levels:
+  - beginner
+
+roles:
+  - developer
+  - data-analyst
+  - data-analyst
+  - data-scientist
+  - database-administrator
+  - administrator
+  - solution-architect
+  - ai-engineer
+
+products:
+- azure-purview
+
+units:
+- learn.intro-to-microsoft-purview.introduction
+- learn.intro-to-microsoft-purview.what-is-microsoft-purview
+- learn.intro-to-microsoft-purview.how-microsoft-purview-works
+- learn.intro-to-microsoft-purview.when-to-use-microsoft-purview
+- learn.intro-to-microsoft-purview.knowledge-check
+- learn.intro-to-microsoft-purview.summary
+badge:
+  uid: learn.introduction-to-azure-purview.badge
