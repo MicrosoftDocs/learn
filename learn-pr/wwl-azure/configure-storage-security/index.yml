@@ -3,7 +3,7 @@ uid: learn.wwl.configure-storage-security
 metadata:
   title: Configure storage security
   description: "You will learn how to configure common storage security features like storage access signatures."
-  ms.date: 05/05/2022
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
