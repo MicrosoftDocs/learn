@@ -24,5 +24,8 @@ products:
 - github
 modules:
 - learn.wwl.introduction-development-operations-principles-for-machine-learn
+- learn.wwl.source-control-for-machine-learning-projects
+- learn.wwl.automate-machine-learning-workflows
+- learn.wwl.continuous-deployment-for-machine-learning
 trophy:
   uid: learn.wwl.introduction-to-machine-learning-operations-mlops.trophy
