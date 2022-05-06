@@ -36,7 +36,7 @@ To add an approval check within GitHub, navigate to the environment you created:
 
 Whenever a workflow in GitHub Actions wants to deploy to an environment with an approval check, the approvers will get notified that their review is requested. 
 
-![Screenshot of requested approval in Azure Pipelines.](../media/03-05-review-github.png)
+![Screenshot of requested approval in GitHub Actions.](../media/03-05-review-github.png)
 
 After you as an approver have reviewed the deployment, the workflow will run.
 

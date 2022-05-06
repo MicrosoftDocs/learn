@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/05/2022
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. You should deploy to production when everything has been tested."
     - content: "Pre-production"
       isCorrect: false
-      explanation: "Incorrect. You should deploy the model to pre-production when its ready for production, but you want to test it before it moves to production."
+      explanation: "Incorrect. You should deploy the model to pre-production when it's ready for production, but you want to test it before it moves to production."
     - content: "Development"
       isCorrect: true
       explanation: "Correct. A safe first step is to train a model in the development environment, triggered by an Azure Pipeline."
