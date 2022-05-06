@@ -19,7 +19,8 @@ prerequisites: |
   Before starting this learning path you should have knowledge of:
   - Analytical data workloads in Microsoft Azure
   - Querying data with Transact-SQL
-  If you do not meet these prerequisites, consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-porta=true) and [Get started querying with Transact-SQL](/earn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths first.
+  &gt; [!Tip]
+  &gt; If you do not meet these prerequisites, consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-porta=true) and [Get started querying with Transact-SQL](/earn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths first.
 iconUrl: /learn/achievements/query-data-in-the-lake-using-azure-synapse-serverless-sql-pools.svg
 levels:
 - beginner
