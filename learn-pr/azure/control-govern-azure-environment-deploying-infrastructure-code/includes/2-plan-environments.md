@@ -16,7 +16,7 @@ When you first start defining your infrastructure as code, you might not be awar
 For example, suppose you need to configure your Azure Monitor alerts. At first, you might think that using automation to deploy alerts wouldn't make sense. But alerts are an important part of your Azure configuration. If an alert isn't created correctly, you might miss notifications of critical production issues. By defining your alerts in code:
 
 - Your team members can review the alerts and their configuration.
-- You can deploy the alerts to non-production environments first, if you need to test them.
+- You can deploy the alerts to non-production environments first, so you can test them.
 - You have full traceability of the changes to your Azure configuration.
 
 ## Environments
