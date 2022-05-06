@@ -94,14 +94,14 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 1. Replace the `UpdateSauce` method with the following code:
 
     ```csharp
-    public void UpdateSauce(int PizzaId, int SauceId)
+    public void UpdateSauce(int pizzaId, int sauceId)
     {
-        var pizzaToUpdate = _context.Pizzas.Find(PizzaId);
-        var sauceToUpdate = _context.Sauces.Find(SauceId);
+        var pizzaToUpdate = _context.Pizzas.Find(pizzaId);
+        var sauceToUpdate = _context.Sauces.Find(sauceId);
 
         if (pizzaToUpdate is null || sauceToUpdate is null)
         {
-            throw new NullReferenceException("Pizza or sauce does not exist");
+            throw new InvalidOperationException("Pizza or sauce does not exist");
         }
 
         pizzaToUpdate.Sauce = sauceToUpdate;
@@ -114,20 +114,20 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     - References to an existing `Pizza` and `Sauce` are created using `Find`. `Find` is an optimized method to query records by their primary key. `Find` searches the local entity graph first before querying the database.
     - The `Pizza.Sauce` property is set to the `Sauce` object.
-    - An `Update` method call is unnecessary because EF Core detect that we set the `Sauce` property on `Pizza`.
+    - An `Update` method call is unnecessary because EF Core detects that we set the `Sauce` property on `Pizza`.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `AddTopping` method with the following code:
 
     ```csharp
-    public void AddTopping(int PizzaId, int ToppingId)
+    public void AddTopping(int pizzaId, int toppingId)
     {
-        var pizzaToUpdate = _context.Pizzas.Find(PizzaId);
-        var toppingToAdd = _context.Toppings.Find(ToppingId);
+        var pizzaToUpdate = _context.Pizzas.Find(pizzaId);
+        var toppingToAdd = _context.Toppings.Find(toppingId);
 
         if (pizzaToUpdate is null || toppingToAdd is null)
         {
-            throw new NullReferenceException("Pizza or topping does not exist");
+            throw new InvalidOperationException("Pizza or topping does not exist");
         }
 
         if(pizzaToUpdate.Toppings is null)
@@ -137,7 +137,6 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
         pizzaToUpdate.Toppings.Add(toppingToAdd);
 
-        _context.Pizzas.Update(pizzaToUpdate);
         _context.SaveChanges();
     }
     ```
@@ -146,7 +145,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     - References to an existing `Pizza` and `Topping` are created using `Find`.
     - The `Topping` is added to the `Pizza.Toppings` collection. A new collection is created if it doesn't exist.
-    - The `Update` method flags the `pizzaToUpdate` entity as updated in EF Core's object graph. This explicit use of `Update` is required because if a new `Pizza.Toppings` collection isn't created, you're modifying the contents of an `Pizza.Toppings` collection. EF Core can automatically detect setting properties on `Pizza` directly, but it can't detect that you called `Add` on an existing collection.
+    - The `Update` method flags the `pizzaToUpdate` entity as updated in EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `DeleteById` method with the following code:
@@ -272,10 +271,8 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
                 {
                     var services = scope.ServiceProvider;
                     var context = services.GetRequiredService<PizzaContext>();
-                    if (context.Database.EnsureCreated())
-                    {
-                        DbInitializer.Initialize(context);
-                    }
+                    context.Database.EnsureCreated();
+                    DbInitializer.Initialize(context);
                 }
             }
         }

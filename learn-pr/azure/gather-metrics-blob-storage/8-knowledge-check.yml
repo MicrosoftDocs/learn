@@ -3,8 +3,8 @@ uid: learn.azure.gather-metrics-from-blob-storage.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Questions about storage account metrics and logging for blobs
-  ms.date: 03/26/2019
+  description: Questions about storage account metrics for blobs
+  ms.date: 05/05/2022
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
@@ -70,17 +70,4 @@ quiz:
     - content: Internal users, individually and as part of a security group, and external users
       isCorrect: false
       explanation: 'Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group.'
-  - content: Which services is Azure Storage Analytics logging available for?
-    choices:
-    - content: Blob Storage only
-      isCorrect: false
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
-    - content: Blob Storage and Queue Storage
-      isCorrect: false
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
-    - content: Blob Storage, Queue Storage, and Table Storage
-      isCorrect: true
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
-    - content: Blob Storage, Queue Storage, and Azure Files
-      isCorrect: false
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
+

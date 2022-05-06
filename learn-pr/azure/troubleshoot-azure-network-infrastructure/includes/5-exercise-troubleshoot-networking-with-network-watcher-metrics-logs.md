@@ -40,10 +40,8 @@ Now, create a storage account for the NSG flow logs.
     | **Instance details** |
     | Storage account name | Create a unique name |
     | Region | Select the same region as your resource group |
-    | Performance | Standard |
-    | Redundancy | Geo-redundant storage (GRS) |
 
-1. Go to the **Advanced** tab, and enter the following value.
+1. Select **Next: Advanced** tab, and ensure that the following value is set.
 
     | Setting | Value |
     | --- | --- |

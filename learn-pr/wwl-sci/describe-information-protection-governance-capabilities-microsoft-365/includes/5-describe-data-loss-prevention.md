@@ -1,4 +1,7 @@
-Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to prevent data loss by detecting risky behavior and preventing sensitive information from being shared inappropriately. Admins can use data loss prevention policies, available in Microsoft 365 compliance center, to help their organization.
+> [!NOTE]
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Office 365 Data Loss Prevention is now Microsoft Purview Data Loss Prevention. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+
+Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to prevent data loss by detecting risky behavior and preventing sensitive information from being shared inappropriately. Admins can use data loss prevention policies, available in the Microsoft Purview compliance portal, to help their organization.
 
 Data loss prevention (DLP) is a way to protect sensitive information and prevent its inadvertent disclosure. With DLP policies, admins can:
 
@@ -33,7 +36,9 @@ The rules inside the policy are prioritized in how they’re implemented. For ex
 
 ## What is endpoint data loss prevention?
 
-Endpoint data loss prevention is how the protection and activity monitoring capabilities of DLP for sensitive content can be extended to Windows 10 devices.  Admins can choose to target Windows 10 when creating a DLP policy. Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content, including:
+Endpoint data loss prevention (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
+
+Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content.  Listed below are a few examples:
 
 - Creating an item
 - Renaming an item
@@ -54,7 +59,7 @@ Data loss prevention capabilities have been extended to Microsoft Teams chat and
 
 :::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
 
-The user can then find out more information about why their message was blocked by selecting the "What can I do?" link, and take appropriate action:
+The user can then find out more about why their message was blocked by selecting the "What can I do?" link, and take appropriate action:
 
 :::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="The user can find more information about why their message was blocked, and take recommended actions.":::
 

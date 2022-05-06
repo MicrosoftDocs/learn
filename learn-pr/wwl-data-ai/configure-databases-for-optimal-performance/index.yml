@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.configure-databases-for-optimal-performance
+metadata:
+  title: Configure databases for optimal performance
+  description: "Configure databases for optimal performance"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure databases for optimal performance
+summary: Implement tasks for both IaaS and PaaS to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database. Control database-level configuration options. Explore Intelligent Query Processing.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand database scoped configuration options
+  - Understand maintenance tasks related to indexing and statistics
+  - Understand the features of Intelligent Query Processing (IQP)
+  - Explore the automatic tuning feature in Azure
+prerequisites: |
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+  - Basic understanding of structure and usage of SQL Server indexes.
+iconUrl: /learn/achievements/describe-performance-related-maintenance-tasks-in-sqlserver.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.configure-databases-for-optimal-performance.introduction
+- learn.wwl.configure-databases-for-optimal-performance.explore-database-maintenance-checks
+- learn.wwl.configure-databases-for-optimal-performance.describe-database-scoped-configuration-options
+- learn.wwl.configure-databases-for-optimal-performance.describe-automatic-tuning
+- learn.wwl.configure-databases-for-optimal-performance.describe-intelligent-query-processing
+- learn.wwl.configure-databases-for-optimal-performance.exercise
+- learn.wwl.configure-databases-for-optimal-performance.knowledge-check
+- learn.wwl.configure-databases-for-optimal-performance.summary
+badge:
+  uid: learn.wwl.configure-databases-for-optimal-performance.badge

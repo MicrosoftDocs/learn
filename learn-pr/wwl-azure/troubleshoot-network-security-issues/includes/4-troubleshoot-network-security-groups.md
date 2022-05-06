@@ -282,7 +282,7 @@ This rule allows traffic from the AsgLogic ASG to the AsgDb ASG. The priority fo
 
 | Priority| Source| Source ports| Destination| Destination ports| Protocol| Access|
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 110| AsgLogic| *| AsgDb| 1433| TCP| Deny|
+| 110| AsgLogic| *| AsgDb| 1433| TCP| Allow|
 ||||||||
 
 The rules that specify an ASG as the source or destination are only applied to the network interfaces that are members of the ASG. If the network interface is not a member of an ASG, the rule is not applied to the network interface, even though the network security group is associated to the subnet.
