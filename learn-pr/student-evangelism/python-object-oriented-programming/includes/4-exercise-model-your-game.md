@@ -84,6 +84,8 @@ The preceding table tells the story of how the game progresses through different
    ```
 
    > [!TIP]
+   > You can drag the separator between the editor and the terminal to adjust the space available.
+   > You can close the editor from the `...` menu.
    > You can type `code .` in the terminal to reopen the editor.
 
    We gave the `Participant` class the attributes `points` and `choice` as indicated by the first and third line of our table.
