@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: PIM prevents all unauthorized changes to your Azure environment.
       isCorrect: false
-      explanation: Incorrect. PIM doesn't prevent all unauthorized changes. It helps reduce them by giving users a small set of permissions and temporarily elevating those permissions when required.
+      explanation: Incorrect. PIM doesn't prevent all unauthorized changes. It helps reduce them by giving users a small set of permissions and temporarily elevating their assigned permissions when required.
     - content: PIM enables users to use a separate account to access your Azure environment with higher permissions than they usually have.
       isCorrect: false
       explanation: Incorrect. Unlike break-glass accounts, PIM doesn't require a separate user account.
