@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2021
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -22,32 +21,32 @@ quiz:
     choices:
     - content: "Connected"
       isCorrect: true
-      explanation: "That's correct. The peering is not successfully established until the peering status for both virtual network peerings is Connected."
+      explanation: "Correct. The peering is not successfully established until the peering status for both virtual network peerings is Connected."
     - content: "Initiated"
       isCorrect: false
-      explanation: "That's incorrect. The Initiated status is shown when the peering is first created."
+      explanation: "Incorrect. The Initiated status is shown when the peering is first created."
     - content: "Peered"
       isCorrect: false
-      explanation: "That's incorrect. Peered is not a virtual network status."
+      explanation: "Incorrect. Peered is not a virtual network status."
   - content: "Which of the following allows peered virtual networks to share the gateway and get access to resources?"
     choices:
     - content: "Gateway transit"
       isCorrect: true
-      explanation: "That's correct. Gateway transit allows peered virtual networks to share the gateway and get access to resources."
+      explanation: "Correct. Gateway transit allows peered virtual networks to share the gateway and get access to resources."
     - content: "Point-to-site connectivity"
       isCorrect: false
-      explanation: "That's incorrect. Point-to-site creates a secure connection to a virtual network from an individual client computer."
+      explanation: "Incorrect. Point-to-site creates a secure connection to a virtual network from an individual client computer."
     - content: "Transitivity"
       isCorrect: false
-      explanation: "That's incorrect. Transitivity refers to virtual networks communicating with the peers of their peers."
+      explanation: "Incorrect. Transitivity refers to virtual networks communicating with the peers of their peers."
   - content: "Which of the following best describes virtual network peering?"
     choices:
     - content: "Creating a virtual network disrupts other resources."
       isCorrect: false
-      explanation: "That's incorrect. There is no downtime to resources in either virtual network when creating the peering, or after the peering is created."
+      explanation: "Incorrect. There is no downtime to resources in either virtual network when creating the peering, or after the peering is created."
     - content: "Traffic between the virtual networks is kept on the Microsoft backbone network."
       isCorrect: true
-      explanation: "That's correct. The Azure backbone handles traffic between virtual networks."
+      explanation: "Correct. The Azure backbone handles traffic between virtual networks."
     - content: "Peered virtual networks must be in the same region."
       isCorrect: false
-      explanation: "That's incorrect. Global virtual network peering connects virtual networks that are in different Azure regions."
+      explanation: "Incorrect. Global virtual network peering connects virtual networks that are in different Azure regions."

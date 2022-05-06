@@ -1,4 +1,4 @@
-Programming with Transact-SQL can be as simple as building a series of SELECT statements, or more complex, applying batches, conditional logic, and loops to control the flow of your program.
+Programming with Transact-SQL can be as simple as building a series of SELECT statements or more complex such as applying batches, conditional logic, and loops to control the flow of your program.
 
 In this module, you've learned how to:
 
