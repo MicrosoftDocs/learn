@@ -1,5 +1,5 @@
 > [!NOTE]
-> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. The Microsoft 365 compliance center is now the Microsoft Purview Compliance portal.For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. The Microsoft 365 compliance center is now the Microsoft Purview Compliance portal. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
 The Microsoft Purview compliance portal brings together all of the tools and data that are needed to help understand and manage an organization’s compliance needs.
 
@@ -44,4 +44,4 @@ In this interactive guide, you'll explore some of the capabilities of the Micros
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
 
-[![Interactive guide](../media/3-compliance-center-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-compliance-center/index.html?azure-portal=true)
+[![Interactive guide](../media/compliance-portal-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-compliance-center/index.html?azure-portal=true)
