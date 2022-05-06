@@ -14,6 +14,6 @@ Microsoft Purview Data Map provides the foundation for data discovery and data g
 ### Data Catalog
 With the Microsoft Purview Data Catalog, business and technical users can quickly and easily find relevant data using a search experience with filters based on various lenses like glossary terms, classifications, sensitivity labels and more.
 
-### Data Insights
-With the Microsoft Purview Data Insights, data officers and security officers can get a bird’s eye view and at a glance understand what data is actively scanned, where sensitive data is, and how it moves.
+### Data Estate Insights
+With the Microsoft Purview Data Estate Insights, data officers and security officers can get a bird’s eye view and at a glance understand what data is actively scanned, where sensitive data is, and how it moves.
 
