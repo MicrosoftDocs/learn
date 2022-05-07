@@ -1,4 +1,4 @@
-The goal of this module was to explain how you can use GitHub Dependabot to help manage your dependencies and identify vulnerabilities that can impact the security of your project. 
+The goal of this module was to explain how you can use GitHub Dependabot to help manage your dependencies and identify vulnerabilities that can affect the security of your project. 
 
 GitHub Dependabot is enabled by default for all public repositories. You can also use the Dependabot features in private repositories by enabling the dependency graph and Dependabot. When enabled, Dependabot alerts notify you of vulnerabilities in your dependencies and security updates will automatically generate pull requests that try to fix them. Version updates will also automatically generate pull requests to update your dependencies to the latest non-breaking version.
 
