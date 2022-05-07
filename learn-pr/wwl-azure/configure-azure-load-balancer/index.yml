@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-load-balancer
 metadata:
   title: Configure Azure Load Balancer
   description: "You will learn how to configure an internal or public load balancer."
-  ms.date: 09/14/2021
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
