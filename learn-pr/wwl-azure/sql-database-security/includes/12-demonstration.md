@@ -12,7 +12,7 @@ In this task, we will explore vulnerability assessments, data discovery and clas
 Skip this section if you already have a database to work with.
 
 1.  In the **Portal**, search for and a select **SQL databases**.
-2.  On the **Basics** tab, give you database a name, and create a new server.
+2.  On the **Basics** tab, give your database a name, and create a new server.
 3.  On the **Additional settings** tab, select **Sample** for **Use existing data**. Also, **Enable advanced data security** and **Start free trial**.
 4.  **Review &amp; create**, and then **Create**.
 5.  Wait for the database to deploy.
@@ -20,7 +20,7 @@ Skip this section if you already have a database to work with.
 ### Review Vulnerability Assessments
 
 1.  Navigate to your SQL database.
-2.  Under **Security** select **Advanced Data Security**.
+2.  Under **Security** select **Microsoft Defender for Cloud**.
 3.  Select **Vulnerability Assessment**.
 4.  Review vulnerability assessments and the risk levels.
 5.  Click **Scan**.
