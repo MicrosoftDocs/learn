@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 metadata:
-  title: Create metadata objects in Azure Synapse serverless SQL pools
-  description: "Create metadata objects in Azure Synapse serverless SQL pools"
-  ms.date: 01/05/2022
+  title: Create a lake database in Azure Synapse Analytics
+  description: "Create a lake database in Azure Synapse Analytics"
+  ms.date: 05/07/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create metadata objects in Azure Synapse serverless SQL pools
-summary: Learn how you can create objects to help you query data or optimize your existing data transformation pipeline through Azure Synapse serverless SQL pools.
+title: Create a lake database in Azure Synapse Analytics
+summary: Why choose between working with files in a data lake or a relational database schema? With lake databases in Azure Synapse Analytics, you can combine the benefits of both.
 abstract: |
-  After the completion of this module, you will be able to:
-  - Create databases in Azure Synapse serverless SQL pools
-  - Create and manage credentials in Azure Synapse serverless SQL pools
-  - Create external data sources in Azure Synapse serverless SQL pools
-  - Create external tables  in Azure Synapse serverless SQL pools
-  - Create views in Azure Synapse serverless SQL pools
+  After completing this module, you will be able to:
+  - Understand lake database concepts and components
+  - Describe database templates in Azure Synapse Analytics
+  - Create a lake database
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+  Before starting this learning path you should have the following prerequisite knowledge. If you do not meet these prerequisites, consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-porta=true) and [Get started querying with Transact-SQL](/earn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths first:
+  - Analytical data workloads in Microsoft Azure
+  - Querying data with Transact-SQL
 iconUrl: /learn/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools.svg
 levels:
 - intermediate
