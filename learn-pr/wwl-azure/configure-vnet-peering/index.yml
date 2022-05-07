@@ -3,7 +3,7 @@ uid: learn.wwl.configure-vnet-peering
 metadata:
   title: Configure virtual network peering
   description: "You will learn to configure a VNet peering connection and address transit and connectivity concerns."
-  ms.date: 09/08/2021
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

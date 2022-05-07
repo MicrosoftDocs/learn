@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-troubleshoot-azure-for-sap-workloads
 metadata:
   title: Monitor and troubleshoot Azure for SAP workloads
   description: Monitor and troubleshoot Azure for SAP workloads
-  ms.date: 10/25/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ title: Monitor and troubleshoot Azure for SAP workloads
 prerequisites: ""
 summary: |
   SAP professionals need to monitor and support Azure for SAP workloads. These modules explore monitoring Azure on SAP, and Azure virtual machine licensing, pricing, and support.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/monitor-and-troubleshoot-azure-for-sap-workloads.svg
 levels:
 - advanced
 roles:

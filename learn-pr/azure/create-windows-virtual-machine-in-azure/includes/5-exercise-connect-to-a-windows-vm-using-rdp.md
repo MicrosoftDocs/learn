@@ -4,9 +4,9 @@ Recall our scenario is a video-processing system. Our platform receives files th
 
 There are a few things we would need to configure to support this scenario:
 
-- Install FTP and open the ports it needs to communicate
-- Install the proprietary video codec unique to the city's camera system
-- Install our transcoding service that processes uploaded videos
+- Install FTP and open the ports it needs to communicate.
+- Install the proprietary video codec unique to the city's camera system.
+- Install our transcoding service that processes uploaded videos.
 
 Many of these are typical administrative tasks we won't actually cover here, and we don't have software to install. Instead, we will walk through the steps and show you how you _could_ install custom or third-party software using Remote Desktop. Let's start by getting the connection information.
 
@@ -26,10 +26,10 @@ You can enter this information into the RDP client, or download a pre-configured
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM.
 
-    - You can see whether the VM is running
-    - Stop or restart it
-    - Get the public IP address to connect to the VM
-    - See the activity of the CPU, disk, and network
+    - You can see whether the VM is running.
+    - Stop or restart it.
+    - Get the public IP address to connect to the VM.
+    - See the activity of the CPU, disk, and network.
 
 1. In the top menu bar, select **Connect**, and from the dropdown list, select **RDP**. The **Connect** pane appears for your virtual machine.
 
@@ -64,7 +64,7 @@ The first time you connect to a Windows server VM, it will launch Server Manager
 
 This is where we would add the Web Server role to the server. This will install IIS and as part of the configuration you would turn off HTTP requests and enable the FTP server. Or, we could ignore IIS, and install a third-party FTP server. We'd then configure the FTP server to allow access to a folder on our big data drive we added to the VM.
 
-Since we aren't going to actually configure that here, just close Server Manager.
+Because we aren't going to actually configure that here, just close Server Manager.
 
 ## Install custom software
 
