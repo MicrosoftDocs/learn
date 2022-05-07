@@ -947,3 +947,18 @@ achievements:
   title: Evaluate strategies for migrating SQL Databases to Azure
   summary: Describe database migration options and tools on Azure. Understand how compatibility level affects database behavior. Describe Azure private and public preview options.
   iconUrl: /learn/achievements/4-evaluate-strategies-for-moving-to-azure.svg
+- uid: learn.wwl.deploy-sql-server-virtual-machine.badge
+  type: badge
+  title: Deploy SQL Server in a virtual machine
+  summary: Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options.
+  iconUrl: /learn/achievements/deploy-sql-server-in-a-virtual-machine.svg
+- uid: learn.wwl.deploy-azure-sql-database.badge
+  type: badge
+  title: Deploy Azure SQL Database
+  summary: Provision and deploy Azure SQL Database and Azure SQL managed instance. Select the appropriate options when performing a migration to the SQL PaaS  platform.
+  iconUrl: /learn/achievements/deploy-azure-sql-database.svg
+- uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server.badge
+  type: badge
+  title: Describe performance-related maintenance tasks in SQL Server
+  summary: Implement tasks for both IaaS and PaaS  to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database.
+  iconUrl: /learn/achievements/describe-performance-related-maintenance-tasks-in-sqlserver.svg

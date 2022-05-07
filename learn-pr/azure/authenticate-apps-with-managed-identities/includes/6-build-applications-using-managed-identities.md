@@ -1,5 +1,3 @@
-Managed identity delegates the responsibility to create and manage identity information for your services and other resources to Azure. Azure stores identity information in Azure Active Directory (Azure AD). You can then assign access policies. These policies determine the identities that access your resources.
-
 You already created an Azure VM and assigned a system-managed identity. The apps that run on this VM should authenticate requests to Azure resources. Instead of using passwords to shared keys, you'll use the system-assigned managed identity.
 
 In this unit, you'll learn more about how applications can use managed identities for authentication. You'll see how to use Azure Key Vault to define an authorization policy. And you'll enable an authenticated identity to read secret information.
@@ -59,7 +57,7 @@ az identity delete \
 
 ## Use managed identity with Azure Key Vault
 
-Using the [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/identity/identity/README.md#defaultazurecredential) provider as follows, we can authenticate with a managed identity when in production, and also leverage local developer credentials during development. To use it, you'll need to install the Azure.Identity package:
+The [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/identity/identity/README.md#defaultazurecredential) provider allows you to use managed identities for authentication when our application is deployed to Azure, and use local developer credentials during development. To use DefaultAzureCredential, you'll need to install the Azure.Identity package:
 
 ```PowerShell
 dotnet install Azure.Identity

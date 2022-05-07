@@ -63,13 +63,13 @@ http.createServer(function(request, response) {
 console.log(`Server running at http://localhost:${port}`);
 ```
 
-This example code creates a server that listens on port 3000 of your computer and answer every request with a "Hello World!" message.
+This example code creates a server that listens on port 3000 of your computer and answers every request with a "Hello World!" message.
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-To create a new web application starter using a few lines of code, you can use Flask, which is a commonly used web application framework. Flask can be installed using the command:
+To create a new web application starter using a few lines of code, you can use Flask, which is a commonly used web application framework. You can install Flask using the following command:
 
 ```bash
 pip install flask
@@ -100,7 +100,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-These commands will allow you to initialize a local Git repository, and create a first commit with your code. The immediate benefits you gain is the ability to keep a history of your changes with commits. Later on, you'll also be able to synchronize your local repository with a remote repository, for example hosted on GitHub. This will allow you to set up continuous integration and continuous deployment (CI/CD). While using a source control repository is recommended for production applications, it's not a requirement to be able to deploy an application to Azure App Service.
+These commands will allow you to initialize a local Git repository and create a first commit with your code. You immediately gain the benefit of the ability to keep a history of your changes with commits. Later on, you'll also be able to synchronize your local repository with a remote repository, for example hosted on GitHub. This will allow you to set up continuous integration and continuous deployment (CI/CD). While using a source-control repository is recommended for production applications, it's not a requirement to be able to deploy an application to Azure App Service.
 
 > [!NOTE]
-> Using CI/CD enables more frequent code deployment in a reliable manner, by automating builds, tests and deployments for every code change. It allows delivering new features and bug fixes for your application faster and more effectively.
+> Using CI/CD enables more frequent code deployment in a reliable manner by automating builds, tests, and deployments for every code change. It allows delivering new features and bug fixes for your application faster and more effectively.
