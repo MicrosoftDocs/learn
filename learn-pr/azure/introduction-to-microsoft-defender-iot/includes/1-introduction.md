@@ -1,6 +1,6 @@
 Microsoft Defender for IoT provides security for business-critical infrastructures that run operational technology (OT) networks.
 
-Defender for IoT brings OT and IT realities together to with shared governance and security tools and technology. Both operational and security teams can use Defender for IoT to get a single view of all OT and IT assets and network zones.
+Defender for IoT brings OT and IT realities together with shared governance, security tools, and technology. Both operational and security teams can use Defender for IoT to get a single view of all OT and IT assets and network zones.
 
 Operational and security teams can use a single interface to monitor and protect the devices and systems in each zone, as well as the connections between them.
 
