@@ -39,12 +39,12 @@ quiz:
     - content: "An Azure Active Directory account"
       isCorrect: false
       explanation: "Incorrect. An Azure AD Account is an identity created through Azure AD or another Microsoft cloud service, such as Office 365. Identities are stored in Azure AD and accessible to the organization's cloud service subscriptions. This account is also sometimes called a Work or school account."
-  - content: "Your users want to sign-in to devices, apps, and services from anywhere. They want to sign-in using an organizational work or school account instead of a personal account. What should you first?"
+  - content: "Your users want to sign-in to devices, apps, and services from anywhere. Users want to sign-in using an organizational work or school account instead of a personal account. What should you first?"
     choices:
     - content: "Enable the device in Azure AD."
       isCorrect: false
       explanation: "Incorrect. You should first join the devices."
-    - content: "Join the device to Azure AD. Correct."
+    - content: "Join the device to Azure AD."
       isCorrect: true
       explanation: "Correct. Joining the device provides the features you need."
     - content: "Register the device with Azure AD."
