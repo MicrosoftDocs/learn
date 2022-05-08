@@ -6,7 +6,7 @@ Operational and security teams can use a single interface to monitor and protect
 
 The following image shows how data streams into Defender for IoT from your OT network environment, via network sensors, as well as third party/partner sources.
 
-:::image type="content" source="../media/system-architecture.png" alt-text="Diagram of the Defender for IoT system architecture.":::
+:::image type="content" source="../media/system-architecture.png" alt-text="Diagram of the Defender for IoT system architecture." border="false":::
 
 ## Example scenario
 In this unit, you'll learn about the operational technology (OT) challenges that a building management company may deal with and how they'd start evaluating a security service that fits their needs.
