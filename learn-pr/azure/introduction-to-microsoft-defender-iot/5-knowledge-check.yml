@@ -87,7 +87,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. Defender for IoT's security research group, Section 52, works constantly to make sure that customers have the most up-to-date threat intelligence packages, with the latest incidents of concern, common vulnerabilities and exposures, and more."
     - content: "Constantly read security news and then manually tweak sensor settings as needed."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. While personally keeping up-to-date with security news is always a good idea, Defender for IoT's Section 52 research team continuously curates threat intelligence packages for your network environments. Ensure your network security by keeping threat intelligence packages up-to-date on your network."
     - content: "Read through risk assessment reports"
       isCorrect: false
