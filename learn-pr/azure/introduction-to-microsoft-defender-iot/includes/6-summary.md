@@ -11,9 +11,9 @@ Defender for IoT provides:
 - Operational alerts that can also integrate directly with Microsoft Sentinel
 - Extensibility for proprietary protocol support
 
-In the case of Nuria's and Charlie's fictional building management company, the OT and SOC teams can use Defender for IoT to visualize, monitor, track, and respond to security alerts across their entire OT/IOT network.
+In the case of your fictional building management company, the OT and SOC teams can use Defender for IoT to visualize, monitor, track, and respond to security alerts across their entire OT/IOT network.
 
-The team can onboard device sensors to Defender for IoT from the Azure portal, and then track the sensor status directly from Azure.
+Your team can onboard device sensors to Defender for IoT from the Azure portal, and then track the sensor status directly from Azure.
 
 From each sensor console, SOC teams can view the device inventory and device map to track network connections between devices, such as when implementing a Zero Trust policy.
 
