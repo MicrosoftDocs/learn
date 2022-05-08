@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/21/2022
+  ms.date: 05/08/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Azure AD can be queried through LDAP."
       isCorrect: false
-      explanation: "That's incorrect. Because Azure AD is HTTP/HTTPS based, it cannot be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS."
+      explanation: "Incorrect. Because Azure AD is HTTP/HTTPS based, it can't be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS."
     - content: "Azure AD is primarily an identity solution"
       isCorrect: true
-      explanation: "That's correct. Azure AD is primarily an identity solution, and it is designed for Internet-based applications by using HTTP and HTTPS communications."
+      explanation: "Correct. Azure AD is primarily an identity solution, and it is designed for Internet-based applications by using HTTP and HTTPS communications."
     - content: "Azure AD uses Organizational Units (OUs) and Group Policy Objects (GPOs)."
       isCorrect: false
-      explanation: "That's incorrect. Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs)."
+      explanation: "Incorrect. Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs)."
   - content: "A dedicated and trusted instance of Azure Active Directory is often referred to as?"
     choices:
     - content: "An Azure tenant"
       isCorrect: true
-      explanation: "That's correct. A tenant is a dedicated and trusted instance of Azure AD. A Tenant is automatically created when the organization signs up for a Microsoft cloud service subscription​."
+      explanation: "Correct. A tenant is a dedicated and trusted instance of Azure AD. A Tenant is automatically created when the organization signs up for a Microsoft cloud service subscription​."
     - content: "An Azure identity"
       isCorrect: false
-      explanation: "That's incorrect. An identity is an object that can be authenticated. An identity can be a user with a username and password. Identities also include applications or other servers that might require authentication through secret keys or certificates."
+      explanation: "Incorrect. An identity is an object that can be authenticated. An identity can be a user with a username and password. Identities also include applications or other servers that might require authentication through secret keys or certificates."
     - content: "An Azure Active Directory account"
       isCorrect: false
-      explanation: "That's incorrect. An Azure AD Account is an identity created through Azure AD or another Microsoft cloud service, such as Office 365. Identities are stored in Azure AD and accessible to the organization's cloud service subscriptions. This account is also sometimes called a Work or school account."
-  - content: "When Self-Service Password Reset is enabled it means?"
+      explanation: "Incorrect. An Azure AD Account is an identity created through Azure AD or another Microsoft cloud service, such as Office 365. Identities are stored in Azure AD and accessible to the organization's cloud service subscriptions. This account is also sometimes called a Work or school account."
+  - content: "Your users want to sign-in to devices, apps, and services from anywhere. They want to sign-in using an organizational work or school account instead of a personal account. What should you first?"
     choices:
-    - content: "Users must wait for the Administrator if they are locked out."
+    - content: "Enable the device in Azure AD."
       isCorrect: false
-      explanation: "That's incorrect. The purpose of SSPR is for users to be able to reset their passwords."
-    - content: "Administrators can reset their password by using one authentication method."
-      isCorrect: false
-      explanation: "That's incorrect. At least two methods are required to authenticate a password reset for an admin account."
-    - content: "Users can reset their password if they can't sign in."
+      explanation: "Incorrect. You should first join the devices."
+    - content: "Join the device to Azure AD. Correct."
       isCorrect: true
-      explanation: "That's correct. If the user passes the authentication tests, then they can reset their password."
+      explanation: "Correct. Joining the device provides the features you need."
+    - content: "Register the device with Azure AD."
+      isCorrect: false
+      explanation: "Incorrect. Registering the device doesn't provide the features you need."
