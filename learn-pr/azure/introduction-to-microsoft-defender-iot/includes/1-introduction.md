@@ -7,20 +7,20 @@ Operational and security teams can use a single interface to monitor and protect
 ## Example scenario
 In this unit, you'll learn about the operational technology (OT) challenges that a building management company may deal with and how they'd start evaluating a security service that fits their needs.
 
-For example, suppose that you own a smart building management company. You have a team responsible for the daily, efficient functioning and safety of building services. Campuses in one city include 50 buildings that total 5 million square feet of residential space and 5 million square feet of office space.
+For example, suppose that you're the Chief Operations Officer (COO) for a smart building management company. Your team is responsible for the daily, efficient functioning and safety of building services. Campuses in one city include 50 buildings that total 5 million square feet of residential space and 5 million square feet of office space.
 
-Your team's Chief Operations Officer (COO) is responsible for:
+As COO, you're responsible for:
 
 - **Reducing costs** for maintaining skyscraper elevators
 - **Increasing productivity** for both employees and machines
 - **Increasing safety** against unauthorized guests
 - **Enhancing services** in conference rooms
 
-To reach these goals, your COO installs new building management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors.
+To reach these goals, you install new building management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors.
 
-Your COO knows that the technologies newly integrated into the OT architecture have increased the security attack surface in the OT network. For example, networked elevator controls improve elevator usage, power consumption, and user experience, but also introduce services that are accessible remotely and may be easy to penetrate.
+You know that the technologies newly integrated into the OT architecture have increased the security attack surface in the OT network. For example, networked elevator controls improve elevator usage, power consumption, and user experience, but also introduce services that are accessible remotely and may be easy to penetrate.
 
-You and your COO start a search for a security service that fits the needs of the security and operation teams.
+You start a search for a security service that fits the needs of the security and operation teams.
 
 Both security and operation officers must be able to view:
 

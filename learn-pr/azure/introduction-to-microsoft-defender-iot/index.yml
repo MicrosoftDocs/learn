@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Microsoft Defender for IoT
-summary: "Evaluate whether Microsoft Defender for IoT is the right service for your organization's business scenarios. Learn about Microsoft Defender for IoT's support for operational technology (OT) and Internet of Things (IoT) device security monitoring."
+summary: "Evaluate whether Microsoft Defender for IoT is the right service for your organization's business scenarios. Describe Microsoft Defender for IoT components and features, and how they support operational technology (OT) and Internet of Things (IoT) device security monitoring."
 abstract: |
   By the end of this module, you'll be able to:
   - Describe the components of Microsoft Defender for IoT to see if they meet your security and operational goals.
