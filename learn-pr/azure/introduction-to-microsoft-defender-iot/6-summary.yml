@@ -5,9 +5,15 @@ metadata:
   unitType: summary
   title: summary
   description: Summary
+<<<<<<< HEAD
   ms.date: 02/23/2022
   author: batamig
   ms.author: bagol
+=======
+  ms.date: 11/30/2021
+  author: shhazam-ms
+  ms.author: shhazam
+>>>>>>> 7fa13a1f0a7dd81cbcd273e4b7045beb5ef80590
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 durationInMinutes: 1
