@@ -44,27 +44,27 @@ quiz:
       explanation: "Correct. Defender for IoT's Site and sensor page in the Azure portal will look familiar to experienced Azure users. The Site and sensors page displays all the customer's sensors currently on-boarded to Defender for IoT, and also provides links to onboard new sensors."
     - content: "Device inventory"
       isCorrect: false
-      explanation: "Incorrect. The device inventory is currently available in general availability in the sensor console. While the sensor console's look and feel mimics that of the Azure portal, users will still need to access the sensor console separately."
+      explanation: "Incorrect. The device inventory is currently available in general availability in the sensor console. While the sensor console's look and feel mimics that of the Azure portal, users must access the sensor console separately."
     - content: "Risk assessment reports"
       isCorrect: false
-      explanation: "Incorrect. Risk assessment reports are currently available only from the sensor console. While the sensor console's look and feel mimics that of the Azure portal, users will still need to access the sensor console separately, and can't currently view reports directly in the Azure portal."
+      explanation: "Incorrect. Risk assessment reports are currently available only from the sensor console. While the sensor console's look and feel mimics that of the Azure portal, users must access the sensor console separately, and can't currently view reports directly in the Azure portal."
   - content: "Which of the following are examples of alerts triggered by Defender for Iot's *policy violation* detection engine?"
     choices:
     - content: "Software or firmware changes, or unauthorized PLC programming alerts"
       isCorrect: true
-      explanation: "Correct. The policy violation detection engine triggers alerts for deviations in baseline behavior, such as unauthorized use of specific function codes, access to specific objects, or changes to device configuration."
+      explanation: "Correct. The policy violation detection engine triggers alerts for deviations in baseline behavior. For example, deviations might include unauthorized use of specific function codes, access to specific objects, or changes to device configuration."
     - content: Excessive SMB sign-in attempts or PLC scans
       isCorrect: false
-      explanation: "Incorrect. Unusual machine-to-machine (M2M) communications and behaviors are detected by the *anomaly detection* engine. In contrast, the policy violation detection engine triggers alerts for deviations in baseline behavior, such as unauthorized use of specific function codes, access to specific objects, or changes to device configuration."
-    - content: "Unresponsive devices or alerts about equiptment failure"
+      explanation: "Incorrect. Unusual machine-to-machine (M2M) communications and behaviors are detected by the *anomaly detection* engine. In contrast, the policy violation detection engine triggers alerts for deviations in baseline behavior. For example, deviations might include unauthorized use of specific function codes, access to specific objects, or changes to device configuration."
+    - content: "Unresponsive devices or alerts about equipment failure"
       isCorrect: false
-      explanation: "Incorrect. When a device is unresponsive and might be disconnected, alerts are triggered by the *operational incident detection* engine. In contrast, the policy violation detection engine triggers alerts for deviations in baseline behavior, such as unauthorized use of specific function codes, access to specific objects, or changes to device configuration."
+      explanation: "Incorrect. When a device is unresponsive and might be disconnected, alerts are triggered by the *operational incident detection* engine. In contrast, the policy violation detection engine triggers alerts for deviations in baseline behavior. For example, deviations might include unauthorized use of specific function codes, access to specific objects, or changes to device configuration."
   - content: "How can Defender for IoT support organizations that want to move their OT security systems to the cloud?"
     choices:
     - content: "Defender for IoT provides flexible deployment options in the cloud, on-premises, or in a hybrid environment."
       isCorrect: true
       explanation: "Correct. You can deploy Defender for IoT fully in the cloud, fully on-premises for an air-gapped environment, or in a hybrid deployment that matches your organization's needs. You can manage sensors from the Azure portal for cloud deployments, or from an on-premises management console for on-premises environments."
-    - content: "Defender for IoT supports mostly on-premises deployments, with some site visibilty from the Azure portal."
+    - content: "Defender for IoT supports mostly on-premises deployments, with some site visibility from the Azure portal."
       isCorrect: false
       explanation: "Incorrect. You can extend Defender for IoT to the cloud in a hybrid deployment or deploy fully in the cloud."
     - content: "Defender for IoT is a cloud-only service with migration options from other on-premises services."
@@ -74,18 +74,18 @@ quiz:
     choices:
     - content: "SOC teams can use the integration between Defender for IoT and Microsoft Sentinel to run efficient security investigations."
       isCorrect: true
-      explanation: "Correct. You can use the IoT OT Threat Monitoring with Defender for IoT solution in Microsoft Sentinel to view and analyze Defender for IoT alerts in Microsoft Sentinel, using workbooks that visualize your data, analytics rules, and playbooks that can automate system response."
+      explanation: "Correct. You can use the IoT OT Threat Monitoring with Defender for IoT solution in Microsoft Sentinel to view and analyze Defender for IoT alerts in Microsoft Sentinel. Use workbooks to visualize your data, analytics rules to trigger alerts, and playbooks to can automate system response."
     - content: "None. Microsoft Defender for IoT is a standalone service for OT/IoT device security."
       isCorrect: false
       explanation: "Incorrect. Microsoft Defender integrates especially well with Microsoft Sentinel. You can use the IoT OT Threat Monitoring with Defender for IoT solution in Microsoft Sentinel to view and analyze your Defender for IoT alerts in Microsoft Sentinel."
     - content: "SOC teams can use Azure Active Directory to secure day-to-date network access."
       isCorrect: false
       explanation: "Incorrect. Defender for IoT's strongest Azure integration is with Microsoft Sentinel. You can use the IoT OT Threat Monitoring with Defender for IoT solution in Microsoft Sentinel to view and analyze your Defender for IoT alerts in Microsoft Sentinel, with workbooks that visualize your data, analytics rules, and playbooks that can automate system response."
-  - content: "Hikaru works on a SOC team and is highly aware of the constantly changing security landscape. Hikaru is concerned about their organization's device security keeping up-to-date with the latest threats. How can Hikaru calm his concerns?"
+  - content: "Hikaru works on a SOC team and is highly aware of the constantly changing security landscape. Hikaru is concerned about their organization's device security keeping up-to-date with the latest threats. How can Hikaru calm their concerns?"
     choices:
     - content: "Make sure that all network sensors are fully up-to-date with Defender for IoT's threat intelligence packages."
       isCorrect: true
-      explanation: "Correct. Defender for IoT's security research group, Section 52, works constantly to make sure that customers have the most up-to-date threat intelligence packages, with the latest incidents of concern, common vulnerabilities and exposures, and more."
+      explanation: "Correct. Defender for IoT's security research group, Section 52, ensures that customers have the most up-to-date threat intelligence (TI) packages. TI packages include the latest incidents of concern, common vulnerabilities and exposures, and more."
     - content: "Constantly read security news and then manually tweak sensor settings as needed."
       isCorrect: false
       explanation: "Incorrect. While personally keeping up-to-date with security news is always a good idea, Defender for IoT's Section 52 research team continuously curates threat intelligence packages for your network environments. Ensure your network security by keeping threat intelligence packages up-to-date on your network."

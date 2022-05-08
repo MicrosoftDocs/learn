@@ -13,7 +13,7 @@
     * Connectors"
 
 -->
-Our goal was to help you evaluate whether Microsoft Defender for IoT is a good choice for your organization and can provide the OT/IoT device security that your OT and SOC teams need.
+Our goal was to help you evaluate whether Microsoft Defender for IoT is a good choice for your organization's OT/IoT device security.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 

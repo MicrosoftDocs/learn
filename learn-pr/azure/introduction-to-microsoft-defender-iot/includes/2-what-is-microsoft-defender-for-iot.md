@@ -13,20 +13,20 @@ Defender for IoT's sensor console provides both a **Device inventory** page and 
 - From the **Device inventory**, view device details like IP addresses and vendors, related protocols, firmware, alerts related to the device, and more.
 - From the **Device map**, view OT device connection paths, OT/IoT network topologies, and mapping across the Purdue model for ICS security.
 
-For example, you might especially use the Device map when implementing a Zero Trust policy. In such cases, you'll need to know how your devices are connected so that you can segment your devices onto their own networks and manage granular access.
+For example, you might especially use the Device map when implementing a Zero Trust policy. You'll need to understand the connections between your devices to segment the devices onto their own networks and manage granular access.
 
 
 ## Manage network risks and vulnerabilities
 
 After you've gained visibility and understanding of the devices in your network, you'll want to keep track of any of your devices' risks and vulnerabilities.
 
-Defender for IoT's risk assessment reports, available from each sensor console, help you identify vulnerabilities such as unauthorized devices, unpatched systems, unauthorized internet connections, and devices with unused open ports.
+Defender for IoT's risk assessment reports, available from each sensor console, help you identify vulnerabilities in your network. For example, vulnerabilities might include unauthorized devices, unpatched systems, unauthorized internet connections, and devices with unused open ports.
 
-Use reported data to prioritize activities when mitigating risks on your most sensitive OT/IoT assets, including any devices whose compromise would have a major impact on your organization, such as a safety incident, loss of revenue, or theft of sensitive IP addresses.
+Use reported data to prioritize activities when mitigating risks on your most sensitive OT/IoT assets, including any devices whose compromise would have a major impact on your organization. Examples of impact might include safety incidents, loss of revenue, or theft of sensitive IP addresses.
 
 ## Stay up to date with the latest threat intelligence
 
-As the security landscape changes and evolves, new risks and threats arise all the time. Defender for IoT's security research group, *Section 52* is an OT/IoT-focused team of security researchers and data scientists who are experts in threat hunting, malware reverse engineering, incident response, and data analysis.
+As the security landscape changes and evolves, new risks and threats arise all the time. Defender for IoT's security research group, *Section 52* is an OT/IoT-focused team of security researchers and data scientists. The Section 52 team consists of experts in threat hunting, malware reverse engineering, incident response, and data analysis.
 
 Section 52 continuously curates threat intelligence (TI) packages built specifically for OT/IoT environments, and include the latest:
 
@@ -46,7 +46,9 @@ Once you have sites and sensors onboarded to Defender for IoT, either via the cl
 
 ## Integrate with other Microsoft and partner services
 
-If you have other systems deployed for security monitoring and governance, such as Microsoft Sentinel, or Splunk, IBM QRadar, or ServiceNow, you can integrate your OT/IoT security directly with these systems to provide a seamless experience for your teams.
+If you have other systems that are deployed for security monitoring and governance, you can integrate the OT/IoT security with your other systems to provide a seamless experience for your teams.
+
+For example, you can integrate Defender for IoT directly with Microsoft Sentinel, or partner services like Splunk, IBM QRadar, or ServiceNow.
 
 Integrate Defender for IoT with other services to:
 
@@ -56,9 +58,7 @@ Integrate Defender for IoT with other services to:
 
 - Use the workflows, training, and tools you've spent years building for your SOC team and apply them to IoT/OT security.
 
-Specifically, integrating Defender for IoT and Microsoft Sentinel helps SOC teams to detect and respond faster during the entire attack timeline, enhancing communication, processes, and response time for both security analysts and OT personnel.
-
-Microsoft Sentinel workbooks, analytics rules, and SOAR playbooks help you monitor and respond to OT threats detected in Defender for IoT.
+Specifically, integrating Defender for IoT and Microsoft Sentinel helps SOC teams to detect and respond faster during the entire attack timeline. The Defender for IoT and Microsoft Sentinel integration can enhance the communication, processes, and response time for both security analysts and OT personnel. Microsoft Sentinel workbooks, analytics rules, and SOAR playbooks help you monitor and respond to OT threats detected in Defender for IoT.
 
 ### Workbooks in Microsoft Sentinel
 
@@ -80,9 +80,9 @@ You can configure alerts using one or more of the following methods:
 
 ### Playbooks in Microsoft Sentinel
 
-Security operation and response (SOAR) playbooks are collections of automated remediation actions that can be run from Microsoft Sentinel as a routine.
+Security operation and response (SOAR) playbooks are collections of automated remediation actions that can be run from Microsoft Sentinel as a routine to help automate and orchestrate threat response.
 
-Playbooks can help automate and orchestrate your threat response, and can be run manually or set to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule, respectively.
+You can run playbooks manually or set them to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule.
 
 For example, customers can use SOAR playbooks to:
 

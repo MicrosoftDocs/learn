@@ -22,7 +22,7 @@ Microsoft Defender for IoT isn't suited for devices that aren't connected to a n
 Let's reconsider our smart building management company from the first unit. The key points from that scenario were:
 
 - Users include both security and operations teams, with officers from both teams needing access to security data
-- Users must be able to view all equiptment running on the network and communication paths between subsystems
+- Users must be able to view all equipment running on the network and communication paths between subsystems
 - Users must be alerted about unauthorized actions or unplanned activities occurring on the network
 - Users need tools to respond to immediate threats and carry out ongoing operational and network security tasks
 
