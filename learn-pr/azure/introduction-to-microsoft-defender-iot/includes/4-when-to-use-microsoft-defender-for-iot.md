@@ -1,4 +1,4 @@
-Now that you know what Defender for IoT is, let's discuss the scenarios best suited for Azure Virtual Desktop.
+Now that you know what Defender for IoT is, let's discuss the scenarios best suited for this service.
 
 ## When to choose Defender for IoT
 
