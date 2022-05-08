@@ -4,27 +4,23 @@ Defender for IoT brings OT and IT realities together to with shared governance a
 
 Operational and security teams can use a single interface to monitor and protect the devices and systems in each zone, as well as the connections between them.
 
-The following image shows how data streams into Defender for IoT from your OT network environment, via network sensors, as well as third party/partner sources.
-
-:::image type="content" source="../media/system-architecture.png" alt-text="Diagram of the Defender for IoT system architecture.":::
-
 ## Example scenario
 In this unit, you'll learn about the operational technology (OT) challenges that a building management company may deal with and how they'd start evaluating a security service that fits their needs.
 
-For example, suppose that Nuria owns a smart building management company. Nuria has a team responsible for the daily, efficient functioning and safety of building services. Campuses in one city include 50 buildings that total 5 million square feet of residential space and 5 million square feet of office space.
+For example, suppose that you own a smart building management company. You have a team responsible for the daily, efficient functioning and safety of building services. Campuses in one city include 50 buildings that total 5 million square feet of residential space and 5 million square feet of office space.
 
-The OT team's Chief Operations Officer (COO) is responsible for:
+Your team's Chief Operations Officer (COO) is responsible for:
 
 - **Reducing costs** for maintaining skyscraper elevators
 - **Increasing productivity** for both employees and machines
 - **Increasing safety** against unauthorized guests
 - **Enhancing services** in conference rooms
 
-To reach these goals, Nuria's COO, Charlie, installs new building management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors.
+To reach these goals, your COO installs new building management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors.
 
-Charlie knows that the technologies newly integrated into the OT architecture have increased the security attack surface in the OT network. For example, networked elevator controls improve elevator usage, power consumption, and user experience, but also introduce services that are accessible remotely and may be easy to penetrate.
+Your COO knows that the technologies newly integrated into the OT architecture have increased the security attack surface in the OT network. For example, networked elevator controls improve elevator usage, power consumption, and user experience, but also introduce services that are accessible remotely and may be easy to penetrate.
 
-Charlie starts a search for a security service that fits the needs of the security and operation teams.
+You and your COO start a search for a security service that fits the needs of the security and operation teams.
 
 Both security and operation officers must be able to view:
 
@@ -33,15 +29,15 @@ Both security and operation officers must be able to view:
 
 The teams would also like to be alerted about any unauthorized actions or unplanned activities that may occur. For example, if elevator controllers are reconfigured at an unplanned time or controllers monitoring fire detectors are accessed remotely when remote access is unauthorized.
 
-Both security and operations teams need to respond to immediate threats and carry out ongoing operational and network security tasks. For example, they'll both need to secure network switch configurations, install  firmware updates on Programmable Logic Controller (PLCs) and security patches on Building Management System (BMS) workstations.
+Both security and operations teams need to respond to immediate threats and carry out ongoing operational and network security tasks. For example, they'll both need to secure network switch configurations, install firmware updates on Programmable Logic Controller (PLCs) and security patches on Building Management System (BMS) workstations.
 
 - **While the IT security operations center (SOC) team** works with standard security solutions, it currently has no visibility into OT network assets or connections, and can't be alerted when equipment is compromised, updated at unplanned times, accessed without the right credentials, and so on.
 
 - **The OT team** manages its asset inventory using digital spreadsheets and manages system architecture using CAD systems. Data about dated firmware, OS versions, patch levels, and installed software and firmware is managed in communications between vendors and the OT staff.
 
-While the team's current solutions are mostly local and on-premises, they're looking to move resources to the cloud to increase efficiency and scalability, with reduced manual effort.
+While your team's current solutions are mostly local and on-premises, you're looking to move resources to the cloud to increase efficiency and scalability, with reduced manual effort.
 
-This module will help teams like Nuria's and COOs like Charlie to evaluate whether Microsoft Defender for IoT is the right solution for their OT/IoT security monitoring.
+This module will help teams like yours to evaluate whether Microsoft Defender for IoT is the right solution for their OT/IoT security monitoring.
 
 ## What will we be doing?
 

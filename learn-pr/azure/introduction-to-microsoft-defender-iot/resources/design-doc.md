@@ -2,8 +2,6 @@
 
 Introduction to Microsoft Defender for IoT
 
-<!--original thought: keep this one module for both services. maybe use this same content and just add another unit in for enterprise even if it's not completely covered. final plan - keep learn module to current scope so as to keep within timeframe. it does represent current marketing strategy. plan to add more for enterprise later on.-->
-
 ## Role(s)
 
 business-analyst
@@ -34,7 +32,6 @@ List the prerequisites [(Prerequisite guidance)](/help/learn/id-guidance-prerequ
 Evaluate whether Microsoft Defender for IoT is the right service for your organization to secure OT networks. Understand the OT functionality provided by Defender for IoT and how Defender for IoT features integrate with other Microsoft services.
 
 ## Learning objectives
-<!--keep these measurable -->
 
 - Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical networks environments.
 - Describe how Microsoft Defender for IoT provides asset discovery across business-critical network environments.
@@ -55,8 +52,6 @@ Identify the subtasks of module title.
 Add more units as needed for your content
 
 1. Introduction
-
-    <!--Provide a scenario of a real-world job task that shows how the technology is used in practice. Add your scenario [(Scenario guidance)](/help/learn/id-guidance-scenarios)-->
 
     You own a smart building management company that uses localized, separate, on-premises security management tools that have many gaps.
 
