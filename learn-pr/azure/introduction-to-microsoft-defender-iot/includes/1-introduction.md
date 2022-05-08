@@ -4,6 +4,8 @@ Defender for IoT brings OT and IT realities together to with shared governance a
 
 Operational and security teams can use a single interface to monitor and protect the devices and systems in each zone, as well as the connections between them.
 
+The following image shows how data streams into Defender for IoT from your OT network environment, via network sensors, as well as third party/partner sources.
+
 :::image type="content" source="../media/system-architecture.png" alt-text="Diagram of the Defender for IoT system architecture.":::
 
 ## Example scenario
