@@ -37,7 +37,7 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: Which area in Defender for IoT in the Azure portal will be most familiar for SOC teams who already use other Azure services and want to start integrating with Defender for IoT?
+  - content: Which area in Defender for IoT in the Azure portal is the most seamless for SOC teams to use if they already use other Azure services and want to start integrating with Defender for IoT?
     choices:
     - content: "The Sites and sensors page"
       isCorrect: true

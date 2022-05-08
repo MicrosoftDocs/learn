@@ -20,6 +20,8 @@ Sensors use passive, or *agentless*, monitoring for IoT/OT devices, connecting t
 
 All data collection, processing, analysis and alerting occurs directly on the sensor machine, which makes the process ideal for locations with low bandwidth or high-latency connectivity. Only the metadata is transferred to the Azure portal for management.
 
+The following image shows a sample screenshot from the **Alerts** page on a sensor console, showing the alerts triggered by the devices attached to this sensor.
+
 :::image type="content" source="../media/sensor-console.png" alt-text="Screenshot of a sensor console Alerts page.":::
 
 ## Defender for IoT machine learning engines
