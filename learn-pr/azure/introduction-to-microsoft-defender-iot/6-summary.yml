@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-microsoft-defender-iot.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: summary
+  description: Summary
+  ms.date: 02/23/2022
+  author: batamig
+  ms.author: bagol
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-microsoft-defender-iot.when-to-use-microsoft-defender-iot
+title: When to use Microsoft Defender for IoT
+metadata:
+  unitType: learning-content
+  title: When to use Microsoft Defender for IoT
+  description: When to use Microsoft Defender for IoT
+  ms.date: 02/23/2022
+  author: batamig
+  ms.author: bagol
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-when-to-use-microsoft-defender-for-iot.md)]
