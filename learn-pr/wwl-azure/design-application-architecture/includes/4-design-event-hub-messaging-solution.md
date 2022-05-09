@@ -2,9 +2,9 @@ There are certain applications that produce a massive number of events from almo
 
 Let’s imagine you work for Contoso Aircraft Engines. The engines your employer manufactures have hundreds of sensors. Before an aircraft can be flown, its engines are connected to a test harness and put through their paces. Additionally, cached in-flight data is streamed when the aircraft is connected to ground equipment.
 
-In this situation, you might choose an event hubs-based messaging solution. Event hubs can receive and process millions of events per second. Data sent to an event hub can be transformed in real-time and stored for later analysis. 
+In this situation, you might choose an event hubs-based messaging solution. Event hubs can receive and process millions of events per second. Data sent to an event hubs can be transformed in real-time and stored for later analysis. 
 
-## How Azure Event Hub works
+## How Azure Event Hubs works
 
 [Azure Event Hubs](/azure/event-hubs/event-hubs-about) is a fully managed, real time data ingestion. Event Hubs support real time data ingestion and microservices batching on the same stream. Here are some common scenarios for Event Hubs. 
 
@@ -16,7 +16,7 @@ In this situation, you might choose an event hubs-based messaging solution. Even
 
 This diagram shows how Event Hubs could be used in the aircraft engine application.
 
-- Event hub captures streaming data from the testing equipment.
+- Event hubs captures streaming data from the testing equipment.
 
 - The data is stored in Azure blob storage.
 
@@ -28,9 +28,9 @@ This diagram shows how Event Hubs could be used in the aircraft engine applicati
 
 
 
-## Considerations for Event Hub
+## Considerations for Event Hubs
 
-When selecting Event Hub, consider the following guidance: 
+When selecting Event Hubs, consider the following guidance: 
 
 - **Expect language and framework integration**. You can send and receive events in many different languages. Messages can also be received from Event Hubs using Apache Storm.
 
