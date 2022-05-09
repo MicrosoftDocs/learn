@@ -44,4 +44,4 @@ In this interactive guide, you'll explore some of the capabilities of the Micros
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
 
-[![Interactive guide](../media/compliance-portal-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-compliance-center/index.html?azure-portal=true)
+[![Interactive guide](../media/compliance-portal-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-the-compliance-portal/index.html?azure-portal=true)
