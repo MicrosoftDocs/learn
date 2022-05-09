@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/25/2021
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -22,43 +21,43 @@ quiz:
     choices:
     - content: "Create a management group"
       isCorrect: false
-      explanation: "That's incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
+      explanation: "Incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
     - content: "Create a policy initiative"
       isCorrect: true
-      explanation: "That's correct. A policy initiative is a set of policy definitions that could be applied to the new branch office."
+      explanation: "Correct. A policy initiative is a set of policy definitions that could be applied to the new branch office."
     - content: "Create a policy definition"
       isCorrect: false
-      explanation: "That's incorrect. A policy definition expresses what to evaluate and what actions to take. Every policy definition has conditions under which it is enforced. And, it has an accompanying effect that takes place if the conditions are met. Policy definitions can be grouped into policy initiatives."
+      explanation: "Incorrect. A policy definition expresses what to evaluate and what actions to take. Every policy definition has conditions under which it is enforced. And, it has an accompanying effect that takes place if the conditions are met. Policy definitions can be grouped into policy initiatives."
   - content: "The finance team wants to categorize resources and billing for different departments like Research and Human Resources. The billing needs to be consolidated across multiple resource groups to ensure everyone complies with the solution. Resource tags have been created for each department. What should be done next?"
     choices:
     - content: "Create a management group"
       isCorrect: false
-      explanation: "That's incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
+      explanation: "Incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
     - content: "Create an Azure policy"
       isCorrect: true
-      explanation: "That's correct. An Azure policy would require the tag be applied before the resource is created."
+      explanation: "Correct. An Azure policy would require the tag be applied before the resource is created."
     - content: "Review the Azure policy compliance page"
       isCorrect: false
-      explanation: "That's incorrect. The Azure policy compliance page shows non-compliant initiatives, non-compliant policies, and non-compliant resources. The is useful once a policy is created and scoped."
+      explanation: "Incorrect. The Azure policy compliance page shows non-compliant initiatives, non-compliant policies, and non-compliant resources. The is useful once a policy is created and scoped."
   - content: "The finance team wants to ensure that only cost-effective virtual machine SKU sizes are deployed. What is the best way to meet this requirement?"
     choices:
     - content: "Periodically inspect the deployment to see which SKU sizes are used"
       isCorrect: false
-      explanation: "That's incorrect. Although this could work, the process would time consuming and error prone."
+      explanation: "Incorrect. Although this could work, the process would time consuming and error prone."
     - content: "Create an Azure RBAC role that defines the allowed virtual machine SKU sizes"
       isCorrect: false
-      explanation: "That's incorrect. Azure RBAC roles would determine who could create virtual machines but not necessarily the SKU size."
+      explanation: "Incorrect. Azure RBAC roles would determine who could create virtual machines but not necessarily the SKU size."
     - content: "Create a policy in Azure Policy that specifies the allowed SKU sizes"
       isCorrect: true
-      explanation: "That's correct. There is a built-in Azure policy to specify the allowed virtual machine SKU sizes. After the policy is enabled, it will be applied whenever a virtual machine is created or resized."
+      explanation: "Correct. There is a built-in Azure policy to specify the allowed virtual machine SKU sizes. After the policy is enabled, it will be applied whenever a virtual machine is created or resized."
   - content: "Which of the following can be used to manage governance across multiple Azure subscriptions?"
     choices:
     - content: "Azure initiatives"
       isCorrect: false
-      explanation: "That's incorrect. An Azure initiative is a collection of Azure policy definitions, or rules, that are grouped together towards a specific goal or purpose."
+      explanation: "Incorrect. An Azure initiative is a collection of Azure policy definitions, or rules, that are grouped together towards a specific goal or purpose."
     - content: "Resource groups"
       isCorrect: false
-      explanation: "That's incorrect. A resource group is a container that holds related resources for an Azure solution."
+      explanation: "Incorrect. A resource group is a container that holds related resources for an Azure solution."
     - content: "Management groups"
       isCorrect: true
-      explanation: "That's correct. Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions. Distinct governance conditions can be applied to each management group, with Azure Policy and Azure role-based access controls, to manage Azure subscriptions effectively. The resources and subscriptions assigned to a management group automatically inherit the conditions applied to the management group."
+      explanation: "Correct. Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions. Distinct governance conditions can be applied to each management group, with Azure Policy and Azure role-based access controls, to manage Azure subscriptions effectively. The resources and subscriptions assigned to a management group automatically inherit the conditions applied to the management group."
