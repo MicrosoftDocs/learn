@@ -1,4 +1,4 @@
-In this unit, you'll create a simple web app and run it in the browser.
+In this unit, you'll create a web app and run it in the browser.
 
 ## Create app folder
 
@@ -27,7 +27,7 @@ Now we'll add the required dependencies.
     npm install --save @azure/communication-common @azure/communication-calling
     ```
 
-1. Followed by Parcel which will allow us to run our app in a browser.
+1. Followed by, Parcel which will allow us to run our app in a browser.
 
     ```console
     npm install --save-dev parcel
@@ -36,7 +36,7 @@ Now we'll add the required dependencies.
 ## Create the index HTML file
 
 1. Create a new file in your app directory called `index.html`.
-1. Enter the following text for the contents of this file. This is the basic structure of most HTML files.
+1. Enter the following text for the contents of this file.
 
     ```html
     <!DOCTYPE html>
@@ -58,18 +58,18 @@ Now we'll add the required dependencies.
 ## Create the app's JavaScript file
 
 1. Create a new file in the app directory called `app.js`
-1. For now this can be left blank, we'll add to it during the next unit.
+1. For now leave the `app.js` file empty, we'll add to it during the next unit.
 
 ## Test your new app
 
-1. In a console window within the project directory run the following command:
+1. In a console window, within the project directory run the following command:
 
     ```console
     npx parcel index.html
     ```
 
 1. Parcel will now compile and run your app.
-1. Once it completes it will give you a link to see your app within the browser. This is usually `http://localhost:1234/`:
+1. Once it completes, it will give you a link to see your app within the browser. This link is usually `http://localhost:1234/`:
     :::image type="content" source="../media/3-parcel-response.png" alt-text="Parcel showing a complete build with a hyperlink pointing to the app.":::
 1. Open this link in your browser and you should see your blank app in the browser:
     :::image type="content" source="../media/3-blank-app.png" alt-text="Our blank web app showing in a browser.":::
