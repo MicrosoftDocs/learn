@@ -4,10 +4,9 @@ You use the **Azure Active Directory** dashboard in the Azure portal to work wit
 
 ## View users
 
-To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
+To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **User Type** column to see members and guests, as the following figure depicts.
 
-:::image type="content" source="../media/azure-active-directory-users-26b4443a.png" alt-text="View all users in Azure AD.":::
-
+:::image type="content" source="../media/all-users-dialog.png" alt-text="View all users in Azure AD. D":::
 
 Typically, Azure AD defines users in three ways:
 

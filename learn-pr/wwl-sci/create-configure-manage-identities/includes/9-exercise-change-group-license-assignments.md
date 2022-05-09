@@ -6,7 +6,7 @@
 4.  In the left navigation, under **Manage**, select **Licenses**.
 5.  Review the current assignments and then, on the menu, select **+ Assignments**.
 
-:::image type="content" source="../media/change-group-license-74190070.png" alt-text="Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted.":::
+:::image type="content" source="../media/change-group-license.png" alt-text="Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted.":::
 
 
 > [!NOTE]
@@ -30,22 +30,22 @@ When you're using group-based licensing the same errors can occur, but they happ
 
 1.  Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
 
-:::image type="content" source="../media/group-error-notification-79346588.png" alt-text="Group and error notifications message.":::
+:::image type="content" source="../media/group-error-notification.png" alt-text="Group and error notifications message.":::
 
 
 2.  Select the notification to open a list of all affected users. You can select each user individually to see more details.
 
-:::image type="content" source="../media/list-of-users-with-errors-e41bb4d6.png" alt-text="list of users in group licensing error state.":::
+:::image type="content" source="../media/list-of-users-with-errors.png" alt-text="list of users in group licensing error state.":::
 
 
 3.  To find all groups that contain at least one error, on the **Azure Active Directory** blade select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
 
-:::image type="content" source="../media/group-errors-widget-e033fcea.png" alt-text="Overview and information about groups in error state.":::
+:::image type="content" source="../media/group-errors-widget.png" alt-text="Overview and information about groups in error state.":::
 
 
 4.  Select the box to see a list of all groups with errors. You can select each group for more details.
 
-:::image type="content" source="../media/list-of-groups-with-errors-d3d65f44.png" alt-text="Overview and list of groups with errors.":::
+:::image type="content" source="../media/list-of-groups-with-errors.png" alt-text="Overview and list of groups with errors.":::
 
 
 The following sections give descriptions of each potential problem and the way to resolve it.
@@ -198,7 +198,7 @@ Here is what the migration process could look like:
     
      -  This is the expected user state during migration:
 
-:::image type="content" source="../media/expected-user-state-20eb1a83.png" alt-text="The expected user state during migration.":::
+:::image type="content" source="../media/expected-user-state.png" alt-text="The expected user state during migration.":::
 
 
 > [!NOTE]
@@ -206,7 +206,7 @@ Here is what the migration process could look like:
 
 4.  After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
 
-:::image type="content" source="../media/direct-licenses-removed-267c9e01.png" alt-text="Confirm that direct licenses are removed.":::
+:::image type="content" source="../media/direct-licenses-removed.png" alt-text="Confirm that direct licenses are removed.":::
 
 
 ## Change license assignments for a user or group in Azure Active Directory
