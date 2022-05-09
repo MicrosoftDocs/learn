@@ -15,7 +15,7 @@ A starter project has already been created for you. You'll clone it using the in
 
 1. Open Visual Studio Code.
 
-1. In the main menu, select **View** > **Terminal** to open a TERMINAL window.
+1. In the main menu, select **View** > **Terminal** to open a TERMINAL window. 
 
 1. (Optional) In the TERMINAL window, change to a directory you want to copy the files to, such as `c:\MyProjects`.
 
@@ -27,13 +27,13 @@ A starter project has already been created for you. You'll clone it using the in
 
 1. Run the following command to Create a new .NET Console project:
 
-    ```cmd
+    ```bash
     dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
     ```
 
 1. Run the following command to open the new .NET project in the same instance of Visual Studio Code:
 
-    ```cmd
+    ```bash
     code -a .
     ```
 
@@ -118,7 +118,7 @@ Create a new function called `FindFiles` that takes a `folderName` parameter.
 
 1. The program should show the following output:
 
-    ```bash
+    ```output
     stores/sales.json
     stores/201/sales.json
     stores/202/sales.json
