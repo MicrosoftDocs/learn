@@ -2,8 +2,8 @@
 uid: learn.wwl.create-configure-manage-identities.explore-automatic-user-creation
 title: Explore automatic user creation
 metadata:
-  title: Explore automatic user creation
-  description: "Explore automatic user creation"
+  title: Explore automatic user creationg
+  description: "Use human capital management tool integration to manage user account creation and removal."
   ms.date: 05/09/2022
   author: wwlpublish
   ms.author: roberts
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/12-explore-automatic-user-creation.md)]
