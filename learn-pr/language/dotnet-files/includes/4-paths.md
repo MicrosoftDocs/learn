@@ -1,4 +1,4 @@
-.NET has a built-in mechanism for working with file system paths.
+.NET has a built-in mechanism for working with file-system paths.
 
 In the previous exercise, we didn't have many folders to parse. If you have a file system with many files and folders, manually building paths can be tedious. Thankfully, .NET provides some built-in constants and utility functions to make it easier to handle file paths.
 
@@ -6,7 +6,7 @@ Here, you'll learn about some of the constants and utility functions in the `Sys
 
 ## Determine the current directory
 
-Sometimes, you don't know which directory or path where your program should run. Let's say you want your program to use the current directory, but you don't know the path. 
+Sometimes, you don't know in which directory or path your program should run. Let's say you want your program to use the current directory, but you don't know the path. 
 
 .NET exposes the full path to the current directory via the `Directory.GetCurrentDirectory` method.
 
@@ -30,7 +30,7 @@ Those types of special directories differ for each operating system. It would be
 
 The `System.Environment.SpecialFolder` enumeration specifies constants to retrieve paths to special system folders.
 
-The following code returns the path to the equivalent of the Windows *My Documents* folder, or the user's *HOME* directory, for any operating system, even if the code is running on Linux.
+The following code returns the path to the equivalent of the Windows *My Documents* folder, or the user's *HOME* directory for any operating system, even if the code is running on Linux.
 
 ```csharp
 string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
