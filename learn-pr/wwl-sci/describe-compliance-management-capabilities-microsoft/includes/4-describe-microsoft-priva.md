@@ -10,7 +10,7 @@ Microsoft Priva helps you meet these challenges so you can achieve your privacy 
 
 ### Priva Privacy Risk Management
 
-Microsoft Priva helps you understand the data your organization stores by automating discovery of personal data assets and providing visualizations of essential information. These visualizations can be found on the overview and data profile pages.
+Microsoft Priva helps you understand the data your organization stores by automating discovery of personal data assets and providing visualizations of essential information. These visualizations can be found on the overview and data profile pages, currently accessible through the Microsoft Purview compliance portal.
 
 The overview dashboard provides an overall view into your organization’s data in Microsoft 365. Privacy administrators can monitor trends and activities, identify and investigate potential risks involving personal data, and springboard into key activities like policy management or subject rights request actions.
 
