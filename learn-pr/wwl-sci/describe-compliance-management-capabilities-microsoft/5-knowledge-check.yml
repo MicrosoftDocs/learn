@@ -24,10 +24,10 @@ quiz:
       explanation: "Correct. Saving the document to the My Library section of the Service Trust Portal, will ensure you have the latest updates."
     - content: "Print each document so you can easily refer to them."
       isCorrect: false
-      explanation: "Incorrect. Printing the document does not ensure you have the latest updates."
+      explanation: "Incorrect. Printing the document doesn't ensure you have the latest updates."
     - content: "Download each document."
       isCorrect: false
-      explanation: "Incorrect.  Downloading the document does not ensure you have the latest updates."
+      explanation: "Incorrect.  Downloading the document doesn't ensure you have the latest updates."
   - content: "Microsoft's approach to privacy is built on six principles: Three of the principles are strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect. Identify the three other principles that are part of Microsoft's approach to privacy."
     choices:
     - content: "Customer control, transparency, and security."
@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect. The shared responsibility model identifies which security tasks are handled by the cloud provider, and which security tasks are handled by you, the customer."
     - content: "Customer control, transparency, and zero trust."
       isCorrect: false
-      explanation: "Incorrect.  Although zero trust is a model employed by Microsoft, in its approach to security, it is a specific model.  The privacy principles include security more broadly. The general principles that represent Microsoft's approach to privacy are customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
+      explanation: "Incorrect.  Although zero trust is a model employed by Microsoft, it's not one of the privacy principles.  The privacy principles include security more broadly. The general principles that represent Microsoft's approach to privacy are customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
