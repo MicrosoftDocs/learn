@@ -8,7 +8,7 @@ All mobile platforms have security around user information and certain hardware,
 
 1. Head to the **Capabilities** tab and check the *Location* capability.
 
-    :::image type="content" source="../media/4-uwp-location-capability.png" alt-text="The UWP capabilities tab.":::
+    :::image type="content" source="../media/4-uwp-location-capability.png" alt-text="Screenshot that shows the capabilities tab.":::
 
 ## Query for the user's location
 
@@ -51,9 +51,9 @@ There are two ways to get the user's location - the last known or the current. T
     }
     ```
 
-1. Run the app and click the **Send Location** button to see the location on the UI. Location for your device must be turned on in **Location privacy settings.**
+1. Run the app and select the **Send Location** button to see the location on the UI. Location for your device must be turned on in **Location privacy settings.**
 
-    :::image type="content" source="../media/4-running-app-showing-location.png" alt-text="The running app showing the user's location.":::
+    :::image type="content" source="../media/4-running-app-showing-location.png" alt-text="Screenshot that shows the app running and displaying the user's location.":::
 
 > [!NOTE]
 > This app uses the last known location. In a production-quality app, you would want to get the current accurate location with a time-out, and if one is not found in time, fall back to the last known. You can read more on how to do this in the [Xamarin.Essentials Geolocation docs](/xamarin/essentials/geolocation?tabs=uwp#using-geolocation).

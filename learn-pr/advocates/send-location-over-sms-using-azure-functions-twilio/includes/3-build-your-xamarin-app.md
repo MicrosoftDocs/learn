@@ -18,7 +18,7 @@ ViewModels implement the `INotifyPropertyChanged` interface. This interface has 
 
 1. Right-click ImHere project and select _Add_ > _class_.
 
-1. Name the new class "BaseViewModel" and click **Add**.
+1. Name the new class "BaseViewModel" and select **Add**.
 
 1. Add a using directive for `System.ComponentModel` and `System.Runtime.CompilerServices`.
 
@@ -248,7 +248,7 @@ Xamarin.Forms UIs can be built using XAML.
     > [!NOTE]
     > When you compile this app, you will see a warning about `SendLocation` lacking `await` modifiers. You can ignore this warning as this will be resolved once more code is added to this method in the next unit.
 
-    :::image type="content" source="../media/3-new-ui.png" alt-text="The new app UI.":::
+    :::image type="content" source="../media/3-new-ui.png" alt-text="Screenshot that shows the new app interface.":::
 
 ## Summary
 

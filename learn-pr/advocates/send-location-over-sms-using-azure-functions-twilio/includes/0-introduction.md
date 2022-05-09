@@ -15,4 +15,4 @@ This process involves the following steps:
 
 The following illustration shows an overview of this process.
 
-![An illustration showing a high-level architecture of the process of sharing location through text message.](../media/1-architecture.png)
+:::image type="content" source="../media/1-architecture.png" alt-text="Diagram that shows a high-level architecture of the process of sharing location through text message.":::

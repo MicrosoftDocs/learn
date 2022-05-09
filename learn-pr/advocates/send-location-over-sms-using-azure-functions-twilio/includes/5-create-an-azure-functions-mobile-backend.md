@@ -4,15 +4,15 @@ At this point, the app is working to get the user's location and is ready to be 
 
 1. Right-click on the `ImHere` solution and select *Add > New Project...*.
 
-1. Search for *Azure Functions*, select it, and click **Next**.
+1. Search for *Azure Functions*, select it, and select **Next**.
 
-1. Name the project "ImHere.Functions", and then click **Create**.
+1. Name the project "ImHere.Functions", and then select **Create**.
 
-    :::image type="content" source="../media/5-add-new-functions-project.png" alt-text="Screenshot of the Add New Project dialog.":::
+    :::image type="content" source="../media/5-add-new-functions-project.png" alt-text="Screenshot that shows the Add New Project dialog.":::
 
 1. In the **Create a new Azure Functions application** configuration dialog, ensure the Functions version is set to *.NET 6*. Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the authorization level to *Anonymous*. Then click **Create**.
 
-    :::image type="content" source="../media/5-configure-trigger.png" alt-text="The Azure Functions project configuration dialog.":::
+    :::image type="content" source="../media/5-configure-trigger.png" alt-text="Screenshot that shows the Azure Functions project configuration dialog.":::
 
     The new project will be created and have a default function called `Function1`.
 
@@ -51,9 +51,9 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Search for *Class Library (.NET Standard)*, choose the item, and then select **Next**.
 
-    :::image type="content" source="../media/5-add-new-net-standard-project.png" alt-text="Screenshot of the Add New Project dialog with the Class Library option highlighted.":::
+    :::image type="content" source="../media/5-add-new-net-standard-project.png" alt-text="Screenshot that shows the Add New Project dialog with the Class Library option highlighted.":::
 
-1. Name the project "ImHere.Data", and then click **Next**.
+1. Name the project "ImHere.Data", and then select **Next**.
 
 1. For the Class Library Framework, choose *.NET Standard 2.0*, and then select **Create**.
 
@@ -61,9 +61,9 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Right-click on the `ImHere.Data` project and select *Add > Class...* to create a new class.
 
-1. Name the new class "PostData" and click **Add**. Mark this new class as `public`.
+1. Name the new class "PostData" and select **Add**. Mark this new class as `public`.
 
-1. Add `double` properties for the latitude and longitude, as well as a `string[]` property for the phone numbers to send to.
+1. Add `double` properties for the latitude and longitude, and a `string[]` property for the phone numbers to send to.
 
     ```cs
     public class PostData
@@ -76,7 +76,7 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Add a reference to this project in both the `ImHere.Functions` and `ImHere` projects by right-clicking on the project and then selecting *Add->Reference...*. Select *Projects* from the tree on the left-hand side, and then check the box next to *ImHere.Data*.
 
-    :::image type="content" source="../media/5-configure-project-references.png" alt-text="Configuring project references.":::
+    :::image type="content" source="../media/5-configure-project-references.png" alt-text="Screenshot that shows how to configure the project references.":::
 
 ## Read the data sent to the function
 
@@ -151,7 +151,7 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 1. From the *Debug* menu, select *Start Without Debugging*. The local Azure Functions runtime will launch inside a console window and start your function, listening on an available port on `localhost`. If you see a dialog asking for firewall access, allow access to private networks (the default option).
 
-    :::image type="content" source="../media/5-function-running-locally.png" alt-text="The Azure Functions running locally.":::
+    :::image type="content" source="../media/5-function-running-locally.png" alt-text="Screenshot of the Azure Functions running locally.":::
 
 1. Take a note of the port that the function is listening on. You'll need this in the next unit to test out the mobile app. In the image above, the function is listening on port **7071**.
 

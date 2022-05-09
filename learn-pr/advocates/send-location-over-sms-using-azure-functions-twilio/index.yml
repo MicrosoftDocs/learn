@@ -14,14 +14,14 @@ summary: Learn how to use location tracking on your phone mixed with Azure Funct
 abstract:  |
   In this module, you will:
   - Create a cross-platform Xamarin.Forms app that uses Xamarin.Essentials
-  - Create a cross-platform UI using XAML with application logic in a ViewModel, as well as bind properties in a ViewModel to the UI
+  - Create a cross-platform UI using XAML with application logic in a ViewModel, and bind properties in a ViewModel to the UI
   - Detect the user's location
   - Create the Azure Functions with an HTTP trigger and run it locally
   - Call the Azure Functions from a mobile app, passing data as JSON
   - Bind the Azure Functions to Twilio to send an SMS message
   - Publish an Azure Functions app to Azure
 prerequisites: | 
-  - Visual Studio 
+  - Visual Studio 2022
   - A free Twilio account 
   - [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg

@@ -12,8 +12,9 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 durationInMinutes: 2
+content: |
+  [!include[](includes/10-knowledge-check.md)]
 quiz:
-    title: Check your Knowledge
     questions:
     - content: "How do you bind your function to Twilio to send SMS messages?"
       choices:
@@ -29,7 +30,7 @@ quiz:
 
     - content: "Where do you define your Twilio account SID and auth token when running your function locally?"
       choices:
-      - content: "In the `local.settings.json` file."
+      - content: "In the `local.settings.json` file"
         isCorrect: true
         explanation: "Correct. The `local.settings.json` file is used to store local settings that are only used when running locally, not when published to Azure. Be careful to not check this into source code control if it contains private keys and your repo is public."
       - content: "In the `[TwilioSms]` attribute"

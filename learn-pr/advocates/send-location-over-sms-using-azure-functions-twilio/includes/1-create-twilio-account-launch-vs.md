@@ -4,11 +4,11 @@ To be able to send SMS messages from an Azure Function, you'll need a Twilio acc
 
 1. Head to [twilio.com](https://www.twilio.com?azure-portal=true).
 
-1. Click the **Sign Up** button in the top-right corner.
+1. Select the **Sign Up** button in the top-right corner.
 
-1. Fill in your details and click **Get Started**.
+1. Fill in your details and select **Get Started**.
 
-1. Twilio will send you an email to verify your email address. Click the link in the email to verify it.
+1. Twilio will send you an email to verify your email address. Select the link in the email to verify it.
 
 1. Enter your phone number to verify it. Twilio free accounts let you send messages only to verified phone numbers to stop them from being used for spam. Twilio will send you a verification code that you need to enter to verify your phone.
 
@@ -27,7 +27,7 @@ To be able to send SMS messages from an Azure Function, you'll need a Twilio acc
 
     :::image type="content" source="../media/project-info.png" alt-text="Screenshot of the Account Info panel.":::
 
-1. Note your **Account SID** and **Auth Token** because you will need these values later.
+1. Note your **Account SID** and **Auth Token** because you'll need these values later.
 
 ## Launch Visual Studio
 
