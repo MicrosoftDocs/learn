@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.management-solution
-title: Describe the insider risk management solution
+title: Describe insider risk management
 metadata:
-  title: Describe the insider risk management solution
-  description: "Describe the insider risk management solution"
-  ms.date: 05/03/2022
+  title: Describe insider risk management
+  description: "Describe insider risk management"
+  ms.date: 05/09/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
