@@ -196,7 +196,7 @@ Read through the list to troubleshoot configuration problems:
 
 - Have you set Allow forwarded traffic or Use remote gateway, depending on your setup?
 
-- If you transit over a global virtual network peering, check you have a [supported resource](/troubleshoot/azure/virtual-machines/custom-routes-enable-kms-activation).
+- If you transit over a global virtual network peering, check you are aware of the [requirements and constraints](/azure/virtual-network/virtual-network-peering-overview).
 
 ## Troubleshoot service chaining
 
