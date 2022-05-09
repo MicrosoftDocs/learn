@@ -12,11 +12,11 @@ Defender for IoT's sensor console provides both a **Device inventory** page and 
 
 - From the **Device inventory**, view device details like IP addresses and vendors, related protocols, firmware, alerts related to the device, and more.
 
-    :::image type="content" source="../media/inventory-sensor.png" alt-text="Screenshot of the Device inventory from a sensor console.":::
+    :::image type="content" source="../media/2-inventory-sensor.png" alt-text="Screenshot of the Device inventory from a sensor console." lightbox="../media/2-inventory-sensor.png":::
 
 - From the **Device map**, view OT device connection paths, OT/IoT network topologies, and mapping across the Purdue model for ICS security.
 
-    :::image type="content" source="../media/device-map-v2.png" alt-text="Screenshot of the Device map from a sensor console.":::
+    :::image type="content" source="../media/2-device-map.png" alt-text="Screenshot of the Device map from a sensor console." lightbox="../media/2-device-map.png":::
 
 For example, you might especially use the Device map when implementing a Zero Trust policy. You'll need to understand the connections between your devices to segment the devices onto their own networks and manage granular access.
 
@@ -40,7 +40,7 @@ Section 52 continuously curates threat intelligence (TI) packages built specific
 
 You can keep current with the latest OT/IoT threats by keeping a Defender for IoT deployment up-to-date with the most recent TI packages.
 
-:::image type="content" source="../media/threat-intelligence.png" alt-text="Screenshot of how to update threat intelligence pacakges on the Azure portal.":::
+:::image type="content" source="../media/2-threat-intelligence.png" alt-text="Screenshot of how to update threat intelligence pacakges on the Azure portal." lightbox="../media/2-threat-intelligence.png":::
 
 ## Manage your sites and sensors
 
@@ -48,11 +48,11 @@ While you can deploy Defender for IoT in a purely air-gapped, on-premises enviro
 
 Onboarded sensors are visible on the Defender for IoT **Site and sensors** page in the Azure portal. The **Site and sensors** page will look familiar to experienced Azure users and displays details for each site and sensor. Use the **Site and sensors** page to view each sensor's zone, connection status, threat intelligence update status, and to add more sensors to your deployment.
 
-:::image type="content" source="../media/onboard-sensor.png" alt-text="Screenshot of the Sites and sensors page in the Azure portal.":::
+:::image type="content" source="../media/2-onboard-sensor.png" alt-text="Screenshot of the Sites and sensors page in the Azure portal." lightbox="../media/2-onboard-sensor.png":::
 
 Once you have sites and sensors onboarded to Defender for IoT, use operational alerts to monitor the events occurring in your network. Operational alerts are especially helpful if you have malfunctioning or misconfigured equipment. For example, with Defender for IoT constantly scanning your network, you'll be able to identify a misconfigured engineering workspace and quickly address the root causes for your issues.
 
-:::image type="content" source="../media/sensor-console.png" alt-text="Screenshot of the Alerts page in the sensor console.":::
+:::image type="content" source="../media/sensor-alerts.png" alt-text="Screenshot of the Alerts page in the sensor console." lightbox="../media/sensor-alerts.png":::
 
 ## Integrate with other Microsoft and partner services
 
@@ -80,4 +80,4 @@ Install the **Microsoft Defender for IoT** data connector in your Microsoft Sent
 
 You can then use Microsoft Sentinel playbooks to create automated remediation actions to run as a routine to help automate and orchestrate threat response. Run playbooks manually or set them to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule.
 
-:::image type="content" source="../media/sentinel-data-connector.png" alt-text="Screenshot of the Microsoft Defender for IoT data connector in Microsoft Sentinel.":::
+:::image type="content" source="../media/2-sentinel-data-connector.png" alt-text="Screenshot of the Microsoft Defender for IoT data connector in Microsoft Sentinel." lightbox="../media/2-sentinel-data-connector.png":::

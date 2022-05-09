@@ -22,7 +22,7 @@ All data collection, processing, analysis and alerting occurs directly on the se
 
 The following image shows a sample screenshot from the **Alerts** page on a sensor console, showing the alerts triggered by the devices attached to this sensor.
 
-:::image type="content" source="../media/sensor-console.png" alt-text="Screenshot of a sensor console Alerts page.":::
+:::image type="content" source="../media/sensor-alerts.png" alt-text="Screenshot of a sensor console Alerts page." lightbox="../media/sensor-alerts.png":::
 
 ## Defender for IoT machine learning engines
 
