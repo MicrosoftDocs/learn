@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-verify-sso-configuration.md)]
+  [!include[](includes/8-verify-sso-configuration.md)]

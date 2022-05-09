@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-exercise-configure-sso-sp.md)]
+  [!include[](includes/7-exercise-configure-sso-sp.md)]

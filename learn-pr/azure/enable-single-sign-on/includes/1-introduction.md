@@ -8,11 +8,17 @@ You realize that this addition causes users to sign in to yet another applicatio
 
 ## What will we be doing?
 
-Single sign-on is a trust relationship between an identity provider and a service provider. When a user signs in to an application, the authentication process creates one or more tokens that enable secure identification.
+Single sign-on is a trust relationship between an identity provider and a service provider. In this scenario, the Azure AD tenant that the company uses is known as the *identity provider*. The organization that makes the application available is known as the *service provider*. When a user signs in to an application using single sign-on, the authentication process creates one or more tokens that enable secure identification.
 
-For single sign-on, a combination of tasks is required both at the identity provider and at the service provider. For a trusted relationship, user accounts need to exist at both locations, a certificate is created and shared, and URLs must be shared between both. Testing single sign-on is important before introducing the application with single sign-on enabled to the employees.
+For single sign-on, a combination of tasks is required both at the identity provider and at the service provider.
 
 :::image type="content" source="../media/sso-process.png" alt-text="Diagram showing the tasks in single sign-on configuration." border="false":::
+
+- **Select your application in the gallery** - Locate the application in the Azure AD application gallery and add it to the Azure AD tenant.
+- **Configure user and group assignments** - Create a user account and assign it to the application for testing single sign-on before rolling the feature out to all employees.
+- **Set up single sign-on Azure AD** - Define URLs in the basic SAML configuration for the application and record them to help with setting up single sign-on at the service provider. Add a claim to the SAML token that is exchanged with the application to help with controlling access to information. Set up the trust relationship between the identity provider and the service provider by downloading and then uploading a SAML certificate.
+- **Set up application for single sign-on** - Register a user account at the service provider that matches the user account that was created at the identity provider. Configure single sign-on at the service provider using the URLs that were recorded at the identity provider.
+- **Test single sign-on** - Update the URLs at the identity provider using the URLs that were recorded from the service provider. Test the single sign-on configuration using the test user account that was created.
 
 ## What is the main goal?
 

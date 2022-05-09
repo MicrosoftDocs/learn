@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-single-sign-on.exercise-configure-sso-idp
-title: Exercise - Configure single sign-on at the identity provider.
+title: Exercise - Configure single sign-on at the identity provider
 metadata:
   unitType: exercise
-  title: Exercise - Configure single sign-on at the identity provider.
+  title: Exercise - Configure single sign-on at the identity provider
   description: "Configure the properties at the identity provider that are necessary for single sign-on to an application."
   ms.date: 3/24/2022
   author: davidmu1
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-exercise-configure-sso-idp.md)]
+  [!include[](includes/5-exercise-configure-sso-idp.md)]

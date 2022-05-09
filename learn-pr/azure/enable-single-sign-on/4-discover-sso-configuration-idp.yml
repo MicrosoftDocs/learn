@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-discover-sso-configuration-idp.md)]
+  [!include[](includes/4-discover-sso-configuration-idp.md)]
