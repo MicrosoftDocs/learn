@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 5
 content: |
 quiz:
-  title: 'Knowledge check'
+  title: 'Check your knowledge'
   questions:
   - content: 'How can Azure Communication Services be used to make voice calls?'
     choices:
