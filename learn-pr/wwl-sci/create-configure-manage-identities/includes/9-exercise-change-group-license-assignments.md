@@ -54,7 +54,7 @@ The following sections give descriptions of each potential problem and the way t
 
 **Problem**: There aren't enough available licenses for one of the products that's specified in the group. You need to either purchase more licenses for the product or free up unused licenses from other users or groups.
 
-To see how many licenses are available, go to **Azure Active Directory** then **Licenses** then **All products**.
+To see how many licenses are available, go to **Azure Active Directory**, then **Licenses**, then **All products**.
 
 To see which users and groups are consuming licenses, select a product. Under **Licensed users**, you see a list of all users who have had licenses assigned directly or via one or more groups. Under **Licensed groups**, you see all groups that have that products assigned.
 
@@ -110,7 +110,7 @@ Updating license assignment on a user causes the proxy address calculation to be
 
 ## LicenseAssignmentAttributeConcurrencyException in audit logs
 
-**Problem**: User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Azure AD will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.
+**Problem**: User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of the same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Azure AD will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.
 
 ## More than one product license assigned to a group
 
