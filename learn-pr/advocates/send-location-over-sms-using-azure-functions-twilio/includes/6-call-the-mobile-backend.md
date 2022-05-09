@@ -24,7 +24,7 @@ Your mobile app is now up and running and you've created the initial version of 
     const string baseUrl = "http://localhost:7071";
     ```
 
-1. In the `SendLocation` method create a new instance of `PostData` using the location and the list of phone numbers entered by the user.
+1. In the `SendLocation` method, create a new instance of `PostData` using the location and the list of phone numbers entered by the user.
 
     ```cs
     PostData postData = new PostData
@@ -41,7 +41,7 @@ Your mobile app is now up and running and you've created the initial version of 
 1. To serialize the `PostData` as JSON, the easiest way is to use the Newtonsoft.Json NuGet package. Add this NuGet package to the `ImHere`.
 
      - Right-click **Dependencies** under the ImHere project and select _Manage NuGet Packages..._.
-     - In the **Browse** tab, search for Newtonsoft.Json package and click **Install**. The NuGet package will be added to your project.
+     - In the **Browse** tab, search for Newtonsoft.Json package and select **Install**. The NuGet package will be added to your project.
 
 1. Serialize the `PostData` to a `string` using the `JsonConvert` static class. Encode this string into a `StringContent` class so that it can be passed to the Azure Functions as JSON.
 
@@ -143,9 +143,9 @@ namespace ImHere
 
 1. Make sure that your function is still running locally and the port matches the `SendLocation` method.
 
-1. Set the UWP app as the startup app and run it. Click the **Send Location** button. You'll see output in the Functions runtime console window showing the function being called, and the logging showing the generated URL.
+1. Set the UWP app as the startup app and run it. Select the **Send Location** button. You'll see output in the Functions runtime console window showing the function being called, and the logging showing the generated URL.
 
-    :::image type="content" source="../media/6-function-called.png" alt-text="Output of the function being called.":::
+    :::image type="content" source="../media/6-function-called.png" alt-text="Screenshot of the output of the function being called.":::
 
 1. To test the URL generation, paste it from the console into a browser. It should show your current location.
 

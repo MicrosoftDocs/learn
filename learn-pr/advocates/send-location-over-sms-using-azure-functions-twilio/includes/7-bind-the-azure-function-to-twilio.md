@@ -13,7 +13,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 1. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
 Make sure that you also have NuGet packages for Microsoft.Azure.WebJobs and latest .NET SDK installed in your function. The NuGet section for your function should look like the screenshot below:
 
-   :::image type="content" source="../media/Imhere-function-dependencies.png" alt-text="Screenshot showing the function New Get dependencies.":::
+   :::image type="content" source="../media/7-function-dependencies.png" alt-text="Screenshot that shows the function New Get dependencies.":::
 
 1. Open the SendLocation class in the ImHere.Functions project for editing.
 
@@ -41,11 +41,11 @@ Make sure that you also have NuGet packages for Microsoft.Azure.WebJobs and late
 
     * **AccountSidSetting** - set this to `"TwilioAccountSid"`
   
-        This is the SID for your Twilio account that you recorded earlier in the module. Rather than set the SID directly, this parameter is the name of a value in the function app settings that will be used to retrieve the SID. We will define this parameter later.
+        This is the SID for your Twilio account that you recorded earlier in the module. Rather than set the SID directly, this parameter is the name of a value in the function app settings that will be used to retrieve the SID. We'll define this parameter later.
 
     * **AuthTokenSetting** - set this to `"TwilioAuthToken"`
 
-       This is the Auth Token for your Twilio account that you recorded earlier in the module. Rather than set the Auth Token directly, this parameter is the name of a value in the function app settings that will be used to retrieve the Auth Token. We will define this parameter later.
+       This is the Auth Token for your Twilio account that you recorded earlier in the module. Rather than set the Auth Token directly, this parameter is the name of a value in the function app settings that will be used to retrieve the Auth Token. We'll define this parameter later.
 
     * **From** - set this to your Twilio active phone number that you recorded earlier in the module.
 
@@ -58,7 +58,7 @@ Make sure that you also have NuGet packages for Microsoft.Azure.WebJobs and late
 
 Function app settings can be configured locally inside the `local.settings.json` file. Add your Twilio account SID and Auth Token to this JSON file using the setting names that were passed to the `TwilioSMS` attribute.
 
-1. Open the `local.settings.json` file in the ImHere.Functions project and replace the existing code with the following:
+1. Open the `local.settings.json` file in the ImHere.Functions project and replace the existing code with the following code:
 
     ```json
     {
@@ -159,17 +159,17 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
 1. Enter your own phone number in international format (+\<country code\>\<phone number\>) into the Xamarin.Forms app. Twilio trial accounts can send  messages only to verified phone numbers, so for now, you'll only be able to message yourself unless you upgrade to a paid account or verify other numbers.
 
-1. Click the **Send Location** button. If the SMS message was sent successfully, you'll see a message in the Xamarin.Forms app saying, "Location sent successfully".
+1. Select the **Send Location** button. If the SMS message was sent successfully, you'll see a message in the Xamarin.Forms app saying, "Location sent successfully".
 
-    :::image type="content" source="../media/7-ui-location-sent.png" alt-text="The Xamarin.Forms app showing the location as sent.":::
+    :::image type="content" source="../media/7-ui-location-sent.png" alt-text="Screenshot that shows the Xamarin.Forms app with the location sent.":::
 
-1. In the console logs for your function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they will be logged out here.
+1. In the console logs for your function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they'll be logged out here.
 
-    :::image type="content" source="../media/7-function-message-sent.png" alt-text="The Azure Functions console showing the message has been sent.":::
+    :::image type="content" source="../media/7-function-message-sent.png" alt-text="Screenshot that shows the Azure Functions console with the message sent.":::
 
 1. Check your phone for a message. Follow the link in the message to see your location.
 
-    :::image type="content" source="../media/7-message-received.png" alt-text="The SMS message received on a mobile phone.":::
+    :::image type="content" source="../media/7-message-received.png" alt-text="Screenshot that shows SMS message received on a mobile phone.":::
 
     > [!TIP]
     > The location you'll see is the location where the app is running, so will be near to the data center that the VM is running from. If this app was running on your local device then it would show your location.

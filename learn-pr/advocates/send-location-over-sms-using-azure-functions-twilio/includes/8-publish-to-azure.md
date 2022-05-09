@@ -14,27 +14,27 @@ Azure Functions can be published to Azure from inside Visual Studio.
 
 1. From the **Publish** dialog, select *Azure*, and then select **Next**.
 
-    :::image type="content" source="../media/8-pick-publish-target.png" alt-text="Screenshot of Azure selected for the Publish target.":::
+    :::image type="content" source="../media/8-pick-publish-target.png" alt-text="Screenshot that shows Azure selected for the Publish target.":::
 
-1. For the Specific Target, select *Azure Functions App (Windows)*. Click **Next**.
+1. For the Specific Target, select *Azure Functions App (Windows)*. Select **Next**.
 
     :::image type="content" source="../media/8-pick-publish-specific-target.png" alt-text="Screenshot of Azure Functions App selected for the Publish specific target.":::
 
 1. Sign in to your Azure account.
 
-1. Click the **+** button next to **Function Apps** to create a new Azure Function.
+1. Select the **+** button next to **Function Apps** to create a new Azure Function.
 
 1. Enter a name for your app.
 
 1. Select your *Subscription*, *Resource Group*, *Plan Type*, *Location*, and *Azure Storage*.
 
-1. Click **Create** to provision all the resources on Azure and publish your Azure Functions app.
+1. Select **Create** to provision all the resources on Azure and publish your Azure Functions app.
 
-    :::image type="content" source="../media/8-create-app-service.png" alt-text="Create the App Service.":::
+    :::image type="content" source="../media/8-create-app-service.png" alt-text="Screenshot that shows how to create the App Service.":::
 
-1. You may be asked if you want to update the functions version on Azure. If this dialog appears, select **Yes** to ensure your function app is published with the latest Azure Functions runtime version.
+1. You might be asked if you want to update the functions version on Azure. If this dialog appears, select **Yes** to ensure your function app is published with the latest Azure Functions runtime version.
 
-    :::image type="content" source="../media/8-update-functions-on-azure.png" alt-text="The update Azure Functions dialog.":::
+    :::image type="content" source="../media/8-update-functions-on-azure.png" alt-text="Screenshot that shows the update Azure Functions dialog.":::
 
 Provisioning will take a couple of minutes to complete. The following resources will be provisioned:
 
@@ -48,15 +48,15 @@ The function will now be published and available to call at **https://\<your-app
 
 When the Azure Functions was running locally, it was using Twilio credentials that were stored in a `local.settings.json` file. As the name suggests, this file is for local settings, not Azure settings. Before the Azure Functions can be called inside Azure, the `TwilioAccountSid` and `TwilioAuthToken` settings need to be configured.
 
-1. From the **Publish** tab, click the ellipsis (...) next to **Hosting** and click **Manage Azure App Service Settings**.
+1. From the **Publish** tab, select the ellipsis (...) next to **Hosting** and select **Manage Azure App Service Settings**.
 
-    :::image type="content" source="../media/8-application-settings-option.png" alt-text="The Manage Azure App Service Settings option.":::
+    :::image type="content" source="../media/8-application-settings-option.png" alt-text="Screenshot that shows the Manage Azure App Service Settings option.":::
 
-1. The **Application Settings** dialog will show application settings with both a local and remote value - the local coming from your `local.settings.json` file, and the remote value is the one your function will use when it is hosted in Azure. Copy the values from the *Local* to the *Remote* boxes for the **TwilioAccountSid** and **TwilioAuthToken** values.
+1. The **Application Settings** dialog will show application settings with both a local and remote value - the local coming from your `local.settings.json` file, and the remote value is the one your function will use when it's hosted in Azure. Copy the values from the *Local* to the *Remote* boxes for the **TwilioAccountSid** and **TwilioAuthToken** values.
 
-    :::image type="content" source="../media/8-set-creds-in-app-settings.png" alt-text="Setting the Twilio credentials in the Application Settings.":::
+    :::image type="content" source="../media/8-set-creds-in-app-settings.png" alt-text="Screenshot that shows the Twilio credentials in the Application Settings.":::
 
-1. Click **OK**. This will publish the values to the Azure Functions app.
+1. Select **OK**. This will publish the values to the Azure Functions app.
 
 ## Pointing the mobile app to Azure
 
@@ -72,11 +72,10 @@ When the Azure Functions was running locally, it was using Twilio credentials th
 
 1. Set the `ImHere.UWP` app as the startup app and run it.
 
-1. Enter a phone number and click the **Send Location** button.
+1. Enter a phone number and select the **Send Location** button.
 
 1. You should receive the location as an SMS message.
 
-1. If you get back a *Service Unavailable* error, check what version of the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package your functions app is using, it should be 3.0.0-rc1.
 1. If you get back a *Service Unavailable* error, check what version of the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package your functions app is using, it should be 3.0.0-rc1.
 
 ## Summary
