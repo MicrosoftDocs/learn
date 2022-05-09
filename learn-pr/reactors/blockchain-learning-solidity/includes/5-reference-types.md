@@ -28,7 +28,7 @@ contract C {
   
   // the data location of values is memory
   function buy(uint[] memory values) public {
-      x = value; // copies array to storage
+      x = values; // copies array to storage
       uint[] storage y = x; //data location of y is storage
       g(x); // calls g, handing over reference to x
       h(x); // calls h, and creates a temporary copy in memory
