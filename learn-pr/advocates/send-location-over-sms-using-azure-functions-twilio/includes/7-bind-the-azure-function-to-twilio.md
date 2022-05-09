@@ -13,7 +13,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 1. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
 Make sure that you also have NuGet packages for Microsoft.Azure.WebJobs and latest .NET SDK installed in your function. The NuGet section for your function should look like the screenshot below:
 
-   :::image type="content" source="../media/Imhere-function-dependencies.png" alt-text="Screenshot showing the function NuGet dependencies.":::
+   :::image type="content" source="../media/Imhere-function-dependencies.png" alt-text="Screenshot showing the function New Get dependencies.":::
 
 1. Open the SendLocation class in the ImHere.Functions project for editing.
 

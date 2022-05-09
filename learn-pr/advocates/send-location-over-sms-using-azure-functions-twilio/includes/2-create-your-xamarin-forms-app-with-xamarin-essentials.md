@@ -6,13 +6,13 @@ To complete the steps in this unit, you need Xamarin.Forms cross-platform UI too
 
 1. From Visual Studio, select *File > New > Project...*.
 
-1. Use the search bar to find *Mobile App (Xamarin.Forms)*, select it, and click **Next**.
+1. Use the search bar to find *Mobile App (Xamarin.Forms)*, choose the item, and select **Next**.
 
 1. Name the solution "ImHere".
 
 1. Choose an appropriate location for the solution.
 
-1. Click **Create**.
+1. Select **Create**.
 
     :::image type="content" source="../media/2-new-solution-dialog.png" alt-text="The New Solution dialog.":::
 
@@ -20,14 +20,14 @@ To complete the steps in this unit, you need Xamarin.Forms cross-platform UI too
 
 1. For this module you will build a UWP app, so uncheck iOS and Android and leave Windows UWP checked.
 
-1. Click **Create**.
+1. Select **Create**.
 
     :::image type="content" source="../media/2-configure-solution-dialog.png" alt-text="The configure new solution dialog.":::
 
 Visual Studio will create two projects for you
 
-- a UWP app called `ImHere.UWP`
-- a .NET Standard library, `ImHere`
+- UWP app named `ImHere.UWP`
+- .NET Standard library named `ImHere`
 
 Xamarin.Forms apps are made up of two parts
     - one or more platform-specific app projects, and
@@ -52,7 +52,7 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Click the **Install** button to install the NuGet package. You'll need to accept the license to continue.
 
-    :::image type="content" source="../media/2-add-essentials-nuget.png" alt-text="Adding the Xamarin.Essentials NuGet package.":::
+    :::image type="content" source="../media/2-add-essentials-nuget.png" alt-text="Screenshot that shows how to add the Xamarin.Essentials NuGet package.":::
 
 ## Building and running the app
 

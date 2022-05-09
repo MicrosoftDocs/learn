@@ -49,13 +49,13 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Create a new project under the `ImHere` solution by right-clicking on the solution and selecting *Add > New Project...*.
 
-1. Search for *Class Library (.NET Standard)*, select it, and click **Next**.
+1. Search for *Class Library (.NET Standard)*, choose the item, and then select **Next**.
 
     :::image type="content" source="../media/5-add-new-net-standard-project.png" alt-text="Screenshot of the Add New Project dialog with the Class Library option highlighted.":::
 
 1. Name the project "ImHere.Data", and then click **Next**.
 
-1. For the Class Library Framework, select *.NET Standard 2.0*, and then click **Create**.
+1. For the Class Library Framework, choose *.NET Standard 2.0*, and then select **Create**.
 
 1. Delete the auto-generated "Class1.cs" file.
 

@@ -10,9 +10,9 @@ Azure Functions can be published to Azure from inside Visual Studio.
 
 1. Right-click on the `ImHere.Functions` app in the solution explorer and select *Publish...*.
 
-    :::image type="content" source="../media/8-right-click-publish.png" alt-text="Right-click publish on the Functions app.":::
+    :::image type="content" source="../media/8-right-click-publish.png" alt-text="Screenshot that shows how to choose to publish a Functions app.":::
 
-1. From the **Publish** dialog, select *Azure*. Click **Next**.
+1. From the **Publish** dialog, select *Azure*, and then select **Next**.
 
     :::image type="content" source="../media/8-pick-publish-target.png" alt-text="Screenshot of Azure selected for the Publish target.":::
 
@@ -48,7 +48,7 @@ The function will now be published and available to call at **https://\<your-app
 
 When the Azure Functions was running locally, it was using Twilio credentials that were stored in a `local.settings.json` file. As the name suggests, this file is for local settings, not Azure settings. Before the Azure Functions can be called inside Azure, the `TwilioAccountSid` and `TwilioAuthToken` settings need to be configured.
 
-1. From the **Publish** tab, click the ellipsis next to **Hosting** and click **Manage Azure App Service Settings**.
+1. From the **Publish** tab, click the ellipsis (...) next to **Hosting** and click **Manage Azure App Service Settings**.
 
     :::image type="content" source="../media/8-application-settings-option.png" alt-text="The Manage Azure App Service Settings option.":::
 
@@ -62,7 +62,7 @@ When the Azure Functions was running locally, it was using Twilio credentials th
 
 1. From the Publish tab, copy the **Site URL** using the **Copy to clipboard** button next to the value.
 
-    :::image type="content" source="../media/8-copy-site-url.png" alt-text="Copy the site URL from the publish tab.":::
+    :::image type="content" source="../media/8-copy-site-url.png" alt-text="Screenshot that shows how to copy the site U R L from the publish tab.":::
 
 1. Open the `MainViewModel` from the `ImHere` project.
 
