@@ -23,6 +23,9 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Legal terms**: Selected.
     - **Responsible AI notice**: Selected.
 
+    >[!TIP]
+    >You can reuse existing resources from previous labs if you have them available. Be sure to use a new container in the storage account to connect the custom entity extraction project to.
+
 3. Review and create the resource. 
 
 ### Get Language resource key and endpoint
@@ -36,7 +39,7 @@ If you haven't already done so, create a **Language service** resource in your A
 
 Once you have created the language service and storage account, you'll need to upload example articles to train your model later.
 
-1. [Download sample articles]() from this repo on GitHub. Extract the files in the `.zip` provided.
+1. [Download sample articles](https://github.com/MicrosoftLearning/ai-language/tree/main/data) from this repo on GitHub. Extract the files in the `.zip` provided.
 
 2. In the [Azure portal](https://portal.azure.com), navigate to the storage account you created, and select it
 
@@ -161,7 +164,8 @@ Now that you have a custom model, you can run a simple client application that u
     git clone https://github.com/MicrosoftLearning/ai-language ai-language
     ```
    
-    >[!TIP] If you already used this command in another lab to clone the *ai-language* repository, you can skip this step.
+    > ![TIP] 
+    > If you already used this command in another lab to clone the *ai-language* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-language**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
@@ -171,19 +175,19 @@ Now that you have a custom model, you can run a simple client application that u
 
 3. Open `classifytext.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key`, `$endpoint`, `$projectName`, and `$modelName` with your values, and save the file.
 
-    >![TIP]
-    >If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
+    > ![TIP]
+    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
 4. Run the following command to call your model and classify the text provided. The script won't output the whole file it's classifying for the sake of space, but you can view the contents [here on Github](https://github.com/MicrosoftLearning/ai-language). Review the output.
 
     ```
-    classifytext.ps1 test1.txt
+    classify-text.ps1 test1.txt
     ```
 
 5. Run the following command again, this time with a different file to classify. Review the output.
 
     ```
-    classifytext.ps1 test2.txt
+    classify-text.ps1 test2.txt
     ```
 
 ## Clean up
