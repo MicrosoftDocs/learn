@@ -35,7 +35,7 @@ In this task, we will demo how to register an application.
 ## Task 2 - Test the application
 
 > [!NOTE]
-> You will need the information from Task 1, and [Microsoft Graph Postman](https://www.postman.com) or you can use [Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer/preview) before you can complete testing the application registration.
+> You will need the information from Task 1, and [Postman](https://www.postman.com) or you can use [Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer/preview) before you can complete testing the application registration.
 
 In this task, we will test the app registration.
 
