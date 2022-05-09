@@ -4,7 +4,7 @@ The administrator reviews the application for single sign-on support and if appr
 
 ## Access the application gallery
 
-The Azure AD application gallery contains thousands of pre-integrated software as a service (SaaS)applications. Many of the applications that the retail company uses are probably already in the gallery. The administrator from the retail company locates the gallery from the Azure portal.
+The Azure AD application gallery contains thousands of pre-integrated software as a service (SaaS) applications. Many of the applications that the retail company uses are probably already in the gallery. The administrator from the retail company locates the gallery from the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
@@ -18,7 +18,7 @@ The Azure AD application gallery contains thousands of pre-integrated software a
 
 ## Find and add an application
 
-After locating the gallery, the administrator searches for the **Azure AD SAML Toolkit** application (represents the one that was requested by the team to work on company promotion).
+After the administrator locates the gallery, they search for the **Azure AD SAML Toolkit** application (represents the one that was requested by the team to work on company promotion) and add it to the tenant.
 
 1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
 
