@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 5
 content: |
 quiz:
-  title: 'Knowledge check'
+  title: 'Check your knowledge'
   questions:
   - content: 'How can Azure Communication Services be used to make voice calls?'
     choices:
@@ -23,9 +23,9 @@ quiz:
     - content: 'I can provision phone numbers that will allow me to make calls.'
       isCorrect: false
       explanation: "Phone numbers can be provisioned using the Azure portal by navigating to your Communication Services resource but they aren't required for non-PTSN voice calls."
-    - content: "Once I've provisioned an Azure Communication Services resource, I can use Azure Communication Services client libraries to make voice calls between users."
+    - content: "Once I have provisioned an Azure Communication Services resource, I can use Azure Communication Services client libraries to make voice calls between users."
       isCorrect: true
-      explanation: 'By combining an Azure Communication Services resource with client libraries, you can make voice calls between users.'
+      explanation: 'Correct. By combining an Azure Communication Services resource with client libraries, you can make voice calls between users.'
   - content: 'As an authenticated user, what information do you need to call another user?'
     choices:
     - content: 'An Azure Communication Services user token.'
