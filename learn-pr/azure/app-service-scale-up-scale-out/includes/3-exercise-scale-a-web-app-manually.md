@@ -138,7 +138,7 @@ The exercise also runs a client app that simulates several users issuing POST an
    - Select **Add metric**, and under the **Metric** dropdown list, select **CPU Time**. For **Aggregation**, select **Sum**.
    - Select **Add metric**, and under the **Metric** dropdown list, select **Http Server Errors**. For **Aggregation**, select **Sum**.
    - Select **Add metric**, and under the **Metric** dropdown list, select **Http 4xx**. For **Aggregation**, select **Sum**.
-   - Select **Add metric**, and under the **Metric** dropdown list, select **Average Response Time**. For **Aggregation**, select **Avg**.
+   - Select **Add metric**, and under the **Metric** dropdown list, select **Response Time**. For **Aggregation**, select **Avg**.
 
 1. In the right menu bar, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
 
@@ -154,7 +154,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. In the Azure portal, select your web app name (App service), and in the left menu pane, under **Settings**, select **Scale out (App Service plan)**. The **Scale out (App Service plan)** pane appears.
 
-1. On the **Configure** tab, set the **Instance count** to **5**, and in the top menu bar, select **Save**.
+1. On the **Configure** tab, select **Manual scale** and set the **Instance count** to **5**. In the top menu bar, select **Save**.
 
     :::image type="content" source="../media/3-scale-out-to-5.png" alt-text="Screenshot of the Configure page for the App Service plan, scaling out to five instances.":::
 
