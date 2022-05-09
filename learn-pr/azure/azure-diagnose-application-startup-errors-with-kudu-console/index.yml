@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure-diagnose-application-startup-errors-with-kudu-console
 metadata:
-  title: Diagnose startup errors in your application using Kudu console
-  description: This module explains how to use kudu console to examine the application event log to identify the event that caused the error.
-  ms.date: 06/21/2019
+  title: Diagnose startup errors in your application by using the Kudu console
+  description: This module explains how to use the Kudu console and the Azure portal to examine the application event log to identify the event that caused the error.
+  ms.date: 05/09/2022
   author: patridge
   ms.author: adpatrid 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Diagnose startup errors in your application using Kudu console
-summary: This module will help you understand the common startup errors in a ASP.NET Core application and diagnose them using Kudu console.
+title: Diagnose startup errors in your application by using the Kudu console
+summary: This module helps you understand the common startup errors in a ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
 abstract: |
   In this module, you'll:
-  - Learn about the concepts of Kudu console
-  - Learn various types of App startup errors
-  - Use Kudu console to examine the application event log
+  - Learn about the concepts of the Kudu console.
+  - Learn various types of web app startup errors.
+  - Use the Kudu console and the Azure portal to examine the application event log.
 prerequisites: |
-  - Experience in basic web app development and deployment
-  - Understanding of App Service in Microsoft Azure
+  - Experience in basic web app development and deployment.
+  - Understanding of web apps in Azure App Service.
 iconUrl: /learn/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
 levels:
 - intermediate

@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.3-app-startup-errors
-title: Describe the application startup errors and azure app service diagnostics
+title: Describe the application startup errors and Azure App Service diagnostics
 metadata:
-  title: Describe the application startup errors and azure app service diagnostics
-  description: Describe the application startup errors and azure app service diagnostics
-  ms.date: 06/21/2019
+  title: Describe the application startup errors and Azure App Service diagnostics
+  description: Describe the application startup errors and Azure App Service diagnostics.
+  ms.date: 05/09/2022
   author: patridge
   ms.author: adpatrid 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/3-app-startup-errors.md)]
 quiz:
-  title: Application startup errors and azure app service diagnostics
+  title: Application startup errors and Azure App Service diagnostics
   questions:
   - content: "Identify the common cause for the 500.30 In-process start failure."
     choices:
@@ -26,15 +26,15 @@ quiz:
     - content: "Headers are sent and it is too late for the server to send internal server error."
       isCorrect: false
       explanation: "Headers are sent and it is too late for the server to send internal server error is a common cause for connection reset."
-  - content: "Identify a common functionality of Kudu console."
+  - content: "Identify a common functionality of the Kudu console."
     choices:
     - content: "Alerts"
       isCorrect: false
-      explanation: "Kudu console does not automatically generate alerts to monitor issues."
+      explanation: "The Kudu console does not automatically generate alerts to monitor issues."
     - content: "Automatic failure detection"
       isCorrect: false
-      explanation: "Automatic failure detection in web apps is not supported by Kudu console."
+      explanation: "Automatic failure detection in web apps is not supported by the Kudu console."
     - content: "Run git commands to diagnose issues."
       isCorrect: true
-      explanation: "Kudu console allows running git commands to diagnose issues."
+      explanation: "The Kudu console allows running git commands to diagnose issues."
       

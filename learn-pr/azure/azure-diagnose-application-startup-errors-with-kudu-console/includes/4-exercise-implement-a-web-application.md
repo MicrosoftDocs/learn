@@ -1,25 +1,27 @@
-﻿In this unit, you will use developer tools to create the code for a starter web application.
+﻿In this unit, you use developer tools to create the code for a starter web application.
 
-To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. For this module, you'll create and deploy an ASP.NET Core web app.
+To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. In this exercise, you create and deploy an ASP.NET Core web app.
 
 ## Create a new web project
 
 Use the `dotnet` command line tool to create a new ASP.NET Core web project.
 
-1. In the Cloud Shell on the right, create a new ASP.NET Core MVC application. Name it "HotelApp".
+1. Sign in to the sandbox and review the permissions.
+
+1. In Azure Cloud Shell on the right, create a new ASP.NET Core MVC application named HotelApp.
 
     ```bash
     dotnet new mvc --name HotelApp
     ```
 
-1. The command will create a new folder named "HotelApp" to hold your project. `cd` there, then build and run the application to verify it is complete.
+1. The command creates a new folder named *HotelApp* to hold your project. Run the following commands to build and run the application:
 
     ```bash
     cd HotelApp
     dotnet run
     ```
 
-1. You should see output similar to the following:
+1. Check for output that's similar to the following example:
 
     ```output
     Using launch settings from /home/your-user/Documents/HotelApp/Properties/launchSettings.json...
@@ -32,47 +34,50 @@ Use the `dotnet` command line tool to create a new ASP.NET Core web project.
 
     The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-    If you are running the app on your own machine, you'd be able to open a browser to `http://localhost:5000`. To make this accessible from outside of our own machine, you'll need to deploy the app to somewhere with a public endpoint.
-    
-1. Use <kbd>Ctrl+c</kbd> to stop the application.
+    If you're running the app on your own machine, you'd be able to open a browser to `http://localhost:5000`. To make the app accessible from outside of our own machine, you'll need to deploy the app to somewhere with a public endpoint.
+
+1. Press Ctrl+C to stop the application.
 
 ## Update the web project code
 
-1. Edit the *Program.cs* file to add code that will cause a startup error. Open an editor with the following command:
+1. Edit the *Program.cs* file to add code that will cause a startup error. Use the following command to open an editor:
 
     ```bash
     code Program.cs
     ```
-1. In the *Program.cs* file Add `.UseContentRoot("invalid path")` after `UseStartup<Startup>()`. Your file should look like the following:
+
+1. In the *Program.cs* file, add `.UseContentRoot("invalid path")` after `UseStartup<Startup>()`. Your file should look like the following code:
 
     ```csharp
     using System;
     using System.Collections.Generic;
-    using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
-
+    
     namespace HotelApp
     {
         public class Program
         {
             public static void Main(string[] args)
             {
-                CreateWebHostBuilder(args).Build().Run();
+                CreateHostBuilder(args).Build().Run();
             }
-
-            public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-                WebHost.CreateDefaultBuilder(args)
-                    .UseStartup<Startup>().UseContentRoot("invalid path");
+    
+            public static IHostBuilder CreateHostBuilder(string[] args) =>
+                Host.CreateDefaultBuilder(args)
+                    .ConfigureWebHostDefaults(webBuilder =>
+                    {
+                        webBuilder.UseStartup<Startup>().UseContentRoot("invalid path");
+                    });
         }
     }
     ```
 
-1. Use <kbd>Ctrl+s</kbd> to save the file after editing and then <kbd>Ctrl+q</kbd> to close the editor.
+1. Press Ctrl+S and then Ctrl+Q to save the file and close the editor.
 
 1. Deploy the project to a new web app. The web app name must be unique in Azure App Service, so we'll add a random string to the end to ensure the name is unique:
 
@@ -85,4 +90,16 @@ Use the `dotnet` command line tool to create a new ASP.NET Core web project.
     ```
 
     Copy the name of your app service so you can refer to it again.
-You will need to wait till the web app creation process is complete before clicking on the **Check your work** button.
+
+    Wait for the web app creation process to finish and the cursor to appear in Azure Cloud Shell.
+
+1. At the cursor, run the application:
+
+    ```bash
+    dotnet run
+
+    ```
+
+1. Check the Azure Cloud Shell sandbox for an error message that looks similar to the following example:
+
+    :::image type="content" source="../media/dotnet-run-command.png" alt-text="Screenshot that shows an error when the application runs in Azure Cloud Shell.":::

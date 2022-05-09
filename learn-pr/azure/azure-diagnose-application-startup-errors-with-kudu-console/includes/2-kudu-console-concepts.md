@@ -1,51 +1,51 @@
-As an IT admin for a resort and hotel company, you need to be prepared to handle issues on your web applications starting from 500 errors or page startup errors or site down issues.
+As an IT admin for a resort and hotel company, you need to be prepared to resolve startup issues for your web applications, including 500 errors, page startup errors, and site-down issues.
 
-Azure App Service is a web hosting service that helps you deploy your ASP.NET Core web app. In this unit, you'll learn how Kudu console can help you diagnose the different app startup errors in your ASP.NET Core web app. 
+Azure App Service is a web hosting service that helps you deploy your ASP.NET Core web app. In this unit, you'll learn how the Kudu console can help you diagnose the different app startup errors in your ASP.NET Core web app.
 
-## What is Kudu console?
+## What is the Kudu console?
 
-Kudu is a troubleshooting and analysis tool for Microsoft Azure App Service. Kudu Console provides both command line and file browser access to your sites.
+Kudu is a troubleshooting and analysis tool for Azure App Service. The Kudu console provides both command line and file browser access to the web app sites you create by using Azure App Service.
 
-You can access Kudu Console through the Azure Portal by navigating to the **Development Tools** category of your web app's overview page and clicking the **Advanced Tools** option and the **Go** button in the advanced tools page.
+You can access the Kudu console through your web app overview in the Azure portal. Go to the **Development Tools** category of your web app overview, and then select **Advanced Tools**. Select **Go** to open the Kudu console in a new window.
 
-![Advanced Tools.](../media/AdvancedTools.png)
+:::image type="content" source="../media/advanced-tools-azure-portal.png" alt-text="Screenshot that shows going to Advanced Tools for a web app in the Azure portal.":::
 
-You can also access the Kudu console of a web app, go to the `{yourwebapp}.scm.azurewebsites.net` URL and click on **Debug Console**.
+You can also access the Kudu console through your deployed web app. Go to the `{yourwebapp}.scm.azurewebsites.net` URL and select **Debug console**.
 
-The Source Control Management (SCM) service site runs the Kudu service and other site extensions. The services offered by Kudu include deployment and troubleshooting for Azure Web Apps, with options for viewing and downloading log files.
+The Source Control Management (SCM) service site runs the Kudu service and other site extensions. The services that Kudu offers include deployment and troubleshooting for web apps in Azure, with options for viewing and downloading log files.
 
-Azure web sites are associated with "scm" service site. The scm site uses single sign on, so if you are already logged on to the Azure Portal, you will be able to go directly to the Kudu console without typing additional credentials. If you prefer not to use Single Sign On and instead use basic authentication, then you can go to `https://mysite.scm.azurewebsites.net/basicauth`, which will prompt you for credentials. 
+Azure websites are associated with the "scm" service site. The scm site uses single sign-on. If you're already signed in to the Azure portal, you can go directly to the Kudu console without using more credentials. If you prefer to not use single sign-on and instead use basic authentication, you can go to `https://<mysite>.scm.azurewebsites.net/basicauth`, where you're prompted for credentials.
 
-Some of the things you can do with Kudu console:
+Here are some of the things you can do in the Kudu console:
 
-1. **Run commands** - Use it to do most standard console operations: changing folder, copy/rename/delete files, and so on. You can also run git commands like git log, git status to diagnose some issues.
+- **Run commands** - Use it to do most standard console operations: change directory, copy/rename/delete files, and so on. You can also run git commands like `git log` and `git status` to diagnose some issues.
 
-1. **Navigate folder UI** - You can use a GUI to select the site folder, and the console window simultaneously navigates to the same folder, so the two halves of the Kudu console work together. 
+- **Move around the folder UI** - Use a GUI to select the site folder, and the console window simultaneously goes to the same folder. The two views of the Kudu console are synced.
 
-1. **Download files and folder** - For files and folders, you can download the file or a zip file containing the contents of the folder.
+- **Download files and folders** - For files and folders, you can download the file or a zip file that contains the contents of the folder.
 
-1. **Upload files and folder** - Use drag and drop into the Kudu Console's file explorer UI.
+- **Upload files and folders** - Drag and drop files in the Kudu console file explorer UI.
 
-1. **Upload and expand zip file** - Dragging and dropping a zip file into Kudu Console will copy the content of the expanded zip file. It is an efficient way to upload a large number of small files and folders.
+- **Upload and expand zip files** - If you drag and drop a zip file into the Kudu console, the contents of the expanded zip file are copied. It's an efficient way to upload a large number of small files and folders.
 
-1. **View and edit text files** - You can edit files through Kudu Console using Ace for in-browser editing. The editor provides an interface to investigate and identify issues.You can also use it to edit the web.config file, with syntax checking and highlighting.
+- **View and edit text files** - You can edit files in the Kudu console by using the Ace editor for in-browser editing. The editor provides an interface you can use to investigate and identify issues. You also can use Ace to edit the *web.config* file. Ace offers syntax checking and highlighting.
 
 ## Kudu architecture
 
-Kudu has a single tenant architecture, which means that each Azure web site that uses git deployment will have its own instance of Kudu service. The instant of Kudu service of the Azure web site is distinct for different Azure websites. The Kudu service gives access to the files of the real site, allowing the console to publish it. 
+Kudu has a single-tenant architecture. Each Azure website that uses git deployment has its own instance of the Kudu service. The instance of the Kudu service of the Azure website is distinct for different Azure websites. The Kudu service gives access to the files of the real site, so the console can publish it.
 
 ### Security model
 
-The Kudu service runs in the same sandbox as the Azure website. This implies that the Kudu service cannot do anything that the site will not be able to do itself. Any code that is run on the Kudu service can only harm its buddy Azure website. 
+The Kudu service runs in the same sandbox as the Azure website. This setup implies that the Kudu service can't do anything that the site can't do itself. Any code that runs on the Kudu service can only harm its buddy Azure website.
 
-Kudu service shares the same resources used by the Azure site. This has an impact on the Azure site's resource quota. If the Kudu service consumes more resources during a build process, then the build process will get blocked which prohibits the site's quotas getting affected in a significant way.
+Kudu service uses the same resources the Azure site uses, and this resource sharing affects the Azure site's resource quota. If the Kudu service consumes more resources during a build process, the build process is blocked and the website's quotas aren't substantially affected.
 
 ### Authentication model
 
-By default, the real site is not authenticated. However, the Kudu service site is authenticated by http basic authentication. The http basic authentication happens before the request reaches the Kudu service. 
+By default, the real site isn't authenticated. However, the Kudu service site is authenticated by HTTP basic authentication. The HTTP basic authentication happens before the request reaches the Kudu service.
 
 ### Process model
 
-The file system is common between the Kudu service and the Azure buddy site, and this does not get impacted regardless or where the process or machine the Kudu service runs on.
+The file system is common between the Kudu service and the Azure buddy site. The file system isn't affected by the process or the machine the Kudu service runs on.
 
 The next unit will help you understand the application startup errors and the Azure application service diagnostics.

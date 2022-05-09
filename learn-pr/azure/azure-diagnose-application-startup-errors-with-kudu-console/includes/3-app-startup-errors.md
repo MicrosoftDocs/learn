@@ -1,44 +1,50 @@
-Azure App Service diagnostics provides an intelligent and interactive interface that helps you troubleshoot your app with no configuration required. The 500 errors experienced when running a web application can be diagnosed using App Service diagnostics.
+Azure App Service diagnostics provide an intelligent and interactive interface to help you troubleshoot your app, with no configuration required. You can use Azure App Service diagnostics to diagnose 500 errors that occur when you run a web application.
 
-## Azure App Service Diagnostics
+## Azure App Service diagnostics
 
-The **Diagnose and Solve problems** in the Azure App Service web app provides the options to choose the options that best describe the issue with your app. This module helps you to diagnose ASP.NET Core app startup issue when hosting with **Internet Information Services (IIS)**.
+In the **Diagnose and Solve problems** option in an Azure App Service web app, you can choose the options that best describe the issue with your app. This unit helps you diagnose an ASP.NET Core app startup issue when you host by using Internet Information Services (IIS).
 
-In Visual Studio, an ASP.NET Core project defaults to IIS Express hosting during debugging. IIS Express is a light-weight self contained version of IIS optimized for developers. It makes it easy to use the current version of IIS to develop and test websites. 
+In Visual Studio, an ASP.NET Core project defaults to IIS Express hosting during debugging. IIS Express is a lightweight, self-contained version of IIS that's optimized for developers. IIS Express makes it easy to use the current version of IIS to develop and test websites. 
 
-The common errors seen when hosting ASP.NET Core Apps on Azure App Service and IIS are:
--**Web App Down**
--**Web App Slow**
--**High CPU Usage**
--**High Memory Usage**
--**Web App Restarted**
+Here are common error categories when ASP.NET Core apps are hosted on Azure App Service and IIS:
 
-To debug these errors you can collect the information from following sources:
+- **Web App Down**
+- **Web App Slow**
+- **High CPU Usage**
+- **High Memory Usage**
+- **Web App Restarted**
 
-- **Browser behavior**: Status code and error messages
+To debug these errors, you can collect the information from the following sources:
+
+- **Browser behavior** (status code and error messages)
 - **Application event log entries**
 - **ASP.NET Core Module stdout and debug log entries**
 
-This module will particularly deal with application startup errors.
+The following sections focus on application startup errors.
 
 ## App startup errors
 
-Some ASP.NET Core app startup errors are: 500.30 In-Process Start Failure, 502.5 Process Failure, 500 Internal Server Error, and Connection reset.
+ASP.NET Core app startup errors include:
+
+- 500.30 In-Process Start Failure
+- 502.5 Process Failure
+- 500 Internal Server Error
+- Connection reset
 
 ### 500.30 In-Process Start Failure
 
-Some of the common causes for this error are that the application failed to start, or that it started and then stopped. The error can be identified by checking the system event log or enable logging through the application process stdout messages. You can also troubleshoot this error by attaching a debugger to the application process. 
+Common causes for this error are that the application failed to start, or the application it started and then stopped. You can identify the error by checking the system event log or by enable logging through the application process stdout messages. You also can troubleshoot this error by attaching a debugger to the application process.
 
-### 502.5 Process Failure 
+### 502.5 Process Failure
 
-The worker process of the ASP.NET Core Module fails to start. This failure is caused when there are configuration errors in the app. This can be diagnosed using the Application Event Log.
+The worker process of the ASP.NET Core Module fails to start. This failure occurs when the app has configuration errors. You can diagnose this error by using the application event log.
 
 ### 500 Internal Server Error
 
-The 500 internal server error occurs with the app's code during startup or while creating a response. The application event log states that the app started normally, which means that the app did start, but it cannot generate a valid response. You can run the app in Kudu Console to troubleshoot the issue.
+The 500 internal server error occurs with the app's code during startup or while creating a response. The application event log states that the app started normally, which means that the app did start, but it can't generate a valid response. You can run the app in the Kudu console to troubleshoot the issue.
 
 ### Connection reset
 
-Connection reset error occurs after the headers are sent and it is too late for the server to send 500 Internal Server Error. Application logging will help resolve this issue.
+A connection reset error occurs after the headers are sent and it's too late for the server to send a 500 Internal Server Error message. View the application logs to help you resolve this issue.
 
-The hands-on labs in this module will help diagnose startup errors using the Application Event Log through Kudu console.
+The exercises in the following units can help you diagnose startup errors by using the Kudu consol and the application event log in the Azure portal.
