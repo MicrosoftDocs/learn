@@ -7,15 +7,15 @@ Unlike value types, which always pass an independent copy of the value, referenc
 When you use a reference type, you must explicitly provide the data storage location for the type. The following options can be used to specify the data location where the type is stored:
 
 - `memory`:  
-  - The location where function arguments are stored.
-  - Has a lifetime limited to the lifetime of an external function call.
+  - The location where function arguments are stored
+  - Has a lifetime limited to the lifetime of an external function call
 - `storage`:
-  - The location where state variables are stored.
-  - Has a lifetime limited to the contract lifetime.
+  - The location where state variables are stored
+  - Has a lifetime limited to the contract lifetime
 - `calldata`:
-  - The location where function arguments are stored.
-  - This location is required for parameters of external functions, but can also be used for other variables.
-  - Has a lifetime limited to the lifetime of an external function call.
+  - The location where function arguments are stored
+  - This location is required for parameters of external functions, but can also be used for other variables
+  - Has a lifetime limited to the lifetime of an external function call
 
 Reference types always create an independent copy of the data.
 
