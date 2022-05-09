@@ -160,35 +160,35 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-language.
 
-    ```
-    git clone https://github.com/MicrosoftLearning/ai-language ai-language
-    ```
-   
-    > ![TIP] 
-    > If you already used this command in another lab to clone the *ai-language* repository, you can skip this step.
+  ```
+  git clone https://github.com/MicrosoftLearning/ai-language ai-language
+  ```
+  
+  > [!TIP] 
+  > If you already used this command in another lab to clone the *ai-language* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-language**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
-     ```
-    code .
-    ```
+  ```
+  code .
+  ```
 
 3. Open `classifytext.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key`, `$endpoint`, `$projectName`, and `$modelName` with your values, and save the file.
 
-    > ![TIP]
-    > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
+  > [!TIP]
+  > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
 4. Run the following command to call your model and classify the text provided. The script won't output the whole file it's classifying for the sake of space, but you can view the contents [here on Github](https://github.com/MicrosoftLearning/ai-language). Review the output.
 
-    ```
-    classify-text.ps1 test1.txt
-    ```
+  ```
+  classify-text.ps1 test1.txt
+  ```
 
 5. Run the following command again, this time with a different file to classify. Review the output.
 
-    ```
-    classify-text.ps1 test2.txt
-    ```
+  ```
+  classify-text.ps1 test2.txt
+  ```
 
 ## Clean up
 
