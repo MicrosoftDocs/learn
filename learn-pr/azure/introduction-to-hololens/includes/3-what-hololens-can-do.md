@@ -10,7 +10,7 @@ The Commissioned Forrester Consulting TEI study on HoloLens 2<sup>1</sup> estima
 
 Over half of the Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
-:::image type="content" source="../media/company-rois.png" alt-text="Infographic of HoloLens 2 Company ROIs." :::
+:::image type="content" source="../media/company-rois.png" alt-text="Infographic showing of HoloLens 2 ROIs, Benefits Present Value (PV), Net PV, and Payback." :::
 
 ## HoloLens 2 solutions
 

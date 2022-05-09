@@ -1,4 +1,4 @@
-:::image type="content" source="../media/hero-image.png" alt-text="Hero image of HoloLens 2.":::
+:::image type="content" source="../media/hero-image.png" alt-text="Image of HoloLens 2 as reflected in a watery background.":::
 
 Microsoft HoloLens 2 is an untethered holographic computer. It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality. HoloLens runs on the Windows Holographic OS, which is based on a "flavor" of Windows 10 that provides users, admins, and developers with a robust, performant, secure, and manageable at-scale platform.
 
