@@ -85,4 +85,4 @@ File.AppendAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", $"{dat
 > [!TIP]
 > In the preceding code example, `Environment.NewLine` prompts .NET to put the value on its own line. If you didn't pass this value, you would get all the numbers squished together on the same line.
 
-In the next exercise, you'll finish the sales-total project for Tailwind Traders by reading all the sales files, and writing the grand total to a .txt file. The company's commerce system can then process the file.
+In the next exercise, you'll finish the sales-total project for Tailwind Traders by reading all the sales files and writing the grand total to a .txt file. The company's commerce system can then process the file.
