@@ -12,7 +12,7 @@ Because HoloLens understands your physical environment, you can place holograms 
 
 HoloLens has sensors that can see a few feet to either side of you, and the frame moves with you as you move around. You can touch and interact with holograms with precision.
 
-:::image type="content" alt-text="Photo of HoloLens 2 Development Edition." source="../media/hololens-2-dev-ed.png":::
+:::image type="content" alt-text="Photo of a HoloLens 2 user manipulating the hologram of a chair." source="../media/hololens-2-dev-ed.png":::
 
 Working with HoloLens 2 is intuitive. Once you get connected, you'll find yourself wanting to use your hands to touch and manipulate the holographic imagery. 
 
@@ -41,9 +41,8 @@ HoloLens can run software that helps to improve your support services. For examp
 * Dynamics 365 Guides help your employees create step-by-step visual interactive holographic work instructions that increase the speed at which your employees can learn new skills. 
 * Dynamics 365 Remote Assist empowers your service technicians to collaborate and solve problems quickly by placing video calls to remote experts. Remote experts can then get a 1st-person view of the HoloLens wearer, and provide guidance using markers and annotations. These HoloLens features help to further increase productivity and reduce user error.
 
-You can find many software applications in the Microsoft app store<sup>*</sup>.
-
-\* Link to the Microsoft app store available at the end of this learn module.  
+>[!Note]
+>You can find many software applications in the Microsoft app store. Link to the Microsoft app store available at the end of this learn module.  
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWQWwC]
 

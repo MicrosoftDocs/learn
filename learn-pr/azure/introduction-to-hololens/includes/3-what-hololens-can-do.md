@@ -6,11 +6,11 @@ The Commissioned Forrester Consulting TEI study on HoloLens 2<sup>1</sup> estima
 
 *"An immense breadth of mixed reality use cases across industries and roles are possible with HoloLens 2, powered by a comprehensive ecosystem of applications and services from Microsoft and myriad third-party partners. Mixed reality on HoloLens 2 is broadly extensible; its support for custom code and cloud services has led to a growing market of customers and partners that continually expand the bounds of possibility."*
 
-:::image type="content" source="../media/forrester-info-graph.png" alt-text="Info graph of HoloLens 2 Forrester Market data." :::
+:::image type="content" source="../media/forrester-info-graph.png" alt-text="Infographic of HoloLens 2 Forrester Market data." :::
 
 Over half of the Fortune 500 enterprises have purchased Microsoft HoloLens 2. 
 
-:::image type="content" source="../media/company-rois.png" alt-text="Info graph of HoloLens 2 Company ROIs." :::
+:::image type="content" source="../media/company-rois.png" alt-text="Infographic of HoloLens 2 Company ROIs." :::
 
 ## HoloLens 2 solutions
 

@@ -23,6 +23,7 @@ quiz:
       isCorrect: true
     - content: "Power cable"
       isCorrect: false
+      explanation: "HoloLens 2 is an untethered holographic device."
   - content: "Dynamics 365 Guides is best used for:"
     choices:
     - content: "Training"
@@ -33,6 +34,7 @@ quiz:
       isCorrect: false
     - content: "Viewing models"
       isCorrect: false
+      explanation: "Dynamics 365 Guides help employees create step-by-step visual interactive holographic work instructions that increase the speed employees can learn new skills."
   - content: "All of these Azure services exist and can be incorporated into your mixed reality apps except:"
     choices:
     - content: "Azure Remote Rendering"
@@ -43,6 +45,7 @@ quiz:
       isCorrect: true
     - content: "Azure Spatial Anchors"
       isCorrect: false
+      explanation: "Virtual rooms is not an Azure service."
   - content: "Which application will allow HoloLens employees to collaborate in real time with remote colleagues?"
     choices:  
     - content: "Dynamics 365 Remote Assist"

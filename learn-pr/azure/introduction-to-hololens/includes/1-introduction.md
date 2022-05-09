@@ -12,7 +12,7 @@ HoloLens 2 has four visible light cameras for head tracking, two infrared camera
 
 The following diagram will help you understand the complexity of a HoloLens 2 device. The external headset controls are simple and user-friendly.
 
-:::image type="content" source="../media/hololens-2-exploded-view-diagram.png#lightbox" alt-text="Diagram of HoloLens 2 exploded into parts." lightbox="../media/hololens-2-exploded-view-diagram.png#lightbox":::
+:::image type="content" source="../media/hololens-2-exploded-view-diagram.png#lightbox" alt-text="Diagram of HoloLens 2 exploded into its parts." lightbox="../media/hololens-2-exploded-view-diagram.png#lightbox":::
 
 You'll find a complete description for each of the components you'll be using to operate the HoloLens 2 device in the following table.
 
