@@ -7,11 +7,11 @@ We'll need to apply some fundamental OOP concepts, such as classes, objects, and
 
 ## What is an object?
 
-The concept of objects has been mentioned a few times already as part of trying to _model_ problem domains. An object is an actor. It's something that does something within a system. As a result of taking an action, it changes state within itself or other objects.
+The concept of objects has been mentioned a few times already as part of trying to *model* problem domains. An object is an actor. It's something that does something within a system. As a result of taking an action, it changes state within itself or other objects.
 
 Let's imagine an object in the real world. You're in a car park; what do you see? You're likely to see many cars, in different shapes, sizes, and colors. To describe a car, you can use properties like make, model, color, and type of car. If you assign values to these properties, it quickly becomes clear whether you're talking about a red Ferrari, or a four-wheel-drive Jeep, or a yellow Mustang, and so on.
 
-:::image type="content" source="../media/car.png" alt-text="Visualization that shows a car object with the properties color and make.":::
+:::image type="content" source="../media/car.png" alt-text="Illustration that shows a car object with the properties type and color." border="false":::
 
 In another scene, picture a deck of cards in Las Vegas. You look at two different cards, which are two objects. You realize they have some common properties, namely, suit. The suit for the objects can be clubs, hearts, diamonds, or spades. Their values can be ace, king, nine, and so on.
 
@@ -36,7 +36,7 @@ Here's a table of some examples of classes and their resulting objects:
 
 The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object, your program asks the operating system for resources, namely memory, to be able to construct the object. Conversely, when a car is made from a blueprint, the factory asks for resources like metal, rubber, and glass to be able to assemble the car.
 
-:::image type="content" source="../media/car-assembly.png" alt-text="Visualization that shows assembling a car in a factory.":::	
+:::image type="content" source="../media/car-assembly.png" alt-text="Illustration showing the resource inputs required to assemble a car from a blueprint." border="false":::	
 
 ## Create a class
 
@@ -79,10 +79,10 @@ Knowing what attributes (variables) should be added to your class is part of mod
 
 Many program languages have the notion of a constructor, the special function that's only invoked when the object is first being created. The constructor will be called only once. In this method, you create the attributes the object should have. Additionally, you assign any starter values to the created attributes.
 
-In Python, the constructor has the name `__init()__`. You also need to pass a special keyword, `self`, as a parameter to the constructor. The keyword `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self`, it will instead be treated as a temporary variable that won't exist after `__init()__` is done executing.
+In Python, the constructor has the name `__init__()`. You also need to pass a special parameter, `self`, to the constructor. The parameter `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self`, it will instead be treated as a temporary variable that won't exist after `__init__()` is done executing.
 
 > [!NOTE]
-> They keyword `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
+> The parameter `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
 
 ### Add and initialize attributes on a class
 
@@ -90,9 +90,9 @@ Let's see an example of setting up attributes in a constructor:
 
 ```python
 class Elevator:
-  def __init__(self, starting_floor):
-    self.make = "The elevator company"
-    self.floor = starting_floor
+    def __init__(self, starting_floor):
+        self.make = "The elevator company"
+        self.floor = starting_floor
 
 # To create the object
 
@@ -109,13 +109,13 @@ elevator = Elevator(1)
 
 ### Incorrect use of `self`
 
-To emphasize how the keyword `self` works, consider the following code in which two attributes, `color` and `make`, are being assigned in the constructor `__init__()`:
+To emphasize how the parameter `self` works, consider the following code in which two attributes, `color` and `make`, are being assigned in the constructor `__init__()`:
 
 ```python
 class Car:
-  def __init__():
-    self.color = "Red" # ends up on the object
-    make = "Mercedes" # becomes a local variable in the constructor
+    def __init__():
+        self.color = "Red" # ends up on the object
+        make = "Mercedes" # becomes a local variable in the constructor
 
 car = Car()
 print(car.color) # "Red"
