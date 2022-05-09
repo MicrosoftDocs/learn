@@ -10,7 +10,7 @@ At this point, the app is working to get the user's location and is ready to be 
 
     :::image type="content" source="../media/5-add-new-functions-project.png" alt-text="Screenshot that shows the Add New Project dialog.":::
 
-1. In the **Create a new Azure Functions application** configuration dialog, ensure the Functions version is set to *.NET 6*. Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the authorization level to *Anonymous*. Then click **Create**.
+1. In the **Create a new Azure Functions application** configuration dialog, ensure the Functions version is set to *.NET 6*. Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the authorization level to *Anonymous*. Then select **Create**.
 
     :::image type="content" source="../media/5-configure-trigger.png" alt-text="Screenshot that shows the Azure Functions project configuration dialog.":::
 
@@ -151,7 +151,7 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 1. From the *Debug* menu, select *Start Without Debugging*. The local Azure Functions runtime will launch inside a console window and start your function, listening on an available port on `localhost`. If you see a dialog asking for firewall access, allow access to private networks (the default option).
 
-    :::image type="content" source="../media/5-function-running-locally.png" alt-text="Screenshot of the Azure Functions running locally.":::
+    :::image type="content" source="../media/5-function-running-locally.png" alt-text="Screenshot that shows the Azure Functions running locally.":::
 
 1. Take a note of the port that the function is listening on. You'll need this in the next unit to test out the mobile app. In the image above, the function is listening on port **7071**.
 

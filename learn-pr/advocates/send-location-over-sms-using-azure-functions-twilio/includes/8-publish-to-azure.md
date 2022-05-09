@@ -18,7 +18,7 @@ Azure Functions can be published to Azure from inside Visual Studio.
 
 1. For the Specific Target, select *Azure Functions App (Windows)*. Select **Next**.
 
-    :::image type="content" source="../media/8-pick-publish-specific-target.png" alt-text="Screenshot of Azure Functions App selected for the Publish specific target.":::
+    :::image type="content" source="../media/8-pick-publish-specific-target.png" alt-text="Screenshot that shows the Azure Functions App selected for the Publish specific target.":::
 
 1. Sign in to your Azure account.
 
