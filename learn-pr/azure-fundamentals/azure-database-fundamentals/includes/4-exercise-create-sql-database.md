@@ -114,7 +114,7 @@ In this task, you'll configure the server and run a SQL query.
  
     :::image type="content" source="../media/sql-server-firewall-settings-1b917b84.png" alt-text="Screenshot of the SQL Server firewall settings page, with your IP settings and the command bar buttons highlighted." lightbox="../media/sql-server-firewall-settings-1b917b84.png" :::
     
-1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and then select **Query editor (preview)** from the menu. sign-in page. 
+1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and then select **Query editor (preview)** from the menu.
 
 1. Sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you still get an error, verify the client IP address in the error, and return to **Firewall settings** to add the correct client IP address.
   
