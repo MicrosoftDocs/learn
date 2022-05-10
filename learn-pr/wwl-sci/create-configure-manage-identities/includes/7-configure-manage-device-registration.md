@@ -114,11 +114,11 @@ Use Azure AD hybrid joined devices if:
 
 ## Device Writeback
 
-In a cloud-based Azure AD configuration, devices are only registered in Azure AD.  Your on-premises AD has no visibility of the devices.  This means that conditional access in the cloud is easy to set up and maintain.  However, in this section we are discussing hybrid setups with Azure AD Connect.  How can you do on-premises conditional access using devices, if they only exist in Azure AD? Device writeback helps you to keep a track of devices registered with Azure AD in AD. You will have the a copy of device objects in the container "Registered Devices"
+In a cloud-based Azure AD configuration, devices are only registered in Azure AD.  Your on-premises AD has no visibility of the devices.  This means that conditional access in the cloud is easy to set up and maintain.  However, in this section we are discussing hybrid setups with Azure AD Connect.  How can you do on-premises conditional access using devices, if they only exist in Azure AD? Device writeback helps you to keep a track of devices registered with Azure AD in AD. You will have a copy of the device objects in the container "Registered Devices"
 
 Scenario: You have an application that you want to give access to users only if they are coming from registered devices.
 
-Cloud: You can write Conditional Access policies for any Azure AD integrated applications to authorize based on the whether the device is joined to Azure AD or not. 
+Cloud: You can write Conditional Access policies for any Azure AD integrated applications to authorize based on whether the device is joined to Azure AD or not. 
 
 On-premises: This is not possible without device writeback. If the application is integrated with ADFS (2012 or higher) then you can write claim rules to check for the device status and then provide access only if the "is managed " claim is present. In order to issue this claim, ADFS will check for the device object in the "Registered Devices" container and then issue the claim accordingly. 
 
