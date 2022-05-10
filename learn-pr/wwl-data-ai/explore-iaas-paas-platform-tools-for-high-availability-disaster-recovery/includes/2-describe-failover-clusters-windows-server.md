@@ -68,7 +68,7 @@ New-Cluster -Name MyWSFC -Node Node1,Node2,…,NodeN -StaticAddress w.x.y.z -NoS
 
 Windows Server 2019 by default will use a distributed network name for IaaS. A distributed network name is one that creates just a network name, but the IP address is tied to the underlying nodes. You no longer need to specify an IP address as shown above if it isn't needed or necessary. A distributed network name is for the WSFC’s name only; it can't be used with the name of an AG or FCI.
 
-The WSFC creation mechanism in Windows Server 2019 detects if it's running in Azure or not and will create the cluster using a distributed network name unless you tell it to do something else. Currently, distributed network names are incompatible with FCIs and while they do work with AGs, if you encounter an issue, you may want to consider deploying a WSFC traditionally using PowerShell. You need to add one more option: `-ManagementPointNetwork` with a value of `Singleton`. An example would look like this:
+The WSFC creation mechanism in Windows Server 2019 detects if it's running in Azure or not and will create the cluster using a distributed network name unless you specify it differently. However, there are cases you may want to consider deploying a WSFC traditionally using PowerShell. For this, you need to add one more option: `-ManagementPointNetwork` with a value of `Singleton`. An example would look like this:
 
 ```powershell
 New-Cluster -Name MyWSFC -Node Node1,Node2,…,NodeN -StaticAddress w.x.y.z -NoStorage -ManagementPointNetwork Singleton
@@ -76,7 +76,7 @@ New-Cluster -Name MyWSFC -Node Node1,Node2,…,NodeN -StaticAddress w.x.y.z -NoS
 
 For a Workgroup Cluster, you'll need to ensure the name and IP address(es) are in DNS for any name or IP address created in the context of the WSFC such as the WSFC itself, an FCI name and IP address, and an AG listener name and IP address.
 
-With Windows Server 2019, Microsoft changed how WSFCs are created by default in Azure. Instead of creating a network name and an IP address, it uses a distributed network name. This isn't yet supported with either of the Always On features, so it's still required to create the WSFC using the method described above.
+With Windows Server 2019, Microsoft changed how WSFCs are created by default in Azure. Instead of creating a network name and an IP address, it uses a distributed network name.
 
 ## Failover Cluster Instance
 
