@@ -98,4 +98,9 @@ The value of understanding what actions are being taken with sensitive content i
 
 The video below walks you through the various data classification capabilities available in the compliance portal.
 
+> [!NOTE]
+> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.
+
+
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
