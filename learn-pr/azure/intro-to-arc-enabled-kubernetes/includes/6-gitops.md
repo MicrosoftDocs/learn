@@ -8,7 +8,7 @@ In the context of Azure Arc-enabled Kubernetes clusters, a Git repository hosts 
 
 Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps deployment tool. Flux is an operator that configures the pods to automate GitOps configuration deployments in the cluster. Flux provides support for common file sources (Git repositories, Helm repositories, Buckets) and template types (YAML, Helm, and Kustomize).
 
-:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update.":::
+:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
 
 GitOps simplifies standardizing Kubernetes configuration across your organization. You can define a baseline configuration that you want to apply to every cluster and its components, including, for example, the delegation model, monitoring and logging settings, as well as characteristics of cluster-wide services.
 
