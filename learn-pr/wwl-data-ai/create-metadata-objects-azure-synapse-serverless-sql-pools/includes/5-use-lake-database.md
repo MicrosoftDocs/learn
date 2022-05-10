@@ -15,7 +15,7 @@ FROM Customer
 ORDER BY LastName;
 ```
 
-There is no need to use an OPENROWSET function or include any additional code to access the data from the underlying file storage. The serverless SQl pool handles the mapping to the files for you.
+There is no need to use an OPENROWSET function or include any additional code to access the data from the underlying file storage. The serverless SQL pool handles the mapping to the files for you.
 
 ## Using an Apache Spark pool
 

@@ -19,6 +19,3 @@ The data for the tables in your lake database is stored in the data lake as Parq
 ## Lake database compute
 
 To query and manipulate the data through the tables you have defined, you can use an Azure Synapse serverless SQL pool to run SQL queries or an Azure Synapse Apache Spark pool to work with the tables using the Spark SQL API.
-
-> [!TIP]
-> To learn more about lake databases, refer to the [Lake database](/azure/synapse-analytics/database-designer/concepts-lake-database) article in the Azure Synapse Analytics documentation.
