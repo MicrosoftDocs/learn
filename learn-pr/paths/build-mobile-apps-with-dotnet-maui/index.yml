@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.dotnet-maui.build-mobile-apps-with-dotnet-maui
+metadata:
+  title: Build mobile apps with .NET MAUI
+  description: 'In this learning path, use C# and Visual Studio with .NET MAUI to create a mobile app that runs across iOS, Android, and Windows.'
+  ms.date: 05/10/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+title: Build mobile apps with .NET MAUI
+summary: "Use C#, Visual Studio, and .NET MAUI to create apps that run on iOS and Android devices."
+prerequisites: | 
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs
+modules:
+- learn.dotnet-maui.build-mobile-and-desktop-apps
+- learn.dotnet-maui.create-user-interface-xaml
+- learn.dotnet-maui.customize-xaml-pages-layout
+- learn.dotnet-maui.use-shared-resources
+- learn.dotnet-maui.create-multi-page-apps
+- learn.dotnet-maui.navigate-with-shell
+- learn.dotnet-maui.consume-rest-services
+- learn.dotnet-maui.store-local-data
+trophy:
+  uid: learn.dotnet-maui.build-mobile-apps-with-dotnet-maui.trophy
