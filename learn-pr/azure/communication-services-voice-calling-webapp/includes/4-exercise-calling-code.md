@@ -60,7 +60,7 @@ This app may not look like a lot, but it's all we the visual elements we need to
 
 ## Import some dependencies
 
-Our first step within our `app.js` file is to import the dependencies for making Azure Communication Services calls. These dependencies come from the SDKs we installed earlier with NPM. To do this, add the following import lines to the `app.js` file:
+Our first step within our `app.js` file is to import the dependencies for making Azure Communication Services calls. These dependencies come from the SDKs we installed earlier with NPM. To import them, add the following lines to the `app.js` file:
 
 ```javascript
 import { CallClient } from "@azure/communication-calling";
@@ -91,7 +91,7 @@ let tokenCredential;
 
 ## Handling authentication
 
-Now we're done with some basic setup, we can start creating some functionality. The first thing we need functionally is to handle authentication. Authentication will be handled by the user entering a user token into the token input element that we created and then clicking our "Submit Token". To handle this within our code we need to register a click handler to that submit token button, which will process the user token. You can add this code right underneath our variables from before.
+Now we're done with some basic setup, we can start creating some functionality. The first thing we need functionally is to handle authentication. Authentication will be handled by the user entering a user token into the token input element that we created and then clicking our "Submit Token". To handle this process within our code, we need to register a click handler to that submit token button, which will process the user token. You can add this code right underneath our variables from before.
 
 ```javascript
 submitToken.addEventListener("click", async () => {
@@ -187,7 +187,7 @@ On the page that appears, you can generate test credentials. For this app, we ju
 
 :::image type="content" source="../media/4-generate-button.png" alt-text="Token generation window with VOIP option checked.":::
 
-This will then present you with a single Azure Communication Services identity, which is suitable for testing. Make sure to copy the token AND ID to somewhere safe for testing, such as a blank notepad document.
+You'll get a single Azure Communication Services identity, which is suitable for testing. Make sure to **copy the token and the ID** to somewhere safe for testing, such as a blank notepad document.
 
 :::image type="content" source="../media/4-test-credentials.png" alt-text="Token generation window with test credentials showing.":::
 
@@ -211,7 +211,7 @@ Your browser may prompt you with some microphone permission dialogs so ensure yo
 
 ### Calling another user
 
-You can also call another user with this app, you'll need the second set of credentials which you generated earlier:
+You can also call another user with this app, you'll need the second set of credentials, which you generated earlier:
 
 1. Open two copies of the app, multiple tabs or windows should be used to simulate calling another user.
 1. In the first copy, enter the first user token saved from the credential generator and press "Submit"
@@ -219,4 +219,4 @@ You can also call another user with this app, you'll need the second set of cred
 1. From the first copy, enter the **second user ID**, into the "Who would you like to call?" input element.
 1. Again from the first copy, click "Start Call".
 
-If both tabs/windows are on the same device this may result in echoes but it does show the process and calls working between two browser tabs. If you deploy your app to a web server that multiple machines can access, you'll be able to have a true voice call without echo.
+If both tabs/windows are on the same device the call may have echoes, but it does show the process and calls working between two browser tabs. If you deploy your app to a web server that multiple machines can access, you'll be able to have a true voice call without echo.
