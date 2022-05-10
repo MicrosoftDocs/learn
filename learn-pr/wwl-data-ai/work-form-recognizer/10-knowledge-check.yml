@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/08/2022
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Use Form Recognizer's Layout service"
       isCorrect: false
       explanation: "Incorrect: The Layout service will extract the structured output from documents, but the best way to build this application is to use a model specific to receipts."
-  - content: "A person is building a custom model with Form Recognizer services. What is a difference between their supervised and unsupervised training processes?"
+  - content: "A person is building a custom model with Form Recognizer services. What is required to train a model?"
     choices:
-    - content: "Unsupervised training requires form images while supervised training requires form images and additional **.json** files."
+    - content: "Along with the form to analyze, JSON files need to be provided."
       isCorrect: true
-      explanation: "Correct: The labels needed in supervised training refer to the the **ocr.json** files, **labels.json** files, and single **fields.json** file."
-    - content: "When they store training forms in an Azure storage container, they need to generate a SAS URL for the container for unsupervised training but **not** for supervised training."
+      explanation: "Correct: The labels needed in training are referenced in the **ocr.json** files, **labels.json** files, and single **fields.json** file."
+    - content: "Training must be done through language specific SDKs."
       isCorrect: false
-      explanation: "Incorrect: When they store training forms in an Azure storage container, both training processes require a SAS URL."
-    - content: "Unsupervised training produces a model ID while supervised training produces labeled JSON files."
+      explanation: "Incorrect: Labeled training can be done through SDKs, REST API, or Form Recognizer Studio."
+    - content: "Nothing else is required."
       isCorrect: false
-      explanation: "Incorrect: Both unsupervised and supervised training processes produce Model IDs. The Model ID is needed to analyze new forms."
+      explanation: "Incorrect: Labeled training requires JSON files to be provided when training a model, or those JSON files need to generated before training your model."

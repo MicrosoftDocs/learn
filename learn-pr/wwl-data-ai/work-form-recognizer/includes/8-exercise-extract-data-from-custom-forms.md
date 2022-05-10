@@ -1,7 +1,4 @@
-In this exercise, you will use the Form Recognizer service to:
-
-- Train and test a custom model using unsupervised training (without labels) with the Python or .NET SDK.
-- Train and test a custom model using supervised training (with labels) with the Python or .NET SDK.
+In this exercise, you will use the Form Recognizer service to train and test a custom model using the Python or .NET SDK.
 
 > [!NOTE]
 >To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).

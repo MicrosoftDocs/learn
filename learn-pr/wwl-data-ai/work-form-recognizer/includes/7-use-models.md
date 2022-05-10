@@ -1,5 +1,5 @@
 
-## Using a custom model 
+## Using a custom model
 
 To extract form data using a custom model, use the [**Analyze Form**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeWithCustomForm) REST API function (or equivalent SDK method) with your custom model ID (generated during model training). This function starts the form analysis and returns a result ID, which you can pass in a subsequent call to the [**Get Analyze Form Result**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/GetAnalyzeFormResult) function to retrieve the results.
 

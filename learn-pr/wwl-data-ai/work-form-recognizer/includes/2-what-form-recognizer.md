@@ -16,28 +16,25 @@ To build a high-accuracy model from scratch, people need to build deep learning 
 
 Form Recognizer is composed of the following services: 
 
-- **Layout Service**: takes an input of JPEG, PNG, PDF, and TIFF files. Returns a JSON file with the location of text in bounding boxes, text content, tables, selection marks (also known as checkboxes or radio buttons), and document structure. 
+- **Document analysis models**: take an input of JPEG, PNG, PDF, and TIFF files and return a JSON file with the location of text in bounding boxes, text content, tables, selection marks (also known as checkboxes or radio buttons), and document structure. 
 
-- **Prebuilt Models**: prebuilt models detect and extract information from document images and return the extracted data in a structured JSON output. Form Recognizer currently supports prebuilt models for: 
+- **Prebuilt models**: prebuilt models detect and extract information from document images and return the extracted data in a structured JSON output. Form Recognizer currently supports prebuilt models for several forms, including: 
+    - W-2 forms
+    - Invoices
     - Receipts
-    - Business Cards (in preview)
-    - Invoices (in preview) 
+    - ID documents 
+    - Business Cards
 
-- **Custom Models**: custom models extract data from forms specific to your business. Custom models can be trained by calling the Train Custom Model API.  
-    - You can train custom models using:
-        - Unsupervised learning (with unlabeled forms)
-        - Supervised learning (with labeled forms)  
+- **Custom models**: custom models extract data from forms specific to your business. Custom models can be trained by calling the Train Custom Model API, or through Form Recognizer Studio. 
 
 > [!NOTE]
 > Some Form Recognizer features are in preview, as of the time this content was authored, and as a result, features and usage details may change.  You should refer to the [official page](/azure/cognitive-services/form-recognizer?azure-portal=true) for up-to-date information.
 
 ## Access services with the client library SDKs or REST API 
 
-You can access Form Recognizer services by using a REST API or client library SDKs to integrate the services into your workflow or application. 
+You can access Form Recognizer services by using a REST API, client library SDKs, and through the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/studio) to integrate the services into your workflow or application. 
 
 > [!TIP]
 > This module's exercise focuses on the Python and .NET SDKs. Microsoft also publishes open-source SDKs for Java and Node.js. The underlying REST services can be used by any language.
 
 Check out the [documentation](/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api) for quick start guides on all the available SDKs and the REST API.
-
-Form Recognizer services are also supported by a user interface known as the Form OCR Test Tool (FOTT) that can do layout extraction and model training. 

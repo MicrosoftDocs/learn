@@ -1,4 +1,4 @@
-Form Recognizer includes prebuilt models that you can use for common form extraction tasks. 
+Form Recognizer includes prebuilt models that you can use for common form extraction tasks.
 
 ## Receipts
 
@@ -23,10 +23,12 @@ A few receipt model uses include:
 - Automating auditing and accounting tasks 
 - Analyzing consumer behavior and shopping trends 
 
+More info can be found about this model at the [receipts model page](/azure/applied-ai-services/form-recognizer/concept-receipt).
+
 >[!NOTE]
 >You can learn more about the prebuilt receipt model with this separate <a href="https://docs.microsoft.com/learn/modules/analyze-receipts-form-recognizer/" target="_blank">Form Recognizer service module</a>.  
 
-## Invoices (preview)
+## Invoices
 
 The prebuilt model for invoices extracts text and tables and identifies named fields such as:
 
@@ -61,7 +63,9 @@ A few invoice model uses include:
 - Processing paperwork in real time 
 - Accelerating access to reliable data 
 
-## Business Cards (preview)
+More info can be found about this model at the [invoice model page](/azure/applied-ai-services/form-recognizer/concept-invoice).
+
+## Business Cards 
 
 The prebuilt model for business cards extracts information such as:
 
@@ -84,3 +88,4 @@ A few business card model uses include:
 - Automatically creating contacts from images to integrate data with a CRM  
 - Keeping track of sales leads
 
+More info can be found about this model at the [business card model page](/azure/applied-ai-services/form-recognizer/concept-business-card).

@@ -1,7 +1,7 @@
 Forms are used to communicate information in every industry, every day. Many people still manually extract data from forms to exchange information. 
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft brand central image of person handing a form to another person.](../media/introduct-image.png)
+> ![Microsoft brand central image of person handing a form to another person.](../media/introduction-image.png)
 
 Consider some of the instances when a person needs to process form data:   
 - When filing claims 
@@ -21,8 +21,8 @@ Form Recognizer services provide the building blocks for automation by using int
 
 **In this module, you'll learn how to**: 
 
-- Identify how Form Recognizer's Layout service, prebuilt models, and custom service can automate processes
-- Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
-- Develop and test custom models using supervised and unsupervised training
+- Identify how Form Recognizer's Document analysis, prebuilt, and custom models can automate processes
+- Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs and REST API
+- Develop and test custom models 
 
 To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).

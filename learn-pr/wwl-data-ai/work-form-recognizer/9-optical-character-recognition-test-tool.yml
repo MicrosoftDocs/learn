@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.optical-character-recognition-test-tool
-title: Use the Form OCR Test Tool
+title: Use the Form Recognizer Studio
 metadata:
-  title: Use the Form OCR Test Tool
-  description: "Use the Form OCR Test Tool"
-  ms.date: 03/08/2022
+  title: Use the Form Recognizer Studio
+  description: "Use the Form Recognizer Studio"
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
