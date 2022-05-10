@@ -14,10 +14,10 @@ summary: |
   Plan how you'll harden and help secure your Azure environment, along with the controls to apply to your configuration changes and deployments. Require your infrastructure be defined as code, and protect your environment against manual changes.
 abstract: |
   After completing this module, you'll be able to:
-    - Plan an Azure deployment strategy for multiple environments.
-    - Harden and help secure Azure DevOps, GitHub, and a deployment pipeline.
-    - Harden and help secure an Azure environment to ensure that changes are made through a controlled process.
-    - Enable manual access in emergency situations.
+    - Plan an Azure deployment strategy for multiple environments
+    - Harden and help secure Azure DevOps, GitHub, and a deployment pipeline
+    - Harden and help secure an Azure environment to ensure that changes are made through a controlled process
+    - Enable manual access in emergency situations
 prerequisites: |
   You should be familiar with:
     - Infrastructure as code and its benefits, and technology such as Bicep or Terraform.
