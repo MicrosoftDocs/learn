@@ -13,8 +13,8 @@ summary: Form Recognizer uses machine learning technology to identify and extrac
 abstract: |
   In this module, you'll learn how to:
   - Identify how Form Recognizer's layout service, prebuilt models, and custom service can automate processes
-  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
-  - Develop and test custom models using supervised and unsupervised training
+  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form Recognizer Studio
+  - Develop and test custom models
 prerequisites: |
   To complete this module, you will need:
   - An active Azure account
