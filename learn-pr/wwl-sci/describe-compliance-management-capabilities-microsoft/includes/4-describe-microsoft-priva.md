@@ -14,11 +14,11 @@ Microsoft Priva helps you understand the data your organization stores by automa
 
 The overview dashboard provides an overall view into your organization’s data in Microsoft 365. Privacy administrators can monitor trends and activities, identify and investigate potential risks involving personal data, and springboard into key activities like policy management or subject rights request actions.
 
-:::image type="content" source="../media/priva-overview-inline.png" lightbox="../media/priva-overview-expanded.png" alt-text="Microsoft Priva overview dashboard.":::
+:::image type="content" source="../media/priva-overview-inline.png" lightbox="../media/priva-overview-expanded.png" alt-text="Screen shot of Microsoft Priva overview dashboard.":::
 
 The data profile page in Priva provides a snapshot view of the personal data your organization stores in Microsoft 365 and where it lives. It also gives insight into the types of data you store.
 
-:::image type="content" source="../media/priva-dataprofile-inline.png" lightbox="../media/priva-dataprofile-expanded.png" alt-text="Microsoft Priva data profile dashboard.":::
+:::image type="content" source="../media/priva-data-profile-inline.png" lightbox="../media/priva-data-profile-expanded.png" alt-text="Screen shot of Microsoft Priva data profile dashboard.":::
 
 Priva evaluates your organization's data stored in the following Microsoft 365 services within your Microsoft 365 tenant:
 
