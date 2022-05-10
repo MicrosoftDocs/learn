@@ -111,6 +111,36 @@ The exercise also runs a client app that simulates several users issuing POST an
     > [!NOTE]
     > The `NumClients` setting in this file specifies the number of clients that can simultaneously try to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of the reservation. All the data used is fake. It's not persisted anywhere. Leave this value set to `100`.
 
+1. Save the file by pressing <kbd>Ctrl+S</kbd>.
+
+1. Edit the HotelReservationSystemTestClient.csproj file in this folder by using the code editor.
+
+    ```bash
+    code HotelReservationSystemTestClient.csproj
+    ```
+
+1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like this example.
+
+    ```text
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+      </PropertyGroup>
+    
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+      </ItemGroup>
+    
+      <ItemGroup>
+        <ProjectReference Include="..\HotelReservationSystemTypes\HotelReservationSystemTypes.csproj" />
+      </ItemGroup>
+    
+    </Project>
+    ```
+
 1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
 1. Rebuild the test client app with the new configuration.
