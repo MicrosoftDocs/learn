@@ -17,7 +17,7 @@ In addition, you saw how Azure Cosmos DB works with a variety of popular APIs, i
 
  -  [Migrate SQL workloads to Azure](/learn/paths/migrate-sql-workloads-azure/?azure-portal=true)
  -  [Migrate SQL Workloads to Azure SQL Databases](/learn/modules/migrate-sql-workloads-azure-sql-databases/?azure-portal=true)
- -  [Migrate SQL Workloads to Azure Managed Instances](/learn/modules/migrate-sql-workloads-azure-managed-instances/?azure-portal=true)
+ -  [Migrate SQL Workloads to Azure SQL Managed Instances](/learn/modules/migrate-sql-workloads-azure-managed-instances/?azure-portal=true)
  -  [Migrate on-premises MySQL databases to Azure Database for MySQL](/learn/modules/migrate-on-premises-mysql-databases/?azure-portal=true)
 
 ### Working with Azure databases
