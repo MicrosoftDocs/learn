@@ -8,9 +8,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure DNS documentation](/azure/dns/)
- -  [Learn - Host your domain on Azure DNS](/learn/modules/host-domain-azure-dns/)
+ -  [Learn - Host your domain on Azure DNS (Sandbox)](/learn/modules/host-domain-azure-dns/)
  -  [Learn - Implement DNS for Windows Server IaaS VMs](/learn/modules/implement-dns-for-windows-server-iaas-virtual-machines/)
- -  [Learn - Secure Windows Server DNS](/learn/modules/secure-windows-server-domain-name-system/)

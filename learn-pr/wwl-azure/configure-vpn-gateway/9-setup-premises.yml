@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-vpn-gateway.setup-premises
-title: Setup the on-premises VPN gateway
+title: Set up the on-premises VPN gateway
 metadata:
-  title: Setup the on-premises VPN gateway
-  description: "Setup the on-premises VPN gateway"
-  ms.date: 01/07/2022
+  title: Set up the on-premises VPN gateway
+  description: "Set up the on-premises VPN gateway"
+  ms.date: 05/07/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
