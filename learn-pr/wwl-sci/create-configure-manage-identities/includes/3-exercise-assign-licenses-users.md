@@ -63,7 +63,7 @@ You can view your restorable users, restore a deleted user, or permanently delet
 
 You must have one of the following roles to restore or permanently delete users.
 
- -  Global administrator
- -  Partner Tier1 Support
- -  Partner Tier2 Support
- -  User administrator
+- Global administrator
+- Partner Tier1 Support
+- Partner Tier2 Support
+- User administrator

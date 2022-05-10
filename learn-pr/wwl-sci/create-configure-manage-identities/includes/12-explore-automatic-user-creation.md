@@ -12,4 +12,4 @@
 ### Why use SCIM?
 System for Cross-Domain Identity Management (SCIM) is an open standard protocol for automating the exchange of user identity information between identity domains and IT systems. SCIM ensures that employees added to the Human Capital Management (HCM) system automatically have accounts created in Azure Active Directory (Azure AD) or Windows Server Active Directory. User attributes and profiles are synchronized between the two systems, updating removing users based on the user status or role change.
 
-The key, is keeping your identity systems up to date.  If a user can be automatically deprovisioned from Azure AD, as soon as the're removed from your HR-systems; you have less worry on a possible breach.
+The key is keeping your identity systems up to date.  If a user can be automatically deprovisioned from Azure AD, as soon as the're removed from your HR-systems; you have less worry on a possible breach.

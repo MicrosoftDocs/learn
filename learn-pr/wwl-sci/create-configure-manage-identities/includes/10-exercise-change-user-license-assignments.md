@@ -16,6 +16,7 @@
     
     > [!WARNING]
     > To assign a license to a user, the user must be assigned a usage location.
+
 5.  When complete, open Azure AD and click on Users to verify the account for Dominique Koch is shown in the list of all users.
 
 ## Update user license assignments
@@ -24,6 +25,8 @@
 2.  In the left navigation, under **Manage**, select **Users**.
 3.  In the Users blade, select **Dominique Koch**.
 4.  In the left navigation, select **Licenses**.
-5.  On the Update license assignments blade, select the check box for a single or multiple licenses.:::image type="content" source="../media/assign-user-license-options.png" alt-text="Screen image displaying the Update license assignments page and license options highlighted.":::
+5.  On the Update license assignments blade, select the check box for a single or multiple licenses.
+
+    :::image type="content" source="../media/assign-user-license-options.png" alt-text="Screen image displaying the Update license assignments page and license options highlighted.":::
     
 6.  When complete, select **Save**.
