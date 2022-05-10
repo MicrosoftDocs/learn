@@ -4,17 +4,17 @@ To diagnose application startup errors, you need to deploy code to your web app 
 
 ## Create a new web project
 
-Use the `dotnet` command line tool to create a new ASP.NET Core web project.
+Use the `dotnet` command line tool to create a new ASP.NET Core web project:
 
 1. Sign in to the sandbox and review the permissions.
 
-1. In Azure Cloud Shell on the right, create a new ASP.NET Core MVC application named HotelApp.
+1. In Azure Cloud Shell on the right, create a new ASP.NET Core MVC application named *HotelApp*. The command creates a new folder named *HotelApp* to hold your project.
 
     ```bash
     dotnet new mvc --name HotelApp
     ```
 
-1. The command creates a new folder named *HotelApp* to hold your project. Run the following commands to build and run the application:
+1. Run the following commands to build and run the application:
 
     ```bash
     cd HotelApp
@@ -32,15 +32,15 @@ Use the `dotnet` command line tool to create a new ASP.NET Core web project.
     Application started.
     ```
 
-    The output describes the situation after starting your app: the application is running and listening at port 5000.
+    The output indicates that the application is running and listening at port 5000.
 
-    If you're running the app on your own machine, you'd be able to open a browser to `http://localhost:5000`. To make the app accessible from outside of our own machine, you'll need to deploy the app to somewhere with a public endpoint.
+    If you're running the app on your own machine, you can open a browser and go to `http://localhost:5000` to view the app. To make the app accessible outside your own machine, you'll need to deploy the app to a public endpoint.
 
 1. Press Ctrl+C to stop the application.
 
 ## Update the web project code
 
-1. Edit the *Program.cs* file to add code that will cause a startup error. Use the following command to open an editor:
+1. Edit the *Program.cs* file to add code that causes a startup error. Use the following command to open the file in an editor in the sandbox:
 
     ```bash
     code Program.cs
@@ -79,7 +79,7 @@ Use the `dotnet` command line tool to create a new ASP.NET Core web project.
 
 1. Press Ctrl+S and then Ctrl+Q to save the file and close the editor.
 
-1. Deploy the project to a new web app. The web app name must be unique in Azure App Service, so we'll add a random string to the end to ensure the name is unique:
+1. Deploy the project to a new web app. The web app name must be unique in Azure App Service. The following code uses the `$RANDOM` variable to add a random string to the app name to ensure that the name is unique:
 
     ```bash
     az webapp up \
@@ -89,9 +89,9 @@ Use the `dotnet` command line tool to create a new ASP.NET Core web project.
         --location centralus
     ```
 
-    Copy the name of your app service so you can refer to it again.
+    Copy the name of your app, so you can refer to it later.
 
-    Wait for the web app creation process to finish and the cursor to appear in Azure Cloud Shell.
+    Wait for the web app creation process to finish and for the cursor to appear in Azure Cloud Shell.
 
 1. At the cursor, run the application:
 

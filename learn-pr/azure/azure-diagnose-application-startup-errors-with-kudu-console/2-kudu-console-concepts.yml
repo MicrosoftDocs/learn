@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.2-kudu-console-concepts
-title: Describe the Kudu console purpose and functionalities 
+title: Kudu console purpose and functionalities 
 metadata:
-  title: Describe the Kudu console purpose and functionalities
-  description: Describe the Kudu console purpose and functionalities.
+  title: Kudu console purpose and functionalities
+  description: Learn about the Kudu console purpose and functionalities.
   ms.date: 05/09/2022
   author: patridge
   ms.author: adpatrid

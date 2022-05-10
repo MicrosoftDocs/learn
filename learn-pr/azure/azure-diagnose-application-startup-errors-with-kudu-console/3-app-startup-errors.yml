@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.3-app-startup-errors
-title: Describe the application startup errors and Azure App Service diagnostics
+title: Application startup errors and Azure App Service diagnostics
 metadata:
-  title: Describe the application startup errors and Azure App Service diagnostics
-  description: Describe the application startup errors and Azure App Service diagnostics.
+  title: Application startup errors and Azure App Service diagnostics
+  description: Learn about application startup errors and Azure App Service diagnostics.
   ms.date: 05/09/2022
   author: patridge
   ms.author: adpatrid 
@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Application startup errors and Azure App Service diagnostics
   questions:
-  - content: "Identify the common cause for the 500.30 In-process start failure."
+  - content: "Identify the common cause of an 500.30 In-Process Start Failure."
     choices:
-    - content: "Application failed to start, or application started and then stopped."
+    - content: "The application failed to start, or the application started and then stopped."
       isCorrect: true
-      explanation: "Common cause for the 500.30 In-process start failure is when the application failed to start, or it started and then stopped."
-    - content: "Worker process of the ASP.NET Core Module fails to start."
+      explanation: "A common cause of an 500.30 In-Process Start Failure is when the application failed to start, or it started and then stopped."
+    - content: "The worker process of the ASP.NET Core Module fails to start."
       isCorrect: false
-      explanation: "Worker process of the ASP.NET Core Module fails to start is the common cause for 502.5 process failure."
-    - content: "Headers are sent and it is too late for the server to send internal server error."
+      explanation: "The worker process of the ASP.NET Core Module failing to start is the common cause of the 502.5 Process Failure."
+    - content: "Headers are sent and it's too late for the server to send a 500 Internal Server Error message."
       isCorrect: false
-      explanation: "Headers are sent and it is too late for the server to send internal server error is a common cause for connection reset."
+      explanation: "Headers are sent and it's too late for the server to send a 500 Internal Server Error message is a common cause for a connection reset."
   - content: "Identify a common functionality of the Kudu console."
     choices:
     - content: "Alerts"
