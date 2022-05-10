@@ -33,19 +33,15 @@ If you haven't already done so, create a **Language service** resource in your A
 1. Navigate to the resource group in the [Azure portal](https://portal.azure.com), and select the Language resource
 2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. Save one of the keys and the endpoint for later.
 
-  ![Find keys and endpoint](../media/keys-endpoints.png)
-
 ## Upload sample articles
 
 Once you have created the language service and storage account, you'll need to upload example articles to train your model later.
 
-1. [Download sample articles](https://github.com/MicrosoftLearning/ai-language/tree/main/data) from this repo on GitHub. Extract the files in the `.zip` provided.
+1. [Download sample articles](https://aka.ms/classification-articles) from this repo on GitHub. Extract the files in the `.zip` provided.
 
 2. In the [Azure portal](https://portal.azure.com), navigate to the storage account you created, and select it
 
 3. In your storage account, select **Containers** from the left menu, located below **Data storage**. On the screen that appears, select **+ Container**. Give the container a name you'll remember, and set **Public access level** to *Container (anonymous read access for containers and blobs)*.
-
-  ![Create new container in storage account](../media/storage-new-container.png)
 
   > [!NOTE]
   > When you configure a storage account outside of this module, be careful to assign the appropriate access level. To learn more about each access level, see the [docs on Azure Storage](/azure/storage/blobs/anonymous-read-access-configure).
@@ -56,8 +52,8 @@ Once you have created the language service and storage account, you'll need to u
 
 Once configuration is complete, create a custom text classification project. This project provides a working place to build, train, and deploy your model.
 
-  > [!NOTE]
-  > This lab utilizes **Language Studio**, but you can also create, build, train, and deploy your model through the REST API if you prefer.
+> [!NOTE]
+> This lab utilizes **Language Studio**, but you can also create, build, train, and deploy your model through the REST API if you prefer.
 
 1. Log into the [Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Language resource in, and select your Language resource
 2. Under the **Classify text** section, select **Custom text classification**
@@ -107,8 +103,10 @@ Once you've tagged your data, you need to train your model.
 2. Click **Start a training job**
 3. Enter a name for your model, such as *ClassifyArticles*
 4. Choose **Use a manual split of training and testing data**
+
   > [!TIP]
   > In your own classification projects, the Language service will automatically split the testing set by percentage which is useful with a large dataset. With smaller datasets, it's important to train with the right class distribution.
+
 5. Click **Train**
 
 ## Improve your model
@@ -124,9 +122,6 @@ Once you're satisfied with the training of your model, it's time to deploy it, w
 
 1. On the left panel, select **Deploy model**
 2. Select **Add deployment**, then enter a new deployment name and select your trained model from the dropdown
-
-  ![Deploy custom text classification model](../media/custom-text-deploy-model.png)
-
 3. Click **Submit** to deploy your model
 4. Once your model is deployed, save your *deployment name*, and your *project name* for use in the next step
 
@@ -144,12 +139,8 @@ To test the text analytics capabilities of the Language service, we'll use a sim
 
 3. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created. 
 
-    ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
-
 4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
-
 5. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
     ![Wait for PowerShell to start.](../media/powershell-prompt.png) 
@@ -167,27 +158,27 @@ Now that you have a custom model, you can run a simple client application that u
   > [!TIP] 
   > If you already used this command in another lab to clone the *ai-language* repository, you can skip this step.
 
-2. The files are downloaded to a folder named **ai-language**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
+2. The files are downloaded to a folder named **ai-language**. Now we want to see all of the files in your Cloud Shell storage and work with them. Navigate to the `Text Classification` folder and type the following command into the shell: 
 
   ```
   code .
   ```
 
-3. Open `classifytext.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key`, `$endpoint`, `$projectName`, and `$modelName` with your values, and save the file.
+3. Open `classify-text.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key`, `$endpoint`, `$projectName`, and `$modelName` with your values, and save the file.
 
   > [!TIP]
   > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
-4. Run the following command to call your model and classify the text provided. The script won't output the whole file it's classifying for the sake of space, but you can view the contents [here on Github](https://github.com/MicrosoftLearning/ai-language). Review the output.
+4. Run the following command to call your model and classify the text provided. The script won't output the whole file it's classifying for the sake of space, but you can view the contents [here on Github](https://aka.ms/text-classification-repo). Review the output.
 
   ```
-  classify-text.ps1 test1.txt
+  .\classify-text.ps1 test1.txt
   ```
 
 5. Run the following command again, this time with a different file to classify. Review the output.
 
   ```
-  classify-text.ps1 test2.txt
+  .\classify-text.ps1 test2.txt
   ```
 
 ## Clean up
