@@ -1,5 +1,5 @@
 > [!NOTE]
-> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. The Microsoft 365 compliance center is now the Microsoft Purview Compliance portal.For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. The Microsoft 365 compliance center is now the Microsoft Purview Compliance portal. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
 The Microsoft Purview compliance portal brings together all of the tools and data that are needed to help understand and manage an organization’s compliance needs.
 
@@ -15,7 +15,7 @@ When an admin signs in to the Microsoft Purview compliance portal, the card sect
 
 The default compliance portal home page contains several cards including:
 
-- The **Compliance Manager** card. This card leads you to the Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
+- The **Compliance Manager** card. This card leads you to the Microsoft Purview Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
   :::image type="content" source="../media/3-compliance-scorecard-inline.png" lightbox="../media/3-compliance-scorecard-expanded.png" alt-text="The compliance score card":::
 
@@ -44,4 +44,4 @@ In this interactive guide, you'll explore some of the capabilities of the Micros
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
 
-[![Interactive guide](../media/3-compliance-center-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-compliance-center/index.html?azure-portal=true)
+[![Interactive guide - Explore the Microsoft Purview compliance portal](../media/compliance-portal-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-the-compliance-portal/index.html?azure-portal=true)
