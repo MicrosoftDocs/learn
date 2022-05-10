@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "A mail profile"
       isCorrect: true
-      explanation: "That's correct. To send email to an operator you need to enable the email profile of the SQL Server Agent."
+      explanation: "That's correct. To send email to an operator, you need to enable the email profile of the SQL Server Agent."
     - content: "An agent job"
       isCorrect: false
-      explanation: "That's incorrect. An agent job does not in and of itself send mail."
+      explanation: "That's incorrect. An agent job doesn't in and of itself send mail."
     - content: "An alert"
       isCorrect: false
-      explanation: "That's incorrect. While an alert can send an email, it is not a requirement for mail to be sent."
+      explanation: "That's incorrect. While an alert can send an email, it isn't a requirement for mail to be sent."
   - content: "Which system database stores SQL Server Agent jobs and their information?"
     choices:
     - content: "Msdb"
@@ -46,18 +46,18 @@ quiz:
       explanation: "That's correct. Rebuilding an index updates the statistics on the index."
     - content: "Reorganize"
       isCorrect: false
-      explanation: "That's incorrect. Reorganize rearranges pages, but does not calculate statistics."
+      explanation: "That's incorrect. Reorganize rearranges pages, but doesn't calculate statistics."
     - content: "Shrinking a file group"
       isCorrect: false
-      explanation: "That's incorrect. Shrinking a file group does not have an impact on stats."
+      explanation: "That's incorrect. Shrinking a file group doesn't have an impact on stats."
   - content: "What built-in option removes old files related to maintenance plans?"
     choices:
     - content: "Cleanup history task"
       isCorrect: false
-      explanation: "That's incorrect. The cleanup history task deletes history of backup and restore operations from the msdb database as well as the history of SQL Server agent jobs."
+      explanation: "That's incorrect. The cleanup history task deletes history of backup and restore operations from the msdb database and the history of SQL Server agent jobs."
     - content: "Maintenance cleanup task"
       isCorrect: true
       explanation: "That's correct. The maintenance cleanup task provides the option to remove old files related to maintenance plans."
     - content: "Execute SQL Server agent job task"
       isCorrect: false
-      explanation: "That's incorrect. The execute SQL Server agent job task does not remove old files related to maintenance plans."
+      explanation: "That's incorrect. The execute SQL Server agent job task doesn't remove old files related to maintenance plans."
