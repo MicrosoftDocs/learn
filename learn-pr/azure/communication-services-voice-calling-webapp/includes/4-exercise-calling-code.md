@@ -1,4 +1,4 @@
-In this unit, we'll add more code to the web app created in the previous unit. This app, will enable us to make voice calls with Azure Communication Services.
+In this unit, we'll add more code to the web app created in the previous unit. This app will enable us to make voice calls with Azure Communication Services.
 
 ## Add input HTML elements
 
@@ -56,7 +56,7 @@ So let's also add these buttons underneath the inputs from the previous step:
 With the HTML entered, we've completed most the HTML for this app. If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app, you should see the following app in your browser:
 :::image type="content" source="../media/4-html-complete.png" alt-text="Our blank web app showing in a browser.":::
 
-This app may not look like a lot, but it's all we the visual elements we need to create a simple voice calling app. We're now done with the HTML of our app. The rest of the code will use JavaScript.
+This app may not look like a lot, but it's all we the visual elements we need to create a voice calling app. We're now done with the HTML of our app. The rest of the code will use JavaScript.
 
 ## Import some dependencies
 
@@ -67,11 +67,11 @@ import { CallClient } from "@azure/communication-calling";
 import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 ```
 
-The first import is a `CallClient`, which will be used later to actually make our calls. It handles microphones, audio . all for you. The second import, `AzureCommunicationTokenCredential` is used to handle the authentication requirements for Azure Communication Services. Authentication ensures we know who a user is when they place a call.
+The first import is a `CallClient`, which will be used later to actually make our calls. It handles microphones, audio etc. all for you. The second import, `AzureCommunicationTokenCredential` is used to handle the authentication requirements for Azure Communication Services. Authentication ensures we know who a user is when they place a call.
 
 ## Getting references to our HTML
 
-Earlier, we created a lot of HTML elements which users will use to control the app. To listen to the user interacting with them, we'll need to get references to them in our JavaScript.
+Earlier, we created HTML elements which users will use to control the app. To listen to the user interacting with them, we'll need to get references to them in our JavaScript.
 
 Additionally we need a couple of variables to hold some items, which are used throughout our code. Add the following code to `app.js` underneath the imports.
 
@@ -179,9 +179,9 @@ We're done, If you run the app with the same command as the previous unit: `npx 
 
 ### Getting test credentials
 
-To test actually making a call, you'll need some credentials. You can obtain credentials from the Azure Portal. Open your Azure Communication Services resource within the Azure Portal and click the "Identities & User Access Tokens" button within the left hand menu:
+To test actually making a call, you'll need some credentials. You can obtain credentials from the Azure portal. Open your Azure Communication Services resource within the Azure portal and click the "Identities & User Access Tokens" button within the left hand menu:
 
-:::image type="content" source="../media/4-identities-menu-option.png" alt-text="Azure Portal, showing the Identities & User Access Tokens menu option highlighted.":::
+:::image type="content" source="../media/4-identities-menu-option.png" alt-text="Azure portal, showing the Identities & User Access Tokens menu option highlighted.":::
 
 On the page that appears, you can generate test credentials. For this app, we just need the "Voice and video calling (VOIP)" permission so check that option and press generate:
 

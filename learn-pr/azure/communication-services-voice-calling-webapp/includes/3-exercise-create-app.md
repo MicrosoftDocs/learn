@@ -21,13 +21,13 @@ This will setup, the folder for Node.js and allow you to save and manage depende
 
 Now we'll add the required dependencies.
 
-1. Starting with the Azure Communication Services specific ones.
+1. We'll start by adding the Azure Communication Services specific ones.
 
     ```console
     npm install --save @azure/communication-common @azure/communication-calling
     ```
 
-1. Followed by, Parcel which will allow us to run our app in a browser.
+1. Followed by Parcel, which will allow us to run our app in a browser.
 
     ```console
     npm install --save-dev parcel
