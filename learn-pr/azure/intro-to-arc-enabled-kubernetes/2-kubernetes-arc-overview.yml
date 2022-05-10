@@ -20,27 +20,27 @@ quiz:
     choices:
     - content: "XML"
       isCorrect: false
-      explanation: "Kubernetes does not recognize the XML format."
+      explanation: "Kubernetes doesn't recognize XML format for manifest files."
     - content: "YAML"
       isCorrect: true
-      explanation: "Kubernetes manifest files use the YAML format."
+      explanation: "Kubernetes manifest files use YAML format."
     - content: "JSON"
       isCorrect: false
-      explanation: "Kubernetes does not recognize the JSON format."
+      explanation: "Kubernetes doesn't recognize JSON format for manifest files."
     - content: "TXT"
       isCorrect: false
-      explanation: "Kubernetes does not recognize the TXT format."
+      explanation: "Kubernetes doesn't recognize TXT format for manifest files."
   - content: "Which technology makes it possible to deploy Azure Kubernetes Service (AKS) in on-premises data centers?"
     choices:
     - content: "GKS"
       isCorrect: false
-      explanation: "GKE is a third-party platform platform, which not support AKS."
+      explanation: "GKE is a third-party platform that doesn't support AKS."
     - content: "EKS"
       isCorrect: false
-      explanation: "EKS is a third-party platform, which does not support AKS."
+      explanation: "EKS is a third-party platform that doesn't support AKS."
     - content: "Azure Stack HCI"
       isCorrect: true
       explanation: "The only solution that allows running AKS in an on-premises data center is Azure Stack HCI."
     - content: "OpenShift"
       isCorrect: false
-      explanation: "OpenShift is a third-party containerization platform and it does not support AKS."
+      explanation: "OpenShift is a third-party containerization platform that doesn't support AKS."

@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
 metadata:
   title: What are the architecture, components, and characteristics of Azure Arc-enabled Kubernetes?
-  description: In this unit you'll learn about the architecture of Azure Arc-enabled Kubernetes and its benefits.
+  description: In this uni, you'll learn about the architecture of Azure Arc-enabled Kubernetes and its benefits.
   ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
@@ -37,10 +37,10 @@ quiz:
       explanation: "GitOps-based configuration and workload management is a benefit of Azure Arc-enabled Kubernetes."
     - content: "Use of Azure Policy for Kubernetes"
       isCorrect: false
-      explanation: "Azure Policy-based runtime policies is a benefit of Azure Arc-enabled Kubernetes."
+      explanation: "Azure Policy-based runtime policies are a benefit of Azure Arc-enabled Kubernetes."
     - content: "Use of Azure Monitor Container Services."
       isCorrect: false
       explanation: "Azure Monitor Container Services can be used with Azure Arc-enabled Kubernetes."
     - content: "Managing cluster creation"
       isCorrect: true
-      explanation: "Azure Arc-enabled Kubernetes does not provide the ability to manage cluster creation."
+      explanation: "Azure Arc-enabled Kubernetes doesn't provide a way to manage cluster creation."

@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
-  description: In this unit you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
+  description: In this unit, you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
   ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which version of Helm is required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
+  - content: "Which version of Helm is required on your management computer to connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "1"
       isCorrect: false
@@ -29,7 +29,7 @@ quiz:
       explanation: "The administrator needs to use Helm 3."
     - content: "4"
       isCorrect: false
-      explanation: "This version is not available yet."
+      explanation: "This version isn't available yet."
   - content: "What is the minimum version of Azure CLI required on your management computer to connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "2.15"
