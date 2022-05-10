@@ -40,7 +40,7 @@ The Sahara project aims to provide users with a simple means to provision data-p
 
 ## Compute service (Nova)
 
-Nova is an OpenStack project designed to provide massively scalable, on-demand, self-service access to compute resources. Nova is designed to provision and manage different virtual machines deployed using different virtualization platforms, including Xen, VMWare, and Hyper-V. It can even deploy virtual machines onto AWS EC2, with an aim to support the notion of "cloud bursting." The Nova service is also used by other services such as Trove (to provision virtual machines that hold databases) and Sahara (to provision virtual machines for analytics clusters). 
+Nova is an OpenStack project designed to provide massively scalable, on-demand, self-service access to compute resources. Nova is designed to provision and manage different virtual machines deployed using different virtualization platforms, including Xen, VMware, and Hyper-V. It can even deploy virtual machines onto AWS EC2, with an aim to support the notion of "cloud bursting." The Nova service is also used by other services such as Trove (to provision virtual machines that hold databases) and Sahara (to provision virtual machines for analytics clusters). 
 
 ## Database as a service (Trove)
 
@@ -48,7 +48,7 @@ Trove is a database as a service for OpenStack. It's designed to run entirely on
 
 ## User interface (Horizon)
 
-Horizon is the canonical implementation of OpenStack's Dashboard, which provides a web-based user interface to OpenStack services, including Nova, Swift, and Keystone. Users can log in to Horizon to get interactive dashboard views of the status of their resources, and issue service requests to individual OpenStack services.
+Horizon is the canonical implementation of OpenStack's Dashboard, which provides a web-based user interface to OpenStack services, including Nova, Swift, and Keystone. Users can sign in to Horizon to get interactive dashboard views of the status of their resources, and issue service requests to individual OpenStack services.
 
 ## Physical hardware management (Ironic)
 
@@ -56,5 +56,5 @@ Ironic is a bare-metal provisioning system that can be used to control physical 
 
 One may wonder why bare-metal provisioning makes sense in a cloud environment where virtualized resources are the norm. There are situations where bare-metal provisioning could be advantageous. For example, a client that has a higher SLO requirement for compute performance for a high-performance computing application may require dedicated hardware without the overhead of a hypervisor. In such a case, it would be advantageous to provision and dedicate an entire physical server without virtualization. 
 
-As an example of one of the scenarios that Ironic can be used in, consider the case where there's a physical server capacity crunch due to a large number of virtual machines that have been provisioned. In this case, Ironic can power on additional servers and configure them to boot with a specific hypervisor image. Once the additional capacity is made available, virtual machines can be provisioned on the new servers, or existing virtual machines can be migrated to the new servers. In case of the reverse (where the physical server capacity is not being fully utilized), virtual machines can be consolidated to a smaller number of physical servers, and the servers that have been freed up can be powered off to save on electricity costs.
+As an example of one of the scenarios that Ironic can be used in, consider the case where there's a physical server capacity crunch due to a large number of virtual machines that have been provisioned. In this case, Ironic can power-on additional servers and configure them to boot with a specific hypervisor image. Once the additional capacity is made available, virtual machines can be provisioned on the new servers, or existing virtual machines can be migrated to the new servers. In case of the reverse (where the physical server capacity is not being fully utilized), virtual machines can be consolidated to a smaller number of physical servers, and the servers that have been freed up can be powered off to save on electricity costs.
 
