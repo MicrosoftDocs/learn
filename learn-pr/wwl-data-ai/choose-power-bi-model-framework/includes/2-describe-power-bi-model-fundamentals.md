@@ -36,7 +36,7 @@ An analytic query has three phases that are executed in this order:
 
 **Grouping** (sometimes known as dicing) divides query result into groups. Each group is also a filter, but unlike the filtering phase, filter values are visible in the query result. For example, grouping by customer filters each group by customer.
 
-**Summarization** produces a single value result. Typically, a report visual summarizes a numeric field by using an aggregate function. Aggregate functions include sum, count, minimum, maximum, and others. You can achieve simple summarization by aggregating a column, or you can achieve complex summarization by creating a measure by using a DAX formula.
+**Summarization** produces a single value result. Typically, a report visual summarizes a numeric field by using an aggregate function. Aggregate functions include sum, count, minimum, maximum, and others. You can achieve simple summarization by aggregating a column, or you can achieve complex summarization by creating a measure using a DAX formula.
 
 Consider an example: A Power BI report page includes a slicer to filter by a single year. There’s also a column chart visual that shows quarterly sales for the filtered year.
 
@@ -64,7 +64,7 @@ For more information, see [Understand star schema and the importance for Power B
 
 Each Power BI model table (except calculated tables) has a storage mode property. The storage mode property can be either **Import**, **DirectQuery**, or **Dual**, and it determines whether table data is stored in the model.
 
-- **Import** – Queries retrieve data that’s stored, or cached, in the table.
+- **Import** – Queries retrieve data that’s stored, or cached, in the model.
 - **DirectQuery** – Queries pass through to the data source.
 - **Dual** – Queries retrieve stored data or pass through to the data source. Power BI determines the most efficient plan, striving to use cached data whenever possible.
 

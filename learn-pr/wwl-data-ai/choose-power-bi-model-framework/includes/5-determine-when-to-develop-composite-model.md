@@ -1,17 +1,17 @@
 A composite model comprises more than one source group. Typically, there’s always the import source group and a DirectQuery source group.
 
-![Diagram shows a star schema composite model. The model stores imported data for some tables, and other tables pass through queries to the underlying data source, in this case an Azure SQL Database.](../media/DP500-model-frameworks-composite.png)
+![Diagram shows a star schema composite model. The model stores imported data for some tables, and other tables pass-through queries to the underlying data source, in this case an Azure SQL Database.](../media/DP500-model-frameworks-composite.png)
 
-> [NOTE]
+> [!NOTE]
 > Generally, the benefits and limitations associated with import and DirectQuery storage modes apply to composite models.
 
 ## Composite model benefits
 
 There are several benefits to developing a composite model.
 
-Composite models provide you with design flexibility. You can choose to integrate data using different storage modes, striking the right balance between imported data and pass through data. Commonly, enterprise models benefit from using DirectQuery tables over large data sources and by boosting query performance with imported tables. Power BI features that support this scenario are described later in this unit.
+Composite models provide you with design flexibility. You can choose to integrate data using different storage modes, striking the right balance between imported data and pass-through data. Commonly, enterprise models benefit from using DirectQuery tables on large data sources and by boosting query performance with imported tables. Power BI features that support this scenario are described later in this unit.
 
-Composite models can also boost the performance of a DirectQuery model by providing Power BI with opportunity to satisfy some analytic queries from imported data. Querying cached data almost always performs better than pass through queries.
+Composite models can also boost the performance of a DirectQuery model by providing Power BI with opportunity to satisfy some analytic queries from imported data. Querying cached data almost always performs better than pass-through queries.
 
 Lastly, when your model includes DirectQuery tables to a remote model, like a Power BI dataset, you can extend your model with new calculated columns and tables. It results in a specialized model based on a core model. For more information, see [Power BI usage scenarios: Customizable managed self-service BI](/power-bi/guidance/powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi).
 
@@ -23,7 +23,7 @@ There are several limitations related to composite models.
 - When an analytic query must combine imported and DirectQuery data, Power BI must consolidate source group query results, which can impact performance. To help avoid this situation for higher-grain queries, you can add import aggregation tables to your model (or enable automatic aggregations) and set related dimension tables to use dual storage mode. This scenario is described later in this unit.
 - When chaining models (DirectQuery to Power BI datasets), modifications made to upstream models can break downstream models. Be sure to assess the impact of modifications by performing [dataset impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) first.
 
-- Relationships between tables from different source group are known as limited relationships. A model relationship is limited when the Power BI can’t determine a “one” side of a relationship. Limited relationships may result in different evaluations of model queries and calculations. For more information, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand).
+- Relationships between tables from different source groups are known as limited relationships. A model relationship is limited when the Power BI can’t determine a “one” side of a relationship. Limited relationships may result in different evaluations of model queries and calculations. For more information, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand).
 
 ## Boost DirectQuery model performance with import data
 

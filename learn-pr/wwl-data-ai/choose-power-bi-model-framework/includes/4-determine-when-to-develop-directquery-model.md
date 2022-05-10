@@ -5,8 +5,8 @@ A source group is a set of model tables that relate to a data source. There are 
 - **Import** – Represents all import storage mode tables including calculated tables. There can only be one import source group in a model.
 - **DirectQuery** – Represents all DirectQuery storage mode tables that relate to a specific data source.
 
-> [NOTE]
-> An import model and a DirectQuery model only comprise a single source group. When there’s more than one source group, the model framework is known as a composite model. Composite models are described in Unit 4.
+> [!NOTE]
+> An import model and a DirectQuery model only comprise a single source group. When there’s more than one source group, the model framework is known as a composite model. Composite models are described in [Unit 5](/learn/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model).
 
 ## DirectQuery model benefits
 
@@ -34,7 +34,7 @@ Typically, DirectQuery mode supports relational database sources. That’s becau
 
 However, there’s one powerful exception. You can connect to a Power BI dataset (or Azure Analysis Services model) and convert it to a DirectQuery local model. A local model is a relative term that describes a model’s relationship to another model. In this case, the original dataset is a remote model, and the new dataset is the local model. These models are chained, which is term used to describe related models. You can chain up to three models in this way.
 
-This capability to chain models supports the potential to personalize and/or extend a remote model. The simplest thing you can do is rename objects, like tables or columns, or add measures to the local model. You can also extend the model with calculated columns or calculated tables, or add new import or DirectQuery tables. However, these extensions result in the creation of new source groups, which means the model becomes a composite model. That scenario is described in Unit 4.
+This capability to chain models supports the potential to personalize and/or extend a remote model. The simplest thing you can do is rename objects, like tables or columns, or add measures to the local model. You can also extend the model with calculated columns or calculated tables, or add new import or DirectQuery tables. However, these extensions result in the creation of new source groups, which means the model becomes a composite model. That scenario is described in [Unit 5](/learn/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model).
 
 For more information, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services).
 
@@ -44,7 +44,7 @@ There are many limitations related to DirectQuery models that you must bear in m
 
 - Not all data sources are supported. Typically, only major relational database systems are supported. Power BI datasets and Azure Analysis Services models are supported too.
 
-- Power Query (M) queries can’t be overly complex because these queries must translate to native queries that are understood by source systems. So, for example, it’s not possible to use pivot or unpivot transformations.
+- All Power Query (M) transformations are not possible, because these queries must translate to native queries that are understood by source systems. So, for example, it’s not possible to use pivot or unpivot transformations.
 
 - Analytic query performance can be slow, especially if source systems aren’t optimized (with indexes or materialized views), or there are insufficient resources for the analytic workload.
 
@@ -58,7 +58,7 @@ When there’s a justification to develop a DirectQuery model, you can mitigate 
 
 You can optimize the source database to ensure the expected analytic query workload performs well. Specifically, you can create indexes and materialized views, and ensure the database has sufficient resources for all workloads.
 
-> [TIP] 
+> [!TIP] 
 > We recommend that you always work in collaboration with the database owner. It’s important that they understand the additional workload a DirectQuery model can place on their database.
 
 ### DirectQuery user-defined aggregation tables
