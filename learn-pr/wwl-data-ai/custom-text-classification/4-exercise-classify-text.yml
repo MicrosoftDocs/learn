@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 45
+durationInMinutes: 40
 content: |
   [!include[](includes/4-exercise-classify-text.md)]

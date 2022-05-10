@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
