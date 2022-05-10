@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.1-introduction
 metadata:
   title: Introduction
   description: Over the course of this module, you'll learn about Azure Arc capabilities targeting management and monitoring of Kubernetes clusters. You'll then be able to describe how these capabilities can help customers like Contoso to optimize and simplify their operations.
-  ms.date: 12/14/2020
+  ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
