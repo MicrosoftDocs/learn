@@ -5,7 +5,7 @@ Once you have set up Dependabot alerts to notify you of vulnerabilities in your 
 - **Dependabot security updates** are automated pull requests that help you update dependencies with known vulnerabilities.
 - **Dependabot version updates** are automated pull requests that keep your dependencies updated, even when they don’t have any vulnerabilities.
 
-:::image type="content" source="../media/dependabot-pull-requests.png" alt-text="screenshot of pull requests opened by dependabot.":::
+:::image type="content" source="../media/dependabot-pull-requests.png" alt-text="Screenshot of pull requests opened by Dependabot.":::
 
 ## Supported repositories
 
@@ -20,9 +20,9 @@ GitHub automatically enables Dependabot security updates for  every repository t
 
 You can enable security updates manually on private repositories that don't meet the prerequisites mentioned in the section above. Make sure you've enabled the dependency graph and Dependabot alerts on your repository, and follow these steps to manually enable security updates for it:
 
-1. Log in to your GitHub account and select your profile photo from the upper-right.
-2. Click **Settings** > **Security & analysis**.
-3. Click **Enable** for Dependabot security updates.
+1. Sign in to your GitHub account and select your profile photo from the upper-right.
+2. Select **Settings** > **Code security and analysis**.
+3. Select **Enable** for Dependabot security updates.
 
 ## View and resolve security updates 
 
@@ -36,15 +36,15 @@ Despite all this information, it's still best practice to have automated process
 
 After creating and checking your `dependabot.yml` file into your repository, you can view the dependencies being monitored by Dependabot to confirm everything is working properly by following the steps below: 
 
-1.	Navigate to the main page of the repository. 
-2.	Under your repository name, click **Insights**. 
-3.	Click **Dependency graph** in the left sidebar.
-4.	Click **Dependabot**. 
-5.	Click the three dots next to a package manager to view the files being monitored.
+1. Go to the main page of the repository. 
+2. Under your repository name, select **Insights**. 
+3. Select **Dependency graph** in the left sidebar.
+4. Select **Dependabot**. 
+5. Select the three dots next to a package manager to view the files being monitored.
 
-:::image type="content" source="../media/view-dependencies.png" alt-text="screenshot showing dependencies view from dependency graph.":::
+:::image type="content" source="../media/view-dependencies.png" alt-text="Screenshot showing dependencies view from a dependency graph.":::
 
-The **Last checked TIME ago** link in the **Dependabot** tab also enables you to see the log files that Dependabot generated during the last check for version updates. You can rerun the version check by clicking the **Check for updates** button.
+The **Last checked TIME ago** link in the **Dependabot** tab also enables you to see the log files that Dependabot generated during the last check for version updates. You can rerun the version check by selecting the **Check for updates** button.
 
 ## Version updates 
 
@@ -98,11 +98,12 @@ updates:
 Dependabot version updates aren't automatically enabled on forks. This safeguard prevents fork owners from unintentionally enabling version updates when they pull changes including a `dependabot.yml` file from the original repository.
 
 To enable version updates on the fork of a repository:
-1.	Navigate to the main page of the repository where you want to enable version updates. 
-2.	From the main page, select **Insights**. 
-3.	Click **Dependency graph** from the left sidebar.
-4.	Click **Dependabot**.
-5.	Click **Enable Dependabot**.
+
+1. Go to the main page of the repository where you want to enable version updates. 
+2. Select **Insights**. 
+3. Select **Dependency graph** from the left sidebar.
+4. Select **Dependabot**.
+5. Select **Enable Dependabot**.
 
 ## Allow Dependabot to access private repositories
 
@@ -111,10 +112,10 @@ To check for outdated dependencies and generate a security update, Dependabot mu
 To allow Dependabot to access a private GitHub repository:
 
 1. Go to the security and analysis settings for your organization.
-2. Under "Grant Dependabot access to private repository", click **Add private repositories** or **Add internal and private repositories**.
+2. Under **Grant Dependabot access to private repository**, select **Add private repositories** or **Add internal and private repositories**.
 3. Start typing the name of the repository you want to allow.
-4. Click the repository you want to allow.
-5. Optionally, to remove a repository from the list, go to the right of the repository and click **X**.
+4. Select the repository you want to allow.
+5. Optionally, to remove a repository from the list, go to the right of the repository and select **X**.
 
 ## Security update compatibility scores
 
