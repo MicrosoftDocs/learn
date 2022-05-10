@@ -1,0 +1,47 @@
+### YamlMime:LearningPath
+uid: learn.machine-learning.machine-learning-with-r
+metadata:
+  title: Machine learning with R
+  description: Learn how to explore and analyze data by using R. Get and introduction to regression models, classification models, and clustering models by using tidymodels and R.
+  ms.date: 05/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Machine learning with R
+summary: |
+  Learn how to explore and analyze data by using R. Get and introduction to regression models, classification models, and clustering models by using tidymodels and R.
+
+  In this learning path you'll learn
+
+  - Common data exploration and analysis tasks 
+  - How to use R packages like ggplot2, dplyr and tidyr to turn raw data into understanding, insight and knowledge 
+  - When to use regression models
+  - How to train and evaluate regression models using the Tidymodels framework
+  - When to use classification models
+  - How to train and evaluate a classification model using the Tidymodels framework
+  - When to use clustering models
+  - How to train and evaluate clustering models using the Tidymodels framework
+
+prerequisites: |
+  - Knowledge of basic mathematics
+  - Some experience programming in R
+iconUrl: /learn/achievements/machine-learning/machine-learning-with-r.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+- data-scientist
+products:
+- azure
+modules:
+- learn.machine-learning.explore-analyze-data-r
+- learn.machine-learning.introduction-regression-models
+- learn.machine-learning.introduction-classification-models
+- learn.machine-learning.introduction-clustering-models
+trophy:
+  uid: learn.machine-learning.machine-learning-with-r.trophy
+
+
