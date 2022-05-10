@@ -92,7 +92,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     code App.config
     ```
 
-1. Uncomment the line that specifies the **ReservationsServiceURI**, and replace the value with the URL of your web app. The file should like the example that follows.
+1. Uncomment the line that specifies the **ReservationsServiceURI**, and replace the value with the URL of your web app. The file should look like the example that follows.
 
     ```text
     <?xml version="1.0" encoding="utf-8" ?>
@@ -106,6 +106,36 @@ The exercise also runs a client app that simulates a number of users issuing POS
     ```
 
     > The **NumClients** setting in this file specifies the number of simultaneous clients that will attempt to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of a reservation – all of the data used is fake and is not actually persisted anywhere. Leave this value set to 100.
+
+1. Save the file by selecting the ellipsis in the upper right hand corner of the editor.
+
+1. In the Cloud Shell, edit the HotelReservationSystemTestClient.csproj file in this folder.
+
+    ```bash
+    code HotelReservationSystemTestClient.csproj
+    ```
+
+1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like this example.
+
+    ```text
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+      </PropertyGroup>
+    
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+      </ItemGroup>
+    
+      <ItemGroup>
+        <ProjectReference Include="..\HotelReservationSystemTypes\HotelReservationSystemTypes.csproj" />
+      </ItemGroup>
+    
+    </Project>
+    ```
 
 1. Save the file by selecting the ellipsis in the upper right hand corner of the editor, and then close the code editor.
 
