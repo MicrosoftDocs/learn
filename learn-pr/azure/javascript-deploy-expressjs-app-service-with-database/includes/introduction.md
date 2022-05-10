@@ -6,7 +6,7 @@ Suppose you're a web developer or DevOps engineer who needs to deploy a data web
 
 You'll learn how to deploy and configure the Azure database resource you need to deploy a data web app. The data web app is a rental property app used by a company to help its employees relocate when needed. The app displays rental properties and property information.
 
-:::image type="content" source="../media/rental-app-website-browser.png" alt-text="Web browser that shows the main listings of a rental app.":::
+:::image type="content" source="../media/rental-app-website-browser.png" alt-text="Screenshot of web browser that shows the main listings of a rental app.":::
 
 The rental property data web app is built with Express.js and MongoDB. The user interface is created with simple JavaScript and served from the Express.js server in order to focus on the core lesson of Azure service creation, configuration, and deployment. 
 

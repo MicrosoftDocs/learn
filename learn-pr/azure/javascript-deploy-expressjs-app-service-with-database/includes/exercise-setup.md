@@ -67,7 +67,7 @@ You can bring the sample application to your local computer in one of several wa
 
 1. The error shows that the database is refusing the connection. This makes sense because there isn't a database yet. You'll fix that later in the module.
 
-    :::image type="content" source="../media/browser-screenshot-local-app-start-without-database.png" alt-text="Browser screenshot of web app showing the MongoDB connection error.":::
+    :::image type="content" source="../media/browser-screenshot-local-app-start-without-database.png" alt-text="Screenshot of web app showing the MongoDB connection error.":::
 
 1. Stop the application with <kbd>Ctrl</kbd> + <kbd>c</kbd>.
 

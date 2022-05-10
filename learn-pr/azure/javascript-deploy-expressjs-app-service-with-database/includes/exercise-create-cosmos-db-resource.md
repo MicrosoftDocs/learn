@@ -10,7 +10,7 @@ Create the Cosmos DB API for MongoDB resource then create the database and conta
 
     | Step | Value|
     |--|--|
-    |Select an Azure Database Server.|Select **Azure CosmosDB for MongoDB API**.|
+    |Select an Azure Database Server.|Select **Azure Cosmos DB for MongoDB API**.|
     |Account name|Enter `js-rentals-` and post pend the value with a random number like `3956`. The account name needs to be unique across Azure Cosmos DB resources, which the random number ensures. |
     |Select a capacity model.| Select **Serverless**.|
     |Select a resource group for new resources.|Select the default Learn sandbox resource group. |

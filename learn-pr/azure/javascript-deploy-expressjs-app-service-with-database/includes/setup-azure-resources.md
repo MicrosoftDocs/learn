@@ -1,4 +1,4 @@
-This unit briefly discusses the the web app resources.  
+This unit briefly discusses the web app resources.  
 
 ## Azure web-related resources
 

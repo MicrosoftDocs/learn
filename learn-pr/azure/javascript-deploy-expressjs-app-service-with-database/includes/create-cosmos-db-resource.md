@@ -4,7 +4,7 @@ When you want to use a MongoDB-enabled application on Azure, create a Cosmos DB 
 
 The Azure Cosmos DB API for MongoDB provides an integration layer to use Cosmos DB as if it were a MongoDB database. 
 
-Using CosmosDB has many benefits:
+Using Cosmos DB has many benefits:
 
 * Free pricing tier.
 * Use your MongoDB experience on the Azure Cloud.
@@ -14,7 +14,7 @@ Using CosmosDB has many benefits:
 * Compatible with several MongoDB server versions.
 * Continue to integrate MongoDB code with a connection string.
 
-:::image type="content" source="../media/cosmosdb-mongodb.png" alt-text="Azure Cosmos DB's API for MongoDB":::
+:::image type="content" source="../media/cosmosdb-mongodb.png" alt-text="Diagram that shows Azure Cosmos DB's use of the MongoDB protocol to connect between a client and the database.":::
 
 ## Create a Cosmos DB resource
 

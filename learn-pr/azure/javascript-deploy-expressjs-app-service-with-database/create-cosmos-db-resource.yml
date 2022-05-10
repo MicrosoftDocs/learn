@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmosdb-resource
+uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmos-db-resource
 title: Create Cosmos DB for MongoDB API
 metadata:
   unitType: learning-content
@@ -9,7 +9,7 @@ metadata:
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
-  ms.prod: developing-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |
-  [!include[](includes/create-cosmosdb-resource.md)]
+  [!include[](includes/create-cosmos-db-resource.md)]
