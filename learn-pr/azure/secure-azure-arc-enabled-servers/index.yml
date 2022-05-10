@@ -19,7 +19,7 @@ prerequisites: |
   - Basic characteristics of Azure services and Azure Arc 
   - Compute, storage, networking, and virtualization technologies 
   - Basic Windows Server and Linux administration tasks 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/secure-azure-arc-enabled-servers.svg
 levels:
 - beginner
 roles:
