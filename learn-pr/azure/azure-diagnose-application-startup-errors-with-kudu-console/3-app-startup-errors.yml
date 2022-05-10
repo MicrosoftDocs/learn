@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Application startup errors and Azure App Service diagnostics
   questions:
-  - content: "Identify the common cause of an 500.30 In-Process Start Failure."
+  - content: "Identify the common cause of a 500.30 In-Process Start Failure."
     choices:
     - content: "The application failed to start, or the application started and then stopped."
       isCorrect: true
-      explanation: "A common cause of an 500.30 In-Process Start Failure is when the application failed to start, or it started and then stopped."
+      explanation: "A common cause of a 500.30 In-Process Start Failure is when the application failed to start, or it started and then stopped."
     - content: "The worker process of the ASP.NET Core Module fails to start."
       isCorrect: false
-      explanation: "The worker process of the ASP.NET Core Module failing to start is the common cause of the 502.5 Process Failure."
+      explanation: "The worker process of the ASP.NET Core Module failing to start is a common cause of a 502.5 Process Failure."
     - content: "Headers are sent and it's too late for the server to send a 500 Internal Server Error message."
       isCorrect: false
       explanation: "Headers are sent and it's too late for the server to send a 500 Internal Server Error message is a common cause for a connection reset."

@@ -1,4 +1,4 @@
-You're an IT admin who deploys and supports Azure web apps for a leading hotel and resort company. The hospitality group at the company is rolling out a new service to its gold-tier members to support digital room selection. The webpage that members use to access the service, however, returns an application startup error. 
+You're an IT admin who deploys and supports web apps in Azure for a leading hotel and resort company. The hospitality group at the company is rolling out a new service for its gold-tier members to support digital room selection. The webpage that members use to access the service, however, returns an application startup error. 
 
 In this module, you'll use the Kudu diagnostic console to identify the issue and then diagnose the app issue by examining the application event log in the Azure portal.
 

@@ -4,7 +4,7 @@ To diagnose application startup errors, you need to deploy code to your web app 
 
 ## Create a new web project
 
-Use the `dotnet` command line tool to create a new ASP.NET Core web project:
+Use the `dotnet` command to create a new ASP.NET Core web project:
 
 1. Sign in to the sandbox and review the permissions.
 
