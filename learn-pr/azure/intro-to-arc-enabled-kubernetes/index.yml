@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
   title: Introduction to Azure Arc-enabled Kubernetes
   description: Introduction to Azure Arc-enabled Kubernetes
-  ms.date: 12/14/2020
+  ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial

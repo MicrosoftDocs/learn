@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
 metadata:
   title: What are Kubernetes and Azure Arc?
   description: In this unit you'll learn about Kubernetes and Azure Arc, and the key benefits that they provide.
-  ms.date: 05/05/2022
+  ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
 metadata:
   title: Apply Azure Arc-enabled Kubernetes cluster configurations by using GitOps
   description: In this unit, you'll learn about GitOps and how to configure it.
-  ms.date: 05/05/2022
+  ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
