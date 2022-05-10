@@ -13084,6 +13084,16 @@
       "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-center.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-portal",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/5-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/6-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
