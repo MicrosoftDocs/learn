@@ -43,6 +43,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.deploy-resources-different-scopes.introduction
 - learn.azure.deploy-resources-different-scopes.understand-deployment-scopes

@@ -296,18 +296,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/gather-metrics-blob-storage/6-using-storage-analytics-logging.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/6-use-azure-resource-logs",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/gather-metrics-blob-storage/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/7-exercise-collect-and-analyze-azure-monitor-logs-for-storage",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/7-exercise-manage-vm.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/6-use-azure-resource-logs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/5-storage-logging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/6-exercise-storage-logging",
       "redirect_document_id": false
     },
     {
@@ -12999,6 +12999,101 @@
       "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/6-describe-azure-intelligent-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/7-exercise-isolate-problems.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/8-exercise-isolate-problems",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/10-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/2-describe-dynamic-management-views-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/3-describe-wait-statistics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/2-describe-wait-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/4-tune-indexes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/5a-exercise-isolate-problem-areas-poor-performing-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/5-exercise-isolate-problem-areas-poor-performing-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-performance-improvements/5-maintain-indexes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-performance-improvements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/2-what-is-azure-purview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/2-what-is-microsoft-purview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/3-how-azure-purview-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/3-how-microsoft-purview-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/4-when-to-use-azure-purview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/4-when-to-use-microsoft-purview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-purview/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-portal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/5-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/6-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }

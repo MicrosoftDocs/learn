@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2022
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -21,29 +21,29 @@ quiz:
     choices:
     - content: "Office 365 Admin"
       isCorrect: false
-      explanation: "You cannot enable PIM with Office 365 Admin role."
+      explanation: "You can't enable PIM with Office 365 Admin role."
     - content: "Co-Administrator"
       isCorrect: false
-      explanation: "The co-administrator role would not allow you to enable PIM."
+      explanation: "The co-administrator role wouldn't allow you to enable PIM."
     - content: "Global Admin"
       isCorrect: true
-      explanation: "Global Admin. Of the options listed only the Global Admin role has the permission to enable PIM."
-  - content: "A company has implemented Azure AD PIM. There is a need to ensure a new hires request elevation before they make any changes in Azure, what should you do?"
+      explanation: "Global Admin. Of the options listed, only the Global Admin role has the permission to enable PIM."
+  - content: "A company has implemented Azure AD PIM. There's a need to ensure a new hire's request elevation before they make any changes in Azure, what should you do?"
     choices:
     - content: "Activate the new hire."
       isCorrect: false
-      explanation: "You have to assign a role before the user could try and activate."
+      explanation: "You have to assign a role before the user could try to activate."
     - content: "Assign the new hire the Eligible role membership type."
       isCorrect: true
       explanation: "Assign the new hire the Eligible role membership type. When someone is Eligible for role membership, they must request activation before they can use the role."
     - content: "Include the new hire in an access review."
       isCorrect: false
-      explanation: "An access review would not grant the new hire any PIM role to be elevated."
+      explanation: "An access review wouldn't grant the new hire any PIM role to be elevated."
   - content: "Azure AD PIM is used to manage which of the following roles?"
     choices:
     - content: "Azure privileged users"
       isCorrect: false
-      explanation: "This is not a specific user, but is a group."
+      explanation: "Azure privileged users are not specific users but are a group."
     - content: "Azure resource groups"
       isCorrect: false
       explanation: "You want to assign to a specific set of roles, not a resource group."
@@ -60,4 +60,4 @@ quiz:
       explanation: "Make the manager Permanent Active in the role. This type of role assignment doesn't require a user to perform any action to use the role."
     - content: "Make the manager Assigned to a role."
       isCorrect: false
-      explanation: "Assigned on gives permission to act as a role; it would not remove the need for the manager to activate."
+      explanation: "Assigned on gives permission to act as a role; it wouldn't remove the need for the manager to activate."

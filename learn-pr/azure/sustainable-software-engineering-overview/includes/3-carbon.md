@@ -6,7 +6,7 @@ Being _green_ means different things to different people, that's a challenge whe
 
 Greenhouse gases (GHG) act as a blanket that increases the Earth's temperature, which is a natural phenomenon. However, due to human activities, the global climate is changing much faster than animals and plants can adapt. How human society will adapt is still an open question.
 
-There are many different GHGs. The most common is carbon dioxide (CO<sub>2</sub>). To make calculations more manageable, we normalize all GHG numbers to _carbon dioxide equivalent_ (CO<sub>2</sub>eq). For example, one ton of methane has the same warming effect as about 25 tons of CO<sub>2</sub>, so we normalize it to 25 tons CO<sub>2</sub>eq. We may shorten even further to just **carbon**, which is often used to refer to all GHGs.
+There are many different GHGs. The most common GHG emitted through human activity is carbon dioxide (CO<sub>2</sub>). To make calculations more manageable, we normalize all GHG numbers to _carbon dioxide equivalent_ (CO<sub>2</sub>eq). For example, one ton of methane has the same warming effect as about 25 tons of CO<sub>2</sub>, so we normalize it to 25 tons CO<sub>2</sub>eq. We may shorten even further to just **carbon**, which is often used to refer to all GHGs.
 
 ## Net-zero carbon targets
 
