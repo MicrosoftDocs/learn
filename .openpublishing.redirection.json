@@ -13079,6 +13079,11 @@
       "source_path": "learn-pr/azure/intro-to-azure-purview/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/6-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-portal",
+      "redirect_document_id": true
     }
   ]
 }
