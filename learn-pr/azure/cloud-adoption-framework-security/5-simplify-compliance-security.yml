@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is the purpose of security benchmarks?
+  - content: What's the purpose of security benchmarks?
     choices:
-    - content: They help you quickly secure cloud deployments and reduce risk to your organization
+    - content: They help you quickly secure cloud deployments and reduce risk to your organization.
       isCorrect: true
       explanation: Correct. Security benchmarks are configuration baselines and best practices for securely configuring a system.
-    - content: They help you manage workloads in the cloud
+    - content: They help you manage workloads in the cloud.
       isCorrect: false
       explanation: Incorrect. Security benchmarks make security controls and service recommendations, but they don't help manage workloads.
-    - content: They help you migrate specific workloads to the cloud less securely
+    - content: They help you migrate specific workloads to the cloud less securely.
       isCorrect: false
       explanation: Incorrect. The aim of security benchmarks is to help you make your organization more secure.
-    - content: They enable the CISO to offload security responsibilities to the cloud services provider
+    - content: They enable the CISO to offload security responsibilities to the cloud services provider.
       isCorrect: false
       explanation: Incorrect. Security benchmarks provide a starting point, but security is the job of the entire organization.

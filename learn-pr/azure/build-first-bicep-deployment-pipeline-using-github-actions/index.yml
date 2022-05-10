@@ -44,6 +44,9 @@ languages:
 products:
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions.introduction
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions.understand-github-actions
