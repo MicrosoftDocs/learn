@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
 metadata:
-  title: Describe information protection and governance capabilities of Microsoft 365
-  description: "Describe information protection and governance capabilities of Microsoft 365"
-  ms.date: 04/24/2022
+  title: Describe information protection and data lifecycle management in Microsoft Purview
+  description: "Describe information protection and data lifecycle management in Microsoft Purview"
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: Describe information protection and governance capabilities of Microsoft 365
-summary: Information protection and governance in Microsoft 365 helps organizations classify, protect, and retain their data where it lives and wherever it goes.  Learn about data classification capabilities, data loss prevention, and records management.
+title: Describe information protection and data lifecycle management in Microsoft Purview
+summary: Information protection and data lifecycle management in Microsoft Purview helps organizations classify, protect, and retain their data where it lives and wherever it goes.  Learn about data classification capabilities, data loss prevention, and records management.
 abstract: |
   After completing this module, you'll be able to:
   - Describe data classification capabilities
