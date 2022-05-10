@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-application-architecture.design-event-hub-messaging-solution
-title: Design an Event Hub messaging solution
+title: Design an Event Hubs messaging solution
 metadata:
-  title: Design an Event Hub messaging solution
-  description: "Design an Event Hub messaging solution"
+  title: Design an Event Hubs messaging solution
+  description: "Design an Event Hubs messaging solution"
   ms.date: 05/10/2022
   author: wwlpublish
   ms.author: cynthist
