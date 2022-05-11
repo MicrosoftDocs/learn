@@ -3,7 +3,7 @@ uid: learn.wwl.configure-app-service-plans
 metadata:
   title: Configure app service plans
   description: "You will learn how to configure the App Service Plan including pricing and scaling."
-  ms.date: 01/14/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
