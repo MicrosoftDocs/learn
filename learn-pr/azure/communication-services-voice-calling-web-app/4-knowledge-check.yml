@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.communication-services-voice-calling-webapp.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Review concepts around using Azure Communication Services to create a voice calling web application."
+  ms.date: 04/20/2022
+  author: ProbablePrime
+  ms.author: rifox
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+quiz:
+  title: 'Check your knowledge'
+  questions:
+  - content: 'How can Azure Communication Services be used to make voice calls?'
+    choices:
+    - content: 'I can create a Communication Services resource using the Azure portal. A resource provides the services, which allow me to make voice calls.'
+      isCorrect: false
+      explanation: "Azure Communication Services resources can be provisioned through the Azure portal, but you'll need to combine that with use of client libraries to make voice calls."
+    - content: 'I can provision phone numbers that will allow me to make calls.'
+      isCorrect: false
+      explanation: "Phone numbers can be provisioned using the Azure portal by navigating to your Communication Services resource but they aren't required for non-PTSN voice calls."
+    - content: "Once I've provisioned an Azure Communication Services resource, I can use Azure Communication Services client libraries to make voice calls between users."
+      isCorrect: true
+      explanation: 'Correct. By combining an Azure Communication Services resource with client libraries, you can make voice calls between users.'
+  - content: 'As an authenticated user, what information do you need to call another user?'
+    choices:
+    - content: 'An Azure Communication Services user token.'
+      isCorrect: false
+      explanation: 'User tokens, are used to authenticate users allowing them to carry out operations. To call another user, you need their user ID, which uniquely identifies them.'
+    - content: "The other user's telephone number."
+      isCorrect: false
+      explanation: 'To make a non-PTSN voice call, you only need to know the user ID of the user you want to call.'
+    - content: "The user's Azure Communication Services user ID"
+      isCorrect: true
+      explanation: 'To make a non-PTSN voice call, you only need to know the user ID of the user you want to call.'
