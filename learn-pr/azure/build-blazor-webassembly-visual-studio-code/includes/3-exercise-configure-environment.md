@@ -87,7 +87,7 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 3. On the subsequent screen, name your project "BlazorApp" and specify a location on disk with settings like the following and then click 'Next':
 
-  ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
+   ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
 4. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and click 'Create'
 
