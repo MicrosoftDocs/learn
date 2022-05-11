@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-azure-database-for-mysql.deploy-connect-azure-database-mysql 
+title: Deploy and connect to Azure Database for MySQL 
+metadata:
+  title: Deploy and connect to Azure Database for MySQL 
+  description: Deploy and connect to Azure Database for MySQL.
+  ms.date: 05/10/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/deploy-connect-azure-database-mysql.md)]
