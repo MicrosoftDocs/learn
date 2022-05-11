@@ -37,7 +37,7 @@ Connect the hub virtual network with the virtual network used by the host pool b
 
 1. In **firewallVNet**, under **Settings**, select **Peerings**.
 1. Select **+ Add**. 
-:::image type="content" source="../media/5-add-peering.png" alt-text="Screenshot showing the information to include when adding a peering.":::
+    :::image type="content" source="../media/5-add-peering.png" alt-text="Screenshot showing the information to include when adding a peering.":::
 1. Enter the following information:
 
     |Field |Value |
