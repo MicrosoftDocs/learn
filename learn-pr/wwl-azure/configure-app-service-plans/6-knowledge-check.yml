@@ -17,17 +17,17 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "The infrastructure team is responsible for managing a production web app. The app requires scaling to five instances and 100 GB of disk storage. The most cost efficient solution is desired. Which App Service Plan would meet the requirements?"
+  - content: "The infrastructure team is responsible for managing a production web app. The app requires scaling to 5 instances and 100 GB of disk storage. The most cost efficient solution is desired. Which App Service Plan would meet the requirements?"
     choices:
     - content: "Basic"
       isCorrect: false
-      explanation: "Incorrect. The Basic App Service plan doesn't not meet the requirements."
+      explanation: "Incorrect. The Basic App Service plan doesn't meet the requirements."
     - content: "Standard"
       isCorrect: true
       explanation: "Correct. The Standard App Service plan meets the requirements at the least cost."
     - content: "Premium"
       isCorrect: false
-      explanation: "Incorrect. The Premium App Service plan meets the requirements but is not the most cost effective."
+      explanation: "Incorrect. The Premium App Service plan meets the requirements but isn't the most cost effective."
   - content: "Which of following provides more CPU, memory, or disk space without adding more virtual machines?"
     choices:
     - content: "Scale up"
@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. Scale out increases the number of virtual machine instances that run the app."
     - content: "Scale back"
       isCorrect: false
-      explanation: "Incorrect. Scale back is not a valid choice."
+      explanation: "Incorrect. Scale back isn't a valid choice."
   - content: "Triggering a webhook at 8am on Saturday is an example of which of the following?"
     choices:
     - content: "A metric-based rule."
@@ -46,7 +46,7 @@ quiz:
       explanation: "Incorrect. Metric-based rules measure application load and add or remove virtual machines based on that load."
     - content: "An app-insight rule."
       isCorrect: false
-      explanation: "Incorrect. App-insight rule is not a valid choice."
+      explanation: "Incorrect. App-insight rule isn't a valid choice."
     - content: "A time-based rule."
       isCorrect: true
       explanation: "Correct. Time-based rules allow scaling based on time patterns."
