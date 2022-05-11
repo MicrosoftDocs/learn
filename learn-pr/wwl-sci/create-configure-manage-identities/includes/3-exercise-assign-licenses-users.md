@@ -33,7 +33,7 @@ You can skip creating this user if you have already created the same user in the
     | Owners     | Assign your own administrator account as the group owner |
     | Members    | Chris Green |
     
-    :::image type="content" source="../media/create-group.png" alt-text="Screenshot of the create new group page in Azure A D. The image displays the New Group page with Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
+    :::image type="content" source="../media/create-group.png" alt-text="Screenshot of the new group creation page in Azure A D. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
     
 5.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
