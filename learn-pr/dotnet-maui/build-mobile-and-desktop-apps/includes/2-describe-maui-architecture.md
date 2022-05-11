@@ -6,9 +6,9 @@ In this unit, you'll learn about the architecture of .NET MAUI, and the tools re
 
 ## What is the .NET MAUI technology stack?
 
-.NET provides a series of platform-specific frameworks for creating apps: .NET for Android, .NET for iOS (and iPadOS), .NET for Mac, and WinUI. These frameworks all have access to the same .NET 6 Base Class Library (BCL). This library provides the functionality for creating and managing resources, and for generally abstracting the details of the underlying device away from your code. The BCL depends on the .NET runtime to provide the execution environment for your code. For Android, iOS (and iPadOS), and macOS, the environment is implemented by Mono, an open-source implementation of the .NET runtime. On Windows, WinRT performs the same role, except it's optimized for the Windows platform.
+.NET provides a series of platform-specific frameworks for creating apps: .NET for Android, .NET for iOS (and iPadOS), .NET for Mac, and WinUI 3 (leveraging the Windows App SDK). These frameworks all have access to the same .NET 6 Base Class Library (BCL). This library provides the functionality for creating and managing resources, and for generally abstracting the details of the underlying device away from your code. The BCL depends on the .NET runtime to provide the execution environment for your code. For Android, iOS (and iPadOS), and macOS, the environment is implemented by Mono, an open-source implementation of the .NET runtime. On Windows, Win32 performs the same role, except it's optimized for the Windows platform.
 
-While the BCL enables applications running on different types of devices to share common business logic, the various platforms have different ways of defining the user interface for an application, and they provide varying models for specifying how the elements of a user interface communicate and inter-operate. You can craft the UI for each platform separately using the appropriate platform-specific framework (.NET for Android, .NET for iOS, .NET for Mac, or WinUI), but this approach then requires you to maintain a code-base for each individual family of devices. .NET MAUI provides a single framework for building the UIs for mobile and desktop applications. You create the UI using this framework (indicated by arrow 1 in the diagram below), and .NET MAUI takes care of converting it to the appropriate platform (arrow 2).
+While the BCL enables applications running on different types of devices to share common business logic, the various platforms have different ways of defining the user interface for an application, and they provide varying models for specifying how the elements of a user interface communicate and inter-operate. You can craft the UI for each platform separately using the appropriate platform-specific framework (.NET for Android, .NET for iOS, .NET for Mac, or WinUI 3), but this approach then requires you to maintain a code-base for each individual family of devices. .NET MAUI provides a single framework for building the UIs for mobile and desktop applications. You create the UI using this framework (indicated by arrow 1 in the diagram below), and .NET MAUI takes care of converting it to the appropriate platform (arrow 2).
 
 There may be times when you need to implement a platform-specific feature. In these situations, you can invoke methods in the platform-specific framework, as highlighted by arrow 3 in the following diagram,
 
@@ -20,9 +20,9 @@ There may be times when you need to implement a platform-specific feature. In th
 
 ```XML
 <Button Text="Click me"
-                    SemanticProperties.Hint="Counts the number of times you click"
-                    Clicked="OnCounterClicked"
-                    HorizontalOptions="Center" />
+        SemanticProperties.Hint="Counts the number of times you click"
+        Clicked="OnCounterClicked"
+        HorizontalOptions="Center" />
 ```
 
 This example defines the label for the button ("Click me"), and specifies that a method named "OnCounterClicked" should be run when the user selects the button. Other properties can modify the layout of the button and the text; in this example, the text is centered on the button. Semantic properties provide support for accessibility, for users with visual impairment.
@@ -40,27 +40,17 @@ This example defines the label for the button ("Click me"), and specifies that a
 - Multiple page types for creating rich navigation types, like drawers.
 - Support for data-binding, for more elegant and maintainable development patterns.
 - The ability to create custom handlers to enhance the way in which UI elements are presented.
-- An "essentials" library that handles many of the common needs of mobile apps that are separate from the UI. The essentials library enables an app to access things like the GPS, the accelerometer, and battery and network states. There are dozens of sensors and services common to mobile development also available through this library.
+- Access to native APIs directly and an abstraction of many common needs of mobile & desktop apps that are separate from the UI. The essentials library enables an app to access things like the GPS, the accelerometer, and battery and network states. There are dozens of sensors and services common to mobile development also available through this library.
 
 ## Requirements for .NET MAUI development
 
 > [!NOTE]
 > These requirements will change as new preview release of Visual Studio and .NET MAUI are released.
 
-To create .NET MAUI apps, you currently require Visual Studio version 17.0.0 Preview 4.0 (the latest build of Visual Studio 2022) with the following workloads installed:
+To create .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
 
-- Mobile development with .NET. You must include the optional .NET MAUI components
-- Universal Windows Platform development
-- Desktop development with C++
-- .NET Desktop Development
+- .NET Multi-Platform App UI development
 
-Additionally, if you want to build MAUI Blazor apps, you must install the ASP.NET and web development workload
+Additionally, if you want to build .NET MAUI Blazor apps, you must install the ASP.NET and web development workload
 
 :::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio installer showing the workloads required to support .NET MAUI development":::
-
-After you have installed Visual Studio with the appropriate workloads, you must also set up the following items:
-
-- The [Visual Studio Single-project MSIX Packaging Tools for VS 2022](https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftSingleProjectMSIXPackagingToolsDev17). This is a Visual Studio extension available from the Visual Studio Marketplace. This extension is necessary for building MAUI Windows applications.
-- The Android 31 SDK. You can download and install this SDK using [Android Studio](https://developer.android.com/studio)
-- OpenJDK. You can download this tool from the [Microsoft OpenJDK page](https://www.microsoft.com/openjdk)
-- The WebView2 package. This package is only necessary if you are building Windows apps that use WebView or BlazorWebView controls. You can install this package with the [Microsoft Edge WebView2 installer](https://developer.microsoft.com/microsoft-edge/webview2/)
