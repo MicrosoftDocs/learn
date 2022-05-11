@@ -1,9 +1,0 @@
-In this module, you’ve learned how you can use Azure Database for MySQL to accommodate scalability and resiliency requirements of your LAMP-based applications. You can now deploy and connect to instances of Azure Database for MySQL. You now realize that as a managed DaaS offering, Azure Database for MySQL allows you to focus on programming aspects of your solution because the Azure platform automatically completes the traditional database management and maintenance tasks. You’re now also confident in the resiliency and security that the managed offering provides.
-
-## References
-
-- [Azure Database for MySQL](https://www.youtube.com/redirect?event=playlist_description&redir_token=QUFFLUhqazdIOUMyQVh0OGxVY0p6c2NHUlFGRmY1eGhCUXxBQ3Jtc0tuNzlqQkpOMzR4b0Y5SWhiNFdqSnpocTZzanR5WGxFYXJiRk1ZTVZRcXJjbXhIUnFnUE1yMlptM0ItSzZCZm5jRkFDMlZ0MmRKU0hPaVJVS09JcEtLRlFnVzZqZHB0UEI5RlgzaTFTcTR0Y2psbHQ4UQ&q=https%3A%2F%2Faka.ms%2Fmysql)
-- [Azure Database for MySQL documentation](https://www.youtube.com/redirect?event=playlist_description&redir_token=QUFFLUhqbVhMZjIxYnNuSElpNGhCOWNIaG9MMjlTamtHd3xBQ3Jtc0tuTC1BRm5zUGVoWV9wbjk5Ujkya3ZyLTVWUWVnZU9EQ2YxREZMRTVGd1d0U3paWnpWcGtQc0V1ellOYXRiNFVlRUpYN0V3c0k5eFBoQTAyQ0x6Y2JFRDBGa0VIOEw4UWxHNFBaVkVvRzJ6NnhMVWMyWQ&q=https%3A%2F%2Faka.ms%2Fmysqldocs)
-- [Azure Database for MySQL Blog](https://www.youtube.com/redirect?event=playlist_description&redir_token=QUFFLUhqa1pPWjZrOFNwNXBUOU5idnV1cWFraTFNZko0QXxBQ3Jtc0tsX0pxUk0wTXZ3MzlGWmhSalE5UXNzWXVPNFcxY3dlQWs5OVlHcm1hTlpzZERFVWVYZXhOSS1Xd0pIUmVEemtyTExUcDNwVlF1aEJCWS1JWmNJM1VOVnVIaVF2N09oeDlzOWFQOFdJdmFabWR0cFBQTQ&q=https%3A%2F%2Faka.ms%2Fazure-db-mysql-blog)
-- [Use an Azure free account to try Azure Database for MySQL - Flexible Server for free]( https://docs.microsoft.com/azure/mysql/flexible-server/how-to-deploy-on-azure-free-account)
-
