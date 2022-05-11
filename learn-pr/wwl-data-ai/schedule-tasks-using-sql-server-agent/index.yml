@@ -3,7 +3,7 @@ uid: learn.wwl.schedule-tasks-using-sql-server-agent
 metadata:
   title: Create and manage SQL Agent jobs
   description: "Create and manage SQL Agent jobs"
-  ms.date: 05/10/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
