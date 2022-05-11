@@ -83,11 +83,11 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 2. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server" and select "Blazor Server App" and click "Next"
 
-	![Screenshot Visual Studio 2022 'Create New Project' screen and the Blazor Server template](../media/vs2022-create_new_project.png)
+	![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
 
 3. On the subsequent screen, name your project "BlazorApp" and specify a location on disk with settings like the following and then click 'Next':
 
-  ![Screenshot Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3](../media/vs2022-configure_project.png)  
+  ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
 4. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and click 'Create'
 
@@ -95,7 +95,7 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 	You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to the following:
 
-	![Visual Studio 2022 Solution Explorer with a list of the files in a default Blazor Server project](../media/vs2022-solution_explorer.png)
+	![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default Blazor Server project.](../media/visual-studio-2022-solution-explorer.png)
  
 ## Run the app
 
