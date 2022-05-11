@@ -33,6 +33,8 @@ roles:
 products:
   - azure-blob-storage
   - azure-data-lake-storage
+subjects:
+- storage
 units:
 - learn.azure.access-data-azure-blob-storage-multiple-protocols.1-introduction
 - learn.azure.access-data-azure-blob-storage-multiple-protocols.2-understand-object-storage-solutions
