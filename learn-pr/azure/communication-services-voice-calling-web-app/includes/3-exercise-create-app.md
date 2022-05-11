@@ -70,6 +70,6 @@ Now we'll add the required dependencies.
 
 1. Parcel will now compile and run your app.
 1. Once it completes, it will give you a link to see your app within the browser. This link is usually `http://localhost:1234/`:
-    :::image type="content" source="../media/3-parcel-response.png" alt-text="Parcel showing a complete build with a hyperlink pointing to the app.":::
+    :::image type="content" source="../media/3-parcel-response.png" alt-text="Screenshot of Parcel, showing a complete build with a hyperlink pointing to the app.":::
 1. Open this link in your browser and you should see your blank app in the browser:
-    :::image type="content" source="../media/3-blank-app.png" alt-text="Our blank web app showing in a browser.":::
+    :::image type="content" source="../media/3-blank-app.png" alt-text="Screenshot of our blank web app showing in a browser.":::

@@ -14,7 +14,7 @@ summary: "In this module, you'll create a basic web app that can be used for voi
 abstract: |
   By the end of this module, you'll be able to:
   - Create and configure an Azure Communication Services resource
-  - Setup a basic voice calling web application
+  - Set up a basic voice calling web application
   - Make a voice call to an echo bot using Azure Communication Services
   - Make a voice call to another user using Azure Communication Services
 prerequisites: |

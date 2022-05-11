@@ -54,7 +54,7 @@ So let's also add these buttons underneath the inputs from the previous step:
 ## Testing the HTML
 
 With the HTML entered, we've completed most the HTML for this app. If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app, you should see the following app in your browser:
-:::image type="content" source="../media/4-html-complete.png" alt-text="Our blank web app showing in a browser.":::
+:::image type="content" source="../media/4-html-complete.png" alt-text="Screenshot of our blank web app showing in a browser.":::
 
 This app may not look like a lot, but it's all we the visual elements we need to create a voice calling app. We're now done with the HTML of our app. The rest of the code will use JavaScript.
 
@@ -181,15 +181,15 @@ We're done, If you run the app with the same command as the previous unit: `npx 
 
 To test actually making a call, you'll need some credentials. You can obtain credentials from the Azure portal. Open your Azure Communication Services resource within the Azure portal and click the "Identities & User Access Tokens" button within the left hand menu:
 
-:::image type="content" source="../media/4-identities-menu-option.png" alt-text="Azure portal, showing the Identities & User Access Tokens menu option highlighted.":::
+:::image type="content" source="../media/4-identities-menu-option.png" alt-text="Screenshot of the Azure portal, showing the Identities & User Access Tokens menu option highlighted.":::
 
 On the page that appears, you can generate test credentials. For this app, we just need the "Voice and video calling (VOIP)" permission so check that option and press generate:
 
-:::image type="content" source="../media/4-generate-button.png" alt-text="Token generation window with VOIP option checked.":::
+:::image type="content" source="../media/4-generate-button.png" alt-text="Screenshot of the token generation window with VOIP option checked.":::
 
 You'll get a single Azure Communication Services identity, which is suitable for testing. Make sure to **copy the token and the ID** to somewhere safe for testing, such as a blank notepad document.
 
-:::image type="content" source="../media/4-test-credentials.png" alt-text="Token generation window with test credentials showing.":::
+:::image type="content" source="../media/4-test-credentials.png" alt-text="Screenshot of the token generation window with test credentials showing.":::
 
 If you'd like to try calling another user, then generate **an additional set of credentials**.
 
