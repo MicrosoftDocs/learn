@@ -27,7 +27,6 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
   - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
-  - database-developer
   - student
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
 - azure
