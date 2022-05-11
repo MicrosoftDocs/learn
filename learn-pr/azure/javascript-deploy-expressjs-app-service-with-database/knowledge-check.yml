@@ -55,7 +55,7 @@ quiz:
     choices:
       - content: "App settings"
         isCorrect: true
-        explanation: "Correct. Store the Cosmos DB connection string in an app settings."
+        explanation: "Correct. Store the Cosmos DB connection string in an app setting."
       - content: "Key Vault"
         isCorrect: false
         explanation: "Incorrect. Key Vault isn't stored in an App Service, but a reference, such as a Key Vault secret containing a connection string, can be stored in an app setting."

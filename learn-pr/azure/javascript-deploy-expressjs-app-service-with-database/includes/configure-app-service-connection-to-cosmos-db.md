@@ -1,6 +1,6 @@
 Use a connection string to connect your remote Azure App Service resource to your remote Azure Cosmos DB resource.
 
-## Connecting Azure resources
+## Connect to Azure resources
 
 There are several connection methods depending on which Azure resources you're using and which authentication you want to enforce, always refer to the documentation for the specific resources you would like to connect for the most up-to-date information.
 

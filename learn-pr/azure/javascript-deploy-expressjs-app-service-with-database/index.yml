@@ -35,12 +35,12 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 - azure-cosmos-db
 units:
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.introduction
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.setup
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-setup
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.set-up
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-set-up
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-local-database
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-local-database
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.setup-azure-resources
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-setup-azure-resources
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.set-up-azure-resources
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-set-up-azure-resources
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmos-db-resource
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-create-cosmos-db-resource
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.configure-app-service-connection-to-cosmos-db
