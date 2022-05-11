@@ -18,7 +18,7 @@ A DirectQuery model is a great framework choice when your source data exhibits v
 
 When a report queries a DirectQuery model, Power BI passes those queries to the underlying data source.
 
-![Diagram shows a star schema DirectQuery model. When a Power B I report queries the model, Power B I passes those queries to the underlying data source, in this case an Azure SQL Database.](../media/DP500-model-frameworks-directquery.png)
+![Diagram shows a star schema DirectQuery model. When a Power BI report queries the model, Power BI passes those queries to the underlying data source, in this case an Azure SQL Database.](../media/model-frameworks-direct-query.png)
 
 ### Enforce source RLS
 

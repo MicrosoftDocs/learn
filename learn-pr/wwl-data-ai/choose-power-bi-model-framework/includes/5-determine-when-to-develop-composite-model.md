@@ -1,6 +1,6 @@
 A composite model comprises more than one source group. Typically, there’s always the import source group and a DirectQuery source group.
 
-![Diagram shows a star schema composite model. The model stores imported data for some tables, and other tables pass-through queries to the underlying data source, in this case an Azure SQL Database.](../media/DP500-model-frameworks-composite.png)
+![Diagram shows a star schema composite model. The model stores imported data for some tables, and other tables pass-through queries to the underlying data source, in this case an Azure SQL Database.](../media/model-frameworks-composite.png)
 
 > [!NOTE]
 > Generally, the benefits and limitations associated with import and DirectQuery storage modes apply to composite models.
@@ -47,7 +47,7 @@ Slicer visuals and filter card lists, which are often based on dimension table c
 
 When you set up an import table with incremental refresh, you can enable the **Get the latest data in real-time with DirectQuery** option.
 
-![Image shows the incremental refresh and real-time data set up, and it highlights the Get the latest data in real-time with DirectQuery option.](../media/DP500-model-framwork-incremental-refresh.png)
+![Image shows the incremental refresh and real-time data set up, and it highlights the Get the latest data in real-time with DirectQuery option.](../media/model-framwork-incremental-refresh.png)
 
 By enabling this option, Power BI automatically creates a table partition that uses DirectQuery storage mode. In this case, the table becomes a hybrid table, meaning it has import partitions to store older data, and a single DirectQuery partition for current data.
 

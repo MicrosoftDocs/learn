@@ -40,7 +40,7 @@ An analytic query has three phases that are executed in this order:
 
 Consider an example: A Power BI report page includes a slicer to filter by a single year. There’s also a column chart visual that shows quarterly sales for the filtered year.
 
-![Image shows the Power B I report described in the previous paragraph.](../media/DP500-model-frameworks-analytic-query-example.png)
+![Image shows the Power BI report described in the previous paragraph.](../media/model-frameworks-analytic-query-example.png)
 
 In this example, the slicer **filters** the visual by calendar year 2021. The column chart **groups** by quarters (of the filtered year). Each column is a group that represents a visible filter. The column heights represent the **summarized** sales values for each quarter of the filtered year.
 
@@ -54,7 +54,7 @@ To produce an optimized and easy-to-use tabular model, we recommend you produce 
 
 Dimension tables describe business entities; the things you model. Entities can include products, people, places, and concepts including time itself. Fact tables store observations or events, and can be, for example, sales orders, stock balances, exchange rates, or temperature readings. A fact table contains dimension key columns that relate to dimension tables, and numeric measure columns. A fact table forms the center of a star, and the related dimension tables form the points of the star.
 
-![Image shows a star schema design with a fact table in the center and dimension tables forming the points of the star.](../media/DP500-model-frameworks-star-schema-design.png) 
+![Image shows a star schema design with a fact table in the center and dimension tables forming the points of the star.](../media/model-frameworks-star-schema-design.png) 
 
 In an analytic query, dimensions table columns filter or group. Fact table columns are summarized.
 

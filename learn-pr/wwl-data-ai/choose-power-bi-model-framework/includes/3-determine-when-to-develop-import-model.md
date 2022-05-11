@@ -12,7 +12,7 @@ Import models are the most frequently developed model framework because there ar
 
 In short, import models offer you the most options and design flexibility, and they deliver fast performance. For this reason, Power BI Desktop defaults to use import storage mode when you “Get data.”
 
-![Diagram shows a star schema import model that loads data from different data source types, including a relational database, an Excel workbook, a social media feed, and a Power BI dataflow.](../media/DP500-model-frameworks-import.png)
+![Diagram shows a star schema import model that loads data from different data source types, including a relational database, an Excel workbook, a social media feed, and a Power BI dataflow.](../media/model-frameworks-import.png)
 
 ## Import model limitations
 
