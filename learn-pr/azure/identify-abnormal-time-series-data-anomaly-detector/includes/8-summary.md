@@ -18,7 +18,7 @@ We used a remote device as our data source. However, given what you have learned
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Connecting real devices to IoT Hub](/azure/iot-hub/iot-hub-get-started-physical)
-* [SDKs to Send telemetry from IoT Plug & Play Device to Azure IoT Hub](https://docs.microsoft.com/azure/iot-develop/quickstart-send-telemetry-iot-hub)
+* [SDKs to Send telemetry from IoT Plug & Play Device to Azure IoT Hub](/azure/iot-develop/quickstart-send-telemetry-iot-hub)
 * [Deploy the Anomaly Detection container to the edge](/azure/cognitive-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge)
 * [Anomaly Detector SDKs](https://github.com/Azure-Samples/AnomalyDetector/tree/master/quickstarts)
 
