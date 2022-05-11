@@ -14,7 +14,7 @@ Using Cosmos DB has many benefits:
 * Compatible with several MongoDB server versions.
 * Continue to integrate MongoDB code with a connection string.
 
-:::image type="content" source="../media/cosmosdb-mongodb.png" alt-text="Diagram that shows Azure Cosmos DB's use of the MongoDB protocol to connect between a client and the database.":::
+:::image type="content" source="../media/cosmos-db-mongodb.png" alt-text="Diagram that shows Azure Cosmos D B's use of the MongoDB protocol to connect between a client and the database.":::
 
 ## Create a Cosmos DB resource
 
