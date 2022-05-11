@@ -1,7 +1,7 @@
 
 ## Using a custom model
 
-To extract form data using a custom model, use the [**Analyze Form**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeWithCustomForm) REST API function (or equivalent SDK method) with your custom model ID (generated during model training). This function starts the form analysis and returns a result ID, which you can pass in a subsequent call to the [**Get Analyze Form Result**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/GetAnalyzeFormResult) function to retrieve the results.
+To extract form data using a custom model, use the [**analyze document**](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-rest-api#analyze-documents-and-get-results) REST API function (or equivalent SDK method) with your custom model ID (generated during model training). This function starts the form analysis and returns a result ID, which you can pass in a subsequent call to the [**get analyze results**](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-rest-api#get-analyze-results-get-request) function to retrieve the results.
 
 The specific structure of the results depends on the fields in your forms. If you trained the model using unlabeled sample forms, the results are returned in a **pageResults** node. If you used labeled forms to train the model, the results are returned in the **documentResults** node. Both are shown below. 
 
@@ -45,7 +45,7 @@ The specific structure of the results depends on the fields in your forms. If yo
 
 ## Using a prebuilt model 
 
-To extract form data using a prebuilt model, use the **Analyze** REST API function (or [equivalent SDK method](/azure/cognitive-services/form-recognizer/quickstarts/client-library)).
+To extract form data using a prebuilt model, use the **analyze document** REST API function (or [equivalent SDK method](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-python-sdk)).
 
 - [**Analyze Receipt**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeReceiptAsync)
 - [**Analyze Business Card**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeBusinessCardAsync) 

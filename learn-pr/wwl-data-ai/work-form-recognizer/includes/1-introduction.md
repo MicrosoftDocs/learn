@@ -21,8 +21,8 @@ Form Recognizer services provide the building blocks for automation by using int
 
 **In this module, you'll learn how to**: 
 
-- Identify how Form Recognizer's Document analysis, prebuilt, and custom models can automate processes
+- Identify how Form Recognizer's document analysis, prebuilt, and custom models can automate processes
 - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs and REST API
-- Develop and test custom models 
+- Develop and test a custom Form Recognizer model 
 
 To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
