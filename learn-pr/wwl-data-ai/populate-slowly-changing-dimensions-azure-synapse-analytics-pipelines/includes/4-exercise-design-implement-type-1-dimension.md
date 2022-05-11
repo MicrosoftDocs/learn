@@ -63,7 +63,7 @@ For this exercise you want to load a dimension table in Azure Synapse from sourc
 
 ### Create a mapping data flow
 
-Mapping Data flows are pipeline activities that provide a visual way of specifying how to transform data, through a code-free experience.Next you will create a mapping data flow to create a Type 1 SCD.
+Mapping Data flows are pipeline activities that provide a visual way of specifying how to transform data, through a code-free experience. Next you will create a mapping data flow to create a Type 1 SCD.
 
 1. Navigate to the **Develop** hub.
 
