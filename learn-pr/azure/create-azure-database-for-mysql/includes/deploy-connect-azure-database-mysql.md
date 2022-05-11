@@ -30,7 +30,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 | **Admin username**           | <server_name>                      | Enter any  valid user name, which will be configured as the admin account for the MySQL  server instance. Do not use azure_superuser, admin, administrator, root,  guest, or public. |
 | **Password**                 | <server_name>                      | Enter any  valid password that is assigned to the admin account. It must contain between  8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0  through 9), and non-alphanumeric characters (such as !, $, #, %). |
 
-![The Flexible server tab of the Azure portal Flexible server deployment page displaying the project and server details of a new Azure Database for MySQL server.](media/4-deploy-mysql-basics_1.png)
+![The Flexible server tab of the Azure portal Flexible server deployment page displaying the project and server details of a new Azure Database for MySQL server.](../media/4-deploy-mysql-basics_1.png)
 
 6. On the **Basics** tab, select the **Configure server** link.
 
