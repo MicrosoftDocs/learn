@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-apps-with-azure-database-mysql.deploy-app-on-azure
+title: Deploy your applications and integrate with other Azure services
+metadata:
+  unitType: learning-content
+  title: Deploy your applications and integrate with other Azure services
+  description: Learn how to deploy your MySQL - Flexible Server applications on Azure App Service and Azure Kubernetes Service (AKS). We will then discuss the options for automating CI/CD tasks using Azure DevOps, GitHub and Azure Service Operator.
+  ms.date: 5/10/2022
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-deploy-app-on-azure.md)]

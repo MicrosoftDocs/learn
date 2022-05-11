@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-apps-with-azure-database-mysql.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge Check for Develop applications with Azure Database for MySQL - Flexible Server module.
+  ms.date: 5/10/2022
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""

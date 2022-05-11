@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.develop-apps-with-azure-database-mysql
+metadata:
+  moduleType: standard
+  title: Develop applications with Azure Database for MySQL - Flexible Server
+  description: Learn to create applications that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy applications faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps or GitHub.
+  ms.date: 5/10/2022
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Develop applications with Azure Database for MySQL - Flexible Server
+summary: Learn to create applications that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy applications faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps or GitHub.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Connect to and query Azure Database for MySQL from applications developed in the languages and frameworks of your choice.
+    - Choose a hosting option suitable for your MySQL application.
+    - Deploy your applications and integrate with Azure services like Azure App Service and Azure Kubernetes Service (AKS).
+    - Build a sample PHP (Laravel) app connecting to MySQL Flexible Server and deploy it on Azure App Service.
+    - Implement best practices for application development with Azure Database for MySQL.
+prerequisites: |
+  - An understanding of cloud computing and some experience with the Azure portal and CLI
+  - Basic familiarity with relational databases, the Azure Database for MySQL offering, and its features and concepts
+  - Basic knowledge of the PHP server scripting language
+iconUrl: http://via.placeholder.com/120x120
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - developer
+  - database-developer
+  - student
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+- azure
+- azure-database-mysql
+- azure-app-service
+units:
+- learn.develop-apps-with-azure-database-mysql.introduction
+- learn.develop-apps-with-azure-database-mysql.connect-to-mysql-from-app
+- learn.develop-apps-with-azure-database-mysql.choose-app-hosting-option
+- learn.develop-apps-with-azure-database-mysql.deploy-app-on-azure
+- learn.develop-apps-with-azure-database-mysql.exercise-app-service-mysql
+- learn.develop-apps-with-azure-database-mysql.implement-best-practices
+- learn.develop-apps-with-azure-database-mysql.knowledge-check
+- learn.develop-apps-with-azure-database-mysql.summary
+badge:
+  uid: learn.develop-apps-with-azure-database-mysql.badge
