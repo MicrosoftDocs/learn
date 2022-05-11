@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Geoffrey is a data modeler at Adventure Works who developed a DirectQuery model that connects to the data warehouse. To improve the query performance of higher-grain sales queries, Geoffrey added an import aggregation table.What else should Geoffrey do to improve query performance of the higher-grain queries?"
+  - content: "Geoffrey is a data modeler at Adventure Works who developed a DirectQuery model that connects to the data warehouse. To improve the query performance of higher-grain sales queries, Geoffrey added an import aggregation table.  What else should Geoffrey do to improve query performance of the higher-grain queries?"
     choices:
     - content: "Set related dimension tables as aggregation tables."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "Set related dimension tables to import storage mode."
       isCorrect: false
       explanation: "Incorrect. Setting the related dimension tables to import storage mode will allow Power BI to satisfy higher-grain queries entirely from cache. However, lower-grain queries will take longer to process because they can’t be satisfied entirely from the data source."
-  - content: "Breana is a data modeler at Adventure Works who developed a manufacturing model, which is an import model. Breana needs to ensure that manufacturing reports deliver real-time results.Which type of table should Breana create?"
+  - content: "Breana is a data modeler at Adventure Works who developed a manufacturing model, which is an import model. Breana needs to ensure that manufacturing reports deliver real-time results.  Which type of table should Breana create?"
     choices:
     - content: "Aggregation table."
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Partitioned table."
       isCorrect: false
       explanation: "Incorrect. A partitioned table allows refreshing an import table for specific time periods."
-  - content: "Mousef is a business analyst at Adventure Works who wants to create a new model by extending the sales dataset, which is delivered by IT. Mousef wants to add a new table of census population data sourced from a web page.Which model framework should Mousef use?"
+  - content: "Mousef is a business analyst at Adventure Works who wants to create a new model by extending the sales dataset, which is delivered by IT. Mousef wants to add a new table of census population data sourced from a web page.  Which model framework should Mousef use?"
     choices:
     - content: "Composite."
       isCorrect: true
