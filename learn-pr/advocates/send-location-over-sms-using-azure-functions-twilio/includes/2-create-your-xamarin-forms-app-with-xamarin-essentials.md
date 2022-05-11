@@ -52,7 +52,7 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 1. Select the **Install** button to install the NuGet package. You'll need to accept the license to continue.
 
-    :::image type="content" source="../media/2-add-essentials-nuget.png" alt-text="Screenshot that shows how to add the Xamarin.Essentials New Get package.":::
+    :::image type="content" source="../media/2-add-essentials-nuget.png" alt-text="Screenshot that shows how to add the Xamarin dot Essentials New Get package.":::
 
 ## Building and running the app
 

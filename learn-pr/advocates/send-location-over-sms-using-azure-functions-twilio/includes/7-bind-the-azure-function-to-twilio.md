@@ -161,7 +161,7 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
 1. Select the **Send Location** button. If the SMS message was sent successfully, you'll see a message in the Xamarin.Forms app saying, "Location sent successfully".
 
-    :::image type="content" source="../media/7-ui-location-sent.png" alt-text="Screenshot that shows the Xamarin.Forms app with the location sent.":::
+    :::image type="content" source="../media/7-ui-location-sent.png" alt-text="Screenshot that shows the Xamarin Forms app with the location sent.":::
 
 1. In the console logs for your function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they'll be logged out here.
 
@@ -169,7 +169,7 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
 1. Check your phone for a message. Follow the link in the message to see your location.
 
-    :::image type="content" source="../media/7-message-received.png" alt-text="Screenshot that shows SMS message received on a mobile phone.":::
+    :::image type="content" source="../media/7-message-received.png" alt-text="Screenshot that shows S M S message received on a mobile phone.":::
 
     > [!TIP]
     > The location you'll see is the location where the app is running, so will be near to the data center that the VM is running from. If this app was running on your local device then it would show your location.
