@@ -21,19 +21,19 @@ The OPENROWSET function includes more parameters that determine factors such as:
 > [!TIP]
 > You'll find the full syntax for the OPENROWSET function in the [Azure Synapse Analytics documentation](/azure/synapse-analytics/sql/develop-openrowset#syntax).
 
-The output from the OPENROWSET is a rowset to which an alias must be assigned. In the previous example, the alias **rows** is used to name the resulting rowset.
+The output from OPENROWSET is a rowset to which an alias must be assigned. In the previous example, the alias **rows** is used to name the resulting rowset.
 
 The **BULK** parameter includes the full URL to the location in the data lake containing the data files. This can be an individual file, or a folder with a wildcard expression to filter the file types that should be included. The **FORMAT** parameter specifies the type of data being queried. The example above reads delimited text from all .csv files in the **files** folder.
 
 > [!NOTE]
-> This example assumes that the user has access to the files in the underlying store, If the files are protected with a SAS key or custom identity, you would need to [setup server level credential for sql login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential).
+> This example assumes that the user has access to the files in the underlying store, If the files are protected with a SAS key or custom identity, you would need to [create a server-scoped credential](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential).
 
 As seen in the previous example, you can use wildcards in the **BULK** parameter to include or exclude files in the query. The following list shows a few examples of how this can be used:
 
 - `https://mydatalake.blob.core.windows.net/data/files/file1.csv`: Only include *file1.csv* in the *files* folder.
 - `https://mydatalake.blob.core.windows.net/data/files/file*.csv`: All .csv files in the *files* folder with names that start with "file".
 - `https://mydatalake.blob.core.windows.net/data/files/*`: All files in the *files* folder.
-- `https://mydatalake.blob.core.windows.net/data/files/**`: All files in the *files* folder recursively its subfolders.
+- `https://mydatalake.blob.core.windows.net/data/files/**`: All files in the *files* folder, and recursively its subfolders.
 
 You can also specify multiple file paths in the **BULK** parameter, separating each path with a comma.
 
