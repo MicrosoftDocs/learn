@@ -31,9 +31,9 @@ To be able to send SMS messages from an Azure Function, you'll need a Twilio acc
 
 ## Launch Visual Studio
 
-For this module, you'll develop the mobile app and Azure Functions app using Visual Studio 2022. Although Xamarin.Forms apps can be built to run on iOS, Android, and Universal Windows Platform (UWP), this module will just focus on UWP.
+For this module, you'll develop the mobile app and Azure Functions app using Visual Studio. Although Xamarin.Forms apps can be built to run on iOS, Android, and Universal Windows Platform (UWP), this module will just focus on UWP.
 
-Launch Visual Studio 2022 on your system.
+Launch Visual Studio on your system.
 
 ## Summary
 

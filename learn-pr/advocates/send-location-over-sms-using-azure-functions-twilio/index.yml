@@ -21,7 +21,7 @@ abstract:  |
   - Bind the Azure Functions to Twilio to send an SMS message
   - Publish an Azure Functions app to Azure
 prerequisites: | 
-  - Visual Studio 2022
+  - Visual Studio 2019 or later
   - A free Twilio account 
   - [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
