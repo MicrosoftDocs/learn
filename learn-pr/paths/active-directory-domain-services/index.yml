@@ -25,6 +25,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- identity-access
 modules:
 - learn.wwl.introduction-to-ad-ds
 - learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles

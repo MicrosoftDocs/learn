@@ -3,18 +3,18 @@ uid: learn.wwl.describe-resource-governance-capabilities-azure
 metadata:
   title: Describe resource governance capabilities in Azure
   description: "Describe resource governance capabilities in Azure"
-  ms.date: 04/26/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe resource governance capabilities in Azure
-summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Azure Purview help organizations govern their resources and applications.
+summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Microsoft Purview help organizations govern their resources and applications.
 abstract: |
   After completing this module, you'll be able to:
   - Describe Azure Policy.
   - Describe Azure Blueprints
-  - Describe Azure Purview
+  - Describe Microsoft Purview
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
