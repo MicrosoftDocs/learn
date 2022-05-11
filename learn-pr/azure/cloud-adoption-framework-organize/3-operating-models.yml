@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-organize.operating-models
+title: Operating models
+metadata:
+  unitType: learning-content
+  title: Operating models
+  description: The pros and cons of using a Central IT operating model versus a Cloud Center of Excellence model.
+  ms.date: 05/10/2022
+  author: BrianBlanchard
+  ms.author: brblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-operating-models.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What are some reasons you would stick with central IT?
+    choices:
+    - content: You prefer control over agility and speed.
+      isCorrect: true
+      explanation: Correct. A Central IT model generally provides more control over your IT environment.
+    - content: You prefer agility and speed over centralized control.
+      isCorrect: false
+      explanation: Incorrect. This is better suited to a CCoE model.
+    - content: You want to build a modern IT organization through agile approaches to capture and implement business requirements.
+      isCorrect: false
+      explanation: Incorrect. This is better suited to a CCoE model.
+    - content: You want to adopt new technologies quickly.
+      isCorrect: false
+      explanation: Incorrect. This is better suited to a CCoE model.
+  - content: What are some of the reasons you would transition to the Cloud Center of Excellence model?
+    choices:
+    - content: You need to meet strict industry standards for compliance.
+      isCorrect: false
+      explanation: Incorrect. This is better suited to a Central IT model.
+    - content: You prefer control over agility and speed.
+      isCorrect: false
+      explanation: Incorrect. This is better suited to a Central IT model.
+    - content: You want to build a modern IT organization through agile approaches to capture and implement business requirements.
+      isCorrect: true
+      explanation: Correct. A CCoE model generally allows for more agility and speed.
