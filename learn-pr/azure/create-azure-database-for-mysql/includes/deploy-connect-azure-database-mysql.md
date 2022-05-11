@@ -48,7 +48,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 8. On the **Compute + Storage** page, select **Save**.
 
-    :::image type="content" source="../media/4-deploy-mysql-compute_storage.png" alt-text="Use the Compute + storage page to configure the compute, storage, high availability, and backups settings for a new Azure Database for MySQL server." border="false":::
+![Use the Compute + storage page to configure the compute, storage, high availability, and backups settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-compute_storage.png)
 
 9. On the **Basics** tab of the **Flexible server** page, select **Next: Networking >**.
 
@@ -60,7 +60,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
     1. Select the **+ Add current client IP address** link.
 
-    :::image type="content" source="../media/4-deploy-mysql-networking.png" alt-text="From the Networking tab you can configure the networking settings for a new Azure Database for MySQL server." border="false":::
+    ![From the Networking tab you can configure the networking settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-networking.png)
 
 11. On the **Networking** tab of the **Flexible server** page, select **Review + create**.
 
@@ -98,12 +98,15 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
 
 7. In the Cloud Shell pane, run the following command to download the public certificate used by the server:
 
+ ```
  wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
+ ```
 
 8. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server, and the <user_name> placeholder with the name of the admin account you specified when provisioning the server in the previous task:
 
+ ```
  mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
-
+ ```
 9. When prompted, enter the password that you assigned to the admin account you specified when provisioning the server in the previous task.
 
  > [!NOTE]
