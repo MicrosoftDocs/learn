@@ -2,14 +2,14 @@
 uid: learn.configure-dependabot-security-updates-on-github-repo.dependabot-security-updates
 title: Dependabot security updates
 metadata:
-  unitType:  Dependabot security updates
-  title: Dependabot security updates # user input: module title for browser tab and search results
-  description: Dependabot security updates help you to fix the vulnerabilities identified by Dependabot alerts and keep track of different versions of dependent packages. # user input: a description for site search and SEO
+  unitType: learning-content
+  title: Dependabot security updates
+  description: Dependabot security updates help you fix the vulnerabilities identified by Dependabot alerts and keep track of different versions of dependent packages.
   ms.date: 1/5/2022
   author: sterling463
   ms.author: csterling 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3 # user input: the estimate time to complete the unit
+durationInMinutes: 3
 content: |
   [!include[](includes/4-dependabot-security-updates.md)]
