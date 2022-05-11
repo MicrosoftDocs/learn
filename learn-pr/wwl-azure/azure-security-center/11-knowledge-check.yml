@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/03/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -17,55 +17,44 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of following is not included in the Security Center free tier?"
+  - content: "Which of the following is not included in the Microsoft Defender for Cloud free tier?"
     choices:
     - content: "Monitor IoT hubs and resources"
       isCorrect: false
-      explanation: "You can monitor IoT hubs with Security Center free tier."
+      explanation: "You can monitor IoT hubs with Microsoft Defender for Cloud free tier."
     - content: "Monitor network access and endpoint security"
       isCorrect: false
-      explanation: "Verifying endpoint and network access is part of Security Center free tier."
+      explanation: "Verifying endpoint and network access is part of Microsoft Defender for Cloud free tier."
     - content: "Monitor non-Azure resources"
       isCorrect: true
-      explanation: "Monitor non-Azure resources. The Security Center free tier does not support monitoring external cloud or non-Azure resources, JIT VM access, regulatory compliance reports, adaptive network hardening recommendations, and several other features."
+      explanation: "Monitor non-Azure resources. The Microsoft Defender for Cloud free tier does not support monitoring external cloud or non-Azure resources, JIT VM access, regulatory compliance reports, adaptive network hardening recommendations, and several other features."
   - content: "An organization compliance group requires client authentication use Azure AD, and Key Vault diagnostic logs to be enabled. What is the easiest way to accomplish this?"
     choices:
     - content: "Configure management groups"
       isCorrect: false
       explanation: "A management group is not a good choice for this requirement."
-    - content: "Implement Security Center policies"
+    - content: "Implement Microsoft Defender for Cloud policies"
       isCorrect: true
-      explanation: "Implement Security Center policies. Security Center can monitor policy compliance across all your subscriptions using a default set of security policies. A security policy defines the set of controls that are recommended for resources within the specified subscription or resource group."
+      explanation: "Implement Microsoft Defender for Cloud policies. Microsoft Defender for Cloud can monitor policy compliance across all your subscriptions using a default set of security policies. A security policy defines the set of controls that are recommended for resources within the specified subscription or resource group."
     - content: "Create Desired Configuration State scripts"
       isCorrect: false
       explanation: "Desired state scripts are not the easiest way to accomplish this task."
-  - content: "The Azure Security Center dashboard presents a Secure Score. What is the description of secure score?"
-    choices:
-    - content: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources."
-      isCorrect: true
-      explanation: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources. Security Center reviews your security recommendations across all workloads, uses algorithms to determine how critical each recommendation is, and calculates a Secure Score which is displayed on the Overview page."
-    - content: "The Secure Score is a count of recommendations made against your monitored resources."
-      isCorrect: false
-      explanation: "There is way more to secure score than just a count of recommendations."
-    - content: "The Secure Score is a machine-learning based prediction of how likely your resources are to be infiltrated by a hacker."
-      isCorrect: false
-      explanation: "Secure Score is not a track of how likely a success hacker attack will be."
   - content: "An organization is working with an outside agency that needs to access a virtual machine. There is a real concern about brute-force login attacks targeted at virtual machine management ports. Which of the following can be used to open the management ports for a defined time range? Select one."
     choices:
     - content: "Azure Firewall"
       isCorrect: false
-      explanation: "A firewall would not block the brute force attack, it using a valid port."
+      explanation: "A firewall would not block the brute force attack, if using a valid port."
     - content: "Bastion service"
       isCorrect: false
       explanation: "Bastion is not the right choice for blocking brute force attacks on a VM."
     - content: "Just-in-Time virtual machine access"
       isCorrect: true
-      explanation: "Just-in-Time VM access. Azure Security Center supports Just-in-time (JIT) virtual machine (VM) access. When just-in-time access is enabled, Security Center uses network security group (NSG) rules to restrict access to management ports when they are not in use so they cannot be targeted by attackers. Protected ports are the SSH and RDP ports."
-  - content: "When using Azure Security Center (ASC) to provide visibility into virtual machine security settings, the monitoring system can be set up to notify administrators when issues are discovered. Which issue below would need a different monitoring tool to discover it?"
+      explanation: "Just-in-Time VM access. Microsoft Defender for Cloud supports Just-in-time (JIT) virtual machine (VM) access. When just-in-time access is enabled, Security Center uses network security group (NSG) rules to restrict access to management ports when they are not in use so they cannot be targeted by attackers. Protected ports are the SSH and RDP ports."
+  - content: "When using Microsoft Defender for Cloud to provide visibility into virtual machine security settings, the monitoring system can be set up to notify administrators when issues are discovered. Which issue below would need a different monitoring tool to discover it?"
     choices:
     - content: "A newer operating system version is available."
       isCorrect: true
-      explanation: "A newer operating system version is available. Azure Security Center does not look to see when a new OS is released. ASC examines OS-level settings using a monitor service that it installs into each Windows and Linux VM. In addition to the choices above, ASC can provide a vulnerability assessment with remediation recommendations."
+      explanation: "A newer operating system version is available. Microsoft Defender for Cloud does not look to see when a new OS is released. Microsoft Defender for Cloud examines OS-level settings using a monitor service that it installs into each Windows and Linux VM. In addition to the choices above, Microsoft Defender for Cloud can provide a vulnerability assessment with remediation recommendations."
     - content: "System security updates and critical updates that are missing."
       isCorrect: false
       explanation: "Tracking critical updates is an available notification."

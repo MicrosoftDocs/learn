@@ -17,7 +17,7 @@ Each recommendation provides you with:
 
 Security Center analyzes the security state of your resources to identify potential vulnerabilities. The Recommendations tile under Overview shows the total number of recommendations identified by Security Center.
 
-:::image type="content" source="../media/az500-security-center-recommendations-c252bd9c.png" alt-text="ASC security recommendations blade is displayed.":::
+:::image type="content" source="../media/az500-security-center-recommendations-c252bd9c.png" alt-text="Microsoft Defender for Cloud recommendations blade is displayed.":::
 
 
 Recommendations can be filtered. The Filter blade opens and you select the severity and state values you wish to display.
