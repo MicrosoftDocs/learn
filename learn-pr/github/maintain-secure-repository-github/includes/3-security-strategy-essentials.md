@@ -6,7 +6,7 @@ Here are some helpful tips before you begin the exercise:
 
 - Read the **About this exercise** section in the exercise's repository README to understand how the exercise works.
 - Follow the steps provided in the **Instructions** section to successfully complete the exercise.
-- To see the results of your exercise, navigate to the the **Actions** tab of your cloned repository and click the most recent run on the **Grading** workflow.
+- To see the results of your exercise, navigate to the **Actions** tab of your cloned repository and click the most recent run on the **Grading** workflow.
 - Stuck on what to do? Revisit the content in the last unit or check out the **Useful resources** section in the exercise's repository README for some additional resources.
 
 >[!Note]
