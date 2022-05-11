@@ -54,6 +54,7 @@ The last step is to add a route to Azure Firewall on the route table. After you 
 
     :::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
 1. Select **+ Add**. 
+
     :::image type="content" source="../media/7-add-route.png" alt-text="Screenshot that shows the information to include when adding a route.":::
 1. Enter the following values:
 
