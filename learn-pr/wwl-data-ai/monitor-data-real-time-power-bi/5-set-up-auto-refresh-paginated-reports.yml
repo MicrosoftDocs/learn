@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-data-real-time-power-bi.set-up-auto-refresh-paginated-reports
+title: Set-up auto-refresh paginated reports
+metadata:
+  title: Set-up auto-refresh paginated reports
+  description: "Set-up auto-refresh paginated reports"
+  ms.date: 05/11/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-set-up-auto-refresh-paginated-reports.md)]

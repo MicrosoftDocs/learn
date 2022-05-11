@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-data-real-time-power-bi.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/11/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Gladys is a developer at Adventure Works who needs to create a real-time Power BI solution to monitor their call center. When there are excessive numbers of callers waiting on hold, Power BI should notify the call center manager.What type of Power BI artifact should Gladys develop?"
+    choices:
+    - content: "Dashboard."
+      isCorrect: true
+      explanation: "Correct. The call center manage can create an alert based on a dashboard tile."
+    - content: "Power BI report."
+      isCorrect: false
+      explanation: "Incorrect. Power BI reports don’t support alerting."
+    - content: "Streaming dataflow."
+      isCorrect: false
+      explanation: "Incorrect. Streaming datasets don’t support alerting."
+  - content: "Benny is a report author at Adventure Works who needs to set up a Power BI report page to show real-time manufacturing data with latency of 5 minutes. The report connects to a dataset that represents a DirectQuery model. Because the DirectQuery source is an operational system, it should be queried only when necessary.What should Benny do?"
+    choices:
+    - content: "Set the `AutoRefresh` property to a value greater than zero."
+      isCorrect: false
+      explanation: "Incorrect. Power BI reports don’t have an `AutoRefresh` property. It's a property of a paginated report."
+    - content: "Enable automatic page fresh with a change detection measure."
+      isCorrect: true
+      explanation: "Correct. Automatic page refresh is the appropriate setting, and using a change detection measure will reduce the burden placed on the DirectQuery data source."
+    - content: "Set up incremental refresh for the dataset and enable the DirectQuery partition."
+      isCorrect: false
+      explanation: "Incorrect. Incremental refresh isn’t possible for a DirectQuery table."
+  - content: "Fiafia is a developer at Adventure Works who is needs to deliver a real-time Power BI dashboard. It should present real-time manufacturing data with the lowest possible latency. The dashboard only shows manufacturing events for the past hour. The solution should use the minimum of Power BI resources.What type of dataset should Fiafia develop?"
+    choices:
+    - content: "DirectQuery dataset."
+      isCorrect: false
+      explanation: "Incorrect. A DirectQuery dataset would result in a latency of 15 minutes at best."
+    - content: "Push dataset."
+      isCorrect: false
+      explanation: "Incorrect. A push dataset would result in a latency of 3-5 seconds, but a push dataset could achieve lower latency"
+    - content: "Streaming dataset."
+      isCorrect: true
+      explanation: "Correct. A streaming dataset would result in the lowest latency of about one second."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-data-real-time-power-bi.set-up-automatic-page-refresh
+title: Set up automatic page refresh
+metadata:
+  title: Set up automatic page refresh
+  description: "Set up automatic page refresh"
+  ms.date: 05/11/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-set-up-automatic-page-refresh.md)]

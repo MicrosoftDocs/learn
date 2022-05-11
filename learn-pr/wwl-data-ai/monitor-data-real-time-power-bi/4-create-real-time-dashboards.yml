@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-data-real-time-power-bi.create-real-time-dashboards
+title: Create real-time dashboards
+metadata:
+  title: Create real-time dashboards
+  description: "Create real-time dashboards"
+  ms.date: 05/11/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-create-real-time-dashboards.md)]

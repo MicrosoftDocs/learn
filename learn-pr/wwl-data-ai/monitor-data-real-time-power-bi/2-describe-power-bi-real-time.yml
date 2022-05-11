@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-data-real-time-power-bi.describe-power-bi-real-time
+title: Describe Power BI real-time analytics
+metadata:
+  title: Demo-Introduction
+  description: "Describe Power BI real-time analytics"
+  ms.date: 05/11/2022
+  author: wwlpublish
+  ms.author: benjiang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-describe-power-bi-real-time.md)]
