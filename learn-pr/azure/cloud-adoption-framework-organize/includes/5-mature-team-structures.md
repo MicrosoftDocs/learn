@@ -1,5 +1,9 @@
 All cloud functions are provided by someone during every cloud adoption effort. These assignments and team structures can develop organically, or they can be intentionally designed to match a defined team structure. It’s important for cloud implementation teams to understand team structures, where they are today, and where they wish to end up. Again, this type of change takes time, experimentation, and negotiation. There will be bumps and setbacks during the process. Getting there will be a journey.
 
+Watch this video to get an overview of common team structures at various stages of organizational maturity.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wvTS]
+
 The following graphic outlines those structures based on typical maturation stages. Use these examples to find the organizational structure that best aligns with your operational needs.
 
 :::image type="content" source="../media/organizational-maturity.png" alt-text="Diagram illustrating team structures at various stages of organizational maturity." border="false" :::

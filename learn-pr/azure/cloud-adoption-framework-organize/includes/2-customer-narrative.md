@@ -2,7 +2,7 @@ In earlier Microsoft Learn modules for the Cloud Adoption Framework, we shared t
 
 The Tailwind Traders IT team continues to move away from its on-premises data centers toward the cloud. When IT was largely contained within its own data center, the IT team focused on enforcing control. Because a data center is only as smart as what you invest into it, automation typically occurred only at rudimentary levels. A significant amount of human action was therefore required to create controls and maintain the central responsibility structure.
 
-:::image type="content" source="../media/paradigm-shift.png" alt-text="Image contrasting central responsibility and delegated responsibility." border="false":::
+:::image type="content" source="../media/paradigm-shift.png" alt-text="Illustration contrasting central responsibility and delegated responsibility." border="false":::
 
 In the image above, workloads are represented by cars. Cars traveling over the roads require traffic lights and human beings to direct them. While this way of working makes sense in an on-premises data center world, some companies continue this way of doing things when they move to the cloud.  
 
