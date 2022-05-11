@@ -35,6 +35,8 @@ roles:
 - technology-manager 
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.azure.cloud-adoption-framework-getting-started
 - learn.cloud-adoption-framework-strategy

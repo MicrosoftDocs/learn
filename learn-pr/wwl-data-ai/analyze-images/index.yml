@@ -29,6 +29,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-computer-vision
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.analyze-images.introduction
 - learn.wwl.analyze-images.provision-computer-vision-resource
