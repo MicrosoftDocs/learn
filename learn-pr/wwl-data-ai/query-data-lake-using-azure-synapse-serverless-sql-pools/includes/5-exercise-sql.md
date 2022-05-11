@@ -5,4 +5,4 @@ Now it's your opportunity to try using a serverless SQL pool for yourself. In th
 
 Launch the exercise and follow the instructions.
 
-[![Launch exercise](../media/launch-exercise.png)](https://aka.ms/mslearn-synapse-sql?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-synapse-sql?azure-portal=true)
