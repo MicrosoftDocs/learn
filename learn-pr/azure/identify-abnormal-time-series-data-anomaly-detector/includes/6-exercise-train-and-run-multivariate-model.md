@@ -245,3 +245,5 @@ if __name__ == '__main__':
     # Export model
     sample.export_model(MODEL_ID, "energy_model.zip")
 ```
+
+Excellent! You have now trained a model and exported it to a zip file. You can now use the model to detect anomalies in your data.  In the next unit, you'll visualize the results of the detection and see root causes of the anomalies.
