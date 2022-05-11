@@ -8,7 +8,7 @@ A composite model, however, can comprise tables using different storage modes (i
 
 Here's an example of a composite model.
 
-![Image shows an example of a composite model consisting of two source groups. The image is described in the following paragraph.](../media/DP500-multiple-source-groups.png)
+![Image shows an example of a composite model consisting of two source groups. The image is described in the following paragraph.](../media/multiple-source-groups.png)
 
 In this example, the composite model consists of two source groups: a Vertipaq source group and a DirectQuery source group. The Vertipaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the Vertipaq source group to a table in the DirectQuery source group.
 
@@ -18,9 +18,7 @@ A model relationship is regular when the query engine can determine the "one" si
 
 In the following example, there are two regular relationships, both marked as **R**. Relationships include the one-to-many relationship contained within the Vertipaq source group, and the one-to-many relationship contained within the DirectQuery source group.
 
-<IMAGE: DP500-multiple-source-groups-regular.png | Alt text: Image shows an example of a composite model consisting of two source groups with regular relationships marked.>
-
-![Image shows an example of a composite model consisting of two source groups with regular relationships marked.](../media/DP500-multiple-source-groups-regular.png)
+![Image shows an example of a composite model consisting of two source groups with regular relationships marked.](../media/multiple-source-groups-regular.png)
 
 For import models, where all data is stored in the Vertipaq cache, Power BI creates a data structure for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
@@ -37,7 +35,7 @@ Blank virtual rows are effectively unknown members. Unknown members represent re
 
 Here’s how table expansion works with an animated example.
 
-![Animated image shows how table expansion works. The details are described in the following paragraph.](../media/DP500-model-relationship-table-expansion.gif)
+![Animated image shows how table expansion works. The details are described in the following paragraph.](../media/model-relationship-table-expansion.gif)
 
 In this example, the model consists of three tables: **Category**, **Product**, and **Sales**. The **Category** table relates to the **Product** table with a one-to-many relationship, and the **Product** table relates to the **Sales** table with a one-to-many relationship. The **Category** table contains two rows, the **Product** table contains three rows, and the **Sales** tables contains five rows. 
 
@@ -53,7 +51,7 @@ A model relationship is limited when there's no guaranteed "one" side. A limited
 
 In the following example, there are two limited relationships, both marked as **L**. The two relationships include the many-to-many relationship contained within the Vertipaq source group, and the one-to-many cross source group relationship.
 
-![Image shows an example of a composite model consisting of two source groups with limited relationships marked.](../media/DP500-multiple-source-groups-limited.png)
+![Image shows an example of a composite model consisting of two source groups with limited relationships marked.](../media/multiple-source-groups-limited.png)
 
 For import models, data structures are never created for limited relationships. In that case, Power BI resolves table joins at query time.
 

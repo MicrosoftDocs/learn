@@ -7,7 +7,7 @@ Relationship paths are deterministic, meaning that filters are always propagated
 
 Here's how relationships propagate filters with an animated example.
 
-![Animated image shows how relationship filter propagation as described in the following two paragraphs.](../media/DP500-model-relationship-propagation.gif)
+![Animated image shows how relationship filter propagation as described in the following two paragraphs.](../media/model-relationship-propagation.gif)
 
 In this example, the model consists of four tables: **Category**, **Product**, **Year**, and **Sales**. The **Category** table relates to the **Product** table, and the **Product** table relates to the **Sales** table. The **Year** table also relates to the **Sales** table. All relationships are one-to-many (the details of which are described in the next unit).
 
@@ -19,7 +19,7 @@ We recommend you apply [star schema](/power-bi/guidance/star-schema) design prin
 
 The following image is the model diagram of the Adventure Works sales analysis data model. It shows a star schema design comprising a single fact table named **Sales**. The other four tables are dimension tables that support the analysis of sales measures by date, state, region, and product. Notice the model relationships connecting all tables. These relationships propagate filters (directly or indirectly) to the **Sales** table.
 
-![Image shows a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.](../media/DP500-model-diagram-star-schema.png)
+![Image shows a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.](../media/model-diagram-star-schema.png)
 
 ## Use disconnected tables
 
