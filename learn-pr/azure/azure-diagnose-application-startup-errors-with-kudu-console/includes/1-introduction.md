@@ -1,18 +1,18 @@
-You are an IT admin supporting a leading hotel and resort company using Azure web apps. The hospitality group is rolling out a new service to its gold tier members to support digital room selection.  This service web page however returns an application process failure message. 
+You're an IT admin who deploys and supports web apps in Azure for a leading hotel and resort company. The hospitality group at the company is rolling out a new service for its gold-tier members to support digital room selection. The webpage that members use to access the service, however, returns an application startup error. 
 
-In this module, you'll learn how to diagnose the app startup issue by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you'll use the Kudu diagnostic console to identify the issue.
+In this module, you'll use the Kudu diagnostic console to identify the issue and then diagnose the app issue by examining the application event log in the Azure portal.
 
-This module will help you to diagnose startup issues on an ASP.NET Core app using Azure App Service's diagnostic tool.
+This module helps you diagnose startup issues in an ASP.NET Core app by using Azure App Service diagnostic tools and the Kudu console.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Learn about the concepts of Kudu console
-- Learn various types of App startup errors  
-- Use Kudu console to examine the application event log
+- Learn how to use the Kudu console.
+- Learn about various types of application startup errors.  
+- Use the Kudu console and the Azure portal to examine an application event log.
 
 ## Prerequisites
 
-- Experience in basic web app development and deployment
-- Experience with App Service in Microsoft Azure
+- Experience in basic web app development and deployment.
+- Knowledge of how to use web apps in Azure App Service.
