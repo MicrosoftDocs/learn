@@ -14,4 +14,4 @@ In this module, you will:
 ## Prerequisites
 
 - Basic understand of identity management
-- Some experience with Active Directory a plus
+- Some experience with Active Directory a plus 
