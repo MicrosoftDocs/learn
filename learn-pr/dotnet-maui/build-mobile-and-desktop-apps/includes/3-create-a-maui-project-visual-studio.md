@@ -9,7 +9,7 @@ To create a new .NET MAUI project with Visual Studio, in the **Create a new proj
 
 :::image type="content" source="../media/3-create-maui-app.png" alt-text="A screenshot of the Create a new project dialog box in Visual Studio. The user has selected the .NET MAUI App template.":::
 
-Follow the steps in the wizard to name the project **MyMauiApp** and specify a location.
+Follow the steps in the wizard to name the project and specify a location.
 
 A newly created .NET MAUI project contains the items as shown:
 
