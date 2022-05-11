@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-your-cost-azure-blob-storage.azure-blob-storage-pricing-considerations
+title: Describe Azure Blob Storage pricing considerations 
+metadata:
+  title: Describe Azure Blob Storage pricing considerations
+  description: Describe Azure Blob Storage pricing considerations.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/azure-blob-storage-pricing-considerations.md)]

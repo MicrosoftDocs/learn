@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.azure.manage-azure-stack-hci-volumes.plan-volumes
+title: Plan volumes
+metadata:
+  title: Plan volumes
+  description: Plan for an optimal volume configuration that reflects your Azure Stack HCI workload requirements.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/plan-volumes.md)]
