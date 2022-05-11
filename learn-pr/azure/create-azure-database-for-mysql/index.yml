@@ -33,7 +33,6 @@ roles:
 - student
 
 products:
-- azure-database-for-mysql
 
 units:
 - learn-pr.azure.create-azure-database-for-mysql.introduction
