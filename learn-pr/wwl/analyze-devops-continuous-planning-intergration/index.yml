@@ -35,6 +35,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- devops
 units:
 - learn.wwl.analyze-devops-continuous-planning-intergration.introduction
 - learn.wwl.analyze-devops-continuous-planning-intergration.explore-continuous-planning
