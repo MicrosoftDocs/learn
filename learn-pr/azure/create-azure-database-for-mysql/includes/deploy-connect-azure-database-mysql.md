@@ -36,15 +36,15 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 7. On the **Compute + Storage** page, configure the following settings, and then select **Save**:
 
-   1. From the **Compute** **size** drop-down list, select **Standard_B1s (1 vCore, 1 GiB memory, 400 max iops)**.
+   a. From the **Compute** **size** drop-down list, select **Standard_B1s (1 vCore, 1 GiB memory, 400 max iops)**.
 
-   1. Leave the **Storage size (in GB)** set to **20**.
+   b. Leave the **Storage size (in GB)** set to **20**.
 
-   1. Leave the value of **IOPS** set to **360**.
+   c. Leave the value of **IOPS** set to **360**.
 
-   1. Ensure that the **Backup retention period (in days)** is set to **7**.
+   d. Ensure that the **Backup retention period (in days)** is set to **7**.
 
-   1. Clear the **Recover from regional outage or disaster** checkbox.
+   e. Clear the **Recover from regional outage or disaster** checkbox.
 
 8. On the **Compute + Storage** page, select **Save**.
 
@@ -54,11 +54,11 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 10. On the **Networking** tab of the **Flexible server** page, configure the following settings:
 
-    1. Ensure that **Connectivity method** is set to **Public access (allowed IP address)**.
+    a. Ensure that **Connectivity method** is set to **Public access (allowed IP address)**.
 
-    1. Select the **Allow public access from any Azure service within Azure to this server** checkbox.
+    b. Select the **Allow public access from any Azure service within Azure to this server** checkbox.
 
-    1. Select the **+ Add current client IP address** link.
+    c. Select the **+ Add current client IP address** link.
 
     ![From the Networking tab you can configure the networking settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-networking.png)
 
@@ -152,10 +152,10 @@ To delete the Azure Database for MySQL server resource you provisioned in this e
 
 1. Close the Azure Cloud Shell browser tab.
 
-1. In the Azure portal, on the page displaying the Azure Database for MySQL flexible server, in the vertical menu, select **Overview**.
+2. In the Azure portal, on the page displaying the Azure Database for MySQL flexible server, in the vertical menu, select **Overview**.
 
-2. On the **Overview** pane, next to the Resource group label, select the **mysql-RG** link.
+3. On the **Overview** pane, next to the Resource group label, select the **mysql-RG** link.
 
-3. On the **mysql-RG** page, select the **Delete resource group** toolbar entry.
+4. On the **mysql-RG** page, select the **Delete resource group** toolbar entry.
 
-4. When prompted to confirm, in the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
+5. When prompted to confirm, in the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
