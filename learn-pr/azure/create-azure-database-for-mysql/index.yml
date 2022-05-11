@@ -33,7 +33,7 @@ roles:
 - student
 
 products:
-- azure-stack-hci
+- azure-database-mysql
 
 units:
 - learn-pr.azure.create-azure-database-for-mysql.introduction
