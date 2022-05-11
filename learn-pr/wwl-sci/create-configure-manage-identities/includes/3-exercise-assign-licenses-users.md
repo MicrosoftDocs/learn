@@ -2,9 +2,9 @@
 
 You can skip creating this user if you have already created the same user in the earlier module.
 
-1.  Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
+1.  Browse to the Azure Active Directory page in the [Azure portal](https://portal.azure.com/).
 2.  In the left navigation, under **Manage**, select **Users**.
-3.  In the Users blade, on the menu, select **New user**.
+3.  Within the Users page, on the menu, select **New user**.
 4.  Create a user using the following information:
 
     | Setting    | Value       |
@@ -33,7 +33,7 @@ You can skip creating this user if you have already created the same user in the
     | Owners     | Assign your own administrator account as the group owner |
     | Members    | Chris Green |
     
-    :::image type="content" source="../media/create-group.png" alt-text="Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.":::
+    :::image type="content" source="../media/create-group.png" alt-text="Screenshot of the create new group page in Azure A D. The image displays the New Group page with Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
     
 5.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
@@ -46,7 +46,7 @@ You can skip creating this user if you have already created the same user in the
 5.  Under **Review license** options, review the available options for the license you have selected.
 
     > [!TIP]
-    > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.:::image type="content" source="../media/assign-license-group.png" alt-text="Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.":::
+    > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.:::image type="content" source="../media/assign-license-group.png" alt-text="Screenshot of the select license dialog. The image displays licenses selected and assigned to a group. The review license menu is also selected displaying multiple licenses being added to the group.":::
 
 6.  Select **Save**.
 

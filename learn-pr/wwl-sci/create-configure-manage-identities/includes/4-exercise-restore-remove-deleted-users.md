@@ -6,8 +6,7 @@
 
     > [!TIP]
     > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
-
-   :::image type="content" source="../media/remove-user.png" alt-text="Screen image displaying the All users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.":::
+    > :::image type="content" source="../media/remove-user.png" alt-text="Screenshot of Azure A D all users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.":::
 
 4.  With the user account selected, on the menu, select **Delete user**.
 5.  Review the dialog box and then select **OK**.

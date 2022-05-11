@@ -1,12 +1,12 @@
 ## Change group license assignment
 
-1.  Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
+1.  Browse to the Azure Active Directory page of the [Azure portal](https://portal.azure.com/).
 2.  In the left navigation, under **Manage**, select **Groups**.
 3.  Select one of the available groups. For example, Marketing.
 4.  In the left navigation, under **Manage**, select **Licenses**.
 5.  Review the current assignments and then, on the menu, select **+ Assignments**.
 
-    :::image type="content" source="../media/change-group-license.png" alt-text="Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted.":::
+    :::image type="content" source="../media/change-group-license.png" alt-text="Screenshot of the group license page in Azure A D. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
 
     > [!NOTE]
     > If you have no licenses to add, you may choose to sign up for an Office 365 or Microsoft 365 trial subscription.
@@ -29,19 +29,19 @@ When you're using group-based licensing the same errors can occur, but they happ
 
 1.  Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
 
-    :::image type="content" source="../media/group-error-notification.png" alt-text="Group and error notifications message.":::
+    :::image type="content" source="../media/group-error-notification.png" alt-text="Screenshot of the Group and error notifications message.  There is a yellow message bar at the top of screen announcing that two users in the group have license assignment errors.  There is an arrow to click to get more information.":::
 
 2.  Select the notification to open a list of all affected users. You can select each user individually to see more details.
 
-    :::image type="content" source="../media/list-of-users-with-errors.png" alt-text="list of users in group licensing error state.":::
+    :::image type="content" source="../media/list-of-users-with-errors.png" alt-text="Screenshot of the list of users in group licensing error state. This dialog was opened by clicking the more information arrow from the previous dialog. Conflicting service plan is listed as the most likely cause of the error.":::
 
 3.  To find all groups that contain at least one error, on the **Azure Active Directory** blade select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
 
-    :::image type="content" source="../media/group-errors-widget.png" alt-text="Overview and information about groups in error state.":::
+    :::image type="content" source="../media/group-errors-widget.png" alt-text="Screenshot of the Azure A D licenses Overview page.  This dialog shows information about licene and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
 
 4.  Select the box to see a list of all groups with errors. You can select each group for more details.
 
-    :::image type="content" source="../media/list-of-groups-with-errors.png" alt-text="Overview and list of groups with errors.":::
+    :::image type="content" source="../media/list-of-groups-with-errors.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog. The is one error listed for Office 365 E1.":::
 
 The following sections give descriptions of each potential problem and the way to resolve it.
 
@@ -195,16 +195,16 @@ Here is what the migration process could look like:
     
     - This is the expected user state during migration:
 
-    :::image type="content" source="../media/expected-user-state.png" alt-text="The expected user state during migration.":::
+      :::image type="content" source="../media/expected-user-state.png" alt-text="Screenshot of the Azure A D licenes page.  The Office 365 E3 license is highlighted with information that it Directly assigned to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
 
-    > [!NOTE]
-    > This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
-    > 
-    > Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.
+      > [!NOTE]
+      > This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
+      > 
+      > Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.
 
 4.  After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
 
-    :::image type="content" source="../media/direct-licenses-removed.png" alt-text="Confirm that direct licenses are removed.":::
+    :::image type="content" source="../media/direct-licenses-removed.png" alt-text="Screenshot of the Azure A D license page after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
 
 ## Change license assignments for a user or group in Azure Active Directory
 

@@ -1,4 +1,4 @@
-:::image type="content" source="../media/automatic-user-provisioning.png" alt-text="This picture if a flow diagram that shows you can have users in an on-premises or cloud human resource management system automatically provisioned as user accounts in Azure AD.  The Azure AD provisioning service can be called to create and manage the user and groups.":::
+:::image type="content" source="../media/automatic-user-provisioning.png" alt-text="Diagram of the process flow for auto user provisioning.  The flow shows you can have users in an on-premises or cloud human resource management system automatically provisioned as user accounts in Azure A D.  The Azure A D provisioning service can be called to create and manage the user and groups.":::
 
 ### Components of system SCIM (System for Cross-Domain Identity Management)
 - **HCM system** - Applications and technologies that enable Human Capital Management process and practices that support and automate HR processes throughout the employee lifecycle.
