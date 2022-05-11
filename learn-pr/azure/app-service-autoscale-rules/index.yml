@@ -3,7 +3,7 @@ uid: learn.app-service-autoscale-rules
 metadata:
   title: Dynamically meet changing web app performance requirements with autoscale rules
   description: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
-  ms.date: 04/10/2019
+  ms.date: 05/04/2022
   author: cephalin
   ms.author: cephalin
   ms.topic: interactive-tutorial
