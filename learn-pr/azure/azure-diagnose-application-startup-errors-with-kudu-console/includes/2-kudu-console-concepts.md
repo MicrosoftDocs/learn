@@ -32,7 +32,7 @@ Here are some of the things you can do in the Kudu console:
 
 ## Kudu architecture
 
-Kudu has a single-tenant architecture. Each Azure website that uses git deployment has its own instance of the Kudu service. The instance of the Kudu service of the Azure website is distinct for different Azure websites. The Kudu service gives access to the files of the real site, so the console can publish it.
+Kudu has a single-tenant architecture. Each Azure website that uses git deployment has its own instance of the Kudu service. The instance of the Kudu service on the Azure website is distinct for different Azure websites. The Kudu service gives access to the files of the real site, so the console can publish it.
 
 ### Security model
 

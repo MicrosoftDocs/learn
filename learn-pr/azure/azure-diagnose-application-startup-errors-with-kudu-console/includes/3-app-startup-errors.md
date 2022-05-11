@@ -47,4 +47,4 @@ The 500 Internal Server Error occurs with the app's code during startup or while
 
 A connection reset error occurs after the headers are sent and it's too late for the server to send a 500 Internal Server Error message. View the application logs to help resolve this issue.
 
-The exercises in the following units can help you diagnose startup errors by using the Kudu consol and the application event log in the Azure portal.
+The exercises in the following units can help you diagnose startup errors by using the Kudu console and the application event log in the Azure portal.

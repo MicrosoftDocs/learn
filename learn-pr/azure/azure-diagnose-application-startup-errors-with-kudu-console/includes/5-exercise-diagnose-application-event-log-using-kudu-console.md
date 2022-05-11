@@ -26,7 +26,7 @@ You can run the app in Kudu console to discover useful information:
 
 1. Run the app: `dotnet \home\site\wwwroot\HotelApp.dll`
 
-The console output from the app, showing any errors, is piped to the Kudu console. The error message shows the error message "The content root... does not exist".
+The console output from the app, showing any errors, is piped to the Kudu console.  The error message shows an error like in the following example:
 
 :::image type="content" source="../media/run-app-kudu-console.png" alt-text="Screenshot that shows the expected app errors in the Kudu console.":::
 
