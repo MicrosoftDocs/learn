@@ -7,7 +7,7 @@ When Power BI enforces OLS, not only does it restrict access to tables and colum
 
 Consider an example at Adventure Works. This organization has a data warehouse dimension table named **DimEmployee**. The table includes columns that store employee name, phone, email address, and salary. While general report consumers can see employee name and contact details, they must not be able to see salary values. Only senior Human Resources staff are permitted to see salary values. So, the data modeler used OLS to grant access to the salary column only to specific Human Resources staff.
 
-![Image show a model diagram view of the Employee table, which includes the restricted Salary column.](../media/DP500-employee-table-restrict-salary-column-ols.png)
+![Image show a model diagram view of the Employee table, which includes the restricted Salary column.](../media/employee-table-restrict-salary-column-object-level-security.png)
 
 OLS is a feature inherited from Azure Analysis Services (AAS) and SQL Server Analysis Services (SSAS). The feature is available in Power BI Premium to provide backward compatibility for models migrated to Power BI. For this reason, it’s not possible to completely set up OLS in Power BI Desktop.
 
@@ -25,7 +25,7 @@ Once you’ve added the OLS rules, you can publish the model to the Power BI ser
 
 In a Power BI report, when a user doesn’t have permission to access a table or column, they'll receive an error message. The message will inform them that the object doesn’t exist.
 
-![Image show a Power B I Desktop error message when a report visual attempts to query a restricted column.](../media/DP500-fields-that-need-to-be-fixed-ols.png)
+![Image show a Power B I Desktop error message when a report visual attempts to query a restricted column.](../media/fields-need-to-fixed-object-level-security.png)
 
 Consider carefully whether OLS is the right solution for your project. When a user opens a Power BI report that queries a restricted object (for them), the error message could be confusing and will result in a negative experience. To them, it looks like the report is broken. A better approach might be to create a separate set of models or reports for the different report consumer requirements.
 
@@ -35,7 +35,7 @@ There are restrictions to be aware of when implementing OLS.
 
 You can’t mix RLS and OLS in the same role. If you need to apply RLS and OLS in the same model, create separate roles dedicated to each type. Also, you can’t set table-level security if it breaks a relationship chain. For example, if there are relationships between tables A and B, and B and C, you can't secure table B. If table B is secured, a query on table A can't transit the relationships between table A and B, and B and C. In this case, you could set up a separate relationship between tables A and C.
 
-![Image shows the relationship example described in the previous paragraph.](../media/DP500-model-relationships-and-ols.png)
+![Image shows the relationship example described in the previous paragraph.](../media/model-relationships-object-level-security.png)
 
 However, model relationships that reference a secured column will work, providing that the column’s table isn’t secured.
 

@@ -12,7 +12,7 @@ You can also create and manage roles by using SQL Server Management Studio (SSMS
 
 To gain a better understanding of how RLS restricts access to data, watch the following animated image.
 
-![Image demonstrates how row-level security works for two users who each have access to specific country data](../media/DP500-introduce-rls.gif)
+![Image demonstrates how row-level security works for two users who each have access to specific country data](../media/introduce-row-level-security.gif)
 
 ## Apply star schema design principals
 
@@ -20,7 +20,7 @@ We recommend you apply [star schema](/power-bi/guidance/star-schema) design prin
 
 The following image is the model diagram of the Adventure Works sales analysis data model. It shows a star schema design comprising a single fact table named **Sales**. The other four tables are dimension tables that support the analysis of sales measures by date, state, region, and product. Notice the model relationships connecting all tables. These relationships propagate filters (directly or indirectly) to the **Sales** table.
 
-![Image shows a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.](../media/DP500-model-diagram-star-schema.png)
+![Image shows a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.](../media/model-diagram-star-schema.png)
 
 This model design supports examples presented in this unit.
 
@@ -80,7 +80,7 @@ Dynamic rules use specific DAX functions that return environmental values (as op
 
 Consider a revised model design that now includes the (hidden) **AppUser** table. Each row of the **AppUser** table describes a username and region. A model relationship to the **Region** table propagates filters from the **AppUser** table.
 
-![Image shows a revised model diagram that now includes the AppUser table. This table has two columns: Region and User Name.](../media/DP500-model-diagram-appuser-table.png)
+![Image shows a revised model diagram that now includes the AppUser table. This table has two columns: Region and User Name.](../media/model-diagram-appuser-table.png)
 
 The following rule applied to the **AppUser** table restricts data access to the region(s) of the authenticated user.
 
@@ -96,7 +96,7 @@ Defining dynamic rules is simple and effective when a model table stores usernam
 
 When you create roles, it’s important to test them to ensure they apply the correct filters. For data models created in Power BI Desktop, there’s the **View as** function that allows you to see the report when different roles are enforced, and different username values are passed.
 
-![Image shows the Power B I Desktop Modeling ribbon. The “View as” command is highlighted.](../media/DP500-power-bi-desktop-security-view-as.png)
+![Image shows the Power B I Desktop Modeling ribbon. The “View as” command is highlighted.](../media/power-bi-desktop-security-view.png)
 
 ## Set up role mappings
 
@@ -119,7 +119,7 @@ When your data model has DirectQuery tables and their data source supports SSO, 
 
 Consider that Adventure Works has an Azure SQL Database for their sales operations that resides in the same tenant as Power BI. The database enforces RLS to control access to rows in various database tables. You can create a DirectQuery model that connects to this database without roles and publish it to the Power BI service. When you set the data source credentials in the Power BI service, you [enable SSO](/power-bi/connect-data/service-azure-sql-database-with-direct-connect). When report consumers open Power BI reports, Power BI passes their identity to the data source. The data source then enforces RLS based on the identity of the report consumer.
 
-![Image shows the data source credentials window with the S O option enabled.](../media/DP500-set-data-source-credentials-sso.png)
+![Image shows the data source credentials window with the S O option enabled.](../media/set-data-source-credentials-single-sign-on.png)
 
 For information about Azure SQL Database RLS, see [Row-level security](/sql/relational-databases/security/row-level-security?view=sql-server-ver15).
 
