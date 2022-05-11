@@ -4,7 +4,7 @@ In this unit, you'll learn what DNS is and how it works. You will also learn abo
 
 ## What is DNS?
 
-DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example, `www.wideworldimports.com`, into a known IP address. IP addresses enable computers and network devices to identify and route requests between themselves.
+DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example: `www.wideworldimports.com`, into a known IP address. IP addresses enable computers and network devices to identify and route requests between themselves.
 
 DNS uses a global directory hosted on servers around the world. Microsoft is part of that network that provides a DNS service through Azure DNS.
 
@@ -14,8 +14,8 @@ A DNS server is also known as a DNS name server, or just a name server.
 
 A DNS server carries out one of two primary functions:
 
-- Maintains a local cache of recently accessed or used domain names and their IP addresses. This cache provides a faster response to a local domain lookup request. If the DNS server can't find the requested domain, it passes the request to another DNS server. This process repeats at each DNS server until either a match is made, or the search times out.
-- Maintains the key-value pair database of IP addresses and any host or subdomain that the DNS server has authority over. This function is often associated with mail, web, and other internet domain services.
+- Maintains a local cache of recently accessed or used domain names and their IP addresses. This cache provides a faster response to a local domain lookup request. If the DNS server can't find the requested domain, it passes the request to another DNS server. This process repeats at each DNS server until either a match is made or the search times out.
+- Maintains the key-value pair database of IP addresses and any host or subdomain over which the DNS server has authority. This function is often associated with mail, web, and other internet domain services.
 
 ### DNS server assignment
 
@@ -33,7 +33,7 @@ Here's a simplified overview of the process a DNS server uses when it resolves a
 
 ### IPv4 and IPv6
 
-Every computer, server, or network-enabled device on your network has an IP address. An IP address, within your domain, is unique. There are two standards of IP address: IPv4 and IPv6.
+Every computer, server, or network-enabled device on your network has an IP address. An IP address is unique within your domain. There are two standards of IP address: IPv4 and IPv6.
 
 - **IPv4** is composed of four sets of numbers, in the range 0 to 255, each separated by a dot. Example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
 
@@ -99,13 +99,13 @@ At this time, Azure DNS doesn't support Domain Name System Security Extensions. 
 
 Azure DNS provides the following security features:
 
-- Role-based access control, which gives you fine-grained control over users' access to Azure resources. You can monitor their usage, and control the resources and services they have access to.
-- Activity logs, which let you track changes to a resource, and pinpoint where faults occurred.
+- Role-based access control, which gives you fine-grained control over users' access to Azure resources. You can monitor their usage and control the resources and services to which they have access.
+- Activity logs, which let you track changes to a resource and pinpoint where faults occurred.
 - Resource locking, which gives a greater level of control to restrict or remove access to resource groups, subscriptions, or any Azure resources.
 
 ### Ease of use
 
-Azure DNS can manage DNS records for your Azure services, and provide DNS for your external resources. Azure DNS uses your same Azure credentials, support contract, and billing as your other Azure services.
+Azure DNS can manage DNS records for your Azure services, and provide DNS for your external resources. Azure DNS uses the same Azure credentials, support contract, and billing as your other Azure services.
 
 You can manage your domains and records by using the Azure portal, Azure PowerShell cmdlets, or the Azure CLI. Applications that require automated DNS management can integrate with the service by using the REST API and SDKs.
 
@@ -113,7 +113,7 @@ You can manage your domains and records by using the Azure portal, Azure PowerSh
 
 Azure DNS handles the translation of external domain names to an IP address. Azure DNS lets you create private zones. These provide name resolution for virtual machines (VMs) within a virtual network, and between virtual networks, without having to create a custom DNS solution. This allows you to use your own custom domain names rather than the Azure-provided names.
 
-To publish a private DNS zone to your virtual network, you specify the list of virtual networks that are allowed to resolve records within the zone.
+To publish a private DNS zone to your virtual network, you'll specify the list of virtual networks that are allowed to resolve records within the zone.
 
 Private DNS zones have the following benefits:
 
