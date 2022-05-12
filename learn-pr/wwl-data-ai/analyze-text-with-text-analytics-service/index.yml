@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- natural-language-processing
 units:
 - learn.wwl.analyze-text-with-text-analytics-service.introduction
 - learn.wwl.analyze-text-with-text-analytics-service.get-started-azure
