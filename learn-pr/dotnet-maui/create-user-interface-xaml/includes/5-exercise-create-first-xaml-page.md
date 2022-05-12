@@ -27,22 +27,17 @@ You've been asked to add some further features to this page. Before you start, y
     ```csharp
     public MainPage()
     {
-        var stackLayout = new VerticalStackLayout { Padding = new Thickness(30) };
-        this.Content = stackLayout;
-                
         var notesHeading = new Label() { Text = "Notes", HorizontalOptions = LayoutOptions.Center, FontAttributes = FontAttributes.Bold };
 
         editor = new Editor() { Placeholder = "Enter your note", HeightRequest = 100 };
         editor.Text = File.Exists(_fileName) ? File.ReadAllText(_fileName) : string.Empty;
 
-        var buttonsGrid = new Grid() { HeightRequest = 40.0};
+        var buttonsGrid = new Grid() { HeightRequest = 40.0 };
         buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1.0, GridUnitType.Auto) });
         buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(30.0, GridUnitType.Absolute) });
         buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1.0, GridUnitType.Auto) });
-        Grid.SetRow(buttonsGrid, 2);
-        mainGrid.Children.Add(buttonsGrid);
 
-        var saveButton = new Button() { WidthRequest = 100, Text = "Save"};
+        var saveButton = new Button() { WidthRequest = 100, Text = "Save" };
         saveButton.Clicked += OnSaveButtonClicked;
         Grid.SetColumn(saveButton, 0);
         buttonsGrid.Children.Add(saveButton);
@@ -52,11 +47,17 @@ You've been asked to add some further features to this page. Before you start, y
         Grid.SetColumn(deleteButton, 2);
         buttonsGrid.Children.Add(deleteButton);
 
-        ...
+        var stackLayout = new VerticalStackLayout 
+        { 
+            Padding = new Thickness(30, 60, 30, 30),
+            Children = { notesHeading, editor, buttonsGrid }
+        };
+
+        this.Content = stackLayout;
     }
     ```
 
-    The UI comprises a `VerticalStackLayout` containing a `Grid`. The first two rows in the `Grid` contain a `Label` acting as a heading, and an `Editor` into which the user can enter notes. The third row in the `Grid` contains a child `Grid` with three columns. The first column holds the **saveButton** control, the second is a spacer, and the third column has the **deleteButton** control.
+    The UI comprises a `VerticalStackLayout` containing a `Label`, `Editor`, and a `Grid` with three columns. The first column holds the **saveButton** control, the second is a spacer, and the third column has the **deleteButton** control.
 
     The diagram below illustrates the structure of the UI:
 
