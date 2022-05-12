@@ -50,7 +50,7 @@ Once the load balancer is confirmed to be working, you can begin to test AG fail
 
 Planning for and configuring a distributed AG is the same on premises as it is in Azure, with any Azure-specific considerations for the individual AGs. The main difference between an on-premises configuration and an Azure configuration for a distributed AG is that as part of the load balancer configuration in each region, the endpoint port for the AG needs to be added. The default port is 5022.
 
-A traditional availability group has resources configured in a Windows Server Failover Cluster (WSFC) or if on Linux, Pacemaker. A distributed availability group does not need WSFC ot Pacemaker, everything about it is maintained within SQL Server.
+A traditional availability group has resources configured in a Windows Server Failover Cluster (WSFC) or if on Linux, Pacemaker. A distributed availability group does not need WSFC or Pacemaker, everything about it is maintained within SQL Server.
 
 ## Azure Site Recovery
 

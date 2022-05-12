@@ -2,7 +2,7 @@ An auto-failover group is an availability feature that can be used with both Azu
 
 Auto-failover groups provide AG-like functionality called a listener, which allows both read-write and read-only activity. This functionality can be seen in the image below which is slightly different than the one for active geo-replication. There are two different kinds of listeners: one for read-write and one for read-only traffic. Behind the scenes in a failover, DNS is updated so clients will be able to point to the abstracted listener name and not need to know anything else. The database server containing the read-write copies is the primary, and the server that is receiving the transactions from the primary is a secondary.
 
-:::image type="content" source="../media/module-77-high-availability-final-14.png" alt-text="Auto-Failover Groups for Azure SQL Database and Azure SQL Database Managed Instance":::
+:::image type="content" source="../media/module-77-high-availability-final-14.png" alt-text="Auto-Failover Groups for Azure SQL Database and Azure SQL Managed Instance":::
 
 Auto-failover groups have two different policies that can be configured.
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/11/2022
+  ms.date: 05/12/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "The NIC"
       isCorrect: false
-      explanation: "Incorrect. The virtual network card doesn't affect the AG configuration ."
+      explanation: "Incorrect. The virtual network card doesn't affect the AG configuration."
     - content: "The NSG"
       isCorrect: false
       explanation: "Incorrect. The NSG allows traffic, but doesn't affect the listener."
