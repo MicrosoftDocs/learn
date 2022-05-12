@@ -18,7 +18,7 @@ In practice, it works like this:
     To continue the example, the storage requirement is enforced with the policy "Storage accounts should restrict network access using virtual network rules".
 3.  Microsoft Defender for Cloud continually assesses your connected subscriptions. If it finds a resource that doesn't satisfy a policy, it displays a ***recommendation*** to fix that situation and harden the security of resources that aren't meeting your security requirements.
     
-    :::image type="content" source="../media/Microsoft-Defender-for-Cloud-Security-Recommendations-cd6022ce.jpg":::
+    :::image type="content" source="../media/microsoft-defender-for-cloud-security-recommendations-7be6d7c7.jpg" alt-text="Screenshot of Microsoft Defender for Cloud Security Recommendations.":::
     
     
     For example, if an Azure Storage account on any of your protected subscriptions isn't protected with virtual network rules, you'll see the recommendation to harden those resources.
