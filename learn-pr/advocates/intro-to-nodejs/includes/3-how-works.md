@@ -55,7 +55,7 @@ There are many ways to install Node.js. Here are a few of the most common option
 
 ::: zone pivot="linux,macos"
 - **Install via Brew**: Brew is a popular package manager for Linux and macOS.
-::: zone end
+::: zone-end
 
 - **Install via NVM**: Node Version Manager (NVM) not only helps you install the version of Node.js you want, but also helps manage your installation. We won't cover this option in this section.
 
@@ -95,7 +95,7 @@ brew install node
 
 This downloads all the needed binaries and installs Node.js on your system.
 
-::: zone end
+::: zone-end
 
 
 ### Verify installation

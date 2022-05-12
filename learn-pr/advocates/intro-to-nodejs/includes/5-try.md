@@ -58,10 +58,11 @@ Node.js also supports running code from files.
 
    ::: zone pivot="windows,linux"
    - For Windows and Linux, enter Ctrl + S.
-   ::: zone end
+   ::: zone-end
+
    ::: zone pivot="macos"
    - For macOS, enter Cmd + S.
-   ::: zone end
+   ::: zone-end
    
 1. In the command-line shell, enter the `node` command followed by the name of the file index.js:
 

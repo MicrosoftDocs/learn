@@ -18,7 +18,7 @@ You can build the following types of applications by using Node.js:
 - Shell scripts for file manipulation or network access
 - Machine learning libraries and models
 
-:::image type="icon" source="./media/npm.png" alt-text="Image that shows the Node J S and N P M registry logos." border="false":::
+:::image type="icon" source="../media/npm.png" alt-text="Image that shows the Node J S and N P M registry logos." border="false":::
 
 The Node.js environment also offers an npm registry that you can use to share your own Node.js library.
 
