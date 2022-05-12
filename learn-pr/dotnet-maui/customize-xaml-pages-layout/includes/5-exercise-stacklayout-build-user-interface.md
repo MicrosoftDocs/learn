@@ -6,9 +6,9 @@ In this exercise, you'll use nested `StackLayout` containers to arrange the view
 
 The starter solution contains a fully functional tip calculator app. You'll start by exploring the  UI to understand what the app does.
 
-1. Using Visual Studio, open the starter solution in the **exercise2/start/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
+1. Using Visual Studio, open the starter solution in the **exercise2/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
 
-1. Build and run the app on either iOS or Android.
+1. Build and run the app on your preferred operation system.
 
 1. Enter a number into the text box and use the app to see how it works.
 
@@ -16,15 +16,14 @@ The starter solution contains a fully functional tip calculator app. You'll star
 
 1. When you have finished, close the app.
 
-1. Open **MainPage.xaml**. Notice that all the views are placed into one vertical `StackLayout`, as shown by the following XAML markup:
+1. Open **MainPage.xaml**. Notice that all the views are placed into one `VerticalStackLayout`, as shown by the following XAML markup:
 
     ```xml
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TipCalculator"
-             x:Class="TipCalculator.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}">
-        <StackLayout>
+             x:Class="TipCalculator.MainPage">
+        <VerticalStackLayout>
     
             <Label Text="Bill" />
             <Entry x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" />
@@ -45,87 +44,86 @@ The starter solution contains a fully functional tip calculator app. You'll star
             <Button x:Name="roundDown" Text="Round Down" />
             <Button x:Name="roundUp"   Text="Round Up" />
     
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
 ## Fix the UI
 
-Now that you've seen the app run, you can make it look better by adding `StackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
+Now that you've seen the app run, you can make it look better by adding additional `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
 
 1. Open the **MainPage.xaml** file.
 
-1. Add `40` units of padding to the `ContentPage` to avoid any overlap of the UI and the iOS status bar if you are running on an iPhone:
+1. Add `40` units of padding and `10` units of spacing to the `VerticalStackLayout`:
 
     ```xml
-    <ContentPage ... 
-                 Padding="40">
+    <VerticalStackLayout Padding="40" Spacing="10">
     ```
 
-1. Add a horizontal `StackLayout` to group the `Label` that says **Bill** with the `Entry` field below it. Set the `Spacing` property to `10`.
+1. Add a `HorizontalStackLayout` to group the `Label` that says **Bill** with the `Entry` field below it. Set the `Spacing` property to `10`.
 
 1. Set the `WidthRequest` of the **Bill** `Label` to `100` and the `VerticalOptions` property to `Center`. This will ensure that the label is aligned vertically with the `Entry` field.
 
     ```xml
-    <StackLayout Orientation="Horizontal" Spacing="10">
-        <Label Text="Bill" WidthRequest="100" />
+    <HorizontalStackLayout Spacing="10">
+        <Label Text="Bill" WidthRequest="100" VerticalOptions="Center"/>
         <Entry ... />
-    </StackLayout>
+    </HorizontalStackLayout>
     ```
 
-1. Add another horizontal `StackLayout` to group the `Label` that says **Tip** with the `Label` named **tipOutput**. Set the `Spacing` property to `10`, and the `Margin` property to `0,20,0,0`.
+1. Add another `HorizontalStackLayout` to group the `Label` that says **Tip** with the `Label` named **tipOutput**. Set the `Spacing` property to `10`, and the `Margin` property to `0,20,0,0`.
 
 1. Set the `WidthRequest` of the **Tip** `Label` to `100`
 
     ```xml
-    <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Spacing="10">
-        <Label Text="Tip" WidthRequest="100"  />
+    <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
+        <Label Text="Tip" WidthRequest="100" />
         <Label .../>
-    </StackLayout>
+    </HorizontalStackLayout>
     ```
 
-1. Use a horizontal `StackLayout` to group the `Label` that says **Total** with the `Label` named **totalOutput**. Set the `Spacing` property to `10`.
+1. Use a `HorizontalStackLayout` to group the `Label` that says **Total** with the `Label` named **totalOutput**. Set the `Spacing` property to `10`.
 
 1. Set the `WidthRequest` of the **Total** `Label` to `100`
 
     ```xml
-    <StackLayout Orientation="Horizontal" Spacing="10">
+    <HorizontalStackLayout Spacing="10">
         <Label Text="Total" WidthRequest="100"  />
         <Label .../>
-    </StackLayout>
+    </HorizontalStackLayout>
     ```
 
-1. Add another horizontal `StackLayout` to group the `Label` that says **Tip Percentage** with the `Label` named **tipPercent**.
+1. Add another `HorizontalStackLayout` to group the `Label` that says **Tip Percentage** with the `Label` named **tipPercent**.
 
-1. Set the `VerticalOptions` property of this `StackLayout`to `EndAndExpand` and set the `Spacing` property to `10`:
+1. Set the `VerticalOptions` property of this `HorizontalStackLayout`to `EndAndExpand` and set the `Spacing` property to `10`:
 
 1. Set the `WidthRequest` of the **Tip Percentage** `Label` to `100`
 
     ```xml
-    <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Spacing="10">
+    <HorizontalStackLayout VerticalOptions="EndAndExpand" Spacing="10">
         <Label Text="Tip Percentage" WidthRequest="100"/>
         <Label ... />
-    </StackLayout>
+    </HorizontalStackLayout>
     ```
 
-1. Use a horizontal `StackLayout` to group the `Button` with the caption **15%** and the `Button` with the caption **20%.**
+1. Use a `HorizontalStackLayout` to group the `Button` with the caption **15%** and the `Button` with the caption **20%.**
 
 1. Set the `Margin` property of this `StackLayout` to `0,20,0,0`, and the `Spacing` property to `10`:
 
     ```xml
-    <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Spacing="10">
+    <HorizontalStackLayout  Margin="0,20,0,0" Spacing="10">
         <Button Text="15%" ... />
         <Button Text="20%" ... />
-    </StackLayout>
+    </HorizontalStackLayout>
     ```
 
-1. Add a final horizontal `StackLayout` to group the `Button` with the caption, **Round Down** and the `Button` with the caption, **Round Up.**. Set the `Margin` property of this `StackLayout` to `0,20,0,0`, and the `Spacing` property to `10`:
+1. Add a final `HorizontalStackLayout` to group the `Button` with the caption, **Round Down** and the `Button` with the caption, **Round Up.**. Set the `Margin` property of this `StackLayout` to `0,20,0,0`, and the `Spacing` property to `10`:
 
     ```xml
-    <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Spacing="10">
+    <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
             <Button ... Text="Round Down" />
             <Button ... Text="Round Up" />
-        </StackLayout>
+    </HorizontalStackLayout>
     ```
 
 1. On all four button controls, set the `HorizontalOptions` property to `CenterAndExpand` and the `WidthRequest` property to `150`. For example:
@@ -137,47 +135,48 @@ Now that you've seen the app run, you can make it look better by adding `StackLa
 The complete XAML markup for the content page should look like this:
 
 ```xml
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TipCalculator"
-             x:Class="TipCalculator.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}"
-             Padding="40">
-    <StackLayout>
+             x:Class="TipCalculator.MainPage">
 
-        <StackLayout Orientation="Horizontal" Spacing="10">
-            <Label Text="Bill" VerticalOptions="Center" WidthRequest="100"/>
-            <Entry x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric"/>
-        </StackLayout>
+    <VerticalStackLayout Padding="40" Spacing="10">
 
-        <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Spacing="10">
-            <Label Text="Tip" WidthRequest="100"  />
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Bill" WidthRequest="100" VerticalOptions="Center" />
+            <Entry x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
+            <Label Text="Tip"  WidthRequest="100" />
             <Label x:Name="tipOutput" Text="0.00" />
-        </StackLayout>
+        </HorizontalStackLayout>
 
-        <StackLayout Orientation="Horizontal" Spacing="10">
+        <HorizontalStackLayout Spacing="10">
             <Label Text="Total" WidthRequest="100"/>
             <Label x:Name="totalOutput" Text="0.00" />
-        </StackLayout>
+        </HorizontalStackLayout>
 
-        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Spacing="10">
+        <HorizontalStackLayout VerticalOptions="EndAndExpand" Spacing="10">
             <Label Text="Tip Percentage" WidthRequest="100"/>
             <Label x:Name="tipPercent" Text="15%" />
-        </StackLayout>
-                
-        <Slider x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15"/>
-
-        <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Spacing="10">
-            <Button Text="15%" WidthRequest="150" HorizontalOptions="CenterAndExpand" Clicked="OnNormalTip" />
-            <Button Text="20%" WidthRequest="150" HorizontalOptions="CenterAndExpand" Clicked="OnGenerousTip" />
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Spacing="10">
-            <Button x:Name="roundDown" WidthRequest="150" HorizontalOptions="CenterAndExpand" Text="Round Down" />
-            <Button x:Name="roundUp"   WidthRequest="150" HorizontalOptions="CenterAndExpand" Text="Round Up" />
-        </StackLayout>
+        </HorizontalStackLayout>
         
-    </StackLayout>
+        <Slider x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" />
+
+        <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
+            <Button Text="15%" Clicked="OnNormalTip" WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="20%" Clicked="OnGenerousTip"  WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
+            <Button x:Name="roundDown" Text="Round Down" WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="roundUp"   Text="Round Up" WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
 </ContentPage>
 ```
 
@@ -185,4 +184,4 @@ The complete XAML markup for the content page should look like this:
 
 Run the app again and look at the differences in the UI. Verify that the controls are aligned correctly, and properly sized and spaced.
 
-You used nested `StackLayout` containers to improve the aesthetics of an existing UI. `StackLayout` is the simplest layout panel, but it's powerful enough to produce a reasonable UI.
+You used `VerticalStakLayout` and `HorizontalStackLayout` containers to improve the aesthetics of an existing UI. These layouts are the simplest layout panels, but are powerful enough to produce a reasonable UI.
