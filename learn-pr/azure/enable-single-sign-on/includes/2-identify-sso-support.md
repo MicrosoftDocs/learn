@@ -1,4 +1,4 @@
-A team asked the administrator of the retail company to add a new application to help with company promotion. The administrator searches for the application in the Azure AD application gallery and identifies single sign-on support it. 
+A team asked the administrator of the retail company to add a new application to help with company promotion. The administrator searches for the application in the Azure AD application gallery and identifies single sign-on support for it. 
 
 Employees in the retail company likely already have an account in the tenant for the organization. But, for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successful testing it with single sign-on configured.
 

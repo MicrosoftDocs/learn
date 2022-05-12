@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-single-sign-on.exercise-add-application
-title: Exercise - Add a single sign-on supported application
+title: Exercise - Add an application
 metadata:
   unitType: learning-content
-  title: Exercise - Add a single sign-on supported application
+  title: Exercise - Add an application
   description: "Add a single sign-on supported application to the Azure AD tenant."
   ms.date: 3/23/2022
   author: davidmu1

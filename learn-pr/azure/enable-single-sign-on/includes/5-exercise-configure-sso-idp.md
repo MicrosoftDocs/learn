@@ -19,7 +19,7 @@ In this module, Azure AD is being used as the identity provider in the single si
 1. On the **Azure Active Directory** pane, under **Manage**, select **Enterprise applications**.
 1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
 
-    :::image type="content" source="../media/add-application.png" alt-text="Screenshot showing the addition of a new enterprise application." border="true":::
+    :::image type="content" source="../media/search-applications.png" alt-text="Screenshot showing the addition of a new enterprise application." border="true":::
 
 1. On the application overview pane, under **Manage**, select **Single sign-on**, and then select **SAML**.
 

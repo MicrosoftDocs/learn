@@ -1,6 +1,8 @@
 In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
 
-The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
+The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It is possible that not all applications that an organization uses are in the galley. This module focuses on one that is.
+
+The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
 
 ## Access the application gallery
 
