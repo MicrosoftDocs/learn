@@ -29,6 +29,8 @@ products:
 - xamarin
 - vs
 - dotnet
+subjects:
+- cloud-computing
 units:
 - learn-xamarin.introduction-to-xamarin-android.1-introduction
 - learn-xamarin.introduction-to-xamarin-android.2-what-is-xamarin-android

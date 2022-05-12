@@ -31,6 +31,9 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.introduction
 - learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.understand-compatibility-level

@@ -24,6 +24,8 @@ roles:
 - security-operations-analyst
 products:
 - m365
+subjects:
+- security
 units:
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.introduction
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.use-device-inventory-list

@@ -30,6 +30,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- business-continuity
 units:
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.introduction
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-failover-clustering-windows-server

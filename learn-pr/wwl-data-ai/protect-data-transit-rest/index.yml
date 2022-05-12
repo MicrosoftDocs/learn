@@ -32,6 +32,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- data-management
 units:
 - learn.wwl.protect-data-transit-at-rest.introduction
 - learn.wwl.protect-data-transit-at-rest.explore-transparent-data-encryption

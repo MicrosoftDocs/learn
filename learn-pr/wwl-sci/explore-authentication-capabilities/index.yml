@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.introduction
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-different-authentication-methods

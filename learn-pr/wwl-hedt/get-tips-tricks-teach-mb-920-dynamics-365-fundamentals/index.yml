@@ -30,6 +30,8 @@ roles:
 products:
 - dynamics-365
 - dynamics-customer-service
+subjects:
+- employee-engagement
 units:
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.introduction
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-module-best-practices

@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- insider-risk
 units:
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.introduction
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.management-solution
