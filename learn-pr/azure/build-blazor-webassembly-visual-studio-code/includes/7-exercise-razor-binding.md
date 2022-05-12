@@ -2,18 +2,32 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 
 ## Create the ToDo page
 
-1. Create the ToDo page with the following command:
 
-    ```dotnetcli
-    dotnet new razorcomponent -n Todo -o Pages
-    ```
+1. Create the ToDo page:
 
-    The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
+	::: zone pivot="vscode"
 
-    > [!IMPORTANT]
-    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
+	With Visual Studio Code and other text-editors, we can create the razor component at the command line with this statement:
 
-1. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+	```dotnetcli
+	dotnet new razorcomponent -n Todo -o Pages
+	```
+
+	The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
+
+	::: zone-end
+
+	::: zone pivot="vstudio"
+
+	In Visual Studio, you can right-click on the `Pages` folder in **Solution Explorer** and choosing **Add** > **Razor Component...** and name the component `Todo.razor`
+
+	::: zone-end
+
+	> [!IMPORTANT]
+	> Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
+
+
+2. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
     @page "/todo"
@@ -25,7 +39,7 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
     }
     ```
 
-1. Save the `Pages/Todo.razor` file
+3. Save the `Pages/Todo.razor` file
 
 ## Add the Todo component to the navigation bar
 
