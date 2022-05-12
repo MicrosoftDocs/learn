@@ -40,7 +40,7 @@ You can use several different deployment methods to provision an Azure Database 
 
 - Networking. From this page you can select the connectivity method. Depending on your choice, you can also allow public access from any Azure service, configure firewall rules, or set up VNet integration.
 
-   ![Screenshot of the Network connectivity tab of the Azure portal Flexible server deployment page displaying the options for the connectivity method, firewall rules, and more.](../media/3-mysql-network_connectivity_firewall_rules.png)
+   ![Screenshot of the Network connectivity tab displaying the options for the connectivity method, firewall rules, and more.](../media/3-mysql-network_connectivity_firewall_rules.png)
   
 - Tags. Use this page to add key-value pairs that define metadata for the deployed resource.
 
