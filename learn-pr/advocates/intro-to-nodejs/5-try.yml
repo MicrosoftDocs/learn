@@ -11,6 +11,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen, team=cloud_advocates
   ms.contributors: wachegha-11052021
+  zone_pivot_groups: os
 durationInMinutes: 5
 interactive: "bash"
 azureSandbox: true
