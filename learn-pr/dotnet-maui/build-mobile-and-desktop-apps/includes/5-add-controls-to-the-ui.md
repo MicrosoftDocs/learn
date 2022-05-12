@@ -10,7 +10,7 @@ To recap, a .NET MAUI project initially contains:
 
 - The **App.xaml** and **App.xaml.cs** files that provide UI resources and create the initial window for the application.
 
-- The **AppShell.xaml** and **AppShell.xaml.cs** files that initial page for the application and registration for navigation routing.
+- The **AppShell.xaml** and **AppShell.xaml.cs** files specify the initial page for the application. It also hansles the registration of page pages for navigation routing.
 
 - The **MainPage.xaml** and **MainPage.xaml.cs** file that define the layout and UI logic for the page displayed by default in the initial window.
 
@@ -26,7 +26,7 @@ The App class also contains:
 
 - Methods for handling life-cycle events, including when the app is sent to the background (that is, when it ceases to be the foreground app).
 
-- Methods for creating new `Windows` for the application. .NET MAUI application by default have a single window, but you can create and launch additiona windows, which is helpful in desktop and tablet applications.
+- Methods for creating new `Windows` for the application. The .NET MAUI application by default have a single window, but you can create and launch additiona windows, which is helpful in desktop and tablet applications.
 
 ## Shell
 
@@ -78,9 +78,9 @@ A view can contain a single control such as a button, label, or text boxes. (Str
 
 Some of the common controls used to define layouts are:
 
-- `VerticalStackLayout` and `HorizontalStackLayout` are optimized stack layouts which lay out controls in a top-to-bottom a or left-to-right stack. A `StackLayout` is also available, which has a property named `StackOrientation`, which you can set to `Horizontal` or `Vertical`. On a tablet or phone, modifying this property in your application code enables you to adjust the display if the user rotates the device:
+- `VerticalStackLayout` and `HorizontalStackLayout` are optimized stack layouts which lay out controls in a top-to-bottom or left-to-right stack. A `StackLayout` is also available, which has a property named `StackOrientation`, which you can set to `Horizontal` or `Vertical`. On a tablet or phone, modifying this property in your application code enables you to adjust the display if the user rotates the device:
 
-    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="A diagram of how the horizontal and vertical orientations for the StackLayout will layout controls.":::
+    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="A diagram of how the horizontal and vertical orientations for the stack layout will layout controls.":::
 
 - `AbsoluteLayout`, which lets you set exact coordinates for controls.
 
@@ -201,4 +201,4 @@ It's useful to add a little *breathing space* around a control. Each control has
 
 All the layouts also have a `Padding` property that keeps any of their children from getting close to the border of the layout. One way to think of this is that all the controls are in a box, and that box has padded walls.
 
-Another useful whitespace setting the `Spacing` property of `VerticalStackLayout` or `HorizontalStackLayout`. This is the space between all the children of the layout. This is additive with the control's own margin, so the actual whitespace will be margin plus spacing.
+Another useful whitespace setting is the `Spacing` property of `VerticalStackLayout` or `HorizontalStackLayout`. This is the space between all the children of the layout. This is additive with the control's own margin, so the actual whitespace will be margin plus spacing.
