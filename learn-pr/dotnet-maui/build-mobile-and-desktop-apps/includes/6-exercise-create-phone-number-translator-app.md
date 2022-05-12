@@ -33,53 +33,52 @@ Replace the content of the class file with the following code. The static method
 ```csharp
 using System.Text;
 
-namespace Core
+namespace Core;
+
+public static class PhonewordTranslator
 {
-    public static class PhonewordTranslator
+    public static string ToNumber(string raw)
     {
-        public static string ToNumber(string raw)
-        {
-            if (string.IsNullOrWhiteSpace(raw))
-                return null;
-
-            raw = raw.ToUpperInvariant();
-
-            var newNumber = new StringBuilder();
-            foreach (var c in raw)
-            {
-                if (" -0123456789".Contains(c))
-                    newNumber.Append(c);
-                else
-                {
-                    var result = TranslateToNumber(c);
-                    if (result != null)
-                        newNumber.Append(result);
-                    // Bad character?
-                    else
-                        return null;
-                }
-            }
-            return newNumber.ToString();
-        }
-
-        static bool Contains(this string keyString, char c)
-        {
-            return keyString.IndexOf(c) >= 0;
-        }
-
-        static readonly string[] digits = {
-            "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
-        };
-
-        static int? TranslateToNumber(char c)
-        {
-            for (int i = 0; i < digits.Length; i++)
-            {
-                if (digits[i].Contains(c))
-                    return 2 + i;
-            }
+        if (string.IsNullOrWhiteSpace(raw))
             return null;
+
+        raw = raw.ToUpperInvariant();
+
+        var newNumber = new StringBuilder();
+        foreach (var c in raw)
+        {
+            if (" -0123456789".Contains(c))
+                newNumber.Append(c);
+            else
+            {
+                var result = TranslateToNumber(c);
+                if (result != null)
+                    newNumber.Append(result);
+                // Bad character?
+                else
+                    return null;
+            }
         }
+        return newNumber.ToString();
+    }
+
+    static bool Contains(this string keyString, char c)
+    {
+        return keyString.IndexOf(c) >= 0;
+    }
+
+    static readonly string[] digits = {
+        "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
+    };
+
+    static int? TranslateToNumber(char c)
+    {
+        for (int i = 0; i < digits.Length; i++)
+        {
+            if (digits[i].Contains(c))
+                return 2 + i;
+        }
+        return null;
     }
 }
 ```
@@ -93,30 +92,19 @@ namespace Core
     ```xml
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Phoneword.MainPage"
-             BackgroundColor="{DynamicResource PageBackgroundColor}">
+             x:Class="Phoneword.MainPage">
 
     </ContentPage>
     ```
 
-1. Add a padding of 20 units to the `ContentPage` control, after the line that sets the `BackgroundColor` property:
 
-    ```xml
-    <ContentPage ...
-             ...
-             BackgroundColor="{DynamicResource PageBackgroundColor}" 
-             Padding="30,60,30,30">
-
-    </ContentPage>
-    ```
-
-1. Add a `StackLayout` control with vertical orientation and a spacing of 15 units to the ContentPage:
+1. Add a `VerticalStackLayout` control with vertical orientation and a spacing of 15 units and padding of 20 units to the ContentPage:
 
     ```xml
     <ContentPage ... >
-        <StackLayout Orientation="Vertical" Spacing="15">
+        <VerticalStackLayout Spacing="15" Padding="20">
         
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
@@ -124,10 +112,10 @@ namespace Core
 
     ```xml
     <ContentPage ... >
-        <StackLayout ...>
+        <VerticalStackLayout ...>
             <Label Text = "Enter a Phoneword"
-                   FontSize ="Large"/>
-        </StackLayout>
+                   FontSize ="20"/>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
@@ -135,29 +123,29 @@ namespace Core
 
     ```xml
     <ContentPage ... >
-        <StackLayout ...>
+        <VerticalStackLayout ...>
             <Label .../>
             <Entry x:Name = "PhoneNumberText"
                    Text = "1-555-NETMAUI" />
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
-1. Add two `Button` controls to the StackLayout, after the Entry control. Both buttons currently do nothing, and the second is disabled initially. You'll add the code to handle the `Clicked` event for these two buttons in the next task:
+1. Add two `Button` controls to the VerticalStackLayout, after the Entry control. Both buttons currently do nothing, and the second is disabled initially. You'll add the code to handle the `Clicked` event for these two buttons in the next task:
 
     ```xml
     <ContentPage ... >
-        <StackLayout ...>
+        <VerticalStackLayout ...>
             <Label .../>
             <Entry ... />
-        <Button x:Name = "TranslateButton"
-                Text = "Translate"
-                Clicked = "OnTranslate"/>
-        <Button x:Name = "CallButton"
-                Text = "Call"
-                IsEnabled = "False"
-                Clicked = "OnCall"/>
-        </StackLayout>
+            <Button x:Name = "TranslateButton"
+                    Text = "Translate"
+                    Clicked = "OnTranslate"/>
+            <Button x:Name = "CallButton"
+                    Text = "Call"
+                    IsEnabled = "False"
+                    Clicked = "OnCall"/>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
@@ -168,26 +156,19 @@ namespace Core
 1. In the `MainPage` class, remove the `count` variable and the `OnCounterClicked` method. The class should look like this:
 
     ```csharp
-    using Microsoft.Maui.Controls;
-    using Microsoft.Maui.Essentials;
-    using System;
-    
-    namespace Phoneword
+    namespace Phoneword;
+ 
+    public partial class MainPage : ContentPage
     {
-        public partial class MainPage : ContentPage, IPage
+        public MainPage()
         {
-            public MainPage()
-            {
-                InitializeComponent();
-            }
+            InitializeComponent();
         }
     }
     ```
 
 1. Add the `translatedNumber` string variable and the following `OnTranslate` method to the `MainPage` class, after the constructor. The `OnTranslate` method retrieves the phone number from the `Text` property of the `Entry` control and passes it to the static ToNumber method of the `PhonewordTranslator` class that you created earlier.
 
-    > [!NOTE]
-    > The editor window might display warnings or errors stating that the PhoneNumberText control doesn't exist. You can ignore these errors and warnings; they will be resolved when you build the application.
 
     ```csharp
     public class MainPage : ContentPage
@@ -318,7 +299,7 @@ namespace Core
     }
     ```
 
-    The **PhoneDialer** class in the **Microsoft.Maui.Essentials** namespace provides an abstraction of the phone dialing functionality for the WinUI, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
+    The **PhoneDialer** class in the **Microsoft.Maui.Application.Community** namespace provides an abstraction of the phone dialing functionality (and others) for the Windows, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
 
     The following steps show how to update the Android application manifest to enable Android to use the phone dialer. Windows, iOS, and MacCatalyst, applications follow the same general principle, except that you specify a different operating-system dependent capability in the manifest.
 
@@ -341,7 +322,7 @@ namespace Core
 
 1. Save the file.
 
-1. In the Visual Studio toolbar, select the **Android Emulators/Pixel 3a - API 30** profile and start debugging.
+1. In the Visual Studio toolbar, select the **Android Emulators/Pixel 3a - API 30** (or similar) profile and start debugging.
 
 1. When the app appears in the emulator, enter a phone number (or accept the default) tap **Translate**, and then tap **Call**.
 
