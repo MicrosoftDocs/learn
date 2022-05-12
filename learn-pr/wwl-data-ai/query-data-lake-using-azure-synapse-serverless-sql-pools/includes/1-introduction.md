@@ -1,17 +1,15 @@
-Azure Synapse serverless SQL pool is tailored for querying the data in the lake. It supports querying CSV, JSON, and Parquet file formats directly. In this lesson you will learn how to craft queries to read a file (with specific format) and multiple files or folders. Additionally, you will learn how to extract specific data out of the files you are interested in. In this lesson, you will learn how you can query the different file types that can be stored in a data lake.
+Azure Synapse Analytics includes serverless SQL pools, which are tailored for querying data in a data lake. With a serverless SQL pool you can use SQL code to query data in files of various common formats without needing to load the file data into database storage. This capability helps data analysts and data engineers analyze and process file data in the data lake using a familiar data processing language, without the need to create or maintain a relational database store.
 
-After the completion of this lesson, you will be able to:
+After completing this module, you'll be able to:
 
-- Query a CSV file using Azure Synapse serverless SQL pools
-- Query a Parquet file using Azure Synapse serverless SQL pools
-- Query a JSON file using Azure Synapse serverless SQL pools
-- Query multiple files and folders using Azure Synapse serverless SQL pools
-- Understand storage considerations when using Azure Synapse serverless SQL pool
+- Identify capabilities and use cases for serverless SQL pools in Azure Synapse Analytics
+- Query CSV, JSON, and Parquet files using a serverless SQL pool
+- Create external database objects in a serverless SQL pool
 
 ## Prerequisites
 
-Before taking this lesson, it is recommended that the student is able to:
+Before starting this module, you should have the following prerequisite skills and knowledge:
 
-* Log into the Azure portal
-* Explain the different components of Azure Synapse Analytics
-* Use Azure Synapse Studio
+- Familiarity with the Microsoft Azure portal
+- Familiarity with data lake and data warehouse concepts
+- Experience of using SQL to query database tables 

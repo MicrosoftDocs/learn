@@ -33,7 +33,7 @@ You can interact with the preceding code in this [Rust Playground][RustPlay-comp
 
 ## Built-in data types
 
-Rust comes with some built-in primitive data types to express numbers, text, and truthiness. Several of these types are referred to as *scalar* because they represent a single value:
+Rust comes with some built-in primitive data types to express numbers, text, and truth. Several of these types are referred to as *scalar* because they represent a single value:
 
 - Integer numbers
 - Floating point numbers
@@ -83,7 +83,7 @@ You can try running this example in the [Rust Playground][RustPlay-numbers].
 
 ## Booleans: True or false
 
-The boolean type in Rust is used to store truthiness. The `bool` type has two possible values: `true` or `false`. Boolean values are used widely in conditional expressions. If a `bool` statement or value is true, then do this action; otherwise (the statement or value is false), do a different action. A boolean value is often returned by a comparison check.
+The boolean type in Rust is used to store truth. The `bool` type has two possible values: `true` or `false`. Boolean values are used widely in conditional expressions. If a `bool` statement or value is true, then do this action; otherwise (the statement or value is false), do a different action. A boolean value is often returned by a comparison check.
 
 In the following example, we use the greater than `>` operator to test two values. The operator returns a boolean value that shows the result of the test.
 
