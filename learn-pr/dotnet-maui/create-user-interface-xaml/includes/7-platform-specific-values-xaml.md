@@ -6,27 +6,27 @@ In this unit, you'll learn about the features that .NET MAUI provides to allow y
 
 The `Device` class is a utility class that provides device-specific information for the device on which your app is running. It exposes this information through a set of properties. The most important property is `Device.RuntimePlatform`. The property returns a string indicating the type of device currently in use; "Android", "iOS", "UWP" or "macOS".
 
-Consider the following scenario as an example of when you might use this feature. The default behavior in a .NET MAUI iOS app is that content added to a page encroaches on the iOS status bar at the top of the screen. You want to change this behavior. The simplest solution is to shift the content down in the page. The Notes solution you created in the previous exercise addresses this problem by setting the `Margin` property of the `StackLayout` control to move the content down by 60 points:
+Consider the following scenario as an example of when you might use this feature. The default behavior in a .NET MAUI iOS app is that content added to a page encroaches on the iOS status bar at the top of the screen. You want to change this behavior. The simplest solution is to shift the content down in the page. The Notes solution you created in the previous exercise addresses this problem by setting the `Margin` property of the `VerticalStackLayout` control to move the content down by 60 points:
 
 ```xml
-<StackLayout x:Name="MyStackLayout" Padding="30,60,30,30">
+<VerticalStackLayout x:Name="MyStackLayout" Padding="30,60,30,30">
     ...
-</StackLayout>
+</VerticalStackLayout>
 ```
 
 The issue is that this problem is only applicable on iOS. Shifting the content down this much on Android and WinUI results in a waste of screen real-estate at the top of the page.
 
-You can query the `Device.RuntimePlatform` property to solve this display problem. You can add the following code to the page constructor in your app to expand the padding at the top of the page but only for iOS:
+You can query the `DeviceInfo.Platform` property to solve this display problem. You can add the following code to the page constructor in your app to expand the padding at the top of the page but only for iOS:
 
 ```csharp
 MyStackLayout.Padding = 
-    Device.RuntimePlatform == Device.iOS
+    DeviceInfo.Platform == DevicePlatform.iOS
         ? new Thickness(30, 60, 30, 30) // Shift down by 60 points on iOS only
         : new Thickness(30); // Set the default margin to be 30 points
 ```
 
 > [!NOTE]
-> `Device.iOS` is a string property that returns the value "iOS". There are equivalent properties for the other supported platforms. You should use these properties rather than comparing against hard-coded strings; it is good practice, and it future-proofs your code if some of these string values change in the future.
+> `DevicePlatform.iOS` is a `DevicePlatform` struct that returns the string value "iOS". There are equivalent properties for the other supported platforms. You should use these properties rather than comparing against hard-coded strings; it is good practice, and it future-proofs your code if some of these string values change in the future.
 
 This code works, but it's in the code-behind file of the page. The padding is a user interface specific value. Arguably, it's more appropriate and convenient to do it from XAML instead of in the code-behind.
 
@@ -40,54 +40,54 @@ This code works, but it's in the code-behind file of the page. The padding is a 
 You can set the `Padding` property like this. Notice that the type of the `Padding` property is `Thickness`:
 
 ```xml
-<StackLayout>
-    <StackLayout.Padding>
+<VerticalStackLayout>
+    <VerticalStackLayout.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="30,60,30,30" />
         </OnPlatform>
-    </StackLayout.Padding>
+    </VerticalStackLayout.Padding>
     <!--XAML for other controls goes here -->
     ...
-</StackLayout>
+</VerticalStackLayout>
 ```
 
 For platforms other than iOS, the padding will remain set to its default value of "0,0,0,0". For WinUI and Android you can set the padding to 30 points with additional `On Platfom` blocks:
 
 ```xml
-<StackLayout>
-    <StackLayout.Padding>
+<VerticalStackLayout>
+    <VerticalStackLayout.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="30,60,30,30" />
             <On Platform="Android" Value="30" />
-            <On Platform="UWP" Value="30" />
+            <On Platform="WinUI" Value="30" />
         </OnPlatform>
-    </StackLayout.Padding>
+    </VerticalStackLayout.Padding>
     ...
-</StackLayout>
+</VerticalStackLayout>
 ```
 
 You can apply this same technique to other properties. The example below changes the background color of the stack layout on a page to Silver on iOS, to Green on Android, and to Yellow on Windows.
 
 ```xml
-<StackLayout>
+<VerticalStackLayout>
     ...
-    <StackLayout.BackgroundColor>
+    <VerticalStackLayout.BackgroundColor>
         <OnPlatform x:TypeArguments="Color">
             <On Platform="iOS" Value="Silver" />
             <On Platform="Android" Value="Green" />
-            <On Platform="UWP" Value="Yellow" />
+            <On Platform="WinUI" Value="Yellow" />
         </OnPlatform>
-    </StackLayout.BackgroundColor>
+    </VerticalStackLayout.BackgroundColor>
     ...
-</StackLayout>
+</VerticalStackLayout>
 ```
 
 This syntax is a little verbose, but there's a reduced syntax available for the `OnPlatform` extension. You can simplify the example that sets the padding as follows:
 
 ```xml
-<StackLayout Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+<VerticalStackLayout Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
     <!--XAML for other controls goes here -->
-</StackLayout>
+</VerticalStackLayout>
 ```
 
 You specify a default value for a property, together with any platform-specific values. In this form, the type parameter is inferred from the property to which the `OnPlatform` attribute is applied.
@@ -95,7 +95,7 @@ You specify a default value for a property, together with any platform-specific 
 To set the background color, you can use this XAML fragment in place of the second example above:
 
 ```xml
-<StackLayout BackgroundColor="{OnPlatform Yellow, iOS=Silver, Android=Green}">
+<VerticalStackLayout BackgroundColor="{OnPlatform WinUI=Yellow, iOS=Silver, Android=Green}">
     ...
-</StackLayout>
+</VerticalStackLayout>
 ```
