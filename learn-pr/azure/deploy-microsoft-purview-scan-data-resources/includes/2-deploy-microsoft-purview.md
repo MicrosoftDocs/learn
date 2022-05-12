@@ -1,6 +1,6 @@
 # Deploy a Microsoft Purview account
 
-The first step in creating a holistic, up-to-date map of your data landscape, is to deploy a Microsoft Purview account in Azure. Here we'll discuss configuration settings, account concepts, and key considerations.
+You've been requested by Fabrikam to build an automatically curated and up-to-date view of their holistic data estate. You have decided to use  Microsoft Purview, as it will allow Fabrikam to register, scan, and ingest metadata from a variety of data sources into a central data map. The first step is to deploy a Microsoft Purview account. In this unit, we will cover configuration settings, account concepts, and key considerations.
 
 ## Microsoft Purview account name
 

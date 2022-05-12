@@ -29,11 +29,11 @@ Getting Started: Before deploying Microsoft Purview in your environment, it is b
 
 ## Example Scenario : 2
 
-The Fabricam Corp shoe company has expanded rapidly over the last year, going from a handful of employees and a single data lake, to a multi-regional business with data across several platforms. In the expansion, keeping track of what data Fabricam stores and where has mostly fallen to department heads. Data officers often have to repeat security procedures as new data repositories surface, data experts and officers are flooded with requests for data access and questions about their data. Before the company can go international, Fabricam needs a solution to help them understand and take command of their full data estate.
+The Fabrikam Corp shoe company has expanded rapidly over the last year, going from a handful of employees and a single data lake, to a multi-regional business with data across several platforms. In the expansion, keeping track of what data Fabrikam stores and where has mostly fallen to department heads. Data officers often have to repeat security procedures as new data repositories surface, data experts and officers are flooded with requests for data access and questions about their data. Before the company can go international, Fabrikam needs a solution to help them understand and take command of their full data estate.
 
-Microsoft Purview will allow Fabricam to register all their data sources, manage access and data discovery by department, and even understand where data comes from and what kind of data it is.
+Microsoft Purview will allow Fabrikam to register all their data sources, manage access and data discovery by department, and even understand where data comes from and what kind of data it is.
 
-You've been requested to create a Microsoft Purview proof of concept for Fabricam, to understand how to deploy Microsoft Purview in an environment and onboard resources.
+You've been requested to create a Microsoft Purview proof of concept for Fabrikam, to understand how to deploy Microsoft Purview in an environment and onboard resources.
 
 ## What is the main goal?
 
