@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-nodejs
 metadata:
   title: Introduction to Node.js with JavaScript
   description: "Learn about Node.js: what it is, how it works, and when to use it. Create a Node.js application with JavaScript using Visual Studio Code."
-  ms.date: 02/25/2020
+  ms.date: 05/12/2022
   author: manekinekko
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -13,10 +13,10 @@ title: Introduction to Node.js
 summary: "Learn about Node.js: what it is, how it works, and when to use it."
 abstract: |
   By the end of this module, you'll be able to:
-  - Explain what Node.js is.
-  - Describe how Node.js works.
-  - Identify when to use Node.js.
-  - Create and run a Node.js script from the command line.
+  - Explain what Node.js is
+  - Describe how Node.js works
+  - Identify when to use Node.js
+  - Create and run a Node.js script from the command line
 prerequisites: |
   - Familiarity with editing text and code files in any text editor
   - Beginner-level experience writing JavaScript code

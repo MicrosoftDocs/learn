@@ -23,7 +23,7 @@ while (queue.wait()) {
 
 Node.js uses an event-driven architecture where an event loop handles orchestration and a worker pool blocks tasks. The event loop makes it possible for Node.js to handle concurrent operations. The following diagram illustrates how an event loop works, at a high level:
 
-:::image type="content" source="../media/event-loop.svg" alt-text="Diagram showing how Node.js uses an event-driven architecture where an event loop handles orchestration and a worker pool blocks tasks.":::
+:::image type="content" source="../media/event-loop.svg" alt-text="Diagram showing how Node dot J S uses an event-driven architecture where an event loop handles orchestration and a worker pool blocks tasks.":::
 
 The main phases of an event loop are:
 
@@ -45,23 +45,27 @@ JavaScript can produce the same performance results as low-level languages such 
 
 To support the powerful event-based programming model, Node.js has a built-in set of non-blocking I/O APIs to handle common tasks such as file-system and database manipulation. These APIs are provided by the libuv library. When you make a request for Node.js to read file content from a disk, Node.js doesn't block waiting for the disk and file descriptors to be ready. Instead, the non-blocking I/O interface notifies Node.js when the file is ready. The non-blocking I/O works the same way when the browser notifies your code that a mouse or keyboard event has been triggered, or when an XMLHttpRequest (XHR) response is received from a remote endpoint.
 
-:::image type="content" source="../media/architecture.svg" alt-text="Diagram showing the built-in set of non-blocking I/O APIs that Node.js uses to handle common tasks.":::
+:::image type="content" source="../media/architecture.svg" alt-text="Diagram showing the built-in set of non-blocking I O A P eyes that Node dot J S uses to handle common tasks.":::
 
 ## Install and use Node.js
 
 There are many ways to install Node.js. Here are a few of the most common options:
 
 - **Install via executable**: The Node.js **Downloads** page at `https://nodejs.org/en/download/` provides installation packages for different operating systems.
+
+::: zone pivot="linux,macos"
 - **Install via Brew**: Brew is a popular package manager for Linux and macOS.
+::: zone end
+
 - **Install via NVM**: Node Version Manager (NVM) not only helps you install the version of Node.js you want, but also helps manage your installation. We won't cover this option in this section.
 
 Let's take a more detailed look at the steps required to download and install Node.js and verify successful installation.
 
 ### Install via executable
 
-Here's an excerpt from the Install page found at `https://nodejs.org/en/download/`:
+Here's an excerpt from the Install page found at the `https://nodejs.org/en/download/` download location:
 
-:::image type="content" source="../media/install-page.png" alt-text="Screen capture of the Node.js installation page showing available installers and source code.":::
+:::image type="content" source="../media/install-page.png" alt-text="Screenshot of the Node dot J S installation page showing available installers and source code.":::
 
 Notice the various installers available for different operating systems like Windows, macOS, and Linux. You can also download two different source code versions:
 
@@ -71,7 +75,9 @@ Notice the various installers available for different operating systems like Win
 
 Base your choice of version on your company's requirements. For example, if you update often, the Current version might be right for you.
 
-To learn more about the different release types, see [Release types](https://github.com/nodejs/node#release-types).
+To learn more about the different release types, see [Release types](https://github.com/nodejs/node#release-types?azure-portal=true).
+
+::: zone pivot="linux,macos"
 
 ### Install via the Brew package manager
 
@@ -89,6 +95,9 @@ brew install node
 
 This downloads all the needed binaries and installs Node.js on your system.
 
+::: zone end
+
+
 ### Verify installation
 
 After installation of Node.js has finished, run the following command in your terminal to verify successful installation:
@@ -97,7 +106,7 @@ After installation of Node.js has finished, run the following command in your te
 node --version
 ```
 
-The command should print out the current version in the following format:
+The command should display the current version in the following format:
 
 ```bash
 v[major version].[minor version].[patch version]

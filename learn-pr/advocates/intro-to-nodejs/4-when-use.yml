@@ -4,9 +4,9 @@ title: Why might you need Node.js?
 metadata:
   title: Why might you need Node.js?
   description: Learn why the Node.js runtime is a good choice for executing JavaScript applications and code outside a browser.
-  ms.date: 02/25/2020
+  ms.date: 05/12/2022
   author: manekinekko
-  ms.author: wachegha
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, team=cloud_advocates

@@ -21,7 +21,7 @@ Today, many applications written outside the browser are in JavaScript or suppor
 
 ## Community
 
-The community has already built more than a million modules and libraries for Node.js and published them on the Node Package Manager (NPM). Developers can easily download and integrate these modules into their existing projects. Applications that can run on Node.js include command-line tools, frameworks, web servers, and much more.
+The community has already built more than a million modules and libraries for Node.js and published them on the Node Package Manager (npm). Developers can easily download and integrate these modules into their existing projects. Applications that can run on Node.js include command-line tools, frameworks, web servers, and much more.
 
 ## Open source
 

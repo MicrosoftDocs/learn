@@ -4,13 +4,14 @@ title: How Node.js works
 metadata:
   title: How Node.js works
   description: Get a high-level overview of all the essential components of the Node.js JavaScript runtime.
-  ms.date: 06/01/2020
+  ms.date: 05/12/2022
   author: manekinekko
-  ms.author: wachegha
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, team=cloud_advocates
   ms.contributors: wachegha-11052021
+  zone_pivot_groups: os
 durationInMinutes: 3
 content: |
   [!include[](includes/3-how-works.md)]
