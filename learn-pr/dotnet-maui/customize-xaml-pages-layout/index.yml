@@ -16,7 +16,7 @@ abstract: |
   - Display views in a vertical or horizontal list using StackLayout
   - Display views in rows and columns using Grid
 prerequisites: |
-  - Visual Studio 2022 with the MAUI workload installed
+  - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
 ratingEnabled: true
 iconUrl: /learn/achievements/customize-xaml-pages-layout.svg
