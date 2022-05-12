@@ -13129,6 +13129,31 @@
       "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/7-manage-licenses.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-configure-manage-identities/8-manage-licenses",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/8-exercise-change-group-license-assignments.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-configure-manage-identities/9-exercise-change-group-license-assignments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/9-exercise-change-user-license-assignments.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-configure-manage-identities/10-exercise-change-user-license-assignments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-configure-manage-identities/13-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/11-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-configure-manage-identities/14-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
