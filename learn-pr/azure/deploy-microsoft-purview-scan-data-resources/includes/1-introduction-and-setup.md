@@ -17,17 +17,7 @@ Microsoft Purview helps CDOs, data analysts, BI engineers, data stewards, govern
 - For what business purpose?
 - Where is the sensitive data?
 
-## Example Scenario : 1
-
-Scenario: The CDO (Chief Data Officer) of Fabrikam Corp Inc. wants to set up a daily dashboard view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
-
-Problem: "Suppose you work at an athletic shoe company named Fabrikam Corp Inc as a business intelligence and analytics engineer. The CDO of your company has assigned to you the task of setting up a daily dashboard view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
-
-Microsoft Purview Solution: "During Purview's scanning process, Purview's classification engine will determine and apply classifications on each table or schema level hosted in the data estate. The Insights feature will help you build reports to view detailed analytics on each of the classified data sources, databases or files as well as what classifications and sensitivity labels were applied. You may even use Purview Insights APIs to build custom reports using and data visualization tools such as Power BI or Tableau etc."
-
-Getting Started: Before deploying Microsoft Purview in your environment, it is best to start with a proof of concept. In this guide we will develop a small proof of concept to start Fabrikam on their journey to using Microsoft Purview to govern their data estate.
-
-## Example Scenario : 2
+## Scenario
 
 The Fabricam Corp shoe company has expanded rapidly over the last year, going from a handful of employees and a single data lake, to a multi-regional business with data across several platforms. In the expansion, keeping track of what data Fabricam stores and where has mostly fallen to department heads. Data officers often have to repeat security procedures as new data repositories surface, data experts and officers are flooded with requests for data access and questions about their data. Before the company can go international, Fabricam needs a solution to help them understand and take command of their full data estate.
 
