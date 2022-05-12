@@ -1,108 +1,92 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Flyout navigation is a type of navigation where a window of menu items slides (or flies out) from the side of the device's screen. It is usually invoked by tapping on what's called a "hamburger" menu, or an icon with three horizontal lines stacked on top of each other.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In this unit, you'll learn how to build an app that implements flyout navigation.
 
-    Heading: none
+## What is flyout navigation?
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Flyout navigation displays a menu that provides a quick means to switch context within your application.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+The flyout menu is composed of several parts, the `Header`, `FlyoutItems`, `MenuItems`, and `Footer`.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+The image below shows a visual example of the flyout parts.
 
-    Goal: Describe the part of the scenario covered in this exercise
+:::image type="content" source="../media/2-flyout-annotated.png" alt-text="A screenshot of a flyout menu with each portion of the flyout annotated.":::
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+Because the flyout menu is not always visible, it can be used to switch context between conceptually different parts of your application. For example, one flyout item can lead to a data entry page (or pages), and another to an about page.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+## Flyout navigation in a .NET MAUI app
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+You use the `FlyoutItem` class to implement flyout navigation in .NET MAUI. `FlyoutItem` is part of the [Shell app development](/dotnet/maui/fundamentals/shell) paradigm provided by .NET MAUI.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+Navigation with a flyout in .NET MAUI occurs when a `FlyoutItem` item is tapped. The `FlyoutItem` will automatically switch what's displayed in your app. You specify what gets displayed when a `FlyoutItem` gets tapped by setting its `ShellContent` property. That property will point to a page in your application.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+The `FlyoutItem` needs to be hosted in a `Shell` page, which serves as your application's main page.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+And you can have as many `FlyoutItem`s as you'd like.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Create a flyout
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+One or more flyout items can be added to the flyout, and each flyout item is represened by a `FlyoutItem` object. Each `FlyoutItem` object should be a child of the subclassed `Shell` object which serves as your app's `MainPage`. 
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+The following example creates a flyout containing two flyout items:
 
-    Goal: List the steps they'll do to complete the exercise.
+```xaml
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:controls="clr-namespace:Xaminals.Controls"
+       xmlns:views="clr-namespace:Xaminals.Views"
+       x:Class="Xaminals.AppShell">
+   <ShellContent Title="Cats"
+                 Icon="cat.png"
+                 ContentTemplate="{DataTemplate views:CatsPage}" />
+   <ShellContent Title="Dogs"
+                 Icon="dog.png"
+                 ContentTemplate="{DataTemplate views:DogsPage}" />
+</Shell>
+```
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+This will result with a flyout with 2 items. The `CatsPage` will be displayed by default when the app opens. Tapping on the second will display the `DogsPage`.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+:::image type="content" source="../media/2-two-page-app-flyout.png" alt-text="A screenshot showing a flyout with 2 options.":::
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Flyout menu items
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Menu items can be optionally added to the flyout, and each menu item is represented by a `MenuItem` object. Menu items are similar to buttons in that tapping one leads to an action to occur rather than a page to display.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+The position of `MenuItem` objects on the flyout is dependent upon their declaration order in the Shell visual hierarchy. Therefore, any `MenuItem` objects declared before `FlyoutItem` objects will appear before the `FlyoutItem` objects in the flyout, and any `MenuItem` objects declared after `FlyoutItem` objects will appear after the `FlyoutItem` objects in the flyout.
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+```xaml
+<Shell ...>
+    ...            
+    <MenuItem Text="Help"
+              IconImageSource="help.png"
+              Command="{Binding HelpCommand}"
+              CommandParameter="https://docs.microsoft.com/dotnet/maui/fundamentals/shell" />    
+</Shell>
+```
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+## Flyout header and footer
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+The flyout header is the content that optionally appears at the top of the flyout, with its appearance being defined by an object that can be set with the Shell.FlyoutHeader bindable property:
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+```xaml
+<Shell ...>
+    <Shell.FlyoutHeader>
+        <Grid>
+            <Image Source="header-image.png">
+        </Grid>
+    </Shell.FlyoutHeader>
+</Shell>
+```
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+The flyout footer is the content that optionally appears at the bottom of the flyout, with its appearance being defined by an object that can be set with the Shell.FlyoutFooter bindable property:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+```xaml
+<Shell ...>
+    <Shell.FlyoutFooter>
+        <Grid>
+            <Image Source="footer-image.png">
+        </Grid>
+    </Shell.FlyoutFooter>
+</Shell>
+```

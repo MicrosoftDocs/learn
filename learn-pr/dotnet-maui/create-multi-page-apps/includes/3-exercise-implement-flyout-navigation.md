@@ -1,108 +1,83 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In the sample scenario, you have a MAUI app that contains a number of pages for displaying information about astronomical bodies, the phases of the moon, and sunrise/sunset times. The app also includes an About page. Currently, these pages are all stand-alone, but you want to provide a logical way for the user to move between them.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In this exercise, you'll add flyout navigation to the app.
 
-    Heading: none
+## Open the starter solution
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-create-multi-page-apps).
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Go to the **exercise1** folder in the cloned repo, and then move to the **start** folder.
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. Use Visual Studio to open the **Astronomy.sln** solution.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. In the **Solution Explorer** window, in the **Astronomy** project, expand the **Pages** folder. Note that this folder contains the following pages:
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+    - **AboutPage**. This page displays *about* information for the app.
+    - **MoonPhasePage**. This page displays specific information about the phases of the Moon as seen from Earth.
+    - **SunrisePage**. This page displays sunrise and sunset times for locations on Earth. The data is provided by the [Sunrise Sunset web service](https://sunrise-sunset.org/api).
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+1. Build and run the app. When the app starts, the **MoonPhasePage** displays, but currently there's no means provided to enable the user to navigate to the other pages.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+    The image below shows the app running on the Android emulator:
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    :::image type="content" source="../media/3-initial-moonphase.png" alt-text="The Astronomy app running on Android. The functionality required to navigate to pages is missing.":::
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Close the app and return to Visual Studio.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Add flyout navigation
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+1. In the Solutions Explorer window, open up the **AppShell.xaml** page.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. In the XAML markup editor, surround the existing `<ShellContent>` item with a `<FlyoutItem>`. Set the `Title` property of the `<Flyout>` item to be **Moon Phase**. The markup should look like this:
 
-    Goal: List the steps they'll do to complete the exercise.
+    ```xaml
+    <FlyoutItem Title="Moon Phase">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:MoonPhasePage}"/> 
+    </FlyoutItem>
+    ```
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. Add a `FlyoutIcon` property to the `<Shell>` node to display an image. By default it will display 3 horizontal bars, but we can change it to be whatever we like. The markup should look like this:
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+    ```xaml
+    <Shell
+        x:Class="Astronomy.AppShell"
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:local="clr-namespace:Astronomy.Pages"
+        FlyoutIcon="moon.png">
+    ```
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Run the application. You should now see a moon image in the upper left corner of the app. When tapping on it, you'll see the flyout with one menu item.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::image type="content" source="../media/3-app-with-flyout-icon.png" alt-text="A screenshot of the app running on Android with the moon icon indicating a flyout is available.":::
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    By tapping on the icon, the flyout will appear.
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+    :::image type="content" source="../media/3-flyout-shown.png" alt-text="A screenshot of the app running on Android with the flyout displayed.":::
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+1. Now add in more flyout options. Create a new `<FlyoutItem>` below the one you just made and set its `Title` to **Sunrise**. Its `ShellContent` should point to the `SunrisePage` page.
+1. Add another `<FlyoutItem>`, set its title to **About**. This time set the `ShellContent` to `AboutPage`. The additional XAML should look like this:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+    ```xaml
+    <FlyoutItem Title="Sunrise">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:SunrisePage}"/>
+    </FlyoutItem>
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+    <FlyoutItem Title="About">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:AboutPage}"/>
+    </FlyoutItem>
+    ```
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+1. Run the app again, and now there will be 3 options in the flyout. And tapping on the flyout item will display its respective page.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    :::image type="content" source="../media/3-flyout-all-options.png" alt-text="A screenshot of the app running on Android with the flyout open showing 3 flyout items.":::
 
-<!-- Do not add a unit summary or references/links -->
+## Adding icons
+
+## Add a flyout header

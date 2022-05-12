@@ -13,9 +13,9 @@ In this module, you'll learn how to use tabbed pages to implement an app that pr
 
 In this module, you'll learn how to:
 
-- Implement tab navigation with the `TabbedPage` layout
-- Configure platform-specific settings for tabs
-- Use navigation pages within tabbed pages
+- Implement flyout navigation with .NET MAUI Shell 
+- Implement tab navigation with .NET MAUI Shell
+- Navigate between pages within tabbed pages
 
 ## Prerequisites
 

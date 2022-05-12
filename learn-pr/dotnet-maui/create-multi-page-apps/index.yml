@@ -13,7 +13,7 @@ summary: "Use .NET MAUI shell to create multi-page applications with tabs and fl
 abstract: |
   By the end of this module, you'll be able to:
     - Implement tab navigation with .NET MAUI Shell
-    - Use navigation pages within tabbed pages
+    - Navigate between pages within tabbed pages
     - Implement flyout navigation with .NET MAUI Shell    
 prerequisites: |
   - Visual Studio 2022 with the MAUI workload installed

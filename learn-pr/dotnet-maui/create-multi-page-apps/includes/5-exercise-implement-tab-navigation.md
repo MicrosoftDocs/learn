@@ -4,7 +4,7 @@ In this exercise, you'll add tab navigation to the app.
 
 ## Open the starter solution
 
-1. Clone or download the [exercise repo](https://repo.address.to.go.here).
+1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-create-multi-page-apps).
 
     > [!NOTE]
     > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
