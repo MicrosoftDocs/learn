@@ -19,3 +19,5 @@ In this module, you'll learn:
 
 - When to use regression models.
 - How to train and evaluate regression models by using the tidymodels framework.
+
+***Produced in partnership with Eric Wanjou - Microsoft Learn Student Ambassador and Researcher at the University of Leeds***
