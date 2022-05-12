@@ -29,7 +29,7 @@ The XAML documents you create contain elements that declaratively describe the a
 
 ## Difference between .NET MAUI XAML and Microsoft XAML
 
-XAML is based on the Microsoft 2009 XAML specification. However, the specification defines only the syntax of the language. As with Windows Presentation Foundation (WPF), Silverlight, Universal Windows Platform (UWP), and Windows Workflow Foundation, all of which use XAML, the elements you declare in the XAML will change.
+XAML is based on the Microsoft 2009 XAML specification. However, the specification defines only the syntax of the language. As with Windows Presentation Foundation (WPF), Universal Windows Platform (UWP), and WinUI 3, all of which use XAML, the elements you declare in the XAML will change.
 
 XAML first appeared in 2006, with WPF. If you've been working with Microsoft XAML for a while, the XAML syntax should look familiar.
 
@@ -42,46 +42,40 @@ The best way to see XAML in action is to look at an example of an existing C# co
 Suppose you have the following coded `ContentPage` in your app.
 
 ```CSharp
-using Microsoft.Maui;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Graphics;
-using System.Diagnostics;
+namespace MauiCode;
 
-namespace MauiCode
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    Button loginButton;
+    VerticalStackLayout layout;
+
+    public MainPage()
     {
-        Button loginButton;
-        StackLayout layout;
+        this.BackgroundColor = Color.FromArgb("512bdf");
 
-        public MainPage()
+        layout = new VerticalStackLayout
         {
-            this.BackgroundColor = Color.FromArgb("512bdf");
-
-            layout = new StackLayout
+            Margin = new Thickness(15, 15, 15, 15),
+            Padding = new Thickness(30, 60, 30, 30),
+            Children =
             {
-                Margin = new Thickness(15, 15, 15, 15),
-                Padding = new Thickness(30, 60, 30, 30),
-                Children =
-                {
-                    new Label { Text = "Please log in", FontSize = 30, TextColor = Color.FromRgb(255, 255, 100) },
-                    new Label { Text = "Username", TextColor = Color.FromRgb(255, 255, 255) },
-                    new Entry (),
-                    new Label { Text = "Password", TextColor = Color.FromRgb(255, 255, 255) },
-                    new Entry { IsPassword = true }
-                }
-            };
+                new Label { Text = "Please log in", FontSize = 30, TextColor = Color.FromRgb(255, 255, 100) },
+                new Label { Text = "Username", TextColor = Color.FromRgb(255, 255, 255) },
+                new Entry (),
+                new Label { Text = "Password", TextColor = Color.FromRgb(255, 255, 255) },
+                new Entry { IsPassword = true }
+            }
+        };
 
-            loginButton = new Button { Text = "Login", BackgroundColor = Color.FromRgb(0, 148, 255) };
-            layout.Children.Add(loginButton);
+        loginButton = new Button { Text = "Login", BackgroundColor = Color.FromRgb(0, 148, 255) };
+        layout.Children.Add(loginButton);
 
-            Content = layout;
+        Content = layout;
 
-            loginButton.Clicked += (sender, e) =>
-            {
-                Debug.WriteLine("Clicked !");
-            };
-        }
+        loginButton.Clicked += (sender, e) =>
+        {
+            Debug.WriteLine("Clicked !");
+        };
     }
 }
 
@@ -101,7 +95,7 @@ The same page layout defined using XAML looks like this:
              x:Class="MauiXaml.Page1"
              BackgroundColor="#512bdf">
 
-    <StackLayout Margin="15, 15, 15, 15" Padding="30, 60, 30, 30">
+    <VerticalStackLayout Margin="15" Padding="30, 60, 30, 30">
         <Label Text="Please log in" FontSize="30" TextColor="AntiqueWhite"/>
         <Label Text="Username" TextColor="White" />
         <Entry />
@@ -115,23 +109,18 @@ The same page layout defined using XAML looks like this:
 The C# code that initializes the page and implements the event handler for the `Clicked` event of the `LoginButton` control in the code-behind file looks like this:
 
 ```csharp
-using Microsoft.Maui.Controls;
-using System;
-using System.Diagnostics;
+namespace MauiXaml;
 
-namespace MauiXaml
+public partial class Page1 : ContentPage, IPage
 {
-    public partial class Page1 : ContentPage, IPage
+    public Page1()
     {
-        public Page1()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
-        void LoginButton_Clicked(object sender, EventArgs e)
-        {
-            Debug.WriteLine("Clicked !");
-        }
+    void LoginButton_Clicked(object sender, EventArgs e)
+    {
+        Debug.WriteLine("Clicked !");
     }
 }
 ```
