@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- data-ai
 units:
 - learn.reactors.python-data-science.1-introduction
 - learn.reactors.python-data-science.2-types-arithmetic-numeric
@@ -49,4 +51,4 @@ units:
 - learn.reactors.python-data-science.13-list-comprehensions
 - learn.reactors.python-data-science.14-import-modules
 badge:
-  uid: learn.reactors.python-data-science.badge 
+  uid: learn.reactors.python-data-science.badge

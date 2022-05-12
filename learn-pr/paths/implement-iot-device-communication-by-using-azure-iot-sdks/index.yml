@@ -26,6 +26,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 modules:
 - learn.wwl.examine-iot-hub-properties
 - learn.wwl.examine-iot-device-lifecycle-concepts

@@ -36,6 +36,9 @@ products:
 - azure-ddos-protection
 - azure-sentinel
 - azure-advisor
+subjects:
+- security
+- architecture
 modules:
 - learn.azure.design-secure-environment-government
 - learn.azure.encrypt-sector-data

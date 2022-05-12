@@ -20,6 +20,9 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- devops
+- development-tools
 modules:
 - learn-windows.introduction-w10-dev
 - learn-windows.introducing-visual-studio

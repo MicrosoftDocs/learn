@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- infrastructure
 modules:
 - learn.azure.intro-to-azure-arc
 - learn.azure.intro-to-arc-for-servers

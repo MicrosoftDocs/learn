@@ -18,6 +18,8 @@ roles:
 - data-engineer
 products: 
 - sql-server
+subjects:
+- data-management
 modules:
 - learn-sqlserver.introduction-sql-server-linux
 - learn-sqlserver.deploy-sql-server-linux

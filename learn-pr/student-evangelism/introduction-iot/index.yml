@@ -31,6 +31,8 @@ roles:
 products:
 - azure-iot-hub
 - azure-iot
+subjects:
+- iot
 units:
 - learn.oxford.intro-to-iot.introduction
 - learn.oxford.intro-to-iot.what-is-iot
@@ -38,4 +40,3 @@ units:
 - learn.oxford.intro-to-iot.when-to-use-iot
 - learn.oxford.intro-to-iot.knowledge-check
 - learn.oxford.intro-to-iot.summary
-

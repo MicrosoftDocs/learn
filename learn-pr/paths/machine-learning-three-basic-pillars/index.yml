@@ -36,6 +36,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- machine-learning
 modules:
 - learn.reactors.join-clean-data-deep-dive
 - learn.reactors.supervised-learning-regression
