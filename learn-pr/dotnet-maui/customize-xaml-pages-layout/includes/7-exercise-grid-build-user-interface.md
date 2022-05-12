@@ -1,4 +1,4 @@
-In this exercise, you'll use a `Grid` to arrange the views in your User Interface (UI). You'll start with another version of the TipCalculator project, and adjust it to make the UI more intuitive. You'll also move the buttons to the bottom of the page. This time you'll use a `Grid` layout rather than a `StackLayout`. The image below shows the initial UI, and the UI that results from following the steps in this exercise:
+In this exercise, you'll use a `Grid` to arrange the views in your User Interface (UI). You'll start with another version of the TipCalculator project, and adjust it to make the UI more intuitive. You'll also move the buttons to the bottom of the page. This time you'll use a `Grid` layout rather than using `VerticalStackLayout` and `HorizontalStackLayout`. The image below shows the initial UI, and the UI that results from following the steps in this exercise:
 
 :::image type="content" source="../media/7-starter-complete.png" alt-text="Screenshot showing the starter solution, with all the labels placed vertically in using a vertical StackLayout, and the completed solution, with controls aligned and positioned using a Grid.":::
 
@@ -6,69 +6,54 @@ In this exercise, you'll use a `Grid` to arrange the views in your User Interfac
 
 The starter solution contains a fully functional tip calculator app.
 
-1. Using Visual Studio, open the starter solution in the **exercise3/start/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
+1. Using Visual Studio, open the starter solution in the **exercise3/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
 
 1. Open **MainPage.xaml**. Notice that all the views are in displayed using one vertical `StackLayout` panel:
 
     ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:TipCalculator"
-             x:Class="TipCalculator.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}">
-        <StackLayout>
-    
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:local="clr-namespace:TipCalculator"
+                 x:Class="TipCalculator.MainPage">
+
+        <VerticalStackLayout>
+
             <Label Text="Bill" />
             <Entry x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" />
-    
+
             <Label Text="Tip"   />
             <Label x:Name="tipOutput" Text="0.00" />
-    
+
             <Label Text="Total" />
             <Label x:Name="totalOutput" Text="0.00" />
-    
+
             <Label Text="Tip Percentage" />
             <Label x:Name="tipPercent" Text="15%" />
             <Slider x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" />
-    
+
             <Button Text="15%" Clicked="OnNormalTip" />
             <Button Text="20%" Clicked="OnGenerousTip" />
-    
+
             <Button x:Name="roundDown" Text="Round Down" />
             <Button x:Name="roundUp"   Text="Round Up" />
-    
-        </StackLayout>
+
+        </VerticalStackLayout>
+
     </ContentPage>
+
     ```
 
 ## Create a Grid layout
 
-1. Add `40` units of padding to the `ContentPage` to avoid overlap of the UI and the iOS status bar.
-
-    ```xaml
-    <ContentPage ... 
-                 Padding="40">
-    ```
-
-1. Change the layout panel from `StackLayout` to `Grid`.
+1. Change the layout panel from `VerticalStackLayout` to `Grid` with spacing of `40` units.
 
 1. Define seven rows and two columns for the `Grid`. Make all the rows `Auto` size except the fourth row. The fourth row should use `Star` so it will get all the remaining space available in the grid. Use `Star` sizing for both columns.
 
     ```xml
-    <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="*" />
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+    <Grid RowDefinitions="Auto, Auto, Auto, *, Auto, Auto, Auto"
+          ColumnDefinitions="*, *"
+          Padding="40">
         ...
     </Grid>
     ```
@@ -116,23 +101,10 @@ The complete XAML markup for the page should look like this:
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TipCalculator"
-             x:Class="TipCalculator.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}"
-             Padding="40">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+             x:Class="TipCalculator.MainPage">
+    <Grid RowDefinitions="Auto, Auto, Auto, *, Auto, Auto, Auto"
+          ColumnDefinitions="*, *"
+          Padding="40">
 
         <Label Text="Bill" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"/>
         <Entry x:Name="billInput" Placeholder="Enter Amount" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
