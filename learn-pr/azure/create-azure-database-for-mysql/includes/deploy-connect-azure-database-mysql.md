@@ -30,7 +30,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
    | **Admin username**           | <server_name>                      | Enter any  valid user name, which will be configured as the admin account for the MySQL  server instance. Do not use azure_superuser, admin, administrator, root,  guest, or public. |
    | **Password**                 | <server_name>                      | Enter any  valid password that is assigned to the admin account. It must contain between  8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0  through 9), and non-alphanumeric characters (such as !, $, #, %). |
 
-   ![The Flexible server tab of the Azure portal Flexible server deployment page displaying the project and server details of a new Azure Database for MySQL server.](../media/4-deploy-mysql-basics_1.png)
+   ![Screenshot of the Basics tab displaying the project and server details of a new Azure Database for MySQL server.](../media/4-deploy-mysql-basics_1.png)
 
 6. On the **Basics** tab, select the **Configure server** link.
 
@@ -48,7 +48,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 8. On the **Compute + Storage** page, select **Save**.
 
-   ![Use the Compute + storage page to configure the compute, storage, high availability, and backups settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-compute_storage.png)
+   ![Screenshot of the Azure portal Compute + storage page displaying the compute, storage, high availability, and backups settings.](../media/4-deploy-mysql-compute_storage.png)
 
 9. On the **Basics** tab of the **Flexible server** page, select **Next: Networking >**.
 
@@ -60,7 +60,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
     c. Select the **+ Add current client IP address** link.
  
-      ![From the Networking tab you can configure the networking settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-networking.png)
+      ![Screenshot of the Networking tab of the Azure portal Flexible server deployment page displaying the networking settings.](../media/4-deploy-mysql-networking.png)
 
 11. On the **Networking** tab of the **Flexible server** page, select **Review + create**.
 
