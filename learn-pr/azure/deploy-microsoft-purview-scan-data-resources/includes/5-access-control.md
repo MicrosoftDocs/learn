@@ -1,6 +1,8 @@
 # Access Control
 
-Microsoft Purview uses Collections to organize and manage access to sources, assets, and other artifacts. This unit describes collections and access management in your Microsoft Purview account.
+As Fabrikam's usage of Microsoft Purview expands, it will become increasingly important that assets are logically grouped to aid data management and discovery, as well as ensuring user of the Microsoft Purview service have the right level of access to perform tasks such as curating and enriching the data catalog.
+
+You have been asked to use collections to organize and manage access to sources, assets, and other artifacts. This unit describes collections and access management in your Microsoft Purview account.
 
 ## Collections
 
