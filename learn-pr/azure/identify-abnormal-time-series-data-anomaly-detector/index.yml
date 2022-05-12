@@ -14,7 +14,7 @@ summary: Anomaly Detection is a technique in artificial intelligence to find out
 # see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
 abstract: | # see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master
   By the end of this module, you'll be able to: 
-  - Understand what anomaly detection is
+  - Understand what is anomaly detection
   - Understand how the Azure Anomaly Detector APIs work and when to use for your scenario
   - Build a solution to use a prebuilt Azure Anomaly Detector model on real-time IoT data streams
   - Train and evaluate your own model with Azure Anomaly Detector using your unique time-series data

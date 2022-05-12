@@ -3,7 +3,7 @@ In this module, you learned how to detect anomalies in real-time from an IoT tim
 You were able to use Azure IoT Hub, Azure Blob Storage, and Azure Anomaly Detector APIs to build a solution to help an electricity company to be alerted quickly when an anomaly is identified from a household's smart meter reading. In addition, the solution helped the company to be able to drill down to what factors are causing the high energy consumption.  Finally, you were able to send remote device data to the cloud; process the data and detect anomalies.
 
 With the skills you've learned, you should be able to:
-- Understand what anomaly detection is
+- Understand what is anomaly detection
 - Understand how the Azure Anomaly Detector APIs work and when to use for your scenario
 - Build a solution to use a prebuilt Azure Anomaly Detector model on real-time IoT data streams
 - Train and evaluate your own model with Azure Anomaly Detector using your unique time-series data
@@ -18,6 +18,8 @@ We used a remote device as our data source. However, given what you have learned
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Connecting real devices to IoT Hub](/azure/iot-hub/iot-hub-get-started-physical)
+* [Sending telemetry from IoT Plug & Play Device to Azure IoT Hub](/azure/iot-develop/quickstart-send-telemetry-iot-hub&pivots=programming-language-python)
 * [Deploy the Anomaly Detection container to the edge](/azure/cognitive-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge)
+* [Anomaly Detector SDKs](https://github.com/Azure-Samples/AnomalyDetector/tree/master/quickstarts)
 
 Happy learning!
