@@ -30,6 +30,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- finance-accounting
 units:
 - learn.wwl.manage-usage-billing-for-azure-stack-hub.introduction
 - learn.wwl.manage-usage-billing-for-azure-stack-hub.usage-billing

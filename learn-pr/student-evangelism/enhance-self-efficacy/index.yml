@@ -27,6 +27,8 @@ roles:
   - student
 products:
   - azure
+subjects:
+- productivity
 units:
   - learn.student-evangelism.enhance-self-efficacy.introduction
   - learn.student-evangelism.enhance-self-efficacy.explore-concept-self-efficacy

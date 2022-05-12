@@ -26,6 +26,9 @@ products:
 - azure
 - azure-storage
 - azure-blob-storage
+subjects:
+- data-analytics
+- data-engineering
 units:
 - learn.azure.gather-metrics-from-blob-storage.1-introduction
 - learn.azure.gather-metrics-from-blob-storage.2-viewing-blob-metrics-in-azure-portal

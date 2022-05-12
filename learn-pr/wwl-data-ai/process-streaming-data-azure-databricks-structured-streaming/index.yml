@@ -26,6 +26,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.process-streaming-data-azure-databricks-structured-streaming.introduction
 - learn.wwl.process-streaming-data-azure-databricks-structured-streaming.describe

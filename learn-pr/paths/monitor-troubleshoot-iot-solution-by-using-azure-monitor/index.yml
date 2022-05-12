@@ -26,6 +26,8 @@ products:
 - azure-monitor
 - azure-portal
 - azure-service-health
+subjects:
+- iot
 modules:
 - learn.wwl.examine-azure-iot-solution-monitoring-logging
 - learn.wwl.troubleshoot-device-connections-communication

@@ -30,7 +30,9 @@ products:
   - azure
   - azure-firewall
   - azure-firewall-manager
-units:  
+subjects:
+- security
+units:
 - learn.intro-to-azure-firewall-manager.1-introduction
 - learn.intro-to-azure-firewall-manager.2-what-is-azure-firewall-manager
 - learn.intro-to-azure-firewall-manager.3-how-azure-firewall-manager-works

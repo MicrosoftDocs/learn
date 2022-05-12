@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- blockchain
 units:
 - learn.wwl.describe-concepts-of-cryptography.introduction
 - learn.wwl.describe-concepts-of-cryptography.describe-cryptography

@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.introduction-to-azure-app-service
 - learn.wwl.configure-web-app-settings

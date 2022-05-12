@@ -32,6 +32,8 @@ products:
   - aspnet-core
   - blazor
   - dotnet
+subjects:
+- development-tools
 units:
 - learn.aspnet-core-signalr-polling-fix.introduction
 - learn.aspnet-core-signalr-polling-fix.clone-familiarize

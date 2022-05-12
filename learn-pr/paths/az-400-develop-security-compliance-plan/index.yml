@@ -28,6 +28,10 @@ products:
 - azure-key-vault
 - azure-api-management
 - azure-monitor
+subjects:
+- information-protection-governance
+- business-continuity
+- security
 modules:
 - learn.intro-to-azure-ad
 - learn.azure.create-users-and-groups-in-azure-active-directory

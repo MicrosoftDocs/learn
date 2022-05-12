@@ -28,6 +28,9 @@ products:
 - azure-virtual-machines
 - azure-portal
 - azure-disk-storage
+subjects:
+- virtual-machine
+- storage
 units:
 - learn.add-and-size-disks-in-azure-virtual-machines.1-introduction
 - learn.add-and-size-disks-in-azure-virtual-machines.2-add-data-disks-to-azure-virtual-machines

@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
 units:
 - learn.wwl.implement-testing-progressive-exposure-deployment.introduction
 - learn.wwl.implement-testing-progressive-exposure-deployment.what-ab-testing

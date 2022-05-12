@@ -28,6 +28,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.manage-data-loss-prevention-polices.introduction
 - learn.wwl.manage-data-loss-prevention-polices.configure-data-loss-prevention-for-policy-precedence

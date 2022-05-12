@@ -30,6 +30,8 @@ prerequisites: |
   - Basic knowledge of C\#
   - ASP.NET Core Runtime 3.1 installed on your local machine
 
+subjects:
+- chatbot
 units:
 - learn.advocates.responsible-bots.1-introduction
 - learn.advocates.responsible-bots.2-bot-framework-responsible-principles

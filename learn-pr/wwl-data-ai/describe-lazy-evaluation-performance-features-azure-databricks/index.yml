@@ -26,6 +26,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.introduction
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.describe-difference-between-eager-lazy-execution

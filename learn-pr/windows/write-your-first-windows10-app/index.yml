@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- cloud-computing
 units:
 - learn-windows.writing-windows-10-apps.0-intro-to-writing-apps
 - learn-windows.writing-windows-10-apps.1-writing-uwp-app

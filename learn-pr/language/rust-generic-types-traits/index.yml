@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-generic-types-traits.0-introduction
 - learn.language.rust-generic-types-traits.1-what-are-generic-data-types

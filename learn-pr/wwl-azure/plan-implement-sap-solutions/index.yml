@@ -29,6 +29,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn-pr.wwl.planning-implementing-sap-solutions-azure.introduction
 - learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-compute-network-storage-considerations-sap-workloads

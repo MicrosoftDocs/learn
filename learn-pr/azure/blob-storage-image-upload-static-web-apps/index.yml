@@ -32,6 +32,8 @@ prerequisites: |
   -	Node.js LTS and Visual Studio Code
   - Azure Functions Extension for Visual Studio Code installed
   - Azure Functions Core Tools installed
+subjects:
+- storage
 units:
   - learn.blob-storage-image-upload-static-web-apps.introduction
   - learn.blob-storage-image-upload-static-web-apps.upload-to-blob-storage

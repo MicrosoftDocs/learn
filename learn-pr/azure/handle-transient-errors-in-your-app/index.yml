@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.azure.handle-transient-errors-in-your-app.1-introduction
 - learn.azure.handle-transient-errors-in-your-app.2-explore-transient-errors

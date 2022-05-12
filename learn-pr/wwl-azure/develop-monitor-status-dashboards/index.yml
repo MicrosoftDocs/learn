@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.develop-monitor-status-dashboards.introduction
 - learn.wwl.develop-monitor-status-dashboards.explore-azure-dashboards

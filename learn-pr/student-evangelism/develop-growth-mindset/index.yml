@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- modern-work
 units:
 - learn.student-evangelism.develop-growth-mindset.introduction
 - learn.student-evangelism.develop-growth-mindset.describe-fixed-growth-mindsets
@@ -39,4 +41,4 @@ units:
 - learn.student-evangelism.develop-growth-mindset.knowledge-check
 - learn.student-evangelism.develop-growth-mindset.summary
 badge:
-  uid: learn.student-evangelism.develop-growth-mindset.badge 
+  uid: learn.student-evangelism.develop-growth-mindset.badge

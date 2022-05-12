@@ -29,6 +29,9 @@ roles:
 - administrator
 products:
 - azure-vmware-solution
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.deploy-azure-vmware-solution.introduction
 - learn.deploy-azure-vmware-solution.plan-azure-vmware-solution

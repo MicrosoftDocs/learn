@@ -38,6 +38,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.administer-manage-windows-server-iaas-vm-remotely.introduction
 - learn.wwl.administer-manage-windows-server-iaas-vm-remotely.select-appropriate-remote-administration-tools

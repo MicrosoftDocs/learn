@@ -34,6 +34,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-admin.cmu-cloud-elasticity.0-introduction
 - learn.cmu-cloud-admin.cmu-cloud-elasticity.1-load-patterns

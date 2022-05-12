@@ -31,6 +31,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- iot
+- devops
 units:
 - learn.oxford.implement-cicd-iot-edge.introduction
 - learn.oxford.implement-cicd-iot-edge.design-cicd-pipeline-iot-edge

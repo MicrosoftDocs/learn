@@ -32,6 +32,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-language-understanding
+subjects:
+- cloud-computing
 units:
 - learn.wwl.create-language-understanding-app.introduction
 - learn.wwl.create-language-understanding-app.provision-azure-resources

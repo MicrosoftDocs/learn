@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-expressroute
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-expressroute-virtual-wan.introduction
 - learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses

@@ -27,6 +27,9 @@ roles:
   - solution-architect
 products:
   - azure-expressroute
+subjects:
+- cloud-computing
+- remote-hybrid-work
 units:
   - learn.azure.intro-to-azure-expressroute.introduction
   - learn.azure.intro-to-azure-expressroute.what-is-azure-expressroute

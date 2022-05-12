@@ -28,6 +28,8 @@ products:
 - azure-active-directory
 - azure-active-directory-b2c
 - azure-active-directory-domain
+subjects:
+- identity-access
 units:
 - learn.wwl.azure-active-directory.introduction
 - learn.wwl.azure-active-directory.features

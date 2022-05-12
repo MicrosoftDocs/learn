@@ -29,6 +29,10 @@ products:
 - azure-web-apps
 - azure-cache-redis
 - dotnet
+subjects:
+- cloud-computing
+- cache
+- development-tools
 units:
 - learn.azure.aspnet-session.1-introduction
 - learn.azure.aspnet-session.2-exercise-deploy-resources

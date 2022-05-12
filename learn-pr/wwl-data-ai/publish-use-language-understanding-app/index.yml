@@ -30,6 +30,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-language-understanding
+subjects:
+- natural-language-processing
 units:
 - learn.wwl.publish-use-language-understanding-app.introduction
 - learn.wwl.publish-use-language-understanding-app.set-publishing-configuration-options

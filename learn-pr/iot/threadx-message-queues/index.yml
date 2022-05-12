@@ -30,6 +30,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- cloud-computing
 units:
 - learn.iot.threadx-message-queues.introduction
 - learn.iot.threadx-message-queues.message-queues
@@ -43,4 +45,4 @@ units:
 
 
 badge:
-  uid: learn.iot.threadx-message-queues.badge 
+  uid: learn.iot.threadx-message-queues.badge

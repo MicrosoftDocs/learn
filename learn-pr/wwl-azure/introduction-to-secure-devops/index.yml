@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- security
 units:
 - learn.wwl.introduction-to-secure-devops.introduction
 - learn.wwl.introduction-to-secure-devops.describe-sql-injection-attack

@@ -38,14 +38,14 @@ quiz:
     - content: 'Allows you to submit unlabeled to be labeled by a third party service that employs human labelers.'
       isCorrect: false
       explanation: Incorrect. The behavior described isn't a functionality of ML-assisted labeling. 
-  - content: 'The reason we labeled 50 images in our dataset was to satisfy the following requirement:'
+  - content: 'The reason we labeled 10 images in our dataset was to satisfy the following requirement:'
     choices: 
-    - content: '50 is the total number of images that make up our dataset'
+    - content: '10 is the total number of images that make up our dataset'
       isCorrect: false
       explanation: Incorrect. The unlabeled dataset contains over 200 unlabeled image samples.
-    - content: '50 is the maximum number of images that can be used to train an object detection model with Anaconda.'
+    - content: '10 is the maximum number of images that can be used to train an object detection model.'
       isCorrect: false
-      explanation: Incorrect. Anaconda can train using a large number of labeled samples that far exceeds 50.
-    - content: 'Anaconda requires a minimum of 50 labeled samples in order to successfully train our object detection model'
+      explanation: Incorrect. We can train using a large number of labeled samples that far exceeds 10.
+    - content: 'Azure ML Studio Object Detection Experiments require a minimum of 10 labeled samples in order to successfully train our object detection model'
       isCorrect: true
       explanation: Correct.  If we supply fewer images, we'll receive an error when attempting to train an object detection model using our exported dataset.

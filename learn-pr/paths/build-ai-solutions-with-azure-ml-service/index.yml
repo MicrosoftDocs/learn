@@ -23,6 +23,8 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- machine-learning
 modules:
 - learn.data-ai.intro-to-azure-machine-learning-service
 - learn.data-ai.train-local-model-with-azure-mls

@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.create-release-pipeline.introduction
 - learn.wwl.create-release-pipeline.describe-azure-devops-capabilities

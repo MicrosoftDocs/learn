@@ -28,6 +28,9 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- security
+- networking
 units:
 - learn.azure.network-fundamentals-2.introduction
 - learn.azure.network-fundamentals-2.basic-client-server

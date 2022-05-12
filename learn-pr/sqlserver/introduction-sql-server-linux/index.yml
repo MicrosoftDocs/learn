@@ -25,6 +25,8 @@ roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- data-engineering
 units:
 - learn-sqlserver.introduction-sql-server-linux.1-introduction
 - learn-sqlserver.introduction-sql-server-linux.2-what-sql-server-linux

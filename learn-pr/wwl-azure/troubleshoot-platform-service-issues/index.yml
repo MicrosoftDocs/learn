@@ -35,6 +35,8 @@ products:
 - azure-private-link
 - azure-virtual-machines
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.troubleshoot-platform-service-issues.introduction
 - learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-services

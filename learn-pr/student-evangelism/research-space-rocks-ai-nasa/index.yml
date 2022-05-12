@@ -27,6 +27,8 @@ roles:
 - data-scientist
 products:
 - vs-code
+subjects:
+- classification-analysis
 units:
 - learn.student-evangelism.research-space-rocks-ai-nasa.1-introduction
 - learn.student-evangelism.research-space-rocks-ai-nasa.2-space-rocks-importance

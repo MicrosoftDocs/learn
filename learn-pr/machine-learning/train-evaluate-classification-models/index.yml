@@ -24,6 +24,9 @@ roles:
 - data-scientist
 products:
 - vs-code
+subjects:
+- machine-learning
+- classification-analysis
 units:
 - learn.wwl.train-evaluate-classification-models.introduction
 - learn.wwl.train-evaluate-classification-models.what-is-classification

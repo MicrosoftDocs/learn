@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-virtual-machine-availability.introduction
 - learn.wwl.configure-virtual-machine-availability.plan-for-maintenance-downtime

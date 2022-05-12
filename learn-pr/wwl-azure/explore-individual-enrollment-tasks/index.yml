@@ -31,6 +31,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.explore-individual-enrollment-tasks.introduction
 - learn.wwl.explore-individual-enrollment-tasks.provision-deprovision-devices-using-individual-enrollments

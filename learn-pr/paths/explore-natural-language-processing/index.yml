@@ -29,6 +29,8 @@ products:
 - azure-cognitive-services
 - azure-language-understanding
 - azure-portal
+subjects:
+- natural-language-processing
 modules:
 - learn.wwl.analyze-text-with-text-analytics-service
 - learn.wwl.recognize-synthesize-speech

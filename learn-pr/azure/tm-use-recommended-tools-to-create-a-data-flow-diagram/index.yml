@@ -29,6 +29,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.tm-use-recommended-tools-to-create-a-data-flow-diagram.1-introduction
 - learn.tm-use-recommended-tools-to-create-a-data-flow-diagram.1b-recommended-tools

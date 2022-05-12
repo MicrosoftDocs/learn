@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - azure-storage-accounts
+subjects:
+- networking
 units:
 - learn.azure.run-clustered-applications-azure-shared-disks.introduction
 - learn.azure.run-clustered-applications-azure-shared-disks.define-azure-shared-disks

@@ -25,6 +25,8 @@ products:
 - azure
 - azure-synapse-analytics
 - power-bi
+subjects:
+- data-analytics
 units:
 - learn.wwl.explore-data-analytics-scale.introduction
 - learn.wwl.explore-data-analytics-scale.explore-data-team-roles-responsibilities

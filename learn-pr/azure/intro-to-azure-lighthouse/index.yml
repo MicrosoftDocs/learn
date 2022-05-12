@@ -29,6 +29,9 @@ roles:
 products:
 - azure
 - azure-lighthouse
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.intro-to-azure-lighthouse.1-introduction
 - learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
@@ -45,4 +48,3 @@ units:
 - learn.intro-to-azure-lighthouse.10-summary
 badge:
   uid: learn.intro-to-azure-lighthouse.badge
-  

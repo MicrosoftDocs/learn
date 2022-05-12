@@ -29,6 +29,8 @@ products:
 prerequisites: |
   - A web browser
   - Visual Studio Code and Live Server extension, installed
+subjects:
+- development-tools
 units:
   - learn.student-evangelism.web-development-101.functions.introduction
   - learn.student-evangelism.web-development-101.functions.overview-functions

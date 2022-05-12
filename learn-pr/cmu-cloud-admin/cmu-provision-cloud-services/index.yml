@@ -35,6 +35,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-admin.provision-manage.0-intro
 - learn.cmu-cloud-admin.provision-manage.1-cloud-services

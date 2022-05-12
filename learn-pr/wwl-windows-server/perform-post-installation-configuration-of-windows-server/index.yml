@@ -30,6 +30,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- device-management
 units:
 - learn.wwl.perform-post-installation-configuration-of-windows-server.introduction
 - learn.wwl.perform-post-installation-configuration-of-windows-server.list-available-post-installation-tools

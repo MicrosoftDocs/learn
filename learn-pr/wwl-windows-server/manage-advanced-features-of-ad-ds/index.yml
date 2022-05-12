@@ -30,6 +30,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.manage-advanced-features-of-ad-ds.introduction
 - learn.wwl.manage-advanced-features-of-ad-ds.create-trust-relationships

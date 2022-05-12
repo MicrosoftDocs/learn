@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - azure-cognitive-services
+subjects:
+- natural-language-processing
 modules:
 - learn.wwl.build-qna-solution-qna-maker
 trophy:

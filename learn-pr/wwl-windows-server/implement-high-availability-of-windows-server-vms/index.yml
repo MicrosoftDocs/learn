@@ -30,6 +30,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- virtual-machine
+- networking
 units:
 - learn.wwl.implement-high-availability-of-windows-server-vms.introduction
 - learn.wwl.implement-high-availability-of-windows-server-vms.select-options-for-hyper-v

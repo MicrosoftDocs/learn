@@ -25,6 +25,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.build-query-delta-lake.introduction
 - learn.wwl.build-query-delta-lake.describe-open-source

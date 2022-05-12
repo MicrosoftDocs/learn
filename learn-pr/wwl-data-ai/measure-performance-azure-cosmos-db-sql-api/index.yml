@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api.introduction
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api.understand-azure-monitor

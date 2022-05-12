@@ -40,6 +40,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- migration
+- virtual-machine
 units:
 - learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.introduction
 - learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.plan-your-migration

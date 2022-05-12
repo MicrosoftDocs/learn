@@ -31,6 +31,8 @@ roles:
 - student
 products: 
 - azure-machine-learning
+subjects:
+- development-tools
 modules:
 - learn.pytorch.intro-machine-learning
 - learn.pytorch.intro-computer-vision

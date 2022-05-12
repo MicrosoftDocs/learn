@@ -25,6 +25,8 @@ roles:
 products:
 - m365
 - windows
+subjects:
+- security
 units:
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.introduction
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.understand-attack-surface-reduction

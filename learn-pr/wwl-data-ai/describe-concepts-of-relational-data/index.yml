@@ -26,6 +26,8 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- database
 units:
 - learn.wwl.describe-concepts-of-relational-data.introduction
 - learn.wwl.describe-concepts-of-relational-data.explore-characteristics

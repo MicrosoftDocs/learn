@@ -26,6 +26,8 @@ products:
 - azure-portal
 - azure-sql-database
 - azure-virtual-machines
+subjects:
+- cloud-computing
 units:
 - learn-wwl.azure-in-action.1-module-overview
 - learn-wwl.azure-in-action.2-demo--microsoft-azure-migration

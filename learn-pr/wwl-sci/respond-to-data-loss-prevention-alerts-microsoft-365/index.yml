@@ -25,6 +25,9 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- information-protection-governance
+- compliance
 units:
 - learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.introduction
 - learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.understand-dlp-alerts
