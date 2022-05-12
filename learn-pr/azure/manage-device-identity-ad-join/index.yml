@@ -26,6 +26,8 @@ roles:
 - solution-architect
 products:
 - azure-active-directory
+subjects:
+- device-management
 units:
 - learn.azure.manage-device-identity-ad-join.introduction
 - learn.azure.manage-device-identity-ad-join.what-is-device-identity

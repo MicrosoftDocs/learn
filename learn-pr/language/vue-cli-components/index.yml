@@ -26,6 +26,8 @@ roles:
 products:
 - azure-app-service-static
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.vue-cli-components.1-introduction
 - learn.language.vue-cli-components.2-vue-cli

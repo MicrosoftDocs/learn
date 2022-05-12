@@ -33,6 +33,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.introduction-to-github.1-introduction
 - learn.github.introduction-to-github.2-what-is-github

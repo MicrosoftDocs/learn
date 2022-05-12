@@ -36,6 +36,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.manage-innersource-program-github.1-introduction
 - learn.github.manage-innersource-program-github.2-manage-innersource-program

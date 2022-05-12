@@ -30,6 +30,8 @@ roles:
   - student
 products:
   - vs-code
+subjects:
+- development-tools
 units:
   - learn.languages.python-install-vscode.introduction
   - learn.languages.python-install-vscode.python-programming-language

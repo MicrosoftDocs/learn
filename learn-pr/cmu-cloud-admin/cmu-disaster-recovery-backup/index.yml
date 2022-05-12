@@ -42,6 +42,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- business-continuity
 units:
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.0-introduction
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.1-failures-fault-tolerance

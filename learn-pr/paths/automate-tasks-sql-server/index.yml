@@ -26,6 +26,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- database
 modules:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database
 - learn.wwl.schedule-tasks-using-sql-server-agent

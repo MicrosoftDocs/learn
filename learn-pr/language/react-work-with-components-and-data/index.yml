@@ -27,6 +27,8 @@ roles:
 products:
 - azure-app-service-static
 - vs-code
+subjects:
+- data-analytics
 units:
 - learn.language.react-work-with-components-and-data.1-introduction
 - learn.language.react-work-with-components-and-data.2-exercise-props

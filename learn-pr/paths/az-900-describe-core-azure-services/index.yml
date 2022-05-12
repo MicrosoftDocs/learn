@@ -91,6 +91,10 @@ products:
 - azure-virtual-machines
 - azure-virtual-network
 - azure-vpn-gateway
+subjects:
+- digital-application-innovation
+- data-ai
+- infrastructure
 modules:
 - learn.azure.azure-compute-fundamentals
 - learn.azure.azure-networking-fundamentals

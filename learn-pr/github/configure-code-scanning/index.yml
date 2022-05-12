@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - github
+subjects:
+- devops
 units:
 - learn.github.configure-code-scanning.1-introduction
 - learn.github.configure-code-scanning.2-what-code-scanning

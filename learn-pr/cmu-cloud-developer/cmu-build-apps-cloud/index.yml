@@ -38,6 +38,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.0-introduction
 - learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.1-program-cloud

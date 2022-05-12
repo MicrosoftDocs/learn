@@ -22,6 +22,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- serverless-compute
 modules:
 - learn.azure.azure-compute-fundamentals
 - learn.manage-vms-with-azure-cli

@@ -30,6 +30,8 @@ roles:
   - solution-architect
 products:
   - github
+subjects:
+- information-protection-governance
 units:
   - learn.github.manage-sensitive-data-security-policies.introduction 
   - learn.github.manage-sensitive-data-security-policies.set-security-policies

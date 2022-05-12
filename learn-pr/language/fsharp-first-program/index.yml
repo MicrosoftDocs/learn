@@ -28,6 +28,9 @@ products:
 prerequisites: |
   - Know how to run commands at the console.
   - Have F# (.NET Core) installed.
+subjects:
+- development-tools
+- storage
 units:
   - learn.fsharp-first-program.1-introduction
   - learn.fsharp-first-program.2-variables-types

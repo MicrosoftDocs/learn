@@ -35,6 +35,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
+- cloud-computing
 modules:
 - learn.wwl.explore-infrastructure-as-code-configuration-management
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates
