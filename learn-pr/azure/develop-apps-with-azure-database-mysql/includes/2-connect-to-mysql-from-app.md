@@ -571,7 +571,7 @@ public class Todo {
 
 ### Connect to and query the database
 
-Next, add the Java code that uses JDBC to connect to your flexible server, create a table, store, retrieve and update data. 
+Next, add the Java code that uses JDBC to connect to your flexible server, create a table, store, retrieve and update data.
 Create a *src/main/java/com/example/DemoApplication.java* file, that contains:
 
 ```java

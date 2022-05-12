@@ -25,7 +25,7 @@ In general, if you want to use a MySQL database in your Azure Kubernetes applica
 
 To deploy an application on AKS that integrates Azure Database for MySQL - Flexible Server in the backend, follow the below five simple steps:
 
-1. **Create a MySQL flexible server** using the Azure Portal, the Azure CLI, an ARM/Bicep template, or other Azure tools. 
+1. **Create a MySQL flexible server** using the Azure Portal, the Azure CLI, an ARM/Bicep template, or other Azure tools.
     Along with choosing the right compute, storage, backup, and high availability options, it’s important to decide the suitable networking option while creating the MySQL flexible server. Based on how you’d like AKS to reach the MySQL flexible server, you can choose either of the following options:
 
     - Public Access (allowed IP addresses)

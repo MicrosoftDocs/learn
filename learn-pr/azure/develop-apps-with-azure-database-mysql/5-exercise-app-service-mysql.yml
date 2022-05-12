@@ -3,7 +3,7 @@ uid: learn.develop-apps-with-azure-database-mysql.exercise-app-service-mysql
 title: Build PHP (Laravel) and MySQL Flexible Server app on Azure App Service
 metadata:
   unitType: exercise
-  title: Build PHP (Laravel) and MySQL Flexible Server app on Azure App Service
+  title: Build PHP (Laravel) and MySQL - Flexible Server app on Azure App Service
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 5/10/2022
   author: shreyaaithal

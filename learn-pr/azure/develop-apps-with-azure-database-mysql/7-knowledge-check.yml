@@ -14,58 +14,58 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "An e-commerce company has developed its client application using PHP, hosted on an on-premises Apache server, and connecting to a MySQL server in the backend. As the application grew in terms of features and customer base, it's performance has been severely affected and the company is unable to serve customers during peak traffic. Teams working on individual features and services are finding it difficult to manage, monitor and make changes to their part of the application. What is the best solution to mitigate these issues?"
     choices:
-    - content: ""
+    - content: "Migrate the application to Azure and host it on Azure Virtual Machines. Migrate the on-premises MySQL server to a managed VM on Azure."
+      isCorrect: false
+      explanation: "Try again. Migrating application and database to Azure VMs may simplify scaling and improve performance, but it does not solve all their issues."
+    - content: "Deploy the application to Azure App Service, and migrate the MySQL server to Azure Database for MySQL - Flexible Server."
+      isCorrect: false
+      explanation: "Try again. Migrating application and database to Azure App Service may simplify scaling and improve performance, but it does not solve all their issues."
+    - content: "Modernize the application architecture to microservices, deploy it to Azure Kubernetes Service and migrate the MySQL server to Azure Database for MySQL - Flexible Server."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. With the monolithic application broken into microservices, individual services can be developed, scaled, and managed effectively. MySQL - Flexible Server further enhances database performance and manageability."
+  - content: "An IT company wants to create a simple cost-effective application that sends a notification to respective managers every time a code change is submitted. What is the best application hosting option on Azure for this scenario?"
     choices:
-    - content: ""
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Try again. This option is complex to implement and is not cost-effective."
+    - content: "Azure Functions"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. An event-driven serverless computing option like Azure Functions is ideal for such scenarios. It is easy to implement and is cost-effective since you  are only charged for the time and resources taken to execute the code."
+    - content: "Azure Kubernetes Services (AKS)"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. While AKS can be a possible option, it may not be cost-effective or easy to implement."
+  - content: "What connection information is sufficient to connect and query a Azure Database for MySQL flexible server database from an application hosted in Azure App Service or AKS?"
     choices:
-    - content: ""
+    - content: "Server name, resource group name, admin username and password."
+      isCorrect: false
+      explanation: "Try again. The list is incomplete and resource group name is not required to connect to MySQL - Flexible Server."
+    - content: "Server name, database name, admin username and password."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. These four pieces of information are sufficient to connect to a database in MySQL flexible server."
+    - content: "Server name, MySQL version, database name, admin username and password."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. MySQL version is not required to connect to MySQL - Flexible Server."
+  - content: "An application is facing intermittent connectivity issues while connecting to MySQL - Flexible Server. These issues occur randomly and cannot be reproduced at will. What is the most probable cause for this issue and the best solution to mitigate it?"
     choices:
-    - content: ""
+    - content: "Transient faults; Implement retry logic."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Cloud environments are likely to encounter transient faults like network connectivity interruptions or service timeouts. Application can be up and running again after retrying database requests with sufficient delays."
+    - content: "Wrong connection string used in application; Check the connection string and connection information."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Try again. If connection string was incorrectly mentioned, connections should have failed at all times and not intermittently."
+    - content: "Flexible server's provisioned storage limit has been reached; Scale up storage."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. When storage consumed is reaching the provisioned limit, the flexible server is put to read-only mode. Application will still be able to connect to it and perform read operations."
+  - content: "Jim is tasked with developing an external facing website for his large organization using WordPress. He decides to deploy this application on Azure App Service and use Azure Database for MySQL - Flexible Server in the backend to store blog data. What is the most suitable Flexible Server compute tier for this workload?"
     choices:
-    - content: ""
+    - content: "Burstable"
+      isCorrect: false
+      explanation: "Try again. Burstable tier is best suited for test and development workloads that do not require full CPU continuously."
+    - content: "General Purpose"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. General Purpose tier is the suitable option for business workloads such as enterprise web applications."
+    - content: "Memory Optimized"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Try again. Memory Optimized tier is tailored to serve high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
