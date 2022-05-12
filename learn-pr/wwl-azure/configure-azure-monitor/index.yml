@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-monitor
+subjects:
+- business-continuity
 units:
 - learn.wwl.configure-azure-monitor.introduction
 - learn.wwl.configure-azure-monitor.describe-key-capabilities

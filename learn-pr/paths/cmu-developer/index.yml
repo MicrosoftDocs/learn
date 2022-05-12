@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization

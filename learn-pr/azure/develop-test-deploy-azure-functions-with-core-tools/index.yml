@@ -26,6 +26,8 @@ roles:
 products: 
 - azure
 - azure-functions
+subjects:
+- development-tools
 units:
 - learn-pr.develop-test-deploy-azure-functions-core-tools.1-introduction
 - learn-pr.develop-test-deploy-azure-functions-core-tools.2-create-run-functions-locally-core-tools

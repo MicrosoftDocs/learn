@@ -28,6 +28,9 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
+- cloud-security
 units:
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.introduction
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.discover-apps-by-using-mcas-adfs-app-report

@@ -56,6 +56,10 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
+- data-analytics
+- data-visualization
 units:
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.1-data-structure-graph-flow

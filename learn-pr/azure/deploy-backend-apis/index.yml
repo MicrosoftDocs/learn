@@ -34,7 +34,9 @@ products:
   - vs-code
   - azure-functions
   - azure-logic-apps
-units:  
+subjects:
+- serverless-compute
+units:
 - learn.azure.deploy-backend-apis.1-introduction
 - learn.azure.deploy-backend-apis.2-create-apis-azure-functions
 - learn.azure.deploy-backend-apis.3-exercise-deploy-resources

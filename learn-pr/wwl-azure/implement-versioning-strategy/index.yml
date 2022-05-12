@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
 units:
 - learn.wwl.implement-versioning-strategy.introduction
 - learn.wwl.implement-versioning-strategy.understand-versioning-of-artifacts

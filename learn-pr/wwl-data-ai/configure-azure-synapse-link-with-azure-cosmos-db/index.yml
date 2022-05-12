@@ -27,6 +27,8 @@ roles:
 products:
 - azure-cosmos-db
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.introduction
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.enable-cosmos-db-account-to-use

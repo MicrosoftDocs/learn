@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- infrastructure
 units:
 - learn.wwl.implement-terraform.introduction
 - learn.wwl.implement-terraform.what-is-terraform

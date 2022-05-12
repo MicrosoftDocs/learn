@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - azure-spring-cloud
+subjects:
+- data-engineering
 units:
 - learn.azure-spring-cloud-workshop.1-introduction
 - learn.azure-spring-cloud-workshop.2-create-instance

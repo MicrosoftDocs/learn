@@ -36,6 +36,10 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- cloud-computing
+- virtual-machine
+- data-engineering
 units:
 - learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.introduction
 - learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.overview-of-kubernetes-aks

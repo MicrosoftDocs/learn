@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.explore-continuous-integration.introduction
 - learn.wwl.explore-continuous-integration.introduction-continuous-integration

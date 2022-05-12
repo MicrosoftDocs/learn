@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-speech-text
+subjects:
+- natural-language-processing
 units:
 - learn.azure.intro-to-speech-to-text.introduction
 - learn.azure.intro-to-speech-to-text.what-is-speech-to-text

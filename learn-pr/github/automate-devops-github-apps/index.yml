@@ -31,6 +31,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.automate-devops-github-apps.1-introduction
 - learn.github.automate-devops-github-apps.2-what-are-github-apps

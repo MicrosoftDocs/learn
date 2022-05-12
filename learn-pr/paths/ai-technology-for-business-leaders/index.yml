@@ -22,6 +22,8 @@ products:
 - azure
 - dynamics-365
 - m365
+subjects:
+- artificial-intelligence
 modules:
 - learn-wwl.intro-to-ai-technology
 - learn-wwl.microsoft-approach-to-ai

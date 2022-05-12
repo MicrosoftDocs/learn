@@ -31,7 +31,11 @@ roles:
 products:
 - vs-code
 - windows-mixed-reality
-units: 
+subjects:
+- mixed-reality
+- development-tools
+- cross-development
+units:
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.introduction
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.webxr-babylonjs
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.environment-setup

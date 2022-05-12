@@ -25,6 +25,9 @@ roles:
 products:
 - azure
 - azure-synapse-analytics
+subjects:
+- cloud-computing
+- data-engineering
 units:
 - learn.wwl.introduction-to-azure-synapse-analytics.introduction
 - learn.wwl.introduction-to-azure-synapse-analytics.what-is

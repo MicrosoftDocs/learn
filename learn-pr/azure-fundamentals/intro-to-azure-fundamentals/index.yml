@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-cloud-services
+subjects:
+- cloud-computing
 units:
 - learn.azure.intro-to-azure-fundamentals.introduction
 - learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing

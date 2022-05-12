@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- business-continuity
 units:
 - learn.wwl.implement-blue-green-deployment-feature-toggles.introduction
 - learn.wwl.implement-blue-green-deployment-feature-toggles.what-blue-green-deployment

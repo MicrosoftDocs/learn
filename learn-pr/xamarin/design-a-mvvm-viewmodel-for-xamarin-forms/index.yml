@@ -26,6 +26,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.design-a-mvvm-viewmodel-for-xamarin-forms.1-introduction
 - learn-xamarin.design-a-mvvm-viewmodel-for-xamarin-forms.2-what-is-mvvm

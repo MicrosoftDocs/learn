@@ -23,6 +23,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- networking
 modules:
 - learn.wwl.introduction-to-azure-virtual-networks
 - introduction-azure-private-link

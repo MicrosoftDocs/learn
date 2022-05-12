@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- productivity
+units:
 - learn-wwl.cultivate-innovative-mindset.introduction
 - learn-wwl.cultivate-innovative-mindset.power-embracing-innovative-mindset
 - learn-wwl.cultivate-innovative-mindset.establish-collaborative-environment

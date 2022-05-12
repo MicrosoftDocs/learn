@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- accessibility
 units:
 - learn.cela-disability-intro.00-what-is-accessibility
 - learn.cela-disability-intro.01-language-and-etiquette

@@ -25,6 +25,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- virtual-machine
+- data-management
 units:
 - learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.introduction
 - learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.azure-options-for-monitoring

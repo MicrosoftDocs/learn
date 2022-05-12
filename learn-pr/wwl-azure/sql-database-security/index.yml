@@ -28,6 +28,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- security
 units:
 - learn.wwl.sql-database-security.introduction
 - learn.wwl.sql-database-security.authentication

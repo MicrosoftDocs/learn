@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-api-management
+subjects:
+- cloud-computing
 units:
 - learn.publish-manage-apis-with-azure-api-management.1-introduction
 - learn.publish-manage-apis-with-azure-api-management.2-create-an-api-gateway

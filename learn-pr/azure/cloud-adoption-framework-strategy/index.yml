@@ -39,6 +39,8 @@ products:
 - azure-monitor
 - azure-arc
 - azure-resource-manager
+subjects:
+- cloud-computing
 units:
 - learn.cloud-adoption-framework-strategy.1-introduction
 - learn.cloud-adoption-framework-strategy.2-customer-narrative

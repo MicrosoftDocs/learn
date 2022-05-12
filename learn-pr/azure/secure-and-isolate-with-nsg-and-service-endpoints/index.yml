@@ -30,6 +30,10 @@ roles:
 products:
 - azure
 - azure-virtual-network
+subjects:
+- infrastructure
+- networking
+- security
 units:
 - learn.secure-and-isolate-with-nsg-and-service-endpoints.1-introduction
 - learn.secure-and-isolate-with-nsg-and-service-endpoints.2-network-security-groups

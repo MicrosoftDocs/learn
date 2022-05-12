@@ -35,6 +35,8 @@ roles: # TBC
 products: 
 - azure
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.go-control-flow.0-introduction
 - learn.language.go-control-flow.1-use-if-else-statements
@@ -46,4 +48,4 @@ units:
 - learn.language.go-control-flow.7-knowledge-check
 - learn.language.go-control-flow.8-summary
 badge:
-  uid: learn.language.go-control-flow.badge 
+  uid: learn.language.go-control-flow.badge

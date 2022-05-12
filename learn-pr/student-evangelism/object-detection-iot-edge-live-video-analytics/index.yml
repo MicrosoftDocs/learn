@@ -37,6 +37,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.oxford.object-detection-lva-edge-device.introduction
 - learn.oxford.object-detection-lva-edge-device.build-video-analytics-solution

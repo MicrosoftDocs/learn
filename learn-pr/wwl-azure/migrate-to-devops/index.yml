@@ -41,6 +41,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- migration
+- devops
 units:
 - learn.wwl.migrate-to-devops.introduction
 - learn.wwl.migrate-to-devops.what-is-azure-devops

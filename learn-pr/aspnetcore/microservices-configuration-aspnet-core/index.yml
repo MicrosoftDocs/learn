@@ -33,6 +33,8 @@ products:
   - azure-app-configuration
   - azure-container-registry
   - azure-kubernetes-service
+subjects:
+- serverless-compute
 units:
   - learn.microservices-configuration-aspnet-core.1-introduction
   - learn.microservices-configuration-aspnet-core.2-environment-setup

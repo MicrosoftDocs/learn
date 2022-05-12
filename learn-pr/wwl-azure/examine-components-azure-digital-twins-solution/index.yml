@@ -28,6 +28,8 @@ products:
 - azure
 - azure-digital-twins
 - azure-portal
+subjects:
+- business-applications
 units:
 - learn.wwl.examine-components-of-azure-digital-twins-solution.introduction
 - learn.wwl.examine-components-of-azure-digital-twins-solution.review-environment-services-goals

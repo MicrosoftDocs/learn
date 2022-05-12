@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.introduction-to-source-control.introduction
 - learn.wwl.introduction-to-source-control.explore-devops-foundational-practices

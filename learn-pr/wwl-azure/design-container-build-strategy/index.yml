@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- container
 units:
 - learn.wwl.design-container-build-strategy.introduction
 - learn.wwl.design-container-build-strategy.why-containers

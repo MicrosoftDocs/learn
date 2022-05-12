@@ -28,6 +28,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
 units:
 - learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.introduction
 - learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.plan-deployment

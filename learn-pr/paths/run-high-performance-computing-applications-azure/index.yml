@@ -31,6 +31,9 @@ products:
 - azure-virtual-machines
 - azure-cyclecloud
 - azure-netapp-files
+subjects:
+- cloud-computing
+- high-performance-computing
 modules:
 - learn.intro-to-hpc
 - learn.azure.create-batch-account-using-azure-portal

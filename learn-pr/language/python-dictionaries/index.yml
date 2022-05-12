@@ -29,6 +29,8 @@ roles:
   - developer
 products:
   - vs
+subjects:
+- development-tools
 units:
 - learn.beginner-python.python-dictionaries.introduction
 - learn.beginner-python.python-dictionaries.dictionary-basics

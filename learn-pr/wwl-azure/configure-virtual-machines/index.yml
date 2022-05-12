@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-virtual-machines.introduction
 - learn.wwl.configure-virtual-machines.review-cloud-services-responsibilities

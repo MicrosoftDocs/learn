@@ -27,6 +27,8 @@ roles:
   - student
 products:
   - vs
+subjects:
+- knowledge-management
 units:
 - learn.beginner-python.create-run-jupyter-notebook.introduction
 - learn.beginner-python.create-run-jupyter-notebook.setup

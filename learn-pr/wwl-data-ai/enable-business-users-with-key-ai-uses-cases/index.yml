@@ -26,6 +26,8 @@ roles:
 products:
 - m365
 - power-platform
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.enable-business-users-with-key-ai-uses-cases.introduction
 - learn.wwl.enable-business-users-with-key-ai-uses-cases.introduction-to-ai-for

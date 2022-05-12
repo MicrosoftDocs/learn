@@ -30,6 +30,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- marketing-sales
 units:
 - learn.pitch-your-product-prototype.1-introduction
 - learn.pitch-your-product-prototype.2-develop-your-elevator-pitch

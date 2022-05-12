@@ -31,6 +31,8 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
   - azure
   - azure-bot-service
+subjects:
+- development-tools
 units:
 - learn.azure.choose-bot-building-tool.1-introduction
 - learn.azure.choose-bot-building-tool.2-identify-product-options

@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- architecture
 units:
 - learn.azdo.create-multi-stage-pipeline.1-introduction
 - learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline

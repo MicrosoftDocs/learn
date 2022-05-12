@@ -29,6 +29,8 @@ roles:
 - support-engineer
 products:
 - azure-expressroute
+subjects:
+- networking
 units:
 - learn.wwl.cloud-hybrid-connectivity.introduction
 - learn.wwl.cloud-hybrid-connectivity.setup-troubleshooting-environment

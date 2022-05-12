@@ -31,6 +31,8 @@ roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- database
 units:
 - learn-sqlserver.automatically-tune-sql-server-linux.1-introduction
 - learn-sqlserver.automatically-tune-sql-server-linux.2-monitor-sql-performance-linux

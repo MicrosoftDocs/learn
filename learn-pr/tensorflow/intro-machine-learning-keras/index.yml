@@ -31,6 +31,8 @@ products:
 prerequisites: |
   - Basic Python knowledge.
   - Basic knowledge about how to use Jupyter Notebooks.
+subjects:
+- machine-learning
 units:
 - learn.tensorflow.intro-machine-learning-keras.introduction
 - learn.tensorflow.intro-machine-learning-keras.data

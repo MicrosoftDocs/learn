@@ -31,6 +31,9 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
+- cloud-computing
 units:
 - learn.github.merge-conflict-resolution-github.1-introduction
 - learn.github.merge-conflict-resolution-github.2-what-are-merge-conflicts

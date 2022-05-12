@@ -31,6 +31,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.communicate-using-markdown.1-introduction
 - learn.github.communicate-using-markdown.2-what-is-markdown

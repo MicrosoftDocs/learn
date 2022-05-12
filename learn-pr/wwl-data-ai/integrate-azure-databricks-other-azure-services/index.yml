@@ -22,6 +22,10 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-management
+- cross-development
+- cloud-computing
 units:
 - learn.wwl.integrate-azure-databricks-other-azure-services.introduction
 - learn.wwl.integrate-azure-databricks-other-azure-services.integrate-azure-synapse-analytics

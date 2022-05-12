@@ -28,6 +28,9 @@ products:
 - azure
 - azure-cognitive-services
 - azure-sdks
+subjects:
+- natural-language-processing
+- artificial-intelligence
 units:
 - learn.wwl.recognize-synthesize-speech.introduction
 - learn.wwl.recognize-synthesize-speech.get-started-azure

@@ -30,6 +30,8 @@ products:
 - azure-application-insights
 - azure-container-registry
 - azure-kubernetes-service
+subjects:
+- data-engineering
 modules:
 - learn.languages.dotnet-microservices
 - learn.languages.dotnet-deploy-microservices-kubernetes

@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 units:
 - learn.wwl.explore-roles-responsibilities-world-of-data.introduction
 - learn.wwl.explore-roles-responsibilities-world-of-data.explore-job-roles
