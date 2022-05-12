@@ -15,3 +15,5 @@ In this module, you'll learn:
 
 - When to use classification.
 - How to train and evaluate a classification model by using the tidymodels framework.
+
+***Produced in partnership with Eric Wanjou - Microsoft Learn Student Ambassador and Researcher at the University of Leeds***
