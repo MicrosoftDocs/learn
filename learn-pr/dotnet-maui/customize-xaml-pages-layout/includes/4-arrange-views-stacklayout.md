@@ -1,31 +1,34 @@
-Stacking views in a vertical or horizontal list is a common design for user interfaces. Think about some common pages in applications. Examples include sign in, register, and settings pages. All these pages typically contain stacked content. In this unit, you'll learn how to arrange views in a vertical or horizontal list by using `StackLayout`.
+Stacking views in a vertical or horizontal list is a common design for user interfaces. Think about some common pages in applications. Examples include sign in, register, and settings pages. All these pages typically contain stacked content. In this unit, you'll learn how to arrange views in a vertical or horizontal list by using `StackLayout` and with the new optimized `VerticalStackLayout` and `HorizontalStackLayout`.
 
-## What is a StackLayout?
+## What is a StackLayout, VerticalStackLayout, and HorizontalStackLayout?
 
 `StackLayout` is a layout container that organizes its child views left-to-right or top-to-bottom. The direction is based on its `Orientation` property, and the default value is top-to-bottom. The following illustration shows a conceptual view of a vertical `StackLayout`.
 
 :::image type="content" source="../media/4-stack-layout.png" alt-text="Illustration showing four blocks stacked vertically from top to bottom of the screen.":::
 
-`StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which are good because most UI elements you'll work with in .NET MAUI derive from `View`. Layout panels are also derived from `View`, which means you can nest panels if you need to.
+- `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which are good because most UI elements you'll work with in .NET MAUI derive from `View`. Layout panels are also derived from `View`, which means you can nest panels if you need to.
+
+- `VerticalStackLayout` and `HorizontalStackLayout` are the preferred layouts to use when you know that your orientation will not change as they are optimized for performance.
 
 ## How to add views to a StackLayout
 
 In .NET MAUI, you can add views to a `StackLayout` in C# code or in XAML. Here's an example of three views added using code:
 
+```xaml
+<StackLayout x:Name="stack">
+</StackLayout>
+```
+
 ```csharp
 public partial class MainPage : ContentPage
 {
-    Color Silver = Color.FromRgb(0xC0, 0xC0, 0xC0);
-    Color Blue = Color.FromRgb(0x00, 0x00, 0xFF);
-    Color Gray = Color.FromRgb(0x80, 0x80, 0x80);
-
     public MainPage()
     {
         InitializeComponent();
 
-        var a = new BoxView() { BackgroundColor = Silver, HeightRequest = 40 };
-        var b = new BoxView() { BackgroundColor = Blue, HeightRequest = 40 };
-        var c = new BoxView() { BackgroundColor = Gray, HeightRequest = 40 };
+        var a = new BoxView { BackgroundColor = Colors.Silver, HeightRequest = 40 };
+        var b = new BoxView { BackgroundColor = Colors.Blue, HeightRequest = 40 };
+        var c = new BoxView { BackgroundColor = Colors.Gray, HeightRequest = 40 };
 
         stack.Children.Add(a);
         stack.Children.Add(b);
@@ -113,3 +116,21 @@ Here's how each of these values works:
 :::image type="content" source="../media/4-layout-options-expands.png" alt-text="Illustration showing a box in StackLayout using four expansion settings: StartAndExpand, CenterAndExpand, EndAndExpand, and FillAndExpand.":::
 
 The orange box is the view and the gray rectangle represents the extra space given to it by the `Expands` property. The view fills the extra space only when you use the `FillAndExpand` value. When you use the other values, the extra space remains empty, but it can't be used by other views in the `StackLayout`.
+
+## Optimized StackLayouts
+Mentioned earlier, the `VerticalStackLayout` and `HorizontalStackLayout` are optimized `StackLayout` controls with pre-defined orientations. It is recommended to use these controls when possible for the best layout performance. These layouts have the functionality of `LayoutOptions` and `Spacing` that the regular `StackLayout` has.
+
+```xaml
+<VerticalStackLayout Spacing="30">
+    <BoxView Color="Silver" />
+    <BoxView Color="Blue" />
+    <BoxView Color="Gray" />
+</VerticalStackLayout>
+
+<HorizontalStackLayout Spacing="30">
+    <BoxView Color="Silver" />
+    <BoxView Color="Blue" />
+    <BoxView Color="Gray" />
+</HorizontalStackLayout>
+```
+
