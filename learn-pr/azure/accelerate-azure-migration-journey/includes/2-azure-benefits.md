@@ -5,7 +5,7 @@ The cloud delivers fundamental technology benefits that can help your enterprise
 - Application modernization
 - Optimize costs
 - Build resilience and security
-- Move what you want, when you with hybrid flexibility
+- Move what you want, when you want with hybrid flexibility
 - Scale applications and workloads on demand
 - Faster innovation with a managed platform
 
@@ -19,7 +19,7 @@ In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-
 
 ### Pay less with Azure
 
-Azure customers with existing SQL Server or Windows Server license can re-use their licenses in the cloud with the Azure Hybrid benefit for exclusive savings, and you can be confident you’re getting the best price on any cloud as Azure costs 5x less than AWS for WS and SQL server.
+Azure customers with existing SQL Server or Windows Server license can reuse their licenses in the cloud with the Azure Hybrid benefit for exclusive savings, and you can be confident you’re getting the best price on any cloud as Azure costs 5x less than AWS for WS and SQL server.
 
 ![Two bar graphs showing AWS vs Azure costs for Windows and SQL Server with Azure being less expensive than AWS.](../media/azure-vs-aws.png)
 
@@ -31,11 +31,11 @@ Resilience is a core tenet of Azure trusted cloud commitments, alongside complia
 
 ### High-availability network design
 
-Unlike many other public cloud providers, data that traverses between Azure datacenters and regions doesn’t go through the public Internet - it stays in Microsoft’s network. The reliability and performance of cloud services is determined in part by the network and in addition to having more datacenter regions than any of our competitor. Microsoft’s network is also one of the largest in the world.
+Unlike many other public cloud providers, data that traverses between Azure datacenters and regions doesn’t go through the public Internet - it stays in Microsoft’s network. The reliability and performance of cloud services is determined in part by the network and in addition to having more datacenter regions than any of our competitors. Microsoft’s network is also one of the largest in the world.
 
 The Microsoft global wide-area network (WAN) plays an essential part in delivering a great cloud service experience – offering near-perfect availability, high capacity, and the flexibility to respond to unpredictable demand spikes.
 
-Azure traffic between our datacenters stays on our network and does not flow over the Internet. This includes all traffic between Microsoft services anywhere in the world. For example, within Azure, traffic between virtual machines, storage, and SQL communication traverses only the Microsoft network, regardless of the source and destination region. Intra-region VNet-to-VNet traffic, as well as cross-region VNet-to-VNet traffic, stays on the Microsoft network, giving us more control.
+Azure traffic between our datacenters stays on our network and doesn't flow over the Internet. This includes all traffic between Microsoft services anywhere in the world. For example, within Azure, traffic between virtual machines, storage, and SQL communication traverses only the Microsoft network, regardless of the source and destination region. Intra-region VNet-to-VNet traffic, and cross-region VNet-to-VNet traffic, stays on the Microsoft network, giving us more control.
 
 ![A picture of the world with the Azure network shown with connections under the ocean.](../media/network.png)
 
@@ -49,11 +49,11 @@ To ensure resiliency, there's a minimum of three separate zones in all enabled r
 
 ### Maintenance and Service Health Alerts
 
-Azure has invested in improving zero-impact and low-impact update technologies including hot patching, live migration, and in-place migration. The Azure operations teams deploys dozens of security and reliability patches to host infrastructure each year, many of which were implemented with no customer impact or downtime.
+Azure has invested in improving zero-impact and low-impact update technologies including hot patching, live migration, and in-place migration. The Azure operations team deploys dozens of security and reliability patches to host infrastructure each year, many of which were implemented with no customer impact or downtime.
 
 ### Machine Learning driven failure prediction
 
-Microsoft uses predictive techniques to determine when a server might fail, so that operations can migrate virtual machines away from failing servers. Machine Learning and artificial intelligence is used to to collect data and analyze data to learn the patterns that signal a server might be imminently failing. We apply this to disk failures, memory failures, and other types of hardware failures.
+Microsoft uses predictive techniques to determine when a server might fail, so that operations can migrate virtual machines away from failing servers. Machine Learning and artificial intelligence are used to collect data and analyze data to learn the patterns that signal a server might be imminently failing. We apply these predictive techniques to disk failures, memory failures, and other types of hardware failures.
 
 ### Azure Service health alerts and status
 
@@ -69,7 +69,7 @@ These ongoing investments protect workloads across your hybrid environments with
 
 #### Microsoft Defender for Cloud
 
-Microsoft uses a wide variety of physical, infrastructure, and operational controls to help secure Azure, but there are additional actions you need to take to help safeguard your workloads. Turn on Microsoft Defender for Cloud to strengthen your cloud security posture. Within [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/?azure-portal=true), use [Microsoft Defender for Cloud](https://azure.microsoft.com/services/azure-defender/?azure-portal=true) to protect your hybrid cloud workloads.
+Microsoft uses a wide variety of physical, infrastructure, and operational controls to help secure Azure, but there are more actions you need to take to help safeguard your workloads. Turn on Microsoft Defender for Cloud to strengthen your cloud security posture. Within [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/?azure-portal=true), use [Microsoft Defender for Cloud](https://azure.microsoft.com/services/azure-defender/?azure-portal=true) to protect your hybrid cloud workloads.
 
 ![Azure Portal is shown in the Defender for Cloud with recommendations.](../media/security-portal.png)
 
@@ -87,7 +87,7 @@ Identify new threats and respond quickly with services that are informed by real
 
 ## Hybrid flexibility
 
-Hybrid configurations deployed to Azure provide flexibility in the timing of migration or modernization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can not only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continue updating workloads over an extended period of time as well as to manage both on-premises and Azure workloads within a single, modern environment.
+Hybrid configurations deployed to Azure provide flexibility in the timing of migration or modernization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can't only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continue updating workloads over an extended period of time and to manage both on-premises and Azure workloads within a single, modern environment.
 
 ## Scale Applications and Workloads on demand
 
@@ -101,12 +101,12 @@ Increase agility with best-in-class Azure infrastructure that scales to your bus
 
 Most Azure Solutions can be manually scaled up or down, with many also allowing for autoscale. Autoscale is a built-in feature of [App Services](/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Services](/azure/aks/cluster-autoscaler?azure-portal=true), [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
 
-Scaling helps applications perform their best when demand changes. Of course, performance means different things for different applications. Some apps are CPU-bound, others memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
+Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound, others memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
 
 ### Increase performance
 
-The benefits of migration can be immediate in terms of performance. Azure is available in 60 regions worldwide, more than any other cloud provider. Azure has one of the largest global networks, over 130,000 miles of fiber on land and sub-sea. With 160+ edge sites, pairing points, and over 200 [ExpressRoute](https://azure.microsoft.com/services/expressroute?azure-portal=true) partners network speed and connectivity is unparalleled.
+The benefits of migration can be immediate in terms of performance. Azure is available in 60 regions worldwide, more than any other cloud provider. Azure has one of the largest global networks, over 130,000 miles of fiber on land and below the sea. With 160+ edge sites, pairing points, and over 200 [ExpressRoute](https://azure.microsoft.com/services/expressroute?azure-portal=true) partners network speed and connectivity is unparalleled.
 
 ## Application Innovation
 
-Innovation can provide great business value by supporting both current development efforts and visions for future products. The key to innovation is understanding customer needs so you can create inventions that shape how your they interact with your products. Intelligent cloud services like AI and machine learning make continuous innovation possible and can help to unlock new technical skills and expand business capabilities.
+Innovation can provide great business value by supporting both current development efforts and visions for future products. The key to innovation is understanding customer needs so you can create inventions that shape how they interact with your products. Intelligent cloud services like AI and machine learning make continuous innovation possible and can help to unlock new technical skills and expand business capabilities.
