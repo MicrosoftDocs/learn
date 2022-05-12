@@ -28,10 +28,10 @@ products:
 - azure-synapse-analytics
 units:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.introduction
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-csv-file
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-parquet-file
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-json-file
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-multiple-files-folders
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.understand-serverless-pools
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-files
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.external-objects
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.exercise-sql
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.knowledge-check
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.summary
 badge:

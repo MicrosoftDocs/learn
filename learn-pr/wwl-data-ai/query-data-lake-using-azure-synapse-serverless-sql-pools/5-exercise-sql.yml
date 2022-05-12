@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-multiple-files-folders
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.exercise-sql
 title: Exercise - Query files using a serverless SQL pool
 metadata:
   title: Exercise - Query files using a serverless SQL pool
