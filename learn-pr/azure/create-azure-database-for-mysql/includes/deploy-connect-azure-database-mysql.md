@@ -117,35 +117,35 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
 
 11. Next, from the **MySQL [(none)]** prompt, run the following command to list databases hosted by the server:
 
-   ```sql
-   SHOW DATABASES;
-   ```
+      ```sql
+      SHOW DATABASES;
+      ```
 
 12. Verify that the list includes the four pre-created databases (information_schema, mysql, performance_schema, and sys) and the testdb that you created in the previous task.
 
 13. From the **MySQL [(none)]** prompt, run the following command to switch to the testdb database:
 
-   ```sql
-   use testdb;
-   ```
+      ```sql
+      use testdb;
+      ```
 
 14. From the **MySQL [(testdb)]** prompt, run the following command to create a sample table in the testdb database:
 
-   ```sql
-   CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
-   ```
+      ```sql
+      CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
+      ```
    
 15. From the **MySQL [(testdb)]** prompt, run the following command to add a row of data into the newly created table:
 
-   ```sql
-   INSERT INTO table1 values (1,100,'text1');
-   ```
+      ```sql
+      INSERT INTO table1 values (1,100,'text1');
+      ```
 
 16. From the **MySQL [(testdb)]** prompt, run the following command to display the newly added data:
 
-   ```sql
-   SELECT * FROM table1;
-   ```
+      ```sql
+      SELECT * FROM table1;
+      ```
    
 17. To exit the connection, at the **MySQL [(testdb)]** prompt, enter quit.
 
