@@ -50,7 +50,7 @@ For this exercise you want to load a dimension table in Azure Synapse from sourc
         [Phone] [nvarchar](25) NULL,
         [InsertedDate] [datetime] NOT NULL,
         [ModifiedDate] [datetime] NOT NULL,
-        [HashKey] [char](66)
+        [HashKey] [char](64)
     )
     WITH
     (
