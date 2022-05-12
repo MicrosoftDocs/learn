@@ -4,12 +4,6 @@ Suppose you're building a tip calculator application that you plan to deploy on 
 
 In this module, you'll build a .NET MAUI application that looks similar across different devices. You'll start by setting the preferred size and position of a view. Then you'll arrange views vertically using a StackLayout. Next, you place views into rows and columns using a `Grid`. By the end of the module, you'll have a .NET MAUI application that looks consistent on every device type and screen size.
 
-> [!NOTE]
->This module requires [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can use either Windows or a Mac:
->
-> - **Windows:** Make sure you have the **Mobile development with .NET** workload installed in Visual Studio 2022 for Windows, together with the MAUI templates. Refer to the [documentation](/visualstudio/install/modify-visual-studio) if you need to add it to your installation.
-> - **macOS:** The standard Visual Studio 2022 for Mac installation includes everything you need to build mobile apps with .NET MAUI.
-
 ## Learning objectives
 
 In this module, you will:
@@ -20,5 +14,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Visual Studio 2022 with the MAUI workload installed
+- Visual Studio 2022 with the .NET MAUI workload installed
 - Familiarity with C# and .NET
