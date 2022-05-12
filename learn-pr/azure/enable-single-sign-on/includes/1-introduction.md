@@ -10,8 +10,6 @@ You realize that this addition causes users to sign in to yet another applicatio
 
 Single sign-on is a trust relationship between an identity provider and a service provider. In this scenario, the Azure AD tenant that the company uses is known as the *identity provider*. The organization that makes the application available is known as the *service provider*.
 
-When a user signs in to an application using single sign-on, the authentication process creates one or more tokens that enable secure identification. A token is a JSON object that contains claims, which represent information that is securely sharing between the identity provider and the service provider.
-
 For single sign-on, a combination of tasks is required both at the identity provider and at the service provider.
 
 :::image type="content" source="../media/sso-process.png" alt-text="Diagram showing the tasks in single sign-on configuration." border="false":::

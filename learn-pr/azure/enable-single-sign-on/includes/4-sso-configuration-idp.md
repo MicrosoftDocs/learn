@@ -14,14 +14,14 @@ To configure single sign-on for the application:
 
 An application can be accessed in different ways:
 
-- An application can be started by signing in directly to the service provider. This process is known as the service provider initiated single sign-on (SP-initiated SSO) flow.
-- An application can be started from the identity provider, such as the Azure portal or a launcher such as the My Apps portal. This process is known as the identity provider initiated single sign-on (IdP-initiated SSO) flow.
+- An application can be started by signing in directly to the service provider. This process is known as the *service provider initiated single sign-on (SP-initiated SSO)* flow.
+- An application can be started from the identity provider, such as the Azure portal or a launcher such as the My Apps portal. This process is known as the *identity provider initiated single sign-on (IdP-initiated SSO)* flow.
 
 :::image type="content" source="../media/sso-flows.png" alt-text="Diagram showing the flows of single sign-on." border="true":::
 
 All applications that have been integrated into the Azure AD application gallery have associated documentation that identifies the single sign-on flows that it supports. For example, the **Azure AD SAML Toolkit** application scenario description section states that the SP initiated SSO flow is supported. For non-gallery applications, the administrator needs to contact the application developer or possibly test to discover the supported flows.
 
-To access the integration guide for an application, select the **configuration guide** link on the **Set up single sign-on with SAML** pane.
+To access the integration guide for an application, select the **configuration guide** link on the **Set up single sign-on** pane.
 
 :::image type="content" source="../media/guide-link.png" alt-text="Screenshot showing where to find the link to the integration guide." border="true":::
 
@@ -31,7 +31,7 @@ In the IdP-initiated SSO flow, the user signs in to the identity provider, and t
 
 ### SP-initiated SSO
 
-In the SP-initiated SSO flow, the application initiates the request to sign in. When the user attempts to sign in to the service provider, they're redirected to the identity provider to be authenticated. The user is authenticated and then sent back to the application using the SAML response. To configure this process, the administrator defines the **Sign on URL**, which tells the identity provider where to locate the sign-in page of the application.
+In the SP-initiated SSO flow, the application initiates the request to sign in. When the user attempts to sign in to the service provider, they're redirected to the identity provider to be authenticated. The user is authenticated and then sent back to the application using the SAML response. To configure this process, define the **Sign on URL**, which tells the identity provider where to locate the sign-in page of the application.
 
 :::image type="content" source="../media/sp-initiated-sso.png" alt-text="Diagram showing the flow of service provider initiated single sign-on." border="true":::
 
@@ -70,7 +70,7 @@ Attributes define the source of the claim. Many source attributes are provided f
 
 ## SAML certificate
 
-When you add a new application from the gallery and configure SAML-based single sign-on, Azure AD generates a certificate for the application that is valid for three years.
+A new application added from the gallery and configured for SAML-based single sign-on automatically has a certificate generated automatically for it. The certificate is valid for three years. This certificate is shared between the identity provider and the service provider.
 
 :::image type="content" source="../media/saml-cert.png" alt-text="Screenshot showing the certificate created for SAML single sign-on." border="false":::
 

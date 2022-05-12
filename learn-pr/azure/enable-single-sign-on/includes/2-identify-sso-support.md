@@ -1,6 +1,6 @@
 A team asked the administrator of the retail company to add a new application to help with company promotion. The administrator searches for the application in the Azure AD application gallery and identifies single sign-on support for it. 
 
-Employees in the retail company likely already have an account in the tenant for the organization. But, for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successful testing it with single sign-on configured.
+Employees in the retail company likely already have an account in the tenant for the organization. But, for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successfully testing it with single sign-on configured.
 
 ## Azure AD application gallery
 
@@ -10,17 +10,17 @@ Azure AD has a gallery that contains thousands of pre-integrated applications. M
 - Users are assigned access
 - Single sign-on is set up so that the users can sign in with their Azure AD credentials
 
-When the administrator searches for an application to add from the gallery, the following filters can be used:
+The following filters can be used when searching for the application in the gallery:
 
 - **Single sign-on options** – Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked. Listed as **Single Sign-On Mode** on the overview pane for an application in the gallery.
 - **User account management** – The only option available is automated provisioning.
 - **Categories** – When an application is added to the gallery it can be classified in a specific category. Many categories are available such as Business management, Collaboration, or Education.
 
-As an administrator considers setting up single sign-on for an application, they should make sure to understand the types and the flows that the application supports. Single sign-on types define the protocol that can be used for single sign-on with the application. An application may support one or more of the available types. Single sign-on flows represent the way that single sign-on is processed between the identity provider and the service provider.
+Make sure to understand the single sign-on types and the flows that the application supports. Single sign-on types define the protocol that can be used for single sign-on with the application. An application may support one or more of the available types. Single sign-on flows represent the way that single sign-on is processed between the identity provider and the service provider.
 
 When looking at applications in the search list, identify federated single sign-on support by looking for the **Federated SSO** icon. The specific single sign-on types that the application supports are listed on its overview pane in the gallery.
 
-When an administrator is preparing to add an application, they should access the integration documentation for it to identify the supported single sign-on flows and any particular single sign-on requirements.
+When preparing to add an application, access the integration documentation for it to identify the supported single sign-on flows and any particular single sign-on requirements.
 
 ## Single sign-on testing
 

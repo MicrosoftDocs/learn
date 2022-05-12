@@ -6,7 +6,7 @@ The administrator then creates a user account in the Azure AD tenant and assigns
 
 ## Access the application gallery
 
-The Azure AD application gallery contains many pre-integrated software as a service (SaaS) applications. Applications that the retail company uses are probably already in the gallery. The administrator at the retail company locates the gallery from the Azure portal.
+The Azure AD application gallery contains many pre-integrated software as a service (SaaS) applications. Applications that the retail company uses are probably already in the gallery. Locate the gallery from the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
@@ -20,7 +20,7 @@ The Azure AD application gallery contains many pre-integrated software as a serv
 
 ## Find and add an application
 
-After the administrator locates the gallery, they search for the **Azure AD SAML Toolkit** application (represents the one that was requested by the team to work on company promotion) and add it to the tenant.
+Search for the **Azure AD SAML Toolkit** application and add it to the tenant.
 
 1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
 
@@ -33,7 +33,7 @@ After the administrator locates the gallery, they search for the **Azure AD SAML
 
 ## Create a test user account
 
-When setting up single sign-on for an application, the administrator should always test the configuration between the identity provider and the service provider before making it available to employees. The administrator creates a user account for the purposes of testing the configuration.
+When setting up single sign-on for an application, test the configuration between the identity provider and the service provider before making it available to employees. Create a user account for the purposes of testing the configuration.
 
 1. On the **Azure Active Directory** pane, under **Manage**, select **Users**.
 1. Select **New user** at the top of the pane.
