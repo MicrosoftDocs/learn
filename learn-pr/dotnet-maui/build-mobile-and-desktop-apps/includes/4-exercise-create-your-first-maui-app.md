@@ -14,41 +14,25 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 ## Examine the solution structure
 
-1. In the Solution Explorer window, expand the **Phoneword** project. Expand the **Resources** folder and its subfolders, expand the **App.xaml** node and the **MainPage.xaml** node.
+1. In the Solution Explorer window, expand the **Phoneword** project. Expand the **Resources** folder and its subfolders, expand the **App.xaml** node, **AppShell.xaml** node, and the **MainPage.xaml** node.
 
     :::image type="content" source="../media/4-phoneword-project.png" alt-text="A screenshot of the Phoneword project in the Visual Studio solution explorer window. It shows the files included as part of the project including fonts and images.":::
 
 1. In the project, note the following items:
 
-    - The **Resources** folder contains shared fonts and images used by all platforms.
+    - The **Resources** folder contains shared fonts, images, and assets used by all platforms.
 
     - The **MauiProgram.cs** file contains the code that configures the app and specifies that the **App** class should be used to run the application. Select the Startup.cs file to view the code.
 
-    - In the **App.cs** file, the  constructor for the **App** class creates a new instance of the **MainPage** class, which is then displayed in the application window.
+    - In the **App.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
 
-    - The  **MainPage.xaml** file contains the layout for the page. This layout includes the XAML code for a button with the caption **Click me**, a label with the text **Current count: 0**, and an image that displays the **dotnet_bot.png** file. There are two other labels as well.
+    - In the **AppShell.xaml** file contains the main layout for the application and starting page of **MainPage**.
+
+    - The  **MainPage.xaml** file contains the layout for the page. This layout includes the XAML code for a button with the caption **Click me**, and an image that displays the **dotnet_bot.png** file. There are two other labels as well.
 
     - The **MainPage.xaml.cs** file contains the application logic for the page. Specifically, the **MainPage** class includes a method named **OnCounterClicked** that runs when the user taps the **Click me** button.
 
 ## Build and run the application on Windows
-
-1. On the **Project** menu, select **Edit Project File**.
-
-    :::image type="content" source="../media/4-edit-project-file.png" alt-text="A screenshot of the Project menu in Visual Studio. The user has selected the Edit Project File command":::
-
-1. In the **\<PropertyGroup\>** element near the start of the file, uncomment the line that enables the target framework for .NET 6.0 running on Windows:
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFrameworks>net6.0-ios;net6.0-android;net6.0-maccatalyst</TargetFrameworks>
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net6.0-windows10.0.19041</TargetFrameworks>
-        ...
-    </PropertyGroup>
-    ```
-
-1. Save the project file.
 
 1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select the **.net6.0-windows** framework from the list in the frameworks drop-down list box.
 
@@ -58,24 +42,26 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     :::image type="content" source="../media/4-start-debugging.png" alt-text="A screenshot of the Visual Studio debug menu. The user has started debugging the app using the Windows Machine profile.":::
 
-1. Verify that the WinUI version of the app starts up. Select the **Click me** button several times. The count displayed in the window should increment with each tap.
+1. Verify that the Windows version of the app starts up. Select the **Click me** button several times. The button text should update with the count being incremented with each tap.
 
     :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the WinUI app running. The user has tapped the 'Click me' button four times. The text on the screen indicates the user has tapped the button four times.":::
-
-1. While the app is still running, return to Visual Studio. You should see the **XAML Live Preview** window displaying the app while it is running.
 
 1. On the **View** menu, select **Solution Explorer**. In the Solution Explorer window expand the **MainPage.xaml** node and open the **MainPage.xaml.cs** code-behind file.
 
 1. In the **OnCounterClicked** method, change the statement that increments the *count* variable to add 5 to this variable instead:
 
     ```csharp
-    private void OnCounterClicked(object sender, EventArgs e)
-    {
-        count += 5;
-        CounterLabel.Text = $"Current count: {count}";
+	private void OnCounterClicked(object sender, EventArgs e)
+	{
+		count+=5; // update this
 
-        SemanticScreenReader.Announce(CounterLabel.Text);
-    }
+		if (count == 1)
+			CounterBtn.Text = $"Clicked {count} time";
+		else
+			CounterBtn.Text = $"Clicked {count} times";
+
+		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
     ```
 
 1. In the Visual Studio toolbar, select the **Hot Reload** button:
@@ -85,7 +71,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 1. Switch back to the app and select the **Click me** button. Verify that the count is now incremented by 5.
 
     > [!NOTE]
-    > The *Hot Reload* feature of Visual Studio enables you to modify your code while the app is running in Debug mode. You don't need to stop the app to see the changes. As well as modifying code, you can also make changes to the XAML markup for a page, and these changes will become visible the next time the page is redisplayed on the screen as well as in the Live Preview window.
+    > The *Hot Reload* feature of Visual Studio enables you to modify your code while the app is running in Debug mode. You don't need to stop the app to see the changes. As well as modifying code, you can also make changes to the XAML markup for a page, and these changes will become visible in the running app.
 
 1. Close the app and return to Visual Studio.
 
