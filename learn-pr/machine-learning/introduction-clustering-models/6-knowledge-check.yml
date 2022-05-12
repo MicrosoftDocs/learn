@@ -17,22 +17,22 @@ quiz:
     choices:
     - content: Unsupervised machine learning.
       isCorrect: true
-      explanation: That is correct. Clustering is a form of unsupervised machine learning in which the training data does not include known labels. 
+      explanation: That's correct. Clustering is a form of unsupervised machine learning in which the training data does not include known labels. 
     - content: Supervised machine learning.
       isCorrect: false
-      explanation: That is incorrect. Supervised machine learning requires a known label for training.
+      explanation: That's incorrect. Supervised machine learning requires a known label for training.
     - content: Reinforcement learning.
       isCorrect: false
-      explanation: That is incorrect. Reinforcement learning is an advanced form of machine learning, in which models learn to apply actions based on rewards. 
-  - content: You are using the built-in `kmeans()` function in R to train a K-means clustering model that groups observations into three clusters. How should you create the object of class `kmeans` to specify that you want to obtain three clusters? 
+      explanation: That's incorrect. Reinforcement learning is an advanced form of machine learning, in which models learn to apply actions based on rewards. 
+  - content: You're using the built-in `kmeans()` function in R to train a K-means clustering model that groups observations into three clusters. How should you create the object of class `kmeans` to specify that you want to obtain three clusters? 
     choices:
     - content: kclust <- kmeans(nstart = 3)
       isCorrect: false
-      explanation: That is incorrect. The `nstart` parameter determines how many random initial configuration sets should be chosen, and reports on the best one. 
+      explanation: That's incorrect. The `nstart` parameter determines how many random initial configuration sets should be chosen, and reports on the best one. 
     - content: kclust <- kmeans(iter.max = 3)
       isCorrect: false
-      explanation: That is incorrect. The `iter.max` parameter determines the maximum number of algorithm iterations used for cluster assignment. 
+      explanation: That's incorrect. The `iter.max` parameter determines the maximum number of algorithm iterations used for cluster assignment. 
     - content: kclust <- kmeans(centers = 3) 
       isCorrect: true
-      explanation: That is correct. The `centers` parameter determines the number of clusters, k. 
+      explanation: That's correct. The `centers` parameter determines the number of clusters, k. 
 
