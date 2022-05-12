@@ -29,6 +29,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-video-indexer
+subjects:
+- classification-analysis
 units:
 - learn.wwl.analyze-video.introduction
 - learn.wwl.analyze-video.understand-video-indexer-capabilities

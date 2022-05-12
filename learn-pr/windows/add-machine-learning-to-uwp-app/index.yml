@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- machine-learning
 units:
 - learn-windows.add-machine-learning-to-your-uwp-app.1-introduction-to-windows-machine-learning
 - learn-windows.add-machine-learning-to-your-uwp-app.2-create-uwp-app

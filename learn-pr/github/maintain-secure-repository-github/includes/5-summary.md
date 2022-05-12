@@ -15,7 +15,7 @@ Now that you're familiar with security best practices, learn to [Automate DevOps
 Here are some links to more information on the topics we discussed in this module.
 
 - [About security alerts for vulnerable dependencies](https://help.github.com/github/managing-security-vulnerabilities/about-security-alerts-for-vulnerable-dependencies?azure-portal=true)
-- [Dependabot official site](https://dependabot.com/?azure-portal=true)
+- [Dependabot official site](https://github.com/dependabot)
 - [Security apps on GitHub Marketplace](https://github.com/marketplace/category/security?azure-portal=true)
 - [Adding a security policy to your repository](https://help.github.com/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository?azure-portal=true)
 - [Ignoring files](https://help.github.com/github/using-git/ignoring-files?azure-portal=true)

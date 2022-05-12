@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-organize.mature-team-structures
+title: Mature team structures
+metadata:
+  unitType: learning-content
+  title: Mature team structures
+  description: Understand team structures and which structure best aligns with your operational needs.
+  ms.date: 05/10/2022
+  author: BrianBlanchard
+  ms.author: brblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-mature-team-structures.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which operating model represents the highest state of maturity?
+    choices:
+    - content: The Cloud Center of Excellence.
+      isCorrect: true
+      explanation: Correct.
+    - content: The Central IT structure.
+      isCorrect: false
+      explanation: Incorrect. This is more often used in on-premises environments or where central control is required.
+    - content: Cloud Adoption Team.
+      isCorrect: false
+      explanation: Incorrect. This is primarily used for small-scale or early-stage adoption efforts.
+    - content: Minimum Viable Product.
+      isCorrect: false
+      explanation: Incorrect. The MVP is primarily used for small-scale or early-stage adoption efforts.

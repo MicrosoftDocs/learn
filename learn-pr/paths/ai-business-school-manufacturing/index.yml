@@ -23,6 +23,8 @@ products:
 - azure
 - dynamics-365
 - m365
+subjects:
+- artificial-intelligence
 modules:
 - learn-wwl.ai-strategy-to-create-business-value
 - learn-wwl.ai-strategy-in-manufacturing
