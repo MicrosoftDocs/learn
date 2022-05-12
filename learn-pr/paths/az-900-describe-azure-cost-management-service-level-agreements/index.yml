@@ -79,6 +79,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- migration
+- finance-accounting
 modules:
 - learn.azure.plan-manage-azure-costs
 - learn.azure.choose-azure-services-sla-lifecycle

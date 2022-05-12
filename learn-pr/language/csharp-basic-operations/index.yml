@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-basic-operations.introduction
 - learn.languages.csharp-basic-operations.exercise-add-numbers

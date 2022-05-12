@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.azure-ad-privileged-identity-management.introduction
 - learn.wwl.azure-ad-privileged-identity-management.microsofts-zero-trust-model

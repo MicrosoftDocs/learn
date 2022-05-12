@@ -23,6 +23,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- architecture
 units:
 - learn.wwl.spark-architecture-fundamentals.introduction
 - learn.wwl.spark-architecture-fundamentals.understand-architecture-of-azure-databricks-spark-cluster

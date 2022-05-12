@@ -35,6 +35,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-computing
+- data-engineering
 modules:
 - learn.wwl.create-release-pipeline
 - learn.wwl.configure-provision-environments

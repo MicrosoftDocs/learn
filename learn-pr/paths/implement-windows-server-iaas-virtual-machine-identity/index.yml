@@ -37,6 +37,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- identity-access
+- virtual-machine
 modules:
 - learn.wwl.implement-hybrid-identity-with-windows-server
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure

@@ -30,6 +30,8 @@ prerequisites: |
  - Language understanding in Azure Health Bot
  - Azure Health Bot built-in scenarios
  - Azure Health Bot scenario templates
+subjects:
+- infrastructure
 units:
   - learn.health-bot-enhanced.1-introduction
   - learn.health-bot-enhanced.2-interrupting-vs-breaking-scenario

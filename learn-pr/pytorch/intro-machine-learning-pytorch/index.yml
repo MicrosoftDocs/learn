@@ -34,6 +34,8 @@ products:
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
+subjects:
+- machine-learning
 units:
 - learn.pytorch.intro-machine-learning.introduction
 - learn.pytorch.intro-machine-learning.tensors

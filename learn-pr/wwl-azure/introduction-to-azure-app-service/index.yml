@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.introduction-to-azure-app-service.introduction
 - learn.wwl.introduction-to-azure-app-service.azure-app-service

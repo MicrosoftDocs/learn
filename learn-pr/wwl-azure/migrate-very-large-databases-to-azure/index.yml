@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- database
 units:
 - learn.wwl.migrate-very-large-databases-vldb-to-azure.introduction
 - learn.wwl.migrate-very-large-databases-vldb-to-azure.explore-database-migration

@@ -27,6 +27,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- business-continuity
 modules:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr

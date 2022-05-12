@@ -39,6 +39,8 @@ products:
 - azure-expressroute
 - azure-virtual-network
 - azure-disk-storage
+subjects:
+- architecture
 units:
 - learn.azure-well-architected-performance-efficiency.1-introduction
 - learn.azure-well-architected-performance-efficiency.2-scaling-up-and-scaling-out

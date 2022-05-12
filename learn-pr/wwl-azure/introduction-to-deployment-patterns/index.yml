@@ -38,6 +38,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
 units:
 - learn.wwl.introduction-to-deployment-patterns.introduction
 - learn.wwl.introduction-to-deployment-patterns.explore-microservices-architecture

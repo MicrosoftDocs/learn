@@ -35,6 +35,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- data-management
 modules:
 # LP 2 module 1 will link to LP 1 module 4 after it goes live
 # learn.reactors.data-manipulate-clean

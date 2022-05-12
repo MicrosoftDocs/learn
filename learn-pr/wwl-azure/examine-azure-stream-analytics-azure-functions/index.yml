@@ -34,6 +34,8 @@ products:
 - azure-functions
 - azure-iot-hub
 - azure-stream-analytics
+subjects:
+- serverless-compute
 units:
 - learn.wwl.examine-azure-stream-analytics-azure-functions.introduction
 - learn.wwl.examine-azure-stream-analytics-azure-functions.get-started

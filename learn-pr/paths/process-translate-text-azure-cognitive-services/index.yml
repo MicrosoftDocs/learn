@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cognitive-services
+subjects:
+- data-ai
 modules:
 - learn.wwl.extract-insights-text-with-text-analytics-service
 - learn.wwl.translate-text-with-translator-service

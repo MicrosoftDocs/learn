@@ -34,6 +34,9 @@ products:
 - aspnet-core
 - dotnet-core
 - ef-core
+subjects:
+- identity-access
+- development-tools
 units:
 - learn.secure-aspnet-core-identity.introduction
 - learn.secure-aspnet-core-identity.understand-aspnetcore-identity

@@ -29,6 +29,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.examine-approaches-to-device-management-at-scale.introduction
 - learn.wwl.examine-approaches-to-device-management-at-scale.examine-how-to-use-iot-hub-jobs-for

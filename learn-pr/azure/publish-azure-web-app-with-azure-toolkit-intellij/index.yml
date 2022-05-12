@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- development-tools
 units:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.1-introduction
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.2-create-web-app-intellij

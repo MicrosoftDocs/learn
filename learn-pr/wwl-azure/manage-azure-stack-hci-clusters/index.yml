@@ -34,6 +34,9 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- cloud-computing
+- data-management
 units:
 - learn.wwl.manage-azure-stack-hci-clusters.introduction
 - learn.wwl.manage-azure-stack-hci-clusters.cluster

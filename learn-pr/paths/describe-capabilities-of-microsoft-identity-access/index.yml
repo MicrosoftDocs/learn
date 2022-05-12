@@ -49,6 +49,10 @@ roles:
 - student
 products:
 - azure-active-directory
+subjects:
+- security
+- compliance
+- identity-access
 modules:
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad
 - learn.wwl.explore-authentication-capabilities-of-azure-ad

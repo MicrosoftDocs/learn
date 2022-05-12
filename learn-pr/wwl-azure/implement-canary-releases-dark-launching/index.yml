@@ -39,6 +39,8 @@ products:
 - azure-pipelines
 - azure-repos
 - azure-test-plans
+subjects:
+- devops
 units:
 - learn.wwl.implement-canary-releases-dark-launching.introduction
 - learn.wwl.implement-canary-releases-dark-launching.explore-canary-releases

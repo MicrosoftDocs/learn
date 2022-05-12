@@ -32,6 +32,8 @@ products:
 - azure-monitor
 - azure-network-watcher
 - azure-virtual-network
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.design-implement-network-monitoring.introduction
 - learn.wwl.design-implement-network-monitoring.monitor-your-networks-using-azure-monitor

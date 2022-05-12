@@ -26,6 +26,9 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- cloud-security
+- threat-protection
 units:
 - learn.wwl.connect-azure-assets-to-azure-defender.introduction
 - learn.wwl.connect-azure-assets-to-azure-defender.explore-manage-your-resources-with-asset-inventory

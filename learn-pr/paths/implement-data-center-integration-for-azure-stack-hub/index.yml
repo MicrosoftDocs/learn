@@ -23,6 +23,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 modules:
 - learn.wwl.prepare-for-azure-stack-hub-deployment
 - learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub

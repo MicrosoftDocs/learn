@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-database-postgresql
+subjects:
+- database
 units:
 - learn.intro-to-hyperscale.1-introduction
 - learn.intro-to-hyperscale.2-how-hyperscale-works

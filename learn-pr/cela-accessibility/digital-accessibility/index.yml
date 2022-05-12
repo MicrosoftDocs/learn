@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- accessibility
 units:
 - learn.digital-accessibility.web-development
 - learn.digital-accessibility.app-development

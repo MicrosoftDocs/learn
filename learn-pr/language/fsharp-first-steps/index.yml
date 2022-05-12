@@ -27,6 +27,8 @@ roles:
   - student
 products:
   - dotnet
+subjects:
+- development-tools
 units:
 - learn.fsharp-first-steps.introduction
 - learn.fsharp-first-steps.what-is-fsharp

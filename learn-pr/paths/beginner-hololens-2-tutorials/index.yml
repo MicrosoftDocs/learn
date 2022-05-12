@@ -29,6 +29,8 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+subjects:
+- mixed-reality
 modules:
 - learn.azure.learn-introduction-tutorials-mrtk
 - learn.azure.place-scene-objects-tutorials-mrtk

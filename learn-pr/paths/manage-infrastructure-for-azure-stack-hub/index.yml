@@ -25,6 +25,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 modules:
 - learn.wwl.manage-system-health-azure-stack-hub
 - learn.wwl.azure-monitor-azure-stack-hub

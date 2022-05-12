@@ -36,6 +36,8 @@ products:
 - azure-virtual-network
 - azure-virtual-wan
 - azure-vpn-gateway
+subjects:
+- infrastructure
 modules:
 - learn.wwl.introduction-to-azure-virtual-networks
 - learn.wwl.design-implement-hybrid-networking

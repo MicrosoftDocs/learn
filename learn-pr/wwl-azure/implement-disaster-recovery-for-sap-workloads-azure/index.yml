@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- business-continuity
 units:
 - learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.introduction
 - learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.explore-disaster-recovery-of

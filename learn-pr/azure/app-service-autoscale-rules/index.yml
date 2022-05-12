@@ -30,6 +30,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- cloud-computing
 units:
 - learn.app-service-autoscale-rules.1-introduction
 - learn.app-service-autoscale-rules.2-identify-scenarios

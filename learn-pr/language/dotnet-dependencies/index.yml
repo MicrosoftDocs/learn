@@ -27,6 +27,8 @@ prerequisites: |
   - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
   - Experience with using the command line
+subjects:
+- development-tools
 units:
 - learn.dotnet-dependencies.1-introduction
 - learn.dotnet-dependencies.2-dependency

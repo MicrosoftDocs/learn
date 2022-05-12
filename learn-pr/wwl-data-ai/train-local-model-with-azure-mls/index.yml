@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.data-ai.train-local-model-with-azure-mls.introduction
 - learn.data-ai.train-local-model-with-azure-mls.estimators

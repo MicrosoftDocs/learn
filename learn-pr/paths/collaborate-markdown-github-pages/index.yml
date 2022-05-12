@@ -33,6 +33,9 @@ roles:
 - student
 products:
 - github
+subjects:
+- collaboration
+- devops
 modules:
 - learn.github.introduction-to-github
 - learn.github.communicate-using-markdown

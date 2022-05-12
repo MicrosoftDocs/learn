@@ -27,6 +27,8 @@ roles:
   - developer
 products:
   - azure
+subjects:
+- cloud-computing
 units:
 - learn.azure.deploy-elastic-cloud-on-azure.introduction
 - learn.azure.deploy-elastic-cloud-on-azure.deploy

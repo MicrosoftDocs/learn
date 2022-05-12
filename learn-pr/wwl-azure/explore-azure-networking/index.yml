@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.explore-azure-networking.introduction
 - learn.wwl.explore-azure-networking.virtual-networks

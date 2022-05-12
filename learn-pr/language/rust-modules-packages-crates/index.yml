@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-modules-packages-crates.0-introduction
 - learn.language.rust-modules-packages-crates.1-concepts-code-organization

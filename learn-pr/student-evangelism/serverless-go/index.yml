@@ -25,6 +25,8 @@ products:
   - vs
 prerequisites: |
   - Visual Studio Code is recommended, but it's perfectly fine to use any text editor or IDE.
+subjects:
+- serverless-compute
 units:
   - learn.student-evangelism.serverless-go.introduction
   - learn.student-evangelism.serverless-go.custom-handlers

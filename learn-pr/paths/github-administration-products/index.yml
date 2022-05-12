@@ -20,6 +20,8 @@ roles:
 - technology-manager
 products:
 - github
+subjects:
+- development-tools
 modules:
 - learn.github.introduction-to-github
 - learn.github.github-introduction-administration

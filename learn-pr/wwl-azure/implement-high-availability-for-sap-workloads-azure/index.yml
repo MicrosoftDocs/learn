@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.wwl.implement-high-availability-for-sap-workloads-azure.introduction
 - learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-high-availability-disaster-recovery-support-of-azure

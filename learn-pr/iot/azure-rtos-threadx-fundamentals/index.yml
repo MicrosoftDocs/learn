@@ -36,6 +36,8 @@ products:
 - azure-iot
 - azure-iot-hub
 
+subjects:
+- iot
 units:
 - learn.iot.azure-rtos-threadx-fundamentals.introduction
 - learn.iot.azure-rtos-threadx-fundamentals.determinism
@@ -48,4 +50,4 @@ units:
 - learn.iot.azure-rtos-threadx-fundamentals.summary
 
 badge:
-  uid: learn.iot.azure-rtos-threadx-fundamentals.badge 
+  uid: learn.iot.azure-rtos-threadx-fundamentals.badge

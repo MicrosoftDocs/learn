@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.detect-objects-images-custom-vision.introduction
 - learn.wwl.detect-objects-images-custom-vision.what-is-object-detection

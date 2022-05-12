@@ -35,6 +35,8 @@ products:
 - azure-load-balancer
 - azure-backup
 - azure-application-gateway
+subjects:
+- architecture
 units:
 - learn.azure-well-architected-reliability.1-introduction
 - learn.azure-well-architected-reliability.2-high-availability

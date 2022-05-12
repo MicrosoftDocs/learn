@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-vpn-gateway
+subjects:
+- networking
 units:
 - learn.wwl.configure-vpn-gateway.introduction
 - learn.wwl.configure-vpn-gateway.determine-uses

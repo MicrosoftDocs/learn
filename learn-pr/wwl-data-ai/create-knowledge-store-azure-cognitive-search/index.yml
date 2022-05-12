@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection

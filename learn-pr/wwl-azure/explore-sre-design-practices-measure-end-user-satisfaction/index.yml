@@ -40,6 +40,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- frontline-support
 units:
 - learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.introduction
 - learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.what-is-site-reliability-engineering

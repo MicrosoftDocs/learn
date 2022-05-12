@@ -30,6 +30,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-form-recognizer
+subjects:
+- classification-analysis
 units:
 - learn.wwl.read-text-images-documents-with-computer-vision-service.introduction
 - learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text

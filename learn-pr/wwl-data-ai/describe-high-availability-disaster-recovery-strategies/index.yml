@@ -29,6 +29,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- business-continuity
 units:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies.introduction
 - learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-recovery-time-objective-recovery-point-objective

@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
 units:
 - learn.wwl.deploy-manage-dhcp.introduction
 - learn.wwl.deploy-manage-dhcp.use-dhcp-to-simplify-ip-configuration

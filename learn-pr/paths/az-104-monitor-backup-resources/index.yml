@@ -72,6 +72,8 @@ products:
 - azure-application-insights
 - azure-backup
 - azure-site-recovery
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.configure-file-folder-backups
 - learn.wwl.configure-virtual-machine-backups

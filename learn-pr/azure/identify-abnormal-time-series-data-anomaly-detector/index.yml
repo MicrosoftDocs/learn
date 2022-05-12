@@ -39,6 +39,8 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - azure-cognitive-services
   - azure-iot-hub
   - azure-cloud-services
+subjects:
+- data-analytics
 units:
   - learn.identify-abnormal-time-series-data-anomaly-detector.introduction
   - learn.identify-abnormal-time-series-data-anomaly-detector.what-is-anomaly-detection

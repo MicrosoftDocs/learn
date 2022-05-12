@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-security
 modules:
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources
 - learn.cmu-cloud-admin.cmu-cloud-security

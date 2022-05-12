@@ -28,6 +28,8 @@ roles:
 products:
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 units:
 - learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.introduction
 - learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.recommend-certificate-strategy

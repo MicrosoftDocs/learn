@@ -35,6 +35,8 @@ products:
 - azure-iot-edge
 - azure-iot-hub
 - azure-iot-sdk
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-edge-gateway-configuration.introduction
 - learn.wwl.explore-iot-edge-gateway-configuration.configure-device

@@ -35,6 +35,9 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
+- security
 units:
 - learn.wwl.explore-azure-defender-for-iot-implementation.introduction
 - learn.wwl.explore-azure-defender-for-iot-implementation.implement

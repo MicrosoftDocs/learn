@@ -40,6 +40,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- data-engineering
 units:
 - learn.wwl.collaborate-pull-requests-azure-repos.introduction
 - learn.wwl.collaborate-pull-requests-azure-repos.collaborate-pull-requests

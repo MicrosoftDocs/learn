@@ -27,6 +27,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.consume-rest-services.1-introduction
 - learn-xamarin.consume-rest-services.2-detect-network-connectivity

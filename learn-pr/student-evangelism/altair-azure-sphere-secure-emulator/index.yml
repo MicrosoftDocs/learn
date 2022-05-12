@@ -37,6 +37,10 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- cloud-computing
+- iot
+- virtual-machine
 units:
 - learn.student-evangelism.altair-azure-sphere-secure-emulator.introduction
 - learn.student-evangelism.altair-azure-sphere-secure-emulator.declare-connection-endpoints

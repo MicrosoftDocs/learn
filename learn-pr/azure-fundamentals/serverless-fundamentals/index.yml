@@ -30,6 +30,8 @@ products:
 - azure
 - azure-functions
 - azure-logic-apps
+subjects:
+- cloud-computing
 units:
 - learn.azure.serverless-fundamentals.introduction
 - learn.azure.serverless-fundamentals.identify-product-options

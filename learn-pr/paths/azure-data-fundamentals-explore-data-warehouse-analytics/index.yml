@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 modules:
 - learn.wwl.examine-components-of-modern-data-warehouse
 - learn.wwl.explore-fundamentals-of-stream-processing

@@ -27,6 +27,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.monitor-windows-server-performance.introduction
 - learn.wwl.monitor-windows-server-performance.use-performance-monitor-to-identify-performance-problems

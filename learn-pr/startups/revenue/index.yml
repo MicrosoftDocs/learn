@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - consumer
+subjects:
+- modern-work
 units:
 - learn.startups.revenue.introduction
 - learn.startups.revenue.revenue-models

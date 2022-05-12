@@ -51,6 +51,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.cmu-cloud-computing.distributed-programming.introduction
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce
