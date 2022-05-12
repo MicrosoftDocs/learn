@@ -1,7 +1,7 @@
 Now that you’ve reviewed the deployment and connectivity options of Azure Database for MySQL, you want to test the process of provisioning a server and validate its availability by connecting to it. In this unit, you’ll step through a sample deployment and connect to the server by using the mysql.exe utility from the Azure Cloud Shell.
 
 > [!NOTE]
-> Be aware you might incur costs in your Azure Subscription when you run this exercise.
+> You might incur costs in your Azure Subscription when you run this exercise.
 
 ### Task 1: Deploy Azure Database for MySQL Flexible Server
 
