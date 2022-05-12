@@ -4,7 +4,7 @@ In this unit, you'll learn about the features that .NET MAUI provides to allow y
 
 ## Using the Device class
 
-The `Device` class is a utility class that provides device-specific information for the device on which your app is running. It exposes this information through a set of properties. The most important property is `Device.RuntimePlatform`. The property returns a string indicating the type of device currently in use; "Android", "iOS", "UWP" or "macOS".
+The `DeviceInfo` class is a utility class that provides device-specific information for the device on which your app is running. It exposes this information through a set of properties. The most important property is `DeviceInfo.Platform`. The property returns a string indicating the type of device currently in use; "Android", "iOS", "WinUI", or "macOS".
 
 Consider the following scenario as an example of when you might use this feature. The default behavior in a .NET MAUI iOS app is that content added to a page encroaches on the iOS status bar at the top of the screen. You want to change this behavior. The simplest solution is to shift the content down in the page. The Notes solution you created in the previous exercise addresses this problem by setting the `Margin` property of the `VerticalStackLayout` control to move the content down by 60 points:
 
