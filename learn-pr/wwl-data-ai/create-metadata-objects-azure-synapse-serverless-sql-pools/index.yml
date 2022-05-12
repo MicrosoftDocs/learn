@@ -3,7 +3,7 @@ uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 metadata:
   title: Create a lake database in Azure Synapse Analytics
   description: "Create a lake database in Azure Synapse Analytics"
-  ms.date: 05/10/2022
+  ms.date: 05/12/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Describe database templates in Azure Synapse Analytics
   - Create a lake database
 prerequisites: |
-  Before starting this module you require some prerequisite knowledge. If you do not meet these prerequisites, consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths first. You will need knowledge of:
+  Consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
   - Analytical data workloads in Microsoft Azure
   - Querying data with Transact-SQL
 iconUrl: /learn/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools.svg
@@ -28,11 +28,11 @@ products:
 - azure-synapse-analytics
 units:
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.introduction
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-databases
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-manage-credentials
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-external-data-sources
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-external-tables
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-views
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.lake-database
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.database-templates
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-lake-database
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.use-lake-database
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.exercise-lake-database
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.knowledge-check
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.summary
 badge:

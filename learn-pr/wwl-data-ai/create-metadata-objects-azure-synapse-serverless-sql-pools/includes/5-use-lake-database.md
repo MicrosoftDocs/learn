@@ -19,7 +19,7 @@ There is no need to use an OPENROWSET function or include any additional code to
 
 ## Using an Apache Spark pool
 
-In addition to using a serverless SQl pool, you can work with lake database tables using Spark SQL in an Apache Spark pool.
+In addition to using a serverless SQL pool, you can work with lake database tables using Spark SQL in an Apache Spark pool.
 
 For example, you could use the following code to insert a new customer record into the **Customer** table.
 
