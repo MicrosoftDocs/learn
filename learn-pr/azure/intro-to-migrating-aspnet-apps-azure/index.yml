@@ -30,6 +30,9 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.azure.intro-to-migrating-aspnet-apps-azure.1-introduction
 - learn.azure.intro-to-migrating-aspnet-apps-azure.2-what-is-asp-net-app-migration

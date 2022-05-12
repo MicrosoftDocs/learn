@@ -25,6 +25,9 @@ roles:
 - security-engineer
 products:
 - azure
+subjects:
+- identity-access
+- cloud-security
 units:
 - learn.azure-security.configure-and-manage-azure-key-vault.introduction
 - learn.azure-security.configure-and-manage-azure-key-vault.key-vault-usage

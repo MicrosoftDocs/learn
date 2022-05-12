@@ -37,6 +37,8 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.improve-reliability-scaling.1-introduction
 - learn.improve-reliability-scaling.2-definition

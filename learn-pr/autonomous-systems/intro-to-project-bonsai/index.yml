@@ -32,6 +32,8 @@ roles:
   - solution-architect
 products:
   - bonsai
+subjects:
+- artificial-intelligence
 units:
 - learn.autonomous-systems.intro-to-project-bonsai.1-introduction
 - learn.autonomous-systems.intro-to-project-bonsai.2-what-is-project-bonsai

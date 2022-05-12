@@ -35,6 +35,8 @@ products:
 - vs-code
 - azure-resource-manager
 - azure-storage-accounts
+subjects:
+- infrastructure
 units:
 - learn.azure.create-resource-manager-template-vs-code.1-introduction
 - learn.azure.create-resource-manager-template-vs-code.2-explore-template-structure

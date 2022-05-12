@@ -34,6 +34,10 @@ products:
   - azure-container-registry
   - azure-cosmos-db
   - azure-kubernetes-service
+subjects:
+- data-warehousing
+- data-modeling
+- data-lake
 units:
   - learn.microservices-data-aspnet-core.introduction
   - learn.microservices-data-aspnet-core.environment-setup

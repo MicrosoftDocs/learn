@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- data-engineering
+- data-management
 units:
 - learn.azdo.deploy-python.1-introduction
 - learn.azdo.deploy-python.2-azure-support-python

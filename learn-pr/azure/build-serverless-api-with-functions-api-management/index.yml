@@ -26,6 +26,10 @@ products:
 - azure
 - azure-api-management
 - azure-functions
+subjects:
+- cloud-computing
+- architecture
+- data-management
 units:
 - learn.build-serverless-api-with-functions-api-management.1-introduction
 - learn.build-serverless-api-with-functions-api-management.2-import-function-app-api-management
