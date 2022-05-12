@@ -18,7 +18,7 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Server details. The name of the server, target Azure region, the MySQL version, the compute tier, and the number of the availability zone.
 
-  ![The Basics page includes fields for the Project and Server details.](../media/3-deploy-mysql-project_server_details.png)
+    ![The Basics page includes fields for the Project and Server details.](../media/3-deploy-mysql-project_server_details.png)
 
   - Administrator account. The administrator username and password.
 
@@ -28,15 +28,15 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Storage. The storage size (in GiB), the number of IOPS, and the Storage Auto-growth option.
 
-  ![The Compute and Storage section are available for configuration on the Compute + Storage page.](../media/3-deploy-mysql-compute_and_storage.png)
+    ![The Compute and Storage section are available for configuration on the Compute + Storage page.](../media/3-deploy-mysql-compute_and_storage.png)
     
   - High availability. The high availability mode (same zone or zone redundant).
 
- ![Use the High availability section on the Compute + Storage page to configure high availability settings.](../media/3-deploy-mysql-high-availability.png)
+    ![Use the High availability section on the Compute + Storage page to configure high availability settings.](../media/3-deploy-mysql-high-availability.png)
 
   - Backups. The backup retention period and the backup geo-redundancy option.
 
-  ![Use the High availability and Backups sections to determine the type of high availability (if any), and backup type." border.](../media/3-deploy-mysql-high_availability_backups.png)
+    ![Use the High availability and Backups sections to determine the type of high availability (if any), and backup type." border.](../media/3-deploy-mysql-high_availability_backups.png)
 
 - Networking. From this page you can select the connectivity method. Depending on your choice, you can also allow public access from any Azure service, configure firewall rules, or set up VNet integration.
 
