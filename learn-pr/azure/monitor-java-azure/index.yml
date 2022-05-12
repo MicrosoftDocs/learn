@@ -24,7 +24,7 @@ abstract: |
   - Monitor the entire solution - applications, databases, and any other backend services.
 prerequisites: |
   - Azure subscription
-  - Basic knowledge of [Azure Spring Cloud](/learn/modules/azure-spring-cloud-workshop/?WT.mc_id=java-00000-ropreddy)
+  - Basic knowledge of [Azure Spring Apps](/learn/modules/azure-spring-cloud-workshop/?WT.mc_id=java-00000-ropreddy)
   - Basic knowledge of the [Azure Cloud Shell](/azure/cloud-shell/overview/?WT.mc_id=java-00000-ropreddy)
   - Basic knowledge in [editing files in Azure Cloud Shell](/azure/cloud-shell/using-cloud-shell-editor/?WT.mc_id=java-00000-ropreddy) in the Azure Cloud Shell
 iconUrl: /learn/achievements/generic-badge.svg

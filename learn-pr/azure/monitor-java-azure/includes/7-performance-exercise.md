@@ -5,25 +5,25 @@ In this exercise, with zero configuration, you'll effortlessly monitor data flow
 Application Map helps you spot performance bottlenecks or failure hot-spots across all components of your distributed application.
 
 1. Open the Azure portal
-2. Select "Azure Spring Cloud" from the list of Azure services
-3. Select your Azure Spring Cloud instance
+2. Select "Azure Spring Apps" from the list of Azure services
+3. Select your Azure Spring Apps instance
 4. Select **Application Insights** to jump to the overview page of Application Insights.
 
-   :::image type="content" source="../media/7-insights-start.jpg" alt-text="screenshot showing Application insights for your spring cloud" lightbox="../media/7-insights-start.jpg":::
+   :::image type="content" source="../media/7-insights-start.jpg" alt-text="screenshot showing Application insights for your spring apps" lightbox="../media/7-insights-start.jpg":::
 
-5. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
+5. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Apps microservices:
 
    :::image type="content" source="../media/4-distributed-tracking-new-ai-agent.jpg" alt-text="Screenshot showing Application map with microservices" lightbox="../media/4-distributed-tracking-new-ai-agent.jpg":::
 
 Applications that are operating correctly (green) and those applications with bottlenecks (red).
-In the Application Map above, each of the names in green boxes are different services of your Azure Spring Cloud.
+In the Application Map above, each of the names in green boxes are different services of your Azure Spring Apps.
 You can easily identify issues in their applications and quickly troubleshoot and fix them. Each node on the map represents a microservice or its dependencies with health KPI and alerts status. You can select from any component to more detailed diagnostics, such as Application Insights events.
 
 ### Performance
 
 1. On the left, navigate to **Performance** where you can see response times and request counts for operations exposed by your applications.
 
-   :::image type="content" source="../media/4-petclinic-microservices-performance.jpg" alt-text="Screenshot showing operation performance view for your Azure Spring Cloud instance" lightbox="../media/4-petclinic-microservices-performance.jpg":::
+   :::image type="content" source="../media/4-petclinic-microservices-performance.jpg" alt-text="Screenshot showing operation performance view for your Azure Spring Apps instance" lightbox="../media/4-petclinic-microservices-performance.jpg":::
 
 2. Next, on the right, navigate to **Dependencies** where you can see all your dependencies and their response times and request counts.
    You can see the performance number for dependencies, particularly SQL calls:
@@ -46,7 +46,7 @@ You can easily identify issues in their applications and quickly troubleshoot an
 
 1. Select **Failures** in the Application Insights resource menu located in the **Investigate** section. In this view, you'll see top three failure response codes, top three exception types, and top three failing dependency types.
 
-   :::image type="content" source="../media/7-petclinic-microservices-failures.jpg" alt-text="Screenshot showing Failures view for your Azure Spring Cloud instance" lightbox="../media/7-petclinic-microservices-failures.jpg":::
+   :::image type="content" source="../media/7-petclinic-microservices-failures.jpg" alt-text="Screenshot showing Failures view for your Azure Spring Apps instance" lightbox="../media/7-petclinic-microservices-failures.jpg":::
 
 2. On the right-hand side, select an exception in the "Top 3 exception types"  for meaningful insights and actionable stack trace::
 
@@ -67,11 +67,11 @@ You can easily identify issues in their applications and quickly troubleshoot an
 ### Metrics
 
 Spring Boot registers many core metrics: JVM, CPU, Tomcat, Logback...
-You can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
+You can see metrics contributed by Spring Boot apps, Spring Apps modules, and dependencies.
 
 To create a standard metric chart, under the **Monitoring** section, open the **Metrics** tab and follow these steps:
 
-1. Ensure your Azure Spring Cloud is selected under **Scope** and **Azure Spring Cloud** under **Metric Namespace**. Both will already be populated if you opened the metrics explorer from the resource's menu.
+1. Ensure your Azure Spring Apps is selected under **Scope** and **Azure Spring Apps** under **Metric Namespace**. Both will already be populated if you opened the metrics explorer from the resource's menu.
 
    :::image type="content" source="../media/4-metrics.jpg" alt-text="Screenshot showing metrics":::
 
@@ -101,7 +101,7 @@ You might want to collect some custom performance indicators or business-specifi
 
 Similarly to standard metric chart, to create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
-1. Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
+1. Ensure your Azure Spring Apps is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
 
 2. Next, under **namespaces**, select the **azure.applicationinsights** namespace. The namespace is just a way to organize metrics so that you can easily find them.
 
@@ -134,8 +134,8 @@ Live Metrics Stream enables you to probe the beating heart of your live applicat
 
 1. On the left, under the Investigate section, navigate to **Live Metrics** where you can see live metrics practically in real time, within only one second:
 
-   :::image type="content" source="../media/4-petclinic-microservices-live-metrics.jpg" alt-text="Screenshot showing live metrics view for your Azure Spring Cloud" lightbox="../media/4-petclinic-microservices-live-metrics.jpg":::
+   :::image type="content" source="../media/4-petclinic-microservices-live-metrics.jpg" alt-text="Screenshot showing live metrics view for your Azure Spring Apps" lightbox="../media/4-petclinic-microservices-live-metrics.jpg":::
 
 2. Scroll down the metrics to see the metrics for each microservice:
 
-   :::image type="content" source="../media/7-live-metrics-servers.jpg" alt-text="Screenshot showing Service live metrics view for your Azure Spring Cloud" lightbox="../media/7-live-metrics-servers.jpg":::
+   :::image type="content" source="../media/7-live-metrics-servers.jpg" alt-text="Screenshot showing Service live metrics view for your Azure Spring Apps" lightbox="../media/7-live-metrics-servers.jpg":::

@@ -39,7 +39,7 @@ quiz:
     - content: "Your organization is running a promotion and expects to see increased traffic to their web site for the next couple of weeks. You base your autoscaling strategy on counters that measure business processes."
       isCorrect: false
       explanation: "If you base your autoscaling strategy on counters that measure business processes, such as the number of orders placed per hour or the average execution time of a complex transaction, ensure that you fully understand the relationship between the results from these types of counters and the actual compute capacity requirements."
-  - content: "The DevOps team for a large food delivery company is configuring an Azure Spring Cloud implementation. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following autoscale rule types should be configured?"
+  - content: "The DevOps team for a large food delivery company is configuring an Azure Spring Apps implementation. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following autoscale rule types should be configured?"
     choices:
     - content: "A metric-based rule."
       isCorrect: false
