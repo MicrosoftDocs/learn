@@ -1,4 +1,4 @@
-Now that you have the Anomaly Detector instance, IoT Hub and Blob storage resources created, we'll be loading data from the household smart meter device to the cloud. Since you're just monitoring one metric, which in this case is "power", you'll be using the Univariate Anomaly Detector API. Next, we'll format the data in a json file with parameters and structure needed for the Univariate Anomaly Detector API.  We are using IoT Hub in the business use case in this module, however you can use other services such as Event Hub or Kafka for ingesting stream data to Azure Anomaly Detector.
+Now that you have the Anomaly Detector instance, IoT Hub and Blob storage resources created, we'll be loading data from the household smart meter device to the cloud. Since you're just monitoring one metric, which in this case is "power", you'll be using the Univariate Anomaly Detector API. Next, we'll format the data in a json file with parameters and structure needed for the Univariate Anomaly Detector API.  We are using IoT Hub in the business use case in this module, however you can use other services such as Event Hubs or Kafka for ingesting stream data to Azure Anomaly Detector.
 
 ## Run simulation to send data from smart meter to IoT Hub
 
@@ -7,14 +7,16 @@ In this exercise, you'll need Jupyter Notebook to run the code blocks to do the 
 - Send the household smart meter device data for the “power” meter into IoT Hub that will automatically route the raw data into the blob storage container *learninputcontainer*. 
 - Format the raw data from the input blob storage container, then store the processed data in an output Blob storage container *learnoutputcontainer*.
 
-> **Note:** Since we don’t have a real-life electricity smart meter to connect to IoT Hub in the cloud, we'll simulate reading data from a csv file.  See the Summary page at the end of the module on how to connect your device and the data stream directly to IoT Hub.  
+> [!NOTE] 
+> Since we don’t have a real-life electricity smart meter to connect to IoT Hub in the cloud, we'll simulate reading data from a csv file.  See the Summary page at the end of the module on how to connect your device and the data stream directly to IoT Hub.  
 
 
 ## Create connection to IoT Hub
 
 To send data to IoT Hub, you need to create a connection between the client device and Iot Hub. In this case, we'll be using the local machine as a client to send data to IoT Hub. A connection is created between the client device and the IoT Hub in order to send data to the IoT Hub.
 
-> **Note:** If you need to find out how to connect a real-life device to IoT Hub, please refer to the summary section at the end of this learn module.  
+> [!NOTE] 
+> If you need to find out how to connect a real-life device to IoT Hub, please refer to the summary section at the end of this learn module.  
 
 Let's start by setting up the environment and installing some required Python packages we'll use in this module.  
 
