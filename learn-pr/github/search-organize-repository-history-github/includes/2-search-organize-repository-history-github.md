@@ -1,4 +1,4 @@
-Here, we'll discuss how you can use filters, blame, and cross-linking to to search and organize repository history.
+Here, we'll discuss how you can use filters, blame, and cross-linking to search and organize repository history.
 
 Put yourself in the position of a developer who has just joined a large project. Someone just posted a new issue reporting a bug related to the web app's sidebar, and you've been assigned to fix it. You've already read through the report a few times and understand the problem being described, so now you need to figure out how to get started with the fix.
 
