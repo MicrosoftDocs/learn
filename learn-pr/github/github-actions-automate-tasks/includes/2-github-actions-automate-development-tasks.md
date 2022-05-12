@@ -130,13 +130,13 @@ Notice the ```on:``` attribute. This is a *trigger* to specify when this workflo
 ```yml
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the master branch
+  # but only for the main branch
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
   # Also trigger on page_build, as well as release created events
   page_build:
   release:

@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.azure.allow-users-to-reset-their-password.introduction
 - learn.azure.allow-users-to-reset-their-password.what-is-self-service-password-reset
