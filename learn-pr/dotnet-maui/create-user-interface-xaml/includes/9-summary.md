@@ -14,5 +14,5 @@ In this module, you saw how to use XAML to its best effect for designing the UI 
 
 ## Learn more
 
-- [.NET MAUI Documenation](/dotnet/maui)
+- [.NET MAUI Documentation](/dotnet/maui)
 - [XAML for .NET MAUI](/dotnet/maui/xaml)
