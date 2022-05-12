@@ -16,7 +16,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. In the Solution Explorer window, expand the **Phoneword** project. Expand the **Resources** folder and its subfolders, expand the **App.xaml** node, **AppShell.xaml** node, and the **MainPage.xaml** node.
 
-    :::image type="content" source="../media/4-phoneword-project.png" alt-text="A screenshot of the Phoneword project in the Visual Studio solution explorer window. It shows the files included as part of the project including fonts and images.":::
+    :::image type="content" source="../media/4-phoneword-project.png" alt-text="A screenshot of the Phoneword project in the Visual Studio solution explorer window.":::
 
 1. In the project, note the following items:
 
@@ -24,11 +24,11 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     - The **MauiProgram.cs** file contains the code that configures the app and specifies that the **App** class should be used to run the application. Select the Startup.cs file to view the code.
 
-    - In the **App.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
+    - The **App.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
 
-    - In the **AppShell.xaml** file contains the main layout for the application and starting page of **MainPage**.
+    - The **AppShell.xaml** file contains the main layout for the application and starting page of **MainPage**.
 
-    - The  **MainPage.xaml** file contains the layout for the page. This layout includes the XAML code for a button with the caption **Click me**, and an image that displays the **dotnet_bot.png** file. There are two other labels as well.
+    - The **MainPage.xaml** file contains the layout for the page. This layout includes the XAML code for a button with the caption **Click me**, and an image that displays the **dotnet_bot.png** file. There are two other labels as well.
 
     - The **MainPage.xaml.cs** file contains the application logic for the page. Specifically, the **MainPage** class includes a method named **OnCounterClicked** that runs when the user taps the **Click me** button.
 
@@ -44,7 +44,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. Verify that the Windows version of the app starts up. Select the **Click me** button several times. The button text should update with the count being incremented with each tap.
 
-    :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the WinUI app running. The user has tapped the 'Click me' button four times. The text on the screen indicates the user has tapped the button four times.":::
+    :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the Win U I app running. The user has tapped the 'Click me' button four times.":::
 
 1. On the **View** menu, select **Solution Explorer**. In the Solution Explorer window expand the **MainPage.xaml** node and open the **MainPage.xaml.cs** code-behind file.
 
@@ -77,7 +77,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 ## Build and run the application on Android
 
-1. In the Visual Studio toolbar,select the **Phoneword** project.
+1. In the Visual Studio toolbar, select the **Phoneword** project.
 
 1. On the **Tools** menu, select **Android** and then select **Android Device Manager**.
 
