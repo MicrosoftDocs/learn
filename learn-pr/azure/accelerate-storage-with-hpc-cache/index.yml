@@ -32,6 +32,8 @@ roles:
 products:  
 - azure
 - azure-hpc-cache
+subjects:
+- storage
 units:
 - learn.accelerate-storage-with-hpc-cache.introduction
 - learn.accelerate-storage-with-hpc-cache.hpc-cache-prerequisites

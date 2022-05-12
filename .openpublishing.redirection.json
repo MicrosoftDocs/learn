@@ -13079,6 +13079,56 @@
       "source_path": "learn-pr/azure/intro-to-azure-purview/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-microsoft-purview/6-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-portal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/5-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/6-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/2-explore-characteristics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/3-describe-types.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/4-describe-types-nosql-databases.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-concepts-of-non-relational-data/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
     }
   ]
 }

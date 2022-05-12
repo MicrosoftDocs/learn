@@ -10,6 +10,3 @@ Typically, Azure AD defines users in three ways:
  -  **Cloud identities** \- These users exist only in Azure AD. Examples are administrator accounts and users that you manage yourself. Their source is Azure AD.
  -  **Directory-synchronized identities** \- These users exist in on-premises Active Directory. A synchronization activity that occurs via **Azure AD Connect** brings these users in to Azure.
  -  **Guest users** \- These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts.
-
-> [!IMPORTANT]
-> What types of users you will need?
