@@ -8,7 +8,7 @@ To use custom text classificiation, you'll need to create an Azure Language serv
 
 If you haven't already done so, create a **Language service** resource in your Azure subscription.
 
-1. In a browser, open the [Azure portal](https://portal.azure.com), and sign in with your Microsoft account.
+1. In a browser, open the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in with your Microsoft account.
 2. Select the **Create a resource** button, search for *Language*, and create a **Language service** resource. When asked about additional features, select **Custom text classification & extraction**. Create the resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
@@ -30,7 +30,7 @@ If you haven't already done so, create a **Language service** resource in your A
 
 ### Get Language resource key and endpoint
 
-1. Navigate to the resource group in the [Azure portal](https://portal.azure.com), and select the Language resource
+1. Navigate to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Language resource
 2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. Save one of the keys and the endpoint for later.
 
 ## Upload sample articles
@@ -39,7 +39,7 @@ Once you have created the language service and storage account, you'll need to u
 
 1. [Download sample articles](https://aka.ms/classification-articles) from this repo on GitHub. Extract the files in the `.zip` provided.
 
-2. In the [Azure portal](https://portal.azure.com), navigate to the storage account you created, and select it
+2. In the [Azure portal](https://portal.azure.com?azure-portal=true), navigate to the storage account you created, and select it
 
 3. In your storage account, select **Containers** from the left menu, located below **Data storage**. On the screen that appears, select **+ Container**. Give the container a name you'll remember, and set **Public access level** to *Container (anonymous read access for containers and blobs)*.
 
@@ -131,7 +131,7 @@ To test the text analytics capabilities of the Language service, we'll use a sim
 
 ### Run Cloud Shell 
 
-1. In the [Azure portal](https://portal.azure.com), select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
 
@@ -167,7 +167,7 @@ Now that you have a custom model, you can run a simple client application that u
 3. Open `classify-text.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key`, `$endpoint`, `$projectName`, and `$modelName` with your values, and save the file.
 
   > [!TIP]
-  > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
+  > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left
 
 4. Run the following command to call your model and classify the text provided. The script won't output the whole file it's classifying for the sake of space, but you can view the contents [here on Github](https://aka.ms/text-classification-repo). Review the output.
 
@@ -183,4 +183,4 @@ Now that you have a custom model, you can run a simple client application that u
 
 ## Clean up
 
-When you don't need your project anymore, you can delete if from your **Projects** page in Language Studio. You can also remove the Language service and associated storage account in the [Azure portal](https://portal.azure.com).
+When you don't need your project anymore, you can delete if from your **Projects** page in Language Studio. You can also remove the Language service and associated storage account in the [Azure portal](https://portal.azure.com?azure-portal=true).

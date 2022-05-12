@@ -4,18 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/10/2022
+  ms.date: 05/12/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your want to train a model to classify book summaries by their genre, and some of your favorite books are both mystery and thriller. Which type of project should you build??"
+  - content: "Your want to train a model to classify book summaries by their genre, and some of your favorite books are both mystery and thriller. Which type of project should you build?"
     choices:
     - content: "Single label classification"
       isCorrect: false
@@ -30,10 +30,21 @@ quiz:
     choices:
     - content: "Tag more data"
       isCorrect: false
-      explanation: "That's incorrect. View your model details to see how it scored, the classification distribution, and where it needs improvement."
+      explanation: "That's incorrect. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
     - content: "Deploy your model"
       isCorrect: false
-      explanation: "That's incorrect. View your model details to see how it scored, the classification distribution, and where it needs improvement."
+      explanation: "That's incorrect. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
     - content: "View model details"
       isCorrect: true
-      explanation: "That's correct. View your model details to see how it scored, the classification distribution, and where it needs improvement."
+      explanation: "That's correct. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
+  - content: "You want to submit a classification task via the API. How do you get the results of the classification?"
+    choices:
+    - content: "The result is in the response of the classification request."
+      isCorrect: false
+      explanation: "That's incorrect. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."
+    - content: "Call an endpoint with your deployment name to get the most recent classification."
+      isCorrect: false
+      explanation: "That's incorrect. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."
+    - content: "Call the URL provided in the header of the request response."
+      isCorrect: true
+      explanation: "That's correct. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."
