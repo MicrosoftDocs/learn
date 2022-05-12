@@ -11,7 +11,7 @@ You'll use the Azure Data Explorer web interface to connect to the data. However
 1. In the dialog box, under **Connection URI**, enter *help*.
 1. Select **Add**.
 
-   :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
+   :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web U I.":::
 
 Now you're connected to the help cluster.
 
