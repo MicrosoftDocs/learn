@@ -29,6 +29,9 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- virtual-machine
+- cloud-computing
 units:
 - learn.wwl.configure-user-experience-settings.introduction
 - learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles

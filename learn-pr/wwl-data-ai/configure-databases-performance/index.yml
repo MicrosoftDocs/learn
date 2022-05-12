@@ -30,6 +30,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- data-engineering
 units:
 - learn.wwl.configure-databases-for-performance.introduction
 - learn.wwl.configure-databases-for-performance.describe-database-scoped-configuration-options

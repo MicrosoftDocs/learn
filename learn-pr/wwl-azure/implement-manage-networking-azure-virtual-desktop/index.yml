@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- networking
 units:
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.introduction
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.implement-network-connectivity

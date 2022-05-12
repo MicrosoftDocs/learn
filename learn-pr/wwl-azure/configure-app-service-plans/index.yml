@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.configure-app-service-plans.introduction
 - learn.wwl.configure-app-service-plans.implement-azure

@@ -32,6 +32,8 @@ products:
 - azure
 - azure-network-watcher
 - windows-server
+subjects:
+- networking
 units:
 - learn.wwl.troubleshoot-premises-hybrid-networking.introduction
 - learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-dhcp-problems

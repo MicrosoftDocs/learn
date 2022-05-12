@@ -29,6 +29,9 @@ products:
 - azure
 - azure-iot-hub
 - azure-storage
+subjects:
+- iot
+- cloud-security
 units:
 - learn.wwl.get-started-cloud-storage-for-iot.introduction
 - learn.wwl.get-started-cloud-storage-for-iot.examine-iot-lambda-architecture

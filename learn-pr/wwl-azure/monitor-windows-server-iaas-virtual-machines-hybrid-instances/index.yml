@@ -41,6 +41,8 @@ products:
 - azure-monitor
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.introduction
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.enable-azure-monitor-for-vms

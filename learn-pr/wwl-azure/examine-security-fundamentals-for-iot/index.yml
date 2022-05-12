@@ -30,6 +30,8 @@ products:
 - azure
 - azure-iot-edge
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.wwl.examine-security-fundamentals-for-iot.introduction
 - learn.wwl.examine-security-fundamentals-for-iot.review-security-recommendations

@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.hybrid-identity.introduction
 - learn.wwl.hybrid-identity.azure-ad-connect

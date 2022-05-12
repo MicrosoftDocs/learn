@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-files
+subjects:
+- cloud-computing
 units:
 - learn.wwl.configure-azure-files-file-sync.introduction
 - learn.wwl.configure-azure-files-file-sync.compare-files-to-blobs
