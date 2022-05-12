@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-name-entity-recognition.understand-custom-named
+title: Understand custom named entity recognition
+metadata:
+  title: Understand custom named entity recognition
+  description: "Understand custom named entity recognition"
+  ms.date: 05/12/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-custom-named.md)]

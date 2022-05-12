@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-name-entity-recognition.exercise-extract-custom-entities
+title: Exercise - Extract custom entities
+metadata:
+  title: Exercise - Extract custom entities
+  description: "Exercise - Extract custom entities"
+  ms.date: 05/12/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-extract-custom-entities.md)]
