@@ -4,7 +4,7 @@ In this module, you've learned how to:
 
 - Identify capabilities and use cases for serverless SQL pools in Azure Synapse Analytics
 - Query CSV, JSON, and Parquet files using a serverless SQL pool
-- Create external database objects in a serverless SQL pool
+- Create external database objects in a serverless SQL pool 
 
 ## Learn more
 

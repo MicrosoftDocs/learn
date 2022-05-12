@@ -12,4 +12,4 @@ Before starting this module, you should have the following prerequisite skills a
 
 - Familiarity with the Microsoft Azure portal
 - Familiarity with data lake and data warehouse concepts
-- Experience of using SQL to query database tables
+- Experience of using SQL to query database tables 
