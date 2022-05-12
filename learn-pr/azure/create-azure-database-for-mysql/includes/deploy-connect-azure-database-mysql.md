@@ -107,6 +107,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
    ```
    mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
    ```
+   
 9. When prompted, enter the password that you assigned to the admin account you specified when provisioning the server in the previous task.
 
    > [!NOTE]
@@ -133,6 +134,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
    ```sql
    CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
    ```
+   
 15. From the **MySQL [(testdb)]** prompt, run the following command to add a row of data into the newly created table:
 
    ```sql
@@ -144,6 +146,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
    ```sql
    SELECT * FROM table1;
    ```
+   
 17. To exit the connection, at the **MySQL [(testdb)]** prompt, enter quit.
 
 ### Task 3: Clean up resources
