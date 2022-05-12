@@ -26,7 +26,7 @@ When you enable Security Center, the security policy built-in to Security Center
 
 Security Center makes mitigating your security alerts one step easier, by adding a Secure Score. The Secure Scores are now associated with each recommendation you receive to help you understand how important each recommendation is to your overall security posture. This is crucial in enabling you to prioritize your security work.
 
-### :::image type="content" source="../media/MSFT_Defender_for_Cloud_Secure_Score-e06d7c62.jpg" alt-text="Microsoft Defender for Cloud Secure Score Recommendations"::: 
+### :::image type="content" source="../media/MSFT_Defender_for_Cloud_Secure_Score-e06d7c62.jpg" alt-text="Screenshot of Microsoft Defender for Cloud Secure Score Recommendations."::: 
 
 ### Microsoft Defender for Cloud recommendations
 
