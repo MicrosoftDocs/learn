@@ -24,6 +24,9 @@ products:
 - azure-application-gateway
 - azure-key-vault
 - azure-sql-database
+subjects:
+- cloud-security
+- architecture
 modules:
 - learn.azure-security.resolve-threats-with-azure-security-center
 - learn.secure-your-azure-virtual-machine-disks

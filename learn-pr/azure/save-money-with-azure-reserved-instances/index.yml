@@ -25,6 +25,9 @@ roles:
 products: 
 - azure
 - azure-cost-management
+subjects:
+- cloud-computing
+- finance-accounting
 units:
 - learn.save-money-with-azure-reserved-instances.introduction
 - learn.save-money-with-azure-reserved-instances.determine-purchase

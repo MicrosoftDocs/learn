@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - azure-container-instances
+subjects:
+- container
 units:
 - learn.azure.azure-container-instances-sidecar.introduction
 - learn.azure.azure-container-instances-sidecar.deploy-into-virtual-network

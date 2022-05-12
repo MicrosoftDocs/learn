@@ -41,6 +41,8 @@ roles:
 products:
 - azure
 - azure-migrate
+subjects:
+- migration
 modules:
 - learn.azure.accelerate-migration-journey
 - learn.azure.cloud-adoption-framework-plan

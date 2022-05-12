@@ -32,6 +32,8 @@ products:
 - azure
 - azure-portal
 - azure-logic-apps
+subjects:
+- process-workflow
 units:
 - learn.azure.route-and-process-data-logic-apps.introduction
 - learn.azure.route-and-process-data-logic-apps.design-logic-apps-for-your-workflows

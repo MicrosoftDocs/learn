@@ -70,6 +70,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- security
 modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.azure.secure-network-connectivity-azure
