@@ -80,4 +80,56 @@ In this exercise, you'll add flyout navigation to the app.
 
 ## Adding icons
 
+You may have noticed the flyout items look a bit empty. You can add icons to the flyout items by using the `Icon` property.
+
+Some images have alrady been added to the **Resources\Images** folder for you to use.
+
+1. Set the `Icon` property of the first `FlyoutItem` to **moon.png**.
+
+    ```xaml
+    <FlyoutItem Title="Moon Phase" Icon="moon.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:MoonPhasePage}" />
+    </FlyoutItem>
+    ```
+
+1. Repeat for the other 2 flyout items, using **sun.png** and **question.png** respectively.
+
+    ```xaml
+    <FlyoutItem Title="Sunrise" Icon="sun.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:SunrisePage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="question.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:AboutPage}"/>
+    </FlyoutItem>
+    ```
+
+1. Run the app and open the flyout. You will see each flyout item now has an icon associated with it.
+
+    :::image type="content" source="../media/3-flyout-with-icons.png" alt-text="Screenshot of app running on Android with the flyout open and each flyout item has an icon.":::
+
 ## Add a flyout header
+
+The flyout items are at the very top of the flyout menu making them difficult to distinguish. We can add some space to the top, and even an entire `View` by using the `<Shell.FlyoutHeader>`.
+
+1. As a child to the `<Shell>` node, add in the following:
+
+    ```xaml
+    <Shell.FlyoutHeader>
+    </Shell.FlyoutHeader>
+    ```
+
+1. Within the `<Shell.FlyoutHeader>` you can create any view hierarchy you wish. Let's put in a `Grid` with an `Image`.
+
+    ```xaml
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="DarkBlueSlate">
+            <Image Source="moon.png" />
+        </Grid>
+    </Shell.FlyoutHeader>
+    ```
+
+    :::image type="content" source="../media/3-flyout-with-moon.png" alt-text="Screenshot of the app running with the floyout open, this time there is a header on the flyout with a icon of the moon.":::
