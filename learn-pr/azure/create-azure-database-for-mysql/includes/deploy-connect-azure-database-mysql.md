@@ -17,18 +17,18 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 5. On the **Flexible server** page, on the **Basics** tab, enter the information in the following table.
 
-| **Setting**                  | **Value**                          | **Description**                                              |
-| ---------------------------- | ---------------------------------- | ------------------------------------------------------------ |
-| **Subscription**             | The name of  your subscription     | Enter the name  of the Azure subscription that you want to use for your server. |
-| **Resource group**           | mysql-RG                           | Enter the  name of a new or existing resource group to host the deployment. |
-| **Server name**              | <server_name>                      | Enter any  valid and globally unique name that will identify your flexible server. The fully  qualified name of the server consists of this name followed by the suffix mysql.database.azure.com.  The server name can contain only lowercase letters, numbers, and the hyphen  (-) character. It must contain between 3 and 63 characters. |
-| **Region**                   | The name of  an Azure region       | Enter the name  of the Azure region that will host your server. Select any region that  supports Azure Database for MySQL Flexible Server deployment, and that is close  to the location of the computer you use to run this exercise. |
-| **MySQL version**            | 8.0                                | Enter the MySQL  major version your app will be using.       |
-| **Workload type**            | For  development or hobby projects | Enter the  intended workload type, which determines the VM SKU to host the server. |
-| **Availability zone**        | No preference                      | This is the  setting that allows you to specify an availability zone where the server will  be deployed. Your choice is typically based on the zone hosting the  application tier. |
-| **Enable high availability** | Not selected                       | This is the  setting that determines whether you want to have a replica server  automatically provisioned in another availability zone (for zonal  deployments). This option requires the choice of either **General Purpose** or **Memory Optimized** VM SKUs  compute tier). |
-| **Admin username**           | <server_name>                      | Enter any  valid user name, which will be configured as the admin account for the MySQL  server instance. Do not use azure_superuser, admin, administrator, root,  guest, or public. |
-| **Password**                 | <server_name>                      | Enter any  valid password that is assigned to the admin account. It must contain between  8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0  through 9), and non-alphanumeric characters (such as !, $, #, %). |
+   | **Setting**                  | **Value**                          | **Description**                                              |
+   | ---------------------------- | ---------------------------------- | ------------------------------------------------------------ |
+   | **Subscription**             | The name of  your subscription     | Enter the name  of the Azure subscription that you want to use for your server. |
+   | **Resource group**           | mysql-RG                           | Enter the  name of a new or existing resource group to host the deployment. |
+   | **Server name**              | <server_name>                      | Enter any  valid and globally unique name that will identify your flexible server. The fully  qualified name of the server consists of this name followed by the suffix mysql.database.azure.com.  The server name can contain only lowercase letters, numbers, and the hyphen  (-) character. It must contain between 3 and 63 characters. |
+   | **Region**                   | The name of  an Azure region       | Enter the name  of the Azure region that will host your server. Select any region that  supports Azure Database for MySQL Flexible Server deployment, and that is close  to the location of the computer you use to run this exercise. |
+   | **MySQL version**            | 8.0                                | Enter the MySQL  major version your app will be using.       |
+   | **Workload type**            | For  development or hobby projects | Enter the  intended workload type, which determines the VM SKU to host the server. |
+   | **Availability zone**        | No preference                      | This is the  setting that allows you to specify an availability zone where the server will  be deployed. Your choice is typically based on the zone hosting the  application tier. |
+   | **Enable high availability** | Not selected                       | This is the  setting that determines whether you want to have a replica server  automatically provisioned in another availability zone (for zonal  deployments). This option requires the choice of either **General Purpose** or **Memory Optimized** VM SKUs  compute tier). |
+   | **Admin username**           | <server_name>                      | Enter any  valid user name, which will be configured as the admin account for the MySQL  server instance. Do not use azure_superuser, admin, administrator, root,  guest, or public. |
+   | **Password**                 | <server_name>                      | Enter any  valid password that is assigned to the admin account. It must contain between  8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0  through 9), and non-alphanumeric characters (such as !, $, #, %). |
 
    ![The Flexible server tab of the Azure portal Flexible server deployment page displaying the project and server details of a new Azure Database for MySQL server.](../media/4-deploy-mysql-basics_1.png)
 
