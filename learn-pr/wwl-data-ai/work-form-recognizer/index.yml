@@ -31,6 +31,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.work-with-form-recognizer.introduction
 - learn.wwl.work-with-form-recognizer.what-form-recognizer

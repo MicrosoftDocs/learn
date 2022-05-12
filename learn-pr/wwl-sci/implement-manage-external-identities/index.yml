@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.implement-manage-external-identities.introduction
 - learn.wwl.implement-manage-external-identities.collaboration

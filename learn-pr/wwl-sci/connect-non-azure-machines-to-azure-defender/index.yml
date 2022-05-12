@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- cloud-security
 units:
 - learn.wwl.connect-non-azure-machines-to-azure-defender.introduction
 - learn.wwl.connect-non-azure-machines-to-azure-defender.protect-resources

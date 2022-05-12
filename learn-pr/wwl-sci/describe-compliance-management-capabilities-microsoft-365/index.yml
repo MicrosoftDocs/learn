@@ -28,6 +28,9 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- compliance
+- networking
 units:
 - learn.wwl.describe-compliance-management-capabilities-microsoft-365.introduction
 - learn.wwl.describe-compliance-management-capabilities-microsoft-365.explore-compliance-center

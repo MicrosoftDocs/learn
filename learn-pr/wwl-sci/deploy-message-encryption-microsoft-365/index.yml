@@ -26,6 +26,8 @@ roles:
 products:
 - office-365
 - m365-information-protection
+subjects:
+- communication
 units:
 - learn.wwl.deploy-message-encryption-microsoft-365.introduction
 - learn.wwl.deploy-message-encryption-microsoft-365.plan-encryption-solutions-based-methods-available

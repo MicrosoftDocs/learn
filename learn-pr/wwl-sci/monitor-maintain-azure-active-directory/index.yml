@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.monitor-maintain-azure-active-directory.introduction
 - learn.wwl.monitor-maintain-azure-active-directory.analyze-investigate-sign-logs-to-troubleshoot-access-issues
