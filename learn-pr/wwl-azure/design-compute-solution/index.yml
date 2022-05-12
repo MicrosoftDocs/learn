@@ -33,6 +33,9 @@ products:
 - azure-batch
 - azure-container-instances
 - azure-virtual-machines
+subjects:
+- business-applications
+- infrastructure
 units:
 - learn.wwl.design-compute-solution.introduction
 - learn.wwl.design-compute-solution.choose-compute-service

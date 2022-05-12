@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.create-manage-session-host-image.introduction
 - learn.wwl.create-manage-session-host-image.create-managed-vm-image

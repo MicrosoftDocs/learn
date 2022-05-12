@@ -39,6 +39,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- development-tools
 units:
 - learn.wwl.owasp-and-dynamic-analyzers.introduction
 - learn.wwl.owasp-and-dynamic-analyzers.plan-implement-owasp-secure-coding-practices

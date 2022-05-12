@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-container-instances
+subjects:
+- container
 units:
 - learn.wwl.configure-azure-container-instances.introduction
 - learn.wwl.configure-azure-container-instances.compare-containers-to-virtual-machines

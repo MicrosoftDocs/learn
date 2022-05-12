@@ -32,6 +32,8 @@ roles:
 products:
 - azure-active-directory
 - azure-rbac
+subjects:
+- identity-access
 units:
 - learn.wwl.design-authentication-authorization-solutions.introduction
 - learn.wwl.design-authentication-authorization-solutions.design-for-identity-access-management

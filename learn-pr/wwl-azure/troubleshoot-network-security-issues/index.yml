@@ -40,6 +40,9 @@ products:
 - azure-private-link
 - azure-virtual-machines
 - azure-virtual-network
+subjects:
+- networking
+- cloud-security
 units:
 - learn.wwl.troubleshoot-network-security-issues.introduction
 - learn.wwl.troubleshoot-network-security-issues.setup-troubleshooting-environment

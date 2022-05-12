@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.secure-windows-server-user-accounts.introduction
 - learn.wwl.secure-windows-server-user-accounts.configure-user-account-rights

@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- business-applications
 units:
 - learn.wwl.design-processes-to-capture-analyze-user-feedback.introduction
 - learn.wwl.design-processes-to-capture-analyze-user-feedback.explore-twitter-sentiment-release-gate

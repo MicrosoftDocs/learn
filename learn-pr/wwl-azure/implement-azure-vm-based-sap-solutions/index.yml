@@ -24,6 +24,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- data-engineering
+- virtual-machine
 units:
 - learn.wwl.implement-azure-vm-based-sap-solutions.introduction
 - learn.wwl.implement-azure-vm-based-sap-solutions.define-azure-vm-deployment-methodologies-sap-workloads
