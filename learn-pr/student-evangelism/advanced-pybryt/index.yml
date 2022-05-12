@@ -29,6 +29,8 @@ products:
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of PyBryt annotations and reference implementations
+subjects:
+- development-tools
 units:
   - learn.advanced-pybryt.1-introduction
   - learn.advanced-pybryt.2-annotation-options
