@@ -35,6 +35,8 @@ roles:
 - technology-manager 
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.azure.cloud-adoption-framework-getting-started
 - learn.cloud-adoption-framework-strategy
@@ -45,5 +47,6 @@ modules:
 - learn.cloud-adoption-framework-manage
 - learn.innovate-applications-azure-cloud-technologies
 - learn.azure.cloud-adoption-framework-security
+- learn.azure.cloud-adoption-framework-organize
 trophy:
   uid: learn.cloud-adoption-framework.trophy

@@ -962,3 +962,8 @@ achievements:
   title: Describe performance-related maintenance tasks in SQL Server
   summary: Implement tasks for both IaaS and PaaS  to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database.
   iconUrl: /learn/achievements/describe-performance-related-maintenance-tasks-in-sqlserver.svg
+- uid: learn.wwl.explore-concepts-of-non-relational-data.badge
+  type: badge
+  title: Explore concepts of non-relational data
+  summary: Learn about non-relational databases, and how they compare to relational databases. Understand the different types of non-relational databases commonly used by applications.
+  iconUrl: /learn/achievements/explore-concepts-of-non-relational-data.svg

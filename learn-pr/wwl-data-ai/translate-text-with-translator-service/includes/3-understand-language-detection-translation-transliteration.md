@@ -42,7 +42,7 @@ For example, you could submit the same JSON we previously used to detect the lan
 
 ## Transliteration
 
-Our Japanese text is written using Kanji script, so rather than translate it to a different language, you may want to transliterate it to a different script - for example to render the text in Latin script (as used by English language text).
+Our Japanese text is written using Hiragana script, so rather than translate it to a different language, you may want to transliterate it to a different script - for example to render the text in Latin script (as used by English language text).
 
 To accomplish this, we can submit the Japanese text to the **transliterate** function with a **fromScript** parameter of **Jpan** and a **toScript** parameter of **Latn** to get the following result:
 
