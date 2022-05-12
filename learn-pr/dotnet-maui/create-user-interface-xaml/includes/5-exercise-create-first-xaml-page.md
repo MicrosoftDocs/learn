@@ -14,9 +14,9 @@ You've been asked to add some further features to this page. Before you start, y
 
 ## Review the existing app
 
-1. Clone the [GitHub repository](http://github.com/EXERCISE_REPO_GOES_HERE) for this exercise locally on your computer.
+1. Clone the [GitHub repository](https://github.com/microsoftdocs/mslearn-dotnetmaui-create-user-interface-xaml) for this exercise locally on your computer.
 
-1. Move to the **exercise1/start** folder in your local copy of the repository.
+1. Move to the **exercise1** folder in your local copy of the repository.
 
 1. Open the **Notes.sln** Visual Studio solution file in this folder.
 
@@ -27,24 +27,13 @@ You've been asked to add some further features to this page. Before you start, y
     ```csharp
     public MainPage()
     {
-        var stackLayout = new StackLayout();
+        var stackLayout = new VerticalStackLayout { Padding = new Thickness(30) };
         this.Content = stackLayout;
-        this.Content.Margin = new Thickness(30, 60, 30, 30);
-
-        var mainGrid = new Grid();
-        mainGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1.0, GridUnitType.Auto) });
-        mainGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1.0, GridUnitType.Auto) });
-        mainGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1.0, GridUnitType.Auto) });
-        stackLayout.Add(mainGrid);
-
+                
         var notesHeading = new Label() { Text = "Notes", HorizontalOptions = LayoutOptions.Center, FontAttributes = FontAttributes.Bold };
-        Grid.SetRow(notesHeading, 0);
-        mainGrid.Children.Add(notesHeading);
 
         editor = new Editor() { Placeholder = "Enter your note", HeightRequest = 100 };
         editor.Text = File.Exists(_fileName) ? File.ReadAllText(_fileName) : string.Empty;
-        Grid.SetRow(editor, 1);
-        mainGrid.Children.Add(editor);
 
         var buttonsGrid = new Grid() { HeightRequest = 40.0};
         buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1.0, GridUnitType.Auto) });
@@ -67,7 +56,7 @@ You've been asked to add some further features to this page. Before you start, y
     }
     ```
 
-    The UI comprises a `StayLayout` containing a `Grid`. The first two rows in the `Grid` contain a `Label` acting as a heading, and an `Editor` into which the user can enter notes. The third row in the `Grid` contains a child `Grid` with three columns. The first column holds the **saveButton** control, the second is a spacer, and the third column has the **deleteButton** control.
+    The UI comprises a `VerticalStackLayout` containing a `Grid`. The first two rows in the `Grid` contain a `Label` acting as a heading, and an `Editor` into which the user can enter notes. The third row in the `Grid` contains a child `Grid` with three columns. The first column holds the **saveButton** control, the second is a spacer, and the third column has the **deleteButton** control.
 
     The diagram below illustrates the structure of the UI:
 
@@ -84,81 +73,61 @@ You've been asked to add some further features to this page. Before you start, y
     ```xml
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                 x:Class="Notes.MainPage"
-                 BackgroundColor="{DynamicResource SecondaryColor}">
+                 x:Class="Notes.MainPage">
 
     </ContentPage>
     ```
 
-1. Add a `StackLayout` control to the content page:
+1. Add a `VerticalStackLayout` control to the content page:
 
     ```xml
     <ContentPage ...>
-        <StackLayout Margin="30,60,30,30">
+        <VerticalStackLayout Margin="30,60,30,30">
 
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
-1. Add a `Grid` control with three automatically sized rows to the `StackLayout`:
+
+1. Add a `Label` control to the `VerticalStackLayout`. Set the **Text**, **HorizontalTextAlignment**, and **FontAttributes** properties of this control as shown below:
 
     ```xml
     <ContentPage ...>
-        <StackLayout ...>
-            <Grid RowDefinitions="Auto,Auto,Auto">
-            
+        <VerticalStackLayout ...>
+            <Label Text="Notes"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" />
+        </VerticalStackLayout>
+    </ContentPage>
+    ```
+
+1. Add an `Editor` control to the `VerticalStackLayout`:
+
+    ```xml
+    <ContentPage ...>
+        <VerticalStackLayout ...>
+            <Label .../>
+
+            <Editor x:Name="editor"
+                    Placeholder="Enter your note"
+                    HeightRequest="100" />
+        </VerticalStackLayout>
+    </ContentPage>
+    ```
+
+1. Add a child `Grid` the `VerticalStackLayout`. This `Grid` should have three columns; the first and third are sized automatically, while the second has a width of 30:
+
+    ```xml
+    <ContentPage ...>
+        <VerticalStackLayout ...>
+            <Label .../>
+
+            <Editor .../>
+
+            <Grid ColumnDefinitions="Auto, 30, Auto">
+
             </Grid>
-        </StackLayout>
-    </ContentPage>
-    ```
-
-1. Add a `Label` control to the first row of the `Grid`. Set the **Text**, **HorizontalTextAlignment**, and **FontAttributes** properties of this control as shown below:
-
-    ```xml
-    <ContentPage ...>
-        <StackLayout ...>
-            <Grid ...>
-                <Label Grid.Row="0"
-                       Text="Notes"
-                       HorizontalOptions="Center"
-                       FontAttributes="Bold" />
-            </Grid>
-        </StackLayout>
-    </ContentPage>
-    ```
-
-1. Add an `Editor` control to the second row of the `Grid`:
-
-    ```xml
-    <ContentPage ...>
-        <StackLayout ...>
-            <Grid ...>
-                <Label .../>
-    
-                <Editor x:Name="editor"
-                        Grid.Row="1"
-                        Placeholder="Enter your note"
-                        HeightRequest="100" />
-            </Grid>
-        </StackLayout>
-    </ContentPage>
-    ```
-
-1. Add a child `Grid` to the third row. The child `Grid` should have three columns; the first and third are sized automatically, while the second has a width of 30:
-
-    ```xml
-    <ContentPage ...>
-        <StackLayout ...>
-            <Grid ...>
-                <Label .../>
-    
-                <Editor .../>
-
-                <Grid Grid.Row="2" ColumnDefinitions="Auto, 30, Auto">
-                
-                </Grid>
-            </Grid>
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
@@ -166,7 +135,7 @@ You've been asked to add some further features to this page. Before you start, y
 
     ```xml
     <ContentPage ...>
-        <StackLayout ...>
+        <VerticalStackLayout ...>
             <Grid ...>
                 <Label .../>
     
@@ -179,7 +148,7 @@ You've been asked to add some further features to this page. Before you start, y
                             Clicked="OnSaveButtonClicked" />
                 </Grid>
             </Grid>
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
@@ -187,7 +156,7 @@ You've been asked to add some further features to this page. Before you start, y
 
     ```xml
     <ContentPage ...>
-        <StackLayout ...>
+        <VerticalStackLayout ...>
             <Grid ...>
                 <Label .../>
     
@@ -202,7 +171,7 @@ You've been asked to add some further features to this page. Before you start, y
                             Clicked="OnDeleteButtonClicked" />
                 </Grid>
             </Grid>
-        </StackLayout>
+        </VerticalStackLayout>
     </ContentPage>
     ```
 
