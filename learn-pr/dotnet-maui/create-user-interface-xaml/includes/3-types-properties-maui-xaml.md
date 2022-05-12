@@ -8,7 +8,7 @@ In this unit, you'll learn how to use the types available in XAML, and how to se
 
 The .NET types that implement the items identified by XAML code are implemented by code in several .NET assemblies. Many of these assemblies are included as part of the .NET MAUI templates. You can also utilize other custom types by loading the appropriate assemblies as part of your project. Many assemblies are available as NuGet packages. Most of the common types used by a MAUI app are in the **Microsoft.Maui.Dependencies** and **Microsoft.Maui.Extensions** packages.
 
-Each type is defined in a namespace. In your XAML code, you specify the namespaces for the types you reference. Most MAUI controls are located in the **Microsoft.Maui.Controls** namespace, while the **Microsoft.Maui** namespace defines utility types such as `Thickness`, and the **Microsoft.Maui.Graphics** namespace includes generalized types such as `Color`. The option to introduce types in this way highlights the extensibility of XAML. XAML allows you to create your app's UI with the freedom to include .NET MAUI XAML elements, .NET types, and custom types.
+Each type is defined in a namespace. In your XAML code, you specify the namespaces for the types you reference. Most MAUI controls are located in the **Microsoft.Maui.Controls** namespace, while the **Microsoft.Maui** namespace defines utility types such as `Thickness`, and the **Microsoft.Maui.Graphics** namespace includes generalized types such as `Color`. The option to introduce types in this way highlights the extensibility of XAML. XAML allows you to create your app's UI with the freedom to include .NET MAUI XAML elements, .NET types, and custom types. For the most part you do not need to worry about these namespaces as they are brought in using C#'s implicit usings feature that automatically adds them app wide.
 
 ## How to instantiate types in XAML
 
@@ -21,11 +21,10 @@ The first step in using XAML to build a UI is instantiating the UI control types
 This XAML element will be parsed by the .NET MAUI XAML parser to instantiate the object in memory. Effectively, the parsed XAML label is the same as the following C# code:
 
 ```csharp
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Graphics;
-...
-Label myLabel = new Label();
-myLabel.TextColor = Color.FromRgb(255, 255, 100);
+var myLabel = new Label
+{
+  TextColor = Color.FromRgb(255, 255, 100)
+};
 ```
 
 ## What is a XAML namespace?
@@ -75,7 +74,7 @@ You can reference types in your own assembles in XAML code through a XAML namesp
 In XML, you use attributes to describe or provide information about an element. In XAML, you use attributes to set properties on the underlying type. For example, considering the following C# code:
 
 ```csharp
-new Label {Text = "Username", TextColor = Color.Black}
+var label = new Label { Text = "Username", TextColor = Color.Black };
 ```
 
 This statement creates a new `Label` object and sets the `Text` and `TextColor` properties. To set properties in XAML, you use attributes. The corresponding XAML code looks like this:
@@ -125,17 +124,17 @@ The `Label` type has a property named `GestureRecognizers`. By using the **Prope
 Some .NET MAUI controls have a default content property. The content property allows you to specify the value of a property on a control without explicitly stating it in XAML. Take a look at the following XAML fragment:
 
 ```xml
-<StackLayout>
-    <StackLayout.Children>
+<VerticalStackLayout>
+    <VerticalStackLayout.Children>
         <Label Text="Please log in" />
-    </StackLayout.Children>
-</StackLayout>
+    </VerticalStackLayout.Children>
+</VerticalStackLayout>
 ```
 
-This code creates a `StackLayout` and adds a `Label` as a child element. Since it's common to add children to a `StackLayout`, its `Children` property is the default content property. This means that you can add a child without explicitly specifying the `Children`, as follows:
+This code creates a `VerticalStackLayout` and adds a `Label` as a child element. Since it's common to add children to a `VerticalStackLayout`, its `Children` property is the default content property. This means that you can add a child without explicitly specifying the `Children`, as follows:
 
 ```xml
-<StackLayout>
+<VerticalStackLayout>
     <Label Text="Please log in" />
-</StackLayout>
+</VerticalStackLayout>
 ```

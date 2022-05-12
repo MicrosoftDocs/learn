@@ -36,26 +36,25 @@ The **serviceProvider** parameter contains contextual information about where th
 The mark-up extension for the `FontSize` property can be kept simple. In the example below, the **MainPage** class exposes a `double` field named **MyFontSize**. The **GlobalFontSizeExtension** class implements the **IMarkupExtension** interface, and the **ProvideValue** method returns the value of **MyFontSize** variable:
 
 ```csharp
-namespace MyMauiApp
+namespace MyMauiApp;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage, IPage
+    public const double MyFontSize = 28;
+
+    public MainPage()
     {
-        public const double MyFontSize = 28;
-    
-        public MainPage()
-        {
-            InitializeComponent();
-            ...
-        }
+        InitializeComponent();
         ...
     }
-    
-    public class GlobalFontSizeExtension : IMarkupExtension
+    ...
+}
+
+public class GlobalFontSizeExtension : IMarkupExtension
+{
+    public object ProvideValue(IServiceProvider serviceProvider)
     {
-        public object ProvideValue(IServiceProvider serviceProvider)
-        {
-            return MainPage.MyFontSize;
-        }
+        return MainPage.MyFontSize;
     }
 }
 ```
@@ -73,8 +72,7 @@ To use the mark-up extension in your XAML code, add the namespace containing the
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mycode="clr-namespace:MyMauiApp"
-             x:Class="MyMauiApp.MainPage"
-             BackgroundColor="{DynamicResource PageBackgroundColor}">
+             x:Class="MyMauiApp.MainPage">
 ```
 
 You use the mark-up extension to set the `FontSize` property like this. Note the convention is that a mark-up extension has the suffix **Extension** in its name. XAML recognizes this suffix, and you don't need to include it when you call the extension from your XAML code. In the example below, the **GlobalFontSizeExtension** class is referenced simply as **GlobalFontSize**:

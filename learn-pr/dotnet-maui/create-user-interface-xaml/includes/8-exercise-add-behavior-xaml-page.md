@@ -11,7 +11,7 @@ You'll create a static class to hold the values for the font color and backgroun
 1. In Visual Studio, return to the Notes app you edited in the previous exercise.
 
     > [!NOTE]
-    > A working copy of the app is available in the **exercise2\start** folder in exercise repository you cloned at the start of the previous exercise.
+    > A working copy of the app is available in the **exercise2** folder in exercise repository you cloned at the start of the previous exercise.
 
 1. In the **Solution Explorer** window, right-click the **Notes** project, select **Add**, and then select **Class**.
 
@@ -22,14 +22,11 @@ You'll create a static class to hold the values for the font color and backgroun
 1. In the **SharedResources.cs** file, replace the `using` directives with that shown below, and mark the **SharedResources** class as `static`:
 
     ```csharp
-    using Microsoft.Maui.Graphics;
-
-    namespace Notes
+    namespace Notes;
+    
+    static class SharedResources
     {
-        static class SharedResources
-        {
            
-        }
     }
     ```
 
@@ -66,8 +63,7 @@ You'll create a static class to hold the values for the font color and backgroun
 1. Add the `TextColor` attribute shown in the following code to the `Label` control. This mark-up uses the `x:Static` mark-up extension to retrieve the values store in the `static` fields in the **SharedResources** class:
 
     ```xml
-    <Label Grid.Row="0"
-        Text="Notes"
+    <Label Text="Notes"
         HorizontalOptions="Center"
         FontAttributes="Bold" 
         TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
@@ -81,39 +77,34 @@ You'll create a static class to hold the values for the font color and backgroun
              xmlns:notes="clr-namespace:Notes"
              x:Class="Notes.UIPage">
 
-        <StackLayout Padding="30,60,30,30">
-            <Grid RowDefinitions="Auto,Auto,Auto">
-                <Label Grid.Row="0"
-                    Text="Notes"
-                    HorizontalOptions="Center"
-                    FontAttributes="Bold" 
-                    TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
-    
-                <Editor x:Name="editor"
-                        Grid.Row="1"
-                        Placeholder="Enter your note"
-                        HeightRequest="100" 
-                        TextColor="{x:Static Member=notes:SharedResources.FontColor}"/>
-    
-                <Grid Grid.Row="2" 
-                      ColumnDefinitions="Auto,Auto">
-    
-                    <Button Grid.Column="0"
-                            Text="Save" 
-                            WidthRequest="100"
-                            TextColor="{x:Static Member=notes:SharedResources.FontColor}"
-                            BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
-                            Clicked="OnSaveButtonClicked" />
-    
-                    <Button Grid.Column="1"
-                            Text="Delete" 
-                            WidthRequest="100"
-                            TextColor="{x:Static Member=notes:SharedResources.FontColor}"
-                            BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
-                            Clicked="OnDeleteButtonClicked" />
-                </Grid>
+        <VerticalStackLayout Padding="30,60,30,30">
+            <Label Text="Notes"
+                HorizontalOptions="Center"
+                FontAttributes="Bold" 
+                TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
+
+            <Editor x:Name="editor"
+                    Placeholder="Enter your note"
+                    HeightRequest="100" 
+                    TextColor="{x:Static Member=notes:SharedResources.FontColor}"/>
+
+            <Grid Grid.Row="2" ColumnDefinitions="Auto,30,Auto">
+
+                <Button Grid.Column="0"
+                        Text="Save" 
+                        WidthRequest="100"
+                        TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+                        BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+                        Clicked="OnSaveButtonClicked" />
+
+                <Button Grid.Column="2"
+                        Text="Delete" 
+                        WidthRequest="100"
+                        TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+                        BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+                        Clicked="OnDeleteButtonClicked" />
             </Grid>
-        </StackLayout>
+        </VerticalStackLayout>
     
     </ContentPage>
     ```

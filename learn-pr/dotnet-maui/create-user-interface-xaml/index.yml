@@ -19,7 +19,7 @@ abstract: |
   - How to create and use XAML mark-up extensions
   - How to set platform-specific values in XAML mark-up
 prerequisites: |
-  - Visual Studio 2022 with the MAUI workload installed
+  - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
 iconUrl: /learn/achievements/create-user-interface-xaml.svg
 levels:
