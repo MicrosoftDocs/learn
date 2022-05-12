@@ -4,7 +4,7 @@ title: Connect to and query MySQL - Flexible Server from your application
 metadata:
   unitType: learning-content
   title: Connect to and query MySQL - Flexible Server from your application
-  description: Learn how to connect to and query Azure Database for MySQL - Flexible Server from applications developed in programming languages like PHP, Java, Python.
+  description: Learn how to connect to and query Azure Database for MySQL - Flexible Server from your application, developed in languages like PHP, Java, Python.
   ms.date: 5/10/2022
   author: shreyaaithal
   ms.author: shaithal
