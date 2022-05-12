@@ -121,6 +121,14 @@ This example shows how to define four rows and add them to a `Grid` by using the
 </Grid>
 ```
 
+This can be shortned to:
+
+```xaml
+<Grid RowDefinitions="100, Auto, 1*, 2*">
+    ...
+</Grid>
+```
+
 The XAML for defining columns is analogous to this XAML, except you would use `ColumnDefinitions` and you would set the width.
 
 At runtime, this XAML will produce a `Grid` with four rows. The first row will have a fixed height of `100` device units. The second row will have the height of the tallest view in the row. The third and fourth rows use star sizing, which means they'll take the remaining available space and divide it proportionally based on their `Value` multiplier. Because the third row is `1*` and the fourth row is `2*`, the fourth row will be twice the height of the third row.
@@ -140,6 +148,14 @@ The default for rows and columns is `1*` size. For example, look at the followin
         <ColumnDefinition />
         <ColumnDefinition />
     </Grid.ColumnDefinitions>
+    ...
+</Grid>
+```
+
+This can be shortned to:
+
+```xaml
+<Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
     ...
 </Grid>
 ```
@@ -169,18 +185,10 @@ Think of attached properties as a collection of key-value pairs that is part of 
 This example shows how to create a `Grid` and add a view by using attached properties:
 
 ```xaml
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition />
-        <RowDefinition />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition />
-        <ColumnDefinition />
-    </Grid.ColumnDefinitions>
+<Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
 
     <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Navy" />
+    
 </Grid>
 ```
 
@@ -193,18 +201,10 @@ In this example, `Grid.Row=1` and `Grid.Column=0` are key-value pairs that get a
 There are two more attached properties you should be aware of: `Grid.RowSpan` and `Grid.ColumnSpan`. These properties specify how many rows or columns the view should occupy. For example, look at the following XAML.
 
 ```xaml
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition />
-        <RowDefinition />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition />
-        <ColumnDefinition />
-    </Grid.ColumnDefinitions>
+<Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
 
     <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Navy" />
+    
 </Grid>
 ```
 
