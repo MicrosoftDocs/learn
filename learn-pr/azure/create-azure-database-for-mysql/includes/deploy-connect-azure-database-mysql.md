@@ -30,7 +30,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 | **Admin username**           | <server_name>                      | Enter any  valid user name, which will be configured as the admin account for the MySQL  server instance. Do not use azure_superuser, admin, administrator, root,  guest, or public. |
 | **Password**                 | <server_name>                      | Enter any  valid password that is assigned to the admin account. It must contain between  8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0  through 9), and non-alphanumeric characters (such as !, $, #, %). |
 
-![The Flexible server tab of the Azure portal Flexible server deployment page displaying the project and server details of a new Azure Database for MySQL server.](../media/4-deploy-mysql-basics_1.png)
+   ![The Flexible server tab of the Azure portal Flexible server deployment page displaying the project and server details of a new Azure Database for MySQL server.](../media/4-deploy-mysql-basics_1.png)
 
 6. On the **Basics** tab, select the **Configure server** link.
 
@@ -48,7 +48,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 8. On the **Compute + Storage** page, select **Save**.
 
-![Use the Compute + storage page to configure the compute, storage, high availability, and backups settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-compute_storage.png)
+   ![Use the Compute + storage page to configure the compute, storage, high availability, and backups settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-compute_storage.png)
 
 9. On the **Basics** tab of the **Flexible server** page, select **Next: Networking >**.
 
@@ -60,7 +60,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
     c. Select the **+ Add current client IP address** link.
 
-    ![From the Networking tab you can configure the networking settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-networking.png)
+       ![From the Networking tab you can configure the networking settings for a new Azure Database for MySQL server.](../media/4-deploy-mysql-networking.png)
 
 11. On the **Networking** tab of the **Flexible server** page, select **Review + create**.
 
@@ -91,59 +91,59 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
 
 5. Open a browser tab in the same web browser window and navigate to https://shell.azure.com.
 
-> [!NOTE]
-> If this is the first time you’re using Cloud Shell and you’re presented with the message **You have no storage mounted**, select the subscription you’re using in this exercise, and then select **Create storage**.
+   > [!NOTE]
+   > If this is the first time you’re using Cloud Shell and you’re presented with the message **You have no storage mounted**, select the subscription you’re using in this exercise, and then select **Create storage**.
 
 6. If required, in the Cloud Shell pane, switch to the **Bash** option using the drop-down menu in the toolbar.
 
 7. In the Cloud Shell pane, run the following command to download the public certificate used by the server:
 
- ```
- wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
- ```
+   ```
+   wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
+   ```
 
 8. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server, and the <user_name> placeholder with the name of the admin account you specified when provisioning the server in the previous task:
 
- ```
- mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
- ```
+   ```
+   mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
+   ```
 9. When prompted, enter the password that you assigned to the admin account you specified when provisioning the server in the previous task.
 
- > [!NOTE]
-> When connecting to your flexible server by using Azure Cloud Shell, you need to specify the --ssl=true parameter (rather than --ssl-mode=REQUIRED). The reason for this is that Azure Cloud Shell uses the mysql.exe client from MariaDB distribution, and not the mysql client from Oracle's distribution (which requires the --ssl-mode parameter).
+   > [!NOTE]
+   > When connecting to your flexible server by using Azure Cloud Shell, you need to specify the --ssl=true parameter (rather than --ssl-mode=REQUIRED). The reason for this is that Azure Cloud Shell uses the mysql.exe client from MariaDB distribution, and not the mysql client from Oracle's distribution (which requires the --ssl-mode parameter).
 
 10. You should be presented with the **MySQL [(none)]** prompt. This verifies that the connection was successful.
 
 11. Next, from the **MySQL [(none)]** prompt, run the following command to list databases hosted by the server:
 
-```sql
-SHOW DATABASES;
-```
+   ```sql
+   SHOW DATABASES;
+   ```
 
 12. Verify that the list includes the four pre-created databases (information_schema, mysql, performance_schema, and sys) and the testdb that you created in the previous task.
 
 13. From the **MySQL [(none)]** prompt, run the following command to switch to the testdb database:
 
-```sql
-use testdb;
-```
+   ```sql
+   use testdb;
+   ```
 
 14. From the **MySQL [(testdb)]** prompt, run the following command to create a sample table in the testdb database:
 
-```sql
-CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
-```
+   ```sql
+   CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
+   ```
 15. From the **MySQL [(testdb)]** prompt, run the following command to add a row of data into the newly created table:
 
-```sql
-INSERT INTO table1 values (1,100,'text1');
-```
+   ```sql
+   INSERT INTO table1 values (1,100,'text1');
+   ```
 
 16. From the **MySQL [(testdb)]** prompt, run the following command to display the newly added data:
 
-```sql
-SELECT * FROM table1;
-```
+   ```sql
+   SELECT * FROM table1;
+   ```
 17. To exit the connection, at the **MySQL [(testdb)]** prompt, enter quit.
 
 ### Task 3: Clean up resources
