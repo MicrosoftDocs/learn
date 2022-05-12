@@ -27,7 +27,7 @@ The Burstable compute tier utilizes the B series VMs, General Purpose relies on 
 
 You access the tier options from the Azure portal’s **Flexible server Compute+ storage** page, **Compute** section.
 
-![The Compute section of the Azure portal Flexible Server Compute+ storage page lists  the Memory Optimized compute tier’s compute sizes options.](../media/2-mysql-compute-tier-sizes.png)
+![Screenshot of the Compute section of the Azure portal Flexible Server Compute+ storage page, which lists the Memory Optimized compute tier’s compute sizes options.](../media/2-mysql-compute-tier-sizes.png)
 
 #### Storage
 
@@ -63,7 +63,7 @@ The server by default enforces Transport Layer Security (TLS 1.2) to help protec
 
 You access the network connectivity options from the Azure portal’s **Flexible server deployment** page, **Networking** tab.
 
-![The Networking tab of the Azure portal Flexible server deployment page displays networking settings for a new Azure Database for MySQL server.](../media/2-mysql-network_connectivity.png)
+![Screenshot of the Networking tab of the Azure portal Flexible server deployment page, which displays networking settings for a new Azure Database for MySQL server.](../media/2-mysql-network_connectivity.png)
 
 #### High availability
 
@@ -98,7 +98,7 @@ Azure Database for MySQL Flexible Server offers numerous cost-optimization capab
 
 To configure these options, go to the Azure portal’s **Flexible server deployment** page, **Compute + storage** tab.
 
-![From the Compute + storage tab of the Azure portal Flexible server deployment page you can select individual settings for a new Azure Database for MySQL server, and review its estimated cost.](../media/2-mysql-estimated-cost.png)
+![Screenshot of the Compute + storage tab displaying individual settings for a new Azure Database for MySQL server and its estimated cost.](../media/2-mysql-estimated-cost.png)
 
 - The ability to stop and start the server on-demand. The compute tier billing is stopped as soon as you stop the server. This can allow you to minimize costs during development, testing, and for production workloads with a reliably predictable schedule.
 
