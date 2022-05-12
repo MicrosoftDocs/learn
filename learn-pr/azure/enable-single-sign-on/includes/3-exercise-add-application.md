@@ -1,10 +1,10 @@
 In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
 
-The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. The administrator then creates a user account in the Azure AD tenant for testing single sign-on between the identity provider and the service provider.
+The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
 
 ## Access the application gallery
 
-The Azure AD application gallery contains thousands of pre-integrated software as a service (SaaS) applications. Many of the applications that the retail company uses are probably already in the gallery. The administrator from the retail company locates the gallery from the Azure portal.
+The Azure AD application gallery contains many pre-integrated software as a service (SaaS) applications. Applications that the retail company uses are probably already in the gallery. The administrator at the retail company locates the gallery from the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
@@ -35,7 +35,7 @@ When setting up single sign-on for an application, the administrator should alwa
 
 1. On the **Azure Active Directory** pane, under **Manage**, select **Users**.
 1. Select **New user** at the top of the pane.
-1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of your tenant domain.
+1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of the tenant domain.
 1. In the **Name** field, enter the name of the user of the account. For example, `contosouser1`.
 1. Leave **Auto-generate password** selected, and then select **Show password**. Write down the value that's displayed in the **Password** box.
 1. Select **Create**.

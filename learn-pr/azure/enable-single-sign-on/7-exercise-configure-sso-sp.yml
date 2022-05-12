@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-single-sign-on.exercise-configure-sso-sp
-title: Exercise - Configure single sign-on at the service provider
+title: Exercise - Configure the service provider
 metadata:
   unitType: exercise
-  title: Exercise - Configure single sign-on at the service provider
+  title: Exercise - Configure the service provider
   description: "Configure the application properties for single sign-on at the service provider."
   ms.date: 3/24/2022
   author: davidmu1

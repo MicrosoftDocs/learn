@@ -32,9 +32,9 @@ units:
 - learn.enable-single-sign-on.introduction
 - learn.enable-single-sign-on.identify-sso-support
 - learn.enable-single-sign-on.exercise-add-application
-- learn.enable-single-sign-on.discover-sso-configuration-idp
+- learn.enable-single-sign-on.sso-configuration-idp
 - learn.enable-single-sign-on.exercise-configure-sso-idp
-- learn.enable-single-sign-on.discover-sso-configuration-sp
+- learn.enable-single-sign-on.sso-configuration-sp
 - learn.enable-single-sign-on.exercise-configure-sso-sp
 - learn.enable-single-sign-on.verify-sso-configuration
 - learn.enable-single-sign-on.knowledge-check

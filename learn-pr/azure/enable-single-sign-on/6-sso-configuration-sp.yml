@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-single-sign-on.discover-sso-configuration-sp
-title: Discover single sign-on at the service provider
+uid: learn.enable-single-sign-on.sso-configuration-sp
+title: Single sign-on at the service provider
 metadata:
   unitType: learning-content
-  title: Discover single sign-on at the service provider
+  title: Single sign-on at the service provider
   description: "Discover where to configure the application properties for single sign-on at the service provider."
   ms.date: 3/24/2022
   author: davidmu1
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-discover-sso-configuration-sp.md)]
+  [!include[](includes/6-sso-configuration-sp.md)]

@@ -1,6 +1,6 @@
-After successfully adding an application that supports single sign-on, properties must be configured for it at the identity provider to enable the trust relationship with the service provider.
+After the administrator successfully adds an application that supports single sign-on, they configure properties for it at the identity provider to enable the trust relationship with the service provider.
 
-Choose SAML single sign-on whenever possible for existing applications that don't use OpenID Connect or OAuth. In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team to help with company promotion. This application supports both Linked and SAML-based single sign-on methods.
+Administrators should choose SAML single sign-on whenever possible for applications that don't use OpenID Connect or OAuth. In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team to help with company promotion. This application supports both Linked and SAML-based single sign-on types.
 
 To configure single sign-on for the application:
 
@@ -31,20 +31,20 @@ In the IdP-initiated SSO flow, the user signs in to the identity provider, and t
 
 ### SP-initiated SSO
 
-In SP-initiated SSO, the application initiates the request to sign in. When the user attempts to sign in to the service provider, they're redirected to the identity provider to be authenticated. The user is authenticated and then sent back to the application using the SAML response. To configure this process, the **Sign on URL** must be defined which tells the identity provider where to locate the sign-in page of the application.
+In the SP-initiated SSO flow, the application initiates the request to sign in. When the user attempts to sign in to the service provider, they're redirected to the identity provider to be authenticated. The user is authenticated and then sent back to the application using the SAML response. To configure this process, the administrator defines the **Sign on URL**, which tells the identity provider where to locate the sign-in page of the application.
 
 :::image type="content" source="../media/sp-initiated-sso.png" alt-text="Diagram showing the flow of service provider initiated single sign-on." border="true":::
 
 ## SAML URLs
 
-The basic configuration for SAML-based single sign-on requires properties that are unique to the application. Refer to the integration documentation for the application to identify the appropriate values. Properties can be required or optional depending on the application. The following are required and optional properties:
+The basic configuration for SAML-based single sign-on requires properties that are unique to the application. Refer to the integration documentation for the application to identify the appropriate values. Properties can be required or optional depending on the application. The following is an example of required and optional properties:
 
 :::image type="content" source="../media/saml-urls.png" alt-text="Screenshot showing the URLs that need to be defined for SAML single sign-on." border="false":::
 
 - **Identifier (Entity ID)** - The unique ID that identifies the application to the identity provider. The identifier is used as a way to signal who is sending the SAML request. In the SP-initiated SSO flow, the identity provider isn't the initiator, so no `audience` claim is necessary in the token, but it's necessary when using IdP-initiated SSO. This value must be unique across all applications in the identity provider.
 - **Reply URL (Assertion Consumer Service URL)** - The location where the application expects to receive the authentication token. This property is also referred to as the **Assertion Consumer Service (ACS)** in SAML. This property value is the destination where requests or responses are sent. For IdP-initiated SSO, The value is sent as the `destination` claim, and that’s also where the initial request is sent. For SP-initiated SSO, it's where the response is sent after the initial request, but the `destination` claim isn’t necessary for this flow.
-- **Sign on URL** - This value is the sign-in page URL for the application in the SP-initiated SSO flow. This field isn't needed if you want to perform IdP-initiated SSO.
-- **Relay State** - Instructs the application where to redirect users after authentication is completed. The value is typically a URL that takes users to a specific location within the application. This value only takes effect in an IdP-initiated SSO flow. If your application uses SP-initiated SSO, then the service provider needs to send the **Relay State** as a parameter in the SAML request.
+- **Sign on URL** - This value is the sign-in page URL for the application in the SP-initiated SSO flow. This field isn't needed for the IdP-initiated SSO flow.
+- **Relay State** - Instructs the application where to redirect users after authentication is completed. The value is typically a URL that takes users to a specific location within the application. This value only takes effect in an IdP-initiated SSO flow. If the application uses SP-initiated SSO, then the service provider needs to send the **Relay State** as a parameter in the SAML request.
 - **Logout URL** - Used to send the SAML logout response back to the application.
 
 For some applications, a metadata file can be downloaded from the service provider that contains the single sign-on configuration, and then be uploaded to the identity provider.
@@ -57,7 +57,7 @@ When a user authenticates to an application using the SAML 2.0 protocol, a token
 
 A claim is information that an identity provider states about a user inside the token they issue for that user. In a SAML token, this data is typically contained in the SAML Attribute Statement.
 
-There are two possible reasons why you might need to edit the claims issued in the SAML token:
+There are two possible reasons for editing the claims issued in the SAML token:
 
 - The application requires the NameIdentifier or NameID claim to be something other than the username (or user principal name) stored in Azure AD.
 - The application has been written to require a different set of claim URIs or claim values.

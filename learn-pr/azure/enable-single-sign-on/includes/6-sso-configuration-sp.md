@@ -2,7 +2,7 @@ The application that the team requested requires user accounts to be registered 
 
 Service providers may allow the configuration of user accounts and single sign-on directly. Many service providers require the information to be collected and sent to them to configure single sign-on. Information that is sent includes URLs, the signing certificate, or the Federation Metadata XML.
 
-## Identifiers and identity provider URLs
+## Identity provider settings
 
 Depending on the application, a combination of some or all of the following values can be required:
 
@@ -28,12 +28,12 @@ In the integration guides for the gallery applications, these common paragraphs 
 
 For the Azure AD SAML Toolkit application, the raw formatted certificate is needed.
 
-## Service provider URLs
+## Service provider settings
 
-Depending on the application, a combination of some or all of the following application URLs are needed:
+Depending on the application, a combination of some or all of the following values are needed:
 
 - **Login URL** - The URL that is used to sign in to the application at the identity provider.
 - **Azure AD Identifier** - The identifier of the application at the identity provider.
 - **Logout URL** - The URL that is used to sign out of the application.
 
-For the Azure AD SAML Toolkit application, all three of these values are needed.
+For the **Azure AD SAML Toolkit** application, all three of these values are needed.

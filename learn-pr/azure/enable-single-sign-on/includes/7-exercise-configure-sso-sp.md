@@ -1,6 +1,6 @@
 Register the user account at the service provider that matches the account that was created at the identity provider, and then configure single sign-on for the account.
 
-## Register a new user account
+## Register an account
 
 Matching accounts must be created at both the identity provider and the service provider. Some applications in the gallery can be configured directly, but others require a request be made to the application support team to do the configuration.
 
@@ -38,9 +38,9 @@ To configure SAML settings for the application:
 
     :::image type="content" source="../media/saml-record.png" alt-text="Screenshot showing the URLs to record for single sign-on at the identity provider." border="true":::
 
-## Update values at the identity provider
+## Update the identity provider
 
-The temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant need to be replaced with values from the service provider.
+The administrator updates the temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant using values from the service provider.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
