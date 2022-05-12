@@ -13,7 +13,7 @@ A layout panel is a .NET MAUI container that holds a collection of child views a
 
 :::image type="content" source="../media/2-layouts.png" alt-text="Illustration showing representative StackLayout, AbsoluteLayout, FlexLayout, and Grid designs.":::
 
-- `StackLayout`: arranges its child views in a single row or column.
+- `StackLayout`: arranges its child views in a single row or column. In addition to `StackLayout`, there is also a new optimized `VerticalStackLayout` and `HorizontalStackLayout` when you do not need to change orientation.
 - `AbsoluteLayout`: arranges its child view by using x and y coordinates.
 - `FlexLayout`: arranges its child views like a `StackLayout` except that you can wrap them if they don't fit into a single row or column.
 - `Grid`: arranges its child views in cells that are created by rows and columns.
