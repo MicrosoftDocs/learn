@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - xbox
+subjects:
+- gaming-innovation
 units:
 - learn.hardware-devices.introduction
 - learn.hardware-devices.standard-devices

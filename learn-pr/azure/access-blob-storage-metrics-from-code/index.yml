@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.azure.access-blob-storage-metrics-from-code.1-introduction
 - learn.azure.access-blob-storage-metrics-from-code.2-connect-to-storage-metrics
