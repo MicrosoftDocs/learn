@@ -12,16 +12,6 @@ You'll continue with the Phoneword solution you created in the previous exercise
 
 1. In the Solution Explorer window, right-click the **Phoneword** project, select **Add**, and then select **Class**.
 
-    :::row:::
-        :::column span="2":::
-            :::image type="content" source="../media/6-add-class.png" alt-text="A screenshot of the context menu that is shown by right clicking on the PhoneWork project node in the solution explorer of Visual Studio. The add sub menu is expanded with the add class option selected.":::
-        :::column-end:::
-        :::column span="":::
-        :::column-end:::
-        :::column:::
-        :::column-end:::
-    :::row-end:::
-
 1. In the **Add New Item** dialog box, name the class file **PhonewordTranslator.cs**, and then select **Add**.
 
     :::image type="content" source="../media/6-add-new-item.png" alt-text="A screenshot of the Add new item dialog box. The user has named the class file PhonewordTranslator.cs":::
@@ -257,7 +247,7 @@ public static class PhonewordTranslator
 
 1. Tap the **Translate** button to convert the default text to a valid phone number. The caption on the **Call** button should change to **Call 1-555-6386284**:
 
-    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="A screenshot of the Phoneword u i. The user has translated the text to a valid phone number.":::
+    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="A screenshot of the Phoneword U I. The user has translated the text to a valid phone number.":::
 
 1. Tap the **Call** button. Verify that a prompt appears asking you to confirm the operation. Select **No**.
 
