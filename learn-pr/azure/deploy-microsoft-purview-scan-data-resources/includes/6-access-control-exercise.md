@@ -17,5 +17,5 @@ In this unit, you will use the Microsoft Purview Governance Portal to provide a 
 5. Open the **Edit role assignments** menu and select **Data readers**.  
 :::image type="content" source="../media/06.05-purview-data-reader.png" alt-text="Edit role assignments":::
 
-6. Search for another user within your Azure Active Directory, select their account, click **OK**.  
+6. Search for another user within your Azure Active Directory, select their account, select **OK**.  
 :::image type="content" source="../media/06.06-purview-add-data-reader.png" alt-text="Add or remove data readers":::
