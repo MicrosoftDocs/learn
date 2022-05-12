@@ -20,7 +20,7 @@ A newly created .NET MAUI project contains the items as shown:
 
 The project contents include the following items:
 
-- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default set of resources are located in the `Resources` folder and define app wide colors and default styles for every built in control of .NET MAUI. Her eyou will see the two resource dictionaries being merged together:
+- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder and define app wide colors and default styles for every built-in control of .NET MAUI. Her eyou will see the two resource dictionaries being merged together:
 
     ```xml
     <?xml version = "1.0" encoding = "UTF-8" ?>
@@ -73,7 +73,7 @@ The project contents include the following items:
     }
     ```
     
-- **AppShell.xaml**. This file is the main structor of a .NET MAUI application. The .NET MAUI `Shell` provides many features  that are beneficial for multiple-platform apps including app styling, URI based navigation, and layout options including flyout navigation and tabs for the root of the application. The default template provides a single page (or `ShellContent`) that is inflated when the app starts.
+- **AppShell.xaml**. This file is the main structure of a .NET MAUI application. The .NET MAUI `Shell` provides many features  that are beneficial for multiple-platform apps including app styling, URI based navigation, and layout options including flyout navigation and tabs for the root of the application. The default template provides a single page (or `ShellContent`) that is inflated when the app starts.
 
    ```xml
     <?xml version="1.0" encoding="UTF-8" ?>
@@ -167,7 +167,7 @@ The project contents include the following items:
     }
     ```
 
-- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code under the **Platforms** folder in the project. This code is platform-specific, but at the end it  calls the `CreateMauiApp` method of the static `MauiProgram`class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes our application. You do this with the `UseMauiApp` generic method of the app builder object; the type parameter specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font:
+- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code under the **Platforms** folder in the project. This code is platform-specific, but at the end it  calls the `CreateMauiApp` method of the static `MauiProgram`class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes your application. You do this with the `UseMauiApp` generic method of the app builder object; the type parameter specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font:
 
     ```csharp
     namespace MyMauiApp;
@@ -202,7 +202,7 @@ The following image illustrates the flow of control when a .NET MAUI app starts 
 
 ## Project resources
 
-The **.csproj** file for the main project includes several noteworthy sections. The initial `PropertyGroup` specifies the platform frameworks that the project targets, as well as items such as the application title, ID, version, display version, and supported oeprating systems. You can amend these properties as necessary:
+The **.csproj** file for the main project includes several noteworthy sections. The initial `PropertyGroup` specifies the platform frameworks that the project targets, as well as items such as the application title, ID, version, display version, and supported operating systems. You can amend these properties as necessary:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
