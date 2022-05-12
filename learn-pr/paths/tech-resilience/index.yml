@@ -32,6 +32,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- modern-work
 modules:
 - learn.student-evangelism.develop-growth-mindset
 - learn.student-evangelism.enhance-self-efficacy

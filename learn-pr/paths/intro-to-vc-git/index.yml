@@ -21,6 +21,8 @@ roles:
 products:
 - azure
 - github
+subjects:
+- devops
 modules:
 - learn.student-evangelism.introduction-to-git
 - learn.create-git-project

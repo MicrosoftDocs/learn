@@ -28,6 +28,8 @@ roles:
 products:
   - azure
   - azure-sentinel
+subjects:
+- cloud-security
 modules:
 - learn.intro-to-azure-sentinel
 - learn.azure.azure-sentinel-deploy-connect

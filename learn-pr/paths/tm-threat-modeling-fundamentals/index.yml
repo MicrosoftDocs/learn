@@ -25,6 +25,8 @@ roles:
 products:
 - azure-iot-security-center
 - azure-iot-security-center
+subjects:
+- threat-protection
 modules:
 - learn.tm-introduction-to-threat-modeling
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements

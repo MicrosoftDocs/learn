@@ -26,6 +26,8 @@ roles:
 products:
   - vs
 prerequisites: Introduction to Azure Health Bot
+subjects:
+- business-applications
 units:
   - learn.health-bot-introduction.1-introduction
   - learn.health-bot-introduction.2-what-is-azure-health-bot

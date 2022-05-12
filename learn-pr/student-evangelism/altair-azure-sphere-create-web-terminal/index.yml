@@ -37,6 +37,8 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- data-engineering
 units:
 - learn.student-evangelism.altair-azure-sphere-create-web-terminal.introduction
 - learn.student-evangelism.altair-azure-sphere-create-web-terminal.create-iot-central-properties
