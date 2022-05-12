@@ -28,6 +28,10 @@ roles:
 products:
 - azure
 - azure-virtual-network
+subjects:
+- cloud-computing
+- networking
+- communication
 units:
 - learn.design-ip-addressing-for-azure.1-introduction
 - learn.design-ip-addressing-for-azure.2-network-ip-addressing-integration

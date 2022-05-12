@@ -33,6 +33,9 @@ products:
 - azure
 - azure-active-directory
 - m365-information-protection
+subjects:
+- security
+- classification-analysis
 units:
 - learn.azure.classification-and-protection.1-introduction
 - learn.azure.classification-and-protection.2-what-sensitive-information

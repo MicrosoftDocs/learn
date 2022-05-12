@@ -30,6 +30,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-vm-scalesets
+subjects:
+- virtual-machine
 units:
 - learn.build-app-with-scale-sets.introduction
 - learn.build-app-with-scale-sets.features-benefits-virtual-machine-scale-sets

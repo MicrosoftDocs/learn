@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-clis
+subjects:
+- virtual-machine
 units:
 - learn.azure.automate-virtual-machine-software-installation-configuration.introduction
 - learn.azure.automate-virtual-machine-software-installation-configuration.automate-installation-virtual-machine

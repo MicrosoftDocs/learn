@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.1-introduction
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.2-kudu-console-concepts

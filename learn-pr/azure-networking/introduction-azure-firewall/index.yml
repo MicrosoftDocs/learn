@@ -34,6 +34,9 @@ roles:
 products:
 - azure-firewall
 - azure-firewall-manager
+subjects:
+- cloud-computing
+- cloud-security
 units:
 - learn.introduction-azure-firewall.1-introduction
 - learn.introduction-azure-firewall.2-what-is-azure-firewall

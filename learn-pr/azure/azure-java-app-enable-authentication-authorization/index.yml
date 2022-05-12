@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - msal-java
+subjects:
+- identity-access
 units:
 - learn.azure.azure-java-app-enable-authentication-authorization.introduction
 - learn.azure.azure-java-app-enable-authentication-authorization.authentication-authorization

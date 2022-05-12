@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-form-recognizer
+subjects:
+- classification-analysis
 units:
 - learn.azure.intro-to-form-recognizer.introduction
 - learn.azure.intro-to-form-recognizer.what-is-form-recognizer

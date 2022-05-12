@@ -34,6 +34,9 @@ products:
  - azure-stack
  - azure-stack-edge
  - azure-stack-hub
+subjects:
+- cloud-computing
+- architecture
 units:
 - learn.azure.intro-to-azure-stack.1-introduction
 - learn.azure.intro-to-azure-stack.2-azure-stack

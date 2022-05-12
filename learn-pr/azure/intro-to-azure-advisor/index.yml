@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-advisor
+subjects:
+- cloud-computing
 units:
 - learn.intro-to-azure-advisor.introduction
 - learn.intro-to-azure-advisor.what-is-azure-advisor
