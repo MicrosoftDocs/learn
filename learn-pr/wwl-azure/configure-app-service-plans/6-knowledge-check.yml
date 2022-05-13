@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/12/2022
+  ms.date: 05/13/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -23,11 +23,11 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The Basic App Service plan doesn't meet the requirements."
     - content: "Standard"
-      isCorrect: true
-      explanation: "Correct. The Standard App Service plan meets the requirements at the least cost."
-    - content: "Premium"
       isCorrect: false
-      explanation: "Incorrect. The Premium App Service plan meets the requirements but isn't the most cost effective."
+      explanation: "Incorrect. The Standard App Service plan doesn't meet the requirements."
+    - content: "Premium"
+      isCorrect: true
+      explanation: "Correct. The Premium App Service plan meets the requirements."
   - content: "Which of following provides more CPU, memory, or disk space without adding more virtual machines?"
     choices:
     - content: "Scale up"
