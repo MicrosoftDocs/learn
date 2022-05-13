@@ -4,11 +4,6 @@ Suppose you're writing an app for a planetarium by using .NET MAUI. You want to 
 
 In this module, you'll learn how to use tabbed pages to implement an app that presents data on multiple pages. You'll see when this navigation pattern is appropriate, and how you can customize the behavior of tabbed pages. You'll also learn how to combine tabbed pages with navigation pages that use the navigation stack.
 
-> [!NOTE]
-> This module requires Visual Studio 2022. You can use either Windows or a Mac.
-> If you're running on Windows, make sure you have the Mobile development with .NET workload installed in Visual Studio 2022 for Windows. Refer to the documentation if you need to add it to your installation.
-> If you're running on a Mac, the standard Visual Studio for Mac installation includes everything you need to build apps with .NET MAUI.
-
 ## Learning objectives
 
 In this module, you'll learn how to:
@@ -19,5 +14,5 @@ In this module, you'll learn how to:
 
 ## Prerequisites
 
-- Visual Studio 2022 with the MAUI workload installed
+- Visual Studio 2022 with the .NET MAUI workload installed
 - Familiarity with C# and .NET

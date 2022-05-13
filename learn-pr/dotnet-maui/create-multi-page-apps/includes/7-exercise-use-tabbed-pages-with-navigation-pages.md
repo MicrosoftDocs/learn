@@ -6,7 +6,7 @@ In the astronomy app, you've been asked to add pages that enable the user to sel
 
 ## Open the starter solution
 
-1. Go to the **exercise3** folder in repo that you cloned in exercise 1, and then move to the **start** folder.
+1. Go to the **exercise3** folder in repo that you cloned at the start of this module, and then move to the **start** folder.
 
 1. Use Visual Studio to open the **Astronomy.sln** solution.
 
@@ -17,103 +17,80 @@ In the astronomy app, you've been asked to add pages that enable the user to sel
 
 - **AstronomicalBodiesPage**. This page contains four buttons that enable the user to select the details for the Sun, the Moon, the Earth, or Halley's Comet. The current version of the app is simply a proof of concept. In the future, this page will enable the user to select from a much bigger list.
 
-- **AstronomicalBodyPage**. This page is used to display the information for an astronomical body. The `AstronomicalBodiesPage` runs the code shown below for each of the buttons to create an instance of `AstronomicalBodyPage` and push it onto the navigation stack.
+- **AstronomicalBodyPage**. This page is used to display the information for an astronomical body.
+
+The **AstronomicalBodiesPage** has already been added as a tab on the page that appears when the **Astronomy** flyout is clicked.
+
+## Add a route for the details page
+
+1. To navigate to the **AstronomicalBodyPage**, a route needs to be setup. You can do this in the constructor of the **AppShell** class:
 
     ```csharp
-    public AstronomicalBodiesPage()
+    public AppShell()
     {
         InitializeComponent();
     
-        btnEarth.Clicked += (s, e) => Navigation.PushAsync(new AstronomicalBodyPage(SolarSystemData.Earth));
-        btnMoon.Clicked += (s, e) => Navigation.PushAsync(new AstronomicalBodyPage(SolarSystemData.Moon));
-        btnSun.Clicked += (s, e) => Navigation.PushAsync(new AstronomicalBodyPage(SolarSystemData.Sun));
-        btnComet.Clicked += (s, e) => Navigation.PushAsync(new AstronomicalBodyPage(SolarSystemData.HalleysComet));
+        Routing.RegisterRoute("astronomicalbodydetails", typeof(AstronomicalBodyPage));
     }
     ```
 
-    The data for each of these pages is held in the `SolarSystemData` class, in the **Data** folder of the project.
+## Navigate to the details page
 
-## Display astronomical bodies within the tab page
-
-1. Open the **MainPage.xaml** file.
-
-1. Add the `local:AstronomicalBodiesPage` page as a tab to the `TabbedPage`, before the **About** page. Wrap the page in a `NavigationPage` as shown in the example below:
-
-    ```xml
-    <TabbedPage ...
-                ...>
-
-        <TabbedPage.Children>
-            <local:MoonPhasePage IconImageSource="moon.png"/>
-            <local:SunrisePage Title="Daylight" IconImageSource="sun.png"/>
-            <NavigationPage Title="Bodies" IconImageSource="comet.png">
-                <x:Arguments>
-                    <local:AstronomicalBodiesPage/>
-                </x:Arguments>
-            </NavigationPage>
-            <local:AboutPage Title="About" IconImageSource="question.png"/>
-        </TabbedPage.Children>
-    </TabbedPage>
-    ```
-
-1. Build and run the app using the Android emulator. When the app starts, notice that the tab bar now includes a **Bodies** tab:
-
-    :::image type="content" source="../media/7-app-android-with-bodies-tab.png" alt-text="The Astronomy app running on Android. The tab bar now includes a tab for astronomical bodies.":::
-
-1. Select the **Bodies** tab. The **Astronomical Bodies** page will appear and contain a set of four buttons; one for each body that the user can select. A navigation bar should be displayed at the top of the screen:
-
-    <!-- Image from the Android Emulator to go here -->
-
-1. Select the Earth button. The details for the Earth should appear. The navigation bar should contain a *back arrow* that enables the user to return to the list of bodies. The remaining tabs are still visible and active:
-
-    <!-- Image from the Android Emulator to go here -->
-
-1. Close the app and return to Visual Studio.
-
-## If you have time: Display astronomical bodies outside the tab page
-
-The previous task shows how to use the navigation stack within the tabbed page. In this task, you'll navigate away from the tabbed page when the details for an astronomical body are displayed.
-
-1. Open the **MainPage.xaml** file.
-
-1. Remove the `NavigationPage` wrapper surrounding the `AstronomicalBodiesPage` class, and add the title and icon to the `AstronomicalBodiesPage` element:
-
-    ```xml
-    <TabbedPage ...
-                ...>
-
-        <TabbedPage.Children>
-            <local:MoonPhasePage IconImageSource="moon.png"/>
-            <local:SunrisePage Title="Daylight" IconImageSource="sun.png"/>
-            <local:AstronomicalBodiesPage Title="Bodies" IconImageSource="comet.png"/>
-            <local:AboutPage Title="About" IconImageSource="question.png"/>
-        </TabbedPage.Children>
-    </TabbedPage>
-    ```
-
-1. Open the **App.xaml.cs** file.
-
-1. In the `App` constructor, wrap the `MainPage` object that is created inside a new `NavigationPage` object:
+1. Now we need to perform the navigation. In the **AstronomicalBodiesPage.xaml.cs** create click event handlers for each `Button` on the page.
 
     ```csharp
-    public App()
-    {
-        InitializeComponent();
+    public AstronomicalBodiesPage()
+	{
+		InitializeComponent();
 
-        MainPage = new NavigationPage(new MainPage());
+		btnComet.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails");
+		btnEarth.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails");
+		btnMoon.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails");
+		btnSun.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails");
     }
     ```
 
-1. Build and run the app using the Android emulator. Notice that the tab bar still includes a **Bodies** tab.
+    Whenever a `Button` is clicked, the app will navigate to the **AstronomicalBodyPage** page. But we still need to send what type of astronomical body to display.
 
-1. Select the **Bodies** tab. The **Astronomical Bodies** page should appear as before. However, this time no navigation bar is displayed at the top of the screen:
+1. To send data to the **AstronomicalBodyPage** add a query parameter string to the routing information. It will be of the form `?astroName=astroBodyToDisplay`.
 
-    <!-- Image from the Android Emulator to go here -->
+    ```csharp
+    btnComet.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=comet");
+    btnEarth.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=earth");
+    btnMoon.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=moon");
+    btnSun.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=sun");
+    ```
 
-1. Select the Earth button. The details for the Earth should appear. The navigation bar should contain a *back arrow* that enables the user to return to the list of bodies. The tab bar has disappeared.
+1. To receive the data on the **AstronomicalBodyPage** first create a class-level property to hold the incoming data. Name it `AstroName`.
 
-    <!-- Image from the Android Emulator to go here -->
+    ```csharp
+    string astroName;
+    public string AstroName
+    {
+        get => astroName;
+        set
+        {
+            astroName = value;
 
-1. Select the *back arrow*. The **Astronomical Bodies** page should reappear, together with the tab bar.
+            // this is a custom function to update the UI immediately
+            UpdateAstroBodyUI(astroName);
+        } 
+    }
+    ```
+
+    Here the `UpdateAstroBodyUI(astroName)` is a helper function used to update the user interface immediately when the `AstroName` property is set.
+
+1. Then you need to decorate the class with a annotation that maps the incoming query parameter the property you just created.
+
+    ```csharp
+    [QueryProperty(nameof(AstroName), "astroname")]
+    public partial class AstronomicalBodyPage
+    { ...
+    ```
+
+1. Start the app and select the tab titled: **Bodies**.
+1. Select the Earth button. The details for the Earth should appear. The navigation bar should contain a *back arrow* that enables the user to return to the list of bodies. The remaining tabs are still visible and active:
+
+    :::image type="content" source="../media/7-navigation.png" alt-text="A screenshot of the app running with the astronomical body detail screen shown.":::
 
 1. Close the app and return to Visual Studio.

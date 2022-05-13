@@ -78,6 +78,9 @@ In this exercise, you'll add flyout navigation to the app.
 
     :::image type="content" source="../media/3-flyout-all-options.png" alt-text="A screenshot of the app running on Android with the flyout open showing 3 flyout items.":::
 
+    > [!NOTE]
+    > If you are running on a platform other than Windows, you may need to enable Location permission for your app on that platform for the **Sunrise/Sunset Times** page to work. For example, on an Android device, set Location access to **Allow only while using the app**.
+
 ## Adding icons
 
 You may have noticed the flyout items look a bit empty. You can add icons to the flyout items by using the `Icon` property.
