@@ -14,6 +14,9 @@ prerequisites: |
   - A basic understanding of how IIS works, what its extensibility points are, and how it hosts ASP.NET applications
   - Basic familiarity with SQL Server administration and configuration
   - Basic familiarity with Azure SQL Database
+video:
+  title: "Microsoft Learn video: Migrate ASP.NET Apps to Azure"
+  url: https://www.microsoft.com/videoplayer/embed/RE4X1sb
 summary: |
   Migrate ASP.NET web applications and their data to Azure App Service and Azure SQL Database to take advantage of the cloud.
 iconUrl: /learn/achievements/generic-trophy.svg
