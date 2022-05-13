@@ -1,4 +1,4 @@
-In this module, you learned about the use of access tokens, their use cases, and rate limits. You also learned about GitHub and OAuth Apps and how best to choose which app to use for a given situation. You also demonstrated your ability to install a GitHub App on a GitHub organization using a personal access token or (PAT) with the proper access rights scoped.
+In this module, you learned about the use of access tokens, their use cases, and rate limits. You also learned about GitHub and OAuth Apps, and how best to choose which app to use for a given situation. You also demonstrated your ability to install a GitHub App on a GitHub organization using a personal access token or (PAT) with the proper access rights scoped.
 
 If a workflow requires the same task to be performed repeatedly, you should encourage your team to evaluate GitHub and OAuth apps. Not only does using the capability of these apps save time, they can help streamline and increase efficiency to your development workflow. Using apps to manage rate limits will also help you prevent disruptions in a GitHub enterprise workflow.
 
