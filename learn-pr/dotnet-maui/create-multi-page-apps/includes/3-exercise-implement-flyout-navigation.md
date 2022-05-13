@@ -51,7 +51,7 @@ In this exercise, you'll add flyout navigation to the app.
         FlyoutIcon="moon.png">
     ```
 
-1. Run the application. You should now see a moon image in the upper left corner of the app. When tapping on it, you'll see the flyout with one menu item.
+1. Run the application. You should now see a moon image in the upper left corner of the app.
 
     :::image type="content" source="../media/3-app-with-flyout-icon.png" alt-text="A screenshot of the app running on Android with the moon icon indicating a flyout is available.":::
 

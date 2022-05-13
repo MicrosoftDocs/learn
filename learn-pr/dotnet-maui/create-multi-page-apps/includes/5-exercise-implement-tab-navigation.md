@@ -73,7 +73,7 @@ The first thing you decide to do is remove all the pages from the flyout and add
 
     :::image type="content" source="../media/5-app-with-two-tabs.png" alt-text="Screenshot of app running with two tabs instead of using flyout menu.":::
 
-## Add tabs into flyout menu
+## Combine tab pages with a flyout
 
 You decide it makes sense to have the moon phase and sunrise pages in the same tab page. It also makes sense to keep the about page separate. So you decide to add the flyout back in. The first flyout item will display the tab page, and the second the about page.
 
@@ -107,6 +107,8 @@ You decide it makes sense to have the moon phase and sunrise pages in the same t
     </FlyoutItem>
     ```
 
+    Tapping on this flyout item will now display a tab page with two tabs.
+
 1. To create a new flyout item that points to the `AboutPage`, add a new `<FlyoutItem>`. Set its `Title` property to **About** and `Icon` property to **question.png**.
 1. Within that `<FlyoutItem>` add a `<ShellContent>` that points to the `AboutPage`.
 
@@ -118,6 +120,8 @@ You decide it makes sense to have the moon phase and sunrise pages in the same t
     ```
 
 1. Run the app again. You should see two items in the flyout. The first one will open up a tab page that contains the `MoonPhasePage` and `SunrisePage`. The second displays the `AboutPage` by itself.
+
+## Need help?
 
 The final XAML for **AppShell.xaml** should look like the following:
 

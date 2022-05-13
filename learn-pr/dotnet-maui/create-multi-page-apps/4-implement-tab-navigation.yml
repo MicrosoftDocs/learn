@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-maui.create-multi-page-apps.implement-tab-navigation
-title: Implement tab navigation with the TabbedPage layout
+title: Implement tab navigation with .NET MAUI Shell
 metadata:
   unitType: learning-content
-  title: "Implement tab navigation with the TabbedPage layout"
-  description: "Use the TabbedPage layout to create multiple tab pages"
+  title: "Implement tab navigation with .NET MAUI Shell"
+  description: "Use .NET MAUI Shell to create multiple tab pages"
   ms.date: 05/02/2022
   author: codemillmatt
   ms.author: masoucou
