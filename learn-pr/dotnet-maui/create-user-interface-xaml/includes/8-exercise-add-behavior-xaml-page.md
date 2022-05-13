@@ -135,4 +135,4 @@ You'll create a static class to hold the values for the font color and backgroun
 
 1. Rebuild the app and run it using Windows and then on Android. The app should look like this on each platform:
 
-    :::image type="content" source="../media/8-windows-android-editor-screen.png" alt-text="A screenshot of the Notes app running on Windows and Android. The text entry box and buttons on the Android version are now located near the bottom of the screen. On the Windows app the text entry box and buttons are located where they were previously":::
+    :::image type="content" source="../media/8-windows-android-editor-screen.png" alt-text="A screenshot of the Notes app running on Windows and Android.":::
