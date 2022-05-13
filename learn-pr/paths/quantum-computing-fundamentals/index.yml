@@ -40,6 +40,8 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- cloud-computing
 modules:
 - learn.quantum.get-started-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit

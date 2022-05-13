@@ -31,6 +31,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- cloud-computing
+- virtual-machine
 units:
 - learn.wwl.implement-hyper-v-replica.introduction
 - learn.wwl.implement-hyper-v-replica.define

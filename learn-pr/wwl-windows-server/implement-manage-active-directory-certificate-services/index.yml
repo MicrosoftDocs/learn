@@ -31,6 +31,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- networking
+- security
 units:
 - learn.wwl.implement-manage-active-directory-certificate-services.introduction
 - learn.wwl.implement-manage-active-directory-certificate-services.explore-fundamentals-of-pki-ad-cs

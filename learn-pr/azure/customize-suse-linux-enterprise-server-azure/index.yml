@@ -30,6 +30,8 @@ roles:
 products:
   - azure
   - azure-linux-vm
+subjects:
+- virtual-machine
 units:
 - learn.azure.customize-suse-linux-enterprise-server-azure.introduction
 - learn.azure.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine

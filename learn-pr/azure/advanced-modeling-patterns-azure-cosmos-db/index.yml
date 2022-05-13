@@ -30,6 +30,9 @@ roles:
   - solution-architect
 products:  
   - azure-cosmos-db
+subjects:
+- database
+- data-modeling
 units:
 - learn.azure.advanced-modeling-patterns-azure-cosmos-db.introduction
 - learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data

@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.introduction
 - learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.implement-token-customizations

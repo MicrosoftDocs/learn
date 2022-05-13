@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.plan-implement-administer-conditional-access.introduction
 - learn.wwl.plan-implement-administer-conditional-access.plan-security-defaults

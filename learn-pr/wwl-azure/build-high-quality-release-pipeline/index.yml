@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- process-workflow
 units:
 - learn.wwl.build-high-quality-release-pipeline.introduction
 - learn.wwl.build-high-quality-release-pipeline.understand-release-process-versus-release

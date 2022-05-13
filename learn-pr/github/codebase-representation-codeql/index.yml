@@ -30,6 +30,9 @@ roles: # user input: add roles from role taxonomy (https://review.docs.microsoft
   - student
 products:
   - github
+subjects:
+- development-tools
+- threat-protection
 units:
 - learn.codebase-representation-codeql.1-introduction
 - learn.codebase-representation-codeql.2-how-prepare-database-codeql

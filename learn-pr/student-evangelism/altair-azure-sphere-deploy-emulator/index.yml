@@ -38,6 +38,9 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- data-engineering
+- virtual-machine
 units:
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.introduction
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.app-deployment

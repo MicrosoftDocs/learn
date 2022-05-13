@@ -20,6 +20,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- business-continuity
 modules:
 - learn.wwl.implement-high-availability-for-sap-workloads-azure
 - learn.wwl.implement-disaster-recovery-for-sap-workloads-azure

@@ -31,6 +31,9 @@ roles:
 products:
 - azure-private-link
 - azure-virtual-network
+subjects:
+- data-engineering
+- networking
 units:
 - learn.wwl.design-implement-private-access-to-azure-services.introduction
 - learn.wwl.design-implement-private-access-to-azure-services.explain-virtual-network-service-endpoints

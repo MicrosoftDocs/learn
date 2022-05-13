@@ -35,6 +35,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.integrate-data-azure-data-factory.introduction
 - learn.wwl.integrate-data-azure-data-factory.understand

@@ -4,7 +4,7 @@ Suppose you've been using open-source libraries for your projects and at work fo
 
 However, you've never contributed before, and you're not sure how to get started.
 
-In this module, you'll learn how to make meaningful contributions to open-source projects. You'll learn about the kinds of projects and activities that will make an impact and how to familiarize yourself with the project and its community standards. You'll learn how to effectively use git and GitHub to make your improvement to code or documentation. You'll also learn the do's and don'ts of communicating with the project's maintainers, how to ask for help, how to ask for a review, and how to review others' work in GitHub.
+In this module, you'll learn how to make meaningful contributions to open-source projects. You'll learn about the kinds of projects and activities that will make an impact and how to familiarize yourself with the project and its community standards. You'll learn how to effectively use git and GitHub to make your improvement to code or documentation. You'll also learn the dos and don'ts of communicating with the project's maintainers, how to ask for help, how to ask for a review, and how to review others' work in GitHub.
 
 By the end of this module, you'll learn how to submit a successful contribution to an open-source project on GitHub by adopting best practices.
 

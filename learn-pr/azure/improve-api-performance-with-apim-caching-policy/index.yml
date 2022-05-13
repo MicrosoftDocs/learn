@@ -31,6 +31,9 @@ roles:
 products:
 - azure
 - azure-api-management
+subjects:
+- cloud-computing
+- cache
 units:
 - learn.azure.improve-api-performance-with-apim-caching-policy.1-introduction
 - learn.azure.improve-api-performance-with-apim-caching-policy.2-choose-the-right-api-management-policy

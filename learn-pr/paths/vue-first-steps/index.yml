@@ -28,6 +28,8 @@ roles:
 products:
 - vs-code
 - azure-app-service-static
+subjects:
+- development-tools
 modules:
 - learn.language.vue-get-started
 - learn.language.vue-dynamic-rendering

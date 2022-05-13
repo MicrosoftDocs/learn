@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.build-an-ai-ready-culture.introduction
 - learn-wwl.build-an-ai-ready-culture.importance-of-ai-ready-culture
 - learn-wwl.build-an-ai-ready-culture.characteristics-that-foster-ai-ready-culture

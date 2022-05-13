@@ -30,6 +30,10 @@ products:
 - azure-iot-hub
 - azure-portal
 - azure-time-series-insights
+subjects:
+- cloud-computing
+- iot
+- communication
 units:
 - learn.wwl.examine-azure-time-series-insights.introduction
 - learn.wwl.examine-azure-time-series-insights.examine-use-cases-for

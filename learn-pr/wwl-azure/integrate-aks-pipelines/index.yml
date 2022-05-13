@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- container
 units:
 - learn.wwl.integrate-aks-pipelines.introduction
 - learn.wwl.integrate-aks-pipelines.integrate-aks-with-pipelines

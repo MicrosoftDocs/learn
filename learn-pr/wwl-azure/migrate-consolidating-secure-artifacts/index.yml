@@ -40,6 +40,10 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- migration
+- identity-access
 units:
 - learn.wwl.migrate-consolidating-secure-artifacts.introduction
 - learn.wwl.migrate-consolidating-secure-artifacts.identify-existing-artifact-repositories

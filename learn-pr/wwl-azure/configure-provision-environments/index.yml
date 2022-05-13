@@ -39,6 +39,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- data-engineering
+- cloud-security
 units:
 - learn.wwl.configure-provision-environments.introduction
 - learn.wwl.configure-provision-environments.provision-configure-target-environments

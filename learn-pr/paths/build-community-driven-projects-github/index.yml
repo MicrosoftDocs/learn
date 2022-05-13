@@ -31,6 +31,8 @@ roles:
 - solution-architect
 products:
 - github
+subjects:
+- development-tools
 modules:
 - learn.github.introduction-to-github
 - learn.github.manage-innersource-program-github

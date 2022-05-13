@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-load-balancer
+subjects:
+- development-tools
 units:
 - learn.wwl.configure-azure-load-balancer.introduction
 - learn.wwl.configure-azure-load-balancer.determine-uses

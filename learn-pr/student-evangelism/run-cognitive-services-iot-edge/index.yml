@@ -31,6 +31,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
+- artificial-intelligence
 units:
 - learn.oxford.run-cognitive-services-iot-edge.introduction
 - learn.oxford.run-cognitive-services-iot-edge.design

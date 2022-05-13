@@ -1,19 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
-  title: Describe the compliance management capabilities at Microsoft
-  description: "Describe the compliance management capabilities at Microsoft"
-  ms.date: 04/11/2022
+  title: Describe the Service Trust Portal and privacy at Microsoft
+  description: "Describe the Service Trust Portal and privacy at Microsoft"
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: Describe the compliance management capabilities at Microsoft
-summary: Microsoft Cloud services are built on a foundation of trust, security, and compliance. The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance.
+title: Describe the Service Trust Portal and privacy at Microsoft
+summary: Microsoft runs on trust! Here you’ll explore the Service Trust Portal for content on how Microsoft delivers on our commitment of trust.  You’ll also learn about Microsoft Priva, a solution to help meet privacy goals.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the information available in the Service Trust Portal
-  - Describe Microsoft Privacy principles
+  - Describe the offerings of the Service Trust Portal.
+  - Describe Microsoft's Privacy principles.
+  - Describe Microsoft Priva.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -27,10 +28,13 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- compliance
 units:
 - learn.wwl.describe-compliance-management-capabilities-microsoft.introduction
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-offerings-of-service-trust-portal
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-microsofts-privacy-principles
+- learn.wwl.describe-compliance-management-capabilities-microsoft.describe-microsoft-priva
 - learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
 - learn.wwl.describe-compliance-management-capabilities-microsoft.summary-resources
 badge:

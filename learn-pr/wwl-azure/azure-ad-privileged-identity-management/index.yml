@@ -3,7 +3,7 @@ uid: learn.wwl.azure-ad-privileged-identity-management
 metadata:
   title: Configure Azure AD privileged identity management
   description: "Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job."
-  ms.date: 01/04/2022
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Configure Azure AD privileged identity management
 summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Describe Zero Trust and how it impacts security
   - Configure and deploy roles using Privileged Identity Management (PIM)
   - Evaluate the usefulness of each PIM setting as it relates to your security goals
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.azure-ad-privileged-identity-management.introduction
 - learn.wwl.azure-ad-privileged-identity-management.microsofts-zero-trust-model

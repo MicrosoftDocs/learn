@@ -33,6 +33,8 @@ products:
 - aspnet-core
 - dotnet
 - dotnet-core
+subjects:
+- development-tools
 units:
 - learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.introduction
 - learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.publish-openapi-documentation

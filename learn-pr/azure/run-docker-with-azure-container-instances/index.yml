@@ -29,6 +29,8 @@ products:
 - azure
 - azure-container-instances
 - azure-cosmos-db
+subjects:
+- container
 units:
 - learn.run-docker-containers-aci.1-introduction
 - learn.run-docker-containers-aci.2-run-aci

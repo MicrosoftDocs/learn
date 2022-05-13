@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- threat-protection
 modules:
 - learn.wwl.what-is-azure-defender
 - learn.wwl.understand-azure-defender-cloud-workload-protection

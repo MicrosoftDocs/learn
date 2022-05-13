@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.work-azure-repos-github.introduction
 - learn.wwl.work-azure-repos-github.introduction-azure-repos

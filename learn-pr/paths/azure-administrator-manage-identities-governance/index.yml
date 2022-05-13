@@ -71,6 +71,8 @@ products:
 - azure-rbac
 - azure-resource-manager
 - azure-cost-management
+subjects:
+- identity-access
 modules:
 - learn.azure.create-users-and-groups-in-azure-active-directory
 - learn.azure-security.manage-users-and-groups-in-aad

@@ -3,7 +3,7 @@ uid: learn.wwl.identify-technical-debt
 metadata:
   title: Identify technical debt
   description: "Identify technical debt"
-  ms.date: 03/18/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- classification-analysis
 units:
 - learn.wwl.identify-technical-debt.introduction
 - learn.wwl.identify-technical-debt.examine-code-quality

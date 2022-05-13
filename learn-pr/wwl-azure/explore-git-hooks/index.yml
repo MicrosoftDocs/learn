@@ -3,7 +3,7 @@ uid: learn.wwl.explore-git-hooks
 metadata:
   title: Explore Git hooks
   description: "Explore Git hooks"
-  ms.date: 03/18/2022
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.explore-git-hooks.introduction
 - learn.wwl.explore-git-hooks.introduction-to

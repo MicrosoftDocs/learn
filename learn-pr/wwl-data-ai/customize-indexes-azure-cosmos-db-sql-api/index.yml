@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.customize-indexes-azure-cosmos-db-sql-api.introduction
 - learn.wwl.customize-indexes-azure-cosmos-db-sql-api.customize-indexing-policy

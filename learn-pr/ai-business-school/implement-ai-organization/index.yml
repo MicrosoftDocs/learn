@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.implement-ai-organization.introduction
 - learn-wwl.implement-ai-organization.manage-innovation
 - learn-wwl.implement-ai-organization.manage-innovation-video

@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- collaboration
 units:
 - learn.enable-external-collaboration-with-b2b.1-introduction
 - learn.enable-external-collaboration-with-b2b.2-azure-ad-b2b-overview

@@ -24,6 +24,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- container
 modules:
 - learn.wwl.configure-manage-hyper-v
 - learn.wwl.configure-manage-hyper-v-virtual-machines

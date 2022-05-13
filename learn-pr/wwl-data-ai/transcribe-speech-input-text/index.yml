@@ -32,6 +32,9 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- custom-app-development
+- artificial-intelligence
 units:
 - learn.wwl.transcribe-speech-input-text.introduction
 - learn.wwl.transcribe-speech-input-text.create-speech-resource

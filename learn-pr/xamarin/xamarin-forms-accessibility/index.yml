@@ -27,6 +27,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.xamarin-forms-accessibility.1-introduction
 - learn-xamarin.xamarin-forms-accessibility.2-accessibility-features

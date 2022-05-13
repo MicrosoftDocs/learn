@@ -30,6 +30,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-engineering
 units:
 - learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.introduction
 - learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.what-is-apache-spark-pool

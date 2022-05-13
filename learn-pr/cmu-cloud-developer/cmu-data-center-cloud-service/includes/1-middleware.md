@@ -22,7 +22,7 @@ Cloud middleware provides a number of distinct and important features that come 
 
 **User management and security**: Cloud middleware also must provide support for access control of users, and use standard security practices for the management of various types of credentials to control access to individual resources. The user management system in the middleware should provide features that allow cloud clients to create and destroy entities such as users and groups, and configure the access control lists (ACLs) that define the resources that individual users and groups have access to. 
 
-**User interface and APIs**: Finally, cloud middleware must make available a client-facing set of APIs. It is also typical of cloud middleware to provide user-friendly interfaces (typically in the form of web interfaces), where clients can log in and manage their provisioned resources and make service requests. 
+**User interface and APIs**: Finally, cloud middleware must make available a client-facing set of APIs. It is also typical of cloud middleware to provide user-friendly interfaces (typically in the form of web interfaces), where clients can sign in and manage their provisioned resources and make service requests. 
 <br>
 ***
 ### References

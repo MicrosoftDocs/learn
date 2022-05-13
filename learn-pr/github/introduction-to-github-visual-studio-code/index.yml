@@ -34,6 +34,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- development-tools
 units:
 - learn.github.introduction-to-github-vs-code.1-introduction
 - learn.github.introduction-to-github-vs-code.2-lesson-authentication

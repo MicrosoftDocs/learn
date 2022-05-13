@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- communication
 units:
 - learn.wwl.share-knowledge-within-teams.introduction
 - learn.wwl.share-knowledge-within-teams.share-acquired-development-teams

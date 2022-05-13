@@ -27,6 +27,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- migration
 units:
 - learn.wwl.migrate-windows-server-roles.introduction
 - learn.wwl.migrate-windows-server-roles.describe-migration-tools

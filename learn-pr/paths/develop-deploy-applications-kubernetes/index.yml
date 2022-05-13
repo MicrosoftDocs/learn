@@ -24,6 +24,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- container
 modules:
 - learn.aks-deploy-container-app
 - learn.app-package-management-using-helm
