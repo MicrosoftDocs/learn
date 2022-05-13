@@ -1,4 +1,4 @@
-Designing a user interface that's consistent across multiple devices is difficult because devices can be different sizes and have different pixel densities. Think about the different devices that are available: mobile, tablet, desktop, TV, and so on. How do we create a user interface that looks similar on each?
+Designing a user interface that's consistent across multiple devices is difficult because devices can be different sizes and have different pixel densities. Think about the different devices that are available: mobile, tablet, desktop, and so on. How do we create a user interface that looks similar on each?
 
 .NET MAUI provides layout panels to help you build consistent user interfaces. The layout panel is responsible for sizing and positioning its children views. In this unit, you'll learn how the layout system works in .NET MAUI. You'll look at how views are sized by default and how to request a specific size and position for a view at runtime.
 
@@ -13,7 +13,7 @@ A layout panel is a .NET MAUI container that holds a collection of child views a
 
 :::image type="content" source="../media/2-layouts.png" alt-text="Illustration showing representative StackLayout, AbsoluteLayout, FlexLayout, and Grid designs.":::
 
-- `StackLayout`: arranges its child views in a single row or column.
+- `StackLayout`: arranges its child views in a single row or column. In addition to `StackLayout`, there is also a new optimized `VerticalStackLayout` and `HorizontalStackLayout` when you do not need to change orientation.
 - `AbsoluteLayout`: arranges its child view by using x and y coordinates.
 - `FlexLayout`: arranges its child views like a `StackLayout` except that you can wrap them if they don't fit into a single row or column.
 - `Grid`: arranges its child views in cells that are created by rows and columns.
