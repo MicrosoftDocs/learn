@@ -2,12 +2,10 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 ## Open the starter solution
 
-1. Clone or download the [exercise repo](https://repo.address.to.go.here). THIS WILL BE ADDED AS WE GET CLOSER TO BUILD CONFERENCE AND BEFORE FINAL PR to MAIN.
+1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-store-local-data).
 
     > [!NOTE]
     > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
-
-1. Go to the **exercise1** folder, and then move to the **start** folder.
 
 1. Use Visual Studio to open the **People.sln** solution.
 
@@ -45,6 +43,16 @@ In this exercise, you'll use SQLite to store information locally with an applica
         }
     }
     ```
+
+## Add the SQLite library
+
+1. Right-click on the **People** project node from the **Solution Explorer** in Visual Studio.
+1. In the context menu that appears, click **Manage NuGet Packages**.
+1. Search for **sqlite-net-pcl**. And then click install.
+
+    :::image type="content" source="../media/4-sqlite-nuget.png" alt-text="A screenshot showing the NuGet package manager with the sequel light P C L library selected.":::
+
+1. Also install the **SQLitePCLRaw.provider.dynamic_cdecl** by searching for it in NuGet and clicking install.
 
 ## Add SQLite attributes
 
@@ -93,17 +101,35 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 1. Examine the **PersonRepository** class. This class contains incomplete skeleton code with `TODO` markers where you'll add the functionality to access the database.
 
-1. Add a private **SQLiteConnection** field named **conn** to the class, above the constructor.
+1. Add a `using` directive for the **SQLite** and **People.Models** namespaces to the file for the **PersonRepository.cs** class.
 
-1. In the constructor, initialize the **conn** field to connect to the database using the path provided as the parameters to the constructor.
+1. Add a private **SQLiteConnection** field named **conn** to the class, above the `Init` function.
 
-1. Use the **conn.CreateTable** method to create a table to store **Person** data. The completed constructor should look like this:
+1. In the `Init` function, check to see if **conn** is not equal to **null**. If so, return immediately.
 
     ```csharp
+    if (conn != null)
+        return;
+    ```
+
+    This way the initialization code for the SQLite database only will run once.
+
+1. Initialize the **conn** field to connect to the database using the `_dbPath` variable.
+
+1. Use the **conn.CreateTable** method to create a table to store **Person** data. The completed `Init` function should look like this:
+
+    ```csharp
+    using SQLite;
+    using People.Models;
+    ...
+
     private SQLiteConnection conn;
     ...
-    public PersonRepository(string dbPath)
+    private Init()
     {
+       if (conn != null)
+          return;
+
        conn = new SQLiteConnection(dbPath);
        conn.CreateTable<Person>();
     }
@@ -112,7 +138,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 1. In **PersonRepository** class, find the **AddNewPerson** method.
 
-1. Replace the **TODO** comment in this method with code to insert a new **Person** object. Use the **Insert** method of the **SQLiteConnection** object. Set the **result** variable to the value returned by the **Insert** method, as shown in the following code.
+1. Replace the **TODO** comment in this method with code to insert a new **Person** object. First thing is to call `Init` to verify the database is initialized. Then use the **Insert** method of the **SQLiteConnection** object. Set the **result** variable to the value returned by the **Insert** method, as shown in the following code.
 
     ```csharp
     public void AddNewPerson(string name)
@@ -120,10 +146,14 @@ In this exercise, you'll use SQLite to store information locally with an applica
         int result = 0;
         try
         {
+            // enter this line
+            Init();
+
             //basic validation to ensure a name was entered
             if (string.IsNullOrEmpty(name))
                 throw new Exception("Valid name required");
 
+            // enter this line
             result = conn.Insert(new Person { Name = name });
             ...
         }
@@ -133,6 +163,8 @@ In this exercise, you'll use SQLite to store information locally with an applica
 ## Retrieve rows from the database
 
 1. In the **PersonRepository** class, find the **GetAllPeople** method.
+
+1. Call `Init` to verify the database has been initialized.
 
 1. Use the generic **Table\<T>** method to retrieve all of the rows in the table. Specify **Person** as the type parameter.
 
@@ -145,6 +177,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
     {
        try
        {
+          Init();
           return conn.Table<Person>().ToList();
        }
        catch (Exception ex)
@@ -177,10 +210,10 @@ In this exercise, you'll use SQLite to store information locally with an applica
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
-        
-        builder.Services.AddSingleton<MainPage>();
 
+        // Add this code
         string dbPath = FileAccessHelper.GetLocalFilePath("people.db3");
         builder.Services.AddSingleton<PersonRepository>(s => ActivatorUtilities.CreateInstance<PersonRepository>(s, dbPath));
 
@@ -199,11 +232,10 @@ In this exercise, you'll use SQLite to store information locally with an applica
     {
         public static PersonRepository PersonRepo { get; private set; }
 
-        public App(MainPage page, PersonRepository repo)
+        public App(PersonRepository repo)
         {
             InitializeComponent();
 
-            MainPage = page;
             PersonRepo = repo;
         }
     }
@@ -214,22 +246,16 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 ## Test the application
 
-1. Build the solution and start debugging the application on Windows. When the UI appears, enter your name and tap **Add Person**.
+1. Build the solution and start debugging. When the UI appears, enter your name and tap **Add Person**.
+
+    :::image type="content" source="../media/4-add-person-results.png" alt-text="A screenshot of the app with a successful message stating a record has been added.":::
 
 1. Tap **Get All People**, and verify that your name appears.
 
-    :::image type="content" source="../media/6-add-person-windows.png" alt-text="The Windows app. The user has added a new person to the database.":::
+    :::image type="content" source="../media/4-add-person-results.png" alt-text="A screenshot of the app with a list of all the rescords in the database.":::
 
 1. Experiment by adding more names and retrieving the list of stored people.
 
 1. Return to Visual Studio and stop debugging.
 
 1. Restart the app and tap **Get All People**. Verify that the names you stored previously are still stored in the database.
-
-1. Return to Visual Studio and stop the app.
-
-1. Start the app again, this time on an Android device (you may need to create a virtual Android device first).
-
-1. Verify that the app works successfully on Android. If you have time and an available Mac, you can also verify the app on iOS using the simulator.
-
-    :::image type="content" source="../media/6-add-person-android.png" alt-text="The Android app. The user has added a new person to the database.":::

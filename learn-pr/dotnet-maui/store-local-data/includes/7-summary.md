@@ -12,5 +12,4 @@ In this module, you saw how to store data locally in a .NET MAUI app. Specifical
 
 ## Learn more
 
-> [!NOTE]
-> When .NET MAUI hits GA, and the documentation is complete, this section will be updated with appropriate links.
+- [.NET MAUI documentation](/dotnet/maui/)
