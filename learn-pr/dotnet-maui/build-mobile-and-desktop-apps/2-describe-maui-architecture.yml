@@ -16,14 +16,14 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which environment provides the runtime support for a WinUI application?"
+  - content: "Which environment provides the runtime support for a WinUI 3 application?"
     choices:
     - content: "The Mono runtime"
       isCorrect: false
-      explanation: "Incorrect, Mono applications run using WinRT."
-    - content: "The WinRT runtime"
+      explanation: "Incorrect, the Mono runtime is used for iOS, Android, and macOS applications built with .NET MAUI."
+    - content: "The Win32 runtime"
       isCorrect: true
-      explanation: "Correct, WinRT provides runtime support for WinUI."
+      explanation: "Correct, Win32 provides runtime support for WinUI 3 apps built with .NET MAUI."
     - content: "WinMAUI"
       isCorrect: false
       explanation: "Incorrect. WinMAUI isn't an architecture."
@@ -37,4 +37,4 @@ quiz:
       explanation: "Incorrect, CSV isn't a markup language."
     - content: "XAML"
       isCorrect: true
-      explanation: "Correct, XAM is the language you use to lay out a .NET MAUI application's UI."
+      explanation: "Correct, XAML is the language you use to lay out a .NET MAUI application's UI."

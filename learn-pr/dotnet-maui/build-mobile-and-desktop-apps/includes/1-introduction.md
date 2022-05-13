@@ -14,9 +14,9 @@ In this module, you will:
 - Create .NET MAUI app
 - Define a shared UI for the platforms supported by .NET MAUI
 - Deploy a .NET MAUI app from Visual Studio
-- Use the .NET MAUI Essentials library
+- Access platform APIs using .NET MAUI
 
 ## Prerequisites
 
-- Visual Studio 2022 with the MAUI workload installed
+- Visual Studio 2022 with the .NET MAUI workload installed
 - Familiarity with C# and .NET
