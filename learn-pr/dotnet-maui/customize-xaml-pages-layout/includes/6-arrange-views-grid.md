@@ -121,7 +121,7 @@ This example shows how to define four rows and add them to a `Grid` by using the
 </Grid>
 ```
 
-This can be shortned to:
+This can be shortened to:
 
 ```xaml
 <Grid RowDefinitions="100, Auto, 1*, 2*">
@@ -152,7 +152,7 @@ The default for rows and columns is `1*` size. For example, look at the followin
 </Grid>
 ```
 
-This can be shortned to:
+This can be shortened to:
 
 ```xaml
 <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
