@@ -4,7 +4,7 @@ The ability to create conversational AI solutions with these services makes it p
 
 ## Clean-up
 
-It's a good idea at the end of a project to identify whether you still need the resources you to created. Resources left running can cost you money. 
+It's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. 
 
 If you are continuing on to other modules in this learning path you can keep your resources for use in other labs.
 
