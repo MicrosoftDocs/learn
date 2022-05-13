@@ -12,9 +12,9 @@ More specifically, in this module you learned how to:
 - Create and use dynamic resources
 - Create a consistent user interface by using styles
 - Create and use application-wide resources
-- Apply user accessibility choices by using built-in styles
 
 ## Learn more
-
-> [!NOTE]
-> The documentation for .NET MAUI is not live yet. It will be live before these modules are released and the modules will be updated then.
+- [.NET MAUI Documentation](/dotnet/maui)
+- [.NET MAUI: Style apps using XAML](/dotnet/maui/user-interface/styles/xaml)
+- [.NET MAUI: Fonts](/dotnet/maui/user-interface/fonts)
+- [.NET MAUI: Theme an app](/dotnet/maui/user-interface/theming)
