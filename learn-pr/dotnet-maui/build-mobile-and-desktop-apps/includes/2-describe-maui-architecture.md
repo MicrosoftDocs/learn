@@ -53,4 +53,4 @@ To create .NET MAUI apps, you currently require Visual Studio version 17.3 Previ
 
 Additionally, if you want to build .NET MAUI Blazor apps, you must install the ASP.NET and web development workload.
 
-:::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio installer showing the workloads required to support .NET MAUI development":::
+:::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio installer showing the workloads required to support .NET MAUI development.":::

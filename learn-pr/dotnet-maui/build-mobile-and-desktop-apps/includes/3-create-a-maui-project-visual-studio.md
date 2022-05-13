@@ -13,14 +13,14 @@ Follow the steps in the wizard to name the project and specify a location.
 
 A newly created .NET MAUI project contains the items as shown:
 
-:::image type="content" source="../media/3-new-solution.png" alt-text="A screenshot of the solution explorer of the default structure of a new .NET MAUI solution in Visual Studio":::
+:::image type="content" source="../media/3-new-solution.png" alt-text="A screenshot of the solution explorer of the default structure of a new .NET MAUI solution in Visual Studio.":::
 
 
 ## .NET MAUI project structure and application startup
 
 The project contents include the following items:
 
-- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder and define app wide colors and default styles for every built-in control of .NET MAUI. Her eyou will see the two resource dictionaries being merged together:
+- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder and define app wide colors and default styles for every built-in control of .NET MAUI. Here you will see the two resource dictionaries being merged together:
 
     ```xml
     <?xml version = "1.0" encoding = "UTF-8" ?>

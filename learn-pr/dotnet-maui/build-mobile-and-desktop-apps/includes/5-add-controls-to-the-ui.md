@@ -26,7 +26,7 @@ The App class also contains:
 
 - Methods for handling life-cycle events, including when the app is sent to the background (that is, when it ceases to be the foreground app).
 
-- Methods for creating new `Windows` for the application. The .NET MAUI application by default have a single window, but you can create and launch additiona windows, which is helpful in desktop and tablet applications.
+- Methods for creating new `Windows` for the application. The .NET MAUI application by default has a single window, but you can create and launch additional windows, which is helpful in desktop and tablet applications.
 
 ## Shell
 
@@ -80,7 +80,7 @@ Some of the common controls used to define layouts are:
 
 - `VerticalStackLayout` and `HorizontalStackLayout` are optimized stack layouts which lay out controls in a top-to-bottom or left-to-right stack. A `StackLayout` is also available, which has a property named `StackOrientation`, which you can set to `Horizontal` or `Vertical`. On a tablet or phone, modifying this property in your application code enables you to adjust the display if the user rotates the device:
 
-    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="A diagram of how the horizontal and vertical orientations for the stack layout will layout controls.":::
+    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="A diagram of how the horizontal and vertical orientations for the stack layout will lay out controls.":::
 
 - `AbsoluteLayout`, which lets you set exact coordinates for controls.
 
