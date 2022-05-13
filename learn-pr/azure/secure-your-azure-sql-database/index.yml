@@ -27,6 +27,8 @@ products:
 - azure
 - azure-portal
 - azure-sql-database
+subjects:
+- cloud-security
 units:
 - learn.secure-your-azure-sql-database.0-introduction
 - learn.secure-your-azure-sql-database.1-create-database

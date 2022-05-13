@@ -23,6 +23,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-lake
 units:
 - learn.wwl.describe-azure-databricks-delta-lake-architecture.introduction
 - learn.wwl.describe-azure-databricks-delta-lake-architecture.describe-bronze-silver-gold-architecture

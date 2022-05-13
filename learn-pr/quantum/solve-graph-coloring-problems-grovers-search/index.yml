@@ -32,6 +32,8 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- development-tools
 units:
 - learn.quantum.solve-graph-coloring-problems-grovers-search.1-introduction
 - learn.quantum.solve-graph-coloring-problems-grovers-search.2-problem-description

@@ -36,6 +36,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- infrastructure
 units:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.0-introduction
 - learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.1-overview

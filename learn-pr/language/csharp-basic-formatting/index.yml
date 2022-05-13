@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-basic-formatting.introduction
 - learn.languages.csharp-basic-formatting.exercise-character-escape-sequences

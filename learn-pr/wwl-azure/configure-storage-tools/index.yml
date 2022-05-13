@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-storage
+subjects:
+- storage
 units:
 - learn.wwl.configure-storage-tools.introduction
 - learn.wwl.configure-storage-tools.use-azure-storage-explorer

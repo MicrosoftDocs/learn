@@ -22,6 +22,8 @@ products:
 - azure
 - dynamics-365
 - m365
+subjects:
+- artificial-intelligence
 modules:
 - learn-wwl.build-an-ai-ready-culture
 - learn-wwl.foster-ai-culture-finance

@@ -28,6 +28,8 @@ products:
 - azure-app-configuration
 - azure-app-service
 - ms-graph
+subjects:
+- cloud-security
 units:
 - learn.wwl.application-security.introduction
 - learn.wwl.application-security.microsoft-identity-platform

@@ -28,6 +28,9 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- infrastructure
+- architecture
 units:
 - learn.azure.plan-deploy-azure-arc-enabled-servers.introduction
 - learn.azure.plan-deploy-azure-arc-enabled-servers.what-is-azure-arc-enabled-servers

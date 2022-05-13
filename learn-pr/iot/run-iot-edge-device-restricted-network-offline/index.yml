@@ -40,6 +40,8 @@ roles:
 - administrator
 products:
 - azure-iot-edge
+subjects:
+- iot
 units:
 - learn.iot.run-iot-edge-device-restricted-network-offline.introduction
 - learn.iot.run-iot-edge-device-restricted-network-offline.deploy-enabled-linux-vm

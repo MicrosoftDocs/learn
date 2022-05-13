@@ -24,6 +24,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- cloud-computing
 units:
 - learn.wwl.implement-ci-cd-azure-devops.introduction
 - learn.wwl.implement-ci-cd-azure-devops.describe-ci-cd

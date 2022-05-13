@@ -22,6 +22,8 @@ roles:
 - data-scientist
 products:
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.create-regression-model-azure-machine-learning-designer.introduction
 - learn.wwl.create-regression-model-azure-machine-learning-designer.create-azure-machine-learning-workspace

@@ -27,6 +27,8 @@ roles:
 products:
 - azure-sql-database
 - sql-server
+subjects:
+- database
 modules:
 - learn.wwl.describe-sql-server-query-plans
 - learn.wwl.explore-performance-based-design

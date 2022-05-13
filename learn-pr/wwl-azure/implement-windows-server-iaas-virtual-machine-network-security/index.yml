@@ -41,6 +41,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-security
+- virtual-machine
 units:
 - learn.wwl.implement-windows-server-iaas-vm-network-security.introduction
 - learn.wwl.implement-windows-server-iaas-vm-network-security.groups-windows-iaas-vms

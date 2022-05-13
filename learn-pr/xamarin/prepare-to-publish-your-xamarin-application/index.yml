@@ -26,6 +26,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- mixed-reality
 units:
 - learn-xamarin.prepare-to-publish-your-xamarin-application.1-introduction
 - learn-xamarin.prepare-to-publish-your-xamarin-application.2-prepare-your-application-for-publishing

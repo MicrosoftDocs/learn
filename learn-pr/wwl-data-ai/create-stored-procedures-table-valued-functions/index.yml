@@ -36,6 +36,9 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- virtual-machine
+- process-workflow
 units:
 - learn.wwl.create-stored-procedures-table-valued-functions.introduction
 - learn.wwl.create-stored-procedures-table-valued-functions.call

@@ -20,6 +20,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-engineering
 modules:
 - learn.wwl.describe-azure-databricks
 - learn.wwl.spark-architecture-fundamentals

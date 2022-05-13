@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.introduction
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.know-your-data-protect-your-data-govern-your-data

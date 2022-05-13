@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-migrate
+subjects:
+- migration
 units:
 - learn.design-your-migration-to-azure.1-introduction
 - learn.design-your-migration-to-azure.2-plan-your-azure-migration

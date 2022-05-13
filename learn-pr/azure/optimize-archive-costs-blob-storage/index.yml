@@ -25,6 +25,10 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- cloud-computing
+- storage
+- finance-accounting
 units:
 - learn.azure.optimize-blob-storage-costs.1-introduction
 - learn.azure.optimize-blob-storage-costs.2-design-a-strategy-for-using-tiered-storage

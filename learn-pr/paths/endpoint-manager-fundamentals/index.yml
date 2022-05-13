@@ -39,6 +39,9 @@ roles:
 - administrator
 products:
 - mem
+subjects:
+- threat-protection
+- information-protection-governance
 modules:
 - learn.intro-to-endpoint-manager
 - learn.protect-endpoints-with-endpoint-manager

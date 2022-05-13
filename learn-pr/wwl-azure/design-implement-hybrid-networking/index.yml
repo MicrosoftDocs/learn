@@ -31,6 +31,8 @@ products:
 - azure-virtual-network
 - azure-virtual-wan
 - azure-vpn-gateway
+subjects:
+- networking
 units:
 - learn.wwl.design-implement-hybrid-networking.introduction
 - learn.wwl.design-implement-hybrid-networking.design-implement-hybrid-networking

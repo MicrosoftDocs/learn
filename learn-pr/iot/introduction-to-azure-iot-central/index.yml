@@ -31,6 +31,9 @@ roles:
 products:
   - azure
   - azure-iot-central
+subjects:
+- iot
+- cloud-computing
 units:
   - learn.introduction-to-azure-iot-central.introduction
   - learn.introduction-to-azure-iot-central.what-is-azure-iot-central

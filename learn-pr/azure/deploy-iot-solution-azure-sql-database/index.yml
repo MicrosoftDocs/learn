@@ -34,6 +34,9 @@ products:
 - azure-virtual-machines
 - azure-functions
 - azure-log-analytics
+subjects:
+- iot
+- database
 units:
 - learn.azure.deploy-iot-solution-azure-sql-database.1-introduction
 - learn.azure.deploy-iot-solution-azure-sql-database.2-analyze-solution-architecture

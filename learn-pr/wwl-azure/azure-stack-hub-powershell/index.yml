@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-stack-hub
+subjects:
+- cloud-computing
 units:
 - learn.wwl.azure-stack-hub-powershell.introduction
 - learn.wwl.azure-stack-hub-powershell.get-started-powershell

@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.use-watchlists-azure-sentinel.introduction
 - learn.wwl.use-watchlists-azure-sentinel.plan-for-azure-watchlists

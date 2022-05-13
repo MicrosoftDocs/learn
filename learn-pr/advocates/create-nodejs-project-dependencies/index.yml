@@ -28,6 +28,8 @@ products:
 prerequisites: |
   - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
   - Familiarity with editing text and code files in any text editor
+subjects:
+- development-tools
 units:
 - learn.azure.create-nodejs-project-dependencies.1-introduction
 - learn.azure.create-nodejs-project-dependencies.2-package-json

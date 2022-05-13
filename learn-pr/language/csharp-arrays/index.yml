@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-arrays.introduction
 - learn.languages.csharp-arrays.exercise-array-basics

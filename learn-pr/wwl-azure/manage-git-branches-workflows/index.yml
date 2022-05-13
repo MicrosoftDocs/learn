@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- process-workflow
 units:
 - learn.wwl.manage-git-branches-workflows.introduction
 - learn.wwl.manage-git-branches-workflows.explore-branch-workflow-types

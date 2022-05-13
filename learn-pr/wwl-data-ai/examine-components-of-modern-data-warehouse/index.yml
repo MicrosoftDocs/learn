@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-warehousing
 units:
 - learn.wwl.examine-components-of-modern-data-warehouse.introduction
 - learn.wwl.examine-components-of-modern-data-warehouse.describe-warehousing

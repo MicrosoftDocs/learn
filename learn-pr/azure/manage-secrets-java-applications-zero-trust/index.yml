@@ -34,6 +34,8 @@ products:
 - azure-functions
 - azure-app-service
 - azure-key-vault
+subjects:
+- cloud-computing
 units:
 - learn.manage-secrets-in-java-applications-zero-trust.1-introduction
 - learn.manage-secrets-in-java-applications-zero-trust.2-secrets-handling-java

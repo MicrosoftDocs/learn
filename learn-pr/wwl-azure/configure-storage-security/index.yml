@@ -25,6 +25,9 @@ roles:
 - administrator
 products:
 - azure-storage
+subjects:
+- security
+- storage
 units:
 - learn.wwl.configure-storage-security.introduction
 - learn.wwl.configure-storage-security.review-strategies

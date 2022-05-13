@@ -29,6 +29,8 @@ roles:
 products:
 - dotnet
 - aspnet-core
+subjects:
+- development-tools
 units:
 - learn.create-razor-pages-aspnet-core.1-introduction
 - learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages

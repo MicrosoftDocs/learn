@@ -30,6 +30,8 @@ roles:
 - developer
 products:
 - azure-quantum
+subjects:
+- cloud-computing
 units:
 - learn.quantum.solve-job-shop-optimization-azure-quantum.introduction
 - learn.quantum.solve-job-shop-optimization-azure-quantum.problem-formulation

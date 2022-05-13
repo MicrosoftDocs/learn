@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- migration
 units:
 - learn.azure.move-azure-resources-to-another-resource-group.introduction
 - learn.azure.move-azure-resources-to-another-resource-group.identify-incorrectly-assigned-resources

@@ -38,6 +38,8 @@ products:
 - azure-private-link
 - azure-virtual-machines
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.introduction
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.create-troubleshooting-environment

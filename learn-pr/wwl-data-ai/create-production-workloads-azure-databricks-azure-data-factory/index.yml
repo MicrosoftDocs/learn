@@ -25,6 +25,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- process-workflow
 units:
 - learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.introduction
 - learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.schedule-databricks-jobs-pipeline

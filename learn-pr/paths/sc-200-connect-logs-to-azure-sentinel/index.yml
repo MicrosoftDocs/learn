@@ -23,6 +23,8 @@ products:
 - azure
 - azure-log-analytics
 - azure-sentinel
+subjects:
+- cloud-security
 modules:
 - learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
 - learn.wwl.connect-microsoft-services-to-azure-sentinel

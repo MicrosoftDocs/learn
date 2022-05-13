@@ -31,6 +31,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- data-management
 units:
 - learn.wwl.describe-performance-monitoring.introduction
 - learn.wwl.describe-performance-monitoring.tools

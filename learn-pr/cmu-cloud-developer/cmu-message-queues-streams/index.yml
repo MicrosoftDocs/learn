@@ -53,6 +53,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-management
 units:
 - learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.1-message-queues
