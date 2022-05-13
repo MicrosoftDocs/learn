@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-clustering-models.challenge-clustering
+title: Challenge - Clustering
+metadata:
+  title: Challenge - Clustering
+  description: Challenge - Clustering.
+  ms.date: 02/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/7-challenge-clustering.ipynb

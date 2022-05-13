@@ -1,0 +1,4 @@
+In this module, you learned how you can use clustering to create unsupervised machine learning models that group data observations into clusters. You then used the *tidymodels* framework in R to perform dimension reduction. You did this by using PCA and various packages in the R ecosystem, such as `stats::kmeans()`, `stats::hclust()`, and `cluster::agnes()`, to train K-means and hierarchical clustering models. 
+
+*tidymodels* (R) and *scikit-learn* (Python) are popular frameworks for writing code to train clustering models. Alternatively, you can also create machine learning solutions for clustering by using the graphical tools in Microsoft Azure Machine Learning. You can learn more about no-code development of clustering models in the [Create a clustering model with Azure Machine Learning designer](/learn/modules/create-clustering-model-azure-machine-learning-designer/) module. 
+
