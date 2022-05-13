@@ -36,7 +36,7 @@ units:
 - learn.dotnet-maui.use-shared-resources.exercise-use-page-level-resources
 - learn.dotnet-maui.use-shared-resources.use-and-update-dynamic-resources
 - learn.dotnet-maui.use-shared-resources.exercise-use-dynamic-resources-to-update-element
-- learn.dotnet-maui.use-shared-resources.create-a-consistent-ui-by-using-styles
+- learn.dotnet-maui.use-shared-resources.create-consistent-ui-by-using-styles
 - learn.dotnet-maui.use-shared-resources.exercise-create-and-apply-a-style
 - learn.dotnet-maui.use-shared-resources.create-and-use-application-wide-resources
 - learn.dotnet-maui.use-shared-resources.exercise-use-application-wide-resources
