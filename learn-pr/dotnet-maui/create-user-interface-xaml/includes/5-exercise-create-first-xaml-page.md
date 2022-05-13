@@ -61,7 +61,7 @@ You've been asked to add some further features to this page. Before you start, y
 
     The diagram below illustrates the structure of the UI:
 
-    :::image type="content" source="../media/5-ui-layout.png" alt-text="A diagram of t structure of the UI for the Notes app.":::
+    :::image type="content" source="../media/5-ui-layout.png" alt-text="A diagram of the structure of the UI for the Notes app.":::
 
     Note the **MainPage** class also contains event-handling methods for the buttons, and some code that initializes the `Editor` control. This code isn't distinguished from the UI definition.
 
