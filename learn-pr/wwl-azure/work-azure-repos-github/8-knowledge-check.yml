@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/17/2022
+  ms.date: 05/13/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -28,17 +28,6 @@ quiz:
     - content: "Source Safe."
       isCorrect: true
       explanation: "Correct. Azure Repos provides two types of version control systems. Git: distributed version control and Team Foundation Version Control (TFVC): centralized version control."
-  - content: "Which of the following choices best describes the Azure DevOps and GitHub integration?"
-    choices:
-    - content: "Azure Boards have direct integration with Azure Repos, but it can also be integrated with GitHub to plan and track work linking commits, PRs, and issues."
-      isCorrect: true
-      explanation: "Correct. Integrating GitHub with Azure Boards lets you plan and track your work by linking GitHub commits, pull requests, and issues, directly to work items in Boards."
-    - content: "Azure Boards has direct integration with Azure Repos. Azure Repos only integrates with GitHub using extensions from Marketplace for the read-only track."
-      isCorrect: false
-      explanation: "Incorrect. Integrating GitHub with Azure Boards lets you plan and track your work by linking GitHub commits, pull requests, and issues, directly to work items in Boards."
-    - content: "Azure Boards has direct integration with GitHub for tracking activities and moving tasks on both sides Azure Boards to GitHub and GitHub to Azure Repos."
-      isCorrect: false
-      explanation: "Incorrect. Integrating GitHub with Azure Boards lets you plan and track your work by linking GitHub commits, pull requests, and issues, directly to work items in Boards."
   - content: "Which of the following choices is the exact number of days of history you can import Team Foundation Version Control (TFVC) to Git using the \"Import repository\" feature in Azure DevOps?"
     choices:
     - content: "90 days."
@@ -50,3 +39,14 @@ quiz:
     - content: "365 days."
       isCorrect: false
       explanation: "Incorrect. There are some limitations here (that apply only when migrating source type TFVC) to a single branch and only 180 days of history."
+  - content: "Which of the following choices isn't a supported authentication method to link GitHub and Azure Boards?"
+    choices:
+    - content: "Username and Password."
+      isCorrect: false
+      explanation: "Incorrect. Username and Password is supported."
+    - content: "Personal Access Token (PAT)"
+      isCorrect: false
+      explanation: "Incorrect. Personal Access Token (PAT) is supported."
+    - content: "SSH."
+      isCorrect: true
+      explanation: "Correct. SSH isn't supported to connect Azure Boards and GitHub."
