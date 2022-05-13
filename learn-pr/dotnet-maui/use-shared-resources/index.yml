@@ -19,7 +19,7 @@ abstract: |
     - Create and use application-wide resources
     - Apply user accessibility choices by using built-in styles
 prerequisites: | 
-  - Visual Studio 2022 with the MAUI workload installed
+  - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
 iconUrl: /learn/achievements/use-shared-resources.svg
 levels: 
