@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/07/2022
+  ms.date: 05/13/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -42,10 +42,10 @@ quiz:
   - content: "An App Service application stores page graphics in an Azure storage account. The app needs to authenticate programmatically to the storage account, what should be configured?"
     choices:
     - content: "Create an Azure AD system user"
-      isCorrect: true
+      isCorrect: false
       explanation: "A system user isn't a secure way to authenticate programmatically."
     - content: "Create a managed identity"
-      isCorrect: false
+      isCorrect: true
       explanation: "Create a managed identity. A managed identity is an Azure AD security principal that represents the resource (app). Managed identities can be user or system managed."
     - content: "Create an RBAC role assignment"
       isCorrect: false
