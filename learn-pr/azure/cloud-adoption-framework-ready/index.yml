@@ -3,9 +3,9 @@ uid: learn.azure.cloud-adoption-framework-ready
 metadata:
   title: Choose the best Azure landing zone to support your requirements for cloud operations
   description: Azure landing zones help accelerate how you configure your environment to meet your operational requirements.
-  ms.date: 04/14/2022
+  ms.date: 05/12/2022
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best Azure landing zone to support your requirements for cloud operations
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - An understanding of your organization's cloud adoption strategy. 
   - Familiarity with the Azure cloud environment, including network configuration, network connectivity, and Azure Active Directory. 
-  - Familiarity with Azure governance tools, including Azure Policy, Azure Blueprints, and Azure Resource Manager templates. 
+  - Familiarity with Azure governance tools, including Azure Policy and Azure Resource Manager templates. 
   - A general understanding of the environmental requirements needed to proceed with your cloud adoption plan.  
 iconUrl: /learn/achievements/cloud-adoption-framework-ready.svg
 ratingEnabled: true
@@ -51,6 +51,8 @@ units:
 - learn.azure.cloud-adoption-framework-ready.2-customer-narrative
 - learn.azure.cloud-adoption-framework-ready.3-common-operating-models
 - learn.azure.cloud-adoption-framework-ready.4-design-areas
+- learn.azure.cloud-adoption-framework-ready.understand-design-principles
+- learn.azure.cloud-adoption-framework-ready.journey-target-architecture
 - learn.azure.cloud-adoption-framework-ready.5-azure-landing-zone-options
 - learn.azure.cloud-adoption-framework-ready.6-deploy-blueprint
 - learn.azure.cloud-adoption-framework-ready.7-expand-landing-zone

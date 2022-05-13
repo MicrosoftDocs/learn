@@ -1,4 +1,36 @@
-In the getting-started module, we shared the narrative for Tailwind Traders. The central operations team at Tailwind Traders is experienced at managing its existing datacenters. The ongoing project to migrate two of the datacenters to Azure is already exposing a few critical learning curves that the company's current skill sets can't address.
+In the getting-started module, we shared the narrative for Tailwind Traders. The central operations team and platform team at Tailwind Traders are experienced at managing its existing datacenters. The ongoing project to migrate two of the datacenters to Azure is already exposing a few critical learning curves that the company's current skill sets can't address.
+
+## Important constraints
+
+Business priorities: At this time, the business has placed a high priority on migration & meeting the time constraints to get out of their data center. Because of that business priority, the business and IT teams have deprioritized longer term security and compliance requirements until they can complete development of their core cloud platform.
+
+Current state of the cloud teams: Since Tailwind is new to the cloud, very few members of operations, platform, or IT admin teams are experienced with the cloud. The team wants to slowly move into modern operations, security, and governance but still needs a cloud foundation that can scale to meet those needs as they become more important. Historically, Tailwind has operated from a purely Central Operations perspective, meaning that workload teams don’t have the ability to interact with production environments. As such, the team doesn’t have an easy way of mapping assets (VM, Data, & Apps) to defined workloads, so the boundaries of each workload can be unclear at times.
+
+## Alignment to Azure landing zone
+
+The impacted teams have decided to use Azure landing zones as the baseline and future state target for the environmental configuration. The operations and platform teams have agreed to the following alignment.
+
+- The Azure landing zone conceptual architecture will serve as the long-term vision for the future state of the cloud environment. All impacted teams will use that architecture as a basis for building cloud skills & configuring their cloud environment.
+- The Azure landing zone accelerator will be used to “get started” with their environmental configuration.
+- If they need to customize their environment in the future, they will use one of the custom implementations options which align to or extend the initial accelerator-based deployment.
+
+## Deviation from standard Azure landing zone guidance
+
+Tailwind needed to use Azure landing zones in a way that met them where they are today. The following outlines how their constraints cause them to deviate from some of the Azure landing zone design principles & the impact of each decision.
+
+- Policy-driven governance: Tailwind hasn’t historically automated their corporate policies. Given the pressure to migrate their data center quickly, they chose to minimize the amount of governance including in their initial landing zone deployment. The team has also committed to completing the CAF Govern learn module once the initial environment is configured. Limitations in IT staff dedicated to the cloud migration are a big driver for this deviation. This deviation was further enforced by Business and IT resistance to full blown cloud governance or “Azure Ops”.
+- Subscription democratization: The Central operations team will maintain production operations accountability for all workloads. They will seldom allow a workload team to have access to a production environment, so they are not following the design principle of subscription democratization. If a workload team requires a deviation, the operations team will consider a dedicated landing zone for individual workloads on a case-by-case basis. Otherwise, Tailwind is firmly committed to maintaining central operations & would have limited instances of workloads in isolated production environments (or application landing zones).
+- Application-centric service model: Outage related processes may consider workloads, especially for assets supporting mission-critical workloads. However, aside from outages, the Central operations team doesn’t differentiate between workloads or applications for operations management processes. Their primary processes operate, manage, make changes, and optimize all resources the same ways regardless of the workload boundaries/architecture. Given the time constraints for this migration, it’s not feasible for the Tailwind team to define app boundaries & establish an app-centric service model.
+
+Many of the terms in the above bullets will be explained in the following units of this Learn module. You will see several of them reflected in notes to create teaching opportunities.
+
+These deviations don’t take away from the alignment section above. However, these deviations will impact some options when deploying the Azure landing zone accelerator. These deviations will also impact the design for individual application landing zones, which are deployed once you start to migrate assets to the cloud.
+
+These deviations will also require the Tailwind team to complete the CAF Manage, Secure, and Govern Learn modules after the initial environment is deployed.
+
+## Additional constraints
+
+The remainder of this customer narrative describes additional constraints that may impact Tailwinds decisions.
 
 ## Operations
 
@@ -48,4 +80,4 @@ Segmentation of resources between each datacenter treated each collection of wor
 
 Beyond that basic organization, there are inconsistencies in the configuration management database, so it's hard to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well defined for mission-critical workloads, but are missing for most other workloads.
 
-For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, more than 30 percent of the supported assets are not clearly mapped to a single workload. You will require practices during migration to ensure a dependency analysis and proper resource organization.
+For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, more than 30 percent of the supported assets are not clearly mapped to a single workload. You will require practice during migration to ensure a dependency analysis and proper resource organization.
