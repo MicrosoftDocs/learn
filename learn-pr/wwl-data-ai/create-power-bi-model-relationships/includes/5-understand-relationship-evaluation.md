@@ -2,25 +2,25 @@ Model relationships, from an evaluation perspective, are classified as either re
 
 First, some modeling theory is required to fully understand relationship evaluations.
 
-An import or DirectQuery model sources all of its data from either the Vertipaq cache or the source database. In both instances, Power BI is able to determine that a "one" side of a relationship exists.
+An import or DirectQuery model sources all of its data from either the VertiPaq cache or the source database. In both instances, Power BI is able to determine that a "one" side of a relationship exists.
 
-A composite model, however, can comprise tables using different storage modes (import, DirectQuery, or dual), or multiple DirectQuery sources. Each source, including the Vertipaq cache of imported data, is considered to be a source group. Model relationships can then be classified as intra source group or inter/cross source group. An intra source group relationship is one that relates two tables within a source group, while an inter/cross source group relationship relates tables across two source groups. Relationships in import or DirectQuery models are always intra source group.
+A composite model, however, can comprise tables using different storage modes (import, DirectQuery, or dual), or multiple DirectQuery sources. Each source, including the VertiPaq cache of imported data, is considered to be a source group. Model relationships can then be classified as intra source group or inter/cross source group. An intra source group relationship is one that relates two tables within a source group, while an inter/cross source group relationship relates tables across two source groups. Relationships in import or DirectQuery models are always intra source group.
 
 Here's an example of a composite model.
 
-![Image shows an example of a composite model consisting of two source groups. The image is described in the following paragraph.](../media/multiple-source-groups.png)
+![Screenshot of a composite model consisting of two source groups. The image is described in the following paragraph.](../media/multiple-source-groups.png)
 
-In this example, the composite model consists of two source groups: a Vertipaq source group and a DirectQuery source group. The Vertipaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the Vertipaq source group to a table in the DirectQuery source group.
+In this example, the composite model consists of two source groups: a VertiPaq source group and a DirectQuery source group. The VertiPaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the Vertipaq source group to a table in the DirectQuery source group.
 
 ## Regular relationships
 
 A model relationship is regular when the query engine can determine the "one" side of relationship. It has confirmation that the "one" side column contains unique values. All one-to-many intra source group relationships are regular relationships.
 
-In the following example, there are two regular relationships, both marked as **R**. Relationships include the one-to-many relationship contained within the Vertipaq source group, and the one-to-many relationship contained within the DirectQuery source group.
+In the following example, there are two regular relationships, both marked as **R**. Relationships include the one-to-many relationship contained within the VertiPaq source group, and the one-to-many relationship contained within the DirectQuery source group.
 
-![Image shows an example of a composite model consisting of two source groups with regular relationships marked.](../media/multiple-source-groups-regular.png)
+![Screenshot of a composite model consisting of two source groups with regular relationships marked.](../media/multiple-source-groups-regular.png)
 
-For import models, where all data is stored in the Vertipaq cache, Power BI creates a data structure for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
+For import models, where all data is stored in the VertiPaq cache, Power BI creates a data structure for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
 At query time, regular relationships permit table expansion to happen. Table expansion results in the creation of a virtual table by including the native columns of the base table and then expanding into related tables. For import tables, table expansion is done in the query engine; for DirectQuery tables it’s done in the native query that’s sent to the source database (as long as the **Assume referential integrity** property isn't enabled). The query engine then acts upon the expanded table, applying filters and grouping by the values in the expanded table columns.
 
@@ -49,9 +49,9 @@ A model relationship is limited when there's no guaranteed "one" side. A limited
 
 - The relationship is cross source group (which can only ever be the case for composite models).
 
-In the following example, there are two limited relationships, both marked as **L**. The two relationships include the many-to-many relationship contained within the Vertipaq source group, and the one-to-many cross source group relationship.
+In the following example, there are two limited relationships, both marked as **L**. The two relationships include the many-to-many relationship contained within the VertiPaq source group, and the one-to-many cross source group relationship.
 
-![Image shows an example of a composite model consisting of two source groups with limited relationships marked.](../media/multiple-source-groups-limited.png)
+![Screenshot of a composite model consisting of two source groups with limited relationships marked.](../media/multiple-source-groups-limited.png)
 
 For import models, data structures are never created for limited relationships. In that case, Power BI resolves table joins at query time.
 

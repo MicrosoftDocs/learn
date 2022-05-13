@@ -45,7 +45,7 @@ For guidance on using this cardinality type, see [Many-to-many relationship guid
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or *) on either side of the relationship line. To determine which columns are related, you'll need to select, or hover the cursor over, the relationship line to highlight the related columns.  
 >
-> ![Image shows two tables in the model diagram with the cardinality indicators highlighted.](../media/model-diagram-cardinality.png)
+> ![Depiction of two tables in the model diagram with the cardinality indicators highlighted.](../media/model-diagram-cardinality.png)
 
 ## Set cross filter direction
 
@@ -73,7 +73,7 @@ We recommend using bi-directional filtering only as needed. For more information
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cross filter direction by noticing the arrowhead(s) along the relationship line. A single arrowhead represents a single-direction filter in the direction of the arrowhead; a double arrowhead represents a bi-directional relationship.  
 >  
-> ![Image shows two tables in the model diagram with the cross filter arrowhead highlighted.](../media/model-diagram-cross-filter-direction.png)
+> ![Screenshot of two tables in the model diagram with the cross filter arrowhead highlighted.](../media/model-diagram-cross-filter-direction.png)
 
 ## Set active vs inactive relationships
 
@@ -92,7 +92,7 @@ For more information, see [Active vs inactive relationship guidance](/power-bi/g
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's active vs inactive status. An active relationship is represented by a solid line; an inactive relationship is represented as a dashed line.  
 >
-> ![Image shows two tables in the model diagram and two relationships; one solid line for active and one dashed line for inactive.](../media/model-diagram-active-inactive-relationship.png)
+> ![Screenshot of two tables in the model diagram and two relationships; one solid line for active and one dashed line for inactive.](../media/model-diagram-active-inactive-relationship.png)
 
 ## Set assume referential integrity
 

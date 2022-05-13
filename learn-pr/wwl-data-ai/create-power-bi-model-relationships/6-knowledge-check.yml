@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Belle is a data modeler at Adventure Works who is developing a model for a data warehouse. The model includes a table that stores products and another table that stores sales of those products. Belle adds a relationship to relate the two tables. <br>Which cardinality type should Belle set to achieve an optimal model?"
+  - content: "Belle is a data modeler at Adventure Works who is developing a model for a data warehouse. The model includes a table that stores products and another table that stores sales of those products. Belle adds a relationship to relate the two tables. <br><br>Which cardinality type should Belle set to achieve an optimal model?"
     choices:
     - content: "One-to-one."
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Many-to-many."
       isCorrect: false
       explanation: "Incorrect. While a many-to-many relationship would work it isn’t optimal. Because the product table has a unique identifier for each product, a one-to-many relationship should be set."
-  - content: "Akira is a data modeler at Adventure Works who is developing a model for a data warehouse. The model includes a table that stores products and another table that stores sales monthly targets of product categories. Akira adds a relationship to relate the two tables. <br>Which cardinality type should Akira set to achieve an optimal model?"
+  - content: "Akira is a data modeler at Adventure Works who is developing a model for a data warehouse. The model includes a table that stores products and another table that stores sales monthly targets of product categories. Akira adds a relationship to relate the two tables. <br><br>Which cardinality type should Akira set to achieve an optimal model?"
     choices:
     - content: "One-to-one."
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: "Many-to-many."
       isCorrect: true
       explanation: "Correct. The product table category column and the sales target category column will contain duplicate categories."
-  - content: "Margaret is a data modeler at Adventure Works who is adding a measure to sales model. When evaluated, the measure must filter by filters already applied to an unrelated table. <br>Which DAX function should Margaret use to create a virtual relationship?"
+  - content: "Margaret is a data modeler at Adventure Works who is adding a measure to sales model. When evaluated, the measure must filter by filters already applied to an unrelated table. <br><br>Which DAX function should Margaret use to create a virtual relationship?"
     choices:
     - content: "`RELATEDTABLE`."
       isCorrect: false
