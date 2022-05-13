@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.customize-xaml-pages-layout.exercise-stacklayout-build-user-interface
+title: Exercise - Use StackLayout to build a user interface
+metadata:
+  title: Exercise - Use StackLayout to build a user interface
+  description: Complete a user interface by adding and configuring a StackLayout.
+  ms.date: 04/29/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: false
+content: |
+  [!include[](includes/5-exercise-stacklayout-build-user-interface.md)]
