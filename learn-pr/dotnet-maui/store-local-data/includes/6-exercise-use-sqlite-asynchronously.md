@@ -4,7 +4,9 @@ The application works well, but if the database contains many rows the UI can be
 
 1. Open the **PersonRepository.cs** file in the **People** project.
 
-1. Change the **conn** property to a **SQLiteAsyncConnection** and update the code that initializes the connection in the **PersonRepository** constructor.
+1. Modify the definition of the **Init** method to be `async`. Change the return type of the method to `Task`.
+
+1. Change the **conn** property to a **SQLiteAsyncConnection**. and update the code in the **Init** method that initializes the connection.
 
 1. Replace the call to the synchronous **CreateTable** method with the asynchronous **CreateTableAsync** method. 
 
@@ -13,16 +15,18 @@ The application works well, but if the database contains many rows the UI can be
     ```csharp
     private SQLiteAsyncConnection conn;
 
-    public PersonRepository(string dbPath)
+    private async Task Init()
     {
-       conn = new SQLiteAsyncConnection(dbPath);
-       conn.CreateTableAsync<Person>().Wait();
+        if (conn != null)
+            return;
+        
+        conn = new SQLiteAsyncConnection(_dbPath);
+    
+        await conn.CreateTableAsync<Person>();
     }
     ```
 
 ## Insert an item into a table asynchronously
-
-1. Add the directive `using System.Threading.Tasks;` to the list at the start of the file.
 
 1. Modify the definition of the **AddNewPerson** method to be `async`. Change the return type of the method to `Task`.
 

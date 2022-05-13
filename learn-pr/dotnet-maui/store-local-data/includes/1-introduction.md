@@ -12,11 +12,6 @@ Next, you'll look at SQLite and learn how to insert and retrieve data. Finally, 
 
 By the end of this module, you'll be able to build a .NET MAUI application that stores data locally in a SQLite database.
 
-> [!NOTE]
-> This module requires Visual Studio 2022. You can use either Windows or a Mac.
-> If you're running on Windows, make sure you have the Mobile development with .NET workload installed in Visual Studio 2022 for Windows. Refer to the documentation if you need to add it to your installation.
-> If you're running on a Mac, the standard Visual Studio for Mac installation includes everything you need to build apps with .NET MAUI.
-
 ## Learning objectives
 
 In this module, you'll learn how to:
@@ -27,6 +22,6 @@ In this module, you'll learn how to:
 
 ## Prerequisites
 
-- Visual Studio 2022 with the MAUI workload installed
+- Visual Studio 2022 with the .NET MAUI workload installed
 - Familiarity with C# and .NET
 - Basic knowledge of SQL and relational databases

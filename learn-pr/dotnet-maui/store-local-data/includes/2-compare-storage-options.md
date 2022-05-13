@@ -10,11 +10,11 @@ In this unit, you'll look at these storage options and the situations for which 
 
 ## When to use Preferences
 
-**Preferences** are convenient when you're working with simple pieces of data, such as user selections. They're often used to enable users to configure the application. You store this data as a set of key/value pairs. For example, suppose you wanted the user to be able to specify whether the app should save their username and password between session. You can store the user's choice in **Preferences**. The .NET MAUI Essentials library provides the `Preferences` class, which has static methods for getting and setting preferences.  The code below shows how to store a Boolean value recorded in the **saveLoginDetails** variable to a preference named **SaveLogin**, and then later read this data back. Notice that the `Get` method expects you to provide a default value if the specified preference isn't found:
+**Preferences** are convenient when you're working with simple pieces of data, such as user selections. They're often used to enable users to configure the application. You store this data as a set of key/value pairs. For example, suppose you wanted the user to be able to specify whether the app should save their username and password between session. You can store the user's choice in **Preferences**. 
+
+The code below shows how to store a Boolean value recorded in the **saveLoginDetails** variable to a preference named **SaveLogin**, and then later read this data back. Notice that the `Get` method expects you to provide a default value if the specified preference isn't found:
 
 ```csharp
-using Microsoft.Maui.Essentials;
-...
 bool saveLoginDetails = ...;
 ...
 Preferences.Set("SaveLogin", saveLoginDetails);
@@ -51,18 +51,16 @@ customers = JsonSerializer.Deserialize<List<Customer>>(rawData);
 
 ### Access the app sandbox
 
-When you're working with loose files such XML files, you need to store them in a suitable location in file system. Some of this data might be sensitive, and you don't want to save it to a location where it could be easily accessed by other apps or users. .NET MAUI apps provide the **app sandbox**. The app sandbox is a private area your application can work with. By default, no other applications can access this area other than the operating system. You can access the sandbox using the `AppDataDirectory` static property of the `FileSystem` class in the MAUI Essentials library: 
+When you're working with loose files such XML files, you need to store them in a suitable location in file system. Some of this data might be sensitive, and you don't want to save it to a location where it could be easily accessed by other apps or users. .NET MAUI apps provide the **app sandbox**. The app sandbox is a private area your application can work with. By default, no other applications can access this area other than the operating system. You can access the sandbox using the `AppDataDirectory` static property of the `FileSystem` class: 
 
 ```csharp
-using Microsoft.Maui.Essentials;
-...
 string path = FileSystem.AppDataDirectory;
 ```
 
 In this code, the **path** variable contains the file path to the location where you can store files for the application to use. You can read and write data to files in this folder using the techniques shown in the section **How to use the file system**.
 
 > [!NOTE]
-> The `FileSystem.AppDataDirectory` property is an abstraction of a device-specific path; it evaluates to different folders on Android, iOS, and WinUI. This abstraction enables you to write code that references the sandbox in a manner that is independent of the platform on which it runs. Use this abstraction in preference to referencing a device-specific path explicitly in your code.
+> The `FileSystem.AppDataDirectory` property is an abstraction of a device-specific path; it evaluates to different folders on Android, iOS, and WinUI3. This abstraction enables you to write code that references the sandbox in a manner that is independent of the platform on which it runs. Use this abstraction in preference to referencing a device-specific path explicitly in your code.
 
 ### Guidelines for saving data in iOS apps
 
