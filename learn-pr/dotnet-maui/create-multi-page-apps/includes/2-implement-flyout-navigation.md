@@ -1,4 +1,4 @@
-Flyout navigation is a type of navigation where a window of menu items slides (or flies out) from the side of the device's screen. It is usually invoked by tapping on what's called a "hamburger" menu, or an icon with three horizontal lines stacked on top of each other.
+Flyout navigation is a type of navigation where a window of menu items slides (or flies out) from the side of the device's screen. It's usually invoked by tapping on what's called a "hamburger" menu, or an icon with three horizontal lines stacked on top of each other.
 
 In this unit, you'll learn how to build an app that implements flyout navigation.
 
@@ -12,7 +12,7 @@ The image below shows a visual example of the flyout parts.
 
 :::image type="content" source="../media/2-flyout-annotated.png" alt-text="A screenshot of a flyout menu with each portion of the flyout annotated.":::
 
-Because the flyout menu is not always visible, it can be used to switch context between conceptually different parts of your application. For example, one flyout item can lead to a data entry page (or pages), and another to an about page.
+Because the flyout menu isn't always visible, it can be used to switch context between conceptually different parts of your application. For example, one flyout item can lead to a data entry page (or pages), and another to an about page.
 
 ## Flyout navigation in a .NET MAUI app
 
@@ -26,7 +26,7 @@ And you can have as many `FlyoutItem`s as you'd like.
 
 ## Create a flyout
 
-One or more flyout items can be added to the flyout, and each flyout item is represened by a `FlyoutItem` object. Each `FlyoutItem` object should be a child of the subclassed `Shell` object which serves as your app's `MainPage`. 
+One or more flyout items can be added to the flyout, and each flyout item is represented by a `FlyoutItem` object. Each `FlyoutItem` object should be a child of the subclassed `Shell` object that serves as your app's `MainPage`. 
 
 The following example creates a flyout containing two flyout items:
 

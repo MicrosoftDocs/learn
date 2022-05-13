@@ -1,4 +1,4 @@
-Flyout and tabbed navigtion are just two ways of enabling a user to navigate through the data presented by an app. Another technique is to use stack navigation. Each type of navigation is suited towards different types of relationships between pages.
+Flyout and tabbed navigation are just two ways of enabling a user to navigate through the data presented by an app. Another technique is to use stack navigation. Each type of navigation is suited towards different types of relationships between pages.
 
 You can use stack navigation in conjunction with flyouts and tabs. In this unit, you'll briefly review the differences between tab and flyout navigation and stack navigation, learn how to build apps that combine both techniques.
 
@@ -75,7 +75,7 @@ await Shell.Current.GoToAsync("astronomicalbodydetails");`
 
 ### Backwards navigation
 
-Backwards navigation can be performed by specifying ".." as the argument to te `GoToAsync` method:
+Backwards navigation can be performed by specifying ".." as the argument to the `GoToAsync` method:
 
 ```csharp
 await Shell.Current.GoToAsync("..");

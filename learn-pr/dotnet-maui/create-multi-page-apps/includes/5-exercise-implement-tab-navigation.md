@@ -71,11 +71,11 @@ The first thing you decide to do is remove all the pages from the flyout and add
 
 1. Run the app to see how it looks.
 
-    :::image type="content" source="../media/5-app-with-two-tabs.png" alt-text="Screenshot of app running with 2 tabs instead of using flyout menu.":::
+    :::image type="content" source="../media/5-app-with-two-tabs.png" alt-text="Screenshot of app running with two tabs instead of using flyout menu.":::
 
 ## Add tabs into flyout menu
 
-You decide having the moon phase and sunrise pages provided within a tab layout makes sense. It also makes sense to keep the about page separate. So you decide to add the flyout back in. The first flyout item will display the tab page, and the second the about page.
+You decide it makes sense to have the moon phase and sunrise pages in the same tab page. It also makes sense to keep the about page separate. So you decide to add the flyout back in. The first flyout item will display the tab page, and the second the about page.
 
 1. Delete the `TabBar` and all of its children you just created.
 1. In its place, add in a `<FlyoutItem>`. Set its `Title` property to **Astronomy** and its icon to **moon.png**.
@@ -117,7 +117,7 @@ You decide having the moon phase and sunrise pages provided within a tab layout 
     </FlyoutItem>
     ```
 
-1. Run the app again. You should see 2 items in the flyout. The first one will open up a tab page that contains the `MoonPhasePage` and `SunrisePage`. The second displays the `AboutPage` by itself.
+1. Run the app again. You should see two items in the flyout. The first one will open up a tab page that contains the `MoonPhasePage` and `SunrisePage`. The second displays the `AboutPage` by itself.
 
 The final XAML for **AppShell.xaml** should look like the following:
 

@@ -1,4 +1,4 @@
-In the sample scenario, you have a MAUI app that contains a number of pages for displaying information about astronomical bodies, the phases of the moon, and sunrise/sunset times. The app also includes an About page. Currently, these pages are all stand-alone, but you want to provide a logical way for the user to move between them.
+In the sample scenario, you have a MAUI app that contains pages for displaying information about astronomical bodies, the phases of the moon, and sunrise/sunset times. The app also includes an About page. Currently, these pages are all stand-alone, but you want to provide a logical way for the user to move between them.
 
 In this exercise, you'll add flyout navigation to the app.
 
@@ -55,7 +55,7 @@ In this exercise, you'll add flyout navigation to the app.
 
     :::image type="content" source="../media/3-app-with-flyout-icon.png" alt-text="A screenshot of the app running on Android with the moon icon indicating a flyout is available.":::
 
-    By tapping on the icon, the flyout will appear.
+    Tap on the icon and the flyout will appear.
 
     :::image type="content" source="../media/3-flyout-shown.png" alt-text="A screenshot of the app running on Android with the flyout displayed.":::
 
@@ -85,7 +85,7 @@ In this exercise, you'll add flyout navigation to the app.
 
 You may have noticed the flyout items look a bit empty. You can add icons to the flyout items by using the `Icon` property.
 
-Some images have alrady been added to the **Resources\Images** folder for you to use.
+Some images have already been added to the **Resources\Images** folder for you to use.
 
 1. Set the `Icon` property of the first `FlyoutItem` to **moon.png**.
 
@@ -135,4 +135,4 @@ The flyout items are at the very top of the flyout menu making them difficult to
     </Shell.FlyoutHeader>
     ```
 
-    :::image type="content" source="../media/3-flyout-with-moon.png" alt-text="Screenshot of the app running with the floyout open, this time there is a header on the flyout with a icon of the moon.":::
+    :::image type="content" source="../media/3-flyout-with-moon.png" alt-text="Screenshot of the app running with the flyout open, this time there is a header on the flyout with an icon of the moon.":::

@@ -23,7 +23,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
 ## Add a route for the details page
 
-1. To navigate to the **AstronomicalBodyPage**, a route needs to be setup. You can do this in the constructor of the **AppShell** class:
+1. To navigate to the **AstronomicalBodyPage**, a route needs to be set up. You can do this in the constructor of the **AppShell** class:
 
     ```csharp
     public AppShell()
@@ -80,7 +80,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
     Here the `UpdateAstroBodyUI(astroName)` is a helper function used to update the user interface immediately when the `AstroName` property is set.
 
-1. Then you need to decorate the class with a annotation that maps the incoming query parameter the property you just created.
+1. Then you need to decorate the class with an annotation that maps the incoming query parameter the property you just created.
 
     ```csharp
     [QueryProperty(nameof(AstroName), "astroname")]

@@ -48,7 +48,7 @@ You can create a `TabBar` instance as a child of the `Shell` class. Add `Tab` ob
 
 A flyout item can open up a page with a tab bar that displays one or more tabs.
 
-To do this is relatively straightforward. Within the `<FlyoutItem>` add multiple `<ShellContent>` items for each tab you want displayed.
+To implement this is relatively straightforward. Within the `<FlyoutItem>` add multiple `<ShellContent>` items for each tab you want displayed.
 
 Set the `Title` and `Icon` on the `<ShellContent>` to control the tab's title and icon.
 
