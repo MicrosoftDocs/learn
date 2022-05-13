@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.machine-learning.machine-learning-with-r
 metadata:
-  title: Machine learning with R
+  title: Create machine learning models with R and tidymodels
   description: Learn how to explore and analyze data by using R. Get and introduction to regression models, classification models, and clustering models by using tidymodels and R.
   ms.date: 05/10/2022
   author: softchris
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
-title: Machine learning with R
+title: Create machine learning models with R and tidymodels
 summary: |
   Learn how to explore and analyze data by using R. Get and introduction to regression models, classification models, and clustering models by using tidymodels and R.
 
@@ -18,11 +18,11 @@ summary: |
   - Common data exploration and analysis tasks 
   - How to use R packages like ggplot2, dplyr and tidyr to turn raw data into understanding, insight and knowledge 
   - When to use regression models
-  - How to train and evaluate regression models using the Tidymodels framework
+  - How to train and evaluate regression models using the tidymodels framework
   - When to use classification models
-  - How to train and evaluate a classification model using the Tidymodels framework
+  - How to train and evaluate a classification model using the tidymodels framework
   - When to use clustering models
-  - How to train and evaluate clustering models using the Tidymodels framework
+  - How to train and evaluate clustering models using the tidymodels framework
 
 prerequisites: |
   - Knowledge of basic mathematics
