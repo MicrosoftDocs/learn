@@ -63,7 +63,7 @@ HttpClient client = new HttpClient();
 string text = await client.GetStringAsync("https://...");
 ```
 
-The `GetStringAsync` method takes a URI that references the resource, and returns a response as a string. The string response is the resource the app requested. The format of the response data will be the default for the requested service, such as JSON or XML. An app can tell the web service that it requires the data to be returned in a specific format by adding the `MediaTypeWithQualityHeaderValue` header. For example, if the app requests that data is sent back in JSON format, it can use he following code:
+The `GetStringAsync` method takes a URI that references the resource, and returns a response as a string. The string response is the resource the app requested. The format of the response data will be the default for the requested service, such as JSON or XML. An app can tell the web service that it requires the data to be returned in a specific format by adding the `MediaTypeWithQualityHeaderValue` header. For example, if the app requests that data is sent back in JSON format, it can use the following code:
 
 ```csharp
 HttpClient client = new HttpClient();

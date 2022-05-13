@@ -10,18 +10,14 @@ You'll perform this exercise using the Azure sandbox.
 
 1. In the Cloud Shell window, run the following command to clone the repo containing the code for this exercise, including the Parts REST web service:
 
-    > [!NOTE]
-    > All of the git repositories will be updated once they are able to be put into the office samples repo closer to the launch date of .NET MAUI.
-    >
-
     ```bash
-    git clone https://github.com/JohnPWSharp/maui-modules
+    git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
-1. Move to the **maui-modules/Consume-REST-services** folder:
+1. Move to the **Consume-REST-services** folder
 
     ```bash
-    cd maui-modules/Consume-REST-services
+    cd mslearn-dotnetmaui-consume-rest-services/Consume-REST-services/src
     ```
 
 1. Run the command shown to deploy the Parts web service using the Azure Cloud Shell sandbox. This command makes the service available through a unique URL. Make a note of this URL when it's displayed. You'll configure the app to connect to the web service using this URL.
@@ -35,10 +31,10 @@ You'll perform this exercise using the Azure sandbox.
 > [!NOTE]
 > You'll perform the remainder of this exercise on your local development computer.
 
-1. On your desktop computer, open a command prompt window and clone the repository for this exercise. The code is in the [net-maui-learn-consume-rest-services](https://github.com/ADD-REPO-URL-HERE) repository.
+1. On your desktop computer, open a command prompt window and clone the repository for this exercise. The code is in the [net-maui-learn-consume-rest-services](https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services) repository.
 
     ```bash
-    git clone https://github.com/JohnPWSharp/maui-modules
+    git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
 1. Move to the **webservice\PartsServer** folder in your clone of the repository, and open the **PartsServer.sln** solution using Visual Studio. This solution contains a copy of the code for the web service that you deployed to Azure in the previous procedure.
@@ -59,7 +55,7 @@ You'll perform this exercise using the Azure sandbox.
 
 ## Examine the code for the .NET MAUI client app
 
-1. In Visual Studio, close the **PartsServer** solution, and open the **PartsClient** solution under the **exercise1\start\PartsClient** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
+1. In Visual Studio, close the **PartsServer** solution, and open the **PartsClient** solution under the **src\client** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
 
 1. In the Solution Explorer window, expand the **Data** folder for the **PartsClient** project. This folder contains the code for two classes:
 

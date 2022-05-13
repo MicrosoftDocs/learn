@@ -16,11 +16,7 @@ In this example, the application developer informs the user that they don't have
 
 ## Detect network connectivity
 
-There are two ways to detect network connectivity in a .NET MAUI application:
-
-- You can use the platform-specific APIs. Each platform has unique APIs to detect and monitor changes to the device's network connectivity. This approach works, but because this code is specific to the platform, you must write code for each platform that you support.
-
-- You can use the .NET MAUI Essentials cross-platform library. This library includes the `Connectivity` class. This class exposes a property called `NetworkAccess` and an event named `ConnectivityChanged`. You can use these members to detect changes in the network.
+To check for network connectivity in a .NET MAUI app, use the `Connectivity` class. This class exposes a property called `NetworkAccess` and an event named `ConnectivityChanged`. You can use these members to detect changes in the network.
 
 The `NetworkAccess` property returns a value from the `NetworkAccess` enumeration. The enumeration has five values: `ConstrainedInternet`, `Internet`, `Local`, `None`, and `Unknown`. If the `NetworkAccess` property returns a value of `NetworkAccess.None`, then you know you don't have a connection to the Internet, and you shouldn't run networking code. This mechanism is portable across platforms. The following code shows an example:
 

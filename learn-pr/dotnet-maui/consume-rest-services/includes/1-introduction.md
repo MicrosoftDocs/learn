@@ -4,11 +4,6 @@ Imagine that you work as a developer for a power utilities company. You're creat
 
 In this module, you'll build a .NET MAUI application that consumes data from a REST web service. You'll start by determining if your device is connected to the Internet and only attempt to communicate with the web service if you have an active connection. Then you'll use **HttpClient** to perform basic CRUD operations on a hosted REST web service. Finally, you'll configure the native networking stacks on each device to implement secure communications between the app and the web service.
 
-> [!NOTE]
-> This module requires Visual Studio 2022. You can use either Windows or a Mac.
-> If you're running on Windows, make sure you have the .NET MAUI workloads installed in Visual Studio 2022. Refer to the documentation if you need to add it to your installation.
-> If you're running on a Mac, the standard Visual Studio for Mac installation includes everything you need to build apps with .NET MAUI. <!-- NEED TO CHECK WHETHER THIS WILL BE TRUE FOR GA OF VS AND .NET MAUI !-->
-
 ## Learning objectives
 
 In this module, you’ll learn how to:
