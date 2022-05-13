@@ -121,15 +121,15 @@ The **FontSize** has the type **Double**. To create a resource for this value, y
 
 ## Set platform-specific values for a resource
 
-It's common to need to adjust your app's UI slightly between platforms. The standard way to define the platform-specific values is by using an **OnPlatform** object when you define a resource. For example, the following code shows how to create a resource that references different text colors on iOS, Android, and Windows (UWP).
+It's common to need to adjust your app's UI slightly between platforms. The standard way to define the platform-specific values is by using an **OnPlatform** object when you define a resource. For example, the following code shows how to create a resource that references different text colors on iOS, Android, macOS (Mac Catalyst), and Windows (WinUI).
 
 ```XML
 <ContentPage.Resources>
-    <OnPlatform x:Key="textColor"
-                x:TypeArguments="Color">
+    <OnPlatform x:Key="textColor" x:TypeArguments="Color">
         <On Platform="iOS" Value="Silver" />
         <On Platform="Android" Value="Green" />
-        <On Platform="UWP" Value="Yellow" />
+        <On Platform="WinUI" Value="Yellow" />
+        <On Platform="MacCatalyst" Value="Pink" />
     </OnPlatform> 
 </ContentPage.Resources>
 ...
