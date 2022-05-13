@@ -10,7 +10,7 @@ To recap, a .NET MAUI project initially contains:
 
 - The **App.xaml** and **App.xaml.cs** files that provide UI resources and create the initial window for the application.
 
-- The **AppShell.xaml** and **AppShell.xaml.cs** files specify the initial page for the application. It also hansles the registration of page pages for navigation routing.
+- The **AppShell.xaml** and **AppShell.xaml.cs** files specify the initial page for the application. It also handles the registration of pages for navigation routing.
 
 - The **MainPage.xaml** and **MainPage.xaml.cs** file that define the layout and UI logic for the page displayed by default in the initial window.
 
