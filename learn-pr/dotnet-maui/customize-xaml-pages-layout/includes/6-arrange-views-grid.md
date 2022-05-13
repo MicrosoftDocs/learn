@@ -105,7 +105,7 @@ In XAML, you use the `*` symbol to represent star sizing. You combine the value 
 
 ### Grid collections
 
-After you have defined rows and columns by using `RowDefinition` and `ColumnDefinition`, you can to add them to a `Grid`. You use the `RowDefinitions` and `ColumnDefinitions` collection properties of the `Grid`. Populating these collections is most commonly done in XAML.
+After you have defined rows and columns by using `RowDefinition` and `ColumnDefinition`, you can add them to a `Grid`. You use the `RowDefinitions` and `ColumnDefinitions` collection properties of the `Grid`. Populating these collections is most commonly done in XAML.
 
 This example shows how to define four rows and add them to a `Grid` by using the `RowDefinitions` property:
 
