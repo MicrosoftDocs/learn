@@ -1,6 +1,6 @@
 In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
 
-The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It is possible that not all applications that an organization uses are in the galley. This module focuses on one that is.
+The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It is possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
 
 The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
 
@@ -44,7 +44,7 @@ When setting up single sign-on for an application, test the configuration betwee
 
 ## Assign the test user account to the application
 
-After the user account is created, the administrator assigns it to the application that was added from the gallery.
+After the user account is created, assign it to the application that was added from the gallery.
 
 1. On the application overview pane, under **Getting Started**, select **Assign users and groups**. Alternatively, in the left menu, under **Manage**, select **Users and groups**.
 1. On the **Users and groups** pane, on the menu, select **+Add user/group**.

@@ -32,8 +32,8 @@ For the Azure AD SAML Toolkit application, the raw formatted certificate is need
 
 Depending on the application, a combination of some or all of the following values are needed:
 
-- **Login URL** - The URL that is used to sign in to the application at the identity provider.
-- **Azure AD Identifier** - The identifier of the application at the identity provider.
-- **Logout URL** - The URL that is used to sign out of the application.
+- **Login URL** - The URL that is used to sign in to the application at the identity provider
+- **Azure AD Identifier** - The identifier of the application at the identity provider
+- **Logout URL** - The URL that is used to sign out of the application
 
 For the **Azure AD SAML Toolkit** application, all three of these values are needed.

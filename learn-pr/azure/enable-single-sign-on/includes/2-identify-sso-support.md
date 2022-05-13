@@ -18,9 +18,7 @@ The following filters can be used when searching for the application in the gall
 
 Make sure to understand the single sign-on types and the flows that the application supports. Single sign-on types define the protocol that can be used for single sign-on with the application. An application may support one or more of the available types. Single sign-on flows represent the way that single sign-on is processed between the identity provider and the service provider.
 
-When looking at applications in the search list, identify federated single sign-on support by looking for the **Federated SSO** icon. The specific single sign-on types that the application supports are listed on its overview pane in the gallery.
-
-When preparing to add an application, access the integration documentation for it to identify the supported single sign-on flows and any particular single sign-on requirements.
+When looking at applications in the search list, identify federated single sign-on support by looking for the **Federated SSO** icon. The specific single sign-on types that the application supports are listed on its overview pane in the gallery. When preparing to add an application, access the integration documentation for it to identify the supported single sign-on flows and any particular single sign-on requirements.
 
 ## Single sign-on testing
 
