@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.use-tabbed-pages-with-navigation-pages
+title: Use tabbed pages with pages on the navigation stack
+metadata:
+  unitType: learning-content
+  title: "Use tabbed pages with pages on the navigation stack"
+  description: "Integrate tabbed pages with navigation pages on the navigation stack"
+  ms.date: 05/02/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 5 
+content: |
+  [!include[](includes/6-use-tabbed-pages-with-navigation-pages.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do you send data to a page when using .NET MAUI Shell route-based navigation?"
+    choices:
+    - content: "Pass the data into the constructor of the target page."
+      isCorrect: false
+      explanation: "When using route-based navigation, you won't invoke the constructor of the target page manually."
+    - content: "Instantiate the page, then set page-level properties."
+      isCorrect: false
+      explanation: "When using route-based navigation, you won't have to instantiate the page manually."
+    - content: "Use a query string syntax. A key/value pair can be sent."
+      isCorrect: true
+      explanation: "Correct. By using a query string syntax, data can be sent between pages."
