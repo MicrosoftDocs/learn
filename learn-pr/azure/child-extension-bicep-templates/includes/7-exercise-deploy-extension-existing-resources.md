@@ -175,6 +175,10 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/7-cosmos-db-search.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the search field with 'Diagnostic settings' entered and the 'Diagnostic settings' menu item highlighted." border="true":::
 
+1. The Azure portal might prompt you to enable full-text query support for logging. You don't need it for this exercise, so select **Not now**.
+
+   :::image type="content" source="../media/7-cosmos-db-enable-full-text-query.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the 'Diagnostic settings' page with a prompt to enable full-text query." border="true":::
+
 1. Notice that there is a diagnostic setting named **route-logs-to-log-analytics**, which is configured to route the logs to the **ToyLogs** workspace.
 
     :::image type="content" source="../media/7-cosmos-db-diagnostic-settings.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the diagnostic settings." border="true":::
