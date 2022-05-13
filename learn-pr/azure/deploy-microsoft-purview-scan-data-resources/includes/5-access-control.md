@@ -1,7 +1,8 @@
 # Access Control
 
-At the core of Microsoft Purview, the data map keeps an up-to-date map of your data assets (tables, files, ect...) and their metadata. To build this data map, you'll register and scan data sources into this map. In an organization there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
+As Fabrikam's usage of Microsoft Purview expands, it will become increasingly important that assets are logically grouped to aid data management and discovery, as well as ensuring user of the Microsoft Purview service have the right level of access to perform tasks such as curating and enriching the data catalog.
 
+At the core of Microsoft Purview, the data map keeps an up-to-date map of your data assets (tables, files, ect...) and their metadata. To build this data map, you'll register and scan data sources into this map. In an organization there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
 
 ## Collections
 
