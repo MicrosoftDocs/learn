@@ -32,6 +32,8 @@ products:
 - azure
 - azure-kubernetes-service
 - azure-container-registry
+subjects:
+- container
 units:
 - learn.aks-workshop.01-introduction
 - learn.aks-workshop.02-deploy-aks

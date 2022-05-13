@@ -33,6 +33,9 @@ products:
 - azure
 - azure-cache-redis
 - azure-cloud-shell
+subjects:
+- development-tools
+- cache
 units:
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache.1-introduction
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache.2-transactions-in-redis

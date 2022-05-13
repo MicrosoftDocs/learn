@@ -27,6 +27,8 @@ products:
 - azure-security-center
 - dynamics-365
 - dynamics-customer-service
+subjects:
+- devops
 units:
 - learn.wwl.introduction-microsoft-learn-educators-program.introduction
 - learn.wwl.introduction-microsoft-learn-educators-program.what-microsoft-learn-educators-why-join

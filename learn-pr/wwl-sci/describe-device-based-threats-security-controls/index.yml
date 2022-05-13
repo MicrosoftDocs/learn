@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- threat-protection
 units:
 - learn.wwl.describe-device-based-threats-security-controls.introduction
 - learn.wwl.describe-device-based-threats-security-controls.describe-what-your-device-knows-about-you

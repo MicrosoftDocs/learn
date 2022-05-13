@@ -32,6 +32,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
 units:
 - learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub.introduction
 - learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub.azure-app-service-overview

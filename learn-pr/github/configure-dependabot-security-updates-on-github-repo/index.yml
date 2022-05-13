@@ -32,6 +32,8 @@ roles:
 - developer 
 products:
 - github 
+subjects:
+- security
 units:
 - learn.configure-dependabot-security-updates-on-github-repo.introduction
 - learn.configure-dependabot-security-updates-on-github-repo.manage-your-dependencies-github

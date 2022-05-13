@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- architecture
 units:
 - learn.wwl.design-azure-virtual-desktop-architecture.introduction
 - learn.wwl.design-azure-virtual-desktop-architecture.assess-network-capacity-speed-requirements-for

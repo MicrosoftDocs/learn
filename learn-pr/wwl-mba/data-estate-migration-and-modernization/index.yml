@@ -25,6 +25,9 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- data-management
+- migration
 units:
 - learn-wwl.data-estate-migration-and-modernization.1-introduction-to-microsoft-data-estate-migration-and-modernization
 - learn-wwl.data-estate-migration-and-modernization.2-data-modernization

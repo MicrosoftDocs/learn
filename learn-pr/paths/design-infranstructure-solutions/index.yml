@@ -21,6 +21,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.design-compute-solution
 - learn.wwl.design-application-architecture

@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.enable-external-access-with-b2c.1-introduction
 - learn.enable-external-access-with-b2c.2-b2c-overview

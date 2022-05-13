@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.construct-kql-statements.introduction
 - learn.wwl.construct-kql-statements.understand-kql-statement-structure

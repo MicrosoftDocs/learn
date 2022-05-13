@@ -24,6 +24,9 @@ roles:
   - developer
 products:
   - azure-cosmos-db  
+subjects:
+- cloud-computing
+- database
 units:
   - learn.azure.intro-to-azure-cosmos-db-core-api.1-introduction
   - learn.azure.intro-to-azure-cosmos-db-core-api.2-what-is-cosmos-db-core-api

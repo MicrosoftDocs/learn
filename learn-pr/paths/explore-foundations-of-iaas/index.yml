@@ -20,6 +20,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.explore-azure-compute
 - learn.wwl.explore-azure-networking

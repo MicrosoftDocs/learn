@@ -28,6 +28,8 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-if-else-expressions.0-introduction
 - learn.language.rust-if-else-expressions.1-arrays

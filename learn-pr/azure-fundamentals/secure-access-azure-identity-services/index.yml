@@ -32,6 +32,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.azure.secure-access-azure-identity-services.1-introduction
 - learn.azure.secure-access-azure-identity-services.2-compare-authentication-authorization

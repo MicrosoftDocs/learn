@@ -30,6 +30,10 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- threat-protection
+- device-management
+- compliance
 units:
 - learn.wwl.hardening-windows-server.introduction
 - learn.wwl.hardening-windows-server.describe-local-password-administrator-solution

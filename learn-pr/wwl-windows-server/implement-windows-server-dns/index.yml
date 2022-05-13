@@ -32,6 +32,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
+- infrastructure
 units:
 - learn.wwl.implement-windows-server-dns.introduction
 - learn.wwl.implement-windows-server-dns.explore-dns-architecture

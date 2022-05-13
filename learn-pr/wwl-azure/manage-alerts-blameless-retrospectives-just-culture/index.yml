@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
 units:
 - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.introduction
 - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification

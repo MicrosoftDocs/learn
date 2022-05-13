@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 modules:
 - learn.wwl.explore-relational-data-offerings
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure

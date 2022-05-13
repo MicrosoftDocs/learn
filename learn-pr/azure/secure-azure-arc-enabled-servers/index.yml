@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- security
 units:
 - learn.azure.secure-azure-arc-enabled-servers.introduction
 - learn.azure.secure-azure-arc-enabled-servers.assess-secure-defend-azure-arc-enabled-servers-with-microsoft-defender-for-cloud

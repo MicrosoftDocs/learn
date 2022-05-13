@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - azure-custom-vision
+subjects:
+- classification-analysis
 units:
 - learn.student-evangelism.train-custom-vision-ai.1-introduction
 - learn.student-evangelism.train-custom-vision-ai.2-bungee-on-the-moon

@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- data-modeling
 units:
 - learn.wwl.create-deploy-azure-resource-manager-templates.introduction
 - learn.wwl.create-deploy-azure-resource-manager-templates.explore

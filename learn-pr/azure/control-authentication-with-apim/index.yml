@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-api-management
+subjects:
+- identity-access
 units:
 - learn.control-authentication-with-apim.1-introduction
 - learn.control-authentication-with-apim.understand-apim

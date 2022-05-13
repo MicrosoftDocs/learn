@@ -31,6 +31,8 @@ roles:
 - solution-architect
 products:
 - github
+subjects:
+- devops
 units:
 - learn.github-administration-for-enterprise-support-adoption.introduction
 - learn.github-administration-for-enterprise-support-adoption.github-enterprise-tools-features

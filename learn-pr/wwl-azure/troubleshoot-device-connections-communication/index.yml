@@ -27,6 +27,8 @@ products:
 - azure
 - azure-iot-hub
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.troubleshoot-device-connections-communication.introduction
 - learn.wwl.troubleshoot-device-connections-communication.examine-device-connection-best-practices

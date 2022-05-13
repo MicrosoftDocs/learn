@@ -1,9 +1,11 @@
-Using familiar T-SQL concepts like databases, external tables, and views you can easily create a virtual SQL layer over the data in the lake. This will enable any client that can connect to serverless SQL pool to interact with data residing in the data lake, without a need to move or ingest the data.  
+A lake database can provide the benefits of a relational schema and query interface with the flexibility of file storage in a data lake.
 
-Now that you have completed this lesson, you have learned how to:
+In this module, you learned how to:
 
-- Create databases in Azure Synapse serverless SQL pools
-- Create and manage credentials in Azure Synapse serverless SQL pools
-- Create external data sources in Azure Synapse serverless SQL pools
-- Create external tables in Azure Synapse serverless SQL pools
-- Create views in Azure Synapse serverless SQL pools
+- Understand lake database concepts and components
+- Describe database templates in Azure Synapse Analytics
+- Create a lake database
+
+## Learn more
+
+To learn more about lake databases, refer to the [Azure Synapse Analytics documentation](/azure/synapse-analytics/database-designer/concepts-lake-database?azure-portal=true).

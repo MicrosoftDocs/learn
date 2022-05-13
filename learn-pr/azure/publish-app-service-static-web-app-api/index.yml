@@ -29,6 +29,9 @@ products:
   - azure
   - azure-app-service
   - azure-app-service-static
+subjects:
+- cloud-computing
+- data-engineering
 units:
   - learn.azure.publish-static-web-app-and-api.1-introduction
   - learn.azure.publish-static-web-app-and-api.2-exercise-get-started

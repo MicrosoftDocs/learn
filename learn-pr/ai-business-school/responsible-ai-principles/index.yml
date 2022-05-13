@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.responsible-ai-guiding-principles.introduction
 - learn-wwl.responsible-ai-guiding-principles.implications-responsible-ai-leadership
 - learn-wwl.responsible-ai-guiding-principles.implications-responsible-ai-practical

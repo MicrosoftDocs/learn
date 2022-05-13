@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - github
+subjects:
+- devops
 units:
 - learn.github.github-introduction-products.introduction
 - learn.github.github-introduction-products.what-are-github-products

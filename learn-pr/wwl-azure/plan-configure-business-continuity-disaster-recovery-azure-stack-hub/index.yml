@@ -33,6 +33,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- business-continuity
 units:
 - learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.introduction
 - learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.recommend-bcdr-strategy

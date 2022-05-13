@@ -31,6 +31,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 units:
 - learn.wwl.manage-azure-stack-hub-marketplace.introduction
 - learn.wwl.manage-azure-stack-hub-marketplace.overview-of

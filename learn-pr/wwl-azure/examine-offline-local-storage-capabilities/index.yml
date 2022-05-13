@@ -32,6 +32,10 @@ products:
 - azure-iot-edge
 - azure-iot-hub
 - azure-portal
+subjects:
+- cloud-computing
+- storage
+- iot
 units:
 - learn.wwl.examine-offline-local-storage-capabilities.introduction
 - learn.wwl.examine-offline-local-storage-capabilities.examine-extended-offline-capabilities

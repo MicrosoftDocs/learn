@@ -30,6 +30,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-clis
+subjects:
+- virtual-machine
 units:
 - learn.manage-vms-with-azure-cli-data.1-what-is-the-cli
 - learn.manage-vms-with-azure-cli-data.2-create-a-vm

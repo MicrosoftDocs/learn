@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- identity-access
 units:
 - learn.wwl.integrate-identity-management-systems.introduction
 - learn.wwl.integrate-identity-management-systems.integrate-github-single-sign-sso

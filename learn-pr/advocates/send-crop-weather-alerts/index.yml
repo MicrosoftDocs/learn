@@ -32,6 +32,8 @@ prerequisites: |
   - Basic familiarity with Azure Functions.
   - Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](/learn/modules/create-serverless-logic-with-azure-functions/).
 
+subjects:
+- communication
 units:
 - learn.advocates.send-crop-weather-alerts.1-introduction
 - learn.advocates.send-crop-weather-alerts.2-application-architecture

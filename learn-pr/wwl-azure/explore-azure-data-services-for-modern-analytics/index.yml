@@ -24,6 +24,10 @@ products:
 - azure
 - azure-synapse-analytics
 - power-bi
+subjects:
+- data-warehousing
+- data-modeling
+- data-lake
 units:
 - learn.wwl.explore-azure-data-services-for-modern-analytics.introduction
 - learn.wwl.explore-azure-data-services-for-modern-analytics.understand-azure-data-ecosystem

@@ -33,6 +33,8 @@ products:
 - azure-cognitive-services
 - azure-computer-vision
 - azure-face
+subjects:
+- classification-analysis
 units:
 - learn.wwl.detect-analyze-recognize-faces.introduction
 - learn.wwl.detect-analyze-recognize-faces.identify-options-for-face-detection-analysis-identification

@@ -38,7 +38,9 @@ prerequisites: |
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- virtual-machine
+units:
 
 - learn.azure.azure-cloud-services-tutorials-mrtk.1-introduction
 - learn.azure.azure-cloud-services-tutorials-mrtk.2-azure-cloud-services-for-hololens-2

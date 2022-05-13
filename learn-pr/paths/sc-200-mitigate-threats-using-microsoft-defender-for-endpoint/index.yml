@@ -22,6 +22,8 @@ roles:
 - security-operations-analyst
 products:
 - windows
+subjects:
+- threat-protection
 modules:
 - learn-m365.m365-security-threat-protect
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment

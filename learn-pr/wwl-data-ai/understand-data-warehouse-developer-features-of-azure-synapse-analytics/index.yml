@@ -27,6 +27,10 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
+- data-analytics
+- data-lake
 units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.introduction
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.explore-development-tools-for

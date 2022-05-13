@@ -24,6 +24,8 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn-wwl.introduction-to-azure-solutions.1-introduction
 - learn-wwl.introduction-to-azure-solutions.2-enabling-digital-transformation-with-azure

@@ -27,6 +27,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.automate-azure-virtual-desktop-management-tasks.introduction
 - learn.wwl.automate-azure-virtual-desktop-management-tasks.scale-session-hosts-using-azure-automation

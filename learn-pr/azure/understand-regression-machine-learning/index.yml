@@ -27,7 +27,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- machine-learning
+units:
 - learn.machinelearning.understand-regression-machine-learning.introduction
 - learn.machinelearning.understand-regression-machine-learning.what-is-regression
 - learn.machinelearning.understand-regression-machine-learning.exercise-train-linear-regression

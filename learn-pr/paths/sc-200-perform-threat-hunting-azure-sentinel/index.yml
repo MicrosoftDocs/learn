@@ -22,6 +22,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 modules:
 - learn.wwl.what-is-threat-hunting-azure-sentinel
 - learn.azure.hunt-threats-sentinel

@@ -27,6 +27,8 @@ roles:
   - student
 products: 
   - vs-code
+subjects:
+- development-tools
 units:
 - learn.beginner-python.functions-python.introduction
 - learn.beginner-python.functions-python.function-basics

@@ -35,6 +35,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 modules:
 - learn.github.introduction-to-github
 - learn.github.github-actions-automate-tasks
