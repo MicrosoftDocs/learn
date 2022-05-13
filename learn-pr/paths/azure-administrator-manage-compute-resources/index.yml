@@ -74,6 +74,8 @@ products:
 - azure-container-instances
 - azure-container-registry
 - azure-kubernetes-service
+subjects:
+- data-engineering
 modules:
 - learn.create-linux-vm-in-azure
 - learn.create-a-windows-vm-in-azure

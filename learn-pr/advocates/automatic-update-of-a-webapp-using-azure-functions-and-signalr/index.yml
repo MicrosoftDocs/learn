@@ -28,6 +28,9 @@ products:
 - azure-storage
 - azure-functions
 - azure-cosmos-db
+subjects:
+- cloud-computing
+- data-engineering
 units:
 - learn.advocates.azure-functions-and-signalr.1-introduction
 - learn.advocates.azure-functions-and-signalr.2-analyze-limitations-of-polling-in-a-web-app

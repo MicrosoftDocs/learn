@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.improve-reliability-failure.1-introduction
 - learn.improve-reliability-failure.2-rationale

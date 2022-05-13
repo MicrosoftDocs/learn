@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products:
 - azure-vmware-solution
+subjects:
+- cloud-computing
+- virtual-machine
 units:
 - learn.azure.intro-azure-vmware-solution.introduction
 - learn.azure.intro-azure-vmware-solution.what-is-azure-vmware-solution

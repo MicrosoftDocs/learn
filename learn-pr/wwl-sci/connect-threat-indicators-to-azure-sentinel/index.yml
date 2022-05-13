@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- security
 units:
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.introduction
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.plan-for-threat-intelligence-connectors

@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.describe-identity-principles-concepts.introduction
 - learn.wwl.describe-identity-principles-concepts.define-authentication-and-authorization

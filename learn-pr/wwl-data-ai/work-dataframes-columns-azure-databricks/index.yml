@@ -25,6 +25,9 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-management
+- process-workflow
 units:
 - learn.wwl.work-dataframes-columns-azure-databricks.introduction
 - learn.wwl.work-dataframes-columns-azure-databricks.describe-column-class

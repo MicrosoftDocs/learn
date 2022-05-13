@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- security
 units:
 - learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.introduction
 - learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.plan-for-connector

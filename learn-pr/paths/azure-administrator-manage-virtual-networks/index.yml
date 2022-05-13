@@ -79,6 +79,8 @@ products:
 - azure-bastion
 - azure-firewall
 - azure-virtual-desktop
+subjects:
+- networking
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.design-ip-addressing-for-azure

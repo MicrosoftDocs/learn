@@ -27,6 +27,9 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- virtual-machine
+- machine-learning
 units:
 - learn.nvidia.deploy-model-nvidia-triton-inference-server.introduction
 - learn.nvidia.deploy-model-nvidia-triton-inference-server.create-gpu-accelerated-virtual-machine

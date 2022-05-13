@@ -28,6 +28,10 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- cloud-computing
+- devops
+- collaboration
 units:
 - learn.azdo.manage-delivery-plans.1-introduction
 - learn.azdo.manage-delivery-plans.2-what-are-delivery-plans

@@ -26,6 +26,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- serverless-compute
 units:
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.introduction
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.lake-database

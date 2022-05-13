@@ -21,6 +21,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-nodejs
 - learn.azure.create-nodejs-project-dependencies

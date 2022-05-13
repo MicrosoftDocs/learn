@@ -26,6 +26,9 @@ products:
 - azure-vpn-gateway
 - azure-application-gateway
 - azure-traffic-manager
+subjects:
+- networking
+- architecture
 modules:
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.connect-on-premises-network-with-expressroute

@@ -35,6 +35,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.maintain-secure-repository-github.1-introduction
 - learn.github.maintain-secure-repository-github.2-how-to-maintain-secure-repository

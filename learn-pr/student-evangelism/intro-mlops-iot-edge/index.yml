@@ -29,6 +29,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- iot
 units:
 - learn.oxford.intro-mlops-iot-edge.introduction
 - learn.oxford.intro-mlops-iot-edge.what-mlops-iot-edge

@@ -38,6 +38,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- classification-analysis
+- networking
 units:
 - learn.oxford.image-classification-azure-sphere.introduction
 - learn.oxford.image-classification-azure-sphere.design-image-classification-model

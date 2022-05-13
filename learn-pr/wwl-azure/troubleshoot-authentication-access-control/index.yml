@@ -30,6 +30,9 @@ products:
 - azure
 - azure-active-directory
 - azure-active-directory-domain
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.wwl.troubleshoot-authentication-access-control.introduction
 - learn.wwl.troubleshoot-authentication-access-control.troubleshoot-azure-ad-authentication

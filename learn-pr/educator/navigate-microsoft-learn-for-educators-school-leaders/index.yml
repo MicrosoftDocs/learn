@@ -36,6 +36,8 @@ roles:
   - school-leader
 products:
 - m365	
+subjects:
+- modern-work
 units:
 - learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
 - learn.navigate-microsoft-learn-for-educators-school-leaders.find-educator-content-in-learn

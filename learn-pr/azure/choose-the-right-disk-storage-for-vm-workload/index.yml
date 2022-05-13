@@ -30,6 +30,9 @@ products:
 - azure
 - azure-virtual-machines
 - azure-disk-storage
+subjects:
+- virtual-machine
+- storage
 units:
 - learn.choose-the-right-disk-storage-for-vm-workload.1-introduction
 - learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-local-disk-storage

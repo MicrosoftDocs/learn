@@ -30,6 +30,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.prepare-to-develop-ai-solutions-azure.introduction
 - learn.wwl.prepare-to-develop-ai-solutions-azure.define-artificial-intelligence

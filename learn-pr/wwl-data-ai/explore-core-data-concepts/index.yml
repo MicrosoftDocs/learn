@@ -32,6 +32,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-management
 units:
 - learn.wwl.explore-core-data-concepts.introduction
 - learn.wwl.explore-core-data-concepts.identify-data-formats

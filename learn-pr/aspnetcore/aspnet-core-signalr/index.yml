@@ -26,6 +26,8 @@ roles:
 products:
   - aspnet-core
   - dotnet
+subjects:
+- data-engineering
 units:
 - learn.aspnet-core-signalr.introduction
 - learn.aspnet-core-signalr.what-is-signalr

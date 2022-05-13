@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- infrastructure
 units:
 - learn.wwl.create-azure-resources-by-using-azure-cli.introduction
 - learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli

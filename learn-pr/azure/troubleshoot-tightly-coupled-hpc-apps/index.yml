@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.azure.troubleshoot-tightly-coupled-hpc-apps.1-introduction
 - learn.azure.troubleshoot-tightly-coupled-hpc-apps.2-hpc-vm-health-checks

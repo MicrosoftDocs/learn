@@ -36,6 +36,8 @@ products:
   - azure-stack-hci
   - azure-stack-hub
   - azure-stack-edge
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-azure-stack
 - learn.azure.azure-stack-hci-technologies

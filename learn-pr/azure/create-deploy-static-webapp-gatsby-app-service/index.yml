@@ -31,6 +31,8 @@ prerequisites: |
   - Beginner-level experience building applications with Gatsby
   - Experience using the command line, including Git operations
   - A GitHub account
+subjects:
+- cloud-computing
 units:
 - learn.static-apps-gatsby.1-introduction
 - learn.static-apps-gatsby.2-create-app

@@ -30,6 +30,8 @@ roles:
 products:
 - azure-backup
 - azure-site-recovery
+subjects:
+- business-continuity
 units:
 - learn.wwl.design-solution-for-backup-disaster-recovery.introduction
 - learn.wwl.design-solution-for-backup-disaster-recovery.design-recovery

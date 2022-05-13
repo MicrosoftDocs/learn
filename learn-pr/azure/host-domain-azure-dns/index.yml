@@ -23,6 +23,9 @@ roles:
 products:
 - azure
 - azure-dns
+subjects:
+- cloud-computing
+- networking
 units:
 - learn.azure.host-domain-azure-dns.introduction
 - learn.azure.host-domain-azure-dns.what-is-azure-dns

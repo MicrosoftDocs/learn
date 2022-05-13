@@ -31,6 +31,9 @@ products:
 - azure-container-registry
 - azure-kubernetes-service
 
+subjects:
+- development-tools
+- container
 units:
 - learn.containerize-deploy-java-app-aks.introduction
 - learn.containerize-deploy-java-app-aks.setup

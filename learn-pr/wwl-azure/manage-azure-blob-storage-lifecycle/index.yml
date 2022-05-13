@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-blob-storage
+subjects:
+- storage
 units:
 - learn.wwl.manage-azure-blob-storage-lifecycle.introduction
 - learn.wwl.manage-azure-blob-storage-lifecycle.explore

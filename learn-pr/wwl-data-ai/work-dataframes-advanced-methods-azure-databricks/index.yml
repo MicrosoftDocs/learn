@@ -24,6 +24,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.work-dataframes-advanced-methods-azure-databricks.introduction
 - learn.wwl.work-dataframes-advanced-methods-azure-databricks.perform-date-time-manipulation

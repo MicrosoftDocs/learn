@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-policy
+subjects:
+- cloud-security
 units:
 - learn.intro-to-azure-policy.introduction
 - learn.intro-to-azure-policy.what-is-azure-policy

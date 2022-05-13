@@ -24,6 +24,10 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-analytics
+- serverless-compute
+- security
 units:
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.introduction
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.choose-authentication-method

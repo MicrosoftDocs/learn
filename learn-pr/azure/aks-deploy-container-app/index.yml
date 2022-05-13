@@ -33,6 +33,9 @@ products:
   - azure
   - azure-kubernetes-service
   - azure-container-registry
+subjects:
+- container
+- data-engineering
 units:
   - learn.aks-deploy-container-app.1-introduction
   - learn.aks-deploy-container-app.2-create-aks-cluster

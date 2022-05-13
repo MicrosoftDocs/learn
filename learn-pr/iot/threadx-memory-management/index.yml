@@ -30,6 +30,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- cache
 units:
 - learn.iot.threadx-memory-management.introduction
 - learn.iot.threadx-memory-management.threadx-overview
@@ -38,4 +40,4 @@ units:
 - learn.iot.threadx-memory-management.knowledge-check
 - learn.iot.threadx-memory-management.summary
 badge:
-  uid: learn.iot.threadx-memory-management.badge 
+  uid: learn.iot.threadx-memory-management.badge

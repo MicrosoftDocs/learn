@@ -31,6 +31,10 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- cloud-computing
+- data-engineering
+- database
 units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.introduction
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.implement-azure-policy

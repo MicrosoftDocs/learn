@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-computing
 units:
 - learn.azure.cna-set-up-apps-use-scale.1-introduction
 - learn.azure.cna-set-up-apps-use-scale.2-define-azure-ad

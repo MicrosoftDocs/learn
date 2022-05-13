@@ -32,6 +32,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-group-enrollment-tasks.introduction
 - learn.wwl.explore-group-enrollment-tasks.provision-deprovision-devices-using-group-enrollments

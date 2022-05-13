@@ -26,6 +26,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- communication
+- communication
 units:
 - learn.student-evangelism.exercise-your-emotional-intelligence.introduction
 - learn.student-evangelism.exercise-your-emotional-intelligence.concept-emotional-intelligence-technology

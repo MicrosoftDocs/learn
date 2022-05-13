@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- container
 units:
 - learn.wwl.orchestrate-containers-windows-server-using-kubernetes.introduction
 - learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-orchestration

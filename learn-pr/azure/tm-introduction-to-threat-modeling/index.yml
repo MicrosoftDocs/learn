@@ -31,6 +31,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.tm-introduction-to-threat-modeling.1-introduction
 - learn.tm-introduction-to-threat-modeling.1b-threat-modeling-phases

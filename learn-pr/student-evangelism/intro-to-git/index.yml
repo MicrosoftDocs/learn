@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - github
+subjects:
+- devops
 units:
 - learn.student-evangelism.introduction-to-git.0-introduction
 - learn.student-evangelism.introduction-to-git.1-what-is-vc

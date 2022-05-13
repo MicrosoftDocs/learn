@@ -38,7 +38,9 @@ products:
 - azure-sentinel
 - azure-advisor
 - azure-blueprints
-units: 
+subjects:
+- information-protection-governance
+units:
 - learn.azure.safeguard-data-sector.1-introduction
 - learn.azure.safeguard-data-sector.2-data-residency-sovereignty
 - learn.azure.safeguard-data-sector.3-encryption-key-management

@@ -31,6 +31,8 @@ roles:
 products:
 - azure-dns
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.introduction-to-azure-virtual-networks.introduction
 - learn.wwl.introduction-to-azure-virtual-networks.understand-azure-virtual-networks

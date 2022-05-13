@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- security
 units:
 - learn.wwl.secure-windows-server-dns.introduction
 - learn.wwl.secure-windows-server-dns.implement-split-horizon-dns

@@ -30,6 +30,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.apply-manage-sensitivity-labels.introduction
 - learn.wwl.apply-manage-sensitivity-labels.describe-role-lifecycle-of

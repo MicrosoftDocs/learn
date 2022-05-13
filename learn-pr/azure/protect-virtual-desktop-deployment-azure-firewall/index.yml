@@ -28,6 +28,8 @@ products:
 - azure
 - azure-firewall
 - azure-virtual-desktop
+subjects:
+- security
 units:
 - learn.protect-virtual-desktop-deployment-azure-firewall.introduction
 - learn.protect-virtual-desktop-deployment-azure-firewall.use-azure-firewall

@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- serverless-compute
 units:
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.introduction
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.why-use-azure-resource-manager-templates

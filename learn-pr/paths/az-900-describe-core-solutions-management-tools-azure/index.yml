@@ -91,6 +91,10 @@ products:
 - azure
 - azure-iot-hub
 - azure-iot-central
+subjects:
+- data-ai
+- infrastructure
+- digital-application-innovation
 modules:
 - learn.azure.iot-fundamentals
 - learn.azure.ai-machine-learning-fundamentals

@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.create-manage-azure-sentinel-workspaces.introduction
 - learn.wwl.create-manage-azure-sentinel-workspaces.plan-for-workspace

@@ -34,6 +34,9 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- cloud-computing
+- data-engineering
 units:
 - learn.azdo.run-functional-tests-azure-pipelines.1-introduction
 - learn.azdo.run-functional-tests-azure-pipelines.2-what-is-functional-testing
