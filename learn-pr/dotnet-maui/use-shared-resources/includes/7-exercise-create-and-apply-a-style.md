@@ -1,6 +1,6 @@
 In this exercise, you'll define and apply a page-level style in the Tip Calculator application.
 
-This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise3/start/TipCalculator** folder in the repository that you cloned in the first exercise.
+This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise3/TipCalculator** folder in the repository that you cloned in the first exercise.
 
 ## Define a style
 
