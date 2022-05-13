@@ -27,6 +27,8 @@ products:
 - azure
 - azure-database-mysql
 - azure-database-postgresql
+subjects:
+- database
 units:
 - learn.wwl.introduction-open-source-database-migration-azure.introduction
 - learn.wwl.introduction-open-source-database-migration-azure.mysql-postgresql-database-services-azure

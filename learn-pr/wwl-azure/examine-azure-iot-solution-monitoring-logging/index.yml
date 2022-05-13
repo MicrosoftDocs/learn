@@ -30,6 +30,9 @@ products:
 - azure-iot-hub
 - azure-monitor
 - azure-portal
+subjects:
+- iot
+- it-management-monitoring
 units:
 - learn.wwl.examine-azure-iot-solution-monitoring-logging.introduction
 - learn.wwl.examine-azure-iot-solution-monitoring-logging.monitor-support

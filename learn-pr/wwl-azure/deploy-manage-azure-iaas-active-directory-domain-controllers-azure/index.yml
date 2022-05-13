@@ -40,6 +40,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- data-engineering
 units:
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.introduction
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.select-option-implement-directory-identity-services

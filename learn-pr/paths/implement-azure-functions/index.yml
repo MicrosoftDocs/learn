@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-functions
+subjects:
+- serverless-compute
 modules:
 - learn.wwl.explore-azure-functions
 - learn.wwl.develop-azure-functions

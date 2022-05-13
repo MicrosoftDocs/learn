@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- remote-hybrid-work
 units:
 - learn.wwl.implement-remote-access.introduction
 - learn.wwl.implement-remote-access.examine-remote-access-options

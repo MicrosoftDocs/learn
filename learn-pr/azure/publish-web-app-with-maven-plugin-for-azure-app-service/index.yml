@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- development-tools
 units:
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.introduction
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.create-java-web-app

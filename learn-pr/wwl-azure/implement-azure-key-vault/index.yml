@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-key-vault
+subjects:
+- cloud-security
 units:
 - learn.wwl.implement-azure-key-vault.introduction
 - learn.wwl.implement-azure-key-vault.explore

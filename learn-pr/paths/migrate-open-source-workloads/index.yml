@@ -21,6 +21,10 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- migration
+- cloud-computing
+- cross-development
 modules:
 - learn.wwl.introduction-open-source-database-migration-azure
 - learn.wwl.migrate-premises-mysql-databases-azure-database-mysql

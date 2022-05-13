@@ -35,6 +35,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.introduction
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.understand-control-flow

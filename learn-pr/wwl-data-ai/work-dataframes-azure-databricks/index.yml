@@ -28,6 +28,10 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
+- data-lake
+- artificial-intelligence
 units:
 - learn.wwl.work-dataframes-azure-databricks.introduction
 - learn.wwl.work-dataframes-azure-databricks.describe-dataframe

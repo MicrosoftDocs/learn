@@ -26,6 +26,8 @@ products:
 - vs-code
 - azure-portal
 - azure-clis
+subjects:
+- data-management
 modules:
 - learn.create-cosmos-db-for-scale
 - learn.azure.choose-the-appropriate-api-for-cosmos-db-storage

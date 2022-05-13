@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.protect-identities-with-aad-idp.1-introduction
 - learn.protect-identities-with-aad-idp.2-azure-ad-idp-overview

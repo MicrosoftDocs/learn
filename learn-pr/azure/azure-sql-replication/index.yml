@@ -29,6 +29,8 @@ roles:
   - data-engineer
 products: 
 - azure-sql-database
+subjects:
+- database
 units:
 - learn.azure-sql-replication.introduction
 - learn.azure-sql-replication.track-data-changes-with-cdc

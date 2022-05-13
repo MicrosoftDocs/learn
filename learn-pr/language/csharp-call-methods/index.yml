@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-call-methods.introduction
 - learn.languages.csharp-call-methods.dotnet-class-library

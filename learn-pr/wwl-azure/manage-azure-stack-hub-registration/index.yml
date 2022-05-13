@@ -27,6 +27,8 @@ products:
 - azure
 - azure-stack
 - azure-storage
+subjects:
+- cloud-computing
 units:
 - learn.wwl.manage-azure-stack-hub-registration.introduction
 - learn.wwl.manage-azure-stack-hub-registration.register-connected-environment

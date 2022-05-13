@@ -27,6 +27,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-backup
+subjects:
+- virtual-machine
 units:
 - learn.protect-virtual-machines-with-azure-backup.1-introduction
 - learn.protect-virtual-machines-with-azure-backup.2-azure-backup-features-scenarios

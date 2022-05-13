@@ -37,6 +37,10 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- cloud-computing
+- virtual-machine
+- iot
 units:
 - learn.student-evangelism.altair-azure-sphere-introduction.introduction-altair
 - learn.student-evangelism.altair-azure-sphere-introduction.altair

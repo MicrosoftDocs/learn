@@ -28,6 +28,8 @@ products:
 - azure-custom-vision
 - azure-face
 - azure-video-indexer
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.analyze-images
 - learn.wwl.analyze-video

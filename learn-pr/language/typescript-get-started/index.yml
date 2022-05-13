@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.typescript-get-started.1-introduction
 - learn.language.typescript-get-started.2-typescript-overview
@@ -37,4 +39,4 @@ units:
 - learn.language.typescript-get-started.7-knowledge-check
 - learn.language.typescript-get-started.8-summary-resources
 badge:
-  uid: learn.language.typescript-get-started.badge 
+  uid: learn.language.typescript-get-started.badge

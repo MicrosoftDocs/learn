@@ -28,6 +28,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- compliance
+- networking
 units:
 - learn.wwl.implement-windows-server-auditing-diagnostics.introduction
 - learn.wwl.implement-windows-server-auditing-diagnostics.describe-basic-auditing-categories

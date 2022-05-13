@@ -33,6 +33,8 @@ roles:
 - support-engineer
 products:
 - windows
+subjects:
+- process-workflow
 units:
 - learn.wwl.explore-windows-package-manager-tool.introduction
 - learn.wwl.explore-windows-package-manager-tool.explain-purpose-of

@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.foster-ai-culture-finance.introduction
 - learn-wwl.foster-ai-culture-finance.finance-case-study-introduction
 - learn-wwl.foster-ai-culture-finance.finance-executive-qa

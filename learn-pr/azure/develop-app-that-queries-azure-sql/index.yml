@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sql-database
+subjects:
+- cloud-computing
 units:
 - learn.develop-app-that-queries-azure-sql.1-introduction
 - learn.develop-app-that-queries-azure-sql.2-create-tables-bulk-import-query-data

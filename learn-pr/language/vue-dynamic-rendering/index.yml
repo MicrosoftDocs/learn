@@ -32,6 +32,8 @@ roles:
 products:
 - azure-app-service-static
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.vue-dynamic-rendering.1-introduction
 - learn.language.vue-dynamic-rendering.2-render-lists

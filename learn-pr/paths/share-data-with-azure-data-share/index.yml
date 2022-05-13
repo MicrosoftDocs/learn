@@ -20,6 +20,8 @@ roles:
 - data-engineer
 products:
 - azure-data-share
+subjects:
+- data-ai
 modules:
 - learn.wwl.introduction-to-azure-data-share
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory

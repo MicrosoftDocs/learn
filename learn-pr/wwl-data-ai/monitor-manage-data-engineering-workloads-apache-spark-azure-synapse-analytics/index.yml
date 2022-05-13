@@ -30,6 +30,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-engineering
 units:
 - learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.introduction
 - learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.monitor-spark-pools-analytics

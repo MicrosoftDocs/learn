@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-monitor
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.azure-monitor.introduction
 - learn.wwl.azure-monitor.enable-azure-monitor

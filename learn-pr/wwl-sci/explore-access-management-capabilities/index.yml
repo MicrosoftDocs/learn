@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.introduction
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-conditional-access-its-benefits

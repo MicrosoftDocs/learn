@@ -40,6 +40,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-computing
+- devops
 units:
 - learn.wwl.manage-application-configuration-data.introduction
 - learn.wwl.manage-application-configuration-data.rethink-application-configuration-data

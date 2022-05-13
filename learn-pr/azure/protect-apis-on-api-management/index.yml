@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-api-management
+subjects:
+- cloud-computing
 units:
 - learn.protect-apis-on-api-management.1-introduction
 - learn.protect-apis-on-api-management.2-remove-technical-info

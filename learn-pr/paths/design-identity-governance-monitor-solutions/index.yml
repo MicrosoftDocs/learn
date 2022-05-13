@@ -21,6 +21,10 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- identity-access
+- compliance
+- security
 modules:
 - learn.wwl.design-governance
 - learn.wwl.design-authentication-authorization-solutions

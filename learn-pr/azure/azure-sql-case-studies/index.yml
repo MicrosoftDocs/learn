@@ -31,6 +31,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- cloud-computing
 units:
 - learn.azure-sql-case-studies.1-introduction
 - learn.azure-sql-case-studies.2-scenario-1

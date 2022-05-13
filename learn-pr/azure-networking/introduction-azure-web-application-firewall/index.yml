@@ -33,6 +33,9 @@ roles:
 - technology-manager
 products:
 - azure-web-application-firewall
+subjects:
+- cloud-computing
+- cloud-security
 units:
 - learn.introduction-azure-web-application-firewall.1-introduction
 - learn.introduction-azure-web-application-firewall.2-what-is-azure-web-application-firewall

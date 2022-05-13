@@ -31,6 +31,9 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- cloud-computing
+- architecture
 units:
   - learn.aks-application-autoscaling-native.1-introduction
   - learn.aks-application-autoscaling-native.2-concepts-scaling

@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.implement-shared-access-signatures.introduction
 - learn.wwl.implement-shared-access-signatures.discover

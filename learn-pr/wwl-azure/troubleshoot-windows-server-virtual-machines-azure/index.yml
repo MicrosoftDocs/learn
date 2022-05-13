@@ -33,6 +33,9 @@ products:
 - azure-bastion
 - azure-managed-disks
 - windows-server
+subjects:
+- virtual-machine
+- cloud-computing
 units:
 - learn.wwl.troubleshoot-windows-server-virtual-machines-azure.introduction
 - learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-deployment

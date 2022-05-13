@@ -29,6 +29,9 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- mixed-reality
+- machine-learning
 units:
 - learn.sports-machine-learning.mixed-reality-for-sports-fans.introduction
 - learn.sports-machine-learning.mixed-reality-for-sports-fans.mixed-reality-for-sports

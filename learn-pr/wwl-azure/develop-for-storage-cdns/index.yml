@@ -25,6 +25,9 @@ roles:
 - developer
 products:
 - azure-cdn
+subjects:
+- cache
+- cloud-computing
 units:
 - learn.wwl.develop-for-storage-cdns.introduction
 - learn.wwl.develop-for-storage-cdns.explore-azure-content-delivery-networks

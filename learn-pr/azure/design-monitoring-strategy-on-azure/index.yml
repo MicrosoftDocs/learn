@@ -29,6 +29,8 @@ products:
 - azure-sentinel
 - azure-security-center
 - azure-application-insights
+subjects:
+- it-management-monitoring
 units:
 - learn.design-monitoring-strategy-on-azure.1-introduction
 - learn.design-monitoring-strategy-on-azure.2-full-stack-monitoring

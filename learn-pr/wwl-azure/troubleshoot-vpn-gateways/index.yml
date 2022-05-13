@@ -31,6 +31,8 @@ products:
 - azure-virtual-network
 - azure-virtual-wan
 - azure-vpn-gateway
+subjects:
+- networking
 units:
 - learn.wwl.troubleshoot-vpn-gateways.introduction
 - learn.wwl.troubleshoot-vpn-gateways.troubleshoot-site-to-site

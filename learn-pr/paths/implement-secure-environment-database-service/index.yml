@@ -27,6 +27,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- security
 modules:
 - learn.wwl.configure-database-authentication-authorization
 - learn.wwl.protect-data-transit-at-rest

@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.describe-team-structures.introduction
 - learn.wwl.describe-team-structures.explore-agile-development-practices

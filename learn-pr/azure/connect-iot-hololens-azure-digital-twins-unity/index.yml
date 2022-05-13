@@ -50,6 +50,9 @@ products:
 - hololens
 - windows
 - windows-mixed-reality
+subjects:
+- mixed-reality
+- iot
 units:
 - learn.azure.connect-iot-hololens-azure-digital-twins-unity.introduction
 - learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-telemetry-data

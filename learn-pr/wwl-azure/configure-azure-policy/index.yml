@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- compliance
 units:
 - learn.wwl.configure-azure-policy.introduction
 - learn.wwl.configure-azure-policy.create-management-groups

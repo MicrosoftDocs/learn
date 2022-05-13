@@ -25,6 +25,8 @@ roles:
 products:
   - vs
 prerequisites: Complete the module titled "Enhanced health bot."
+subjects:
+- chatbot
 units:
   - learn.health-bot-integrated-bot.1-introduction
   - learn.health-bot-integrated-bot.2-build-database

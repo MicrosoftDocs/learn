@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- networking
 units:
 - learn.azure.secure-network-connectivity-azure.1-introduction
 - learn.azure.secure-network-connectivity-azure.2-what-is-defense-in-depth

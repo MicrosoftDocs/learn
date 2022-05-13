@@ -25,6 +25,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- it-management-monitoring
 modules:
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop

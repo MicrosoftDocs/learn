@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- data-management
 units:
 - learn.language.go-data-types.0-introduction
 - learn.language.go-data-types.1-arrays
