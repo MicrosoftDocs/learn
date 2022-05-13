@@ -13,7 +13,10 @@ prerequisites: |
   - Some C# programming experience
   - Familiarity with ASP.NET development
   - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
-  - Git for Windows installed on your desktop 
+  - Git for Windows installed on your desktop
+video:
+  title: "Microsoft Learn video: Migrate an ASP.NET web application to Azure with Visual Studio"
+  url: https://www.microsoft.com/videoplayer/embed/RE4X1s8
 summary: |
   Learn how to take a .NET Framework web app and migrate it to Azure. This scenario represents a very common set of challenges that you will run into when moving an app to the cloud. You will make key updates to the solution to make it cloud ready.
 iconUrl: /learn/achievements/migrate-aspnet-web-application.svg
