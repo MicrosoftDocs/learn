@@ -12,6 +12,9 @@ title: Build mobile apps with Xamarin.Forms
 summary: "Use C# and Visual Studio to create apps that run on iOS and Android devices."
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
+video:
+  title: "Microsoft Learn video: Build mobile apps with Xamarin.Forms"
+  url: https://www.microsoft.com/videoplayer/embed/RE4XeIA
 iconUrl: /learn/achievements/xamarin/build-mobile-apps-with-xamarin-forms-trophy.svg
 levels:
 - beginner
