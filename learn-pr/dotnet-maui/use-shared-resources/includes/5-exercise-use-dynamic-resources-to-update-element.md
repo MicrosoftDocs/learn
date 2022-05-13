@@ -1,6 +1,6 @@
 In this exercise, you'll use the **DynamicResource** mark-up extension to update the TipCalculator UI when resource values change.
 
-This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise2/start/TipCalculator** folder in the repository that you cloned in the previous exercise.
+This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise2/TipCalculator** folder in the repository that you cloned in the previous exercise.
 
 ## Find repeated code
 
@@ -11,8 +11,8 @@ The app implements simple "light" and "dark" color schemes for the **StandardTip
 1. Locate the two event handlers that update the UI colors.
 
     ```csharp
-    private Color colorNavy = Color.FromRgb(0x00, 0x00, 0xAD);
-    private Color colorSilver = Color.FromRgb(0xC0, 0xC0, 0xC0);
+    private Color colorNavy = Colors.Navy;
+    private Color colorSilver = Color.Silver;
 
     ...
 
