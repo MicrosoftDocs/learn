@@ -20,9 +20,8 @@ Consider the following example:
 
 Suppose you want to change the value of the **PanelBackgroundColor** resource while the application is running. You can add code such as that shown below to the code-behind file for the page, to access the **Resources** property. The following example updates the resource value from the previous XAML example to a different color.
 
-<!-- CHECK FOR STATIC COLOR CONSTANTS IN THE NEXT BUILD OF .NET MAUI-->
 ```csharp
-this.Resources["PanelBackgroundColor"] = Color.FromRgb(0x0, 0xFF, 0x0); // Green
+this.Resources["PanelBackgroundColor"] = Colors.Green;
 ```
 
 ## What is DynamicResource?

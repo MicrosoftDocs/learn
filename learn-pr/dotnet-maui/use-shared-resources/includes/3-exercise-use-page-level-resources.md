@@ -7,9 +7,9 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
 **TBD: REPLACE URL FOR GITHUB REPO BELOW**
 
-1. Clone or download the exercise repo from [GitHub](https://github.com/ADD-REPO-HERE).
+1. Clone or download the exercise repo from [GitHub](https://github.com/microsoftdocs/mslearn-dotnetmaui-use-shared-resources).
 
-1. Open the starter solution from the **exercise1/start/TipCalculator** folder by using Visual Studio.
+1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio.
 
 1. Verify that it builds and runs in your environment. (Any platform is fine.)
 
@@ -63,11 +63,11 @@ You've now seen all the repeated code that exists in the application. Let's crea
 
 1. Open the **StandardTipPage.xaml** file.
 
-1. Define a **Color** resource inside a **ContentPage.Resources** section. Give the resource an **x:Key** resource ID of **bgColor** and the value **#C0C0C0**.
+1. Define a **Color** resource inside a **ContentPage.Resources** section. Give the resource an **x:Key** resource ID of **bgColor** and the value **#C0C0C0** (you could also use the name of the color `Silver`).
 
-1. Define a second **Color** resource. Give it an **x:Key** resource ID of **fgColor** and the value **#0000AD**.
+1. Define a second **Color** resource. Give it an **x:Key** resource ID of **fgColor** and the value **#0000AD** (you could also use the name of the color `Navy`).
 
-1. Define an **x:String** resource with an ID of **fontSize**. Set the value of this resource to **22**.  
+1. Define an **x:Double** resource with an ID of **fontSize**. Set the value of this resource to **22**.  
 
     ```XML
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -77,7 +77,7 @@ You've now seen all the repeated code that exists in the application. Let's crea
             <ResourceDictionary>
                 <Color x:Key="bgColor">#C0C0C0</Color>
                 <Color x:Key="fgColor">#0000AD</Color>
-                <x:String x:Key="fontSize">22</x:Int32>
+                <x:Double x:Key="fontSize">22</x:Double>
             </ResourceDictionary>
         </ContentPage.Resources>
     
