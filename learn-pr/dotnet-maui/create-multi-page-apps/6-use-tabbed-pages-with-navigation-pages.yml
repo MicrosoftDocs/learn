@@ -16,25 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When is tab navigation a good choice for an app?"
+  - content: "How do you send data to a page when using .NET MAUI Shell route-based navigation?"
     choices:
-    - content: "You have only a few pages in your app and the pages all have equal importance."
+    - content: "Pass the data into the constructor of the target page."
+      isCorrect: false
+      explanation: "When using route-based navigation, you will not invoke the constructor of the target page manually."
+    - content: "Set page-level properties before the page is displayed."
+      isCorrect: false
+      explanation: "When using route-based navigation, you will not have an instance of the target page."
+    - content: "Use a query string syntax. A key/value pair can be sent."
       isCorrect: true
-      explanation: "Tabs make it fast for the user to switch between the pages. This navigation style works well with pages of equal importance, because it's likely that the user will need to switch pages frequently."
-    - content: "The app's pages tend to be traversed from general to more specific."
-      isCorrect: false
-      explanation: "Tabs aren't well-suited to traversing a hierarchy of pages, because they don't remember the user's navigation sequence."
-    - content: "The app's pages require extensive scrolling."
-      isCorrect: false
-      explanation: "The use of tab navigation is unrelated to the scrolling requirements of the pages it presents."
-  - content: "Suppose you're a developer using `TabbedPage` for a tabbed UI. How do you present the new page when the user selects a tab?"
-    choices:
-    - content: "First, you call a method to dismiss the old page. Second, you call a different method to present the new page."
-      isCorrect: false
-      explanation: "`TabbedPage` doesn't provide any methods to manage the visibility of the pages it hosts."
-    - content: "Call a method to present the appropriate page to the user."
-      isCorrect: false
-      explanation: "`TabbedPage` doesn't provide any methods to manage the visibility of the pages it hosts."
-    - content: "There's nothing for you to do. `TabbedPage` presents the appropriate page automatically."
-      isCorrect: true
-      explanation: "`TabbedPage` handles the page-switching for you. There's no code for you to write."
+      explanation: "Correct. By using a query string syntax, data can be sent between pages."

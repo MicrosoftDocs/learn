@@ -26,14 +26,3 @@ quiz:
     - content: "The app's pages require extensive scrolling"
       isCorrect: false
       explanation: "No. The use of tab navigation is unrelated to the scrolling requirements of the pages it presents."
-  - content: "Suppose you're a developer using TabbedPage for a tabbed UI. How do you present the new page when the user selects a tab?"
-    choices:
-    - content: "First, you call a method to dismiss the old page. Second, you call a different method to present the new page.."
-      isCorrect: false
-      explanation: "TabbedPage doesn't provide any methods to manage the visibility of the pages it hosts."
-    - content: "Call a method to present the appropriate page to the user."
-      isCorrect: false
-      explanation: "No. TabbedPage doesn't provide any methods to manage the visibility of the pages it hosts."
-    - content: "There's nothing for you to do. TabbedPage presents the appropriate page automatically."
-      isCorrect: true
-      explanation: "This is the correct answer."
