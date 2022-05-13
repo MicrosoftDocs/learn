@@ -50,7 +50,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
 1. In the context menu that appears, click **Manage NuGet Packages**.
 1. Search for **sqlite-net-pcl**. And then click install.
 
-    :::image type="content" source="../media/4-sqlite-nuget.png" alt-text="A screenshot showing the NuGet package manager with the sequel light P C L library selected.":::
+    :::image type="content" source="../media/4-sqlite-nuget-package.png" alt-text="A screenshot showing the NuGet package manager with the sequel light P C L library selected.":::
 
 1. Also install the **SQLitePCLRaw.provider.dynamic_cdecl** by searching for it in NuGet and clicking install.
 
