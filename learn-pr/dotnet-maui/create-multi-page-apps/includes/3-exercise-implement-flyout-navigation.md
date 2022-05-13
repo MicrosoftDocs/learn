@@ -23,7 +23,7 @@ In this exercise, you'll add flyout navigation to the app.
 
     The image below shows the app running on the Android emulator:
 
-    :::image type="content" source="../media/3-initial-moonphase.png" alt-text="The Astronomy app running on Android. The functionality required to navigate to pages is missing.":::
+    :::image type="content" source="../media/3-initial-moonphase.png" alt-text="A screenshot of the Astronomy app running on Android. The functionality required to navigate to pages is missing.":::
 
 1. Close the app and return to Visual Studio.
 

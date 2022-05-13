@@ -2,7 +2,7 @@
 
 In the astronomy app, you've been asked to add pages that enable the user to select different astronomical bodies and display their details. There may any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user will be able to select the body from this list. The app will then display the details for that body in a new page. The list page will act as a *root page* for stack navigation. You'll add the list page as a tab in the existing user interface.
 
-:::image type="content" source="../media/7-stack-navigation.png" alt-text="The stack navigation model for moving between pages for astronomical bodies.":::
+:::image type="content" source="../media/7-stack-navigation.png" alt-text="Diagram of the stack navigation model for moving between pages for astronomical bodies.":::
 
 ## Open the starter solution
 
@@ -15,9 +15,9 @@ In the astronomy app, you've been asked to add pages that enable the user to sel
 
 1. In the Solution Explorer window, open the **Pages** folder. As well as the **MoonPhasePage**, **SunrisePage**, and **AboutPage** files, this folder contains two additional pages:
 
-- **AstronomicalBodiesPage**. This page contains four buttons that enable the user to select the details for the Sun, the Moon, the Earth, or Halley's Comet. The current version of the app is simply a proof of concept. In the future, this page will enable the user to select from a much bigger list.
+    - **AstronomicalBodiesPage**. This page contains four buttons that enable the user to select the details for the Sun, the Moon, the Earth, or Halley's Comet. The current version of the app is simply a proof of concept. In the future, this page will enable the user to select from a much bigger list.
 
-- **AstronomicalBodyPage**. This page is used to display the information for an astronomical body.
+    - **AstronomicalBodyPage**. This page is used to display the information for an astronomical body.
 
 The **AstronomicalBodiesPage** has already been added as a tab on the page that appears when the **Astronomy** flyout is clicked.
 

@@ -6,7 +6,7 @@ In this unit, you'll learn how to create an app that implements tab navigation.
 
 In an app that uses tab navigation, each tab represents a specific section or page of the app. Users select tabs within the tab strip to move between content in the application. As an example, the following illustration shows the use of tab navigation in the iOS Clock app. The icons highlighted at the base of the page enable you to switch between different view. These icons correspond to tabs, and the views are tabbed pages:
 
-:::image type="content" source="../media/4-tab-navigation-example-world-clock.png" alt-text="Screenshot of the iOS Clock app showing the bottom tab bar containing various time-related tabs: World Clock, Alarm, Bedtime, Stopwatch, and Timer.":::
+:::image type="content" source="../media/4-tab-navigation-example-world-clock.png" alt-text="Screenshot of the i O S Clock app showing the bottom tab bar containing various time-related tabs: World Clock, Alarm, Bedtime, Stopwatch, and Timer.":::
 
 Because the tab strip is always visible, tab navigation allows users to quickly switch between content in an application. Tab navigation is ideal when an application has several sections that a user is likely to use frequently. Clock applications are an excellent example. The clock, alarm, and stopwatch sections are likely to be frequently used.
 
@@ -18,7 +18,7 @@ If you need more than four tabs, consider using another navigation pattern, such
 
 You use the `TabBar` object to implement tab navigation with Shell .NET MAUI app. The `TabBar` object displays a set of tabs and automatically switches the displayed content when the user selects a tab. The following illustration shows the UI areas.
 
-:::image type="content" source="../media/4-tabbed-page-diagram.jpg" alt-text="Illustration showing an example TabbedPage with a content area and a bottom tab bar containing three children pages: Globe, Compass, and Map.":::
+:::image type="content" source="../media/4-tabbed-page-diagram.jpg" alt-text="Illustration showing an example Tabbed Page with a content area and a bottom tab bar containing three children pages: Globe, Compass, and Map.":::
 
 To use tabs in a .NET MAUI Shell application, create an instance of the `TabBar` class as a child of the `Shell` class. Then add `Tab` objects to the `TabBar`. Within the `Tab` object, a `ShellContent` object should be set to a `ContentPage` object.
 
