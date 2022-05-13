@@ -3,7 +3,7 @@ uid: learn.wwl.create-power-bi-model-relationships
 metadata:
   title: Create Power BI model relationships
   description: "Power BI model relationships form the basis of a tabular model. Define Power BI model relationships, set up relationships, recognize DAX relationship functions, and describe relationship evaluation."
-  ms.date: 05/12/2022
+  ms.date: 05/13/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
