@@ -18,7 +18,7 @@ If you need more than four tabs, consider using another navigation pattern, such
 
 You use the `TabBar` object to implement tab navigation with Shell .NET MAUI app. The `TabBar` object displays a set of tabs and automatically switches the displayed content when the user selects a tab. The following illustration shows the UI areas.
 
-:::image type="content" source="../media/4-tabbed-page-diagram.png" alt-text="Illustration showing an example TabbedPage with a content area and a bottom tab bar containing three children pages: Globe, Compass, and Map.":::
+:::image type="content" source="../media/4-tabbed-page-diagram.jpg" alt-text="Illustration showing an example TabbedPage with a content area and a bottom tab bar containing three children pages: Globe, Compass, and Map.":::
 
 To use tabs in a .NET MAUI Shell application, create an instance of the `TabBar` class as a child of the `Shell` class. Then add `Tab` objects to the `TabBar`. Within the `Tab` object, a `ShellContent` object should be set to a `ContentPage` object.
 
