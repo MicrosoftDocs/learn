@@ -29,7 +29,7 @@ CounterLabel.Text = $"Current count: {count}";
 ```
 
 > [!IMPORTANT]
-The field won't be initialized until the `InitializeComponent` method of the page is run. This method is part of the XAML parsing and object instantiation process. Place any code that interacts with an element that's defined in XAML after this call. The exception to this rule is the `ContentPage` class itself. You can access all properties on the class, prior to the execution of the `InitializeComponent` method. However, if you set any properties on this class in XAML, these property values will overwrite any values you might have set before executing `InitializeComponent`.
+> The field won't be initialized until the `InitializeComponent` method of the page is run. This method is part of the XAML parsing and object instantiation process. Place any code that interacts with an element that's defined in XAML after this call. The exception to this rule is the `ContentPage` class itself. You can access all properties on the class, prior to the execution of the `InitializeComponent` method. However, if you set any properties on this class in XAML, these property values will overwrite any values you might have set before executing `InitializeComponent`.
 
 ## Use an attribute to wire up events
 
