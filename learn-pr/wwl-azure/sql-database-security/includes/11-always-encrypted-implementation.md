@@ -76,7 +76,6 @@ The initial setup of Always Encrypted in a database involves generating Always E
 :::row-end:::
 
 
-:::image type="content" source="../media/az500-always-encrypted-flow-new-ee112bee.png" alt-text="az-500 always encrypted":::
 
 
 When setting up encryption for a column, you specify the information about the encryption algorithm and cryptographic keys used to protect the data in the column. Always Encrypted uses two types of keys: column encryption keys and column master keys. A column encryption key is used to encrypt data in an encrypted column. A column master key is a key-protecting key that encrypts one or more column encryption keys.
