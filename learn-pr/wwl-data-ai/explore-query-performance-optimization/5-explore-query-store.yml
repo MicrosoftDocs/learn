@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-query-performance-optimization.explore-query-store
+title: Explore Query Store
+metadata:
+  title: Explore Query Store
+  description: "Explore Query Store"
+  ms.date: 05/13/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-explore-query-store.md)]

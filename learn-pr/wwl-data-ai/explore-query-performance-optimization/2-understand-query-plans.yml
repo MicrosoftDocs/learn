@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-query-performance-optimization.understand-query-plans
+title: Understand query plans
+metadata:
+  title: Understand query plans
+  description: "Understand query plans"
+  ms.date: 05/13/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-understand-query-plans.md)]

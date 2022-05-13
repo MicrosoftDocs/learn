@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-query-performance-optimization.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/13/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of execution plan is stored in the plan cache?"
+    choices:
+    - content: "Estimated execution plan"
+      isCorrect: true
+      explanation: "That's correct. The estimated execution plan is stored in the plan cache."
+    - content: "Actual execution plan"
+      isCorrect: false
+      explanation: "That's incorrect. The actual plan has to be captured at runtime, using profiler, xEvents, or SSMS."
+    - content: "Live Query Stats"
+      isCorrect: false
+      explanation: "That's incorrect. Live query stats are only captured at runtime through SSMS."
+  - content: "Which DMV should you use to find index utilization?"
+    choices:
+    - content: "sys.dm_db_index_usage_stats"
+      isCorrect: true
+      explanation: "That's correct. sys.dm_db_index_usage_stats shows the read and write operations against each index."
+    - content: "sys.dm_db_missing_index_details"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV shows missing indexes recommended by the query optimizer."
+    - content: "sys.dm_exec_query_plan_stats"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV shows the last actual execution plan, but does not summarize index utilization."
+  - content: "Which of the following wait types would indicate excessive CPU consumption?"
+    choices:
+    - content: "SOS_SCHEDULER_YIELD"
+      isCorrect: true
+      explanation: "That's correct. The SOS_SCHEDULER_YIELD wait is the only one of these wait types that is associated with CPU."
+    - content: "RESOURCE_SEMAPHORE"
+      isCorrect: false
+      explanation: "That's incorrect. This resource wait is associated with memory grant delays."
+    - content: "PAGEIOLATCH_SH"
+      isCorrect: false
+      explanation: "That's incorrect. This wait is associated with IO completion."
+  - content: "Which isolation level should you choose if you want to prevent users reading data from blocking users writing data?"
+    choices:
+    - content: "Serializable"
+      isCorrect: false
+      explanation: "That's incorrect. This level will block writes from occurring while data is being read."
+    - content: "Read Committed Snapshot Isolation"
+      isCorrect: true
+      explanation: "That's correct. The level allows each reader to have their own version of the data and prevents readers from blocking writers."
+    - content: "Repeatable Read"
+      isCorrect: false
+      explanation: "That's incorrect. This level also blocks writes from occurring while data is being read."

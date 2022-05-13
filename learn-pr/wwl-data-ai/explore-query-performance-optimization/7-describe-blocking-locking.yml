@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-query-performance-optimization.describe-blocking-locking
+title: Describe blocking and locking
+metadata:
+  title: Describe blocking and locking
+  description: "Describe blocking and locking"
+  ms.date: 05/13/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-describe-blocking-locking.md)]

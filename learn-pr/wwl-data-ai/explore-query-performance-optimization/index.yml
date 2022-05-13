@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.explore-query-performance-optimization
+metadata:
+  title: Explore query performance optimization
+  description: "Explore query performance optimization"
+  ms.date: 05/13/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore query performance optimization
+summary: Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated. Understand the purpose and benefits of the Query Store.
+abstract: |
+  After completing this module, you will be able to:
+  - Generate and save execution plans
+  - Compare the different types of execution plans
+  - Understand how and why query plans are generated
+  - Explain the purpose and benefits of the Query Store
+  - Investigate the available reports and data in the Query Store
+prerequisites: |
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Basic understanding of structure and usage of SQL Server indexes.
+  - Basic understanding of relational database concepts.
+iconUrl: /learn/achievements/describe-sql-server-query-plans.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.explore-query-performance-optimization.introduction
+- learn.wwl.explore-query-performance-optimization.understand-query-plans
+- learn.wwl.explore-query-performance-optimization.explain-estimated-actual
+- learn.wwl.explore-query-performance-optimization.describe dynamic management views and functions
+- learn.wwl.explore-query-performance-optimization.explore-query-store
+- learn.wwl.explore-query-performance-optimization.identify-problematic
+- learn.wwl.explore-query-performance-optimization.describe-blocking-locking
+- learn.wwl.explore-query-performance-optimization.exercise-identify-resolve-blocking-issues
+- learn.wwl.explore-query-performance-optimization.knowledge-check
+- learn.wwl.explore-query-performance-optimization.summary
+badge:
+  uid: learn.wwl.explore-query-performance-optimization.badge
