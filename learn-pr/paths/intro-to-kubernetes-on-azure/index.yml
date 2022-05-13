@@ -10,7 +10,28 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Kubernetes on Azure
-summary: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service. 
+summary: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
+
+  This learning path is part of a series. You can choose the topics you're most interested in or progress through each of them. Here are the learning paths in this series:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/intro-to-kubernetes-on-azure.svg" width="101" height="84" alt="The trophy for the Introduction to Kubernetes on Azure learning path." role="presentation"></img>
+
+    Part 1: Introduction to Kubernetes on Azure
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/generic-trophy.svg" width="101" height="84" alt="The trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations." role="presentation"></img>
+
+    [Part 2: Azure Kubernetes Service (AKS) cluster architecture and operations](../aks-cluster-architecture/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/generic-trophy.svg" width="91" height="84" alt="The trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations learning path." role="presentation"></img>
+
+    [Part 3: Azure Kubernetes Service (AKS) application and cluster scalability](../aks-cluster-scalability/index.yml)
+  :::column-end:::
+  :::row-end:::
+
 prerequisites: None
 iconUrl: /learn/achievements/intro-to-kubernetes-on-azure.svg
 levels:
