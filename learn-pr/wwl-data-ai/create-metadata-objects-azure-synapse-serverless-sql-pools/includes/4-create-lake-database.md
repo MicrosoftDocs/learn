@@ -6,7 +6,7 @@ As you create each table, you can specify the type and location of the files you
 
 The database designer interface in Azure Synapse Studio provides a drag-and-drop surface on which you can edit the tables in your database and the relationships between them.
 
-![Database designer in Azure Synapse Studio](../media/database-designer.png)
+[![Screenshot of database designer in Azure Synapse Studio.](../media/database-designer-small.png)](../media/database-designer.png#lightbox)
 
 Using the database designer, you can define the schema for your database by adding or removing tables and:
 

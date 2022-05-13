@@ -5,4 +5,4 @@ Now it's your opportunity to create and use a lake database. In this exercise, y
 
 Launch the exercise and follow the instructions.
 
-[![Launch exercise](../media/launch-exercise.png)](https://aka.ms/mslearn-synapse-lakedb?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-synapse-lakedb?azure-portal=true)

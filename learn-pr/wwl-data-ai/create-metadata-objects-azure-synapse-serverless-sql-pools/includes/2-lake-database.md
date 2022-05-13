@@ -4,7 +4,7 @@ In a data lake, there is no fixed schema. Data is stored in files, which may be 
 
 A *lake database* provides a relational metadata layer over one or more files in a data lake. You can create a lake database that includes definitions for tables, including column names and data types as well as relationships between primary and foreign key columns. The tables reference files in the data lake, enabling you to apply relational semantics to working with the data and querying it using SQL. However, the storage of the data files is decoupled from the database schema; enabling more flexibility than a relational database system typically offers.
   
-![A relational schema of linked tables overlaying files in a file store](../media/lake-database.png)
+![Diagram of a relational schema of linked tables overlaying files in a file store.](../media/lake-database.png)
 
 ## Lake database schema
 
