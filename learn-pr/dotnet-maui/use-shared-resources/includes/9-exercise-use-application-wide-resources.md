@@ -1,6 +1,6 @@
 The goal of this exercise is to make resources available across multiple pages by moving them to a resource dictionary in the Tip Calculator Application class.
 
-This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise4/start/TipCalculator** folder in the repository that you cloned in the first exercise.
+This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise4/TipCalculator** folder in the repository that you cloned in the first exercise.
 
 ## Verify page-level resources
 
@@ -24,33 +24,20 @@ Let's verify that resources defined on one page aren't available on another page
 
 Let's create an application-wide resource dictionary to hold resources to use on multiple pages.
 
-1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resources and styles that are used by default for buttons and labels:
+1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. Navigate to the `Resources/Styls.xaml` to see the styles included by default.
 
     ```XML
+    <?xml version = "1.0" encoding = "UTF-8" ?>
     <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                 xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
                  xmlns:local="clr-namespace:TipCalculator"
-                 x:Class="TipCalculator.App"
-                 windows:Application.ImageDirectory="Assets">
+                 x:Class="TipCalculator.App">
         <Application.Resources>
             <ResourceDictionary>
-
-                <Color x:Key="PageBackgroundColor">#512bdf</Color>
-                <Color x:Key="PrimaryTextColor">White</Color>
-    
-                <Style TargetType="Label">
-                    <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
-                    <Setter Property="FontFamily" Value="OpenSansRegular" />
-                </Style>
-    
-                <Style TargetType="Button">
-                    <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
-                    <Setter Property="FontFamily" Value="OpenSansRegular" />
-                    <Setter Property="BackgroundColor" Value="#2b0b98" />
-                    <Setter Property="Padding" Value="14,10" />
-                </Style>
-    
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="Resources/Colors.xaml" />
+                    <ResourceDictionary Source="Resources/Styles.xaml" />
+                </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </Application.Resources>
     </Application>
@@ -63,15 +50,21 @@ Let's create an application-wide resource dictionary to hold resources to use on
                  ...>
         <Application.Resources>
             <ResourceDictionary>
-                ...
-                <x:String x:Key="fontSize">22</x:Int32>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="Resources/Colors.xaml" />
+                    <ResourceDictionary Source="Resources/Styles.xaml" />
+                </ResourceDictionary.MergedDictionaries>
+                
+                <Color x:Key="bgColor">#C0C0C0</Color>
+                <Color x:Key="fgColor">#0000AD</Color>
+                <x:Double x:Key="fontSize">22</x:Double>
+
                 <Style x:Key="baseLabelStyle" TargetType="Label">
                     <Setter Property="FontSize" Value="{StaticResource fontSize}" />
                 </Style>
                 <Style x:Key="infoLabelStyle" BasedOn="{StaticResource baseLabelStyle}" TargetType="Label">
                     <Setter Property="FontAttributes" Value="Bold" />
                 </Style>
-                
             </ResourceDictionary>
         </Application.Resources>
     </Application>
