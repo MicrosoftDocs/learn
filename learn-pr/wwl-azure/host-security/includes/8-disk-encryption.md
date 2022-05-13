@@ -7,13 +7,11 @@ If you use Microsoft Defender for Cloud, you're be alerted if you have VMs that 
 
 Azure Disk Encryption is zone resilient, the same way as Virtual Machines.
 
-If you use Microsoft Defender for Cloud, you're alerted if you have VMs that aren't encrypted. The alerts show as High Severity and the recommendation is to encrypt these VMs.
-
-### Supported VMs and operating systems
+## Supported VMs and operating systems<br>
 
 **Supported VMs**
 
-Windows VMs are available in a range of sizes. Azure Disk Encryption is supported on Generation 1 and Generation 2 VMs. Azure Disk Encryption is also available for VMs with premium storage.<br>
+Windows VMs are available in a range of sizes. Azure Disk Encryption is supported on Generation 1 and Generation 2 VMs. Azure Disk Encryption is also available for VMs with premium storage.
 
 Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines with less than 2 GB of memory.
 
