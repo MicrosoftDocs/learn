@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.azure.create-azure-database-for-mysql.how-deploy-connect-azure-database-mysql 
-title: How to deploy and connect to Azure Database for MySQL 
+title: How to deploy and connect to Azure Database for MySQL
+sandbox: true
 metadata:
   title: How to deploy and connect to Azure Database for MySQL 
   description: Describe how to deploy and connect to Azure Database for MySQL.
