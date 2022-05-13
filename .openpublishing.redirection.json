@@ -13189,6 +13189,31 @@
       "source_path": "learn-pr/wwl-data-ai/query-data-lake-using-azure-synapse-serverless-sql-pools/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-metadata-objects-azure-synapse-serverless-sql-pools/2-create-databases.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-metadata-objects-azure-synapse-serverless-sql-pools/3-create-manage-credentials.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-metadata-objects-azure-synapse-serverless-sql-pools/4-create-external-data-sources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-metadata-objects-azure-synapse-serverless-sql-pools/5-create-external-tables.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-metadata-objects-azure-synapse-serverless-sql-pools/6-create-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
     }
   ]
 }
