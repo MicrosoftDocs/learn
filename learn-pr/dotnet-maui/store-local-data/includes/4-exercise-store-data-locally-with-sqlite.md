@@ -252,7 +252,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 1. Tap **Get All People**, and verify that your name appears.
 
-    :::image type="content" source="../media/4-add-person-results.png" alt-text="A screenshot of the app with a list of all the rescords in the database.":::
+    :::image type="content" source="../media/4-add-person-results.png" alt-text="A screenshot of the app with a list of all the records in the database.":::
 
 1. Experiment by adding more names and retrieving the list of stored people.
 
