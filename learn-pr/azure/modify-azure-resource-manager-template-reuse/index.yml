@@ -37,6 +37,9 @@ products:
 - vs-code
 - azure-resource-manager
 - azure-storage-accounts
+subjects:
+- data-modeling
+- data-engineering
 units:
 - learn.azure.resource-manager-template-reuse.1-introduction
 - learn.azure.resource-manager-template-reuse.2-azure-resource-manager-functions

@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-dns
+subjects:
+- networking
 units:
 - learn.wwl.configure-azure-dns.introduction
 - learn.wwl.configure-azure-dns.identify-domains-custom-domains

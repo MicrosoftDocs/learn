@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- security
 units:
 - learn.wwl.implement-security-azure-cosmos-db-sql-api.introduction
 - learn.wwl.implement-security-azure-cosmos-db-sql-api.implement-network-level-access-control

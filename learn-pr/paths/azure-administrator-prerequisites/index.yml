@@ -75,6 +75,10 @@ products:
 - azure-container-instances
 - azure-container-registry
 - azure-storage
+subjects:
+- cloud-computing
+- virtual-machine
+- it-management-monitoring
 modules:
 - learn.azure.build-cloud-governance-strategy-azure
 - learn.introduction-to-azure-virtual-machines

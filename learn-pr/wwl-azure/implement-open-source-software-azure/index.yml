@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.implement-open-source-software-azure.introduction
 - learn.wwl.implement-open-source-software-azure.explore-how-software-built

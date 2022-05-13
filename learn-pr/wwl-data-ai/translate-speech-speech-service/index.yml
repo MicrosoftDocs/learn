@@ -30,6 +30,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.translate-speech-speech-service.introduction
 - learn.wwl.translate-speech-speech-service.speech-service

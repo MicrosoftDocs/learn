@@ -26,6 +26,9 @@ roles:
   - data-analyst
 products:
   - azure-data-explorer
+subjects:
+- data-engineering
+- data-management
 units:
 - learn.intro-to-azure-data-explorer.introduction
 - learn.intro-to-azure-data-explorer.what-is-azure-data-explorer

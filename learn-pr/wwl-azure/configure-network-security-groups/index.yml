@@ -24,6 +24,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- networking
+- identity-access
 units:
 - learn.wwl.configure-network-security-groups.introduction
 - learn.wwl.configure-network-security-groups.implement

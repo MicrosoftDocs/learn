@@ -32,6 +32,8 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.intro-to-kubernetes.introduction
 - learn.intro-to-kubernetes.what-is-kubernetes

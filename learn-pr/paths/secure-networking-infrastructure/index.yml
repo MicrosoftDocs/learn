@@ -26,6 +26,8 @@ products:
 - azure-ddos-protection
 - azure-virtual-wan
 - azure-private-link
+subjects:
+- security
 modules:
 - introduction-azure-firewall
 - learn.intro-to-azure-firewall-manager

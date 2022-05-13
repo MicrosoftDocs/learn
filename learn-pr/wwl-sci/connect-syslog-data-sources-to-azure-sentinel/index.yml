@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.introduction
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.plan-for-syslog-connector

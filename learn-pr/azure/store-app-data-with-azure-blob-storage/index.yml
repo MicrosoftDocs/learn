@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.store-app-data-with-azure-blob-storage.1-introduction
 - learn.store-app-data-with-azure-blob-storage.2-what-are-blobs

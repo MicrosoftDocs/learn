@@ -40,6 +40,10 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-computing
+- virtual-machine
+- device-management
 units:
 - learn.wwl.manage-azure-updates.introduction
 - learn.wwl.manage-azure-updates.describe-update-management

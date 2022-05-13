@@ -26,6 +26,8 @@ roles:
 - support-engineer
 products:
 - azure-backup
+subjects:
+- business-continuity
 units:
 - learn.wwl.business-continuity.introduction
 - learn.wwl.business-continuity.troubleshoot-backup-issues

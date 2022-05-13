@@ -29,6 +29,9 @@ roles:
 - student
 products:
 - consumer
+subjects:
+- customer-relationship-management
+- marketing-sales
 units:
 - learn.startups.validate-idea.introduction
 - learn.startups.validate-idea.articulate-idea

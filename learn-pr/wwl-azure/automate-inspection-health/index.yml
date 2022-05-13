@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
 units:
 - learn.wwl.automate-inspection-of-health.introduction
 - learn.wwl.automate-inspection-of-health.automate-inspection-health

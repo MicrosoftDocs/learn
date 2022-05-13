@@ -22,6 +22,8 @@ roles:
 - developer
 products:
 - xbox
+subjects:
+- accessibility
 modules:
 - learn.intro-to-gaming
 - learn.community-collaboration

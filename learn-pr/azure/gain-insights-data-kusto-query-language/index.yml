@@ -32,6 +32,8 @@ roles:
 products: 
 - azure-data-explorer
 - azure
+subjects:
+- data-analytics
 units:
 - learn.azure.gain-insights-data-kql.introduction
 - learn.azure.gain-insights-data-kql.group-data-aggregate-functions

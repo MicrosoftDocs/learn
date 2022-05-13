@@ -26,6 +26,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- custom-app-development
 units:
 - learn-xamarin.use-effects-in-xamarin-forms.1-introduction
 - learn-xamarin.use-effects-in-xamarin-forms.2-apply-an-effect-to-an-element

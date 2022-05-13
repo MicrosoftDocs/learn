@@ -33,6 +33,9 @@ roles:
 products:
   - github
   - azure
+subjects:
+- devops
+- business-continuity
 units:
   - learn.github.create-open-source-program-github.1-introduction
   - learn.github.create-open-source-program-github.2-establish-open-source-program

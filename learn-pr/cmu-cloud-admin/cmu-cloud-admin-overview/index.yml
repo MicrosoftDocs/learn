@@ -37,6 +37,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.00-intro
 - learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing

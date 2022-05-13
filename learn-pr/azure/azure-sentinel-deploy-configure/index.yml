@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- cloud-security
 units:
 - learn.azure.azure-sentinel-deploy-connect.1-introduction
 - learn.azure.azure-sentinel-deploy-connect.2-deployment-options

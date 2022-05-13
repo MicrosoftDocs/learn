@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 modules:
 - learn.wwl.use-automated-machine-learning
 - learn.wwl.create-regression-model-azure-machine-learning-designer

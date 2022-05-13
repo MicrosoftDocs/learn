@@ -29,6 +29,8 @@ prerequisites: |
   - Familiarity with installing Visual Studio Code extensions 
   - Familiarity with installing software on Windows or other operating systems
   - Familiarity with running commands in PowerShell
+subjects:
+- process-workflow
 units:
   - learn.powershell.connect-commands.1-introduction
   - learn.powershell.connect-commands.2-select-data

@@ -27,6 +27,8 @@ roles:
   - solution-architect
 products:
   - azure-cdn
+subjects:
+- cloud-computing
 units:
   - learn.azure.intro-to-azure-content-delivery-network.introduction
   - learn.azure.intro-to-azure-content-delivery-network.what-is-azure-content-delivery-network

@@ -28,6 +28,10 @@ roles:
 products:
 - azure-queue-storage
 - azure-service-bus
+subjects:
+- cloud-computing
+- cross-development
+- storage
 units:
 - learn.wwl.discover-azure-message-queue.introduction
 - learn.wwl.discover-azure-message-queue.choose-solution

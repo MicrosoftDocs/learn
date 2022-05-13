@@ -24,6 +24,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
 modules:
 - learn.wwl.introduction-to-cluster-shared-volumes
 - learn.wwl.implement-windows-server-failover-clustering

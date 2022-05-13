@@ -31,6 +31,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- cloud-security
 units:
 - learn.azure-sql-secure-data.1-introduction
 - learn.azure-sql-secure-data.2-security-capabilities

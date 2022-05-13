@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/12/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What function is used to read the data in files stored in a data lake?"
+    choices:
+    - content: "FORMAT"
+      isCorrect: false
+      explanation: "Incorrect. The FORMAT is a clause within the OPENROWSET function to determine the file type to be read."
+    - content: "ROWSET"
+      isCorrect: false
+      explanation: "Incorrect. The ROWSET is not a valid function."
+    - content: "OPENROWSET"
+      isCorrect: true
+      explanation: "Correct. The OPENROWSET is used to read the data in files stored in a data lake."
+  - content: "What character in file path can be used to select all the file/folders that match rest of the path?"
+    choices:
+    - content: "&"
+      isCorrect: false
+      explanation: "Incorrect. The ampersand character is used to concatenate fields in the files together."
+    - content: "\\*"
+      isCorrect: true
+      explanation: "Correct. The asterisk character in file path can be used to select all the file or folders that match rest of the path."
+    - content: "/"
+      isCorrect: false
+      explanation: "Incorrect. The forward slash is used as a directory separator in folder and file path."
+  - content: "Which external database object encapsulates the connection information to a file location in a data lake store?"
+    choices:
+    - content: "FILE FORMAT"
+      isCorrect: false
+      explanation: "Incorrect. A DATABASE is an object held within a serverless SQL pool to hold data and metadata objects."
+    - content: "DATA SOURCE"
+      isCorrect: true
+      explanation: "Correct. a DATA SOURCE provides the connection information to the files in a data lake store."
+    - content: "EXTERNAL TABLE"
+      isCorrect: false
+      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."

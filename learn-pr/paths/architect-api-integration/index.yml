@@ -22,6 +22,8 @@ roles:
 products:
 - azure
 - azure-api-management
+subjects:
+- cloud-computing
 modules:
 - learn.publish-manage-apis-with-azure-api-management
 - learn.azure.improve-api-performance-with-apim-caching-policy

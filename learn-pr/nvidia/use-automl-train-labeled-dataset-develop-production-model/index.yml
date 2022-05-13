@@ -29,6 +29,10 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
+- data-analytics
+- artificial-intelligence
 units:
 - learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.introduction
 - learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.prepare-jupyter-notebook-workspace

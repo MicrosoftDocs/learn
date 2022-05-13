@@ -29,6 +29,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- business-continuity
 units:
 - learn.wwl.perform-backups-restores.introduction
 - learn.wwl.perform-backups-restores.explore-backup-restore-of-azure-virtual-machines

@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 metadata:
-  title: Query data in the lake using Azure Synapse serverless SQL pools
-  description: "Query data in the lake using Azure Synapse serverless SQL pools"
-  ms.date: 01/05/2022
+  title: Use Azure Synapse serverless SQL pool to query files in a data lake
+  description: "Use Azure Synapse serverless SQL pool to query files in a data lake"
+  ms.date: 05/12/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Query data in the lake using Azure Synapse serverless SQL pools
-summary: Learn how you can query the different file types that can be stored in a data lake.
+title: Use Azure Synapse serverless SQL pool to query files in a data lake
+summary: With Azure Synapse serverless SQL pool, you can leverage your SQL skills to explore and analyze data in files, without the need to load the data into a relational database.
 abstract: |
   After the completion of this module, you will be able to:
-  - Query a CSV file using Azure Synapse serverless SQL pools
-  - Query a Parquet file using Azure Synapse serverless SQL pools
-  - Query a JSON file using Azure Synapse serverless SQL pools
-  - Query multiple files and folders using Azure Synapse serverless SQL pools
-  - Understand storage considerations when using Azure Synapse serverless SQL pools
+  - Identify capabilities and use cases for serverless SQL pools in Azure Synapse Analytics
+  - Query CSV, JSON, and Parquet files using a serverless SQL pool
+  - Create external database objects in a serverless SQL pool
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+  Consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
+  - Analytical data workloads in Microsoft Azure
+  - Querying data with Transact-SQL
 iconUrl: /learn/achievements/query-data-in-the-lake-using-azure-synapse-serverless-sql-pools.svg
 levels:
 - beginner
@@ -26,13 +26,14 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- serverless-compute
 units:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.introduction
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-csv-file
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-parquet-file
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-json-file
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-multiple-files-folders
-- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.storage-considerations-when
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.understand-serverless-pools
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-files
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.external-objects
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.exercise-sql
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.knowledge-check
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.summary
 badge:

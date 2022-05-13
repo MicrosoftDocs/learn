@@ -32,6 +32,8 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- threat-protection
 units:
 - learn.securing-you-basics-beyond.1-introduction
 - learn.securing-you-basics-beyond.2-phishing

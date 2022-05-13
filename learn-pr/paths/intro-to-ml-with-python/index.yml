@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-portal
+subjects:
+- machine-learning
 modules:
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks
 - learn.student-evangelism.predict-flight-delays-with-python

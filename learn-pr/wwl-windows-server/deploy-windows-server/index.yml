@@ -31,6 +31,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- device-management
 units:
 - learn.wwl.deploy-windows-server.introduction
 - learn.wwl.deploy-windows-server.compare-server-core-desktop-experience

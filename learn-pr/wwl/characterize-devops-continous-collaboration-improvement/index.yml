@@ -34,6 +34,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- devops
 units:
 - learn.wwl.characterize-devops-continous-collaboration-improvement.introduction
 - learn.wwl.characterize-devops-continous-collaboration-improvement.explore-continuous-collaboration

@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.secure-app-with-oidc-and-azure-ad.1-introduction
 - learn.secure-app-with-oidc-and-azure-ad.2-modern-auth-for-your-app

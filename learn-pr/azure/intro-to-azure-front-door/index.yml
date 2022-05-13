@@ -27,7 +27,9 @@ roles:
 products:
   - azure
   - azure-front-door
-units:  
+subjects:
+- threat-protection
+units:
 - learn.intro-to-azure-front-door.1-introduction
 - learn.intro-to-azure-front-door.2-what-is-azure-front-door
 - learn.intro-to-azure-front-door.3-how-azure-front-door-works

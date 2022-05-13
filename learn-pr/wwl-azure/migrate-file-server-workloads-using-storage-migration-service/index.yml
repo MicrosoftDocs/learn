@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- storage
 units:
 - learn.wwl.migrate-file-server-workloads-using-storage-migration-service.introduction
 - learn.wwl.migrate-file-server-workloads-using-storage-migration-service.overview-usage-scenarios

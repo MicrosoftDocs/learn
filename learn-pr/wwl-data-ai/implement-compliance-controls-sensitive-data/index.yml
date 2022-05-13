@@ -28,6 +28,10 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- database
+- threat-protection
+- classification-analysis
 units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.introduction
 - learn.wwl.implement-compliance-controls-for-sensitive-data.describe-data-classification

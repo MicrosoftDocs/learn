@@ -39,6 +39,8 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- machine-learning
 modules:
 - learn.wwl.explore-analyze-data-with-python
 - learn.wwl.train-evaluate-regression-models

@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- compliance
 modules:
 - learn.wwl.introduction-to-secure-devops
 - learn.wwl.implement-open-source-software-azure

@@ -31,6 +31,8 @@ roles:
 products:
 - azure-policy
 - azure-resource-manager
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.design-governance.introduction
 - learn.wwl.design-governance.design-for-governance

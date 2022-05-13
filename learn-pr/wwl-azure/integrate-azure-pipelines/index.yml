@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.integrate-azure-pipelines.introduction
 - learn.wwl.integrate-azure-pipelines.describe-anatomy-of-pipeline

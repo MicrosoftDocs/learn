@@ -30,6 +30,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-custom-vision
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.detect-objects-images.introduction
 - learn.wwl.detect-objects-images.understand-object-detection

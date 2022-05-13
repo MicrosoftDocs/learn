@@ -27,6 +27,8 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- development-tools
 units:
 - learn.quantum.use-qsharp-libraries.1-introduction
 - learn.quantum.use-qsharp-libraries.2-libraries-overview

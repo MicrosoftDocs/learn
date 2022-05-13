@@ -27,6 +27,10 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- cloud-computing
+- data-engineering
+- database
 units:
 - learn.wwl.work-with-cosmos-db.introduction
 - learn.wwl.work-with-cosmos-db.cosmos-db-dotnet-overview

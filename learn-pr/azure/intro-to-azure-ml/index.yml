@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.azure.intro-to-azure-ml.introduction
 - learn.azure.intro-to-azure-ml.what-is-azure-ml

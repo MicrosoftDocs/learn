@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.plan-implement-manage-access-review.introduction
 - learn.wwl.plan-implement-manage-access-review.plan-for-access-reviews

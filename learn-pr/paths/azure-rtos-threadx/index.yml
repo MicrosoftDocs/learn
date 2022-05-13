@@ -24,6 +24,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- infrastructure
 modules:
 - learn.iot.introduction-azure-rtos
 - learn.iot.azure-rtos-threadx-fundamentals
