@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-maui.create-multi-page-apps.exercise-implement-flyout-navigation
-title: exercise-implement-flyout-navigation
+title: "Exercise: Implement flyout navigation"
 metadata:
   unitType: exercise
-  title: exercise-implement-flyout-navigation
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: "Exercise: Implement flyout navigation"
+  description: "Practice using .NET MAUI Shell to create flyout navigation for your app."
   ms.date: 5/2/2022
   author: codemillmatt
   ms.author: masoucou
