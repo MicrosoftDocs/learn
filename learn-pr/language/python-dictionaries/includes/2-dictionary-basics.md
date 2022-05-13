@@ -152,7 +152,7 @@ planet['diameter (km)'] = {
 To retrieve values in a nested dictionary, you chain together square brackets, or calls to `get`.
 
 ```python
-print(f'{planet['name']} polar diameter: {planet['diameter (km)']['polar']}')
+print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
 
 # Output: Jupiter polar diameter: 133709
 ```
