@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-classification-models.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 05/11/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: You plan to use the tidymodels framework to train a model that predicts credit default risk. The model must predict a value of 0 for loan applications that should be automatically approved, and 1 for applications where there is a risk of default that requires human consideration. What kind of model is required?
+    choices:
+    - content: A binary classification model.
+      isCorrect: true
+      explanation: Correct. A binary classification model predicts probability for two classes.
+    - content: A multiclass classification model.
+      isCorrect: false
+      explanation: Incorrect. A multiclass classification model predicts probability for three or more class values.
+    - content: A linear regression model.
+      isCorrect: false
+      explanation: Incorrect. A linear regression model predicts a numeric value.
+  - content: You've trained a classification model specification in tidymodels. You want to use the model, logreg_cls_fit, to return labels for a new dataset called new_data. Which code should you use?
+    choices:
+    - content: predict(logreg_cls_fit, new_data)
+      isCorrect: true
+      explanation: Correct. Use the parsnip::predict.model_fit() method for inferencing labels for new data.
+    - content: fit(logreg_cls_fit, new_data)
+      isCorrect: false
+      explanation: Incorrect. The parsnip::fit.model_spec() method is used to fit a model specification to a dataset.
+    - content: fit_resamples(logreg_cls_fit, new_data)
+      isCorrect: false
+      explanation: Incorrect. The fit_resamples() method is used to fit a model specification or workflow across many resamples.
+  - content: You're training a binary classification model by using the tidymodels framework. When you evaluate it with test data, you determine that the model achieves an overall recall metric of 0.81. What does this metric indicate?
+    choices:
+    - content: The model correctly predicted 81 percent of the test cases.
+      isCorrect: false
+      explanation: Incorrect. You would find this information by using the accuracy metric.
+    - content: 81 percent of the cases predicted as positive by the model were actually positive.
+      isCorrect: false
+      explanation: Incorrect. You would find this information by using the precision metric.
+    - content: The model correctly identified 81 percent of positive cases as positive.
+      isCorrect: true
+      explanation: Correct. The recall metric indicates the percentage of actual positive cases that the classifier correctly identified.
