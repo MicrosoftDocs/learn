@@ -5,8 +5,6 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 > [!NOTE]
 > If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
-**TBD: REPLACE URL FOR GITHUB REPO BELOW**
-
 1. Clone or download the exercise repo from [GitHub](https://github.com/microsoftdocs/mslearn-dotnetmaui-use-shared-resources).
 
 1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio.

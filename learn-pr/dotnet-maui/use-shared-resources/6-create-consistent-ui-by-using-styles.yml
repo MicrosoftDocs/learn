@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-maui.use-shared-resources.create-a-consistent-ui-by-using-styles
+uid: learn.dotnet-maui.use-shared-resources.create-consistent-ui-by-using-styles
 title: Create a consistent UI by using styles
 metadata:
   unitType: learning-content
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-languages
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-create-a-consistent-ui-by-using-styles.md)]
+  [!include[](includes/6-create-consistent-ui-by-using-styles.md)]
 quiz:
   title: Knowledge check
   questions:
