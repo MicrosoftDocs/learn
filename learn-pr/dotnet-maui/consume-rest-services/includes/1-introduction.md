@@ -17,4 +17,3 @@ In this module, you’ll learn how to:
 - Visual Studio 2022 with the .NET MAUI workload
 - Familiarity with C# and .NET
 - Basic knowledge of REST
-- [Git for Windows installed](https://gitforwindows.org/)

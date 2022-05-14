@@ -69,9 +69,9 @@ You'll perform this exercise using the Azure sandbox.
 
     - **AddPartPage.xaml**. This page enables the user to enter and save the details for a new part. The user can specify the part name, part type, and an initial supplier. The part ID and part available date are generated automatically. Again, the logic that creates the new part and sends the appropriate HTTP request is contained in the code-behind file for this page.
 
-1. In the Solution Explorer window, open the **AppShell.xaml** file. This file contains the markup for the main page of the application. This page displays a tab bar with tabs for the PartsPage and AddPartsPage. The user can select a tab to display either if the two pages.
+1. In the Solution Explorer window, open the **AppShell.xaml** file. This file contains the markup for the main page of the application. This page displays a tab bar with tabs for the PartsPage and AddPartsPage. The user can select a tab to display either of the two pages.
 
-1. In the Solution Explorer window, expand the **ViewModels** folder for the **PartsClient** project. This folder contains a class named **PartsViewModel**. The PartsPage and AddPartPage forms use this viewmodel to abstract the connection to the web service. This is good practice, and enables the application to utilize a different data source in the future without impacting the UI logic in the pages. The **PartsViewModel** invokes the methods in the **PartsManager** class to send and receive web service requests and responses.
+1. In the Solution Explorer window, expand the **ViewModels** folder for the **PartsClient** project. This folder contains a class named **PartsViewModel**. The PartsPage uses this viewmodel to abstract the connection to the web service.
 
 ## Sign in to the service
 
@@ -121,7 +121,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Call the **GetStringAsync** method of the **HttpClient** object and provide the base URL to retrieve an array of parts from the REST web service. The data is returned asynchronously as a JSON string.
 
-1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonSerializer.Deserialize** method. Set the serializer options to be case insensitive. Return this list to the caller.
+1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonConvert.Deserialize** method. Return this list to the caller.
 
     The completed method should look like this:
 
@@ -130,12 +130,11 @@ The REST service requires you to sign in first to get an authorization token. Th
     {
         HttpClient client = await GetClient();
         string result = await client.GetStringAsync(Url);
-        JsonSerializerOptions options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-        return JsonSerializer.Deserialize<List<Part>>(result, options);
+        return JsonConvert.DeserializeObject<List<Part>>(result);
     }
     ```
 
-1. Build and run the app using an Android emulator or an iOS simulator. When the app starts, the List Parts tab should be displayed and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
+1. Build and run the app. When the app starts, the Part List page will appear and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
 
     :::image type="content" source="../media/5-browse-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed the parts retrieved from the web service.":::
 
@@ -153,7 +152,7 @@ The REST service requires you to sign in first to get an authorization token. Th
     - Get an HTTP client from the **GetClient** method.
 
 1. Call the **GetClient** method to retrieve an **HttpClient** object to work with.
-1
+
 1. Use the **PostAsync** method of the HTTP client to send the request to the REST web service. Specify the base URL of the REST web service to add the part:
 
     - Turn the **Part** object into a JSON string by using the **JsonSerializer.Serialize** method. Create a new **StringContent** object that contains the part as JSON. Use the **StringContent** constructor, which also takes an encoding and media type. The encoding is **Encoding.UTF8**. The media type is **application/json**.
