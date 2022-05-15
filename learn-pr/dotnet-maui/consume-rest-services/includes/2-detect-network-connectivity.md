@@ -18,10 +18,12 @@ In this example, the application developer informs the user that they don't have
 
 To check for network connectivity in a .NET MAUI app, use the `Connectivity` class. This class exposes a property called `NetworkAccess` and an event named `ConnectivityChanged`. You can use these members to detect changes in the network.
 
+You access the `NetworkAccess` property through another property called `Current`. This is the mechanism that `Connectivity` takes to access the platform specific implementation.
+
 The `NetworkAccess` property returns a value from the `NetworkAccess` enumeration. The enumeration has five values: `ConstrainedInternet`, `Internet`, `Local`, `None`, and `Unknown`. If the `NetworkAccess` property returns a value of `NetworkAccess.None`, then you know you don't have a connection to the Internet, and you shouldn't run networking code. This mechanism is portable across platforms. The following code shows an example:
 
 ```csharp
-if (Connectivity.NetworkAccess == NetworkAccess.None)
+if (Connectivity.Current.NetworkAccess == NetworkAccess.None)
 {
     ...
 }
@@ -30,7 +32,7 @@ if (Connectivity.NetworkAccess == NetworkAccess.None)
 The `ConnectivityChanged` event also enables you to determine if the device is connected to the Internet. The `ConnectivityChanged` event is triggered automatically when the network status changes. For example, if you start with an active network connection and eventually lose it, the `ConnectivityChanged` event is raised to inform you about the change. One of the parameters passed to the `ConnectivityChanged` event handler is a `ConnectivityChangedEventArgs` object. This object contains a property called `IsConnected`. You can use the `IsConnected` property to determine if you're connected to the internet. Here's an example:
 
 ```csharp
-Connectivity.ConnectivityChanged += Connectivity_ConnectivityChanged;
+Connectivity.Current.ConnectivityChanged += Connectivity_ConnectivityChanged;
 ...
 void Connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs  e)
 {
