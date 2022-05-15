@@ -151,7 +151,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Build and run the app. When the app starts, the Part List page will appear and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
 
-    :::image type="content" source="../media/5-browse-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed the parts retrieved from the web service.":::
+    :::image type="content" source="../media/5-all-parts.png" alt-text="A screenshot of the Parts Client app running on Android showing a list of parts.":::
 
 1. When you have finished browsing the data, close the app and return to Visual Studio.
 
@@ -160,11 +160,11 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. In the **PartManager** class, locate the **Add** method. This method has parameters for the part name, a supplier, and the part type. The method is asynchronous. The purpose of this method is to insert a new part into the database, and return a **Part** object representing the newly created item.
 
 1. Delete the existing code in the method.
-1. Check to see if the device has internet connectivity by using the `Connectivity` class. If it internet is not present, return an empty `List<Part>`.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If it internet is not present, return an empty `Part`.
 
     ```csharp
     if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
-        return new List<Part>();
+        return new Part();
     ```
 1. Create a new **Part** object. Populate the fields with the passed-in data:
 
@@ -216,9 +216,9 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Finally, return the new inserted **Part**.
 
-1. Build and run the app. Select the **Add New Part** button and enter a name, type, and supplier to create a new part. Click **Save**. The **Add** method in the **PartsManager** class will get invoked, which creates the new part in the web service. If the operation is successful, the part list page will reappear with the new part at the top of the list.
+1. Build and run the app. Select the **Add New Part** button and enter a name, type, and supplier to create a new part. Click **Save**. The **Add** method in the **PartsManager** class will get invoked, which creates the new part in the web service. If the operation is successful, the part list page will reappear with the new part at the bottom of the list.
 
-    :::image type="content" source="../media/5-add-data.png" alt-text="A screenshot of the Parts Client app running on Android. The ADD NEW PART tab is displayed. The user has provided the details for a new part to be added through the web service.":::
+    :::image type="content" source="../media/5-insert-part.png" alt-text="A screenshot of the app running after a new part has been added. The new part is at the bottom of the list.":::
 
 1. When you have finished browsing the data, close the app and return to Visual Studio.
 
@@ -262,7 +262,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Click **Save**. This calls the **Update** method in the **PartsManager** class to send the changes to the web service. If successful, the parts list page will reappear will your changes reflected.
 
-    :::image type="content" source="../media/5-edit-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed. The user has modified the details for a part and has selected the **Save Changes** command.":::
+    :::image type="content" source="../media/5-update-part.png" alt-text="A screenshot of the app running with the first item in the list updated.":::
 
     > [!NOTE]
     > The part you added in the previous task will not appear on the **Part List** page. The data used by the app is reset to a list of predefined parts each tome the app runs. This is to provide consistency for testing the app.
