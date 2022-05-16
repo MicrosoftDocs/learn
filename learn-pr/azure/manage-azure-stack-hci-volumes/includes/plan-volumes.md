@@ -64,7 +64,7 @@ With four or more servers, you additionally have the option to implement volumes
 
 The following image illustrates the tradeoffs between the resiliency, capacity, and performance characteristics of Azure Stack HCI Storage Spaces Direct volumes. The challenge results from the fact that maximizing one of these storage characteristics typically has a negative impact on at least one of the other two. For example, increasing resiliency reduces usable capacity, although the resulting performance might vary depending on the resiliency type.
 
-:::image type="content" source="../media/3-performance-resiliency-capacity.png" alt-text=Diagram that shows pyramid shaped graph illustrating the tradeoffs between resiliency, capacity, and performance ofStorage Spaces Direct volumes." border="false" lightbox="../media/3-performance-resiliency-capacity.png":::
+:::image type="content" source="../media/3-performance-resiliency-capacity.png" alt-text="Diagram that shows pyramid shaped graph illustrating the tradeoffs between resiliency, capacity, and performance ofStorage Spaces Direct volumes." border="false" lightbox="../media/3-performance-resiliency-capacity.png":::
 
 The choice of resiliency type should be based on the intended workload. The following table summarizes which workloads are a good fit for each resiliency type, along with their respective capacity efficiency and performance.
 
