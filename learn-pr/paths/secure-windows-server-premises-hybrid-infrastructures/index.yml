@@ -28,6 +28,8 @@ products:
 - azure
 - azure-active-directory
 - windows-server
+subjects:
+- infrastructure
 modules:
 - learn.wwl.implement-windows-server-iaas-vm-network-security
 - learn.wwl.audit-security-of-windows-server-iaas-vms

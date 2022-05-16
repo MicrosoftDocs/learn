@@ -35,6 +35,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- change-management
 modules:
 - learn.wwl.implement-tools-to-track-usage-flow
 - learn.wwl.implement-route-for-mobile-application-crash-report-data

@@ -39,6 +39,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- business-applications
 units:
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources.0-introduction
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources.1-why-monitor

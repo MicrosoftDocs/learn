@@ -27,6 +27,8 @@ products:
 - azure-iot
 - azure-iot-dps
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.wwl.examine-components-iot-solution.introduction
 - learn.wwl.examine-components-iot-solution.examine-iot-hardware-components

@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- process-workflow
 units:
 - learn.choose-azure-service-to-integrate-and-automate-business-processes.1-introduction
 - learn.choose-azure-service-to-integrate-and-automate-business-processes.2-identify-technology-options

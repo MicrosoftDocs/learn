@@ -40,6 +40,8 @@ products:
 - azure
 - vs-code
 - azure-app-service
+subjects:
+- data-visualization
 units:
 - learn.django.models-data.introduction
 - learn.django.models-data.exercise-get-starter

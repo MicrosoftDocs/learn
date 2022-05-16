@@ -44,6 +44,8 @@ prerequisites: |
   - Understanding of how to build for and deploy to mixed reality devices
   - Understanding of MRTK 
   - Fundamental understanding of Level Of Detail (LOD) concepts
+subjects:
+- mixed-reality
 units:
 - learn.azure.configure-3d-assets-mixed-reality-unity.introduction
 - learn.azure.configure-3d-assets-mixed-reality-unity.design-considerations

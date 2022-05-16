@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.scale-apps-app-service.introduction
 - learn.wwl.scale-apps-app-service.examine-autoscale-factors

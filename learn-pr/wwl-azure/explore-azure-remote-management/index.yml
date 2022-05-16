@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- security
 units:
 - learn.wwl.explore-azure-remote-management.introduction
 - learn.wwl.explore-azure-remote-management.consider-of-azure-virtual-machines

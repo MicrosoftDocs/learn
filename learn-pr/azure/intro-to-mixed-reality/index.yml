@@ -39,6 +39,8 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+subjects:
+- mixed-reality
 units:
 - learn.intro-to-mixed-reality.1-introduction
 - learn.intro-to-mixed-reality.2-what

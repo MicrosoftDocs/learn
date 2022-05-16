@@ -29,6 +29,9 @@ roles:
 products:
 - azure
 - azure-sql-database
+subjects:
+- migration
+- cloud-computing
 modules:
 - learn.design-your-migration-to-azure
 - learn.wwl.prepare-onpremises-workloads-migration-azure

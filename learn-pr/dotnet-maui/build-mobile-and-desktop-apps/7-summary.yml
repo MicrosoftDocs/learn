@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.build-mobile-and-desktop-apps.summary
+title: Summary 
+metadata:
+  unitType: summary 
+  title: "Summary" 
+  description: "Summary" 
+  ms.date: 01/14/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 1 
+content: |
+  [!include[](includes/7-summary.md)]

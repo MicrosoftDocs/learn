@@ -31,6 +31,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- container
 units:
 - learn.wwl.run-containers-windows-server.introduction
 - learn.wwl.run-containers-windows-server.define-containers

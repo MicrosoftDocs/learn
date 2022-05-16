@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- data-engineering
 units:
 - learn.wwl.manage-sap-hana-azure-large-instances.introduction
 - learn.wwl.manage-sap-hana-azure-large-instances.connect-to-azure-from-azure-virtual-machines-from-premises-locations

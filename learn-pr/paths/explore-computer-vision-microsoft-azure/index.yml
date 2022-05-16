@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.analyze-images-computer-vision
 - learn.wwl.classify-images-custom-vision

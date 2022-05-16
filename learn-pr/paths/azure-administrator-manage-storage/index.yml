@@ -74,6 +74,10 @@ products:
 - azure-files
 - azure-data-box-family
 - azure-virtual-machines
+subjects:
+- storage
+- cloud-computing
+- it-management-monitoring
 modules:
 - learn.create-azure-storage-account
 - learn.choose-the-right-disk-storage-for-vm-workload

@@ -39,16 +39,19 @@ Rock, paper, scissors is a game played by two participants. The game consists of
 
 ## Create classes and state
 
-The preceding table tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you can *scaffold* some initial code that will help support the creation of the game.
+The preceding table tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you can *scaffold* some initial code as a foundation on which to build the game.
 
 
-1. Create a file `rock-paper-scissor.py` using the terminal and open the editor:
+1. Copy the code below into the terminal and press <kbd>Enter</kbd>, to create a file `rock-paper-scissor.py` and open the editor: 
 
    ```bash
    touch rock-paper-scissor.py
    code .
    ```
 
+   > [!TIP]
+   > Use the contextual menu (mouse right-click) to paste code into the terminal.
+  
 1. Give it the following content and save the file (<kbd>Ctrl+S</kbd> or <kbd>Command+S</kbd> on macOS):
 
    ```python
@@ -57,27 +60,35 @@ The preceding table tells the story of how the game progresses through different
    class Game:
    ```
 
+   > [!TIP]
+   > Use <kbd>Ctrl+V</kbd> to paste code into the editor.
+
    You have the needed classes created for your game. Next, you need to think about what data you have and what class to place it on.
 
-1. Keep working with the same file, and update the code like so, then save the file:
+1. Keep working with the same file, and expand the code like so, then save the file:
 
    ```python
    class Participant:
-     def __init__(self):
-       self.points = 0
-       self.choice = ""
+       def __init__(self):
+           self.points = 0
+           self.choice = ""
 
    class GameRound:
 
    class Game:
-      def __init__(self):
-        self.endGame = False
-        self.participant = Participant()
-        self.secondParticipant = Participant()
+       def __init__(self):
+           self.endGame = False
+           self.participant = Participant()
+           self.secondParticipant = Participant()
 
    ```
 
-   We gave the `Participant` class the attributes `points` and `choice` as indicated by the first and third line of your table.
+   > [!TIP]
+   > - You can drag the separator between the editor and the terminal to adjust the space available.
+   > - You can close the editor from the `...` menu.
+   > - You can type `code .` in the terminal to reopen the editor.
+
+   We gave the `Participant` class the attributes `points` and `choice` as indicated by the first and third line of our table.
 
    We gave the `Game` the field `endGame` because of the fourth line. Additionally, the `Game` class has two participants, `participant` and `secondParticipant`. There were two roles a variable on an object could have. The roles could be a state, like the floor of an elevator, or a descriptive attribute. The `points` and `choice` attributes are state variables in this context. The participants on the `Game` class are descriptive attributes because a game *has* participants.
 

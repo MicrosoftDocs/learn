@@ -23,6 +23,8 @@ roles:
 - administrator
 products:
 - azure-network-watcher
+subjects:
+- networking
 units:
 - learn.wwl.configure-network-watcher.introduction
 - learn.wwl.configure-network-watcher.describe-features

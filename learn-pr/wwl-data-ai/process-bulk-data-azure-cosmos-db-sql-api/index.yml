@@ -22,6 +22,10 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-warehousing
+- data-modeling
+- data-engineering
 units:
 - learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.introduction
 - learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.create-bulk-operations-sdk

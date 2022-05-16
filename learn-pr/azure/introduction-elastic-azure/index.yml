@@ -31,6 +31,8 @@ products:
   - azure-linux-vm
   - azure-virtual-machines
   - azure-kubernetes-service
+subjects:
+- data-management
 units:
 - learn.azure.introduction-elastic-azure.introduction
 - learn.azure.introduction-elastic-azure.what

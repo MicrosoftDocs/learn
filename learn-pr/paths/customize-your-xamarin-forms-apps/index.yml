@@ -21,6 +21,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 modules:
 - learn-xamarin.explore-cross-platform-design-patterns
 - learn-xamarin.separate-your-ui-and-code-with-xamarin-forms-data-binding

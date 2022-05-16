@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-database-postgresql
+subjects:
+- data-engineering
 units:
 - learn.azure.create-and-connect-to-azure-database-postgresql.1-introduction
 - learn.azure.create-and-connect-to-azure-database-postgresql.2-create-database-azure-database-postgresql

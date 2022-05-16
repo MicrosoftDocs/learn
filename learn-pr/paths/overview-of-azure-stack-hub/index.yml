@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-stack
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.azure-stack-hub
 - learn.wwl.datacenter-integration-for-azure-stack-hub

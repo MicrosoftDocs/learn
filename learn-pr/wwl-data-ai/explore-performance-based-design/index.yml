@@ -31,6 +31,8 @@ roles:
 products:
 - azure-sql-database
 - sql-server
+subjects:
+- cloud-computing
 units:
 - learn.wwl.explore-performance-based-design.introduction
 - learn.wwl.explore-performance-based-design.describe-normalization

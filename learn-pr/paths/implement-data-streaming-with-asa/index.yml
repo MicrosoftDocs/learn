@@ -23,6 +23,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-stream-analytics
+subjects:
+- serverless-compute
 modules:
 - learn.data-ai.introduction-to-data-streaming
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs

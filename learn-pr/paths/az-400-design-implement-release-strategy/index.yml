@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- change-management
 modules:
 - learn.wwl.introduction-to-continuous-delivery
 - learn.wwl.explore-release-strategy-recommendations

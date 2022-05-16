@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- database
 units:
 - learn.wwl.explore-non-relational-data-stores-azure.introduction
 - learn.wwl.explore-non-relational-data-stores-azure.azure-cosmos-db

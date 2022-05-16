@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - github
+subjects:
+- devops
 units:
 - learn.introduction-github-advanced-security.introduction 
 - learn.introduction-github-advanced-security.what-is-github-advanced-security

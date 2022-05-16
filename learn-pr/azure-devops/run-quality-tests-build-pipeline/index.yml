@@ -34,6 +34,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.run-quality-tests-build-pipeline.1-introduction
 - learn.azdo.run-quality-tests-build-pipeline.2-what-is-automated-testing

@@ -29,6 +29,8 @@ products:
 - azure
 - azure-immersive-reader
 - azure-cognitive-services
+subjects:
+- accessibility
 units:
 - learn.azure.intro-to-immersive-reader.introduction
 - learn.azure.intro-to-immersive-reader.what-is-immersive-reader

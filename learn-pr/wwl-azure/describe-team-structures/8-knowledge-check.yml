@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2022
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Delivery Plans."
       isCorrect: false
       explanation: "Incorrect. A Kanban Board lets you visualize the flow of work and constrain the amount of work in progress. Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work."
-  - content: "Which of the following choices isn't true about processes and methodologies?"
+  - content: "Which of the following choices isn't describing processes and methodologies correctly?"
     choices:
     - content: "It is required to implement Waterfall to evolve and implement Agile."
       isCorrect: true

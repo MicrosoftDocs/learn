@@ -30,6 +30,9 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- cloud-security
+- machine-learning
 units:
 - learn.azure.azure-machine-learning-security.introduction
 - learn.azure.azure-machine-learning-security.what-is-role-based-access-control

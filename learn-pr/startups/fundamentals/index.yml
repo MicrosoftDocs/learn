@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - consumer
+subjects:
+- process-workflow
 units:
 - learn.startups.fundamentals.introduction
 - learn.startups.fundamentals.found-startup

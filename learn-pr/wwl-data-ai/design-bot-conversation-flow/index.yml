@@ -31,6 +31,8 @@ products:
 - azure
 - azure-bot-service
 - vs-code
+subjects:
+- chatbot
 units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design

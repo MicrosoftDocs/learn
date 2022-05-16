@@ -29,6 +29,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.introduction
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.configuring-sap-netweaver-anydb-azure-vms

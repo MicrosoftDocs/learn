@@ -28,6 +28,8 @@ products:
 - azure
 - azure-logic-apps
 - azure-resource-manager
+subjects:
+- cloud-computing
 units:
 - learn.azure.logic-apps-and-arm-templates.introduction
 - learn.azure.logic-apps-and-arm-templates.describe-a-logic-app-using-workflow-definition-language

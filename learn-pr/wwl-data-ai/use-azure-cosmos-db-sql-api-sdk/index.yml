@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- cloud-computing
 units:
 - learn.wwl.use-azure-cosmos-db-sql-api-sdk.introduction
 - learn.wwl.use-azure-cosmos-db-sql-api-sdk.understand-sdk

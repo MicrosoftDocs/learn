@@ -29,6 +29,8 @@ products:
 - azure-cosmos-db
 - azure-clis
 - azure-portal
+subjects:
+- data-engineering
 units:
 - learn.access-data-with-cosmos-db-and-sql-api.1-introduction
 - learn.access-data-with-cosmos-db-and-sql-api.2-setup-cosmosdb
