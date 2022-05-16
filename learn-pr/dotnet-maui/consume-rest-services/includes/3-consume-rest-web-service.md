@@ -50,10 +50,10 @@ HttpResponseMessage response = await client.SendAsync(message);
 
 This code fragment performs the following tasks:
 
-    - It creates an instance of `HttpClient` called **client** that it uses to send a message.
-    - It creates an instance of `HttpMessage` called **message** that it uses to model the message. The **message** has the HTTP verb and URL.
-    - It sets the `Content` property of the `HttpMessage`, using the `JsonContent.Create` function. That function will automatically serialize the **part** variable into JSON suitable for sending to the web service.
-    - It sends the message using the `HttpClient` object. An `HttpResponseMessage` is returned that contains information such as the status code and information returned by the web service.
+- It creates an instance of `HttpClient` called **client** that it uses to send a message.
+- It creates an instance of `HttpMessage` called **message** that it uses to model the message. The **message** has the HTTP verb and URL.
+- It sets the `Content` property of the `HttpMessage`, using the `JsonContent.Create` function. That function will automatically serialize the **part** variable into JSON suitable for sending to the web service.
+- It sends the message using the `HttpClient` object. An `HttpResponseMessage` is returned that contains information such as the status code and information returned by the web service.
 
 ### Read a resource with HttpClient
 
