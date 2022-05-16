@@ -132,7 +132,7 @@ Azure Automation DSC supports the following operating systems:
   - 8.1
   - 7
 - Linux
-  - Most variants, but not Debian or Ubuntu 18.04
+  - The DSC Linux extension supports all the Linux distributions listed in the [PowerShell DSC documentation](/powershell/dsc/getting-started/lnxgettingstarted).
 
 PowerShell DSC is installed on all Linux machines supported by Azure Automation DSC.
 
@@ -150,9 +150,7 @@ Proxy support for the DSC agent is available in Windows builds 1809 and later. P
 
 If your nodes are located in a private network, DSC needs the following port and URLs to communicate with Azure Automation:
 
-  - **Port**: Only TCP 443 is required for outbound internet access.
-  - **Global URL**:  *.azure-automation.net
-  - **Global URL of US Gov Virginia**: *.azure-automation.us
-  - **Agent service**: https://`<workspaceId>`.agentsvc.azure-automation.net
-
-
+- **Port**: Only TCP 443 is required for outbound internet access.
+- **Global URL**:  *.azure-automation.net
+- **Global URL of US Gov Virginia**: *.azure-automation.us
+- **Agent service**: https://`<workspaceId>`.agentsvc.azure-automation.net
