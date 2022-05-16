@@ -2,6 +2,8 @@ In this unit, you'll build and deploy a sample PHP application on to Azure App S
 
 ## STEP 1 - Create an Azure Database for MySQL - Flexible Server
 
+First, create a MySQL - Flexible Server
+
 ## STEP 2 - Build your application
 
 ## STEP 3 - Create an Azure App Service Web App
