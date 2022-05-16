@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.explore-kubernetes-tooling.introduction
 - learn.wwl.explore-kubernetes-tooling.explore-kubectl

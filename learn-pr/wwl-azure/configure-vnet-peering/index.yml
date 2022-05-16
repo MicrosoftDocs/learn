@@ -23,6 +23,8 @@ roles:
 - administrator
 products:
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.configure-vnet-peering.introduction
 - learn.wwl.configure-vnet-peering.determine-uses

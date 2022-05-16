@@ -27,6 +27,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-automation
+subjects:
+- virtual-machine
 units:
 - learn.keep-your-virtual-machines-updated.1-introduction
 - learn.keep-your-virtual-machines-updated.2-update-management-solution-on-a-vm

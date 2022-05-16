@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cognitive-services
+subjects:
+- natural-language-processing
 modules:
 - learn.wwl.transcribe-speech-input-text
 - learn.wwl.translate-speech-speech-service

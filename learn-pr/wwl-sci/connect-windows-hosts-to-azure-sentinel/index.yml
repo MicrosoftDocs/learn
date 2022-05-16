@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.connect-windows-hosts-to-azure-sentinel.introduction
 - learn.wwl.connect-windows-hosts-to-azure-sentinel.plan-for-security-events-connector

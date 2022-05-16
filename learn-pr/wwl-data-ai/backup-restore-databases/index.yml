@@ -30,6 +30,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- business-continuity
 units:
 - learn.wwl.backup-restore-databases.introduction
 - learn.wwl.backup-restore-databases.backup-restore-sql-server-running-azure-virtual-machines

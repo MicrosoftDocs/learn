@@ -72,6 +72,10 @@ products:
 - azure-application-insights
 - azure-backup
 - azure-site-recovery
+subjects:
+- cloud-computing
+- it-management-monitoring
+- business-continuity
 modules:
 - learn.design-monitoring-strategy-on-azure
 - learn.azure.monitor-azure-vm-using-diagnostic-data

@@ -25,6 +25,8 @@ products:
 - azure-bot-service
 - azure-cognitive-services
 - azure-machine-learning
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.get-started-ai-fundamentals.introduction-ai
 - learn.wwl.get-started-ai-fundamentals.understand-machine-learn

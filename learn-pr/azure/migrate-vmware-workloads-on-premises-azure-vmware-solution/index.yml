@@ -33,6 +33,9 @@ roles:
 products:
 - azure
 - azure-vmware-solution
+subjects:
+- data-warehousing
+- migration
 units:
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.introduction
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.plan-hcx-deployment

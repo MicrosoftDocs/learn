@@ -28,6 +28,8 @@ products:
 - azure-key-vault
 - azure-active-directory
 - azure-api-management
+subjects:
+- cloud-security
 modules:
 - learn.azure-well-architected-security
 - learn.top-5-security-items-to-consider

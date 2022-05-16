@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-portal
+subjects:
+- cloud-computing
 units:
 - learn.wwl.explore-azure-portal.introduction
 - learn.wwl.explore-azure-portal.examine

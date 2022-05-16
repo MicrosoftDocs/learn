@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.translate-text-with-translator-service.introduction
 - learn.wwl.translate-text-with-translator-service.provision-translator-resource

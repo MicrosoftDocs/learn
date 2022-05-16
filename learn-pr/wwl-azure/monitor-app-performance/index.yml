@@ -26,6 +26,8 @@ roles:
 products:
 - azure-application-insights
 - azure-monitor
+subjects:
+- cloud-computing
 units:
 - learn.wwl.monitor-app-performance.introduction
 - learn.wwl.monitor-app-performance.explore-azure-monitor

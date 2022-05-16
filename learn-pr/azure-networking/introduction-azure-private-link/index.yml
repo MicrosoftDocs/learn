@@ -30,6 +30,9 @@ roles:
 - technology-manager
 products:
 - azure-private-link
+subjects:
+- cloud-computing
+- networking
 units:
 - learn.introduction-azure-private-link.1-introduction
 - learn.introduction-azure-private-link.2-what-is-azure-private-link

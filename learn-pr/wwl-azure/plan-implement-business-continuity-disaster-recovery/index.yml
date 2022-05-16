@@ -25,6 +25,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- business-continuity
 units:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.introduction
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.disaster-recovery-for-azure-virtual-desktop

@@ -20,6 +20,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 modules:
 - learn.wwl.configure-replication-manage-failovers-azure-cosmos-db
 - learn.wwl.use-consistency-models-azure-cosmos-db-sql-api

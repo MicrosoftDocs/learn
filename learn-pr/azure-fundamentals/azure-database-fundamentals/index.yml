@@ -40,6 +40,9 @@ products:
 - azure-hdinsight
 - azure-sql-database
 - azure-synapse-analytics
+subjects:
+- database
+- data-analytics
 units:
 - learn.azure.azure-database-fundamentals.introduction
 - learn.azure.azure-database-fundamentals.azure-cosmos-db

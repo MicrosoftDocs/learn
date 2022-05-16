@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-batch
+subjects:
+- cloud-computing
 units:
 - learn.azure.create-batch-account-using-azure-portal.introduction
 - learn.azure.create-batch-account-using-azure-portal.create-azure-batch-account

@@ -27,6 +27,9 @@ roles:
 - support-engineer
 products:
 - azure-dns
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.wwl.name-resolution-issues.introduction
 - learn.wwl.name-resolution-issues.name-resolution-issues

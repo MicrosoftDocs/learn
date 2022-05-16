@@ -39,6 +39,8 @@ prerequisites: |
     - Bot Framework Emulator, a testing environment for your bot
     - PowerShell, a cross-platform command shell for automating tasks
 
+subjects:
+- chatbot
 units:
 - learn.advocates.deploy-responsible-bot.1-introduction
 - learn.advocates.deploy-responsible-bot.2-responsible-bot-principles

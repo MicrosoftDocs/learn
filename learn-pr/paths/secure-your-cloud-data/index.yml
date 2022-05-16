@@ -27,6 +27,8 @@ products:
 - azure-cosmos-db
 - azure-synapse-analytics
 - azure-sql-database
+subjects:
+- cloud-security
 modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.top-5-security-items-to-consider
