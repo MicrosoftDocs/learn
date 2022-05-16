@@ -20,7 +20,7 @@ We recommend you apply [star schema](/power-bi/guidance/star-schema) design prin
 
 The following image is the model diagram of the Adventure Works sales analysis data model. It shows a star schema design comprising a single fact table named **Sales**. The other tables are dimension tables that support the analysis of sales measures by date, sales territory, customer, reseller, order, product, and salesperson. Notice the model relationships connecting all tables. These relationships propagate filters (directly or indirectly) to the **Sales** table.
 
-![Screenshot shows a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.](../media/model-diagram-star-schema.png)
+[![Screenshot shows a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.](../media/model-diagram-star-schema.png)](../media/model-diagram-star-schema.png#lightbox)
 
 This model design supports examples presented in this unit.
 
