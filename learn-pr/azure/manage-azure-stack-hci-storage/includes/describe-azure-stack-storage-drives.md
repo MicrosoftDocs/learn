@@ -53,4 +53,4 @@ The choice of the drive types impacts the Azure Stack HCI storage performance an
 
 The following diagram provides a comparison between non-volatile storage technologies available in Azure Stack HCI—HDD, SSD, NVMe, and PMEM. Horizontal bars represent relative values of price per gigabyte (GB), throughput and IOPS, MTBF, latency, and maximum capacity. Overall, latency and maximum capacity are highest in HDD, and lowest in PMEM. All four technologies have relatively high MTBF values.
 
-:::image type="content" source="../media/2-non-volatile-storage-comparison.png" alt-text="Diagram that shows comparison of price per GB, throughput/I O P S, M T B F, latency, and maximum capacity between H D D, S S D, N V M e, and P M E M." border="false" lightbox="../media/2-non-volatile-storage-comparison.png":::
+:::image type="content" source="../media/2-non-volatile-storage-comparison.png" alt-text="Diagram that shows comparison of price per G B, throughput/I O P S, M T B F, latency, and maximum capacity between H D D, S S D, N V M e, and P M E M." border="false" lightbox="../media/2-non-volatile-storage-comparison.png":::

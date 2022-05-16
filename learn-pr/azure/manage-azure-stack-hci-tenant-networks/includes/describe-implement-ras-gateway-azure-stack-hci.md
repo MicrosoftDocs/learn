@@ -105,7 +105,7 @@ Creating an IPsec gateway connection by using Windows Admin Center involves the 
     1. Add **Routes** to the connection, including their respective metrics and destination subnet prefixes.
     1. Enter the **IPsec shared secret** that matches the secret configured on the remote gateway, and then select **Create**.
 
-:::image type="content" source="../media/4-create-ipsec-gateway-connection.png" alt-text="Screenshot of the Gateway connections pane in Windows Admin Center depicting the creation of a new IPsec gateway connection." border="false" lightbox="../media/4-create-ipsec-gateway-connection.png":::
+:::image type="content" source="../media/4-create-ipsec-gateway-connection.png" alt-text="Screenshot of the Gateway connections pane in Windows Admin Center depicting the creation of a new I P S E C gateway connection." border="false" lightbox="../media/4-create-ipsec-gateway-connection.png":::
 
 #### Create a GRE gateway connection
 
