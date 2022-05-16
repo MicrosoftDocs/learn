@@ -39,7 +39,7 @@ quiz:
           isCorrect: false
           explanation: "You are not able to attach the debugger to Azure App Service in the first place if your version of Visual Studio is unsupported."
         - content: "The Visual Studio debugger failed to attach to the process."
-          isCorrect: true
+          isCorrect: false
           explanation: "The debugger can still be attached even if breakpoints are not able to be hit."
     - content: "Which process should you attach to when debugging an app hosted in Azure App Service?"
       choices:
