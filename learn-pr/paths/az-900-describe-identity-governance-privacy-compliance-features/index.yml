@@ -78,6 +78,8 @@ products:
 - azure-policy
 - azure-blueprints
 - azure-rbac
+subjects:
+- identity-access
 modules:
 - learn.azure.secure-access-azure-identity-services
 - learn.azure.build-cloud-governance-strategy-azure

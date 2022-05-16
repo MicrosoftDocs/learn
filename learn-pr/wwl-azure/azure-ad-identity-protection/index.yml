@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.azure-ad-identity-protection.introduction
 - learn.wwl.azure-ad-identity-protection.identity-protection

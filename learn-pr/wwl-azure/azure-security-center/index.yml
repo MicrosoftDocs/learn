@@ -29,6 +29,9 @@ products:
 - azure
 - azure-defender
 - azure-security-center
+subjects:
+- cloud-security
+- threat-protection
 units:
 - learn.wwl.azure-security-center.introduction
 - learn.wwl.azure-security-center.cyber-kill-chain

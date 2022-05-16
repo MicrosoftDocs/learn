@@ -29,6 +29,9 @@ roles:
 products:
 - azure-cosmos-db
 - azure-synapse-analytics
+subjects:
+- data-analytics
+- data-engineering
 units:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.introduction
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.understand-patterns

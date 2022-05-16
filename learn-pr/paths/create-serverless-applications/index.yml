@@ -29,6 +29,8 @@ products:
 - azure-cloud-shell
 languages:
 - powershell
+subjects:
+- digital-application-innovation
 modules:
 - learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.create-serverless-logic-with-functions

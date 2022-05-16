@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.configure-user-group-accounts.introduction
 - learn.wwl.configure-user-group-accounts.create-user-accounts

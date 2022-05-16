@@ -28,6 +28,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- finance-accounting
 units:
 - learn.wwl.configure-subscriptions.introduction
 - learn.wwl.configure-subscriptions.identify-regions

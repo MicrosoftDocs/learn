@@ -35,6 +35,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-custom-module-development-for-iot-edge.introduction
 - learn.wwl.explore-custom-module-development-for-iot-edge.develop-deploy-custom-module

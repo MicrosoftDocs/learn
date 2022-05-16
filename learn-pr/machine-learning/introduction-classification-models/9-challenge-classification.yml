@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-classification-models.challenge-classification
+title: Challenge - Train a classification model to classify wine data
+metadata:
+  title: Challenge - Train a classification model to classify wine data
+  description: In this unit, you'll train a classification model to analyze and classify the chemical and visual features of wine samples.
+  ms.date: 02/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: /learn/modules/introduction-classification-models/notebooks/9-challenge-classification.ipynb

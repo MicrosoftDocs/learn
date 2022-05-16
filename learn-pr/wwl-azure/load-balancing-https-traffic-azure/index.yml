@@ -29,6 +29,8 @@ products:
 - azure-firewall
 - azure-front-door
 - azure-virtual-network
+subjects:
+- cloud-computing
 units:
 - learn.wwl.load-balancing-https-traffic-azure.introduction
 - learn.wwl.load-balancing-https-traffic-azure.design-azure-application-gateway

@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.create-release-pipeline.1-introduction
 - learn.azdo.create-release-pipeline.2-what-is-cd

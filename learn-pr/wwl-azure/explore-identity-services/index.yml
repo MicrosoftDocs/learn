@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.explore-identity-services.introduction
 - learn.wwl.explore-identity-services.explore-azure-virtual-machine-authentication,-authorization,-access-control

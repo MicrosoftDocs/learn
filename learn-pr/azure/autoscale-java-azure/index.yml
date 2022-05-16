@@ -31,6 +31,8 @@ products:
 - azure
 - azure-database-mysql
 - azure-spring-cloud
+subjects:
+- development-tools
 units:
 - learn.autoscale-java-azure.introduction
 - learn.autoscale-java-azure.exercise-setup

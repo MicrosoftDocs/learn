@@ -24,6 +24,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-management
 units:
 - learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.introduction
 - learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.describe

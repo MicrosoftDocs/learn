@@ -73,6 +73,8 @@ products:
 - azure-container-instances
 - azure-container-registry
 - azure-storage
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.configure-azure-resources-tools
 - learn.wwl.use-azure-resource-manager

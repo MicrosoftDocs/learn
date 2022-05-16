@@ -41,6 +41,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.automate-configuration-of-windows-server-iaas-vms.introduction
 - learn.wwl.automate-configuration-of-windows-server-iaas-vms.describe-azure-automation

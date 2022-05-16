@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- networking
+- architecture
 units:
 - learn.azure.enterprise-scale-networking.1-introduction
 - learn.azure.enterprise-scale-networking.2-ip-addressing

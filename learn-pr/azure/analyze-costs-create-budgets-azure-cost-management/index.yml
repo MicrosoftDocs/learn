@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure-cost-management
+subjects:
+- cloud-computing
 units:
 - learn.azure.analyze-costs-create-budgets-azure-cost-management.introduction
 - learn.azure.analyze-costs-create-budgets-azure-cost-management.cost-management-principles

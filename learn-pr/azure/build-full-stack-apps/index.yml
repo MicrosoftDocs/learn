@@ -37,7 +37,9 @@ products:
   - azure-functions
   - azure-app-service-static
   - azure-web-apps
-units:  
+subjects:
+- database
+units:
 - learn.azure.build-full-stack-apps.introduction
 - learn.azure.build-full-stack-apps.exercise-deploy-resources
 - learn.azure.build-full-stack-apps.accelerate-app-development

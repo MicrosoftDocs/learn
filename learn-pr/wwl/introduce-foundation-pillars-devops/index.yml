@@ -36,6 +36,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 units:
 - learn.wwl.introduce-foundation-pillars-devops.introduction
 - learn.wwl.introduce-foundation-pillars-devops.discover-devops

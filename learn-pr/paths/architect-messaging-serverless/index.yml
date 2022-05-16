@@ -25,6 +25,8 @@ products:
 - azure-event-grid
 - azure-service-bus
 - azure-logic-apps
+subjects:
+- architecture
 modules:
 - learn.create-serverless-logic-with-functions
 - learn.azure.route-and-process-data-logic-apps

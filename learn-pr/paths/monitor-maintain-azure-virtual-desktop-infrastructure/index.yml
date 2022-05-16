@@ -25,6 +25,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- infrastructure
 modules:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery
 - learn.wwl.automate-azure-virtual-desktop-management-tasks

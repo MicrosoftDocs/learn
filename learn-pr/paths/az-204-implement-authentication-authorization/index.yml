@@ -23,6 +23,8 @@ roles:
 products:
 - azure-sdks
 - microsoft-identity-web
+subjects:
+- identity-access
 modules:
 - learn.wwl.explore-microsoft-identity-platform
 - learn.wwl.implement-authentication-by-using-microsoft-authentication-library

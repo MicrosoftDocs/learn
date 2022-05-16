@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-key-vault
+subjects:
+- security
 units:
 - learn.wwl.azure-key-vault.introduction
 - learn.wwl.azure-key-vault.azure-key-vault

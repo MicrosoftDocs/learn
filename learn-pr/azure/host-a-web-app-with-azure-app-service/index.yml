@@ -29,6 +29,8 @@ products:
 - azure
 - azure-app-service
 - azure-portal
+subjects:
+- cloud-computing
 units:
 - learn.host-a-web-application-with-azure-web-apps.1-introduction
 - learn.host-a-web-application-with-azure-web-apps.2-create-a-web-app-in-the-azure-portal

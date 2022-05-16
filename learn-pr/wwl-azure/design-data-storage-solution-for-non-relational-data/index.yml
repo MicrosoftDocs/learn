@@ -32,6 +32,8 @@ products:
 - azure-disk-storage
 - azure-storage
 - azure-storage-accounts
+subjects:
+- storage
 units:
 - learn.wwl.design-data-storage-solution-for-non-relational-data.introduction
 - learn.wwl.design-data-storage-solution-for-non-relational-data.design-for

@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.azure-security.secure-aad-users-with-mfa
 - learn.wwl.manage-user-authentication

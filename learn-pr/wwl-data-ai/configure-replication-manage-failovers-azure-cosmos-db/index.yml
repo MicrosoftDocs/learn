@@ -24,6 +24,9 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
+- information-protection-governance
 units:
 - learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.introduction
 - learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.understand-replication

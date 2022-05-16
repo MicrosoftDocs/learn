@@ -27,6 +27,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- information-protection-governance
+- cloud-computing
 units:
 - learn.wwl.describe-resource-governance-capabilities-azure.introduction
 - learn.wwl.describe-resource-governance-capabilities-azure.describe-azure-policy

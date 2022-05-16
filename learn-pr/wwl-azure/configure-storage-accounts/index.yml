@@ -26,6 +26,8 @@ roles:
 - administrator
 products:
 - azure-storage-accounts
+subjects:
+- storage
 units:
 - learn.wwl.configure-storage-accounts.introduction
 - learn.wwl.configure-storage-accounts.implement-azure-storage

@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.create-configure-manage-identities.introduction
 - learn.wwl.create-configure-manage-identities.users

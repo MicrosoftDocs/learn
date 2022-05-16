@@ -26,6 +26,8 @@ products:
 - azure-key-vault
 - azure-active-directory
 - azure-api-management
+subjects:
+- security
 modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.azure-security.create-security-baselines

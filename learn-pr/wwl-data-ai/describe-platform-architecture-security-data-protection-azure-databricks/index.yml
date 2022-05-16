@@ -24,6 +24,9 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- information-protection-governance
+- security
 units:
 - learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks.introduction
 - learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks.describe-platform-architecture
