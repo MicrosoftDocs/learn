@@ -1,9 +1,9 @@
-As a data modeler, you can consider restricting user access to Power BI model objects. Object-level security (OLS) can restrict access to specific tables and columns, and their metadata. Typically, you apply OLS to secure objects that store sensitive data, like employee personally identifiable information (PII).
+As a data modeler, you can consider restricting user access to Power BI model objects. Object-level security (OLS) can restrict access to specific tables and columns, and their metadata. Typically, you apply OLS to secure objects that store sensitive data, like employee personal data.
 
-When Power BI enforces OLS, not only does it restrict access to tables and columns, but it can also secure metadata. When you secure metadata, it’s not possible to retrieve information about secured tables and columns by using [Dynamic Management Views (DMVs)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services?view=power-bi-premium-current).
+When Power BI enforces OLS, not only does it restrict access to tables and columns, but it can also secure metadata. When you secure metadata, it’s not possible to retrieve information about secured tables and columns by using [Dynamic Management Views (DMVs)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services).
 
 > [!IMPORTANT]
-> Tabular models can hide tables and columns (and other objects) by using a [perspective](/analysis-services/tabular-models/perspectives-ssas-tabular?view=power-bi-premium-current). A perspective defines viewable subsets of model objects to help provide a specific focus for report authors. Perspectives are intended to reduce the complexity of a model, helping report authors find resources of interest. However, perspectives aren’t a security feature because they don’t secure objects. A user can still query a table or column even when it’s not visible to them.
+> Tabular models can hide tables and columns (and other objects) by using a [perspective](/analysis-services/tabular-models/perspectives-ssas-tabular). A perspective defines viewable subsets of model objects to help provide a specific focus for report authors. Perspectives are intended to reduce the complexity of a model, helping report authors find resources of interest. However, perspectives aren’t a security feature because they don’t secure objects. A user can still query a table or column even when it’s not visible to them.
 
 Consider an example at Adventure Works. This organization has a data warehouse dimension table named **DimEmployee**. The table includes columns that store employee name, phone, email address, and salary. While general report consumers can see employee name and contact details, they must not be able to see salary values. Only senior Human Resources staff are permitted to see salary values. So, the data modeler used OLS to grant access to the salary column only to specific Human Resources staff.
 
@@ -41,4 +41,4 @@ However, model relationships that reference a secured column will work, providin
 
 Lastly, while it isn’t possible to secure measures, a measure that references secured objects is automatically restricted.
 
-For more information, see [Object-level security](/analysis-services/tabular-models/object-level-security?view=power-bi-premium-current).
+For more information, see [Object-level security](/analysis-services/tabular-models/object-level-security).
