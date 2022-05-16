@@ -1,3 +1,5 @@
+## Deploying the app to Azure
+
 In order to work through a remote debugging exercise with App Service you will first need to deploy an application to Azure. For this scenario you can either deploy your own app or clone the sample GitHub project below.
 
 ```Bash
@@ -46,4 +48,16 @@ When the deployment finishes Visual Studio will launch a web browser to the home
 
 :::image type="content" source="../media/visual-studio-remote-debug-error.png" alt-text="A screenshot of the application error.":::
 
-In the next exercise, you'll learn how to use the **Attach to process** remote debugging feature to track down the cause of this bug.
+## Enable remote debugging
+
+Once the application is deployed to Azure, next you must enable the remote debugging feature on the App Service. This setting will allow the Visual Studio debugger to connect to the App Service process.
+
+1) Locate your deployed application in the Azure portal. You can do this by browsing to the **App Services** page in Azure and then clicking on your **GitHubBrowser123** app.  You can also search for the App Service instance directly by name in the search bar at the top.
+
+    :::image type="content" source="../media/visual-studio-remote-debug-azure-search.png"  alt-text="A screenshot of the application error." :::
+
+2) On the App Service settings page, select **Configuration** on the left navigation, and then switch to the **General Settings** tab. Towards the bottom of the page, make sure to enable the **Remote Debugging** feature and select **Visual Studio 2022** for the **Remote Visual Studio version**.
+
+    :::image type="content" source="../media/visual-studio-remote-debug-azure-settings-small.png"  alt-text="A screenshot of the application error." lightbox="../media/visual-studio-remote-debug-azure-settings.png":::
+
+In the next exercise, you'll learn how to use the remote debugging features of Visual Studio to attach to the App Service process and solve the the app issue.
