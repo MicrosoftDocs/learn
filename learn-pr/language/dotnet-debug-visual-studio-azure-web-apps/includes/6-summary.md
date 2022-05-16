@@ -1,4 +1,4 @@
-You have learned how to troubleshoot and debug applications running on other devices and environments using Visual Studio. You explored how Visual Studio can provide a debugging experience similar to local development for remote apps, which can be useful for tracking down difficult issues. Troubleshooting issues directly with the debugger can often provide faster results than browsing logs or using monitoring tools.  Along the way you also learned about debugging symbols, and basic considerations around environment configurations.
+You have learned how to troubleshoot and debug ASP.NET Core applications running on Azure App Service using Visual Studio. You explored how Visual Studio can provide a debugging experience similar to local development for remote apps, which can be useful for tracking down difficult issues. Troubleshooting issues directly with the debugger can often provide faster results than browsing logs or using monitoring tools.  Along the way you also learned about debugging symbols, and basic considerations around environment configurations.
 
 In this module, you learned how to:
 
