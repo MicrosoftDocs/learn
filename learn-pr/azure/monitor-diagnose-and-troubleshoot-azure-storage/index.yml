@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.1-introduction
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.2-storage-troubleshooting-tools

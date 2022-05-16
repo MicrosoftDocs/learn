@@ -39,6 +39,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- development-tools
 units:
 - learn.wwl.plan-foster-inner-source.introduction
 - learn.wwl.plan-foster-inner-source.explore-foster-inner-source

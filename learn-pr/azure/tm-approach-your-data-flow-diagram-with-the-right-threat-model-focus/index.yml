@@ -29,6 +29,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.1-introduction
 - learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.1b-focused-approaches

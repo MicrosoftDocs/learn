@@ -25,6 +25,9 @@ roles:
 products: 
 - azure
 - azure-cost-management
+subjects:
+- finance-accounting
+- data-analytics
 units:
 - learn.optimize-costs-data-analysis-powerbi.introduction
 - learn.optimize-costs-data-analysis-powerbi.analyze-costs-power-bi

@@ -51,6 +51,8 @@ products:
 - azure-web-apps
 - msal-java
 - azure-service-bus
+subjects:
+- development-tools
 modules:
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-java-ee-app-to-app-service

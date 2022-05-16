@@ -26,6 +26,8 @@ roles:
 - administrator
 products:
 - azure-blob-storage
+subjects:
+- storage
 units:
 - learn.wwl.configure-blob-storage.introduction
 - learn.wwl.configure-blob-storage.implement

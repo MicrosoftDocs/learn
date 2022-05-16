@@ -34,6 +34,8 @@ roles:
 products:
 - azure-devops
 - azure
+subjects:
+- development-tools
 units:
 - learn.azdo.host-build-agent.1-introduction
 - learn.azdo.host-build-agent.2-choose-a-build-agent

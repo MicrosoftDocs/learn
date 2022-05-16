@@ -26,6 +26,8 @@ products:
 - azure-portal
 - azure-cost-management
 - azure-advisor
+subjects:
+- finance-accounting
 modules:
 - learn.azure-well-architected-cost-optimization
 - learn.azure.plan-manage-azure-costs

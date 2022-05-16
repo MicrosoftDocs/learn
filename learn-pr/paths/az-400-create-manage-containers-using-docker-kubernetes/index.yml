@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- container
 modules:
 - learn.wwl.design-container-build-strategy
 - learn.wwl.implement-docker-multi-stage-builds

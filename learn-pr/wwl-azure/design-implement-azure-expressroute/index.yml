@@ -29,6 +29,9 @@ roles:
 products:
 - azure-expressroute
 - azure-virtual-network
+subjects:
+- data-engineering
+- networking
 units:
 - learn.wwl.design-implement-azure-expressroute.introduction
 - learn.wwl.design-implement-azure-expressroute.explore

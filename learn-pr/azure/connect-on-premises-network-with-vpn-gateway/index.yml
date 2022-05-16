@@ -27,6 +27,8 @@ products:
 - azure
 - azure-virtual-network
 - azure-vpn-gateway
+subjects:
+- cloud-computing
 units:
 - learn.connect-on-premises-network-with-vpn-gateway.1-introduction
 - learn.connect-on-premises-network-with-vpn-gateway.2-connect-on-premises-networks-to-azure-using-site-to-site-vpn-gateways

@@ -21,6 +21,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.prepare-to-develop-ai-solutions-azure
 trophy:

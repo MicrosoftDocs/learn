@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.configure-web-app-settings.introduction
 - learn.wwl.configure-web-app-settings.configure-application-settings

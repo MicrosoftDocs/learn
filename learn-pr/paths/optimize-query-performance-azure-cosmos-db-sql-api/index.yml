@@ -20,6 +20,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 modules:
 - learn.wwl.choose-indexes-azure-cosmos-db-sql-api
 - learn.wwl.measure-index-azure-cosmos-db-sql-api

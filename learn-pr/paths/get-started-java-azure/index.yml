@@ -42,6 +42,10 @@ products:
 - azure-web-apps
 - msal-java
 - azure-service-bus
+subjects:
+- development-tools
+- architecture
+- cloud-computing
 modules:
 - learn.azure.intro-to-java-azure
 - learn.java-target-destinations

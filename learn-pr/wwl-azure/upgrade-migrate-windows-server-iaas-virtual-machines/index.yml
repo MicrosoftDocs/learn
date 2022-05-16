@@ -40,6 +40,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- migration
 units:
 - learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.introduction
 - learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.describe-azure-migrate

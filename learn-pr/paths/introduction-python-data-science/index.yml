@@ -36,6 +36,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- development-tools
 modules:
 - learn.reactors.python-data-science
 - learn.reactors.numpy-data-science

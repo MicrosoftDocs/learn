@@ -23,6 +23,8 @@ roles:
 - security-operations-analyst
 products:
 - azure-sentinel
+subjects:
+- data-engineering
 units:
 - learn.wwl.work-with-data-kql.introduction
 - learn.wwl.work-with-data-kql.extract-data-from-unstructured-string-fields

@@ -33,6 +33,9 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- development-tools
+- it-management-monitoring
 units:
 - learn.language.go-errors-logs.0-introduction
 - learn.language.go-errors-logs.1-errors

@@ -27,6 +27,8 @@ roles:
 products:
 - azure-active-directory
 - microsoft-identity-web
+subjects:
+- identity-access
 units:
 - learn.wwl.explore-microsoft-identity-platform.introduction
 - learn.wwl.explore-microsoft-identity-platform.microsoft-identity-platform-overview

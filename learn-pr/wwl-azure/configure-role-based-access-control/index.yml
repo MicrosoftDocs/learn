@@ -27,6 +27,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.configure-role-based-access-control.introduction
 - learn.wwl.configure-role-based-access-control.implement

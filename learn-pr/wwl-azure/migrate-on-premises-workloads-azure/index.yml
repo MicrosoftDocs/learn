@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.wwl.migrate-onpremises-workloads-azure.introduction
 - learn.wwl.migrate-onpremises-workloads-azure.enable-hyperv-host-servers-replication

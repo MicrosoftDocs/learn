@@ -33,6 +33,8 @@ products:
 - azure-cache-redis
 - azure-event-grid
 - azure-event-hubs
+subjects:
+- architecture
 units:
 - learn.wwl.design-application-architecture.introduction
 - learn.wwl.design-application-architecture.describe-message-event-scenarios

@@ -30,6 +30,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- data-management
 units:
 - learn.languages.csharp-choose-data-type.introduction
 - learn.languages.csharp-choose-data-type.value-reference-types

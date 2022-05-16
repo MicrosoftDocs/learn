@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.create-multi-page-apps
+metadata:
+  moduleType: standard
+  title: "Create multi-page .NET MAUI apps with tab and flyout navigation"
+  description: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."
+  ms.date: 05/02/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+title: Create multi-page .NET MAUI apps with tab and flyout navigation
+summary: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Implement tab navigation with .NET MAUI Shell
+    - Navigate between pages within tabbed pages
+    - Implement flyout navigation with .NET MAUI Shell    
+prerequisites: |
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+iconUrl: /learn/achievements/create-multi-page-apps.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - student
+products:
+- vs
+- dotnet
+# - maui
+units:
+- learn.dotnet-maui.create-multi-page-apps.introduction
+- learn.dotnet-maui.create-multi-page-apps.implement-flyout-navigation
+- learn.dotnet-maui.create-multi-page-apps.exercise-implement-flyout-navigation
+- learn.dotnet-maui.create-multi-page-apps.implement-tab-navigation
+- learn.dotnet-maui.create-multi-page-apps.exercise-implement-tab-navigation
+- learn.dotnet-maui.create-multi-page-apps.use-tabbed-pages-with-navigation-pages
+- learn.dotnet-maui.create-multi-page-apps.exercise-use-tabbed-pages-with-navigation-pages
+- learn.dotnet-maui.create-multi-page-apps.summary
+badge:
+  uid: learn.dotnet-maui.create-multi-page-apps.badge

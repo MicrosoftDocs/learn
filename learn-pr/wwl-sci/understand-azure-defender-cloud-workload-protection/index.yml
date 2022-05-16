@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- cloud-security
 units:
 - learn.wwl.understand-azure-defender-cloud-workload-protection.introduction
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-servers

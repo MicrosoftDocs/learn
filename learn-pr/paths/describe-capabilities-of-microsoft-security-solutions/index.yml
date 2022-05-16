@@ -50,6 +50,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- security
 modules:
 - learn.wwl.describe-basic-security-capabilities-azure
 - learn.wwl.describe-security-management-capabilities-of-azure

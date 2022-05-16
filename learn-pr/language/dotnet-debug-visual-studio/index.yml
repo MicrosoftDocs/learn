@@ -27,6 +27,8 @@ products:
 prerequisites: |
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio](https://visualstudio.com)
+subjects:
+- development-tools
 units:
 - learn.dotnet-debug-visual-studio.introduction
 - learn.dotnet-debug-visual-studio.debugger
