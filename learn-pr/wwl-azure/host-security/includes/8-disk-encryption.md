@@ -3,11 +3,11 @@
 :::image type="content" source="../media/az500-disk-encryption-44468f31.png" alt-text="A virtual machine uses storage with keys protected in a key vault.":::
 
 
-If you use Microsoft Defender for Cloud, you're be alerted if you have VMs that aren't encrypted. The alerts show as High Severity and the recommendation is to encrypt these VMs.
+If you use Microsoft Defender for Cloud, you'll be alerted if you have VMs that aren't encrypted. The alerts show as High Severity and the recommendation is to encrypt these VMs.
 
 Azure Disk Encryption is zone resilient, the same way as Virtual Machines.
 
-## Supported VMs and operating systems<br>
+## Supported VMs and operating systems
 
 **Supported VMs**
 
