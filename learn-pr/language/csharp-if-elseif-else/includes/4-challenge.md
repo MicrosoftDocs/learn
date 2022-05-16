@@ -4,7 +4,7 @@ Code challenges throughout these modules help reinforce what you've learned and 
 
 You've been asked to add a feature to your company's software. The feature is intended to improve the renewal rate of subscriptions to the software. Your task is to display a renewal message when a user signs in to the software system and is notified that their subscription will soon end. You'll need to add a couple of decision statements to properly add branching logic to the application to satisfy the requirements.
 
-### Step 1 - Delete all the code in .NET Editor from the earlier exercise
+### Step 1 - Delete all code from the earlier exercises in .NET Editor
 
 Select all the code in .NET Editor, and then press <kbd>Delete</kbd>, or press <kbd>Backspace</kbd> to delete it.
 
@@ -29,16 +29,16 @@ int discountPercentage = 0;
 Your subscription will expire soon. Renew now!
 ```
 
-**Rule 2**. If the user's subscription will expire in five days or less, display the messages:
+**Rule 2**. If the user's subscription will expire in 5 days or less, display the messages:
 
 ```output
-Your subscription expires in _ days.
+Your subscription expires in x days.
 Renew now and save 10%!
 ```
 
-Make sure to substitute _ for the value stored in the variable `daysUntilExpiration`.
+Make sure to substitute *x* for the value stored in the variable `daysUntilExpiration`.
 
-**Rule 3**. If the user's subscription will expire in one day, display the message:
+**Rule 3**. If the user's subscription will expire in 1 day, display the message:
 
 ```output
 Your subscription expires within a day!

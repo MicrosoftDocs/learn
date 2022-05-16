@@ -172,7 +172,7 @@ else
 }
 ```
 
-> [!Note]
+> [!NOTE]
 > Use the technique of temporarily hard-coding the `roll` variables to test each message.
 
 You can use `if`, `else`, and `else if` statements to create multiple exclusive conditions as Boolean expressions. In other words, when you want only one outcome to happen, but you have several possible conditions and results, use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, the final `else` code block will be executed. The `else` is optional, but it must come last.

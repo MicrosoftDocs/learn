@@ -17,7 +17,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- Experience declaring, initializing, setting, and retrieving variables using the `int` data type.
+- Experience declaring, initializing, setting, and retrieving variables by using the `int` data type.
 - Experience printing messages to output by using `Console.WriteLine()`.
 - Experience with string interpolation to combine variables into literal strings.
 - Experience working with the `System.Random` class to generate random numbers.
