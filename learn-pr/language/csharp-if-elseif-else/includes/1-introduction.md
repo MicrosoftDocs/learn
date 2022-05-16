@@ -4,20 +4,20 @@ Suppose you want to display different information to the end user depending on s
 
 By the end of this module, you'll be able to write code that can change the flow of your code's execution based on some criteria.
 
-This is one of the most exciting modules because it opens a new world of branching code, allowing your applications to do more interesting things.
+This module is exciting because it opens a new world of branching code, allowing your applications to do more interesting things.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
-- Write code that evaluates conditions by using the statements `if`, `else if`, and `else`.
+- Write code that evaluates conditions by using the statements `if`, `else`, and `else if`.
 - Build Boolean expressions to evaluate a condition.
 - Combine Boolean expressions using logical operators.
 - Nest code blocks within other code blocks.
 
 ## Prerequisites
 
-- Experience declaring, initializing, setting, and retrieving variables using the `int` data type
-- Experience printing messages to output using `Console.WriteLine()`
-- Experience with string interpolation to combine variables into literal strings
-- Experience working with the `System.Random` class to generate random numbers
+- Experience declaring, initializing, setting, and retrieving variables using the `int` data type.
+- Experience printing messages to output using `Console.WriteLine()`.
+- Experience with string interpolation to combine variables into literal strings.
+- Experience working with the `System.Random` class to generate random numbers.

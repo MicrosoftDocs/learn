@@ -1,6 +1,10 @@
-Previously, we used multiple if statements to implement the rules of our game. However, when we left off in the previous unit, there was opportunity for improvement -- improvement to the expressiveness of the code, and improvement to fix a subtle bug in our code. We'll use variants of the if statement to improve our code.
+Previously, we used multiple `if` statements to implement the rules of our game. However, when we left off in the previous unit, there was opportunity for improvement -- improvement to the expressiveness of the code and improvement to fix a subtle bug in our code. 
 
-### Step 1 - Use the if and else statements instead of two separate if statements
+## Improve code and fix a bug by adding else and else-if statements
+
+Next, we'll use variants of the `if` statement to improve our code and fix a logic bug.
+
+### Step 1 - Use if and else statements instead of two separate if statements
 
 Instead of performing two checks to display the "You win!" or "Sorry, you lose" message, we'll use the `else` keyword. Modify your code to match the following code listing:
 
@@ -39,11 +43,11 @@ else
 
 Here, if `total >= 15` is false, then the following code block the `else` keyword will execute. Because these two options are related opposites, this is a perfect scenario for the `else` keyword.
 
-### Step 2 - Modify the code to remove the stacking bonus for doubles and triples using nesting.
+### Step 2 - Modify the code to remove the stacking bonus for doubles and triples using nesting
 
 In the previous unit, we saw how we introduced a subtle logic bug into our application. Let's fix that using nesting.
 
-Nesting allows us to place code blocks inside of code blocks. In this case, we'll nest if and else statements (the check for triples) inside of another if statement (the check for doubles) to prevent them both from happening.
+Nesting allows us to place code blocks inside of code blocks. In this case, we'll nest if and else statements (the check for triples) inside of another `if` statement (the check for doubles) to prevent them both from happening.
 
 We'll nest the check for triples inside of the check for doubles. Modify the code to match the following code listing:
 
@@ -80,7 +84,7 @@ else
 }
 ```
 
-To test the code without having to run the application dozens of times, you can temporarily hardcode the values of the three roll variables by adding the following code before the line where `total` is declared and initialized.
+To test the code without having to run the application dozens of times, you can temporarily hard-code the values of the three roll variables by adding the following code before the line where `total` is declared and initialized.
 
 To test that doubles works:
 
@@ -114,9 +118,9 @@ You rolled triples!  +6 bonus to total!
 You win!
 ```
 
-### Step 3 - Use the if, else if, and else statements to give a prize instead of a win-lose message.
+### Step 3 - Use if, else, and else if statements to give a prize instead of a win-lose message
 
-To make the game more fun, let's change the game from win-or-lose to award fictitious prizes for each score. We'll offer four prizes. The player should only win one prize.
+To make the game more fun, let's change the game from win-or-lose to award fictitious prizes for each score. We'll offer four prizes. The player should win only one prize:
 
 - If the player scores greater or equal to 16, they'll win a new car.
 - If the player scores greater or equal to 10, they'll win a new laptop.
@@ -169,13 +173,13 @@ else
 ```
 
 > [!Note]
-> Use the technique of temporarily hard coding the roll variables to test each message.
+> Use the technique of temporarily hard-coding the `roll` variables to test each message.
 
-The `if`, `else if`, and `else` statements allow you to create multiple exclusive conditions as Boolean expressions. In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, then the final `else` code block will be executed. The `else` is optional, but must come last.
+The `if`, `else if`, and `else` statements allow you to create multiple exclusive conditions as Boolean expressions. In other words, when you only want one outcome to happen, but you have several possible conditions and results, use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, the final `else` code block will be executed. The `else` is optional, but it must come last.
 
 ## Recap
 
-- The combination of `if` and `else` statements allows you to test for a condition and perform code when a Boolean expression is true, and different code when the boolean expression is false.
+- The combination of `if` and `else` statements allows you to test for a condition and perform code when a Boolean expression is true and different code when the Boolean expression is false.
 - You can nest `if` statements to narrow down a possible condition. However, you should consider using the `if`, `else if`, and `else` statements instead.
 - Use `else if` to create multiple exclusive conditions.
 - An `else` is optional, but it must always come last.

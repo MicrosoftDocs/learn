@@ -1,12 +1,14 @@
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before proceeding.
 
+## Challenge: Improve renewal rate of subscriptions
+
 You've been asked to add a feature to your company's software. The feature is intended to improve the renewal rate of subscriptions to the software. Your task is to display a renewal message when a user logs into the software system and is notified their subscription will soon end. You'll need to add a couple of decision statements to properly add branching logic to the application to satisfy the requirements.
 
-### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
+### Step 1 - Delete all the code in .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, and then press <kbd>Delete</kbd>, or press <kbd>Backspace</kbd> to delete it.
+Select all of the code in .NET Editor, and then press <kbd>Delete</kbd>, or press <kbd>Backspace</kbd> to delete it.
 
-### Step 2 - Copy the following code as a starting point to the .NET Editor
+### Step 2 - Copy the following code as a starting point to .NET Editor
 
 ```csharp-interactive
 Random random = new Random();

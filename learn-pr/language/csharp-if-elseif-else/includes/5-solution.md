@@ -30,7 +30,7 @@ if (discountPercentage > 0)
 }
 ```
 
-This code is merely "*one possible solution*" because a lot depends on how you decided to implement the logic. As long as you got the right results per the rules in the challenge, and you used two `if` statements, then you did great!
+This code is merely "*one possible solution*" because a lot depends on how you decided to implement the logic. As long as you got the right results per the rules in the challenge, and you used two `if` statements, you did great!
 
 If you're successful, congratulations!  Continue on to the knowledge check in the next unit.
 
