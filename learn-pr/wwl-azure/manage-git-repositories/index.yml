@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.manage-git-repositories.introduction
 - learn.wwl.manage-git-repositories.work-large-repositories

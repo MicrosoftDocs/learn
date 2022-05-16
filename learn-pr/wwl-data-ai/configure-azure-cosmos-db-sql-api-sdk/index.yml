@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.configure-azure-cosmos-db-sql-api-sdk.introduction
 - learn.wwl.configure-azure-cosmos-db-sql-api-sdk.enable-offline-development

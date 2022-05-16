@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.manage-azure-pipeline-agents-pools.introduction
 - learn.wwl.manage-azure-pipeline-agents-pools.choose-between-microsoft-hosted-versus-self-hosted-agents

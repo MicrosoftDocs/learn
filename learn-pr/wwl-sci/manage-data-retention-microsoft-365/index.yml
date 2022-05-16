@@ -31,6 +31,9 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- compliance
+- data-management
 units:
 - learn.wwl.manage-data-retention-microsoft-365.introduction
 - learn.wwl.manage-data-retention-microsoft-365.apply-retention-to-microsoft-sharepoint-onedrive

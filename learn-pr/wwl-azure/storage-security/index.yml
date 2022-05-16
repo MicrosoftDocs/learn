@@ -31,6 +31,8 @@ products:
 - azure-files
 - azure-storage
 - azure-storage-accounts
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.storage-security.introduction
 - learn.wwl.storage-security.data-sovereignty

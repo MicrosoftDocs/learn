@@ -30,6 +30,8 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
+subjects:
+- classification-analysis
 units:
 - learn.tensorflow.intro-audio-classification-tensorflow.introduction
 - learn.tensorflow.intro-audio-classification-tensorflow.understand-audio-data

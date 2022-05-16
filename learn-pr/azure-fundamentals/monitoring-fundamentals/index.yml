@@ -31,6 +31,9 @@ products:
 - azure-advisor
 - azure-monitor
 - azure-service-health
+subjects:
+- cloud-computing
+- it-management-monitoring
 units:
 - learn.azure.monitoring-fundamentals.introduction
 - learn.azure.monitoring-fundamentals.identify-product-options

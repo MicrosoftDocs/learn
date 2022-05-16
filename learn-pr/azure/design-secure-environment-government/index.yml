@@ -27,7 +27,10 @@ products:
 - azure
 - azure-stack-edge
 - azure-stack-hub
-units: 
+subjects:
+- information-protection-governance
+- cloud-computing
+units:
 - learn.azure.design-secure-environment-government.1-introduction
 - learn.azure.design-secure-environment-government.2-discover-cloud-solutions
 - learn.azure.design-secure-environment-government.3-safeguard-data-azure

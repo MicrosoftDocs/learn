@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+subjects:
+- cloud-computing
 modules:
 - learn.intro-to-docker-containers
 - learn.intro-to-kubernetes

@@ -36,6 +36,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.reactors.unsupervised-learning-clustering.1-introduction
 - learn.reactors.unsupervised-learning-clustering.2-load-prepare-data
@@ -46,4 +48,4 @@ units:
 - learn.reactors.unsupervised-learning-clustering.7-run-outside-jupyter-notebooks
 - learn.reactors.unsupervised-learning-clustering.8-k-means-pca
 badge:
-  uid: learn.reactors.unsupervised-learning-clustering.badge 
+  uid: learn.reactors.unsupervised-learning-clustering.badge

@@ -34,6 +34,8 @@ products:
 - azure
 - azure-kubernetes-service
 - azure-machine-learning
+subjects:
+- cloud-computing
 units:
 - learn.innovate-applications-azure-cloud-technologies.1-introduction
 - learn.innovate-applications-azure-cloud-technologies.2-innovation-lifecycle

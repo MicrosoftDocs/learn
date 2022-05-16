@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 modules:
 - learn.wwl.introduction-to-devops
 - learn.wwl.choose-right-project

@@ -27,6 +27,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- cloud-computing
 units:
 - learn.wwl.survey-components-of-azure-synapse-analytics.introduction
 - learn.wwl.survey-components-of-azure-synapse-analytics.create-workspace

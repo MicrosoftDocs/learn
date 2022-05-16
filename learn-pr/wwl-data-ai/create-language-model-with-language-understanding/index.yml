@@ -31,6 +31,8 @@ products:
 - azure-cognitive-services
 - azure-language-understanding
 - azure-sdks
+subjects:
+- natural-language-processing
 units:
 - learn.wwl.create-language-model-with-luis.introduction
 - learn.wwl.create-language-model-with-luis.get-started

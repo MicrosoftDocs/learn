@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-text-speech
+subjects:
+- artificial-intelligence
 units:
 - learn.azure.intro-to-text-to-speech.introduction
 - learn.azure.intro-to-text-to-speech.what-is-text-to-speech

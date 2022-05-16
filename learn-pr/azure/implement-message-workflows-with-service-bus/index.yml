@@ -26,6 +26,10 @@ roles:
 products:
 - azure
 - azure-service-bus
+subjects:
+- data-engineering
+- collaboration
+- cloud-computing
 units:
 - learn.implement-message-workflows-with-service-bus.1-introduction
 - learn.implement-message-workflows-with-service-bus.2-choose-a-messaging-platform

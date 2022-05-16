@@ -1,4 +1,4 @@
-When you work on an application, you write code to implement business requirements. For the sake of speed and reliability, you and your team might not write all the code yourselves. You might rely on external code: libraries that someone else wrote.
+When you work on an application, you write code to implement business requirements. For the sake of speed and reliability, you and your team might not write all the code yourselves. You might rely on external code, or _libraries_, that someone else wrote.
 
 One way to approach building your app with external libraries is to use an existing ecosystem of libraries that you can download from and possibly even add to. By using these libraries, you'll be able to finish building your app sooner and take it to market faster than the competition. Another benefit to using libraries could be to ensure your app follows recommended practices for authentication and authorization. After all, protecting your data and your customers' data is a significant concern.
 

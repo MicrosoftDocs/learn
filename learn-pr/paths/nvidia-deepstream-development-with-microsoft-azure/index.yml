@@ -37,6 +37,8 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
+subjects:
+- cross-development
 modules:
 - learn.nvidia.setup-configure-nvidia-deepstream-development
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure

@@ -36,6 +36,8 @@ roles:
 products:
 - azure
 - power-bi
+subjects:
+- data-analytics
 units:
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.1-introduction
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.2-azure-storage
@@ -46,4 +48,4 @@ units:
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6b-knowledge-check
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.7-summary
 badge:
-  uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge 
+  uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge

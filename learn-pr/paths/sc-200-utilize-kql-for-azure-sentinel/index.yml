@@ -21,6 +21,9 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
+- data-analytics
 modules:
 - learn.wwl.construct-kql-statements
 - learn.wwl.analyze-results-kql

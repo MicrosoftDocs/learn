@@ -32,6 +32,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
+- it-management-monitoring
 units:
 - learn.wwl.describe-windows-server-administration-tools.introduction
 - learn.wwl.describe-windows-server-administration-tools.explore-windows-admin-center

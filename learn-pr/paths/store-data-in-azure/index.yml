@@ -24,6 +24,8 @@ products:
 - azure-storage
 - azure-portal
 - azure-cloud-shell
+subjects:
+- storage
 modules:
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account

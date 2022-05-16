@@ -32,6 +32,8 @@ products:
 - azure-iot-sdk
 - azure-portal
 - azure-time-series-insights
+subjects:
+- iot
 units:
 - learn.wwl.explore-time-series-insights-integration.introduction
 - learn.wwl.explore-time-series-insights-integration.analyze-time-stamped-data

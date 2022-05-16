@@ -28,6 +28,9 @@ roles:
 - developer
 products:
 - xbox
+subjects:
+- accessibility
+- gaming-innovation
 units:
 - learn.games-and-platforms.introduction
 - learn.games-and-platforms.customizable
