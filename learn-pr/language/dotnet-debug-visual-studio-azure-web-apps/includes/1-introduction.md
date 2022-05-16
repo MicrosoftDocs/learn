@@ -1,4 +1,4 @@
-Visual Studio provides powerful tools to help you debug and diagnose issues in your applications as you develop. These tools can also be used to debug problems with apps that are running on other computers, or even hosted in Azure.
+Visual Studio provides powerful tools to help you debug and diagnose issues in your applications during development. These tools can also be used to troubleshoot problems with apps that are running on other computers and servers, or even hosted in Azure.
 
 ## Fix Bugs Before the Application Launches
 
@@ -6,9 +6,9 @@ Suppose you work for a team that recently built and deployed an application to A
 
 ## What will we be doing?
 
-This module shows you how to use Visual Studio remote debugging features with Azure App Service. You'll see how to attach to and directly debug processes that are running externally in the cloud.
+This module shows you how to use Visual Studio remote debugging features with Azure App Service and perform essential configurations. You'll see how to attach to and directly debug processes that are running externally in the cloud. You'll also explore how `.pdb` symbol files influence debugging and how to manage them in remote scenarios.
 
-:::image source="../media/visual-studio-remote-debug-window.png" alt-text="Screenshot of Visual Studio debugging tools.":::
+:::image type="content" source="../media/visual-studio-remote-debug-conceptual.png" alt-text="A conceptual diagram of remote debugging Azure App Service with Visual Studio.":::
 
 ## What is the main goal?
 

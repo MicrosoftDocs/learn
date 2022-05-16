@@ -5,19 +5,21 @@ At this point the app is deployed to Azure, but it is not working correctly. The
 
 ## Attach the debugger to the App Service
 
-1) Select **Debug -> Attach** to process from the main menu at the top of Visual Studio to open the **Attach to Process** dialog. Using this window you can connect and attach to a variety of targets. In this case you will be connecting to the App Service instance you created in the previous step.
+1) First, make sure you have successfully built your project at least one time. This will ensure the source code and any necessary compiled files are ready to go. If you application is running locally, make sure to stop the app.
 
-2) Select the **Connection Type** drop down and choose the **Microsoft Azure App Services** option.
+2) From the main menu at the top of Visual Studio, select **Debug -> Attach to process**  to open the corresponding dialog. Using this window you can connect and attach to a variety of targets. In this case you will be connecting to the App Service instance you created in the previous step.
 
-3) Select **Find..** next to the **Connection Target** field. This will open a dialog that allows you to browse your Azure subscriptions and app services.
+3) Select the **Connection Type** drop down and choose the **Microsoft Azure App Services** option.
 
-4) Locate and select the `GitHubBrowserXXX` App Service you created in the previous step, and then choose **OK**.
+4) Select **Find..** next to the **Connection Target** field. This will open a dialog that allows you to browse your Azure subscriptions and app services.
 
-5) The `w3wp.exe` process should appear in the list of available processes to connect to, which is the main process of the Azure App Service that hosts the deployed application. Select that process and then choose **Attach** in the bottom right to connect the Visual Studio debugger.
+5) Locate and select the `GitHubBrowser123` App Service you created in the previous step, and then choose **OK**.
+
+6) The `w3wp.exe` process should appear in the list of available processes to connect to, which is the main process of the Azure App Service that hosts the deployed application. Select that process and then choose **Attach** in the bottom right to connect the Visual Studio debugger.
 
 :::image type="content" source="../media/visual-studio-remote-debug-attach-to-process.png" alt-text="A screenshot of the attach to process features.":::
 
-6) The `OnGet` method inside of `Index.cshtml.cs` handles most of the logic for the app, so make sure to set a breakpoint on the first line of that method. However, when you set the breakpoint, the icon will display hollow with a warning symbol. When you mouse over the breakpoint, Visual Studio will display a message that the breakpoint cannot be hit for optimized code when the "Just my Code" debugger is enabled. Essentially Visual Studio is not able to properly debug the app yet because the debugging symbols have not been loaded. You can easily fix this problem with a couple configuration options.
+7) The `OnGet` method inside of `Index.cshtml.cs` handles most of the logic for the app, so make sure to set a breakpoint on the first line of that method. However, when you set the breakpoint, the icon will display hollow with a warning symbol. When you mouse over the breakpoint, Visual Studio will display a message that the breakpoint cannot be hit for optimized code when the "Just my Code" setting is enabled. Essentially Visual Studio is not able to properly debug the app yet because the debugging symbols have not been loaded due to certain configurations.
 
 ## Ensure symbols are loaded
 
