@@ -76,18 +76,18 @@ We added two `if` statements to handle the winning and losing scenarios. Let's f
 The `if` statement is made up of three parts:
 
 - The `if` keyword
-- A *Boolean expression* between parenthesis `()`
+- A *Boolean expression* between parentheses `()`
 - A *code block* defined by curly braces `{ }`
 
-At run time, the Boolean expression `total > 14` is evaluated. If this is a true statement -- if the value of `total` is greater than `14` -- then the flow of execution will continue into the code defined in the code block. In other words, it will execute the code in the curly braces.
+At runtime, the Boolean expression `total > 14` is evaluated. If this statement is true and the value of `total` is greater than `14`, the flow of execution will continue into the code defined in the code block. In other words, it will execute the code in the curly braces.
 
-However, if the Boolean expression is false -- the value of `total` not greater than `14` -- then the flow of execution will skip past the code block. In other words, it will not execute the code in the curly braces.
+However, if the Boolean expression is false and the value of `total` not greater than `14`, the flow of execution will skip the code block. In other words, it will not execute the code in the curly braces.
 
 Finally, the second `if` statement controls the message if the user loses. In the next unit, we'll use a variation on the `if` statement to shorten these two statements into a single statement and more clearly express our intent.
 
 ### What is a Boolean expression?
 
-A Boolean expression is any code that returns a Boolean value, either `true` or `false`. The simplest Boolean expressions are simply the values `true` and `false`. Alternatively, a Boolean expression could be the result of a method that returns the value `true` or `false`. For example, here's a simple code example using the `string.Contains()` method to evaluate whether one string contains another string.
+A Boolean expression is any code that returns a Boolean value, either `true` or `false`. The simplest Boolean expressions are simply the values `true` and `false`. Alternatively, a Boolean expression could be the result of a method that returns the value `true` or `false`. For example, here's a simple code example using the `string.Contains()` method to evaluate whether one string contains another string:
 
 ```csharp-interactive
 string message = "The quick brown fox jumps over the lazy dog.";
@@ -120,7 +120,7 @@ In our example, we evaluated the Boolean expression `total > 14`. However, we co
 
 A code block is a collection of one or more lines of code that are defined by an opening and closing curly brace symbol `{ }`. It represents a complete unit of code that has a single purpose in our software system. In this case, at runtime, all lines of code in the code block are executed if the Boolean expression is true. Conversely, if the Boolean expression is false, all lines of code in the code block are ignored.
 
-There are code blocks at many levels in C#. In fact, .NET Editor hides the fact that our code is being executed inside of a code block that defines a method. You'll see this more acutely as you begin to write C# code using Visual Studio Code or the Visual Studio IDE.
+There are code blocks at many levels in C#. In fact, .NET Editor hides the fact that our code is being executed inside of a code block that defines a method. You'll see this structure more acutely as you begin to write C# code using Visual Studio Code or the Visual Studio IDE.
 
 Code blocks can contain other code blocks. We'll see that demonstrated later in this module as we nest one `if` statement inside of another.
 
@@ -159,15 +159,15 @@ if (total < 15)
 }
 ```
 
-Here we combine three Boolean expressions to create one large Boolean expression in a single line of code. This is sometimes called a *compound condition*. We have one outer set of parenthesis that combines three inner sets of parenthesis separated by two pipe characters.
+Here, we combine three Boolean expressions to create one large Boolean expression in a single line of code. This type of code is sometimes called a *compound condition*. We have one outer set of parentheses that combines three inner sets of parentheses separated by two pipe characters.
 
-The double pipe characters `||` are the **logical OR** operator, which basically says "either the expression to my left OR the expression to my right must be true in order for the entire Boolean expression to be true". If both Boolean expressions are false, then entire Boolean expression is false. We use two logical OR operators so that we can extend the evaluation to a third Boolean expression.
+The double pipe characters `||` are the **logical OR** operator, which basically says "either the expression to my left OR the expression to my right must be true in order for the entire Boolean expression to be true". If both Boolean expressions are false, the entire Boolean expression is false. We use two logical OR operators so that we can extend the evaluation to a third Boolean expression.
 
-First, we evaluate `(roll1 == roll2)`. If that's true, then the entire expression is true. If it's false, we evaluate `(roll2 == roll3)`. If that's true, then the entire expression is true. If it's false, we evaluate `(roll1 == roll3)`. If that's true, then the entire expression is true. If that is false, then the entire expression is false.
+First, we evaluate `(roll1 == roll2)`. If that's true, the entire expression is true. If it's false, we evaluate `(roll2 == roll3)`. If that's true, the entire expression is true. If it's false, we evaluate `(roll1 == roll3)`. If that's true, the entire expression is true. If that is false, the entire expression is false.
 
-If the large Boolean expression is true, then we execute the following code block. This time, there are two lines of code. The first line of code prints a message to the user. The second line of code increments the value of `total` by `2`.
+If the large Boolean expression is true, we execute the following code block. This time, there are two lines of code. The first line of code prints a message to the user. The second line of code increments the value of `total` by `2`.
 
-Finally, we also changed the check to see if the user won to use the `>=` operator, which more closely resembles the requirement we created as we began, but should function identically to what we wrote previously.
+Finally, we also changed the check to see if the user won to use the `>=` operator. That scenario more closely resembles the requirement we created as we began, but it should function identically to what we wrote previously.
 
 ```csharp
 if (total >= 15)
@@ -175,7 +175,7 @@ if (total >= 15)
 
 ### Step 4 - Add another if statement to implement the triples bonus
 
-Next, let's implement the rule: "If all three dice you roll result in the same value, you get six bonus points for rolling triples."  Modify the code from the previous steps to match the following code listing:
+Next, let's implement a new rule: "If all three dice you roll result in the same value, you get six bonus points for rolling triples."  Modify the code from the previous steps to match the following code listing:
 
 ```csharp-interactive
 Random dice = new Random();
@@ -211,7 +211,7 @@ if (total < 15)
 }
 ```
 
-Here we combine two Boolean expressions to create one large Boolean expression in a single line of code. We have one outer set of parentheses that combines two inner sets of parentheses separated by two ampersand characters.
+Here, we combine two Boolean expressions to create one large Boolean expression in a single line of code. We have one outer set of parentheses that combines two inner sets of parentheses separated by two ampersand characters.
 
 The double ampersand characters `&&` are the **logical AND** operator, which basically says "only if both expressions are true, then the entire expression is true". In this case, if `roll1` is equal to `roll2`, and `roll2` is equal to `roll3`, then by deduction, `roll1` must be equal to `roll3`, and the user rolled triples.
 
@@ -230,14 +230,14 @@ You rolled doubles! +2 bonus to total!
 Sorry, you lose.
 ```
 
-Or, like this:
+Or, like this output:
 
 ```output
 Dice roll: 5 + 6 + 4 = 15
 You win!
 ```
 
-Or, if you're lucky, you'll see this:
+Or, if you're lucky, you'll see this output:
 
 ```output
 Dice roll: 6 + 6 + 6 = 18
@@ -250,7 +250,7 @@ But wait, should we really reward the player for getting both a triple bonus and
 
 ### Problems in our logic and opportunities to improve the code
 
-Although this is a good start, and we've learned a lot about the `if` statement, Boolean expressions, code blocks, logical OR and AND operators, and so on, there's much that can be improved. We'll do that in the next unit.
+Although we've made a good start and we've learned a lot about the `if` statement, Boolean expressions, code blocks, logical OR and AND operators, and so on, there's much that can be improved. We'll do that in the next unit.
 
 ## Recap
 

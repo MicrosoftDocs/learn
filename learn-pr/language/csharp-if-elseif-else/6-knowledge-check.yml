@@ -13,14 +13,14 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge.
   questions:
-  - content: "Given that `int x = 5`, which of the following Boolean expressions is valid and evaluates to **true**?"
+  - content: "If `int x = 5`, which of the following Boolean expressions is valid and evaluates to *true*?"
     choices:
     - content: "`x < 5`"
       isCorrect: false
-      explanation: "`x` is not less than 5.  It is equal to 5."
+      explanation: "`x` is not less than 5.  `x` is equal to 5."
     - content: "`x > 5`"
       isCorrect: false
-      explanation: "`x` is not greater than 5.  It is equal to 5."
+      explanation: "`x` is not greater than 5.  `x` is equal to 5."
     - content: "`x = 5`"
       isCorrect: false
       explanation: "`x = 5` isn't a valid Boolean expression because it uses the assignment operator, not the equality operator."
