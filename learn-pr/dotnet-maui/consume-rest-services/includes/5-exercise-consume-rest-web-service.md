@@ -10,18 +10,14 @@ You'll perform this exercise using the Azure sandbox.
 
 1. In the Cloud Shell window, run the following command to clone the repo containing the code for this exercise, including the Parts REST web service:
 
-    > [!NOTE]
-    > All of the git repositories will be updated once they are able to be put into the office samples repo closer to the launch date of .NET MAUI.
-    >
-
     ```bash
-    git clone https://github.com/JohnPWSharp/maui-modules
+    git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
-1. Move to the **maui-modules/Consume-REST-services** folder:
+1. Move to the **Consume-REST-services** folder
 
     ```bash
-    cd maui-modules/Consume-REST-services
+    cd mslearn-dotnetmaui-consume-rest-services/src
     ```
 
 1. Run the command shown to deploy the Parts web service using the Azure Cloud Shell sandbox. This command makes the service available through a unique URL. Make a note of this URL when it's displayed. You'll configure the app to connect to the web service using this URL.
@@ -35,10 +31,10 @@ You'll perform this exercise using the Azure sandbox.
 > [!NOTE]
 > You'll perform the remainder of this exercise on your local development computer.
 
-1. On your desktop computer, open a command prompt window and clone the repository for this exercise. The code is in the [net-maui-learn-consume-rest-services](https://github.com/ADD-REPO-URL-HERE) repository.
+1. On your desktop computer, open a command prompt window and clone the repository for this exercise. The code is in the [net-maui-learn-consume-rest-services](https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services) repository.
 
     ```bash
-    git clone https://github.com/JohnPWSharp/maui-modules
+    git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
 1. Move to the **webservice\PartsServer** folder in your clone of the repository, and open the **PartsServer.sln** solution using Visual Studio. This solution contains a copy of the code for the web service that you deployed to Azure in the previous procedure.
@@ -59,23 +55,21 @@ You'll perform this exercise using the Azure sandbox.
 
 ## Examine the code for the .NET MAUI client app
 
-1. In Visual Studio, close the **PartsServer** solution, and open the **PartsClient** solution under the **exercise1\start\PartsClient** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
+1. In Visual Studio, close the **PartsServer** solution, and open the **PartsClient** solution under the **src\client** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
 
-1. In the Solution Explorer window, expand the **Data** folder for the **PartsClient** project. This folder contains the code for two classes:
+1. In the Solution Explorer window, expand the **Data**. This folder contains the code for two classes:
 
     - **PartsManager.cs**. The **PartsManager** class provides the methods that the client app uses to interact with the REST web service. This class is currently incomplete; you'll add the necessary code during this exercise. When complete, the **GetClient** method connects to the REST web service. The **GetAll** method returns a list of parts from the REST web service. The **Add** method adds a new part to the list of parts managed by the REST web service. The **Update** method modified the details of a part stored by the REST web service, and the **Delete** method removes a part.
 
     - **Part.cs**. The **Part** class models a part stored in the database. It exposes properties that an application can use to access the **PartID**, **PartName**, **PartAvailableDate**, **PartType**, and **PartSuppliers** fields. The class also provides a utility method named **SupplierString** that an application can use to retrieve a formatted string containing the supplier names.
 
-1. In the Solution Explorer window, expand the **Pages** folder for the **PartsClient** project. This folder contains the markup and code for two MAUI forms:
+1. In the Solution Explorer window, expand the **Pages** folder. This folder contains the markup and code for two pages:
 
-    - **PartsPage.xaml**. This page uses a **CollectionView** layout with a **DataTemplate** to display the details of the parts available as a list. The **DataTemplate** uses data binding to connect the data displayed to the parts retrieved from the web service. The user can also use this page to update the details of a part and save the changes, and to delete a part. The logic to retrieve, update, and delete parts is contained in the code-behind file for this page.
+    - **PartsPage.xaml**. This page uses a **CollectionView** layout with a **DataTemplate** to display the details of the parts available as a list. The **DataTemplate** uses data binding to connect the data displayed to the parts retrieved from the web service. You can click a row in the **CollectionView** to edit a part in the **AddPartPage**. Or you can click the **Add New Part** button to add a new part.
 
-    - **AddPartPage.xaml**. This page enables the user to enter and save the details for a new part. The user can specify the part name, part type, and an initial supplier. The part ID and part available date are generated automatically. Again, the logic that creates the new part and sends the appropriate HTTP request is contained in the code-behind file for this page.
+    - **AddPartPage.xaml**. This page enables the user to enter and save the details for a new part. The user can specify the part name, part type, and an initial supplier. The part ID and part available date are generated automatically.
 
-1. In the Solution Explorer window, open the **AppShell.xaml** file. This file contains the markup for the main page of the application. This page displays a tab bar with tabs for the PartsPage and AddPartsPage. The user can select a tab to display either if the two pages.
-
-1. In the Solution Explorer window, expand the **ViewModels** folder for the **PartsClient** project. This folder contains a class named **PartsViewModel**. The PartsPage and AddPartPage forms use this viewmodel to abstract the connection to the web service. This is good practice, and enables the application to utilize a different data source in the future without impacting the UI logic in the pages. The **PartsViewModel** invokes the methods in the **PartsManager** class to send and receive web service requests and responses.
+1. In the Solution Explorer window, expand the **ViewModels** folder. This folder contains 2 classes **AddPartViewModel.cs** and **PartsViewModel.cs**. These are the view models for their respective pages and contain properties and logic needed by the page to display and manipulate data.
 
 ## Sign in to the service
 
@@ -89,30 +83,35 @@ The REST service requires you to sign in first to get an authorization token. Th
     public class PartsManager
     {
         static readonly string BaseAddress = "URL GOES HERE";
-        static readonly string Url = $"{BaseAddress}/api/parts/";
+        static readonly string Url = $"{BaseAddress}/api/";
         ...
     ```
 
 1. Add the following field to the class, after the **Url** field. This field will hold the authorization token returned when the user signs in:
 
     ```csharp
-    private string authorizationKey;
+    private static string authorizationKey;
     ```
 
 1. Find the **GetClient** method. This method currently throws a **NotImplementedException** exception. Replace the existing code in this method with the following code. This code creates an **HttpClient** object, and then sends a request to the **login** endpoint of the REST web service. The service should respond with a message that contains the authorization token. Deserialize this token, and add it as a default Authorization request header for subsequent requests sent using the **HttpClient** object:
 
     ```csharp
-    private async Task<HttpClient> GetClient()
+    private static async Task<HttpClient> GetClient()
     {
-        HttpClient client = new HttpClient();
+        if (client != null)
+            return client;
+
+        client = new HttpClient();
+
         if (string.IsNullOrEmpty(authorizationKey))
-        {
+        {                
             authorizationKey = await client.GetStringAsync($"{Url}login");
             authorizationKey = JsonConvert.DeserializeObject<string>(authorizationKey);
         }
-    
+
         client.DefaultRequestHeaders.Add("Authorization", authorizationKey);
         client.DefaultRequestHeaders.Add("Accept", "application/json");
+
         return client;
     }
     ```
@@ -121,27 +120,38 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. In the **PartsManager.cs** file, find the **GetAll** method. This is an asynchronous method that returns an enumerable list of parts. This method isn't yet implemented.
 
-1. In this method, replace the code that throws the **NotImplementedException** exception. Call the **GetClient** method to retrieve an **HttpClient** object to work with. Remember that **GetClient** is asynchronous, so use the **await** operator to capture the object returned by this method.
+1. In this method, delete the code that throws the **NotImplementedException** exception.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If it internet is not present, return an empty `List<Part>`.
+
+    ```csharp
+    if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+        return new List<Part>();
+    ```
+
+1. Call the **GetClient** method to retrieve an **HttpClient** object to work with. Remember that **GetClient** is asynchronous, so use the **await** operator to capture the object returned by this method.
 
 1. Call the **GetStringAsync** method of the **HttpClient** object and provide the base URL to retrieve an array of parts from the REST web service. The data is returned asynchronously as a JSON string.
 
-1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonSerializer.Deserialize** method. Set the serializer options to be case insensitive. Return this list to the caller.
+1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonConvert.Deserialize** method. Return this list to the caller.
 
     The completed method should look like this:
 
     ```csharp
-    public async Task<IEnumerable<Part>> GetAll()
+    public static async Task<IEnumerable<Part>> GetAll()
     {
+        if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+            return new List<Part>();
+        
         HttpClient client = await GetClient();
-        string result = await client.GetStringAsync(Url);
-        JsonSerializerOptions options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-        return JsonSerializer.Deserialize<List<Part>>(result, options);
+        string result = await client.GetStringAsync($"{Url}parts");
+
+        return JsonConvert.DeserializeObject<List<Part>>(result);                       
     }
     ```
 
-1. Build and run the app using an Android emulator or an iOS simulator. When the app starts, the List Parts tab should be displayed and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
+1. Build and run the app. When the app starts, the Part List page will appear and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
 
-    :::image type="content" source="../media/5-browse-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed the parts retrieved from the web service.":::
+    :::image type="content" source="../media/5-all-parts.png" alt-text="A screenshot of the Parts Client app running on Android showing a list of parts.":::
 
 1. When you have finished browsing the data, close the app and return to Visual Studio.
 
@@ -149,133 +159,143 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. In the **PartManager** class, locate the **Add** method. This method has parameters for the part name, a supplier, and the part type. The method is asynchronous. The purpose of this method is to insert a new part into the database, and return a **Part** object representing the newly created item.
 
-1. In the method, replace the existing code and create a new **Part** object. Populate the fields with the passed-in data:
+1. Delete the existing code in the method.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If it internet is not present, return an empty `Part`.
+
+    ```csharp
+    if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+        return new Part();
+    ```
+1. Create a new **Part** object. Populate the fields with the passed-in data:
 
     - Set the **PartID** field to an empty string. This ID will be generated by the REST web service.
     - Create a new **List** to hold the name of the supplier.
     - Set the **PartAvailableDate** field to **DateTime.Now**.
     - Get an HTTP client from the **GetClient** method.
-
-1. Call the **GetClient** method to retrieve an **HttpClient** object to work with.
-1
-1. Use the **PostAsync** method of the HTTP client to send the request to the REST web service. Specify the base URL of the REST web service to add the part:
-
-    - Turn the **Part** object into a JSON string by using the **JsonSerializer.Serialize** method. Create a new **StringContent** object that contains the part as JSON. Use the **StringContent** constructor, which also takes an encoding and media type. The encoding is **Encoding.UTF8**. The media type is **application/json**.
-
-    - Capture the response from the **POST** request. The response message contains a JSON string that represents the new part. Deserialize it as a **Part**** object and return this object from the method.
-
+    
     ```csharp
-    public async Task<Part> Add(string partName, string supplier, string partType)
+    Part part = new Part()
     {
-        Part part = new Part()
-        {
-            PartName = partName,
-            Suppliers = new List<string>(new[] { supplier }),
-            PartID = string.Empty,
-            PartType = partType,
-            PartAvailableDate = DateTime.Now.Date
-        };
-
-        HttpClient client = await GetClient();
-        var response = await client.PostAsync(Url,
-            new StringContent(
-                JsonSerializer.Serialize(part),
-                Encoding.UTF8, "application/json"));
-
-        JsonSerializerOptions options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-        var insertedPart = JsonSerializer.Deserialize<Part>(
-            await response.Content.ReadAsStringAsync(), options);
-        Console.WriteLine($"{insertedPart.PartID}, {insertedPart.PartName}, {insertedPart.PartType}");
-        return insertedPart;
-    }
+        PartName = partName,
+        Suppliers = new List<string>(new[] { supplier }),
+        PartID = string.Empty,
+        PartType = partType,
+        PartAvailableDate = DateTime.Now.Date
+    };
     ```
 
-1. Build and run the app using an Android emulator or an iOS simulator. Select the ADD NEW PART tab and enter a name, type, and supplier to create a new part. Swipe right from the left edge of the panel showing the details for the new part and select **Save Changes**. This action invokes the **Add** method in the **PartsManager** class, which creates the new part in the web service. If the operation is successful, you should see an alert appear with the message **Changes Saved**:
+1. Call the **GetClient** method to retrieve an **HttpClient** object to work with.
+1. Create an `HttpRequestMessage` object. This object is used to model the request that is sent to the web service. Initiate it with parameters indicating which HTTP verb to use and the URL of the web service to communicate with.
 
-    :::image type="content" source="../media/5-add-data.png" alt-text="A screenshot of the Parts Client app running on Android. The ADD NEW PART tab is displayed. The user has provided the details for a new part to be added through the web service.":::
+    ```csharp
+    var msg = new HttpRequestMessage(HttpMethod.Post, $"{Url}parts");
+    ```
 
-    > [!NOTE]
-    > If you select **Save Changes** more than once, the page will create multiple new parts with the same values that you have entered, but with different part IDs. If you do this accidentally, you will be able to delete the duplicate parts from the **LIST PARTS** tab once you have implemented the delete functionality later in this exercise.
-    >
-    > You can select the **Clear** command to remove the details displayed by the **ADD NEW PART** page if you want to enter the details for a new part. If you need to amend an existing part, you'll be able to edit the part on the LIST PARTS page after you have completed the next task in this exercise.
+1. You need to send a payload to the webservice with the **Part** information to create. This payload will be serialized to JSON. The JSON payload will be added to the `HttpRequestMessage.Content` property and it's serialized with the `JsonContent.Create` method.
 
-1. Close the alert, and select the **LIST PARTS** tab.
+    ```csharp
+    msg.Content = JsonContent.Create<Part>(part);
+    ```
 
-1. Scroll to the end of the list and verify that the new part appears. The data for the **Part ID** and **Available** fields are generated when the new part was saved:
+1. Now send the message to the web service with the `HttpClient.SendAsync` function. That function will return a `HttpResponseMessage` object that holds information about the operation on the server. Such as HTTP response codes and information passed back from the server.
 
-    :::image type="content" source="../media/5-data-added.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed. The new part is highlighted.":::
+    ```csharp
+    var response = await client.SendAsync(msg);
+    response.EnsureSuccessStatusCode();
+    ```
+
+    Note the above uses the `response.EnsureSuccessStatusCode` method. That will throw an error if anything other than a 2xx HTTP status code is returned.
+
+1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage. And then you can deserialize the JSON using `JsonConvert.DeserializeObject`.
+
+    ```csharp
+    var returnedJson = await response.Content.ReadAsStringAsync();
+
+    var insertedPart = JsonConvert.DeserializeObject<Part>(returnedJson);
+    ```
+
+1. Finally, return the new inserted **Part**.
+
+1. Build and run the app. Select the **Add New Part** button and enter a name, type, and supplier to create a new part. Click **Save**. The **Add** method in the **PartsManager** class will get invoked, which creates the new part in the web service. If the operation is successful, the part list page will reappear with the new part at the bottom of the list.
+
+    :::image type="content" source="../media/5-insert-part.png" alt-text="A screenshot of the app running after a new part has been added. The new part is at the bottom of the list.":::
 
 1. When you have finished browsing the data, close the app and return to Visual Studio.
 
 ## Perform a PUT operation to update the details for a part in the database
 
-1. In the **PartsManager** class, find the **Update** method. This is an asynchronous method that takes a **Part** object as the parameter. The method doesn't have an explicit return value. However, the return type is **Task** so that exceptions are properly returned back to the caller. The caller can use the `await` operator to pause the progress of the method until the asynchronous method is finished.
+1. In the **PartsManager** class, find the **Update** method. This is an asynchronous method that takes a **Part** object as the parameter. The method doesn't have an explicit return value. However, the return type is **Task** so that exceptions are properly returned back to the caller. Let's implement the **PUT** functionality.
 
-1. In the method, perform the following operations:
-
-    a. Get an HTTP client from the **GetClient** method.
+1. Delete the existing code.
+1. As before, check for an internet connection.
     
-    b. Use the **PutAsync** method of the HTTP client to send a JSON-encoded to the REST web service.
-        - Serialize the **Part** to a JSON string by using the **JsonSerializer.Serialize** method. Include the encoding and content type as you did before.
-        - The URL to which the request should be sent is the base address of the REST web service with the **PartID** field of the **Part** object appended.
+    ```csharp
+    if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+        return;
+    ```
+1. Create a new `HttpRequestMessage`, this time specifying a **PUT** operation and the URL for updating parts.
 
     ```csharp
-    public async Task Update(Part part)
-    {
-        HttpClient client = await GetClient();
-        await client.PutAsync($"{Url}/{part.PartID}",
-            new StringContent(
-                JsonSerializer.Serialize(part),
-                Encoding.UTF8, "application/json"));
-    }
+    HttpRequestMessage msg = new(HttpMethod.Put, $"{Url}parts/{part.PartID}");
     ```
 
-1. Build and run the app using an Android emulator or an iOS simulator. On the **LIST PARTS** tab, place the cursor in the **PART ID**, **Part Name**, **Part Type**, or **Available** field for any part and modify the value.
+1. Set the `Content` property of the `HttpRequestMessage` using the `JsonContent.Create` function and the **part** parameter that was passed into the function.
+
+    ```csharp
+    msg.Content = JsonContent.Create<Part>(part);
+    ```
+
+1. Get an HTTP client from the **GetClient** method.
+
+    ```csharp
+    HttpClient client = await GetClient();
+    ```
+
+1. Send the request with the `HttpClient` and then make sure it was successful.
+
+    ```csharp
+    var response = await client.SendAsync(msg);
+    response.EnsureSuccessStatusCode();
+    ```
+
+1. Build and run the app. Tap or click on one of the parts from the list. The **AddPart** page will appear, this time will the properties already filled in. Update whatever you'd like.
+
+1. Click **Save**. This calls the **Update** method in the **PartsManager** class to send the changes to the web service. If successful, the parts list page will reappear will your changes reflected.
+
+    :::image type="content" source="../media/5-update-part.png" alt-text="A screenshot of the app running with the first item in the list updated.":::
 
     > [!NOTE]
-    > The **Suppliers** field contains a list and is read-only in this version of the app.
-
-1. Swipe right from the left edge of the panel showing the details for the edited part and select **Save Changes**. This action calls the **Update** method in the **PartsManager** class to send the changes to the web service. Verify that the message **Changes Saved** appears in an alert:
-
-    :::image type="content" source="../media/5-edit-data.png" alt-text="A screenshot of the Parts Client app running on Android. The LIST PARTS tab is displayed. The user has modified the details for a part and has selected the **Save Changes** command.":::
-
-    > [!NOTE]
-    > The part you added in the previous task will not appear on the **LIST PARTS** page. The data used by the app is reset to a list of predefined parts each tome the app runs. This is to provide consistency for testing the app.
-    >
-    > Don't select the **Delete** command yet. You haven't added the code for this command, and it currently throws a **NotImplementedException**.
-
-1. Experiment with the app:
-
-    - Make any changes you want to other parts and save them.
-    - Add a new part, and then use the **LIST PARTS** page to modify the part.
-
-1. When you have finished, close the app and return to Visual Studio.
-
+    > The part you added in the previous task will not appear on the **Part List** page. The data used by the app is reset to a list of predefined parts each tome the app runs. This is to provide consistency for testing the app.
+    
 ## Perform a DELETE operation to remove the details for a part from the database
 
-1. In the **PartManager** class, find the **Delete** method. This is an asynchronous method that takes a **Part** object and returns a **Task**.
+1. In the **PartManager** class, find the **Delete** method. This is an asynchronous method that takes a **partId** string and returns a **Task**.
 
-1. In the method body:
-
-    a. Get an HTTP client from the **GetClient** method.
-
-    b. Call the **DeleteAsync** method of the HTTP client object. The URL to which the request should be sent is the base address of the REST web service with the **PartID** field of the **Part** object appended.
+1. Delete the existing code.
+1. Check for an internet connection.
 
     ```csharp
-    public async Task Delete(Part part)
-    {
-        HttpClient client = await GetClient();
-        await client.DeleteAsync($"{Url}/{partID}");
-    }
+    if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
+        return;
     ```
 
-1. Build and run the app using an Android emulator or an iOS simulator.
+1. Create a new `HttpRequestMessage` object. Only now specify the **DELETE** HTTP verb and the URL to delete a part.
 
-1. On the **LIST PARTS** tab, swipe right from the left edge of the panel showing the details for the ant part and select **Delete**. This action runs the **Delete** method in the **PartsManager** class to remove the part from the web service. A **Delete Part?** alert should appear confirming that you actually want to remove the part. Select **Yes** to delete the part, and verify that it disappears from the list of parts.
+    ```csharp
+    HttpRequestMessage msg = new(HttpMethod.Delete, $"{Url}parts/{partID}");
+    ```
 
-1. Experiment with the app:
+1. Get an HTTP client from the **GetClient** method.
 
-    - Add a new part.
-    - Use the **LIST PARTS** page to remove the new part.
+    ```csharp
+    HttpClient client = await GetClient();
+    ```
 
-1. When you've finished, close the app and return to Visual Studio.
+1. Send the request to the web service. Check for success after it returns.
+
+    ```csharp
+    var response = await client.SendAsync(msg);
+    response.EnsureSuccessStatusCode();
+    ```
+
+1. Build and run the app. Select a part from the list and then in the **Add Part** page, click **Delete**. If successful, the **Part List** page will reappear and the part you deleted will no longer be visible.

@@ -10,7 +10,6 @@ In this module, you saw how to use connect to the Internet from within a .NET MA
 
 ## Learn more
 
-> [!NOTE]
-> More references will be added when they become available - the one below will be updated to its MAUI equivalent.
-> - [Connect to local web services from iOS simulators and Android emulators](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services)
->
+- [Make HTTP requests in a C# console app](/dotnet/csharp/tutorials/console-webapiclient)
+- [HTTP with .NET](/dotnet/core/extensions/http-client)
+

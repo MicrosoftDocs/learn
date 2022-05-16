@@ -10,7 +10,7 @@ The `HttpClient` class uses a task-based API for performance, and gives you acce
 
 ![Diagram showing how a client app uses an HttpClient object to send and receive HTTP messages and responses](..\media\3-http-client.png)
 
-The `HttpClient` class is available in the `System.Net.Http` namespace. An app can create an `HttpClint` object using the default constructor:
+The `HttpClient` class is available in the `System.Net.Http` namespace. An app can create an `HttpClient` object using the default constructor:
 
 ```csharp
 using System.Net.Http;
@@ -35,25 +35,29 @@ A REST web service enables a client to perform operations against data through a
 
 ### Create a new resource with HttpClient
 
-To create a new resource by using `HttpClient`, use the `PostAsync` method. The following code shows an example:
+To create a new resource by using `HttpClient`, you can use the `SendAsync` method passing it a `HttpRequestMessage` object.
+
+The `HttpRequestMessage` is meant to model the request that is sent to the web service. You specify the HTTP verb, the web service's URL, and populate any payload to send via the `HttpRequestMessage.Content` property.
 
 ```csharp
 HttpClient client = new HttpClient();
 
-StringContent content = new StringContent(JsonSerializer.Serialize(data),Encoding.UTF8, "application/json");
+HttpRequestMessage message = new HttpMessage(HttpMethod.Post, url);
+message.Content = JsonContent.Create<Part>(part);
 
-HttpResponseMessage response = await client.PostAsync("https://...", content);
+HttpResponseMessage response = await client.SendAsync(message);
 ```
 
 This code fragment performs the following tasks:
 
-- It creates an instance of `HTTPClient` called **client** that it uses to issue the `POST` request.
+- It creates an instance of `HttpClient` called **client** that it uses to send a message.
+- It creates an instance of `HttpMessage` called **message** that it uses to model the message. The **message** has the HTTP verb and URL.
+- It sets the `Content` property of the `HttpMessage`, using the `JsonContent.Create` function. That function will automatically serialize the **part** variable into JSON suitable for sending to the web service.
+- It sends the message using the `HttpClient` object. An `HttpResponseMessage` is returned that contains information such as the status code and information returned by the web service.
 
-- It creates an instance of `StringContent` called **content**. This object represents the data that the app will send to the web service as a string. This object also specifies details data such as the encoding type and data format, to ensure that the web service interprets the data correctly. In this example, the app sends the data in JSON format. Note that the variable **data** is contains the original data to be used. It's held in a serializable object. The app converts this data into JSON by using the `JsonSerializer` class in the **System.Text.Json** namespace.
+### Read a resource with HttpClient
 
-- It calls the `PostAsync` method of the `HTTPClient` object. The first parameter is the URI. The second parameter is the body of the message, which contains our data in JSON format. The `PostAsync` method returns an `HttpResponseMessage` object, which contains information such as the status code and a reference to the newly created object.
-
-### Read a resource with HTTPClient
+You could read a resource from a web service using the same technique as above, except initializing the `HttpRequestMessage` with an `HttpMethod.Get`. However, the `HttpClient has a couple of convenience methods that provide shortcuts.
 
 To read a resource by using `HTTPClient`, use the `GetStringAsync` method as shown in the next example:
 
@@ -63,7 +67,7 @@ HttpClient client = new HttpClient();
 string text = await client.GetStringAsync("https://...");
 ```
 
-The `GetStringAsync` method takes a URI that references the resource, and returns a response as a string. The string response is the resource the app requested. The format of the response data will be the default for the requested service, such as JSON or XML. An app can tell the web service that it requires the data to be returned in a specific format by adding the `MediaTypeWithQualityHeaderValue` header. For example, if the app requests that data is sent back in JSON format, it can use he following code:
+The `GetStringAsync` method takes a URI that references the resource, and returns a response as a string. The string response is the resource the app requested. The format of the response data will be the default for the requested service, such as JSON or XML. An app can tell the web service that it requires the data to be returned in a specific format by adding the `MediaTypeWithQualityHeaderValue` header. For example, if the app requests that data is sent back in JSON format, it can use the following code:
 
 ```csharp
 HttpClient client = new HttpClient();
@@ -74,32 +78,34 @@ client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("app
 
 In this example, the result is returned as a string and only contains the response message body. To get the entire response including headers, body, and status code, call the `GetAsync` method. The data is returned as an `HttpResponseMessage` object.
 
-### Update a resource with HTTPClient
+### Update a resource with HttpClient
 
-To update a resource by using HTTPClient, use the `PutAsync` method. The following code is similar to that required to create a new resource except that it uses the `PutAsync` method:
+To update a resource by using `HttpClient`, use an `HttpRequestMessage` initialized with a **PUT** verb. The following code is similar to that required to create a new resource:
 
 ```csharp
 HttpClient client = new HttpClient();
+HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Put, url);
 
-StringContent content = new StringContent(JsonSerializer.Serialize(data),Encoding.UTF8, "application/json");
+message.Content = JsonContent.Create<Part>(part);
 
-HttpResponseMessage response = await client.PutAsync("https://...", content);
+HttpResponseMessage response = await client.SendAsync(message);
 ```
 
 > [!NOTE]
 > The fundamental difference between `POST` and `PUT` is idempotency. If you repeat the same `PUT` request several times, the same resource will be updated with the same data, and the effect is the same as if the request had been sent only once. If you issues the same `POST` request several times, the result will be multiple copies of the resource being created by the REST service.
 
-### Delete a resource with HTTPClient
+### Delete a resource with HttpClient
 
-To delete a resource by using `HTTPClient`, call the `DeleteAsync` method:
+To delete a resource by using `HttpClient`, call `SendAsync` with a `HttpRequestMessage` initialized with a **DELETE** verb:
 
 ```csharp
 HttpClient client = new HttpClient();
+HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Delete, url);
 
-HttpResponseMessage response = await client.DeleteAsync("https://...");
+HttpResponseMessage response = await client.SendAsync(url);
 ```
 
-In this example, the app passes in the URI of the resource to be deleted. The response contains the headers, status code, and deleted object.
+The response contains the headers, status code, and deleted object.
 
 ### Handle responses from a request
 
@@ -124,12 +130,13 @@ static readonly HttpClient client = new HttpClient();
 // Call asynchronous network methods in a try/catch block to handle exceptions.
 try
 {
-    HttpResponseMessage response = await client.GetAsync("http://www.contoso.com/");
-    response.EnsureSuccessStatusCode(); // Check that the status code is in the 200 range. Throw an HttpRequestException if not
-    string responseBody = await response.Content.ReadAsStringAsync();
-    // The preceding three lines can be replaced with the helper method below
-    // string responseBody = await client.GetStringAsync(uri);
+    //... Initiate the HttpRequest
 
+    HttpResponseMessage response = await client.SendAsync(msg);
+    response.EnsureSuccessStatusCode(); // Check that the status code is in the 200 range. Throw an HttpRequestException if not
+    
+    string responseBody = await response.Content.ReadAsStringAsync();
+    
     ... // Handle the response
 }
 catch(HttpRequestException e)
