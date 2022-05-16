@@ -9,7 +9,8 @@ In this unit, we'll explore some best practices to apply when developing applica
 
 :::image type="content" source="../media/best-practices.png" alt-text="Diagram showing six key best practices to be followed for application development.":::
 
-> [!NOTE] This list of best practices is not exhaustive. Be sure to consult the [Azure Database for MySQL documentation](https://aka.ms/mysqldocs) for detailed guides on implementing best practices related to networking, security, monitoring, performance optimization, business continuity and disaster recovery, etc.
+> [!NOTE]
+This list of best practices is not exhaustive. Be sure to consult the [Azure Database for MySQL documentation](https://aka.ms/mysqldocs) for detailed guides on implementing best practices related to networking, security, monitoring, performance optimization, business continuity and disaster recovery, etc.
 
 ## Co-locate resources
 

@@ -95,7 +95,8 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
     --deployment-local-git
     ```
 
-    > [!IMPORTANT] In the Azure CLI output, the URL of the Git remote is displayed in the deploymentLocalGitUrl property, with the format `https://<username>@<app-name>.scm.azurewebsites.net/<app-name>.git`. Save this URL, as you'll need it later.
+    > [!IMPORTANT]
+    In the Azure CLI output, the URL of the Git remote is displayed in the deploymentLocalGitUrl property, with the format `https://<username>@<app-name>.scm.azurewebsites.net/<app-name>.git`. Save this URL, as you'll need it later.
 
 1. Next we'll configure the MySQL flexible server database connection settings on the Web App.
 
