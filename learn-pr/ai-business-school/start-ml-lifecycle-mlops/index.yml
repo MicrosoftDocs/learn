@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- machine-learning
+units:
 - learn-wwl.start-ml-lifecycle-mlops.introduction
 - learn-wwl.start-ml-lifecycle-mlops.mlops-introduction
 - learn-wwl.start-ml-lifecycle-mlops.mlops-executive-overview

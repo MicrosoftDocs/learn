@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.software-composition-analysis.introduction
 - learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance

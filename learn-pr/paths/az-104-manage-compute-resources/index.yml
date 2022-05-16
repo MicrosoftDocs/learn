@@ -74,6 +74,8 @@ products:
 - azure-container-instances
 - azure-container-registry
 - azure-kubernetes-service
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.configure-virtual-machines
 - learn.wwl.configure-virtual-machine-availability

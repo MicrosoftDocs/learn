@@ -28,6 +28,9 @@ products:
 - azure
 - azure-firewall
 - azure-front-door
+subjects:
+- security
+- networking
 units:
 - learn.wwl.network-security.introduction
 - learn.wwl.network-security.groups-nsg

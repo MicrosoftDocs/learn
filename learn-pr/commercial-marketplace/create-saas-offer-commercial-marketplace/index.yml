@@ -29,6 +29,9 @@ roles:
 products:
 - azure
 - azure-marketplace
+subjects:
+- marketing-sales
+- cloud-computing
 units:
 - learn.create-saas-offer-commercial-marketplace.1-introduction
 - learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer

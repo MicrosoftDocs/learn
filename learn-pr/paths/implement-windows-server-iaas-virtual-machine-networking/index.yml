@@ -36,6 +36,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- networking
 modules:
 - learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing
 - learn.wwl.implement-dns-for-windows-server-iaas-vms

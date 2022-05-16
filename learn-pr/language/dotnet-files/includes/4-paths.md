@@ -14,12 +14,11 @@ Sometimes, you don't know in which directory or path your program should run. Le
 Console.WriteLine(Directory.GetCurrentDirectory());
 ```
 
-If you run the above code from the *sales* folder in the following structure, `Directory.GetCurrentDirectory()` will return `stores/201/sales`.
+If you run the above code from the *201* folder in the following structure, `Directory.GetCurrentDirectory()` returns `stores\201`:
 
 ```
 📂 stores
     📂 201
-        📂 sales
 ```
 
 ## Work with special directories

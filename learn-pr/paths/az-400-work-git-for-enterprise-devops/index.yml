@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 modules:
 - learn.wwl.structure-your-git-repo
 - learn.wwl.manage-git-branches-workflows

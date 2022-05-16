@@ -34,6 +34,8 @@ products:
 - azure-storage
 - azure-storage-accounts
 - azure-storage-explorer
+subjects:
+- storage
 units:
 - learn.azure.azure-storage-fundamentals.introduction
 - learn.azure.azure-storage-fundamentals.azure-storage-accounts

@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- security
 units:
 - learn.wwl.remediate-azure-defender-security-alerts.introduction
 - learn.wwl.remediate-azure-defender-security-alerts.understand

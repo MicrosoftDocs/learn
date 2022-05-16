@@ -38,6 +38,8 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools (installed locally).
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0) and the [Azure PowerShell module](/powershell/azure/install-az-ps?azure-portal=true&view=azps-5.2.0) (installed locally).
+subjects:
+- infrastructure
 units:
   - learn.azure.manage-deployments-advanced-arm-template-features.introduction
   - learn.azure.manage-deployments-advanced-arm-template-features.dependencies

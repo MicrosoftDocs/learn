@@ -30,6 +30,8 @@ products:
 - azure-defender
 - azure-disk-encryption
 - azure-virtual-machines
+subjects:
+- cloud-security
 units:
 - learn.wwl.host-security.introduction
 - learn.wwl.host-security.endpoint-protection

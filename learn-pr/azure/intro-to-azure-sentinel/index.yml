@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- cloud-security
 units:
 - learn.intro-to-azure-sentinel.1-introduction
 - learn.intro-to-azure-sentinel.2-what-is-azure-sentinel

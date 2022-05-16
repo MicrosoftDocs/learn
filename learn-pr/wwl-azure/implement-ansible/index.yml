@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.implement-ansible.introduction
 - learn.wwl.implement-ansible.what-is-ansible

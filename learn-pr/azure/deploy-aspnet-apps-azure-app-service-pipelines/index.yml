@@ -38,6 +38,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.1-introduction
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.2-azure-pipelines-github-repos

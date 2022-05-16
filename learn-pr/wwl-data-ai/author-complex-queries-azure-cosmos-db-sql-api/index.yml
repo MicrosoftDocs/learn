@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.introduction
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.implement-correlated-subqueries

@@ -28,6 +28,8 @@ roles:
 - administrator
 products:
 - azure-app-service-web
+subjects:
+- cloud-computing
 units:
 - learn.wwl.configure-azure-app-services.introduction
 - learn.wwl.configure-azure-app-services.implement

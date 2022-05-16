@@ -30,6 +30,8 @@ roles:
 products:
 - azure-sql-database
 - sql-server
+subjects:
+- migration
 units:
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.introduction
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-server-instance-option-azure

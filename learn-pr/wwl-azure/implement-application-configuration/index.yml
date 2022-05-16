@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-application-configuration.introduction
 - learn.wwl.implement-application-configuration.introduction-to-azure-app-configuration

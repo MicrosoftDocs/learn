@@ -28,6 +28,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.oxford.intro-to-iot-hub.introduction
 - learn.oxford.intro-to-iot-hub.what-is-iot-hub

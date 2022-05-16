@@ -76,6 +76,8 @@ products:
 - azure
 - azure-resource-manager
 - azure-functions
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-azure-fundamentals
 - learn.azure.fundamental-azure-concepts

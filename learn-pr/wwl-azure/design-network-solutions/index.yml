@@ -27,6 +27,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
+- networking
 units:
 - learn.wwl.design-network-solutions.introduction
 - learn.wwl.design-network-solutions.recommend-network-architecture-solution-based-workload-requirements

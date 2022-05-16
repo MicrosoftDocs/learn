@@ -28,6 +28,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-speech-text
+subjects:
+- natural-language-processing
 units:
 - learn.azure.intro-to-batch-stt.introduction
 - learn.azure.intro-to-batch-stt.what-is-batch-transcription

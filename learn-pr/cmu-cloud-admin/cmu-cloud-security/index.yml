@@ -38,6 +38,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- cloud-security
 units:
 - learn.cmu-cloud-admin.cmu-cloud-security.0-introduction
 - learn.cmu-cloud-admin.cmu-cloud-security.1-responsibilities

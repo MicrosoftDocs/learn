@@ -44,6 +44,8 @@ products:
 - hololens
 - windows
 - windows-mixed-reality 
+subjects:
+- mixed-reality
 modules:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 - learn.azure.build-3d-scene-mixed-reality-unity

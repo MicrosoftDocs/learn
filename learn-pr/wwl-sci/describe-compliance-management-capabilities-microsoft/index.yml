@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- compliance
 units:
 - learn.wwl.describe-compliance-management-capabilities-microsoft.introduction
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-offerings-of-service-trust-portal

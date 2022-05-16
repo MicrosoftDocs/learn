@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.introduction
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.understand-user-entity-behavior-analytics

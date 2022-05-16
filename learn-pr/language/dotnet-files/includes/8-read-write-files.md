@@ -41,15 +41,15 @@ using Newtonsoft.Json;
 And use the `JsonConvert.DeserializeObject` method:
 
 ```csharp
-class SalesTotal
-{
-  public double Total { get; set; }
-}
-
 var salesJson = File.ReadAllText($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 var salesData = JsonConvert.DeserializeObject<SalesTotal>(salesJson);
 
 Console.WriteLine(salesData.Total);
+
+class SalesTotal
+{
+  public double Total { get; set; }
+}
 ```
 
 > [!TIP]
@@ -62,7 +62,7 @@ You learned how to write files in the previous exercise. It's just that you wrot
 ```csharp
 var data = JsonConvert.DeserializeObject<SalesTotal>(salesJson);
 
-File.WriteAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", data.Total.ToString());
+File.WriteAllText($"salesTotalDir{Path.DirectorySeparatorChar}totals.txt", data.Total.ToString());
 
 // totals.txt
 // 22385.32
@@ -75,7 +75,7 @@ In the preceding example, the file is overwritten every time you write to it. So
 ```csharp
 var data = JsonConvert.DeserializeObject<SalesTotal>(salesJson);
 
-File.AppendAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", $"{data.Total}{Environment.NewLine}");
+File.AppendAllText($"salesTotalDir{Path.DirectorySeparatorChar}totals.txt", $"{data.Total}{Environment.NewLine}");
 
 // totals.txt
 // 22385.32

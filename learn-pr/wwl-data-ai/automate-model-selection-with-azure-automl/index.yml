@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.data-ai.automate-model-selection-with-azure-automl.introduction
 - learn.data-ai.automate-model-selection-with-azure-automl.automl-algorithms

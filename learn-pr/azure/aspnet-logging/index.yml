@@ -30,6 +30,8 @@ products:
 - azure-application-insights
 - azure-monitor
 - dotnet
+subjects:
+- cloud-computing
 units:
 - learn.azure.aspnet-logging.1-introduction
 - learn.azure.aspnet-logging.2-exercise-setup-app-deploy-resources
