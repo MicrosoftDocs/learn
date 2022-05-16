@@ -23,6 +23,9 @@ roles:
 - administrator
 products:
 - azure-monitor
+subjects:
+- cloud-computing
+- communication
 units:
 - learn.wwl.configure-azure-alerts.introduction
 - learn.wwl.configure-azure-alerts.manage-azure-monitor-alerts

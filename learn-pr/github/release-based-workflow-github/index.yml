@@ -33,6 +33,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.release-based-workflow-github.1-introduction
 - learn.github.release-based-workflow-github.2-what-is-release-based-workflow

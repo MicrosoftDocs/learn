@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- migration
 units:
 - learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.introduction
 - learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-azure-data-factory

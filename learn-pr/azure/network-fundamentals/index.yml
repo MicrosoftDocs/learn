@@ -28,7 +28,9 @@ roles:
 - developer
 products: 
 - azure
-units: 
+subjects:
+- networking
+units:
 - learn.azure.network-fundamentals.introduction
 - learn.azure.network-fundamentals.network-types-topologies
 - learn.azure.network-fundamentals.network-infrastructure

@@ -26,6 +26,9 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- development-tools
+- cloud-computing
 units:
 - learn.quantum.qsharp-create-first-quantum-development-kit.1-introduction
 - learn.quantum.qsharp-create-first-quantum-development-kit.2-install-quantum-development-kit-code

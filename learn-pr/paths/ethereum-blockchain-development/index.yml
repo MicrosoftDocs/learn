@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- blockchain
 modules:
 - learn.azure-intro-to-blockchain
 - learn.reactors.blockchain-learning-solidity

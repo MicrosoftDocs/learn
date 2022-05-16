@@ -35,6 +35,8 @@ products:
   - azure
   - azure-app-service
   - azure-app-service-static
+subjects:
+- cloud-computing
 modules:
 - learn.azure.publish-static-web-app-and-api
 - learn.azure.publish-static-web-app-api-preview-url

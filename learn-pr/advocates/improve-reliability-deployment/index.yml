@@ -31,6 +31,10 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- cloud-computing
+- devops
+- threat-protection
 units:
 - learn.improve-reliability-deployment.1-introduction
 - learn.improve-reliability-deployment.2-definition

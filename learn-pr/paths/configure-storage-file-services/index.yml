@@ -24,6 +24,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- storage
 modules:
 - learn.wwl.manage-windows-server-file-servers
 - learn.wwl.implement-storage-spaces-storage-spaces-direct

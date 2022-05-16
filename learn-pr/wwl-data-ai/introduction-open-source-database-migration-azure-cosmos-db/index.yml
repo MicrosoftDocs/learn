@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.introduction
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview

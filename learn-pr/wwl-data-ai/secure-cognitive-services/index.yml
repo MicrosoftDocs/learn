@@ -31,6 +31,8 @@ roles:
 products:
 - azure-active-directory
 - azure-cognitive-services
+subjects:
+- security
 units:
 - learn.wwl.secure-cognitive-services.introduction
 - learn.wwl.secure-cognitive-services.keys-with-azure-key-vault

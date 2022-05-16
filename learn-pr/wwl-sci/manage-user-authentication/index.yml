@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.manage-user-authentication.introduction
 - learn.wwl.manage-user-authentication.administer-fido2-passwordless-authentication-methods

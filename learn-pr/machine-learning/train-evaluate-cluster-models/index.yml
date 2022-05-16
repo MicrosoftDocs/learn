@@ -24,6 +24,8 @@ roles:
 - data-scientist
 products:
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.wwl.train-evaluate-cluster-models.introduction
 - learn.wwl.train-evaluate-cluster-models.what-is-clustering

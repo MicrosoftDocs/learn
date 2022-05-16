@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-bastion
+subjects:
+- virtual-machine
 units:
 - learn.connect-vm-with-azure-bastion.introduction
 - learn.connect-vm-with-azure-bastion.what-is-azure-bastion

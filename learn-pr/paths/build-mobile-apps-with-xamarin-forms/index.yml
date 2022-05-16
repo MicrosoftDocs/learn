@@ -21,6 +21,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 modules:
 - learn-xamarin.create-a-mobile-app-with-xamarin-forms
 - learn-xamarin.introduction-to-xamarin-android

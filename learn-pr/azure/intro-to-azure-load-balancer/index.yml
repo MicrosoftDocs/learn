@@ -26,6 +26,8 @@ roles:
   - solution-architect
 products:
   - azure-load-balancer
+subjects:
+- cloud-computing
 units:
   - learn.azure.intro-to-azure-load-balancer.introduction
   - learn.azure.intro-to-azure-load-balancer.what-is-azure-load-balancer

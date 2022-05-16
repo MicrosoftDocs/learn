@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- machine-learning
 units:
 - learn.student-evangelism.analyze-review-sentiment-with-keras.introduction
 - learn.student-evangelism.analyze-review-sentiment-with-keras.create-an-azure-notebook

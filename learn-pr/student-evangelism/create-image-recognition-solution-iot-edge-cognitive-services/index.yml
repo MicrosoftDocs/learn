@@ -38,6 +38,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- machine-learning
+- iot
 units:
 - learn.oxford.create-image-recognition-with-azure-iot-edge.introduction
 - learn.oxford.create-image-recognition-with-azure-iot-edge.design-computer-vision-solution

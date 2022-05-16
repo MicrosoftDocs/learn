@@ -38,6 +38,8 @@ products:
 - dotnet-core
 - azure-application-insights
 - azure-monitor
+subjects:
+- cloud-computing
 units:
 - learn.capture-page-load-times-application-insights.1-introduction
 - learn.capture-page-load-times-application-insights.2-enable-application-insights

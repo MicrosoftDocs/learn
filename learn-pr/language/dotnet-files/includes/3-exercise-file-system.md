@@ -25,7 +25,7 @@ A starter project has already been created for you. You'll clone it using the in
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Run the following command to Create a new .NET Console project:
+1. Run the following command to create a new .NET Console project:
 
     ```bash
     dotnet new console -f net6.0 -n mslearn-dotnet-files -o .

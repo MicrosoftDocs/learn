@@ -35,6 +35,9 @@ roles:
 products:
 - github
 - vs-ide
+subjects:
+- devops
+- development-tools
 units:
 - learn.visual-studio-github-push.1-introduction
 - learn.visual-studio-github-push.2-add-github-account

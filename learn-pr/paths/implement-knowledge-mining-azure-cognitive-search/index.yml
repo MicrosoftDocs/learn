@@ -26,6 +26,8 @@ products:
 - azure-cognitive-services
 - azure-sdks
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.create-azure-cognitive-search-solution
 - learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search

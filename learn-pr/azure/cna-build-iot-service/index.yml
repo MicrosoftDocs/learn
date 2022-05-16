@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.cna-build-iot-service
 metadata:
   title: Build an IoT service for your cloud-native apps by using IoT Central
@@ -36,6 +36,8 @@ products:
 - azure-pipelines
 - azure-cosmos-db
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.azure.cna-build-iot-service.1-introduction
 - learn.azure.cna-build-iot-service.2-define-iot-service-architecture

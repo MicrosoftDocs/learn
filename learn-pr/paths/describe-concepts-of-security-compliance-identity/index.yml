@@ -48,6 +48,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- security
 modules:
 - learn.wwl.describe-security-concepts-methodologies
 - learn.wwl.describe-identity-principles-concepts

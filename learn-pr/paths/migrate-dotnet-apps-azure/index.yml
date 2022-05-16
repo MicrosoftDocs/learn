@@ -28,6 +28,8 @@ products:
 - azure-sql-database
 - azure-app-service
 - aspnet
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-migrating-aspnet-apps-azure
 - learn.host-a-web-application-with-azure-web-apps

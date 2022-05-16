@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.utilize-threat-intelligence-azure-sentinel.introduction
 - learn.wwl.utilize-threat-intelligence-azure-sentinel.define-threat-intelligence

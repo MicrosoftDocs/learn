@@ -29,6 +29,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- digital-application-innovation
 units:
 - learn.oxford.intro-azure-sphere.introduction
 - learn.oxford.intro-azure-sphere.what-azure-sphere

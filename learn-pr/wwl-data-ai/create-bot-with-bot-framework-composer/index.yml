@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - azure-bot-service
+subjects:
+- development-tools
 units:
 - learn.wwl.create-bot-with-bot-framework-composer.introduction
 - learn.wwl.create-bot-with-bot-framework-composer.bot-composer

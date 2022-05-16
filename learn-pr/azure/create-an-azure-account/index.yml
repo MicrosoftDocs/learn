@@ -33,6 +33,8 @@ products:
 - azure
 - azure-portal
 - azure-cost-management
+subjects:
+- process-workflow
 units:
 - learn.create-azure-account.1-introduction
 - learn.create-azure-account.2-azure-accounts-and-subscriptions

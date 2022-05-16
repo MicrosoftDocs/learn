@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.configure-network-routing-endpoints.introduction
 - learn.wwl.configure-network-routing-endpoints.review-system-routes

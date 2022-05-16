@@ -26,6 +26,8 @@ products:
 - azure-devops
 - azure-machine-learning
 - github
+subjects:
+- devops
 units:
 - learn.wwl.introduction-development-operations-principles-for-machine-learn.introduction
 - learn.wwl.introduction-development-operations-principles-for-machine-learn.devops

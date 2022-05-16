@@ -39,7 +39,9 @@ products:
   - azure
   - vs-code
   - azure-app-service
-units:  
+subjects:
+- development-tools
+units:
 - learn.django.admin-site.introduction
 - learn.django.admin-site.exercise-setup
 - learn.django.admin-site.admin-permissions 

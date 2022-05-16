@@ -27,6 +27,9 @@ roles:
 products:
 - azure
 - windows-server
+subjects:
+- cloud-computing
+- networking
 modules:
 - learn.wwl.implement-dns-for-windows-server-iaas-vms
 - learn.wwl.deploy-manage-dhcp
