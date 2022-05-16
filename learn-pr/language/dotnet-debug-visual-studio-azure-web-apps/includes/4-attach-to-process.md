@@ -15,7 +15,7 @@ At this point the app is deployed to Azure, but it is not working correctly. The
 
 5) The `w3wp.exe` process should appear in the list of available processes to connect to, which is the main process of the Azure App Service that hosts the deployed application. Select that process and then choose **Attach** in the bottom right to connect the Visual Studio debugger.
 
-:::image type="content" source="../media/visual-studio-remote-debug-attach-to-process.png" alt-text="A screenshot of the attach to process tool.":::
+:::image type="content" source="../media/visual-studio-remote-debug-attach-to-process.png" alt-text="A screenshot of the attach to process features.":::
 
 6) The `OnGet` method inside of `Index.cshtml.cs` handles most of the logic for the app, so make sure to set a breakpoint on the first line of that method. However, when you set the breakpoint, the icon will display hollow with a warning symbol. When you mouse over the breakpoint, Visual Studio will display a message that the breakpoint cannot be hit for optimized code when the "Just my Code" debugger is enabled. Essentially Visual Studio is not able to properly debug the app yet because the debugging symbols have not been loaded. You can easily fix this problem with a couple configuration options.
 
@@ -28,13 +28,13 @@ You can use local symbol files produced by building your source code to debug th
 
 You can see which symbols were loaded for the current debugging session by navigating to **Debug --> Windows --> Modules** from the top Visual Studio menu. This modules panel shows all of the relevant dlls for the application and whether the corresponding symbols were loaded. You can see that the the symbols for `GitHubBrowser.dll` were not loaded, which is the main DLL for our project.
 
-:::image type="content" source="../media/visual-studio-remote-debug-modules-small.png" lightbox="../media/visual-studio-remote-debug-modules.png" alt-text="A screenshot of the attach to process tool.":::
+:::image type="content" source="../media/visual-studio-remote-debug-modules-small.png" lightbox="../media/visual-studio-remote-debug-modules.png" alt-text="A screenshot of the debugging modules.":::
 
 By default, Visual Studio only loads symbols for user code. In simplified terms, you can think of user code as code you have written, as opposed to DLLs that were provided by .NET or third party packages. Because the debugger is attached to optimized code running out in Azure, it doesn't recognize the project dll as user code.
 
 You can resolve this issue by navigating to **Tools -> Options** from the top Visual Studio menu.  Under the **Debugging** section, make sure that "Enable Just My code** is unchecked, and then select **OK**.  Changing this setting will allow Visual Studio to browse its default search locations for symbol files that match the optimized code.
 
-:::image type="content" source="../media/visual-studio-remote-debug-settings.png" alt-text="A screenshot of the attach to process tool.":::
+:::image type="content" source="../media/visual-studio-remote-debug-settings.png" alt-text="A screenshot of the Visual Studio debugging settings.":::
 
 After the dialog closes, the **Modules** window should now show a value of **Symbols loaded** under the **Symbol Status** column for the project dll.  The breakpoint in the `OnGet` method should also now display as a solid red icon, indicating that Visual Studio is ready to debug like usual.
 
@@ -62,7 +62,7 @@ This code worked fine locally, so why doesn't it work in Azure? You can open the
 
 In the solution explorer you may have noticed the `appsettings.json` file includes an arrow icon next to it. If you expand this arrow, you'll find a second file called `appsettings.Development.json`.  This file contains configurations that will only be applied while running during development. Open this file, and there you will find the `GitHubUrl` value, which is why the application works when running locally. Forgetting to set configurations for the production version of your hosted application in Azure is a common source of bugs.
 
-:::image type="content" source="../media/visual-studio-remote-debug-github-url.png" alt-text="A screenshot of the attach to process tool.":::
+:::image type="content" source="../media/visual-studio-remote-debug-github-url.png" alt-text="A screenshot of the application settings.":::
 
 To solve the issue, simply copy the `GitHubUrl` key-value pair and paste it into the top level `appsettings.json` file. When the app is deployed to Azure again this new configuration value will travel with it in the `appsettings.json` file.
 

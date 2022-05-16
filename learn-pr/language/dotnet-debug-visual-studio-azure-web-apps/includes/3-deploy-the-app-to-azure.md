@@ -10,13 +10,13 @@ The sample Razor Pages project allows users to search for GitHub repositories by
 
 You can start the app locally by pressing the run button inside of Visual Studio. The form should load and display correctly and give you an idea of what the app should look like when it's running. You can search *dotnet* in the form input to get an idea of what the results should look like.
 
-:::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A diagram of the build and symbols process.":::
+:::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
 
 Next you need to deploy the app to Azure so others can use your app to browse repositories. You can deploy the app using the steps below.
 
 1) Right click on the the project node in the solution explorer, and then select **Publish**.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-publish.png" alt-text="A diagram of the build and symbols process.":::
+    :::image type="content" source="../media/visual-studio-remote-debug-publish.png" alt-text="A screenshot of the publishing option in Visual Studio.":::
 
 2) In the publishing dialog, select **Azure** as the Target, and then select **Next**.
 
@@ -42,7 +42,7 @@ Next you need to deploy the app to Azure so others can use your app to browse re
 
 7) Visual Studio will display a summary view of the publishing profile.  Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a moment to complete.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-publish-profile.png" alt-text="A screenshot of the create app service workflow.":::
+    :::image type="content" source="../media/visual-studio-remote-debug-publish-profile.png" alt-text="A screenshot of the publishing profile.":::
 
 When the deployment finishes Visual Studio will launch a web browser to the home page of your app. At first it appears that everything is working correctly. However, when you try to search *Microsoft* again, you will receive an error page instead of the table of results.  This error did not happen locally.
 
@@ -54,7 +54,7 @@ Once the application is deployed to Azure, next you must enable the remote debug
 
 1) Locate your deployed application in the Azure portal. You can do this by browsing to the **App Services** page in Azure and then clicking on your **GitHubBrowser123** app.  You can also search for the App Service instance directly by name in the search bar at the top.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-azure-search.png"  alt-text="A screenshot of the application error." :::
+    :::image type="content" source="../media/visual-studio-remote-debug-azure-search.png"  alt-text="A screenshot of the App Service remote debugging settings." :::
 
 2) On the App Service settings page, select **Configuration** on the left navigation, and then switch to the **General Settings** tab. Towards the bottom of the page, make sure to enable the **Remote Debugging** feature and select **Visual Studio 2022** for the **Remote Visual Studio version**.
 
