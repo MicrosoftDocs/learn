@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dotnet-debug-visual-studio-app-service
+metadata:
+  title: Debugging ASP.NET Core apps hosted on Azure App Service
+  description: 'Learn how to debug your ASP.NET Core app directly on Azure App Service using Visual Studio to fix bugs in remote environments.'
+  ms.date: 5/10/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Debugging ASP.NET Core apps hosted on Azure App Service
+summary: Learn how to debug your ASP.NET Core app directly on Azure App Service using Visual Studio to fix bugs in remote environments.
+abstract: |
+  By the end of this module, you will be able to:
+  - Attach the Visual Studio debugger to apps running in Azure App Service.
+  - Use the Snapshot Debugger to capture the state of live applications.
+  - Inspect the stored snapshots to diagnose issues.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+- vs-ide
+prerequisites: |
+  - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio](https://visualstudio.com)
+units:
+- learn.dotnet-debug-visual-studio-app-service.introduction
+- learn.dotnet-debug-visual-studio-app-service.app-service-debugging-concepts-tools
+- learn.dotnet-debug-visual-studio-app-service.setting-up-the-app
+- learn.dotnet-debug-visual-studio-app-service.attaching-to-app-service
+- learn.dotnet-debug-visual-studio-app-service.setting-snapshots
+- learn.dotnet-debug-visual-studio-app-service.browsing-snapshots
+- learn.dotnet-debug-visual-studio-app-service.knowledge-check
+- learn.dotnet-debug-visual-studio-app-service.summary
+
+badge:
+  uid: learn.dotnet-debug-visual-studio-app-service.badge
