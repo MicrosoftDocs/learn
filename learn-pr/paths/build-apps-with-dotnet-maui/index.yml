@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
-uid: learn.dotnet-maui.build-mobile-apps-with-dotnet-maui
+uid: learn.dotnet-maui.build-apps-with-dotnet-maui
 metadata:
-  title: Build mobile apps with .NET MAUI
-  description: 'In this learning path, use C# and Visual Studio with .NET MAUI to create a mobile app that runs across iOS, Android, and Windows.'
+  title: Build mobile and desktop apps with .NET MAUI
+  description: 'In this learning path, use C# and Visual Studio with .NET MAUI to create an app that runs across iOS, Android, and Windows.'
   ms.date: 05/10/2022
   author: codemillmatt
   ms.author: masoucou
@@ -26,8 +26,7 @@ modules:
 - learn.dotnet-maui.customize-xaml-pages-layout
 - learn.dotnet-maui.use-shared-resources
 - learn.dotnet-maui.create-multi-page-apps
-- learn.dotnet-maui.navigate-with-shell
 - learn.dotnet-maui.consume-rest-services
 - learn.dotnet-maui.store-local-data
 trophy:
-  uid: learn.dotnet-maui.build-mobile-apps-with-dotnet-maui.trophy
+  uid: learn.dotnet-maui.build-apps-with-dotnet-maui.trophy
