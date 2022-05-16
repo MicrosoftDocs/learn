@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.machine-learning.introduction-classification-models
+metadata:
+  title:  Introduction to training classification models by using R and tidymodels
+  description: Learn how to train classification models by using the R programming language and tidymodels framework.
+  ms.date: 05/11/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: nextgen
+title:  Introduction to training classification models by using R and tidymodels
+summary: |
+  Classification is a form of machine learning in which you train a classification model to predict which category an item belongs to. In this module, you learn how to use the R programming language and tidymodels framework to train classification models. 
+   
+abstract: |
+  In this module, you'll learn:
+  - When to use classification.
+  - How to train and evaluate a classification model by using the tidymodels framework.
+
+prerequisites: |
+  - Knowledge of basic mathematics
+  - Some experience programming in R
+
+iconUrl: /learn/achievements/machine-learning/introduction-classification-models.svg
+levels:
+- beginner
+roles:
+- developer
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.machine-learning.introduction-classification-models.introduction
+- learn.machine-learning.introduction-classification-models.what-is-classification
+- learn.machine-learning.introduction-classification-models.exercise-train-evaluate-binary-classification-model
+- learn.machine-learning.introduction-classification-models.evaluate-classification-models
+- learn.machine-learning.introduction-classification-models.exercise-perform-classification-alternative-metrics
+- learn.machine-learning.introduction-classification-models.create-multiclass-classification-models
+- learn.machine-learning.introduction-classification-models.exercise-train-evaluate-multiclass-models
+- learn.machine-learning.introduction-classification-models.knowledge-check
+- learn.machine-learning.introduction-classification-models.challenge-classification
+- learn.machine-learning.introduction-classification-models.summary
+badge:
+  uid: learn.machine-learning.introduction-classification-models.badge 
