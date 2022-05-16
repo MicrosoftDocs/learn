@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.implement-tab-navigation
+title: Implement tab navigation with .NET MAUI Shell
+metadata:
+  unitType: learning-content
+  title: "Implement tab navigation with .NET MAUI Shell"
+  description: "Use .NET MAUI Shell to create multiple tab pages"
+  ms.date: 05/02/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-tab-navigation.md)]
+quiz:
+  questions:
+  - content: "When is tab navigation a good choice for an app?"
+    choices:
+    - content: "You have only a few pages in your app and the pages all have equal importance."
+      isCorrect: true
+      explanation: "This is the correct answer."
+    - content: "The app's pages tend to be traversed from general to more specific."
+      isCorrect: false
+      explanation: "No. Stack navigation is the most appropriate choice for this scenario."
+    - content: "The app's pages require extensive scrolling"
+      isCorrect: false
+      explanation: "No. The use of tab navigation is unrelated to the scrolling requirements of the pages it presents."
