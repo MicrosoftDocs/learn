@@ -1,7 +1,7 @@
 In order to work through a remote debugging exercise with App Service you will first need to deploy an application to Azure. For this scenario you can either deploy your own app or clone the sample GitHub project below.
 
 ```Bash
-    git clone "https://..."
+git clone "https://github.com/alexwolfmsft/remote-debugging.git"
 ```
 
 The sample Razor Pages project allows users to search for GitHub repositories by organization using a simple form.  The results are displayed in a table after they press submit. Most of the relevant code for the app can be found in the `OnGet` method inside the `Index.cshtml.cs` file. The code pulls the GitHub API URL from the `appsettings.development.json` file when the app runs and makes an HTTP request using the submitted search term as a parameter.  Those items are then rendered using a foreach loop and a table in the `Index.cshtml` file.
@@ -31,7 +31,7 @@ Next you need to deploy the app to Azure so others can use your app to browse re
     * **Resource Group**: Select **New...** and enter a name of `mslearn-github-browser` for the resource group name.
 
     * **Hosting Plan**: Select **New...** and enter a name of `mslearn-github-browser-plan`.
-    
+
     Finally, select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
 
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
@@ -56,6 +56,6 @@ Before you can debug with Visual Studio you must enable the remote debugging fea
 
 2) On the App Service settings page, select **Configuration** on the left navigation, and then switch to the **General Settings** tab. Towards the bottom of the page, make sure to set the **Remote Debugging** feature to **On** and select **Visual Studio 2022** as the **Remote Visual Studio version**.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-azure-settings-small.png"  alt-text="A screenshot of the application error." lightbox="../media/visual-studio-remote-debug-azure-settings.png":::
+    :::image type="content" source="../media/visual-studio-remote-debug-azure-settings-small.png"  alt-text="A screenshot of the azure remote debugging settings." lightbox="../media/visual-studio-remote-debug-azure-settings.png":::
 
 Your app service instance now supports remote debugging through Visual Studio.
