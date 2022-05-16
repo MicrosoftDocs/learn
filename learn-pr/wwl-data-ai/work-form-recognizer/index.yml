@@ -39,7 +39,7 @@ units:
 - learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
 - learn.wwl.work-with-form-recognizer.use-models
 - learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
-- learn.wwl.work-with-form-recognizer.optical-character-recognition-test-tool
+- learn.wwl.work-with-form-recognizer.form-recognizer-studio
 - learn.wwl.work-with-form-recognizer.knowledge-check-summary
 - learn.wwl.work-with-form-recognizer.summary
 badge:
