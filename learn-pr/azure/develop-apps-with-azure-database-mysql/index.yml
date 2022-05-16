@@ -8,7 +8,7 @@ metadata:
   author: shreyaaithal
   ms.author: shaithal
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure 
 title: Develop applications with Azure Database for MySQL - Flexible Server
 summary: Learn to create applications that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy applications faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps, or GitHub.
 abstract: |
@@ -23,12 +23,12 @@ prerequisites: |
   - Basic familiarity with relational databases, the Azure Database for MySQL offering, and its features and concepts.
   - Basic knowledge of the PHP server scripting language.
 iconUrl: http://via.placeholder.com/120x120
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: 
   - developer
   - student
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: 
 - azure
 - azure-database-mysql
 - azure-app-service

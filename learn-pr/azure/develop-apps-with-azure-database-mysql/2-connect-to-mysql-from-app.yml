@@ -9,7 +9,7 @@ metadata:
   author: shreyaaithal
   ms.author: shaithal
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/3-choose-app-hosting-option.md)]

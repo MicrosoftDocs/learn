@@ -4,12 +4,12 @@ title: Build a PHP and MySQL - Flexible Server app on Azure App Service
 metadata:
   unitType: exercise
   title: Build a PHP and MySQL - Flexible Server app on Azure App Service
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Build and deploy a sample PHP application on to Azure App Service, and integrate with Azure Database for MySQL - Flexible Server in the back end.
   ms.date: 5/10/2022
   author: shreyaaithal
   ms.author: shaithal
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-app-service-mysql.md)]
