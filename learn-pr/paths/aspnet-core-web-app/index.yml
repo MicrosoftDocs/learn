@@ -23,7 +23,7 @@ products:
   - dotnet
   - aspnet-core
   - vs-code
-  - Azure
+  - azure
 subjects:
 - custom-app-development
 modules:
