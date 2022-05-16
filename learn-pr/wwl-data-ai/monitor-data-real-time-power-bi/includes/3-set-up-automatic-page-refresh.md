@@ -21,7 +21,7 @@ A Power BI dataset can have DirectQuery storage tables when:
 - It consumes a streaming dataflow (and uses DirectQuery storage mode).
 
 > [!NOTE]
-> For more information about DirectQuery and composite models, work through the [Choose a model framework](#todo) module.
+> For more information about DirectQuery and composite models, work through the [Choose a model framework](/learn/modules/choose-power-bi-model-framework/) module.
 
 ### Use hybrid tables
 

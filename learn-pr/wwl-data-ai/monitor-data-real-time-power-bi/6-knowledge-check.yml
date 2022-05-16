@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/12/2022
+  ms.date: 05/16/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Gladys is a developer at Adventure Works who needs to create a real-time Power BI solution to monitor their call center. When there are excessive numbers of callers waiting on hold, Power BI should notify the call center manager.What type of Power BI artifact should Gladys develop?"
+  - content: "Gladys is a developer at Adventure Works who needs to create a real-time Power BI solution to monitor their call center. When there are excessive numbers of callers waiting on hold, Power BI should notify the call center manager. What type of Power BI artifact should Gladys develop?"
     choices:
     - content: "Dashboard."
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Streaming dataflow."
       isCorrect: false
       explanation: "Incorrect. Streaming datasets don’t support alerting."
-  - content: "Benny is a report author at Adventure Works who needs to set up a Power BI report page to show real-time manufacturing data with latency of 5 minutes. The report connects to a dataset that represents a DirectQuery model. Because the DirectQuery source is an operational system, it should be queried only when necessary.What should Benny do?"
+  - content: "Benny is a report author at Adventure Works who needs to set up a Power BI report page to show real-time manufacturing data with latency of 5 minutes. The report connects to a dataset that represents a DirectQuery model. Because the DirectQuery source is an operational system, it should be queried only when necessary. What should Benny do?"
     choices:
     - content: "Set the `AutoRefresh` property to a value greater than zero."
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Set up incremental refresh for the dataset and enable the DirectQuery partition."
       isCorrect: false
       explanation: "Incorrect. Incremental refresh isn’t possible for a DirectQuery table."
-  - content: "Fiafia is a developer at Adventure Works who is needs to deliver a real-time Power BI dashboard. It should present real-time manufacturing data with the lowest possible latency. The dashboard only shows manufacturing events for the past hour. The solution should use the minimum of Power BI resources.What type of dataset should Fiafia develop?"
+  - content: "Fiafia is a developer at Adventure Works who is needs to deliver a real-time Power BI dashboard. It should present real-time manufacturing data with the lowest possible latency. The dashboard only shows manufacturing events for the past hour. The solution should use the minimum of Power BI resources. What type of dataset should Fiafia develop?"
     choices:
     - content: "DirectQuery dataset."
       isCorrect: false
