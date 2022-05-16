@@ -45,9 +45,9 @@ Here, if `total >= 15` is false, then the following code block the `else` keywor
 
 ### Step 2 - Modify the code to remove the stacking bonus for doubles and triples using nesting
 
-In the previous unit, we saw how we introduced a subtle logic bug into our application. Let's fix that using nesting.
+In the previous unit, we saw how we introduced a subtle logic bug into our application. Let's fix that by using nesting.
 
-Nesting allows us to place code blocks inside of code blocks. In this case, we'll nest if and else statements (the check for triples) inside of another `if` statement (the check for doubles) to prevent them both from happening.
+Nesting allows us to place code blocks inside of code blocks. In this case, we'll nest `if` and `else` statements (the check for triples) inside of another `if` statement (the check for doubles) to prevent them both from happening.
 
 We'll nest the check for triples inside of the check for doubles. Modify the code to match the following code listing:
 

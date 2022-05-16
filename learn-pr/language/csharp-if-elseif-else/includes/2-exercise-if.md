@@ -22,9 +22,9 @@ Delete the code from all previous steps by highlighting the code and selecting t
 ```csharp-interactive
 Random dice = new Random();
 
-int roll1 = dice.Next(1, 6);
-int roll2 = dice.Next(1, 6);
-int roll3 = dice.Next(1, 6);
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
 
 int total = roll1 + roll2 + roll3;
 
@@ -52,9 +52,9 @@ Modify the code from the previous step to include the `if` statement.
 ```csharp-interactive
 Random dice = new Random();
 
-int roll1 = dice.Next(1, 6);
-int roll2 = dice.Next(1, 6);
-int roll3 = dice.Next(1, 6);
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
 
 int total = roll1 + roll2 + roll3;
 
@@ -134,9 +134,9 @@ Next, let's implement the rule: "If any two dice you roll result in the same val
 ```csharp-interactive
 Random dice = new Random();
 
-int roll1 = dice.Next(1, 6);
-int roll2 = dice.Next(1, 6);
-int roll3 = dice.Next(1, 6);
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
 
 int total = roll1 + roll2 + roll3;
 

@@ -4,7 +4,7 @@ Suppose you want to display different information to the end user depending on s
 
 By the end of this module, you'll be able to write code that can change the flow of your code's execution based on some criteria.
 
-This module is exciting because it opens a new world of branching code, allowing your applications to do more interesting things.
+This module is one of the most exciting modules because it opens a new world of branching code, allowing your applications to do more interesting things.
 
 ## Learning objectives
 
