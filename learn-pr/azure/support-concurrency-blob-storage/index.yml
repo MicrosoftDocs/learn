@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.support-concurrency-blob-storage.1-introduction
 - learn.support-concurrency-blob-storage.2-last-writer-wins

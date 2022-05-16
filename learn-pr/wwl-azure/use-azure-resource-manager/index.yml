@@ -28,6 +28,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- infrastructure
 units:
 - learn.wwl.use-azure-resource-manager.introduction
 - learn.wwl.use-azure-resource-manager.review-benefits

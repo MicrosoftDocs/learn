@@ -41,6 +41,8 @@ products:
 - azure
 - azure-app-service-static
 - github
+subjects:
+- custom-app-development
 units:
 - learn.student-evangelism.optimize-basketball-player-rest-breaks.1-introduction
 - learn.student-evangelism.optimize-basketball-player-rest-breaks.2-set-up-local-environment

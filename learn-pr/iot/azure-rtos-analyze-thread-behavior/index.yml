@@ -40,6 +40,8 @@ products:
 - azure-iot
 - azure-iot-hub
 
+subjects:
+- development-tools
 units:
 - learn.iot.azure-rtos-analyze-thread-behavior.introduction
 - learn.iot.azure-rtos-analyze-thread-behavior.project-analyze
@@ -51,4 +53,4 @@ units:
 - learn.iot.azure-rtos-analyze-thread-behavior.summary
 
 badge:
-  uid: learn.iot.azure-rtos-analyze-thread-behavior.badge 
+  uid: learn.iot.azure-rtos-analyze-thread-behavior.badge

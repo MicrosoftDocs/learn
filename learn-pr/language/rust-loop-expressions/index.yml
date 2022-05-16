@@ -28,6 +28,9 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- development-tools
+- data-management
 units:
 - learn.language.rust-loop-expressions.0-introduction
 - learn.language.rust-loop-expressions.1-hash-maps

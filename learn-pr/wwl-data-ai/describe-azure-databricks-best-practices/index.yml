@@ -27,6 +27,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.describe-azure-databricks-best-practices.introduction
 - learn.wwl.describe-azure-databricks-best-practices.workspace-admin

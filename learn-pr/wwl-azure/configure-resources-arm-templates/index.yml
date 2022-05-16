@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- data-modeling
 units:
 - learn.wwl.configure-resources-arm-templates.introduction
 - learn.wwl.configure-resources-arm-templates.review-arm-template-advantages

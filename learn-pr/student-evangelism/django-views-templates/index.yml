@@ -39,7 +39,9 @@ products:
   - azure
   - vs-code
   - azure-app-service
-units:  
+subjects:
+- development-tools
+units:
 - learn.django.views-templates.introduction 
 - learn.django.views-templates.exercise-setup 
 - learn.django.views-templates.views 

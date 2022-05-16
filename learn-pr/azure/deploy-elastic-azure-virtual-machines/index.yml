@@ -29,6 +29,8 @@ products:
   - azure
   - azure-virtual-machines
   - azure-linux-vm
+subjects:
+- virtual-machine
 units:
 - learn.azure.deploy-elastic-cloud-azure-virtual-machines.introduction
 - learn.azure.deploy-elastic-azure-virtual-machines.deploy

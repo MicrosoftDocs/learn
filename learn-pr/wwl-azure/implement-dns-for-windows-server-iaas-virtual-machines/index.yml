@@ -39,6 +39,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- networking
+- cloud-computing
 units:
 - learn.wwl.implement-dns-for-windows-server-iaas-vms.introduction
 - learn.wwl.implement-dns-for-windows-server-iaas-vms.understand-azure-dns

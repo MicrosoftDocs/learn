@@ -38,6 +38,8 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.introduction
 - learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.deployment

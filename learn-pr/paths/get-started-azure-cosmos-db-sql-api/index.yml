@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- business-applications
 modules:
 - learn.wwl.introduction-to-azure-cosmos-db-sql-api
 - learn.wwl.try-azure-cosmos-db-sql-api

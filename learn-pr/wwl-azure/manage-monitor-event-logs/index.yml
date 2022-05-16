@@ -29,6 +29,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.manage-monitor-event-logs.introduction
 - learn.wwl.manage-monitor-event-logs.describe-windows-server

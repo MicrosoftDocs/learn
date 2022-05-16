@@ -28,6 +28,8 @@ roles:
 products:
 - azure-sql-database
 - sql-server
+subjects:
+- database
 units:
 - learn.wwl.describe-sql-server-query-plans.introduction
 - learn.wwl.describe-sql-server-query-plans.describe-types-of

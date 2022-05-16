@@ -27,6 +27,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
 units:
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.introduction
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.understand-network-security-options-for

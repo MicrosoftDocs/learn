@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products: 
 - azure
+subjects:
+- cloud-computing
+- architecture
 units:
 - learn.n-tier-architecture.1-introduction
 - learn.n-tier-architecture.2-what-is-n-tier-architecture

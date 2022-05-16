@@ -36,6 +36,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- storage
 units:
 - learn.wwl.design-data-storage-solution-for-relational-data.introduction
 - learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-sql-database

@@ -25,6 +25,9 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-security
+- identity-access
 units:
 - learn.azure.create-users-and-groups-in-azure-active-directory.introduction
 - learn.azure.create-users-and-groups-in-azure-active-directory.user-accounts-azure-ad

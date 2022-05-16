@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- classification-analysis
 units:
 - learn.wwl.detect-analyze-faces.introduction
 - learn.wwl.detect-analyze-faces.get-started

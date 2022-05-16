@@ -34,6 +34,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- process-workflow
 units:
 - learn.wwl.combine-query-results-set-operators.introduction
 - learn.wwl.combine-query-results-set-operators.use-union-operator

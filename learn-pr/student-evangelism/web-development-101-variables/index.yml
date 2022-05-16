@@ -24,6 +24,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.web-development-101-variables.introduction
 - learn.student-evangelism.web-development-101-variables.data-types-overview

@@ -24,6 +24,9 @@ roles:
 - security-operations-analyst
 products:
 - m365
+subjects:
+- threat-protection
+- information-protection-governance
 units:
 - learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.introduction
 - learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-file

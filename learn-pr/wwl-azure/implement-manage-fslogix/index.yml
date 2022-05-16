@@ -30,6 +30,9 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- development-tools
+- virtual-machine
 units:
 - learn.wwl.implement-manage-fslogix.introduction
 - learn.wwl.implement-manage-fslogix.plan-for-fslogix

@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - microsoft-edge
+subjects:
+- accessibility
 units:
 - learn.student-evangelism.web-development-101.accessibility.introduction
 - learn.student-evangelism.web-development-101.accessibility.client-tools

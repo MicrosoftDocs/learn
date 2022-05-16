@@ -34,6 +34,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-engineering
 units:
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.introduction
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.understand-language-support-azure-data-factory

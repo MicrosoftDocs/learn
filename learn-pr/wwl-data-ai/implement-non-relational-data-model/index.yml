@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-modeling
 units:
 - learn.wwl.implement-non-relational-data-model.introduction
 - learn.wwl.implement-non-relational-data-model.whats-difference-between-nosql-relational-databases

@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.implement-docker-multi-stage-builds.introduction
 - learn.wwl.implement-docker-multi-stage-builds.explore-multiple-stage-builds

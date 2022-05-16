@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- cloud-computing
 units:
 - learn.azure.intro-to-azure-arc.1-introduction
 - learn.azure.intro-to-azure-arc.2-describe-azure-arc
