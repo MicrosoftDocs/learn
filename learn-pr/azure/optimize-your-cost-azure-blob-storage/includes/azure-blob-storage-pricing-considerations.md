@@ -80,8 +80,6 @@ You have the option of modifying the template to match your specific needs. You 
 
 To calculate the estimated storage cost, on the **Azure pricing calculator** page, select the **Storage Account** tile. Within the same page, in the **Storage Accounts** section, specify the options that reflect your anticipated usage needs.
 
-:::image type="content" source="../media/2-pricing-calculator-block-blob-storage.png" alt-text="The Azure pricing calculator page reflects the average monthly cost for Block Blob Storage, standard performance, and hot access." border="false":::
-
 > [!NOTE]
 > Before you calculate an estimate, consider signing in on the **Azure** **pricing calculator** page using the same account you use to manage your Azure environment. This will allow you to save the resulting quote for future reference.
 

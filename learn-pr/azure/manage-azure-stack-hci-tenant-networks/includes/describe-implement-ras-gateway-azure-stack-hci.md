@@ -15,7 +15,7 @@ RAS Gateway offers support for the following core capabilities:
 
 This RAS Gateway capability provides virtual network connectivity across the internet by using an encrypted tunnel. In multitenant scenarios, tenants can access and manage their resources hosted on your Azure Stack HCI deployment from remote locations. The VPN functionality includes support for Internet Key Exchange v2 (IKEv2) and Point-to-Site (P2S) VPN.
 
-:::image type="content" source="../media/4-s2s-tunnel.png" alt-text="S2S IPsec VPN with a multitenant gateway and tenants accessing and managing resources from remote locations." border="false":::
+:::image type="content" source="../media/4-s2s-tunnel.png" alt-text="Diagram that shows S 2 S I P sec V P N with a multitenant gateway and tenants accessing and managing resources from remote locations." border="false" lightbox="../media/4-s2s-tunnel.png":::
 
 ### S2S GRE Tunneling
 
@@ -23,19 +23,19 @@ This RAS Gateway capability provides virtual network connectivity across the int
 
 - Access from the tenant's virtual networks to a physical network within the same hosting environment. 
 
-:::image type="content" source="../media/4-gre-tunnel-1.png" alt-text="S2S GRE tunneling with access from the tenant's virtual networks to a physical network within the same hosting environment." border="false":::
+:::image type="content" source="../media/4-gre-tunnel-1.png" alt-text="Diagram that shows S 2 S G R E tunneling with access from the tenant's virtual networks to a physical network within the same hosting environment." border="false" lightbox="../media/4-gre-tunnel-1.png":::
 
 - High-speed connectivity over a Multiprotocol Label Switching (M P L S) connection from the tenant's own on-premises network. 
 
-:::image type="content" source="../media/4-gre-tunnel-2.png" alt-text="S2S GRE tunneling with high-speed connectivity over a M P L S connection from the tenant's own on-premises network." border="false":::
+:::image type="content" source="../media/4-gre-tunnel-2.png" alt-text="Diagram that shows S 2 S G R E tunneling with high-speed connectivity over a M P L S connection from the tenant's own on-premises network." border="false" lightbox="../media/4-gre-tunnel-2.png":::
 
 - Integration with VLAN-based isolation.
 
-:::image type="content" source="../media/4-gre-tunnel-3.png" alt-text="S2S GRE tunneling integration with VLAN-based isolation." border="false":::
+:::image type="content" source="../media/4-gre-tunnel-3.png" alt-text="Diagram that shows S 2 S G R E tunneling integration with V LAN-based isolation." border="false" lightbox="../media/4-gre-tunnel-3.png":::
 
 - Access from one or more tenants' virtual networks with non-overlapping IP address spaces to shared resources within a physical network of a hosting provider.
 
-:::image type="content" source="../media/4-gre-tunnel-4.png" alt-text="S2S GRE tunneling access from one or more tenants' virtual networks." border="false":::
+:::image type="content" source="../media/4-gre-tunnel-4.png" alt-text="Diagram that shows S 2 S G R E tunneling access from one or more tenants' virtual networks." border="false" lightbox="../media/4-gre-tunnel-4.png":::
 
 ### L3 Forwarding
 
@@ -76,7 +76,7 @@ For example, you can create a gateway pool that supports both high throughput an
 > [!NOTE]
 > You add tenant virtual gateways to gateway pools. Network Controller automatically determines the most suitable RAS Gateway VM to use when you deploy a new virtual gateway.
 
-:::image type="content" source="../media/4-ras-gateway-pool.png" alt-text="Multitenant RAS Gateway deployment with the gateway pools deployed behind an SDN SLB." border="false":::
+:::image type="content" source="../media/4-ras-gateway-pool.png" alt-text="Diagram that shows Multitenant R A S Gateway deployment with the gateway pools deployed behind an S D N S L B." border="false" lightbox="../media/4-ras-gateway-pool.png":::
 
 ### Implement gateway pools
 
@@ -105,13 +105,13 @@ Creating an IPsec gateway connection by using Windows Admin Center involves the 
     1. Add **Routes** to the connection, including their respective metrics and destination subnet prefixes.
     1. Enter the **IPsec shared secret** that matches the secret configured on the remote gateway, and then select **Create**.
 
-:::image type="content" source="../media/4-create-ipsec-gateway-connection.png" alt-text="Screenshot of the Gateway connections pane in Windows Admin Center depicting the creation of a new IPsec gateway connection." border="false":::
+:::image type="content" source="../media/4-create-ipsec-gateway-connection.png" alt-text="Screenshot of the Gateway connections pane in Windows Admin Center depicting the creation of a new IPsec gateway connection." border="false" lightbox="../media/4-create-ipsec-gateway-connection.png":::
 
 #### Create a GRE gateway connection
 
 For the most part, creating a GRE gateway connection by using Windows Admin Center involves the same sequence of steps as creating an IPsec gateway connection. The primary distinction is that in the **Connection Type** drop-down list, you select the **GRE** option instead, and then use the **GRE key** that matches the key configured on the remote gateway (rather than the **IPsec shared secret**).
 
-:::image type="content" source="../media/4-create-gateway-connection.png" alt-text="Screenshot of the Create New Gateway Connection pane in Windows Admin Center, depicting the creation of a new GRE gateway connection." border="false":::
+:::image type="content" source="../media/4-create-gateway-connection.png" alt-text="Screenshot of the Create New Gateway Connection pane in Windows Admin Center, depicting the creation of a new G R E gateway connection." border="false" lightbox="../media/4-create-gateway-connection.png":::
 
 #### Create an L3 gateway connection
 
@@ -122,7 +122,7 @@ The process of creating an L3 gateway connection by using Windows Admin Center a
 1. An IP address in the CIDR format corresponding to the **L3 IP Address/Subnet Mask**. This IP address is configured on the gateway interface. 
 1. An **L3 Peer IP address** on the **L3 Logical Subnet** that will serve as the next hop on the physical network after traffic originating from the virtual network reaches the gateway. 
 
-:::image type="content" source="../media/4-create-l3-gateway-connection.png" alt-text="Screenshot of the Create New Gateway Connections pane in Windows Admin Center, depicting the creation of a new L3 gateway connection." border="false":::
+:::image type="content" source="../media/4-create-l3-gateway-connection.png" alt-text="Screenshot of the Create New Gateway Connections pane in Windows Admin Center, depicting the creation of a new L3 gateway connection." border="false" lightbox="../media/4-create-l3-gateway-connection.png":::
 
 #### Modify and delete gateway connections
 

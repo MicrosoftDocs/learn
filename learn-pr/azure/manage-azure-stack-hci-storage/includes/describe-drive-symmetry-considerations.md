@@ -19,11 +19,11 @@ Storage Spaces Direct utilizes storage capacity in the optimal manner when every
 
 Storage Spaces Direct can help minimize capacity imbalance across drives and servers. However, such a configuration could limit the amount of usable capacity. To understand why this happens, you must understand the concept of *stranded capacity*. In the following illustration, each box represents one copy of three-way mirrored data. For example, the boxes marked B, B', and B'' are three copies of the same data. To satisfy fault tolerance requirements, these copies must be stored in different servers. However, Servers 1 and 2 (10 terabytes (TB) each) are full. While Server 3 has larger drives with a total capacity of 15 TB, storing more three-way mirrored data on Server 3 would require replicas on Server 1 and Server 2 as well, and these servers are already full. Effectively, the remaining 5 TB capacity on Server 3 can't be used, which is why the capacity is considered "stranded."
 
-:::image type="content" source="../media/4-stranded-capacity.png" alt-text="Diagram that shows three servers are represented: two with two 5 TB drives, and the third with three 5 TB drives. The third 5 TB drive of the third server can't be used, and therefore is stranded."border="false":::
+:::image type="content" source="../media/4-stranded-capacity.png" alt-text="Diagram that shows three servers are represented: two with two 5 T B drives, and the third with three 5 T B drives."border="false" lightbox="../media/4-stranded-capacity.png":::
 
 However, with four servers of 10 TB, 10 TB, 10 TB, and 15 TB capacity, and with three-way mirror resiliency, it's possible to distribute replicas in a way that uses all the available capacity, as in the following example.
 
-:::image type="content" source="../media/4-optimal-placement.png" alt-text="Diagram that shows four servers are represented and optimal capacity is retained when they are set up in a three-way mirror."border="false":::
+:::image type="content" source="../media/4-optimal-placement.png" alt-text="Diagram that shows four servers are represented and optimal capacity is retained when they are set up in a three-way mirror."border="false" lightbox="../media/4-optimal-placement.png":::
 
 Whenever possible, Storage Spaces Direct will identify and implement the optimal placement, leaving no stranded capacity. 
 

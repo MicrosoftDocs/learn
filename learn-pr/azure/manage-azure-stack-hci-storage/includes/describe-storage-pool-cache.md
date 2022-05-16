@@ -39,7 +39,7 @@ This scenario is the default configuration. Given the options of all NVMe drives
 
 The following image illustrates three configuration options that optimize performance. Option 1 uses four NVMe drives for capacity. Option 2 uses two NVMe drives for cache and four SSDs for capacity. Option 3 uses four SSDs for capacity.
 
-:::image type="content" source="../media/3-all-flash-automatic.png" alt-text="Diagram that shows three configuration options that optimize performance. These options are NVMe for capacity, NVMe for cache and SSD for capacity, and SSD for capacity." border="false":::
+:::image type="content" source="../media/3-all-flash-automatic.png" alt-text="Diagram that shows three configuration options that optimize performance." border="false" lightbox="../media/3-all-flash-automatic.png":::
 
 #### Scenario 2: Balancing performance and capacity
 
@@ -47,7 +47,7 @@ Less demanding workloads and higher storage capacity requirements might benefit 
 
 The following image illustrates three options that balance performance and capacity. The first option uses two NVMe drives for cache and four HDDs for capacity. The second option uses two SSDs for cache and four HDDs for capacity. The third option uses two NVMe drives for cache, with a mix of SSDs and HDDs for capacity.
 
-:::image type="content" source="../media/3-hybrid-automatic.png" alt-text="Diagram that shows three options that balance performance and capacity as described in the preceding text." border="false":::
+:::image type="content" source="../media/3-hybrid-automatic.png" alt-text="Diagram that shows three options that balance performance and capacity as described in the preceding text." border="false" lightbox="../media/3-hybrid-automatic.png":::
 
 #### Scenario 3: Manual configurations with dual-flash configurations, leveraging slower flash drives to increase capacity
 
@@ -55,7 +55,7 @@ For workloads that require larger capacity but write infrequently a few SSDs for
 
 The following image illustrates three options that involve a dual-flash drive type and use slower flash drives to increase capacity. Note that these setups require manual configuration. Option 1 uses two faster NVMe drives for cache and four slower NVMe drives for capacity. Option 2 uses two faster SSDs for cache and four slower SSDs for capacity.  Option 3 uses two faster SSDs for cache, with a mix of slower SSDs and HDDs providing capacity.
 
-:::image type="content" source="../media/3-dual-flash-manual.png" alt-text="Diagram that shows three options that involve a dual-flash drive type and use slower flash drives to increase capacity as described in the preceding text." border="false":::
+:::image type="content" source="../media/3-dual-flash-manual.png" alt-text="Diagram that shows three options that involve a dual-flash drive type and use slower flash drives to increase capacity." border="false" lightbox="../media/3-dual-flash-manual.png":::
 
 > [!NOTE]
 > Whenever drives are added or removed, the binding between cache and capacity drives is adjusted dynamically. 

@@ -26,7 +26,7 @@ The simplest method to create an Azure Stack HCI tenant virtual network relies o
 1. In the **Subnets** section, select **Add**, and then enter the **Address Prefix** in the CIDR notation.
 1. In the **Virtual networks** pane, select **Submit**.
 
-:::image type="content" source="../media/3-create-virtual-network.png" alt-text="Screenshot of the virtual networks pane in Windows Admin Center depicting the creation of an Azure Stack HCI tenant virtual network." border="false":::
+:::image type="content" source="../media/3-create-virtual-network.png" alt-text="Screenshot of the virtual networks pane in Windows Admin Center depicting the creation of an Azure Stack H C I tenant virtual network." border="false" lightbox="../media/3-create-virtual-network.png":::
 
 ## Configure Azure Stack HCI tenant virtual networks
 
@@ -36,7 +36,7 @@ The following screenshot depicts some of the settings you can use to perform com
 - Configuring virtual network peering
 - Configuring Border Gateway Protocol (BGP) router and peers
 
-:::image type="content" source="../media/3-configure-virtual-network.png" alt-text="Screenshot of the Virtual networks pane in Windows Admin Center depicting the settings for vnet001." border="false":::
+:::image type="content" source="../media/3-configure-virtual-network.png" alt-text="Screenshot of the Virtual networks pane in Windows Admin Center depicting the settings for V NET 001." border="false" lightbox="../media/3-configure-virtual-network.png":::
 
 Use the following procedure in Windows Admin Center to modify the settings of a subnet to a tenant logical network:
 
@@ -80,7 +80,7 @@ Windows Admin Center provides an intuitive interface for creating and configurin
 - Allow traffic forwarding (for example, forwarding traffic originating from another virtual network) to the peered virtual network.
 - Allow the use of a remote gateway on the local or remote virtual network.
 
-:::image type="content" source="../media/3-configure-virtual-network-peering.png" alt-text="You can use the Windows Admin Center New Peering pane to create a new peering." border="false":::
+:::image type="content" source="../media/3-configure-virtual-network-peering.png" alt-text="Screenshot of using the Windows Admin Center New Peering pane to create a new peering." border="false" lightbox="../media/3-configure-virtual-network-peering.png":::
 
 ## Delete Azure Stack HCI tenant virtual networks
 
@@ -91,4 +91,4 @@ Windows Admin Center also simplifies the task of deleting Azure Stack HCI tenant
 1. On the **Virtual networks** page, select the **Inventory** tab, select the virtual network you intend to delete, and then select **Delete**.
 1. When prompted for confirmation, select **Yes**. 
 
-:::image type="content" source="../media/3-delete-virtual-network.png" alt-text="The virtual networks pane in Windows Admin Center presents a dialog box requesting confirmation prior to deleting a virtual network." border="false":::
+:::image type="content" source="../media/3-delete-virtual-network.png" alt-text="The virtual networks pane in Windows Admin Center presents a dialog box requesting confirmation prior to deleting a virtual network." border="false" lightbox="../media/3-delete-virtual-network.png":::

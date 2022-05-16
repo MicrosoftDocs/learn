@@ -67,7 +67,7 @@ To change the repair speed settings, you can use Windows Admin Center or the 'Se
 
 The storage repair speed is setting on the Storage Spaces and pools page in the Windows Admin Center. You can select one of the storage repair speeds listed in the previous table.
 
-:::image type="content" source="../media/7-storage-repair-speed.png" alt-text="Screenshot of the Storage Spaces and pools page with the medium option being selected for storage repair speed." border="true":::
+:::image type="content" source="../media/7-storage-repair-speed.png" alt-text="Screenshot of the Storage Spaces and pools page with the medium option being selected for storage repair speed." border="true" lightbox="../media/7-storage-repair-speed.png":::
 
 When using PowerShell, you reference the queue depth value by using the *-**VirtualDiskRepairQueueDepth* parameter of the 'Set-StorageSubSystem' cmdlet.
 

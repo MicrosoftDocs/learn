@@ -35,7 +35,7 @@ The simplest method to create an Azure Stack HCI tenant logical network is to us
 1. Back in the **Logical Subnet** pane, select **Add**.
 1. Back in the **Logical networks** pane, select **Submit**.
 
-:::image type="content" source="../media/2-create-logical-network.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center when creating an Azure Stack HCI tenant logical network." border="false":::
+:::image type="content" source="../media/2-create-logical-network.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center when creating an Azure Stack H C I tenant logical network." border="false" lightbox="../media/2-create-logical-network.png":::
 
 ## Configure Azure Stack HCI tenant logical networks
 
@@ -59,7 +59,7 @@ To change the virtualization settings of a logical network:
 > [!NOTE]
 > This effectively allows you to deploy a virtual network on top of the virtual network.
 
-:::image type="content" source="../media/2-enable-network-virtualization.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center depicting modifications to the settings for the selected network." border="false":::
+:::image type="content" source="../media/2-enable-network-virtualization.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center depicting modifications to the settings for the selected network." border="false" lightbox="../media/2-enable-network-virtualization.png":::
 
 ## Delete Azure Stack HCI tenant logical networks
 
@@ -70,4 +70,4 @@ Using Windows Admin Center also simplifies deleting Azure Stack HCI tenant logic
 1. On the **Logical networks** page, select the **Inventory** tab, select the logical network you intend to delete, and then select **Delete**.
 1. When prompted for confirmation, select **Yes**. 
 
-:::image type="content" source="../media/2-delete-logical-network.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center. A dialog box requests confirmation for deleting a tenant logical network." border="false":::
+:::image type="content" source="../media/2-delete-logical-network.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center. A dialog box requests confirmation for deleting a tenant logical network." border="false" lightbox="../media/2-delete-logical-network.png":::

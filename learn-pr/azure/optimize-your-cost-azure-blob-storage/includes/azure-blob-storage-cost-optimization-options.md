@@ -30,7 +30,7 @@ For example, your database administration team should consider using Archive sto
 
 If you have a clear indication that a new blob won’t be accessed in the near term, you should consider assigning it directly to the Cool or Archive tier. This will eliminate charges associated with moving it across tiers.
 
-:::image type="content" source="../media/3-upload-blob-archive-tier.png" alt-text="The Azure portal pane has the option of assigning a newly uploaded blob to the Archive tier." border="false":::
+:::image type="content" source="../media/3-upload-blob-archive-tier.png" alt-text="Screenshot of the Azure portal pane has the option of assigning a newly uploaded blob to the Archive tier." border="false" lightbox="../media/3-upload-blob-archive-tier.png":::
 
 #### Automatically move data between access tiers
 

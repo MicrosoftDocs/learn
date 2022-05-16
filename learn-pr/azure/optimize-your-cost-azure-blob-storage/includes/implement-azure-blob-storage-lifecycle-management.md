@@ -13,17 +13,17 @@ To implement support for evaluations based on the last accessed date, you need t
 > [!NOTE]
 > Enabling this setting does incur an additional cost.
 
-:::image type="content" source="../media/5-enable-access-tracking.png" alt-text="The Azure portal Lifecycle management pane has Enable access tracking selected." border="false":::
+:::image type="content" source="../media/5-enable-access-tracking.png" alt-text="Screenshot of the Azure portal Lifecycle management pane has Enable access tracking selected." border="false" lightbox="../media/5-enable-access-tracking.png":::
 
-:::image type="content" source="../media/5-lifecycle-rule-move-to-cool-fifteen-days.png" alt-text="A lifecycle management rule in code view is designed to moves blobs to cool tier after 15 days after the last accessed date." border="false":::
+:::image type="content" source="../media/5-lifecycle-rule-move-to-cool-fifteen-days.png" alt-text="Screenshot of a lifecycle management rule in code view is designed to moves blobs to cool tier after 15 days after the last accessed date." border="false" lightbox="../media/5-lifecycle-rule-move-to-cool-fifteen-days.png":::
 
 A performance-related measure supported by the lifecycle management policy is the ability to transition blobs from the Cool to Hot tier as soon as they’re accessed. This is accomplished by setting the **enableAutoTierToHotFromCool** property to true within the policy rules.
 
 > [!NOTE]
 > In this case as well, keep in mind the potential cost implications as a result of the early deletion charge.
 
-:::image type="content" source="../media/5-lifecycle-rule-enable-auto-tier-hot-cool.png" alt-text="A lifecycle management rule is designed to move blobs to cool tier after 15 days following the last accessed date." border="false":::
+:::image type="content" source="../media/5-lifecycle-rule-enable-auto-tier-hot-cool.png" alt-text="Screenshot of a lifecycle management rule is designed to move blobs to cool tier after 15 days following the last accessed date." border="false" lightbox="../media/5-lifecycle-rule-enable-auto-tier-hot-cool.png":::
 
 Policy rules also integrate with index tags. This allows you to author rules that target specific blobs based on the match on their index tags values. The following example illustrates a rule that deletes blobs based on the match on an index tag.
 
-:::image type="content" source="../media/5-lifecycle-rule-index-tag-match.png" alt-text="The Azure portal Lifecycle management pane has a lifecycle management rule that removes blobs based on the index tag." border="false":::
+:::image type="content" source="../media/5-lifecycle-rule-index-tag-match.png" alt-text="Screenshot of the Azure portal Lifecycle management pane has a lifecycle management rule that removes blobs based on the index tag." border="false" lightbox="../media/5-lifecycle-rule-index-tag-match.png":::
