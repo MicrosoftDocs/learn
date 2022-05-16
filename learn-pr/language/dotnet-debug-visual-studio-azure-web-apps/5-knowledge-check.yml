@@ -13,59 +13,59 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "When you want to write a line to the debug console only when you're debugging, which API should you use?"
+    - content: "Which of the following is one way to enable remote debugging on an Azure App Service?"
       choices:
-        - content: "System.Console.WriteLine"
+        - content: "Log in to the Kudu portal and open up a firewall port to allow Visual Studio to connect."
           isCorrect: false
-          explanation: "The System.Console APIs are always enabled and always write to the console."
-        - content: "System.Diagnostics.Trace.WriteLine"
+          explanation: "The Kudu portal is not used to managed remote debugging."
+        - content: "Enable the remote debugging setting in the publishing profile in Visual Studio."
           isCorrect: false
-          explanation: "This API only writes to attached listeners when `TRACE` is defined."
-        - content: "System.Diagnostics.Debug.WriteLine"
+          explanation: "The publishing profile in Visual Studio does not provide an option to enable remote debugging."
+        - content: "Enable remote debugging through the app service configuration page in the Azure Portal."
           isCorrect: true
-          explanation: "This API writes when attached to a debugger in the debug console output."
-        - content: "System.WriteLine"
+          explanation: "Remote debugging can be enabled under the general settings tab on the App Service configuration page."
+        - content: "Use the Visual Studio attach to process dialog window to enable remote debugging."
           isCorrect: false
-          explanation: "There's no API in the System namespace to write a line to the debug console."
-    - content: "If you want to write a debug message only when the count is `0`, what code would you use?"
+          explanation: "The Azure App Service remote debugging setting cannot be enabled from Visual Studio."
+    - content: "What does it mean if a Visual Studio breakpoint icon is hollow (not filled in) after you attach to the Azure App Service process?"
       choices:
-        - content: '`Debug.Assert(count != 0, "Count should not be 0.");`'
-          isCorrect: false
-          explanation: "Assert tests a condition. If it's true, nothing will happen or else the application will enter break mode. So here, if the count is 0, it will enter break mode."
-        - content: '`Debug.Assert(count == 0, "Count should not be 0.");`'
-          isCorrect: false
-          explanation: "Assert tests a condition. If it's true, nothing will happen or else the application will enter break mode. So here, if the count is 0, nothing will happen."
-        - content: '`Debug.WriteIf(count != 0, "Count should not be 0.");`'
-          isCorrect: false
-          explanation: "This code prints a message when the count doesn't equal 0."
-        - content: '`Debug.WriteIf(count == 0, "Count should not be 0.");`'
+        - content: "The symbols for the relevant code have not been loaded."
           isCorrect: true
-          explanation: "This code will only print a debug message when the count is 0."
-    - content: "What are the top two values a debugger provides?"
+          explanation: "Visual Studio requires symbols to be loaded for application in order to use breakpoints."
+        - content: "Remote debugging is disabled on the Azure App Service."
+          isCorrect: false
+          explanation: "You are not able to attach the debugger if remote debugging is disabled."
+        - content: "Your version of Visual Studio does not support remote debugging."
+          isCorrect: false
+          explanation: "You are not able to attach the debugger to Azure App Service in the first place if your version of Visual Studio is unsupported."
+        - content: "The Visual Studio debugger failed to attach to the process."
+          isCorrect: true
+          explanation: "The debugger can still be attached even if breakpoints are not able to be hit."
+    - content: "Which process should you attach to when debugging an app hosted in Azure App Service?"
       choices:
-        - content: "Control of your program execution and observation of your program's state"
+        - content: 'w3wp.exe'
           isCorrect: true
-          explanation: "The two main values almost every debugger provides are the ability to control program execution and to observe program state."
-        - content: "Modifying program values and changing your program output"
+          explanation: "This is the correct process to attach to for Azure App SErvice."
+        - content: 'cmd.exe'
           isCorrect: false
-          explanation: "Changing your program's output isn't useful because it will only have effect when the application is being debugged."
-        - content: "Observing your program's state and modifying your program values"
+          explanation: "This process can provide command line access in Azure App Service but is not related to remote debugging."
+        - content: 'dotnet.exe'
           isCorrect: false
-          explanation: "Observing and modifying values are important, but it's also important to be able to control the flow of program execution."
-        - content: "Editing your program while running and editing program values"
+          explanation: "This is not an available process to attach to in Azure App Service."
+        - content: "kestrel.exe"
           isCorrect: false
-          explanation: "Editing programs is useful, but observing your program's operational state is another important value that the .NET debugger provides."
-    - content: "Which Visual Studio debugger window is most useful to observe the current value of a specific variable across different functions?"
+          explanation: 'Kestrel is web server implementation in ASP.NET Core, but this is not an available process to attach to for remote debugging.'
+    - content: "How do you attach to a process using Visual Studio debugging features?"
       choices:
-        - content: "Use the Locals window because it shows all variables that are currently in scope."
+        - content: "While running an app locally that has been deployed to Azure, choose **Attach to App Service** from the debugging controls."
           isCorrect: false
-          explanation: "While the Locals window does display all variables currently in scope, it's not the best way to watch the value of a specific variable."
-        - content: "Hover over the variable in the code editor to display the value."
+          explanation: "The debugging controls do not provide an option to attach to Azure."
+        - content: "Use the command line to run 'dotnet remote attach' and provide the address of the Azure App Service."
           isCorrect: false
-          explanation: "While hovering does display the variable's current value, it's a manual process and isn't efficient."
-        - content: "Use the Watch window to select specific variables or expressions to watch throughout the program's execution."
+          explanation: "This dotnet CLI command does not exist."
+        - content: "Check the **Attach Debugger on Deploy** option in the publishing profile before deploying the app. Visual Studio will enter debug mode after the app is published."
+          isCorrect: false
+          explanation: "This option does not exist on the publishing profile settings."
+        - content: "Under the main **Debug** menu, select **Attach To process**, and then use the dialog window to find your Azure App Service instance."
           isCorrect: true
-          explanation: "Observing and modifying values are important, but it's also important to be able to control the flow of program execution."
-        - content: "Use the Call Stack window."
-          isCorrect: false
-          explanation: "The Call Stack window gives you information about the trail of function calls in your program, but it doesn't display variable values."
+          explanation: "Visual Studio provides an interactive UI to attach to processes on different machines and environments."
