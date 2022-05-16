@@ -118,4 +118,4 @@ You can also call Form Recognizer models by integrating our client library SDks 
 - [C Sharp](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-csharp-sdk)
 - [Java](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-java-sdk)
 - [JavaScript](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-javascript-sdk)
-- [Python](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-python-sdk)).
+- [Python](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-python-sdk).
