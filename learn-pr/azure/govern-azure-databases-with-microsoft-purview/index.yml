@@ -13,7 +13,7 @@ summary: Govern data from Azure databases with Microsoft Purview.
 abstract:  | 
   After completing this module, you’ll be able to:
   - Govern and manage data from Azure SQL Database by using Microsoft Purview.
-  - Govern and manage data from an Azure SQL Database managed instance by using Microsoft Purview.
+  - Govern and manage data from an Azure SQL Managed Instance by using Microsoft Purview.
 
 prerequisites: |
   To get the best learning experience from this module, you should have:
