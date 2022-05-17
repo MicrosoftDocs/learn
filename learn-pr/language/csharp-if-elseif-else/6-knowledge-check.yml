@@ -17,10 +17,10 @@ quiz:
     choices:
     - content: "`x < 5`"
       isCorrect: false
-      explanation: "`x` is not less than 5.  `x` is equal to 5."
+      explanation: "`x` is not less than 5. `x` is equal to 5."
     - content: "`x > 5`"
       isCorrect: false
-      explanation: "`x` is not greater than 5.  `x` is equal to 5."
+      explanation: "`x` is not greater than 5. `x` is equal to 5."
     - content: "`x = 5`"
       isCorrect: false
       explanation: "`x = 5` isn't a valid Boolean expression because it uses the assignment operator, not the equality operator."
@@ -34,16 +34,16 @@ quiz:
       explanation: "Correct!  The double percentage-sign symbol `%%` has no meaning in C# and is not a valid operator."
     - content: "`&&`"
       isCorrect: false
-      explanation: "`&&` is the C# logical AND operator.  We learned about it in this module."
+      explanation: "`&&` is the C# logical AND operator. We learned about it in this module."
     - content: "`||`"
       isCorrect: false
-      explanation: "`||` is the C# logical OR operator.  We learned about it in this module."
+      explanation: "`||` is the C# logical OR operator. We learned about it in this module."
     - content: "`==`"
       isCorrect: false
-      explanation: "`==` is the C# equality operator.  We learned about it in this module."
+      explanation: "`==` is the C# equality operator. We learned about it in this module."
   - content: "Which of the choices below about the `if` statement is *false*?"
     choices:
-    - content: "The `if`` statement must be followed by a Boolean expression."
+    - content: "The `if` keyword must be followed by a Boolean expression."
       isCorrect: false
       explanation: "We're looking for a false statement. This statement is true."
     - content: "You can add an `else` before an `else if` statement."

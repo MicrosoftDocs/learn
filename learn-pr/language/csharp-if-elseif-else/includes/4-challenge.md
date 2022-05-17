@@ -1,4 +1,4 @@
-Code challenges throughout these modules help reinforce what you've learned and help you gain some confidence before proceeding.
+Code challenges throughout these modules reinforce what you've learned and help you gain some confidence before proceeding.
 
 ## Challenge: Improve renewal rate of subscriptions
 

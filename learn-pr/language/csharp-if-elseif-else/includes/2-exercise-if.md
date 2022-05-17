@@ -1,4 +1,4 @@
-The most widely used branching statement is the `if` statement. The `if` statement relies on a Boolean expression that is enclosed in a set of parentheses. If the expression is true, the code after the `if` statement is executed. If the expression is not true, the .NET runtime ignores the code and doesn't execute it.
+The most widely used branching statement is the `if` statement. The `if` statement relies on a Boolean expression that is enclosed in a set of parentheses. If the expression is true, the code after the `if` statement is executed. If the expression is false, the code after the `if` statement is skipped.
 
 ## Create a random-number game by using if statements
 
@@ -79,15 +79,15 @@ The `if` statement is made up of three parts:
 - A *Boolean expression* between parentheses `()`.
 - A *code block* defined by curly braces `{ }`.
 
-At runtime, the Boolean expression `total > 14` is evaluated. If this statement is true and the value of `total` is greater than `14`, the flow of execution will continue into the code defined in the code block. In other words, it will execute the code in the curly braces.
+At runtime, the Boolean expression `total > 14` is evaluated. If this expression is true and the value of `total` is greater than `14`, the flow of execution will continue into the code defined in the code block. In other words, it will execute the code in the curly braces.
 
-However, if the Boolean expression is false and the value of `total` not greater than `14`, the flow of execution will skip the code block. In other words, it will not execute the code in the curly braces.
+However, if the Boolean expression is false, the flow of execution will skip the code block. In other words, it will not execute the code in the curly braces.
 
 Finally, the second `if` statement controls the message if the user loses. In the next unit, we'll use a variation on the `if` statement to shorten these two statements into a single statement and more clearly express our intent.
 
 #### What is a Boolean expression?
 
-A Boolean expression is any code that returns a Boolean value, either `true` or `false`. The simplest Boolean expressions are simply the values `true` and `false`. Alternatively, a Boolean expression can be the result of a method that returns the value `true` or `false`. For example, here's a simple code example that uses the `string.Contains()` method to evaluate whether one string contains another string:
+A Boolean expression is any code that returns a Boolean value, either `true` or `false`. The simplest Boolean expressions are the values `true` and `false`. Alternatively, a Boolean expression can be the result of a method that returns the value `true` or `false`. For example, here's a simple code example that uses the `string.Contains()` method to evaluate whether one string contains another string:
 
 ```csharp-interactive
 string message = "The quick brown fox jumps over the lazy dog.";
@@ -161,11 +161,11 @@ if (total < 15)
 
 Here, we combine three Boolean expressions to create one large Boolean expression in a single line of code. This type of code is sometimes called a *compound condition*. We have one outer set of parentheses that combines three inner sets of parentheses separated by two pipe characters.
 
-The double pipe characters `||` are the **logical OR** operator, which basically says "either the expression to my left OR the expression to my right must be true in order for the entire Boolean expression to be true". If both Boolean expressions are false, the entire Boolean expression is false. We use two logical OR operators so that we can extend the evaluation to a third Boolean expression.
+Two pipe characters `||` is the **logical OR** operator, which basically says "either the expression to my left OR the expression to my right must be true in order for the entire Boolean expression to be true". If both Boolean expressions are false, the entire Boolean expression is false. We use two logical OR operators so that we can extend the evaluation to a third Boolean expression.
 
-First, we evaluate `(roll1 == roll2)`. If that's true, the entire expression is true. If it's false, we evaluate `(roll2 == roll3)`. If that's true, the entire expression is true. If it's false, we evaluate `(roll1 == roll3)`. If that's true, the entire expression is true. If that is false, the entire expression is false.
+First, we evaluate `(roll1 == roll2)`. If that's true, the entire expression is true. If it's false, we evaluate `(roll2 == roll3)`. If that's true, the entire expression is true. If it's false, we evaluate `(roll1 == roll3)`. If that's true, the entire expression is true. If all three are false, the entire expression is false.
 
-If the large Boolean expression is true, we execute the following code block. This time, there are two lines of code. The first line of code prints a message to the user. The second line of code increments the value of `total` by `2`.
+If the compound Boolean expression is true, we execute the following code block. This time, there are two lines of code. The first line of code prints a message to the user. The second line of code increments the value of `total` by `2`.
 
 Finally, we also changed the check to see if the user won to use the `>=` operator. That scenario more closely resembles the requirement we created as we began, but it should function identically to what we wrote previously.
 
@@ -211,9 +211,9 @@ if (total < 15)
 }
 ```
 
-Here, we combine two Boolean expressions to create one large Boolean expression in a single line of code. We have one outer set of parentheses that combines two inner sets of parentheses separated by two ampersand characters.
+Here, we combine two Boolean expressions to create one compound Boolean expression in a single line of code. We have one outer set of parentheses that combines two inner sets of parentheses separated by two ampersand characters.
 
-The double ampersand characters `&&` are the **logical AND** operator, which basically says "only if both expressions are true, then the entire expression is true". In this case, if `roll1` is equal to `roll2`, and `roll2` is equal to `roll3`, then by deduction, `roll1` must be equal to `roll3` and the user rolled triples.
+Two ampersand characters `&&` is the **logical AND** operator, which basically says "only if both expressions are true, then the entire expression is true". In this case, if `roll1` is equal to `roll2`, and `roll2` is equal to `roll3`, so `roll1` must be equal to `roll3` and the user rolled triples.
 
 If you run the code, you might see output like this example:
 
