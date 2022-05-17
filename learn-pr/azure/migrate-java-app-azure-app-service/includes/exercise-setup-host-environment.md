@@ -1,4 +1,4 @@
-For this module, we will try to containerize and migrate the Airsonic application. Airsonic is a free, web based music streaming application. We will deploy Airsonic in a two-tier configuration with the application front end running on Apache Tomcat on a Linux server and the application backend running on Azure Database for MySQL.
+For this module, we'll try to containerize and migrate the Airsonic application. Airsonic is a free, web-based music streaming application. We'll be deploying Airsonic in a two-tier configuration with the application front-end running on Apache Tomcat on a Linux server, and the application backend running on Azure Database for MySQL.
 
 ## Prepare your Azure account
 
@@ -10,7 +10,7 @@ Once your subscription is set up, you'll need an Azure user account with:
 
 If you just created a free Azure account, you're the owner of your subscription. If you're not the subscription owner, work with the owner to assign the permissions as follows:
 
-1. In the Azure Portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
+1. In the Azure portal, search for "subscriptions", and under **Services**, select **Subscriptions**.
 
     ![Search box to search for the Azure subscription.](../media/search-subscription.png)
 
@@ -26,7 +26,7 @@ If you just created a free Azure account, you're the owner of your subscription.
     ![Opens the Add Role assignment page to assign a role to the account.](../media/assign-role.png)
 
 7. Your Azure account also needs **permissions to register Azure Active Directory apps.**
-8.  In Azure Portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
+8.  In Azure portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
 9.  In **User settings**, verify that Azure AD users can register applications (set to **Yes** by default).
 
       ![Verify in User Settings that users can register Active Directory apps.](../media/register-apps.png)
@@ -35,7 +35,7 @@ If you just created a free Azure account, you're the owner of your subscription.
 
 ## Setup Airsonic application
 
-1. To deploy the workshop environment, begin by navigating to the [Azure Portal](https://portal.azure.com).
+1. To deploy the workshop environment, begin by navigating to the [Azure portal](https://portal.azure.com).
 2. Launch Azure Cloud Shell and run the following commands.   
 
     ```
@@ -45,7 +45,7 @@ If you just created a free Azure account, you're the owner of your subscription.
     ./scripts/deploy.sh 'westus2' 'LearnAppContainerization'
     ```
 
-4. Once the deployment is complete, you will see the following resources in your resource group. 
+4. Once the deployment is complete, you'll see the following resources in your resource group. 
 
     ![Two-tier Java web application deployed for workshop](../media/source-environment-deployed.png)
 
@@ -54,7 +54,7 @@ If you just created a free Azure account, you're the owner of your subscription.
 
     ![Java web application to be containerized and migrated](../media/source-app.png)
 
-6. You can login to the application using the following credentials. 
+6. You can sign in to the application using the following credentials. 
     - Username: admin
     - Password: admin
 
@@ -68,4 +68,4 @@ If you just created a free Azure account, you're the owner of your subscription.
    cd Downloads
    .\AppContainerizationInstaller.ps1
    ```
-4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, click *advanced* and *continue to toolclient*. 
+4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, click **advanced** and **continue to toolclient**. 
