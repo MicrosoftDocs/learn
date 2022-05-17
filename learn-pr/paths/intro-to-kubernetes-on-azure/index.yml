@@ -17,17 +17,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/intro-to-kubernetes-on-azure.svg" width="101" height="84" alt="The trophy for the Introduction to Kubernetes on Azure learning path." role="presentation"></img>
-    <br/><br/>
+    <img src="/learn/achievements/intro-to-kubernetes-on-azure.svg" align="bottom" width="101" height="84" alt="The trophy for the Introduction to Kubernetes on Azure learning path." role="presentation"></img>
+
     Part 1: Introduction to Kubernetes on Azure
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/generic-trophy.svg" width="101" height="84" alt="The trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations." role="presentation"></img>
+    <img src="/learn/achievements/generic-trophy.svg" align="bottom" width="101" height="84" alt="The trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations." role="presentation"></img>
 
     [Part 2: Azure Kubernetes Service (AKS) cluster architecture and operations](../aks-cluster-architecture/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/generic-trophy.svg" width="101" height="84" alt="The trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations learning path." role="presentation"></img>
+    <img src="/learn/achievements/generic-trophy.svg" align="bottom" width="101" height="84" alt="The trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations learning path." role="presentation"></img>
 
     [Part 3: Azure Kubernetes Service (AKS) application and cluster scalability](../aks-cluster-scalability/index.yml)
   :::column-end:::
