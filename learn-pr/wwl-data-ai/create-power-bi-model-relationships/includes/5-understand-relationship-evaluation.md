@@ -35,7 +35,7 @@ Blank virtual rows are effectively unknown members. Unknown members represent re
 
 Here’s how table expansion works with an animated example.
 
-![Animated image shows how table expansion works. The details are described in the following paragraph.](../media/model-relationship-table-expansion.gif)
+![Animated diagram shows how table expansion works. The details are described in the following paragraph.](../media/model-relationship-table-expansion.gif)
 
 In this example, the model consists of three tables: **Category**, **Product**, and **Sales**. The **Category** table relates to the **Product** table with a one-to-many relationship, and the **Product** table relates to the **Sales** table with a one-to-many relationship. The **Category** table contains two rows, the **Product** table contains three rows, and the **Sales** tables contains five rows. 
 
