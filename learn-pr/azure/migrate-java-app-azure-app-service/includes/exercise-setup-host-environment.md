@@ -60,7 +60,7 @@ If you just created a free Azure account, you're the owner of your subscription.
 
 ## Download and install Azure Migrate: App Containerization tool
 
-1. In your resource group, select **tomcatMigrate-toolclient** virtual machine resource and log in to it using bastion. Use **adminuser** as the username and **Password@123** for password. You'll be using this machine to run the Azure Migrate: App Containerization tool to migrate the Java web application hosted on *TomcatServer*.
+1. In your resource group, select **tomcatMigrate-toolclient** virtual machine resource and connect to it using bastion. Use **adminuser** as the username and **Password@123** for password. You'll be using this machine to run the Azure Migrate: App Containerization tool to migrate the Java web application hosted on *TomcatServer*.
 2. After logging in, [download](https://go.microsoft.com/fwlink/?linkid=2134571) the Azure Migrate: App Containerization installer on the Windows machine.
 3. Launch PowerShell in administrator mode and run the following commands to install the tool.
 
