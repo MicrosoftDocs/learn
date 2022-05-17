@@ -25,7 +25,7 @@ quiz:
       explanation: "Incorrect. Self-hosted integration runtime can be set up on a separate VM in the virtual network that's integrated with the Azure SQL Database that uses a private endpoint."
     - content: "Create a firewall rule on the Microsoft Purview account to open the **1433 TCP** port."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Purview is a managed service and can integrate data sources by using private or public endpoints. Individual firewall rules can't be set up on an Microsoft Purview account."
+      explanation: "Incorrect. Microsoft Purview is a managed service and can integrate data sources by using private or public endpoints. Individual firewall rules can't be set up on a Microsoft Purview account."
   - content: "Which of the following authentication methods can be used to authenticate and scan an Azure SQL Managed Instance?"
     choices:
     - content: "Windows integrated authentication"
