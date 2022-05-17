@@ -2,13 +2,13 @@ Fabrikam Residences is struggling to automate its deployment and management, res
 
 ## Overview of Change Tracking and Inventory
 
-## Change Tracking and Inventory combines functions to allow you to track Azure Arc-enabled Linux and Windows servers and server infrastructure changes. The service supports change tracking across services, daemons, software, registry, and files in your environment to help you diagnose unwanted changes and raise alerts. Inventory support allows you to query in-guest resources for visibility into installed applications and other configuration items. For example, Fabrikam Residences could use Change Tracking and Inventory to know which LOB software they're running on their servers. This visibility across on-premises and cloud estates, could help when preparing for license renewals and planning updates to those apps. With Azure Arc-enabled servers, you can benefit from a consistent and comprehensive change tracking and inventory experience across Azure and non-Azure environments.
+Change Tracking and Inventory combines functions to allow you to track Azure Arc-enabled Linux and Windows servers and server infrastructure changes. The service supports change tracking across services, daemons, software, registry, and files in your environment to help you diagnose unwanted changes and raise alerts. Inventory support allows you to query in-guest resources for visibility into installed applications and other configuration items. For example, Fabrikam Residences could use Change Tracking and Inventory to know which LOB software they're running on their servers. This visibility across on-premises and cloud estates, could help when preparing for license renewals and planning updates to those apps. With Azure Arc-enabled servers, you can benefit from a consistent and comprehensive change tracking and inventory experience across Azure and non-Azure environments.
 
 ## Overview of Update Management
 
-## You can use Update Management in Azure Automation to manage operating system updates for your Azure Arc-enabled servers. You can quickly assess the status of available updates and manage the process of installing required updates for your machines reporting to Update Management. The following diagram illustrates how Update Management assesses and applies security updates to connected Azure VMs and Arc-enabled servers.
+You can use Update Management in Azure Automation to manage operating system updates for your Azure Arc-enabled servers. You can quickly assess the status of available updates and manage the process of installing required updates for your machines reporting to Update Management. The following diagram illustrates how Update Management assesses and applies security updates to connected Azure VMs and Arc-enabled servers.
 
-![Update Management workflow](./image4.png)
+![Update Management workflow](../media/image-4.png)
 
 ## Overview of Process Automation
 
