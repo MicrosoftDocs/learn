@@ -24,16 +24,11 @@ All types of container deployments, including DC/OS, Docker Swarm, Kubernetes, a
 
 Importantly, it allows your DevOps team to manage the configuration of apps without being tied to the configuration of the target-hosting environment.
 
-[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)
+[Azure Container Apps](https://azure.microsoft.com/en-us/services/container-apps/)
 
-Azure Service Fabric allows you to build and operate always-on, scalable, distributed apps.
+Azure Container Apps allows you to build and deploy modern apps and microservices using serverless containers. It deploys containerized apps without managing complex infrastructure.
 
-It simplifies the development of microservice-based applications and life-cycle management, including:
-
- -  Rolling updates with rollback.
- -  Partitioning and placement constraints.
-
-It can host and orchestrate containers, including stateful containers.
+You can write code using your preferred programming language or framework, and build microservices with full support for [Distributed Application Runtime (Dapr)](https://dapr.io/). Scale dynamically based on HTTP traffic or events powered by [Kubernetes Event-Driven Autoscaling (KEDA)](https://keda.sh/).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/)
 
