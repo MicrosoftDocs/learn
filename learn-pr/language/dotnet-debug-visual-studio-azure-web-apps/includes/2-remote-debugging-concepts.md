@@ -10,17 +10,17 @@ Visual Studio provides powerful remote debugging tools and features to troublesh
 
 * Debug an application running in a containerized environment separate from your development environment.
 
-In the exercises ahead you will focus on the first scenario in this list to debug an app running in Azure App Service using Visual Studio.  App Service is one of the most widely used Azure services and a powerful option to host .NET applications.
+In the exercises ahead you will focus on the first scenario in this list to debug an app running in Azure App Service using Visual Studio. App Service is one of the most widely used Azure services and a powerful option to host .NET applications.
 
 ## Understanding remote debugging tools
 
 Remote debugging encompasses a variety of Visual Studio tools and features. When remote debugging applications deployed on other servers or virtual machines, you may need to [install the Visual Studio Remote Tools](https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging).
 
-However, in the exercise ahead, you'll debug an app hosted Azure App Service. In this scenario, many of these types of configurations are handled for us. You can simply use the **Attach to process** feature of Visual Studio to connect directly to our App Service process.  Assuming the correct debugging symbols and source code are loaded, you can then debug the application as though it were running locally on your computer.
+However, in the exercise ahead, you'll debug an app hosted Azure App Service. In this scenario, many of these types of configurations are handled for us. You can simply use the **Attach to process** feature of Visual Studio to connect directly to an App Service process.  Assuming the correct debugging symbols and source code are loaded, you can then debug the application as though it were running locally on your computer.
 
 ## An overview of symbol files
 
-Visual Studio requires symbol files for your source code in order to debug an application running on other machines or environments. Symbol files are created in the `bin` directory as part of the build process and end with a `.pdb` extension. In simplified terms, symbol files provide an instructional bridge between compiled code and source code. This allows the Visual Studio debugger to step through your source code line by line while the compiled version executes. When running and debugging locally, Visual Studio is able to find and use the generated symbol files automatically due its default search locations for `.pdb` files.
+Visual Studio requires symbol files for your source code in order to debug an application running on other machines or environments. Symbol files are created in the `bin` directory as part of the build process and end with a `.pdb` extension. In simplified terms, symbol files provide an instructional bridge between compiled code and source code. The Visual Studio debugger uses symbol files to step through your source code line by line while the compiled version executes. When running and debugging locally, Visual Studio is able to locate the generated symbol files automatically due its default search locations for `.pdb` files.
 
 :::image type="content" source="../media/visual-studio-remote-debug-symbols.png" alt-text="A diagram of the build and symbols process.":::
 
