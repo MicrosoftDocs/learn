@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-arc-enabled-servers.azure-automanage-delivers-best-practices-to-your-azure-arc-enabled-servers-so-you-can-point-click-set-and-forget
+title: Azure Automanage delivers best practices to your Azure Arc-enabled servers, so you can point, click, set, and forget
+metadata:
+  title: Azure Automanage delivers best practices to your Azure Arc-enabled servers, so you can point, click, set, and forget
+  description: TBD
+  ms.date: 05/12/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-azure-automanage-delivers-best-practices-to-your-azure-arc-enabled-servers-so-you-can-point-click-set-and-forget.md)]
