@@ -31,7 +31,7 @@ Also, you should configure an appropriate power plan on the computer on which yo
 
 The computer that will host the Microsoft Integration Runtime component needs to have connectivity with your on-premises SQL Server.
 
-:::image type="content" source="../media/3-SHIR-registration.png" alt-text="Screenshot of the Microsoft Integration Runtime Configuration Manager used to register new self hosted integration runtime." border="true" lightbox="../media/3-SHIR-registration.png":::
+:::image type="content" source="../media/3-self-hosted-integration-runtime-registration.png" alt-text="Screenshot of the Microsoft Integration Runtime Configuration Manager used to register new self hosted integration runtime." border="true" lightbox="../media/3-self-hosted-integration-runtime-registration.png":::
 
 It’s a best practice to test the connectivity to the on-premises SQL Server from the computer that’s hosting the Microsoft Integration Runtime infrastructure. To test the connection:
 
@@ -44,7 +44,7 @@ It’s a best practice to test the connectivity to the on-premises SQL Server fr
     > [!Tip]
     > If you experience any issues while running the test, create a support ticket by selecting the **Send logs** button.
 
-:::image type="content" source="../media/3-SHIR-test-connection.png" alt-text="The Microsoft Integration Runtime Configuration Manager Diagnostics Tool." border="true" lightbox="../media/3-SHIR-test-connection.png":::
+:::image type="content" source="../media/3-self-hosted-integration-runtime-test-connection.png" alt-text="The Microsoft Integration Runtime Configuration Manager Diagnostics Tool." border="true" lightbox="../media/3-self-hosted-integration-runtime-test-connection.png":::
 
 ## Prepare credentials in Azure Key Vault
 
@@ -65,7 +65,7 @@ Once you create the Azure Key Vault and configure the secret, follow these steps
 
 1. In the **New Key Vault** pane, enter the required information including name, description, your Azure subscription, and a new Key Vault name, and then select **Create**.
 
-:::image type="content" source="../media/3-Purview-KeyVault-Connection.png" alt-text="The Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-Purview-KeyVault-Connection.png":::
+:::image type="content" source="../media/3-purview-keyvault-connection.png" alt-text="The Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-purview-keyvault-connection.png":::
 
 #### Create a credentials object
 
@@ -87,7 +87,7 @@ The next step is to create a credentials object that you’ll use to authenticat
         1. In the **Secret name** text box, enter the name of the secret that contains the password for SQL authentication or Windows authentication.
         1. Optionally, in the **Secret version** text box, enter the version of the secret.
 
-:::image type="content" source="../media/3-Credential Object.png" alt-text="The New credential pane" border="true" lightbox="../media/3-Credential Object.png":::
+:::image type="content" source="../media/3-credential-object.png" alt-text="The New credential pane" border="true" lightbox="../media/3-credential-object.png":::
 
 ## Register a data source from the Azure Portal
 
@@ -99,7 +99,7 @@ When you meet all the prerequisites, use the Azure Portal to register your on-pr
 
 1. On the **Register sources** pane, select **SQL Server** and then select **Continue**.
 
-    :::image type="content" source="../media/3-Register-SQL-Server.png" alt-text="Microsoft Purview Data map page with the Sources pane open and SQL Server selected as the register source." border="true" lightbox="../media/3-Register-SQL-Server.png":::
+    :::image type="content" source="../media/3-register-sql-server.png" alt-text="Microsoft Purview Data map page with the Sources pane open and SQL Server selected as the register source." border="true" lightbox="../media/3-register-sql-server.png":::
 
 1. On the **Register sources (SQL Server)** pane, in the **Name** text box, enter a name for the source.
 
@@ -107,13 +107,13 @@ When you meet all the prerequisites, use the Azure Portal to register your on-pr
 
 1. From the **Select a collection** drop-down list, select a collection, and then select **Register**.
 
-    :::image type="content" source="../media/3-Register-SQL-Server-on-premises.png" alt-text="The Register sources (SQL Server) pane displaying a name, server endpoint (IP address), and collection." border="true"  lightbox="../media/3-Register-SQL-Server-on-premises.png":::
+    :::image type="content" source="../media/3-register-sql-server-on-premises.png" alt-text="The Register sources (SQL Server) pane displaying a name, server endpoint (IP address), and collection." border="true"  lightbox="../media/3-register-sql-server-on-premises.png":::
 
 ## Scan data from SQL Server on-premises
 
 Now that your data source is integrated with your Microsoft Purview account, you’re ready to create *scan rule sets*, which are a group of scan rules that you associate with a scan.
 
-:::image type="content" source="../media/3-System-scan-set-rule.png" alt-text="The Microsoft Purview Data map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="true" lightbox="../media/3-System-scan-set-rule.png":::
+:::image type="content" source="../media/3-system-scan-set-rule.png" alt-text="The Microsoft Purview Data map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="true" lightbox="../media/3-system-scan-set-rule.png":::
 
 You can create a custom scan rule set that includes different file types or classifications:
 
@@ -137,7 +137,7 @@ Use the following steps to scan an on-premises SQL Server instance:
 
 1. Select the SQL Server source that you registered previously and then select the **New scan** button.
 
-    :::image type="content" source="../media/3-New-Scan.png" alt-text="The New scan button to initiate a scan for data sources hosted in an on-premises SQL Server instance." border="true" lightbox="../media/3-New-Scan.png":::
+    :::image type="content" source="../media/3-new-scan.png" alt-text="The New scan button to initiate a scan for data sources hosted in an on-premises SQL Server instance." border="true" lightbox="../media/3-new-scan.png":::
 
 1. In the **Scan** pane, provide the following information:
 
@@ -153,7 +153,7 @@ Use the following steps to scan an on-premises SQL Server instance:
 
     1. From the **Select a collection** drop-down list, select a collection, and then select **Continue**.
 
-    :::image type="content" source="../media/3-New-Scan-credentials.png" alt-text="The Scan setup panel" border="true" lightbox="../media/3-New-Scan-credentials.png":::
+    :::image type="content" source="../media/3-new-scan-credentials.png" alt-text="The Scan setup panel" border="true" lightbox="../media/3-new-scan-credentials.png":::
 
 1. In the **Scope your scan** text box, enter your SQL database name, and then select **Continue**.
 
