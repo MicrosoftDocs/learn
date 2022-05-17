@@ -24,7 +24,7 @@ intermediate
 
 - Ability to navigate the Azure portal such as searching resources and switching between directories.
 
-- An Azure Active Directory B2C (Azure AD B2C) tenant which you manage as a Global administrator.
+- An Azure Active Directory B2C (Azure AD B2C) tenant that you manage as a Global administrator.
 
 - Ability to write code in JavaScript/Node at beginner level.
 
@@ -61,7 +61,7 @@ Identify the subtasks of module title.
 
 1. Introduction
 
-    Suppose you're the solution architect for an eCommerce organization. Your organization is launching a new Node web app, which enables customers to order groceries online. Your organization requires that the web app authenticates customers for them to make an order, so they can sign up or sign in to the web app using their email or a social account. Because of customer data sensitivity and authentication scaling complexities, your organization don't want to manage customer identities from within the Node web app. So, your organization wants to use Azure AD B2C as an identity provider because you can customize the entire user experience with your brand. You want to start by authenticating users to the Node web app by using Azure AD B2C.
+    Suppose you're the solution architect for an eCommerce organization. Your organization is launching a new Node web app, which enables customers to order groceries online. Your organization requires that the web app authenticates customers for them to make an order, so they can sign up or sign in to the web app using their email or a social account. Because of customer data sensitivity and authentication scaling complexities, your organization doesn't want to manage customer identities from within the Node web app. So, your organization wants to use Azure AD B2C as an identity provider because you can customize the entire user experience with your brand. You want to start by authenticating users to the Node web app by using Azure AD B2C.
 
 1. Authenticate users by using Azure AD B2C
 
@@ -110,9 +110,9 @@ Identify the subtasks of module title.
 
 1. Summary
 
-Your organization was launching an online grocery store. Your organization needed customers to be authenticated in a web app before they could make an order. Instead of managing customer identities from within the web app, which is a challenge, and would not scale well, your organization needed to use an identity management solution.
+Your organization was launching an online grocery store. Your organization needed customers to be authenticated in a web app before they could make an order. Instead of managing customer identities from within the web app, which is a challenge, and wouldn't scale well, your organization needed to use an identity management solution.
 
-Azure AD B2C helped your organization to authenticate users into your web app. We used Azure AD B2C's user flows to manage a users sign up and sign in journeys. Your Node web app redirected the user to Azure AD B2C where user authentication occurred and only received a response from Azure AD B2C in the form of an ID token and token claims for user identification.
+Azure AD B2C helped your organization to authenticate users into your web app. We used Azure AD B2C's user flows to manage a users sign up and sign in journeys. Your Node web app redirected the user to Azure AD B2C where user authentication occurred and only received a response from Azure AD B2C as an ID token and token claims for user identification.
 
 If your organization didn't use Azure AD B2C, you'd have to build a whole authentication module from scratch, model a user's data schema, and store the data yourself. Because users can also use social identities, you'd perform the integration yourself. Besides, you'd have to deal with scaling and safety of the authentication platform.
 
