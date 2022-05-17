@@ -24,7 +24,7 @@ To create real-time Power BI solutions, you might require advanced data modeling
 
 Power BI datasets that represent a DirectQuery data model (or [live connection](/power-bi/connect-data/desktop-report-lifecycle-datasets) to an external-hosted data model, like Azure Analysis Services or SQL Server Analysis Services)) provide an easy way to deliver real-time dashboards. In the dataset settings, you can enable the dataset **Automatic dashboard tile refresh** property. You can then set a refresh frequency between weekly and every 15 minutes.
 
-![Image shows the Automatic dashboard tile refresh set up, with a refresh frequency set to 15 minutes.](../media/real-time-dashboards-automatic-dashboard-tile-refresh.png)
+![Screenshot of the Automatic dashboard tile refresh set up, with a refresh frequency set to 15 minutes.](../media/real-time-dashboards-automatic-dashboard-tile-refresh.png)
 
 For example, when you set the refresh frequency to 15 minutes, Power BI will refresh dashboard tile caches every 15 minutes. Dashboard consumers will see tiles (that connect to the dataset) update in real-time.
 

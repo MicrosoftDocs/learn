@@ -20,7 +20,7 @@ A **streaming dataset** specifically delivers real-time data with latency of abo
 
 The streaming dataset caches data in a temporary cache for up to 60 minutes. Because there’s no data model, it’s not possible to create Power BI reports that connect to a streaming dataset. Instead, to visualize streaming data, you add streaming tiles to the dashboard. A streaming tile specifically visualizes real-time data sources from a streaming dataset. They’re easy to identify in a dashboard because they’re adorned with a lightning strike icon.
 
-![Image shows a dashboard streaming tile. There’s a lightning strike icon at the top left of the tile.](../media/real-time-dashboards-streaming-tile.png)
+![Screenshot of a dashboard streaming tile. There’s a lightning strike icon at the top left of the tile.](../media/real-time-dashboards-streaming-tile.png)
 
 Streaming datasets are simple in their design because they represent a single table. Table columns are either text, number, or date. You can create a streaming dataset in the Power BI service or programmatically by using the [Power BI REST API](/rest/api/power-bi/push-datasets).
 
@@ -56,7 +56,7 @@ You can create a push dataset in the Power BI service (or as a hybrid dataset as
 
 It's also possible use [Azure Stream Analytics (ASA)](/azure/stream-analytics/stream-analytics-introduction) to create a push dataset and output rows of data to it. As a complex event-processing engine, ASA can push high volumes of fast streaming data, even from thousands of IoT devices. For more information, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output).
 
-![Image shows the flow of event data to Azure Event Hubs, then to Azure Stream Analytics, then to Power BI, and then to a dashboard tile.](../media/real-time-dashboards-azure-stream-analytics.png)
+![Diagram of the flow of event data to Azure Event Hubs, then to Azure Stream Analytics, then to Power BI, and then to a dashboard tile.](../media/real-time-dashboards-azure-stream-analytics.png)
 
 > [!TIP]
 > ASA can integrate with [Azure Machine Learning (AML)](/azure/machine-learning/overview-what-is-azure-machine-learning), allowing output of machine learning predictions. For example, an ASA job output could predict that an IoT device requires maintenance. You can set up a Power BI dashboard tile to alert you when maintenance is required. For more information, see [Integrate Azure Stream Analytics with Azure Machine Learning](/azure/stream-analytics/machine-learning-udf).
@@ -89,7 +89,7 @@ A **hybrid dataset** is both a streaming and push dataset at the same time. It d
 
 When you create a streaming dataset in the Power BI service, you can make it a hybrid dataset by enabling the **Historic data analysis** option.
 
-![Image shows the Historic data analysis option enabled](../media/real-time-dashboards-streaming-dataset-enable-historic-analysis.png)
+![Screenshot of the Historic data analysis option enabled](../media/real-time-dashboards-streaming-dataset-enable-historic-analysis.png)
 
 ## Use PubNub streaming datasets
 
