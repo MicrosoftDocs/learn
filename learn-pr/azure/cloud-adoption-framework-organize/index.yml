@@ -11,9 +11,9 @@ metadata:
   ms.prod: learning-azure
 title: Use the Cloud Adoption Framework to manage organizational alignment
 summary: |
-  Moving from an on-premises datacenter environment to the cloud requires an organization to reevaluate its IT structure. What works on-premises - typically a centralized control model - doesn't necessarily work in a cloud environment. The good news is that migrating to the cloud can enable automation that gives IT professionals in your organization more freedom to innovate.
+  Moving from an on-premises datacenter environment to the cloud requires an organization to reevaluate its IT structure. What works on-premises—typically a centralized control model—doesn't necessarily work in a cloud environment. The good news is that migrating to the cloud can enable automation that gives IT professionals in your organization more freedom to innovate. The Cloud Adoption Framework provides guidance for this modernization journey.  
   
-  The Cloud Adoption Framework provides guidance for this modernization journey by providing an overview of organizational structures, the pros and cons of different approaches, and a look at how to use a RACI matrix to align accountability and responsibility across each team. This is additional learning recommended for those who have completed the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/learn/paths/cloud-adoption-framework/) learning path.
+  This module is additional learning for those who have completed the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/learn/paths/cloud-adoption-framework/) learning path.
 abstract: |
   In this module, you will:
     - Understand operational models as your organization moves from an on-premises IT environment to the cloud.
@@ -22,8 +22,8 @@ abstract: |
     - Learn how to use RACI charts to align accountability and responsibility across each team.
 prerequisites: |
   - A foundational understanding of cloud adoption
-  - An understanding of your IT organizational structure.
-  - Completion of the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/learn/paths/cloud-adoption-framework/) learning path.
+  - An understanding of your IT organizational structure
+  - Completion of the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/learn/paths/cloud-adoption-framework/) learning path
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
