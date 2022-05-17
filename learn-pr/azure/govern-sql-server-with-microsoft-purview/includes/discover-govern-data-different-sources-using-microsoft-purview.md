@@ -24,7 +24,7 @@ Use data insights to get valuable information about scanned data, including its 
 
 :::image type="content" source="../media/2-data-insights.png" alt-text="Data insights pane" border="true" lightbox="../media/2-data-insights.png":::
 
-:::image type="content" source="../media/2-Scan-insights.png" alt-text="The Microsoft Purview Scan insights pane displaying statistics for successful, failed, and cancelled scans." border="true" lightbox="../media/2-Scan-insights.png":::
+:::image type="content" source="../media/2-scan-insights.png" alt-text="The Microsoft Purview Scan insights pane displaying statistics for successful, failed, and cancelled scans." border="true" lightbox="../media/2-scan-insights.png":::
 
 Available data insights include:
 
