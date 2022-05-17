@@ -1,0 +1,104 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.azure.manage-azure-stack-hci-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which of the following characteristics is associated with the NVMe storage?'
+    choices:
+    - content: 'It attaches directly to the PCIe Bus.'
+      isCorrect: true
+      explanation: 'Correct. The NVMe storage uses SSDs that attach directly to the PCIe bus.'
+    - content: 'It uses platters and read/write heads.'
+      isCorrect: false
+      explanation: 'Incorrect. NVMe doesn’t use magnetic media for storage.'
+    - content: 'It offers lower I/O throughput than SSDs.'
+      isCorrect: false
+      explanation: 'Incorrect. NVMe offers higher IOPS and I/O throughput with lower latency than SSDs.'
+  - content: 'When using a combination of NVMe drives and HDDs, what is the default cache behavior?'
+    choices:
+    - content: 'Read and write'
+      isCorrect: true
+      explanation: 'Correct. With HDDs, caching applies to both reads and writes.'
+    - content: 'Read-only'
+      isCorrect: false
+      explanation: 'Incorrect. With HDDs, caching isn’t set to read-only.'
+    - content: 'Write-only'
+      isCorrect: false
+      explanation: 'Incorrect. With HDDs, caching isn’t set to write-only.'
+  - content: 'When using a combination of NVMe drives and SSDs, what is the default cache behavior?'
+    choices:
+    - content: 'Read and write'
+      isCorrect: false
+      explanation: 'Incorrect. With SSDs as capacity drives, caching isn’t set to read and write.'
+    - content: 'Read-only'
+      isCorrect: false
+      explanation: 'Incorrect. With SSDs as capacity drives, caching isn’t set to read-only.'
+    - content: 'Write-only'
+      isCorrect: true
+      explanation: 'Correct. With SSDs as capacity drives, only writes are cached. This is intended to reduce wear on the cache drives, as performance gains from caching SSD reads would be relatively limited.'
+  - content: 'When using a combination of NVMe drives, SSDs, and HDDs, what is the default cache behavior?'
+    choices:
+    - content: 'NVMe provides caching to SSDs and HDDs.'
+      isCorrect: true
+      explanation: 'Correct. When using a combination of NVMe drives, SSDs, and HDDs, NVMe provides caching to SSDs and HDDs.'
+    - content: 'NVMe drives and SSDs provide caching to HDDs.'
+      isCorrect: false
+      explanation: 'Incorrect. When using a combination of the three drives, NVMe drives and SSDs do not provide caching to HDDs.'
+    - content: 'SSDs provide caching to NVMe drives and HDDs.'
+      isCorrect: false
+      explanation: 'Incorrect. When using a combination of NVMe drives, SSDs, and HDDs, SSDs do not provide caching to NVMe drives and HDDs.'
+  - content: 'Which of the following configurations could most likely result in the stranded capacity of 5 TB?'
+    choices:
+    - content: 'Three-way mirror on three-drive volume, with two drives of 10 TB in size and the third one of 15 TB in size'
+      isCorrect: true
+      explanation: 'Correct. This configuration could result in a stranded capacity if the first two drives are full.'
+    - content: 'Three-way mirror on four-drive volume, with four drives of 5 TB in size'
+      isCorrect: false
+      explanation: 'Incorrect. This configuration wouldn’t result in a stranded capacity of 5 TB.'
+    - content: 'Three-way mirror on five-drive volume, with five drives of 5 TB in size'
+      isCorrect: false
+      explanation: 'Incorrect. This configuration wouldn’t result in a stranded capacity of 5 TB.'
+  - content: 'What is the maximum configurable CSV in-memory cache size?'
+    choices:
+    - content: '80 percent'
+      isCorrect: true
+      explanation: 'Correct. The maximum configurable CSV in-memory cache size is 80 percent.'
+    - content: '50 percent'
+      isCorrect: false
+      explanation: 'Incorrect. The maximum configurable CSV in-memory cache size isn’t 50 percent.'
+    - content: '10 percent'
+      isCorrect: false
+      explanation: 'Incorrect. The maximum configurable CSV in-memory cache size isn’t 10 percent.'
+  - content: 'Which technology provides the zero-copy networking functionality?'
+    choices:
+    - content: 'RDMA'
+      isCorrect: true
+      explanation: 'Correct. RDMA provides the zero-copy networking functionality.'
+    - content: 'RSS'
+      isCorrect: false
+      explanation: 'Incorrect. RSS doesn’t provide the zero-copy networking functionality.'
+    - content: 'NVMe'
+      isCorrect: false
+      explanation: 'Incorrect. NVMe is a storage technology.'
+  - content: 'What is the amount of time after which the Health Service in Azure Stack HCI will retire a disk that becomes inaccessible?'
+    choices:
+    - content: '5 minutes'
+      isCorrect: false
+      explanation: 'Incorrect. The amount of time after which the Health Service will retire a disk that becomes inaccessible is not 5 minutes.'
+    - content: '10 minutes'
+      isCorrect: false
+      explanation: 'Incorrect. The amount of time after which the Health Service will retire a disk that becomes inaccessible is not 10 minutes.'
+    - content: '15 minutes'
+      isCorrect: true
+      explanation: 'Correct. The Health Service will retire a disk that becomes inaccessible after 15 minutes.'
