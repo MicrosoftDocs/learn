@@ -6,15 +6,15 @@ The UI for the app will consist of:
 - A button to send your location to those numbers using Azure Functions.
 - A label that will show a message to the user of the current status, such as the location being sent and location sent successfully.
 
-Xamarin.Forms supports a design pattern called Model-View-ViewModel (MVVM). You can read more about MVVM in the [Xamarin MVVM docs](/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?azure-portal=true), but the essence of it is, each page (View) has a ViewModel that exposes properties and behavior.
+Xamarin.Forms supports a design pattern called Model-View-ViewModel (MVVM). You can read more about MVVM in the [Xamarin MVVM docs](/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?azure-portal=true), but the essence of it is, each page (View) has a viewmodel that exposes properties and behavior.
 
-ViewModel properties are 'bound' to components on the UI by name, and this binding synchronizes data between the View and ViewModel. For example, a `string` property on a ViewModel called `Name` could be bound to the `Text` property of a text-entry control on the UI. The text-entry control shows the value in the `Name` property and, when the user changes the text in the UI, the `Name` property is updated. If the value of the `Name` property is changed in the ViewModel, an event is raised to tell the UI to update.
+Viewmodel properties are 'bound' to components on the UI by name, and this binding synchronizes data between the View and viewmodel. For example, a `string` property on a viewmodel called `Name` could be bound to the `Text` property of a text-entry control on the UI. The text-entry control shows the value in the `Name` property and, when the user changes the text in the UI, the `Name` property is updated. If the value of the `Name` property is changed in the viewmodel, an event is raised to tell the UI to update.
 
-ViewModel behavior is exposed as command properties, a command being an object that wraps an action that is executed when the command is invoked. These commands are bound by name to controls like buttons, and tapping a button will invoke the command.
+Viewmodel behavior is exposed as command properties, a command being an object that wraps an action that is executed when the command is invoked. These commands are bound by name to controls like buttons, and tapping a button will invoke the command.
 
-## Create a base ViewModel
+## Create a base viewmodel
 
-ViewModels implement the `INotifyPropertyChanged` interface. This interface has a single event, `PropertyChanged`, which is used to notify the UI of any updates. This event has event args that contain the name of the property that has changed. It's common practice to create a base ViewModel class implementing this interface and providing some helper methods.
+Viewmodels implement the `INotifyPropertyChanged` interface. This interface has a single event, `PropertyChanged`, which is used to notify the UI of any updates. This event has event args that contain the name of the property that has changed. It's common practice to create a base viewmodel class implementing this interface and providing some helper methods.
 
 1. Right-click ImHere project and select _Add_ > _class_.
 
@@ -74,9 +74,9 @@ namespace ImHere
 }
 ```
 
-## Create a ViewModel for the page
+## Create a viewmodel for the page
 
-The `MainPage` will have a text-entry control for phone numbers and a label to display a message. These controls will be bound to properties on a ViewModel.
+The `MainPage` will have a text-entry control for phone numbers and a label to display a message. These controls will be bound to properties on a viewmodel.
 
 1. Create a class called `MainViewModel` in the `ImHere` .NET Standard project.
 
@@ -182,7 +182,7 @@ Xamarin.Forms UIs can be built using XAML.
     > [!NOTE]
     >  The `ImHere.UWP` project also contains a file called `MainPage.xaml`. Make sure you're editing the one in the .NET Standard library.
 
-1. Add the following XAML inside the top-level `ContentPage` to set an instance of the ViewModel as the binding context of the page.
+1. Add the following XAML inside the top-level `ContentPage` to set an instance of the viewmodel as the binding context of the page.
 
     ```xml
     <ContentPage.BindingContext>
@@ -212,7 +212,7 @@ Xamarin.Forms UIs can be built using XAML.
             Command="{Binding SendLocationCommand}" />
     ```
 
-    The `Command` property is bound to the `SendLocationCommand` command on the ViewModel. When the button is tapped, the command will be executed.
+    The `Command` property is bound to the `SendLocationCommand` command on the viewmodel. When the button is tapped, the command will be executed.
 
 1. Add a `Label` below the `Button` control. We'll display status messages in this label.
 
@@ -252,4 +252,4 @@ Xamarin.Forms UIs can be built using XAML.
 
 ## Summary
 
-In this unit, you learned how to create the UI for the app using XAML, along with a ViewModel to handle the application's logic. You also learned how to bind the ViewModel to the UI. In the next unit, you'll add location lookup to the ViewModel.
+In this unit, you learned how to create the UI for the app using XAML, along with a viewmodel to handle the application's logic. You also learned how to bind the viewmodel to the UI. In the next unit, you'll add location lookup to the viewmodel.
