@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - power-bi
+subjects:
+- data-visualization
 units:
 - learn.wwl.explore-fundamentals-of-data-visualization.introduction
 - learn.wwl.explore-fundamentals-of-data-visualization.describe-power-bi-tools-workflow

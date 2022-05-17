@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid:  learn.dotnet-maui.build-mobile-and-desktop-apps.describe-maui-architecture
+title: Describe the .NET MAUI architecture
+metadata:
+  unitType: unit 
+  title: "Describe the .NET MAUI architecture"
+  description: "Explain the structure of .NET MAUI"
+  ms.date: 04/27/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe-maui-architecture.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which environment provides the runtime support for a WinUI 3 application?"
+    choices:
+    - content: "The Mono runtime"
+      isCorrect: false
+      explanation: "Incorrect, the Mono runtime is used for iOS, Android, and macOS applications built with .NET MAUI."
+    - content: "The Win32 runtime"
+      isCorrect: true
+      explanation: "Correct, Win32 provides runtime support for WinUI 3 apps built with .NET MAUI."
+    - content: "WinMAUI"
+      isCorrect: false
+      explanation: "Incorrect. WinMAUI isn't an architecture."
+  - content: "Which markup language can you use to lay out the UI for a .NET MAUI application?"
+    choices:
+    - content: "JSON"
+      isCorrect: false
+      explanation: "Incorrect, JSON isn't a markup language."
+    - content: "CSV"
+      isCorrect: false
+      explanation: "Incorrect, CSV isn't a markup language."
+    - content: "XAML"
+      isCorrect: true
+      explanation: "Correct, XAML is the language you use to lay out a .NET MAUI application's UI."

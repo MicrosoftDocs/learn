@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.plan-implement-privileged-access.introduction
 - learn.wwl.plan-implement-privileged-access.define-strategy-for-administrative-users

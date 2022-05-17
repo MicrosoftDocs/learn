@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.wwl.explore-licensing-pricing-support.introduction
 - learn.wwl.explore-licensing-pricing-support.price-based-solutions

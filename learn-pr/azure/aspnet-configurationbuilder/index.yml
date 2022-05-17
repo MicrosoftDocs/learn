@@ -29,6 +29,9 @@ products:
 - azure-key-vault
 - azure-web-apps
 - dotnet
+subjects:
+- cloud-security
+- cloud-computing
 units:
 - learn.azure.aspnet-configurationbuilder.1-introduction
 - learn.azure.aspnet-configurationbuilder.2-exercise-setup-app-deploy-resources

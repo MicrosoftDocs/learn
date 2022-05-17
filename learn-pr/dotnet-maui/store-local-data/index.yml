@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.store-local-data
+metadata:
+  moduleType: standard
+  title: "Store local data with SQLite in a .NET MAUI app"
+  description: "Learn how to store and access data held in SQLite using a .NET MAUI app"
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+title: Store local data with SQLite in a .NET MAUI app
+summary: "Learn how to store and access data held in SQLite using a .NET MAUI app" 
+abstract: | 
+  In this module, you will:
+  - Compare the different data storage options that are available for .NET MAUI applications
+  - Store relational data in a SQLite database
+  - Interact with your database asynchronously to make sure that your UI remains responsive
+prerequisites: | 
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+  - Basic knowledge of SQL and relational databases
+iconUrl: /learn/achievements/store-local-data.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - student
+products:
+  - vs
+  - dotnet
+  # - maui # not yet available as a product in Learn
+units:
+  - learn.dotnet-maui.store-local-data.introduction
+  - learn.dotnet-maui.store-local-data.compare-storage-options
+  - learn.dotnet-maui.store-local-data.store-data-locally-with-sqlite
+  - learn.dotnet-maui.store-local-data.exercise-store-data-locally-with-sqlite
+  - learn.dotnet-maui.store-local-data.use-sqlite-asynchronously
+  - learn.dotnet-maui.store-local-data.exercise-use-sqlite-asynchronously
+  - learn.dotnet-maui.store-local-data.summary
+badge:
+  uid: learn.dotnet-maui.store-local-data.badge

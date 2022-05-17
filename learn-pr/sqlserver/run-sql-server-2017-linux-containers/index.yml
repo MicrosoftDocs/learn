@@ -35,6 +35,9 @@ roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- container
+- database
 units:
 - learn-sqlserver.run-sql-server-2017-linux-containers.1-introduction
 - learn-sqlserver.run-sql-server-2017-linux-containers.2-choose-run-sql-server-2017-linux-containers

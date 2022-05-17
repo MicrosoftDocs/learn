@@ -32,6 +32,8 @@ products:
 - azure-active-directory
 - azure-active-directory-domain
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.troubleshoot-active-directory.introduction
 - learn.wwl.troubleshoot-active-directory.recover-objects-from-ad-recycle-bin

@@ -39,6 +39,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.understand-windows-server-iaas-vm-cost-management.introduction
 - learn.wwl.understand-windows-server-iaas-vm-cost-management.use-azure-pricing-calculator-to-estimate-costs

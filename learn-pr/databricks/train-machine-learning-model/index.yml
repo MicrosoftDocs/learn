@@ -25,6 +25,8 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- machine-learning
 units:
 - learn.wwl.train-machine-learning-model.introduction
 - learn.wwl.train-machine-learning-model.perform-featurization-dataset

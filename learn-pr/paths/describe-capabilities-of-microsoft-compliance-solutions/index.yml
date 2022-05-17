@@ -50,6 +50,10 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- security
+- compliance
+- identity-access
 modules:
 - learn.wwl.describe-compliance-management-capabilities-microsoft
 - learn.wwl.describe-compliance-management-capabilities-microsoft-365

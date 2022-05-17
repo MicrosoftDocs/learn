@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-clis
+subjects:
+- development-tools
+- it-management-monitoring
 units:
 - learn.student-evangelism.bash-introduction.0-introduction
 - learn.student-evangelism.bash-introduction.1-what-is-bash
@@ -41,4 +44,4 @@ units:
 - learn.student-evangelism.bash-introduction.7-knowledge-check
 - learn.student-evangelism.bash-introduction.8-summary
 badge:
-  uid: learn.student-evangelism.bash-introduction.badge 
+  uid: learn.student-evangelism.bash-introduction.badge

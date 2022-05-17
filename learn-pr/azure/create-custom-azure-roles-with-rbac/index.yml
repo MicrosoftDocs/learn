@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-rbac
+subjects:
+- identity-access
 units:
 - learn.azure.create-custom-roles-rbac.introduction
 - learn.azure.create-custom-roles-rbac.custom-roles-for-azure-resources

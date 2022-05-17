@@ -51,6 +51,8 @@ products:
 - azure-web-apps
 - msal-java
 - azure-service-bus
+subjects:
+- cloud-computing
 modules:
 - learn.monitor-java-azure
 - learn.azure.deploy-java-azure-pipeline-terraform

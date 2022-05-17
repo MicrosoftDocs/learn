@@ -1,12 +1,10 @@
-The first thing you need to do is set up the resources you'll need to read data in real-time from the household smart meter devices to the cloud; process the data; and analyze energy usage to find any unusual behavior.
+The first thing you'll need to successfully complete the exercises in this module is to set up the Azure resources. 
 
-![Diagram displaying blob iot and anomaly detector resources](..\media\3-exercise-setup-azure-resources-1.png)
+In this exercise, you'll run a setup script to create the Azure IoT Hub service to connect the household smart meter devices to the cloud. The Azure IoT Hub will be routing the raw data to an Azure blob storage.  Then finally you'll be creating an Azure Anomaly Detector instance to analyze the data.
 
-In this exercise, you'll be using the Azure IoT Hub service to connect the smart meter devices to the cloud. The Azure IoT Hub will be routing the raw data to an Azure blob storage.  Then finally you'll be creating an Azure Anomaly Detector instance to analyze the data.
-
-Azure services to understand before we start:
-- _Azure IoT Hub_ is a communication channel for sending and receiving data between IoT devices and the cloud. 
-- _Azure Blob storage_ is used to store massive amounts of unstructured data. It helps you create data lakes for your analytics workloads. It's useful for storing raw data collected from the Azure IoT Hub.
+These are Azure services to understand before we start:
+- _Azure IoT Hub_ is a communication channel for sending and receiving data between smart devices and the cloud. 
+- _Azure Blob storage_ is used to store massive amounts of unstructured data. It helps you create data lakes for your analytics workloads. It's useful for storing the raw data we'll collect from the Azure IoT Hub.
 
 ### Set up a Blob storage, IoT Hub, and Anomaly Detector instance
 
@@ -22,6 +20,7 @@ Manually creating and configuring a Blob storage, IoT Hub and Anomaly Detector i
     chmod +x setup.sh
     bash setup.sh
     ```
+![Diagram displaying blob iot and anomaly detector resources](..\media\3-exercise-setup-azure-resources-1.png)
 
 The setup script will take a few minutes for the following resources to be created:
 - Storage Account to manage your Blob storage
@@ -49,4 +48,6 @@ Now, you need to verify that the resources are set up correctly.
     
 3. In the list of resources, you show see the following resource instances: **anomaly######**, **myLearnIoTHub######** and **store######**.
 
-    ![Diagram displaying list of resources on Azure portal in the Resource Group](..\media\3-exercise-setup-azure-resources-3.png)
+ [   ![Diagram displaying list of resources on Azure portal in the Resource Group](..\media\3-exercise-setup-azure-resources-3.png) ](..\media\3-exercise-setup-azure-resources-3.png#lightbox)
+
+

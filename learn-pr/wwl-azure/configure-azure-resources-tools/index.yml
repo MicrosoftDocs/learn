@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.wwl.configure-azure-resources-tools.introduction
 - learn.wwl.configure-azure-resources-tools.use-azure-portal

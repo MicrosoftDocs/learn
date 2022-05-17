@@ -38,6 +38,10 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- security
+- iot
+- cloud-computing
 modules:
 - learn.student-evangelism.altair-azure-sphere-introduction
 - learn.student-evangelism.altair-azure-sphere-setup

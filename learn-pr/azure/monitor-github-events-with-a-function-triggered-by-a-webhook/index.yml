@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-functions
+subjects:
+- cloud-computing
 units:
 - learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.introduction
 - learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.create-function-triggered-by-webhook
