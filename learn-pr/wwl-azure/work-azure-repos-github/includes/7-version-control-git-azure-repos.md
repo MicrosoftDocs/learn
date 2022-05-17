@@ -11,7 +11,7 @@ Azure DevOps supports two types of version control, Git and Team Foundation Vers
 
 Git is the default version control provider for new projects. You should use Git for version control in your projects unless you need centralized version control features in TFVC.
 
-In this lab, you'll learn how to establish a local Git repository, which can easily be synchronized with a centralized Git repository in Azure DevOps. In addition, you'll learn about Git branching and merging support. You'll use Visual Studio Code, but the same processes apply to using any Git-compatible client.
+In this lab, you'll learn to establish a local Git repository, which can easily be synchronized with a centralized Git repository in Azure DevOps. In addition, you'll learn about Git branching and merging support. You'll use Visual Studio Code, but the same processes apply to using any Git-compatible client.
 
 ## Objectives
 
