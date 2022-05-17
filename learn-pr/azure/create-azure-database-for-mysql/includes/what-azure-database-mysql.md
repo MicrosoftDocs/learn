@@ -27,7 +27,7 @@ The Burstable compute tier utilizes the B series VMs, General Purpose relies on 
 
 You access the tier options from the Azure portal’s **Flexible server Compute+ storage** page, **Compute** section.
 
-![Screenshot of the Compute section of the Compute+storage page displaying the Memory Optimized compute tier’s compute sizes options.](../media/2-mysql-compute-tier-sizes.png)
+:::image type="content" source="../media/2-mysql-compute-tier-sizes.png" alt-text="Screenshot of the Compute section of the Compute+storage page displaying the Memory Optimized compute tier’s compute sizes options." border="true":::
 
 #### Storage
 
