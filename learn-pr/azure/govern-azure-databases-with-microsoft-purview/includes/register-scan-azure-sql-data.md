@@ -1,10 +1,10 @@
 You’ve received a request to prepare a complete and comprehensive overview of all your data flows, sources, transformations, and dependencies so you can manage your data assets.
 
-You’ve decided to use an Microsoft Purview account to connect to data sources that are stored in Azure SQL databases.
+You’ve decided to use a Microsoft Purview account to connect to data sources that are stored in Azure SQL databases.
 
-## Register an Azure SQL Database source with an Microsoft Purview account
+## Register an Azure SQL Database source with a Microsoft Purview account
 
-You’ve already set up an Microsoft Purview account by adding the Data Source Administrator role to the account and by configuring the Data Reader role to register a data source.
+You’ve already set up a Microsoft Purview account by adding the Data Source Administrator role to the account and by configuring the Data Reader role to register a data source.
 
 Before you can register an Azure SQL database source, you need to ensure that the Microsoft Purview account has connectivity to the database and has the correct credentials to access it.
 
