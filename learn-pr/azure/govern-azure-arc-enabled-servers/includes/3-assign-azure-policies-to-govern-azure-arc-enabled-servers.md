@@ -13,13 +13,13 @@ Here we’ll walk through assigning an Azure Policy to ensure that your Arc-enab
 1. From your browser, go to the [Azure portal](https://portal.azure.com/).
 1. In the portal, browse **Policy **and select **Assignments **from the left-pane.
 1. Select **Assign policy** and then **Policy Definition**.
-1. Search **security baseline **from Available Definitions and select the Policy Definition: **Windows machines should meet requirements of the Azure compute security baseline **before moving to the next step.
+1. Search **security baseline** from Available Definitions and select the Policy Definition: **Windows machines should meet requirements of the Azure compute security baseline **before moving to the next step.
 
-![Graphical user interface, text, application, email  Description automatically generated](./image1.png)
+![Azure Policy selection](../media/image-1.png)
 
 5. Set the parameter **Include Arc connected servers** to **true**.
 
-![Graphical user interface, text, application, email  Description automatically generated](./image2.png)
+![Azure Policy parameter assignment](../media/image-2.png)
 
 6. Select **Review + create** and **Create. **
 
@@ -33,6 +33,6 @@ After the Azure Policy Assignment is complete, you can review compliance with th
 1. Select on the policy **Windows machines should meet requirements of the Azure compute security baseline** to view its compliance status.
 1. You can filter by different resource types, compliance, or locations. To view just the compliance of Azure Arc-enabled servers, select **All Resource Types** and change the selection to only **microsoft.hybridcompute/machines**. 
 
-![Graphical user interface, text, application, email  Description automatically generated](./image3.png)
+![Azure Policy filtering]../media/image-3.png)
 
 Based on the compliance state, you can choose to edit assignment, create exemptions, create a remediation task, or delete the assignment. 
