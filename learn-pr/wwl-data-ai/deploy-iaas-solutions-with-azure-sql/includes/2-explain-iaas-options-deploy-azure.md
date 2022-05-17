@@ -75,7 +75,7 @@ The easiest way to see the sizing options within each series is through the Azur
 
 :::image type="content" source="../media/module-22-plan-implement-final-02.png" alt-text="A Partial list of the VM sizes available through the Azure portal":::
 
-The image above shows just a small set of the series and size possibilities. For each option, you can see the number of Virtual CPUs, the amount of RAM, the number of Data disks, the Max IPS, the temporary storage provided and whether Premium storage is supported.
+The image above shows just a small set of the series and size possibilities. For each option, you can see the number of Virtual CPUs, the amount of RAM, the number of Data disks, the Max IOPS, the temporary storage provided and whether Premium storage is supported.
 
 For more information about VM size best practices, see [Best practices for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist).
 
