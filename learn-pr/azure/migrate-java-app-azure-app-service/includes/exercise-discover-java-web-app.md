@@ -62,6 +62,6 @@ Parameterizing the configuration makes it available as a deployment time paramet
 3. Add **/var/airsonic** as the folder path in the text box.
 4. Select **Azure file share** as the storage option to store the folder outside the container on a persistent volume.
 
-    ![Screenshot for externalizing app folders for Java web application.](../media/discovered-app-folders.png)
+    :::image type="content" source="../media/discovered-app-folders.png" alt-text="Screenshot for externalizing app folders for Java web application.":::
 
 5. Click **Save**.
