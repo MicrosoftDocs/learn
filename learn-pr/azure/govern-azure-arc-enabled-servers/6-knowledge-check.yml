@@ -26,7 +26,7 @@ quiz:
     - content: Assigning a Guest Configuration Azure Policy to an Azure VM
       isCorrect: false
       explanation: Incorrect, assigning to an Azure VM is free.
-    - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled server, that is not connected to Stack HCI
+    - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled server, that isn't connected to Stack HCI
       isCorrect: true
       explanation: Correct, assigning a Guest Configuration Azure Policy to a non-Stack HCI Arc-enabled server is charged.
   - content: "Azure Automanage onboards Arc-enabled servers to a range of Azure best practices. All the following are best services that Azure Automanage onboards Azure Arc-enabled servers except:"
