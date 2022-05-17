@@ -28,7 +28,6 @@ products:
 - azure
 - azure-arc
 - azure-policy
-- azure-automanage
 units:
 - learn.azure.govern-azure-arc-enabled-servers.introduction
 - learn.azure.govern-azure-arc-enabled-servers.govern-azure-arc-enabled-servers-with-azure-policy-guest-configuration
