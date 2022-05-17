@@ -32,6 +32,8 @@ roles:
 products:
 - azure-monitor
 - azure-log-analytics
+subjects:
+- virtual-machine
 units:
 - learn.monitor-vm-performance-using-azure-monitor-for-vms.introduction
 - learn.monitor-vm-performance-using-azure-monitor-for-vms.what-are-azure-monitor-logs-vms

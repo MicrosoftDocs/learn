@@ -22,6 +22,8 @@ products:
 - azure
 - azure-machine-learning
 - azure-virtual-machines
+subjects:
+- machine-learning
 modules:
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning
 - learn.wwl.train-compute-azure-machine-learning

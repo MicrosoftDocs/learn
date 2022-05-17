@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- business-applications
 units:
 - learn.wwl.explore-release-strategy-recommendations.introduction
 - learn.wwl.explore-release-strategy-recommendations.explore-release-pipelines

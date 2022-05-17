@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.windows-server-update-management.introduction
 - learn.wwl.windows-server-update-management.overview-of-windows-update

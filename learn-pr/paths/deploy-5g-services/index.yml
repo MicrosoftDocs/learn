@@ -61,6 +61,10 @@ products:
 - azure-iot-hub
 - azure-resource-manager
 - azure-virtual-machines
+subjects:
+- iot
+- networking
+- cloud-computing
 modules:
 - learn.oxford.intro-5g-azure
 - learn.oxford.5g-business-models

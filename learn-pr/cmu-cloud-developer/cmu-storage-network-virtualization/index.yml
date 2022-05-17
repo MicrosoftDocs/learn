@@ -40,6 +40,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization.0-introduction
 - learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization.1-software-defined-data-centers

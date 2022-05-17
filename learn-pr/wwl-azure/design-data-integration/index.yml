@@ -34,6 +34,8 @@ products:
 - azure-databricks
 - azure-stream-analytics
 - azure-synapse-analytics
+subjects:
+- data-management
 units:
 - learn.wwl.design-data-integration.introduction
 - learn.wwl.design-data-integration.solution-azure-data-factory

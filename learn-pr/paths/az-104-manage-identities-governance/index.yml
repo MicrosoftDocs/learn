@@ -71,6 +71,8 @@ products:
 - azure-rbac
 - azure-resource-manager
 - azure-cost-management
+subjects:
+- identity-access
 modules:
 - learn.wwl.configure-azure-active-directory
 - learn.wwl.configure-user-group-accounts

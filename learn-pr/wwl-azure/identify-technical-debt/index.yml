@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- classification-analysis
 units:
 - learn.wwl.identify-technical-debt.introduction
 - learn.wwl.identify-technical-debt.examine-code-quality

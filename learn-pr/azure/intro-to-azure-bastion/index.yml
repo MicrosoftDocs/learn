@@ -31,7 +31,10 @@ products:
   - azure
   - azure-bastion
   - azure-virtual-network
-units:  
+subjects:
+- virtual-machine
+- identity-access
+units:
 - learn.intro-to-azure-bastion.1-introduction
 - learn.intro-to-azure-bastion.2-what-is-azure-bastion
 - learn.intro-to-azure-bastion.3-how-azure-bastion-works

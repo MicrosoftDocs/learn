@@ -27,7 +27,11 @@ roles:
 products:
   - azure
   - azure-data-factory
-units:  
+subjects:
+- cloud-computing
+- data-lake
+- data-analytics
+units:
 - learn.intro-to-azure-data-factory.1-introduction
 - learn.intro-to-azure-data-factory.2-what-is-azure-data-factory
 - learn.intro-to-azure-data-factory.3-how-azure-data-factory-works

@@ -29,6 +29,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- compliance
 units:
 - learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.introduction
 - learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.understand-design-goals

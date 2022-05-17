@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- identity-access
 units:
 - learn.wwl.design-for-user-identities-profiles.introduction
 - learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model-for-azure-virtual-desktop-based-requirements

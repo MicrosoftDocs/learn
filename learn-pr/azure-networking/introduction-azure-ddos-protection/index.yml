@@ -33,6 +33,8 @@ roles:
 - security-engineer
 products:
 - azure-ddos-protection
+subjects:
+- security
 units:
 - learn.introduction-azure-ddos-protection.1-introduction
 - learn.introduction-azure-ddos-protection.2-what-is-azure-ddos-protection

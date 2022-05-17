@@ -32,6 +32,8 @@ roles:
 products:
   - azure
   - azure-communication-services
+subjects:
+- communication
 units:
   - learn.azure.intro-to-azure-communication-services.introduction
   - learn.azure.intro-to-azure-communication-services.what-is-it

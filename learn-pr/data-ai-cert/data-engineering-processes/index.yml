@@ -23,6 +23,9 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- architecture
+- cloud-computing
 units:
 - learn.data-ai.data-engineering-processes.introduction
 - learn.data-ai.data-engineering-processes.roles-and-responsibilities

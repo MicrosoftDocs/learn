@@ -40,6 +40,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
+- machine-learning
 modules:
 - learn.machinelearning.introduction-to-machine-learning
 - learn.machinelearning.introduction-to-classical-machine-learning

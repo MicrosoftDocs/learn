@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.deploy-docker.1-introduction
 - learn.azdo.deploy-docker.2-why-containers

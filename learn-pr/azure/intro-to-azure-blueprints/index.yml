@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-blueprints
+subjects:
+- development-tools
 units:
 - learn.intro-to-azure-blueprints.introduction
 - learn.intro-to-azure-blueprints.what-is-azure-blueprints

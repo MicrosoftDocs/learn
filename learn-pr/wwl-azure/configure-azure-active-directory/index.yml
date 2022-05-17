@@ -27,6 +27,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.configure-azure-active-directory.introduction
 - learn.wwl.configure-azure-active-directory.describe-benefits-features

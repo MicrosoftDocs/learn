@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-security
 units:
 - learn.azure-well-architected-security.1-introduction
 - learn.azure-well-architected-security.2-defense-in-depth

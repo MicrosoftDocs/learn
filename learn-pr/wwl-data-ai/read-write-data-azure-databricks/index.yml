@@ -24,6 +24,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-engineering
 units:
 - learn.wwl.read-write-data-azure-databricks.introduction
 - learn.wwl.read-write-data-azure-databricks.read-data-csv-format

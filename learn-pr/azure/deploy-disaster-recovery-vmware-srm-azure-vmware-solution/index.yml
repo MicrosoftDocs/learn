@@ -30,6 +30,9 @@ roles:
   - solution-architect
 products:
   - azure-vmware-solution
+subjects:
+- business-continuity
+- data-engineering
 units:
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.1-introduction
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.2-identify-deployment-workflow-prerequisites

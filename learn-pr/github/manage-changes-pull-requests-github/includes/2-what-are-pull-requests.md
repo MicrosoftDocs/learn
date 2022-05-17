@@ -1,8 +1,8 @@
-Here, we discuss how pull requests can help you request, review, and incorporate changes across your repository.
+Here, we'll discuss how pull requests can help you request, review, and incorporate changes across your repository.
 
 ## The GitHub flow
 
-In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While this unit focuses on pull requests, it is recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
+In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While this unit focuses on pull requests, we recommend that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
 ### Working on branches
 
@@ -19,7 +19,7 @@ A pull request is a mechanism used to communicate that changes from one branch a
 ![A pull request.](../media/2-pull-request.png)
 
 > [!NOTE]
-> This unit discusses working with pull requests within the context of a browser. There are also many development platforms, like [Visual Studio](https://visualstudio.microsoft.com/?azure-portal=true), that offer integrated pull request experiences.
+> This unit discusses working with pull requests within the context of a browser. There are also many development platforms, like [Visual Studio](https://visualstudio.microsoft.com/?azure-portal=true), that offer integrated pull-request experiences.
 
 ### Author responsibilities
 
@@ -33,7 +33,7 @@ Learn more about [Proposing changes to your work with pull requests](https://hel
 
 ### Reviewer responsibilities
 
-Reviewers may be assigned to review the pull request based on their expertise with or responsibility for the code in question. For example, there may be a database guru who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `main` anywhere in the project.
+Reviewers may be assigned to review the pull request based on their expertise with or responsibility for the code in question. For example, there may be a database expert who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `main` anywhere in the project.
 
 GitHub offers a visual experience for reviewing code that allows reviewers to see code changes in a *diff* view where changes are highlighted. They can then leave comments inline, suggest changes, or approve. Reviewer feedback is kept as part of the repository history so that changes and decisions can be easily traced within their original context.
 
@@ -47,7 +47,7 @@ Learn more about [Reviewing changes in pull requests](https://help.github.com/gi
 
 ### Applying suggested changes
 
-When reviewers suggest changes in a pull request, the author or assigned individual with write access to the repository can incorporate the changes into the pull request. You can commit a single suggestion or batch multiple suggestions into a single commit. When suggested changes are added to the pull request, both the author of the suggested change and the person who applies the suggested change will be co-authors of the commit, but it's the person who applies the suggested change who is also the committer of the commit.
+When reviewers suggest changes in a pull request, the author or assigned individual with write access to the repository can incorporate the changes into the pull request. You can commit a single suggestion, or batch multiple suggestions into a single commit. When suggested changes are added to the pull request, both the author of the suggested change and the person who applies the suggested change will be co-authors of the commit, but it's the person who applies the suggested change who is also the committer of the commit.
 
 :::image type="content" source="../media/2-add-suggestion-batch.png" alt-text="Some suggestions for changes with a button to add the suggestions to the batch.":::
 
@@ -55,6 +55,6 @@ When reviewers suggest changes in a pull request, the author or assigned individ
 
 While not mandatory, pull requests may be assigned to a specific user. That person takes responsibility for determining if and when the pull request is merged. This may require them to corral stakeholders into agreeing whether the merge should be approved.
 
-Once a pull request has been merged, it's recommended that you delete the branch it was based on. Allowing the branch to linger can result in headaches down the road. Remember that all branch history will have been merged into the base branch, so its commits can always be accessed later on.
+Once a pull request has been merged, it's recommended that you delete the branch on which it was based. Allowing the branch to linger can result in headaches down the road. Remember that all branch history will have been merged into the base branch, so you can always access its commits later on.
 
 Learn more about [Incorporating changes from a pull request](https://help.github.com/github/collaborating-with-issues-and-pull-requests/incorporating-changes-from-a-pull-request?azure-portal=true).

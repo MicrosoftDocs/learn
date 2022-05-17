@@ -19,6 +19,8 @@ roles:
 - data-engineer
 products: 
 - sql-server
+subjects:
+- infrastructure
 modules:
 - learn-sqlserver.introduction-upgrading-sql-server
 - learn-sqlserver.sql-server-discovery-using-map

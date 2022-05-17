@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- compliance
 units:
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.introduction
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-purpose-of-ediscovery
