@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.arm-template-whatif.badge
+metadata:
+  title: >-
+    Microsoft Badge: Preview Azure deployment changes by using what-if was
+    issued by Microsoft
+socialImageUrl: /learn/achievements/bicep/arm-template-whatif-social.png

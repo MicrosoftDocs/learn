@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.languages.csharp-arrays.badge
+metadata:
+  title: >-
+    Microsoft Badge: Store and iterate through sequences of data using Arrays
+    and the foreach statement in C# was issued by Microsoft
+socialImageUrl: /learn/achievements/csharp-arrays-social.png
