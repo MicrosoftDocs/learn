@@ -3,12 +3,12 @@ Form Recognizer is one of many Cognitive Services, cloud-based artificial intell
 Form Recognizer uses Optical Character Recognition (OCR) capabilities and deep learning models to extract text, key-value pairs, selection marks, and tables from documents.
 
 > [!div class="mx-imgBorder"]
-> ![How OCR Works](../media/how-optical-character-recognition-works.png)   
+> ![Screenshot of how OCR works.](../media/how-optical-character-recognition-works.png)   
 
 OCR captures document structure by creating bounding boxes around detected objects in an image. The locations of the bounding boxes are recorded as coordinates in relation to the rest of the page. Form Recognizer services return bounding box data and other information in a structured form with the relationships from the original file.  
 
 > [!div class="mx-imgBorder"]
-> ![JSON output sample.](../media/json-output-sample.png)
+> ![Screenshot of JSON output sample.](../media/json-output-sample.png)
 
 To build a high-accuracy model from scratch, people need to build deep learning models, use a large amount of compute resources, and face long model training times. These factors could make a project infeasible. Form Recognizer provides underlying models that have been trained on thousands of form examples. The underlying models enable you to do high-accuracy data extraction from your forms with little to no model training.   
 

@@ -1,6 +1,6 @@
 Azure's Form Recognizer service supports supervised machine learning. You can train custom models and create composite models with form documents _and_ JSON documents that contain labeled fields. 
 
-![Form documents needed for custom model training](../media/labeled-form-documents.png)
+![Screenshot of a sample form document needed for custom model training.](../media/labeled-form-documents.png)
 
 To train a custom model:
 

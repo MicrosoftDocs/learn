@@ -1,7 +1,7 @@
 Forms are used to communicate information in every industry, every day. Many people still manually extract data from forms to exchange information. 
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft brand central image of person handing a form to another person.](../media/introduction-image.png)
+> ![Screenshot of person handing a form to another person.](../media/introduction-image.png)
 
 Consider some of the instances when a person needs to process form data:   
 - When filing claims 

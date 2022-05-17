@@ -1,7 +1,7 @@
 In addition to SDKs and the REST API, Form Recognizer services can be accessed through a user interface called the Form Recognizer Studio (preview), an online tool for visually exploring, understanding, and integrating features from the Form Recognizer service. The Studio can be used to analyze form layouts, extract data from prebuilt models, and train custom models. 
 
 > [!div class="mx-imgBorder"]
-> ![Form Recognizer Studio.](../media/form-recognizer-demo-v3p2.gif)
+> ![Gif of Form Recognizer Studio capabilities.](../media/form-recognizer-demo-v3p2.gif)
 
 The Form Recognizer Studio currently supports the following projects: 
 - **Document analysis models**
