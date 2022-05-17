@@ -14,7 +14,7 @@ summary: Learn how to use location tracking on your phone mixed with Azure Funct
 abstract:  |
   In this module, you will:
   - Create a cross-platform Xamarin.Forms app that uses Xamarin.Essentials
-  - Create a cross-platform UI using XAML with application logic in a ViewModel, and bind properties in a ViewModel to the UI
+  - Create a cross-platform UI using XAML with application logic in a viewmodel, and bind properties in a viewmodel to the UI
   - Detect the user's location
   - Create the Azure Functions with an HTTP trigger and run it locally
   - Call the Azure Functions from a mobile app, passing data as JSON
