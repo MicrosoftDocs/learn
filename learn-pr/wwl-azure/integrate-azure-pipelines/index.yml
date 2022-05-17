@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-pipelines
 metadata:
   title: Integrate with Azure Pipelines
   description: "Integrate with Azure Pipelines"
-  ms.date: 04/13/2022
+  ms.date: 05/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -39,8 +39,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- devops
 units:
 - learn.wwl.integrate-azure-pipelines.introduction
 - learn.wwl.integrate-azure-pipelines.describe-anatomy-of-pipeline
@@ -51,6 +49,7 @@ units:
 - learn.wwl.integrate-azure-pipelines.communicate-with-azure-pipelines
 - learn.wwl.integrate-azure-pipelines.communicate-to-deploy-to-target-servers
 - learn.wwl.integrate-azure-pipelines.examine-other-considerations
+- learn.wwl.integrate-azure-pipelines.integrate-external-source-control-with-azure-pipelines
 - learn.wwl.integrate-azure-pipelines.knowledge-check
 - learn.wwl.integrate-azure-pipelines.summary
 badge:

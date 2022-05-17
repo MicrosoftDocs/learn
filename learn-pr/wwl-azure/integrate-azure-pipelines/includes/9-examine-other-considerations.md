@@ -16,7 +16,7 @@ Generate and use a PAT to connect an agent with Azure Pipelines. PAT is the only
 
 You can run your agent as either a service or an interactive process. Whether you run an agent as a service or interactively, you can choose which account you use to run the agent.
 
-It's different from the credentials you use when registering the agent with Azure Pipelines. The choice of agent account depends solely on the needs of the tasks running in your build and deployment jobs.
+It's different from your credentials when registering the agent with Azure Pipelines. The choice of agent account depends solely on the needs of the tasks running in your build and deployment jobs.
 
 For example, to run tasks that use Windows authentication to access an external service, you must run the agent using an account with access to that service.
 
@@ -35,7 +35,7 @@ Some domain policies may prevent you from enabling autologon or disabling the sc
 In such cases, you may need to seek an exemption from the domain policy or run the agent on a workgroup computer where the domain policies don't apply.
 
 > [!NOTE]
-> There are security risks when you enable automatic log in or disable the screen saver. You enable other users to walk up to the computer and use the account that automatically logs on. If you configure the agent to run in this way, you must ensure the computer is physically protected; for example, located in a secure facility. If you use Remote Desktop to access the computer on which an agent is running with autologon, simply closing the Remote Desktop causes the computer to be locked, and any UI tests that run on this agent may fail. To avoid this, use the tscon command to disconnect from Remote Desktop.
+> When you enable automatic login or disable the screen saver, there are security risks. You allow other users to walk up to the computer and use the account that automatically logs on. If you configure the agent to run in this way, you must ensure the computer is physically protected; for example, located in a secure facility. If you use Remote Desktop to access the computer on which an agent is running with autologon, simply closing the Remote Desktop causes the computer to be locked, and any UI tests that run on this agent may fail. To avoid this, use the tscon command to disconnect from Remote Desktop.
 
 ## Agent version and upgrades
 
@@ -64,7 +64,7 @@ Azure Pipelines: [https://dev.azure.com/{your_organization}/_admin/_AgentPool](h
 
 In many cases, yes. Specifically:
 
- -  If you use a self-hosted agent, you can run incremental builds. For example, you define a CI build pipeline that doesn't clean the repo or do a clean build. Your builds will typically run faster. You don't get these benefits when you use a Microsoft-hosted agent because the agent is destroyed after the build or release pipeline is completed.
+ -  If you use a self-hosted agent, you can run incremental builds. For example, you define a CI build pipeline that doesn't clean the repo or do a clean build. Your builds will typically run faster. You don't get these benefits when using a Microsoft-hosted agent because the agent is destroyed after the build or release pipeline is completed.
  -  A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated, depending on the load on our system.
 
 ### Can I install multiple self-hosted agents on the same machine?
@@ -73,9 +73,9 @@ Yes. This approach can work well for agents who run jobs that don't consume many
 
 In other cases, you might find that you don't gain much efficiency by running multiple agents on the same machine.
 
-For example, it might not be worthwhile for agents that run builds that consume many disk and I/O resources.
+For example, it might not be worthwhile for agents that run builds that consume many disks and I/O resources.
 
-If parallel build jobs use the same singleton tool deployment, such as npm packages, you might also run into problems.
+If parallel build jobs use the same singleton tool deployment, such as npm packages, you might also have problems.
 
 For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
 
