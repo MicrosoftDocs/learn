@@ -14,7 +14,7 @@ The storage component of Data Map includes items that Microsoft Purview discover
 
 Use Microsoft Purview Data Catalog to search and browse the data that Microsoft Purview discovers while scanning. For example, your CDO can use Data Catalog to find relevant data by searching with specific filters selected, such as glossary terms, classifications, and sensitivity labels.
 
-:::image type="content" source="../media/2-Data-Catalog.png" alt-text="The Data Catalog section in Microsoft Purview Studio." border="true" lightbox="../media/2-Data-Catalog.png":::
+:::image type="content" source="../media/2-data-catalog.png" alt-text="The Data Catalog section in Microsoft Purview Studio." border="true" lightbox="../media/2-data-catalog.png":::
 
 Search the Microsoft Purview Data Catalog by using search queries that include keywords and operators such as **OR**, **AND**, and **NOT**. You can also register an Azure Synapse Analytics workspace and conduct a search directly from that service.
 
@@ -75,7 +75,7 @@ The data sources integrated into Microsoft Purview can reside in an infrastructu
 
 Microsoft Purview Studio is a web-based tool with which you can interact with Data Catalog, register data sources, run data insights, and enable data lineage. Launch Microsoft Purview Studio from your Microsoft Purview account or from [Microsoft Purview Studio](https://web.purview.azure.com).
 
-:::image type="content" source="../media/2-Azure-Purview-Studio.png" alt-text="The Microsoft Purview Data map pane that lists existing collections and sources" border="true" lightbox="../media/2-Azure-Purview-Studio.png":::
+:::image type="content" source="../media/2-azure-purview-studio.png" alt-text="The Microsoft Purview Data map pane that lists existing collections and sources" border="true" lightbox="../media/2-azure-purview-studio.png":::
 
 The following are panes in Microsoft Purview Studio:
 
