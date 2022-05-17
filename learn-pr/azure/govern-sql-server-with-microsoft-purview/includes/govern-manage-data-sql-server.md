@@ -65,7 +65,7 @@ Once you create the Azure Key Vault and configure the secret, follow these steps
 
 1. In the **New Key Vault** pane, enter the required information including name, description, your Azure subscription, and a new Key Vault name, and then select **Create**.
 
-:::image type="content" source="../media/3-purview-keyvault-connection.png" alt-text="The Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-purview-keyvault-connection.png":::
+    :::image type="content" source="../media/3-purview-keyvault-connection.png" alt-text="The Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-purview-keyvault-connection.png":::
 
 #### Create a credentials object
 
