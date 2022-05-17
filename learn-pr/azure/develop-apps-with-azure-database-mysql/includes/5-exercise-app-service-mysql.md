@@ -52,7 +52,7 @@ We'll directly clone the coded app and learn how to deploy it on Azure App Servi
 1. To clone the sample application repository and change to the repository root, run the following commands:
 
     ```azurecli-interactive
-    git clone https://github.com/Azure-samples/php-mysql-app-service.git
+    git clone https://github.com/Azure-Samples/php-mysql-app-service.git
     cd php-mysql-app-service
     ```
 
@@ -96,7 +96,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
     ```
 
     > [!IMPORTANT]
-    In the Azure CLI output, the URL of the Git remote is displayed in the deploymentLocalGitUrl property, with the format `https://<username>@<app-name>.scm.azurewebsites.net/<app-name>.git`. Save this URL, as you'll need it later.
+    > In the Azure CLI output, the URL of the Git remote is displayed in the deploymentLocalGitUrl property, with the format `https://<username>@<app-name>.scm.azurewebsites.net/<app-name>.git`. Save this URL, as you'll need it later.
 
 1. Next we'll configure the MySQL flexible server database connection settings on the Web App.
 
@@ -146,6 +146,6 @@ The deployment may take a few minutes to succeed.
 
 ## STEP 5 - Test your application
 
-Finally, test the application by browsing to `https://<app-name>.azurewebsites.net`, and then add, view, update or delete items from the Product catalogue.
+Finally, test the application by browsing to `https://<app-name>.azurewebsites.net`, and then add, view, update or delete items from the product catalog.
 
 Congratulations! You have successfully deployed a sample PHP application to Azure App Service and integrated it with Azure Database for MySQL - Flexible Server on the back end.
