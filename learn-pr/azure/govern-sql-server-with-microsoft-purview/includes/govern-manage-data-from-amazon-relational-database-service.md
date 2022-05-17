@@ -53,7 +53,7 @@ To deploy a Multi-Cloud Scanning Connector for Microsoft Purview:
 1. Install the **Multi-Cloud Scanning Connector for Microsoft Purview** in a separate VPC.
 1. Use AWS PrivateLink to connect to the VPC where your RDS database resides.
 
-    :::image type="content" source="../media/4-Amazon-vpc.png"  alt-text="Diagram depicting using AWS PrivateLink to connect to the VPC where the RDS database resides." border="true" lightbox="../media/4-Amazon-vpc.png":::
+    :::image type="content" source="../media/4-amazon-vpc.png"  alt-text="Diagram depicting using A W S PrivateLink to connect to the V P C where the R D S database resides." border="true" lightbox="../media/4-amazon-vpc.png":::
 
 >[!Note]
 >*Amazon VPC* is a virtual network in an AWS account. Use Amazon VPC to configure IP addresses to use for resources within Amazon VPC. Additionally, Amazon VPC hosts other network services such as load balancers or firewalls. AWS PrivateLink provides private connectivity between VPCs, AWS services (in this case Amazon RDS), and your on-premises networks.
@@ -100,7 +100,7 @@ Once you establish a connection, you should start sourcing your data by register
 
 1. From the available sources, select either **Amazon RDS (SQL)** or **Amazon RDS (PostgreSQL)**, and then select **Continue**.
 
-    :::image type="content" source="../media/4-register-sources.png" alt-text="Screenshot showing the Register sources Amazon RDS (S Q L) pane." border="true" lightbox="../media/4-register-sources.png":::
+    :::image type="content" source="../media/4-register-sources.png" alt-text="Screenshot showing the Register sources Amazon R D S (S Q L) pane." border="true" lightbox="../media/4-register-sources.png":::
 
 1. Provide the following information, and then select **Register**:
 
