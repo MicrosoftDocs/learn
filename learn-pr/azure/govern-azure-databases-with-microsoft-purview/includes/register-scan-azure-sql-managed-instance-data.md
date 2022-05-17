@@ -15,7 +15,7 @@ Before you register your data source that runs in an Azure SQL Managed Instance,
 >[!Note]
 >A public endpoint for a managed instance allows access from outside from the virtual network to databases that are hosted on the managed instance.
 
-### Configure a private endpoint for an Microsoft Purview account
+### Configure a private endpoint for a Microsoft Purview account
 
 A private endpoint is a more secure method to connect to an Azure SQL Managed Instance because it enables network isolation. With a private endpoint enabled on the virtual network where the Azure SQL Managed Instance is deployed, you can allow connection only from within the network using a self-hosted integration runtime that’s deployed in an Azure VM. To do this, you must create a Microsoft integration runtime in your Microsoft Purview account and then download and install binaries on an Azure VM that runs any supported 64-bit version of the Windows operating system, following these steps:
 
@@ -33,7 +33,7 @@ A private endpoint is a more secure method to connect to an Azure SQL Managed In
 
 1. From the **Target sub-resource** drop-down list, select **account,** and then select **Next: Virtual Network**.
 
-    :::image type="content" source="../media/3-create-private-endpoint.png" alt-text="Screenshot depicting how to configure a private endpoint for an Microsoft Purview account." border="true" lightbox="../media/3-create-private-endpoint.png":::
+    :::image type="content" source="../media/3-create-private-endpoint.png" alt-text="Screenshot depicting how to configure a private endpoint for a Microsoft Purview account." border="true" lightbox="../media/3-create-private-endpoint.png":::
 
 1. On the **Virtual Network** pane, select the virtual network and subnet. Optionally, select **Azure Private DNS zone** to create a new Azure DNS Zone.
 
@@ -75,7 +75,7 @@ You can use one of the following authentication methods to access the Azure SQL 
 
 ### Steps to register a data source with Microsoft Purview Studio
 
-Use these steps in Microsoft Purview Studio to register a data source from an Azure SQL Managed Instance in an Microsoft Purview account:
+Use these steps in Microsoft Purview Studio to register a data source from an Azure SQL Managed Instance in a Microsoft Purview account:
 
 1. In the Azure portal, select your **Microsoft Purview** account, and then select **Microsoft Purview Studio**.
 
