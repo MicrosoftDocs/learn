@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What are some reasons why you would stick with central IT?
+  - content: What's a reason for sticking with central IT?
     choices:
     - content: You prefer control over agility and speed.
       isCorrect: true
@@ -30,7 +30,7 @@ quiz:
     - content: You want to adopt new technologies quickly.
       isCorrect: false
       explanation: Incorrect. This is better suited to a CCoE model.
-  - content: What are some of the reasons why you would transition to the CCoE model?
+  - content: What's a reason for transitioning to the CCoE model?
     choices:
     - content: You need to meet strict industry standards for compliance.
       isCorrect: false

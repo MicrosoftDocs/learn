@@ -1,6 +1,6 @@
 All cloud functions are provided by someone during every cloud adoption effort. These assignments and team structures can develop organically, or an organization can intentionally design them to match a defined team structure. 
 
-It's important for cloud implementation teams to understand team structures, where they are today, and where they want to end up. Again, this type of change takes time, experimentation, and negotiation. There will be bumps and setbacks during the process. Getting there will be a journey.
+It's important for cloud implementation teams to understand team structures, where they are today, and where they want to end up. Again, this type of change takes time, experimentation, and negotiation. Getting there will be a journey.
 
 Watch this video to get an overview of common team structures at various stages of organizational maturity:
 
@@ -19,7 +19,7 @@ The following graphic outlines those structures based on typical maturation stag
 
 :::image type="content" source="../media/organizational-maturity.png" alt-text="Diagram that illustrates team structures at various stages of organizational maturity." border="false" :::
 
-Most companies start with little more than a cloud adoption team. But we recommend that you establish an organizational structure that more closely resembles the MVP best practice structure.
+Most companies start with little more than a cloud adoption team. But we recommend that you establish an organizational structure that more closely resembles the MVP best practice.
 
 ## Cloud adoption team only
 
@@ -29,7 +29,7 @@ The nucleus of all cloud adoption efforts is the cloud adoption team. This team 
 
 For small-scale or early-stage adoption efforts, this team might be as small as one person. In larger-scale or late-stage efforts, it's common to have several cloud adoption teams, each with around six engineers. Regardless of size or tasks, any cloud adoption team provides the means to bring solutions into the cloud. 
 
-For some organizations, this might be a sufficient organizational structure. For more insight into the structure, composition, and function of the cloud adoption team, see [this article](/azure/cloud-adoption-framework/organize/cloud-adoption).
+For some organizations, this team might be a sufficient organizational structure. For more insight into the team's structure, composition, and function, see the [Cloud adoption team](/azure/cloud-adoption-framework/organize/cloud-adoption) article.
 
 > [!WARNING]
 > Operating with only a cloud adoption team (or multiple cloud adoption teams) is considered an antipattern and should be avoided. At a minimum, consider the MVP best practice.
@@ -38,12 +38,12 @@ For some organizations, this might be a sufficient organizational structure. For
 
 We recommend that you have two teams to create balance across cloud adoption efforts:
 
-- **Cloud adoption team**: This team is accountable for technical solutions, business alignment, project management, and operations for solutions that are adopted.
-- **Cloud governance team**: To balance the cloud adoption team, a cloud governance team is dedicated to ensuring excellence in the solutions that are adopted. The cloud governance team is accountable for platform maturity, platform operations, governance, and automation.
+- **Cloud adoption team**: Accountable for technical solutions, business alignment, project management, and operations for solutions that are adopted.
+- **Cloud governance team**: Accountable for platform maturity, platform operations, governance, and automation. This team is dedicated to ensuring excellence in the adopted solutions. 
 
 :::image type="content" source="../media/best-practice.png" alt-text="Diagram that illustrates cloud adoption via the best practice of a cloud adoption team and a cloud governance team." border="false" :::
 
-This proven approach is considered an MVP because it might not be sustainable. Each team is wearing many hats, as outlined in the [responsible, accountable, consulted, informed (RACI) charts](/azure/cloud-adoption-framework/organize/raci-alignment).
+This proven approach is considered an MVP because it might not be sustainable. Each team is wearing many hats, as outlined in the [responsible, accountable, consulted, and informed (RACI) charts](/azure/cloud-adoption-framework/organize/raci-alignment).
 
 The following sections describe a fully staffed, proven organizational structure. They also describe approaches to aligning the appropriate structure to your organization.
 
@@ -51,11 +51,11 @@ The following sections describe a fully staffed, proven organizational structure
 
 As adoption scales, the cloud governance team might struggle to keep pace with the flow of innovation from multiple cloud adoption teams. This is especially true in environments that have heavy compliance, operations, or security requirements. 
 
-At this stage, it's common for companies to shift cloud responsibilities to an existing central IT team. If that team can reassess tools, processes, and people to better support cloud adoption at scale, then including the central IT team can add significant value. Subject matter experts from operations, automation, security, and administration to modernize the central IT team can drive effective operational innovations.
+At this stage, it's common for companies to shift cloud responsibilities to an existing central IT team. If that team can reassess tools, processes, and people to better support cloud adoption at scale, then it can add significant value. Subject matter experts from operations, automation, security, and administration can drive effective operational innovations to modernize the central IT team.
 
 :::image type="content" source="../media/central-information-technology.png" alt-text="Diagram that illustrates cloud adoption with a central information technology team managing change control." border="false" :::
 
-Unfortunately, the central IT team can bring one of the riskiest phases of organizational maturity. The central IT team must have a strong growth mindset. If it views the cloud as an opportunity to grow and adapt, it can provide great value throughout the process. But if it views cloud adoption primarily as a threat to its existing model, it can become an obstacle to the cloud adoption teams and the business objectives that it supports. 
+Unfortunately, the central IT team can bring one of the riskiest phases of organizational maturity. The central IT team must have a strong growth mindset. If it views the cloud as an opportunity to grow and adapt, it can provide great value throughout the process. But if it views cloud adoption as a threat to its existing model, it can become an obstacle to the cloud adoption teams and the business objectives that it supports. 
 
 Some central IT teams have spent months or even years trying to force the cloud into alignment with on-premises approaches, with only negative results. The cloud doesn't require everything to change within the central IT team, but it does require significant change. If the central IT team is resistant to change, this phase of maturity can quickly become a cultural antipattern.
 

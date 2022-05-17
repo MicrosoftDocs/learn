@@ -1,10 +1,10 @@
-As your organization moves from an on-premises environment to the cloud, you'll need to determine which operational model to use. Will you continue to use a central IT model or move toward a CCoE model? Both approaches are valid. They're alternative views of responsibility and management.
+As your organization moves from an on-premises environment to the cloud, you need to determine which operational model to use. Will you continue to use a central IT model or move toward a CCoE model? Both approaches are valid. They're alternative views of responsibility and management.
 
 ## Central IT
 
 Stable-state environments might not require focus on the architecture or the operational requirements of individual workloads. Central operations tend to be the norm for technology environments that consist mostly of stable-state workloads.
 
-The skills needed for centralized IT functions could be provided by:
+The following resources could provide the skills for centralized IT functions:
 
 - An existing central IT team
 - Enterprise architects
@@ -19,7 +19,7 @@ The skills needed for centralized IT functions could be provided by:
 
 ## Central IT team risks
 
-Centralized IT became prevalent when all IT assets could be housed in few locations, managed by a small number of teams, and controlled through a single platform for operations management. Global business practices and the digital economy have largely reduced the instances of those centrally managed environments.
+Centralized IT became prevalent when all IT assets could be housed in few locations, managed by a small number of teams, and controlled through a single platform for operations management. Global business practices and the digital economy have largely reduced those centrally managed environments.
 
 In the modern view of IT, assets are globally distributed. Responsibilities are delegated. A mixture of internal staff, managed service providers, and cloud providers delivers operations management. 
 
@@ -29,7 +29,7 @@ A central IT team is well positioned to take valuable knowledge and practices fr
 
 When a central IT team adapts, it becomes an important partner in cloud adoption efforts. But if the central IT team doesn't adapt to the cloud or tries to use the cloud as a catalyst for tight-grained controls, it quickly becomes a blocker to adoption, innovation, and migration.
 
-The measures of this risk are speed and flexibility. The cloud simplifies adopting new technologies quickly. When new cloud functionality can be deployed within minutes but the central IT team's reviews add weeks or months to the deployment process, these centralized processes become a major impediment to business success. When you encounter this indicator, consider alternative strategies to IT delivery.
+The measures of this risk are speed and flexibility. The cloud simplifies adopting new technologies quickly. When new cloud functionality can be deployed within minutes but the central IT team's reviews add weeks or months to the deployment process, these centralized processes become an impediment to business success. When you encounter this indicator, consider alternative strategies to IT delivery.
 
 ## Exceptions
 
