@@ -35,7 +35,7 @@ The challenge is to do these tasks reliably, consistently, and in a sustainable 
 
 GitHub Actions are scripts that adhere to a yml data format. Each repository has an **Actions** tab that provides a quick and easy way to get started with setting up your first script. If you see a workflow that you think might be a great starting point, just select the **Configure** button to add the script and begin editing the source yml.
 
-:::image type="content" source="../media/github-actions-automate-development-tasks-01.png" alt-text="Screenshot of the GitHub Actions *Actions tab* displaying a simple workflow and a button to set up this workflow.":::
+:::image type="content" source="../media/github-actions-automate-development-tasks-01.png" alt-text="Screenshot of the *Actions tab* in GitHub Actions displaying a simple workflow and a button to set up this workflow.":::
 
 However, beyond those GitHub Actions featured on the Actions tab, you can:
 
