@@ -1,4 +1,4 @@
-The app has a UI and a ViewModel. In this unit, you'll add location lookup to the ViewModel using Xamarin.Essentials.
+The app has a UI and a viewmodel. In this unit, you'll add location lookup to the viewmodel using Xamarin.Essentials.
 
 ## Enable location permissions
 
