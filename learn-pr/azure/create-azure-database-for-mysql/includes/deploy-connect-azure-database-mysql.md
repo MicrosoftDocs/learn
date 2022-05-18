@@ -59,8 +59,6 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
     b. Select the **Allow public access from any Azure service within Azure to this server** checkbox.
 
     c. Select the **+ Add current client IP address** link.
-    
-    ![Screenshot of the Networking tab of the Azure portal Flexible server deployment page displaying the networking settings.](../media/4-deploy-mysql-networking.png)
 
 11. On the **Networking** tab of the **Flexible server** page, select **Review + create**.
 
