@@ -13254,61 +13254,6 @@
       "source_path": "learn-pr/azure/aks-workshop/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/09-configure-monitoring.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/01-introduction.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/06-deploy-ratings-web.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/11-summary.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/08-enable-ssl.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/05-deploy-ratings-api.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/097-deploy-ingress.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/10-scale-application.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/02-deploy-aks.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/04-deploy-modgodb.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/aks-workshop/03-deploy-container-registry.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
-      "redirect_document_id": false
-    },
+    }   
   ]
 }
