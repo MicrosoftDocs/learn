@@ -1,4 +1,4 @@
-The preceding information helps you prepare for your first cloud-adoption efforts. To reach true scale in the cloud, you'll need to keep investing in your Azure landing zones to reach operating model requirements for governance, security, and operations management. 
+The preceding information helps you prepare for your first cloud-adoption efforts, but no single implementation option for an Azure landing zone can meet all of your needs. To reach true scale in the cloud, you'll need to keep investing in your Azure landing zones to reach operating model requirements for governance, security, and operations management. 
 
 This section of the Ready methodology builds on the principles of [landing zone refactoring](/azure/cloud-adoption-framework/ready/landing-zone/refactor). As outlined in that article, a refactoring approach to infrastructure as code removes blockers to business success while minimizing risk. This series of articles assumes that you've deployed your first landing zone and would now like to expand that landing zone to meet enterprise requirements.
 
