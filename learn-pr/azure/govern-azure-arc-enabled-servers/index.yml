@@ -32,8 +32,8 @@ units:
 - learn.azure.govern-azure-arc-enabled-servers.introduction
 - learn.azure.govern-azure-arc-enabled-servers.govern-azure-arc-enabled-servers-with-azure-policy-guest-configuration
 - learn.azure.govern-azure-arc-enabled-servers.assign-azure-policies-to-govern-azure-arc-enabled-servers
-- learn.azure.govern-azure-arc-enabled-servers.azure-automanage-delivers-best-practices-to-your-azure-arc-enabled-servers-so-you-can-point-click-set-and-forget
-- learn.azure.govern-azure-arc-enabled-servers.modernize-deployment-response-and-orchestration-of-azure-arc-enabled-servers-with-azure-automation
+- learn.azure.govern-azure-arc-enabled-servers.azure-automanage-arc-best-practices
+- learn.azure.govern-azure-arc-enabled-servers.modernize-azure-arc-enabled-servers-with-azure-automation
 - learn.azure.govern-azure-arc-enabled-servers.knowledge-check
 - learn.azure.govern-azure-arc-enabled-servers.summary
 badge:
