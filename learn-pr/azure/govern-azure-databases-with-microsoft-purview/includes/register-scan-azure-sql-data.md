@@ -47,13 +47,15 @@ Use the following steps to register an Azure SQL Database source in Microsoft Pu
 
 1. On the **Register sources** pane, select the **Azure SQL Database** source tile, and then select **Continue.**
 
-    :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview"  border="true" lightbox="../media/2-register-azure-sql-database.png":::
+    :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview."  border="true" lightbox="../media/2-register-azure-sql-database.png":::
+
 
 1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL Server, enter the public **endpoint**, select the **collection**, and then select **Register.**
 
 1. The Azure SQL Database is now listed under the selected collection.
 
-    :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane" border="true" lightbox="../media/2-provide-name-sql.png":::
+    :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane." border="true" lightbox="../media/2-provide-name-sql.png":::
+
 
 
 
