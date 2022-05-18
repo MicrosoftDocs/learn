@@ -9,7 +9,7 @@ Suppose you work for a team that recently built and deployed an application to A
 This module demonstrates how to use Visual Studio remote debugging features with Azure App Service and perform related configurations. You'll see how to attach to and directly debug processes that are running externally in the cloud. You'll also explore how `.pdb` symbol files influence debugging and how to manage them in remote scenarios.
 
 > [!NOTE]
-> Remote debugging only available for Windows Azure App Services (not supported on Linux).
+> Remote debugging is only available for Windows Azure App Services (not supported on Linux instances).
 
 :::image type="content" source="../media/visual-studio-remote-debug-conceptual.png" alt-text="A conceptual diagram of remote debugging Azure App Service with Visual Studio.":::
 
