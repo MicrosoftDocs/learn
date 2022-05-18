@@ -3,32 +3,35 @@ uid: learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-
 metadata:
   moduleType: standard
   title: Authenticate users in a Node web app by using Azure Active Directory B2C
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 18/05/2022
+  description: Learn how to authenticate users into a web app by using Azure Active Directory B2C 
+  ms.date: 05/18/2022
   author: kengaderdus
   ms.author: kengaderdus
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Authenticate users in a Node web app by using Azure Active Directory B2C
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: Create a Node web app and configure it to authenticate users. When users sign in, the web app delegates the authentication task to the customer identity service.
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - Prepare Azure AD B2C to authenticate users in a web app.
+    - Configure authentication in a Node web app by using Azure AD B2C.
+    - Run and test the Node web app.
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
+  - Familiarity with identity concepts such as authentication, security tokens and OpenID Connect protocol at beginner level.
+  - Ability to navigate the Azure portal such as searching resources and switching between directories.
+  - An Azure Active Directory B2C (Azure AD B2C) tenant that you manage as a Global administrator.
+  - Ability to write code in JavaScript/Node at beginner level.
+  - Must have [Node.js](https://nodejs.org/en/) and [Visual Studio Code](https://code.visualstudio.com/) installed on your computer.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - beginner
+  - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
+  - solution-architect
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-- azure
-- azure-active-directory
 - azure-active-directory-b2c
+- msal-node
 units:
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.introduction
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.authenticate-users-by-using-azure-ad-b2c
