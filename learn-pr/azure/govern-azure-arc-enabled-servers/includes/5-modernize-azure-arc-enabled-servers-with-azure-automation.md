@@ -8,7 +8,7 @@ Change Tracking and Inventory combines functions to allow you to track Azure Arc
 
 You can use Update Management in Azure Automation to manage operating system updates for your Azure Arc-enabled servers. You can quickly assess the status of available updates and manage the process of installing required updates for your machines reporting to Update Management. The following diagram illustrates how Update Management assesses and applies security updates to connected Azure VMs and Arc-enabled servers.
 
-![Update Management workflow diagram](../media/update-management-flow.png)
+![Diagram showing the Update Management workflow.](../media/update-management-flow.png)
 
 ## Overview of Process Automation
 

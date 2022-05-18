@@ -22,8 +22,8 @@ These Azure services are automatically onboarded for you when you use Automanage
 - **Machine Insights Monitoring.** Azure Monitor for machines monitors the performance and health of your virtual machines, including their running processes and dependencies on other resources.
 - **Update Management.** You can use Update Management in Azure Automation to manage operating system updates for your machines. You can quickly assess the status of available updates on all agent machines and manage the process of installing required updates for servers.
 - **Change Tracking & Inventory.** Change Tracking and Inventory combines change tracking and inventory functions to allow you to track virtual machine and server infrastructure changes. The service supports change tracking across services, daemons software, registry, and files in your environment to help you diagnose unwanted changes and raise alerts. Inventory support allows you to query in-guest resources for visibility into installed applications and other configuration items.
-- **Azure Guest Configuration. **Guest Configuration policy is used to monitor the configuration and report on the compliance of the machine. The guest configuration service will install the Azure Compute security baseline in audit-only mode. 
-- **Azure Automation Account. **Azure Automation supports management throughout the lifecycle of your infrastructure and applications.
+- **Azure Guest Configuration.** Guest Configuration policy is used to monitor the configuration and report on the compliance of the machine. The guest configuration service will install the Azure Compute security baseline in audit-only mode. 
+- **Azure Automation Account.** Azure Automation supports management throughout the lifecycle of your infrastructure and applications.
 - **Log Analytics Workspace.** Azure Monitor stores log data in a Log Analytics workspace, which is an Azure resource and a container where data is collected, aggregated, and serves as an administrative boundary.
 
 ## Onboarding Arc-enabled servers to Azure Automanage
