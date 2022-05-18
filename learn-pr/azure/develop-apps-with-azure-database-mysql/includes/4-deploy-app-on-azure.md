@@ -40,9 +40,7 @@ To deploy an application on AKS that integrates Azure Database for MySQL - Flexi
 
 1. **Create an Azure container registry** and push the application to the registry as a Docker image.
 1. **Create an AKS cluster** and attach the Azure container registry account to the cluster.
-1. **Deploy the application to the cluster** and then test the deployment.
-
-    To deploy the application to the AKS cluster, you first need to create a Kubernetes manifest file that defines a desired state for the cluster, such as what container images to run.
+1. **Deploy the application to the cluster** and then test the deployment. To deploy the application to the AKS cluster, you first need to create a Kubernetes manifest file that defines a desired state for the cluster, such as what container images to run.
 
     In the Kubernetes manifest YAML file, key things to define include:
 

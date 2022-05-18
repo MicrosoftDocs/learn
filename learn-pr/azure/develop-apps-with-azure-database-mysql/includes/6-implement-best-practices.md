@@ -7,6 +7,8 @@ In this unit, we'll explore some best practices to apply when developing applica
 - Implementing retry logic to manage transient faults.
 - Choosing the right compute and storage size for database.
 
+Below, you can see where each of these best practices comes into play during the application development process with Azure Database for MySQL - Flexible Server.
+
 :::image type="content" source="../media/best-practices.png" alt-text="Diagram showing six key best practices to be followed for application development.":::
 
 > [!NOTE]
