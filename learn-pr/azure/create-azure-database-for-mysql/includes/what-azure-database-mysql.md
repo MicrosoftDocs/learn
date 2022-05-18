@@ -19,7 +19,7 @@ In addition, Flexible Server supports secure connectivity from the internet by h
 
 - Burstable (for development or hobby projects)
 - General Purpose (for medium and large production workloads)
-- Memory Optimized (for high-performance databases workloads)
+- Business Critical (for high-performance databases workloads)
 
 The specific tier name is derived from the series name of the Azure VM Stock Keeping Unit (SKU) that’s hosting the managed MySQL Server deployment. Within each tier, you can choose among several different VM sizes, each offering a different number of vCores (ranging from 1 to 64) and the amount of memory (ranging from 4 gigabytes (GB) to about 500 GB).
 
