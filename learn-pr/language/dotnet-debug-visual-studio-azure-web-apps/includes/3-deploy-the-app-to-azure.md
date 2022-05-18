@@ -1,7 +1,7 @@
 In order to work through a remote debugging exercise with App Service you will first need to deploy an application to Azure. For this scenario you can either deploy your own app or clone the sample GitHub project below.
 
 ```Bash
-git clone "https://github.com/alexwolfmsft/remote-debugging.git"
+git clone "https://github.com/Azure-Samples/github-browser"
 ```
 
 The sample Razor Pages project allows users to search for GitHub repositories by organization using a simple form. The results are displayed in a table after they press submit. Most of the relevant code for the app can be found in the `OnGet` method inside the `Index.cshtml.cs` file. The code pulls the GitHub API URL from the `appsettings.development.json` file when the app runs and makes an HTTP request using the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
