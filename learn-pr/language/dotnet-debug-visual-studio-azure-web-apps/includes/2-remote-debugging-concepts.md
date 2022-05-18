@@ -16,7 +16,7 @@ In the exercises ahead you will focus on the first scenario in this list to debu
 
 Remote debugging encompasses a variety of Visual Studio tools and features. When remote debugging applications deployed on other servers or virtual machines, you may need to [install the Visual Studio Remote Tools](https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging).
 
-However, in the exercise ahead, you'll debug an app hosted Azure App Service. In this scenario, many of these types of configurations are handled for us. You can simply use the **Attach to process** feature of Visual Studio to connect directly to an App Service process. Assuming the correct debugging symbols and source code are loaded, you can then debug the application as though it were running locally on your computer.
+However, in the exercise ahead, you'll debug an app hosted Azure App Service. In this scenario, many of these types of configurations are handled automatically. You can simply use the **Attach to process** feature of Visual Studio to connect directly to an App Service process. Assuming the correct debugging symbols and source code are loaded, you can then debug the application as though it were running locally on your computer.
 
 ## An overview of symbol files
 
