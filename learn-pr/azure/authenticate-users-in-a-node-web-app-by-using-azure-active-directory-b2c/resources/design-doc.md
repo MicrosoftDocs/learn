@@ -14,7 +14,7 @@ intermediate
 ## Product(s)
 
 - azure-active-directory-b2c
-- msal-node*
+- msal-node
 
 ## Prerequisites
 
