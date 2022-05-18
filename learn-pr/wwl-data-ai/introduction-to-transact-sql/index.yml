@@ -38,6 +38,9 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- data-analytics
+- database
 units:
 - learn.wwl.intro-to-transact-sql.introduction
 - learn.wwl.intro-to-transact-sql.work-with-schemas

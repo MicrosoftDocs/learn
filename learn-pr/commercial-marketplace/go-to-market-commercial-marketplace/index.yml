@@ -33,6 +33,8 @@ products:
 - m365
 - office-365
 - power-platform
+subjects:
+- marketing-sales
 units:
 - learn.go-to-market-commercial-marketplace.1-introduction
 - learn.go-to-market-commercial-marketplace.2-get-organization-ready

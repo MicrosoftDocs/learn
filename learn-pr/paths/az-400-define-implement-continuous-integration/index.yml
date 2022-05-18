@@ -26,6 +26,8 @@ products:
 - azure-devops
 - azure-virtual-machines
 - azure-automation
+subjects:
+- data-engineering
 modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.run-quality-tests-build-pipeline

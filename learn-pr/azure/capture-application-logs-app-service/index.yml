@@ -29,6 +29,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- cloud-computing
 units:
 - learn.azure.capture-application-logs-app-service.1-introduction
 - learn.azure.capture-application-logs-app-service.2-enable-and-configure-app-service-application-logging

@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.translate-text-with-translation-service.introduction
 - learn.wwl.translate-text-with-translation-service.get-started-azure

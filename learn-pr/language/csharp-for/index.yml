@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-for.introduction
 - learn.languages.csharp-for.exercise-for

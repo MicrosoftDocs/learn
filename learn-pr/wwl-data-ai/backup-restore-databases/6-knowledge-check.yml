@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/10/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How does backup to URL in SQL Server or Azure SQL Server Database Managed Instance store the backup file?"
+  - content: "How does backup to URL in SQL Server or Azure Managed Instance store the backup file?"
     choices:
     - content: "As a URL"
       isCorrect: false
@@ -27,26 +27,26 @@ quiz:
       explanation: "Correct. Backup to URL requires an Azure storage account and uses the Azure blob storage service."
     - content: "As a pointer"
       isCorrect: false
-      explanation: "Incorrect. A pointer is not used in the backup process."
-  - content: "Which platforms can an Azure Database for PostgreSQL database backup be restored to?"
+      explanation: "Incorrect. A pointer isn't used in the backup process."
+  - content: "What is the default redundancy option for Azure SQL databases?"
     choices:
-    - content: "PostgreSQL only"
+    - content: "Locally-redundant backup storage (LRS)"
       isCorrect: false
-      explanation: "Incorrect. Similar to all other Azure PaaS offerings, these backups can only be used by Azure Database for PostgreSQL and not a standard installation of PostgreSQL."
-    - content: "Azure Database for PostgreSQL only"
+      explanation: "Incorrect. Locally-redundant backup storage isn't the default redundancy option for Azure SQL databases."
+    - content: "Zone-redundant backup storage (ZRS)"
+      isCorrect: false
+      explanation: "Incorrect. Zone-redundant backup storage isn't the default redundancy option for Azure SQL databases."
+    - content: "Geo-redundant backup storage"
       isCorrect: true
-      explanation: "Correct. Similar to all other Azure PaaS offerings, these backups can only be used by Azure Database for PostgreSQL and not a standard installation of PostgreSQL."
-    - content: "PostgreSQL or Azure Database for PostgreSQL"
-      isCorrect: false
-      explanation: "Incorrect. Similar to all other Azure PaaS offerings, these backups can only be used by Azure Database for PostgreSQL and not a standard installation of PostgreSQL."
-  - content: "What is the cost for backup storage for both Azure Database for MySQL and Azure Database for PostgreSQL?"
+      explanation: "Correct. Geo-redundant backup storage is the default redundancy option for Azure SQL databases."
+  - content: "Which option should you use to geographic failover instances of SQL Managed Instance?"
     choices:
-    - content: "Free up to the size of the database"
+    - content: "Auto-failover groups"
       isCorrect: true
-      explanation: "Correct. One nice thing about the backups is that there is no cost; if a server is provisioned with 100 GB of storage, you get the equivalent amount of backup space included with what you are already paying."
-    - content: "Double the cost of the service"
+      explanation: "Correct. For geographic failover of instances of SQL Managed Instance, use auto-failover groups."
+    - content: "Active geo-replication"
       isCorrect: false
-      explanation: "Incorrect. One nice thing about the backups is that there is no cost; if a server is provisioned with 100 GB of storage, you get the equivalent amount of backup space included with what you are already paying."
-    - content: "Half the cost of the service"
+      explanation: "Incorrect. Active geo-replication isn't supported by Azure SQL Managed Instance."
+    - content: "Failover Cluster Instance"
       isCorrect: false
-      explanation: "Incorrect. One nice thing about the backups is that there is no cost; if a server is provisioned with 100 GB of storage, you get the equivalent amount of backup space included with what you are already paying."
+      explanation: "Incorrect. Failover Cluster Instance isn't supported by Azure SQL Managed Instance."

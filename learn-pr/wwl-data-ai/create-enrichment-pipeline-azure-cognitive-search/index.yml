@@ -29,6 +29,9 @@ products:
 - azure-functions
 - vs-code
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
+- classification-analysis
 units:
 - learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.introduction
 - learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-custom-skill

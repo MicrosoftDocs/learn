@@ -71,6 +71,10 @@ products:
 - azure-app-service
 - azure-sql-database
 
+subjects:
+- cloud-computing
+- migration
+- storage
 units:
 - learn.azure.ms-learn-live.1-introduction
 - learn.azure.ms-learn-live.2-session-1-prep

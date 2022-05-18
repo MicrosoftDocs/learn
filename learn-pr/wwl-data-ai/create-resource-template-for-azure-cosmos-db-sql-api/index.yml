@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- development-tools
 units:
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.introduction
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.understand-azure-resource-manager-resources

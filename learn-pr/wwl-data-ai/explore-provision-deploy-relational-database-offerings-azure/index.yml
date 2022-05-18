@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- database
 units:
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.introduction
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-azure-sql

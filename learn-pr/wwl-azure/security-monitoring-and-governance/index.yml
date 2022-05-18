@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-security
 units:
 - learn.wwl.security-monitoring-and-governance.introduction
 - learn.wwl.security-monitoring-and-governance.implement-pipeline-security

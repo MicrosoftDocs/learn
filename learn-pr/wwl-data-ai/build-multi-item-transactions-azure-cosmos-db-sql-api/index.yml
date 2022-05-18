@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-engineering
 units:
 - learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.introduction
 - learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.understand-transactions

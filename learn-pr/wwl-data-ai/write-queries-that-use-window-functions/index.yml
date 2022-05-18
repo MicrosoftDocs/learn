@@ -34,6 +34,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- development-tools
 units:
 - learn.wwl.write-queries-that-use-window-functions.introduction
 - learn.wwl.write-queries-that-use-window-functions.describe-window-functions

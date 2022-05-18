@@ -30,6 +30,9 @@ roles:
 products:
 - azure-sql-database
 - sql-server
+subjects:
+- cloud-computing
+- data-management
 units:
 - learn.wwl.evaluate-performance-improvements.introduction
 - learn.wwl.evaluate-performance-improvements.describe-wait-statistics

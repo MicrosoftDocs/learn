@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 modules:
 - learn.wwl.explore-azure-pipelines
 - learn.wwl.manage-azure-pipeline-agents-pools

@@ -31,6 +31,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
+- cloud-computing
 units:
 - learn.oxford.intro-iot-funtions-iot.introduction
 - learn.oxford.intro-iot-funtions-iot.what-azure-functions-iot

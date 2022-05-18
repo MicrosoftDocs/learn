@@ -38,7 +38,9 @@ prerequisites: |
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
   - Completion of the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the tutorial about creating a Unity HoloLens app that uses Azure Spatial Anchors
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-get-started-with-azure-spatial-anchors

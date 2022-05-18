@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.wwl.define-indexes-azure-cosmos-db-sql-api.introduction
 - learn.wwl.define-indexes-azure-cosmos-db-sql-api.understand-indexes

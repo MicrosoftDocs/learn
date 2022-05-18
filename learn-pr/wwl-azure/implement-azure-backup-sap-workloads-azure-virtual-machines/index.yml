@@ -22,6 +22,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.introduction
 - learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.options-for

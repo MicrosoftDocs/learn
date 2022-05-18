@@ -33,6 +33,8 @@ roles:
   - developer
 products:
   - vs-code
+subjects:
+- data-engineering
 units:
   - learn.student-evangelism.unix-shell-wrangle-data.0-introduction
   - learn.student-evangelism.unix-shell-wrangle-data.1-file-inspection

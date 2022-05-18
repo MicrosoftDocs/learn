@@ -24,6 +24,8 @@ roles:
 - security-engineer
 products:
 - azure
+subjects:
+- security
 units:
 - learn.azure-security.create-security-baselines.introduction
 - learn.azure-security.create-security-baselines.platform-security-baselines

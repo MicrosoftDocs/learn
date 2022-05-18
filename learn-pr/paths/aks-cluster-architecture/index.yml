@@ -30,6 +30,8 @@ roles:
 - auditor
 products:
 - azure
+subjects:
+- architecture
 modules:
 - learn.choose-best-networking-plugin-for-aks
 - learn.aks-network-design-azure-container-network-interface

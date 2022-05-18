@@ -6,5 +6,5 @@ In this module, you’ll learn about the eDiscovery capabilities in Microsoft 36
 
 After completing this module, you'll be able to:
 
-- Describe the eDiscovery solutions in Microsoft 365.
-- Describe the auditing solutions in Microsoft 365.
+- Describe the eDiscovery solutions in Microsoft Purview.
+- Describe the auditing solutions in Microsoft Purview.
