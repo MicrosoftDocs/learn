@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: While most Azure Policy scenarios for Azure Arc-enabled servers are free, which of the following Azure Policy scenarios will trigger a charge?
     choices:
-    - content: Assigning a non-Guest Configuration Azure Policy to an Arc-enabled servers
+    - content: Assigning a non-Guest Configuration Azure Policy to an Arc-enabled server
       isCorrect: false
       explanation: Incorrect, non-Guest Configuration Azure Policies are free.
     - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled Stack HCI Node
