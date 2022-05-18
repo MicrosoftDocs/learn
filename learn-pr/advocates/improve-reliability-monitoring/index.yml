@@ -31,6 +31,9 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- networking
+- it-management-monitoring
 units:
 - learn.improve-reliability-monitoring.1-introduction
 - learn.improve-reliability-monitoring.2-operational-awareness

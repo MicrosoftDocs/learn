@@ -22,7 +22,7 @@ Synchronize a file system to Azure Blob or vice versa. Ideal for incremental cop
 AzCopy has a simple self-documented syntax. Here's how you can get a list of available commands:
 
 ```
-AzCopy /?
+azcopy --help
 
 ```
 

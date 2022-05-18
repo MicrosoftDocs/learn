@@ -1,0 +1,14 @@
+name: 'publish-template-spec-1'
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'template-spec-1/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-template-spec.yml
+    with:
+      path: 'template-spec-1/main.bicep'

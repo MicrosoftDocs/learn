@@ -29,6 +29,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-custom-vision
+subjects:
+- classification-analysis
 units:
 - learn.wwl.classify-images.introduction
 - learn.wwl.classify-images.provision-azure-resources-for-custom-vision

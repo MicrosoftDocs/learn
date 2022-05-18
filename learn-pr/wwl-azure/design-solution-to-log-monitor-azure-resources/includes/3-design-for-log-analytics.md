@@ -1,7 +1,9 @@
 Azure Monitor stores [log](/azure/azure-monitor/logs/data-platform-logs) data in a Log Analytics workspace, which is an Azure resource and a container where data is collected, aggregated, and serves as an administrative boundary. While you can deploy one or more workspaces in your Azure subscription, there are several considerations you should understand in order to ensure your initial deployment is following our guidelines to provide you with a cost effective, manageable, and scalable deployment meeting your organization's needs.
 
-:::image type="content" source="../media/azure-monitor-workspace.png" alt-text=" Log Analytics acts as a central hub for monitoring data.":::
-
+| **Availability, Latency, and Cost**| **Immutable Storage** |
+| - | - |
+| Premium blob storage | Legal hold policies |
+| Hot, cool, and archive access tiers | Time-based retention policies |
 
 Data in a workspace is organized into tables, each of which stores different kinds of data and has its own unique set of properties based on the resource generating the data. Most data sources will write to their own tables in a Log Analytics workspace.
 
@@ -19,13 +21,13 @@ Below is an overview of the design considerations, access control overview, and 
 
 ## Important considerations for an access control strategy
 
-Identifying the number of workspaces, you need is influenced by one or more of the following requirements:
+Identifying the number of workspaces, your need is influenced by one or more of the following requirements:
 
 - You are a global company, and you need log data stored in specific regions for data sovereignty or compliance reasons.
 
 - You are using Azure and you want to avoid outbound data transfer charges by having a workspace in the same region as the Azure resources it manages.
 
-- You manage multiple departments or business groups, and you want each to see their own data, but not data from others. Also, there is no business requirement for a consolidated cross department or business group view.
+- You manage multiple departments or business groups. Each group should access their data but not the data of others. Also, there is no business requirement for a consolidated cross department or business group view.
 
 IT organizations today are modeled following either a centralized, decentralized, or an in-between hybrid of both structures. As a result, the following workspace deployment models have been commonly used to map to one of these organizational structures:
 
@@ -35,7 +37,7 @@ IT organizations today are modeled following either a centralized, decentralized
 
 - **Hybrid**: Security audit compliance requirements further complicate this scenario because many organizations implement both deployment models in parallel. This commonly results in a complex, expensive, and hard-to-maintain configuration with gaps in logs coverage.
 
-Centralized logging can help you uncover hidden issues that might be difficult to track down. With Log Analytics, you can query and aggregate data across logs. This cross-source correlation can help you identify issues or performance problems that might not be evident when you look at logs or metrics individually. The following illustration shows how Log Analytics acts as a central hub for monitoring data. Log Analytics receives monitoring data from your Azure resources and makes it available to consumers for analysis or visualization.
+Centralized logging can help you uncover hidden issues that might be difficult to track down. With Log Analytics, you can query and aggregate data across logs. This cross-source correlation can help you identify issues or performance problems. Log Analytics receives monitoring data from your Azure resources and makes it available to consumers for analysis or visualization.
 
 When using the Log Analytics agents to collect data, you need to understand the following in order to plan your agent deployment:
 
@@ -69,9 +71,9 @@ The data a user has access to is determined by a combination of factors that are
 
 The access mode refers to how a user accesses a Log Analytics workspace and defines the scope of data they can access.
 
-Users have two options for accessing the data:
+Users have two options for accessing the data: 
 
-- **Workspace-context**: You can view all logs in the workspace you have permission to. Queries in this mode are scoped to all data in all tables in the workspace. This is the access mode used when logs are accessed with the workspace as the scope, such as when you select **Logs** from the **Azure Monitor** menu in the Azure portal.
+- **Workspace-context**: You can review all logs in the workspace you have permission to. Queries in this mode are scoped to all data in all tables in the workspace. This is the access mode used when logs are accessed with the workspace as the scope, such as when you select **Logs** from the **Azure Monitor** menu in the Azure portal.
 
 - **Resource-context**: When you access the workspace for a particular resource, resource group, or subscription, such as when you select **Logs** from a resource menu in the Azure portal, you can view logs for only resources in all tables that you have access to. Queries in this mode are scoped to only data associated with that resource. This mode also enables granular Azure RBAC.
 
@@ -80,20 +82,20 @@ The following table summarizes and compares the access modes:
 | **Issue**| **Workspace-context**| **Resource-context** |
 | - | - | - |
 | Who is each model intended for?| Central administration. Administrators who need to configure data collection and users who need access to a wide variety of resources. Also currently required for users who need to access logs for resources outside of Azure.| Application teams. Administrators of Azure resources being monitored. |
-| What does a user require to view logs?| Permissions to the workspace. See **Workspace permissions** in [Manage access using workspace permissions](/azure/azure-monitor/logs/manage-access).| Read access to the resource. See **Resource permissions** in [Manage access using Azure permissions](/azure/azure-monitor/logs/manage-access). Permissions can be inherited (such as from the containing resource group) or directly assigned to the resource. Permission to the logs for the resource will be automatically assigned. |
-| What is the scope of permissions?| Workspace. Users with access to the workspace can query all logs in the workspace from tables that they have permissions to. See [Table access control](/azure/azure-monitor/logs/manage-access)| Azure resource. User can query logs for specific resources, resource groups, or subscription they have access to from any workspace but can't query logs for other resources. |
-| How can user access logs?| Start logs from Azure Monitor and Log Analytics workspaces. View the logs from Azure Monitor [Workbooks](/azure/azure-monitor/visualizations). | Same as workspace-context, and you start logs from the Azure resource. |
+| What does a user require to review logs?| Permissions to the workspace. Explore **Workspace permissions** in [Manage access using workspace permissions](/azure/azure-monitor/logs/manage-access).| Read access to the resource. Explore **Resource permissions** in [Manage access using Azure permissions](/azure/azure-monitor/logs/manage-access). Permissions can be inherited (such as from the containing resource group) or directly assigned to the resource. Permission to the logs for the resource will be automatically assigned. |
+| What is the scope of permissions?| Workspace. Users with access to the workspace can query all logs in the workspace from tables that they have permissions to. Explore [Table access control](/azure/azure-monitor/logs/manage-access)| Azure resource. User can query logs for specific resources, resource groups, or subscription they have access to from any workspace but can't query logs for other resources. |
+| How can user access logs?| Start logs from Azure Monitor and Log Analytics workspaces. Review the logs from Azure Monitor [Workbooks](/azure/azure-monitor/visualizations). | Same as workspace-context, and you start logs from the Azure resource. |
 
 
 ## Scale and ingestion volume rate limit
 
 Azure Monitor is a high scale data service that serves thousands of customers sending petabytes of data each month at a growing pace. Workspaces are not limited in their storage space and can grow to petabytes of data. There is no need to split workspaces due to scale.
 
-To protect and isolate Azure Monitor customers and its backend infrastructure, there is a default ingestion rate limit that is designed to protect from spikes and floods situations. The rate limit default is about **6 GB/minute** and is designed to enable normal ingestion. For more details on ingestion volume limit measurement, see [Azure Monitor service limits](/azure/azure-monitor/service-limits).
+To protect and isolate Azure Monitor customers and its backend infrastructure, there is a default ingestion rate limit that is designed to protect from spikes and floods situations. The rate limit default is about **6 GB/minute** and is designed to enable normal ingestion. For more details on ingestion volume limit measurement, explore [Azure Monitor service limits](/azure/azure-monitor/service-limits).
 
 Customers that ingest less than 4TB/day will usually not meet these limits. Customers that ingest higher volumes or that have spikes as part of their normal operations shall consider moving to [dedicated clusters](/azure/azure-monitor/logs/logs-dedicated-clusters) where the ingestion rate limit could be raised.
 
-When the ingestion rate limit is activated or get to 80% of the threshold, an event is added to the Operation table in your workspace. It is recommended to monitor it and create an alert. See more details in [data ingestion volume rate](/azure/azure-monitor/service-limits).
+When the ingestion rate limit is activated or get to 80% of the threshold, an event is added to the Operation table in your workspace. It is recommended to monitor it and create an alert. explore more details in [data ingestion volume rate](/azure/azure-monitor/service-limits).
 
 Recommendations
 

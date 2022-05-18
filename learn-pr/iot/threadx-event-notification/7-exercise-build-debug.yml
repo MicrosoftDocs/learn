@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-event-notification.exercise-build-debug
+title: Exercise - Build and debug ProjectProducerConsumer
+metadata:
+  title: Exercise - Build and debug ProjectProducerConsumer
+  description: Hands-on exercise to build and debug ProjectProducerConsumer.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-build-debug.md)]

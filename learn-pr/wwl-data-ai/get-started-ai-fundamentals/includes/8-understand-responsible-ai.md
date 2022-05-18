@@ -46,7 +46,7 @@ For more details about considerations for transparency, watch the following vide
 
 ## Accountability
 
-People should be accountable for AI systems. Designers and developers of AI-based solution should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
+People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
 
 For more details about considerations for accountability, watch the following video.
 

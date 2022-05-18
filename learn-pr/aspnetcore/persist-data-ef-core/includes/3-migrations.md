@@ -52,7 +52,7 @@ Before you start, you need to add the required packages.
     dotnet add package Microsoft.EntityFrameworkCore.Sqlite
     ```
 
-    This command adds the NuGet package that contains the EF Core Sqlite database provider and all its dependencies, including the common EF Core services.
+    This command adds the NuGet package that contains the EF Core SQLite database provider and all its dependencies, including the common EF Core services.
 
 1. From the terminal, run the following command:
 
@@ -115,11 +115,11 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
     The preceding code:
 
     - Registers `PizzaContext` with ASP.NET Core's dependency injection system.
-    - Specifies that `PizzaContext` will use the Sqlite database provider.
-    - Defines a Sqlite connection string that points to a local file, *ContosoPizza.db*.
+    - Specifies that `PizzaContext` will use the SQLite database provider.
+    - Defines a SQLite connection string that points to a local file, *ContosoPizza.db*.
 
     > [!NOTE]
-    > For Sqlite, which uses local database files, it's probably okay to hardcode the connection string like this. However, for network databases like PostgreSQL or SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
+    > For SQLite, which uses local database files, it's probably okay to hardcode the connection string like this. However, for network databases like PostgreSQL or SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
 1. Also in *Program.cs*, replace `// Additional using declarations` with the following code.
 
@@ -164,7 +164,7 @@ You've done all you need to create a migration for creating your initial databas
 EF Core created a database for your app. Let's take a look inside the database.
 
 1. In Visual Studio Code, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to open the **Extensions** tab.
-1. In the search box, search for `vscode-sqlite`. A community-provided Sqlite extension is displayed.
+1. In the search box, search for `vscode-sqlite`. A community-provided SQLite extension is displayed.
 1. Install the extension, if needed.
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to return to the **Explorer** tab.
 1. Right-click on the *ContosoPizza.db* file. Select **Open Database**.
@@ -173,27 +173,26 @@ EF Core created a database for your app. Let's take a look inside the database.
 
     A **SQLITE EXPLORER** pane opens on the **Explorer** tab.
 
-    :::image type="content" source="../media/sqlite-pane.png" alt-text="The Sqlite pane (collapsed)":::
+    :::image type="content" source="../media/sqlite-pane.png" alt-text="The SQLite pane (collapsed)":::
 
 1. Expand the **SQLITE EXPLORER** pane and all its child nodes. Right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
-    :::image type="content" source="../media/sqlite-explorer.png" alt-text="The Sqlite Explorer pane":::
+    :::image type="content" source="../media/sqlite-explorer.png" alt-text="The SQLite Explorer pane":::
 
     - Tables have been created corresponding to each entity.
-    - Table names were pluralized based on the class names.
+    - Table names were taken from the names of the `DbSet` properties on the `PizzaContext`.
     - Properties named `Id` were inferred to be auto-incrementing primary key fields.
-    - A `PizzaTopping` join table was created to represent the _many-to-many_ relationship between pizzas and toppings.
     - EF Core's primary key and foreign key constraint naming conventions are `PK_<Primary key property>` and `FK_<Dependent entity>_<Principal entity>_<Foreign key property>`, respectively. The `<Dependent entity>` and `<Principal entity>` placeholders correspond to the entity class names.
 
     > [!NOTE]
-    > As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuration* philosophy. EF Core conventions shorten development time by inferring the developer's intent. For example, a property named `Id` or `<entity name>Id` is inferred to be the generated table's primary key. If you choose not to adopt the naming convention, the property must be annotated with the `[Key]` attribute.
+    > As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuration* philosophy. EF Core conventions shorten development time by inferring the developer's intent. For example, a property named `Id` or `<entity name>Id` is inferred to be the generated table's primary key. If you choose not to adopt the naming convention, the property must be annotated with the `[Key]` attribute or configured as a key in the `OnModelCreating` method of the `DbContext`.
 
 ## Change the model and update the database schema
 
-Your manager at Contoso Pizza has given you some new requirements that force you to change your entity models. In the following steps, you're going to modify the models using data annotations.
+Your manager at Contoso Pizza has given you some new requirements that force you to change your entity models. In the following steps, you're going to modify the models using mapping attributes, sometimes also called "data annotations".
 
 > [!TIP]
-> Instead of data annotations, you can use [pre-convention model configuration](/ef/core/what-is-new/ef-core-6.0/whatsnew#pre-convention-model-configuration) to define rules that apply to multiple properties.
+> Instead of mapping attributes, you can use [the `ModelBuilder` fluent API](/ef/core/modeling/#use-fluent-api-to-configure-a-model) to configure how your models are mapped to the database.
 
 1. In *Models\Pizza.cs*, make the following changes:
 
@@ -220,7 +219,7 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     }
     ```
 
-1. In *Models\Sauce.cs*, make the following changes:
+2. In *Models\Sauce.cs*, make the following changes:
 
     1. Add a `using` directive for `System.ComponentModel.DataAnnotations`.
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
@@ -244,12 +243,13 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     }
     ```
 
-1. In *Models\Topping.cs*, make the following changes:
+3. In *Models\Topping.cs*, make the following changes:
 
     1. Add `using` directives for `System.ComponentModel.DataAnnotations` and `System.Text.Json.Serialization`.
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
     1. Add a `decimal` property named `Calories` immediately after the `Name` property.
+    1. Add a `Pizzas` property of type  `ICollection<Pizza>?` to make `Pizza`-`Topping` a many-to-many relationship.
     1. Add a `[JsonIgnore]` attribute to the `Pizzas` property.
 
         > [!NOTE]
@@ -276,9 +276,9 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     }
     ```
 
-1. Save all your changes and build.
+4. Save all your changes and build.
 
-1. Run the following command to generate a migration for creating the database tables:
+5. Run the following command to generate a migration for creating the database tables:
 
     ```dotnetcli
     dotnet ef migrations add ModelRevisions --context PizzaContext
@@ -286,30 +286,33 @@ Your manager at Contoso Pizza has given you some new requirements that force you
 
     A migration named *:::no-loc text="ModelRevisions":::* is created.
 
-1. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
+        > [!NOTE]
+        > The message "An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy." is displayed. This is because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. This is OK because we don't yet have any data in our database. However, in general it is a good idea to check the generated migration when this warning is displayed to make sure no data is deleted or truncated by the migration.
+6. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
 
     ```dotnetcli
     dotnet ef database update --context PizzaContext
     ```
 
-1. In the title bar of the **SQLITE EXPLORER** pane, select the **Refresh Databases** button.
+7. In the title bar of the **SQLITE EXPLORER** pane, select the **Refresh Databases** button.
 
-    :::image type="content" source="../media/refresh-database.png" alt-text="The Refresh Database button in the Sqlite Explorer tab.":::
+    :::image type="content" source="../media/refresh-database.png" alt-text="The Refresh Database button in the SQLite Explorer tab.":::
 
-1. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
+8. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
     > [!IMPORTANT]
-    > The Sqlite extension will re-use open **Sqlite** tabs.
+    > The SQLite extension will re-use open **SQLite** tabs.
 
+    - A `PizzaTopping` join table was created to represent the many-to-many relationship between pizzas and toppings.
     - New fields have been added to the `Toppings` and `Sauces`.
-        - `Calories` is defined as a `TEXT` column because Sqlite doesn't have a matching `decimal` type.
-        - Similarly, `IsVegan` is defined as an `INTEGER` column. Sqlite doesn't define a `bool` type.
+        - `Calories` is defined as a `TEXT` column because SQLite doesn't have a matching `decimal` type.
+        - Similarly, `IsVegan` is defined as an `INTEGER` column. SQLite doesn't define a `bool` type.
         - In both cases, EF Core manages the translation.
-    - The `Name` column in each table has been marked `NOT NULL`, but Sqlite doesn't have a `MaxLength` constraint.
+    - The `Name` column in each table has been marked `NOT NULL`, but SQLite doesn't have a `MaxLength` constraint.
 
     > [!TIP]
-    > EF Core database providers handle mapping model schema to a particular database's features. While Sqlite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
+    > EF Core database providers handle mapping model schema to a particular database's features. While SQLite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
 
-1. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
+9. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
 
 You've used migrations to define and update a database schema. In the next unit, you'll finish the methods in `PizzaService` that manipulate data.

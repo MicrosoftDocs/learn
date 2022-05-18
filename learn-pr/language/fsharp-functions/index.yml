@@ -3,7 +3,7 @@ uid: learn.fsharp-functions
 metadata:
   title: Create and architect with functions in F#
   description: Learn what functions are and how to define and call them. In addition, use function patterns to architect with functions.
-  ms.date: 07/26/2021
+  ms.date: 01/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

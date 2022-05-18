@@ -18,7 +18,7 @@
 
 - The Kubernetes cluster is managed by Azure and is free. You manage the agent nodes in the cluster and only pay for the VMs on which your nodes run.
 
-- You can either create your cluster in the Azure portal or use the Azure CLI. When you create the cluster, you can use Resource Manager templates to automate cluster creation. With these templates, you specify features such as advanced networking, Azure Active Directory (AD) integration, and monitoring. 
+- When you create the cluster, you can use Resource Manager templates to automate cluster creation. With these templates, you specify features such as advanced networking, Azure Active Directory (AD) integration, and monitoring. 
 
 - With AKS, we get the benefits of open-source Kubernetes. You don’t have the complexity or operational overhead running your own custom Kubernetes cluster.
 
@@ -26,7 +26,7 @@
 
 Here, we'll discuss how you can decide whether Azure Kubernetes Service (AKS) is the right choice for you.
 
-You'll either approach your decision from a green field or a lift-and-shift project point of view. A green fields project will allow you to evaluate AKS based on default features. A lift-and-shift project will force you to look at which features are best suited to support your migration. Here are a few factors to consider. 
+You'll either approach your decision from a green field or a lift-and-shift project point of view. A green fields project will allow you to evaluate AKS based on default features. A lift-and-shift project will require you to determine which features are best suited to support your migration. Here are a few factors to consider. 
 
 | Factor| Things to consider |
 | - | - |

@@ -8,9 +8,9 @@ The following image highlights the elements you'll configure in this exercise. Y
 
 ## Deploy a virtual machine and an application gateway
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription in which you want to create resources.
 
-1. Run the following command in the Cloud Shell to create a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. Run the following command in the Cloud Shell to create a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region in which you'd like to deploy your resources.
 
     ```azurecli
     az group create --resource-group <resource group name> --location <location>

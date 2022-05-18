@@ -11,7 +11,7 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
 
-1. In the Azure portal, select **&#65291; Create a resource** from the upper left-hand corner and search for *Storage account*. Then in the resulting **Storage account** page, select **Create**.
+1. If you haven't already done so, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) at `https://portal.azure.com`. Then on the Azure portal home page, select **&#65291; Create a resource** from the upper left-hand corner and search for *Storage account*. Then in the resulting **Storage account** page, select **Create**.
 1. Enter the following values on the **Create a storage account** page:
     - **Subscription**: If you're using a sandbox, select *Concierge Subscription*. Otherwise, select your Azure subscription.
     - **Resource group**:  If you're using a sandbox, select the existing resource group (which will have a name like *learn-xxxx...*). Otherwise, create a new resource group with a name of your choice.
@@ -29,7 +29,10 @@ The first step in using Azure Storage is to provision an Azure Storage account i
 
 Now that you have an Azure Storage account, you can create a container for blob data.
 
-1. Download the [product1.json](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/storage/product1.json?azure-portal=true) JSON file and save it on your local computer (you can save it in any folder - you'll upload it to blob storage later).
+1. Download the [product1.json](https://aka.ms/product1.json?azure-portal=true) JSON file from `https://aka.ms/product1.json` and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
+
+    *If the JSON file is displayed in your browser, save the page as **product1.json**.*
+
 1. In the Azure portal page for your storage container, on the left side, in the **Data storage** section, select **Containers**.
 1. In the **Containers** page, select **&#65291; Container** and add a new container named **data** with a public access level of **Private (no anonymous access)**.
 1. When the **data** container has been created, verify that it's listed in the **Containers** page.
@@ -55,7 +58,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
 
-1. Download the [product2.json](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/storage/product2.json?azure-portal=true) JSON file and save it on your local computer in the same folder where you downloaded **product1.json** previously - you'll upload it to blob storage later).
+1. Download the [product2.json](https://aka.ms/product2.json?azure-portal=true) JSON file from `https://aka.ms/product2.json` and save it on your computer in the same folder where you downloaded **product1.json** previously - you'll upload it to blob storage later).
 1. In the Azure portal page for your storage container, on the left side, scroll down to the **Settings** section, and select **Data Lake Gen2 upgrade**.
 1. In the ****Data Lake Gen2 upgrade**** page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.
 1. When the upgrade is complete, in the pane on the left side, in the top section, select **Storage browser (preview)** and navigate back to the root of your **data** blob container, which still contains the **product_data** folder.

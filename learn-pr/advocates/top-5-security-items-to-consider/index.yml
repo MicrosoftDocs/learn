@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-key-vault
+subjects:
+- security
 units:
 - learn.top-5-security-items-to-consider.1-introduction
 - learn.top-5-security-items-to-consider.2-azure-security-center

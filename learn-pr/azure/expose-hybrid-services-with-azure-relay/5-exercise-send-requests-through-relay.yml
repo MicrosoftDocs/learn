@@ -14,10 +14,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-send-requests-through-relay.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: Microsoft.Relay/namespaces
-  hint: "Please make sure that you have deployed and configured a relay."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: Microsoft.Relay/namespaces
+#   hint: "Please make sure that you have deployed and configured a relay."

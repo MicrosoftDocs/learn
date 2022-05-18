@@ -96,11 +96,11 @@ Data engineers can incorporate Azure Stream Analytics into data analytics archit
 
 Data analysts can use Azure Data Explorer to query and analyze data that includes a timestamp attribute, such as is typically found in log files and *Internet-of-things* (IoT) telemetry data.
 
-## Azure Purview
+## Microsoft Purview
 
-![Azure Purview logo](../media/azure-purview.png) Azure Purview provides a solution for enterprise-wide data governance and discoverability. You can use Azure Purview to create a map of your data and track data lineage across multiple data sources and systems, enabling you to find trustworthy data for analysis and reporting.
+![Azure Purview logo](../media/azure-purview.png) Microsoft Purview provides a solution for enterprise-wide data governance and discoverability. You can use Microsoft Purview to create a map of your data and track data lineage across multiple data sources and systems, enabling you to find trustworthy data for analysis and reporting.
 
-Data engineers can use Azure Purview to enforce data governance across the enterprise and ensure the integrity of data used to support analytical workloads.
+Data engineers can use Microsoft Purview to enforce data governance across the enterprise and ensure the integrity of data used to support analytical workloads.
 
 ## Microsoft Power BI
 

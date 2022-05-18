@@ -3,8 +3,8 @@ uid: learn.blazor-build-reusable-components.nuget-package
 title: Create a NuGet package
 metadata:
   unitType: exercise
-  title: create-a-nuget-package
-  description: "In this exercise, you'll package the Razor class library we created in unit 3.  You'll start by completing the fields for the NuGet package nupkg file. We'll end with using the new package in a simple Blazor application"
+  title: Create a NuGet package
+  description: "In this exercise, you'll package the Razor class library that you created earlier."
   ms.date: 10/13/2021
   author: csharpfritz
   ms.author: jefritz

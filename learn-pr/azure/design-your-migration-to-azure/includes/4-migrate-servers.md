@@ -3,7 +3,8 @@ After using Azure Migrate for your assessment, you can decide which of your serv
 In this unit, you'll review Azure Migrate and how to use it to migrate specific workloads to Azure.
 
 ## Virtual machine replication
-Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment. You can begin your replication by clicking Replicate in the tool window. Azure Migrate replicates up to 100 VMs simultaneously. If you need to do more, it’s recommended to create multiple batches. Times for replication will vary based on number and size of virtual machines along with connection speeds between your data center and Azure. 
+
+Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment. You can begin your replication by clicking Replicate in the tool window. Azure Migrate replicates up to 100 VMs simultaneously. If you need to do more, it’s recommended that you create multiple batches. Times for replication will vary based on the number and size of virtual machines along with connection speeds between your data center and Azure.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Azure Migrate Servers page in Azure Admin center.](../media/4-vm-replication.png)
@@ -15,7 +16,7 @@ The process runs a prerequisite check, prepares for the test, creates a new test
 
 ## Migrating the virtual machines into production
 
-Once you’re ready for the production migration, select **Migrate** from the replicating machines window. That process will prompt you to shut down the virtual machine to avoid any data loss and perform a final replication. It is recommended to do this during off peak business hours, because the virtual machine will be down for a few minutes.
+Once you’re ready for the production migration, select **Migrate** from the replicating machines window. That process will prompt you to shut down the virtual machine to avoid any data loss and perform a final replication. It's recommended to do this during off peak business hours, because the virtual machine will be down for a few minutes.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Server migration replicating machines page in Azure Admin center.](../media/4-vm-machines.png)
@@ -26,6 +27,7 @@ Now it will run through the production migration process and you can check the s
 After the migration has taken place, review the security settings of the virtual machine after the migration. Restrict network access for unused services by using network security groups. Deploy Azure Disk Encryption to secure the disks from data theft and unauthorized access.
 
 Consider improving the resilience of the migrated machines by:
+
 - Adding a backup schedule that uses Azure Backup.
 - Replicating the machines to a secondary region using Azure Site Recovery.
 

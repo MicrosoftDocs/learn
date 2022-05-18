@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- cloud-computing
+- iot
 units:
 - learn.wwl.configure-business-integration.introduction
 - learn.wwl.configure-business-integration.introduction-to-rules

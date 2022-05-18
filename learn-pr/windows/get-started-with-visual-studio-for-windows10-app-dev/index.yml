@@ -27,6 +27,8 @@ roles:
 products:
 - windows
 - vs-ide
+subjects:
+- custom-app-development
 units:
 - learn-windows.introducing-visual-studio.1-visual-studio-features
 - learn-windows.introducing-visual-studio.2-debugging

@@ -6,8 +6,8 @@ metadata:
   title: What is Azure NetApp Files?
   description: Learn the basic features and concepts of Azure NetApp Files.
   ms.date: 06/18/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: mengruts
+  ms.author: mengtsai
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

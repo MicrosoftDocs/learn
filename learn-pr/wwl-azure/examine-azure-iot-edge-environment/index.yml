@@ -29,6 +29,8 @@ products:
 - azure-iot-edge
 - azure-iot-hub
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.examine-azure-iot-edge-environment.introduction
 - learn.wwl.examine-azure-iot-edge-environment.examine-features-capabilities-of

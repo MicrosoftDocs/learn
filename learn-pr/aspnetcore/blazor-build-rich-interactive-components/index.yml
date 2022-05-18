@@ -32,6 +32,8 @@ products:
   - blazor
   - dotnet-core
   - aspnet
+subjects:
+- cloud-computing
 units:
 - learn.build-interactive-components-blazor-web-apps.introduction
 - learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps

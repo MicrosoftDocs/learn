@@ -4,10 +4,10 @@ title: Collect input
 metadata:
   title: Collect input
   description: In this unit, you'll learn about various ways to work with input like command-line arguments and user input.
-  ms.date: 12/02/2021
+  ms.date: 04/01/2022
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 2

@@ -1,4 +1,4 @@
-The threat modeling framework helps you generate a list of threats and ways to reduce risk, but it doesn't prioritize them for you.
+The threat-modeling framework helps you generate a list of threats and ways to reduce risk, but it doesn't prioritize them for you.
 
 It also doesn't recommend layered security controls based on their type and function, which makes it harder to decide which ones to implement.
 
@@ -13,7 +13,7 @@ Examples include:
 
 ## When to prioritize
 
-Assign priority to each issue according to their risk factors. Also, select security controls that work in conjunction with others to help provide a layered security protection mechanism for your system.
+Assign a priority to each issue according to their risk factors. Also, select security controls that work in conjunction with others to help provide a layered security-protection mechanism for your system.
 
 This process can take some time. It will also require assistance from your colleagues and security team. Save enough time to work with them.
 
@@ -21,7 +21,7 @@ This process can take some time. It will also require assistance from your colle
 
 In this module, you'll be able to:
 
-- Assign priority to issues
+- Assign priorities to issues
 - Categorize security controls
 - Understand each security control type and function
 

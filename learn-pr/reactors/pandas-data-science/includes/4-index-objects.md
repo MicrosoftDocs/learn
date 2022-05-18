@@ -1,8 +1,8 @@
-A huge part of data science is manipulating data in order to analyze it. (One rule of thumb is that 80 percent of any data science project is cleaning and organizing the data for the project.) So it makes sense to learn the tools that pandas provides for handling data in `Series`, and especially `DataFrames`. Because both of those data structures are ordered, let's first start by taking a closer look at what gives them their structure: the `Index`.
+A huge part of data science is manipulating data in order to analyze it. (One rule of thumb is that 80 percent of any data-science project is cleaning and organizing the data for the project.) So it makes sense to learn the tools that pandas provides for handling data in `Series`, and especially `DataFrames`. Because both of those data structures are ordered, let's first start by taking a closer look at what gives them their structure: the `Index`.
 
 ## Index objects in pandas
 
-Both `Series` and `DataFrames` in pandas have explicit indices that enable you to reference and modify data in them. These indices are actually objects themselves. The `Index` object can be thought of as either an immutable array or a fixed-size set.
+Both `Series` and `DataFrames` in pandas have explicit indices that let you reference and modify data in them. These indices are actually objects themselves. The `Index` object can be thought of as either an immutable array or a fixed-size set.
 
 It's worth the time to get to know the properties of the `Index` object. Let's return to an example from earlier in the section to examine these properties.
 
@@ -120,11 +120,11 @@ You can also access these operations via object methods, such as `ind_odd.inters
 
 | Method | Description |
 |---|---|
-| `append` | Concatenate with additional `Index` objects, producing a new `Index`. |
-| `diff` | Compute set difference as an `Index`. |
-| `drop` | Compute new `Index` by deleting passed values. |
-| `insert` | Compute new `Index` by inserting element at index `i`. |
-| `is_monotonic` | Returns `True` if each element is greater than or equal to the previous element. |
-| `is_unique` | Returns `True` if the `Index` has no duplicate values. |
-| `isin` | Compute a Boolean array that indicates whether each value is contained in the passed collection. |
-| `unique` | Compute the array of unique values in order of appearance. |
+| `append` | Concatenate with additional `Index` objects, producing a new `Index` |
+| `diff` | Compute set difference as an `Index` |
+| `drop` | Compute new `Index` by deleting passed values |
+| `insert` | Compute new `Index` by inserting element at index `i` |
+| `is_monotonic` | Returns `True` if each element is greater than or equal to the previous element |
+| `is_unique` | Returns `True` if the `Index` has no duplicate values |
+| `isin` | Compute a Boolean array that indicates whether each value is contained in the passed collection |
+| `unique` | Compute the array of unique values in order of appearance |

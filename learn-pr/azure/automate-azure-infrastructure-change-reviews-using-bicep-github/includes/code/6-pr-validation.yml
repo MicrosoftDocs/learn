@@ -1,0 +1,41 @@
+name: pr-validation
+concurrency: ${{ github.event.number }}
+
+on: pull_request
+
+env:
+  resourceGroupName: pr_${{ github.event.number }}
+  resourceGroupLocation: westus3
+
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
+
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: azure/login@v1
+        name: Sign in to Azure
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}    
+      - uses: Azure/cli@v1
+        name: Create resource group
+        with: 
+          inlineScript: |
+            az group create \
+              --name ${{ env.resourceGroupName }} \
+              --location ${{ env.resourceGroupLocation }}
+      - uses: azure/arm-deploy@v1
+        id: deploy
+        name: Deploy Bicep file
+        with:
+          failOnStdErr: false
+          deploymentName: ${{ github.run_number }}
+          resourceGroupName: ${{ env.resourceGroupName }}
+          template: ./deploy/main.bicep
+          parameters: >
+            environmentType=Test
+      - name: Show website hostname
+        run: |
+          echo "Access the website at this address: https://${{ steps.deploy.outputs.appServiceAppHostName }}"

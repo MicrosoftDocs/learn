@@ -28,7 +28,7 @@ Now that you have reviewed this module, you should be able to:
 
 - [Create an Azure service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
 
-- [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az_ad_sp_create_for_rbac)
+- [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az-ad-sp-create-for-rbac)
 
 ### Ansible
 

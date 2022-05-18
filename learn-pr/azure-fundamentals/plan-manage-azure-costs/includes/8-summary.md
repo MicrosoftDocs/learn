@@ -7,13 +7,13 @@ From there, the team used the Pricing calculator to get a more detailed estimate
 The team also created a checklist of cost-saving measures that it can use to help keep down costs. This list includes:
 
 > [!div class="checklist"]
-> * Perform cost analysis before you deploy.
-> * Use Azure Advisor to monitor your usage.
-> * Use spending limits to prevent accidental spending.
-> * Use Azure Reservations to prepay.
-> * Choose low-cost locations and regions.
-> * Research available cost-saving offers.
-> * Apply tags to identify cost owners.
+> * Perform cost analysis before you deploy
+> * Use Azure Advisor to monitor your usage
+> * Use spending limits to prevent accidental spending
+> * Use Azure Reservations to prepay
+> * Choose low-cost locations and regions
+> * Research available cost-saving offers
+> * Apply tags to identify cost owners
 
 With these measures in place, the Tailwind Traders team is ready to take the next steps toward cloud migration.
 

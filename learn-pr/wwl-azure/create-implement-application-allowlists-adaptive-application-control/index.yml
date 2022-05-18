@@ -37,6 +37,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- storage
+- identity-access
 units:
 - learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.introduction
 - learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.describe-controls

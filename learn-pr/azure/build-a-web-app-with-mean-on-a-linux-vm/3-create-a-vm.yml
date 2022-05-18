@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-a-vm.md)]
-#tasks:
-# Verify the VM named "MeanStack" exists.
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.Compute/virtualMachines"
-#  hint: "Run the `az vm create` command as shown to create your virtual machine."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+#  Verify the VM named "MeanStack" exists.
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines"
+#   hint: "Run the `az vm create` command as shown to create your virtual machine."

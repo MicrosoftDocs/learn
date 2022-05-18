@@ -7,7 +7,7 @@ Examples include:
 - Claiming to not have deleted database records
 
 > [!NOTE]
-> System logs are a goldmine for an attacker, not just to manipulate but also gather data about users, environment and weaknesses.
+> System logs are a goldmine for an attacker, not just to manipulate, but also gather data about users, environment, and weaknesses.
 
 ## Elements and interactions at risk from repudiation attacks
 
@@ -16,7 +16,7 @@ Examples include:
 |Name|Shape|Definition|
 |----|-----|----------|
 |Process|![Process.](../media/process50.png)|Activity that modifies or redirects input to an output|
-|External entity|![External Entity.](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
+|External entity|![External Entity.](../media/external-entity50.png)|Process, data store, or even full-fledged applications outside your control|
 |Data store|![Data Store.](../media/data-store50.png)|Permanent or temporary data storage|
 
 ### Interaction

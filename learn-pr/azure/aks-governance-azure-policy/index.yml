@@ -33,6 +33,8 @@ roles:
 products:
 - azure-kubernetes-service
 - azure-policy
+subjects:
+- information-protection-governance
 units:
 - learn.aks-governance-azure-policy.introduction
 - learn.aks-governance-azure-policy.azure-policy-integration-with-aks

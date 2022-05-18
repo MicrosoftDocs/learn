@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-open-source-software-azure.examine-license-implications-ratings
+title: Examine license implications and ratings
+metadata:
+  title: Examine license implications and ratings
+  description: "Examine license implications and ratings"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-examine-license-implications-ratings.md)]

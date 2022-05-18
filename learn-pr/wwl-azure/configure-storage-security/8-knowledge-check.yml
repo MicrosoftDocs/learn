@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/04/2022
+  ms.date: 05/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Create an SAS for each user and delete the SAS to prevent access."
       isCorrect: false
-      explanation: "That answer is incorrect. Creating a SAS for each user would involve a great amount of administrative overhead. Is there another alternative?"
+      explanation: "Incorrect. Creating a SAS for each user would involve a great amount of administrative overhead. Is there another alternative?"
     - content: "Implement stored access policies for each container to enable revocation of access or change of duration."
       isCorrect: true
-      explanation: "That answer is correct. SAS will  change access based on permissions or duration by replacing the policy with a new one or deleting it altogether to revoke access."
+      explanation: "Correct. SAS will  change access based on permissions or duration by replacing the policy with a new one or deleting it altogether to revoke access."
     - content: "Periodically regenerate the account key to control access to the files."
       isCorrect: false
-      explanation: "That answer is incorrect. Regenerating keys would prevent all users from accessing all files at the same time."
+      explanation: "Incorrect. Regenerating keys would prevent all users from accessing all files at the same time."
   - content: "When configuring network access to an Azure Storage Account, what is the default network rule?"
     choices:
     - content: "To allow all connections from all networks."
       isCorrect: true
-      explanation: "That answer is correct. The default network rule is to allow all connections from all networks."
+      explanation: "Correct. The default network rule is to allow all connections from all networks."
     - content: "To allow all connection from a private IP address range."
       isCorrect: false
-      explanation: "That answer is incorrect. By default the IP address is not considered."
+      explanation: "Incorrect. By default the IP address isn't considered."
     - content: "To deny all connections from all networks."
       isCorrect: false
-      explanation: "That answer is incorrect. All connections are not, by default, denied."
+      explanation: "Incorrect. All connections aren't, by default, denied."
   - content: "The company is planning a delegation model for the Azure storage. Apps in the production environment must have unrestricted access to storage resources. Which of the following is the best course of action?"
     choices:
     - content: "Use shared access signatures for the production apps."
       isCorrect: false
-      explanation: "That answer is incorrect. Shared access signatures are not the best solution for the production app."
+      explanation: "Incorrect. Shared access signatures aren't the best solution for the production app."
     - content: "Use access keys for the production apps."
       isCorrect: true
-      explanation: "That answer is correct. Access keys provide unrestricted access to the storage resources, which is the requirement for production apps in this scenario."
+      explanation: "Correct. Access keys provide unrestricted access to the storage resources, which is the requirement for production apps in this scenario."
     - content: "Use Stored Access Policies for the production apps."
       isCorrect: false
-      explanation: "That answer is incorrect. Stored Access policies are not the best solution for the production app."
+      explanation: "Incorrect. Stored Access policies aren't the best solution for the production app."

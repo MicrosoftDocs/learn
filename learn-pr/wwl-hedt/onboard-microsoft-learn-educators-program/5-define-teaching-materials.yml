@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.onboard-microsoft-learn-educators-program.overview-teaching-materials
+title: Define teaching materials
+metadata:
+  title: '5-Define teaching materials '
+  description: "Define teaching materials"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-define-teaching-materials.md)]

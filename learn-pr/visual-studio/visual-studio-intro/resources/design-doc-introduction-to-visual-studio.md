@@ -124,7 +124,7 @@ Identify the subtasks of *Introduction to Visual Studio*
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    - Explained what Visual Studio is and how it is different from VSCode
+    - Explained what Visual Studio is and how it is different from VS Code
     - Learned how the editor and debugger can help you code and improve code quality
     - Customized and extended the IDE to make it a great personalized experience
     - Connected the IDE to our friends and co-workers for collaborative coding with live share and published to the cloud

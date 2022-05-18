@@ -25,6 +25,8 @@ roles:
 - security-operations-analyst
 products:
 - azure
+subjects:
+- threat-protection
 units:
 - learn.wwl.what-is-azure-defender.introduction
 - learn.wwl.what-is-azure-defender.explain-azure-defender

@@ -11,9 +11,9 @@ There are two different Azure AD External Identities: B2B and B2C.
 
 ## B2B collaboration
 
-B2B collaboration allows you to share your organization’s applications and services with guest users from other organizations, while maintaining control over your own data. B2B collaboration uses an invitation and redemption process, allowing external users to access your resources with their credentials. Developers can customize the invitation and redemption process using Azure AD business-to-business APIs.
+B2B collaboration allows you to share your organization’s applications and services with guest users from other organizations, while maintaining control over your own data. B2B collaboration uses an invitation and redemption process. You can also enable self-service sign-up user flows to let external users sign up for apps or resources themselves. Once the external user has redeemed their invitation or completed sign-up, they're represented in the same directory as employees but with a user type of guest.  As a guest, they can now access your resources with their credentials.
 
-With B2B collaboration, external users are managed in the same directory as employees but are typically annotated as guest users. Guest users can be managed in the same way as employees, added to the same groups, and so on.  With B2B, SSO to all Azure AD-connected apps is supported.
+Guest users can be managed in the same way as employees, added to the same groups, and so on.  With B2B, SSO to all Azure AD-connected apps are supported.
 
 ## B2C access management
 

@@ -4,12 +4,13 @@ title: Implement Conditional Access policy controls and assignments
 metadata:
   title: Implement Conditional Access policy controls and assignments
   description: "Implement Conditional Access policy controls and assignments"
-  ms.date: 08/13/2021
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/5-implement-conditional-access-policies-controls-assignments.md)]

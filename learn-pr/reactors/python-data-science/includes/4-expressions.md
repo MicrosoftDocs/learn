@@ -37,7 +37,7 @@ The output is:
 True
 ```
 
-This entire expression is `True` because `1 < 2` is true and `2 < 3` is true.
+This entire expression is `True` because `1 < 2` is true, and `2 < 3` is true.
 
 You can also use built-in functions in Python for comparing data. For example:
 
@@ -103,7 +103,7 @@ False
 
 ### Try it yourself
 
-Copy the following code example into a Python cell in Visual Studio Code. Change different parts of the expression and predict what the result will be. Then, run the code cell to see if you got it right!
+Copy the following code example into a Python cell in Visual Studio Code. Change different parts of the expression and predict what the result will be, then run the code cell to see if you got it right!
 
 ```python
 i = 7

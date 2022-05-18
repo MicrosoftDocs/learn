@@ -1,6 +1,6 @@
 We have our Windows VM deployed and running, but it's not configured to do any work.
 
-Recall our scenario is a video processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service and watches the folder and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
+Recall our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service and watches the folder and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
 
 There are a few things we would need to configure to support this scenario:
 
@@ -24,7 +24,7 @@ You can enter this information into the RDP client, or download a pre-configured
 
 ### Download the RDP file
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **home** page, under **All Resources**, if you need to open it. The **Overview** pane has a lot of information about the VM.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM.
 
     - You can see whether the VM is running.
     - Stop or restart it.
@@ -35,7 +35,7 @@ You can enter this information into the RDP client, or download a pre-configured
 
 1. Note the **IP address** and **Port number** settings, then select **Download RDP File**, and save it to your computer.
 
-1. Before we connect, let's adjust a few settings. On Windows, find the file using Explorer, right-click, and select **Edit**. On macOS you will need to open the file first with the RDP client and then right-click on the item in the displayed list and select **Edit**.
+1. Before we connect, let's adjust a few settings. On Windows, find the file using Explorer, right-click, and select **Edit** (you might need to select **Show more options** to find the **Edit** option). On macOS, you'll need to open the file first with the RDP client, then right-click on the item in the displayed list and select **Edit**.
 
 1. You can adjust a variety of settings to control the experience in connecting to the Azure VM. The settings you will want to examine are:
 
@@ -72,15 +72,15 @@ We have two approaches we can use to install software. First, this VM is connect
 
 1. Open File Explorer. In the sidebar, select **This PC**. You should see several drives:
 
-    - Windows (C:) drive representing the OS.
-    - Temporary Storage (D:) drive.
-    - Your local C: drive (it will have a different name than the following screenshot).
+    - Windows (C:) drive representing the OS
+    - Temporary Storage (D:) drive
+    - Your local C: drive (it will have a different name than the following screenshot)
 
     ![Screenshot showing the local drive shared with the Azure VM.](../media/6-drive-list.png)
 
 With access to your local drive, you can copy the files for the custom software onto the VM and install the software. We won't actually do that because it's just a simulated scenario, but you can imagine how it would work.
 
-The more interesting thing to observe in the list of drives is what is _missing_. Notice that our **Data** drive is not present. Azure added a VHD but didn't initialize it.
+The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive is not present. Azure added a VHD but didn't initialize it.
 
 ## Initialize data disks
 

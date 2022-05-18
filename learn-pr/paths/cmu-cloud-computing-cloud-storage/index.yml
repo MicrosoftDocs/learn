@@ -41,6 +41,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- storage
+- cloud-computing
 modules:
 - learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview
 - learn.cmu-cloud-computing.cloud-storage.case-study-distributed-file-systems

@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- data-management
 units:
 - learn.languages.csharp-literals-variables.introduction
 - learn.languages.csharp-literals-variables.exercise-literal-values

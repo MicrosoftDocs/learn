@@ -8,6 +8,10 @@ metadata:
   ms.author: aapowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - aapowell-09242020
 title: Publish the API with GitHub Actions
 durationInMinutes: 3
 content: |

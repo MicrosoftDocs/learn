@@ -1,0 +1,8 @@
+<li>
+    <p>Scan the QR Code or enter this key <kbd>@Model.SharedKey</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
+    <div id="qrCode">
+        <img alt="embedded QR code" src="data:image/png;base64,@Model.QrCodeAsBase64" />
+    </div>
+    <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
+</li>
+        

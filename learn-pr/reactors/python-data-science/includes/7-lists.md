@@ -1,4 +1,4 @@
-Python supports a number of _compound data types_, which group other values together. The most versatile is the [list](https://docs.python.org/3.5/library/stdtypes.html#typesseq-list?azure-portal=true), which can be written as a sequence of comma-separated values, or _items_ between square brackets. A list might contain items of different types, but usually the items all have the same type:
+Python supports a number of *compound data types*, which group other values together. The most versatile is the [list](https://docs.python.org/3.5/library/stdtypes.html#typesseq-list?azure-portal=true), which can be written as a sequence of comma-separated values, or *items* between square brackets. A list might contain items of different types, but usually the items all have the same type:
 
 ```python
 squares = [1, 4, 9, 16, 25]
@@ -11,7 +11,7 @@ The output is:
 [1, 4, 9, 16, 25]
 ```
 
-Like strings and all other built-in [sequence types](https://docs.python.org/3.5/glossary.html#term-sequence?azure-portal=true)), lists can be indexed and sliced:
+Like strings and all other built-in [sequence types](https://docs.python.org/3.5/glossary.html#term-sequence?azure-portal=true), lists can be indexed and sliced:
 
 ```python
 squares[0]  # Indexing returns the item.
@@ -59,7 +59,7 @@ The output is:
 [1, 4, 9, 16, 25]
 ```
 
-Lists also support concatenation by using the plus ("+") operator:
+Lists also support concatenation using the plus ("+") operator:
 
 ```python
 squares + [36, 49, 64, 81, 100]
@@ -110,7 +110,7 @@ The output is:
 ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 ```
 
-Then, you can replace some values by using a slice:
+Then, you can replace some values using a slice:
 
 ```python
 # Replace some values.
@@ -165,7 +165,7 @@ The output is:
 4
 ```
 
-You can _nest_ lists. That is, you can create a list that contains other lists. For example:
+You can *nest* lists. That is, you can create a list that contains other lists. For example:
 
 ```python
 a = ['a', 'b', 'c']

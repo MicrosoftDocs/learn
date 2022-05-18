@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cache-redis
 - azure-app-service
+subjects:
+- cache
 units:
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis.introduction
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis.setup

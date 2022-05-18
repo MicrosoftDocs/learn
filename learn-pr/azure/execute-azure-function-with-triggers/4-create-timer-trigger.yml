@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/4-create-timer-trigger.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-      kind: functionapp
-  hint: "Use the portal to create your function app and timer-triggered function using the instructions above."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+#       kind: functionapp
+#   hint: "Use the portal to create your function app and timer-triggered function using the instructions above."

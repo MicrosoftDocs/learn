@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-arc-enabled-servers.smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor
+title: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
+metadata:
+  title: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
+  description: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
+  ms.date: 04/01/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor.md)]

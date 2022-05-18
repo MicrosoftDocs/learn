@@ -1,4 +1,4 @@
-Threat modeling is a great technique to help you find issues early in the development lifecycle. Choosing the right focused approach helps you tailor the threat modeling exercise. You'll find more actionable threats and ways to solve them.
+Threat modeling is a great technique to help you find issues early in the development lifecycle. Choosing the right focused approach helps you tailor the threat-modeling exercise. You'll find more actionable threats and ways to solve them.
 
 ## System-focused approach
 
@@ -19,8 +19,7 @@ This approach allows you to focus on critical assets holding highly confidential
 
 ## Asset-focused approach
 
-Evaluates risk for each asset. This approach identifies critical assets based on things like classified data handling and focuses mostly on protecting those assets.
+You'll evaluate risk for each asset. This approach identifies critical assets based on things like classified data handling, and focuses mostly on protecting those assets.
 
 > [!NOTE]
 > Microsoft engineers focus on protecting the system. Penetration testing teams focus on both protecting the system and understanding the attacker.
-

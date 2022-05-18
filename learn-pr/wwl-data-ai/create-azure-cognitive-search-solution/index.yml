@@ -26,6 +26,8 @@ roles:
 - solution-architect
 products:
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.create-azure-cognitive-search-solution.introduction
 - learn.wwl.create-azure-cognitive-search-solution.get-ready-to-develop

@@ -14,6 +14,8 @@ Before you use the Blockchain development kit, make sure you have installed:
   > Most computers have Python preinstalled.
 - **Node.js**: To confirm Node.js is installed, open your terminal and type `node`. If Node.js is installed, the terminal returns your computer's version of Node.js. You can also confirm that the node package manager (NPM) is installed by typing `npm` in the terminal.
 - **Git**: To confirm Git is installed, open your terminal and type `git`. If Git is installed, the terminal returns a list of available git commands.
+- **Truffle Suite**: The extension provides a link to install the Truffle Suite of developer tools (required while the extension is in public preview).
+- **Ganache CLI**: The extension provides a link to install the Ganache CLI (required while the extension is in public preview).
 
 If you don't have this software installed, or if you don't have the minimum versions, the extension provides tips for how to install the tools.
 

@@ -52,6 +52,10 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
+- machine-learning
+- architecture
 units:
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.1-overview

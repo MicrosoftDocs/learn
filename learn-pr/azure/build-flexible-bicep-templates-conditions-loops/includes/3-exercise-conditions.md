@@ -78,10 +78,10 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ### Deploy the template to Azure by using the Azure CLI
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westeurope`.
+In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus`.
 
 ```azurecli
-az deployment group create --template-file main.bicep --parameters location=westeurope
+az deployment group create --template-file main.bicep --parameters location=westus
 ```
 
 ::: zone-end
@@ -95,7 +95,7 @@ az deployment group create --template-file main.bicep --parameters location=west
 In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep -location westeurope
+New-AzResourceGroupDeployment -TemplateFile main.bicep -location westus
 ```
 
 ::: zone-end
@@ -161,7 +161,7 @@ Now you'll explicitly set the parameter value to `Production`. You expect that, 
 In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code:
 
 ```azurecli
-az deployment group create --template-file main.bicep --parameters environmentName=Production location=westeurope
+az deployment group create --template-file main.bicep --parameters environmentName=Production location=westus
 ```
 
 ::: zone-end
@@ -171,7 +171,7 @@ az deployment group create --template-file main.bicep --parameters environmentNa
 In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command:
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production -location westeurope
+New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production -location westus
 ```
 
 ::: zone-end

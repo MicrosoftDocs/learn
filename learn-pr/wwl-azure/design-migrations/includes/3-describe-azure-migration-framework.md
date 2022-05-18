@@ -70,7 +70,7 @@ During the optimization stage, you should:
 
 - Analyze the costs of the workload migration
 
-- Look for ways to reduce costs
+- Identify ways to reduce costs
 
 - Seek to improve workload performance
 

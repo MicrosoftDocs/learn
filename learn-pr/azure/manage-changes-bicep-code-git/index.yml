@@ -31,6 +31,9 @@ languages:
   - bicep
 products:
 - azure
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.manage-changes-bicep-code-git.introduction
 - learn.azure.manage-changes-bicep-code-git.understand-git

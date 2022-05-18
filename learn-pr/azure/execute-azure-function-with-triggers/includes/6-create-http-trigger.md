@@ -6,7 +6,7 @@ Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 ::: zone pivot="csharp"
 
-1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**.
 
@@ -18,7 +18,7 @@ Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Template details** section, in **New Function** field, enter a name for the function. Scroll down and in the **Authorization level** dropdown list, select *Anonymous*, and then select **Create**. Your newly-created Function pane appears.
+1. In the **Template details** section, in **New Function** field, enter a name for the function. Scroll down and in the **Authorization level** dropdown list, select *Anonymous*, and then select **Create**. Your newly created Function pane appears.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**, and review the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. Check to see if *name* has a value. If it does, we return a greeting. Otherwise, it continues to ask for a value.
 
@@ -26,7 +26,7 @@ Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 ::: zone pivot="powershell"
 
-1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 

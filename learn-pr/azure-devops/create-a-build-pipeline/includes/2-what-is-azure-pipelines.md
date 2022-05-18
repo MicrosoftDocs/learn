@@ -94,15 +94,15 @@ Instead of managing each agent individually, you can organize agents into agent 
 
 A project agent pool provides access to an organization agent pool. When you create a build or release pipeline, you specify which pool it uses. Pools are scoped to your project, so you can only use them across build and release pipelines within a project.
 
-To share an agent pool with multiple projects, you will create a project agent pool in each project pointing to an organization agent pool. While multiple pools across projects can use the same organization agent pool, multiple pools within a project cannot use the same organization agent pool. Also, each project agent pool can use only one organization agent pool.
+To share an agent pool with multiple projects, you'll create a project agent pool in each project pointing to an organization agent pool. While multiple pools across projects can use the same organization agent pool, multiple pools within a project can't use the same organization agent pool. Also, each project agent pool can use only one organization agent pool.
 
 ### Agent queues
 
-If you are a project team member, you can create and manage agent build queues from the agent pools tab in project settings.
+If you're a project team member, you can create and manage agent build queues from the agent pools tab in project settings.
 
 ### Service endpoints for integration with third-party systems
 
-Service endpoints are a way for Azure DevOps to connect to external systems or services. They are bundles of securely stored properties that include but are not limited to:
+Service endpoints are a way for Azure DevOps to connect to external systems or services. They're bundles of securely stored properties that include but aren't limited to:
 
 * Service name
 * Description
@@ -114,7 +114,7 @@ Extensions are then able to access the service endpoint to get the stored detail
 
 ### Concurrent pipelines
 
-You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines. One parallel job in Azure Pipeline lets you run a single build or release job at any given time. This rule is true whether you run the job on Microsoft-hosted or self-hosted agents. Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization.
+You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines. One parallel job in Azure Pipeline lets you run a single build or release job at any given time. This rule is true whether you run the job on Microsoft-hosted or self-hosted agents. Parallel jobs are purchased at the organization level, and they're shared by all projects in an organization.
 
 #### Microsoft-hosted CI/CD
 

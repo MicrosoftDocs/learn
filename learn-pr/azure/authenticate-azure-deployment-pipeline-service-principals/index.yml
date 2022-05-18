@@ -46,6 +46,9 @@ products:
   - azure-devops
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
   - learn.azure.authenticate-azure-deployment-pipeline-service-principals.introduction
   - learn.azure.authenticate-azure-deployment-pipeline-service-principals.understand-service-principals

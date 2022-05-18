@@ -30,6 +30,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.introduction
 - learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.introduction-to-dataframes

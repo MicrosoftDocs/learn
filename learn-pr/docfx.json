@@ -449,6 +449,19 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "wwl-hedt",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },  
             {
                 "src": "wwl-iot",
@@ -1094,6 +1107,12 @@
                     "zh-tw"
                 ],
                 "wwl-azure/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-hedt/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",

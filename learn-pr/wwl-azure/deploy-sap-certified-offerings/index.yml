@@ -23,6 +23,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- compliance
 units:
 - learn.wwl.deploy-sap-certified-offerings.introduction
 - learn.wwl.deploy-sap-certified-offerings.prerequisites-sap-workloads-public-cloud

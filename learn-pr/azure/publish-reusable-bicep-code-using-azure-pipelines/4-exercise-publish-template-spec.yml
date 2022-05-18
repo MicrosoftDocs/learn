@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.exercise-publish-template-spec
+title: Exercise - Publish a template spec
+metadata:
+  unitType: exercise
+  title: Exercise - Publish a template spec
+  description: Create an Azure Pipelines pipeline to publish a template spec to Azure.
+  ms.date: 03/29/2022
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-exercise-publish-template-spec.md)]
