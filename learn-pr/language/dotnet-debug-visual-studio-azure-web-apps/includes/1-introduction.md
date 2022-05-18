@@ -2,7 +2,7 @@ Visual Studio provides powerful tools to help you debug and diagnose issues in y
 
 ## Troubleshooting issues in production
 
-Suppose you work for a team that recently built and deployed an application to Azure App Service. However, although the app runs finally locally, you have started to notice issues while it is running in production in Azure. You're looking for additional tools and assistance to quickly track down the problems that are impacting real users. It is sometimes faster to troubleshoot these issues directly in production environments, rather than spending time trying to recreate the issue locally or in development systems.
+Suppose you work for a team that recently built and deployed an application to Azure App Service. However, although the app runs finally locally, you've started to notice issues while it's running in production in Azure. You're looking for more tools and assistance to quickly track down the problems that are impacting real users. It's sometimes faster to troubleshoot these issues directly in production environments, rather than spending time trying to recreate the issue locally or in development systems.
 
 ## What will we be doing?
 
