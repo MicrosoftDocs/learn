@@ -72,7 +72,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 15. On the Azure Database for MySQL Flexible server page, in the navigation menu, in the **Settings** section, select **Databases**, and then select **Add**.
 
-16. In the **Create database** pane, in the **Name** text box, enter **testdb**, accept the default character stet and collation values, and then select **Save**.
+16. In the **Create database** pane, in the **Name** text box, enter **testdb**, accept the default character set and collation values, and then select **Save**.
 
 > [!NOTE]
 > Retain the resources you deployed in Task 1 because you’ll use them Task 2 also.
