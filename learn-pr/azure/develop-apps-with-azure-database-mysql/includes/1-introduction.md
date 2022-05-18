@@ -1,6 +1,6 @@
 **Azure Database for MySQL - Flexible Server** is a fully managed MySQL database as a service offering on Azure, that can handle mission-critical workloads with resiliency, predictable performance and dynamic scalability. It is a developer-friendly service that helps enhance productivity by reducing the overhead associated with managing a server running MySQL, while still providing control and customization options to fine-tune the server for performance. It is used in several popular use cases including internet-scale web and mobile applications, e-commerce applications, and gaming.
 
-Flexible Server provides you the flexibility to develop applications using your favorite tools, languages, and frameworks, deploy faster by integrating with Azure services like App Services or AKS, and automate CI/CD tasks using GitHub or Azure DevOps.
+Flexible Server provides you with the flexibility to develop applications using your favorite tools, languages, and frameworks. You can also deploy faster by integrating with Azure services like App Services or AKS, and automate CI/CD tasks using GitHub or Azure DevOps.
 
 ## Example scenario
 

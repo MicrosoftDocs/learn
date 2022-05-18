@@ -45,12 +45,12 @@ For the remainder of this exercise, we'll use the Azure Cloud Shell on the right
 
 To create a new MySQL production database *sampledb* to use with the PHP application, run the following command:
 
-    ```azurecli
-    az mysql flexible-server db create \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
-    --server-name <your-mysql-server-name> \
-    --database-name sampledb
-    ```
+```azurecli
+az mysql flexible-server db create \
+--resource-group <rgn>[Sandbox resource group name]</rgn> \
+--server-name <your-mysql-server-name> \
+--database-name sampledb
+```
 
 ## STEP 2 - Build your application
 
