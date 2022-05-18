@@ -63,7 +63,7 @@ The server by default enforces Transport Layer Security (TLS 1.2) to help protec
 
 You access the network connectivity options from the Azure portal’s **Flexible server deployment** page, **Networking** tab.
 
-![Screenshot of the Networking tab of the displaying the networking settings for a new Azure Database for MySQL server.](../media/2-mysql-network_connectivity.png)
+![Screenshot of the Networking tab of the displaying the networking settings for a new Azure Database for MySQL server.](../media/2-mysql-network-connectivity.png)
 
 #### High availability
 
