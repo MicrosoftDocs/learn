@@ -2,6 +2,7 @@
 uid: learn.develop-apps-with-azure-database-mysql.exercise-app-service-mysql
 title: Exercise - Deploy a PHP and MySQL - Flexible Server app on Azure App Service
 sandbox: true
+interactive: bash
 metadata:
   unitType: exercise
   title: Exercise - Deploy a PHP and MySQL - Flexible Server app on Azure App Service
