@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A lead admin for an organization is looking to protect against malicious threats posed by email messages, links (URLs), and collaboration tools. Which solution from the Microsoft 365 Defender suite is best suited for this purpose?"
+    choices:
+    - content: "Microsoft Defender for Office 365."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Office 365 safeguards against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients."
+    - content: "Microsoft Defender for Endpoint."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Endpoint is a platform designed to help enterprise networks protect endpoints by preventing, detecting, investigating, and responding to advanced threats."
+    - content: "Microsoft Defender for Identity."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Identity is a cloud-based security solution that uses on-premises Active Directory data to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at an organization."
+  - content: "A cloud access security broker (CASB) provides protection across 4 areas/pillars: visibility to detect all cloud services, data security, threat protection, and compliance. These pillars represent the basis of the Cloud App Security framework upon which Microsoft Defender for Cloud Apps is built. Which pillar is responsible for identifying and controlling sensitive information?"
+    choices:
+    - content: "Threat protection."
+      isCorrect: false
+      explanation: "Incorrect. Threat protection offers adaptive access control but isn't used to identify and control sensitive information."
+    - content: "Compliance."
+      isCorrect: false
+      explanation: "Incorrect. Compliance covers data residency and regulatory compliance."
+    - content: "Data Security."
+      isCorrect: true
+      explanation: "Correct. Through the Data Security pillar, an admin can identify and control sensitive information and respond to classification labels on content."
+  - content: "Which of the following is a cloud-based security solution that identifies, detects, and helps to investigate advanced threats, compromised identities, and malicious insider actions directed at your organization?"
+    choices:
+    - content: "Microsoft Defender for Office 365"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Office 365 is a cloud-based email-filtering service that helps protect your organization against unknown malware and viruses."
+    - content: "Microsoft Defender for Identity"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Identity is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
+    - content: "Microsoft Defender for Cloud Apps"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is a Cloud Access Security Broker that supports various deployment modes including log collection, API connectors, and reverse proxy."
+  - content: "Admins in the organization are using the Microsoft 365 Defender portal every day. They want to quickly get an understanding of the organization's current security posture. Which capability in the Microsoft 365 Defender portal will they use?"
+    choices:
+    - content: "Reports."
+      isCorrect: false
+      explanation: "That's incorrect. Reports will provide targeted information but doesn't give a snapshot of an organization's security posture."
+    - content: "Secure Score."
+      isCorrect: true
+      explanation: "That's correct. Secure Score, in the M365 Defender portal, will give a snapshot of an organization’s security posture, and provide details on how to improve it."
+    - content: "Policies."
+      isCorrect: false
+      explanation: "That's incorrect. A snapshot of an organization's current security posture can't be found in the Policies option."

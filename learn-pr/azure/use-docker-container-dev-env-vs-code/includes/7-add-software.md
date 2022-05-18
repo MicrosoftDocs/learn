@@ -4,7 +4,7 @@ Your customized container is coming along well for your agency. With the power o
 
 Additional software might include another technology stack for your agency. For instance, you might want to include Node.js in any of your dev containers because you know that's part of many development workflows.
 
-When you ran **Remote-Containers: Add Development Container Configuration Files**, a .devcontainer folder was added to your app. It included a devcontainer.json file and a Dockerfile. These files came from the [Visual Studio Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. Although this repo gives us many options for our team, we might want to iterate on them by installing more software.
+When you ran **Remote-Containers: Add Development Container Configuration Files**, a '.devcontainer' folder was added to your app. It included a devcontainer.json file and a Dockerfile. These files came from the [Visual Studio Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. Although this repo gives us many options for our team, we might want to iterate on them by installing more software.
 
 ## Methods to install software
 
@@ -13,7 +13,7 @@ You can install software via the integrated terminal. Most container images are 
 > [!IMPORTANT]
 > Whenever you install something from `apt-get`, run `apt-get update` first. This command updates the list of packages and package repos so that you have the most current list cached.
 
-But if you make changes to your .devcontainer folder and need to rebuild your container, you'll have to reinstall anything you've installed manually. To avoid this problem, you can use the `postCreateCommand` property in devcontainer.json, as mentioned in the previous unit.
+But if you make changes to your '.devcontainer' folder and need to rebuild your container, you'll have to reinstall anything you've installed manually. To avoid this problem, you can use the `postCreateCommand` property in devcontainer.json, as mentioned in the previous unit.
 
 The most efficient practice that persists your changes even after rebuilding is to install software through your Dockerfile.
 

@@ -35,7 +35,7 @@ Take the following steps:
    /env
      /bin
      /include
-     lib
+     /lib
    ```
 
    Your environment needs the `env` directory to keep track of details like which version of Python and which libraries you're using. Don't put your program files in the `env` directory. We suggest that you put your files in the `src` directory or something similar. The project structure might then look like this:
@@ -48,7 +48,7 @@ Take the following steps:
 
 ### Activate the virtual environment
 
-At this point, you have a virtual environment, but you haven't started using it. To use it, you need to activate it by calling an `activate` script in your `env` directory. Here's how the activation can look on macOS:
+At this point, you have a virtual environment, but you haven't started using it. To use it, you need to activate it by calling an `activate` script in your `env` directory. Here's how the activation can look on Windows, Linux, and macOS:
 
 ```bash
 # Windows

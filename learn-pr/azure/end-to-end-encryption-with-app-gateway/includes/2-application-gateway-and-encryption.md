@@ -14,7 +14,7 @@ When you terminate the SSL connection at the application gateway, it offloads th
 
 If you need end-to-end encryption, Application Gateway can decrypt the traffic on the gateway by using your private key. It then re-encrypts the traffic with the public key of the service running in the back-end pool.
 
-Exposing your website or web application through the application gateway also means that you don't directly connect your servers to the web. You're exposing only port 80 or port 443 on the application gateway. Your web servers aren't directly accessible from the internet, reducing the attack surface of your infrastructure.
+Exposing your website or web application through the application gateway also means you don't directly connect your servers to the web. You're exposing only port 80 or port 443 on the application gateway. Your web servers aren't directly accessible from the internet, reducing the attack surface of your infrastructure.
 
 ## Application Gateway components
 
@@ -26,7 +26,7 @@ The following image shows how incoming traffic from a client to Application Gate
 
 ### Front-end port and listener
 
-Traffic enters the gateway through a front-end port. You can open many ports, and Application Gateway can receive messages on any of these ports. A listener is the first thing that your traffic meets when entering the gateway through a port. It's set up to listen for a specific host name, and a specific port on a specific IP address. The listener can use an SSL certificate to decrypt the traffic that enters the gateway. The listener then uses a rule that you define to direct the incoming requests to a back-end pool.
+Traffic enters the gateway through a front-end port. You can open many ports, and Application Gateway can receive messages on any of these ports. A listener is the first thing your traffic meets when entering the gateway through a port. It's set up to listen for a specific host name, and a specific port on a specific IP address. The listener can use an SSL certificate to decrypt the traffic that enters the gateway. The listener then uses a rule that you define to direct the incoming requests to a back-end pool.
 
 ### Back-end pool
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-and-governance.explore-azure-policy
+title: Explore Azure Policy
+metadata:
+  title: Explore Azure Policy
+  description: "Explore Azure Policy"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-explore-azure-policy.md)]

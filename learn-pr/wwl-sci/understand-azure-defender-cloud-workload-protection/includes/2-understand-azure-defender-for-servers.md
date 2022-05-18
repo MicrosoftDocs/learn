@@ -8,7 +8,7 @@ For Linux, Microsoft Defender collects audit records from Linux machines by usin
 
 The threat detection and protection capabilities provided with Microsoft Defender for servers include:
 
-- **Integrated license for Microsoft Defender for Endpoint (Windows only)** - Microsoft Defender for servers includes Microsoft Defender for Endpoint. Together, they provide comprehensive endpoint detection and response (EDR) capabilities.
+- **Integrated license for Microsoft Defender for Endpoint** - Microsoft Defender for servers includes Microsoft Defender for Endpoint. Together, they provide comprehensive endpoint detection and response (EDR) capabilities.
 
 - When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud. From there, you can also pivot to the Defender for Endpoint console and perform a detailed investigation to uncover the scope of the attack. Learn more about Microsoft Defender for Endpoint.
 
@@ -36,7 +36,7 @@ The threat detection and protection capabilities provided with Microsoft Defende
 
 - **Docker host hardening** - Defender for Cloud identifies unmanaged containers hosted on IaaS Linux VMs, or other Linux machines running Docker containers. Defender for Cloud continuously assesses the configurations of these containers. It then compares them with the Center for Internet Security (CIS) Docker Benchmark. Security Center includes the entire ruleset of the CIS Docker Benchmark and alerts you if your containers don't satisfy any of the controls.
 
-- **Fileless attack detection (Windows only)** - Fileless attacks inject malicious payloads into memory to avoid detection by disk-based scanning techniques. The attacker’s payload then persists within the memory of compromised processes and performs a wide range of malicious activities.
+- **Fileless attack detection** - Fileless attacks inject malicious payloads into memory to avoid detection by disk-based scanning techniques. The attacker’s payload then persists within the memory of compromised processes and performs a wide range of malicious activities.
 
 - With fileless attack detection, automated memory forensic techniques identify fileless attack toolkits, techniques, and behaviors. This solution periodically scans your machine at runtime, and extracts insights directly from the memory of processes. Specific insights include the identification of:
 

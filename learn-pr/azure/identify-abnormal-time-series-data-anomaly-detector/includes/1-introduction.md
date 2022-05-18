@@ -6,7 +6,7 @@ Your task to build a solution that monitors energy consumption, identify odd dat
 
 ## Learning objectives
 By the end of this module, you'll be able to: 
-- Understand what anomaly detection is
+- Understand what is anomaly detection
 - Understand how the Azure Anomaly Detector APIs work and when to use for your scenario
 - Build a solution to use a prebuilt Azure Anomaly Detector model on real-time IoT data streams
 - Train and evaluate your own model with Azure Anomaly Detector using your unique time-series data

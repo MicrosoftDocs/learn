@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -21,21 +21,21 @@ quiz:
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false
-      explanation: "That's incorrect. Redirect is not one of the four key aspects of a SIEM/SOAR solution."
+      explanation: "Incorrect. Redirect is not one of the four key aspects of a SIEM/SOAR solution."
     - content: "Collect, Detect, Investigate, and Respond."
       isCorrect: true
-      explanation: "That's correct. A SIEM/SOAR solution uses collect, detect, investigate, and respond to identify and protect your organization's network perimeter. ."
+      explanation: "Correct. A SIEM/SOAR solution uses collect, detect, investigate, and respond to identify and protect your organization's network perimeter."
     - content: "Collect, Detect, Investigate, and Repair."
       isCorrect: false
-      explanation: "That's incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
+      explanation: "Incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
   - content: "Your estate has many different data sources where data is stored. Which tool should be used with Microsoft Sentinel to quickly gain insights across your data as soon as a data source is connected?"
     choices:
     - content: "Azure Monitor Workbooks."
       isCorrect: true
-      explanation: "That's correct. Using the Microsoft Sentinel integration with Azure Monitor Workbooks allows you to monitor data and provides versatility in creating custom workbooks."
+      explanation: "Correct. Using the Microsoft Sentinel integration with Azure Monitor Workbooks allows you to monitor data and provides versatility in creating custom workbooks."
     - content: "Playbooks."
       isCorrect: false
-      explanation: "That's incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."
+      explanation: "Incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."
     - content: "Microsoft 365 Defender."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft 365 Defender provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
+      explanation: "Incorrect. Microsoft 365 Defender provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."

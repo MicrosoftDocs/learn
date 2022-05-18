@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-arc-enabled-servers.develop-robust-data-foundation-azure-arc-enabled-servers-azure-monitor-metrics-logs
+title: Develop a robust data foundation of Azure Arc enabled servers with Azure Monitor Metrics and Logs
+metadata:
+  title: Develop a robust data foundation of Azure Arc enabled servers with Azure Monitor Metrics and Logs
+  description: Develop a robust data foundation of Azure Arc enabled servers with Azure Monitor Metrics and Logs
+  ms.date: 04/01/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-develop-robust-data-foundation-azure-arc-enabled-servers-azure-monitor-metrics-logs.md)]

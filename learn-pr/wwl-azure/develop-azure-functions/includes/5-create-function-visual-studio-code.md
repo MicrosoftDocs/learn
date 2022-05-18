@@ -40,7 +40,13 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
     * **Authorization level**: Choose `Anonymous`, which enables anyone to call your function endpoint.
     * **Select how you would like to open your project**: Choose `Add to workspace`.
 
-1. Using this information, Visual Studio Code generates an Azure Functions project with an HTTP trigger.
+    The current version of the Azure Functions extension (version 4) only shows .NET 6 in the runtime list. You can change the Azure Functions version by selecting **Change Azure Functions version** in the runtime list, and then selecting **Azure Functions v3**.
+
+    :::image type="content" source="../media/azure-function-version.png" alt-text="Decoration":::
+
+    :::image type="content" source="../media/azure-function-v3.png" alt-text="Decoration":::
+
+Using this information, Visual Studio Code generates an Azure Functions project with an HTTP trigger.
 
 ## Run the function locally
 

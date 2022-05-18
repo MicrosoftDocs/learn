@@ -27,7 +27,7 @@ To expose your container to the management webapp via DNS, you'll configure and 
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: cna-express
@@ -35,13 +35,16 @@ To expose your container to the management webapp via DNS, you'll configure and 
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: cna-express.<exampleURL.eastus.aksapp.io>
-          http:
-            paths:
-              - backend: # How the ingress will handle the requests
-                  serviceName: cna-express # Which service the request will be forwarded to
-                  servicePort: http # Which port in that service
-                path: / # Which path is this rule referring to
+      - host: cna-express.<exampleURL.eastus.aksapp.io>
+        http:
+          paths:
+          - path: / # Which path is this rule referring to
+            pathType: Prefix
+            backend: # How the ingress will handle the requests
+              service:
+                name: cna-express # Which service the request will be forwarded to
+                port: 
+                  name: http # Which port in that service    
     ```
 
 4. **Save the manifest file**, and close the editor.
@@ -59,7 +62,7 @@ Now we need to deploy the service for our changes to take effect.
     The command should output a result similar to the following example.
 
     ```output
-    ingress.extensions/cna-express created
+    ingress.networking.k8s.io/cna-express created
     ```
 
 6. Return the Cloud Shell to the source folder.

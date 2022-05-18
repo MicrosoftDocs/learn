@@ -24,7 +24,7 @@ Availability sets is not the only way to separate IaaS VMs. Azure also provides 
 
 ## Availability zones
 
-Availability zones account for data center-level failure in Azure. Each Azure region consists of many data centers with low latency network connections between them. When you deploy VM resources in a region that supports Availability Zones, you have the option to deploy those resources into Zone 1,2, or 3.A zone is a unique physical location, that is, a data center, within an Azure region.
+Availability zones account for data center-level failure in Azure. Each Azure region consists of many data centers with low latency network connections between them. When you deploy VM resources in a region that supports Availability Zones, you have the option to deploy those resources into Zone 1, 2, or 3. A zone is a unique physical location, that is, a data center, within an Azure region.
 
 Zone numbers are logical representations. For example, if two Azure subscribers both deploy a VM into Zone 1 in their own subscriptions, that does not mean those VMs exist in the same physical Azure data center. Additionally, because of the distance there can be some additional latency introduced into zonal deployments. You should test the latency between your VMs to ensure that the latency meets performance targets. In most cases round-trip latency will be less than 1 millisecond, which supports synchronous data movement in features like availability groups. You can also deploy Azure SQL Database into Availability Zones.
 

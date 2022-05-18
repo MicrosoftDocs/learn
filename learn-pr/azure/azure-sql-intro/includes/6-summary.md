@@ -16,14 +16,14 @@ You can watch the 2008 [Microsoft Professional Developers Conference](https://ww
 
 To learn more about what you can get from infrastructure as a service (IaaS) services, see [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/?azure-portal=true). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
 
-- Install from [Azure gallery images](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#4-configure-sql-server-settings?azure-portal=true) or take advantage of the [resource provider](https://www.aka.ms/sqlvm_rp_documentation?azure-portal=true) (also referred to as the SQL IaaS Extension) for licensing flexibility and to enable automatic backups and updates.
+- Install from [Azure gallery images](/azure/virtual-machines/shared-image-galleries) or take advantage of the [resource provider](/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management) (also referred to as the SQL IaaS Extension) for licensing flexibility and to enable automatic backups and updates.
 - Consider memory-optimized or storage-optimized virtual machine [sizes](https://azure.microsoft.com/pricing/details/virtual-machines/series/?azure-portal=true) for maximum performance.
 - Integrate your Azure virtual machines to on-premises networks by using [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview#communicate-with-on-premises-resources?azure-portal=true).
 - Take advantage of automated backups, backups to Azure Blob storage, and integration with [Azure Backup](https://azure.microsoft.com/blog/azure-backup-for-sql-server-in-azure-virtual-machines-now-generally-available/?azure-portal=true).
-- Always On Failover Cluster Instances is supported with [Azure premium file share](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster-premium-file-share?azure-portal=true).
-- [Always On availability groups](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview?azure-portal=true) are supported, including Cloud Witness.  
+- Always On Failover Cluster Instances is supported with [Azure premium file share](/azure/storage/files/storage-how-to-create-file-share).
+- [Always On availability groups](/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server) are supported, including Cloud Witness.  
 
-If you're considering SQL Server on Azure Virtual Machines, you should review the [guidance on images](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?azure-portal=true), the [quick checklist](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance?azure-portal=true) for getting optimal performance of SQL Server on Azure Virtual Machines, and the guidance for [storage configuration](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-storage-configuration?azure-portal=true).  
+If you're considering SQL Server on Azure Virtual Machines, you should review the [guidance on images](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?azure-portal=true), the [quick checklist](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist) for getting optimal performance of SQL Server on Azure Virtual Machines, and the guidance for [storage configuration](/azure/azure-sql/virtual-machines/windows/storage-configuration).  
 
 If you're specifically considering SQL Server on RHEL Azure VMs, check out the [operations guide](https://azure.microsoft.com/resources/sql-server-on-rhel-azure-vms-operations-guide/?azure-portal=true).  
 
@@ -40,26 +40,25 @@ There are many companies that have moved to Azure SQL. You can learn more about 
 
 You can read [more about PaaS](https://azure.microsoft.com/overview/what-is-paas/?azure-portal=true).  
 
-Azure SQL Database and SQL Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. You can [view a feed from Microsoft about those updates](https://azure.microsoft.com/updates/?category=databases&azure-portal=true). You also might find the [release notes](/azure/sql-database/sql-database-release-notes?azure-portal=true&tabs=single-database) for Azure SQL Database helpful.  
+Azure SQL Database and SQL Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. You can [view a feed from Microsoft about those updates](https://azure.microsoft.com/updates/?category=databases&azure-portal=true). You also might find the [release notes](/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new) for Azure SQL Database helpful.  
 
 Learn more about pools in Azure SQL:
 
-- [Azure SQL Managed Instance pools](/azure/sql-database/sql-database-instance-pools?azure-portal=true)
-- [Azure SQL Database elastic pools](/azure/sql-database/sql-database-elastic-pool?azure-portal=true)  
+- [Azure SQL Managed Instance pools](/azure/azure-sql/managed-instance/instance-pools-overview)
+- [Azure SQL Database elastic pools](/azure/azure-sql/database/elastic-pool-overview)  
 
 If you want to learn more about deployment options and how to choose one, check out these resources:  
 
 - [Blog announcement for Azure SQL](https://techcommunity.microsoft.com/t5/Azure-SQL-Database/Unified-Azure-SQL-experience/ba-p/815368?azure-portal=true) explains Azure SQL and some of the views and experiences available in the Azure portal.
-- [Choose the right deployment option in Azure SQL](/azure/sql-database/sql-database-paas-vs-sql-server-iaas?azure-portal=true) is a regularly updated article that provides insight into making decisions about Azure SQL options.
 - [Choosing your database migration path to Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/choosing-your-database-migration-path-to-azure/Choosing_your_database_migration_path_to_Azure.pdf?azure-portal=true) is a white paper about tools for discovering, assessing, planning, and migrating SQL databases to Azure. This learning path refers to it several times, and we recommend that you read it. Chapter 5 includes an in-depth discussion about choosing the right deployment option.  
-- [Feature comparison among SQL Database, SQL Managed Instance, and SQL Server](/azure/sql-database/sql-database-features?azure-portal=true) can help you learn about the differences among these options.
+- [Feature comparison among SQL Database, SQL Managed Instance, and SQL Server](/azure/azure-sql/database/features-comparison) can help you learn about the differences among these options.
 
 ### Purchasing models and service tiers
 
-You might want to learn more about the differences between [DTU-based](/azure/sql-database/sql-database-service-tiers-dtu?azure-portal=true) and [vCore-based](/azure/sql-database/sql-database-service-tiers-vcore?azure-portal=true) purchasing models. To do that, review the [in-depth comparison of vCores and DTUs](/azure/sql-database/sql-database-purchase-models?azure-portal=true). Note that only the vCore model allows you to save money with options like [Azure Hybrid Benefit for SQL Server](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) and [reserved capacity](/azure/sql-database/sql-database-reserved-capacity?azure-portal=true).  
+You might want to learn more about the differences between [DTU-based](/azure/azure-sql/database/service-tiers-dtu) and [vCore-based](/azure/azure-sql/database/service-tiers-sql-database-vcore) purchasing models. To do that, review the [in-depth comparison of vCores and DTUs](/azure/azure-sql/database/purchasing-models). Note that only the vCore model allows you to save money with options like [Azure Hybrid Benefit for SQL Server](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) and [reserved capacity](/azure/azure-sql/database/reserved-capacity-overview).  
 
 The [documentation](/azure/azure-sql/database/service-tiers-general-purpose-business-critical?azure-portal=true) goes deeper into the details and architectures for the various service tiers.  
 
 ### Management interfaces
 
-To learn more about the tools, you can check out the [tools documentation](/sql/tools/overview-sql-tools?azure-portal=true&view=sql-server-ver15), which includes information about and guidance on the various options discussed in this module (and more).
+To learn more about the tools, you can check out the [tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module (and more).

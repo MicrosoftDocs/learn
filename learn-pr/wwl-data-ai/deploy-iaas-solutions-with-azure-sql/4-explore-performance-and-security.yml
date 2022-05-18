@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.explore-performance-and-security
+title: Explore performance and security
+metadata:
+  title: Explore performance and security
+  description: "Explore performance and security"
+  ms.date: 04/26/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/4-explore-performance-and-security.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary for publishing template specs and Bicep modules by using Azure Pipelines.
+  ms.date: 03/29/2022
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

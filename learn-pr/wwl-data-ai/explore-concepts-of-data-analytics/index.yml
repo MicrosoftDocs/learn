@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 units:
 - learn.wwl.explore-concepts-of-data-analytics.introduction
 - learn.wwl.explore-concepts-of-data-analytics.describe-data-ingestion-processing

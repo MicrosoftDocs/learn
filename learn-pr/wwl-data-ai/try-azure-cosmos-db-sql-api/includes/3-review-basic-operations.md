@@ -39,7 +39,7 @@ The Azure Cosmos DB service will automatically and transparently partition your 
 
 ## Creating simple items
 
-Once the database and container resources exist, you are ready to create your first item. In Azure Cosmos DB SQL API, and item is a JSON document.
+Once the database and container resources exist, you are ready to create your first item. In Azure Cosmos DB SQL API, an item is a JSON document.
 
 > [!NOTE]
 > JavaScript Object Notation (JSON) is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value)

@@ -6,9 +6,9 @@ Measuring whether a hypothesis was right or wrong can be tricky, because multipl
 
 However, the way in which features are released to application users can help to assess the validity of a hypothesis:
 
-- Controlled deployment with *feature flags*, *feature rings*, and *canary deployments* allow you to release a feature to a limited set of users, to prevent disrupting the experience of the whole customer base. Additionally, the performance of the customers with and without the feature can be directly compared to each other.
-- *Portal options* for users to decide if they want to be exposed to new functionality put the users in control of their own experience. The fact that many users opt for a new feature might already be a confirmation that the previous functionality had room for improvement. If customers that had opted for the new feature go back to the previous experience, that might be an indicator that the deployed MVP is missing the mark.
-- *Customer surveys* are a powerful feedback mechanism, if they're implemented correctly. Customers will provide information about their satisfaction if it's simple to give. One-click "traffic light" satisfaction surveys or single questions about new functionality might provide insights to help in evaluating whether the innovation hypothesis was correct. In general, longer surveys will be answered by only a few users who will take the time to fill them in thoroughly and truthfully.
+- Controlled deployments with *feature flags*, *feature rings*, and *canary deployments* allow you to release a feature to a limited set of users to prevent disrupting the experience of the whole customer base. Additionally, you can directly compare the performance of the customers with and without the feature to each other.
+- *Portal options* for users to decide if they want to be exposed to new functionality puts the users in control of their own experience. The fact that many users opt for a new feature might already be a confirmation that the previous functionality had room for improvement. If customers that had opted for the new feature go back to the previous experience, that might be an indicator that the deployed MVP is missing the mark.
+- *Customer surveys* are a powerful feedback mechanism, if they're implemented correctly. Customers will provide information about their satisfaction if it's simple to give. One-click "traffic light" satisfaction surveys or single questions about new functionality might provide insights to help in evaluating whether the innovation hypothesis was correct. In general, only a few users will answer longer surveys and will take the time to fill them in thoroughly and truthfully.
 
 ## Understanding your application
 
@@ -28,7 +28,7 @@ Notifications typically report that there might be a problem, without context ab
 
 [Usage analysis](/azure/azure-monitor/app/usage-overview?azure-portal=true) in Azure Application Insights can help you evaluate which application areas need to be improved. For example, usage analysis can identify the most popular application features or specific points at which users leave the web portal. You can explore, for example, whether your application works better in certain geographic areas than others, to get valuable information about where the application gaps might be.
 
-After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. Custom business events can be embedded in the application, so that telemetry data contains additional information that will help in the measure process.
+After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. Custom business events can be embedded in the application so that telemetry data contains additional information that will help in the measure process.
 
 [Funnels](/azure/azure-monitor/app/usage-funnels?azure-portal=true) can be an insightful tool. With funnels, you can predefine expected *flows* that users will follow when they use the application. This allows you to monitor which patterns users follow. You can then identify problems in the applications if users are behaving in unexpected ways.
 
@@ -48,6 +48,6 @@ For example, how fast should the product page load so that most users continue w
 
 Tailwind Traders decided to introduce some new features in its e-commerce application, such as a new payment platform. The application has been instrumented with Azure Application Insights to understand how many customers are using the new payment method, and whether there's an increase of conversion rate in the payment process. The new payment method was marked as a preview, so that users would be more understanding if there were problems.
 
-Application Insights helped Tailwind Traders to identify that a high percentage of users decided to pick up the new payment method in spite of the "preview" banner. Application Insights confirmed that the new functionality worked as expected without major flaws. Additionally, the purchase conversion rate increased significantly. 
+Application Insights helped Tailwind Traders to identify that a high percentage of users decided to pick up the new payment method in spite of the "preview" banner. Application Insights confirmed that the new functionality worked as expected without major flaws. Additionally, the purchase conversion rate increased significantly.
 
 Tailwind Traders can now focus on turning the MVP for the new payment method into a production-grade feature. The company can move to the learn phase of the innovation lifecycle, to formulate more hypotheses.

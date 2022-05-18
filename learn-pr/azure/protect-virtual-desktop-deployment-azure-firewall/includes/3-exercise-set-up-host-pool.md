@@ -11,6 +11,7 @@ Let's create a host pool that will contain the VM you'll create later in this ex
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Search for and select **Azure Virtual Desktop**.
 1. Select **Create a host pool**.
+:::image type="content" source="../media/3-create-host-pool.png" alt-text="Screenshot showing the information to enter for the host pool creation.":::
 1. Enter the following information into the **Basics** tab:
 
    |Field  |Value  |
@@ -19,12 +20,13 @@ Let's create a host pool that will contain the VM you'll create later in this ex
    |Resource group     | Create a new resource group named learn-firewall-rg    |
    |Host pool name     | learn-host-pool      |
    |Location    | Region near you       |
+   | Validation environment |  No |
    |Host pool type     |  Pooled  |
    |Load balancing algorithm    | Breadth-first |
    |Max session limit    |2|
 
-   Leave any other default values as they are.
-1. Select **Review + create** > **Create**.
+1. Select **Review + create** and wait for validation to pass.
+1. Select **Create**.
 
 ## Create a registration token for the host pool
 

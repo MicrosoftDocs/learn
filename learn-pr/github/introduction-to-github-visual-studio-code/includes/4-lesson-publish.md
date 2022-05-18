@@ -15,14 +15,14 @@ If you're starting with a new project that you haven't yet pushed to GitHub, the
 
 A lot of steps means a lot of work.
 
-Visual Studio Code has a built-in publishing feature that fully automates this process and allows you to do it right from its interface.
+Visual Studio Code has a built-in publishing feature that fully automates this process and allows you to do it right from the Visual Studio Code interface.
 
 ## Publish to GitHub from Visual Studio Code
 
 There are two ways to publish a project to GitHub from Visual Studio Code: from the Source Control Management (SCM) view and from the Command Palette. You must have a folder open in Visual Studio Code to see these options.
 
 > [!TIP]
-> You can always use Git from the built-in terminal in Visual Studio Code as well (<kbd>Ctrl+`</kbd>). Just because you're using visual source control tools in Visual Studio Code doesn't mean that you have to completely forgo your beloved command line!
+> You can always use Git from the built-in terminal in Visual Studio Code as well (<kbd>Ctrl+`</kbd>). Just because you're using visual source-control tools in Visual Studio Code doesn't mean that you have to completely forgo your beloved command line!
 
 ### Publish from the SCM View
 
@@ -45,4 +45,4 @@ If your project has already been started for GitHub locally, you won't see the p
 
 :::image type="content" source="../media/publish-command.jpg" alt-text="Screenshot of the Visual Studio Code command palette, showing the Publish to GitHub option.":::
 
-The action kicks off the same workflow that the publish button in the SCM view does, and it has exactly the same steps. You won't be prompted for what items you want to push if your project already contains a .gitignore file.
+The action kicks off the same workflow the Publish button in the SCM view does, and it has exactly the same steps. You won't be prompted for what items you want to push if your project already contains a .gitignore file.

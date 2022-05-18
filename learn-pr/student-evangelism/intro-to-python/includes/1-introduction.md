@@ -1,6 +1,6 @@
-Python is one of the most popular and fastest growing programming languages in the world (third most used according to GitHub in 2019). It's used for all sorts of tasks including web programming and data analysis; and it's emerged as _the language_ to learn for machine learning. That popularity means that python developers are in demand and python programming jobs can be lucrative.
+Python is one of the most popular and fastest growing programming languages in the world (third most used according to GitHub in 2019). It's used for all sorts of tasks, including web programming and data analysis, and it's emerged as *the language* to learn for machine learning. That popularity means Python developers are in demand, and Python programming jobs can be lucrative.
 
-The above mentioned reasons are why it might be a good idea for you to learn how to program in Python. This module will provide an introduction to using Python to build an app, which can be a starting point to becoming a Python programmer.
+The above-mentioned reasons are why it might be a good idea for you to learn how to program in Python. This module will provide an introduction to using Python to build an app, which can be a starting point to becoming a Python programmer.
 
 ## Learning objectives
 

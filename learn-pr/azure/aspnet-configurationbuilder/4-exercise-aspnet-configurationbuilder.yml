@@ -14,10 +14,11 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-aspnet-configurationbuilder.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Create an Azure key vault."
-  azure:
-    resource:
-      type: "Microsoft.KeyVault/vaults"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Create an Azure key vault."
+#   azure:
+#     resource:
+#       type: "Microsoft.KeyVault/vaults"

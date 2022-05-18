@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/31/2021
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Azure portal"
       isCorrect: true
-      explanation: "That's correct. The portal is a good choice for one-off operations like creating a long-lived storage account. The portal provides a GUI containing all the storage-account properties and provides tool tips to help select the right options for the organization's needs."
+      explanation: "Correct. The portal is a good choice for one-off operations like creating a long-lived storage account. The portal provides a GUI containing all the storage-account properties and provides tool tips to help select the right options for the organization's needs."
     - content: "Azure CLI"
       isCorrect: false
-      explanation: "That's incorrect. To use the CLI, would first require researching the command to create a storage account. Then either install the CLI locally or login to the Cloud Shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
+      explanation: "Incorrect. To use the CLI, would first require researching the command to create a storage account. Then either install the CLI locally or login to the Cloud Shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
     - content: "Azure PowerShell"
       isCorrect: false
-      explanation: "That's incorrect. To use Azure PowerShell, would first require researching the command to create a storage account. Then either install PowerShell locally or login to the Cloud Shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
+      explanation: "Incorrect. To use Azure PowerShell, would first require researching the command to create a storage account. Then either install PowerShell locally or login to the Cloud Shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
   - content: "The Azure CLI can be installed on which of the following?"
     choices:
     - content: "Linux"
       isCorrect: false
-      explanation: "That's incorrect, other hosting platforms are available."
+      explanation: "Incorrect, other hosting platforms are available."
     - content: "Windows"
       isCorrect: false
-      explanation: "That's incorrect, other hosting platforms are available."
+      explanation: "Incorrect, other hosting platforms are available."
     - content: "Both Linux and Windows"
       isCorrect: true
-      explanation: "That's correct. The CLI is cross-platform and can be installed on Linux, macOS, and Windows. After installation, the CLI commands are the same on every platform. This means commands learned once can be used with any local installation or in the Azure Cloud Shell."
+      explanation: "Correct. The CLI is cross-platform and can be installed on Linux, macOS, and Windows. After installation, the CLI commands are the same on every platform. This means commands learned once can be used with any local installation or in the Azure Cloud Shell."
   - content: "Another Administrator is managing Azure locally using PowerShell. They have launched PowerShell as an Administrator. Which of the following commands should be executed first?"
     choices:
     - content: "Connect-AzAccount"
       isCorrect: true
-      explanation: "That's correct. So, the first thing to do is to connect to Azure and provide the user credentials."
+      explanation: "Correct. So, the first thing to do is to connect to Azure and provide the user credentials."
     - content: "Get-AzResourceGroup"
       isCorrect: false
-      explanation: "That's incorrect. This would not be the first command. The Get-AzResourceGroup cmdlet gets Azure resource groups in the current subscription."
+      explanation: "Incorrect. This would not be the first command. The Get-AzResourceGroup cmdlet gets Azure resource groups in the current subscription."
     - content: "Get-AzSubscription"
       isCorrect: false
-      explanation: "That's incorrect. This would not be the first command. The Get-AzSubscription cmdlet gets the subscription ID, subscription name, and home tenant for subscriptions that the current account can access."
+      explanation: "Incorrect. This would not be the first command. The Get-AzSubscription cmdlet gets the subscription ID, subscription name, and home tenant for subscriptions that the current account can access."

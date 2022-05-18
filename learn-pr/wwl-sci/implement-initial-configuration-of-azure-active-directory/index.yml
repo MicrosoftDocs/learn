@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-active-directory-domain
+subjects:
+- identity-access
 units:
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.introduction
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-roles

@@ -1,6 +1,6 @@
 If you want to understand what can go wrong with managing an app's configuration secrets, look no further than the story of Steve, a senior developer.
 
-Steve had working at a pet food delivery company for a few weeks. While exploring the details of the company's web app &mdash; a .NET Core web app that used an Azure SQL database for storing order information and third-party APIs for credit card billing and mapping customer addresses &mdash; Steve accidentally pasted the connection string for the orders database into a public forum.
+Steve had been working at a pet food delivery company for a few weeks. While exploring the details of the company's web app&mdash;a .NET Core web app that used an Azure SQL database for storing order information and third-party APIs for credit card billing and mapping customer addresses&mdash;Steve accidentally pasted the connection string for the orders database into a public forum.
 
 Days later, accounting noticed that the company was delivering a lot of pet food that hadn't been paid for. Someone had used the connection string to access the database and create orders by updating the database directly.
 

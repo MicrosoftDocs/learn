@@ -3,12 +3,14 @@ uid: learn.data-ai-introduction-to-azure-data-lake-storage.stages-for-processing
 title: Understand the stages for processing big data by using Azure Data Lake Store
 metadata:
   title: Understand the stages for processing big data by using Azure Data Lake Store
-  description: Understand the stages for processing big data by using Azure Data Lake Store
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Understand the stages for processing big data by using Azure Data Lake Store"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-stages-for-processing-big-data.md)]

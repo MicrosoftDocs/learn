@@ -4,59 +4,60 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/23/2021
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 2
+labModal: false
+durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An organization has deployed Microsoft 365 applications to all employees. Who is responsible for the security of the personal data relating to these employees?"
+  - content: "An organization has deployed Microsoft 365 applications to all employees. Considering the shared responsibility model, who is responsible for the accounts and identities relating to these employees?"
     choices:
     - content: "The organization."
       isCorrect: true
-      explanation: "That's correct. In the shared responsibility model, the customer organization always has responsibility for their data, including personal data relating to employees."
+      explanation: "Correct. In the shared responsibility model, the customer organization always has responsibility for their data, including information and data relating to employees, devices, and accounts and identities."
     - content: "Microsoft, the SaaS provider."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on. The cloud customer is responsible for data, including personal data."
+      explanation: "Incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on. The cloud customer is responsible for data, including personal data."
     - content: "There's shared responsibility between an organization and Microsoft."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personal data."
+      explanation: "Incorrect. The shared responsibility model shows that the cloud customer retains responsibility for accounts and identities."
   - content: "Which of the following measures might an organization implement as part of the defense in-depth security methodology?"
     choices:
     - content: "Locating all its servers in a single physical location."
       isCorrect: false
-      explanation: "That's incorrect. Distributing the physical location of servers provides added security at the physical layer by mitigating the risk that may come from outages caused by fire, hurricanes, and other disasters."
-    - content: "Multi-factor authentication for all users."
+      explanation: "Incorrect. Distributing the physical location of servers provides added security at the physical layer by mitigating the risk that may come from outages caused by fire, hurricanes, and other disasters."
+    - content: "Multifactor authentication for all users."
       isCorrect: true
-      explanation: "That's correct. Multi-factor authentication is an example of defense in-depth at the identity and access layer."
+      explanation: "Correct. Multifactor authentication is an example of defense in-depth at the identity and access layer."
     - content: "Ensuring there's no segmentation of your corporate network."
       isCorrect: false
-      explanation: "That's incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
+      explanation: "Incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
   - content: "The human resources organization wants to ensure that stored employee data is encrypted. Which security mechanism would they use?"
     choices:
     - content: "Hashing."
       isCorrect: false
-      explanation: "That's  incorrect.  Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original."
+      explanation: "Incorrect.  Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original."
     - content: "Encryption in transit."
       isCorrect: false
-      explanation: "That's  incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
+      explanation: "Incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
     - content: "Encryption at rest."
       isCorrect: true
-      explanation: "That's correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
-  - content: "An organization is moving their IT infrastructure to the cloud. They want to know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance can they use to help them transition to the cloud?"
+      explanation: "Correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
+  - content: "Which of the following best describes the concept of data sovereignty?"
     choices:
-    - content: "They should use Azure Policy for guidance on moving to the cloud."
+    - content: "There are regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally."
       isCorrect: false
-      explanation: "​​​Azure Policy isn’t guidance, but rather a solution that helps ensure resources stay compliant with business and regulatory requirements. Instead, use the Cloud Adoption Framework."
-    - content: "They should use the Microsoft Cloud Adoption Framework for guidance on moving to the cloud."
+      explanation: "​​​Incorrect. Regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally relates to data residency.  Data sovereignty, is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+    - content: "Data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
       isCorrect: true
-      explanation: "The Cloud Adoption Framework has been carefully designed based on cloud adoption best practices from Microsoft employees, customers, and partners. It provides a proven and consistent methodology for implementing cloud technologies.​​​"
-    - content: "They should use the Azure Cloud Succeed Framework."
+      explanation: "Correct. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+    - content: "Trust no one, verify everything."
       isCorrect: false
-      explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
+      explanation: "Incorrect. Trust no one, verify everything describes the Zero Trust model. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."

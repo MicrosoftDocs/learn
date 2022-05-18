@@ -14,10 +14,11 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-redis-cache.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Cache/Redis"
-  hint: "Use the instructions above to create a Redis cache."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Cache/Redis"
+#   hint: "Use the instructions above to create a Redis cache."

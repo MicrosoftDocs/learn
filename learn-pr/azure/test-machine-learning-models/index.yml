@@ -25,7 +25,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- machine-learning
+units:
 - learn.machinelearning.test-machine-learning-models.introduction
 - learn.machinelearning.test-machine-learning-models.normalization-and-standardization
 - learn.machinelearning.test-machine-learning-models.exercise-feature-normalization

@@ -111,6 +111,36 @@ The exercise also runs a client app that simulates several users issuing POST an
     > [!NOTE]
     > The `NumClients` setting in this file specifies the number of clients that can simultaneously try to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of the reservation. All the data used is fake. It's not persisted anywhere. Leave this value set to `100`.
 
+1. Save the file by pressing <kbd>Ctrl+S</kbd>.
+
+1. Edit the HotelReservationSystemTestClient.csproj file in this folder by using the code editor.
+
+    ```bash
+    code HotelReservationSystemTestClient.csproj
+    ```
+
+1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like this example.
+
+    ```text
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+      </PropertyGroup>
+    
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+      </ItemGroup>
+    
+      <ItemGroup>
+        <ProjectReference Include="..\HotelReservationSystemTypes\HotelReservationSystemTypes.csproj" />
+      </ItemGroup>
+    
+    </Project>
+    ```
+
 1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
 1. Rebuild the test client app with the new configuration.
@@ -138,7 +168,7 @@ The exercise also runs a client app that simulates several users issuing POST an
    - Select **Add metric**, and under the **Metric** dropdown list, select **CPU Time**. For **Aggregation**, select **Sum**.
    - Select **Add metric**, and under the **Metric** dropdown list, select **Http Server Errors**. For **Aggregation**, select **Sum**.
    - Select **Add metric**, and under the **Metric** dropdown list, select **Http 4xx**. For **Aggregation**, select **Sum**.
-   - Select **Add metric**, and under the **Metric** dropdown list, select **Average Response Time**. For **Aggregation**, select **Avg**.
+   - Select **Add metric**, and under the **Metric** dropdown list, select **Response Time**. For **Aggregation**, select **Avg**.
 
 1. In the right menu bar, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
 
@@ -154,7 +184,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. In the Azure portal, select your web app name (App service), and in the left menu pane, under **Settings**, select **Scale out (App Service plan)**. The **Scale out (App Service plan)** pane appears.
 
-1. On the **Configure** tab, set the **Instance count** to **5**, and in the top menu bar, select **Save**.
+1. On the **Configure** tab, select **Manual scale** and set the **Instance count** to **5**. In the top menu bar, select **Save**.
 
     :::image type="content" source="../media/3-scale-out-to-5.png" alt-text="Screenshot of the Configure page for the App Service plan, scaling out to five instances.":::
 

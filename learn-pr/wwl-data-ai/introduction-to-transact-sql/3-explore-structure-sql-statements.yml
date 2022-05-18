@@ -4,13 +4,12 @@ title: Explore the structure of SQL statements
 metadata:
   title: Explore the structure of SQL statements
   description: "Explore the structure of SQL statements"
-  ms.date: 09/13/2021
+  ms.date: 03/30/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

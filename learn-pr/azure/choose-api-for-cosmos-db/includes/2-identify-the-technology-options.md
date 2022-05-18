@@ -61,7 +61,7 @@ For developers who have experience with the SQL query language, Core (SQL) provi
 
 :::row:::
   :::column span="3":::
-Azure Cosmos DB's API for MongoDB supports the MongoDB wire protocol. This API allows existing MongoDB client SDKs, drivers, and tools to interact with the data transparently, as if they're running against an actual MongoDB database. The data is stored in document format, which is the same as using Core (SQL). Azure Cosmos DB's API for MongoDB is currently compatible with versions 32., 3.6, and 4.0 of the MongoDB wire protocol.
+Azure Cosmos DB's API for MongoDB supports the MongoDB wire protocol. This API allows existing MongoDB client SDKs, drivers, and tools to interact with the data transparently, as if they're running against an actual MongoDB database. The data is stored in document format, which is the same as using Core (SQL). Azure Cosmos DB's API for MongoDB is currently compatible with versions 3.2, 3.6, and 4.0 of the MongoDB wire protocol.
   :::column-end:::
   :::column:::
 :::image type="icon" border="false" source="../media/mongo-api.png":::

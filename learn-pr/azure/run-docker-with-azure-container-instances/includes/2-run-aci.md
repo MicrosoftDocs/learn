@@ -23,7 +23,7 @@ For scenarios where you need full container orchestration, including service dis
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
-1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
+1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
 
     ```azurecli
     az group create --name learn-deploy-aci-rg --location eastus
@@ -71,7 +71,7 @@ For scenarios where you need full container orchestration, including service dis
 
     If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
 
-1. From a browser, go to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of *aci-demo...* string. You see this.
+1. From a browser, go to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of the *aci-demo...* string. You should see this welcome page.
 
     :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser." loc-scope="other"::: <!-- no-loc -->
 

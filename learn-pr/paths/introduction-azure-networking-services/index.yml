@@ -27,6 +27,8 @@ products:
 - azure-private-link
 - azure-virtual-wan
 - azure-web-application-firewall
+subjects:
+- security
 modules:
 - introduction-azure-private-link
 - introduction-azure-virtual-wan

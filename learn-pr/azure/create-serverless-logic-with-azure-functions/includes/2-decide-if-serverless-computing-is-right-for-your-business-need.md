@@ -34,7 +34,7 @@ Serverless compute will not always be the appropriate solution to hosting your b
 
 ### Execution time
 
-By default, functions have a timeout of five (5) minutes. This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes. Finally, there's also an option called [**Durable Functions**](/azure/azure-functions/durable) that enables you to orchestrate the executions of multiple functions without any timeout.
+By default, functions have a timeout of five (5) minutes. This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes. However, there's also an option called [**Durable Functions**](/azure/azure-functions/durable) that lets you orchestrate the executions of multiple functions without any timeout.
 
 ### Execution frequency
 

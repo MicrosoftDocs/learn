@@ -13,10 +13,11 @@ azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-create-cosmosdb-instance.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Follow the instructions to create a Cosmos DB account, database, and container."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.DocumentDB/databaseAccounts"
+#   hint: "Follow the instructions to create a Cosmos DB account, database, and container."

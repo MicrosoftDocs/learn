@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-vpn-gateways.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which point-to-site connection protocol supports Mac devices?"
+    choices:
+    - content: "Open VPN and IKEv2 VPN"
+      isCorrect: true
+      explanation: "That answer is correct. Both protocols support Mac devices, but Open VPN can also be used to connect from Android, iOS, Windows, Linux as well."
+    - content: "SSTP and IKEv2 VPN"
+      isCorrect: false
+      explanation: "That answer is incorrect. Although IKEv2 VPN supports Mac devices, SSTP only supports Windows devices."
+    - content: "OpenVPN and SSTP"
+      isCorrect: false
+      explanation: "That answer is incorrect. Although OpenVPN supports Mac devices, SSTP only supports Windows devices."
+  - content: "It has been decided to use Border Gateway Protocol. Which SKU won't work with BGP?"
+    choices:
+    - content: "VpnGw1"
+      isCorrect: false
+      explanation: "That answer is incorrect. You can use this SKU with BGP."
+    - content: "Basic"
+      isCorrect: true
+      explanation: "That answer is correct. You can't use a basic SKU with BGP"
+    - content: "Advanced"
+      isCorrect: false
+      explanation: "That answer is incorrect. Advanced isn't a valid SKU."
+  - content: "It's necessary to monitor latency issues. Which two tools can be used?"
+    choices:
+    - content: "Microsoft Sentinel and Tracert"
+      isCorrect: false
+      explanation: "That answer is incorrect. Microsoft Sentinel is used for security.}"
+    - content: "Azure Monitor and Microsoft Sentinel"
+      isCorrect: false
+      explanation: "That answer is incorrect. Microsoft Sentinel is used for security."
+    - content: "Azure Monitor and Tracert"
+      isCorrect: true
+      explanation: "That answer is correct. Both tools can help to identify issues."

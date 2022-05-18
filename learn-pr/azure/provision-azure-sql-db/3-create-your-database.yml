@@ -13,10 +13,11 @@ azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/3-create-your-database.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Sql/servers"
-  hint: "Follow the directions above to create a SQL database named 'Logistics'."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Sql/servers"
+#   hint: "Follow the directions above to create a SQL database named 'Logistics'."

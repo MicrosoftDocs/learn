@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.static-analyzers.explore-codeql-github
+title: Explore CodeQL in GitHub
+metadata:
+  title: Explore CodeQL in GitHub
+  description: "Explore CodeQL in GitHub"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-codeql-github.md)]

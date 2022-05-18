@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basic-security-capabilities-azure.describe-network-segmentation
+title: Describe network segmentation in Azure
+metadata:
+  title: Describe network segmentation in Azure
+  description: "Describe network segmentation in Azure"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-describe-network-segmentation.md)]

@@ -21,8 +21,6 @@ After completing this module, you'll be able to:
 
 ## Skills measured
 
-**Manage identity and access.**
-
  -  Manage access.
 
 ## Prerequisites

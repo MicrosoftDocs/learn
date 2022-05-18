@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/07/2022
+  ms.date: 05/07/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Policy-based"
       isCorrect: false
-      explanation: "That's incorrect. Policy-based gateways have limited capabilities and should not be used for ExpressRoute."
+      explanation: "Incorrect. Policy-based gateways have limited capabilities and should not be used for ExpressRoute."
     - content: "Route-based"
       isCorrect: true
-      explanation: "That's correct. Typical route-based gateway scenarios include point-to-site, inter-virtual network, or multiple site-to-site connections. Route-based is also selected to coexist with an ExpressRoute gateway or when the IKEv2 protocol is used."
+      explanation: "Correct. Typical route-based gateway scenarios include point-to-site, inter-virtual network, or multiple site-to-site connections. Route-based is also selected to coexist with an ExpressRoute gateway or when the IKEv2 protocol is used."
     - content: "Path-based"
       isCorrect: false
-      explanation: "That's incorrect. Path-based is not a VPN type."
+      explanation: "Incorrect. Path-based is not a VPN type."
   - content: "The infrastructure team is connecting two virtual networks. Performance is a key concern. Which of the following selections will most influence performance?"
     choices:
     - content: "Selecting a route-based VPN."
       isCorrect: false
-      explanation: "That's incorrect. Although routing can affect performance, another choice will have more influence."
+      explanation: "Incorrect. Although routing can affect performance, another choice will have more influence."
     - content: "Selecting an appropriate Gateway SKU"
       isCorrect: true
-      explanation: "That's correct. Aggregate Throughput Benchmarks are provided for each Gateway SKU."
+      explanation: "Correct. Aggregate Throughput Benchmarks are provided for each Gateway SKU."
     - content: "Selecting a policy-based VPN."
       isCorrect: false
-      explanation: "That's incorrect. Although routing can affect performance, another choice will have more influence."
+      explanation: "Incorrect. Although routing can affect performance, another choice will have more influence."
   - content: "The infrastructure team needs to configure a site-to-site VPN connection between the on-premises network and the Azure network. The on-premises network uses a Cisco ASA VPN device. What key piece of information will you need?"
     choices:
     - content: "The shared access signature key for the recovery services vault."
       isCorrect: false
-      explanation: "That's incorrect. The recovery service vault is not needed."
+      explanation: "Incorrect. The recovery service vault is not needed."
     - content: "The private IP address of the virtual network gateway."
       isCorrect: false
-      explanation: "That's incorrect. The public IP address of the virtual network gateway is not required."
+      explanation: "Incorrect. The public IP address of the virtual network gateway is not required."
     - content: "The shared key provided when the site-to-site VPN connection was created."
       isCorrect: true
-      explanation: "That's correct. The shared key is required."
+      explanation: "Correct. The shared key is required."

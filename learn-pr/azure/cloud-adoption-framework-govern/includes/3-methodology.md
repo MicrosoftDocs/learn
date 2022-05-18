@@ -4,10 +4,10 @@ Implementing proper cloud governance requires proper business policy, protective
 
 This unit explains the four-step process in the Cloud Adoption Framework to build a mature cloud governance solution:
 
-1. **Methodology**: Understand the underlying methodology.
-1. **Governance benchmark**: Assess your current state and future state needs.
-1. **Governance foundation**: Establish your governance foundation by using a set of governance tools.
-1. **Mature governance disciplines**: Iteratively add governance controls to address risks.
+1. **Methodology**: Understand the underlying methodology
+1. **Governance benchmark**: Assess your current-state and future-state needs
+1. **Governance foundation**: Establish your governance foundation by using a set of governance tools
+1. **Mature governance disciplines**: Iteratively add governance controls to address risks
 
 These steps will get you started using the Govern methodology in the cloud. They also will set you on a path to mature each governance discipline as your cloud adoption plan progresses.
 
@@ -17,17 +17,17 @@ The Govern methodology provides a structured approach to building the governance
 
 :::image type="content" source="../media/methodology.png" alt-text="Image that identifies the five disciplines of cloud governance and the components of the corporate policy process." border="false":::
 
-*Figure 1: The Govern methodology--define corporate policy and the five disciplines of cloud governance.*
+*Figure 1: The Govern methodology: define corporate policy and the five disciplines of cloud governance.*
 
 ## Corporate policy
 
-*Governance* is a big topic, and it might be intimidating at first. Governance seeks to establish the proper scope of corporate actions by mitigating tangible risks through corporate policy. 
+*Governance* is a big topic, and it might be intimidating at first. Governance seeks to establish the proper scope of corporate actions by mitigating tangible risks through corporate policy.
 
 Corporate policies drive cloud governance. Proper corporate policy consists of three components:
 
-- **Business risk**: Identify and understand tangible corporate risks and the organization's tolerance for risk.
-- **Policy and compliance**: Convert risks into clear policy statements that support compliance requirements without defining specific technical dependencies.
-- **Process**: Establish processes to monitor violations and ensure adherence to policy statements.
+- **Business risk**: Identify and understand tangible corporate risks and the organization's tolerance for risk
+- **Policy and compliance**: Convert risks into clear policy statements that support compliance requirements without defining specific technical dependencies
+- **Process**: Establish processes to monitor violations and ensure adherence to policy statements
 
 A focus on these components helps develop clear and actionable corporate policies. In the next unit, you'll see how to develop a proper corporate policy.
 
@@ -35,11 +35,11 @@ A focus on these components helps develop clear and actionable corporate policie
 
 Governance disciplines support corporate policies through a mixture of tools and human processes. Each of the following disciplines protects the organization from specific, defined potential pitfalls:
 
-- **Cost Management discipline**: Optimize costs across a broad portfolio of workloads through the application of budgets, reports, and automated enforcement.
-- **Security Baseline discipline**: Apply well-defined security requirements to all supported environments and underlying workloads.
-- **Resource Consistency discipline**: Manage resource configuration at scale to ensure that all deployed assets are discoverable, recoverable, and onboarded into operation management processes.
-- **Identity Baseline discipline**: Ensure proper authentication and access by applying roles and assignments to each environment.
-- **Deployment Acceleration discipline**: Standardize and centralize deployment templates to ensure consistency across all environments and workloads.
+- **Cost Management discipline**: Optimize costs across a broad portfolio of workloads through the application of budgets, reports, and automated enforcement
+- **Security Baseline discipline**: Apply well-defined security requirements to all supported environments and underlying workloads
+- **Resource Consistency discipline**: Manage resource configuration at scale to ensure that all deployed assets are discoverable, recoverable, and onboarded into operation management processes
+- **Identity Baseline discipline**: Ensure proper authentication and access by applying roles and assignments to each environment
+- **Deployment Acceleration discipline**: Standardize and centralize deployment templates to ensure consistency across all environments and workloads
 
 Each discipline accelerates the application of corporate policies and ensures consistent governance. Later in this module, we'll investigate actionable implementation for each discipline.
 
@@ -65,8 +65,8 @@ In later units, you'll apply these tools to create a governance foundation for T
 
 The Cloud Adoption Framework contains two ways to apply a sound foundation for governance to new or existing deployments. Each provides a different approach to support your business needs when you get started:
 
-- [Standard governance guide](/azure/cloud-adoption-framework/govern/guides/standard/?azure-portal=true): A guide for most organizations that's based on the recommended initial two-subscription model and designed for deployments in multiple regions while not spanning public and sovereign/government clouds.
-- [Governance guide for complex enterprises](/azure/cloud-adoption-framework/govern/guides/complex/?azure-portal=true): A guide for enterprises that are managed by multiple independent IT business units or span public and sovereign/government clouds.
+- [Standard governance guide](/azure/cloud-adoption-framework/govern/guides/standard/?azure-portal=true): A guide for most organizations that's based on the recommended initial two-subscription model, and designed for deployments in multiple regions while not spanning public and sovereign/government clouds
+- [Governance guide for complex enterprises](/azure/cloud-adoption-framework/govern/guides/complex/?azure-portal=true): A guide for enterprises that are managed by multiple independent IT business units or span public and sovereign/government clouds
 
 ## Mature governance disciplines
 

@@ -12,14 +12,18 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
    You should now see a new _env_ subdirectory.
 
-1. To activate the virtual environment, run the following command:
+1. To activate the virtual environment, run the following command on Windows:
 
+   ```bash  
+    # Windows
+    source env/Scripts/activate
+   ```
+
+   Or, this command on Linux, WSL or macOS:
+  
    ```bash
-   # On Linux, macOS or WSL
-   source env/bin/activate
-
-   # On Windows
-   source env/Scripts/activate
+    # Linux, WSL or macOS
+    source env/bin/activate
    ```
 
    Your command prompt should start with `(env)` to indicate the name of the virtual environment.

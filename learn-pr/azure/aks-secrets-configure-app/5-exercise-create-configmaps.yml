@@ -15,6 +15,7 @@ title: Exercise - Enhance the application with configmaps
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-configmaps.md)]
+# NOTE: Task validation is failing for learners, so that is disabled for now.
 # tasks:
 #   - action: exists
 #     environment: azure

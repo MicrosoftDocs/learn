@@ -20,6 +20,8 @@ roles:
 - security-engineer
 products:
 - azure
+subjects:
+- identity-access
 modules:
 - learn.wwl.azure-active-directory
 - learn.wwl.hybrid-identity

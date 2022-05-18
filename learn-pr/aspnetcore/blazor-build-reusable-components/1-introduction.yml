@@ -3,8 +3,8 @@ uid: learn.blazor-build-reusable-components.introduction
 title: Introduction to Razor class libraries
 metadata:
   unitType: introduction
-  title: Introduction to Razor Class Libraries
-  description: "Razor Class Libraries are a way for developers to share user-interface components between ASP.NET Core and Blazor applications.  The components are packaged using NuGet and can be easily referenced by another application."
+  title: Introduction to Razor class libraries
+  description: "By using Razor class libraries, you can share user-interface components between ASP.NET Core and Blazor applications. You package the components by using NuGet, and they can be easily referenced by other applications."
   ms.date: 10/13/2021
   author: csharpfritz
   ms.author: jefritz

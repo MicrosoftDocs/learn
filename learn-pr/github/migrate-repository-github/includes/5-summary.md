@@ -1,4 +1,4 @@
-In this module, you learned how to move your existing project to GitHub from a legacy version control system.
+In this module, you learned how to move your existing project to GitHub from a legacy version-control system.
 
 You learned about:
 

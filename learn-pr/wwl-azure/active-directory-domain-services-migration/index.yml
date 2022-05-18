@@ -29,6 +29,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- migration
 units:
 - learn.wwl.active-directory-domain-services-migration.introduction
 - learn.wwl.active-directory-domain-services-migration.examine-upgrade-vs-migration

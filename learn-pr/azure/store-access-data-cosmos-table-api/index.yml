@@ -26,6 +26,8 @@ products:
 - azure
 - azure-storage
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.azure.store-access-data-cosmos-table-api.1-introduction
 - learn.azure.store-access-data-cosmos-table-api.2-move-an-app-to-cosmos-db-table-storage

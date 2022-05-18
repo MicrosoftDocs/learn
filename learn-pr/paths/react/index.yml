@@ -23,6 +23,8 @@ roles:
 products:
 - azure-app-service-static
 - vs-code
+subjects:
+- development-tools
 modules:
 - learn.language.react-get-started
 - learn.language.react-work-with-components-and-data

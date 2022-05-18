@@ -24,14 +24,14 @@ git clone --depth [depth] [clone-url]
 
 ```
 
-You can also achieve a reduced size clone by filtering branches or by cloning only a single branch.
+You can also reduce clones by filtering branches or cloning only a single branch.
 
-## Git Large File Storage (Git LFS)
+## VFS for Git
 
-Git LFS helps with large repositories. It requires a Git LFS client.
+VFS for Git helps with large repositories. It requires a Git LFS client.
 
 Typical Git commands are unaffected, but the Git LFS works with the standard filesystem to download necessary files in the background when you need files from the server.
 
-The Git LFS client was released as open-source. The protocol is a straightforward one with four endpoints that are similar to REST endpoints.
+The Git LFS client was released as open-source. The protocol is a straightforward one with four endpoints similar to REST endpoints.
 
-For more information on large repositories, see: [Working with large files](https://docs.github.com/repositories/working-with-files/managing-large-files).
+For more information on large repositories, see: [Working with large files](https://docs.github.com/repositories/working-with-files/managing-large-files), and [Virtual File System for Git: Enable Git at Enterprise Scale](https://github.com/microsoft/VFSForGit).

@@ -20,7 +20,7 @@ abstract: |
   - Seed a database on app startup.
 prerequisites: |
   - Experience writing C# at the beginner level
-  - Experience using relational databases and SQL as a developer
+  - A basic understanding of relational databases
   - Visual Studio Code
   - .NET SDK 6.0 or greater
   - Git command-line client
@@ -34,6 +34,8 @@ products:
 - aspnet-core
 - dotnet-core
 - ef-core
+subjects:
+- development-tools
 units:
 - learn.persist-data-ef-core.introduction
 - learn.persist-data-ef-core.understanding-ef-core

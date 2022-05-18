@@ -1,4 +1,4 @@
-With Azure products and services, you only pay for what you use. As you create and use Azure resources, you are charged for the resources. You use Azure Cost Management and Billing features to conduct billing administrative tasks and manage billing access to costs. You also its features to monitor and control Azure spending and to optimize Azure resource usage.
+With Azure products and services, you only pay for what you use. As you create and use Azure resources, you are charged for the resources. You use Azure Cost Management and Billing features to conduct billing administrative tasks and manage billing access to costs. You also use its features to monitor and control Azure spending and to optimize Azure resource usage.
 
 :::image type="content" source="../media/cost-management-67750831.png" alt-text="Screenshot of the Cost Management dashboard showing service name and location costs and forecasts.":::
 

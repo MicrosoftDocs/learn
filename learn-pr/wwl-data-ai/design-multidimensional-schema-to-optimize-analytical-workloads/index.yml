@@ -24,6 +24,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
 units:
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.introduction
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-star-schema

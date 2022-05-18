@@ -1,4 +1,4 @@
-Most applications use a database to store the data used by an application. It's important that you know how to migrate databases to Azure to properly support Tailspin Traders' move to the cloud.
+Most applications use a database to store the data used by an application. It's important that you know how to migrate databases to Azure to properly support Tailwind Traders' move to the cloud.
 
 ### What is the Azure Database Migration Service?
 

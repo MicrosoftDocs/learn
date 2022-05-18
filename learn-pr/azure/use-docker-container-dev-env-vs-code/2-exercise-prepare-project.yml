@@ -4,11 +4,15 @@ title: Exercise - Prepare the project
 metadata:
   title: Exercise - Prepare the project
   description: Clone the sample project for this module and prepare Visual Studio Code by installing the required extension.
-  ms.date: 08/12/2021
+  ms.date: 04/07/2022
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-vs-code
+  ms.custom:
+  - team=cloud_advocates, devdivchpfy22
+  ms.contributors:
+  - buhollan-09142021
 durationInMinutes: 4
 content: |
   [!include[](includes/2-exercise-prepare-project.md)]

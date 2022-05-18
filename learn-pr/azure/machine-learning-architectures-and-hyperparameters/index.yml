@@ -25,7 +25,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- architecture
+units:
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.introduction
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.decision-trees
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-decision-trees

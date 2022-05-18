@@ -37,7 +37,7 @@ Additional considerations using an Availability Group Listener include:
 Detailed documentation on deploying Always On with SQL Server in Azure VMs is available at:
 
  -  [Always On availability group on SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview)
- -  [Configure a load balancer for a SQL Server Always On availability group in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
+ -  [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
 
 > [!NOTE]
 > If you are configuring the Azure load balancer for the virtual IP address of the Availability Group listener, make sure that the DirectServerReturn is configured. Configuring this option will reduce the network round trip latency between the SAP application layer and the DBMS layer.

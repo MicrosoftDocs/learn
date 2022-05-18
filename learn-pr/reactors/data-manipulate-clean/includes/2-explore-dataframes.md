@@ -34,7 +34,7 @@ dtypes: float64(4)
 memory usage: 4.8 KB
 ```
 
-From the output, you know that the Iris dataset has 150 entries in four columns. All the data is stored as 64-bit floating-point numbers.
+From the output, you know the Iris dataset has 150 entries in four columns. All the data is stored as 64-bit floating-point numbers.
 
 ## `DataFrame.head`
 

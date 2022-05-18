@@ -15,11 +15,7 @@ You can set a certain location of an Azure IR, in which case the data movement o
 
 Use the following steps to create an Azure IR using Azure Data Factory UI.
 
-1. On the Let's get started page of Azure Data Factory UI, select the Manage tab from the leftmost pane.
-
-    ![The home page manage button](../media/home-page-manage-button.png)
-
-1. Select Integration runtimes on the left pane, and then select +New.
+1. On the Let's get started page of Azure Data Factory UI, select the Manage tab from the leftmost pane.  Then select Integration runtimes on the left pane, and then select +New.
 
     ![Create an integration runtime](../media/create-integration-runtime.png)
 

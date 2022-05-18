@@ -8,7 +8,8 @@ In this exercise, we'll create a new console application and connect it to the A
 
 You'll complete the remaining exercises in this module in the Cloud Shell.
 
-1. Launch the Cloud Shell in the Azure portal by selecting the Cloud Shell icon in the top menu of the portal. 
+1. Launch the Cloud Shell in the Azure portal by selecting the Cloud Shell icon in the top menu of the portal.
+1. Select the Bash environment by using the dropdown menu in Cloud Shell menu bar.  
 1. Run the following commands in the Cloud Shell to make a new directory for your app:
 
     ```bash
@@ -57,7 +58,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     echo 'URL='$BATCH_URL 'NAME='$BATCH_NAME 'KEY='$BATCH_KEY
     ```
 
-    Make sure you have the above values set. If you have to restart the Cloud Shell at any point, you will need to set these variables again. 
+    Make sure you have the above values set. If you have to restart the Cloud Shell at any point, you'll need to set these variables again. 
 
 1. Edit the `Program.cs` file in the editor:
 
@@ -121,7 +122,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     dotnet run
     ```
 
-1. Running the app writes the application package them to the console. You should see:
+1. Running the app writes the application package to the console. You should see:
 
     ```bash
     Installed app: ffmpeg(3.4)

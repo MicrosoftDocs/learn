@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- infrastructure
 units:
 - learn.wwl.implement-pipeline-strategy.introduction
 - learn.wwl.implement-pipeline-strategy.configure-agent-demands

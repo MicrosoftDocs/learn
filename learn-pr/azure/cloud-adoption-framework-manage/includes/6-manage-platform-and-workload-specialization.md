@@ -4,7 +4,7 @@ Workload-specific management usually requires in-depth knowledge about the speci
 
 ## Platform specialization
 
-Decentralized, workload-specific operations aren't scalable across an enterprise. But a study of the portfolio will often identify common platforms that those workloads run on. Those technology platforms (also known as technology stacks) are often at the heart of workload-specific incidents. When priority workloads share a common technology platform, it might be more valuable for central IT to focus on improving the operations of those platforms and thereby reduce or avoid workload-specific operations.
+Decentralized, workload-specific operations aren't scalable across an enterprise. But a study of the portfolio will often identify common platforms on which those workloads run. Those technology platforms (also known as technology stacks) are often at the heart of workload-specific incidents. When priority workloads share a common technology platform, it might be more valuable for central IT to focus on improving the operations of those platforms, and thereby reduce or avoid workload-specific operations.
 
 Examples of technology platforms might include data platforms, analytics platforms, container platforms, Azure Virtual Desktop platforms, enterprise resource planning (ERP) platforms, or even mainframes.
 
