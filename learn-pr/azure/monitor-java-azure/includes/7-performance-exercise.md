@@ -23,7 +23,7 @@ You can easily identify issues in their applications and quickly troubleshoot an
 
 1. On the left, navigate to **Performance** where you can see response times and request counts for operations exposed by your applications.
 
-   :::image type="content" source="../media/4-petclinic-microservices-performance.jpg" alt-text="Screenshot showing operation performance view for your Azure Spring Apps instance" lightbox="../media/4-petclinic-microservices-performance.jpg":::
+   :::image type="content" source="../media/4-petclinic-microservices-performance.jpg" alt-text="Screenshot showing operation performance view for your Azure Spring Apps instance." lightbox="../media/4-petclinic-microservices-performance.jpg":::
 
 2. Next, on the right, navigate to **Dependencies** where you can see all your dependencies and their response times and request counts.
    You can see the performance number for dependencies, particularly SQL calls:
@@ -46,7 +46,7 @@ You can easily identify issues in their applications and quickly troubleshoot an
 
 1. Select **Failures** in the Application Insights resource menu located in the **Investigate** section. In this view, you'll see top three failure response codes, top three exception types, and top three failing dependency types.
 
-   :::image type="content" source="../media/7-petclinic-microservices-failures.jpg" alt-text="Screenshot showing Failures view for your Azure Spring Apps instance" lightbox="../media/7-petclinic-microservices-failures.jpg":::
+   :::image type="content" source="../media/7-petclinic-microservices-failures.jpg" alt-text="Screenshot showing Failures view for your Azure Spring Apps instance." lightbox="../media/7-petclinic-microservices-failures.jpg":::
 
 2. On the right-hand side, select an exception in the "Top 3 exception types"  for meaningful insights and actionable stack trace::
 
@@ -134,8 +134,8 @@ Live Metrics Stream enables you to probe the beating heart of your live applicat
 
 1. On the left, under the Investigate section, navigate to **Live Metrics** where you can see live metrics practically in real time, within only one second:
 
-   :::image type="content" source="../media/4-petclinic-microservices-live-metrics.jpg" alt-text="Screenshot showing live metrics view for your Azure Spring Apps" lightbox="../media/4-petclinic-microservices-live-metrics.jpg":::
+   :::image type="content" source="../media/4-petclinic-microservices-live-metrics.jpg" alt-text="Screenshot showing live metrics view for your Azure Spring Apps." lightbox="../media/4-petclinic-microservices-live-metrics.jpg":::
 
 2. Scroll down the metrics to see the metrics for each microservice:
 
-   :::image type="content" source="../media/7-live-metrics-servers.jpg" alt-text="Screenshot showing Service live metrics view for your Azure Spring Apps" lightbox="../media/7-live-metrics-servers.jpg":::
+   :::image type="content" source="../media/7-live-metrics-servers.jpg" alt-text="Screenshot showing Service live metrics view for your Azure Spring Apps." lightbox="../media/7-live-metrics-servers.jpg":::

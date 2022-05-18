@@ -33,7 +33,7 @@ There are actually three ways to access your application's logs: Azure Storage, 
 
 5. In the **Query** search box:
 
-   :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure Spring Apps logs" lightbox="../media/8-cloud-logs.jpg":::
+   :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure Spring Apps logs." lightbox="../media/8-cloud-logs.jpg":::
 
    - to view logs, run a query such as:
 

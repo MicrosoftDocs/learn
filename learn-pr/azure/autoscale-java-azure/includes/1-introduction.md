@@ -14,4 +14,4 @@ The sample is decomposed into four core microservices. All of them are independe
 - Vets service: Stores and shows Veterinarians' information, including names and specialties.
 - API Gateway: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
 
-:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot of your Spring Apps application" lightbox="../media/4-petclinic.jpg":::
+:::image type="content" source="../media/4-petclinic.jpg" alt-text="Screenshot of your Spring Apps application." lightbox="../media/4-petclinic.jpg":::

@@ -62,19 +62,19 @@ Next, we'll verify your environment via the Azure portal.
 
 5. Verify all the applications are running and registered
 
-   :::image type="content" source="../media/3-app-selection.jpg" alt-text="screenshot showing applications under your spring apps" lightbox="../media/3-app-selection.jpg":::
+   :::image type="content" source="../media/3-app-selection.jpg" alt-text="Screenshot showing applications under your spring apps." lightbox="../media/3-app-selection.jpg":::
 
 6. On the left-hand side, select the "api-gateway" application
 
 7. The URL for your application is listed on the left-hand side properties as "URL"
 
-   :::image type="content" source="../media/3-gateway-url.jpg" alt-text="screenshot showing the Spring Apps gateway url" lightbox="../media/3-gateway-url.jpg":::
+   :::image type="content" source="../media/3-gateway-url.jpg" alt-text="Screenshot showing the Spring Apps gateway url." lightbox="../media/3-gateway-url.jpg":::
 
 In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic microservice application.
 
-:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot of your Spring Apps application" lightbox="../media/4-petclinic.jpg":::
+:::image type="content" source="../media/4-petclinic.jpg" alt-text="Screenshot of your Spring Apps application." lightbox="../media/4-petclinic.jpg":::
 
 Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample application is up and running, populated with data and now ready for you to explore.
 
-:::image type="content" source="../media/petclinic.png" alt-text="screenshot of the owners tab" lightbox="../media/petclinic.png":::
+:::image type="content" source="../media/petclinic.png" alt-text="Screenshot of the owners tab." lightbox="../media/petclinic.png":::
