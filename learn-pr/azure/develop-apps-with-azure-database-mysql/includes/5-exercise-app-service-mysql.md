@@ -4,37 +4,48 @@ In this unit, you'll build and deploy a sample PHP application to Azure App Serv
 
 First, we'll provision a MySQL flexible server with public access connectivity, configure firewall rules to allow the application to access the server, and create a production database.
 
-1. To create a MySQL flexible server, run the following command.
+We'll use the Azure portal to walk through the MySQL - Flexible Server create experience.
 
-    **Note**: Replace your values for server name, admin username and password.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-    ```azurecli-interactive
-    az mysql flexible-server create \
-    --name <your-mysql-server-name> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
-    --location centralus \
-    --admin-user <your-mysql-admin-username> \
-    --admin-password <your-mysql-admin-password> 
-    ```
+1. On the Azure portal menu, or from the Home page, select **Create a resource**.
 
-    You've now created a flexible server in the Central US region. The server is based on the Burstable B1MS compute SKU, with 32 GB storage, a 7 day backup retention period, and configured with public access connectivity.
+1. In the search box, search for and select **Azure Database for MySQL Flexible Server**.
 
-1. Next, to create a firewall rule for your MySQL flexible server to allow client connections, run the following command.
+1. In the **Azure Database for MySQL Flexible Server** create page, select **Create**.
 
-    **Note:** When both starting IP and end IP are set to 0.0.0.0, only other Azure resources (like App Services apps, VMs, AKS cluster, etc.) can connect to the flexible server.
+1. In the **Basics** tab, enter the following information:
 
-    ```azurecli-interactive
-    az mysql flexible-server firewall-rule create \
-    --name <your-mysql-server-name> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
-    --rule-name AllowAzureIPs \
-    --start-ip-address 0.0.0.0 \
-    --end-ip-address 0.0.0.0
-    ```
+    | Setting | Suggested Value |
+    | ------------ | ---------------- |
+    | Subscription | Concierge Subscription |
+    | Resource group | From the dropdown, select the resource group starting with **learn-** |
+    | Server name | Enter a globally unique name that identifies your flexible server. |
+    | Workload type | Select **For development or hobby projects** |
+    | Admin username | Enter your admin username to be used while connecting to the flexible server. |
+    | Password | Enter your admin username to be used while connecting to the flexible server. |
 
-1. To create a new MySQL production database *sampledb* to use with the PHP application, run the following command:
+    Keep the default values for all other settings.
 
-    ```azurecli-interactive
+1. After you've filled this information, navigate to the **Networking** tab.
+
+    :::image type="content" source="../media/flexible-server-basics.png" alt-text="Screenshot showing Flexible Server create blade, with red box around Networking tab.":::
+
+1. In the **Networking** tab, select **Public access (allowed IP addresses)** connectivity method and check **Allow public access from any Azure service within Azure to this server** as shown in the following screenshot.
+
+    :::image type="content" source="../media/flexible-server-networking.png" alt-text="Screenshot showing Flexible Server networking blade, with red box around Public access connectivity.":::
+
+1. Select **Review + create** to review your flexible server configuration.
+
+1. Select **Create** to provision the server. Provisioning can take a few minutes.
+
+1. After the deployment is done, select **Go to resource** to view the Azure Database for MySQL flexible server's **Overview** page.
+
+For the remainder of this exercise, we'll use the Azure Cloud Shell on the right to run the commands.
+
+To create a new MySQL production database *sampledb* to use with the PHP application, run the following command:
+
+    ```azurecli
     az mysql flexible-server db create \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
     --server-name <your-mysql-server-name> \
@@ -51,14 +62,14 @@ We'll directly clone the coded app and learn how to deploy it on Azure App Servi
 
 1. To clone the sample application repository and change to the repository root, run the following commands:
 
-    ```azurecli-interactive
+    ```azurecli
     git clone https://github.com/Azure-Samples/php-mysql-app-service.git
     cd php-mysql-app-service
     ```
 
 1. Run the following command to ensure that the default branch is `main`.
 
-    ```azurecli-interactive
+    ```azurecli
     git branch -m main
     ```
 
@@ -68,7 +79,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
 
 1. To create an App Service plan in the Free pricing tier, run the following command:
 
-    ```azurecli-interactive
+    ```azurecli
     az appservice plan create --name plan-learn \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
     --location centralus \
@@ -77,7 +88,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
 
 1. If you want to deploy an application to Azure web app using deployment methods like FTP or Local Git, you need to configure a deployment user with username and password credentials. After you configure your deployment user, you can take advantage of it for all your Azure App Service deployments.
 
-    ```azurecli-interactive
+    ```azurecli
     az webapp deployment user set \
     --user-name <your-deployment-username> \
     --password <your-deployment-password>
@@ -87,7 +98,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
 
     **Note**: Replace `<your-app-name>` with a globally unique app name (valid characters are a-z, 0-9, and -).
 
-    ```azurecli-interactive
+    ```azurecli
     az webapp create \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
     --plan plan-learn \
@@ -103,7 +114,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
 
     The `config.php` file in the sample PHP application retrieves the database connection information (server name, database name, server username and password) from environment variables using the `getenv()` function. In App Service, to set environment variables as **Application Settings** (*appsettings*), run the following command:
 
-    ```azurecli-interactive
+    ```azurecli
     az webapp config appsettings set \
     --name <your-app-name> \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
@@ -120,7 +131,7 @@ Now, we'll deploy the sample PHP application to Azure App Service using the Loca
 
 1. Since you're deploying the main branch, you need to set the default deployment branch for your App Service app to main. To set the DEPLOYMENT_BRANCH under **Application Settings**, run the following command:
 
-    ```azurecli-interactive
+    ```azurecli
     az webapp config appsettings set \
     --name <your-app-name> \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
@@ -133,13 +144,13 @@ Now, we'll deploy the sample PHP application to Azure App Service using the Loca
 
     **Note:** Replace `<deploymentLocalGitUrl>` with the URL of the Git remote that you saved in the **Create an App Service web app** step.
 
-    ```azurecli-interactive
+    ```azurecli
     git remote add azure <deploymentLocalGitUrl>
     ```
 
 1. To deploy your app by performing a `git push` to the Azure remote, run the following command. When Git Credential Manager prompts you for credentials, enter the deployment credentials that you created in **Configure a deployment user** step.
 
-    ```azurecli-interactive
+    ```azurecli
     git push azure main
     ```
 
