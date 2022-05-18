@@ -13,20 +13,3 @@ In this module, you’ll start by exploring the core functionality of Azure Data
 ## What is the main goal?
 
 By the end of this module, you’ll be able to create and connect to an instance of Azure Database for MySQL.
-
-## Learning objectives
-
-In this module, you'll will learn more about:
-
-- Azure shared disks.
-- Using Azure shared disks with virtual machines (VMs).
-- Benefits and limitations of Azure shared disks.
-
-## Prerequisites
-
-- Basic knowledge of Azure Disk Storage.
-- Basic knowledge of Azure VMs.
-- Experience using the Azure portal.
-
-> [!Note]
-> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
