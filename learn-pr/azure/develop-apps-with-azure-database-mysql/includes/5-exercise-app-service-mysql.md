@@ -12,12 +12,12 @@ First, we'll provision a MySQL flexible server with public access connectivity, 
     az mysql flexible-server create \
     --name <your-mysql-server-name> \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
-    --location southcentralus \
+    --location centralus \
     --admin-user <your-mysql-admin-username> \
     --admin-password <your-mysql-admin-password> 
     ```
 
-    You've now created a flexible server in the South Central US region. The server is based on the Burstable B1MS compute SKU, with 32 GB storage, a 7 day backup retention period, and configured with public access connectivity.
+    You've now created a flexible server in the Central US region. The server is based on the Burstable B1MS compute SKU, with 32 GB storage, a 7 day backup retention period, and configured with public access connectivity.
 
 1. Next, to create a firewall rule for your MySQL flexible server to allow client connections, run the following command.
 
@@ -71,6 +71,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
     ```azurecli-interactive
     az appservice plan create --name plan-learn \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --location centralus \
     --sku FREE --is-linux
     ```
 
