@@ -62,10 +62,10 @@ quiz:
     choices:
     - content: "Burstable"
       isCorrect: false
-      explanation: "Try again. Th Burstable tier is best suited for test and development workloads that do not require full CPU continuously."
+      explanation: "Try again. The Burstable tier is best suited for test and development workloads that do not require full CPU continuously."
     - content: "General Purpose"
       isCorrect: true
       explanation: "Correct. The General Purpose tier is the best option for business workloads such as enterprise web applications."
     - content: "Business Critical"
       isCorrect: false
-      explanation: "Try again. Business Critical tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
+      explanation: "Try again. The Business Critical tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
