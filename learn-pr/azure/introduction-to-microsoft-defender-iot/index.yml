@@ -3,8 +3,8 @@ uid: learn.introduction-to-microsoft-defender-iot
 metadata:
   moduleType: introduction
   title: Introduction to Microsoft Defender for IoT
-  description: "Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical networks environments."
-  ms.date: 05/04/2022
+  description: "Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical network environments."
+  ms.date: 05/18/2022
   author: batamig
   ms.author: bagol
   ms.topic: interactive-tutorial

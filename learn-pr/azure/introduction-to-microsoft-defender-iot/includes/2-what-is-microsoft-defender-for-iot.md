@@ -40,7 +40,7 @@ Section 52 continuously curates threat intelligence (TI) packages built specific
 
 You can keep current with the latest OT/IoT threats by keeping a Defender for IoT deployment up-to-date with the most recent TI packages.
 
-:::image type="content" source="../media/2-threat-intelligence.png" alt-text="Screenshot of how to update threat intelligence pacakges on the Azure portal." lightbox="../media/2-threat-intelligence.png":::
+:::image type="content" source="../media/2-threat-intelligence.png" alt-text="Screenshot of how to update threat intelligence packages on the Azure portal." lightbox="../media/2-threat-intelligence.png":::
 
 ## Manage your sites and sensors
 

@@ -41,7 +41,7 @@ This module will help teams like yours to evaluate whether Microsoft Defender fo
 
 ## What will we be doing?
 
-We'll review how Defender for IoT detects devices across your network and provides visibilty and analysis for your OT and security teams:
+We'll review how Defender for IoT detects devices across your network and provides visibility and analysis for your OT and security teams:
 
 * **Deploy**: What deployment options does Defender for IoT support?
 * **Detect**: What sort of alerts are triggered by Defender for IoT detection engines?

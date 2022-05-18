@@ -10,7 +10,7 @@ security-engineer
 security-operations-analyst
 technology-manager
 
-https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#role
+https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
 
 ## Level
 
@@ -33,7 +33,7 @@ Evaluate whether Microsoft Defender for IoT is the right service for your organi
 
 ## Learning objectives
 
-- Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical networks environments.
+- Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical network environments.
 - Describe how Microsoft Defender for IoT provides asset discovery across business-critical network environments.
 - Describe how Microsoft Defender for IoT can monitor your OT and IoT devices.
 
