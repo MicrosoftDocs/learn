@@ -29,7 +29,7 @@ quiz:
     - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled server, that isn't connected to Stack HCI
       isCorrect: true
       explanation: Correct, assigning a Guest Configuration Azure Policy to a non-Stack HCI Arc-enabled server is charged.
-  - content: "Azure Automanage onboards Arc-enabled servers to a range of Azure best practices. All the following are best services that Azure Automanage onboards Azure Arc-enabled servers except:"
+  - content: Azure Automanage onboards Azure Arc-enabled servers to a range of Azure best practices. All the following are best services that Azure Automanage onboards Azure Arc-enabled servers except:
     choices:
     - content: Machine Insights Monitoring
       isCorrect: false
@@ -47,7 +47,7 @@ quiz:
     choices:
     - content: Azure Policy
       isCorrect: true
-      explanation: Correct, Azure Policy is not part of Azure Automation.
+      explanation: Correct, Azure Policy isn't part of Azure Automation.
     - content: Change Tracking and Inventory
       isCorrect: false
       explanation: Incorrect, Change Tracking and Inventory are part of Azure Automation.
