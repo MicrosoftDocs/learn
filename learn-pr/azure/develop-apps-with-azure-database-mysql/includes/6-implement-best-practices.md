@@ -40,15 +40,15 @@ A good practice is to wait for five seconds before your first retry. Then follow
 
 ## Choose right compute and storage size for database
 
-It's important to analyze your workload and size your Flexible Server instances correctly for an acceptable balance between application performance and costs. You can create a flexible server in one of three compute tiers: Burstable, General Purpose, and Memory Optimized. As a starting point for choosing the compute tier, consider the detail in the following table.
+It's important to analyze your workload and size your Flexible Server instances correctly for an acceptable balance between application performance and costs. You can create a flexible server in one of three compute tiers: Burstable, General Purpose, and Business Critical. As a starting point for choosing the compute tier, consider the detail in the following table.
 
 | Compute tier | Target workloads |
 | ------------ | ---------------- |
 | Burstable | Best for workloads that don’t need the full CPU continuously. Cost-effective for smaller web applications and development workloads. |
 | General Purpose | Most business workloads that require balanced compute and memory with scalable I/O throughput. Examples include servers for hosting web and mobile apps and other enterprise applications. |
-| Memory Optimized | High-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps. |
+| Business Critical | High-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps. |
 
-You can also resize flexible servers after creation. However, you can only scale up or down between the General Purpose or Memory Optimized tiers.
+You can also resize flexible servers after creation. However, you can only scale up or down between the General Purpose or Business Critical tiers.
 
 In terms of storage, you can scale up when you are approaching storage capacity limits. You can also enable the storage auto-grow feature to ensure that the service automatically scales the storage as it nears the storage limits.
 

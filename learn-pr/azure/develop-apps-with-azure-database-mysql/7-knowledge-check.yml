@@ -66,6 +66,6 @@ quiz:
     - content: "General Purpose"
       isCorrect: true
       explanation: "Correct. The General Purpose tier is the best option for business workloads such as enterprise web applications."
-    - content: "Memory Optimized"
+    - content: "Business Critical"
       isCorrect: false
-      explanation: "Try again. Memory Optimized tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
+      explanation: "Try again. Business Critical tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
