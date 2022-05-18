@@ -6,6 +6,251 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/startups/build-team/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/2-ideal-startup-team.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/2-ideal-startup-team",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/3-risk-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/3-risk-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/4-build-diverse-teams.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/4-build-diverse-teams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/5-use-mentors.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/5-use-mentors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/build-team/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/2-found-startup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/2-found-startup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/3-success.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/3-success",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/4-failure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/4-failure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundamentals/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamentals/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/2-how-investment-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/2-how-investment-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/3-investor-types.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/3-investor-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/4-funding-rounds.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/4-funding-rounds",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/fundraising/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundraising/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/name-brand/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/name-brand/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/name-brand/2-name-company.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/name-brand/2-name-company",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/name-brand/3-personal-brand-importance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/name-brand/3-personal-brand-importance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/name-brand/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/name-brand/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/name-brand/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/name-brand/5-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/name-brand/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/name-brand/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/2-pitching-principles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/2-pitching-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/3-pitch-deck-content.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/3-pitch-deck-content",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/4-deliver-compelling-pitch.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/4-deliver-compelling-pitch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/pitch-company/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/pitch-company/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/revenue/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/revenue/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/revenue/2-revenue-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/revenue/2-revenue-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/revenue/3-generate-early-revenues.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/revenue/3-generate-early-revenues",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/revenue/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/revenue/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/revenue/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/revenue/5-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/revenue/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/revenue/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/2-articulate-idea.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/2-articulate-idea",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/3-test-assumptions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/3-test-assumptions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/4-understand-customers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/4-understand-customers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/5-experiment-power.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/5-experiment-power",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/startups/validate-idea/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/validate-idea/index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/azure/use-docker-container-dev-env-vs-code/4-forward-ports.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-docker-container-dev-env-vs-code",
       "redirect_document_id": false
