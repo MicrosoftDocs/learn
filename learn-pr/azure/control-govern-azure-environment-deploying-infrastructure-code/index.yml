@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code
+metadata:
+  moduleType: standard
+  title: Control and govern your Azure environment by deploying your infrastructure as code
+  description: Learn how to enforce controls over your Azure changes and deployments, to ensure that your infrastructure is deployed through an approved process.
+  ms.date: 04/28/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Control and govern your Azure environment by deploying your infrastructure as code
+summary: |
+  Plan how you'll harden and help secure your Azure environment, along with the controls to apply to your configuration changes and deployments. Require your infrastructure be defined as code, and protect your environment against manual changes.
+abstract: |
+  After completing this module, you'll be able to:
+    - Plan an Azure deployment strategy for multiple environments
+    - Harden and help secure Azure DevOps, GitHub, and a deployment pipeline
+    - Harden and help secure an Azure environment to ensure that changes are made through a controlled process
+    - Enable manual access in emergency situations
+prerequisites: |
+  You should be familiar with:
+    - Infrastructure as code and its benefits, and technology such as Bicep or Terraform.
+    - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+    - Git for managing your code, including branches and pull requests.
+    - Automated deployments through either GitHub Actions or Azure Pipelines.
+iconUrl: /learn/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
+levels:
+  - advanced
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - bicep
+  - terraform
+products:
+  - azure-resource-manager
+  - azure-active-directory
+  - azure-rbac
+  - github
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+units:
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.introduction
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.plan-environments
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-repositories-pipelines
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-azure-environment
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.knowledge-check
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.summary
+badge:
+  uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.badge

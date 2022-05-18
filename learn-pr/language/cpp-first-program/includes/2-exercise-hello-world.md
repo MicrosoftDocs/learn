@@ -1,4 +1,4 @@
-In this exercise, you'll become familiar with a C++ program and how to run it. You'll write a "Hello World" program that prints this phrase as output. You'll also learn some basic C++ terminology and syntax.
+In this exercise, you'll become familiar with a C++ program and how to run it. You'll write a "Hello World!" program that prints this phrase as output. You'll also learn some basic C++ terminology and syntax.
 
 To write code, you need a text editor and a compiler. To write this program, you'll use the g++ compiler. g++ is available for all major operating systems.
 
@@ -17,7 +17,7 @@ Later, you can use either the Visual Studio Code editor or the full Visual Studi
     using namespace std;
     int main()
     {
-        cout << "Hello World\n";
+        cout << "Hello World!\n";
         return 0;
     }
     ```
@@ -78,7 +78,15 @@ Next, you'll run the executable file the compiler created. You'll use a few line
    ./a.out
    ```
 
-   You should see the output "Hello World".
+   You should see the output "Hello World!".
+   
+   ```output
+   <user>@Azure:~$ code hello.cpp
+   <user>@Azure:~$ g++ hello.cpp
+   <user>@Azure:~$ ./a.out
+   Hello World!
+   <user>@Azure:~$
+   ```
 
 Congrats! You've built and run your first C++ program.
 
@@ -91,23 +99,30 @@ Part of your code prints a line of output after it runs.
 
 1. Inside `main` in your code, add `//` at the start of the line of code you wrote. This syntax turns the line into a *code comment*, which the compiler ignores. Then, create these lines of code or paste in the following snippet:
 
+    > [!TIP]
+    > To edit the previous hello.cpp, type `code hello.cpp` in the terminal.
+
     ```cpp
     #include <iostream>
     using namespace std;
     int main()
     {
-        // cout << "Hello World\n" << endl;
+        // cout << "Hello World!\n" << endl;
         cout << "Congratulations!";
         cout << " ";
-        cout << "You wrote your first lines of code in C++!";
+        cout << "You wrote your first lines of code in C++.\n";
         return 0;
     }
     ```
 
-1. Run the code again.  This time, you should see the following output:
+1. Run the code again. This time, you should see the following output:
 
     ```output
-    Congratulations! You wrote your first lines of code in C++!
+    <user>@Azure:~$ code hello.cpp
+    <user>@Azure:~$ g++ hello.cpp
+    <user>@Azure:~$ ./a.out
+    Congratulations! You wrote your first lines of code in C++.
+    <user>@Azure:~$
     ```
 
 > [!NOTE]

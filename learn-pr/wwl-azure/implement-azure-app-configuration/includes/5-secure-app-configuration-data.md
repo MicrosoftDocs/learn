@@ -67,7 +67,7 @@ Creating an App Configuration store with a user-assigned identity requires that 
 Create an identity using the `az identity create` command:
 
 ```bash
-az identity create -resource-group myResourceGroup --name myUserAssignedIdentity
+az identity create --resource-group myResourceGroup --name myUserAssignedIdentity
 ```
 
 Assign the new user-assigned identity to the `myTestAppConfigStore` configuration store:

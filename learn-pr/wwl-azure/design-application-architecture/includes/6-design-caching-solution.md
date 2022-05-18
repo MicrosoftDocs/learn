@@ -48,7 +48,7 @@ The following diagram shows how cache works in applications.
 
 Azure Cache for Redis improves application performance by supporting common application architecture patterns. Some of the most common include the following patterns.
 
-| **Audience**| **Azure API Management benefits** |
+| **Audience**| **Azure Cache for Redis** |
 | - |- |
 | Data cache| Databases are often too large to load directly into a cache. It's common to use the cache-aside pattern to load data into the cache only as needed. When the system makes changes to the data, the system can also update the cache, which is then distributed to other clients. Additionally, the system can set an expiration on data, or use an eviction policy to trigger data updates into the cache. |
 | Content cache| Many web pages are generated from templates that use static content such as headers, footers, banners. These static items shouldn't change often. Using an in-memory cache provides quick access to static content compared to backend datastores. This pattern reduces processing time and server load, allowing web servers to be more responsive. It can allow you to reduce the number of servers needed to handle loads. Azure Cache for Redis provides the Redis Output Cache Provider to support this pattern with ASP.NET. |

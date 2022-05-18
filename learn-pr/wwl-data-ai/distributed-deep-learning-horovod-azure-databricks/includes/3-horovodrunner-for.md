@@ -26,7 +26,7 @@ Once you have tested your single-node code to train a deep learning model, you h
 1. Specify how you want to partition or sample the data so that each worker uses a unique subset of the data to train a model. As a best practice, make sure the subsets are all the same size. Depending on the input dataset, there are several techniques to do the sampling. For example, you could use Petastorm to work with datasets in Apache Parquet format. Learn more about the open-source library Petastorm [here](https://github.com/uber/petastorm).
 1. Scale the learning rate by the number of workers to make sure the weights are adjusted correctly after each epoch.
 1. Use the Horovod distributed optimizer to handle the communication between workers.
-1. Broadcast the initial parameters so al workers start with the same parameters.
+1. Broadcast the initial parameters so all workers start with the same parameters.
 1. Save checkpoints only on worker 0 to prevent conflicts between workers.
 
 ### Use HorovodRunner

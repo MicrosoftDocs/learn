@@ -1,36 +1,36 @@
-Components in web applications give developers the freedom to reuse portions of the user-interface throughout their application. Razor Class Libraries allow those components to be shared and reused in many applications.
+Components in web applications give developers the ability to reuse portions of an application user interface throughout the application. By using Razor class libraries, developers can share and reuse these components across many applications.
 
-Here, you will learn how to create a Razor class library and how to use it to share rendered and static content for Blazor applications to customize and present.
+In this unit, you'll learn how to create a Razor class library and then use it to share rendered and static content for Blazor applications to customize and display.
 
-## Defining Razor Class Libraries
+## About Razor class libraries
 
-A Razor class library is a .NET project type that contains Razor Components, Pages, HTML, CSS, JavaScript, images, and other static web content that can be referenced by a Blazor application.  Just like other .NET Class Library projects, they can be bundled as a NuGet package and shared on NuGet package repositories like NuGet.org
+A Razor class library is a .NET project type that contains Razor components, pages, HTML, Cascading Style Sheet (CSS) files, JavaScript, images, and other static web content that can be referenced by a Blazor application. Like other .NET class library projects, Razor class libraries can be bundled as a NuGet package and shared on NuGet package repositories such as NuGet.org.
 
-Let's look at the default template for creating a Razor Class library.
+Let's look at the default template for creating a Razor class library.
 
-## Create a project with the default template
+## Create a project by using the default template
 
-You can create a Razor class library in Visual Studio through the typical File - New Project dialog
+You can optionally begin creating a Razor class library in Visual Studio by selecting **File** > **New Project**.
 
-![Visual Studio screenshot of New Project Dialog and the Razor Component Library Template](../media/visual-studio-create.png)
+![Screenshot of the "Create a new project" pane Razor component library template links in Visual Studio.](../media/visual-studio-create.png)
 
-Projects can also be created at the command line with this command:
+You can also create projects on a command-line interface by running the following command:
 
 ```dotnetcli
 dotnet new razorclasslib -o MyProjectName
 ``` 
 
-This template delivers an initial component called `Component1` that demonstrates several important features your components can use:
+This template delivers an initial component named *Component1*, which contains several important features that your components can use:
 
-- Isolated CSS with a CSS Stylesheet named `Component1.razor.css` located in the same folder as `Component1.razor` that is conditionally included by a Blazor application that references the `Component1` component.
-- Static content like images and JavaScript files that are available to a Blazor application at runtime and referenced inside of `Component1`.  This content is delivered in a `wwwroot` folder that behaves the same as a `wwwroot` folder in an ASP.NET Core or Blazor application.
-- .NET code that executes functions residing in the included JavaScript file
+- An isolated cascading style sheet named *Component1.razor.css*, which is stored in the same folder as *Component1.razor*. The *Component1.razor.css* file is conditionally included in a Blazor application that references *Component1*.
+- Static content, such as images and JavaScript files, which is available to a Blazor application at runtime and referenced within *Component1*. This content is delivered in a *wwwroot* folder that behaves in the same way as a *wwwroot* folder in an ASP.NET Core or Blazor application.
+- .NET code, which executes functions that reside in the included JavaScript file.
 
-![Screenshot of Visual Studio Solution Explorer showing Default Project Contents](../media/solution-structure.png)
+![Screenshot of Visual Studio Solution Explorer, showing the default project contents.](../media/solution-structure.png)
 
-### Differences between Class Library and Razor class library
+### Differences between a class library and a Razor class library
 
-A Class Library is a common package delivery structure in .NET applications, and the Razor class library is similar in structure with a few other features configured in the project file.
+A class library is a common package delivery structure in .NET applications, and a Razor class library is similar in structure with a few other features configured in the project file.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Razor">
@@ -53,13 +53,13 @@ A Class Library is a common package delivery structure in .NET applications, and
 </Project>
 ```
 
-- The project file contains an SDK reference to `Microsoft.NET.Sdk.Razor` to declare it contains and creates razor content as a Razor class library
+- The project file contains an SDK reference to *Microsoft.NET.Sdk.Razor* to declare that it contains and creates Razor content as a Razor class library.
 - The `SupportedPlatform` entry declares that this library can be used in a `browser` platform - namely WebAssembly.
-- The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework.  This allows developers to use those simple components to help them build more complex components.
+- The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework. This lets you use those simple components to help you build more complex components.
 
-### Razor Component Contents
+### Razor component contents
 
-The initial Razor component delivered is simple, containing just an HTML `div` element with a short block of text:
+The initial Razor component that's delivered is simple. It contains only an HTML `div` element with a short block of text:
 
 ```razor
 <div class="my-component">
@@ -67,11 +67,11 @@ The initial Razor component delivered is simple, containing just an HTML `div` e
 </div>
 ```
 
-This component will interact with other Blazor components and pages that reference it in the same way that you would expect a component delivered in the same project to behave, with the CSS isolated script in `Component1.razor.css` rendered inline with the rest of the application's CSS in the application.css file.
+This component interacts with other Blazor components and pages that reference it in the same way that you would expect a component delivered in the same project to behave. That is, the CSS isolated script in the *Component1.razor.css* file is rendered inline with the rest of the application's CSS in the *application.css* file.
 
-### Static Asset Delivery
+### Static asset delivery
 
-The contents of the `wwwroot` folder can be referenced relatively among the other contents of that folder and the components individual CSS files like `Component1.razor.css` as files in the same base folder.  For example, the default CSS adds a background image style using the `background.png` image in the `wwwroot` folder.  No paths are required to make this reference from the CSS to the content residing in the `wwwroot` folder.
+You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder and the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
 
 ```css
 .my-component {
@@ -79,21 +79,21 @@ The contents of the `wwwroot` folder can be referenced relatively among the othe
 }
 ```
 
-The contents of the `wwwroot` folder are available to be referenced by hosted Blazor applications with an absolute folder reference in the format:
+The contents of the *wwwroot* folder are available to be referenced by hosted Blazor applications with an absolute folder reference in the format:
 
 ```dotnetcli
 /_content/{PACKAGE_ID}/{PATH_AND_FILENAME_INSIDE_WWWROOT}
 ```
 
-### Referencing a Razor class library
+### Reference a Razor class library
 
-In a .NET solution, where our Razor class library resides on disk next to a Blazor application that will reference the library, we can update the Blazor application to reference the Razor class library using the standard Visual Studio `Add Reference` dialog and using the .NET CLI add reference command.
+In a .NET solution, where the Razor class library resides on the disk next to a Blazor application that references the library, you can update the Blazor application to reference the Razor class library by using the standard Visual Studio **Add Reference** dialog and by using the .NET CLI `add reference` command, as shown here:
 
 ```dotnetcli
 dotnet add reference ../MyClassLibrary
 ```
 
-For libraries that are delivered to us in NuGet package form, we can add a reference using the Visual Studio NuGet package installer or using the .NET CLI add package command.
+For libraries that are delivered in NuGet package form, you can add a reference by using the Visual Studio NuGet package installer or by using the .NET CLI `add package` command, as shown here:
 
 ```dotnetcli
 dotnet add package MyClassLibrary

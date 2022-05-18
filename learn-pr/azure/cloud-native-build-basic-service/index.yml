@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.cna-build-basic-service
 metadata:
   title: Build a basic cloud-native service using PostgreSQL and Node.js
@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - azure-database-postgresql
+subjects:
+- cloud-computing
 units:
 - learn.azure.cna-build-basic-service.1-introduction
 - learn.azure.cna-build-basic-service.2-define-services

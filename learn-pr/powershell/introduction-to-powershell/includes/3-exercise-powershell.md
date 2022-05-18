@@ -24,7 +24,7 @@ Before beginning this exercise, be sure to activate the sandbox.
     WSManStackVersion              3.0
    ```
 
-   The output provides information about your version of PowerShell and also your platform and edition.
+   The output provides information about your PowerShell version, as well as your platform and edition.
 
    For information limited to your version of PowerShell, you can run a modified version of `$PSVersionTable`.
 
@@ -44,4 +44,4 @@ Before beginning this exercise, be sure to activate the sandbox.
 
     This output gives you more details about your version of PowerShell.
 
-Running `$PSVersionTable` results in output that looks like a table but is actually an object. For this reason, you can use a period (`.`) to access a specific property, such as `PSVersion`.
+Running `$PSVersionTable` results in output that looks like a table, but is actually an object. For this reason, you can use a period (`.`) to access a specific property, such as `PSVersion`.

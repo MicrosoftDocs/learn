@@ -30,7 +30,7 @@ We need three main packages for our application:
 
 In an empty directory, start by installing the necessary components by using npm. Then configure Snowpack and add the scripts to the *package.json* file.
 
-1. Open a terminal or command window on Mac or Linux. On Windows, open a bash terminal window. Then, run the following command to create the directory, and the *package.json* file for npm.
+1. Open a terminal or command window. Then, run the following commands to create the directory, and the *package.json* file for npm. On Mac or Linux, use `mkdir`, and on Windows, use `md` to create a directory.
 
     ```bash
     # Windows
@@ -39,6 +39,7 @@ In an empty directory, start by installing the necessary components by using npm
     md public
     touch package.json
     echo "{}" > package.json
+
     # Linux or macOS
     mkdir react-recipes && cd react-recipes
     mkdir src

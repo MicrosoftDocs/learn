@@ -5,7 +5,7 @@ In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP 
 Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service.
 
 ```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.16.1:config
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config
 ```
 
 > [!IMPORTANT]  
@@ -22,17 +22,17 @@ Let's configure the application by executing the configuration goal in the Maven
 |  `Define value for pricingTier [P1v3]:`  |  `P1v3`  |
 |  `Confirm (Y/N) [Y]:` | `Y` |
 
-After you run the command, you'll see the following messages in the terminal.
+After you run the command, you'll see look like the following messages in the terminal.
 
 ```bash
-$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.16.1:config
+$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
 [INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
 [INFO] 
-[INFO] --- azure-webapp-maven-plugin:1.16.1:config (default-cli) @ jakartaee-app-on-jboss ---
+[INFO] --- azure-webapp-maven-plugin:2.5.0:config (default-cli) @ jakartaee-app-on-jboss ---
 [WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
 [INFO] Auth type: OAUTH2
 Username: YOUR_EMAIL_ADDRESS@microsoft.com
@@ -93,7 +93,7 @@ After the command finishes, you can see that following entry is added in your Ma
       <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.16.1</version>
+        <version>2.5.0</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>********-****-****-****-************</subscriptionId>
@@ -104,7 +104,7 @@ After the command finishes, you can see that following entry is added in your Ma
           <runtime>
             <os>Linux</os>
             <javaVersion>Java 8</javaVersion>
-            <webContainer>Jbosseap 7.2</webContainer>
+            <webContainer>Jbosseap 7</webContainer>
           </runtime>
           <deployment>
             <resources>

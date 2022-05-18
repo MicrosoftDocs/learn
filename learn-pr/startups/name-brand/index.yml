@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - consumer
+subjects:
+- customer-relationship-management
 units:
 - learn.startups.name-brand.introduction
 - learn.startups.name-brand.name-company

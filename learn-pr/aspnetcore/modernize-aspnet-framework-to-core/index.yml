@@ -28,6 +28,8 @@ products:
 - dotnet
 - aspnet
 - aspnet-core
+subjects:
+- development-tools
 units:
 - learn.modernize-aspnet-framework-to-core.1-introduction
 - learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnet-core

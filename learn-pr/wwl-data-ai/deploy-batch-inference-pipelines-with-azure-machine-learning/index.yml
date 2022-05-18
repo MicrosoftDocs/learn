@@ -24,6 +24,8 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- machine-learning
 units:
 - learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.1-introduction
 - learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.2-pipelines

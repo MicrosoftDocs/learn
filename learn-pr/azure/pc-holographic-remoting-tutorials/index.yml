@@ -36,7 +36,9 @@ prerequisites: |
   - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- custom-app-development
+units:
 - learn.azure.pc-holographic-remoting-tutorials-mrtk.1-introduction
 - learn.azure.pc-holographic-remoting-tutorials-mrtk.2-get-started-with-pc-holographic-remoting
 - learn.azure.pc-holographic-remoting-tutorials-mrtk.3-exercise-get-started-with-pc-holographic-remoting

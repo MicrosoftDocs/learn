@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.prepare-jupyter-notebook-workspace
+title: Prepare the Jupyter notebook workspace
+metadata:
+  title: Prepare the Jupyter notebook workspace
+  description: Prepare the Jupyter notebook workspace.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 03/14/2022
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-prepare-jupyter-notebook-workspace.md)]

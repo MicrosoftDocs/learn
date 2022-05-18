@@ -3,7 +3,7 @@ uid: learn.azure.enterprise-scale-organizational-design-principles
 metadata:
   title: Enterprise-scale architecture organizational design principles
   description: Enterprise-scale architecture organizational design principles
-  ms.date: 09/21/2020
+  ms.date: 04/14/2022
   author: kristopherjturner
   ms.author: krturner
   ms.topic: interactive-tutorial
@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn.azure.enterprise-scale-organizational-design-principles.1-introduction
 - learn.azure.enterprise-scale-organizational-design-principles.2-enterprise-enrollment-azure-ad-tenants

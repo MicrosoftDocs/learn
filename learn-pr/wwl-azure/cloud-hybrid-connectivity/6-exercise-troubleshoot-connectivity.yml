@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cloud-hybrid-connectivity.lab-exercise
+title: 'Exercise: Troubleshoot cloud and hybrid connectivity'
+metadata:
+  title: 'Exercise: Troubleshoot cloud and hybrid connectivity'
+  description: "Exercise: Troubleshoot cloud and hybrid connectivity"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-troubleshoot-connectivity.md)]
+interactive: powershell

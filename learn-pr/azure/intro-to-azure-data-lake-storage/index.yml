@@ -29,6 +29,8 @@ roles:
   - database-administrator
 products:
   - azure-data-lake-storage
+subjects:
+- data-lake
 units:
 - learn.intro-to-azure-data-lake-storage.introduction
 - learn.intro-to-azure-data-lake-storage.what-is-azure-data-lake-storage

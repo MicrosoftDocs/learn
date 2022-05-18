@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-next-steps.threadx-user-guide
+title: ThreadX user guide
+metadata:
+  title: ThreadX user guide
+  description: Overview of ThreadX user guide
+  ms.date: 03/28/2022
+  author: edlamie80
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-threadx-user-guide.md)]

@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Route network traffic through Azure Firewall
   description: Exercise - Route network traffic through Azure Firewall
-  ms.date: 07/05/2021
+  ms.date: 05/11/2022
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial

@@ -59,7 +59,7 @@ You then see how to monitor the health of the cluster and pods that run your app
     ```
 
 7.  Create a file named **azure-vote.yaml**, and then copy it into the following `YAML` definition. If you use the Azure Cloud Shell, you can create this file-using **vi** or **nano** as if working on a virtual or physical system:
-
+    
     ```YAML
     apiVersion: apps/v1
     kind: Deployment
@@ -110,7 +110,7 @@ You then see how to monitor the health of the cluster and pods that run your app
         rollingUpdate:
           maxSurge: 1
           maxUnavailable: 1
-      minReadySeconds: 5 
+      minReadySeconds: 5
       template:
         metadata:
           labels:

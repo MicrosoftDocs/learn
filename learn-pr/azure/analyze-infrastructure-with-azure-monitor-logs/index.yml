@@ -3,7 +3,7 @@ uid: learn.analyze-infrastructure-with-azure-monitor-logs
 metadata:
   title: Analyze your Azure infrastructure by using Azure Monitor logs
   description: Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
-  ms.date: 09/06/2019
+  ms.date: 03/03/2022
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,6 +26,9 @@ roles:
 products:
 - azure
 - azure-monitor
+subjects:
+- infrastructure
+- it-management-monitoring
 units:
 - learn.analyze-infrastructure-with-azure-monitor-logs.1-introduction
 - learn.analyze-infrastructure-with-azure-monitor-logs.2-features-azure-monitor-log

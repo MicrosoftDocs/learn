@@ -12,17 +12,18 @@ title: Explore input and output binding types
 durationInMinutes: 10
 content: |
   [!include[](includes/2-explore-input-and-output-binding-types-portal-lesson.md)]
-#tasks:
-#- action: exists
-#  environment: azure
-#  hint: 'Please make sure that you have named the resource group "myResourceGroup" and that it was added to the "eastus" location'
-#  azure:
-#    location: eastus
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: Microsoft.Storage/storageAccounts
-#      name: docsproxyppea427
-#      tags:
-#        triplecrown: true
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: 'Please make sure that you have named the resource group "myResourceGroup" and that it was added to the "eastus" location'
+#   azure:
+#     location: eastus
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: Microsoft.Storage/storageAccounts
+#       name: docsproxyppea427
+#       tags:
+#         triplecrown: true

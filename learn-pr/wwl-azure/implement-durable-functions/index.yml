@@ -27,6 +27,9 @@ roles:
 products:
 - azure
 - azure-functions
+subjects:
+- serverless-compute
+- data-analytics
 units:
 - learn.wwl.implement-durable-functions.introduction
 - learn.wwl.implement-durable-functions.explore-app-patterns

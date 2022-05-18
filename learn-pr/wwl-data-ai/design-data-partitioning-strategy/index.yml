@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- data-engineering
 units:
 - learn.wwl.design-data-partitioning-strategy.introduction
 - learn.wwl.design-data-partitioning-strategy.denormalize-data-your-model

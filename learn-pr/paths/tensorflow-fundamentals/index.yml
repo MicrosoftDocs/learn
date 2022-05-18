@@ -10,6 +10,10 @@ metadata:
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-08202021
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
@@ -24,6 +28,8 @@ roles:
 - student
 products: 
 - azure-machine-learning
+subjects:
+- development-tools
 modules:
 - learn.tensorflow.intro-machine-learning-keras
 - learn.tensorflow.intro-computer-vision

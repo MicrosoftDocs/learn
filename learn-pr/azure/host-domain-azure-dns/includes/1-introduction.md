@@ -1,4 +1,4 @@
-Azure DNS enables you to host your DNS records for your domains on Azure infrastructure. With Azure DNS, you can use the same credentials, APIs, tools, and billing as your other Azure services.
+Azure DNS lets you host your DNS records for your domains on Azure infrastructure. With Azure DNS, you can use the same credentials, APIs, tools, and billing as your other Azure services.
 
 Let's say that your company recently bought the custom domain name wideworldimporters.com from a third-party domain name registrar. The domain name is for a new website that your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server.
 
@@ -10,8 +10,8 @@ This module shows you how to configure Azure DNS to host your domain. You'll als
 
 In this module, you will:
 
-- Configure Azure DNS to host your domain.
+- Configure Azure DNS to host your domain
 
 ## Prerequisites
 
-- Knowledge of networking concepts, like name resolution and IP addresses.
+- Knowledge of networking concepts like name resolution and IP addresses

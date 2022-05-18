@@ -6,7 +6,7 @@ The following sections describe reports included in the Azure Cost Management Po
 
 ## VM RI Coverage (shared recommendation)
 
-The report provides recommendations for VM RI purchases at a shared scope, even if you haven't made any reservation purchases. The report is split between on-demand VM usage and RI VM usage over the selected period. 
+The report provides recommendations for VM RI purchases at a shared scope, even if you haven't made any reservation purchases. The report is split between on-demand VM usage and RI VM usage over the selected period.
 
 To use the report, select the drill-down filter, as marked in the following image.
 
@@ -19,9 +19,9 @@ For each drill-down level, the following filters are applied to the report:
 - The coverage data on the right is the filter showing how much usage is charged using the on-demand rate vs. how much is covered by the reservation. Current reservation usage is shown in dark blue, while more expensive on-demand usage is shown in light blue.
 - Recommendations are also filtered.
 
-The table of recommendations below the graphs provides recommendations for reservation purchases, based on the VM sizes used.
+The table of recommendations below the graphs provides recommendations for reservation purchases based on the VM sizes used.
 
-The _Normalized Size_ and _Recommended Quantity Normalized_ values help you normalize the purchase to the smallest size for an instance size flexibility group. The information is helpful if you plan to purchase just one reservation for all sizes in the instance size flexibility group.
+The *Normalized Size* and *Recommended Quantity Normalized* values help you normalize the purchase to the smallest size for an instance size flexibility group. The information is helpful if you plan to purchase just one reservation for all sizes in the instance size flexibility group.
 
 ## VM RI Coverage (single recommendation)
 
@@ -51,7 +51,7 @@ Pricing information in the following image is an example for informational purpo
 
 The report helps you understand where and how much of a reserved instance (RI) benefit is applied per region, subscription, resource group, or resource. The report uses amortized usage data to show the view.
 
-You can apply a filter on _chargetype_ to view RI underutilization data only.
+You can apply a filter on *chargetype* to view RI underutilization data only.
 
 Pricing information in the following image is an example for informational purposes only.
 

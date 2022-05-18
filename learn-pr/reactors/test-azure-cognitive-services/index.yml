@@ -38,6 +38,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- artificial-intelligence
 units:
 - learn.reactors.test-azure-cognitive-services.1-introduction
 - learn.reactors.test-azure-cognitive-services.2-computer-vision
@@ -47,4 +49,4 @@ units:
 - learn.reactors.test-azure-cognitive-services.6-key-phrases-api
 - learn.reactors.test-azure-cognitive-services.7-entities-api
 badge:
-  uid: learn.reactors.test-azure-cognitive-services.badge 
+  uid: learn.reactors.test-azure-cognitive-services.badge

@@ -32,6 +32,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.github-actions-ci.1-introduction
 - learn.github.github-actions-ci.2-github-actions-workflows-ci

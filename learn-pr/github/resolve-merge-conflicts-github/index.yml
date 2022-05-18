@@ -3,7 +3,7 @@ uid: learn.github.merge-conflict-resolution-github
 metadata:
   title: "Settle competing commits by using merge conflict resolution on GitHub"
   description: Learn to settle overlapping commits across branches by using merge conflict resolution.
-  ms.date: 06/26/2020
+  ms.date: 05/12/2022
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -31,6 +31,9 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
+- cloud-computing
 units:
 - learn.github.merge-conflict-resolution-github.1-introduction
 - learn.github.merge-conflict-resolution-github.2-what-are-merge-conflicts

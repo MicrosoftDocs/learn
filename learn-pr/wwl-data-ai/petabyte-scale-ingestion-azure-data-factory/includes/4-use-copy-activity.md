@@ -1,7 +1,7 @@
 Once the creation of the Data Factory instance is complete, you can go to the resource where you can begin to create your data pipelines by clicking on the **Author & Monitor** button. This will open up the following screen:
 
 > [!div class="mx-imgBorder"]  
-> ![Authoring in Azure Data Factory](../media/author-azure-data-factory.png)
+> ![Authoring in Azure Data Factory](../media/author-azure-data-factory.png) 
 
 The first step in your pipeline is creating a Copy Activity that copies data between the source and destination using the following steps. 
 

@@ -7,7 +7,7 @@ CSPM uses a combination of tools and services:
 - **Zero Trust-based access control**: Considers the active threat level during access control decisions.
 - **Real-time risk scoring**: To provide visibility into top risks.
 - **Threat and vulnerability management (TVM)**: Establishes a holistic view of the organization's attack surface and risk and integrates it into operations and engineering decision-making.
-- **Discover sharing risks**: To understand the data exposure of enterprise intellectual property, on sanctioned and unsanctioned cloud services.
+- **Discover risks**: To understand the data exposure of enterprise intellectual property, on sanctioned and unsanctioned cloud services.
 - **Technical policy**: Apply guardrails to audit and enforce the organization's standards and policies to technical systems.
 - **Threat modeling systems and architectures**: Used alongside other specific applications.
 

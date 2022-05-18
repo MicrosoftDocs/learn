@@ -1,6 +1,6 @@
-In this exercise you use GitHub Learning Lab to plan and execute the successful upload of a project to GitHub.
+In this exercise, you'll use GitHub Learning Lab to plan and execute the successful upload of a project to GitHub.
 
-GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
+GitHub Learning Lab is an integrated experience that's easy to use. You'll get feedback and instructions throughout the lab as you work in your GitHub repository.
 
 Here are a few suggestions to make the Learning Lab exercise more enjoyable.
 

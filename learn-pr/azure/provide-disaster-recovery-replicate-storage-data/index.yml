@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-storage
+subjects:
+- data-ai
 units:
 - learn.azure.provide-disaster-recovery-replicate-storage-data.introduction
 - learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-data-redundancy-options

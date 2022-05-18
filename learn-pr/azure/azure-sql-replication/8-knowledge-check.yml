@@ -1,0 +1,79 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-replication.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Reviewing and assessing lessons learned on change data capture (CDC), change tracking, and SQL Data Sync."
+  ms.date: 3/21/2022
+  author: abhimantiwari
+  ms.author: abhtiwar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 2
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is the default retention policy for the change data capture (CDC) cleanup process?"
+    choices: 
+    - content: "1 day"
+      isCorrect: false
+      explanation: "Review the change data capture (CDC) section."
+    - content: "2 days"
+      isCorrect: false
+      explanation: "Review the change data capture (CDC) section."
+    - content: "3 days"
+      isCorrect: true
+      explanation: "That's correct. The CDC cleanup process is responsible for enforcing the retention-based cleanup policy. By default, three days of data are retained."
+  - content: "Which of the following tools offers automatic or on-demand bi-directional data synchronization?"
+    choices:
+    - content: "Change Data Capture (CDC)"
+      isCorrect: false
+      explanation: "CDC tracks and loads data changes but keeps them on the same source database."
+    - content: "SQL Data Sync"
+      isCorrect: true
+      explanation: "That's correct. SQL Data Sync synchronizes the data changes either uni-directionally or bi-directionally."
+    - content: "Change tracking"
+      isCorrect: false
+      explanation: "Change tracking checks whether a change happened on your table and what type of change happened."
+  - content: "Which is the default function that CDC provides for querying all the changes on table within the specified LSN range?"
+    choices:
+    - content: "cdc.fn_cdc_get_all_changes_<capture_instance>"
+      isCorrect: true
+      explanation: "That's correct. The function cdc.fn_cdc_get_all_changes_<capture_instance> is used to query for all changes on table within the specified LSN range."
+    - content: "cdc.fn_cdc_get_net_changes_<capture_instance>"
+      isCorrect: false
+      explanation: "If the capture instance is configured to support net changes, the enumeration function cdc.fn_cdc_get_net_changes_<capture_instance> also gets created which returns one net change row for each source row changed within the specified LSN range."
+  - content: "You can enable SQL Data Sync on tables that don't have a primary key (PK)"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Each table that you want to sync must have a primary key."
+    - content: "False"
+      isCorrect: true
+      explanation: "That's correct. Each table that you want to sync must have a primary key."
+  - content: "Which tool should I use if I want to identify whether an insert / update / delete was executed on my data, but without needing a historical record of my data changes?"
+    choices:
+    - content: "Change data capture (CDC)"
+      isCorrect: false
+      explanation: "CDC tracks insert, update, and delete activity that applies to a table and also records historical data changes."
+    - content: "SQL Data Sync"
+      isCorrect: false
+      explanation: "SQL Data Sync is used to synchronize the data you select bi-directionally across multiple databases, both on-premises and in the cloud."
+    - content: "Change tracking"
+      isCorrect: true
+      explanation: "That's correct. Change tracking should be used to verify whether a row has changed and to get information about the change."

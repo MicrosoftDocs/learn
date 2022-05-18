@@ -9,8 +9,12 @@ metadata:
   ms.date: 08/03/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
   ms.product: learning-tensorflow
+  ms.contributors:
+  - cassieb-08202021
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/4-speech-model.ipynb

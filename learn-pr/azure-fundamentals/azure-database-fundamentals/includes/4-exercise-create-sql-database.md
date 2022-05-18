@@ -4,7 +4,7 @@ In this exercise, you'll create a SQL database in Azure and then query the data 
 
 ## Task 1: Create the database
 
-In this task, you create a SQL database based on the *AdventureWorksLT* sample database.
+In this task, you'll create a SQL database based on the *AdventureWorksLT* sample database.
  
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
  
@@ -16,7 +16,7 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
      | ----- | ----- |
      | **Project details** |
      | Subscription | Concierge Subscription |
-     | Resource group | \[sandbox resource group name\] | 
+     | Resource group | <rgn>[Sandbox resource group]</rgn> | 
      | **Database details** |
      | Database name | db1 |
      | Server | Select **Create new** |
@@ -80,15 +80,15 @@ In this task, you create a SQL database based on the *AdventureWorksLT* sample d
 
 1. In the command bar, select **Set server firewall**. The **Firewall settings** page appears.
  
-1. Set **Allow Azure services and resources to access this server** to **Yes**, leaving other settings as default.
+1. Check the box next to **Allow Azure services and resources to access this server** at the bottom of the page, leaving other settings as default.
 
-1. In the command bar, select **Save** to update firewall settings, and then close the Firewall settings pane.
+1. Select **Save** to update firewall settings, then close the Firewall settings pane.
 
 ## Task 2: Test the database
 
-In this task, you configure the server and run a SQL query.
+In this task, you'll configure the server and run a SQL query.
 
-1. In Azure resources menu select **All resources**. Search for and select the **SQL database** resource Type, and ensure that your new database was created. You might need to refresh the page. 
+1. In Azure resources menu, select **All resources**. Search for and select the **SQL database** resource Type, and ensure that your new database was created. You might need to refresh the page. 
   
     :::image type="content" source="../media/sql-database-d2ebb307.png" alt-text="Screenshot of the SQL database Query editor preview.":::
     
@@ -108,13 +108,13 @@ In this task, you configure the server and run a SQL query.
 
 1. In the **Client IP address** section, your IP will be shown (verify that it is the same client IP address from the error you received in the previous step). 
 
-1. In the command bar select **Add client IP**. This will add a **Rule name** that contains your IP address in both the **Start IP** and **End IP** fields.
+1. In the command bar select **Add your client IPv4 address**. This will add a **Rule name** that contains your IP address in both the **Start IP** and **End IP** fields.
  
-1. In the command bar, select **Save** to save this firewall rule. 
+1. Select **Save** to save this firewall rule. 
  
     :::image type="content" source="../media/sql-server-firewall-settings-1b917b84.png" alt-text="Screenshot of the SQL Server firewall settings page, with your IP settings and the command bar buttons highlighted." lightbox="../media/sql-server-firewall-settings-1b917b84.png" :::
     
-1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and then select **Query editor (preview)** from the menu. sign-in page. 
+1. Select your db1 database in the breadcrumb at the top of the page to return to your SQL database, and then select **Query editor (preview)** from the menu.
 
 1. Sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you still get an error, verify the client IP address in the error, and return to **Firewall settings** to add the correct client IP address.
   

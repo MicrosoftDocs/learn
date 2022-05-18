@@ -28,6 +28,9 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- data-engineering
+- virtual-machine
 modules:
 - learn.wwl.manage-azure-stack-hci-clusters
 - learn.wwl.integrate-azure-services-with-azure-stack-hci

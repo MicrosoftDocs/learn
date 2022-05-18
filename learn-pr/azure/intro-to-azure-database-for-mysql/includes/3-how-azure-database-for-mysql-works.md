@@ -57,9 +57,6 @@ Let's examine more closely the differences in features:
   - On Flexible Server, backups are automated with retention between 1 and 35 days.
   - On MySQL on Azure VMs, backups are managed manually.
 
-> [!IMPORTANT]
-> Azure Database for MySQL Flexible Server is in Preview. Therefore, not all planned features are currently available.
-
 ## Azure Database for MySQL architecture
 
 Let's examine the Azure Database for MySQL architecture. We'll focus on the Flexible Server deployment mode. In the following diagram, an instance of Azure Database for MySQL is deployed. It's configured with Azure Premium Storage for data and logs. MySQL also has access to locally redundant storage for backup.

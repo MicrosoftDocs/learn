@@ -1,6 +1,6 @@
 Unit testing is a fundamental part of an Agile methodology. Visual Studio provides the Test project template. Use this template to create the unit tests for your applications, and you can apply the same technique to testing for Azure Functions.
 
-In the luxury watch online website scenario, your development team has a policy to achieve at least 80% coverage of code in unit testing. You would like to implement the same policy for Azure Functions.
+In the luxury watch online website scenario, your development team has a policy to achieve at least 80% code coverage in unit testing. You would like to implement the same policy for Azure Functions.
 
 In this unit, you'll see how to use the `xUnit` test framework with Visual Studio to test Azure Functions.
 

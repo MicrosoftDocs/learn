@@ -12,7 +12,7 @@ You can manage updates from the administrator portal and use the **Updates** sec
 You can view the current version of Azure Stack Hub in the **Updates** blade. To open:
 
 1.  Open the Azure Stack Hub administrator portal.
-2.  Select **Dashboard**. In the **Updates** pane, the current version is listed:
+2.  Select **Dashboard**. In the **Updates** pane, the current version is listed.
 
 ## Install updates and monitor progress
 

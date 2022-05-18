@@ -30,6 +30,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- storage
+- networking
 units:
 - learn.wwl.implement-windows-server-file-server-high-availability.introduction
 - learn.wwl.implement-windows-server-file-server-high-availability.explore-options

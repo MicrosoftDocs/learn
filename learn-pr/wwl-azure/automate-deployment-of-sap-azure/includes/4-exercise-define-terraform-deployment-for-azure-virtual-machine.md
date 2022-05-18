@@ -8,7 +8,7 @@ To follow along in this section, you will need to sign in to the Azure CLI with 
 
 To sign into an Azure subscription using a service principal, you first need access to a service principal. If you already have a service principal, you can skip this part of the section.
 
-Automated tools that deploy or use Azure services such as Terraform should always have restricted permissions. Instead of signing in to applications as a fully privileged user, Azure offers service principals. There are many options when [creating a service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?). We'll use [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az_ad_sp_create_for_rbac) to create a service principal with a Contributor role. The Contributor role (the default) has full permissions to read and write to an Azure account. 
+Automated tools that deploy or use Azure services such as Terraform should always have restricted permissions. Instead of signing in to applications as a fully privileged user, Azure offers service principals. There are many options when [creating a service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?). We'll use [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az-ad-sp-create-for-rbac) to create a service principal with a Contributor role. The Contributor role (the default) has full permissions to read and write to an Azure account. 
  
 ### Create an Azure service principal 
 

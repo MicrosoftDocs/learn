@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- threat-protection
 units:
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.introduction
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-what-is-cybersecurity

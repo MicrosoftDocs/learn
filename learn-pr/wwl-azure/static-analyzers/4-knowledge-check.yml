@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.static-analyzers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following tools helps discover vulnerabilities by letting you query code as though it were data?"
+    choices:
+    - content: "SonarCloud."
+      isCorrect: false
+      explanation: "Incorrect. Developers use CodeQL to automate security checks. CodeQL treats code like data that can be queried."
+    - content: "OWASP ZAP."
+      isCorrect: false
+      explanation: "Incorrect. Developers use CodeQL to automate security checks. CodeQL treats code like data that can be queried."
+    - content: "CodeQL."
+      isCorrect: true
+      explanation: "Correct. Developers use CodeQL to automate security checks. CodeQL treats code like data that can be queried."
+  - content: "Which of the following choices is a static analysis tool that scans binary files?"
+    choices:
+    - content: "Azure Artifacts."
+      isCorrect: false
+      explanation: "Incorrect. BinSkim is a static analysis tool that scans binary files. BinSkim replaces an earlier Microsoft tool called BinScope."
+    - content: "SonarCloud."
+      isCorrect: false
+      explanation: "Incorrect. BinSkim is a static analysis tool that scans binary files. BinSkim replaces an earlier Microsoft tool called BinScope."
+    - content: "BinSkim."
+      isCorrect: true
+      explanation: "Correct. BinSkim is a static analysis tool that scans binary files. BinSkim replaces an earlier Microsoft tool called BinScope."
+  - content: "Which of the following tools can you use to do code quality checks?"
+    choices:
+    - content: "Veracode."
+      isCorrect: false
+      explanation: "Incorrect. Veracode provides application security platform that automatically enables developers to scan an application for security vulnerabilities."
+    - content: "SonarCloud."
+      isCorrect: true
+      explanation: "Correct. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."
+    - content: "Microsoft Defender for Cloud."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud is a tool for security posture management and threat protection."

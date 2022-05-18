@@ -14,10 +14,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/2-setup-cosmosdb.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Run the commands shown to create your Azure Cosmos DB account, database, and container."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.DocumentDB/databaseAccounts"
+#   hint: "Run the commands shown to create your Azure Cosmos DB account, database, and container."

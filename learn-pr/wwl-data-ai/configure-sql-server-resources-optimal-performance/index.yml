@@ -32,6 +32,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- database
 units:
 - learn.wwl.configure-sql-server-resources-for-optimal-performance.introduction
 - learn.wwl.configure-sql-server-resources-for-optimal-performance.explain-how-to-optimize-azure-storage-for-virtual-machines

@@ -1,9 +1,9 @@
 
-The goal of this module was help you understand the main capabilities of Azure Service Health and know how use to be aware on what is happening from the Azure platform side. So you have learned:
+The goal of this module was help you understand the main capabilities of Azure Service Health, and to know how to use it to be aware of what's happening from the Azure platform side. In this module, you've learned:
 
-* What is Azure Service Health and their components
-* The kind of information available by Azure Service Health
-* How create alerts and be aware about issues and planned maintenance, which may impact you
+* What is Azure Service Health and its components
+* The kind of information available from Azure Service Health
+* How create alerts and be aware about issues and planned maintenance that might impact you
 
 References
 * [Create activity log alerts on service notifications using the Azure portal](/azure/service-health/alerts-activity-log-service-notifications-portal)

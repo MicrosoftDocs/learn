@@ -10,7 +10,7 @@ Workbooks are currently compatible with the following data sources:
 
 - [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
 
-- [Alerts (Preview)](/azure/azure-monitor/visualize/workbooks-data-sources)
+- [Alerts](/azure/azure-monitor/visualize/workbooks-data-sources)
 
 - [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
 
@@ -32,19 +32,19 @@ The reputation of your organization depends on the performance, reliability, and
 
 ### Insights
 
-Insights provide a customized monitoring experience for particular applications and services. They collect and analyze both logs and metrics.
+Insights provide a customized monitoring experience for particular applications and services. They collect and analyze both logs and metrics. Here are just a few of the insights that are provided. 
 
 | **Insight**| **Description** |
 | - | - |
 | [Application Insights](/azure/azure-monitor/app/app-insights-overview)| Extensible Application Performance Management (APM) service to monitor your live web application on any platform. |
 | [Container insights](/azure/azure-monitor/containers/container-insights-overview)| Monitors the performance of container workloads deployed to either Azure Container Instances or managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS). |
-| [Cosmos DB insights](/azure/azure-monitor/insights/cosmosdb-insights-overview)| Provides a view of the overall performance, failures, capacity, and operational health of all your Azure Cosmos DB resources in a unified interactive experience. |
-| [Networks insights (preview)](/azure/azure-monitor/insights/network-insights-overview)| Provides a comprehensive view of health and metrics for all your network resource. The advanced search capability helps you identify resource dependencies, enabling scenarios like identifying resource that are hosting your website, by simply searching for your website name. |
-| [Resource Group insights (preview)](/azure/azure-monitor/insights/resource-group-insights)| Triage and diagnose any problems your individual resources encounter, while offering context as to the health and performance of the resource group as a whole. |
-| [Storage insights](/azure/storage/common/storage-insights-overview?toc=/azure/azure-monitor/toc.json)| Provides comprehensive monitoring of your Azure Storage accounts by delivering a unified view of your Azure Storage services performance, capacity, and availability. |
+| [Cosmos DB insights](/azure/azure-monitor/insights/cosmosdb-insights-overview)| Provides information on the overall performance, failures, capacity, and operational health of all your Azure Cosmos DB resources in a unified interactive experience. |
+| [Networks insights](/azure/azure-monitor/insights/network-insights-overview)| Provides comprehensive information on the health and metrics for all your network resource. The advanced search capability helps you identify resource dependencies, enabling scenarios like identifying resource that are hosting your website, by simply searching for your website name. |
+| [Resource Group insights](/azure/azure-monitor/insights/resource-group-insights)| Triage and diagnose any problems your individual resources encounter, while offering context as to the health and performance of the resource group as a whole. |
+| [Storage insights](/azure/storage/common/storage-insights-overview?toc=/azure/azure-monitor/toc.json)| Provides comprehensive monitoring of your Azure Storage accounts by delivering a unified report of your Azure Storage services performance, capacity, and availability. |
 | [VM insights](/azure/azure-monitor/vm/vminsights-overview)| Monitors your Azure virtual machines (VM) and virtual machine scale sets at scale. It analyzes the performance and health of your Windows and Linux VMs, and monitors their processes and dependencies on other resources and external processes. |
-| [Key Vault insights (preview)](/azure/azure-monitor/insights/key-vault-insights-overview)| Provides comprehensive monitoring of your key vaults by delivering a unified view of your Key Vault requests, performance, failures, and latency. |
-| [Azure Cache for Redis insights (preview)](/azure/azure-monitor/insights/redis-cache-insights-overview)| Provides a unified, interactive view of overall performance, failures, capacity, and operational health. |
+| [Key Vault insights](/azure/azure-monitor/insights/key-vault-insights-overview)| Provides comprehensive monitoring of your key vaults by delivering a unified report of your Key Vault requests, performance, failures, and latency. |
+| [Azure Cache for Redis insights](/azure/azure-monitor/insights/redis-cache-insights-overview)| Provides a unified, interactive report of overall performance, failures, capacity, and operational health. |
 
 
  
@@ -59,7 +59,7 @@ Insights provide a customized monitoring experience for particular applications 
 
 Application Insights is aimed at the development team, to help you understand how your app is performing and how it's being used. It monitors:
 
-- **Request rates, response times, and failure rates** - Find out which pages are most popular, at what times of day, and where your users are. See which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
+- **Request rates, response times, and failure rates** - Find out which pages are most popular, at what times of day, and where your users are. Determine which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
 
 - **Dependency rates, response times, and failure rates** - Find out whether external services are slowing you down.
 
@@ -125,5 +125,5 @@ Application Insights is aimed at the development team, to help you understand ho
 
 - Monitor container workloads [deployed to Azure Red Hat OpenShift](/azure/openshift/intro-openshift).
 
-- Monitor container workloads [deployed to Azure Arc enabled Kubernetes (preview)](/azure/azure-arc/kubernetes/overview).
+- Monitor container workloads [deployed to Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/overview).
 

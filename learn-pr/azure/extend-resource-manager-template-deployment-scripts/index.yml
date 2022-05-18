@@ -45,6 +45,9 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true) version installed locally.
+subjects:
+  - devops
+  - cloud-computing
 units:
   - learn.azure.extend-resource-manager-template-deployment-scripts.1-introduction
   - learn.azure.extend-resource-manager-template-deployment-scripts.2-explore-deployment-scripts

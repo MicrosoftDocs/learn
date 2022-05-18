@@ -36,6 +36,8 @@ products:
 - azure-app-service-web
 - azure-database-mysql
 - azure-pipelines
+subjects:
+- cloud-computing
 units:
 - learn.azure.deploy-java-azure-pipeline-terraform.1-introduction
 - learn.azure.deploy-java-azure-pipeline-terraform.2-terraform

@@ -51,15 +51,17 @@ Most pipelines will have these components:
 
 ## Name
 
-The variable name is a bit misleading since the name is the build number format. If you don't explicitly set a name format, you'll get an integer number. It's a monotonically increasing number for run triggered off this pipeline, starting at 1. This number is stored in Azure DevOps. You can make use of this number by referencing $(Rev).
+The variable name is a bit misleading since the name is in the build number format. You'll get an integer number if you don't explicitly set a name format. It's a monotonically increasing number for run triggered off this pipeline, starting at 1. This number is stored in Azure DevOps. You can make use of this number by referencing $(Rev).
 
-To make a date-based number, you can use the format $(Date:yyyy-mm-dd-HH-mm) to get a build number like 2020-01-16-19-22. To get a semantic number like 1.0.x, you can use something like 1.0$(Rev:.r)
+To make a date-based number, you can use the format $(Date:yyyy-mm-dd-HH-mm) to get a build number like 2020-01-16-19-22.
+
+To get a semantic number like 1.0.x, you can use something like 1.0.$(Rev:.r).
 
 ## Triggers
 
 If there's no explicit triggers section, then it's implied that any commit to any path in any branch will trigger this pipeline to run.
 
-You can be more precise, though, using filters such as branches or paths.
+However, you can be more precise using filters such as branches or paths.
 
 Let's consider this trigger:
 
@@ -72,7 +74,7 @@ trigger:
 
 ```
 
-This trigger is configured to queue the pipeline only when there's a commit to the main branch. What about triggering for any branch except main? You guessed it: use exclude instead of include:
+This trigger is configured to queue the pipeline only when there's a commit to the main branch. What about triggering for any branch except the main? You guessed it: use exclude instead of include:
 
 ```YAML
 trigger:
@@ -104,19 +106,19 @@ trigger:
 You can mix includes and excludes if you need to. You can also filter on tags.
 
 > [!TIP]
-> Don't forget one overlooked trigger: none. If you never want your pipeline to trigger automatically, then you can use none. It's useful if you're going to create a pipeline that is only manually triggered.
+> Don't forget one overlooked trigger: none. If you never want your pipeline to trigger automatically, you can use none. It's helpful if you're going to create a pipeline that is only manually triggered.
 
-There are other triggers for other events such as:
+There are other triggers for other events, such as:
 
- -  Pull Requests (PRs), which can also filter on branches and paths.
- -  Schedules, which allow you to specify cron expressions for scheduling pipeline runs.
- -  Pipelines, which will enable you to trigger pipelines when other pipelines complete, allowing pipeline chaining.
+ -  Pull Requests (PRs) can also filter branches and paths.
+ -  Schedules allow you to specify cron expressions for scheduling pipeline runs.
+ -  Pipelines will enable you to trigger pipelines when other pipelines are complete, allowing pipeline chaining.
 
 You can find all the documentation on triggers [here](/azure/devops/pipelines/build/triggers).
 
 ## Jobs
 
-A job is a set of steps executed by an agent in a queue (or pool). Jobs are atomic – that is, they're executed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job are run on every agent. If you need some steps to run on one agent and some on another, you'll need two jobs.
+A job is a set of steps executed by an agent in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. If you need some steps to run on one agent and some on another, you'll need two jobs.
 
 A job has the following attributes besides its name:
 
@@ -127,7 +129,7 @@ A job has the following attributes besides its name:
  -  continueOnError - to specify if the rest of the pipeline should continue or not if this job fails.
  -  pool – the name of the pool (queue) to run this job on.
  -  workspace - managing the source workspace.
- -  container - for specifying a container image to execute the job in - more later.
+ -  container - for specifying a container image to execute the job later.
  -  variables – variables scoped to this job.
  -  steps – the set of steps to execute.
  -  timeoutInMinutes and cancelTimeoutInMinutes for controlling timeouts.
@@ -137,9 +139,9 @@ A job has the following attributes besides its name:
 
 You can define dependencies between jobs using the `dependensOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
 
-If you don't explicitly define a dependency, a sequential dependency is implied.
+A sequential dependency is implied if you don't explicitly define a dependency.
 
-If you want jobs to run in parallel, you need to specify `dependsOn: none`.
+If you want jobs to run parallel, you need to specify `dependsOn: none`.
 
 Let's look at a few examples. Consider this pipeline:
 
@@ -230,14 +232,14 @@ jobs:
 Classic builds implicitly checkout any repository artifacts, but pipelines require you to be more explicit using the checkout keyword:
 
  -  Jobs check out the repo they're contained in automatically unless you specify `checkout: none`.
- -  Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want to get access to files in the YAML file's repo.
+ -  Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want access to files in the YAML file's repo.
 
 ## Download
 
 Downloading artifacts requires you to use the download keyword. Downloads also work the opposite way for jobs and deployment jobs:
 
  -  Jobs don't download anything unless you explicitly define a download.
- -  Deployment jobs implicitly do a download: current, which downloads any pipeline artifacts that have been created in the current pipeline. To prevent it, you must specify `download: none`.
+ -  Deployment jobs implicitly do a download: current, which downloads any pipeline artifacts that have been created in the existing pipeline. To prevent it, you must specify `download: none`.
 
 ## Resources
 
@@ -269,15 +271,15 @@ steps:
 
 Steps are the actual "things" that execute in the order specified in the job.
 
-Each step is a task: there are out-of-the-box (OOB) tasks that come with Azure DevOps. Many of which have aliases, and tasks that get installed to your Azure DevOps organization via the marketplace.
+Each step is a task: out-of-the-box (OOB) tasks come with Azure DevOps. Many of which have aliases and tasks installed to your Azure DevOps organization via the marketplace.
 
-Creating custom tasks is beyond the scope of this chapter, but you can see how to create your custom tasks [here](/azure/devops/extend/develop/add-build-task).
+Creating custom tasks is beyond the scope of this chapter, but you can see how to make your custom tasks [here](/azure/devops/extend/develop/add-build-task).
 
 ## Variables
 
-It would be tough to achieve any sophistication in your pipelines without variables. Though this classification is partly mine, there are several types of variables, and pipelines don't distinguish between these types. However, I've found it helpful to categorize pipeline variables to help teams understand some of the nuances when dealing with them.
+It would be tough to achieve any sophistication in your pipelines without variables. Though this classification is partly mine, several types of variables exist, and pipelines don't distinguish between these types. However, I've found it helpful to categorize pipeline variables to help teams understand some nuances when dealing with them.
 
-Every variable is a key: value pair. The key is the name of the variable, and it has a value.
+Every variable is a key: value pair. The key is the variable's name, and it has a value.
 
 To dereference a variable, wrap the key in $(). Let's consider this example:
 

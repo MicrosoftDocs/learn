@@ -31,6 +31,8 @@ roles:
 products:
   - azure
   - azure-cyclecloud
+subjects:
+- cloud-computing
 units:
 - learn.azure.azure-cyclecloud-high-performance-computing.introduction
 - learn.azure.azure-cyclecloud-high-performance-computing.describe-basics

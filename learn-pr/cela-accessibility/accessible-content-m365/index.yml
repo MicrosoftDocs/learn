@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- business-applications
 units:
 - learn.accessible-content-m365.accessibility-checker
 - learn.accessible-content-m365.word

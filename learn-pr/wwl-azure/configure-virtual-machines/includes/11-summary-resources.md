@@ -11,14 +11,12 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure Virtual Machine documentation](/azure/virtual-machines/)
  -  [Linux virtual machines documentation](/azure/virtual-machines/linux/)
- -  [Learn - Introduction to Azure virtual machines](/learn/modules/intro-to-azure-virtual-machines/)
- -  [Learn - Deploy Azure virtual machines from VHD templates](/learn/modules/deploy-vms-from-vhd-templates/)
+ -  [Learn - Introduction to Azure virtual machines (Sandbox)](/learn/modules/intro-to-azure-virtual-machines/)
  -  [Learn - Choose the right disk storage for your virtual machine workload](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
- -  [Learn - Add and size disks in Azure virtual machines](/learn/modules/add-and-size-disks-in-azure-virtual-machines/)
- -  [Learn - Create a Linux virtual machine in Azure](/learn/modules/create-linux-virtual-machine-in-azure/)
- -  [Learn - Create a Windows virtual machine in Azure](/learn/modules/create-windows-virtual-machine-in-azure/)
+ -  [Learn - Create a Linux virtual machine in Azure (Sandbox)](/learn/modules/create-linux-virtual-machine-in-azure/)
+ -  [Learn - Create a Windows virtual machine in Azure (Sandbox)](/learn/modules/create-windows-virtual-machine-in-azure/)
  -  [Learn - Connect to virtual machines through the Azure portal by using Azure Bastion](/learn/modules/connect-vm-with-azure-bastion/)

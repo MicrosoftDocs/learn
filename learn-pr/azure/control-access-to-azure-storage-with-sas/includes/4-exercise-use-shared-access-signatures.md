@@ -75,7 +75,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Replace the value for the AccountName parameter with the account name value you copied.
 
-1. Copy the value for `AccountKey=` in the body of the connection string (do not include the quotation mark). Make sure to include the `==` at the end of the value.
+1. Copy the value for `AccountKey=` in the body of the connection string (don't include the quotation mark). Make sure to include the `==` at the end of the value.
 
 1. Replace the value of the AccountKey parameter with the account key value you copied.
 

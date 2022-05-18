@@ -17,7 +17,7 @@ The convert phase consists of two possible steps, which you complete in sequence
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy because you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
-If you're converting Azure resources that were deployed by using the portal or another tool, you need to capture the resource definitions. You can either export the resource definitions and convert them to Bicep, or you can use the **Import Resource** command within Visual Studio Code to import a Bicep representation of your Azure resource.
+If you're converting Azure resources that were deployed by using the portal or another tool, you need to capture the resource definitions. You can either export the resource definitions and convert them to Bicep, or you can use the **Insert Resource** command within Visual Studio Code to insert a Bicep representation of your Azure resource.
 
 ### How Azure represents resources
 
@@ -61,11 +61,11 @@ You need to consider a few things when you save your templates by using this met
 > [!NOTE]
 > However you export resources, either by exporting existing resources or by saving deployments, treat the exported file as a starting point, and don't use it directly. Instead, use it as inspiration for your final template.
 
-### Import existing resources to Bicep
+### Insert existing resources to Bicep
 
-The Bicep extension for Visual Studio Code includes the **Import Resource** command, which captures a Bicep representation of an Azure resource. This command reads the JSON definition of the resource from Azure, removes properties that are recognized as read-only, and decompiles the JSON to Bicep. Similar to the export function, the resulting Bicep code can be used as a starting point for your final Bicep file.
+The Bicep extension for Visual Studio Code includes the **Insert Resource** command, which captures a Bicep representation of an Azure resource. This command reads the JSON definition of the resource from Azure, removes properties that are recognized as read-only, and decompiles the JSON to Bicep. Similar to the export function, the resulting Bicep code can be used as a starting point for your final Bicep file.
 
-You can import a resource by opening the Visual Studio Code command palette. Use <kbd>Ctrl+Shift+P</kbd> on Windows and Linux and <kbd>⌘+Shift+P</kbd> on macOS.
+You can insert a resource by opening the Visual Studio Code command palette. Use <kbd>Ctrl+Shift+P</kbd> on Windows and Linux and <kbd>⌘+Shift+P</kbd> on macOS.
 
 ### Decompile the source JSON ARM template
 

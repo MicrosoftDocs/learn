@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- cloud-computing
 units:
 - learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.introduction
 - learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.review-common-response-codes

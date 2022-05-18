@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 units:
 - learn.wwl.query-relational-data-azure.introduction
 - learn.wwl.query-relational-data-azure.introduction-to-sql

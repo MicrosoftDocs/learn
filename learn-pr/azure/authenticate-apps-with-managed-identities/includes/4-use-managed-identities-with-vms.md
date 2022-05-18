@@ -1,31 +1,29 @@
-You can add managed identities to virtual machines (VMs) in Azure. You decide to run your stock-tracking application inside a VM that has an assigned managed identity. This setup will allow the app to use an Azure key vault to authenticate without having to store a username and password in code.
+You decide to run your stock-tracking application inside a VM that has an assigned managed identity. This setup will allow the app to use an Azure key vault to authenticate without having to store a username and password in code.
 
-Now that your company has migrated your VM from on-premises to Azure, you can remove the hard-coded authentication details from the application code. You want to use the more secure managed identity token for access to Azure resources.
+Now that your company has migrated your VM from on-premises to Azure, you can remove the hard-coded authentication details from the application code. You want to use the more secure managed identity token to access Azure resources.
 
 In this unit, you'll learn how identity is managed within Azure VMs. You'll also learn how it interacts with Azure Resource Manager to form a more secure environment for applications.
 
 ## Managed identity within Azure virtual machines
 
-In a VM, use managed identity to access multiple Azure resources without having to specify additional credentials in the source code. Managed identities allow for automatic authentication in the background. Your application remains as easy to use and as secure as possible.
+In a VM, use a managed identity to access multiple Azure resources without having to specify credentials in your application's code. Managed identities allow for automatic authentication in the background. Your application remains as easy to use and as secure as possible.
 
-You can assign a managed identity to a VM during its build time. Or, you can assign it to an existing VM by using the portal, the Azure CLI, or PowerShell script.
+You can assign a managed identity to a VM during its build creation or anytime afterwards. You can assign a managed identity to an existing VM by using the portal, Azure CLI, or PowerShell.
 
-In the previous unit, you learned about a *system-assigned managed identity* and a *user-assigned managed identity*. You can create both types of identity by using an Azure VM. Configure them in Azure Resource Manager.
+In the previous unit, you learned about *system-assigned managed identities* and *user-assigned managed identities*. You can enable a system-assigned managed identity from the Identity section part of a VM's settings. When you do, here's what happens:
 
-Here's the process:
-
-1. From Azure Resource Manager, the VM sends a request for a managed identity.
+1. The VM sends a request for a managed identity.
 1. In Azure Active Directory (Azure AD), a service principal is created for the VM within the tenant that the subscription trusts.
 1. Azure Resource Manager updates the Azure Instance Metadata Service identity endpoint with the service principal client ID and certificate.
-1. The new service principal information is used to grant the VM access to Azure resources. To give your app access to the key vault, use role-based access control (RBAC) in Azure AD. Assign the required role to the VM's service principal. For example, assign the read role or contribute role.
-1. A call is made to Azure AD to request an access token by using the client ID and certificate. 
+1. The new service principal information is used to grant the VM access to Azure resources. To give your app access to the key vault, use role-based access control (RBAC) in Azure AD. Assign the required role to the VM's service principal. For example, you could assign the Reader or Contributor roles.
+1. A call is made to Azure AD to request an access token by using the client ID and certificate.
 1. Azure AD returns a JSON Web Token access token.
 
-When the configuration finishes, you don't need to create any additional credentials to access the resources.
+When the configuration finishes, you don't need to create any other credentials to access other resources hosted in Azure that support Azure AD authentication.
 
 ## Access control and authentication
 
-Use RBAC to control access within Azure. RBAC is an authorization system that's built on Azure Resource Manager. Use it to grant fine-grained access to resources.
+RBAC is an authorization system that's built on Azure Resource Manager. Use it to grant fine-grained access to resources in Azure.
 
 Permissions are formed by role-based access. Role-based access consists of three elements: the security principal, role definition, and scope.
 

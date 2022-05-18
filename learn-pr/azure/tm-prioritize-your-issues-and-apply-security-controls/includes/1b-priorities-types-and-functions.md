@@ -1,4 +1,4 @@
-The threat modeling exercise helps you find issues, sometimes more than you expected. The lack of prioritization can leave engineers overwhelmed and unsure of which issues to tackle first.
+The threat-modeling exercise helps you find issues, sometimes more than you expected. The lack of prioritization can leave engineers overwhelmed and unsure of which issues to tackle first.
 
 ## How to start
 
@@ -6,7 +6,7 @@ First, determine how critical the issue would be to your system. Second, select 
 
 ## Determine security issues priority
 
-Security issues are prioritized according to risk severity. The labels might change from organization to organization. However, they tend to follow a pattern from critical to low risk impact if the threat was exploited by an attacker.
+Security issues are prioritized according to risk severity. The labels might change from organization to organization. However, they tend to follow a pattern from critical to low-risk impact if the threat was exploited by an attacker.
 
 ## Types and functions
 

@@ -48,6 +48,9 @@ products:
   - azure-resource-manager
   - azure-devops
   - azure-pipelines
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.introduction
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.understand-environments

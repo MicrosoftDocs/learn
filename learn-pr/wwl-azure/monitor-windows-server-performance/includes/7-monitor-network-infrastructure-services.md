@@ -23,7 +23,7 @@ DNS provides name-resolution services on a network. You can monitor the Windows 
 - Zone transfer counters, including specific counters for measuring all zone transfer (AXFR), incremental zone transfer (IXFR), and DNS zone-update notification activity.
 
 > [!TIP]
-> You can also perform basic DNS monitoring by using the DNS console.
+> You can also perform basic DNS monitoring by using the DNS console.
 ## Monitoring DHCP
 
 DHCP provides dynamic IP configuration services for your network, and it provides data on a DHCP server, including the:
@@ -33,4 +33,4 @@ DHCP provides dynamic IP configuration services for your network, and it provide
 - The Milliseconds per packet counter is the average time that a DHCP server uses to process each packet that it receives. This number varies depending on the server hardware and its I/O subsystem. A spike indicates a problem with the I/O subsystem becoming slower or because of intrinsic processing overhead on the server.
 
 > [!TIP]
-> You can also perform basic DHCP monitoring by using the DHCP Manager console.
+> You can also perform basic DHCP monitoring by using the DHCP Manager console.

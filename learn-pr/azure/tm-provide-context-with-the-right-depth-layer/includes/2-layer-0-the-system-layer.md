@@ -1,8 +1,8 @@
-The system layer of data-flow diagrams is the starting point for any system and must be created for all your systems. 
+The system layer of data-flow diagrams is the starting point for any system. You need to create it for all your systems. 
 
 **Goal:** Represent **major system parts** with enough context to help you understand how they work and interact with each other.
 
-The system layer diagrams should fit in a single page. It should also contain only major processes handled by the system. Provide as much as context as possible and clearly label each element so anyone understands how it works.
+Data-flow diagrams in the system layer should fit in a single page. They should also contain only major processes handled by the system. Provide as much as context as possible and clearly label each element so anyone understands how it works.
 
 > [!TIP]
 > The **system layer** is also called the **context layer**.
@@ -13,7 +13,7 @@ The system layer should be required for every system you create. The high-level 
 
 ## Deep diving into a system part
 
-In most cases, system parts **will** require a deeper dive because of the risk they introduce. 
+In most cases, system parts **will** require a deeper dive because of the risk they introduce.
 
 Examples include:
 

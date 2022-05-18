@@ -26,6 +26,8 @@ roles:
   - developer
 products:
   - vs-ide
+subjects:
+- development-tools
 units:
   - learn.visual-studio.visual-studio-intro.1-introduction
   - learn.visual-studio.visual-studio-intro.2-what-is-visual-studio

@@ -33,6 +33,10 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- cloud-computing
+- data-engineering
+- database
 units:
 - learn.azdo.manage-build-dependencies.1-introduction
 - learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline

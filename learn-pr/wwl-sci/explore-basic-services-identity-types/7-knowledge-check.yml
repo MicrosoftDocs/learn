@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Azure AD B2B"
       isCorrect: false
-      explanation: "B2B collaboration allows you to share your organization’s applications and services with guests from other organizations. It is not suitable for a customer app."
+      explanation: "Incorrect. B2B collaboration allows you to share your organization’s applications and services with guests from other organizations."
     - content: "Azure AD B2C"
       isCorrect: true
-      explanation: "Azure AD B2C is an authentication solution for customers that you can customize with your brand identity."
+      explanation: "Correct. Azure AD B2C is an authentication solution for customers that you can customize with your brand identity."
     - content: "Azure AD Hybrid identities"
       isCorrect: false
-      explanation: "Azure AD hybrid identities synchronize identities between on premises Active Directory, and Azure Active Directory. It is not suitable for a customer app."
-  - content: "All users in an organization have Microsoft 365 cloud identities. Which identity model applies?"
+      explanation: "Incorrect. Azure AD hybrid identities synchronize identities between on premises Active Directory, and Azure Active Directory."
+  - content: "An organization has completed a full migration to the cloud and has purchased devices for all its employees. All employees sign in to the device through an organizational account configured in Azure AD.  Select the option that best describes how these devices are set up in Azure AD."
     choices:
-    - content: "Hybrid"
+    - content: "These devices are set up as Azure AD registered."
       isCorrect: false
-      explanation: "Hybrid is used when you have on-premises active directory that you need to synchronize with Azure Active Directory."
-    - content: "Cloud-only"
+      explanation: "Incorrect. This customer scenario explicitly states that all employees sign in to the device through an organization account and because devices are purchased by the organization, there's no requirement for bring your own device (BYOD). The goal of Azure AD registered devices is to provide users with support for BYOD or mobile device scenarios. Azure AD registered devices register to Azure AD without requiring an organizational account to sign in to the device."
+    - content: "These devices are set up as Azure AD joined."
       isCorrect: true
-      explanation: "When all your users have cloud identities, you use the cloud-only model."
-    - content: "On-premises only"
+      explanation: "Correct. An Azure AD joined device is a device joined to Azure AD through an organizational account, which is then used to sign in to the device. Azure AD joined devices are generally owned by the organization."
+    - content: "These devices are set up as Hybrid Azure AD joined."
       isCorrect: false
-      explanation: "When all your users have Microsoft 365 identities, you cannot use the on-premises only model."
-  - content: "An organization has developed an app to allow users to be able to sign in with their Facebook, Google, or Twitter credentials. What type of authentication is being used?"
+      explanation: "Incorrect. This customer scenario has completed a full migration to the cloud and therefore has no on-premises Active Directory. There is no requirement for devices to be hybrid Azure AD joined."
+  - content: "A developer wants an application to connect to Azure resources that support Azure AD authentication, without having to manage any credentials and without incurring any extra cost.  Which option best describes the identity type of the application?"
     choices:
-    - content: "Service principal authentication"
+    - content: "Service principal"
       isCorrect: false
-      explanation: "Service principals are used by applications or services to access Azure resources and are not used to allow users to sign in with their Facebook, Google, or Twitter credentials."
-    - content: "Azure AD B2C"
+      explanation: "Incorrect. Service principals are used by applications or services to access Azure resources but application developers must manage and protect the credentials."
+    - content: "Managed identity"
       isCorrect: true
-      explanation: "Azure AD B2C allows external users to log in with their preferred social media account to sign in to your application, such as Facebook, Google, or Twitter."
-    - content: "User assigned identities"
+      explanation: "Correct. Managed identities are a type of service principal that are automatically managed in Azure AD and eliminate the need for developers to manage credentials."
+    - content: "Hybrid identity"
       isCorrect: false
-      explanation: "A user-assigned identity is a type of managed identity and is not used to allow users to sign in with their Facebook, Google, or Twitter credentials."
+      explanation: "Incorrect. A hybrid identity refers to a common user identity for authentication and authorization to all resources, regardless of location."

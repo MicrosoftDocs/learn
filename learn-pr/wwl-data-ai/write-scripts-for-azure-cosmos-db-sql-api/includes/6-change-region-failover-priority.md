@@ -23,7 +23,7 @@ az cosmosdb update \
 ```
 
 > [!NOTE]
-> If you are performing any operationg involving an account region, you cannot many any other changegs to your account and must wait for the operation to complete.
+> If you are performing any operation involving an account region, you cannot many any other changes to your account and must wait for the operation to complete.
 
 ## Enable automatic failover
 

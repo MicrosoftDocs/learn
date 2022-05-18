@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-site-recovery.what-is-azure-site-recovery
+title: What is Azure Site Recovery?
+metadata:
+  title: What is Azure Site Recovery?
+  description: In this unit, you'll learn about Azure Site Recovery.
+  ms.date: 04/05/2022
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-azure-site-recovery.md)]

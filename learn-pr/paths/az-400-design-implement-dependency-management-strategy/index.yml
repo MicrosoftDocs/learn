@@ -35,6 +35,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- change-management
 modules:
 - learn.wwl.explore-package-dependencies
 - learn.wwl.understand-package-management
