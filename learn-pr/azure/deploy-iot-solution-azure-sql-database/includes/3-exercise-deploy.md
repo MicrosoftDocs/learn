@@ -199,7 +199,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Select **Settings** for the repository.
 
-1. Select **Secrets** > **New repository secret** and enter the following items:
+1. Select **Secrets** > **Actions** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_FUNCTIONAPP_PUBLISH_PROFILE**
     1. *Value*: **Azure Functions publish profile which you downloaded at the beginning of this section**
 
