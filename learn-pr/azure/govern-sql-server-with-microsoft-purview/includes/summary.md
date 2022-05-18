@@ -4,7 +4,8 @@ Your CDO asked you to evaluate the capabilities of Microsoft Purview to enable u
 
 In this module, you’ve learned how to connect different data sources with Microsoft Purview to simplify data discovery and manage sensitive data. You also have learned how to register data sources and scan data.
 
-Now that you have a central location for your data, your organization can manage and assess its data, including identifying data sources and data-mining value. Additionally, using Microsoft Purview to manage your organization’s data provides your CDO with an overview of the data, including whether it can be trusted, where it’s stored, its sensitivity, and the risks associated with storing PII.
+Now that you have a central location for your data, your organization can manage and assess its data, including identifying data sources and data-mining value. Additionally, using Microsoft Purview to manage your organization’s data provides your CDO with an overview of the data, including whether it can be trusted, where it’s stored, its sensitivity, and the risks associated with storing customer content.
+
 
 ## Learn more
 

@@ -22,7 +22,8 @@ Search the Microsoft Purview Data Catalog by using search queries that include k
 
 Use data insights to get valuable information about scanned data, including its classification and sensitivity label reports.
 
-:::image type="content" source="../media/2-data-insights.png" alt-text="Data insights pane" border="true" lightbox="../media/2-data-insights.png":::
+:::image type="content" source="../media/2-data-insights.png" alt-text="Screenshot that shows the Data insights pane." border="true" lightbox="../media/2-data-insights.png":::
+
 
 :::image type="content" source="../media/2-scan-insights.png" alt-text="Screenshot of the Microsoft Purview Scan insights pane displaying statistics for successful, failed, and cancelled scans." border="true" lightbox="../media/2-scan-insights.png":::
 

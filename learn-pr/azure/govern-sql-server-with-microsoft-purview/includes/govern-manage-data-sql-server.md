@@ -65,7 +65,8 @@ Once you create the Azure Key Vault and configure the secret, follow these steps
 
 1. In the **New Key Vault** pane, enter the required information including name, description, your Azure subscription, and a new Key Vault name, and then select **Create**.
 
-    :::image type="content" source="../media/3-purview-keyvault-connection.png" alt-text="Screenshot of the Microsoft Purview Credentials page with Mange Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-purview-keyvault-connection.png":::
+    :::image type="content" source="../media/3-purview-keyvault-connection.png" alt-text="Screenshot of the Microsoft Purview Credentials page with Manage Key Vault connections selected and information entered in the New Key Vault pane." border="true" lightbox="../media/3-purview-keyvault-connection.png":::
+
 
 #### Create a credentials object
 
@@ -87,11 +88,13 @@ The next step is to create a credentials object that you’ll use to authenticat
         1. In the **Secret name** text box, enter the name of the secret that contains the password for SQL authentication or Windows authentication.
         1. Optionally, in the **Secret version** text box, enter the version of the secret.
 
-:::image type="content" source="../media/3-credential-object.png" alt-text="The New credential pane" border="true" lightbox="../media/3-credential-object.png":::
+:::image type="content" source="../media/3-credential-object.png" alt-text="Screenshot that shows the New credential pane." border="true" lightbox="../media/3-credential-object.png":::
 
-## Register a data source from the Azure Portal
 
-When you meet all the prerequisites, use the Azure Portal to register your on-premises SQL Server data source by performing the following steps:
+## Register a data source from the Azure portal
+
+When you meet all the prerequisites, use the Azure portal to register your on-premises SQL Server data source by performing the following steps:
+
 
 1. In Microsoft Purview Studio, from the **navigation** pane, select **Data map**.
 
@@ -107,7 +110,8 @@ When you meet all the prerequisites, use the Azure Portal to register your on-pr
 
 1. From the **Select a collection** drop-down list, select a collection, and then select **Register**.
 
-    :::image type="content" source="../media/3-register-sql-server-on-premises.png" alt-text="Screenshot of the Register sources (S Q L Server) pane displaying a name, server endpoint (I P address), and collection." border="true"  lightbox="../media/3-register-sql-server-on-premises.png":::
+    :::image type="content" source="../media/3-register-sql-server-on-premises.png" alt-text="Screenshot of the Register sources S Q L Server pane displaying a name, server endpoint I P address, and collection." border="true"  lightbox="../media/3-register-sql-server-on-premises.png":::
+
 
 ## Scan data from SQL Server on-premises
 
