@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.govern-azure-arc-enabled-servers.modernize-deployment-response-and-orchestration-of-azure-arc-enabled-servers-with-azure-automation
+uid: learn.azure.govern-azure-arc-enabled-servers.modernize-azure-arc-enabled-servers-with-azure-automation
 title: Modernize deployment, response, and orchestration of Azure Arc-enabled servers with Azure Automation
 metadata:
   title: Modernize deployment, response, and orchestration of Azure Arc-enabled servers with Azure Automation
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-modernize-deployment-response-and-orchestration-of-azure-arc-enabled-servers-with-azure-automation.md)]
+  [!include[](includes/5-modernize-azure-arc-enabled-servers-with-azure-automation.md)]
