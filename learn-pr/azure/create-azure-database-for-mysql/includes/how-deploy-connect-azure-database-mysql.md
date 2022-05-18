@@ -18,7 +18,7 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Server details. The name of the server, target Azure region, the MySQL version, the compute tier, and the number of the availability zone.
 
-    ![Screenshot of the Project and Server details sections of the Basics Azure portal Flexible server deployment page.](../media/3-deploy-mysql-project_server_details.png)
+    ![Screenshot of the Project and Server details sections of the Basics Azure portal Flexible server deployment page.](../media/3-deploy-mysql-project-server-details.png)
 
   - Administrator account. The administrator username and password.
 
@@ -28,7 +28,7 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Storage. The storage size (in GiB), the number of IOPS, and the Storage Auto-growth option.
 
-    ![Screenshot of the Compute and Storage sections of the Compute + Storage Azure portal Flexible server deployment page.](../media/3-deploy-mysql-compute_and_storage.png)
+    ![Screenshot of the Compute and Storage sections of the Compute + Storage Azure portal Flexible server deployment page.](../media/3-deploy-mysql-compute-and-storage.png)
     
   - High availability. The high availability mode (same zone or zone redundant).
 
@@ -36,11 +36,11 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Backups. The backup retention period and the backup geo-redundancy option.
 
-    ![Screenshot of the High availability and Backups sections of the Compute + Storage Azure portal Flexible server deployment page." border.](../media/3-deploy-mysql-high_availability_backups.png)
+    ![Screenshot of the High availability and Backups sections of the Compute + Storage Azure portal Flexible server deployment page." border.](../media/3-deploy-mysql-high-availability-backups.png)
 
 - Networking. From this page you can select the connectivity method. Depending on your choice, you can also allow public access from any Azure service, configure firewall rules, or set up VNet integration.
 
-   ![Screenshot of the Network connectivity tab displaying the options for the connectivity method, firewall rules, and more.](../media/3-mysql-network_connectivity_firewall_rules.png)
+   ![Screenshot of the Network connectivity tab displaying the options for the connectivity method, firewall rules, and more.](../media/3-mysql-network-connectivity-firewall-rules.png)
   
 - Tags. Use this page to add key-value pairs that define metadata for the deployed resource.
 
