@@ -107,7 +107,7 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
 1. In the **End** date field, select the calendar and pick the date two weeks from today.
 
-1. Select **Save and Close**.
+1. Select **Save and close**.
 
 ### Assign tasks and set the iteration
 
@@ -126,6 +126,8 @@ You have an initial set of work items and a timeline for your first sprint. Here
 1. From the same window, select **Unassigned** and set yourself as the task owner.
 
     :::image type="content" source="../media/3-assign-owner.png" alt-text="Azure Boards showing the location of the task owner.":::
+
+1. Select **Save**.
 
 1. Repeat the process for the other two work items.
 

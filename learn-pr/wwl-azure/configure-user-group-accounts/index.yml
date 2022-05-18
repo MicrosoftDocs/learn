@@ -3,7 +3,7 @@ uid: learn.wwl.configure-user-group-accounts
 metadata:
   title: Configure user and group accounts
   description: "You will learn how to configure user and group accounts."
-  ms.date: 11/25/2021
+  ms.date: 05/12/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.configure-user-group-accounts.introduction
 - learn.wwl.configure-user-group-accounts.create-user-accounts

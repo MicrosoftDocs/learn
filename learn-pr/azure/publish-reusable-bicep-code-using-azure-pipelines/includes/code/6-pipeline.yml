@@ -1,0 +1,58 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - 'modules/storage-account/**'
+
+variables: 
+- name: ServiceConnectionName
+  value: ToyReusable
+- name: ModuleName
+  value: storage-account
+- name: ModuleRegistryServer
+  value: yourregistryname.azurecr.io
+- name: ModuleFilePath
+  value: modules/storage-account/main.bicep
+- name: ModuleMetadataFilePath
+  value: modules/storage-account/metadata.json
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+- stage: Lint
+  jobs:
+  - job: LintCode
+    displayName: Lint code
+    steps:
+      - script: |
+          az bicep build --file $(ModuleFilePath)
+        name: LintBicepCode
+        displayName: Run Bicep linter
+
+- stage: Publish
+  jobs:
+  - job: Publish
+    steps:
+      - script: |
+          majorMinorVersionNumber=$(jq '(.version.major | tostring) + "." + (.version.minor | tostring)' $(ModuleMetadataFilePath) -r )
+          versionNumber="$majorMinorVersionNumber.$(Build.BuildNumber)"
+          echo "##vso[task.setvariable variable=ModuleVersion;]$versionNumber"
+        name: GetModuleVersionNumber
+        displayName: Get module version number
+      - task: AzureCLI@2
+        name: Publish
+        displayName: Publish module
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az bicep install
+            az bicep publish \
+              --target 'br:$(ModuleRegistryServer)/$(ModuleName):$(ModuleVersion)' \
+              --file $(ModuleFilePath)

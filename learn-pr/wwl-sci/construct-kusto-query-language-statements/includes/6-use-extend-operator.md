@@ -26,6 +26,9 @@ Third, the use of **extend** to create two new columns HTTP_Status_Code and Doma
 
 Fourth, the results sets' progression via the pipe statement allows us to use the newly created columns as filters.
 
+> [!NOTE]
+> These KQL statements may not produce results in the Log Analytics Demo Environment due to the dynamic nature of the log analytics demo database. 
+
 ```kusto
 let timeframe = 1d;
 

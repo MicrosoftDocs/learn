@@ -26,6 +26,9 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- migration
+- cloud-security
 units:
 - learn.wwl.protecting-monitoring-tuning-migrated-database.introduction
 - learn.wwl.protecting-monitoring-tuning-migrated-database.protecting-database-server

@@ -29,6 +29,8 @@ products:
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of machine learning
+subjects:
+- natural-language-processing
 units:
 - learn.tensorflow.intro-natural-language-processing.introduction
 - learn.tensorflow.intro-natural-language-processing.representing-text

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-open-source-software-azure.introduction-to-licenses
+title: Introduction to open-source licenses
+metadata:
+  title: Introduction to open-source licenses
+  description: "Introduction to open-source licenses"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-introduction-to-licenses.md)]

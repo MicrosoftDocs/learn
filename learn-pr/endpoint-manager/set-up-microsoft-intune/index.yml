@@ -33,6 +33,8 @@ roles:
 products:
 - mem
 - m365
+subjects:
+- it-management-monitoring
 units:
 - learn.set-up-microsoft-intune.1-introduction
 - learn.set-up-microsoft-intune.2-review-supported-configurations

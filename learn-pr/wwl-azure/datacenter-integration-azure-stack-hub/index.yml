@@ -35,6 +35,8 @@ roles:
 products:
 - azure
 - azure-stack-hub
+subjects:
+- virtual-machine
 units:
 - learn.wwl.datacenter-integration-for-azure-stack-hub.introduction
 - learn.wwl.datacenter-integration-for-azure-stack-hub.run-azure-datacenter

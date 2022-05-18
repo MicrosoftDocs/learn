@@ -6,25 +6,25 @@ We'll need to install additional tools within Visual Studio to build, debug, and
 
 ### What are Visual Studio workloads?
 
-A *workload* is a pre-configured bundle of tools within Visual Studio that are grouped to enable developers to build certain types of applications, use certain development languages, or develop for specific platforms.
+A *workload* is a pre-configured bundle of tools within Visual Studio that are grouped to allow developers to build certain types of applications, use certain development languages, or develop for specific platforms.
 
-For example, the *Desktop development with C++* workload includes Visual Studio features that let you run and debug C++ console applications, the *Mobile development with .NET* workload installs all of the tools needed to create mobile applications with .NET.
+For example, the *Desktop development with C++* workload includes Visual Studio features that let you run and debug C++ console applications, and the *Mobile development with .NET* workload installs all of the tools you need to create mobile applications with .NET.
 
 ### Visual Studio workloads for ASP.NET Core development and publishing
 
-Visual Studio 2022 has two workloads that you need to create, publish, and deploy your website to Azure. These workloads include the templates for your ASP.NET Core site and provides the ability to connect and deploy your site to Azure.
+Visual Studio 2022 has two workloads that you need to create, publish, and deploy your website to Azure. These workloads include the templates for your ASP.NET Core site and provide the ability to connect and deploy your site to Azure.
 
 With Visual Studio 2022 installed, you need to make sure you have the following Visual Studio workloads installed:
 
 - **ASP.NET and web development**: The web development workload in Visual Studio is designed to maximize your productivity in developing web applications using ASP.NET and standards-based technologies like HTML and JavaScript.
 
-- **Azure development**: The Azure development workload in Visual Studio installs the latest Azure SDK for .NET and tools for Visual Studio. Once these items are installed, you can view resources in Cloud Explorer, create resources using Azure Resource Manager tools, build applications for Azure web and Cloud Services, and perform big data operations using Azure Data Lake tools.
+- **Azure development**: The Azure development workload in Visual Studio installs the latest Azure SDK for .NET and tools for Visual Studio. Once you've installed these items, you can view resources in Cloud Explorer, create resources using Azure Resource Manager tools, build applications for Azure web and Cloud Services, and perform big data operations using Azure Data Lake tools.
 
 ## Installing Visual Studio workloads
 
-You use the Visual Studio Installer to modify the components installed as part of Visual Studio including workloads.
+You can use the Visual Studio Installer to modify the components installed as part of Visual Studio including workloads.
 
-1. To launch the Installer, from your Windows Start menu, scroll down to **V**, and then click **Visual Studio Installer**. Alternatively, while the Start menu is open, you can just type ```Visual Studio Installer``` to find the Installer link. Then select **Enter.**
+1. To launch the Installer, from your Windows Start menu, scroll down to **V**, and then click **Visual Studio Installer**. Alternatively, while the Start menu is open, you can just type `Visual Studio Installer` to find the Installer link, then select **Enter.**
 
 1. The Visual Studio Installer window appears. Click the **Modify** button.
 
@@ -34,6 +34,6 @@ You use the Visual Studio Installer to modify the components installed as part o
 
 1. When the install completes, click **Launch** to open Visual Studio.
 
-Workloads are added to your local Visual Studio installation and only need to be installed once. You can launch the Visual Studio Installer in the future to add additional workloads, customize installed workloads, or remove them.
+Workloads are added to your local Visual Studio installation, and you only need to install them once. You can launch the Visual Studio Installer in the future to add additional workloads, customize installed workloads, or remove them.
 
 To complete the exercises in this module, you'll need the **ASP.NET and web development** and **Azure development** workloads installed. If you haven't already, install these workloads before moving onto the next exercise.

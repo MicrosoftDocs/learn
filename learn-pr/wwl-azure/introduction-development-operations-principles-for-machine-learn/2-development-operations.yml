@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.devops
+title: DevOps for machine learning
+metadata:
+  title: DevOps for machine learning
+  description: "DevOps for machine learning"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-development-operations.md)]

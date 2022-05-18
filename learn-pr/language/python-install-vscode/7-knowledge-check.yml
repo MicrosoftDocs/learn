@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 07/06/2021
+  ms.date: 04/05/2022
   author: rjmolyneaux
   ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
 durationInMinutes: 1
 quiz:
   title: Check your knowledge
@@ -47,4 +47,4 @@ quiz:
           explanation: Incorrect. p isn't the standard extension for Python files.
         - content: py
           isCorrect: true
-          explanation: Correct! py is the standard extension for Python files.
+          explanation: Correct! .py is the standard extension for Python files.

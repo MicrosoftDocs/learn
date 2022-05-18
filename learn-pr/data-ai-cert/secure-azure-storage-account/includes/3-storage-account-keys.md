@@ -8,6 +8,7 @@ For example, an application can issue a `GET` request against a blob resource:
 
 ```
 GET http://myaccount.blob.core.windows.net/?restype=service&comp=stats
+
 ```
 
 HTTP headers control the version of the REST API, the date, and the encoded shared key:
@@ -16,6 +17,7 @@ HTTP headers control the version of the REST API, the date, and the encoded shar
 x-ms-version: 2018-03-28  
 Date: Wed, 23 Oct 2018 21:00:44 GMT  
 Authorization: SharedKey myaccount:CY1OP3O3jGFpYFbTCBimLn0Xov0vt0khH/E5Gy0fXvg=
+
 ```
 
 ## Storage account keys
@@ -28,7 +30,7 @@ You'll find the storage account keys in the Azure portal view of the storage acc
 
 ## Protect shared keys
 
-The storage account has only two keys, and they provide full access to the account. Because these keys are powerful, use them only with trusted in-house applications that you control completely. 
+The storage account has only two keys, and they provide full access to the account. Because these keys are powerful, use them only with trusted in-house applications that you control completely.
 
 If the keys are compromised, change the key values in the Azure portal. Here are several reasons to regenerate your storage account keys:
 

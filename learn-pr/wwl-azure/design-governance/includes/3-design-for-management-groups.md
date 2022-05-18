@@ -12,8 +12,6 @@
 
 - A management group tree can support up to [six levels of depth](/azure/governance/management-groups/overview). This limit doesn't include the tenant root level or the subscription level.
 
-- Any principal (user or service principal) within an Azure AD tenant can create new management groups if [hierarchy protection](/azure/governance/management-groups/how-to/protect-resource-hierarchy) isn't enabled.
-
 - Azure role-based access control authorization for management group operations isn't enabled by default.
 
 - By default, all new subscriptions will be placed under the root management group.

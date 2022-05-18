@@ -53,9 +53,6 @@ Azure Database for MySQL is available in two hosting options:
 
 Let's examine these options more closely.
 
-> [!IMPORTANT]
-> At the time of writing (March 2021), Flexible Server is in preview.
-
 ### Azure Database for MySQL in Single Server mode
 
 This mode provides for a fully managed database service and requires minimal user configuration and control. This mode has the following characteristics:

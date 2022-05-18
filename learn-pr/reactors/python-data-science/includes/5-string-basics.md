@@ -1,4 +1,4 @@
-Besides numbers, Python can also manipulate strings. You can enclose strings in single (') or double (") quotation marks with the same result. Use a backslash (\\) to escape quotation marks that you want to use within the string itself. Here's an example that uses single quotation marks.
+Besides numbers, Python can also manipulate strings. You can enclose strings in single (') or double (") quotation marks with the same result. Use a backslash (\\) to escape quotation marks you want to use within the string itself. Here's an example that uses single quotation marks.
 
 ```python
 'spam eggs'  # Use single quotation marks.
@@ -60,7 +60,7 @@ The output is:
 "Isn't," she said.
 ```
 
-If you don't want escaped characters (prefaced by a backslash) to be interpreted as special characters, use _raw strings_ by adding an "r" before the first quotation mark. First, here's an example without the "r":
+If you don't want escaped characters (prefaced by a backslash) interpreted as special characters, use *raw strings* by adding an "r" before the first quotation mark. First, here's an example without the "r":
 
 ```python
 print('C:\some\name')  # Here, the slash before the "n" (\n) means newline!
@@ -108,7 +108,7 @@ The output is:
 
 For this reason, it's best in notebooks to use the hash ("#") comment character at the beginning of each line. Better still, just use a Markdown cell outside a code cell in a Jupyter notebook!
 
-Strings can be _concatenated_ (glued together) by using the plus ("+") operator, and repeated by using the multiply ("*") operator:
+Strings can be *concatenated* (glued together) by using the plus ("+") operator, and repeated by using the multiply ("*") operator:
 
 ```python
 # 3 times 'un', followed by 'ium'
@@ -125,7 +125,7 @@ The order of operations applies to operators in the same way when they're used w
 
 ## Concatenate strings
 
-Two or more _string literals_ placed next to each other are automatically concatenated:
+Two or more *string literals* placed next to each other are automatically concatenated:
 
 ```python
 'Py' 'thon'

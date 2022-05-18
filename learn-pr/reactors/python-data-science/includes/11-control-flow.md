@@ -2,7 +2,7 @@ Now, let's take a look at `if` statements.
 
 ## The if statement
 
-The `if` statement in Python is similar to that found in other programming languages such as Java. It's the backbone of the logical flow of most programs. Here's an example:
+The `if` statement in Python is similar to that found in other programming languages (such as Java). It's the backbone of the logical flow of most programs. Here's an example:
 
 ```python
 y = 6
@@ -20,7 +20,7 @@ Even
 
 What do you see if you change `y` to an odd number?
 
-Did you notice the indentation for the `print` function under the `if` statement? That indentation is important because it's how Python delimits the scope of a control flow. It indicates what is to be contingently run or looped over. Python uses indentation instead of the braces ("{}") used in other languages.
+Did you notice the indentation for the `print` function under the `if` statement? That indentation is important, because it's how Python delimits the scope of a control flow. It indicates what is to be contingently run or looped over. Python uses indentation instead of the braces ("{}") used in other languages.
 
 To cover more contingencies without having to construct a follow-on `if` statement, you can add an `else` statement:
 
@@ -306,5 +306,5 @@ Go ahead and play with the number of iterations for the `while` loop. Notice tha
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Control flows are what make a program a _program_ as opposed to a single sequence of operations. Mastering the logical flow of information in Python will enable you to automate tasks that would be impossibly complex or time consuming to do manually.
+> Control flows are what make a program a *program*, as opposed to a single sequence of operations. Mastering the logical flow of information in Python will enable you to automate tasks that would be impossibly complex or time consuming to do manually.
 >

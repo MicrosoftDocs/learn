@@ -2,13 +2,13 @@ Your most interesting analyses often will come from data that's melded together 
 
 * `pandas.merge` connects rows in `DataFrames` based on one or more keys.
 * `pandas.concat` concatenates or “stacks” together objects along an axis.
-* The `combine_first` instance method enables you to splice together overlapping data to fill in missing values in one object with values from another.
+* The `combine_first` instance method lets you splice together overlapping data to fill in missing values in one object with values from another.
 
 Let's examine merging data first, because it will be the most familiar to those of you who are already familiar with SQL or other relational databases.
 
 ## Categories of joins
 
-`merge` carries out several types of joins: one-to-one, many-to-one, and many-to-many. You use the same basic function call to implement all of them, and we will examine all three. You will need all three at some point, depending on the data. Let's start with one-to-one joins, because they are simple to demonstrate.
+`merge` carries out several types of joins: one-to-one, many-to-one, and many-to-many. You use the same basic function call to implement all of them, and we'll examine all three. You'll need all three at some point, depending on the data. Let's start with one-to-one joins, because they're simple to demonstrate.
 
 ## One-to-one joins
 
@@ -70,11 +70,11 @@ Here's the output:
 | 3 | Sue      | HR         | 2018      |
 ```
 
-pandas joined on the employee column because it was the only column common to both df1 and df2. (Notice also that the original indices of df1 and df2 were discarded by `merge`. This is generally the case with merges unless you conduct them by index, which we will discuss later on.)
+pandas joined on the employee column because it was the only column common to both df1 and df2. (Notice also that `merge` discarded the original indices of df1 and df2. This is generally the case with merges unless you conduct them by index, which we'll discuss later on.)
 
 ## Many-to-one joins
 
-A many-to-one join is like a one-to-one join, except that one of the two key columns contains duplicate entries. The `DataFrame` that results from such a join will preserve those duplicate entries as appropriate. 
+A many-to-one join is like a one-to-one join, except that one of the two key columns contains duplicate entries. The `DataFrame` that results from such a join will preserve those duplicate entries as appropriate.
 
 You can join two `DataFrames`:
 
@@ -113,7 +113,7 @@ This output is returned:
 
 The resulting `DataFrame` has an additional column for supervisor. That column has an extra occurrence of **Giada** that didn't occur in df4. This is because more than one employee in the merged `DataFrame` works in the **Marketing** group.
 
-Notice that we didn’t specify which column to join on. When you don't specify that information, `merge` uses the overlapping column names as the keys. However, that can be ambiguous; several columns might meet that condition. For that reason, it's a good practice to explicitly specify on which key to join. You can do this with the `on` parameter. 
+Notice that we didn’t specify which column to join on. When you don't specify that information, `merge` uses the overlapping column names as the keys. However, that can be ambiguous; several columns might meet that condition. For that reason, it's a good practice to explicitly specify on which key to join. You can do this with the `on` parameter.
 
 Here's an example:
 
@@ -195,10 +195,10 @@ Here's the output:
 ```Output
 |   | name | salary |
 ---------------------
-| 0 | Gary | 7000   |
-| 1 | Stu  | 8000   |
+| 0 | Gary | 70000  |
+| 1 | Stu  | 80000  |
 | 2 | Mary | 120000 |
-| 3 | Sue  | 9000   |
+| 3 | Sue  | 90000  |
 ```
 
 Next, run this code in a cell:
@@ -212,10 +212,10 @@ This output is returned:
 ```Output
 |   | employee | group      | name | salary |
 ---------------------------------------------
-| 0 | Gary     | Accounting | Gary | 7000   |
-| 1 | Stu      | Marketing  | Stu  | 8000   |
+| 0 | Gary     | Accounting | Gary | 70000  |
+| 1 | Stu      | Marketing  | Stu  | 80000  |
 | 2 | Mary     | Marketing  | Mary | 120000 |
-| 3 | Sue      | HR         | Sue  | 9000   |
+| 3 | Sue      | HR         | Sue  | 90000  |
 ```
 
 ### Try it yourself
@@ -234,10 +234,10 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
   ```Output
   |   | employee | group      | salary |
   ---------------------------------------------
-  | 0 | Gary     | Accounting | 7000   |
-  | 1 | Stu      | Marketing  | 8000   |
+  | 0 | Gary     | Accounting | 70000  |
+  | 1 | Stu      | Marketing  | 80000  |
   | 2 | Mary     | Marketing  | 120000 |
-  | 3 | Sue      | HR         | 9000   |
+  | 3 | Sue      | HR         | 90000  |
   ```
 
 </details>
@@ -384,10 +384,10 @@ Here's the output:
 ```Output
 |   | group      | name | salary |
 ----------------------------------
-| 0 | Accounting | Gary | 7000   |
-| 1 | Marketing  | Stu  | 8000   |
+| 0 | Accounting | Gary | 70000  |
+| 1 | Marketing  | Stu  | 80000  |
 | 2 | Marketing  | Mary | 12000  | 
-| 3 | HR         | Sue  | 9000   | 
+| 3 | HR         | Sue  | 90000  | 
 ```
 
 ## Set arithmetic for joins
@@ -691,7 +691,7 @@ Here's the output:
 | 1 | c | d |
 ```
 
-Notice that `pd.concat` has preserved the indexing, even though that means that it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
+Notice that `pd.concat` has preserved the indexing, even though that means it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
 
 ```python
 pd.concat([df9, df9], ignore_index=True)
@@ -840,4 +840,4 @@ Here's the output:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> A large part of the value you can provide as a data scientist comes from connecting multiple, often disparate datasets to find new insights. Learning how to join and merge    data is thus an essential part of your skill set.
+> A large part of the value you can provide as a data scientist comes from connecting multiple, often disparate datasets to find new insights. Learning how to join and merge data is thus an essential part of your skill set.

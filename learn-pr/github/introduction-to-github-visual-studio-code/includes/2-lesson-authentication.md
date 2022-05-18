@@ -1,10 +1,10 @@
-There's a variety of ways that you might use GitHub with a project. Sometimes you clone a project to get a copy of it that you can work on. Sometimes, it goes the other direction and you have a local project that you want to put in GitHub.
+There are a variety of ways that you might use GitHub with a project. Sometimes, you might clone a project to get a copy of it you can work on. Sometimes, it goes the other direction and you have a local project that you want to put in GitHub.
 
-Before you can do anything at all with GitHub, you have to make sure that you can authenticate. Normally, this can be a tedious, multistep process that involves generating and working with SSH keys. One benefit of using Visual Studio Code to work with GitHub is that it handles all of the authentication setup for you.
+Before you can do anything at all with GitHub, you have to make sure you can authenticate. Normally, this can be a tedious, multi-step process that involves generating and working with SSH keys. One benefit of using Visual Studio Code to work with GitHub is that it handles all of the authentication setup for you.
 
 ## Authentication to GitHub through Visual Studio Code
 
-You can select the account icon at the bottom of the activity bar and sign in with your GitHub account. A browser opens, and you're asked to grant permission for Visual Studio Code to access GitHub.
+You can select the account icon at the bottom of the activity bar and sign in with your GitHub account (we'll do this in the next unit). A browser opens, and you're asked to grant permission for Visual Studio Code to access GitHub.
 
 This step is needed to connect Visual Studio Code to GitHub. It doesn't store any sensitive information. After you select **Continue**, you'll be redirected back to Visual Studio Code.
 
@@ -12,7 +12,7 @@ This step is needed to connect Visual Studio Code to GitHub. It doesn't store an
 
 When you sign in to your GitHub account in Visual Studio Code, various extensions or parts of Visual Studio Code can now access your GitHub account information. After you've signed in, you can choose which Visual Studio Code extensions are allowed to use your GitHub authentication.
 
-To see all the extensions that are using your GitHub account, select the account icon, select your GitHub username, and choose **Manage Trusted Extensions**. *GitHub* refers to the built-in GitHub and source control features in Visual Studio Code.
+To see all the extensions that are using your GitHub account, select the account icon, select your GitHub username, and choose **Manage Trusted Extensions**. *GitHub* refers to the built-in GitHub and source-control features in Visual Studio Code.
 
 You'll see that the **GitHub Pull Requests and Issues** extension also has access. You can revoke this access at any time. You can always sign out of your GitHub account in Visual Studio Code through the gear menu as well.
 

@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-create-a-basic-app.md)]
-#tasks:
-# Verify the VM named "MeanStack" exists.
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.Compute/virtualMachines"
-#  hint: "Ensure your VM exists and that your web application comes up as shown."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+#  Verify the VM named "MeanStack" exists.
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines"
+#   hint: "Ensure your VM exists and that your web application comes up as shown."

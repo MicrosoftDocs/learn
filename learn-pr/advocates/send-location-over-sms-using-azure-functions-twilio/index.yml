@@ -32,6 +32,8 @@ products:
 - vs
 - azure-functions
 - azure-portal
+subjects:
+- communication
 units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.0-introduction

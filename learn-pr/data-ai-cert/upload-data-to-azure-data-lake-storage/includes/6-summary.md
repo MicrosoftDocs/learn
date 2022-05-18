@@ -7,3 +7,4 @@ Use Azure Storage Explorer to efficiently manage your data. This feature-rich ap
 ## Cleanup
 
 To avoid additional costs in your Azure account, delete the **mslearn-datalake-test** resource group. This action will remove all the resources you created in this module.
+

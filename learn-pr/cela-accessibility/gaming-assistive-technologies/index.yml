@@ -29,6 +29,8 @@ roles:
 - developer
 products:
 - xbox
+subjects:
+- gaming-innovation
 units:
 - learn.gaming-assistive-technologies.introduction
 - learn.gaming-assistive-technologies.gaming-software

@@ -28,6 +28,9 @@ products:
 - azure-cosmos-db
 - azure-clis
 - azure-portal
+subjects:
+- database
+- architecture
 units:
 - learn.distribute-data-globally-with-cosmos-db.1-introduction
 - learn.distribute-data-globally-with-cosmos-db.2-global-distribution

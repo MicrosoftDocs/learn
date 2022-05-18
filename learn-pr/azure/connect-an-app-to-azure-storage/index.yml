@@ -25,6 +25,9 @@ products:
 - azure
 - azure-storage
 - azure-cloud-shell
+subjects:
+- cloud-computing
+- machine-learning
 units:
 - learn.connect-app-to-azure-storage.1-introduction
 - learn.connect-app-to-azure-storage.2-explore-azure-storage

@@ -15,11 +15,12 @@ durationInMinutes: 10
 azureSandbox: true
 content: |
   [!include[](includes/3-explore-input-and-output-binding-types-portal-lab.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-      kind: functionapp
-  hint: "Use the portal to create your function app and function using the instructions above."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+#       kind: functionapp
+#   hint: "Use the portal to create your function app and function using the instructions above."

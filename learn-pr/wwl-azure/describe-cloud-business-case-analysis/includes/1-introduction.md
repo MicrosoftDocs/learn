@@ -4,7 +4,7 @@ As you may recall, a business case analysis may be required before a government 
 
 Government entities act in the interest of their stakeholders, who are U.S. persons. When those entities act to improve the quality of the services they provide, they must make investments to avoid both waste and abuse. These investments are measured by performance measures (baseline, target, and goal), the operational impact, and financial costs (such as savings projections that the investment will guarantee).
 
-In this module, we'll focus on understanding the importance of a business case analysis. We'll cover how to perform a business case analysis, and when to complete the analysis of alternatives process.
+In this module, we'll focus on understanding the importance of a business case analysis. We'll also cover how to perform a business case analysis, and when to complete the analysis of alternatives process.
 
 ## Learning objectives 
 

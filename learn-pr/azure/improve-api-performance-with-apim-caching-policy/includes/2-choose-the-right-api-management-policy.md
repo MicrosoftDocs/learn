@@ -1,12 +1,12 @@
 You can use API Management policies to control the behavior of a deployed API without rewriting its code.
 
-In your board game company, you have a set of APIs that enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else it is possible to achieve with policies.
+In your board game company, you have a set of APIs that enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else you can achieve with policies.
 
 First, let's look at what you can use policies to do.
 
 ## What are policies?
 
-In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API are designed by the developers who write the code. However, administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we will concentrate on using policies to set up and control a cache.
+In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API is designed by the developers who write the code. However, administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we'll concentrate on using policies to set up and control a cache.
 
 Policies are made up of individual statements, which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
 
@@ -19,7 +19,7 @@ In Azure API Management, policies execute at four different times:
 - **Outbound**. These policies execute before a response is sent to a client.
 - **On-Error**. These policies execute when an exception is raised.
 
-In the policy XML, there is a separate tag for each of these execution times:
+In the policy XML, there's a separate tag for each of these execution times:
 
 ```xml
 <policies>
@@ -41,13 +41,14 @@ In the policy XML, there is a separate tag for each of these execution times:
 </policies>
 ```
 
-In this example, you can see that the policy checks inbound requests for a header named **Authorization**. If such a header is not present, the policy displays an error message.
+In this example, you can see that the policy checks inbound requests for a header named **Authorization**. If such a header isn't present, the policy displays an error message.
 
 This policy also translates any out-bound responses in JSON format into XML.
 
 ## Policy scopes
 
 A policy's scope determines how broadly it will be applied. There are four policy scopes that you can choose from:
+
 - Global
 - Product
 - API
@@ -61,7 +62,7 @@ To use the global scope, in your API Management service pane, in the left menu p
 
 ![Global All API Scope.](../media/2-global-scope.png)
 
-The policy editor that appears contains default XML content. On the right, you can see shortcuts that add policies:
+The policy editor that appears, contains default XML content. On the right, you can see shortcuts that add policies:
 
 ![Global Scope Editor.](../media/2-global-scope-editor.png)
 
@@ -110,9 +111,9 @@ Let's examine some things you can do with policies in API Management.
 
 There are several policies that you can use to prevent or limit access to an API or its operations:
 
-Use the **Check HTTP header** policy to check for a property in an HTTP Header. If the property is not found, Azure drops the request.
+Use the **Check HTTP header** policy to check for a property in an HTTP Header. If the property isn't found, Azure drops the request.
 
-The **Limit call rate by subscription** policy restricts the number of calls that can come from a single API subscription. This policy can ensure that users from one subscription do not use all your bandwidth.
+The **Limit call rate by subscription** policy restricts the number of calls that can come from a single API subscription. This policy can ensure that users from one subscription don't use all your bandwidth.
 
 If you want to restrict the number of calls that arrive with a single access key, use the **Limit call rate by key** policy.
 
@@ -158,7 +159,7 @@ For example, if you want to apply a policy only when the response passes a speci
 
 Use the **Forward request** policy to forward a request to a backend server.
 
-To control what happens when an action fails, use the **Retry** policy. Policy statements enclosed in **Retry** will execute repeated until a condition is met. Execution will repeat at the specified time intervals up until the retry count value is reached.
+To control what happens when an action fails, use the **Retry** policy. Policy statements enclosed in **Retry** will execute repeatedly until a condition is met. Execution will repeat at the specified time intervals up until the retry count value is reached.
 
 The **Send one-way request** policy can send a request to a URL without waiting for a response.
 

@@ -1,4 +1,4 @@
-You have configured SSL for the connection between Azure Application Gateway and the servers in the backend pool. For the shipping portal, you need full end-to-end encryption. To do this encryption, you'll also need to encrypt the messages that the client sends to Application Gateway.
+You've configured SSL for the connection between Azure Application Gateway and the servers in the backend pool. For the shipping portal, you need full end-to-end encryption. To do this encryption, you'll also need to encrypt the messages that the client sends to Application Gateway.
 
 ## Create a frontend port
 
@@ -14,7 +14,7 @@ az network application-gateway frontend-port create \
 
 ## Configure a listener
 
-A listener waits for incoming traffic to the gateway on a specified frontend port. This traffic is then routed to a server in the backend pool. If the frontend port uses SSL, you need to indicate the certificate to use for decrypting incoming messages. The certificate includes the private key. 
+A listener waits for incoming traffic to the gateway on a specified frontend port. This traffic is then routed to a server in the backend pool. If the frontend port uses SSL, you need to indicate the certificate to use for decrypting incoming messages. The certificate includes the private key.
 
 You can add the certificate by using the `az network application-gateway ssl-cert create` command. The certificate file should be in PFX format. Because this file contains the private key, it will also likely be password protected. You provide the password in the `cert-password` argument, as shown in the following example.
 
@@ -40,7 +40,7 @@ az network application-gateway http-listener create \
 
 ## Define a rule to send HTTPS requests to the servers
 
-The final step is to create a rule that directs the messages received through the listener to the servers in the backend pool. The messages received from the frontend port are decrypted through the SSL certificate specified for the listener. You need to re-encrypt these messages by using the client-side certificate for the servers in the backend pool. You define this information in the rule. 
+The final step is to create a rule that directs the messages received through the listener to the servers in the backend pool. The messages received from the frontend port are decrypted through the SSL certificate specified for the listener. You need to re-encrypt these messages by using the client-side certificate for the servers in the backend pool. You define this information in the rule.
 
 The following example shows how to use the `az network application-gateway rule create` command to create a rule that connects a listener to a backend pool. The `--http-settings` parameter specified the HTTP settings that reference the client-side certificate for the servers. You created these settings in the previous unit.
 

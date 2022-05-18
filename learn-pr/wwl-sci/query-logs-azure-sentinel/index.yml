@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- cloud-security
 units:
 - learn.wwl.query-logs-azure-sentinel.introduction
 - learn.wwl.query-logs-azure-sentinel.logs-page

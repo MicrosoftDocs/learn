@@ -152,10 +152,7 @@ Use auto-failover groups when:
 
 - You’re implementing Azure SQL DB managed instance.
 
->[!IMPORTANT]
-> Auto-failover groups support both Azure SQL DB and Azure SQL Database. However, Active geo-replication supports only Azure SQL Database.
 
- 
 
 ## Geo-replication and auto-failover groups
 

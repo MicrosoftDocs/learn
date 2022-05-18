@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.onboard-microsoft-learn-educators-program.knowledge-check
+title: Knowledge check
+metadata:
+  title: 8-Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where is the best place to access Microsoft Learn for Educators curriculum as well as update your profile, enter the course you will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center?"
+    choices:
+    - content: "Microsoft Learn for Educators program page"
+      isCorrect: false
+      explanation: "Incorrect. While the Microsoft Learn for Educators (MSLE) program page provides an overview of MSLE, the Microsoft Learn for Educators portal allows you to update your profile, enter the course you will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center."
+    - content: "Microsoft Learn for Educators portal"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Learn for Educators portal allows you to update your profile, enter the course you will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center."
+    - content: "Microsoft Learn for Educators community"
+      isCorrect: false
+      explanation: "Incorrect. While the Microsoft Learn for Educators community provides an opportunity to engage with other educators, the Microsoft Learn for Educators portal allows you to update your profile, enter the course you will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center."
+  - content: "The Microsoft Learning Download Center (LDC) is accessible AFTER you create your Microsoft Learn for Educators (MSLE) profile. What information can you find here?"
+    choices:
+    - content: "Virtual educator prep sessions"
+      isCorrect: false
+      explanation: "Incorrect. Virtual educator prep sessions are available through MSLE not the LDC."
+    - content: "Assessment guides"
+      isCorrect: true
+      explanation: "Correct. The curriculum resources in the LDC include assessment guides."
+    - content: "Microsoft virtual training days"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft virtual training days are available through MSLE not the LDC."
+  - content: "Where do you go to read the blog posts and get answers to questions from other educators from around the world?"
+    choices:
+    - content: "Microsoft Learn for Educators program page"
+      isCorrect: false
+      explanation: "Incorrect. While the Microsoft Learn for Educators (MSLE) program page provides an overview of MSLE, the Microsoft Learn for Educators Teams community allows you to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more."
+    - content: "Microsoft Learn for Educators portal"
+      isCorrect: false
+      explanation: "Incorrect. While the Microsoft Learn for Educators Portal allows you to update your profile, enter the course you will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center, the Microsoft Learn for Educators Teams community allows you to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more."
+    - content: "Microsoft Learn for Educators Teams community"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Learn for Educators Teams community allows you to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more."

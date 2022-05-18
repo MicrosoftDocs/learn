@@ -22,16 +22,17 @@ Azure Migrate components include:
 
 	- Data: Large volumes of data are migrated to Azure by using Azure Data Box products.
 
-The following table describes the different migration tools you can use, depending on the migration scenario.
+Azure Migrate hub includes these tools:
 
 | **Tool**| **Migration scenario** |
 | - | - |
-| Azure Migrate: Server Assessment| Performs an assessment for physical servers and on-premises VMs running in Hyper-V and VMware environments as preparation for migrating to Azure. |
-| Azure Migrate: Server Migration| Performs migration for physical servers and on-premises VMs running in Hyper-V, VMware environments, and other public cloud VMs. |
-| Azure Migrate: Database Assessment| Performs an assessment of on-premises Microsoft SQL Server databases as preparation for migration to Azure SQL Database, an Azure SQL Database–managed instance, Database–managed instance, or Azure VMs running SQL Server. |
-| Azure Migrate: Database Migration| Performs an assessment as preparation for migration to Azure VMs running SQL Server, Azure SQL Database, or Azure SQL Database–managed instances. |
-| Azure Migrate: Web App Assessment| Performs an assessment of on-premises web apps and migrates them to Azure. Uses the Azure App Service Migration Assistant to perform assessment and migration. |
-| Azure Migrate: Data Box| Performs a move of large amounts of offline data to Azure by using Azure Data Box. |
+| Azure Migrate: Discovery and assessment: Server Assessment| Discover and assess servers including SQL and web apps. |
+| Azure Migrate: Server Migration | Migrate servers. |
+| Data Migration Assistant | Assess SQL Server databases for migration to Azure SQL Database, Azure SQL Managed Instance, or Azure VMs running SQL Server. |
+| Azure Database Migration Service | Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances. |
+| Movere | Assess servers. |
+| Web app migration assistant| Assess on-premises web apps and migrate them to Azure. |
+| Azure Data Box | Migrate offline data. |
 
 
 ### What can you do with Azure Migrate?

@@ -8,7 +8,7 @@ The first thing you must understand is whether an app sends messages or events. 
 
 ## What is a message?
 
-[Messages](https://docs.microsoft.com/azure/event-grid/compare-messaging-services#message) have the following characteristics. 
+[Messages](/azure/event-grid/compare-messaging-services#message) have the following characteristics. 
 
 - Contains raw data, produced by one component, that will be consumed by another component.
 
@@ -22,7 +22,7 @@ Let’s suppose a user uploads a new song by using your mobile music-sharing app
 
 ## What is an event?
 
-[Events](https://docs.microsoft.com/azure/event-grid/compare-messaging-services#event) are lighter weight than messages and are most often used for broadcast communications. There are two components involved with events:
+[Events](/azure/event-grid/compare-messaging-services#event) are lighter weight than messages and are most often used for broadcast communications. There are two components involved with events:
 
 - Publishers, which send the event. 
 

@@ -1,0 +1,14 @@
+name: 'publish-module-2'
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'module-2/**'
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-module.yml
+    with:
+      path: 'module-2/main.bicep'

@@ -10,7 +10,7 @@ Here's an example path for a module in a private Azure container registry:
 
 The path contains four segments:
 
-- **Schema**: Bicep supports several module types, which are called *schemas*. When you work with Bicep registries, the schema is `br`.
+- **Scheme**: Bicep supports several module types, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
 - **Registry**: This is the name of the registry that contains the module you want to use. In the preceding example, the registry name is `toycompany.azurecr.io`, which is the name of the container registry.
 - **Module identifier**: This is the full path to the module within the registry.
 - **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions shortly.
@@ -25,7 +25,7 @@ It's a good idea to carefully plan how you'll version your modules. Two key deci
 
 ### Versioning schemes
 
-Your versioning scheme determines how you generate version numbers. Common versioning schemas include:
+Your versioning scheme determines how you generate version numbers. Common versioning schemes include:
 
 - *Basic integers* can be used as version numbers. For example, your first version might be called `1`, your second version `2`, and so forth. Or, you might add a prefix to each version number, such as `v1` and `v2`.
 - *Dates* also make good version numbers. For example, if you publish the first version of your module on January 16, 2022, you might name the version `2022-01-16` (using *yyyy-mm-dd* format). When you publish another version on March 3, you could name it `2022-03-03`.

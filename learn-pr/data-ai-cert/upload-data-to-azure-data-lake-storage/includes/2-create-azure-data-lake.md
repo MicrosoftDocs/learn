@@ -19,13 +19,13 @@ To create a resource group in the Azure portal, follow these steps:
 
 1. On the **Basics** tab, enter the following values for each setting.
 
-    | Setting      | Value  |
-    | ------------ |  ------- |
-    | **Project details** |
-    | Subscription | Subscription you choose to work in. |
-    | Resource group|  Enter *mslearn-datalake-test* |
-    | **Resource details**|
-    | Region | Select a location for the resource group. Typically, you'll want a location that's close to you or to the data you'll work with. |
+    | Setting              | Value                                                        |
+    | -------------------- | ------------------------------------------------------------ |
+    | **Project details**  |                                                              |
+    | Subscription         | Subscription you choose to work in.                          |
+    | Resource group       | Enter *mslearn-datalake-test*                                |
+    | **Resource details** |                                                              |
+    | Region               | Select a location for the resource group. Typically, you'll want a location that's close to you or to the data you'll work with. |
 
     ![Screenshot showing Azure create a resource group pane.](../media/2-create-resource-group.png)
 
@@ -47,14 +47,14 @@ You'll create a Data Lake Storage Gen2 account the same way you create an Azure 
 
 1. On the **Basics** tab, enter the following values for each setting.
 
-    | Setting      | Value  |
-    | ------------ |  ------- |
-    | **Project details** |
-    | Subscription | Same subscription as the *Data Lake Storage Gen2 account* you just created. |
-    | Resource group|  From the dropdown list, select *mslearn-datalake-test* |
-    | **Instance details**|
+    | Setting              | Value                                                        |
+    | -------------------- | ------------------------------------------------------------ |
+    | **Project details**  |                                                              |
+    | Subscription         | Same subscription as the *Data Lake Storage Gen2 account* you just created. |
+    | Resource group       | From the dropdown list, select *mslearn-datalake-test*       |
+    | **Instance details** |                                                              |
     | Storage account name | Enter a unique name for your storage account. The name must be unique across all of Azure. You might have to try a few variations to find a unique name. Try using the prefix *dlakedata* with some numbers. A green check mark indicates you've entered a valid name. |
-    | **Region** | From the dropdown list, select *(US) Central US*. |
+    | **Region**           | From the dropdown list, select *(US) Central US*.            |
 
 1. Accept the defaults for the reminder of the settings. 
 
@@ -64,9 +64,9 @@ You'll create a Data Lake Storage Gen2 account the same way you create an Azure 
 
 1. On the **Advanced** tab, select the following value for the setting. Accept default values for all other settings.
 
-    | Setting      | Value  |
-    | ------------ |  ------- |
-    | **Data Lake Storage Gen2** |
+    | Setting                       | Value             |
+    | ----------------------------- | ----------------- |
+    | **Data Lake Storage Gen2**    |                   |
     | Enable hierarchical namespace | *check* (Enabled) |
   
     ![Screenshot showing the Advanced tab for Create storage account.](../media/2-create-storage-account.png)

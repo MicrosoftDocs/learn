@@ -29,8 +29,8 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 
 Now you can test your deployed service.
 
-1. On the **Endpoints** page, open the **predict-auto-price** real-time endpoint.
-2. When the **predict-auto-price** endpoint opens, view the **Test** tab. 
+1. On the **Endpoints** page, open the **predict-rentals** real-time endpoint.
+2. When the **predict-rentals** endpoint opens, view the **Test** tab. 
 3. In the input data pane, replace the template JSON with the following input data: 
 
     ```JSON

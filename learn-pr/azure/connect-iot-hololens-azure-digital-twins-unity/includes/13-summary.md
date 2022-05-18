@@ -2,7 +2,9 @@ Bringing operations data to a Digital Twin extends the Mixed Reality experience 
 
 Connecting right time data to 3D assets using ADT involves many steps.  You can semi-automate the creation of the required Azure services and configuration by using ARM templates.  The ARM templates, through Bicep scripting, automate the creation of key Azure Resource Groups and Resources, simplifying their creation and configuration, permitting standardizing and large-scale distributions within organizations.  Live operations data is often high volume, rapidly changing, and diverse.  Azure IoT and ADT services help the ingestion and connectivity of your Digital Twins in Unity to provide a connected, immersive, and timely data experience.  
 
-Observing streaming data in an immersive setting can be powerful.  Data patterns and correlations can be observed and experienced in Mixed Reality as opposed to being inferred from tabular data and reports.  By connecting a Digital Twin to ADT, you can identify anomalies and take action directly from within mixed reality. 
+Observing streaming data in an immersive setting can be powerful.  Data patterns and correlations can be observed and experienced in Mixed Reality as opposed to being inferred from tabular data and reports.  By connecting a Digital Twin to ADT, you can identify anomalies and take action directly from within mixed reality.
+
+Now that you've completed this module, you can [clean up your resources in Azure](/azure/azure-resource-manager/management/manage-resources-portal#delete-resources).
 
 ## References
 

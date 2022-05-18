@@ -25,6 +25,8 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- migration
 units:
 - learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.introduction
 - learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.introduction-azure-database-postgresql

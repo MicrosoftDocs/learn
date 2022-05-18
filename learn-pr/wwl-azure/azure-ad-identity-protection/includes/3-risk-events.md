@@ -1,28 +1,21 @@
-The majority of security breaches take place when attackers gain access to an environment by stealing a user’s identity. Discovering compromised identities is no easy task. Azure Active Directory uses adaptive machine learning algorithms and heuristics to detect suspicious actions that are related to your user accounts. Each detected suspicious action is stored in a record called a **risk detection**.
+To protect your users, you can configure risk-based policies in Azure Active Directory (Azure AD) that automatically respond to risky behaviors. Azure AD Identity Protection policies can automatically block a sign-in attempt or require additional action, such as requiring a password change or prompt for Azure AD Multi-Factor Authentication. These policies work with existing Azure AD Conditional Access policies as an extra layer of protection for your organization. Users may never trigger a risky behavior in one of these policies, but your organization is protected if an attempt to compromise your security is made.
 
-There are two places where you review reported risk detections:
+Each day, Microsoft collects and analyses trillions of anonymized signals as part of user sign-in attempts. These signals help build patterns of good user sign-in behavior and identify potential risky sign-in attempts. Azure AD Identity Protection can review user sign-in attempts and take additional action if there's suspicious behavior:
 
- -  **Azure AD reporting** \- Risk detections are part of Azure AD's security reports.
- -  **Azure AD Identity Protection** \- Risk detections are also part of the reporting capabilities of Azure Active Directory Identity Protection.
+Some of the following actions may trigger Azure AD Identity Protection risk detection:<br>
 
-In addition, you can use the Identity Protection risk detections API to gain programmatic access to security detections using Microsoft Graph.
+ -  Users with leaked credentials.
+ -  Sign-ins from anonymous IP addresses.
+ -  Impossible travel to atypical locations.
+ -  Sign-ins from infected devices.
+ -  Sign-ins from IP addresses with suspicious activity.
 
-Currently, Azure Active Directory detects six types of risk detections:
+The following three policies are available in Azure AD Identity Protection to protect users and respond to suspicious activity. You can choose to turn the policy enforcement on or off, select users or groups for the policy to apply to, and decide if you want to block access at sign-in or prompt for additional action.
 
- -  **Users with leaked credentials** \- When cybercriminals compromise valid passwords of legitimate users, they often share those credentials.
- -  **Sign-ins from anonymous IP addresses** \- This risk detection type identifies users who have successfully signed in from an IP address that has been identified as an anonymous proxy IP address.
- -  **Impossible travel to atypical locations** \- This risk detection type identifies two sign-ins originating from geographically distant locations, where at least one of the locations may also be atypical for the user, given past behavior.
- -  **Sign-ins from infected devices** \- This risk detection type identifies sign-ins from devices infected with malware, that are known to actively communicate with a bot server.
- -  **Sign-in from unfamiliar locations** \- This risk detection type considers past sign-in locations (IP, Latitude / Longitude and ASN) to determine new / unfamiliar locations.
- -  **Sign-ins from IP addresses with suspicious activity** \- This risk detection type identifies IP addresses from which a high number of failed sign-in attempts were seen, across multiple user accounts, over a short period of time.
+The insight you get for a detected risk detection is tied to your Azure AD subscription.<br>
 
-:::image type="content" source="../media/az500-risk-level-a2e72edc.png" alt-text="Screenshot of the risk detections blade.":::
+ -  **User risk policy** \- Identifies and responds to user accounts that may have compromised credentials. Can prompt the user to create a new password.
+ -  **Sign-in risk policy** \- Identifies and responds to suspicious sign-in attempts. Can prompt the user to provide additional forms of verification using Azure AD Multi-Factor Authentication.
+ -  **MFA registration policy** \- Makes sure users are registered for Azure AD Multi-Factor Authentication. If a sign-in risk policy prompts for MFA, the user must already be registered for Azure AD Multi-Factor Authentication.
 
-
-The insight you get for a detected risk detection is tied to your Azure AD subscription.
-
- -  With the **Azure AD Premium P2 edition**, you get the most detailed information about all underlying detections.
- -  With the **Azure AD Premium P1 edition**, advanced detections (such as unfamiliar sign-in properties) are not covered by your license, and will appear under the name Sign-in with additional risk detected. Additionally, the risk level and risk detail fields are hidden.
-
-> [!IMPORTANT]
-> While the detection of risk detections already represents an important aspect of protecting your identities, you also have the option to either manually address them or implement automated responses by configuring Conditional Access policies.
+When you enable a policy user or sign-in risk policy, you can also choose the threshold for risk level - ***low and above***, *medium and above*, or ***high***. This flexibility lets you decide how aggressive you want to be in enforcing any controls for suspicious sign-in events.

@@ -113,7 +113,7 @@ You've now created the virtual machines running the vehicle registration web app
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \
-        --deployment-source-branch appService --runtime "DOTNETCORE|2.1" 
+        --deployment-source-branch appService --runtime "DOTNETCORE|3.1" 
     ```
 
 Now, let's take a closer look at configuring Application Gateway.

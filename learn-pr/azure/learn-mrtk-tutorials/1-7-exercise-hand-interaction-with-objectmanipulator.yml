@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.learn-introduction-tutorials-mrtk.1-7-exercise-hand-interaction-with-objectmanipulator
-title: Exercise - Add hand interaction with object manipulator
+title: Exercise - Add hand interaction scripts to an object
 metadata:
-  title: Exercise - Add hand interaction with object manipulator
-  description: Introduction for Add hand interaction with object manipulator
+  title: Exercise - Add hand interaction scripts to an object
+  description: Introduction for Add hand interaction scripts to an object
   ms.date: 09/09/2021
   author: Sean-Kerawala
   ms.author: sekerawa

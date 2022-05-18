@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - consumer
+subjects:
+- marketing-sales
 units:
 - learn.startups.pitch-company.introduction
 - learn.startups.pitch-company.pitching-principles

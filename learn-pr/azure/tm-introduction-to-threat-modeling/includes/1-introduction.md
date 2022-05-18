@@ -2,7 +2,7 @@ Threat modeling is an effective technique to help secure your systems, applicati
 
 Threat modeling uses a data-flow diagram that graphically shows how the system works. It then applies a framework to help you find and fix security issues.
 
-Systems released without first being threat modeled places your customers and organization at risk.
+Systems released without first being threat modeled place your customers and organization at risk.
 
 > [!NOTE]
 > To make things easier, this learning path will refer to systems, applications, and services as just systems.
@@ -28,7 +28,7 @@ In this module, you'll explore the four high-level steps of threat modeling and 
 
 - Understand the importance of capturing requirements and assumptions to help create a data-flow diagram
 - Read about the framework that helps you find security issues in a system
-- Learn about the security control categories that help you reduce or eliminate potential threats
+- Learn about the security-control categories that help you reduce or eliminate potential threats
 - Highlight the importance of verifying assumptions, requirements, and fixes before deployment
 
 ## Prerequisites

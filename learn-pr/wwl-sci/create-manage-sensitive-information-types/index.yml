@@ -29,6 +29,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.create-manage-sensitive-information-types.introduction
 - learn.wwl.create-manage-sensitive-information-types.compare-built-versus-custom

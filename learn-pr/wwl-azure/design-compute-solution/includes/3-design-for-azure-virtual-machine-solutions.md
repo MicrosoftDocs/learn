@@ -63,7 +63,7 @@ The best way to determine the appropriate VM size is to consider the type of wor
  
 
 > [!TIP]
-> Try the [Virtual machines selector tool](https://aka.ms/vm-selector) to find other sizes that best fit your workload.
+> Try the [Virtual machines selector tool](https://azure.microsoft.com/pricing/vm-selector/) to find other sizes that best fit your workload.
 
 ### Review the pricing model
 

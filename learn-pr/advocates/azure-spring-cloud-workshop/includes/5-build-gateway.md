@@ -11,7 +11,7 @@ Gateways are used to route public HTTP traffic to microservices:
 To create our gateway, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=todo-gateway -d bootVersion=2.3.6.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=todo-gateway -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
 ```
 
 > [!NOTE]
@@ -34,7 +34,7 @@ spring.cloud.gateway.discovery.locator.enabled=true
 As in the previous module, create a specific `todo-gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--assign-endpoint` flag so it is exposed publicly.
 
 ```bash
-az spring-cloud app create --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --assign-endpoint
+az spring-cloud app create --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --runtime-version Java_11 --assign-endpoint
 ```
 
 ## Deploy the application
@@ -44,7 +44,7 @@ You can now build your "todo-gateway" project and send it to Azure Spring Cloud:
 ```bash
 cd todo-gateway
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --artifact-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-pipelines-concurrency.describe-azure-pipelines-open-source-projects
+title: Describe Azure Pipelines and open-source projects
+metadata:
+  title: Describe Azure Pipelines and open-source projects
+  description: "Describe Azure Pipelines and open-source projects"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-describe-azure-pipelines-open-source-projects.md)]
