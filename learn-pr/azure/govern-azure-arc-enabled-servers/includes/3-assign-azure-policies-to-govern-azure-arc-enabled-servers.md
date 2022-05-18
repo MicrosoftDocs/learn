@@ -21,7 +21,7 @@ Here we’ll walk through assigning an Azure Policy to ensure that your Arc-enab
 
   ![Azure Policy parameter assignment](../media/assign-policy-param.png)
 
-6. Select **Review + create** and **Create. **
+6. Select **Review + create** and **Create.**
 
 On the Azure Policy Assignments page, your new Azure Policy assignment will appear in the list of Assignments. Please note that the assignment takes around 30 minutes to take effect and appear in this list.
 
