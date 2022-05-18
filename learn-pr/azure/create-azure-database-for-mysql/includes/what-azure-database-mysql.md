@@ -98,8 +98,6 @@ Azure Database for MySQL Flexible Server offers numerous cost-optimization capab
 
 To configure these options, go to the Azure portal’s **Flexible server deployment** page, **Compute + storage** tab.
 
-![Screenshot of the Compute + storage tab displaying individual settings for a new Azure Database for MySQL server and its estimated cost.](../media/2-mysql-estimated-cost.png)
-
 - The ability to stop and start the server on-demand. The compute tier billing is stopped as soon as you stop the server. This can allow you to minimize costs during development, testing, and for production workloads with a reliably predictable schedule.
 
 - The choice of the Burstable compute tier. The Burstable Azure VM SKU offers competitive pricing for workloads characterized by low CPU utilization, with occasional CPU usage spikes.
