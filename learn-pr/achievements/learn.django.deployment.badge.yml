@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.django.deployment.badge
+metadata:
+  title: >-
+    Microsoft Badge: Deploy a Django application to Azure by using PostgreSQL
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/django-deployment-social.png
