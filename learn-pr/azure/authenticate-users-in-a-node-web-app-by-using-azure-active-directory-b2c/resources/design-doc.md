@@ -50,8 +50,8 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Register web apps in Azure AD B2C | So, your organization wants to use Azure AD B2C as an identity provider because you can customize the entire user experience with your brand. | Exercises, Knowledge check | 1 | Yes |
-| Create Azure AD B2C combined sign up/in user flow|customers can sign up or sign in to the web app. | Exercise | 1 | No, Subtask 1|
+| Register web app in Azure AD B2C | So, your organization wants to use Azure AD B2C as an identity provider because you can customize the entire user experience with your brand. | Exercises, Knowledge check | 1 | Yes |
+| Create combined sign up sign in user flow|customers can sign up or sign in to the web app. | Exercise | 1 | No, Subtask 1|
 |Configure identity providers in Azure AD B2C| customers can sign up or sign in to the web app using email or a social account. | Exercise | 1 | No, Subtask 1 |
 | Create a Node web app | Your organization is launching a new Node web app | Exercise | 2| Yes |
 |Add Azure AD B2C authentication to the Node web app| Because of customer data sensitivity and authentication scaling complexities, your organization don't want to manage customer identities from within the Node web app. So, your organization wants to use Azure AD B2C as an identity provider because you can customize the entire user experience with your brand. | Exercise | 2 | Yes |
