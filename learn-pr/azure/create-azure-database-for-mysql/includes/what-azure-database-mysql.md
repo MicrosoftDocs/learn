@@ -109,3 +109,4 @@ To configure these options, go to the Azure portal’s **Flexible server deploym
   - 750 hours of Burstable B1MS instance, enough hours to run a database instance continuously each month.
 
   - 32 GB storage and 32 GB backup storage.
+
