@@ -10,4 +10,4 @@ In this module you learned:
 ## Next steps
 
 * To learn how to host web apps in Azure, see [Host a web application with Azure App Service](/learn/modules/host-a-web-app-with-azure-app-service/?azure-portal=true).
-* To learn more about Azure Maps, watch [Azure Maps videos on Microsoft Shows](https://docs.microsoft.com/shows).
+* To learn more about Azure Maps, watch [Azure Maps videos on Microsoft Shows](/shows/browse).

@@ -36,7 +36,7 @@ Now that everything is set up, the only thing left is to make Twilio call the fu
 
     :::image type="content" source="../media/twilio-develop.png" alt-text="Screenshot that shows the Active numbers button highlighted in Twilio.":::
 
-1. In the **Messaging Service** section, paste the function endpoint URL that you copied in the preceding unit as the webhook destination for arriving messages.
+1. In the **Messaging Service** section, paste the function endpoint URL that you copied in the preceding section as the webhook destination for arriving messages.
 
     :::image type="content" source="../media/twilio-webhook.png" alt-text="Screenshot that shows the webhook destination.":::
 
