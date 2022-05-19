@@ -4,10 +4,10 @@ title: Summary
 metadata:
   unitType: summary
   title: summary
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 2/25/2022
+  description: "This summary describes the basics of deploying a Microsoft Purview account in the Azure Portal, registering an Azure Storage data source, and scanning the data into the Microsoft Purview Data Map."
+  ms.date: 5/19/2022
   author: whhender
-  ms.author: {{msUser}}
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1

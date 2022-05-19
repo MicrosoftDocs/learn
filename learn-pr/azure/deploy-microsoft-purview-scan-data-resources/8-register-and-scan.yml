@@ -2,12 +2,12 @@
 uid: learn.deploy-microsoft-purview-scan-data-resources.register-and-scan
 title: register-and-scan
 metadata:
-  unitType: {{patternType}}
+  unitType: learning-content
   title: register-and-scan
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/3/2022
+  description: "This unit describes registering and scanning a data source in Microsoft Purview. It describes how data is added to the Microsoft Purview Data Map, how to register a source, and how to set up a scan."
+  ms.date: 5/19/2022
   author: whhender
-  ms.author: {{msUser}}
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1

@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/3/2022
+  description: "Knowledge check for registration and scanning in Microsoft Purview. These questions cover basic information to register a data source and scan it into the Microsoft Purview data map."
+  ms.date: 5/19/2022
   author: whhender
-  ms.author: {{msUser}}
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
