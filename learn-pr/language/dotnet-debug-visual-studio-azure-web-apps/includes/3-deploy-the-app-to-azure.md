@@ -1,14 +1,23 @@
-In order to work through a remote debugging exercise with App Service, you'll first need to deploy an application to Azure. For this scenario, you can clone the sample GitHub project below.
+In order to work through a remote debugging exercise with App Service, you'll first need to deploy an application to Azure. The Razor Pages sample app provided below allows users to search for GitHub repositories by organization. However, the app also contains a subtle bug that you will troubleshoot using Visual Studio after it has been deployed.
 
-```Bash
-git clone "https://github.com/MicrosoftDocs/mslearn-dotnet-debug-visual-studio-app-service.git"
-```
+## Setup the sample app
 
-The sample Razor Pages project allows users to search for GitHub repositories by organization using a simple form. The results are displayed in a table after they press submit. Most of the relevant code for the app can be found in the `OnGet` method inside the `Index.cshtml.cs` file. The code pulls the GitHub API URL from the `appsettings.development.json` file when the app runs and makes an HTTP request using the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
+1) Clone the app from GitHub using the following command:
 
-You can start the app locally by pressing the run button inside of Visual Studio. The app should load correctly and present a form to use for search queries. For example, you can search *dotnet* in the form input to browse repos for that GitHub organization to get an idea of what the results should look like.
+    ```Bash
+    git clone "https://github.com/MicrosoftDocs/mslearn-dotnet-debug-visual-studio-app-service.git"
+    ```
 
-:::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
+2) Inside the root folder of the cloned project, double click on `GitHubBrowser.sln` to open the app in Visual Studio.
+
+3) You can start the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
+
+    :::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
+
+
+Most of the relevant code for the app can be found in the `OnGet` method inside the `Index.cshtml.cs` file. The code pulls the GitHub API URL from the `appsettings.Development.json` file when the app runs and makes an HTTP request using the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
+
+## Deploy the app to Azure
 
 Next you need to deploy the app to Azure so others can use it to browse repositories. You can deploy the app using the steps below.
 
@@ -24,21 +33,20 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
 
 5) Next, create a new app service instance by selecting the green **+** icon. In the new app service dialog, enter the following values:
 
-    * **Name**: Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure.
+    |  |  |
+    | --- | --- |
+    | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
+    | **Subscription name** | Select the subscription you would like to use for your new App Service instance. |
+    | **Resource group** | Select **New...** and enter a name of `mslearn-github-browser` for the resource group name. |
+    | **Hosting plan** | Select **New...** and enter a name of `mslearn-github-browser-plan`. |
 
-    * **Subscription name**: Select the subscription you would like to use for your new App Service instance.
-
-    * **Resource Group**: Select **New...** and enter a name of `mslearn-github-browser` for the resource group name.
-
-    * **Hosting Plan**: Select **New...** and enter a name of `mslearn-github-browser-plan`.
-
-    Finally, select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
+6) Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
 
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
 
-6) Once the App Service is created, select the new instance, and then choose Finish.
+7) Once the App Service is created, select the new instance, and then choose Finish.
 
-7) Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a moment to complete.
+8) Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a moment to complete.
 
     :::image type="content" source="../media/visual-studio-remote-debug-publish-profile.png" alt-text="A screenshot of the publishing profile.":::
 

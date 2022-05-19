@@ -6,6 +6,18 @@ In this module, you learned how to:
 - Work with debugging symbols in Visual Studio
 - Inspect and troubleshoot configuration values for apps running in different environments
 
+## Clean up resources
+
+If you're not going to continue to use this application, make sure to delete the Azure App Service instance and all the associated services to avoid undesired costs. You can delete the top level resource group to remove all of the resources you created at the same time.
+
+Follow these steps in the Azure portal to delete the resource group:
+
+1) In the Azure portal search bar, search for the `mslearn-github-browser` resource group you created and select it from the results.
+2) On the `mslearn-github-browser` resource group overview page select the **Delete resource group** button at the top.
+3) Enter the resource group name `mslearn-github-browser` in the confirmation dialog and select **Delete**.
+
+The process to delete the resource group may take a few minutes to complete.
+
 ## Next steps
 
 Continue learning more about .NET debugging with:
