@@ -1,4 +1,4 @@
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Identity, Governance, Privacy, and Compliance. Students will learn how Azure Active Directory (AAD) provides identity services and how to govern their subscriptions using services such as Role-based Access Control and policies.  
+As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Identity, Governance, Privacy, and Compliance. Students will learn how Azure Active Directory (Azure AD) provides identity services and how to govern their subscriptions using services such as Role-based Access Control and policies.  
 
 This module consists of three lessons: 
 

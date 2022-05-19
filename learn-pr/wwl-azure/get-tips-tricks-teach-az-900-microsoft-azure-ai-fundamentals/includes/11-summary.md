@@ -12,7 +12,7 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 
-- [Azure Portal](https://aka.ms/azureportal) 
+- [Azure portal](https://aka.ms/azureportal) 
 
 - [Azure Pricing Calculator](https://aka.ms/pricingcal) 
 
