@@ -974,6 +974,6 @@ achievements:
   iconUrl: /learn/achievements/explore-azure-synapse-serverless-sql-pools-capabilities.svg
 - uid: learn.aks-workshop.badge
   type: badge
-  title: Microsoft Badge: Azure Kubernetes Service Workshop as issued by Microsoft
+  title: Azure Kubernetes Service Workshop as issued by Microsoft
   summary: Deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
   iconUrl: /learn/achievements/aks-workshop-social.png
