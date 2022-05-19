@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.deploy-docker.badge
+metadata:
+  title: >-
+    Microsoft Badge: Automate Docker container deployments with Azure Pipelines
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/azure-devops/deploy-docker-social.png
