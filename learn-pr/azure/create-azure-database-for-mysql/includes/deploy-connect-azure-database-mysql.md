@@ -158,3 +158,4 @@ To delete the Azure Database for MySQL server resource you provisioned in this e
 4. On the **mysql-RG** page, select the **Delete resource group** toolbar entry.
 
 5. When prompted to confirm, in the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
+
