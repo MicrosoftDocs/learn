@@ -33,3 +33,9 @@ In this unit, you will use the [Microsoft Purview governance portal](https://web
 1. After you've created your collection, you'll see it appear under the root collection. Select it, and you'll see it has it's own window where you can add a subcollection, edit, or add role assignments, just like the root collection.
     :::image type="content" source="../media/created-collection.png" alt-text="Screenshot of the newly created collection called 'Finance'. It has its own window where you can also edit, add role assignments, or a new collection.":::
 
+1. Let's add one more collection under our new 'Finance' collection. Select the 'Finance' collection, then select **+ Add a collection**, and give your new collection a name. In our example we've chosen 'Investment'.
+    :::image type="content" source="../media/06.08-add-second-collection.png" alt-text="Screenshot creating a new collection called 'Investment'.":::
+
+
+1. Once you've created your new collection, select the new collection, select **Role assignments**. Enable to **Restrict inherited permissions** toggle. This will create a secure sub-collection that will not inherit permissions from the Finance or root collections.
+    :::image type="content" source="../media/06.09-restrict-inherited-permissions.png" alt-text="Screenshot of the newly created collection called 'Investment', selected and open to the Role assignments tab. The Restrict inherited permissions option has been turned on.":::

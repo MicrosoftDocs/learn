@@ -7,7 +7,7 @@
 
 # Register and scan
 
-Now that \<Corporation Name> has a Microsoft Purview account and created collections that reflect their business structure, the next step to understanding their data is to connect Microsoft Purview to their data sources and giving Microsoft Purview access to process these sources.
+Now that Fabricam has a Microsoft Purview account and created collections that reflect their business structure, the next step to understanding their data is to connect Microsoft Purview to their data sources and giving Microsoft Purview access to process these sources.
 
 This connection is a two step process in Microsoft Purview:
 
@@ -24,11 +24,11 @@ Registering a data source tells Microsoft Purview where to find that data source
 
 You'll want to chose a collection that relates your data source to its logical location in your organization. Where that will be depends on how you've structured your collections.
 
-In our example \<Corporation Name> has \<these collections>. Registering a resource to \<restricted low level collection> will restrict discovery to that privileged group, which may be useful for sensitive data repositories. Registering the resource to \<higher level collection> will allow all users in that \<region or organization> to discover and use the data source. This would be useful for general data used by many teams for reporting.
+In our example Fabricam has the Finance and Investment collections under the root collection. Registering a resource to the secure Investment collection will restrict discovery to that privileged group, which may be useful for sensitive data repositories. Registering the resource to the Finance collection will allow all users in that organization to discover and use the data source. This would be useful for general data used by many teams for reporting.
 
 When you're choosing which collection to register your data source to, consider who might want to access it, the sensitivity of the data, and useability of the data.
 
-Once you've decided on a collection, we can register the data source from within the Microsoft Purview Governance Portal by going to the Data Map and selecting **Register**
+Once you've decided on a collection, we can register the data source from within the Microsoft Purview Governance Portal by going to the Data Map and selecting **Register**.
 
 :::image type="content" source="../media/08.01-register-source.png" alt-text="Register a data source":::
 

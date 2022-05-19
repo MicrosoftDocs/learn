@@ -32,3 +32,10 @@ Microsoft Purview uses a set of predefined roles to control who can access what 
 * **Workflow admin**: Workflow admins can perform create, read, modify, and delete action on workflow definitions and the associated workflow runs. Workflow admins can also bind workflow definition with supported business objects.
 
 :::image type="content" source="../media/05.02-purview-roles.png" alt-text="Microsoft Purview Roles":::
+
+## Inherited access
+
+The permissions of a parent collection are automatically inherited by its subcollections. This allows you to assign some groups or users broad access across the organization, so users can discover and manage data across an entire section, without having to assign individual permissions to every single subcollection.
+
+You may have groups within your organization that you know are dealing with sensitive data, that need to restrict inheritance so only that group can discover and manage information within. There is an option within every sub-collection that is **Restrict permission inheritance** that stops this automatic process of inheritance. If you enable this option, its subcollections will no longer inherit permissions from the parent and will need to be added directly. However, collection admins that are automatically inherited from a parent collection can't be removed, so select your collection administrators carefully!
+
