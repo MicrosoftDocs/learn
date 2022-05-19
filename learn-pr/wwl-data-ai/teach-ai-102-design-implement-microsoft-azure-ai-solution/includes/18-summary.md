@@ -24,7 +24,7 @@ Supplemental Resources:
 
 - [Bing Translate](https://aka.ms/BingTranslator) 
 
-- [What is Windows Azure Active Directory?](https://azure.microsoft.com/resources/videos/) 
+- [What is Microsoft Azure Active Directory?](https://azure.microsoft.com/resources/videos/) 
 
 - [JFK Files - Microsoft AI Lab](https://aka.ms/JFKfilesDemo) 
 
