@@ -129,7 +129,7 @@ The flyout items are at the very top of the flyout menu making them difficult to
 
     ```xaml
     <Shell.FlyoutHeader>
-        <Grid HeightRequest="100" BackgroundColor="DarkBlueSlate">
+        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
             <Image Source="moon.png" />
         </Grid>
     </Shell.FlyoutHeader>
