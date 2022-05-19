@@ -8,17 +8,17 @@ Supplemental Resources:
 
 - [Azure documentation](/azure/?product=popular) 
 
-- [Azure Architecture Center ](https:/aka.ms/azureac/)
+- [Azure Architecture Center ](/azure/architecture/?ocid=AID3023451&WT.mc_id=modinfra-21050-salean)
 
-- [GitHub ](https:/aka.ms/msgithub/)
+- [GitHub ](https://github.com/MicrosoftDocs/)
 
-- [Exam AI-102: Designing and Implementing a Microsoft Azure AI Solution](https:/aka.ms/AI102Exam) 
+- [Exam AI-102: Designing and Implementing a Microsoft Azure AI Solution](/learn/certifications/exams/ai-102) 
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 
 - [Azure Community Support](https://azure.microsoft.com/support/community/)   
 
-- [Microsoft’s Accessibility Commitment ](https:/aka.ms/MSAccessibilityCommitment)
+- [Microsoft’s Accessibility Commitment ](https://news.microsoft.com/accessibility-commitment/)
 
 - [Sentiment Analysis Demo](https://aka.ms/SentimentAnalysisDemo) 
 
