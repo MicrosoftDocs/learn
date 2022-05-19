@@ -1,0 +1,8 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.scan-for-vulnerabilities
+metadata:
+  title: >-
+    Microsoft Badge: Scan code for vulnerabilities in Azure Pipelines was issued
+    by Microsoft
+socialImageUrl: >-
+  /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline-social.png
