@@ -11,7 +11,7 @@ This module demonstrates how to use Visual Studio remote debugging features with
 > [!NOTE]
 > Remote debugging is only available for Windows Azure App Services (not supported on Linux instances).
 
-:::image type="content" source="../media/visual-studio-remote-debug-conceptual.png" alt-text="A conceptual diagram of remote debugging Azure App Service with Visual Studio.":::
+:::image type="content" source="../media/visual-studio-remote-debug-conceptual.png" alt-text="A conceptual diagram of remote debugging Azure App Service with Visual Studio." border="false":::
 
 ## What is the main goal?
 

@@ -1,4 +1,4 @@
-In order to work through a remote debugging exercise with App Service, you'll first need to deploy an application to Azure. For this scenario, you can either deploy your own app or clone the sample GitHub project below.
+In order to work through a remote debugging exercise with App Service, you'll first need to deploy an application to Azure. For this scenario, you can clone the sample GitHub project below.
 
 ```Bash
 git clone "https://github.com/MicrosoftDocs/mslearn-dotnet-debug-visual-studio-app-service.git"
