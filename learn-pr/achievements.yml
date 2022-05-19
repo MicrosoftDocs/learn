@@ -976,4 +976,4 @@ achievements:
   type: badge
   title: Microsoft Badge: Azure Kubernetes Service Workshop as issued by Microsoft
   summary: Deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
-  iconUrl: /learn/achievements/explore-azure-synapse-serverless-sql-pools-capabilities.svg
+  iconUrl: /learn/achievements/aks-workshop-social.png
