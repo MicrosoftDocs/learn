@@ -1,5 +1,5 @@
 
-Use Azure Active Directory B2C (Azure AD B2C) to authenticate users into your web application. Azure AD B2C is a scalable identiy service, which enables your customers to use their preferred social, enterprise, or local account identities to get single sign-on access to your applications. It takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks.
+Use Azure Active Directory B2C (Azure AD B2C) to authenticate users into your web application. Azure AD B2C is a scalable customer identiy service, which enables your customers to use their preferred social, enterprise, or local account identities to get single sign-on access to your applications. It takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks.
 
 ## Example scenario
 
