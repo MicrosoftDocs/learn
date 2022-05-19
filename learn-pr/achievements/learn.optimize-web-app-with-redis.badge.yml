@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.optimize-web-app-with-redis.badge
+metadata:
+  title: >-
+    Microsoft Badge: Optimize your web applications by caching read-only data
+    with Redis was issued by Microsoft
+socialImageUrl: /learn/achievements/optimize-web-apps-with-redis-social.png
