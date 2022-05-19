@@ -1,7 +1,5 @@
 Azure Database for MySQL - Flexible Server provides you with the flexibility to develop applications using your favorite tools, languages, and frameworks. You can continue to use powerful development tools like Visual Studio Code and GitHub and develop using any programming language like PHP, Java, Python, Node.js, C#, Ruby, etc. You can also integrate MySQL - Flexible Server with popular Content Management Systems (CMS) like WordPress or Drupal, Learning Management Systems (LMS) like Moodle, e-commerce platforms like Magento, and so on.
 
-:::image type="content" source="../media/supported-tools-and-languages.png" alt-text="Screenshot showing supported development tools, programming languages and frameworks.":::
-
 Let's begin by taking a look at the various steps involved in connecting to and querying MySQL - Flexible Server from your application, developed in the language of your choice.
 
 ## Step 1 - Obtain connection information

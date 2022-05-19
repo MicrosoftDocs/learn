@@ -6,8 +6,8 @@ In this unit, we'll only explore two of the services: Azure App Service and Azur
 
 To deploy your application on Azure App Service and integrate with MySQL - Flexible Server, use one of the following options:
 
-1. Create a MySQL flexible server and an App Service app individually, and then add the MySQL flexible server's connection information to **Application Settings** under **Configuration Settings** in the App Service app.
-1. Use **Web App + Database** from Azure Marketplace. This option creates a Web App and a MySQL flexible server isolated in a VNet. The flexible server's connection information is automatically added to the App Service app's **Configuration Settings**, through a **Connection String**.
+- Option 1: Create a MySQL flexible server and an App Service app individually, and then add the MySQL flexible server's connection information to **Application Settings** under **Configuration Settings** in the App Service app.
+- Option 2: Use **Web App + Database** from Azure Marketplace. This option creates a Web App and a MySQL flexible server isolated in a VNet. The flexible server's connection information is automatically added to the App Service app's **Configuration Settings**, through a **Connection String**.
 
 After you create the App Service app and database, push your application to Azure from one of the many App Service deployment options such as from a ZIP package, Local Git, Azure Container Registry, GitHub Actions, Azure Pipelines, etc.
 
@@ -17,7 +17,7 @@ We'll explore this in detail by building and deploying a sample PHP application 
 
 In general, there are three options for using a MySQL database in your Azure Kubernetes application, as shown in the following image:
 
-:::image type="content" source="../media/aks-and-mysql.png" alt-text="Diagram showing the three options to use a MySQL database in AKS application.":::
+:::image type="content" source="../media/kubernetes-and-mysql.png" alt-text="Diagram showing the three options to use a MySQL database in AKS application.":::
 
 - **Use MySQL on Azure VM** – Azure VMs are considered an infrastructure as a service offering. This option requires that the user take responsibility for managing and maintaining the MySQL server.
 - **Run MySQL on Kubernetes** – Provision a MySQL database in a container running on a Kubernetes pod. This option has the benefits that Kubernetes provides in terms of automation, but it demands developer efforts to keep the database running together. In addition, given the transient nature of Kubernetes pods, there is a higher likelihood of failovers and restarts which impacts application availability and business continuity.
