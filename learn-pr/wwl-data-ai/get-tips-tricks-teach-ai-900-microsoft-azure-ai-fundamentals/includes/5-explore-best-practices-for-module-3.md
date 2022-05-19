@@ -1,4 +1,4 @@
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Computer Vision and its common applications. Students will also explore Computer Vision in Azure.
+As you're preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Computer Vision and its common applications. Students will also explore Computer Vision in Azure.
 
 This module consists of two lessons:
 

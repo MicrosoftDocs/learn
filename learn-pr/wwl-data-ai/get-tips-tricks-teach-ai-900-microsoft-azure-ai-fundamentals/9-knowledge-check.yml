@@ -17,17 +17,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up to date course materials?"
+  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
     - content: "Once a year"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
     - content: "Quarterly"
       isCorrect: true
-      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course, you know you have the most up-to-date materials."
   - content: "Which tool is great for giving students a visual representation of topics?"
     choices:
     - content: "The Textbook"

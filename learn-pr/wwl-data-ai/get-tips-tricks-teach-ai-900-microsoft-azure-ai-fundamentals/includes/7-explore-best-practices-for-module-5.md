@@ -1,4 +1,4 @@
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Conversational AI or bots. Students will also explore Conversational AI in Azure.
+As you're preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Conversational AI or bots. Students will also explore Conversational AI in Azure.
 
 This module consists of two lessons:
 
