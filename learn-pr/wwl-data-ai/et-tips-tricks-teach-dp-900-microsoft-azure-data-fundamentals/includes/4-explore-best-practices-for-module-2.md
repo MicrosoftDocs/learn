@@ -26,4 +26,4 @@ This module consists of three lessons:
 
 - Avoid focusing only on SQL Server 
 
-- Describe Azure Active Directory (AAD) basic concepts before Azure role-based access control (Azure RBAC). Use examples such as, after going through and introducing all the components of the service, log in and create one in the portal. This help drive the point home of what the cloud provider is managing and what the user is responsible for 
+- Describe Azure Active Directory (Azure AD) basic concepts before Azure role-based access control (Azure RBAC). Use examples such as, after going through and introducing all the components of the service, log in and create one in the portal. This help drive the point home of what the cloud provider is managing and what the user is responsible for 
