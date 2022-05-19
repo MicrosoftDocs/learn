@@ -13251,9 +13251,64 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/aks-workshop/index.yml",
+      "source_path": "learn-pr/azure/aks-workshop/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
       "redirect_document_id": false
-    }   
+    },     
+    {
+      "source_path": "learn-pr/azure/aks-workshop/01-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/02-deploy-aks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/03-deploy-container-registry.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/04-deploy-mongodb.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/05-deploy-ratings-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/06-deploy-ratings-web.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/07-deploy-ingress.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/08-enable-ssl.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/09-configure-monitoring.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/10-scale-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-workshop/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
+      "redirect_document_id": false
+    }
   ]
 }
