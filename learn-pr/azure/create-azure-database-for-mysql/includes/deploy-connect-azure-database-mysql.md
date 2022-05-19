@@ -46,8 +46,6 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
 8. On the **Compute + Storage** page, select **Save**.
 
-   :::image type="content" source="../media/4-deploy-mysql-compute-storage.png" alt-text="Screenshot of the Azure portal Compute + storage page displaying the compute, storage, high availability, and backups settings.":::
-
 9. On the **Basics** tab of the **Flexible server** page, select **Next: Networking >**.
 
 10. On the **Networking** tab of the **Flexible server** page, configure the following settings:
