@@ -16,8 +16,6 @@ Defender for IoT's sensor console provides both a **Device inventory** page and 
 
 - From the **Device map**, view OT device connection paths, OT/IoT network topologies, and mapping across the Purdue model for ICS security.
 
-    :::image type="content" source="../media/2-device-map.png" alt-text="Screenshot of the Device map from a sensor console." lightbox="../media/2-device-map.png":::
-
 For example, you might especially use the Device map when implementing a Zero Trust policy. You'll need to understand the connections between your devices to segment the devices onto their own networks and manage granular access.
 
 ## Manage network risks and vulnerabilities
