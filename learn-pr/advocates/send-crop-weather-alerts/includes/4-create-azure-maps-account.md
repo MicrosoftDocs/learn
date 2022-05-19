@@ -27,7 +27,7 @@ az maps account create \
   --name weatherservice \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --accept-tos \
-  --sku "S0"
+  --sku S0
 ```
 
 > [!NOTE]
