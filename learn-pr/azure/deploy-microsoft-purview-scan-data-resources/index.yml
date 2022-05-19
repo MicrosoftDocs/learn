@@ -24,7 +24,6 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
   - business-owner
-  - business
   - auditor
   - business-analyst
   - data-analyst
