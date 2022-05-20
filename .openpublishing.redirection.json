@@ -13214,6 +13214,41 @@
       "source_path": "learn-pr/wwl-data-ai/create-metadata-objects-azure-synapse-serverless-sql-pools/6-create-views.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/2-what-is.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/3-when-use.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/4-use-cases.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
     }
   ]
 }
