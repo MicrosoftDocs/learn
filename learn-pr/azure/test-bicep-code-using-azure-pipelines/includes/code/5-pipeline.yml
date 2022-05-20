@@ -9,7 +9,7 @@ pool:
 
 variables:
   - name: deploymentDefaultLocation
-    value: westus # TODO check this
+    value: westus
 
 stages:
 
@@ -33,7 +33,7 @@ stages:
         displayName: Run preflight validation
         inputs:
           connectedServiceName: $(ServiceConnectionName)
-          location: $(deploymentDefaultLocation) # TODO check this
+          location: $(deploymentDefaultLocation)
           deploymentMode: Validation
           resourceGroupName: $(ResourceGroupName)
           csmFile: deploy/main.bicep
@@ -50,7 +50,7 @@ stages:
         inputs:
           connectedServiceName: $(ServiceConnectionName)
           deploymentName: $(Build.BuildNumber)
-          location: $(DeploymentDefaultLocation) # TODO check this
+          location: $(DeploymentDefaultLocation)
           resourceGroupName: $(ResourceGroupName)
           csmFile: deploy/main.bicep
           overrideParameters: >

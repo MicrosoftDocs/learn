@@ -14,13 +14,14 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 :::image type="content" source="../media/6-stages-preview.png" alt-text="Diagram of a pipeline that includes Lint, Validate, and Preview stages. The Preview stage executes a what-if operation against Azure." border="false":::
 
-You use the `az deployment group what-if` command from within your pipeline definition to run the what-if step:
+You use the `az deployment group what-if` Azure CLI command from within your pipeline definition to run the what-if step:
 
 :::code language="yaml" source="code/6-what-if.yml" highlight="13-15" :::
 
 ::: zone pivot="powershell"
 
-If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
+> [!TIP]
+> In this module, we use the Azure CLI to run the what-if operation. If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
 
 ::: zone-end
 

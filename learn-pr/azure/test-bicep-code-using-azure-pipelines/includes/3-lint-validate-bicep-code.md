@@ -74,13 +74,6 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 :::image type="content" source="../media/3-stages-validate.png" alt-text="Diagram that shows a pipeline with lint and validate stages, each containing a single job. The validate stage communicates with Azure." border="false":::
 
-::: zone pivot="powershell"
-
-> [!NOTE]
-> In this module, we use the Azure CLI to run all of the pipeline commands. When you build your own pipeline, you can choose to use the Azure PowerShell cmdlets instead. The equivalent cmdlet for preflight validation is `Test-AzResourceGroupDeployment`.
-
-::: zone-end
-
 You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation: <!-- TODO -->
 
 :::code language="yaml" source="code/3-preflight.yml" highlight="14-22" ::: <!-- TODO -->

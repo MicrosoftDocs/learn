@@ -6,7 +6,7 @@ trigger:
 
 variables:
   - name: deploymentDefaultLocation
-    value: westus # TODO check this
+    value: westus
 
 pool:
   vmImage: ubuntu-latest
@@ -75,7 +75,7 @@ stages:
               inputs:
                 connectedServiceName: $(ServiceConnectionName)
                 deploymentName: $(Build.BuildNumber)
-                location: $(deploymentDefaultLocation) # TODO check this
+                location: $(deploymentDefaultLocation)
                 resourceGroupName: $(ResourceGroupName)
                 csmFile: deploy/main.bicep
                 overrideParameters: >
