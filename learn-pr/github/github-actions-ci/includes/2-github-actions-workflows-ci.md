@@ -179,4 +179,4 @@ Another action we could take is to add a label to the pull request. In this case
 
 Notice the block called ```env:```. This is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The ```GITHUB_TOKEN``` variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
 
-Adding a label could be an event that starts another workflow, such as a a merge. We'll cover this in the next module on continuous delivery with GitHub Actions.
+Adding a label could be an event that starts another workflow, such as a merge. We'll cover this in the next module on continuous delivery with GitHub Actions.
