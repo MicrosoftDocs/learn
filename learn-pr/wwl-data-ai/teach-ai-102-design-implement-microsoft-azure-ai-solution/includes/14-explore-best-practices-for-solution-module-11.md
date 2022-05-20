@@ -6,7 +6,7 @@ This module consists of two lessons:
 
 - **Lesson 2** – Extracting information from forms with the Form Recognizer service 
 
-> [!VIDEO  https://www.microsoft.com/videoplayer/embed/RE4XJok] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XJok] 
 
 ### Module 11 Tips and Tricks 
 
