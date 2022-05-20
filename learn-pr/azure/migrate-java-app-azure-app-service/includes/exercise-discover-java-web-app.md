@@ -7,16 +7,16 @@ In this exercise, we'll use the App Containerization tool to discover the Java w
 
     ![Default load-up for App Containerization tool.](../media/tool-home.png)
 
-3. Accept the **license terms**, and read the third-party information.
+3. Accept the **License terms**, and read the third-party information.
 4. The tool will automatically check for internet connectivity and install the latest version of the App Containerization tool.  
-5. The tool will inform you to enable SSH on the application server which was done as part of the setup. Click **continue**.
+5. The tool will inform you to enable SSH on the application server which was done as part of the setup. Click **Continue**.
 
 
 ## Sign in to Azure
 
 Click **Sign in** to log in to your Azure account. 
 
-1. You'll need a device code to authenticate with Azure. Clicking on sign-in will open a modal with the device code.
+1. You'll need a device code to authenticate with Azure. Clicking on **Sign in** will open a modal with the device code.
 2. Click on **Copy code & sign in** to copy the device code and open an Azure sign-in prompt in a new browser tab. If it doesn't appear, make sure you've disabled the pop-up blocker in the browser.
 3. On the new tab, paste the device code and complete sign in using your Azure account credentials. You can close the browser tab after sign in is complete and return to the App Containerization tool's web interface.
 4. Select the **Azure tenant** that you want to use.
@@ -47,7 +47,7 @@ The App Containerization helper tool connects remotely to the application server
 
 Parameterizing the configuration makes it available as a deployment time parameter. This allows you to configure this setting while deploying the application as opposed to having it hard-coded to a specific value in the container image. For example, this option is useful for parameters like database connection strings.
 
-1. Click **app configurations** to review detected configurations.
+1. Click **App configurations** to review detected configurations.
 2. Select all checkboxes to parameterize the configuration (username, password, and url).
 3. Click **Apply** after selecting the configurations to parameterize.
 
@@ -57,8 +57,8 @@ Parameterizing the configuration makes it available as a deployment time paramet
 
  You can add other folders that your application uses. Specify if they should be part of the container image or are to be externalized through persistent volumes on Azure file share. Using persistent volumes works great for stateful applications that store state outside the container or have other static content stored on the file system.
 
-1. Click **edit** under App Folders to review the detected application folders. The detected application folders have been identified as mandatory artifacts needed by the application and will be copied into the container image.
-2. Click **add folders** and specify the folder paths to be added.
+1. Click **Edit** under App Folders to review the detected application folders. The detected application folders have been identified as mandatory artifacts needed by the application and will be copied into the container image.
+2. Click **Add folders** and specify the folder paths to be added.
 3. Add **/var/airsonic** as the folder path in the text box.
 4. Select **Azure file share** as the storage option to store the folder outside the container on a persistent volume.
 

@@ -31,12 +31,12 @@ If you just created a free Azure account, you're the owner of your subscription.
 
       ![Verify in User Settings that users can register Active Directory apps.](../media/register-apps.png)
 
-10.  In case the 'App registrations' settings is set to 'No', request the tenant/global admin to assign the required permission. Alternately, the tenant/global admin can assign the **Application Developer** role to an account to allow the registration of Azure Active Directory App. 
+10.  In case the **App registrations** settings is set to **No**, request the tenant/global admin to assign the required permission. Alternately, the tenant/global admin can assign the **Application Developer** role to an account to allow the registration of Azure Active Directory App. 
 
 ## Setup Airsonic application
 
 1. To deploy the workshop environment, begin by navigating to the [Azure portal](https://portal.azure.com).
-2. Launch Azure Cloud Shell and run the following commands.   
+2. Launch Azure Cloud Shell and run the following commands:  
 
     ```
     git clone https://github.com/MicrosoftDocs/mslearn-azuremigrate-appcontainerization-javatomcat.git
@@ -68,4 +68,4 @@ If you just created a free Azure account, you're the owner of your subscription.
    cd Downloads
    .\AppContainerizationInstaller.ps1
    ```
-4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, click **advanced** and **continue to toolclient**. 
+4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, click **Advanced** and **Continue to toolclient**. 
