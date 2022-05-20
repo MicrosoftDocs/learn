@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-debug-visual-studio-app-service.attach-to-process
+sandbox: true
 title: Exercise - Attach the Visual Studio debugger to an App Service web app
 metadata:
   title: Exercise - Attach the Visual Studio debugger to an App Service web app

@@ -21,6 +21,11 @@ Most of the relevant code for the app can be found in the `OnGet` method inside 
 
 Next you need to deploy the app to Azure so others can use it to browse repositories. You can deploy the app using the steps below.
 
+> [!NOTE]
+> If you are using the Learn sandbox, you may need to log out and log in again inside of Visual Studio for your subscription information to refresh. You can manage your account by clicking on the name icon in the upper right of Visual Studio. Make sure you are logged into the account you used to create the sandbox.
+
+:::image type="content" source="../media/visual-studio-remote-account.png" alt-text="A screenshot of the sample app.":::
+
 1) Right click on the project node in the solution explorer, and then select **Publish**.
 
     :::image type="content" source="../media/visual-studio-remote-debug-publish.png" alt-text="A screenshot of the publishing option in Visual Studio.":::
@@ -29,16 +34,16 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
 
 3) On the **Specific Target** step, select **Azure App Service (Windows)**, and then choose **Next**.
 
-4) For the **App Service** step, make sure you're signed into the correct Azure Account in the upper right of the dialog and then select the subscription you would like to deploy to. 
+4) For the **App Service** step, make sure you're signed into the correct Azure Account in the upper right of the dialog.  and then select the subscription you would like to deploy to. 
 
 5) Next, create a new app service instance by selecting the green **+** icon. In the new app service dialog, enter the following values:
 
     |  |  |
     | --- | --- |
     | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
-    | **Subscription name** | Select the subscription you would like to use for your new App Service instance. |
-    | **Resource group** | Select **New...** and enter a name of `mslearn-github-browser` for the resource group name. |
-    | **Hosting plan** | Select **New...** and enter a name of `mslearn-github-browser-plan`. |
+    | **Subscription name** | If you are using the Learn sandbox environment, select the `Concierge Subscription`, otherwise select your own. Remember, you may need to log out and in again if you don't see the sandbox subscription as an option. |
+    | **Resource group** | Choose the <rgn>[sandbox resource group name]</rgn> if you are using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
+    | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
 
 6) Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
 

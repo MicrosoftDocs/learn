@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-debug-visual-studio-app-service.deploy-to-azure
+sandbox: true
 title: Exercise - Deploy the app to Azure
 metadata:
   title: Exercise - Deploy the app to Azure
