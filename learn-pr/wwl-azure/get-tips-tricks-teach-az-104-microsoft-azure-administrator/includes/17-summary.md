@@ -2,38 +2,38 @@ AZ-104: Microsoft Azure Administrator gives students the opportunity to learn a 
 
 ### Supplemental Resources: 
 
-[Microsoft Learn](https://aka.ms/learn) 
+- [Microsoft Learn](https://aka.ms/learn) 
 
-[Microsoft Whiteboard ](https://aka.ms/whiteboard)
+- [Microsoft Whiteboard ](https://aka.ms/whiteboard)
 
-[Microsoft Technical Documentation](https://aka.ms/docs) 
+- [Microsoft technical documentation](https://aka.ms/docs) 
 
-[Customer and Partner Success Stories](https://aka.ms/customerstories) 
+- [Customer and Partner Success Stories](https://aka.ms/customerstories) 
 
-[Learn TV](https://aka.ms/LearnTV) 
+- [Learn TV](https://aka.ms/LearnTV) 
 
-[Azure Blog and Updates](https://www4.bing.com/?form=DCDN) 
+- [Azure Blog and Updates](https://azure.microsoft.com/blog/) 
 
-[Azure documentation](/azure/?product=popular) 
+- [Azure documentation](/azure/?product=popular) 
 
-[Azure Architecture Center](/azure/architecture/?ocid=AID3023451&WT.mc_id=modinfra-21050-salean) 
+- [Azure Architecture Center](https:/aka.ms/azureac) 
 
-[GitHub](/azure/architecture/?ocid=AID3023451&WT.mc_id=modinfra-21050-salean) 
+- [GitHub](/azure/architecture/?ocid=AID3023451&WT.mc_id=modinfra-21050-salean) 
 
-[AZ-104 Exam Page](https://github.com/MicrosoftDocs/) 
+- [AZ-104 Exam Page](https://github.com/MicrosoftDocs/) 
 
-[Microsoft Learn for Educators](https://aka.ms/msle)  
+- [Microsoft Learn for Educators](https://aka.ms/msle)  
 
-[Accessibility Technology and Tools](https://aka.ms/Microsoftaccessibility) 
+- [Accessibility Technology and Tools](https://aka.ms/Microsoftaccessibility) 
 
-[Microsoft’s Accessibility Commitment](https://aka.ms/MSAccessibilityCommitment) 
+- [Microsoft’s Accessibility Commitment](https://aka.ms/MSAccessibilityCommitment) 
 
-[Accessibility Expectations and Resources for Suppliers](https://www.youtube.com/watch?v=Ky7O8qIi9ks&list=PLtSVUgxIo6KqBBGqNdPQG64f-hTs1YxFM) 
+- [Accessibility Expectations and Resources for Suppliers](https://www.youtube.com/watch?v=Ky7O8qIi9ks&list=PLtSVUgxIo6KqBBGqNdPQG64f-hTs1YxFM) 
 
-[Certification Overview Page](https://aka.ms/Certifications) 
+- [Certification Overview Page](https://aka.ms/Certifications) 
 
-[What is Windows Azure Active Directory?](https://azure.microsoft.com/resources/videos/) 
+- [What is Azure Active Directory?](https://azure.microsoft.com/resources/videos/) 
 
-[Azure Community Support](https://aka.ms/azurecommunitysupport) 
+- [Azure Community Support](https://aka.ms/azurecommunitysupport) 
 
-[GitHub AZ-104 labs](https://aka.ms/githubAZ104) 
+- [GitHub AZ-104 labs](https://aka.ms/githubAZ104) 
