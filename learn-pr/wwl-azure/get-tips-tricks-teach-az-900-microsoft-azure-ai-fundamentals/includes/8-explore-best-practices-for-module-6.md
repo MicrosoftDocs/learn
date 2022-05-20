@@ -1,4 +1,4 @@
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about the major factors that influence the cost of running in the cloud. Students will explore the cost management tools in Azure as well as service level agreements (SLA).  
+As you're preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about the major factors that influence the cost of running in the cloud. Students will explore the cost management tools in Azure and service level agreements (SLA).  
 
 This module consists of two lessons: 
 

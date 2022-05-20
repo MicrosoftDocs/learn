@@ -1,4 +1,4 @@
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about several of the primary database services available on Azure. 
+As you're preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about several of the primary database services available on Azure. 
 
 This module consists of four lessons: 
 
@@ -18,7 +18,7 @@ This module consists of four lessons:
 
 - Introduce core Azure services at a high level 
 
-- Breakdown the Azure architectural hierarchy 
+- Break down the Azure architectural hierarchy 
 
   - Revisit terms and concepts from Module 1 
 
@@ -42,7 +42,7 @@ This module consists of four lessons:
 
   - Consider using Microsoft customer stories 
 
-  - Understand students do not need to have proficient coding skills to use all of the tools. Focus on the benefits of low/no-code solutions 
+  - Understand students don't need to have proficient coding skills to use all of the tools. Focus on the benefits of low/no-code solutions 
 
 - Consider incorporating a way to review the concepts covered 
 
