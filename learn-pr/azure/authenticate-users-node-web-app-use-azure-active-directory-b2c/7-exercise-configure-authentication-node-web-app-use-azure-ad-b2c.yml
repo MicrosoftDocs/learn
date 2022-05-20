@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.exercise---configure-authentication-in-a-node-web-app-by-using-azure-ad-b2c
+uid: learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.exercise-configure-authentication-node-web-app-use-azure-ad-b2c
 title: Exercise - Configure authentication in a Node web app by using Azure AD B2C
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-exercise---configure-authentication-in-a-node-web-app-by-using-azure-ad-b2c.md)]
+  [!include[](includes/7-exercise-configure-authentication-node-web-app-use-azure-ad-b2c.md)]

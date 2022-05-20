@@ -77,10 +77,10 @@ Identify the subtasks of module title.
     1. Test the user flow in Azure portal.
 
 1. Plan your Node.js web app
-    1. How a Node.js application.
+    1. How to create a Node.js application.
     1. Role and installing dependencies.
-    1. ExpressJS routes.
-    1. HandleBars templating engine for ExpressJS.
+    1. ExpressJS routing.
+    1. HandleBars templating language
 
 1. Exercise - Create a Node.js web app
     1. Create a node project and install dependencies.
