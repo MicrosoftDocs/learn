@@ -26,13 +26,13 @@ The presence of a SARG doesn't guarantee the use of an index for a *SEEK*. The o
 
 Some examples of expressions that aren't SARGs (sometimes said to be non-sargable) are those that include a `LIKE` clause with a wildcard at the beginning of the string to be matched, for example, `WHERE lastName LIKE ‘%SMITH%’`. Other predicates that aren't SARGs occur when using functions on a column, for example, `WHERE CONVERT(CHAR(10), CreateDate,121) = ‘2020-03-22’`. These queries with non-sargable expressions are typically identified by examining execution plans for index or table scans, where seeks should otherwise be taking place.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-07.png" alt-text="Query and Execution Plan using a non-SARGable Function":::
+:::image type="content" source="../media/module-55-optimize-queries-final-07.png" alt-text="Screenshot of query and execution plan using a non-SARGable function.":::
 
 There's an index on the *City* column that is being used in the `WHERE` clause of the query and while it's being used in this execution plan above, you can see the index is being scanned, which means the entire index is being read. The `LEFT` function in the predicate makes this expression non-SARGable. The optimizer won't evaluate using an index seek on the index on the *City* column.
 
-This query could be written to use a predicate that is SARGable. The optimizer would then evaluate a *SEEK* on the index on the *City* column. An index seek, in this case, would read a much smaller set of rows, as shown below.
+This query could be written to use a predicate that is SARGable. The optimizer would then evaluate a *SEEK* on the index on the *City* column. An index seek operator, in this case, would read a much smaller set of rows, as shown below.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-08.png" alt-text="A Query and Execution Plan with a SARGable Predicate":::
+:::image type="content" source="../media/module-55-optimize-queries-final-08.png" alt-text="Screenshot of a query and execution plan with a SARGable Predicate.":::
 
 Changing `LEFT` function into a `LIKE` results in an index seek.
 
@@ -43,7 +43,7 @@ Some other database development anti-patterns are treating the database as a ser
 
 ## Missing indexes
 
-The most common performance problems we see as database administrators are due to a lack of useful indexes causing the engine to read far more pages than necessary to return the results of a query. While indexes aren't free in terms of resources (adding additional indexes to a table can affect write performance and consume space), the performance gains they offer can offset the extra resource costs many times over. Frequently execution plans with these performance issues can be identified by the query operator *Clustered Index Scan* or the combination of the *Nonclustered Index Seek* and *Key Lookup* (which is more indicative of missing columns in an existing index).
+The most common performance problems we see as database administrators are due to a lack of useful indexes causing the engine to read far more pages than necessary to return the results of a query. While indexes aren't free in terms of resources (adding more indexes to a table can affect write performance and consume space), the performance gains they offer can offset the extra resource costs many times over. Frequently execution plans with these performance issues can be identified by the query operator *Clustered Index Scan* or the combination of the *Nonclustered Index Seek* and *Key Lookup* (which is more indicative of missing columns in an existing index).
 
 The database engine attempts to help with this problem by reporting on missing indexes in execution plans. The names and details of the recommended indexes are available through a dynamic management view called `sys.dm_db_missing_index_details`. There are also other DMVs in SQL Server like `sys.dm_db_index_usage_stats` and `sys.dm_db_index_operational_stats`, which highlight the utilization of existing indexes.
 

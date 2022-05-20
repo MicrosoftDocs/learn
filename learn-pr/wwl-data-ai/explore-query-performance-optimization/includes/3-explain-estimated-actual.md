@@ -1,6 +1,6 @@
 The topic of actual versus estimated execution plans can be confusing. The difference is that the actual plan includes runtime statistics that aren't captured in the estimated plan. The operators used, and order of execution will be the same as the estimated plan in nearly all cases. The other consideration is that in order to capture an actual execution plan the query has to be executed, which can be time consuming, or not possible. For example, the query may be an `UPDATE` statement that can only be run once. However, if you need to see query results and the plan, you’ll need to use one of the actual plan options.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-01.png" alt-text="An estimated execution plan generated in SQL Server Management Studio":::
+:::image type="content" source="../media/module-55-optimize-queries-final-01.png" alt-text="Screenshot of an estimated execution plan generated in SQL Server Management Studio.":::
 
 As shown above, you can generate an estimated plan in SSMS by clicking the button pointed to by the estimated query plan box (or using the keyboard command **Control+L**). You can generate the actual plan by clicking the icon shown (or using the keyboard command **Control+M**), and then executing the query. The two option buttons work a bit differently. The *Include Estimated Query Plan* button responds immediately to any query highlighted (or the entire workspace, if nothing is highlighted), as opposed to *Include Actual Query Plan* button.
 
@@ -26,19 +26,19 @@ ORDER BY CostPerOuterBox;
 
 This query is joining the *StockItems* table to the *StockItemHoldings* table where the values in the column *StockItemID* are equal. The database engine has to first identity those rows before it can process the rest of the query.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-02.png" alt-text="[Query Execution Plan":::
+:::image type="content" source="../media/module-55-optimize-queries-final-02.png" alt-text="Screenshot of a query execution plan.":::
 
 Each icon in the plan shows a specific operation, which represents the various actions and decisions that make up an execution plan. The SQL Server database engine has over 100 query operators that can make up on an execution plan. You'll notice that under each operator icon, there's a cost percentage relative to the total cost of the query. Even an operation that shows a cost of 0% still represents some cost. In fact, 0% is usually due to rounding, because the graphical plan costs are always shown as whole numbers, and the real percentage is something less than 0.5%.
 
 The flow of execution in an execution plan is from right to left, and top to bottom, so in the plan above, the Clustered Index Scan operation on the *StockItemHoldings.PK_Warehouse_StockItemHoldings* clustered index is the first operation in the query. The widths of the lines that connect the operators are based on the estimated number of rows of data that flow onward to the next operator. A thick arrow is an indicator of large operator to operator transfer and may be indicative of an opportunity to tune a query. You can also hold your mouse over an operator and see additional information in a ToolTip as shown below.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-03.png" alt-text="ToolTip for the Clustered Index Scan Operation on the StockItems table":::
+:::image type="content" source="../media/module-55-optimize-queries-final-03.png" alt-text="Screenshot of a tooltip for the Clustered Index Scan operation on the StockItems table.":::
 
 The tooltip highlights the cost and estimates for the estimated plan, and for an actual plan will include the comparisons to the actual rows and costs. Each operator also has properties that will show you more than the tooltip does. If you right-click on a specific operator, you can select the Properties option from the context menu to see the full property list. This option will open up a separate Properties pane in SQL Server Management Studio, which by default is on the right side. Once the Properties pane is open, clicking on any operator will populate the Properties list with properties for that operator. Alternatively, you can open the Properties pane by clicking on View in the main SQL Server Management Studio menu and choosing Properties.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-04.png" alt-text="Properties for Operator":::
+:::image type="content" source="../media/module-55-optimize-queries-final-04.png" alt-text="Screenshot of the properties for the operator.":::
 
-The Properties pane includes some additional information and shows the output list, which provides details of the columns being passed to the next operator. Examining these columns, with a clustered index scan operator can indicate that an extra nonclustered index might be needed to improve the performance of the query. Since a clustered index scan operation is reading the entire table, in this scenario a non-clustered index on the *StockItemID* column in each table could be more efficient.
+The Properties pane includes some additional information and shows the output list, which provides details of the columns being passed to the next operator. These columns may indicate that a nonclustered index is needed to improve query performance when analyzed with clustered index scan. Since a clustered index scan operation is reading the entire table, in this scenario a non-clustered index on the *StockItemID* column in each table could be more efficient.
 
 ## Lightweight query profiling
 
@@ -76,8 +76,9 @@ GO
 
 This functionality lets you quickly identify the runtime stats for the last execution of any query in your system, with minimal overhead. The image below shows how to retrieve the plan. If you select the execution plan XML, which will be the first column of results, it will display the execution plan shown in the second image below.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-05.png" alt-text="Retrieving the Actual Execution Plan for a Query":::
+:::image type="content" source="../media/module-55-optimize-queries-final-05.png" alt-text="Screenshot of retrieving the actual execution plan for a query.":::
 
-[![Execution Plan retrieved from SQL Server 2019](../media/module-55-optimize-queries-final-06.png)](../media/module-55-optimize-queries-final-06.png#lightbox)
+As you can see from the properties of the *Columnstore Index Scan* below, the plan retrieved from the cache has actual number of rows retrieved in the query.
 
-As you can see from the properties of the *Columnstore Index Scan*, the plan retrieved from the cache has actual number of rows retrieved in the query.
+[![Screenshot of the execution plan retrieved showing the cache has actual number of rows retrieved in the query.](../media/module-55-optimize-queries-final-06.png)](../media/module-55-optimize-queries-final-06.png#lightbox)
+
