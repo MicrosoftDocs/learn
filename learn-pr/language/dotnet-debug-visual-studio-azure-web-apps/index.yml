@@ -24,7 +24,6 @@ roles:
 products:
 - vs-ide
 - azure-app-service
-- azure-app-service
 subjects:
   - development-tools
 prerequisites: |
