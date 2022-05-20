@@ -27,8 +27,6 @@ products:
 - azure-app-service
 subjects:
   - development-tools
-subjects:
-  - development-tools
 prerequisites: |
   - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio 2022](https://visualstudio.com) with the Azure development workload installed
