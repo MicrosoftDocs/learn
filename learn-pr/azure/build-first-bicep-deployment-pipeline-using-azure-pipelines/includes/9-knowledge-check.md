@@ -16,14 +16,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: ResearchSubscription
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az deployment group create \
-        --resource-group ResearchDevelopment \
-        --template-file deploy/main.bicep \
-        --parameters environmentType=Production
+  - task: AzureResourceManagerTemplateDeployment@3
+    inputs:
+      connectedServiceName: ResearchSubscription
+      location: westus
+      resourceGroupName: ResearchDevelopment
+      csmFile: deploy/main.bicep
+      overrideParameters: >
+        -environmentType Production
 ```

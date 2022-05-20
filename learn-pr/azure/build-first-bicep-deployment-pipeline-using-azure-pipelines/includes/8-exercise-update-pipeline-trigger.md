@@ -17,7 +17,7 @@ During the process, you'll:
 
 1. Add the following trigger definition on the first line:
 
-   :::code language="yaml" source="code/8-pipeline.yml" range="1-5"::: <!-- TODO -->
+   :::code language="yaml" source="code/8-pipeline.yml" range="1-5":::
 
    Notice that you also enable concurrency control, to avoid your pipeline running multiple times simultaneously.
 
@@ -58,7 +58,7 @@ During the process, you'll:
 
    The pipeline shows a failed deployment.
 
-1. To diagnose the failure, in **Jobs**, select the job, and then select the failed AzureCLI task. Scroll to see the full error message. The error message includes the following text:
+1. To diagnose the failure, in **Jobs**, select the job, and then select the failed *AzureResourceManagerTemplateDeployment* task. Scroll to see the full error message. The error message includes the following text:
 
    `There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails`
 

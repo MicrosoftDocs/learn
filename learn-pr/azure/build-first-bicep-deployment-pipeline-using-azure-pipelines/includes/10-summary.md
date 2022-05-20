@@ -7,6 +7,7 @@ Thanks to your efforts, anyone on your website team can automatically deploy cha
 ## References
 
 - [Tasks](/azure/devops/pipelines/tasks/?azure-portal=true)
+  - [Azure Resource Group Deployment task](/azure/devops/pipelines/tasks/deploy/azure-resource-group-deployment?azure-portal=true)
   - [Azure CLI](/azure/devops/pipelines/tasks/deploy/azure-cli?azure-portal=true)
   - [Azure PowerShell](/azure/devops/pipelines/tasks/deploy/azure-powershell?azure-portal=true)
 - [Pipeline variables](/azure/devops/pipelines/process/variables?tabs=yaml?azure-portal=true)

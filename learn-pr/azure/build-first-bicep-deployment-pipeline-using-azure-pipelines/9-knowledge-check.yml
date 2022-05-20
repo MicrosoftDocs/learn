@@ -56,6 +56,6 @@ quiz:
     - content: The *Copy Files* task.
       isCorrect: false
       explanation: Incorrect. The *Copy Files* task doesn't perform any deployments  to Azure.
-    - content: The *Azure CLI* task.
+    - content: The *Azure Resource Group Deployment* task.
       isCorrect: true
-      explanation: Correct. You can use the *Azure CLI* task to execute a deployment by running the `az deployment group create` command.
+      explanation: Correct. You can use the *Azure Resource Group Deployment* task to execute a deployment of a Bicep file.
