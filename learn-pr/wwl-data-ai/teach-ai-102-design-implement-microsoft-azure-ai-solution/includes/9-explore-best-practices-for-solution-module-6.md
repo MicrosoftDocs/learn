@@ -8,7 +8,7 @@ This module consists of two lessons:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1No] 
 
-###Module 6 Tips and Tricks 
+### Module 6 Tips and Tricks 
 
 - Explain QnA Maker vs language understanding 
 - Define QnA “Bots” as an introduction 

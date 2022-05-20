@@ -2,9 +2,9 @@ As you are preparing to teach this module, get familiar with what the students w
 
 This module consists of two lessons: 
 
-**Lesson 1** – Image classification 
+* **Lesson 1** – Image classification 
 
-**Lesson 2** – Object detection 
+* **Lesson 2** – Object detection 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1Nk]  
 
