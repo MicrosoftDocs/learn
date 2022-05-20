@@ -30,7 +30,6 @@ prerequisites: |
   - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio 2022](https://visualstudio.com) with the Azure development workload installed
   - Familiarity with Git and GitHub
-  - An [Azure account](https://azure.microsoft.com/)
 units:
 - learn.dotnet-debug-visual-studio-app-service.introduction
 - learn.dotnet-debug-visual-studio-app-service.remote-debugging-concepts
