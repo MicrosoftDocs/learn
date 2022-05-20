@@ -87,7 +87,7 @@ Identify the subtasks of module title.
     1. Create web app user interface by using Handlebars.
     1. Add express routes - app entry, sign up and sign in routes, sign out and the Azure AD B2C redirect route/URI.
 
-1. Authenticate a Node web app by using Azure AD B2C
+1. Add authenticate to a Node web app by using Azure AD B2C
     1. Microsoft Authentication Library (MSAL) & confidential clients vs public clients.
     1. msal-node configuration object.
     1. msal-node instance.

@@ -38,7 +38,7 @@ units:
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.exercise-prepare-azure-ad-b2c-to-authenticate-users-in-a-web-app
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.plan-your-node-js-web-app
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.exercise-create-node-js-web-app
-- learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.authenticate-a-node-web-app-by-using-azure-ad-b2c
+- learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.add-authentication-node-web-app-by-using-azure-ad-b2c
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.exercise-configure-authentication-node-web-app-use-azure-ad-b2c
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.knowledge-check
 - learn.authenticate-users-in-a-node-web-app-by-using-azure-active-directory-b2c.summary
