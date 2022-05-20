@@ -1,6 +1,6 @@
 In order to work through a remote debugging exercise with App Service, you'll first need to deploy an application to Azure. The Razor Pages sample app provided below allows users to search for GitHub repositories by organization. However, the app also contains a subtle bug that you will troubleshoot using Visual Studio after it has been deployed.
 
-## Setup the sample app
+## Set up the sample app
 
 1) Clone the app from GitHub using the following command:
 
