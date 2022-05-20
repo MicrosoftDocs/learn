@@ -1,37 +1,49 @@
-As you are preparing to teach this module, get familiar with what the students will learn during the module – the concepts and methodologies they will be working through. In this module, students will take an entry-level end-to-end look at Azure and its capabilities. 
+As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about several of the primary database services available on Azure. 
 
-This module consists of three lessons: 
+This module consists of four lessons: 
 
-- **Lesson 1** – Identify the benefits and considerations of using cloud services  
+- **Lesson 1** – Explore Core Azure architectural components 
 
-- **Lesson 2** – Describe the differences between categories of cloud services  
+- **Lesson 2** – Explore Azure database and analytics services 
 
-- **Lesson 3** – Describe the differences between types of cloud computing 
+- **Lesson 3** – Explore Azure compute services 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XTWc]
+- **Lesson 4** – Explore Azure Storage services 
 
-###Module 1 Tips and Tricks 
+- **Lesson 5** – Explore Azure networking services 
 
-- Build the foundation of the cloud 
+> [!SHVIDEO source="https://www.microsoft.com/videoplayer/embed/RE4XTW8"]
 
-- Focus on key terms like cloud services, cloud models, etc. 
+### Module 2 Tips and Tricks 
 
-- Consider using storytelling, case studies, and real institution examples 
+- Introduce core Azure services at a high level 
 
-- Focus on defining cloud computing 
+- Breakdown the Azure architectural hierarchy 
 
-- Describe the benefits and considerations of using cloud services. 
+  - Revisit terms and concepts from Module 1 
 
-- Compare cloud models. 
+- Introduce the [Azure portal](https://aka.ms/azureportal) resources and options available 
 
- - Public, Private, and Hybrid. 
+  - Consider a high-level demonstration of how to navigate the Azure portal 
 
- - Consider using the taxicab and private limousine example. 
+- Introduce specific resources around compute, networking, storage, and databases 
 
-- Describe the cloud service types and appropriate use cases. 
+  - Consider explaining the resource and then demonstrate by going into the portal to create the resource 
 
-  - Infrastructure, Platform, and Software as a Service. 
+  - Consider using real world scenarios. For example, how a database could be used in a school library 
 
-  - Considered starting with the shared responsibility model. 
+  - Focus on remaining high level when explaining Azure services 
 
-  - Teach concepts at a high level. Avoid going into too much detail. 
+- Module 2 includes the first demo providing real-life examples to concepts covered 
+
+  - Practice the demos prior to teaching the module 
+
+- Use storytelling, case studies, and examples as resources for the course 
+
+  - Consider using Microsoft customer stories 
+
+  - Understand students do not need to have proficient coding skills to use all of the tools. Focus on the benefits of low/no-code solutions 
+
+- Consider incorporating a way to review the concepts covered 
+
+  - Options may include a using a polling tool in class, the Microsoft Learn knowledge check questions, etc.  

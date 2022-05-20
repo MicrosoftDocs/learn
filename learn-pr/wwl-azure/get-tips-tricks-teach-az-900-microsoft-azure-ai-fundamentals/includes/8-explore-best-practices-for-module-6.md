@@ -10,7 +10,7 @@ This module consists of two lessons:
 
 ###Module 6 Tips and Tricks 
 
-- Demonstrate and compare the [Azure Pricing Calculator](https://aka.ms/pricingcal) and [Total Cost of Ownership (TCO) calculator](file:///C:\Users\tsheppard\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\5RXRRYR7\aka.ms\tcocalc) 
+- Demonstrate and compare the [Azure Pricing Calculator](https://aka.ms/pricingcal) and [Total Cost of Ownership (TCO) calculator](https://aka.ms/tcocalc) 
 
 - Explain SLAs 
 
