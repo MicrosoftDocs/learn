@@ -8,7 +8,7 @@ In this module, you learned how to:
 
 ## Clean up resources
 
-If you're not going to continue to use this application, make sure to delete the Azure App Service instance and all the associated services to avoid undesired costs. You can delete the top level resource group to remove all of the resources you created at the same time.
+The sandbox environment you activated will dispose of resources automatically. However, if you created resources in your own Azure subscription and you do not want to continue to use this application, make sure to delete the Azure App Service instance and the associated services to avoid undesired costs. You can delete the top level resource group to remove all of the resources you created at the same time.
 
 Follow these steps in the Azure portal to delete the resource group:
 

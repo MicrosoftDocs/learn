@@ -45,9 +45,9 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
     | **Resource group** | Choose the <rgn>[sandbox resource group name]</rgn> if you are using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
     | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
 
-6) Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
-
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
+
+6) Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
 
 7) Once the App Service is created, select the new instance, and then choose Finish.
 
