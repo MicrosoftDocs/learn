@@ -13249,6 +13249,21 @@
       "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/5-train-custom-models-without-labels.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-form-recognizer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/6-train-custom-models-with-labels.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-form-recognizer/6-train-custom-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/9-optical-character-recognition-test-tool.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-form-recognizer/",
+      "redirect_document_id": false
     }
   ]
 }
