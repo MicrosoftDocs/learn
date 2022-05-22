@@ -12,12 +12,12 @@ Azure AD B2C can support millions of users and billions of authentications per d
 
 ## What application types does Azure AD B2C support?
 
-Regardless of your preferred language or platform, Azure AD B2C supports authentication for a variety of modern app architectures, which are based on industry-standard protocol, OpenID Connect. Currently, Azure AD B2C can authenticate users into the following application types:
+Regardless of your preferred language or platform, Azure AD B2C supports authentication for various modern app architectures, which are based on industry-standard protocol, OpenID Connect. Currently, Azure AD B2C can authenticate users into the following application types:
 
-* **Single-page applications (SPAs)** - These are JavaScript web applications that run in the browser, such as those written in JavaScript or frameworks like AngularJS, React and VueJs.
-* **Web applications** - There are web applications that are hosted/runs on a server and accessed through a browser such as those written in .NET, PHP, Java, Ruby, Python, and Node.js.
-* **Mobile and native applications** -  These are mobile or desktop applications that run natively on a device.
-* **Web APIs** - These are RESTful web services/APIs that are build using server side languages such as .NET or Node.js and can be accessed by SPAs, Web applications or Mobile and native applications.
+* **Single-page applications (SPAs)** - JavaScript web applications that run in the browser, such as the apps written in JavaScript or frameworks like AngularJS, React and VueJs.
+* **Web applications** - Web applications that are hosted/runs on a server and accessed through a browser such as the app written in .NET, PHP, Java, Ruby, Python, and Node.js.
+* **Mobile and native applications** -  Mobile or desktop applications that run natively on a device.
+* **Web APIs** - RESTful web services/APIs that are build using server side languages such as .NET or Node.js and can be accessed by SPAs, Web applications or Mobile and native applications.
 
 ## OpenID Connect authentication protocol
 
@@ -27,7 +27,7 @@ Azure AD B2C extends the standard OpenID Connect protocol to do more than simple
 
 ## User experiences using policies
 
-Azure AD B2C extends the standard OpenID Connect protocol to introduce *policies*, which models user journeys. A user journey is the path that you want users to take in your application to achieve their goal. For example, you might want your users to sign up, sign in, and later update their profile.
+Azure AD B2C extends the standard OpenID Connect protocol to introduce *policies*, which model user journeys. A user journey is the path that you want users to take in your application to achieve their goal. For example, you might want your users to sign up, sign in, and later update their profile.
 
 Policies enable you control user identity experience behaviors in your application such as the following:
 
@@ -39,7 +39,7 @@ Policies enable you control user identity experience behaviors in your applicati
 
 Azure AD B2C supports two types of policies:
 
-* **User flows** - They are predefined policies built-in, configurable policies that we provide so you can create sign-up, sign-in, and policy editing experiences quickly.
+* **User flows** - They're predefined policies built-in, configurable policies that Azure AD B2C provides so you can create sign up, sign in, and policy editing experiences quickly.
 * **Custom policies** - They enable you to create your own user journeys for complex identity experience.
 
 Azure AD B2C has the following types of *user flows* generally available:
@@ -58,7 +58,7 @@ An identity provider is the method you use to allow users to be authenticated in
 
 ## Application registration
 
-Any application type that need to communicate with Azure AD B2C, must be registered. You register applications in the Azure portal. The application registration process collects and assigns the values for your application such as the following:
+Any type of application that needs to communicate with Azure AD B2C, must be registered. You register applications in the Azure portal. The application registration process collects and assigns the values for your application:
 
 * An **Application (client) ID** that uniquely identifies your application.
 * A **Redirect URI** that you can use to direct responses from Azure AD B2C back to your application.
