@@ -30,7 +30,7 @@ Use the following steps to register your web app in Azure AD B2C tenant:
 
 1. Select **App registrations**, and then select **New registration**.
 
-1. Under **Name**, enter a name for the application, such as, *nodewebapp*.
+1. Under **Name**, enter a name for the application, such as, `nodewebapp`.
 
 1. Under **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
 
@@ -90,7 +90,7 @@ Use the following steps to create a **Sign up and sign in** user flow in your Az
 
 1. Under **Select a version**, select **Recommended**, and then select **Create**.
 
-1. Enter a **Name** for the user flow, such as, *susi*. A prefix of *B2C_1* is automatically prepended to the name, so the name becomes *B2C_1_susi*.  
+1. Enter a **Name** for the user flow, such as, `susi`. A prefix of *B2C_1* is automatically prepended to the name, so the name becomes `B2C_1_susi`.  
 
 1. Under **Identity providers**, for **Local accounts**, select **Email signup**.
 
@@ -102,7 +102,7 @@ Use the following steps to create a **Sign up and sign in** user flow in your Az
 
 1. To configure Self-service password reset:
 
-    1. Select the Sign-up and sign-in user flow you've created from the list, such as *B2C_1_susi*.
+    1. Select the Sign up and sign in user flow you've created from the list, such as `B2C_1_susi`.
     1. Under **Password configuration**, select **Self-service password reset** check box. This setting enables users to reset their password using the *Forgot password link* in a sign in page.
     1. At the top of the page, select **Save**.
 
@@ -124,7 +124,7 @@ To test your user flow in azure portal using `https://jwt.ms/` redirect URI, you
 
 1. In the left menu, select **App registrations**.
 
-1. Find and select the web app you registered in [step 1.1](#step-11-register-the-web-app) such as *nodewebapp*.
+1. Find and select the web app you registered in [step 1.1](#step-11-register-the-web-app) such as `nodewebapp`.
 
 1. In the left menu, under **Manage**, select **Authentication**.
 
@@ -136,11 +136,11 @@ To test your user flow in azure portal using `https://jwt.ms/` redirect URI, you
 
 1. In the Azure AD B2C tenant overview page, in the left menu, select **User flows**.
 
-1. Select the Sign-up and sign-in user flow you created in [step 2](#step-2-create-a-sign-up-and-sign-in-user-flow) from the list, such as *B2C_1_susi* to open it.
+1. Select the Sign up and sign in user flow you created in [step 2](#step-2-create-a-sign-up-and-sign-in-user-flow) from the list, such as `B2C_1_susi` to open it.
 
 1. At the top of the page, select **Run user flow**.
 
-1. For Application, select the web application you registered in [step 1.1](#step-11-register-the-web-app) such as *nodewebapp*. For **Reply URL**, select `https://jwt.ms`.
+1. For Application, select the web application you registered in [step 1.1](#step-11-register-the-web-app) such as `nodewebapp`. For **Reply URL**, select `https://jwt.ms`.
 
 1. Select **Run user flow**, and you're redirected to Azure AD B2C sign in page.
 
