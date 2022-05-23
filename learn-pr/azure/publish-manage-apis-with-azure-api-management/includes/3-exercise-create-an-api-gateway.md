@@ -46,7 +46,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     - **api/inventory** generates a list of products and the number in stock
     - **api/inventory/{productid}** returns the number in stock for the specified product ID (an integer)
     - **api/Products** generates a list of products
-    - **api/Products/{productid}** returns the details for the specified productid
+    - **api/Products/{productid}** returns the details for the specified product ID
 
     :::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 

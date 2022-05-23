@@ -42,7 +42,7 @@ The default subscription key header name is **Ocp-Apim-Subscription-Key**, and t
 
 To test out your API calls, you can use the developer portal, or command-line tools, such as **curl**. Here's an example of a `GET` request using the developer portal, which shows the subscription key header:
 
-:::image type="content" source="../media/2-key-header-portal.png" alt-text="Call API from developer portal." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/2-key-header-portal.png" alt-text="Screenshot that shows how to Call your API from developer portal." loc-scope="other"::: <!-- no-loc -->
 
 Here's an example of how you would pass a key in a request header using **curl**:
 
