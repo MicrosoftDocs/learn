@@ -12,7 +12,7 @@ This module consists of four lessons:
 
 - **Lesson 5** – Explore Azure networking services 
 
-> [!SHVIDEO source="https://www.microsoft.com/videoplayer/embed/RE4XTW8"]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XTW8]
 
 ### Module 2 Tips and Tricks 
 
