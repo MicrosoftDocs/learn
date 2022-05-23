@@ -40,7 +40,7 @@ To configure SAML settings for the application:
 
 ## Update the identity provider
 
-The administrator updates the temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant using values from the service provider.
+Update the temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant using values from the service provider.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.

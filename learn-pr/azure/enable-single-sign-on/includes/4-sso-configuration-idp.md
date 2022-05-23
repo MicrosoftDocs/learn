@@ -37,7 +37,7 @@ In the SP-initiated SSO flow, the application initiates the request to sign in. 
 
 ## SAML URLs
 
-The basic configuration for SAML-based single sign-on requires properties that are unique to the application. Refer to the integration documentation for the application to identify the appropriate values. Properties can be required or optional depending on the application. The following is an example of required and optional properties:
+The basic configuration for SAML-based single sign-on requires properties that are unique to the application. Refer to the integration documentation for the application to identify the appropriate values. Properties can be required or optional depending on the application.
 
 :::image type="content" source="../media/saml-urls.png" alt-text="Screenshot showing the URLs that need to be defined for SAML single sign-on." border="false":::
 

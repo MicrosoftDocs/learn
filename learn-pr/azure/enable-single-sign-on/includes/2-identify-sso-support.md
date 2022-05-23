@@ -12,7 +12,7 @@ Azure AD has a gallery that contains thousands of pre-integrated applications. M
 
 The following filters can be used when searching for the application in the gallery:
 
-- **Single sign-on options** – Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked. Listed as **Single Sign-On Mode** on the overview pane for an application in the gallery.
+- **Single sign-on options** – Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked. Listed as **Single Sign-on Mode** on the overview pane for an application in the gallery.
 - **User account management** – The only option available is automated provisioning.
 - **Categories** – When an application is added to the gallery it can be classified in a specific category. Many categories are available such as Business management, Collaboration, or Education.
 

@@ -2,7 +2,7 @@ Employees in a company where the expectation is to use many applications to do t
 
 When an administrator sets up single sign-on, employees are enabled to sign in once using their Azure AD credentials and then not have to sign in again when accessing other applications. To configure single sign-on for an application, settings had to be defined at the identity provider and at the service provider.
 
-To set up single sign-on for the new application, the administrator completed the following tasks:
+To set up single sign-on for the new application, he following tasks were completed:
 
 - Located the application in the Azure AD application gallery and added it to the tenant.
 - Accessed the integration documentation for the application to identify the supported single sign-on flows and any particular single sign-on requirements.
@@ -20,5 +20,5 @@ The productivity level of the employees is much higher and the frustration level
 ## References
 
 - [Application integration guides](/azure/active-directory/saas-apps/tutorial-list)
-- [Single Sign-On SAML protocol](/azure/active-directory/develop/single-sign-on-saml-protocol)
+- [Single Sign-on SAML protocol](/azure/active-directory/develop/single-sign-on-saml-protocol)
 - [Overview of the Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery)

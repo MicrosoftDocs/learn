@@ -10,7 +10,7 @@ metadata:
   ms.author: davidmu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
 quiz:
   questions:
@@ -41,12 +41,12 @@ quiz:
     - content: "**Reply URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: false
       explanation: "**Reply URL** isn't a required property for configuring single sign-on at the service provider."
-    - content: "**Sign on URL**, **Reply URL**, and **Sign out URL**."
+    - content: "**Sign-on URL**, **Reply URL**, and **Sign-out URL**."
       isCorrect: false
-      explanation: "**Sign on URL** and **Reply URL** aren't required properties for configuring single sign-on at the service provider."
-    - content: "**Login URL**, **Azure AD Identifier**, and **Logout URL**."
+      explanation: "**Sign-on URL** and **Reply URL** aren't required properties for configuring single sign-on at the service provider."
+    - content: "**Log in URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: true
-      explanation: "The **Login URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the service provider."
+      explanation: "The **Log in URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the service provider."
   - content: "What's the purpose of the **Azure AD Identifier**?"
     choices:
     - content: "Identifies the Azure AD subscription."

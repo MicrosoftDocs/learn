@@ -1,12 +1,12 @@
 In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
 
-The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It is possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
+The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It's possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
 
 The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
 
 ## Access the application gallery
 
-The Azure AD application gallery contains many pre-integrated software as a service (SaaS) applications. Applications that the retail company uses are probably already in the gallery. Locate the gallery from the Azure portal.
+The Azure AD application gallery contains pre-integrated software as a service (SaaS) applications that can be added to a tenant. Applications that the retail company uses are probably already in the gallery. Locate the gallery from the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
@@ -26,7 +26,7 @@ Search for the **Azure AD SAML Toolkit** application and add it to the tenant.
 
     :::image type="content" source="../media/add-application.png" alt-text="Screenshot showing the addition of a new enterprise application." border="true":::
 
-1. In the application overview pane that appears, enter a name for the application. Notice that the **Single Sign-On Modes** listed for the application are SAML-based sign-on and linked sign-on. For this exercise, accept the default name.
+1. In the application overview pane that appears, enter a name for the application. Notice that the single sign-on modes listed for the application are SAML-based sign-on and linked sign-on. For this exercise, accept the default name.
 1. Select **Create**
 
     :::image type="content" source="../media/create-application.png" alt-text="Screenshot showing the overview and creation of a new enterprise application." border="true":::

@@ -27,7 +27,7 @@ In this module, Azure AD is being used as the identity provider in the single si
 
 1. In the **Basic SAML Configuration** box, select **Edit**.
 1. Specify the **Identifier (Entity ID)**. The provided value follows a suggested pattern. Each application in the gallery has a unique set of suggested patterns for URLs. For this application, accept the default value of `https://samltoolkit.azurewebsites.net`.
-1. Specify the **Reply URL (Assertion Consumer Service URL)** where the application expects to receive the authentication token, and the **Sign on URL** that is the sign in page for the application. For gallery applications, these values are defined by the service provider. For this application, to get the values from the service provider, a certificate is needed. To download a certificate and get values from the service provider, enter temporary values for now, the values are updated later in the module. How this configuration is done can very from application to application.
+1. Specify the **Reply URL (Assertion Consumer Service URL)** where the application expects to receive the authentication token, and the **Sign on URL** that is the sign-in page for the application. For gallery applications, these values are defined by the service provider. For this application, to get the values from the service provider, a certificate is needed. To download a certificate and get values from the service provider, enter temporary values for now, the values are updated later in the module. How this configuration is done can very from application to application.
 
     :::image type="content" source="../media/saml-url-temp.png" alt-text="Screenshot showing the temporary URLs that are defined for the application." border="true":::
 
