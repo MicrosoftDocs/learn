@@ -6,7 +6,7 @@ To scan a source, Microsoft Purview requires a set of **credentials**. For Azure
 * Service Principal
 * Account Key
 
-In this module we will walk through how to grant the Microsoft Purview managed identity the necessary access to successfully configure and run a scan.
+In this module we'll walk through how to grant the Microsoft Purview managed identity the necessary access to successfully configure and run a scan.
 
 1. Navigate to your Azure Data Lake Storage Gen2 account and select **Access Control (IAM)** from the left navigation menu.
 
@@ -26,7 +26,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 1. Select **Review + assign** once more to perform the role assignment.
 
-    :::image type="content" source="../media/6-register-and-scan-exercise/02.10-access-assign.png" alt-text="Screenshot of the Add role assignment review page, with the review + assign button highlighted at the bottom..":::
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.10-access-assign.png" alt-text="Screenshot of the Add role assignment review page, with the review + assign button highlighted at the bottom.":::
 
 1. To confirm the role has been assigned, navigate to the **Role assignments** tab and filter the **Scope** to `This resource`. You should be able to see that the Microsoft Purview managed identity has been granted the **Storage Blob Data Reader** role.
 
@@ -44,7 +44,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 1. Select the **Azure subscription**, **Storage account name**, **Collection**, and select **Register**.
 
-    At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
+    At this point, we've registered a data source. Assets aren't written to the catalog until after a scan has finished running.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.22-sources-properties.png" alt-text="Screenshot of the register Azure Data Lake Storage Gen2 menu, with the required fields highlighted: Subscription, storage account name, and collection.":::
 
@@ -70,7 +70,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 1. Select **Once** and select **Continue**.
 
-    :::image type="content" source="../media/6-register-and-scan-exercise/02.27-scan-trigger.png" alt-text="Screenshot of the set a scan trigger menu with the Once radiobutton selected.":::
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.27-scan-trigger.png" alt-text="Screenshot of the set a scan trigger menu with the Once radio button selected.":::
 
 1. Select **Save and Run**.
 

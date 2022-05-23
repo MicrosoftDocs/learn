@@ -1,8 +1,8 @@
 # Access Control
 
-As Fabrikam's usage of Microsoft Purview expands, it will become increasingly important that assets are logically grouped to aid data management and discovery, as well as ensuring user of the Microsoft Purview service have the right level of access to perform tasks such as curating and enriching the data catalog.
+As Fabrikam's usage of Microsoft Purview expands, it will become increasingly important that assets are logically grouped to aid data management and discovery, as well as ensuring user of the Microsoft Purview service has the right level of access to perform tasks such as curating and enriching the data catalog.
 
-At the core of Microsoft Purview, the data map keeps an up-to-date map of your data assets (tables, files, ect...) and their metadata. To build this data map, you'll register and scan data sources into this map. In an organization there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
+At the core of Microsoft Purview, the data map keeps an up-to-date map of your data assets (tables, files, etc...) and their metadata. To build this data map, you'll register and scan data sources into this map. In an organization there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
 
 ## Collections
 
@@ -37,5 +37,5 @@ Microsoft Purview uses a set of predefined roles to control who can access what 
 
 The permissions of a parent collection are automatically inherited by its subcollections. This allows you to assign some groups or users broad access across the organization, so users can discover and manage data across an entire section, without having to assign individual permissions to every single subcollection.
 
-You may have groups within your organization that you know are dealing with sensitive data, that need to restrict inheritance so only that group can discover and manage information within. There is an option within every sub-collection that is **Restrict permission inheritance** that stops this automatic process of inheritance. If you enable this option, its subcollections will no longer inherit permissions from the parent and will need to be added directly. However, collection admins that are automatically inherited from a parent collection can't be removed, so select your collection administrators carefully!
+You may have groups within your organization that you know are dealing with sensitive data that need to restrict inheritance so only that group can discover and manage information within. There's an option within every subcollection that is **Restrict permission inheritance** that stops this automatic process of inheritance. If you enable this option, its subcollections will no longer inherit permissions from the parent and will need to be added directly. However, collection admins that are automatically inherited from a parent collection can't be removed, so select your collection administrators carefully!
 

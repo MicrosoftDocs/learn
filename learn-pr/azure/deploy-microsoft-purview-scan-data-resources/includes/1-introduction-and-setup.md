@@ -1,6 +1,6 @@
 ## What is Microsoft Purview?
 
-Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS), and multi-cloud data. Use Microsoft Purview to create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, and a business glossary. Empower data consumers, data officers, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it is located.
+Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS), and multi-cloud data. Use Microsoft Purview to create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, and a business glossary. Empower data consumers, data officers, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it's located.
 
 ### How does Microsoft Purview benefit an organization?
 
@@ -11,9 +11,9 @@ Microsoft Purview helps CDOs, data analysts, BI engineers, data stewards, govern
 - Where is data stored?
 - What’s my exposure to risk?
 - What is the data being used for?
-- Is my data useage compliant?
+- Is my data usage compliant?
 - How do I control access & use?
-- What is required by regulation X (read GDPR, CELA, HIPAA) etc.?
+- What is required by regulation X (read CELA, HIPAA, etc.)?
 - For what business purpose?
 - Where is the sensitive data?
 
@@ -31,7 +31,7 @@ By the end of this session, you'll have deployed a Microsoft Purview account in 
 
 ## Prerequisites
 
-In order to proceed with the hands-on components of this module, you will require the following:
+In order to proceed with the hands-on components of this module, you'll require the following:
 
 - An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
 - Owner permissions within a Resource Group to create resources and manage role assignments.
@@ -65,13 +65,13 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 
     :::image type="content" source="../media/02.11-explorer-extract.png" alt-text="Screenshot of the extract menu with the Extract button highlighted.":::
 
-1. Open Azure Storage Explorer, select the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click or hold on on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+1. Open Azure Storage Explorer, select the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click or hold on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
     :::image type="content" source="../media/02.12-explorer-container.png" alt-text="Screenshot of the Microsoft Azure Storage Explorer with the storage account highlighted, blob containers selected, and the Create Blob Container option highlighted.":::
 
 1. With the container name selected, select the **Upload** button and select **Upload Folder...**.
 
-    :::image type="content" source="../media/02.13-explorer-upload.png" alt-text="Screenshot of the new container with the upload button selected, and the upload folder option highlighed.":::
+    :::image type="content" source="../media/02.13-explorer-upload.png" alt-text="Screenshot of the new container with the upload button selected, and the upload folder option highlighted.":::
 
 1. Select the **ellipsis** to select a folder.
 
