@@ -22,9 +22,9 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     - The **Resources** folder contains shared fonts, images, and assets used by all platforms.
 
-    - The **MauiProgram.cs** file contains the code that configures the app and specifies that the **App** class should be used to run the application. Select the Startup.cs file to view the code.
+    - The **MauiProgram.cs** file contains the code that configures the app and specifies that the **App** class should be used to run the application. 
 
-    - The **App.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
+    - The **App.xaml.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
 
     - The **AppShell.xaml** file contains the main layout for the application and starting page of **MainPage**.
 
@@ -46,7 +46,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the Win U I app running. The user has tapped the 'Click me' button four times.":::
 
-1. On the **View** menu, select **Solution Explorer**. In the Solution Explorer window expand the **MainPage.xaml** node and open the **MainPage.xaml.cs** code-behind file.
+1. On the **View** menu, select **Solution Explorer**. In the Solution Explorer window, expand the **MainPage.xaml** node and open the **MainPage.xaml.cs** code-behind file.
 
 1. In the **OnCounterClicked** method, change the statement that increments the *count* variable to add 5 to this variable instead:
 

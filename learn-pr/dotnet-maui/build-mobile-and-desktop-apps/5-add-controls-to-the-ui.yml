@@ -21,9 +21,9 @@ quiz:
     - content: "DockableLayout"
       isCorrect: true
       explanation: "This is the correct answer"
-    - content: "RelativeLayout"
+    - content: "AbsoluteLayout"
       isCorrect: false
-      explanation: "No. RelativeLayout is a valid layout type in .NET MAUI."
+      explanation: "No. AbsoluteLayout is a valid layout type in .NET MAUI."
     - content: "StackLayout"
       isCorrect: false
       explanation: "No. StackLayout is a valid layout type in .NET MAUI."
