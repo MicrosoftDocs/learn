@@ -7,7 +7,7 @@ metadata:
   description: "This module describes access control and collections in Microsoft Purview. All permissions for Microsoft Purview are managed through collections in the Microsoft Purview governance portal. Learn how to grant permissions."
   ms.date: 5/19/2022
   author: tayganr
-  ms.author: tayganr
+  ms.author: tarifat
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
