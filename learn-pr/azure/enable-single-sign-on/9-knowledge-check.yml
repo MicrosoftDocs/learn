@@ -44,9 +44,9 @@ quiz:
     - content: "**Sign-on URL**, **Reply URL**, and **Sign-out URL**."
       isCorrect: false
       explanation: "**Sign-on URL** and **Reply URL** aren't required properties for configuring single sign-on at the service provider."
-    - content: "**Log in URL**, **Azure AD Identifier**, and **Logout URL**."
+    - content: "**Login URL**, **Azure AD Identifier**, and **Logout URL**."
       isCorrect: true
-      explanation: "The **Log in URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the service provider."
+      explanation: "The **Login URL**, **Azure AD Identifier**, and **Logout URL** can be needed to configure single sign-on at the service provider."
   - content: "What's the purpose of the **Azure AD Identifier**?"
     choices:
     - content: "Identifies the Azure AD subscription."
