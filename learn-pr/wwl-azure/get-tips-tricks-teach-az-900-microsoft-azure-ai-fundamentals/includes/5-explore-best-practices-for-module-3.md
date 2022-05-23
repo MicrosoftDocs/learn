@@ -16,7 +16,7 @@ This module consists of six lessons:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XJqw] 
 
-###Module 3 Tips and Tricks 
+### Module 3 Tips and Tricks 
 
 - Describe the solutions and when they can be used 
 

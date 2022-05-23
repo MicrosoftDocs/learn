@@ -8,7 +8,7 @@ This module consists of two lessons:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XTWI] 
 
-###Module 6 Tips and Tricks 
+### Module 6 Tips and Tricks 
 
 - Demonstrate and compare the [Azure Pricing Calculator](https://aka.ms/pricingcal) and [Total Cost of Ownership (TCO) calculator](https://aka.ms/tcocalc) 
 

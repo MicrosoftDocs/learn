@@ -10,7 +10,7 @@ This module consists of three lessons:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XTWc]
 
-###Module 1 Tips and Tricks 
+### Module 1 Tips and Tricks 
 
 - Build the foundation of the cloud 
 
