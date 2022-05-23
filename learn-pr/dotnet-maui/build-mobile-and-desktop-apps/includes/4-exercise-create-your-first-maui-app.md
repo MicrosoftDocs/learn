@@ -22,9 +22,9 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     - The **Resources** folder contains shared fonts, images, and assets used by all platforms.
 
-    - The **MauiProgram.cs** file contains the code that configures the app and specifies that the **App** class should be used to run the application. Select the Startup.cs file to view the code.
+    - The **MauiProgram.cs** file contains the code that configures the app and specifies that the **App** class should be used to run the application. Select the MauiProgram.cs file to view the code.
 
-    - The **App.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
+    - The **App.xaml.cs** file, the  constructor for the **App** class creates a new instance of the **AppShell** class, which is then displayed in the application window.
 
     - The **AppShell.xaml** file contains the main layout for the application and starting page of **MainPage**.
 
