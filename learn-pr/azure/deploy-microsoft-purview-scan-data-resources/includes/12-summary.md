@@ -6,8 +6,8 @@ In this module, you have learned how to deploy, configure, and use Microsoft Pur
 
 ## Learn more
 
-- [Create a Microsoft Purview account in the Azure portal](https://docs.microsoft.com/azure/purview/create-catalog-portal)
-- [Create and manage collections in Microsoft Purview](https://docs.microsoft.com/azure/purview/how-to-create-and-manage-collections)
-- [Manage data sources in Microsoft Purview](https://docs.microsoft.com/azure/purview/manage-data-sources)
-- [Connect to Azure Data Lake Gen2 in Microsoft Purview](https://docs.microsoft.com/azure/purview/register-scan-adls-gen2)
-- [Browse the Microsoft Purview data catalog](https://docs.microsoft.com/azure/purview/how-to-browse-catalog)
+- [Create a Microsoft Purview account in the Azure portal](/azure/purview/create-catalog-portal)
+- [Create and manage collections in Microsoft Purview](/azure/purview/how-to-create-and-manage-collections)
+- [Manage data sources in Microsoft Purview](/azure/purview/manage-data-sources)
+- [Connect to Azure Data Lake Gen2 in Microsoft Purview](/azure/purview/register-scan-adls-gen2)
+- [Browse the Microsoft Purview data catalog](/azure/purview/how-to-browse-catalog)
