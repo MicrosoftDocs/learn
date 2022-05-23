@@ -32,7 +32,7 @@ Now that everything is set up, the only thing left is to make Twilio call the fu
 
 1. In the **Develop** menu, select **Phone Numbers**.
 
-1. Select **Manage** and then **Active numbers**. Select your phone number.
+1. Select **Manage** > **Active numbers**, and then select your phone number.
 
     :::image type="content" source="../media/twilio-develop.png" alt-text="Screenshot that shows the Active numbers button highlighted in Twilio.":::
 
