@@ -43,6 +43,6 @@ The compute required to facilitate the automated population of the Data Map is s
 
 ## Network connectivity
 
-You can connect to your Microsoft Purview account either publicly, via public IP addresses or service endpoints, or privately, using a private endpoint. In this module, our proof of concept will use a publically available Microsoft Purview account. But you can also [learn more about private endpoints for your Microsoft Purview account](https://docs.microsoft.com/azure/purview/catalog-private-link). 
+You can connect to your Microsoft Purview account either publicly, via public IP addresses or service endpoints, or privately, using a private endpoint. In this module, our proof of concept will use a publically available Microsoft Purview account. But you can also [learn more about private endpoints for your Microsoft Purview account](/azure/purview/catalog-private-link). 
 
 :::image type="content" source="../media/03.03-purview-networking.png" alt-text="Microsoft Purview networking":::
