@@ -31,6 +31,6 @@ To send and receive text messages programmatically, you'll need to get a Twilio 
    - Account SID
    - Auth token
 
-    :::image type="content" source="../media/twilio-dashboard.png" alt-text="Screenshot of the Twilio dashboard that shows the values to copy.":::
+    :::image type="content" source="../media/twilio-dashboard.png" alt-text="Screenshot of the Twilio dashboard that shows the values to copy." border="false":::
 
 In this unit, you created a Twilio account that you'll use to send and receive text messages. Next, you'll learn how to create and deploy a function app in Azure.
