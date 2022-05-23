@@ -8,7 +8,7 @@ In this unit, you'll learn about the architecture of .NET MAUI, and the tools re
 
 .NET provides a series of platform-specific frameworks for creating apps: .NET for Android, .NET for iOS (and iPadOS), .NET for Mac, and WinUI 3 (leveraging the Windows App SDK). These frameworks all have access to the same .NET 6 Base Class Library (BCL). This library provides the functionality for creating and managing resources, and for generally abstracting the details of the underlying device away from your code. The BCL depends on the .NET runtime to provide the execution environment for your code. For Android, iOS (and iPadOS), and macOS, the environment is implemented by Mono, an open-source implementation of the .NET runtime. On Windows, Win32 performs the same role, except it's optimized for the Windows platform.
 
-While the BCL enables applications running on different types of devices to share common business logic, the various platforms have different ways of defining the user interface for an application, and they provide varying models for specifying how the elements of a user interface communicate and inter-operate. You can craft the UI for each platform separately using the appropriate platform-specific framework (.NET for Android, .NET for iOS, .NET for Mac, or WinUI 3), but this approach then requires you to maintain a code-base for each individual family of devices. .NET MAUI provides a single framework for building the UIs for mobile and desktop applications. You create the UI using this framework (indicated by arrow 1 in the diagram below), and .NET MAUI takes care of converting it to the appropriate platform (arrow 2).
+While the BCL enables applications running on different types of devices to share common business logic, the various platforms have different ways of defining the user interface for an application. The platforms provide varying models for specifying how the elements of a user interface communicate and inter-operate. You can craft the UI for each platform separately using the appropriate platform-specific framework (.NET for Android, .NET for iOS, .NET for Mac, or WinUI 3), but this approach then requires you to maintain a code-base for each individual family of devices. .NET MAUI provides a single framework for building the UIs for mobile and desktop applications. You create the UI using this framework (indicated by arrow 1 in the diagram below), and .NET MAUI takes care of converting it to the appropriate platform (arrow 2).
 
 There may be times when you need to implement a platform-specific feature. In these situations, you can invoke methods in the platform-specific framework, as highlighted by arrow 3 in the following diagram,
 
@@ -29,7 +29,7 @@ This example defines the label for the button ("Click me"), and specifies that a
 
 .NET MAUI always generates native code for the target device, so you get optimal performance. .NET MAUI uses "handlers" specific to each platform and UI element to carry out an operation. For example, if you target iOS for the app, a .NET MAUI handler will map this code to an iOS UIButton. If you run on Android, you'll get an Android AppCompatButton. These handlers are accessed indirectly through a control-specific interface provided by .NET MAUI, such as IButton for a button.
 
-:::image type="content" source="../media/2-button-handler.png" alt-text="Diagram of how .NET MAUI maps a XAML control to a native control. It shows the .NET MAUI control implements an interface which each native handler also implements.":::
+:::image type="content" source="../media/2-button-handler.png" alt-text="Diagram of how .NET MAUI maps a XAML control to a native control. It shows the .NET MAUI control implements an interface that each native handler also implements.":::
 
 > [!NOTE]
 > If you prefer, you can also create the UI dynamically using C# code. This approach enables you to modify the layout according to the environment. For example, you might not want certain controls to appear if the user doesn't have an appropriate level of authorization.
@@ -45,7 +45,7 @@ This example defines the label for the button ("Click me"), and specifies that a
 ## Requirements for .NET MAUI development
 
 > [!NOTE]
-> These requirements will change as new preview release of Visual Studio and .NET MAUI are released.
+> These requirements will change as new preview releases of Visual Studio and .NET MAUI are released.
 
 To create .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
 
