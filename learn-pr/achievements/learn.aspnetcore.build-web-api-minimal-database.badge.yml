@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.aspnetcore.build-web-api-minimal-database.badge
+metadata:
+  title: >-
+    Microsoft Badge: Use a database with minimal API, Entity Framework Core, and
+    ASP.NET Core was issued by Microsoft
+socialImageUrl: /learn/achievements/build-web-api-minimal-database-social.png
