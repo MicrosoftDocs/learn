@@ -203,4 +203,4 @@ At this point, we can start our express server and access the web app in the bro
 
     :::image type="content" source="../media/tutorial-login-page.png" alt-text="Screenshot of a Node web app sign in page.":::
 
-At the moment, the web app can't authenticate users, so if you select **Sign in** button, you see a message, **We haven't configure authentication!** We'll configure authentication into the web app in the next unit.
+At the moment, the web app can't authenticate users, so if you select **Sign in** button, you see a message, **We haven't configure authentication!** In the next unit, we'll configure the web app to authenticate users.
