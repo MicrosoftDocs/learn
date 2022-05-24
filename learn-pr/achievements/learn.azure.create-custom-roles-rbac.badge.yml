@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.create-custom-roles-rbac.badge
+metadata:
+  title: >-
+    Microsoft Badge: Create custom roles for Azure resources with role-based
+    access control (RBAC) was issued by Microsoft
+socialImageUrl: /learn/achievements/create-custom-azure-roles-with-rbac-social.png
