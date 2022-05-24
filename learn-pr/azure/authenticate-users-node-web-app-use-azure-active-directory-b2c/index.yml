@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
   - Familiarity with identity concepts such as authentication, security tokens and OpenID Connect protocol at beginner level.
-  - Ability to navigate the Azure portal such as searching resources and switching between directories.
+  - Ability to navigate the Azure portal such as searching resources, switching between directories and reading directory name.
   - An Azure Active Directory B2C (Azure AD B2C) tenant that you manage as a Global administrator.
   - Ability to write code in JavaScript/Node at beginner level.
   - Must have [Node.js](https://nodejs.org/en/) and [Visual Studio Code](https://code.visualstudio.com/) installed on your computer.

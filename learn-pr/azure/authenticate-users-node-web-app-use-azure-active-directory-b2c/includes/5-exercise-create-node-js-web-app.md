@@ -1,108 +1,206 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Now that you've understood the important Node.js concepts that you need to create a web app, here, you'll build the Node.js web application.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Create a Node project
 
-    Heading: none
+1. Create a folder in any location on your computer, such as `auth-app` to hold your Node web app.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+1. Start Visual Studio Code (VS Code) editor, and use it to open the Node web app folder you created, such as `auth-app`.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+1. From your VS Code editor terminal, run `npm init -y` command. This command creates a default package.json file for your Node.js project.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Create more folders and files to achieve the following directory structure:
 
-    Goal: Describe the part of the scenario covered in this exercise
+```text
+    auth-app/
+    ├── index.js
+    └── package.json
+    └── .env
+    └── views/
+        └── layouts/
+            └── main.hbs
+        └── signin.hbs
+```
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+The `views` folder will hold Handlebars files for the app's UI elements.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+## Install app dependencies
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+From your VS Code editor terminal, run the following commands:
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+```text
+npm install express
+npm install dotenv
+npm install express-handlebars
+npm install express-session
+```
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Apart from  `express` and `express-handlebars` that we explained earlier, the commands install 2 additional packages:
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+* `dotenv`- loads environment variables from a `.env` file into `process.env`, so that you keep app configurations in an environment separate from code.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+* `express-session` - implements user sessions in Node express framework.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+## Add app UI components
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+The Node web app uses HandleBars to implement the UI components.
 
-    Goal: List the steps they'll do to complete the exercise.
+Use the following steps to build the web app's UI:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. In VS Code, open the `main.hbs` file, add the following code:
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Tutorial | Authenticate users with MSAL for B2C</title>
+    
+        <!-- adding Bootstrap 4 for UI components  -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="SHORTCUT ICON" href="https://c.s-microsoft.com/favicon.ico?v2" type="image/x-icon">
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="/">Microsoft Identity Platform</a>
+            {{#if showSignInButton}}
+                <div class="ml-auto">
+                    <a type="button" id="SignIn" class="btn btn-secondary" href="/signin" aria-haspopup="true" aria-expanded="false">
+                        Sign in
+                    </a>
+                </div>
+            {{else}}
+                    <p class="navbar-brand d-flex ms-auto">Hi {{givenName}}</p>
+    
+                    <a class="navbar-brand d-flex ms-auto" href="/signout">Sign out</a>
+            {{/if}}
+        </nav>
+        <br>
+        <h5 class="card-header text-center">MSAL Node Confidential Client application with Auth Code Flow</h5>
+        <br>
+        <div class="row" style="margin:auto" >
+          {{{body}}}
+        </div>
+        <br>
+        <br>
+      </body>
+    </html>
+    ```
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    The `main.hbs` file implements the UI built with the Bootstrap 5 CSS framework. We use `showSignInButton` boolean variable to control what a user sees when they sign in or sign out, but this feature will be clear once we add authentication to the web app.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. In VS Code, open the `signin.hbs` file, add the following code:
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    ```html
+    <div class="col-md-3" style="margin:auto">
+      <div class="card text-center">
+        <div class="card-body">
+          {{#if showSignInButton}}
+              <h5 class="card-title">Please sign in to acquire an ID token</h5>
+          {{else}}
+               <h5 class="card-title">You have signed in</h5>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    ```
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+## Add environment variables
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+To keep app configurations, which changes from one environment to another, we separate them from the application source code, so we put it in a separate file.  
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+In VS Code, open the `.env` file, add the following code:
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+```text
+#HTTP port
+SERVER_PORT=3000
+#session secret
+SESSION_SECRET=sessionSecretHere
+```
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+## Configure express server
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+In VS Code, open the `index.js` file, add the following code:
 
-<!-- Do not add a unit summary or references/links -->
+```javascript
+    /*
+     * Copyright (c) Microsoft Corporation. All rights reserved.
+     * Licensed under the MIT License.
+     */    
+    require('dotenv').config();
+    const express = require('express');
+    const session = require('express-session');
+    const {engine}  = require('express-handlebars');
+      
+    /**
+     * Using express-session middleware. Be sure to familiarize yourself with available options
+     * and set them as desired. Visit: https://www.npmjs.com/package/express-session
+     */
+     const sessionConfig = {
+        secret: process.env.SESSION_SECRET,
+        resave: false,
+        saveUninitialized: false,
+        cookie: {
+            secure: false, // set this to true in production
+        }
+    }
+     
+    //Create an express instance
+    const app = express();
+    
+    //Set handlebars as your view engine
+    app.engine('.hbs', engine({extname: '.hbs'}));
+    app.set('view engine', '.hbs');
+    app.set("views", "./views");
+    
+    //usse session configuration 
+    app.use(session(sessionConfig));
+    
+     app.get('/', (req, res) => {
+        res.render('signin', { showSignInButton: true });
+    });
+    
+    app.get('/signin',(req, res)=>{
+        res.send('We haven\'t configure authentication!');
+    });
+    
+    /**
+     * Sign out end point
+    */
+    app.get('/signout',async (req, res)=>{    
+        //TODO
+    });
+    
+    app.get('/redirect',(req, res)=>{
+        //TODO
+    });
+    
+    //start app server to listen on set port
+    
+    app.listen(process.env.SERVER_PORT, () => {
+        console.log(`App listening on port !` + process.env.SERVER_PORT);
+    });
+```
+
+In the `index.js` file, we've added the following code components:
+
+* Import `dotenv`, `express`, `express-sessions` and `express-handlebars` Node packages.
+
+* Configure HandleBars templating engine. HandleBars files will use `.hbs` extension.
+
+* Add the `/` express route, which is the entry point to the application. It send the `signin.hbs` file and `showSignInButton` boolean variable to the view. The rest of the express routes will implemented later when we add authentication to the web app.
+
+* Start the express server to listen on the port number specified in the `.env` file.
+
+## Run Node web app
+
+At this point, we can start our express server and access the web app in the browser:
+
+1. From your VS Code terminal, run `node index.js` command to start the express server.
+
+1. In your browser, go to http://localhost:3000. You should see the page with a **Sign in** button:
+
+    :::image type="content" source="../media/tutorial-login-page.png" alt-text="Screenshot of a Node web app sign in page.":::
+
+At the moment, the web app can't authenticate users, so if you select **Sign in** button, you see a message, **We haven't configure authentication!** We'll configure authentication into the web app in the next unit.
