@@ -74,11 +74,11 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 :::image type="content" source="../media/3-stages-validate.png" alt-text="Diagram that shows a pipeline with lint and validate stages, each containing a single job. The validate stage communicates with Azure." border="false":::
 
-You use the `az deployment group validate` Azure CLI command to submit a Bicep file for preflight validation: <!-- TODO -->
+You use the `AzureResourceManagerTemplateDeployment` task to submit a Bicep file for preflight validation, and configure the `deploymentMode` to `Validation`:
 
-:::code language="yaml" source="code/3-preflight.yml" highlight="14-22" ::: <!-- TODO -->
+:::code language="yaml" source="code/3-preflight.yml" range="14-24" highlight="9" :::
 
-This command is similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
+This command is similar to the deployment task you've used already, but it doesn't actually deploy any resources. It performs extra checks against the resources that are being used in your template. 
 
 For example, suppose your Bicep file contains a storage account. Preflight validation will check whether another storage account has already taken the name you chose. It also checks whether the name you chose for the storage account complies with naming conventions. 
 

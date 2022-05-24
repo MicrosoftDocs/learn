@@ -78,7 +78,7 @@ stages:
                 resourceGroupName: $(ResourceGroupName)
                 csmFile: deploy/main.bicep
                 overrideParameters: >
-                  -environmentType $(EnvironmentType))
+                  -environmentType $(EnvironmentType)
                 deploymentOutputs: deploymentOutputs
 
             - bash: |
