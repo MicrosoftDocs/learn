@@ -265,7 +265,7 @@ To add the variables:
 
 1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *tailspinspacegame4692.azurecr.io*.
 
-1. Select **Pipeline permissions**, and then the `+` sign to add a pipeline. Select **mslearn-tailspin-spacegame-web-docker** to give your pipeline permission to access the variable group.
+1. Select **Pipeline permissions**, and then select the `+` sign to add a pipeline. Select **mslearn-tailspin-spacegame-web-docker** to give your pipeline permission to access the variable group.
 
 1. Select **Save** at the top of the page to save your variables. Your variable group should look like the following:
 
