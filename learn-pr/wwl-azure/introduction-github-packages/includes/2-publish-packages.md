@@ -152,7 +152,7 @@ $ npm login --scope=@OWNER --registry=https://npm.pkg.github.com
 
 To publish your npm package, see [Working with the npm registry - GitHub Docs](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#publishing-a-package-using-a-local-npmrc-file).
 
-After you publish a package, you can view the package on GitHub. See "[Viewing packages](https://docs.github.com/packages/learn-github-packages/viewing-packages)".<br>
+After you publish a package, you can view the package on GitHub. See "[Viewing packages](https://docs.github.com/packages/learn-github-packages/viewing-packages)".
 
 For an example package page, see [Codertocat/hello-world-npm (github.com)](https://github.com/Codertocat/hello-world-npm/packages/10696?version=1.0.1).
 
