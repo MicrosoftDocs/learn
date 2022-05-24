@@ -5,6 +5,6 @@ In this module, you'll learn how to use the Language service to classify text in
 After completing this module, you'll be able to:
 
 - Define single and multiple label classifications
-- Build a Language service project
+- Build a custom text classification project
 - Tag data, train, and deploy a model
 - Submit classification tasks from your own app

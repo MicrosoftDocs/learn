@@ -3,7 +3,7 @@ In this module, you learned about custom text classification and how to build a 
 Now that you've completed this module, you can:
 
 - Define single and multiple label classifications
-- Build a Language service project
+- Build a custom text classification project
 - Tag data, train, and deploy a model
 - Submit classification tasks from your own app
 
