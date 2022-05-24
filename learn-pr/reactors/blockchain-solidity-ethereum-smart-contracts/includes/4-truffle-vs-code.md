@@ -6,14 +6,14 @@ In Visual Studio Code, on the left sidebar, select **Extensions**. Search for **
 
 :::image type="content" source="../media/truffle-vs-code.png" alt-text="Screenshot showing how to install the Truffle for VS Code extension.":::
 
-Before you use the Truffle extension, make sure you have installed:
+Before you use the Truffle extension, make sure you've installed:
 
-- **Node.js and NPM**: To confirm Node.js is installed, open your terminal and type `node`. If Node.js is installed, the terminal returns your computer's version of Node.js. You can also confirm that the node package manager (NPM) is installed by typing `npm` in the terminal.
+- **Node.js and npm**: To confirm Node.js is installed, open your terminal and type `node`. If Node.js is installed, the terminal returns your computer's version of Node.js. You can also confirm that the node package manager (npm) is installed by typing `npm` in the terminal.
 - **Git**: To confirm Git is installed, open your terminal and type `git`. If Git is installed, the terminal returns a list of available git commands.
 - **Truffle Suite**: The extension provides a link to install the Truffle Suite of developer tools (required while the extension is in public preview).
 - **Ganache**: The extension provides a link to install Ganache (required while the extension is in public preview).
 
-If you don't have this software installed, or if you don't have the minimum versions, the extension provides tips for how to install the tools.
+If you don't have this software installed, or don't have the minimum versions, the extension provides tips for how to install the tools.
 
 ## Get started
 

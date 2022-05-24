@@ -1,4 +1,4 @@
-Truffle is the most popular development environment and testing framework for Ethereum. You can install it by using the node package manager (NPM).
+Truffle is the most popular development environment and testing framework for Ethereum. You can install it by using the node package manager (npm).
 
 ## About Truffle
 
@@ -6,7 +6,7 @@ Truffle provides the following benefits:
 
 - Smart contract building, compilation, deployment, and testing
 - Network management for deploying to public and private networks
-- Package management for project dependencies with EthPM & NPM
+- Package management for project dependencies
 - Interactive console for direct contract communication and management
 - Configurable build pipeline to automatically run checks and configure projects
 
@@ -24,7 +24,7 @@ The output shows the installed version and presents the list of commands availab
 
 :::image type="content" source="../media/truffle.png" alt-text="Screenshot of the terminal, showing the Truffle version and the available commands.":::
 
-You can also refer to the [Truffle Quickstart](https://trufflesuite.com/docs/truffle/quickstart/) for more details about getting started with Truffle.
+For more information about getting started with Truffle, refer to the [Truffle Quickstart](https://trufflesuite.com/docs/truffle/quickstart/).
 
 ### Ganache
 
@@ -44,4 +44,4 @@ Notice that the blockchain has 10 generated accounts, and each receives 100 test
 
 The output also displays the blockchain's address. We'll use this address to connect to the blockchain. By default, the address is 127.0.0.1:8545.
 
- You can also refer to the [Ganache Quickstart](https://trufflesuite.com/docs/ganache/quickstart/) for more details on getting started with Ganache.
+ For more information about getting started with Ganache, see the [Ganache Quickstart](https://trufflesuite.com/docs/ganache/quickstart/).
