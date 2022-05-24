@@ -13250,11 +13250,7 @@
       "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
     },      
-    {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 302587e4142c64f0616b18263f6716f5292d4193
+    {    
       "source_path": "learn-pr/azure/aks-workshop/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
       "redirect_document_id": false
