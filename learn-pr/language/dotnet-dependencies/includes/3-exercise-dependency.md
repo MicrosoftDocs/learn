@@ -124,7 +124,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     HumanizeDates();
     ```
 
-1. Run the application by running the following command in the terminal.
+1. Save the file (**File** > **Save** or <kbd>CTRL + S</kbd>). Run the application by running the following command in the terminal.
 
     ```dotnetcli
     dotnet run
