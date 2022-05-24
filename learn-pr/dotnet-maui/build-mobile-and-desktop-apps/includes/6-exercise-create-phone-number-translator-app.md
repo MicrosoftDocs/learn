@@ -157,7 +157,7 @@ public static class PhonewordTranslator
     }
     ```
 
-1. Add the `translatedNumber` string variable and the following `OnTranslate` method to the `MainPage` class, after the constructor. The `OnTranslate` method retrieves the phone number from the `Text` property of the `Entry` control and passes it to the static ToNumber method of the `PhonewordTranslator` class that you created earlier.
+1. Add the `translatedNumber` string variable and the following `OnTranslate` method to the `MainPage` class, after the constructor. The `OnTranslate` method retrieves the phone number from the `Text` property of the `Entry` control and passes it to the static `ToNumber` method of the `PhonewordTranslator` class that you created earlier.
 
 
     ```csharp
@@ -257,7 +257,7 @@ public static class PhonewordTranslator
 
 ## Dial the phone number
 
-1. In the **MainPage.xaml.cs** code-behind file, edit the **OnCall** method and replace the **TODO** comment with the `try/catch` blocks:
+1. In the **MainPage.xaml.cs** code-behind file, edit the **OnCall** method and replace the **TODO** comment with the following `try/catch` blocks:
 
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
