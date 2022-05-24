@@ -1,6 +1,6 @@
 In this exercise, you will integrate your web API application running on [Azure App Service][az appsvc] with [Azure API Management][az apim] through Visual Studio.
 
-> [!NOTE]
+> [!NOTE] 
 > In the previous exercise, you already have the ASP.NET Core Web API app with the OpenAPI feature enabled. You will use the app for this exercise.
 
 
