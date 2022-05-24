@@ -68,7 +68,7 @@ stages:
         deploy:
           steps:
             - checkout: self
-            - task: AzureCLI@2
+            - task: AzureResourceManagerTemplateDeployment@3
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
