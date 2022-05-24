@@ -28,6 +28,9 @@ roles:
 - developer
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
+- classification-analysis
 units:
 - learn.wwl.custom-text-classification.introduction
 - learn.wwl.custom-text-classification.understand-types-of-classification-projects
