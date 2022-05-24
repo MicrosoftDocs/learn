@@ -8,7 +8,9 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
 title: What are the architecture, components, and characteristics of Azure Arc-enabled Kubernetes?
 durationInMinutes: 4
 content: |

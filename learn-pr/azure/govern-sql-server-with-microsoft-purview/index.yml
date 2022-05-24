@@ -7,6 +7,8 @@ metadata:
   author: stamatm
   ms.author: terrychr
   ms.topic: interactive-tutorial
+  ms.custom:
+  - event-tier1-build-2022
   ms.prod: learning-azure
 title: 'Govern Microsoft SQL Server anywhere by using Microsoft Purview'
 summary: Govern Microsoft SQL Server anywhere by using Microsoft Purview.
