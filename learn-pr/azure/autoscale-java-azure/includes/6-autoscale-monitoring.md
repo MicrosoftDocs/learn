@@ -2,7 +2,7 @@ In this unit, we'll look at autoscale monitoring concepts.
 
 ## Monitoring
 
-Similar to other Azure resources, Azure Spring cloud autoscale actions create logs.
+Similar to other Azure resources, Azure Spring Apps autoscale actions create logs.
 There are two categories of logs it can create:
 
 - Autoscale Evaluations - The autoscale engine records log entries for every single condition evaluation every time it does a check. The entry includes details on the observed values of the metrics, the rules evaluated, and if the evaluation resulted in a scale action or not.
