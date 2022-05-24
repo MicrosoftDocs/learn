@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which of these is not a layout type in .NET MAUI?"
+  - content: "Which of these isn't a layout type in .NET MAUI?"
     choices:
     - content: "DockableLayout"
       isCorrect: true
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: "Screen"
       isCorrect: false
-      explanation: "Incorrect. There is no Screen class in .NET MAUI."
+      explanation: "Incorrect. There's no Screen class in .NET MAUI."
     - content: "Page"
       isCorrect: true
       explanation: "This is the correct answer. Page is the base class of ContentPage and other types of page."
@@ -43,4 +43,4 @@ quiz:
       explanation: "Incorrect. A ContentView is a control that enables the creation of custom controls."
     - content: "Grid"
       isCorrect: false
-      explanation: "Incorrect. Grid's allow you to place control's onto a page in a 2 dimensional pattern."
+      explanation: "Incorrect. Grid's allow you to place control's onto a page in a two dimensional pattern."
