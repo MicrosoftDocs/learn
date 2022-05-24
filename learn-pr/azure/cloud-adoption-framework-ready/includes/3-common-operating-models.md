@@ -18,7 +18,7 @@ The following characteristics aid in aligning to one of the common operating mod
 
 **Standardization:** Standardizing foundational utilities like network, identity, and security can produce tangible cost savings and reduce the amount of people power that's dedicated to various efforts. How important is standardization of utilities or shared resources?
 
-**Operations priority:** In modernizing operations, it's common for an operations team to choose cloud-first services as the primary form of operations support. Alternatively, when existing on-premises tooling is the primary operations tooling that the team wants, the cloud can be an extension or a secondary operating model. Looking forward, do you prefer a cloud-first view of operations and supporting tools? Will you be carrying forward existing tools to extend into the cloud? Are you looking for a unified operations approach that can seamlessly blend public and private cloud operations?
+**Operations priority:** In modernizing operations, it's common for an operations team to choose cloud-first services as the primary form of operations support. Alternatively, when existing on-premises tooling is the primary operations tooling that the team wants, the cloud can be an extension or a secondary operating model. Looking forward, do you prefer a cloud-first view of operations and supporting tools? Will you carry forward existing tools to extend into the cloud? Are you looking for a unified operations approach that can seamlessly blend public and private cloud operations?
 
 **Platform development velocity:** Workloads require their own assets, which create the direct workload environment. Beyond those directly supporting assets, there are various degrees of upfront investment. How much effort do you want to invest in foundational utilities that will be shared across workloads (such as network and identity)? How much upfront effort should go into a centralized cloud foundation that will share those utilities across multiple landing zones?
 
@@ -106,7 +106,7 @@ Companies commonly take this approach when they grow through rapid acquisition, 
 
 **Accountability (separation of duties):** Accountability will vary among business units. Separation of duties from a central perspective is hard to achieve.
 
-**Standardization:** The first step toward standardization in a distributed operations model is to gain a clear view of the digital estate for the full portfolio. A data-driven approach will start to identify commonalities in the portfolio that lean toward a central or enterprise operations model.
+**Standardization:** The first step toward standardization in a distributed operations model is to gain a clear view of the digital estate for the full portfolio. A data-driven approach will start to identify commonalities in the portfolio that lean toward a centralized or enterprise operations model.
 
 **Operations priority:** Operations priority in this model is around data. Centralizing data by using tools designed for unified operations will allow a CCoE team to coach and mentor the various business units during transitions or maturity efforts. Before you force a consistent operations priority, evaluate the portfolio of workload operations to ensure proper tooling and baselines.
 

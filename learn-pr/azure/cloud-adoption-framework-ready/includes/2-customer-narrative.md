@@ -10,7 +10,7 @@ Historically, Tailwind Traders has operated purely from the perspective of centr
 
 ## Alignment to Azure landing zones
 
-The affected teams have decided to use Azure landing zones as the baseline and future-state target for the environmental configuration. The operations and platform teams have agreed to the following alignment:
+The operations and platform teams have agreed to the following alignment:
 
 - The conceptual architecture of Azure landing zones will serve as the long-term vision for the future state of the cloud environment. All affected teams will use that architecture as a basis for building cloud skills and configuring their cloud environment.
 - The teams will use the Azure landing zone accelerator get started with their environmental configuration.
@@ -20,12 +20,12 @@ The affected teams have decided to use Azure landing zones as the baseline and f
 
 The following list outlines how constraints have caused Tailwind Traders to deviate from the design principles for Azure landing zones, along with the impact of each decision:
 
-- **Policy-driven governance**: Tailwind Traders hasn't historically automated its corporate policies. Because of the pressure to migrate the datacenter quickly, the company chose to minimize the amount of governance—including in its initial landing zone deployment. 
+- **Policy-driven governance**: Tailwind Traders hasn't historically automated its corporate policies. Because of the pressure to migrate the datacenter quickly, the company chose to minimize the amount of governance—including in its initial deployment of a landing zone. 
 
   The company has also committed to completing the [Learn module about the Govern methodology of the Cloud Adoption Framework](\azure\cloud-adoption-framework-govern) after it configures the initial environment. Limitations in IT staff dedicated to the cloud migration are a big driver for this deviation. This deviation is further enforced by business and IT resistance to full cloud governance or "Azure Ops."
-- **Subscription democratization**: The central operations team will maintain accountability for production operations for all workloads. The team will seldom allow a workload team to have access to a production environment, so it isn't following the design principle of subscription democratization. 
+- **Subscription democratization**: The central operations team will maintain accountability for production operations for all workloads. That team will seldom allow a workload team to have access to a production environment, so it isn't following the design principle of subscription democratization. 
 
-  If a workload team requires a deviation, the central operations team will consider a dedicated landing zone for individual workloads on a case-by-case basis. Otherwise, Tailwind Traders is firmly committed to maintaining central operations and would have limited instances of workloads in isolated production environments (or application landing zones).
+  If a workload team requires a deviation, the central operations team will consider a dedicated landing zone for individual workloads on a case-by-case basis. Otherwise, Tailwind Traders is firmly committed to maintaining central operations and will have limited instances of workloads in isolated production environments (or application landing zones).
 - **Application-centric service model**: Outage-related processes might consider workloads, especially for assets that support mission-critical workloads. However, aside from outages, the central operations team doesn't differentiate between workloads and applications for operations management processes. The team's primary processes operate, manage, make changes, and optimize all resources the same way, regardless of the workload boundaries or architecture. Given the time constraints for this migration, it's not feasible for Tailwind Traders to define app boundaries and establish an app-centric service model.
 
 Many of the terms in the preceding list will be explained in later units of this Learn module. Several of them are reflected in notes to create teaching opportunities.
@@ -36,7 +36,7 @@ These deviations will also require the Tailwind Traders teams to complete Learn 
 
 ## Additional constraints
 
-The remainder of this customer narrative describes additional constraints that might affect Tailwind's decisions.
+The following additional constraints might affect Tailwind's decisions.
 
 ### Operations
 
@@ -64,7 +64,7 @@ Although the company has grudgingly accepted this SLA, the new CIO is not impres
 
 ### Retail innovation
 
-The customer narrative from the getting-started module introduced you to the retail innovation team within Tailwind Traders. That team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, prioritizing experimentation and innovation.
+The customer narrative from the getting-started module introduced you to the retail innovation team within Tailwind Traders. That team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, by prioritizing experimentation and innovation.
 
 The current processes for operations management require that all new innovations from that team go through a release process. The central operations team within IT reviews the architecture for security, governance, and operations management concerns. After the team is comfortable with the solution, it releases the solution into a centrally managed production environment. This process is expected to continue in the cloud.
 
@@ -86,4 +86,4 @@ Segmentation of resources between each datacenter treated each collection of wor
 
 Beyond that basic organization, there are inconsistencies in the configuration management database, so it's hard to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well defined for mission-critical workloads, but they're missing for most other workloads.
 
-For less critical workloads, it's common for the identified owner to be a former employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, more than 30 percent of the supported assets are not clearly mapped to a single workload. You'll require practice during migration to ensure dependency analysis and proper resource organization.
+For less critical workloads, it's common for the identified owner to be a former employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, more than 30 percent of the supported assets are not clearly mapped to a single workload. The company will require practice during migration to ensure dependency analysis and proper resource organization.

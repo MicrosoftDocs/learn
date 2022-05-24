@@ -13264,6 +13264,16 @@
       "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/9-optical-character-recognition-test-tool.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/work-form-recognizer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/learn-continuous-integration-github-actions/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/learn-continuous-integration-github-actions/11-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/learn-continuous-integration-github-actions/11-summary.md)",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/learn-continuous-integration-github-actions/12-summary",
+      "redirect_document_id": true
     }
   ]
 }

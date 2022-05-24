@@ -5,8 +5,8 @@ metadata:
   title: Built-in Help
   description: Learn tips for getting help when you have the NumPy library installed.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

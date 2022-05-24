@@ -1,6 +1,6 @@
-The conceptual architecture for Azure landing zones is universally applied to any Azure landing zone process or implementation. At the foundation of the architecture is a set of core design principles that serve as a compass for subsequent design decisions across critical technical domains.
+The conceptual architecture for Azure landing zones is universally applied to any process or implementation of landing zones. At the foundation of the architecture is a set of core design principles that serve as a compass for subsequent design decisions across critical technical domains.
 
-The principles help you strive for an optimum design of the target architecture. If you choose to deploy an implementation that's an Azure landing zone accelerator or any version of the enterprise-scale landing zone code base, build on the architecture by applying the design principles described here.
+The principles help you strive for an optimum design of the target architecture. If you choose to deploy an Azure landing zone accelerator or any version of the enterprise-scale landing zone code base, build on the architecture by applying the design principles described here.
 
 Using these principles as part of your implementation will serve as a useful guide for realizing the benefits of cloud technologies. This cloud-oriented perspective, often called *cloud native*, represents ways of working and technical options for your organization that legacy technology approaches typically don't offer.
 
@@ -8,7 +8,7 @@ Using these principles as part of your implementation will serve as a useful gui
 
 There might be valid reasons to deviate from the principles, such as in the case of Tailwind Traders. Organizational requirements might dictate specific outcomes or approaches in designing an Azure environment. In these cases, it's important to understand the impact that the deviation will have on the design and future operations. Carefully consider the tradeoffs outlined for each principle.
 
-As a general rule, be prepared to balance requirements and functionality. Your journey to the conceptual architecture will evolve over time as requirements change and you learn from your implementation. For example, utilizing preview services and taking dependencies on service roadmaps can remove technical blockers during adoption.
+As a general rule, be prepared to balance requirements and functionality. Your journey to the conceptual architecture will evolve over time as requirements change and you learn from your implementation. For example, using preview services and taking dependencies on service roadmaps can remove technical blockers during adoption.
 
 ## Subscription democratization
 
@@ -55,8 +55,7 @@ Regardless of the service model, strive to provide a secure environment for all 
 
 ### Impact of deviation
 
-- Segmenting workloads in a way that differs from the [implementation options](/azure/cloud-adoption-framework/ready/landing-zone/implementation-options) for management group hierarchy can create a complex policy and access control structure to govern your environment. Examples include deviation from the organizational hierarchy structure or grouping by Azure service.
-- This tradeoff introduces the risk of unintentional policy duplication and exceptions, which add to operational and management overhead.
+Segmenting workloads in a way that differs from the [implementation options](/azure/cloud-adoption-framework/ready/landing-zone/implementation-options) for management group hierarchy can create a complex policy and access control structure to govern your environment. Examples include deviation from the organizational hierarchy structure or grouping by Azure service. This tradeoff introduces the risk of unintentional policy duplication and exceptions, which add to operational and management overhead.
 
 Another common approach that customers consider is the use of landing zones for dev/test/production workloads. For more information, see the FAQ question [How do we handle "dev/test/production" workload landing zones in enterprise-scale architecture?](/azure/cloud-adoption-framework/ready/enterprise-scale/faq#how-do-we-handle-devtestproduction-workload-landing-zones-in-enterprise-scale-architecture).
 

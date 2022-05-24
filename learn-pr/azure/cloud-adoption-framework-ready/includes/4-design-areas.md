@@ -1,7 +1,3 @@
-Adopting cloud technologies is a journey. Business priorities and the need to bring new technologies online to unlock capabilities or features influence the speed at which an organization deploys and scales out a cloud environment.
-
-Over time, the organization iterates and matures the deployed technologies, processes, and skills needed to progress toward that destination. The time for the journey depends on the size of the organization, the current technical footprint, and the maturity of skills within technical teams.
-
 Before you deploy an Azure landing zone, it's important to understand what you'll need from your cloud environment to support your chosen operating model. 
 
 ## Design areas

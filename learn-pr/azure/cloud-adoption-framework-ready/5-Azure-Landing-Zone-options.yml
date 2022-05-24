@@ -18,23 +18,23 @@ quiz:
   questions:
   - content: Which implementation option should Tailwind Traders use to start its deployment of an Azure landing zone?
     choices:
-    - content: CAF Azure landing zone accelerator
+    - content: Azure landing zone accelerator
       isCorrect: true
       explanation: Correct!
-    - content: CAF Bicep
+    - content: Bicep
       isCorrect: false
       explanation: For this customer, the learning curve and complexity of an enterprise-scale approach might be too steep.
-    - content: CAF Terraform modules
+    - content: Terraform modules
       isCorrect: false
       explanation: There's no indication of existing Terraform dependencies in this customer narrative.
   - content: If all of the indicators in the prior question were observed, which would be a better starting point for Tailwind Traders?
     choices:
-    - content: CAF Azure landing zone accelerator
+    - content: Azure landing zone accelerator
       isCorrect: false
       explanation: Eventually, you could expand a start-small approach to meet all of those needs. An enterprise-scale approach would reduce risk and effort.
-    - content: CAF Bicep
+    - content: Bicep
       isCorrect: true
       explanation: Correct!
-    - content: CAF Terraform modules
+    - content: Terraform modules
       isCorrect: false
       explanation: There's no indication of existing Terraform dependencies in this customer narrative. 

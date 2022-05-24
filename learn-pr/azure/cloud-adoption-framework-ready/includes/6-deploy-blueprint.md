@@ -30,16 +30,16 @@ The article [Create an additional Azure subscription](/azure/cost-management-bil
       > [!NOTE]
       > The choice of dedicated subscriptions for all platform resources will centralize any tools needed to manage the environment. As Tailwind Traders adds security, operations, and governance, it will use the dedicated subscription and management group structure that this dedication option has created. Choosing the option for a single subscription could require significant rework later in the adoption process.
 
-1. On the **Platform management, security, and governance** tab, choose whether to deploy a Log Analytics workspace and enable monitoring. 
+1. On the **Platform management, security, and governance** tab, you choose whether to deploy a Log Analytics workspace and enable monitoring. Select **No**.
 
-   Tailwind Traders selects **No**, because it will enhance its landing zone later to address security, management, and governance needs.
-1. On the **Platform DevOps and automation** tab, select options that apply to your organization. 
+   Tailwind Traders makes this choice because it will enhance its landing zone later to address security, management, and governance needs.
+1. On the **Platform DevOps and automation** tab, you would normally select options that apply to your organization. 
 
    Because Tailwind Traders chose not to add any of the Log Analytics features, it can't add any of the DevOps and automation features. As such, there's nothing to choose here.
 1. On the **Network topology and connectivity** tab:
    1. Select the **Hub and spoke with Azure Firewall** option. This will create a dedicated subscription for connectivity. 
    
-      Tailwind Traders selects this option. After the accelerator is deployed, the company's Multiprotocol Label Switching (MPLS) solution will connect to an Azure ExpressRoute instance deployed into that subscription. This setup will allow any application landing zone to connect over MPLS, but route traffic through Azure Firewall first.
+      Tailwind Traders selects this option. After the accelerator is deployed, the company's MPLS solution will connect to an Azure ExpressRoute instance deployed into that subscription. This setup will allow any application landing zone to connect over MPLS, but route traffic through Azure Firewall first.
    1. After you choose the option for hub and spoke with Azure Firewall, more options appear so you can configure the connectivity subscription:
       1. For **Subscription**, choose your connectivity subscription.
       1. For **Address space**, enter an address space for any IPs in your networking hub.
