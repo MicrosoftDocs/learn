@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Install the Truffle for VS Code extension
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-blockchain-dev-kit.md)]
+  [!include[](includes/4-truffle-vs-code.md)]
