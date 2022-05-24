@@ -5,8 +5,8 @@ metadata:
   description: An introduction to the world of machine learning that shows you how to take a real-life problem that NASA faces and apply machine learning to solve it.
   brand: vs-code
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Predict rocket launch delays with machine learning

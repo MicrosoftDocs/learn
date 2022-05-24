@@ -1,0 +1,8 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.authenticate-apps-with-managed-identities.badge
+metadata:
+  title: >-
+    Microsoft Badge: Authenticate apps to Azure services by using service
+    principals and managed identities for Azure resources was issued by
+    Microsoft
+socialImageUrl: /learn/achievements/authenticate-apps-with-managed-identities-social.png

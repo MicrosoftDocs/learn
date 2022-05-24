@@ -3,7 +3,7 @@ uid: learn.wwl.structure-your-git-repo
 metadata:
   title: Structure your Git Repo
   description: "Structure your Git Repo"
-  ms.date: 02/25/2022
+  ms.date: 05/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -39,9 +39,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- devops
-- development-tools
 units:
 - learn.wwl.structure-your-git-repo.introduction
 - learn.wwl.structure-your-git-repo.explore-monorepo-versus-multiple-repos
