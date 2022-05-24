@@ -40,9 +40,9 @@ quiz:
     - content: "Folders for contracts, migrations, and tests."
       isCorrect: false
       explanation: "Incorrect. All of these folders are in fact generated, but there are also files within each of the folders created."
-    - content: "A Sample contract, migration, a test, and a Truffle config file."
+    - content: "A sample contract, migration, a test, and a Truffle config file."
       isCorrect: true
-      explanation: "Correct. A new project generates a HelloBlockchain contract, a migrations, a test, and a Truffle config file. You can build on these examples to create your own smart contract projects."
+      explanation: "Correct. A new project generates a HelloBlockchain contract, a migration, a test, and a Truffle config file. You can build on these examples to create your own smart contract projects."
 
   - content: "What is Truffle?"
     choices:
