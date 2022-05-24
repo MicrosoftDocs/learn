@@ -1,6 +1,6 @@
 **Estimated time:** 60 minutes.
 
-**Lab files:** none.<br>
+**Lab files:** none.
 
 ## Scenario
 
@@ -30,5 +30,5 @@ During this lab, you'll complete the following exercises:
  -  Exercise 1: Manage an Agile project.
  -  Exercise 2 (optional): Define dashboards.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Button to launch exercise.":::
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Image of a button to launch exercise.":::
 ](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M01_Agile_Planning_and_Portfolio_Management_with_Azure_Boards.html)

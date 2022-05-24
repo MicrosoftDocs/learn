@@ -4,14 +4,14 @@ You have multiple features and configurations to support your teams, such as cal
 
 The Kanban board is one of several tools that allows you to add, update, and filter user stories, bugs, features, and epics.
 
-:::image type="content" source="../media/azure-boards-board-view-78b3f04e.png" alt-text="Kanban boards with work items.":::
+:::image type="content" source="../media/azure-boards-board-view-78b3f04e.png" alt-text="Screenshot of Kanban boards with work items.":::
 
 
 You can track your work using the default work item types such as user stories, bugs, features, and epics. It's possible to customize these types or create your own. Each work item provides a standard set of system fields and controls, including Discussion for adding and tracking comments, History, Links, and Attachments.
 
 If you need to create reports or a list of work with specific filters, you can use the queries hub to generate custom lists of work items.
 
-Queries support the following tasks:<br>
+Queries support the following tasks:
 
  -  Find groups of work items with something in common.
  -  Triage work to assign to a team member or sprint and set priorities.
@@ -23,7 +23,7 @@ Queries support the following tasks:<br>
 
 It's possible to create another view with deliverables and track dependencies across several teams in a calendar view using Delivery Plans.
 
-:::image type="content" source="../media/azure-boards-delivery-plan-11462b8e.png" alt-text="Azure Delivery Plan.":::
+:::image type="content" source="../media/azure-boards-delivery-plan-11462b8e.png" alt-text="Screenshot of Azure Delivery Plan feature.":::
 
 
 Delivery plans are fully interactive, supporting the following tasks:
@@ -39,4 +39,4 @@ For more information about Azure Boards, see:
 
  -  [Azure Boards documentation \| Microsoft Docs](/azure/devops/boards).
  -  [Reasons to start using Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/why-use-azure-boards).
- -  [GitHub &amp; Azure Boards](/azure/devops/boards/github).
+ -  [GitHub and Azure Boards](/azure/devops/boards/github).

@@ -1,21 +1,21 @@
 ## Use GitHub, track work in Azure Boards
 
-Use Azure Boards to plan and track your work, and GitHub as source control for software development.
+Use Azure Boards to plan and track your work and GitHub as source control for software development.
 
 Connect Azure Boards with GitHub repositories, enabling linking GitHub commits, pull requests, and issues to work items in Boards.
 
-:::image type="content" source="../media/board-view-github-links-1914d559.png" alt-text="GitHub and Azure Boards integration.":::
+:::image type="content" source="../media/board-view-github-links-1914d559.png" alt-text="Screenshot of GitHub and Azure Boards integration.":::
 
 
 ## Azure Boards App
 
 The integration is created using the Azure Boards App, acting as a bridge between Azure Boards and GitHub.
 
-You must be an administrator or owner of the GitHub repository or the GitHub organization to install the app.
+To install the app, you must be an administrator or owner of the GitHub repository or the GitHub organization.
 
 The app is installed from the GitHub Marketplace. [Azure Boards App](https://github.com/marketplace/azure-boards)
 
-:::image type="content" source="../media/azure-boards-app-b8c1f43c.png" alt-text="Azure Boards App.":::
+:::image type="content" source="../media/azure-boards-app-b8c1f43c.png" alt-text="Screenshot of Azure Boards App integration.":::
 
 
 ## Authenticating to GitHub
@@ -37,10 +37,12 @@ Azure Boards-GitHub integration supports the following connections:
 
  -  From GitHub:
     
+    
      -  Support integration for all repositories for a GitHub account or organization or select repositories.
      -  Add or remove GitHub repositories participating in the integration and configure the project they connect to.
      -  Suspend Azure Boards-GitHub integration or uninstall the app.
  -  From Azure Boards:
+    
     
      -  Connect one or more GitHub repositories to an Azure Boards project.
      -  Add or remove GitHub repositories from a GitHub connection within an Azure Boards project.
@@ -50,7 +52,7 @@ Azure Boards-GitHub integration supports the following connections:
 Azure Boards-GitHub integration supports the following operational tasks:
 
  -  Create links between work items and GitHub commits, pull requests, and issues based on GitHub mentions.
- -  Support state transition of work items to a "Done" or "Completed" state when using GitHub mention by using fix, fixes, or fixed.
+ -  Support state transition of work items to a Done or Completed state when using GitHub mention by using fix, fixes, or fixed.
  -  Support full traceability by posting a discussion comment to GitHub when linking from a work item to a GitHub commit, pull request, or issue.
  -  Show linked to GitHub code artifacts within the work item Development section.
  -  Show linked to GitHub artifacts as annotations on Kanban board cards.
@@ -58,10 +60,10 @@ Azure Boards-GitHub integration supports the following operational tasks:
 
 The following tasks aren't supported at this time:
 
- -  Query for work items with links to GitHub artifacts. However, you can query for work items with an External Link Count &gt; 0.
+ -  Query for work items with links to GitHub artifacts. However, you can query for work items with an External Link Count greater than 0.
 
 > [!NOTE]
-> Reference: [Azure Boards-GitHub integration - Azure Boards \| Microsoft Docs](/azure/devops/boards/github).
+> Reference: [Azure Boards-GitHub integration](/azure/devops/boards/github).
 
 For more information, see:
 

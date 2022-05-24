@@ -4,7 +4,7 @@ During the application or project lifecycle, it's crucial to plan and prioritize
 
 Project boards are made up of issues, pull requests, and notes categorized as cards that you can drag and drop into your chosen columns. The cards contain relevant metadata for issues and pull requests, like labels, assignees, the status, and who opened it.
 
-:::image type="content" source="../media/github-project-boards-board-80633bf7.png" alt-text="GitHub project boards.":::
+:::image type="content" source="../media/github-project-boards-board-80633bf7.png" alt-text="Screenshot of GitHub project boards feature.":::
 
 
 There are different types of project boards:
@@ -46,7 +46,7 @@ It's possible to use templates to set up a new project board that will include c
     Automated kanban with review
   :::column-end:::
   :::column:::
-    Cards automatically move between: To do, In progress, and Done columns, with extra triggers for pull request review status.
+    Cards automatically moves between: To do, In progress, and Done columns, with extra triggers for pull request review status.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -55,8 +55,6 @@ It's possible to use templates to set up a new project board that will include c
   :::column-end:::
   :::column:::
     Triage and prioritize bugs with: To do, High priority, Low priority, and Closed columns.
-
-
   :::column-end:::
 :::row-end:::
 
@@ -80,7 +78,7 @@ A project is a customizable spreadsheet that you can configure the layout by fil
 
 You can use different views such as Board or spreadsheet/table.
 
-:::image type="content" source="../media/github-projects-beta-f72f1d6a.png" alt-text="GitHub project beta.":::
+:::image type="content" source="../media/github-projects-beta-f72f1d6a.png" alt-text="Screenshot of GitHub project beta feature.":::
 
 
 If you make changes in your pull request or issue, your project reflects that change.
