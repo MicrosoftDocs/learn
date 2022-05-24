@@ -14,7 +14,7 @@ The Tailwind Traders team from the customer narrative will use the Azure landing
 
 ## Customized implementation options
 
-Alongside the Azure landing zone accelerator, the following reference implementations address specific tooling requirements, if the organization needs them:
+Although the accelerator is the suggested starting point for all customers, it does assume full alignment with the conceptual architecture, adherence to the design principles, and tooling for cloud-native operations. For customers who need to customize their experience with Azure landing zones, the following implementation options might be a better fit:
 
 - *Azure landing zone Terraform modules* are a third-party path for multicloud operating models. This path can limit Azure-first operating models. Review the [design principles](/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone#design-decisions?azure-portal=true) or [deploy](/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone#customize-and-deploy-your-first-landing-zone?azure-portal=true) this solution to your Azure environment.
 
