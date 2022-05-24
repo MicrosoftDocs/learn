@@ -13249,9 +13249,7 @@
       "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
-    },
-    
-    
+    },      
     {
       "source_path": "learn-pr/azure/aks-workshop/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
