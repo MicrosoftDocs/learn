@@ -12,7 +12,7 @@ GitHub Packages can host:
  -  NuGet.
  -  GitHub's Container registry is optimized for containers and supports Docker and OCI images.
 
-:::image type="content" source="../media/github-packages-diagram-7c79c6c6.png" alt-text="GitHub Packages registries, and support.":::
+:::image type="content" source="../media/github-packages-diagram-7c79c6c6.png" alt-text="Screenshot of GitHub Packages registries, and support.":::
 
 
 GitHub Packages give you the flexibility to control permissions and visibility for your packages. You can publish packages in a public or private repository. The permission can be inherited from the repository where the package is hosted or defined for specific user or organization accounts for packages in the container registry.

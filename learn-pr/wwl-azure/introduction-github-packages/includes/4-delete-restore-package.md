@@ -1,4 +1,4 @@
-You can delete it on GitHub if you have the required access:<br>
+You can delete it on GitHub if you have the required access:
 
  -  An entire private package.
  -  If there aren't more than 5000 downloads of any version of the package, an entire public package.
@@ -46,9 +46,9 @@ To delete an entire repository-scoped package, you must have admin permissions t
 1.  On GitHub.com, navigate to the main page of the repository.
 2.  To the right of the list of files, click Packages.
 3.  Search for and select your package.
-4.  In the top right of your package's landing page, click Package settings.<br>
+4.  In the top right of your package's landing page, click Package settings.
 5.  Under "Danger Zone," click Delete this package.
-6.  Review the confirmation message, enter your package name, click I understand, and delete this package.<br>
+6.  Review the confirmation message, enter your package name, click I understand, and delete this package.
 
 ## Restoring a package version
 

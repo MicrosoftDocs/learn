@@ -8,7 +8,7 @@ For more information about permissions, see "[About permissions for GitHub Packa
 
 If you have admin permissions to a container image, you can set the access permissions for the container image to private or public.
 
-As an admin, you can also grant access permissions for a container image separate from your set permissions at the organization and repository levels.<br>
+As an admin, you can also grant access permissions for a container image separate from your set permissions at the organization and repository levels.
 
 You can give any person an access role for container images published and owned by a personal account.
 
@@ -27,8 +27,7 @@ For container images published and owned by an organization, you can provide any
     read
   :::column-end:::
   :::column:::
-    Can download the package.
-Can read package metadata.
+    Can download the package. Can read package metadata.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -36,8 +35,7 @@ Can read package metadata.
     write
   :::column-end:::
   :::column:::
-    Can upload and download this package.
-Can read and write package metadata.
+    Can upload and download this package. Can read and write package metadata.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -45,9 +43,7 @@ Can read and write package metadata.
     admin
   :::column-end:::
   :::column:::
-    Can upload, download, delete, and manage this package.
-Can read and write package metadata.
-Can grant package permissions.
+    Can upload, download, delete, and manage this package. Can read and write package metadata. Can grant package permissions.
   :::column-end:::
 :::row-end:::
 

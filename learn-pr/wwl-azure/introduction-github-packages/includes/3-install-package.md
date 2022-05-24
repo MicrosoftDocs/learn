@@ -15,18 +15,18 @@ To use NuGet packages from GitHub Packages, you must add dependencies to your *.
 
 If you're using Visual Studio, expand your Solution -&gt; Project -&gt; Right-click on Dependencies -&gt; Manage NuGet Packages...
 
-:::image type="content" source="../media/visual-studio-manage-nuget-packages-a3289d20.png" alt-text="Visual Studio option for manage NuGet packages.":::
+:::image type="content" source="../media/visual-studio-manage-nuget-packages-a3289d20.png" alt-text="Screenshot of Visual Studio option for manage NuGet packages.":::
 
 
 You can browse, install and update dependencies from multiple registries. For more information, see [Create and remove project dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies).
 
-:::image type="content" source="../media/visual-studio-manage-nuget-packages-browse-3c2e2b84.png" alt-text="Manage NuGet packages, install and update from Visual Studio.":::
+:::image type="content" source="../media/visual-studio-manage-nuget-packages-browse-3c2e2b84.png" alt-text="Screenshot of how to manage NuGet packages, install and update from Visual Studio.":::
 
 
 Or, you can update your *.csproj* file directly.
 
 1.  Authenticate to GitHub Packages.
-2.  Add ***ItemGroup*** and configure the ***PackageReference*** field in the *.csproj* project file.<br><br>
+2.  Add ***ItemGroup*** and configure the ***PackageReference*** field in the *.csproj* project file.
     
     ```
     <Project Sdk="Microsoft.NET.Sdk">
@@ -58,7 +58,7 @@ You need to add the *.npmrc* file to your project to install packages from GitHu
 
 1.  Authenticate to GitHub Packages.
 2.  In the same directory as your package.json file, create or edit a .npmrc file.
-3.  Include a line specifying GitHub Packages URL and the account owner.<br>
+3.  Include a line specifying GitHub Packages URL and the account owner.
     
     @OWNER:registry=https://npm.pkg.github.com
     
@@ -82,7 +82,7 @@ You need to add the *.npmrc* file to your project to install packages from GitHu
 ```
 
 6.  Install the package.
-7.  (Optional) If you need to install packages from other organizations, you can add extra lines to your *.npmrc* file.<br>
+7.  (Optional) If you need to install packages from other organizations, you can add extra lines to your *.npmrc* file.
 
 For more information, see:
 

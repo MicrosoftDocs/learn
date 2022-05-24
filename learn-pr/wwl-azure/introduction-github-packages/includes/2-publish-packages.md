@@ -77,7 +77,6 @@ GitHub Packages use native package tooling commands to publish and install packa
   :::column-end:::
   :::column:::
     Docker
-
   :::column-end:::
 :::row-end:::
 
@@ -127,7 +126,7 @@ Create a *nuget.config* file in your project directory and specify GitHub Packag
 You can publish a package authenticating with a *nuget.config* file, or using the --api-key command-line option with your GitHub PAT.
 
 ```dotnet CLI
-dotnet nuget push "bin/Release/OctocatApp.1.0.0.nupkg"  --api-key YOUR_GITHUB_PAT --source "github"
+dotnet nuget push "bin/Release/OctocatApp.1.0.0.nupkg" --api-key YOUR_GITHUB_PAT --source "github"
 ```
 
 ### npm registry
