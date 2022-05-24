@@ -10,16 +10,16 @@ Now that you've understood the important Node.js concepts that you need to creat
 
 1. Create more folders and files to achieve the following directory structure:
 
-```text
-    auth-app/
-    ├── index.js
-    └── package.json
-    └── .env
-    └── views/
-        └── layouts/
-            └── main.hbs
-        └── signin.hbs
-```
+    ```text
+        auth-app/
+        ├── index.js
+        └── package.json
+        └── .env
+        └── views/
+            └── layouts/
+                └── main.hbs
+            └── signin.hbs
+    ```
 
 The `views` folder will hold Handlebars files for the app's UI elements.
 
