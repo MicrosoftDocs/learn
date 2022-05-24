@@ -34,7 +34,7 @@ npm install express-handlebars
 npm install express-session
 ```
 
-Apart from  `express` and `express-handlebars` that we explained earlier, the commands install 2 additional packages:
+Apart from  `express` and `express-handlebars` that we explained earlier, the commands install two other packages:
 
 * `dotenv`- loads environment variables from a `.env` file into `process.env`, so that you keep app configurations in an environment separate from code.
 
@@ -108,7 +108,7 @@ Use the following steps to build the web app's UI:
 
 ## Add environment variables
 
-To keep app configurations, which changes from one environment to another, we separate them from the application source code, so we put it in a separate file.  
+To keep app configurations, which can change from one environment to another, we separate them from the application's source code, so we put it in a separate file.  
 
 In VS Code, open the `.env` file, add the following code:
 
@@ -189,7 +189,7 @@ In the `index.js` file, we've added the following code components:
 
 * Configure HandleBars templating engine. HandleBars files will use `.hbs` extension.
 
-* Add the `/` express route, which is the entry point to the application. It send the `signin.hbs` file and `showSignInButton` boolean variable to the view. The rest of the express routes will implemented later when we add authentication to the web app.
+* Add the `/` express route, which is the entry point to the application. It sends the `signin.hbs` file and `showSignInButton` boolean variable to the view. The rest of the express routes will be implemented later when we add authentication to the web app.
 
 * Start the express server to listen on the port number specified in the `.env` file.
 

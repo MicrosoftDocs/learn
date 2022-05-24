@@ -1,7 +1,7 @@
 
 You can build a web application using various languages such Node, .NET, PHP, Java and Python, but in the eCommerce organization scenario, you're launching a new Node web application. 
 
-Here, you'll learn Node.js concepts that'll enable you to build the Node.js web application.
+Here, you'll learn Node.js concepts that will enable you to build the Node.js web application.
 
 ## What is Node.js?
 
@@ -34,7 +34,7 @@ You can edit the file to change the **name** of your app or add a better **descr
 
 Node.js comes with many core libraries to use in building your application. However, there's a huge ecosystem of third-party libraries. You use npm, a package manager, to easily install and use the libraries in your application.
 
-To install a library you run `npm install <name of package>` command, where `<name of package>` is the name of your package. For example, to install ExpressJS, you run `npm install express`. After you install the package, it's listed in the **dependencies** section of your package.json file. Here's an example:
+To install a library, you run `npm install <name of package>` command, where `<name of package>` is the name of your package. For example, to install ExpressJS, you run `npm install express`. After you install the package, it's listed in the **dependencies** section of your package.json file. Here's an example:
 
 ```json
 {
@@ -96,7 +96,7 @@ Where:
 
 Handlebars is a templating engine. You use it to build your app's UI components. A templating engine takes a static HTML file, fills it with the data on the server side, and then sends it as an ordinary HTML file to the client such as a browser. To use handlebars in express, you need to store HTML code into a `.hbs` extension in the `views` folder in the source directory as HandleBars looks for the files in the views folder.
 
-To start using Handlebars for express, you need to install the handlebars package. You do this by running `npm install express-handlebars` in your terminal.  
+To start using Handlebars for express, you need to install the handlebars package. In your terminal, run `npm install express-handlebars` command to install Handlebars fo express.  
 
 Handlebars uses `{{some content here}}`expressions to add data into the HTML. To insert a control structure, you proceed `#` to the name of the control structure or helper and it requires a matching closing `/` of the same name. Here's an example:
 
@@ -114,7 +114,7 @@ However, if you want to insert HTML and make it remain intact, use the `{{{}}}` 
 
 1. Inside the `layouts` subfolder, create a file called `main.hbs`. The `main.hbs` file is your default layout and it contains any HTML code that's required throughout your application.
 
-1. Add your HTML code into the `main.hbs` file and include the `{{{body}}}` token where HTML for UI that changes from one view to another. *Body* is a reserved word for handlebars. If you've an HandleBars file inside `view` folder, such as `signin.hbs` and you want to view it as shown below, HandleBars searches for `{{{body}}}` within `main.hbs` and replaces it with content of `signin.hbs`.
+1. Add your HTML code into the `main.hbs` file and include the `{{{body}}}` token where HTML for UI that changes from one view to another. *Body* is a reserved word for handlebars. If you've a HandleBars file inside `view` folder, such as `signin.hbs` and you want to view it as shown below, HandleBars searches for `{{{body}}}` within `main.hbs` and replaces it with content of `signin.hbs`.
 
 ```javascript
     app.get('/', (req, res) => {
@@ -124,7 +124,7 @@ However, if you want to insert HTML and make it remain intact, use the `{{{}}}` 
 
 ## Run a Node express application
 
-To run a express application, you use the `node` command from the terminal window or Visual Studio Code terminal. For example, to run a file named `index.js`, run `node index.js`.
+To run an express application, you use the `node` command from the terminal window or Visual Studio Code terminal. For example, to run a file named `index.js`, run `node index.js`.
 
 When you run your express application, you want the express server to listen to incoming http requests. For example, if you want your express server to listen on port `3000`, you need to add the following line to your JavaScript file:
 
