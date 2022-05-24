@@ -133,24 +133,24 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 1. Update the *Validate* stage's *RunPreflightValidation* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" ::: <!-- TODO -->
-
-   > [!IMPORTANT]
-   > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
+   :::code language="yaml" source="code/7-deploy.yml" range="19-33" highlight="14-15" :::
 
 1. Update the *Preview* stage's *RunWhatIf* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" range="51-59" highlight="7-9" :::
+
+   > [!IMPORTANT]
+   > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same Azure CLI command.
 
 ## Add parameter values to the Deploy stage
 
 1. Update the *Deploy* stage's *DeployBicepFile* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="82-92" highlight="9-11" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" range="77-92" highlight="14-15" :::
 
 1. Create pipeline variables that contain the values of the Bicep outputs you recently added for the storage account and Azure SQL resources:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="93-104" highlight="3-6, 9-12" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" range="94-104" highlight="4-7" :::
 
 ## Add database deployment steps
 
@@ -158,17 +158,17 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy the DACPAC file:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="117-129" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
 
 1. Below the step you just added, define a step to seed the database with sample data.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="131-143" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" range="131-143" :::
 
    Notice that this step has a condition applied to it. That is, it runs only for non-production environments.
 
 1. Below the step you just added, and still within the scope of the condition, add a step to upload some sample toy images to the blob container by using the Azure CLI:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="145-156" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" range="145-156" :::
 
 ## Verify files and commit your changes
 
@@ -180,7 +180,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Verify that your *deploy.yml* file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" highlight="29-31, 55-57, 90-93, 95-99, 100-104, 117-156" ::: <!-- TODO -->
+   :::code language="yaml" source="code/7-deploy.yml" highlight="32-33, 57-59, 90-91, 97-100, 117-156" :::
 
    If it doesn't, update it to match the file contents.
 
