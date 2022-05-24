@@ -41,7 +41,7 @@ Many tools can help you effectively develop smart contracts. The following secti
 
 ### Extensions
 
-- [**Blockchain Development Kit for Ethereum**](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain&azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. In this module, we'll use the Blockchain Development Kit to write and test smart contracts.
+- [**Truffle for VS Code extension**](https://marketplace.visualstudio.com/items?itemName=trufflesuite-csi.truffle-vscode&azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. This extension has built-in integration with Truffle, Ganache, and more tools and services. In this module, we'll use this extension to write and test smart contracts.
 
 ### Frameworks
 

@@ -1,32 +1,28 @@
-The [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain&azure-portal=true) is an extension that's available in Visual Studio Code. Use the extension to create, build, and deploy smart contracts on Ethereum blockchain solutions.
+The [Truffle for VS Code extension](https://marketplace.visualstudio.com/items?itemName=trufflesuite-csi.truffle-vscode&azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. This extension has built-in integration with Truffle, Ganache, and more tools and services. In this module, we'll use this extension to write and test smart contracts.
 
 ## Install the extension
 
-In Visual Studio Code, on the left sidebar, select **Extensions**. Search for **Blockchain development kit**, and select it to install it.
+In Visual Studio Code, on the left sidebar, select **Extensions**. Search for **Truffle for VS Code**, and select it to install it.
 
-:::image type="content" source="../media/bdk-install.png" alt-text="Screenshot showing how to install the Blockchain development kit extension in Visual Studio Code.":::
+:::image type="content" source="../media/truffle-vs-code.png" alt-text="Screenshot showing how to install the Truffle for VS Code extension.":::
 
-Before you use the Blockchain development kit, make sure you have installed:
+Before you use the Truffle extension, make sure you have installed:
 
-- **Python**: To make sure you have Python installed, open a terminal or a Command Prompt window, and then type `python`. If Python is installed, the terminal returns the version of Python on your computer.
-  
-  > [!Note]
-  > Most computers have Python preinstalled.
-- **Node.js**: To confirm Node.js is installed, open your terminal and type `node`. If Node.js is installed, the terminal returns your computer's version of Node.js. You can also confirm that the node package manager (NPM) is installed by typing `npm` in the terminal.
+- **Node.js and NPM**: To confirm Node.js is installed, open your terminal and type `node`. If Node.js is installed, the terminal returns your computer's version of Node.js. You can also confirm that the node package manager (NPM) is installed by typing `npm` in the terminal.
 - **Git**: To confirm Git is installed, open your terminal and type `git`. If Git is installed, the terminal returns a list of available git commands.
 - **Truffle Suite**: The extension provides a link to install the Truffle Suite of developer tools (required while the extension is in public preview).
-- **Ganache CLI**: The extension provides a link to install the Ganache CLI (required while the extension is in public preview).
+- **Ganache**: The extension provides a link to install Ganache (required while the extension is in public preview).
 
 If you don't have this software installed, or if you don't have the minimum versions, the extension provides tips for how to install the tools.
 
 ## Get started
 
-When you have all of the dependencies installed, use the Blockchain development kit to create your first project:
+When you have all of the dependencies installed, use the Truffle extension to create your first project:
 
 1. On your computer, add an empty directory for the project. To create a directory from Visual Studio Code, go to **Terminal** > **New Terminal** and then type `mkdir newSolidityProject`. Make a note of this new directory's location. You'll need it later.
-1. In Visual Studio Code, go to **View** > **Command Palette**. In the search box, type `Blockchain: New Solidity Project`. As you type, a list of suggestions appears.
+1. In Visual Studio Code, go to **View** > **Command Palette**. In the search box, type `Truffle: New Solidity Project`. As you type, a list of suggestions appears.
 
-   :::image type="content" source="../media/new-solidity-project-selection.png" alt-text="Screenshot showing how to create a new Solidity project in Visual Studio Code.":::
+   :::image type="content" source="../media/truffle-new-solidity-project-selection.png" alt-text="Screenshot showing how to create a new Solidity project in Visual Studio Code.":::
 
 1. For the type of Solidity project, select **Create basic project**.
 
@@ -40,8 +36,8 @@ After your Solidity project is created, open the Explorer pane to see the projec
 
 The project includes boilerplate for Solidity code. Notice the following directories:
 
-- **contracts**: Contains the *HelloBlockchain.sol* and *Migrations.sol* contracts
-- **migrations**: Contains an initial migration and a deploy contract
+- **contracts**: Contains the *HelloBlockchain.sol* contract
+- **migrations**: Contains a migration for the *HelloBlockchain* contract that's written in JavaScript
 - **test**: Contains a test for the HelloBlockchain contract that's written in JavaScript
 
 You also see some configuration files:
@@ -60,26 +56,24 @@ We'll start with the *HelloBlockchain.sol* smart contract inside the *contracts*
 1. In the Explorer pane, in the **contracts** folder, right-click the contract name, **HelloBlockchain.sol**.
 1. Select **Build Contracts** to compile the smart contract. A window in the lower-right corner indicates that contracts are building.
 
-   :::image type="content" source="../media/build-contracts.png" alt-text="Screenshot showing the Explorer pane. For the selected contract file, the Build Contracts command is selected.":::
+   :::image type="content" source="../media/truffle-build-contracts.png" alt-text="Screenshot showing the Explorer pane. For the selected contract file, the Build Contracts command is selected.":::
 
-1. Select **View** > **Output** to see information about the compiled contract. In the window, you might need to select **Azure Blockchain** to see the output from the extension.
+1. Select **View** -> **Output** to see information about the compiled contract. In the window, you might need to select **Truffle for VS Code** to see the output from the extension.
 
-   :::image type="content" source="../media/compile-output.png" alt-text="Screenshot showing output information about the compiled contract. The Azure Blockchain menu item is selected.":::
+   :::image type="content" source="../media/truffle-compile-output.png" alt-text="Screenshot showing output information about the compiled contract. The Truffle menu item is selected.":::
 
 ## Deploy contracts
 
-After the contract has been compiled successfully, you can deploy it locally. This step requires you to sign in to your Azure account.
+After the contract has been compiled successfully, you can deploy it locally
 
 1. In the Explorer pane, go to the **contracts** folder and then right-click the contract name, **HelloBlockchain.sol**.
 1. Select **Deploy Contracts**.
 
-   :::image type="content" source="../media/deploy-contracts.png" alt-text="Screenshot showing the Explorer pane. In the shortcut menu, the Deploy Contracts command is selected.":::
-
-1. In the window that appears, select **development**. You're prompted to sign in to Azure if you aren't already signed in.
+   :::image type="content" source="../media/truffle-deploy-contracts.png" alt-text="Screenshot showing the Explorer pane. In the shortcut menu, the Deploy Contracts command is selected.":::
 
 In the output window (**View** -> **Output**), you see information about the deployed migrations and contracts.
 
-:::image type="content" source="../media/deploy-details.png" alt-text="Screenshot showing output information about the deployed migrations and contracts. The Azure Blockchain menu item is selected.":::
+:::image type="content" source="../media/truffle-deploy-details.png" alt-text="Screenshot showing output information about the deployed migrations and contracts. The Truffle for VS Code menu item is selected.":::
 
 Here you see some key information or metadata for your deployed contract:
 

@@ -4,12 +4,11 @@ In this part, we write a new JavaScript test for our shipping contract. We could
 
 Let's begin by creating a new test file.
 
-1. Go to **Terminal** > **New Terminal**.
-1. In the new terminal, type `truffle create test Shipping`. This creates a new file in the test folder called *Shipping.js*.  
-1. Replace the code in the file by pasting the following code:
+1. In the Explorer pane, hover over the  **test** folder and right-click. Choose **New File** and create a new file called *TestShipping.js*.  
+1. Copy and paste the following code in the test file:
 
     ```javascript
-    const ShippingStatus= artifacts.require("Shipping");
+    const ShippingStatus= artifacts.require("./Shipping.sol");
     contract('Shipping', () => {
       
       it("should return the status Pending", async ()=> {
@@ -91,7 +90,7 @@ Overall, you should aim for 100 percent test coverage for your contract, especia
 
 ## Run the test
 
-In the terminal, type: 
+In the terminal, type:
 
 `truffle test`
 
