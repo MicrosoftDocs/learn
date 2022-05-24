@@ -2,11 +2,11 @@ Development teams around the world share one consistent goal: to release softwar
 
 Suppose you lead a team of software developers working on the next version of your product. As your team scales up, the challenges of keeping everything running smoothly become more and more difficult. Everything needs to focus on the upcoming release, and you need a workflow that fits the unpredictable nature of engineering. That workflow needs to provide a set of practical processes for managing work, code, and deliverables. The good news is that you're already using GitHub, so there's a light at the end of the tunnel.
 
-In this module, you learn how to implement a release based workflow on GitHub using project boards, branches, and releases.
+In this module, you'll learn how to implement a release based workflow on GitHub using project boards, branches, and releases.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Build a project board to manage your next release
 - Create and commit changes on a release branch
@@ -20,4 +20,4 @@ In this module, you will:
 - The ability to navigate and edit files in GitHub
 - Familiarity with pull requests
 
-It is recommended that you complete [Introduction to GitHub](/learn/modules/introduction-to-github) before beginning this module.
+We recommend that you complete [Introduction to GitHub](/learn/modules/introduction-to-github) before beginning this module.
