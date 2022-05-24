@@ -124,7 +124,7 @@ The details view interface is also consistent with most query store views allowi
 
 The **Tracking Query** view allows analyzing a specific query based on an entered query ID value. Once run, the view provides the complete execution history of the query. A checkmark on an execution indicates a forced plan was used. This view can provide insight into queries such as those with forced plans to verify that query performance is remaining stable.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-20.png" alt-text="Screenshot of the Tracking Query view filtering by a specific query ID.":::
+:::image type="content" source="../media/module-55-optimize-queries-final-20.png" alt-text="Screenshot of the Tracking Query view filtering by a specific query ID." lightbox="../media/module-55-optimize-queries-final-20.png":::
 
 ## Using the Query Store to find query waits
 
@@ -138,4 +138,4 @@ A bar chart displays the most impactful wait categories for the database when yo
 
 Selecting a wait category will drill through to the details of the queries that contribute to that wait category. From this view, you have the ability to investigate individual queries that are the most impactful. You can access the persisted estimated execution plans display in the Plan summary pane by selecting a query in the query pane. Selecting a query plan from the Plan summary pane will display the graphical query plan in the bottom pane. From this view, you have the ability to force or unforce a query plan for the query to improve performance.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-22.png" alt-text="Screenshot of the Query Wait Statistics view displaying the most impactful queries for the wait category.":::
+:::image type="content" source="../media/module-55-optimize-queries-final-22.png" alt-text="Screenshot of the Query Wait Statistics view displaying the most impactful queries for the wait category." lightbox="../media/module-55-optimize-queries-final-22.png":::
