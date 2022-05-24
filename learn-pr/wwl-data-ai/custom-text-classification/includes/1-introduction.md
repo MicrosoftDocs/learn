@@ -1,4 +1,4 @@
-*Natural language processing* (NLP) is one of the most common AI problems, where software must interpret text or speech in the natural form that humans use. Part of this is the ability to classify text, and Microsft Azure provides ways to classify text including sentiment, language, and custom categories defined by the user.
+*Natural language processing* (NLP) is one of the most common AI problems, where software must interpret text or speech in the natural form that humans use. Part of NLP is the ability to classify text, and Microsoft Azure provides ways to classify text including sentiment, language, and custom categories defined by the user.
 
 In this module, you'll learn how to use the Language service to classify text into custom groups.
 
