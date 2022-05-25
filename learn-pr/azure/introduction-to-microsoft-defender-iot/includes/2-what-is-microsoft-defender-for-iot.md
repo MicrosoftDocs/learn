@@ -8,7 +8,7 @@ Defender for IoT helps OT and IT teams automatically discover any unmanaged asse
 
 Do you have visibility throughout all the devices in your network? You can only protect devices that you're aware of. If we use our example of a building management company, discovery might include devices such as elevators, parking lot entrances, cameras, and lighting systems.
 
-Defender for IoT's sensor console provides a **Device inventory** page and a **Device map** page. They both provide drill-down data on each of the OT/IoT devices in your network and the connections between them.
+The Defender for IoT sensor console provides a **Device inventory** page and a **Device map** page. They both provide drill-down data on each of the OT/IoT devices in your network and the connections between them.
 
 - **Device inventory**: View device details like IP addresses and vendors, related protocols, firmware, and alerts related to the device.
 
@@ -22,18 +22,18 @@ For example, you might especially use the Device map when you implement a Zero T
 
 After you've gained visibility and understanding of the devices in your network, you'll want to keep track of any of your devices' risks and vulnerabilities.
 
-Defender for IoT's risk assessment reports, available from each sensor console, help you identify vulnerabilities in your network. For example, vulnerabilities might include unauthorized devices, unpatched systems, unauthorized internet connections, and devices with unused open ports.
+Defender for IoT risk assessment reports are available from each sensor console. The reports help you identify vulnerabilities in your network. For example, vulnerabilities might include unauthorized devices, unpatched systems, unauthorized internet connections, and devices with unused open ports.
 
 Use reported data to prioritize activities when you mitigate risks on your most sensitive OT/IoT assets, including any devices whose compromise would have a major impact on your organization. Examples of impact might include safety incidents, loss of revenue, or theft of sensitive IP addresses.
 
 ## Stay up to date with the latest threat intelligence
 
-As the security landscape changes and evolves, new risks and threats arise all the time. Defender for IoT's security research group, *Section 52*, is an OT/IoT-focused team of security researchers and data scientists. The Section 52 team consists of experts in threat hunting, malware reverse engineering, incident response, and data analysis.
+As the security landscape changes and evolves, new risks and threats arise all the time. The Defender for IoT security research group, *Section 52*, is an OT/IoT-focused team of security researchers and data scientists. The Section 52 team consists of experts in threat hunting, malware reverse engineering, incident response, and data analysis.
 
 Section 52 continuously curates threat intelligence packages built specifically for OT/IoT environments. The packages include the latest:
 
 - Incidents of concern, such as malware signatures, malicious DNS queries, and malicious IP addresses.
-- Common vulnerabilities and exposures to update Defender for IoT's vulnerability management reporting.
+- Common vulnerabilities and exposures to update vulnerability management reporting for Defender for IoT.
 - Asset profiles that enhance the Defender for IoT asset discovery features.
 
 You can keep current with the latest OT/IoT threats by keeping a Defender for IoT deployment up to date with the most recent threat intelligence packages.
@@ -44,7 +44,7 @@ You can keep current with the latest OT/IoT threats by keeping a Defender for Io
 
 While you can deploy Defender for IoT in a purely air-gapped, on-premises environment, you can also onboard on-premises device sensors from the cloud by using the Azure portal. Use the **Getting started** page to register your sensors to a specific Azure subscription and resource. Deploying from the portal is helpful if you want to lower operational and maintenance requirements on your management systems, and if you have other Microsoft and Azure services deployed.
 
-Onboarded sensors are visible on the Defender for IoT **Site and sensors** page in the Azure portal. This page will look familiar to experienced Azure users, and it displays details for each site and sensor. Use the **Site and sensors** page to view each sensor's zone, connection status, and threat intelligence update status. You can also use it to add more sensors to your deployment.
+Onboarded sensors are visible on the Defender for IoT **Sites and sensors** page in the Azure portal. This page will look familiar to experienced Azure users, and it displays details for each site and sensor. Use the **Sites and sensors** page to view each sensor's zone, connection status, and threat intelligence update status. You can also use it to add more sensors to your deployment.
 
 :::image type="content" source="../media/2-onboard-sensor.png" alt-text="Screenshot that shows the Sites and sensors page in the Azure portal." lightbox="../media/2-onboard-sensor.png":::
 
