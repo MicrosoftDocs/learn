@@ -53,7 +53,7 @@ Once you've created the language service and storage account, you'll need to upl
 After configuration is complete, create a custom text classification project. This project provides a working place to build, train, and deploy your model.
 
 > [!NOTE]
-> This lab utilizes **Language Studio**, but you can also create, build, train, and deploy your model through the REST API if you prefer.
+> This lab utilizes **Language Studio**, but you can also create, build, train, and deploy your model through the REST API.
 
 1. Log into the [Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Language resource in, and select your Language resource
 2. Under the **Classify text** section, select **Custom text classification**
@@ -122,7 +122,7 @@ Once you've tagged your data, you need to train your model.
 In real world applications of text classification, it's important to evaluate and improve your model to verify it's performing as you expect. Two pages on the left show you the details of your trained model, and any testing that failed.
 
 1. Select **View model details**, and select your *ClassifyArticles* model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll notice the score of your model isn't 100%, meaning one of the articles used for testing didn't evaluate to what it was tagged. These failures help you understand where to improve.
-2. Select **Improve model**. Your model is already selected in the drop down, and it defaults to show incorrect predictions only. Toggle that selection to see the articles you indicated for testing and what they predicted as.
+2. Select **Improve model**. Your model is already selected in the drop-down, and it defaults to show incorrect predictions only. Toggle that selection to see the articles you indicated for testing and what they predicted as.
 
 ## Deploy your model
 
@@ -131,7 +131,7 @@ Once you're satisfied with the training of your model, it's time to deploy it, w
 1. On the left panel, select **Deploy model**
 2. Select **Add deployment**, then enter `articles` and select *ClassifyArticles* to select your trained model
 3. Click **Submit** to deploy your model
-4. Once your model is deployed, leave that page open since you will need your project and deployment name in the next step
+4. Once your model is deployed, leave that page open since you'll need your project and deployment name in the next step
 
 ## Send text classification to your model
 

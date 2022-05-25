@@ -23,15 +23,15 @@ Tagging data correctly, especially for multiple label projects, is directly corr
 
 ### Evaluating and improving your model
 
-Measuring predictive performance of your model goes beyond how many predictions were correct. Correct classifications are when the model predicts a label *x* and the file is actually labeled as *x*. In the real world, documents result in different kinds of errors when a classification isn't correct:
+Measuring predictive performance of your model goes beyond how many predictions were correct. Correct classifications are when the actual label is *x* and the model predicts a label *x*. In the real world, documents result in different kinds of errors when a classification isn't correct:
 
-- False positive - model predicts *x*, but the file is not actually labeled *x*
-- False negative - model does not predict label *x*, but the file in fact is labeled *x*
+- False positive - model predicts *x*, but the file isn't labeled *x*
+- False negative - model doesn't predict label *x*, but the file in fact is labeled *x*
 
 These metrics are translated into three measures provided by the Language service:
 
 - **Recall** - Of all the actual labels, how many were identified; the ratio of true positives to all that was labeled.
-- **Precision** - How many predicted labels are actually correct; the ratio of true positives to all identified positives.
+- **Precision** - How many of the predicted labels are correct; the ratio of true positives to all identified positives.
 - **F1 Score** - A function of *recall* and *precision*, intended to provide a single score to maximize for a balance of each component
 
 > [!TIP]
