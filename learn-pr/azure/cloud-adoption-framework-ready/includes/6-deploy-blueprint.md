@@ -76,7 +76,7 @@ The article [Create an additional Azure subscription](/azure/cost-management-bil
       Tailwind Traders also has a subscription that was allocated to host any of its public-facing applications. The company chooses that subscription here.
    1. For the series of recommended policies, select **Audit only**. 
    
-      Tailwind Traders sets all of the listed polices this way because it isn't ready to adopt policy-driven governance.
+      Tailwind Traders sets all of the listed policies this way because it isn't ready to adopt policy-driven governance.
 
       > [!NOTE]
       > If Tailwind Traders wanted to adhere to the design principles of app-centric design or subscription democratization, there would be several additional subscriptions selected in the dropdown list (or added later).
