@@ -2,7 +2,7 @@ Now that you've understood the important Node.js concepts that you need to creat
 
 ## Create a Node project
 
-1. Create a folder in any location on your computer, such as `auth-app` to hold your Node web app.
+1. Create a folder in any location on your computer, such as `auth-app`, to hold your Node web app.
 
 1. Start Visual Studio Code (VS Code) editor, and use it to open the Node web app folder you created, such as `auth-app`.
 
