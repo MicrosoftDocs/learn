@@ -176,7 +176,7 @@ Now that you have a custom model, you can run a client application that uses the
     code classify-text.ps1
     ```
 
-3. Open `classify-text.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key`, `$endpoint`, `$projectName`, and `$modelName` with your values, and save the file.
+3. In `classify-text.ps1`, note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
 
     > [!TIP]
     > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left

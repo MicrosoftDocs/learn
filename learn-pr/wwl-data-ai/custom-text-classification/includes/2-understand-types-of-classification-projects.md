@@ -7,7 +7,7 @@ Custom text classification falls into two types of projects:
 
 When creating your custom text classification project, you can specify which project you want to build.
 
-## Single vs multiple label projects
+## Single vs. multiple label projects
 
 Beyond the ability to put files into multiple classifications, the key differences with multiple label classification projects are tagging, considerations for improving your model, and the API payload for classification tasks.
 
