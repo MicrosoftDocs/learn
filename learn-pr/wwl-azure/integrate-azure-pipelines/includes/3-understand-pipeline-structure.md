@@ -11,21 +11,16 @@ A job is a linear series of steps. Steps can be tasks, scripts, or references to
 This hierarchy is reflected in the structure of a YAML file like:
 
  -  Pipeline
-    
      -  Stage A
-        
          -  Job 1
-            
              -  Step 1.1
              -  Step 1.2
              -  ...
          -  Job 2
-            
              -  Step 2.1
              -  Step 2.2
              -  ...
      -  Stage B
-        
          -  ...
 
 Simple pipelines don't require all these levels. For example, you can omit the containers for stages and jobs in a single job build because there are only steps.
