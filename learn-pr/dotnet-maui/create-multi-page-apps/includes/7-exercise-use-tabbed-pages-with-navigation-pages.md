@@ -83,7 +83,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 1. Then you need to decorate the class with an annotation that maps the incoming query parameter the property you just created.
 
     ```csharp
-    [QueryProperty(nameof(AstroName), "astroname")]
+    [QueryProperty(nameof(AstroName), "astroName")]
     public partial class AstronomicalBodyPage
     { ...
     ```
