@@ -1,4 +1,4 @@
-There's more to building applications than the C# language itself. You'll also need the .NET Runtime, which hosts and manages your code as it executes on the end user's computer. You'll also rely on a collection of functionality called the .NET Class Library that you can use in your applications. This unit explains what the .NET Class Library is and how it complements the C# programming language.
+There's more to building applications than the C# language itself. You'll also need the .NET Runtime, which hosts and manages your code as it executes on the end user's computer. You'll also rely on a collection of functionalities called the .NET Class Library that you can use in your applications. This unit explains what the .NET Class Library is and how it complements the C# programming language.
 
 ## What is the .NET Class Library?
 
