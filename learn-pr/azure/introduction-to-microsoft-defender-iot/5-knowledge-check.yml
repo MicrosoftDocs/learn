@@ -16,9 +16,9 @@ quiz:
   questions:
   - content: "Which area in Defender for IoT in the Azure portal is the most seamless for SOC teams to use if they already use other Azure services and want to start integrating with Defender for IoT?"
     choices:
-    - content: "The Sites and sensors page"
+    - content: "The **Sites and sensors** page"
       isCorrect: true
-      explanation: "Correct. The Sites and sensors page in the Azure portal will look familiar to experienced Azure users. The Sites and sensors page displays all the sensors you currently have on Defender for IoT and also provides links to onboard new sensors."
+      explanation: "Correct. The **Sites and sensors** page in the Azure portal will look familiar to experienced Azure users. It displays all the sensors you currently have on Defender for IoT and also provides links to onboard new sensors."
     - content: "Device inventory"
       isCorrect: false
       explanation: "Incorrect. The device inventory is currently available in general availability in the sensor console. While the sensor console's look and feel mimics that of the Azure portal, users must access the sensor console separately."
