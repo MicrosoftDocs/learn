@@ -17,11 +17,11 @@ GitHub Packages is compatible with common package-management clients, so you can
 
 Are you publishing an open-source package? Most open-source projects store their code on GitHub, so you can publish prerelease versions of your packages for testing within your community, then easily promote specific versions to the public registry of your choice.
 
-:::image type="content" source="../media/2-github-packages-npm-package.png" alt-text="GitHub NPM package page, with description, and instructions about how to install it." border="false":::
+:::image type="content" source="../media/2-github-packages-npm-package.png" alt-text="GitHub npm package page, with description, and instructions about how to install it." border="false":::
 
 At the time of writing, GitHub Packages is compatible with the following package managers: 
 
-- NPM, a NodeJS package manager
+- npm, a NodeJS package manager
 - NuGet, the .NET package manager
 - RubyGems
 - Maven and Gradle, two package managers for Java
@@ -41,17 +41,17 @@ From complete applications to CLI utilities, containers are another form of dist
 
 GitHub Packages are used to publish releases of your libraries to a standard package feed or a container registry. They are meant to leverage the ways the specific package-management client works with that feed, like linking back to the repository in which the package was created as well as the version of the code that was used.  
 
-[GitHub Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) are used to release a bundle of packaged software, along with release notes and links to binary files. You can download those releases directly from their unique URL and track them back to the specific commit they where created from. You can only download releases as tarballs or ZIP files.
+[GitHub Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) are used to release a bundle of packaged software, along with release notes and links to binary files. You can download those releases directly from their unique URL and track them back to the specific commit they were created from. You can only download releases as tarballs or ZIP files.
 
 ## Unified identity and permissions
 
-Let's say you're working on a project using GitHub for hosting source code: JavaScript for the front end, with NPM and Java for the back end. You now maintain at least three different sets of user credentials and permissions: for Git, NPM, and Maven repositories.
+Let's say you're working on a project using GitHub for hosting source code: JavaScript for the front end, with npm and Java for the back end. You now maintain at least three different sets of user credentials and permissions: for Git, npm, and Maven repositories.
 
-With GitHub Packages, you can use a single set of credentials across your source-code repository, your private NPM registry, and your Maven or Gradle private registry. Packages published through GitHub inherit the visibility and permissions assigned at the repository level. A new team member needs read access to a package and its code? Give them read access to the repository and it's done!
+With GitHub Packages, you can use a single set of credentials across your source-code repository, your private npm registry, and your Maven or Gradle private registry. Packages published through GitHub inherit the visibility and permissions assigned at the repository level. A new team member needs read access to a package and its code? Give them read access to the repository and it's done!
 
 ## Build and publish packages from GitHub
 
-[GitHub Actions](https://github.com/features/actions) is another GitHub feature that allow you to automate your software workflows. You can build, test, and deploy your code right from GitHub.
+[GitHub Actions](https://github.com/features/actions) is another GitHub feature that allows you to automate your software workflows. You can build, test, and deploy your code right from GitHub.
 
 > [!TIP]
 > If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](/learn/modules/github-actions-ci/)* Learn module.
