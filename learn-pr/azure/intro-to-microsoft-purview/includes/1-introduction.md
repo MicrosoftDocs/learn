@@ -22,7 +22,7 @@ We'll get a high-level overview of Microsoft Purview and discover the key aspect
 * Manage and govern your data across various platforms and locations.
 * Map out your data landscape
 * Classify sensitive data
-* Empower customers fo find trustworthy data
+* Empower customers to find trustworthy data
 
 ## What is the main goal?
 By the end of this session, you'll be able to decide if Microsoft Purview is the right choice to help you manage your enterprise data environment and get a handle on your various data sources.

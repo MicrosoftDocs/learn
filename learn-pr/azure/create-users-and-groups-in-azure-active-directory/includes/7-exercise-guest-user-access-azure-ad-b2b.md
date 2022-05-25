@@ -12,7 +12,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. On the top menu bar, select **New guest user**.
 
-   ![Screenshot that shows the New guest user button.](../media/7-new-guest-user.png)
+   :::image type="content" source="../media/7-new-guest-user.png" alt-text="Screenshot that shows the New guest user button.":::
 
    The **New user** pane appears.
 
@@ -36,7 +36,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Select the account, and select **Select**. The **Members** pane for your developer group appears.
 
-    You now see the user in the list of members for this group.
+   You now see the user in the list of members for this group.
 
 ## Add guest users to an application
 
@@ -44,7 +44,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. On the top menu bar, select **New application**.
 
-   ![Screenshot that shows the New Application button.](../media/7-enterprise-application.png)
+   :::image type="content" source="../media/7-enterprise-application.png" alt-text="Screenshot that shows the New Application button.":::
 
    The **Browse Azure AD Gallery** pane appears.
 
@@ -56,9 +56,9 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. On the top menu bar, select **Add user/group**.
 
-    :::image type="content" source="../media/7-application-users-groups.png" alt-text="Screenshot that shows the Docusign application user and groups page.":::
+   :::image type="content" source="../media/7-application-users-groups.png" alt-text="Screenshot that shows the Docusign application user and groups page.":::
 
-    The **Add Assignment** pane appears.
+   The **Add Assignment** pane appears.
 
 1. Under **Users and groups**, select the **None Selected** link. The **Users and groups** pane appears.
 
@@ -68,7 +68,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. To check that the correct access level is set, select the user in the list.
 
-    :::image type="content" source="../media/7-select-user.png" alt-text="Screenshot that shows the user selected on the users and groups page.":::
+   :::image type="content" source="../media/7-select-user.png" alt-text="Screenshot that shows the user selected on the users and groups page.":::
 
 1. On the top menu bar, select **Edit**. The **Edit Assignment** pane appears.
 
@@ -76,15 +76,15 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Select **DocuSign Sender**, and then select **Select** to make sure they have the correct access.
 
-    :::image type="content" source="../media/7-select-role.png" alt-text="Screenshot that shows role selected for user.":::
+   :::image type="content" source="../media/7-select-role.png" alt-text="Screenshot that shows role selected for user.":::
 
-    The **Edit Assignment** pane reappears.
+   The **Edit Assignment** pane reappears.
 
 1. Select **Assign**. The **Users and groups** pane appears with the proper **Role assigned** as **DocuSign Sender** for the user you selected.
 
 1. When the invitation arrives, the user accepts it, and can then access the application.
 
-    :::image type="content" source="../media/7-application-visible-invitation-accepted.png" alt-text="Screenshot that shows the DocuSign app in the browser for the guest user after they've accepted the invitation.":::
+   :::image type="content" source="../media/7-application-visible-invitation-accepted.png" alt-text="Screenshot that shows the DocuSign app in the browser for the guest user after they've accepted the invitation.":::
 
 You've now added a guest user to an application.
 

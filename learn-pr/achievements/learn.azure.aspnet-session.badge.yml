@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.aspnet-session.badge
+metadata:
+  title: >-
+    Microsoft Badge: Improve session scalability in a .NET Framework ASP.NET web
+    application by using Azure Cache for Redis was issued by Microsoft
+socialImageUrl: /learn/achievements/aspnet-session-social.png
