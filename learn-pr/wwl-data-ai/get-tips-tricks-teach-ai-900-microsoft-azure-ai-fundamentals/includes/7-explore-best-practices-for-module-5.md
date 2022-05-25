@@ -5,7 +5,7 @@ This module consists of two lessons:
 - **Lesson 1** – Conversational AI Concepts
 - **Lesson 2** – Conversational AI in Azure
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XYvZ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XYvZ]
  
 ### Module 5 Tips and Tricks
 
