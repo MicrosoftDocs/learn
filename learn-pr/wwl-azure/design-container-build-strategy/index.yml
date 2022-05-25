@@ -3,7 +3,7 @@ uid: learn.wwl.design-container-build-strategy
 metadata:
   title: Design a container build strategy
   description: "Design a container build strategy"
-  ms.date: 05/17/2022
+  ms.date: 05/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- container
 units:
 - learn.wwl.design-container-build-strategy.introduction
 - learn.wwl.design-container-build-strategy.examine-structure-of-containers
