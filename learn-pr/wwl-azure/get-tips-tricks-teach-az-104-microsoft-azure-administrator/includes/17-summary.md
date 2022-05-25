@@ -16,11 +16,11 @@ AZ-104: Microsoft Azure Administrator gives students the opportunity to learn a 
 
 - [Azure documentation](/azure/?product=popular) 
 
-- [Azure Architecture Center](https:/aka.ms/azureac) 
+- [Azure Architecture Center](/azure/architecture/?ocid=AID3023451&WT.mc_id=modinfra-21050-salean) 
 
-- [GitHub](/azure/architecture/?ocid=AID3023451&WT.mc_id=modinfra-21050-salean) 
+- [GitHub](https://github.com/MicrosoftDocs/) 
 
-- [AZ-104 Exam Page](https://github.com/MicrosoftDocs/) 
+- [AZ-104 Exam Page](https://aka.ms/az104exam) 
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 
