@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/24/2022
+  ms.date: 05/25/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "How can Tailwind Traders to ensure policies are implemented across multiple subscriptions?"
+  - content: "How can Tailwind Traders ensure policies are implemented across multiple subscriptions?"
     choices:
     - content: "Add a resource tag that includes the required policy."
       isCorrect: false
