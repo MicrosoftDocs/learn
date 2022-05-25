@@ -1,6 +1,6 @@
 In the previous unit, you saw how to use GitHub Actions to build and publish container images.
 
-In this unit, we'll take a look at the other packages supported by GitHub Packages. GitHub Packages work with your current project's ecosystem tooling: npm for NPM packages; nuget.exe, or the dotnet CLI for NuGet packages, etc.
+In this unit, we'll take a look at the other packages supported by GitHub Packages. GitHub Packages work with your current project's ecosystem tooling: npm for npm packages; nuget.exe, or the dotnet CLI for NuGet packages, etc.
 
 ## Authenticate to GitHub Packages
 
@@ -27,7 +27,7 @@ The following table shows you the command to run in order to authenticate to Git
 | Your package ecosystem | Command line to authenticate to GitHub Package     |
 |------------------------|----------------------------------------------------|
 | NuGet                  | `dotnet nuget add source https://nuget.pkg.github.com/OWNER/index.json -n github -u OWNER -p [Your PAT Token]` |
-| NPM                    | `bash npm login --registry=https://npm.pkg.github.com` |
+| npm                    | `bash npm login --registry=https://npm.pkg.github.com` |
 | RubyGems     | `echo ":github: Bearer GH_TOKEN" >> ~/.gem/credentials` |
 | Maven & Gradle | You can directly authenticate while pushing. |
 
