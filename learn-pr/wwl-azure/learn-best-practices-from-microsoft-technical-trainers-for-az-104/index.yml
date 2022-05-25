@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104
+metadata:
+  title: Learn best practices from Microsoft Technical Trainers
+  description: "Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom."
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn best practices from Microsoft Technical Trainers
+summary: Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Understand the Microsoft technical training program
+  *   Utilize the built-in accessibility features
+  *   Understand using the objective domains when preparing to teach
+  *   Prepare for the exam by understanding the exam structure
+  *   Prepare to teach the fundamentals courses using best practices
+prerequisites: |
+  *   Understand the Microsoft Learn for Educators program benefits
+  *   Navigate the Microsoft Learn for Educators portal
+  *   Understand how to access the Microsoft Learning Download Center and download content
+  *   Understand the resources available through the Microsoft curriculum and teaching materials
+  *   Understand the resources available to you help you get prepared to teach Microsoft Fundamentals or Advanced Role-Based curriculum in your classes
+  *   Understand how faculty members can prepare to take a certification exam
+  *   Explain the different approaches to curriculum integration
+  *   Understand how to integrate content from Microsoft Learn into your Learning Management System
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+units:
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.introduction
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.discover-accessibility-features
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.explore-teaching
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.prepare-for-exam
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.knowledge-check
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.summary
+badge:
+  uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-arb.badge

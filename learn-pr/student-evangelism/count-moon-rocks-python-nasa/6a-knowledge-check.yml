@@ -4,8 +4,8 @@ metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
   ms.date: 05/05/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

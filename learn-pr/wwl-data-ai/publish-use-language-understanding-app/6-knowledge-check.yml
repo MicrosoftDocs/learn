@@ -4,17 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/20/2021
+  ms.date: 05/24/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your want to ensure that intent predictions from your model are not affected by typo's in the input. Which publishing setting should you configure?"
+  - content: "You want to ensure that intent predictions from your model are not affected by typo's in the input. Which publishing setting should you configure?"
     choices:
     - content: "Sentiment analysis"
       isCorrect: false
@@ -25,7 +26,7 @@ quiz:
     - content: "Speech priming"
       isCorrect: false
       explanation: "That's incorrect. Use spelling correction to correct typo's and spelling errors."
-  - content: "Your want to return only the most likely intent for your natural language query. Which parameter should you use?"
+  - content: "You want to return only the most likely intent for your natural language query. Which parameter should you use?"
     choices:
     - content: "log"
       isCorrect: false
