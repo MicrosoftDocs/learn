@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.store-local-data.use-sqlite-asynchronously
+title: Use SQLite asynchronously
+metadata:
+  unitType: unit
+  title: "Use SQLite asynchronously"
+  description: "Perform SQLite operations asynchronously to maintain responsiveness in a .NET MAUI app"
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 10 
+content: |
+  [!include[](includes/5-use-sqlite-asynchronously.md)]

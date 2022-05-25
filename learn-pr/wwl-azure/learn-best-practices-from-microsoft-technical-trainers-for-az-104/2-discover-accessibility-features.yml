@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.discover-accessibility-features
+title: Discover accessibility features
+metadata:
+  title: Discover accessibility features
+  description: "Discover accessibility features"
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-discover-accessibility-features.md)]

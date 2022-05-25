@@ -15,7 +15,7 @@ The Tailwind team from the customer narrative will use the Azure Landing Zone ac
 
 ## Customized Azure Landing Zone implementation options
 
-Alongside the Azure landing zone accelerator, there are two further reference implementations made available that address specific tooling requirements, if needed by the organization:
+Alongside the Azure landing zone accelerator, there are three further reference implementations made available that address specific tooling requirements, if needed by the organization.
 
 While the accelerator is the suggested starting point for all customers, it does assume full alignment with the conceptual architecture, adherence to the design principles, & cloud-native operations tooling. For customers who need to customize their Azure landing zone experience, the following implementation options may be a better fit:
 
