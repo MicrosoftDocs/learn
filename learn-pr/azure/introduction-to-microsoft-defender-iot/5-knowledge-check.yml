@@ -58,7 +58,7 @@ quiz:
     - content: "SOC teams can use Azure Active Directory to secure day-to-date network access."
       isCorrect: false
       explanation: "Incorrect. Defender for IoT's strongest Azure integration is with Microsoft Sentinel. You can use the IoT OT Threat Monitoring with Defender for IoT solution in Microsoft Sentinel to view and analyze your Defender for IoT alerts in Microsoft Sentinel, with workbooks that visualize your data, analytics rules, and playbooks that can automate system response."
-  - content: "The team lead for an SOC team and is highly aware of the constantly changing security landscape. The team lead is concerned about keeping the organization's OT device security up to date with the latest threats. How can the team lead calm the organization's concerns?"
+  - content: "The team lead for an SOC team is highly aware of the constantly changing security landscape. The team lead is concerned about keeping the organization's OT device security up to date with the latest threats. How can the team lead calm the organization's concerns?"
     choices:
     - content: "Constantly read security news and then manually tweak sensor settings as needed."
       isCorrect: false
