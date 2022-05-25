@@ -5,8 +5,8 @@ metadata:
   title: Working with Boolean arrays
   description: Learn about some of the operations you can do with Boolean arrays.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen
