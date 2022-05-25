@@ -13264,6 +13264,16 @@
       "source_path": "learn-pr/wwl-data-ai/work-form-recognizer/9-optical-character-recognition-test-tool.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/work-form-recognizer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/reactors/blockchain-solidity-ethereum-smart-contracts/4-truffle.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/reactors/blockchain-solidity-ethereum-smart-contracts/3-truffle",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/reactors/blockchain-solidity-ethereum-smart-contracts/3-blockchain-dev-kit.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/reactors/blockchain-solidity-ethereum-smart-contracts/4-truffle-vs-code",
+      "redirect_document_id": true
     }
   ]
 }
