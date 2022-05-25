@@ -8,19 +8,18 @@ By the end of this module, you'll be able to:
 
 - Explain what smart contracts are.
 - Know common use cases for smart contracts.
-- Install the Blockchain development kit.
 - Install Truffle.
-- Write a smart contract by using the Blockchain development kit.
+- Install the Truffle for VS Code extension.
+- Write a smart contract by using the Truffle for VS Code extension.
 - Test a smart contract by using Truffle.
 
 ## Prerequisites
 
 - Fundamental knowledge of blockchain
-- Knowledge of the Ethereum platform 
+- Knowledge of the Ethereum platform
 - Familiarity with the Solidity programming language
 - Experience using the terminal to run commands
 - Visual Studio Code installed
 - Python installed
 - Git installed
 - Node.js installed
-- An Azure account
