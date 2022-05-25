@@ -5,8 +5,8 @@ metadata:
   title: Initiate the automated machine learning run on Azure
   description: Initiate the automated machine learning run on Azure for data science operations.
   ms.date: 06/30/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen
