@@ -5,8 +5,8 @@ metadata:
   description: "This *Over the Moon* - inspired learning path aims to equip you with data science, artificial intelligence, and coding strategies to discover the technology used in space exploration."
   brand: vs-code
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon

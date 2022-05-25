@@ -4,7 +4,7 @@ In this unit, we'll look at autoscaling rule concepts, and then in the next exer
 
 Autoscaling is based on a set of scale conditions, rules, and limits. A scale condition combines time and a set of scale rules. If the current time falls within the period defined in the scale condition, the condition's scale rules are evaluated. The results of this evaluation determine whether to add or remove instances. The scale condition also defines the limits of scaling for the maximum and minimum number of instances.
 
-Azure Spring Cloud autoscaling allows you to scale the number of running instances out or in, based on metrics, these metrics are processed by autoscaling rules.
+Azure Spring Apps autoscaling allows you to scale the number of running instances out or in, based on metrics, these metrics are processed by autoscaling rules.
 You can create complex overlapping rules as needed for your situation.
 
 ## Autoscale conditions
