@@ -1,6 +1,6 @@
 Training and evaluating your model is an iterative process of adding data and tags to your training dataset to teach the model more accurately. To know what types of data and tags need to be improved, Language Studio provides scoring in the **View model details** page on the left hand pane.
 
-![View model scoring](../media/model-scoring.png)
+![Screenshot of the View model scoring tab.](../media/model-scoring.png)
 
 Individual entities as well as your overall model score are broken down into three metrics to explain how they are performing and where they need to improve.
 
@@ -24,4 +24,6 @@ If precision is high but recall is low, it means that the entity doesn't always 
 
 On the same **View model details** page, there is another tab on the top for the *Confusion matrix*. This provides a visual table of all the entities and how each performed, giving a complete view of the model as well as where it's falling short.
 
-![Sample confusion matrix](../media/model-confusion-matrix.png)
+![Screenshot of a sample confusion matrix.](../media/model-confusion-matrix.png)
+
+The confusion matrix allows you to visually identify where to add data to improve your model's performance.

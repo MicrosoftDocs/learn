@@ -2,9 +2,57 @@ Custom NER is an Azure API service that looks at documents, identifies, and extr
 
 Custom NER is part of the Language service in Azure Cognitive Services.
 
-## Language service project lifecycle
+## Custom vs built-in NER
 
-![Language service lifecycle diagram](../media/extraction-development-lifecycle.png)
+The Language service provides certain built-in entity recognition, to recognize things such as a person, location, organization, or URL. Built-in NER allows you to set up the service with minimal configuration, and extract entities. To call a built-in NER, create your service and call the endpoint for that NER service:
+
+```rest
+<YOUR-ENDPOINT>/text/analytics/v3.2-preview.2/entities/recognition/general
+```
+
+|Placeholder  |Value  | Example |
+|---------|---------|---------|
+|`<YOUR-ENDPOINT>`     | The endpoint for your API request  | `https://<your-resource>.cognitiveservices.azure.com` |
+
+The body of that call will contain the document(s) the entities are extracted from, and the headers contain your service key.
+
+The response from the call above contains an array of entities recognized, such as:
+
+```json
+<...>
+"entities":[
+    {
+        "text":"Seattle",
+        "category":"Location",
+        "subcategory":"GPE",
+        "offset":45,
+        "length":7,
+        "confidenceScore":0.99
+    },
+    {
+        "text":"next week",
+        "category":"DateTime",
+        "subcategory":"DateRange",
+        "offset":104,
+        "length":9,
+        "confidenceScore":0.8
+    }
+]
+<...>
+```
+
+Examples of when to use the built-in NER include finding locations, names, or URLs in long text documents.
+
+> [!TIP]
+> A full list of recognized entity categories is available in the [NER docs](https://aka.ms/ner-categories).
+
+Custom NER, which is the focus of the rest of this module, is available when the entities you want to extract are not part of the built-in service, or you only want to extract specific entities. You can make your custom NER model as simple or complex as is required for your app.
+
+Examples of when you'd want custom NER include specific legal or bank data, knowledge mining to enhance catalog search, or looking for specific text for audit policies. Each one of these projects require a specific set of entities and data it needs to extract.
+
+## Language service project life cycle
+
+![Conceptual diagram showing a life cycle with steps to define entities, tag data, train model, view model, improve model, deploy model, and extract entities.](../media/extraction-development-lifecycle.png)
 
 Creating a entity extraction model typically follows a similar path to most Language service features:
 
@@ -18,7 +66,7 @@ Creating a entity extraction model typically follows a similar path to most Lang
 
 ## Considerations for data selection and refining entities
 
-For the best performance, you will need to use both high quality data to train the model and clearly defined entity types. 
+For the best performance, you will need to use both high quality data to train the model and clearly defined entity types.
 
 High quality data will let you spend less time refining and yield better results from your model.
 
@@ -26,9 +74,9 @@ High quality data will let you spend less time refining and yield better results
 - **Distribution** - use the appropriate distribution of document types. A more diverse dataset to train your model will help your model avoid learning incorrect relationships in the data.
 - **Accuracy** - use data that is as close to real world data as possible. Fake data works to start the training process, but it likely will differ from real data in ways that can cause your model to not extract correctly.
 
-Entities need to also be carefully considered, and defined as distinctly as possible. Avoid ambiguous entities (such as two names next to eachother on a bank statement), as it will make the model struggle to differentiate. If having some ambiguous entities is required, make sure to have more examples for your model to learn from so it can understand the difference.
+Entities need to also be carefully considered, and defined as distinctly as possible. Avoid ambiguous entities (such as two names next to each other on a bank statement), as it will make the model struggle to differentiate. If having some ambiguous entities is required, make sure to have more examples for your model to learn from so it can understand the difference.
 
-Keeping your entities distinct will also go a long way in helping your model's performance. For example, trying to extract something like "Contact info" that could be a phone number, social media handle, or email address would require a lot of examples to correctly teach your model. Instead, try to break them down into more specific entities such as "Phone", "Email", and "Social media" and let the model tag whichever type of contact information it finds. 
+Keeping your entities distinct will also go a long way in helping your model's performance. For example, trying to extract something like "Contact info" that could be a phone number, social media handle, or email address would require a lot of examples to correctly teach your model. Instead, try to break them down into more specific entities such as "Phone", "Email", and "Social media" and let the model tag whichever type of contact information it finds.
 
 ## How to extract entities
 
@@ -66,11 +114,11 @@ Your payload will look similar to the following:
 
 ## Project limits
 
-The Language service does have limits on the resources as projects. 
+The Language service enforces the following restrictions:
 
 - **Training** - at least 10 files, and not more than 100,000
 - **Deployments** - 10 deployment names per project
-- **APIs** 
+- **APIs**
   - **Authoring** - this is the API that creates a project, trains, and deploys your model. Limited to 10 POST and 100 GET per minute
   - **Analyze** - this is the API that does the work of actually extracting the entities; it requests a task and retrieves the results. Limited to 20 GET or POST
 - **Projects** - only 1 storage account per project, 500 projects per resource, and 50 trained models per project
