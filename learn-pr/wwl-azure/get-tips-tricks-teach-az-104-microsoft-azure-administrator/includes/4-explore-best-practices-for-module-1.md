@@ -12,7 +12,7 @@ This module consists of two lessons:
 
 - Use real-world applications of Azure AD 
 
-- Emphasize the difference between Active Directory Domain Services and AAD 
+- Emphasize the difference between Active Directory Domain Services and Azure AD 
 
 - Explain that Azure AD is an Internet service 
 
