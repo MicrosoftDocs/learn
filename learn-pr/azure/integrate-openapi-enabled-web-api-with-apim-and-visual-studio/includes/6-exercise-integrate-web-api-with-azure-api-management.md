@@ -1,6 +1,6 @@
 In this exercise, you will integrate your web API application running on [Azure App Service][az appsvc] with [Azure API Management][az apim] through Visual Studio.
 
-> [!NOTE]
+> [!NOTE] 
 > In the previous exercise, you already have the ASP.NET Core Web API app with the OpenAPI feature enabled. You will use the app for this exercise.
 
 
@@ -10,7 +10,7 @@ The web API application is ready to publish. In order to deploy the web API appl
 
 1. In **Solution Explorer**, right-click the project and select the **Publish** menu.
 
-   :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-02.png" alt-text="Right-click Publish in Visual Studio.":::
+   :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-02.png" alt-text="Screenshot that shows how to select the publish menu.":::
 
 1. In the **Publish** dialogue modal, select **Azure** and click the **Next** button.
 

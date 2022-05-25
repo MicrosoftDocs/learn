@@ -972,3 +972,8 @@ achievements:
   title: Explore Azure Synapse serverless SQL pools capabilities
   summary: Explore the capabilities of Azure Synapse serverless SQL pools and how it can be used to interactively work with data in a data lake.
   iconUrl: /learn/achievements/explore-azure-synapse-serverless-sql-pools-capabilities.svg
+- uid: learn.aks-workshop.badge
+  type: badge
+  title: Azure Kubernetes Service Workshop as issued by Microsoft
+  summary: Deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
+  iconUrl: /learn/achievements/aks-workshop-social.png

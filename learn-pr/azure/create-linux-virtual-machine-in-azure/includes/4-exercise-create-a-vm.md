@@ -2,13 +2,13 @@ Recall that our goal is to move an existing Linux server running Apache to Azure
 
 ## Create a new Linux virtual machine
 
-We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShell. The easiest approach when you are starting with Azure is to use the portal because it walks you through the required information and provides hints and helpful messages during the creation:
+We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShell. The easiest approach when you're starting with Azure is to use the portal because it walks you through the required information and provides hints and helpful messages during the creation:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Virtual machines**. Alternatively, you can enter *Virtual machines* in the top search box, and press <kbd>Enter</kbd>. The **Virtual machines** pane appears.
 
-1. In the top menu bar, select **Create > Virtual machine**. The **Create a virtual machine** pane appears.
+1. In the top menu bar, select **Create > Azure virtual machine**. The **Create a virtual machine** pane appears.
 
 ## Configure the VM settings, add data disks for the VM, and configure the network
 
@@ -28,10 +28,10 @@ Remember that these instructions use the sandbox. If you're using another Azure 
     | Subscription | Concierge Subscription (the sandbox subscription should be selected by default).  |
     | Resource group | Select **<rgn>[sandbox resource group name]</rgn>**. |
     | **Instance details** |
-    | Virtual machine name | Enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**). It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes. |
+    | Virtual machine name | Enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**). It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be composed of numbers, letters, and dashes. |
     | Region | Select a location close to you. See the information below this table for available regions. |
-    | Availability options | Select **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise we will not need this service. |
-    | Image | From the dropdown list, select **Ubuntu Server 18.04 LTS - Gen1** |
+    | Availability options | Select **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise, we won't need this service. |
+    | Image | From the dropdown list, select **Ubuntu Server 18.04 LTS - Gen2** |
     | Size | Standard D2s v3. This option gives you two vCPUs with 8 GB of RAM. |
     | **Administrator account** |
     | Authentication type | SSH public key |
@@ -54,7 +54,7 @@ Remember that these instructions use the sandbox. If you're using another Azure 
     | **Data disks** | *Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). Here, we'll add a data disk as well.* |
     | Create and attach a new disk | Select the link. The **Create a new disk** pane appears. Accept all the default settings. Notice that source type is where you could use a snapshot or Azure Blob Storage to create a VHD.
 
-1. Select **OK** to create the disk. The **Disks** pane re reappears on the **Create a virtual machine** pane.
+1. Select **OK** to create the disk. The **Disks** pane reappears on the **Create a virtual machine** pane.
 
     A new disk appears in the first row.
 
