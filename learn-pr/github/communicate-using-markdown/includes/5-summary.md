@@ -1,4 +1,4 @@
-In this module, you learned about Markdown, and GitHub-flavored Markdown, so that you could communicate more expressively throughout GitHub.
+In this module, you learned about Markdown and GitHub-flavored Markdown so you could communicate more expressively throughout GitHub.
 
 You learned about:
 
