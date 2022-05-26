@@ -99,9 +99,9 @@ When selecting the load-balancing options, here are some factors that are consid
 
 **Availability**. What is the service [SLA](https://azure.microsoft.com/support/legal/sla/)?
 
-**Cost**. See [Azure pricing](https://azure.microsoft.com/pricing/). In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service.
+**Cost**. Visit [Azure pricing](https://azure.microsoft.com/pricing/). In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service.
 
-**Features and limits**. What are the overall limitations of each service? See [Service limits](/azure/azure-subscription-service-limits).
+**Features and limits**. What are the overall limitations of each service? Visit [Service limits](/azure/azure-subscription-service-limits).
 
 The following flowchart will help you to choose a load-balancing solution for your application. The flowchart guides you through a set of key decision criteria to reach a recommendation.
 

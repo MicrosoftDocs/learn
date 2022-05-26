@@ -25,7 +25,7 @@ This architecture is suitable for hybrid applications where the traffic between 
 
 [Hybrid network with VPN gateway](/azure/architecture/reference-architectures/hybrid-networking/vpn)
 
-:::image type="content" source="../media/virtual-private-network.png" alt-text="Hybrid network with VPN gateway":::
+:::image type="content" source="../media/virtual-private-network.png" alt-text="An Azure virtual network uses a VPN gateway to communicate with an on-premises network and Azure Stack.":::
 
 
 ## Azure ExpressRoute connection

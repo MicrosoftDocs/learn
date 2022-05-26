@@ -14,13 +14,13 @@ When you design a network from bottom up, you gather some basic information. Thi
 
 When you plan to deploy your applications and services in Azure, you will start by creating a logical boundary in Azure, which is called a virtual network. This virtual network is akin to a physical network boundary. As it is a virtual network, you don't need physical gear but still have to plan for the logical entities such as IP addresses, IP subnets, routing, and policies.
 
-When you create a virtual network in Azure, it's pre-configured with an IP range (10.0.0.0/16). This range isn't fixed, you can define your own IP range. You can define both IPv4 and IPv6 address ranges. IP ranges defined for the virtual network are not advertised to Internet. You can create multiple subnets from your IP range. These subnets will be used to assign IP addresses to virtual network interfaces (vNICs). First four IP addresses from each subnet are reserved and can't be used for IP allocation. There is no concept of VLANs in a public cloud. However, you can create isolation within a virtual network based on your defined subnets.
+When you create a virtual network in Azure, it's pre-configured with an IP range (10.0.0.0/16). This range isn't fixed, you can define your own IP range. You can define both IPv4 and IPv6 address ranges. IP ranges defined for the virtual network are not advertised to Internet. You can create multiple subnets from your IP range. These subnets will be used to assign IP addresses to virtual network interfaces (vNICs). Azure reserves the first four and last IP address for a total of 5 IP addresses within each subnet. There is no concept of VLANs in a public cloud. However, you can create isolation within a virtual network based on your defined subnets.
 
-You can create one large subnet encompassing all the virtual network address space or choose to create multiple subnets. However, if you are using a virtual network gateway, Azure requires you to create a subnet with the name "gateway subnet". Azure will use this subnet to assign IP addresses to virtual network gateways.
+You can create one large subnet encompassing all the virtual network address space or choose to create multiple subnets. 
 
 A virtual network is a virtual, isolated portion of the Azure public network. Each virtual network is dedicated to your subscription. Things to consider when deciding whether to create one virtual network, or multiple virtual networks in a subscription:
 
-- Do any organizational security requirements exist for isolating traffic into separate virtual networks? You can choose to connect virtual networks or not. If you connect virtual networks, you can implement a network virtual appliance, such as a firewall, to control the flow of traffic between the virtual networks. For more information, see [security](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) and [connectivity](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json).
+- Do any organizational security requirements exist for isolating traffic into separate virtual networks? You can choose to connect virtual networks or not. If you connect virtual networks, you can implement a network virtual appliance, such as a firewall, to control the flow of traffic between the virtual networks. For more information, visit [security](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) and [connectivity](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json).
 
 - Do any organizational requirements exist for isolating virtual networks into separate [subscriptions](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) or [regions](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json)?
 
@@ -50,7 +50,7 @@ The following three patterns are common when it comes to organizing your workloa
 
 In this pattern, all the components of your workload or, in some cases, your entire IT footprint is put inside a single virtual network. This pattern is possible if you're operating solely in a single region since a virtual network can't span multiple regions.
 
-The entities you would most likely use for creating segments inside this virtual network are NSGs,potentially using ASGs to simplify administration. The image below is an example of how such a segmented virtual network would look.
+The entities you would most likely use for creating segments inside this virtual network are NSGs,potentially using ASGs to simplify administration. The image below is an example of a segmented virtual network.
 
 :::image type="content" source="../media/single-azure-region.png" alt-text="Virtual network in a single region.":::
 
@@ -75,7 +75,7 @@ This pattern is a more advanced virtual network organization where you choose a 
 
 
 
-The recommended Azure cloud native segmentation control is Azure Firewall. Azure Firewall works across both Virtual Networks and subscriptions to govern traffic flows using layer 3 to layer 7 controls. You can define how your communication rules look (for example, virtual network X can't talk with virtual network Y but can talk with virtual network Z, no Internet for Virtual network X except for access to *.github.com, and so on) and apply it consistently. With Azure Firewall Manager, you can centrally manage policies across multiple Azure Firewalls and enable DevOps teams to further customize local policies.
+The recommended Azure cloud native segmentation control is Azure Firewall. Azure Firewall works across both Virtual Networks and subscriptions to govern traffic flows using layer 3 to layer 7 controls. You can define your communication rules (for example, virtual network X can't talk with virtual network Y but can talk with virtual network Z, no Internet for Virtual network X except for access to *.github.com, and so on) and apply it consistently. With Azure Firewall Manager, you can centrally manage policies across multiple Azure Firewalls and enable DevOps teams to further customize local policies.
 
 | Network capabilities| Pattern 1| Pattern 2| Pattern 3 |
 | - | - | - | - |
