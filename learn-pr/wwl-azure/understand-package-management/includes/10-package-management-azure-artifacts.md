@@ -1,6 +1,6 @@
 **Estimated time:** 40 minutes.
 
-**Lab files:** none.<br>
+**Lab files:** none.
 
 ## Scenario
 
@@ -19,7 +19,7 @@ After completing this lab, you'll be able to:
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).<br>
- -  Visual Studio 2022 Community Edition available from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads). Visual Studio 2022 installation should include **ASP.NET****and web development**, **Azure development**, and **.NET Core cross-platform development** workloads.
+ -  Visual Studio 2022 Community Edition available from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads). Visual Studio 2022 installation should include **ASP.NETand web development**, **Azure development**, and **.NET Core cross-platform development** workloads.
 
 ## Exercises
 
