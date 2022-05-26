@@ -3,7 +3,7 @@ uid: learn.wwl.create-production-workloads-azure-databricks-azure-data-factory
 metadata:
   title: Create production workloads on Azure Databricks with Azure Data Factory
   description: "Create production workloads on Azure Databricks with Azure Data Factory"
-  ms.date: 05/25/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
