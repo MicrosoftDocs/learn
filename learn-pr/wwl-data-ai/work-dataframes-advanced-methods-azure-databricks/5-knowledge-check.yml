@@ -21,7 +21,7 @@ quiz:
       explanation: "This is a valid renaming method."
     - content: "df.alias(\"timestamp\", \"dateCaptured\")"
       isCorrect: true
-      explanation: "The DataFrame does not contain an alias method for a column."
+      explanation: "The DataFrame doesn't contain an alias method for a column."
     - content: "df.toDF(\"dateCaptured\")"
       isCorrect: false
       explanation: "This is a valid renaming method."
@@ -32,7 +32,7 @@ quiz:
       explanation: "This syntax is incorrect."
     - content: "df.groupBy(col(\"storefront\")).avg(col(\"completedTransactions\"))"
       isCorrect: false
-      explanation: "This syntax is incorrect. You would receive an error that Column is not iterable."
+      explanation: "This syntax is incorrect. You would receive an error that Column isn't iterable."
     - content: "df.groupBy(col(\"storefront\")).avg(\"completedTransactions\")"
       isCorrect: true
       explanation: "Correct. The syntax shown groups the data by the storefront Column, then calculates the average value of completed sales transactions."
