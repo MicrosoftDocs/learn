@@ -66,7 +66,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
     ```
-    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/11-Delta-Lake-Architecture.dbc?raw=true
+    https://github.com/MicrosoftLearning/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/11-Delta-Lake-Architecture.dbc?raw=true
     ```
 
 5. Select **Import**.
