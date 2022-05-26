@@ -2,12 +2,17 @@ After creating and running a pipeline to train the clustering model, you can cre
 
 ## Create an inference pipeline
 
-1. In Azure Machine Learning Studio, open the **Train Penguin Clustering** pipeline you created previously.
-2. Navigate to the the **Create inference pipeline** drop-down list, located on the top right hand corner of the screen. If you do not see it, you may need to expand your screen or click on the **...** three dots which represent **More Actions** on the top right hand corner. Then click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
+1. In Azure Machine Learning Studio, expand the left-hand pane by selecting the three lines at the top left of the screen. Click on **Jobs** (under **Assets**) to view all of the jobs you have run. Select the experiment **mslearn-penguin-training**, then select the **mslearn-penguin-training** pipeline. 
+2. At the top of the canvas you will see a menu. You may need to expand your screen to full and click on the three dots icon **...** on the top right hand corner of the screen in order to find **Create inference pipeline** in the menu.  
+
+> [!div class="centered"]
+> ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png) 
+
+3. Click on the **Create inference pipeline** drop-down list. Then click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
 
    *If the pipeline does not include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then re-open the **Train Penguin Clustering-real time inference** pipeline.*
 
-3. Rename the new pipeline to **Predict Penguin Clusters**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. The transformations and clustering model in your training pipeline are encapsulated in this pipeline based on the statistics from your training data, and will be used to transform and score the new data.
+4. Rename the new pipeline to **Predict Penguin Clusters**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. The transformations and clustering model in your training pipeline are encapsulated in this pipeline based on the statistics from your training data, and will be used to transform and score the new data.
 
     You are going to make the following changes to the inference pipeline:
 
@@ -21,7 +26,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
 
-4. The inference pipeline assumes that new data will match the schema of the original training data, so the **penguin-data** dataset from the training pipeline is included. However, this input data includes a column for the penguin species, which the model does not use. Delete both the **penguin-data** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which contains feature values for three new penguin observations (including headers):
+5. The inference pipeline assumes that new data will match the schema of the original training data, so the **penguin-data** dataset from the training pipeline is included. However, this input data includes a column for the penguin species, which the model does not use. Delete both the **penguin-data** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which contains feature values for three new penguin observations (including headers):
 
     ```CSV
     CulmenLength,CulmenDepth,FlipperLength,BodyMass
@@ -30,14 +35,14 @@ After creating and running a pipeline to train the clustering model, you can cre
     46.6,17.8,193,3800
     ```
 
-5. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the first **Apply Transformation** module.
-6. Delete the **Evaluate Model** module.
-7. Verify that your pipeline looks similar to the following:
+6. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the first **Apply Transformation** module.
+7. Delete the **Evaluate Model** module.
+8. Verify that your pipeline looks similar to the following:
 
 > [!div class="centered"]
 > ![Inference pipeline for clustering](../media/inference-clusters.png)
 
-8. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. This may take a while!
-9. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
+9. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. This may take a while!
+10. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
 
 Your inference pipeline assigns penguin observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.
