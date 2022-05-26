@@ -3,7 +3,7 @@ uid: learn.wwl.software-composition-analysis
 metadata:
   title: Software Composition Analysis
   description: "Software Composition Analysis"
-  ms.date: 05/17/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.software-composition-analysis.introduction
 - learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
@@ -49,7 +51,7 @@ units:
 - learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
 - learn.wwl.software-composition-analysis.examine-tools-for-assess-package-security-license-rate
 - learn.wwl.software-composition-analysis.interpret-alerts-from-scanner-tools
-- learn.wwl.software-composition-analysis.implement-security-and-compliance-in-an-azure-pipeline
+- learn.wwl.software-composition-analysis.implement-security-compliance-azure-pipeline
 - learn.wwl.software-composition-analysis.knowledge-check
 - learn.wwl.software-composition-analysis.summary
 badge:
