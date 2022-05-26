@@ -5,8 +5,8 @@ metadata:
   description: Get an introduction to Python, and be inspired to learn, discover, and create using Python-based data science and machine learning to help generate knowledge about the world beyond Earth.
   brand: vs-code
   ms.date: 05/05/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Discover the role of Python in space exploration

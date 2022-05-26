@@ -11,7 +11,7 @@ You've been tasked with identifying the technology and building a proof-of-conce
 In this module, you will:
 
 - Learn the basic architecture of .NET MAUI
-- Create .NET MAUI app
+- Create a .NET MAUI app
 - Define a shared UI for the platforms supported by .NET MAUI
 - Deploy a .NET MAUI app from Visual Studio
 - Access platform APIs using .NET MAUI
