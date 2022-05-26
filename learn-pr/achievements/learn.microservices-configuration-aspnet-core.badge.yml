@@ -1,0 +1,8 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.microservices-configuration-aspnet-core.badge
+metadata:
+  title: >-
+    Microsoft Badge: Implement feature flags in a cloud-native ASP.NET Core
+    microservices app was issued by Microsoft
+socialImageUrl: >-
+  /learn/achievements/aspnetcore/microservices-configuration-aspnet-core-social.png

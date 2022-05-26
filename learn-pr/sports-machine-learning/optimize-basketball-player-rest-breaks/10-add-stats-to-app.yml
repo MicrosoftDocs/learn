@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Add PER stats to the web app
   description: Add PER stats to the web app
   ms.date: 03/10/2021
-  author: drguthals 
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

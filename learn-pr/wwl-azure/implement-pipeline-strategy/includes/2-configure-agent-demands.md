@@ -1,10 +1,12 @@
-Not all agents are the same. We've seen that they can be based on different operating systems, but they can also install different dependencies. To describe it, every agent has a set of capabilities configured as name-value pairs. The capabilities such as machine name and operating system type that are automatically discovered are referred to as **system capabilities**. The ones that you define are called **user capabilities**.
+Not all agents are the same. We've seen that they can be based on different operating systems, but they can also install different dependencies.
+
+To describe it, every agent has a set of capabilities configured as name-value pairs. The capabilities such as machine name and operating system type that are automatically discovered are referred to as **System capabilities**. The ones that you define are called **User-defined capabilities**.
 
 There's a tab for Capabilities on the Agent Pools page (at the Organization level) **when you select an agent**.
 
 You can use it to see the available capabilities for an agent and to configure user capabilities.
 
-For the self-hosted agent that I configured in the earlier demo, you can see the capabilities on that tab:
+Opening a configured self-hosted agent, you can see the capabilities on that tab:
 
 :::image type="content" source="../media/devops-ci-image-026-375e9237.png" alt-text="Screenshot of the Capabilities tab. User and system capabilities are shown.":::
 
