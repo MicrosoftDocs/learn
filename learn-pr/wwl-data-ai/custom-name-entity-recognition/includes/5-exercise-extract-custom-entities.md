@@ -68,7 +68,7 @@ Once configuration is complete, create a custom named entity recognition project
     - **Description**: *Enter short description*
     - **Text primary language**: English (US)
     - **Blob store container**: customNER
-    - **Are you files tagged**: No, I need to tag my files as part of this project
+    - **Are your files tagged**: No, I need to tag my files as part of this project
 
 ## Tag your data
 
@@ -106,14 +106,14 @@ After you've tagged your data, you need to train your model.
 In real world applications, it's important to evaluate and improve your model to verify it's performing as you expect. Two pages on the left show you the details of your trained model, and any testing that failed.
 
 1. Select **View model details** and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
-2. Select **Improve model**. Your model is already selected in the drop down, and it defaults to show incorrect predictions only. Toggle that selection to see the documents you indicated for testing and what was extracted.
+2. Select **Improve model**. Your model is already selected in the drop-down, and it defaults to show incorrect predictions only. Toggle that selection to see the documents you indicated for testing and what was extracted.
 
 ## Deploy your model
 
 When you're satisfied with the training of your model, it's time to deploy it, which allows you to start extracting entities through the API.
 
 1. On the left panel, select **Deploy model**
-2. Select **Add deployment**, then enter the name `customExtractAds` and select `ExtractAds` from the model drop down
+2. Select **Add deployment**, then enter the name `customExtractAds` and select `ExtractAds` from the model drop-down
 3. Click **Submit** to deploy your model
 
 ## Send entity recognition task to your model
@@ -136,7 +136,7 @@ To test the text analytics capabilities of the Language service, we'll use a sho
 
     ![Wait for PowerShell to start.](../media/powershell-prompt.png)
 
-### Configure and run Powershell
+### Configure and run PowerShell
 
 Now that you have a custom model, you can run a simple client application that uses the Language service.
 
@@ -159,7 +159,7 @@ Now that you have a custom model, you can run a simple client application that u
     code extract-entities.ps1
     ```
 
-3. Open `extract-entities.ps1`, and note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
+3. In `extract-entities.ps1`, note the top two lines of the script with places for your Language service key and endpoint, as well as your project and model names. Replace the placeholders for `$key` and `$endpoint` with your resource values (`$projectName`, and `$modelName` should match what you entered above), and save the file.
 
     > [!TIP]
     > If you don't have these values readily available, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true), find the Language resource you created earlier, and select the **Keys and endpoint** page on the left

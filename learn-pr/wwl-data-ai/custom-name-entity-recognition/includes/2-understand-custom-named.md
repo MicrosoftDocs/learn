@@ -1,4 +1,4 @@
-Custom NER is an Azure API service that looks at documents, identifies, and extracts user defined entities. This could anything from names and addresses from bank statements to knowledge mining to improve search results.
+Custom NER is an Azure API service that looks at documents, identifies, and extracts user defined entities. This could be anything from names and addresses from bank statements to knowledge mining to improve search results.
 
 Custom NER is part of the Language service in Azure Cognitive Services.
 
@@ -48,20 +48,20 @@ Examples of when to use the built-in NER include finding locations, names, or UR
 
 Custom NER, which is the focus of the rest of this module, is available when the entities you want to extract are not part of the built-in service, or you only want to extract specific entities. You can make your custom NER model as simple or complex as is required for your app.
 
-Examples of when you'd want custom NER include specific legal or bank data, knowledge mining to enhance catalog search, or looking for specific text for audit policies. Each one of these projects require a specific set of entities and data it needs to extract.
+Examples of when you'd want custom NER include specific legal or bank data, knowledge mining to enhance catalog search, or looking for specific text for audit policies. Each one of these projects requires a specific set of entities and data it needs to extract.
 
 ## Language service project life cycle
 
 ![Conceptual diagram showing a life cycle with steps to define entities, tag data, train model, view model, improve model, deploy model, and extract entities.](../media/extraction-development-lifecycle.png)
 
-Creating a entity extraction model typically follows a similar path to most Language service features:
+Creating an entity extraction model typically follows a similar path to most Language service features:
 
-1. **Define entities**: Understanding the data and entities you want to identify, and try to make them as clear as possible.
-2. **Tag data**: Tag your existing data, specifying what text in your dataset corresponds to which entity. This step is important to do accurately and completely, as any wrong or missed tags will reduce the effectiveness of the trained model. A good variation of possible input documents is useful.
-3. **Train model**: Train your model once your entities are tagged.
-4. **View model**: After your model is trained, view the results of the model. This includes a score of 0 to 1 that is based on the precision and recall of the data tested.
-5. **Improve model**: Improve your model by seeing which entities failed to be identified, and which entities were incorrectly extracted. Find out what data needs to be added to your model's training to improve performance.
-6. **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API.
+1. **Define entities**: Understanding the data and entities you want to identify, and try to make them as clear as possible. For example, defining exactly which parts of a bank statement you want to extract.
+2. **Tag data**: Tag your existing data, specifying what text in your dataset corresponds to which entity. This step is important to do accurately and completely, as any wrong or missed tags will reduce the effectiveness of the trained model. A good variation of possible input documents is useful. For example, tag bank name, customer name, customer address, specific loan or account terms, loan or account amount, and account number.
+3. **Train model**: Train your model once your entities are tagged. Training teaches your model how to recognize the entities you tagged.
+4. **View model**: After your model is trained, view the results of the model. This includes a score of 0 to 1 that is based on the precision and recall of the data tested. You can see which entities worked well (such as customer name) and which entities need improvement (such as account number).
+5. **Improve model**: Improve your model by seeing which entities failed to be identified, and which entities were incorrectly extracted. Find out what data needs to be added to your model's training to improve performance. This page shows you how entities failed, and which entities (such as account number) need to be differentiated from other similar entities (such as loan amount).
+6. **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API. In our example, you can send to requests to the model when it is deployed to extract bank statement entities.
 7. **Extract entities**: Use your model for extracting entities. The lab covers how to use the API, and you can view the [API reference](https://aka.ms/ct-runtime-swagger) for more details.
 
 ## Considerations for data selection and refining entities
@@ -80,7 +80,7 @@ Keeping your entities distinct will also go a long way in helping your model's p
 
 ## How to extract entities
 
-When submitting an extraction task, the API requires the JSON body to specify which task to execute. For custom NER, the task for the JSON payload is `customEntityRecognitionTasks`.
+To submit an extraction task, the API requires the JSON body to specify which task to execute. For custom NER, the task for the JSON payload is `customEntityRecognitionTasks`.
 
 Your payload will look similar to the following:
 
@@ -122,4 +122,4 @@ The Language service enforces the following restrictions:
   - **Authoring** - this is the API that creates a project, trains, and deploys your model. Limited to 10 POST and 100 GET per minute
   - **Analyze** - this is the API that does the work of actually extracting the entities; it requests a task and retrieves the results. Limited to 20 GET or POST
 - **Projects** - only 1 storage account per project, 500 projects per resource, and 50 trained models per project
-- **Entities** - each entity must be less than 10 words and 100 characters, up to 200 entity types, and at least 10 tagged instances per entity
+- **Entities** - each entity must be fewer than 10 words and 100 characters, up to 200 entity types, and at least 10 tagged instances per entity

@@ -1,4 +1,4 @@
-Custom named entity recognition (NER), otherwise known as custom entity extraction, is one of the many natural language processing features offered by Azure Language service. Custom NER enables developers to extract pre-defined entities from text documents, without those documents being in a known format - such as legal agreements or online ads.
+Custom *named entity recognition* (NER), otherwise known as custom entity extraction, is one of the many *natural language processing* (NLP) features offered by Azure Language service. Custom NER enables developers to extract pre-defined entities from text documents, without those documents being in a known format - such as legal agreements or online ads.
 
 An entity is a person, place, thing, event, skill, or value.
 

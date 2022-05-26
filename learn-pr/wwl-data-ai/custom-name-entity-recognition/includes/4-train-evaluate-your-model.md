@@ -8,13 +8,13 @@ Individual entities as well as your overall model score are broken down into thr
 |--------|-------------|
 | Precision | The ratio of successful entity recognitions to all attempted recognitions. A high score means that as long as the entity is recognized, it's labeled correctly.  |
 | Recall    | The ratio of successful entity recognitions to the actual number of entities in the document. A high score means it finds the entity or entities well, regardless of if it assigns them the right label  |
-| F1 score    | Combination of precision and recall to provide a single scoring metric  |
+| F1 score    | Combination of precision and recall providing a single scoring metric  |
 
 Scores are available both per entity and for the model as a whole. You may find an entity scores well, but the whole model does not.
 
 ## How to interpret metrics
 
-Ideally we want our model to score well in both precision and recall, which means the entity recognition works well. If both score low, it means the model is both struggling to recognize entities in the document, and when it does extract that entity, it doesn't assign it the correct label with high confidence.
+Ideally we want our model to score well in both precision and recall, which means the entity recognition works well. If both metrics have a low score, it means the model is both struggling to recognize entities in the document, and when it does extract that entity, it doesn't assign it the correct label with high confidence.
 
 If precision is low but recall is high, it means that the entity is recognized well but it's not labeled as the correct entity type.
 

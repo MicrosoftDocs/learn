@@ -93,7 +93,7 @@ Each tag that you identify gets saved into a file that lives in your storage acc
 | `documents` | Array of tagged documents |
 | `location` | Path to file within container connected to the project |
 | `culture` | Language of the file |
-| `entities` | Array of information on the entities present in the current document |
+| `entities` | Array of present entities in the current document |
 | `regionStart` | Inclusive character position for start of text |
 | `regionLength` | Length in characters of the data used in training |
 | `labels` | Array of tagged entities in the files |
