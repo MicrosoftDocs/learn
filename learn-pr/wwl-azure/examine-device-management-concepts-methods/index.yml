@@ -28,6 +28,8 @@ products:
 - azure
 - azure-iot-hub
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.examine-device-management-concepts-methods.introduction
 - learn.wwl.examine-device-management-concepts-methods.review

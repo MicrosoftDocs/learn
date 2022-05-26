@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Analyze and summarize data in Python
   description: Output the data we gather and use functions to summarize it.
   ms.date: 06/29/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-portal
+subjects:
+- cloud-computing
 units:
 - learn.tour-azure-portal-features.1-introduction
 - learn.tour-azure-portal-features.2-azure-management

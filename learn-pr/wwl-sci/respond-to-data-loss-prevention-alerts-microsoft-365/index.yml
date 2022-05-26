@@ -13,7 +13,7 @@ summary: As a Security Operations Analyst, you need to understand compliance rel
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe data loss prevention (DLP) components in Microsoft 365
-  - Investigate DLP alerts in the Microsoft 365 compliance center
+  - Investigate DLP alerts in the Microsoft Purview compliance portal
   - Investigate DLP alerts in Microsoft Defender for Cloud Apps
 prerequisites: |
   Intermediate understanding of Microsoft 365.
@@ -25,6 +25,9 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- information-protection-governance
+- compliance
 units:
 - learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.introduction
 - learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.understand-dlp-alerts

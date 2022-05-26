@@ -42,6 +42,10 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
+- virtual-machine
+- device-management
 units:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.0-introduction
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.1-input-output-basics

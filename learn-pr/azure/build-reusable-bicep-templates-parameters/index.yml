@@ -40,7 +40,10 @@ languages:
   - bicep
 products:  
   - azure-resource-manager
-units:  
+subjects:
+  - devops
+  - cloud-computing
+units:
 - learn.azure.build-reusable-bicep-templates-parameters.introduction
 - learn.azure.build-reusable-bicep-templates-parameters.understand-parameters
 - learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators

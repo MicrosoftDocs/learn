@@ -31,6 +31,8 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- data-analytics
 modules:
 - learn.wwl.intro-to-transact-sql
 - learn.wwl.sort-and-filter-queries

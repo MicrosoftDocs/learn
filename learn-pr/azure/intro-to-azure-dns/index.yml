@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-dns
+subjects:
+- networking
 units:
 - learn.introduction-to-azure-dns.introduction
 - learn.introduction-to-azure-dns.what-is-azure-dns

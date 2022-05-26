@@ -40,7 +40,7 @@ Within the **CosmosClientOptions** class, you can set the **ConnectionMode** pro
 | **Value** | **Description** |
 | --- | --- |
 | **Gateway** | All requests are routed through the Azure Cosmos DB gateway as a proxy |
-| **Direct** | The gateway is only used in initialization and to and cache addresses for direct connectivity to data nodes |
+| **Direct** | The gateway is only used in initialization and to cache addresses for direct connectivity to data nodes |
 
 The default setting is to use the **Direct** connection mode. This example configures the client to use the default settings.
 

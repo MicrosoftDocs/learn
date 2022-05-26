@@ -2,7 +2,7 @@ This unit discusses some of the motivations for cloud migration that can lead to
 
 ## Tailwind Traders' executive challenge
 
-A review of the customer narrative would suggest that both innovation and migration are motivations for Tailwind Traders. Much of the company's focus is on innovative technology investments, but most the technology costs are on central IT operations.
+A review of the customer narrative would suggest that both innovation and migration are motivations for Tailwind Traders. Much of the company's focus is on innovative technology investments, but most of the technology costs are on central IT operations.
 
 Tailwind exhibits many common business values and expected benefits, including innovation and growth, improvements to operations and security, and technical capabilities and agility. Use this unit to understand how the company balances those expectations.
 
@@ -84,7 +84,22 @@ It's common for organizations to have competing motivations. But competing motiv
 
 Stratification is a sound principle in macroeconomics. But with the limited budget of most technology-driven change management projects, a stratified approach leads to confusing and distracting signals within the program. More noticeably, multiple, simultaneous investments in competing strategies lead to misalignment of the people, processes, and projects that are required for overall program success. For digital transformations to succeed, organizations must prioritize motivations based on timeline expectations, organizational alignment, and capacity for investment.
 
-To create clarity and alignment, it's suggested that complex digital transformation projects align to an organization's horizons or phased program delivery. In this type of approach, the company commits to a single motivation category for a time-bound period. All teams and organizations prioritize investments and collaborate to support the priority outcome, as needed, for the defined period of time. This approach creates unity, clarity, and drives a snowball effect, allowing the success of one horizon to accelerate the target outcomes of the next horizon.
+To create clarity and alignment, it's suggested that complex digital transformation projects align to an organization's horizons or phased program delivery. In this type of approach, the company commits to a single motivation category for a time-bound period. All teams and organizations prioritize investments and collaborate to support the priority outcome, as needed, for the defined period of time. This approach creates unity, clarity, and drives ## a snowball effect, allowing the success of one horizon to accelerate the target outcomes of the next horizon.
+
+## Cloud adoption strategy tools
+
+Tailwind Traders uses the [Cloud Adoption Strategy Evaluator](/assessments/?id=8fefc6d5-97ac-42b3-8e97-d82701e55bab&mode=pre-assessment) to assess its strategy posture across distinct areas of the Strategy methodology, such as:
+
+- Identifying motivations
+- Documenting expected business outcomes
+- Evaluating financial considerations
+- Technical considerations in creating a business case.
+
+Based on responses to the assessment questions, the Cloud Adoption Strategy Evaluator navigates you in detail through the categories most relevant to your organization. Personalized to you, according to your inputs for each question, we provide you with an aggregate strategy score—calculated and averaged across your uniquely identified strategy areas.
+
+As you create your cloud adoption plan, and then document your strategy for stakeholder review, you’ll also receive curated guidance that points to specific tools and templates, along with recommendations based on principles of cloud economics and organizational alignment that provide a unified approach to build your business case.
+
+[Take the Cloud Adoption Strategy Evaluator assessment.](/assessments/?id=8fefc6d5-97ac-42b3-8e97-d82701e55bab&mode=pre-assessment)
 
 ## Tailwind Traders' horizon plan
 

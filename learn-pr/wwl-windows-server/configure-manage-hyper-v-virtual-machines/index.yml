@@ -30,6 +30,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-manage-hyper-v-virtual-machines.introduction
 - learn.wwl.configure-manage-hyper-v-virtual-machines.list-virtual-machine-configuration-versions

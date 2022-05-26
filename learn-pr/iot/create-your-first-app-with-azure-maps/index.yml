@@ -30,6 +30,8 @@ roles:
 products:
 - azure-iot
 - azure-maps
+subjects:
+- iot
 units:
 - learn.iot.create-your-first-app-with-azure-maps.introduction
 - learn.iot.create-your-first-app-with-azure-maps.create-your-azure-maps-account

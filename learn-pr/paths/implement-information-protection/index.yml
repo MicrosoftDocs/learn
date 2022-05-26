@@ -23,6 +23,8 @@ roles:
 - risk-practitioner
 products:
 - m365-information-protection
+subjects:
+- information-protection-governance
 modules:
 - learn-m365.m365-compliance-information-governance
 - learn-m365.m365-security-data-loss

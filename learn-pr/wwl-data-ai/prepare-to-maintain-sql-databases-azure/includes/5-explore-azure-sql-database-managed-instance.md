@@ -16,17 +16,17 @@ For a complete list of the features available on Azure SQL Managed Instance, see
 
 Microsoft offers several benefits to SQL Server licenses. For both SQL Database and SQL Managed Instance, taking advantage of your existing licenses can reduce the cost of running the PaaS offering.
 
-- For each core of Enterprise Edition with Active Software Assurance, you are eligible for one vCore of SQL Database or SQL Managed Instance Business Critical, and eight vCores of General Purpose.
+- For each core of Enterprise Edition with Active Software Assurance, you're eligible for one vCore of SQL Database or SQL Managed Instance Business Critical, and eight vCores of General Purpose.
 
-- For each core of Standard Edition with Active Software Assurance, you are eligible for one vCore of General Purpose.
+- For each core of Standard Edition with Active Software Assurance, you're eligible for one vCore of General Purpose.
 
-This model can reduce the total license costs by up to 40%. Effectively, you will only be paying for the compute and storage costs, and not the software licensing costs.
+This model can reduce the total license costs by up to 40%. Effectively, you'll only be paying for the compute and storage costs, and not the software licensing costs.
 
 For more information on bring-your-own licensing model, see [License Mobility through Software Assurance on Azure](https://azure.microsoft.com/pricing/license-mobility/).
 
 ## Connectivity architecture
 
-Connections to SQL Managed Instance are made through TDS endpoints. While the routing and security on these connections differ, there is a gateway component that handles and routes connections to the database service. This gateway component is also deployed in a highly available fashion.
+Connections to SQL Managed Instance are made through TDS endpoints. While the routing and security on these connections differ, there's a gateway component that handles and routes connections to the database service. This gateway component is also deployed in a highly available fashion.
 
 ## Backup and restore
 
@@ -36,17 +36,17 @@ Similarly, SQL Managed Instance allows easy migration of existing applications, 
 
 There are some important considerations when running backup and restore operations on SQL Managed Instance databases:
 
-- It isn't possible to overwrite an existing database during the restore process. Before restoring a database, you must ensure that it does not exist.
+- It isn't possible to overwrite an existing database during the restore process. Before restoring a database, you must ensure that it doesn't exist.
 
-- For SQL Managed Instance, backups can only be restored to another managed instance. It is not possible to restore a managed instance database backup to a SQL Server running on a virtual machine or SQL Database.
+- For SQL Managed Instance, backups can only be restored to another managed instance. It isn't possible to restore a managed instance database backup to a SQL Server running on a virtual machine or SQL Database.
 
-- Copy-only backup to Azure blob storage is available for SQL Managed Instance. SQL Database does not support this feature.
+- Copy-only backup to Azure blob storage is available for SQL Managed Instance. SQL Database doesn't support this feature.
 
 For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview).
 
 ## High availability architecture
 
-SQL Database and SQL Managed Instance have similar high availability architectures, which guarantee 99.99% uptime. Windows and SQL Server updates are handled by the backend infrastructure, generally without any effect to your application, though it is important to place a [retry logic](/azure/azure-sql/database/troubleshoot-common-connectivity-issues) into your application.
+SQL Database and SQL Managed Instance have similar high availability architectures, which guarantee 99.99% uptime. Windows and SQL Server updates are handled by the backend infrastructure, generally without any effect to your application, though it's important to place a [retry logic](/azure/azure-sql/database/troubleshoot-common-connectivity-issues) into your application.
 
 The auto-failover groups feature allows you to fail over a group of replicated databases on a server to another region. This feature is designed on top of the existing active geo-replication capability, which simplifies deployment and management of geo-replicated databases.
 
@@ -72,7 +72,7 @@ The Database Migration Service is a managed service that connects your on-premis
 
 Machine Learning Services provides machine learning operations within your relational database structure. This feature supports Python and R packages, ideal for high-intensive predictive capabilities. This option is available on SQL Managed Instance, SQL Server on Azure virtual machine, and on-premises SQL Server.
 
-Applications can leverage relational database on Azure combined with machine learning high-performance capabilities, where you can:
+Applications can use relational database on Azure combined with machine learning high-performance capabilities, where you can:
 
 - Train machine learning models based on either sampled dataset or population dataset.
 

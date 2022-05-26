@@ -30,6 +30,8 @@ products:
 - github
 prerequisites: |
   - Administrative access to your GitHub organization or GitHub Enterprise
+subjects:
+- identity-access
 units:
 - learn.github.authenticate-authorize-user-identities-github.1-introduction
 - learn.github.authenticate-authorize-user-identities-github.2-user-identity-access-management

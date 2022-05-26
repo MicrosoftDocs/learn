@@ -38,6 +38,8 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
   - github
+subjects:
+- development-tools
 units:
   - learn.microservices-devops-aspnet-core.1-introduction
   - learn.microservices-devops-aspnet-core.2-setup-environment

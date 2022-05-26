@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.aks-application-autoscaling-native.badge
+metadata:
+  title: >-
+    Microsoft Badge: Application scalability on AKS with
+    HorizontalPodAutoscalers was issued by Microsoft
+socialImageUrl: /learn/achievements/aks-application-autoscaling-native-social.png

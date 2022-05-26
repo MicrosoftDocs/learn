@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.introduction
 - learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.understand

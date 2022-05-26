@@ -148,7 +148,6 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 1.  On the results page, locate and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 2.  Click **Create**. 
 
-    :::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="create a load balancer":::
     
 3.  On the **Basics** tab, use the information in the table below to create the load balancer.
     

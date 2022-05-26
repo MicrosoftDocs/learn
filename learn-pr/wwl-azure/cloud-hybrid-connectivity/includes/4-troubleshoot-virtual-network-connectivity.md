@@ -62,9 +62,9 @@ Transitive peering is when you:
 
 - Peer VNetB to VNetC.
 
-- By default, VNetA is peered with VNetC.
+- By default, VNetA is not peered with VNetC.
 
-This is not supported with Azure peering. To achieve peering between VNetA and VNetC, you must peer them together. Alternatively, use a hub-and-spoke configuration and go through an NVA in the hub.
+To achieve peering between VNetA and VNetC, you must peer them together. Alternatively, use a hub-and-spoke configuration and go through an NVA in the hub.
 
 :::image type="content" source="../media/4-virtual-network-peering.png" alt-text="Screenshot showing all v nets peered to each other.":::
 

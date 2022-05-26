@@ -5,8 +5,8 @@ metadata:
   title: 'Linear regression: Evaluating the model'
   description: Learn how to evaluate models in linear regressions with machine learning models for data science.
   ms.date: 05/19/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

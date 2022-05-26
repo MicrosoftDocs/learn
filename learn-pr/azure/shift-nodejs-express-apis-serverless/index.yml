@@ -35,6 +35,8 @@ roles:
 products:
   - azure
   - azure-functions
+subjects:
+- development-tools
 units:
   - learn.azure.shift-express-api-azure-functions.1-introduction
   - learn.azure.shift-express-api-azure-functions.2-analyze-migration-serverless

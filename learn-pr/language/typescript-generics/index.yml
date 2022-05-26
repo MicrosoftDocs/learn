@@ -36,6 +36,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.typescript-generics.1-introduction
 - learn.language.typescript-generics.2-what-are-generics
@@ -46,4 +48,4 @@ units:
 - learn.language.typescript-generics.7-knowledge-check
 - learn.language.typescript-generics.8-summary-resources
 badge:
-  uid: learn.language.typescript-generics.badge 
+  uid: learn.language.typescript-generics.badge

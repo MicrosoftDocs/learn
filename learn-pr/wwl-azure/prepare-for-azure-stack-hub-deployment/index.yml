@@ -31,6 +31,8 @@ roles:
 products:
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
 units:
 - learn.wwl.prepare-for-azure-stack-hub-deployment.introduction
 - learn.wwl.prepare-for-azure-stack-hub-deployment.2-deployment-worksheet-for-azure-stack-hub-integrated-systems

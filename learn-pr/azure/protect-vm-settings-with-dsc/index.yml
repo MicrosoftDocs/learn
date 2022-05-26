@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-automation
+subjects:
+- virtual-machine
 units:
 - learn.azure.protect-vm-settings-with-dsc.introduction
 - learn.azure.protect-vm-settings-with-dsc.what-is-azure-automation-state-configuration

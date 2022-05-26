@@ -50,6 +50,9 @@ languages:
 products:
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.publish-reusable-bicep-code-using-github-actions.introduction
 - learn.azure.publish-reusable-bicep-code-using-github-actions.publish-bicep-code-deployment-workflow

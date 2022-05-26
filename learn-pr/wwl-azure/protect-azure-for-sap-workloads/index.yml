@@ -28,6 +28,10 @@ roles:
 products:
 - azure
 - power-platform
+subjects:
+- cloud-computing
+- networking
+- identity-access
 units:
 - learn.wwl.protect-azure-for-sap-workloads.introduction
 - learn.wwl.protect-azure-for-sap-workloads.explore-scenario

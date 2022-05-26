@@ -28,6 +28,9 @@ roles:
 products:
 - azure
 - azure-vmware-solution
+subjects:
+- cloud-computing
+- virtual-machine
 modules:
 - learn.azure.intro-azure-vmware-solution
 - learn.deploy-azure-vmware-solution

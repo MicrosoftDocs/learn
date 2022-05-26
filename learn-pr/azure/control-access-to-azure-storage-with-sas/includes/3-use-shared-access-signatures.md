@@ -22,6 +22,7 @@ The SAS token contains the following components, or query parameters.
 | sp | signed permission | sp=r | Indicates one or more operations the client can perform. Values can be compounded: a (add), c (create), d (delete), l (list), r (read), and w (write). sp=r is read only; sp=acdlrw grants all the available rights. |
 | st | start time | st=2020-01-20T11:42:32Z | The date and time when access starts. |
 | se | expiry time | se=2020-01-20T19:42:32Z | The date and time when access ends. Based on the start date, this example grants eight hours of access. |
+| spr | signed protocol | spr=https | The protocol permitted for a request made with the SAS. An optional field, that has possible values of both HTTPS and HTTP (the default value), or HTTPS only. |
 | sv | signed version | sv=2019-02-02 | The service version of the storage API to use. |
 | sr | scope of resource| sr=b | The kind of storage being accessed. Available values include b (blob), c (container), d (directory), f (file) s (share) |
 | sig | signature | sig=SrW1...wVZs%3D | The cryptographic signature. |
@@ -69,9 +70,6 @@ StorageSharedKeyCredential storageSharedKeyCredential = new StorageSharedKeyCred
 
 sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
 ```
-
-> [!NOTE]
-> All of the previous code uses Azure Storage API version 12. All the examples on [docs.microsoft.com](/azure/storage/common/storage-samples-dotnet?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) use the legacy version of the API. To see more code samples for version 12, go to the GitHub repository [Azure.Storage.Blobs Samples](https://github.com/Azure/azure-sdk-for-net/tree/7b41d66f3c611eb2113e2ec11cb56e7edf542628/sdk/storage/Azure.Storage.Blobs/samples).
 
 ### Best practices
 

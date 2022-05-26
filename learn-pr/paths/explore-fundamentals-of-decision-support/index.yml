@@ -23,6 +23,8 @@ roles:
 - student
 products:
 - azure-anomaly-detector
+subjects:
+- artificial-intelligence
 modules:
 - learn.azure.intro-to-anomaly-detector
 trophy:

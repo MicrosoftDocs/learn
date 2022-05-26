@@ -29,6 +29,8 @@ prerequisites: |
   - Basic Azure Health Bot
   - Language understanding in Azure Health Bot
   - Azure Health Bot built-in scenarios
+subjects:
+- chatbot
 units:
   - learn.health-bot-template-scenarios.1-introduction
   - learn.health-bot-template-scenarios.2-introduction-scenario-templates

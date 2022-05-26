@@ -1,6 +1,6 @@
 Data is an organization's most valuable and irreplaceable asset. Encryption serves as the last and strongest line of defense in a layered security strategy for data. 
 
-Imagine you work for a healthcare organization that stores large amounts of sensitive data. The organization recently experienced a breach that exposed the unencrypted sensitive data of patients. The organization is now fully aware that it has gaps in its data protection capabilities. It wants to understand how it could have better used encryption to protect itself and its patients from this type of incident. 
+Imagine you work for a healthcare organization that stores large amounts of sensitive data. The organization recently experienced a breach that exposed the unencrypted sensitive data of patients. The organization is now fully aware that it has gaps in its data-protection capabilities. It wants to understand how it could have better used encryption to protect itself and its patients from this type of incident. 
 
 Here, we'll take a look at what encryption is, how to approach the encryption of data, and what encryption capabilities are available on Azure.
 
@@ -36,7 +36,7 @@ The following illustration is an example of encryption in transit. The data is e
 
 ## Identify and classify data
 
-Let's revisit the problem that your organization is trying to solve. The organization has had previous incidents that exposed sensitive data, so there's a gap between what's being encrypted and what should be encrypted. The organization needs to start by identifying and classifying the types of data that it's storing, and align this with the business and regulatory requirements for the storage of data. 
+Let's revisit the problem that your organization is trying to solve. The organization has had previous incidents that exposed sensitive data, so there's a gap between what's being encrypted and what should be encrypted. The organization needs to start by identifying and classifying the types of data that it's storing, and align this with the business and regulatory requirements for the storage of data.
 
 It's beneficial to classify this data as it relates to the impact of exposure to the organization, its customers, or its partners. An example classification might be as follows:
 
@@ -48,7 +48,7 @@ It's beneficial to classify this data as it relates to the impact of exposure to
 
 By taking an inventory of the types of data being stored, the organization can get a better picture of where sensitive data might be stored and where existing encryption might or might not be happening.
 
-A thorough understanding of the regulatory and business requirements that apply to data that the organization stores is also important. The regulatory requirements that an organization must adhere to often drive a large part of the data encryption requirements.
+A thorough understanding of the regulatory and business requirements that apply to data that the organization stores is also important. The regulatory requirements to which an organization adhere often drive a large part of the data encryption requirements.
 
 Your organization is storing sensitive data that falls under the Health Insurance Portability and Accountability Act (HIPAA), which contains requirements on how to handle and store patient data. Other industries fall under different regulatory requirements. A financial institution might store account information that falls within Payment Card Industry (PCI) standards. An organization that does business in the EU might fall under the General Data Protection Regulation (GDPR), which defines the handling of personal data in the EU. 
 
@@ -95,7 +95,7 @@ Your organization can apply Disk Encryption to its virtual machines to be sure t
 
 ### Encrypt databases
 
-Your organization has several databases that store data that needs more protection. The organization has moved many databases to Azure SQL Database and wants to ensure that data is encrypted there. The organization wants to make sure that if the data files, log files, or backup files are stolen, they're unreadable without access to the encryption keys.
+Your organization has several databases that store data that needs more protection. The organization has moved many databases to Azure SQL Database, and wants to ensure that data is encrypted there. The organization wants to make sure that if the data files, log files, or backup files are stolen, they're unreadable without access to the encryption keys.
 
 Transparent data encryption helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity. It performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. By default, transparent data encryption is enabled for all newly deployed Azure SQL databases.
 
@@ -111,7 +111,7 @@ The Always Encrypted client driver performs the encryption and decryption proces
 
 We've seen that the encryption services all use keys to encrypt and decrypt data. How do we ensure that the keys themselves are secure? You might also have passwords, connection strings, or other sensitive pieces of information that you need to securely store.
 
-Azure Key Vault is a cloud service that works as a secure store for secrets. Key Vault allows you to create multiple secure containers, called vaults. These vaults are backed by hardware security modules (HSMs). Vaults help reduce the chances of accidental loss of security information by centralizing the storage of application secrets. Vaults also control and log the access to anything stored in them. 
+Azure Key Vault is a cloud service that works as a secure store for secrets. Key Vault allows you to create multiple secure containers, called vaults. These vaults are backed by hardware security modules (HSMs). Vaults help reduce the chances of accidental loss of security information by centralizing the storage of application secrets. Vaults also control and log access to anything stored in them.
 
 Azure Key Vault can handle requesting and renewing Transport Layer Security (TLS) certificates, to provide a robust certificate lifecycle management solution. Key Vault is designed to support any type of secret. These secrets can be passwords, database credentials, API keys, and certificates.
 
