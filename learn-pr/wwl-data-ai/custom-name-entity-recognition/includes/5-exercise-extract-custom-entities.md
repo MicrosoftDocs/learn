@@ -48,7 +48,7 @@ Once you have created the language service and storage account, you'll need to u
 
 4. After creating the container, select it and click the **Upload** button to upload the sample ads you downloaded.
 
-## Create project
+## Create a custom named entity recognition project
 
 Once configuration is complete, create a custom named entity recognition project. This project provides a working place to build, train, and deploy your model.
 

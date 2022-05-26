@@ -11,7 +11,7 @@ metadata:
 title: Custom Name Entity Recognition
 summary: Build a custom entity recognition solution
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Understand tagging entities in extraction projects
   - Understand how to build entity recognition projects
 prerequisites: |
