@@ -12,7 +12,10 @@ In this exercise, you're going to work through steps to extend the **Diabetes Tr
 Follow the steps below, using the image above for reference as you add and configure the required modules.
 
 1. Open the **Diabetes Training** pipeline you created in the previous unit if it's not already open.
-2. In the pane on the left, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
+2. In the **Asset Library** pane on the left, in **Components**, find and drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
+>[!TIP]
+> Use the search bar to quickly locate modules. 
+
 3. Select the **Split Data** module, and configure its settings as follows:
     * **Splitting mode** Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
