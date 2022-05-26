@@ -2,7 +2,7 @@ One of the most intuitive ways to analyze the results of data queries is to visu
 
 ## Using built-in notebook charts
 
-When you display a dataframe or run a SQL query in a Spark notebook in Azure Synapse Analytics, the results are displayed under the code cell. By default, results are rendered as a table; but you can also change the results view to a chart. and use the chart properties to customize how the chart visualizes the data, as shown here:
+When you display a dataframe or run a SQL query in a Spark notebook in Azure Synapse Analytics, the results are displayed under the code cell. By default, results are rendered as a table, but you can also change the results view to a chart and use the chart properties to customize how the chart visualizes the data, as shown here:
 
 ![A notebook displaying a column chart of product counts by category](../media/notebook-chart.png)
 

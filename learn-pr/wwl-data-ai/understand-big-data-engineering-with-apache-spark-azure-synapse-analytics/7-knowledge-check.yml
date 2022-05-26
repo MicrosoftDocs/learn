@@ -39,12 +39,12 @@ quiz:
       explanation: "Incorrect. While you could load the data into Spark from a CSV file, you do not need to convert the data from parquet format in order to use it in Spark."
   - content: "You want to write code in a notebook cell that uses a SQL query to retrieve data from a view in the Spark catalog. Which magic should you use?"
     choices:
-    - content: "%%spark."
+    - content: "%%spark"
       isCorrect: false
       explanation: "Incorrect. The %%spark magic instructs Spark to interpret the code in the cell as Scala."
-    - content: "%%pyspark."
+    - content: "%%pyspark"
       isCorrect: false
       explanation: "Incorrect. The %%pyspark magic instructs Spark to interpret the code in the cell as Python."
-    - content: "%%sql."
+    - content: "%%sql"
       isCorrect: true
       explanation: "Correct. The %%sql magic instructs Spark to interpret the code in the cell as SQL."
