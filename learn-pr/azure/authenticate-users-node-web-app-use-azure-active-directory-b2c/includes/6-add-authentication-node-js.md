@@ -73,7 +73,7 @@ The following code snippet shows how to instantiate a `ConfidentialClientApplica
 
 The `auth` element of the `confidentialClientConfig` configuration object has the following information:
 
-|    |Key  |Value  |
+|Key  |Value  |
 |---------|---------|
 |`clientId`|The Application (client) ID for the web app you register in Azure portal|
 |`authority`|The sign in and sign up user flow authority. It is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant and `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow, which you create in the Azure portal, such as `B2C_1_susi`|
