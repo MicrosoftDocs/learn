@@ -3,7 +3,7 @@ uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.4-truffle
 metadata:
   title: Exercise - Install Truffle
   description: Learn how to install Truffle.
-  ms.date: 10/06/2020
+  ms.date: 05/24/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Install Truffle
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-truffle.md)]
+  [!include[](includes/3-truffle.md)]
