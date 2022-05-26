@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-ready.understand-design-principles
-title: Understand the Azure landing zone design principles
+title: Design principles for Azure landing zones
 metadata:
   unitType: learning-content
-  title: Understand the Azure landing zone design principles
-  description: A breakdown of Azure landing zone design principles.
+  title: Design principles for Azure landing zones
+  description: Learn about the core set of design principles for the Azure landing zone conceptual architecture.
   ms.date: 5/12/2022
   author: BrianBlanchard
   ms.author: brblanch
