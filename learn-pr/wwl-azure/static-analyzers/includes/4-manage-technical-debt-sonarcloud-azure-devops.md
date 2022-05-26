@@ -1,6 +1,6 @@
 **Estimated time:** 60 minutes.
 
-**Lab files:** none.<br>
+**Lab files:** none.
 
 ## Scenario
 
