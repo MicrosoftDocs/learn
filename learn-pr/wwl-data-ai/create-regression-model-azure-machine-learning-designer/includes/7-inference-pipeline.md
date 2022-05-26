@@ -7,6 +7,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 
 > [!div class="centered"]
 > ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png)
+
 3. Click on the **Create inference pipeline** drop-down list. Then click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Auto Price Training-real time inference** will be opened.
 
     *If the pipeline does not include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then re-open the **Auto Price Training-real time inference** pipeline.*

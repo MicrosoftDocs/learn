@@ -99,9 +99,12 @@ To apply your data transformations, you must run the pipeline as an experiment.
 
 2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-auto-training** on your compute cluster.
 3. Wait for the run to finish, which might take 5 minutes or more. 
+
 > [!div class="centered"]
 > ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
-Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+
+    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+
 4. When the run has completed, click on **Job Details**. You will be taken to another window which will show the modules like this:
 
 > [!div class="centered"]
