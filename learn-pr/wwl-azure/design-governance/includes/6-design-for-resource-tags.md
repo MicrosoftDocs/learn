@@ -11,7 +11,7 @@
 
 - You can add, modify, or delete resource tags. These actions can be done with PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
 
-- You can [apply tags](/azure/azure-resource-manager/management/tag-resources) to a resource group. However, the resources in the resource group don't inherit those tags by default.
+- You can [apply tags](/azure/azure-resource-manager/management/tag-resources) to a resource group. However, tags applied to the resource group aren't inherited by the resources.
 
 ### Things to consider when creating resource tags
 
