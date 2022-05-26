@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql-database-key-vault-use-private-endpoint.private-endpoint
+title: Secure MySQL database with a Private Endpoint
+metadata:
+  title: Secure MySQL database with a Private Endpoint
+  description: "Secure MySQL database with a Private Endpoint"
+  ms.date: 05/26/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-private-endpoint.md)]
