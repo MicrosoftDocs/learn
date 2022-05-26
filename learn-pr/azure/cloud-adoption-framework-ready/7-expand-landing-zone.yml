@@ -4,7 +4,7 @@ title: Enhance your landing zone
 metadata:
   unitType: learning-content
   title: Enhance your landing zone
-  description: No single implementation option for an Azure landing zone can meet all of your needs. You'll need to refactor the initial landing zone to align with your security, governance, and operations requirements.
+  description: Learn how to refactor the initial landing zone to align with your security, governance, and operations requirements.
   ms.date: 05/12/2022
   author: BrianBlanchard
   ms.author: brblanch
