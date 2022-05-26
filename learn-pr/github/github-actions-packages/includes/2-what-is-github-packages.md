@@ -17,7 +17,7 @@ GitHub Packages is compatible with common package-management clients, so you can
 
 Are you publishing an open-source package? Most open-source projects store their code on GitHub, so you can publish prerelease versions of your packages for testing within your community, then easily promote specific versions to the public registry of your choice.
 
-:::image type="content" source="../media/2-github-packages-npm-package.png" alt-text="GitHub npm package page, with description, and instructions about how to install it." border="false":::
+:::image type="content" source="../media/2-github-packages-npm-package.png" alt-text="GitHub n p m package page, with description, and instructions about how to install it." border="false":::
 
 At the time of writing, GitHub Packages is compatible with the following package managers: 
 
@@ -28,7 +28,7 @@ At the time of writing, GitHub Packages is compatible with the following package
 
 ## GitHub Packages is also a container registry
 
-From complete applications to CLI utilities, containers are another form of distributing code. GitHub Packages allow you to publish and distribute container images. Once published &mdash; in public or in private &mdash; you can use these images from anywhere, including: 
+From complete applications to CLI utilities, containers are another form of distributing code. GitHub Packages allow you to publish and distribute container images. Once published (in public or in private) you can use these images from anywhere, including: 
 
 - In your local development environment
 - As a base image from your [GitHub Codespaces](https://github.com/features/codespaces) development environment
