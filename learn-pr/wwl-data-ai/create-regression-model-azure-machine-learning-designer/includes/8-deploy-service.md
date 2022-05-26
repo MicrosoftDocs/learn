@@ -16,7 +16,6 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 ## Test the service
 
-Now you can test your deployed service from a client application - in this case, you'll use the code in the cell below to simulate a client application.
 
 1. On the **Endpoints** page, open the **predict-auto-price** real-time endpoint.
 2. When the **predict-auto-price** endpoint opens, view the **Consume** tab and note the following information there. You need this to connect to your deployed service from a client application.
