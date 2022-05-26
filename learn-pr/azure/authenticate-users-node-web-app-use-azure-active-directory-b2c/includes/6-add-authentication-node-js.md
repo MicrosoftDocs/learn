@@ -70,7 +70,7 @@ The `auth` element of the `confidentialClientConfig` configuration object has th
  |Key  |Value  |
 |---------|---------|
 |`clientId`|The Application (client) ID for the web app you register in Azure portal|
-|`authority`|The sign in and sign up user flow authority. It is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant and `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow, which you create in the Azure portal, such as `B2C_1_susi`|.
+|`authority`|The sign in and sign up user flow authority. It is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant and `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow, which you create in the Azure portal, such as `B2C_1_susi`|
 |`clientSecret`|The client secret for the web app you create in Azure portal.|
 |`knownAuthorities`|The Azure AD B2C authority domain. It is in the form `https://<your-tenant-name>.b2clogin.com`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant.|
 |`redirectUri`|The application redirect URI where Azure AD B2C returns authentication responses (tokens). It matches the Redirect URI you set while registering your app in Azure portal, and it must be publicly accessible. It looks something like `http://localhost:3000` if your web app runs locally in your computer, and on port `3000`.|
