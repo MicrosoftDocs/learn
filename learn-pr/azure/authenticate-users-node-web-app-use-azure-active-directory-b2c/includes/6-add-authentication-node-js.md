@@ -9,9 +9,9 @@ Here, we'll learn about Microsoft Authentication Library(MSAL), which makes it e
 
 The Microsoft Authentication Library (MSAL) enables developers to acquire tokens from the Microsoft identity platform, in this case Azure AD B2C service, in order to authenticate users (ID token) and access secured web APIs (access token). MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS. For JavaScript, it supports MSAL browser, MSAL Angular MSAL React and MSAL Node.  
 
-If you're not using MSAL, you'd use platform-independent approach, where you make HTTP calls and handle responses from Azure AD B2C. With the second approach, you've to handle the protocol details yourself. Using MSAL provides the following benefits: 
+If you're not using MSAL, you'd use platform-independent approach, where you make HTTP calls and handle responses from Azure AD B2C. With the second approach, you've to handle the protocol details yourself. Using MSAL provides the following benefits:
 
-* Handles the protocol details for you, so you only need to call functions to accomplish tasks
+* Handles the protocol details for you, so you only need to call functions to accomplish tasks.
 
 * Caches and refreshes tokens automatically when they're about to expire.
 
@@ -23,51 +23,57 @@ If you're not using MSAL, you'd use platform-independent approach, where you mak
 
 To install MSAL Node, you run the following command in the terminal:
 
-    ```
-    npm install @azure/msal-node
-    ```
+```text
+npm install @azure/msal-node
+```
+
 To import MSAL Node into your Node web app, you add the following line of code:
 
-    ```JavaScript
-        const msal = require('@azure/msal-node');
-    ```
+```javascript
+const msal = require('@azure/msal-node')
+```
 
 ## MSAL Node instance
 
 You can create two types of MSAL Node objects, for *confidential client application* or *public client application*:
 
-* **Confidential client application** are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access, and for that reason can keep an application secret. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract. A web app is the most common confidential client, such as a Node web app. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
+### Confidential client application
 
-* **Public client applications** are apps that run on devices or desktop computers or in a web browser. They're not trusted to safely keep application secrets, so they only access web APIs on behalf of the user. (They support only public client flows.) Public clients can't hold configuration-time secrets, so they don't have client secrets. Examples of public client apps are desktop and mobile apps.
+Confidential client application are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access, and for that reason can eep an application secret. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract. A web app is the most common confidential client, such as a Node web app. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
+
+### Public client applications
+
+Public client applications are apps that run on devices or desktop computers or in a web browser. They're not trusted to safely keep application secrets, so they only access web APIs on behalf of the user. (They support only public client flows.) Public clients can't hold configuration-time secrets, so they don't have client secrets. Examples of public client apps are desktop and mobile apps.
 
 The following code snippet shows how to instantiate a `ConfidentialClientApplication` object for authenticating with Azure AD B2C:
 
-    ```JavaScript
-         const confidentialClientConfig = {
-            auth: {
-                clientId: "APP CLIENT ID here", 
-                authority: "SIGN UP AND SIGN IN POLICY AUTHORITY here", 
-                clientSecret: "APP_CLIENT_SECRET",
-                knownAuthorities: "AUTHORITY DOMAIN(S) as an array", //This must be an array
-                redirectUri: "APP REDIRECT URI here",
-            },
-            system: {
-                loggerOptions: {
-                    loggerCallback(loglevel, message, containsPii) {
-                        console.log(message);
-                    },
-                    piiLoggingEnabled: false,
-                    logLevel: msal.LogLevel.Verbose,
-                }
+```javascript
+    const confidentialClientConfig = {
+        auth: {
+            clientId: "APP CLIENT ID here", 
+            authority: "SIGN UP AND SIGN IN POLICY AUTHORITY here", 
+            clientSecret: "APP CLIENT SECRET here",
+            knownAuthorities: "AUTHORITY DOMAIN(S) as an array",
+            redirectUri: "APP REDIRECT URI here"
+        },
+        system: {
+            loggerOptions: {
+                loggerCallback(loglevel, message, containsPii) {
+                    console.log(message);
+                },
+                piiLoggingEnabled: false,
+                logLevel: msal.LogLevel.Verbose
             }
-        };
-        
-        // Initialize MSAL Node (MSAL Node confidential Client Application instance)
-        const confidentialClientApplication = new msal.ConfidentialClientApplication(confidentialClientConfig);
-    ```
+        },
+    };
+    
+    //Initialize MSAL Node (MSAL Node confidential Client Application instance)
+    const confidentialClientApplication = new msal.ConfidentialClientApplication(confidentialClientConfig);
+```
+
 The `auth` element of the `confidentialClientConfig` configuration object has the following information:
 
- |Key  |Value  |
+|    |Key  |Value  |
 |---------|---------|
 |`clientId`|The Application (client) ID for the web app you register in Azure portal|
 |`authority`|The sign in and sign up user flow authority. It is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant and `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow, which you create in the Azure portal, such as `B2C_1_susi`|
@@ -79,12 +85,12 @@ In MSAL Node, logging is part of the configuration options and is created with t
 
 ## Authorization Code Flow in MSAL Node
 
-MSAL Node supports authorization code flow using two methods accessible via the MSAL Node object: 
+MSAL Node supports authorization code flow using two methods accessible via the MSAL Node object:
 
-* **getAuthCodeUrl()** method is the first leg of the *authorization code grant* for MSAL Node. It creates the URL of the authorization request, letting the user to input their credentials and consent to the web application. Once the user inputs their credentials and consents, the authority will send a response to the *redirect URI* sent in the request and should contain an *authorization code*, which can then be used to acquire tokens. The `getAuthCodeUrl()` method requires a parameter, which is constructed as shown the following example: 
+* **getAuthCodeUrl()** method is the first leg of the *authorization code grant* for MSAL Node. It creates the URL of the authorization request, letting the user to input their credentials and consent to the web application. Once the user inputs their credentials and consents, the authority will send a response to the *redirect URI* sent in the request and should contain an *authorization code*, which can then be used to acquire tokens. The `getAuthCodeUrl()` method requires a parameter, which is constructed as shown the following example:
 
-    ```JavaScript
-         const authCodeRequest = {
+    ```javascript
+        const authCodeRequest = {
             redirectUri: "APP REDIRECT URI here",
             authority: "SIGN UP AND SIGN IN POLICY AUTHORITY here",
             scopes: "App scopes here",
@@ -110,7 +116,7 @@ MSAL Node supports authorization code flow using two methods accessible via the 
 
 * **acquireTokenByCode()** method is the second leg of the *authorization code grant* for MSAL Node. Here,  the authorization code obtained in the first leg of the *authorization code grant* is used to obtain an ID token. If you'd passed *scopes* in the first leg of the authorization code grant, you also receive an access toke. The `acquireTokenByCode()` method requires a parameter, which is constructed as shown the following example:
 
-    ```JavaScript
+    ```javascript
         const tokenRequest = {
             scopes: "App scopes here",
             authority: "SIGN UP AND SIGN IN POLICY AUTHORITY here",
@@ -141,10 +147,10 @@ Azure AD B2C's logout URI is in the form of `https://<your-tenant-name>.b2clogin
 
 Here's an example:
 
-    ```JavaScript
-        logoutUri = "logout_redirect_uri here";
-        req.session.destroy(() => {
-            //When you successfully destroy user session, notify Azure AD B2C service by using the logout uri.
-            res.redirect(logoutUri);
-        })
-    ```
+```JavaScript
+    logoutUri = "logout_redirect_uri here";
+    req.session.destroy(() => {
+        //When you successfully destroy user session, notify Azure AD B2C service by using the logout uri.
+        res.redirect(logoutUri);
+    })
+```
