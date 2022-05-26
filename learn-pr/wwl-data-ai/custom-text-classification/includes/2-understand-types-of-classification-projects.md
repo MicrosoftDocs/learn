@@ -17,7 +17,7 @@ In single label projects, each file is assigned one class during the tagging pro
 
 When tagging multiple label projects, you can assign as many classes that you want per file. The impact of the added complexity means your data has to remain clear and provide a good distribution of possible inputs for your model to learn from.
 
-![Conceptual diagram showing mapping of documents to labels for single label and multiple label classifications](../media/single-multiple-graphic.png)
+![Conceptual diagram that shows mapping of documents to labels for single label and multiple label classifications.](../media/single-multiple-graphic.png)
 
 Tagging data correctly, especially for multiple label projects, is directly correlated with how well your model performs. The higher the quality, clarity, and variation of your data set is, the more accurate your model will be.
 
@@ -47,7 +47,7 @@ The Language service provides a REST API to build and interact with your model, 
 
 To submit a classification task, the API requires the JSON body to specify which task to execute. You'll learn more about the REST API in the next unit, but worth familiarizing yourself with parts of the required body.
 
-Single label classification specifies a task of `customClassificationTasks`:
+Single label classification models specify a task of `customClassificationTasks`:
 
 ```json
 {
@@ -64,7 +64,7 @@ Single label classification specifies a task of `customClassificationTasks`:
     <...>
 ```
 
-Multiple label classification specifies a task of `customMultiClassificationTasks`
+Multiple label classification models specify a task of `customMultiClassificationTasks`
 
 ```json
 {

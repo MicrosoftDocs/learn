@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: "You want to train a model to classify book summaries by their genre, and some of your favorite books are both mystery and thriller. Which type of project should you build?"
     choices:
-    - content: "Single label classification"
+    - content: "A single label classification project"
       isCorrect: false
       explanation: "That answer's incorrect. Use a multiple label classification project to label books as both mystery and thriller."
-    - content: "Multiple label classification"
+    - content: "A multiple label classification project"
       isCorrect: true
       explanation: "That answer's correct. Use a multiple label classification project to label books as multiple genres."
-    - content: "Varied label classification"
+    - content: "A varied label classification project"
       isCorrect: false
       explanation: "That answer's incorrect. Use a multiple label classification project to label books as both mystery and thriller."
   - content: "You just got notification your training job is complete. What is your next step?"
@@ -34,7 +34,7 @@ quiz:
     - content: "Deploy your model"
       isCorrect: false
       explanation: "That answer's incorrect. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
-    - content: "View model details"
+    - content: "View your model details"
       isCorrect: true
       explanation: "That answer's correct. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
   - content: "You want to submit a classification task via the API. How do you get the results of the classification?"

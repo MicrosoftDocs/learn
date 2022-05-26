@@ -2,15 +2,15 @@ Custom text classification projects are your workspace to build, train, improve,
 
 ## Language service project life cycle
 
-![Conceptual diagram showing a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text](../media/classify-development-lifecycle.png)
+![Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text.](../media/classify-development-lifecycle.png)
 
-1. **Define labels**: Understanding the data you want to classify, identify the possible labels you want to categorize into. In our video game example, our labels would be "Action", "Adventure", "Strategy", and so on.
-2. **Tag data**: Tag your existing data, specifying the label or labels each file falls under. Tagging data is important since it's how your model will learn how to classify future files. Best practice is to have clear differences between labels to avoid ambiguity, and provide good examples of each label for the model to learn from. For example, we'd tag "Quest for the Mine Brush" would be tagged as "Adventure", and "Flight Trainer" as "Action".
-3. **Train model**: Once your data is tagged, train it with the labeled data. Training will teach our model what types of video game summaries should be labeled which genre.
-4. **View model**: After your model is trained, view the results of the model. Your model is scored between 0 and 1, based on the precision and recall of the data tested. Take note of which genre didn't perform well.
-5. **Improve model**: Improve your model by seeing which classifications failed to evaluate to the right label, see your label distribution, and find out what data to add to improve performance. For example, you might find your model mixes up "Adventure" and "Strategy" games. Try to find more examples of each label to add to your dataset for retraining your model.
-6. **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API. Your model might be named "GameGenres", and once deployed can be used to classify game summaries.
-7. **Classify text**: Use your model for classifying text. The lab covers how to use the API, and you can view the [API reference](https://aka.ms/ct-runtime-swagger)
+* **Define labels**: Understanding the data you want to classify, identify the possible labels you want to categorize into. In our video game example, our labels would be "Action", "Adventure", "Strategy", and so on.
+* **Tag data**: Tag your existing data, specifying the label or labels each file falls under. Tagging data is important since it's how your model will learn how to classify future files. Best practice is to have clear differences between labels to avoid ambiguity, and provide good examples of each label for the model to learn from. For example, we'd tag "Quest for the Mine Brush" would be tagged as "Adventure", and "Flight Trainer" as "Action".
+* **Train model**: Once your data is tagged, train it with the labeled data. Training will teach our model what types of video game summaries should be labeled which genre.
+* **View model**: After your model is trained, view the results of the model. Your model is scored between 0 and 1, based on the precision and recall of the data tested. Take note of which genre didn't perform well.
+* **Improve model**: Improve your model by seeing which classifications failed to evaluate to the right label, see your label distribution, and find out what data to add to improve performance. For example, you might find your model mixes up "Adventure" and "Strategy" games. Try to find more examples of each label to add to your dataset for retraining your model.
+* **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API. Your model might be named "GameGenres", and once deployed can be used to classify game summaries.
+* **Classify text**: Use your model for classifying text. The lab covers how to use the API, and you can view the [API reference](https://aka.ms/ct-runtime-swagger)
 
 ## How to split datasets for training
 

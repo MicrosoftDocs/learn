@@ -74,7 +74,7 @@ Now that your project is created, you need to tag your data to train your model 
 1. On the left, click on **Tag data**. You'll see a list of the files you uploaded to your storage account.
 2. On the right side, in the **Tagging** pane, click on **Add class**. The articles in this lab fall into four classes you'll need to create: Classifieds, Sports, News, and Entertainment.
 
-    ![Tag data and add class](../media/tag-data-add-class.png)
+    ![Screenshot showing the tag data page and the add class button.](../media/tag-data-add-class.png#lightbox)
 
 3. After you've created your four classes, start by clicking on *Article 1*. Here you can read the article, define which class this file is, and which dataset to assign it to.
 4. Assign each article the appropriate class and dataset. For the purposes of this lab, we'll define which are to be used for training the model vs. testing the model.
@@ -141,7 +141,7 @@ To test the text analytics capabilities of the Language service, we'll use a sma
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This button opens a Cloud Shell pane at the bottom of the portal.
 
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box.](../media/powershell-portal-guide-1.png)
+    ![Screenshot of starting the Cloud Shell by clicking on the icon to the right of the top search box.](../media/powershell-portal-guide-1.png#lightbox)
 
 2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you don't see this option, skip the step.  
 
@@ -151,7 +151,7 @@ To test the text analytics capabilities of the Language service, we'll use a sma
 
 5. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    ![Wait for PowerShell to start.](../media/powershell-prompt.png)
+    ![Screenshot of waiting for PowerShell to start.](../media/powershell-prompt.png#lightbox)
 
 ### Configure and run PowerShell
 
