@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Understand the cleansed and manipulated mission data
   description: Using the data that has been cleansed and manipulated, gather insights about the relationship between rock samples and rocket weights.
   ms.date: 03/10/2021
-  author: sguthals 
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

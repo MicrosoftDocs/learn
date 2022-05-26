@@ -1,12 +1,12 @@
 Continuous Delivery (CD) is the practice of using automation to build, test, configure and deploy from the build environment all the way to the final production environment.  
 
-Suppose that your development team is working on the company's product support website. You've already set up continuous integration (CI) by using GitHub Actions and workflows. Now you need to implement CD. Your CI workflow saves a container image. Your CD workflow will deploy this container to your staging and production environments. You've talked with IT about how to create and tear down these environments as needed and you've all decided to use GitHub Actions and workflows to support infrastructure as code.
+Suppose that your development team is working on the company's product support website. You've already set up continuous integration (CI) by using GitHub Actions and workflows. Now you need to implement CD. Your CI workflow saves a container image. Your CD workflow will deploy this container to your staging and production environments. You've talked with IT about how to create and tear down these environments as needed, and you've all decided to use GitHub Actions and workflows to support infrastructure as code.
 
-In this module, you learn how to use GitHub Actions and workflows to implement a CD solution that deploys to Microsoft Azure Web Apps with a GitHub Action from the GitHub Marketplace. You also automate the creation and teardown of the deployment environments by using a workflow.
+In this module, you'll learn how to use GitHub Actions and workflows to implement a CD solution that deploys to Microsoft Azure Web Apps with a GitHub Action from the GitHub Marketplace. You'll also automate the creation and teardown of the deployment environments by using a workflow.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Discover options for triggering a CD GitHub Workflow
 - Understand steps to remove workflow artifacts
@@ -18,7 +18,7 @@ In this module, you will:
 
 ## Prerequisites
 
-This module assumes you've completed the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module and [Build continuous integration workflows by using GitHub Actions](/learn/modules/github-actions-ci/) module or that you're already familiar with GitHub Actions and workflows that are used in CI.
+This module assumes you've completed the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module and [Build continuous integration workflows by using GitHub Actions](/learn/modules/github-actions-ci/) module, or that you're already familiar with GitHub Actions and workflows that are used in CI.
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub

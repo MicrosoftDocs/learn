@@ -12,6 +12,9 @@ title: Customize and add advanced features to Xamarin.Forms apps
 summary: "Add professional touches and development techniques for more beautiful and maintainable apps."
 prerequisites: |
   - Ability to build and debug Xamarin.Forms app
+video:
+  title: "Microsoft Learn video: Customize and add advanced features to Xamarin.Forms apps"
+  url: https://www.microsoft.com/videoplayer/embed/RE4XeIC
 iconUrl: /learn/achievements/xamarin/customize-your-xamarin-forms-apps-trophy.svg
 levels:
 - intermediate
