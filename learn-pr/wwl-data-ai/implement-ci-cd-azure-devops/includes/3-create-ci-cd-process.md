@@ -20,7 +20,7 @@ The following services are needed
 
 ## Unit pre-requisites
 
-In this unit, you need access to two Azure Databricks workspaces. One will act as your DEV (development) environment, and the other your PROD (production) environment. If you do not have two workspaces available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive in the DEV workspace](https://docs.microsoft.com/learn/modules/implement-ci-cd-azure-devops/3-create-ci-cd-process#clone-the-databricks-archive-in-the-dev-workspace).
+In this unit, you need access to two Azure Databricks workspaces. One will act as your DEV (development) environment, and the other your PROD (production) environment. If you do not have two workspaces available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive in the DEV workspace](/learn/modules/implement-ci-cd-azure-devops/3-create-ci-cd-process#clone-the-databricks-archive-in-the-dev-workspace).
 
 **Microsoft Azure Account**: You will need a valid and active Azure account for the Azure labs. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/free/)
 
@@ -100,7 +100,7 @@ To complete this lab, you will need to deploy two Azure Databricks workspaces in
    Copy
 
    ```
-   https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/13-CI-CD-with-Azure-Devops.dbc?raw=true
+   https://github.com/MicrosoftLearning/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/13-CI-CD-with-Azure-Devops.dbc?raw=true
 
    ```
 
