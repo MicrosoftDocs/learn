@@ -1,7 +1,7 @@
 
 For a web app to authenticate users, you need to add that capability.
 
-In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. To do so, you need to configure your web app to communicate with Azure AD B2C services whenever a user wants to sign in to your web app, and it requires you understand authentication protocols such as OAth 2.0 and OpenID Connect, which isn't easy.
+In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. So, you need to configure your web app to communicate with Azure AD B2C services whenever a user signs in to your web app. This procedure requires you understand authentication protocols such as OAth 2.0 and OpenID Connect, which isn't easy.
 
 Here, we'll learn about Microsoft Authentication Library(MSAL), which makes it easier to configure your app to authenticate users by using Azure AD B2C.
 
@@ -13,9 +13,9 @@ If you're not using MSAL, you'd use platform-independent approach, where you mak
 
 * Handles the protocol details for you, so you only need to call functions to accomplish tasks
 
-* Caches and refreshes tokens automatically when they are about to expire.
+* Caches and refreshes tokens automatically when they're about to expire.
 
-* Regularly updated, so you do not need to change your code when new security updates are rolled out.
+* Regularly updated, so you don't need to change your code when new security updates are rolled out.
 
 * Helps you troubleshoot your app by exposing actionable exceptions, logging, and telemetry.
 
@@ -38,7 +38,7 @@ You can create two types of MSAL Node objects, for *confidential client applicat
 
 * **Confidential client application** are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access, and for that reason can keep an application secret. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract. A web app is the most common confidential client, such as a Node web app. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
 
-* **Public client applications** are apps that run on devices or desktop computers or in a web browser. They're not trusted to safely keep application secrets, so they only access web APIs on behalf of the user. (They support only public client flows.) Public clients can't hold configuration-time secrets, so they don't have client secrets. Example of public client apps are desktop and mobile apps.
+* **Public client applications** are apps that run on devices or desktop computers or in a web browser. They're not trusted to safely keep application secrets, so they only access web APIs on behalf of the user. (They support only public client flows.) Public clients can't hold configuration-time secrets, so they don't have client secrets. Examples of public client apps are desktop and mobile apps.
 
 The following code snippet shows how to instantiate a `ConfidentialClientApplication` object for authenticating with Azure AD B2C:
 
@@ -72,10 +72,10 @@ The `auth` element of the `confidentialClientConfig` configuration object has th
 |`clientId`|The Application (client) ID for the web app you register in Azure portal|
 |`authority`|The sign in and sign up user flow authority. It is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant and `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow, which you create in the Azure portal, such as `B2C_1_susi`|.
 |`clientSecret`|The client secret for the web app you create in Azure portal.|
-|`knownAuthorities`|The Azure AD B2C authority domain. It is in the form form `https://<your-tenant-name>.b2clogin.com`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant.|
+|`knownAuthorities`|The Azure AD B2C authority domain. It is in the form `https://<your-tenant-name>.b2clogin.com`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant.|
 |`redirectUri`|The application redirect URI where Azure AD B2C returns authentication responses (tokens). It matches the Redirect URI you set while registering your app in Azure portal, and it must be publicly accessible. It looks something like `http://localhost:3000` if your web app runs locally in your computer, and on port `3000`.|
 
-In MSAL Node, logging is part of the configuration options and is created with the initialization of the MSAL Node instance You can see this under the `system` element of the the `confidentialClientConfig` object as shown above.
+In MSAL Node, logging is part of the configuration options and is created with the initialization of the MSAL Node instance. You can see this configuration under the `system` element of the `confidentialClientConfig` object as shown in the code snippet above.
 
 ## Authorization Code Flow in MSAL Node
 
@@ -105,8 +105,8 @@ MSAL Node supports authorization code flow using two methods accessible via the 
     
     |Key  |Value  |
     |---------|---------|
-    |`state`|A value included in the request (not required but recommended) and returned in the token response. Usually, a randomly generated unique value is used, to prevent cross-site request forgery attacks. The state also is used to encode information about the user's state in the app before the authentication request occurred. For example, the page the user was on, or the user flow that was being executed or the authentication action such as sign in, password reset and profile edit|
-    |`scopes`| Array of scopes the application is requesting access to. This values is required if your app needs an access token. If you app only need to sign in users to an app, you don't need to pass any scopes.|
+    |`state`|A value included in the request (not required but recommended) and returned in the token response. Usually, a randomly generated unique value is used, to prevent cross-site request forgery attacks. The state also is used to encode information about the user's state in the app before the authentication request occurred. For example, the page the user was on, or the user flow that was being executed or the authentication action such as sign in, password reset and profile edit. |
+    |`scopes`| Array of scopes the application is requesting access to. You require this value if your app needs an access token. If your app only needs to sign in users to an app, you don't need to pass any scopes.|
 
 * **acquireTokenByCode()** method is the second leg of the *authorization code grant* for MSAL Node. Here,  the authorization code obtained in the first leg of the *authorization code grant* is used to obtain an ID token. If you'd passed *scopes* in the first leg of the authorization code grant, you also receive an access toke. The `acquireTokenByCode()` method requires a parameter, which is constructed as shown the following example:
 
@@ -135,9 +135,9 @@ MSAL Node supports authorization code flow using two methods accessible via the 
 
 ## Signing out
 
-Web apps use a session to track users, and when a user signs out of the app, you need to clear the session. However, this is not sufficient to sign out the user from the web app in Azure AD B2C. You need to explicitly sign out the user from the app by sending a sign out request to Azure AD B2C by using the logout URI. 
+Web apps use a session to track users, and when a user signs out of the app, you need to clear the session. However, clearing a user session in the app isn't sufficient to sign out the user from it in Azure AD B2C. You need to explicitly sign out the user by sending a sign out request to Azure AD B2C by using the logout URI.
 
-The logout URI is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>/oauth2/v2.0/logout?post_logout_redirect_uri=<logout_redirect_uri>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant, `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow and `<logout_redirect_uri>` with publicly accessible URL in your web app, where Azure AD B2C redirects user after they sign out. This redirect URL doesn't need to match the redirect URI you use when you create MSAL Node instance. 
+Azure AD B2C's logout URI is in the form of `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>/oauth2/v2.0/logout?post_logout_redirect_uri=<logout_redirect_uri>`. You need to replace `<your-tenant-name>` with the name of your Azure AD B2C tenant, `<sign-in-sign-up-user-flow-name>` with the name of your sign in and sign up user flow and `<logout_redirect_uri>` with publicly accessible URL in your web app, where Azure AD B2C redirects user after they sign out. This redirect URL doesn't need to match the redirect URI you use when you create MSAL Node instance. 
 
 Here's an example:
 
