@@ -5,8 +5,8 @@ metadata:
   title: When to use Azure VMware Solution
   description: Learn which scenarios are best suited for Azure VMware Solution.
   ms.date: 06/17/2021
-  author: exchangegoddess
-  ms.author: phschmit
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=cloud_advocates
