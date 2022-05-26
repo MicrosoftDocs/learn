@@ -95,9 +95,12 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
 2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-diabetes-training** on your compute cluster.
 3. Wait for the run to finish - this may take a few minutes.
-> [!div class="centered"]
-> ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
-Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+
+    > [!div class="centered"]
+    > ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
+
+    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+
 4. When the run has completed, click on **Job Details**. You will be taken to another window.
 
 ## View the transformed data
