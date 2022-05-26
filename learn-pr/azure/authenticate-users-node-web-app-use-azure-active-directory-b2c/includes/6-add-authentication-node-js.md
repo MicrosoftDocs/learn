@@ -1,7 +1,7 @@
 
 For a web app to authenticate users, you need to add that capability.
 
-In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. So, you need to configure your web app to communicate with Azure AD B2C services whenever a user signs in to your web app. This procedure requires you understand authentication protocols such as OAth 2.0 and OpenID Connect, which isn't easy.
+In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. So, you need to configure your web app to communicate with Azure AD B2C services whenever a user signs in to your web app. This procedure requires you understand authentication protocols such as OAuth 2.0 and OpenID Connect, which isn't easy.
 
 Here, we'll learn about Microsoft Authentication Library(MSAL), which makes it easier to configure your app to authenticate users by using Azure AD B2C.
 
@@ -39,7 +39,7 @@ You can create two types of MSAL Node objects, for *confidential client applicat
 
 ### Confidential client application
 
-Confidential client application are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access, and for that reason can eep an application secret. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract. A web app is the most common confidential client, such as a Node web app. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
+Confidential client applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access, and for that reason can keep an application secret. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract. A web app is the most common confidential client, such as a Node web app. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
 
 ### Public client applications
 
