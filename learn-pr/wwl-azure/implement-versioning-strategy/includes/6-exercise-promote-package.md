@@ -4,10 +4,10 @@
 ## Steps to demonstrate the views on package feeds in Azure Artifacts
 
 1.  Go to dev.azure.com and open your team project.
-2.  Open **Artifacts** and select the feed **PartsUnlimited**.<br><br>:::image type="content" source="../media/azure-devops-feed-0c78c191.png" alt-text="PartsUnlimited feed from Artifacts.":::
-    <br><br>
-3.  Go to **Artifacts** and click **Feed Settings**.<br><br>:::image type="content" source="../media/azure-devops-feed-settings-d3fe46fe.png" alt-text="PartsUnlimited feed settings from Artifacts.":::
-    <br>
+2.  Open **Artifacts** and select the feed **PartsUnlimited**. :::image type="content" source="../media/azure-devops-feed-0c78c191.png" alt-text="Screenshot of PartsUnlimited feed from Artifacts.":::
+    
+3.  Go to **Artifacts** and click **Feed Settings**. :::image type="content" source="../media/azure-devops-feed-settings-d3fe46fe.png" alt-text="Screenshot of PartsUnlimited feed settings from Artifacts.":::
+    
 4.  Open the **Views** tab. By default, there will be three views. Local: includes all packages in the feed and all cached from upstream sources. Prerelease and Release. In the **Default view** column is a check behind Local. It's the default view that will always be used.
 
 ## Steps to use the release view instead
