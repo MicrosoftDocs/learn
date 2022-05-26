@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.microservices-data-aspnet-core.badge
+metadata:
+  title: >-
+    Microsoft Badge: Use managed data stores in a cloud-native ASP.NET Core
+    microservices app was issued by Microsoft
+socialImageUrl: /learn/achievements/aspnetcore/microservices-data-aspnet-core-social.png
