@@ -1,3 +1,5 @@
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
 After gathering information about App Service you've decided to create and update a simple web app to try it out. In this exercise you'll deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. You will then update the code and redeploy it by using the same command.
 
 The `az webapp up` command makes it easy to create and update web apps. When executed it performs the following actions:
@@ -6,12 +8,6 @@ The `az webapp up` command makes it easy to create and update web apps. When exe
 * Create a default app service plan.
 * Create an app with the specified name.
 * Zip deploy files from the current working directory to the web app.
-
-## Prerequisites
-
-Before you begin make sure you have the following requirements in place:
-
-* An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 
 ## Download the sample app
 
