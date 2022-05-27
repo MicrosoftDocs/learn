@@ -6,13 +6,13 @@ It's common practice to train the model using a subset of the data, while holdin
 
 In this exercise, you're going to work through steps to extend the **Diabetes Training** pipeline as shown here:
 
-> [!div class="centered"]
-> ![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
+![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
 
 Follow the steps below, using the image above for reference as you add and configure the required modules.
 
 1. Open the **Diabetes Training** pipeline you created in the previous unit if it's not already open.
 2. In the **Asset Library** pane on the left, in **Components**, find and drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
+
     >[!TIP]
     > Use the search bar to quickly locate modules. 
 
@@ -31,8 +31,7 @@ Follow the steps below, using the image above for reference as you add and confi
 7. To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset. Expand the **Model Scoring & Evaluation** section and drag a **Score Model** module to the canvas, below the **Train Model** module. Then connect the output of the **Train Model** module to the **Trained model** (left) input of the **Score Model** module; and connect the **Results dataset2** (right) output of the **Split Data** module to the **Dataset** (right) input of the **Score Model** module.
 8. Ensure your pipeline looks like this:
 
- > [!div class="centered"]
- > ![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
+    ![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
 
 ## Run the training pipeline
 

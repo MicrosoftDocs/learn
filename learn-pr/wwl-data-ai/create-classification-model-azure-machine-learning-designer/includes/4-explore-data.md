@@ -41,8 +41,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 ### Load data to canvas 
 1. Next to the pipeline name on the left, select the button **>>** to expand the panel. if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Below the **Tags** and **Filter** buttons, there are two icons next to each other. Hover your mouse over the first cylinder icon (on the left) to see that it represents **Data Assets**. Hover your mouse over the second chart icon (on the right) to see that it represents **Components**. 
 
-> [!div class="centered"]
-> ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
+    ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
 2. Click on the cylinder icon for **Data Assets**. Drag the **diabetes-data** dataset onto the canvas.
 3. Right-click (Ctrl+click on a Mac) the **diabetes-data** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
@@ -51,8 +50,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 6. Scroll back to the left and review the other columns, which represent the *features* that will be used to predict the label. Note that most of these columns are numeric, but each feature is on its own scale. For example, **Age** values range from 21 to 77, while **DiabetesPedigree** values range from 0.078 to 2.3016. When training a machine learning model, it is sometimes possible for larger values to dominate the resulting predictive function, reducing the influence of features that on a smaller scale. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
 7. Close the **diabetes-data result visualization** window so that you can see the dataset on the canvas like this:
 
-> [!div class="centered"]
-> ![The diabetes-data dataset on the designer canvas](../media/diabetes-data.png)
+    ![The diabetes-data dataset on the designer canvas](../media/diabetes-data.png)
 
 ## Add transformations
 
@@ -60,13 +58,11 @@ Before you can train a model, you typically need to apply some preprocessing tra
 
 1. In the **Asset Library** pane on the left, click on the squares icon to access **Components**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
 
-> [!div class="centered"]
-> ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
+    ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
 
 2. Find the **Normalize Data** module and drag it to the canvas, below the **diabetes-data** dataset. Then connect the output from the bottom of the **diabetes-data** dataset to the input at the top of the **Normalize Data** module, like this:
 
-> [!div class="centered"]
-> ![A pipeline with the diabetes-data dataset connected to a Normalize Data module](../media/dataset-normalize.png)
+    ![A pipeline with the diabetes-data dataset connected to a Normalize Data module](../media/dataset-normalize.png)
 
 3. Select the **Normalize Data** module and view its settings, noting that it requires you to specify the transformation method and the columns to be transformed.
 4. Set the transformation to **MinMax** and edit the columns to include the following columns by name, as shown in the image:
@@ -79,8 +75,7 @@ Before you can train a model, you typically need to apply some preprocessing tra
     - **DiabetesPedigree**
     - **Age**
 
-> [!div class="centered"]
-> ![columns selected for normalization](../media/normalize-data.png)
+    ![columns selected for normalization](../media/normalize-data.png)
 
 The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
 
@@ -90,14 +85,12 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
 1. Ensure your pipeline looks similar to this:
 
-> [!div class="centered"]
-> ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
+    ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-diabetes-training** on your compute cluster.
 3. Wait for the run to finish - this may take a few minutes.
 
-    > [!div class="centered"]
-    > ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
+    ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
 
     Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
 
