@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-mysql-database-key-vault-use-private-endpoint
 metadata:
-  title: Secure MySQL database and Key Vault using a Private Endpoint
-  description: "Secure MySQL database and Key Vault using a Private Endpoint"
+  title: Secure MySQL database and Key Vault using a private endpoint
+  description: "Secure MySQL database and Key Vault using a private endpoint"
   ms.date: 05/27/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Secure MySQL database and Key Vault using a Private Endpoint
+title: Secure MySQL database and Key Vault using a private endpoint
 summary: You now have an Azure Spring Apps application deployed into a virtual network. In this module, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
 abstract: |
   In this module, you will:
