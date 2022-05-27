@@ -5,7 +5,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 1. In Azure Machine Learning studio, expand the left-hand pane by selecting the three lines at the top left of the screen. Click on **Jobs** (under **Assets**) to view all of the jobs you have run. Select the experiment **mslearn-penguin-training**, then select the **mslearn-penguin-training** pipeline. 
 2. Locate the menu above the canvas and click on **Create inference pipeline**. You may need to expand your screen to full and click on the three dots icon **...** on the top right hand corner of the screen in order to find **Create inference pipeline** in the menu.  
 
-    > ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png) 
+    ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png) 
 
 3. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
 
@@ -15,7 +15,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     You're going to make the following changes to the inference pipeline:
 
-    > ![Replace penguin-data dataset with Enter Data Manually module. Remove Select Columns in Dataset and Evaluate Model modules](../media/inference-changes.png)
+    ![Replace penguin-data dataset with Enter Data Manually module. Remove Select Columns in Dataset and Evaluate Model modules](../media/inference-changes.png)
 
     - Replace the **penguin-data** dataset with an **Enter Data Manually** module that doesn't include the **Species** column.
     - Remove the **Select Columns in Dataset** module, which is now redundant.
@@ -37,7 +37,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 7. Delete the **Evaluate Model** module.
 8. Verify that your pipeline looks similar to the following image:
 
-    > ![Inference pipeline for clustering](../media/inference-clusters.png)
+    ![Inference pipeline for clustering](../media/inference-clusters.png)
 
 9. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. The experiment may take a while to run.
 10. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
