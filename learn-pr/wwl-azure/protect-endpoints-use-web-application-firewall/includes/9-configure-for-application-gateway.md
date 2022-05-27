@@ -4,7 +4,7 @@ Also, you can configure a Web Application Firewall on your Application Gateway.
 
 Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
 
-:::image type="content" source="../media/web-application-firewall-overview-34f0acc2.png":::
+:::image type="content" source="../media/web-application-firewall-overview-34f0acc2.png" alt-text="Graphic showing how Web Application Firewall provides centralized protection of web applications.":::
 
 
 In this procedure, you'll connect to your application and configure a Web Application Firewall on your Application Gateway.
