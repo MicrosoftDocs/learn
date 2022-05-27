@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-azure-pipelines.integrate-external-source-control-with-azure-pipelines
-title: Integrate External Source Control with Azure Pipelines
+title: Integrate external source control with Azure Pipelines
 metadata:
-  title: Integrate External Source Control with Azure Pipelines
-  description: "Integrate External Source Control with Azure Pipelines"
+  title: Integrate external source control with Azure Pipelines
+  description: "Integrate external source control with Azure Pipelines"
   ms.date: 05/27/2022
   author: wwlpublish
   ms.author: lumac
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 60
 content: |
   [!include[](includes/10-integrate-external-source-control-with-azure-pipelines.md)]
