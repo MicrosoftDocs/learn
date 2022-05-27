@@ -1,8 +1,17 @@
 Contoso wants to protect the servers and Kubernetes clusters it's connected to Azure Arc. Microsoft Sentinel lets Contoso collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Through Microsoft Defender for Cloud, Contoso can monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
 
-## What can Microsoft Sentinel do?
+## Azure Arc security with Microsoft Sentinel
 
-Microsoft Sentinel provides a single solution for alert detection, threat visibility, proactive hunting, and threat response across the enterprise. Microsoft Sentinel collects data from a wide array of sources, detects and investigates threats, and rapidly responds to incidents using automation of common tasks.
+Microsoft Sentinel is a scalable, cloud-native, security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution. Microsoft Sentinel delivers threat intelligence across the enterprise, providing a single solution for attack detection, proactive hunting, and threat response.
+
+Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+
+- **Collect data at cloud scale** across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
+- **Detect previously undetected threats** and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
+- **Investigate threats with artificial intelligence** and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
+- **Respond to incidents rapidly** with built-in orchestration and automation of common tasks.
+
+<!--Microsoft Sentinel provides a single solution for alert detection, threat visibility, proactive hunting, and threat response across the enterprise. Microsoft Sentinel collects data from a wide array of sources, detects and investigates threats, and rapidly responds to incidents using automation of common tasks.-->
 
 ### Onboard Azure Arc-enabled servers to Microsoft Sentinel
 
@@ -14,8 +23,8 @@ In order to onboard a Azure Arc-enabled server to Microsoft Sentinel, you'll nee
 
 Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration. For physical and virtual machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel. Azure Arc-enabled servers supports deploying the Log Analytics agent using the following methods:
 
-- Using the VM extensions framework
-- Using Azure Policy
+- Using the **VM extensions framework**, you can deploy the Log Analytics agent VM extension to a non-Azure Windows and/or Linux server. VM extensions can be managed using the Azure portal, Azure CLI, Azure PowerShell, and Azure Resource Manager templates.
+- Using **Azure Policy**, you can Deploy Log Analytics agent to Linux or Windows Azure Arc machines to audit if the Azure Arc-enabled server has the Log Analytics agent installed. If the agent isn't installed, it automatically deploys it using a remediation task. You can also use the built-in Azure Policy to Enable Azure Monitor for VMs initiative to install and configure the Log Analytics agent.
 
 After your Arc-enabled servers are connected, your data starts streaming into Microsoft Sentinel and is ready for you to use!
 
@@ -23,87 +32,30 @@ After your Arc-enabled servers are connected, your data starts streaming into Mi
 
 Contoso can use Microsoft Sentinel's threat detection templates to create their own rules for detecting suspicious activity. These rule templates are based on known threats and common attack vectors, allowing Contoso to create specific rules to automatically search their environment for threats. Templates can be customized to search for activities or filter them out as needed. 
 
+All the analytics rules and detections in Microsoft Sentinel can be viewed from the **Analytics > Rule templates** tab:
+ 
+:::image type="content" source="../media/view-oob-detections.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
 
+## Azure Arc security with Microsoft Defender
 
+Microsoft Defender for Servers and Microsoft Defender for Containers provide added threat protection for Contoso's servers and Kubernetes clusters:
 
+- **Defender for Servers** is one of the enhanced security features of Microsoft Defender for Cloud. Microsoft Defender for Servers adds threat detection and advanced defenses to your Windows and Linux machines whether they're running in Azure, on-premises, or in a multi-cloud environment.
+- **Defender for Containers** is the cloud-native solution for securing your containers. Defender protects your clusters running in Azure Kubernetes Service (AKS) or other common container environments (such as Amazon Elastic Kubernetes Service (AKS) or Google Kubernetes Engine (GKE)).
 
+### Defender for Servers
 
+Core benefits of Microsoft Defender for Servers include:
 
+- **Vulnerability assessment tools** to deploy to your machines. Any vulnerabilities uncovered are shown in a security recommendation.
+- **Integration with Microsoft Defender for Endpoint** to provide comprehensive endpoint and detection capabilities. When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud. From Defender for Cloud, you can also pivot to the Defender for Endpoint console and perform a detailed investigation to uncover the scope of the attack. 
+- **File integrity monitoring (FIM)** examines files and registries of operating systems and application software for changes that might indicate an attack. A comparison method is used to determine if the current state of the file is different from the last scan of the file. You can use this comparison to determine if valid or suspicious modifications have been made to your files.
+- **Adaptive application controls (AAC)** are an intelligent and automated solution for defining allowlists of known-safe applications for your machines. When you've configured adaptive application controls, you'll get security alerts if any application runs other than the ones you've defined as safe
 
+### How does Defender for Containers help secure my Kubernetes clusters?
 
-Contoso could use *Azure Monitor* to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers.
+Defender for Containers helps with the core aspects of container security:
 
-By maintaining their on-premises infrastructures, Contoso could benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, they could monitor resources such as their onboarded servers. For example, they could select **Insights** to review a map of their resources' network connections.
-
-:::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
-
-## How can you use Azure Policy?
-
-*Azure Policy* is a service that can help organizations manage and evaluate compliance for their Azure environments' organizational standards. Azure Policy uses declarative rules based on properties of target Azure resource types. These rules form policy definitions, which administrators can apply through policy assignment to a resource group or subscription.
-
-For example, to simplify the management of policy definitions, Contoso could consider combining multiple policies into initiatives and then create a few initiative assignments instead of multiple policy assignments.
-
-Azure Policy functionality is grouped into four main categories:
-
-- Enforcing compliance when provisioning new Azure resources
-- Auditing the compliance of existing Azure resources
-- Remediating noncompliance of existing Azure resources
-- Auditing the compliance of the OS, application configuration, and environment settings within Azure VMs
-
-> [!TIP]
-> The last of these categories is implemented by using the Azure Policy Guest Configuration client, which is available as an Azure VM extension. Azure Arc for servers uses the same client to provide auditing functionality in hybrid scenarios.
-
-Specifically, Contoso IT staff could use Azure Policy to assign tags to resources during their deployment. After you install the agent, it requires outbound connectivity to Azure Arc over TCP port **443**. At that point, any Azure Policy Guest Configuration client-based configuration that's in the assigned policy or initiative definition will automatically take effect.
-
-### Assign policies with Azure Arc
-
-To manage and assign Azure Arc policies for a computer, browse to Azure Arc in the Azure portal. In the returned list of managed servers, select the appropriate server, and then assign a policy to it. You'll need to configure the following: 
-
-- Policy scope, as well as any exclusions from the policy's scope
-- Policy definition
-- Assignment name
-- Description
-- Policy enforcement (Enabled or Disabled)
-
-:::image type="content" source="../media/5-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
-
-After assigning policies, you can review the policy settings on the selected server from Azure Arc.
-
-:::image type="content" source="../media/5-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
-
-## How can you use Azure Monitor?
-
-You can use Monitor to optimize the administration of your existing deployments and to forecast capacity requirements for future deployments. Monitor provides three main capabilities, which the following table describes.
-
-| Capability                           | Description                                                  |
-| ------------------------------------ | ------------------------------------------------------------ |
-| Monitoring and metrics visualization | Metrics are numerical values that represent the health status of monitored systems. |
-| Querying and analyzing logs          | Logs include activity, diagnostics, and telemetry. Their analysis provides deep insights into the state of monitored systems and helps facilitate troubleshooting. |
-| Alerting and remediation             | You can configure these to automatically trigger corrective actions to remediate any issues. |
-
-Monitor delivers focused, in-depth monitoring capabilities through:
-
-- Deep infrastructure monitoring. This category includes Log Analytics combined with monitoring solutions, such as Service Map, and network monitoring tools, such as Network Watcher and Azure ExpressRoute Monitor.
-- Deep application monitoring. This category includes Application Insights, which facilitates monitoring of performance, availability, and usage of web-based applications, regardless of their locations.
-
-Both infrastructure and application monitoring services share capabilities that provide a consistent approach to configuring alerts, including:
-
-- Common action groups that designate alert-triggered actions and recipients of the alerts
-- Designing custom dashboards
-- Analyzing metrics by using tools such as Metrics Explorer or Power BI
-
-Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers both in on-premises datacenters and with other cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights. You can also access its data by using Azure PowerShell, the Azure CLI, REST APIs, and the Microsoft .NET SDK.
-
-Additionally, Monitor enables you to archive collected data in Azure Storage for long-term analysis or compliance purposes. You can also route the data to Azure Stream Analytics or to services from Microsoft and others by using Azure Event Hubs. You set up and use alerts to:
-
-- Trigger notifications via text message or email
-- Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service-management platform
-
-You can store and analyze near real-time and historical data by using Log Analytics.
-> [!NOTE]
-> For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases, the Dependency Agent.
-
-This agent-based approach enables you to monitor the OS and its workloads by using Automation-based or Monitor-based solutions such as Update Management or Change Tracking and Inventory. 
-
-You can also use Microsoft Defender for Cloud to identify vulnerabilities and potential threats.
+- **Environment hardening** - Defender for Containers protects your Kubernetes clusters whether they're running on Azure Kubernetes Service, Kubernetes on-premises / IaaS, or Amazon EKS. By continuously assessing clusters, Defender for Containers provides visibility into misconfigurations and guidelines to help mitigate identified threats.
+- **Vulnerability assessment** - Vulnerability assessment and management tools for images stored in ACR registries and running in Azure Kubernetes Service.
+- **Run-time threat protection for nodes and clusters** - Threat protection for clusters and Linux nodes generates security alerts for suspicious activities.
