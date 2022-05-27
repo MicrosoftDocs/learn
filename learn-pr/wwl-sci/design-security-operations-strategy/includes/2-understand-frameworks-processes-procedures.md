@@ -4,16 +4,14 @@ The responsibility of the security operation team (also known as
 Security Operations Center (SOC), or SecOps) is to rapidly detect,
 prioritize, and triage potential attacks. These operations help
 eliminate false positives and focus on real attacks, reducing the mean
-time to remediate real incidents. Watch the video below for an overview
-about Security Operations:
+time to remediate real incidents. 
 
-![Watch the video below for an overview about Security Operations](../media/SecurityOperationsVideo.png) 
+Watch the video below for an overview about Security Operations:
 
-Link:
-<https://www.microsoft.com/en-us/videoplayer/embed/RWVECU?postJsllMsg=true>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWVECU]
 
 Central SecOps team monitors security-related telemetry data and
-investigates security breaches. It\'s important that any communication,
+investigates security breaches. It's important that any communication,
 investigation, and hunting activities are aligned with the application
 team. Here are some general best practices for conducting security
 operations:
@@ -23,7 +21,7 @@ operations:
 
     -   **Detect** the presence of adversaries in the system.
 
-    -   **Respond** by quickly investigating whether it\'s an actual
+    -   **Respond** by quickly investigating whether it's an actual
         attack or a false alarm.
 
     -   **Recover** and restore the confidentiality, integrity, and
@@ -46,14 +44,14 @@ operations:
 SecOps has multiple potential interactions with business leadership,
 which includes:
 
-![Graphical user interface, text, application, email Description](../media/PracticeExercises.png) 
+![Graphical user interface, text, application, email Description](../media/practice-exercises.png) 
 
 -   **Business context to SecOps**: SecOps must understand what is most
     important to the organization so that the team can apply that
     context to fluid real-time security situations. What would have the
     most negative impact on the business? Downtime of critical systems?
     A loss of reputation and customer trust? Disclosure of sensitive
-    data? Tampering with critical data or systems? We\'ve learned it\'s
+    data? Tampering with critical data or systems? We\'ve learned it's
     critical that key leaders and staff in the SOC understand this
     context. They\'ll wade through the continuous flood of information
     and triage incidents and prioritize their time, attention, and
@@ -73,7 +71,7 @@ which includes:
     and take both proactive and reactive steps to manage that risk.
 
 -   **Business intelligence from the SOC**: Sometimes SecOps finds that
-    adversaries are targeting a system or data set that isn\'t expected.
+    adversaries are targeting a system or data set that isn't expected.
     As these discoveries are made, the threat intelligence team should
     share these signals with business leaders as they might trigger
     insight for business leaders. For example, someone outside the
@@ -82,7 +80,7 @@ which includes:
 
 ### People and process
 
-Security operations can be highly technical, but more importantly, it\'s
+Security operations can be highly technical, but more importantly, it's
 a human discipline. People are the most valuable asset in security
 operations. Their experience, skill, insight, creativity, and
 resourcefulness are what make the discipline effective.
@@ -106,7 +104,7 @@ judgment is critical in defeating them.
 #### Diversify your thinking portfolio
 
 Security operations can be highly
-technical, but it\'s also just another new version of forensic
+technical, but it's also just another new version of forensic
 investigation that shows up in many career fields like criminal justice.
 Don\'t be afraid to hire people with a strong competency in
 investigation or deductive or inductive reasons and train them on
@@ -118,7 +116,7 @@ Metrics drive behavior, so measuring success is a critical element to
 get right. Metrics translate culture into clear measurable goals that
 drive outcomes.
 
-We\'ve learned that it\'s critical to consider what you measure, and the
+We\'ve learned that it's critical to consider what you measure, and the
 ways that you focus on and enforce those metrics. Recognize that
 security operations must manage significant variables that are out of
 their direct control, like attacks and attackers. Any deviations from
@@ -154,6 +152,6 @@ organizational risk are:
 -   **Escalations between each tier**: Track how many incidents
     escalated between tiers. It helps ensure accurate tracking of the
     workload to inform staffing and other decisions. For example, so
-    that work done on escalated incidents isn\'t attributed to the wrong
+    that work done on escalated incidents isn't attributed to the wrong
     team.
 

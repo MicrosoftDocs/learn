@@ -95,4 +95,4 @@ Most security breaches occur when attackers gain access to an environment by ste
 
 The Security Operations Microsoft Reference Architecture describes how Microsoft's security capabilities integrate with Microsoft services and applications for Microsoft's Security Operations functions. 
 
-![Security Operations Microsoft Reference Architecture](../media/security-operations-microsoft-reference-architecture.png)
+![Security Operations Microsoft Reference Architecture](../media/)

@@ -39,7 +39,7 @@ successful.
     possible so that the operations staff can react to issues quickly.
     Ideally, monitoring can help avert problems before a critical
     failure. For more information, see [Monitoring and
-    diagnostics](https://docs.microsoft.com/en-us/azure/architecture/best-practices/monitoring).
+    diagnostics](https://docs.microsoft.com/azure/architecture/best-practices/monitoring).
 
 3.  **Instrument for root cause analysis.** Root cause analysis is the
     process of finding underlying causes of failures. It occurs after a
@@ -76,7 +76,7 @@ In the information security lexicon, a kill chain describes the structure of an 
 
 Understanding the intention of an attack can help you investigate and report the event more easily. Microsoft Defender for Cloud alerts includes the 'intent' field to help with these efforts. 
 
-![Defend Across Attack Chains](../media/defend-across-attack-chains.png)
+![Defend Across Attack Chains](../media/)
 
 #### Types of logs in Azure
 
@@ -88,7 +88,7 @@ Cloud applications are complex, with many moving parts. Logging data can provide
 
 - Automate actions that would otherwise require manual intervention 
  
-![Types of logs in Azure](../media/SIEM.png)
+![Types of logs in Azure](../media/s-i-e-m.png)
 
 Azure logs are categorized into the following types:
 
@@ -104,8 +104,8 @@ Azure logs are categorized into the following types:
 
 -   **Processed events** provide information about analyzed
     events/alerts. Examples of this type are [Microsoft Defender for
-    Cloud alerts](https://docs.microsoft.com/en-us/azure/security-center/security-center-managing-and-responding-alerts), where [Microsoft
-    Defender for Cloud](https://docs.microsoft.com/en-us/azure/security-center/security-center-introduction) has processed and analyzed subscriptions and provides concise security
+    Cloud alerts](https://docs.microsoft.com/azure/security-center/security-center-managing-and-responding-alerts), where [Microsoft
+    Defender for Cloud](https://docs.microsoft.com/azure/security-center/security-center-introduction) has processed and analyzed subscriptions and provides concise security
     alerts.
 
 The following table lists the most important types of logs available in Azure:
@@ -150,7 +150,7 @@ Security Center's threat protection enables you to detect and prevent threats at
 
 Security Center's threat protection includes fusion kill-chain analysis, which automatically correlates alerts in your environment based on cyber kill-chain analysis to help you better understand the full story of an attack campaign, where it started, and what kind of impact it had on your resources. Security Center's supported kill chain intents are based on the MITRE ATT&CK™ framework. As illustrated below, the typical steps that trace the stages of a cyberattack. 
 
-![Stages of Cyberattack](../media/stages-cyberattack.png) 
+![Stages of Cyberattack](../media/) 
 
 - **Reconnaissance:** The observation stage where attackers assess networks and services to identify possible targets and techniques to gain entry. 
 

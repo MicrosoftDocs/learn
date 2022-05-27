@@ -37,14 +37,14 @@ Organizations using Azure services should provide employees with training regard
 - How to escalate a potential security incident 
 - How security incident response teams respond to security incidents 
 - Special concerns regarding privacy, particularly customer privacy 
-- Where to find additional information about security and privacy and escalation contacts 
+- Where to find more information about security and privacy and escalation contacts 
 - Any other relevant security areas (as needed) 
 
 The appropriate employees should receive refresher training on security annually. The annual refresher training focuses on: 
 
 - Any changes made to the standard operating procedures in the preceding year 
 - The responsibility of everyone to report security incidents, and how to do so 
-- Where to find additional information about security and privacy, and escalation contacts 
+- Where to find more information about security and privacy, and escalation contacts 
 - Any other security focus areas that may be relevant each year 
 
 
@@ -80,7 +80,7 @@ The data collection and analysis should continue through the containment phase t
 
 Eradication is the process of eliminating the root cause of the security incident with a high degree of confidence. The goal of eradication is twofold: to evict the adversary completely from the environment and mitigate any vulnerabilities that contributed to the incident or could enable the adversary to reenter the environment. 
 
-Eradication steps to evict the adversary and mitigate vulnerabilities are based on the analysis performed in the previous incident response phases. The Security Response team should coordinate with affected service teams to ensure the threat is successfully removed from the environment. Recovery is not possible until the threat has been removed and its underlying causes have been resolved. 
+Eradication steps to evict the adversary and mitigate vulnerabilities are based on the analysis performed in the previous incident response phases. The Security Response team should coordinate with affected service teams to ensure the threat is successfully removed from the environment. Recovery isn't possible until the threat has been removed and its underlying causes have been resolved. 
 
 ##### Recovery 
 

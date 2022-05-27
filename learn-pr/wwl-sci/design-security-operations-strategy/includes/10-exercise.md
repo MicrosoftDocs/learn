@@ -2,7 +2,7 @@
 
 **Meet Tailwind Traders**
 
-![Tailwind Traders logo.](../media/tailwind-traders.png) 
+![Tailwind Traders logo.](../media/) 
 
 Tailwind Trader is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
@@ -24,7 +24,7 @@ recommendations and questions. Here are the specific requirements.
     ensure that all available Azure logs are sourced and correlated
     within Microsoft Sentinel.
 
-![Security operations](../media/security-operations.png) 
+![Security operations](../media/) 
 
 #### Tasks
 
@@ -39,7 +39,7 @@ recommendations and questions. Here are the specific requirements.
             -   Azure Monitor - Azure Monitorâ€¯collects data from managed
                 sources into central data stores. This data can include
                 events, performance data, or custom data provided
-                through the API. After the data is collected, it\'s
+                through the API. After the data is collected, it's
                 available for alerting, analysis, and export.
 
     -   What are the different ways Tailwind Traders could prevent,

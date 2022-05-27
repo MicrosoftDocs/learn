@@ -77,7 +77,7 @@ You can flag suspicious events to gather clues and possibly stop an
 attack chain. These custom threat alerts will only appear in your
 organization and will flag events that you set it to track.
 
-Before creating custom threat alerts, it\'s important to know the
+Before creating custom threat alerts, it's important to know the
 concepts behind alert definitions and indicators of compromise (IOCs)
 and their relationship.
 
@@ -132,16 +132,16 @@ identifying IoT and OT devices, vulnerabilities, and threats and
 managing them through a central interface.
 
 Defender for IoT has [native threat intelligence
-capabilities](https://docs.microsoft.com/en-us/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)
+capabilities](https://docs.microsoft.com/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)
 using threat intelligence packages. You also have the option to
 i[ntegrate Defender for IoT with Microsoft
-Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/iot-solution).
+Sentinel](https://docs.microsoft.com/azure/sentinel/iot-solution).
 If you choose to integrate Defender for IoT with Microsoft Sentinel, you
 will get threat Intel from Defender for IoT and the enriched threat
 intel from Sentinel.
 
 ![Diagram showing an example of Defender for IoT\'s end-to-end coverage
-solution.](media\DefenderforIOT.png) 
+solution.](media\defenderfor-i-o-t.png) 
 
 Defender for IoT has both agent-based and agentless monitoring
 solutions:
@@ -158,7 +158,7 @@ solutions:
     builder agent helps you ensure that security is built into your
     IoT/OT projects from the cloud. For more information, see [Microsoft
     Defender for IoT for device builders
-    documentation](https://docs.microsoft.com/en-us/device-builders/index.md).
+    documentation](https://docs.microsoft.com/device-builders/index.md).
 
 **Threat Intelligence in Defender for Cloud**
 
@@ -168,10 +168,10 @@ partner solutions. It analyzes this information, often correlating
 information from multiple sources, to identify threats. For more
 information, see [How Microsoft Defender for Cloud detects and responds
 to
-threats](https://docs.microsoft.com/en-us/azure/defender-for-cloud/alerts-overview#detect-threats).
+threats](https://docs.microsoft.com/azure/defender-for-cloud/alerts-overview#detect-threats).
 
 When Defender for Cloud identifies a threat, it triggers a [security
-alert](https://docs.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts),
+alert](https://docs.microsoft.com/azure/defender-for-cloud/managing-and-responding-alerts),
 containing detailed information regarding the event, including
 suggestions for remediation. To help incident response teams investigate
 and remediate threats, Defender for Cloud provides threat intelligence
@@ -218,10 +218,10 @@ a set of tools and response workflows that include:
 -   [Incidents](/microsoft-365/security/office-365-security/office-365-ti?view=o365-worldwide#incidents)
 
 -   [Attack simulation
-    training](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide)
+    training](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide)
 
 -   [Automated investigation and
-    response](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-worldwide)
+    response](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-worldwide)
 
 **Best Practices**
 
@@ -234,7 +234,7 @@ threats.
     advantage of any STIX-compatible threat intelligence source, and you
     can also make use of any custom solutions that can communicate
     directly with the [Microsoft Graph Security tiIndicators
-    API](https://docs.microsoft.com/en-us/graph/api/resources/tiindicator).
+    API](https://docs.microsoft.com/graph/api/resources/tiindicator).
 
 -   You can also connect to threat intelligence sources from playbooks
     to enrich incidents with TI information to help direct investigation
@@ -242,14 +242,14 @@ threats.
 
 **Additional information on Sharing Technical Threat Intelligence**
 
-For additional information on Threat Intelligence, see the following:
+For more information on Threat Intelligence, see the following:
 
 -   [**TAXII threat intelligence
-    feeds**](https://steyer.sharepoint.com/sites/MSLearnSC_100/Learning%20Paths%20and%20Modules/LP1%20Design%20a%20Zero%20Trust%20strategy%20and%20architecture/docs.microsoft/com/en-us/azure/sentinel/threat-intelligence-integration)
+    feeds**](https://steyer.sharepoint.com/sites/MSLearnSC_100/Learning%20Paths%20and%20Modules/LP1%20Design%20a%20Zero%20Trust%20strategy%20and%20architecture/docs.microsoft/com/azure/sentinel/threat-intelligence-integration)
 
 -   [**Best Practices for Security
-    Operations**](https://docs.microsoft.com/en-us/security/compass/security-operations-videos-and-decks)
+    Operations**](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)
 
 -   [**Integrated threat intelligence platform
-    products**](https://docs.microsoft.com/en-us/azure/sentinel/threat-intelligence-integration#integrated-threat-intelligence-platform-products)
+    products**](https://docs.microsoft.com/azure/sentinel/threat-intelligence-integration#integrated-threat-intelligence-platform-products)
 

@@ -21,45 +21,45 @@ security strategy and architecture. You should now be able to:
 #### Learn more with Azure documentation
 
 -   [Security operations in Azure \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/security/compass/security-operations)
+    Docs](https://docs.microsoft.com/security/compass/security-operations)
 
 -   [Azure security logging and auditing \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/security/fundamentals/log-audit)
+    Docs](https://docs.microsoft.com/azure/security/fundamentals/log-audit)
 
 -   [Integrate your SIEM tools with Microsoft Defender for Endpoint \|
     Microsoft
-    Docs](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-siem?view=o365-worldwide)
+    Docs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-siem?view=o365-worldwide)
 
 -   [Improve security with Azure Sentinel, a cloud-native SIEM and SOAR
     solution \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/shows/azure-friday/improve-security-with-azure-sentinel-a-cloud-native-siem-and-soar-solution)
+    Docs](https://docs.microsoft.com/shows/azure-friday/improve-security-with-azure-sentinel-a-cloud-native-siem-and-soar-solution)
 
 -   [Microsoft security incident management - Microsoft Service
     Assurance \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/compliance/assurance/assurance-security-incident-management)
+    Docs](https://docs.microsoft.com/compliance/assurance/assurance-security-incident-management)
 
 -   [Cyber threat intelligence in Microsoft Sentinel - Azure Example
     Scenarios \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
+    Docs](https://docs.microsoft.com/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
 
 -   [Visualize collected data \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/sentinel/get-visibility)
+    Docs](https://docs.microsoft.com/azure/sentinel/get-visibility)
 
 -   [Overview - Microsoft Defender for IoT for organizations -
     Microsoft Defender for IoT \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/defender-for-iot/organizations/overview)
+    Docs](https://docs.microsoft.com/azure/defender-for-iot/organizations/overview)
 
 -   [Understand threat intelligence concepts in Microsoft Defender for
     Endpoint \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/threat-indicator-concepts?view=o365-worldwide)
+    Docs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-indicator-concepts?view=o365-worldwide)
 
 #### Learn more with self-paced training
 
 -   [Plan for threat intelligence connectors - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/learn/modules/connect-threat-indicators-to-azure-sentinel/2-plan-for-threat-intelligence-connectors)
+    Docs](https://docs.microsoft.com/learn/modules/connect-threat-indicators-to-azure-sentinel/2-plan-for-threat-intelligence-connectors)
 
 -   [When to use Microsoft Sentinel - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-sentinel/4-when-to-use-azure-sentinel)
+    Docs](https://docs.microsoft.com/learn/modules/intro-to-azure-sentinel/4-when-to-use-azure-sentinel)
 
 -   [Connect logs to Microsoft Sentinel - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/learn/paths/sc-200-connect-logs-to-azure-sentinel/)
+    Docs](https://docs.microsoft.com/learn/paths/sc-200-connect-logs-to-azure-sentinel/)

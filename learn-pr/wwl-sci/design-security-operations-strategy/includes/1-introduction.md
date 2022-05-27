@@ -37,7 +37,7 @@ the request is critical to proving its point-in-time trustworthiness. This attes
 Our other Zero Trust guides defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [networks](https://aka.ms/ZTNetwork). 
 All these investments increase your visibility, which gives you better data for making trust decisions. However, adopting a Zero Trust approach in other areas like identities, endpoints, infrastructure and networks, increases the number of incidents Security Operation Center (SOC) analysts need to mitigate.
 
-![Provide integrated capabilities](../media/provide-integrated-capabilities.png)
+![Provide integrated capabilities](../media/)
 
 With each of these individual areas generating its relevant alerts, an integrated capability is needed to manage the resulting influx of data to better defend against threats and validate trust in a transaction. The following abilities are needed: 
 
