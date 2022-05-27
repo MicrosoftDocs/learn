@@ -1,4 +1,4 @@
-There's more to building applications than the C# language itself. You'll also need the .NET Runtime, which hosts and manages your code as it executes on the end user's computer. You'll also rely on a collection of functionality called the .NET Class Library that you can use in your applications. This unit explains what the .NET Class Library is and how it complements the C# programming language.
+There's more to building applications than the C# language itself. You'll also need the .NET Runtime, which hosts and manages your code as it executes on the end user's computer. You'll also rely on a collection of functionalities called the .NET Class Library that you can use in your applications. This unit explains what the .NET Class Library is and how it complements the C# programming language.
 
 ## What is the .NET Class Library?
 
@@ -28,7 +28,7 @@ First of all, there's a small subset of classes you'll likely use throughout you
 
 Second, as you have a need, you'll likely use your favorite search engine to find blog posts, articles, or forums where other users have needed to do similar kinds of things you want to do. Third-party sources will give you clues and even provide some sample code you can try.
 
-Next, you'll likely spend time reading Microsoft's own documentation for specific methods to understand exactly what they do, how they work, what are their limitations, under what conditions they'll raise exceptions (errors) and how you mitigate those problems. The documentation will become your source of truth for the .NET Class Library. The documentation team works closely with the .NET Class Library's software developers to ensure its accuracy.
+Next, you'll likely spend time reading Microsoft's own documentation for specific methods to understand exactly what they do, how they work, what their limitations are, under what conditions they'll raise exceptions (errors), and how you can mitigate those problems. The documentation will become your source of truth for the .NET Class Library. The documentation team works closely with the .NET Class Library's software developers to ensure its accuracy.
 
 Finally, you'll begin to experiment with small code projects to deepen your understanding of how the classes and methods work.
 
