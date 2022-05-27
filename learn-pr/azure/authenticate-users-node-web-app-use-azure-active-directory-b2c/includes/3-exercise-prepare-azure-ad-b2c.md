@@ -40,7 +40,7 @@ Use the following steps to register your web app in Azure AD B2C tenant:
 
 1. Select **Register**.
 
-    :::image type="content" alt-text="Screenshot of registering web app in azure portal" source="./../media/register-web-app-in-azure-portal.png" :::
+    :::image type="content" alt-text="Screenshot of registering web app in Azure portal" source="./../media/register-web-app-in-azure-portal.png" :::
 
 1. In the left menu, select **Overview**.
 
@@ -84,7 +84,7 @@ Use the following steps to create a **Sign up and sign in** user flow in your Az
 
 1. Under **Policies**, select **User flows**, and then select **New user flow**.
 
-    ![Screenshot of creating user flows in azure portal](./../media/sign-up-sign-in-user-flow.png)
+    ![Screenshot of creating user flows in Azure portal](./../media/sign-up-sign-in-user-flow.png)
 
 1. On the **Create a user flow** page, select the **Sign up and sign in** user flow.
 
@@ -112,7 +112,7 @@ You can test your Sign up and sign in user flow from within azure portal before 
  
 ### Step 3.1: Enable ID token implicit grant settings 
 
-To test your user flow in azure portal using `https://jwt.ms/` redirect URI, you need to enable ID token implicit grant settings: 
+To test your user flow in Azure portal using `https://jwt.ms/` redirect URI, you need to enable ID token implicit grant settings: 
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
