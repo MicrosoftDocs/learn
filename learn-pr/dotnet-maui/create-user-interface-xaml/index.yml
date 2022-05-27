@@ -30,7 +30,7 @@ roles:
 products:
 - vs
 - dotnet
-# - maui # not yet available as a product in Learn
+- dotnet-maui
 units:
 - learn.dotnet-maui.create-user-interface-xaml.introduction
 - learn.dotnet-maui.create-user-interface-xaml.benefits-xaml
