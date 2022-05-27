@@ -108,7 +108,7 @@ Use the following steps to create a **Sign up and sign in** user flow in your Az
 
 ## Step 3: Test the user flow in Azure portal
 
-You can test your Sign up and sign in user flow from within azure portal before you integrate it into your Node web app. 
+You can test your Sign up and sign in user flow from within Azure portal before you integrate it into your Node web app. 
  
 ### Step 3.1: Enable ID token implicit grant settings 
 
