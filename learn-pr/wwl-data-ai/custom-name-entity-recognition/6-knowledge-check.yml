@@ -15,7 +15,7 @@ durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You have trained your model and you're seeing that it doesn't recognize your entities. What metric score is likely low to indicate that issue?"
+  - content: "You've trained your model and you're seeing that it doesn't recognize your entities. What metric score is likely low to indicate that issue?"
     choices:
     - content: "Recall"
       isCorrect: true

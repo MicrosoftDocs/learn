@@ -1,8 +1,8 @@
 Training and evaluating your model is an iterative process of adding data and tags to your training dataset to teach the model more accurately. To know what types of data and tags need to be improved, Language Studio provides scoring in the **View model details** page on the left hand pane.
 
-![Screenshot of the View model scoring tab.](../media/model-scoring.png)
+![Screenshot of the View model scoring tab.](../media/model-scoring.png#lightbox)
 
-Individual entities as well as your overall model score are broken down into three metrics to explain how they are performing and where they need to improve.
+Individual entities and your overall model score are broken down into three metrics to explain how they are performing and where they need to improve.
 
 | Metric | Description |
 |--------|-------------|
@@ -16,14 +16,14 @@ Scores are available both per entity and for the model as a whole. You may find 
 
 Ideally we want our model to score well in both precision and recall, which means the entity recognition works well. If both metrics have a low score, it means the model is both struggling to recognize entities in the document, and when it does extract that entity, it doesn't assign it the correct label with high confidence.
 
-If precision is low but recall is high, it means that the entity is recognized well but it's not labeled as the correct entity type.
+If precision is low but recall is high, it means that the model recognizes the entity well but does not label it as the correct entity type.
 
-If precision is high but recall is low, it means that the entity doesn't always get recognized, but when the entity is extracted the correct label is applied.
+If precision is high but recall is low, it means that the model doesn't always recognize the entity, but when the entity is extracted the correct label is applied.
 
 ## Confusion matrix
 
-On the same **View model details** page, there is another tab on the top for the *Confusion matrix*. This provides a visual table of all the entities and how each performed, giving a complete view of the model as well as where it's falling short.
+On the same **View model details** page, there is another tab on the top for the *Confusion matrix*. This view provides a visual table of all the entities and how each performed, giving a complete view of the model and where it's falling short.
 
-![Screenshot of a sample confusion matrix.](../media/model-confusion-matrix.png)
+![Screenshot of a sample confusion matrix.](../media/model-confusion-matrix.png#lightbox)
 
 The confusion matrix allows you to visually identify where to add data to improve your model's performance.

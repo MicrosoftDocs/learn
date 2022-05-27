@@ -1,16 +1,16 @@
 Tagging your data correctly is an important part of the process to create a custom entity extraction model. Tags identify examples of specific entities in text used to train the model. Three things to focus on are:
 
-- **Consistency** - Tag your data the same way across all files for training. This allows your model to learn without any conflicting inputs.
-- **Precision** - Tag your entities consistently, without unnecessary additional words. This ensures only the correct data is included in your extracted entity.
-- **Completeness** - Tag your data completely, and don't miss any entities. This helps your model always recognize the entities present.
+- **Consistency** - Tag your data the same way across all files for training. Consistency allows your model to learn without any conflicting inputs.
+- **Precision** - Tag your entities consistently, without unnecessary extra words. Precision ensures only the correct data is included in your extracted entity.
+- **Completeness** - Tag your data completely, and don't miss any entities. Completeness helps your model always recognize the entities present.
 
-![Screenshot of tagging an entity in Language Studio.](../media/ner-tag-entity.png)
+![Screenshot of tagging an entity in Language Studio.](../media/ner-tag-entity.png#lightbox)
 
 ## How to tag your data
 
-The most straight forward method for tagging your data is through Language Studio, which allows you to see the file, select the beginning and end of your entity, and specify which entity it is.
+Language Studio is the most straight forward method for tagging your data. Language Studio allows you to see the file, select the beginning and end of your entity, and specify which entity it is.
 
-Each tag that you identify gets saved into a file that lives in your storage account with your dataset, in an auto-generated JSON file. This file then gets used by the model to learn how to extract custom entities. It is possible to provide this file when creating your project (if you're importing the same tags from a different project, for example) however it must be in the approved format.
+Each tag that you identify gets saved into a file that lives in your storage account with your dataset, in an auto-generated JSON file. This file then gets used by the model to learn how to extract custom entities. It's possible to provide this file when creating your project (if you're importing the same tags from a different project, for example) however it must be in the approved format.
 
 ```json
 {

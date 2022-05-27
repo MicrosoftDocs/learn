@@ -1,6 +1,6 @@
-In addition to other natural language processing capabilities, Azure Language service provides the ability to extract custom entities from various files.
+In addition to other natural language processing capabilities, Azure Language service enables you to extract custom entities from various files.
 
-To test the custom entity extraction, we'll create a model and train it through Language Studio, then use a simple command line application to test it.
+To test the custom entity extraction, we'll create a model and train it through Language Studio, then use a command line application to test it.
 
 ## Create a *Language service* resource
 
@@ -9,7 +9,7 @@ To use custom entity recognition, you'll need to create an Azure Language servic
 If you haven't already done so, create a **Language service** resource in your Azure subscription.
 
 1. In a browser, open the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in with your Microsoft account.
-2. Select the **Create a resource** button, search for *Language*, and create a **Language service** resource. When asked about additional features, select **Custom text classification & extraction**. Create the resource with the following settings:
+2. Select the **Create a resource** button, search for *Language*, and create a **Language service** resource. When asked about *Additional features*, select **Custom text classification & extraction**. Create the resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
@@ -31,11 +31,11 @@ If you haven't already done so, create a **Language service** resource in your A
 ### Get Language resource key and endpoint
 
 1. Navigate to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Language resource
-2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these into Notepad for now or we'll come back to this page at that time.
+2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these values into Notepad for now or we'll come back to this page at that time.
 
 ## Upload sample ads
 
-Once you have created the language service and storage account, you'll need to upload example ads to train your model later.
+After you've created the language service and storage account, you'll need to upload example ads to train your model later.
 
 1. [Download sample classified ads](https://aka.ms/entity-extraction-ads) from this repo on GitHub. Extract the files from the `.zip` provided.
 
@@ -58,12 +58,12 @@ Once configuration is complete, create a custom named entity recognition project
 1. Log into the [Language Studio](https://aka.ms/languageStudio) with your Azure account, and select the Azure subscription that you created your Language resource in, and select your Language resource
 
     > [!NOTE]
-    > If you've already logged into Language Studio, it is already linked to your previous Language resource. When creating the project in the following steps, be sure to switch that project to the correct resource.
+    > If you've previously logged into Language Studio, it's already linked to your previous Language resource. When creating the project in the following steps, be sure to switch that project to the correct resource.
 
 2. Under the **Extract information** section, select **Custom named entity recognition**
 3. Select **Create new project**
 4. In the **Create a project** pop out, choose the following and create your project:
-    - **Connect storage**: *This is likely already filled out. Change resource to* CustomNER *if it isn't already*
+    - **Connect storage**: *This  value is likely already filled. Change resource to* CustomNER *if it isn't already*
     - **Name**: customNERLab
     - **Description**: *Enter short description*
     - **Text primary language**: English (US)
@@ -77,11 +77,11 @@ Now that your project is created, you need to tag your data to train your model 
 1. On the left, click on **Tag data**. You'll see a list of the files you uploaded to your storage account.
 2. On the right side, in the **Tagging** pane, click on **Add entity**. The files for this lab contain three you'll need to create: ItemForSale, Price, and Location
 
-    ![Tag data and add entity](../media/tag-data-add-entity.png)
+    ![Tag data and add entity](../media/tag-data-add-entity.png#lightbox)
 
 3. After you've created your three entities, start by clicking on *Ad 1*. Here you can read the ad, specify the entity, and which dataset to assign it to.
 4. Assign the entities for each ad to their respective values by selecting the beginning and end, which will then highlight the entity. Specify which entity it is.
-5. Each file has the option to specify the dataset; leave all to the default  *Training* dataset.
+5. Each file can specify the dataset; leave all to the default *Training* dataset.
 6. Click **Save tags**
 
 ## Train your model
@@ -122,23 +122,23 @@ To test the text analytics capabilities of the Language service, we'll use a sho
 
 ### Run Cloud Shell
 
-1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. A Cloud Shell pane will open at the bottom of the portal.
 
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
+    ![Screenshot of starting Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png#lightbox)
 
-2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you don't see this option, skip the step.  
 
-3. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
+3. If you're prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
 
-4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it's *Bash*, switch to *PowerShell* by using the drop-down menu.
 
 5. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    ![Wait for PowerShell to start.](../media/powershell-prompt.png)
+    ![Screenshot of waiting for PowerShell to start.](../media/powershell-prompt.png#lightbox)
 
 ### Configure and run PowerShell
 
-Now that you have a custom model, you can run a simple client application that uses the Language service.
+Now that you have a custom model, you can run a client application that uses the Language service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-language.
 
