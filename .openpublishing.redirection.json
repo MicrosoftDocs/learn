@@ -13414,26 +13414,6 @@
       "source_path": "learn-pr/wwl-azure/static-analyzers/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/static-analyzers/6-summary",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/understand-package-management/10-create-package-feed.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-package-management/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/understand-package-management/12-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-package-management/11-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/understand-package-management/11-push-package.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-package-management/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/understand-package-management/13-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-package-management/12-summary",
-      "redirect_document_id": true
     }
   ]
 }
