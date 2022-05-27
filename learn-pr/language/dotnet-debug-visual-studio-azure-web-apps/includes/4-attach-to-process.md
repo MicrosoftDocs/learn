@@ -31,9 +31,7 @@ You can use the local symbol files produced by building your source code to debu
     
     By default, Visual Studio only loads symbols for user code. In simplified terms, you can think of user code as code you've written, as opposed to DLLs that were provided by .NET or third party packages. Because the debugger is attached to optimized release code running out in Azure, it doesn't recognize the project dll as user code, so you'll fix that next.
 
-2) Navigate to **Tools -> Options** from the top Visual Studio menu. 
-
-3) Under the **Debugging** section, make sure that "Enable Just My code** is unchecked, and then select **OK**. Changing this setting will allow Visual Studio to browse its default search locations for symbol files that match the optimized code.
+2) Navigate to **Debug -> Options** from the top Visual Studio menu. Make sure that "Enable Just My code** is unchecked, and then select **OK**. Changing this setting will allow Visual Studio to browse its default search locations for symbol files that match the optimized code.
 
     :::image type="content" source="../media/visual-studio-remote-debug-settings.png" alt-text="A screenshot of the Visual Studio debugging settings.":::
 
@@ -46,9 +44,9 @@ You can use the local symbol files produced by building your source code to debu
 
 Once your symbols have loaded, you can debug the Azure hosted app just like you would locally. 
 
-1) With the breakpoint set, enter a value of *dotnet* in the app search box and then hit submit. Visual Studio will hit the break point inside the `OnGet` method. The first time may take a moment to sync. The code will attempt to retrieve the `GitHubUrl` value using the `IConfiguration` service. By default th configuration service loads values from the `appsettings.json` file in the app. 
+1) With the breakpoint set, enter a value of *dotnet* in the app search box and then hit submit. Visual Studio will hit the break point inside the `OnGet` method. The first time may take a moment to sync. The code will attempt to retrieve the `GitHubUrl` value using the `IConfiguration` service. By default the configuration service loads values from the `appsettings.json` file in the app. 
 
-2) Use the step over button on the Visual Studio debugging controls to move to the next line of code. If you mouse over the `githubUrl` variable, you'll find that the value is currently null. This code worked fine locally, so why is the value null in Azure? 
+2) Use the step over button on the Visual Studio debugging controls to move to the next line of code. If you mouse over the `githubUrl` variable, you'll find that the value is currently null. This code worked fine locally, so why is the value null in Azure?
 
 3) Open the `appsettings.json` file to investigate further. Inside of this file there are a few configuration settings around logging - but no `GitHubUrl` value to be found.
 

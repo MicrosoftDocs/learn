@@ -18,15 +18,15 @@ quiz:
         - content: "Sign in to the Kudu portal and open up a firewall port to allow Visual Studio to connect."
           isCorrect: false
           explanation: "Incorrect. The Kudu portal is not used to managed remote debugging."
-        - content: "Enable the remote debugging setting in the publishing profile in Visual Studio."
+        - content: "Add a `RemoteDebugging` setting in the `appsettings.json` file of the project."
           isCorrect: false
-          explanation: "Incorrect. The publishing profile in Visual Studio doesn't provide an option to enable remote debugging."
+          explanation: "Incorrect. The `appsettings.json` file does not provide an option to enable remote debugging."
         - content: "Enable remote debugging through the app service configuration page in the Azure portal."
           isCorrect: true
           explanation: "Correct. Remote debugging can be enabled under the general settings tab on the App Service configuration page."
         - content: "Use the Visual Studio attach to process dialog window to enable remote debugging."
           isCorrect: false
-          explanation: "Incorrect. The Azure App Service remote debugging setting can't be enabled from Visual Studio."
+          explanation: "Incorrect. The Azure App Service remote debugging setting can't be enabled from the attach to process dialog."
     - content: "What does it mean if a Visual Studio breakpoint icon is hollow (not filled in) after you attach to the Azure App Service process?"
       choices:
         - content: "The symbols for the relevant code haven't been loaded."
@@ -37,7 +37,7 @@ quiz:
           explanation: "Incorrect. You aren't able to attach the debugger if remote debugging is disabled."
         - content: "Your version of Visual Studio doesn't support remote debugging."
           isCorrect: false
-          explanation: "Incorrect. You aren't able to attach the debugger to Azure App Service in the first place if your version of Visual Studio is unsupported."
+          explanation: "Incorrect. You aren't able to attach the debugger to Azure App Service if your version of Visual Studio is unsupported."
         - content: "The Visual Studio debugger failed to attach to the process."
           isCorrect: false
           explanation: "Incorrect. The debugger can still be attached even if breakpoints aren't able to be hit."
@@ -63,9 +63,9 @@ quiz:
         - content: "Use the command line to run 'dotnet remote attach' and provide the address of the Azure App Service."
           isCorrect: false
           explanation: "Incorrect. This dotnet CLI command doesn't exist."
-        - content: "Check the **Attach Debugger on Deploy** option in the publishing profile before deploying the app. Visual Studio will enter debug mode after the app is published."
+        - content: "Right click on the project node in the Visual Studio solution explorer and choose **Attach debugger**."
           isCorrect: false
-          explanation: "Incorrect. This option doesn't exist on the publishing profile settings."
+          explanation: "Incorrect. This option doesn't exist on the solution explorer project options."
         - content: "Under the main **Debug** menu, select **Attach To process**, and then use the dialog window to find your Azure App Service instance."
           isCorrect: true
           explanation: "Correct. Visual Studio provides an interactive UI to attach to processes on different machines and environments."
