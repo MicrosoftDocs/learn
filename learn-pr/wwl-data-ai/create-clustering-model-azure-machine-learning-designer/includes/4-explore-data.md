@@ -35,7 +35,7 @@ Network](https://lternet.edu/).
 
 ## Create a pipeline
 
-To get started with Azure machine Learning designer, first you must create a pipeline and add the dataset you want to work with.
+To get started with Azure machine learning designer, first you must create a pipeline and add the dataset you want to work with.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, expand the left pane by selecting the three lines at the top left of the screen. View the **Designer** page (under **Author**), and select **+** to create a new pipeline.
 2. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top. 
