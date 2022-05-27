@@ -1,108 +1,67 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Now that you've understood how to configure MSAL Node library, you need to use it to add authentication to your Node web app. 
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Recall from the eCommerce organization scenario, your organization needed to authenticate users into the Node app. 
 
-    Heading: none
+Here, you'll configure the Node app that you previously built to authenticate users by using Azure AD B2C. To achieve this, you'll use the Microsoft Authentication Library (MSAL) for Node.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Update the .env file
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+As we learnt earlier, the `.env` file holds environment variables, which gets loaded to into `process.env` by dotenv package. 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Use the following steps to update the `.env` file with new variable:
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. Using Visual Studio Code (VS Code), open your Node web app that you created earlier.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Select the `.env` file to open it, and add the following code into it:
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+    ```text
+    #web apps client ID
+    APP_CLIENT_ID=<App client ID>
+    #web app client secret
+    APP_CLIENT_SECRET=<Your app client secret>
+    #B2C sign up and sign in user flow/policy authority
+    SIGN_UP_SIGN_IN_POLICY_AUTHORITY=https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>
+    #B2C authority domain
+    AUTHORITY_DOMAIN=https://<your-tenant-name>.b2clogin.com
+    #client redirect url
+    APP_REDIRECT_URI=http://localhost:3000/redirect
+    #Logout endpoint 
+    LOGOUT_ENDPOINT=https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/<sign-in-sign-up-user-flow-name>/oauth2/v2.0/logout?post_logout_redirect_uri=http://localhost:3000
+    ```
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    Replace:
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+    - `<App client ID>` with the application (client) ID for the web app you registered in Azure portal.
+    - `<Your app client secret>` with the client secret for the web app you registered in Azure portal.
+    - `<your-tenant-name>` with the name of your Azure AD B2C tenant.
+    - `<sign-in-sign-up-user-flow-name>` with the name of your Sign in and Sign up user flow, which you created in Azure portal such as `B2C_1_susi`.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    If you're using a custom domain for your Azure AD B2C tenant, replace all instances of `<your-tenant-name>.b2clogin.com` with your custom domain.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Save the changes.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Install MSAL Node
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+To use MSAL Node library in your app, you need to install it. The MSAL Node package name is `@azure/msal-node`.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+In your VS Code terminal, run the following command to install MSAL Node:
 
-    Goal: List the steps they'll do to complete the exercise.
+```text
+npm install @azure/msal-node
+```
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+## Update the index.js file
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+The `index.js` file contains the main app logic. The current web app works, but can't authenticate users. You need to add authentication capability by updating the `index.js` file:
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. To import MSAL Node into your app, add the following line of code at top of the file:
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    ```javascript
+    const msal = require('@azure/msal-node');
+    ```
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node:
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+    `confidentialClientConfig` is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints.
