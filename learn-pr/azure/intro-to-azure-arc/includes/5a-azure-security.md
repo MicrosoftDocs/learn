@@ -1,9 +1,34 @@
-Azure Arc enables organizations like Contoso to extend some capabilities of *Azure Policy* to computer operating systems that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the operating system, applications, and environment. Additionally, Contoso can configure the time zone on servers that are running the Windows Server operating system. 
+Contoso wants to protect the servers and Kubernetes clusters it's connected to Azure Arc. Microsoft Sentinel lets Contoso collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Through Microsoft Defender for Cloud, Contoso can monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
 
-Contoso IT staff can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that IT staff install the Azure Connected Machine agent on each computer in the scope of management. 
+## What can Microsoft Sentinel do?
 
-> [!IMPORTANT]
-> Currently, you can only audit settings in this context. Auto-remediation is not yet available.
+Microsoft Sentinel provides a single solution for alert detection, threat visibility, proactive hunting, and threat response across the enterprise. Microsoft Sentinel collects data from a wide array of sources, detects and investigates threats, and rapidly responds to incidents using automation of common tasks.
+
+### Onboard Azure Arc-enabled servers to Microsoft Sentinel
+
+In order to onboard a Azure Arc-enabled server to Microsoft Sentinel, you'll need the following:
+
+- A Log Analytics workspace
+- Microsoft Sentinel enabled in your subscription
+- Your server connected to Azure Arc-enabled servers
+
+Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration. For physical and virtual machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel. Azure Arc-enabled servers supports deploying the Log Analytics agent using the following methods:
+
+- Using the VM extensions framework
+- Using Azure Policy
+
+After your Arc-enabled servers are connected, your data starts streaming into Microsoft Sentinel and is ready for you to use!
+
+### Detecting threats
+
+Contoso can use Microsoft Sentinel's threat detection templates to create their own rules for detecting suspicious activity. These rule templates are based on known threats and common attack vectors, allowing Contoso to create specific rules to automatically search their environment for threats. Templates can be customized to search for activities or filter them out as needed. 
+
+
+
+
+
+
+
 
 
 Contoso could use *Azure Monitor* to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers.
