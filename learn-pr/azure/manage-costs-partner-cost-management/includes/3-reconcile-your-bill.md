@@ -1,4 +1,4 @@
-As a global admin or admin agent, you can use Azure Cost Management to reconcile the pretax costs on your invoice.
+As a global admin or admin agent, you can use Microsoft Cost Management to reconcile the pretax costs on your invoice.
 
 :::image type="content" source="../media/03-example-invoice.png" alt-text="Screenshot that shows an example invoice with resource costs." lightbox="../media/03-example-invoice.png" :::
 
@@ -12,7 +12,7 @@ The following images are examples with fictitious costs.
 
 1. To [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management +Billing** and then select **Cost analysis**.
 1. In **Cost analysis**, you can select the scope of the billing account. You can then select the appropriate billing profile that's associated with the invoice and the invoiced currency.  
-    :::image type="content" source="../media/03-select-billing-account.png" alt-text="Example that shows how to select a billing account scope in Azure Cost Management." lightbox="../media/03-select-billing-account.png" :::
+    :::image type="content" source="../media/03-select-billing-account.png" alt-text="Example that shows how to select a billing account scope in  Cost Management." lightbox="../media/03-select-billing-account.png" :::
     :::image type="content" source="../media/03-select-billing-profile.png" alt-text="Example that shows how to select a billing profile under the account scope." lightbox="../media/03-select-billing-profile.png" :::
 1. You can filter costs in a billing profile for a specific invoice by using the  **InvoiceID**  filter. The filter shows the consumption and product purchase costs for a specific invoice.  
     :::image type="content" source="../media/03-invoice-id-filter.png" alt-text="Example that shows costs filtered for a specific invoice." lightbox="../media/03-invoice-id-filter.png" :::
