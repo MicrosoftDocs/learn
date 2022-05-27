@@ -3,7 +3,7 @@ uid: learn.wwl.secure-mysql-database-key-vault-use-private-endpoint
 metadata:
   title: Secure MySQL database and Key Vault using a Private Endpoint
   description: "Secure MySQL database and Key Vault using a Private Endpoint"
-  ms.date: 05/26/2022
+  ms.date: 05/27/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
