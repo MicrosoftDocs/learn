@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-security-operations-strategy.design-strategy-for-security-information-event-management-siem-security-orchestr
+title: Design a strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR)
+metadata:
+  title: Design a strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR)
+  description: "Design a strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR)"
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-design-strategy-for-security-information-event-management-siem-security-orchestr.md)]

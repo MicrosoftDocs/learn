@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-security-operations-strategy.evaluate-security-workflows
+title: Evaluate security workflows
+metadata:
+  title: Evaluate security workflows
+  description: "Evaluate security workflows"
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3

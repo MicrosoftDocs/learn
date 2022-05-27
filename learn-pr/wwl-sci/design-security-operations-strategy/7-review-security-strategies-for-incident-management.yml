@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-security-operations-strategy.review-security-strategies-for-incident-management
+title: Review security strategies for incident management
+metadata:
+  title: Review security strategies for incident management
+  description: "Review security strategies for incident management"
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-review-security-strategies-for-incident-management.md)]
