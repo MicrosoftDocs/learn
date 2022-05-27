@@ -1,30 +1,29 @@
-After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *infer* (in other words, predict) label values based on its features. This pipeline will form the basis for a predictive service that you can publish for applications to use.
+After creating and running a pipeline to train the model, you need a second pipeline known as an inference pipeline. The inference pipeline performs the same data transformations as the first pipeline for *new* data. Then it uses the trained model to *infer*, or predict, label values based on its features. This model will form the basis for a predictive service that you can publish for applications to use.
 
 ## Create an inference pipeline
 
 1. In Azure Machine Learning Studio, expand the left-hand pane by selecting the three lines at the top left of the screen. Click on **Jobs** (under **Assets**) to view all of the jobs you have run. Select the experiment **mslearn-diabetes-training**, then select the **mslearn-diabetes-training** pipeline. 
-2. At the top of the canvas you will see a menu. You may need to expand your screen to full and click on the three dots icon **...** on the top right hand corner of the screen in order to find **Create inference pipeline** in the menu.  
+2. Locate the menu above the canvas and click on **Create inference pipeline**. You may need to expand your screen to full and click on the three dots icon **...** on the top right hand corner of the screen in order to find **Create inference pipeline** in the menu.  
 
-> [!div class="centered"]
-> ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png)
-3. Click on the **Create inference pipeline** drop-down list. Then click **Real-time inference pipeline**. Then click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Diabetes Training-real time inference** will be opened.
+    > ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png)
 
-   *If the pipeline does not include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then re-open the **Diabetes Training-real time inference** pipeline.*
+3. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Diabetes Training-real time inference** will be opened.
 
-4. Rename the new pipeline to **Predict Diabetes**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. Some of the transformations and training steps have been encapsulated in this pipeline so that the statistics from your training data will be used to normalize any new data values, and the trained model will be used to score the new data.
+   *If the pipeline doesn't include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then reopen the **Diabetes Training-real time inference** pipeline.*
 
-    You are going to make the following changes to the inference pipeline:
+4. Rename the new pipeline to **Predict Diabetes**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. Some of the transformations and training steps are a part of this pipeline. The trained model will be used to score the new data.
 
-> [!div class="centered"]
-> ![An inference pipeline with changes indicated](../media/inference-changes.png)
+    You're going to make the following changes to the inference pipeline:
 
-- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that does not include the label column (**Diabetic**).
+    > ![An inference pipeline with changes indicated](../media/inference-changes.png)
+
+- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that doesn't include the label column (**Diabetic**).
 - Remove the **Evaluate Model** module.
 - Insert an **Execute Python Script** module before the web service output to return only the patient ID, predicted label value, and probability.
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
 
-5. The inference pipeline assumes that new data will match the schema of the original training data, so the **diabetes-data** dataset from the training pipeline is included. However, this input data includes the **Diabetic** label that the model predicts, which is unintuitive to include in new patient data for which a diabetes prediction has not yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three new patient observations:
+5. The inference pipeline assumes that new data will match the schema of the original training data, so the **diabetes-data** dataset from the training pipeline is included. However, this input data includes the **Diabetic** label that the model predicts, which is not included in new patient data for which a diabetes prediction hasn't yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three new patient observations:
 
     ```CSV
     PatientID,Pregnancies,PlasmaGlucose,DiastolicBloodPressure,TricepsThickness,SerumInsulin,BMI,DiabetesPedigree,Age
@@ -34,8 +33,8 @@ After creating and running a pipeline to train the model, you need a second pipe
     ```
 
 6. Connect the new **Enter Data Manually** module to the same **Dataset** input of the **Apply Transformation** module as the **Web Service Input**.
-7. The inference pipeline includes the **Evaluate Model** module, which is not useful when predicting from new data, so delete this module.
-8. The output from the **Score Model** module includes all of the input features as well as the predicted label and probability score. To limit the output to only the prediction and probability:
+7. The inference pipeline includes the **Evaluate Model** module, which isn't useful when predicting from new data, so delete this module.
+8. The output from the **Score Model** module includes all of the input features and the predicted label and probability score. To limit the output to only the prediction and probability:
     - Delete the connection between the **Score Model** module and the **Web Service Output**.
     - Add an **Execute Python Script** module from the **Python Language** section, replacing all of the default python script with the following code (which selects only the **PatientID**, **Scored Labels** and **Scored Probabilities** columns and renames them appropriately):
 
@@ -52,12 +51,11 @@ After creating and running a pipeline to train the model, you need a second pipe
         ```
 
     - Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
-9. Verify that your pipeline looks similar to the following:
+9. Verify that your pipeline looks similar to the following image:
 
-> [!div class="centered"]
-> ![A visual inference pipeline](../media/visual-inference.png)
+    > ![A visual inference pipeline](../media/visual-inference.png)
 
-10. Run the pipeline as a new experiment named **mslearn-diabetes-inference** on your compute cluster. This may take a while!
+10. Run the pipeline as a new experiment named **mslearn-diabetes-inference** on your compute cluster. The experiment may take a while to run.
 11. When the pipeline has finished, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
 Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.
