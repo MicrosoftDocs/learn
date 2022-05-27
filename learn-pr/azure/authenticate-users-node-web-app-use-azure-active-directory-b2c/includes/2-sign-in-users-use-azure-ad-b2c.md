@@ -23,7 +23,7 @@ Regardless of your preferred language or platform, Azure AD B2C supports authent
 
 OpenID Connect protocol extends the OAuth 2.0 authorization protocol for use as an authentication protocol. This authentication protocol allows you to perform single sign-on. It introduces the concept of an *ID token*, which allows the client to verify the identity of the user and obtain basic profile information about the user.
 
-Azure AD B2C extends the standard OpenID Connect protocol to do more than simple authentication and authorization. It introduces an element called *policies*, which enables you to use OpenID Connect to add user journeys to your application, such as sign up, sign in, and profile management.
+Azure AD B2C extends the standard OpenID Connect protocol to do more than just authentication and authorization. It introduces an element called *policies*, which enables you to use OpenID Connect to add user journeys to your application, such as sign up, sign in, and profile management.
 
 ## User experiences using policies
 
