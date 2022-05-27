@@ -1,9 +1,9 @@
 
 For a web app to authenticate users, you need to add that capability.
 
-In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. So, you need to configure your web app to communicate with Azure AD B2C services whenever a user signs in to your web app. This procedure requires you understand authentication protocols such as OAuth 2.0 and OpenID Connect, which isn't easy.
+In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. So, you need to configure your web app to communicate with Azure AD B2C services whenever a user signs in to your web app. This procedure requires you understand authentication protocols such as OAuth 2.0 and OpenID Connect.
 
-Here, we'll learn about Microsoft Authentication Library(MSAL), which makes it easier to configure your app to authenticate users by using Azure AD B2C.
+Here, we'll learn about Microsoft Authentication Library(MSAL), which is a recommended open-source library used to configure your app to authenticate users by using Azure AD B2C.
 
 ## What is Microsoft Authentication Library?
 
