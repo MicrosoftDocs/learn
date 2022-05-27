@@ -1,4 +1,4 @@
-One of the benefits of using Spark is that you can write and run code in various programming languages, enabling you to use the programming skills you already have and to use the most appropriate language for a given task. The default language in an Azure Synapse Analytics Spark notebook is *PySpark* - a Spark-optimized version of Python, which is commonly used by data scientists and analysts due to its strong support for data manipulation and visualization. Additionally, you can use languages such as *Scala* (a Java-derived language that can be used interactively) and *Spark SQL* (a distributed version of SQL used to work with relational data structures). Software engineers can also create compiled solutions that run on Spark using frameworks such as *Java* and *Microsoft .NET*.
+One of the benefits of using Spark is that you can write and run code in various programming languages, enabling you to use the programming skills you already have and to use the most appropriate language for a given task. The default language in a new Azure Synapse Analytics Spark notebook is *PySpark* - a Spark-optimized version of Python, which is commonly used by data scientists and analysts due to its strong support for data manipulation and visualization. Additionally, you can use languages such as *Scala* (a Java-derived language that can be used interactively) and *SQL* (a variant of the commonly used SQL language included in the *Spark SQL* library to work with relational data structures). Software engineers can also create compiled solutions that run on Spark using frameworks such as *Java* and *Microsoft .NET*.
 
 ## Exploring data with dataframes
 
@@ -152,13 +152,22 @@ The Dataframe API is part of a Spark library named Spark SQL, which enables data
 
 The Spark catalog is a metastore for relational data objects such as views and tables. The Spark runtime can use the catalog to seamlessly integrate code written in any Spark-supported language with SQL expressions that may be more natural to some data analysts or developers.
 
-One of the simplest ways to make data in a  dataframe available for querying in the Spark catalog is to create a temporary view, as shown in the following code example:
+One of the simplest ways to make data in a dataframe available for querying in the Spark catalog is to create a temporary view, as shown in the following code example:
 
 ```python
 df.createOrReplaceTempView("products")
 ```
 
-### Using the Spark SQL API
+A *view* is temporary, meaning that it's automatically deleted at the end of the current session. You can also create *tables* that are persisted in the catalog to define a database that can be queried using Spark SQL.
+
+> [!NOTE]
+> We won't explore Spark catalog tables in depth in this module, but it's worth taking the time to highlight a few key points:
+> 
+> - You can create an empty table by using the `spark.catalog.createTable` method. Tables are metadata structures that store their underlying data in the storage location associated with the catalog. Deleting a table also deletes its underlying data.
+> - You can save a dataframe as a table by using its `saveAsTable` method.
+> - You can create an *external* table by using the `spark.catalog.createExternalTable` method. External tables define metadata in the catalog but get their underlying data from an external storage location; typically a folder in a data lake. Deleting an external table does not delete the underlying data.
+
+### Using the Spark SQL API to query data
 
 You can use the Spark SQL API in code written in any language to query data in the catalog. For example, the following PySpark code uses a SQL query to return data from the **products** view as a dataframe.
 

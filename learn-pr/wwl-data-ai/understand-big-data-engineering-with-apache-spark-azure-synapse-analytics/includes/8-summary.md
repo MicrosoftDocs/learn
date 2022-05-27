@@ -5,4 +5,3 @@ In this module, you learned how to:
 - Identify core features and capabilities of Apache Spark.
 - Configure a Spark pool in Azure Synapse Analytics.
 - Run code to load, analyze, and visualize data in a Spark notebook.
-

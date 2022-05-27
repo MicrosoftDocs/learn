@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/26/2022
+  ms.date: 05/27/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "Which definition best describes Apache Spark?"
     choices:
-    - content: "A highly-scalable relational database management system."
+    - content: "A highly scalable relational database management system."
       isCorrect: false
       explanation: "Incorrect. Spark supports some features of relational databases, but it is not primarily a relational database engine."
     - content: "A virtual server with a Python runtime."

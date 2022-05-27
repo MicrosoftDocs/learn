@@ -2,7 +2,7 @@ Apache Spark is an open source parallel processing framework for large-scale dat
 
 This module explores how you can use Spark in Azure Synapse Analytics to ingest, process, and analyze data from a data lake. While the core techniques and code described in this module are common to all Spark implementations, the integrated tools and ability to work with Spark in the same environment as other Synapse analytical runtimes are specific to Azure Synapse Analytics.
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Identify core features and capabilities of Apache Spark.
 - Configure a Spark pool in Azure Synapse Analytics.

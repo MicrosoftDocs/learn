@@ -12,7 +12,7 @@ Azure Synapse Studio includes an integrated notebook interface for working with 
 > [!NOTE]
 > While usually used interactively, notebooks can be included in automated pipelines and run as an unattended script.
 
-Notebooks consist of one or more *cells*, each containing either code or markdown. Code cells in notebooks have some features that can help you be mroe productive, including:
+Notebooks consist of one or more *cells*, each containing either code or markdown. Code cells in notebooks have some features that can help you be more productive, including:
 
 - Syntax highlighting and error support.
 - Code auto-completion​.
@@ -24,9 +24,9 @@ Notebooks consist of one or more *cells*, each containing either code or markdow
 
 ## Accessing data from a Synapse Spark pool
 
-You can use Spark in Azure Synapse Analytics to work with data from a variety of sources, including:
+You can use Spark in Azure Synapse Analytics to work with data from various sources, including:
 
-- A data lake based on storage in the primary storage account for the Azure Synapse Analytics workspace.
+- A data lake based on the primary storage account for the Azure Synapse Analytics workspace.
 - A data lake based on storage defined as a *linked service* in the workspace.
 - A dedicated or serverless SQL pool in the workspace.
 - An Azure SQL or SQL Server database (using the Spark connector for SQL Server)
@@ -35,4 +35,3 @@ You can use Spark in Azure Synapse Analytics to work with data from a variety of
 - An external Hive metastore defined as a *linked service* in the workspace.
 
 One of the most common uses of Spark is to work with data in a data lake, where you can read and write files in multiple commonly used formats, including delimited text, Parquet, Avro, and others.
-
