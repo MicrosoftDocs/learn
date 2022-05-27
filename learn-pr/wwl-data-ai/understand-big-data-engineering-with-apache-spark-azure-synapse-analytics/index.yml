@@ -16,7 +16,7 @@ abstract: |
   - Configure a Spark pool in Azure Synapse Analytics.
   - Run code to load, analyze, and visualize data in a Spark notebook.
 prerequisites: |
-  Before taking this module, you should be familiar with Azure Synapse Analytics, and have a basic knowledge of how to query and manipulate data using languages such as SQL or Python.
+  If you are not already familiar with Azure Synapse Analytics, consider completing the [Introduction to Azure Synapse Analytics](/learn/modules/introduction-azure-synapse-analytics) module before starting this module.
 iconUrl: /learn/achievements/understand-big-data-engineering-apache-spark-azure-synapse-analytics.svg
 levels:
 - intermediate

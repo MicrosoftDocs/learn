@@ -4,7 +4,7 @@ One of the most intuitive ways to analyze the results of data queries is to visu
 
 When you display a dataframe or run a SQL query in a Spark notebook in Azure Synapse Analytics, the results are displayed under the code cell. By default, results are rendered as a table, but you can also change the results view to a chart and use the chart properties to customize how the chart visualizes the data, as shown here:
 
-![A notebook displaying a column chart of product counts by category](../media/notebook-chart.png)
+![A notebook displaying a column chart of product counts by category.](../media/notebook-chart.png)
 
 The built-in charting functionality in notebooks is useful when you're working with results of a query that don't include any existing groupings or aggregations, and you want to quickly summarize the data visually. When you want to have more control over how the data is formatted, or to display values that you have already aggregated in a query, you should consider using a graphics package to create your own visualizations.
 
@@ -47,6 +47,6 @@ The Matplotlib library requires data to be in a Pandas dataframe rather than a S
 
 The chart produced by the code would look similar to the following image:
 
-![A bar chart showing product counts by category](../media/chart.png)
+![A bar chart showing product counts by category.](../media/chart.png)
 
 You can use the Matplotlib library to create many kinds of chart; or if preferred, you can use other libraries such as **Seaborn** to create highly customized charts.
