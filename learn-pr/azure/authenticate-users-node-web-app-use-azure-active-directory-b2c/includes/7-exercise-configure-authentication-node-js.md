@@ -62,6 +62,90 @@ The `index.js` file contains the main app logic. The current web app works, but 
 
 1. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node:
 
-    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
+  :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
 
-    `confidentialClientConfig` is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints.
+  `confidentialClientConfig` is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints.
+
+1. Just after the `confidentialClientConfig` MSAL Node instance, add the following code:
+
+    ```javascript
+    /** 
+    * The MSAL.js library allows you to pass your custom state as state parameter in the Request object
+     * By default, MSAL.js passes a randomly generated unique state parameter value in the authentication requests.
+     * The state parameter can also be used to encode information of the app's state before redirect. 
+     * You can pass the user's state in the app, such as the page or view they were on, as input to this parameter.
+     * For more information, visit: https://docs.microsoft.com/azure/active-directory/develop/msal-js-pass-custom-state-authentication-request
+     * In this scenario, the states also serve to show the action that was requested of B2C since only one redirect URL is possible. 
+     */
+    
+    const APP_STATES = {
+        LOGIN: 'login',
+        LOGOUT: 'logout',
+    }
+    
+    
+    /** 
+     * Request Configuration
+     * We manipulate these two request objects below 
+     * to acquire a token with the appropriate claims.
+     */
+     const authCodeRequest = {
+        redirectUri: confidentialClientConfig.auth.redirectUri,
+    };
+    
+    const tokenRequest = {
+        redirectUri: confidentialClientConfig.auth.redirectUri,
+    };
+    ```
+
+    The code snippets defines the following variables:
+        - `APP_STATES`: Defines app state parameters. You can define many states depending on the number of requests your app makes.
+        - `authCodeRequest`: The configuration object that's used to retrieve the authorization code.
+        - `tokenRequest`: The configuration object that's used to acquire a token using authorization code.
+
+1. Just before the express routes, add the following method:
+
+    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
+
+    The method retrieves the authorization code URL
+
+1. Update the `/signin`, `/signout` and `/redirect` express routes as shown below:
+
+    ```javascript
+    app.get('/signin',(req, res)=>{
+            //Initiate a Auth Code Flow >> for sign in
+            //no scopes passed. openid, profile and offline_access will be used by default.
+            getAuthCode(process.env.SIGN_UP_SIGN_IN_POLICY_AUTHORITY, [], APP_STATES.LOGIN, res);
+    });
+    
+    /**
+     * Sign out end point
+    */
+    app.get('/signout',async (req, res)=>{    
+        logoutUri = process.env.LOGOUT_ENDPOINT;
+        req.session.destroy(() => {
+            //When session destruction succeeds, notify Azure AD B2C service using the logout uri.
+            res.redirect(logoutUri);
+        });
+    });
+    
+    app.get('/redirect',(req, res)=>{
+        
+        //determine the reason why the request was sent by checking the state
+        if (req.query.state === APP_STATES.LOGIN) {
+            //prepare the request for authentication        
+            tokenRequest.code = req.query.code;
+            confidentialClientApplication.acquireTokenByCode(tokenRequest).then((response)=>{
+            
+            req.session.sessionParams = {user: response.account, idToken: response.idToken};
+            console.log("\nAuthToken: \n" + JSON.stringify(response));
+            res.render('signin',{showSignInButton: false, givenName: response.account.idTokenClaims.given_name});
+            }).catch((error)=>{
+                console.log("\nErrorAtLogin: \n" + error);
+            });
+        }else{
+            res.status(500).send('We do not recognize this response!');
+        }
+    
+    })
+    ```
