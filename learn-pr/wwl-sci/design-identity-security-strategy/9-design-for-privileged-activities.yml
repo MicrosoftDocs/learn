@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-identity-security-strategy.design-for-privileged-activities
+title: Design a security strategy for privileged activities
+metadata:
+  title: Design a security strategy for privileged activities
+  description: "Design a security strategy for privileged activities"
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-design-for-privileged-activities.md)]
