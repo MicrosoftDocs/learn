@@ -5,7 +5,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 1. In Azure Machine Learning Studio, expand the left-hand pane by selecting the three lines at the top left of the screen. Click on **Jobs** (under **Assets**) to view all of the jobs you have run. Select the experiment **mslearn-auto-training**, then select the **mslearn-auto-training** pipeline. 
 2. Locate the menu above the canvas and click on **Create inference pipeline**. You may need to expand your screen to full and click on the three dots icon **...** on the top right hand corner of the screen in order to find **Create inference pipeline** in the menu.  
 
-    > ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png)
+    ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png)
 
 3. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Auto Price Training-real time inference** will be opened.
 
@@ -15,7 +15,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 
     You're going to make the following changes to the inference pipeline in the next steps #5-9:
 
-    > ![An inference pipeline with changes indicated](../media/inference-changes.png)
+    ![An inference pipeline with changes indicated](../media/inference-changes.png)
 
    Use the image for reference as you modify the pipeline in the next steps.
 
@@ -49,7 +49,7 @@ After creating and running a pipeline to train the model, you need a second pipe
     - Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 10. Verify that your pipeline looks similar to the following image:
 
-    > ![A visual inference pipeline](../media/inference-pipeline.png)
+    ![A visual inference pipeline](../media/inference-pipeline.png)
 
 11. Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster. The experiment may take a while to run.
 12. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.

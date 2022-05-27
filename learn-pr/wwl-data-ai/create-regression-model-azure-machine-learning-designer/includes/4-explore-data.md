@@ -16,7 +16,7 @@ In this module, you train a regression model that predicts the price of an autom
 
 1. Next to the pipeline name on the left, select the button **>>** to expand the panel if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Below the **Tags** and **Filter** buttons, there are two icons next to each other. Hover your mouse over the first cylinder icon (on the left) to see that it represents **Data Assets**. Hover your mouse over the second chart icon (on the right) to see that it represents **Components**. 
 
-    > ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
+    ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
 2. Click on the cylinder icon for **Data Assets**. Drag the **Automobile price data (Raw)** dataset onto the canvas.
 3. Right-click (Ctrl+click on a Mac) the **Automobile price data (Raw)** dataset on the canvas, and on the **Outputs** menu, click **Dataset output** on the *Preview data* graph icon.
@@ -28,7 +28,7 @@ In this module, you train a regression model that predicts the price of an autom
 9. Compare the values in the **stroke**, **peak-rpm**, and **city-mpg** columns. These columns are all measured in different scales, and it is possible that the larger values for **peak-rpm** might bias the training algorithm and create an over-dependency on this column compared to columns with lower values, such as **stroke**. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
 10. Close the **Automobile price data (Raw) result visualization** window so that you can see the dataset on the canvas like this:
 
-    > ![The Automobile price data (Raw) dataset on the designer canvas](../media/dataset.png)
+    ![The Automobile price data (Raw) dataset on the designer canvas](../media/dataset.png)
 
 ## Add data transformations
 
@@ -36,26 +36,26 @@ You typically apply data transformations to prepare the data for modeling. In th
 
 1. In the **Asset Library** pane on the left, click on the squares icon to access **Components**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
 
-    > ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
+    ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
 
 2. Find the **Select Columns in Dataset** module and drag it to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
-    > ![The Automobile price data (Raw) dataset connected to the Select Columns in Dataset module](../media/dataset-select-columns.png)
+    ![The Automobile price data (Raw) dataset connected to the Select Columns in Dataset module](../media/dataset-select-columns.png)
 
 3. Select the **Select Columns in Dataset** module, and in its **Settings** pane on the right, select **Edit column**. Then in the **Select columns** window, select **By name** and use the **+** links to add all columns other than **normalized-losses**, like this:
 
-    > ![Screenshot of all columns other than normalized_losses](../media/select-columns.png)
+    ![Screenshot of all columns other than normalized_losses](../media/select-columns.png)
 
 In the rest of this exercise, you go through steps to create a pipeline that looks like this:
 
-> ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
+![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
 Follow the remaining steps, use the image for reference as you add and configure the required modules.
 
 4. Find a **Clean Missing Data** module and place it under the **Select Columns in Dataset** module on the canvas. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
 5. Select the **Clean Missing Data** module, and in the settings pane on the right, click **Edit column**. Then in the **Select columns** window, select **With rules**, in the **Include** list select **Column names**, in the box of column names enter **bore**, **stroke**, and **horsepower** like this:
 
-    > ![bore, stroke, and horsepower columns are selected](../media/clean-missing-values.png)
+    ![bore, stroke, and horsepower columns are selected](../media/clean-missing-values.png)
 
 6. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings:
     - **Minimum missing value ratio**: 0.0
@@ -78,7 +78,7 @@ Follow the remaining steps, use the image for reference as you add and configure
     - **city-mpg**
     - **highway-mpg**
 
-    > ![all numeric columns other than price are selected](../media/normalize-rules.png)
+    ![all numeric columns other than price are selected](../media/normalize-rules.png)
 
 ## Run the pipeline
 
@@ -86,18 +86,18 @@ To apply your data transformations, you must run the pipeline as an experiment.
 
 1. Ensure that your pipeline looks similar to this image:
 
-    > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
+    ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-auto-training** on your compute cluster.
 3. Wait for the run to finish, which might take 5 minutes or more. 
 
-    > ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
+    ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
 
     Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
 
 4. When the run has completed, click on **Job Details**. You will be taken to another window which will show the modules like this:
 
-    > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules in completed state](../media/normalize-complete.png)
+    ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules in completed state](../media/normalize-complete.png)
 
 ## View the transformed data
 
