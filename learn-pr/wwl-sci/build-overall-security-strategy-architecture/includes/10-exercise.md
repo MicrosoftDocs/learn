@@ -2,7 +2,7 @@
 
 **Meet Tailwind Traders**
 
-![Tailwind Traders logo.](../media/TailwindTradersLogo.png)
+![Tailwind Traders logo.](../media/tailwind-traders-logo.png)
 
 Tailwind Trader is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
@@ -33,7 +33,7 @@ recommendations and questions. Here are the specific requirements.
         segmentation to isolate business-critical or highly vulnerable
         resources
 
-![Zero Trust User Access](../media/ZeroTrustUserAccess.png) 
+![Zero Trust User Access](../media/zero-trust-user-access.png) 
 
 #### Tasks
 

@@ -1,5 +1,3 @@
-### Design a security strategy for hybrid and multi-tenant environments
-
 #### Planning and implementing a hybrid environment
 
 A hybrid deployment offers organizations the ability to extend the
@@ -25,7 +23,7 @@ Directory solution located on-premises with Microsoft Azure Active
 Directory to enable users to use Single Sign-On (SSO) across
 applications located in the cloud and on-premises.
 
-![Microsoft Azure Active Directory to enable users to use Single Sign-On (SSO) across applications located in the cloud and on-premises.](../media/MicrosoftAzureActiveDirectory.png)
+![Microsoft Azure Active Directory to enable users to use Single Sign-On (SSO) across applications located in the cloud and on-premises.](../media/microsoft-azure-active-directory.png)
 
 #### Implement a secure hybrid network
 
@@ -35,7 +33,7 @@ called a *perimeter network*, between the on-premises network and an
 Azure virtual network. All inbound and outbound traffic passes through
 Azure Firewall.
 
-![Secure hybrid network architecture](../media/ImplementaSecureHybridNetwork.png) 
+![Secure hybrid network architecture](../media/implementa-secure-hybrid-network.png) 
 
 #### Use multiple online environments or tenants
 
@@ -47,7 +45,7 @@ environments in a subscription provides the right mix of functionality
 and ease of management. Enterprises with separate geographic locations
 might consider using multiple tenants to separate licenses. Multiple
 environments can share users among environments; multiple tenants
-cannot.
+can't.
 
 #### Uses for multiple environments
 
@@ -58,7 +56,7 @@ a single tenant.
 This example uses two environments for three teams: Sales, Marketing,
 and Services:
 
-![A typical deployment includes one tenant only.](../media/UsesForMultipleEnvironments.png)
+![A typical deployment includes one tenant only.](../media/uses-for-multiple-environments.png)
 Sales and marketing share an environment so lead information can be
 easily accessed by both. Services have their own environment, so tickets
 and warranties can be managed separately from marketing campaigns and
@@ -73,7 +71,7 @@ related to accounts in both environments.
 
 -   Each environment within a tenant receives its own SQL database
 
--   Data is not shared across environments
+-   Data isn't shared across environments
 
 -   Go to [Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage) for help understanding how storage is shared across environments
 
@@ -85,7 +83,7 @@ related to accounts in both environments.
 
 -   Additional environments may be purchased through the Additional environment Add-On. Additional environments can only be added to \"paid\" subscriptions, and not trials or Internal Use Rights (IUR). If subscriptions are purchased through Volume Licensing, additional environments need to be purchased through a Large Account Reseller (LAR)
 
--   Existing trials or subscriptions cannot be merged onto an additional environment; instead, data and customizations needed to move over
+-   Existing trials or subscriptions can't be merged onto another environment; instead, data and customizations needed to move over
 
 #### Uses for multi-tenants
 
@@ -96,11 +94,11 @@ compliance with legal and regulatory constraints.
 This example includes a second tenant for Contoso Japan:
 
 ![Teams Description automatically generated with medium
-confidence](../media/UsesForMultiTenants.png)
+confidence](../media/uses-for-multi-tenants.png)
 
 User accounts, identities, security groups, subscriptions, licenses, and
-storage cannot be shared among tenants. All tenants can have multiple
-environments associated with each specific tenant. Data is not shared
+storage can't be shared among tenants. All tenants can have multiple
+environments associated with each specific tenant. Data isn't shared
 across environments or tenants.
 
 In a **multi-tenant scenario**, a licensed user associated with a tenant
@@ -118,9 +116,9 @@ additional license.
 
 -   Multiple environments within a tenant are visible from the interface if the administrator has access
 
--   Licenses cannot be reassigned between tenant enrollments. An enrolled affiliate can use license reduction under one enrollment and add licenses to another enrollment to facilitate this
+-   Licenses can't be reassigned between tenant enrollments. An enrolled affiliate can use license reduction under one enrollment and add licenses to another enrollment to facilitate this
 
--   On-premises Active Directory federation cannot be established with more than one tenant unless there are top-level domains that need to be federated with different tenants (for example, Contoso.com and Fabricam.com)
+-   On-premises Active Directory federation can't be established with more than one tenant unless there are top-level domains that need to be federated with different tenants (for example, Contoso.com and Fabricam.com)
 
 #### Manage hybrid environments at scale with Azure Arc
 
@@ -146,7 +144,7 @@ Azure Arc provides a centralized, unified way to:
 -   Configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions
 
 ![Graphical user interface Description automatically
-generated](../media/ManageHybridEnvironments.png) 
+generated](../media/manage-hybrid-environments.png) 
 
 #### Manage hybrid environments at scale with Azure Policy
 

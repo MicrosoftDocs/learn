@@ -1,5 +1,3 @@
-### Develop security requirements based on business goals
-
 The most successful transformation journeys start with business goals.
 Cloud adoption can be a costly and time-consuming effort. Fostering the
 right level of support from IT and other areas of the business is
@@ -24,7 +22,7 @@ In this template, business outcomes focus on three topics:
 
 -   Mapping outcomes to specific solutions and technical capabilities
 
-![ Business outcomes are visualized as a house with stakeholders, over business outcomes, over technical capabilities.](../media/BusinessOutcomesVisualized.jpeg)
+![ Business outcomes are visualized as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
 
 *Figure 1: Business outcomes are visualized as a house with
 stakeholders, over business outcomes, over technical capabilities.*
@@ -40,7 +38,7 @@ transformations before implementing security solutions.
 
 **Media:** [Accelerate your cloud adoption journey by using the Cloud
 Adoption Framework for Azure - Learn \| Microsoft
-Docs](https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
+Docs](https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
 
 As mentioned in the video, Cloud Adoption Framework consists of tools,
 documentation, and proven practices. The Cloud Adoption Framework
@@ -58,7 +56,7 @@ includes these stages:
 
 ![A flow diagram showing the Cloud Adoption Framework stages define
 strategy, plan, ready, adopt, and govern and
-manage.](../media/MSCloudAdoptionFramework(CAF).png)
+manage.](../media/m-s-cloud-adoption-framework(-c-a-f).png)
 
 The govern stage focuses on cloud governance. You can refer to the Cloud
 Adoption Framework for recommended guidance as you build your cloud

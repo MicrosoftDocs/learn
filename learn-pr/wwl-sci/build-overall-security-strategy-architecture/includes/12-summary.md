@@ -25,35 +25,35 @@ able to:
 
 -   [[Microsoft Cybersecurity Reference Architectures - Security
     documentation \| Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/en-us/security/cybersecurity-reference-architecture/mcra)
+    Docs]{.underline}](https://docs.microsoft.com/security/cybersecurity-reference-architecture/mcra)
 
 -   [Governance in the Microsoft Cloud Adoption Framework for Azure -
     Cloud Adoption Framework \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/)
+    Docs](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/)
 
 -   [[Balance competing priorities - Cloud Adoption Framework \|
     Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/balance-competing-priorities)
+    Docs]{.underline}](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/balance-competing-priorities)
 
 -   [[Resiliency and continuity - Microsoft Service Assurance \|
     Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/en-us/compliance/assurance/assurance-resiliency-and-continuity)
+    Docs]{.underline}](https://docs.microsoft.com/compliance/assurance/assurance-resiliency-and-continuity)
 
 -   [[Organize and manage multiple Azure subscriptions - Cloud Adoption
     Framework \| Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
+    Docs]{.underline}](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
 
 -   [Recommended policies for Azure services - Azure Policy \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/recommended-policies)
+    Docs](https://docs.microsoft.com/azure/governance/policy/concepts/recommended-policies)
 
 
 #### Learn more with self-paced training
 
 -   [Build a cloud governance strategy on Azure - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/)
+    Docs](https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/)
 
 -   [Describe core Azure architectural components - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/)
+    Docs](https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/)
 
 -   [Microsoft Cloud Adoption Framework for Azure - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/learn/modules/microsoft-cloud-adoption-framework-for-azure/)
+    Docs](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/)

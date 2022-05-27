@@ -1,5 +1,3 @@
-### Translate security requirements into technical capabilities
-
 Many organizations are managing a chain of multiple simultaneous
 transformations in the organization. These internal transformations
 typically start because nearly all external markets are transforming to
@@ -8,7 +6,7 @@ Organizations often face the competitive threat of new startups and the
 digital transformation of traditional competitors who can disrupt the
 market.
 
-![Partnership approach](../media/PartnershipApproach.png)
+![Partnership approach](../media/partnership-approach.png)
 
 The internal transformation process typically includes:
 
@@ -31,7 +29,7 @@ availability.
 
 To assess workloads using the tenets found in the Azure Well-Architected
 Framework, reference the [Microsoft Azure Well-Architected
-Review](https://docs.microsoft.com/en-us/assessments/?id=azure-architecture-review&mode=pre-assessment).
+Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
 The following design principles provide:
 

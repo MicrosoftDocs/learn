@@ -1,5 +1,3 @@
-## Build an Overall Security Strategy and Architecture 
-
 In this module, you'll learn how to: 
 
 - Develop Integration points in an architecture 

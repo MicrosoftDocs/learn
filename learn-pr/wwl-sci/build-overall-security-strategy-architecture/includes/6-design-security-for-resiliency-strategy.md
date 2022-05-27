@@ -1,5 +1,3 @@
-### Design security for a resiliency strategy
-
 Organization and enterprise application workloads have recovery time
 objective (RTO) and recovery point objective (RPO) requirements.
 Effective business continuity and disaster recovery (BCDR) design
@@ -122,11 +120,11 @@ downtime, or ransomware incidents
 
 To assess the reliability of a workloads using the tenets found in
 the [Microsoft Azure Well-Architected
-Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/),
+Framework](https://docs.microsoft.com/azure/architecture/framework/),
 reference the [Microsoft Azure Well-Architected
-Review] (https://docs.microsoft.com/en-us/assessments/?id=azure-architecture-review&mode=pre-assessment).
+Review] (https://docs.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
-Required Media From, if possible:[https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/overview](/azure/architecture/framework/resiliency/overview)
+Required Media From, if possible:[https://docs.microsoft.com/azure/architecture/framework/resiliency/overview](/azure/architecture/framework/resiliency/overview)
 
 In traditional application development, there has been a focus on
 increasing the mean time between failures (MTBF). This effort was spent
