@@ -13414,6 +13414,16 @@
       "source_path": "learn-pr/wwl-azure/static-analyzers/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/static-analyzers/6-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-azure-pipelines/11-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-azure-pipelines/12-summary",
+      "redirect_document_id": true
     }
   ]
 }
