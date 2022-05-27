@@ -27,4 +27,4 @@ In this module, you'll learn:
 - Common data exploration and analysis tasks. 
 - How to use R packages such as ggplot2, dplyr, and tidyr to turn raw data into understanding, insight, and knowledge.
 
-***Produced in partnership with Eric Wanjau - Microsoft Learn Student Ambassador and Researcher at the University of Leeds***
+***Produced in partnership with Eric Wanjau - Microsoft Learn Student Ambassador and Researcher/Data Scientist: Leeds Institute for Data Analytics, University of Leeds***

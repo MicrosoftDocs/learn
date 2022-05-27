@@ -13,7 +13,7 @@ In this exercise, you'll add flyout navigation to the app.
 
 1. Use Visual Studio to open the **Astronomy.sln** solution.
 
-1. In the **Solution Explorer** window, in the **Astronomy** project, expand the **Pages** folder. Note that this folder contains the following pages:
+1. In the **Solution Explorer** window, in the **Astronomy** project, expand the **Pages** folder. This folder contains the following pages:
 
     - **AboutPage**. This page displays *about* information for the app.
     - **MoonPhasePage**. This page displays specific information about the phases of the Moon as seen from Earth.
@@ -74,9 +74,9 @@ In this exercise, you'll add flyout navigation to the app.
     </FlyoutItem>
     ```
 
-1. Run the app again, and now there will be 3 options in the flyout. And tapping on the flyout item will display its respective page.
+1. Run the app again, and now there will be three options in the flyout. Tapping on the flyout item will display its respective page.
 
-    :::image type="content" source="../media/3-flyout-all-options.png" alt-text="A screenshot of the app running on Android with the flyout open showing 3 flyout items.":::
+    :::image type="content" source="../media/3-flyout-all-options.png" alt-text="A screenshot of the app running on Android with the flyout open showing three flyout items.":::
 
     > [!NOTE]
     > If you are running on a platform other than Windows, you may need to enable Location permission for your app on that platform for the **Sunrise/Sunset Times** page to work. For example, on an Android device, set Location access to **Allow only while using the app**.
@@ -110,13 +110,13 @@ Some images have already been added to the **Resources\Images** folder for you t
     </FlyoutItem>
     ```
 
-1. Run the app and open the flyout. You will see each flyout item now has an icon associated with it.
+1. Run the app and open the flyout. You'll see each flyout item now has an icon associated with it.
 
     :::image type="content" source="../media/3-flyout-with-icons.png" alt-text="Screenshot of app running on Android with the flyout open and each flyout item has an icon.":::
 
 ## Add a flyout header
 
-The flyout items are at the very top of the flyout menu making them difficult to distinguish. We can add some space to the top, and even an entire `View` by using the `<Shell.FlyoutHeader>`.
+The flyout items are at the very top of the flyout menu, making them difficult to distinguish. We can add some space to the top, and even an entire `View` by using the `<Shell.FlyoutHeader>`.
 
 1. As a child to the `<Shell>` node, add in the following:
 
@@ -129,10 +129,10 @@ The flyout items are at the very top of the flyout menu making them difficult to
 
     ```xaml
     <Shell.FlyoutHeader>
-        <Grid HeightRequest="100" BackgroundColor="DarkBlueSlate">
+        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
             <Image Source="moon.png" />
         </Grid>
     </Shell.FlyoutHeader>
     ```
 
-    :::image type="content" source="../media/3-flyout-with-moon.png" alt-text="Screenshot of the app running with the flyout open, this time there is a header on the flyout with an icon of the moon.":::
+    :::image type="content" source="../media/3-flyout-with-moon.png" alt-text="Screenshot of the app running with the flyout open, this time there's a header on the flyout with an icon of the moon.":::

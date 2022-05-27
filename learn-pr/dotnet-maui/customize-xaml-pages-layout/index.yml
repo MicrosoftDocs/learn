@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - vs
+- dotnet
+- dotnet-maui
 units:
 - learn.dotnet-maui.customize-xaml-pages-layout.introduction
 - learn.dotnet-maui.customize-xaml-pages-layout.specify-size-view
