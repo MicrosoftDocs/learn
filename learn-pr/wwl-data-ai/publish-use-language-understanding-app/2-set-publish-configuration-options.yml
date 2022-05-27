@@ -4,12 +4,13 @@ title: Set publishing configuration options
 metadata:
   title: Set publishing configuration options
   description: "Set publishing configuration options"
-  ms.date: 08/20/2021
+  ms.date: 05/24/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-set-publish-configuration-options.md)]

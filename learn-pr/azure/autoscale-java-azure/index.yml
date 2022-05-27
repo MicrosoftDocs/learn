@@ -15,7 +15,7 @@ title: Drive higher utilization of your Java apps - autoscaling
 summary: Learn how to drive higher utilization of your Java apps on Azure using autoscaling.
 abstract: |
   By the end of this module, you can:
-  - Set up a sample Azure Spring Cloud architecture that scales up and down based on load
+  - Set up a sample Azure Spring Apps architecture that scales up and down based on load
   - Understand autoscaling concepts
   - Monitor the effects of autoscaling
   - Understand common design patterns for autoscaling

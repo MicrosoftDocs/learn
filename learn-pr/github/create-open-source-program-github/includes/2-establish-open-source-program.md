@@ -1,4 +1,4 @@
-Here, we discuss the key considerations for establishing an open-source program.
+Here, we'll discuss the key considerations for establishing an open-source program.
 
 ## What do we mean by "open-source"?
 
@@ -23,7 +23,7 @@ As organizations think more deeply about what they want to get out of each dimen
 - **Ad hoc**, which have no process in place. Success depends on individual efforts.
 - **Managed**, which have a partially documented process. Success depends on discipline.
 - **Defined**, which have a documented, standardized, and integrated process. Success depends on automation.
-- **Measured**, which a quantitatively managed process. Success depends on measuring metrics against business goals.
+- **Measured**, which have a quantitatively managed process. Success depends on measuring metrics against business goals.
 - **Optimized**, which have a process that is continually and reliably improving through both incremental and innovative changes. Success depends on reducing the risk of change.
 
 To get a better understanding of where your organization stands, check out the [Open-source self assessments](https://githubtraining.github.io/oss-assessment/?azure-portal=true).
@@ -52,11 +52,11 @@ Running an open-source program is similar to running an InnerSource program, but
 
 Files like `README.md` and `CONTRIBUTING.md` are even more important because they are being exposed to people who don't have your organizational context. They will need to be evaluated from the perspective of someone outside the company to ensure clarity.
 
-In addition, your **code of conduct** is an important policy to express. The standard is to add a `CODE_OF_CONDUCT.md` file to the root of your repository and use it to explain the behavior expected from participants in your community. This document should be reviewed by multiple groups in your organization, including your legal team. Fortunately, there are many standard codes of conduct available to start from. Many projects use these codes as-is without modification. Learn more in the [Guide to open-source codes of conduct](https://opensource.guide/code-of-conduct/?azure-portal=true).
+In addition, your **code of conduct** is an important policy to express. The standard is to add a `CODE_OF_CONDUCT.md` file to the root of your repository and use it to explain the behavior expected from participants in your community. This document should be reviewed by multiple groups in your organization, including your legal team. Fortunately, there are many standard codes of conduct available from which to start. Many projects use these codes as-is without modification. Learn more in the [Guide to open-source codes of conduct](https://opensource.guide/code-of-conduct/?azure-portal=true).
 
 ### Preparing employees to maintain a repository
 
-Employees may not have experience working with the open-source community. To help them prepare, it is recommended that the company offer a set of guides that cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
+Employees may not have experience working with the open-source community. To help them prepare, we recommend that the company offer a set of guides that cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
 
 - A **"Should we open-source this project?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
 
