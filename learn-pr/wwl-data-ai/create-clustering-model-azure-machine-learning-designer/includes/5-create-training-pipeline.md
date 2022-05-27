@@ -13,8 +13,10 @@ Follow the steps below, using the image above for reference as you add and confi
 
 1. Open the **Train Penguin Clustering** pipeline, if it's not already open.
 2. In the **Asset Library** pane on the left, in **Components**, find and drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the left output of the **Normalize Data** module to the input of the **Split Data** module.
->[!TIP]
-> Use the search bar to quickly locate modules. 
+
+    >[!TIP]
+    > Use the search bar to quickly locate modules. 
+
 3. Select the **Split Data** module, and configure its settings as follows:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7

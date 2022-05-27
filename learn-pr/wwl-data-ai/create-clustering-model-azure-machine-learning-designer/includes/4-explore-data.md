@@ -47,8 +47,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 ### Load data to canvas 
 1. Next to the pipeline name on the left, select the button **>>** to expand the panel if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Below the **Tags** and **Filter** buttons, there are two icons next to each other. Hover your mouse over the first cylinder icon (on the left) to see that it represents **Data Assets**. Hover your mouse over the second chart icon (on the right) to see that it represents **Components**. 
 
-> [!div class="centered"]
-> ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
+    ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
 2. Click on the cylinder icon for **Data Assets**. Drag the **penguin-data** dataset onto the canvas.
 3. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
@@ -76,8 +75,7 @@ To cluster the penguin observations, we're going to use only the measurements; s
 
 1. In the **Asset Library** pane on the left, click on the squares icon to access **Components**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
 
-> [!div class="centered"]
-> ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
+    ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
 
 2. To cluster the penguin observations, we're going to use only the measurements - we'll ignore the species column. So, find the **Select Columns in Dataset** module and drag it to the canvas, below the **penguin-data** module and connect the output at the bottom of the **penguin-data** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
@@ -127,9 +125,12 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > ![The penguin-data dataset, a Select Columns in Dataset module, a Clean Missing Data module, and a Normalize Data module](../media/data-preparation.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-penguin-training** on your compute cluster.
-3. Wait for the run to finish. This may take 5 minutes or more. > [!div class="centered"]
-> ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
-Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+3. Wait for the run to finish. This may take 5 minutes or more. 
+
+    ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
+
+    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+
 4. When the run has completed, click on **Job Details**. You will be taken to another window which will show the modules like this:
 
 > [!div class="centered"]
