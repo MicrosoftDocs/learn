@@ -16,7 +16,7 @@ Azure Ultra Disks deliver high throughput, high IOPS, and consistent low-latency
 
 Premium SSD disks are backed by solid-state drives (SSDs), and deliver high-performance, low-latency disk support for VMs running I/O-intensive workloads. These drives tend to be more reliable because they have no moving parts. A read or write head doesn't have to move to the correct location on a disk to find the requested data.
 
-You can use Premium SSD disks with VM sizes that include an "s" in the series name. For example, there is the **Dv3-Series** and the **Dsv3-series**; you can use the the **Dsv3-series** with Premium SSD disks.
+You can use Premium SSD disks with VM sizes that include an "s" in the series name. For example, there is the **Dv3-Series** and the **Dsv3-series**; you can use the **Dsv3-series** with Premium SSD disks.
 
 ### Standard SSD
 
@@ -74,7 +74,7 @@ Standard storage accounts support all replication types, but premium storage acc
 
 The performance of your disks depends on the type of disk you chose. Each disk is rated to a specific number of I/O operations per second, or IOPS (pronounced "eye-ops"). In addition, each drive has a throughput rating, which determines how much data you can read or write in a second. The combination of these two determines how fast the disk is.
 
-For example, with standard storage, you get a maximum of **500 IOPS and 60 MB/second** throughput per disk (even on SSDs). With premium storage, the IOPS depends on the premium disks you choose and the VM size.
+For example, with standard storage, you get a maximum of **500 IOPS and 60 MB/second** throughput per disk (even on SSDs). With premium storage, the IOPS depend on the premium disks you choose and the VM size.
 
 |  | P4 | P6 | P10 | P15 | P20 | P30 | P40 | P50 | P60 | P70 | P80 |
 |--|----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
