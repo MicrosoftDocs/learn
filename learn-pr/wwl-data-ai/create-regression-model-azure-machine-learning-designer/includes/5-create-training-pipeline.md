@@ -6,7 +6,6 @@ It's common practice to train the model using a subset of the data, while holdin
 
 In this exercise, you're going to work through steps to extend the **Auto Price Training** pipeline as shown here:
 
-> [!div class="centered"]
 > ![split data, then train with linear regression and score](../media/train-score.png)
 
 Follow the steps below, using the image above for reference as you add and configure the required modules.
@@ -30,10 +29,9 @@ Follow the steps below, using the image above for reference as you add and confi
     > There are multiple algorithms you can use to train a regression model. For help choosing one, take a look at the [Machine Learning Algorithm Cheat Sheet for Azure Machine Learning designer](https://aka.ms/mlcheatsheet?azure-portal=true).
 
 7. To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset. Expand the **Model Scoring & Evaluation** section and drag a **Score Model** module to the canvas, below the **Train Model** module. Then connect the output of the **Train Model** module to the **Trained model** (left) input of the **Score Model** module; and drag the **Results dataset2** (right) output of the **Split Data** module to the **Dataset** (right) input of the **Score Model** module.
-8. Ensure your pipeline looks like this:
+8. Ensure your pipeline looks like this image:
 
-> [!div class="centered"]
-> ![split data, then train with linear regression and score](../media/train-score.png)
+    > ![split data, then train with linear regression and score](../media/train-score.png)
 
 ## Run the training pipeline
 
