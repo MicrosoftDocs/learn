@@ -20,6 +20,7 @@ roles:
 products:
 - dotnet
 - vs
+- dotnet-maui
 modules:
 - learn.dotnet-maui.build-mobile-and-desktop-apps
 - learn.dotnet-maui.create-user-interface-xaml
