@@ -50,4 +50,4 @@ Get-Help Get-FileHash -Examples
 
 ### Improve the reading experience
 
-Running `Get-Help` returns the entire help page. The page might not provide the best reading experience. You might have to scroll to find the section you want to read. A better approach is to use the `help` alias. The `help` alias pipes `Get-Help` into a function that ensures that your output is readable line by line. It also makes the response readable page by page. You'll use the `help` alias in the next unit.
+Running `Get-Help` returns the entire help page. The page might not provide the best reading experience. You might have to scroll to find the section you want to read. A better approach is to use the `help` alias. The `help` alias pipes `Get-Help` into a function that ensures that your output is readable line by line. It also makes the response readable page by page, by paginating the output. You'll use the `help` alias in the next unit.

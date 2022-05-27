@@ -11,10 +11,10 @@ When you finish this module, you'll be able to:
 
 ## Prerequisites
 
-To complete this module you should:
+To complete this module, you should:
 
 - Be able to start a terminal.
 - Understand what PowerShell is. 
 - Know how to run a command in PowerShell.
 
-You might find the module [Introduction to PowerShell](/learn/powershell/introduction-to-powershell?azure-portal=true) helpful preparation.
+You might find the module [Introduction to PowerShell](/learn/modules/introduction-to-powershell?azure-portal=true) helpful preparation.
