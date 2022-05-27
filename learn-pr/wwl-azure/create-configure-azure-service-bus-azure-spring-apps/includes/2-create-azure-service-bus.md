@@ -8,7 +8,7 @@ Data is transferred between different applications and services using **messages
 
 As seen in the graphic below, Service Bus provides enterprise messaging among many kinds of software, including cloud applications, on-premises applications, and Azure services.
 
-:::image type="content" source="../media/service-bus-integration-56cecfdf.png":::
+:::image type="content" source="../media/service-bus-integration-56cecfdf.png" alt-text="Graphic showing how Azure Service Bus interacts with many components.":::
 <br>
 
 Some common messaging scenarios are:
@@ -24,7 +24,7 @@ Some common messaging scenarios are:
 
 Messages are sent to and received from **queues**. Queues store messages until the receiving application is available to receive and process them.
 
-:::image type="content" source="../media/service-bus-queue-b9b36470.png":::
+:::image type="content" source="../media/service-bus-queue-b9b36470.png" alt-text="Graphic showing how queues store messages until the receiving application is available to process them.":::
 
 
 Messages in queues are ordered and timestamped on arrival. Once the messages are received by the broker, the message is always held durably in triple-redundant storage, spread across availability zones if the namespace is zone-enabled. Service Bus never leaves messages in memory or volatile storage after they've been reported to the client as accepted.
@@ -35,7 +35,7 @@ Messages are delivered in **pull** mode, only delivering messages when requested
 
 You can also use **topics** to send and receive messages. While a queue is often used for point-to-point communication, topics are useful in publish/subscribe scenarios.
 
-:::image type="content" source="../media/service-bus-topic-92b58aec.png":::
+:::image type="content" source="../media/service-bus-topic-92b58aec.png" alt-text="Graphic showing how the queue is used for point-to-point communication.":::
 
 
 Topics can have multiple, independent subscriptions, which attach to the topic and otherwise work exactly like queues from the receiver side. A subscriber to a topic can receive a copy of each message sent to that topic. Subscriptions are named entities. Subscriptions are durable by default, but can be configured to expire and then be automatically deleted.
