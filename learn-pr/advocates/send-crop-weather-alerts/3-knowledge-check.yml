@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  author: berndverst
+  author: acomfort248
   ms.author: beverst
-  ms.date: 01/25/2021
+  ms.date: 05/25/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
@@ -28,7 +28,7 @@ quiz:
       isCorrect: true
       explanation: Correct! The third-party service Twilio can programmatically send and receive text messages.
     
-  - content: Which is an Azure Maps API endpoint you can retrieve location coordinates from?
+  - content: Which of these options is an Azure Maps API endpoint you can retrieve location coordinates from?
     choices:
     - content: Search - Get Search Address
       isCorrect: true
