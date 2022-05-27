@@ -4,11 +4,9 @@ Containers are the third computing model, after bare metal and virtual machines 
 
 Unlike a VM, which provides hardware virtualization, a container provides operating-system-level virtualization by abstracting the "user space," not the entire operating system. The operating system level architecture is being shared across containers. It's what makes containers so lightweight.
 
-Docker gives you a simple platform for running apps in containers, old and new apps on Windows and Linux, and that simplicity is a powerful enabler for all aspects of modern IT.
+Docker gives you a simple platform for running apps in containers. Either old or new apps on Windows and Linux, and that simplicity is a powerful enabler for all aspects of modern IT.
 
-Containers aren't only faster and easier to use than VMs; they also make far more efficient use of computing hardware.
-
-As most modern software developers attest, containers have provided engineering teams with dramatically more flexibility for running cloud-native applications on physical and virtual infrastructure.
+Containers aren't only faster and easier to use than VMs; they also make far more efficient use of computing hardware. Also, they have provided engineering teams with dramatically more flexibility for running cloud-native applications.
 
 Containers package up the application services and make them portable across different computing environments for dev/test and production use.
 
@@ -16,11 +14,15 @@ With containers, it's easy to ramp application instances to match spikes in dema
 
 Though the container runtime APIs are well suited to managing individual containers, they're woefully inadequate for managing applications that might comprise hundreds of containers spread across multiple hosts.
 
-Containers need to be managed and connected to the outside world for scheduling, load balancing, and distribution. It's where a container orchestration tool like Azure Kubernetes Services (AKS) comes into its own.
+You need to manage and connect containers to the outside world for scheduling, load balancing, and distribution. It's where a container orchestration tool like Azure Kubernetes Services (AKS) comes into its own.
 
-An open-source system for deploying, scaling, and managing containerized applications, AKS handles the work of scheduling containers onto a compute cluster and manages the workloads to ensure they run as the user intended. Instead of bolting on operations as an afterthought, AKS brings software development and operations together by design. By using declarative, infrastructure-agnostic constructs to describe how applications are composed, how they interact, and how they're managed, AKS enables an order-of-magnitude increase in the operability of modern software systems.
+AKS handles the work of scheduling containers onto a compute cluster and manages the workloads to ensure they run as the user intended.
 
-This module helps you plan a container build strategy, explains containers and their structure, introduces Docker and related services.
+AKS is an open-source system for deploying, scaling and managing containerized applications. Instead of bolting operations as an afterthought, AKS brings software development and operations together by design.
+
+AKS enables an order-of-magnitude increase in the operability of modern software systems. With declarative, infrastructure-agnostic constructs to describe how applications are composed. Also how they interact and how they're managed.
+
+This module helps you plan a container build strategy, explains containers and their structure, and introduces Docker and related services.
 
 ## What other benefits do containers offer?
 
@@ -28,9 +30,9 @@ Containers are **portable**. A container will run wherever Docker is supported.
 
 Containers allow you to have a **consistent** development environment. For example, a SQL Server 2019 CU2 container that one developer is working with will be identical to another developer.
 
-Containers can be lightweight. A container may be only tens of megabytes in size, but a virtual machine with its entire operating system may be several gigabytes in size. Because of it, a single server can host far more containers than virtual machines.
+Containers can be lightweight. A container may be only tens of megabytes in size, but a virtual machine with its entire operating system may be several gigabytes. Because of it, a single server can host far more containers than virtual machines.
 
-Containers can be efficient: fast to deploy, fast to boot, fast to patch, quick to update.
+Containers can be efficient: fast to deploy, fast to boot, fast to patch, and quick to update.
 
 ## Learning objectives
 

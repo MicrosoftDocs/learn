@@ -1,6 +1,6 @@
 **Estimated time:** 60 minutes.
 
-**Lab files:** none.<br>
+**Lab files:** none.
 
 ## Scenario
 
@@ -29,5 +29,5 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Deploy a Docker container to Azure App Service web app using Azure DevOps.
  -  Exercise 3: Remove the Azure lab resources.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Button to launch exercise.":::
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
 ](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M08_Deploying_Docker_containers_to_Azure_App_Service_web_apps.html)
