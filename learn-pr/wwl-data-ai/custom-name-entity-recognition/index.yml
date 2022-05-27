@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.custom-name-entity-recognition
 metadata:
-  title: Custom Name Entity Recognition
-  description: "Custom Name Entity Recognition"
+  title: Custom name entity recognition
+  description: "Custom name entity recognition"
   ms.date: 05/27/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Custom Name Entity Recognition
-summary: Build a custom entity recognition solution
+title: Custom name entity recognition
+summary: Build a custom entity recognition solution to extract entities from unstructured documents
 abstract: |
   After completing this module, you'll be able to:
   - Understand tagging entities in extraction projects
