@@ -4,7 +4,7 @@ Tagging your data correctly is an important part of the process to create a cust
 - **Precision** - Tag your entities consistently, without unnecessary extra words. Precision ensures only the correct data is included in your extracted entity.
 - **Completeness** - Tag your data completely, and don't miss any entities. Completeness helps your model always recognize the entities present.
 
-![Screenshot of tagging an entity in Language Studio.](../media/ner-tag-entity.png#lightbox)
+![Screenshot of tagging an entity in Language Studio.](../media/ner-tag-entity-screenshot.png#lightbox)
 
 ## How to tag your data
 
