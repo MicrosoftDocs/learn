@@ -1,0 +1,8 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.migrate-azure-resources-bicep.badge
+metadata:
+  title: >-
+    Microsoft Badge: Migrate Azure resources and JSON ARM templates to use Bicep
+    was issued by Microsoft
+socialImageUrl: >-
+  /learn/achievements/bicep/migrate-azure-resources-and-json-templates-bicep-social.png

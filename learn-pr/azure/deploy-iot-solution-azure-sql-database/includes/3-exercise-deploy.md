@@ -114,7 +114,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
     az vm show --resource-group $resourceGroupName --name $iotSimulator --show-details --query publicIps
     ```
 
-    The script will take 5-10 minutes to complete.
+You will be prompted to provide a location. Depending on resource availability, you may have to try several. You can try `centralus`, `eastasia`, `westeurope`. If they all fail, you can list all the regions to try with `Get-AzLocation | select displayname,location`. 
+    
+The script will take 5-10 minutes to complete.
 
     > [!TIP]
     > If you have any issues or want to confirm the resources were deployed, you can review in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
@@ -197,7 +199,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Select **Settings** for the repository.
 
-1. Select **Secrets** > **New repository secret** and enter the following items:
+1. Select **Secrets** > **Actions** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_FUNCTIONAPP_PUBLISH_PROFILE**
     1. *Value*: **Azure Functions publish profile which you downloaded at the beginning of this section**
 

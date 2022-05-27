@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.publish-static-web-app-and-api.badge
+metadata:
+  title: >-
+    Microsoft Badge: Publish an Angular, React, Svelte, or Vue JavaScript app
+    with Azure Static Web Apps was issued by Microsoft
+socialImageUrl: /learn/achievements/publish-static-web-app-and-api-social.png

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.build-mobile-and-desktop-apps.create-a-maui-project-visual-studio
+title: Create a .NET MAUI project in Visual Studio 
+metadata:
+  unitType: unit
+  title: "Create a .NET MAUI project in Visual Studio"
+  description: "Describe how to use the .NET MAUI template in Visual Studio to create a new .NET MAUI app"
+  ms.date: 04/27/2022
+  author: codemillmatt  
+  ms.author: masoucou  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-create-a-maui-project-visual-studio.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "In which method of the application object should you create the initial window displayed by the app?"
+    choices:
+    - content: "Startup"
+      isCorrect: false
+      explanation: "No. You create the initial window in the constructor of the application object."
+    - content: "Configure"
+      isCorrect: false
+      explanation: "No. You create the initial window in the constructor of the application object."
+    - content: "The constructor"
+      isCorrect: true
+      explanation: "Correct."
+  - content: "Where do you implement the logic for an event handler for a control, such as the Clicked event for a button?"
+    choices:
+    - content: "In the XAML description of the page containing the control"
+      isCorrect: false
+      explanation: "No. You implement the logic in the code-behind file for the XAML page containing the control."
+    - content: "You implement the logic in the code-behind file for the XAML page containing the control."
+      isCorrect: true
+      explanation: "This is the correct answer"
+    - content: "In the App.xaml.cs file"
+      isCorrect: false
+      explanation: "No. You implement the logic in the code-behind file for the XAML page containing the control."

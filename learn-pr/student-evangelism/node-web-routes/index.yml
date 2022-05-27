@@ -5,7 +5,7 @@ metadata:
   description: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript.
   ms.date: 07/12/2021
   author: clarkio
-  ms.author: brcl
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to route management in Node.js with JavaScript

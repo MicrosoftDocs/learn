@@ -88,7 +88,7 @@ Let's assume that we want to deploy the following indexing policy to our **custo
 A few small changes are required to use this indexing policy in Bicep. These changes include:
 
 - Removing the double quotation from property names
-- Changing property values from single quotes to double quotes
+- Changing property values from double quotes to single quotes
 - Removing commas typically required in JSON
 
 ```bicep
