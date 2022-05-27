@@ -29,7 +29,7 @@ roles:
 products:
 - vs
 - dotnet
-# - maui
+- dotnet-maui
 units:
 - learn.dotnet-maui.use-shared-resources.introduction
 - learn.dotnet-maui.use-shared-resources.define-and-use-resources
