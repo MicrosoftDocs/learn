@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-overall-security-strategy-architecture.understand-security-for-protocols
+title: Understand security for protocols
+metadata:
+  title: Understand security for protocols
+  description: "Understand security for protocols"
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
