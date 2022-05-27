@@ -1,6 +1,6 @@
 **Estimated time:** 60 minutes.
 
-**Lab files:** none.<br>
+**Lab files:** none.
 
 ## Scenario
 
@@ -8,7 +8,7 @@ With the introduction of Azure DevOps, Microsoft offers developers a new continu
 
 Azure Pipelines provides unlimited CI/CD minutes and 10 parallel jobs to every GitHub open source project for free. All open source projects run on the same infrastructure that our paying customers to use. That means you’ll have the same fast performance and high quality of service. Many of the top open source projects are already using Azure Pipelines for CI/CD, such as Atom, CPython, Pipenv, Tox, Visual Studio Code, and TypeScript-and the list is growing every day.
 
-In this lab, you’ll see how easy it's to set up Azure Pipelines with your GitHub projects and how you can start seeing benefits immediately.
+You’ll see how easy it's to set up Azure Pipelines with your GitHub projects in this lab. Also, how you can start seeing benefits immediately.
 
 ## Objectives
 
@@ -21,7 +21,7 @@ After completing this lab, you'll be able to:
 ## Requirements
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
- -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).<br>
+ -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
  -  If you don't already have a GitHub account that you can use for this lab, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/get-started/signing-up-for-github/signing-up-for-a-new-github-account).
 
 ## Exercises
@@ -30,5 +30,5 @@ During this lab, you'll complete the following exercises:
 
  -  Exercise 1: Getting started with Azure Pipelines.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Button to launch exercise.":::
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
 ](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_Integrating_External_Source_Control_with_Azure_Pipelines.html)

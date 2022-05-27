@@ -6,4 +6,4 @@ Suppose your on-premises environments don't have connectivity to a Microsoft-hos
 
 The agents must have connectivity to the target on-premises environments and access to the Internet to connect to Azure Pipelines or Azure DevOps Server, as shown in the following diagram.
 
-:::image type="content" source="../media/agents-stages-behind-firewall-ae9c03be.png" alt-text="On-premises agents and Target on-premises stages are behind the firewall. Microsoft-hosted agents don't have line of sight behind the firewall.":::
+:::image type="content" source="../media/agents-stages-behind-firewall-ae9c03be.png" alt-text="Diagram that shows on-premises agents and target on-premises stages are behind the firewall.":::

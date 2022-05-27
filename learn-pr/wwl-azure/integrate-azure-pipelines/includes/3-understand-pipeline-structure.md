@@ -138,31 +138,31 @@ Techniques examples:
 runOnce is the simplest deployment strategy wherein all the lifecycle hooks.
 
 ```YAML
-strategy: 
-    runOnce: 
-        preDeploy: 
-            pool: [ server | pool ] # See pool schema. 
-            steps: 
-            - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ] 
-        deploy: 
-            pool: [ server | pool ] # See pool schema. 
-            steps: ... 
-        routeTraffic: 
-            pool: [ server | pool ] 
-            steps: 
-            ... 
-        postRouteTraffic: 
-            pool: [ server | pool ] 
-            steps: 
-            ... 
-        on: 
-            failure: 
-                pool: [ server | pool ] 
-                steps: 
-                ... 
-            success: 
-                pool: [ server | pool ] 
-                steps: 
+strategy:
+    runOnce:
+        preDeploy:
+            pool: [ server | pool ] # See pool schema.
+            steps:
+            - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        deploy:
+            pool: [ server | pool ] # See pool schema.
+            steps: ...
+        routeTraffic:
+            pool: [ server | pool ]
+            steps:
+            ...
+        postRouteTraffic:
+            pool: [ server | pool ]
+            steps:
+            ...
+        on:
+            failure:
+                pool: [ server | pool ]
+                steps:
+                ...
+            success:
+                pool: [ server | pool ]
+                steps:
                 ...
 ```
 
@@ -176,23 +176,23 @@ A rolling deployment replaces instances of the previous version of an applicatio
 strategy:
     rolling:
         maxParallel: [ number or percentage as x% ]
-        preDeploy:        
+        preDeploy:       
             steps:
             - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
-        deploy:          
+        deploy:         
             steps:
             ...
-        routeTraffic:         
+        routeTraffic:       
             steps:
-            ...        
-        postRouteTraffic:          
+            ...       
+        postRouteTraffic:         
             steps:
             ...
         on:
-            failure:         
+            failure:       
                 steps:
                 ...
-            success:          
+            success:         
                 steps:
                 ...
 ```
@@ -206,32 +206,32 @@ By using this strategy, you can roll out the changes to a small subset of server
 As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it.
 
 ```YAML
-strategy: 
+strategy:
     canary:
         increments: [ number ]
-        preDeploy:        
-            pool: [ server | pool ] # See pool schema.        
+        preDeploy:       
+            pool: [ server | pool ] # See pool schema.       
             steps:
             - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
-        deploy:          
-            pool: [ server | pool ] # See pool schema.        
+        deploy:         
+            pool: [ server | pool ] # See pool schema.       
             steps:
             ...
-        routeTraffic:         
-            pool: [ server | pool ]         
+        routeTraffic:       
+            pool: [ server | pool ]       
             steps:
-            ...        
-        postRouteTraffic:          
-            pool: [ server | pool ]        
+            ...       
+        postRouteTraffic:         
+            pool: [ server | pool ]       
             steps:
             ...
         on:
-            failure:         
-                pool: [ server | pool ]           
+            failure:       
+                pool: [ server | pool ]         
                 steps:
                 ...
-            success:          
-                pool: [ server | pool ]           
+            success:         
+                pool: [ server | pool ]         
                 steps:
                 ...
 ```
@@ -242,7 +242,7 @@ strategy:
 
 You can achieve the deployment strategies technique by using lifecycle hooks. Depending on the pool attribute, each resolves into an agent or [server job](/azure/devops/pipelines/process/phases).
 
-Lifecycle hooks inherit the pool specified by the deployment job. Deployment jobs use the $(Pipeline.Workspace) system variable.
+Lifecycle hooks inherit the pool specified by the deployment job. Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 Available lifecycle hooks:
 

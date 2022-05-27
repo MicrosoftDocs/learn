@@ -145,8 +145,8 @@ pr:
     - releases/*
 ```
 
-You can specify the full name of the branch or a wildcard.<br>
+You can specify the full name of the branch or a wildcard.
 
-For more information and guidance about GitHub integration, see:<br>
+For more information and guidance about GitHub integration, see:
 
  -  [Build GitHub repositories](/azure/devops/pipelines/repos/github).
