@@ -188,6 +188,172 @@ The `index.js` file contains the main app logic. The current web app works, but 
 
     - The `/signout` route notifies Azure AD B2C to sign out the user by using the sign out uri after it successfully destroys the user's session in the app.
 
+After you make all the changes required in index.js file, it should look similar to the following file:
+
+```javascript
+    /*
+     * Copyright (c) Microsoft Corporation. All rights reserved.
+     * Licensed under the MIT License.
+     */
+     
+    require('dotenv').config();
+    const express = require('express');
+    const session = require('express-session');
+    const {engine}  = require('express-handlebars');
+    const msal = require('@azure/msal-node');
+
+    /**
+     * Confidential Client Application Configuration
+     */
+     const confidentialClientConfig = {
+        auth: {
+            clientId: process.env.APP_CLIENT_ID, 
+            authority: process.env.SIGN_UP_SIGN_IN_POLICY_AUTHORITY, 
+            clientSecret: process.env.APP_CLIENT_SECRET,
+            knownAuthorities: [process.env.AUTHORITY_DOMAIN], //This must be an array
+            redirectUri: process.env.APP_REDIRECT_URI,
+            validateAuthority: false
+        },
+        system: {
+            loggerOptions: {
+                loggerCallback(loglevel, message, containsPii) {
+                    console.log(message);
+                },
+                piiLoggingEnabled: false,
+                logLevel: msal.LogLevel.Verbose,
+            }
+        }
+    };
+    
+    // Initialize MSAL Node
+    const confidentialClientApplication = new msal.ConfidentialClientApplication(confidentialClientConfig);
+    /**
+     * The MSAL.js library allows you to pass your custom state as state parameter in the Request object
+     * By default, MSAL.js passes a randomly generated unique state parameter value in the authentication requests.
+     * The state parameter can also be used to encode information of the app's state before redirect. 
+     * You can pass the user's state in the app, such as the page or view they were on, as input to this parameter.
+     * For more information, visit: https://docs.microsoft.com/azure/active-directory/develop/msal-js-pass-custom-state-authentication-request
+     * In this scenario, the states also serve to show the action that was requested of B2C since only one redirect URL is possible. 
+     */
+    
+    const APP_STATES = {
+        LOGIN: 'login',
+        LOGOUT: 'logout',
+    }
+    
+    
+    /** 
+     * Request Configuration
+     * We manipulate these two request objects below 
+     * to acquire a token with the appropriate claims.
+     */
+     const authCodeRequest = {
+        redirectUri: confidentialClientConfig.auth.redirectUri,
+    };
+    
+    const tokenRequest = {
+        redirectUri: confidentialClientConfig.auth.redirectUri,
+    };
+    
+    /**
+     * Using express-session middleware. Be sure to familiarize yourself with available options
+     * and set them as desired. Visit: https://www.npmjs.com/package/express-session
+     */
+     const sessionConfig = {
+        secret: process.env.SESSION_SECRET,
+        resave: false,
+        saveUninitialized: false,
+        cookie: {
+            secure: false, // set this to true on production
+        }
+    }
+     
+    //Create an express instance
+    const app = express();
+    
+    //Set handlebars as your view engine
+    app.engine('.hbs', engine({extname: '.hbs'}));
+    app.set('view engine', '.hbs');
+    app.set("views", "./views");
+    
+    //usse session configuration 
+    app.use(session(sessionConfig));
+
+    /**
+     * This method is used to generate an auth code request
+     * @param {string} authority: the authority to request the auth code from 
+     * @param {array} scopes: scopes to request the auth code for 
+     * @param {string} state: state of the application
+     * @param {Object} res: express middleware response object 
+     */
+     const getAuthCode = (authority, scopes, state, res) => {
+    
+        // prepare the request
+        console.log("Fetching Authorization code")
+        authCodeRequest.authority = authority;
+        authCodeRequest.scopes = scopes;
+        authCodeRequest.state = state;    
+        tokenRequest.authority = authority;
+    
+        // request an authorization code to exchange for a token
+        return confidentialClientApplication.getAuthCodeUrl(authCodeRequest)
+            .then((response) => {
+                console.log("\nAuthCodeURL: \n" + response);
+                //redirect to the auth code URL/send code to 
+                res.redirect(response);
+            })
+            .catch((error) => {
+                res.status(500).send(error);
+            });
+    }
+
+     app.get('/', (req, res) => {
+        res.render('signin', { showSignInButton: true });
+    });
+    
+    app.get('/signin',(req, res)=>{
+            //Initiate a Auth Code Flow >> for sign in
+            //no scopes passed. openid, profile and offline_access will be used by default.
+            getAuthCode(process.env.SIGN_UP_SIGN_IN_POLICY_AUTHORITY, [], APP_STATES.LOGIN, res);
+    });
+    
+    /**
+     * Sign out end point
+    */
+    app.get('/signout',async (req, res)=>{    
+        logoutUri = process.env.LOGOUT_ENDPOINT;
+        req.session.destroy(() => {
+            //When session destruction succeeds, notify Azure AD B2C service using the logout uri.
+            res.redirect(logoutUri);
+        });
+    });
+    
+    app.get('/redirect',(req, res)=>{
+        
+        //determine the reason why the request was sent by checking the state
+        if (req.query.state === APP_STATES.LOGIN) {
+            //prepare the request for authentication        
+            tokenRequest.code = req.query.code;
+            confidentialClientApplication.acquireTokenByCode(tokenRequest).then((response)=>{
+            
+            req.session.sessionParams = {user: response.account, idToken: response.idToken};
+            console.log("\nAuthToken: \n" + JSON.stringify(response));
+            res.render('signin',{showSignInButton: false, givenName: response.account.idTokenClaims.given_name});
+            }).catch((error)=>{
+                console.log("\nErrorAtLogin: \n" + error);
+            });
+        }else{
+            res.status(500).send('We do not recognize this response!');
+        }
+    
+    });
+
+    //start app server to listen on set port
+    app.listen(process.env.SERVER_PORT, () => {
+        console.log(`Msal Node Auth Code Sample app listening on port !` + process.env.SERVER_PORT);
+    });    
+```
+
 ## Run and test the app
 
 You've added authentication to the Node web app, so you test if it authenticates users correctly. 
