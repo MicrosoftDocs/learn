@@ -94,11 +94,8 @@ The `index.js` file contains the main app logic. The current web app works, but 
         const APP_STATES = {
             LOGIN: 'login',
             LOGOUT: 'logout',
-        }
-        
-        
-   
-         const authCodeRequest = {
+        }   
+        const authCodeRequest = {
             redirectUri: confidentialClientConfig.auth.redirectUri,
         };
         
