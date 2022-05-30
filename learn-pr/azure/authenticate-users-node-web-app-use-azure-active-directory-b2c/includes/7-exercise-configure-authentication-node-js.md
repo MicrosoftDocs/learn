@@ -60,11 +60,11 @@ The `index.js` file contains the main app logic. The current web app works, but 
     const msal = require('@azure/msal-node');
     ```
 
-1. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node. The `confidentialClientConfig` variable is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints.
+2. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node. The `confidentialClientConfig` variable is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints.
 
-    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
+:::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
 
-1. Just after the `confidentialClientConfig` MSAL Node instance, add the following code:
+3. Just after the `confidentialClientConfig` MSAL Node instance, add the following code:
 
     ```javascript
     /** 
@@ -101,11 +101,11 @@ The `index.js` file contains the main app logic. The current web app works, but 
         - `authCodeRequest`: The configuration object that's used to retrieve the authorization code.
         - `tokenRequest`: The configuration object that's used to acquire a token using authorization code.
 
-1. Just before the express routes, add the following method, which retrieves the authorization code URL.
+4. Just before the express routes, add the following method, which retrieves the authorization code URL.
 
-    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
+:::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
 
-1. Update the `/signin`, `/signout` and `/redirect` express routes as shown below:
+5. Update the `/signin`, `/signout` and `/redirect` express routes as shown below:
 
     ```javascript
     app.get('/signin',(req, res)=>{
