@@ -5,7 +5,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 ## Deploy a service
 
-:::image type="content" source="../media/deploy-screenshot.png" alt-text="Locate the deploy button for your Predict Auto Price inference pipeline." lightbox="../media/deploy-screenshot.png":::
+> ![Locate the deploy button for your Predict Auto Price inference pipeline.](../media/deploy-screenshot.png)
 
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
 2. At the top right, select **Deploy**, and deploy a new real-time endpoint, using the following settings:
@@ -15,8 +15,6 @@ After you've created and tested an inference pipeline for real-time inferencing,
 3. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service
-
-Now you can test your deployed service from a client application - in this case, you'll use the code in the cell below to simulate a client application.
 
 1. On the **Endpoints** page, open the **predict-auto-price** real-time endpoint.
 2. When the **predict-auto-price** endpoint opens, view the **Consume** tab and note the following information there. You need this to connect to your deployed service from a client application.
@@ -30,7 +28,6 @@ Now you can test your deployed service from a client application - in this case,
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
 
-> [!div class="centered"]
 > ![Select the Notebooks page from the left-hand pane and then create a new file.](../media/create-notebook-file.png)
 
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
