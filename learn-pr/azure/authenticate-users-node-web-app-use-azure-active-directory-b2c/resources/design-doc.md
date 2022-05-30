@@ -102,7 +102,7 @@ Identify the subtasks of module title.
     1. Configure the authentication library.
     1. Use MSAL to sign up/in/out users to the Node.js web app.
     1. Run and test the node web app.
-
+ 
 1. Knowledge check
     1. How should one prepare Azure AD B2C to authenticate users in a web application?
     1. Why is it advisable to use Microsoft Authentication Library (MSAL) to configure authentication in a web app?
