@@ -28,7 +28,18 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "How should one prepare Azure AD B2C to authenticate users in a web application?"
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: "Why is it advisable to use Microsoft Authentication Library (MSAL) to configure authentication in a web app?"
     choices:
     - content: ""
       isCorrect: true
@@ -39,47 +50,14 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What is the result of a request sent by a web app to Azure AD B2C?"
     choices:
     - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
       isCorrect: false
       explanation: ""
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
-    choices:
     - content: ""
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
       explanation: ""
