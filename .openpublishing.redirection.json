@@ -13404,6 +13404,26 @@
       "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/software-composition-analysis/11-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/static-analyzers/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/static-analyzers/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/static-analyzers/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/static-analyzers/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-continuous-integration/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-continuous-integration/8-summary",
+      "redirect_document_id": true
     }
   ]
 }
