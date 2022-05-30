@@ -1,6 +1,6 @@
 **Estimated time:** 50 minutes.
 
-**Lab files:** none.<br>
+**Lab files:** none.
 
 ## Scenario
 
@@ -25,9 +25,9 @@ After completing this lab, you'll be able to:
 ## Requirements
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
- -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).<br>
- -  [Git for Windows](https://gitforwindows.org) download page. This will be installed as part of the prerequisites for this lab.<br>
- -  [Visual Studio Code](https://code.visualstudio.com). This will be installed as part of the prerequisites for this lab.<br>
+ -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
+ -  [Git for Windows](https://gitforwindows.org) download page. This will be installed as part of the prerequisites for this lab.
+ -  [Visual Studio Code](https://code.visualstudio.com). This will be installed as part of the prerequisites for this lab.
 
 ## Exercises
 
@@ -39,5 +39,5 @@ During this lab, you'll complete the following exercises:
  -  Exercise 3: Review history.
  -  Exercise 4: Work with branches.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Button to launch exercise.":::
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
 ](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M01_Version_Controlling_with_Git_in_Azure_Repos.html)
