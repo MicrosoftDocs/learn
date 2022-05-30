@@ -1,12 +1,12 @@
 Now that you've understood how to configure MSAL Node library, you need to use it to add authentication to your Node web app. 
 
-Recall from the eCommerce organization scenario, your organization needed to authenticate users into the Node app. 
+Recall from the eCommerce organization scenario, your organization needed to authenticate users into the Node app.
 
-Here, you'll configure the Node app that you previously built to authenticate users by using Azure AD B2C. To achieve this, you'll use the Microsoft Authentication Library (MSAL) for Node.
+Here, you'll configure the Node app that you previously built to authenticate users by using Azure AD B2C. To achieve this configuration, you'll use the Microsoft Authentication Library (MSAL) for Node.
 
 ## Update the .env file
 
-As we learnt earlier, the `.env` file holds environment variables, which gets loaded to into `process.env` by dotenv package. 
+As you learned earlier, the `.env` file holds environment variables, which get loaded to into `process.env` by dotenv package. 
 
 Use the following steps to update the `.env` file with new variable:
 
@@ -60,9 +60,9 @@ The `index.js` file contains the main app logic. The current web app works, but 
     const msal = require('@azure/msal-node');
     ```
 
-1. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node. The `confidentialClientConfig` variable is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints:
+1. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node. The `confidentialClientConfig` variable is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints.
 
-:::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
+    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
 
 1. Just after the `confidentialClientConfig` MSAL Node instance, add the following code:
 
@@ -84,7 +84,7 @@ The `index.js` file contains the main app logic. The current web app works, but 
     
     /** 
      * Request Configuration
-     * We manipulate these two request objects below 
+     * You manipulate these two request objects below 
      * to acquire a token with the appropriate claims.
      */
      const authCodeRequest = {
@@ -96,14 +96,14 @@ The `index.js` file contains the main app logic. The current web app works, but 
     };
     ```
 
-    The code snippets defines the following variables:
+    The code snippet defines the following variables:
         - `APP_STATES`: Defines app state parameters. You can define many states depending on the number of requests your app makes.
         - `authCodeRequest`: The configuration object that's used to retrieve the authorization code.
         - `tokenRequest`: The configuration object that's used to acquire a token using authorization code.
 
-1. Just before the express routes, add the following method, which retrieves the authorization code URL:
+1. Just before the express routes, add the following method, which retrieves the authorization code URL.
 
-:::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
+    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
 
 1. Update the `/signin`, `/signout` and `/redirect` express routes as shown below:
 
@@ -127,7 +127,7 @@ The `index.js` file contains the main app logic. The current web app works, but 
     
     app.get('/redirect',(req, res)=>{
         
-        //determine that we indeed sent out this request by checking the state
+        //determine that you indeed sent out this request by checking the state
         if (req.query.state === APP_STATES.LOGIN) {
             //prepare the request for authentication        
             tokenRequest.code = req.query.code;
@@ -146,15 +146,15 @@ The `index.js` file contains the main app logic. The current web app works, but 
     })
     ```
 
-    - You invoke the `/signin` route when the user selects the **Sign in** button. It calls the `getAuthCode()` method and passes `authority` for the Sign in and sign up user flow, `APP_STATES.LOGIN`, and an empty `scopes` array to it. If necessary, it causes a challenge on the user to enter their credentials. The response from this route includes an authorization code from Azure AD B2C, which posted to the `/redirect` route.
+    - Invoke the `/signin` route when the user selects the **Sign in** button. It calls the `getAuthCode()` method and passes `authority` for the Sign in and sign up user flow, `APP_STATES.LOGIN`, and an empty `scopes` array to it. If necessary, it causes a challenge on the user to enter their credentials. The response from this route includes an authorization code from Azure AD B2C, which posted to the `/redirect` route.
 
-    - We set `/redirect` route as Redirect URI in the web app in Azure portal. This route uses the `state` query parameter in the response from Azure AD B2C to ascertain tha the request was sent by our web app. For example, if the app state is `login`, we use the authorization code in the response to retrieve an ID token by using the `acquireTokenByCode()` method. The information included in the response such as the `given_name` is sent to the app UI. Notice how we put the user `account` in a session.
+    - Set `/redirect` route as Redirect URI in the web app in Azure portal. This route uses the `state` query parameter in the response from Azure AD B2C to ascertain tha the request was sent by our web app. For example, if the app state is `login`, use the authorization code in the response to retrieve an ID token by using the `acquireTokenByCode()` method. The information included in the response such as the `given_name` is sent to the app UI. Notice how the user `account` is added to the session.
 
     - The `/signout` route notifies Azure AD B2C to sign out the user by using the sign out uri after it successfully destroys the user's session in the app.
 
 ## Run and test the app
 
-we've added authentication to the Node web app, so we test if it authenticates users correctly. 
+You've added authentication to the Node web app, so you test if it authenticates users correctly. 
 
 Use the following steps to test your app.
 
@@ -168,6 +168,6 @@ Use the following steps to test your app.
 
 1. Enter your sign-in credentials, such as email address and password. If you don't have an account, select **Sign up now** to create an account. After you successfully sign in or sign up, you're redirected to a page in your app that shows sign-in status. **User1** is the user's given name.
 
-    :::image type="content" source="../media/sign-in-status.png" alt-text="Screenshot of nod web app sign in status page page.":::
+    :::image type="content" source="../media/sign-in-status.png" alt-text="Screenshot of nod web app sign in status page.":::
 
 1. To sign out, select the **Sign out** button.
