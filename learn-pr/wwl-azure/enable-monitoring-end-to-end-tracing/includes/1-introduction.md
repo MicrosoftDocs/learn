@@ -1,6 +1,6 @@
 You've created your first Spring Cloud service, installed your microservices as applications, and exposed them through the **api-gateway**. Now that everything is up and running, it would be beneficial to monitor your applications availability. Monitoring helps you determine if there are errors or exceptions within your applications.
 
-In this exercise, you'll add end-to-end monitoring to your applications.<br>
+In this exercise, you'll add end-to-end monitoring to your applications.
 
 ## Learning objectives
 
@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
  -  Configure diagnostics settings.
  -  Analyze log files.
 
-## Prerequisites<br>
+## Prerequisites
 
  -  Intermediate-level familiarity with and local installations of the following tools: Git, Java JDK 8 or later, and a Java IDE or text editor.
  -  Basic Git commands, including cloning, committing files, and pushing changes to GitHub.

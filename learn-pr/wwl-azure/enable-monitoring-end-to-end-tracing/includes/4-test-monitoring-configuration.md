@@ -1,4 +1,4 @@
-Now that Application Insights is configured, you can use the service to monitor what's happening in your application.<br>
+Now that Application Insights is configured, you can use the service to monitor what's happening in your application.
 
 In this unit, you'll view the following items:
 
@@ -10,7 +10,7 @@ In this unit, you'll view the following items:
  -  Availability
  -  Logs
 
-To analyze monitoring data, do the following procedure.<br>
+To analyze monitoring data, do the following procedure.
 
 1.  In your browser, navigate to the Azure portal and your resource group.
 2.  Select the **Application Insights** resource in the resource group. On the overview page you'll see data about ***Failed requests, Server response time, Server requests,** and **Availability.***
@@ -26,14 +26,14 @@ To analyze monitoring data, do the following procedure.<br>
  -  **\[Test name\]**: Name for your test.
  -  **\[URL\]**: Fill out the URL to your api-gateway.
  -  Select default settings for the remainder of the configuration.
+
+11. Select the ellipses next to the newly created availability test, and select the **Open Rules (Alerts)** page.
     
     > [!NOTE]
     > Alerts for the test will be enabled. Your application will be pinged for availability from five test locations, every 5 minutes.
-
-11. Select the ellipses next to the newly created availability test, and select the **Open Rules (Alerts)** page.
-
-> [!NOTE]
-> Select the alert rule for your availability test. By default there are no action groups associated with this alert rule. You won't be configuring them in this unit, but you can send email or SMS notifications to individuals or groups.
+    
+    > [!NOTE]
+    > Select the alert rule for your availability test. By default there are no action groups associated with this alert rule. You won't be configuring them in this unit, but you can send email or SMS notifications to individuals or groups.
 
 12. Navigate to the **Application Insights** resource.
 13. Select **Failures** to view information for failures in your applications.
