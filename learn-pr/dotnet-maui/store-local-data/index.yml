@@ -29,7 +29,7 @@ roles:
 products:
   - vs
   - dotnet
-  # - maui # not yet available as a product in Learn
+  - dotnet-maui
 units:
   - learn.dotnet-maui.store-local-data.introduction
   - learn.dotnet-maui.store-local-data.compare-storage-options
