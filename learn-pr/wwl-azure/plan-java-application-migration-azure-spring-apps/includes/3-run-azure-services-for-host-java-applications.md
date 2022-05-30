@@ -8,13 +8,13 @@ Azure App Service is an Azure's Platform-as-a-Service (PaaS) offering that provi
 
 Azure App Service includes components for mobile apps, web apps and API apps. In short, that means that you can use Azure App Service to host web applications, REST APIs, and mobile back ends. In this course, we'll focus specifically on Azure App Service for Mobile Apps.
 
-Azure App Service includes the following services:<br>
+Azure App Service includes the following services:
 
  -  **Web Apps**: The Web App feature of App Service allows you to host websites and web apps on Azure's platform. Web Apps includes support for various languages and frameworks.
  -  **Mobile Apps**: The Mobile App feature of App Service allows you to build and deploy a mobile app backend on Azure's platform, with support for push notifications, user authentication, and offline data storage. This feature supports various platforms, including iOS, Android, Xamarin and more. Customized SDKs for each platform allow you to easily connect your client application with your mobile backend hosted on Azure. Learn more about Mobile Apps here.
  -  **API Apps**: The API App feature of App Service allows you to build and host APIs written in multiple languages on Azure's platform, with support for API authentication and more.
 
-:::image type="content" source="../media/app-service-overview-019843b5.png" alt-text="Image of Azure App Service components.":::
+:::image type="content" source="../media/app-service-overview-019843b5.png" alt-text="Diagram showing Azure App Service components.":::
 
 
 ## Azure Kubernetes Service
@@ -34,7 +34,7 @@ When you deploy an Azure Kubernetes Service cluster, the Kubernetes master and a
 
 As part of the Azure ecosystem, Azure Spring Apps allows easy binding to other Azure services including storage, databases, and monitoring.
 
-:::image type="content" source="../media/azure-spring-cloud-overview-445d9a8c.png" alt-text="Image of Azure Spring Cloud components.":::
+:::image type="content" source="../media/azure-spring-cloud-overview-445d9a8c.png" alt-text="Diagram showing Azure Spring Cloud components.":::
 
 
  -  Azure Spring Apps is a fully managed service for Spring Boot apps that lets you focus on building and running apps without managing infrastructure.

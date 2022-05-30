@@ -1,4 +1,4 @@
-You want to establish a plan for migrating your existing Spring Petclinic microservices application to Azure.<br>
+You want to establish a plan for migrating your existing Spring Petclinic microservices application to Azure.
 
 In this unit, you'll do the following tasks:
 
@@ -19,7 +19,7 @@ PetClinic is decomposed into four core Spring apps. All of them are independentl
  -  **Vets service:** Stores and shows Veterinarians' information, including names and specialties.
  -  **API Gateway:** The API Gateway is a single entry point into the system, used to handle requests and route them to an appropriate service or to invoke multiple services, and aggregate the results. The three core services expose an external API to client. In real-world systems, the number of functions can grow quickly with system complexity. Hundreds of services might be involved in rendering one complex webpage.
 
-The following diagram shows the architecture of the PetClinic application.<br>
+The following diagram shows the architecture of the PetClinic application.
 
 :::image type="content" source="../media/microsoft-services-architecture-diagram-10984584.jpg" alt-text="Diagram shows the architecture of the sample application.":::
 

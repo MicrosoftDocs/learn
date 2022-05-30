@@ -24,7 +24,7 @@ The server provides connection security to enforce firewall rules and, optionall
 
 Azure Database for MySQL provides a global database system that scales up to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
 
-You get the following features with Azure Database for MySQL:<br>
+You get the following features with Azure Database for MySQL:
 
  -  High availability features built-in.
  -  Predictable performance.

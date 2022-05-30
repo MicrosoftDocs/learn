@@ -2,7 +2,7 @@ Azure Spring Apps makes it easy to deploy Spring Boot applications to Azure with
 
 Deploying applications to Azure Spring Apps allows you to:
 
- -  Efficiently migrate existing Spring apps and manage cloud scaling and costs.<br>
+ -  Efficiently migrate existing Spring apps and manage cloud scaling and costs.
  -  Modernize apps with Spring Cloud patterns to improve agility and speed of delivery.
  -  Run Java at cloud scale and drive higher usage without complicated infrastructure.
  -  Develop and deploy rapidly without containerization dependencies.
@@ -19,7 +19,7 @@ After completing this module, you'll be able to:
  -  Understand the infrastructure services hosted by Azure Spring Apps.
  -  Understand the multiple microservices running the Petclinic sample application.
  -  Plan the Azure services used for storing the data for the Petclinic sample application.
- -  Recommend the right tools for connecting to Azure.<br>
+ -  Recommend the right tools for connecting to Azure.
 
 ## Prerequisites
 
