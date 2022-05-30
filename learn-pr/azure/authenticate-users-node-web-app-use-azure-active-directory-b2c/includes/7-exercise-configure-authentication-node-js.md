@@ -34,7 +34,7 @@ Use the following steps to update the `.env` file with new variable:
     - `<App client ID>` with the application (client) ID for the web app you registered in Azure portal.
     - `<Your app client secret>` with the client secret for the web app you registered in Azure portal.
     - `<your-tenant-name>` with the name of your Azure AD B2C tenant.
-    - `<sign-in-sign-up-user-flow-name>` with the name of your Sign in and Sign up user flow, which you created in Azure portal such as `B2C_1_susi`.
+    - `<sign-in-sign-up-user-flow-name>` with the name of your Sign in and Sign up user flow, which you created in Azure portal, such as `B2C_1_susi`.
 
     If you're using a custom domain for your Azure AD B2C tenant, replace all instances of `<your-tenant-name>.b2clogin.com` with your custom domain.
 
@@ -148,7 +148,7 @@ The `index.js` file contains the main app logic. The current web app works, but 
 
     - Invoke the `/signin` route when the user selects the **Sign in** button. It calls the `getAuthCode()` method and passes `authority` for the Sign in and sign up user flow, `APP_STATES.LOGIN`, and an empty `scopes` array to it. If necessary, it causes a challenge on the user to enter their credentials. The response from this route includes an authorization code from Azure AD B2C, which posted to the `/redirect` route.
 
-    - `/redirect` route is set as Redirect URI in the web app in Azure portal. This route uses the `state` query parameter in the response from Azure AD B2C to ascertain tha the request was sent by our web app. For example, if the app state is `login`, use the authorization code in the response to retrieve an ID token by using the `acquireTokenByCode()` method. The information included in the response such as the `given_name` is sent to the app UI. Notice how the user `account` is added to the session.
+    - `/redirect` route is set as Redirect URI in the web app in Azure portal. This route uses the `state` query parameter in the response from Azure AD B2C to ascertain tha the request was sent by our web app. For example, if the app state is `login`, use the authorization code in the response to retrieve an ID token by using the `acquireTokenByCode()` method. The information included in the response, such as the `given_name` is sent to the app UI. Notice how the user `account` is added to the session.
 
     - The `/signout` route notifies Azure AD B2C to sign out the user by using the sign out uri after it successfully destroys the user's session in the app.
 
