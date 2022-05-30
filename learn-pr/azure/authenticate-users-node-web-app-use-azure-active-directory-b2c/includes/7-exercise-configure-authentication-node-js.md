@@ -93,13 +93,13 @@ The `index.js` file contains the main app logic. The current web app works, but 
     
     const tokenRequest = {
         redirectUri: confidentialClientConfig.auth.redirectUri,
-    };
+    }
     ```
 
     The code snippet defines the following variables:
-        - `APP_STATES`: Defines app state parameters. You can define many states depending on the number of requests your app makes.
-        - `authCodeRequest`: The configuration object that's used to retrieve the authorization code.
-        - `tokenRequest`: The configuration object that's used to acquire a token using authorization code.
+        *`APP_STATES`: Defines app state parameters. You can define many states depending on the number of requests your app makes.
+        *`authCodeRequest`: The configuration object that's used to retrieve the authorization code.
+        *`tokenRequest`: The configuration object that's used to acquire a token using authorization code.
 
 4. Just before the express routes, add the following method, which retrieves the authorization code URL.
 
