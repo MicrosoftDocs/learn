@@ -52,7 +52,7 @@ In this pattern, all the components of your workload or, in some cases, your ent
 
 The entities you would most likely use for creating segments inside this virtual network are NSGs,potentially using ASGs to simplify administration. The image below is an example of a segmented virtual network.
 
-:::image type="content" source="../media/single-azure-region.png" alt-text="Virtual network in a single region.":::
+:::image type="content" source="../media/single-azure-region.png" alt-text="Diagram of a virtual network in a single region.":::
 
 
 
@@ -64,14 +64,14 @@ Although we used NSGs to illustrate how subnet traffic can be governed, you can 
 
 This pattern is the extension of the previous pattern where you have multiple virtual networks with potential peering connections. You might opt for this pattern to group applications into separate virtual networks, or you might need presence in multiple Azure regions. You get built-in segmentation through virtual networks because you must explicitly peer a virtual network to another one for them to communicate. (Keep in mind that [virtual network peering](/azure/virtual-network/virtual-network-peering-overview) connectivity isn't transitive.) To further segment within a virtual network in a manner similar to pattern 1, use NSGs in the virtual networks.
 
-:::image type="content" source="../media/multiple-regions.png" alt-text="Azure networks in multiple regions.":::
+:::image type="content" source="../media/multiple-regions.png" alt-text="Diagram of an Azure networks in multiple regions.":::
 
 
 ### Pattern 3: Multiple virtual networks in a hub &amp; spoke model
 
 This pattern is a more advanced virtual network organization where you choose a virtual network in a given region as the hub for all the other virtual networks in that region. The connectivity between the hub virtual network and its spoke virtual networks is achieved by using [Azure virtual network peering](/azure/virtual-network/virtual-network-peering-overview). All traffic passes through the hub virtual network, and it can act as a gateway to other hubs in different regions. You set up your security posture at the hubs, so they get to segment and govern the traffic between the virtual networks in a scalable way. One benefit of this pattern is that. as your network topology grows, the security posture overhead doesn't grow (except when you expand to new regions).
 
-:::image type="content" source="../media/hub-spoke.png" alt-text="Hub and spoke in two Azure regions.":::
+:::image type="content" source="../media/hub-spoke.png" alt-text="Diagram of a hub and spoke in two Azure regions.":::
 
 
 
@@ -94,7 +94,7 @@ The recommended Azure cloud native segmentation control is Azure Firewall. Azure
 
 Virtual Network NAT (network address translation) simplifies outbound-only Internet connectivity for virtual networks. When configured on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. NAT is fully managed and highly resilient. 
 
-:::image type="content" source="../media/flow-map.png" alt-text=" Virtual Network NAT (network address translation) flow diagram.":::
+:::image type="content" source="../media/flow-map.png" alt-text=" Diagram of a Virtual Network NAT (network address translation) flow diagram.":::
 
 Choose Virtual Network NAT gateway when:
 - You need on-demand outbound to internet connectivity without pre-allocation 
