@@ -7,62 +7,58 @@ In this unit, you'll do the following activities:
  -  Try another microservice and determine if messages are delivered to the Service Bus.
  -  Use the Service Bus Explorer for the `visits-requests` queue.
 
-Do the following activities to send messages to an Azure Service Bus.
-
 > [!NOTE]
-> Make sure you have the most recent compiled version of the microservices by running a separate build.
+> Make sure you have the most recent compiled version of the microservices by running a separate build, by running **mvn clean package -DskipTests**
 
-```azurecli
-mvn clean package -DskipTests
-```
+Do the following procedure to send messages to an Azure Service Bus.
 
 1.  Create a new application in your Spring Cloud Service for the `messaging-emulator`and assign it a public endpoint.
-
-```azurecli
-az spring-cloud app create 
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name messaging-emulator \
-    --assign-endpoint true
-```
+    
+    ```azurecli
+    az spring-cloud app create
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name messaging-emulator \
+        --assign-endpoint true
+    ```
 
 2.  Assign an identity to the new application and store the identity in an environment variable.
-
-```azurecli
-az spring-cloud app identity assign \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name messaging-emulator
-
-messaging_emulator_id=$(az spring-cloud app identity show \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name messaging-emulator \
-    --output tsv \
-    --query principalId)
-```
+    
+    ```azurecli
+    az spring-cloud app identity assign \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name messaging-emulator
+    
+    messaging_emulator_id=$(az spring-cloud app identity show \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name messaging-emulator \
+        --output tsv \
+        --query principalId)
+    ```
 
 3.  Allow the identity **get** and **list** permissions on your Key Vault secrets.
-
-```azurecli
-az keyvault set-policy \
-    --name $KEYVAULT_NAME \
-    --resource-group $RESOURCE_GROUP \
-    --secret-permissions get list \
-    --object-id $messaging_emulator_id
-```
+    
+    ```azurecli
+    az keyvault set-policy \
+        --name $KEYVAULT_NAME \
+        --resource-group $RESOURCE_GROUP \
+        --secret-permissions get list \
+        --object-id $messaging_emulator_id
+    ```
 
 4.  Deploy the **messaging-emulator``**application.
-
-```azurecli
-az spring-cloud app deploy 
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name messaging-emulator \
-    --no-wait \
-    --artifact-path spring-petclinic-messaging-emulator/target/spring-petclinic-messaging-emulator-2.6.1.jar \
-    --env SPRING_PROFILES_ACTIVE=mysql
-```
+    
+    ```azurecli
+    az spring-cloud app deploy
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name messaging-emulator \
+        --no-wait \
+        --artifact-path spring-petclinic-messaging-emulator/target/spring-petclinic-messaging-emulator-2.6.1.jar \
+        --env SPRING_PROFILES_ACTIVE=mysql
+    ```
 
 5.  From the Azure portal, navigate to your resource group and to your Azure Spring Apps Service.
 6.  Select **Apps** in your Azure Spring Apps Service and select the **messaging-emulator** app.

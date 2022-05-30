@@ -11,7 +11,7 @@ After completing this module, you'll be able to:
  -  Create an Azure Service Bus.
  -  Test run an existing microservice using Azure Service Bus.
  -  Update an existing microservice to use the queues.
- -  Add a message producer.<br>
+ -  Add a message producer.
 
 ## Prerequisites
 
