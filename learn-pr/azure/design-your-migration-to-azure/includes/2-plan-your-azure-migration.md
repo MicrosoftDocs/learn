@@ -47,7 +47,7 @@ Several tools and services are available to help you plan and complete the four 
 | [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimates your monthly running costs in Azure versus on-premises. |
 | [Azure Database Migration Service](/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to migrate database workloads to Azure. |
 | [Data Migration Tool](/azure/cosmos-db/import-data)                | Migrate  | Migrates existing databases to Azure Cosmos DB. |
-| [Azure Cost Management](/azure/cost-management/)                   | Optimize | Helps you monitor, control, and optimize ongoing Azure costs. |
+| [Microsoft Cost Management](/azure/cost-management/)                   | Optimize | Helps you monitor, control, and optimize ongoing Azure costs. |
 | [Azure Advisor](https://azure.microsoft.com/services/advisor/)                               | Optimize | Helps optimize your Azure resources for high availability, performance, and cost. |
 | [Azure Monitor](/azure/azure-monitor/)                             | Monitor  | Enables you to monitor your entire estate's performance. Includes application-health monitoring via enhanced telemetry, and setting up notifications. |
 | [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Provides intelligent security analytics for your applications. |
@@ -88,13 +88,13 @@ After your services are migrated, it's important to optimize them to ensure that
 
 ### Analyze running costs
 
-Use Azure Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. Or, you could view a resource group to see all the costs associated with all the resources in just the selected group:
+Use Microsoft Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. Or, you could view a resource group to see all the costs associated with all the resources in just the selected group:
 
 ![Screenshot of the cost analysis section of the Azure portal, showing a resource group.](../media/2-cost-analysis.png)
 
 ### Review opportunities to improve
 
-Azure Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
+Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
 ![Monitor stage.](../media/2-monitor.png)
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug-visual-studio-app-service.deploy-to-azure
+sandbox: true
+title: Exercise - Deploy the app to Azure
+metadata:
+  title: Exercise - Deploy the app to Azure
+  description: Learn how to deploy a sample app to Azure App Service that can be used for remote debugging scenarios.
+  ms.date: 5/15/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-deploy-the-app-to-azure.md)]

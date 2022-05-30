@@ -28,7 +28,7 @@ roles:
 products:
 - vs
 - dotnet
-# - maui
+- dotnet-maui
 units:
 - learn.dotnet-maui.create-multi-page-apps.introduction
 - learn.dotnet-maui.create-multi-page-apps.implement-flyout-navigation

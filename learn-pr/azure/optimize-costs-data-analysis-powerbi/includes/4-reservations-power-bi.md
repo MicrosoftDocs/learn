@@ -1,8 +1,8 @@
-If your organization has purchased Azure reservations, then the Azure Cost Management Power BI app can help you manage them, view cost-saving recommendations, and maximize your reservation use. The VM RI Coverage reports provides recommendations for VM RI purchases, even you haven't already made any reservation purchases.
+If your organization has purchased Azure reservations, then the Microsoft Cost Management Power BI app can help you manage them, view cost-saving recommendations, and maximize your reservation use. The VM RI Coverage reports provides recommendations for VM RI purchases, even you haven't already made any reservation purchases.
 
 You save the most money when a reservation is fully used. When a reservation isn't fully used, your maximum possible savings are reduced.
 
-The following sections describe reports included in the Azure Cost Management Power BI app.
+The following sections describe reports included in the Microsoft Cost Management Power BI app.
 
 ## VM RI Coverage (shared recommendation)
 
