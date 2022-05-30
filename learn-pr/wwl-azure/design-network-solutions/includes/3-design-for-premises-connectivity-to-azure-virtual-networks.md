@@ -120,7 +120,7 @@ Typical uses for this architecture include cases in which:
 
 This diagram illustrates a few of the advantages that this architecture can provide:
 
-- A full meshed hubs among Azure Virtual Networks
+- A full meshed hub among Azure Virtual Networks
 
 - Branch to Azure connectivity
 
