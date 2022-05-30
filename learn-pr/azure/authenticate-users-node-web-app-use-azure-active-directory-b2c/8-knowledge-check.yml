@@ -49,12 +49,12 @@ quiz:
       explanation: "Incorrect. Although one can both ID token and access token while using MSAL, it isn't the reason why MSAL is recommended. In fact, one can obtain either of the tokens by making an HTTP call directly to Azure AD B2C."
     - content: "Using MSAL is the only way to differentiate between a confidential and a public client app."
       isCorrect: false
-      explanation: "It's not MSAL that differentiates between confidential and a public client app. MSAL only implements the definition of what's called a confidential or public client app."
+      explanation: "Incorrect. It's not MSAL that differentiates between confidential and a public client app. MSAL only implements the definition of what's called a confidential or public client app."
   - content: "What does a web app receive back as a final response, when it makes a request to Azure AD B2C to authenticate users?"
     choices:
     - content: "Authorization URL"
       isCorrect: false
-      explanation: "The authorization URL is used to request the authorization code by requesting user's credentials and consent, and it's never the final response to the web app."
+      explanation: "Incorrect. The authorization URL is used to request the authorization code by requesting user's credentials and consent, and it's never the final response to the web app."
     - content: "A user's session ID"
       isCorrect: false
       explanation: "Incorrect. It's the web app that creates a session once it receives application claims from Azure AD B2C."
