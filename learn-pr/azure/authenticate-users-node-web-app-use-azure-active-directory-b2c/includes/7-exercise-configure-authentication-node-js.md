@@ -148,7 +148,7 @@ The `index.js` file contains the main app logic. The current web app works, but 
 
     - Invoke the `/signin` route when the user selects the **Sign in** button. It calls the `getAuthCode()` method and passes `authority` for the Sign in and sign up user flow, `APP_STATES.LOGIN`, and an empty `scopes` array to it. If necessary, it causes a challenge on the user to enter their credentials. The response from this route includes an authorization code from Azure AD B2C, which posted to the `/redirect` route.
 
-    - Set `/redirect` route as Redirect URI in the web app in Azure portal. This route uses the `state` query parameter in the response from Azure AD B2C to ascertain tha the request was sent by our web app. For example, if the app state is `login`, use the authorization code in the response to retrieve an ID token by using the `acquireTokenByCode()` method. The information included in the response such as the `given_name` is sent to the app UI. Notice how the user `account` is added to the session.
+    - `/redirect` route is set as Redirect URI in the web app in Azure portal. This route uses the `state` query parameter in the response from Azure AD B2C to ascertain tha the request was sent by our web app. For example, if the app state is `login`, use the authorization code in the response to retrieve an ID token by using the `acquireTokenByCode()` method. The information included in the response such as the `given_name` is sent to the app UI. Notice how the user `account` is added to the session.
 
     - The `/signout` route notifies Azure AD B2C to sign out the user by using the sign out uri after it successfully destroys the user's session in the app.
 
