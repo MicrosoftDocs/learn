@@ -62,7 +62,7 @@ The `index.js` file contains the main app logic. The current web app works, but 
 
 1. To create a confidential app MSAL Node instance, add the following code just after importing MSAL Node. The `confidentialClientConfig` variable is the MSAL Node instance used to connect to your Azure AD B2C tenant's authentication endpoints:
 
-    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
+:::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_configure_msal":::
 
 1. Just after the `confidentialClientConfig` MSAL Node instance, add the following code:
 
@@ -101,11 +101,9 @@ The `index.js` file contains the main app logic. The current web app works, but 
         - `authCodeRequest`: The configuration object that's used to retrieve the authorization code.
         - `tokenRequest`: The configuration object that's used to acquire a token using authorization code.
 
-1. Just before the express routes, add the following method:
+1. Just before the express routes, add the following method, which retrieves the authorization code URL:
 
-    :::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
-
-    The method retrieves the authorization code URL
+:::code language="JavaScript" source="~/active-directory-b2c-msal-node-sign-in-sign-out-webapp/index.js" id="ms_docref_authorization_code_url":::
 
 1. Update the `/signin`, `/signout` and `/redirect` express routes as shown below:
 
@@ -155,3 +153,21 @@ The `index.js` file contains the main app logic. The current web app works, but 
     - The `/signout` route notifies Azure AD B2C to sign out the user by using the sign out uri after it successfully destroys the user's session in the app.
 
 ## Run and test the app
+
+we've added authentication to the Node web app, so we test if it authenticates users correctly. 
+
+Use the following steps to test your app.
+
+1. From your VS Code terminal, run `node index.js` command to start the express server.
+
+1. In your browser, go to http://localhost:3000. You should see the page with a **Sign in** button. You saw this page earlier.
+
+1. To sign in, select the **Sign in** button. You're redirected to a sign in sign up page.
+
+    :::image type="content" source="../media/azure-ad-b2c-signin.png" alt-text="Screenshot of Azure A D B 2 C sign in page.":::
+
+1. Enter your sign-in credentials, such as email address and password. If you don't have an account, select **Sign up now** to create an account. After you successfully sign in or sign up, you're redirected to a page in your app that shows sign-in status. **User1** is the user's given name.
+
+    :::image type="content" source="../media/sign-in-status.png" alt-text="Screenshot of nod web app sign in status page page.":::
+
+1. To sign out, select the **Sign out** button.
