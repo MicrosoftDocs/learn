@@ -4,7 +4,7 @@ Now that you have an understanding of which Azure services, you can start workin
      -  It's a good practice for all Azure resources that are created together for a purpose to be associated with the same resource group. For this exercise that includes one application, you could deploy all resources for this application into a single resource group.
  -  **How will you configure networking for the application components?**
      -  You could deploy Azure Spring Apps either into a virtual network or without a virtual network dependency. The latter approach will simplify the task of making the initial migration of the application accessible from the Internet. In a subsequent exercise, you'll modify your approach to accommodate extra requirements. For now, you won't create a virtual network for Azure Spring Apps.
-    
+        
         > [!NOTE]
         > For Azure Kubernetes Service, you would need at least one subnet in a virtual network to run Azure Kubernetes Service cluster nodes. The subnet can be small (for example, /26), thus allowing for a total of 64 IP addresses.
      -  The Azure Database for MySQL deployment won't require virtual network connectivity for the first phase of the migration of the application. This will also be modified in a subsequent exercise for implementing security measures for protection of the full application stack.
