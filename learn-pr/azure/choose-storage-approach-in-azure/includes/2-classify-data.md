@@ -34,8 +34,8 @@ Here's an example of a person with hobbies expressed in XML.
 
 ```xml
 <Person Age="23">
-    <FirstName>John</FirstName>
-    <LastName>Smith</LastName>
+    <FirstName>Quinn</FirstName>
+    <LastName>Anderson</LastName>
     <Hobbies>
         <Hobby Type="Sports">Golf</Hobby>
         <Hobby Type="Leisure">Reading</Hobby>
@@ -54,8 +54,8 @@ Here's the same person expressed in JSON.
 
 ```json
 {
-    "firstName": "John",
-    "lastName": "Doe",
+    "firstName": "Quinn",
+    "lastName": "Anderson",
     "age": "23",
     "hobbies": [
         { "type": "Sports", "value": "Golf" },
@@ -72,8 +72,8 @@ Notice that this format isn't as formal as XML. It's closer to a key/value pair 
 Here's the same person data expressed in YAML.
 
 ```yaml
-firstName: John
-lastName: Doe
+firstName: Quinn
+lastName: Anderson
 age: 23
 hobbies:
     - type: Sports
