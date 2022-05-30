@@ -96,7 +96,7 @@ Now that you have a database instance, you can retrieve or create a container us
 
 - Retrieve an existing container using just the name
 - Create a new container passing in a unique container name, partition key path, and the amount of throughput to manually provision
-- Have the SDK check for the existence of the database and either create or retrieve it automatically
+- Have the SDK check for the existence of the container and either create or retrieve it automatically
 
 Any of these three methods will return an instance of type **Container** that you can use to interact with the container.
 
