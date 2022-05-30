@@ -10,10 +10,7 @@ Azure Key Vault helps solve the following problems:
 
 In this unit, you'll create a new Azure Key Vault service for holding your application secrets.
 
-1.  From the Bash Git prompt, run the commands below to create an Azure Key Vault instance. The name of the service should be globally and adjusted accordingly in case the randomly generated name is already in use.
-
-> [!NOTE]
-> Keep in mind that the name can contain only lowercase letters, numbers and hyphens. The `$LOCATION` and `$RESOURCE_GROUP` variables contain the name of the Azure region and the resource group into which you deployed the Azure Spring Apps service in the previous exercise of this lab.
+From the Bash Git prompt, run the commands below to create an Azure Key Vault instance. The name of the service should be globally and adjusted accordingly in case the randomly generated name is already in use.
 
 ```Bash
 KEYVAULT_NAME=springcloudkv$RANDOM$RANDOM
@@ -25,4 +22,7 @@ az keyvault create \
 ```
 
 > [!NOTE]
-> <br>Running the commands will take approximately 2-4 minutes to run.
+> The name can contain only lowercase letters, numbers and hyphens. The `$LOCATION` and `$RESOURCE_GROUP` variables contain the name of the Azure region and the resource group into which you deployed the Azure Spring Apps service in the previous exercise.
+
+> [!NOTE]
+> Running the commands will take approximately 2-4 minutes to run.

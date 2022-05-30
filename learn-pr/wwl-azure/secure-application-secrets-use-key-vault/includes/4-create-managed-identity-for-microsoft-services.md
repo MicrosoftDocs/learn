@@ -8,48 +8,48 @@ You'll assign an identity to the microservices used by the database:
  -  spring-petclinic-vets-service
  -  spring-petclinic-visits-service
 
-1.  Secret rotation is handled by Managed Identity. The procedure below assigns a Managed Identity to an application in Spring Cloud service by assigning an identity to each of the apps.<br>
-
-```Bash
-az spring-cloud app identity assign \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name customers-service
-
-az spring-cloud app identity assign \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name visits-service
-
-az spring-cloud app identity assign \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name vets-service
-
-```
+1.  Secret rotation is handled by Managed Identity. The procedure below assigns a Managed Identity to an application in Spring Cloud service by assigning an identity to each of the apps.
+    
+    ```Bash
+    az spring-cloud app identity assign \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name customers-service
+    
+    az spring-cloud app identity assign \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name visits-service
+    
+    az spring-cloud app identity assign \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name vets-service
+    
+    ```
 
 2.  Export the identity details to a separate environment variable for each of the apps so you can reuse it in the next part of the exercise.
-
-```Bash
-customers_service_id=$(az spring-cloud app identity show \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name customers-service \
-    --output tsv \
-    --query principalId)
-
-vets_service_id=$(az spring-cloud app identity show \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name vets-service \
-    --output tsv \
-    --query principalId)
-
-visits_service_id=$(az spring-cloud app identity show \
-    --service $SPRING_CLOUD_SERVICE \
-    --resource-group $RESOURCE_GROUP \
-    --name visits-service \
-    --output tsv \
-    --query principalId)
-
-```
+    
+    ```Bash
+    customers_service_id=$(az spring-cloud app identity show \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name customers-service \
+        --output tsv \
+        --query principalId)
+    
+    vets_service_id=$(az spring-cloud app identity show \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name vets-service \
+        --output tsv \
+        --query principalId)
+    
+    visits_service_id=$(az spring-cloud app identity show \
+        --service $SPRING_CLOUD_SERVICE \
+        --resource-group $RESOURCE_GROUP \
+        --name visits-service \
+        --output tsv \
+        --query principalId)
+    
+    ```
