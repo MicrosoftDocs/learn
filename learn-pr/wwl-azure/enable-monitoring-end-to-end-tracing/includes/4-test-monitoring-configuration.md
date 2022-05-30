@@ -22,10 +22,11 @@ To analyze monitoring data, do the following procedure.
 8.  Select **Live Metrics** to view live metrics of your application. You'll see the real-time performance of your application and the logs and traces coming through.
 9.  Select **Availability**, and then **Add Standard (preview) test**, to configure an availability test for your application.
 10. All the following information and select **Create**:
-
- -  **\[Test name\]**: Name for your test.
- -  **\[URL\]**: Fill out the URL to your api-gateway.
- -  Select default settings for the remainder of the configuration.
+    
+    
+     -  **\[Test name\]**: Name for your test.
+     -  **\[URL\]**: Fill out the URL to your api-gateway.
+     -  Select default settings for the remainder of the configuration.
 
 11. Select the ellipses next to the newly created availability test, and select the **Open Rules (Alerts)** page.
     
