@@ -7,71 +7,71 @@ For example, you can route traffic based on the incoming URL. So if `/documents`
 :::image type="content" source="../media/application-gateway-overview-431dbbb9.png" alt-text="Image showing how to route traffic based on the incoming URL.":::
 
 
-You'll provide the networking resources for your Spring Cloud service and your Application Gateway. To deploy them in the same virtual network, you'll need a minimum of three subnets: one for your Application Gateway and two for your Spring Cloud service. You'll also create the subnet containing Private Endpoints for backend services to your applications use, like your database and the Azure Key Vault.<br>
+You'll provide the networking resources for your Spring Cloud service and your Application Gateway. To deploy them in the same virtual network, you'll need a minimum of three subnets: one for your Application Gateway and two for your Spring Cloud service. You'll also create the subnet containing Private Endpoints for backend services to your applications use, like your database and the Azure Key Vault.
 
-1.  Create a virtual network using the following commands from the Git Bash prompt :
-
-```Bash
-VIRTUAL_NETWORK_NAME=springcloudlabvnet
-az network vnet create
-    --resource-group $RESOURCE_GROUP \
-    --name $VIRTUAL_NETWORK_NAME \
-    --location $LOCATION \
-    --address-prefix 10.1.0.0/16
-
-```
+1.  Create a virtual network using the following commands:
+    
+    ```Bash
+    VIRTUAL_NETWORK_NAME=springcloudlabvnet
+    az network vnet create
+        --resource-group $RESOURCE_GROUP \
+        --name $VIRTUAL_NETWORK_NAME \
+        --location $LOCATION \
+        --address-prefix 10.1.0.0/16
+    
+    ```
 
 2.  Create two subnets for Azure Spring Apps in this virtual network: one subnet for Application Gateway, the other another for the private endpoints of the MySQL Single Server instance and Azure Key Vault instance. You'll create environment variables for the subnet names of the Application Gateway and the Private Endpoints used later.
+    
+    ```Bash
+    SERVICE_RUNTIME_SUBNET_CIDR=10.1.0.0/24
+    SERVICE_RUNTIME_SUBNET_CIDR=10.1.0.0/24
+    APP_SUBNET_CIDR=10.1.1.0/24
+    APPLICATION_GATEWAY_SUBNET_CIDR=10.1.2.0/24
+    PRIVATE_ENDPOINTS_SUBNET_CIDR=10.1.3.0/24
+    APPLICATION_GATEWAY_SUBNET_NAME=app-gw-subnet
+    PRIVATE_ENDPOINTS_SUBNET_NAME=private-endpoints-subnet
+    az network vnet subnet create
+        --resource-group $RESOURCE_GROUP \
+        --vnet-name $VIRTUAL_NETWORK_NAME \
+        --address-prefixes $SERVICE_RUNTIME_SUBNET_CIDR \
+        --name service-runtime-subnet
+    az network vnet subnet create
+        --resource-group $RESOURCE_GROUP \
+        --vnet-name $VIRTUAL_NETWORK_NAME \
+        --address-prefixes $APP_SUBNET_CIDR \
+        --name apps-subnet
+    az network vnet subnet create \
+        --name $APPLICATION_GATEWAY_SUBNET_NAME \
+        --resource-group $RESOURCE_GROUP \
+        --vnet-name $VIRTUAL_NETWORK_NAME \
+        --address-prefix $APPLICATION_GATEWAY_SUBNET_CIDR
+    az network vnet subnet create \
+        --name $PRIVATE_ENDPOINTS_SUBNET_NAME \
+        --resource-group $RESOURCE_GROUP \
+        --vnet-name $VIRTUAL_NETWORK_NAME \
+        --address-prefix $PRIVATE_ENDPOINTS_SUBNET_CIDR
+    
+    ```
 
-```Bash
-SERVICE_RUNTIME_SUBNET_CIDR=10.1.0.0/24
-SERVICE_RUNTIME_SUBNET_CIDR=10.1.0.0/24
-APP_SUBNET_CIDR=10.1.1.0/24
-APPLICATION_GATEWAY_SUBNET_CIDR=10.1.2.0/24
-PRIVATE_ENDPOINTS_SUBNET_CIDR=10.1.3.0/24
-APPLICATION_GATEWAY_SUBNET_NAME=app-gw-subnet
-PRIVATE_ENDPOINTS_SUBNET_NAME=private-endpoints-subnet
-az network vnet subnet create
-    --resource-group $RESOURCE_GROUP \
-    --vnet-name $VIRTUAL_NETWORK_NAME \   
-    --address-prefixes $SERVICE_RUNTIME_SUBNET_CIDR \
-    --name service-runtime-subnet
-az network vnet subnet create
-    --resource-group $RESOURCE_GROUP \
-    --vnet-name $VIRTUAL_NETWORK_NAME \
-    --address-prefixes $APP_SUBNET_CIDR \
-    --name apps-subnet
-az network vnet subnet create \
-    --name $APPLICATION_GATEWAY_SUBNET_NAME \
-    --resource-group $RESOURCE_GROUP \
-    --vnet-name $VIRTUAL_NETWORK_NAME \
-    --address-prefix $APPLICATION_GATEWAY_SUBNET_CIDR
-az network vnet subnet create \
-    --name $PRIVATE_ENDPOINTS_SUBNET_NAME \
-    --resource-group $RESOURCE_GROUP \
-    --vnet-name $VIRTUAL_NETWORK_NAME \
-    --address-prefix $PRIVATE_ENDPOINTS_SUBNET_CIDR
-
-```
-
-3.  Assign the *Owner* role-based access control (RBAC) role to the Azure Service Provider for Spring Cloud access in the scope of the newly created virtual network. The assignment allows the resource provider to create resources in the service-runtime-subnet and apps-subnet subnets. The GUID used in the second command is the service provider id for Azure Spring Apps.
-
-> [!NOTE]
-> The export `MSYS_NO_PATHCONV=`1 must be included to address an issue with implementing role assignment when using Azure CLI in Git Bash shell, as documented on [GitHub](https://github.com/Azure/azure-cli/issues/16317).
-
-```Bash
-VIRTUAL_NETWORK_RESOURCE_ID=`az network vnet show \
-    --name $VIRTUAL_NETWORK_NAME \
-    --resource-group $RESOURCE_GROUP \
-    --query "id" \
-    --output tsv
-
-export MSYS_NO_PATHCONV=1
-
-az role assignment create \
-    --role "Owner" \
-    --scope $VIRTUAL_NETWORK_RESOURCE_ID \
-    --assignee e8de9221-a19c-4c81-b814-fd37c6caf9d2
-
-
-```
+3.  Assign the *Owner* role-based access control (RBAC) role to the Azure Service Provider for Spring Cloud access in the scope of the newly created virtual network. The assignment allows the resource provider to create resources in the service-runtime-subnet and apps-subnet subnets. The GUID used in the second command is the service provider ID for Azure Spring Apps.
+    
+    > [!NOTE]
+    > The export `MSYS_NO_PATHCONV=`1 must be included to address an issue with implementing role assignment when using Azure CLI in Git Bash shell, as documented on [GitHub](https://github.com/Azure/azure-cli/issues/16317).
+    
+    ```Bash
+    VIRTUAL_NETWORK_RESOURCE_ID=`az network vnet show \
+        --name $VIRTUAL_NETWORK_NAME \
+        --resource-group $RESOURCE_GROUP \
+        --query "id" \
+        --output tsv
+    
+    export MSYS_NO_PATHCONV=1
+    
+    az role assignment create \
+        --role "Owner" \
+        --scope $VIRTUAL_NETWORK_RESOURCE_ID \
+        --assignee e8de9221-a19c-4c81-b814-fd37c6caf9d2
+    
+    
+    ```
