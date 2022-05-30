@@ -17,17 +17,17 @@ Microsoft Graph PowerShell
 
 ## Prerequisites
 
-Basic knowledge of running PowerShell scripts
+Basic knowledge PowerShell concepts
+Basic knowledge of REST services and APIs
 
 ## Summary
 
-Add the summary [(Summary guidance)](/help/learn/id-guidance-introductory-summaries)
-Determine the types of business problems that you can solve using Microsoft Graph PowerShell. Describe the benefits of using Microsoft Graph PowerShell.
+Describe the features and benefits of using Microsoft Graph PowerShell to determine if Microsoft Graph PowerShell is the appropriate tool to automate your business processes.
 
 ## Learning objectives
 
 1. Describe the features and benefits of using Microsoft Graph PowerShell
-1. Evaluate if Microsoft Graph PowerShell is the best solution to access Microsoft Graph APIs
+1. Evaluate whether Microsoft Graph PowerShell is appropriate to automate your business processes
 
 ## Chunk your content into subtasks
 
@@ -36,61 +36,36 @@ Identify the subtasks of introduction to Microsoft Graph PowerShell.
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Define Microsoft Graph PowerShell | xxxx | Knowledge check | 1 | No,2 |
-| Define the SDK behind Microsoft Graph PowerShell | xxxx | Knowledge check | 1 | No, 1 |
+| Define the SDK behind Microsoft Graph PowerShell | xxxx | Knowledge check | 1 | No, Subtask 1 |
 | Define how Microsoft Graph PowerShell works | xxxx | Knowledge check | 2 | Yes |
 | Describe when to use Microsoft Graph PowerShell | xxxx | Knowledge check | 2 | Yes |
 
 ## Outline the units
 
-Add more units as needed for your content
-
 1. Introduction
 
-    Provide a scenario of a real-world job task that shows how the technology is used in practice:
+    Implementing business process automation across a set of Microsoft services can be challenging if the right tool is not available. Think about all repetitive bulk administrative tasks your company needs to do: user management, access reviews, authentication, Emails, Teams among others. How do you automate tasks across all these services? Microsoft Graph PowerShell exposes the entire Microsoft Graph API set for use in PowerShell providing a powerful way to optimize your work flow.
 
-    Add your scenario [(Scenario guidance)](/help/learn/id-guidance-scenarios)
+    Suppose you're the IT admin of a company that that has been using Azure Active Directory. You have recently acquired Sharepoint, Outlook and Exchange Microsoft services. You have been tasked with finding the best tool to automate tasks across all the services including Azure AD. You are aware that each of these services has APIs available through Microsoft Graph.
 
 1. What is Microsoft Graph PowerShell?
+    1. Describe the features of Microsoft Graph PowerShell
+    1. Describe the benefits of Microsoft Graph PowerShell
 1. How Microsoft Graph PowerShell works
+    1. Describe the installation process
+    1. Describe the command naming convention
+    1. Find commands and their permissions
 1. When to use Microsoft Graph PowerShell
+    1. Managing identities at scale
+    1. Automating bulk tasks. For example, user management
 1. Knowledge check
+    1. What are the main features of Microsoft Graph PowerShell?
+    1. Which Microsoft services cannot be accessed through Microsoft Graph PowerShell?
+    1. Suppose you work for a disaster response program. You want to automate information distribution and notifications to affected people. You have an Azure AD account to store the affected people's phone numbers and email addresses. How can you use Microsoft Graph PowerShell to automate this process?
 1. Summary
-
-1. Learning-content unit title
-
-    List the content that will enable the learner to complete the subtask:
-
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-
-**Knowledge check**
-
-    What types of questions will test the learning objective? [(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)
-
-    - Question type
-    - Question type
-
-1. Exercise - exercise unit title
-
-    List the steps that apply the learning content from previous unit:
-
-    1. Step
-    1. Step
-    1. Step
-
-1. Summary
-
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    Add your summary [(Summary guidance)](/help/learn/id-guidance-module-summary-unit)
+    Your company needed to find the best tool to automate business process across a number of Microsoft services. Given the features and benefits of Microsoft Graph PowerShell, you've determined that Microsoft Graph PowerShell would be a best fit to manage identities at scale and automate bulk tasks across all Microsoft services that have a corresponding API in Microsoft Graph.
 
 ## Notes
 
-Note any additional information that may be beneficial to this content such as links, reference material, and so on.
+Overview of Microsoft Graph PowerShell - (https://docs.microsoft.com/en-us/powershell/microsoftgraph/overview)
+Get started with Microsoft Graph PowerShell - (https://docs.microsoft.com/en-us/powershell/microsoftgraph/get-started)
