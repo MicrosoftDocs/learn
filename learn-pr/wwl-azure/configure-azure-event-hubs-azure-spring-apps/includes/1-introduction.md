@@ -2,10 +2,10 @@ Now that you've set up messaging for the Spring Petclinic application, the next 
 
 Event Hubs is a fully managed, real-time data ingestion service that’s simple, trusted, and scalable. Stream millions of events per second from any source to build dynamic data pipelines and immediately respond to business challenges. Keep processing data during emergencies using the geo-disaster recovery and geo-replication features.
 
-:::image type="content" source="../media/azure-event-hubs-coordination-c10e19fa.png":::
+:::image type="content" source="../media/azure-event-hubs-coordination-c10e19fa.png" alt-text="Diagram showing how Azure Event Hubs integrate with other Azure services to unlock insights.":::
 
 
-Integrate seamlessly with other Azure services to unlock valuable insights. Allow existing Apache Kafka clients and applications to talk to Event Hubs without any code changes.
+Azure Event Hubs integrate seamlessly with other Azure services to unlock insights. Allow existing Apache Kafka clients and applications to talk to Event Hubs without any code changes.
 
 ## Learning objectives
 
