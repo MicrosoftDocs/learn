@@ -46,7 +46,7 @@ You need to acquire a self-signed certificate and add it to Key Vault. You can u
     
     ```
 
-4.  Review the updated content of the **result-policy.json** file and record the updated DNS name in the *sampleapp.&lt;your-custom-domain-name&gt;.com* format by running the following command.
+4.  Review the updated content of the **result-policy.json** file and record the updated DNS name in the *`sampleapp.<your-custom-domain-name>.com`* format by running the following command.
     
     ```Bash
     cat result-policy.json

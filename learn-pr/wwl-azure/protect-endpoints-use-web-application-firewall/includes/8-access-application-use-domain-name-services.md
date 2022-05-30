@@ -35,7 +35,7 @@ In this unit, you'll access an application using Domain Name Services.
     > [!NOTE]
     > To validate the configuration, you'll need to use the custom DNS name to access the public endpoint of the api-gateway app, exposed via the Application Gateway instance. You can text by adding an entry that maps the DNS name to the IP address you identified in the previous step to the `hosts`file on your computer.
 
-4.  On your lab computer, open the *C:\\Windows\\System32\\drivers\\etc\\hosts* in Notepad using elevated privileges and add an extra line to the file. Replace th*e &lt;app-gateway-ip-address&gt;* and *&lt;custom-dns-name&gt;* placeholders with the IP address and the DNS name you identified in the previous two steps.
+4.  On your lab computer, open the *C:\\Windows\\System32\\drivers\\etc\\hosts* in Notepad using elevated privileges and add an extra line to the file. Replace the *`<app-gateway-ip-address>`* and *`<custom-dns-name>`* placeholders with the IP address and the DNS name you identified in the previous two steps.
     
     ```Bash
     <app-gateway-ip-address> <custom-dns-name>
