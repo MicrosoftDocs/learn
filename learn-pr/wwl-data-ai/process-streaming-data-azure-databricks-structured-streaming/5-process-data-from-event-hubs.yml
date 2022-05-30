@@ -4,12 +4,13 @@ title: Process data from Event Hubs with structured streaming
 metadata:
   title: Process data from Event Hubs with structured streaming
   description: "Process data from Event Hubs with structured streaming"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/5-process-data-from-event-hubs.md)]

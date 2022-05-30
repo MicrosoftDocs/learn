@@ -13,7 +13,7 @@ durationInMinutes: 4
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following reports in the Azure Cost Management App are used to view total charges for a specific time period?"
+  - content: "Which of the following reports in the Microsoft Cost Management App are used to view total charges for a specific time period?"
     choices:
     - content: "Top 5 usage drivers"
       isCorrect: false
@@ -46,7 +46,7 @@ quiz:
     - content: "When you have under-utilized reservations"
       isCorrect: false
       explanation: "When a reservation isn't fully used, your maximum possible savings are reduced. You should consider exchanging unused reservations."
-  - content: "What account types can you use with the Azure Cost Management Connector for Power BI Desktop?"
+  - content: "What account types can you use with the Microsoft Cost Management Connector for Power BI Desktop?"
     choices:
     - content: "An Enterprise Administrator account for Enterprise Agreements and a billing account owner for Microsoft Customer Agreements"
       isCorrect: true
