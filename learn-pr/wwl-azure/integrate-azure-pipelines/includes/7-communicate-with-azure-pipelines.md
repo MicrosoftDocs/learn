@@ -4,7 +4,7 @@ The agent always starts this communication. All the messages from the agent to A
 
 This pull model allows the agent to be configured in different topologies, as shown below.
 
-:::image type="content" source="../media/agent-machine-behind-firewall-cc762a93.png" alt-text="Diagram that shows an agent on an on-premises machine behind a firewall is using port 443 to access an Azure pipeline. An agent on a machine in a cloud is also accessing the Azure pipeline.":::
+:::image type="content" source="../media/agent-machine-behind-firewall-cc762a93.png" alt-text="Diagram that shows an agent on an on-premises machine behind a firewall is using port 443 to access an Azure pipeline.":::
 
 
 Here's a standard communication pattern between the agent and Azure Pipelines.

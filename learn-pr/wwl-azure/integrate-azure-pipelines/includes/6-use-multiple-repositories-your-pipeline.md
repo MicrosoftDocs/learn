@@ -94,7 +94,7 @@ If you're using inline syntax, choose the ref by appending @ref. For example:
 
 ```
 
-## GitHub Repository
+## GitHub repository
 
 Azure Pipelines can automatically build and validate every pull request and commit to your GitHub repository.
 
