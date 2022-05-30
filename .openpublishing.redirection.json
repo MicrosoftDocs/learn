@@ -13424,6 +13424,16 @@
       "source_path": "learn-pr/wwl-azure/explore-continuous-integration/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-continuous-integration/8-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-pipeline-agents-pools/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-pipeline-agents-pools/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-pipeline-agents-pools/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-pipeline-agents-pools/10-summary",
+      "redirect_document_id": true
     }
   ]
 }
