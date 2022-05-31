@@ -1,70 +1,25 @@
-<!-- 1. Article sentences --------------------------------------------------------------------------------
-
-    Goal: orient the learner to the area covered in this module
-
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the article sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-
-TODO: add your article sentences
-
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
+Employees are typically expected to use many applications to accomplish tasks. When the employee is required to sign in to each of the applications individually, frustration rises and productivity declines. When an administrator sets up single sign-on for applications, the employee only has to sign in once to access all the applications they need.
 
 ## Example scenario
 
-TODO: add your scenario
-TODO: add a visual element
+Suppose you’re an IT administrator at a retail company. The company depends on many applications for users to complete tasks, such as marketing, sales, and operations. A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
+You realize that this addition causes users to sign in to yet another application using specific credentials for it. Users become frustrated because they have to sign in many times a day. You want to make it so that a user can sign in once and get access to all the applications that they need.
 
 ## What will we be doing?
 
-TODO: add your activities
+Single sign-on is a trust relationship between an identity provider and a service provider. In this scenario, the Azure AD tenant that the company uses is known as the *identity provider*. The organization that makes the application available is known as the *service provider*.
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+For single sign-on, a combination of tasks is required both at the identity provider and at the service provider.
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
+:::image type="content" source="../media/sso-process.png" alt-text="Diagram showing the tasks in single sign-on configuration." border="false":::
 
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
+- **Select your application from the gallery** - Locate the application in the Azure AD application gallery and add it to the Azure AD tenant.
+- **Configure user and group assignments** - Create a user account and assign it to the application for testing single sign-on before making the application available to all employees.
+- **Set up single sign-on Azure AD** - Define URLs in the basic SAML configuration for the application and record them to help with setting up single sign-on at the service provider. Add a claim to the SAML token that is exchanged with the application to help with controlling access to information. Set up the trust relationship between the identity provider and the service provider by downloading and then uploading a SAML certificate.
+- **Set up application for single sign-on** - Register a user account at the service provider that matches the user account that was created at the identity provider. Configure single sign-on at the service provider using the URLs that were recorded at the identity provider.
+- **Test single sign-on** - Update the URLs at the identity provider using the URLs that were recorded from the service provider. Test the single sign-on configuration using the test user account that was created.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+Upon completion of this module, the learner will be able to create a trust relationship between the identity provider and the service provider. This relationship enables users to sign in once to access all the applications they need.
