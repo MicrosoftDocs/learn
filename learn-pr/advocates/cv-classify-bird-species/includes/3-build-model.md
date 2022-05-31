@@ -40,6 +40,8 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
 
+1. At the far right side in the menu bar, select your profile pic to see the dropdown showing your directory. Select the directory in which you want to create your projects. (For most users, this step will not be necessary.)
+
 1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
 
     :::image type="content" source="../media/azure-portal-create-resource.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
@@ -58,17 +60,15 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
    1. Enter a name for your new Custom Vision service resource (for example, *BirdCustomVisionService*).
 
-   1. Under **Training Resource**:
+   1. Under **Instance Details**:
 
-      1. Set **Training location** to *(US) South Central US*.
+      1. Set **Region** to *(US) South Central US*.
+ 
+      1. Enter a **Name** for your resource, using only alphanumeric characters and hyphens.
+ 
+   1. Under **Training Resource**, set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
 
-      1. Set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
-
-   1. Under **Prediction Resource**:
-
-      1. Set **Prediction location** to *(US) South Central US*.
-
-      1. Set **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
+   1. Under **Prediction Resource**, set **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
 
 1. Select **Review + create**.
 
