@@ -23,7 +23,23 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 
 2.  Verify that the build succeeds by reviewing the output of the `mvn clean package -DskipTests` command, which should have the following format:
     
-    `[INFO] Reactor Summary for spring-petclinic-microservices 2.6.3: [INFO] [INFO] spring-petclinic-microservices ..................... SUCCESS [ 0.224 s] [INFO] spring-petclinic-admin-server ...................... SUCCESS [ 5.665 s] [INFO] spring-petclinic-customers-service ................. SUCCESS [ 4.231 s] [INFO] spring-petclinic-vets-service ...................... SUCCESS [ 3.152 s] [INFO] spring-petclinic-visits-service .................... SUCCESS [ 2.902 s] [INFO] spring-petclinic-config-server ..................... SUCCESS [ 1.030 s] [INFO] spring-petclinic-discovery-server .................. SUCCESS [ 1.429 s] [INFO] spring-petclinic-api-gateway ....................... SUCCESS [ 8.277 s] [INFO] ------------------------------------------------------------------------ [INFO] BUILD SUCCESS [INFO] ------------------------------------------------------------------------ [INFO] Total time: 27.310 s [INFO] ------------------------------------------------------------------------`
+    ```
+    [INFO] Reactor Summary for spring-petclinic-microservices 2.6.3:
+    [INFO]
+    [INFO] spring-petclinic-microservices ..................... SUCCESS [ 0.224 s]
+    [INFO] spring-petclinic-admin-server ...................... SUCCESS [ 5.665 s]
+    [INFO] spring-petclinic-customers-service ................. SUCCESS [ 4.231 s]
+    [INFO] spring-petclinic-vets-service ...................... SUCCESS [ 3.152 s]
+    [INFO] spring-petclinic-visits-service .................... SUCCESS [ 2.902 s]
+    [INFO] spring-petclinic-config-server ..................... SUCCESS [ 1.030 s]
+    [INFO] spring-petclinic-discovery-server .................. SUCCESS [ 1.429 s]
+    [INFO] spring-petclinic-api-gateway ....................... SUCCESS [ 8.277 s]
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time: 27.310 s
+    [INFO] ------------------------------------------------------------------------
+    ```
 
 3.  For each application, you'll now create an app on Azure Spring Apps service. you'll start with the api-gateway. To deploy it, from the Git Bash prompt, run the following command:
     

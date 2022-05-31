@@ -22,7 +22,7 @@ git config
     --global user.email "<your-email-address>
 ```
 
-To install Apache Maven, extract the content of the *.zip* file by running unzip apache-maven-3.8.5-bin.zip. Add the path to the bin directory of the extracted content to the `PATH`environment variable by running the following command from the Git Bash shell:
+To install Apache Maven, extract the content of the *.zip* file by running unzip apache-maven-3.8.5-bin.zip. Add the path to the bin directory of the extracted content to the `PATH` environment variable by running the following command from the Git Bash shell:
 
 ```Bash
 export PATH=~/apache-maven-3.8.5/bin:$PATH

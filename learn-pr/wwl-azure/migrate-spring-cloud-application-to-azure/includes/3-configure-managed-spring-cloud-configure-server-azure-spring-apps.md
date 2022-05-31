@@ -19,7 +19,11 @@ Using a web browser, navigate to [GitHub](https://github.com/) and sign in to yo
     
     The commands should resemble:
     
-    `git remote add origin https://github.com/your-github-username/spring-petclinic-microservices-private.git git branch -M main git push -u origin main`
+    ```
+    git remote add origin https://github.com/your-github-username/spring-petclinic-microservices-private.git
+    git branch -M main
+    git push -u origin main
+    ```
 
 3.  From the Git Bash window, run the following commands to clone the [Spring Petclinic](https://github.com/spring-petclinic/spring-petclinic-microservices) application to your workstation:
     
@@ -65,13 +69,12 @@ Using a web browser, navigate to [GitHub](https://github.com/) and sign in to yo
 
 Once you completed the initial update of your git repository hosting the server configuration, you need to set up the config server for your Spring Cloud instance. As part of the setup process, you need to create a Personal Access Token (PAT) in your GitHub repo and make it available to the config server.
 
-> [!NOTE]
-> For reference, see the following information:
+For reference, see the following information:
 
  -  [Guidance on config server setup](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/spring-cloud/quickstart-setup-config-server.md)
  -  [Guidance for a private repo with basic authentication](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/spring-cloud/how-to-config-server.md)
 
-To create a Personal Access Token, do the following tasks:
+To create a Personal Access Token, do the following tasks:<br>
 
 1.  To create a Personal Access Token, switch to the web browser window displaying your private GitHub repository, select the avatar icon in the upper right corner, and then select **Settings**.
 2.  At the bottom of the vertical navigation menu, select **Developer settings**, select **Personal access tokens**, and then select **Generate new token**.
