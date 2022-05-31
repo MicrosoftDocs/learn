@@ -16,4 +16,4 @@ Testing the single sign-on configuration can be done in any of the following way
 1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
 1. Select **Single sign-on**, and then at the bottom of the **SAML-based Sign-on** pane, select **Test**.
 
-    :::image type="content" source="../media/test-sso.png" alt-text="Screenshot showing where to test the single sign-on configuration in the Azure AD tenant." border="true":::
+    :::image type="content" source="../media/test-sso.png" alt-text="Screenshot showing where to test the single sign-on configuration in the Azure A D tenant." border="true":::
