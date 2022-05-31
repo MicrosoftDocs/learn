@@ -54,12 +54,10 @@ products:
 subjects:
 - cloud-computing
 modules:
+- learn.manage-secrets-in-java-applications-zero-trust
 - learn.monitor-java-azure
-- learn.azure.deploy-java-azure-pipeline-terraform
-# Tune JVMs
 - learn.autoscale-java-azure
-# Secure communications
-# Key vault
+- learn.azure.deploy-java-azure-pipeline-terraform
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 - learn.develop-azure-functions-app-with-maven-plugin
