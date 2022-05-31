@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps.automate-github-actions-workflow
-title: Using a microservice to send events to Azure Event Hub
+title: Using a microservice to send events to Azure Event Hubs
 metadata:
-  title: Using a microservice to send events to Azure Event Hub
-  description: "Using a microservice to send events to Azure Event Hub"
-  ms.date: 05/30/2022
+  title: Using a microservice to send events to Azure Event Hubs
+  description: "Using a microservice to send events to Azure Event Hubs"
+  ms.date: 05/31/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

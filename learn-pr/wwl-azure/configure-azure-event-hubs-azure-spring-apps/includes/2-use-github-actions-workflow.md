@@ -2,7 +2,7 @@ Azure Event Hubs is a big data streaming platform and event ingestion service. I
 
 The following scenarios are some of the scenarios where you can use Event Hubs:
 
- -  Application logging<br>
+ -  Application logging
  -  Analytics pipelines, such as clickstreams
  -  Live dashboards
  -  Archiving data
@@ -27,133 +27,137 @@ Event Hubs represents the "front door" for an event pipeline, often called an *e
 > Alternatively, you can use the Managed Identity of your microservice to connect to the **eventhub**.
 
 > [!NOTE]
-> The connection to the eventhub needs to be stored in the `spring.kafka.properties.sasl.jaas.config` application property. You'll need to name your Key Vault secret*SPRING-KAFKA-PROPERTIES-SASL-JAAS-CONFIG*.
+> The connection to the eventhub needs to be stored in the `spring.kafka.properties.sasl.jaas.config` application property. You'll need to name your Key Vault secret ***SPRING-KAFKA-PROPERTIES-SASL-JAAS-CONFIG***.
 
 1.  The name you use for your new namespace should be globally unique, so you'll need to modify environment variable value.
-
-```azurecli
-EVENTHUBS_NAMESPACE=javalab-eh-ns
-
-az eventhubs namespace create \
-    --resource-group $RESOURCE_GROUP \
-    --name $EVENTHUBS_NAMESPACE \
-    --location $LOCATION
-```
+    
+    ```azurecli
+    EVENTHUBS_NAMESPACE=javalab-eh-ns
+    
+    az eventhubs namespace create \
+        --resource-group $RESOURCE_GROUP \
+        --name $EVENTHUBS_NAMESPACE \
+        --location $LOCATION
+    ```
 
 2.  To create an eventhub in this namespace, use the following commands.
-
-```azurecli
-EVENTHUB_NAME=telemetry
-
-az eventhubs eventhub create \
-    --name $EVENTHUB_NAME \
-    --resource-group $RESOURCE_GROUP \
-    --namespace-name $EVENTHUBS_NAMESPACE
-```
+    
+    ```azurecli
+    EVENTHUB_NAME=telemetry
+    
+    az eventhubs eventhub create \
+        --name $EVENTHUB_NAME \
+        --resource-group $RESOURCE_GROUP \
+        --namespace-name $EVENTHUBS_NAMESPACE
+    ```
 
 3.  To create a new authorization rule for sending and listening to the telemetry **eventhub**, use the following commands.
-
-```azurecli
-RULE_NAME=listensendrule
-
-az eventhubs eventhub authorization-rule create \
-    --resource-group $RESOURCE_GROUP \
-    --namespace-name $EVENTHUBS_NAMESPACE \
-    --eventhub-name $EVENTHUB_NAME \
-    --name $RULE_NAME \
-    --rights Listen Send
-```
+    
+    ```azurecli
+    RULE_NAME=listensendrule
+    
+    az eventhubs eventhub authorization-rule create \
+        --resource-group $RESOURCE_GROUP \
+        --namespace-name $EVENTHUBS_NAMESPACE \
+        --eventhub-name $EVENTHUB_NAME \
+        --name $RULE_NAME \
+        --rights Listen Send
+    ```
 
 4.  To retrieve the connection string for this authorization rule in an environment variable, use the following command.
-
-```azurecli
-EVENTHUB_CONNECTIONSTRING=$(az eventhubs eventhub authorization-rule keys list \
-    --resource-group $RESOURCE_GROUP \
-    --namespace-name $EVENTHUBS_NAMESPACE \
-    --eventhub-name $EVENTHUB_NAME \
-    --name $RULE_NAME \
-    --query primaryConnectionString \
-    --output tsv)
-```
+    
+    ```azurecli
+    EVENTHUB_CONNECTIONSTRING=$(az eventhubs eventhub authorization-rule keys list \
+        --resource-group $RESOURCE_GROUP \
+        --namespace-name $EVENTHUBS_NAMESPACE \
+        --eventhub-name $EVENTHUB_NAME \
+        --name $RULE_NAME \
+        --query primaryConnectionString \
+        --output tsv)
+    ```
 
 5.  To echo the connection string in your command window, use the following command.
-
-> [!NOTE]
-> You'll see that only access to your telemetry eventhub is granted.
-
-```azurecli
-$EVENTHUB_CONNECTIONSTRING
-```
+    
+    > [!NOTE]
+    > You'll see that only access to your telemetry eventhub is granted.
+    
+    ```azurecli
+    $EVENTHUB_CONNECTIONSTRING
+    ```
 
 6.  Paste the output value in the **secretfile.txt** file by replacing the EVENTHUB\_CONNECTIONSTRING value. The secretfile.txt file should be similar the output below.
-
-`org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="Endpoint=sb://YOURNAMESPACE.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=THEACCESSKEY";`
+    
+    ```
+    org.apache.kafka.common.security.plain.PlainLoginModule required
+    username="$ConnectionString"
+    password="Endpoint=sb://YOURNAMESPACE.servicebus.windows.net/; SharedAccessKeyName=RootManageSharedAccessKey; SharedAccessKey=THEACCESSKEY";
+    ```
 
 7.  Create a new Key Vault secret for the connection string.
-
-```azurecli
-az keyvault secret set \
-    --name SPRING-KAFKA-PROPERTIES-SASL-JAAS-CONFIG \
-    --file secretfile.txt \
-    --vault-name $KEYVAULT_NAME
-```
+    
+    ```azurecli
+    az keyvault secret set \
+        --name SPRING-KAFKA-PROPERTIES-SASL-JAAS-CONFIG \
+        --file secretfile.txt \
+        --vault-name $KEYVAULT_NAME
+    ```
 
 8.  In the configuration repository for the **application.yml** file, update the kafka configuration. Update the bootstrap-servers parameter to use the eventhub fully qualified domain name for the namespace.
-
-```
-kafka:
-    bootstrap-servers: javalab-eh-ns.servicebus.windows.net:9093
-    client-id: first-service
-    group-id: $Default
-    properties:
-        sasl.jaas.config:
-        sasl.mechanism: PLAIN
-        security.protocol: SASL_SSL
-        spring.json:
-            use.type.headers: false
-            value.default.type: com.targa.labs.dev.telemetrystation.Message
-```
-
-The result is similar to what's seen below.
-
-```
-spring:
-    config:
-        activate:
-            on-profile: mysql
-    jms:
-        servicebus:
-            connection-string: ${spring.jms.servicebus.connectionstring}
-            idle-timeout: 60000
-            pricing-tier: premium
-    datasource:
-        schema: classpath*:db/mysql/schema.sql
-        data: classpath*:db/mysql/data.sql
-        url: jdbc:mysql://javaopenlabmysql.mysql.database.azure.com:3306/db?useSSL=true
-        initialization-mode: ALWAYS
+    
+    ```
     kafka:
         bootstrap-servers: javalab-eh-ns.servicebus.windows.net:9093
         client-id: first-service
         group-id: $Default
-        group.id: $Default
         properties:
+            sasl.jaas.config:
             sasl.mechanism: PLAIN
             security.protocol: SASL_SSL
             spring.json:
                 use.type.headers: false
                 value.default.type: com.targa.labs.dev.telemetrystation.Message
-    topic:
-        name: telemetry
-    azure:
-        keyvault:
-            enabled: true
-            uri: https://springcloudlab2-kv.vault.azure.net/
-```
+    ```
+    
+    The result is similar to what's seen below.
+    
+    ```
+    spring:
+        config:
+            activate:
+                on-profile: mysql
+        jms:
+            servicebus:
+                connection-string: ${spring.jms.servicebus.connectionstring}
+                idle-timeout: 60000
+                pricing-tier: premium
+        datasource:
+            schema: classpath*:db/mysql/schema.sql
+            data: classpath*:db/mysql/data.sql
+            url: jdbc:mysql://javaopenlabmysql.mysql.database.azure.com:3306/db?useSSL=true
+            initialization-mode: ALWAYS
+        kafka:
+            bootstrap-servers: javalab-eh-ns.servicebus.windows.net:9093
+            client-id: first-service
+            group-id: $Default
+            group.id: $Default
+            properties:
+                sasl.mechanism: PLAIN
+                security.protocol: SASL_SSL
+                spring.json:
+                    use.type.headers: false
+                    value.default.type: com.targa.labs.dev.telemetrystation.Message
+        topic:
+            name: telemetry
+        azure:
+            keyvault:
+                enabled: true
+                uri: https://springcloudlab2-kv.vault.azure.net/
+    ```
 
 9.  Commit and push your changes to the remote repository using the following commands.
-
-```
-git add .
-git commit -m 'added event hub'
-git push
-```
+    
+    ```
+    git add .
+    git commit -m 'added event hub'
+    git push
+    ```

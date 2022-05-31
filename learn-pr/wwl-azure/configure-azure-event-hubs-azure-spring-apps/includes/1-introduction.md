@@ -5,7 +5,7 @@ Event Hubs is a fully managed, real-time data ingestion service that’s simple,
 :::image type="content" source="../media/azure-event-hubs-coordination-c10e19fa.png" alt-text="Diagram showing how Azure Event Hubs integrate with other Azure services to unlock insights.":::
 
 
-Azure Event Hubs integrate seamlessly with other Azure services to unlock insights. Allow existing Apache Kafka clients and applications to talk to Event Hubs without any code changes.
+Azure Event Hubs integrates seamlessly with other Azure services to unlock insights. Allow existing Apache Kafka clients and applications to talk to Event Hubs without any code changes.
 
 ## Learning objectives
 
