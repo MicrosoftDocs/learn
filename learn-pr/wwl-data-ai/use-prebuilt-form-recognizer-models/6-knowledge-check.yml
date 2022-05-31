@@ -27,12 +27,12 @@ quiz:
       explanation: "Correct. The general document model is the only one that supports entity extraction."
     - content: "ID document model."
       isCorrect: false
-      explanation: "Incorrect. The ID document model extracts information from US drivers' licensesand international passports and doesn't support entities."
-  - content: "You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each boxes is checked or empty. What object should you use in the returned JSON code?"
+      explanation: "Incorrect. The ID document model extracts information from US drivers' licenses and international passports and doesn't support entities."
+  - content: "You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each box is checked or empty. What object should you use in the returned JSON code?"
     choices:
     - content: "Selection marks."
       isCorrect: true
-      explanation: "Correct. Selection marks record checkboxes and radio buttons and include whether they are selected or not."
+      explanation: "Correct. Selection marks record checkboxes and radio buttons and include whether they're selected or not."
     - content: "Bounding boxes."
       isCorrect: false
       explanation: "Incorrect. Bounding boxes record the size and position of an element in the analyzed document."

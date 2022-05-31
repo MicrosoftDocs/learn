@@ -44,6 +44,27 @@ Let's start by using the **Forms Recognizer Studio** and the read model to analy
 
     :::image type="content" source="../media/5-language-detection.png" alt-text="Screenshot showing the detection of language for two spans in the results from the read model in Form Recognizer Studio.":::
 
+## Run Cloud Shell
+
+We'll use Cloud Shell in your Azure subscription to host a console application that calls Forms Recognizer. Follow these steps to start the Cloud Shell:
+
+1. In the Azure portal select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+
+    :::image type="content" source="../media/5-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
+
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you do not see this option, skip the step.
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
+
+    :::image type="content" source="../media/5-create-storage.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
+	
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it is *PowerShell*, switch to *Bash* by using the drop-down menu.
+
+    :::image type="content" source="../media/5-switch-bash.png" alt-text="Screenshot showing how to change the Cloud Shell to Bash in the Azure portal.":::
+
+1. Wait for Bash to start. You should see the following screen in the Azure portal:
+
+    :::image type="content" source="../media/5-cloud-shell-ready.png" alt-text="Screenshot showing the Cloud Shell ready to use in the Azure portal.":::
+
 ## Use the invoice model
 
 Now, let's write some code that uses your Forms Recognizer resource. You'll add your connection details to the sample code, and complete the project with lines that send a sample invoice and display data from it:
@@ -53,12 +74,11 @@ Now, let's write some code that uses your Forms Recognizer resource. You'll add 
 
     :::image type="content" source="../media/5-sample-invoice.png" alt-text="Screenshot showing the sample invoice that the code will analyze." lightbox="../media/5-sample-invoice.png":::
 
+
 1. In the Cloud Shell, to clone the code repository, enter this command:
 
-    > TODO: Correct this git path when Microsoft sample code repo is ready
-
     ```bash
-	git clone https://github.com/alistairmatthews/formsreadermodules.git
+	git clone https://github.com/MicrosoftLearning/mslearn-formrecognizer.git
 	```
 
 1. Change to the starter directory and then start the code editor:
