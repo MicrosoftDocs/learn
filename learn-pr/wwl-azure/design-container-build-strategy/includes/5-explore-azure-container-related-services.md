@@ -1,4 +1,4 @@
-Azure provides a wide range of services that help you to work with containers.
+Azure provides a wide range of services that help you work with containers.
 
 Here are the essential services that are involved:
 
@@ -20,21 +20,16 @@ It quickly became so popular that Microsoft changed the acronym for Azure Contai
 
 This service lets you store and manage container images in a central registry. It provides you with a Docker private registry as a first-class Azure resource.
 
-All types of container deployments, including DC/OS, Docker Swarm, Kubernetes, are supported. The registry is integrated with other Azure services such as the App Service, Batch, Service Fabric, and others.
+All container deployments, including DC/OS, Docker Swarm, and Kubernetes, are supported. The registry is integrated with other Azure services such as the App Service, Batch, Service Fabric, and others.
 
 Importantly, it allows your DevOps team to manage the configuration of apps without being tied to the configuration of the target-hosting environment.
 
-[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)
+[Azure Container Apps](https://azure.microsoft.com/services/container-apps/)
 
-Azure Service Fabric allows you to build and operate always-on, scalable, distributed apps.
+Azure Container Apps allows you to build and deploy modern apps and microservices using serverless containers. It deploys containerized apps without managing complex infrastructure.
 
-It simplifies the development of microservice-based applications and life-cycle management, including:
-
- -  Rolling updates with rollback.
- -  Partitioning and placement constraints.
-
-It can host and orchestrate containers, including stateful containers.
+You can write code using your preferred programming language or framework and build microservices with full support for [Distributed Application Runtime (Dapr)](https://dapr.io/). Scale dynamically based on HTTP traffic or events powered by [Kubernetes Event-Driven Autoscaling (KEDA)](https://keda.sh/).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/)
 
-Azure Web Apps provides a managed service for both Windows and Linux-based web applications and provides the ability to deploy and run containerized applications for both platforms. It provides options for autoscaling and load balancing and is easy to integrate with Azure DevOps.
+Azure Web Apps provides a managed service for both Windows and Linux-based web applications and provides the ability to deploy and run containerized applications for both platforms. It provides autoscaling and load balancing options and is easy to integrate with Azure DevOps.
