@@ -13544,6 +13544,16 @@
       "source_path": "learn-pr/wwl-azure/design-container-build-strategy/9-exercise-create-azure-container-registry.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-container-build-strategy/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-git-repositories/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-git-repositories/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-git-repositories/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-git-repositories/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
