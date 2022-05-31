@@ -134,7 +134,7 @@ We're going to use git to deploy the source code to the web app's production slo
 
 For your web app, you created one slot, the production slot, and you deployed source code to this slot. Let's create a deployment slot where you can stage new versions of your web app.
 
-1. On the Azure portal menu, select **Home**, and in **Azure services**, select **All resources**. ilter by **Type == App Service**, and then select **Apply**.
+1. On the Azure portal menu, select **Home**, and in **Azure services**, select **All resources**. Filter by **Type == App Service**, and then select **Apply**.
 
 1. Sort the result by **Type**, and then select the App Service that you created.. The **App Service** pane for your web app appears.
 
