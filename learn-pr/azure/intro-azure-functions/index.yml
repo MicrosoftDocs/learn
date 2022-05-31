@@ -24,11 +24,11 @@ products:
   - azure-functions
 prerequisites: None
 units:
-  - learn.intro-azure-functions.1-introduction
-  - learn.intro-azure-functions.2-what-azure-functions
-  - learn.intro-azure-functions.3-how-azure-functions-works
-  - learn.intro-azure-functions.4-when-use-azure-functions
-  - learn.intro-azure-functions.5-summary
+  - learn.intro-azure-functions.introduction
+  - learn.intro-azure-functions.what-azure-functions
+  - learn.intro-azure-functions.how-azure-functions-works
+  - learn.intro-azure-functions.when-use-azure-functions
+  - learn.intro-azure-functions.summary
 
 badge:
   uid: learn.intro-azure-functions.badge
