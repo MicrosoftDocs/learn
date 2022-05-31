@@ -72,7 +72,7 @@ Do the following procedure to send messages to an Azure Service Bus.
 
 To inspect the code of the **messaging-emulator** microservice, review:
 
- -  Dependencies for the Service Bus in the***pom.xml*** file.
- -  The `PetClinicVisitRequestSender` and`PetClinicMessageResponsesReceiver` classes in the `service`folder. The classes enable sending and receiving messages to and from a queue using JMS.
+ -  Dependencies for the Service Bus in the ***pom.xml*** file.
+ -  The `PetClinicVisitRequestSender` and `PetClinicMessageResponsesReceiver` classes in the `service` folder. The classes enable sending and receiving messages to and from a queue using JMS.
  -  The `PetClinicMessageRequest` and `PetClinicMessageResponse` classes in the ***entity***folder to see the messages being send back and forth.
  -  The `MessagingConfig`class in the ***config***folder provides conversion to and from JSON.

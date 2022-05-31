@@ -63,66 +63,66 @@ connection-string: ${spring.jms.servicebus.connectionstring}
 ```
 
 1.  Create a new Service Bus namespace. The name you use for your namespace should be globally unique, so update the value for the environment variable.
-
-```Azure CLI
-SERVICEBUS_NAMESPACE=javalab-ns
-
-az servicebus namespace create \
-    --resource-group $RESOURCE_GROUP \
-    --name $SERVICEBUS_NAMESPACE \
-    --location $LOCATION \
-    --sku Premium
-```
+    
+    ```Azure CLI
+    SERVICEBUS_NAMESPACE=javalab-ns
+    
+    az servicebus namespace create \
+        --resource-group $RESOURCE_GROUP \
+        --name $SERVICEBUS_NAMESPACE \
+        --location $LOCATION \
+        --sku Premium
+    ```
 
 2.  Create two new queues in the namespace called `visits-requests` and`visits-confirmations`.
-
-```Azure CLI
-az servicebus queue create \
-    --resource-group $RESOURCE_GROUP \
-    --namespace-name $SERVICEBUS_NAMESPACE \
-    --name visits-requests
-
-az servicebus queue create \
-    --resource-group $RESOURCE_GROUP \
-    --namespace-name $SERVICEBUS_NAMESPACE \
-    --name visits-confirmations
-```
+    
+    ```Azure CLI
+    az servicebus queue create \
+        --resource-group $RESOURCE_GROUP \
+        --namespace-name $SERVICEBUS_NAMESPACE \
+        --name visits-requests
+    
+    az servicebus queue create \
+        --resource-group $RESOURCE_GROUP \
+        --namespace-name $SERVICEBUS_NAMESPACE \
+        --name visits-confirmations
+    ```
 
 3.  Query your Service Bus namespace for its connection string.
-
-```Azure CLI
-SERVICEBUS_CONNECTIONSTRING=$(az servicebus namespace authorization-rule keys list \
-    --resource-group $RESOURCE_GROUP \
-    --namespace-name $SERVICEBUS_NAMESPACE \
-    --name RootManageSharedAccessKey \
-    --query primaryConnectionString \
-    --output tsv)
-```
+    
+    ```Azure CLI
+    SERVICEBUS_CONNECTIONSTRING=$(az servicebus namespace authorization-rule keys list \
+        --resource-group $RESOURCE_GROUP \
+        --namespace-name $SERVICEBUS_NAMESPACE \
+        --name RootManageSharedAccessKey \
+        --query primaryConnectionString \
+        --output tsv)
+    ```
 
 4.  Create a new Key Vault secret for the connection string.
+    
+    ```azurecli
+    az keyvault secret set \
+        --name SPRING-JMS-SERVICEBUS-CONNECTION-STRING \
+        --value $SERVICEBUS_CONNECTIONSTRING \
+        --vault-name $KEYVAULT_NAME
+    ```
 
-```azurecli
-az keyvault secret set \
-    --name SPRING-JMS-SERVICEBUS-CONNECTION-STRING \
-    --value $SERVICEBUS_CONNECTIONSTRING \
-    --vault-name $KEYVAULT_NAME
-```
-
-5.  In the configuration repository, search for the ***application.yml*** file. Add the following text below the mysql profile (llikely, below line 78).
-
-```
-servicebus:
-connection-string: ${spring.jms.servicebus.connectionstring}
-idle-timeout: 60000
-pricing-tier: premium
-```
-
-Make sure the YAML is correctly aligned. the`_jms_ element`, and should be at the same level as the `_config_ and _datasource_ elements`.
+5.  In the configuration repository, search for the ***application.yml*** file. Add the following text below the mysql profile (likely, below line 78).
+    
+    ```
+    servicebus:
+    connection-string: ${spring.jms.servicebus.connectionstring}
+    idle-timeout: 60000
+    pricing-tier: premium
+    ```
+    
+    Make sure the YAML is correctly aligned. the`_jms_ element`, and should be at the same level as the `_config_ and _datasource_ elements`.
 
 6.  Commit and push your changes to the remote repository.
-
-```Git Bash
-git add .
-gits commit -m 'added service bus'
-git push
-```
+    
+    ```Git Bash
+    git add .
+    gits commit -m 'added service bus'
+    git push
+    ```
