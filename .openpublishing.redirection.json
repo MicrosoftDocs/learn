@@ -13424,6 +13424,46 @@
       "source_path": "learn-pr/wwl-azure/explore-continuous-integration/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-continuous-integration/8-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-pipeline-agents-pools/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-pipeline-agents-pools/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-pipeline-agents-pools/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-pipeline-agents-pools/10-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-azure-pipelines/11-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-azure-pipelines/12-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/4-link-github-to-azure-boards.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-azure-repos-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/5-migrate-from-tfvc-to-git.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-azure-repos-github/4-migrate-from-tfvc-to-git",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/6-use-git-tfs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-azure-repos-github/5-use-git-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/7-develop-online-github-codespaces.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/work-azure-repos-github/6-develop-online-github-codespaces",
+      "redirect_document_id": true
     }
   ]
 }
