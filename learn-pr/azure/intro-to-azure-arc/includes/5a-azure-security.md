@@ -1,4 +1,4 @@
-Contoso wants to protect the servers and Kubernetes clusters it's connected to Azure Arc. Microsoft Sentinel lets Contoso collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Through Microsoft Defender for Cloud, Contoso can monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
+Contoso wants to protect the servers and Kubernetes clusters it's connected to Azure Arc. Microsoft Sentinel lets Contoso collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Through Microsoft Defender for Servers, Contoso can monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
 
 ## Azure Arc security with Microsoft Sentinel
 
@@ -43,7 +43,7 @@ Microsoft Defender for Servers and Microsoft Defender for Containers provide add
 - **Defender for Servers** is one of the enhanced security features of Microsoft Defender for Cloud. Microsoft Defender for Servers adds threat detection and advanced defenses to your Windows and Linux machines whether they're running in Azure, on-premises, or in a multi-cloud environment.
 - **Defender for Containers** is the cloud-native solution for securing your containers. Defender protects your clusters running in Azure Kubernetes Service (AKS) or other common container environments (such as Amazon Elastic Kubernetes Service (AKS) or Google Kubernetes Engine (GKE)).
 
-### Defender for Servers
+### What security benefits does Defender for Servers provide?
 
 Core benefits of Microsoft Defender for Servers include:
 
@@ -52,7 +52,7 @@ Core benefits of Microsoft Defender for Servers include:
 - **File integrity monitoring (FIM)** examines files and registries of operating systems and application software for changes that might indicate an attack. A comparison method is used to determine if the current state of the file is different from the last scan of the file. You can use this comparison to determine if valid or suspicious modifications have been made to your files.
 - **Adaptive application controls (AAC)** are an intelligent and automated solution for defining allowlists of known-safe applications for your machines. When you've configured adaptive application controls, you'll get security alerts if any application runs other than the ones you've defined as safe
 
-### How does Defender for Containers help secure my Kubernetes clusters?
+### How does Defender for Containers secure my Kubernetes clusters?
 
 Defender for Containers helps with the core aspects of container security:
 
