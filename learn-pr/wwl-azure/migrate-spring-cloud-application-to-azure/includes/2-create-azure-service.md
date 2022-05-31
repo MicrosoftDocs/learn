@@ -1,6 +1,6 @@
 Azure Spring Apps is a platform as a service (PaaS) for Spring developers. Manage the lifecycle of your Spring Boot applications with comprehensive monitoring and diagnostics, configuration management, service discovery, CI/CD integration, and blue-green deployments.
 
-:::image type="content" source="../media/Azure-spring-apps-conceptual-39e2d78c.png" alt-text="Diagram that shows how Azure Spring Apps services interact.":::
+:::image type="content" source="../media/azure-spring-apps-conceptual-39e2d78c.png" alt-text="Diagram that shows how Azure Spring Apps services interact.":::
 
 
 You can deploy an instance of the Azure Spring Apps service using the Azure portal or the Azure CLI.
