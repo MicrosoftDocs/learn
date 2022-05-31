@@ -40,8 +40,6 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
 
-1. At the far right side in the menu bar, select your profile pic to see the dropdown showing your directory. Select the directory in which you want to create your projects. (For most users, this step will not be necessary.)
-
 1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
 
     :::image type="content" source="../media/azure-portal-create-resource.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
