@@ -61,6 +61,6 @@ You've redeployed your Azure Spring Apps service to a virtual network and redepl
     --assign-endpoint true
     ```
 
-If you attempt to connect to the spring petclinic application through the endpoint assigned to the **api-gateway**, you'll be unable to connect. You won't connect because the endpoint is only available within the virtual network.
+If you attempt to connect to the Spring Petclinic application through the endpoint assigned to the **api-gateway**, you'll be unable to connect. You won't connect because the endpoint is only available within the virtual network.
 
 If you have another virtual machine in the virtual network, you could test these **api-gateway** and **admin-service** endpoints.
