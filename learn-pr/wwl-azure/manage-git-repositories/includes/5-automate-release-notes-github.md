@@ -17,36 +17,43 @@ You can choose if you want to customize it or leave it as it is.
 
 You can customize the auto-generate release notes template by using the following steps.
 
-1.  Navigate to your repository and create a new file.<br>:::image type="content" source="../media/github-create-new-file-f3e1148b.png" alt-text="Screenshot of how to create a new file on GitHub.":::
+1.  Navigate to your repository and create a new file.
     
-2.  You can use the name **.github/release.yml** to create the **release.yml** file in the **.github** directory.<br>:::image type="content" source="../media/github-release-file-creation-83568335.png" alt-text="Screenshot of how to create release.yml file on GitHub.":::
+    :::image type="content" source="../media/github-create-new-file-f3e1148b.png" alt-text="Screenshot of how to create a new file on GitHub.":::
+    
+2.  You can use the name **.github/release.yml** to create the **release.yml** file in the **.github** directory.
+    
+    :::image type="content" source="../media/github-release-file-creation-83568335.png" alt-text="Screenshot of how to create release.yml file on GitHub.":::
     
 3.  Specify in YAML the pull request labels and authors you want to exclude from this release. You can also create new categories and list the pull request labels in each. For more information about configuration options, see [Automatically generated release notes - GitHub Docs.](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes#configuration-options)
-
-```YML
-# .github/release.yml
-
-changelog:
-  exclude:
-    labels:
-    - ignore-for-release
-    authors:
-    - octocat
-  categories:
-    - title: Breaking Changes 🛠
-      labels:
-        - Semver-Major
-        - breaking-change
-    - title: Exciting New Features 🎉
-      labels:
-        - Semver-Minor
-        - enhancement
-    - title: Other Changes
-      labels:
-        - *
-```
-
-4.  Commit your new file.<br>:::image type="content" source="../media/github-commit-new-file-56536fe6.png" alt-text="Screenshot of how to commit new file on GitHub.":::
+    
+    **Example configuration:**
+    
+    ```YML
+    # .github/release.yml
+    
+    changelog:
+      exclude:
+        labels:
+        - ignore-for-release
+        authors:
+        - octocat
+      categories:
+        - title: Breaking Changes 🛠
+          labels:
+            - Semver-Major
+            - breaking-change
+        - title: Exciting New Features 🎉
+          labels:
+            - Semver-Minor
+            - enhancement
+        - title: Other Changes
+          labels:
+            - *
+    ```
+4.  Commit your new file.
+    
+    :::image type="content" source="../media/github-commit-new-file-56536fe6.png" alt-text="Screenshot of how to commit new file on GitHub.":::
     
 5.  Try to create a new release and click **+ Auto-generate release notes** to see the template structure.
 
