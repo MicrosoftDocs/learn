@@ -4,7 +4,7 @@ Application Gateway can make routing decisions based on other attributes of an H
 
 For example, you can route traffic based on the incoming URL. So if `/documents` is in the incoming URL, you can route traffic to a specific set of servers (known as a pool) configured for images. If `/graphics` is in the URL, that traffic is routed to another pool that's optimized for videos.
 
-:::image type="content" source="../media/application-gateway-overview-431dbbb9.png" alt-text="Image showing how to route traffic based on the incoming URL.":::
+:::image type="content" source="../media/application-gateway-overview-431dbbb9.png" alt-text="Screenshot of showing how to route traffic based on the incoming URL.":::
 
 
 You'll provide the networking resources for your Spring Cloud service and your Application Gateway. To deploy them in the same virtual network, you'll need a minimum of three subnets: one for your Application Gateway and two for your Spring Cloud service. You'll also create the subnet containing Private Endpoints for backend services to your applications use, like your database and the Azure Key Vault.
