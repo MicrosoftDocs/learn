@@ -36,7 +36,7 @@ Using Bridge to Kubernetes lets you:
 
 - Avoid having to build and deploy code to your cluster by instead creating a direct connection from your development computer to your cluster, allowing you to quickly test and develop your service in the context of the full application without creating any Docker or Kubernetes configuration. 
 - Redirect traffic between your connected Kubernetes cluster and your development computer, which allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster. 
-- Provide a way to replicate environment variables and mounted volumes available to pods in your Kubernetes cluster in your development computer, which allows allows you to quickly work on your code without having to replicate those dependencies manually.
+- Provide a way to replicate environment variables and mounted volumes available to pods in your Kubernetes cluster in your development computer, which allows you to quickly work on your code without having to replicate those dependencies manually.
 
 ## Deployment Center
 
