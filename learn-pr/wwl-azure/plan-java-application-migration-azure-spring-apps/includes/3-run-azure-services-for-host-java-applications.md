@@ -34,9 +34,6 @@ When you deploy an Azure Kubernetes Service cluster, the Kubernetes master and a
 
 As part of the Azure ecosystem, Azure Spring Apps allows easy binding to other Azure services including storage, databases, and monitoring.
 
-:::image type="content" source="../media/azure-spring-cloud-overview-445d9a8c.png" alt-text="Diagram showing Azure Spring Cloud components.":::
-
-
  -  Azure Spring Apps is a fully managed service for Spring Boot apps that lets you focus on building and running apps without managing infrastructure.
  -  Deploy your JARs or code for your Spring Boot app or Zip for your Steeltoe app, and Azure Spring Apps will automatically wire your apps with Spring service runtime and built-in app lifecycle.
  -  After deployment you can monitor app performance, fix errors, and rapidly improve applications.
