@@ -22,6 +22,7 @@ By the end of this module, you'll be able to:
 - Basic knowledge of programming concepts
 - Familiarity with the command line to create new directories and install programs
 - Node.js installed
-- Truffle and Ganache CLI installed
+- Truffle and Ganache installed
+- Git installed
 - Visual Studio Code installed
-- Blockchain Development Kit for Ethereum installed
+- Truffle for VS Code extension installed
