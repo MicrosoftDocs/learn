@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.intro-azure-functions
+metadata:
+  title: Introduction to Azure Functions
+  description: Learn how to
+  ms.date: 06/04/2020
+  author: saifeemustafaq
+  ms.author: msaifee
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Functions
+summary: Learn how to
+abstract: |
+  In this module you'll learn:
+  - What is Azure Functions
+  - How Azure Functions works and the logic behind it
+  - When to use Azure Functions
+iconUrl: /learn/achievements/intro-azure-functions.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure-functions
+prerequisites: None
+units:
+  - learn.intro-azure-functions.1-introduction
+  - learn.intro-azure-functions.2-what-azure-functions
+  - learn.intro-azure-functions.3-how-azure-functions-works
+  - learn.intro-azure-functions.4-when-use-azure-functions
+  - learn.intro-azure-functions.5-summary
+
+badge:
+  uid: learn.intro-azure-functions.badge
