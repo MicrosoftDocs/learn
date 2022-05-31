@@ -12,4 +12,4 @@ metadata:
 title: Describe Azure Arc security with Defender and Sentinel
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-azure-policy-and-azure-monitor.md)]
+  [!include[](includes/5a-azure-security.md)]
