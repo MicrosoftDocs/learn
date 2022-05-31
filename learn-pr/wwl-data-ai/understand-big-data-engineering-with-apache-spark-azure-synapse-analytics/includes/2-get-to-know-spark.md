@@ -6,7 +6,7 @@ Apache Spark applications run as independent sets of processes on a cluster, coo
 
 The SparkContext runs the main function and parallel operations on the cluster nodes, and then collects the results of the operations. The nodes read and write data from and to the file system and cache transformed data in-memory as *Resilient Distributed Datasets* (RDDs).
 
-![A diagram of Azure Synapse Apache Spark architecture, with a driver program connecting to a cluster manager and running parallel operations on executor nodes that read data from the file system.](../media/synapse-spark-architecture.png)
+![A diagram of Azure Synapse Apache Spark architecture.](../media/synapse-spark-architecture.png)
 
 The SparkContext is responsible for converting an application to a *directed acyclic graph* (DAG). The graph consists of individual tasks that get executed within an executor process on the nodes. Each application gets its own executor processes, which stay up for the duration of the whole application and run tasks in multiple threads.
 
