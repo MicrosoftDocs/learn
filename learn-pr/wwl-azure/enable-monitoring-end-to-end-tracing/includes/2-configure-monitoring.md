@@ -2,14 +2,14 @@ Azure Spring Apps enables log streaming using Azure CLI to get real-time applica
 
 In this unit, you'll live stream the logs of the **api-gateway** and the **visits** services.
 
-1.  To live stream the logs for the **api-gateway** service, use the following statements:
-    
-    ```azurecli
-    az spring-cloud app logs \
-        --name api-gateway \
-        --resource-group $RESOURCE_GROUP \
-        --service $SPRING_CLOUD_SERVICE
-    ```
+To live stream the logs for the **api-gateway** service, use the following statements:
+
+```azurecli
+az spring-cloud app logs \
+    --name api-gateway \
+    --resource-group $RESOURCE_GROUP \
+    --service $SPRING_CLOUD_SERVICE
+```
 
 To stream the logs to your console, do the following procedure.
 

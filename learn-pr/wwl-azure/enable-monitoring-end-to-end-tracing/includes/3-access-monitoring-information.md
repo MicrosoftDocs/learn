@@ -41,7 +41,18 @@ You'll need to check whether an Application Insights instance is linked to your 
     
     You should see output similar to what's displayed below:
     
-    `{ "appInsightsAgentVersions": { "java": "3.2.8" }, "appInsightsInstrumentationKey": "InstrumentationKey=xxx-xxx-xxx;IngestionEndpoint=https://westus-0.in.applicationinsights.azure.com/;LiveEndpoint=https://westus.livediagnostics.monitor.azure.com/", "appInsightsSamplingRate": 10.0, "error": null, "provisioningState": "Succeeded", "traceEnabled": true }`
+    ```
+    {
+    "appInsightsAgentVersions": {
+    "java": "3.2.8"
+    },
+    "appInsightsInstrumentationKey": "InstrumentationKey=xxx-xxx-xxx;IngestionEndpoint=https://westus-0.in.applicationinsights.azure.com/;LiveEndpoint=https://westus.livediagnostics.monitor.azure.com/",
+    "appInsightsSamplingRate": 10.0,
+    "error": null,
+    "provisioningState": "Succeeded",
+    "traceEnabled": true
+    }
+    ```
     
     The output seen above shows that Application Insights is enabled and that your applications are sending monitoring data to Application Insights. If your output differs, and there's no instrumentation key, you'll need to reconfigure Application Insights.
     
