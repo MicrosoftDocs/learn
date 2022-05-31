@@ -1,6 +1,6 @@
 When designing a license management strategy, you first need to understand your progress in the DevOps implementation phase.
 
-If you have a scratch of the architecture you're planning for the DevOps implementation; you already know part of the resources to consume.
+If you have a draft of the architecture, you're planning for the DevOps implementation; you already know part of the resources to consume.
 
 For example, you started with a version control-implementing Git and created some pipelines to build and release your code.
 
@@ -8,7 +8,7 @@ If you have multiple teams building their solutions, you don't want to wait in t
 
 Probably, you want to pay for parallel jobs and make your builds run in parallel without depending on the queue availability.
 
-To consider:
+**To consider:**
 
  -  What phase are you in?
  -  How many people are using the feature?
