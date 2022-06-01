@@ -32,7 +32,7 @@ On the diagram, **Cloud optimized** is a strategy for migrating to the cloud. Cl
 
 The compute solution has three hosting options: Infrastructure as a Service, Platform as a Service, and Function as a Service? There’s also Software-as-a-Service which isn’t a compute solution. The [hosting option](/azure/security/fundamentals/shared-responsibility) determines the developer and cloud provider responsibilities. This hosting decision will influence your design. 
 
-:::image type="content" source="../media/host-infrastructures.png" alt-text="Responsibilities for IaaS, PaaS, and FaaS.":::
+:::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram of responsibilities for infrastucture and platform services.":::
 
 
 - **Infrastructure-as-a-Service** (IaaS) lets you create individual VMs along with the associated networking and storage components. Then you deploy whatever software and applications you want onto those VMs. This model is the closest to a traditional on-premises environment, except that Microsoft manages the infrastructure. You still manage the individual VMs.
