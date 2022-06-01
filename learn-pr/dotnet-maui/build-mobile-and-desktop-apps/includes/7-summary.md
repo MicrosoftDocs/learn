@@ -1,4 +1,4 @@
-.NET MAUI provides a way to create cross-platform apps that can run on Windows, Android, maOS, and iOS devices.
+.NET MAUI provides a way to create cross-platform apps that can run on Windows, Android, macOS, and iOS devices.
 
 In this module, you:
 
