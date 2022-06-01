@@ -19,7 +19,7 @@ prerequisites: |
   - An Azure Active Directory subscription. If you don't have a subscription, you can get a free account.
   - The Global Administrator, Cloud Application Administrator, or Application Administrator role.
   - A single sign-on enabled subscription for the application that you intend to use.
-  - Familiarity with URLs and how they are used.
+  - Familiarity with URLs and how they're used.
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
