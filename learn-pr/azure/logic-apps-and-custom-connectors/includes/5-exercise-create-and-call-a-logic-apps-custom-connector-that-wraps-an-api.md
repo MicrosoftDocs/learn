@@ -1,67 +1,75 @@
-You have a Web API called Print Framer API that calculates a cost for a picture frame based on the dimensions you send to it. Developers throughout your company want to use this in their Logic Apps, but there is currently no way to make that connection.
+You have a Web API called Print Framer API that calculates a cost for a picture frame based on the dimensions you send to it. Developers throughout your company want to use this in their Azure Logic Apps workflows, but there's currently no way to make that connection.
 
-In this exercise, you'll create a custom connector for the Print Framer API and use it to send and receive data from a Logic App to a Web API. First, we need a Logic App.
+In this exercise, you'll create a custom connector for the Print Framer API and use it to send and receive data from a logic app workflow to a Web API. First, we need a logic app workflow.
 
-## Create a Logic App
+## Create a logic app workflow
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Web**, then search for and select **Logic App (Consumption)**. The **Logic App (Consumption)** pane appears.
+1. In the left menu pane, select **Integration**, then find and select **Logic App**.
 
-1. Select **Create**. The **Create a logic app** pane appears.
+1. On the **Logic App** pane, select **Create**.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Create Logic App** pane, under **Basics**, enter the following values for each setting.
 
-    | Setting | Value |
-    | --- | --- |
-    | **Project details** |
-    | Subscription | Concierge Subscription |
-    | Resource group | Select *<rgn>Sandbox resource group </rgn>* |
-    | **Instance details** |
-    | Logic app name | Choose a unique name. Make a note of it, you'll need it later on. |
-    | Region | Select a region near you from the following list. |
-    | Enable log analytics | Off |
-    | | |
+   | Setting | Value |
+   | --- | --- |
+   | **Project Details** |
+   | Subscription | Concierge Subscription |
+   | Resource group | Select *<rgn>Sandbox resource group </rgn>* |
+   | **Instance Details** |
+   | Logic App name | Choose a unique name. Make a note of it, you'll need it later on. |
+   | Publish | Workflow |
+   | Region | Select a region near you. |
+   | Enable log analytics | No |    
+   | **Plan** |
+   | Plan type | Consumption |
+   | | |
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+   [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Review + create**, then select **Create** after validation succeeds.
 
-1. After your Logic App has been created, select **Go to resource**. The Azure portal opens the designer for the Logic App.
+1. After the portal creates your logic app resource, select **Go to resource**.
 
-1. Under **Start with a common trigger**, select **When an HTTP request is received**.
+   The Azure portal shows a gallery with frequently used triggers and workflow patterns.
 
-1. Select **Add a new parameter**, and then select**Method**.
+1. Under **Start with a common trigger**, select the Request trigger named **When an HTTP request is received**.
 
-1. In the **Method** dropdown list, select **GET**.
+   The workflow designer now displays the trigger you selected.
 
-1. Once again, select **Add a new parameter**, then select **Relative path**, and in the **Relative path** field, enter `{height}/{width}`.
+1. Open the **Add a new parameter** list, and select **Method**.
 
-    ![Configure the HTTP request for the Logic App.](../media/5-configure-http-request.png)
+1. From the **Method** list, select **GET**.
 
-1. In the **Logic Apps Designer**, select **Save**.
+1. Open the **Add a new parameter** list again, and select **Relative path**. In the **Relative path** property, enter `{height}/{width}` as a literal string.
 
-We now have a basic Logic App. Let's add a custom connector so that we can call our custom PrintFramer API from our workflow.
+   ![Screenshot showing the Request trigger information.](../media/5-configure-http-request.png)
 
-## Create a new custom Logic Apps connector in the Azure portal
+1. On the designer toolbar, select **Save**.
+
+We now have a basic logic app workflow. Let's add a custom connector so that we can call our custom Print Framer API from our workflow.
+
+## Create a new Azure Logic Apps custom connector in the Azure portal
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search box, search for and select **Logic Apps Custom Connector**. The **Logic Apps Custom Connector** pane appears.
+1. In the search box, find and select **Logic Apps Custom Connector**.
 
-1. Select **Create**. The **Create logic apps custom connector** appears.
+1. On the **Logic Apps Custom Connector** pane, select **Create**.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Create logic apps custom connector** pane, under **Basics**, enter the following values for each setting.
 
-    | Setting | Value |
-    | --- | --- |
-    | **Project details** |
-    | Subscription | *Concierge Subscription* |
-    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group </rgn>* |
-    | **Instance details** |
-    | Custom connector name | PrintFramerConnector |
-    | Region | Select a region near you, that is also in the list of regions supported by the sandbox. |
-    | | |
+   | Setting | Value |
+   | --- | --- |
+   | **Project details** |
+   | Subscription | Concierge Subscription |
+   | Resource group | Select **Use existing**, and choose *<rgn>Sandbox resource group </rgn>* |
+   | **Instance details** |
+   | Custom connector name | PrintFramerConnector |
+   | Region | Select a region that's near you and also supported by the sandbox. |
+   | Associate with integration service environment | Leave unselected |
+   | | |
 
 1. Select **Review + create**. After validation succeeds, select **Create**.
 
@@ -69,15 +77,15 @@ We now have a basic Logic App. Let's add a custom connector so that we can call 
 
 ## Import the OpenAPI definition
 
-Now let's use the OpenAPI file we saved early to define custom connector.
+Now let's use the OpenAPI file that we previously saved to define the custom connector.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources**, and then select **PrintFramerConnector**.
 
 1. On the **Overview** page, select **Edit**.
 
-    ![Edit the custom connector.](../media/5-edit-logic-apps-connector.png)
+   ![Screenshot showing editor for custom connector.](../media/5-edit-logic-apps-connector.png)
 
-1. In the **Custom connectors** section, select **OpenAPI file**, and then select **Import**. Open the JSON file you saved in the last exercise.
+1. In the **Custom connectors** section, select **OpenAPI file**, and then select **Import**. Open the JSON file that you saved in the last exercise.
 
 ## Configure the custom connector
 
