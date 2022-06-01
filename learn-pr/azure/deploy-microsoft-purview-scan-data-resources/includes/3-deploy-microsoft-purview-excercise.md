@@ -16,10 +16,12 @@ In this unit, you'll use the [Azure portal](https://portal.azure.com) to create 
     * Optionally, overwrite the auto-generated managed resource group name.  
     :::image type="content" source="../media/01.03-create-basic.png" alt-text="Screenshot of Microsoft Purview account creation - Basic tab, with the information boxes highlighted.":::
 
+1. Select **Next:Networking >** at the bottom of the page.
+
 1. On the **Networking** tab, select **All networks**.  
     :::image type="content" source="../media/01.04-create-networking.png" alt-text="Screenshot of the Microsoft Purview account creation Networking tab, with All networks selected.":::
 
-1. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and select **Create**.  
+1. Select **Review + Create** at the bottom of the page. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and select **Create**.  
     :::image type="content" source="../media/01.05-create-create.png" alt-text="Screenshot of the Microsoft Purview account creation, with validation passing and Create selected.":::
 
 1. Wait several minutes while your deployment is in progress. Once complete, select **Go to resource**.  
