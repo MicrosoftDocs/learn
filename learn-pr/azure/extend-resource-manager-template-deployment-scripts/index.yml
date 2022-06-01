@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.azure.extend-resource-manager-template-deployment-scripts
 metadata:
-  title: Extend ARM templates by using deployment scripts
+  title: Extend ARM templates and Bicep files by using deployment scripts
   description: Learn how to add custom steps to your Azure Resource Manager templates
-    (ARM templates) by using deployment scripts.
+    (ARM templates) and Bicep files by using deployment scripts.
   ms.date: 05/12/2021
   author: smurawski
   ms.author: stmuraws
