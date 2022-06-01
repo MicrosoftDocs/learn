@@ -31,7 +31,7 @@ The other models are designed to extract values from documents with less specifi
 The prebuilt models are designed to extract different types of data from the documents and forms users submit. To select the right model for your requirements, you must understand these features:
 
 - **Text extraction.** All the prebuilt models extract lines of text and words from hand-written and printed text.
-- **Key-value pairs.** Spans of text within a document that identify a label or key and its response or value are extracted by many models as key-values pairs. For example, a typical key may be **Country** and its value might be **France**.
+- **Key-value pairs.** Spans of text within a document that identify a label or key and its response or value are extracted by many models as key-values pairs. For example, a typical key may be **Weight** and its value might be **31 kg**.
 - **Entities.** Text that include common, more complex data structures can be extracted as entities. Entity types include people, locations, and dates. 
 - **Selection marks.** Spans of text that indicate a choice can be extracted by some models as selection marks. These marks include radio buttons and check boxes.
 - **Tables.** Many models can extract tables in scanned forms included the data contained in cells, the numbers of columns and rows, and column and row headings. Tables with merged cells are supported.
