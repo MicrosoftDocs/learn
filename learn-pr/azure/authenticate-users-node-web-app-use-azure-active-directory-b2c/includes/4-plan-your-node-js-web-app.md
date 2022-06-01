@@ -1,78 +1,135 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: briefly summarize the key skill this unit will teach
+You can build a web application using various languages such Node, .NET, PHP, Java and Python, but in the eCommerce organization scenario, you're launching a new Node web application. 
 
-    Heading: none
+Here, you'll learn Node.js concepts that will enable you to build the Node.js web application.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## What is Node.js?
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Node.js is an open-source, server-side JavaScript runtime environment. You use Node.js to run JavaScript applications and code in many places outside of a browser, such as on a server. When building web applications, you'll often use Node.js based web frameworks. One such framework is ExpressJS. Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web applications. It does so without obscuring Node.js features.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## How to create a Node.js project
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+To create your Node.js app, you start with a folder, and then you can create the app using a terminal window.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+You start by configuring the **package.json** file inside the folder. Use `npm init -y` command to create the **package.json** file. This file contains metadata that you use to describe your application to the Node.js runtime. Here's an example:
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+```json
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+You can edit the file to change the **name** of your app or add a better **description** for your app. If the JavaScript file that will hold your application code has a different name, you can replace **index.js** in the **main** property with it. You need to create this file inside the application folder.
 
-    Goal: State concisely what's covered in this unit
+## Node.js packages
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Node.js comes with many core libraries to use in building your application. However, there's a huge ecosystem of third-party libraries. You use npm, a package manager, to easily install and use the libraries in your application.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+To install a library, you run `npm install <name of package>` command, where `<name of package>` is the name of your package. For example, to install ExpressJS, you run `npm install express`. After you install the package, it's listed in the **dependencies** section of your package.json file. Here's an example:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+```json
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
+```
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+## Express routing
 
-    Heading: none
--->
-TODO: add a visual element
+Routing refers to how your application URIs respond to client's HTTP requests. ExpressJS defines application routes using the HTTP verbs such as GET and POST. The following example shows how you create an express instance and then use it to create a basic route:
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+```javascript
+    const express = require('express')
+    //create express instance    
+    const app = express()
+    
+    // respond with "hello world" when a GET request is made to the homepage
+    app.get('/', (req, res) => {
+      res.send('hello world')
+    })
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+    // POST method route
+    app.post('/', (req, res) => {
+      res.send('POST request to the homepage')
+    })
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+    // POST method route matching '/callback'
+    app.post('/callback', (req, res) => {
+      res.send('POST request to callback URI')
+    })
+```
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+From the example, you can see that route definition takes the following structure:
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+```javascript
+    app.METHOD(PATH, HANDLER)
+```
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+Where:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+* **app** is an express instance.
+* **METHOD** is an HTTP request method, in lowercase.
+* **PATH** is a path on the server.
+* **HANDLER** is the function to be executed when the route is matched.
 
-<!-- Do not add a unit summary or references/links -->
+## HandleBars templating language
+
+Handlebars is a templating engine. You use it to build your app's UI components. A templating engine takes a static HTML file, fills it with the data on the server side, and then sends it as an ordinary HTML file to the client such as a browser. To use handlebars in express, you need to store HTML code into a `.hbs` extension in the `views` folder in the source directory as HandleBars looks for the files in the views folder.
+
+To start using Handlebars for express, you need to install the handlebars package. In your terminal, run `npm install express-handlebars` command to install Handlebars fo express.  
+
+Handlebars uses `{{some content here}}`expressions to add data into the HTML. To insert a control structure, you proceed `#` to the name of the control structure or helper and it requires a matching closing `/` of the same name. Here's an example:
+
+```html
+      {{#if message}}
+          <h5>{{message}}</h5>
+      {{else}}
+           <h5>Say something else</h5>
+      {{/if}}
+```
+
+However, if you want to insert HTML and make it remain intact, use the `{{{}}}` token. HandleBars uses this syntax to implement layouts. Here's how it works:
+
+1. Create a folder `views` with a subdirectory `layouts` inside your project folder.
+
+1. Inside the `layouts` subfolder, create a file called `main.hbs`. The `main.hbs` file is your default layout and it contains any HTML code that's required throughout your application.
+
+1. Add your HTML code into the `main.hbs` file and include the `{{{body}}}` token where HTML for UI that changes from one view to another. *Body* is a reserved word for handlebars. If you've a HandleBars file inside `view` folder, such as `signin.hbs` and you want to view it as shown below, HandleBars searches for `{{{body}}}` within `main.hbs` and replaces it with content of `signin.hbs`.
+
+```javascript
+    app.get('/', (req, res) => {
+      res.send(signin)
+    })
+```
+
+## Run a Node express application
+
+To run an express application, you use the `node` command from the terminal window or Visual Studio Code terminal. For example, to run a file named `index.js`, run `node index.js`.
+
+When you run your express application, you want the express server to listen to incoming http requests. For example, if you want your express server to listen on port `3000`, you need to add the following line to your JavaScript file:
+
+```javascript
+    app.listen(3000, () => {
+        //Do something when the server starts successfully.
+    });
+```
