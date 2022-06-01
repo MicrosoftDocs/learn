@@ -8,7 +8,7 @@ At the core of your new account, the Microsoft Purview Data Map keeps an up-to-d
 
 A collection is a grouping of data sources and assets that are defined by your organization. Collections allow you to structure your data assets in a customized hierarchy that reflects your organization. Let's look at what that means.
 
-When you first create your Microsoft Purview account, only the root collection is automatically created. This collection has the same name as your Microsoft Purview account and will always be the top-level collection.
+When you first create your Microsoft Purview account, only the root collection is automatically created. This collection has the same name as your Microsoft Purview account and will always be the top-level collection, but works like any other collection. You can add permissions for users, register sources, or create subcollections.
 
 All other collections will be created by you or your team, and should reflect your business landscape. These collections will be your map through your data estate in Microsoft Purview, and will be how you organize your data and access control.
 
