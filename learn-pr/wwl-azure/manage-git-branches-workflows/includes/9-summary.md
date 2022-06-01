@@ -4,7 +4,6 @@ You learned how to describe the benefits and usage of:
 
  -  Describe Git branching workflows.
  -  Implement feature branches.
- -  Implement GitFlow.
  -  Fork a repo.
 
 ## Learn more
