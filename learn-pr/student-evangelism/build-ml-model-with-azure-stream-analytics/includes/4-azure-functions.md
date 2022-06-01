@@ -260,7 +260,7 @@ Next, run the simulated camera array you created earlier. Then, you'll check the
 
 1. In the Azure portal, return to the `BlobTrigger` function and watch the output log for a minute or two. Confirm that the function is being triggered and that it's calling Custom Vision to determine whether each photo uploaded to the `photos` container contains a polar bear.
 
-   :::image type="content" source="../media/function-output-2.png" alt-text="Screenshot that shows logs in a terminal, with the log entry "Polar Bear detected" for one of the cameras.":::
+   :::image type="content" source="../media/function-output-2.png" alt-text="Screenshot that shows logs in a terminal, with the log entry Polar Bear detected for one of the cameras and the camera's latitude and longitude.":::
 
    _There be polar bears!_
 
