@@ -3,7 +3,7 @@ uid: learn.azure.logic-apps-and-custom-connectors.3-exercise-setup-a-test-api
 title: Exercise - Set up a test API
 metadata:
   title: Exercise - Set up a test API
-  description: In this exercise, you will create a Web API, hosted in Azure, to call from Logic Apps.
+  description: In this exercise, you will create a Web API, hosted in Azure, to call from an Azure Logic Apps workflow.
   ms.date: 04/11/2019
   author: ecfan
   ms.author: estfan
