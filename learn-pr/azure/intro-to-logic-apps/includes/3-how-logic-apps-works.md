@@ -1,10 +1,10 @@
-Now that we know the basics of Logic Apps, let's see how it works behind the scenes. This information should help you decide whether Logic Apps will work for you without any customization. In cases where you do need create custom components, you'll be able to determine how difficult it will be.
+Now that we know the basics of Azure Logic Apps, let's see how it works behind the scenes. This information should help you decide whether Azure Logic Apps will work for you without any customization. In cases where you do need create custom components, you'll be able to determine how difficult it will be.
 
 ## What is a connector?
 
-A *connector* is a component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps.
+A *connector* is a component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Azure Logic Apps provides hundreds of pre-built connectors that you can use to create your apps.
 
-A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your logic app, the connector calls the service's underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
+A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your logic app workflow, the connector calls the service's underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
 
 ![Diagram showing the Twitter connector calling methods in the Twitter API.](../media/twitter-connector.png)
 
@@ -20,7 +20,7 @@ You can use your new connector in your own apps and share it with other people i
 
 ## What are triggers and actions?
 
-Workflows are built from different types of tasks. For example, in our social-media monitor scenario we start the workflow when a new tweet is posted, perform work like detect the sentiment, and make a decision based on the sentiment score. Logic Apps uses the terms *trigger*, *action*, and *control action* for these concepts. These operations are the building blocks of Logic Apps. The following illustration shows how we use each type of step in the social-media monitor app.
+Workflows are built from different types of tasks. For example, in our social-media monitor scenario we start the workflow when a new tweet is posted, perform work like detect the sentiment, and make a decision based on the sentiment score. Logic Apps uses the terms *trigger*, *action*, and *control action* for these concepts. These operations are the building blocks of Azure Logic Apps. The following illustration shows how we use each type of step in the social-media monitor app.
 
 ![Diagram of the flowchart for the shoe company social-media monitor. Each step is labeled with whether it's a trigger, an action, or a control action.](../media/social-media-step-types.png)
 
@@ -44,9 +44,9 @@ Finally, let's look at the Twilio connector. Most connectors offer both triggers
 
 ![Diagram of the Twilio connector. It provides actions to send and retrieve text messages but doesn't include any triggers.](../media/twilio-connector-details.png)
 
-## How to build Logic Apps from triggers and actions
+## How to build workflows from triggers and actions
 
-You build a logic app from triggers and actions. An app must begin with a trigger. After the trigger, you include as many actions as you need to implement your workflow. The following illustration shows the trigger and actions used in the social-media monitor app.
+You build a workflow from triggers and actions. A workflow must begin with a trigger. After the trigger, you include as many actions as you need to implement your workflow. The following illustration shows the trigger and actions used in the social-media monitor app.
 
 :::image type="complex" source="../media/social-media-connectors.png" alt-text="Diagram showing the components used in the social-media monitor app. Each component shows the external service to which it connects.":::
 Diagram of the trigger and actions in the social-media monitor logic app. The illustration shows the use of the When a new tweet is posted Twitter trigger to launch the logic app. The trigger is followed by three actions: Detect sentiment from the Text Analytics service, Insert row from SQL Server, and Send email from Outlook.com.
@@ -58,7 +58,7 @@ Triggers and actions are essentially function calls to an underlying API operati
 
 ![Diagram of the input and output of the When a new tweet is posted trigger and the Detect sentiment action.](../media/inputs-and-outputs.png)
 
-Logic Apps automatically makes the return values available throughout the rest of the operations. This feature lets you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
+Azure Logic Apps automatically makes the return values available throughout the rest of the operations. This feature lets you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
 
 ![Diagram showing how the results of all preceding operations are available to all later steps of the logic app.](../media/data-flow.png)
 
@@ -68,7 +68,7 @@ Most workflows need to do different actions based on the data being processed. F
 
 ![Diagram showing how the social-media monitor app branches based on the sentiment of the tweet.](../media/social-media-monitor-control-logic.png)
 
-*Control actions* are special actions built-in to Logic Apps that provides these control constructs:
+*Control actions* are special actions built-in to Azure Logic Apps that provides these control constructs:
 
 - *Condition* statements controlled by a Boolean expression.
 - *Switch* statements.
@@ -77,12 +77,12 @@ Most workflows need to do different actions based on the data being processed. F
 
 The following illustration shows the use of a *condition* statement in the social-media monitoring application.
 
-![Diagram of the Logic Apps control action used to branch the social-media monitor app based on the sentiment of the tweet.](../media/social-media-monitor-control-action.png)
+![Diagram of the built-in control action used to branch the social-media monitor app based on the sentiment of the tweet.](../media/social-media-monitor-control-action.png)
 
-## What is the Logic Apps Designer?
+## What is the workflow designer?
 
-The Logic Apps Designer is a graphical tool for creating your workflows. It gives you a design canvas that you use to add a trigger and actions to your app. For example, the social-media monitor app uses the **When a new tweet is posted** trigger, a _condition_ to branch, and the **Detect sentiment**, **Insert row**, and **Send an email** actions. The following screenshot shows the social-media monitor logic app displayed in the designer.
+The workflow designer is a graphical tool for creating your workflows. It gives you a design canvas that you use to add a trigger and actions to your app. For example, the social-media monitor app uses the **When a new tweet is posted** trigger, a _condition_ to branch, and the **Detect sentiment**, **Insert row**, and **Send an email** actions. The following screenshot shows the social-media monitor logic app displayed in the designer.
 
-:::image type="complex" source="../media/social-media-complete-in-the-designer.png" alt-text="Screenshot showing the social-media monitor app in the Logic Apps Designer.":::
-Screenshot showing an example logic app in the Logic Apps Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.
+:::image type="complex" source="../media/social-media-complete-in-the-designer.png" alt-text="Screenshot showing the social-media monitor app in the workflow designer.":::
+Screenshot showing an example workflow in the designer. Each step is shown using rectangular area that represents the starting trigger and each action. Arrows connect the rectangles to show the execution flow through the app.
 :::image-end:::
