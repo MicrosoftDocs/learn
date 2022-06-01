@@ -57,8 +57,9 @@ Let's run some of the queries we learned earlier.
         }
     ]
     ```
-1. Replace the query with the following text and click **Execute Query**. This query returns the price, description, and product ID for all products, ordered by price, in ascending order.
- 
+
+1. Replace the query with the following text and select **Execute Query**. This query returns the price, description, and product ID for all products, ordered by price, in ascending order.
+
     ```sql
     SELECT p.price, p.description, p.productId 
     FROM Products p 
