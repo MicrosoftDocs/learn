@@ -1,40 +1,40 @@
-The online retailer needs their application to have some basic security. At this point, it needs to differentiate between users that have access, and those that don't. Other features, like role management, might be added at a later date.
+The online retailer needs their application to have some basic security. The app should differentiate between registered customers who have access, and other users who shouldn't have access. Other features, like role management, might be added at a later date.
 
 ## Add basic authorization to an Express framework
 
 Most applications have parts that anyone can access. But, some parts need to be protected. There are different ways to protect an application. In this exercise, implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
 
-1. Clone the repo at **https://github.com/MicrosoftDocs/node-essentials** by running the following command:
+1. In a terminal, clone the sample repo for this example by running the following command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
-   This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
+   This example project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. To inspect the repo you cloned, run the following command:
+1. To inspect the cloned repo, run the following command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-middleware
    ```
 
-   The outline of the directory should look like so:
+   The structure of the directory should look like this:
 
-   ```bash
+   ```output
    -| app.js
    -| client.js
    -| package.json
    ```
 
-1. The **package.json** file contains a dependency **express**. In the terminal, run the following command to install it:
+1. The **package.json** file contains a dependency named `express`. Run the following command to install the dependency:
 
    ```bash
    npm install
    ```
 
-   **npm** reads from the **dependencies** section in the **package.json**.
+   `npm` reads from the `dependencies` section in the package.json file and installs the required packages.
 
-1. Open **app.js** to inspect it. The file should look like this:
+1. In a code editor, open the **app.js** file and inspect the contents:
 
    ```javascript
    const express = require('express')
@@ -60,9 +60,11 @@ Most applications have parts that anyone can access. But, some parts need to be 
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-   The code contains a functioning Express application containing the routes **/**, **/users**, and **/products**.
+   The code contains a functioning Express application with the routes slash `/`, `/users`, and `/products`.
 
-1. Open the file **client.js**. It should look like this:
+   Close the file.
+
+1. In a code editor, open the **client.js** file and inspect the contents:
 
    ```javascript
    const http = require('http');
@@ -86,15 +88,19 @@ Most applications have parts that anyone can access. But, some parts need to be 
    });
    ```
 
-   The code connects to the address **http://localhost:3000/users**, and then listens to different events: **chunk**, **end**, and **close**. Use the client to verify that the server application works as expected.
+   The code connects to the address `http://localhost:3000/users`, and listens to different events: `data`, `end`, and `close`.
+   
+   1. Use the client to verify that the server application works as expected.
 
-1. In the terminal, run the server application by running the following command:
+   1. Close the file.
+
+1. In the terminal, run the server application by entering this command:
 
    ```bash
    node app.js
    ```
 
-1. In a separate terminal window, run the client by running the following command:
+1. In a **second** terminal window, run the client by entering this command:
 
    ```bash
    node client.js
@@ -109,9 +115,11 @@ Most applications have parts that anyone can access. But, some parts need to be 
    Closing connection
    ```
 
-   The server application responds with some user data. All the parts work. To protect this route, add some code on the server application.
+   The server application responds with some user data. All the parts work.
+   
+   To protect this route, we'll add some code on the server application.
 
-1. Open **app.js**. After the row **const app = expres()**, add the following code:
+1. Open the app.js file again. Locate the row with the `const app = express()` statement. After this row, add the following code:
 
    ```javascript
    function isAuthorized(req,res, next) {
@@ -125,7 +133,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
    }
    ```
 
-1. Locate this part of the code:
+1. Next, locate this section of code in the file:
 
    ```javascript
    app.get('/users', (req,res) => {
@@ -136,7 +144,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
     })
    ```
 
-1. Replace that code with this code:
+1. Replace this section with the following code:
 
    ```javascript
    app.get('/users', isAuthorized, (req,res) => {
@@ -147,15 +155,15 @@ Most applications have parts that anyone can access. But, some parts need to be 
     })
    ```
 
-   In the code, **isAuthorized** is added as the second argument.
+   In this code, the `isAuthorized` middleware is added as the second argument.
 
-1. In the terminal, run the following command to restart the **app.js** file:
+1. In the **first** terminal, run the following command to restart the app.js file:
 
    ```bash
    node app.js
    ```
 
-1. In the terminal window where you previously ran the client, run the following command:
+1. In the **second** terminal where you ran the client, run the following command:
 
    ```bash
    node client.js
@@ -170,15 +178,17 @@ Most applications have parts that anyone can access. But, some parts need to be 
    Closing connection
    ```
 
-   This time, the middleware **isAuthorized()** is invoked and looks for an **authorization** header that has a specific value. Because you didn't provide a value as part of your request, the code didn't respond with user data. Add an **authorization** header next.
+   This time, the `isAuthorized()` middleware is invoked and looks for an `authorization` header that has a specific value. Because you didn't provide a value as part of your request, the code didn't respond with user data.
+   
+   We need to add an `authorization` header next.
 
-1. Open **client.js** and locate the part of the code that looks like this:
+1. Open the client.js file again, and locate this section of code:
 
    ```javascript
    headers: {}
    ```
 
-1. Change it to this code:
+1. Replace this section with the following code:
 
    ```javascript
    headers: {
@@ -186,7 +196,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
    }
    ```
 
-1. In the terminal, run the following command to run the client again:
+1. In the **second** terminal, run the following command to run the client again:
 
    ```bash
    node client.js
@@ -201,9 +211,9 @@ Most applications have parts that anyone can access. But, some parts need to be 
    Closing connection
    ```
 
-   The user data is returned because you passed an **authorization** header with an accepted value.
+   The user data is returned because you passed an `authorization` header with an accepted value.
 
-Congratulations. You learned how to use the middleware construct in Express to add some basic authorization to your Express app.
+Congratulations! You learned how to use the middleware construct in Express to add some basic authorization to your Express app.
 
 > [!CAUTION]
-> Be aware that an authentication/authorization meant for real world usee needs to be a bit more robust than our example. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library **bcrypt** to make sure your app has a decent level of protection.
+> Be aware that an authentication/authorization meant for real world use needs to be a bit more robust than our example. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library **bcrypt** to make sure your app has a decent level of protection.
