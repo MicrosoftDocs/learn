@@ -8,7 +8,7 @@ Suppose you work at an athletic shoe company that is launching a new product. Yo
 Diagram showing three business processes used by a fictional shoe-manufacturing company. The first process shows a typical flow for online sales including receiving a customer order, charging their credit card, and shipping the product. The second process shows the company monitoring and analyzing social-media postings about their products. The third process shows management of video assets by moving them to lower-cost storage as they get older.
 :::image-end:::
 
-Here, you'll see how Logic Apps automates these types of business processes. You'll also learn a bit about how they work behind the scenes. The goal is to help you decide if Azure Logic Apps is a good choice for your business.
+Here, you'll see how Azure Logic Apps automates these types of business processes. You'll also learn a bit about how they work behind the scenes. The goal is to help you decide if Azure Logic Apps is a good choice for your business.
 
 ## Learning objectives
 
