@@ -181,9 +181,9 @@ Here's an example that illustrates an output named "hostname". The FQDN value is
 }
 ```
 
-## How do I deploy a Logic Apps workflow in a template?
+## How do I deploy an Azure Logic Apps workflow in a template?
 
-A Logic Apps workflow is a resource in Azure. Therefore, it can be deployed in a template by adding it to the list of resources to deploy in the `resources` section of Resource Manager template. What exactly do we add to the resources section so the workflow is defined? We add the JSON workflow definition of the workflow in question to the resources section. In fact, the following JSON snippet shows a Resource Manager template to deploy the basic workflow we described in the preceding unit. As you can see from the highlight, the resources section contains the complete workFlow definition.
+An Azure Logic Apps workflow is a resource in Azure. Therefore, it can be deployed in a template by adding it to the list of resources to deploy in the `resources` section of Resource Manager template. What exactly do we add to the resources section so the workflow is defined? We add the JSON workflow definition of the workflow in question to the resources section. In fact, the following JSON snippet shows a Resource Manager template to deploy the basic workflow we described in the preceding unit. As you can see from the highlight, the resources section contains the complete workFlow definition.
 
 [!code-json[](../code/basic-template/template.json?highlight=7-43)]
 
