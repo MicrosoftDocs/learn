@@ -1,108 +1,152 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Now that you've understood the components in Azure AD B2C that work together to support its features, you need to configure the components so that your Node web app can use them. 
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In this exercise, you complete the following tasks:
 
-    Heading: none
+* Register a web app in your Azure AD B2C tenant.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+* Create a combined **Sign up and sign in** user flow and configure an identity provider, user attributes and token claims.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+* Test the user flow in Azure portal.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Step 1: Register a web app in your Azure AD B2C tenant
 
-    Goal: Describe the part of the scenario covered in this exercise
+To enable your application to authenticate with Azure AD B2C, you need to register your app in the Azure AD B2C tenant. The app registration establishes a trust relationship between the app and Azure AD B2C.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+During app registration, you'll specify two *Redirect URIs*. A redirect URI is the endpoint to which the user is redirected by Azure AD B2C after they authenticate with Azure AD B2C. You'll use one of the redirect URIs, `https://jwt.ms`, to test your user flow with the registered app within Azure portal, and the other, `http://localhost:3000/redirect` to be used for your real Node web app.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+You'll also create your web app's client secret.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+### Step 1.1: Register the web app
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+Use the following steps to register your web app in Azure AD B2C tenant:
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Make sure you're using the directory that contains your Azure AD B2C tenant:
+    1. Select the **Directories + subscriptions** (:::image type="icon" source="./../media/portal-directory-subscription-filter.png" border="false":::) icon in the portal toolbar.
+    1. On the **Portal settings | Directories + subscriptions** page, find your Azure AD B2C directory in the **Directory name** list, and then select **Switch** button next to it.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. In the Azure portal, search for and select **Azure AD B2C**.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+1. Select **App registrations**, and then select **New registration**.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. Under **Name**, enter a name for the application, such as, `nodewebapp`.
 
-    Goal: List the steps they'll do to complete the exercise.
+1. Under **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. Under **Redirect URI**, select **Web** and then, in the URL box, enter `http://localhost:3000/redirect`.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. Under **Permissions**, select the **Grant admin consent to openid and offline_access permissions** checkbox.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Select **Register**.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::image type="content" alt-text="Screenshot of registering web app in Azure portal." source="./../media/register-web-app-in-azure-portal.png" :::
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. In the left menu, select **Overview**.
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+1. Record the **Application (client) ID** for later use, when you configure your Node web application.
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+    :::image type="content" alt-text="Screenshot of the web app Overview page for recording your web app I D." source="./../media/get-azure-ad-b2c-app-id.png" :::
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+1. To add the second redirect URI:
+    1. In the left menu, select **Authentication**.
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+    1. Under **Platform configurations**, select **Add URI**, and enter `https://jwt.ms`.
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+    1. Select **Save**.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<!-- Do not add a unit summary or references/links -->
+### Step 1.2: Create a web app client secret
+
+Configure a client secret for the registered web application. The web application uses the client secret to prove its identity when it requests tokens.
+
+1. In the left menu, under **Manage**, select **Certificates & secrets**.
+
+1. Select **New client secret**.
+
+1. In the **Description** box, enter a description for the client secret, such as, *clientsecret*.
+
+1. Under **Expires**, select a duration for which the secret is valid, and then select **Add**.
+
+1. Record the secret's **Value**. You'll use this value later to configure your Node web app.
+
+## Step 2: Create a Sign up and sign in user flow
+
+Use the following steps to create a **Sign up and sign in** user flow in your Azure AD B2C tenant:
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
+1. Make sure you're using the directory that contains your Azure AD B2C tenant:
+    1. Select the **Directories + subscriptions** (:::image type="icon" source="./../media/portal-directory-subscription-filter.png" border="false":::) icon in the portal toolbar.
+    1. On the **Portal settings | Directories + subscriptions** page, find your Azure AD B2C directory in the **Directory name** list, and then select **Switch** button next to it.
+
+1. In the Azure portal, search for and select **Azure AD B2C**.
+
+1. Under **Policies**, select **User flows**, and then select **New user flow**.
+
+    ![Screenshot of creating user flows in Azure portal.](./../media/sign-up-sign-in-user-flow.png)
+
+1. On the **Create a user flow** page, select the **Sign up and sign in** user flow.
+
+1. Under **Select a version**, select **Recommended**, and then select **Create**.
+
+1. Enter a **Name** for the user flow, such as, `susi`. A prefix of *B2C_1* is automatically prepended to the name, so the name becomes `B2C_1_susi`.  
+
+1. Under **Identity providers**, for **Local accounts**, select **Email signup**.
+
+1. Under **Multifactor authentication**, for **Type of method**, select **Email**, and for **MFA enforcement**, select **Always on**. This configuration will require users to verify their identity with a second authentication method, email in this case.
+
+1. Under **User attributes and token claims**, for both **Collect attribute** and **Return claim**, select **Display Name**, **Email Address**, **Surname** and **Street Address**. **Collect attribute** is the user information you'll collect from the user during sign-up and **Return claim** is the claims in a token that is returned from Azure AD B2C to your Node web app after the user completes sign up or sign in. For the full list of values, select **Show more**, choose the values, and then select **OK**.
+
+1. Select **Create** to add the user flow.
+
+1. To configure Self-service password reset:
+
+    1. Select the Sign up and sign in user flow you've created from the list, such as `B2C_1_susi`.
+    1. Under **Password configuration**, select **Self-service password reset** check box. This setting enables users to reset their password using the *Forgot password link* in a sign in page.
+    1. At the top of the page, select **Save**.
+
+## Step 3: Test the user flow in Azure portal
+
+You can test your Sign up and sign in user flow from within Azure portal before you integrate it into your Node web app. 
+ 
+### Step 3.1: Enable ID token implicit grant settings 
+
+To test your user flow in Azure portal using `https://jwt.ms/` redirect URI, you need to enable ID token implicit grant settings: 
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
+1. Make sure you're using the directory that contains your Azure AD B2C tenant:
+    1. Select the **Directories + subscriptions** (:::image type="icon" source="./../media/portal-directory-subscription-filter.png" border="false":::) icon in the portal toolbar.
+    1. On the **Portal settings | Directories + subscriptions** page, find your Azure AD B2C directory in the **Directory name** list, and then select **Switch** button next to it.
+
+1. In the Azure portal, search for and select **Azure AD B2C**.
+
+1. In the left menu, select **App registrations**.
+
+1. Find and select the web app you registered in [step 1.1](#step-11-register-the-web-app) such as `nodewebapp`.
+
+1. In the left menu, under **Manage**, select **Authentication**.
+
+1. Under **Implicit grant and hybrid flows**, select both the **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)** check boxes.
+
+1. Select **Save**.
+
+### Step 3.2: Test the user flow
+
+1. In the Azure AD B2C tenant overview page, in the left menu, select **User flows**.
+
+1. Select the Sign up and sign in user flow you created in [step 2](#step-2-create-a-sign-up-and-sign-in-user-flow) from the list, such as `B2C_1_susi` to open it.
+
+1. At the top of the page, select **Run user flow**.
+
+1. For Application, select the web application you registered in [step 1.1](#step-11-register-the-web-app) such as `nodewebapp`. For **Reply URL**, select `https://jwt.ms`.
+
+1. Select **Run user flow**, and you're redirected to Azure AD B2C sign in page.
+
+1. Select **Sign up now**, and then sign up by entering the required details. After you successfully sign up, you're redirected to `https://jwt.ms/` with an ID token. The decoded ID token is also shown.
+
+    :::image type="content" alt-text="Screenshot of I D token and decoded I D token to show application claims." source="./../media/token-and-token-claims.png" :::
+
+> [!NOTE]
+> The **Implicit grant and hybrid flows** settings are only required to test your user flow with `https://jwt.ms/` app. So you can remove them after you complete testing the user flow.
