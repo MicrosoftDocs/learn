@@ -54,7 +54,7 @@ Azure AD B2C has the following types of *user flows* generally available:
 
 An identity provider is the method you use to allow users to be authenticated into your application. Users can create an account that is local to Azure AD B2C by using their email address or phone number, or use their existing social identities such as Facebook or LinkedIn. Azure AD B2C provides a list of identity providers you can choose from or you can add your own OpenID Connect identity provider.
 
-:::image type="content" alt-text="Screenshot of identity provider for Azure A D B 2 C" source="./../media/identity-providers.png" :::
+:::image type="content" alt-text="Screenshot of identity provider for Azure A D B 2 C." source="./../media/identity-providers.png" :::
 
 ## Application registration
 

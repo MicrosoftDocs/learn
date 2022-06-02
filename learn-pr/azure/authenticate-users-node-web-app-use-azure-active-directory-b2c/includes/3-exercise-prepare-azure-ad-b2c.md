@@ -40,13 +40,13 @@ Use the following steps to register your web app in Azure AD B2C tenant:
 
 1. Select **Register**.
 
-    :::image type="content" alt-text="Screenshot of registering web app in Azure portal" source="./../media/register-web-app-in-azure-portal.png" :::
+    :::image type="content" alt-text="Screenshot of registering web app in Azure portal." source="./../media/register-web-app-in-azure-portal.png" :::
 
 1. In the left menu, select **Overview**.
 
 1. Record the **Application (client) ID** for later use, when you configure your Node web application.
 
-    :::image type="content" alt-text="Screenshot of the web app Overview page for recording your web app ID." source="./../media/get-azure-ad-b2c-app-id.png" :::
+    :::image type="content" alt-text="Screenshot of the web app Overview page for recording your web app I D." source="./../media/get-azure-ad-b2c-app-id.png" :::
 
 1. To add the second redirect URI:
     1. In the left menu, select **Authentication**.
@@ -84,7 +84,7 @@ Use the following steps to create a **Sign up and sign in** user flow in your Az
 
 1. Under **Policies**, select **User flows**, and then select **New user flow**.
 
-    ![Screenshot of creating user flows in Azure portal](./../media/sign-up-sign-in-user-flow.png)
+    ![Screenshot of creating user flows in Azure portal.](./../media/sign-up-sign-in-user-flow.png)
 
 1. On the **Create a user flow** page, select the **Sign up and sign in** user flow.
 
@@ -146,7 +146,7 @@ To test your user flow in Azure portal using `https://jwt.ms/` redirect URI, you
 
 1. Select **Sign up now**, and then sign up by entering the required details. After you successfully sign up, you're redirected to `https://jwt.ms/` with an ID token. The decoded ID token is also shown.
 
-    :::image type="content" alt-text="Screenshot of token and token claims" source="./../media/token-and-token-claims.png" :::
+    :::image type="content" alt-text="Screenshot of I D token and decoded I D token to show application claims." source="./../media/token-and-token-claims.png" :::
 
 > [!NOTE]
 > The **Implicit grant and hybrid flows** settings are only required to test your user flow with `https://jwt.ms/` app. So you can remove them after you complete testing the user flow.
