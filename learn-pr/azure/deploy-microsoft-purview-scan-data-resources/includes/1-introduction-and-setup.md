@@ -48,7 +48,7 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 1. Select an existing resource group, or create a new one.
 1. Create a unique storage account name.
 1. Select **Standard** performance.
-1. Select **Locally-redundant storage**.NET
+1. Select **Locally-redundant storage**.
 1. Select **Next: Advanced**.
 1. Select **Enable hierarchical namespace**.
 1. Select **Review + create**.

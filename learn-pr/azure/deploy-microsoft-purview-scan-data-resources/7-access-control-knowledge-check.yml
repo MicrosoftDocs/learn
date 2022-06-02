@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-microsoft-purview-scan-data-resources.access-control-knowledge-check
-title: access control knowledge check
+title: Access control knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
@@ -36,7 +36,7 @@ quiz:
     - content: "Policy author"
       isCorrect: false
       explanation: "Policy authors can create, view, update and delete policies."
-  - content: "Where are role assignments performed?"
+  - content: "At what level are role assignments performed?"
     choices:
     - content: "Collections"
       isCorrect: true

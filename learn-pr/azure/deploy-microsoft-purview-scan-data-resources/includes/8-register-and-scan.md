@@ -91,9 +91,9 @@ For example, the default Data Lake scan rule set extracts metadata from these ki
 
 CSV, JSON, PSV, SSV, TSV, GZIP, TXT, XML, PARQUET, AVRO, ORC, DOC, DOCM, DOCX, DOT, ODP, ODS, ODT, PDF, POT, PPS, PPSX, PPT, PPTM, PPTX, XLC, XLS, XLSB, XLSM, XLSX, XLT
 
-It also tags data with all available classifications. This can be useful for broad-spectrum scanning. But if you're storing a certain kind of information, or only a certain file type, you can streamline the scanning process by creating a custom scan rule set. This allows you to choose file and data types to extract metadata from during a scan, and classification types you're looking for. F
+It also tags data with all available classifications. This can be useful for broad-spectrum scanning. But if you're storing a certain kind of information, or only a certain file type, you can streamline the scanning process by creating a custom scan rule set. This allows you to choose file and data types to extract metadata from during a scan, and classification types you're looking for.
 
-or example, if your data is only for customers in the Americas, you can use a custom scan rule set to exclude European drivers license number from your scan, as your data won't contain that information.
+For example, if your data is only for customers in the Americas, you can use a custom scan rule set to exclude European drivers license number classification from your scan, as none of your data will match this classification.
 
 #### Schedule
 
@@ -101,7 +101,7 @@ The **schedule** of your scan will determine how often your scan will run. This 
 
 There are two types of scans: Once and reoccurring.
 
-- **Once** - This scan will only run one time and is useful for proof of concept scenarios, or for legacy datasets that will remain unchanged.
+- **Once** - This scan will only run one time and is useful for proof of concept scenarios, for data sets that update rarely, or for legacy datasets that will remain unchanged. Scans can be manually re-run on demand, allowing you to run a scan when you know the data source has been updated.
 - **Recurring** - This scan will be set to run on a schedule, either monthly or weekly, at a specific time. Schedule a recurring scan for data sets that are regularly updated or changing. This will allow you to maintain an accurate picture of your data landscape, and audit sensitive data.
 
 Here are some best practices to consider when scheduling your scan:
