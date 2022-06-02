@@ -104,7 +104,7 @@ By default, VPN gateways are deployed as two instances in an active/standby conf
 
 With the introduction of support for the BGP routing protocol, you can also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
-:::image type="content" source="../media/dual-redundancy-d76100c9.png" alt-text="Visualization of active active virtual network gateway.":::
+:::image type="content" source="../media/dual-redundancy-d76100c9.png" alt-text="Visualization of active virtual network gateway.":::
 
 ### ExpressRoute failover
 
