@@ -13,11 +13,11 @@ In this exercise, you connect Power BI Desktop to the SQL database.
 1. Open Power BI Desktop. If you're asked to sign in, sign in with your work or school account.
 
     > [!NOTE]
-    > There are two types of Microsoft accounts: personal Microsoft accounts and work or school accounts. You can sign in to Power BI with a work or school account, but not with a personal account. A Microsoft 365 subscription uses your work or school account. But, you can have a work or school account without having a Microsoft 365 subscription. Learn about the [differences between Microsoft work and personal accounts](http://www.brucebnews.com/2016/06/finding-your-way-through-microsofts-maze-of-work-and-personal-accounts/?azure-portal=true).
+    > There are two types of Microsoft accounts: personal Microsoft accounts and work or school accounts. You can sign in to Power BI with a work or school account, but not with a personal account. A Microsoft 365 subscription uses your work or school account. But, you can have a work or school account without having a Microsoft 365 subscription. Learn about the [differences between Microsoft work and personal accounts](https://www.bruceb.com/2020/10/understanding-microsoft-business-and-personal-accounts/?azure-portal=true).
 
 1. On the ribbon, select **Get Data**. In the left menu, select **Azure**, and then select **Azure SQL database**. Select **Connect**.
 
-    :::image type="content" source="../media/connect-database-1.png" alt-text="Screenshot that shows the Power BI Desktop items to select to add a data source.":::
+    :::image type="content" source="../media/connect-database-1.png" alt-text="Screenshot that shows the Power B I Desktop items to select to add a data source.":::
 
     _Add a data source_
 

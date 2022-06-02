@@ -28,7 +28,7 @@ quiz:
       explanation: "Correct! This command creates a new storage account."
     - content: "`az storage create`"
       isCorrect: false
-      explanation: "Incorrect. This command isn't a real Azure CLI command, though."
+      explanation: "Incorrect. This command isn't a real Azure CLI command."
   - content: "What is the difference between precision and recall when measuring the accuracy of a machine learning model?"
     choices:
     - content: "Precision roughly measures false positives. Recall roughly measures false negatives."
