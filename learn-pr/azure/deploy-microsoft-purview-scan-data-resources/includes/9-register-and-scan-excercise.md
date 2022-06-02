@@ -8,7 +8,7 @@ To scan a source, Microsoft Purview requires a set of **credentials**. For Azure
 
 In this module we'll walk through how to grant the Microsoft Purview managed identity the necessary access to successfully configure and run a scan.
 
-1. Navigate to your Azure Data Lake Storage Gen2 account and select **Access Control (IAM)** from the left navigation menu.
+1. Navigate to your Azure Data Lake Storage Gen2 account in the [Azure Portal](https://portal.azure.com/)) and select **Access Control (IAM)** from the left navigation menu.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.06-storage-access.png" alt-text="Screenshot of a storage account in the Azure portal, with Access Control (IAM) highlighted in the left menu.":::
 
@@ -20,7 +20,7 @@ In this module we'll walk through how to grant the Microsoft Purview managed ide
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.08-access-role.png" alt-text="Screenshot of the Add role assignment page, with the search box highlighted and filled with Storage blob data reader, and the next button selected.":::
 
-1. Under **Assign access to**, select **Managed identity**, select **+ Select members**, select **Purview account** from the **Managed Identity** drop-down menu, select the managed identity for your Microsoft Purview account, select **Select**. Finally, select **Review + assign**.
+1. Under **Assign access to**, select **Managed identity**, select **+ Select members**, select **Microsoft Purview account** from the **Managed Identity** drop-down menu, select the managed identity for your Microsoft Purview account, select **Select**. Finally, select **Review + assign**.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.09-access-members.png" alt-text="Screenshot of Add role assignment page with the Managed identity radio button selected, and the Select members button highlighted. On the Select managed identities page, the Purview account has been selected, and the Select button is highlighted.":::
 
@@ -34,7 +34,7 @@ In this module we'll walk through how to grant the Microsoft Purview managed ide
 
 ## Register the source
 
-1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and select **Register**.
+1. Open the [Microsoft Purview Governance Portal](https://web.purview.azure.com/) for your account, navigate to **Data Map** > **Sources**, and select **Register**.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.20-sources-register.png" alt-text="Screenshot of the Microsoft Purview governance portal, with the Data map selected in the left menu, then sources, and then register.":::
 
@@ -44,17 +44,17 @@ In this module we'll walk through how to grant the Microsoft Purview managed ide
 
 1. Select the **Azure subscription**, **Storage account name**, **Collection**, and select **Register**.
 
-    At this point, we've registered a data source. Assets aren't written to the catalog until after a scan has finished running.
-
     :::image type="content" source="../media/6-register-and-scan-exercise/02.22-sources-properties.png" alt-text="Screenshot of the register Azure Data Lake Storage Gen2 menu, with the required fields highlighted: Subscription, storage account name, and collection.":::
 
 ## Scan source with the Microsoft Purview managed identity
+
+At this point, we've registered a data source. Assets aren't written to the catalog until after a scan has finished running.
 
 1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, select the **New Scan** button.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.23-scan-new.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. Sources is open to the map view, and the scan button is highlighted on the tile of the data source we registered in the above steps.":::
 
-1. Select **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, select **Continue**.
+1. Select **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. When successful, select **Continue**.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.24-scan-test.png" alt-text="Screenshot of the scan menu, with Connect via integration runtime set to the Azure AutoResolveIntegrationRuntime, credential set to Microsoft Purview MSI, and the Test Connection button selected at the bottom.":::
 
@@ -76,7 +76,7 @@ In this module we'll walk through how to grant the Microsoft Purview managed ide
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.28-scan-run.png" alt-text="Screenshot of the Review your scan page with the Save and Run button highlighted at the bottom of the page.":::
 
-1. To monitor the progress of the scan run, select **View Details**.
+1. To monitor the progress of the scan run, select **View Details** under your data source in the data map.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.29-sources-details.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. Sources is open to the map view, and the View Details button is highlighted on the tile of the data source we registered and scanned in the previous steps.":::
 
