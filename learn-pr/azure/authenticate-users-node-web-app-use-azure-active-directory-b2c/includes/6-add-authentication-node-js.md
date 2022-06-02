@@ -3,7 +3,7 @@ For a web app to authenticate users, you need to add that capability.
 
 In the eCommerce organization scenario, your organization chooses to use Azure AD B2C to add authentication capability to the web app. So, you need to configure your web app to communicate with Azure AD B2C services whenever a user signs in to your web app. This procedure requires you understand authentication protocols such as OAuth 2.0 and OpenID Connect.
 
-Here, we'll learn about Microsoft Authentication Library(MSAL), which is a recommended open-source library used to configure your app to authenticate users by using Azure AD B2C.
+Here, we'll learn about Microsoft Authentication Library (MSAL), which is a recommended open-source library used to configure your app to authenticate users by using Azure AD B2C.
 
 ## What is Microsoft Authentication Library?
 
@@ -83,7 +83,7 @@ The `auth` element of the `confidentialClientConfig` configuration object has th
 
 In MSAL Node, logging is part of the configuration options and is created with the initialization of the MSAL Node instance. You can see this configuration under the `system` element of the `confidentialClientConfig` object as shown in the code snippet above.
 
-## Authorization Code Flow in MSAL Node
+## Authorization code flow in MSAL Node
 
 MSAL Node supports authorization code flow using two methods accessible via the MSAL Node object:
 
