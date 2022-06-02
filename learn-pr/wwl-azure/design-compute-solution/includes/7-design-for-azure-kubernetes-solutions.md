@@ -4,7 +4,7 @@
 
 - Container orchestration is a system that automatically deploys and manages containerized apps. For example, the orchestrator can dynamically increase or decrease the deployed instances of the managed app. Or it can ensure all deployed container instances get updated if a new version of a service is released.
 
-:::image type="content" source="../media/container-scaling.png" alt-text="Daigram of container instances dynamically or automatically scaling.":::
+:::image type="content" source="../media/container-scaling.png" alt-text="Diagram of container instances dynamically or automatically scaling.":::
 
  
 

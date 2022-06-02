@@ -29,7 +29,7 @@ Your App Service plan can be scaled up and down at any time. For example, you ca
 
 [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. Whenever possible when continuously deploying your code, use [deployment slots](/azure/app-service/deploy-staging-slots) for a new production build. 
 
-:::image type="content" source="../media/container-slots.png" alt-text="Diagream with container slots for development, staging, and production.":::
+:::image type="content" source="../media/container-slots.png" alt-text="Diagram with container slots for development, staging, and production.":::
 
 
 When using a Standard App Service Plan tier or better, you can deploy your app to a staging environment, validate your changes, and do smoke tests. When you’re ready, you can swap your staging and production slots. The swap operation warms up the necessary worker instances to match your production scale, thus eliminating downtime.
