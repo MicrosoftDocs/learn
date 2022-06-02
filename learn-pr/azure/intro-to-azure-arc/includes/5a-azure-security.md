@@ -1,21 +1,17 @@
-Contoso wants to protect the servers and Kubernetes clusters it's connected to Azure Arc. Using Microsoft Sentinelm, Contoso can collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Contoso can also use Microsoft Defender for Servers to monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
+Contoso wants to protect the servers and Kubernetes clusters it's connected to Azure Arc. Using Microsoft Sentinel, Contoso can collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Contoso can also use Microsoft Defender for Servers to monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
 
 ## Azure Arc security with Microsoft Sentinel
 
-Microsoft Sentinel is a scalable, cloud-native, security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution. Microsoft Sentinel delivers threat intelligence across the enterprise, providing a single solution for attack detection, proactive hunting, and threat response.
-
-Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is both a SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It's your birds-eye view across the enterprise, alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
 - **Collect data at cloud scale** across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
 - **Detect previously undetected threats** and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
 - **Investigate threats with artificial intelligence** and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
 - **Respond to incidents rapidly** with built-in orchestration and automation of common tasks.
 
-<!--Microsoft Sentinel provides a single solution for alert detection, threat visibility, proactive hunting, and threat response across the enterprise. Microsoft Sentinel collects data from a wide array of sources, detects and investigates threats, and rapidly responds to incidents using automation of common tasks.-->
-
 ### Onboard Azure Arc-enabled servers to Microsoft Sentinel
 
-In order to onboard a Azure Arc-enabled server to Microsoft Sentinel, you'll need the following:
+In order to onboard an Azure Arc-enabled server to Microsoft Sentinel, you'll need the following:
 
 - A Log Analytics workspace
 - Microsoft Sentinel enabled in your subscription
@@ -56,6 +52,6 @@ Core benefits of Microsoft Defender for Servers include:
 
 Defender for Containers helps with the core aspects of container security:
 
-- **Environment hardening** - Defender for Containers protects your Kubernetes clusters whether they're running on Azure Kubernetes Service, Kubernetes on-premises / IaaS, or Amazon EKS. By continuously assessing clusters, Defender for Containers provides visibility into misconfigurations and guidelines to help mitigate identified threats.
+- **Environment hardening** - Protects your Kubernetes clusters whether they're running on Azure Kubernetes Service, Kubernetes on-premises / IaaS, or Amazon EKS. By continuously assessing clusters, Defender for Containers provides visibility into misconfigurations and guidelines to help mitigate identified threats.
 - **Vulnerability assessment** - Vulnerability assessment and management tools for images stored in ACR registries and running in Azure Kubernetes Service.
 - **Run-time threat protection for nodes and clusters** - Threat protection for clusters and Linux nodes generates security alerts for suspicious activities.
