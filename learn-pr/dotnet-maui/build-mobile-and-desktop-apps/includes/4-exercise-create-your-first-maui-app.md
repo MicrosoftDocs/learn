@@ -89,11 +89,11 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
 1. When the device has been created return to Visual Studio.
 
-1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile, and select the **pixel_31-api_30** device. This is the device you just created.
+1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile, and select the **pixel_3a-api_30** device. This is the device you just created.
 
     :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user has specified the pixel 3 with the a p i 30 profile for the Android emulator to start debugging with.":::
 
-1. Start debugging use the **pixel_31-api_30** profile. This action will build, deploy, and run the app on the Android device.
+1. Start debugging use the **pixel_3a-api_30** profile. This action will build, deploy, and run the app on the Android device.
 
     :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile has been selected and ready to start debugging with as soon as the user presses the play button.":::
 
