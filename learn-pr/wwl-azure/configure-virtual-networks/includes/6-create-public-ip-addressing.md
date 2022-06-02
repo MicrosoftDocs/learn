@@ -3,7 +3,7 @@
 
 **IP Version**. Select IPv4 or IPv6 or Both. Selecting Both will result in two Public IP addresses being created- one IPv4 address and one IPv6 address.
 
-**SKU**. A standalone virtual machine, virtual machines within an availability set, or virtual machine scale sets can use Basic or Standard SKUs. Mixing SKUs between virtual machines within availability sets or scale sets or standalone VMs is not allowed.
+**SKU**. A Public IP's SKU must match the SKU of the Load Balancer with which it is used.
 
 **Name**. The name must be unique within the resource group you select.
 
