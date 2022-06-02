@@ -32,7 +32,7 @@ After completing this lab, you'll be able to:
 During this lab, you'll complete the following exercises:
 
 > [!NOTE]
-> If you completed **[Lab 02: Version Controlling with Git in Azure Repos](/learn/modules/work-azure-repos-github/7-version-controlling-with-git-in-azure-repos)**, you've already finished the steps in **Exercise 0: Configure the lab prerequisites** and **Exercise 1: Clone an existing repository** and can skip ahead to **Exercise 2: Manage branches from Azure DevOps**.
+> If you completed **[Lab 02: Version Controlling with Git in Azure Repos](/learn/modules/work-azure-repos-github/7-version-control-git-azure-repos)**, you've already finished the steps in **Exercise 0: Configure the lab prerequisites** and **Exercise 1: Clone an existing repository** and can skip ahead to **Exercise 2: Manage branches from Azure DevOps**.
 
  -  Exercise 0: Configure the lab prerequisites.
  -  Exercise 1: Clone an existing repository.
