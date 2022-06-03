@@ -20,7 +20,7 @@ You can use your new connector in your own apps and share it with other people i
 
 ## What are triggers and actions?
 
-Workflows are built from different types of tasks. For example, in our social media monitoring scenario, the workflow starts when a new tweet is posted, analyzes the sentiment, and makes a decision based on the sentiment score. Azure Logic Apps uses the terms *trigger*, *action*, and *control action* for these concepts. These operations are the building blocks of Azure Logic Apps. The following diagram shows how to use each type of step in the social media monitoring app.
+Workflows are built from different types of tasks. For example, in our social media monitoring scenario, the workflow starts when a new tweet is posted. The workflow then analyzes the sentiment and makes a decision, based on the sentiment score. Azure Logic Apps uses the terms *trigger*, *action*, and *control action* for these concepts. These operations are the building blocks of Azure Logic Apps. The following diagram shows how to use each type of step in the social media monitoring app.
 
 ![Diagram shows flowchart for shoe company social media monitoring process. Each step is labeled as a trigger, action, or control action.](../media/social-media-step-types.png)
 
@@ -58,7 +58,9 @@ Triggers and actions are essentially function calls to an underlying API operati
 
 ![Diagram shows the input and output for the "When a new tweet is posted" trigger and the "Detect sentiment" action.](../media/inputs-and-outputs.png)
 
-Azure Logic Apps automatically makes the return values available throughout the rest of the operations. This feature lets you pass the results from one operation as input to the next operation. The following diagram shows the data flow for the first two operations in the social media monitoring app. Note that the results from an operation are available to all subsequent steps:
+Azure Logic Apps automatically makes the return values available throughout the rest of the operations. This feature lets you pass the results from one operation as input to the next operation. The following diagram shows the data flow for the first two operations in the social media monitoring app.
+
+The results or outputs from an operation are available to all subsequent steps:
 
 ![Diagram shows how the results of all preceding operations are available to all later steps of the logic app.](../media/data-flow.png)
 
