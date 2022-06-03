@@ -12,7 +12,7 @@ Using Azure Arc-Enabled SQL Managed Instance, you can enroll all of your databas
 
 ## Management capability comparison between various SQL services
 
-:::image type="content" source="../media/40-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false" lightbox="../media/40-management-capabilities-by-deployment-model.png":::
+:::image type="content" source="../media/40-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false":::
 
 ## Connected and disconnected modes
 
@@ -29,7 +29,7 @@ Today Azure Arc-enabled SQL Managed instance comes in two different types of SKU
 - Business Critical = Enterprise Edition
 - General Purpose = Standard Edition 
 
-:::image type="content" source="../media/40-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false" lightbox="../media/40-data-service-tier-comparison.png":::
+:::image type="content" source="../media/40-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false":::
 
 ## How does Azure Arc-enabled data service operate
 
