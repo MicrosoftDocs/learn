@@ -41,7 +41,8 @@ units:
 - learn-pr.azure.create-azure-database-for-mysql.introduction
 - learn-pr.azure.create-azure-database-for-mysql.what-azure-database-mysql
 - learn-pr.azure.create-azure-database-for-mysql.how-deploy-connect-azure-database-mysql
-- learn-pr.azure.create-azure-database-for-mysql.deploy-connect-azure-database-mysql
+- learn-pr.azure.create-azure-database-for-mysql.deploy-azure-database-mysql
+- learn-pr.azure.create-azure-database-for-mysql.connect-azure-database-mysql
 - learn-pr.azure.create-azure-database-for-mysql.knowledge-check
 - learn-pr.azure.create-azure-database-for-mysql.summary
 
