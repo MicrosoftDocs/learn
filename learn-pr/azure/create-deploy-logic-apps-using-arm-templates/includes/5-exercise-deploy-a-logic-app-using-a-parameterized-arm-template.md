@@ -2,13 +2,13 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
 ## Update our template to use template parameters
 
-1. Make a copy of the basic template we used in the preceding exercise with the following `cp` command.
+1. Copy the basic template that we used in the preceding exercise with the following `cp` command:
 
    ```azurecli
    cp basic-template.json template-with-params.json
    ```
 
-1. To edit the template, open it in the built-in editor with the following `code` command.
+1. Open the template in the built-in editor with the following `code` command:
 
    ```azurecli
    code template-with-params.json
@@ -16,15 +16,15 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    The first thing to do is add parameters so that we can easily customize the app's name and location where the app runs.
 
-1. Replace the `parameters` section of the template with the following code to add two new parameters, `logicAppName` and `location` as shown in the following snippet. 
+1. Replace the `parameters` section in the template with the following code snippet, which adds two new parameters, `logicAppName` and `location`:
 
    [!code-json[](../code/basic-template-with-params/template.json?range=4-18)]
 
-   Both parameters are strings. We don't supply a default value for the `logicAppName` parameter, which means supply one at deployment time. In contrast, the `location` is optional since we supply a default valuer.
+   Both parameters are strings. We don't provide a default value for the `logicAppName` parameter, which means supply one at deployment time. In contrast, the `location` is optional as we supply a default value.
 
-   The default value for the `location` parameter is the location of the resource group into which the app is being deployed. We get that value by referencing the *location* property from the resource group returned by the `resourceGroup()` template function. Expressions start and end with brackets: `[` and `]`, respectively. The value of the expression is evaluated when the template is deployed. An expression can return a string, integer, boolean, array, or object. The maximum number of parameters you can define in a template is 256.
+   The default value for the `location` parameter is the location for the resource group into which the app is deployed. We get that value by referencing the *location* property from the resource group returned by the `resourceGroup()` template function. Expressions start and end with left and right brackets (`[ ]`) respectively. The expression's value is evaluated when the template finishes deployment. An expression can return a string, integer, boolean, array, or object. In a template, you can define 256 parameters as the maximum.
 
-   Now that we've defined our two new parameters, let's use them in the template by replacing hard-coded values with references to the new parameters.
+   Now that we defined two new parameters, we'll use them in the template by replacing hardcoded values with references to the new parameters.
 
 1. Replace the `name` and `location` fields in the resources section of the template to use our new parameters as shown in the following snippet.
 
