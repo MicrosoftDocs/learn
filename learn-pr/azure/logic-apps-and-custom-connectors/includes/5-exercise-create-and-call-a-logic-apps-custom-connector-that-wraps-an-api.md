@@ -165,4 +165,4 @@ The workflow is now complete and will call the Web API using the custom connecto
 
 1. Try entering other heights and widths.
 
-Congratulations! You've created a logic app workflow that can call your in-house PrintFramerAPi using a custom connector!
+Congratulations! You've created a logic app workflow that can call your in-house Print Framer API using a custom connector!
