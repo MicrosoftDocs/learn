@@ -12,7 +12,7 @@ Think about the financial models you run for your analysts. To run a model, you 
 
 A Resource Manager _template_ precisely defines all the Resource Manager resources in a deployment. You can deploy a Resource Manager template into a resource group as a single operation.
 
-A Resource Manager template is a JSON file, making it a form of _declarative automation_. Declarative automation means that you define _what_ resources you need but not _how_ to create them. Put another way, you define what you need, and it is the Resource Manager's responsibility to ensure that resources are deployed correctly.
+A Resource Manager template is a JSON file, making the template a form of _declarative automation_. Declarative automation means that you define _what_ resources you need but not _how_ to create them. Put another way, you define what you need, but Resource Manager has to make sure that resources are deployed correctly.
 
 You can think of declarative automation similar to how web browsers display HTML files. The HTML file describes _what_ elements appear on the page, but doesn't describe _how_ to display them. The "how" is the web browser's responsibility.
 
@@ -62,7 +62,7 @@ You might have used JavaScript Object Notation (JSON) before to send data betwee
 
 JSON allows us to express data stored as an object, such as a virtual machine, in text. A JSON document is essentially a collection of key-value pairs. Each key is a string. The key's value can be a string, a number, a Boolean expression, a list of values, or an object, which is a collection of other key-value pairs.
 
-A Resource Manager template can contain the following sections. These sections are expressed using JSON, but are not related to the JSON language itself.
+A Resource Manager template can contain the following sections:
 
 ```json
 {
@@ -76,7 +76,7 @@ A Resource Manager template can contain the following sections. These sections a
 }
 ```
 
-Let's look at each section in more detail.
+Although these sections are expressed using JSON, they aren't related to the actual JSON language. Let's look at each section in more detail.
 
 ### Parameters
 
@@ -171,9 +171,9 @@ Because resource types can change over time, `apiVersion` refers to the version 
 
 ### Outputs
 
-This section is where you define any information you'd like to receive when the template runs. For example, you might want to receive your VM's IP address or FQDN &ndash; information you do not know until the deployment runs.
+This section is where you define any information that you want to receive when the template runs. For example, you might want to receive your VM's IP address or FQDN, which is information that you don't know until the deployment runs.
 
-Here's an example that illustrates an output named "hostname". The FQDN value is read from the VM's public IP address settings.
+The following example shows an output named `hostname`. The FQDN value is read from the VM's public IP address settings.
 
 ```json
 "outputs": {
@@ -205,7 +205,7 @@ Here are a few ways you can get a starter template:
 
 * Use the Azure portal to create a template based on the resources in an existing resource group.
 * Start with a template you or your team built that serves a similar purpose.
-* Start with an Azure QuickStart template. You'll see how in the next part.
+* Start with an Azure Quickstart Template. You'll see how in the next part.
 
 Whatever your approach, writing a template involves working with a text editor. You can bring your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for the task of creating templates. This extension makes it easier to navigate your template code, and provides autocompletion for many common tasks.
 
