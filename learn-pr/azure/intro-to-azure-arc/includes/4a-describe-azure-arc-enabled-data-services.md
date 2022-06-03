@@ -1,8 +1,8 @@
 Contoso, a global entity, hosts multiple SQL Server instances with various versions today in their on-premises environment. The IT staff also wants to explore multi-cloud strategy in order to leverage cloud service providers around the world. Azure Arc enabled data services provides a single pane of glass and unified management tools for managing, deploying, and being data sovereign complaint in certain markets.
 
-## What is Azure Arc enabled data services?
+## What is Azure Arc-enabled data services?
 
-Using Azure Arc Enabled SQL Managed Instance, you can enroll all of your database instances located anywhere to Azure and then manage these databases in a consistent way. Azure Arc enabled data services:
+Using Azure Arc-Enabled SQL Managed Instance, you can enroll all of your database instances located anywhere to Azure and then manage these databases in a consistent way. Azure Arc-enabled data services:
 
 - Enables you to be on an evergreen SQL instance
 - Provides flexible scaling options - meaning you can easily add or remove CPU and Memory from instances in a heartbeat
@@ -12,7 +12,7 @@ Using Azure Arc Enabled SQL Managed Instance, you can enroll all of your databas
 
 ## Management capability comparison between various SQL services
 
-:::image type="content" source="../media/40-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false":::
+:::image type="content" source="../media/40-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false" lightbox="../media/40-management-capabilities-by-deployment-model.png":::
 
 ## Connected and disconnected modes
 
@@ -24,18 +24,18 @@ In the direct connected mode, you get the full benefits of Azure monitor, Azure 
 
 ## SKU comparison
 
-Today Azure Arc enabled SQL Managed instance comes in two different types of SKU offerings.
+Today Azure Arc-enabled SQL Managed instance comes in two different types of SKU offerings.
 
 - Business Critical = Enterprise Edition
 - General Purpose = Standard Edition 
 
-:::image type="content" source="../media/40-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false":::
+:::image type="content" source="../media/40-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false" lightbox="../media/40-data-service-tier-comparison.png":::
 
-## How does Azure Arc enabled data service operate
+## How does Azure Arc-enabled data service operate
 
-The Azure Arc enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have. See [Deployment requirements](/azure/azure-arc/data/plan-azure-arc-data-services#deployment-requirements).
+The Azure Arc-enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have. See [Deployment requirements](/azure/azure-arc/data/plan-azure-arc-data-services#deployment-requirements).
 
-Azure Arc enabled data service is deployed and managed via an agent based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must have:
+Azure Arc-enabled data service is deployed and managed via an agent based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must have:
 
 - Access to a Kubernetes cluster
 - The supported [Azure CLI](/cli/azure/install-azure-cli) version (>= 2.16.0 and <= 2.29.0)
