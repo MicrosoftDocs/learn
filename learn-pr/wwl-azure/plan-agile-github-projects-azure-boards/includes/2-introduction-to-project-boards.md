@@ -17,47 +17,12 @@ To create a project board for your organization, you must be an organization mem
 
 It's possible to use templates to set up a new project board that will include columns and cards with tips. The templates can be automated and already configured.
 
-:::row:::
-  :::column:::
-    **Templates**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Basic kanban
-  :::column-end:::
-  :::column:::
-    Track your tasks with: To do, In progress, and Done columns.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Automated kanban
-  :::column-end:::
-  :::column:::
-    Cards automatically move between: To do, In progress, and Done columns.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Automated kanban with review
-  :::column-end:::
-  :::column:::
-    Cards automatically moves between: To do, In progress, and Done columns, with extra triggers for pull request review status.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Bug triage
-  :::column-end:::
-  :::column:::
-    Triage and prioritize bugs with: To do, High priority, Low priority, and Closed columns.
-  :::column-end:::
-:::row-end:::
-
+| **Templates**                | **Description**                                                                                                              |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Basic kanban                 | Track your tasks with: To do, In progress, and Done columns.                                                                 |
+| Automated kanban             | Cards automatically move between: To do, In progress, and Done columns.                                                      |
+| Automated kanban with review | Cards automatically moves between: To do, In progress, and Done columns, with extra triggers for pull request review status. |
+| Bug triage                   | Triage and prioritize bugs with: To do, High priority, Low priority, and Closed columns.                                     |
 
 For more information about Project boards, see:
 
