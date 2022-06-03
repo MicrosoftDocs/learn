@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-by-using-secure-scores
+title: Evaluate security postures by using Secure Scores
+metadata:
+  title: Evaluate security postures by using Secure Scores
+  description: "Evaluate security postures by using Secure Scores"
+  ms.date: 06/03/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-postures-by-using-secure-scores.md)]
