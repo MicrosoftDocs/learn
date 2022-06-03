@@ -14,7 +14,7 @@ This unit focuses on replacing the code-based resiliency. An infrastructure-base
 Before applying Linkerd, revert the app to a state before code-based resiliency was added. To revert, redeploy the unmodified `webshoppingagg` image using the following command:
 
 ```bash
-./deploy/k8s/deploy-application.sh --registry eshopdev --charts webshoppingagg
+./deploy/k8s/deploy-application.sh --registry eshoplearn --charts webshoppingagg
 ```
 
 [!INCLUDE[Wait for healthy services](../../includes/microservices/wait-for-healthy-services.md)]
@@ -264,7 +264,7 @@ The preceding change instructs Nginx to add a Linkerd destination override reque
 Run the following command to redeploy the updated charts:
 
 ```bash
-./deploy/k8s/deploy-application.sh --registry eshopdev --charts apigateway,coupon,webshoppingagg
+./deploy/k8s/deploy-application.sh --registry eshoplearn --charts apigateway,coupon,webshoppingagg
 ```
 
 The updated pods each have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
