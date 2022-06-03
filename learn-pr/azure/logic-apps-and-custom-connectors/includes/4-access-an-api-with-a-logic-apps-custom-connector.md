@@ -4,15 +4,15 @@ In this unit, you'll learn how to create and use custom connectors in an Azure L
 
 ## Why custom connectors?
 
-Sometimes prebuilt connectors aren't enough to support your workflow scenario. If you have an in-house or custom API that you want to call from your workflow, the out-of-the-box connectors Azure Logic Apps can't help with this scenario. Instead, you have to create a custom connector that describes your API. Define triggers in your connector when you want your workflow to respond to an API event. Define actions in your connector when you want your workflow to make calls to your API.
+Sometimes you need more than prebuilt connectors for your workflow scenario. Suppose you have an in-house or custom API that you want to call from your workflow. The out-of-the-box connectors in Azure Logic Apps don't support this scenario. Instead, you have to create a custom connector that describes your API. Define triggers in your connector when you want your workflow to respond to an API event. Define actions in your connector when you want your workflow to make calls to your API.
 
 ## Describe a Web API for a custom connector
 
 You can create a custom connector in the Azure portal and reference the target API. Your API must describe itself to the custom connector. That way, the connector can present the right methods and parameters to Azure Logic Apps. In your API, you can implement this description by using an **OpenAPI** definition or a **Postman** collection. Let's examine these two ways to describe an API.
 
-### Postman
+### Postman app
 
-Postman is an app that requires you to provide the request URL and any necessary authentication. You also specify the API Key and the content type along with the definition for the request body in JSON format. When you send the request from Postman, the API returns a response. Postman uses the response to generate a collection. You can export and use the collection to describe the API to a custom connector.
+The Postman app requires you to provide the request URL and any necessary authentication. You also specify the API Key and the content type along with the definition for the request body in JSON format. When you send the request from the Postman app, the API returns a response. The Postman app uses the response to generate a collection. You can export and use the collection to describe the API to a custom connector.
 
 ### OpenAPI definition
 
@@ -55,7 +55,7 @@ An OpenAPI definition file is a JSON file that lists the API's methods, paramete
 
 ## Create a custom connector in the Azure portal
 
-After you implement your description with Postman or OpenAPI, you can build your custom connector in the Azure portal with these high-level steps:
+After you implement your description as a Postman collection or OpenAPI definition file, you can build your custom connector in the Azure portal with these high-level steps:
 
 1. Create a new Azure resource using the **Logic Apps Custom Connector** resource type.
 
