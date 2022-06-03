@@ -1,6 +1,6 @@
 ### **Summary and Resources** 
 
-In this module, you\'ve learned how to build an overall identity
+In this module, you've learned how to build an overall identity
 security strategy with zero trust in mind. You have learned different
 strategies for designing, defining, and recommending an organizational
 security strategy and architecture. You should now be able to:
@@ -23,33 +23,23 @@ security strategy and architecture. You should now be able to:
 
 -   Design a security strategy for privileged activities
 
-**Learn more with Azure documentation**
+### Learn more with Azure documentation
 
--   [[Securing identity with Zero Trust \| Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/security/zero-trust/deploy/identity)
+-   [Securing identity with Zero Trust](/security/zero-trust/deploy/identity)
 
--   [[Conditional Access for Zero Trust - Azure Architecture Center \|
-    Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/azure/architecture/guide/security/conditional-access-zero-trust)
+-   [Conditional Access for Zero Trust - Azure Architecture Center](/azure/architecture/guide/security/conditional-access-zero-trust)
 
--   [[Delegation and roles in entitlement management - Azure AD \|
-    Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-delegate)
+-   [Delegation and roles in entitlement management - Azure AD](/azure/active-directory/governance/entitlement-management-delegate)
 
--   [[Identity Zero Trust integration overview \| Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/security/zero-trust/integrate/identity)
+-   [Identity Zero Trust integration overview](/security/zero-trust/integrate/identity)
 
--   [[Use Azure AD groups to manage role assignments - Azure Active
-    Directory \| Microsoft
-    Docs]{.underline}](https://docs.microsoft.com/azure/active-directory/roles/groups-concept)
+-   [Use Azure AD groups to manage role assignments - Azure Active
+    Directory](/azure/active-directory/roles/groups-concept)
 
-**Learn more with self-paced training**
+### Learn more with self-paced training
 
--   [Investigate roles in Azure AD - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/learn/modules/azure-active-directory/4-roles-azure-active-directory)
+-   [Investigate roles in Azure AD - Learn](/learn/modules/azure-active-directory/4-roles-azure-active-directory)
 
--   [Explore authentication options - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/learn/modules/hybrid-identity/3-authentication-options)
+-   [Explore authentication options - Learn](/learn/modules/hybrid-identity/3-authentication-options)
 
--   [Explore the zero trust model - Learn \| Microsoft
-    Docs](https://docs.microsoft.com/learn/modules/azure-ad-privileged-identity-management/2-microsofts-zero-trust-model)
+-   [Explore the zero trust model - Learn](/learn/modules/azure-ad-privileged-identity-management/2-microsofts-zero-trust-model)

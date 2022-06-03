@@ -1,6 +1,6 @@
 ### Recommend an Identity Store for Security
 
-Azure Active Directory is Microsoft\'s cloud-based identity and access
+Azure Active Directory is Microsoft's cloud-based identity and access
 management service. It provides single sign-on authentication,
 conditional access, passwordless and multi-factor authentication,
 automated user provisioning, and many more features that enable
@@ -10,7 +10,7 @@ enterprises to protect and automate identity processes at scale.
 
 There are many ways to integrate your solution with Azure Active
 Directory. Foundational integrations are about protecting your customers
-using Azure Active Directory\'s built-in security capabilities. Advanced
+using Azure Active Directory's built-in security capabilities. Advanced
 integrations will take your solution one step further with enhanced
 security capabilities.
 
@@ -19,12 +19,12 @@ Foundational integrations include single sign-on and publisher
 verification. Advanced integrations include conditional access
 authentication context, continuous access evaluation, and advanced
 security API
-integrations.](media\KeyComponentsofIDZeroTrustIntegr.png)
+integrations.](../media/key-componentsof-i-d-zero-trust-integr.png)
 
 **Foundational integrations**
 
 Foundational integrations protect your customers with Azure Active
-Directory\'s built-in security capabilities.
+Directory's built-in security capabilities.
 
 **Enable single sign-on and publisher verification**
 
@@ -33,7 +33,7 @@ gallery](https://www.microsoft.com/security/business/identity-access-management/
 This will increase customer trust because they know that your
 application has been validated as compatible with Azure Active
 Directory, and you can become a [verified
-publisher](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) so
+publisher](/azure/active-directory/develop/publisher-verification-overview) so
 that customers are certain you are the publisher of the app they are
 adding to their tenant.
 
@@ -65,7 +65,7 @@ applications.
 
 As with Azure Active Directory, partners can integrate with Azure Active
 Directory B2C by using [Microsoft
-Graph](https://docs.microsoft.com/azure/active-directory-b2c/microsoft-graph-operations) and
+Graph](/azure/active-directory-b2c/microsoft-graph-operations) and
 key security APIs such as Conditional Access, confirm compromise, and
 risky user APIs. Read more about those integrations in the Azure AD
 section above.
@@ -80,26 +80,26 @@ Payment Services Directive 2 (PSD2) Secure Customer Authentication (SCA)
 requirements.
 
 We have [guidance on how to use our RESTful
-endpoints](https://docs.microsoft.com/azure/active-directory-b2c/api-connectors-overview?pivots=b2c-user-flow) as
+endpoints](/azure/active-directory-b2c/api-connectors-overview?pivots=b2c-user-flow) as
 well as detailed sample walkthroughs of partners who have integrated
 using the RESTful APIs:
 
 -   [Identity verification and
-    proofing](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#identity-verification-and-proofing),
+    proofing](/azure/active-directory-b2c/partner-gallery#identity-verification-and-proofing),
     which enables customers to verify the identity of their end users
 
 -   [Role-based access
-    control](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#role-based-access-control),
+    control](/azure/active-directory-b2c/partner-gallery#role-based-access-control),
     which enables granular access control to end users
 
 -   [Secure hybrid access to the on-premises
-    application](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#role-based-access-control),
+    application](/azure/active-directory-b2c/partner-gallery#role-based-access-control),
     which enables end users to access on-premises and legacy
     applications with modern authentication protocols
 
 
 -   [Fraud
-    protection](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#fraud-protection),
+    protection](/azure/active-directory-b2c/partner-gallery#fraud-protection),
     which enables customers to protect their applications and end users
     from fraudulent login attempts and bot attacks
 
