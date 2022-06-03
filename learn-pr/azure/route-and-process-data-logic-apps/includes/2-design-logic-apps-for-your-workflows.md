@@ -1,33 +1,33 @@
 Implementing any business process is difficult because you need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products?
 
-Azure Logic Apps gives you pre-built components to connect to hundreds of services. You put the pieces together in any combination you need. For example, in this athletic shoe company scenario, we want to monitor social media reaction to our new basketball shoe product. We'll build a logic app to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
+Azure Logic Apps gives you pre-built connectors to access hundreds of services. You put these components together in any combination that you need. For example, in this athletic shoe company scenario, we want to monitor social media reaction to our new basketball shoe product. We'll build a logic app workflow to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
 
-In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the pre-built components in Azure Logic Apps. Finally, we'll assemble the parts into an app using the Logic Apps Designer. The following illustration shows an overview of the app-development process.
+In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the connectors available in Azure Logic Apps. Finally, we'll assemble the parts into a workflow using the designer in Azure Logic Apps. The following illustration shows an overview of the app  development process.
 
-:::image type="content" source="../media/app-design-process.png" alt-text="An illustration showing the typical sequence of activities used to create a logic app. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. Your app will now run automatically in the cloud." border="false":::
+:::image type="content" source="../media/app-design-process.png" alt-text="An illustration showing the typical sequence of activities to create a logic app workflow. The process has five steps. First, plan your business process. Second, identify the type for each step in your process. Third, decide which component will implement each step. Fourth, use the designer to build your workflow from the components. Fifth, save your design. Your app will now run automatically in the cloud." border="false":::
 
-Each of these five steps in the app-development process is described in the following sections.
+The following sections describes each of these five steps in the app development process:
 
 ## Plan your business process
 
-The first step to creating a logic app is planning the steps of your business process. In the social media monitoring scenario, the steps would be:
+The first step to creating a logic app workflow is planning the steps of your business process. In the social media monitoring scenario, the steps are as follows:
 
 - Detect tweets about the product
 - Analyze the sentiment
-- Store a link to positive tweets, and
+- Store a link to positive tweets
 - Email customer service for negative tweets
 
-It's common to use a flowchart to capture the steps of the process. The following illustration shows the flowchart for the social media monitor app.
+Typically, you can use a flowchart to capture the steps of the process. The following illustration shows the flowchart for the social media monitoring app.
 
 :::image type="content" source="../media/social-media-monitor-workflow.png" alt-text="An illustration showing a flowchart for the way the fictional shoe company processes tweets written about their product." border="false":::
 
-## Identify the type of each step in your process
+## Identify the type for each step in your process
 
-The steps of a business process do different types of operations. Some respond to external events, some process or store data, and others make decisions based on the data. Logic Apps uses the terms *trigger*, *action*, and *control action* for these three categories.
+The steps in a business process perform different types of operations. Some respond to external events, some process or store data, and others make decisions based on the data. Azure Logic Apps uses the terms *trigger*, *action*, and *control action* for these three categories.
 
-For example, in our social media monitor scenario, we *trigger* the process when a new tweet is posted, perform *actions* like detect the sentiment, and make a *control* decision based on the sentiment score. The following illustration shows the type of each step in the social media monitor app.
+For example, in our social media monitoring scenario, a *trigger* starts the process when a new tweet is posted, an *action* performs a task such as analyzing the sentiment, and a *control action* makes a decision based on the sentiment score. The following illustration shows the type for each step in the social media monitoring app.
 
-:::image type="content" source="../media/social-media-step-types.png" alt-text="An illustration showing the flowchart for the shoe company social media monitor app. Each step is labeled with whether it's a trigger, an action, or a control action." border="false":::
+:::image type="content" source="../media/social-media-step-types.png" alt-text="An illustration showing the flowchart for the shoe company social media monitoring app. Each step is labeled as a trigger, action, or control action." border="false":::
 
 ## Map your steps to Logic Apps components
 
