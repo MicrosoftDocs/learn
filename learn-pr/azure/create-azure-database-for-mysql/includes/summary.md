@@ -2,5 +2,4 @@ In this module, you’ve learned how you can use Azure Database for MySQL to acc
 
 ## References
 
-- [Use an Azure free account to try Azure Database for MySQL - Flexible Server for free](/azure/mysql/flexible-server/how-to-deploy-on-azure-free-account)
-
+- [Use an Azure free account to try Azure Database for MySQL - flexible server for free](/azure/mysql/flexible-server/how-to-deploy-on-azure-free-account)
