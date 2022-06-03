@@ -49,16 +49,18 @@ Here are some other benefits to consider:
 
     Resource Manager templates can be linked together to make the templates themselves modular. You can write small templates that each define a piece of a solution, and combine them to create a complete system.
 
-The models your financial analysts run are unique, but you see patterns in the underlying infrastructure. For example, most models require a database to store data. Many models use the same programming languages, frameworks, and operating systems to carry out the details. You can define templates that describe each individual component (compute, storage, networking, and so on), and combine them to meet each analyst's specific needs.
+The models your financial analysts run are unique, but you see patterns in the underlying infrastructure. For example, most models require a database to store data. Many models use the same programming languages, frameworks, and operating systems to carry out the details. You can define templates that describe each individual component, such as compute, storage, and networking. You can then combine the components to meet each analyst's specific needs.
 
 ## What's in a Resource Manager template?
 
 > [!NOTE]
-> Here, you'll see a few code examples to give you a sense about how each section is structured. Don't worry if what you see is unfamiliar to you &mdash; you'll be able to read others' templates and write your own as you gain hands-on experience with them.
+> Here, you'll see a few code examples to give you a sense about each section's structure. 
+> Don't worry if what you see is unfamiliar to you. You can review others' templates, 
+> and write your own as you gain more hands-on experience.
 
-You may have used JavaScript Object Notation (JSON) to send data between servers and web applications. JSON is also a popular way to describe how applications and infrastructure are configured. 
+You might have used JavaScript Object Notation (JSON) before to send data between servers and web applications. JSON is also a popular way to describe how applications and infrastructure are configured. 
 
-JSON allows us to express data stored as an object (such as a virtual machine) in text. A JSON document is essentially a collection of key-value pairs. Each key is a string; its value can be a string, a number, a Boolean expression, a list of values, or an object (which is a collection of other key-value pairs).
+JSON allows us to express data stored as an object, such as a virtual machine, in text. A JSON document is essentially a collection of key-value pairs. Each key is a string. The key's value can be a string, a number, a Boolean expression, a list of values, or an object, which is a collection of other key-value pairs.
 
 A Resource Manager template can contain the following sections. These sections are expressed using JSON, but are not related to the JSON language itself.
 
@@ -73,11 +75,12 @@ A Resource Manager template can contain the following sections. These sections a
     "outputs": {  }
 }
 ```
-Let's look at each of these sections in a little more detail.
+
+Let's look at each section in more detail.
 
 ### Parameters
 
-This is where you specify which values are configurable when the template runs. For example, you might allow users of your template to specify a username, password, or domain name.
+This section is where you specify which values are configurable when the template runs. For example, you might allow users of your template to specify a username, password, or domain name.
 
 Here's an example that illustrates two parameters &ndash; one for a VM's username, and one for its password.
 
@@ -100,7 +103,7 @@ Here's an example that illustrates two parameters &ndash; one for a VM's usernam
 
 ### Variables 
 
-This is where you define values that are used throughout the template. Variables can help make your templates easier to maintain. For example, you might define a storage account name one time as a variable, and use that variable throughout the template. If the storage account name changes, you need to only update the variable.
+This section is where you define values that are used throughout the template. Variables can help make your templates easier to maintain. For example, you might define a storage account name one time as a variable, and use that variable throughout the template. If the storage account name changes, you need to only update the variable.
 
 Here's an example that illustrates a few variables that describe networking features for a VM.
 
@@ -117,7 +120,7 @@ Here's an example that illustrates a few variables that describe networking feat
 
 ### Functions
 
-This is where you define procedures that you don't want to repeat throughout the template. Like variables, functions can help make your templates easier to maintain. Here's an example that creates a function to create a unique name that could be used when creating resources that have globally unique naming requirements.
+This section is where you define procedures that you don't want to repeat throughout the template. Like variables, functions can help make your templates easier to maintain. Here's an example that creates a function to create a unique name that could be used when creating resources that have globally unique naming requirements.
 
 ```json
 "functions": [
@@ -168,7 +171,7 @@ Because resource types can change over time, `apiVersion` refers to the version 
 
 ### Outputs
 
-This is where you define any information you'd like to receive when the template runs. For example, you might want to receive your VM's IP address or FQDN &ndash; information you do not know until the deployment runs.
+This section is where you define any information you'd like to receive when the template runs. For example, you might want to receive your VM's IP address or FQDN &ndash; information you do not know until the deployment runs.
 
 Here's an example that illustrates an output named "hostname". The FQDN value is read from the VM's public IP address settings.
 
@@ -206,6 +209,6 @@ Here are a few ways you can get a starter template:
 
 Whatever your approach, writing a template involves working with a text editor. You can bring your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for the task of creating templates. This extension makes it easier to navigate your template code, and provides autocompletion for many common tasks.
 
-As you explore and write your templates, you'll want to [refer to the documentation](/azure/templates?azure-portal=true) to understand what resource types are available and how to use them.
+As you explore and write your templates, [review the documentation](/azure/templates?azure-portal=true) to understand the available resource types and how to use them.
 
-In the next unit, we'll examine and existing template in more detail and then deploy it from the Azure CLI.
+In the next unit, we'll examine and deploy an existing template from the Azure CLI.
