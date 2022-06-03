@@ -73,7 +73,7 @@ There are two ways to supply parameters to our template during deployment using 
 
 ## Deploy template with parameters from a local file
  
-1. In the Cloud Shell, run the following command to deploy the logic app resource with the app's name taken from the **params.json** file. In the **params.json file**, the `location` parameter isn't set , so the default is used.
+1. In the Cloud Shell, run the following command to deploy the logic app resource with the app's name taken from the **params.json** file. In the **params.json file**, the `location` parameter isn't set, so the default is used.
 
    ```azurecli
    az deployment group create \
