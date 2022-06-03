@@ -60,4 +60,4 @@ After you address the networking and certificate requirements, you should be abl
 - A number of programming languages, such as Python, PHP, C#, C++, Java, JavaScript, and Ruby.
 
 > [!NOTE]
-> For more information regarding connecting to Azure Database for MySQL Flexible Server programmatically, refer to the [**Microsoft technical documentation**](https://docs.microsoft.com) webpage.
+> For more information regarding connecting to Azure Database for MySQL Flexible Server programmatically, refer to the [**Microsoft technical documentation**](/) webpage.

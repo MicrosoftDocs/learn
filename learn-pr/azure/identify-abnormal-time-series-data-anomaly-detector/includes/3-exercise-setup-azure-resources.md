@@ -48,6 +48,4 @@ Now, you need to verify that the resources are set up correctly.
     
 3. In the list of resources, you show see the following resource instances: **anomaly######**, **myLearnIoTHub######** and **store######**.
 
- [   ![Diagram displaying list of resources on Azure portal in the Resource Group](..\media\3-exercise-setup-azure-resources-3.png) ](..\media\3-exercise-setup-azure-resources-3.png#lightbox)
-
-
+ [   ![Diagram displaying list of resources on Azure portal in the Resource Group](..\media\3-exercise-setup-azure-resources-3.png)](..\media\3-exercise-setup-azure-resources-3.png#lightbox)

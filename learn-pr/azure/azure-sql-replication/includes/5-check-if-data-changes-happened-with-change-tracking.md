@@ -58,7 +58,7 @@ ENABLE CHANGE_TRACKING
 WITH (TRACK_COLUMNS_UPDATED = ON)
 ```
 
-You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
+You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
 
 When the `TRACK_COLUMNS_UPDATED` option is set to `ON`, the SQL Server Database Engine stores extra information about which columns were updated to the internal change tracking table. Column tracking can enable an application to synchronize only those columns that were updated. This can improve efficiency and performance however, maintaining column tracking information adds some extra storage overhead, this option is set to OFF by default.
 

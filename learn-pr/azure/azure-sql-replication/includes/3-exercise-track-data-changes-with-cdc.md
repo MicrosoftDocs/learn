@@ -113,7 +113,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Enable CDC on your database
 
-In [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) open new query window and enable CDC on `AdventureWorksLT` Database by running below query:
+In [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) open new query window and enable CDC on `AdventureWorksLT` Database by running below query:
 
 ```sql
 USE AdventureWorksLT

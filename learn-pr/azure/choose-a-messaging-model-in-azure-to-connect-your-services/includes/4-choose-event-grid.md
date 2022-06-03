@@ -89,7 +89,7 @@ Here're a few Azure services that support system topics. For the full list of Az
 - **Media Services:** Media Services hosts video and audio media and provides advanced management features for media files. Media Services can generate events when an encoding job is started or completed on a video file.
 - **Azure IoT Hub:** IoT Hub communicates with and gathers telemetry from IoT devices. It can generate events whenever such communications arrive.
 
-For more information, see [System topics in Event Grid](https://docs.microsoft.com/azure/event-grid/system-topics).
+For more information, see [System topics in Event Grid](/azure/event-grid/system-topics).
 
 ### Custom topics
 Custom events can be generated using the REST API, or with the Azure SDK on Java, GO, .NET, Node, Python, and Ruby. For example, you could create a custom event in the Web Apps feature of Azure App Service. This can happen in the worker role when it picks up a message from a storage queue.
@@ -107,7 +107,7 @@ The following object types in Azure can receive and handle events from Event Gri
 - **Storage queues**: Use Queue Storage to receive events that need to be pulled. You might use Queue storage when you have a long running process that takes too long to respond. By sending events to Queue storage, the app can pull and process events on its own schedule.
 - **Microsoft Power Automate:** Flow also hosts workflows, but it is easier for non-technical staff to use.
 
-For more information, see [Event Handlers](https://docs.microsoft.com/azure/event-grid/overview#event-handlers).
+For more information, see [Event Handlers](/azure/event-grid/overview#event-handlers).
 
 ## Should you use Event Grid?
 Use Event Grid when you need these features:

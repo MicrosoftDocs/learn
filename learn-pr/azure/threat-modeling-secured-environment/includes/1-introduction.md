@@ -1,4 +1,4 @@
-As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you assess applications to use across [Privileged Access Workstations (PAW)](https://docs.microsoft.com/security/compass/privileged-access-devices).
+As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you assess applications to use across [Privileged Access Workstations (PAW)](/security/compass/privileged-access-devices).
 
 PAW is a device used for administrative functions and critical asset management tasks. Examples include:
 
@@ -65,4 +65,4 @@ In this module, you'll explore the four steps in the threat modeling process for
 
 ## Prerequisites
 
-- [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling)
+- [Threat Modeling Security Fundamentals Learning Path](/learn/modules/tm-introduction-to-threat-modeling/)
