@@ -36,7 +36,7 @@ Complete the following steps to implement failure handling for the coupon servic
 1. Run the following command:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.Http.Polly --version 3.1.6
+    dotnet add package Microsoft.Extensions.Http.Polly --version 6.0.5
     ```
 
     The preceding command installs a NuGet package in the *:::no-loc text="Web.Shopping.HttpAggregator":::* project. The package integrates `IHttpClientFactory` with Polly and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
