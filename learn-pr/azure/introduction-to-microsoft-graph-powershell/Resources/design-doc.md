@@ -44,7 +44,7 @@ Identify the subtasks of introduction to Microsoft Graph PowerShell.
 
 1. Introduction
 
-    Implementing business process automation across a set of Microsoft services can be challenging if the right tool is not available. Think about all repetitive bulk administrative tasks your company needs to do: user management, access reviews, authentication, Emails, Teams among others. How do you automate tasks across all these services? Microsoft Graph PowerShell exposes the entire Microsoft Graph API set for use in PowerShell providing a powerful way to optimize your work flow.
+    Implementing business process automation across a set of Microsoft 365 services can be challenging if the right tool is not available. Think about all repetitive bulk administrative tasks your company needs to do: user/guest lifecycle management, App management, Exchange, Sharepoint. How do you automate tasks across all these services? Microsoft Graph PowerShell exposes the entire Microsoft Graph API set for use in PowerShell providing a powerful way to optimize your work flow.
 
     Suppose you're the IT admin of a company that that has been using Azure Active Directory and other Microsoft 365 services. You have been tasked with finding the best tool to automate tasks across all the Microsoft services including Azure AD. You are aware that each of these services has APIs available through Microsoft Graph.
 
