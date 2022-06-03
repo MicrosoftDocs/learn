@@ -32,7 +32,7 @@ There are a few interesting things to think about in this analysis.
 
 - The online sales process would probably use a mix of built-in and custom connectors. We could use built-in connectors for email notifications and database access but would probably need a custom connector to talk to our payment processing service.
 
-- The performance of Azure Logic Apps will work well for all the tasks. Some of them may process large amounts of data, but Azure Logic Apps scales automatically to handle high throughput or spikes in demand. None of these tasks require very low latency response time. We'd need to have near-realtime constraints for that to be an issue.
+- The performance of Azure Logic Apps will work well for all the tasks. Some of them may process large amounts of data, but Azure Logic Apps scales automatically to handle high throughput or spikes in demand. None of these tasks require low latency response time. We'd need to have near-realtime constraints for that to be an issue.
 
 Azure Logic Apps could work for all of these tasks. The online sales process is the only one where we'd want to weigh all our options. Azure Logic Apps would be a good choice if we had the resources to build the custom connectors we'd need.
 
