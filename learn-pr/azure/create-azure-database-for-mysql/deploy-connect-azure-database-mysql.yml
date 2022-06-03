@@ -2,6 +2,7 @@
 uid: learn-pr.azure.create-azure-database-for-mysql.deploy-connect-azure-database-mysql 
 title: Exercise - Deploy and connect to Azure Database for MySQL
 sandbox: true
+interactive: bash
 metadata:
   title: Exercise - Deploy and connect to Azure Database for MySQL 
   description: Deploy and connect to Azure Database for MySQL.

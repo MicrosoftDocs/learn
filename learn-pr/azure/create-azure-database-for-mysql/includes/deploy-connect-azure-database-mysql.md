@@ -7,7 +7,7 @@ Now that you’ve reviewed the deployment and connectivity options of Azure Data
 
 Use the following procedure to deploy an Azure Database for MySQL Flexible Server from the Azure portal:
 
-1. From your computer, open a web browser window and navigate to the Azure portal at https://portal.azure.com.
+1. Navigate to the [Azure portal for the sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 2. Use the **Search resources, services, and docs** text box to search for and select **Azure Database for MySQL**.
 
@@ -20,7 +20,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
    | **Setting**                  | **Value**                          | **Description**                                              |
    | ---------------------------- | ---------------------------------- | ------------------------------------------------------------ |
    | **Subscription**             | The name of  your subscription     | Enter the name  of the Azure subscription that you want to use for your server. |
-   | **Resource group**           | mysql-RG                           | Enter the  name of a new or existing resource group to host the deployment. |
+   | **Resource group**           | <rgn>[sandbox resource group name]</rgn> | Use the existing resource group available. |
    | **Server name**              | <server_name>                      | Enter any  valid and globally unique name that will identify your flexible server. The fully  qualified name of the server consists of this name followed by the suffix mysql.database.azure.com.  The server name can contain only lowercase letters, numbers, and the hyphen  (-) character. It must contain between 3 and 63 characters. |
    | **Region**                   | The name of  an Azure region       | Enter the name  of the Azure region that will host your server. Select any region that  supports Azure Database for MySQL Flexible Server deployment, and that is close  to the location of the computer you use to run this exercise. |
    | **MySQL version**            | 8.0                                | Enter the MySQL  major version your app will be using.       |
@@ -92,16 +92,16 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
 
 7. In the Cloud Shell pane, run the following command to download the public certificate used by the server:
 
-   ```
+   ```bash
    wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
    ```
 
 8. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server, and the <user_name> placeholder with the name of the admin account you specified when provisioning the server in the previous task:
 
-   ```
+   ```bash
    mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
    ```
-   
+
 9. When prompted, enter the password that you assigned to the admin account you specified when provisioning the server in the previous task.
 
    > [!NOTE]
@@ -128,7 +128,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
       ```sql
       CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
       ```
-   
+
 15. From the **MySQL [(testdb)]** prompt, run the following command to add a row of data into the newly created table:
 
       ```sql
@@ -140,7 +140,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
       ```sql
       SELECT * FROM table1;
       ```
-   
+
 17. To exit the connection, at the **MySQL [(testdb)]** prompt, enter quit.
 
 ### Task 3: Clean up resources
@@ -156,4 +156,3 @@ To delete the Azure Database for MySQL server resource you provisioned in this e
 4. On the **mysql-RG** page, select the **Delete resource group** toolbar entry.
 
 5. When prompted to confirm, in the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
-

@@ -29,7 +29,7 @@ You can use several different deployment methods to provision an Azure Database 
   - Storage. The storage size (in GiB), the number of IOPS, and the Storage Auto-growth option.
 
     ![Screenshot of the Compute and Storage sections of the Compute + Storage Azure portal Flexible server deployment page.](../media/3-deploy-mysql-compute-and-storage.png)
-    
+
   - High availability. The high availability mode (same zone or zone redundant).
 
     ![Screenshot of the High availability section of the Basics Azure portal Flexible server deployment page.](../media/3-deploy-mysql-high-availability.png)
