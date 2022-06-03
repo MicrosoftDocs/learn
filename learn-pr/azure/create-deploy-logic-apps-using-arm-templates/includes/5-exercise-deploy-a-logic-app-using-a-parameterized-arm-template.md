@@ -73,7 +73,7 @@ There are two ways to supply parameters to our template during deployment using 
 
 ## Deploy template with parameters from a local file
  
-1. In the Cloud shell, run the following command to deploy the logic app resource with the app's name taken from the **params.json** file. Tn the **params.json file**, the `location` parameter isn't set , so the default is used.
+1. In the Cloud Shell, run the following command to deploy the logic app resource with the app's name taken from the **params.json** file. In the **params.json file**, the `location` parameter isn't set , so the default is used.
 
    ```azurecli
    az deployment group create \
@@ -136,7 +136,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    Our updated response performs the following tasks:
 
-   - Prints out the name of the logic app resource. The response calls the `workflow()` function to return information about the workflow. From that result, we reference the name property.
+   - Prints the name of the logic app resource. The response calls the `workflow()` function to return information about the workflow. From that result, we reference the name property.
 
    - Returns the product of the integer equivalents for the height and width string values from the URL parameters. This task uses the `mul()` function and `int()` conversion function.
 
