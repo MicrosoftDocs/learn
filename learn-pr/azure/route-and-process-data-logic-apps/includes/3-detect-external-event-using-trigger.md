@@ -1,4 +1,4 @@
-In Azure Logic Apps, a trigger always the first step that starts a workflow. To correctly run your workflow, you need to find the best trigger, and set up the trigger's properties for your scenario. For our example, we'll use a Twitter trigger that runs our workflow when a tweet with our product name is posted.
+In Azure Logic Apps, a trigger always starts a workflow as the first step. To correctly run your workflow, you need to find the best trigger, and set up the trigger's properties for your scenario. For our example, we'll use a Twitter trigger that runs our workflow when a tweet with our product name is posted.
 
 In this unit, we'll examine trigger types plus the strengths and weaknesses around the most common options. We'll then show how to create a logic app workflow using the Azure portal, and how to add a trigger in the workflow designer.
 
