@@ -3,13 +3,13 @@
 A hybrid deployment offers organizations the ability to extend the
 feature-rich experience and administrative control with their existing
 on-premises environment to the cloud. A hybrid deployment provides a
-single organization\'s seamless look and feel between an on-premises
+single organization's seamless look and feel between an on-premises
 and cloud environment. A hybrid deployment can also serve as an
 intermediate step to moving completely to a cloud environment.
 
 #### Implement a secure hybrid identity environment
 
-Microsoft\'s identity solutions span on-premises and cloud-based
+Microsoft's identity solutions span on-premises and cloud-based
 capabilities, creating a single user identity for authentication and
 authorization to all resources, regardless of location. This concept is
 known as Hybrid Identity. There are different design and configuration

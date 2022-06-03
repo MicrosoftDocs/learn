@@ -120,9 +120,9 @@ downtime, or ransomware incidents
 
 To assess the reliability of a workloads using the tenets found in
 the [Microsoft Azure Well-Architected
-Framework](https://docs.microsoft.com/azure/architecture/framework/),
+Framework](/azure/architecture/framework/),
 reference the [Microsoft Azure Well-Architected
-Review] (https://docs.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment).
+Review] (/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
 Required Media From, if possible:[https://docs.microsoft.com/azure/architecture/framework/resiliency/overview](/azure/architecture/framework/resiliency/overview)
 
@@ -137,7 +137,7 @@ different mindset is required because of several factors:
 
 -   Applications often depend on external services, which may become temporarily unavailable or throttle high-volume users
 
--   Today\'s users expect an application to be available 24/7 without ever going offline
+-   Today's users expect an application to be available 24/7 without ever going offline
 
 These factors mean that cloud applications must be designed to expect
 occasional failures and recover from them. Azure has many resiliency

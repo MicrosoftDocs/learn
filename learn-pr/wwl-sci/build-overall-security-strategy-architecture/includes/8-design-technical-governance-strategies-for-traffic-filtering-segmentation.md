@@ -1,8 +1,8 @@
 #### Adopt a Zero Trust approach
 
 Perimeter-based networks operate on the assumption that all systems
-within a network can be trusted. But today\'s employees access their
-organization\'s resources from anywhere on a variety of devices and
+within a network can be trusted. But today's employees access their
+organization's resources from anywhere on a variety of devices and
 apps, which makes perimeter security controls irrelevant. Access control
 policies that focus only on who can access a resource are not enough. To
 master the balance between security and productivity, security admins
