@@ -1,45 +1,47 @@
-You use a trigger to launch your logic app. You need to find the best one and configure it to run your app correctly without wasting time or money. In this scenario, we will use a Twitter trigger to launch our app when a tweet containing our product name is available.
+In Azure Logic Apps, a trigger always the first step that starts a workflow. To correctly run your workflow, you need to find the best trigger, and set up the trigger's properties for your scenario. For our example, we'll use a Twitter trigger that runs our workflow when a tweet with our product name is posted.
 
-In this unit, we'll examine the types of triggers and the strengths and weaknesses of the two most common options. We'll see how to create a logic app using the Azure portal and how to add a trigger using the Logic Apps Designer.
+In this unit, we'll examine trigger types plus the strengths and weaknesses around the most common options. We'll then show how to create a logic app workflow using the Azure portal, and how to add a trigger in the workflow designer.
 
 ## Trigger types
 
-Think about the different conditions that businesses might use to launch their Logic Apps.
+Consider the various trigger conditions that businesses might use to run their logic app workflows. Most examples that we've seen are triggers that detect whether data or an event in a service or system meets specific conditions. For example, when new tweet is posted, a new row is inserted into a database, a new email arrives, or a new file is uploaded to your cloud storage. Triggers that detect data or events can use either of the following techniques:
 
-Most of the examples we've seen are in the *data becomes available* category. For example, a new tweet is posted, a new row is inserted into a database, a new email arrives, or a new file is uploaded to your cloud storage. This category doesn't cover all cases though.
+* Triggers that periodically *poll* or check a service or system for specific data or events that meet conditions
+* Triggers that wait and receive *push* notifications from a service or system when specific data or events meet conditions
 
-Suppose you wanted to launch your logic app every Saturday at midnight? This trigger would be great for administrative tasks, like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing.
+However, what if you need a trigger that's not bound to data or events in service or system? Suppose you want to run your workflow every Saturday at midnight or some other schedule. You can use the **Recurrence** trigger to schedule and run any actions in a workflow. For example, you can schedule workflows that perform administrative tasks, such as running backups or archiving old data. Suppose you want to run your workflow only on request from any source or location? You can use the **Request** or "manual" trigger to wait for inbound requests to arrive.
 
-There's one more case to consider: Suppose you wanted total control? Imagine you need to launch your logic app using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this action.
-
-This description shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
+The following diagram summarizes these trigger types:
 
 :::image type="content" source="../media/trigger-types.png" alt-text="An illustration showing the four types of triggers: polling, push, recurrence, and manual." border="false":::
 
 ## What is a polling trigger?
 
-A *polling trigger* periodically checks an external service for new data. For example, the trigger that looks for new posts in an RSS feed is implemented using polling.
+A *polling* trigger runs on a schedule and sends an outbound call that checks for data or an event that meets specific conditions. Whenever data or an event meets the conditions, the trigger starts a new workflow execution. For example, the RSS connector has a polling trigger that can regularly check for new posts in an RSS feed.
 
-When you create a polling trigger, you set the **Frequency** and an **Interval** to control how often the trigger will run. The frequency is the unit of measurement and has values like **Second**, **Minute**, and **Hour**. Interval is a number that represents how often to execute. For example, a polling trigger with a frequency of **Minute** and an interval of **5** would run every five minutes.
+When you add a polling trigger to your workflow, you set the **Frequency** and an **Interval** to control how often the trigger runs. The frequency is a time unit, such as **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. The interval is the number of time units that lapse before the trigger checks again for data or an event. For example, a polling trigger with a frequency of **Minute** and an interval of **5** checks every five minutes.
 
-Polling triggers force you to make a choice between how much they cost and how quickly they respond to new data. There is often a delay between when new data becomes available and when it is detected by the app. The following illustration shows the issue.
+Polling triggers require you to choose between how often the triggers run and how much they cost. Often, there's a delay between when new data or an event happens and when the trigger detects that data or event. For example, suppose a polling trigger checks for data every five minutes. New data is available after seven minutes. The trigger doesn't detect the new data until the next poll, which happens at 10 minutes. The following diagram shows how this polling works:
 
-:::image type="content" source="../media/polling-trigger.png" alt-text="An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes." border="false":::
+:::image type="content" source="../media/polling-trigger.png" alt-text="Diagram shows a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The trigger doesn't detect the new data until the next poll, which happens at 10 minutes." border="false":::
 
-In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval? To check for new data, the Logic Apps execution engine needs to run your app, which means you incur a cost. In general, the shorter the interval, the higher the cost but the quicker you respond to new data. The best polling interval for your logic app depends on your business process and its tolerance for delay.
+In the worst case, the potential delay when detecting new data is equal to the polling interval. So why not use a smaller interval? To check for new data, the Azure Logic Apps execution engine needs to run your workflow, which incurs a cost. Generally, the shorter the interval, the higher the cost, but the trigger responds faster to new data or events. The best polling interval for your trigger depends on your business process and tolerance for delay.
 
 ## What is a push trigger?
 
-A *push trigger* subscribes to an event offered by the external service to get notified immediately when data is available. For example, the trigger that detects when a message is added to an Azure Service Bus queue is a push trigger.
+A *push* trigger waits for data or an event that meets specific conditions. The trigger subscribes to an endpoint on an external service or system. When new data or an event meets the conditions, the service or system notifies the trigger, which starts a new workflow execution. For example, the Azure Service Bus connector has a push trigger that detects when a message is added to an Azure Service Bus queue.
 
 > [!NOTE]
-> Push triggers are implemented using webhooks. The Logic Apps infrastructure generates a callback URL for you and registers it with the external service. This registration happens when you first create your app and again when you make changes to your app's configuration. Similarly, Logic Apps de-registers the callback for you as needed (for example, if you disable or delete your app).
+> Push triggers use *webhooks*, which allow triggers to subscribe to the external service or system. At subscription time, 
+> Azure Logic Apps generates a callback URL for the trigger and registers the URL with the external service or system. 
+> Similarly, Azure Logic Apps unsubscribes and deregisters the callback URL when you don't need the subscription anymore, 
+> for example, if you disable or delete your workflow.
 
-The favorable thing about push triggers is that they don't incur any costs polling for data when none is available. They also respond immediately when new data is ready. The following illustration shows this immediate response.
+On the positive side, push triggers don't run when no data or events are available. So, they don't incur costs for polling. These triggers also immediately respond immediately when new data or events are available. The following diagram shows how this push process works:
 
-:::image type="content" source="../media/push-trigger.png" alt-text="An illustration showing a timeline with a marker indicating when new data becomes available. A push trigger notifies the logic app immediately when the data is ready." border="false":::
+:::image type="content" source="../media/push-trigger.png" alt-text="Diagram shows a timeline where a marker indicates when new data becomes available. The push trigger detects the data and immediately responds." border="false":::
 
-If push triggers respond more quickly and cost less than polling triggers, then why not use them all the time? The reason is that not every connector offers a push trigger. Sometimes the trigger author chose not to implement push and sometimes the external service didn't support push. Generally, you'll find a connector offers either push or polling triggers, but not both. In the rare cases where both options are available, consider using the push trigger because it should be more efficient.
+Why not use push triggers all the time when they respond faster and cost less than polling triggers? Unfortunately, not every connector offers a push trigger. The external service might not support push triggers, or maybe the connector author didn't choose to implement a push trigger. Generall, a connector offers either push triggers or polling triggers, but not both. In rare cases where a connector offers both options, consider using the push trigger due to better efficiency.
 
 In this module, we're going to focus on polling triggers. These triggers are the most common and are perfect for the "route and process data" scenarios that we've been discussing.
 
