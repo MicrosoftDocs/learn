@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/deploy-connect-azure-database-mysql.md)]
+  [!include[](includes/deploy-azure-database-mysql.md)]
