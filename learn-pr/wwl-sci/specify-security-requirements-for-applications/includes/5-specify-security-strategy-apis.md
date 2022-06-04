@@ -18,7 +18,7 @@ others on behalf of your organization vs. SaaS or commercially available
 applications installed on IaaS VMs.
 
 ![Diagram of Application
-Models](media\IaaSandPaaSApplicationModels.png) 
+Models](../media/iaas-paas-application-models.png) 
 
 Modern cloud platforms like Azure can host both legacy and modern
 generations of applications
@@ -27,7 +27,7 @@ generations of applications
     (IaaS) virtual machines that typically include all dependencies,
     including OS, middleware, and other components.
 
--   **Modern** Platform as a Service (PaaS) applications don\'t require
+-   **Modern** Platform as a Service (PaaS) applications don't require
     the application owner to manage and secure the underlying server
     operating systems (OSes) and are sometimes fully \"Serverless\" and
     built primarily using functions as a service.
@@ -42,7 +42,7 @@ component types:
 
 -   **Application Code** -- This is the logic that defines the custom
     application that you write. The security of this code is the
-    application owners\' responsibility in all generations of
+    application owners' responsibility in all generations of
     application architecture, including any open-source snippets or
     components included in the code. Securing the code requires
     identifying and mitigating risks from the design and implementation
@@ -80,12 +80,12 @@ application registration properties.
 
 #### Security Standards for Onboarding applications
 
-Organizations should leverage guidance and automation for securing
+Organizations should use guidance and automation for securing
 applications in the cloud rather than starting from zero.
 
 -   Using resources and lessons learned by external organizations that
     are early adopters of these models can accelerate the improvement of
-    an organization\'s security posture with less effort and resources.
+    an organization's security posture with less effort and resources.
 
 -   Developers should use services available from your cloud provider
     for well-established functions like databases, encryption, identity
@@ -117,11 +117,11 @@ security impact:
     are complex to develop and critically important to security
     assurances. Avoid using homegrown authentication solutions and favor
     mature capabilities like Azure Active Directory ([Azure
-    AD](https://docs.microsoft.com/en-us/azure/active-directory/)), [Azure
+    AD](/azure/active-directory/)), [Azure
     AD
-    B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/), [Azure
+    B2B](/azure/active-directory/b2b/), [Azure
     AD
-    B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/),
+    B2C](/azure/active-directory-b2c/),
     or third-party solutions to authenticate and grant permission to
     users, partners, and customers, applications, services, and other
     entities.
@@ -130,17 +130,17 @@ security impact:
     capabilities from cloud providers such as native encryption in cloud
     services to encrypt and protect data. The security world is littered
     with examples of failed attempts to protect data or passwords that
-    didn\'t stand up to real world attacks. If direct use of
+    didn't stand up to real world attacks. If direct use of
     cryptography is required, developers should call well-established
     cryptographic algorithms and not attempt to invent their own.
 
 -   **Key management** -- Ideally, use identity for authentication
     rather than directly handling keys (see [Prefer Identity
     Authentication over
-    Keys](https://docs.microsoft.com/en-us/security/compass/applications-services#prefer-identity-authentication-over-keys)).
+    Keys](/security/compass/applications-services#prefer-identity-authentication-over-keys)).
     For situations where accessing services that require access to keys,
-    leverage a key management service like [Azure Key
-    Vault](https://docs.microsoft.com/en-us/azure/key-vault/) or
+    use a key management service like [Azure Key
+    Vault](/azure/key-vault/) or
     AWS [Key Management Service](https://aws.amazon.com/kms/) to manage
     and secure these keys rather than attempting to safely handle keys
     in application code. You can
@@ -156,10 +156,10 @@ security impact:
 the following:
 
 -   [**Best Practices for Application
-    Registration**](https://docs.microsoft.com/en-us/azure/active-directory/develop/security-best-practices-for-app-registration)
+    Registration**](/azure/active-directory/develop/security-best-practices-for-app-registration)
 
 -   [**Threat
-    Modeling**](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+    Modeling**](/azure/security/develop/threat-modeling-tool)
 
 -   [**OWASP
     ASVS**](https://owasp.org/www-project-application-security-verification-standard/)

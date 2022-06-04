@@ -1,5 +1,5 @@
 
-In this module, you\'ll learn how to:
+In this module, you'll learn how to:
 
 -   Specify a security strategy for applications and APIs
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/31/2022
+  ms.date: 06/04/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -14,3 +14,39 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Specify security requirements for applications"
+  questions:
+  - content: "What can Tailwind Traders do to evaluate if new applications are designed progressively?"
+    choices:
+    - content: "Analyze application components, connections, and relationships using threat modelling to identify and mitigate threats."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Use input validation to assess if the application is valid and safe."
+      isCorrect: false
+      explanation: "Input Validation is a Mitigation method."
+    - content: "Evaluate how the new applications provide access controls for resources and operations."
+      isCorrect: false
+      explanation: "Input Validation is a Mitigation method."
+  - content: "How can Tailwind Traders enforce security assurance for new applications in their Azure environment?"
+    choices:
+    - content: "Securing an application requires security assurances for three different component types: application code, application services, and application hosting platform."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Use identity for authentication rather than directly handling keys."
+      isCorrect: false
+      explanation: "This is one of the capabilities that should be prioritized first because of the potential security impact."
+    - content: "Always authenticate with identity services rather than cryptographic keys when available."
+      isCorrect: false
+      explanation: "This is one of the security guidance to use for securing applications in the cloud."
+  - content: "What security standard can Tailwind Traders use to secure modern applications?"
+    choices:
+    - content: "Enforce a more comprehensive threat model standard to identify more potential risks; two popular standards are STRIDE and OWASP."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "User directories and other authentication functions are complex to develop and critically important to security assurances."
+      isCorrect: false
+      explanation: "This is one of the capabilities that should be prioritized first because of the potential security impact."
+    - content: "Identify applications that would have a significant impact on the business if compromised."
+      isCorrect: false
+      explanation: "This is the process of identifying and classifying an application with a High Potential Impact."

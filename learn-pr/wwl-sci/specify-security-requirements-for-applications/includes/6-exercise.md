@@ -2,7 +2,7 @@
 ### Meet Tailwind Traders
 
 ![Tailwind Traders
-logo.](media\TailwindTraders.png) 
+logo.](../media/tailwind-traders.png) 
 
 Tailwind Trader is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
@@ -16,7 +16,7 @@ Azure manages and enforces security standards.
 ### Requirements
 
 Tailwind Traders is planning on making some significant changes to their
-Application Security Strategy. Currently, they are using the Waterfall
+Application Security Strategy. Currently, they're using the Waterfall
 development cycle to manage all applications. They have asked for your
 assistance with recommendations and questions. Here are the specific
 requirements.
@@ -25,18 +25,18 @@ requirements.
     project for customer environments. The CISO wants to ensure that all
     available Applications are secured and controlled in the cloud.
 
-**Tasks**
+### Tasks
 
 1.  **Evaluate an Application Security Standard**
 
-    -   What could Tailwind Traders do to increase the organization\'s
+    -   What could Tailwind Traders do to increase the organization's
         ability to rapidly address security concerns without waiting for
         a longer planning and testing cycle of a waterfall model?
 
         1.  Evaluate a standard and explain your decision-making
             process.
 
-            -   Tailwind Traders should shift from a \'Waterfall\'
+            -   Tailwind Traders should shift from a 'Waterfall'
                 development cycle to a DevOps lifecycle of continuous
                 integration, continuous delivery (CI/CD) for
                 applications, and API development as quickly as
