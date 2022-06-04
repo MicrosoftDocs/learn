@@ -44,7 +44,7 @@ The use of benchmarks to evaluate your current environment, understand
 the current gaps and provide guidance on how improve, is a very common
 practice in the IT industry. When it comes to security posture
 enhancement, benchmarks can give you tangible actions based on industry
-standards, such as ISO 2701 or by leveraging cloud provider's benchmark,
+standards, such as ISO 2701 or by using cloud provider's benchmark,
 such as Azure Security Benchmark for Azure workloads, or Center for
 Internet Security (CIS) AWS Foundations Benchmark which is crafted for
 AWS workloads. Benchmarks will also help you to accelerate the
@@ -65,7 +65,7 @@ can also improve your security by ensuring the process steps are done
 quickly, consistently, and according to your predefined requirements.
 
 To improve the security hygiene of the cloud workloads, you also need to
-ensure that you're leveraging security best practices to harden these
+ensure that you're using security best practices to harden these
 workloads. Each workload has a different set of security best practices
 that must be in place to improve its security hygiene. Make sure to
 visit <https://aka.ms/MyASIS> for more information about security best
@@ -74,7 +74,7 @@ practices for Azure workloads.
 ### Evaluating security posture in Azure workloads
 
 One option to evaluate the security posture of your workloads is by
-leveraging Azure Security Benchmark (ASB), which is widely used by
+using Azure Security Benchmark (ASB), which is widely used by
 organizations to meet security control requirements in Azure. ASB
 provides clear and concrete guidance on how to securely configure Azure
 resources to meet both security and compliance requirements. ASB often

@@ -5,7 +5,7 @@ how many subscriptions are selected in the Azure Portal).
 
 ![The Secure Score dashboard in Defender for Cloud shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure Portal)](../media/microsoft-defender-cloud-secure-score.png) 
 
-To increase your security, review Defender for Cloud\'s recommendations
+To increase your security, review Defender for Cloud's recommendations
 page and remediate the recommendation by implementing the remediation
 instructions for each issue. Recommendations are grouped into security
 controls. Each control is a logical group of related security
@@ -26,15 +26,13 @@ can track progress as you continuously remediate security
 recommendations to drive your secure score up, as shown in the diagram
 below:
 
-![thumbnail image 1 of blog post titled Survival Guide to Drive your
-Secure Score Up in Microsoft Defender for Cloud
-](../media/secure-score-goes-up.jpeg) 
+![thumbnail image 1 of blog post titled Survival Guide to Drive your Secure Score Up in Microsoft Defender for Cloud](../media/secure-score-goes-up.jpeg) 
 
 While driving security posture enhancement by remediating security
 recommendations triggered by Microsoft Defender for Cloud and using
 Secure Score to track your progress is the recommended choice, more can
 be done to keep positively progressing towards a better security
-posture. When a company doesn\'t have a very mature Azure Governance,
+posture. When a company doesn't have a very mature Azure Governance,
 chances are that they will experience a fluctuation in the secure score
 (ups and downs), and this can happen if you continue provisioning new
 resources that are not secure by default.
@@ -46,7 +44,7 @@ Policy and Azure Blueprints. This will allow you to enforce policies and
 reject deployment of resources that are not following certain standards.
 
 Defender for Cloud can help the governance of those workloads by
-leveraging Azure Policy to enforce secure configuration, based on a
+using Azure Policy to enforce secure configuration, based on a
 specific recommendation. Some recommendations will be based on polices
 that can use the *Deny* effect, which in this case can stop unhealthy
 resources from being created. Some other recommendations are based on
@@ -55,5 +53,4 @@ non-compliant resources upon creation. Below you have an example of a
 recommendation that has the *Enforce* button, which behind the scene is
 implementing the *DeployIfNotExist* effect.
 
-![Auditing on SQL Server](../media/auditing-sql-server.png) 
-
+![Auditing on SQL Server](../media/auditing-sql-server.png)
