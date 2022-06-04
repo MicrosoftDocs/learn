@@ -1,8 +1,8 @@
 In this exercise, we'll create our social media monitoring logic app using the Azure portal. We'll add a Twitter trigger using the workflow designer. The following diagram shows a conceptual view for the app and highlights the part that we'll work on.
 
 :::image type="complex" source="../media/exercise-add-trigger.png" alt-text="Diagram shows triggers and actions in the social media monitoring logic app." lightbox="../media/exercise-add-trigger.png" border="false":::
-The first step is a Twitter trigger named "When a new tweet is posted. This trigger is highlighted to show the part that's completed in this exercise.
-:::image-end:::  
+The first step is a Twitter trigger named "When a new tweet is posted. This trigger is highlighted to show the completed part in this exercise.
+:::image-end:::
 
 ## Create the logic app resource
 
@@ -64,7 +64,7 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    | Property | Required | Value | Description |
    |----------|----------|-------|-------------|
    | **Connection name** | Yes | ShoeTrackerTwitterConnection | The name to give your Twitter connection |
-   | **Authentication Type** | Yes | Use default shared application | The authentication type for yoru connection |
+   | **Authentication Type** | Yes | Use default shared application | The authentication type for your connection |
    |||||
 
    *Substitution*: This step doesn't apply to the RSS trigger.
@@ -106,21 +106,28 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
 
 1. On the designer toolbar, select **Run Trigger** > **Run**.
 
-Your logic app workflow is now scanning Twitter every minute for tweets that contain your search text. To check that the app is running correctly, we'll review trigger and workflow's run history.
+Your logic app workflow is now scanning Twitter every minute for tweets that contain your search text. If the workflow runs correctly and finishes successfully, a page similar to the designer opens but shows the status and time taken for each step in the workflow run. We'll review this page in more detail later.
+
+Now we'll review the trigger outputs and workflow's run history.
 
 ## Review the output from the Twitter trigger
 
-1. Scroll to the left, and then in the Logic App  menu, select **Overview**. You may need to scroll to the left to see the navigation menu or you can use your browser's search function to find the word "overview" on the page.
+1. Open the logic app resource's main menu, and select **Overview**.
 
-1. Select **Refresh** once a minute until you see a row in the **Runs history** table.
+   You might have to scroll to the left to find the main menu, or you can use your browser's search to find the word **overview** on the page.
 
-1. While you are waiting, locate the section in **Overview** labeled **Trigger history**. Notice the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
+1. On the **Oveview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
 
-1. Go back to **Runs history**. After you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the designer you used to create the trigger. This view lets you see the data that flowed through each step of this run of your app.
+1. While you wait, you can review the trigger history. On the **Overview** pane, find the **Trigger history** section.
 
-1. Select the Twitter trigger.
+   The **Fired** column shows whether the trigger activated because the trigger condition was met. In this example, the condition that trigger finds a matching tweet. So, the trigger fires for each matching tweet.
 
-1. Examine the data in the **OUTPUTS** section. For example, locate the text of the matching tweet.
+1. Return to **Runs history** section. If at least one completed run appears, select a row for any successful run.
 
-    > [!NOTE]
-    > Select **Show raw outputs** if you would like to see the entire response in JSON.
+   A page named **Logic app run** opens and the status for each step in the workflow and the time taken to run each step. From this view, you can also review the data that flowed through each step.
+
+1. To view the trigger inputs and outputs, select the Twitter trigger.
+
+   The trigger shape expands to show the **INPUTS** and **OUTPUTS** sections.
+   
+1. In the **OUTPUTS** section, under **Body**, find the text for the matching tweet. To review the complete response in JSON format, select **Show raw outputs**.
