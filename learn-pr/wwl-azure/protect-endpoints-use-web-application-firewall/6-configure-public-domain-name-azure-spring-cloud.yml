@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-endpoints-use-web-application-firewall.configure-public-domain-name-azure-spring-cloud
+title: Configure the public domain name on Azure Spring Cloud
+metadata:
+  title: Configure the public domain name on Azure Spring Cloud
+  description: "Configure the public domain name on Azure Spring Cloud"
+  ms.date: 05/31/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-configure-public-domain-name-azure-spring-cloud.md)]
