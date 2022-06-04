@@ -1,5 +1,3 @@
-## Design a Strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR) 
-
 Organizations today must contend with an increasingly complex threat landscape. A key tenant of Zero Trust is assuming breach and doing that effectively means having a threat detection approach that provides a breadth of visibility across the entire estate, and the depth security teams need to drill down into individual threats. 
 
 Visibility, automation, and orchestration integrations build robust solutions for monitoring security signals. They are key to ensuring the ongoing security of an environment by detecting suspicious behavior and enabling proactive hunting for threats. They allow customers to scan for unexpected behavior and access and proactively search for bad actors already in the network. 
@@ -95,4 +93,4 @@ Most security breaches occur when attackers gain access to an environment by ste
 
 The Security Operations Microsoft Reference Architecture describes how Microsoft's security capabilities integrate with Microsoft services and applications for Microsoft's Security Operations functions. 
 
-![Security Operations Microsoft Reference Architecture](../media/)
+![Security Operations Microsoft Reference Architecture](../media/security-operations-microsoft-reference-architecture.png)

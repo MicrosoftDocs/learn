@@ -4,7 +4,7 @@ title: Design a strategy for Security Information and Event Management (SIEM) an
 metadata:
   title: Design a strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR)
   description: "Design a strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR)"
-  ms.date: 05/27/2022
+  ms.date: 06/04/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-design-strategy-for-security-information-event-management-siem-security-orchestr.md)]
+  [!include[](includes/5-design-strategy-security-information-event-management--security-orchestr.md)]

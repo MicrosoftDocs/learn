@@ -69,7 +69,7 @@ to be able to scale to meet these common processes specified below.
 #### Common operations management processes (tasks)
 
 -   **Inventory and visibility:** Account for, and ensure reporting for
-    all assets, and **collect and monitor your inventory\'s run state in
+    all assets, and **collect and monitor your inventory's run state in
     enterprise-grade environments**.
 
 -   **Optimized operations:** Track, patch, and optimize supported
@@ -158,7 +158,7 @@ management using Desired State Configuration.
 the Azure-based service that you can use to back up (or protect) and
 restore your data in the Microsoft Cloud. Azure Backup replaces existing
 on-premises or off-site backup solutions with a cloud-based solution
-that\'s reliable, secure, and cost-competitive.
+that's reliable, secure, and cost-competitive.
 
 Azure Backup offers components to download and deploy on the appropriate
 computer or server or in the cloud. The component or agent deployed
@@ -227,7 +227,7 @@ subscriptions. It helps detect threats that might otherwise go
 unnoticed, and it works with a broad ecosystem of security solutions.
 
 [Safeguard virtual machine (VM) data](/azure/security-center/security-center-introduction) in
-Azure by providing visibility into virtual machines\' security settings
+Azure by providing visibility into virtual machines' security settings
 and monitoring for threats. Defender for Cloud can monitor your virtual
 machines for:
 

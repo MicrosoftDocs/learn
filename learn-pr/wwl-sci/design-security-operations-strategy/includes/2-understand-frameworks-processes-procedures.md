@@ -51,9 +51,9 @@ which includes:
     context to fluid real-time security situations. What would have the
     most negative impact on the business? Downtime of critical systems?
     A loss of reputation and customer trust? Disclosure of sensitive
-    data? Tampering with critical data or systems? We\'ve learned it's
+    data? Tampering with critical data or systems? We've learned it's
     critical that key leaders and staff in the SOC understand this
-    context. They\'ll wade through the continuous flood of information
+    context. They'll wade through the continuous flood of information
     and triage incidents and prioritize their time, attention, and
     effort.
 
@@ -92,7 +92,7 @@ attack operators.
 
 #### Focus on empowering people 
 
-Your goal shouldn\'t be to replace people with automation. Empower your people with tools that simplify
+Your goal shouldn't be to replace people with automation. Empower your people with tools that simplify
 their daily workflows. These tools enable them to keep up with or get
 ahead of the human adversaries they face.
 
@@ -106,7 +106,7 @@ judgment is critical in defeating them.
 Security operations can be highly
 technical, but it's also just another new version of forensic
 investigation that shows up in many career fields like criminal justice.
-Don\'t be afraid to hire people with a strong competency in
+Don't be afraid to hire people with a strong competency in
 investigation or deductive or inductive reasons and train them on
 technology.
 
@@ -116,7 +116,7 @@ Metrics drive behavior, so measuring success is a critical element to
 get right. Metrics translate culture into clear measurable goals that
 drive outcomes.
 
-We\'ve learned that it's critical to consider what you measure, and the
+We've learned that it's critical to consider what you measure, and the
 ways that you focus on and enforce those metrics. Recognize that
 security operations must manage significant variables that are out of
 their direct control, like attacks and attackers. Any deviations from
@@ -131,7 +131,7 @@ organizational risk are:
     few elements SecOps has more direct control over. Measure the time
     between an alert, like when the light starts to blink, and when an
     analyst sees that alert and begins the investigation. Improving this
-    responsiveness requires that analysts don\'t waste time
+    responsiveness requires that analysts don't waste time
     investigating false positives. It can be achieved with ruthless
     prioritization, ensuring that any alert feed that requires an
     analyst response must have a track record of 90 percent true
@@ -140,7 +140,7 @@ organizational risk are:
 -   **Mean time to remediate (MTTR)**: Effectiveness of reducing risk
     measures the next period of time. That period is the time the
     analyst begins the investigation to when the incident is remediated.
-    MTTR identifies how long it takes SecOps to remove the attacker\'s
+    MTTR identifies how long it takes SecOps to remove the attacker's
     access from the environment. This information helps identify where
     to invest in processes and tools to help analysts reduce risk.
 
