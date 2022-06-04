@@ -19,7 +19,7 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
    1. Enter a project name and description.
    1. Next to **Resource**, select **create new** to create a new Cognitive Services resource.
 
-   :::image type="content" source="../media/create-new-project-1.png" alt-text="Screenshot that shows a new project name and description, with the create new link selected.":::
+   :::image type="content" source="../media/create-new-project-1.png" alt-text="Screenshot that shows a new project name and description, and the create new link option selected.":::
 
    _Create a new Cognitive Services project_
    
