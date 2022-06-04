@@ -47,7 +47,7 @@ First, we need to create the logic app resource in Azure. For this task, we need
 
 After you create and deploy a new logic app resource in the Azure portal, you can select a starter template. Let's select the blank template so that we can build our logic app workflow from scratch.
 
-On the page with the common trigger and template galleries, scroll down to the **Templates** section, and select the **Blank Logic App**  
+On the page with the common trigger and template galleries, scroll down to the **Templates** section, and select the **Blank Logic App** template.
 
 The workflow designer surface opens for you to add a trigger.
 
