@@ -20,7 +20,7 @@ The most common action type helps you access and run specific tasks using servic
 
 When you use an action to connect from your workflow to an external service or system, you typically provide connection and authorization information. This information might include a username, a password, a connection string, or an account key. The details differ and vary for each service or system.
 
-For example, to create a connection to Cognitive Services, you provide the **Site URL** so that your workflow knows where to send the request. You provide your **Account Key** to authorize your access to the service. You can get both values from your Cognitive Services account. Typically, you'll copy these values into connection information box when you add the **Detect sentiment** action to your workflow.
+For example, to create a connection to Azure Cognitive Services, you provide the **Site URL** so that your workflow knows where to send the request. You provide your **Account Key** to authorize your access to the service. You can get both values from your Azure Cognitive Services account. Typically, you'll copy these values into connection information box when you add the **Sentiment** action to your workflow.
 
 This action type helps your workflow send data for processing or pull data into your workflow. But how do you actually work with that data inside your workflow? The next action type helps with this task.
 
@@ -48,17 +48,17 @@ This action type helps you flow control constructs, such as conditional statemen
 
 ## Action parameters and return values
 
-Consider action operations as function calls that have *parameters* and *return values*. Action parameters let you pass values into the operation. Some operations use both required and optional paramters. For example, the Cognitive Services action named **Detect sentiment** has a required parameter called **Text**. This parameter represents the string that you want to analyze. The **Detect sentiment** action also has an optional parameter named **Language** that lets you provide a hint about the language used for the **Text** parameter.
+Consider action operations as function calls that have *parameters* and *return values*. Action parameters let you pass values into the operation. Some operations use both required and optional paramters. For example, the Azure Cognitive Services action named **Sentiment** has a required parameter called **Text**. This parameter represents the string that you want to analyze. The **Sentiment** action also has an optional parameter named **Language** that lets you provide a hint about the language used for the **Text** parameter.
 
-Action return values are the results from the operation. For example, the **Detect sentiment** action returns a numeric score between `0` and `1`. Scores close to `1` indicate positive sentiment, while scores close to `0` indicate negative sentiment. The following diagram summarizes the data flow for the **Detect sentiment** action as used by our example social media monitoring app:
+Action return values are the results from the operation. For example, the **Sentiment** action returns a numeric score between `0` and `1`. Scores close to `1` indicate positive sentiment, while scores close to `0` indicate negative sentiment. The following diagram summarizes the data flow for the **Sentiment** action as used by our example social media monitoring app:
 
-:::image type="content" source="../media/action-inputs-and-outputs.png" alt-text="Diagram shows a logic app workflow using the **Detect sentiment** action to call the Text Analytics service. The action passes the tweet text to the service and receives a numeric sentiment score." border="false" lightbox="../media/action-inputs-and-outputs-big.png":::
+:::image type="content" source="../media/action-inputs-and-outputs.png" alt-text="Diagram shows a logic app workflow using the **Sentiment** action to call the Text Analytics service. The action passes the tweet text to the service and receives a numeric sentiment score." border="false" lightbox="../media/action-inputs-and-outputs-big.png":::
 
 ## Static versus dynamic parameters
 
-Some parameters that you send to an action stay the same every time that your workflow runs. For example, you might want only tweets in English, so you'd always pass `en` for the **Language** parameter to the **Detect sentiment** action. This type of static parameter is straightforward. You hardcode the value when you set up the action so that the action uses the same value every time the action runs.
+Some parameters that you send to an action stay the same every time that your workflow runs. For example, you might want only tweets in English, so you'd always pass `en` for the **Language** parameter to the **Sentiment** action. This type of static parameter is straightforward. You hardcode the value when you set up the action so that the action uses the same value every time the action runs.
 
-Other parameters that you send to an action can differ every time that your workflow runs. A good example is the **Text** parameter for the **Detect sentiment** action. When you pass the tweet text into the **Text** parameter, the text might differ every run. So, how do you get access to this dynamic value?
+Other parameters that you send to an action can differ every time that your workflow runs. A good example is the **Text** parameter for the **Sentiment** action. When you pass the tweet text into the **Text** parameter, the text might differ every run. So, how do you get access to this dynamic value?
 
 The tweet that we're processing is the return value or output from the **When a new tweet is posted** trigger. This tweet data is packaged into an object with several fields that contain the tweet's details. Azure Logic Apps automatically makes this object available throughout subsequent actions in your workflow. The workflow designer provides a visual way to easily add and configure actions in your workflow. The designer also helps you select available outputs that you want to use from the preceding trigger and actions in your workflow.
 
