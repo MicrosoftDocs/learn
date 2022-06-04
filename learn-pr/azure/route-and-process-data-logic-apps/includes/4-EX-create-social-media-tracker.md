@@ -6,7 +6,7 @@ The first step is a Twitter trigger named "When a new tweet is posted. This trig
 
 ## Create the logic app resource
 
-First, we need to create the logic app resource in Azure. For this task, we need to locate the **Logic App** resource type in the Azure portal.
+First, we need to create the logic app resource in Azure. For this task, we need to find the **Logic App** resource type in the Azure portal.
 
 1. With the same account that you used to activate the sandbox, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
@@ -84,7 +84,7 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    | **Search text** | Yes | Shoe | The text to find in the tweet. To search for hashtags, include a hashtag (**#**) at the start of the search text. |
    | (Interval) | Yes | 1 | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new tweets every three hours. |
    | (Frequency) | Yes | Minute | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
-   | **Add a new parameter | No | None | Any parameters to add to the trigger. |
+   | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
    |||||
 
    *Substitution*: For the RSS trigger, provide the following information:
@@ -95,7 +95,7 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    | **Chosen property** | No | UpdatedOn | The property to use for determining which articles to return |
    | (Interval) | Yes | 1 | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new articles every three hours. |
    | (Frequency) | Yes | Minute | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
-   | **Add a new parameter | No | None | Any parameters to add to the trigger. |
+   | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
    |||||
 
 1. When you're done, on the designer toolbar, select **Save**.
