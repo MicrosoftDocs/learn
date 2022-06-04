@@ -3,7 +3,7 @@ uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
 metadata:
   title: Track wild polar bears with AI
   description: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
-  ms.date: 06/10/2022
+  ms.date: 06/04/2022
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
