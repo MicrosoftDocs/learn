@@ -47,7 +47,7 @@ An OpenAPI definition file is a JSON file that lists the API's methods, paramete
    });
    ```
 
-   At deployment, this code installs the Swagger UI, which is a web page that you can use to test your Web API methods. The code also generates and publishes a JSON file that describes your API and is compliant with the OpenAPI standard. You can download and use the that file to create a custom connector in Azure Logic Apps.
+   At deployment, this code installs the Swagger UI, which is a web page that you can use to test your Web API methods. The code also generates and publishes a JSON file that describes your API and is compliant with the OpenAPI standard. You can download and use the JSON file to create a custom connector in Azure Logic Apps.
 
    > [!NOTE]
    > In the previous exercise, you deployed a prebuilt Web API to Azure. By default, this deployment included the preceding 
