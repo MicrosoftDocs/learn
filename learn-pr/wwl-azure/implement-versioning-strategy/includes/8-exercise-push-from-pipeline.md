@@ -2,22 +2,18 @@
 > In your Azure DevOps PartsUnlimited project, prepare two builds pipelines (used in previous demos)
 
  -  Build pipeline **PartsUnlimited Security Package**.
-    
      -  **.NET Core** build task (Restore, build, push)
      -  Enable CI trigger
  -  Build pipeline **PartsUnlimited E2E**.
-    
      -  **ASP.NET** web application type
      -  NuGet restore task
 
 ## Steps to build and push the NuGet package
 
 1.  Edit the build pipeline **PartsUnlimited Security Package**.
-    
      -  dotnet restore
      -  dotnet build
      -  dotnet push
-        
          -  Use the command `nuget push` and specify path `**/*.nupkg`.
          -  Select target feed PartsUnlimited.
 2.  Start a new build and select agent pool.
@@ -29,7 +25,6 @@
     It shows the feed already contains the **PartsUnlimited.Security 1.0.0**. We go back to the Visual Studio project to see what is happening.
 
 4.  Open the source code for the PartsUnlimited package in Visual Studio in a different solution.
-    
      -  Open the **Project Properties.**
      -  Go to the package tab.
 
