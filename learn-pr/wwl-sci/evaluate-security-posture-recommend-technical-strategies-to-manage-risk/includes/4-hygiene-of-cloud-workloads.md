@@ -58,7 +58,7 @@ where the Fix button is grey out.
 
 For this reason, workload owners must be able to receive notifications
 when there are open security recommendations for them to remediate. In
-Defender for Cloud you can leverage the [Workflow
+Defender for Cloud you can use the [Workflow
 Automation](/azure/defender-for-cloud/workflow-automation)
 capability to activate actions such as sending an email to the resource
 owner, when a recommendation is triggered. An example of this workflow
@@ -67,14 +67,14 @@ is shown below:
 ![Workflow automation example](../media/workflow-automation.jpeg) 
 
 1.  The team that is responsible for Microsoft Defender for Cloud
-    identifies that there is a security recommendation that needs to be
+    identifies that there's a security recommendation that needs to be
     addressed and which resources are affected.
 
 2.  A ticket is open and assigned to the workload owner. In this ticket
     they have details about the security recommendation and the
     suggested steps to remediate.
 
-3.  The workload owner reviews the ticket and identifies that there is a
+3.  The workload owner reviews the ticket and identifies that there's a
     quick fix for this recommendation. They can use the View remediation
     logic button to understand what changes will be made to the system.
 
@@ -83,7 +83,7 @@ is shown below:
 
 5.  The remediation is applied on the day that was scheduled.
 
-Workload owners can also leverage the built-in integration with Defender
+Workload owners can also use the built-in integration with Defender
 for Cloud available in the workload's proprieties. For example, a
 Database Administrator that manages multiple databases can see security
 recommendations that will improve the security hygiene of its workloads

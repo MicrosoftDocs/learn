@@ -3,7 +3,7 @@ Learn how to evaluate your organization's security posture and recommend the tec
 
 ### Learning Objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
 -   Evaluate security postures by using benchmarks
 -   Evaluate security postures by using Microsoft Defender for Cloud
@@ -51,7 +51,7 @@ AWS workloads. Benchmarks will also help you to accelerate the
 identification of security gaps by providing remediation steps to harden
 your workloads. As you remediate these security recommendations, your
 workloads will get more secure, and your overall cloud security posture
-is enhanced. As an architect, you will look to benchmarks as a tool to
+is enhanced. As an architect, you'll look to benchmarks as a tool to
 guide your efforts to improve the cloud security posture while follow
 industry standards.
 
@@ -65,7 +65,7 @@ can also improve your security by ensuring the process steps are done
 quickly, consistently, and according to your predefined requirements.
 
 To improve the security hygiene of the cloud workloads, you also need to
-ensure that you are leveraging security best practices to harden these
+ensure that you're leveraging security best practices to harden these
 workloads. Each workload has a different set of security best practices
 that must be in place to improve its security hygiene. Make sure to
 visit <https://aka.ms/MyASIS> for more information about security best
@@ -104,8 +104,8 @@ regulatory compliance dashboard as shown in the example below:
 This benchmark gives you visibility of which security recommendations
 are open per compliance control. Under each applicable compliance
 control, you have a set of assessments run by Defender for Cloud that
-are associated with that control. If they are all green, it means those
-assessments are currently passing; this does not ensure you are fully
+are associated with that control. If they're all green, it means those
+assessments are currently passing; this does not ensure you're fully
 compliant with that control. Furthermore, not all controls for any
 particular regulation are covered by Defender for Cloud assessments, and
 therefore this report is only a partial view of your overall compliance

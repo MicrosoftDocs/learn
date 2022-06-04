@@ -17,7 +17,7 @@ relevance, and priority. Threat intelligence goes beyond the lists of
 bad domains or bad hashes. It provides the necessary context, relevance,
 and priority---sometimes called enrichment. This helps people to make
 faster, better, and more proactive cybersecurity decisions. Below you
-have examples of scenarios where threat intelligence can be leveraged:
+have examples of scenarios where threat intelligence can be used:
 
 -   A security analyst who uses threat intelligence to analyse the
     highest priority signals and takes action.
@@ -80,7 +80,7 @@ for malicious cyber activity. You can also use Microsoft Sentinel to:
 
 -   Visualize key CTI information in workbooks
 
-Another product that also leverages threat intelligence is Microsoft
+Another product that also uses threat intelligence is Microsoft
 Defender for Cloud. Defender for Cloud\'s threat protection works by
 monitoring security information from your Azure resources, the network,
 and connected partner solutions. It analyzes this information, often
@@ -126,7 +126,7 @@ where there\'s an ongoing investigation to understand the source of the
 attack, the attacker's motivations, and what to do to mitigate this
 issue in the future.
 
-Threat intelligence is also leveraged in other Microsoft Security
+Threat intelligence is also used in other Microsoft Security
 solutions, such as Azure AD Identity Protection, which has a featured
 called Risk Detection. Risk detections (both user and sign-in linked)
 contribute to the overall user risk score that is found in the Risky
@@ -167,7 +167,7 @@ you have more details about each phase:
     control deficiency measures the effectiveness of implemented
     mitigation controls.
 
--   Response: How you will respond to the risk that was identified,
+-   Response: How you'll respond to the risk that was identified,
     which could be based on the following options:
 
     -   Tolerate: Areas of low-risk exposure with a low level of

@@ -41,7 +41,7 @@ resources that are not secure by default.
 
 Having a solid Azure Governance enables you to ensure that new resources
 that are deployed, are going to have certain standards, patterns, and
-configurations. To ensure proper governance you can leverage Azure
+configurations. To ensure proper governance you can use Azure
 Policy and Azure Blueprints. This will allow you to enforce policies and
 reject deployment of resources that are not following certain standards.
 

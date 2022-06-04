@@ -27,16 +27,16 @@ disruptions to core business operations. The cloud will play an
 important role in this transition. One of the key requirements for this
 transformation is to empower remote workers in a secure manner. The new
 CIO wants to ensure remote workers are using multi-factor authentication
-and if they are traveling to visit customers, the access should be
+and if they're traveling to visit customers, the access should be
 restricted based on their geo-location. The CIO also wants to ensure
 that all incubation projects led by the AI/Robotics Team is tested in an
 isolated environment to avoid disruption in the production environment.
 
 The new CIO is concerned with the rise of high-profile companies getting
 compromised and asked the CSO to perform a risk assessment to identify
-the companies' high assets and ensure they are secure. In addition, the
+the companies' high assets and ensure they're secure. In addition, the
 CIO wants the CSO to track security posture enhancement overtime and
-leverage cyber-threat intelligence to improve their defences against
+use cyber-threat intelligence to improve their defences against
 threats. The CIO wants to have a monthly meeting to track this progress
 and the CSO should present a sort of KPI to show how the company is
 progressing. This is the first transformation effort to start since the

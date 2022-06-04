@@ -1,7 +1,7 @@
 
 In this module you learned how to evaluate your organization's security
 posture by using different benchmarks, including Azure Security
-Benchmark. You learned how to leverage Microsoft Defender for Cloud as a
+Benchmark. You learned how to use Microsoft Defender for Cloud as a
 cloud security posture management platform and improved your security
 hygiene. You also learned to use Secure Score to drive security posture
 enhancements and track progress overtime. As part of this continuous
