@@ -44,7 +44,7 @@ Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
 
 ### Alter control flow
 
-This action type helps you flow control constructs, such as conditional statements and loops to your workflow. The social media monitoring app will use a control action to branch different paths, based on whether the tweet sentiment is positive or negative. We'll show how this action type works and discuss all the control actions later in this module.
+This action type helps you manage the data flow through your logic app by using constructs such as conditional statements and loops. The social media monitoring app will use a control action that creates decision branches, based on whether the tweet sentiment is positive or negative. We'll show how this action type works and discuss all the control actions later in this module.
 
 ## Action parameters and return values
 
