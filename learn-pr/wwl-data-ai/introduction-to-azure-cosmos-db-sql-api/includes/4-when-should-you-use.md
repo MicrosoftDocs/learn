@@ -4,7 +4,7 @@ For enterprise scenarios, Azure Cosmos DB SQL API has a comprehensive suite of f
 
 ## Common use cases for the Azure Cosmos DB SQL API
 
-As a fast NoSQL database with a flexible API, Azure Cosmos DB SQL API is well suited for high-performance applications with global ambition. Speed and flexibility makes Azure Cosmos DB SQL API great for web, retail, IoT, gaming, and mobile applications that require flexibility, low response time, and transactions at massive volume or velocity.
+As a fast NoSQL database with a flexible API, Azure Cosmos DB SQL API is well suited for high-performance applications with global ambition. Speed and flexibility make Azure Cosmos DB SQL API great for web, retail, IoT, gaming, and mobile applications that require flexibility, low response time, and transactions at massive volume or velocity.
 
 ### IoT/telemetry
 
