@@ -40,7 +40,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
     <Project Sdk="Microsoft.NET.Sdk.Web">
 
       <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <ProjectGuid>{A0C4E31E-AC75-4F39-9F59-0AA19D9B8F46}</ProjectGuid>
       </PropertyGroup>
     
