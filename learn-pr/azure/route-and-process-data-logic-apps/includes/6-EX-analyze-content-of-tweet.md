@@ -10,7 +10,7 @@ The Azure Cognitive Services for Language API provides natural language processi
 
 - Register the Text Analytics service.
 
-- Return a key and the endpoint URL to us. We'll need these values in this exercise to make calls and get back sentiment scores.
+- Return an account key and an endpoint URL for the Cognitive Services. For this exercise, we need these values to make calls and get back sentiment scores.
 
 1. In Azure Cloud Shell to the right, run the following `curl` command to copy the **setup-textanalytics.sh** script from GitHub:
 
@@ -44,7 +44,7 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
 1. Select the **Azure Cognitive Services for Language** connector.
 
-1. In the **Actions** section, select **Sentiment (**.
+1. In the **Actions** section, select **Sentiment**.
 
    The connection profile box appears so that you can provide informtion for your connection to your Cognitive Services account.
 
@@ -68,7 +68,7 @@ Next, we'll set up the **Sentiment** action's properties to pass in the tweet te
 
 1. In the **Sentiment** action, select the **documents-id** field. Provide a unique ID to assign your document.
 
-1. In the **Sentiment** action, select the **documents-text** field.
+1. Next, select the **documents-text** field.
 
    The dynamic content list appears for you to select outputs from the prededing trigger or any actions.
 
