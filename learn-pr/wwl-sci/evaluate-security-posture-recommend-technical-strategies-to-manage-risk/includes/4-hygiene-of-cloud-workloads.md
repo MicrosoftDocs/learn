@@ -54,7 +54,7 @@ in the workload and tries to remediate a recommendation by using the
 \*Fix\* button, they will have the experience shown in the image below,
 where the Fix button is grey out.
 
-![Auditing for SQL Server should be enabled](../media/auditing-sqlfix.png) 
+![Auditing for SQL Server should be enabled](../media/audit-sql-fix.png) 
 
 For this reason, workload owners must be able to receive notifications
 when there are open security recommendations for them to remediate. In

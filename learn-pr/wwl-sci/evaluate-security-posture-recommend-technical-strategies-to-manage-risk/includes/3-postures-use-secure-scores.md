@@ -53,4 +53,4 @@ non-compliant resources upon creation. Below you have an example of a
 recommendation that has the *Enforce* button, which behind the scene is
 implementing the *DeployIfNotExist* effect.
 
-![Auditing on SQL Server](../media/auditing-sql-server.png)
+![Auditing on SQL Server](../media/audit-sql-server.png)

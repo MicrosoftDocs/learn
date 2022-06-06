@@ -1,7 +1,7 @@
 
 ### Scenario
 
-![The Tailwind Traderslogo.](../media/tailwind-traders-logo.png)
+![The Tailwind Traders logo.](../media/tailwind-traders-logo.png)
 
 Tailwind Traders is a modern commerce company. For more than 30 years,
 the company has been a popular retail destination. It has grown to more
@@ -45,46 +45,39 @@ will examine how IT operates in the cloud.
 
 ### Questions 
 
-1\) Evaluate security posture
+1. Evaluate security posture
 
--   In this scenario, should the company track progress using Azure
-    Security Benchmark or Secure Score? Justify your answer.
+    - In this scenario, should the company track progress using Azure Security Benchmark or Secure Score? Justify your answer.
 
--   What tool should the CISO adopt to track progress overtime?
+    - What tool should the CISO adopt to track progress overtime?
 
-2\) Threat intelligence
+2. Threat intelligence
 
--   Which tool should be utilized to aggregate CTI feeds and present in
-    a meaningful dashboard?
+    - Which tool should be utilized to aggregate CTI feeds and present in a meaningful dashboard?
 
--   Which tool provides built-in threat intelligence report that can be
-    used to improve the companies' defences?
+    - Which tool provides built-in threat intelligence report that can be used to improve the companies' defences?
 
-3\) Which security capability will enable Tailwind Traders to implement
-the CIO's vision of empowering the remote users while enforcing security
-and restrictions based on the user's geo-location?
+3. Which security capability will enable Tailwind Traders to implement the CIO's vision of empowering the remote users while enforcing security and restrictions based on the user's geo-location?
 
-a\. Defender for Cloud
+     a. Defender for Cloud
 
-b\. Microsoft Sentinel
+     b. Microsoft Sentinel
 
-c\. Azure AD Identity Protection
+     c. Azure AD Identity Protection
 
-d\. Azure WAF
+     d. Azure WAF
 
-Answer: C
+     Answer: C
 
-4\) Which cloud security capability should be used to enable the
-AI/Robotics Team test their apps without disrupting the production
-environment?
+4. Which cloud security capability should be used to enable the AI/Robotics Team test their apps without disrupting the production environment?
 
-a\. SDL
+     a. SDL
 
-b\. Azure Landing Zone
+     b. Azure Landing Zone
 
-c\. Azure Policy
+     c. Azure Policy
 
-d\. On-premises sandbox
+     d. On-premises sandbox
 
-Answer: B
+    Answer: B
 

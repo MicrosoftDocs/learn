@@ -7,8 +7,7 @@ consider all platform resources that are required to support the
 customer\'s application portfolio and don\'t differentiate between
 infrastructure as a service or platform as a service.
 
-![Diagram that shows a landing zone 
-design.](../media/landing-zone.png) 
+![Diagram that shows a landing zone design.](../media/land-zone.png) 
 
 A landing zone is an environment for hosting your workloads,
 pre-provisioned through code. Watch the following video to learn more.
