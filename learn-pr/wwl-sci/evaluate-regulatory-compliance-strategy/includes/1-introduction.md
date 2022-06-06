@@ -1,9 +1,9 @@
 
-Learn how to evaluate a regulatory compliance strategy for your organization and leverage the right set of tools to measure progress.
+Learn how to evaluate a regulatory compliance strategy for your organization and use the right set of tools to measure progress.
 
 ### Learning Objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
 - Interpret compliance requirements and their technical capabilities.
 - Evaluate infrastructure compliance by using Microsoft Defender for Cloud.

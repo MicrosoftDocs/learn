@@ -1,7 +1,7 @@
 
 In this module you learned that business risk is the starting point to
 establishing a compliance strategy, since it is during the business's
-risk assessment that you will identify the regulatory compliance needs
+risk assessment that you'll identify the regulatory compliance needs
 based on the industry's requirements. You learned that operational
 compliance should be in place to support the regulatory compliance needs
 and the options available in Azure to help you be compliant with the
@@ -19,13 +19,13 @@ protection.
 Visit the links below for more information about the topics covered in
 this module:
 
-- [Define cloud governance corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition)
-- [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
-- [Azure and other Microsoft cloud services compliance offerings -
+* [Define cloud governance corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition)
+* [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
+* [Azure and other Microsoft cloud services compliance offerings -
     Azure Compliance](/azure/compliance/offerings/)
-- [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
-- [Evaluate and define corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/corporate-policy)
-- [Regulatory compliance - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/design-regulatory-compliance)
+* [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
+* [Evaluate and define corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/corporate-policy)
+* [Regulatory compliance - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/design-regulatory-compliance)
 * [HIPAA HITRUST 9.2](/azure/governance/policy/samples/hipaa-hitrust-9-2)
 * Visit Azure Compliance offerings to learn more about the industries
 that are covered by Azure from the compliance perspective: [Azure and other Microsoft cloud services compliance offerings - Azure Compliance](/azure/compliance/offerings/)

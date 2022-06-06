@@ -3,7 +3,7 @@ Data sovereignty implies data residency; however, it also introduces rules and r
 
 When it comes to compliance, data residency regulations govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally. These regulations can differ significantly depending on jurisdiction. 
 
-For regulatory compliance considerations, data residency considerations may support or even mandate the physical locations where data can be stored, and how and when it can be transferred internationally. These regulations can differ significantly depending on jurisdiction. Azure's regions and service features provide customers with different avenues so they can select and limit data residency and data access. This enables customers in regulated industries to successfully run mission-critical workloads in the cloud and leverage all the advantages of the Microsoft hyperscale cloud. 
+For regulatory compliance considerations, data residency considerations may support or even mandate the physical locations where data can be stored, and how and when it can be transferred internationally. These regulations can differ significantly depending on jurisdiction. Azure's regions and service features provide customers with different avenues so they can select and limit data residency and data access. This enables customers in regulated industries to successfully run mission-critical workloads in the cloud and use all the advantages of the Microsoft hyperscale cloud. 
 
 
 ### Data Sovereignty

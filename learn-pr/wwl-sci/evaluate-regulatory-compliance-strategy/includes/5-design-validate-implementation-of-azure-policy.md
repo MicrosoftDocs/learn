@@ -9,7 +9,7 @@ When designing your Azure Policy, you need to take into consideration the organi
 
 Azure Policy can also help to set guardrails throughout your resources to help ensure cloud compliance, avoid misconfigurations, and practice consistent resource governance. Consider also using Azure Policy to reduce the number of external approval processes by implementing policies at the core of the Azure platform for increased developer productivity and control optimization of your cloud spend. Azure Policy will help you govern your Azure resources with simplicity, enforce policies and audit compliance, and monitor compliance continuously. Azure Policy establishes conventions for resources. Policy definitions describe resource compliance conditions and the effect to take if a condition is met. A condition compares a resource property field or a value to a required value. Resource property fields are accessed by using aliases. When a resource property field is an array, a special array alias can be used to select values from all array members and apply a condition to each one. The diagram below shows an example of how Azure Policy can be used in the beginning of the pipeline to ensure that policies are enforced upon the creation of the resources. 
 
-:::image type="content" source="../media/pre-flight-validation-authoring.png" alt-text="An example of how Azure Policy can be used in the beginning of the pipeline to ensure that policies are enforced upon the creation of the resources.":::
+![An example of how Azure Policy can be used in the beginning of the pipeline to ensure that policies are enforced upon the creation of the resources.](../media/pre-flight-validation-authoring.png)
 
 ### Control Costs
 

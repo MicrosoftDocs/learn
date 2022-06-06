@@ -14,15 +14,15 @@ Noncompliance can lead to fines or other business impact. Work with your regulat
 
 In traditional governance and incremental governance, corporate policy creates the working definition of governance. Most IT governance actions seek to implement technology to monitor, enforce, operate, and automate those corporate policies. Cloud governance is built on similar concepts.
 
-:::image type="content" source="../media/define-corporate-policy.png" alt-text="Corporate governance and governance disciplines":::
+![Corporate governance and governance disciplines](../media/define-corporate-policy.png)
 
 *Figure 1: Corporate governance and governance disciplines.*
 
-The image above demonstrates the interactions between business risk, policy and compliance, and monitoring and enforcement to create a governance strategy. During the corporate policy definition you will need to first evaluate the business risk, which includes the investigation of current cloud adoption plans and data classification. In this phase you will work with the business to balance risk tolerance and mitigation costs.
+The image above demonstrates the interactions between business risk, policy and compliance, and monitoring and enforcement to create a governance strategy. During the corporate policy definition you'll need to first evaluate the business risk, which includes the investigation of current cloud adoption plans and data classification. In this phase you'll work with the business to balance risk tolerance and mitigation costs.
 
-Once you establish the business risk, you will evaluate risk tolerance to inform minimally invasive policies that govern cloud adoption and manage risks. Keep in mind that in some industries, third-party compliance affects initial policy creation. The final stage is comprised by the pace of adoption and innovation activities that will naturally create policy violations. Executing relevant processes will aid in monitoring and enforcing adherence to policies.
+Once you establish the business risk, you'll evaluate risk tolerance to inform minimally invasive policies that govern cloud adoption and manage risks. Keep in mind that in some industries, third-party compliance affects initial policy creation. The final stage is comprised by the pace of adoption and innovation activities that will naturally create policy violations. Executing relevant processes will aid in monitoring and enforcing adherence to policies.
 
-After defining your corporate policy strategy, which includes regulatory compliance requirements, you will need to ensure that you have proper governance in place to stay compliant over time as new workloads are provisioned. You can use the five disciplines of cloud governance shown in the diagram as the main pillars for your cloud governance strategy.
+After defining your corporate policy strategy, which includes regulatory compliance requirements, you'll need to ensure that you have proper governance in place to stay compliant over time as new workloads are provisioned. You can use the five disciplines of cloud governance shown in the diagram as the main pillars for your cloud governance strategy.
 
 #### Compliance considerations
 
