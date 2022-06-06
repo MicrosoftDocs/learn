@@ -3,7 +3,7 @@ uid: learn.wwl.specify-security-requirements-for-applications
 metadata:
   title: Specify security requirements for applications
   description: "Learn how to specify cybersecurity requirements for applications."
-  ms.date: 06/04/2022
+  ms.date: 06/06/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -29,7 +29,7 @@ products:
 units:
 - learn.wwl.specify-security-requirements-for-applications.introduction
 - learn.wwl.specify-security-requirements-for-applications.understand-application-threat-modeling
-- learn.wwl.specify-security-requirements-for-applications.specify-priorities-for-mitigating-threats-to-applications
+- learn.wwl.specify-security-requirements-for-applications.specify-priorities-for-mitigate-threats-to-applications
 - learn.wwl.specify-security-requirements-for-applications.standard-for-onboarding-new-application
 - learn.wwl.specify-security-requirements-for-applications.specify-security-strategy-apis
 - learn.wwl.specify-security-requirements-for-applications.exercise

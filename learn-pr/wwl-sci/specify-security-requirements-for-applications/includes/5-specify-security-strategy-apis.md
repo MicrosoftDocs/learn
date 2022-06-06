@@ -17,8 +17,7 @@ This section focuses on applications written by your organization or by
 others on behalf of your organization vs. SaaS or commercially available
 applications installed on IaaS VMs.
 
-![Diagram of Application
-Models](../media/iaas-paas-application-models.png) 
+![Diagram of Application Models](../media/iaas-paas-application-models.png) 
 
 Modern cloud platforms like Azure can host both legacy and modern
 generations of applications
@@ -152,8 +151,7 @@ security impact:
     provides a service to centrally manage application settings and
     feature flags, which helps mitigate this risk.
 
-#### For additional information on Security Standards for Applications, see
-the following:
+#### For additional information on Security Standards for Applications, see the following:
 
 -   [**Best Practices for Application
     Registration**](/azure/active-directory/develop/security-best-practices-for-app-registration)

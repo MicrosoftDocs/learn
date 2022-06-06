@@ -1,8 +1,7 @@
 
 ### Meet Tailwind Traders
 
-![Tailwind Traders
-logo.](../media/tailwind-traders.png) 
+![Tailwind Traders logo.](../media/tailwind-traders.png) 
 
 Tailwind Trader is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
