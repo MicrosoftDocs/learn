@@ -124,9 +124,9 @@ Now we'll review the trigger outputs and workflow's run history.
 
 1. Return to **Runs history** section. If at least one completed run appears, select a row for any successful run.
 
-   A page named **Logic app run** opens and the status for each step in the workflow and the time taken to run each step. From this view, you can also review the data that flowed through each step.
+   A page named **Logic app run** opens to show the status for each step in the workflow and the time taken to run each step. From this view, you can also review the data that flowed through each step.
 
-1. To view the trigger inputs and outputs, select the Twitter trigger.
+1. To view the trigger's inputs and outputs, select the Twitter trigger.
 
    The trigger shape expands to show the **INPUTS** and **OUTPUTS** sections.
    
