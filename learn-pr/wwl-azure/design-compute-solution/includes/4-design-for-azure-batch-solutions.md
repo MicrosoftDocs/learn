@@ -1,6 +1,6 @@
 [Azure Batch](/azure/batch/batch-technical-overview) runs large-scale applications efficiently in the cloud. You can schedule compute-intensive tasks and dynamically adjust resources for your solution without managing infrastructure. Azure Batch can create and manage a pool of compute nodes (virtual machines). Azure Batch can also install the application that you want to run, and schedule jobs to run on the compute nodes.
 
-:::image type="content" source="../media/select-azure-batch.png" alt-text="Flowchart for selecting Azure Batch.":::
+:::image type="content" source="../media/select-azure-batch.png" alt-text="Flowchart for selecting Azure Batch. An alternative is virtual machines. Methods include lift and shift, build new, and cloud optimized. Checks include migration and containers. ":::
 
  
 ### When to use Azure Batch
