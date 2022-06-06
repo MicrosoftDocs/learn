@@ -93,8 +93,7 @@ compliance with legal and regulatory constraints.
 
 This example includes a second tenant for Contoso Japan:
 
-![Teams Description automatically generated with medium
-confidence](../media/uses-for-multi-tenants.png)
+![Teams Description automatically generated with medium confidence](../media/uses-for-multi-tenants.png)
 
 User accounts, identities, security groups, subscriptions, licenses, and
 storage can't be shared among tenants. All tenants can have multiple
@@ -135,7 +134,7 @@ Azure Arc provides a centralized, unified way to:
 
 -   Manage an entire environment by projecting existing non-Azure and/or on-premises resources into Azure Resource Manager
 
--   Manage virtual machines, Kubernetes clusters, and databases as if they are running in Azure
+-   Manage virtual machines, Kubernetes clusters, and databases as if they're running in Azure
 
 -   Use familiar Azure services and management capabilities, regardless of where they live
 
@@ -143,8 +142,7 @@ Azure Arc provides a centralized, unified way to:
 
 -   Configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions
 
-![Graphical user interface Description automatically
-generated](../media/manage-hybrid-environments.png) 
+![Graphical user interface Description automatically generated](../media/manage-hybrid-environments.png) 
 
 #### Manage hybrid environments at scale with Azure Policy
 

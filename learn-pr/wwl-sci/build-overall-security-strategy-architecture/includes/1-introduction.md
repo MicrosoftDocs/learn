@@ -20,7 +20,7 @@ The content in the module will help you prepare for Exam SC-100: Cybersecurity A
 
 ### Role of Security Architecture
 
-:::image type="content" source="../media/architects-help-connect-teams.png" alt-text="Diagram of architects and teams management ":::
+![Diagram of architects and teams management](../media/architects-help-connect-teams.png)
 
 #### What is a Security Architect?
 

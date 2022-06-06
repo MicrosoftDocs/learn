@@ -73,39 +73,23 @@ The following design practices support BCDR for application workloads:
 
 -   Employ Azure Site Recovery for Azure-to-Azure VM DR scenarios
 
-Site Recovery uses real-time replication and recovery automation to
-replicate workloads across regions. Built-in platform capabilities for
-VM workloads meet low RPO and RTO requirements. You can use Site
-Recovery to run recovery drills without affecting production workloads.
-You can also use Azure Policy to enable replication and to audit VM
-protection.
+     Site Recovery uses real-time replication and recovery automation to replicate workloads across regions. Built-in platform capabilities for VM workloads meet low RPO and RTO requirements. You can use Site Recovery to run recovery drills without affecting production workloads. You can also use Azure Policy to enable replication and to audit VM protection.
 
 -   Use native PaaS DR capabilities
 
-Built-in PaaS features simplify both design and deployment automation
-for replication and failover in workload architectures. Organizations
-that define service standards can also audit and enforce the service
-configuration through Azure Policy.
+     Built-in PaaS features simplify both design and deployment automation for replication and failover in workload architectures. Organizations that define service standards can also audit and enforce the service configuration through Azure Policy.
 
 -   Use Azure-native backup capabilities
 
-Azure Backup and PaaS-native backup features remove the need for
-third-party backup software and infrastructure. As with other native
-features, you can set, audit, and enforce backup configurations with
-Azure Policy to ensure compliance with organization requirements.
+     Azure Backup and PaaS-native backup features remove the need for third-party backup software and infrastructure. As with other native features, you can set, audit, and enforce backup configurations with Azure Policy to ensure compliance with organization requirements.
 
 -   Use multiple regions and peering locations for ExpressRoute connectivity
 
-A redundant hybrid network architecture can help ensure uninterrupted
-cross-premises connectivity if an outage affects an Azure region or
-peering provider location.
+     A redundant hybrid network architecture can help ensure uninterrupted cross-premises connectivity if an outage affects an Azure region or peering provider location.
 
 -   Avoid using overlapping IP address ranges for production and DR sites.
 
-Production DR networks that use the same classless interdomain routing
-blocks require a failover process that can complicate and delay
-application failover. When possible, plan for a BCDR network
-architecture that provides concurrent connectivity to all sites.
+     Production DR networks that use the same classless interdomain routing blocks require a failover process that can complicate and delay application failover. When possible, plan for a BCDR network architecture that provides concurrent connectivity to all sites.
 
 ### Overview of the reliability pillar
 

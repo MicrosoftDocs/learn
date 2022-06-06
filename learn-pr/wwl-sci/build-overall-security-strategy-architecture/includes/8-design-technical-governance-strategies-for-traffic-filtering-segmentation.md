@@ -32,7 +32,7 @@ Based on the Zero Trust concept, consider using a perimeter network for all high
 #### Avoid exposure to the internet with dedicated WAN links
 
 Many organizations have chosen the hybrid IT route. With hybrid IT, some of the company's information assets are in Azure, and others remain on-premises. In many cases, some components of a service are running in Azure while other components remain on-premises.
-In a hybrid IT scenario, there is usually some type of cross-premises connectivity. Cross-premises connectivity allows the company to connect its on-premises networks to Azure virtual networks. 
+In a hybrid IT scenario, there's usually some type of cross-premises connectivity. Cross-premises connectivity allows the company to connect its on-premises networks to Azure virtual networks. 
 
 #### Use virtual network appliances
 
