@@ -20,3 +20,4 @@ In this module, you will:
 
 - An Azure account
 - A basic understanding of how to create resources in Azure
+- (Optional) A basic understanding of how to use Jupyter notebooks and Python, to upload and tag the dataset images via Python/Jupyter notebook instead of via the Azure user interface
