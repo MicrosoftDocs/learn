@@ -49,7 +49,7 @@ recommendations and questions. Here are the specific requirements.
         1.  Evaluate a solution and explain your decision-making
             process.
 
-            -   Microsoft Defender for Cloud€¯- Helps you prevent,
+            -   Microsoft Defender for Cloud- Helps you prevent,
                 detect, and respond to threats with increased visibility
                 into (and control over) the security of your Azure
                 resources. It provides integrated security monitoring
