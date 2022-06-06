@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. Public IP addresses can be assigned to virtual machines."
     - content: "Azure Data Lake"
       isCorrect: false
-      explanation: "Incorrect. Although Azure Data Lake is accessible over the internet, a public IP address isn't assigned to the service."
+      explanation: "Incorrect. Azure Data Lake is accessible over the internet, a public IP address isn't assigned to the service."
     - content: "Azure Key Vault"
       isCorrect: false
-      explanation: "Incorrect. Although Azure Key Vault is accessible over the internet, a public IP address isn't assigned to the service."
+      explanation: "Incorrect. Azure Key Vault is accessible over the internet, a public IP address isn't assigned to the service."
