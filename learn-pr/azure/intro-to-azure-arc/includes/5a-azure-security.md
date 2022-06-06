@@ -36,7 +36,7 @@ All the analytics rules and detections in Microsoft Sentinel can be viewed from 
 
 ## Azure Arc security with Microsoft Defender
 
-Microsoft Defender for Servers and Microsoft Defender for Containers provide added threat protection for Contoso's servers and Kubernetes clusters:
+Microsoft Defender for Servers and Microsoft Defender for Containers provide added threat protection for Contoso's servers and Kubernetes clusters, including:
 
 - **Microsoft Defender for Servers** is one of the enhanced security features of Defender for Cloud. Defender for Servers adds threat detection and advanced defenses to your Windows and Linux machines whether they're running in Azure, on-premises, or in a multi-cloud environment.
 - **Microsoft Defender for Containers** is the cloud-native solution for securing your containers. Defender for Containers protects your clusters running in Azure Kubernetes Service (AKS) as well as Arc-enabled Kubernetes clusters running in other common container environments.
