@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. The security strategy must enable defined business outcomes, reduce risk to an acceptable level, and enable employees to be productive."
     - content: "Reduce risk to zero and enable employees to be productive."
       isCorrect: false
-      explanation: "Incorrect. Reducing risk to zero may be too costly for the company and the security controls that will need to be in place, may be more expensive than the asset, which makes inviable solution."
+      explanation: "Incorrect. Reducing risk to zero may be too costly for the company. In addition, the cost of the security controls could be more expensive than the value of the asset being protected."
     - content: "Reduce risk to an acceptable level and enable partners."
       isCorrect: false
       explanation: "Incorrect. The security strategy can enable partners, but the answer is incomplete since it doesn't cover employees first."
@@ -57,7 +57,7 @@ quiz:
       explanation: "Incorrect. Productivity and security are actually key security strategy principles."
     - content: "Shared responsibility"
       isCorrect: false
-      explanation: "Incorrect. Share responsibility is actually a key security strategy principle."
+      explanation: "Incorrect. Shared responsibility is actually a key security strategy principle."
     - content: "Reduce compromise"
       isCorrect: true
       explanation: "Correct. Reduce compromise isn't a key security strategy principle."
@@ -76,10 +76,10 @@ quiz:
     choices:
     - content: "Visibility"
       isCorrect: false
-      explanation: "Incorrect. Visibility is about understand the security state and risk across resources."
+      explanation: "Incorrect. Visibility is about understanding the security state and risk across resources."
     - content: "Control"
       isCorrect: false
-      explanation: "Incorrect. Control is about define consistent security policies and enable controls."
+      explanation: "Incorrect. Control is about defining consistent security policies and enabling controls."
     - content: "Guidance"
       isCorrect: true
       explanation: "Correct. Guidance is used to elevate security through built-in intelligence and recommendations."

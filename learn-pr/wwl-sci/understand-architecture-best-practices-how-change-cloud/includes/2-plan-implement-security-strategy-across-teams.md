@@ -111,7 +111,7 @@ that focus on enterprise-wide systems like identity and key management,
 and various infrastructure and endpoint disciplines like Network
 security, Server/VM security, and Client endpoints/devices. 
 
-App Security Engineer are security SMEs that focus on securing
+Application Security Engineers are security SMEs that focus on securing
 individual workload and applications, often as they're developed. These
 responsibilities include per-workload application of infrastructure and
 endpoint skills as well as application security & DevSecOps and Data

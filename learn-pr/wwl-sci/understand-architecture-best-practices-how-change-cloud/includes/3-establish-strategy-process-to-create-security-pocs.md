@@ -33,11 +33,11 @@ integrated into the cloud planning process.
 Your security plan is likely to be more successful if your planning
 takes the approach of:
 
--   Assume a hybrid environment: That includes software as a service (SaaS) applications and on-premises environments. It also includes multiple cloud infrastructure as a service (IaaS) and platform as a service (PaaS) provider, if applicable.
+-   Assume a hybrid environment: That includes software as a service (SaaS) applications and on-premises environments. It also includes multiple cloud infrastructure as a service (IaaS) and platform as a service (PaaS) providers, if applicable.
 
 -   Adopt agile security: Establish minimum security requirements first and move all noncritical items to a prioritized list of next steps. This should not be a traditional, detailed plan of 3-5 years. The cloud and threat environment changes too fast to make that type of plan useful. Your plan should focus on developing the beginning steps and end state:
 
-    -   Quick wins for the immediate future that will deliver a high impact before longer-term initiatives begin. The time frame can be 3-12 months, depending on organizational culture,standard practices, and other factors.
+    -   Quick wins for the immediate future that will deliver a high impact before longer-term initiatives begin. The time frame can be 3-12 months, depending on organizational culture, standard practices, and other factors.
 
     -   Clear vision of the desired end state to guide each team's planning process (which might take multiple years to achieve).
 
