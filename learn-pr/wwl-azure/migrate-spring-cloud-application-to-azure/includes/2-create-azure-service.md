@@ -1,6 +1,6 @@
 Azure Spring Apps is a platform as a service (PaaS) for Spring developers. Manage the lifecycle of your Spring Boot applications with comprehensive monitoring and diagnostics, configuration management, service discovery, CI/CD integration, and blue-green deployments.
 
-:::image type="content" source="../media/azure-spring-apps-conceptual-39e2d78c.png" alt-text="Diagram that shows how Azure Spring Apps services interact.":::
+:::image type="content" source="../media/azure-spring-apps-conceptual-70a81d75.png" alt-text="Diagram that shows how Azure Spring Apps services interact.":::
 
 
 You can deploy an instance of the Azure Spring Apps service using the Azure portal or the Azure CLI.
@@ -11,14 +11,14 @@ Your workstation should have the following components installed:
  -  Git available from [Git Downloads](https://git-scm.com/downloads)
  -  Apache Maven 3.8.5 available from [Apache Maven Project downloads](https://maven.apache.org/download.cgi)
  -  Java Development Kit (JDK) available from [JD](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[K downloads](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi).
- -  To download the instructions for this module, see Deploying and Running Java apps in Azure Spring Cloud.
+ -  To download the instructions for this module, see Deploying and Running Java apps in Azure Spring Apps.
 
 For Git installations, set the global configuration variables *user.email* and *user.name* by running the following commands from the Git Bash shell:
 
 ```Bash
-git config
+git config \
     --global user.email "<your-email-address>"
-git config
+git config \
     --global user.email "<your-email-address>
 ```
 
@@ -50,7 +50,7 @@ The following procedure uses the Azure CLI extension to deploy an instance of Az
 2.  Update the extension to the most recent version.
     
     ```azurecli
-    az extension update
+    az extension update \
         --name spring-cloud
     ```
 
@@ -69,7 +69,7 @@ The following procedure uses the Azure CLI extension to deploy an instance of Az
     
     ```azurecli
     SPRING_CLOUD_SERVICE=springcloudlab
-    az spring-cloud create
+    az spring-cloud create \
         --name $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --location $LOCATION \
