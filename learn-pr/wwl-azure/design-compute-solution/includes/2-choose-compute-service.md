@@ -18,7 +18,7 @@ Compute refers to the hosting model for the computing resources that your applic
 
 This [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) provides high-level guidance on when to select each compute option. You’ll want to refer to this diagram as we go through the choices. 
 
-:::image type="content" source="../media/compute-flowchart.png" alt-text="A detailed flowchart to show compute solutions.":::
+:::image type="content" source="../media/compute-flowchart.png" alt-text="A detailed flowchart to show other compute solutions.":::
 
  
 
