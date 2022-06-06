@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-service-fabric.knowledge-check
+title: Knowledge check
+
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 4/11/2022
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 5
+content: |
+
+quiz:
+
+  questions:
+  
+  - content: "Service Fabric supports:"
+    choices:
+    - content: "Stateless services"
+      isCorrect: false
+      explanation: "Service Fabric supports stateless services, but it also has a strong focus on building stateful services."
+    - content: "Stateful services"
+      isCorrect: false
+      explanation: "While Service Fabric has a strong focus on stateful services, it also supports stateless services."
+    - content: "Both stateless and stateful services"
+      isCorrect: true
+      explanation: "Service Fabric provides a sophisticated, lightweight runtime that supports stateless and stateful microservices."
+
+  - content: "Suppose you work for an event management company. Your events website needs persisted storage. Which feature of Service Fabric will you use?"
+    choices:
+    - content: "Use Azure Monitor"
+      isCorrect: false
+      explanation: "Azure Monitor allows you to get health updates on container and cluster infrastructure."
+    - content: "Storage volume support"
+      isCorrect: true
+      explanation: "Service Fabric supports both static and dynamic storage volumes for containers that need persisted storage."
+    - content: "Enable cluster autoscaling to scale the cluster horizontally"
+      isCorrect: false
+      explanation: "Scaling horizontally will add more nodes to your Service Fabric cluster."
+
+  - content: "You're developing on-premises in Linux. Does Azure Service Fabric support your environment?"
+    choices:
+    - content: "Yes"
+      isCorrect: true
+      explanation: "As part of Service Fabric's any Cloud, any OS offering, you on-premises Linux environment is supported."
+    - content: "No"
+      isCorrect: false
+      explanation: "As part of Service Fabric's any Cloud, any OS offering, you on-premises Linux environment is supported."
