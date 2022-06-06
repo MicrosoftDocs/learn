@@ -235,7 +235,7 @@ Forced tunneling lets you redirect or "force" all Internet-bound traffic back to
 
 In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
 
-:::image type="content" source="../media/forced-tunnel-ba8d30e6.png" alt-text="Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.":::
+:::image type="content" source="../media/forced-tunnel-ba8d30e6.png" alt-text="Backend and Mid-tier subnets Forced Tunneled via  S 25 V P N Frontend subnets routed directly to Internet.":::
 
 
 ### Configure forced tunneling
