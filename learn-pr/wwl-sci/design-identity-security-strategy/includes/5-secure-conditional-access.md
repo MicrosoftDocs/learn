@@ -39,7 +39,7 @@ This section includes the following articles:
 The Microsoft approach to Zero Trust includes Conditional Access as the
 main policy engine. Here's an overview of that approach:
 
-![Diagram that provides an overview of the Zero Trust model.](../media/componentsof-zero-trust-model.png) 
+![Diagram that provides an overview of the Zero Trust model.](../media/components-zero-trust-model.png) 
 
 Download an [SVG file](https://arch-center.azureedge.net/zero-trust-model.svg) of this architecture.
 
@@ -56,8 +56,7 @@ You first need to choose an architecture. We recommend that considering
 either a Targeted or a Zero Trust Conditional Access architecture. This
 diagram shows the corresponding settings:
 
-![Diagram that shows the settings for Targeted and Zero Trust
-architectures.](../media/targetedand-zero-trust-architecture.png) 
+![Diagram that shows the settings for Targeted and Zero Trust architectures.](../media/targetedand-zero-trust-architecture.png) 
 
 The **Zero Trust Conditional Access architecture** is the one that best
 fits the principles of Zero Trust. If the **All cloud apps** option in a
@@ -133,7 +132,7 @@ The following list describe some recommended personas.
 We recommend that you use access template cards to define the
 characteristics of each persona. Here's an example:
 
-![Example of an access template card.](../media/employee-f-t-e.png) 
+![Example of an access template card.](../media/employee.png) 
 
 The template card for each persona provides input for creating the
 specific Conditional Access policies for each persona.

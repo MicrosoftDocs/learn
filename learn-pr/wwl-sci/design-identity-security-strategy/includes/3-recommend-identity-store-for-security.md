@@ -14,12 +14,7 @@ using Azure Active Directory's built-in security capabilities. Advanced
 integrations will take your solution one step further with enhanced
 security capabilities.
 
-![A curved path showing the foundational and advanced integrations.
-Foundational integrations include single sign-on and publisher
-verification. Advanced integrations include conditional access
-authentication context, continuous access evaluation, and advanced
-security API
-integrations.](../media/key-componentsof-i-d-zero-trust-integr.png)
+![A curved path showing the foundational and advanced integrations. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations.](../media/key-components-identity-zero-trust-integrations.png)
 
 **Foundational integrations**
 
@@ -34,7 +29,7 @@ This will increase customer trust because they know that your
 application has been validated as compatible with Azure Active
 Directory, and you can become a [verified
 publisher](/azure/active-directory/develop/publisher-verification-overview) so
-that customers are certain you are the publisher of the app they are
+that customers are certain you're the publisher of the app they're
 adding to their tenant.
 
 Publishing the app gallery will make it easy for IT admins to integrate

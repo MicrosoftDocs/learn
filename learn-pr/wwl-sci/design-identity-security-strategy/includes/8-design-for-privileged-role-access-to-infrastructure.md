@@ -61,8 +61,7 @@ considering deploying.
 
 ### Stage 1: Critical items to do right now
 
-![Stage 1 Critical items to do
-first](../media/stage1.png) 
+![Stage 1 Critical items to do first](../media/stage-1.png) 
 
 Stage 1 of the roadmap is focused on critical tasks that are fast and
 easy to implement. We recommend that you do these few items right away
@@ -78,7 +77,7 @@ includes the following actions:
 
 ### Stage 2: Mitigate frequently used attacks
 
-![Stage 2 Mitigate frequently used attacks](../media/stage2.png) 
+![Stage 2 Mitigate frequently used attacks](../media/stage-2.png) 
 
 Stage 2 of the roadmap focuses on mitigating the most frequently used
 attack techniques of credential theft and abuse and can be implemented
@@ -110,7 +109,7 @@ roadmap includes the following actions:
 
 ### Stage 3: Take control of administrator activity
 
-![Stage 3: take control of administrator activity](../media/stage3.png) 
+![Stage 3: take control of administrator activity](../media/stage-3.png) 
 
 Stage 3 builds on the mitigations from Stage 2 and should be implemented
 in approximately 1-3 months. This stage of the Secured Privileged Access
@@ -138,7 +137,7 @@ Management](/azure/active-directory/privileged-identity-management/pim-configure
 
 ### Stage 4: Continue building defenses
 
-![Stage 4: adopt an active security posture](../media/stage4.png) 
+![Stage 4: adopt an active security posture](../media/stage-4.png) 
 
 Stage 4 of the roadmap should be implemented within six months and
 beyond. Complete your roadmap to strengthen your privileged access

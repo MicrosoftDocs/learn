@@ -33,7 +33,7 @@ Directory role-based access control (Azure AD RBAC). These best
 practices are derived from our experience with Azure AD RBAC and the
 experiences of customers like yourself.
 
-**1. Manage to least privilege**
+#### 1. Manage to least privilege
 
 When planning your access control strategy, it's a best practice to
 manage to least privilege. Least privilege means you grant your
@@ -49,7 +49,7 @@ There are Azure AD roles to manage directory objects like users, groups,
 and applications, and also to manage Microsoft 365 services like
 Exchange, SharePoint, and Intune.
 
-**2. Use Privileged Identity Management to grant just-in-time access**
+#### 2. Use Privileged Identity Management to grant just-in-time access**
 
 One of the principles of least privilege is that access should be
 granted only for a specific period of time. [Azure AD Privileged
@@ -66,8 +66,7 @@ require approval or receive notification emails when someone activates
 their role assignment. Notifications provide an alert when new users are
 added to highly privileged roles.
 
-**3. Turn on multi-factor authentication for all your administrator
-accounts**
+#### 3. Turn on multi-factor authentication for all your administrator accounts
 
 [Based on our
 studies](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984),
@@ -83,8 +82,7 @@ You can enable MFA on Azure AD roles using two methods:
 -   [Conditional
     Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 
-**4. Configure recurring access reviews to revoke unneeded permissions
-over time**
+#### 4. Configure recurring access reviews to revoke unneeded permissions over time
 
 Access reviews enable organizations to review administrators' access
 regularly to make sure only the right people have continued access.
@@ -93,7 +91,7 @@ following reasons:
 
 -   A malicious actor can compromise an account.
 
--   People move teams within a company. If there is no auditing, they
+-   People move teams within a company. If there's no auditing, they
     can amass unnecessary access over time.
 
 For information about access reviews for roles, see [Create an access
@@ -104,7 +102,7 @@ see [Create an access review of groups and applications in Azure AD
 access
 reviews](/azure/active-directory/governance/create-access-review).
 
-**5. Limit the number of Global Administrators to less than 5**
+#### 5. Limit the number of Global Administrators to less than 5
 
 As a best practice, Microsoft recommends that you assign the Global
 Administrator role to **fewer than five** people in your organization.
@@ -119,8 +117,7 @@ mechanism as your normal administrative accounts to sign in, as
 described in [Manage emergency access accounts in Azure
 AD](/azure/active-directory/roles/security-emergency-access).
 
-**6. Use groups for Azure AD role assignments and delegate the role
-assignment**
+#### 6. Use groups for Azure AD role assignments and delegate the role assignment
 
 If you have an external governance system that takes advantage of
 groups, then you should consider assigning roles to Azure AD groups
@@ -137,7 +134,7 @@ Administrator can delegate role management on a per-role basis by using
 groups. For more information, see [Use Azure AD groups to manage role
 assignments](/azure/active-directory/roles/groups-concept).
 
-**7. Activate multiple roles at once using privileged access groups**
+#### 7. Activate multiple roles at once using privileged access groups
 
 It may be the case that an individual has five or six eligible
 assignments to Azure AD roles through PIM. They will have to activate
@@ -154,7 +151,7 @@ access to all the linked resources.
 
 ![Privileged Access Group.png](../media/privileged-access-group.png) 
 
-**8. Use cloud native accounts for Azure AD roles**
+#### 8. Use cloud native accounts for Azure AD roles
 
 Avoid using on-premises synced accounts for Azure AD role assignments.
 If your on-premises account is compromised, it can compromise your Azure
@@ -166,8 +163,7 @@ To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-![Delegate from IT administrator to
-managers](../media/delegateto-non-admin.png) 
+![Delegate from IT administrator to managers](../media/delegate-non-admin.png) 
 
 As the IT administrator, Hana has contacts in each department\-- Mamta
 in Marketing, Mark in Finance, and Joe in Legal who are responsible for

@@ -92,12 +92,12 @@ The simplicity of a password hash synchronization solution:
 
 Agent requirements of pass-through authentication, using two agents for redundancy:
 
-![Azure AD hybrid identity with Pass-through Authentication](../media/architecture-diagram2.png)
+![Azure AD hybrid identity with Pass-through Authentication](../media/architecture-diagram-2.png)
 
 Components required for federation in your perimeter and internal
 network of your organization:
 
-![Azure AD hybrid identity with federated authentication](../media/architecture-diagram3.png) 
+![Azure AD hybrid identity with federated authentication](../media/architecture-diagram-3.png) 
 
 ### Comparing Authentication Methods
 

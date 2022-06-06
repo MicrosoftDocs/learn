@@ -44,7 +44,7 @@ This guide walks through the steps required to manage identities following the p
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk---verified explicitly at the point of access. We will show how to implement a Zero Trust identity strategy with Azure AD.
 
-![Diagram of the steps within phase 1 of the initial deployment objectives.](../media/zero-trustwith-azure-a-d.png) 
+![Diagram of the steps within phase 1 of the initial deployment objectives.](../media/zero-trust-azure-active-directory.png) 
 
 #### II. Conditional Access policies gate access and provide remediation activities
 

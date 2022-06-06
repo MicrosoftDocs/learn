@@ -1,4 +1,4 @@
-### **Summary and Resources** 
+### Summary and Resources
 
 In this module, you've learned how to build an overall identity
 security strategy with zero trust in mind. You have learned different
