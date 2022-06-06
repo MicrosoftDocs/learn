@@ -1,8 +1,8 @@
-Contoso, a global entity, hosts multiple SQL Server instances with various versions today in their on-premises environment. The IT staff also wants to explore multi-cloud strategy in order to leverage cloud service providers around the world. Azure Arc enabled data services provides a single pane of glass and unified management tools for managing, deploying, and being data sovereign complaint in certain markets.
+Contoso, a global entity, hosts multiple SQL Server instances with various versions today in their on-premises environment. The IT staff also wants to explore multi-cloud strategy in order to leverage cloud service providers around the world. Azure Arc-enabled data services provides a single pane of glass and unified tools for management, deployment, and being data sovereignty compliance in certain markets.
 
 ## What is Azure Arc-enabled data services?
 
-Using Azure Arc-Enabled SQL Managed Instance, you can enroll all of your database instances located anywhere to Azure and then manage these databases in a consistent way. Azure Arc-enabled data services:
+Using Azure Arc-enabled SQL Managed Instance, you can enroll all of your database instances located anywhere to Azure and then manage these databases in a consistent way. Azure Arc-enabled data services:
 
 - Enables you to be on an evergreen SQL instance
 - Provides flexible scaling options - meaning you can easily add or remove CPU and Memory from instances in a heartbeat
@@ -12,15 +12,17 @@ Using Azure Arc-Enabled SQL Managed Instance, you can enroll all of your databas
 
 ## Management capability comparison between various SQL services
 
-:::image type="content" source="../media/40-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false":::
+The following chart compares management capabilities by deployment model:
+
+:::image type="content" source="../media/4a-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false" lightbox="../media/4a-management-capabilities-by-deployment-model.png" :::
 
 ## Connected and disconnected modes
 
-Since Contoso has operational capabilities in countries where data is required to be on-premises due to regulations and low latency needs, Azure Arc enabled Data services is a perfect solution for them. Since the data is stored in country, you can meet regulation compliance or data sovereignty requirements. The underlying latency issues are also resolved by enabling the databases locally or in close proximity to operations.
+Since Contoso has operational capabilities in countries where data is required to be on-premises due to regulations and low latency needs, Azure Arc-enabled data services is a perfect solution for them. Since the data is stored in country, you can meet regulation compliance or data sovereignty requirements. The underlying latency issues are also resolved by enabling the databases locally or in close proximity to operations.
 
 The disconnected mode of deployments doesn't automatically load any data sets back to Azure. For example billing files, logs, and metrics aren't loaded automatically. Inventory information is only used for billing purposes. Manually export and load the billing file to Azure portal at least monthly. Although disconnected mode doesn't automatically load the file, you still get the scaling, evergreen SQL and other benefits from the solution.
 
-In the direct connected mode, you get the full benefits of Azure monitor, Azure alerting, inventory and management capabilities via Azure portal. In the connected mode, deployment data is still processed on-premises and you can optionally upload logs to Azure cloud. The inventory information is only a metadata representation of assets that you have.
+In the direct connected mode, you get the full benefits of Azure Monitor (including alerts), inventory, and management capabilities via the Azure portal. In the connected mode, deployment data is still processed on-premises and you can optionally upload logs to Azure. The inventory information is only a metadata representation of assets that you have.
 
 ## SKU comparison
 
@@ -29,9 +31,9 @@ Today Azure Arc-enabled SQL Managed instance comes in two different types of SKU
 - Business Critical = Enterprise Edition
 - General Purpose = Standard Edition 
 
-:::image type="content" source="../media/40-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false":::
+:::image type="content" source="../media/4a-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false":::
 
-## How does Azure Arc-enabled data service operate
+## How does Azure Arc-enabled data service operate?
 
 The Azure Arc-enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have. See [Deployment requirements](/azure/azure-arc/data/plan-azure-arc-data-services#deployment-requirements).
 

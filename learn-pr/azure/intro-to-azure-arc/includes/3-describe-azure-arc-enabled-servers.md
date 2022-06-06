@@ -1,4 +1,4 @@
-Azure Arc-enabled servers expands the support to server-based resources that run outside of Azure. This means that a Windows Server or Linux server that's running in Contoso's on-premises datacenter can be registered with Azure Arc and use many of the resource management capabilities available on Azure. Contoso can also apply this capability to any server that's running Windows Server or Linux that's hosted by another cloud provider.
+Azure Arc-enabled servers expands support to server-based resources that run outside of Azure. This means that a Windows Server or Linux server that's running in Contoso's on-premises datacenter can be registered with Azure Arc and use many of the resource management capabilities available on Azure. Contoso can also apply this capability to any server that's running Windows Server or Linux that's hosted by another cloud provider.
 
 ## What is Azure Arc-enabled servers?
 

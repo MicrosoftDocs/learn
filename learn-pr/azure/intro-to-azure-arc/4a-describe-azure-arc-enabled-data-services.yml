@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.4a-describe-azure-arc-enabled-data-services
 metadata:
-  title: Describe Azure Arc enabled data services
-  description: Describe Azure Arc enabled data services
+  title: Describe Azure Arc-enabled data services
+  description: Describe Azure Arc-enabled data services
   ms.date: 05/31/2022
   author: MikeRayMSFT
   ms.author: mikeray

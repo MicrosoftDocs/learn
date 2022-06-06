@@ -10,11 +10,13 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Introduction to Azure Arc
-summary: In this module, you'll be able to describe Azure Arc enabled servers. You'll also be able to describe Azure Arc enabled Kubernetes.
+summary: In this module, you'll be able to describe Azure Arc-enabled servers and Azure Arc-enabled Kubernetes. You'll also be able to describe Azure Arc-enabled data services and how Azure Arc can integrate with other Azure services.
 abstract: | 
   In this module, you will:
-  - Describe Azure Arc enabled servers.
-  - Describe Azure Arc enabled Kubernetes.
+  - Describe Azure Arc-enabled servers.
+  - Describe Azure Arc-enabled Kubernetes.
+  - Describe Azure Arc-enabled data services.
+  - Describe how Azure Arc can integrate with other Azure services.
 prerequisites: | 
   - Knowledge of personal computer operating systems.
   - Fundamentals of cloud computing.

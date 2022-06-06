@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
-title: Describe Azure Arc security with Defender and Sentinel
+title: Describe Azure Arc security solutions
 durationInMinutes: 8
 content: |
   [!include[](includes/5a-azure-security.md)]
