@@ -69,7 +69,7 @@ The following steps use the Azure portal, but with the appropriate Azure Logic A
 
 1. From the triggers list, select the SQL trigger that you want. This example uses the trigger named **When an item is created**.
 
-    :::image type="content" source="../media/module-66-automation-final-39.png" alt-text=”Screenshot showing the Azure portal, workflow designer for Consumption logic app, search box with "sql server", and the "When an item is created" trigger selected.":::
+    :::image type="content" source="../media/module-66-automation-final-39.png" alt-text="Screenshot showing the Azure portal, workflow designer for Consumption logic app.":::
 
 1. If you're connecting to your SQL database for the first time, you're prompted to create your SQL database connection now. After you create this connection, you can continue with the next step.
 
@@ -100,11 +100,11 @@ The following steps use the Azure portal. In this example, the logic app workflo
 
 1. From the actions list, select the SQL Server action that you want. This example uses the **Get row** action, which gets a single record.
 
-    :::image type="content" source="../media/module-66-automation-final-40.png" alt-text=”Screenshot showing the Azure portal, workflow designer for Consumption logic app, the search box with "sql server", and "Get row" selected in the "Actions" list.":::
+    :::image type="content" source="../media/module-66-automation-final-40.png" alt-text="Screenshot showing the Azure portal, workflow designer for Consumption logic app, the search box with sql server, and Get row selected in the Actions list.":::
 
 1. If you haven't already provided the SQL server name and database name, provide those values. Otherwise, from the Table name list, select the table that you want to use. In the *Row ID* property, enter the ID for the record that you want. In this example, the table name is *SalesLT.Product*.
 
-    :::image type="content" source="../media/module-66-automation-final-41.png" alt-text=”Screenshot showing Consumption workflow designer and the "Get row" action with the example "Table name" property value and empty row ID.":::
+    :::image type="content" source="../media/module-66-automation-final-41.png" alt-text="Screenshot showing Consumption workflow designer and the Get row action with the example Table name property value and empty row ID.":::
 
 	>[NOTE!] 
     >This action returns only one row from the selected table, and nothing else. 
