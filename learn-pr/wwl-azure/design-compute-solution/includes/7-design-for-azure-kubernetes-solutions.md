@@ -12,7 +12,7 @@
 
 [Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes) manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. 
 
-:::image type="content" source="../media/kubernetes-features.png" alt-text="Self-healing, dynamic scaling, and rolling updates.":::
+:::image type="content" source="../media/kubernetes-features.png" alt-text="Diagram showing conceptual self-healing, dynamic scaling, and rolling updates.":::
 
 
 
