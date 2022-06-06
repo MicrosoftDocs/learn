@@ -37,7 +37,7 @@ You need to acquire a self-signed certificate and add it to Key Vault. You can u
     > [!NOTE]
     > Ensure that you include the trailing comma at the end of the updated content whenever there's another JSON element following it.
 
-3.  You'll need to find and replace the *myapp.mydomain.com* DNS name in the *sample-policy.json* file with a randomly generated custom domain name. You'll use custom domain name later in this exercise. To generate the custom domain name, run the following commands.
+3.  You'll need to find and replace the **myapp.mydomain.com** DNS name in the **sample-policy.json** file with a randomly generated custom domain name. You'll use custom domain name later in this exercise. To generate the custom domain name, run the following commands.
     
     ```Bash
     DNS_LABEL=springclouddns$RANDOM$RANDOM
