@@ -122,9 +122,9 @@ products:
 ###
 units:
 - learn.introduction-to-app-provisioning.introduction
-- learn.introduction-to-app-provisioning.what-is-{product}
-- learn.introduction-to-app-provisioning.how-{product}-works
-- learn.introduction-to-app-provisioning.when-to-use-{product}
+- learn.introduction-to-app-provisioning.what-is-app-provisioning
+- learn.introduction-to-app-provisioning.how-app-provisioning-works
+- learn.introduction-to-app-provisioning.when-to-use-app-provisioning
 - learn.introduction-to-app-provisioning.knowledge-check
 - learn.introduction-to-app-provisioning.summary
 ###########################################################################
