@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-to-app-provisioning.what-is-application-provisioning
+uid: learn.azure.introduction-to-app-provisioning.what-is-app-provisioning
 title: What is Application Provisioning?
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-what-is-application-provisioning.md)]
+  [!include[](includes/2-what-is-app-provisioning.md)]
