@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.introduction-to-app-provisioning
+uid: learn.azure.introduction-to-app-provisioning
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Application Provisioning          # Do not edit: title must be "Introduction to (product)"
@@ -121,15 +121,15 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
 ###
 units:
-- learn.introduction-to-app-provisioning.introduction
-- learn.introduction-to-app-provisioning.what-is-app-provisioning
-- learn.introduction-to-app-provisioning.how-app-provisioning-works
-- learn.introduction-to-app-provisioning.when-to-use-app-provisioning
-- learn.introduction-to-app-provisioning.knowledge-check
-- learn.introduction-to-app-provisioning.summary
+- learn.azure.introduction-to-app-provisioning.introduction
+- learn.azure.introduction-to-app-provisioning.what-is-app-provisioning
+- learn.azure.introduction-to-app-provisioning.how-app-provisioning-works
+- learn.azure.introduction-to-app-provisioning.when-to-use-app-provisioning
+- learn.azure.introduction-to-app-provisioning.knowledge-check
+- learn.azure.introduction-to-app-provisioning.summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
 ###
 badge:
-  uid: learn.introduction-to-app-provisioning.badge
+  uid: learn.azure.introduction-to-app-provisioning.badge
