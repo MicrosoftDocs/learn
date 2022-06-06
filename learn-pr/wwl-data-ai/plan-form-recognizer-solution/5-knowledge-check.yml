@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-form-recognizer-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/06/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to create a Forms Recognizer model that will categorize and analyze legal documents including wills, probate declarations, and affidavits. What type of model should you use?"
+    choices:
+    - content: "A Read model."
+      isCorrect: false
+      explanation: "Incorrect. A Read model will obtain text and key-value pairs from the legal documents but will not categorize them."
+    - content: "A Layout model."
+      isCorrect: false
+      explanation: "Incorrect. A Layout model will obtain structure information, select marks, and other information from the legal forms, but will not categorize them"
+    - content: "A Composed model."
+      isCorrect: true
+      explanation: "Correct. A Composed model consists of multiple custom models. Each submitted form is categorized as one of the custom form types and analyzed using the corresponding custom model."
+  - content: "You want to create a custom model to analyze the health assessment forms returned by patients to a medical practice. You have 20 complete examples of the form. How many of these example should you use to train the custom model?"
+    choices:
+    - content: "5"
+      isCorrect: false
+      explanation: "Incorrect. 5 is the minimum number of example forms you can use to train a model but it's better to use more."
+    - content: "10"
+      isCorrect: false
+      explanation: "Incorrect. You can train the model with 10 example forms but it's better to use more."
+    - content: "20"
+      isCorrect: true
+      explanation: "Correct. You should use as many example forms as possible to train your custom model."
+  - content: "You want to call your Forms Recognizer solution from a mobile app by using an API. Which of the following languages can you use?"
+    choices:
+    - content: "Python"
+      isCorrect: true
+      explanation: "Correct. Microsoft publishes a Python API you can use to call Forms Recognizer services."
+    - content: "Go"
+      isCorrect: false
+      explanation: "Incorrect. There's no Forms Recognizer API for Go, but you can submit requests through the RESTful web service."
+    - content: "R"
+      isCorrect: false
+      explanation: "Incorrect. There's no Forms Recognizer API for R, but you can submit requests through the RESTful web service."
+  - content: "You are building a solution that will analyze sales invoices. You expect to receive up to ten concurrent requests at busy times and you want your solution to be as simple as possible. What kind of resource should you create?"
+    choices:
+    - content: "A Free tier Forms Recognizer resource."
+      isCorrect: false
+      explanation: "Incorrect. The Free tier supports 1 request at a time."
+    - content: "A Standard tier Forms Recognizer resource."
+      isCorrect: true
+      explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other cognitive services."
+    - content: "A Cognitive Services multi-service resource."
+      isCorrect: false
+      explanation: "Incorrect. Your solution only requires Forms Recognizer and no other cognitive services so you don't need a multi-service resource."
+  - content: "Which of the following values is required to connect to an Azure Forms Recognizer service?"
+    choices:
+    - content: "The name of the Azure resource."
+      isCorrect: false
+      explanation: "Incorrect. The name of the Azure Forms Recognizer or cognitive services resource is not required to connect to Forms Recognizer."
+    - content: "The access key for the Azure resource."
+      isCorrect: true
+      explanation: "Correct. You must supply an access key to authenticate when you use a Forms Recognizer service to analyze forms."
+    - content: "User credentials."
+      isCorrect: false
+      explanation: "Incorrect. You don't need a username and password to connect to Azure Forms recognizer."
+  - content: "You are creating an Azure Forms Recognizer solution that analyzes student essays. You have a multi-lingual clientelle and you want the solution to determine what language each essay is written in. Which model should you choose?"
+    choices:
+    - content: "Read"
+      isCorrect: true
+      explanation: "Correct. The Read prebuilt model can identify the language used to write a document."
+    - content: "General document"
+      isCorrect: false
+      explanation: "Incorrect. The General document prebuilt model can't identify the language used to write a document."
+    - content: "Layout"
+      isCorrect: false
+      explanation: "Incorrect. The Layout prebuilt model can't identify the language used to write a document."
