@@ -1,11 +1,11 @@
 
-All devices that you manage have a lifecycle. Intune can help you manage this lifecycle: from enrolment, through configuration and protection, to retiring the device when it's no longer required. The mobile device management (MDM) lifecycle is shown below:
+All devices that you manage have a lifecycle. Intune can help you manage this lifecycle: from enrollment, through configuration and protection, to retiring the device when it's no longer required. The mobile device management (MDM) lifecycle is shown below:
 
 ![Device Lifecycle ](../media/device-lifecycle.png) 
 
 When specifying your security requirements, most of your focus will be on the *Configure* and *Protect* stages, but you should also have general considerations on each one of the other phases:
 
--   **Enrol**: evaluate the types of devices you have in your organization and verify the [enrollment options](/mem/intune/enrollment/device-enrollment) available.
+-   **Enroll**: evaluate the types of devices you have in your organization and verify the [enrollment options](/mem/intune/enrollment/device-enrollment) available.
 -   **Configure**: to ensure that your devices are secure and compliant with company standards, you can choose from a wide range of policies during the initial [configuration](/mem/intune/configuration/device-profiles) of the device.
 -   **Protect**: protecting devices from unauthorized access is one of the most important tasks that you perform. In addition to the items that were established in the initial configuration, you have addition settings to protect your devices from unauthorized access or malicious attack.
 -   **Retire**: When a device gets lost or stolen, when it needs to be replaced, or when users move to another position, it's usually time to retire or wipe the device. There are a number of ways you can do this---including resetting the device, removing it from management, and wiping the corporate data on it.
@@ -58,7 +58,7 @@ When establishing your security requirement for mobile devices, make sure that t
 
 #### Client requirements
 
-One important consideration to take is if your client workstation is domain joined. Many environments use on-premises Active Directory (AD). When AD domain-joined devices are also joined to Azure AD, they're called hybrid Azure AD joined devices. Using Windows Autopilot, you can enrol hybrid Azure AD joined devices in Intune. To enrol, you also need a Domain Join configuration profile.
+One important consideration to take is if your client workstation is domain joined. Many environments use on-premises Active Directory (AD). When AD domain-joined devices are also joined to Azure AD, they're called hybrid Azure AD joined devices. Using Windows Autopilot, you can enroll hybrid Azure AD joined devices in Intune. To enroll, you also need a Domain Join configuration profile.
 
 Once you determine if the client is domain joined or not, you can start planning the security requirements for the operating system configuration. The requirements can also be part of the security baseline that was initially selected. You can deploy security baselines to groups of users or devices in Intune, and the settings apply to devices that run Windows 10/11. For example, the *MDM Security Baseline* automatically enables BitLocker for removable drives, automatically requires a password to unlock a device, automatically disables basic authentication, and more. When a default value doesn't work for your environment, customize the baseline to apply the settings you need.
 

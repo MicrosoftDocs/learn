@@ -63,7 +63,7 @@ quiz:
     choices:
     - content: "Azure Bastion"
       isCorrect: true
-      explanation: "Correct. Azure Bastion allow remote workers to connect via RDP and SSH directly from the Azure portal."
+      explanation: "Correct. Azure Bastion allows remote workers to connect via RDP and SSH directly from the Azure portal."
     - content: "Point-to-Site (P2S) VPN"
       isCorrect: false
       explanation: "Incorrect. P2S VPN is used to connect end users to a VPN infrastructure."

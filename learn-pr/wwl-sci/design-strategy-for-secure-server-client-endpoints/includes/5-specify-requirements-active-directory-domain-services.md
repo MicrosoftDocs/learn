@@ -36,4 +36,4 @@ Microsoft Defender for Identity (MDI) monitors your domain controllers by captur
 
 ![Core architecture of Defender for Identity:](../media/core-architecture-defender-identity.png) 
 
-Installed directly on your domain controller or AD FS servers, the Defender for Identity sensor accesses the event logs it requires directly from the servers. After the logs and network traffic are parsed by the sensor, Defender for Identity sends only the parsed information to the Defender for Identity cloud service (only a percentage of the logs are sent).
+Once you install the Defender for Identity sensor directly on your domain controller or AD FS server, it accesses the event logs it requires directly from each server. After the logs and network traffic are parsed by the sensor, Defender for Identity sends only the parsed information to the Defender for Identity cloud service (only a percentage of the logs are sent).

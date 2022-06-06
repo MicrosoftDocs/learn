@@ -26,7 +26,7 @@ These two areas are separated because the creation of the Key Vault (a managemen
 
 ### Authentication
 
-Azure Key Vault uses Azure Active Directory (Azure AD) to authenticate users and apps that try to access a vault. Authentication is always performed by associating the Azure AD tenant of the subscription that the Key Vault is part of, and every user or app making a request having to be known to Azure AD. There is no support for anonymous access to a Key Vault.
+Azure Key Vault uses Azure Active Directory (Azure AD) to authenticate users and apps that try to access a vault. Authentication is always performed by associating the authenticated identity of any user or app making a request with the Azure AD tenant of the subscription where the Key Vault resides. There is no support for anonymous access to a Key Vault.
 
 ### Authorization
 
@@ -57,7 +57,7 @@ In the previous diagram, your application is creating a certificate which intern
 
 This strategy works with any certificate issuer and provides better security than handling the CSR directly because the private key is created and secured in Azure Key Vault and never revealed.
 
-Lastly, you can also connect your Key Vault with a trusted certificate issuer (referred to as an integrated CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate and the Key Vault will interact directly with the CA to fulfil the request in a similar process to the manual CSR creation process shown above. The full details of this process are presented in the following diagram.
+Lastly, you can also connect your Key Vault with a trusted certificate issuer (referred to as an integrated CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate and the Key Vault will interact directly with the CA to fulfill the request in a similar process to the manual CSR creation process shown above. The full details of this process are presented in the following diagram.
 
 ![Diagram showing the process to create a certificate with an integrated certificate authority.](../media/key-vault-certificate-authority.png) 
 

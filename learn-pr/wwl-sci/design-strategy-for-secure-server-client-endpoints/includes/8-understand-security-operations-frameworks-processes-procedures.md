@@ -3,7 +3,7 @@ The responsibility of the security operation team (also known as Security Operat
 
 Watch the video below for an overview about Security Operations:
 
-> https://www.microsoft.com/videoplayer/embed/RWVECU
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWVECU]
 
 Central SecOps team monitors security-related telemetry data and investigates security breaches. It's important that any communication, investigation, and hunting activities are aligned with the applicaton team. Here are some general best practices for conducting security operations:
 
@@ -39,7 +39,7 @@ Attacks on your organization are also planned and conducted by people like crimi
 
 ### Metrics
 
-Metrics drive behaviour, so measuring success is a critical element to get right. Metrics translate culture into clear measurable goals that drive outcomes.
+Metrics drive behavior, so measuring success is a critical element to get right. Metrics translate culture into clear measurable goals that drive outcomes.
 
 We've learned that it's critical to consider what you measure, and the ways that you focus on and enforce those metrics. Recognize that security operations must manage significant variables that are out of their direct control, like attacks and attackers. Any deviations from targets should be viewed primarily as a learning opportunity for process or tool improvement, rather than assumed to be a failure by the SOC to meet a goal.
 

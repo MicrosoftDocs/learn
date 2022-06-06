@@ -19,7 +19,7 @@ In modern organizations, the security threat landscape is constantly evolving, a
 
 Our recommendations follow a streamlined and efficient approach to baseline definitions. The foundation of that approach is essentially:
 
--   The baselines are designed for well-managed, security-consciou organizations in which standard end users do not have administrativ rights.
+-   The baselines are designed for well-managed, security-consciou organizations in which standard end users do not have administrative rights.
 -   A baseline enforces a setting only if it mitigates a contemporary security threat and does not cause operational issues that are worse than the risks they mitigate.
 -   A baseline enforces a default only if it's otherwise likely to be set to an insecure state by an authorized user:
 
