@@ -1,12 +1,12 @@
-Control actions let your logic app make decisions. The social media monitor will use a control action to test the sentiment score of a tweet and branch based on whether it is positive or negative. In this unit, we'll look at the four control actions that help you manage the execution path through your app. We'll also see how to use the Logic Apps Designer to add a control action and configure its settings.
+Control actions help your logic app workflow make decisions. The social media monitoring app will use a control action to test a tweet's sentiment score and branch the workflow path, based on whether the score is positive or negative. In this unit, we'll look at the four control actions that help you manage the execution path through your workflow. We'll also see how to use the workflow designer to add and configure a control action.
 
 ## *Condition* action
 
-A *condition* control action is an *if* statement that lets your app do different things based on the data you're processing. It consists of a Boolean expression and two actions. At runtime, the execution engine evaluates the expression and chooses an action based on whether the expression is true or false.
+A *condition* control action is an *if* statement that lets your workflow split into two paths, based on whether based on the data you're processing. This action consists of a Boolean expression and two actions. At runtime, the execution engine evaluates the expression, and chooses an action based on whether the expression is true or false.
 
-For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether it is flagged as high-priority. In our social media app, we'll use a *condition* statement to branch based on the sentiment score of the tweet. The following illustration shows the use of the *condition* control action in our app.
+For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether the message is flagged as high-priority. In our social media app, we'll use a *condition* statement to branch based on the tweet's sentiment score. The following diagram shows how our workflow uses the *condition* control action.
 
-:::image type="content" source="../media/if-statement-social-media.png" alt-text="An illustration showing a conceptual view of the entire social media monitor app. The *condition* control action is highlighted." border="flse" lightbox="../media/if-statement-social-media-big.png":::
+:::image type="content" source="../media/if-statement-social-media.png" alt-text="Diagram shows a conceptual view for the entire social media monitoring app. The *condition* control action appears highlighted." border="flse" lightbox="../media/if-statement-social-media-big.png":::
 
 ### Types and operators
 
