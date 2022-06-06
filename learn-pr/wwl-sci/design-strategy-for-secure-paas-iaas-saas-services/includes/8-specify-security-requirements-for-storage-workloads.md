@@ -14,10 +14,6 @@ Storage data objects, which include:
 
 -   Disks
 
-Watch the video below for an overview about Storage security:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=inside-azure-for-it&ep=security-best-practices-for-azure-blob-storage]
-
 Consider the following recommendations to optimize security when
 configuring your Azure Storage Account:
 

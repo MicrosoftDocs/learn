@@ -2,7 +2,7 @@
 Let's look at the security advantages of an Azure PaaS deployment versus
 on-premises.
 
-![Text Description automatically generated with medium confidence](../media/security-advantages-paas.png) 
+![security advantages of PaaS](../media/security-advantages-paas.png) 
 
 Starting at the bottom of the stack, the physical infrastructure,
 Microsoft mitigates common risks and responsibilities. Because the
@@ -46,33 +46,33 @@ supported PaaS services can be found below:
 
 | Service                                            | Recommendations (Free) | Security alerts | Vulnerability assessment |
 |----------------------------------------------------|------------------------|-----------------|--------------------------|
-| Azure App Service                                  | œ”                      | œ”               | -                        |
-| Azure Automation account                           | œ”                      | -               | -                        |
-| Azure Batch account                                | œ”                      | -               | -                        |
-| Azure Blob Storage                                 | œ”                      | œ”               | -                        |
-| Azure Cache for Redis                              | œ”                      | -               | -                        |
-| Azure Cloud Services                               | œ”                      | -               | -                        |
-| Azure Cognitive Search                             | œ”                      | -               | -                        |
-| Azure Container Registry                           | œ”                      | œ”               | œ”                        |
-| Azure Cosmos DB                                    | œ”                      | œ”               | -                        |
-| Azure Data Lake Analytics                          | œ”                      | -               | -                        |
-| Azure Data Lake Storage                            | œ”                      | œ”               | -                        |
-| Azure Database for MySQL                           | -                      | œ”               | -                        |
-| Azure Database for PostgreSQL                      | -                      | œ”               | -                        |
-| Azure Event Hubs namespace                         | œ”                      | -               | -                        |
-| Azure Functions app                                | œ”                      | -               | -                        |
-| Azure Key Vault                                    | œ”                      | œ”               | -                        |
-| Azure Kubernetes Service                           | œ”                      | œ”               | -                        |
-| Azure Load Balancer                                | œ”                      | -               | -                        |
-| Azure Logic Apps                                   | œ”                      | -               | -                        |
-| Azure SQL Database                                 | œ”                      | œ”               | œ”                        |
-| Azure SQL Managed Instance                         | œ”                      | œ”               | œ”                        |
-| Azure Service Bus namespace                        | œ”                      | -               | -                        |
-| Azure Service Fabric account                       | œ”                      | -               | -                        |
-| Azure Storage accounts                             | œ”                      | œ”               | -                        |
-| Azure Stream Analytics                             | œ”                      | -               | -                        |
-| Azure Subscription                                 | œ”                      | œ”               | -                        |
-| Azure Virtual Network                              | œ”                      | -               | -                        |
+| Azure App Service                                  | X                      | X               | -                        |
+| Azure Automation account                           | X                      | -               | -                        |
+| Azure Batch account                                | X                      | -               | -                        |
+| Azure Blob Storage                                 | X                      | X               | -                        |
+| Azure Cache for Redis                              | X                      | -               | -                        |
+| Azure Cloud Services                               | X                      | -               | -                        |
+| Azure Cognitive Search                             | X                      | -               | -                        |
+| Azure Container Registry                           | X                      | X               | X                        |
+| Azure Cosmos DB                                    | X                      | X               | -                        |
+| Azure Data Lake Analytics                          | X                      | -               | -                        |
+| Azure Data Lake Storage                            | X                      | X               | -                        |
+| Azure Database for MySQL                           | -                      | X               | -                        |
+| Azure Database for PostgreSQL                      | -                      | X               | -                        |
+| Azure Event Hubs namespace                         | X                      | -               | -                        |
+| Azure Functions app                                | X                      | -               | -                        |
+| Azure Key Vault                                    | X                      | X               | -                        |
+| Azure Kubernetes Service                           | X                      | X               | -                        |
+| Azure Load Balancer                                | X                      | -               | -                        |
+| Azure Logic Apps                                   | X                      | -               | -                        |
+| Azure SQL Database                                 | X                      | X               | X                        |
+| Azure SQL Managed Instance                         | X                      | X               | X                        |
+| Azure Service Bus namespace                        | X                      | -               | -                        |
+| Azure Service Fabric account                       | X                      | -               | -                        |
+| Azure Storage accounts                             | X                      | X               | -                        |
+| Azure Stream Analytics                             | X                      | -               | -                        |
+| Azure Subscription                                 | X                      | X               | -                        |
+| Azure Virtual Network                              | X                      | -               | -                        |
 | (incl. subnets, NICs, and network security groups) |                        |                 |                          |
 
 The recommendations column represents the security recommendations that are coming from Azure Security Benchmark and are part of the Defender for Cloud free tier. The security alerts column represents the alerts that are coming from each individual threat detection plan. The vulnerability assessment column represents the services that have this capability available. 

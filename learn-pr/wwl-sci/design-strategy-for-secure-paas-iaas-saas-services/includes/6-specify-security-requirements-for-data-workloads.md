@@ -59,7 +59,8 @@ with automated data discovery, sensitive data classification, and
 end-to-end data lineage. Enable data curators to manage and secure your
 data estate. Empower data consumers to find valuable, trustworthy data.
 
-![Graphical user interface Description automatically generated](../media/azure-purview.png) 
+![High level architecture of Microsoft Purview](../media/microsoft-purview.png)
+
 Microsoft Defender for Cloud integration with Azure Purview allows you
 to obtain vital layer of metadata from Azure Purview and use in alerts
 and recommendations: information about any potentially sensitive data
