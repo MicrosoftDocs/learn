@@ -7,7 +7,7 @@ To begin, the two options available for querying the Azure Cosmos DB analytical 
 -	Loading to Spark DataFrame
 -	Creating Spark table
 
-We have so far used loading the data into a DataFrame as the approach, lets create a Spark table to access our analytical store data by
+We have so far used loading the data into a DataFrame as the approach, let us create a Spark table to access our analytical store data by
 
 [![Using SparkSQL query in a notebook](../media/input-spark-sql-queries-into-notebook.png)](../media/input-spark-sql-queries-into-notebook.png#lightbox)
 
