@@ -25,6 +25,6 @@ For more information about the topics discussed in this module, see:
 [/azure/cosmos-db/partitioning-overview#choose-partitionkey]: https://docs.microsoft.com/azure/cosmos-db/partitioning-overview#choose-partitionkey
 [/azure/cosmos-db/synapse-link]: https://docs.microsoft.com/azure/cosmos-db/synapse-link
 [/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
-[/azure/cosmos-db/sql/sql-api-sdk-java-v4]: https://docs.microsoft.com/cosmos-db/sql/sql-api-sdk-java-v4
+[/azure/cosmos-db/sql/sql-api-sdk-java-v4]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-java-v4
 [/azure/cosmos-db/sql/sql-api-sdk-node]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-node
 [/azure/cosmos-db/sql/sql-api-sdk-python]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-python
