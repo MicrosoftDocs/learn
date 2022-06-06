@@ -15,7 +15,7 @@ Azure Arc simplifies governance and management by delivering a consistent multi-
 
 Today, Azure Arc allows you to manage the following resource types hosted outside of Azure:
 
-Servers - both physical and virtual machines running Windows or Linux.
-Kubernetes clusters - supporting multiple Kubernetes distributions.
-Azure data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services.
-SQL Server - enroll instances from any location with SQL Server on Azure Arc-enabled servers.
+- Servers - both physical and virtual machines running Windows or Linux.
+- Kubernetes clusters - supporting multiple Kubernetes distributions.
+- Azure data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services.
+- SQL Server - enroll instances from any location with SQL Server on Azure Arc-enabled servers.
