@@ -93,7 +93,7 @@ To create a Personal Access Token, do the following tasks:<br>
     GIT_USERNAME=[git username]
     GIT_PASSWORD=[git password]
     
-    az spring-cloud config-server git set
+    az spring-cloud config-server git set \
         --name $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --label main \
