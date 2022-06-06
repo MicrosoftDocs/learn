@@ -158,7 +158,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 21.	Paste the code into a new cell (Y), and click the **run cell** button.
 
     ```python
-    dfSalesOrder.printSchema()
+    dfCustomer.printSchema()
     ```
 
     It prints out the schema in an easy-to-read **tree format (Y)**. and you can easily see the structure of the address object within the dfCustomer DataFrame. 
