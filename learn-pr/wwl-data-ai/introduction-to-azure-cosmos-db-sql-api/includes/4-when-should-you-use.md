@@ -4,7 +4,7 @@ For enterprise scenarios, Azure Cosmos DB SQL API has a comprehensive suite of f
 
 ## Common use cases for the Azure Cosmos DB SQL API
 
-As a fast NoSQL database with a flexible API, Azure Cosmos DB SQL API is well suited for high-performance applications with global ambition. Speed and flexibility makes Azure Cosmos DB SQL API great for web, retail, IoT, gaming, and mobile applications that require flexibility, low response time, and transactions at massive volume or velocity.
+As a fast NoSQL database with a flexible API, Azure Cosmos DB SQL API is well suited for high-performance applications with global ambition. Speed and flexibility make Azure Cosmos DB SQL API great for web, retail, IoT, gaming, and mobile applications that require flexibility, low response time, and transactions at massive volume or velocity.
 
 ### IoT/telemetry
 
@@ -12,7 +12,7 @@ IoT sensor workloads can be diverse and unpredictable. These workloads require a
 
 ![Architectural diagram for an IoT workload showing increasing numbers of IoT device sensors sending data to an Azure IoT Hub. Azure Databricks then ingests and aggregates the real-time data in JSON format for storage in Azure Cosmos DB. Finally, Azure Synapse Analytics is used to perform a deeper analysis of the data stored in Azure Cosmos DB.](../media/4-iot-case.png)
 
-In this example, a growing number of IoT devices are sending sensor data to an Azure IoT Hub. Azure Databricks then ingests and aggregates the data for storage in Azure Cosmos DB SQL API. Azure Synapse Analytics then performs near real-time analysis over the data using [Azure Synapse Link for Azure Cosmos DB][azure/cosmos-db/synapse-link].
+In this example, a growing number of IoT devices are sending sensor data to an Azure IoT Hub. Azure Stream Analytics then ingests and aggregates the data for storage in Azure Cosmos DB SQL API. Azure Synapse Analytics then performs near real-time analysis over the data using [Azure Synapse Link for Azure Cosmos DB][azure/cosmos-db/synapse-link].
 
 ### Retail/marketing
 
