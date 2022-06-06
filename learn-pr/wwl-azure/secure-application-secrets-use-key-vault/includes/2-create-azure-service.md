@@ -15,7 +15,7 @@ From the Bash Git prompt, run the commands below to create an Azure Key Vault in
 ```Bash
 KEYVAULT_NAME=springcloudkv$RANDOM$RANDOM
 az keyvault create \
-    --name $KEYVAULT_NAME
+    --name $KEYVAULT_NAME \
     --resource-group $RESOURCE_GROUP \
     --location $LOCATION \
     --sku standard

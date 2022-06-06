@@ -15,18 +15,18 @@ az keyvault set-policy \
     --name $KEYVAULT_NAME \
     --resource-group $RESOURCE_GROUP \
     --secret-permissions get list  \
-    --object-id $customers_service_id
+    --object-id $CUSTOMERS_SERVICE_ID
 
 az keyvault set-policy \
     --name $KEYVAULT_NAME \
     --resource-group $RESOURCE_GROUP \
     --secret-permissions get list  \
-    --object-id $vets_service_id
+    --object-id $VETS_SERVICE_ID
 
 az keyvault set-policy \
     --name $KEYVAULT_NAME \
     --resource-group $RESOURCE_GROUP \
     --secret-permissions get list  \
-    --object-id $visits_service_id
+    --object-id $VISITS_SERVICE_ID
 
 ```
