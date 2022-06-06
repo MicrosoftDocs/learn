@@ -1,5 +1,7 @@
 Now let's build our model! The first step is to download the dataset and create our Azure service.
 
+Make sure that you're signed in with the account on which you want to use the Azure subscription.
+
 ### Activate the sandbox
 
 The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
