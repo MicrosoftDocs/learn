@@ -962,3 +962,8 @@ achievements:
   title: Describe performance-related maintenance tasks in SQL Server
   summary: Implement tasks for both IaaS and PaaS  to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database.
   iconUrl: /learn/achievements/describe-performance-related-maintenance-tasks-in-sqlserver.svg
+- uid: learn.azure.introduction-to-app-provisioning.badge
+  type: badge
+  title: Introduction to Application Provisioning
+  summary: Understand how Application Provisioning works and when to use it.
+  iconUrl: /learn/achievements/introduction-to-application-provisioning.svg
