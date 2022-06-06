@@ -14,9 +14,7 @@ the private cloud, closer to where the IoT devices reside, including
 data residing in applications, connected devices, and mobile consumer
 services. Reducing latency by moving workloads to the edge, devices
 spend less time communicating with the cloud and can operate reliably in
-extended offline periods. Expanded compute, storage and service
-availability provides experience-driven resources closer to your
-customers.
+extended offline periods.
 
 Multi-cloud computing uses multiple cloud computing services from more
 than one cloud provider (including private and public clouds) in a

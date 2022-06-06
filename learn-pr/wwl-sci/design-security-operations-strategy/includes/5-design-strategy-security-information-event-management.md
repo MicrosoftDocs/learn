@@ -1,4 +1,4 @@
-Organizations today must contend with an increasingly complex threat landscape. A key tenant of Zero Trust is assuming breach and doing that effectively means having a threat detection approach that provides a breadth of visibility across the entire estate, and the depth security teams need to drill down into individual threats. 
+Organizations today must contend with an increasingly complex threat landscape. A key tenant of Zero Trust is assuming breach.  An effective approach to "assume breach" means having a threat detection approach that provides visibility across the entire estate, with the depth of information that security teams need to investigate individual threats. 
 
 Visibility, automation, and orchestration integrations build robust solutions for monitoring security signals. They are key to ensuring the ongoing security of an environment by detecting suspicious behavior and enabling proactive hunting for threats. They allow customers to scan for unexpected behavior and access and proactively search for bad actors already in the network. 
 

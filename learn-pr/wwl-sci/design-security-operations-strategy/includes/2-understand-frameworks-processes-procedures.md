@@ -10,7 +10,7 @@ Watch the video below for an overview about Security Operations:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWVECU]
 
-Central SecOps team monitors security-related telemetry data and
+The central SecOps team monitors security-related telemetry data and
 investigates security breaches. It's important that any communication,
 investigation, and hunting activities are aligned with the application
 team. Here are some general best practices for conducting security

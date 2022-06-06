@@ -92,7 +92,7 @@ objective is reached.
 
 ### Indicators of compromise (IOC)
 
-IOCs are individually-known malicious events that indicate that a
+IOCs are individually known malicious events that indicate that a
 network or device has already been breached. Unlike alert definitions,
 these indicators are considered evidence of a breach. They are often
 seen after an attack has already been carried out, and the objective has
@@ -133,7 +133,7 @@ Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/i
 using threat intelligence packages. You also have the option to
 integrate Defender for IoT with Microsoft Sentinel](/azure/sentinel/iot-solution).
 If you choose to integrate Defender for IoT with Microsoft Sentinel, you
-will get threat Intel from Defender for IoT and the enriched threat
+will get threat intelligence from Defender for IoT and the enriched threat
 intel from Sentinel.
 
 ![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
