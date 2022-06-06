@@ -5,7 +5,7 @@ knowledge of known attributes and abnormal activities specific to your
 industry is fundamental in knowing when to call an observed behavior
 suspicious.
 
-![Converging Tools & Data](../media/converging-tools-data.png) 
+![Converging Tools & Data](../media/converge-tools-data.png) 
 
 ### Threat Intelligence in Microsoft Sentinel
 
@@ -50,7 +50,7 @@ Action: Equals
 Microsoft Defender for IoT is a unified security solution for identifying IoT and OT devices, vulnerabilities, and threats and managing them through a central interface.
 
 Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)using threat intelligence packages. You also have the option to [integrate Defender for IoT with Microsoft Sentinel](/azure/sentinel/iot-solution). If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat Intel from Defender for IoT and the enriched threat intel from Sentinel.
-![Threat Intel from Sentinel](../media/threat-intelfrom-sentinel.png) 
+![Threat Intel from Sentinel](../media/threat-intel-from-sentinel.png) 
 Defender for IoT has both agent-based and agentless monitoring solutions:
 
 -   For end-user organizations, Microsoft Defender for IoT provides agentless, network-layer monitoring that integrates smoothly with industrial equipment and SOC tools. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises.

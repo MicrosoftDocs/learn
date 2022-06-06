@@ -88,7 +88,7 @@ Cloud applications are complex, with many moving parts. Logging data can provide
 
 - Automate actions that would otherwise require manual intervention 
  
-![Types of logs in Azure](../media/s-i-e-m.png)
+![Types of logs in Azure](../media/security-information-event-management.png)
 
 Azure logs are categorized into the following types:
 

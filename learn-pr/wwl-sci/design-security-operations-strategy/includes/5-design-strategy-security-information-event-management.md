@@ -46,23 +46,29 @@ Continuously monitor the storage services of application uses for any unexpected
 Here are best practices for preventing, detecting, and responding to threats: 
 
 **Best practice:** Increase the speed and scalability of your SIEM solution by using a cloud-based SIEM. 
+
 **Detail:** Investigate the features and capabilities of [Microsoft Sentinel](/azure/sentinel/overview) and compare them with the capabilities of what you're currently using on-premises. Consider adopting Microsoft Sentinel if it meets your organization's SIEM requirements. 
 
 **Best practice:** Find the most serious security vulnerabilities to prioritize investigating. 
+
 **Detail:** Review [Azure secure score](/azure/security-center/secure-score-security-controls) to see the recommendations from the Azure policies and initiatives built into Microsoft Defender for Cloud. These recommendations help address top risks like security updates, endpoint protection, encryption, security configurations, missing WAF, internet-connected VMs, and many more. 
 
 The secure score, based on Center for Internet Security (CIS) controls, lets one benchmark an organization's Azure security against external sources. External validation helps validate and enrich a security strategy. 
 
 **Best practice:** Monitor the security posture of machines, networks, storage and data services, and applications to discover and prioritize potential security issues. 
+
 **Detail:** Follow the [security recommendations](/azure/security-center/security-center-recommendations) in Defender for Cloud starting with the highest priority items. 
 
 **Best practice:** Integrate Defender for Cloud alerts into a security information and event management (SIEM) solution. 
+
 **Detail:** Most organizations with a SIEM use it as a central clearinghouse for security alerts that require an analyst response. Processed events produced by Defender for Cloud are published to the Azure Activity Log, one of the logs available through Azure Monitor. Azure Monitor offers a consolidated pipeline for routing any of your monitoring data into a SIEM tool. See [Stream alerts to a SIEM, SOAR, or IT Service Management solution](/azure/security-center/export-to-siem) for instructions. If using Microsoft Sentinel, see [Connect Microsoft Defender for Cloud](/azure/sentinel/connect-azure-security-center). 
 
 **Best practice:** Integrate Azure logs with your SIEM. 
+
 **Detail:** [Use Azure Monitor to gather and export data](/azure/azure-monitor/overview#integrate-and-export-data). This practice is critical for enabling security incident investigation, and online log retention is limited. If using Microsoft Sentinel, see [Connect data sources](/azure/sentinel/connect-data-sources). 
 
 **Best practice:** Speed up investigation and hunting processes and reduce false positives by integrating Endpoint Detection and Response (EDR) capabilities into an attack investigation. 
+
 **Detail:** [Enable the Microsoft Defender for Endpoint integration](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration) via a Defender for Cloud security policy. Consider using Microsoft Sentinel for threat hunting and incident response. 
 
 ##### Monitor end-to-end scenario-based network monitoring 
@@ -74,12 +80,15 @@ Customers build an end-to-end network in Azure by combining network resources li
 The following are best practices for network monitoring and available tools. 
 
 **Best practice:** Automate remote network monitoring with packet capture. 
+
 **Detail:** Monitor and diagnose networking issues without logging in to your VMs using Network Watcher. Trigger [packet capture](/azure/network-watcher/network-watcher-alert-triggered-packet-capture) by setting alerts and gaining access to real-time performance information at the packet level. Better diagnoses can be investigated in detail when issues are seen. 
 
 **Best practice:** Gain insight into network traffic by using flow logs. 
+
 **Detail:** Build a deeper understanding of network traffic patterns [using network security group flow logs](/azure/network-watcher/network-watcher-nsg-flow-logging-overview). Information in flow logs helps gather data for compliance, auditing, and monitoring a network security profile. 
 
 **Best practice:** Diagnose VPN connectivity issues. 
+
 **Detail:** Use Network Watcher to [diagnose your most common VPN Gateway and connection issues](/azure/network-watcher/network-watcher-diagnose-on-premises-connectivity). You can not only identify the issue but also use detailed logs to further investigate. 
 
 ##### Monitor Azure AD risk reports 
@@ -87,6 +96,7 @@ The following are best practices for network monitoring and available tools.
 Most security breaches occur when attackers gain access to an environment by stealing a user's identity. Discovering compromised identities is no easy task. Azure AD uses adaptive machine learning algorithms and heuristics to detect suspicious actions related to user accounts. Each detected suspicious action is stored in a record called risk detection. Risk detections are recorded in Azure AD security reports. For more information, read about the users at risk security report and the risky sign-ins security report. 
 
 **Best practice:** Monitor for suspicious actions related to your user accounts. 
+
 **Detail:** Monitor for [users at risk](/azure/active-directory/identity-protection/overview-identity-protection) and [risky sign-ins](/azure/active-directory/identity-protection/overview-identity-protection) by using Azure AD security reports. 
 
 ##### Architecture for Security Operations 

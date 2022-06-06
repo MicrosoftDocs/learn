@@ -3,7 +3,7 @@ uid: learn.wwl.design-security-operations-strategy
 metadata:
   title: Design a security operations strategy
   description: "Learn how to design a cybersecurity strategy for security operations (SecOps)."
-  ms.date: 06/04/2022
+  ms.date: 06/06/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ units:
 - learn.wwl.design-security-operations-strategy.understand-frameworks-processes-procedures
 - learn.wwl.design-security-operations-strategy.design-logging-auditing-security-strategy
 - learn.wwl.design-security-operations-strategy.develop-for-hybrid-multi-cloud-environments
-- learn.wwl.design-security-operations-strategy.design-strategy-for-security-information-event-management-siem-security-orchestr
+- learn.wwl.design-security-operations-strategy.design-strategy-for-security-information-event-management
 - learn.wwl.design-security-operations-strategy.evaluate-security-workflows
 - learn.wwl.design-security-operations-strategy.review-security-strategies-for-incident-management
 - learn.wwl.design-security-operations-strategy.evaluate-for-technical-threat-intelligence

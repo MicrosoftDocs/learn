@@ -136,8 +136,7 @@ If you choose to integrate Defender for IoT with Microsoft Sentinel, you
 will get threat Intel from Defender for IoT and the enriched threat
 intel from Sentinel.
 
-![Diagram showing an example of Defender for IoT's end-to-end coverage
-solution.](../media/defenderfor-i-o-t.png) 
+![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
 
 Defender for IoT has both agent-based and agentless monitoring
 solutions:
