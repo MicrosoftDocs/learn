@@ -1,18 +1,10 @@
-### Recommend a Secure Authentication & Authorization Strategy
+Choosing the correct authentication method is the first concern for organizations wanting to move their apps to the cloud. Don't take this decision lightly for the following reasons:
 
-Choosing the correct authentication method is the first concern for
-organizations wanting to move their apps to the cloud. Don't take this
-decision lightly for the following reasons:
+1. It's the first decision for an organization that wants to move to the cloud.
 
-1.  It's the first decision for an organization that wants to move to
-    the cloud.
+2. The authentication method is a critical component of an organization's presence in the cloud. It controls access to all cloud data and resources.
 
-2.  The authentication method is a critical component of an
-    organization's presence in the cloud. It controls access to all
-    cloud data and resources.
-
-3.  It's the foundation of all the other advanced security and user
-    experience features in Azure AD.
+3. It's the foundation of all the other advanced security and user experience features in Azure AD.
 
 Identity is the new control plane of IT security, so authentication is
 an organization's access to the new cloud world. Organizations need an
@@ -38,7 +30,7 @@ identity solutions.
 ### Cloud authentication
 
 When choosing this authentication method, Azure AD handles users'
-sign-in process. Coupled with seamless single sign-on (SSO), users can
+sign-in process. Cloud authentication includes single sign-on (SSO), so that users can
 sign into cloud apps without re-entering their credentials. With cloud
 authentication, there are two options:
 
@@ -66,7 +58,7 @@ authentication](/azure/active-directory/hybrid/how-to-connect-pta).
 ### Federated authentication
 
 Azure AD hands off the authentication process to a separate trusted
-authentication system when choosing this authentication method. An
+authentication system when you choose this authentication method. An
 example is on-premises Active Directory Federation Services (AD FS) to
 validate the user's password.
 
@@ -123,7 +115,7 @@ The following table offers a detailed comparison of the various authentication m
 |  |  | Requires Windows Server 2016 Domain functional level |  |
 |  |  |  | Certificate trust model |
 | What are the multifactor authentication options? | Azure AD MFA | Azure AD MFA | Azure AD MFA |
-|  | Custom Controls with Conditional Access* | Custom Controls with Conditional Access* | Azure MFA server |
+|  | Custom Controls with Conditional Access* | Custom Controls with Conditional Access* | Azure Multi-Factor Authentication server |
 |  |  |  | Third-party MFA |
 |  |  |  | Custom Controls with Conditional Access* |
 | What user account states are supported? | Disabled accounts | Disabled accounts | Disabled accounts |

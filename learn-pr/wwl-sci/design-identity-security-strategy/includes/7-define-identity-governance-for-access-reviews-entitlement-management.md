@@ -18,7 +18,7 @@ To perform an access review, you must be assigned one of the following roles:
 -   Identity Governance Administrator
 -   Privileged Role Administrator (for reviews of role-assignable groups
     only)
--   (Preview) Microsoft 365 or AAD Security Group owner of the group to
+-   (Preview) Microsoft 365 or Azure Active Directory Security Group owner of the group to
     be reviewed
 
 If you have the required permissions, go to the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade/) to ensure that access reviews are ready for your organization.
@@ -66,7 +66,7 @@ When reviewing guest user access to Microsoft 365 groups, you can either create 
 
 Typically it's users within the respective departments, teams, or projects who know who they're collaborating with, using what resources, and for how long. Instead of granting unrestricted permissions to non-administrators, you can grant users the least permissions they need to do their job and avoid creating conflicting or inappropriate access rights.
 
-There are a few main scenarios for delegating access governance from IT administrators to users who arent administrators:
+There are a few main scenarios for delegating access governance from IT administrators to users who aren't administrators:
 
 * Ask guests to review their own membership in a group - You can use access reviews to ensure that users who were invited and added to a group continue to need access. You can easily ask guests to review their own membership in that group.               |
 * Ask a sponsor to review a guest's membership in a group - You can ask a sponsor, such as the owner of a group, to review a guest's need for continued membership in a group.

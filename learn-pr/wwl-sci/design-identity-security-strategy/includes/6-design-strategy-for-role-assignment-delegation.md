@@ -165,13 +165,12 @@ the following administrator and managers.
 
 ![Delegate from IT administrator to managers](../media/delegate-non-admin.png) 
 
-As the IT administrator, Hana has contacts in each department\-- Mamta
-in Marketing, Mark in Finance, and Joe in Legal who are responsible for
-their department's resources and business critical content.
+Hana is the IT administrator. She has contacts in each department who are responsible for
+their department's resources and business critical content: Mamta
+in Marketing, Mark in Finance, and Joe in Legal.
 
 With entitlement management, access governance can be delegated to these
 non-administrators because they're the ones who know which users need
 access, for how long, and to which resources. Delegating to
 non-administrators ensures the right people are managing access for
 their departments.
-

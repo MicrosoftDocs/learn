@@ -24,7 +24,7 @@ Before most organizations start the Zero Trust journey, their approach to identi
 in use, no SSO is present between cloud and on-premises apps, and [visibility](https://aka.ms/ZTCrossPillars) into identity risk is very limited.
 
 
-When implementing an end-to-end Zero Trust framework for identity, we recommend to focus first on these initial deployment objectives:
+When implementing an end-to-end Zero Trust framework for identity, we recommend focusing first on these initial deployment objectives:
 
 * [I. Cloud identity federates with on-premises identity systems](/security/zero-trust/deploy/identity#i-cloud-identity-federates-with-on-premises-identity-systems)
 * [II. Conditional Access policies gate access and provide remediation activities](/security/zero-trust/deploy/identity#ii-conditional-access-policies-gate-access-and-provide-remediation-activities)
@@ -80,5 +80,4 @@ Real-time analysis is critical for determining risk and protection.
 
 Finally, other security solutions can be integrated for greater effectiveness.
 
-Integration with Microsoft Defender for Identity enables Azure AD to know that a user is indulging in risky behavior while accessing
-on-premises, non-modern resources (like File Shares). This can then be factored into overall user risk to block further access in the cloud.
+Integration with Microsoft Defender for Identity enables Azure AD to know that a user is indulging in risky behavior while accessing on-premises, non-modern resources (like file shares). This can then be factored into overall user risk. High user risk might lead to blocking further access in the cloud.
