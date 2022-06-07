@@ -59,7 +59,7 @@ intelligence, because security products and automation can use it in
 large scale to protect and detect potential threats. The diagram below
 shows the core architecture of this solution:
 
-![Microsoft Sentinel data flow](../media/mcrosoft-sentinel-data-connectors.png) 
+![Microsoft Sentinel data flow.](../media/mcrosoft-sentinel-data-connectors.png) 
 
 Microsoft Sentinel can help detect, respond to, and provide CTI context
 for malicious cyber activity. You can also use Microsoft Sentinel to:
@@ -132,7 +132,7 @@ researchers, law enforcement professionals, security teams at Microsoft,
 and other trusted sources. The image below has an example of the risk
 detection capability in Azure AD Identity Protection:
 
-![The image below has an example of the risk detection capability in Azure AD Identity Protection:](../media/security-risk-detections.png) 
+![The image below has an example of the risk detection capability in Azure AD Identity Protection.](../media/security-risk-detections.png) 
 
 ### Risk mitigations
 

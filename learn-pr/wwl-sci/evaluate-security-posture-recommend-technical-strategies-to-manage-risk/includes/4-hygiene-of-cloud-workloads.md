@@ -54,7 +54,7 @@ in the workload and tries to remediate a recommendation by using the
 \*Fix\* button, they will have the experience shown in the image below,
 where the Fix button is grey out.
 
-![Auditing for SQL Server should be enabled](../media/audit-sql-fix.png) 
+![Auditing for SQL Server should be enabled.](../media/audit-sql-fix.png) 
 
 For this reason, workload owners must be able to receive notifications
 when there are open security recommendations for them to remediate. In
@@ -64,7 +64,7 @@ capability to activate actions such as sending an email to the resource
 owner, when a recommendation is triggered. An example of this workflow
 is shown below:
 
-![Workflow automation example](../media/workflow-automation.jpeg) 
+![Workflow automation example.](../media/workflow-automation.jpeg) 
 
 1.  The team that is responsible for Microsoft Defender for Cloud
     identifies that there's a security recommendation that needs to be
@@ -90,4 +90,4 @@ recommendations that will improve the security hygiene of its workloads
 by visiting the Microsoft Defender for Cloud option as shown in the
 example below:
 
-![For example, a Database Administrator that manages multiple databases can see security recommendations that will improve the security hygiene of its workloads by visiting the Microsoft Defender for Cloud option as shown in the example below:](../media/ticket-reservation.png) 
+![For example, a Database Administrator that manages multiple databases can see security recommendations that will improve the security hygiene of its workloads by visiting the Microsoft Defender for Cloud option as shown in the example below.](../media/ticket-reservation.png) 

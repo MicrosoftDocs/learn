@@ -1,7 +1,7 @@
 
 ### Scenario
 
-![The Tailwind Traders logo.](../media/tailwind-traders-logo.png)
+![Alt text. Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders-logo.png)
 
 Tailwind Traders is a modern commerce company. For more than 30 years,
 the company has been a popular retail destination. It has grown to more

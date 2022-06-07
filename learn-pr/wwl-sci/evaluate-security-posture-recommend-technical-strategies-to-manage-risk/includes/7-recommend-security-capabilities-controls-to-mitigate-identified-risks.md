@@ -13,7 +13,7 @@ data. In addition, a robust risk management program is necessary to meet
 contractual obligations. Each risk management activity will have outputs
 that will feed the next phase, as shown in the diagram below:
 
-![Risk management process activities.](../media/risk-management-activity.png)
+![Alt text. Diagram that shows risk management process activities.](../media/risk-management-activity.png)
 
 Let's use as an example a scenario where you're the Cybersecurity Architect that is recommending security capabilities and controls to mitigate the identified risks. 
 
@@ -52,7 +52,7 @@ overall security score, which means you're improving your security
 posture. The example below shows the *Secure management ports* security
 control expanded with three recommendations that needs to be addressed.
 
-![Secure Management Ports](../media/secure-management-ports.png)
+![Alt text. Diagram that shows secure management ports.](../media/secure-management-ports.png)
 
 Once all three are remediated, you'll receive eight points in your
 secure score, as shown in the Max score column. There are also security
@@ -61,14 +61,14 @@ for example the security control *Protect applications against DDoS
 attacks* shown below, suggests the enablement of WAF to mitigate this
 risk.
 
-![ Protect applications against DDoS attacks](../media/protect-applications-against-ddos-attacks.png) 
+![Alt text. Screenshot of a remediation to protect applications against DDoS attacks.](../media/protect-applications-against-ddos-attacks.png) 
 
 You can also use Azure Security Benchmark to identify the resources
 that are in risk enable security capabilities to mitigate these risks
 based on the remediation steps suggested by the benchmark, as shown in
 the example below:
 
-![Customer Responsibility](../media/customer-responsibility.png)
+![Alt text. Diagram that shows customer responsibility.](../media/customer-responsibility.png)
 
 Notice that in this scenario, you have a security control called *DP-3
 Encrypt sensitive data in transit*, and within this control, you have a

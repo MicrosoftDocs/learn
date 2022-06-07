@@ -3,7 +3,7 @@ The Secure Score dashboard in Defender for Cloud shows the secure score
 on the subscription level for one or more subscriptions (depending on
 how many subscriptions are selected in the Azure Portal).
 
-![The Secure Score dashboard in Defender for Cloud shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure Portal)](../media/microsoft-defender-cloud-secure-score.png) 
+![The Secure Score dashboard in Defender for Cloud shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure Portal).](../media/microsoft-defender-cloud-secure-score.png) 
 
 To increase your security, review Defender for Cloud's recommendations
 page and remediate the recommendation by implementing the remediation
@@ -26,7 +26,7 @@ can track progress as you continuously remediate security
 recommendations to drive your secure score up, as shown in the diagram
 below:
 
-![thumbnail image 1 of blog post titled Survival Guide to Drive your Secure Score Up in Microsoft Defender for Cloud](../media/secure-score-goes-up.jpeg) 
+![thumbnail image 1 of blog post titled Survival Guide to Drive your Secure Score Up in Microsoft Defender for Cloud.](../media/secure-score-goes-up.jpeg) 
 
 While driving security posture enhancement by remediating security
 recommendations triggered by Microsoft Defender for Cloud and using
@@ -53,4 +53,4 @@ non-compliant resources upon creation. Below you have an example of a
 recommendation that has the *Enforce* button, which behind the scene is
 implementing the *DeployIfNotExist* effect.
 
-![Auditing on SQL Server](../media/audit-sql-server.png)
+![Auditing on SQL Server.](../media/audit-sql-server.png)

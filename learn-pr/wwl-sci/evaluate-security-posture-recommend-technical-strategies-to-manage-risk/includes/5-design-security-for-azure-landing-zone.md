@@ -12,10 +12,7 @@ infrastructure as a service or platform as a service.
 A landing zone is an environment for hosting your workloads,
 pre-provisioned through code. Watch the following video to learn more.
 
-![Video](../media/start-your-cloud-journey.png) 
-
-Link to video:
-<https://www.microsoft.com/en-us/videoplayer/embed/RE4xdvm?postJsllMsg=true>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xdvm]
 
 Security, governance, and compliance are key topics when designing and
 building an Azure environment. These topics help you start from strong
