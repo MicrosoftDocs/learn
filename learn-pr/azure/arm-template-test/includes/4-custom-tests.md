@@ -58,7 +58,7 @@ To author a test file name, you need to write it in PowerShell. The three pieces
    The preceding example shows three parameters: `$TemplateObject`, `$TemplateFileName`, and `$SampleName`. The first two parameters are mandatory, as shown by the `Parameter[(Mandatory = $true)]` decoration. The parameters are named according to their meaning. `$TemplateObject` contains an object representation of the template file, and `TemplateFileName` contains the name of the file being tested.  
 
    > [!TIP]
-   > See [parameters in ARM templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/parameters) to learn more about parameters. 
+   > See [parameters in ARM templates](/azure/azure-resource-manager/templates/parameters?azure-portal=true) to learn more about parameters. 
 
 - **Test logic**. The last part of a test is the test logic. Most tests usually want to do the following steps:
 
