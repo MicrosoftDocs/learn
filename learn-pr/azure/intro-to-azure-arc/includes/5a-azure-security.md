@@ -1,4 +1,4 @@
-Contoso wants to protect the servers and Kubernetes clusters that it has connected to Azure Arc. Using Microsoft Sentinel, Contoso can collect security-related events for their Arc-enabled servers, providing alert detection, threat visability, and other benefits. Contoso can also use Microsoft Defender for Servers to monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
+Contoso wants to protect the servers and Kubernetes clusters that it has connected to Azure Arc. Using Microsoft Sentinel, Contoso can collect security-related events for their Arc-enabled servers, providing alert detection, threat visibility, and other benefits. Contoso can also use Microsoft Defender for Servers to monitor the security posture of their Arc-enabled servers, while also securing their Kubernetes clusters through Microsoft Defender for Containers.
 
 ## Azure Arc security with Microsoft Sentinel
 

@@ -1,4 +1,4 @@
-Contoso, a global entity, hosts multiple SQL Server instances with various versions today in their on-premises environment. The IT staff also wants to explore multi-cloud strategy in order to leverage cloud service providers around the world. Azure Arc-enabled data services provides a single pane of glass and unified tools for management, deployment, and being data sovereignty compliance in certain markets.
+Contoso, a global entity, hosts multiple SQL Server instances with various versions today in their on-premises environment. The IT staff also wants to explore multi-cloud strategy in order to leverage cloud service providers around the world. Azure Arc-enabled data services provides a single pane of glass and unified tools for management, deployment, and data sovereignty compliance in certain markets.
 
 ## What is Azure Arc-enabled data services?
 
@@ -14,7 +14,7 @@ Using Azure Arc-enabled SQL Managed Instance, you can enroll all of your databas
 
 The following chart compares management capabilities by deployment model:
 
-:::image type="content" source="../media/4a-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false" lightbox="../media/4a-management-capabilities-by-deployment-model.png" :::
+:::image type="content" source="../media/4a-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false":::
 
 ## Connected and disconnected modes
 
@@ -48,7 +48,7 @@ Today Azure Arc-enabled SQL Managed instance comes in two different types of SKU
 
 ## How does Azure Arc-enabled data service operate?
 
-The Azure Arc-enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have.
+The Azure Arc-enabled SQL Managed Instance operates on any supported Kubernetes cluster and hardware.
 
 Azure Arc-enabled data service is deployed and managed via an agent-based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must:
 
@@ -69,7 +69,7 @@ Azure Arc-enabled data service is deployed and managed via an agent-based soluti
 
 You must also:
 - Meet the appropriate network requirements for connecting a Kubernetes cluster to Azure Arc.
-- Provide a ReadWriteMany (RWX) capable storage class for backups. If no storage class is specified for backups, the default storage class in Kubernetes is used and if this is not RWX capable, the Arc SQL Managed Instance installation may not succeed.
+- Provide a ReadWriteMany (RWX) capable storag**e class for backups. If no storage class is specified for backups, the default storage class in Kubernetes is used and if this is not RWX capable, the Arc SQL Managed Instance installation may not succeed.
 - Register providers for Azure Arc-enabled Kubernetes:
   - Microsoft.Kubernetes.
   - Microsoft.KubernetesConfiguration.
