@@ -6,7 +6,7 @@ risk and pre-configured policies. Independent software vendors can take
 advantage of conditional access by surfacing the option to apply
 conditional access policies when relevant.
 
-![Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity.](../media/enforce-access-control-requirements.png) 
+![Alt text. Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity.](../media/enforce-access-control-requirements.png) 
 
 ### Requirements
 
@@ -39,7 +39,7 @@ This section includes the following articles:
 The Microsoft approach to Zero Trust includes Conditional Access as the
 main policy engine. Here's an overview of that approach:
 
-![Diagram that provides an overview of the Zero Trust model.](../media/components-zero-trust-model.png) 
+![Alt text. Diagram showing an overview of the Zero Trust model.](../media/components-zero-trust-model.png) 
 
 Download an [SVG file](https://arch-center.azureedge.net/zero-trust-model.svg) of this architecture.
 
@@ -48,7 +48,7 @@ architecture that covers both policy definition and policy enforcement.
 Based on various signals or conditions, Conditional Access can block or
 give limited access to resources, as shown here:
 
-![Diagram that provides an overview of the Conditional Access signal, decision, enforcement path.](../media/signal-decision-enforcement.png) 
+![Alt text. Diagram showing an overview of the Conditional Access signal, decision, enforcement path.](../media/signal-decision-enforcement.png) 
 
 ### Conditional Access Zero Trust architecture
 

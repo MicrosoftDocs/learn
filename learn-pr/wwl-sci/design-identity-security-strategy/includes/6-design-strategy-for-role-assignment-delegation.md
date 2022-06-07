@@ -149,7 +149,7 @@ multiple roles (Azure AD and/or Azure). Make that user an eligible
 member or owner of this group. With just one activation, they will have
 access to all the linked resources.
 
-![Privileged Access Group.png](../media/privileged-access-group.png) 
+![Privileged Access Group.png.](../media/privileged-access-group.png) 
 
 #### 8. Use cloud native accounts for Azure AD roles
 
@@ -163,7 +163,7 @@ To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-![Delegate from IT administrator to managers](../media/delegate-non-admin.png) 
+![Delegate from IT administrator to managers.](../media/delegate-non-admin.png) 
 
 Hana is the IT administrator. She has contacts in each department who are responsible for
 their department's resources and business critical content: Mamta

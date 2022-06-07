@@ -28,7 +28,7 @@ help you rapidly deploy protections based on this strategy.
 This graphic describes how this extortion-based attack is growing in
 impact and likelihood using privileged access:
 
-![Human operated ransomware](../media/human-operated-ransomware.png) 
+![Human operated ransomware.](../media/human-operated-ransomware.png) 
 
 -   **High business impact:** It is difficult to overstate the potential
     business impact and damage of a loss of privileged access. Attackers
@@ -68,7 +68,7 @@ attackers are like water as they have numerous options they can exploit
 flexible in which ones they use, and they generally take the path of
 least resistance to achieving their objectives.
 
-![Attackers are like water and can appear insignificant at first but, flood over time](../media/attackersare-like-water.png) 
+![Attackers are like water and can appear insignificant at first but, flood over time.](../media/attackersare-like-water.png) 
 
 ### Building the recommended strategy
 
@@ -107,13 +107,13 @@ the capability or access a sensitive capability):
     the damage an adversary can inflict with privileged access is much
     higher.
 
-![Two pathways to systems user and privileged access](../media/business-critical-assets.png) 
+![Two pathways to systems user and privileged access.](../media/business-critical-assets.png) 
 
 These components collectively comprise the privileged access attack
 surface that an adversary may target to attempt to gain elevated access
 to your enterprise:
 
-![Attack surface unprotected](../media/business-critical-assets-2.png) 
+![Attack surface unprotected.](../media/business-critical-assets-2.png) 
 
 #### Lay foundations for successful privileged identity strategy
 

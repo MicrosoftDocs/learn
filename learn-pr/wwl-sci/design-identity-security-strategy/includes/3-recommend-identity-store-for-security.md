@@ -14,7 +14,7 @@ using Azure Active Directory's built-in security capabilities. Advanced
 integrations will take your solution one step further with enhanced
 security capabilities.
 
-![A curved path showing the foundational and advanced integrations. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations.](../media/key-components-identity-zero-trust-integrations.png)
+![Alt text. Diagram showing a curved path showing the key components of a zero trust integration. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations.](../media/key-components-identity-zero-trust-integrations.png)
 
 **Foundational integrations**
 

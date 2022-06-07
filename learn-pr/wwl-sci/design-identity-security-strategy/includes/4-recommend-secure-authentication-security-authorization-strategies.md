@@ -80,16 +80,16 @@ AD hybrid identity solution.
 
 The simplicity of a password hash synchronization solution:
 
-![Azure AD hybrid identity with Password hash synchronization](../media/architecture-diagram.png) 
+![Alt text. Diagram showing Azure AD hybrid identity with Password hash synchronization.](../media/architecture-diagram.png) 
 
 Agent requirements of pass-through authentication, using two agents for redundancy:
 
-![Azure AD hybrid identity with Pass-through Authentication](../media/architecture-diagram-2.png)
+![Alt text. Diagram showing Azure AD hybrid identity with Pass-through Authentication.](../media/architecture-diagram-2.png)
 
 Components required for federation in your perimeter and internal
 network of your organization:
 
-![Azure AD hybrid identity with federated authentication](../media/architecture-diagram-3.png) 
+![Alt text. Diagram showing Azure AD hybrid identity with federated authentication.](../media/architecture-diagram-3.png) 
 
 ### Comparing Authentication Methods
 

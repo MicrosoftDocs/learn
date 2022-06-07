@@ -1,6 +1,6 @@
 ## Design an Identity Security Strategy
 
-In this module, you'll learn how to:
+In this module, you'll learn how to: 
 
 -   Recommend an identity store for security
 -   Recommend secure authentication and security authorization strategies
