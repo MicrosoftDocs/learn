@@ -18,15 +18,15 @@ quiz:
   questions:
   - content: Which operating model represents the highest state of maturity?
     choices:
-    - content: The Cloud Center of Excellence.
+    - content: Cloud center of excellence
       isCorrect: true
       explanation: Correct.
-    - content: The Central IT structure.
+    - content: Central IT structure
       isCorrect: false
       explanation: Incorrect. This is more often used in on-premises environments or where central control is required.
-    - content: Cloud Adoption Team.
+    - content: Cloud adoption team
       isCorrect: false
       explanation: Incorrect. This is primarily used for small-scale or early-stage adoption efforts.
-    - content: Minimum Viable Product.
+    - content: Minimum viable product
       isCorrect: false
-      explanation: Incorrect. The MVP is primarily used for small-scale or early-stage adoption efforts.
+      explanation: Incorrect. The MVP model is primarily used for small-scale or early-stage adoption efforts.
