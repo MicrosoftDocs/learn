@@ -64,5 +64,5 @@ see the policy tagged as such in this column. You can also use the
 column filter to limit the view to only policies that are tagged as
 *Security Baseline*.
 
-![Security Baseline](../media/security-baseline.png) 
+![Alt text. Screenshot showing security baselines.](../media/security-baseline.png) 
 

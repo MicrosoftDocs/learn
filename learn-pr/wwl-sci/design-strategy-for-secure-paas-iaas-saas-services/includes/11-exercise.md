@@ -1,7 +1,7 @@
 
 Scenario 
 
-![The Tailwind Traders logo.](../media/tailwind-traders.png) 
+![Alt text. Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders.png) 
 
 Tailwind Traders is a modern commerce company. For more than 30 years,
 the company has been a popular retail destination. It has grown to more
@@ -43,7 +43,7 @@ Questions
 
 1. Which solution should be utilized to:
 
-   - Provide data classification and labelling in Azure?
+   - Provide data classification and labeling in Azure?
 
    - Provide cloud security posture management and threat detection for VM, Containers and Cosmos DB?
 

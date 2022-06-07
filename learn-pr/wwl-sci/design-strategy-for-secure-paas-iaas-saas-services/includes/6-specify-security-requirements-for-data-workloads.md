@@ -59,7 +59,7 @@ with automated data discovery, sensitive data classification, and
 end-to-end data lineage. Enable data curators to manage and secure your
 data estate. Empower data consumers to find valuable, trustworthy data.
 
-![High level architecture of Microsoft Purview](../media/microsoft-purview.png)
+![Alt text. Diagram that shows high level architecture of Microsoft Purview.](../media/microsoft-purview.png)
 
 Microsoft Defender for Cloud integration with Azure Purview allows you
 to obtain vital layer of metadata from Azure Purview and use in alerts
@@ -70,7 +70,7 @@ data. The example below shows a SQL database status in Defender for
 Cloud, with the data enrichment coming from Azure Purview in the low
 left corner:
 
-![The example below shows a SQL database status in Defender for Cloud, with the data enrichment coming from Azure Purview in the low left corner of the image](../media/resource-health-purview.png) 
+![Alt text. Screenshot showing security health of a database in Defender for Cloud.](../media/resource-health-purview.png) 
 
 #### Databases
 
@@ -85,7 +85,7 @@ enabling and managing these capabilities. Security recommendations for
 SQL database will be surfaced in Defender for Cloud as shown the screen
 below:
 
-![Security recommendations for SQL database will be surfaced in Defender for Cloud as shown in the screen](../media/databases.png) 
+![Alt text. Screenshot showing security recommendations for a SQL database in Defender for Cloud.](../media/databases.png) 
 
 An advanced threat protection service continuously monitors your SQL
 servers for threats such as SQL injection, brute-force attacks, and

@@ -2,14 +2,10 @@
 Let's look at the security advantages of an Azure PaaS deployment versus
 on-premises.
 
-![security advantages of PaaS](../media/security-advantages-paas.png) 
+![Alt text. Diagram that shows security advantages of PaaS.](../media/security-advantages-paas.png) 
 
-Starting at the bottom of the stack, the physical infrastructure,
-Microsoft mitigates common risks and responsibilities. Because the
-Microsoft cloud is continually monitored by Microsoft, it's hard to
-attack. It doesn't make sense for an attacker to pursue the Microsoft
-cloud as a target. Unless the attacker has lots of money and resources,
-the attacker is likely to move on to another target.
+Microsoft mitigates common risks and responsibilities starting at the bottom of the stack: the physical infrastructure. Because the Microsoft cloud is continually monitored by Microsoft, it's hard to
+attack. It doesn't make sense for an attacker to pursue the Microsoft cloud as a target. Unless the attacker has lots of money and resources, the attacker is likely to move on to another target.
 
 In the middle of the stack, there's no difference between a PaaS
 deployment and on-premises. At the application layer and the account and
@@ -33,7 +29,7 @@ to quickly and automatically scale out to defend against DDoS attacks.
 With PaaS deployments come a shift in your overall approach to security.
 You shift from needing to control everything yourself to sharing
 responsibility with Microsoft. Another significant difference between
-PaaS and traditional on-premises deployments, is a new view of what
+PaaS and traditional on-premises deployments is a new view of what
 defines the primary security perimeter. Historically, the primary
 on-premises security perimeter was your network, and most on-premises
 security designs use the network as its primary security pivot. For PaaS
@@ -93,7 +89,7 @@ Each recommendation includes the following information:
 -   **Azure ID**: The Azure Security Benchmark ID that corresponds to
     the recommendation.
 
--   Recommendation: Following directly after the Azure ID, the
+-   **Recommendation**: Following directly after the Azure ID, the
     recommendation provides a high-level description of the control.
 
 -   **Guidance**: The rationale for the recommendation and links to
@@ -140,21 +136,17 @@ the following areas:
 
 -   Incident Response
 
-For more information about App Service security baseline, visit [Azure security baseline for App Service \| Microsoft Docs](/security/benchmark/azure/baselines/app-service-security-baseline).
+For more information about App Service security baseline, visit [Azure security baseline for App Service](/security/benchmark/azure/baselines/app-service-security-baseline).
 
-One strategy to identify all your PaaS resources and verify the open
-issues is to use the Inventory dashboard in Defender for Cloud. You can
-create a filter by resource type and see only the PaaS resources that
-you want to evaluate. The example below shows only the resource type
-that is equal to App Service.
+One strategy to The Inventory dashboard in Defender for Cloud allows you to identify all your PaaS resources and verify the open issues. You can create a filter by resource type and see only the PaaS resources that you want to evaluate. The example below shows only the resource type that is equal to App Service.
 
-![A resource type that is equal to App Service](../media/resource-type-equal-app-service.png) 
+![Alt text. Screenshot showing filtering for a resource type that is equal to App Service.](../media/resource-type-equal-app-service.png) 
  
 
 Once you identify the resource, you can click on it and see the open
 security recommendations as shown below:
 
-![Open security recommendations](../media/open-security-recommendations.png) 
+![Alt text. Screenshot showing open security recommendations.](../media/open-security-recommendations.png) 
 This list provides the list of recommendations, which are derived from
 Azure Security Benchmark, organized by priority and showing the current
 status (healthy or unhealthy).

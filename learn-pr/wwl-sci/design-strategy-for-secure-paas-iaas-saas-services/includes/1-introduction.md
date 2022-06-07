@@ -1,7 +1,7 @@
 
 When designing the security strategy for your cloud workloads, you need to take into considerations that different cloud services will have different security requirements. In this module you'll learn how to design a strategy for security PaaS, IaaS and SaaS services.
 
-### Learning Objectives
+### Learning Objectives 
 
 In this module, you'll learn how to:
 

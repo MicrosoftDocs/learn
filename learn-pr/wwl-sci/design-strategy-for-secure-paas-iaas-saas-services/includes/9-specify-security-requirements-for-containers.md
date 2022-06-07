@@ -73,7 +73,7 @@ security, including:
 
 -   **Environment hardening:** Defender for Containers protects your
     Kubernetes clusters whether they're running on Azure Kubernetes
-    Service, Kubernetes on-prem / IaaS, or Amazon EKS. By continuously
+    Service, Kubernetes on-premises / IaaS, or Amazon EKS. By continuously
     assessing clusters, Defender for Containers provides visibility into
     misconfigurations and guidelines to help mitigate identified
     threats. Learn more in Hardening.
@@ -94,5 +94,4 @@ generates security recommendations. Use Defender for Cloud's
 recommendations page to view recommendations and remediate issues, as
 you can see the example below:
 
-![Use Defender for Cloud's recommendations page to view recommendations and remediate issues, as you can see the example in the image](../media/defender-cloud-recommendations-page.png) 
-
+:::image type="content" source="../media/defender-cloud-recommendations-page.png" alt-text="Use Defender for Cloud recommendations to remediate container vulnerabilities." lightbox="../media/defender-cloud-recommendations-page.png":::

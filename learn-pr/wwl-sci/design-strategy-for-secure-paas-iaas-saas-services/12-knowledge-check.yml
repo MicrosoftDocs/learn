@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/06/2022
+  ms.date: 06/07/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "Microsoft Secure Score"
       isCorrect: true
       explanation: "This is correct. Secure Score helps to track the security posture progress of your SaaS environment"
-  - content: "Which role is responsible for establishing the following security requirements for an IoT environment: 1) Scope hardware to minimum requirements, 2) Make hardware tamper proof, 3) Make upgrades secure."
+  - content: "Which role is responsible for establishing the following security requirements for an IoT environment? 1) Scope hardware to minimum requirements, 2) Make hardware tamper proof, 3) Make upgrades secure."
     choices:
     - content: "IoT hardware manufacturer/integrator"
       isCorrect: true
