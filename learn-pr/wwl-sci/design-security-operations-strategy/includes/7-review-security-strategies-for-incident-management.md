@@ -24,7 +24,7 @@ Security Response teams and the various service teams should work jointly and ta
 
 - **Post-incident activity:** Refers to the post-mortem analysis performed after the recovery of a security incident. The operational actions performed during the process are reviewed to determine if any changes need to be made in the preparation or detection and analysis phases. 
 
-![Incident management process](../media/incident-management-process.png) 
+![Alt text. Diagram showing incident management process.](../media/incident-management-process.png) 
 
 #### Preparation 
 

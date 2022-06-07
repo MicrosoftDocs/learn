@@ -34,7 +34,7 @@ your [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and
 [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) 
 processes remain consistent.
 
-![Customer processes that unified operations can support](../media/customer-processes.png) 
+![Alt text. Diagram that shows customer processes that unified operations can support.](../media/customer-processes.png) 
 
 Most commonly, customers require the ability to deliver consistency
 within their defined governance and operations management processes. To
@@ -94,9 +94,9 @@ goals above for governance and operations management. Your unified
 operations solution should enable you to extend these processes across
 all hybrid, multi-cloud, and edge deployments.
 
-![Modern Security Operation - Technology Capabilities](../media/modern-security-operation.png) 
+![Alt text. Diagram that shows technology capabilities of Modern Security Operations.](../media/modern-security-operation.png) 
 
-![Security Operations Functions (Tiers)](../media/security-operations-functions.png) 
+![Alt text. Diagram that shows security Operations functions (Tiers).](../media/security-operations-functions.png) 
 
 #### Azure Security Operation services
 

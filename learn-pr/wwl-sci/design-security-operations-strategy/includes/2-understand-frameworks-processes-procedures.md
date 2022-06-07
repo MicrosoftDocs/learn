@@ -44,7 +44,7 @@ operations:
 SecOps has multiple potential interactions with business leadership,
 which includes:
 
-![Graphical user interface, text, application, email Description](../media/practice-exercises.png) 
+![potential interactions between SecOps and business leadership.](../media/practice-exercises.png) 
 
 -   **Business context to SecOps**: SecOps must understand what is most
     important to the organization so that the team can apply that

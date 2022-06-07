@@ -134,7 +134,7 @@ using threat intelligence packages. You can deploy Microsoft Defender for IoT in
 If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat
 intel from Sentinel.
 
-![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
+![Alt text. Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
 
 Defender for IoT has both agent-based and agentless monitoring
 solutions:

@@ -5,7 +5,7 @@ knowledge of known attributes and abnormal activities specific to your
 industry is fundamental in knowing when to call an observed behavior
 suspicious.
 
-![Converging Tools & Data](../media/converge-tools-data.png) 
+![Alt text. Diagram showing converging tools & data.](../media/converge-tools-data.png) 
 
 ### Threat Intelligence in Microsoft Sentinel
 
@@ -29,7 +29,7 @@ Alert definitions are contextual attributes that can be used collectively to ide
 
 ### Indicators of compromise (IOC)
 
-IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered evidence of a breach. They are often seen after an attack has already been carried out, and the objective has been reached, such as exfiltration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
+IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered evidence of a breach. They are often seen after an attack has already been carried out, and the objective has been reached, such as ex-filtration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
 
 ### Relationship between alert definitions and IOCs
 
@@ -49,8 +49,9 @@ Action: Equals
 
 Microsoft Defender for IoT is a unified security solution for identifying IoT and OT devices, vulnerabilities, and threats and managing them through a central interface.
 
-Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)using threat intelligence packages. You also have the option to [integrate Defender for IoT with Microsoft Sentinel](/azure/sentinel/iot-solution). If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat intel from Sentinel.
-![Threat intelligence from Sentinel](../media/threat-intel-from-sentinel.png) 
+Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended) using threat intelligence packages. You also have the option to [integrate Defender for IoT with Microsoft Sentinel](/azure/sentinel/iot-solution). If you integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT as well as the enriched threat intelligence from Sentinel.
+
+![Alt text. Diagram showing threat intelligence from Microsoft Sentinel.](../media/threat-intel-from-sentinel.png) 
 
 Defender for IoT has both agent-based and agentless monitoring solutions:
 

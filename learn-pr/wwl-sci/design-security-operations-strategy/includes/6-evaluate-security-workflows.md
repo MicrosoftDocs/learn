@@ -117,13 +117,13 @@ Azure:
 
 1.  From Defender for Cloud's sidebar, select **Workflow automation**.
 
-![Screenshot of workflow automation page showing the list of defined automations.](../media/workflow-automation.png) 
+![Alt text. Screenshot of workflow automation page showing the list of defined automations.](../media/workflow-automation.png) 
 
 From this page you can create new automation rules, as well as enable, disable, or delete existing ones.
 
 2.  To define a new workflow, click **Add workflow automation**. The
     options pane for your new automation opens.
-![Add Workflow Automation](../media/add-workflow-automation.png) 
+![Alt text. Screenshot of Add Workflow Automation menu.](../media/add-workflow-automation.png) 
  Here you can enter:
 
    a.  A name and description for the automation.
@@ -141,7 +141,7 @@ You'll be taken to Azure Logic Apps.
 
 4.  Select **Add**.
 
-![Creating a new Logic App.](../media/microsoft-azure-logic-app.png)
+![Alt text. Screenshot of creating a new Logic App.](../media/microsoft-azure-logic-app.png)
 
 5.  Enter a name, resource group, and location, and select **Review and
     create** > **Create**.
@@ -162,14 +162,14 @@ The logic app designer supports these Defender for Cloud triggers:
 
 -   **When a Defender for Cloud regulatory compliance assessment is created or triggered** - Trigger automations based on updates to regulatory compliance assessments.
 
-![Trigger Automations](../media/trigger-automations.png) 
+![Alt text. Screenshot of Trigger Automations.](../media/trigger-automations.png) 
 
 7.  After you've defined your logic app, return to the workflow
     automation definition pane (\"Add workflow automation\").
     Click **Refresh** to ensure your new Logic App is available for
     selection.
 
-![Refresh.](../media/actions-refresh.png) 
+![Alt text. Screenshot of refresh option.](../media/actions-refresh.png) 
 
 8.  Select your logic app and save the automation. Note that the Logic
     App dropdown only shows Logic Apps with supporting Defender for

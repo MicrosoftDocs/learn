@@ -76,7 +76,7 @@ In the information security lexicon, a kill chain describes the structure of an 
 
 Understanding the intention of an attack can help you investigate and report the event more easily. Microsoft Defender for Cloud alerts includes the 'intent' field to help with these efforts. 
 
-![Defend Across Attack Chains](../media/defend-across-attack-chains.png)
+![Alt text. Diagram that shows how Defender for Cloud defends across attack chains.](../media/defend-across-attack-chains.png)
 
 #### Types of logs in Azure
 
@@ -88,7 +88,7 @@ Cloud applications are complex, with many moving parts. Logging data can provide
 
 - Automate actions that would otherwise require manual intervention 
  
-![Types of logs in Azure](../media/security-information-event-management.png)
+![Alt text. Diagram that shows types of logs in Azure.](../media/security-information-event-management.png)
 
 Azure logs are categorized into the following types:
 
@@ -150,7 +150,7 @@ Security Center's threat protection enables you to detect and prevent threats at
 
 Security Center's threat protection includes fusion kill-chain analysis, which automatically correlates alerts in your environment based on cyber kill-chain analysis to help you better understand the full story of an attack campaign, where it started, and what kind of impact it had on your resources. Security Center's supported kill chain intents are based on the MITRE ATT&CK™ framework. As illustrated below, the typical steps that trace the stages of a cyberattack. 
 
-![Stages of Cyberattack](../media/stages-cyberattack.png)
+![Alt text. Diagram that shows stages of Cyberattack.](../media/stages-cyberattack.png)
 
 - **Reconnaissance:** The observation stage where attackers assess networks and services to identify possible targets and techniques to gain entry. 
 
