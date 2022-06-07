@@ -6,7 +6,7 @@ this intelligence leads to targeted actions---for example, releasing
 system updates, enforcing security policies like multi-factor
 authentication, or applying other security measures.
 
-![This figure gives examples of the types of intelligence that Microsoft gets about phishing, malware, and other attacks from analyzing things like device sign-ins, user sign-ins, and system updates.](../media/risk-mitigation.png)
+![This diagram gives examples of the types of intelligence that Microsoft gets about phishing, malware, and other attacks from analyzing things like device sign-ins, user sign-ins, and system updates.](../media/risk-mitigation.png)
 
 Threat intelligence is used as a tool to learn about threat and help
 mitigate risks. This is because threat intelligence gives context,
@@ -44,7 +44,7 @@ prioritize actions and reduce risk.
 Cyber threat intelligence (CTI) can come from many sources, such as
 open-source data feeds, threat intelligence sharing communities, paid
 intelligence feeds, and security investigations within organizations.
-CTI can range from written reports on a threat actor\'s motivations,
+CTI can range from written reports on a threat actor's motivations,
 infrastructure, and techniques, to specific observations of IP
 addresses, domains, and file hashes. CTI provides essential context for
 unusual activity, so security personnel can act quickly to protect
@@ -59,7 +59,7 @@ intelligence, because security products and automation can use it in
 large scale to protect and detect potential threats. The diagram below
 shows the core architecture of this solution:
 
-![Microsoft Sentinel data flow.](../media/mcrosoft-sentinel-data-connectors.png) 
+![Diagram showing Microsoft Sentinel data flow.](../media/mcrosoft-sentinel-data-connectors.png) 
 
 Microsoft Sentinel can help detect, respond to, and provide CTI context
 for malicious cyber activity. You can also use Microsoft Sentinel to:
@@ -77,7 +77,7 @@ for malicious cyber activity. You can also use Microsoft Sentinel to:
 -   Visualize key CTI information in workbooks
 
 Another product that also uses threat intelligence is Microsoft
-Defender for Cloud. Defender for Cloud\'s threat protection works by
+Defender for Cloud. Defender for Cloud's threat protection works by
 monitoring security information from your Azure resources, the network,
 and connected partner solutions. It analyzes this information, often
 correlating information from multiple sources, to identify threats. When
@@ -118,7 +118,7 @@ according to the attack. The reports available are:
     reports.
 
 This type of information is useful during the incident response process,
-where there\'s an ongoing investigation to understand the source of the
+where there's an ongoing investigation to understand the source of the
 attack, the attacker's motivations, and what to do to mitigate this
 issue in the future.
 
@@ -126,13 +126,13 @@ Threat intelligence is also used in other Microsoft Security
 solutions, such as Azure AD Identity Protection, which has a featured
 called Risk Detection. Risk detections (both user and sign-in linked)
 contribute to the overall user risk score that is found in the Risky
-Users report. These risks are calculated offline using Microsoft\'s
+Users report. These risks are calculated offline using Microsoft's
 internal and external threat intelligence sources including security
 researchers, law enforcement professionals, security teams at Microsoft,
 and other trusted sources. The image below has an example of the risk
 detection capability in Azure AD Identity Protection:
 
-![The image below has an example of the risk detection capability in Azure AD Identity Protection.](../media/security-risk-detections.png) 
+![Diagram showing an example of the risk detection capability in Azure AD Identity Protection.](../media/security-risk-detections.png) 
 
 ### Risk mitigations
 

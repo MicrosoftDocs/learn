@@ -4,7 +4,7 @@ environment that accounts for scale, security governance, networking,
 and identity. Azure landing zones enable application migration,
 modernization, and innovation at enterprise-scale in Azure. These zones
 consider all platform resources that are required to support the
-customer\'s application portfolio and don\'t differentiate between
+customer's application portfolio and don't differentiate between
 infrastructure as a service or platform as a service.
 
 ![Diagram that shows a landing zone design.](../media/land-zone.png) 
@@ -22,7 +22,7 @@ place.
 The tools and processes you implement for managing environments play an
 important role in detecting and responding to issues. These tools work
 alongside the controls that help maintain and demonstrate compliance. As
-the organization\'s cloud environment develops, these compliance design
+the organization's cloud environment develops, these compliance design
 areas will be the focus for iterative refinement. This refinement might
 be because of new applications that introduce specific new requirements,
 or the business requirements changing. For example, in response to a new
@@ -47,7 +47,7 @@ Framework also provides further in-depth guidance for holistic security
 processes and tools. This design area creates a foundation for security
 across your Azure, hybrid, and multi-cloud environments. You can enhance
 this foundation later with security guidance outlined in the Cloud
-Adoption Framework\'s Secure methodology.
+Adoption Framework's Secure methodology.
 
 When it comes to design area review, ensure that you establish the
 involved roles and functions, what is in scope and what is out of scope
@@ -69,19 +69,37 @@ as per the guidelines below:
 
 -   **Out of scope:** This exercise focuses on the foundation for a
     modern security operations center in the cloud. To streamline the
-    conversation, this exercise doesn\'t address some of the disciplines
+    conversation, this exercise doesn't address some of the disciplines
     in the CAF Secure methodology. Security operations, asset
     protection, and innovation security will build on your Azure landing
-    zone deployment. However, they\'re out of scope for this design area
+    zone deployment. However, they're out of scope for this design area
     discussion.
 
 ### Security design considerations
 
-An organization must have visibility into what\'s happening within their technical cloud estate. Security monitoring and audit logging of Azure platform services is a key component of a scalable framework. When it comes to security operations design, make sure to review the following guidelines:   
+An organization must have visibility into what's happening within their technical cloud estate. Security monitoring and audit logging of Azure platform services is a key component of a scalable framework. When it comes to security operations design, make sure to review the following guidelines:   
 
-   
-![Table about Scope and Context for security operations design.](../media/scope-context-table.png)
-This is an image of the table!!
+* **Security alerts**:
+    - Which teams require notifications for security alerts? 
+    - Are there groups of services that alerts require routing to different teams? 
+    - Business requirements for real-time monitoring and alerting. 
+    - Security information and event management integration with Microsoft Defender for Cloud and Microsoft Sentinel.
+* **Security logs**:
+    - Data retention periods for audit data. Azure Active Directory (Azure AD) Premium reports have a 30-day retention period. 
+    - Long-term archiving of logs like Azure activity logs, virtual machine (VM) logs, and platform as a service (PaaS) logs. 
+* **Security controls**:
+    - Baseline security configuration via Azure in-guest VM policy. 
+    - Consider how your security controls will align with governance guardrails. 
+* **Vulnerability management**:
+    - Emergency patching for critical vulnerabilities. 
+    - Patching for VMS that are offline for extended periods of time. 
+    - Vulnerability assessment of VMs. 
+* **Shared responsibility**:
+    - Where are the handoffs for team responsibilities? These responsibilities need consideration when monitoring or responding to security events. 
+    - Consider the guidance in the Secure methodology for security operations. 
+* **Encryption and keys**:
+    - Who requires access to keys in the environment? 
+    - Who will be responsible for managing the keys? 
 
 ### Security in the Azure landing zone accelerator
 

@@ -16,7 +16,7 @@ strengthen the security posture of their environment with
 recommendations that are mapped to the MITRE ATTACK framework and
 prioritize based on the potential risk across the cyber kill chain.
 
-![MITRE ATTACK framework .](../media/mitre-attack-framework.png) 
+![Diagram showing MITRE ATTACK framework.](../media/mitre-attack-framework.png) 
 
 The advantage of using MITRE ATTACK when evaluating your security
 posture is that you can create campaigns to remediate recommendations
@@ -27,5 +27,5 @@ actor from gaining further access to your workloads. Defender for Cloud
 has a filter that enables you to create this visualization as shown in
 the image below:
 
-![ Defender for Cloud has a filter that enables you to create this visualization as shown in the image.](../media/mitre-attack-tactics-filter.png)
+![Screenshot showing the filter in Defender for Cloud that allows you to view which phase of the MITRE ATTACK framework each remediation is mapped to.](../media/mitre-attack-tactics-filter.png)
 

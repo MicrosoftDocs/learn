@@ -17,25 +17,10 @@ the risks that were identified.
 Visit the links below for more information about the topics covered in
 this module:
 
-[Microsoft uses threat intelligence to protect, detect, and respond to
-threats](https://www.microsoft.com/en-us/insidetrack/microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-
-[What is risk? Azure AD Identity Protection \| Microsoft
-Docs](/en-us/azure/active-directory/identity-protection/concept-identity-protection-risks)
-
-[Sign-in risk-based Conditional Access - Azure Active Directory \|
-Microsoft
-Docs](/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)
-
-[Cyber threat intelligence in Microsoft Sentinel - Azure Example
-Scenarios \| Microsoft
-Docs](/en-us/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
-
-[Tracking your secure score in Microsoft Defender for Cloud \| Microsoft
-Docs](/en-us/azure/defender-for-cloud/secure-score-access-and-track)
-
-[Security recommendations in Microsoft Defender for Cloud \| Microsoft
-Docs](/en-us/azure/defender-for-cloud/review-security-recommendations)
-
-[Microsoft Defender for Cloud threat intelligence report \| Microsoft
-Docs](/en-us/azure/defender-for-cloud/threat-intelligence-reports)
+* [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/en-us/insidetrack/microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
+* [What is risk? Azure AD Identity Protection](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+* [Sign-in risk-based Conditional Access - Azure Active Directory](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)
+* [Cyber threat intelligence in Microsoft Sentinel - Azure Example Scenarios](/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
+* [Tracking your secure score in Microsoft Defender for Cloud](/azure/defender-for-cloud/secure-score-access-and-track)
+* [Security recommendations in Microsoft Defender for Cloud](/azure/defender-for-cloud/review-security-recommendations)
+* [Microsoft Defender for Cloud threat intelligence report](/azure/defender-for-cloud/threat-intelligence-reports)

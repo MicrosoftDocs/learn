@@ -5,7 +5,7 @@ security-related tasks. In the following diagram, you have an example of
 fictitious personas and their respective roles and security
 responsibilities:
 
-![Roles.](../media/cloud-security-personas.png) 
+![Diagram showing cloud personas created for various roles.](../media/cloud-security-personas.png) 
 
 Defender for Cloud enables these individuals to meet these various
 responsibilities. For example:
@@ -21,7 +21,7 @@ responsibilities. For example:
 
     -   Responsible for all aspects of security for the company
 
-    -   Wants to understand the company\'s security posture across cloud
+    -   Wants to understand the company's security posture across cloud
         workloads
 
     -   Needs to be informed of major attacks and risks
@@ -54,17 +54,17 @@ in the workload and tries to remediate a recommendation by using the
 \*Fix\* button, they will have the experience shown in the image below,
 where the Fix button is grey out.
 
-![Auditing for SQL Server should be enabled.](../media/audit-sql-fix.png) 
+![Screenshot showing auditing for SQL Server enabled.](../media/audit-sql-fix.png) 
 
 For this reason, workload owners must be able to receive notifications
 when there are open security recommendations for them to remediate. In
 Defender for Cloud you can use the [Workflow
-Automation](/azure/defender-for-cloud/workflow-automation)
+Automation](https://docs.microsoft.com/azure/defender-for-cloud/workflow-automation)
 capability to activate actions such as sending an email to the resource
 owner, when a recommendation is triggered. An example of this workflow
 is shown below:
 
-![Workflow automation example.](../media/workflow-automation.jpeg) 
+![Diagram showing an example of Workflow automation.](../media/workflow-automation.jpeg) 
 
 1.  The team that is responsible for Microsoft Defender for Cloud
     identifies that there's a security recommendation that needs to be
@@ -90,4 +90,4 @@ recommendations that will improve the security hygiene of its workloads
 by visiting the Microsoft Defender for Cloud option as shown in the
 example below:
 
-![For example, a Database Administrator that manages multiple databases can see security recommendations that will improve the security hygiene of its workloads by visiting the Microsoft Defender for Cloud option as shown in the example below.](../media/ticket-reservation.png) 
+![Screenshot showing security recommendations in the Microsoft Defender for Cloud dashboard.](../media/ticket-reservation.png) 

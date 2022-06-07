@@ -19,20 +19,20 @@ Governance in the cloud age must have an active component that continuously enga
 
 In the on-premises world, security governance followed the cadence of data it could get about the environment. This way of getting data might take time and be constantly out of date. Cloud technology now provides on-demand visibility into the current security posture and asset coverage. This visibility drives a major transformation of governance into a more dynamic organization. This organization provides a closer relationship to other security teams to monitor security standards, provide guidance, and improve processes. In its ideal state, governance is the heart of continuous improvement. This improvement engages across your organization to constantly improve security posture, which is called Posture Management and it fits in the overall security governance as shown in the diagram below: 
 
-![Security Governance.](../media/security-governance.png) 
+![Diagram showing how Security Governance functions within a security organization.](../media/security-governance.png) 
 
-Continuous improvement of asset security posture means that governance teams should focus on improving standards, and enforcement of those standards, to keep up with the cloud and attackers. Information technology (IT) organizations must react quickly to new threats and adapt accordingly. Attackers are continuously evolving their techniques, and defences are continuously improving and might need to be enabled. You can't always get all the security you need into the initial configuration. 
+Continuous improvement of asset security posture means that governance teams should focus on improving standards, and enforcement of those standards, to keep up with the cloud and attackers. Information technology (IT) organizations must react quickly to new threats and adapt accordingly. Attackers are continuously evolving their techniques, and defenses are continuously improving and might need to be enabled. You can't always get all the security you need into the initial configuration. 
 
 This Rapid Modernization Plan (RaMP) showed in the diagram below will enable you to quickly improve your security posture with the least number of challenges. 
 
-![Posture Management.](../media/posture-management.png) 
+![Diagram showing the Rapid Modernization Plan (RaMP).](../media/posture-management.png) 
  
 The posture management function will need to grow and continuously improve to tackle the full set of technical debt that the organization has accrued from over 30+ years of security being a low priority. Posture management will need to secure all the technologies and teams in the organization plus meet the needs of the organization as it changes (new platforms are adopted, new security tools become available to monitor and reduce risk, etc.). Any expansions in scope will take preparation to build leadership support, relationships across technical teams, posture management team skillsets, and processes. 
 
 
 Security posture refers to the current state of an organization's security---that is, its overall state of protection to its identities, endpoints, user data, apps and infrastructure.. The diagram below shows the three major pillars of security posture management.
 
-![Three Pillars of security posture management.](../media/your-security-posture.png) 
+![Diagram showing the three pillars of security posture management.](../media/your-security-posture.png) 
 
 These three pillars are:
 
@@ -94,12 +94,12 @@ and v7, NIST SP800-53 Rev4, and PCI-DSS v3.2.1. Organizations can use
 ASB to evaluate their Azure deployments security posture consistently
 and easily against these industry standards with minimal repeated work.
 
-![Azure centric controls.](../media/azure-centric-controls.png) 
+![Diagram showing Azure centric controls coming from C I S, P C I and NIST.](../media/azure-centric-controls.png) 
 
 Azure Security Benchmark is surfaced in Microsoft Defender for Cloud
 regulatory compliance dashboard as shown in the example below:
 
-![Azure Security Benchmark is surfaced in Microsoft Defender for Cloud regulatory compliance dashboard as shown in the example.](../media/microsoft-defender-cloud-regulatory-compliance.png) 
+![Screenshot showing Azure Security Benchmark surfaced in Microsoft Defender for Cloud regulatory compliance dashboard.](../media/microsoft-defender-cloud-regulatory-compliance.png) 
 
 This benchmark gives you visibility of which security recommendations
 are open per compliance control. Under each applicable compliance

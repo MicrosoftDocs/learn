@@ -3,7 +3,7 @@ The Secure Score dashboard in Defender for Cloud shows the secure score
 on the subscription level for one or more subscriptions (depending on
 how many subscriptions are selected in the Azure Portal).
 
-![The Secure Score dashboard in Defender for Cloud shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure Portal).](../media/microsoft-defender-cloud-secure-score.png) 
+![Screenshot showing the Secure Score dashboard in Defender for Cloud. It shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure Portal).](../media/microsoft-defender-cloud-secure-score.png) 
 
 To increase your security, review Defender for Cloud's recommendations
 page and remediate the recommendation by implementing the remediation
@@ -19,14 +19,11 @@ The example below shows the Recommendations dashboard with all security
 controls organized in a top-down list, where the controls on top will
 have a higher impact on the secure score improvement.
 
-![The example below shows the Recommendations dashboard with all security controls organized in a top-down list, where the controls on top will have a higher impact on the secure score improvement.](../media/resource-health.png) 
+![Screenshot showing the recommendations dashboard with all security controls organized in a top-down list, where the controls on top will have a higher impact on the secure score improvement.](../media/resource-health.png) 
 
 When you use Secure Score as your Key Performance Indicators (KPI), you
 can track progress as you continuously remediate security
-recommendations to drive your secure score up, as shown in the diagram
-below:
-
-![thumbnail image 1 of blog post titled Survival Guide to Drive your Secure Score Up in Microsoft Defender for Cloud.](../media/secure-score-goes-up.jpeg) 
+recommendations to drive your secure score up.
 
 While driving security posture enhancement by remediating security
 recommendations triggered by Microsoft Defender for Cloud and using
@@ -45,7 +42,7 @@ reject deployment of resources that are not following certain standards.
 
 Defender for Cloud can help the governance of those workloads by
 using Azure Policy to enforce secure configuration, based on a
-specific recommendation. Some recommendations will be based on polices
+specific recommendation. Some recommendations will be based on policies
 that can use the *Deny* effect, which in this case can stop unhealthy
 resources from being created. Some other recommendations are based on
 the *DeployIfNotExist* effect, which can automatically remediate
@@ -53,4 +50,4 @@ non-compliant resources upon creation. Below you have an example of a
 recommendation that has the *Enforce* button, which behind the scene is
 implementing the *DeployIfNotExist* effect.
 
-![Auditing on SQL Server.](../media/audit-sql-server.png)
+![Screenshot showing auditing on SQL Server.](../media/audit-sql-server.png)

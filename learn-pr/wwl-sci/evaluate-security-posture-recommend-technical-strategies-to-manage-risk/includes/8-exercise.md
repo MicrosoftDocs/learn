@@ -1,7 +1,7 @@
 
 ### Scenario
 
-![Alt text. Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders-logo.png)
+![Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders-logo.png)
 
 Tailwind Traders is a modern commerce company. For more than 30 years,
 the company has been a popular retail destination. It has grown to more
@@ -11,14 +11,14 @@ start-up that was growing aggressively in niche markets. Today, the
 company is seen as an innovative leader with customer-focused local
 storefronts.
 
-The retail innovation team reports to the company\'s chief technology
+The retail innovation team reports to the company's chief technology
 officer (CTO), who was the CEO of the acquired e-commerce start-up.
 Those technology solutions are the main hub for interactions with
 customers. Those solutions affect 60 percent of global revenue and
 produce 30 percent of annual gross sales. Examples of those innovations
 include:
 
-- Boundless commerce: Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Customers can make purchases from the platform. The mobile app gathers information from customers\' viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
+- Boundless commerce: Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Customers can make purchases from the platform. The mobile app gathers information from customers' viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
 - Analytics, AI, and robotics innovation: The team is experimenting with drone delivery, autonomous warehousing, and other AI-led approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
 
 The new CIO is focused on improving technical operations in multiple
@@ -36,7 +36,7 @@ The new CIO is concerned with the rise of high-profile companies getting
 compromised and asked the CSO to perform a risk assessment to identify
 the companies' high assets and ensure they're secure. In addition, the
 CIO wants the CSO to track security posture enhancement overtime and
-use cyber-threat intelligence to improve their defences against
+use cyber-threat intelligence to improve their defenses against
 threats. The CIO wants to have a monthly meeting to track this progress
 and the CSO should present a sort of KPI to show how the company is
 progressing. This is the first transformation effort to start since the
@@ -55,7 +55,7 @@ will examine how IT operates in the cloud.
 
     - Which tool should be utilized to aggregate CTI feeds and present in a meaningful dashboard?
 
-    - Which tool provides built-in threat intelligence report that can be used to improve the companies' defences?
+    - Which tool provides built-in threat intelligence report that can be used to improve the companies' defenses?
 
 3. Which security capability will enable Tailwind Traders to implement the CIO's vision of empowering the remote users while enforcing security and restrictions based on the user's geo-location?
 
