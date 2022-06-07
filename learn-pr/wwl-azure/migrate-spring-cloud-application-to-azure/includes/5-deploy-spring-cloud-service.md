@@ -44,7 +44,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 3.  For each application, you'll now create an app on Azure Spring Apps service. you'll start with the api-gateway. To deploy it, from the Git Bash prompt, run the following command:
     
     ```Bash
-    az spring-cloud app create
+    az spring-cloud app create \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name api-gateway \
@@ -57,7 +57,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 4.  Next deploy the jar file to this newly created app by running the following command from the Git Bash prompt:
     
     ```Bash
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name api-gateway \
@@ -68,7 +68,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 5.  In the same way create an app for the admin-server microservice:
     
     ```Bash
-    az spring-cloud app create
+    az spring-cloud app create \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name app-admin \
@@ -81,7 +81,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 6.  Next deploy the jar file to this newly created app:
     
     ```Bash
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name app-admin \
@@ -92,7 +92,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 7.  Next, you'll create an app for the customers-service microservice:
     
     ```Bash
-    az spring-cloud app create
+    az spring-cloud app create \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service
@@ -104,7 +104,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 8.  You'll not assign an endpoint but you'll set the mysql profile (customers service):
     
     ```Bash
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
@@ -116,7 +116,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 9.  Next, you'll create an app for the visits-service microservice:
     
     ```Bash
-    az spring-cloud app create
+    az spring-cloud app create \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service
@@ -128,7 +128,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 10. For the visit-service will also skip the endpoint assignment but include the mysql profile:
     
     ```Bash
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
@@ -140,7 +140,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 11. To conclude, you'll create an app for the vets-service microservice:
     
     ```Bash
-    az spring-cloud app create
+    az spring-cloud app create \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service
@@ -152,7 +152,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 12. In this case, you'll also skip the endpoint assignment but include the mysql profile:
     
     ```Bash
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
