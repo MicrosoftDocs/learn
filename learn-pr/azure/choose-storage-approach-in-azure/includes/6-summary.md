@@ -2,7 +2,7 @@ In this module, you learned how to classify data. You also learned how to review
 
 For more information, see these articles:
 
-- [Select an Azure data store for your application](9/azure/architecture/guide/technology-choices/data-store-decision-tree)
+- [Select an Azure data store for your application](/azure/architecture/guide/technology-choices/data-store-decision-tree)
 - [Criteria for choosing a data store](/azure/architecture/guide/technology-choices/data-store-considerations)
 - [Non-relational data and NoSQL in Azure](/azure/architecture/data-guide/big-data/non-relational-data)
 - [Online transaction processing and Azure](/azure/architecture/data-guide/relational-data/online-transaction-processing)

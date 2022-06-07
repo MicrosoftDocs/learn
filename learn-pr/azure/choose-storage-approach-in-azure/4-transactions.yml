@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. OLAP systems support fewer users, have longer response times, can be less available, and typically handle *large or complex* transactions."
     - content: "OLTP"
       isCorrect: true
-      explanation: "Correct. OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions. An OLTP system would work best for transactional data like product data that is closely linked to inventory."
+      explanation: "Correct. OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions. An OLTP system would work best for transactional data like product data that's closely linked to inventory."
 
   - content: "Suppose a retailer's operations to update inventory and process payments are in the same transaction. A user is trying to apply a $30 store credit on an order from their laptop and is submitting the exact same order by using the store credit (for the full amount) from their phone. Two identical orders are received. The database behind the scenes is an ACID-compliant database. What will happen?" 
     choices:

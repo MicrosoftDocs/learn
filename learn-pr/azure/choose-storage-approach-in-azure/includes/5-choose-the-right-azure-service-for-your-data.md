@@ -15,23 +15,23 @@ Here, you apply what you've learned about the data in your online retail scenari
 
 **Transactional support**: Because product data is tied to inventory, transactional support is required.
 
-### Recommended service: Azure Cosmos DB
+### Recommended service: Azure CosmosDB
 
-Azure Cosmos DB supports semi-structured or NoSQL data by design. So, supporting new fields, such as the "Bluetooth-enabled" field or any new fields you need in the future, is a given with Azure Cosmos DB.
+Azure CosmosDB supports semi-structured or NoSQL data by design. So, supporting new fields, such as the "Bluetooth-enabled" field or any new fields you need in the future, is a given with Azure CosmosDB.
 
-Azure Cosmos DB supports SQL for queries, and every property is indexed by default. You can create queries so that your customers can filter on any property in the catalog.
+Azure CosmosDB supports SQL for queries, and every property is indexed by default. You can create queries so that your customers can filter on any property in the catalog.
 
-Azure Cosmos DB is also ACID-compliant, so you can be assured that your transactions are completed according to those strict requirements. An OLTP connector is available for Azure Cosmos DB.
+Azure CosmosDB is also ACID-compliant, so you can be assured that your transactions are completed according to those strict requirements. An OLTP connector is available for Azure CosmosDB.
 
-As an added plus, you also can use Azure Cosmos DB you to easily replicate your data anywhere in the world. So, if your e-commerce site has users concentrated in the US, France, and England, you can replicate your data to those datacenters to reduce latency because you've physically moved the data closer to your users.
+As an added plus, you also can use Azure CosmosDB you to easily replicate your data anywhere in the world. So, if your e-commerce site has users concentrated in the US, France, and England, you can replicate your data to those datacenters to reduce latency because you've physically moved the data closer to your users.
 
 Even with data replicated around the world, you can choose from one of five consistency levels. By choosing the right consistency level, you can determine the tradeoffs to make between consistency, availability, latency, and throughput. You can scale up to handle higher customer demand during peak shopping times or scale down during slower times to conserve cost.
 
 ### Why not other Azure services?
 
-Azure SQL Database would be an excellent choice for this dataset if you could identify the subset of properties that are common for most of the products and the variable properties that might not exist in some products. You can use Azure SQL Database to combine structured data in the columns and semi-structured data stored as JSON columns that can be easily extended. Azure SQL Database can provide many of the same benefits of Azure Cosmos DB, but it provides little benefit if the structure of your data is changing in different entities and you can't predefine a set of common properties that are repeated in most of the entities. Unlike Azure CosmosDB, which indexes every property in the documents, in Azure SQL Database, you need to explicitly define what properties in semi-structured documents should be indexed. Azure Cosmos DB is a better choice for highly unstructured and variable data in which you can't predict what properties should be indexed. Azure SQL Database supports OLTP.
+Azure SQL Database would be an excellent choice for this dataset if you could identify the subset of properties that are common for most of the products and the variable properties that might not exist in some products. You can use Azure SQL Database to combine structured data in the columns and semi-structured data stored as JSON columns that can be easily extended. Azure SQL Database can provide many of the same benefits of Azure CosmosDB, but it provides little benefit if the structure of your data is changing in different entities and you can't predefine a set of common properties that are repeated in most of the entities. Unlike Azure CosmosDB, which indexes every property in the documents, in Azure SQL Database, you need to explicitly define what properties in semi-structured documents should be indexed. Azure CosmosDB is a better choice for highly unstructured and variable data in which you can't predict what properties should be indexed. Azure SQL Database supports OLTP.
 
-Other Azure services, like Azure Table Storage, Apache HBase as a part of Azure HDInsight, and Azure Cache for Redis, can also store NoSQL data. In this scenario, users will want to query on multiple fields, so Azure Cosmos DB is a better fit. Azure Cosmos DB indexes every field by default, whereas other Azure services are limited in the data they index. Querying on non-indexed fields results in reduced performance.
+Other Azure services, like Azure Table Storage, Apache HBase as a part of Azure HDInsight, and Azure Cache for Redis, can also store NoSQL data. In this scenario, users will want to query on multiple fields, so Azure CosmosDB is a better fit. Azure CosmosDB indexes every field by default, whereas other Azure services are limited in the data they index. Querying on non-indexed fields results in reduced performance.
 
 ## Photos and videos
 
@@ -73,6 +73,6 @@ Business data most likely will be queried by business analysts, who are more lik
 
 ### Why not other Azure services?
 
-Azure Synapse supports OLAP solutions and SQL queries, but your business analysts will need to perform cross-database queries, which Azure Synapse does not support.
+Azure Synapse supports OLAP solutions and SQL queries, but your business analysts will need to perform cross-database queries, which Azure Synapse doesn't support.
 
 Azure Stream Analytics is a great way to analyze data and transform it into actionable insights, but its focus is on real-time data that is streaming in. In this scenario, the business analysts are looking at historical data only.

@@ -21,7 +21,7 @@ When a database offers ACID guarantees, these principles are consistently applie
 
 ### OLTP vs. OLAP
 
-Transactional databases often are called *online transaction processing (OLTP)* systems. OLTP systems commonly support many users, have quick response times, and handle large volumes of data. They also are highly available, which means they have very minimal downtime. OLTP systems typically handle small transactions or relatively simple transactions.
+Transactional databases often are called *online transaction processing (OLTP)* systems. OLTP systems commonly support many users, have quick response times, and handle large volumes of data. They also are highly available, which means they have minimal downtime. OLTP systems typically handle small transactions or relatively simple transactions.
 
 An example of an Azure service that supports OLTP is Azure SQL Database.
 
@@ -33,18 +33,18 @@ The terms OLTP and OLAP aren't used as frequently as they used to be, but unders
 
 ## Transactions: Evaluate your data types
 
-Ensuring that your data is in the correct state is not always an easy task. Transactions can help by enforcing data integrity requirements on your data. If your data benefits from ACID principles, choose a storage solution that supports transactions.
+Ensuring that your data is in the correct state isn't always an easy task. Transactions can help by enforcing data integrity requirements on your data. If your data benefits from ACID principles, choose a storage solution that supports transactions.
 
 Let's walk through each of the datasets in the online retail scenario and determine the need for transactions.
 
 ### Product catalog data
 
-Product catalog data should be stored in a transactional database. When a user places an order and the payment is verified, the item inventory should be updated. Likewise, if the customer's credit card is declined, the order should be rolled back and the inventory should not be updated. These relationships require transactions.
+Product catalog data should be stored in a transactional database. When a user places an order and the payment is verified, the item inventory should be updated. Likewise, if the customer's credit card is declined, the order should be rolled back and the inventory shouldn't be updated. These relationships require transactions.
 
 ### Photos and videos
 
-Photos and videos in a product catalog don't require transactional support. These files are changed only when an update is made or new files are added. Even though there is a relationship between the image and the actual product data, it's not transactional in nature.
+Photos and videos in a product catalog don't require transactional support. These files are changed only when an update is made or new files are added. Even though there's a relationship between the image and the actual product data, it's not transactional in nature.
 
 ### Business data
 
-Because business data is historical and unchanging, transactional support is not required. Business analysts who work with the data also have unique needs in that they often work with aggregates in their queries, so they can work with the totals of other smaller data points.
+Because business data is historical and unchanging, transactional support isn't required. Business analysts who work with the data also have unique needs in that they often work with aggregates in their queries, so they can work with the totals of other smaller data points.

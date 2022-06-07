@@ -22,13 +22,13 @@ Let’s walk through each of the datasets with these questions in mind and discu
 
 ### Product catalog data
 
-For product catalog data in the online retail scenario, customer needs are the highest priority. Customers will want to query the product catalog to find. For example, a customer might query all men's shoes, then men's shoes on sale, and then men's shoes on sale in a particular size. Customer needs might require many read operations, and they must be able to query on specific fields.
+For product catalog data in the online retail scenario, customer needs are the highest priority. Customers will want to query the product catalog to find. For example, a customer might query all tennis shoes, then tennis shoes on sale, and then tennis shoes on sale in a particular size. Customer needs might require many read operations, and they must be able to query on specific fields.
 
-When a customer places an order, the application must update product quantities. The update operations need to happen just as quickly as the read operations so that users don't put an item in their shopping carts when that item has just sold out. This means not only a large number of read operations, but the system also requires increased write operations for product catalog data. Be sure to determine the priorities for all the users of the database, not only the primary users.
+When a customer places an order, the application must update product quantities. The update operations need to happen as quickly as the read operations so that users don't put an item in their shopping carts when that item just sold out. The application must support not only a large number of read operations, but it also requires increased write operations for product catalog data. Be sure to determine the priorities for all the users of the database, not only the primary users.
 
 ### Photos and videos
 
-Photos and videos that are displayed on product pages have different requirements. They need fast retrieval times so that they are displayed on the site at the same time as product catalog data, but they don't need to be queried independently. Instead, you can rely on the results of the product query, and include the video ID or URL as a property on the product data. So, photos and videos need to be retrieved only by their ID.
+Photos and videos that are displayed on product pages have different requirements. They need fast retrieval times so that they're displayed on the site at the same time as product catalog data, but they don't need to be queried independently. Instead, you can rely on the results of the product query, and include the video ID or URL as a property on the product data. So, photos and videos need to be retrieved only by their ID.
 
 Customers won't make updates to existing photos or videos. But, they can add new photos for product reviews. For example, a customer might upload an image of them showing off their new shoes.
 
