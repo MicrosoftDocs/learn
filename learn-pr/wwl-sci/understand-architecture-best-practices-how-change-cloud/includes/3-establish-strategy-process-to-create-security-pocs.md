@@ -67,7 +67,7 @@ following diagram shows a holistic approach for using security guidance
 and platform tooling to establish security visibility and control over
 your cloud assets in Azure.
 
-![Alt text. Diagram that shows Microsoft Azure Security Standards.](../media/visibility.png) 
+![Diagram that shows Microsoft Azure Security Standards.](../media/visibility.png) 
 
 You can use this model to proactively and continuously monitor the
 evolution of a security strategy, which includes evaluating new security
@@ -146,7 +146,7 @@ capabilities for continuous security assessment of your workloads.
 Defender for Cloud fills three vital needs as you manage the security of
 your resources and workloads in the cloud and on-premises:
 
-![Alt text. Diagram that shows pillars of continuous assessment.](../media/continuous-assessment.png) 
+![Diagram that shows pillars of continuous assessment.](../media/continuous-assessment.png) 
 
 | Security requirement                                                 | Defender for Cloud solution                                                                                                                                                                                                                                                                                                                                              |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

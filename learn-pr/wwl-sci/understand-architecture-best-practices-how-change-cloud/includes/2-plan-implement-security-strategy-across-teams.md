@@ -12,13 +12,13 @@ pace of change in the cloud makes adopting them an urgent priority.
 
 -   Partnership with shared goals. In this age of fast paced decisions
     and constant process evolution, security can no longer adopt an
-    \"arms-length\" approach to approving or denying changes to the
+    "arms-length" approach to approving or denying changes to the
     environment. Security teams must partner closely with business and
     IT teams to establish shared goals around productivity, reliability,
     and security and work collectively with those partners to achieve
     them.
 
--   This partnership is the ultimate form of \"shift left\"---the
+-   This partnership is the ultimate form of "shift left"---the
     principle of integrating security earlier in the processes to make
     fixing security issues easier and more effective. This requires a
     culture change by all involved (security, business, and IT),
@@ -33,7 +33,7 @@ pace of change in the cloud makes adopting them an urgent priority.
         goals and risks, what other teams can do to meet security goals,
         and how they should do it.
 
--   Security is an ongoing risk, not a problem. You can't \"solve\"
+-   Security is an ongoing risk, not a problem. You can't "solve"
     crime. At its core, security is just a risk management discipline,
     which happens to be focused on malicious actions by humans rather
     than natural events. Like all risks, security isn't a problem that
@@ -45,7 +45,7 @@ pace of change in the cloud makes adopting them an urgent priority.
 
 -   Success in either productivity or security requires both. An
     organization must focus on both security and productivity in
-    today's \"innovation or become irrelevant\" environment. If the
+    today's "innovation or become irrelevant" environment. If the
     organization isn't productive and driving new innovation, it could
     lose competitiveness in the marketplace that causes it to weaken
     financially or eventually fail. If the organization isn't secure
@@ -95,7 +95,7 @@ the NIST Cybersecurity framework of identify, protect, detect, respond,
 and recover functions. The diagram below shows how security roles map
 to business outcome enablement:
 
-![Alt text. Diagram that shows security roles and responsibilities.](../media/security-roles-responsibilities-1.png) 
+![Diagram that shows security roles and responsibilities.](../media/security-roles-responsibilities-1.png) 
 
 Security Leadership Roles and Security Architect Roles provide vision,
 guidance, and coordination across the organization and technical estate.
@@ -151,7 +151,7 @@ below shows that security is integrated as part of the cloud adoption
 process and from the beginning (defining the strategy), security is
 taking into consideration.
 
-![Alt text. Diagram that shows Microsoft Cloud Adoption Framework.](../media/microsoft-cloud-adoption-framework.png) 
+![Diagram that shows Microsoft Cloud Adoption Framework.](../media/microsoft-cloud-adoption-framework.png) 
 
 Adhering to these steps will help you integrate security at critical
 points in the process. The goal is to avoid obstacles in cloud adoption
@@ -210,7 +210,7 @@ documentation format can vary, it always includes:
     "what would you restore first if all business systems were down?"
     you can start building relationships while establishing quick wins.
 
-![Alt text. Diagram that shows security as a team sport.](../media/security-team-sport.png) 
+![Diagram that shows security as a team sport.](../media/security-team-sport.png) 
 
 #### Deliverables 
 The strategy step should result in a document that can easily be communicated to many stakeholders within the organization. The stakeholders can potentially include executives on the organization's leadership team.

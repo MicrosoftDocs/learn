@@ -16,20 +16,8 @@ that the proposed solution solves business problems.
 Visit the links below for more information about the topics covered in
 this module:
 
-[Define a security strategy - Cloud Adoption Framework \| Microsoft
-Docs](/azure/cloud-adoption-framework/strategy/define-security-strategy)
-
-[Get started: Secure the enterprise environment - Cloud Adoption
-Framework \| Microsoft
-Docs](/azure/cloud-adoption-framework/get-started/security)
-
-[Cloud security architecture functions - Cloud Adoption Framework \|
-Microsoft
-Docs](/azure/cloud-adoption-framework/organize/cloud-security-architecture)
-
-[Chief Information Security Officer (CISO) Workshop, Module 2: Security
-Management - Security documentation \| Microsoft
-Docs](/security/ciso-workshop/ciso-workshop-module-2)
-
-[What's inside Microsoft Security Best Practices? \| Microsoft
-Docs](/security/compass/microsoft-security-compass-introduction)
+* [Define a security strategy - Cloud Adoption Framework](/azure/cloud-adoption-framework/strategy/define-security-strategy)
+* [Get started: Secure the enterprise environment - Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/security)
+* [Cloud security architecture functions - Cloud Adoption Framework](/azure/cloud-adoption-framework/organize/cloud-security-architecture)
+* [Chief Information Security Officer (CISO) Workshop, Module 2: Security Management - Security documentation](/security/ciso-workshop/ciso-workshop-module-2)
+* [What's inside Microsoft Security Best Practices?](/security/compass/microsoft-security-compass-introduction)
