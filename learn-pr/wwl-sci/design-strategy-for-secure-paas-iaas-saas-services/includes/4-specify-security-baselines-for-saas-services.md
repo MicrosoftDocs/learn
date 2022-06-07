@@ -58,11 +58,11 @@ available for all operating systems.
 
 When you create policy configurations, you can review and apply policies
 that are recommended by Microsoft as security baseline policies. These
-recommendations are marked as \"Security Baseline\" when selecting
+recommendations are marked as "Security Baseline" when selecting
 policies. If the policy is recommended as a Security Baseline you'll
 see the policy tagged as such in this column. You can also use the
 column filter to limit the view to only policies that are tagged as
 *Security Baseline*.
 
-![Alt text. Screenshot showing security baselines.](../media/security-baseline.png) 
+![Screenshot showing security baselines.](../media/security-baseline.png) 
 

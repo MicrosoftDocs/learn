@@ -40,7 +40,7 @@ Kubernetes collects cluster and workload configuration for admission
 control policies as explained in Protect your Kubernetes workloads. The
 diagram below provides an overview of this solution:
 
-![Alt text. Diagram that shows securing an Azure Kubernetes Service Cluster with Defender for Cloud.](../media/azure-kubernetes-service-cluster.png)
+![Diagram that shows securing an Azure Kubernetes Service Cluster with Defender for Cloud.](../media/azure-kubernetes-service-cluster.png)
 
 -   Defender profile includes a *DaemonSet*, which is a set of
     containers that focus on collecting inventory and security events

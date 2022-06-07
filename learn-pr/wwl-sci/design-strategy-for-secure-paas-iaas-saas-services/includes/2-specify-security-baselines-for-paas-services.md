@@ -2,7 +2,7 @@
 Let's look at the security advantages of an Azure PaaS deployment versus
 on-premises.
 
-![Alt text. Diagram that shows security advantages of PaaS.](../media/security-advantages-paas.png) 
+![Diagram that shows security advantages of PaaS.](../media/security-advantages-paas.png) 
 
 Microsoft mitigates common risks and responsibilities starting at the bottom of the stack: the physical infrastructure. Because the Microsoft cloud is continually monitored by Microsoft, it's hard to
 attack. It doesn't make sense for an attacker to pursue the Microsoft cloud as a target. Unless the attacker has lots of money and resources, the attacker is likely to move on to another target.
@@ -140,13 +140,13 @@ For more information about App Service security baseline, visit [Azure security 
 
 One strategy to The Inventory dashboard in Defender for Cloud allows you to identify all your PaaS resources and verify the open issues. You can create a filter by resource type and see only the PaaS resources that you want to evaluate. The example below shows only the resource type that is equal to App Service.
 
-![Alt text. Screenshot showing filtering for a resource type that is equal to App Service.](../media/resource-type-equal-app-service.png) 
+![Screenshot showing filtering for a resource type that is equal to App Service.](../media/resource-type-equal-app-service.png) 
  
 
 Once you identify the resource, you can click on it and see the open
 security recommendations as shown below:
 
-![Alt text. Screenshot showing open security recommendations.](../media/open-security-recommendations.png) 
+![Screenshot showing open security recommendations.](../media/open-security-recommendations.png) 
 This list provides the list of recommendations, which are derived from
 Azure Security Benchmark, organized by priority and showing the current
 status (healthy or unhealthy).

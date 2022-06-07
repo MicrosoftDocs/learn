@@ -57,7 +57,7 @@ Security baselines for VMs are accessible via Defender for Cloud
 recommendations. Each operating system has its own recommendation as
 shown below:
 
-![Alt text. Screenshot showing remediating security configurations.](../media/remediate-security-configurations.png) 
+![Screenshot showing remediating security configurations.](../media/remediate-security-configurations.png) 
 
 As you open each recommendation, you'll see the security checks that
 were performed, and when you select a security check, you'll see more

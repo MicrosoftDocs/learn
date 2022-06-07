@@ -73,7 +73,7 @@ suspicious activity along with the relevant investigation steps,
 remediation actions, and security recommendations. The diagram below
 shows the three major actions performed by Defender for Storage:
 
-![Alt text. Diagram that shows security posture management for Storage](../media/security-posture-management-storage.png) 
+![Diagram that shows security posture management for Storage](../media/security-posture-management-storage.png) 
 
 1.  One-click enablement via Defender for Cloud dashboard
 
