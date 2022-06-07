@@ -3,7 +3,7 @@ Your transportation company wants to set itself apart from other companies, with
 Here, you'll learn:
 
 - What considerations you need to make when creating an Azure SQL database, including:
-  - How a logical server acts as an administrative container for your databases.
+  - How a logical server acts as an administrative container for your databasFes.
   - Differences between purchasing models.
   - How elastic pools enable you to share processing power among databases.
   - How collation rules affect how data is compared and sorted.
@@ -144,7 +144,7 @@ Your Azure SQL database is now up and running. There are many options that you c
 
     :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot showing command bar with Set server firewall highlighted.":::
 
-1. Select **Add you client IP4 address**. This action automatically adds the IP address for your computer.
+1. Select **Add your client IP4 address**. This action automatically adds the IP address for your computer.
 
     :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP highlighted.":::
 
