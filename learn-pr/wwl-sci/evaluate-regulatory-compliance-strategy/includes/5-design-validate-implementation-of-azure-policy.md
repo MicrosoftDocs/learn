@@ -9,7 +9,7 @@ When designing your Azure Policy, you need to take into consideration the organi
 
 Azure Policy can also help to set guardrails throughout your resources to help ensure cloud compliance, avoid misconfigurations, and practice consistent resource governance. Consider also using Azure Policy to reduce the number of external approval processes by implementing policies at the core of the Azure platform for increased developer productivity and control optimization of your cloud spend. Azure Policy will help you govern your Azure resources with simplicity, enforce policies and audit compliance, and monitor compliance continuously. Azure Policy establishes conventions for resources. Policy definitions describe resource compliance conditions and the effect to take if a condition is met. A condition compares a resource property field or a value to a required value. Resource property fields are accessed by using aliases. When a resource property field is an array, a special array alias can be used to select values from all array members and apply a condition to each one. The diagram below shows an example of how Azure Policy can be used in the beginning of the pipeline to ensure that policies are enforced upon the creation of the resources. 
 
-![An example of how Azure Policy can be used in the beginning of the pipeline to ensure that policies are enforced upon the creation of the resources.](../media/pre-flight-validation-authoring.png)
+![Diagram showing an example of how Azure Policy can be used in the beginning of the pipeline to ensure that policies are enforced upon the creation of the resources.](../media/pre-flight-validation-authoring.png)
 
 ### Control Costs
 
@@ -31,7 +31,7 @@ The recommended approach to validating a new policy definition is by following t
 
 #### Tightly define your policy
 
-It's important to understand how the business policy is implemented as a policy definition and the relationship of Azure resources with other Azure services. This step is accomplished by identifying the requirements and determining the resource properties. But it's also important to see beyond the narrow definition of your business policy. Does your policy state for example \"All Virtual Machines must\...\"? What about other Azure services that make use of VMs, such as HDInsight or AKS? When defining a policy, we must consider how this policy impacts resources that are used by other services.
+It's important to understand how the business policy is implemented as a policy definition and the relationship of Azure resources with other Azure services. This step is accomplished by identifying the requirements and determining the resource properties. But it's also important to see beyond the narrow definition of your business policy. Does your policy state for example "All Virtual Machines must\..."? What about other Azure services that make use of VMs, such as HDInsight or AKS? When defining a policy, we must consider how this policy impacts resources that are used by other services.
 
 For this reason, your policy definitions should be as tightly defined and focused on the resources and the properties you need to evaluate for compliance as possible.
 

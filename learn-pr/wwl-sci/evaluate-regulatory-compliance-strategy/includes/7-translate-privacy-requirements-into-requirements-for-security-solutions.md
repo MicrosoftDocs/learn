@@ -40,7 +40,7 @@ The security controls that will be applied to the data will vary also according 
 
 One solution for data classification in Azure is Microsoft Purview. Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and Software as a Service (SaaS) data. Create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Enable data curators to manage and secure your data estate. Empower data consumers to find valuable, trustworthy data.
 
-![Microsoft Purview.](../media/microsoft-purview.png)
+![Diagram showing the capabilities of Microsoft Purview.](../media/microsoft-purview.png)
 
 #### Identity Protection
 
