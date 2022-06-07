@@ -1,17 +1,17 @@
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-After gathering information about App Service you've decided to create and update a simple web app to try it out. In this exercise you'll deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. You will then update the code and redeploy it by using the same command.
+In this exercise, you'll deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. You'll then update the code and redeploy it by using the same command.
 
 The `az webapp up` command makes it easy to create and update web apps. When executed it performs the following actions:
 
-* Create a default resource group if one is not specified.
+* Create a default resource group if one isn't specified.
 * Create a default app service plan.
 * Create an app with the specified name.
 * Zip deploy files from the current working directory to the web app.
 
 ## Download the sample app
 
-In this section you will use the sandbox to download the sample app and set variables to make some of the commands easier to enter.
+In this section you'll use the sandbox to download the sample app and set variables to make some of the commands easier to enter.
 
 1. In the sandbox create a directory and then navigate to it.
 
