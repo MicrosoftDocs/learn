@@ -5,7 +5,7 @@ knowledge of known attributes and abnormal activities specific to your
 industry is fundamental in knowing when to call an observed behavior
 suspicious.
 
-![Alt text. Diagram showing converging tools & data.](../media/converge-tools-data.png) 
+![Diagram showing converging tools & data.](../media/converge-tools-data.png) 
 
 ### Threat Intelligence in Microsoft Sentinel
 
@@ -51,7 +51,7 @@ Microsoft Defender for IoT is a unified security solution for identifying IoT an
 
 Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended) using threat intelligence packages. You also have the option to [integrate Defender for IoT with Microsoft Sentinel](/azure/sentinel/iot-solution). If you integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT as well as the enriched threat intelligence from Sentinel.
 
-![Alt text. Diagram showing threat intelligence from Microsoft Sentinel.](../media/threat-intel-from-sentinel.png) 
+![Diagram showing threat intelligence from Microsoft Sentinel.](../media/threat-intel-from-sentinel.png) 
 
 Defender for IoT has both agent-based and agentless monitoring solutions:
 

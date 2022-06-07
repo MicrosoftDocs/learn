@@ -87,14 +87,14 @@ Azure:
     you connect legacy, modern, and cutting-edge systems across cloud,
     on premises, and hybrid environments. For more information on Azure
     Logic Apps, see [Overview for Azure Logic
-    Apps](/azure/logic-apps/logic-apps-overview).
+    Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview).
 
 2.  **Microsoft Defender for cloud** - the workflow automation feature
     of Microsoft Defender for Cloud can trigger Logic Apps on security
     alerts, recommendations, and changes to regulatory compliance. For
     more information on creating workflow automation with Defender for
     Cloud, see [Automate responses to Defender for cloud
-    triggers](/azure/defender-for-cloud/workflow-automation)
+    triggers](https://docs.microsoft.com/azure/defender-for-cloud/workflow-automation)
 
 3.  **Microsoft Graph security** - With Azure Logic Apps and the
     Microsoft Graph Security connector, you can improve how your app
@@ -105,7 +105,7 @@ Azure:
     such as alerts. For more information on the integration, see
     [Improve threat protection by integrating security operations with
     Microsoft Graph Security & Azure Logic
-    Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security).
+    Apps](https://docs.microsoft.com/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security).
 
 4.  **Microsoft Sentinel** -- Sentinel provides both automation rules
     and playbooks. Automation rules help you triage incidents by
@@ -117,13 +117,13 @@ Azure:
 
 1.  From Defender for Cloud's sidebar, select **Workflow automation**.
 
-![Alt text. Screenshot of workflow automation page showing the list of defined automations.](../media/workflow-automation.png) 
+![Screenshot of workflow automation page showing the list of defined automations.](../media/workflow-automation.png) 
 
 From this page you can create new automation rules, as well as enable, disable, or delete existing ones.
 
 2.  To define a new workflow, click **Add workflow automation**. The
     options pane for your new automation opens.
-![Alt text. Screenshot of Add Workflow Automation menu.](../media/add-workflow-automation.png) 
+![Screenshot of Add Workflow Automation menu.](../media/add-workflow-automation.png) 
  Here you can enter:
 
    a.  A name and description for the automation.
@@ -141,7 +141,7 @@ You'll be taken to Azure Logic Apps.
 
 4.  Select **Add**.
 
-![Alt text. Screenshot of creating a new Logic App.](../media/microsoft-azure-logic-app.png)
+![Screenshot of creating a new Logic App.](../media/microsoft-azure-logic-app.png)
 
 5.  Enter a name, resource group, and location, and select **Review and
     create** > **Create**.
@@ -162,14 +162,14 @@ The logic app designer supports these Defender for Cloud triggers:
 
 -   **When a Defender for Cloud regulatory compliance assessment is created or triggered** - Trigger automations based on updates to regulatory compliance assessments.
 
-![Alt text. Screenshot of Trigger Automations.](../media/trigger-automations.png) 
+![Screenshot of Trigger Automations.](../media/trigger-automations.png) 
 
 7.  After you've defined your logic app, return to the workflow
-    automation definition pane (\"Add workflow automation\").
+    automation definition pane ("Add workflow automation").
     Click **Refresh** to ensure your new Logic App is available for
     selection.
 
-![Alt text. Screenshot of refresh option.](../media/actions-refresh.png) 
+![Screenshot of refresh option.](../media/actions-refresh.png) 
 
 8.  Select your logic app and save the automation. Note that the Logic
     App dropdown only shows Logic Apps with supporting Defender for
@@ -221,7 +221,7 @@ with the Microsoft Graph Security connector.
 
 To filter, sort, or get the most recent results, provide *only* the
 [ODATA query parameters supported by Microsoft
-Graph](/graph/query-parameters). *Don't specify* the complete base URL or the HTTP action, for example,
+Graph](https://docs.microsoft.com/graph/query-parameters). *Don't specify* the complete base URL or the HTTP action, for example,
 <https://graph.microsoft.com/v1.0/security/alerts>, or the GET or PATCH operation. Here's a specific example that shows the parameters for a **Get alerts** action when you want a list with high severity alerts:
 
 Filter alerts value as `Severity eq 'high'`
@@ -244,7 +244,7 @@ or
 [*webhooks*](/graph/api/resources/webhooks).
 To get, update, or delete subscriptions, provide the [ODATA query
 parameters supported by Microsoft
-Graph](/graph/query-parameters) to the
+Graph](https://docs.microsoft.com/graph/query-parameters) to the
 Microsoft Graph entity construct and include security/alerts followed by
 the ODATA query. *Don't include* the base URL, for example,
 <https://graph.microsoft.com/v1.0>. Instead, use the format in this
@@ -263,7 +263,7 @@ example:
 
 To filter, sort, or get the most recent results, provide *only* the
 [ODATA query parameters supported by Microsoft
-Graph](/graph/query-parameters). *Don't
+Graph](https://docs.microsoft.com/graph/query-parameters). *Don't
 specify* the complete base URL or the HTTP action, for example,
 <https://graph.microsoft.com/beta/security/tiIndicators>, or the GET or
 PATCH operation. Here's a specific example that shows the parameters
@@ -275,13 +275,13 @@ Filter threat intelligence indicator value as threatType eq 'DDoS'
 For more information about the queries that you can use with this
 connector, see ["Optional Query Parameters" in the Microsoft Graph
 Security threat intelligence indicator reference
-documentation](/graph/api/tiindicators-list).
+documentation](https://docs.microsoft.com/graph/api/tiindicators-list).
 To build enhanced experiences with this connector, learn more about the
 [schema properties threat intelligence
-indicator](/graph/api/resources/tiindicator)
+indicator](https://docs.microsoft.com/graph/api/resources/tiindicator)
 that the connector supports. For more information on possible threat
 intelligence actions, see [Manage threat
-indicators](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security#manage-threat-intelligence-indicators).
+indicators](https://docs.microsoft.com/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security#manage-threat-intelligence-indicators).
 
 ### Creating a playbook with Microsoft Sentinel and Logic Apps
 

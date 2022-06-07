@@ -22,7 +22,7 @@ Graph. This anonymized data comes from:
 
 Threat intelligence in Azure:
 
--   Consumes billions of signals (\"signals\" is a term meaning
+-   Consumes billions of signals ("signals" is a term meaning
     information traffic) across the Microsoft network.
 
 -   Uses artificial intelligence and machine learning capabilities.
@@ -130,11 +130,9 @@ identifying IoT and OT devices, vulnerabilities, and threats and
 managing them through a central interface.
 
 Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)
-using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises.
-If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat
-intel from Sentinel.
+using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises. If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat intelligence from Sentinel.
 
-![Alt text. Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
+![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
 
 Defender for IoT has both agent-based and agentless monitoring
 solutions:
@@ -151,7 +149,7 @@ solutions:
     builder agent helps you ensure that security is built into your
     IoT/OT projects from the cloud. For more information, see [Microsoft
     Defender for IoT for device builders
-    documentation](/device-builders/index.md).
+    documentation](https://docs.microsoft.com/device-builders/index.md).
 
 ### Threat Intelligence in Defender for Cloud
 
@@ -160,7 +158,7 @@ information from your Azure resources, the network, and connected
 partner solutions. It analyzes this information, often correlating
 information from multiple sources, to identify threats. For more
 information, see [How Microsoft Defender for Cloud detects and responds
-to threats](/azure/defender-for-cloud/alerts-overview#detect-threats).
+to threats](https://docs.microsoft.com/azure/defender-for-cloud/alerts-overview#detect-threats).
 
 When Defender for Cloud identifies a threat, it triggers a [security alert](/azure/defender-for-cloud/managing-and-responding-alerts),
 containing detailed information regarding the event, including

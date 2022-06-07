@@ -2,7 +2,7 @@
 
 **Meet Tailwind Traders**
 
-![Alt text. Diagram showing Tailwind Traders logo.](../media/tailwind-traders.png) 
+![Diagram showing Tailwind Traders logo.](../media/tailwind-traders.png) 
 
 Tailwind Trader is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
@@ -24,7 +24,7 @@ recommendations and questions. Here are the specific requirements.
     ensure that all available Azure logs are sourced and correlated
     within Microsoft Sentinel.
 
-![Alt text. Diagram showing security operations.](../media/security-operations.png) 
+![Diagram showing security operations.](../media/security-operations.png) 
 
 ### Tasks
 
