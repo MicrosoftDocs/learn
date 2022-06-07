@@ -94,7 +94,7 @@ The following design practices support BCDR for application workloads:
 ### Overview of the reliability pillar
 
 Reliability ensures applications can meet the commitments made to
-customers. Architecting resiliency into an application frameworks
+customers. Architecting resiliency into an application framework
 ensures workloads are available and can recover from failures at any
 scale.
 
@@ -102,13 +102,7 @@ Building for reliability includes ensuring a highly available
 architecture and recovering from failures such as data loss, major
 downtime, or ransomware incidents
 
-To assess the reliability of a workloads using the tenets found in
-the [Microsoft Azure Well-Architected
-Framework](/azure/architecture/framework/),
-reference the [Microsoft Azure Well-Architected
-Review] (/assessments/?id=azure-architecture-review&mode=pre-assessment).
-
-Required Media From, if possible:[https://docs.microsoft.com/azure/architecture/framework/resiliency/overview](/azure/architecture/framework/resiliency/overview)
+To assess the reliability of a workload using the tenets found in the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/), reference the [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
 In traditional application development, there has been a focus on
 increasing the mean time between failures (MTBF). This effort was spent

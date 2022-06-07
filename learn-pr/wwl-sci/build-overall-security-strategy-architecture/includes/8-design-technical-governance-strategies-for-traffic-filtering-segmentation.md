@@ -8,7 +8,7 @@ policies that focus only on who can access a resource are not enough. To
 master the balance between security and productivity, security admins
 also need to factor in how a resource is being accessed.
 
-Networks need to evolve from traditional defences because networks might
+Networks need to evolve from traditional defenses because networks might
 be vulnerable to breaches: an attacker can compromise a single endpoint
 within the trusted boundary and then quickly expand a foothold across
 the entire network. Zero Trust networks eliminate the concept of trust
@@ -25,9 +25,9 @@ Azure virtual networks are similar to Local Area Networks (LANs) on an on-premis
 #### Deploy perimeter networks for security zones
 
 A [perimeter network](/azure/architecture/vdc/networking-virtual-datacenter) (also known as a DMZ) is a physical or logical network segment that provides another layer of security between  assets and the internet. Specialized network access control devices on the edge of a perimeter network allow only desired traffic into a virtual network.
-Perimeter networks are useful to help focus network access control management, monitoring, logging, and reporting on the devices at the edge of a Azure virtual network. A perimeter network is where distributed denial of service (DDoS) prevention i, intrusion detection/intrusion prevention systems (IDS/IPS), firewall rules and policies, web filtering, network antimalware, and more are typically enabled. The network security devices sit between the internet and a Azure virtual network and have an interface on both networks.
+Perimeter networks are useful to help focus network access control management, monitoring, logging, and reporting on the devices at the edge of an Azure virtual network. A perimeter network is where distributed denial of service (DDoS) prevention i, intrusion detection/intrusion prevention systems (IDS/IPS), firewall rules and policies, web filtering, network antimalware, and more are typically enabled. The network security devices sit between the internet and an Azure virtual network and have an interface on both networks.
 
-Based on the Zero Trust concept, consider using a perimeter network for all high security deployments in order to enhance the level of network security and access control for Azure resources. Azure or a third party solutions can be used to provide another layer of security between assets and the internet.
+Based on the Zero Trust concept, consider using a perimeter network for all high security deployments in order to enhance the level of network security and access control for Azure resources. Azure or a third party solution can be used to provide another layer of security between assets and the internet.
 
 #### Avoid exposure to the internet with dedicated WAN links
 

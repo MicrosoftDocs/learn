@@ -1,12 +1,12 @@
 Today, organizations need a new security model that effectively adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they're located.
 
-This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach, and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust,always verify."
+This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach, and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
-![Alt text. Diagram that shows elements of visibility, automation, and orchestration in Zero Trust.](../media/zero-trust-security.png)
+![Diagram that shows elements of visibility, automation, and orchestration in Zero Trust.](../media/zero-trust-security.png)
 
 ### Guiding principles of Zero Trust
 
-**Verify explicitly** - Protect assets against attacker control by explicitly validating that all trust and security decisions use all relevant available information and telemetry. | Limit access of a potentially compromised asset with just-in-time and just-enough-access (JIT/JEA) and risk-based polices like adaptive access control. | Assume attackers can and will successfully attack anything in the system (identity, network, device, app, infrastructure, etc.) and plan accordingly. |
+**Verify explicitly** - Protect assets against attacker control by explicitly validating that all trust and security decisions use all relevant available information and telemetry. | Limit access of a potentially compromised asset with just-in-time and just-enough-access (JIT/JEA) and risk-based policies like adaptive access control. | Assume attackers can and will successfully attack anything in the system (identity, network, device, app, infrastructure, etc.) and plan accordingly. |
 
 **Use least privilege access** - A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. This is done by implementing Zero Trust controls and technologies across six foundational elements. Each of these is a source of signal, a control plane for enforcement, and a critical resource to be defended.
 
@@ -33,7 +33,7 @@ ate access based on real-time analytics, monitor for abnormal behavior, control 
 deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.
 
 * **Visibility, automation, and orchestration with Zero Trust** - In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each Of these individual areas generating their own relevant alerts, we
-need an integrated capability to manage the resulting influx Of data to better defend against threats and validate trust in a transaction.
+need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
 
 The following diagram visually illustrates the zero trust principles:
 

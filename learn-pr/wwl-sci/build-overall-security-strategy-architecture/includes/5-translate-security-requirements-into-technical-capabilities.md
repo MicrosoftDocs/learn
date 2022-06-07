@@ -29,7 +29,7 @@ availability.
 
 To assess workloads using the tenets found in the Azure Well-Architected
 Framework, reference the [Microsoft Azure Well-Architected
-Review](/assessments/?id=azure-architecture-review&mode=pre-assessment).
+Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
 The following design principles provide:
 
@@ -85,7 +85,7 @@ Recommendations:
 
 Recommendations:
 
--   Monitor and protect the network integrity of internal and external endpoints through security appliances or Azure services, such a firewals and web application firewalls
+-   Monitor and protect the network integrity of internal and external endpoints through security appliances or Azure services, such a firewalls and web application firewalls
 
 
 -   Use industry standard approaches to protect against common attack vectors, such as distributed denial of service (DDoS) attacks like SlowLoris.

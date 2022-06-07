@@ -1,13 +1,13 @@
 
 The Microsoft Cybersecurity Reference Architectures (MCRA) describe Microsoft's cybersecurity capabilities. The reference architectures describe how Microsoft security capabilities integrate with Microsoft services and applications, Microsoft cloud platforms such as Azure and Microsoft 365 third party apps such as ServiceNow and Salesforce, and third party platforms such as Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
-The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, azure native security controls, and security organizational functions.
+The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, Azure native security controls, and security organizational functions.
 
-![Alt text. Diagram that shows Microsoft Cybersecurity Reference Architectures (MCRA).](../media/microsoft-cybersecurity-reference-architectures.png) 
+![Diagram that shows Microsoft Cybersecurity Reference Architectures (MCRA).](../media/microsoft-cybersecurity-reference-architectures.png) 
 
 The MCRA also includes an overview of Zero Trust and a Zero Trust rapid modernization plan (RaMP). Additionally, this includes other key information on security operations and key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more.
 
-![Alt text. Diagram that shows Zero Trust and related topics.](../media/zero-trustand-related-topics.png)
+![Diagram that shows Zero Trust and related topics.](../media/zero-trustand-related-topics.png)
 
 ### Using the MCRA
 
@@ -20,7 +20,7 @@ MCRA is used for several purposes, including:
 
 The primary Cybersecurity Reference Architecture diagram represents the full organizational security landscape, demonstrating how key Microsoft technologies fit into that landscape. 
 
-[![Alt text. Diagram that shows the primary Cybersecurity Reference Architecture diagram which represents the full organizational security landscape.](../media/cybersecurity-reference-architecture.png)](../media/cybersecurity-reference-architecture.png#lightbox) 
+[![Diagram that shows the primary Cybersecurity Reference Architecture diagram which represents the full organizational security landscape.](../media/cybersecurity-reference-architecture.png)](../media/cybersecurity-reference-architecture.png#lightbox) 
 
 The table below reproduces the information from the diagram showing each domain, the Microsoft products within it, a summary of the capability and some additional details.
 
@@ -52,10 +52,10 @@ The table below reproduces the information from the diagram showing each domain,
 |  | Express Route | On-Premises Network Extension | Layer 3 Connectivity, Connectivity to Microsoft Cloud Services, Global Connectivity to Microsoft Services, Dynamic Routing, Built-In Redundancy |
 |  | Private Link | Private Azure Access, On-Premises and Peered Networks, Data Leakage Protection | PaaS, Storage, SQL Databases, Network |
 | Information Protection |  |  |  |
-|  | Azure Purview | Unified Data Governance, Automated Data Discovery, Sensitive Data Classification | Microsoft Information Protection (MIP), File Scanner, Data Governance, Advanced eDiscovery |
+|  | Azure Purview | Unified Data Governance, Automated Data Discovery, Sensitive Data Classification | Microsoft Information Protection (MIP), File Scanner, Data Governance, eDiscovery (Premium) |
 |  | Compliance Manager | Pre-Built Assessments, Workflow, Risk-Based Compliance Score | Azure Controls, Assessments, Templates, Improvement Actions |
 | People Security |  |  |  |
-|  | Attack Simulator | Simulation Training Platform | Credential Harvest, Malware Attachment, Link in Attachment, LInk to Malware, Drive-by-URL |
+|  | Attack Simulator | Simulation Training Platform | Credential Harvest, Malware Attachment, Link in Attachment, Link to Malware, Drive-by-URL |
 |  | Insider Risk Management | Compliance Solution, Data Leak, Workflow | Policies, Alerts, Triage, Investigation, Action |
 |  | Communication Compliance | Insider Risk Solution, Flexible Remediation Workflows, Actionable Insights, Customizable Templates | Corporate Policies, Risk Management, Regulatory Compliance |
 | IoT and Operational Technology |  |  |  |

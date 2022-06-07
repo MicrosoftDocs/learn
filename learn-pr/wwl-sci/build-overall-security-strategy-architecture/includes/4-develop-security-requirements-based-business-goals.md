@@ -9,13 +9,13 @@ In this template, business outcomes focus on three topics:
 -   Understanding business drivers and objectives
 -   Mapping outcomes to specific solutions and technical capabilities
 
-![Alt text. Diagram that shows business outcomes as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
+![Diagram that shows business outcomes as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
 
 The business outcome template focuses on simplified conversations that can quickly engage stakeholders without getting too deep into the technical solution. By rapidly understanding and aligning the key performance indicators (KPIs) and business drivers that are important to stakeholders, architects can consider about high-level approaches and transformations before implementing security solutions.
 
 ### Cloud Adoption Framework
 
-**Media:** [Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure - Learn \| Microsoft Docs](/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
+**Media:** [Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
 
 As mentioned in the video, Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
 
@@ -25,7 +25,7 @@ As mentioned in the video, Cloud Adoption Framework consists of tools, documenta
 -  Adopt the cloud
 -  Govern and manage your cloud environments
 
-![Alt text. Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage.](../media/cloud-adoption-framework.png)
+![Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage.](../media/cloud-adoption-framework.png)
 
 The govern stage focuses on cloud governance. You can refer to the Cloud Adoption Framework for recommended guidance as you build your cloud governance strategy.
 
@@ -42,7 +42,7 @@ Here, you answer why you're moving to the cloud and what you want to get out of 
 
 #### Make a plan
 
-Here, you build a plan that maps your aspirational goals to specific actions. A good plan helps ensure that your efforts map to the desired business outcomes;. Here are steps to build a solid plan:
+Here, you build a plan that maps your aspirational goals to specific actions. A good plan helps ensure that your efforts map to the desired business outcomes. Here are steps to build a solid plan:
 
 1. **Digital estate**: Create an inventory of the existing digital assets and workloads that you plan to migrate to the cloud.
 1. **Initial organizational alignment**: Ensure the right people are involved in migration efforts, both from a technical standpoint as well as from a cloud governance standpoint.
@@ -86,7 +86,7 @@ Here, you begin to form your cloud governance and cloud management strategies. A
 
 ##### Govern 
 
-Here are the steps in the govern process of this stage.:
+Here are the steps in the govern process of this stage:
 
 1. **Methodology**: Consider your end state solution. Then define a methodology that incrementally takes you from your first steps all the way to full cloud governance.
 1. **Benchmark**: Use the [governance benchmark tool](https://cafbaseline.com/) to assess your current state and future state to establish a vision for applying the framework.

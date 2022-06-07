@@ -14,16 +14,16 @@ capabilities, creating a single user identity for authentication and
 authorization to all resources, regardless of location. This concept is
 known as Hybrid Identity. There are different design and configuration
 options for hybrid identity using Microsoft solutions. In some cases, it
-might be difficult to determine which combination will best meet an
-organizations needs.
+might be difficult to determine which combination will best meet the needs of an
+organization.
 
 The following graphic shows an example of a hybrid identity solution
 that enables IT Admins to integrate their current Windows Server Active
 Directory solution located on-premises with Microsoft Azure Active
-Directory to enable users to use Single Sign-On (SSO) across
+Directory to enable users to use Single Sign-on (SSO) across
 applications located in the cloud and on-premises.
 
-![Microsoft Azure Active Directory to enable users to use Single Sign-On (SSO) across applications located in the cloud and on-premises.](../media/microsoft-azure-active-directory.png)
+![Microsoft Azure Active Directory to enable users to use Single Sign-on (SSO) across applications located in the cloud and on-premises.](../media/microsoft-azure-active-directory.png)
 
 #### Implement a secure hybrid network
 
@@ -59,7 +59,7 @@ and Services:
 ![A typical deployment includes one tenant only.](../media/uses-for-multiple-environments.png)
 
 Sales and marketing share an environment so lead information can be
-easily accessed by both. Services have their own environment, so tickets
+easily accessed by both. Services has their own environment, so tickets
 and warranties can be managed separately from marketing campaigns and
 other related sales events.
 
@@ -76,13 +76,13 @@ related to accounts in both environments.
 
 -   Go to [Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage) for help understanding how storage is shared across environments
 
--   All environments for a single customer tenant will be set up in the geography where they initially signed up for their account.Storage consumption is totaled and tracked across all the environments attached to a customer tenant
+-   All environments for a single customer tenant will be set up in the geography where they initially signed up for their account. Storage consumption is totaled and tracked across all the environments attached to a customer tenant
 
 -   Separate security groups can be set up for all environments
 
 -   A licensed user can potentially access all the environments associated with the tenant. Access is controlled by environment security group membership
 
--   Additional environments may be purchased through the Additional environment Add-On. Additional environments can only be added to \"paid\" subscriptions, and not trials or Internal Use Rights (IUR). If subscriptions are purchased through Volume Licensing, additional environments need to be purchased through a Large Account Reseller (LAR)
+-   Additional environments may be purchased through the Additional environment Add-On. Additional environments can only be added to "paid" subscriptions, and not trials or Internal Use Rights (IUR). If subscriptions are purchased through Volume Licensing, additional environments need to be purchased through a Large Account Reseller (LAR)
 
 -   Existing trials or subscriptions can't be merged onto another environment; instead, data and customizations needed to move over
 
@@ -124,7 +124,7 @@ additional license.
 
 Today, companies struggle to control and govern increasingly complex
 environments that extend across data centers, multiple clouds, and edge
-of a network boundry. Each environment and cloud possess its own set of
+of a network boundary. Each environment and cloud possess its own set of
 management tools, and new DevOps and ITOps operational models can be
 hard to implement across resources.
 
@@ -176,7 +176,7 @@ evaluated:
 
 -   A resource is created or updated in a scope with a policy assignment
 
--   A policy or initiative is newly assigned to a scop
+-   A policy or initiative is newly assigned to a scope
 
 -   A policy or initiative already assigned to a scope is updated
 
