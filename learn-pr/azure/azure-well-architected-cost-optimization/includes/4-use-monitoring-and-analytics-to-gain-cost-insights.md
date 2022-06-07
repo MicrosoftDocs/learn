@@ -32,7 +32,7 @@ Take time as an organization to regularly meet and review billing and expenditur
 
 One of the key features of Microsoft Cost Management is the ability to configure alerts that are based on spending. These alerts can provide immediate visibility into spending that might be exceeding your budget. You can then take steps to address these costs. There are three types of cost alerts:
 
-- *Budget alerts* notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. Budgets in Azure Cost Management help you plan for and drive organizational accountability.
+- *Budget alerts* notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. Budgets in Microsoft Cost Management help you plan for and drive organizational accountability.
 
   With budgets, you can account for the Azure services that you consume or subscribe to during a specific period. They help you to proactively inform others about their spending and to monitor how spending progresses over time. When you exceed the budget thresholds that you've created, alerts can be sent to the appropriate teams. You can set budgets at varying levels, from resource groups to subscriptions to enterprise agreements.
 

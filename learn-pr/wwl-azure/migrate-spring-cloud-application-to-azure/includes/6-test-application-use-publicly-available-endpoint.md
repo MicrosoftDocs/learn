@@ -3,7 +3,7 @@ Now that you've deployed all of your microservices, verify that the application 
 1.  To list all deployed apps, from the Git Bash shell, run the following CLI statement, which will also list all publicly accessible endpoints:
     
     ```Bash
-    az spring-cloud app list
+    az spring-cloud app list \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --output table

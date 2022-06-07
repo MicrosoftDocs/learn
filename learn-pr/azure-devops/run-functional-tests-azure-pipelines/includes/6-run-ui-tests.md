@@ -17,12 +17,12 @@ The NuGet package for Chrome and Firefox installs driver software under the *bin
 
     :::image type="content" source="../media/6-edge-driver-install.png" alt-text="A screenshot of the Downloads section of the Microsoft Edge Driver page showing the matching driver version.":::
 
-1. Extract the *.zip* file to the *bin/Release/net5.0* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
+1. Extract the *.zip* file to the *bin/Release/net6.0* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
 
 On macOS, you may need to update your system policy to allow **msedgedriver** to run. To do so, in Visual Studio Code, run the following `spctl` command from the terminal:
 
 ```bash
-spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/net5.0/msedgedriver
+spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/net6.0/msedgedriver
 ```
 
 ## Export environment variables
@@ -43,7 +43,7 @@ From Visual Studio Code, go to the terminal. Then run these commands. Replace th
 # [Windows](#tab/export-windows)
 
 ```bash
-driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\net5.0"
+driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\net6.0"
 ```
 
 ```bash
@@ -55,7 +55,7 @@ export GeckoWebDriver=$driverDir
 # [macOS](#tab/export-macos)
 
 ```bash
-driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/net5.0"
+driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/net6.0"
 ```
 
 ```bash
