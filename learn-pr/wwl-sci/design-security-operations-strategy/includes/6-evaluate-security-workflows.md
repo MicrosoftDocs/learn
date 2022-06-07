@@ -306,4 +306,4 @@ indicators](https://docs.microsoft.com/azure/connectors/connectors-integrate-sec
 
     c.  You can also create an analytics rule in response to alerts.
 
-For more detailed instructions on creating playbooks, see [Use playbooks with automation rules in Microsoft Sentinel](azure/sentinel/tutorial-respond-threats-playbook?tabs=LAC).
+For more detailed instructions on creating playbooks, see [Use playbooks with automation rules in Microsoft Sentinel](/azure/sentinel/tutorial-respond-threats-playbook?tabs=LAC).
