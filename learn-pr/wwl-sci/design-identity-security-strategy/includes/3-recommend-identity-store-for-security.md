@@ -14,7 +14,7 @@ using Azure Active Directory's built-in security capabilities. Advanced
 integrations will take your solution one step further with enhanced
 security capabilities.
 
-![Alt text. Diagram showing a curved path showing the key components of a zero trust integration. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations.](../media/key-components-identity-zero-trust-integrations.png)
+![Diagram showing a curved path showing the key components of a zero trust integration. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations.](../media/key-components-identity-zero-trust-integrations.png)
 
 **Foundational integrations**
 
@@ -28,7 +28,7 @@ gallery](https://www.microsoft.com/security/business/identity-access-management/
 This will increase customer trust because they know that your
 application has been validated as compatible with Azure Active
 Directory, and you can become a [verified
-publisher](/azure/active-directory/develop/publisher-verification-overview) so
+publisher](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) so
 that customers are certain you're the publisher of the app they're
 adding to their tenant.
 
@@ -60,7 +60,7 @@ applications.
 
 As with Azure Active Directory, partners can integrate with Azure Active
 Directory B2C by using [Microsoft
-Graph](/azure/active-directory-b2c/microsoft-graph-operations) and
+Graph](https://docs.microsoft.com/azure/active-directory-b2c/microsoft-graph-operations) and
 key security APIs such as Conditional Access, confirm compromise, and
 risky user APIs. Read more about those integrations in the Azure AD
 section above.
@@ -75,26 +75,26 @@ Payment Services Directive 2 (PSD2) Secure Customer Authentication (SCA)
 requirements.
 
 We have [guidance on how to use our RESTful
-endpoints](/azure/active-directory-b2c/api-connectors-overview?pivots=b2c-user-flow) as
+endpoints](https://docs.microsoft.com/azure/active-directory-b2c/api-connectors-overview?pivots=b2c-user-flow) as
 well as detailed sample walkthroughs of partners who have integrated
 using the RESTful APIs:
 
 -   [Identity verification and
-    proofing](/azure/active-directory-b2c/partner-gallery#identity-verification-and-proofing),
+    proofing](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#identity-verification-and-proofing),
     which enables customers to verify the identity of their end users
 
 -   [Role-based access
-    control](/azure/active-directory-b2c/partner-gallery#role-based-access-control),
+    control](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#role-based-access-control),
     which enables granular access control to end users
 
 -   [Secure hybrid access to the on-premises
-    application](/azure/active-directory-b2c/partner-gallery#role-based-access-control),
+    application](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#role-based-access-control),
     which enables end users to access on-premises and legacy
     applications with modern authentication protocols
 
 
 -   [Fraud
-    protection](/azure/active-directory-b2c/partner-gallery#fraud-protection),
+    protection](https://docs.microsoft.com/azure/active-directory-b2c/partner-gallery#fraud-protection),
     which enables customers to protect their applications and end users
     from fraudulent login attempts and bot attacks
 

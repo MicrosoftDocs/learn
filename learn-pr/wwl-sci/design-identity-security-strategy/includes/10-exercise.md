@@ -2,7 +2,7 @@
 
 ### Meet Tailwind Traders
 
-![Tailwind Traders logo.](../media/tailwind-traders-logo.png)
+![Diagram showing Tailwind Traders logo.](../media/tailwind-traders-logo.png)
 
 Tailwind Trader is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
@@ -21,7 +21,7 @@ recommendations and questions. Here are the specific requirements.
 
 **Conditional Access.** The company has a new security optimization project for customer environments. The CISO wants to ensure that all available Privileged Users are controlled in the cloud.
 
-![Zero Trust user access diagram.](../media/zero-trust-user-access.png)
+![Diagram showing Zero Trust user access diagram.](../media/zero-trust-user-access.png)
 
 ### Tasks
 

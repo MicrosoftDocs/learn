@@ -6,7 +6,7 @@ risk and pre-configured policies. Independent software vendors can take
 advantage of conditional access by surfacing the option to apply
 conditional access policies when relevant.
 
-![Alt text. Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity.](../media/enforce-access-control-requirements.png) 
+![Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity.](../media/enforce-access-control-requirements.png) 
 
 ### Requirements
 
@@ -39,7 +39,7 @@ This section includes the following articles:
 The Microsoft approach to Zero Trust includes Conditional Access as the
 main policy engine. Here's an overview of that approach:
 
-![Alt text. Diagram showing an overview of the Zero Trust model.](../media/components-zero-trust-model.png) 
+![Diagram showing an overview of the Zero Trust model.](../media/components-zero-trust-model.png) 
 
 Download an [SVG file](https://arch-center.azureedge.net/zero-trust-model.svg) of this architecture.
 
@@ -48,7 +48,7 @@ architecture that covers both policy definition and policy enforcement.
 Based on various signals or conditions, Conditional Access can block or
 give limited access to resources, as shown here:
 
-![Alt text. Diagram showing an overview of the Conditional Access signal, decision, enforcement path.](../media/signal-decision-enforcement.png) 
+![Diagram showing an overview of the Conditional Access signal, decision, enforcement path.](../media/signal-decision-enforcement.png) 
 
 ### Conditional Access Zero Trust architecture
 
@@ -56,7 +56,7 @@ You first need to choose an architecture. We recommend that considering
 either a Targeted or a Zero Trust Conditional Access architecture. This
 diagram shows the corresponding settings:
 
-![Diagram that shows the settings for Targeted and Zero Trust architectures.](../media/targetedand-zero-trust-architecture.png) 
+![Diagram showing the settings for Targeted and Zero Trust architectures.](../media/targetedand-zero-trust-architecture.png) 
 
 The **Zero Trust Conditional Access architecture** is the one that best
 fits the principles of Zero Trust. If the **All cloud apps** option in a
@@ -106,7 +106,7 @@ strategy.
 
 ### Suggested Conditional Access personas from Microsoft
 
-![Image that shows recommended Conditional Access personas.](../media/suggested-conditional-access-personas.png) 
+![Diagram showing recommended Conditional Access personas.](../media/suggested-conditional-access-personas.png) 
 
 Microsoft also recommends defining a separate persona for identities that aren't part of any other persona group. This is called the Global persona. Global is meant to enforce policies for identities that aren't in a persona group and policies that should be enforced for all personas.
 
@@ -132,7 +132,7 @@ The following list describe some recommended personas.
 We recommend that you use access template cards to define the
 characteristics of each persona. Here's an example:
 
-![Example of an access template card.](../media/employee.png) 
+![Diagram showing an example of an access template card.](../media/employee.png) 
 
 The template card for each persona provides input for creating the
 specific Conditional Access policies for each persona.

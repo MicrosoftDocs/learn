@@ -39,7 +39,7 @@ authentication for on-premises directory objects in Azure AD. Users can
 use the same username and password that they use on-premises without
 deploying any additional infrastructure. Some premium features of Azure
 AD, like Identity Protection and [Azure AD Domain
-Services](/azure/active-directory-domain-services/tutorial-create-instance),
+Services](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance),
 require password hash synchronization, no matter which authentication
 method is chosen.
 
@@ -53,7 +53,7 @@ Companies with a security requirement to immediately enforce on-premises
 user account states, password policies, and sign-in hours might use this
 authentication method. For more information on the actual pass-through
 authentication process, see [User sign-in with Azure AD pass-through
-authentication](/azure/active-directory/hybrid/how-to-connect-pta).
+authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta).
 
 ### Federated authentication
 
@@ -65,7 +65,7 @@ validate the user's password.
 The authentication system can provide additional advanced authentication
 requirements. Examples are smartcard-based authentication or third-party
 multifactor authentication. For more information, see [Deploying Active Directory Federation
-Services](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
+Services](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
 The following section helps determine which authentication method is
 right using a decision tree. It helps determine whether to deploy a
@@ -80,16 +80,16 @@ AD hybrid identity solution.
 
 The simplicity of a password hash synchronization solution:
 
-![Alt text. Diagram showing Azure AD hybrid identity with Password hash synchronization.](../media/architecture-diagram.png) 
+![Diagram showing Azure AD hybrid identity with Password hash synchronization.](../media/architecture-diagram.png) 
 
 Agent requirements of pass-through authentication, using two agents for redundancy:
 
-![Alt text. Diagram showing Azure AD hybrid identity with Pass-through Authentication.](../media/architecture-diagram-2.png)
+![Diagram showing Azure AD hybrid identity with Pass-through Authentication.](../media/architecture-diagram-2.png)
 
 Components required for federation in your perimeter and internal
 network of your organization:
 
-![Alt text. Diagram showing Azure AD hybrid identity with federated authentication.](../media/architecture-diagram-3.png) 
+![Diagram showing Azure AD hybrid identity with federated authentication.](../media/architecture-diagram-3.png) 
 
 ### Comparing Authentication Methods
 
@@ -144,7 +144,7 @@ not have the authorization to perform that action.
 Administrators benefit from understanding the following authorization
 methods to enforce Zero Trust. To learn more about these authorization
 methods, see [Get started with permissions, access, and security
-groups](/azure/devops/organizations/security/about-permissions?view=azure-devops&preserve-view=true).
+groups](https://docs.microsoft.com/azure/devops/organizations/security/about-permissions?view=azure-devops&preserve-view=true).
 
 ### Authorization Methods
 

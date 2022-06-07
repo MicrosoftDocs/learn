@@ -22,7 +22,7 @@ and are thus assigned the Helpdesk Administrator role.
 
 If you do not want members of the group to have standing access to a
 role, you can use [Azure AD Privileged Identity Management
-(PIM)](/azure/active-directory/privileged-identity-management/pim-configure) to
+(PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) to
 make a group eligible for a role assignment. Each member of the group is
 then eligible to activate the role assignment for a fixed time duration.
 
@@ -44,7 +44,7 @@ for a specific period of time. Avoid assigning broader roles at broader
 scopes even if it initially seems more convenient to do so. By limiting
 roles and scopes, you limit what resources are at risk if the security
 principal is ever compromised. Azure AD RBAC supports over 65 [built-in
-roles](/azure/active-directory/roles/permissions-reference).
+roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 There are Azure AD roles to manage directory objects like users, groups,
 and applications, and also to manage Microsoft 365 services like
 Exchange, SharePoint, and Intune.
@@ -54,14 +54,14 @@ Exchange, SharePoint, and Intune.
 One of the principles of least privilege is that access should be
 granted only for a specific period of time. [Azure AD Privileged
 Identity Management
-(PIM)](/azure/active-directory/privileged-identity-management/pim-configure) lets
+(PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) lets
 you grant just-in-time access to your administrators. Microsoft
 recommends that you enable PIM in Azure AD. Using PIM, a user can be
 made an eligible member of an Azure AD role where they can then activate
 the role for a limited time when needed. Privileged access is
 automatically removed when the timeframe expires. You can
 also [configure PIM
-settings](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) to
+settings](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) to
 require approval or receive notification emails when someone activates
 their role assignment. Notifications provide an alert when new users are
 added to highly privileged roles.
@@ -76,11 +76,11 @@ multi-factor authentication (MFA).
 You can enable MFA on Azure AD roles using two methods:
 
 -   [Role
-    settings](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) in
+    settings](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) in
     Privileged Identity Management
 
 -   [Conditional
-    Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+    Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 
 #### 4. Configure recurring access reviews to revoke unneeded permissions over time
 
@@ -96,11 +96,11 @@ following reasons:
 
 For information about access reviews for roles, see [Create an access
 review of Azure AD roles in
-PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review).
+PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review).
 For information about access reviews of groups that are assigned roles,
 see [Create an access review of groups and applications in Azure AD
 access
-reviews](/azure/active-directory/governance/create-access-review).
+reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
 
 #### 5. Limit the number of Global Administrators to less than 5
 
@@ -115,7 +115,7 @@ permanently assigned to the Global Administrator role. Make sure that
 these accounts don't require the same multi-factor authentication
 mechanism as your normal administrative accounts to sign in, as
 described in [Manage emergency access accounts in Azure
-AD](/azure/active-directory/roles/security-emergency-access).
+AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
 
 #### 6. Use groups for Azure AD role assignments and delegate the role assignment
 
@@ -125,14 +125,14 @@ instead of individual users. You can also manage role-assignable groups
 in PIM to ensure that there are no standing owners or members in these
 privileged groups. For more information, see [Management capabilities
 for privileged access Azure AD
-groups](/azure/active-directory/privileged-identity-management/groups-features).
+groups](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/groups-features).
 
 You can assign an owner to role-assignable groups. That owner decides
 who is added to or removed from the group, so indirectly, decides who
 gets the role assignment. A Global Administrator or Privileged Role
 Administrator can delegate role management on a per-role basis by using
 groups. For more information, see [Use Azure AD groups to manage role
-assignments](/azure/active-directory/roles/groups-concept).
+assignments](https://docs.microsoft.com/azure/active-directory/roles/groups-concept).
 
 #### 7. Activate multiple roles at once using privileged access groups
 
@@ -143,13 +143,13 @@ can also have tens or hundreds of Azure resources assigned to them,
 which aggravates the problem.
 
 In this case, you should use [privileged access
-groups](/azure/active-directory/privileged-identity-management/groups-features).
+groups](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/groups-features).
 Create a privileged access group and grant it permanent access to
 multiple roles (Azure AD and/or Azure). Make that user an eligible
 member or owner of this group. With just one activation, they will have
 access to all the linked resources.
 
-![Privileged Access Group.png.](../media/privileged-access-group.png) 
+![Screenshot of Privileged Access Group.](../media/privileged-access-group.png) 
 
 #### 8. Use cloud native accounts for Azure AD roles
 
@@ -163,7 +163,7 @@ To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-![Delegate from IT administrator to managers.](../media/delegate-non-admin.png) 
+![Screenshot of delegate from IT administrator to managers.](../media/delegate-non-admin.png) 
 
 Hana is the IT administrator. She has contacts in each department who are responsible for
 their department's resources and business critical content: Mamta

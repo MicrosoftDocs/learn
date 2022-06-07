@@ -27,8 +27,7 @@ Securing privileged access requires changes to:
 Secure your privileged access in a managed and reported way in the
 Microsoft services you care about. If you have on-premises administrator
 accounts, see the guidance for on-premises and hybrid privileged access
-in Active Directory at [Securing Privileged
-Access](/windows-server/identity/securing-privileged-access/securing-privileged-access).
+in Active Directory at [Securing Privileged Access](/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
 ### Develop a roadmap
 
@@ -44,7 +43,7 @@ your guide based on Microsoft's experiences with cyber-attack incidents
 and response implementation. The timelines for this roadmap are
 approximations.
 
-![Stages of the roadmap with time lines.](../media/stages.png) 
+![Diagram of stages of the roadmap to secure privileged access with time lines.](../media/stages.png) 
 - **Stage 1 (24-48 hours):** Critical items that we recommend you do
     right away
 - **Stage 2 (2-4 weeks):** Mitigate the most frequently used attack
@@ -61,7 +60,7 @@ considering deploying.
 
 ### Stage 1: Critical items to do right now
 
-![Stage 1 Critical items to do first.](../media/stage-1.png) 
+![Diagram of stage 1 critical items to do first.](../media/stage-1.png) 
 
 Stage 1 of the roadmap is focused on critical tasks that are fast and
 easy to implement. We recommend that you do these few items right away
@@ -77,7 +76,7 @@ includes the following actions:
 
 ### Stage 2: Mitigate frequently used attacks
 
-![Stage 2 Mitigate frequently used attacks.](../media/stage-2.png) 
+![Diagram of stage 2 mitigate frequently used attacks.](../media/stage-2.png) 
 
 Stage 2 of the roadmap focuses on mitigating the most frequently used
 attack techniques of credential theft and abuse and can be implemented
@@ -109,7 +108,7 @@ roadmap includes the following actions:
 
 ### Stage 3: Take control of administrator activity
 
-![Stage 3: take control of administrator activity.](../media/stage-3.png) 
+![Diagram of stage 3 take control of administrator activity.](../media/stage-3.png) 
 
 Stage 3 builds on the mitigations from Stage 2 and should be implemented
 in approximately 1-3 months. This stage of the Secured Privileged Access
@@ -133,11 +132,11 @@ manage, control, and monitor access to Azure resources. Using PIM
 protects by lowering the exposure time of privileges and increasing your
 visibility into their use through reports and alerts. For more
 information, see [What is Azure AD Privileged Identity
-Management](/azure/active-directory/privileged-identity-management/pim-configure).
+Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).
 
 ### Stage 4: Continue building defenses
 
-![Stage 4: adopt an active security posture.](../media/stage-4.png) 
+![Diagram of stage 4 adopt an active security posture.](../media/stage-4.png) 
 
 Stage 4 of the roadmap should be implemented within six months and
 beyond. Complete your roadmap to strengthen your privileged access
@@ -153,4 +152,4 @@ includes the following components:
 
 ### Additional information on roadmap framework
 
-For more information on entitlement, see Secure Access Practices for Administrators in Azure AD](/azure/active-directory/roles/security-planning).
+For more information on entitlement, see Secure Access Practices for Administrators in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-planning).

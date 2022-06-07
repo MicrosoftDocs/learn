@@ -34,7 +34,7 @@ security strategy and architecture. You should now be able to:
 -   [Identity Zero Trust integration overview](/security/zero-trust/integrate/identity)
 
 -   [Use Azure AD groups to manage role assignments - Azure Active
-    Directory](/azure/active-directory/roles/groups-concept)
+    Directory](https://docs.microsoft.com/azure/active-directory/roles/groups-concept)
 
 ### Learn more with self-paced training
 

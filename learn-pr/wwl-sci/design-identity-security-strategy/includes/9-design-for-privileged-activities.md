@@ -28,7 +28,7 @@ help you rapidly deploy protections based on this strategy.
 This graphic describes how this extortion-based attack is growing in
 impact and likelihood using privileged access:
 
-![Human operated ransomware.](../media/human-operated-ransomware.png) 
+![Diagram of human operated ransomware.](../media/human-operated-ransomware.png) 
 
 -   **High business impact:** It is difficult to overstate the potential
     business impact and damage of a loss of privileged access. Attackers
@@ -42,7 +42,7 @@ impact and likelihood using privileged access:
     attacks starting with [pass the hash
     techniques](https://en.wikipedia.org/wiki/Pass_the_hash). These
     techniques first jumped in popularity with criminals starting with
-    the 2008 release of the attack tool \"Pass-the-Hash Toolkit\" and
+    the 2008 release of the attack tool "Pass-the-Hash Toolkit" and
     have grown into a suite of reliable attack techniques (mostly based
     on the [Mimikatz](https://github.com/gentilkiwi/mimikatz) toolkit).
     This weaponization and automation of techniques allowed the attacks
@@ -54,7 +54,7 @@ impact and likelihood using privileged access:
 
 A privileged access strategy is a journey that must be composed of quick
 wins and incremental progress. Each step in a privileged access strategy
-must take you closer to \"seal\" out persistent and flexible attackers
+must take you closer to "seal" out persistent and flexible attackers
 from privileged access, who are like water trying to seep into
 environments through any available weakness.
 
@@ -68,7 +68,7 @@ attackers are like water as they have numerous options they can exploit
 flexible in which ones they use, and they generally take the path of
 least resistance to achieving their objectives.
 
-![Attackers are like water and can appear insignificant at first but, flood over time.](../media/attackersare-like-water.png) 
+![Diagram of attackers are like water and can appear insignificant at first but flood over time.](../media/attackersare-like-water.png) 
 
 ### Building the recommended strategy
 
@@ -107,13 +107,13 @@ the capability or access a sensitive capability):
     the damage an adversary can inflict with privileged access is much
     higher.
 
-![Two pathways to systems user and privileged access.](../media/business-critical-assets.png) 
+![Diagram showing two pathways to systems user and privileged access.](../media/business-critical-assets.png) 
 
 These components collectively comprise the privileged access attack
 surface that an adversary may target to attempt to gain elevated access
 to your enterprise:
 
-![Attack surface unprotected.](../media/business-critical-assets-2.png) 
+![Diagram showing attack surface unprotected.](../media/business-critical-assets-2.png) 
 
 #### Lay foundations for successful privileged identity strategy
 

@@ -34,7 +34,7 @@ Next, do the following:
 3. In one of the roles listed above, go to the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade/).
 
 4. Create the access review. For more information, see [Create an access review of groups or
-    applications](/azure/active-directory/governance/create-access-review).
+    applications](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
 
 5. When the access review starts, ask the reviewers to give input. By default, they each receive an email from Azure AD with a link to the access panel, where they [review access to groups or applications](/azure/active-directory/governance/self-access-review).
 
@@ -84,7 +84,7 @@ Follow these steps:
 1. Use Entitlement Management to [create access packages](/azure/active-directory/governance/entitlement-management-access-package-create) that users can request as they join different teams/projects and that assign them access to the associated resources (such as applications, SharePoint sites, group memberships).
 
 2. If deploying Entitlement Management isn't possible for your organization at this time, at least enable self-service paradigms in your organization by deploying [self-service group management](/azure/active-directory/users-groups-roles/groups-self-service-management) and [self-service application
-access](/azure/active-directory/manage-apps/manage-self-service-access).
+access](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access).
 
 ### Additional information on entitlement
 
