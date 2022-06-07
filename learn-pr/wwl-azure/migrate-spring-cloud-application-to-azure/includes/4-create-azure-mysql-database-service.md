@@ -17,7 +17,7 @@ You'll also need to update the config for your applications to use the newly pro
     az mysql server create \
         --admin-user myadmin \
         --admin-password ${SQL_ADMIN_PASSWORD} \
-        --name ${SQL_SERVER_NAME} \.
+        --name ${SQL_SERVER_NAME} \
         --resource-group ${RESOURCE_GROUP} \
         --sku-name GP_Gen5_2 \
         --version 5.7 \
@@ -31,7 +31,7 @@ You'll also need to update the config for your applications to use the newly pro
 3.  Run the following commands to create a database in the Azure Database for MySQL Single Server instance.
     
     ```Bash
-    az mysql db create
+    az mysql db create \
         --server-name $SQL_SERVER_NAME \
         --resource-group $RESOURCE_GROUP \
         --name $DATABASE_NAME
@@ -40,11 +40,11 @@ You'll also need to update the config for your applications to use the newly pro
 4.  You'll need to allow connections to the server from Azure Spring Apps. You'll create a server firewall rule to allow inbound traffic from all Azure Services. This way your apps running in Azure Spring Apps will be able to reach the MySQL database providing them with persistent storage. In one of the upcoming exercises, you'll restrict this connectivity to limit it exclusively to the apps hosted by your Azure Spring Apps instance.
     
     ```Bash
-    az mysql server firewall-rule create
+    az mysql server firewall-rule create \
         --name allAzureIPs \
         --server ${SQL_SERVER_NAME} \
         --resource-group ${RESOURCE_GROUP} \
-        --start-ip-address 0.0.0.0
+        --start-ip-address 0.0.0.0 \
         --end-ip-address 0.0.0.0
     ```
 
