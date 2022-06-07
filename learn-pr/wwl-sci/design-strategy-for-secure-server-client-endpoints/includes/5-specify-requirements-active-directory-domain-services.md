@@ -27,13 +27,13 @@ Although it may seem counterintuitive, you should consider patching domain contr
 
 In addition, make sure to:
 
--   Continuously monitor Active Directory for [signs of compromise](/hu-hu/windows-server/identity/ad-ds/plan/security-best-practices/monitoring-active-directory-for-signs-of-compromise) using tools such as [Microsoft Defender for Identity](/defender-for-identity/sensor-monitoring)
+-   Continuously monitor Active Directory for [signs of compromise](/windows-server/identity/ad-ds/plan/security-best-practices/monitoring-active-directory-for-signs-of-compromise) using tools such as [Microsoft Defender for Identity](/defender-for-identity/sensor-monitoring)
 -   Enable and review [audit policy](/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations)
 
 #### Microsoft Defender for Identity
 
 Microsoft Defender for Identity (MDI) monitors your domain controllers by capturing and parsing network traffic and using Windows events directly from your domain controllers, then analyzes the data for attacks and threats. Utilizing profiling, deterministic detection, machine learning, and behavioral algorithms Defender for Identity learns about your network, enables detection of anomalies, and warns you of suspicious activities. The image below shows the core architecture of Defender for Identity:
 
-![Core architecture of Defender for Identity:](../media/core-architecture-defender-identity.png) 
+![Alt text. Diagram that shows core architecture of Defender for Identity:](../media/core-architecture-defender-identity.png) 
 
 Once you install the Defender for Identity sensor directly on your domain controller or AD FS server, it accesses the event logs it requires directly from each server. After the logs and network traffic are parsed by the sensor, Defender for Identity sends only the parsed information to the Defender for Identity cloud service (only a percentage of the logs are sent).

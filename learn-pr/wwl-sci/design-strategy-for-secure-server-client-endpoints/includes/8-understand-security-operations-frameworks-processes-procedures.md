@@ -20,7 +20,7 @@ Central SecOps team monitors security-related telemetry data and investigates se
 
 SecOps has multiple potential interactions with business leadership, which includes:
 
-![Graphical user interface, text, application, email](../media/sec-ops.png) 
+![Alt text. Diagram that shows potential interactions between SecOps and business leadership.](../media/sec-ops.png) 
 
 -   **Business context to SecOps**: SecOps must understand what is most important to the organization so that the team can apply that context to fluid real-time security situations. What would have the most negative impact on the business? Downtime of critical systems? A loss of reputation and customer trust? Disclosure of sensitive data? Tampering with critical data or systems? We've learned it's critical that key leaders and staff in the SOC understand this context. They'll wade through the continuous flood of information and triage incidents and prioritize their time, attention, and effort.
 -   **Joint practice exercises with SecOps**: Business leaders should regularly join SecOps in practicing response to major incidents. This training builds the muscle memory and relationships that are critical to fast and effective decision making in the high pressure of real incidents, reducing organizational risk. This practice also reduces risk by exposing gaps and assumptions in the process that can be fixed before a real incident occurs.

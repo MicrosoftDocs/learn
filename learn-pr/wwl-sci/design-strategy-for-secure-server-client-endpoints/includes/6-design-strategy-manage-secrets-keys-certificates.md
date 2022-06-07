@@ -46,7 +46,7 @@ Azure Key Vault manages X.509 based certificates that can come from several sour
 
 Another strategy is to create an X.509 certificate signing request (CSR). This creates a public/private key pair in Key Vault along with a CSR you can pass over to your certification authority (CA). The signed X.509 certificate can then be merged with the held key pair to finalize the certificate in Key Vault as shown in the following diagram.
 
-![Diagram Description automatically generated](../media/key-vault.png) 
+![Alt text. Diagram that shows an architecture for an application interacting with Azure Key Vault.](../media/key-vault.png) 
 
 In the previous diagram, your application is creating a certificate which internally begins by creating a key in your Azure Key Vault.
 
@@ -59,10 +59,10 @@ This strategy works with any certificate issuer and provides better security tha
 
 Lastly, you can also connect your Key Vault with a trusted certificate issuer (referred to as an integrated CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate and the Key Vault will interact directly with the CA to fulfill the request in a similar process to the manual CSR creation process shown above. The full details of this process are presented in the following diagram.
 
-![Diagram showing the process to create a certificate with an integrated certificate authority.](../media/key-vault-certificate-authority.png) 
+![Alt text. Diagram showing the process to create a certificate with an integrated certificate authority.](../media/key-vault-certificate-authority.png) 
 
 1.  In the previous diagram, your application is creating a certificate which internally begins by creating a key in your key vault.
-1.  Key Vault sends a SSL Certificate Request to the CA.
+1.  Key Vault sends an SSL Certificate Request to the CA.
 1.  Your application polls, in a loop and wait process, for your Key Vault for certificate completion. The certificate creation is complete when Key Vault receives the CA's response with x509 certificate.
 1.  The CA responds to Key Vault's SSL Certificate Request with an X509 SSL Certificate.
 1.  Your new certificate creation completes with the merger of the X509 Certificate for the CA.

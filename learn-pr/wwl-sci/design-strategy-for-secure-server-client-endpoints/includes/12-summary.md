@@ -22,29 +22,18 @@ you during forensics investigation.
 Visit the links below for more information about the topics covered in
 this module:
 
-[Working remotely using Azure networking services \| Microsoft
-Docs](/azure/networking/working-remotely-support)
+[Working remotely using Azure networking services](/azure/networking/working-remotely-support)
 
-[Azure Bastion \| Microsoft
-Docs](/azure/bastion/bastion-overview)
+[Azure Bastion](/azure/bastion/bastion-overview)
 
-[Best Practices for Securing Active Directory \| Microsoft
-Docs](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
+[Best Practices for Securing Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
 
-[Azure Key Vault security overview \| Microsoft
-Docs](/azure/key-vault/general/security-features)
+[Azure Key Vault security overview](/azure/key-vault/general/security-features)
 
-[Security Operations Center (SOC or SecOps) monitoring in Azure -
-Microsoft Azure Well-Architected Framework \| Microsoft
-Docs](/azure/architecture/framework/security/monitor-security-operations)
+[Security Operations Center (SOC or SecOps) monitoring in Azure - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/monitor-security-operations)
 
-[Security operations - Cloud Adoption Framework \| Microsoft
-Docs](/azure/cloud-adoption-framework/secure/security-operations)
+[Security operations - Cloud Adoption Framework](/azure/cloud-adoption-framework/secure/security-operations)
 
-[Investigate entities on devices using live response in Microsoft
-Defender for Endpoint \| Microsoft
-Docs](/microsoft-365/security/defender-endpoint/live-response)
+[Investigate entities on devices using live response in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/live-response)
 
-[Computer forensics chain of custody in Azure - Azure Example Scenarios
-\| Microsoft
-Docs](/azure/architecture/example-scenario/forensics/)
+[Computer forensics chain of custody in Azure - Azure Example Scenarios](/azure/architecture/example-scenario/forensics/)

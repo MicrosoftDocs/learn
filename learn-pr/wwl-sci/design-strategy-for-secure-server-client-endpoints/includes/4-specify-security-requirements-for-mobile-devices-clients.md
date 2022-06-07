@@ -1,9 +1,9 @@
 
 All devices that you manage have a lifecycle. Intune can help you manage this lifecycle: from enrollment, through configuration and protection, to retiring the device when it's no longer required. The mobile device management (MDM) lifecycle is shown below:
 
-![Device Lifecycle ](../media/device-lifecycle.png) 
+![Alt text. Diagram that shows device lifecycle.](../media/device-lifecycle.png) 
 
-When specifying your security requirements, most of your focus will be on the *Configure* and *Protect* stages, but you should also have general considerations on each one of the other phases:
+When you specify security requirements for mobile devices, most of your focus will be on the *Configure* and *Protect* stages, but you should also have general considerations on each one of the other phases:
 
 -   **Enroll**: evaluate the types of devices you have in your organization and verify the [enrollment options](/mem/intune/enrollment/device-enrollment) available.
 -   **Configure**: to ensure that your devices are secure and compliant with company standards, you can choose from a wide range of policies during the initial [configuration](/mem/intune/configuration/device-profiles) of the device.
@@ -14,13 +14,13 @@ When specifying your security requirements, most of your focus will be on the *C
 
 When dealing with mobile devices that will also have corporate date, you need to ensure that corporate data and apps are isolated and can be managed separately from the user's owned apps.
 
-![App isolation and control](../media/app-isolation-control.png)
+![Alt text. Diagram that shows App isolation and control.](../media/app-isolation-control.png)
 
 Intune app protection policies help protect your work files on devices that are enrolled into Intune. You can also use app protection policies on employee-owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that work files and resources are protected.
 
 In the example below, the admin has applied app protection policies to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
 
-![App protection policies for Outlook](../media/app-protection-policies.png)
+![Alt text. Diagram that shows application protection policies for Outlook.](../media/app-protection-policies.png)
 
 In a scenario like this, you could use the app protection to enforce the security requirements for your mobile devices, which could include:
 

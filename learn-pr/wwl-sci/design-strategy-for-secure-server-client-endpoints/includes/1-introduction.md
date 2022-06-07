@@ -5,7 +5,7 @@ ensure their security posture is up to date while ensuring that there
 are tools in places to obtain enterprise-wide visibility into attack
 dynamics.
 
-### Learning Objectives
+### Learning Objectives 
 
 In this module, you'll learn how to:
 

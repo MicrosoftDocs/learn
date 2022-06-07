@@ -17,7 +17,7 @@ Each computer that is member of a domain keeps a local Administrator account. Th
 
 Managing passwords for the local Administrator account for every computer in the organization can be extremely complicated. An organization with 5,000 computers has 5,000 separate local Administrator accounts to manage. What often happens is that organizations assign a single, common local Administrator account password to all local Administrator accounts. The drawback to this approach is that people beyond the IT operations team often figure out this password, and then use it to gain unauthorized local Administrator access to computers in their organization.
 
-The "Local Administrator Password Solution" (LAPS) provides management of local account passwords of domain joined computers.LAPS is available for all currently supported Windows Server and client operating system versions. To get LAPS to function, you must update the AD DS schema. You perform this update by running the *Update-AdmPwdADSchema* cmdlet, which is included in a Windows PowerShell module that's made available when you install LAPS on a computer.
+The "Local Administrator Password Solution" (LAPS) provides management of local account passwords of domain joined computers. LAPS is available for all currently supported Windows Server and client operating system versions. To get LAPS to function, you must update the AD DS schema. You perform this update by running the *Update-AdmPwdADSchema* cmdlet, which is included in a Windows PowerShell module that's made available when you install LAPS on a computer.
 
 Another important part of server's protection is to ensure that you disable legacy protocols and enforce a more secure communication method. Server Message Block (SMB) protocol is a network protocol primarily used for file sharing. Along with its common file-sharing use, it's also frequently used by printers, scanners, and email servers. The original version of SMB, SMB 1.0 does not support encryption. SMB encryption was introduced with version 3.0.
 
@@ -35,13 +35,13 @@ Pre-authentication with SMB 3.1.1 isn't compatible with devices that modify SMB 
 
 Another approach to specify server requirements is to ensure all servers are compliant with **Azure Security Benchmark (ASB)** OS baseline. The ASB OS baseline is available through Microsoft Defender for Cloud in the format of security recommendations for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows) or [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), as shown below:
 
-![Text Description automatically generated with medium confidence](../media/remediate-security-configuration.png) 
+![Alt text. Screenshot that shows remediating a security configuration.](../media/remediate-security-configuration.png) 
 
 Once you access one of those recommendations, you'll see a set of rules that are using the Azure Guest Configuration capability to run security checks to verify if the operating system is using the most secure configurations. The image below shows an example of this assessment:
 
-![Example of this assessment](../media/example-assessment.png) 
+![Alt text. Screenshot of a sample assessment for configuration remediation.](../media/example-assessment.png) 
 
 Once you click on each rule, you'll have more details about the security check and the affected resources, as shown in the image below:
 
-![Deny log on as a batch job](../media/deny-log-on-batch-job.png) 
+![Alt text. Screenshot of a detailed description of the importance and impact of assigning the 'deny log on as a batch job' permission.](../media/deny-log-on-batch-job.png) 
 

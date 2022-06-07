@@ -19,7 +19,7 @@ In modern organizations, the security threat landscape is constantly evolving, a
 
 Our recommendations follow a streamlined and efficient approach to baseline definitions. The foundation of that approach is essentially:
 
--   The baselines are designed for well-managed, security-consciou organizations in which standard end users do not have administrative rights.
+-   The baselines are designed for well-managed, security-conscious organizations in which standard end users do not have administrative rights.
 -   A baseline enforces a setting only if it mitigates a contemporary security threat and does not cause operational issues that are worse than the risks they mitigate.
 -   A baseline enforces a default only if it's otherwise likely to be set to an insecure state by an authorized user:
 
@@ -42,4 +42,4 @@ Is very important to emphasize that Intune security baselines are not CIS or NIS
 
 The recommendations in these baselines are from the Microsoft security team's engagement with enterprise customers and external agencies, including the Department of Defense (DoD), National Institute of Standards and Technology (NIST), and more. Microsoft shares recommendations and baselines with these organizations. These organizations also have their own recommendations that closely mirror Microsoft's recommendations. As mobile device management (MDM) continues to grow into the cloud, Microsoft created equivalent MDM recommendations of these group policy baselines. These additional baselines are built into Microsoft Intune, and include compliance reports on users, groups, and devices that follow (or don't follow) the baseline. Security baselines can be found in the Endpoint security configuration as shown below:
 
-![Select a security baseline to configure](../media/endpoint-security.png) 
+![Alt text. Screenshot of selecting a security baseline to configure.](../media/endpoint-security.png) 
