@@ -3,7 +3,7 @@
 
 Organizations use Cyber Threat Intelligence to collect information
 gained from access to various signals across the Microsoft network.
-Cyber Threat Intelligence can be sourced from many places, such as
+Cyber Threat Intelligence can be sourced from many places. These include,
 open-source data feeds, threat intelligence-sharing communities,
 commercial intelligence feeds, and local intelligence gathered during
 security investigations within an organization. Every second, hundreds
@@ -86,15 +86,15 @@ collectively to identify early clues on a possible cybersecurity attack.
 These indicators are typically a combination of activities,
 characteristics, and actions taken by an attacker to successfully
 achieve the objective of an attack. Monitoring these combinations of
-attributes is critical in gaining a vantage point against attacks and
-possibly interfering with the chain of events before an attacker's
+attributes is critical in gaining a vantage point against attacks. These
+possibly interfere with the chain of events before an attacker's
 objective is reached.
 
 ### Indicators of compromise (IOC)
 
 IOCs are individually known malicious events that indicate that a
 network or device has already been breached. Unlike alert definitions,
-these indicators are considered evidence of a breach. They are often
+these indicators are considered evidence of a breach. They're often
 seen after an attack has already been carried out, and the objective has
 been reached, such as exfiltration. Keeping track of IOCs is also
 important during forensic investigations. Although it might not be able
@@ -111,11 +111,11 @@ attack name, severity, and description is provided along with other
 options.
 
 Each IOC defines the concrete detection logic based on its type, value,
-and action, determining how it is matched. It is bound to a specific
+and action, determining how it's matched. It's bound to a specific
 alert definition that defines how detection is displayed as an alert on
 the Microsoft 365 Defender console.
 
-Here is an example of an IOC:
+Here's an example of an IOC:
 
 -   Type: Sha1
 
@@ -130,10 +130,8 @@ identifying IoT and OT devices, vulnerabilities, and threats and
 managing them through a central interface.
 
 Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)
-using threat intelligence packages. You also have the option to
-integrate Defender for IoT with Microsoft Sentinel](/azure/sentinel/iot-solution).
-If you choose to integrate Defender for IoT with Microsoft Sentinel, you
-will get threat intelligence from Defender for IoT and the enriched threat
+using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises.
+If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat
 intel from Sentinel.
 
 ![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
@@ -219,11 +217,8 @@ Microsoft recommends different ways to use threat intelligence feeds to
 enhance your security analysts' ability to detect and prioritize known
 threats.
 
--   You can use one of many available integrated threat intelligence
-    platform (TIP) products, you can connect to TAXII servers to take
-    advantage of any STIX-compatible threat intelligence source, and you
-    can also make use of any custom solutions that can communicate
-    directly with the [Microsoft Graph Security tiIndicators API](/graph/api/resources/tiindicator).
+-   You can use one of many available integrated threat intelligence platform (TIP) products, you can connect to TAXII servers to take advantage of any STIX-compatible threat intelligence source, and you can also make use of any custom solutions that can communicate directly with the
+    [Microsoft Graph Security tiIndicators API](/graph/api/resources/tiindicator).
 
 -   You can also connect to threat intelligence sources from playbooks
     to enrich incidents with TI information to help direct investigation

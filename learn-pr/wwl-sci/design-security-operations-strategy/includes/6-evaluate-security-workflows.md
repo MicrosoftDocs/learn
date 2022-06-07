@@ -1,14 +1,8 @@
-Every security program includes multiple workflows for incident
-response. These processes might include notifying relevant stakeholders,
-launching a change management process, and applying specific remediation
-steps. Security experts recommend that you automate as many steps of
-those procedures as possible. Automation reduces overhead. It can also
-improve your security by ensuring the process steps are done quickly,
-consistently, and according to your predefined requirements.
+Every security program includes multiple workflows for incident response. These processes might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. Security experts recommend that you automate as many steps of those procedures as possible. Automation reduces overhead. It can also improve your security by ensuring the process steps are done quickly,consistently, and according to your predefined requirements.
 
-**Consider these steps for your incident response workflow**
+Consider these steps for your incident response workflow:
 
-1. For each incident, begin an [attack and alert investigation and analysis](/microsoft-365/security/defender/investigate-incidents?view=o365-worldwide)
+1. For each incident, begin an [attack and alert investigation and analysis](/microsoft-365/security/defender/investigate-incidents?view=o365-worldwide&preserve-view=true)
 2. Perform containment to reduce any additional impact of the attack and eradication the security threat.
 3. Recover from the attack by restoring your tenant resources to the state they were in before the incident.
 4. Resolve the incident or escalate to a triage team member if the situation requires some human judgement.
@@ -123,13 +117,13 @@ Azure:
 
 1.  From Defender for Cloud's sidebar, select **Workflow automation**.
 
-![Screenshot of workflow automation page showing the list of defined automations.](media\workflow-automation.png) 
+![Screenshot of workflow automation page showing the list of defined automations.](../media/workflow-automation.png) 
 
 From this page you can create new automation rules, as well as enable, disable, or delete existing ones.
 
 2.  To define a new workflow, click **Add workflow automation**. The
     options pane for your new automation opens.
-![Add Workflow Automation](media\add-workflow-automation.png) 
+![Add Workflow Automation](../media/add-workflow-automation.png) 
  Here you can enter:
 
    a.  A name and description for the automation.
@@ -147,7 +141,7 @@ You'll be taken to Azure Logic Apps.
 
 4.  Select **Add**.
 
-![Creating a new Logic App.](media\microsoft-azure-logic-app.png) 
+![Creating a new Logic App.](../media/microsoft-azure-logic-app.png)
 
 5.  Enter a name, resource group, and location, and select **Review and
     create** > **Create**.
@@ -168,14 +162,14 @@ The logic app designer supports these Defender for Cloud triggers:
 
 -   **When a Defender for Cloud regulatory compliance assessment is created or triggered** - Trigger automations based on updates to regulatory compliance assessments.
 
-![Trigger Automations](media\TriggerAutomations.png) 
+![Trigger Automations](../media/trigger-automations.png) 
 
 7.  After you've defined your logic app, return to the workflow
     automation definition pane (\"Add workflow automation\").
     Click **Refresh** to ensure your new Logic App is available for
     selection.
 
-![Refresh.](media\ActionsRefresh.png) 
+![Refresh.](../media/actions-refresh.png) 
 
 8.  Select your logic app and save the automation. Note that the Logic
     App dropdown only shows Logic Apps with supporting Defender for
@@ -204,15 +198,14 @@ alerts are sent to your app.
     which opens the Logic App Designer. This example uses the Azure
     portal.
 
-9.  On the designer, in the search box, enter \"microsoft graph
-    security\" as your filter. From the triggers list, select this
+9.  On the designer, in the search box, enter "microsoft graph
+    security" as your filter. From the triggers list, select this
     trigger: **On all new alerts**
 
 10. In the trigger, provide information about the alerts that you want
     to monitor. For more properties, open the **Add new parameter**
     list, and select a parameter to add that property to the trigger.
-    For a more detailed list of possible properties, see [Add
-    triggers](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security#add-triggers).
+    For a more detailed list of possible properties, see [Add triggers](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security#add-triggers).
 
 11. When you're done, on the designer toolbar, select **Save**.
 
@@ -228,21 +221,14 @@ with the Microsoft Graph Security connector.
 
 To filter, sort, or get the most recent results, provide *only* the
 [ODATA query parameters supported by Microsoft
-Graph](/graph/query-parameters). *Don't
-specify* the complete base URL or the HTTP action, for example,
-<https://graph.microsoft.com/v1.0/security/alerts>, or the GET or PATCH
-operation. Here's a specific example that shows the parameters for a
-**Get alerts** action when you want a list with high severity alerts:
+Graph](/graph/query-parameters). *Don't specify* the complete base URL or the HTTP action, for example,
+<https://graph.microsoft.com/v1.0/security/alerts>, or the GET or PATCH operation. Here's a specific example that shows the parameters for a **Get alerts** action when you want a list with high severity alerts:
 
-Filter alerts value as Severity eq 'high'
+Filter alerts value as `Severity eq 'high'`
 
 For more information about the queries you can use with this connector,
-see the [Microsoft Graph Security alerts reference
-documentation](/graph/api/alert-list).
-To build enhanced experiences with this connector, learn more about the
-[schema properties
-alerts](/graph/api/resources/alert) that
-the connector supports.
+see the [Microsoft Graph Security alerts reference documentation](/graph/api/alert-list).
+To build enhanced experiences with this connector, learn more about the [schema properties alerts](/graph/api/resources/alert) that the connector supports.
 
 | Action | Description |
 |---|---|
@@ -320,6 +306,4 @@ indicators](/azure/connectors/connectors-integrate-security-operations-create-ap
 
     c.  You can also create an analytics rule in response to alerts.
 
-For more detailed instructions on creating playbooks, see [Use playbooks
-with automation rules in Microsoft
-Sentinel]/azure/sentinel/tutorial-respond-threats-playbook?tabs=LAC).
+For more detailed instructions on creating playbooks, see [Use playbooks with automation rules in Microsoft Sentinel](azure/sentinel/tutorial-respond-threats-playbook?tabs=LAC).
