@@ -10,9 +10,19 @@ It's possible to configure your project to group by iteration to visualize the b
 
 When you first create an iteration field, three iterations are automatically created. You can add other iterations if needed.
 
+:::image type="content" source="../media/github-existing-iteration-0630316b.png" alt-text="Screenshot of GitHub existing iterations.":::
+
+
 ## Iteration field
 
 You can use the command palette or the project's interface to create an iteration field.
+
+> [!TIP]
+> To open the project command palette, press Ctrl+K (Windows/Linux) or Command+K (Mac).
+
+Start typing any part of "Create new field". When "Create new field" displays in the command palette, select it.
+
+Or follow the steps using the interface:
 
 1.  Navigate to your project.
 2.  Click in the plus (**+**) sign in the rightmost field header. A drop-down menu with the project fields will appear.
@@ -21,7 +31,10 @@ You can use the command palette or the project's interface to create an iteratio
 5.  Select the dropdown menu below and click Iteration.
 6.  (Optional) Change the starting date from the current day, select the calendar dropdown next to Starts on, and click on a new starting date.
 7.  To change the duration of each iteration, type a new number, then select the dropdown and click either days or weeks.
-8.  Click Save create.
+8.  Click Save and create.
+
+    :::image type="content" source="../media/github-create-iteration-6d37845a.png" alt-text="Screenshot of GitHub settings. New iteration creation.":::
+
 
 ## Adding new iterations
 

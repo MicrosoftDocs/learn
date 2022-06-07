@@ -77,10 +77,10 @@ Here are some tools to support you in your financial planning:
 
 - **Azure Total Cost of Ownership (TCO) Calculator:** Use the TCO calculator to estimate the cost savings you can realize by migrating your application workloads to Azure.
 - **Azure pricing calculator:** Estimate your expected monthly bill by using the pricing calculator.
-- **Azure Cost Management + Billing:** Use and manage Azure and other cloud resources through a multiple-cloud cost management solution.
+- **Microsoft Cost Management + Billing:** Use and manage Azure and other cloud resources through a multiple-cloud cost management solution.
 
 > [!TIP]
-> Links to the TCO calculator, Azure pricing calculator, and Azure Cost Management + Billing tools are available in the *Summary and resources* unit at the end of this module.
+> Links to the TCO calculator, Azure pricing calculator, and Microsoft Cost Management + Billing tools are available in the *Summary and resources* unit at the end of this module.
 
 ## Define business justification
 
@@ -111,7 +111,7 @@ Here are the key points from this unit:
 - Microsoft provides tools to support you in your financial planning:
   - Azure total cost of ownership calculator
   - Azure pricing calculator
-  - Azure Cost Management + Billing
+  - Microsoft Cost Management + Billing
 - Your first adoption project should align with your motivations for adoption.
 
 Now that you've learned about how to define your business outcomes and overall strategy for cloud adoption, let's get started and create a plan for this journey.
