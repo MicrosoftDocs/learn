@@ -33,7 +33,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.migrate-spring-cloud-application-to-azure.introduction
