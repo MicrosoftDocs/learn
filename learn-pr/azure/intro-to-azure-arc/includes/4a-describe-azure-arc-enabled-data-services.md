@@ -69,7 +69,7 @@ Azure Arc-enabled data service is deployed and managed via an agent-based soluti
 
 You must also:
 - Meet the appropriate network requirements for connecting a Kubernetes cluster to Azure Arc.
-- Provide a ReadWriteMany (RWX) capable storag**e class for backups. If no storage class is specified for backups, the default storage class in Kubernetes is used and if this is not RWX capable, the Arc SQL Managed Instance installation may not succeed.
+- Provide a ReadWriteMany (RWX) capable storage class for backups. If no storage class is specified for backups, the default storage class in Kubernetes is used and if this is not RWX capable, the Arc SQL Managed Instance installation may not succeed.
 - Register providers for Azure Arc-enabled Kubernetes:
   - Microsoft.Kubernetes.
   - Microsoft.KubernetesConfiguration.
