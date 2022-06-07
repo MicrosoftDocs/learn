@@ -4,7 +4,7 @@ Administrative units restrict permissions in a role to any portion of your organ
 
 ### What is an administrative unit?
 
-In Azure AD using a single tenant if you assign a user the role of User Administrator (or any other admin role), they are now an admin over every user in the tenant. Thinking about the security principle of least privilege, this is not always the best way to grant administrative responsibilities. Administrative units are containers created to solve for this challenge in Azure AD. If you want a User Administrator (or other admin role) to be able to manage only a specific set of users and group, say those people in the Research Department of a hospital, you could set up an administrative unit. Within that administrative unit you would add the users and groups for the research team, then you would add a specific user to the User Administrator role within the administrative unit, call them Admin-for-research. Admin-for-research would be able to manage the users in the administrative unit but not across the entire tenant, which helps to achieve the principle of least privilege.
+In Azure AD, using a single tenant if you assign a user any administrator role, they're now an admin over every user in the tenant. Always think about the security principle of least privilege, this isn't always the best way to grant administrative responsibilities. Administrative units are containers created to solve for this challenge in Azure AD. If you want a User Administrator to be able to manage only a specific set of users and group. Say to only manage users in the Research Department of a hospital. You could set up an administrative unit. Within that administrative unit you would add the users and groups for the research team, then you would add a specific user to the User Administrator role within the administrative unit, call them Admin-for-research. Admin-for-research would be able to manage the users in the administrative unit but not across the entire tenant, which helps to achieve the principle of least privilege.
 
 ### What admin roles are available for an administrative unit?
 
@@ -38,12 +38,12 @@ With organizational growth comes complexity. One common response is to reduce so
 
 In Azure AD, you can delegate Application creation and management permissions in the following ways:
 
- -  Restricting who can create applications and manage the applications they create. By default in Azure AD, all users can register application registrations and manage all aspects of applications they create. This can be restricted to only allow selected people that permission.
- -  Assigning one or more owners to an application. This is a simple way to grant someone the ability to manage all aspects of Azure AD configuration for a specific application.
- -  Assigning a built-in administrative role that grants access to manage configuration in Azure AD for all applications. This is the recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Azure AD not related to application configuration.
- -  Creating a custom role defining very specific permissions and assigning it to someone either to the scope of a single application as a limited owner, or at the directory scope (all applications) as a limited administrator.
+ -  Restricting who can create applications and manage the applications they create. By default in Azure AD, all users can register application registrations and manage all aspects of applications they create. You can restrict to only allow selected people that permission.
+ -  Assigning one or more owners to an application. A simple way to grant someone the ability to manage all aspects of Azure AD configuration for a specific application.
+ -  Assigning a built-in administrative role that grants access to manage configuration in Azure AD for all applications. The recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Azure AD not related to application configuration.
+ -  Create a custom role to define specific permissions. Then assign the role to a user to assign a limited-owner. Or you could assign at the directory scope - all applications - as a limited-administrator.
 
-When granting access use one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.
+When granting access, use one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.
 
 ## Plan for Delegation
 
@@ -63,7 +63,7 @@ It's work to develop a delegation model that fits your needs. Developing a deleg
 Determine the Active Directory tasks that are carried out by administrators and how they map to roles. Each task should be evaluated for frequency, importance, and difficulty. These criteria are vital aspects of task definition because they govern whether a permission should be delegated:
 
  -  Tasks that you do routinely, have limited risk, and are trivial to complete are excellent candidates for delegation.
- -  Tasks that you do rarely but have great impact across the organization and require high skill levels should be considered very carefully before delegating. Instead, you can temporarily elevate an account to the required role or reassign the task.
+ -  Tasks that you do rarely but have potential risk across the organization and require high skill levels should be considered carefully before delegating. Instead, you can temporarily elevate an account to the required role or reassign the task.
 
 ## Delegate app administration
 
@@ -84,14 +84,14 @@ To selectively grant the ability to consent to allow an application to access da
  -  Set **Users can consent to applications accessing company data on their behalf** To No in **User settings** under Enterprise apps
  -  Assign the user to the Application Developer role
 
-When an Application Developer creates a new application registration, they are automatically added as the first owner.
+When an Application Developer creates a new application registration, they're automatically added as the first owner.
 
 ## Delegate app ownership
 
-For even finer-grained app access delegation, you can assign ownership to individual enterprise applications. This complements the existing support for assigning application registration owners. Ownership is assigned on a per-enterprise application basis in the Enterprise Applications blade. The benefit is owners can manage only the enterprise applications they own. For example, you can assign an owner for the Salesforce application, and that owner can manage access to and configuration for Salesforce, and no other applications. An enterprise application can have many owners, and a user can be the owner for many enterprise applications. There are two app owner roles:
+For even finer-grained app access delegation, you can assign ownership to individual enterprise applications. You improve existing support for assigning application registration owners. Ownership is assigned on a per-enterprise application basis in the Enterprise Applications screen. The benefit is owners can manage only the enterprise applications they own. For example, you can assign an owner for the Salesforce application, and that owner can manage access to and configuration for Salesforce, and no other applications. An enterprise application can have many owners, and a user can be the owner for many enterprise applications. There are two app owner roles:
 
- -  The **Enterprise Application Owner** role grants the ability to manage the ‘enterprise applications that the user owns, including single sign-on settings, user and group assignments, and adding additional owners. It doesn't grant the ability to manage Application Proxy settings or Conditional Access.
- -  The **Application Registration Owner** role grants the ability to manage application registrations for app that the user owns, including the application manifest and adding additional owners.
+ -  The **Enterprise Application Owner** role grants the ability to manage the ‘enterprise applications that the user owns, including single sign-on settings, user and group assignments, and adding more owners. It doesn't grant the ability to manage Application Proxy settings or Conditional Access.
+ -  The **Application Registration Owner** role grants the ability to manage application registrations for app that the user owns, including the application manifest and adding other owners.
 
 ## Develop a security plan
 

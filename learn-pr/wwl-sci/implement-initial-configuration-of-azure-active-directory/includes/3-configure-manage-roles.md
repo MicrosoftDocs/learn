@@ -1,4 +1,4 @@
-Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
+Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employee's sign in and access resources in:
 
 - External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
 - Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
@@ -13,7 +13,7 @@ Azure AD is intended for:
 
 In Azure AD, if one of your users needs permission to manage Azure AD resources, you must assign them to a role that provides the permissions they need.
 
-If you are new to Azure, you may find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Azure AD roles:
+If you're new to Azure, you may find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Azure AD roles:
 
 - Classic subscription administrator roles
 - Azure roles
@@ -21,11 +21,11 @@ If you are new to Azure, you may find it a little challenging to understand all 
 
 ## Azure AD roles
 
-Azure AD roles are used to manage Azure AD resources in a directory such as create or edit users, assign administrative roles to others, reset user passwords, manage user licenses, and manage domains. The following table describes a few of the more important Azure AD roles.
+Azure AD roles are used to manage Azure AD resources in a directory.  Actions such as create or edit users are the most common.  However, the need to assign administrative roles to others, reset user passwords, manage user licenses, and manage domains are common. The following table describes a few of the more important Azure AD roles.
 
 |**Azure AD role** | **Permissions** | **Notes** |
 | :----- | :----- | :----- |
-| Global Administrator | Manage access to all administrative features in Azure Active Directory, as well as services that federate to Azure Active Directory | The person who signs up for the Azure Active Directory tenant becomes the first Global Administrator. |
+| Global Administrator | Manage access to all administrative features in Azure Active Directory, and services that federate to Azure Active Directory | The person who signs up for the Azure Active Directory tenant becomes the first Global Administrator. |
 | | Assign administrator roles to others | |
 | | Reset the password for any user and all other administrators | |
 | User Administrator | Create and manage all aspects of users and groups | |
@@ -37,7 +37,7 @@ Azure AD roles are used to manage Azure AD resources in a directory such as crea
 | | Manage support tickets | |
 | | Monitors service health | |
 
-In the Azure portal, you can see the list of Azure AD roles on the **Roles and administrators** blade.
+In the Azure portal, you can see the list of Azure AD roles on the **Roles and administrators** screen.
 
 :::image type="content" source="../media/directory-admin-roles.png" alt-text="Screenshot of the Azure AD roles on the Roles and administrators window in Azure AD manage menu of the Azure portal.":::
 
@@ -56,7 +56,7 @@ At a high level, Azure roles control permissions to manage Azure resources, whil
 
 By default, Azure roles and Azure AD roles do not span Azure and Azure AD. However, if a Global Administrator elevates their access by choosing the **Access management for Azure resources** switch in the Azure portal, the Global Administrator will be granted the User Access Administrator role (an Azure role) on all subscriptions for a particular tenant. The User Access Administrator role enables the user to grant other users access to Azure resources. This switch can be helpful to regain access to a subscription.
 
-Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Administrator and User Administrator roles. For example, if you are a member of the Global Administrator role, you have global administrator capabilities in Azure AD and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
+Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Administrator and User Administrator roles. For example, if you're a member of the Global Administrator role, you have global administrator capabilities in Azure AD and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
 
 :::image type="content" source="../media/azure-office-roles.png" alt-text="Diagram of relationship of Azure roles to Azure AD roles. Azure roles accessed in Azure tenant.  Azure AD roles also accessed from Microsoft 365.":::
 
@@ -77,7 +77,7 @@ There are multiple ways to assign roles within Azure AD. You need to pick the on
 
 - Assign a role using Privileged Identity Management (PIM)
 
-The best method for your configuration needs can be used, but care must be taken as there are no built in restrictions. You could accidentally assign an administrative role to a group with users who do not need administrative access. This could lead to a solution modified by a user without proper knowledge of what they are doing, or even a potential avenue for attackers. Proper identity governance is the key.
+The best method for your configuration needs can be used, but care must be taken as there are no built in restrictions. You could accidentally assign an administrative role to a group with users who don't need administrative access. Extra permissions could lead to a solution modified by a user without proper knowledge of what they're doing, or even a potential avenue for attackers. Proper identity governance is the key.
 
 ### Example - using PIM to assign a role
 
@@ -98,7 +98,7 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
   
     :::image type="content" source="../media/new-custom-role.png" alt-text="Screenshot of Create or edit custom roles from the Roles and administrators page.":::
     
-2.  On the **Basics** tab, provide a name and description for the role and then click **Next**.
+2.  On the **Basics** tab, provide a name and description for the role and then select **Next**.
     
     :::image type="content" source="../media/basics-tab.png" alt-text="Screenshot of the basics tab. You provide a name and description for a custom role on the Basics tab.":::
     
@@ -107,7 +107,7 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
     
     :::image type="content" source="../media/permissions-tab.png" alt-text="Screenshot of the Select the permissions for a custom role on the Permissions tab.":::
     
-5.  Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then click **Next**.
+5.  Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then select **Next**.
 6.  On the **Review + create** tab, review the permissions and select **Create**.
 
 Your custom role will show up in the list of available roles to assign.

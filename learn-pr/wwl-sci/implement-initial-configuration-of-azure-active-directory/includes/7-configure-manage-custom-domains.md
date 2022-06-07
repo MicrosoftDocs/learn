@@ -5,7 +5,7 @@ A domain name is a part of the identifier for many Azure Active Directory (Azure
 When your organization is created, the initial domain name, such as ‘contoso.onmicrosoft.com,’ is also the primary domain name.
 
 > [!IMPORTANT]
-> The person who creates the tenant is automatically the Global administrator for that tenant. The Global administrator can add additional administrators to the tenant.
+> The person who creates the tenant is automatically the Global administrator for that tenant. The Global administrator can add other administrators to the tenant.
 
 The primary domain is the default domain name for a new user when you create a new user. Setting a primary domain name streamlines the process for an administrator to create new users in the portal. To change the primary domain name:
 
@@ -30,7 +30,7 @@ You can add up to 900 managed domain names. If you're configuring all your domai
 
 If you want to add a subdomain name such as ‘europe.contoso.com’ to your organization, you should first add and verify the root domain, such as contoso.com. The subdomain is automatically verified by Azure AD. To see that the subdomain you added is verified, refresh the domain list in the browser.
 
-If you have already added a contoso.com domain to one Azure AD organization, you can also verify the subdomain europe.contoso.com in a different Azure AD organization. When adding the subdomain, you are prompted to add a TXT record in the DNS hosting provider.
+If you've already added a contoso.com domain to one Azure AD organization, you can also verify the subdomain europe.contoso.com in a different Azure AD organization. When adding the subdomain, you're prompted to add a TXT record in the DNS hosting provider.
 
 ## What to do if you change the DNS registrar for your custom domain name
 
@@ -50,12 +50,12 @@ You must change or delete any such resource in your Azure AD organization before
 
 ### ForceDelete option
 
-You can **ForceDelete** a domain name in the Azure AD Admin Center or using Microsoft Graph API. These options use an asynchronous operation and update all references from the custom domain name like “user@contoso.com” to the initial default domain name such as “user@contoso.onmicrosoft.com.”
+**ForceDelete** can be used to remove a domain name in the Azure AD Admin Center or using Microsoft Graph API. These options use an asynchronous operation and update all references from the custom domain name like “user@contoso.com” to the initial default domain name such as “user@contoso.onmicrosoft.com.”
 
-To call **ForceDelete** in the Azure portal, you must ensure that there are fewer than 1000 references to the domain name, and any references where Exchange is the provisioning service must be updated or removed in the Exchange Admin Center. This includes Exchange Mail-Enabled Security Groups and distributed lists. Also, the **ForceDelete** operation won't succeed if either of the following is true:
+To call **ForceDelete** in the Azure portal, you must ensure that there are fewer than 1000 references to the domain name, and any references where Exchange is the provisioning service must be updated or removed in the Exchange Admin Center. Exchange Mail-Enabled Security Groups and distributed lists are included. Also, the **ForceDelete** operation won't succeed if either of the following is true:
 
 - You purchased a domain via Microsoft 365 domain subscription services
-- You are a partner administering on behalf of another customer organization
+- You're a partner administering on behalf of another customer organization
 
 The following actions are performed as part of the **ForceDelete** operation:
 
