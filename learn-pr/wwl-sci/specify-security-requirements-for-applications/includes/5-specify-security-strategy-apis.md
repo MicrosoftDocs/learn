@@ -17,7 +17,7 @@ This section focuses on applications written by your organization or by
 others on behalf of your organization vs. SaaS or commercially available
 applications installed on IaaS VMs.
 
-![Alt text. Diagram that shows various application models.](../media/iaas-paas-application-models.png) 
+![Diagram that shows various application models.](../media/iaas-paas-application-models.png) 
 
 Modern cloud platforms like Azure can host both legacy and modern
 generations of applications
@@ -28,11 +28,11 @@ generations of applications
 
 -   **Modern**--Platform as a Service (PaaS) applications don't require
     the application owner to manage and secure the underlying server
-    operating systems (OSes) and are sometimes fully \"Serverless\" and
+    operating systems (OSes) and are sometimes fully "Serverless" and
     built primarily using functions as a service.
 
 -   **Hybrid**--While hybrid applications can take many forms, the
-    most common is an \"IaaS plus\" state where legacy applications are
+    most common is an "IaaS plus" state where legacy applications are
     transitioning to modern architecture with modern services replacing
     legacy components or being added to a legacy application.
 
@@ -131,11 +131,10 @@ security impact:
 
 -   **Key management**--Ideally, use identity for authentication
     rather than directly handling keys (see [Prefer Identity
-    Authentication over
-    Keys](/security/compass/applications-services#prefer-identity-authentication-over-keys)).
+    Authentication over Keys](https://docs.microsoft.com/security/compass/applications-services#prefer-identity-authentication-over-keys)).
     For situations where accessing services that require access to keys,
     use a key management service like [Azure Key
-    Vault](/azure/key-vault/) or
+    Vault](https://docs.microsoft.com/azure/key-vault/) or
     AWS [Key Management Service](https://aws.amazon.com/kms/). This will help you manage
     and secure these keys rather than attempting to safely handle keys
     in application code. You can
@@ -150,10 +149,10 @@ security impact:
 #### For additional information on Security Standards for Applications, see the following:
 
 -   [**Best Practices for Application
-    Registration**](/azure/active-directory/develop/security-best-practices-for-app-registration)
+    Registration**](https://docs.microsoft.com/azure/active-directory/develop/security-best-practices-for-app-registration)
 
 -   [**Threat
-    Modeling**](/azure/security/develop/threat-modeling-tool)
+    Modeling**](https://docs.microsoft.com/azure/security/develop/threat-modeling-tool)
 
 -   [**OWASP
     ASVS**](https://owasp.org/www-project-application-security-verification-standard/)

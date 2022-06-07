@@ -15,7 +15,7 @@ longer planning and testing cycle.
 
 #### Deploy the DevOps and the application lifecycle
 
-![Alt text. Diagram that shows the DevOps lifecycle.](../media/devops-application-lifecycle.png) 
+![Diagram that shows the DevOps lifecycle.](../media/devops-application-lifecycle.png) 
 
 DevOps influences the application and API lifecycle throughout
 its plan, develop, deliver, and operate phases. Each phase relies on the
