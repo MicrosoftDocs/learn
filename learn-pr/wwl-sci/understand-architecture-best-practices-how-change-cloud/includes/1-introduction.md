@@ -6,7 +6,7 @@ learn how architecture best practices help to design a more secure
 environment and how Cloud computing is changing the architect thought
 process.
 
-### Learning Objectives
+### Learning Objectives 
 
 In this module, you'll learn how to:
 
