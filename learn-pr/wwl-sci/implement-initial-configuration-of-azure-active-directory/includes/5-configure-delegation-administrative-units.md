@@ -4,7 +4,7 @@ Administrative units restrict permissions in a role to any portion of your organ
 
 ### What is an administrative unit?
 
-In Azure AD, using a single tenant if you assign a user any administrator role, they're now an admin over every user in the tenant. Always think about the security principle of least privilege, this isn't always the best way to grant administrative responsibilities. Administrative units are containers created to solve for this challenge in Azure AD. If you want a User Administrator to be able to manage only a specific set of users and group. Say to only manage users in the Research Department of a hospital. You could set up an administrative unit. Within that administrative unit you would add the users and groups for the research team, then you would add a specific user to the User Administrator role within the administrative unit, call them Admin-for-research. Admin-for-research would be able to manage the users in the administrative unit but not across the entire tenant, which helps to achieve the principle of least privilege.
+In Azure AD, using a single tenant if you assign a user any administrator role, they're now an admin over every user in the tenant. Always think about the security principle of least privilege, it's always the best way to grant administrative responsibilities. Administrative units are containers created to solve for this challenge in Azure AD. If you want a User Administrator to be able to manage only a specific set of users and group. Say to only manage users in the Research Department of a hospital. You could set up an administrative unit. Within that administrative unit you would add the users and groups for the research team, then you would add a specific user to the User Administrator role within the administrative unit, call them Admin-for-research. Admin-for-research would be able to manage the users in the administrative unit but not across the entire tenant, which helps to achieve the principle of least privilege.
 
 ### What admin roles are available for an administrative unit?
 
@@ -103,4 +103,4 @@ To maintain access to your identity management store when issue arises, prepare 
 
 ## Secure your administrator roles
 
-Attackers who get control of privileged accounts can do tremendous damage, so protect these accounts first, using the Security Defaults feature, that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.
+Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature, that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.

@@ -44,7 +44,7 @@ With more than 500 million members worldwide, LinkedIn is the largest and most t
 Use sign in with LinkedIn to:
 
 - Reduce friction and obtain more sign-ups by allowing members to Sign In with LinkedIn, without having the need to create a new account.
-- Minimize the costs and time associated with implementing your own sign in, identity, profile management, and password management.
+- Minimize the costs and time associated with implementing your own sign-in, identity, profile management, and password management.
 - Personalize your sites and applications with the latest member profiles.
 
 ### Manage security defaults
