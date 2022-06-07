@@ -17,21 +17,21 @@ This section focuses on applications written by your organization or by
 others on behalf of your organization vs. SaaS or commercially available
 applications installed on IaaS VMs.
 
-![Diagram of Application Models](../media/iaas-paas-application-models.png) 
+![Alt text. Diagram that shows various application models.](../media/iaas-paas-application-models.png) 
 
 Modern cloud platforms like Azure can host both legacy and modern
 generations of applications
 
--   **Legacy** applications are hosted on Infrastructure as a Service
+-   **Legacy**--applications are hosted on Infrastructure as a Service
     (IaaS) virtual machines that typically include all dependencies,
     including OS, middleware, and other components.
 
--   **Modern** Platform as a Service (PaaS) applications don't require
+-   **Modern**--Platform as a Service (PaaS) applications don't require
     the application owner to manage and secure the underlying server
     operating systems (OSes) and are sometimes fully \"Serverless\" and
     built primarily using functions as a service.
 
--   **Hybrid** -- While hybrid applications can take many forms, the
+-   **Hybrid**--While hybrid applications can take many forms, the
     most common is an \"IaaS plus\" state where legacy applications are
     transitioning to modern architecture with modern services replacing
     legacy components or being added to a legacy application.
@@ -39,23 +39,23 @@ generations of applications
 Securing an application requires security assurances for three different
 component types:
 
--   **Application Code** -- This is the logic that defines the custom
+-   **Application Code**--Application Code is the logic that defines the custom
     application that you write. The security of this code is the
     application owners' responsibility in all generations of
     application architecture, including any open-source snippets or
     components included in the code. Securing the code requires
     identifying and mitigating risks from the design and implementation
-    of the application and assessing the supply chain risk of included
+    of the application. It also requires assessing the supply chain risk of included
     components.
 
--   **Application Services** -- These are the various standardized
+-   **Application Services**--Application Services are the various standardized
     components that the application uses, such as databases, identity
     providers, event hubs, IoT device management, and so on.
 
--   **Application Hosting Platform** -- This is the computing
+-   **Application Hosting Platform**--This is the computing
     environment where the application actually executes and runs. In an
     enterprise with applications hosted on premises, in Azure, and in
-    third-party clouds like Amazon Web Services (AWS), this could take
+    third-party clouds like Amazon Web Services (AWS), this (Application Hosting Platform) could take
     many forms with significant variations on who is responsible for
     security:
 
@@ -112,20 +112,16 @@ applications in the cloud rather than starting from zero.
 Several capabilities should be prioritized first because of potential
 security impact:
 
--   **Identity** -- User directories and other authentication functions
+-   **Identity**--User directories and other authentication functions
     are complex to develop and critically important to security
     assurances. Avoid using homegrown authentication solutions and favor
-    mature capabilities like Azure Active Directory ([Azure
-    AD](/azure/active-directory/)), [Azure
-    AD
-    B2B](/azure/active-directory/b2b/), [Azure
-    AD
-    B2C](/azure/active-directory-b2c/),
-    or third-party solutions to authenticate and grant permission to
-    users, partners, and customers, applications, services, and other
-    entities.
+    mature capabilities like: 
+     1. Azure Active Directory ([Azure AD](/azure/active-directory/)) 
+     2. [Azure AD B2B](/azure/active-directory/b2b/) 
+     3. [Azure AD B2C](/azure/active-directory-b2c/)
+     4. third-party solutions to authenticate and grant permission to users, partners, and customers, applications, services, and other entities.
 
--   **Data Protection** -- Developers, should use established
+-   **Data Protection**--Developers, should use established
     capabilities from cloud providers such as native encryption in cloud
     services to encrypt and protect data. The security world is littered
     with examples of failed attempts to protect data or passwords that
@@ -133,20 +129,20 @@ security impact:
     cryptography is required, developers should call well-established
     cryptographic algorithms and not attempt to invent their own.
 
--   **Key management** -- Ideally, use identity for authentication
+-   **Key management**--Ideally, use identity for authentication
     rather than directly handling keys (see [Prefer Identity
     Authentication over
     Keys](/security/compass/applications-services#prefer-identity-authentication-over-keys)).
     For situations where accessing services that require access to keys,
     use a key management service like [Azure Key
     Vault](/azure/key-vault/) or
-    AWS [Key Management Service](https://aws.amazon.com/kms/) to manage
+    AWS [Key Management Service](https://aws.amazon.com/kms/). This will help you manage
     and secure these keys rather than attempting to safely handle keys
     in application code. You can
     use [CredScan](https://secdevtools.azurewebsites.net/helpcredscan.html) to
     discover potentially exposed keys in your application code.
 
--   **Application Configurations** -- Inconsistent configurations for
+-   **Application Configurations**--Inconsistent configurations for
     applications can create security Risks. Azure App Configuration
     provides a service to centrally manage application settings and
     feature flags, which helps mitigate this risk.
