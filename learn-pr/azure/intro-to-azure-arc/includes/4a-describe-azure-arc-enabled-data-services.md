@@ -31,16 +31,29 @@ Today Azure Arc-enabled SQL Managed instance comes in two different types of SKU
 - Business Critical = Enterprise Edition
 - General Purpose = Standard Edition 
 
-:::image type="content" source="../media/4a-data-service-tier-comparison.png" alt-text="A chart that compares the service tier models." border="false":::
+|Area  |Business Critical  | General Purpose  |
+|---------|---------|---------|
+|SQL feature set | Same as Enterprise Edition | Same as Standard Edition|
+|CPU limit per instance |Unlimited|24 cores|
+|Memory limit per instance |Unlimited| 127 GB |
+|High availability|Contained availability groups over Kubernetes redeployment|Single instance with Kubernetes redeploy + shared storage|
+|Read scale out |Availability group |None|
+|Disaster recovery |Available via failover groups |Available via failover groups |
+|Scale up/down |Available |Available |
+|Monitoring |Built-in available locally. Optionally export to Azure Monitor |Built-in available locally. Optionally export to Azure Monitor |
+|Logging |Built-in available locally. Optionally export to Azure Log Analytics|Built-in available locally. Optionally export to Azure Log Analytics.|
+|Point in time restore |Built-in |Built-in |
+|AHB exchange rates for IP component of price|1:1 Enterprise Edition</br>4:1 Standard Edition |1:4 Enterprise Edition</br>1:1 Standard Edition|
+|Dev/test pricing|No cost|No cost|
 
 ## How does Azure Arc-enabled data service operate?
 
-The Azure Arc-enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have. See [Deployment requirements](/azure/azure-arc/data/plan-azure-arc-data-services#deployment-requirements).
+The Azure Arc-enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have.
 
-Azure Arc-enabled data service is deployed and managed via an agent based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must have:
+Azure Arc-enabled data service is deployed and managed via an agent-based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must have:
 
-- Access to a Kubernetes cluster
-- The supported [Azure CLI](/cli/azure/install-azure-cli) version (>= 2.16.0 and <= 2.29.0)
+- Access to a Kubernetes cluster that is sized appropriately for your workload
+- The supported Azure CLI version (>= 2.16.0 and <= 2.29.0)
 - The following `arcdata` and associated k8s CLI extensions:
   - `arcdata`
   - `connectedk8s`
@@ -54,11 +67,11 @@ Azure Arc-enabled data service is deployed and managed via an agent based soluti
     az extension add --name <extension>
     ```
 
-- [Meet network requirements](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#meet-network-requirements).
+You must also:
+- Meet the appropriate network requirements for connecting a Kubernetes cluster to Azure Arc.
 - Read write many drives “Required for Business Critical SKU” 
-- [Register providers for Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#register-providers-for-azure-arc-enabled-kubernetes).
+- Register providers for Azure Arc-enabled Kubernetes:
   - Microsoft.Kubernetes.
   - Microsoft.KubernetesConfiguration.
   - Microsoft.ExtendedLocation.
-- Create destination Resource Group in your Azure subscription.
-- Your Kubernetes cluster is sized appropriately for your workload.
+- Create a destination Resource Group in your Azure subscription.
