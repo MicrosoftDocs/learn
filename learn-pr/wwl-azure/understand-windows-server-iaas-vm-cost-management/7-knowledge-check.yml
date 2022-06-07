@@ -22,9 +22,9 @@ quiz:
     - content: "Azure Advisor."
       isCorrect: false
       explanation: "That's incorrect. Advisor analyzes your deployed resources and services, and identifies ways to improve your environment across each of these areas, which includes costs."
-    - content: "Azure Cost Management."
+    - content: "Microsoft Cost Management."
       isCorrect: false
-      explanation: "That's incorrect. You can use Azure Cost Management to gain greater insights into where your greatest Azure resource costs are."
+      explanation: "That's incorrect. You can use Microsoft Cost Management to gain greater insights into where your greatest Azure resource costs are."
   - content: "When you create a Spot VM instance, you can choose between two eviction policies. Which of the following is a valid eviction policy option?"
     choices:
     - content: "Capacity only."
