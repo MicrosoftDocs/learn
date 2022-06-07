@@ -65,5 +65,4 @@ The security of MFA two-step verification lies in its layered approach. Compromi
 :::row-end:::
 
 
-> [!IMPORTANT]
-> There is also a selection to cache passwords so that users do not have to authenticate on trusted devices. The number of days before a user must re-authenticate on trusted devices can also be configured with the value from 1 to 60 days. The default is 14 days.
+
