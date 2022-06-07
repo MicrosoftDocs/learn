@@ -50,11 +50,11 @@ Today Azure Arc-enabled SQL Managed instance comes in two different types of SKU
 
 The Azure Arc-enabled SQL Managed Instance operates on any Kubernetes cluster and hardware that you have.
 
-Azure Arc-enabled data service is deployed and managed via an agent-based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must have:
+Azure Arc-enabled data service is deployed and managed via an agent-based solution. The agent that gets deployed to the environment is called the data controller. This agent acts as the Kubernetes orchestrator for the solution. To run the services in direct connected mode, you must:
 
-- Access to a Kubernetes cluster that is sized appropriately for your workload
-- The supported Azure CLI version (>= 2.16.0 and <= 2.29.0)
-- The following `arcdata` and associated k8s CLI extensions:
+- Have access to a Kubernetes cluster that is sized appropriately for your workload
+- Use a supported Azure CLI version (>= 2.16.0 and <= 2.29.0)
+- Add the following `arcdata` and associated k8s CLI extensions:
   - `arcdata`
   - `connectedk8s`
   - `customlocation`
@@ -69,7 +69,7 @@ Azure Arc-enabled data service is deployed and managed via an agent-based soluti
 
 You must also:
 - Meet the appropriate network requirements for connecting a Kubernetes cluster to Azure Arc.
-- Read write many drives “Required for Business Critical SKU” 
+- Provide a ReadWriteMany (RWX) capable storage class for backups. If no storage class is specified for backups, the default storage class in Kubernetes is used and if this is not RWX capable, the Arc SQL Managed Instance installation may not succeed.
 - Register providers for Azure Arc-enabled Kubernetes:
   - Microsoft.Kubernetes.
   - Microsoft.KubernetesConfiguration.
