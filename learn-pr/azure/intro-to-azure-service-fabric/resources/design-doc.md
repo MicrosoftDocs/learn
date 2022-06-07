@@ -48,7 +48,7 @@ Follow the *Introduction to* module guidelines.
 
      Give a brief overview of container orchestration.
 
-     An energy company provides an smart home thermostats to customers nationwide. The sensors in their metering devices are built and deployed as microservices. They're using containerized instances to quickly deploy into new customer regions and scale resources as needed to meet customer demands. They want to use a container orchestration platform that makes it simple to develop, deploy, and manage containerized applications. They need a platform that handles large scale and has low latency to help process data on millions of devices.
+     An energy company provides smart home thermostats to customers nationwide. The sensors in their metering devices are built and deployed as microservices. They're using containerized instances to quickly deploy into new customer regions and scale resources as needed to meet customer demands. They want to use a container orchestration platform that makes it simple to develop, deploy, and manage containerized applications. They need a platform that handles large scale and has low latency to help process data on millions of devices.
 
 1. **What is Azure Service Fabric?**
 

@@ -30,7 +30,7 @@ quiz:
       isCorrect: true
       explanation: "Service Fabric provides a sophisticated, lightweight runtime that supports stateless and stateful microservices."
 
-  - content: "Suppose you work for an event management company. Your events website needs persisted storage. Which feature of Service Fabric will you use?"
+  - content: "Suppose an event management company's website needs persisted storage. Which feature of Service Fabric should the company use?"
     choices:
     - content: "Use Azure Monitor"
       isCorrect: false
@@ -42,11 +42,14 @@ quiz:
       isCorrect: false
       explanation: "Scaling horizontally will add more nodes to your Service Fabric cluster."
 
-  - content: "You're developing on-premises in Linux. Does Azure Service Fabric support your environment?"
+  - content: "What environments does Service Fabric support?"
     choices:
-    - content: "Yes"
+    - content: "Service Fabric supports building on Azure, on-premises in Windows and Linux, and other cloud platforms, including AWS."
       isCorrect: true
-      explanation: "As part of Service Fabric's any Cloud, any OS offering, you on-premises Linux environment is supported."
-    - content: "No"
+      explanation: "As a part of Service Fabric's any Cloud, any OS offering, Service Fabric supports all of these options."
+    - content: "Service Fabric only supports building on Azure."
       isCorrect: false
-      explanation: "As part of Service Fabric's any Cloud, any OS offering, you on-premises Linux environment is supported."
+      explanation: "As a part of Service Fabric's any Cloud, any OS offering, Service Fabric also supports on-premises solutions and other cloud platforms."
+    - content: "Service Fabric supports Azure and other cloud platforms. It also supports on-premises solutions, but only on Windows."
+      isCorrect: false
+      explanation: "As a part of Service Fabric's any Cloud, any OS offering, Service Fabric supports both Windows and Linux solutions."

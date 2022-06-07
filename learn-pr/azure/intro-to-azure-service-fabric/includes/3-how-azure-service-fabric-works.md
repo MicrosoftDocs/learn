@@ -2,7 +2,7 @@ Now that you know the basics of Azure Service Fabric, let's see how it works. We
 
 ## Creating a Service Fabric cluster
 
-As discussed in the previous unit, there are two cluster models in Azure Service Fabric: *standard* and *managed*. While the differences between the two models primarily lies in how they're managed, the creation processes are also slightly different.
+As discussed in the previous unit, there are two cluster models in Azure Service Fabric: *standard* and *managed*. While the differences between the two models primarily lie in how they're managed, the creation processes are also slightly different.
 
 You have two options when you create a Service Fabric cluster. You either use the Azure portal or Azure Resource Manager templates. During creation, you configure basic information such as:
 
@@ -10,7 +10,7 @@ You have two options when you create a Service Fabric cluster. You either use th
 - Username and password for your cluster's administrator account
 - Initial number of virtual machines
 
-The initial number of virtual machines is handled differently between the standard and managed models. In the standard cluster model, this is called the *Initial VM scale set capacity*. For production scenarios, the initial VM scale set capacity is 5 or greater. For testing purposes, less than 5 is acceptable. For the managed cluster model, you determine the initial number of virtual machines through the *Cluster SKU*. There are two options: Basic and Standard. Basic provides 3 initial virtual machines, while Standard provides 5. Similar to the standard cluster model, Standard is recommended for production scenarios, and Basic is only recommended for testing purposes.
+The initial number of virtual machines is handled differently between the standard and managed models. In the standard cluster model, this is called the *Initial virtual machine scale set capacity*. For production scenarios, the initial virtual machine scale set capacity is 5 or greater. For testing purposes, less than 5 is acceptable. For the managed cluster model, you determine the initial number of virtual machines through the *Cluster SKU*. There are two options: Basic and Standard. Basic provides 3 initial virtual machines, while Standard provides 5. Similar to the standard cluster model, Standard is recommended for production scenarios, and Basic is only recommended for testing purposes.
 
 Unless specified, the Azure service creation workflow creates a Service Fabric cluster using default configuration for scaling, authentication, networking and monitoring. Creating a Service Fabric cluster typically takes 10-15 minutes. Once complete, access and management of your cluster can be done through the Azure portal, Azure CLI, or through the Service Fabric Explorer.
 
@@ -39,4 +39,4 @@ You can deploy workloads to your cluster using PowerShell, Azure Resource Manage
 
 Azure Service Fabric allows you to integrate with many Azure service offerings.
 
-For example, you can set up continuous integration and deployment to your nodes using Azure Pipeplines. You can also use Azure Monitor to monitor cluster and container infrastructure events.
+For example, you can set up continuous integration and deployment to your nodes using Azure Pipelines. You can also use Azure Monitor to monitor cluster and container infrastructure events.
