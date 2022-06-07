@@ -4,7 +4,7 @@ Now that you have reviewed this module, you should be able to:
  -  Configure and manage custom domains.
  -  Evaluate permissions based on role assignments and settings.
  -  Configure delegation by using administrative units.
- -  Configure tenant-wide settings
+ -  Configure tenant-wide settings.
 
 ## Resources
 
