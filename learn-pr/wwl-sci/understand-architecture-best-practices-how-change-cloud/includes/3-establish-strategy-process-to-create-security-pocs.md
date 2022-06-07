@@ -188,7 +188,7 @@ complementary improvement actions.
 Your action status is updated on your dashboard within 24 hours of a
 change being made. Once you follow a recommendation to implement a
 control, you'll typically see the control status updated the next day.
-For example, if you turn on multi-factor authentication (MFA) in the
+For example, if you turn on Azure Active Directory Multi-Factor Authentication in the
 Azure AD portal, Compliance Manager detects the setting and reflects it
 in the control access solution details. Conversely, if you didn't turn
 on MFA, Compliance Manager flags that as a recommended action for you to
@@ -202,14 +202,10 @@ One method for doing this is to establish and monitor security metrics.
 
 Microsoft recommends scorecard metrics in four main areas:
 
-1.  Business enablement -- How much security friction is in user
-    experience and business processes?
-
-2.  Security Improvement -- Are we getting better every month?
-
-3.  Security Posture - How good are we at preventing damage?
-
-4.  Security Response -- How good are we at responding to and recovering
+* Business enablement -- How much security friction is in user experience and business processes?
+* Security Improvement -- Are we getting better every month?
+* Security Posture - How good are we at preventing damage?
+* Security Response -- How good are we at responding to and recovering
     from attacks?
 
 Sample metrics in each of these categories are summarized in the
