@@ -5,7 +5,7 @@ azureSandbox: true
 metadata:
   title: Exercise - Upload the data
   description: Upload the data
-  ms.date: 01/19/2021
+  ms.date: 06/07/2022
   author: cassiebreviu
   ms.author: cassieb
   ms.topic: interactive-tutorial
@@ -15,3 +15,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3a-upload-images.md)]
+https://github.com/MicrosoftDocs/learn-pr/pull/27311

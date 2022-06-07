@@ -60,17 +60,15 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
    1. Enter a name for your new Custom Vision service resource (for example, *BirdCustomVisionService*).
 
-   1. Under **Training Resource**:
+   1. Under **Instance Details**:
 
-      1. Set **Training location** to *(US) South Central US*.
+      1. Set **Region** to *(US) South Central US*.
 
-      1. Set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
+      1. Enter a **Name** for your resource, using only alphanumeric characters and hyphens.
 
-   1. Under **Prediction Resource**:
+   1. 1. Under **Training Resource**, set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
 
-      1. Set **Prediction location** to *(US) South Central US*.
-
-      1. Set **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
+   1. Under **Prediction Resource**, set **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
 
 1. Select **Review + create**.
 
