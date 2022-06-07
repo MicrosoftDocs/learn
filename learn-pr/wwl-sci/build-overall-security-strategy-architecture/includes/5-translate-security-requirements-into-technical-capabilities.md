@@ -6,7 +6,7 @@ Organizations often face the competitive threat of new startups and the
 digital transformation of traditional competitors who can disrupt the
 market.
 
-![partnership approach.](../media/partnership-approach.png)
+![Diagram showing the partnership approach between business and security functions.](../media/partnership-approach.png)
 
 The internal transformation process typically includes:
 
@@ -17,7 +17,7 @@ The internal transformation process typically includes:
 
 -   **Security transformation** to both adapt to the cloud and simultaneously address an increasingly sophisticated threat environment
 
-#### Security design principles
+## Security design principles
 
 Based on the organization's security transformation; enforcing security
 design principles is key to enforcing a Zero Trust architecture.
@@ -43,7 +43,7 @@ These critical design principles are used as lenses to assess the
 Security of an application deployed on Azure. These lenses provide a
 framework for the application assessment questions.
 
-#### Plan resources and how to harden them
+## Plan resources and how to harden them
 
 Recommendations:
 
@@ -53,7 +53,7 @@ Recommendations:
 
 -   Use a service enablement framework to evaluate
 
-#### Automate and use least privilege
+## Automate and use least privilege
 
 Recommendations:
 
@@ -61,7 +61,7 @@ Recommendations:
 
 -   Drive automation through DevSecOps to minimize the need for human interaction
 
-#### Classify and encrypt data
+## Classify and encrypt data
 
 Recommendations:
 
@@ -69,7 +69,7 @@ Recommendations:
 
 -   Apply industry-standard encryption at rest and in transit, which ensures keys and certificates are stored securely and managed properly
 
-#### Monitor system security, plan incident response
+## Monitor system security, plan incident response
 
 Recommendations:
 
@@ -81,7 +81,7 @@ Recommendations:
 
 -   Use security information and event management (SIEM) tooling for tracking
 
-#### Identify and protect endpoints
+## Identify and protect endpoints
 
 Recommendations:
 
@@ -90,7 +90,7 @@ Recommendations:
 
 -   Use industry standard approaches to protect against common attack vectors, such as distributed denial of service (DDoS) attacks like SlowLoris.
 
-#### Protect against code-level vulnerabilities
+## Protect against code-level vulnerabilities
 
 Recommendations:
 
@@ -102,7 +102,7 @@ Recommendations:
 
     -   Codebase and dependency patching
 
-#### Model and test against potential threats
+## Model and test against potential threats
 
 Recommendations:
 

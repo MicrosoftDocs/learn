@@ -7,9 +7,9 @@ The reference architectures are primarily composed of detailed technical diagram
 
 The MCRA also includes an overview of Zero Trust and a Zero Trust rapid modernization plan (RaMP). Additionally, this includes other key information on security operations and key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more.
 
-![Diagram that shows Zero Trust and related topics.](../media/zero-trustand-related-topics.png)
+![Diagram that shows Zero Trust and related topics.](../media/zero-trust-and-related-topics.png)
 
-### Using the MCRA
+## Using the MCRA
 
 MCRA is used for several purposes, including: 
 

@@ -13,7 +13,7 @@ In this template, business outcomes focus on three topics:
 
 The business outcome template focuses on simplified conversations that can quickly engage stakeholders without getting too deep into the technical solution. By rapidly understanding and aligning the key performance indicators (KPIs) and business drivers that are important to stakeholders, architects can consider about high-level approaches and transformations before implementing security solutions.
 
-### Cloud Adoption Framework
+## Cloud Adoption Framework
 
 **Media:** [Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
 
@@ -31,7 +31,7 @@ The govern stage focuses on cloud governance. You can refer to the Cloud Adoptio
 
 To help build your adoption strategy, the Cloud Adoption Framework breaks out each stage into further exercises and steps. Let's take a brief look at each stage.
 
-#### Define your strategy
+### Define your strategy
 
 Here, you answer why you're moving to the cloud and what you want to get out of cloud migration. Do you need to scale to meet demand or reach new markets? Will it reduce costs or increase business agility? When defining your cloud business strategy, you should understand [cloud economics](https://azure.microsoft.com/overview/cloud-economics) and consider the business impact, turnaround time, global reach, performance, and more. Here are the steps to define your cloud strategy:
 
@@ -40,7 +40,7 @@ Here, you answer why you're moving to the cloud and what you want to get out of 
 1. **Evaluate financial considerations**: Measure objectives and identify the return expected from a specific investment.
 1. **Understand technical considerations**: Evaluate technical considerations through the selection and completion of your first technical project.
 
-#### Make a plan
+### Make a plan
 
 Here, you build a plan that maps your aspirational goals to specific actions. A good plan helps ensure that your efforts map to the desired business outcomes. Here are steps to build a solid plan:
 
@@ -49,7 +49,7 @@ Here, you build a plan that maps your aspirational goals to specific actions. A 
 1. **Skills readiness plan**: Build a plan that helps individuals build the skills they need to operate in the cloud.
 1. **Cloud adoption plan**: Build a comprehensive plan that brings together the development, operations, and business teams toward a shared cloud adoption goal.
 
-#### Ready your organization
+### Ready your organization
 
 Here, you create a *landing zone* or an environment in the cloud to begin hosting your workloads. Here are steps to ready your organization:
 
@@ -58,11 +58,11 @@ Here, you create a *landing zone* or an environment in the cloud to begin hostin
 1. **Expand the landing zone**: Refine your landing zone to ensure that it meets your operations, governance, and security needs.
 1. **Best practices**: Start with recommended and proven practices to help ensure that your cloud migration efforts are scalable and maintainable.
 
-#### Adopt the cloud
+### Adopt the cloud
 
 Here, you begin to migrate your applications to the cloud. Along the way, you might find ways to modernize your applications and build innovative solutions that use cloud services. The Cloud Adoption Framework breaks this stage into two parts: migrate and innovate.
 
-##### Migrate 
+#### Migrate 
 
 Here are the steps in the migrate process of this stage:
 
@@ -71,7 +71,7 @@ Here are the steps in the migrate process of this stage:
 1. **Best practices**: Check in with the Azure cloud migration best practices checklist to verify that you're following recommended practices.
 1. **Process improvements**: Identify ways to make the migration process scale while requiring less effort.
 
-##### Innovate 
+#### Innovate 
 
 Here are the steps in the innovate process of this stage:
 
@@ -84,7 +84,7 @@ Here are the steps in the innovate process of this stage:
 
 Here, you begin to form your cloud governance and cloud management strategies. As the cloud estate changes over time, so do cloud governance processes and policies. You need to create resilient solutions that are constantly optimized.
 
-##### Govern 
+#### Govern 
 
 Here are the steps in the govern process of this stage:
 
@@ -93,7 +93,7 @@ Here are the steps in the govern process of this stage:
 1. **Initial governance foundation**: Create a Minimum Viable Product (MVP) that captures the first steps of your governance plan.
 1. **Improve the initial governance foundation**: Iteratively add governance controls that address tangible risks as you progress toward your end state solution.
 
-##### Manage 
+#### Manage 
 
 Here are the steps in the manage process of this stage:
 

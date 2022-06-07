@@ -13,15 +13,15 @@ The content in the module will help you prepare for Exam SC-100: Cybersecurity A
 - Design a Zero Trust Strategy and Architecture
 - Build an Overall Security Strategy and Architecture
 
-### Prerequisites 
+## Prerequisites 
 
 - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
 - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
 
-### Role of Security Architecture
+## Role of Security Architecture
 
-![how architects connect security teams.](../media/architects-help-connect-teams.png)
+![Diagram showing how architects connect security teams.](../media/architects-help-connect-teams.png)
 
-#### What is a Security Architect?
+## What is a Security Architect?
 
 Security Architects are responsible for designing, building, and maintaining the security functions of an organization's IT environment. Security Architects help translate an organization's business and assurance goals into a security vision, providing documentation and diagrams to guide technical security decisions. They are responsible for ensuring that the information security requirements necessary to protect the organization's core missions and business processes are adequately addressed in all aspects of enterprise architecture, including reference models, segment and solution architectures, and the resulting information systems supporting those missions and business processes.

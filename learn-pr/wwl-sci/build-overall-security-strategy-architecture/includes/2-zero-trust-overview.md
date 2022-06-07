@@ -4,7 +4,7 @@ This is the core of **Zero Trust**. Instead of believing everything behind the c
 
 ![Diagram that shows elements of visibility, automation, and orchestration in Zero Trust.](../media/zero-trust-security.png)
 
-### Guiding principles of Zero Trust
+## Guiding principles of Zero Trust
 
 **Verify explicitly** - Protect assets against attacker control by explicitly validating that all trust and security decisions use all relevant available information and telemetry. | Limit access of a potentially compromised asset with just-in-time and just-enough-access (JIT/JEA) and risk-based policies like adaptive access control. | Assume attackers can and will successfully attack anything in the system (identity, network, device, app, infrastructure, etc.) and plan accordingly. |
 
@@ -12,7 +12,7 @@ This is the core of **Zero Trust**. Instead of believing everything behind the c
 
 **Assume breach** - Different organizational requirements, existing technology implementations, and security stages all affect how a Zero Trust security model implementation is planned. Using our experience in helping customers to secure their organizations, as well as in implementing our own Zero Trust model, we've developed the following guidance to assess your readiness and to help you build a plan to get to Zero Trust.
 
-### Technology pillars of Zero Trust
+## Technology pillars of Zero Trust
 
 The Zero Trust approach can be organized around key technological pillars:
 
@@ -37,4 +37,4 @@ need an integrated capability to manage the resulting influx of data to better d
 
 The following diagram visually illustrates the zero trust principles:
 
-![zero trust principles.](../media/zero-trust-principles.png)
+![Diagram showing zero trust principles.](../media/zero-trust-principles.png)

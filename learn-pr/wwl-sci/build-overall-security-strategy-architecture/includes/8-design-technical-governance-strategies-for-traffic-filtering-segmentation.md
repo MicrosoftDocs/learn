@@ -38,5 +38,5 @@ In a hybrid IT scenario, there's usually some type of cross-premises connectivit
 
 Network security groups and user-defined routing can provide a certain measure of network security at the network and transport layers of the OSI model. But in some situations, security needs to be enabled at high levels of the stack. In such situations, it is recommended to deploy virtual network security appliances provided by Azure partners. Azure network security appliances can deliver better security than what network-level controls provide. 
 
-[![Zero Trust Approaches.](../media/zero-trust-approaches.png)](../media/zero-trust-approaches.png) 
+[![Diagram showing Zero Trust approaches.](../media/zero-trust-approaches.png)](../media/zero-trust-approaches.png) 
 
