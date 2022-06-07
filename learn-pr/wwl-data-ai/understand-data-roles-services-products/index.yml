@@ -35,8 +35,8 @@ subjects:
 units:
 - learn.wwl.understand-data-roles-services-products.introduction
 - learn.wwl.understand-data-roles-services-products.describe-data-product-categories
-- learn.wwl.understand-data-roles-services-products.describe
-- learn.wwl.understand-data-roles-services-products.knowledge-check
+- learn.wwl.understand-data-roles-services-products.azure-data-services
+- learn.wwl.understand-data-roles-services-products.data-professionals
 - learn.wwl.understand-data-roles-services-products.knowledge-check
 - learn.wwl.understand-data-roles-services-products.summary
 badge:
