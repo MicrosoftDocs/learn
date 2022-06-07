@@ -1,10 +1,10 @@
 Now that you’ve reviewed the deployment and connectivity options of Azure Database for MySQL, you want to test the process of provisioning a server and validate its availability by connecting to it. In this unit, you’ll step through a sample deployment and connect to the server by using the mysql.exe utility from the Azure Cloud Shell.
 
-### Connect to Azure Database for MySQL flexible server
+### Connect to Azure Database for MySQL Flexible Server
 
-From the Azure Cloud Shell in the Azure portal, use the following procedure to connect to and query the newly deployed Azure Database for MySQL flexible server:
+From the Azure Cloud Shell in the Azure portal, use the following procedure to connect to and query the newly deployed Azure Database for MySQL Flexible Server:
 
-1. From your computer, in the web browser window displaying the Azure portal, navigate to the page of the Azure Database for MySQL flexible server you deployed in the previous task of this exercise.
+1. From your computer, in the web browser window displaying the Azure portal, navigate to the page of the Azure Database for MySQL Flexible Server you deployed in the previous task of this exercise.
 
 2. In the **Overview** pane, note the value of **Server name**. You will need this fully qualified server name to establish a connection.
 
@@ -34,7 +34,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
 9. When prompted, enter the password that you assigned to the admin account you specified when provisioning the server in the previous task.
 
    > [!NOTE]
-   > When connecting to your flexible server by using Azure Cloud Shell, you need to specify the --ssl=true parameter (rather than --ssl-mode=REQUIRED). The reason for this is that Azure Cloud Shell uses the mysql.exe client from MariaDB distribution, and not the mysql client from Oracle's distribution (which requires the --ssl-mode parameter).
+   > When connecting to your Flexible Server by using Azure Cloud Shell, you need to specify the --ssl=true parameter (rather than --ssl-mode=REQUIRED). The reason for this is that Azure Cloud Shell uses the mysql.exe client from MariaDB distribution, and not the mysql client from Oracle's distribution (which requires the --ssl-mode parameter).
 
 10. You should be presented with the **MySQL [(none)]** prompt. This verifies that the connection was successful.
 
@@ -78,7 +78,7 @@ To delete the Azure Database for MySQL server resource you provisioned in this e
 
 1. Close the Azure Cloud Shell browser tab.
 
-2. In the Azure portal, on the page displaying the Azure Database for MySQL flexible server, in the vertical menu, select **Overview**.
+2. In the Azure portal, on the page displaying the Azure Database for MySQL Flexible Server, in the vertical menu, select **Overview**.
 
 3. On the **Overview** pane, next to the Resource group label, select the **mysql-RG** link.
 

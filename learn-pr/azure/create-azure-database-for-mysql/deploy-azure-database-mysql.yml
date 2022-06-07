@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.azure.create-azure-database-for-mysql.deploy-azure-database-mysql 
-title: Exercise - Deploy an Azure Database for MySQL flexible server
+title: Exercise - Deploy an Azure Database for MySQL Flexible Server
 sandbox: true
 metadata:
-  title: Exercise - Deploy an Azure Database for MySQL flexible server
-  description: Deploy an Azure Database for MySQL flexible server.
+  title: Exercise - Deploy an Azure Database for MySQL Flexible Server
+  description: Deploy an Azure Database for MySQL Flexible Server.
   ms.date: 05/10/2022
   author: mpolicht
   ms.author: nedelgad
+  ms.reviewer: maghan
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
