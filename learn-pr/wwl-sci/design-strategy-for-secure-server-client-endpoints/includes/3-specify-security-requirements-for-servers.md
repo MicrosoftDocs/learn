@@ -3,7 +3,7 @@ An integral part of securing your Windows Server environment is making sure the 
 
 While most Servers will have a core foundational security requirement, some servers in a unique role may need more configuration. For example, if your Server is a Domain Controller (DC), you'll have extra steps to harden the Directory Services that are peculiar to this scenario. In general you should start by understanding the current state of the server, and for that you can use the Microsoft Security Compliance Toolkit (SCT).
 
-#### Analyze security configuration
+## Analyze security configuration
 
 The Microsoft Security Compliance Toolkit (SCT) is a set of tools provided by Microsoft that you can use to download and implement security configuration baselines, typically referred to as simply security baselines, for Windows Server and other Microsoft products, including Windows 10, Microsoft 365 Apps for enterprise, and Microsoft Edge. You implement the security configuration baselines by using the toolkit to manage your Group Policy Objects (GPOs).
 
@@ -11,7 +11,7 @@ You can also use the SCT to compare your current GPOs to the recommended GPO sec
 
 In addition to security baselines for Windows Server, the SCT also includes the Policy Analyzer and Local Group Policy Object (LGPO) tools, which also help you manage your GPO settings.
 
-#### Secure Servers (Domain Members)
+## Secure Servers (Domain Members)
 
 Each computer that is member of a domain keeps a local Administrator account. This is the account that you configure when you first deploy the computer manually, or which is configured automatically when you use software deployment tools such as Microsoft Endpoint Configuration Manager. The local Administrator account allows IT staff to sign in to the computer if they can't establish connectivity to the domain.
 
@@ -31,17 +31,14 @@ Windows Server systems support multiple versions of SMB (Server Message Block). 
 
 Pre-authentication with SMB 3.1.1 isn't compatible with devices that modify SMB packets, such as some wide area network (WAN) accelerators. Therefore, you might need to replace some network equipment to use SMB 3.1.1.
 
-#### Azure Security Benchmark
+## Azure Security Benchmark
 
 Another approach to specify server requirements is to ensure all servers are compliant with **Azure Security Benchmark (ASB)** OS baseline. The ASB OS baseline is available through Microsoft Defender for Cloud in the format of security recommendations for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows) or [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), as shown below:
 
 ![Screenshot that shows remediating a security configuration.](../media/remediate-security-configuration.png) 
 
-Once you access one of those recommendations, you'll see a set of rules that are using the Azure Guest Configuration capability to run security checks to verify if the operating system is using the most secure configurations. The image below shows an example of this assessment:
-
-![Screenshot of a sample assessment for configuration remediation.](../media/example-assessment.png) 
+Once you access one of those recommendations, you'll see a set of rules that are using the Azure Guest Configuration capability to run security checks to verify if the operating system is using the most secure configurations.
 
 Once you click on each rule, you'll have more details about the security check and the affected resources, as shown in the image below:
 
-![Screenshot of a detailed description of the importance and impact of assigning the 'deny log on as a batch job' permission.](../media/deny-log-on-batch-job.png) 
-
+![Screenshot of a detailed description of the importance and impact of assigning the 'deny log on as a batch job' permission.](../media/deny-log-on-batch-job.png)

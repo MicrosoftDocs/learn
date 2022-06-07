@@ -12,7 +12,7 @@ Only two individuals within the SOC team should have rights to modify the contro
 
 Microsoft Defender for Endpoint provides detailed device information, including forensics information. You are a Security Operations Analyst working at a company that has implemented Microsoft Defender for Endpoint, and your primary job is to remediate incidents.
 
-Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
+Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This forensics information gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats. 
 
 Watch the video below for a demonstration on live response feature.
 
@@ -26,7 +26,7 @@ With live response, analysts can do all of the following tasks:
 -   Upload a PowerShell script or executable to the library and run it on a device from a tenant level.
 -   Take or undo remediation actions.
 
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. Live response is a cloud-based interactive shell; as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
+Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles. Live response is a cloud-based interactive shell. Specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
 
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker. This data collection includes the following artifacts:
 

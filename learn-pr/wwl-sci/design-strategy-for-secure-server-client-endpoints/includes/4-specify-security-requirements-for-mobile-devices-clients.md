@@ -8,7 +8,7 @@ When you specify security requirements for mobile devices, most of your focus wi
 -   **Enroll**: evaluate the types of devices you have in your organization and verify the [enrollment options](/mem/intune/enrollment/device-enrollment) available.
 -   **Configure**: to ensure that your devices are secure and compliant with company standards, you can choose from a wide range of policies during the initial [configuration](/mem/intune/configuration/device-profiles) of the device.
 -   **Protect**: protecting devices from unauthorized access is one of the most important tasks that you perform. In addition to the items that were established in the initial configuration, you have addition settings to protect your devices from unauthorized access or malicious attack.
--   **Retire**: When a device gets lost or stolen, when it needs to be replaced, or when users move to another position, it's usually time to retire or wipe the device. There are a number of ways you can do this---including resetting the device, removing it from management, and wiping the corporate data on it.
+-   **Retire**: When a device gets lost or stolen, when it needs to be replaced, or when users move to another position, it's usually time to retire or wipe the device. There are many ways you can do this---including resetting the device, removing it from management, and wiping the corporate data on it.
 
 #### App isolation and control
 
@@ -18,7 +18,7 @@ When dealing with mobile devices that will also have corporate date, you need to
 
 Intune app protection policies help protect your work files on devices that are enrolled into Intune. You can also use app protection policies on employee-owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that work files and resources are protected.
 
-In the example below, the admin has applied app protection policies to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
+In the example below, the admin has applied app protection policies to the Outlook app. This is  followed by a conditional access rule that adds the Outlook app to an approved list of apps. This list can be used when accessing corporate e-mail.
 
 ![Diagram that shows application protection policies for Outlook.](../media/app-protection-policies.png)
 
@@ -35,7 +35,7 @@ In a scenario like this, you could use the app protection to enforce the securit
 
 #### Device settings
 
-Besides the app isolation and protection on the device, you also need to ensure that the device's settings are securely configured. With the Mobility and Security feature you can manage and secure mobile devices when they're connected to your Microsoft 365 organization. Mobile devices like smartphones and tablets that are used to access work email, calendar, contacts, and documents play a big part in making sure that employees get their work done anytime, from anywhere. So, it's critical that you help protect your organization's information when people use devices. You can use Basic Mobility and Security to set device security policies and access rules, and to wipe mobile devices if they're lost or stolen.
+Besides the app isolation and protection on the device, you also need to ensure that the device's settings are securely configured. With the Mobility and Security feature, you can manage and secure mobile devices when they're connected to your Microsoft 365 organization. Mobile devices like smartphones and tablets that are used to access work email, calendar, contacts, and documents play a big part in making sure that employees get their work done anytime, from anywhere. So, it's critical that you help protect your organization's information when people use devices. You can use Basic Mobility and Security to set device security policies and access rules. You can also use it to wipe mobile devices if they're lost or stolen.
 
 Basic Mobility and Security can help you secure and manage mobile devices like iPhones, iPads, Androids, and Windows Phones used by licensed Microsoft 365 users in your organization. You can create mobile device management policies with settings that can help control access to your organization's Microsoft 365 email and documents for supported mobile devices and apps. If a device is lost or stolen, you can remotely wipe the device to remove sensitive organizational information.
 

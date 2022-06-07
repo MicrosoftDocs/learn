@@ -7,17 +7,17 @@ The Azure point-to-site solution is cloud-based and can be provisioned quickly t
 
 At a high level, the following steps are needed to enable users to connect to Azure resources securely:
 
-1.  Create a virtual network gateway (if one does not exist).
-1.  Configure point-to-site VPN on the gateway
-1.  Configure a site-to-site tunnel on the Azure virtual network gateway with BGP enabled.
-1.  Configure the on-premises device to connect to Azure virtual network gateway.
-1.  Download the point-to-site profile from the Azure portal and distribute to clients
+1. Create a virtual network gateway (if one does not exist).
+1. Configure point-to-site VPN on the gateway
+1. Configure a site-to-site tunnel on the Azure virtual network gateway with BGP enabled.
+1. Configure the on-premises device to connect to Azure virtual network gateway.
+1. Download the point-to-site profile from the Azure portal and distribute to clients
 
 If your design requirements states that you need to connect two sites, for example headquarter and branch office, you could use Site-to-Site VPN. A Site-to-Site (S2S) VPN gateway connection is a connection over IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. S2S connections can be used for cross-premises and hybrid configurations. A S2S connection requires a VPN device located on-premises that has a public IP address assigned to it.
 
 In some scenarios, the remote worker may just need access to resources deployed in Azure, for this scenario the remote worker could use Azure Bastion solution, instead of VPN connection to get secure shell access using Remote Desktop Protocol (RDP) or Secure Shell Protocol (SSH) without requiring public IPs on the VMs being accessed, as shown in the example below:
 
-![Diagram that shows an architecture for using Remote Desktop Protocol (RDP) or Secure Shell Protocol (SSH) for remote access.](../media/remote-desktop-protocol.png) 
+![Diagram that shows an architecture for using Remote Desktop Protocol (R D P) or Secure Shell Protocol (S S H) for remote access.](../media/remote-desktop-protocol.png) 
 
 Below you have some benefits of using this solution:
 
