@@ -50,7 +50,7 @@ quiz:
     - content: "Reduce risk to an acceptable level and enable partners."
       isCorrect: false
       explanation: "Incorrect. The security strategy can enable partners, but the answer is incomplete since it doesn't cover employees first."
-  - content: "Which one of the options below isn't a key security strategy principle:"
+  - content: "Which one of the options below isn't a key security strategy principle?"
     choices:
     - content: "Productivity and security"
       isCorrect: false
@@ -72,7 +72,7 @@ quiz:
     - content: "Microsoft Sentinel"
       isCorrect: false
       explanation: "Incorrect. Microsoft Sentinel is a SIEM solution."
-  - content: "Security management strategy is composed by some imperative principles. Given the following definition, which principle does it relate to?\"Elevate security through built-in intelligence and recommendations\""
+  - content: "Security management strategy is composed by some imperative principles. Given the following definition, which principle does it relate to? \"Elevate security through built-in intelligence and recommendations\"."
     choices:
     - content: "Visibility"
       isCorrect: false

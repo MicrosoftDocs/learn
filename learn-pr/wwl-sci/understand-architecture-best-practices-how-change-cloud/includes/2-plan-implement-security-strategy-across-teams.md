@@ -95,7 +95,7 @@ the NIST Cybersecurity framework of identify, protect, detect, respond,
 and recover functions. The diagram below shows how security roles map
 to business outcome enablement:
 
-![Security Roles and Responsibilities](../media/security-roles-responsibilities-1.png) 
+![Alt text. Diagram that shows security roles and responsibilities.](../media/security-roles-responsibilities-1.png) 
 
 Security Leadership Roles and Security Architect Roles provide vision,
 guidance, and coordination across the organization and technical estate.
@@ -151,7 +151,7 @@ below shows that security is integrated as part of the cloud adoption
 process and from the beginning (defining the strategy), security is
 taking into consideration.
 
-![Microsoft Cloud Adoption Framework](../media/microsoft-cloud-adoption-framework.png) 
+![Alt text. Diagram that shows Microsoft Cloud Adoption Framework.](../media/microsoft-cloud-adoption-framework.png) 
 
 Adhering to these steps will help you integrate security at critical
 points in the process. The goal is to avoid obstacles in cloud adoption
@@ -210,7 +210,7 @@ documentation format can vary, it always includes:
     "what would you restore first if all business systems were down?"
     you can start building relationships while establishing quick wins.
 
-![Security is a Team Sport](../media/security-team-sport.png) 
+![Alt text. Diagram that shows security as a team sport.](../media/security-team-sport.png) 
 
 #### Deliverables 
 The strategy step should result in a document that can easily be communicated to many stakeholders within the organization. The stakeholders can potentially include executives on the organization's leadership team.
