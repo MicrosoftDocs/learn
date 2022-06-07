@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql.configure-azure-active-directory-authentication
+title: Configure Azure Active Directory authentication
+metadata:
+  title: Configure Azure Active Directory authentication
+  description: "Configure Azure Active Directory authentication"
+  ms.date: 06/07/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-configure-azure-active-directory-authentication.md)]
