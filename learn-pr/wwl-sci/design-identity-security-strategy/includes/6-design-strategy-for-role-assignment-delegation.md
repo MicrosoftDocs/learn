@@ -123,8 +123,6 @@ To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-:::image type="content" source="../media/delegate-non-admin.png" alt-text="Screenshot of delegate from IT administrator to managers." lightbox="../media/delegate-non-admin.png":::
-
 Hana is the IT administrator. She has contacts in each department who are responsible for
 their department's resources and business critical content: Mamta in Marketing, Mark in Finance, and Joe in Legal.
 
