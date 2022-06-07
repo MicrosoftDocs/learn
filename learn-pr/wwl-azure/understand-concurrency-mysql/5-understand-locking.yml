@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-mysql.understand-locking
+title: Understand locking
+metadata:
+  title: Understand locking
+  description: "Understand locking"
+  ms.date: 06/07/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-understand-locking.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-mysql.describe-thread-concurrency
+title: Describe thread concurrency
+metadata:
+  title: Describe thread concurrency
+  description: "Describe thread concurrency"
+  ms.date: 06/07/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-thread-concurrency.md)]
