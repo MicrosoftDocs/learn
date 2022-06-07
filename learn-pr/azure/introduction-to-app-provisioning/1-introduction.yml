@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-app-provisioning.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: introduction
+  description: "Learn how Azure Application Provisioning works and how it can be used to automatically provision users from other applications."
+  ms.date: 6/6/2022
+  author: kenwith
+  ms.author: kenwith
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-introduction.md)]
