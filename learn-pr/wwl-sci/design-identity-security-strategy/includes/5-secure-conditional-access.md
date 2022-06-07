@@ -1,12 +1,4 @@
-[Conditional access](/azure/active-directory/conditional-access/overview) is
-a key part of Zero Trust because it helps to ensure the right user has
-the right access to the right resources. Enabling Conditional Access
-allows Azure Active Directory to make access decisions based on computed
-risk and pre-configured policies. Independent software vendors can take
-advantage of conditional access by surfacing the option to apply
-conditional access policies when relevant.
-
-![Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity.](../media/enforce-access-control-requirements.png) 
+[Conditional access](/azure/active-directory/conditional-access/overview) is a key part of Zero Trust because it helps to ensure the right user has the right access to the right resources. Enabling Conditional Access allows Azure Active Directory to make access decisions based on computed risk and pre-configured policies. Independent software vendors can take advantage of conditional access by surfacing the option to apply conditional access policies when relevant.
 
 ### Requirements
 
@@ -56,7 +48,7 @@ You first need to choose an architecture. We recommend that considering
 either a Targeted or a Zero Trust Conditional Access architecture. This
 diagram shows the corresponding settings:
 
-![Diagram showing the settings for Targeted and Zero Trust architectures.](../media/targetedand-zero-trust-architecture.png) 
+![Diagram showing the settings for Targeted and Zero Trust architectures.](../media/targeted-and-zero-trust-architecture.png) 
 
 The **Zero Trust Conditional Access architecture** is the one that best
 fits the principles of Zero Trust. If the **All cloud apps** option in a
@@ -106,56 +98,42 @@ strategy.
 
 ### Suggested Conditional Access personas from Microsoft
 
-![Diagram showing recommended Conditional Access personas.](../media/suggested-conditional-access-personas.png) 
-
 Microsoft also recommends defining a separate persona for identities that aren't part of any other persona group. This is called the Global persona. Global is meant to enforce policies for identities that aren't in a persona group and policies that should be enforced for all personas.
 
-The following list describe some recommended personas.
+The following list describes some recommended personas.
 
-* Global - Global is a persona/placeholder for policies that are general. It's used to define policies that apply to all personas or that don't apply to one specific persona. Use it for policies that aren't covered by other personas. You need this persona to protect all relevant scenarios.
-* Admins - In this context, an admin is any non-guest identity, cloud or synced, that has any Azure AD or other Microsoft 365 admin role (for example, in Microsoft Defender for Cloud Apps, Exchange, Defender for Endpoint, or Compliance Manager). Because guests who have these roles are covered in a different persona, guests are excluded from this persona.
-* Developers - The Developers persona contains users who have unique needs. They're based on Active Directory accounts synced to Azure AD, but they need special access to services like Azure DevOps, CI/CD pipelines, device code flow, and GitHub. The Developers persona can include users considered internal and others considered external, but a person should be in only one of the personas.
-* Internals - Internals contains all users who have an Active Directory account synced to Azure AD, are employees of the company and work in a standard end-user role. We recommend that you add internal users who are developers to the Developers persona.
-* Externals - This persona holds all external consultants who have an Active Directory account synced to Azure AD. We recommend that you add external users who are developers to the Developers persona.
-* Guests - Guests hold all users who have an Azure AD guest account invited to the customer tenant.
-* GuestAdmins - The GuestAdmins persona holds all users who have an Azure AD guest account assigned any of the previously mentioned admin roles.
-* Microsoft365ServiceAccounts - This persona contains cloud (Azure AD) user-based service accounts used to access Microsoft 365 services when no other solution meets the need, like using a managed service identity.
-* AzureServiceAccounts - This persona contains cloud (Azure AD) user-based service accounts that are used to access Azure (IaaS/PaaS) services when no other solution meets the need, like using a managed service identity.
-* CorpServiceAccounts - This persona contains user-based service accounts that have all of these characteristics:
+* `Global` - Global is a persona/placeholder for policies that are general. It's used to define policies that apply to all personas or that don't apply to one specific persona. Use it for policies that aren't covered by other personas. You need this persona to protect all relevant scenarios.
+* `Admins` - In this context, an admin is any non-guest identity, cloud or synced, that has any Azure AD or other Microsoft 365 admin role (for example, in Microsoft Defender for Cloud Apps, Exchange, Defender for Endpoint, or Compliance Manager). Because guests who have these roles are covered in a different persona, guests are excluded from this persona.
+* `Developers` - The Developers persona contains users who have unique needs. They're based on Active Directory accounts synced to Azure AD, but they need special access to services like Azure DevOps, CI/CD pipelines, device code flow, and GitHub. The Developers persona can include users considered internal and others considered external, but a person should be in only one of the personas.
+* `Internals` - Internals contains all users who have an Active Directory account synced to Azure AD, are employees of the company and work in a standard end-user role. We recommend that you add internal users who are developers to the Developers persona.
+* `Externals` - This persona holds all external consultants who have an Active Directory account synced to Azure AD. We recommend that you add external users who are developers to the Developers persona.
+* `Guests` - Guests hold all users who have an Azure AD guest account invited to the customer tenant.
+* `GuestAdmins` - The GuestAdmins persona holds all users who have an Azure AD guest account assigned any of the previously mentioned admin roles.
+* `Microsoft365ServiceAccounts` - This persona contains cloud (Azure AD) user-based service accounts used to access Microsoft 365 services when no other solution meets the need, like using a managed service identity.
+* `AzureServiceAccounts` - This persona contains cloud (Azure AD) user-based service accounts that are used to access Azure (IaaS/PaaS) services when no other solution meets the need, like using a managed service identity.
+* `CorpServiceAccounts` - This persona contains user-based service accounts that have all of these characteristics:
     * Originate from on-premises Active Directory. Originate from on-premises Active Directory
     * They are used from on-premises or an IaaS-based virtual machine in another (cloud) datacenter, like Azure.
-    * Are synced to an Azure AD instance that accesses any Azure or Microsoft 365 service. Note: This scenario should be avoided.
-* WorkloadIdentities - This persona contains machine identities, like Azure AD service principals and managed identities. Conditional Access now supports protecting access to resources from these
+    * Are synced to an Azure AD instance that accesses any Azure or Microsoft 365 service. Note that this scenario should be avoided.
+* `WorkloadIdentities` - This persona contains machine identities, like Azure AD service principals and managed identities. Conditional Access now supports protecting access to resources from these
 
 ### Access template cards
 
 We recommend that you use access template cards to define the
 characteristics of each persona. Here's an example:
 
-![Diagram showing an example of an access template card.](../media/employee.png) 
+:::image type="content" source="../media/employee.png" alt-text="Diagram showing an example of an access template card." lightbox="../media/employee.png":::
 
-The template card for each persona provides input for creating the
-specific Conditional Access policies for each persona.
+The template card for each persona provides input for creating the specific Conditional Access policies for each persona.
 
 ### Conditional Access framework and policies
 
 Important factors to remember in the creation of conditional access
 policies include:
 
--   Naming conventions - A properly defined naming convention helps you
-    and your colleagues understand the purpose of a policy, which
-    enables easier policy management and troubleshooting. Your naming
-    convention should fit the framework you use to structure your
-    policies.
-
--   Numbering Scheme -- use a standard and predictable numbering scheme
-
--   Policy types -- recommended types include BaseProtection,
-    IdentityProtection, DataProtection, AppProtection,
-    AttackSurfaceReduction and Compliance
-
--   Standard policy components -- Apps, platform types, grant control
-    types, named locations should all be defined in advanced to ensure
-    consistecy across all policies
+-   Naming conventions - A properly defined naming convention helps you and your colleagues understand the purpose of a policy, which enables easier policy management and troubleshooting. Your naming convention should fit the framework you use to structure your policies.
+-   Numbering Scheme - use a standard and predictable numbering scheme
+-   Policy types - recommended types include `BaseProtection`, `IdentityProtection`, `DataProtection`, `AppProtection`, `AttackSurfaceReduction` and `Compliance`
+-   Standard policy components - Apps, platform types, grant control types, named locations should all be defined in advanced to ensure consistency across all policies
 
 For more details on the recommended framework for conditional access policies, see [Conditional Access framework and policies](/azure/architecture/guide/security/conditional-access-framework).

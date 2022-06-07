@@ -1,5 +1,3 @@
-## Design an Identity Security Strategy
-
 In this module, you'll learn how to: 
 
 -   Recommend an identity store for security
@@ -16,12 +14,12 @@ Cybersecurity Architecture. The module concepts are covered in:
 -  Design a Zero Trust Strategy and Architecture
 -  Design an Identity Security Strategy
 
-### Prerequisites
+## Prerequisites
 
 -   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
 -   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
 
-### Identity Security Strategy Overview
+## Identity Security Strategy Overview
 
 The term Identity Security Strategy defines the general process of
 authenticating and authorizing security principals for an organization.
@@ -48,4 +46,3 @@ there are:
 -   Regulatory requirements that must be enforced.
 -   Standards that must be followed for all cloud resources.
 -   Defined secure authentication and authorization strategy.
-

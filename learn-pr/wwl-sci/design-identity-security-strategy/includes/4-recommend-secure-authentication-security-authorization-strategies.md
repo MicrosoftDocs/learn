@@ -1,17 +1,15 @@
 Choosing the correct authentication method is the first concern for organizations wanting to move their apps to the cloud. Don't take this decision lightly for the following reasons:
 
-1. It's the first decision for an organization that wants to move to the cloud.
-
-2. The authentication method is a critical component of an organization's presence in the cloud. It controls access to all cloud data and resources.
-
-3. It's the foundation of all the other advanced security and user experience features in Azure AD.
+* It's the first decision for an organization that wants to move to the cloud.
+* The authentication method is a critical component of an organization's presence in the cloud. It controls access to all cloud data and resources.
+* It's the foundation of all the other advanced security and user experience features in Azure AD.
 
 Identity is the new control plane of IT security, so authentication is
 an organization's access to the new cloud world. Organizations need an
 identity control plane that strengthens their security and keeps their
 cloud apps safe from intruders.
 
-### Secure Authentication methods
+## Secure Authentication methods
 
 When the Azure AD hybrid identity solution is your new control plane,
 authentication is the foundation of cloud access. Choosing the correct
@@ -27,24 +25,22 @@ factors are different for every organization and might change over time.
 Azure AD supports the following authentication methods for hybrid
 identity solutions.
 
-### Cloud authentication
+## Cloud authentication
 
 When choosing this authentication method, Azure AD handles users'
 sign-in process. Cloud authentication includes single sign-on (SSO), so that users can
 sign into cloud apps without re-entering their credentials. With cloud
 authentication, there are two options:
 
-**Azure AD password hash synchronization**. The simplest way to enable
-authentication for on-premises directory objects in Azure AD. Users can
-use the same username and password that they use on-premises without
-deploying any additional infrastructure. Some premium features of Azure
-AD, like Identity Protection and [Azure AD Domain
-Services](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance),
-require password hash synchronization, no matter which authentication
+### Azure AD password hash synchronization
+
+The simplest way to enable authentication for on-premises directory objects in Azure AD. Users can
+use the same username and password that they use on-premises without deploying any additional infrastructure. Some premium features of Azure AD, like Identity Protection and [Azure AD Domain Services](/azure/active-directory-domain-services/tutorial-create-instance), require password hash synchronization, no matter which authentication
 method is chosen.
 
-**Azure AD Pass-through Authentication**. Provides a simple password
-validation for Azure AD authentication services by using a software
+### Azure AD Pass-through Authentication
+
+Azure AD Pass-through Authentication provides a simple password validation for Azure AD authentication services by using a software
 agent that runs on one or more on-premises servers. The servers validate
 the users directly with your on-premises Active Directory, ensuring that
 the password validation doesn't happen in the cloud.
@@ -55,7 +51,7 @@ authentication method. For more information on the actual pass-through
 authentication process, see [User sign-in with Azure AD pass-through
 authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta).
 
-### Federated authentication
+## Federated authentication
 
 Azure AD hands off the authentication process to a separate trusted
 authentication system when you choose this authentication method. An
@@ -64,15 +60,14 @@ validate the user's password.
 
 The authentication system can provide additional advanced authentication
 requirements. Examples are smartcard-based authentication or third-party
-multifactor authentication. For more information, see [Deploying Active Directory Federation
-Services](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
+multifactor authentication. For more information, see [Deploying Active Directory Federation Services](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
 The following section helps determine which authentication method is
 right using a decision tree. It helps determine whether to deploy a
 cloud or federated authentication for an Azure AD hybrid identity
 solution.
 
-### Architecture diagrams
+## Architecture diagrams
 
 The following diagrams outline the high-level architecture components
 required for each authentication method that can be used with an Azure
@@ -80,18 +75,18 @@ AD hybrid identity solution.
 
 The simplicity of a password hash synchronization solution:
 
-![Diagram showing Azure AD hybrid identity with Password hash synchronization.](../media/architecture-diagram.png) 
+:::image type="content" source="../media/architecture-diagram.png" alt-text="Diagram showing Azure A D hybrid identity with Password hash synchronization." lightbox="../media/architecture-diagram.png":::
 
 Agent requirements of pass-through authentication, using two agents for redundancy:
 
-![Diagram showing Azure AD hybrid identity with Pass-through Authentication.](../media/architecture-diagram-2.png)
+:::image type="content" source="../media/architecture-diagram-2.png" alt-text="Diagram showing Azure A D hybrid identity with Pass-through Authentication." lightbox="../media/architecture-diagram-2.png":::
 
 Components required for federation in your perimeter and internal
 network of your organization:
 
-![Diagram showing Azure AD hybrid identity with federated authentication.](../media/architecture-diagram-3.png) 
+:::image type="content" source="../media/architecture-diagram-3.png" alt-text="Diagram showing Azure A D hybrid identity with federated authentication." lightbox="../media/architecture-diagram-3.png":::
 
-### Comparing Authentication Methods
+## Comparing Authentication Methods
 
 The following table offers a detailed comparison of the various authentication methods available and their respective features.
 
@@ -131,7 +126,7 @@ The following table offers a detailed comparison of the various authentication m
 |  | Leaked credentials reports, with Azure AD Premium P2 |  | AD FS extranet lockout |
 |  |  |  | Integration with third-party identity systems |
 
-### Secure Authorization Methods
+## Secure Authorization Methods
 
 Authorization verifies that the identity attempting to connect has the
 necessary permissions to access a service, feature, function, object, or
@@ -143,10 +138,9 @@ not have the authorization to perform that action.
 
 Administrators benefit from understanding the following authorization
 methods to enforce Zero Trust. To learn more about these authorization
-methods, see [Get started with permissions, access, and security
-groups](https://docs.microsoft.com/azure/devops/organizations/security/about-permissions?view=azure-devops&preserve-view=true).
+methods, see [Get started with permissions, access, and security groups](/azure/devops/organizations/security/about-permissions?view=azure-devops&preserve-view=true).
 
-### Authorization Methods
+## Authorization Methods
 
 -   Security group membership
 -   Role-based access control

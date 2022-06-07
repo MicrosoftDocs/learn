@@ -1,39 +1,23 @@
-### **Design a Strategy for Role Assignment and Delegation**
+Azure Active Directory (Azure AD) lets you target Azure AD groups for role assignments. Assigning roles to groups can simplify the management of role assignments in Azure AD with minimal effort from your Global Administrators and Privileged Role Administrators.
 
-Azure Active Directory (Azure AD) lets you target Azure AD groups for
-role assignments. Assigning roles to groups can simplify the management
-of role assignments in Azure AD with minimal effort from your Global
-Administrators and Privileged Role Administrators.
+## Why assign roles to groups?
 
-### Why assign roles to groups?
+Consider the example where the Contoso company has hired people across geographies to manage and reset passwords for employees in its Azure AD organization. Instead of asking a Privileged Role Administrator or Global Administrator to assign the Helpdesk Administrator role to each
+person individually, they can create a Contoso_Helpdesk_Administrators group and assign the role to the group. When people join the group, they are assigned the role indirectly. Your existing governance workflow can then take care of the approval process and auditing of the group's
+membership to ensure that only legitimate users are members of the group and are thus assigned the Helpdesk Administrator role.
 
-Consider the example where the Contoso company has hired people across
-geographies to manage and reset passwords for employees in its Azure AD
-organization. Instead of asking a Privileged Role Administrator or
-Global Administrator to assign the Helpdesk Administrator role to each
-person individually, they can create a Contoso_Helpdesk_Administrators
-group and assign the role to the group. When people join the group, they
-are assigned the role indirectly. Your existing governance workflow can
-then take care of the approval process and auditing of the group's
-membership to ensure that only legitimate users are members of the group
-and are thus assigned the Helpdesk Administrator role.
+## Use PIM to make a group eligible for a role assignment
 
-### Use PIM to make a group eligible for a role assignment
+If you do not want members of the group to have standing access to a role, you can use [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) to make a group eligible for a role assignment. Each member of the group is then eligible to activate the role assignment for a fixed time duration.
 
-If you do not want members of the group to have standing access to a
-role, you can use [Azure AD Privileged Identity Management
-(PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) to
-make a group eligible for a role assignment. Each member of the group is
-then eligible to activate the role assignment for a fixed time duration.
-
-### Best practices for Azure AD roles
+## Best practices for Azure AD roles
 
 This section describes some of the best practices for using Azure Active
 Directory role-based access control (Azure AD RBAC). These best
 practices are derived from our experience with Azure AD RBAC and the
 experiences of customers like yourself.
 
-#### 1. Manage to least privilege
+### Manage to least privilege
 
 When planning your access control strategy, it's a best practice to
 manage to least privilege. Least privilege means you grant your
@@ -49,40 +33,30 @@ There are Azure AD roles to manage directory objects like users, groups,
 and applications, and also to manage Microsoft 365 services like
 Exchange, SharePoint, and Intune.
 
-#### 2. Use Privileged Identity Management to grant just-in-time access**
+### Use Privileged Identity Management to grant just-in-time access
 
 One of the principles of least privilege is that access should be
-granted only for a specific period of time. [Azure AD Privileged
-Identity Management
-(PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) lets
+granted only for a specific period of time. [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) lets
 you grant just-in-time access to your administrators. Microsoft
 recommends that you enable PIM in Azure AD. Using PIM, a user can be
 made an eligible member of an Azure AD role where they can then activate
 the role for a limited time when needed. Privileged access is
 automatically removed when the timeframe expires. You can
-also [configure PIM
-settings](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) to
+also [configure PIM settings](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) to
 require approval or receive notification emails when someone activates
 their role assignment. Notifications provide an alert when new users are
 added to highly privileged roles.
 
-#### 3. Turn on multi-factor authentication for all your administrator accounts
+### Turn on multifactor authentication (MFA) for all your administrator accounts
 
-[Based on our
-studies](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984),
-your account is 99.9% less likely to be compromised if you use
-multi-factor authentication (MFA).
+[Based on our studies](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984), your account is 99.9% less likely to be compromised if you use multifactor authentication (MFA).
 
 You can enable MFA on Azure AD roles using two methods:
 
--   [Role
-    settings](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) in
-    Privileged Identity Management
+-   [Role settings](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings) in Privileged Identity Management
+-   [Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 
--   [Conditional
-    Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-
-#### 4. Configure recurring access reviews to revoke unneeded permissions over time
+### Configure recurring access reviews to revoke unneeded permissions over time
 
 Access reviews enable organizations to review administrators' access
 regularly to make sure only the right people have continued access.
@@ -90,51 +64,41 @@ Regular auditing of your administrators is crucial because of the
 following reasons:
 
 -   A malicious actor can compromise an account.
+-   People move teams within a company. If there's no auditing, they can amass unnecessary access over time.
 
--   People move teams within a company. If there's no auditing, they
-    can amass unnecessary access over time.
-
-For information about access reviews for roles, see [Create an access
-review of Azure AD roles in
-PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review).
-For information about access reviews of groups that are assigned roles,
-see [Create an access review of groups and applications in Azure AD
-access
+For information about access reviews for roles, see [Create an access review of Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review). For information about access reviews of groups that are assigned roles, see [Create an access review of groups and applications in Azure AD access
 reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
 
-#### 5. Limit the number of Global Administrators to less than 5
+### Limit the number of Global Administrators to less than 5
 
 As a best practice, Microsoft recommends that you assign the Global
 Administrator role to **fewer than five** people in your organization.
 Global Administrators hold keys to the kingdom, and it is in your best
 interest to keep the attack surface low. As stated previously, all of
-these accounts should be protected with multi-factor authentication.
+these accounts should be protected with multifactor authentication.
 
 Microsoft recommends that you keep two break glass accounts that are
 permanently assigned to the Global Administrator role. Make sure that
-these accounts don't require the same multi-factor authentication
+these accounts don't require the same multifactor authentication
 mechanism as your normal administrative accounts to sign in, as
 described in [Manage emergency access accounts in Azure
 AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
 
-#### 6. Use groups for Azure AD role assignments and delegate the role assignment
+### Use groups for Azure AD role assignments and delegate the role assignment
 
 If you have an external governance system that takes advantage of
 groups, then you should consider assigning roles to Azure AD groups
 instead of individual users. You can also manage role-assignable groups
 in PIM to ensure that there are no standing owners or members in these
-privileged groups. For more information, see [Management capabilities
-for privileged access Azure AD
-groups](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/groups-features).
+privileged groups. For more information, see [Management capabilities for privileged access Azure AD groups](/azure/active-directory/privileged-identity-management/groups-features).
 
 You can assign an owner to role-assignable groups. That owner decides
 who is added to or removed from the group, so indirectly, decides who
 gets the role assignment. A Global Administrator or Privileged Role
 Administrator can delegate role management on a per-role basis by using
-groups. For more information, see [Use Azure AD groups to manage role
-assignments](https://docs.microsoft.com/azure/active-directory/roles/groups-concept).
+groups. For more information, see [Use Azure AD groups to manage role assignments](/azure/active-directory/roles/groups-concept).
 
-#### 7. Activate multiple roles at once using privileged access groups
+### Activate multiple roles at once using privileged access groups
 
 It may be the case that an individual has five or six eligible
 assignments to Azure AD roles through PIM. They will have to activate
@@ -142,32 +106,27 @@ each role individually, which can reduce productivity. Worse still, they
 can also have tens or hundreds of Azure resources assigned to them,
 which aggravates the problem.
 
-In this case, you should use [privileged access
-groups](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/groups-features).
-Create a privileged access group and grant it permanent access to
-multiple roles (Azure AD and/or Azure). Make that user an eligible
-member or owner of this group. With just one activation, they will have
-access to all the linked resources.
+In this case, you should use [privileged access groups](/azure/active-directory/privileged-identity-management/groups-features). Create a privileged access group and grant it permanent access to multiple roles (Azure AD and/or Azure). Make that user an eligible
+member or owner of this group. With just one activation, they will have access to all the linked resources.
 
 ![Screenshot of Privileged Access Group.](../media/privileged-access-group.png) 
 
-#### 8. Use cloud native accounts for Azure AD roles
+### Use cloud native accounts for Azure AD roles
 
 Avoid using on-premises synced accounts for Azure AD role assignments.
 If your on-premises account is compromised, it can compromise your Azure
 AD resources as well.
 
-### Why enforce delegation?
+## Why enforce delegation?
 
 To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-![Screenshot of delegate from IT administrator to managers.](../media/delegate-non-admin.png) 
+:::image type="content" source="../media/delegate-non-admin.png" alt-text="Screenshot of delegate from IT administrator to managers." lightbox="../media/delegate-non-admin.png":::
 
 Hana is the IT administrator. She has contacts in each department who are responsible for
-their department's resources and business critical content: Mamta
-in Marketing, Mark in Finance, and Joe in Legal.
+their department's resources and business critical content: Mamta in Marketing, Mark in Finance, and Joe in Legal.
 
 With entitlement management, access governance can be delegated to these
 non-administrators because they're the ones who know which users need

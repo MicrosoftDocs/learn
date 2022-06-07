@@ -68,7 +68,7 @@ attackers are like water as they have numerous options they can exploit
 flexible in which ones they use, and they generally take the path of
 least resistance to achieving their objectives.
 
-![Diagram of attackers are like water and can appear insignificant at first but flood over time.](../media/attackersare-like-water.png) 
+![Diagram of attackers are like water and can appear insignificant at first but flood over time.](../media/attackers-are-like-water.png) 
 
 ### Building the recommended strategy
 
@@ -82,10 +82,8 @@ business sensitive systems.
 
 Securing Privileged Access has two simple goals:
 
-1.  Strictly limit the ability to perform privileged actions to a few
-    authorized pathways
-
-2.  Protect and closely monitor those pathways
+* Strictly limit the ability to perform privileged actions to a few authorized pathways
+* Protect and closely monitor those pathways
 
 There are two types of pathways to accessing the systems, **user
 access** (to use the capability) and **privileged access** (to manage
@@ -107,13 +105,9 @@ the capability or access a sensitive capability):
     the damage an adversary can inflict with privileged access is much
     higher.
 
-![Diagram showing two pathways to systems user and privileged access.](../media/business-critical-assets.png) 
-
 These components collectively comprise the privileged access attack
 surface that an adversary may target to attempt to gain elevated access
-to your enterprise:
-
-![Diagram showing attack surface unprotected.](../media/business-critical-assets-2.png) 
+to your enterprise.
 
 #### Lay foundations for successful privileged identity strategy
 
@@ -137,7 +131,7 @@ The privileged identity strategy is enabled by the Rapid modernization plan (RAM
 2. **Improve credential management experience**
 
     1. Implement and document self-service password reset and combined security information registration by enforcing self-service password reset (SSPR) in your organization.
-    1. Protect admin accounts by enforcing MFA / Passwordless for Azure AD privileged users. Require multi-factor authentication at sign-in for all individual users who are permanently assigned to one or more of the Azure AD admin roles.
+    1. Protect admin accounts by enforcing MFA / Passwordless for Azure AD privileged users. Require Azure Active Directory Multi-Factor Authentication at sign-in for all individual users who are permanently assigned to one or more of the Azure AD admin roles.
     1. Block legacy authentication protocols for privileged user accounts. Leaving legacy authentication protocols enabled can create an entry point for attackers.
     1. Ensure the application consent process disables the end user's consent to Azure AD applications. Enforcing the process establishes a centralized consent process to maintain centralized visibility and control of the applications that have access to data.
     1. Clean up accounts and sign-in risks by utilizing Azure AD Identity Protection and remediate any discovered risks. Ensure to create a process that monitors and manages user and sign-in risk.
@@ -146,7 +140,7 @@ The privileged identity strategy is enabled by the Rapid modernization plan (RAM
 
 The final step of building the recommended strategy for privileged activities is to execute strategic initiatives, such as:
 
-1. **End-to-end Session Security** establishes explicit Zero Trust validation for privileged sessions, user sessions, and authorized elevation paths. **Success Criteria** Each session will validate that users' accounts and devices are trusted at a sufficient level before allowing access.
-1. **Protect & Monitor Identity Systems**, including Directories, Identity Management, Admin Accounts, Consent grants, etc. **Success Criteria:** Each of these systems will be protected at a level appropriate for the potential business impact of accounts hosted in it.
-1. **Mitigate Lateral Traversal** to protect against lateral traversal with local account passwords, service account passwords, or other secrets. **Success Criteria**: Compromising a single device will not immediately lead to controlling many or all other devices in the environment.
-1. **Rapid Threat Response** to limit adversary access and time in the environment. **Success Criteria** Incident response processes impede adversaries from reliably conducting a multi-stage attack in the environment that would result in loss of privileged access.
+* **End-to-end Session Security** establishes explicit Zero Trust validation for privileged sessions, user sessions, and authorized elevation paths. **Success Criteria** Each session will validate that users' accounts and devices are trusted at a sufficient level before allowing access.
+* **Protect & Monitor Identity Systems**, including Directories, Identity Management, Admin Accounts, Consent grants, etc. **Success Criteria:** Each of these systems will be protected at a level appropriate for the potential business impact of accounts hosted in it.
+* **Mitigate Lateral Traversal** to protect against lateral traversal with local account passwords, service account passwords, or other secrets. **Success Criteria**: Compromising a single device will not immediately lead to controlling many or all other devices in the environment.
+* **Rapid Threat Response** to limit adversary access and time in the environment. **Success Criteria** Incident response processes impede adversaries from reliably conducting a multi-stage attack in the environment that would result in loss of privileged access.

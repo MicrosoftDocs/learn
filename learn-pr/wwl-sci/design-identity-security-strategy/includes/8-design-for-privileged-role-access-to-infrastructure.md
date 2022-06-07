@@ -97,8 +97,7 @@ roadmap includes the following actions:
 
 -   Turn on password hash synchronization
 
--   Require multi-factor authentication for users in privileged roles
-    and exposed users
+-   Require multifactor authentication for users in privileged roles and exposed users
 
 -   Configure Identity Protection
 
@@ -152,4 +151,4 @@ includes the following components:
 
 ### Additional information on roadmap framework
 
-For more information on entitlement, see Secure Access Practices for Administrators in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-planning).
+For more information on entitlement, see [Secure Access Practices for Administrators in Azure AD](/azure/active-directory/roles/security-planning).

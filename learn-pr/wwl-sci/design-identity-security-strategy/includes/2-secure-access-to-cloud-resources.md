@@ -18,7 +18,7 @@ Before an identity attempts to access a resource, organizations must:
 Once the identity has been verified, we can control that identity's access to resources based on organization policies, ongoing risk
 analysis, and other tools.
 
-### Identity Zero Trust deployment objectives
+## Identity Zero Trust deployment objectives
 
 Before most organizations start the Zero Trust journey, their approach to identity is problematic in that the on-premises identity provider is
 in use, no SSO is present between cloud and on-premises apps, and [visibility](https://aka.ms/ZTCrossPillars) into identity risk is very limited.
@@ -36,47 +36,47 @@ After these are completed, focus on these additional deployment objectives:
 * [V. User, device, location, and behavior are analyzed in real time to determine risk and deliver ongoing protection](/security/zero-trust/deploy/identity#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection).
 * [VI. Integrate threat signals from other security solutions to improve detection, protection, and response](/security/zero-trust/deploy/identity#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response).
 
-### Identity Zero Trust deployment guide
+## Identity Zero Trust deployment guide
 
 This guide walks through the steps required to manage identities following the principles of a Zero Trust security framework.
 
-#### I. Cloud identity federates with on-premises identity systems
+### I. Cloud identity federates with on-premises identity systems
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk---verified explicitly at the point of access. We will show how to implement a Zero Trust identity strategy with Azure AD.
 
-![Diagram showing the steps within phase 1 of the initial deployment objectives.](../media/zero-trust-azure-active-directory.png) 
+:::image type="content" source="../media/zero-trust-azure-active-directory.png" alt-text="Diagram showing the steps within phase 1 of the initial deployment objectives." lightbox="../media/zero-trust-azure-active-directory.png":::
 
-#### II. Conditional Access policies gate access and provide remediation activities
+### II. Conditional Access policies gate access and provide remediation activities
 
-Azure AD Conditional Access (CA) analyzes signals such as user, device, and location to automate decisions and enforce organizational access policies for the resource. Use CA policies to apply access controls like multi-factor authentication (MFA). CA policies allow for prompting users for MFA when needed for security and stay out of users way when not needed.
+Azure AD Conditional Access (CA) analyzes signals such as user, device, and location to automate decisions and enforce organizational access policies for the resource. Use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow for prompting users for MFA when needed for security and stay out of users way when not needed.
 
-![Diagram showing Conditional Access policies in Zero Trust.](../media/conditions-controls.png) 
+:::image type="content" source="../media/conditions-controls.png" alt-text="Diagram showing Conditional Access policies in Zero Trust." lightbox="../media/conditions-controls.png":::
 
 Planning your Conditional Access policies in advance and having a set of active and fallback policies is a foundational pillar of your Access
 Policy enforcement in a Zero Trust deployment. Take the time to configure your trusted IP locations in your environment. Even if they
 are not used in a Conditional Access policy, configuring these IPs informs the risk of Identity Protection mentioned above.
 
-#### III. Analytics improve visibility
+### III. Analytics improve visibility
 
 As you build your estate in Azure AD with authentication, authorization, and provisioning, it's important to have strong operational insights
 into what is happening in the directory.
 
 To configure your logging and reporting to improve visibility, take this step: [Plan an Azure AD reporting and monitoring deployment](/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting) to be able to persist and analyze logs from Azure AD, either in Azure or using a SIEM system of choice.
 
-#### IV. Identities and access privileges are managed with identity governance
+### IV. Identities and access privileges are managed with identity governance
 
 Once the initial three objectives are accomplished, focus on additional
 objectives such as more robust identity governance.
 
-![Diagram showing more robust identity governance.](../media/more-robost-identity-governance.png)
+:::image type="content" source="../media/more-robost-identity-governance.png" alt-text="Diagram showing more robust identity governance." lightbox="../media/more-robost-identity-governance.png":::
 
-#### V. User, device, location, and behavior are analyzed in real time to determine risk and deliver ongoing protection
+### V. User, device, location, and behavior are analyzed in real time to determine risk and deliver ongoing protection
 
 Real-time analysis is critical for determining risk and protection.
 
-![Diagram showing real time media analysis.](../media/real-time-analysis.png) 
+:::image type="content" source="../media/real-time-analysis.png" alt-text="Diagram showing real time media analysis." lightbox="../media/real-time-analysis.png":::
 
-#### VI. Integrate threat signals from other security solutions to improve detection, protection, and response
+### VI. Integrate threat signals from other security solutions to improve detection, protection, and response
 
 Finally, other security solutions can be integrated for greater effectiveness.
 
