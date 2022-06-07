@@ -22,18 +22,11 @@ you during forensics investigation.
 Visit the links below for more information about the topics covered in
 this module:
 
-[Working remotely using Azure networking services](/azure/networking/working-remotely-support)
-
-[Azure Bastion](/azure/bastion/bastion-overview)
-
-[Best Practices for Securing Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
-
-[Azure Key Vault security overview](/azure/key-vault/general/security-features)
-
-[Security Operations Center (SOC or SecOps) monitoring in Azure - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/monitor-security-operations)
-
-[Security operations - Cloud Adoption Framework](/azure/cloud-adoption-framework/secure/security-operations)
-
-[Investigate entities on devices using live response in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/live-response)
-
-[Computer forensics chain of custody in Azure - Azure Example Scenarios](/azure/architecture/example-scenario/forensics/)
+* [Working remotely using Azure networking services](/azure/networking/working-remotely-support)
+* [Azure Bastion](/azure/bastion/bastion-overview)
+* [Best Practices for Securing Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
+* [Azure Key Vault security overview](/azure/key-vault/general/security-features)
+* [Security Operations Center (SOC or SecOps) monitoring in Azure - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/monitor-security-operations)
+* [Security operations - Cloud Adoption Framework](/azure/cloud-adoption-framework/secure/security-operations)
+* [Investigate entities on devices using live response in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/live-response)
+* [Computer forensics chain of custody in Azure - Azure Example Scenarios](/azure/architecture/example-scenario/forensics/)

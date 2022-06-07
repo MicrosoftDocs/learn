@@ -35,13 +35,13 @@ Pre-authentication with SMB 3.1.1 isn't compatible with devices that modify SMB 
 
 Another approach to specify server requirements is to ensure all servers are compliant with **Azure Security Benchmark (ASB)** OS baseline. The ASB OS baseline is available through Microsoft Defender for Cloud in the format of security recommendations for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows) or [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), as shown below:
 
-![Alt text. Screenshot that shows remediating a security configuration.](../media/remediate-security-configuration.png) 
+![Screenshot that shows remediating a security configuration.](../media/remediate-security-configuration.png) 
 
 Once you access one of those recommendations, you'll see a set of rules that are using the Azure Guest Configuration capability to run security checks to verify if the operating system is using the most secure configurations. The image below shows an example of this assessment:
 
-![Alt text. Screenshot of a sample assessment for configuration remediation.](../media/example-assessment.png) 
+![Screenshot of a sample assessment for configuration remediation.](../media/example-assessment.png) 
 
 Once you click on each rule, you'll have more details about the security check and the affected resources, as shown in the image below:
 
-![Alt text. Screenshot of a detailed description of the importance and impact of assigning the 'deny log on as a batch job' permission.](../media/deny-log-on-batch-job.png) 
+![Screenshot of a detailed description of the importance and impact of assigning the 'deny log on as a batch job' permission.](../media/deny-log-on-batch-job.png) 
 

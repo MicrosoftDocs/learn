@@ -1,7 +1,7 @@
 
 Azure Key Vault is a centralized cloud service for storing application secrets such as encryption keys, certificates, and server-side tokens. Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging. There are three primary concepts used in an Azure Key Vault: vaults, keys, and secrets.
 
-You use Azure Key Vault to create multiple secure containers, called *vaults*. Vaults help reduce the chances of accidental loss of security information by centralizing application secrets storage. Organizations will have several key vaults. Each key vault is a collection of cryptographic keys and cryptographically protected data (call them \"secrets\") managed by one or more responsible individuals within your organization. These key vaults represent the logical groups of keys and secrets for your organization; those that you want to manage together. They are like folders in the file system. Key vaults also control and log the access to anything stored in them.
+You use Azure Key Vault to create multiple secure containers, called *vaults*. Vaults help reduce the chances of accidental loss of security information by centralizing application secrets storage. Organizations will have several key vaults. Each key vault is a collection of cryptographic keys and cryptographically protected data (call them "secrets") managed by one or more responsible individuals within your organization. These key vaults represent the logical groups of keys and secrets for your organization; those that you want to manage together. They are like folders in the file system. Key vaults also control and log the access to anything stored in them.
 
 *Keys* are the central actor in the Azure Key Vault service. A given key in a key vault is a cryptographic asset destined for a particular use such as the asymmetric master key of Microsoft Azure RMS, or the asymmetric keys used for SQL Server TDE (Transparent Data Encryption), CLE (Column Level Encryption) and Encrypted backup.
 
@@ -46,7 +46,7 @@ Azure Key Vault manages X.509 based certificates that can come from several sour
 
 Another strategy is to create an X.509 certificate signing request (CSR). This creates a public/private key pair in Key Vault along with a CSR you can pass over to your certification authority (CA). The signed X.509 certificate can then be merged with the held key pair to finalize the certificate in Key Vault as shown in the following diagram.
 
-![Alt text. Diagram that shows an architecture for an application interacting with Azure Key Vault.](../media/key-vault.png) 
+![Diagram that shows an architecture for an application interacting with Azure Key Vault.](../media/key-vault.png) 
 
 In the previous diagram, your application is creating a certificate which internally begins by creating a key in your Azure Key Vault.
 
@@ -59,7 +59,7 @@ This strategy works with any certificate issuer and provides better security tha
 
 Lastly, you can also connect your Key Vault with a trusted certificate issuer (referred to as an integrated CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate and the Key Vault will interact directly with the CA to fulfill the request in a similar process to the manual CSR creation process shown above. The full details of this process are presented in the following diagram.
 
-![Alt text. Diagram showing the process to create a certificate with an integrated certificate authority.](../media/key-vault-certificate-authority.png) 
+![Diagram showing the process to create a certificate with an integrated certificate authority.](../media/key-vault-certificate-authority.png) 
 
 1.  In the previous diagram, your application is creating a certificate which internally begins by creating a key in your key vault.
 1.  Key Vault sends an SSL Certificate Request to the CA.

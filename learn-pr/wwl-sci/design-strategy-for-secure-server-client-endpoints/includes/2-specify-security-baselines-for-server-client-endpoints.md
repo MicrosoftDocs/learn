@@ -38,8 +38,8 @@ However, if the focus of your security baseline is to configure endpoint (Window
 
 Separate baseline types can include the same settings but use different default values for those settings. It's important to understand the defaults in the baselines you choose to use, and to then modify each baseline to fit your organizational needs.
 
-Is very important to emphasize that Intune security baselines are not CIS or NIST compliant. While Microsoft security team consults organizations, such as CIS, to compile its recommendations, there's no one-to-one mapping between \"CIS-compliant\" and Microsoft baselines.
+Is very important to emphasize that Intune security baselines are not CIS or NIST compliant. While Microsoft security team consults organizations, such as CIS, to compile its recommendations, there's no one-to-one mapping between "CIS-compliant" and Microsoft baselines.
 
 The recommendations in these baselines are from the Microsoft security team's engagement with enterprise customers and external agencies, including the Department of Defense (DoD), National Institute of Standards and Technology (NIST), and more. Microsoft shares recommendations and baselines with these organizations. These organizations also have their own recommendations that closely mirror Microsoft's recommendations. As mobile device management (MDM) continues to grow into the cloud, Microsoft created equivalent MDM recommendations of these group policy baselines. These additional baselines are built into Microsoft Intune, and include compliance reports on users, groups, and devices that follow (or don't follow) the baseline. Security baselines can be found in the Endpoint security configuration as shown below:
 
-![Alt text. Screenshot of selecting a security baseline to configure.](../media/endpoint-security.png) 
+![Screenshot of selecting a security baseline to configure.](../media/endpoint-security.png) 

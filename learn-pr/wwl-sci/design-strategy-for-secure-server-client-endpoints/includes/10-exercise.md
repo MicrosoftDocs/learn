@@ -1,5 +1,5 @@
 
-![Alt text. Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders.png) 
+![Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders.png) 
 
 Tailwind Traders is a modern commerce company. For more than 30 years, the company has been a popular retail destination. It has grown to more than 50 physical stores. Several years ago, its chief executive officer (CEO) anticipated changes in retail and bought a competing e-commerce start-up that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
 

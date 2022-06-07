@@ -3,7 +3,7 @@ When designing your remote access strategy, you need to take into consideration 
 
 The Azure point-to-site solution is cloud-based and can be provisioned quickly to cater for the increased demand of users to work from home. It can scale up easily and turned off just as easily and quickly when the increased capacity isn't needed anymore. A Point-to-Site (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer. A P2S connection is established by starting it from the client computer. This solution is useful for telecommuters who want to connect to Azure VNets or on-premises datacenters from a remote location, such as from home or a conference. You could use this solution if of your design requirements states that remote users need to access to resources that are in Azure and in the on-premises datacenters as shown in the image below:
 
-![Alt text. Diagram that shows strategy for secure remote access.](../media/strategy-secure-remote-access.png) 
+![Diagram that shows strategy for secure remote access.](../media/strategy-secure-remote-access.png) 
 
 At a high level, the following steps are needed to enable users to connect to Azure resources securely:
 
@@ -17,7 +17,7 @@ If your design requirements states that you need to connect two sites, for examp
 
 In some scenarios, the remote worker may just need access to resources deployed in Azure, for this scenario the remote worker could use Azure Bastion solution, instead of VPN connection to get secure shell access using Remote Desktop Protocol (RDP) or Secure Shell Protocol (SSH) without requiring public IPs on the VMs being accessed, as shown in the example below:
 
-![Alt text. Diagram that shows an architecture for using Remote Desktop Protocol (RDP) or Secure Shell Protocol (SSH) for remote access.](../media/remote-desktop-protocol.png) 
+![Diagram that shows an architecture for using Remote Desktop Protocol (RDP) or Secure Shell Protocol (SSH) for remote access.](../media/remote-desktop-protocol.png) 
 
 Below you have some benefits of using this solution:
 
