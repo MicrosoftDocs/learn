@@ -9,7 +9,7 @@ In this template, business outcomes focus on three topics:
 -   Understanding business drivers and objectives
 -   Mapping outcomes to specific solutions and technical capabilities
 
-![Business outcomes are visualized as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
+![Alt text. Diagram that shows business outcomes as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
 
 The business outcome template focuses on simplified conversations that can quickly engage stakeholders without getting too deep into the technical solution. By rapidly understanding and aligning the key performance indicators (KPIs) and business drivers that are important to stakeholders, architects can consider about high-level approaches and transformations before implementing security solutions.
 
@@ -25,7 +25,7 @@ As mentioned in the video, Cloud Adoption Framework consists of tools, documenta
 -  Adopt the cloud
 -  Govern and manage your cloud environments
 
-![A flow diagram showing the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage.](../media/cloud-adoption-framework.png)
+![Alt text. Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage.](../media/cloud-adoption-framework.png)
 
 The govern stage focuses on cloud governance. You can refer to the Cloud Adoption Framework for recommended guidance as you build your cloud governance strategy.
 

@@ -6,7 +6,7 @@ Organizations often face the competitive threat of new startups and the
 digital transformation of traditional competitors who can disrupt the
 market.
 
-![Partnership approach](../media/partnership-approach.png)
+![partnership approach.](../media/partnership-approach.png)
 
 The internal transformation process typically includes:
 

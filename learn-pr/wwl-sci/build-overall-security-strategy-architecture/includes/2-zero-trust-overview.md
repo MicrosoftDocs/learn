@@ -2,7 +2,7 @@ Today, organizations need a new security model that effectively adapts to the co
 
 This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach, and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust,always verify."
 
-![Diagram of elements of visibility, automation, and orchestration in Zero Trust.](../media/zero-trust-security.png)
+![Alt text. Diagram that shows elements of visibility, automation, and orchestration in Zero Trust.](../media/zero-trust-security.png)
 
 ### Guiding principles of Zero Trust
 
@@ -37,4 +37,4 @@ need an integrated capability to manage the resulting influx Of data to better d
 
 The following diagram visually illustrates the zero trust principles:
 
-![Visual illustration of zero trust principles](../media/zero-trust-principles.png)
+![zero trust principles.](../media/zero-trust-principles.png)

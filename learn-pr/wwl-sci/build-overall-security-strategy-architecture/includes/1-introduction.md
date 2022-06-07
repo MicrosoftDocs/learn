@@ -1,5 +1,5 @@
 
-In this module, you\'ll learn how to:
+In this module, you'll learn how to:
 
 - Develop Integration points in an architecture
 - Develop security requirements based on business goals
@@ -13,14 +13,14 @@ The content in the module will help you prepare for Exam SC-100: Cybersecurity A
 - Design a Zero Trust Strategy and Architecture
 - Build an Overall Security Strategy and Architecture
 
-### Prerequisites
+### Prerequisites 
 
 - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
 - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
 
 ### Role of Security Architecture
 
-![Diagram of architects and teams management](../media/architects-help-connect-teams.png)
+![how architects connect security teams.](../media/architects-help-connect-teams.png)
 
 #### What is a Security Architect?
 

@@ -3,11 +3,11 @@ The Microsoft Cybersecurity Reference Architectures (MCRA) describe Microsoft's 
 
 The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, azure native security controls, and security organizational functions.
 
-![Microsoft Cybersecurity Reference Architectures (MCRA)](../media/microsoft-cybersecurity-reference-architectures.png) 
+![Alt text. Diagram that shows Microsoft Cybersecurity Reference Architectures (MCRA).](../media/microsoft-cybersecurity-reference-architectures.png) 
 
 The MCRA also includes an overview of Zero Trust and a Zero Trust rapid modernization plan (RaMP). Additionally, this includes other key information on security operations and key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more.
 
-![Zero Trust and related topics](../media/zero-trustand-related-topics.png)
+![Alt text. Diagram that shows Zero Trust and related topics.](../media/zero-trustand-related-topics.png)
 
 ### Using the MCRA
 
@@ -20,7 +20,7 @@ MCRA is used for several purposes, including:
 
 The primary Cybersecurity Reference Architecture diagram represents the full organizational security landscape, demonstrating how key Microsoft technologies fit into that landscape. 
 
-![The primary Cybersecurity Reference Architecture diagram represents the full organizational security landscape, demonstrating how key Microsoft technologies fit into that landscape.](../media/cybersecurity-reference-architecture.png) 
+[![Alt text. Diagram that shows the primary Cybersecurity Reference Architecture diagram which represents the full organizational security landscape.](../media/cybersecurity-reference-architecture.png)](../media/cybersecurity-reference-architecture.png#lightbox) 
 
 The table below reproduces the information from the diagram showing each domain, the Microsoft products within it, a summary of the capability and some additional details.
 

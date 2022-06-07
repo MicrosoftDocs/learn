@@ -33,7 +33,7 @@ called a *perimeter network*, between the on-premises network and an
 Azure virtual network. All inbound and outbound traffic passes through
 Azure Firewall.
 
-![Secure hybrid network architecture](../media/implementa-secure-hybrid-network.png) 
+[![Secure hybrid network architecture](../media/implementa-secure-hybrid-network.png)](../media/implementa-secure-hybrid-network.png#lightbox) 
 
 #### Use multiple online environments or tenants
 
@@ -57,6 +57,7 @@ This example uses two environments for three teams: Sales, Marketing,
 and Services:
 
 ![A typical deployment includes one tenant only.](../media/uses-for-multiple-environments.png)
+
 Sales and marketing share an environment so lead information can be
 easily accessed by both. Services have their own environment, so tickets
 and warranties can be managed separately from marketing campaigns and
