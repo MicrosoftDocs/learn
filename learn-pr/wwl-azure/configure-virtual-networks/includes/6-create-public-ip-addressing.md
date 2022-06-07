@@ -1,9 +1,9 @@
-:::image type="content" source="../media/create-public-ip-address-f07bd67c.png" alt-text="Screenshot of creating a public IP address.":::
+:::image type="content" source="../media/create-public-ip-address-f07bd67c.png" alt-text="Screenshot of adding a public I P address. Information includes I P version, S K U, name, and dynamic or static.":::
 
 
 **IP Version**. Select IPv4 or IPv6 or Both. Selecting Both will result in two Public IP addresses being created- one IPv4 address and one IPv6 address.
 
-**SKU**. A standalone virtual machine, virtual machines within an availability set, or virtual machine scale sets can use Basic or Standard SKUs. Mixing SKUs between virtual machines within availability sets or scale sets or standalone VMs is not allowed.
+**SKU**. A Public IP's SKU must match the SKU of the Load Balancer with which it is used.
 
 **Name**. The name must be unique within the resource group you select.
 
