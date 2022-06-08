@@ -26,10 +26,10 @@ areas to fuel greater innovation throughout the company while limiting
 disruptions to core business operations. The cloud will play an
 important role in this transition. One of the key requirements for this
 transformation is to empower remote workers in a secure manner. The new
-CIO wants to ensure remote workers are using multi-factor authentication
+CIO wants to ensure remote workers are using multifactor authentication
 and if they're traveling to visit customers, the access should be
 restricted based on their geo-location. The CIO also wants to ensure
-that all incubation projects led by the AI/Robotics Team is tested in an
+that all incubation projects led by the AI/Robotics Team are tested in an
 isolated environment to avoid disruption in the production environment.
 
 The new CIO is concerned with the rise of high-profile companies getting

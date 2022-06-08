@@ -1,9 +1,9 @@
 
-The Secure Score dashboard in Defender for Cloud shows the secure score
+The secure score dashboard in Defender for Cloud shows the secure score
 on the subscription level for one or more subscriptions (depending on
-how many subscriptions are selected in the Azure Portal).
+how many subscriptions are selected in the Azure portal).
 
-![Screenshot showing the Secure Score dashboard in Defender for Cloud. It shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure Portal).](../media/microsoft-defender-cloud-secure-score.png) 
+![Screenshot showing the secure score dashboard in Defender for Cloud. It shows the secure score on the subscription level for one or more subscriptions (depending on how many subscriptions are selected in the Azure portal).](../media/microsoft-defender-cloud-secure-score.png) 
 
 To increase your security, review Defender for Cloud's recommendations
 page and remediate the recommendation by implementing the remediation

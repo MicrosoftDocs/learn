@@ -88,8 +88,8 @@ they fall outside of this norm it could be risky to allow them to just
 sign in. 
 
 In scenarios like this, you may want to block that user or maybe
-just ask them to perform multi-factor authentication to prove that they
-are really who they say they're. To address this risk, you can use
+just ask them to perform multifactor authentication to prove that they
+really are who they say they are. To address this risk, you can use
 Azure AD Conditional Access and use the *Sign-in risk-based Conditional Access* policy.
 
 There are also the scenarios that you'll need to select the

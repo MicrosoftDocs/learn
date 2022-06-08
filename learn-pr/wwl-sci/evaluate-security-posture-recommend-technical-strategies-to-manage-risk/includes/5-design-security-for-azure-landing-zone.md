@@ -12,7 +12,7 @@ infrastructure as a service or platform as a service.
 A landing zone is an environment for hosting your workloads,
 pre-provisioned through code. Watch the following video to learn more.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xdvm]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4xdvm]
 
 Security, governance, and compliance are key topics when designing and
 building an Azure environment. These topics help you start from strong
@@ -92,7 +92,7 @@ An organization must have visibility into what's happening within their technica
     - Consider how your security controls will align with governance guardrails. 
 * **Vulnerability management**:
     - Emergency patching for critical vulnerabilities. 
-    - Patching for VMS that are offline for extended periods of time. 
+    - Patching for VMs that are offline for extended periods of time. 
     - Vulnerability assessment of VMs. 
 * **Shared responsibility**:
     - Where are the handoffs for team responsibilities? These responsibilities need consideration when monitoring or responding to security events. 

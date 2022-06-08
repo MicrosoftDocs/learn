@@ -16,7 +16,7 @@ and priority---sometimes called enrichment. This helps people to make
 faster, better, and more proactive cybersecurity decisions. Below you
 have examples of scenarios where threat intelligence can be used:
 
--   A security analyst who uses threat intelligence to analyse the
+-   A security analyst who uses threat intelligence to analyze the
     highest priority signals and takes action.
 
 -   An information worker who knows to watch for emails with links that

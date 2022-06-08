@@ -39,13 +39,13 @@ responsibilities. For example:
 
     -   Monitors and responds to security alerts 24/7
 
-    -   Escalates to Cloud Workload Owner or IT Security Analyst
+    -   Escalates to cloud workload Owner or IT Security Analyst
 
 -   Sam (Security Analyst)
 
     -   Investigate attacks
 
-    -   Work with Cloud Workload Owner to apply remediation
+    -   Work with cloud workload Owner to apply remediation
 
 In many scenarios the IT Security Admin does not have the right level of
 privileges in the workload to expedite the remediation of
@@ -54,7 +54,7 @@ in the workload and tries to remediate a recommendation by using the
 \*Fix\* button, they will have the experience shown in the image below,
 where the Fix button is grey out.
 
-![Screenshot showing auditing for SQL Server enabled.](../media/audit-sql-fix.png) 
+![Screenshot that shows auditing for SQL Server enabled.](../media/audit-sql-fix.png) 
 
 For this reason, workload owners must be able to receive notifications
 when there are open security recommendations for them to remediate. In
@@ -64,7 +64,7 @@ capability to activate actions such as sending an email to the resource
 owner, when a recommendation is triggered. An example of this workflow
 is shown below:
 
-![Diagram showing an example of Workflow automation.](../media/workflow-automation.jpeg) 
+![Diagram that shows an example of Workflow automation.](../media/workflow-automation.jpeg) 
 
 1.  The team that is responsible for Microsoft Defender for Cloud
     identifies that there's a security recommendation that needs to be
@@ -90,4 +90,4 @@ recommendations that will improve the security hygiene of its workloads
 by visiting the Microsoft Defender for Cloud option as shown in the
 example below:
 
-![Screenshot showing security recommendations in the Microsoft Defender for Cloud dashboard.](../media/ticket-reservation.png) 
+![Screenshot that shows security recommendations in the Microsoft Defender for Cloud dashboard.](../media/ticket-reservation.png) 

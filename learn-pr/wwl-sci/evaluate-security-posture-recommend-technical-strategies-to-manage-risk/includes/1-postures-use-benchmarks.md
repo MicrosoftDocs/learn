@@ -23,7 +23,7 @@ In the on-premises world, security governance followed the cadence of data it co
 
 Continuous improvement of asset security posture means that governance teams should focus on improving standards, and enforcement of those standards, to keep up with the cloud and attackers. Information technology (IT) organizations must react quickly to new threats and adapt accordingly. Attackers are continuously evolving their techniques, and defenses are continuously improving and might need to be enabled. You can't always get all the security you need into the initial configuration. 
 
-This Rapid Modernization Plan (RaMP) showed in the diagram below will enable you to quickly improve your security posture with the least number of challenges. 
+This Rapid Modernization Plan (RaMP) shown in the diagram below will enable you to quickly improve your security posture with the least number of challenges. 
 
 ![Diagram showing the Rapid Modernization Plan (RaMP).](../media/posture-management.png) 
  
@@ -36,12 +36,12 @@ Security posture refers to the current state of an organization's security---tha
 
 These three pillars are:
 
--   Protect: An organization's security posture is not static, it changes constantly in response to emerging new threats and variabilities in the environment. Enabling protections, like multi-factor authentication (MFA) for administrators, strengthens a company's posture. A lack of vigilance, such as failing to update endpoints or use available protections can weaken an organizations security posture. The security hygiene of your environment helps to reduce the likelihood that threat actors will successfully compromise your workloads.
+-   Protect: An organization's security posture is not static, it changes constantly in response to emerging new threats and variabilities in the environment. Enabling protections, like multifactor authentication (MFA) for administrators, strengthens a company's posture. A lack of vigilance, such as failing to update endpoints or use available protections can weaken an organizations security posture. The security hygiene of your environment helps to reduce the likelihood that threat actors will successfully compromise your workloads.
 -   Detect: After mitigating all security recommendations, you also must ensure that you have threat detection in place to quickly identify suspicious activities in your workloads and trigger an alert to bring awareness about it.
--   Respond: Finally, ensure that you have automation in place to take immediate action on the alerts that you receive by appropriatelyrespond to it with actions that can contain and mitigate the attack.
+-   Respond: Finally, ensure that you have automation in place to take immediate action on the alerts that you receive by appropriately responding to it with actions that can contain and mitigate the attack.
 
 The use of benchmarks to evaluate your current environment, understand
-the current gaps and provide guidance on how improve, is a very common
+the current gaps and provide guidance on how to improve, is a very common
 practice in the IT industry. When it comes to security posture
 enhancement, benchmarks can give you tangible actions based on industry
 standards, such as ISO 2701 or by using cloud provider's benchmark,
@@ -91,13 +91,13 @@ this concern, Microsoft developed ASB to function as a harmonizing
 control framework to help you quickly work with established standards in
 the context of a cloud environment---standards such as CIS Controls v8
 and v7, NIST SP800-53 Rev4, and PCI-DSS v3.2.1. Organizations can use
-ASB to evaluate their Azure deployments security posture consistently
+ASB to evaluate their Azure deployment's security posture consistently
 and easily against these industry standards with minimal repeated work.
 
 ![Diagram showing Azure centric controls coming from C I S, P C I and NIST.](../media/azure-centric-controls.png) 
 
 Azure Security Benchmark is surfaced in Microsoft Defender for Cloud
-regulatory compliance dashboard as shown in the example below:
+regulatory compliance dashboard as shown in the following image:
 
 ![Screenshot showing Azure Security Benchmark surfaced in Microsoft Defender for Cloud regulatory compliance dashboard.](../media/microsoft-defender-cloud-regulatory-compliance.png) 
 
@@ -113,6 +113,5 @@ status.
 
 While this is the preferred benchmark for Azure, you may need to use a
 different benchmark according to your organization's needs. You can
-navigate through different tabs that has a regulatory standard assign to
-it to visualize the applicable compliance controls that were assessed
+navigate through different tabs that have assigned regulatory standards to visualize the applicable compliance controls that were assessed
 and the current status of each item.
