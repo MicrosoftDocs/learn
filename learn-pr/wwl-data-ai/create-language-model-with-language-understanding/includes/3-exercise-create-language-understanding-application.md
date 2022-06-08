@@ -19,12 +19,11 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Legal Terms**: _Agree_ 
     - **Responsible AI Notice**: _Agree_
 
-3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
-4. View the **Keys and Endpoint** page for your Language service resource. You will need the endpoint and keys to connect from client applications.
+3. Review and create the resource, and wait for deployment to complete. 
 
 ### Create a Conversational Language Understanding App
 
-To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app. 
+To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app to execute. 
 
 1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
 2. If prompted to choose a Language resource, select the following settings:
@@ -48,8 +47,9 @@ To implement natural language understanding with Conversational Language Underst
 
     ![Enter details for the project.](../media/create-project.png)
 
-    >[!TIP]
-    >Write down your *project name*, you will use it later.
+>[!TIP]
+>Write down your *project name*, you will use it later.
+
 5. On the *Review and finish* page, click **Create**. 
 
 ### Create intents, utterances, and entities
@@ -70,7 +70,7 @@ An *intent* is an action you want to perform - for example, you might want to sw
     - ***put the light on***
     - ***switch on the light***
     - ***turn the fan on***
-4. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**. Type **device** (in lower-case), select **List** and select **Done**. 
+4. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**. Type **device** (in lower-case), select **List** and select **Add entity**. 
 
     ![Add an entity by selecting Tags on the Tagging entities for training panel, then select Add entity.](../media/add-entity.png) 
     ![Type in device under Entity name and select List, then select Add entity.](../media/add-entity-device.png)        
@@ -136,8 +136,8 @@ To use your trained model in a client application, you must deploy it as an endp
     - **Assign trained model to your deployment name**: *Select the name of the trained model*
     - Click **Deploy**
     
-    >[!TIP]
-    >Write down your *deployment name*, you will use it later. 
+>[!TIP]
+>Write down your *deployment name*, you will use it later. 
 
 3. When the model is deployed, click **Testing deployments** on the left-hand side of the page, and then select your deployed model under **Deployment name**.
 4. Enter the following text, and then select **Run the test**:
@@ -203,7 +203,7 @@ Now let's open and edit a pre-written script, which will run the client applicat
 
     ![The code for the language understanding lab with box around credentials you need to modify and save before running the program.](../media/understand-code.png)
 
-    Don't worry too much about the details of the code, the important thing is that it needs the endpoint and key for your Language service model. You'll get the endpoint and key from the Language Studio.
+    Don't worry too much about the details of the code. The important thing is that you'll use the instructions below to modify the file to specify the language model you trained. 
 
 4. Switch back to the browser tab containing **Language Studio**. Then in Language Studio, open the **Deploying a model** page and select your model. Then click the **Get prediction URL** button. The two pieces of information you need are in this dialog box:
     - The endpoint for your model - you can copy the endpoint from the **Prediction URL** box.
@@ -237,6 +237,9 @@ Now let's open and edit a pre-written script, which will run the client applicat
 11. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
 
 12. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
+
+>[!NOTE]
+>Each time you will need to start with **./understand.ps1** followed by the phrase. Include quotation marks around your phrase.
 
 ## Learn more
 
