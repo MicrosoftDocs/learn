@@ -98,7 +98,7 @@ To apply your data transformations, you must run the pipeline as an experiment.
 
     ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
 
-    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
+    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
 
 4. When the run has completed, click on **Job detail**. You will be taken to another window which will show the modules like this:
 
