@@ -4,7 +4,7 @@ title: Exercise - Deploy an Azure Database for MySQL Flexible Server
 sandbox: true
 
 metadata:
-  title: Exercise - Deploy an Azure Database for MySQL Flexible Server
+  title: Exercise - Deploy an Azure Database for MySQL flexible derver
   description: Deploy an Azure Database for MySQL Flexible Server.
   ms.prod: learning-azure
   author: mpolicht

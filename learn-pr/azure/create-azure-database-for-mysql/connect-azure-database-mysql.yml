@@ -5,7 +5,7 @@ sandbox: true
 interactive: bash
 
 metadata:
-  title: Exercise - Connect to Azure Database for MySQL Flexible Server
+  title: Exercise - Connect to Azure Database for MySQL flexible server
   description: Connect to Azure Database for MySQL Flexible Server.
   ms.prod: learning-azure
   author: markingmyname

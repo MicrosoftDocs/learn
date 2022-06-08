@@ -1,16 +1,16 @@
 Now that you’ve reviewed the deployment and connectivity options of Azure Database for MySQL, you want to test the process of provisioning a server and validate its availability by connecting to it. In this unit, you’ll step through a sample deployment and connect to the server by using the mysql.exe utility from the Azure Cloud Shell.
 
-### Connect to Azure Database for MySQL flexible server
+### Connect to an Azure Database for MySQL flexible server
 
 From the Azure Cloud Shell in the Azure portal, use the following procedure to connect to and query the newly deployed Azure Database for MySQL flexible server:
 
-1. From your computer, in the web browser window displaying the Azure portal, navigate to the page of the Azure Database for MySQL flexible server you deployed in the previous exercise.
+1. on the page for your Azure Database for MySQL flexible server, select **Overview**.
 
-2. In the **Overview** pane, note the value of **Server name**. You will need this fully qualified server name to establish a connection.
+2. On the **Overview** pane, note the value of **Server name**. You will need this fully qualified server name to establish a connection.
 
-3. To verify that your network configuration will allow connectivity from Azure Cloud Shell, in the vertical menu, in the **Settings** section, select **Networking**.
+3. To verify that your network configuration will allow connectivity from Azure Cloud Shell, under **Settings**, select **Networking**.
 
-4. On the **Networking** page, verify that the **Allow public access from any Azure service within Azure to this server** checkbox is selected.
+4. On the **Networking** pane, verify that the **Allow public access from any Azure service within Azure to this server** checkbox is selected.
 
 5. In the Cloud Shell pane, run the following command to download the public certificate used by the server:
 
@@ -18,7 +18,7 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
    wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
    ```
 
-6. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server, and the <user_name> placeholder with the name of the admin account you specified when provisioning the server in the previous task:
+6. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server, and the <user_name> placeholder with the name of the admin account you specified when provisioning the server in the previous exercise:
 
    ```bash
    mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl=true --ssl-ca=DigiCertGlobalRootCA.crt.pem
@@ -26,44 +26,44 @@ From the Azure Cloud Shell in the Azure portal, use the following procedure to c
 
 7. When prompted, enter the password that you assigned to the admin account you specified when provisioning the server in the previous task.
 
-   > [!NOTE]
-   > When connecting to your flexible server by using Azure Cloud Shell, you need to specify the --ssl=true parameter (rather than --ssl-mode=REQUIRED). The reason for this is that Azure Cloud Shell uses the mysql.exe client from MariaDB distribution, and not the mysql client from Oracle's distribution (which requires the --ssl-mode parameter).
+    > [!NOTE]
+    > When connecting to your flexible server by using Azure Cloud Shell, you need to specify the --ssl=true parameter (rather than --ssl-mode=REQUIRED). The reason for this is that Azure Cloud Shell uses the mysql.exe client from MariaDB distribution, and not the mysql client from Oracle's distribution (which requires the --ssl-mode parameter).
 
-8. You should be presented with the **MySQL [(none)]** prompt. This verifies that the connection was successful.
+    You should be presented with the **MySQL [(none)]** prompt. This verifies that the connection was successful.
 
-9. Next, from the **MySQL [(none)]** prompt, run the following command to list databases hosted by the server:
+8. Next, from the **MySQL [(none)]** prompt, run the following command to list databases hosted by the server:
 
       ```sql
       SHOW DATABASES;
       ```
 
-10. Verify that the list includes the four pre-created databases (information_schema, mysql, performance_schema, and sys) and the testdb that you created in the previous task.
+9. Verify that the list includes the four pre-created databases (**information_schema**, **mysql**, **performance_schema**, and **sys**) and the **testdb** that you created in the previous exercise.
 
-11. From the **MySQL [(none)]** prompt, run the following command to switch to the testdb database:
+10. From the **MySQL [(none)]** prompt, run the following command to switch to the **testdb** database:
 
       ```sql
       use testdb;
       ```
 
-12. From the **MySQL [(testdb)]** prompt, run the following command to create a sample table in the testdb database:
+11. From the **MySQL [(testdb)]** prompt, run the following command to create a sample table in the **testdb** database:
 
       ```sql
       CREATE TABLE table1 (id int NOT NULL, val int,txt varchar(200));
       ```
 
-13. From the **MySQL [(testdb)]** prompt, run the following command to add a row of data into the newly created table:
+12. From the **MySQL [(testdb)]** prompt, run the following command to add a row of data into the newly created table:
 
       ```sql
       INSERT INTO table1 values (1,100,'text1');
       ```
 
-14. From the **MySQL [(testdb)]** prompt, run the following command to display the newly added data:
+13. From the **MySQL [(testdb)]** prompt, run the following command to display the newly added data:
 
       ```sql
       SELECT * FROM table1;
       ```
 
-15. To exit the connection, at the **MySQL [(testdb)]** prompt, enter quit.
+14. To exit the connection, at the **MySQL [(testdb)]** prompt, enter *quit*.
 
 ### Clean up resources
 

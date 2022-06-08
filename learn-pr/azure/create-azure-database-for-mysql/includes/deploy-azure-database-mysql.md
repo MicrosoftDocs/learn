@@ -1,11 +1,8 @@
 Now that you’ve reviewed the deployment and connectivity options of Azure Database for MySQL, you want to test the process of provisioning a server and validate its availability by connecting to it. In this unit, you’ll step through a sample deployment and connect to the server by using the mysql.exe utility from the Azure Cloud Shell.
 
-> [!NOTE]
-> You might incur costs in your Azure Subscription when you run this exercise.
+### Deploy an Azure Database for MySQL flexible server
 
-### Deploy Azure Database for MySQL Flexible Server
-
-Use the following procedure to deploy an Azure Database for MySQL Flexible Server from the Azure portal:
+Use the following procedure to deploy an Azure Database for MySQL flexible server from the Azure portal:
 
 1. Navigate to the Azure portal for the sandbox
 
@@ -19,47 +16,42 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 3. On the **Azure Database for MySQL servers** page, select **Create Azure Database for MySQL server**.
 
    :::image type="content" source="../media/create-azure-database-for-mysql-server.png" alt-text="Screenshot of creating a mysql server database":::
+a
+4. On the **Select Azure Database for MySQL deployment option** page, under **Resource type**, choose **Flexible server (Recommended)**, and then select **Create**.
 
-4. On the **Select Azure Database for MySQL deployment option** page, select **Flexible server** as the deployment option.
-
-5. On the *Flexible server** page, on the **Basics** tab, enter the information in the following table.
+5. On the **Flexible server** page, on the **Basics** tab, enter the information in the following table.
 
    | **Setting**                  | **Value**                                | **Description**                                              |
    | ---------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-   | **Subscription**             | The name of your subscription            | In this case, we are using the *Concierge Subscription*.      |
+   | **Subscription**             | Concierge Subscription                   | The name of your subscription. In this case, we are using the *Concierge Subscription*. |
    | **Resource group**           | <rgn>[sandbox resource group name]</rgn> | Use the LEARN created resource group available.              |
-   | **Server name**              | <server_name>                            | Enter any valid and globally unique name that identifies your Flexible Server. The server's fully qualified name consists of the <server_name> you choose, followed by the suffix mysql.database.azure.com. The server name can contain only lowercase letters, numbers, and the hyphen (-) character. It must contain between 3 and 63 characters.                                                                                                |
-   | **Region**                   | The name of an Azure region              | Enter the name of the Azure region that will host your server. Select any region that supports Azure Database for MySQL Flexible Server deployment, close to the location of the computer you use to run this exercise.          |
-   | **MySQL version**            | 8.0                                      | Enter the MySQL major version your app will be using.        |
-   | **Workload type**            | For development or hobby projects        | Enter the intended workload type, which determines the VM SKU to host the server. |
+   | **Server name**              | <server_name>                            | A valid and globally unique name that identifies your flexible server. The server's fully qualified name consists of the <server_name> you choose, followed by the suffix mysql.database.azure.com. The server name can contain only lowercase letters, numbers, and the hyphen (-) character. It must contain between 3 and 63 characters.                                                                                                |
+   | **Region**                   | The name of an Azure region              | The name of the Azure region that will host your server. Select any region that supports Azure Database for MySQL Flexible Server deployment, close to the location of the computer you use to run this exercise.          |
+   | **MySQL version**            | 8.0                                      | The MySQL major version your app will be using.        |
+   | **Workload type**            | For development or hobby projects        | The intended workload type, which determines the VM SKU to host the server. |
    | **Availability zone**        | No preference                            | This setting allows you to specify an availability zone where the server will be deployed. Your choice is typically based on the zone hosting the application tier. |
    | **Enable high availability** | Not selected                             | This is the setting that determines whether you want to have a replica server automatically provisioned in another availability zone (for zonal deployments). This option requires the choice of either **General Purpose** or **Business Critical** VM SKUs compute tier). |
-   | **Admin username**           | mysqladmin                               | You can enter any valid user name, which will be configured as the admin account for the MySQL server instance. in this case, we are using *mysqladmin*. Do not use azure_superuser, admin, administrator, root,  guest, or public.                                                                   |
-   | **Password**                 | Passw0rd123                              | You can enter any valid password assigned to the admin account. In this case, we are suing *Passw0rd123*. It must contain between 8 and 128 characters and include characters from three categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and non-alphanumeric characters (such as ! $, #, %). |
+   | **Admin username**           | mysqladmin                               | A valid user name, which will be configured as the admin account for the MySQL server instance. in this case, we are using *mysqladmin*. Do not use azure_superuser, admin, administrator, root,  guest, or public.                                                                   |
+   | **Password**                 | Passw0rd123                              | A valid password assigned to the admin account. In this case, we are suing *Passw0rd123*. It must contain between 8 and 128 characters and include characters from three categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and non-alphanumeric characters (such as ! $, #, %). |
 
 6. On the **Basics** tab, under **Compute + Storage**, select **Configure server**.
 
 7. On the **Compute + Storage** page, configure the following settings, and then select **Save**:
+    1. **Compute**
+        1. From the **Compute** **size** drop-down list, select **Standard_B1s (1 vCore, 1 GiB memory, 400 max iops)**.
+    1. **Storage**
+       1. Leave the **Storage size (in GB)** set to **20**.
+       2. Leave the value of **IOPS** set to **360**.
+       3. Leave **Storage Auto-growth** checked.
+    1. **High Availability**
+       1. Leave **Enable High Availability** as not selected.
+    1. **Backups**
+       1. Ensure that the **Backup retention period (in days)** is set to **7**.
+       2. Leave the **Recover from regional outage or disaster** as not selected.
 
-   a. From the **Compute** **size** drop-down list, select **Standard_B1s (1 vCore, 1 GiB memory, 400 max iops)**.
+8. On the **Basics** tab of the **Flexible server** page, select **Next: Networking >**.
 
-   b. Leave the **Storage size (in GB)** set to **20**.
-
-   c. Leave the value of **IOPS** set to **360**.
-
-   d. Leave the **Storage Auto-growth** checked.
-
-   e. Leave **Enable High Availability** as not selected.
-
-   f. Ensure that the **Backup retention period (in days)** is set to **7**.
-
-   g. Leave the **Recover from regional outage or disaster** as not selected.
-
-8. On the **Compute + Storage** page, select **Save**.
-
-9. On the **Basics** tab of the **Flexible server** page, select **Next: Networking >**.
-
-10. On the **Networking** tab of the **Flexible server** page, configure the following settings:
+9. On the **Networking** tab of the **Flexible server** page, configure the following settings:
 
     a. Ensure that **Connectivity method** is set to **Public access (allowed IP address)**.
 
@@ -67,19 +59,18 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 
     c. Select the **+ Add current client IP address** link.
 
-11. On the **Networking** tab of the **Flexible server** page, select **Review + create**.
+10. Select **Review + create**.
 
-12. On the **Review + create** page, review the settings you configured, and then select **Create**.
+11. On the **Review + create** page, review the settings you configured, and then select **Create**.
 
-13. Wait for the provisioning process to complete. This might take about 10 minutes.
+    > [!NOTE]
+    > Wait for the provisioning process to complete. This might take about 10 minutes.
 
-14. Now the deployment is complete
+12. After the deployment is complete, select **Go to resource** to navigate to the page for the newly deployed Azure Database for MySQL flexible server.
 
-15. On the **Overview** page, select **Go to resource** to navigate to the page for the newly deployed Azure Database for MySQL Flexible Server.
+13. On the page for Azure Database for MySQL flexible server page, in the navigation menu, in the **Settings** section, select **Databases**, and then select **Add**.
 
-16. On the Azure Database for MySQL flexible server page, in the navigation menu, in the **Settings** section, select **Databases**, and then select **Add**.
-
-17. In the **Create database** pane, in the **Name** text box, enter **testdb**, accept the default character set and collation values, and then select **Save**.
+14. In the **Create database** pane, in the **Name** text box, enter **testdb**, accept the default character set and collation values, and then select **Save**.
 
 > [!NOTE]
 > You will use the resources you deployed in this exercise for the next exercise.
