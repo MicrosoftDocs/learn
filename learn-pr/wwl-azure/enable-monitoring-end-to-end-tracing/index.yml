@@ -32,7 +32,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.enable-monitoring-end-to-end-tracing.introduction
