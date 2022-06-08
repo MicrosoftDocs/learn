@@ -14,7 +14,7 @@
 
 Azure Functions are best when handling specific definable actions triggered by an event. For example, a function could process an API call and then store the processed data in Cosmos DB. Once the data transfer happens, another function could trigger a notification. 
 
-:::image type="content" source="../media/azure-functions-events.png" alt-text="Diagram of Azure functions with API calls and output data to notifications hubs. ":::
+:::image type="content" source="../media/azure-functions-events.png" alt-text="Diagram of Azure functions with A P I calls and output data to notifications hubs. ":::
 
 
 
