@@ -1,4 +1,4 @@
-We have already seen that PostgreSQL supports different languages. Functions can be categorized into four different types:
+We've already seen that PostgreSQL supports different languages. Functions can be categorized into four different types:
 
 - Functions written in SQL.
 - Procedural language functions, written in a supported procedural language such as PL.pgSQL.
@@ -7,13 +7,13 @@ We have already seen that PostgreSQL supports different languages. Functions can
 
 In addition, the purpose of the function can also be categorized as **volatile**, **immutable**, or **stable**.
 
-A **volatile** (the default) function can modify the database and will not necessarily return the same result with the same input parameters each time. This means that every time this function is called, it must be re-evaluated.
+A **volatile** (the default) function can modify the database and won't necessarily return the same result with the same input parameters each time. This means that every time this function is called, it must be reevaluated.
 
-A **stable** function cannot modify the database and will return the same result if passed the same arguments and run within the same statement. If this function is called multiple times, the query optimizer can use the results from the last time it was called.
+A **stable** function can;t modify the database and will return the same result if passed the same arguments and run within the same statement. If this function is called multiple times, the query optimizer can use the results from the last time it was called.
 
-An **immutable** function cannot modify the database and will return the same results if passed the same arguments, regardless of the query that calls it.
+An **immutable** function can't modify the database and will return the same results if passed the same arguments, regardless of the query that calls it.
 
-The volatility of a function makes a big difference to the efficiency with which the query optimizer handles it.
+The volatility of a function makes a large difference to the efficiency with which the query optimizer handles it.
 
 ## Create a function
 
@@ -37,14 +37,14 @@ As with stored procedures, the \$\$ symbol is used to start and end the string.
 Functions take the following parameters:
 
 - **name** - optionally include the schema name.
-- **argmode** - the mode of the argument. May be IN, OUT, INOUT, or VARIADIC. The default is IN. VARDIAC is an undefined number of input arguments of the same type, *and must be followed by OUT arguments*. OUT and INOUT arguments cannot be used together with the RETURNS TABLE notations.
+- **argmode** - the mode of the argument. May be IN, OUT, INOUT, or VARIADIC. The default is IN. VARDIAC is an undefined number of input arguments of the same type, *and must be followed by OUT arguments*. OUT and INOUT arguments can't be used together with the RETURNS TABLE notations.
 - **argname** - argument name.
 - **argtype** - the argument data type. Can be base, composite, or domain types, or reference a table column type. The column type is written as table_name.column_name%TYPE. This can help make a function independent of table definition changes.
 - **t_expr** - A default value (of the same type) if the parameter is not specified. Only IN and INOUT parameters have a default value. Input parameters following a parameter with a default value must also have default values.
-- **rettype** - The return data type, which can be a base, composite, or domain type, or reference a table column type. If the function does not return a value, specify the return type as void. When there are OUT or INOUT parameters, the RETURNS clause can be omitted. If present, it must agree with the result type implied by the output parameters: RECORD if there are multiple output parameters, or the same type as the single output parameter. The SETOF modifier indicates that the function will return a set of items, rather than a single item. The type of a column is referenced by writing ***table_name***.
+- **rettype** - The return data type, which can be a base, composite, or domain type, or reference a table column type. If the function doesn't return a value, specify the return type as void. When there are OUT or INOUT parameters, the RETURNS clause can be omitted. If present, it must agree with the result type implied by the output parameters: RECORD if there are multiple output parameters, or the same type as the single output parameter. The SETOF modifier indicates that the function will return a set of items, rather than a single item. The type of a column is referenced by writing ***table_name***.
 - **column_name** - The name of an output column in the RETURNS TABLE syntax. This declares a named OUT parameter, except that RETURNS TABLE also implies RETURNS SETOF.
 - **column_type** - The data type of an output column in the RETURNS TABLE syntax.
-- **lang_name -** the language used to write the procedure. The default is sql if sql_body is specified. May be sql, c, internal, or the name of a user-defined procedural language, e.g., plpgsql.
+- **lang_name -** the language used to write the procedure. The default is sql if sql_body is specified. May be sql, c, internal, or the name of a user-defined procedural language, for example, plpgsql.
 
 Use the keywords IMMUTABLE, STABLE, or VOLATILE as a hint to the query optimizer about the function. VOLATILE is the default.
 
