@@ -32,7 +32,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 subjects:
 - data-engineering
 units:
