@@ -1,5 +1,3 @@
-### Specify a security standard for onboarding a new application
-
 Applications and their data ultimately act as the primary store of
 business value on a cloud platform. While the platform components like
 identity and storage are critical elements of the security environment,
@@ -8,7 +6,6 @@ applications play an outsize role in risks to the business because:
 -   **Business Processes** are encapsulated and executed by
     applications, and services need to be available and provided with
     high integrity
-
 -   **Business Data** is stored and processed by application workloads
     and requires high assurances of confidentiality, integrity, and
     availability.
@@ -25,12 +22,10 @@ generations of applications
 -   **Legacy**--applications are hosted on Infrastructure as a Service
     (IaaS) virtual machines that typically include all dependencies,
     including OS, middleware, and other components.
-
 -   **Modern**--Platform as a Service (PaaS) applications don't require
     the application owner to manage and secure the underlying server
     operating systems (OSes) and are sometimes fully "Serverless" and
     built primarily using functions as a service.
-
 -   **Hybrid**--While hybrid applications can take many forms, the
     most common is an "IaaS plus" state where legacy applications are
     transitioning to modern architecture with modern services replacing
@@ -47,11 +42,9 @@ component types:
     identifying and mitigating risks from the design and implementation
     of the application. It also requires assessing the supply chain risk of included
     components.
-
 -   **Application Services**--Application Services are the various standardized
     components that the application uses, such as databases, identity
     providers, event hubs, IoT device management, and so on.
-
 -   **Application Hosting Platform**--This is the computing
     environment where the application actually executes and runs. In an
     enterprise with applications hosted on premises, in Azure, and in
@@ -59,7 +52,7 @@ component types:
     many forms with significant variations on who is responsible for
     security:
 
-### Onboarding New Applications
+## Onboarding New Applications
 
 An Azure Active Directory (Azure AD) application registration is a
 critical part of your business application. Any misconfiguration or
@@ -77,7 +70,7 @@ application registration properties.
 | Application ownership                   | Ensure app ownership is kept to a minimal set of people within the organization. It's recommended to run through the owner's list once every few months to ensure owners are still part of the organization and their charter accounts for ownership of the application registration.                                                                                                                                                                                                                                         |
 | Checklist | App developers can use the Checklist available in the Azure portal to ensure their app registration meets a high quality bar and provides guidance to integrate securely. The integration assistant highlights best practices and recommendations that help avoid common oversights when integrating with the Microsoft identity platform.                                                                                                                                                                                    |
 
-#### Security Standards for Onboarding applications
+## Security Standards for Onboarding applications
 
 Organizations should use guidance and automation for securing
 applications in the cloud rather than starting from zero.
@@ -112,16 +105,16 @@ applications in the cloud rather than starting from zero.
 Several capabilities should be prioritized first because of potential
 security impact:
 
--   **Identity**--User directories and other authentication functions
+-   **Identity** - User directories and other authentication functions
     are complex to develop and critically important to security
     assurances. Avoid using homegrown authentication solutions and favor
     mature capabilities like: 
-     1. Azure Active Directory ([Azure AD](/azure/active-directory/)) 
-     2. [Azure AD B2B](/azure/active-directory/b2b/) 
-     3. [Azure AD B2C](/azure/active-directory-b2c/)
-     4. third-party solutions to authenticate and grant permission to users, partners, and customers, applications, services, and other entities.
+    * Azure Active Directory ([Azure AD](/azure/active-directory/)) 
+    * [Azure AD B2B](/azure/active-directory/b2b/) 
+    * [Azure AD B2C](/azure/active-directory-b2c/)
+    * Third-party solutions to authenticate and grant permission to users, partners, and customers, applications, services, and other entities.
 
--   **Data Protection**--Developers, should use established
+-   **Data Protection** - Developers, should use established
     capabilities from cloud providers such as native encryption in cloud
     services to encrypt and protect data. The security world is littered
     with examples of failed attempts to protect data or passwords that
@@ -129,39 +122,20 @@ security impact:
     cryptography is required, developers should call well-established
     cryptographic algorithms and not attempt to invent their own.
 
--   **Key management**--Ideally, use identity for authentication
-    rather than directly handling keys (see [Prefer Identity
-    Authentication over Keys](https://docs.microsoft.com/security/compass/applications-services#prefer-identity-authentication-over-keys)).
-    For situations where accessing services that require access to keys,
-    use a key management service like [Azure Key
-    Vault](https://docs.microsoft.com/azure/key-vault/) or
-    AWS [Key Management Service](https://aws.amazon.com/kms/). This will help you manage
-    and secure these keys rather than attempting to safely handle keys
-    in application code. You can
-    use [CredScan](https://secdevtools.azurewebsites.net/helpcredscan.html) to
-    discover potentially exposed keys in your application code.
+-   **Key management**--Ideally, use identity for authentication rather than directly handling keys (see [Prefer Identity Authentication over Keys](/security/compass/applications-services#prefer-identity-authentication-over-keys)). For situations where accessing services that require access to keys, use a key management service like [Azure Key Vault](/azure/key-vault/) or AWS [Key Management Service](https://aws.amazon.com/kms/). This will help you manage and secure these keys rather than attempting to safely handle keys in application code. You can use [CredScan](https://secdevtools.azurewebsites.net/helpcredscan.html) to discover potentially exposed keys in your application code.
 
--   **Application Configurations**--Inconsistent configurations for
+-   **Application Configurations** - Inconsistent configurations for
     applications can create security Risks. Azure App Configuration
     provides a service to centrally manage application settings and
     feature flags, which helps mitigate this risk.
 
-#### For additional information on Security Standards for Applications, see the following:
+## Additional information
 
--   [**Best Practices for Application
-    Registration**](https://docs.microsoft.com/azure/active-directory/develop/security-best-practices-for-app-registration)
+For additional information on Security Standards for applications, see the following:
 
--   [**Threat
-    Modeling**](https://docs.microsoft.com/azure/security/develop/threat-modeling-tool)
-
--   [**OWASP
-    ASVS**](https://owasp.org/www-project-application-security-verification-standard/)
-
+-   [**Best Practices for Application Registration**](/azure/active-directory/develop/security-best-practices-for-app-registration)
+-   [**Threat Modeling**](/azure/security/develop/threat-modeling-tool)
+-   [**OWASP ASVS**](https://owasp.org/www-project-application-security-verification-standard/)
 -   [**STRIDE**](/azure/security/develop/threat-modeling-tool-threats)
-
--   [**NIST
-    SSDF**](https://csrc.nist.gov/publications/detail/sp/800-218/final)
-
--   [**Microsoft Secure DevOps using
-    Azure**](https://azsk.azurewebsites.net/)
-
+-   [**NIST SSDF**](https://csrc.nist.gov/publications/detail/sp/800-218/final)
+-   [**Microsoft Secure DevOps using Azure**](https://azsk.azurewebsites.net/)
