@@ -61,7 +61,7 @@ To create a new route in the routing table, use the `New-NetRoute` cmdlet. For e
 You also can change route settings with the `Set-NetRoute` cmdlet. Typically, you use `Set-NetRoute` to adjust metric values for existing routes.
 
 > [!WARNING]
-> You cannot modify the DestinationPrefix or NextHop properties of an existing route by using `Set-NetRoute`.
+> You cannot modify the DestinationPrefix or NextHop properties of an existing route by using `Set-NetRoute`.
 ### Use the route command
 
 You can also use the Route command-lint tool. To view the routing table, run the following command in a Command Prompt window:
