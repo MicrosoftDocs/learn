@@ -31,7 +31,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.introduction
