@@ -1,6 +1,6 @@
-In this module you have learned about thread concurrency, and the server parameters that are used to control how many users can connect at the same time. You have learned about isolation levels and how MySQL manages data being read or modified at the same time by more than one user. You have also learned about transactions and locking, including how MySQL supports isolation levels by preventing users modifying resources or objects
+In this module you've learned about thread concurrency, and the server parameters that are used to control how many users can connect at the same time. You've learned about isolation levels and how MySQL manages data being read or modified at the same time by more than one user. You've also learned about transactions and locking, including how MySQL supports isolation levels by preventing users modifying resources or objects
 
-Now that you have completed this module, you are can:
+Now that you've completed this module, you can:
 
 - Understand thread concurrency.
 - Understand when to use thread pools.
