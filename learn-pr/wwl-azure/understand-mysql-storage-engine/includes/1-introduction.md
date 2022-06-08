@@ -1,4 +1,4 @@
-MySQL allows different storage engines to be loaded and unloaded while MySQL is running. This pluggable storage engine architecture is implemented at the table level, allowing different storage engines to be used for different tables.
+MySQL allows different storage engines to be loaded and unloaded while MySQL is running. This pluggable storage engine architecture is implemented at the table level, allowing different storage engines to be used for different tables. 
 
 Not all storage engines are supported by all versions of MySQL. Use the **SHOW ENGINES** statement to display which storage engines are supported by your MySQL server.
 
