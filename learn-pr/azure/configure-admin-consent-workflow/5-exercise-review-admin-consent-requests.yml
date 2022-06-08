@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-admin-consent-workflow.exercise-review-admin-consent-requests
-title: exercise review admin consent requests
+title: Exercise - Review admin consent requests
 metadata:
   unitType: exercise
-  title: exercise review admin consent requests
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Exercise - Review admin consent requests
+  description: "Review and act on admin consent requests through the Azure portal"
   ms.date: 5/25/2022
   author: omondiatieno
   ms.author: jomondi
