@@ -1,6 +1,6 @@
-In this module you have learned about the architecture of MySQL, and how this is implemented in Azure. You have learned about the different versions of MySQL, and the options that Azure Database for MySQL provides. You have learned how MySQL handles connections, and how the query optimizer works with different storage engines.
+In this module you've learned about the architecture of MySQL, and how this is implemented in Azure. You've learned about the different versions of MySQL, and the options that Azure Database for MySQL provides. You've learned how MySQL handles connections, and how the query optimizer works with different storage engines.
 
-Now that you have completed this module, you will be able to:
+Now that you have completed this module, you'll be able to:
 
 - Describe Azure Database for MySQL.
 - Explore MySQL architecture.
