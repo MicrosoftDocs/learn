@@ -41,17 +41,13 @@ Create a basic application that handles requests.
 
    The code creates an instance of an Express application by invoking the `express()` method.
   
-   Notice how the code sets up a route to slash `/` with this syntax:
-
-   ```javascript
-   app.get('/', (req, res) => res.send('Hello World!'));
-   ```
+   Notice how the code sets up a route to slash `/` with the syntax:
+   
+   > `app.get('/', (req, res) => res.send('Hello World!'));`
 
    After setting up the route, the code starts the web application by invoking the `listen()` method:
 
-   ```javascript
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-   ```
+   > `app.listen(port, () => console.log(`Example app listening on port ${port}!`));`
 
 1. Save your changes to the app.js file and close the file.
 

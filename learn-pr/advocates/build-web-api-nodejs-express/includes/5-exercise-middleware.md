@@ -23,11 +23,9 @@ In this exercise, you'll use an example project that has product files and start
 
    This folder has three files:
 
-   ```output
-   -| app.js
-   -| client.js
-   -| package.json
-   ```
+   > -| app.js
+   > -| client.js
+   > -| package.json
 
 1. The **package.json** file contains a dependency named `express`. Run the following command to install the dependency:
 

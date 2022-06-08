@@ -50,7 +50,7 @@ quiz:
         - content: "Configure body parsing middleware, Register a route by using the `post` method as in `app.post(<route>, () =>{})`, Read from the `req.data` object"
           isCorrect: false
           explanation: "Incorrect. The posted data is available on the `req.body` object, not the `req.data` object."
-        - content: "Call `app.use(bodyParser.json())` at the top, Register a route by using the `post` method as in `app.post(<route`, () =>{})`, Read from the `req.body` object"
+        - content: "Call `app.use(bodyParser.json())` at the top, Register a route by using the `post` method as in `app.post(<route>, () =>{})`, Read from the `req.body` object"
           isCorrect: true
           explanation: "Correct. This call configures the `bodyParser` to interpret the incoming data as JSON."
         - content: "Call `app.use(bodyParser.urlencoded({ extended: false }))` at the top, Register a route by using the `post` method as in `app.post(<route>, () =>{})`, Read from the `req.body` object"
