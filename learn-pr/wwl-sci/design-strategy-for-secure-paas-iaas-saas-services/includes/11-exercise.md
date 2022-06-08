@@ -1,6 +1,4 @@
 
-Scenario 
-
 ![Diagram that shows the Tailwind Traders logo.](../media/tailwind-traders.png) 
 
 Tailwind Traders is a modern commerce company. For more than 30 years,
@@ -26,25 +24,16 @@ hired a new Chief Information Security Officer (CISO). The new CISO
 started planning his strategy to secure PaaS, IaaS and SaaS workloads,
 and as part of this strategy he established that the company needs to:
 
--   Implement a cloud security posture management platform that can
-    offer native vulnerability assessment for VMs and Containers, and
-    support threat detection for Cosmos DB
-
--   Implement a data classification system for their Azure workloads
-    that is able to classify and label data in SQL databases and storage
-    accounts
-
+-   Implement a cloud security posture management platform that can offer native vulnerability assessment for VMs and Containers, and  support threat detection for Cosmos DB
+-   Implement a data classification system for their Azure workloads that is able to classify and label data in SQL databases and storage accounts
 -   Implement a security baseline for SaaS workloads in Microsoft 365
+-   Support security posture management and threat detection for IoT workloads
 
--   Support security posture management and threat detection for IoT
-    workloads
-
-Questions 
+## Questions 
 
 1. Which solution should be utilized to:
 
    - Provide data classification and labeling in Azure?
-
    - Provide cloud security posture management and threat detection for VM, Containers and Cosmos DB?
 
 2. Which solution should be used to provide cloud security posture management and threat detection for IoT?

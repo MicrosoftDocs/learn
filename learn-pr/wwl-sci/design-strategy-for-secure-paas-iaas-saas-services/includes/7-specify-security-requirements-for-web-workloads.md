@@ -8,10 +8,10 @@ and Linux-based environments.
 The platform components of App Service, including Azure VMs, storage,
 network connections, web frameworks, management, and integration
 features, are actively secured and hardened. Security requirements for
-Azure App Service includes:
+Azure App Service include:
 
 -   **Ensure that you secure your apps with HTTPS:** When your app is
-    created, its default domain name ({{app_name}}.azurewebsites.net) is
+    created, its default domain name (`{{app_name}}.azurewebsites.net`) is
     already accessible using HTTPS. If you configure a custom domain for
     your app, you should also secure it with a TLS/SSL certificate so
     that client browsers can make secured HTTPS connections to your

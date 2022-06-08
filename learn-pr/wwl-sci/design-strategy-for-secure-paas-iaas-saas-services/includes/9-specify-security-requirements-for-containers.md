@@ -71,21 +71,9 @@ ongoing security assessment to improve the overall security posture.
 Defender for Containers helps with the core aspects of container
 security, including:
 
--   **Environment hardening:** Defender for Containers protects your
-    Kubernetes clusters whether they're running on Azure Kubernetes
-    Service, Kubernetes on-premises / IaaS, or Amazon EKS. By continuously
-    assessing clusters, Defender for Containers provides visibility into
-    misconfigurations and guidelines to help mitigate identified
-    threats. Learn more in Hardening.
-
--   **Vulnerability assessment:** Vulnerability assessment and
-    management tools for images stored in ACR registries and running in
-    Azure Kubernetes Service. Learn more in Vulnerability assessment.
-
--   **Run-time threat protection for nodes and clusters:** Threat
-    protection for clusters and Linux nodes generates security alerts
-    for suspicious activities. Learn more in Run-time protection for
-    Kubernetes nodes, clusters, and hosts.
+-   **Environment hardening:** Defender for Containers protects your Kubernetes clusters whether they're running on Azure Kubernetes Service, Kubernetes on-premises / IaaS, or Amazon EKS. By continuously assessing clusters, Defender for Containers provides visibility into misconfigurations and guidelines to help mitigate identified threats. Learn more in Hardening.
+-   **Vulnerability assessment:** Vulnerability assessment and management tools for images stored in ACR registries and running in Azure Kubernetes Service. Learn more in Vulnerability assessment.
+-   **Run-time threat protection for nodes and clusters:** Threat protection for clusters and Linux nodes generates security alerts for suspicious activities. Learn more in Run-time protection for Kubernetes nodes, clusters, and hosts.
 
 Defender for Cloud continuously assesses the configurations of your
 clusters and compares them with the initiatives applied to your

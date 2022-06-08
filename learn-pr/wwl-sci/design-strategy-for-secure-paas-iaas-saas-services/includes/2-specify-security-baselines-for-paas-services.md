@@ -2,8 +2,6 @@
 Let's look at the security advantages of an Azure PaaS deployment versus
 on-premises.
 
-![Security advantages of PaaS.](../media/security-advantages-paas.png) 
-
 Microsoft mitigates common risks and responsibilities starting at the bottom of the stack: the physical infrastructure. Because the Microsoft cloud is continually monitored by Microsoft, it's hard to
 attack. It doesn't make sense for an attacker to pursue the Microsoft cloud as a target. Unless the attacker has lots of money and resources, the attacker is likely to move on to another target.
 
@@ -86,23 +84,11 @@ Benchmark.
 
 Each recommendation includes the following information:
 
--   **Azure ID**: The Azure Security Benchmark ID that corresponds to
-    the recommendation.
-
--   **Recommendation**: Following directly after the Azure ID, the
-    recommendation provides a high-level description of the control.
-
--   **Guidance**: The rationale for the recommendation and links to
-    guidance on how to implement it. If the recommendation is supported
-    by Microsoft Defender for Cloud, that information will also be
-    listed.
-
--   **Responsibility**: Who is responsible for implementing the control.
-    Possible scenarios are customer responsibility, Microsoft
-    responsibility, or shared responsibility.
-
--   **Microsoft Defender for Cloud monitoring**: Whether the control is
-    monitored by Microsoft Defender for Cloud, with link to reference.
+-   **Azure ID**: The Azure Security Benchmark ID that corresponds to the recommendation.
+-   **Recommendation**: Following directly after the Azure ID, the recommendation provides a high-level description of the control.
+-   **Guidance**: The rationale for the recommendation and links to guidance on how to implement it. If the recommendation is supported by Microsoft Defender for Cloud, that information will also be listed.
+-   **Responsibility**: Who is responsible for implementing the control. Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
+-   **Microsoft Defender for Cloud monitoring**: Whether the control is monitored by Microsoft Defender for Cloud, with link to reference.
 
 All recommendations, including recommendations that are not applicable
 to this specific service, are included in the baseline to provide you a
@@ -119,35 +105,20 @@ Service, the security baseline establishes security recommendations in
 the following areas:
 
 -   Network security
-
 -   Logging and Monitoring
-
 -   Identity and Access Control
-
 -   Data Protection
-
 -   Vulnerability Management
-
 -   Inventory and Asset Management
-
 -   Secure Configuration
-
 -   Data Recovery
-
 -   Incident Response
 
 For more information about App Service security baseline, visit [Azure security baseline for App Service](/security/benchmark/azure/baselines/app-service-security-baseline).
 
-One strategy to The Inventory dashboard in Defender for Cloud allows you to identify all your PaaS resources and verify the open issues. You can create a filter by resource type and see only the PaaS resources that you want to evaluate. The example below shows only the resource type that is equal to App Service.
+One strategy to The Inventory dashboard in Defender for Cloud allows you to identify all your PaaS resources and verify the open issues. You can create a filter by resource type and see only the PaaS resources that you want to evaluate. 
 
-![Filtering for a resource type that is equal to App Service.](../media/resource-type-equal-app-service.png) 
- 
+Once you identify the resource, you can click on it and see open security recommendations.
 
-Once you identify the resource, you can click on it and see the open
-security recommendations as shown below:
-
-![Screenshot showing open security recommendations.](../media/open-security-recommendations.png) 
-This list provides the list of recommendations, which are derived from
-Azure Security Benchmark, organized by priority and showing the current
-status (healthy or unhealthy).
+This list provides the list of recommendations, which are derived from Azure Security Benchmark, organized by priority and showing the current status (healthy or unhealthy).
 

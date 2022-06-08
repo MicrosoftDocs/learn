@@ -5,52 +5,28 @@ consistent response times, or that have a high number of input output
 Storage data objects, which include:
 
 -   Blobs
-
 -   File shares
-
 -   Queues
-
 -   Tables
-
 -   Disks
 
 Consider the following recommendations to optimize security when
 configuring your Azure Storage Account:
 
 -   Turn on soft delete for blob data
-
 -   Use Azure AD to authorize access to blob data.
-
--   Consider the principle of least privilege when you assign
-    permissions to an Azure AD security principal through Azure RBAC.
-
--   Consider the principle of least privilege when you assign
-    permissions to an Azure AD security principal through Azure RBAC.
-
--   Use blob versioning or immutable blobs to store business-critical
-    data.
-
+-   Consider the principle of least privilege when you assign permissions to an Azure AD security principal through Azure RBAC.
+-   Consider the principle of least privilege when you assign permissions to an Azure AD security principal through Azure RBAC.
+-   Use blob versioning or immutable blobs to store business-critical data.
 -   Restrict default internet access for storage accounts.
-
 -   Configure firewall rules to limit access to your storage account
-
 -   Limit network access to specific networks.
-
 -   Allow trusted Microsoft services to access the storage account.
-
--   Enable the Secure transfer required option on all your storage
-    accounts.
-
--   Limit shared access signature (SAS) tokens to HTTPS connections
-    only.
-
--   Avoid and prevent using Shared Key authorization to access storage
-    accounts.
-
+-   Enable the Secure transfer required option on all your storage accounts.
+-   Limit shared access signature (SAS) tokens to HTTPS connections only.
+-   Avoid and prevent using Shared Key authorization to access storage accounts.
 -   Regenerate your account keys periodically.
-
--   Create a revocation plan and have it in place for any SAS that you
-    issue to clients.
+-   Create a revocation plan and have it in place for any SAS that you issue to clients.
 
 #### Security posture management for storage
 
@@ -73,15 +49,9 @@ suspicious activity along with the relevant investigation steps,
 remediation actions, and security recommendations. The diagram below
 shows the three major actions performed by Defender for Storage:
 
-![Diagram that shows security posture management for Storage](../media/security-posture-management-storage.png) 
+:::image type="content" source="../media/security-posture-management-storage.png" alt-text="Diagram that shows security posture management for Storage." lightbox="../media/security-posture-management-storage.png":::
 
 1.  One-click enablement via Defender for Cloud dashboard
-
-2.  Once enabled, Defender for cloud will be monitoring the storage
-    account, generating security recommendations and in case of a
-    suspicious activity, it will trigger an alert
-
-3.  The alert can be handled in the Defender for Cloud dashboard, or if
-    the company is using Microsoft Sentinel, they can perform the
-    investigation there.
+2.  Once enabled, Defender for cloud will be monitoring the storage account, generating security recommendations and in case of a suspicious activity, it will trigger an alert
+3.  The alert can be handled in the Defender for Cloud dashboard, or if the company is using Microsoft Sentinel, they can perform the investigation there.
 

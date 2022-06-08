@@ -30,7 +30,7 @@ Kubernetes data plane hardening when you enable Microsoft Defender for
 Containers. The security recommendations will appear in Defender for
 Cloud dashboard as shown below:
 
-![The security recommendations will appear in Defender for Cloud dashboard as shown](../media/security-recommendations.png) 
+:::image type="content" source="../media/security-recommendations.png" alt-text="Screenshot showing security recommendations in the Microsoft Defender for Cloud dashboard." lightbox="../media/security-recommendations.png":::
 
 When Defender for Cloud protects a cluster hosted in Azure Kubernetes
 Service, the collection of audit log data is agentless and frictionless.
@@ -40,13 +40,7 @@ Kubernetes collects cluster and workload configuration for admission
 control policies as explained in Protect your Kubernetes workloads. The
 diagram below provides an overview of this solution:
 
-![Diagram that shows securing an Azure Kubernetes Service Cluster with Defender for Cloud.](../media/azure-kubernetes-service-cluster.png)
+:::image type="content" source="../media/azure-kubernetes-service-cluster.png" alt-text="Diagram that shows securing an Azure Kubernetes Service Cluster with Microsoft Defender for Cloud." lightbox="../media/azure-kubernetes-service-cluster.png":::
 
--   Defender profile includes a *DaemonSet*, which is a set of
-    containers that focus on collecting inventory and security events
-    from the Kubernetes environment.
-
--   Gatekeeper, Azure Policy, which is the admission controller webhook
-    for Open Policy Agent (OPA), to apply at-scale enforcements and
-    safeguards on your clusters in a centralized, consistent manner.
-
+-   Defender profile includes a *DaemonSet*, which is a set of containers that focus on collecting inventory and security events from the Kubernetes environment.
+-   Gatekeeper, Azure Policy, which is the admission controller webhook for Open Policy Agent (OPA), to apply at-scale enforcements and safeguards on your clusters in a centralized, consistent manner.
