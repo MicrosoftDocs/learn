@@ -57,7 +57,20 @@ JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and s
 #### Definitions within claims-based identity
 There are some common terms used when discussing claims-based identity in Azure AD.
 
-- **Claim** - a value pair of data within a security token.  There are multiple claims transferred within the token from the claim that defines the type of the token typ - String - JWT to the audience aud - URI or App ID or String to many others. 
+- **Claim** - a value pair of data within a security token.  There are multiple claims transferred within the token from the claim that defines the type of the token to the encryption method.  Here is an example:
+     ```
+        Header
+        {
+          "alg": "HS256",
+          "typ": "JWT"
+        }
+        Content payload
+        {
+          "sub": "1234567890",
+          "name": "John Doe",
+          "aud": "https://jwt.io"
+        }
+     ```
 - **Assertion** - a package of data, usually in for form of token that share the identity and security information about a user or account across security domains.
 - **Attribute** - a value pair of data within a token.
 - **Augmentation** - the process of adding additional claims to the user token to provide extra detail about the user.  This could include data from human resource (HR) systems,  from an application like SharePoint, or other systems.

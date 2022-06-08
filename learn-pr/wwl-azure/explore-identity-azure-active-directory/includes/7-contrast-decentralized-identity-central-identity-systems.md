@@ -12,8 +12,11 @@ Centralized Identity Management or Central Identity System is a single identity 
 - Example: Azure Active Directory (Azure AD)
 
 **Secure adaptive access** - Protect access to resources and data using strong authentication and risk-based adaptive access policies without compromising user experience.
+
 **Seamless user experience** - Provide an easy, fast sign-in experience to keep your users productive, reduce time managing passwords, and increase end-user productivity.
+
 **Unified identity management** - Manage all your identities and access to all your apps in a central location, whether they’re in the cloud or on-premises, to improve visibility and control.
+
 **Simplified identity governance** - Control access to apps and data for all users and admins efficiently with automated identity governance to ensure only authorized users have access.
 
 ### Decentralized Identity
