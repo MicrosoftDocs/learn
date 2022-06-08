@@ -1,4 +1,4 @@
-In this module you will learn how Azure Database for MySQL uses connections to handle communication between clients and the server using connections.
+In this module you will learn how Azure Database for MySQL uses connections to handle communication between clients and the server using connections. 
 
 After completing this module, you will be able to:
 
