@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/29/2021
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -28,11 +28,11 @@ quiz:
     - content: "XML and HTML"
       isCorrect: true
       explanation: "This is correct.  These are two of the files types."
-  - content: "Which type of DLP policy may be configured in the Microsoft 365 Compliance center?"
+  - content: "Which type of DLP policy may be configured in the Microsoft Purview compliance portal?"
     choices:
     - content: "Exchange DLP policies"
       isCorrect: true
-      explanation: "This answer is correct. Exchange Policies can be configured in the Microsoft 365 Compliance Center."
+      explanation: "This answer is correct. Exchange Policies can be configured in the Microsoft Purview portal."
     - content: "PowerPlatform DLP policies"
       isCorrect: false
       explanation: "This answer is not correct. PowerPlatform DLP policies can only be configured in the PowerPlatform portal."
@@ -47,6 +47,6 @@ quiz:
     - content: "Policies can be created in the Microsoft Defender for Cloud Apps portal."
       isCorrect: true
       explanation: "This is correct.  These policies are created in the Microsoft Defender for Cloud Apps portal."
-    - content: "Policies can be created in the Microsoft 365 Security portal."
+    - content: "Policies can be created in the Microsoft 365 Defender portal."
       isCorrect: false
-      explanation: "This is not correct. These policies are not created in the Microsoft 365 security portal."
+      explanation: "This is not correct. These policies are not created in the Microsoft 365 Defender portal."
