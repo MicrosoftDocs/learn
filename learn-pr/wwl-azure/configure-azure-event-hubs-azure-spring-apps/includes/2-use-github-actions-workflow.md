@@ -11,7 +11,7 @@ The following scenarios are some of the scenarios where you can use Event Hubs:
  -  Device telemetry streaming
 
 :::image type="content" source="../media/event-hubs-pipeline-eaec2d20.png" alt-text="Diagram showing how Data sent to an event hub can be transformed and stored by using any real-time analytics provider.":::
- Data is valuable only when there's an easy way to process and get timely insights from data sources. Event Hubs provides a distributed stream processing platform with low latency and seamless integration, with data and analytics services inside and outside Azure to build your complete big data pipeline.
+Data is valuable only when there's an easy way to process and get timely insights from data sources. Event Hubs provides a distributed stream processing platform with low latency and seamless integration, with data and analytics services inside and outside Azure to build your complete big data pipeline.
 
 Event Hubs represents the "front door" for an event pipeline, often called an *event ingestor* in solution architectures. An event ingestor is a component or service that sits between event publishers and event consumers to decouple the production of an event stream from the consumption of those events. Azure Event Hubs provides a unified streaming platform with time retention buffer, decoupling event producers from event consumers.
 

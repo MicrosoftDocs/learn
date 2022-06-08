@@ -6,8 +6,7 @@ Modify the **producer.config** file in the ***/src/main/resources*** directory:
 
  -  Update the **bootstrap.servers** config setting so it contains your **EventHub** namespace name.
  -  Update the **sasl.jaas.config** config setting so it contains the connection string to your telemetry event hub.
-
-Update the **TestProducer.java** file in the ***/src/main/java*** directory, with **telemetry** as a topic name.
+ -  Update the **TestProducer.java** file in the ***/src/main/java*** directory, with **telemetry** as a topic name.
 
 Next, compile and run the producer app, which sends 100 events to your event hub. You can view the events sent to your event hub using the Azure portal.
 
