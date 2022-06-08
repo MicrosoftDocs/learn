@@ -1,6 +1,6 @@
 ## Case Study: Design an identity security solution
 
-![Diagram showing Tailwind Traders logo.](../media/tailwind-traders-logo.png)
+![ Diagram showing Tailwind Traders logo which consists of a blue t with a house carved out of it.](../media/tailwind-traders-logo.png)
 
 Tailwind Traders is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders

@@ -28,7 +28,7 @@ help you rapidly deploy protections based on this strategy.
 This graphic describes how this extortion-based attack is growing in
 impact and likelihood using privileged access:
 
-![Diagram of human operated ransomware.](../media/human-operated-ransomware.png) 
+![Diagram showing human operated ransomware.](../media/human-operated-ransomware.png) 
 
 -   **High business impact:** It is difficult to overstate the potential
     business impact and damage of a loss of privileged access. Attackers

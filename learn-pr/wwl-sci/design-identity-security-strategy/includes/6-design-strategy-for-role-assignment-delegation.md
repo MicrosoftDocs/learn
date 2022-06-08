@@ -109,7 +109,7 @@ which aggravates the problem.
 In this case, you should use [privileged access groups](/azure/active-directory/privileged-identity-management/groups-features). Create a privileged access group and grant it permanent access to multiple roles (Azure AD and/or Azure). Make that user an eligible
 member or owner of this group. With just one activation, they will have access to all the linked resources.
 
-![Screenshot of Privileged Access Group.](../media/privileged-access-group.png) 
+![Screenshot of Privileged Access Group with eligible members on the left mapped to Azure A D roles on the right.](../media/privileged-access-group.png) 
 
 ### Use cloud native accounts for Azure AD roles
 

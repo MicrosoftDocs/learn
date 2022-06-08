@@ -109,8 +109,8 @@ The following table offers a detailed comparison of the various authentication m
 | Is Windows Hello for Business supported? | Key trust model | Key trust model | Key trust model |
 |  |  | Requires Windows Server 2016 Domain functional level |  |
 |  |  |  | Certificate trust model |
-| What are the multifactor authentication options? | Azure AD MFA | Azure AD MFA | Azure AD MFA |
-|  | Custom Controls with Conditional Access* | Custom Controls with Conditional Access* | Azure Multi-Factor Authentication server |
+| What are the multifactor authentication options? | Azure AD Multi-Factor Authentication | Azure AD Multi-Factor Authentication | Azure AD Multi-Factor Authentication |
+|  | Custom Controls with Conditional Access* | Custom Controls with Conditional Access* | Azure AD Multi-Factor Authentication server |
 |  |  |  | Third-party MFA |
 |  |  |  | Custom Controls with Conditional Access* |
 | What user account states are supported? | Disabled accounts | Disabled accounts | Disabled accounts |

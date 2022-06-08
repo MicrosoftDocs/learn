@@ -19,7 +19,7 @@ Cybersecurity Architecture. The module concepts are covered in:
 -   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
 -   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
 
-## Identity Security Strategy Overview
+## Identity security strategy overview
 
 The term Identity Security Strategy defines the general process of
 authenticating and authorizing security principals for an organization.
@@ -28,7 +28,7 @@ It also involves controlling information about those principals
 applications, users, groups, etc. Microsoft identity and access
 management solutions help IT protect access to applications and
 resources across the corporate datacenter and into the cloud. Such
-protection enables additional levels of validation, such as Multi-Factor
+protection enables additional levels of validation, such as Azure Active Directory Multi-Factor
 Authentication and Conditional Access policies.
 
 A good Identity Security Strategy helps maintain control over the
