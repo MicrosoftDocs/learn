@@ -21,13 +21,9 @@ In this exercise, you'll use an example project that has product files and start
    cd node-essentials/nodejs-http/exercise-express-middleware
    ```
 
-   This folder has three files:
+   This folder has three files: **app.js**, **client.js**, and **package.json**.
 
-   > -| app.js
-   > -| client.js
-   > -| package.json
-
-1. The **package.json** file contains a dependency named `express`. Run the following command to install the dependency:
+1. The package.json file contains a dependency named `express`. Run the following command to install the dependency:
 
    ```bash
    npm install
@@ -35,7 +31,7 @@ In this exercise, you'll use an example project that has product files and start
 
    `npm` reads from the `dependencies` section in the package.json file and installs the required packages.
 
-1. In a code editor, open the **app.js** file and inspect the contents:
+1. In a code editor, open the app.js file and inspect the contents:
 
    ```javascript
    const express = require("express");
@@ -69,7 +65,7 @@ In this exercise, you'll use an example project that has product files and start
 
    - Close the app.js file.
 
-1. In a code editor, open the **client.js** application file and inspect the contents:
+1. In a code editor, open the client.js application file and inspect the contents:
 
    ```javascript
    const http = require("http");
