@@ -16,6 +16,8 @@ design data residency requirements and translate privacy requirements
 into security solutions with proper data classification and identity
 protection.
 
+## More information
+
 Visit the links below for more information about the topics covered in
 this module:
 

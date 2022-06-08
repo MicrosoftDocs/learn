@@ -10,7 +10,7 @@ Contoso Pharma also has a Site-to-Site VPN between the headquarters in Redmond a
 
 Contoso Pharma has a legacy environment in Redmond composed by a couple of Windows Server 2012 running a Web Server that is used by the application that queries the database to check for customer's information. Upon investigation it was noted that the communication of the legacy web server with the database is done via HTTP.
 
-### Design Requirements
+## Design Requirements
 
 Contoso Pharma has different compliance needs according to their workloads, as shown in the table below:
 
@@ -27,11 +27,11 @@ To be compliant with these standards, Contoso Pharma must be able to:
 - Ensure that new subscriptions that are deployed in the environment are using required standards by default
 - Ensure resources that are provisioned on each geo-location keep the data in the source region for data sovereignty purposes
 
-### Questions
+## Questions
 
-1. To ensure that Contoso Pharma can analyze their compliance status over time, which tool should be utilized? Select the most appropriate option.
-1. Which service in Azure should be used to enforce workload owners to create only resources that are following the required standards?
-1. Which option should be utilized to ensure that when workload owners create resources, they're keeping the data in the correct geo-location?
-1. How can Contoso Pharma validate if the VMs that were provisioned are compliant with PCI DSS and if they're not what needs to be done to remediate?
-1. Data encryption is an imperative component to address your privacy requirements. What are the data stages that you must apply encryption?
-1. Which Azure service can you use to enforce data encryption across workloads?
+* To ensure that Contoso Pharma can analyze their compliance status over time, which tool should be utilized? Select the most appropriate option.
+* Which service in Azure should be used to enforce workload owners to create only resources that are following the required standards?
+* Which option should be utilized to ensure that when workload owners create resources, they're keeping the data in the correct geo-location?
+* How can Contoso Pharma validate if the VMs that were provisioned are compliant with PCI DSS and if they're not what needs to be done to remediate?
+* Data encryption is an imperative component to address your privacy requirements. What are the data stages that you must apply encryption?
+* Which Azure service can you use to enforce data encryption across workloads?
