@@ -3,7 +3,7 @@ uid: learn.wwl.configure-user-experience-settings
 metadata:
   title: Configure user experience settings
   description: "Configure user experience settings"
-  ms.date: 12/02/2021
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   *  Configure Universal Print.
   *  Troubleshoot user profile issues.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-configure-user-experience-settings.svg
 levels:
 - intermediate
 roles:
@@ -30,8 +30,8 @@ products:
 - azure-virtual-desktop
 - azure-virtual-machines
 subjects:
-- virtual-machine
 - cloud-computing
+- virtual-machine
 units:
 - learn.wwl.configure-user-experience-settings.introduction
 - learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles

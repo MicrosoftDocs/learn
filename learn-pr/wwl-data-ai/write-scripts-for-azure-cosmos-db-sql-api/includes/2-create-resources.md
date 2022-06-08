@@ -22,7 +22,7 @@ When creating a new account, you can also optionally specify extra parameters to
 az cosmosdb create \
     --name '<account-name>' \
     --resource-group '<resource-group>' \
-    --default-consistency-level 'eventual' \
+    --default-consistency-level 'strong' \
     --enable-free-tier 'true'
 ```
 
