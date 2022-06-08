@@ -1,6 +1,6 @@
-In this module you have learned about the different storage engines supported by MySQL. Azure Database for MySQL supports InnoDB, the default storage engine, plus memory. InnoDB is a solid, general purpose storage engine which will be used for most applications.
+In this module, you've learned about the different storage engines supported by MySQL. Azure Database for MySQL supports InnoDB, the default storage engine, plus memory. InnoDB is a solid, general purpose storage engine, which will be used for most applications.
 
-Now that you have completed this module, you are able to:
+Now that you've completed this module, you're able to:
 
 - Describe common storage engines.
 - Specify a storage engine.
