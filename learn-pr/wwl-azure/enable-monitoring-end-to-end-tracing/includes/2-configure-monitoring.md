@@ -9,22 +9,10 @@ az spring-cloud app logs \
     --name api-gateway \
     --resource-group $RESOURCE_GROUP \
     --service $SPRING_CLOUD_SERVICE
+    --follow
 ```
 
-To stream the logs to your console, do the following procedure.
+The action above will stream the **api-gatewa**y service app logs to your console.<br>
 
-1.  Open a couple of web pages in the application and see the logs change in the console output.
-2.  Enter ***Ctrl+c*** to stop streaming the logs.
-3.  To live stream the logs of the customer service, you can use the below statement:
-    
-    ```azurecli
-    az spring-cloud app logs \
-        --name customer \
-        --resource-group $RESOURCE_GROUP \
-        --service $SPRING_CLOUD_SERVICE
-    ```
-
-The logs have now steamed to your console. To view the streaming output, do the following actions.
-
-1.  Open a couple of web pages in the application and see the logs update in the console output.
-2.  Enter ***Ctrl+c*** to stop streaming the logs.
+1.  Switch to the web browser displaying the Spring Petclinic application and navigate throughout the interface. Notice that your actions trigger display of new log entries in the console output.
+2.  Enter **Ctrl+c** to stop streaming the logs.
