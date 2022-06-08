@@ -59,4 +59,4 @@ To view the log entries, do the following procedures.
     | render timechart
     ```
 
-8.  Select the **Chart** tab to view the results in graphical format. Select **Pin to**and then select **Azure dashboard** to pin the visual representation to your Azure Home screen.
+8.  Select the **Chart** tab to view the results in graphical format. Select **Pin to** and then select **Azure dashboard** to pin the visual representation to your Azure Home screen.

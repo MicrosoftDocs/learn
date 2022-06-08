@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enable-monitoring-end-to-end-tracing.configure-distributed-tracing
-title: Configure Diagnostic Settings
+title: Configure diagnostic settings
 metadata:
-  title: Configure Diagnostic Settings
-  description: "Configure Diagnostic Settings"
+  title: Configure diagnostic settings
+  description: "Configure diagnostic settings"
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
