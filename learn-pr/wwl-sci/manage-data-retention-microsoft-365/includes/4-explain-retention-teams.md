@@ -21,7 +21,7 @@ After a retention policy is configured for chat and channel messages, a timer jo
 
 After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to **retain and then delete**, to **retain only**, or **delete only**.
 
-![retention period processing for Teams channel chats.](../media/teamsretentionlifecycle.png)
+![retention period processing for Teams channel chats.](../media/teams-retention-functionality.png)
 
 The following table provides an overview of the different ways content is held or removed by retention policies for Teams:
 
