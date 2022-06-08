@@ -1,5 +1,3 @@
-### Design a Logging and Auditing Security Strategy
-
 The cloud has dramatically changed the role of the operations team. They
 are no longer responsible for managing the hardware and infrastructure
 that hosts the application. Operations are still a critical part of
@@ -7,13 +5,9 @@ running a successful cloud application. Some of the important functions
 of the operations team include:
 
 -   Deployment
-
 -   Monitoring
-
 -   Escalation
-
 -   Incident response
-
 -   Security auditing
 
 Robust logging and tracing are particularly important in cloud
@@ -21,9 +15,9 @@ applications. Involve the operations team in design and planning to
 ensure the application gives them the data and insight they need to be
 successful.
 
-#### Recommendations
+## Recommendations
 
-1.  **Make all things observable.** Once a solution is deployed and
+* **Make all things observable.** Once a solution is deployed and
     running, logs and traces are your primary insight into the
     system. *Tracing* records a path through the system and is useful to
     pinpoint bottlenecks, performance issues, and failure
@@ -31,7 +25,7 @@ successful.
     state changes, errors, and exceptions. Log in production, or else
     you lose insight at the very times when you need it the most.
 
-2.  **Instrument for monitoring.** Monitoring gives insight into how
+* **Instrument for monitoring.** Monitoring gives insight into how
     well (or poorly) an application performs in terms of availability,
     performance, and system health. For example, monitoring indefinite
     if SLAs are being met. Monitoring happens during the normal
@@ -41,18 +35,18 @@ successful.
     failure. For more information, see [Monitoring and
     diagnostics](https://docs.microsoft.com/azure/architecture/best-practices/monitoring).
 
-3.  **Instrument for root cause analysis.** Root cause analysis is the
+* **Instrument for root cause analysis.** Root cause analysis is the
     process of finding underlying causes of failures. It occurs after a
     failure has already happened.
 
-4.  **Use distributed tracing.** Use a distributed tracing system
+* **Use distributed tracing.** Use a distributed tracing system
     designed for concurrency, asynchrony, and cloud scale. Traces should
     include a correlation ID that flows across service boundaries. A
     single operation may involve calls to multiple application services.
     If an operation fails, the correlation ID helps pinpoint the
     failure's cause.
 
-5.  **Standardize logs and metrics.** The operations team will need to
+* **Standardize logs and metrics.** The operations team will need to
     aggregate logs from across various services in your solution. If
     every service uses its logging format, it becomes difficult or
     impossible to get useful information from them. Define a common
@@ -61,16 +55,16 @@ successful.
     custom schemas that inherit the base schema and contain additional
     fields.
 
-6.  **Automate management tasks**. This includes provisioning,
+* **Automate management tasks**. This includes provisioning,
     deployment, and monitoring. Automating a task makes it repeatable
     and less prone to human errors.
 
-7.  **Treat configuration as code.** Check configuration files into a
+* **Treat configuration as code.** Check configuration files into a
     version control system so that you can track and version your
     changes and roll back if needed.
 
 
-#### Review the cyber kill chain 
+## Review the cyber kill chain 
 
 In the information security lexicon, a kill chain describes the structure of an attack against an objective. The series of steps describe a cyberattacks progression from reconnaissance to data exfiltration. 
 
@@ -78,7 +72,7 @@ Understanding the intention of an attack can help you investigate and report the
 
 ![Diagram that shows how Defender for Cloud defends across attack chains.](../media/defend-across-attack-chains.png)
 
-#### Types of logs in Azure
+## Types of logs in Azure
 
 Cloud applications are complex, with many moving parts. Logging data can provide insights about your applications and help you: 
 
@@ -121,10 +115,10 @@ The following table lists the most important types of logs available in Azure:
 | [Application insight](/azure/azure-monitor/app/app-insights-overview) | Logs, exceptions, and custom diagnostics | Provides an application performance monitoring (APM) service for web developers on multiple platforms. | REST API, [Power BI](https://powerbi.microsoft.com/documentation/powerbi-azure-and-power-bi/) |
 | [Process data / security alerts](/azure/security-center/security-center-introduction) | Microsoft Defender for Cloud alerts, Azure Monitor logs alerts | Provides security information and alerts. | REST APIs, JSON |
 
-### Using the Security Operations Frame 
+## Using the Security Operations Frame 
 
 Azure provides a wide array of configurable security auditing and logging options to help you identify gaps in your security policies and mechanisms. The tables below discuss generating, collecting, and analyzing security logs from services hosted on Azure using the Security Operations Frame for the following items: 
- 	
+
 | Product/Service | Article | 
 |:-:|:-:|
 | Dynamics CRM | [Identify sensitive entities in your solution and implement change auditing](/azure/security/develop/threat-modeling-tool-auditing-and-logging#sensitive-entities) |
@@ -144,7 +138,7 @@ Azure provides a wide array of configurable security auditing and logging option
 | IoT Field Gateway | [Ensure that appropriate auditing and logging is enforced on Field Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-field-gateway) |
 | IoT Cloud Gateway | [Ensure that appropriate auditing and logging is enforced on Cloud Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-cloud-gateway) |
 
-### Protect against threats 
+## Protect against threats 
 
 Security Center's threat protection enables you to detect and prevent threats at the Infrastructure as a Service (IaaS) layer, non-Azure servers, and Platforms as a Service (PaaS) in Azure. 
 
@@ -153,19 +147,12 @@ Security Center's threat protection includes fusion kill-chain analysis, which a
 ![Diagram that shows stages of Cyberattack.](../media/stages-cyberattack.png)
 
 - **Reconnaissance:** The observation stage where attackers assess networks and services to identify possible targets and techniques to gain entry. 
-
 - **Intrusion:** Attackers use the knowledge gained in the reconnaissance phase to get access to a part of a network. This often involves exploring a flaw or security hole. 
-
 - **Exploitation:** This phase involves exploiting vulnerabilities and inserting malicious code onto the system to get more access. 
-
 - **Privilege Escalation:** Attackers often try to gain administrative access to compromised systems to get access to more critical data and move into other connected systems. 
-
 - **Lateral Movement:** This is the act of moving laterally to connected servers and gaining greater access to potential data. 
-
 - **Obfuscation / Anti-forensics:** Attackers need to cover their entry to successfully pull off a cyberattack. They will often compromise data and clear audit logs to prevent detection by any security team. 
-
 - **Denial of Service:** This phase involves disrupting normal access for users and systems to keep the attack from being monitored, tracked, or blocked. 
-
 - **Exfiltration:** The final extraction stage: getting valuable data out of the compromised systems. 
 
 Different types of attacks are associated with each stage, targeting various subsystems. 
