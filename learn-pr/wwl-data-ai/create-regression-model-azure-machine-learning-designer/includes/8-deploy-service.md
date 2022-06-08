@@ -8,11 +8,14 @@ After you've created and tested an inference pipeline for real-time inferencing,
 > ![Locate the deploy button for your Predict Auto Price inference pipeline.](../media/deploy-screenshot.png)
 
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
-2. At the top right, select **Deploy**, and deploy a new real-time endpoint, using the following settings:
+2. Select **Job detail** on the left hand pane. This will open up another window. 
+> ![Click on job details next to the completed job. ](../media/completed-job-inference.png)
+
+3. In the new window, select **Deploy**, and deploy a new real-time endpoint, using the following settings:
     -  **Name**: predict-auto-price
-    -  **Description**: Auto price regression.
+    -  **Description**: Auto price regression
     - **Compute type**: Azure Container Instance
-3. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
+1. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service
 
