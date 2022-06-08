@@ -3,7 +3,7 @@ uid: learn.wwl.protect-endpoints-use-web-application-firewall
 metadata:
   title: Protect endpoints using Web Application Firewall
   description: "Protect endpoints using Web Application Firewall"
-  ms.date: 05/31/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -34,7 +34,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.protect-endpoints-use-web-application-firewall.introduction

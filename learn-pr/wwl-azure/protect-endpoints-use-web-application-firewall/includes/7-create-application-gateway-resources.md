@@ -24,15 +24,15 @@ You're now ready to create an Application Gateway instance to expose your applic
         --resource-group $RESOURCE_GROUP \
         --name $APPGW_IDENTITY_NAME
     
-    APPGW_IDENTITY_CLIENTID=$(az identity show
-        --resource-group $RESOURCE_GROUP
-        --name $APPGW_IDENTITY_NAME
-        --query clientId
+    APPGW_IDENTITY_CLIENTID=$(az identity show \
+        --resource-group $RESOURCE_GROUP \
+        --name $APPGW_IDENTITY_NAME \
+        --query clientId \
         --output tsv)
     
-    APPGW_IDENTITY_OID=$(az ad sp show
-        --id $APPGW_IDENTITY_CLIENTID
-        --query objectId
+    APPGW_IDENTITY_OID=$(az ad sp show \
+        --id $APPGW_IDENTITY_CLIENTID \
+        --query objectId \
         --output tsv)
     ```
 
@@ -53,10 +53,10 @@ You're now ready to create an Application Gateway instance to expose your applic
 4.  Next, you need to retrieve the ID of the self-signed certificate stored in your Key Vault. You'll use the ID in the following step.
     
     ```Bash
-    KEYVAULT_SECRET_ID_FOR_CERT=$(az keyvault certificate show
-        --name $CERT_NAME_IN_KV
-        --vault-name $KEYVAULT_NAME
-        --query sid
+    KEYVAULT_SECRET_ID_FOR_CERT=$(az keyvault certificate show \
+        --name $CERT_NAME_IN_KV \
+        --vault-name $KEYVAULT_NAME \
+        --query sid \
         --output tsv)
     ```
 
