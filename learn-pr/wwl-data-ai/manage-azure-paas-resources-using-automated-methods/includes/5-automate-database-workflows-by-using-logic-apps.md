@@ -77,7 +77,7 @@ The following steps use the Azure portal, but with the appropriate Azure Logic A
 
 1. To add other properties available for this trigger, open the **Add new parameter** list and select those properties.
 
-	>[NOTE!]
+	>[!NOTE]
     > This trigger returns only one row from the selected table, and nothing else. To perform other tasks, continue by adding either a SQL Server connector action or >another action that performs the next task that you want in your logic app workflow.
     > 
     >For example, to view the data in this row, you can add other actions that create a file that includes the fields from the returned row, and then send email alerts. To learn about other available actions for this connector, see the connector's reference page.
@@ -106,7 +106,7 @@ The following steps use the Azure portal. In this example, the logic app workflo
 
     :::image type="content" source="../media/module-66-automation-final-41.png" alt-text="Screenshot showing Consumption workflow designer and the Get row action with the example Table name property value and empty row ID.":::
 
-	>[NOTE!] 
+	>[!NOTE] 
     >This action returns only one row from the selected table, and nothing else. 
 
 1. When you're done, on the designer toolbar, select **Save**.
