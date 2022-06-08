@@ -19,12 +19,11 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Legal Terms**: _Agree_ 
     - **Responsible AI Notice**: _Agree_
 
-3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
-4. View the **Keys and Endpoint** page for your Language service resource. You will need the endpoint and keys to connect from client applications.
+3. Review and create the resource, and wait for deployment to complete. 
 
 ### Create a Conversational Language Understanding App
 
-To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app. 
+To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app to execute. 
 
 1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
 2. If prompted to choose a Language resource, select the following settings:
@@ -41,12 +40,15 @@ To implement natural language understanding with Conversational Language Underst
 3. At the top of the portal, in the **Create new** menu, select **Conversational language understanding**.
 
 4. In the **Create a project** dialog box, on the **Enter basic information** page, enter the following details and click **Next**:
-    - **Name**: HomeAutomation
+    - **Name**: *Create a unique name*
     - **Description**: Simple home automation
     - **Utterances primary language**: English
     - **Enable multiple languages in project**: *Do not select*
 
     ![Enter details for the project.](../media/create-project.png)
+
+>[!TIP]
+>Write down your *project name*, you will use it later.
 
 5. On the *Review and finish* page, click **Create**. 
 
@@ -68,7 +70,7 @@ An *intent* is an action you want to perform - for example, you might want to sw
     - ***put the light on***
     - ***switch on the light***
     - ***turn the fan on***
-4. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**. Type **device** (in lower-case), select **List** and select **Done**. 
+4. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**. Type **device** (in lower-case), select **List** and select **Add entity**. 
 
     ![Add an entity by selecting Tags on the Tagging entities for training panel, then select Add entity.](../media/add-entity.png) 
     ![Type in device under Entity name and select List, then select Add entity.](../media/add-entity-device.png)        
@@ -133,6 +135,9 @@ To use your trained model in a client application, you must deploy it as an endp
     - **Create or select an existing deployment name**: *Select create a new deployment name. Add a unique name*
     - **Assign trained model to your deployment name**: *Select the name of the trained model*
     - Click **Deploy**
+    
+>[!TIP]
+>Write down your *deployment name*, you will use it later. 
 
 3. When the model is deployed, click **Testing deployments** on the left-hand side of the page, and then select your deployed model under **Deployment name**.
 4. Enter the following text, and then select **Run the test**:
@@ -196,38 +201,45 @@ Now let's open and edit a pre-written script, which will run the client applicat
 
 3. In the **Files** pane on the left, select the **understand.ps1** file in the **ai-900** folder. This file contains some code that uses your Conversational Language Understanding model. 
 
-    Don't worry too much about the details of the code, the important thing is that it needs the endpoint and key for your Language service model. You'll get the endpoint and key from the Language Studio.
+    ![The code for the language understanding lab with box around credentials you need to modify and save before running the program.](../media/understand-code.png)
 
-4. Switch back to the browser tab containing Language Studio. Then in Language Studio, open the **Deploying a model** page and select your model. Then click the **Get prediction URL** button. The two pieces of information you need are in this dialog box:
+    Don't worry too much about the details of the code. The important thing is that you'll use the instructions below to modify the file to specify the language model you trained. 
+
+4. Switch back to the browser tab containing **Language Studio**. Then in Language Studio, open the **Deploying a model** page and select your model. Then click the **Get prediction URL** button. The two pieces of information you need are in this dialog box:
     - The endpoint for your model - you can copy the endpoint from the **Prediction URL** box.
     - The key for your model - the key is in the **Sample request** as the value for the **Ocp-Apim-Subscription-Key** parameter, and looks similar to ***0ab1c23de4f56gh7i8901234jkl567m8***.
     
 5. Copy the endpoint value, then switch back to the browser tab containing the Cloud Shell and paste it into the code editor, replacing **YOUR_ENDPOINT** (within the quotation marks). The repeat that process for the key, replacing **YOUR_KEY**.
 
-    After pasting the key and endpoint values, the first lines of code should look similar to what you see below:
+6. Next, replace **YOUR_PROJECT_NAME** with the name of your project, and replace **YOUR_DEPLOYMENT_NAME** with the name of your deployed model. The first lines of code should look similar to what you see below:
 
     ```PowerShell
     $endpointUrl="https://some-name.cognitiveservices.azure.com/language/..."
     $key = "0ab1c23de4f56gh7i8901234jkl567m8"
+    $projectName = "name"
+    $deploymentName = "name"
     ```
 
-6. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
-7. In the PowerShell pane, enter the following command to run the code:
+7. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
+8. In the PowerShell pane, enter the following command to run the code:
 
     ```
     ./understand.ps1 "Turn on the light"
     ``` 
 
-8. Review the results. The app should have predicted that the intended action is to switch on the light.
-9. Now try another command:
+9. Review the results. The app should have predicted that the intended action is to switch on the light.
+10. Now try another command:
 
     ```
     ./understand.ps1 "Switch the fan off"
     ```
 
-10. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
+11. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
 
-11. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
+12. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
+
+>[!NOTE]
+>Each time you will need to start with **./understand.ps1** followed by the phrase. Include quotation marks around your phrase.
 
 ## Learn more
 
