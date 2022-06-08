@@ -13874,6 +13874,11 @@
       "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/describe-microsoft-365-core-services-concepts/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-microsoft-365-core-services-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
