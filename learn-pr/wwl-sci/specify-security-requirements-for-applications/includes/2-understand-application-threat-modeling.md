@@ -3,7 +3,7 @@ Do a comprehensive analysis to identify threats, attacks,
 vulnerabilities, and countermeasures. Having this information can
 protect the application and its threats to the system. Start with simple
 questions to gain insight into potential risks. Then, progress to
-advanced techniques using threat modelling.
+advanced techniques using threat modeling.
 
 #### 1- Gather information about the basic security controls
 
