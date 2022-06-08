@@ -104,5 +104,5 @@ Data engineers can use Microsoft Purview to enforce data governance across the e
 
 ## Microsoft Power BI
 
-![Microsoft Power BI logo](../media/power-bi.png) Microsoft Power BI is a platform for analytical data modeling and reporting that data analysts can use to create and share interactive data visualizations. Power BI reports can be created by using the Power BI Desktop application, and the published and delivered through web-based reports and apps in the Power BI service, as well as in the Power BI mobile app.
+![Microsoft Power BI logo](../media/power-bi.png) Microsoft Power BI is a platform for analytical data modeling and reporting that data analysts can use to create and share interactive data visualizations. Power BI reports can be created by using the Power BI Desktop application, and then published and delivered through web-based reports and apps in the Power BI service, as well as in the Power BI mobile app.
 

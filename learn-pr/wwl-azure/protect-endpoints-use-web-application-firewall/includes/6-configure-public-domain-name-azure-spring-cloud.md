@@ -8,8 +8,8 @@ In this exercise, you'll create a custom domain for the **api-gateway** service 
     VAULTURI=$(az keyvault show -n $KEYVAULT_NAME -g $RESOURCE_GROUP
         --query properties.vaultUri -o tsv)
     ASCDM_OID=$(az ad sp show
-        --id 03b39d0f-4213-4864-a245-b1476ec03169
-        --query objectId
+        --id 03b39d0f-4213-4864-a245-b1476ec03169 \
+        --query objectId \
         --output tsv)
     ```
 
@@ -17,12 +17,12 @@ In this exercise, you'll create a custom domain for the **api-gateway** service 
     
     ```Bash
     az keyvault set-policy -g $RESOURCE_GROUP -n $KEYVAULT_NAME
-        --object-id $ASCDM_OID
-        --certificate-permissions get list
+        --object-id $ASCDM_OID \
+        --certificate-permissions get list \
         --secret-permissions get list
     ```
 
-3.  Add the custom domain and configure TLS using the certificate.
+3.  Next, configure TLS using the certificate.
     
     ```Bash
     CERT_NAME_IN_ASC=openlab-certificate
