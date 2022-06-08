@@ -13,8 +13,7 @@ The retail innovation team reports to the company's chief technology
 officer (CTO), who was the CEO of the acquired e-commerce start-up.
 Those technology solutions are the main hub for interactions with
 customers. Those solutions affect 60 percent of global revenue and
-produce 30 percent of annual gross sales. Examples of those innovations
-include:
+produce 30 percent of annual gross sales.
 
 The new CIO is focused on improving technical operations in multiple
 areas to fuel greater innovation throughout the company while limiting
