@@ -33,7 +33,7 @@ In this task, we will configure Log Analytics and run a query.
 2.  Search for and launch **Log Analytics workspaces**.
 3.  Click **Add** or **Create**.
 4.  On the **Basics** tab, review and complete the required information.
-5.  On the **Pricing tier** tab, review the choices.
+5.  Under the Essentials view, review the **Pricing tier** detail (example: Pricing tier: Pay-as-you-go)
 6.  Finish creating the workspace and wait for it to deploy.
 7.  **Go to resource** and discuss how Log Analytics is used and configured.
 8.  Under **Workspace Data Sources** select **Virtual machines**.
