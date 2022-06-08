@@ -106,7 +106,7 @@ researchers, law enforcement professionals, security teams at Microsoft,
 and other trusted sources. The image below has an example of the risk
 detection capability in Azure AD Identity Protection:
 
-![Diagram showing an example of the risk detection capability in Azure AD Identity Protection.](../media/security-risk-detections.png) 
+:::image type="content" source="../media/security-risk-detections.png" alt-text="Diagram showing an example of the risk detection capability in Azure A D Identity Protection." lightbox="../media/security-risk-detections.png":::
 
 ## Risk mitigations
 
