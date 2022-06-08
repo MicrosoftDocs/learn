@@ -37,7 +37,7 @@ roles:
 products:
 - azure
 - azure-database-mysql
-- azure-spring-cloud
+- azure-spring-apps
 subjects:
 - development-tools
 units:
