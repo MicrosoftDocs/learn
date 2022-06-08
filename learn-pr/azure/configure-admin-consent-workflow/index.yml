@@ -35,9 +35,7 @@ subjects:
 units:
 - learn.configure-admin-consent-workflow.introduction
 - learn.configure-admin-consent-workflow.choose-secure-consent-setting
-- learn.configure-admin-consent-workflow.exercise-create-test-app
-- learn.configure-admin-consent-workflow.configure-admin-consent-workflow
-- learn.configure-admin-consent-workflow.exercise-configure-admin-consent-workflow
+- learn.configure-admin-consent-workflow.exercise-enable-admin-consent-workflow
 - learn.configure-admin-consent-workflow.manage-evaluate-consent-requests
 - learn.configure-admin-consent-workflow.exercise-review-admin-consent-requests
 - learn.configure-admin-consent-workflow.knowledge-check

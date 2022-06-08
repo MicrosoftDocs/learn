@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-manage-evaluate-consent-requests.md)]
+  [!include[](includes/4-manage-evaluate-consent-requests.md)]
