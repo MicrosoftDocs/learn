@@ -1,7 +1,7 @@
-In this exercise you will configure logical replication, which is native to PostgreSQL. You will create two servers which act as publisher and subscriber. Data in the zoodb will be replicated between them.
+In this exercise you'll configure logical replication, which is native to PostgreSQL. You will create two servers, which act as publisher and subscriber. Data in the zoodb will be replicated between them.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete this exercise. If you do not have an Azure subscription, you can create an [Azure free trial]([https://azure.microsoft.com/free]{.underline}).
+> You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial]([https://azure.microsoft.com/free]{.underline}).
 
 ## Create resource group
 
@@ -20,12 +20,12 @@ In this exercise you will configure logical replication, which is native to Post
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. Subscription - your subscription.
     1. Resource group - select **PostgreSQL_Replication**.
-    1. Server name - **postgresql-pub99** (This must be globally unique, so replace 99 with random numbers).
+    1. Server name - **postgresql-pub99** (Name must be globally unique, so replace 99 with random numbers).
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Development**.
-    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Do not make any changes and close the blade.
-    1. Availability zone - 1. If availability zones are not supported, leave as No preference.
+    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the blade.
+    1. Availability zone - 1. If availability zones aren't supported, leave as No preference.
     1. High availability - leave unchecked.
     1. In **admin username**, enter **demo**.
     1. In **password**, enter **Pa$$w0rd**.
@@ -44,12 +44,12 @@ In this exercise you will configure logical replication, which is native to Post
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. Subscription - your subscription.
     1. Resource group - select **PostgreSQL_Replication**.
-    1. Server name - **postgresql-sub99** (This must be globally unique, so replace 99 with random numbers).
+    1. Server name - **postgresql-sub99** (Name must be globally unique, so replace 99 with random numbers).
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Development**.
-    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Do not make any changes and close the blade.
-    1. Availability zone - 2. If availability zones are not supported, leave as No preference.
+    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the blade.
+    1. Availability zone - 2. If availability zones aren't supported, leave as No preference.
     1. High availability - leave unchecked.
     1. In **admin username**, enter **demo**.
     1. In **password**, enter **Pa$$w0rd**.
@@ -70,7 +70,7 @@ For both the publisher and subscriber servers:
     1. max_worker_processes = 24
 1. Select **Save**. Then select **Save and Restart**.
 
-## Setup the publisher
+## Set up the publisher
 
 1. Open Azure Data Studio and connect to the publisher server. (Copy the server name from the Overview blade.)
 1. Open the script **Lab6_Replication.sql** and connect to the server.
@@ -79,9 +79,9 @@ For both the publisher and subscriber servers:
 1. Select zoodb as the current database using the dropdown list on the toolbar. Verify that zoodb is the current database by running the **SELECT** statement.
 1. Highlight and run the section **Create tables and foreign key constraints in zoodb**.
 1. Highlight and run the section **Populate the tables in zoodb**.
-1. Highlight and run the section **Create a publication**. When you run the SELECT statement it will not list anything, because the replication is not yet active.
+1. Highlight and run the section **Create a publication**. When you run the SELECT statement it will not list anything, because the replication isn't yet active.
 
-## Setup the subscriber
+## Set up the subscriber
 
 1. Open a second instance of Azure Data Studio.
 1. Open the script **Lab6_Replication.sql** and connect to the subscriber server. (Copy the server name from the Overview blade.)
@@ -91,7 +91,7 @@ For both the publisher and subscriber servers:
 1. Highlight and run the section **Create tables and foreign key constraints in zoodb**.
 1. Scroll down to the section **Create a subscription**.
     1. Edit the **CREATE SUBSCRIPTION** statement so that it has the correct publisher server name. Highlight and run the statement.
-    1. Highlight and run the **SELECT** statement. This shows the subscription "sub" that you have created.
+    1. Highlight and run the **SELECT** statement. This shows the subscription "sub" that you've created.
 1. Under the section **Display the tables**, highlight and run each **SELECT** statement. The tables have been populated by replication from the publisher.
 
 ## Make changes to the publisher database
@@ -102,7 +102,7 @@ For both the publisher and subscriber servers:
 
 - In the second instance of Azure Data Studio (subscriber), under **Display the animal tables** highlight and run the **SELECT** statement.
 
-You have now created two Azure Database for PostgreSQL flexible servers and configured one as a publisher, and the other as a subscriber. In the publisher database you created and populated the zoo database. In the subscriber database, you created an empty database which was then populated by streaming replication.
+You've now created two Azure Database for PostgreSQL flexible servers and configured one as a publisher, and the other as a subscriber. In the publisher database you created and populated the zoo database. In the subscriber database, you created an empty database, which was then populated by streaming replication.
 
 > [!IMPORTANT]
-> Once you have finished the exercise, delete both servers. You will be charged for the servers unless you either STOP or DELETE them.
+> Once you've finished the exercise, delete both servers. You'll be charged for the servers unless you either STOP or DELETE them.

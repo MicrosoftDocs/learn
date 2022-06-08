@@ -2,18 +2,18 @@ The parameter **wal_level** allows you to define how much information should be 
 
 ## High availability
 
-High availability is an Azure Database for PostgreSQL service, which provides a standby server ready to take over in the event of a failure on your live server. High availability in Azure Database for PostgreSQL flexible server uses replication to automatically update the standby server with data changes.
+High availability is an Azure Database for PostgreSQL service, which provides a standby server ready to take over if there's a failure on your live server. High availability in Azure Database for PostgreSQL flexible server uses replication to automatically update the standby server with data changes.
 
 When you configure high availability for Azure Database for PostgreSQL flexible server, the **primary** server is placed in one availability zone, and a **standby** server is created in a different availability zone. Data is replicated from the primary server to the standby server using PostgreSQL streaming replication in synchronous mode.
 
-Each availability zone consists of one or more data centers. Availability zones have their own power supplies, cooling systems, network infrastructure, etc making them completely independent of each other. Three copies of data files and WAL log files are stored on locally redundant storage within each availability zone, providing physical isolation between primary and standby servers. If one availability zone fails, the other two will likely keep working. Availability zones within a region are connected by fast fibre networks with round-trip latency of less than 2 milliseconds.
+Each availability zone consists of one or more data centers. Availability zones have their own power supplies, cooling systems, network infrastructure, etc., making them independent of each other. Three copies of data files and WAL log files are stored on locally redundant storage within each availability zone, providing physical isolation between primary and standby servers. If one availability zone fails, the other two will likely keep working. Availability zones within a region are connected by fast fibre networks with round-trip latency of less than 2 milliseconds.
 
 :::image type="content" source="../media/availability-zones.png" alt-text="Image showing availability zones within a region are connected by fast fibre networks." lightbox="../media/availability-zones.png":::
 
 > [!NOTE]
 > Not all regions have availability zones.
 
-With high availability, data is duplicated all the time the database is in use, providing an up-to-date copy of the original. In the event of a crash, the replica can be used in place of the original. Replication has a **primary** server and a **standby** server. The **primary** server sends WAL log files to the **standby** server, which receives the WAL log files.
+With high availability, data is duplicated all the time the database is in use, providing an up-to-date copy of the original. If there's a crash, the replica can be used in place of the original. Replication has a **primary** server and a **standby** server. The **primary** server sends WAL log files to the **standby** server, which receives the WAL log files.
 
 The standby server reports back to the primary server with information such as the last write-ahead log it has written, and the last position flushed to disk, etc. To define the minimum frequency for the WAL receiver to send back a report, set the **wal_receiver_status_interval** parameter. The **max_replication_slots** parameter defines the maximum number of replication slots that the server can be support. When **wal_level** is set to REPLICA, **max_replication_slots** must be at least one, however, the allowed value range is between and 2 and 262,143.
 
@@ -28,17 +28,17 @@ The primary and standby servers are monitored, and appropriate actions are taken
 - **Healthy** - The standby is being updated by the primary.
 - **Failing Over** - The primary database server is in the process of failing over to the standby.
 - **Removing Standby** - In the process of deleting standby server.
-- **Not Enabled** - Zone redundant high availability is not enabled.
+- **Not Enabled** - Zone redundant high availability isn't enabled.
 
-You can add high availability for an existing database server. If you are enabling or disabling high availability on a live server, perform the operation when there is little activity.
+You can add high availability for an existing database server. If you're enabling or disabling high availability on a live server, perform the operation when there's little activity.
 
-From the Azure Portal:
+From the Azure portal:
 
 1. Navigate to your Azure Database for PostgreSQL server.
 1. From the **Overview** blade, select your current **Configuration**. The **Compute + Storage** blade is displayed.
-1. Under High availability, select **High Availability (zone redundant)** check box to enable high availability. High availability is not supported for Burstable tier.
+1. Under High availability, select **High Availability (zone redundant)** check box to enable high availability. High availability isn't supported for Burstable tier.
 
-It is important to note that high availability is a disaster recovery option. You cannot use the standby server for any other purpose, such as allowing access to read-only databases. You can, however, configure replication between two Azure Database for PostgreSQL servers using a publisher and subscriber model. This maintains two servers with data being replicated between them. You then have full access to the subscriber server and can use the databases for any purpose. You will practice this in the exercise at the end of this module.
+It's important to note that high availability is a disaster recovery option. You can't use the standby server for any other purpose, such as allowing access to read-only databases. You can, however, configure replication between two Azure Database for PostgreSQL servers using a publisher and subscriber model. This maintains two servers with data being replicated between them. You then have full access to the subscriber server and can use the databases for any purpose. You'll practice this in the exercise at the end of this module.
 
 ## Logical decoding
 
@@ -46,9 +46,9 @@ Logical decoding also uses data sent to the write-ahead log. As the name suggest
 
 Logical decoding might be used for auditing, analytics, or any other reason you might be interested in knowing what has changed, and when it changed.
 
-Logical decoding extracts changes from all tables in the database. It differs from replication in that it cannot send these changes to another PostgreSQL instances. Instead, a PostgreSQL extension is plugin to stream the changes.
+Logical decoding extracts changes from all tables in the database. It differs from replication in that it can't send these changes to another PostgreSQL instances. Instead, a PostgreSQL extension is plugin to stream the changes.
 
-Logical decoding allows the contents of the write-ahead log to be decoded into an easy-to-understand format which can be interpreted without knowledge of the database structure. Azure Database for PostgreSQL supports logical decoding and the **wal2json** plugin, which is installed on Azure Database for Postgres servers.
+Logical decoding allows the contents of the write-ahead log to be decoded into an easy-to-understand format, which can be interpreted without knowledge of the database structure. Azure Database for PostgreSQL supports logical decoding and the **wal2json** plugin, which is installed on Azure Database for Postgres servers.
 
 Other extensions can be used, such as the pglogical extension, which allows logical streaming replication.
 
