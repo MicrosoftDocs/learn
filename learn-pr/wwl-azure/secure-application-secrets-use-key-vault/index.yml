@@ -33,7 +33,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.secure-application-secrets-use-key-vault.introduction
