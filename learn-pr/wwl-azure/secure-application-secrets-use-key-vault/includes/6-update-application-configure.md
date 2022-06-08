@@ -3,7 +3,7 @@ You now have everything in place to start using the identities from Key Vault an
 1.  From the Git Bash window, in the config repository you cloned locally, use your text editor to open the **application.yml** file. Remove the lines 83 and 84 that contain the values of the admin user account name and its password for target datasource endpoint.
     
     > [!NOTE]
-    > The lines 83 and 84 should have the following content (where, the *`<your-server-name>`* and*`<myadmin-password>`* represent the name of the Azure Database for MySQL Single Server instance and the password you assigned to the **myadmin** account during its provisioning).
+    > The lines 83 and 84 should have the following content (where, the *`<your-server-name>`* and *`<myadmin-password>`* represent the name of the Azure Database for MySQL Single Server instance and the password you assigned to the **myadmin** account during its provisioning).
 
 2.  Save the changes and push the updates you made to the **application.yml**file to your private GitHub repo by running the following commands from the Git Bash prompt:
     
