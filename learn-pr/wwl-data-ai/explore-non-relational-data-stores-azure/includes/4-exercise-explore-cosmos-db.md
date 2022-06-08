@@ -26,7 +26,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ## Create a sample database
 
-1. On the page for your new Cosmos DB account, in the pane n the left, select **Data Explorer**.
+1. On the page for your new Cosmos DB account, in the pane on the left, select **Data Explorer**.
 1. In the **Data Explorer** page, select **Start with Sample** and then observe the status in the panel at the bottom of the screen until the **SampleDB** database and the sample **Persons** container has been created (which may take a minute or so).
 1. Select **Close** on the notification message.
 
