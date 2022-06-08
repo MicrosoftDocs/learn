@@ -1,4 +1,4 @@
-In the Spring Petclinic application, the *messaging-emulator* microservice is already prepared to send messages to an Azure Service Bus. You can use the existing microservices public endpoint to send messages to the Service Bus.
+In the Spring Petclinic application, the **messaging-emulator** microservice is already prepared to send messages to an Azure Service Bus. You can use the existing microservices public endpoint to send messages to the Service Bus.
 
 In this unit, you'll do the following activities:
 
@@ -15,7 +15,7 @@ Do the following procedure to send messages to an Azure Service Bus.
 1.  Create a new application in your Spring Cloud Service for the `messaging-emulator`and assign it a public endpoint.
     
     ```azurecli
-    az spring-cloud app create
+    az spring-cloud app create \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name messaging-emulator \
@@ -51,7 +51,7 @@ Do the following procedure to send messages to an Azure Service Bus.
 4.  Deploy the **messaging-emulator``**application.
     
     ```azurecli
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name messaging-emulator \
@@ -61,18 +61,21 @@ Do the following procedure to send messages to an Azure Service Bus.
     ```
 
 5.  From the Azure portal, navigate to your resource group and to your Azure Spring Apps Service.
-6.  Select **Apps** in your Azure Spring Apps Service and select the **messaging-emulator** app.
+6.  From **Settings**, select **Apps.** Wait until the **Provisioning state** of the **messaging-emulator** app changes to **Succeeded**, then select **messaging-emulator.**
 7.  Select the *URL* on the overview page and open the microservice in separate browser tab.
-8.  Add a number for the**Pet** and a **Message** and select **Submit**.
+8.  From the open browser titled **Message**, enter **1** in the **Pet** text box and text in the **Message** box. Select **Submit.**
 9.  From the Azure portal, navigate to your Service Bus namespace.
 10. Select **Queues** and the **visits-requests** queue.
-11. On the overview page, you'll see that there's an active message count of 1.
-12. Select **Service Bus Explorer (Preview)** and select **Peek** allowing a view of the messages in the queue without dequeuing.
+11. On the **Overview** page, you'll see that there's an active message count of **1**.
+12. Select **Service Bus Explorer (Preview)** and select **Peek from start** allowing a view of the messages in the queue without dequeuing.
 13. Select **Peek**. You'll view information for the message recently placed in the message queue.
+14. Select the message entry in the queue and review the **Message Body** section to confirm that its content matches the message you submitted.
 
 To inspect the code of the **messaging-emulator** microservice, review:
 
- -  Dependencies for the Service Bus in the ***pom.xml*** file.
+ -  Dependencies for the Service Bus in the **pom.xm*l*** file.
  -  The `PetClinicVisitRequestSender` and `PetClinicMessageResponsesReceiver` classes in the `service` folder. The classes enable sending and receiving messages to and from a queue using JMS.
- -  The `PetClinicMessageRequest` and `PetClinicMessageResponse` classes in the ***entity***folder to see the messages being send back and forth.
- -  The `MessagingConfig`class in the ***config***folder provides conversion to and from JSON.
+ -  The `PetClinicMessageRequest` and `PetClinicMessageResponse` classes in the **entity** folder to see the messages being send back and forth.
+ -  The `MessagingConfig`class in the **config** folder provides conversion to and from JSON.
+
+In the next unit, you'll add similar functionality to the **visits** service.
