@@ -12,7 +12,7 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
    > [!div class="nextstepaction"]
    > [Azure portal for the sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 
-2. Use the **Search resources, services, and docs** text box at the top of the page to search for and select **Azure Database for MySQL**.
+2. Use the **Search resources, services, and docs** text box at the top of the page to search for *MySQL* and select **Azure Database for MySQL servers**.
 
    :::image type="content" source="../media/search-resources-services-and-docs.png" alt-text="Screenshot of the search bar":::
 
@@ -34,8 +34,8 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
    | **Workload type**            | For development or hobby projects        | Enter the intended workload type, which determines the VM SKU to host the server. |
    | **Availability zone**        | No preference                            | This is the setting that allows you to specify an availability zone where the server will  be deployed. Your choice is typically based on the zone hosting the  application tier. |
    | **Enable high availability** | Not selected                             | This is the setting that determines whether you want to have a replica server  automatically provisioned in another availability zone (for zonal  deployments). This option requires the choice of either **General Purpose** or **Business Critical** VM SKUs  compute tier). |
-   | **Admin username**           | *mysqlfsadmin*                           | Enter any valid user name, which will be configured as the admin account for the MySQL server instance. Do not use azure_superuser, admin, administrator, root,  guest, or public.                                                               |
-   | **Password**                 | *Passw0rd123*                            | Enter any valid password that is assigned to the admin account. It must contain between  8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and non-alphanumeric characters (such as !, $, #, %). |
+   | **Admin username**           | mysqladmin                               | You can enter any valid user name, which will be configured as the admin account for the MySQL server instance. in this case we are using *mysqladmin*. Do not use azure_superuser, admin, administrator, root,  guest, or public.                                                                   |
+   | **Password**                 | Passw0rd123                              | You can enter any valid password that is assigned to the admin account. In this case we are suing *Passw0rd123*. It must contain between 8 and 128 characters, and include characters from three of the following  categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and non-alphanumeric characters (such as !, $, #, %). |
 
 6. On the **Basics** tab, under **Compute + Storage**, select **Configure server**.
 
@@ -74,8 +74,6 @@ Use the following procedure to deploy an Azure Database for MySQL Flexible Serve
 13. Wait for the provisioning process to complete. This might take about 10 minutes.
 
 14. Now the deployment is complete
-
-   :::image type="content" source="../media/deployment-complete.png" alt-text="Screenshot of deployment complete message":::
 
 15. On the **Overview** page, select **Go to resource** to navigate to the page for the newly deployed Azure Database for MySQL Flexible Server.
 
