@@ -1,10 +1,13 @@
-Now that you've begun collecting log data from your Spring Cloud Service, your next step will be to query the log data.
+Now that you've been collecting log data from your Spring Cloud Service, your next step will be to query the log data.
 
-Use this guidance to view the following entries:
+In this section, you'll view the following entries:
 
  -  Log entries containing errors or exceptions
  -  Ingress log entries.
  -  Container log entries
+
+:::image type="content" source="../media/service-logs-a667bb5c.png" alt-text="Displays a screenshot of the Service instande logs.":::
+
 
 To view the log entries, do the following procedures.
 
