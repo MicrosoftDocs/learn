@@ -1,6 +1,6 @@
 Let’s explore the Adventure Works data in more detail, and see what additional insights we can get by combining the data that is stored in the Azure Cosmos DB Core (SQL) API, and the Azure Cosmos DB API for MongoDB. 
 
-We are primarily going to use Spark SQL to explore this data, so most code with start with **%%sql** construct.
+We're primarily going to use Spark SQL to explore this data, so most code with start with **%%sql** construct.
 
 To begin, the two options available for querying the Azure Cosmos DB analytical store from Spark include:
 
@@ -43,7 +43,7 @@ We have so far used loading the data into a DataFrame as the approach, let us cr
     -	**spark.synapse.linkedService** to the name of our previously create linked service.
     -	**spark.cosmos.container** specifying the name of the container.
 
-    You can also optionally set the **spark.cosmos.preferredRegions** option to a list of preferred regions to use if you are using a Cosmos DB account with multiple regions configured.
+    You can also optionally set the **spark.cosmos.preferredRegions** option to a list of preferred regions to use if you're using a Cosmos DB account with multiple regions configured.
 
     Additionally, you can override the default behavior of the table, which is to have a stable schema based on the analytical store schema as at the time of creation, by setting the spark.cosmos.autoSchemaMerge option to true. Set the spark.cosmos.autoSchemaMerge to true if you wish for the schema changes made to the Cosmos DB container and associated analytical store to be immediately reflected in the table. 
 
@@ -84,13 +84,13 @@ We have so far used loading the data into a DataFrame as the approach, let us cr
 
     We’re doing a lot here so let’s break it down. 
     
-    We are now using Spark SQL to create a temporary view called **SalesOrderView (D)**.
+    We're now using Spark SQL to create a temporary view called **SalesOrderView (D)**.
     
-    Within which we are **renaming the _id column from the SalesOrders table to SalesOrderId (F)**, as the _id property is the ID of all Adventure Works sales order records. We have also **accessed the string values for this column by specifying _id.string (E)**. In a similar manner, we are accessing the address.country and address.city properties embedded in the address of the Customer table. 
+    Within which we're **renaming the _id column from the SalesOrders table to SalesOrderId (F)**, as the _id property is the ID of all Adventure Works sales order records. We have also **accessed the string values for this column by specifying _id.string (E)**. In a similar manner, we're accessing the address.country and address.city properties embedded in the address of the Customer table. 
     
-    We are converting the data type of the ship date and order date properties to the date data type using the Spark SQL to_date() function, remembering to access the string values using the shipdate.string and orderdate.string respectively from the **SalesOrder table (G)**. 
+    We're converting the data type of the ship date and order date properties to the date data type using the Spark SQL to_date() function, remembering to access the string values using the shipdate.string and orderdate.string respectively from the **SalesOrder table (G)**. 
     
-    And lastly, we are joining the Customers table with the SalesOrders table using the customer ID (in the case of Customers, this is stored in the column ID, and in the case of SalesOrder, the CustomerId column, remembering to access the string values using CustomerId.string. 
+    And lastly, we're joining the Customers table with the SalesOrders table using the customer ID (in the case of Customers, this is stored in the column ID, and in the case of SalesOrder, the CustomerId column, remembering to access the string values using CustomerId.string. 
     
     As the Adventure Works sales order records are stored in Azure Cosmos DB API for MongoDB account, and these accounts use full fidelity schema representation by default, we need to include the type of suffix to access the property values for the SalesOrders table. The Adventure Works customer profile records are store in Azure Cosmos DB Core (SQL) API account and these accounts use well-defined schema representation, so we do not need to include the type suffix to access the property values. 
 
