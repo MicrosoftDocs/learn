@@ -64,4 +64,4 @@ see the policy tagged as such in this column. You can also use the
 column filter to limit the view to only policies that are tagged as
 *Security Baseline*.
 
-:::image type="content" source="../media/security-baseline.png" alt-text="Screenshot showing examples of security baselines." lightbox="media/article-folder-name/image-file-expanded.png":::
+:::image type="content" source="../media/security-baseline.png" alt-text="Screenshot showing examples of security baselines." lightbox="../media/security-baseline.png":::
