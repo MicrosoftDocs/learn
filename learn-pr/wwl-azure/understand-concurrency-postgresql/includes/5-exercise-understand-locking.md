@@ -69,9 +69,9 @@
 1. Select **Restore**.
     :::image type="content" source="../media/restore.png" alt-text="Screenshot of Restore dialog box.":::
 1. Wait until the restore process completes.
-1. You can disregard any errors that occur because those objects are not required for these modules.
+1. You can disregard any errors that occur because those objects aren't required for these modules.
 
-## Task 1: Investigate default locking behaviour
+## Task 1: Investigate default locking behavior
 
 1. Start **Azure Data Studio**.
 1. In **SERVERS**, select **New connection**.
@@ -100,9 +100,9 @@
         SET stockedqty=stockedqty+1
     ```
 
-1. Notice that the second query begins a transaction, but does not commit the transaction.
+1. Notice that the second query begins a transaction, but doesn't commit the transaction.
 1. Return to **SQLQuery_1** and run the query again.
-1. Notice that the **stockedqty** value for the first row is still **15**. The query is using a snapshot of the data and is not seeing the updates from the other transaction.
+1. Notice that the **stockedqty** value for the first row is still **15**. The query is using a snapshot of the data and isn't seeing the updates from the other transaction.
 1. Select the **SQLQuery_2** tab, delete the existing query, type the following query and select **Run**.
 
     ```sql
@@ -120,9 +120,9 @@
         SET stockedqty=stockedqty+1
     ```
 
-1. Notice that the second query begins a transaction, but does not commit the transaction.
+1. Notice that the second query begins a transaction, but doesn't commit the transaction.
 1. Return to **SQLQuery_1** and run the query again.
-1. Notice that the transaction is blocked and will not complete, however long you wait.
+1. Notice that the transaction is blocked and won't complete, however long you wait.
 1. Select the **SQLQuery_2** tab, delete the existing query, type the following query and select **Run**.
 
     ```sql
@@ -130,4 +130,4 @@
     ```
 1. Return to **SQLQuery_1**, wait for a few seconds and notice that the query has completed was the block was removed.
 
-In this exercise, we have seen the default locking behavior. We then applied locks explicitly and saw that although some locks provide very high levels of protection, these locks can also have performance implications.
+In this exercise, we've seen the default locking behavior. We then applied locks explicitly and saw that although some locks provide very high levels of protection, these locks can also have performance implications.
