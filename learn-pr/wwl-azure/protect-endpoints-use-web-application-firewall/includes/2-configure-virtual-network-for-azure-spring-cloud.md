@@ -7,7 +7,7 @@ For example, you can route traffic based on the incoming URL. So if `/documents`
 :::image type="content" source="../media/application-gateway-overview-431dbbb9.png" alt-text="Screenshot of showing how to route traffic based on the incoming URL.":::
 
 
-You'll provide the networking resources for your Spring Cloud service and your Application Gateway. To deploy them in the same virtual network, you'll need a minimum of three subnets: one for your Application Gateway and two for your Spring Cloud service. You'll also create the subnet containing Private Endpoints for backend services to your applications use, like your database and the Azure Key Vault.
+You'll provide the networking resources for your Spring Cloud service and your Application Gateway. To deploy them in the same virtual network, you'll need a minimum of three subnets: one for your Application Gateway and two for your Spring Cloud service. You'll also create the subnet containing Private Endpoints for backend services to your applications to use, like your database and the Azure Key Vault.
 
 1.  Create a virtual network using the following commands from the Git Bash prompt:
     
