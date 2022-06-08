@@ -29,7 +29,6 @@ roles:
   - administrator
 products:
 - azure
-- m365
 subjects: 
 - security
 units:

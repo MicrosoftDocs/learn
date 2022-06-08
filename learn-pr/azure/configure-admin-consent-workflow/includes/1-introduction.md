@@ -8,6 +8,8 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 
 Admin consent workflow provides a secure way for administrators to onboard new applications into their organizations while still supporting the users through the process.
 
+>[!Video <https://www.youtube.com/embed/19v7WSt9HwU>]
+
 For admin consent workflow, a combination of tasks is required.
 
 - **Create a single page application and register it as an Azure AD application** - Download a code sample to quickly set up the application locally. Register this application in Azure AD to acquire an access token for users to sign in with Azure AD.
