@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cloud-admin-provision-manage
 metadata:
   title: Provision and manage cloud services
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about the different types of resources available on the cloud and the technology behind how they work.
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -28,6 +28,7 @@ prerequisites: |
   - Understand the economic benefits of the cloud for cloud users and cloud service providers
   - Know the terms SLA and SLO 
 iconUrl: /learn/achievements/cmu-cloud-admin/cloud-admin-provision-manage.svg
+hidden: true
 levels:
 - beginner
 roles:
