@@ -67,7 +67,7 @@ products:
 - azure-cosmos-db
 - azure-database-mysql
 #- azure-devops
-- azure-spring-cloud
+- azure-spring-apps
 - azure-web-apps
 - msal-java
 - azure-service-bus
