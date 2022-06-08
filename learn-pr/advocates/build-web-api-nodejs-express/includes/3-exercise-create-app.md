@@ -19,8 +19,8 @@ Create a basic application that handles requests.
    In the `dependencies` section, locate the `express` entry:
    
    ```bash
-     "dependencies": {
-    "express": "^4.18.1"
+   "dependencies": {
+     "express": "^4.18.1"
    ```
   
    This entry indicates the Express framework is installed.
@@ -152,7 +152,7 @@ Use the same app.js file to add a new route.
    Example app listening on port 3000!
    ```
 
-1. Open a browser and go to `http://localhost:3000/products`. You should see the following output:
+1. In a browser, go to `http://localhost:3000/products`. You should see the following output:
 
    ```output
    [{"id":1,"name":"hammer"},{"id":2,"name":"screwdriver"},{"id":3,"name":"wrench"}]

@@ -37,7 +37,7 @@ In this exercise, you'll use an example project that has product files and start
 
    `npm` reads from the `dependencies` section in the package.json file and installs the required packages.
 
-1. In a code editor, open the Express **app.js** file and inspect the contents:
+1. In a code editor, open the **app.js** file and inspect the contents:
 
    ```javascript
    const express = require("express");
@@ -69,7 +69,7 @@ In this exercise, you'll use an example project that has product files and start
 
    The code contains a functioning Express application with three routes: slash `/`, `/users`, and `/products`.
 
-   Close the app.js file.
+   - Close the app.js file.
 
 1. In a code editor, open the **client.js** application file and inspect the contents:
 
@@ -100,12 +100,12 @@ In this exercise, you'll use an example project that has product files and start
 
    The client application code connects to the address `http://localhost:3000/users` for the `/users` route. The client listens for three events: `data`, `end`, and `close`.
 
-   Close the client.js file.
+   - Close the client.js file.
 
 
-## Run the client with the Express program 
+## Run the Express program 
 
-Now you're ready to use the client application with the Express program.
+Now you're ready to try the Express program with a client application.
 
 1. In the terminal, run the Express program by entering this command:
 
@@ -128,9 +128,9 @@ Now you're ready to use the client application with the Express program.
 
     1. Start the client application:
 
-      ```bash
-      node client.js
-      ```
+       ```bash
+       node client.js
+       ```
 
    In the second terminal, you should see the following output from the client:
 
@@ -141,7 +141,7 @@ Now you're ready to use the client application with the Express program.
    Closing connection
    ```
 
-   The server application responds with some user data, `chunk [{"id":1,"name":"User Userson"}]`. All the parts of the application work. 
+   The Express program responds with some user data, `chunk [{"id":1,"name":"User Userson"}]`. All the parts of the application work. 
 
    The client program ends after it displays the output.
    
@@ -150,7 +150,7 @@ Now you're ready to use the client application with the Express program.
 
 ## Protect the route
 
-To protect this route, we'll add some code on the server application.
+To protect this route, we'll add some code to the Express application.
 
 1. In a code editor, open the node-essentials/nodejs-http/exercise-express-middleware/app.js file. Locate the `const app = express()` statement. After this statement, add the following code:
 
@@ -197,9 +197,9 @@ To protect this route, we'll add some code on the server application.
 1. Save and close the app.js file.
 
 
-## Run the client with the Express program 
+## Run the Express program and invoke the middleware 
 
-Try the updated client application again with the Express program.
+Try the client again with the updated server program.
 
 1. In the first terminal, run the following command to restart the Express program:
 
@@ -222,7 +222,7 @@ Try the updated client application again with the Express program.
    Closing connection
    ```
 
-   This time, the `isAuthorized()` middleware is invoked and looks for an `authorization` header that has a specific value. Because you didn't provide a specific value as part of your request, the code didn't respond with specific user data. Instead, the client responded with `chunk Not permitted`. You'll add specific authorization in the next section.
+   This time, the `isAuthorized()` middleware is invoked and looks for an `authorization` header that has a specific value. Because you didn't provide a specific value as part of your request, the code didn't respond with specific user data. Instead, the response was `chunk Not permitted`. You'll add specific authorization in the next section.
 
 1. In the first terminal, press Ctrl + C to stop the program.
 
@@ -248,9 +248,9 @@ You need to add an `authorization` header for a specific value.
 1. Save and close the client.js file.
 
 
-## Test the Express app for an authorized route
+## Run the Express program with client authorization
 
-Now try the client application with an authorized request to the Express app.
+Try the client again with an `authorization` header.
 
 1. In the first terminal, run the following command to restart the Express program:
 
