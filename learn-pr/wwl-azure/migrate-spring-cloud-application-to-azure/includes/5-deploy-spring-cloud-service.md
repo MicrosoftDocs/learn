@@ -147,7 +147,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     ```
     
     > [!NOTE]
-    > Wait for the opeation to complete, about 5 minutes.
+    > Wait for the operation to complete, about 5 minutes.
 
 12. In this case, you'll also skip the endpoint assignment but include the mysql profile:
     
