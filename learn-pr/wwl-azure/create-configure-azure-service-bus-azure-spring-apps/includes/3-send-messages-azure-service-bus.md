@@ -67,7 +67,7 @@ Do the following procedure to send messages to an Azure Service Bus.
 9.  From the Azure portal, navigate to your Service Bus namespace.
 10. Select **Queues** and the **visits-requests** queue.
 11. On the **Overview** page, you'll see that there's an active message count of **1**.
-12. Select **Service Bus Explorer (Preview)** and select **Peek firom start** allowing a view of the messages in the queue without dequeuing.
+12. Select **Service Bus Explorer (Preview)** and select **Peek from start** allowing a view of the messages in the queue without dequeuing.
 13. Select **Peek**. You'll view information for the message recently placed in the message queue.
 14. Select the message entry in the queue and review the **Message Body** section to confirm that its content matches the message you submitted.
 
