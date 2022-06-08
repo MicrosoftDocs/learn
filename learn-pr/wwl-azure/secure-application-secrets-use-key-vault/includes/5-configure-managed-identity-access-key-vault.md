@@ -1,4 +1,4 @@
-By now, you've created a managed identity for `spring-petclinic-customers-service`, `spring-petclinic-vets-service` and `spring-petclinic-visits-service`. The three apps use the database hosted by the Azure Database for MySQL Single Server instance.
+You've created a managed identity for `spring-petclinic-customers-service`, `spring-petclinic-vets-service` and `spring-petclinic-visits-service`. The three apps use the database hosted by the Azure Database for MySQL Single Server instance.
 
 The three apps of your application use the database hosted by the Azure Database for MySQL Single Server instance, so their managed instances will need to be granted permissions to access the secrets:
 
