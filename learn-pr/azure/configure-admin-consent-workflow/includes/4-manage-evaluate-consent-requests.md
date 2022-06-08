@@ -1,4 +1,4 @@
-Once the user submits the request for admin consent via the consent prompt, a designated reviewer recieves a notification of the request through email. The reviewer can respond to the request through the Azure portal.
+Once the user submits the request for admin consent via the consent prompt, a designated reviewer receives a notification of the request through email. The reviewer can respond to the request through the Azure portal.
 
 ## Email notifications
 
@@ -31,7 +31,7 @@ Application permissions allow the application to access the data for the entire 
 
 - Understand the permissions that are being requested.
 
-The permissions requested by the application are listed in the consent prompt. Expanding the permission title displays the permission’s description. The description for application permissions generally end in "without a signed-in user." The description for delegated permissions generally end with "on behalf of the signed-in user." Permissions for the Microsoft Graph API are described in Microsoft Graph Permissions Reference. Refer to the documentation for other APIs to understand the permissions they expose. If you don't understand a permission that's being requested, don't grant consent.
+The permissions requested by the application are listed in the consent prompt. Expanding the permission title displays the permission’s description. Permissions for the Microsoft Graph API are described in Microsoft Graph Permissions Reference. Refer to the documentation for other APIs to understand the permissions they expose. If you don't understand a permission that's being requested, don't grant consent.
 
 - Understand which application is requesting permissions and who published the application.
 

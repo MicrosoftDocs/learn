@@ -101,6 +101,5 @@ In this module, you implemented the admin consent workflow that enables the user
 
 ## Notes
 
-- [Overview of admin consent workflow](https://docs.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview)
-- [Manage and evaluate consent request](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)
-- [Review admin consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests)
+- [Manage and evaluate consent requests](/azure/active-directory/manage-apps/manage-consent-requests)
+- [User and admin consent overview](/azure/active-directory/manage-apps/consent-and-permissions-overview)

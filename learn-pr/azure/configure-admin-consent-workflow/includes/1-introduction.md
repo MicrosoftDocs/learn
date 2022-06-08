@@ -2,7 +2,7 @@ Employees are typically expected to use many applications to accomplish tasks. F
 
 ## Example scenario
 
-Suppose you work as an IT admin for a retail company that focuses on integrating applications for the employees in your organization. To be as secure as possible, you have not allowed users to grant access to any applications in their tenant, which means only administrators can grant access to adding an application. Sometimes, your coworkers send you emails asking you to add applications they would like to use with their work accounts. Your email has been overwhelmed, and you’re having to research the permissions and information about each application. You hear about admin consent workflow, which can field and track requests in the Azure portal and give trusted and up to date information for each application.
+Suppose you work as an IT admin for a retail company that focuses on integrating applications for the employees in your organization. To be as secure as possible, you haven't allowed users to grant access to any applications in their tenant, which means only administrators can grant access to adding an application. Sometimes, your coworkers send you emails asking you to add applications they would like to use with their work accounts. Your email has been overwhelmed, and you’re having to research the permissions and information about each application. You hear about admin consent workflow, which can field and track requests in the Azure portal and give trusted and up to date information for each application.
 
 ## What we'll be doing
 

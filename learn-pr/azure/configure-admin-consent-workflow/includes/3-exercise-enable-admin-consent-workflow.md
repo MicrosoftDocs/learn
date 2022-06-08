@@ -1,4 +1,4 @@
-In this unit, You'll create a simple Node.js single page application (SPA). You'll then register the application in the Azure portal and use it to test how the admin consent workflow feature works.
+In this unit, You'll create a Node.js single page application (SPA). You'll then register the application in the Azure portal and use it to test how the admin consent workflow feature works.
 
 ## Create a Node.js single page application
 

@@ -7,7 +7,7 @@ When deciding which consent setting to use in an organization, the security of y
 
 ## Consent experience when the admin consent workflow is disabled
 
-When user consent is disabled or the application requires permissions that only an admin can grant consent, the user won't be able to grant consent to the application. The user will see a generic error message telling them they are unauthorized to access the app and they should ask their admin for help.
+When user consent is disabled or the application requires permissions that only an admin can grant consent, the user won't be able to grant consent to the application. The user will see a generic error message that says they're unauthorized to access the app and they should ask their admin for help.
 
 :::image type="content" source="../media/2-need-admin-approval.png" alt-text="Require admin approval consent prompt.":::
 
