@@ -17,13 +17,13 @@ In this task, we will review and configure the basic PIM settings.
 4.  Select the **Billing Administrator** role.
 5.  Click **Edit**.
 6.  Notice the **Activation**, **Assignment**, and **Notification** tabs.
-7.  Be default, MFA is required on activation. For this demonstration, change the requirement to **None**.
+7.  By default, MFA is required on activation. For this demonstration, change the requirement to **None**.
 8.  Check the box to **Require approval to activate**.
 9.  Discuss the other possible settings including **Activation maximum duration** and **Require approval to activate**.
 10. Switch to the **Assignment** tab and require the settings.
 11. Notice the ability to expire eligible and active assignments.
 12. Switch to the **Notifications** tab and discuss the settings.
-13. Notice you can send notifications when member are assigned and activated.
+13. Notice you can send notifications when members are assigned and activated.
 14. Click **Update**.
 
 ### Configure PIM for Roles
@@ -39,7 +39,6 @@ In this task, we will add the Billing Administrator role to PIM.
 7.  Click **Add member**.
 8.  Click **Select member** and **Select** the **AZ500User1** user. You are now a Billing Administrator.
 9.  Select **Set membership settings**. Notice the settings can be permanent or limited in time.
-    
      -  Assignment type: **Eligible**
      -  Permanently eligible: **check the box**.
 10. **Save** your changes and **Add** the assignment.
