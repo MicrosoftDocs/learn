@@ -10,7 +10,7 @@ The following video introduces your options for storing data in the cloud:<br />
 
 ### Structured data
 
-In structured data, sometimes call *relational data*, all data has the same fields or properties. All the data has the same organization and shape, or *schema*. The shared schema allows this type of data to be easily searched by using query languages like Structured Query Language (SQL). This capability makes this data style perfect for applications like CRM systems, reservations, and inventory management.
+In structured data, sometimes called *relational data*, all data has the same fields or properties. All the data has the same organization and shape, or *schema*. The shared schema allows this type of data to be easily searched by using query languages like Structured Query Language (SQL). This capability makes this data style perfect for applications like CRM systems, reservations, and inventory management.
 
 Structured data often is stored in database tables with rows and columns. In the table, a key column indicates how one row in a table relates to data in another row of another table. In the following image, a table that has data about grades gets data from a table of student names and a table of class data by using key columns.
 
@@ -28,11 +28,13 @@ Software developers use data serialization languages to write data stored in mem
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBu6]
 
-#### Common formats
+#### Common serialization languages
 
 Three common serialization languages are XML, JSON, and YAML.
 
-*Extensible markup language (XML)* was one of the first data languages to be widely used. XML is text-based, which makes it easily human-readable and machine-readable. XML parsers are available for almost all popular development platforms.
+**XML**
+
+*Extensible Markup Language (XML)* was one of the first data languages to be widely used. XML is text-based, which makes it easily human-readable and machine-readable. XML parsers are available for almost all popular development platforms.
 
 You can use XML to express relationships. XML has standards for schema, transformation, and even displaying on the web.
 
@@ -50,11 +52,13 @@ Here's an example of a person's name, age, and hobbies expressed in XML:
 </Person>
 ```
 
-XML expresses the shape of the data by using *tags* that are created by using angle braces. The tags come in two forms: _elements_ such as `<FirstName>` and _attributes_ that can be expressed in text like `Age="23"`. Elements can  have child elements to express relationships. For example, the `<Hobbies>` tag expresses a collection of `Hobby` elements.
+XML expresses the shape of the data by using *tags* that are defined inside angle braces. The tags come in two forms: _elements_ such as `<FirstName>` and _attributes_ that can be expressed in text like `Age="23"`. Elements can  have child elements to express relationships. For example, the `<Hobbies>` tag expresses a collection of `Hobby` elements.
 
-XML is flexible and can express complex data easily. However, it tends to be more verbose, which makes it larger to store, process, or pass over a network. As a result, other formats have become more popular.
+XML is flexible and can express complex data easily. However, it tends to be more verbose, which makes it larger to store, process, and pass over a network. As a result, other formats have become more popular.
 
-*JavaScript Object Notation (JSON)* has a lightweight specification and relies on curly braces to indicate data structure. Compared to XML, JSON is less verbose, and it's easier to read by humans. JSON frequently is used by web services to return data.
+**JSON**
+
+*JavaScript Object Notation (JSON)* has a lightweight specification and uses curly braces to indicate data structure. Compared to XML, JSON is less verbose, and it's easier for humans to read. JSON frequently is used by web services to return data.
 
 Here's the same person's name, age, and hobbies expressed in JSON:
 
@@ -71,9 +75,11 @@ Here's the same person's name, age, and hobbies expressed in JSON:
 }
 ```
 
-The JSON format isn't as formal as XML. It's closer to a key/value pair model than a formal data expression. As you might guess from the name, JavaScript has built-in support for this format, so it's popular for web development. Like XML, other languages have parsers you can use to work with this data format. The downside of JSON is that it tends to be more programmer-oriented, so it's harder for non-technical people to read and modify.
+The JSON format isn't as formal as XML. It's closer to a key/value pair model than to a formal data expression. As you might guess from the name, the JavaScript programming language has built-in support for this format, so it's popular for web development. Like XML, other languages have parsers you can use to work with this data format. The downside of JSON is that it tends to be more programmer-oriented, so it's harder for non-technical people to read and modify.
 
-*YAML Ain’t Markup Language (YAML)* is a relatively new data language that’s growing quickly in popularity, in part due to its human-friendliness. The data structure is defined by line separation and indentation. The YAML format reduces the dependency on structural characters like parentheses, commas, and brackets.
+**YAML**
+
+*YAML Ain’t Markup Language (YAML)* is a more recently developed data serialization language. One of the benefits of using YAML is that it is easier for humans to read than some other languages. The data structure is defined by line separation and indentation. The YAML format reduces the dependency on structural characters like parentheses, commas, and brackets.
 
 Here's the same data expressed in YAML:
 
@@ -104,8 +110,8 @@ The organization of unstructured data is undefined. Unstructured data often in d
 
 Examples of unstructured data include:
 
-- Media files, such as photos, videos, and audio files
-- Microsoft 365 files, such as Word documents
+- Media files, like photos, videos, and audio files
+- Microsoft 365 files, like Word documents
 - Text files
 - Log files
 
@@ -113,7 +119,7 @@ Examples of unstructured data include:
 
 You can classify data in one of three ways: structured, semi-structured, and unstructured. Understanding the differences so that you can classify your data helps you choose the correct storage solution.
 
-Structured data is organized data that neatly fits into rows and columns in tables. Semi-structured data is still organized and has clear properties and values, but there's variety to the data. Unstructured data doesn't fit neatly into tables, nor does it have a schema.
+Structured data is organized data that neatly fits into tables or columns of data. Semi-structured data is still organized and has clear properties and values, but there's variety to the data. Unstructured data doesn't fit neatly into tables or columns, and it doesn't have a uniform schema.
 
 Let's look at the datasets used in an online retail business and classify them.
 

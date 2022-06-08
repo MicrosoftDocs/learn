@@ -1,6 +1,6 @@
-If a change to one piece of data must result in a change to another piece of data, an application needs to group a series of data updates. You can use transactions to group these updates. In a transaction, if one event in a series of updates fails, the entire series can be rolled back or undone. 
+If a change to one piece of data must result in a change to another piece of data, an application needs to group together a series of data updates. You can use *transactions* to group these updates. In a transaction, if one event in a series of updates fails, the entire series can be rolled back or undone. 
 
-An example is an online retailer that uses a transaction for order placement and payment verification. Grouping the related events ensures that you don't reduce your inventory levels until you receive an approved form of payment.
+An example is an online retailer that uses a transaction for order placement, payment verification, and updating the product inventory. Grouping the related events ensures that you don't reduce your inventory levels until you receive an approved form of payment.
 
 Next, learn about transactions and whether they're required for your data.
 
@@ -10,12 +10,12 @@ A transaction is a logical group of database operations that execute together.
 
 Here's the question to ask yourself regarding whether you need to use transactions in your application: Will a change to one piece of data in your dataset affect another piece of data? If the answer is yes, you'll need support for transactions in your database service.
 
-Transactions often are defined by a set of four requirements call *ACID guarantees*. ACID is an acronym for atomicity, consistency, isolation, and durability.
+Transactions often are defined by a set of four requirements call *ACID guarantees*. ACID is an acronym for *atomicity*, *consistency*, *isolation*, and *durability*.
 
-- **Atomicity** means a transaction must execute exactly once, and it must be atomic. Either all of the work is done or none of it is. Operations within a transaction usually share a common intent and are interdependent.
-- **Consistency** ensures that the data is consistent both before and after the transaction.
-- **Isolation** ensures that each transaction is unaffected by other transactions.
-- **Durability** means that changes made as a result of a transaction are permanently saved in the system. The system saves data that's committed so that even in the event of a failure and system restart, the data is available in its correct state.
+- *Atomicity* means a transaction must execute exactly once, and it must be atomic. Either all of the work is done or none of it is. Operations within a transaction usually share a common intent and are interdependent.
+- *Consistency* ensures that the data is consistent both before and after the transaction.
+- *Isolation* ensures that each transaction is unaffected by other transactions.
+- *Durability* means that changes made as a result of a transaction are permanently saved in the system. The system saves data that's committed so that even in the event of a failure and system restart, the data is available in its correct state.
 
 When a database offers ACID guarantees, these principles are consistently applied to each transaction.
 
@@ -47,4 +47,4 @@ Photos and videos in a product catalog don't require transactional support. Thes
 
 ### Business data
 
-Because business data is historical and unchanging, transactional support isn't required. Business analysts who work with the data also have unique needs in that they often work with aggregates in their queries, so they can work with the totals of other smaller data points.
+Because business data is historical and unchanging, transactional support isn't required. Business analysts who work with the data also have unique query needs. They often work with aggregates in their queries, so they can work with the totals of other smaller data points.
