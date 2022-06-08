@@ -39,7 +39,7 @@ and relevance of security events. Having access to---and sharing this
 knowledge---helps decision makers both inside and outside security teams
 prioritize actions and reduce risk.
 
-### Identify technical threat intelligence
+## Identify technical threat intelligence
 
 Cyber threat intelligence (CTI) can come from many sources, such as
 open-source data feeds, threat intelligence sharing communities, paid
@@ -59,21 +59,13 @@ intelligence, because security products and automation can use it in
 large scale to protect and detect potential threats. The diagram below
 shows the core architecture of this solution:
 
-![Diagram showing Microsoft Sentinel data flow.](../media/mcrosoft-sentinel-data-connectors.png) 
+![Diagram showing Microsoft Sentinel data flow.](../media/microsoft-sentinel-data-connectors.png) 
 
-Microsoft Sentinel can help detect, respond to, and provide CTI context
-for malicious cyber activity. You can also use Microsoft Sentinel to:
+Microsoft Sentinel can help detect, respond to, and provide CTI context for malicious cyber activity. You can also use Microsoft Sentinel to:
 
--   Import threat indicators from Structured Threat Information
-    Expression (STIX) and Trusted Automated Exchange of Intelligence
-    Information (TAXII) servers, or from any threat intelligence
-    platform (TIP) solution
-
+-   Import threat indicators from Structured Threat Information Expression (STIX) and Trusted Automated Exchange of Intelligence Information (TAXII) servers, or from any threat intelligence platform (TIP) solution
 -   View and query threat indicator data
-
--   Create analytics rules to generate security alerts, incidents, and
-    automated responses from CTI data
-
+-   Create analytics rules to generate security alerts, incidents, and automated responses from CTI data
 -   Visualize key CTI information in workbooks
 
 Another product that also uses threat intelligence is Microsoft
@@ -88,34 +80,16 @@ and remediate threats, Defender for Cloud provides threat intelligence
 reports containing information about detected threats. The report
 includes information such as:
 
--   Attacker's identity or associations (if this information is
-    available)
-
+-   Attacker's identity or associations (if this information is available)
 -   Attackers' objectives
-
--   Current and historical attack campaigns (if this information is
-    available)
-
+-   Current and historical attack campaigns (if this information is available)
 -   Attackers' tactics, tools, and procedures
-
--   Associated indicators of compromise (IoC) such as URLs and file
-    hashes
-
--   Victimology, which is the industry and geographic prevalence to
-    assist you in determining if your Azure resources are at risk
-
--   Mitigation and remediation information
-
-Defender for Cloud has three types of threat reports, which can vary
-according to the attack. The reports available are:
-
--   Activity Group Report: provides deep dives into attackers, their
-    objectives, and tactics.
-
--   Campaign Report: focuses on details of specific attack campaigns.
-
--   Threat Summary Report: covers all of the items in the previous two
-    reports.
+-   Associated indicators of compromise (IoC) such as URLs and file hashes
+-   Victimology, which is the industry and geographic prevalence to assist you in determining if your Azure resources are at risk
+-   Mitigation and remediation information Defender for Cloud has three types of threat reports, which can vary according to the attack. The reports available are:
+    -   Activity Group Report: provides deep dives into attackers, their objectives, and tactics.
+    -   Campaign Report: focuses on details of specific attack campaigns.
+    -   Threat Summary Report: covers all of the items in the previous two reports.
 
 This type of information is useful during the incident response process,
 where there's an ongoing investigation to understand the source of the
@@ -134,7 +108,7 @@ detection capability in Azure AD Identity Protection:
 
 ![Diagram showing an example of the risk detection capability in Azure AD Identity Protection.](../media/security-risk-detections.png) 
 
-### Risk mitigations
+## Risk mitigations
 
 Thinking of risks in this manner is sometimes referred to as the
 event-driven risk model. This term implies that a list of risks is a
@@ -168,13 +142,10 @@ you have more details about each phase:
 
     -   Tolerate: Areas of low-risk exposure with a low level of
         control.
-
     -   Operate: Areas of low-risk exposure where controls are deemed
         adequate.
-
     -   Monitor: Areas of high-risk exposure where controls are deemed
         adequate and should be monitored for effectiveness.
-
     -   Improve: Areas of high-risk exposure with a low level of control
         that are top priorities in addressing.
 
@@ -182,4 +153,3 @@ you have more details about each phase:
     assessment are monitored and reported to relevant stakeholders.
     Monitoring strategies include security monitoring, periodic risk
     reviews, penetration testing, and vulnerability scanning.
-
