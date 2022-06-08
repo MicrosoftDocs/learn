@@ -75,4 +75,4 @@ To delete the Azure Database for MySQL server resource you provisioned in this e
     az group delete --name learn-a0ced250-4641-4594-bafb-c9edb5a18053
     ```
 
-2. When prompted, **Are you sure you want to perfrom this operation?**, enter *y*.
+2. When prompted, **Are you sure you want to perform this operation?**, enter *y*.
