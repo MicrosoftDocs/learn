@@ -1,4 +1,4 @@
-Here, we discuss the structure and syntax of Markdown. We also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that enable you to integrate GitHub features into content.
+Here, we'll discuss the structure and syntax of Markdown. We'll also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that enable you to integrate GitHub features into content.
 
 > [!NOTE]
 > This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, see [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true) or [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true).
@@ -11,7 +11,7 @@ Markdown exists to shield content creators from the overhead of HTML. While HTML
 
 The most important part of any communication on GitHub is usually the text itself. But how do you show that some parts of the text are more important than others?
 
-Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character you used to open with. Be observant how you combine the use of asterisks and underscores. Here are several examples:
+Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character with which you opened. Be observant how you combine the use of asterisks and underscores. Here are several examples:
 
 ```markdown
 This is *italic* text.
@@ -41,7 +41,7 @@ __This is bold and *italic* text__ using double underscores for bold and single 
 >_This is **italic and bold** text_ using a single underscore for italic and double asterisks for bold.
 > __This is bold and *italic* text__ using double underscores for bold and single asterisks for italic. 
 
-To use a literal asterisk, precede it with an escape character--in GFM  that is a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
+To use a literal asterisk, precede it with an escape character; in GFM that's a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
 
 ```markdown
 \_This is all \*\*plain\*\* text\_.
@@ -112,7 +112,7 @@ Here is the markdown for an unordered list.
 
 ### Building tables
 
-Tables can be constructed using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prviour row as a header.
+You can construct tables using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prior row as a header.
 
 ```
 First|Second
@@ -128,7 +128,7 @@ First|Second
 
 ### Quoting text
 
-Blockquotes can be created using the greater than (`>`) character.
+You can create blockquotes using the greater than (`>`) character.
 
 ```
 > This is quoted text.
@@ -187,7 +187,7 @@ GFM extends this support with syntax highlighting for popular languages. Just sp
 
 ### Cross-linking issues and pull requests
 
-GFM supports a variety of shortcode formats to make it easy to link to issues and pull requests. The easiest way to do this is to use the format `#ID`, such as `#3602`. GitHub will automatically adjust longer links to this format if you paste them in. There are also additional conventions you can follow, such as if you are working with other tools or want to specify other projects/branches. 
+GFM supports a variety of shortcode formats to make it easy to link to issues and pull requests. The easiest way to do this is to use the format `#ID`, such as `#3602`. GitHub will automatically adjust longer links to this format if you paste them in. There are also additional conventions you can follow, such as if you're working with other tools or want to specify other projects/branches. 
 
 | Reference type | Raw reference | Short link |
 | -------------- | ------------- | ---------- |
@@ -211,7 +211,7 @@ You can link to a commit by pasting in its ID, or, simply using its secure hash 
 
 ### Mentioning users and teams
 
-Typing an `@` symbol, followed by a GitHub username, will send a notification to that person about the comment. This is called an "@mention", because you're mentioning the individual. You can also `@mention` teams within an organization.
+Typing an `@` symbol followed by a GitHub username will send a notification to that person about the comment. This is called an "@mention", because you're mentioning the individual. You can also `@mention` teams within an organization.
 
 ```
 @githubteacher

@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cmu-cloud-security
 metadata:
   title: Cloud security
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Keeping your cloud secure means more than just adding permissions to resources. Learn about what cloud security means, including threats, cryptography, and regulation.
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -32,12 +32,15 @@ prerequisites: |
   - Understand how cloud resource provisioning works
   - Know how data centers work and how data is stored in the cloud
 iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-security.svg
+hidden: true
 levels:
 - beginner
 roles:
 - administrator
 products:
 - azure
+subjects:
+- cloud-security
 units:
 - learn.cmu-cloud-admin.cmu-cloud-security.0-introduction
 - learn.cmu-cloud-admin.cmu-cloud-security.1-responsibilities

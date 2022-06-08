@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-github-packages
+metadata:
+  title: Introduction to GitHub Packages
+  description: "Introduction to GitHub Packages"
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to GitHub Packages
+summary: This module introduces you to GitHub Packages. It explores ways to control permissions and visibility, publish, install, delete and restore packages using GitHub.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Publish packages
+  - Install packages
+  - Delete and restore packages
+  - Configure access control and visibility
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.introduction-github-packages.introduction
+- learn.wwl.introduction-github-packages.publish-packages
+- learn.wwl.introduction-github-packages.install-package
+- learn.wwl.introduction-github-packages.delete-restore-package
+- learn.wwl.introduction-github-packages.explore-package-access-control-visibility
+- learn.wwl.introduction-github-packages.knowledge-check
+- learn.wwl.introduction-github-packages.summary
+badge:
+  uid: learn.wwl.introduction-to-github-packages.badge

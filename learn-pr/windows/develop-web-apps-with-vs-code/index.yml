@@ -30,6 +30,8 @@ roles:
 products:
 - windows
 - vs-code
+subjects:
+- custom-app-development
 units:
 - learn-windows.introducing-vs-code.1-introduction
 - learn-windows.introducing-vs-code.2-installation-and-tour

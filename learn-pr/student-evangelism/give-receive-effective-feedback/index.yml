@@ -27,6 +27,9 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- communication
+- communication
 units:
 - learn.student-evangelism.give-receive-effective-feedback.introduction
 - learn.student-evangelism.give-receive-effective-feedback.characteristics-components-effective-feedback
@@ -37,4 +40,4 @@ units:
 - learn.student-evangelism.give-receive-effective-feedback.exercise-reflect-effective-feedback
 - learn.student-evangelism.give-receive-effective-feedback.summary
 badge:
-  uid: learn.student-evangelism.give-receive-effective-feedback.badge 
+  uid: learn.student-evangelism.give-receive-effective-feedback.badge

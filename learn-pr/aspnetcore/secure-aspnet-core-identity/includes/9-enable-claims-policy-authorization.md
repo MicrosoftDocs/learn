@@ -81,7 +81,7 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
     This will be the confirmed email address that gets the claim assigned.
 
 1. In *Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs*, make the following changes:
-    1. Incorporate the following changes:
+    1. Incorporate the following highlighted code:
 
         [!code-csharp[](../code/areas/identity/pages/account/confirmemail.cshtml.cs?name=snippet_configproperty&highlight=4,6-7,10)]
 

@@ -22,7 +22,7 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
 
-    At this point, the pipeline is just a file in the .github/workflows directory in your repository. GitHub provides the prebuilt components that you need to build most of the pipelines. You'll have a workflow file that looks like this example:
+    At this point, the pipeline is just a file in the `.github/workflows` directory in your repository. GitHub provides the prebuilt components that you need to build most of the pipelines. You'll have a workflow file that looks like this example:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -42,7 +42,7 @@ In this exercise, you'll:
       # This workflow contains a single job called "build"
       build:
         # The type of runner that the job will run on
-        runs-on: ubuntu-20.04
+        runs-on: ubuntu-latest
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
@@ -60,7 +60,7 @@ In this exercise, you'll:
               echo test, and deploy your project.
     ```
 
-1. Above the **Edit new file** pane, rename the file from **main.yml** to **build-staging.yml**.
+1. Above the **Edit new file** pane, rename the file from `main.yml` to `build-staging.yml`.
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
@@ -132,16 +132,16 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Next, add other actions to build your Docker image.
 
-1. In the right panel, search for **Docker Login**
-
-    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
-
+1. In the right panel, search for **Docker Login**. Select the first result published by **Docker**.
+    
     :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
 
-    > [!NOTE]
-    > Docker action prior to version 2 had the login flow built-in, however, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
-
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    :::image type="content" source="../media/6-3-docker-login-copy.png" alt-text="Screenshot showing the copy function and selecting the Docker Login task.":::
+
+    > [!NOTE]
+    > Docker action prior to version 2 had the login flow built-in. However, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
 
     ```yml
     name: Build and push the latest build to staging
@@ -177,6 +177,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    :::image type="content" source="../media/6-3-docker-action-copy.png" alt-text="Screenshot that shows the copy icon after selecting the task.":::
 
     Paste the copied YAML below the last key from the previously copied `docker-login` action.
 
@@ -315,7 +317,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               push: true
     ```
 
-1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
+1. To commit the changes, select the **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
 
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
 

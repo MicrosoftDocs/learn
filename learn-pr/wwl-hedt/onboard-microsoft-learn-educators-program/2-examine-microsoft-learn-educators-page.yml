@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.onboard-microsoft-learn-educators-program.tour-microsoft-learn-educators-page
+title: Examine the Microsoft Learn for Educators page
+metadata:
+  title: 2-Examine the Microsoft Learn for Educators page.md
+  description: "Examine the Microsoft Learn for Educators page"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-examine-microsoft-learn-educators-page.md)]

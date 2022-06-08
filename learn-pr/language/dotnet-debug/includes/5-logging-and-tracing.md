@@ -32,7 +32,7 @@ The choice of which print style API to use is up to you. The key differences are
   - Use this API when you create logs that will be enabled only in debug builds.
 
 ```csharp
-Console.WriteLine("This message is readable by the end user.")
+Console.WriteLine("This message is readable by the end user.");
 Trace.WriteLine("This is a trace message when tracing the app.");
 Debug.WriteLine("This is a debug message just for developers.");
 ```

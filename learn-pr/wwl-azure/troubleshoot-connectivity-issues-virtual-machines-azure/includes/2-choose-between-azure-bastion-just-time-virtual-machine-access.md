@@ -6,7 +6,7 @@ Here you'll learn about the use cases and capabilities of two options, Azure Bas
 
 :::image type="content" source="../media/bastion-network-diagram.png" alt-text="A diagram showing how to connect to a VM through a TLS connection to the Azure portal." border="false":::
 
-The Azure Bastion Service allows you to use an HTML5 web-based client directly from inside the Azure portal. The service connects securely over TLS and port 443 to any Azure VM in the same virtual network. Azure Bastion is a fully platform-managed PaaS you can choose to provision inside the same virtual network as your organization's VMs.
+The Azure Bastion Service allows you to use a modern HTML5-based web client from directly inside the Azure portal. The service connects securely over TLS and port 443 to any Azure VM in the same virtual network. Azure Bastion is a fully platform-managed PaaS you can choose to provision inside the same virtual network as your organization's VMs.
 
 There are many benefits to this approach:
 

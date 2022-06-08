@@ -29,6 +29,8 @@ products:
 - azure-clis
 - azure-cloud-shell
 - azure-storage
+subjects:
+- storage
 units:
 - learn.azure.set-up-cors-website-storage.1-introduction
 - learn.azure.set-up-cors-website-storage.2-determine-whether-you-need-cors-on-your-azure-storage-services

@@ -1,4 +1,7 @@
-Organizations of all types require a management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization look after their legal obligations. It also helps to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be kept, no longer of value, or no longer required for business purposes. Records management in Microsoft 365 includes many features, including:
+> [!NOTE]
+>  Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Records Management in Microsoft 365 is now Microsoft Purview Records Management. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+
+Organizations of all types require a management solution to manage regulatory, legal, and business-critical records across their corporate data. Microsoft Purview Records Management helps an organization look after their legal obligations. It also helps to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be kept, no longer of value, or no longer required for business purposes. Microsoft Purview Records Management includes many features, including:
 
 - Labeling content as a record.
 - Establishing retention and deletion policies within the record label.
@@ -29,7 +32,7 @@ The most important difference is that if content has been marked as a regulatory
 
 ## Common use cases for records management
 
-Microsoft 365’s records management capabilities are flexible. There are different ways in which records management can be used across an organization, including:
+The capabilities of Microsoft Purview Records Management are flexible. There are different ways in which records management can be used across an organization, including:
 
 - Enabling administrators and users to manually apply retention and deletion actions for documents and emails.
 - Automatically applying retention and deletion actions to documents and emails.

@@ -29,6 +29,8 @@ roles:
 products: 
 - azure
 - azure-sovereign-us
+subjects:
+- cloud-computing
 units:
 - learn.intro-to-azure-government.1-introduction
 - learn.intro-to-azure-government.2-what-is-azure-government

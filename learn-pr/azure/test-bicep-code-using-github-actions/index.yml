@@ -49,6 +49,9 @@ languages:
 products:
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.test-bicep-code-using-github-actions.introduction
 - learn.azure.test-bicep-code-using-github-actions.understand-workflow-jobs

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.understand-serverless-pools
+title: Understand Azure Synapse serverless SQL pool capabilities and use cases
+metadata:
+  title: Understand Azure Synapse serverless SQL pool capabilities and use cases
+  description: "Understand Azure Synapse serverless SQL pool capabilities and use cases"
+  ms.date: 05/12/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-serverless-pools.md)]

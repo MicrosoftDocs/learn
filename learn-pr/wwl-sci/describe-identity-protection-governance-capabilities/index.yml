@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure-active-directory
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.introduction
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-identity-governance

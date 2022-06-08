@@ -361,4 +361,4 @@ If these data types seem a lot like those in C, that's because NumPy is built in
 >
 > ### Takeaway
 >
-> NumPy arrays are data structures similar to Python lists that provide high performance when storing and working on large amounts of homogeneous data; precisely the kind of data that you'll encounter frequently in data science. NumPy arrays support many data types beyond those discussed in this course. That said, don't worry about memorizing all the NumPy `dtypes`. **It's often just necessary to care about the general kind of data you're dealing with: floating point, integer, Boolean, string, or general Python object.**
+> NumPy arrays are data structures similar to Python lists that provide high performance when storing and working on large amounts of homogeneous data, precisely the kind of data that you'll encounter frequently in data science. NumPy arrays support many data types beyond those discussed in this course. That said, don't worry about memorizing all the NumPy `dtypes`. **It's often just necessary to care about the general kind of data you're dealing with: floating point, integer, Boolean, string, or general Python object.**

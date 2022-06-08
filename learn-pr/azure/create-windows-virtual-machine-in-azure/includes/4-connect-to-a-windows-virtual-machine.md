@@ -25,13 +25,13 @@ The following screenshot displays the Remote Desktop Protocol client in Windows 
 
 ![Screenshot of the user interface of the Remote Desktop Protocol client.](../media/4-rdp-client.png)
 
-There are also open-source Linux clients, such as Remmina that enable you to connect to a Windows PC from an Ubuntu distribution.
+There are also open-source Linux clients, such as Remmina, that allow you to connect to a Windows PC from an Ubuntu distribution.
 
 ## Connecting to an Azure VM
 
-As we saw a moment ago, Azure VMs communicate on a virtual network. They can also have an optional public IP address assigned to them. With a public IP, we can communicate with the VM over the Internet. Alternatively, we can set up a virtual private network (VPN) that connects our on-premises network to Azure - letting us securely connect to the VM without exposing a public IP. This approach is covered in another module and is fully documented if you are interested in exploring that option.
+As we saw a moment ago, Azure VMs communicate on a virtual network. They can also have an optional public IP address assigned to them. With a public IP, we can communicate with the VM over the Internet. Alternatively, we can set up a virtual private network (VPN) that connects our on-premises network to Azure, letting us securely connect to the VM without exposing a public IP. This approach is covered in another module, and is fully documented if you are interested in exploring that option.
 
-One thing to be aware of with public IP addresses in Azure is they're often dynamically allocated. That means the IP address can change over time - for VMs this happens when the VM is restarted. You can pay more to assign static addresses if you want to connect directly to an IP address instead of a name and need to ensure that the IP address won't change.
+One thing to be aware of with public IP addresses in Azure is they're often dynamically allocated. That means the IP address can change over time; for VMs, this happens when the VM is restarted. You can pay more to assign static addresses if you want to connect directly to an IP address instead of a name and need to ensure that the IP address won't change.
 
 ### How do you connect to a VM in Azure using RDP?
 
@@ -44,9 +44,9 @@ If you're using a static public IP address for the VM, you can save the **.rdp**
 
 When you connect, you'll typically receive two warnings. These are:
 
-- **Publisher warning** - caused by the **.rdp** file not being publicly signed.
-- **Certificate warning** - caused by the machine certificate not being trusted.
+- **Publisher warning** - caused by the **.rdp** file not being publicly signed
+- **Certificate warning** - caused by the machine certificate not being trusted
 
-In test environments, these warnings can be ignored. In production environments, the **.rdp** file can be signed using **RDPSIGN.EXE** and the machine certificate placed in the client's **Trusted Root Certification Authorities** store.
+In test environments, you can ignore these warnings. In production environments, the **.rdp** file can be signed using **RDPSIGN.EXE** and the machine certificate placed in the client's **Trusted Root Certification Authorities** store.
 
 Let's try using RDP to connect to our VM.

@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- security
 units:
 - learn.wwl.what-is-threat-hunting-azure-sentinel.introduction
 - learn.wwl.what-is-threat-hunting-azure-sentinel.understand-cybersecurity

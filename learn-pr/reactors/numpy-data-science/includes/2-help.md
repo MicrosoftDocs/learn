@@ -1,6 +1,6 @@
 There's a lot to learn about NumPy, and it can be tough to remember it all the first time through. Don't worry! IPython, the underlying program that enables notebooks like this one to interact with Python, has you covered.
 
-First off, IPython gives you the ability to quickly explore the contents of a package like NumPy using the tab-completion feature. So if you want to see all the functions available with NumPy, type this code:
+First off, IPython gives you the ability to quickly explore the contents of a package like by NumPy using the tab-completion feature. So if you want to see all the functions available with NumPy, type this code:
 
 ```python
 ipython

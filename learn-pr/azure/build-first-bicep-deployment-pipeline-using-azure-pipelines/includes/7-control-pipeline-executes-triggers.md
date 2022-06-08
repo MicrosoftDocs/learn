@@ -4,7 +4,7 @@ You now have a working pipeline that deploys your Bicep file to your Azure envir
 
 ## What is a pipeline trigger?
 
-A pipeline trigger is a condition that, when met, automatically runs your pipeline based on rules you create. You can set triggers to run your pipeline at scheduled intervals. You can also set triggers to run your pipeline every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time sometime changes your code.
+A pipeline trigger is a condition that, when met, automatically runs your pipeline based on rules you create. You can set triggers to run your pipeline at scheduled intervals. You can also set triggers to run your pipeline every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time someone changes your code.
 
 If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the pipeline, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 

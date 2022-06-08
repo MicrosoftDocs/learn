@@ -23,7 +23,7 @@ In this module, you will learn how to:
  -  List the advantages of Azure templates.
  -  Identify the Azure template schema components.
  -  Specify Azure template parameters.
- -  Locate and use Azure QuickStart templates.
+ -  Locate and use Azure Quickstart Templates.
 
 ## Prerequisites
 

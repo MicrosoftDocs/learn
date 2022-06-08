@@ -4,7 +4,7 @@ metadata:
   title: Safeguard cloud resources
   description: The third and final learning path in a course on Cloud Administration from Carnegie Mellon University. Learn to monitor your cloud resources, keep them safe, and protect or recover them in the case of a disaster.
   brand: azure
-  ms.date: 03/31/2020
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ summary: |
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: none
 iconUrl: /learn/achievements/cmu-cloud-admin/cmu-monitor-secure-recover.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -33,6 +34,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-security
 modules:
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources
 - learn.cmu-cloud-admin.cmu-cloud-security

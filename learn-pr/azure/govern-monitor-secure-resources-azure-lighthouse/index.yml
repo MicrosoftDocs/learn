@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- information-protection-governance
 units:
 - learn.govern-monitor-secure-resources-azure-lighthouse.1-introduction
 - learn.govern-monitor-secure-resources-azure-lighthouse.2-view-manage-service-provider-activities
@@ -36,4 +38,3 @@ units:
 - learn.govern-monitor-secure-resources-azure-lighthouse.7-summary
 badge:
   uid: learn.govern-monitor-secure-resources-azure-lighthouse.badge
-  

@@ -39,6 +39,9 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- virtual-machine
+- it-management-monitoring
 modules:
 - learn.wwl.plan-deploy-windows-server-iaas-vms
 - learn.wwl.customize-windows-server-iaas-vm-images

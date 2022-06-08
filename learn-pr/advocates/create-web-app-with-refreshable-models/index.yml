@@ -3,9 +3,9 @@ uid: learn.create-web-app-with-refreshable-models
 metadata:
   title: Build a Web App with Refreshable Machine Learning Models
   description: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
-  author: jlooper
+  author: PatrickFarley
   ms.date: 02/11/2020
-  ms.author: chnoring
+  ms.author: pafarley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
@@ -33,6 +33,9 @@ products:
   - azure
   - azure-cognitive-services
   - azure-web-apps
+subjects:
+- cloud-computing
+- machine-learning
 units:
   - learn.advocates.create-web-app-with-refreshable-models.1-introduction
   - learn.advocates.create-web-app-with-refreshable-models.2-conceptual-overview

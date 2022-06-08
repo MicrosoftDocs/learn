@@ -12,7 +12,7 @@ There are a range of tools and services that can help you plan and complete the 
 | Data Migration Assistant (DMA)| Assess and Migrate| Performs assessment and migration specifically for Azure SQL database. |
 | Azure Database Migration Service| Assess and Migrate| Performs assessment and migration for several different databases, not just Azure SQL database. |
 | Data Migration Tool| Migrate| Migrates your existing databases to Azure Cosmos DB. |
-| Azure Cost Management| Optimize| Helps you monitor, optimize, and control your ongoing Azure costs. |
+| Microsoft Cost Management| Optimize| Helps you monitor, optimize, and control your ongoing Azure costs. |
 | Azure Advisor| Optimize| Helps optimize your Azure resources for reliability, performance, cost, security, and operational excellence. |
 | Azure Monitor| Monitor| Collects monitoring telemetry from both on-premises and Azure resources. Enables you to analyze data, setup alerts, and identify problems. |
 | Microsoft Sentinel| Monitor| Provides intelligent security analytics for your applications enabling you to collect, detect, investigate, and respond to incidents. |

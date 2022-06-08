@@ -47,7 +47,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
     mvn package
     ```
 
-    Maven will display a series of messages in the console while it builds your web app, which should conclude with a status message that is similar to the following example:
+    Maven will display a series of messages in the console while it builds your web app. The build should conclude with a status message that is similar to the following example:
 
     ```output
     [INFO] Packaging webapp

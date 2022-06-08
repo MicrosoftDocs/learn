@@ -23,6 +23,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.align-requirements-in-azure.1-introduction
 - learn.align-requirements-in-azure.2-public-private-hybrid

@@ -3,12 +3,11 @@ uid: learn.wwl.describe-azure-databricks
 metadata:
   title: Describe Azure Databricks
   description: "Describe Azure Databricks"
-  ms.date: 01/14/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: intro-internal
 title: Describe Azure Databricks
 summary: Discover the capabilities of Azure Databricks and the Apache Spark notebook for processing huge files. Understand the Azure Databricks platform and identify the types of tasks well-suited for Apache Spark.
 abstract: |
@@ -29,6 +28,8 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-warehousing
 units:
 - learn.wwl.describe-azure-databricks.introduction
 - learn.wwl.describe-azure-databricks.explain

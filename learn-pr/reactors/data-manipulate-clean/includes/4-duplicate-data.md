@@ -79,4 +79,4 @@ Here's the output:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Removing duplicate data is an essential part of almost every data science project. Duplicate data can change the results of your analyses and give you spurious results.
+> Removing duplicate data is an essential part of almost every data-science project. Duplicate data can change the results of your analyses and give you spurious results.

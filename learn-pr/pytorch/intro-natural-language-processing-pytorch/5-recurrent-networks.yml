@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-natural-language-processing.recurrent-networks
+title: Capture patterns with recurrent neural networks
+metadata:
+  title: Capture patterns with recurrent neural networks
+  description: While traditional fully connected networks don't allow us to capture word order, RNN is a mechanism that can capture patterns in sequences. We show how to use RNN for text classification, and discuss different RNN architectures, such as LSTM and GRU.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.custom: team=nextgen
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/5-recurrent-networks.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: |
+       We want to train a neural network to generate new funny words for children's book. Which architecture can we use?
+      choices:
+        - content: "Word-level LSTM"
+          isCorrect: false
+          explanation: "Word-level networks operate on pre-defined vocabulary of words, and can't generate new words."
+        - content: "Character-level LSTM"
+          isCorrect: true
+          explanation: "Correct, character-level LSTM will capture often used syllables and will put those patterns together to generate new words."
+        - content: "Word-level RNN"
+          isCorrect: false
+          explanation: "Word-level networks operate on pre-defined vocabulary of words, and cannot generate new words."
+        - content: "Character-level perceptron"
+          isCorrect: false
+          explanation: "Fully connected linear network (perceptron) isn't a good architecture for text modeling, because they can't capture common patterns effectively."
+    - content: |  
+       Recurrent neural network is called recurrent, because:
+      choices:
+        - content: "A network is applied for each input element, and output from the previous application is passed to the next one"
+          isCorrect: true
+          explanation: "That's correct."
+        - content: "It's trained by a recurrent process"
+          isCorrect: false
+          explanation: "Recurrent neural network is trained in the same manner as any other neural network"
+        - content: "It consists of layers that include other subnetworks"
+          isCorrect: false
+          explanation: "While you can consider recurrent block to be a combination of two linear layers, it has nothing to do with recurrence"
+    - content: |  
+       What is the main idea behind LSTM network architecture?
+      choices:
+        - content: "Fixed number of LSTM blocks for the whole dataset"
+          isCorrect: false
+          explanation: "Number of LSTM blocks depend on the sequence length in the minibatch"
+        - content: "It contains many layers of recurrent neural networks"
+          isCorrect: false
+          explanation: "LSTM can consist of one or more levels"
+        - content: "Explicit state management with forgetting and state triggering"
+          isCorrect: true
+          explanation: "In LSTM, each block receives an outputs a state. This is manipulated inside the block depending on input and previous state."

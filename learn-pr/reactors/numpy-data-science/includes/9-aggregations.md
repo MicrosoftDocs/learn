@@ -170,4 +170,4 @@ We'll see these aggregates often in the rest of this course.
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->Aggregation is the main method you'll use to explore your data; not just when you use NumPy, but particularly in conjunction with pandas, the Python library you'll learn about in the next section. That section builds off of NumPy, and therefore off of everything you've learned so far.
+>Aggregation is the main method you'll use to explore your data, not just when you use NumPy, but particularly in conjunction with pandas, the Python library you'll learn about in the next section. That section builds off of NumPy, and therefore off of everything you've learned so far.

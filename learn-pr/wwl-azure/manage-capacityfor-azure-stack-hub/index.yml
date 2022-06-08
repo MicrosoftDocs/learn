@@ -32,6 +32,10 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
+- storage
+- virtual-machine
 units:
 - learn.wwl.manage-capacityfor-azure-stack-hub.introduction
 - learn.wwl.manage-capacityfor-azure-stack-hub.manage-compute-capacity

@@ -37,7 +37,7 @@ Using the *.devcontainer* requires only:
 
 * [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 * [Git](https://git-scm.com/docs/gitcli)
-* [Docker Desktop](https://www.docker.com)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Rancher Desktop](https://rancherdesktop.io/), or similar
 
 You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces)([charges apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing)).
 

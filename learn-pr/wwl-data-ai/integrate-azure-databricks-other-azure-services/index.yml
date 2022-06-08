@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-databricks-other-azure-services
 metadata:
   title: Integrate Azure Databricks with Azure Synapse
   description: "Integrate Azure Databricks with Azure Synapse"
-  ms.date: 01/07/2022
+  ms.date: 05/20/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

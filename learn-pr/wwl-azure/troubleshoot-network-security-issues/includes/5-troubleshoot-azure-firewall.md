@@ -79,7 +79,8 @@ Here is an example of a Firewall Policy:
 | Name| Type| Priority| Rules| Inherited from|
 | :--- | :--- | :--- | :--- | :--- |
 | BaseRCG1| Rule Collection Group| 200| 8| Parent policy|
-| DNATRc1| DNAT Rule Collection| 600| 7| Parent policy|
+| DNATRC1| DNAT Rule Collection| 600| 7| Parent policy|
+| DNATRC3| DNAT Rule Collection| 600| 7| Parent policy|
 | NetworkRc1| Network Rule Collection| 800| 1| Parent policy|
 | BaseRCG2| Rule Collection Group| 300| 3| Parent policy|
 | AppRCG2| Application Rule Collection| 1200| 2| Parent policy|

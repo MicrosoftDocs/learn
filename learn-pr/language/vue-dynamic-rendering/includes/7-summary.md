@@ -1,4 +1,4 @@
-In this module, you explored how to use Vue.js to dynamically change the display. You saw how to use the directives `v-for`, `v-show`, `v-if`, `v-else-if`, and `v-if`.
+In this module, you explored how to use Vue.js to dynamically change the display. You saw how to use the directives `v-for`, `v-show`, `v-if`, `v-else-if`, and `v-else`.
 
 You learned how to:
 

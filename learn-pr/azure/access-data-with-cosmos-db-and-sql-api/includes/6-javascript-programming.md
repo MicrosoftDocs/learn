@@ -12,15 +12,16 @@ Let's start by creating a new stored procedure in the portal. The portal automat
 
 1. Select **Execute** to run the _sample_ stored procedure. This will open a sidebar on the right allowing you to supply parameters to the stored procedure.
 
-1. In the **Input parameters** pane, use the following value for **Partition key value**.
+1. In the **Input parameters** pane, use the following value for **Partition key value**. Stored procedures work within a single partition.
+
    - **Type**: _String_
    - **Value**: _33218896_
 
     ![Screenshot of the input parameters pane.](../media/6-stored-procedure.png)
 
-1. Select **Execute**. Note that stored procedures work within a single partition.
+1. Select **Execute**.
 
-    The **Result** pane displays the feed from the first document in the container.
+    The **Result** pane displays the feed from the first document in the container. The feed is displayed as a single line. With line breaks added, the information should look like this:
 
     ```json
     {
@@ -53,9 +54,9 @@ Let's start by creating a new stored procedure in the portal. The portal automat
 
 Now, let's create a stored procedure that creates documents.
 
-1. In the Data Explorer, click **New Stored Procedure**. Name this stored procedure *createMyDocument*.
+1. In the Data Explorer, select **New Stored Procedure**.
 
-1. Paste the following code into the **Stored Procedure Body** box and click **Save**.
+1. Paste the following code into the **Stored Procedure Body** box, name the stored procedure *createMyDocument* and then select **Save**.
 
     ```javascript
     function createMyDocument() {
@@ -78,6 +79,7 @@ Now, let's create a stored procedure that creates documents.
         if (!accepted) return;
     }
     ```
+
 1. Select **Execute** to run the stored procedure.
 
 1. In the **Input parameters** pane, use the following value for **Partition key value**.
@@ -101,7 +103,7 @@ Now, let's create a stored procedure that creates documents.
     }
     ```
 
-    You can go back to the Documents tab and click the **Refresh** button and see the new document as shown below.
+    You can go back to the Documents tab and select the **Refresh** button and see the new document as shown below.
 
     ![Screenshot of a query in the Data Explorer with the Refresh button highlighted.](../media/6-refresh-document-view.png)
 
@@ -109,11 +111,11 @@ Now, let's create a stored procedure that creates documents.
 
 Now, let's create a UDF in Data Explorer.
 
-1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Procedure** to see **New UDF**.
+1. In the Data Explorer, select **New UDF**. You may need to select the down arrow next to **New Stored Procedure** to see **New UDF**.
 
     ![Screenshot of the Data Explorer with the down arrow menu button and New UDF button highlighted.](../media/6-create-udf.png)
 
-1. Paste the following code into the window, name the UDF *producttax*, and then click **Save**.
+1. Paste the following code into the window, name the UDF *producttax*, and then select **Save**.
 
     ```javascript
     function producttax(price) {

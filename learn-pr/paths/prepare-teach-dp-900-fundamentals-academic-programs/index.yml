@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-teach-dp-900-fundamentals-academic-programs
+metadata:
+  title: DP-900
+  description: Prepare to teach DP-900 Microsoft Azure Data fundamentals in academic programs
+  ms.date: 05/25/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to teach DP-900 Microsoft Azure Data fundamentals in academic programs
+prerequisites: |
+  - None
+summary: |
+  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure AI fundamentals.
+  Learn  about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure  Data fundamentals.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure
+modules:
+- learn.wwl.introduction-microsoft-learn-educators-program
+- learn.wwl.onboard-microsoft-learn-educators-program
+- learn.wwl.microsoft-learn-educators-course-preparation
+- learn.wwl.microsoft-learn-educators-course-plan
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+- learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals
+trophy:
+  uid: learn.wwl.prepare-teach-dp-900-fundamentals-academic-programs.trophy

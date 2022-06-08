@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- classification-analysis
 units:
 - learn-windows.building-connected-windows-apps.1-building-app-that-uses-cloud-service
 - learn-windows.building-connected-windows-apps.2-building-app-that-accesses-internet

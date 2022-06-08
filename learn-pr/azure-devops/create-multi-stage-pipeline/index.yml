@@ -19,7 +19,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET 5.0 SDK
+  - .NET 6.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- architecture
 units:
 - learn.azdo.create-multi-stage-pipeline.1-introduction
 - learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline

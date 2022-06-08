@@ -202,4 +202,4 @@ The test plan is important to have a comparison between the expected results and
 
 ## License requirements
 
-Using this feature requires an Azure AD Premium P1 license. Customers with Microsoft 365 Business Premium licenses also have access to Conditional Access features.
+Using this feature requires an Azure AD Premium P2 license. Customers with Microsoft 365 Business Premium licenses also have access to Conditional Access features.

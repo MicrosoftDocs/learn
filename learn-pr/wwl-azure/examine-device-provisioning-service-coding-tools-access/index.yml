@@ -30,6 +30,10 @@ products:
 - azure-iot-dps
 - azure-iot-hub
 - azure-portal
+subjects:
+- cloud-computing
+- device-management
+- iot
 units:
 - learn.wwl.examine-device-provisioning-service-coding-tools-access.introduction
 - learn.wwl.examine-device-provisioning-service-coding-tools-access.examine-azure-cli-support-for
