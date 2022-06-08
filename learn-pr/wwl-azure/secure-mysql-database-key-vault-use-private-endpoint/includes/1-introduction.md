@@ -1,6 +1,6 @@
 You now have an Azure Spring Apps application deployed into a virtual network. All incoming application connection requests from the internet must pass through an Application Gateway instance using a Web Application Firewall. The apps communicate with the backend services, such Azure Database for MySQL Single Server and Key Vault using public endpoints.
 
-In this exercise, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
+In this exercise, you'll implement a configuration where connections that originate from within your virtual network are accepted.
 
 ## Learning objectives
 
