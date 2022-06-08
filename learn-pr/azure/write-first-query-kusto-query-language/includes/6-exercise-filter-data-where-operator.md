@@ -40,7 +40,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 It looks like quite a few types of storms have caused damage all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida.
 
-1. Run the following query, which uses a second `where` operator with the string value `"FLORIDA":
+1. Run the following query, which uses a second `where` operator with the string value `"FLORIDA"`:
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPdS7KLyhWsFMwgIsHlySWpCrY2iooufn4B3m6OCoBpQqK8rNSk0sgkjoKYKNCKguATCRjAF6MrQhmAAAA" target="_blank">Click to run query</a>
 
