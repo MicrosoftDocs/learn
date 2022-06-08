@@ -12,7 +12,7 @@ You'll run the initial deployment in the next exercise.
 
 ## Functional services
 
-PetClinic is decomposed into four core Spring apps. All of them are independently deployable applications organized by business domains.
+PetClinic is composed into four core Spring apps. All of them are independently deployable applications organized by business domains.
 
  -  **Customers service:** Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
  -  **Visits service:** Stores and shows visits information for each pet in comments.
@@ -33,6 +33,5 @@ There are several common patterns in distributed systems that support core servi
 
 To follow the Azure Spring Apps deployment examples, you need the location of the source code provided below. You can review the sample Spring Petclinic application by reviewing the following assets:
 
-1.  From a web browser, navigate to the [GitHub repo hosting the Spring Petclinic application code](https://github.com/spring-petclinic/spring-petclinic-microservices) and review the [README.md file](https://github.com/spring-petclinic/spring-petclinic-microservices/blob/master/README.md#understanding-the-spring-petclinic-application).
-2.  Examine the information related to [Starting services locally with docker-compose](https://github.com/spring-petclinic/spring-petclinic-microservices/blob/master/README.md#starting-services-locally-with-docker-compose) and [Starting services locally with docker-compose and Java](https://github.com/spring-petclinic/spring-petclinic-microservices/blob/master/README.md#starting-services-locally-with-docker-compose-and-java).
-3.  In the web browser displaying the GitHub repo, navigate to each folder containing the code of the individual *spring-petclinic-\** services and review the content. You don't need to know their full details, but you should understand their basic structure.
+ -  From a web browser, navigate to the [GitHub repo hosting the Spring Petclinic application code](https://github.com/spring-petclinic/spring-petclinic-microservices) and review the [README.md file](https://github.com/spring-petclinic/spring-petclinic-microservices/blob/master/README.md#understanding-the-spring-petclinic-application).
+ -  In the web browser displaying the GitHub repo, navigate to each folder containing the code of the individual *spring-petclinic-\** services and review the content. You don't need to know their full details, but you should understand their basic structure.<br>
