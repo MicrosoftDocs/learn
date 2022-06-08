@@ -4,13 +4,13 @@ title: Analyze logs
 metadata:
   title: Analyze logs
   description: "Analyze logs"
-  ms.date: 05/31/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 12
 content: |
   [!include[](includes/6-debug-microsoft-service-architecture.md)]

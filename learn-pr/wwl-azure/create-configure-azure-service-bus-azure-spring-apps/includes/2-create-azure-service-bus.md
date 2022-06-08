@@ -55,17 +55,18 @@ Make sure to create the Service Bus namespace with a **Premium** SKU to take adv
 > [!NOTE]
 > As an alternative you can use the Managed Identity of your microservice to connect to the Service Bus. For this exercise, you'll store the connection string in your Key Vault.
 
-The connection to the Service Bus needs to be stored in the `spring.jms.servicebus.connection-string`application property. You'll name your Key Vault secret `SPRING-JMS-SERVICEBUS-CONNECTIONSTRING` and add the text below in your *application.yml* file in the configuration repository. The modification will translate the secret in Key Vault to the correct application property for your microservices.
+The connection to the Service Bus needs to be stored in the `spring.jms.servicebus.connection-string`application property. You'll name your Key Vault secret `SPRING-JMS-SERVICEBUS-CONNECTIONSTRING` and add the text below in your **application.yml** file in the configuration repository. The modification will translate the secret in Key Vault to the correct application property for your microservices.
 
-```
-servicebus:
-connection-string: ${spring.jms.servicebus.connectionstring}
+```yaml
+jms:
+    servicebus:
+        connection-string: ${spring.jms.servicebus.connectionstring}
 ```
 
-1.  Create a new Service Bus namespace. The name you use for your namespace should be globally unique, so update the value for the environment variable.
+1.  Create a new Service Bus namespace. The name you use for your namespace should be globally unique, so update the value for the environment variable. You'll need to create the namespace with the **Premium** SKU.
     
-    ```Azure CLI
-    SERVICEBUS_NAMESPACE=javalab-ns
+    ```Bash
+    SERVICEBUS_NAMESPACE=springcloudns$RANDOM$RANDOM
     
     az servicebus namespace create \
         --resource-group $RESOURCE_GROUP \
@@ -76,7 +77,7 @@ connection-string: ${spring.jms.servicebus.connectionstring}
 
 2.  Create two new queues in the namespace called `visits-requests` and`visits-confirmations`.
     
-    ```Azure CLI
+    ```Bash
     az servicebus queue create \
         --resource-group $RESOURCE_GROUP \
         --namespace-name $SERVICEBUS_NAMESPACE \
@@ -90,7 +91,7 @@ connection-string: ${spring.jms.servicebus.connectionstring}
 
 3.  Query your Service Bus namespace for its connection string.
     
-    ```Azure CLI
+    ```Bash
     SERVICEBUS_CONNECTIONSTRING=$(az servicebus namespace authorization-rule keys list \
         --resource-group $RESOURCE_GROUP \
         --namespace-name $SERVICEBUS_NAMESPACE \
@@ -101,27 +102,27 @@ connection-string: ${spring.jms.servicebus.connectionstring}
 
 4.  Create a new Key Vault secret for the connection string.
     
-    ```azurecli
+    ```Bash
     az keyvault secret set \
         --name SPRING-JMS-SERVICEBUS-CONNECTION-STRING \
         --value $SERVICEBUS_CONNECTIONSTRING \
         --vault-name $KEYVAULT_NAME
     ```
 
-5.  In the configuration repository, search for the ***application.yml*** file. Add the following text below the mysql profile (likely, below line 78).
+6.  In the configuration repository, search for the **application.yml** file. Add the following text below the mysql profile (likely, below line 78).
     
+    ```yaml
+    jms:
+        servicebus:
+            connection-string: ${spring.jms.servicebus.connectionstring}
+            idle-timeout: 60000
+            pricing-tier: premium
     ```
-    servicebus:
-    connection-string: ${spring.jms.servicebus.connectionstring}
-    idle-timeout: 60000
-    pricing-tier: premium
-    ```
     
-    Make sure the YAML is correctly aligned. the`_jms_ element`, and should be at the same level as the `_config_ and _datasource_ elements`.
-
-6.  Commit and push your changes to the remote repository.
+    Make sure the YAML is correctly aligned. The **jms** element, and should be at the same level as the **config** and **datasource** elements.
+7.  Commit and push your changes to the remote repository.
     
-    ```Git Bash
+    ```Bash
     git add .
     gits commit -m 'added service bus'
     git push

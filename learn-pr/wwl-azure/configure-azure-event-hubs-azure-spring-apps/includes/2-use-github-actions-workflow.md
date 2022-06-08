@@ -11,7 +11,7 @@ The following scenarios are some of the scenarios where you can use Event Hubs:
  -  Device telemetry streaming
 
 :::image type="content" source="../media/event-hubs-pipeline-eaec2d20.png" alt-text="Diagram showing how Data sent to an event hub can be transformed and stored by using any real-time analytics provider.":::
- Data is valuable only when there's an easy way to process and get timely insights from data sources. Event Hubs provides a distributed stream processing platform with low latency and seamless integration, with data and analytics services inside and outside Azure to build your complete big data pipeline.
+Data is valuable only when there's an easy way to process and get timely insights from data sources. Event Hubs provides a distributed stream processing platform with low latency and seamless integration, with data and analytics services inside and outside Azure to build your complete big data pipeline.
 
 Event Hubs represents the "front door" for an event pipeline, often called an *event ingestor* in solution architectures. An event ingestor is a component or service that sits between event publishers and event consumers to decouple the production of an event stream from the consumption of those events. Azure Event Hubs provides a unified streaming platform with time retention buffer, decoupling event producers from event consumers.
 
@@ -27,7 +27,7 @@ Event Hubs represents the "front door" for an event pipeline, often called an *e
 > Alternatively, you can use the Managed Identity of your microservice to connect to the **eventhub**.
 
 > [!NOTE]
-> The connection to the eventhub needs to be stored in the `spring.kafka.properties.sasl.jaas.config` application property. You'll need to name your Key Vault secret ***SPRING-KAFKA-PROPERTIES-SASL-JAAS-CONFIG***.
+> The connection to the eventhub needs to be stored in the `spring.kafka.properties.sasl.jaas.config` application property. You'll need to name your Key Vault secret **SPRING-KAFKA-PROPERTIES-SASL-JAAS-CONFIG**.
 
 1.  The name you use for your new namespace should be globally unique, so you'll need to modify environment variable value.
     
@@ -85,12 +85,13 @@ Event Hubs represents the "front door" for an event pipeline, often called an *e
     $EVENTHUB_CONNECTIONSTRING
     ```
 
-6.  Paste the output value in the **secretfile.txt** file by replacing the EVENTHUB\_CONNECTIONSTRING value. The secretfile.txt file should be similar the output below.
+    > [!NOTE]
+    > The connection string should have the following format. Where the *&lt;event-hub-namespace&gt;* placeholder represents the name of your Event Hub namespace and the *&lt;shared-access-key&gt;* placeholder represents a Shared Access Signature value corresponding to the listensendrule access key.<br>`Endpoint=sb://<event-hub-namespace>.servicebus.windows.net/;SharedAccessKeyName=listensendrule;SharedAccessKey=<shared-access-key>;EntityPath=telemetry`
+
+6.  From the Git Bash window, in your local application repository, use your text editor to create a file named **secretfile.txt.** Use with the following content to replace the *&lt;connection-string&gt;* placeholder with the value of the connection string you displayed in the previous step. Exclude the trailing string ;EntityPath=telemetry and save the file.
     
     ```
-    org.apache.kafka.common.security.plain.PlainLoginModule required
-    username="$ConnectionString"
-    password="Endpoint=sb://YOURNAMESPACE.servicebus.windows.net/; SharedAccessKeyName=RootManageSharedAccessKey; SharedAccessKey=THEACCESSKEY";
+    org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="<connection-string>";
     ```
 
 7.  Create a new Key Vault secret for the connection string.
@@ -102,7 +103,7 @@ Event Hubs represents the "front door" for an event pipeline, often called an *e
         --vault-name $KEYVAULT_NAME
     ```
 
-8.  In the configuration repository for the **application.yml** file, update the kafka configuration. Update the bootstrap-servers parameter to use the eventhub fully qualified domain name for the namespace.
+8.  In your configuration repository's **application.yml** file, add the kafka configuration in the **spring** section by appending the following YAML fragment. Make sure to replace the *&lt;eventhub-namespace&gt;* placeholder in the value of the **bootstrap-servers** parameter.
     
     ```
     kafka:
