@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What do you need to do if you want to configure secret scanning on a public repository?"
+  - content: "What do you need to do if you want to change the settings for secret scanning on a public repository?"
     choices:
     - content: "Enable secret scanning on the repository"
       isCorrect: false
-      explanation: "This is incorrect. Secret scanning is automatically enabled on public repositories."
+      explanation: "This is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository."
     - content: "Switch the repository to a private one with GitHub Advanced Security"
       isCorrect: true
-      explanation: "Correct! Secret scanning is configurable only on private repositories with GitHub Advanced Security."
+      explanation: "Correct! You can change the settings for secret scanning only on private repositories with GitHub Advanced Security."
     - content: "Get admin permissions on the repository"
       isCorrect: false
-      explanation: "This is incorrect. Secret scanning is not configurable on public repositories no matter the permissions you have on the repository."
+      explanation: "This is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository no matter what permissions you have on the repository."
   - content: "Where can you configure the recipients of secret scanning alerts?"
     choices:
     - content: "In the Security and analysis settings of a repository"
