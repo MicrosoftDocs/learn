@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Design security operations strategy"
   questions:
-  - content: "- What solution can Tailwind Traders use to evaluate security workflows in their Azure environment?"
+  - content: "What solution can Tailwind Traders use to evaluate security workflows in their Azure environment?"
     choices:
     - content: "Azure Logic Apps could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
       isCorrect: true

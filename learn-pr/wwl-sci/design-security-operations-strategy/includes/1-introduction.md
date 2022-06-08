@@ -21,9 +21,7 @@ Working experience with zero trust strategies, applying security policies, and d
 
 ### Security Operations Strategy Overview 
 
-One of the significant changes in perspectives that is a hallmark of a Zero Trust security framework is moving away from trust-by-default toward trust-by-exception. 
-However, a reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of 
-the request is critical to proving its point-in-time trustworthiness. This attestation requires gaining visibility into the activities on and around the request. 
+One of the significant changes in perspectives that are a hallmark of a Zero Trust security framework is moving away from trust-by-default toward trust-by-exception. However, a reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires gaining visibility into the activities on and around the request. 
 
 Our other Zero Trust guides defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [networks](https://aka.ms/ZTNetwork). 
 All these investments increase your visibility, which gives you better data for making trust decisions. However, adopting a Zero Trust approach in other areas like identities, endpoints, infrastructure and networks, increases the number of incidents Security Operation Center (SOC) analysts need to mitigate.

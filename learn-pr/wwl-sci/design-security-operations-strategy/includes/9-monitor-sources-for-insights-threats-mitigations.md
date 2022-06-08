@@ -29,7 +29,7 @@ Alert definitions are contextual attributes that can be used collectively to ide
 
 ### Indicators of compromise (IOC)
 
-IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered evidence of a breach. They are often seen after an attack has already been carried out, and the objective has been reached, such as ex-filtration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
+IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered evidence of a breach. They are often seen after an attack has already been carried out, and the objective has been reached, such as exfiltration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
 
 ### Relationship between alert definitions and IOCs
 
