@@ -133,20 +133,20 @@ Below is the activity flow.
     ```
 
 4.  In the **spring-petclinic-visits-service/src/main/java/org/springframework/samples/petclinic/visits/config** subdirectory, add another `QueueConfig.java` class file containing the following code:
-
-```java
-package org.springframework.samples.petclinic.visits.config;
-
-import org.springframework.beans.factory.annotation.Value;
-
-public class QueueConfig {
-    @Value("${spring.jms.queue.visits-requests:visits-requests}")
-    private String visitsRequestsQueue;
-    public String getVisitsRequestsQueue() {
-        return visitsRequestsQueue;
+    
+    ```java
+    package org.springframework.samples.petclinic.visits.config;
+    
+    import org.springframework.beans.factory.annotation.Value;
+    
+    public class QueueConfig {
+        @Value("${spring.jms.queue.visits-requests:visits-requests}")
+        private String visitsRequestsQueue;
+        public String getVisitsRequestsQueue() {
+            return visitsRequestsQueue;
+        }
     }
-}
-```
+    ```
 
 5.  In the **spring-petclinic-visits-service**, create a new ***src/main/java/org/springframework/samples/petclinic/visits/service*** directory and add a `VisitsReceiver.java` class using the code seen below.
     
@@ -197,7 +197,7 @@ public class QueueConfig {
     
     The procedure below sends a confirmation message to the **visits-confirmations** queue.
 
-5.  Rebuild your application.
+6.  Rebuild your application.
     
     ```azurecli
     mvn clean package -DskipTests
