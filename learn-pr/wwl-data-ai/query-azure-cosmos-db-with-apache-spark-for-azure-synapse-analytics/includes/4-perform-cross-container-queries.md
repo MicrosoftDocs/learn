@@ -62,7 +62,7 @@ We have so far used loading the data into a DataFrame as the approach, let us cr
 
     [![Using SparkSQL to query the customers containers in a notebook](../media/query-customers-container.png)](../media/query-customers-container.png#lightbox)
 
-    You will notice that the query is using the customer's table we have created to return a result set identical to the one we created using the PySpark example earlier. 
+    You'll notice that the query is using the customer's table we have created to return a result set identical to the one we created using the PySpark example earlier. 
 
     Given the power of Spark SQL lets join the data from the Azure Cosmos DB Core (SQL) API, in the customers table, with the data that is contained in the Azure Cosmos DB API for MongoDB, in the sales order table. 
 
@@ -86,7 +86,7 @@ We have so far used loading the data into a DataFrame as the approach, let us cr
     
     We're now using Spark SQL to create a temporary view called **SalesOrderView (D)**.
     
-    Within which we're **renaming the _id column from the SalesOrders table to SalesOrderId (F)**, as the _id property is the ID of all Adventure Works sales order records. We have also **accessed the string values for this column by specifying _id.string (E)**. In a similar manner, we're accessing the address.country and address.city properties embedded in the address of the Customer table. 
+    Within which we're **renaming the _id column from the SalesOrders table to SalesOrderId (F)**, as the _id property is the ID of all Adventure Works sales order records. We've also **accessed the string values for this column by specifying _id.string (E)**. In a similar manner, we're accessing the address.country and address.city properties embedded in the address of the Customer table. 
     
     We're converting the data type of the ship date and order date properties to the date data type using the Spark SQL to_date() function, remembering to access the string values using the shipdate.string and orderdate.string respectively from the **SalesOrder table (G)**. 
     
