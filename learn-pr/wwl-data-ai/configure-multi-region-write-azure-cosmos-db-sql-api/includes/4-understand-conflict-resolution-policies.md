@@ -10,7 +10,7 @@ The default conflict resolution policy in Azure Cosmos DB is **Last Write Wins**
 
 While the **_ts** property is the default for the Last Write Wins policy, you can configure any numeric property for this policy by configuring a *conflict resolution path*. You can use the .NET SDK for Azure Cosmos DB SQL API to configure the custom conflict resolution path.
 
-In this example, a new container named **products** is created with a custom conflict resolution path of **/metadata/sortableTimestamp**.
+In this example, a new container named **products** is created with a custom conflict resolution path of **/sortableTimestamp**.
 
 ```csharp
 Database database = client.GetDatabase("cosmicworks");
@@ -20,7 +20,7 @@ ContainerProperties properties = new("products", "/categoryId")
     ConflictResolutionPolicy = new ConflictResolutionPolicy()
     {
         Mode = ConflictResolutionMode.LastWriterWins,
-        ResolutionPath = "/metadata/sortableTimestamp",
+        ResolutionPath = "/sortableTimestamp",
     }
 };
 

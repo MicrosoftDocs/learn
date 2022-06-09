@@ -14,7 +14,7 @@ Logic Apps is a member of [Azure Integration Services](https://azure.microsoft.c
 
 Azure Logic Apps and Azure Functions may seem similar but there are basic differences. Azure Functions is a code-first technology. Azure Logic Apps is a design-first technology. 
 
-:::image type="content" source="../media/select-logic-apps.png" alt-text="Flowchart comparing Azure function and Azure Logic Apps solutions.":::
+:::image type="content" source="../media/select-logic-apps.png" alt-text="Flowchart comparing Azure Function and Azure Logic Apps solutions.":::
 
 
 

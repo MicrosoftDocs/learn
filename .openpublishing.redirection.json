@@ -13494,12 +13494,12 @@
       "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-serverless-sql-pools-capabilities/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
-    },      
-    {    
+    },
+    {
       "source_path": "learn-pr/azure/aks-workshop/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
       "redirect_document_id": false
-    },     
+    },
     {
       "source_path": "learn-pr/azure/aks-workshop/01-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intro-to-kubernetes-on-azure/",
@@ -13833,6 +13833,91 @@
     {
       "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-git-branches-workflows/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/2-describe-types.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/3-explain-estimated-actual.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/4-identify-problematic.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/5-exercise-identify-issues-database-design.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/11-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/2-configure-manage-roles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/3-configure-manage-roles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/3-exercise-manage-users-roles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/4-exercise-manage-users-roles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/6-configure-delegation-administrative-units.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/5-configure-delegation-administrative-units",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/5-configure-manage-device-registration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/4-configure-manage-custom-domains.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/7-configure-manage-custom-domains",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/7-configure-tenant-wide-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/8-configure-tenant-wide-options",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/8-exercise-set-tenant-wide-properties.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/9-exercise-set-tenant-wide-properties",
       "redirect_document_id": true
     }
   ]
