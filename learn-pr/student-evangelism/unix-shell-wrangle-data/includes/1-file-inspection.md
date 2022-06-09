@@ -19,7 +19,7 @@ Follow these steps to work with exercise commands in Cloud Shell:
 1. Run the command by pressing Enter.
 
 
-## Get the datasets
+## Get the NASA dataset
 
 To complete the practice exercises in this module, you need to load the NASA datasets.
 
@@ -174,8 +174,6 @@ nl -b a NASA-software-API.txt
 
 The last line in the output should be:
 
-```output
-703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
-```
+> `703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
 
 The index value now matches the number of lines counted with the `wc` command.

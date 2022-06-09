@@ -14,12 +14,11 @@ cat NASA-software-API.txt
 
 Your output should list each line in the file, and end with these lines:
 
-```output
-SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
-GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
-GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
-GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
-```
+> `SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"`
+> `GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"`
+> `GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"`
+> `GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
+
 
 ## Create files
 
@@ -102,7 +101,7 @@ file1   NASA-logs-1995.txt   NASA-software-API.txt
 
 The content of each file was displayed to `stdout` starting on a new line and in the order that the files were named in the command. You can also redirect concatenation output to a file. 
 
-Run the `cat` command with the greater than (`>`) operator to save the output in a new file named  **file2**:
+Run the `cat` command with the greater than (`>`) operator to save the output in a new file, such as  **file2**:
 
 ```bash
 cat file1 file1 > file2

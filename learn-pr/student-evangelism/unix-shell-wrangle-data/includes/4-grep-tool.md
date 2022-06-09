@@ -2,16 +2,18 @@ So far, you've learned about basic file inspection and regular expressions. In t
 
 ## Basic usage
 
-Let's get started with the basic usage of the `grep` command. The basic syntax for `grep` is `grep 'pattern' [file_to_search]`. The pattern value is enclosed in apostrophe (`'`) characters.
+Let's get started with the basic usage of the `grep` command. The common syntax for `grep` is `grep 'pattern' [file_to_search]`. The pattern value is enclosed in apostrophe (`'`) characters.
 
-To find all lines in the **NASA-logs-1995.txt** file that contain the pattern `*.novo.dk`, we specify the regex as follows:
+To find all lines in the file that contain the pattern `*.novo.dk`, we specify the regex as follows:
 - Start with the asterisk (`*`) to look for lines that match any character zero or more times.
 - Follow the asterisk with the string `.novo.dk`. In this example, the period (`.`) is literal and not used as a wildcard.
-- Use the back slash (`\`) escape character for the special symbols in the pattern, asterisk and period.
+- Use the back slash (`\`) escape character for the special symbols in the pattern: asterisk and period.
 
-Now try to match this regex in the dataset log file.
+## Use grep on a file
 
-1. First, close the Cloud Shell editor so you can see the entire output in the terminal.
+We're going to look for all lines in the **NASA-logs-1995.txt** file that contain the `grep` pattern `'*.novo.dk'`.
+
+1. First, close the Cloud Shell editor so you have the full space in the terminal to see command output.
 
    There are two ways to close the editor:
    - Press Ctrl + Q.
@@ -19,7 +21,7 @@ Now try to match this regex in the dataset log file.
 
    :::image type="content" source="../media/close-cloud-shell-sandbox-editor.png" alt-text="Screenshot showing the Close Editor option on the ellipsis context menu." lightbox="../media/close-cloud-shell-sandbox-editor.png":::
 
-1. Next, run the `grep` command to match the `\*\.novo\.dk` regular expression in the file:
+1. Run the `grep` command to match the `\*\.novo\.dk` regular expression in the file:
 
    ```bash
    grep '\*\.novo\.dk' NASA-logs-1995.txt
@@ -42,11 +44,11 @@ Now try to match this regex in the dataset log file.
    ```
 
 
-## Pass multiple files
+## Use grep on multiple files
 
 You can also pass multiple files to the `grep` command.
 
-Let's find all occurrences of the word "NASA" and the line numbers where the matches occur in the **NASA-logs-1995.txt** and **NASA-software-API.txt** files. To add line numbers to the output, you need to pass the `-n` flag to the `grep` command.
+Let's find all occurrences of the word "NASA" and show the line numbers where the matches occur in both NASA dataset files. To add line numbers to the output, you need to pass the `-n` flag to the `grep` command.
 
 - Run the following `grep` command on the two dataset files:
 

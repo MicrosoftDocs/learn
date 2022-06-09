@@ -20,9 +20,9 @@ INPUT: ZSH
 MATCH: false
 ```
 
-If you completed the previous unit, you should have a sample of the open dataset in the **NASA-software-API.txt** file. We'll use this dataset to do some pattern matching with regex in the Azure Cloud Shell sandbox.
+If you completed the previous unit, you should have a sample of the open NASA dataset. We'll use this dataset to do some pattern matching with regex in the Azure Cloud Shell sandbox.
 
-1. Use the `code` command to open the NASA-software-API.txt file in the Cloud Shell editor:
+1. Use the `code` command to open the **NASA-software-API.txt** file in the Cloud Shell editor:
 
     ```bash
     code NASA-software-API.txt
