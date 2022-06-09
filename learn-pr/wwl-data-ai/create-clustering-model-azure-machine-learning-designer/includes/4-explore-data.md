@@ -37,7 +37,7 @@ Network](https://lternet.edu/).
 
 To get started with Azure machine learning designer, first you must create a pipeline and add the dataset you want to work with.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, expand the left pane by selecting the three lines at the top left of the screen. View the **Designer** page (under **Author**), and select **+** to create a new pipeline.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, expand the left pane by selecting the &#9776; icon at the top left of the screen. View the **Designer** page (under **Author**), and select **+** to create a new pipeline.
 2. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top. 
 3. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML *compute-type***, select the compute cluster you created previously. 
 4. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering**.   
@@ -50,8 +50,8 @@ To get started with Azure machine learning designer, first you must create a pip
     ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
 2. Click on the cylinder icon for **Data Assets**. Drag the **penguin-data** dataset onto the canvas.
-3. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
-4. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
+3. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and click on **Preview data**. 
+4. Review the *Dataset output* schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
 
 > [!div class="centered"]
 > ![A visualization of the penguin-data dataset, showing its columns and some sample data.](../media/penguin-visualization.png)
