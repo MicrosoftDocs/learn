@@ -5,7 +5,7 @@ The next step in the infrastructure threat modeling process is to create a data-
 To build this diagram, we make the following assumptions:
 
 - **Zero trust** - data-flow starts from outside of the corporate network and cannot be trusted.
-- **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. For more information, see [Provide context with the right depth layer](/learn/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](https://docs.microsoft.com/learn/paths/tm-threat-modeling-fundamentals/) learning path.
+- **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. For more information, see [Provide context with the right depth layer](/learn/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](/learn/paths/tm-threat-modeling-fundamentals/) learning path.
 
 ## Elements
 

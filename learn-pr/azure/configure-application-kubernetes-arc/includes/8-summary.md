@@ -9,4 +9,4 @@ To learn more, refer to the following documents:
 - [What is Azure Arc enabled Kubernetes?](/azure/azure-arc/kubernetes/overview)
 - [Cluster extensions on Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/conceptual-extensions)
 - [Custom locations on top of Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/conceptual-custom-locations)
-- [Deploy your app to Azure App Service with a ZIP or WAR file](https://docs.microsoft.com/azure/app-service/deploy-zip)
+- [Deploy your app to Azure App Service with a ZIP or WAR file](/azure/app-service/deploy-zip)
