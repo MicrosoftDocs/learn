@@ -5,23 +5,23 @@ You can set up direct federation with any organization whose identity provider (
 
 ## When is a guest user authenticated with direct federation?
 
-After you set up direct federation with an organization, any new guest users you invite will be authenticated using direct federation. Note that setting up direct federation doesn’t change the authentication method for guest users who have already redeemed an invitation from you. Here are some examples:
+After you set up direct federation with an organization, any new guest users you invite will be authenticated using direct federation. Setting up direct federation doesn’t change the authentication method for guest users who have already redeemed an invitation from you. Here are some examples:
 
-- If guest users have already redeemed invitations from you, and you subsequently set up direct federation with their organization, those guest users will continue to use the same authentication method they used before you set up direct federation.
-- If you set up direct federation with a partner organization and invite guest users, and then the partner organization later moves to Azure AD, the guest users who have already redeemed invitations will continue to use direct federation, as long as the direct federation policy in your tenant exists.
-- If you delete direct federation with a partner organization, any guest users currently using direct federation will be unable to sign in.
+- If guest users have already redeemed invitations from you.  Then you set up direct federation with their organization. The guest users will continue to use the same authentication method they used before you set up direct federation.
+- If you set up direct federation with a partner organization. Then invite guest users, and then the partner organization later moves to Azure AD. Then the guest users who have already redeemed invitations will continue to use direct federation. As long as the direct federation policy in your tenant exists.
+- If you delete direct federation with a partner organization. Than any guest users currently using direct federation will be unable to sign in.
 
 In any of these scenarios, you can update a guest user’s authentication method by deleting the guest user account from your directory and reinviting them.
 
-Direct federation is tied to domain namespaces, such as contoso.com and fabrikam.com. When establishing a direct federation configuration with AD FS or a third-party IdP, organizations associate one or more domain namespaces to these IdPs.
+Direct federation is tied to domain namespaces, such as contoso.com and fabrikam.com. You establish a direct federation configuration with AD FS or a third-party IdP, organizations associate one or more domain-namespaces to these IdPs.
 
 ## End-user experience
 
-With direct federation, guest users sign into your Azure AD tenant using their own organizational account. When they are accessing shared resources and are prompted for sign-in, direct federation users are redirected to their IdP. After successful sign-in, they are returned to Azure AD to access resources. Direct federation users’ refresh tokens are valid for 12 hours, the default length for passthrough refresh token in Azure AD. If the federated IdP has SSO enabled, the user will experience SSO and will not see any sign-in prompt after initial authentication.
+With direct federation, guest users sign into your Azure AD tenant using their own organizational account. When they're accessing shared resources and are prompted for sign-in, direct federation users are redirected to their IdP. After successful sign-in, they're returned to Azure AD to access resources. Direct federation users’ refresh tokens are valid for 12 hours, the default length for passthrough-refresh-tokens in Azure AD. If the federated IdP has SSO enabled, the user will experience SSO and won't see any sign-in prompt after initial authentication.
 
 ## Limitations
 
-Direct federation limitations include those described in the following table.
+Direct federation limitations include:
 
 | Limitation | Description |
 | :----- | :----- |
@@ -108,12 +108,12 @@ Guest users who see a *header too long* error can clear their cookies or open a 
 
 ## Deprecation of WebView sign-in support
 
-Starting January 4, 2021, Google is deprecating embedded WebView sign-in support. If you’re using Google federation or self-service sign-up with Gmail, you should test your line-of-business native applications for compatibility. If your apps include WebView content that requires authentication, Google Gmail users won't be able to authenticate. The following are known scenarios that will impact Gmail users:
+January 4, 2021, Google is deprecating embedded WebView sign-in support. If you’re using Google federation or self-service sign-up with Gmail, you should test your line-of-business native applications for compatibility. If your apps include WebView content that requires authentication, Google Gmail users won't be able to authenticate. The following are known scenarios that will affect Gmail users:
 
 - Windows apps that use embedded WebView or the WebAccountManager (WAM) on older versions of Windows.
 - Other native apps you’ve developed that use an embedded browser framework for authentication.
 
-This change does not affect:
+This change doesn't affect:
 
 - Windows apps that use embedded WebView or the WebAccountManager (WAM) on the latest versions of Windows
 - Microsoft iOS apps
@@ -126,10 +126,10 @@ We’re continuing to test various platforms and scenarios, and will update publ
 1.  Follow [Google’s guidance](https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html) to determine if your apps are affected.
 2.  Using Fiddler or another testing tool, inject a header during sign-in and use a Google external identity to test sign-in:
     
-    1.  Add Google-Accounts-Check-OAuth-Login:true to your HTTP request headers when the requests are sent to accounts.google.com.
+    1.  Add `Google-Accounts-Check-OAuth-Login:true` to your HTTP request headers when the requests are sent to accounts.google.com.
     2.  Attempt to sign in to the app by entering a Gmail address in the accounts.google.com sign-in page.
     3.  If sign-in fails and you see an error such as “This browser or app may not be secure,” your Google external identities will be blocked from signing in.
-3.  Resolve the issue by doing one of the following:
+3.  Resolve the issue by doing one of the following tasks:
     
      -  If your Windows app uses embedded WebView or the WebAccountManager (WAM) on an older version of Windows, update to the latest version of Windows.
      -  Modify your apps to use the system browser for sign-in. For details, see [Embedded vs System Web UI](/azure/active-directory/develop/msal-net-web-browsers) in the MSAL.NET documentation.
@@ -218,10 +218,10 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 
 ## Add Facebook as an identity provider for external identities
 
-You can add Facebook to your self-service sign-up user flows (Preview) so that users can sign in to your applications using their own Facebook accounts. To allow users to sign in using Facebook, you'll first need to enable self-service sign-up for your tenant. After you add Facebook as an identity provider, set up a user flow for the application and select Facebook as one of the sign-in options.
+You can add Facebook to your self-service sign up user flows (Preview) so that users can sign in to your applications using their own Facebook accounts. Allow users to sign in using Facebook, you'll need to enable self-service sign-up for your tenant. After you add Facebook as an identity provider, set up a user flow for the application and select Facebook as one of the sign-in options.
 
 > [!NOTE]
-> Users can only use their Facebook accounts to sign up through apps using self-service sign-up and user flows. Users cannot be invited and redeem their invitation using a Facebook account.
+> Users can only use their Facebook accounts to sign up through apps using self-service sign up and user flows. Users cannot be invited and redeem their invitation using a Facebook account.
 
 ## Create an app in the Facebook developers console
 
@@ -231,13 +231,13 @@ To use a Facebook account as an identity provider, you need to create an applica
 > Use the following URLs in the steps 9 and 16 below.
 
  -  For **Site URL** enter the address of your application, such as `https://contoso.com`.
- -  For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Azure Active Directory Overview blade.
+ -  For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Azure Active Directory Overview screen.
 
 1.  Sign in to [Facebook for developers](https://developers.facebook.com/) with your Facebook account credentials.
-2.  If you have not already done so, you need to register as a Facebook developer. To do this, select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
+2.  If you haven't already done so, you need to register as a Facebook developer. Select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
 3.  Select **My Apps** and then **Create App**.
 4.  Enter a **Display Name** and a valid **Contact Email**.
-5.  Select **Create App ID**. This may require you to accept Facebook platform policies and complete an online security check.
+5.  Select **Create App ID**. You may have to accept Facebook platform policies and complete an online security check.
 6.  Select **Settings** then select **Basic**.
 7.  Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Azure AD.
 8.  At the bottom of the page, select **Add Platform**, and then select **Website**.
@@ -250,7 +250,7 @@ To use a Facebook account as an identity provider, you need to create an applica
 15. Under **Facebook Login**, select **Settings**.
 16. In **Valid OAuth redirect URIs**, enter the appropriate URL (noted above).
 17. Select **Save Changes** at the bottom of the page.
-18. To make your Facebook application available to Azure AD, select the Status selector at the top right of the page and turn it **On** to make the Application public, and then select **Switch Mode**. At this point the Status should change from **Development** to **Live**.
+18. To make your Facebook application available to Azure AD, select the Status selector at the top right of the page and turn it **On** to make the Application public, and then select **Switch Mode**. At this point, the Status should change from **Development** to **Live**.
 
 ## Configure a Facebook account as an identity provider
 
@@ -271,7 +271,7 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 
 ## How do I remove Facebook federation?
 
-You can delete your Facebook federation setup. If you do so, any users who have signed up through user flows with their Facebook accounts will no longer be able to log in.
+You can delete your Facebook federation setup. If you do so, any users who have signed up through user flows with their Facebook accounts will no longer be able to sign in.
 
 ### To delete Facebook federation in the Azure AD portal:
 

@@ -63,7 +63,7 @@ For guest users in State 3 and State 4, the **Source** property is set to **Azur
 
 This property indicates the relationship of the user to the host tenancy. This property can have two values:
 
-- **Member**: This value indicates a user of the host organization and the user is considered internal to the organization. For example, this user expects to have access to internal-only sites. This user is not considered an external collaborator.
+- **Member**: This value indicates a user of the host organization and the user is considered internal to the organization. For example, this user expects to have access to internal-only sites. This user isn't considered an external collaborator.
 - **Guest**: This value indicates a user who isn't considered internal to the company, such as an external collaborator, partner, or customer. Such a user isn't expected to receive a CEO's internal memo or receive company benefits, for example.
     
     > [!NOTE]
@@ -73,7 +73,7 @@ This property indicates the relationship of the user to the host tenancy. This p
 
 This property indicates how the user signs in.
 
-- Invited User: This user has been invited but has not yet redeemed an invitation.
+- Invited User: This user has been invited but hasn't yet redeemed an invitation.
 - External Azure Active Directory: This user is homed in an external organization and authenticates by using an Azure AD account that belongs to the other organization. This type of sign-in corresponds to State 1.
 - Microsoft account: This user is homed in a Microsoft account and authenticates by using a Microsoft account. This type of sign-in corresponds to State 2.
 - Windows Server Active Directory: This user is signed in from on-premises Active Directory that belongs to this organization. This type of sign-in corresponds to State 3.
@@ -96,9 +96,9 @@ It's possible to convert UserType from Member to Guest and vice-versa by using P
 
 ## Remove guest user limitations
 
-There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Configure this in the user settings in Azure AD menu.
+There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitaion in the user settings within Azure AD menu.
 
-:::image type="content" source="../media/remove-guest-limitations.png" alt-text="Screenshot of the External users option in the user settings. Chose what restrictions are set for external users.":::
+:::image type="content" source="../media/remove-guest-limitations.png" alt-text="Screenshot of the External users option in the user settings. Choose what restrictions are set for external users.":::
 
 ## Dynamic groups and Azure Active Directory B2B collaboration
 

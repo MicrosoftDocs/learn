@@ -16,7 +16,7 @@
 8.  Member users and users assigned to specific admin roles: Set to allow only full members of the organization or members of admin groups to invite guests.
 9.  Only users assigned specific admin roles: Set to allow only those people included in specific admin roles to invite guests.
 10. No one in organization can invite guests: Set to restrict all guest user invites by members.
-11. Enable guest self-service sign up via user flows: Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory. If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
+11. Enable guest self-service sign-up via user flows: Enables or disables self-service sign-up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory. If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
 
     :::image type="content" source="../media/guest-invite-settings.png" alt-text="Screenshot of the guest invite settings with the Guests can invite set to No and highlighted.":::
     
