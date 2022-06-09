@@ -35,7 +35,6 @@ When the deployment is complete, select **Go to resource**.
 1. From the top menu select **Set admin**, and a list of Active Directory users and groups is displayed.
 1. Select an **Azure Active Directory user** to be the Azure Active Directory administrator, and then select **Select**.
 1. The Active Directory admin is displayed in a list. This creates a new user to the Azure Database for MySQL server, with full administrator permissions.
-    :::image type="content" source="../media/single-server-ad-admin.png" alt-text="Screenshot showing the Active Directory admin page." lightbox="../media/single-server-ad-admin.png":::
 
 > [!NOTE]
 > Only one Azure AD admin user can be created for each Azure Database for MySQL server. If you select another user, this will replace the existing Azure AD admin.
