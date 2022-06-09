@@ -1,5 +1,3 @@
-## Sorting and filtering data
-
 We analyze data to answer a business question or find a story within the data. Sorting and filtering data helps us achieve this. For example, how many sales were made in the New York store on Monday? Or how many packages were shipped from the warehouse on Friday?
 
 Filtering excludes rows from the result set that don't answer the question we're asking. If we filter out all stores except New York, we can then analyze the results from a smaller dataset and count how many sales were made. We can filter on any column in a dataset, regardless of the type of data within that column.

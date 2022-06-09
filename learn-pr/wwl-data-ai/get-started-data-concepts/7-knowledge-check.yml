@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2022
+  ms.date: 06/09/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "A date type"
       isCorrect: false
       explanation: "That's incorrect. Only a date value should be stored in a column with a date type."
-    - content: ")A string type"
+    - content: "A string type"
       isCorrect: false
       explanation: "That's incorrect. String types are designed for text values and cannot be used in calculations."
   - content: "What happens when filters are applied to a dataset?"

@@ -1,5 +1,3 @@
-## Get started with data
-
 A dataset is a collection of data that is organized in rows and columns, often referred to as a table. Rows are also known as records, and columns as fields. Data points make up the fields in a dataset that usually comprise different types of data:
 
 - **Temporal data** - Temporal data are dates held against an event, such as when an order was placed, or a package was shipped. Dates have a natural order, and we know that 12/24/2021 comes before 12/25/2021, and after 12/23/2021. Because of this natural order, it's easy to measure values over time.

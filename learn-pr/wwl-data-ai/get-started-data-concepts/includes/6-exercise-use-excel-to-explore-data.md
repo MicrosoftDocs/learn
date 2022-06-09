@@ -1,5 +1,3 @@
-## Exercise: Use Excel to explore data 
-
 OK, now it's your chance to get hands on with data. In this lab, you'll use Microsoft Excel Online to explore a simple dataset.
 
 ## Before you start
@@ -8,11 +6,11 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
 ## Lab overview
 
-Rosie Reeves is an entrepreneurial middle-school student who sells homemade lemonade from a stand at the park near her house. To promote her lemonade-stand, she distributes leaflets in the park. Rosie records details of her sales and flyer (leaflet) distribution, along with weather measurements including the temperature and rainfall each day.
+Rosie Reeves is an entrepreneurial middle-school student who sells homemade lemonade from a stand at the park near her house. To promote her lemonade stand, she distributes leaflets in the park. Rosie records details of her sales and flyer (leaflet) distribution, along with weather measurements including the temperature and rainfall each day.
 
 In this lab, you will explore and visualize the data Rosie recorded.
 
-## Exercise 1: Viewing a table of data in Excel
+## Exercise 1: View a table of data in Excel
 
 In this exercise, you will upload the Excel workbook containing Rosie's data to the OneDrive cloud storage account associated with your Microsoft account, and then explore the data in Microsoft Excel Online.
 
@@ -22,11 +20,11 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
     :::image type="content" source="../media/onedrive.png" alt-text="OneDrive" lightbox="../media/onedrive.png":::
 
-2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
+2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DataFund**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
 
     ```
-    https://github.com/GraemeMalcolm/dat101/raw/master/labfiles/Lemonade.xlsx
+    https://github.com/MicrosoftLearning/mslearn-data-concepts/tree/main/labfiles/Lemonade.xlsx
     ```
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
@@ -76,9 +74,9 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 1. Using the filter and sort capabilities in Excel Online, filter the data so that only weekdays (Monday to Friday) are shown, and sort the data so that the first row contains data for the weekday with the lowest temperature.
 2. Make a note of the day and the temperature, and then clear the filter and re-sort the data back into chronological order.
 
-## Exercise 2: Using formulae to explore data in Excel
+## Exercise 2: Using formulas to explore data in Excel
 
-In this exercise, you will use formulae to create derived columns that extend the data recorded by Rosie.
+In this exercise, you will use formulas to create derived columns that extend the data recorded by Rosie.
 
 ### Add derived columns
 

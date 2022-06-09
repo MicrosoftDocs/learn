@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-concepts.derive-data
-title: Derive data
+title: Derived data
 metadata:
-  title: Derive data
-  description: "Derive data"
-  ms.date: 06/07/2022
+  title: Derived data
+  description: "Derived data"
+  ms.date: 06/09/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

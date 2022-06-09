@@ -1,5 +1,3 @@
-## Derived data
-
 The columns in a dataset may not provide enough information to answer a question we have about our data. This is where derived data is useful. A derived column is a new column added to a dataset, based on the existing data. There are a number of ways you can create a derived column, and they offer the flexibility to enhance your dataset for more detailed analysis. The data type of the derived field can be a number, date, or string.  
 
 You can use a calculation to create a derived column, which can be summarized. If you want to calculate the total value of a sales order line, you multiply the quantity field by the sales price field, to generate the total value as a new column. Then you use an aggregate function to summarize each value in the derived column to return the total value of all order lines.

@@ -1,5 +1,3 @@
-## Highlighting data
-
 If your dataset has only a small number of rows and columns, you can identify patterns and trends within the data. However, as the dataset grows, it becomes too large to do analysis without using additional tools.
 
 A visual indicator highlights data so you can quickly see patterns without having to dive deeply into it. An indicator is instantly readable and can show low or high values against a category, such as sales by region, without needing to read the numeric values within the column.
