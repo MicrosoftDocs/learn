@@ -84,6 +84,7 @@ Required attributes in the WS-Fed message from the IdP:
 Required claims for the WS-Fed token issued by the IdP:
 
 | Attribute| Value |
+| :----- | :----- |
 | ImmutableID | `http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID` |
 | emailaddress | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
 

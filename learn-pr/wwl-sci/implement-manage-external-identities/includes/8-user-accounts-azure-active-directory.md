@@ -15,7 +15,7 @@ Microsoft recommends that organizations use the rule of least privilege. You can
 
 ### Limited Administrator role
 
-:::image type="content" source="../media/limited-admin.png" alt-text="Screenshot showing the limited administrator role. You then get to pick what type of prebuilt Azure AD role needed.":::
+:::image type="content" source="../media/limited-admin-role.png" alt-text="Screenshot showing the limited administrator role. You then get to pick what type of prebuilt Azure AD role needed.":::
 
 
 ## Understand the B2B user

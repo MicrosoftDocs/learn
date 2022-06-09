@@ -1,6 +1,6 @@
 Azure AD External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources, while letting them sign in using whatever identity they prefer. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD to keep your resources protected.
 
-:::image type="content" source="../media/sc300-external-user-state-diagram.png" alt-text="Diagram of the different ways an external user account can be generated and verified, when invited to you Azure AD.":::
+:::image type="content" source="../media/external-user-state-diagram.png" alt-text="Diagram of the different ways an external user account can be generated and verified, when invited to you Azure AD.":::
 
 Depending on the inviting organization's needs, an Azure AD B2B collaboration user can be in one of the following account states:
 
