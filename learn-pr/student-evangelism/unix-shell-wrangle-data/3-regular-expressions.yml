@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to regular expressions
-durationInMinutes: 5
+durationInMinutes: 8
 azureSandbox: true
 interactive: bash
 content: |
