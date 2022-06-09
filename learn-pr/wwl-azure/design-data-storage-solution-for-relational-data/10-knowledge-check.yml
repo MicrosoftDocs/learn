@@ -35,7 +35,7 @@ quiz:
       explanation: "that’s correct. Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker."
     - content: "SQL Server in an Azure VM"
       isCorrect: false
-      explanation: "that’s incorrect. This does not meet the requirements of removing management of SQL Server"
+      explanation: "that’s incorrect. This doesn't meet the requirements of removing management of SQL Server"
     - content: "Azure SQL Database"
       isCorrect: false
       explanation: "that’s incorrect. Azure SQL Database doesn’t support instance-scoped features like service broker and CLR"
