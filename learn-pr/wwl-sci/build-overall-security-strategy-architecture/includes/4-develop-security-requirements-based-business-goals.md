@@ -1,5 +1,5 @@
 
-The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. Microsoft has created a [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/) to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measures.
+The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. Microsoft has created a [Cloud Adoption Framework](/azure/cloud-adoption-framework/) to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measures.
 
 ## Cloud Adoption Framework
 
