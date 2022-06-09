@@ -5,7 +5,8 @@ metadata:
   title: Introduction
   description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
   ms.date: 06/08/2022
-  ms.author: leestott
+  ms.author: chnoring
+  author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot
 durationInMinutes: 4 
