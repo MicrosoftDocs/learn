@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-strategy-for-securing-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/09/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Design strategy for securing data"
+  questions:
+  - content: "What can Tailwind Traders do to ensure the organization's data is encrypted to protect against compromises of any layer of encryption?"
+    choices:
+    - content: "Use Azure encryption services to enforce double encryption and provide several independent layers of encryption to protect against compromises."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Detect activity from unexpected locations or countries."
+      isCorrect: false
+      explanation: "Incorrect. This is one best practice to prioritize cloud threats."
+    - content: "Identify and control sensitive information (DLP); respond to sensitivity labels on content."
+      isCorrect: false
+      explanation: "This is a strategy to identify and protect sensitive data."
+  - content: "How can Tailwind Traders discover and manage Shadow IT in their network?"
+    choices:
+    - content: "Monitor user activities for anomalies, protect data when it is exfiltrated, and prevent unprotected data from uploading to apps."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Encrypt sensitive information in transit."
+      isCorrect: false
+      explanation: "Incorrect. This is a best practice to protect sensitive data."
+    - content: "Create a block download policy for unmanaged devices."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud Apps session policies allow you to restrict a session based on device state."
+  - content: "What can Tailwind Traders do to classify sensitive information in the Azure environment?"
+    choices:
+    - content: "Use Microsoft Information Protection to define which information is sensitive."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Tune Anomaly policies' set IP ranges, and send feedback for alerts."
+      isCorrect: false
+      explanation: "Incorrect. This is a best practice for prioritizing cloud threats."
+    - content: "Ensure that sensitive Web API-related data isn't stored in the browser's storage."
+      isCorrect: false
+      explanation: "Incorrect. This is a recommendation to mitigate threats to data."
