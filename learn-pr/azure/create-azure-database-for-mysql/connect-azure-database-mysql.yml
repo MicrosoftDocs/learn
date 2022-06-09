@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.azure.create-azure-database-for-mysql.connect-azure-database-mysql 
-title: Exercise - Connect to Azure Database for MySQL Flexible Server
+title: Exercise - Connect to an Azure Database for MySQL flexible server
 sandbox: true
 interactive: bash
 
 metadata:
-  title: Exercise - Connect to Azure Database for MySQL flexible server
-  description: Connect to Azure Database for MySQL Flexible Server.
+  title: Exercise - Connect to an Azure Database for MySQL flexible server
+  description: Connect to Azure Database for MySQL flexible server.
   ms.prod: learning-azure
   author: markingmyname
   ms.author: maghan

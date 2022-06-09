@@ -71,8 +71,10 @@ To delete the Azure Database for MySQL server resource you provisioned in this e
 
 1. In the Cloud Shell pane run the following command:
 
+    Use the resource group name <rgn>[sandbox resource group name]</rgn> created in the last exercise.
+
     ```bash
-    az group delete --name learn-a0ced250-4641-4594-bafb-c9edb5a18053
+    az group delete --name <resource group name>
     ```
 
 2. When prompted, **Are you sure you want to perform this operation?**, enter *y*.

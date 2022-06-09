@@ -16,8 +16,10 @@ Use the following procedure to deploy an Azure Database for MySQL flexible serve
 3. On the **Azure Database for MySQL servers** page, select **Create Azure Database for MySQL server**.
 
    :::image type="content" source="../media/create-azure-database-for-mysql-server.png" alt-text="Screenshot of creating a mysql server database":::
-a
+
 4. On the **Select Azure Database for MySQL deployment option** page, under **Resource type**, choose **Flexible server (Recommended)**, and then select **Create**.
+
+    :::image type="content" source="../media/choose-a-deployment-option-to-create-a-mysql-flexible-server-database-server.png" alt-text="Screenshot of deployment options":::
 
 5. On the **Flexible server** page, on the **Basics** tab, enter the information in the following table.
 
