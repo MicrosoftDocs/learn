@@ -63,4 +63,4 @@ The table below reproduces the information from the diagram showing each domain,
 
 For a detailed discussion of many of the Azure components in the MCRA, view the following video:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q6Ft]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
