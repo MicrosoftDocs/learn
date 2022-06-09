@@ -4,49 +4,75 @@ The `cat` command is one of the most basic yet useful commands for working with 
 
 ## Display content
 
-The `cat` command is most commonly used to read the content of files. Its default output destination, which is also known as a standard output, or `stdout`, is the monitor screen. To display the content of a file, you would input `cat <filename>`.
+The `cat` command is most commonly used to read the content of files. Its default output destination, which is also known as a standard output, or `stdout`, is the monitor screen. To display the content of a file, you would enter `cat <filename>`.
 
-Run the `cat` command to display the contents of `NASA-software-API.txt`.
+Run the `cat` command to display the contents of the **NASA-software-API.txt** file:
 
 ```bash
 cat NASA-software-API.txt
 ```
 
+Your output should list each line in the file, and end with these lines:
+
+```output
+697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+698=GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+699=GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+```
+
 ## Create files
 
-You can use the `cat` command to create files. Using this command is often easier than using a vi or text editor for small files.
+You can use the `cat` command to create files. Using this command is often easier than using a text editor or vi (short for _visual_) editor for small files.
 
-Create new files by redirecting the standard output of the `cat` command by using the *output redirect operator* `>` followed by the name of the file to be created. Then select <kbd>ENTER</kbd>, and finally simultaneously select <kbd>CTRL+D</kbd>.
+We create new files by redirecting the standard output of the `cat` command with the *output redirect operator* `>` followed by the name of the file to create. After you add text, you use Ctrl + D to return to the command prompt.
 
-1. Run the `cat` command followed by the `>` operator and the file name, `file1`.
+1. Run the `cat` command with the greater than `>` operator and the name of the file to create, **file1**:
 
    ```bash
    cat > file1
    ```
 
-1. Select <kbd>ENTER</kbd> to place the cursor at a new line.
-1. Enter some text, in this case, **NASA headquarters**. Then select <kbd>ENTER</kbd>.
-1. End the program and restore the command prompt by selecting <kbd>CTRL+D</kbd>. If `file1` exists, it will be overwritten.
+   > [!Note]
+   > If you already have a file named **file1**, it will be overwritten.
 
-1. To append a line to the existing file without overwriting, you can use the `>>` operator. For example, to add `Goddard Space Flight Center` to `file1` you would first run:
+   1. After you run the command, press Enter to move the cursor to a new line.
 
-     ```bash
-     cat >> file1
-     ```
+   1. Add the following text:
+   
+      ```bash
+      NASA headquarters
+      ```
+      
+   1. Press Enter again.
 
-1. Select <kbd>ENTER</kbd>, and then add the next line:
+   1. Press Ctrl + D to end the program and restore the command prompt.
 
-     ```bash
-     Goddard Space Flight Center
-     ```
+1. To append a line to the file without overwriting the existing content, use the double greater than `>>` operator with the `cat` command:
 
-1. Select <kbd>ENTER</kbd>, then <kbd>CTRL+D</kbd> to complete the command.
+   ```bash
+   cat >> file1
+   ```
+
+   1. Press Enter to move the cursor to a new line, and then add the following text:
+   
+      ```bash
+      Goddard Space Flight Center
+      ```
+      
+   1. Press Enter again, followed by Ctrl + D to end the program and restore the command prompt.
+
+If you run the `ls` command, you'll see the new file in your directory:
+
+```output
+file1   NASA-logs-1995.txt   NASA-software-API.txt
+```
 
 ## Concatenate files
 
 The third use of the `cat` command is to concatenate copies of the contents of files. Because the concatenation occurs only to the copies, there's no effect on the original files.
 
-For example, to concatenate two copies of the `file1` we created before, you would run the following command:
+Run the following command to concatenate two copies of file1 to `stdout`:
 
 ```bash
 cat file1 file1
@@ -61,14 +87,37 @@ NASA headquarters
 Goddard Space Flight Center
 ```
 
-If you run the command `ls` again, you'll see that the new files have been added to your directory:
+If you run the command `ls` again, you'll see no new file has been added to your directory:
 
 ```output
-file1 NASA-logs-1995.txt NASA-software-API.txt
+file1   NASA-logs-1995.txt   NASA-software-API.txt
 ```
 
-The contents of each file will be displayed on the `stdout` starting on a new line and in the order that the file names appear in the command. You can also redirect this output to a second file, `file2`.
+The content of each file was displayed to `stdout` starting on a new line and in the order that the files were named in the command. You can also redirect concatenation output to a file. 
+
+Run the `cat` command with the greater than `>` operator to save the output in a new file named  **file2**:
 
 ```bash
 cat file1 file1 > file2
+```
+
+Examine the contents of the new file:
+
+```bash
+cat file2
+```
+
+The output should be like this:
+
+```output
+NASA headquarters
+Goddard Space Flight Center
+NASA headquarters
+Goddard Space Flight Center
+```
+
+If you run the `ls` command again, you'll see the new file in your directory:
+
+```output
+file1   files2   NASA-logs-1995.txt   NASA-software-API.txt
 ```

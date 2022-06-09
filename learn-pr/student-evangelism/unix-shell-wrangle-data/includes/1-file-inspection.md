@@ -1,4 +1,4 @@
-Have you ever wanted to take data from one format into another? It's likely that you have or that you'll have to do it in the future. The process is called *data wrangling* and is a common task faced by developers. Before we learn how to wrangle data, we need some data files to work with.
+Have you ever wanted to take data from one format into another? It's likely that you have or that you will in the future. The process is called *data wrangling* and is a common task faced by developers. Before we learn how to wrangle data, we need some data files to work with.
 
 As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to the sandbox environment.
 
@@ -7,34 +7,49 @@ As a developer, you'll often need to extract information from logs. In this modu
 >
 > The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so that your work is not lost.
 
-1. Use the following command to make a new directory named `data`.
+1. Use the `mkdir` command to make a new directory named **data**. Select **Copy** at the top right of the code block, and then use right-click > **Paste** to enter the command in the editor.
 
-     ```bash
-     mkdir data
-     ```
+    ```bash
+    mkdir data
+    ```
 
-1. Use the `wget` command to download the dataset.
+1. Use the `wget` command to download the dataset into the data directory:
 
-     ```bash
-     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
-     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
-     ```
+    ```bash
+    wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
+    wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
 
-1. Change to the new directory by using the command `cd`.
+    ```
 
-     ```bash
-     cd data
-     ```
+    You should see output like this example:
 
-1. Verify that you have the correct files by using the command `ls`.
+    ```output
+    --2022-06-08 17:03:50--  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 13214666 (13M) [text/plain]
+    Saving to: ‘data/NASA-logs-1995.txt’
+     
+    NASA-logs-1995.txt               100%[==========================================================>]  12.60M  --.-KB/s    in 0.05s   
+    2022-06-08 17:03:51 (273 MB/s) - ‘data/NASA-logs-1995.txt’ saved [13214666/13214666]
+    ```
+     
+1. Change to the new directory by using the `cd` command:
 
-     ```bash
-     ls
-     ```
+    ```bash
+    cd data
+    ```
 
-You should see a `NASA-software-API.txt` file and a `NASA-logs-1995.txt` file.
+1. Verify that you have the correct files by using the `ls` command:
 
-The first file, `NASA-Software-API.txt`, is an open dataset that lists all the software in use by NASA. For more information on the original dataset, see [NASA Open Source and General Resource Software API](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v). The second dataset contains all the logged requests to the NASA Kennedy Space Center server.
+    ```bash
+    ls
+    ```
+
+You should see two files: **NASA-software-API.txt** and **NASA-logs-1995.txt**.
+
+The first file, NASA-software-API.txt, is an open dataset that lists all the software in use by NASA. For more information on the original dataset, see [NASA Open Source and General Resource Software API](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v). The second dataset contains all the logged requests to the NASA Kennedy Space Center server.
 
 ## Peek into the contents of your files
 
@@ -44,13 +59,13 @@ You might be wondering why you needed that refresher. In the following units, we
 
 Before you jump into wrangling your data, it's useful to do some basic file inspection. You want to get an idea of what the raw data looks like.
 
-### `Head` and `tail` commands
+### head and tail commands
 
-The `head` and `tail` commands are used to examine the top (head) or bottom (tail) parts of a file. By default, both commands display 10 rows of content. If you want to display more or less rows, you can use the option flag `-n` to specify the number of rows to be printed to `stdout`.
+The `head` and `tail` commands are used to examine the top (head) or bottom (tail) parts of a file. By default, both commands display 10 rows of content. If you want to display more or fewer rows, you can use the option flag `-n` to specify the number of rows to be printed to `stdout`.
 
 We'll use the `tail` and `head` commands to display the last and first five rows of the `NASA-software-API.txt` file, respectively.
 
-1. Type the command `tail` with the `-n` flag to display the last 5 rows in the file.
+1. Enter the command `tail` with the `-n` flag to display the last five rows in the file:
 
     ```bash
     tail -n 5  NASA-software-API.txt
@@ -59,38 +74,40 @@ We'll use the `tail` and `head` commands to display the last and first five rows
     Your output should look like this:
 
     ```output
-   SSC-00393 SSC 2013-05-17T00:00:00.000 "General Public" "Software Suite to Support In-Flight Characterization of Remote Sensing Systems"
-   SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
-   GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
-   GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
-   GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+    SSC-00393 SSC 2013-05-17T00:00:00.000 "General Public" "Software Suite to Support In-Flight Characterization of Remote Sensing Systems"
+    SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+    GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+    GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+    GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
     ```
 
-1. Type the command `head` with the `-n` flag to display the first 5 rows in the file.
+1. Enter the command `head` with the `-n` flag to display the first five rows in the file:
 
-     ```bash
-     head -n 5 NASA-software-API.txt
-     ```
+    ```bash
+    head -n 5 NASA-software-API.txt
+    ```
 
-     ```output
-     ARC-14136-1 ARC 2001-10-19T00:00:00.000 "Academic Worldwide" "Adaptive Relevance-Learning Software Component (ARNIE)"
-     ARC-14293-1 ARC 2005-09-19T00:00:00.000 "Open Source" "Genetic Graphs (JavaGenes)"
-     ARC-14297-1 ARC 2003-11-06T00:00:00.000 "General US" "Automated Domain Decomposition Software, PEGASUS Version 5.0"
-     ARC-14379-1 ARC 2002-03-27T00:00:00.000 "General US" "Man-machine Integration Design And Analysis System (MIDAS)"
-     ARC-14400-1 ARC 2001-01-29T00:00:00.000 "General US" "PLOT3D Version 4.0"
-     ```
+    Your output should look like this:
 
-### `nl` filter
+    ```output
+    ARC-14136-1 ARC 2001-10-19T00:00:00.000 "Academic Worldwide" "Adaptive Relevance-Learning Software Component (ARNIE)"
+    ARC-14293-1 ARC 2005-09-19T00:00:00.000 "Open Source" "Genetic Graphs (JavaGenes)"
+    ARC-14297-1 ARC 2003-11-06T00:00:00.000 "General US" "Automated Domain Decomposition Software, PEGASUS Version 5.0"
+    ARC-14379-1 ARC 2002-03-27T00:00:00.000 "General US" "Man-machine Integration Design And Analysis System (MIDAS)"
+    ARC-14400-1 ARC 2001-01-29T00:00:00.000 "General US" "PLOT3D Version 4.0"
+    ```
 
-The `nl` filter reads lines from files or from the `stdin`. The output is printed to `stdout`. By default, the filter `nl` counts lines in a file and uses a tab to separate the line number from the text.
+### nl filter
 
-Let's use `nl` with the flag `-s` to use `=` as a delimiter.
+The `nl` filter reads lines from files or from `stdin`. The output is printed to `stdout`. By default, the filter `nl` counts lines in a file and uses a tab to separate the line number from the text.
+
+Enter the `nl` filter with the flag `-s` to use the equal sign `=` as a delimiter:
 
 ```bash
 nl -s = NASA-software-API.txt
 ```
 
-Your output should list each line in the file, ending with this:
+Your output should list each line in the file, and end with these lines:
 
 ```output
 697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
@@ -101,11 +118,11 @@ Your output should list each line in the file, ending with this:
 
 The `nl` filter has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`), or change the starting number (`-v`).
 
-### `wc` command
+### wc command
 
 The word count command `wc` counts the number of lines, words (separated by white space), and characters in a file or from `stdin`. The output is printed to `stdout` and separated by tabs.
 
-Use the command `wc` to see the number of lines, words, and characters in `NASA-software-API.txt`.
+Enter the `wc` command to see the number of lines, words, and characters in the NASA-software-API.txt file:
 
 ```bash
 wc NASA-software-API.txt
@@ -114,27 +131,29 @@ wc NASA-software-API.txt
 Your output should look like this:
 
 ```output
-703    8917   81115 NASA-software-API.txt
+  703  8917 81115 NASA-software-API.txt
 ```
 
-You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Let's check the output from the previous command, `nl`. The last printed line is:
+You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Recheck the output from the previous command, `nl`. We see that the last printed line is:
 
- ```output
- 700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
- ```
+```output
+700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+```
 
- Did you notice that the index of this line is 700 instead of 703? What's happening here?
+Notice that the index of this line is 700 rather than 703, `700=GSC...`. What's happening here?
 
- This index mismatch happens because, by default, the command `nl` doesn't number empty lines. Let's run the command `nl` with the option flag `-b a` to count all the lines, including the empty ones.
+The index value 700 happens because, by default, the command `nl` doesn't number empty lines.
+ 
+Try the command `nl` again, but this time with the option flag `-b a` to count all the lines, including the empty ones:
 
- ```bash
- nl -b a NASA-software-API.txt
- ```
+```bash
+nl -b a NASA-software-API.txt
+```
 
- The last line in the output should be:
+The last line in the output should be:
 
- ```output
- 703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
- ```
+```output
+703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+```
 
- The index now matches the lines counted with the command `wc`.
+The index value now matches the number of lines counted with the `wc` command.
