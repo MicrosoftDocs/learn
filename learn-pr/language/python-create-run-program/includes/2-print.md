@@ -4,7 +4,7 @@ When you start learning any programming language, you first try out a few statem
 
 To create a program in Python, you need to store it in a file. The file should have the extension *.py*.
 
-The idea of a program is to do something, to carry out a task. To have the program do something, you need to add statements of code that perform instructions. An instruction could print some text or perform a calculation, for example. An example program can look like this:
+The idea of a program is to do something or carry out a task. To have the program do something, you'll need to add the statements or instructions to perform the task. For example, an instruction could print some text or calculate something. An example program can look something like this:
 
 ```python
 # program.py
@@ -14,9 +14,9 @@ print(sum)
 
 ### Run a program
 
-Assume you created a program that consists of statements. You'd run it by invoking the Python executable program, followed by the name of your program. Here's an example of such an invocation:
+Assume you created a program that consists of multiple statements. You run it by launching the Python executable program, followed by the name of your program. Here's an example of such an execution:
 
-```bash
+```console
 python3 program.py
 ```
 
@@ -36,9 +36,9 @@ To write information to the console, you can use the `print()` function and impl
 print("show this in the console")
 ```
 
-Note how the preceding command invokes `print()` by using parentheses. That's how you invoke a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work, as you'll notice if you run this code:
+Note how the preceding command calls `print()` by using parentheses. That's how you execute a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work, as you'll notice if you run this code:
 
-```bash
+```console
 python3 program.py
 ```
 
@@ -51,11 +51,11 @@ Traceback (most recent call last):
 TypeError: 'builtin_function_or_method' object is not subscriptable
 ```
 
-Another thing to notice is the use of double quotation marks (`""`). That's how you declare a so-called string literal, like the one you're printing: "show this in the console".
+Another thing to notice is the use of double quotation marks (`""`). That's how you declare a so-called string literal, with the value like the one you're printing: "show this in the console".
 
 ## Variables
 
-To get anywhere with coding, you need to understand that you're operating on data. As your program is working on data, you might need to remember a certain value throughout the program's execution. For that, you'll use variables.
+To get anywhere with coding, you need to understand that you're operating on data. As your program is working on data, you might need to remember a certain value throughout the program's execution. For that, you use variables.
 
 The following example makes a calculation and stores it in variables:
 
@@ -100,7 +100,7 @@ type(distance_to_alpha_centauri) ## <class 'float'>
 
 ## Operators
 
-Operators allow you to perform calculations on variables and their values. The general idea is that you have a left side and a right side and an operator in the middle:
+Operators let you perform various operations on variables and their values. The general idea is that you have a left side and a right side and an operator in the middle:
 
 ```python
 <left side> <operator> <right side>
@@ -149,9 +149,9 @@ When you're building programs, you're likely to interact with dates. A date in a
 
 You can use a date in various applications, like these examples:
 
-- **Backup file**. Using a date as part of a backup file's name is a good way to indicate when a backup was made and when it needs to be made again.
-- **Condition**. You might want to carry a specific logic when there's a certain date.
-- **Metric**. Dates are used to check performance on code to (for example) measure the time it takes to execute a function.
+- **Backup file:**. Using a date as part of a backup file's name is a good way to indicate when a backup was made and when it needs to be made again.
+- **Condition:**. You might want to carry a specific logic when there's a certain date.
+- **Metric:**. Dates are used to check performance on code to (for example) measure the time it takes to execute a function.
 
 To work with a date, you need to import the `date` module:
 
@@ -159,7 +159,7 @@ To work with a date, you need to import the `date` module:
 from datetime import date
 ```
 
-You can then invoke the functions that you want to work with. To get today's date, you can call the `today()` function:
+You can then call the functions that you want to work with. To get today's date, you can call the `today()` function:
 
 ```python
 date.today()
@@ -188,9 +188,9 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "datetime.date") to str
 ```
 
-The last row of the message identifies the problem. You're trying to use the `+` operator and combine two different data types, a string and a date.
+The last row of the message tells you what the problem is. You're trying to use the `+` operator and combine two different data types, a string and a date.
 
-To make this code work, you need to convert the date into a string, which you can accomplish with the utility function `str()`:
+To make this code work, you need to convert the date into a string. You accomplish such a conversion by using the utility function `str()`:
 
 ```python
 print("Today's date is: " + str(date.today()))

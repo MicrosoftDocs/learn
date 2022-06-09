@@ -34,6 +34,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.manage-system-health-azure-stack-hub.introduction
 - learn.wwl.manage-system-health-azure-stack-hub.monitor-health-alerts

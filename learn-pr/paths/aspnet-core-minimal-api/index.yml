@@ -25,6 +25,8 @@ products:
   - dotnet
   - aspnet-core
   - vs-code
+subjects:
+- custom-app-development
 modules:
 - learn.aspnetcore.build-web-api-minimal-api
 - learn.aspnetcore.build-web-api-minimal-database

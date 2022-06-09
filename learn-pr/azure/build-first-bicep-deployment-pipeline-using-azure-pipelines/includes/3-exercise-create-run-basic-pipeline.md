@@ -70,7 +70,7 @@ Now that you've created your organization, project, and repository, you're ready
 
 1. In Visual Studio Code, open the Explorer.
 
-1. in **Explorer**, hover over your *TOY-WEBSITE* project folder, and select **New Folder**. Name that folder *deploy*.
+1. In **Explorer**, hover over your *TOY-WEBSITE* project folder, and select **New Folder**. Name that folder *deploy*.
 
 1. Select the *deploy* folder, and in the **TOY-WBSITE** project select **New File** icon. Name that file *azure-pipelines.yml*.
 

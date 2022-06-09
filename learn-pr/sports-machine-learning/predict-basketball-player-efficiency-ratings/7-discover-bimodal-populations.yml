@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Data exploration part 3 - Discover data that represents more than one population'
   description: Use histograms to define multiple populations in a bimodal distribution of data.
   ms.date: 03/10/2021
-  author: drguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

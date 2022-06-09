@@ -39,11 +39,15 @@ You can add a breakpoint in Visual Studio by clicking to the left side of the li
 
 :::image source="../media/visual-studio-breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio editor window.":::
 
-If you right-click to add a breakpoint, you can also select **Add Conditional Breakpoint**. This special kind of breakpoint allows you to enter a *condition* for breaking execution. This breakpoint will only be active when the specified condition is met. You can also modify an existing breakpoint by right-clicking it and selecting **Edit Breakpoint**.
+If you right-click to add a breakpoint or on an existing breakpoint, you can also select **Add Conditional Breakpoint**. This special kind of breakpoint allows you to define a *condition* or criteria for when the breakpoint is triggered. This menu also allows you to select **only Enable when following breakpoint is hit option** to create a chainable breakpoints execution, among other actions.
 
 :::image source="../media/visual-studio-breakpoint-conditional.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio.":::
 
-In the **Breakpoints** window (Debug -> Windows -> Breakpoints), you can see and toggle all the breakpoints you placed in your code. You can also toggle options to break on caught or uncaught exceptions. You can use the **Breakpoints** panel to examine your program state and trace back the source of an exception by using the **Call stack** when one occurs.
+You can also use Temporary breakpoint if you want to break the code just once.  Temporary breakpoints can be applied by right clicking in the breakpoint column and selecting **Insert temporary breakpoint** and will be removed after they are hit the first time.
+
+You can also add Tracepoints by right clicking in the breakpoint column. Tracepoints allows you to log information to the Output window under configurable conditions without modifying or stopping your code execution.  
+
+Finally, in the **Breakpoints** window (Debug -> Windows -> Breakpoints), you can see and toggle all the breakpoints you placed in your code. You can also toggle options to break on caught or uncaught exceptions. You can use the **Breakpoints** panel to examine your program state and trace back the source of an exception by using the **Call stack** when one occurs.
 
 :::image source="../media/visual-studio-breakpoints-window.png" alt-text="Screenshot of the Visual Studio Breakpoints window.":::
 
@@ -58,36 +62,33 @@ After you've set up your breakpoints and started your app, new information windo
 1. Watch window to monitor variable values
 1. Break point window to view all breakpoints
 
-We can also access other helpful debugging windows by clicking **Debug -> Windows** along the top navigation bar. For example, commonly used tools include the following:
+We can also access other helpful debugging windows by clicking Debug -> Windows along the top navigation bar. For example, commonly used tools include the following:
 
-1. **Call Stack Window** - allows us to view which methods have been called.
-1. **Immediate Window** - allows us to write and expressions while debugging.
-1. **Autos Window** - automatically adds watches to variables in the current context.
-1. **Output Window** - shows the output of logging statements or code that writes to the console.
+1. **Call Stack window** - allows us to view which methods have been called.
+2. **Immediate window** - allows us to write and expressions while debugging.
+3. **Autos window** - automatically adds watches to variables in the current context.
+4. **Output window** - shows the output of logging statements or code that writes to the console.
 
 :::image source="../media/visual-studio-debugging-windows.png" alt-text="Screenshot of Visual Studio debugging window options.":::
 
-### View and edit your variables state
+### Watch and edit the state of variables
 
-When you analyze the cause of a program defect, watch the state of your variables to look for unexpected changes. You can use the **Autos** window to do that.
+When you analyze the cause of a program defect, you can watch the state of your variables to look for unexpected changes. There are multiple watch window options in Visual Studio, which you can use in different debugging contexts to monitor the state of your variables.
 
-The **Autos** window will automatically populate variables in the current scope and context, along with their values. This is a simple and easy choice for seeing a general overview of the state of your running code.
+1. **Watch window** - allows you to track selected variables and expressions over time while debugging.
+1. **Locals window** - automatically displays variables in the current execution scope and context.
+1. **Autos window** - automatically displays any variable used on the currently executing or preceding line.
+1. **Immediate window** - allows you to evaluate expressions and variables live while debugging.
 
 :::image source="../media/visual-studio-autos.png" alt-text="Screenshot of the Autos window in Visual Studio.":::
 
-It's possible to change the value of a variable on the fly by double-clicking the variable value.
+Most of these windows also allow you to double click the value of a variable and change its value while debugging.
 
-By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
+The **Watch** windows can be particularly useful for tracking variables during the execution of your code. You can right-click on a variable in your editor and select **Add to watch**. That variable will now display in the watch window and update automatically as your app executes.
 
-### Watch variables
+You can also right-click on variables in the **Autos** or **Locals** windows to add a watch.
 
-If you want to track a specific variable state across time or different functions, it can be tedious to search for it every time. That's where the **Watch** panel comes in handy.
-
-You can right-click a variable in your editor and select **Add to watch**. That variable will now display in the watch window and update as your app executes.
-
-You can also right-click on variables in the **Autos** window to add a watch.
-
-All expressions inside the watch panel will be updated automatically as your code runs.
+Another productive way to view and analyze the variable information during debugging is using DataTips.  When you are paused at the breakpoint, hover over any variable in the current scope. A DataTip appears, showing the name and current value of the variable properties. By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
 
 ### Call stack
 
@@ -108,3 +109,9 @@ That's where the Visual Studio **Call stack** window comes in handy. It filters 
 :::image source="../media/visual-studio-callstack.png" alt-text="Screenshot of the Call Stack window.":::
 
 In the next unit, you'll walk through an exercise using the debugger to fix the bug in the Fibonacci code we saw previously.
+
+### Specify debugger settings
+
+In Visual Studio, you can specify various settings for debugger behavior, including how variables are displayed, whether certain warnings are presented, how breakpoints are set, and how breaking affects running programs. You can also configure your project to build as a Debug or Release configuration.
+
+To configure your debugger settings use the **Tools> Options> Debugging** menu, which will provide different category of options you want. The most common options are in the General category.

@@ -40,5 +40,3 @@ Azure Functions are best when handling specific definable actions triggered by a
 > [!TIP]
 > Take a few minutes to read about other [Azure Function best practices](/azure/azure-functions/functions-best-practices).
 
-> [!NOTE]
-> Relativity, an e-discovery company, is using Azure functions to identify and resolve performance issues. Take a few minutes to [read about their successes](https://customers.microsoft.com/story/relativity-partner-professional-services-azure). 

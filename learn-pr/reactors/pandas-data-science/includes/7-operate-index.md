@@ -1,4 +1,4 @@
-As you begin to work in data science, operating on data is imperative. Another aspect of pandas that makes it a compelling tool for many data scientists is pandas' ability to perform efficient, element-wise operations on data. pandas builds on `ufuncs` from NumPy to supply these capabilities. Then it extends them to provide additional power for data manipulation. For example:
+As you begin to work in data science, operating on data is imperative. Another aspect of pandas that makes it a compelling tool for many data scientists is pandas' ability to perform efficient, element-wise operations on data. pandas builds on `ufuncs` from NumPy to supply these capabilities. It then extends them to provide additional power for data manipulation. For example:
 
 - For unary operations (such as negation and trigonometric functions), `ufuncs` in pandas preserve index and column labels in the output.
 - For binary operations (such as addition and multiplication), pandas automatically aligns indices when it passes objects to `ufuncs`.

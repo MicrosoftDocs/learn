@@ -20,7 +20,7 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     > [!IMPORTANT]
-    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the running shell.
+    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the running shell. For more information about setting up Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview#connect-your-microsoft-azure-files-storage).
 
 1. Run `helm version` and check whether the displayed version is greater than **3**.
 
@@ -32,7 +32,7 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
 
 ## Create a chart
 
-1. Run `cd` to go to the repository you forked, and then run `cd` to go to the **kubernetes** directory.
+1. Run `cd` to go to the repository you forked, and then run `cd` to go to the `kubernetes` directory.
 
 1. Run this command:
 
@@ -40,11 +40,11 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
     helm create contoso-website
     ```
 
-   The command creates a new directory called **contoso-website** in the kubernetes directory.
+   The command creates a new directory called `contoso-website` in the `kubernetes` directory.
 
-1. Run `cd` to go to the new directory. Delete the **charts** and **templates** folders in that directory.
+1. Run `cd` to go to the new directory. Delete the `charts` and `templates` folders in that directory.
 
-1. Run the following command to create a new empty **templates** folder:
+1. Run the following command to create a new empty `templates` folder:
 
     ```bash
     mkdir templates
@@ -52,25 +52,25 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
 
     You've created an empty chart. To start building the workloads, you'll use what others have already built. You'll use YAML files that currently aren't in the new directory you created.
 
-1. Move the old **kubernetes** files to the **templates** folder.
+1. Move the old `kubernetes` files to the `templates` folder.
 
-1. From inside the contoso-website directory, run this command:
+1. From inside the `contoso-website` directory, run this command:
 
     ```bash
-    mv ../kubernetes/*.yaml ./templates
+    mv ../*.yaml ./templates
     ```
 
 Completing these steps is all it takes to create a chart. Now, let's configure the chart.
 
 ## Configure the chart
 
-1. Run `cd ..` to return to the parent directory. You should be at the root of the repository now.
+1. Run `cd ../..` to return to the parent directory. You should be at the root of the repository now.
 
-1. To open the editor in the current directory, run `code` .
+1. To open the editor in the current directory, run `code .` .
 
-1. Open the **chart.yaml** file.
+1. Open the `Chart.yaml` file.
 
-    Chart.yaml is the file that names the chart. This file is where Helm looks for information about the chart itself. You should have a file that looks like this example:
+    `Chart.yaml` is the file that names the chart. This file is where Helm looks for information about the chart itself. You should have a file that looks like this example:
 
     ```yaml
     apiVersion: v2
@@ -110,7 +110,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 ## Create a deployment
 
-1. In the left menu, go to the **kubernetes folder**. Find the **deployment.yaml** file in the templates folder.
+1. In the left menu, go to the `kubernetes` folder. Find the `deployment.yaml` file in the templates folder.
 
     The file should look like this example:
 
@@ -219,7 +219,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 ## Create an empty YAML file
 
-1. In the root of the contoso-website directory, open the **values.yaml** file.
+1. In the root of the contoso-website directory, open the `values.yaml` file.
 
 1. Delete all contents in the file, so you have an empty YAML file.
 
@@ -229,13 +229,13 @@ Now, let's add your content to the empty file.
 
 You saw earlier that you used `{{ .Release.Namespace }}`, so `Release` is a *variable scope*. Each variable scope has different default values and variables.
 
-Helm uses the values.yaml file to retrieve all the template values that start with `{{ .Values }}`. The values.yaml file is another variable scope.
+Helm uses the `values.yaml` file to retrieve all the template values that start with `{{ .Values }}`. The `values.yaml` file is another variable scope.
 
-This file should have the same structure of the file you use to call variables. Let's take a quick look in the deployment.yaml file you edited to see the structure.
+This file should have the same structure of the file you use to call variables. Let's take a quick look in the `deployment.yaml` file you edited to see the structure.
 
 Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the deployment.yaml file.
 
-1. Create the **values.yaml** file so that it looks like this example:
+1. Create the `values.yaml` file so that it looks like this example:
 
     ```yaml
     image:
@@ -250,9 +250,9 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
 ## Create a service
 
-1. Find and open the **service.yaml** file.
+1. Find and open the `service.yaml` file.
 
-1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the deployment.yaml file.
+1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the `deployment.yaml` file.
 
     ```yaml
     apiVersion: v1
@@ -275,12 +275,12 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
 ## Create an ingress
 
-1. Find and open the **ingress.yaml** file.
+1. Find and open the `ingress.yaml` file.
 
-1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the deployment.yaml file.
+1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the `deployment.yaml` file.
 
     ```yaml
-    apiVersion: v1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -293,17 +293,20 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
           http:
             paths:
               - backend:
-                  serviceName: contoso-website
-                  servicePort: http
+                  service:
+                    name: contoso-website
+                    port:
+                      name: http
                 path: /
+                pathType: Prefix
     ```
 
-1. Go to the `host` key. You create separate hosts for staging and production deployments. (You don't want users to access the `staging` namespace by using production URLs.)
+1. Go to the `host` key. You create separate hosts for staging and production deployments. You don't want users to access the `staging` namespace by using production URLs.
 
 1. Concatenate the namespace in the host name. The HTTP application routing add-on in the AKS cluster handles name resolution.
 
     ```yaml
-    apiVersion: v1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -316,15 +319,18 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
           http:
             paths:
               - backend:
-                  serviceName: contoso-website
-                  servicePort: http
+                  service:
+                    name: contoso-website
+                    port:
+                      name: http
                 path: /
+                pathType: Prefix
     ```
 
 1. Add a new template variable, which will be your DNS zone name:
 
     ```yaml
-    apiVersion: v1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -337,16 +343,19 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
           http:
             paths:
               - backend:
-                  serviceName: contoso-website
-                  servicePort: http
+                  service:
+                    name: contoso-website
+                    port:
+                      name: http
                 path: /
+                pathType: Prefix
     ```
 
 1. Save and close the file.
 
 ## Create a DNS zone name
 
-1. Open the **values.yaml** file.
+1. Open the `values.yaml` file.
 
 1. Add the `dns.name` key, so the file looks like this example:
 
@@ -381,3 +390,5 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
     ```bash
     git push -u origin main
     ```
+
+1. When prompted, provide your GitHub username, and the PAT created previously as the password.

@@ -3,7 +3,7 @@ uid: learn.pytorch.intro-audio-classification.visualizations-transforms
 title: Audio transforms and visualizations
 metadata:
   title: Audio transforms and visualizations
-  description: Data visualization and transformation is an important part of every model. Now that we have our dataset downloaded, lets learn more about audio data visualization and transforming this dataset.
+  description: Data visualization and transformation is an important part of every model. Now that you have your dataset downloaded, learn more about audio data visualization and transforming this dataset.
   author: cassiebreviu
   ms.author: ruyakubu
   ms.date: 04/14/2020
@@ -20,25 +20,25 @@ notebook: notebooks/3-visualizations-transforms.ipynb
 quiz:
   title: Check your knowledge
   questions:
-    - content: "When you resample the audio you are..."
+    - content: "When you resample the audio, you are..."
       choices:
         - content: "increasing the size."
           isCorrect: false
           explanation: "Incorrect."
         - content: "reducing the size."
           isCorrect: true
-          explanation: "Correct! We can reduce the size of the file by reducing the sample rate for the audio track."
+          explanation: "Correct! You can reduce the size of the file by reducing the sample rate for the audio track."
     - content: "What is a spectrogram?"
       choices:
-        - content: "Maps the frequency to time of an audio file."
+        - content: "It maps the frequency to time of an audio file."
           isCorrect: true
           explanation: "Correct!"
         - content: "The audio channels."
           isCorrect: false
           explanation: "Incorrect."
-        - content: "Sample rate and frequency visualized."
+        - content: "The sample rate and frequency visualized."
           isCorrect: false
-          explanation: "Incorrect this is a waveform."
+          explanation: "Incorrect. This is a waveform."
     - content: "Audio classification can only be done with computer vision on spectrograms."
       choices:
         - content: "True"

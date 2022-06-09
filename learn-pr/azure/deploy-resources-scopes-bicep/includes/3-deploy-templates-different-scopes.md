@@ -49,7 +49,6 @@ When you initiate a deployment, you need to tell Azure which scope you want to d
 | Subscription | `New-AzSubscriptionDeployment` |
 | Management group | `New-AzManagementGroupDeployment` |
 | Tenant | `New-AzTenantDeployment` |
-| | |
 
 ::: zone-end
 

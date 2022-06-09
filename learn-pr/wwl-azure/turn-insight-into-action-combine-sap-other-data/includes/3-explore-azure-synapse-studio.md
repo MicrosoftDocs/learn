@@ -12,7 +12,7 @@ Synapse Studio is organized into hubs that are displayed on the left-hand side o
 
 The different hubs available in Azure Synapse Studio from the left navigation pane enable different activities. 
 
-![Screenshot of Azure Synapse Studio left navigation, with the hubs that enable different activities. ](../media/azure-synapse-studio-left-pane.png)
+![Azure Synapse Studio left navigation, with the hubs listed: Home, Data, Develop, Integrate, Monitor, and Manage. ](../media/azure-synapse-studio-left-pane.png)
 
 ### Home
 

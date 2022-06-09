@@ -50,9 +50,9 @@ summary: |
     Part 5: Describe identity, governance, privacy, and compliance features
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation"></img>
+    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Microsoft Cost Management and service level agreements learning path." role="presentation"></img>
 
-    [Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
+    [Part 6: Describe Microsoft Cost Management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
   :::column-end:::
   :::row-end:::
 prerequisites: | 
@@ -78,6 +78,8 @@ products:
 - azure-policy
 - azure-blueprints
 - azure-rbac
+subjects:
+- identity-access
 modules:
 - learn.azure.secure-access-azure-identity-services
 - learn.azure.build-cloud-governance-strategy-azure

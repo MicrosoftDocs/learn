@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
@@ -21,24 +21,24 @@ quiz:
     choices:
     - content: "Create policies that enforce organizational rules."
       isCorrect: true
-      explanation: "That's correct. Conditional Access is implemented using policies that enforce organizational rules."
-    - content: "Check that all users have multifactor authentication enabled."
+      explanation: "Correct. Conditional Access is implemented using policies that enforce organizational rules."
+    - content: "Check that all users have multi-factor authentication enabled."
       isCorrect: false
-      explanation: "That's incorrect. Conditional Access policies may require a user to sign in with multifactor authentication, but it isn't part of their implementation."
+      explanation: "Incorrect. Conditional Access policies may require a user to sign in with multi-factor authentication, but it isn't part of their implementation."
     - content: "Amend your apps to allow Conditional Access."
       isCorrect: false
-      explanation: "That's incorrect. Conditional Access doesn't require apps to be changed in any way."
+      explanation: "Incorrect. Conditional Access doesn't require apps to be changed in any way."
   - content: "Sign-in risk is a signal used by Conditional Access policies to decide whether to grant or deny access. What is sign-in risk?"
     choices:
     - content: "The probability that the device is owned by the identity owner."
       isCorrect: false
-      explanation: "That's incorrect. Sign-in risk doesn't calculate any probability relating to users’ devices."
+      explanation: "Incorrect. Sign-in risk doesn't calculate any probability relating to users’ devices."
     - content: "The probability that the authentication request isn't authorized by the identity owner."
       isCorrect: true
-      explanation: "That's correct. Sign-in risk is the real-time calculation that a given authentication request isn't authorized by the identity owner."
+      explanation: "Correct. Sign-in risk is the real-time calculation that a given authentication request isn't authorized by the identity owner."
     - content: "The probability that the user is authorized to view data from a particular application."
       isCorrect: false
-      explanation: "That's incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."
+      explanation: "Incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."
   - content: "IT admins have been asked to review Azure AD roles assigned to users, to improve organizational security. Which of the following should they implement?"
     choices:
     - content: "Remove all global admin roles assigned to users."

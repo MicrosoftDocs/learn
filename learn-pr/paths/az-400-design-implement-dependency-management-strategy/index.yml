@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-design-implement-dependency-management-strategy
 metadata:
   title: 'AZ-400: Design and implement a dependency management strategy'
   description: 'AZ-400: Design and implement a dependency management strategy'
-  ms.date: 02/09/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -35,10 +35,14 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- change-management
+- devops
 modules:
 - learn.wwl.explore-package-dependencies
 - learn.wwl.understand-package-management
 - learn.wwl.migrate-consolidating-secure-artifacts
 - learn.wwl.implement-versioning-strategy
+- learn.wwl.introduction-github-packages
 trophy:
   uid: learn.wwl.az-400-design-implement-dependency-management-strategy.trophy

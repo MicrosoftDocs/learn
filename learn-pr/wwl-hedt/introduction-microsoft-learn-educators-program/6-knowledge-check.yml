@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-microsoft-learn-educators-program.knowledge-check
+title: Knowledge check
+metadata:
+  title: 6-Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is MSLE?"
+    choices:
+    - content: "A program to train teachers to be Microsoft Technical Trainers"
+      isCorrect: false
+      explanation: "Incorrect. MSLE is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+    - content: "Free curriculum, training, and tools for teaching Microsoft technical skills"
+      isCorrect: true
+      explanation: "Correct. Microsoft Learn of Educators is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+    - content: "A learning path to certification in technical skills"
+      isCorrect: false
+      explanation: "Incorrect. In addition to learning paths for certification, MSLE is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+  - content: "Which resources do educators receive in the MSLE program?"
+    choices:
+    - content: "Microsoft technical product support"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft technical support for courseware is available through the MSLE program, however Microsoft technical product support is provided through [Microsoft Support](https://support.microsoft.com/)."
+    - content: "Microsoft Office Learning Paths"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Office learning paths and modules are available through [Microsoft Learn](https://aka.ms/learn)."
+    - content: "Access to a global community of technical Educators through the MSLE Educator Teams-based community"
+      isCorrect: true
+      explanation: "Correct. Educators receive access to the MSLE community, a global educator forum to exchange ideas and learning on preparing students with technical skilling."
+  - content: "To sign up for MSLE  institutions or individual educators should do which of the following?"
+    choices:
+    - content: "Email Microsoft"
+      isCorrect: false
+      explanation: "Incorrect. You may have received an email from your institution to join MSLE, however institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting **Get started** then **Sign-up**."
+    - content: "Sign-up at [aka.ms/MSLE](https://aka.ms/MSLE)"
+      isCorrect: true
+      explanation: "Correct. Institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting **Get started** then **Sign-up**."
+    - content: "Contact your institution representative"
+      isCorrect: false
+      explanation: "Incorrect. You may have received an email from your institution to join MSLE, however institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Sign-up."

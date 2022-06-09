@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-endpoints-use-web-application-firewall.configure-internal-domain-name-services
+title: Configure internal Domain Name Services
+metadata:
+  title: Configure internal Domain Name Services
+  description: "Configure internal Domain Name Services"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-configure-internal-domain-name-services.md)]

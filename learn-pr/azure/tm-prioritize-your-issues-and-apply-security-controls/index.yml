@@ -30,6 +30,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.tm-prioritize-your-issues-and-apply-security-controls.1-introduction
 - learn.tm-prioritize-your-issues-and-apply-security-controls.1b-priorities-types-and-functions

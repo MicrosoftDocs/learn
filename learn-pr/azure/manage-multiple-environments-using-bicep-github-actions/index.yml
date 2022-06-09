@@ -46,6 +46,9 @@ languages:
 products:
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.introduction
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.understand-environments

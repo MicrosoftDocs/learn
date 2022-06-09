@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-event-notification.building-blocks
+title: Building blocks for ProjectProducerConsumer
+metadata:
+  title: Building blocks for ProjectProducerConsumer
+  description: Review the building blocks that form a solution for the project.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-building-blocks.md)]

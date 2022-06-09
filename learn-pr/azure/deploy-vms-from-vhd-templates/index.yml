@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.deploy-vms-from-vhd-templates.1-introduction
 - learn.deploy-vms-from-vhd-templates.2-azure-vm-disk-imaging-capabilities

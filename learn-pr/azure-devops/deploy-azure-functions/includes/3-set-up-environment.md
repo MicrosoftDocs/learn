@@ -195,7 +195,7 @@ Our solution requires several Azure resources for deployment, which we will crea
       --name $webName \
       --resource-group $rgName \
       --plan $planName \
-      --runtime "DOTNETCORE|3.1"
+      --runtime "DOTNETCORE|6.0"
     ```
 
 1. Azure Functions requires a storage account for deployment. Run the following `az storage account create` command to create it.
@@ -214,7 +214,7 @@ Our solution requires several Azure resources for deployment, which we will crea
       --name $leaderboardName \
       --resource-group $rgName \
       --storage-account $storageName \
-      --functions-version 3 \
+      --functions-version 4 \
       --consumption-plan-location <region>
     ```
 

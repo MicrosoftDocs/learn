@@ -12,11 +12,15 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
 
 1. In the **New** pane, select **Web**.
 
-1. Search for **CDN**, then select **Create**.
+1. Search for **Front Door and CDN profiles**, then select **Create**.
 
-1. Give your CDN a name, such as **yourinitials-cdn**.
+1. Select the radio button for **Explore other offerings**, then select the radio button for **Azure CDN Standard from Microsoft (classic)**.
+
+1. Select **Continue**.
 
 1. Under **Resource Group**, select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list.
+
+1. Give your CDN a name, such as **yourinitials-cdn**.
 
 1. Under **Pricing tier**, select **Microsoft CDN (Classic)**.
 

@@ -30,6 +30,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- custom-app-development
 units:
 - learn.intro-to-containers.1-introduction
 - learn.intro-to-containers.2-deploy-docker-image-locally

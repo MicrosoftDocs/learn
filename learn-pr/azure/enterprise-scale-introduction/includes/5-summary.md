@@ -4,17 +4,17 @@ Enterprise-scale architecture provides prescriptive guidance coupled with Azure 
 
 The enterprise-scale approach to building landing zones includes three sets of assets to support cloud teams:
 
-- **Design guidelines**: A guide to the critical decisions that drive the design of enterprise-scale landing zones in the Cloud Adoption Framework.
+- **Design guidelines**: A guide to the critical decisions that drive the design of enterprise-scale landing zones in the Cloud Adoption Framework
 
   - Overview of the Ready phase: [Ensure that the environment is prepared for the cloud adoption plan](/azure/cloud-adoption-framework/ready/?azure-portal=true)
 
   - Enterprise-scale [design guidelines](/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines?azure-portal=true)
 
-- **Architecture**: A conceptual reference architecture that demonstrates design areas and best practices.
+- **Architecture**: A conceptual reference architecture that demonstrates design areas and best practices
 
   - Enterprise-scale landing zones [architecture guidance](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture?azure-portal=true)
 
-- **Implementations**: An Azure Resource Manager template for the architecture to accelerate adoption.
+- **Implementations**: An Azure Resource Manager template for the architecture to accelerate adoption
 
   - [Reference implementation](/azure/cloud-adoption-framework/ready/enterprise-scale/implementation?azure-portal=true)
   - Introduction to enterprise-scale in-a-box hands-on activity

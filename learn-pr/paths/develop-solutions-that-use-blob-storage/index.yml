@@ -22,6 +22,9 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- cloud-computing
+- storage
 modules:
 - learn.wwl.explore-azure-blob-storage
 - learn.wwl.manage-azure-blob-storage-lifecycle

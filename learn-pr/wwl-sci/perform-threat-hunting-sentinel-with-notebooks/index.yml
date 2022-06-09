@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.perform-threat-hunting-sentinel-with-notebooks.introduction
 - learn.wwl.perform-threat-hunting-sentinel-with-notebooks.access-azure-sentinel-data-with-external-tools

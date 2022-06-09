@@ -4,7 +4,7 @@ In this exercise, you'll learn how to use virtual environments as a way to not a
 
 Create a virtual environment by using `venv`.
 
-1. Open a new Bash window and run `python -m venv env`:
+1. Open a new Bash window and run the following command:
 
    ```bash
    python -m venv env
@@ -12,17 +12,21 @@ Create a virtual environment by using `venv`.
 
    You now have an *env* directory created in your terminal.
 
-1. Run `source env/bin/activate` to activate the virtual environment:
+1. To activate the virtual environment, run the following command on Windows:
 
-   ```bash
+   ```bash  
     # Windows
     source env/Scripts/activate
+   ```
 
+   Or, this command on Linux, WSL or macOS:
+  
+   ```bash
     # Linux, WSL or macOS
     source env/bin/activate
    ```
 
-   You now see `(env)` in your terminal. That means you've activated your virtual environment and isolated yourself from the rest of your machine. 
+   You now see `(env)` in your terminal. That means you've activated your virtual environment and isolated yourself from the rest of your machine.
 
 ## Install a library
 

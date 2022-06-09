@@ -49,6 +49,8 @@ roles:
 - developer
 products:
 - azure-devops
+subjects:
+- devops
 modules:
 - learn.azdo.assess-your-development-process
 - learn.get-started-with-devops

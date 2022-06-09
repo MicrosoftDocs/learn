@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Introduction to automating Azure infrastructure change reviews by using Bicep and GitHub.
+  description: This unit introduces you to automating Azure infrastructure change reviews by using Bicep and GitHub.
   ms.date: 03/30/2022
   author: vermegi
   ms.author: givermei

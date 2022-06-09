@@ -38,7 +38,7 @@ Built-in Azure name resolution has some limitations:
 
 Azure Private DNS allows you to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. You can use custom domain names, rather than the Azure-provided names.  
 
-DNS resolution using a private DNS zone works only from virtual networks that are linked to it. These private DNS zones records cannot be resolved from the internet.  
+DNS resolution using a private DNS zone works only from virtual networks that are linked to it. These private DNS zones records can be resolved from the internet, but the private IP address is not routable via the Internet.
 
 You can link a private DNS zone to one or more virtual networks by creating [virtual network links](/azure/dns/private-dns-virtual-network-links). You can also enable the [autoregistration](/azure/dns/private-dns-autoregistration) feature to automatically manage the life cycle of the DNS records for the virtual machines that get deployed in a virtual network. With autoregistration enabled, Azure DNS will update the zone record whenever a virtual machine gets created, changes its' IP address, or gets deleted. 
 

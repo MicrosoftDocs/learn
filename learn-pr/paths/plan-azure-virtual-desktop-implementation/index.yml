@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-virtual-desktop
+subjects:
+- virtual-machine
 modules:
 - learn.wwl.azure-virtual-desktop-architecture
 - learn.wwl.design-azure-virtual-desktop-architecture

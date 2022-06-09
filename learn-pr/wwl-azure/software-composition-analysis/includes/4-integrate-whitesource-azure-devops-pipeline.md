@@ -18,7 +18,7 @@ It means you can generate a comprehensive inventory report within minutes based 
 
 It also gives complete visibility to your security, DevOps, and legal teams into your organization’s software development process.
 
-:::image type="content" source="../media/whitesource-component-3c5a2c58.png" alt-text="Screenshot of the WhiteSource component Inventory Report.":::
+:::image type="content" source="../media/whitesource-component-3c5a2c58.png" alt-text="Screenshot of the WhiteSource component Inventory Report." lightbox="../media/whitesource-component-3c5a2c58.png":::
 
 
 ## Receive alerts on open-source security vulnerabilities
@@ -27,7 +27,7 @@ WhiteSource automatically generates an alert and provides targeted remediation g
 
 It can include links to patches, fixes, relevant source files, even recommendations to change system configuration to prevent exploitation.
 
-:::image type="content" source="../media/whitesource-vulnerabilities-cbb17615.png" alt-text="Screenshot of the WhiteSource Vulnerabilities Severity library.":::
+:::image type="content" source="../media/whitesource-vulnerabilities-cbb17615.png" alt-text="Screenshot of the WhiteSource Vulnerabilities Severity library." lightbox="../media/whitesource-vulnerabilities-cbb17615.png":::
 
 
 ## Automatically enforce open-source security and license compliance policies

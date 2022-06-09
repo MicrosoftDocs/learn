@@ -1,0 +1,55 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - 'template-specs/linux-app-service/**'
+
+variables: 
+- name: ServiceConnectionName
+  value: ToyReusable
+- name: AzureResourceGroupName
+  value: ToyReusable
+- name: AzureRegion
+  value: westus3
+- name: TemplateSpecName
+  value: linux-app-service
+- name: TemplateSpecFilePath
+  value: template-specs/linux-app-service/main.bicep
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+- stage: Lint
+  jobs:
+  - job: LintCode
+    displayName: Lint code
+    steps:
+      - script: |
+          az bicep build --file $(TemplateSpecFilePath)
+        name: LintBicepCode
+        displayName: Run Bicep linter
+
+- stage: Publish
+  jobs:
+  - job: Publish
+    steps:
+      - task: AzureCLI@2
+        name: Publish
+        displayName: Publish template spec
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az ts create \
+              --resource-group $(AzureResourceGroupName) \
+              --name $(TemplateSpecName) \
+              --version $(Build.BuildNumber) \
+              --template-file $(TemplateSpecFilePath) \
+              --location $(AzureRegion) \
+              --yes

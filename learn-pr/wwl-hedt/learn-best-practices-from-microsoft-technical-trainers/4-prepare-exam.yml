@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.prepare-exam
+title: Prepare for the exam
+metadata:
+  title: 4-Prepare for the exam
+  description: "Prepare for the exam"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-prepare-exam.md)]

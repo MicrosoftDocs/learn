@@ -31,6 +31,8 @@ prerequisites: |
   - Fundamental understanding of JavaScript.
   - Node.js installed.
   - Working knowledge of the web, especially on request and responses in HTTP.
+subjects:
+- development-tools
 units:
   - learn.aspnetcore.build-web-api-minimal-spa.introduction
   - learn.aspnetcore.build-web-api-minimal-spa.design-front-end
@@ -41,4 +43,3 @@ units:
   - learn.aspnetcore.build-web-api-minimal-spa.summary
 badge:
   uid: learn.aspnetcore.build-web-api-minimal-spa.badge
-  

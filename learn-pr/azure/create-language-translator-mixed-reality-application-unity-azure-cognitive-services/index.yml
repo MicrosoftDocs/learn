@@ -39,6 +39,8 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+subjects:
+- mixed-reality
 units:
 - learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.1-introduction
 - learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.2-overview-speech-translation

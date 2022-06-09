@@ -1,4 +1,4 @@
-*Masking* is manipulating, counting, or extracting values in an array based on a criterion. For example, counting all the values in an array that are greater than a certain value. Boolean masking is often the most efficient way to accomplish these types of tasks in NumPy. It plays a large part in cleaning and otherwise preparing data for analysis. (See Section 5.)
+*Masking* is manipulating, counting, or extracting values in an array based on a criterion; for example, counting all the values in an array that are greater than a certain value. Boolean masking is often the most efficient way to accomplish these types of tasks in NumPy. It plays a large part in cleaning and otherwise preparing data for analysis. (See Section 5.)
 
 ## Example: Counting rainy days
 
@@ -27,7 +27,7 @@ Let's break down what we just did in the preceding code cell. The rainfall data 
 
 You now have an array that contains 12 values, each of which records the monthly rainfall in inches from January to December 2003.
 
-In data science, you'll commonly want to take a quick first exploratory look at the data. In this case, a bar chart is a good way to do so. To generate this bar chart, we'll use Matplotlib, another important data-science tool that we'll introduce formally later in the course. (This example also brings up another widely used Python convention that you should adopt: `import matplotlib.pyplot as plt`.)
+In data science, you'll commonly want to take a quick first exploratory look at the data. In this case, a bar chart is a good way to do so. To generate this bar chart, we'll use Matplotlib, another important data-science tool we'll introduce formally later in the course. (This example also brings up another widely used Python convention that you should adopt: `import matplotlib.pyplot as plt`.)
 
 ```python
 %matplotlib inline
@@ -47,9 +47,11 @@ The output is:
 
 ![BarContainer object.](..\media\bar-container-object-12-artists.png)
 
-Let's look at the preceding code snippet. We passed two parameters to the bar function in pyplot. The first defines the index for the x-axis, and the second defines the data to use for the bars (the y-axis). To create the index, we use the NumPy function `arange` to create a sequence of numbers. (This is the same `arange` we came across earlier in this section.) We know that the length of our array is 12. But it's a good habit to pass the length of an array programmatically in case it changes or you don't know it with specificity. We also added 1 to both the start and the end of the `arange` to accommodate for Python zero-indexing (because there's no "month zero" in the calendar).
+Let's look at the preceding code snippet. We passed two parameters to the bar function in pyplot. The first defines the index for the x-axis, and the second defines the data to use for the bars (the y-axis). To create the index, we use the NumPy function `arange` to create a sequence of numbers. (This is the same `arange` we came across earlier in this section.) We know that the length of our array is 12, but it's a good habit to pass the length of an array programmatically in case it changes or you don't know it with specificity. We also added 1 to both the start and the end of the `arange` to accommodate for Python zero-indexing (because there's no "month zero" in the calendar).
 
-Based on the chart above (and as residents can attest), Seattle can have lovely, sunny summers. But this is only a first glimpse of the data. There are still several questions we'd like to answer. For example, in how many months did it rain, and what was the average precipitation in those months? We would use masking to answer those questions. (We'll also return to this example dataset to demonstrate concepts throughout the rest of this section.) Before we dig deeper in explaining what masking is, we should briefly touch on comparison operators in NumPy.
+Based on the chart above (and as residents can attest), Seattle can have lovely, sunny summers. But this is only a first glimpse of the data. There are still several questions we'd like to answer. For example, in how many months did it rain, and what was the average precipitation in those months? We would use masking to answer those questions. (We'll also return to this example dataset to demonstrate concepts throughout the rest of this section.) 
+
+Before we dig deeper in explaining what masking is, we should briefly touch on comparison operators in NumPy.
 
 ## Comparison operators as ufuncs
 

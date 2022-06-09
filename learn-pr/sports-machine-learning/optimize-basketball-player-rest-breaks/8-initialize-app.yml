@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Write JavaScript code to initialize the web app with data from the machine learning model
   description: Write JavaScript code to initialize the web app with data from the machine learning model
   ms.date: 03/10/2021
-  author: drguthals 
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

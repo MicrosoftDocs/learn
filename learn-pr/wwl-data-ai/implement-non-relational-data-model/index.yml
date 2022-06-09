@@ -3,7 +3,7 @@ uid: learn.wwl.implement-non-relational-data-model
 metadata:
   title: Implement a non-relational data model
   description: "Implement a non-relational data model"
-  ms.date: 04/01/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-modeling
 units:
 - learn.wwl.implement-non-relational-data-model.introduction
 - learn.wwl.implement-non-relational-data-model.whats-difference-between-nosql-relational-databases

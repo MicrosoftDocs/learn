@@ -3,7 +3,7 @@ uid: learn.pytorch.intro-audio-classification.summary
 title: Summary
 metadata:
   title: Summary
-  description: We have covered the basics of building an audio machine learning model from understanding how analog sound turns to digital sound, to creating spectrogram images of our wave files.
+  description: This Learn module covers the basics of building an audio machine learning model, including understanding how analog sound turns to digital sound, and creating spectrogram images of your .wav files.
   author: cassiebreviu
   ms.author: ruyakubu
   ms.date: 04/14/2020

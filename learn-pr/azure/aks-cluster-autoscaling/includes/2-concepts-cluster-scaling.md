@@ -4,7 +4,7 @@ However, cluster nodes don't have infinite resources, which means there are only
 
 ## Node starvation
 
-A pod will require an amount of resources that is defined in the `spec.resources` key in the pod's YAML file. Once you create a new pod within a node, Kubernetes automatically allocates that amount of resources to the pod so it can run with the requested amount of power it needs.
+A pod will require an amount of resources that is defined in the `spec.containers.resources` key in the pod's YAML file. Once you create a new pod within a node, Kubernetes automatically allocates that amount of resources to the pod so it can run with the requested amount of power it needs.
 
 A single node is a single VM, which means it has a limited amount of resources like CPU and RAM available for pods, so you cannot spin up an infinite number of pods in it. When a node doesn't meet the needed requirements for the pod's resource, the pod remains on status **Pending**, and it's not scheduled to any nodes until there are enough resources available.
 
