@@ -10,13 +10,13 @@ The process of signing in to activate the sandbox runs outside the learning modu
 The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so your work isn't lost.
 
 
-## Work with commands in Azure Cloud Shell
+### Work with commands in Azure Cloud Shell
 
 Follow these steps to work with exercise commands in Cloud Shell:
 
 1. To copy a command, select **Copy** at the top right of the code block.
-1. To paste the copied command in Cloud Shell, use right-click > **Paste** at the Cloud Shell prompt.
-1. Press Enter to run the command.
+1. To use a copied command at the Cloud Shell prompt, select right-click > **Paste**.
+1. To run the command, press Enter.
 
 
 ## Get the datasets

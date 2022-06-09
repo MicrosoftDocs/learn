@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title:  Use the grep command to match regular expressions
-durationInMinutes: 2
+durationInMinutes: 3
 azureSandbox: true
 interactive: bash
 content: |

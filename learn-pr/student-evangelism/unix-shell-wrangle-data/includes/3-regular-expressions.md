@@ -32,13 +32,13 @@ If you completed the previous unit, you should have a sample of the open dataset
 
 1. Open the search box for the integrated editor:
 
-   1. Click with the mouse anywhere in the editor.
+   1. Click the mouse anywhere in the editor.
    
-   1. Show the search box by pressing Ctrl + F (on Windows and Linux) or Cmd + F (on macOS).
+   1. Press Ctrl + F (on Windows and Linux) or Cmd + F (on macOS).
 
    The search box opens in the integrated editor.
 
-1. Select the **regex** icon to enable regex pattern match searching for the file in the editor:
+1. Select the **regex** icon (**`.*`**) to enable regex pattern match searching for the file in the editor:
 
     :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected." lightbox="../media/cloud-shell-sandbox-search-regex-selected.png":::
 
@@ -120,7 +120,7 @@ Let's try the regex anchor patterns to search for matches where "A" is the first
    
     You should see 258 results.    
 
-1. Next, enter `[A-G]$` to look for text that ends with the letters A through G.
+1. Enter `[A-G]$` to look for text that ends with the letters A through G.
 
     There are three results:
 
