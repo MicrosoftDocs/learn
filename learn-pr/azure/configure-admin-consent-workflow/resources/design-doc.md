@@ -29,10 +29,10 @@ Create an Azure AD application and enable the admin consent workflow. When users
 
 Upon completion of this module, the learner will be able to:
 
--
 - Identify possible user and administrator consent configurations
 - Configure the admin consent workflow to enable users to submit requests to access applications.
 - Test the admin consent workflow feature by using test user accounts.
+- Manage, evaluate, and act on admin consent requests
 
 ## Chunk your content into subtasks
 
@@ -84,8 +84,7 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 1. Exercise - Review admin consent requests
 
    1. Locate the admin consent requests
-   1. View details of each pending request
-   1. Act on the pending requests
+   1. View and act on admin consent requests
 
 1. Knowledge check
     1. How does enabling the admin consent workflow improve the user consent experience?

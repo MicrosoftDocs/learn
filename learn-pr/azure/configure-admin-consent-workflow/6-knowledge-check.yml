@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Knowledge check for the admin consent workflow learn module"
+  description: "Knowledge checks for the admin consent workflow learn module"
   ms.date: 6/08/2022
   author: omondiatieno
   ms.author: jomondi
@@ -28,23 +28,23 @@ quiz:
       explanation: "With the admin consent workflow, users don’t have to contact the administrator directly, they can request for admin consent right from the consent screen during sign-in."
   - content: "What are the factors to consider when evaluating an admin consent request?"
     choices:
-    - content: "The type of application and the permissions it’s requesting."
-      isCorrect: true
-      explanation: "Check for application details such as publisher information and the permissions the application is requesting."
     - content: "The details of users who have requested for admin consent."
       isCorrect: false
       explanation: "The details of users requesting for admin consent aren’t crucial when evaluating a consent request."
     - content: "The number of users who have made a request for a given application."
       isCorrect: false
-      explanation: "The number of users may indicate the level of demand for the application but its not crucial when evaluating a consent request."
-  - content: "What options does an administrator or designated review have when acting on admin consent requests?"
-    choices:
-    - content: "Approve, deny, or block an application."
+      explanation: "The number of users may indicate the level of demand for the application but it's not crucial when evaluating a consent request."
+    - content: "The type of application and the permissions it’s requesting."
       isCorrect: true
-      explanation: "A reviewer can approve, deny, or block an application."
+      explanation: "Check for application details such as publisher information and the permissions the application is requesting."
+  - content: "What options does a designated reviewer with the global administrator role have when acting on admin consent requests?"
+    choices:
     - content: "Approve, delete, or ignore an application."
       isCorrect: false
       explanation: "Approve, ignore, and delete aren’t options for acting on admin consent request."
+    - content: "Approve, deny, or block an application."
+      isCorrect: true
+      explanation: "A reviewer can approve, deny, or block an application."
     - content: "Approve, block, or delete."
       isCorrect: false
       explanation: "Approve, block, or delete aren’t options for acting on an admin consent request."

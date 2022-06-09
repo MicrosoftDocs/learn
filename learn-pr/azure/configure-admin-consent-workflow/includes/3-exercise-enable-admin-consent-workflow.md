@@ -22,24 +22,22 @@ The single page application you created will submit a request to Microsoft Graph
 
 1. Then select **App registrations** in the left-hand navigation.
 
-On the **App registrations** page, select **New registration**.
+1. On the **App registrations** page, select **New registration**.
 
-On the **Register an application** page, set the values as follows:
+1. On the **Register an application** page, set the values as follows:
 
-- **Name**: Spa-test
-- **Supported account types**: Accounts in this organizational directory only (Single tenant)
+   - **Name**: Spa-test
+   - **Supported account types**: Accounts in this organizational directory only (Single tenant)
 
-Select **Register** to create the application.
+1. Select **Register** to create the application.
 
-On the **Spa-test** overview page, copy the values **Application (client) ID** and **Directory (tenant) ID**; you'll need these values later in this exercise.
-
+1. On the **Spa-test** overview page, copy the values **Application (client) ID** and **Directory (tenant) ID**; you'll need these values later in this exercise.
   :::image type="content" source="../media/3-new-app-reg-details.png" alt-text="Screen shot showing new app registration details":::
+1. Select **Manage > Authentication** in the left-hand navigation.
 
-Select **Manage > Authentication** in the left-hand navigation.
+1. On the **Authentication** page, select **Add a platform**. When the **Configure platforms** panel appears, select **Single-page application**.
 
-On the **Authentication** page, select **Add a platform**. When the **Configure platforms** panel appears, select **Single-page application**.
-
-In the **Configure single-page application** panel, add **http://localhost:3007** under **Redirect URIs**, and select **Configure**.
+1. In the **Configure single-page application** panel, add **http://localhost:3007** under **Redirect URIs**, and select **Configure**.
 
 ### Update the web page with the Azure AD application details
 
@@ -74,9 +72,7 @@ To see how the admin consent workflow feature works, you'll need to disable user
 1. Search for and select **Azure Active Directory**.
 1. Select **Enterprise applications**.
 1. Under **Security**, select **Consent and permissions**
-
 1. Under **User consent for applications**, select **Do not allow user consent**.
-
 1. Select **Save** to save your settings.
 
 ## Test admin consent workflow
@@ -85,20 +81,20 @@ We'll use the Node.js application to test the admin consent workflow.
 
 1. To start the application, first start the local web server. In the command prompt, execute the following command from the root of the project:
 
-```console
-node server.js
-```
+   ```console
+      node server.js
+   ```
 
-1. Open a browser where you aren't signed-in to Office 365 and navigate to **http://localhost:3007**. The page initially contains a default welcome message and sign-in button.
+1. Open a browser where you aren't signed-in to Office 365 and navigate to `http://localhost:3007`. The page initially contains a default welcome message and sign-in button.
 
-:::image type="content" source="../media/3-sign-in-screen.png" alt-text="Screenshot of the default web page for an anonymous user.":::
+   :::image type="content" source="../media/3-sign-in-screen.png" alt-text="Screenshot of the default web page for an anonymous user.":::
 
 1. Select the **Sign In** button.
 
-Depending on the browser, you're using, a popup window will load or the page will redirect to the Azure AD sign-in prompt.
+   Depending on the browser, you're using, a popup window will load or the page will redirect to the Azure AD sign-in prompt.
 
 1. Sign in using a **Work or School Account** with a user *who isn't assigned* the global administrator role. On the next screen, you'll see the **Approval required** message. In the given text box, enter a justification for requiring admin consent and select **Request Approval**.
 
-:::image type="content" source="../media/3-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
+   :::image type="content" source="../media/3-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
 
 The designated reviewer is alerted about this request through email and they can view the incoming admin consent request in the Azure portal.

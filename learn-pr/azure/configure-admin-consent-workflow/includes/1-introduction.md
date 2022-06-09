@@ -8,10 +8,12 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 
 Admin consent workflow provides a secure way for administrators to onboard new applications into their organizations while still supporting the users through the process.
 
->[!Video <https://www.youtube.com/embed/19v7WSt9HwU>]
-
 For admin consent workflow, a combination of tasks is required.
 
 - **Create a single page application and register it as an Azure AD application** - Download a code sample to quickly set up the application locally. Register this application in Azure AD to acquire an access token for users to sign in with Azure AD.
 - **Configure and test the admin consent workflow** - Sign in to the Azure portal and enable admin consent workflow. Add designated reviewers to review consent requests.
 - **Review admin consent request** - Sign in to the Azure portal to view and act on the pending admin consent requests.
+
+## What is the main goal?
+
+Upon completion of this module. the learner will be able configure a workflow that enables users to request admin consent when they're unable to sign in. The workflow enables designated reviewers to view and act on the request from a single location in the Azure portal.
