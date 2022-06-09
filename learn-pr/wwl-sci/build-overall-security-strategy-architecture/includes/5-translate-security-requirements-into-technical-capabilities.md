@@ -26,7 +26,7 @@ your security architecture assures confidentiality, integrity, and
 availability.
 
 To assess workloads using the tenets found in the Azure Well-Architected
-Framework, reference the [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review&mode=pre-assessment).
+Framework, reference the [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
 The following design principles provide:
 
