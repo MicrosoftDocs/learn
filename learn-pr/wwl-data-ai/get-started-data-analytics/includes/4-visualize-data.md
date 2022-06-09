@@ -1,5 +1,3 @@
-## Visualizing data
-
 Visually inspecting a dataset is not the easiest way to uncover patterns and relationships in your data, and the bigger the dataset, the slower the task. Data can quickly be converted into an easy-to-understand visualization, such as a bar chart or a graph, that brings your data to life.
 
 Common visualizations include:

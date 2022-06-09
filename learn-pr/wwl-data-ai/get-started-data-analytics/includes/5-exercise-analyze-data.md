@@ -1,18 +1,8 @@
-## Exercise: Analyze data
-
 Now let's put some of the data analysis principles amd techniques you've learned into action. In this lab you'll use Excel Online to analyze and visualize data.
 
-## Before you start
+In this lab, you will analyze Rosie's lemonade sales, and create visualizations to help you gain insights from the data.
 
-Before starting this lab, complete the lab in the **Get started with data** module.
-
-## Lab overview
-
-In the previous lab, you explored a dataset containing details of Rosie's lemonade sales.
-
-In this lab, you will analyze this data further, and create visualizations to help you gain insights from the data.
-
-## Exercise 1: Analyzing data with a PivotTable
+## Exercise 1: Analyze data with a PivotTable
 
 PivotTables are an excellent way to *slice and dice* data, summarizing numeric measures by one or more dimensions. In this exercise, you will use a PivotTable to view the lemonade data, aggregated in various ways.
 

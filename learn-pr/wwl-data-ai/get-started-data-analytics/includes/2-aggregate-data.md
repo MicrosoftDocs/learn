@@ -1,6 +1,4 @@
-## Aggregating data
-
-Aggregate functions are used to return a summary value from your dataset, and are a fundamental component of data analysis. These functions help us answer specific questions about our business, such as how many customers visited the Tokyo store last Tuesday, or what was the average spend of each online customer in December?  
+Aggregate functions are used to return a summary value from your dataset, and are a fundamental component of data analysis. These functions help us answer specific questions about our business, such as how many customers visited the Tokyo store last Tuesday, or  the average spend of each online customer in December.
 
 The following functions are commonly used in data analysis:
 
