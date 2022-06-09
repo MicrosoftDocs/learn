@@ -40,7 +40,7 @@ We have so far used loading the data into a DataFrame as the approach, let us cr
     You now have two Spark tables customers and sales orders that are connected to the Azure Cosmos DB analytical stores in a manner like how we read data into our DataFrames. 
 
     The **CREATE TABLE** statement contains a **USING** clause that specifies the data source as **cosmos.olap**, specifying the Cosmos DB analytical store and has an OPTIONS clause that sets:
-    -	**spark.synapse.linkedService** to the name of our previously create linked service.
+    -	**spark.synapse.linkedService** to the name of our previously created linked service.
     -	**spark.cosmos.container** specifying the name of the container.
 
     You can also optionally set the **spark.cosmos.preferredRegions** option to a list of preferred regions to use if you're using a Cosmos DB account with multiple regions configured.
