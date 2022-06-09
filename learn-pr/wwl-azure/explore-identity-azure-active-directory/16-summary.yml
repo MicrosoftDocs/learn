@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.migrate-to-devops.summary
+uid: learn.wwl.explore-identity-azure-active-directory.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 06/09/2022
   author: wwlpublish
-  ms.author: lumac
+  ms.author: v-arxia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/16-summary.md)]
