@@ -49,7 +49,7 @@ AccuWeather has been analyzing and predicting the weather for more than 55 years
 
 ## What are SQL elastic pools?
 
-When you create your Azure SQL database, you can create a SQL elastic pool. They enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need, within the limits you set, depending on current load.
+When you create your Azure SQL Database, you can create a SQL elastic pool. They enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need, within the limits you set, depending on current load.
 
 Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
 

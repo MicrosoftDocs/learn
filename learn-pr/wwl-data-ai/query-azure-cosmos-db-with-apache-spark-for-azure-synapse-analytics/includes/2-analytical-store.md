@@ -78,7 +78,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
     There are several parameters that need to be specified on the **spark.read** method to facilitate a read from Azure Cosmos DB analytical store:
 
     -	The format in the spark.read.format parameter needs to be specified as **cosmos.olap** to indicate that we are wanting to read from Azure Cosmos DB analytical store.
-    -	An option should be set for **spark.synapse.linkedService** with the name of the previously create linked service.
+    -	An option should be set for **spark.synapse.linkedService** with the name of the previously created linked service.
     -	An option should be set for **spark.cosmos.container** specifying the name of the container that we wish to read.
     -	Optionally the **spark.cosmos.preferredRegions** option can be set to a list of preferred regions to use if you are using a Cosmos DB account with multiple regions configured. 
 
@@ -158,7 +158,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 21.	Paste the code into a new cell (Y), and click the **run cell** button.
 
     ```python
-    dfSalesOrder.printSchema()
+    dfCustomer.printSchema()
     ```
 
     It prints out the schema in an easy-to-read **tree format (Y)**. and you can easily see the structure of the address object within the dfCustomer DataFrame. 

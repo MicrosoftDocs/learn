@@ -23,72 +23,30 @@ The tasks in this exercise and the exercises in this learning path require you t
 
 Now, let's create a user account.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator
-2.  Search for and then select **Azure Active Directory**.
-3.  In the left navigation menu, under **Manage**, select **Users &gt; New User**.
-4.  Create a user using the following information:
+1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator
+2. Search for and then select **Azure Active Directory**.
+3. In the left navigation menu, under **Manage**, select **Users**, then select **New User**.
+4. Create a user using the following information:
     
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        User name
-      :::column-end:::
-      :::column:::
-        Chris
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Name
-      :::column-end:::
-      :::column:::
-        Chris Green
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        First name
-      :::column-end:::
-      :::column:::
-        Chris
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Last name
-      :::column-end:::
-      :::column:::
-        Green
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Password
-      :::column-end:::
-      :::column:::
-        Pass@word1
-      :::column-end:::
-    :::row-end:::
+    | Setting | Value |
+    | :----- | :----- |
+    | User name | Chris |
+    | Name | Chris Green |
+    | First name | Chris |
+    | Last name | Green |
+    | Password | Pass@word1 |
     
-5.  Select **Create**. The user is now created and registered to your organization.
+5. Select **Create**. The user is now created and registered to your organization.
 
 ## Assign a role to a user
 
 Using Azure Active Directory (Azure AD), you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
-1.  In Azure Active Directory, All users blade, select **Chris Green**.
-2.  On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
-3.  Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.
+1. In Azure Active Directory, All users blade, select **Chris Green**.
+2. On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
+3. Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.
     
-    :::image type="content" source="../media/directory-role-select-role-86324f35.png" alt-text="Assigned roles page - showing the selected role":::
-    
+   :::image type="content" source="../media/directory-role-select-role.png" alt-text="Screenshot of the Assigned roles page - showing the selected role of Application administrator.":::
 
 The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
@@ -98,11 +56,10 @@ If you need to remove the role assignment from a user, you can also do that from
 
 ### To remove a role assignment from a user
 
-1.  In **Azure Active Directory**, select **Users**, and then select the user getting the role assignment removed. For example, *Chris Green*.
-2.  Select **Assigned roles**, then select the name of the role your wish to removed - `Application Administrator`.
-3.  Select the check box for the user `Chris Green` who will be removed from the role, and then select **Remove assignments**.
+1. In **Azure Active Directory**, select **Users**, and then select the user getting the role assignment removed. For example, *Chris Green*.
+2. Select **Assigned roles**, then select the name of the role your wish to removed - `Application Administrator`.
+3. Select the check box for the user `Chris Green` who will be removed from the role, and then select **Remove assignments**.
     
-    :::image type="content" source="../media/directory-role-remove-role-ce35b984.png" alt-text="Screen image displaying the Remove assignments dialog box with Yes highlighted":::
-    
+   :::image type="content" source="../media/directory-role-remove-role.png" alt-text="Screenshot of the Remove assignments dialog box with Yes highlighted.":::
 
 The Application administrator role is removed from the user and it no longer appears on the **Chris Green – Assigned roles** page.

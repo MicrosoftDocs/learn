@@ -2,9 +2,9 @@ Now that you have reviewed this module, you should be able to:
 
  -  Configure and manage Azure Active Directory roles.
  -  Configure and manage custom domains.
- -  Configure and manage device registration options.
+ -  Evaluate permissions based on role assignments and settings.
  -  Configure delegation by using administrative units.
- -  Configure tenant-wide settings
+ -  Configure tenant-wide settings.
 
 ## Resources
 
