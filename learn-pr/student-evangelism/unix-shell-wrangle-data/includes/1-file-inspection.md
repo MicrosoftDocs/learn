@@ -2,29 +2,46 @@ Have you ever wanted to take data from one format into another? It's likely that
 
 As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to the sandbox environment.
 
-> [!Note]
-> The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
->
-> The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so that your work is not lost.
+
+### Sandbox activation
+
+The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
+
+The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so your work isn't lost.
+
+
+## Work with commands in Azure Cloud Shell
+
+Follow these steps to work with exercise commands in Cloud Shell:
+
+1. To copy a command, select **Copy** at the top right of the code block.
+1. To paste the copied command in Cloud Shell, use right-click > **Paste** at the Cloud Shell prompt.
+1. Press Enter to run the command.
+
+
+## Get the datasets
+
+To complete the practice exercies in this module, you need to load the NASA datasets.
 
 1. Use the `mkdir` command to make a new directory named **data**.
-
-    Select **Copy** at the top right of the code block, and then use right-click > **Paste** to enter the command in the editor.
 
     ```bash
     mkdir data
     ```
 
-1. Use the `wget` command to download the dataset into the data directory:
+1. Use the `wget` command to download the log dataset into the data directory:
 
     ```bash
     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
+    ```
+
+1. Use the `wget` command again to download the software API dataset into the data directory:
+
+    ```bash
     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
     ```
 
-    After the first call to the `wget` command completes, you might need to press Enter in Cloud Shell to run the second call to the command.
-
-    After the commands complete, you should see output like this example:
+    Here's an exampe of the output from the `wget` command:
 
     ```output
     --2022-06-09 06:19:13--  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
@@ -45,7 +62,7 @@ As a developer, you'll often need to extract information from logs. In this modu
     cd data
     ```
 
-1. Verify that you have the correct files by using the `ls` command:
+1. Verify you have the correct files by using the `ls` command:
 
     ```bash
     ls
@@ -55,6 +72,7 @@ You should see two files: **NASA-software-API.txt** and **NASA-logs-1995.txt**.
 
 The first file, NASA-software-API.txt, is an open dataset that lists all the software in use by NASA. For more information on the original dataset, see [NASA Open Source and General Resource Software API](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v). The second dataset contains all the logged requests to the NASA Kennedy Space Center server.
 
+
 ## Peek into the contents of your files
 
 Recall that in UNIX, by default, a terminal has three streams: an input stream and two output-based streams. The input stream is referred to as `stdin` for standard input and is mapped to the keyboard. The standard output stream, or `stdout`, generally prints to the terminal or might be consumed by another program or process. The other output stream, `stderr`, is primarily used for status reporting and usually prints to the terminal like `stdout`.
@@ -62,6 +80,7 @@ Recall that in UNIX, by default, a terminal has three streams: an input stream a
 You might be wondering why you needed that refresher. In the following units, we'll be talking about programs and filters and their standard input and output. You'll need a basic understanding of how these items are related. All of this information will make more sense as you move forward in the module.
 
 Before you jump into wrangling your data, it's useful to do some basic file inspection. You want to get an idea of what the raw data looks like.
+
 
 ### head and tail commands
 
@@ -121,6 +140,7 @@ Your output should list each line in the file, and end with these lines:
 ```
 
 The `nl` filter has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`), or change the starting number (`-v`).
+
 
 ### wc command
 

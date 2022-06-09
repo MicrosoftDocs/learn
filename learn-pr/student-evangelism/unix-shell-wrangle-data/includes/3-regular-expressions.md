@@ -28,29 +28,30 @@ If you completed the previous unit, you should have a sample of the open dataset
     code NASA-software-API.txt
     ```
 
-    In Cloud Shell, the file is opened in an editor pane above the command prompt.
+    The file is opens in the integrated editor above the Cloud Shell prompt.
 
-1. Open the search box for the Cloud Shell editor:
+1. Open the search box for the integrated editor:
 
    1. Click with the mouse anywhere in the editor.
    
-   1. Press Ctrl + F (on Windows and Linux), or Cmd + F (on macOS).
+   1. Show the search box by pressing Ctrl + F (on Windows and Linux) or Cmd + F (on macOS).
 
-   The Cloud Shell search box opens at the top of the editor
+   The search box opens in the integrated editor.
 
 1. Select the **regex** icon to enable regex pattern match searching for the file in the editor:
 
     :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected." lightbox="../media/cloud-shell-sandbox-search-regex-selected.png":::
 
-1. In the search box, enter the string "Open Source".
+1. In the search box, enter the string `Open Source`.
 
     With the **regex** option enabled, Cloud Shell highlights all instances in the content that match the input string. The number of matched instances is shown in the search box.
 
     :::image type="content" source="../media/cloud-shell-sandbox-search-open-source.png" alt-text="Screenshot showing Cloud Shell search results in a text file." lightbox="../media/cloud-shell-sandbox-search-open-source.png":::
 
-    You can use the left and right arrow icons on the search box to see each matched instance in the file.
+    You can use the **left** (previous) and **right** (next) arrow icons on the search box to see each matched instance in the file.
 
 This technique might not seem different from any other use of a search box. The true power of regex comes when we start using special characters, ranges, and anchors.
+
 
 ### Character matching and ranges
 
@@ -60,7 +61,7 @@ You know all versions should start with the letter "v." You can enclose the rest
 
 Let's try this type of regex pattern in the NASA-software-API.txt file.
 
-1. In the search box, enter "ARC-14[456]" to look for content that matches "ARC-14" followed by the numbers 4, 5, or 6.
+1. In the search box, enter `ARC-14[456]` to look for content that matches "ARC-14" followed by the numbers 4, 5, or 6.
    
     You should see 12 results.
     
@@ -72,7 +73,7 @@ You can define a consecutive range of letters or numbers. For all digits, you wo
 
 Let's find all instances of "ARC-14" followed by any digit.
 
-- In the search box, enter "ARC-14[0-9]" to look for content that matches "ARC-14" followed by any number.
+- In the search box, enter `ARC-14[0-9]` to look for content that matches "ARC-14" followed by any number.
    
     You should see 22 results.
     
@@ -94,7 +95,7 @@ A common pattern used in regex is the period followed by an asterisk (`.*`). Thi
 
 Let's try this regex wildcard pattern to look for text that matches "NASA" followed by any other character.
 
-- In the search box, enter "NASA.*" to look for matching text.
+- In the search box, enter `NASA.*` to look for matching text.
    
     You should see 26 results.
     
@@ -115,11 +116,11 @@ You can now write a regex that will match numbers at the beginning of a line, `^
 
 Let's try the regex anchor patterns to search for matches where "A" is the first character or last character.
 
-1. In the search box, enter "^[A-G]" to look for text that starts with the letters A through G.
+1. In the search box, enter `^[A-G]` to look for text that starts with the letters A through G.
    
     You should see 258 results.    
 
-1. Next, enter "[A-G]$" to look for text that ends with the letters A through G.
+1. Next, enter `[A-G]$` to look for text that ends with the letters A through G.
 
     There are three results:
 
@@ -140,11 +141,11 @@ To find lines in which a period (`.`) is the last character, enter `\.$` in the 
 
 Let's try using the escape character in a regex pattern search of our NASA file.
 
-1. In the search box, enter "\\.$" to look for text that ends with a period (`.`).
+1. In the search box, enter `\.$` to look for text that ends with a period (`.`).
    
     There are zero results.
 
-1. In the search box, enter "\\*\\*" to look for instances of a double asterisk (`**`) in the file.    
+1. In the search box, enter `\*\*` to look for instances of a double asterisk (`**`) in the file.    
 
     There's one result:
 
@@ -172,4 +173,4 @@ This unit was a brief introduction to regular expressions and what you can accom
 | ( | Indicates where string extraction is to start |
 | ) | Indicates where string extraction is to end |
 
-You can learn more about Visual Studio Code and regular expressions in the [Visual Studio Code documentation](/visualstudio/ide/using-regular-expressions-in-visual-studio&view=vs-2019?azure-portal=true).
+You can learn more about Visual Studio Code and regular expressions in the [Visual Studio Code documentation](/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019&azure-portal=true).

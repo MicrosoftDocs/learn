@@ -25,18 +25,13 @@ GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (
 
 You can use the `cat` command to create files. Using this command is often easier than using a text editor or vi (short for _visual_) editor for small files.
 
-We create new files by redirecting the standard output of the `cat` command with the *output redirect operator* `>` followed by the name of the file to create. After you add text, you use Ctrl + D to return to the command prompt.
+We create new files by redirecting the standard output of the `cat` command with the *output redirect operator* (`>`) followed by the name of the file to create. After you add text, you use Ctrl + D to return to the prompt.
 
-1. Run the `cat` command with the greater than `>` operator and the name of the file to create, **file1**:
-
-   > [!Note]
-   > If you already have a file named **file1**, it will be overwritten.
+1. Run the `cat` command with the greater than (`>`) operator and the name of the file to create, such as **file1**:
 
    ```bash
    cat > file1
    ```
-
-   After you input the command at the prompt, be sure to press Enter to move the cursor to a new line.
 
 1. Add the following text, and then press Enter to move the cursor to a new line.
    
@@ -46,13 +41,11 @@ We create new files by redirecting the standard output of the `cat` command with
 
 1. Press Ctrl + D to end the concatenation action and restore the prompt.
 
-1. To append a line to the file without overwriting the existing content, use the double greater than `>>` operator with the `cat` command:
+1. To append a line to the file without overwriting the existing content, use the double greater than (`>>`) operator with the `cat` command:
 
    ```bash
    cat >> file1
    ```
-
-   After you input the command at the prompt, be sure to press Enter to move the cursor to a new line.
 
 1. Add the following text, and then press Enter to move the cursor to a new line.
    
@@ -68,14 +61,14 @@ We create new files by redirecting the standard output of the `cat` command with
    file1   NASA-logs-1995.txt   NASA-software-API.txt
    ```
 
-1. Use the basic `cat` command to display the content of the updated file:
+1. Use the basic `cat` command to show the content of the updated file:
 
    ```bash
    cat file1
    ```
 
    You should see this output:
-   
+
    ```output
    NASA headquarters
    Goddard Space Flight Center
@@ -109,7 +102,7 @@ file1   NASA-logs-1995.txt   NASA-software-API.txt
 
 The content of each file was displayed to `stdout` starting on a new line and in the order that the files were named in the command. You can also redirect concatenation output to a file. 
 
-Run the `cat` command with the greater than `>` operator to save the output in a new file named  **file2**:
+Run the `cat` command with the greater than (`>`) operator to save the output in a new file named  **file2**:
 
 ```bash
 cat file1 file1 > file2
@@ -121,7 +114,7 @@ Examine the contents of the new file:
 cat file2
 ```
 
-The output should be like this:
+The output should look like this:
 
 ```output
 NASA headquarters
