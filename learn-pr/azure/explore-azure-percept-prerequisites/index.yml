@@ -10,7 +10,7 @@ metadata:
 title: "Explore Azure Percept Prerequisites"
 summary: "In this module, you'll learn about the prerequisites required for building and deploying an Edge AI solution with Azure Percept. As you complete the individual units in this module, you'll learn about basic concepts of Azure IoT and Artificial Intelligence (AI) Services."
 abstract: |
-    After completing this module, you will be able to::
+    After completing this module, you'll be able to::
     - Understand the prerequisites needed to build and deploy an Edge AI solution with Azure Percept
     - Understand basic concepts of Azure IoT and Artificial Intelligence (AI) Services
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
