@@ -7,9 +7,9 @@ You can set up direct federation with any organization whose identity provider (
 
 After you set up direct federation with an organization, any new guest users you invite will be authenticated using direct federation. Setting up direct federation doesn’t change the authentication method for guest users who have already redeemed an invitation from you. Here are some examples:
 
-- If guest users have already redeemed invitations from you.  Then you set up direct federation with their organization. The guest users will continue to use the same authentication method they used before you set up direct federation.
-- If you set up direct federation with a partner organization. Then invite guest users, and then the partner organization later moves to Azure AD. Then the guest users who have already redeemed invitations will continue to use direct federation. As long as the direct federation policy in your tenant exists.
-- If you delete direct federation with a partner organization. Than any guest users currently using direct federation will be unable to sign in.
+- If guest users have already redeemed invitations from you, when you set up direct federation with their organization; then, guest users will continue to use the same authentication method they used before you set up direct federation.
+- If you set up direct federation with a partner organization, then invite guest users, and then the partner organization later moves to Azure AD; then, the guest users who have already redeemed invitations will continue to use direct federation. As long as the direct federation policy in your tenant exists.
+- If you delete direct federation with a partner organization, then any guest users currently using direct federation will be unable to sign in.
 
 In any of these scenarios, you can update a guest user’s authentication method by deleting the guest user account from your directory and reinviting them.
 
@@ -108,7 +108,7 @@ Guest users who see a *header too long* error can clear their cookies or open a 
 
 ## Deprecation of WebView sign-in support
 
-January 4, 2021, Google is deprecating embedded WebView sign-in support. If you’re using Google federation or self-service sign-up with Gmail, you should test your line-of-business native applications for compatibility. If your apps include WebView content that requires authentication, Google Gmail users won't be able to authenticate. The following are known scenarios that will affect Gmail users:
+January 4, 2021, Google is deprecating embedded WebView sign-in support. If you’re using Google federation or self-service-sign-up with Gmail, you should test your line-of-business native applications for compatibility. If your apps include WebView content that requires authentication, Google Gmail users won't be able to authenticate. The following are known scenarios that will affect Gmail users:
 
 - Windows apps that use embedded WebView or the WebAccountManager (WAM) on older versions of Windows.
 - Other native apps you’ve developed that use an embedded browser framework for authentication.
@@ -221,7 +221,7 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 You can add Facebook to your self-service sign up user flows (Preview) so that users can sign in to your applications using their own Facebook accounts. Allow users to sign in using Facebook, you'll need to enable self-service sign-up for your tenant. After you add Facebook as an identity provider, set up a user flow for the application and select Facebook as one of the sign-in options.
 
 > [!NOTE]
-> Users can only use their Facebook accounts to sign up through apps using self-service sign up and user flows. Users cannot be invited and redeem their invitation using a Facebook account.
+> Users can only use their Facebook accounts to sign up through apps using self-service-sign-up and user flows. Users cannot be invited and redeem their invitation using a Facebook account.
 
 ## Create an app in the Facebook developers console
 

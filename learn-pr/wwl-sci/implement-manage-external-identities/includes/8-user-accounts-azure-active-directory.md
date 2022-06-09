@@ -96,7 +96,7 @@ It's possible to convert UserType from Member to Guest and vice-versa by using P
 
 ## Remove guest user limitations
 
-There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitaion in the user settings within Azure AD menu.
+There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitation in the user settings within Azure AD menu.
 
 :::image type="content" source="../media/remove-guest-limitations.png" alt-text="Screenshot of the External users option in the user settings. Choose what restrictions are set for external users.":::
 

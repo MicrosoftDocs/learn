@@ -1,4 +1,4 @@
-Azure AD External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources. They acces with a sign-in using whatever identity they prefer. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD to keep your resources protected.
+Azure AD External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources. They access with a sign-in using whatever identity they prefer. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD to keep your resources protected.
 
 :::image type="content" source="../media/external-user-state-diagram.png" alt-text="Diagram of the different ways an external user account can be generated and verified, when invited to your Azure A D.":::
 
@@ -29,7 +29,7 @@ The following list identifies an example B2B collaboration scenario and details 
 
 ## Manage external collaboration settings in Azure Active Directory
 
-This unit describes how to enable Azure Active Directory (Azure AD) B2B collaboration. Then, explores the ability to designate who can invite guests, and determine the permissions that guests have.
+This unit describes how to enable Azure Active Directory (Azure AD) B2B collaboration. Then, we explore the ability to designate who can invite guests, and determine the permissions that guests have.
 
 By default, all users and guests in your directory can invite guests even if they're not assigned to an admin role. External collaboration settings let you turn guest invitations on or off for different types of users in your organization. You can also delegate invitations to individual users by assigning roles that allow them to invite guests.
 
