@@ -2,9 +2,9 @@ Azure Percept is a fully integrated, easy-to-use platform with added security fo
 
 **Azure IoT Services:** 
 
-- [Azure IoT](https://docs.microsoft.com/learn/modules/introduction-iot/) 
-- [Azure IoT Hub](https://docs.microsoft.com/learn/modules/introduction-to-iot-hub/)
-- [Azure IoT Edge](https://docs.microsoft.com/learn/modules/introduction-iot-edge/) 
+- [Azure IoT](/learn/modules/introduction-iot/) 
+- [Azure IoT Hub](/learn/modules/introduction-to-iot-hub/)
+- [Azure IoT Edge](/introduction-iot-edge/) 
 
 **Azure AI Services:** 
 
