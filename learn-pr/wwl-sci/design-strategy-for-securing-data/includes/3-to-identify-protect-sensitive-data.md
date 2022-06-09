@@ -182,7 +182,7 @@ the product which is being used:
     your data estate. Empower data consumers to find valuable,
     trustworthy data.
 
-[![Diagram that depicts Microsoft Information Protection.](../media/microsoft-info-protection.png)](../media/microsoft-info-protection.png/lightbox) 
+:::image type="content" source="../media/microsoft-info-protection.png" alt-text="Diagram that depicts Microsoft Information Protection." lightbox="../media/microsoft-info-protection.png":::
 
 ##### Purview Phase 1: Know your data
 
