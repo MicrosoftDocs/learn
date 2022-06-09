@@ -4,9 +4,9 @@ In this unit, you'll learn how the Project Bonsai components work together. If y
 | ------------------------------------------ | ------------------------------------------------------------ |
 | Simulation connector                       | Connects a simulator to Bonsai.                              |
 | AI training engine                         | Manages AI learning.                                         |
-| Training curriculum (goals and objectives) | Defines what the AI should learn using user-friendly terms.  |
+| Training curriculum (goals and objectives) | Defines what the AI should learn by using user-friendly terms.  |
 | Brain exporter                             | Packages the trained AI in a container for deployment in production. |
-| Inkling                                    | Is a customer programming language.                             |
+| Inkling                                    | A customer programming language.                             |
 
 > [!NOTE]
 > A Bonsai brain (trained AI) is a nascent AI that's in the process of learning.
@@ -49,7 +49,7 @@ Simulations replicate your real-world systems. This enables you to provide a val
   - A cart moves down the line over a defined distance.
   - The temperature is maintained at a constant value for a defined period.
 
-When considering your simulation approach, it might be helpful to enlist people in your organization who've worked with simulation software before.
+When considering your simulation approach, it might be helpful to enlist people in your organization who have worked with simulation software before.
 
 > [!TIP]
 >
@@ -112,13 +112,13 @@ In a deployed brain, the Learner must instantiate the trained system and execute
 
 ### Predictor
 
-The Predictor is the part of a trained brain that computes responses. It is
+The Predictor is the part of a trained brain that computes responses. It's
 called a predictor because it essentially "predicts" the right course of action
 based on past training.
 
 > [!NOTE]
 > An exported brain is a trained Bonsai brain running in prediction mode.
-> Prediction mode tells the brain to act as an HTTP API endpoint so enables
+> Prediction mode tells the brain to act as an HTTP API endpoint so that
 > programmers can send input data to the brain and receive a prediction.
 
 ## Work with the training curriculum

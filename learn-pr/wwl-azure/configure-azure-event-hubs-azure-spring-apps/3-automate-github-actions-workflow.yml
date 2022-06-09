@@ -4,13 +4,13 @@ title: Using a microservice to send events to Azure Event Hubs
 metadata:
   title: Using a microservice to send events to Azure Event Hubs
   description: "Using a microservice to send events to Azure Event Hubs"
-  ms.date: 05/31/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 9
 content: |
   [!include[](includes/3-automate-github-actions-workflow.md)]
