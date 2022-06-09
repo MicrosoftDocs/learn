@@ -1,5 +1,3 @@
-## Summary
-
 Spreadsheets provide a useful tool for quickly transforming data for analysis. However, more powerful services are necessary to build robust and timely reporting solutions that can be shared across your organization.
 
 The Microsoft Azure cloud platform enables you to take analytics to another level. It offers scalable solutions to host your data, centralize data from multiple sources into a data warehouse, and build reports and dashboards using Power BI.
