@@ -14,9 +14,9 @@ The sandbox is active for a limited amount of time. If you plan to complete this
 
 Follow these steps to work with exercise commands in Cloud Shell:
 
-1. To copy a command, select **Copy** at the top right of the code block.
-1. To use a copied command at the Cloud Shell prompt, select right-click > **Paste**.
-1. To run the command, press Enter.
+1. Copy a command by selecting **Copy** at the top right of the code block.
+1. Use the copied command at the Cloud Shell prompt by selecting right-click > **Paste**.
+1. Run the command by pressing Enter.
 
 
 ## Get the datasets
