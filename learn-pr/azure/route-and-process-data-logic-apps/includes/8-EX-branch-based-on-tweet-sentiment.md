@@ -71,7 +71,7 @@ Although the condition action is set up, the workflow doesn't specify the action
 
    1. For **SQL server name**, enter the name for the SQL server that you previously created. Include the port number **3342** to access the public endpoint on the SQL Server instance.
 
-      For more information, review [Connect to Azure SQL Database or SQL Managed Instance](https://docs.microsoft.com/azure/connectors/connectors-create-api-sqlazure#connect-azure-sql-db).
+      For more information, review [Connect to Azure SQL Database or SQL Managed Instance](/azure/connectors/connectors-create-api-sqlazure#connect-azure-sql-db).
 
    1. For **SQL database name**, enter **PositiveTweetDatabase**, which is the name for the database that we created with our script.
 
