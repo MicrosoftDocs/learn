@@ -28,7 +28,7 @@ If you completed the previous unit, you should have a sample of the open dataset
     code NASA-software-API.txt
     ```
 
-    The file is opens in the integrated editor above the Cloud Shell prompt.
+    The file opens in the integrated editor above the Cloud Shell prompt.
 
 1. Open the search box for the integrated editor:
 

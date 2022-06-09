@@ -21,7 +21,7 @@ Follow these steps to work with exercise commands in Cloud Shell:
 
 ## Get the datasets
 
-To complete the practice exercies in this module, you need to load the NASA datasets.
+To complete the practice exercises in this module, you need to load the NASA datasets.
 
 1. Use the `mkdir` command to make a new directory named **data**.
 
@@ -41,7 +41,7 @@ To complete the practice exercies in this module, you need to load the NASA data
     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
     ```
 
-    Here's an exampe of the output from the `wget` command:
+    Here's an example of the output from the `wget` command:
 
     ```output
     --2022-06-09 06:19:13--  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
