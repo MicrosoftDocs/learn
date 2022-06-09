@@ -32,8 +32,6 @@ Depending on the inviting organization's needs, an Azure AD B2B collaboration us
 
 - State 4: Homed in the host organization's Azure AD with UserType = Guest and credentials that the host organization manages.
 
-:::image type="content" source="../media/redemption-diagram.png" alt-text="Diagram of the four user different types of external users available in Azure AD.":::
-
 Now, let's see what an Azure AD B2B collaboration user looks like in Azure AD.
 
 ### Before invitation redemption
