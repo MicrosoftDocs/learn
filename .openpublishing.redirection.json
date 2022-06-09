@@ -13876,9 +13876,49 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/describe-microsoft-365-core-services-concepts/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-microsoft-365-core-services-concepts/",
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/11-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/2-configure-manage-roles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/3-configure-manage-roles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/3-exercise-manage-users-roles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/4-exercise-manage-users-roles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/6-configure-delegation-administrative-units.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/5-configure-delegation-administrative-units",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/5-configure-manage-device-registration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/4-configure-manage-custom-domains.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/7-configure-manage-custom-domains",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/7-configure-tenant-wide-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/8-configure-tenant-wide-options",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/8-exercise-set-tenant-wide-properties.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/9-exercise-set-tenant-wide-properties",
+      "redirect_document_id": true
     }
   ]
 }
