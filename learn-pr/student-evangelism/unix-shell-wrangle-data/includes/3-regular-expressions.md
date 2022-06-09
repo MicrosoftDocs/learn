@@ -38,15 +38,15 @@ If you completed the previous unit, you should have a sample of the open dataset
 
    The Cloud Shell search box opens at the top of the editor
 
-1. Make sure the **regex** option is enabled, as shown in the following screenshot:
+1. Select the **regex** icon to enable regex pattern match searching for the file in the editor:
 
-    :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected.":::
+    :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected." lightbox="../media/cloud-shell-sandbox-search-regex-selected.png":::
 
-1. Enter the string "Open Source" in the search box.
+1. In the search box, enter the string "Open Source".
 
     With the **regex** option enabled, Cloud Shell highlights all instances in the content that match the input string. The number of matched instances is shown in the search box.
 
-    :::image type="content" source="../media/cloud-shell-sandbox-search-open-source.png" alt-text="Screenshot showing Cloud Shell search results in a text file.":::
+    :::image type="content" source="../media/cloud-shell-sandbox-search-open-source.png" alt-text="Screenshot showing Cloud Shell search results in a text file." lightbox="../media/cloud-shell-sandbox-search-open-source.png":::
 
     You can use the left and right arrow icons on the search box to see each matched instance in the file.
 
@@ -74,14 +74,14 @@ Let's find all instances of "ARC-14" followed by any digit.
 
 - In the search box, enter "ARC-14[0-9]" to look for content that matches "ARC-14" followed by any number.
    
-    You should see 22 results. Here are some of the results from this pattern matching in the file:
+    You should see 22 results.
+    
+    Here are some of the results from this pattern matching in the file:
 
-    ```output
-    ARC-14293-1 ARC 2005-09-19T00:00:00.000 "Open Source" "Genetic Graphs (JavaGenes)"
-    ARC-14400-1 ARC 2001-01-29T00:00:00.000 "General US" "PLOT3D Version 4.0"
-    ARC-14837-1GS ARC 1999-07-13T00:00:00.000 "General US" "FOMOCO Utilities "
-    ARC-14932-1 ARC 2005-01-12T00:00:00.000 "Open Source" "Mission Simulation Toolkit (MST)"
-    ```
+    > `ARC-14293-1 ARC 2005-09-19T00:00:00.000 "Open Source" "Genetic Graphs (JavaGenes)"`
+    > `ARC-14400-1 ARC 2001-01-29T00:00:00.000 "General US" "PLOT3D Version 4.0"`
+    > `ARC-14837-1GS ARC 1999-07-13T00:00:00.000 "General US" "FOMOCO Utilities "`
+    > `ARC-14932-1 ARC 2005-01-12T00:00:00.000 "Open Source" "Mission Simulation Toolkit (MST)"`
 
 
 ### Wildcards
@@ -96,23 +96,20 @@ Let's try this regex wildcard pattern to look for text that matches "NASA" follo
 
 - In the search box, enter "NASA.*" to look for matching text.
    
-    You should see 26 results. Here are some of the results from this pattern matching in the file:
+    You should see 26 results.
+    
+    Here are some of the results from this pattern matching in the file:
 
-    ```output
-    NASA Root Cause Analysis Tool
-    NASA's Moderate Resolution Imaging Spectrometer (MODIS)-Combined Ocean Color
-    NASA, Average-Passage Multistage Turbomachinery Flow Field Analysis Code
-    NASA -  Average Passage Flow Solver)
-    NASA/NESSUS 6.2c Probabilistic Structural Analysis Software
-    ```
+    > `NASA Root Cause Analysis Tool`
+    > `NASA's Moderate Resolution Imaging Spectrometer (MODIS)-Combined Ocean Color`
+    > `NASA, Average-Passage Multistage Turbomachinery Flow Field Analysis Code`
+    > `NASA -  Average Passage Flow Solver)`
+    > `NASA/NESSUS 6.2c Probabilistic Structural Analysis Software`
+
 
 ### Anchors
 
-When you match sequences that appear at a specific part of a line of characters or a word, it's called *anchoring*.
-
-You use the caret (`^`) symbol to indicate that the search pattern should consider a character sequence to be a match only if the matching portion appears at the *start* of a line. This symbol sets the start-of-line anchor.
-
-The dollar (`$`) symbol is used to indicate that the search pattern should consider a character sequence to be a match only if the matching portion appears at the *end* of a line. This symbol sets the end-of-line anchor.
+When you match sequences that appear at a specific part of a line of characters or a word, it's called *anchoring*. You use the caret (`^`) symbol to indicate that the search pattern should consider a character sequence to be a match only if the matching portion appears at the *start* of a line. This symbol sets the start-of-line anchor. The dollar (`$`) symbol is used to indicate that the search pattern should consider a character sequence to be a match only if the matching portion appears at the *end* of a line. This symbol sets the end-of-line anchor.
 
 You can now write a regex that will match numbers at the beginning of a line, `^[0-9]`, or at the end of a line, `[0-9]$`.
 
@@ -130,6 +127,7 @@ Let's try the regex anchor patterns to search for matches where "A" is the first
     > `GSC-16207-1 GSFC 2011-04-12T00:00:00.000 "Open Source" "Goddard Mission Services Evolution Center Architecture Application Programming Interface (GMSEC`
     > `LEW-16018-1 GRC 2003-01-05T00:00:00.000 "General US" CARES/LIFE`
 
+
 ### Escaping characters
 
 Let's say we want to find lines in which a period (`.`) is the last character. We know the dollar sign (`$`) is the end-of-line anchor, so we might enter `.$` in the search box.
@@ -142,13 +140,13 @@ To find lines in which a period (`.`) is the last character, enter `\.$` in the 
 
 Let's try using the escape character in a regex pattern search of our NASA file.
 
-1. In the search box, enter "\.$" to look for text that ends with a period (`.`).
+1. In the search box, enter "\\.$" to look for text that ends with a period (`.`).
    
     There are zero results.
 
-1. In the search box, enter "\*\*" to look for instances of a double asterisk (`**`) in the file.    
+1. In the search box, enter "\\*\\*" to look for instances of a double asterisk (`**`) in the file.    
 
-    There's one result.
+    There's one result:
 
     > `LLEW-17324-1 GRC 2001-01-05T00:00:00.000 "General US" "CANCELLED ** Same As LEW-16855-1 (APNASA -  Average Passage Flow Solver)"`
 

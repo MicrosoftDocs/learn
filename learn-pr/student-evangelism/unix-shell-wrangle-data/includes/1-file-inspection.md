@@ -7,7 +7,9 @@ As a developer, you'll often need to extract information from logs. In this modu
 >
 > The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so that your work is not lost.
 
-1. Use the `mkdir` command to make a new directory named **data**. Select **Copy** at the top right of the code block, and then use right-click > **Paste** to enter the command in the editor.
+1. Use the `mkdir` command to make a new directory named **data**.
+
+    Select **Copy** at the top right of the code block, and then use right-click > **Paste** to enter the command in the editor.
 
     ```bash
     mkdir data
@@ -18,21 +20,23 @@ As a developer, you'll often need to extract information from logs. In this modu
     ```bash
     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
-
     ```
 
-    You should see output like this example:
+    After the first call to the `wget` command completes, you might need to press Enter in Cloud Shell to run the second call to the command.
+
+    After the commands complete, you should see output like this example:
 
     ```output
-    --2022-06-08 17:03:50--  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
-    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+    --2022-06-09 06:19:13--  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
     HTTP request sent, awaiting response... 200 OK
-    Length: 13214666 (13M) [text/plain]
-    Saving to: ‘data/NASA-logs-1995.txt’
-     
-    NASA-logs-1995.txt               100%[==========================================================>]  12.60M  --.-KB/s    in 0.05s   
-    2022-06-08 17:03:51 (273 MB/s) - ‘data/NASA-logs-1995.txt’ saved [13214666/13214666]
+    Length: 81115 (79K) [text/plain]
+    Saving to: ‘data/NASA-software-API.txt’
+
+    NASA-software-API.txt          100%[==========================================================>]  79.21K  --.-KB/s    in 0.001s  
+
+    2022-06-09 06:19:13 (69.6 MB/s) - ‘data/NASA-software-API.txt’ saved [81115/81115]
     ```
      
 1. Change to the new directory by using the `cd` command:
@@ -131,14 +135,12 @@ wc NASA-software-API.txt
 Your output should look like this:
 
 ```output
-  703  8917 81115 NASA-software-API.txt
+  703   8917   81115   NASA-software-API.txt
 ```
 
 You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Recheck the output from the previous command, `nl`. We see that the last printed line is:
 
-```output
-700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
-```
+> `700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
 
 Notice that the index of this line is 700 rather than 703, `700=GSC...`. What's happening here?
 

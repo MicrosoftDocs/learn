@@ -4,7 +4,7 @@ metadata:
   title: Perform file inspection in the UNIX shell
   description: This unit describes how you can use the UNIX shell to inspect the contents of files before you do any data wrangling.
   ms.date: 06/09/2022
-  author: trallard
+  author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

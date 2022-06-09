@@ -6,7 +6,7 @@ The `cat` command is one of the most basic yet useful commands for working with 
 
 The `cat` command is most commonly used to read the content of files. Its default output destination, which is also known as a standard output, or `stdout`, is the monitor screen. To display the content of a file, you would enter `cat <filename>`.
 
-Run the `cat` command to display the contents of the **NASA-software-API.txt** file:
+Run the `cat` command to display the content of the **NASA-software-API.txt** file:
 
 ```bash
 cat NASA-software-API.txt
@@ -15,10 +15,10 @@ cat NASA-software-API.txt
 Your output should list each line in the file, and end with these lines:
 
 ```output
-697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
-698=GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
-699=GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
-700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
 ```
 
 ## Create files
@@ -29,24 +29,22 @@ We create new files by redirecting the standard output of the `cat` command with
 
 1. Run the `cat` command with the greater than `>` operator and the name of the file to create, **file1**:
 
+   > [!Note]
+   > If you already have a file named **file1**, it will be overwritten.
+
    ```bash
    cat > file1
    ```
 
-   > [!Note]
-   > If you already have a file named **file1**, it will be overwritten.
+   After you input the command at the prompt, be sure to press Enter to move the cursor to a new line.
 
-   1. After you run the command, press Enter to move the cursor to a new line.
-
-   1. Add the following text:
+1. Add the following text, and then press Enter to move the cursor to a new line.
    
-      ```bash
-      NASA headquarters
-      ```
-      
-   1. Press Enter again.
+   ```bash
+   NASA headquarters
+   ```
 
-   1. Press Ctrl + D to end the program and restore the command prompt.
+1. Press Ctrl + D to end the concatenation action and restore the prompt.
 
 1. To append a line to the file without overwriting the existing content, use the double greater than `>>` operator with the `cat` command:
 
@@ -54,19 +52,35 @@ We create new files by redirecting the standard output of the `cat` command with
    cat >> file1
    ```
 
-   1. Press Enter to move the cursor to a new line, and then add the following text:
+   After you input the command at the prompt, be sure to press Enter to move the cursor to a new line.
+
+1. Add the following text, and then press Enter to move the cursor to a new line.
    
-      ```bash
-      Goddard Space Flight Center
-      ```
+   ```bash
+   Goddard Space Flight Center
+   ```
       
-   1. Press Enter again, followed by Ctrl + D to end the program and restore the command prompt.
+1. Press Ctrl + D to end the concatenation action and restore the prompt.
 
-If you run the `ls` command, you'll see the new file in your directory:
+1. Run the `ls` command to see the new file in your directory:
 
-```output
-file1   NASA-logs-1995.txt   NASA-software-API.txt
-```
+   ```output
+   file1   NASA-logs-1995.txt   NASA-software-API.txt
+   ```
+
+1. Use the basic `cat` command to display the content of the updated file:
+
+   ```bash
+   cat file1
+   ```
+
+   You should see this output:
+   
+   ```output
+   NASA headquarters
+   Goddard Space Flight Center
+   ```
+
 
 ## Concatenate files
 
