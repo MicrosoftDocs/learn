@@ -39,7 +39,7 @@ Azure AD roles are used to manage Azure AD resources in a directory.  Actions su
 
 In the Azure portal, you can see the list of Azure AD roles on the **Roles and administrators** screen.
 
-:::image type="content" source="../media/directory-admin-roles.png" alt-text="Screenshot of the Azure AD roles on the Roles and administrators window in Azure AD manage menu of the Azure portal.":::
+:::image type="content" source="../media/directory-admin-roles.png" alt-text="Screenshot of the Azure A D roles on the Roles and administrators window in Azure A D manage menu of the Azure portal.":::
 
 ## Differences between Azure roles and Azure AD roles
 
@@ -58,7 +58,7 @@ By default, Azure roles and Azure AD roles don't span Azure and Azure AD. Howeve
 
 Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Administrator and User Administrator roles. For example, if you're a member of the Global Administrator role, you have global administrator capabilities in Azure AD and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
 
-:::image type="content" source="../media/azure-office-roles.png" alt-text="Diagram of relationship of Azure roles to Azure AD roles. Azure roles accessed in Azure tenant.  Azure AD roles also accessed from Microsoft 365.":::
+:::image type="content" source="../media/azure-office-roles.png" alt-text="Diagram of relationship of Azure roles to Azure A D roles. Azure roles accessed in Azure tenant.  Azure A D roles also accessed from Microsoft 365.":::
 
 ## Assign roles
 

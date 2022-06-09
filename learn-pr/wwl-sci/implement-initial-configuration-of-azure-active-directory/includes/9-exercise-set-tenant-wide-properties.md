@@ -32,7 +32,7 @@ Azure subscriptions have a trust relationship with Azure Active Directory (Azure
 9. In the **Azure Active Directory** screen, in the Manage section, select **Properties**.
 10. Under **Tenant properties**, locate **Tenant ID**. Tenant ID is your unique tenant identifier.
     
-      :::image type="content" source="../media/portal-tenant-identifier.png" alt-text="Screenshot of the Tenant properties page with the Tenant ID box highlighted.":::
+      :::image type="content" source="../media/portal-tenant-identifier.png" alt-text="Screenshot of the Tenant properties page with the Tenant I D box highlighted.":::
 
 ### Change the Technical contact, add your privacy info, Global privacy contact, and Privacy statement URL
 
@@ -56,6 +56,6 @@ You add your organization's privacy information in the **Properties** area of Az
       > [!IMPORTANT]
       > If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
     
-      :::image type="content" source="../media/active-directory-privacy-statement-contact.png" alt-text="Screenshot of the B2B Collaboration Review permissions box with Accept / Cancel buttons.":::
+      :::image type="content" source="../media/active-directory-privacy-statement-contact.png" alt-text="Screenshot of the B 2 B Collaboration Review permissions box with Accept / Cancel buttons.":::
     
 13. Select **Save**.

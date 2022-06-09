@@ -16,7 +16,7 @@ What is a permission? The dictionary definition of permission is the **consent o
 
 | User settings | Roles and administrators |
 | :-----: | :-----: |
-| :::image type="content" source="../media/permission-users.png" alt-text="Screenshot of the Azure AD user settings, where permissions can be restricted."::: | :::image type="content" source="../media/permissions-role-admin.png" alt-text="Screenshot of the Roles and administrators screen in Azure AD. List of roles that can be applied."::: |
+| :::image type="content" source="../media/permission-users.png" alt-text="Screenshot of the Azure A D user settings, where permissions can be restricted."::: | :::image type="content" source="../media/permissions-role-admin.png" alt-text="Screenshot of the Roles and administrators screen in Azure A D. List of roles that can be applied."::: |
 
 You can use the **User Settings** inside of Azure AD – Manage menu to restrict or control the default permissions of the default users.  Or you can use Roles and administrators to add new permissions onto your users and group.  Always use the concept of Least Privilege and make sure the users only have the rights they need.  In User settings you can restrict the user's ability to:
 - Register applications

@@ -16,7 +16,7 @@ Tenant-wide option
 
 ## Configure tenant-wide user settings
 
-:::image type="content" source="../media/user-settings-azure-active-directory.png" alt-text="Screenshot of the User settings screen in Azure AD.  Use it to configure what users can do.":::
+:::image type="content" source="../media/user-settings-azure-active-directory.png" alt-text="Screenshot of the User settings screen in Azure A D.  Use it to configure what users can do.":::
 
 In Azure Active Directory (Azure AD), all users are granted a set of default permissions. A user’s access consists of the type of user, their role assignments, and their ownership of individual objects. The default user permissions can be changed only in user settings in Azure AD.
 
@@ -63,7 +63,7 @@ Microsoft is making **Security Defaults** available to everyone. The goal is to 
 
 ## Configure the external user options
 
-:::image type="content" source="../media/external-user-settings-azure-active-directory.png" alt-text="Screenshot of the Azure AD manage external user settings dialog.":::
+:::image type="content" source="../media/external-user-settings-azure-active-directory.png" alt-text="Screenshot of the Azure A D manage external user settings dialog.":::
 
 Here you configure the actions that external users can take while using the cloud resources of your tenant.
 
@@ -73,7 +73,7 @@ Here you configure the actions that external users can take while using the clou
 
 ## Configure tenant properties for the directory
 
-:::image type="content" source="../media/tenant-properties-azure-active-directory.png" alt-text="Screenshot of the Azure AD properties dialog box. Configure the definition of your tenant.":::
+:::image type="content" source="../media/tenant-properties-azure-active-directory.png" alt-text="Screenshot of the Azure A D properties dialog box. Configure the definition of your tenant.":::
 
 Set the basic values that define the look at feel of your tenant within Azure AD.
 
