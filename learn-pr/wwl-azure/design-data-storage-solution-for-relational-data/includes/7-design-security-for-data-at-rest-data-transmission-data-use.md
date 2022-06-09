@@ -25,7 +25,7 @@ Data exists in one of three basic states - data-at-rest, data-in-motion, data-in
 | **DATA STATE**| **ENCRYPTION METHOD** |
 | - | - |
 | Data-at-rest| TDE, Always Encrypted |
-| Data-in-motion| SSL/TSL, Always Encrypted |
+| Data-in-motion| SSL/TLS, Always Encrypted |
 | Data-in-process| Dynamic data masking |
 
 
