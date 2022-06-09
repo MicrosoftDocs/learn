@@ -18,8 +18,8 @@ Total : 1
   CommandToExecute Must Use ProtectedSettings For Secrets
     [+] CommandToExecute Must Use ProtectedSettings For Secrets (171 ms)
   deploymentTemplate
-    [-] Custom ParameterNaming (354 ms) #highlight
-        To be implemented #highlight
+    [-] Custom ParameterNaming (354 ms)
+        To be implemented
 
   DependsOn Best Practices
     [+] DependsOn Best Practices (152 ms)
