@@ -26,4 +26,4 @@ You should have familiarity with Azure, including the Azure portal, subscription
 To follow along with the exercises in the module, you'll need:
 
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
-  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
+

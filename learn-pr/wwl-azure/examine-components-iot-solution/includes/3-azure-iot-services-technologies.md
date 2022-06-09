@@ -24,7 +24,7 @@ As a fully managed application platform, IoT Central has a simple, predictable p
 
 ### Connected factory solution accelerator (PaaS)
 
-The Connected Factory solution accelerator an open-source PaaS solution that aligns with the Azure IoT Reference Architecture. The solution accelerator can be deployed in minutes using your Azure subscription and can be customized as needed.
+The Connected Factory solution accelerator is an open-source PaaS solution that aligns with the Azure IoT Reference Architecture. The solution accelerator can be deployed in minutes using your Azure subscription and can be customized as needed.
 
 Organizations with a large number of devices or device models, and manufacturers seeking connected factory solutions, are examples of companies that can benefit from a solution accelerator.
 
