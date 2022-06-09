@@ -1,21 +1,7 @@
 
-The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. This topic is designed to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measure.
-
-During any cloud transformation, the ability to speak in terms of business outcomes supports transparency and cross-functional partnerships. The business outcome framework starts with a simple template to help technically minded individuals document and gain consensus. This template can be used with business stakeholders to collect a variety of business outcomes, which could each be influenced by a company's transformation journey.
-
-In this template, business outcomes focus on three topics:
-
--   Aligning to stakeholders or business decision makers
--   Understanding business drivers and objectives
--   Mapping outcomes to specific solutions and technical capabilities
-
-![Diagram that shows business outcomes as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
-
-The business outcome template focuses on simplified conversations that can quickly engage stakeholders without getting too deep into the technical solution. By rapidly understanding and aligning the key performance indicators (KPIs) and business drivers that are important to stakeholders, architects can consider about high-level approaches and transformations before implementing security solutions.
+The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. Microsoft has created a [Cloud Adoption Framework](/azure/cloud-adoption-framework/) to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measures.
 
 ## Cloud Adoption Framework
-
-**Media:** [Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
 
 As mentioned in the video, Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
 
