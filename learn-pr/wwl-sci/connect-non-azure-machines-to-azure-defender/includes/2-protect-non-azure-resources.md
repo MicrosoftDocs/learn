@@ -10,8 +10,7 @@ Azure Arc simplifies governance and management by delivering a consistent multi-
 - Continue using traditional ITOps, while introducing DevOps practices to support new cloud native patterns in your environment.
 - Configure Custom Locations as an abstraction layer on top of Azure Arc-enabled Kubernetes cluster, cluster connect, and cluster extensions.
 
->[!div class="mx-imgBorder"]
->![aws account overview.](../media/azure-arc-control-plane.png)
+:::image type="content" source="../media/azure-arc-control-plane.png" alt-text="Screenshot of A W S account overview settings.":::
 
 Today, Azure Arc allows you to manage the following resource types hosted outside of Azure:
 
