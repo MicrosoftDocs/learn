@@ -107,7 +107,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     Make sure your table looks like the one shown, before you proceed (note that the date may be formatted differently for your location).
 
-2. Select the cells containing the date, daily sales, and temperature values only, but **<u>not</u>** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells:
+2. Using the following instructions, select the cells containing the date, daily sales, and temperature values only, but **<u>not</u>** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells:
     - Click cell **A4**, which should contain the date value for January 1 2017.
     - Then press SHIFT + CTRL + **&#8680;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to extend the selection to include the sales and temperature values.
     - Then press SHIFT + CTRL + **&#8681;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to select the rows beneath the current selection.
