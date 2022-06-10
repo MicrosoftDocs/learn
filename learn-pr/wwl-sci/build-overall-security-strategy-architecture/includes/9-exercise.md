@@ -2,8 +2,7 @@ This case study exercise is designed to provide experience performing some conce
 
 ## Case study: design a Zero Trust solution
 
-Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. The Tailwind Traders CISO is aware of the opportunities offered by Azure, but also understands the need for strong security and solid cloud architecture. Without strong security and a great point of reference architecture, the
-company may have difficulty managing the Azure environment and costs, which are hard to track and control. The CISO is interested in understanding how Azure manages and enforces security standards.
+Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. The Tailwind Traders CISO is aware of the opportunities offered by Azure, but also understands the need for strong security and solid cloud architecture. Without strong security and a great point of reference architecture, the company may have difficulty managing the Azure environment and costs, which are hard to track and control. The CISO is interested in understanding how Azure manages and enforces security standards.
 
 ### Requirements: user access and productivity
 
