@@ -58,6 +58,9 @@ Let's find all occurrences of the word "NASA" and show the line numbers where th
 
 You'll get many more results than the previous search because we passed two files as an argument to the command.
 
+
+## Grep flags
+
 The `grep` command is powerful. You can use it to match complex regular expressions and tailor the output to your needs. Here are some useful flags to remember:
 
 | Flag | Definition |

@@ -19,7 +19,7 @@ Follow these steps to work with exercise commands in Cloud Shell:
 1. Run the command by pressing Enter.
 
 
-## Get the NASA dataset
+## Get the NASA datasets
 
 To complete the practice exercises in this module, you need to load the NASA datasets.
 

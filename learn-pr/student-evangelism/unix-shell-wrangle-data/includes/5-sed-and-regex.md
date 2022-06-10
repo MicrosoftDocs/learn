@@ -37,10 +37,10 @@ echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
 The output shows the modified URL:
 
 ```output
-https://www.nasa.gov/about/sites/homes
+https://www.nasa.gov/about/sites/home
 ```
 
-Let's try this replacement on content in the **NASA-software-API.txt** file. We'll substitute all instances of the abbreviation "NASA" with the full title "National Aerospace Agency." Before we make the substitution, we'll get a count of the number of instances of the abbreviation "NASA." After we run the `sed` tool, we'll get a count of the number of instances of the full title "National Aerospace Agency" to ensure all instance of the abbreviation were replaced.
+Let's try this replacement on content in the **NASA-software-API.txt** file. We'll substitute all instances of the abbreviation "NASA" with the full title "National Aerospace Agency." Before we make the substitution, we'll get a count of the number of instances of the abbreviation "NASA." After we run the `sed` tool, we'll check the count to make sure all instances were replaced.
 
 1. Open the NASA-software-API.txt file in the Cloud Shell editor:
 
@@ -48,9 +48,7 @@ Let's try this replacement on content in the **NASA-software-API.txt** file. We'
     code NASA-software-API.txt
     ```
 
-1. Open the search box for the integrated editor, and select the **regex** icon (**`.*`**) to enable regex pattern match searching.
-
-1. In the search box, enter the string `NASA`.
+1. Open the search box for the integrated editor, and enter the string `NASA`.
 
    The search box result shows 27 matches for the abbreviation "NASA."
    
@@ -60,9 +58,9 @@ Let's try this replacement on content in the **NASA-software-API.txt** file. We'
    sed 's/NASA/National Aerospace Agency/' NASA-software-API.txt
    ```
 
-   Notice that the substitution happens on all matches for NASA, but the command prints all lines of the file to the terminal (`stdout`). This behavior is the default for the `sed` tool.
+   Notice the substitution happens on all matches for "NASA," but the command prints all lines of the file to the terminal (`stdout`). This behavior is the default for the `sed` tool.
 
-   To print only those lines where replacement is applied, we can use the `-n` flag. We also pass the `p` option to suppress automatic printing.
+   To print only the lines where a replacement was applied, we can use the `-n` flag. We also pass the `p` option to suppress automatic printing.
 
 1. Run the `sed` command again, but this time, print only the lines where the pattern replacement is applied:
 
@@ -93,4 +91,13 @@ Let's try the previous command again. This time, we'll write all content modifie
 
 1. Open the new file in the Cloud Shell editor.
 
-   You should see 27 lines in the file. The last line should be empty.
+   You should see 26 lines of content in the new file.
+
+
+### Student exercise
+
+If you use the search box to look for the string "NASA" in the new file, you'll notice one remaining instance of the abbreviation. Our call to the `sed` command made only 26 substitutions.
+   
+One line in the NASA-software-API.txt file had two instances of the "NASA" abbreviation. Our call to the `sed` command successfully replaced the first instance. The second instance of "NASA" appears within the term "NASAViz."
+
+Can you use the `sed` command to make this final replacement?
