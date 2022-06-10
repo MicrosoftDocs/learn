@@ -1,10 +1,4 @@
-### Understand security operations frameworks, processes, and procedures
-
-The responsibility of the security operation team (also known as
-Security Operations Center (SOC), or SecOps) is to rapidly detect,
-prioritize, and triage potential attacks. These operations help
-eliminate false positives and focus on real attacks, reducing the mean
-time to remediate real incidents. 
+The responsibility of the security operations team (also known as the Security Operations Center (SOC), or SecOps) is to rapidly detect, prioritize, and triage potential attacks. These operations help eliminate false positives and focus on real attacks, reducing the mean time to remediate real incidents. 
 
 Watch the video below for an overview about Security Operations:
 
@@ -18,33 +12,55 @@ operations:
 
 -   Follow the NIST Cybersecurity Framework functions as part of
     operations:
-
     -   **Detect** the presence of adversaries in the system.
-
     -   **Respond** by quickly investigating whether it's an actual
         attack or a false alarm.
-
     -   **Recover** and restore the confidentiality, integrity, and
         availability of the workload during and after an attack.
-
 -   Acknowledge an alert quickly. A detected adversary must not be
     ignored while defenders are triaging false positives.
-
 -   Reduce the time to remediate a detected adversary. Reduce their
-    opportunity time to conduct and attack and reach sensitive systems.
-
+    opportunity to conduct attacks and reach sensitive systems.
 -   Prioritize security investments into systems that have high
-    intrinsic value. For example, administrator accounts.
-
+    intrinsic value.
 -   Proactively hunt for adversaries as your system matures. This effort
-    will reduce the time that a higher skilled adversary can operate in
-    the environment. For example, skilled enough to evade reactive
-    alerts.
+    will reduce the time that a highly skilled adversary can operate in
+    the environment.
 
-SecOps has multiple potential interactions with business leadership,
-which includes:
+## The MITRE ATT&CK™ framework
+
+The MITRE ATT&CK™ framework, represents the typical steps that cyberattack progresses through. 
+
+![Diagram that shows stages of a cyberattack.](../media/stages-cyberattack.png)
+
+- **Reconnaissance:** The observation stage where attackers assess networks and services to identify possible targets and techniques to gain entry. 
+- **Intrusion:** Attackers use the knowledge gained in the reconnaissance phase to get access to a part of a network. This often involves exploring a flaw or security hole. 
+- **Exploitation:** This phase involves exploiting vulnerabilities and inserting malicious code onto the system to get more access. 
+- **Privilege Escalation:** Attackers often try to gain administrative access to compromised systems to get access to more critical data and move into other connected systems. 
+- **Lateral Movement:** This is the act of moving laterally to connected servers and gaining greater access to potential data. 
+- **Obfuscation / Anti-forensics:** Attackers need to cover their entry to successfully pull off a cyberattack. They will often compromise data and clear audit logs to prevent detection by any security team. 
+- **Denial of Service:** This phase involves disrupting normal access for users and systems to keep the attack from being monitored, tracked, or blocked. 
+- **Exfiltration:** The final extraction stage: getting valuable data out of the compromised systems. 
+
+Different types of attacks are associated with each stage, targeting various subsystems. 
+
+## Security operations functions
+
+:::image type="content" source="../media/security-operations-functions.png" alt-text="Diagram that shows security Operations functions (Tiers)." lightbox="../media/security-operations-functions.png":::
+
+A security operations organization is comprised of different functions:
+
+* **Automation** – Near real-time resolution of known incident types with automation (these are well-defined attacks that the organization has seen many times)
+* **Triage (Tier 1)** – Triage analysts focus on rapid remediation of a high volume of well-known incident types that still require (quick) human judgement. These are often tasked with approving automated remediation workflows and identifying anything anomalous or interesting that warrant escalation or consultation with investigation (Tier 2) teams. 
+* **Investigation (Tier 2)** - This team serves as escalation point for issues from Triage (Tier 1) and directly monitors alerts that indicate a more sophisticate attacker that trigger behavioral alerts, special case alerts related to business-critical assets, and monitoring for ongoing attack campaigns. Proactively, this team also periodically reviews the Triage team alert queue and may proactively hunt using XDR tools in their spare time. This team provides deeper investigation into a lower volume of more complex attacks, often multi-stage attacks conducted by human attack operators. This team pilots new/unfamiliar alert types to document processes for Triage team and automation, often including alerts generated by Azure Defender on cloud hosted apps, VMs, containers and Kubernetes, SQL databases, etc. 
+* **Hunt** – This team proactively hunts for undetected threats, assists with escalations and advanced forensics for reactive investigations, and refines alerts/automation. These teams operate in more of a hypothesis-driven model than a reactive alert model and are also where red/purple teams connect with security operations.
+* **Incident Management** – This team takes on the non-technical aspects of managing incidents including coordination with other teams like communications, legal, leadership, and other business stakeholders. 
+
+## Interactions between SecOps and business leadership
 
 ![Diagram showing the potential interactions between SecOps and business leadership.](../media/practice-exercises.png) 
+
+SecOps has multiple potential interactions with business leadership, including:
 
 -   **Business context to SecOps**: SecOps must understand what is most
     important to the organization so that the team can apply that
@@ -78,7 +94,7 @@ which includes:
     company is aware of a secret project or unexpected attacker targets
     highlight the value of an otherwise overlooked dataset.
 
-### People and process
+## People and process
 
 Security operations can be highly technical, but more importantly, it's
 a human discipline. People are the most valuable asset in security
@@ -90,7 +106,7 @@ like criminals, spies, and hacktivists. While some commodity attacks are
 fully automated, the most damaging ones are often done by live human
 attack operators.
 
-#### Focus on empowering people 
+## Focus on empowering people 
 
 Your goal shouldn't be to replace people with automation. Empower your people with tools that simplify
 their daily workflows. These tools enable them to keep up with or get
@@ -101,16 +117,16 @@ positives) requires investing in both humans and automation. Automation
 and technology can reduce human work, but attackers are human and human
 judgment is critical in defeating them.
 
-#### Diversify your thinking portfolio
+## Diversify your thinking portfolio
 
 Security operations can be highly
 technical, but it's also just another new version of forensic
 investigation that shows up in many career fields like criminal justice.
 Don't be afraid to hire people with a strong competency in
-investigation or deductive or inductive reasons and train them on
+investigation or deductive or inductive reasoning and train them on
 technology.
 
-#### Metrics
+## Metrics
 
 Metrics drive behavior, so measuring success is a critical element to
 get right. Metrics translate culture into clear measurable goals that
@@ -154,4 +170,3 @@ organizational risk are:
     workload to inform staffing and other decisions. For example, so
     that work done on escalated incidents isn't attributed to the wrong
     team.
-
