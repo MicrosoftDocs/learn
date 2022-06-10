@@ -1,5 +1,3 @@
-### Develop Security Operations for Hybrid and Multi-cloud Environments
-
 A hybrid cloud combines a private cloud (on-premises infrastructure)
 with a public cloud (computing services offered by third-party providers
 over the public internet). Hybrid clouds allow data and applications to
@@ -19,11 +17,11 @@ extended offline periods.
 Multi-cloud computing uses multiple cloud computing services from more
 than one cloud provider (including private and public clouds) in a
 heterogeneous environment. A multi-cloud strategy provides greater
-flexibility and mitigates risk. Choose services from different cloud
+flexibility and mitigates risk. This strategy allows you to choose services from different cloud
 providers best suited for a specific task or take advantage of services
 offered by a particular cloud provider in a specific location.
 
-#### Unified Operations
+## Unified operations
 
 The primary objective of unified operations is to create as much process
 consistency as possible across deployments. No cloud service provider
@@ -41,51 +39,49 @@ within their defined governance and operations management processes. To
 meet long-term requirements, your unified operations solution will need
 to be able to scale to meet these common processes specified below.
 
-#### Common governance processes (tasks)
+## Common governance processes (tasks)
 
--   **Cost management:** View, manage, or optimize costs and **identify
-    and provide mitigation guidance for cloud-related IT spend risk**.
+-   **Cost management:** View, manage, or optimize costs and identify
+    and provide mitigation guidance for cloud-related IT spend risk.
 
 -   **Security baseline:** Audit, apply, or automate requirements from
-    recommended security controls and **identify and provide mitigation
-    guidance for security-related business risks**.
+    recommended security controls and identify and provide mitigation
+    guidance for security-related business risks.
 
 -   **Resource consistency:** Onboard, organize, configure resources and
-    services, and **identify and provide risk mitigation guidance for
-    potential business risks**.
+    services, and identify and provide risk mitigation guidance for
+    potential business risks.
 
 -   **Identity baseline:** Enforce authentication and authorization
-    across user identity and access and **identify and provide
+    across user identity and access and identify and provide
     risk-mitigation guidance for potential identity-related business
-    risks**.
+    risks.
 
 -   **Deployment acceleration:** Drive consistency using templates,
     automation, and pipelines (for deployments, configuration alignment,
-    and reusable assets), **establishing policies to ensure compliant,
-    consistent, and repeatable resource deployment and configuration**.
+    and reusable assets), establishing policies to ensure compliant,
+    consistent, and repeatable resource deployment and configuration.
 
-#### Common operations management processes (tasks)
+## Common operations management processes (tasks)
 
 -   **Inventory and visibility:** Account for, and ensure reporting for
-    all assets, and **collect and monitor your inventory's run state in
-    enterprise-grade environments**.
+    all assets, and collect and monitor your inventory's run state in
+    enterprise-grade environments.
 
 -   **Optimized operations:** Track, patch, and optimize supported
-    resources and **minimize business interruption risks from
+    resources and minimize business interruption risks from
     configuration drift or vulnerabilities from inconsistent patch
-    management**.
+    management.
 
 -   **Protection and recovery:** Backup, business continuity, and
-    disaster recovery best practices and **reduce the duration and
-    impact of unpreventable outages**.
+    disaster recovery best practices and reduce the duration and
+    impact of unpreventable outages.
 
--   **[Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization):**
-    Specialized operations for common technology platforms such as SQL
+-   **[Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization):** Specialized operations for common technology platforms such as SQL
     databases, virtual desktops, and SAP (for medium to high criticality
     workloads).
 
--   **[Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization):**
-    Specialized operations (for high priority/mission-critical
+-   **[Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization):**  Specialized operations (for high priority/mission-critical
     workloads) with greater operations requirements.
 
 Your primary cloud platform should be able to provide the required
@@ -94,11 +90,7 @@ goals above for governance and operations management. Your unified
 operations solution should enable you to extend these processes across
 all hybrid, multi-cloud, and edge deployments.
 
-![Diagram that shows technology capabilities of Modern Security Operations.](../media/modern-security-operation.png) 
-
-![Diagram that shows security Operations functions (Tiers).](../media/security-operations-functions.png) 
-
-#### Azure Security Operation services
+## Azure Security Operation services
 
 [Azure security operations](/azure/security/fundamentals/operational-security) refer
 to the services, controls, and features available to users to protect
@@ -109,7 +101,7 @@ the Microsoft Security Development Lifecycle (SDL), the Microsoft
 Security Response Center program, and deep awareness of the
 cybersecurity threat landscape.
 
-#### Azure management services
+## Azure management services
 
 An IT operations team is responsible for managing hybrid and multi-cloud
 environments, such as data center infrastructure, applications, and
@@ -127,7 +119,7 @@ infrastructures. Each service provides a specific management function.
 Services can be combined to achieve different management scenarios.
 
 
-#### Azure Monitor
+### Azure Monitor
 
 [Azure Monitor](/azure/azure-monitor/overview) collects
 data from managed sources into central data stores. This data can
@@ -140,7 +132,7 @@ services with existing on-premises environments. Azure Monitor logs also
 clearly separate the data collection from the action taken on that data
 so that all actions are available to all kinds of data.
 
-#### Automation
+### Automation
 
 [Azure Automation](/azure/automation/automation-intro) provides
 a way to automate the manual, long-running, error-prone, and frequently
@@ -150,7 +142,7 @@ even schedules these tasks to be automatically performed at regular
 intervals. Processes can be automated using runbooks or configuration
 management using Desired State Configuration.
 
-#### Backup
+### Backup
 
 [Azure Backup](/azure/backup/backup-overview) is
 the Azure-based service that you can use to back up (or protect) and
@@ -166,7 +158,7 @@ back up data to an Azure Recovery Services vault in Azure.
 
 For more information, see the [Azure Backup components table](/azure/backup/backup-overview#what-can-i-back-up).
 
-#### Site Recovery
+### Site Recovery
 
 [Azure Site Recovery](https://azure.microsoft.com/documentation/services/site-recovery) provides
 business continuity by orchestrating the replication of on-premises
@@ -176,7 +168,7 @@ can keep working. Fail back when systems return to working order. Use
 Microsoft Defender for Cloud to perform more intelligent and effective
 threat detection.
 
-#### Azure Active Directory
+### Azure Active Directory
 
 [Azure Active Directory (Azure AD)](/azure/active-directory/manage-apps/what-is-application-management) is
 a comprehensive identity service that:
@@ -215,7 +207,7 @@ customers (business or consumer) have the same identity and access
 management capabilities. This enables significant reduction in
 operational costs.
 
-#### Microsoft Defender for Cloud
+### Microsoft Defender for Cloud
 
 [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) helps
 prevent, detect, and respond to threats with increased visibility into
