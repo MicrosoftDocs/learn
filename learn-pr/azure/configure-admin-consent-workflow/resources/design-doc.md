@@ -11,7 +11,7 @@ Streamline the process of managing consent requests using admin consent workflow
 
 intermediate
 
-## Products(s)
+## Product(s)
 
 - Azure active directory
 
@@ -48,7 +48,7 @@ Identify the subtasks of module title.
 
 1. Introduction
 
-Suppose you work as an IT admin for a retail company that focuses on integrating applications for the employees in your organization. To be as secure as possible, you have not allowed users to grant access to any applications in their tenant, which means only administrators can grant access to adding an application. Sometimes, your coworkers send you emails asking you to add applications they would like to use with their work accounts. Your email has been overwhelmed, and you’re having to research the permissions and information about each application. You hear about the admin consent workflow, which can field and track requests in the Azure portal and give trusted and up to date information for each application.
+Suppose you work as an IT admin for a retail company that focuses on integrating applications for the employees in your organization. To be as secure as possible, you haven't allowed users to grant access to any applications in their tenant, which means only administrators can grant access to adding an application. Sometimes, your coworkers send you emails asking you to add applications they would like to use with their work accounts. Your email has been overwhelmed, and you’re having to research the permissions and information about each application. You hear about the admin consent workflow, which can field and track requests in the Azure portal and give trusted and up to date information for each application.
 
 1. Choose a secure user consent setting
 
@@ -66,8 +66,9 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 
 1. Configure the admin consent workflow
 
-   1. How the admin consent workflow works
-   1. User consent experience
+   1. Consent setting options
+   1. Consent experience without admin consent workflow
+   1. Consent experience with admin consent workflow
 
 1. Exercise - Enable admin consent workflow
 
@@ -89,12 +90,12 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 1. Knowledge check
     1. How does enabling the admin consent workflow improve the user consent experience?
     1. What are the factors to consider when evaluating an admin consent request?
-    1. What options does and administrator or designated review have when responding to admin consent requests?
+    1. What options does an administrator or designated review have when responding to admin consent requests?
    1
 
 1. Summary
 
-As the IT administrator for your company, you restricted user access to applications by requiring each user to reach out to you in person when they need to be granted access. This enabled you to keep the organization's resources secure from malicious applications, but it was very difficult for you to keep up with the growing number of requests.
+As the IT administrator for your company, you restricted user access to applications by requiring each user to reach out to you in person when they need to be granted access. This user consent setting enabled you to keep the organization's resources secure from malicious applications, but it was difficult for you to keep up with the growing number of requests.
 
 In this module, you implemented the admin consent workflow that enables the users to request for admin consent right from the consent screen. You were able to view all the incoming requests and their details from the Azure portal and respond to them in a timely and more organized manner.
 
