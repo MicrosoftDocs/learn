@@ -2,13 +2,51 @@ Now let's put some of the data analysis principles amd techniques you've learned
 
 In this lab, you will analyze Rosie's lemonade sales, and create visualizations to help you gain insights from the data.
 
+## Before you start
+
+> [!NOTE]
+> If you have completed the previous module in this learning path, you can skip the **Before you start** section.
+
+If you do not already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at <a href="https://signup.live.com" target="_blank" rel="noopener noreferrer">https://signup.live.com</a>.
+
+### Upload the workbook to OneDrive
+
+1. In your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
+
+    :::image type="content" source="../media/onedrive.png" alt-text="OneDrive" lightbox="../media/onedrive.png":::
+
+2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
+3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
+
+    ```
+    https://github.com/MicrosoftLearning/mslearn-data-concepts/blob/main/labfiles/Lemonade.xlsx
+    ```
+
+    Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
+
+    :::image type="content" source="../media/upload-files.png" alt-text="Uploading a file" lightbox="../media/upload-files.png":::
+
+    After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
+
+    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Lemonade.xlsx in OneDrive" lightbox="../media/lemonade-xlsx.png":::
+
+### Open the workbook in Excel Online
+
+1. Click the **Lemonade.xlsx** file in your OneDrive folder to open it in Excel Online. When opened, it should look like this:
+
+    :::image type="content" source="../media/lemonade-workbook.png" alt-text="Lemonade workbook in Excel" lightbox="../media/lemonade-workbook.png":::
+
+2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as shown above. To see the dates, double-click the line between the **A** and **B** column headers. The dates will then be shown in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
+
+    :::image type="content" source="../media/widened-column.png" alt-text="Column A widened to show dates" lightbox="../media/widened-column.png":::
+
 ## Exercise 1: Analyze data with a PivotTable
 
 PivotTables are an excellent way to *slice and dice* data, summarizing numeric measures by one or more dimensions. In this exercise, you will use a PivotTable to view the lemonade data, aggregated in various ways.
 
 ### Create a PivotTable
 
-1. If you have not already done so, in your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the previous lab. Your workbook should look like this:
+1. If you have not already done so, in your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
     :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Lemonade workbook":::
 
