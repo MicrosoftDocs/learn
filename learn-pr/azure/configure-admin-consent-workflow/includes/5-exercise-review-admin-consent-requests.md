@@ -1,4 +1,4 @@
-As an IT administrator, you were becoming overwelmed by the number of consent request from users. Now you've enabled admin consent workflow that will enable you to view and respond to all the requests from a single location. In this exercise, as the designated reviewer, you sign in to the Azure portal, view and act on the admin consent request you created in unit 3 of this module.
+As an IT administrator, you were becoming overwhelmed by the number of consent requests from users. Now you've enabled admin consent workflow that will enable you to view and respond to all the requests from a single location. In this exercise, as the designated reviewer, you sign in to the Azure portal, view and act on the admin consent request you created in unit 3 of this module.
 
 ## Locate the requests in the Azure portal
 

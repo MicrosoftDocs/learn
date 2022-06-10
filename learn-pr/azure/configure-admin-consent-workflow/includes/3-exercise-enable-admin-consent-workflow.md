@@ -32,7 +32,7 @@ The single page application you created will submit a request to Microsoft Graph
 1. Select **Register** to create the application.
 
 1. On the **Spa-test** overview page, copy the values **Application (client) ID** and **Directory (tenant) ID**; you'll need these values later in this exercise.
-  :::image type="content" source="../media/3-new-app-reg-details.png" alt-text="Screen shot showing new app registration details":::
+  :::image type="content" source="../media/3-new-app-reg-details.png" alt-text="Screenshot showing new app registration details.":::
 1. Select **Manage > Authentication** in the left-hand navigation.
 
 1. On the **Authentication** page, select **Add a platform**. When the **Configure platforms** panel appears, select **Single-page application**.
@@ -52,8 +52,10 @@ Locate the `var msalConfig = {}` code in the **index.html** file. The `auth` obj
 1. Search for and select **Azure Active Directory**.
 1. Select **Enterprise applications**.
 1. Under **Manage**, select **User settings**.
-Under **Admin consent requests**,  select **Yes** for **Users can request admin consent to apps they are unable to consent to** .
-   :::image type="content" source="../media/3-enable-admin-consent-workflow.png" alt-text="Configure admin consent workflow settings":::
+Under **Admin consent requests**,  select **Yes** for **Users can request admin consent to apps they are unable to consent to**.
+
+   :::image type="content" source="../media/3-enable-admin-consent-workflow.png" alt-text="Screenshot of configure admin consent workflow settings blade.":::
+
 1. Configure the following settings:
 
    - **Who can review admin consent requests​** - Reviewers can view, block, or deny admin consent requests, but only global administrators can approve admin consent requests. People designated as reviewers can view incoming requests in the **My Pending** tab after they have been set as reviewers. Any new reviewers won't be able to act on existing or expired admin consent requests.
