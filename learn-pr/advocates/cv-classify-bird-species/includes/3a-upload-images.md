@@ -186,11 +186,11 @@ Follow these steps to create the virtual environment and paste code into the env
 
 1. Now, we’ll add the code for our main method. For each tag, the method calls the three functions we created. We loop through each tag (folder name) in the `tags` collection that we created from the folders in the bird-photos/custom-photos directory. Here are the steps in the `for` loop:
 
-   1. Call the `createTag` function, which we created in step 6a, to create the class `tag` in the Custom Vision project.
+   1. Call the `createTag` function, which you created earlier, to create the class `tag` in the Custom Vision project.
 
-   1. Call the `createImageList` function, which we created in step 6b, and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
+   1. Call the `createImageList` function, which you created earlier, and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
 
-   1. Call the `imageList` function, which we created in step 6c, to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision times out if we try to upload the entire dataset all at once.
+   1. Call the `imageList` function, which you created earlier, to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision times out if we try to upload the entire dataset all at once.
 
        ```python
        for tag in tags: 
