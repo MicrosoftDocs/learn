@@ -24,9 +24,22 @@ Microsoft Purview creates a storage account and an Azure Event Hubs account as m
 
 ## Microsoft Purview Data Map
 
-The Microsoft Purview Data Map is central to the Microsoft Purview service as it is responsible for storing and serving metadata, lineage, classifications, and other information associated with your data assets. The size of the Data Map is measured in Capacity Units, which are compute and storage units. There's no need to predetermine the number of Capacity Units required as Microsoft Purview will **auto-scale** up and down based on usage.
+Microsoft Purview Data Map provides the foundation for data governance and discovery in Microsoft Purview. The data map captures and organizes metadata from your data landscape so you can know what kind of data you’re storing and where.
+
+The data map is automatically kept up to date with built in scanning and classification, and it provides an interface that business users and developers can configure together to make a useable environment to discover and manage data.
+
+The data map powers all of Microsoft Purview’s other applications by housing the information, and providing access control.
 
 :::image type="content" source="../media/03.04-purview-data-map.png" alt-text="Microsoft Purview data map":::
+
+Inside the data map you'll find **collections**, which serve two functions:
+
+- Data organization - collections organize sources (like SQL or storage accounts) and their assets (like tables and files) into customized groups that reflect your business.
+- Access control - groups and users are assigned to roles in collections that allow you to manage who has access to your resources and assets.
+
+We'll discuss collections more deeply in the upcoming sections.
+
+Since the data map stored all your metadata, and provides the compute power to ingest this data, size of the Data Map is measured in Capacity Units, which are compute and storage units. There's no need to predetermine the number of Capacity Units required as Microsoft Purview will **auto-scale** up and down based on usage.
 
 ## Capacity Units
 

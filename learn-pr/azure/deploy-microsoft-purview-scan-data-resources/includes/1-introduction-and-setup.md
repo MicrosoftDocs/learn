@@ -2,6 +2,8 @@
 
 Microsoft Purview (formerly Azure Purview) is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS), and multi-cloud data. You can use Microsoft Purview to create a comprehensive, up-to-date map of your data landscape that will tell you what kind of data you've stored, and where. You can then use Microsoft Purview to govern this data with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, and a business glossary. Empower data consumers, data officers, data stewards, experts, and analytics admins to find valuable, trustworthy data and where it's located.
 
+:::image type="content" source="../media/microsoft-purview.png" alt-text="Microsoft Purview data map":::
+
 ### How does Microsoft Purview benefit an organization?
 
 Microsoft Purview helps chief data officers, data analysts, BI engineers, data stewards, governance experts and admins to answer these kinds of questions:
