@@ -14,7 +14,7 @@ Using Azure Arc-enabled SQL Managed Instance, you can enroll all of your databas
 
 The following chart compares management capabilities by deployment model:
 
-:::image type="content" source="../media/4a-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false":::
+:::image type="content" source="../media/4a-management-capabilities-by-deployment-model.png" alt-text="A chart that compares the management capabilities by deployment model." border="false" lightbox="../media/4a-management-capabilities-by-deployment-model-resized.png":::
 
 ## Connected and disconnected modes
 
