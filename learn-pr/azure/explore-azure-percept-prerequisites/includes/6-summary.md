@@ -14,7 +14,7 @@ You can learn more about these services from these resources:
 **Azure AI Services:** 
 
 - [Getting started with AI on Azure](/learn/modules/get-started-ai-fundamentals/)
-- [Explore Computer vision](learn/modules/train-evaluate-deep-learn-models/) 
+- [Explore Computer vision](/learn/paths/explore-computer-vision-microsoft-azure/) 
 
 **Other Azure Services** 
 
