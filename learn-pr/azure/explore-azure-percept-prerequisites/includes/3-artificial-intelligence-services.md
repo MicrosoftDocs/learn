@@ -15,7 +15,7 @@ Artificial Intelligence (AI) is the creation of software that imitates human beh
 
 **Introduction to Azure AI: Computer Vision**
 
-Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, though cameras, images, and videos. There are many specific types of computer vision problems AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions, including many cognitive services in Microsoft Azure.
+Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and videos. There are many specific types of computer vision problems AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions, including many cognitive services in Microsoft Azure.
 
 **Computer Vision enables you to:**
 

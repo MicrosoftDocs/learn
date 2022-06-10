@@ -38,7 +38,7 @@ Azure IoT Edge is a combination of a cloud service that runs in the cloud and a 
 
 - **Manage Edge devices:** IoT Edge provides a cloud interface and a runtime module which enables you to manage and deploy workloads to Edge devices remotely through the IoT Hub.
 - **Deploy using secure and certified hardware:** You can access certified IoT Edge hardware on Linux or Windows devices that support container engines.
-- **Distribute AI and analytics workloads to the edge:** You can deploy models built and trained in the cloud and run them on edge devices. IoT Edge uses these model to process data locally and respond to the event rapidly.
+- **Distribute AI and analytics workloads to the edge:** You can deploy models built and trained in the cloud and run them on edge devices. IoT Edge uses these models to process data locally and respond to the event rapidly.
 - **Provide security for edge deployments:** IoT Edge provides added security by integrating with Microsoft Defender for Cloud. Also, IoT Edge can make use of any hardware security modules, if available, to provide strong authenticated connections for confidential computing.
 
 *To learn more, see additional resources in the summary section.* 

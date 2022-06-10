@@ -1,4 +1,4 @@
-In this module, you learned the following: 
+In this module, you learned the followings: 
 
 - The prerequisites needed to build and deploy an Edge AI solution with Azure Percept. 
 - A basic understanding of Azure IoT and Artificial Intelligence (AI) Services concepts. 
