@@ -66,7 +66,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
       1. Enter a **Name** for your resource, using only alphanumeric characters and hyphens.
 
-   1. 1. Under **Training Resource**, set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
+      1. Under **Training Resource**, set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
 
    1. Under **Prediction Resource**, set **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
 
