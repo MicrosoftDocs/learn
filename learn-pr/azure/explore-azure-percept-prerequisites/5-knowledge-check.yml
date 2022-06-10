@@ -19,18 +19,18 @@ quiz:
       explanation: "The ability to deploy models on the Edge allows the model to process data locally and respond to the event rapidly"
     - content: "IoT Edge can optimize the network functionality"
       isCorrect: false
-      explanation: "The capabilities of the underlying network do not directly enable IoT Edge to run distributed workloads"
+      explanation: "The capabilities of the underlying network don't directly enable IoT Edge to run distributed workloads"
     - content: "IoT Edge can work with sensors on edge devices"
       isCorrect: false
       explanation: "The ability to connect to sensors doesn't enable IoT Edge  to run distributed workloads"
-  - content: "What is the main advantage of using Azure Cognitive services?"
+  - content: "What is the main advantage of using Azure Cognitive Services?"
     choices:
     - content: "Your models will run faster"
       isCorrect: false
-      explanation: "Your models wouldn't necessarily run faster without Azure Cognitive services"
+      explanation: "Your models wouldn't necessarily run faster without Azure Cognitive Services"
     - content: "You could gain access to prebuilt models"
       isCorrect: true
-      explanation: "Azure cognitive services enable you to access prebuilt models"
-    - content: "You could use any hardware"
+      explanation: "Azure Cognitive Services enable you to access prebuilt models"
+    - content: "You have to use specific hardware"
       isCorrect: false
-      explanation: "Azure cognitive services don't require the use of specific hardware"
+      explanation: "Azure Cognitive Services don't require the use of specific hardware"
