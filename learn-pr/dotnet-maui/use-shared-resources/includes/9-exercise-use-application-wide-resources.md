@@ -24,7 +24,7 @@ Let's verify that resources defined on one page aren't available on another page
 
 Let's create an application-wide resource dictionary to hold resources to use on multiple pages.
 
-1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. Navigate to the `Resources/Styls.xaml` to see the styles included by default.
+1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. Navigate to the `Resources/Styles.xaml` to see the styles included by default.
 
     ```XML
     <?xml version = "1.0" encoding = "UTF-8" ?>
