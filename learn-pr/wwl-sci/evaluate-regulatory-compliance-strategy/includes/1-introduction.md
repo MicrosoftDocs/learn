@@ -1,7 +1,7 @@
 
 Learn how to evaluate a regulatory compliance strategy for your organization and use the right set of tools to measure progress.
 
-### Learning Objectives 
+## Learning Objectives 
 
 In this module, you'll learn how to:
 
