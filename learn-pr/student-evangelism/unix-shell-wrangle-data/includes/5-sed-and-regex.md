@@ -94,10 +94,10 @@ Let's try the previous command again. This time, we'll write all content modifie
    You should see 26 lines of content in the new file.
 
 
-### Student exercise
+## Capstone exercise
 
 If you use the search box to look for the string "NASA" in the new file, you'll notice one remaining instance of the abbreviation. Our call to the `sed` command made only 26 substitutions.
    
 One line in the NASA-software-API.txt file had two instances of the "NASA" abbreviation. Our call to the `sed` command successfully replaced the first instance. The second instance of "NASA" appears within the term "NASAViz."
 
-Can you use the `sed` command to make this final replacement?
+Can you use the commands that we've reviewed to make this final replacement?

@@ -16,10 +16,10 @@ summary: Learn how to use the UNIX shell to wrangle data and inspect data files.
 abstract: |
   In this module, you'll learn how to:
   - Do basic file inspection with commands such as `head`, `tail`, `wc`, `less`, and `sort`.
-  - Use `cat` to create, append, display, and concatenate files.
-  - Write and use `regex` (regular expressions) for text pattern matching.
-  - Use `grep` to search files or `stdin` for pattern matching along with `regex`.
-  - Do basic text transformations on input streams by using `sed` and `regex`.
+  - Use the `cat` command to create, append, display, and concatenate files.
+  - Write and use regex (regular expressions) for text pattern matching.
+  - Use the `grep` command to search files, or `stdin` content for pattern matching along with regex.
+  - Do basic text transformations on input streams by using `sed` and regex.
   - Use pipes and filters for data wrangling.
 prerequisites: |
   - Basic knowledge of the command line and basic shell commands

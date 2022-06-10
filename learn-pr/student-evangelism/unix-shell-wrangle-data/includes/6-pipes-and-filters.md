@@ -104,7 +104,7 @@ Let's try some examples of pipes and filters with commands you learned in the pr
 These examples show how we can build many different pipelines with just a few commands.
 
 
-## Command and tool review
+### Command and tool review
 
 In this module, we briefly learned different kinds of tools and commands. This introduction should be enough to get you started with data wrangling in the UNIX shell.
 
