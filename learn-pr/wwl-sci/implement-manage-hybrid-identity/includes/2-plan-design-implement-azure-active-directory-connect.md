@@ -34,16 +34,16 @@ When you choose this authentication method, Azure AD handles users' sign-in proc
 
 - **Effort**. For pass-through authentication, you need one or more (we recommend three) lightweight agents installed on existing servers. These agents must have access to your on-premises Active Directory Domain Services, including your on-premises AD domain controllers. They need outbound access to the Internet and access to your domain controllers. For this reason, it's not supported to deploy the agents in a perimeter network.
 - **User experience**. To improve users' sign-in experience, deploy seamless SSO with pass-through authentication. Seamless SSO eliminates unnecessary prompts after users sign in.
-- **Advanced scenarios**. Pass-through authentication enforces the on-premises account policy at the time of sign-in. For example, access is denied when an on-premises user’s account state is disabled, locked out, or their password expires. Access can also be denied if the sign in attempt falls outside the hours when the user is allowed to sign in.
+- **Advanced scenarios**. Pass-through authentication enforces the on-premises account policy at the time of sign-in. For example, access is denied when an on-premises user’s account state is disabled, locked out, or their password expires. Access can also be denied if the sign-in attempt falls outside the hours when the user is allowed to sign in.
 - **Business continuity**. We recommend that you deploy two extra pass-through authentication agents. These extras are in addition to the first agent on the Azure AD Connect server. This deployment ensures high availability of authentication requests. When you have three agents deployed, one agent can still fail when another agent is down for maintenance.
-- **Considerations**. You can use password hash synchronization as a backup authentication method for pass-through authentication when the agents can't validate a user's credentials due to a significant on-premises failure. Fail over to password hash synchronization doesn't happen automatically and you must use Azure AD Connect to switch the sign in method manually.
+- **Considerations**. You can use password hash synchronization as a backup authentication method for pass-through authentication when the agents can't validate a user's credentials due to a significant on-premises failure. Fail over to password hash synchronization doesn't happen automatically and you must use Azure AD Connect to switch the sign-in method manually.
 
 ### Federated authentication
 
 When you choose this authentication method, Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password. The authentication system can provide other advanced authentication requirements. Examples are smartcard-based authentication or third-party multifactor authentication.
 
 - **Effort**. A federated authentication system relies on an external trusted system to authenticate users. Some companies want to reuse their existing federated system investment with their Azure AD hybrid identity solution. The maintenance and management of the federated system falls outside the control of Azure AD. It's up to the organization by using the federated system to make sure it's deployed securely and can handle the authentication load.
-- **User experience**. The user experience of federated authentication depends on the implementation of the features, topology, and configuration of the federation farm. Some organizations need this flexibility to adapt and configure the access to the federation farm to suit their security requirements. For example, it's possible to configure internally connected users and devices to sign in users automatically, without prompting them for credentials. This configuration works because they already signed into their devices. If necessary, some advanced security features make users' sign in process more difficult.
+- **User experience**. The user experience of federated authentication depends on the implementation of the features, topology, and configuration of the federation farm. Some organizations need this flexibility to adapt and configure the access to the federation farm to suit their security requirements. For example, it's possible to configure internally connected users and devices to sign in users automatically, without prompting them for credentials. This configuration works because they already signed into their devices. If necessary, some advanced security features make users' sign-in process more difficult.
 - **Advanced scenarios**. A federated authentication solution is required when customers have an authentication requirement that Azure AD doesn't support natively.
     
     - Authentication that requires smartcards or certificates.
@@ -98,7 +98,7 @@ The sourceAnchor attribute is defined as *an attribute immutable during the life
 The attribute value must follow the following rules:
 
 - Fewer than 60 characters in length
-    -  Characters not being a-z, A-Z, or 0-9 are encoded and counted as 3 characters
+    -  Characters not being a-z, A-Z, or 0-9 are encoded and counted as three characters
 - Not contain a special character: `\ ! # $ % & * + / = ? ^  { } | ~ > < ( ) ' ; : , [ ] " @ _`
 - Must be globally unique
 - Must be either a string, integer, or binary
@@ -110,7 +110,7 @@ If you have a single forest on-premises, the attribute you should use is **objec
 
 ## Azure AD sign-in
 
-The synchronization settings of your on-premises directory integration with Azure AD, can affect the way user authenticates. Azure AD uses userPrincipalName (UPN) to authenticate the user. However, when you synchronize your users, you must choose the attribute to be used for value of userPrincipalName carefully. When you're selecting the attribute for providing the value of UPN to be used in Azure one should ensure
+The synchronization settings of your on-premises directory integration with Azure AD can affect the way user authenticates. Azure AD uses userPrincipalName (UPN) to authenticate the user. However, when you synchronize your users, you must choose the attribute to be used for value of userPrincipalName carefully. When you're selecting the attribute for providing the value of UPN to be used in Azure one should ensure
 
 - The attribute values conform to the UPN syntax (RFC 822), the format username@domain
 - The suffix in the values matches to one of the verified custom domains in Azure AD
@@ -162,7 +162,7 @@ Azure AD Connect cloud sync is designed to accomplish hybrid identity goals for 
 - Support for synchronizing to an Azure AD tenant from a multi-forest disconnected Active Directory forest environment: The common scenarios include merger and acquisition. The acquired company's AD forests are isolated from the parent company's AD forests. The companies that have historically had multiple AD forests.
 - Simplified installation with light-weight provisioning agents: The agents act as a bridge from AD to Azure AD, with all the sync configuration managed in the cloud.
 - Multiple provisioning agents can be used to simplify high availability deployments, critical for organizations relying upon password hash synchronization from AD to Azure AD.
-- Support for large groups with up to 50K members. It's recommended to use only the OU scoping filter when synchronizing large groups.
+- Support for large groups with up to fifty-thousand members. It's recommended to use only the OU scoping filter when synchronizing large groups.
 
 :::image type="content" source="../media/azure-active-directory-cloud-sync.png" alt-text="Diagram of the process flow that shows on-premises Active Directory items like users and group being synchronized into the cloud by Cloud Sync.":::
 
