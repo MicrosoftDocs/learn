@@ -13919,6 +13919,31 @@
       "source_path": "learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/8-exercise-set-tenant-wide-properties.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/implement-initial-configuration-of-azure-active-directory/9-exercise-set-tenant-wide-properties",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/2-implement-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-paas-resources-using-automated-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/4-describe-azure-automation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-paas-resources-using-automated-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/3-use-azure-subscriptions-tag-azure-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-paas-resources-using-automated-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/5-build-automation-runbook.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-paas-resources-using-automated-methods/4-build-automation-runbook",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/6-describe-elastic-jobs-azure-sql-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-paas-resources-using-automated-methods/",
+      "redirect_document_id": false
     }
   ]
 }
