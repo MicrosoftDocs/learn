@@ -7,6 +7,8 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
 ## Option 1: Use the Custom Vision portal to upload and tag images
 
+The images must be uploaded and tagged individually by each subfolder. For this exercise, you might want to  upload images in only four or five of the subfolders depending on your upload speed. Keep in mind that when training a machine learning module, more and varied examples will yield better results.
+
 1. Create a project in the Custom Vision portal:
 
    1. Go to [https://www.customvision.ai/projects](https://www.customvision.ai/projects?azure-portal=true) and sign in. Select **New project**.

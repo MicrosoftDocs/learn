@@ -4,13 +4,13 @@ Visibility, automation, and orchestration integrations build robust solutions fo
 
 This guidance is for software providers and technology partners who want to enhance their visibility, automation, and orchestration security solutions by integrating with Microsoft products. 
 
-### Visibility, automation, and orchestration Zero Trust integration guide 
+## Visibility, automation, and orchestration Zero Trust integration guide 
 
 This integration guide includes instructions for integrating with [Microsoft Sentinel](/azure/sentinel). Microsoft Sentinel is Microsoft's cloud-native Security Information and Event Management (SIEM) service. Independent software vendors (ISVs) can integrate with Microsoft Sentinel to enable new use-cases for customers with data connectors, analytics rules, interactive workbooks, and automation playbooks to deliver end-to-end product or domain or industry vertical value for customers. 
 
 Azure operational security refers to the services, controls, and features available to users for protecting their data, applications, and other assets in Azure. Azure operational security is built on a framework that incorporates the knowledge gained through capabilities that are unique to Microsoft, including the Security Development Lifecycle (SDL), the Microsoft Security Response Center program, and deep awareness of the cybersecurity threat landscape. 
 
-#### Security Operations Tools 
+## Security Operations Tools 
 
 The following table contains Azure tools that a SOC team can use to investigate and remediate incidents. 
 
@@ -23,17 +23,17 @@ The following table contains Azure tools that a SOC team can use to investigate 
 | [Microsoft Sentinel](/azure/sentinel/overview) | Centralized Security Information and Event Management (SIEM) to get enterprise-wide visibility into logs. |
 | [Microsoft Defender for Cloud](/azure/security-center/security-center-intro) | Alert generation. Use a security playbook in response to an alert. |
 
-#### Security operations best practices for SIEM and SOAR 
+## Security operations best practices for SIEM and SOAR 
 
 Below are operational best practices for protecting your data, applications, and other assets in Azure. The best practices are based on a consensus, and they work with current Azure platform capabilities and feature sets.
 
-##### Receive incident notifications from Microsoft 
+### Receive incident notifications from Microsoft 
 
 Be sure security operations teams receive Azure incident notifications from Microsoft. An incident notification lets a security team know when there are compromised Azure resources so they can quickly respond to and remediate potential security risks. 
 
 The Azure enrollment portal admin contact information includes details that notify security operations. Contact information is an email address and phone number. 
 
-##### Monitor storage services for unexpected changes in behavior 
+### Monitor storage services for unexpected changes in behavior 
 
 Diagnosing and troubleshooting issues in a distributed application hosted in a cloud environment can be more complex than in traditional environments. Applications can be deployed in a PaaS or IaaS infrastructure, on-premises, on a mobile device, or some combination of these environments. An application's network traffic might traverse public and private networks using multiple storage technologies. 
 
@@ -41,7 +41,7 @@ Continuously monitor the storage services of application uses for any unexpected
 
 [Azure Storage Analytics](/azure/storage/common/storage-analytics) performs logging and provides metrics data for an Azure storage account. We recommend using this data to trace requests, analyze usage trends, and diagnose issues with storage accounts. 
 
-##### Prevent, detect, and respond to threats 
+### Prevent, detect, and respond to threats 
 
 Here are best practices for preventing, detecting, and responding to threats: 
 
@@ -71,7 +71,7 @@ The secure score, based on Center for Internet Security (CIS) controls, lets one
 
 **Detail:** [Enable the Microsoft Defender for Endpoint integration](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration) via a Defender for Cloud security policy. Consider using Microsoft Sentinel for threat hunting and incident response. 
 
-##### Monitor end-to-end scenario-based network monitoring 
+### Monitor end-to-end scenario-based network monitoring 
 
 Customers build an end-to-end network in Azure by combining network resources like a virtual network, ExpressRoute, Application Gateway, and load balancers. Monitoring is available on each of the network resources. 
 
@@ -91,7 +91,7 @@ The following are best practices for network monitoring and available tools.
 
 **Detail:** Use Network Watcher to [diagnose your most common VPN Gateway and connection issues](/azure/network-watcher/network-watcher-diagnose-on-premises-connectivity). You can not only identify the issue but also use detailed logs to further investigate. 
 
-##### Monitor Azure AD risk reports 
+### Monitor Azure AD risk reports 
 
 Most security breaches occur when attackers gain access to an environment by stealing a user's identity. Discovering compromised identities is no easy task. Azure AD uses adaptive machine learning algorithms and heuristics to detect suspicious actions related to user accounts. Each detected suspicious action is stored in a record called risk detection. Risk detections are recorded in Azure AD security reports. For more information, read about the users at risk security report and the risky sign-ins security report. 
 
@@ -99,7 +99,7 @@ Most security breaches occur when attackers gain access to an environment by ste
 
 **Detail:** Monitor for [users at risk](/azure/active-directory/identity-protection/overview-identity-protection) and [risky sign-ins](/azure/active-directory/identity-protection/overview-identity-protection) by using Azure AD security reports. 
 
-##### Architecture for Security Operations 
+### Architecture for Security Operations 
 
 The Security Operations Microsoft Reference Architecture describes how Microsoft's security capabilities integrate with Microsoft services and applications for Microsoft's Security Operations functions. 
 
