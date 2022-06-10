@@ -1,4 +1,4 @@
-### Summary and Resources
+
 
 In this module, you've learned how to build an overall security
 operations strategy with zero trust in mind. You have learned different
@@ -18,7 +18,7 @@ security strategy and architecture. You should now be able to:
 
 -   Evaluate security operations for technical threat intelligence
 
-#### Learn more with Azure documentation
+## Learn more with Azure documentation
 
 -   [Security operations in Azure](/security/compass/security-operations)
 
@@ -43,7 +43,7 @@ security strategy and architecture. You should now be able to:
 -   [Understand threat intelligence concepts in Microsoft Defender for
     Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-indicator-concepts?view=o365-worldwide&preserve-view=true)
 
-#### Learn more with self-paced training
+## Learn more with self-paced training
 
 -   [Plan for threat intelligence connectors - Learn](/learn/modules/connect-threat-indicators-to-azure-sentinel/2-plan-for-threat-intelligence-connectors)
 
