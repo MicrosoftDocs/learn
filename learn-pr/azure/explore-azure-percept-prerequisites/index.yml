@@ -29,3 +29,7 @@ products:
 units:
 - learn.oxford.explore-azure-percept-prerequisites.introduction
 - learn.oxford.explore-azure-percept-prerequisites.iot-services
+- learn.oxford.explore-azure-percept-prerequisites.artificial-intelligence-services
+- learn.oxford.explore-azure-percept-prerequisites.other-azure-services
+- learn.oxford.explore-azure-percept-prerequisites.knowledge-check
+- learn.oxford.explore-azure-percept-prerequisites.summary
