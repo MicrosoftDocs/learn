@@ -1,4 +1,4 @@
-# Grant the Microsoft Purview managed identity access
+## Grant the Microsoft Purview managed identity access
 
 To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 

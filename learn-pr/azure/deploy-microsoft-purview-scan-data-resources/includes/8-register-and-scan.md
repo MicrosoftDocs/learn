@@ -1,6 +1,3 @@
-
-# Register and scan
-
 Now that Fabrikam has a Microsoft Purview account and created some collections that reflect their business structure, the next step is to connect Microsoft Purview to their data sources.
 
 This connection is a two step process:

@@ -1,5 +1,3 @@
-# Exercise - Deploy a Microsoft Purview Account
-
 In this unit, you'll use the [Azure portal](https://portal.azure.com) to create a Microsoft Purview account.
 
 1. Sign in to the [Azure portal](https://portal.azure.com), expand the portal menu and select **Create a resource**.

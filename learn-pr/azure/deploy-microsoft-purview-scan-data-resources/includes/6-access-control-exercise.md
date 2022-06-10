@@ -1,5 +1,3 @@
-# Exercise - Access Control
-
 In this unit, you'll use the [Microsoft Purview governance portal](https://web.purview.azure.com/) to provide a user within your Azure Active Directory read access to the data map. You'll then create another collection.
 
 1. To open [Microsoft Purview governance portal](https://web.purview.azure.com/), you can use the link and select your account, or you can open the Azure portal, search for the Microsoft Purview account you created in the last session, and select **Open Microsoft Purview Governance Portal**.

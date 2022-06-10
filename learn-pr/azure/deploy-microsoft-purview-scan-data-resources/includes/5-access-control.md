@@ -1,5 +1,3 @@
-# Collections and Access Control
-
 Now that you've created your Microsoft Purview account, we'll need to consider organization of your Data Map, and how users will access the account.
 
 At the core of your new account, the Microsoft Purview Data Map keeps an up-to-date map of your data assets (tables, files, etc...) and their metadata. To build this data map, you'll register and scan data sources into this map. In an organization there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.

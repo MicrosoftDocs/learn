@@ -1,5 +1,3 @@
-# Deploy a Microsoft Purview account
-
 You've been requested by Fabrikam to deploy a Microsoft Purview account to their Azure environment to create a proof of concept. In this unit, we'll cover configuration settings, account concepts, and key considerations for deployment.
 
 ## Microsoft Purview account name
