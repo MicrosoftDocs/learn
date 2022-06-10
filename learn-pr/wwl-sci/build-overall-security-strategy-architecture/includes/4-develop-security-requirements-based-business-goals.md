@@ -1,6 +1,10 @@
 
 The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. Microsoft has created a [Cloud Adoption Framework](/azure/cloud-adoption-framework/) to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measures.
 
+For an overview of the Cloud Adoption Framework, view the following video:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEA1P]
+
 ## Cloud Adoption Framework
 
 As mentioned in the video, Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
@@ -11,7 +15,7 @@ As mentioned in the video, Cloud Adoption Framework consists of tools, documenta
 -  Adopt the cloud
 -  Govern and manage your cloud environments
 
-![Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage.](../media/cloud-adoption-framework.png)
+:::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage." lightbox="../media/cloud-adoption-framework.png":::
 
 The govern stage focuses on cloud governance. You can refer to the Cloud Adoption Framework for recommended guidance as you build your cloud governance strategy.
 
@@ -66,7 +70,7 @@ Here are the steps in the innovate process of this stage:
 1. **Best practices**: Verify that your progress maps to recommended practices before moving forward.
 1. **Feedback loops**: Check in frequently with your customers to verify that you're building what they need.
 
-#### Govern and manage your cloud environments
+### Govern and manage your cloud environments
 
 Here, you begin to form your cloud governance and cloud management strategies. As the cloud estate changes over time, so do cloud governance processes and policies. You need to create resilient solutions that are constantly optimized.
 
