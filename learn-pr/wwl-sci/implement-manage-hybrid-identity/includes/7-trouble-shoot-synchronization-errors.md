@@ -217,7 +217,7 @@ An **Existing Admin Role Conflict** will occur on a user object during synchroni
 -  administrative permissions and
 -  the same UserPrincipalName as an existing Azure AD object
 
-Azure AD Connect is not allowed to soft match a user object from on-premises AD with a user object in Azure AD that has an administrative role assigned to it.
+Azure AD Connect is not allowed to soft-match a user object from on-premises AD with a user object in Azure AD that has an administrative role assigned to it.
 
 :::image type="content" source="../media/exist-admin.png" alt-text="Screenshot of the Azure AD Connect screen with the Existing Admin field selected.":::
 
@@ -231,4 +231,4 @@ To resolve this issue do the following:
 4.  Restore the role memberships for the owner.
 
 > [!NOTE]
-> You can assign the administrative role to the existing user object again after the soft match between the on-premises user object and the Azure AD user object has completed.
+> You can assign the administrative role to the existing user object again after the soft-match between the on-premises user object and the Azure AD user object has completed.
