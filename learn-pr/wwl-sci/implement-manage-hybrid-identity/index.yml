@@ -2,14 +2,14 @@
 uid: learn.wwl.implement-manage-hybrid-identity
 metadata:
   title: Implement and manage hybrid identity
-  description: "Creating a hybrid-identity solution to leverage your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution."
+  description: "Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution."
   ms.date: 06/10/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement and manage hybrid identity
-summary: Creating a hybrid-identity solution to leverage your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution.
+summary: Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution.
 abstract: |
   By the end of this module you will be able to:
   - Plan, design, and implement Azure Active Directory Connect (AADC)

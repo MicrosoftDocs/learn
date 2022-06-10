@@ -42,7 +42,7 @@ Before you install the agent, make sure your AD FS server host name is unique an
 
 After the installation finishes, select **Configure Now**.
 
-:::image type="content" source="../media/install-2.png" alt-text="Screenshot of the installation window for the the confirmation message for the Azure AD Connect Health A D F S agent installation.":::
+:::image type="content" source="../media/install-2.png" alt-text="Screenshot of the installation window for the confirmation message for the Azure AD Connect Health A D F S agent installation.":::
 
 A PowerShell window opens to start the agent registration process. When you're prompted, sign in by using an Azure AD account that has permissions to register the agent. By default, the global admin account has permissions.
 
