@@ -306,7 +306,7 @@ You're now back at your Cloud Shell session.
 
     Although this is standard HTML code, the `ng-` HTML attributes may be unfamiliar to you. These HTML attributes wire up the AngularJS code to the user interface. For example, when you select **Add**, AngularJS calls the `add_book` function, which sends the form data to the server.
 
-    You can examine the code here to get a sense of how each of the `ng-` attributes relate to application's business logic.
+    You can examine the code here to get a sense of how each of the `ng-` attributes relates to application's business logic.
 
 ### Create the Express.js server to host the application
 
