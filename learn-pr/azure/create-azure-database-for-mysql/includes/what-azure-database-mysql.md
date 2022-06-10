@@ -15,7 +15,7 @@ In addition, Flexible Server supports secure connectivity from the internet by h
 
 #### Compute
 
-*Azure Database for MySQL* Flexible Server is available in three compute tiers, with each tier geared towards a specific use case:
+*Azure Database for MySQL Flexible Server* is available in three compute tiers, with each tier geared towards a specific use case:
 
 - Burstable (for development or hobby projects)
 - General Purpose (for medium and large production workloads)
@@ -67,7 +67,7 @@ You access the network connectivity options from the Azure portal’s **Flexible
 
 #### High availability
 
-Azure Database for MySQL Flexible Server supports high availability with automatic failover. This helps ensure that you never lose committed data as a result of localized failures. Once enabled, the platform automatically provisions and manages a standby replica.
+Azure Database for MySQL - Flexible Server supports high availability with automatic failover. This helps ensure that you never lose committed data as a result of localized failures. Once enabled, the platform automatically provisions and manages a standby replica.
 
 There are two high-availability architectural models, depending on the replica’s placement:
 
@@ -78,13 +78,13 @@ The single availability option is intended for scenarios in which minimizing lat
 
 #### Business continuity
 
-Azure Database for MySQL Flexible Server automatically creates point-in-time backups of its databases and retains them in the locally redundant storage for up to 35 days. When configuring backup, you can choose between the locally redundant and geo-redundant backup redundancy options. The latter allows you to recover from an outage affecting an entire Azure region.
+Azure Database for MySQL - Flexible Server automatically creates point-in-time backups of its databases and retains them in the locally redundant storage for up to 35 days. When configuring backup, you can choose between the locally redundant and geo-redundant backup redundancy options. The latter allows you to recover from an outage affecting an entire Azure region.
 
 Azure Database for MySQL also supports managed maintenance windows intended for automated server patching, which facilitates business continuity. By specifying a custom patching schedule, you can minimize the impact of a temporary downtime resulting from the server restart.
 
 #### Cost optimization
 
-Azure Database for MySQL Flexible Server offers numerous cost-optimization capabilities:
+Azure Database for MySQL - Flexible Server offers numerous cost-optimization capabilities:
 
 - Granular control over compute and storage configuration. You can configure the majority of server configuration options independently of each other, which allows you to optimize your deployment costs, based on your objectives and its intended use case. For example, you can adjust your individual options for:
 
@@ -95,7 +95,6 @@ Azure Database for MySQL Flexible Server offers numerous cost-optimization capab
   - Its IOPS
 
   - The backup retention period
-
 To configure these options, go to the Azure portal’s **Flexible server deployment** page, **Compute + storage** tab.
 
 - The ability to stop and start the server on-demand. The compute tier billing is stopped as soon as you stop the server. This can allow you to minimize costs during development, testing, and for production workloads with a reliably predictable schedule.
@@ -109,4 +108,3 @@ To configure these options, go to the Azure portal’s **Flexible server deploym
   - 750 hours of Burstable B1MS instance, enough hours to run a database instance continuously each month.
 
   - 32 GB storage and 32 GB backup storage.
-
