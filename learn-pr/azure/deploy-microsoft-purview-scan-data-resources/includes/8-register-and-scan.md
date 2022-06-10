@@ -67,10 +67,11 @@ Once you've decided on authentication method and gathered the connection informa
 
 Initially, you'll be able to input your credentials and test your connection.
 
-Once your credentials are successfully validated, it's time to set up your scan. Scanning has three parts: 
-    - Scope
-    - Rule set
-    - Schedule
+Once your credentials are successfully validated, it's time to set up your scan. Scanning has three parts:
+
+- Scope
+- Rule set
+- Schedule
 
 #### Scope
 

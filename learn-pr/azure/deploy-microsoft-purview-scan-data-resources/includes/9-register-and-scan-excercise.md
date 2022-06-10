@@ -80,12 +80,15 @@ At this point, we've registered a data source. Assets aren't written to the cata
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.29-sources-details.png" alt-text="Screenshot of the Microsoft Purview governance portal with the data map selected in the left menu, then sources. Sources is open to the map view, and the View Details button is highlighted on the tile of the data source we registered and scanned in the previous steps.":::
 
-1. Select **Refresh** to periodically update the status of the scan.
+1. Select **Refresh** to periodically update the status of the scan and wait until it says completed.
 
     >[!Note]
     > It will take 5 to 10 minutes to complete.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.30-sources-refresh.png" alt-text="Screenshot of the Microsoft Purview governance portal, with Data Map selected, then sources, showing a screen of the source view details page. The refresh button in the middle of the page is highlighted.":::
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.31-sources-refresh.png" alt-text="Screenshot of the Microsoft Purview governance portal, with Data Map selected, then sources, showing a screen of the source view details page, where the status now shows as Complete.":::
+
 
 ## View Assets
 
