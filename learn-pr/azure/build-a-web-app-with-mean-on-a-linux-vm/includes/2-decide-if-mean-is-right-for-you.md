@@ -18,6 +18,10 @@ The components of the MEAN stack are all popular right now. Resources for workin
 
 You can also develop MEAN stack applications from your favorite development environment &ndash; whether that's Windows, macOS, or Linux.
 
+**MEAN is scalable**
+
+In addition to being cross platform, MEAN stack applications can be scaled out and easily tested for accelerated growth in enterprise environments and offer high performance.
+
 ## Why might MEAN not be right for me?
 
 Here are some reasons you might want to choose a development stack other than MEAN.
