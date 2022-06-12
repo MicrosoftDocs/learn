@@ -38,17 +38,17 @@ After creating and running a pipeline to train the model, you need a second pipe
     - Delete the connection between the **Score Model** module and the **Web Service Output**.
     - Add an **Execute Python Script** module from the **Python Language** section, replacing all of the default python script with the following code (which selects only the **PatientID**, **Scored Labels** and **Scored Probabilities** columns and renames them appropriately):
 
-        ```Python
-        import pandas as pd
+```Python
+import pandas as pd
 
-        def azureml_main(dataframe1 = None, dataframe2 = None):
+def azureml_main(dataframe1 = None, dataframe2 = None):
 
-            scored_results = dataframe1[['PatientID', 'Scored Labels', 'Scored Probabilities']]
-            scored_results.rename(columns={'Scored Labels':'DiabetesPrediction',
-                                        'Scored Probabilities':'Probability'},
-                                inplace=True)
-            return scored_results
-        ```
+    scored_results = dataframe1[['PatientID', 'Scored Labels', 'Scored Probabilities']]
+    scored_results.rename(columns={'Scored Labels':'DiabetesPrediction',
+                                'Scored Probabilities':'Probability'},
+                        inplace=True)
+    return scored_results
+```
 
     - Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 9. Verify that your pipeline looks similar to the following image:
@@ -56,6 +56,6 @@ After creating and running a pipeline to train the model, you need a second pipe
     ![A visual inference pipeline](../media/visual-inference.png)
 
 10. Run the pipeline as a new experiment named **mslearn-diabetes-inference** on your compute cluster. The experiment may take a while to run.
-11. When the pipeline has finished, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
+11. When the pipeline has completed, select **Job details**. In the new window, right click the **Execute Python Script** module. Select the **Preview Data** and select **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
 Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.
