@@ -1,21 +1,7 @@
 
-Learn how to evaluate your organization's security posture and recommend the technical strategies to manage risk.
-
-### Learning Objectives 
-
-In this module, you'll learn how to:
-
--   Evaluate security postures by using benchmarks
--   Evaluate security postures by using Microsoft Defender for Cloud
--   Evaluate security postures by using Secure Scores
--   Evaluate security hygiene of Cloud Workloads
--   Design security for an Azure Landing Zone
--   Interpret technical threat intelligence and recommend risk mitigations
--   Recommend security capabilities or controls to mitigate identified risks
-
-### Posture management and the Security operating model 
-
 Governance in the cloud age must have an active component that continuously engages with other teams. Security posture management is an emerging function. It represents a step forward in the long-term convergence of security functions. These functions answer the question "how secure is the environment?", including vulnerability management and security compliance reporting. 
+
+## Posture management and the Security operating model 
 
 In the on-premises world, security governance followed the cadence of data it could get about the environment. This way of getting data might take time and be constantly out of date. Cloud technology now provides on-demand visibility into the current security posture and asset coverage. This visibility drives a major transformation of governance into a more dynamic organization. This organization provides a closer relationship to other security teams to monitor security standards, provide guidance, and improve processes. In its ideal state, governance is the heart of continuous improvement. This improvement engages across your organization to constantly improve security posture, which is called Posture Management and it fits in the overall security governance as shown in the diagram below: 
 
@@ -71,7 +57,7 @@ that must be in place to improve its security hygiene. Make sure to
 visit <https://aka.ms/MyASIS> for more information about security best
 practices for Azure workloads.
 
-### Evaluating security posture in Azure workloads
+## Evaluating security posture in Azure workloads
 
 One option to evaluate the security posture of your workloads is by
 using Azure Security Benchmark (ASB), which is widely used by

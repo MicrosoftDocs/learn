@@ -8,10 +8,7 @@ In this module, you'll learn how to:
 - Evaluate security operations for technical threat intelligence  
 - Monitor sources for insights on threats and mitigations. Develop Integration points in an architecture. 
  
-The content in the module will help you prepare for Exam SC-100: Cybersecurity Architect. The module concepts are covered in: 
-
-- Design a Zero Trust Strategy and Architecture 
-- Design a Security Operations Strategy 
+The content in the module will help you prepare for exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites 
 
