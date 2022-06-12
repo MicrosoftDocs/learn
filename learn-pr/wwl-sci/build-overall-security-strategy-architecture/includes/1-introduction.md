@@ -8,12 +8,7 @@ In this module, you'll learn how to:
 - Design security strategy for hybrid and multi-tenant environments
 - Design technical and governance strategies for traffic filtering and segmentation
 
-The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect. The module concepts are covered in:
-
-- Design a Zero Trust strategy and architecture
-- Build an overall security strategy and architecture
-- Design a security operations strategy
-- Design an identity security strategy
+The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 
