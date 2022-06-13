@@ -70,7 +70,7 @@ With these foundational principles in place, we began developing more scenario-s
 
 |Resource type|Details|
 |---|---|
-|<br>Technologies|<ul><li>The [Data Drift Monitoring](/azure/machine-learning/service/concept-data-drift) feature in [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) detects changes in the distribution of data that may cause degraded prediction performance, enabling developers to maintain accuracy by adapting the model to reflect changing data.</li></ul>|
+|<br>Technologies|<ul><li>The [Data Drift Monitoring](/azure/machine-learning/how-to-enable-data-collection) feature in [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) detects changes in the distribution of data that may cause degraded prediction performance, enabling developers to maintain accuracy by adapting the model to reflect changing data.</li></ul>|
 |<br>Tools|<ul><li>[Pandora](https://docs.wixstatic.com/ugd/1acfaf_4b2b106eaf6a40a89185eccacf822ea1.pdf) is a debugging framework designed by Microsoft Research to identify reliability and bias problems within machine learning models. It uses interpretable machine learning techniques, such as decision trees, to discover patterns and identify potential issues.</li><li> Microsoft [AirSim](https://github.com/microsoft/AirSim) is a valuable open-source tool for improving simulated training environments.</li></ul>|
 
 ### Transparency
@@ -78,7 +78,7 @@ With these foundational principles in place, we began developing more scenario-s
 |Resource type|Details|
 |---|---|
 |<br>Open-source code|<ul><li>[InterpretML](https://www.microsoft.com/research/blog/creating-ai-glass-boxes-open-sourcing-a-library-to-enable-intelligibility-in-machine-learning/) is an open-source package created by Microsoft Research for training interpretable models and explaining black box systems. It implements many intelligible models including Explainable Boosting Machine (EBM), an improvement over generalized additive models that has both high accuracy and intelligibility.  It also supports several methods for generating explanations of black box model behavior or predictions including 'SHapley Additive exPlanations' (SHAP) and 'Local Interpretable Model-agnostics Explanations' (LIME).</li></ul>|
-|<br>Technologies|<ul><li>[Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) has various tools that support model transparency. The [Model Interpretability](/azure/machine-learning/service/machine-learning-interpretability-explainability) feature enables model designers and evaluators to explain why a model makes the predictions it does, which can be used to debug the model, validate that its behavior matches objectives, and check for bias.</li></ul>|
+|<br>Technologies|<ul><li>[Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) has various tools that support model transparency. The [Model Interpretability](/azure/machine-learning/how-to-machine-learning-interpretability) feature enables model designers and evaluators to explain why a model makes the predictions it does, which can be used to debug the model, validate that its behavior matches objectives, and check for bias.</li></ul>|
 
 ### Accountability
 
@@ -101,7 +101,7 @@ With these foundational principles in place, we began developing more scenario-s
 10. [Microsoft, "Securing the future of AI and machine learning at Microsoft." Andrew Marshall, 7 February 2019.](https://www.microsoft.com/security/blog/2019/02/07/securing-the-future-of-ai-and-machine-learning-at-microsoft/)  
 11. [Microsoft, "Microsoft SEAL."](https://www.microsoft.com/research/project/microsoft-seal/)
 12. [Microsoft, "AI security risk assessment using Counterfit." Will Pearce, Ram Shankar Siva Kumar, 3 May 2021.](https://www.microsoft.com/security/blog/2021/05/03/ai-security-risk-assessment-using-counterfit)
-13. [Microsoft, "Use differential privacy in Azure Machine Learning."](https://docs.microsoft.com/azure/machine-learning/how-to-differential-privacy)
+13. [Microsoft, "Use differential privacy in Azure Machine Learning."](/azure/machine-learning/how-to-differential-privacy)
 14. [Microsoft, Presidio.](https://presidio-demo.azurewebsites.net/) 
 15. [Microsoft, "Azure confidential computing."](https://azure.microsoft.com/solutions/confidential-compute/)
 16. [National Science Foundation, "A Private Data Sharing Interface."](https://privacytools.seas.harvard.edu/publications/psipaper)

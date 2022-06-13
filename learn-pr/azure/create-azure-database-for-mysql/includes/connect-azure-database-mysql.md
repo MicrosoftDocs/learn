@@ -2,11 +2,11 @@ Now that you’ve reviewed the deployment and connectivity options of Azure Data
 
 ### Connect to an Azure Database for MySQL flexible server
 
-From the Azure Cloud Shell in the Azure portal, use the following procedure to connect to and query the newly deployed Azure Database for MySQL flexible server:
+From the Azure Cloud Shell, use the following procedure to connect to and query the newly deployed Azure Database for MySQL flexible server:
 
-1. on the page for your Azure Database for MySQL flexible server, select **Overview**.
+1. On the page for your Azure Database for MySQL flexible server, select **Overview**.
 
-2. On the **Overview** pane, note the value of **Server name**. You will need this fully qualified server name to establish a connection.
+2. On the **Overview** pane, note the value of **Server name**. You'll need this fully qualified server name to establish a connection.
 
 3. To verify that your network configuration will allow connectivity from Azure Cloud Shell, under **Settings**, select **Networking**.
 

@@ -5,8 +5,8 @@ Having a general understanding of Azure Database for MySQL Flexible Server capab
 
 In addition, you need to be aware of the dependencies between some configuration settings. In particular:
 
-- Disabling storage auto-grow is not supported for servers with high availability enabled.
-- High availability is not supported in the Burstable tier, although you have the option to deploy the server into a specific availability zone.
+- Disabling storage auto-grow isn't supported for servers with high availability enabled.
+- High availability isn't supported in the Burstable tier, although you have the option to deploy the server into a specific availability zone.
 
 ### How to deploy an Azure Database for MySQL Flexible Server
 
@@ -60,4 +60,4 @@ After you address the networking and certificate requirements, you should be abl
 - A number of programming languages, such as Python, PHP, C#, C++, Java, JavaScript, and Ruby.
 
 > [!NOTE]
-> For more information regarding connecting to Azure Database for MySQL Flexible Server programmatically, refer to the [**Microsoft technical documentation**](https://docs.microsoft.com) webpage.
+> For more information regarding connecting to Azure Database for MySQL Flexible Server programmatically, see the [**Microsoft technical documentation**](/) webpage.
