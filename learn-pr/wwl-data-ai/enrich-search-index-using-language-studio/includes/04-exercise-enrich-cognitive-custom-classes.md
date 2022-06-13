@@ -525,7 +525,7 @@ You now have fields to store the enrichment, a skillset to call your function ap
 
     You might need to select **Refresh** to update the status of the indexer.
 
-## Test you enriched search index
+## Test your enriched search index
 
 1. At the top of the page, select the search service, for example **acs18245-search-service**.
 
