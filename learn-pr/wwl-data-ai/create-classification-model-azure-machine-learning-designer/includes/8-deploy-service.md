@@ -45,6 +45,6 @@ After you've created and tested an inference pipeline for real-time inferencing,
 > [!NOTE]
 > The JSON above defines features for a patient, and uses the **predict-diabetes** service you created to predict a diabetes diagnosis.
 
-3. Select **Test**. On the right hand of the screen, you should see the output **'predicted_price'**. The output is the predicted price for a vehicle with the particular input features specified in the data. 
+3. Select **Test**. On the right hand of the screen, you should see the output **'diabetic'**. The output is 1 if the patient is predicted to have diabetes, and 0 if the patient is predicted not to have diabetes.
 
     ![Screenshot of the Test pane.](../media/test-interface.png)

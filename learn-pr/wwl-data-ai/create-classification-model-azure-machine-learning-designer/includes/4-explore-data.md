@@ -40,11 +40,11 @@ To get started with Azure Machine Learning designer, first you must create a pip
 ![Screenshot of the Machine Learning Studio Settings pane.](../media/create-pipeline-help.png)
 
 ### Load data to canvas 
-1. Next to the pipeline name on the left, select the button **>>** to expand the panel. if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Below the **Tags** and **Filter** buttons, there are two icons next to each other. Hover your mouse over the first cylinder icon (on the left) to see that it represents **Data Assets**. Hover your mouse over the second chart icon (on the right) to see that it represents **Components**. 
+1. Next to the pipeline name on the left, select the  **>>** icon to expand the panel if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Notice two buttons, **Data** and **Components**. 
 
     ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
-2. Click on the cylinder icon for **Data Assets**. Drag the **diabetes-data** dataset onto the canvas.
+2. Click on **Data**. Search for and place the **diabetes-data** dataset onto the canvas.
 3. Right-click (Ctrl+click on a Mac) the **diabetes-data** dataset on the canvas, and click on **Preview data**. 
 4. Review the *Profile* schema of the data, noting that you can see the distributions of the various columns as histograms.
 5. Scroll down and select the column heading for the **Diabetic** column, and note that it contains two values **0** and **1**. These values represent the two possible classes for the *label* that your model will predict, with a value of **0** meaning that the patient does not have diabetes, and a value of **1** meaning that the patient is diabetic.
@@ -57,7 +57,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 
 Before you can train a model, you typically need to apply some preprocessing transformations to the data.
 
-1. In the **Asset Library** pane on the left, click on the squares icon to access **Components**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
+1. In the **Asset Library** pane on the left, click on **Components**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
 
     ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
 
