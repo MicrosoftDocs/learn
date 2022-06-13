@@ -1,6 +1,8 @@
 Azure Synapse Analytics allows you to create, control, and manage resource availability when workloads are competing. This allows you to manage the relative importance of each workload when waiting for available resources.
 
 To facilitate faster load times, you can create a workload classifier for the load user with the “importance” set to above_normal or High. Workload importance ensures that the load takes precedence over other waiting tasks of a lower importance rating. Use this in conjunction with your own workload group definitions for workload isolation to manage minimum and maximum resource allocations during peak and quiet periods.
+  [!NOTE]
+  Workload management is the process of allowing administrators to control certain aspects of the warehouse to perform at optimal levels when executing task such as load, transforming. Querying the data, although important, should have a dependent step after the completion of traditional warehousing activities.
 
 Dedicated SQL pool workload management in Azure Synapse consists of three high-level concepts: 
 -	Workload Classification
