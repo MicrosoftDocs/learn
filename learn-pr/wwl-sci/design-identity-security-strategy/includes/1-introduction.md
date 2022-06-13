@@ -8,11 +8,7 @@ In this module, you'll learn how to:
 -   Design a security strategy for privileged role access to infrastructure
 -   Design a security strategy for privileged access
 
-The content in the module will help you prepare for Exam SC-100:
-Cybersecurity Architecture. The module concepts are covered in:
-
--  Design a Zero Trust Strategy and Architecture
--  Design an Identity Security Strategy
+The content in the module will help you prepare for exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 
