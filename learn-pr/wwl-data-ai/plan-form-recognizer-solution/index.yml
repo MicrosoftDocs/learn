@@ -3,7 +3,7 @@ uid: learn.wwl.plan-form-recognizer-solution
 metadata:
   title: Plan a Form Recognizer solution
   description: "Learn how to use Azure Forms Analyzer to build solutions that analyze forms and output data for storage or further processing."
-  ms.date: 06/08/2022
+  ms.date: 06/13/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
