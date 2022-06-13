@@ -13949,6 +13949,36 @@
       "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/13-exercise-set-up-release-gate.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-release-strategy-recommendations/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-high-quality-release-pipeline/3-explore-how-to-measure-quality-of-your-release-process.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-high-quality-release-pipeline/2-explore-how-to-measure-quality-of-your-release-process",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-high-quality-release-pipeline/2-understand-release-process-versus-release.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-high-quality-release-pipeline/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-high-quality-release-pipeline/4-use-release-gates-to-protect-quality.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-high-quality-release-pipeline/3-use-release-gates-to-protect-quality",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-high-quality-release-pipeline/5-examine-release-notes-documentation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-high-quality-release-pipeline/4-examine-release-notes-documentation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-high-quality-release-pipeline/6-examine-considerations-for-choosing-release-management-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-high-quality-release-pipeline/5-examine-considerations-for-choosing-release-management-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-high-quality-release-pipeline/7-explore-common-release-management-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-high-quality-release-pipeline/6-explore-common-release-management-tools",
+      "redirect_document_id": true
     }
   ]
 }
