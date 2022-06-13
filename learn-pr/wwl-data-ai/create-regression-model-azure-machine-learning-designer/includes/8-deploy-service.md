@@ -7,21 +7,20 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
 2. Select **Job detail** on the left hand pane. This will open up another window. 
-> ![Click on job details next to the completed job. ](../media/completed-job-inference.png)
+    ![Screenshot of job details next to the completed job. ](../media/completed-job-inference.png)
 3. In the new window, select **Deploy**.
-> ![Locate the deploy button for your Predict Auto Price inference pipeline.](../media/deploy-screenshot.png)
+    ![Screenshot of the deploy button for your Predict Auto Price inference pipeline.](../media/deploy-screenshot.png)
 4. In the configuration screen, select **Deploy a new real-time endpoint**, using the following settings:
     -  **Name**: predict-auto-price
     -  **Description**: Auto price regression
     - **Compute type**: Azure Container Instance
 
-4. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
+5. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service
 
->![Screenshot of the location of the Endpoints option on the left-hand pane.](../media/endpoints-screenshot.png)
-
 1. On the **Endpoints** page, open the **predict-auto-price** real-time endpoint.
+    ![Screenshot of the location of the Endpoints option on the left-hand pane.](../media/endpoints-screenshot.png)
 2. When the **predict-auto-price** endpoint opens, select the **Test** tab. We will use it to test our model with new data. Delete the current data under **Input data to test real-time endpoint**. Copy and paste the below data into the data section:  
 
 ```json
@@ -64,4 +63,4 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 3. Select **Test**. On the right hand of the screen, you should see the output **'predicted_price'**. The output is the predicted price for a vehicle with the particular input features specified in the data. 
 
->![Screenshot of the Test pane.](../media/test-interface.png)
+    ![Screenshot of the Test pane.](../media/test-interface.png)
