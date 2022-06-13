@@ -6,7 +6,7 @@ This unit combines the last two exercises as you evaluate Azure App Service on K
 1. Delete the AKS resource group.
 
 > [!NOTE]
-> The sample application you'll deploy is intentionally very simplistic. This exercise's primary purpose is to demonstrate deployment methodology. However, you can use the same approach when deploying more complex apps (the file size limit is 2048 megabytes (MB). For more information, refer to the Microsoft Docs article [Deploy your app to Azure App Service with a ZIP or WAR file](https://docs.microsoft.com/azure/app-service/deploy-zip).
+> The sample application you'll deploy is intentionally very simplistic. This exercise's primary purpose is to demonstrate deployment methodology. However, you can use the same approach when deploying more complex apps (the file size limit is 2048 megabytes (MB). For more information, refer to the Microsoft Docs article [Deploy your app to Azure App Service with a ZIP or WAR file](/azure/app-service/deploy-zip).
 
 > [!NOTE]
 > This exercise illustrates a code-based deployment. Azure App Service on Kubernetes with Azure Arc also supports container-based deployments.
