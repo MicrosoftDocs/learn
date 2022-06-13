@@ -1,13 +1,9 @@
 
-The Microsoft Cybersecurity Reference Architectures (MCRA) describe Microsoft's cybersecurity capabilities. The reference architectures describe how Microsoft security capabilities integrate with Microsoft services and applications, Microsoft cloud platforms such as Azure and Microsoft 365 third party apps such as ServiceNow and Salesforce, and third party platforms such as Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+The [Microsoft Cybersecurity Reference Architectures (MCRA)](https://docs.microsoft.com/security/cybersecurity-reference-architecture/mcra) describe Microsoft's cybersecurity capabilities. The reference architectures describe how Microsoft security capabilities integrate with Microsoft services and applications, Microsoft cloud platforms such as Azure and Microsoft 365, third party apps such as ServiceNow and Salesforce, and third party platforms such as Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
 The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, Azure native security controls, and security organizational functions.
 
-![Diagram that shows Microsoft Cybersecurity Reference Architectures (MCRA).](../media/microsoft-cybersecurity-reference-architectures.png) 
-
 The MCRA also includes an overview of Zero Trust and a Zero Trust rapid modernization plan (RaMP). Additionally, this includes other key information on security operations and key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more.
-
-![Diagram that shows Zero Trust and related topics.](../media/zero-trust-and-related-topics.png)
 
 ## Using the MCRA
 
@@ -18,11 +14,7 @@ MCRA is used for several purposes, including:
 - Learn about Microsoft's integration investments: MCRA helps architects and technical teams identify how to take advantage of integration points within Microsoft capabilities and existing security capabilities. 
 - Learn about cybersecurity: Some architects, particularly those new to cybersecurity, use this as a learning tool to prepare for their first career or a career change. 
 
-The primary Cybersecurity Reference Architecture diagram represents the full organizational security landscape, demonstrating how key Microsoft technologies fit into that landscape. 
-
-[![Diagram that shows the primary Cybersecurity Reference Architecture diagram which represents the full organizational security landscape.](../media/cybersecurity-reference-architecture.png)](../media/cybersecurity-reference-architecture.png#lightbox) 
-
-The table below reproduces the information from the diagram showing each domain, the Microsoft products within it, a summary of the capability and some additional details.
+The table below shows the full organizational security landscape, demonstrating how key Microsoft technologies fit into that landscape. It lists each major security domain, the Microsoft products within it, a summary of the capability that product fulfills and some additional details.
 
 | Domain | Product | Capability | Details |
 |---|---|---|---|
@@ -62,3 +54,9 @@ The table below reproduces the information from the diagram showing each domain,
 |  | Azure Sphere | IoT and OT Security Services | Micro-controller Unit (MCU, Networking Services, Patch Management, |
 |  | Defender for Cloud | Security Posture Management, Threat Protection | Cross Platform, Cross Cloud XDR |
 |  | Defender for IoT | Asset Discovery, Vulnerability Management, Network Detection and Response (NDR) | IoT, SCADA, OT, Threat Detection & Response, Asset & Vulnerability Management |
+
+## Azure components in the MCRA
+
+For a detailed discussion of many of the Azure components in the MCRA, view the following video:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
