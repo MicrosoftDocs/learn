@@ -26,12 +26,12 @@ After creating and running a pipeline to train the clustering model, you can cre
 
 5. The inference pipeline assumes that new data will match the schema of the original training data, so the **penguin-data** dataset from the training pipeline is included. However, this input data includes a column for the penguin species, which the model does not use. Delete both the **penguin-data** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which contains feature values for three new penguin observations (including headers):
 
-    ```CSV
-    CulmenLength,CulmenDepth,FlipperLength,BodyMass
-    39.1,18.7,181,3750
-    49.1,14.8,220,5150
-    46.6,17.8,193,3800
-    ```
+```CSV
+CulmenLength,CulmenDepth,FlipperLength,BodyMass
+39.1,18.7,181,3750
+49.1,14.8,220,5150
+46.6,17.8,193,3800
+```
 
 6. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the first **Apply Transformation** module.
 7. Delete the **Evaluate Model** module.
@@ -40,6 +40,6 @@ After creating and running a pipeline to train the clustering model, you can cre
     ![Inference pipeline for clustering](../media/inference-clusters.png)
 
 9. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. The experiment may take a while to run.
-10. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
+10. When the pipeline has finished, select **Job details**. In the new window, right click on **Assign Data to Clusters** module and select **Preview data** to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
 
 Your inference pipeline assigns penguin observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.
