@@ -6,6 +6,9 @@ Azure Stream Analytics seamlessly integrates your real-time application architec
 
 *To learn more, see additional resources in the summary section.*
 
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+
 ## **Introduction to Power BI**
 
 Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Microsoft Excel workbook, or a collection of cloud-based and on-premises hybrid data warehouses, Power BI lets you easily connect to your data sources, and to clean and model your data without affecting the underlying source, visualize (or discover) what's important, and share it with anyone or everyone you want.

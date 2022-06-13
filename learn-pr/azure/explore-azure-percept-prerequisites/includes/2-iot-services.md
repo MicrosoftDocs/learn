@@ -15,7 +15,8 @@ Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud servic
 
 *To learn more, see additional resources in the summary section.* 
 
-
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 
 ## **Introduction to Azure IoT Hub**
 
@@ -31,8 +32,8 @@ Azure IoT Hub enables secure and reliable communications between your IoT soluti
 - **Manage and configure your devices**: Using IoT Hub, you can manage your connected devices at scale. You can set and query the device status and automatically respond to a change in state for devices.
 
 *To learn more, see additional resources in the summary section.* 
-
-
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 
 ## **Introduction to Azure IoT Edge**
 
