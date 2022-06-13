@@ -14,9 +14,14 @@ Let's try some examples of pipes and filters with commands you learned in the pr
     cat NASA-software-API.txt | nl
     ```
 
-    The `nl` command adds line numbers to the output. Notice the last line is numbered as 700:
+    The `nl` command adds line numbers to the output. Notice the last line is numbered 700:
 
-    > `700  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
+   ```output
+   ...
+   698  GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+   699  GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+   700  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+   ```
 
 1. Count the number of lines in all .txt files in a directory, and use a pipe to sort the output in ascending order:
 
@@ -56,7 +61,7 @@ Let's try some examples of pipes and filters with commands you learned in the pr
     ```
 
     > [!Note]
-    > In this example, we use the file created in the previous unit, where we replaced the abbreviation "NASA" with "National Aerospace Agency." In that exercise, we named the file **NASA-replaced.txt**. If you used a different name for your file in that exercise, you'll have to run this step with your file name.
+    > In this example, we use the file created in the previous unit, where we replaced the abbreviation "NASA" with "National Aerospace Agency." In that exercise, we named the file **NASA-replaced.txt**. If you used a different name for your file in that exercise, run this step with your file name.
 
     Here's the output:
 

@@ -86,7 +86,7 @@ Before you jump into wrangling your data, it's useful to do some basic file insp
 
 The `head` and `tail` commands are used to examine the top (head) or bottom (tail) parts of a file. By default, both commands display 10 rows of content. If you want to display more or fewer rows, you can use the option flag `-n` to specify the number of rows to be printed to `stdout`.
 
-We'll use the `tail` and `head` commands to display the last and first five rows of the `NASA-software-API.txt` file, respectively.
+We'll use the `tail` and `head` commands to display the last and first five rows of the NASA-software-API.txt file, respectively.
 
 1. Enter the command `tail` with the `-n` flag to display the last five rows in the file:
 
@@ -124,20 +124,21 @@ We'll use the `tail` and `head` commands to display the last and first five rows
 
 The `nl` filter reads lines from files or from `stdin`. The output is printed to `stdout`. By default, the filter `nl` counts lines in a file and uses a tab to separate the line number from the text.
 
-Enter the `nl` filter with the flag `-s` to use the equal sign `=` as a delimiter:
+- Enter the `nl` filter with the flag `-s` to use the equal sign `=` as a delimiter:
 
-```bash
-nl -s = NASA-software-API.txt
-```
+   ```bash
+   nl -s = NASA-software-API.txt
+   ```
 
-Your output should list each line in the file, and end with these lines:
+   Your output should list each line in the file, and end with these lines:
 
-```output
-697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
-698=GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
-699=GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
-700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
-```
+   ```output
+   ...
+   697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+   698=GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+   699=GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+   700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+   ```
 
 The `nl` filter has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`), or change the starting number (`-v`).
 
@@ -146,17 +147,17 @@ The `nl` filter has flags that allow you to change the increment value (`-i`), c
 
 The word count command `wc` counts the number of lines, words (separated by white space), and characters in a file or from `stdin`. The output is printed to `stdout` and separated by tabs.
 
-Enter the `wc` command to see the number of lines, words, and characters in the NASA-software-API.txt file:
+- Enter the `wc` command to see the number of lines, words, and characters in the NASA-software-API.txt file:
 
-```bash
-wc NASA-software-API.txt
-```
+   ```bash
+   wc NASA-software-API.txt
+   ```
 
-Your output should look like this:
+   Your output should look like this:
 
-```output
-  703   8917   81115   NASA-software-API.txt
-```
+   ```output
+     703   8917   81115   NASA-software-API.txt
+   ```
 
 You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Recheck the output from the previous command, `nl`. We see that the last printed line is:
 
@@ -166,14 +167,17 @@ Notice that the index of this line is 700 rather than 703, `700=GSC...`. What's 
 
 The index value 700 happens because, by default, the command `nl` doesn't number empty lines.
  
-Try the command `nl` again, but this time with the option flag `-b a` to count all the lines, including the empty ones:
+- Try the command `nl` again, but this time with the option flag `-b a` to count all the lines, including the empty ones:
 
-```bash
-nl -b a NASA-software-API.txt
-```
+   ```bash
+   nl -b a NASA-software-API.txt
+   ```
 
-The last line in the output should be:
+   The last line in the output should be:
 
-> `703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
+   ```output
+   ...
+   703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+   `
 
-The index value now matches the number of lines counted with the `wc` command.
+The index value (703) now matches the number of lines counted with the `wc` command.

@@ -8,39 +8,40 @@ Remember that the `sed` command outputs everything to `stdout` by default. If yo
 
 The basic usage of `sed` is `sed [options] commands [file-to-edit]`.
 
-To use `sed` directly on the **NASA-software-API.txt** file, you would run the command as follows:
+- Try this basic `sed` command on the **NASA-software-API.txt** file:
 
-```bash
-sed '' NASA-software-API.txt
-```
+   ```bash
+   sed '' NASA-software-API.txt
+   ```
 
-This command prints the content of the file to the `stdout`. It's almost equivalent to using the `cat` command. The single quotation marks contain the editing instructions you pass to `sed`. In this case, no editing instructions were passed, so `sed` printed each line it received to standard output.
+The command prints the content of the file to `stdout` nearly equivalent to what we saw with the `cat` command. The single quotation marks contain the editing instructions for the `sed` command. In this case, we didn't pass any editing instructions, so the command printed each line it received to the terminal. 
 
-The `sed` tool can also use `stdin` rather than a file. You can pipe the output of the `cat` command into the `sed` command to produce the same result:
+The `sed` tool can work on input from `stdin` rather than a file, and you can also save the output from the command. We'll examine how to use some of these features later.
 
-```bash
-cat NASA-software-API.txt | sed ''
-```
 
 ## Text substitution with sed
 
 Text substitution is perhaps the most well-known use for the `sed` tool. As we learned before, the `sed` command can search for test patterns by using regular expressions. But the tool can also replace the matched text with something else.
 
-The basic syntax for text substitution is `sed s'/old_text/new_text/'`, where the letter `s` is the editing instruction that means *substitute* and the three forward slashes (`/`) separate the text fields to use in the substitution.
+The general syntax for text substitution is `sed s'/old_text/new_text/'`, where the letter `s` is the editing instruction that means *substitute* and the forward slashes (`/`) separate the text to use in the substitution.
 
-Imagine you have the URL `https://www.nasa.gov/about/sites/index.html`. You want to replace the `index.html` portion of the URL with the text `home`. You can make this replacement by using the following `sed` command:
+Imagine you have the URL `https://www.nasa.gov/about/sites/index.html` and you want to replace the `index.html` portion of the URL with the text `home`. 
 
-```bash
-echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
-```
+- Try this replacement by using the following `sed` command:
 
-The output shows the modified URL:
+   ```bash
+   echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
+   ```
 
-```output
-https://www.nasa.gov/about/sites/home
-```
+   The output shows the modified URL:
 
-Let's try this replacement on content in the **NASA-software-API.txt** file. We'll substitute all instances of the abbreviation "NASA" with the full title "National Aerospace Agency." Before we make the substitution, we'll get a count of the number of instances of the abbreviation "NASA." After we run the `sed` tool, we'll check the count to make sure all instances were replaced.
+   ```output
+   https://www.nasa.gov/about/sites/home
+   ```
+
+Now let's try some replacement operations on content in the **NASA-software-API.txt** file.
+
+We'll substitute all instances of the abbreviation "NASA" with the full title "National Aerospace Agency." Before we make the substitution, we'll get a count of the number of instances of the abbreviation "NASA." After we run the `sed` tool, we'll check the count to make sure all instances were replaced.
 
 1. Open the NASA-software-API.txt file in the Cloud Shell editor:
 
@@ -51,6 +52,9 @@ Let's try this replacement on content in the **NASA-software-API.txt** file. We'
 1. Open the search box for the integrated editor, and enter the string `NASA`.
 
    The search box result shows 27 matches for the abbreviation "NASA."
+
+   > [!Tip]
+   > You can use the content divider that separates the Cloud Shell editor from the terminal, to reduce the amount of space used by the editor. If you make this adjustment, you'll have more space in the terminal to see command output.
    
 1. Now run the `sed` command to do the replacement:
 
@@ -60,13 +64,15 @@ Let's try this replacement on content in the **NASA-software-API.txt** file. We'
 
    Notice the substitution happens on all matches for "NASA," but the command prints all lines of the file to the terminal (`stdout`). This behavior is the default for the `sed` tool.
 
-   To print only the lines where a replacement was applied, we can use the `-n` flag. We also pass the `p` option to suppress automatic printing.
+   To print only the lines where a replacement was applied, we can use the `-n` flag. We also pass the `p` option in the editing instructions to suppress automatic printing.
 
-1. Run the `sed` command again, but this time, print only the lines where the pattern replacement is applied:
+1. Run the `sed` command again, and print only the lines where the pattern replacement is applied:
 
    ```bash
    sed -n 's/NASA/National Aerospace Agency/p' NASA-software-API.txt
    ```
+
+   We see less output this time because we used the `-n` flag and the `p` option.
 
 
 ## Write to a file

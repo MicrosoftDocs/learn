@@ -6,19 +6,21 @@ The `cat` command is one of the most basic yet useful commands for working with 
 
 The `cat` command is most commonly used to read the content of files. Its default output destination, which is also known as a standard output, or `stdout`, is the monitor screen. To display the content of a file, you would enter `cat <filename>`.
 
-Run the `cat` command to display the content of the **NASA-software-API.txt** file:
+- Run the `cat` command to display the content of the **NASA-software-API.txt** file:
 
-```bash
-cat NASA-software-API.txt
-```
+   ```bash
+   cat NASA-software-API.txt
+   ```
 
-Your output should list each line in the file, and end with these lines:
+   Your output should list each line in the file, and end with these lines:
 
-> `SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"`
-> `GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"`
-> `GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"`
-> `GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
-
+   ```output
+   ...
+   SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+   GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+   GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+   GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
+   ```
 
 ## Create files
 
@@ -78,20 +80,20 @@ We create new files by redirecting the standard output of the `cat` command with
 
 The third use of the `cat` command is to concatenate copies of the contents of files. Because the concatenation occurs only to the copies, there's no effect on the original files.
 
-Run the following command to concatenate two copies of file1 to `stdout`:
+- Run the following command to concatenate two copies of file1 to `stdout`:
 
-```bash
-cat file1 file1
-```
+   ```bash
+   cat file1 file1
+   ```
 
-Your output should look something like this:
+   Your output should look something like this:
 
-```output
-NASA headquarters
-Goddard Space Flight Center
-NASA headquarters
-Goddard Space Flight Center
-```
+   ```output
+   NASA headquarters
+   Goddard Space Flight Center
+   NASA headquarters
+   Goddard Space Flight Center
+   ```
 
 If you run the command `ls` again, you'll see no new file has been added to your directory:
 
@@ -101,26 +103,26 @@ file1   NASA-logs-1995.txt   NASA-software-API.txt
 
 The content of each file was displayed to `stdout` starting on a new line and in the order that the files were named in the command. You can also redirect concatenation output to a file. 
 
-Run the `cat` command with the greater than (`>`) operator to save the output in a new file, such as  **file2**:
+1. Run the `cat` command with the greater than (`>`) operator to save the output in a new file, such as  **file2**:
 
-```bash
-cat file1 file1 > file2
-```
+   ```bash
+   cat file1 file1 > file2
+   ```
 
-Examine the contents of the new file:
+1. Examine the contents of the new file:
 
-```bash
-cat file2
-```
+   ```bash
+   cat file2
+   ```
 
-The output should look like this:
+   The output should look like this:
 
-```output
-NASA headquarters
-Goddard Space Flight Center
-NASA headquarters
-Goddard Space Flight Center
-```
+   ```output
+   NASA headquarters
+   Goddard Space Flight Center
+   NASA headquarters
+   Goddard Space Flight Center
+   ```
 
 If you run the `ls` command again, you'll see the new file in your directory:
 

@@ -1,8 +1,8 @@
-So far, you've learned about basic file inspection and regular expressions. In this unit, we introduce the `grep` command. The `grep` command searches specified files or `stdin` for patterns that match a given regular expression. As with other commands we've reviewed, the `grep` command has many flags to control the output and its behavior. 
+So far, you've learned about basic file inspection and regular expressions. In this unit, we introduce the `grep` command to search specific files or `stdin` for patterns that match a regex. As with other commands we've reviewed, the `grep` command has many flags to control the output and its behavior. 
 
 ## Basic usage
 
-Let's get started with the basic usage of the `grep` command. The common syntax for `grep` is `grep 'pattern' [file_to_search]`. The pattern value is enclosed in apostrophe (`'`) characters.
+Let's get started with the basic usage of the command. The common syntax for `grep` is `grep 'pattern' [file_to_search]`, where the pattern value is enclosed in apostrophe (`'`) characters.
 
 To find all lines in the file that contain the pattern `*.novo.dk`, we specify the regex as follows:
 - Start with the asterisk (`*`) to look for lines that match any character zero or more times.
@@ -27,20 +27,15 @@ We're going to look for all lines in the **NASA-logs-1995.txt** file that contai
    grep '\*\.novo\.dk' NASA-logs-1995.txt
    ```
 
-   Your output should look something like this:
+   Here are the last few lines of the output:
 
    ```output
-   ***.novo.dk 805465029 GET /ksc.html 200 7067
-   ***.novo.dk 805465031 GET /images/ksclogo-medium.gif 200 5866
-   ***.novo.dk 805465051 GET /images/MOSAIC-logosmall.gif 200 363
-   ***.novo.dk 805465053 GET /images/USA-logosmall.gif 200 234
-   ***.novo.dk 805465054 GET /images/NASA-logosmall.gif 200 786
-   ***.novo.dk 805465058 GET /images/WORLD-logosmall.gif 200 669
-   ***.novo.dk 805465068 GET /shuttle/missions/missions.html 200 8678
-   ***.novo.dk 805465071 GET /images/launchmedium.gif 200 11853
-   ***.novo.dk 805465153 GET /images/KSC-logosmall.gif 200 1204
-   ***.novo.dk 805465157 GET /images/NASA-logosmall.gif 200 786
-   ***.novo.dk 805465323 GET /images/launch-logo.gif 200 1713
+   ...
+   ***.novo.dk 807951981 GET /shuttle/countdown/video/livevideo2.gif 200 69067
+   ***.novo.dk 807952044 GET /htbin/cdt_clock.pl 200 543
+   ***.novo.dk 807952060 GET /shuttle/countdown/lps/fr.html 200 1879
+   ***.novo.dk 807952078 GET /shuttle/countdown/lps/fr.gif 200 30232
+   ***.novo.dk 807952102 GET /shuttle/countdown/lps/back.gif 200 1289
    ```
 
 
@@ -48,15 +43,22 @@ We're going to look for all lines in the **NASA-logs-1995.txt** file that contai
 
 You can also pass multiple files to the `grep` command.
 
-Let's find all occurrences of the word "NASA" and show the line numbers where the matches occur in both NASA dataset files. To add line numbers to the output, you need to pass the `-n` flag to the `grep` command.
+Let's find all occurrences of the word "NASA" in both NASA dataset files. We expect many more results this time, so rather than look at all the results, we'll instruct the command to report how many lines matched the pattern. To do this counting and reporting, we pass the `-c` flag to the `grep`.
 
 - Run the following `grep` command on the two dataset files:
 
    ```bash
-   grep -n 'NASA' NASA-logs-1995.txt NASA-software-API.txt
+   grep -c 'NASA' NASA-logs-1995.txt NASA-software-API.txt
    ```
 
-You'll get many more results than the previous search because we passed two files as an argument to the command.
+   You should see this output:
+
+   ```output
+   NASA-logs-1995.txt:17277
+   NASA-software-API.txt:26
+   ```
+
+   There are 17,277 instances of "NASA" in the log dataset and 26 instances in the API dataset.
 
 
 ## Grep flags
