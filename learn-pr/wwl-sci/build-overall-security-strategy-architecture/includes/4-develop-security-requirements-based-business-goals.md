@@ -1,21 +1,11 @@
 
-The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. This topic is designed to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measure.
+The most successful transformation journeys start with business goals. Cloud adoption can be a costly and time-consuming effort. Fostering the right level of support from IT and other areas of the business is crucial to success. Microsoft has created a [Cloud Adoption Framework](/azure/cloud-adoption-framework/) to help customers identify business outcomes that are concise, defined, and drive observable results or change in business performance, supported by a specific measures.
 
-During any cloud transformation, the ability to speak in terms of business outcomes supports transparency and cross-functional partnerships. The business outcome framework starts with a simple template to help technically minded individuals document and gain consensus. This template can be used with business stakeholders to collect a variety of business outcomes, which could each be influenced by a company's transformation journey.
+For an overview of the Cloud Adoption Framework, view the following video:
 
-In this template, business outcomes focus on three topics:
-
--   Aligning to stakeholders or business decision makers
--   Understanding business drivers and objectives
--   Mapping outcomes to specific solutions and technical capabilities
-
-![Diagram that shows business outcomes as a house with stakeholders, over business outcomes, over technical capabilities.](../media/business-outcomes-visualized.png)
-
-The business outcome template focuses on simplified conversations that can quickly engage stakeholders without getting too deep into the technical solution. By rapidly understanding and aligning the key performance indicators (KPIs) and business drivers that are important to stakeholders, architects can consider about high-level approaches and transformations before implementing security solutions.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEA1P]
 
 ## Cloud Adoption Framework
-
-**Media:** [Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework)
 
 As mentioned in the video, Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
 
@@ -25,7 +15,7 @@ As mentioned in the video, Cloud Adoption Framework consists of tools, documenta
 -  Adopt the cloud
 -  Govern and manage your cloud environments
 
-![Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage.](../media/cloud-adoption-framework.png)
+:::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage." lightbox="../media/cloud-adoption-framework.png":::
 
 The govern stage focuses on cloud governance. You can refer to the Cloud Adoption Framework for recommended guidance as you build your cloud governance strategy.
 
@@ -80,7 +70,7 @@ Here are the steps in the innovate process of this stage:
 1. **Best practices**: Verify that your progress maps to recommended practices before moving forward.
 1. **Feedback loops**: Check in frequently with your customers to verify that you're building what they need.
 
-#### Govern and manage your cloud environments
+### Govern and manage your cloud environments
 
 Here, you begin to form your cloud governance and cloud management strategies. As the cloud estate changes over time, so do cloud governance processes and policies. You need to create resilient solutions that are constantly optimized.
 
