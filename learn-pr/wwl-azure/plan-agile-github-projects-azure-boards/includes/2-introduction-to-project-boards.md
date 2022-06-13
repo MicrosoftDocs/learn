@@ -43,7 +43,7 @@ A project is a customizable spreadsheet that you can configure the layout by fil
 
 You can use different views such as Board or spreadsheet/table.
 
-:::image type="content" source="../media/github-projects-beta-f72f1d6a.png" alt-text="Screenshot of GitHub project beta feature.":::
+:::image type="content" source="../media/github-projects-beta-f72f1d6a.png" alt-text="Screenshot of GitHub project beta feature." lightbox="../media/github-projects-beta-f72f1d6a.png":::
 
 
 If you make changes in your pull request or issue, your project reflects that change.

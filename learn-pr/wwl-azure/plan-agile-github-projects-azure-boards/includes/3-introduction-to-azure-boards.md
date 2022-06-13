@@ -23,7 +23,7 @@ Queries support the following tasks:
 
 It's possible to create another view with deliverables and track dependencies across several teams in a calendar view using Delivery Plans.
 
-:::image type="content" source="../media/azure-boards-delivery-plan-11462b8e.png" alt-text="Screenshot of Azure Delivery Plan feature.":::
+:::image type="content" source="../media/azure-boards-delivery-plan-11462b8e.png" alt-text="Screenshot of Azure Delivery Plan feature." lightbox="../media/azure-boards-delivery-plan-11462b8e.png":::
 
 
 Delivery plans are fully interactive, supporting the following tasks:
