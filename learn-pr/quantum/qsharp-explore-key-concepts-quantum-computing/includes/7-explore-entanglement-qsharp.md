@@ -290,7 +290,7 @@ Q# is a versatile language. You can choose various ways to achieve the
 same result. Now you're going to replicate the code by using `Controlled X` instead of
 `CNOT`.
 
-1. Add a new cell and replace the `CNOT(q1, q2)` operation with the `Controlled X(q1, q2)` operation. Your program should look like this:
+1. Add a new cell and replace the `CNOT(q1, q2)` operation with the `Controlled X([q1], q2)` operation. Your program should look like this:
 
    ```qsharp
    operation TestBellState(count : Int, initial : Result) : (Int, Int, Int, Int) {
@@ -304,7 +304,7 @@ same result. Now you're going to replicate the code by using `Controlled X` inst
            SetQubitState(Zero, q2);
 
            H(q1);
-           Controlled X(q1, q2);                   // added CONTROLLED-X operation
+           Controlled X([q1], q2);                   // added CONTROLLED-X operation
 
            // measure each qubit
            let resultQ1 = M(q1);            
