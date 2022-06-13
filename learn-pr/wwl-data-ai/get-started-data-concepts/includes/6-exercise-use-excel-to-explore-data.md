@@ -24,7 +24,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
 
     ```
-    https://github.com/MicrosoftLearning/mslearn-data-concepts/blob/main/labfiles/Lemonade.xlsx
+    https://github.com/MicrosoftLearning/mslearn-data-concepts/raw/main/labfiles/Lemonade.xlsx
     ```
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
