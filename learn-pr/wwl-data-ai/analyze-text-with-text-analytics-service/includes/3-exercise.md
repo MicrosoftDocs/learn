@@ -23,11 +23,11 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 3. Review and create the resource. 
 
-### Get the Key and Location for your Cognitive Services resource
+### Get the key and endpoint for your Cognitive Services resource
 
 1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, select the link to manage the keys for the service. You will need the endpoint and keys to connect to your Cognitive Services resource from client applications.
 
-2. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
+2. View the **Keys and Endpoint** page for your resource. You will need the **key** and **endpoint** to connect from client applications.
 
 
 ## Run Cloud Shell 
