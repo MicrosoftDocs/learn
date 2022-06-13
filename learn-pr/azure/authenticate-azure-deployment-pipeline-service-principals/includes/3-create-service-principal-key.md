@@ -58,9 +58,8 @@ To create a service principal and a key, use the `az ad sp create-for-rbac` comm
 
 ```azurecli
 az ad sp create-for-rbac \
-  --role Contributor \
-  --scopes /subscriptions/<SUBSCRIPTION-ID> \
-  --name MyPipeline
+  --name MyPipeline \
+  --skip-assignment
 ```
 
 When you run this command, the Azure CLI returns a JSON response with a `password` property. This property is the service principal's key. You can't get this key again, so be sure to use it immediately or save it somewhere securely.
