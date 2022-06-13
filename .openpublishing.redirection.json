@@ -13944,6 +13944,11 @@
       "source_path": "learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/6-describe-elastic-jobs-azure-sql-database.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-paas-resources-using-automated-methods/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/13-exercise-set-up-release-gate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-release-strategy-recommendations/",
+      "redirect_document_id": false
     }
   ]
 }
