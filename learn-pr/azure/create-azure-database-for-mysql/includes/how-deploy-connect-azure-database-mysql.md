@@ -5,8 +5,8 @@ Having a general understanding of Azure Database for MySQL Flexible Server capab
 
 In addition, you need to be aware of the dependencies between some configuration settings. In particular:
 
-- Disabling storage auto-grow is not supported for servers with high availability enabled.
-- High availability is not supported in the Burstable tier, although you have the option to deploy the server into a specific availability zone.
+- Disabling storage auto-grow isn't supported for servers with high availability enabled.
+- High availability isn't supported in the Burstable tier, although you have the option to deploy the server into a specific availability zone.
 
 ### How to deploy an Azure Database for MySQL Flexible Server
 
@@ -18,7 +18,7 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Server details. The name of the server, target Azure region, the MySQL version, the compute tier, and the number of the availability zone.
 
-    ![Screenshot of the Project and Server details sections of the Basics Azure portal Flexible server deployment page.](../media/3-deploy-mysql-project-server-details.png)
+    ![Screenshot of the Project and Server details sections of the Basics Azure portal Flexible Server deployment page.](../media/3-deploy-mysql-project-server-details.png)
 
   - Administrator account. The administrator username and password.
 
@@ -28,15 +28,15 @@ You can use several different deployment methods to provision an Azure Database 
 
   - Storage. The storage size (in GiB), the number of IOPS, and the Storage Auto-growth option.
 
-    ![Screenshot of the Compute and Storage sections of the Compute + Storage Azure portal Flexible server deployment page.](../media/3-deploy-mysql-compute-and-storage.png)
-    
+    ![Screenshot of the Compute and Storage sections of the Compute + Storage Azure portal Flexible Server deployment page.](../media/3-deploy-mysql-compute-and-storage.png)
+
   - High availability. The high availability mode (same zone or zone redundant).
 
-    ![Screenshot of the High availability section of the Basics Azure portal Flexible server deployment page.](../media/3-deploy-mysql-high-availability.png)
+    ![Screenshot of the High availability section of the Basics Azure portal Flexible Server deployment page.](../media/3-deploy-mysql-high-availability.png)
 
   - Backups. The backup retention period and the backup geo-redundancy option.
 
-    ![Screenshot of the High availability and Backups sections of the Compute + Storage Azure portal Flexible server deployment page." border.](../media/3-deploy-mysql-high-availability-backups.png)
+    ![Screenshot of the High availability and Backups sections of the Compute + Storage Azure portal Flexible Server deployment page." border.](../media/3-deploy-mysql-high-availability-backups.png)
 
 - Networking. From this page you can select the connectivity method. Depending on your choice, you can also allow public access from any Azure service, configure firewall rules, or set up VNet integration.
 
@@ -52,7 +52,7 @@ Before you attempt to connect to the server, ensure that you take into account t
 
 Encryption, which is enabled by default for new deployments, is an additional consideration. You’ll need to download the public certificate installed on the server and use it when establishing a connection over TLS 1.2.
 
-After you address the networking and certificate requirements, you should be able to connect to the Azure Database for MySQL - Flexible Server and query it in several different ways, including using:
+After you address the networking and certificate requirements, you should be able to connect to the Azure Database for MySQL Flexible Server and query it in several different ways, including using:
 
 - Azure CLI (az mysql)
 - mysql.exe command line utility
@@ -60,4 +60,4 @@ After you address the networking and certificate requirements, you should be abl
 - A number of programming languages, such as Python, PHP, C#, C++, Java, JavaScript, and Ruby.
 
 > [!NOTE]
-> For more information regarding connecting to Azure Database for MySQL Flexible Server programmatically, refer to the [**Microsoft technical documentation**](https://docs.microsoft.com) webpage.
+> For more information regarding connecting to Azure Database for MySQL Flexible Server programmatically, see the [**Microsoft technical documentation**](/) webpage.

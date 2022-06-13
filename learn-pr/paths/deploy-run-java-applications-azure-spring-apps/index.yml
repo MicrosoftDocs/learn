@@ -24,7 +24,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 modules:
 - learn.wwl.plan-java-application-migration-azure-spring-apps

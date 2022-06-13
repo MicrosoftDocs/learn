@@ -12,3 +12,5 @@ In this module, you'll learn how to:
 
 - Plan and implement a security strategy across teams
 - Establish a strategy and process for proactive and continuous evaluation of security strategy
+
+The content in the module will help you prepare for exam SC-100: Microsoft Cybersecurity Architect.
