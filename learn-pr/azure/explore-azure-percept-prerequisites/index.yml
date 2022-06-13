@@ -1,0 +1,34 @@
+﻿### YamlMime:Module
+uid: learn.oxford.explore-azure-percept-prerequisites
+metadata:
+  title: "Explore Azure Percept prerequisites"
+  description: "Explain Azure Percept prerequisites"
+  ms.date: 06/08/2022
+  ms.author: chnoring
+  author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+title: "Explore Azure Percept prerequisites"
+summary: "In this module, you'll learn about the prerequisites required for building and deploying an Edge AI solution with Azure Percept. As you complete the individual units in this module, you'll learn about basic concepts of Azure IoT and Artificial Intelligence (AI) Services."
+abstract: |
+    After completing this module, you'll be able to:
+    - Understand the prerequisites needed to build and deploy an Edge AI solution with Azure Percept
+    - Understand basic concepts of Azure IoT and Artificial Intelligence (AI) Services
+prerequisites: |
+    - Basic knowledge of Azure cloud computing is helpful but not necessary
+iconUrl: /learn/achievements/introduction-to-azure-percept-prerequisites.svg
+badge:
+  uid: learn.oxford.explore-azure-percept-prerequisites.badge
+levels:
+- beginner
+roles:
+- student
+products:
+- azure-iot-edge
+units:
+- learn.oxford.explore-azure-percept-prerequisites.introduction
+- learn.oxford.explore-azure-percept-prerequisites.iot-services
+- learn.oxford.explore-azure-percept-prerequisites.artificial-intelligence-services
+- learn.oxford.explore-azure-percept-prerequisites.other-azure-services
+- learn.oxford.explore-azure-percept-prerequisites.knowledge-check
+- learn.oxford.explore-azure-percept-prerequisites.summary
