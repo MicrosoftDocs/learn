@@ -18,7 +18,7 @@ You should now have a good understanding of what these commands do and how to us
 - [Regular Expressions 101](https://regex101.com)
 - [UNIX shell commands](https://www.educba.com/unix-shell-commands/)
 - [UNIX (and Linux) shell commands](https://www.geeksforgeeks.org/essential-linuxunix-commands/)
-- [Visual Studio Code documentation](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio/)
+- [Visual Studio Code documentation](/visualstudio/ide/using-regular-expressions-in-visual-studio)
 
 
 ### Commands and filters
