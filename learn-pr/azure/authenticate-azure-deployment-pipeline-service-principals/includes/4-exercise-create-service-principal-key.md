@@ -78,17 +78,16 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurepowershell
    $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsitePipeline `
-     -SkipAssignment
+     -DisplayName ToyWebsitePipeline
 
-   $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
+   $servicePrincipalKey = $servicePrincipal.PasswordCredentials.SecretText
    ```
 
 1. Run the following command to show the service principal's application ID, the key, and your Azure AD tenant ID:
 
    ```azurepowershell
    Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
-   Write-Output "Service principal key: $($plaintextSecret)"
+   Write-Output "Service principal key: $servicePrincipalKey"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```
 
