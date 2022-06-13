@@ -43,7 +43,7 @@ Parse evaluates a string expression and parses its value into one or more calcul
 
 Syntax
 
-T | parse [kind=regex [flags=regex_flags] |simple|relaxed] Expression with * (StringConstant ColumnName [: ColumnType]) *...
+`T | parse [kind=regex [flags=regex_flags] |simple|relaxed] Expression with * (StringConstant ColumnName [: ColumnType]) *`
 
 Arguments
 
