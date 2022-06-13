@@ -88,7 +88,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *On branch feature/myFeature-1 Changes not staged for commit: (use "git add &lt;file>..." to update what will be committed) (use "git checkout -- &lt;file>..." to discard changes in working directory) modified: Program.cs.*
+    *On branch feature/myFeature-1 Changes not staged for commit: (use "git add \<file\>..." to update what will be committed) (use "git checkout -- \<;file\>..." to discard changes in working directory) modified: Program.cs.*
     
     ***myWebApp >***
     
