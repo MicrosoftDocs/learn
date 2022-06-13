@@ -54,9 +54,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. Run this Azure CLI command in the Visual Studio Code terminal to create a service principal:
 
    ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsitePipeline \
-     --skip-assignment
+   az ad sp create-for-rbac --name ToyWebsitePipeline
    ```
 
    [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]

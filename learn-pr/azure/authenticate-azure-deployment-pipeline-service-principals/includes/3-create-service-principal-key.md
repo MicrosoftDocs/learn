@@ -57,9 +57,7 @@ Pipeline tools include secure ways to specify your service principal's applicati
 To create a service principal and a key, use the `az ad sp create-for-rbac` command. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 
 ```azurecli
-az ad sp create-for-rbac \
-  --name MyPipeline \
-  --skip-assignment
+az ad sp create-for-rbac --name MyPipeline
 ```
 
 When you run this command, the Azure CLI returns a JSON response with a `password` property. This property is the service principal's key. You can't get this key again, so be sure to use it immediately or save it somewhere securely.
