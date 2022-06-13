@@ -2,7 +2,7 @@ After you create data loss prevention policies, administrators need to verify an
 
 ## Data loss prevention reports in the Microsoft Purview compliance portal
 
-The Microsoft Purview portal provides the following DLP reports that can be accessed in reports under organization data:
+The Microsoft Purview compliance portal provides the following DLP reports that can be accessed in reports under organization data:
 
 - DLP Policy Matches
 
@@ -55,5 +55,5 @@ You can also view a report for DLP alerts in the Defender for Cloud Apps Dashboa
 
 [ ![Alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png) ](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
 
-Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Purview portal, it's prudent to be aware of alerts in both dashboards.
+Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Microsoft Purview compliance portal, it's prudent to be aware of alerts in both dashboards.
 

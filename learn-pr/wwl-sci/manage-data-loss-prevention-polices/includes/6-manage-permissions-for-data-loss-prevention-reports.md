@@ -15,7 +15,7 @@ Members of your compliance team who read DLP policy reports need permissions to 
 
 You can also create a role group with administrative privileges to the DLP policies and DLP reports by granting the **DLP Compliance Management** role.
 
-Instead of creating a new role group you can also assign one of the existing role groups in the Purview portal under Permissions. If you want users to have read-only access to the existing reports pages, you can assign the Security Reader role.
+Instead of creating a new role group you can also assign one of the existing role groups in the Microsoft Purview compliance portal under Permissions. If you want users to have read-only access to the existing reports pages, you can assign the Security Reader role.
 
 > [!NOTE]
 > Role groups for the Purview portal might have similar names to the role groups in Exchange Online, but they are not the same.
