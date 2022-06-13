@@ -4,7 +4,7 @@
 
 - Container orchestration is a system that automatically deploys and manages containerized apps. For example, the orchestrator can dynamically increase or decrease the deployed instances of the managed app. Or it can ensure all deployed container instances get updated if a new version of a service is released.
 
-:::image type="content" source="../media/container-scaling.png" alt-text="Dynamically or automatically adjust container instances.":::
+:::image type="content" source="../media/container-scaling.png" alt-text="Diagram of container instances dynamically or automatically scaling.":::
 
  
 
@@ -12,7 +12,7 @@
 
 [Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes) manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. 
 
-:::image type="content" source="../media/kubernetes-features.png" alt-text="Self-healing, dynamic scaling, and rolling updates.":::
+:::image type="content" source="../media/kubernetes-features.png" alt-text="Diagram showing conceptual self-healing, dynamic scaling, and rolling updates.":::
 
 
 

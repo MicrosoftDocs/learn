@@ -13,7 +13,7 @@ The Azure portal provides out-of-the-box continuous integration and deployment w
 Using the Azure portal, or command-line tools, you can easily add deployment slots to an App Service web app. For instance, you can create a staging deployment slot where you can push your code to test on Azure. Once you are happy with your code, you can easily swap the staging deployment slot with the production slot. You do all this with a few simple mouse clicks in the Azure portal.
 
 > [!NOTE]
-> Deployment slots are only available in the Standard and Premium plan tiers.
+> Deployment slots are only available in the Standard, Premium, and Isolated plan tiers.
 
 ## App Service on Linux
 
@@ -22,7 +22,7 @@ App Service can also host web apps natively on Linux for supported application s
 The languages, and their supported versions, are updated on a regular basis. You can retrieve the current list by using the following command in the Cloud Shell.
 
 ```bash
-az webapp list-runtimes --linux
+az webapp list-runtimes --os-type linux
 ```
 
 ### Limitations

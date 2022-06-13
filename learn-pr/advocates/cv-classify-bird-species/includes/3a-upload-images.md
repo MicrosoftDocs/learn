@@ -5,7 +5,9 @@ Now, it's time to upload the images that we'll use to train the machine learning
 
 When you have a large amount of data, image classes, and tags to upload, it's faster to use the Custom Vision SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload the images in the dataset the way that works best for you. 
 
-## Use the Custom Vision portal to upload images
+## Option 1: Use the Custom Vision portal to upload and tag images
+
+The images must be uploaded and tagged individually by each subfolder. For this exercise, you might want to  upload images in only four or five of the subfolders depending on your upload speed. Keep in mind that when training a machine learning module, more and varied examples will yield better results.
 
 1. Create a project in the Custom Vision portal:
 
@@ -54,7 +56,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
 1. Repeat the preceding step to upload the photos in each bird species folder in the downloaded dataset.
 
-## Use the Custom Vision SDK to upload images
+## Option 2: Use the Custom Vision SDK to upload and tag images
 
 The Custom Vision SDK is available in the following programming languages: Python, .NET, Node.js, Go, and Java. We'll use Python and Jupyter Notebook. If you don't already have these tools installed, we recommend that you get them with an Anaconda installation. You get Python and Jupyter Notebook when you [download Anaconda](https://www.anaconda.com/?azure-portal=true).
 
