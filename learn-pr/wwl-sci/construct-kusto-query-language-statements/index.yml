@@ -5,7 +5,7 @@ metadata:
   description: "Construct KQL statements for Microsoft Sentinel"
   ms.date: 06/13/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Construct KQL statements for Microsoft Sentinel
