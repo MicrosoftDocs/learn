@@ -56,7 +56,7 @@ We create new files by redirecting the standard output of the `cat` command with
       
 1. Press Ctrl + D to end the concatenation action and restore the prompt.
 
-1. Run the `ls` command to see the new file in your directory:
+1. If you run the `ls` command, you'll see the new file in your directory:
 
    ```output
    file1   NASA-logs-1995.txt   NASA-software-API.txt
@@ -80,7 +80,7 @@ We create new files by redirecting the standard output of the `cat` command with
 
 The third use of the `cat` command is to concatenate copies of the contents of files. Because the concatenation occurs only to the copies, there's no effect on the original files.
 
-- Run the following command to concatenate two copies of file1 to `stdout`:
+1. Run the following command to concatenate two copies of file1 to `stdout`:
 
    ```bash
    cat file1 file1
@@ -95,13 +95,13 @@ The third use of the `cat` command is to concatenate copies of the contents of f
    Goddard Space Flight Center
    ```
 
-If you run the command `ls` again, you'll see no new file has been added to your directory:
+2. If you run the `ls` command now, you'll notice no new file has been added to your directory:
 
-```output
-file1   NASA-logs-1995.txt   NASA-software-API.txt
-```
+   ```output
+   file1   NASA-logs-1995.txt   NASA-software-API.txt
+   ```
 
-The content of each file was displayed to `stdout` starting on a new line and in the order that the files were named in the command. You can also redirect concatenation output to a file. 
+   The content of each file was displayed to `stdout` starting on a new line and in the order that the files were named in the command. You can also redirect concatenation output to a file. 
 
 1. Run the `cat` command with the greater than (`>`) operator to save the output in a new file, such as  **file2**:
 
@@ -124,8 +124,8 @@ The content of each file was displayed to `stdout` starting on a new line and in
    Goddard Space Flight Center
    ```
 
-If you run the `ls` command again, you'll see the new file in your directory:
+1. If you run the `ls` command again, you'll see the new file in your directory:
 
-```output
-file1   files2   NASA-logs-1995.txt   NASA-software-API.txt
-```
+   ```output
+   file1   files2   NASA-logs-1995.txt   NASA-software-API.txt
+   ```

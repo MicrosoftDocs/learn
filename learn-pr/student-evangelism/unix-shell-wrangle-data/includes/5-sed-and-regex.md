@@ -14,9 +14,9 @@ The basic usage of `sed` is `sed [options] commands [file-to-edit]`.
    sed '' NASA-software-API.txt
    ```
 
-The command prints the content of the file to `stdout` nearly equivalent to what we saw with the `cat` command. The single quotation marks contain the editing instructions for the `sed` command. In this case, we didn't pass any editing instructions, so the command printed each line it received to the terminal. 
+The command prints the content of the file to `stdout` in a similar manner to what we saw with the `cat` command. The single quotation marks contain the editing instructions for the `sed` command. In this case, we didn't pass any editing instructions, so the command printed each line it received to the terminal. 
 
-The `sed` tool can work on input from `stdin` rather than a file, and you can also save the output from the command. We'll examine how to use some of these features later.
+The `sed` tool can work on input from `stdin` rather than a file, and you can also save the output from the command. 
 
 
 ## Text substitution with sed

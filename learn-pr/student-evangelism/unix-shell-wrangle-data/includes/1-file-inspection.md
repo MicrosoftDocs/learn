@@ -178,6 +178,6 @@ The index value 700 happens because, by default, the command `nl` doesn't number
    ```output
    ...
    703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
-   `
+   ```
 
 The index value (703) now matches the number of lines counted with the `wc` command.

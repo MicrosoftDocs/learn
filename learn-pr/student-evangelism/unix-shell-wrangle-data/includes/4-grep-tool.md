@@ -43,7 +43,7 @@ We're going to look for all lines in the **NASA-logs-1995.txt** file that contai
 
 You can also pass multiple files to the `grep` command.
 
-Let's find all occurrences of the word "NASA" in both NASA dataset files. We expect many more results this time, so rather than look at all the results, we'll instruct the command to report how many lines matched the pattern. To do this counting and reporting, we pass the `-c` flag to the `grep`.
+Let's find all occurrences of the word "NASA" in both NASA dataset files. We expect many more results this time, so rather than look at all the results, we'll instruct the command to report how many lines matched the pattern. To do this counting and reporting, we pass the `-c` flag to the `grep` command.
 
 - Run the following `grep` command on the two dataset files:
 

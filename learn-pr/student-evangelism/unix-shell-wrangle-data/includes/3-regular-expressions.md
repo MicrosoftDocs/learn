@@ -8,12 +8,7 @@ A useful online tool to have in your bookmarks is [Regular Expressions 101](http
 
 In brief, regex is an accessible way to define a pattern of characters and is mostly used in pattern identification, text mining, or input validation. The pattern specified can be broad or specific and is *strictly* read left to right. The regex input is always a text string.
 
-Most characters (alphabetic and numeric) don't have a special functionality and literally match that character. A regex of `SSH` only matches the string "SSH."
-
-Regular expression | Input string | Match
---- | --- | ---
-`SSH` | "SSH" | True
-`SSH` | "ZSH" | False
+Most characters (alphabetic and numeric) don't have a special functionality and literally match that character. A regex of `SSH` only matches the string "SSH." If the input string is "ZSH," the regex pattern wouldn't find a match.
 
 If you completed the previous unit, you should have a sample of the open NASA dataset. We'll use this dataset to do some pattern matching with regex in the Azure Cloud Shell sandbox.
 
@@ -87,9 +82,7 @@ Let's find all instances of "ARC-14" followed by any digit.
 
 ### Wildcards
 
-The period (`.`) character is a special character type called a *wildcard*. It can be used to represent any character, such as letters, numbers, white spaces, newlines, punctuation, and symbols.
-
-For example, to find all combinations of three characters that start with the letter "g" and end with the letter "t," you would use the regex `g.t`.
+The period (`.`) character is a special character type called a *wildcard*. It can be used to represent any character, such as letters, numbers, white spaces, newlines, punctuation, and symbols. For example, to find all combinations of three characters that start with the letter "g" and end with the letter "t," you would use the regex `g.t`.
 
 A common pattern used in regex is the period followed by an asterisk (`.*`). This regex syntax allows you to match any character zero or more times. 
 
@@ -99,7 +92,7 @@ Let's try this regex wildcard pattern to look for text that matches "NASA" follo
    
     You should see 26 results.
     
-    Here are some of the results from this pattern matching in the file:
+    Here are some of the lines in the file where the pattern was matched:
 
     ```output
     NASA Root Cause Analysis Tool
@@ -121,7 +114,7 @@ When you match sequences that appear at a specific part of a line of characters 
 - **Start of line**: Use the caret (`^`) symbol when the search pattern should consider a character sequence to be a match only if the matching portion appears at the *start* of a line.
 - **End of line**: Use the dollar (`$`) symbol when the search pattern should consider a character sequence to be a match only if the matching portion appears at the *end* of a line.
 
-By using the anchor syntax, you can now write a regex that will match numbers at the beginning of a line, `^[0-9]`, or at the end of a line, `[0-9]$`.
+You can now write a regex to match numbers at the beginning of a line, `^[0-9]`, or at the end of a line, `[0-9]$`.
 
 Let's try the regex anchor patterns to search for matches where "A" is the first or last character in the input string.
 
@@ -146,9 +139,7 @@ Let's try the regex anchor patterns to search for matches where "A" is the first
 
 Let's say we want to find lines where a period (`.`) is the last character. We know the dollar sign (`$`) is the end-of-line anchor, so we might enter `.$` in the search box. But this regex won't return the matches we're looking for. As we covered earlier, the period (`.`) matches **any** single character. Because every line ends with a character, every line is returned in the results.
 
-How do you prevent a special character from doing its regex function when you want to search for that actual character? You use a backslash (`\`) to escape the character that you want to search for.
-
-To find lines where a period (`.`) is the last character, we use the regex `\.$`.
+How do you prevent a special character from doing its regex function when you want to search for that actual character? You use a backslash (`\`) to escape the character that you want to search for. To find lines where a period (`.`) is the last character, we use the regex `\.$`.
 
 Let's try using the escape character in a regex pattern search of our NASA file.
 
