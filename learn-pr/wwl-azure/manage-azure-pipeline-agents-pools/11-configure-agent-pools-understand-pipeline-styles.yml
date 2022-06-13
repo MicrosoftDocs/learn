@@ -4,7 +4,7 @@ title: Configure agent pools and understanding pipeline styles
 metadata:
   title: Configure agent pools and understanding pipeline styles
   description: "Configure agent pools and understanding pipeline styles"
-  ms.date: 05/30/2022
+  ms.date: 06/13/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 45
 content: |
-  [!include[](includes/8-configure-agent-pools-understand-pipeline-styles.md)]
+  [!include[](includes/11-configure-agent-pools-understand-pipeline-styles.md)]
