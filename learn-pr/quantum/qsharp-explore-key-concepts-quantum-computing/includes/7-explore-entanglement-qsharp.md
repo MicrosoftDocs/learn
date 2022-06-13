@@ -1,4 +1,4 @@
-Now you'll create quantum entanglement in Q#. This time, instead of writting and running your program locally, you'll write a Q# program using an online Jupyter notebook in your Azure Quantum workspace. 
+Now you'll create quantum entanglement in Q#. This time, instead of writing and running your program locally, you'll write a Q# program using an online Jupyter notebook in your Azure Quantum workspace. 
 
 A [Jupyter](https://jupyter.org/) notebook is a document that contains both rich text and code and can run in your browser, and can run Q# and Python code in Azure Quantum.  Notebooks can be created directly in the Azure Quantum portal and offer features such as preloaded connection information and standard Q# libraries. 
 
