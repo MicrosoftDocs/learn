@@ -8,7 +8,7 @@ Azure AD Connect performs three types of operations from the directories it keep
 
 The following section describes different types of synchronization errors that can occur during the export operation to Azure AD using the Azure AD connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Azure AD indicate that the operation (add, update, delete etc.) attempted by Azure AD Connect (Sync Engine) on Azure Active Directory failed.
 
-:::image type="content" source="../media/export-errors-overview-01.png" alt-text="Screenshot of the Export Errors Overview page in Azure AD Connect.":::
+:::image type="content" source="../media/export-errors-overview-01.png" alt-text="Screenshot of the Export Errors Overview page in Azure A D Connect.":::
  
 ## Data mismatch errors
 
@@ -219,7 +219,7 @@ An **Existing Admin Role Conflict** will occur on a user object during synchroni
 
 Azure AD Connect is not allowed to soft-match a user object from on-premises AD with a user object in Azure AD that has an administrative role assigned to it.
 
-:::image type="content" source="../media/exist-admin.png" alt-text="Screenshot of the Azure AD Connect screen with the Existing Admin field selected.":::
+:::image type="content" source="../media/exist-admin.png" alt-text="Screenshot of the Azure A D Connect screen with the Existing Admin field selected.":::
 
 ### How to fix
 

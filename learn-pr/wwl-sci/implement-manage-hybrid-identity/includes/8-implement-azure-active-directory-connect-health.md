@@ -2,7 +2,7 @@ Azure Active Directory (Azure AD) Connect Health provides robust monitoring of y
 
 The information is presented in the [Azure AD Connect Health portal](https://aka.ms/aadconnecthealth). Use the Azure AD Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Azure AD Connect Health enables the single lens of health for your key identity components in one place.
 
-:::image type="content" source="../media/azure-active-directory-connect-health-2.png" alt-text="Diagram of What is Azure AD Connect Health.  Shows how Azure AD Connect is maintained.":::
+:::image type="content" source="../media/azure-active-directory-connect-health-2.png" alt-text="Diagram of What is Azure A D Connect Health.  Shows how Azure A D Connect is maintained.":::
 
 Using the Azure AD Connect Health feature requires an Azure AD Premium P1 license.
 
@@ -38,15 +38,15 @@ Download and install the Azure AD Connect Health agent from the Download Center.
 
 Before you install the agent, make sure your AD FS server host name is unique and isn't present in the AD FS service. To start the agent installation, double-click the *.exe* file that you downloaded. In the first window, select **Install**.
 
-:::image type="content" source="../media/install-1.png" alt-text="Screenshot of the installation window for the Azure AD Connect Health A D F S agent.":::
+:::image type="content" source="../media/install-1.png" alt-text="Screenshot of the installation window for the Azure A D Connect Health A D F S agent.":::
 
 After the installation finishes, select **Configure Now**.
 
-:::image type="content" source="../media/install-2.png" alt-text="Screenshot of the installation window for the confirmation message for the Azure AD Connect Health A D F S agent installation.":::
+:::image type="content" source="../media/install-2.png" alt-text="Screenshot of the installation window for the confirmation message for the Azure A D Connect Health A D F S agent installation.":::
 
 A PowerShell window opens to start the agent registration process. When you're prompted, sign in by using an Azure AD account that has permissions to register the agent. By default, the global admin account has permissions.
 
-:::image type="content" source="../media/install-3.png" alt-text="Screenshot of the sign-in window for Azure AD Connect Health A D F S.":::
+:::image type="content" source="../media/install-3.png" alt-text="Screenshot of the sign-in window for Azure A D Connect Health A D F S.":::
 
 After you sign in, PowerShell continues. When it finishes, you can close PowerShell. The configuration is complete.
 
@@ -54,7 +54,7 @@ At this point, the agent services should start automatically to allow the agent 
 
 If you haven't met all of the prerequisites, warnings appear in the PowerShell window. Be sure to complete the requirements before you install the agent. The following screenshot shows an example of these warnings.
 
-:::image type="content" source="../media/install-4.png" alt-text="Screenshot of the Azure AD Connect Health A D F S configure script. You can customize if needed.":::
+:::image type="content" source="../media/install-4.png" alt-text="Screenshot of the Azure A D Connect Health A D F S configure script. You can customize if needed.":::
 
 To verify that the agent was installed, look for the following services on the server. If you completed the configuration, they should already be running. Otherwise, they're stopped until the configuration is complete.
 
@@ -62,7 +62,7 @@ To verify that the agent was installed, look for the following services on the s
 - Azure AD Connect Health AD FS Insights Service
 - Azure AD Connect Health AD FS Monitoring Service
 
-:::image type="content" source="../media/install-5.png" alt-text="Screenshot of the Azure AD Connect Health A D F S services.  Deploy only the services you need.":::
+:::image type="content" source="../media/install-5.png" alt-text="Screenshot of the Azure A D Connect Health A D F S services.  Deploy only the services you need.":::
 
 ## Install the agent for Sync
 
@@ -73,7 +73,7 @@ To verify the agent has been installed, look for the following services on the s
 - Azure AD Connect Health Sync Insights Service
 - Azure AD Connect Health Sync Monitoring Service
 
-:::image type="content" source="../media/services.png" alt-text="Screenshot of the running Azure AD Connect Health for Sync services on the server.":::
+:::image type="content" source="../media/services.png" alt-text="Screenshot of the running Azure A D Connect Health for Sync services on the server.":::
 
 > [!NOTE]
 > Remember that you must have Azure AD Premium to use Azure AD Connect Health. If you don't have Azure AD Premium, you can't complete the configuration in the Azure portal.

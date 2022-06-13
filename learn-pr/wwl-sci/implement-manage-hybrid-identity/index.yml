@@ -16,7 +16,7 @@ abstract: |
   - Manage Azure Active Directory Connect (AADC)
   - Manage password hash synchronization (PHS)
   - Manage pass-through authentication (PTA)
-  - Manage seamless single sign-on (Seamless SSO)
+  - Manage Seamless Single Sign-On (Seamless SSO)
   - Manage federation excluding manual ADFS deployments
   - Troubleshoot synchronization errors
   - Implement and manage Azure Active Directory Connect Health

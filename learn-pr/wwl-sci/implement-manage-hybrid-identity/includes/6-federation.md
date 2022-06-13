@@ -1,6 +1,6 @@
 Federation can use a new or existing on-premises Active Directory farm in Windows Server 2012 R2 (or later), and Azure AD Connect enable users to log into Azure AD resources using their on-premises password.
 
-:::image type="content" source="../media/sc300-federation-flow-diagram.png" alt-text="Diagram of federation between on-premises and Azure AD. Shows users able log into both on-premises and cloud resources with a single shared login.":::
+:::image type="content" source="../media/sc300-federation-flow-diagram.png" alt-text="Diagram of federation between on-premises and Azure A D. Shows users able log into both on-premises and cloud resources with a single shared login.":::
 
 Federation is a collection of domains that have established trust. The level of trust may vary, but typically includes authentication and almost always includes authorization. A typical federation might include a number of organizations that have established trust for shared access to a set of resources.
 
@@ -18,7 +18,7 @@ Deploying to an AD FS farm, you need:
 
 ## Set up your federation using Azure AD Connect to connect to an AD FS farm
 
-:::image type="content" source="../media/sc300-federation-setup-dialog.png" alt-text="Screenshot of Azure AD Connect application showing the create and connect to an AD FS farm dialog.":::
+:::image type="content" source="../media/sc300-federation-setup-dialog.png" alt-text="Screenshot of Azure A D Connect application showing the create and connect to an AD FS farm dialog.":::
 
 **Specify the AD FS servers** Specify the servers where you want to install AD FS. You can add one or more servers, depending on your capacity needs. Before you set up this configuration, join all AD FS servers to Active Directory. This step isn't required for the Web Application Proxy servers. Microsoft recommends installing a single AD FS server for test and pilot deployments. After the initial configuration, you can add and deploy more servers to meet your scaling needs by running Azure AD Connect again.
 

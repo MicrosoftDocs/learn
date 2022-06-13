@@ -4,7 +4,7 @@ This section describes various operations you can perform by using Azure Active 
 
 You can configure the Azure AD Connect Health service to send email notifications when alerts indicate that your identity infrastructure is not healthy. This occurs when an alert is generated, and when it is resolved.
 
-:::image type="content" source="../media/email-notifications-discover.png" alt-text="Screenshot of Azure AD Connect Health email notification settings. Enter your admin's email.":::
+:::image type="content" source="../media/email-notifications-discover.png" alt-text="Screenshot of Azure A D Connect Health email notification settings. Enter your admin's email.":::
 
 > [!NOTE]
 > Email notifications are enabled by default.
@@ -47,7 +47,7 @@ Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azu
 1.  Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
 2.  On the **Server** blade, from the action bar, click **Delete**.
 
-:::image type="content" source="../media/delete-server-2.png" alt-text="Screenshot of Azure AD Connect Health delete server.  Only keep servers that are active.":::
+:::image type="content" source="../media/delete-server-2.png" alt-text="Screenshot of Azure A D Connect Health delete server.  Only keep servers that are active.":::
 
 3.  Confirm by typing the server name in the confirmation box.
 4.  Click **Delete**.
@@ -76,7 +76,7 @@ When you're deleting a service instance, be aware of the following:
 1.  Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
 2.  On the **Service** blade, from the action bar, click **Delete**.
 
-:::image type="content" source="../media/delete-server.png" alt-text="Screenshot of Azure AD Connect Health delete service.  Remove unwanted services.":::
+:::image type="content" source="../media/delete-server.png" alt-text="Screenshot of Azure A D Connect Health delete service.  Remove unwanted services.":::
 
 3.  Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 4.  Click **Delete**.
@@ -118,16 +118,16 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 
 1.  From the **Configure** section, click **Users**.
 
-    :::image type="content" source="../media/start-role-based-access-control.png" alt-text="Screenshot of Azure AD Connect Health resource sidebar.  Add the users you need.":::
+    :::image type="content" source="../media/start-role-based-access-control.png" alt-text="Screenshot of Azure A D Connect Health resource sidebar.  Add the users you need.":::
 
 2.  Select **Add**.
 3.  In the **Select a role** pane, select a role (for example, **Owner**).
 
-    :::image type="content" source="../media/role-based-access-control-add.png" alt-text="Screenshot of Azure AD Connect Health and Azure R B A C configure menu.":::
+    :::image type="content" source="../media/role-based-access-control-add.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C configure menu.":::
 
 4.  Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
 
-    :::image type="content" source="../media/role-based-access-control-select-users.png" alt-text="Screenshot of Azure AD Connect Health and Azure R B A C and new users highlighted.":::
+    :::image type="content" source="../media/role-based-access-control-select-users.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C and new users highlighted.":::
 
 5.  Select **OK**.
 6.  After the role assignment is complete, the users and groups appear in the list.
@@ -144,7 +144,7 @@ Now the listed users and groups have access, according to their assigned roles.
 1.  After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
 2.  On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
-    :::image type="content" source="../media/role-based-access-control-pin-blade.png" alt-text="Screenshot of Azure AD Connect Health and Azure R B A C pin blade, with pin icon highlighted.":::
+    :::image type="content" source="../media/role-based-access-control-pin-blade.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C pin blade, with pin icon highlighted.":::
 
     > [!NOTE]
     > A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
@@ -153,7 +153,7 @@ Now the listed users and groups have access, according to their assigned roles.
 
 You can remove a user or a group added to Azure AD Connect Health and Azure RBAC. Simply right-click the user or group, and select **Remove**.
 
-:::image type="content" source="../media/role-based-access-control-remove.png" alt-text="Screenshot of Azure AD Connect Health and Azure R B A C with Remove highlighted.":::
+:::image type="content" source="../media/role-based-access-control-remove.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C with Remove highlighted.":::
 
 ## Diagnose and remediate duplicated attribute sync errors<br>
 

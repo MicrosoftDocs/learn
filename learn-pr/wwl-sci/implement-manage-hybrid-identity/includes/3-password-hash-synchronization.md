@@ -2,7 +2,7 @@
 
 Password hash synchronization is one of the sign-in methods used to accomplish hybrid identity. Azure AD Connect synchronizes a hash, of the hash, of a user's password from an on-premises Active Directory instance to a cloud-based Azure AD instance.
 
-:::image type="content" source="../media/password-hash-sync-architecture-1.png" alt-text="Diagram of how Azure AD Connect passes a password hash for a user between on-premises and in the cloud.":::
+:::image type="content" source="../media/password-hash-sync-architecture-1.png" alt-text="Diagram of how Azure A D Connect passes a password hash for a user between on-premises and in the cloud.":::
 
 Active Directory Domain Services stores passwords in the form of a hash value representation of the actual user password. A hash value is a result of a one-way mathematical function (the hashing algorithm). There is no method to revert the result of a one-way function to the plain text version of a password. To synchronize your password, Azure AD Connect sync extracts your password hash from the on-premises Active Directory instance. Extra security processing is applied to the password hash before it is synchronized to the Azure Active Directory authentication service. Passwords are synchronized on a per-user basis and in chronological order.
 
@@ -16,7 +16,7 @@ If there are multiple connectors, it is possible to disable password hash sync f
 
 When you install Azure AD Connect by using the **Express Settings** option, password hash synchronization is automatically enabled. If you use custom settings when you install Azure AD Connect, password hash synchronization is available on the user sign-in page.
 
-:::image type="content" source="../media/single-sign-on-3.png" alt-text="Screenshot of enabling password hash synchronization in Azure AD Connect setup wizard.":::
+:::image type="content" source="../media/single-sign-on.png" alt-text="Screenshot of enabling password hash synchronization in Azure A D Connect setup wizard.":::
 
 ### Password hash synchronization and Federal Information Processing standard
 
@@ -50,6 +50,6 @@ Configure PingFederate with Azure AD Connect to set up federation with the domai
 
 After you choose to set up federation by using PingFederate in AD Connect, you're asked to verify the domain you want to federate. Select the domain from the drop-down menu.
 
-:::image type="content" source="../media/pingfederate-domain.png" alt-text="Screenshot of Azure AD Connect interface showing the domain you want to create a federation with.":::
+:::image type="content" source="../media/pingfederate-domain.png" alt-text="Screenshot of Azure A D Connect interface showing the domain you want to create a federation with.":::
 
 Configure PingFederate as the federation server for each federated Azure domain. Then select Export Settings to share this information with your PingFederate administrator. The federation server administrator updates the configuration and provides the PingFederate server URL and port number so that Azure AD Connect can verify the metadata settings.
