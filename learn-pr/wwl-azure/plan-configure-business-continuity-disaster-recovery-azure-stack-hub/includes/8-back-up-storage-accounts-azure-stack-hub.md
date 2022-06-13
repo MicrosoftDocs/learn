@@ -2,7 +2,7 @@ This unit covers protection and recovery of storage accounts forAzure Storage ac
 
 This section covers the overall structure of the solution and major parts.
 
-### Application layer<br>
+### Application layer
 
 Data can be replicated between storage accounts on separate Azure Stack Hub scale units. Replication is done issuing multiple `PUT Blob` or `Put Block` operations to write objects to multiple locations. Alternatively, the application can issue the `Copy Blob` operation to copy the Blob to a storage account hosted on a separate scale unit after the Put operation to the primary account completes.
 
@@ -30,7 +30,7 @@ Run `AzCopy` to store data when copying from your source and then writing to you
 
 2.  Create and record SAS Tokens for the source and target storage accounts.
 
-3.  Install **`AzCopy`** on the intermediary server and set the API Version to account for Azure Stack Hub Storage Accounts.
+3.  Install `AzCopy` on the intermediary server and set the API Version to account for Azure Stack Hub Storage Accounts.
 
 **For Windows Server:**
 

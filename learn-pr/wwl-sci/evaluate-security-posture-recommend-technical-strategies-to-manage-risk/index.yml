@@ -34,6 +34,7 @@ products:
 - defender-for-cloud
 - defender-for-cloud-apps
 units:
+- learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.introduction
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-benchmarks
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-microsoft-defender-for-cloud
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-secure-scores
