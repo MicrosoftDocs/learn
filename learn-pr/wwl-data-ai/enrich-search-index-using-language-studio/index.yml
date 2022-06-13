@@ -3,7 +3,7 @@ uid: learn.wwl.enrich-search-index-using-language-studio
 metadata:
   title: Enrich a search index using Language Studio
   description: "Azure Cognitive Service for language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions."
-  ms.date: 06/10/2022
+  ms.date: 06/13/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

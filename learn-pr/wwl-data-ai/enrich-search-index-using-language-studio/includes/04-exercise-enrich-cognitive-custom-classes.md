@@ -8,6 +8,8 @@ In this exercise, you'll create an Azure Cognitive Search solution and enrich an
 >To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
 >
 
+
+
 ## Setup your development environment with Python, VSCode and VSCode Extensions
 
 Install these tools to complete this exercise. You can still follow along with the steps without these tools.
@@ -24,8 +26,8 @@ Install these tools to complete this exercise. You can still follow along with t
 To save you time, select this Azure arm template to create resources you'll need later in the exercise.
 
 ### Deploy a pre-built arm template 
-
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPhilStollery%2Fmslearn-azure-cogntive-search-custom-language-skill%2Fmain%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploytoazure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
+MicrosoftLearning/mslearn-doc-intelligence/main/cognitive-search/azuredeploy.json
+1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploytoazure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
 
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
 
@@ -239,7 +241,7 @@ You'll now create a Python function app that your cognitive search custom skills
 1. On your local machine, in a terminal, clone this GitHub repository to your local machine. 
 
     ```bash
-    git clone https://github.com/PhilStollery/mslearn-azure-cogntive-search-custom-language-skill.git movie-genre-function
+    git clone https://github.com/MicrosoftLearning/mslearn-doc-intelligence movie-genre-function
     ```
 
 1. In Visual Studio Code, open the **movie-genre-function** folder.
@@ -298,6 +300,15 @@ The function app needs to be connected to your custom text classification model.
 1. Select the copy icon next to the **Primary key**.
 1. In Visual Studio Code, at the bottom of **local.settings.json**, paste the primary key.
 1. Edit the settings to add these four lines at the bottom, copy the endpoint into the `TA_ENDPOINT` value.
+
+    ```json
+    ,
+    "TA_ENDPOINT": " [your endpoint] ",
+    "TA_KEY": " [your key] ",
+    "DEPLOYMENT": "test-release",
+    "PROJECT_NAME": "movie-genre-classifier"
+    ```
+
 1. Copy the primary key into the `TA_KEY` value.
 
     ```json
