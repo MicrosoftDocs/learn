@@ -2,9 +2,9 @@ Azure Percept is a fully integrated, easy-to-use platform with added security fo
 
 **Azure IoT Services:** 
 
-- [Azure IoT](/learn/modules/introduction-iot/) 
-- [Azure IoT Hub](/learn/modules/introduction-to-iot-hub/)
-- [Azure IoT Edge](/introduction-iot-edge/) 
+- Azure IoT
+- Azure IoT Hub
+- Azure IoT Edge
 
 **Azure AI Services:** 
 
@@ -15,3 +15,13 @@ Azure Percept is a fully integrated, easy-to-use platform with added security fo
 
 - Stream Analytics 
 - Power BI 
+
+## Learning objectives
+
+After completing this module, you will be able to:
+- Understand the prerequisites needed to build and deploy an Edge AI solution with
+Azure Percept
+- Understand basic concepts of Azure IoT and Artificial Intelligence (AI) Services.
+
+## Prerequisites
+- Basic knowledge of Azure cloud computing is helpful but not necessary

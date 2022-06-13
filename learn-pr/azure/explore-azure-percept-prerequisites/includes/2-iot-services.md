@@ -1,4 +1,4 @@
-**Introduction to Azure IoT**
+## **Introduction to Azure IoT**
 
 Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud services that connect, monitor, and control up to millions of IoT assets. In simpler terms, an IoT solution is made up of one or more IoT devices and one or more back-end services running in the cloud that communicate with each other. 
 
@@ -15,7 +15,9 @@ Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud servic
 
 *To learn more, see additional resources in the summary section.* 
 
-**Introduction to Azure IoT Hub**
+
+
+## **Introduction to Azure IoT Hub**
 
 Azure IoT Hub enables secure and reliable communications between your IoT solution and the devices it manages. It provides a cloud-hosted solution backend to connect devices with per-device authentication, device management, and scaled provisioning.
 
@@ -30,7 +32,9 @@ Azure IoT Hub enables secure and reliable communications between your IoT soluti
 
 *To learn more, see additional resources in the summary section.* 
 
-**Introduction to Azure IoT Edge**
+
+
+## **Introduction to Azure IoT Edge**
 
 Azure IoT Edge is a combination of a cloud service that runs in the cloud and a runtime that runs on the device. The runtime starts and manages workflows on the device. The workflow comprises a set of containers that you link together in a specific order to create an end-to-end scenario. IoT Hub manages IoT Edge, enabling you to run workloads on the Edge devices you develop using cloud services. A workload is a module deployed using docker compatible containers.
 

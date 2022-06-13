@@ -1,4 +1,4 @@
-**Introduction to Artificial Intelligence (AI)**
+## **Introduction to Artificial Intelligence (AI)**
 
 Artificial Intelligence (AI) is the creation of software that imitates human behaviors and capabilities, For example, visual senses, speech recognition, decision-making, natural language understanding, etc. 
 
@@ -13,7 +13,7 @@ Artificial Intelligence (AI) is the creation of software that imitates human beh
 
 *To learn more, see additional resources in the summary section.* 
 
-**Introduction to Azure AI: Computer Vision**
+## **Introduction to Azure AI: Computer Vision**
 
 Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and videos. There are many specific types of computer vision problems AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions, including many cognitive services in Microsoft Azure.
 
