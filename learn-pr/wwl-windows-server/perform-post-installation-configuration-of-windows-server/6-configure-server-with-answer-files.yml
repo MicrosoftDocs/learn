@@ -4,12 +4,13 @@ title: Configure a server with answer files
 metadata:
   title: Configure a server with answer files
   description: "Configure a server with answer files"
-  ms.date: 02/26/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-configure-server-with-answer-files.md)]
