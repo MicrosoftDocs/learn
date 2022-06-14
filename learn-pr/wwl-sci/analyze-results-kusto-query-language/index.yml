@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-results-kql
 metadata:
   title: Analyze query results using KQL
   description: "Analyze query results using KQL"
-  ms.date: 06/13/2022
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
