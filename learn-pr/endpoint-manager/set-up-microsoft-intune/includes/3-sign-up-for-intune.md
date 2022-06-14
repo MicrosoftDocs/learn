@@ -9,7 +9,7 @@ When you complete the sign up process, you'll have a new tenant. A tenant is a d
 
 To sign up for the Microsoft Intune free trial, follow the steps below:
 
-1. Navigate to the [Intune set up account page](https://admin.microsoft.com/Signup/Signup.aspx?azure-portal=true&OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Navigate to the [Intune set up account page](https://signup.microsoft.com/get-started/signup?products=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&ali=1).
 
 2. Enter your email address and click **Next**.
 
