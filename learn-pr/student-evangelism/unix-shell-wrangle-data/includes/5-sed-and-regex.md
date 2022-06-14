@@ -100,7 +100,7 @@ Let's try the previous command again. This time, we'll write all content modifie
    You should see 26 lines of content in the new file.
 
 
-## Capstone exercise
+## Challenge
 
 If you use the search box to look for the string "NASA" in the new file, you'll notice one remaining instance of the abbreviation. Our call to the `sed` command made only 26 substitutions.
    
