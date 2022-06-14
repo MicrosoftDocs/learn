@@ -13573,12 +13573,12 @@
     {
       "source_path": "learn-pr/reactors/blockchain-solidity-ethereum-smart-contracts/4-truffle.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/reactors/blockchain-solidity-ethereum-smart-contracts/3-truffle",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-solidity-ethereum-smart-contracts/3-blockchain-dev-kit.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/reactors/blockchain-solidity-ethereum-smart-contracts/4-truffle-vs-code",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/learn-continuous-integration-github-actions/10-knowledge-check.md",
