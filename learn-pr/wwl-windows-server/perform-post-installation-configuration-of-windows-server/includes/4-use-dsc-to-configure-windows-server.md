@@ -88,7 +88,7 @@ After you create a configuration script, you must compile it. Compilation genera
 
 ```PowerShell
 .\IISInstall.ps1
-IISIinstall
+IISInstall
 ```
 
 ### Apply the configuration
