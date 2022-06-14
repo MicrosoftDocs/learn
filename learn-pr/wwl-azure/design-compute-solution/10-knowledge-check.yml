@@ -47,6 +47,6 @@ quiz:
     - content: "Azure virtual machines"
       isCorrect: false
       explanation: "Incorrect. Provisioning virtual machines would be more expensive and underutilized."
-    - content: "Azure functions."
+    - content: "Azure web apps."
       isCorrect: false
-      explanation: "Incorrect. Functions are best where connections are needed rather than standalone processing."
+      explanation: "Incorrect. Web apps are better for hosted web applications."
