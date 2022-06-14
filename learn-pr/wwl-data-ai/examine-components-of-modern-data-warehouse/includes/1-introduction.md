@@ -8,4 +8,3 @@ In this module, you will learn how to:
 - Describe key features for data ingestion pipelines
 - Identify common types of analytical data store and related Azure services
 - Provision Azure Synapse Analytics and use it to ingest, process, and query data
-
