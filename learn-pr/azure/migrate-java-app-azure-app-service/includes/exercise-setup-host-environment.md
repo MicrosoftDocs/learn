@@ -17,11 +17,11 @@ If you just created a free Azure account, you're the owner of your subscription.
 2. In the **Subscriptions** page, select the subscription in which you want to create an Azure Migrate project. 
 3. In the subscription, select **Access control (IAM)** > **Check access**.
 4. In **Check access**, search for the relevant user account.
-5. In **Add a role assignment**, click **Add**.
+5. In **Add a role assignment**, select **Add**.
 
     ![Search for a user account to check access and assign a role.](../media/azure-account-access.png)
 
-6. In **Add role assignment**, select the Owner role, and select the account (azmigrateuser in our example). Then click **Save**.
+6. In **Add role assignment**, select the Owner role, and select the account (azmigrateuser in our example). Then select **Save**.
 
     ![Opens the Add Role assignment page to assign a role to the account.](../media/assign-role.png)
 
@@ -68,4 +68,4 @@ If you just created a free Azure account, you're the owner of your subscription.
    cd Downloads
    .\AppContainerizationInstaller.ps1
    ```
-4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, click **Advanced** and **Continue to toolclient**. 
+4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, select **Advanced** and **Continue to toolclient**. 
