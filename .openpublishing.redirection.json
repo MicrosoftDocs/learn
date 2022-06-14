@@ -13999,6 +13999,36 @@
       "source_path": "learn-pr/wwl-azure/manage-azure-pipeline-agents-pools/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-azure-pipeline-agents-pools/13-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/2-describe-data-classification.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-compliance-controls-sensitive-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/3-describe-advanced-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-compliance-controls-sensitive-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-compliance-controls-sensitive-data/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/4-describe-sql-injection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-compliance-controls-sensitive-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/5-exercise-enable-advanced-data-security-classification.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-compliance-controls-sensitive-data/9-exercise-enable-advanced-data-security-classification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-compliance-controls-sensitive-data/11-summary",
+      "redirect_document_id": true
     }
   ]
 }
