@@ -14078,42 +14078,42 @@
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/2-learn-dapps.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/3-learn-drizzle.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/4-drizzle-dapps.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/5-shipping-dapp.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/6-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
