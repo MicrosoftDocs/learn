@@ -39,7 +39,7 @@ Imagine you have the URL `https://www.nasa.gov/about/sites/index.html` and you w
    https://www.nasa.gov/about/sites/home
    ```
 
-Now let's try some replacement operations on content in the **NASA-software-API.txt** file.
+Let's try some replacement operations on content in the **NASA-software-API.txt** file.
 
 We'll substitute all instances of the abbreviation "NASA" with the full title "National Aerospace Agency." Before we make the substitution, we'll get a count of the number of instances of the abbreviation "NASA." After we run the `sed` tool, we'll check the count to make sure all instances were replaced.
 
@@ -54,7 +54,7 @@ We'll substitute all instances of the abbreviation "NASA" with the full title "N
    The search box result shows 27 matches for the abbreviation "NASA."
 
    > [!Tip]
-   > You can use the content divider that separates the Cloud Shell editor from the terminal, to reduce the amount of space used by the editor. If you make this adjustment, you'll have more space in the terminal to see command output.
+   > To reduce the amount of space used by the Cloud Shell editor, you can use the content divider that separates the editor from the terminal. If you make this adjustment, you'll have more space in the terminal to see command output.
    
 1. Now run the `sed` command to do the replacement:
 
@@ -106,4 +106,4 @@ If you use the search box to look for the string "NASA" in the new file, you'll 
    
 One line in the NASA-software-API.txt file had two instances of the "NASA" abbreviation. Our call to the `sed` command successfully replaced the first instance. The second instance of "NASA" appears within the term "NASAViz."
 
-Can you use the commands that we've reviewed to make this final replacement?
+Can you use the commands we've reviewed to make this final replacement?

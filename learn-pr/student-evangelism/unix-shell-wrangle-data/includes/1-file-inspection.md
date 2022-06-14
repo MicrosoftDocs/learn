@@ -147,7 +147,7 @@ The `nl` filter has flags that allow you to change the increment value (`-i`), c
 
 The word count command `wc` counts the number of lines, words (separated by white space), and characters in a file or from `stdin`. The output is printed to `stdout` and separated by tabs.
 
-- Enter the `wc` command to see the number of lines, words, and characters in the NASA-software-API.txt file:
+1. Enter the `wc` command to see the number of lines, words, and characters in the NASA-software-API.txt file:
 
    ```bash
    wc NASA-software-API.txt
@@ -159,15 +159,15 @@ The word count command `wc` counts the number of lines, words (separated by whit
      703   8917   81115   NASA-software-API.txt
    ```
 
-You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Recheck the output from the previous command, `nl`. We see that the last printed line is:
+   You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Recheck the output from the previous command, `nl`. We see that the last printed line is:
 
-> `700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
+   > `700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"`
 
-Notice that the index of this line is 700 rather than 703, `700=GSC...`. What's happening here?
+   Notice that the index of this line is 700 rather than 703, `700=GSC...`. What's happening here?
 
-The index value 700 happens because, by default, the command `nl` doesn't number empty lines.
+   The index value 700 happens because, by default, the command `nl` doesn't number empty lines.
  
-- Try the command `nl` again, but this time with the option flag `-b a` to count all the lines, including the empty ones:
+1. Try the command `nl` again, but this time with the option flag `-b a` to count all the lines, including the empty ones:
 
    ```bash
    nl -b a NASA-software-API.txt
@@ -180,4 +180,4 @@ The index value 700 happens because, by default, the command `nl` doesn't number
    703  GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
    ```
 
-The index value (703) now matches the number of lines counted with the `wc` command.
+The index value now matches the number of lines counted with the `wc` command, 703.

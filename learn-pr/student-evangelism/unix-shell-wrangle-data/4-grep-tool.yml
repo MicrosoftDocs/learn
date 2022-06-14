@@ -3,7 +3,7 @@ uid: learn.student-evangelism.unix-shell-wrangle-data.4-grep-tool
 metadata:
   title: Use the grep command to match regular expressions
   description: In this unit, you'll learn how to use the grep command to match patterns by using regular expressions from the command line.
-  ms.date: 06/09/2022
+  ms.date: 06/15/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial

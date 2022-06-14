@@ -3,7 +3,7 @@ uid: learn.student-evangelism.unix-shell-wrangle-data.5-sed-and-regex
 metadata:
   title: Introduction to the stream editor
   description: In this unit, you'll be introduced to the stream editor (sed). You'll also learn how to use sed with regular expressions to modify text files from the command line.
-  ms.date: 06/09/2022
+  ms.date: 06/15/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
