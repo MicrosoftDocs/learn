@@ -1,6 +1,6 @@
 # Title
 
-Extend Microsoft Graph data using extensions
+Extend organizational data for your app by using extensions in Microsoft Graph
 
 ## Role(s)
 
@@ -16,13 +16,14 @@ microsoft-graph
 
 ## Prerequisites
 
-+ Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
-+ Basic knowledge of REST APIs
-+ Basic knowledge of Microsoft Graph and working with Microsoft Graph APIs
+1. Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
+2. Basic knowledge of REST APIs
+3. Basic knowledge of Microsoft Graph and working with Microsoft Graph APIs
+4. Sign in with your Azure AD credentials to an API client such as [Graph Explorer](https://aka.ms/ge) and [Postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork)
 
 ## Summary
 
-Add custom properties to Microsoft Graph resources through Microsoft Graph extensions. Query, read, and write the custom properties and their associated data to build unique experiences for your applications using Microsoft Graph.
+Add custom properties to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom properties and their associated data to build unique experiences for your applications using Microsoft Graph.
 
 ## Learning objectives
 
@@ -33,9 +34,9 @@ Pattern:
     - Validate
 -->
 
-1. Add custom properties to Microsoft Graph resources
-2. Query custom properties and their associated data through Microsoft Graph
-3. Use data in custom properties to extend your application
+1. Explore extension options for adding custom properties to Microsoft Graph
+1. Add, query, and update custom properties and their associated data through Microsoft Graph
+1. Use data in custom properties to extend your application
 
 ## Chunk your content into subtasks
 
@@ -43,11 +44,11 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Identify extension types available in Microsoft Graph | How to store lightweight information through Microsoft Graph without an external database | Knowledge check | 1 | Yes |
-| Use Microsoft Graph extension attributes 1-15 | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1,2 | Yes |
-| Use Microsoft Graph directory extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1,2 | Yes |
-| Use Microsoft Graph schema extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1,2 | Yes |
-| Use Microsoft Graph open extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1,2 | Yes |
+| Identify extension types available in Microsoft Graph | Evaluate Microsoft Graph extensibility options for storing lightweight information without an external database | Knowledge check | 1 | Yes |
+| Use Microsoft Graph extension attributes 1-15 | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
+| Use Microsoft Graph directory extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
+| Use Microsoft Graph schema extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
+| Use Microsoft Graph open extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
 
 
 ## Outline the units
@@ -56,39 +57,39 @@ Add more units as needed for your content
 
 1. Introduction
 
-    A multinational with subsidiaries across continents and hundreds of employees across each subsidiary uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. The company has deployed a team bonding mobile app that allows employees to discover each other and connect within and through their external social networks.
+    Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves, they'll discover each other, their interests, and their social networks.
 
-    The company wants to allow employees to share bits about themselves so their colleagues can discover them in public social networks. The company doesn’t want to invest in another database. Because of Microsoft Graph's extensibility options, the company will use Microsoft Graph to store this lightweight information and allow each employee the privilege to fully manage and own their data.
+    The organization doesn't want to invest in another database and has identified Microsoft Graph extensibility options as suited for the data needs of the app. You want to evaluate the extension options available in Microsoft Graph and how to use them in the team bonding app.
 
-2. Microsoft Graph extension attributes 1-15
+2. Examine Microsoft Graph extension attributes 1-15
 <!-- Conceptual unit -->
 
 
-3. Extend Microsoft Graph data using extension attributes
+3. Exercise - Extend Microsoft Graph data using extension attributes
 <!-- Exercise unit -->
 
 
-4. Microsoft Graph directory extensions
+4. Examine Microsoft Graph directory extensions
 <!-- Conceptual unit -->
 
 
-5. Extend Microsoft Graph data using directory extensions
+5. Exercise - Extend Microsoft Graph data using directory extensions
 <!-- Exercise unit -->
 
 
-6. Microsoft Graph schema extensions
+6. Examine Microsoft Graph schema extensions
 <!-- Conceptual unit -->
 
 
-7. Extend Microsoft Graph data using schema extensions
+7. Exercise - Extend Microsoft Graph data using schema extensions
 <!-- Exercise unit -->
 
 
-8. Microsoft Graph open extensions
+8. Examine Microsoft Graph open extensions
 <!-- Conceptual unit -->
 
 
-9. Extend Microsoft Graph data using open extensions
+9. Exercise - Extend Microsoft Graph data using open extensions
 <!-- Exercise unit -->
 
 
@@ -98,7 +99,7 @@ Add more units as needed for your content
 -->
 11. Summary
 
-    The company has extended employee profile information using Microsoft Graph and without using an external database. Through extension attributes, the company can extend the team bonding app with employee-supplied data.
+    The company has extended employee information using Microsoft Graph and without using an external database. Through the team bonding app and the underlying extension attributes, employees can supply data about themselves. Through the app, employees can exercise curiosity about their colleagues and connect with them internally and through external social networks.
 
     + Comparison of the extension types
 
