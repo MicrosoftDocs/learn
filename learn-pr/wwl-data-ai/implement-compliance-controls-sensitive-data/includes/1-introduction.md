@@ -1,10 +1,12 @@
-This module explores the practices of setting compliance controls on the data that is stored within the SQL Server database. We will also review the Azure Defender Advanced Threat Protection options within the Azure environment.
+This module explores the practices of setting compliance controls on the data that is stored within Azure SQL. We will also review important security features available on Azure to maintain compliance and improve visibility into any security risks.
 
 ## Learning objectives
 
 After taking this module, you will understand:
 
 - How data should be classified
-- Why data classification should be done
-- What Azure threat protection does
-- Why Azure threat protection should be used
+- Why server and database audit are important
+- How to implement row level security and dynamic data masking
+- Understand the usage of Microsoft Defender for SQL
+- How Azure SQL Database Ledger works
+- Explore Azure Purview supported capabilities 
