@@ -19,7 +19,7 @@ microsoft-graph
 1. Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
 2. Basic knowledge of REST APIs
 3. Basic knowledge of Microsoft Graph and working with Microsoft Graph APIs
-4. Sign in with your Azure AD credentials to an API client such as [Graph Explorer](https://aka.ms/ge) and [Postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork)
+4. Sign in with your Azure AD credentials to an API client such as [Graph Explorer](https://aka.ms/ge) or [Postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork)
 
 ## Summary
 
