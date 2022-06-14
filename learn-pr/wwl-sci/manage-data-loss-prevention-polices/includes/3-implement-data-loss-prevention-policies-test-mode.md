@@ -16,7 +16,7 @@ To enable test mode for your DLP policy, you need to edit the DLP policy and go 
 
 1. Select **Submit** after reviewing the policy.
 
-    ![Screenshot of a test policy example](../media/test-policy.png)
+    ![Screenshot of a test policy example.](../media/test-policy.png)
 
 
 
@@ -26,7 +26,7 @@ To enable test mode for your DLP policy, you need to edit the DLP policy and go 
 
 1. On the Reports page, filter for the policy you created and review the results.
 
-     ![Screenshot that shows policy matches report](../media/policy-matches-report.png)
+     ![Screenshot that shows policy matches report.](../media/policy-matches-report.png)
 
 > [!TIP]
 >DLP Policy reports might take up to 24 hours to show up in your display!
@@ -47,7 +47,7 @@ User notifications inform users that a policy was triggered. Enabling these noti
 
 1. In **Edit rule** pane, go down to the **User notifications** section, in **Use notifications to inform your users and help educate them on the proper use of sensitive info**, select **On**.
 
-    ![Screenshot that shows a user notifications example](../media/rule-user-notification.png)
+    ![Screenshot that shows a user notifications example.](../media/rule-user-notification.png)
 
 ## Data loss prevention rule: incident reports
 
@@ -61,5 +61,5 @@ The following steps describe how to configure Incident reports in your DLP rules
 
 1. Decide on the various other parameters available to fine-tune your incident reports.
 
-    ![Screenshot that shows a rule incident example](../media/rule-incident-report.png)
+    ![Screenshot that shows a rule incident example.](../media/rule-incident-report.png)
 
