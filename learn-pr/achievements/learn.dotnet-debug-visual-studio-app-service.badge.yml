@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.dotnet-debug-visual-studio-app-service.badge
+metadata:
+  title: >-
+    Microsoft Badge: Remotely debug ASP.NET Core apps hosted on Azure App
+    Service using Visual Studio was issued by Microsoft
+socialImageUrl: /learn/achievements/generic-badge-social.png
