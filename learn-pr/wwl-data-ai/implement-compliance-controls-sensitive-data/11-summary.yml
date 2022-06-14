@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-compliance-controls-for-sensitive-data.introduction
-title: Introduction
+uid: learn.wwl.implement-compliance-controls-for-sensitive-data.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Summary
+  description: "Summary"
   ms.date: 06/14/2022
   author: wwlpublish
   ms.author: jupadrao
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/11-summary.md)]
