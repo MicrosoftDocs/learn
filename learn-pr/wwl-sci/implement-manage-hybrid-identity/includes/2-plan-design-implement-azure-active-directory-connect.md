@@ -8,7 +8,7 @@ Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybr
 - Federation integration - Federation is an optional part of Azure AD Connect and can be used to configure a hybrid environment using an on-premises AD FS infrastructure. It also provides AD FS management capabilities such as certificate renewal and more AD FS server deployments.
 - Health monitoring - Azure AD Connect-Health provides robust monitoring.
 
-:::image type="content" source="../media/architecture.png" alt-text="Diagram of the Azure AD Connect deployment architecture. Described over the next section.":::
+:::image type="content" source="../media/architecture.png" alt-text="Diagram of the Azure A D Connect deployment architecture. Described over the next section.":::
 
 ## Why use Azure AD Connect?
 
@@ -27,7 +27,7 @@ When you choose this authentication method, Azure AD handles users' sign-in proc
 - **Effort**. Password hash synchronization requires the least effort regarding deployment, maintenance, and infrastructure. This level of effort typically applies to organizations that only need their users to sign in to Microsoft 365, SaaS apps, and other Azure AD-based resources. When turned on, password hash synchronization is part of the Azure AD Connect sync process and runs every two minutes.
 - **User experience**. To improve users' sign-in experience, deploy seamless SSO with password hash synchronization. Seamless SSO eliminates unnecessary prompts when users are signed in.
 - **Advanced scenarios**. If organizations choose to, it's possible to use insights from identities with Azure AD Identity Protection reports with Azure AD Premium P2. An example is the leaked credentials report. Windows Hello for Business has specific requirements when you use password hash synchronization. Azure AD Domain Services requires password hash synchronization to create users with their corporate credentials in the managed domain.
-- **Business continuity**. Using password hash synchronization with cloud authentication is highly available as a cloud service that scales to all Microsoft datacenters. To make sure password hash synchronization does't go down for extended periods, deploy a second Azure AD Connect server in staging mode in a standby configuration.
+- **Business continuity**. Using password hash synchronization with cloud authentication is highly available as a cloud service that scales to all Microsoft datacenters. To make sure password hash synchronization doesn't go down for extended periods, deploy a second Azure AD Connect server in staging mode in a standby configuration.
 - **Considerations**. Currently, password hash synchronization doesn't immediately enforce changes in on-premises account states. In this situation, a user has access to cloud apps until the user account state is synchronized to Azure AD. Organizations might want to overcome this limitation by running a new synchronization cycle after administrators do bulk updates to on-premises user account states. An example is disabling accounts.
 
 **Azure AD pass-through authentication (PTA)**. Provides a simple password validation for Azure AD authentication services by using a software agent that runs on one or more on-premises servers. The servers validate the users directly with your on-premises Active Directory, which ensures that the password validation doesn't happen in the cloud. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign in hours might use this authentication method.
@@ -59,15 +59,15 @@ The following diagrams outline the high-level architecture components required f
 
 - Simplicity of a password hash synchronization solution:
 
-    :::image type="content" source="../media/azure-active-directory-authentication-2.png" alt-text="Screenshot of Azure AD hybrid identity with password hash synchronization enabled.":::
+    :::image type="content" source="../media/azure-active-directory-authentication-2.png" alt-text="Screenshot of Azure A D hybrid identity with password hash synchronization enabled.":::
 
 - Agent requirements of pass-through authentication, using two agents for redundancy:
 
-    :::image type="content" source="../media/azure-active-directory-authentication-3.png" alt-text="Screenshot of Azure AD hybrid identity with pass-through authentication enabled.":::
+    :::image type="content" source="../media/azure-active-directory-authentication-3.png" alt-text="Screenshot of Azure A D hybrid identity with pass-through authentication enabled.":::
 
 - Components required for federation in your perimeter and internal network of your organization:
 
-    :::image type="content" source="../media/azure-active-directory-authentication-4.png" alt-text="Screenshot of the Azure AD hybrid identity with federated authentication selected.":::
+    :::image type="content" source="../media/azure-active-directory-authentication-4.png" alt-text="Screenshot of the Azure A D hybrid identity with federated authentication selected.":::
 
 
 ## Recommendations
@@ -106,7 +106,7 @@ The attribute value must follow the following rules:
 - Shouldn't be case-sensitive and avoid values that may vary by case
 - Should be assigned when the object is created
 
-If you have a single forest on-premises, the attribute you should use is **objectGuid**. You can also use the objectGuid attribute when you use express settings in Azure AD Connect.  And also the attribute used by DirSync. If you have multiple forests and don't move users between forests and domains, then **objectGUID** is a good attribute to use. Another solution is to pick an existing attribute you know does't change. Commonly used attributes include **employeeID**. If you consider an attribute that contains letters, make sure there's no chance the case (upper case vs. lower case) can change for the attribute's value. Bad attributes that shouldn't be used include those attributes with the name of the user. Once the sourceAnchor attribute is decided, the wizard stores the information in your Azure AD tenant. The information will be used by future installation of Azure AD Connect.
+If you have a single forest on-premises, the attribute you should use is **objectGuid**. You can also use the objectGuid attribute when you use express settings in Azure AD Connect.  And also the attribute used by DirSync. If you have multiple forests and don't move users between forests and domains, then **objectGUID** is a good attribute to use. Another solution is to pick an existing attribute you know doesn't change. Commonly used attributes include **employeeID**. If you consider an attribute that contains letters, make sure there's no chance the case (upper case vs. lower case) can change for the attribute's value. Bad attributes that shouldn't be used include those attributes with the name of the user. Once the sourceAnchor attribute is decided, the wizard stores the information in your Azure AD tenant. The information will be used by future installation of Azure AD Connect.
 
 ## Azure AD sign-in
 
@@ -115,7 +115,7 @@ The synchronization settings of your on-premises directory integration with Azur
 - The attribute values conform to the UPN syntax (RFC 822), the format username@domain
 - The suffix in the values matches to one of the verified custom domains in Azure AD
 
-In express settings, the assumed choice for the attribute is userPrincipalName. If the userPrincipalName attribute does't contain the value you want your users to sign in to Azure, then you must choose **Custom Installation**.
+In express settings, the assumed choice for the attribute is userPrincipalName. If the userPrincipalName attribute doesn't contain the value you want your users to sign in to Azure, then you must choose **Custom Installation**.
 
 ### Custom domain state and User Principal Name
 
@@ -144,7 +144,7 @@ This section describes various on-premises and Azure Active Directory (Azure AD)
 
 The following diagram shows a high-level architecture of provisioning engine connecting to a single forest, although multiple forests are supported. This architecture shows how the various components interact with each other.
 
-:::image type="content" source="../media/azure-active-directory-connect-internal.png" alt-text="Diagram of how the connected directories and Azure AD Connect provisioning engine interact. Includes Connector Space and Metaverse components in an SQL Database.":::
+:::image type="content" source="../media/azure-active-directory-connect-internal.png" alt-text="Diagram of how the connected directories and Azure A D Connect provisioning engine interact. Includes Connector Space and Metaverse components in an SQL Database.":::
 
 The provisioning engine connects to each Active Directory forest and to Azure AD. The process of reading information from each directory is called Import. Export refers to updating the directories from the provisioning engine. Sync evaluates the rules of how the objects will flow inside the provisioning engine.
 

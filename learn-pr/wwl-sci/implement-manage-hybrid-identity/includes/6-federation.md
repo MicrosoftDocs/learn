@@ -18,7 +18,7 @@ Deploying to an AD FS farm, you need:
 
 ## Set up your federation using Azure AD Connect to connect to an AD FS farm
 
-:::image type="content" source="../media/sc300-federation-setup-dialog.png" alt-text="Screenshot of Azure A D Connect application showing the create and connect to an AD FS farm dialog.":::
+:::image type="content" source="../media/sc300-federation-setup-dialog.png" alt-text="Screenshot of Azure A D Connect application showing the create and connect to an A D F S farm dialog.":::
 
 **Specify the AD FS servers** Specify the servers where you want to install AD FS. You can add one or more servers, depending on your capacity needs. Before you set up this configuration, join all AD FS servers to Active Directory. This step isn't required for the Web Application Proxy servers. Microsoft recommends installing a single AD FS server for test and pilot deployments. After the initial configuration, you can add and deploy more servers to meet your scaling needs by running Azure AD Connect again.
 
