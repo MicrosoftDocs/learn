@@ -4,11 +4,9 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 It's common practice to train the model using a subset of the data, while holding back some data with which to test the trained model. This enables you to compare the labels that the model predicts with the actual known labels in the original dataset.
 
-In this exercise, you're going to work through steps to extend the **Auto Price Training** pipeline as shown here:
+In this exercise, you're going to work through steps to extend the **Auto Price Training** pipeline. 
 
-![split data, then train with linear regression and score](../media/train-score.png)
-
-Follow the steps below, using the image above for reference as you add and configure the required modules.
+Follow the steps below, using the image below step eight for reference as you add and configure the required modules.
 
 1. Open the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
 2. In the **Asset Library** pane on the left, in **Components** section, find and drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
@@ -19,6 +17,7 @@ Follow the steps below, using the image above for reference as you add and confi
 3. Select the **Split Data** module, and configure its settings as follows:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
+    * **Randomized split**: True
     * **Random seed**: 123
     * **Stratified split**: False
 4. Expand the **Model Training** section in the pane on the left, and drag a **Train Model** module to the canvas, under the **Split Data** module. Then connect the *Result dataset1* (left) output of the **Split Data** module to the *Dataset* (right) input of the **Train Model** module.
@@ -31,7 +30,7 @@ Follow the steps below, using the image above for reference as you add and confi
 7. To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset. Expand the **Model Scoring & Evaluation** section and drag a **Score Model** module to the canvas, below the **Train Model** module. Then connect the output of the **Train Model** module to the **Trained model** (left) input of the **Score Model** module; and drag the **Results dataset2** (right) output of the **Split Data** module to the **Dataset** (right) input of the **Score Model** module.
 8. Ensure your pipeline looks like this image:
 
-    ![split data, then train with linear regression and score](../media/train-score.png)
+    ![Split data, then train with linear regression and score](../media/train-score.png)
 
 ## Run the training pipeline
 
