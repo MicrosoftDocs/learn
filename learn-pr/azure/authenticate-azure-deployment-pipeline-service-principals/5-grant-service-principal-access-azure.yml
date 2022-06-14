@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Grant a service principal access to Azure
   description: Learn how to create an Azure role assignment for a service principal.
-  ms.date: 06/30/2021
+  ms.date: 06/13/2022
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
