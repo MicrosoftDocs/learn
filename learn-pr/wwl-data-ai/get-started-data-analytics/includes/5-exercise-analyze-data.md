@@ -13,7 +13,7 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
 1. In your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/onedrive.png" alt-text="OneDrive" lightbox="../media/onedrive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="OneDrive" lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
@@ -128,7 +128,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 8. Delete the chart, and then select all the data and headers, including **Temperature** and insert a new line chart. This inserts a chart like this:
 
-    :::image type="content" source="../media/sales-temp-line-chart.png" alt-text="A line chart showing sales and temperature by date":::
+    :::image type="content" source="../media/sales-temperature-line-chart.png" alt-text="A line chart showing sales and temperature by date":::
 
     This time, the chart includes separate series for **Sales** and **Temperature**. Both series show a similar pattern; it seems sales and temperature both increase over the summer months.
 
@@ -150,7 +150,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 3. Select the **B** column header and on the **Home** ribbon tab, use the **\$** menu to format the revenue data as **\$ English (United States)**, like this:
 
-    :::image type="content" source="../media/format-avg-revenue.png" alt-text="A worksheet showing average revenue by day formatted as US currency":::
+    :::image type="content" source="../media/format-average-revenue.png" alt-text="A worksheet showing average revenue by day formatted as US currency":::
 
 4. Select all the data, including the **Day** and **AverageRevenue** headers, and on the **Insert** tab of the ribbon, in the **Column** drop-down list, select the first column chart format. A chart like this is created:
 
