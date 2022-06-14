@@ -18,7 +18,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
 1. In your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/onedrive.png" alt-text="OneDrive" lightbox="../media/onedrive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="OneDrive" lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DataFund**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
@@ -90,7 +90,7 @@ In this exercise, you will use formulas to create derived columns that extend th
 
     This inserts a new **Column1** column between the **Date** and **Day** columns as shown here:
 
-    :::image type="content" source="../media/column1.png" alt-text="New Column1 added to the worksheet" lightbox="../media/column1.png":::
+    :::image type="content" source="../media/column-1.png" alt-text="New Column1 added to the worksheet" lightbox="../media/column-1.png":::
 
 3. In cell **B1**, rename **Column1** to **Month**. Then with cell **B2**selected, in the ***fx*** bar above the data, enter the following formula:
 
