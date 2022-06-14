@@ -57,7 +57,7 @@ The order of the views in the `Children` collection determines their layout orde
 
 ## How to change the space between views in a StackLayout
 
-It's common to want some space between the children of a `StackLayout`. `StackLayout` automatically adds a bit of room between each child, but you can control the space by using the `Spacing` property. The default value is zero units, but you can set it to whatever looks good to you. Here's an example of setting the `Spacing` property to `30` in XAML:
+It's common to want some space between the children of a `StackLayout`. `StackLayout` lets you control the space between each child by using the `Spacing` property. The default value is zero units, but you can set it to whatever looks good to you. Here's an example of setting the `Spacing` property to `30` in XAML:
 
 ```xaml
 <StackLayout Spacing="30">
