@@ -1,6 +1,6 @@
 Azure Arc enables organizations like Contoso to extend some capabilities of *Azure Policy* to computer operating systems that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the operating system, applications, and environment. Additionally, Contoso can configure the time zone on servers that are running the Windows Server operating system. 
 
-Contoso IT staff can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that IT staff install the Azure Connected Machine agent on each computer in the scope of management. 
+Contoso IT staff can also use Azure Policy to manage and evaluate compliance for Azure Arc-enabled Kubernetes clusters. Enabling this functionality requires that IT staff install the Azure Connected Machine agent on each computer in the scope of management. 
 
 > [!IMPORTANT]
 > Currently, you can only audit settings in this context. Auto-remediation is not yet available.

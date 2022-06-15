@@ -41,7 +41,7 @@ If you prefer to use a parameter JSON file, that is also possible with the **--p
 az deployment group create \
     --resource-group '<resource-group>' \
     --template-file '.\template.json' \
-    --parameters '@.\template.json'
+    --parameters '@.\parameters.json'
 ```
 
 ## Deploy Bicep template to a resource group

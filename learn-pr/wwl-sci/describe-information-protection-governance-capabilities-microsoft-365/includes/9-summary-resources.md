@@ -5,8 +5,8 @@ Without these capabilities, an organization's information could be at risk, and 
 Now that you’ve completed this module, you should be able to:
 
 - Describe data classification capabilities.
-- Describe records management.
 - Describe data loss prevention.
+- Describe records management.
 
 ## Learn more
 
@@ -15,5 +15,5 @@ Now that you’ve completed this module, you should be able to:
 - [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 - [Get started with activity explorer](/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Learn about retention policies and retention labels](/microsoft-365/compliance/retention?view=o365-worldwide)
-- [Microsoft Information Governance in Microsoft 365](/microsoft-365/compliance/manage-information-governance?view=o365-worldwide)
-- [Govern your data with Microsoft Purview](/microsoft-365/compliance/records-management?view=o365-worldwide)
+- [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-information-governance?view=o365-worldwide)
+- [Learn about records management](/microsoft-365/compliance/records-management?view=o365-worldwide)

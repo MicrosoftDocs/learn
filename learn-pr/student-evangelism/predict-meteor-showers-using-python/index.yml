@@ -31,6 +31,9 @@ roles:
 - student 
 products:
 - vs-code
+subjects:
+- development-tools
+- data-analytics
 units:
 - learn.student-evangelism.predict-meteor-showers-using-python.1-introduction
 - learn.student-evangelism.predict-meteor-showers-using-python.2-story-setup

@@ -31,6 +31,8 @@ products:
   - blazor
   - dotnet-core
   - aspnet
+subjects:
+- development-tools
 units:
 - learn.interact-with-data-blazor-web-apps.introduction
 - learn.interact-with-data-blazor-web-apps.create-user-interfaces-with-blazor-components

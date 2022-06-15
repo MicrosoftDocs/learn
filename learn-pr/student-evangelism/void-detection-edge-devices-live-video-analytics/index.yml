@@ -35,6 +35,10 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
+- data-analytics
+- cloud-computing
 units:
 - learn.oxford.void-detection-edge-devices-lva.introduction
 - learn.oxford.void-detection-edge-devices-lva.build-video-analytics-solution

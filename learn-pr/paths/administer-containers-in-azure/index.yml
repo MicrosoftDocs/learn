@@ -21,6 +21,8 @@ products:
 - azure
 - azure-container-instances
 - azure-container-registry
+subjects:
+- container
 modules:
 - learn.intro-to-docker-containers
 - learn.intro-to-containers

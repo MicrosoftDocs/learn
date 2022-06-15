@@ -4,7 +4,7 @@ In this module, you'll learn how to architect the optimal disk configuration for
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Create a virtual machine (VM)
 - Configure and attach virtual hard drives (VHDs) to an existing VM

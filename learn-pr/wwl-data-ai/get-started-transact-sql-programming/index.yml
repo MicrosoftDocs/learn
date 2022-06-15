@@ -35,6 +35,9 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- data-analytics
+- database
 units:
 - learn.wwl.get-started-transact-sql-programming.introduction
 - learn.wwl.get-started-transact-sql-programming.describe-t-sql-for-programming

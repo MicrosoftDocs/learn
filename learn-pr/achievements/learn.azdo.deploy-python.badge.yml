@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.deploy-python.badge
+metadata:
+  title: >-
+    Microsoft Badge: Automate Python deployments with Azure Pipelines was issued
+    by Microsoft
+socialImageUrl: /learn/achievements/azure-devops/deploy-python-social.png

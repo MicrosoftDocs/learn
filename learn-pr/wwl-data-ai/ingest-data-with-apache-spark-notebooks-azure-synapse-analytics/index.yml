@@ -31,6 +31,10 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
+- data-modeling
+- data-engineering
 units:
 - learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.introduction
 - learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.introduction-to

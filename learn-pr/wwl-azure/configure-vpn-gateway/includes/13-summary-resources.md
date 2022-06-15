@@ -8,8 +8,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [VPN Gateway documentation](/azure/vpn-gateway/)
  -  [Validated VPN devices list](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)
- -  [Learn - Connect your on-premises network to Azure with VPN Gateway](/learn/modules/connect-on-premises-network-with-vpn-gateway/)
+ -  [Learn - Connect your on-premises network to Azure with VPN Gateway (Sandbox)](/learn/modules/connect-on-premises-network-with-vpn-gateway/)

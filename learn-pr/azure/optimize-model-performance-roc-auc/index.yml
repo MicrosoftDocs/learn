@@ -25,7 +25,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- classification-analysis
+units:
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout.introduction
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout.receiver-operator-characteristic-curve
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-evaluate-roc-curves

@@ -3,7 +3,7 @@ uid: learn.wwl.design-container-build-strategy
 metadata:
   title: Design a container build strategy
   description: "Design a container build strategy"
-  ms.date: 02/22/2022
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -40,17 +40,17 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- container
 units:
 - learn.wwl.design-container-build-strategy.introduction
-- learn.wwl.design-container-build-strategy.why-containers
 - learn.wwl.design-container-build-strategy.examine-structure-of-containers
-- learn.wwl.design-container-build-strategy.explore-docker-containers-development
 - learn.wwl.design-container-build-strategy.work-docker-containers
-- learn.wwl.design-container-build-strategy.explore-microservices-containers
-- learn.wwl.design-container-build-strategy.explore-azure-container-related-services
-- learn.wwl.design-container-build-strategy.explore-docker-container-registries
-- learn.wwl.design-container-build-strategy.exercise-create-azure-container-registry
 - learn.wwl.design-container-build-strategy.understand-dockerfile-core-concepts
+- learn.wwl.design-container-build-strategy.examine-multi-stage-dockerfiles
+- learn.wwl.design-container-build-strategy.examine-considerations-for-multiple-stage-builds
+- learn.wwl.design-container-build-strategy.explore-azure-container-related-services
+- learn.wwl.design-container-build-strategy.deploy-docker-containers-to-azure-app-service-web-apps
 - learn.wwl.design-container-build-strategy.knowledge-check
 - learn.wwl.design-container-build-strategy.summary
 badge:

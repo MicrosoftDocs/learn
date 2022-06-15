@@ -38,6 +38,8 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
   - azure-monitor
+subjects:
+- business-applications
 units:
   - learn.microservices-logging-aspnet-core.1-introduction
   - learn.microservices-logging-aspnet-core.2-environment-setup

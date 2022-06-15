@@ -27,7 +27,8 @@ products:
 - azure-cognitive-services
 prerequisites: |
   - None
-
+subjects:
+- artificial-intelligence
 units:
 - learn.advocates.responsible-bots-introduction.1-introduction
 - learn.advocates.responsible-bots-introduction.2-what-is-responsible-bot

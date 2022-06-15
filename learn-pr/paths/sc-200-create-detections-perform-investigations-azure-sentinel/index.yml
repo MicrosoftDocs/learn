@@ -22,6 +22,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 modules:
 - learn.azure.analyze-data-in-sentinel
 - learn.azure.threat-response-sentinel-playbooks

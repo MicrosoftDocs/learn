@@ -40,6 +40,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- data-engineering
+- cloud-security
 units:
 - learn.wwl.implement-route-for-mobile-application-crash-report-data.introduction
 - learn.wwl.implement-route-for-mobile-application-crash-report-data.explore-app-center-diagnostics

@@ -24,6 +24,8 @@ roles:
 - security-operations-analyst
 products:
 - m365
+subjects:
+- security
 units:
 - learn.wwl.mitigate-incidents-microsoft-365-defender.introduction
 - learn.wwl.mitigate-incidents-microsoft-365-defender.use-microsoft-security-center-portal

@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.assess-your-development-process.1-introduction
 - learn.azdo.assess-your-development-process.2-meet-the-team

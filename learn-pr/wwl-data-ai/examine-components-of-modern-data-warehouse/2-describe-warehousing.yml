@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-components-of-modern-data-warehouse.describe-warehousing
-title: Describe modern data warehousing
+title: Describe data warehousing architecture
 metadata:
-  title: Describe modern data warehousing
-  description: "Describe modern data warehousing"
-  ms.date: 04/11/2022
+  title: Describe data warehousing architecture
+  description: "Describe data warehousing architecture"
+  ms.date: 06/15/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

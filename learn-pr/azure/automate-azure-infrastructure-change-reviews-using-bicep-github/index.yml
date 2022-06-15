@@ -47,6 +47,9 @@ languages:
 products:
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.introduction
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-automated-pull-request-validation

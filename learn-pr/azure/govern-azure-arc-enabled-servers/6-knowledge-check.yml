@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.govern-azure-arc-enabled-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/01/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: While most Azure Policy scenarios for Azure Arc-enabled servers are free, which of the following Azure Policy scenarios will trigger a charge?
+    choices:
+    - content: Assigning a non-Guest Configuration Azure Policy to an Arc-enabled server
+      isCorrect: false
+      explanation: Incorrect, non-Guest Configuration Azure Policies are free.
+    - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled Stack HCI Node
+      isCorrect: false
+      explanation: Incorrect, assigning to an Arc-enabled Stack HCI Node is free.
+    - content: Assigning a Guest Configuration Azure Policy to an Azure VM
+      isCorrect: false
+      explanation: Incorrect, assigning to an Azure VM is free.
+    - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled server, that isn't connected to Stack HCI
+      isCorrect: true
+      explanation: Correct, assigning a Guest Configuration Azure Policy to a non-Stack HCI Arc-enabled server is charged.
+  - content: Azure Automanage onboards Azure Arc-enabled servers to several best practices. Which isn't an Azure Automanage best practice for Arc-enabled servers?
+    choices:
+    - content: Machine Insights Monitoring
+      isCorrect: false
+      explanation: Incorrect, Machine Insights Monitoring is a participating service.
+    - content: Microsoft Sentinel
+      isCorrect: true
+      explanation: Correct, Microsoft Sentinel isn’t a participating service.
+    - content: Change Tracking and Inventory
+      isCorrect: false
+      explanation: Incorrect, Change Tracking and Inventory are not participating services.
+    - content: Azure Guest Configuration
+      isCorrect: false
+      explanation: Incorrect, Azure Guest Configuration is a participating service.
+  - content: Which of the following services isn’t a component of Azure Automation’s robust capabilities for Arc-enabled servers?
+    choices:
+    - content: Azure Policy
+      isCorrect: true
+      explanation: Correct, Azure Policy isn't part of Azure Automation.
+    - content: Change Tracking and Inventory
+      isCorrect: false
+      explanation: Incorrect, Change Tracking and Inventory are part of Azure Automation.
+    - content: Update Management
+      isCorrect: false
+      explanation: Incorrect, Update Management is part of Azure Automation.
+    - content: Process Automation
+      isCorrect: false
+      explanation: Incorrect, Process Automation is part of Azure Automation.

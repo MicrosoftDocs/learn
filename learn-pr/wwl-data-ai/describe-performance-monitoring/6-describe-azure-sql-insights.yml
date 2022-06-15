@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.describe-azure-sql-insights
+title: Describe Azure SQL Insights
+metadata:
+  title: Describe Azure SQL Insights
+  description: "Describe Azure SQL Insights"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-describe-azure-sql-insights.md)]

@@ -32,6 +32,9 @@ products:
 - aspnet-core
 - dotnet
 - vs
+subjects:
+- accessibility
+- development-tools
 units:
 - learn.languages.aspnetcore-accessibility.1-introduction
 - learn.languages.aspnetcore-accessibility.2-web-accessibility-fundamentals

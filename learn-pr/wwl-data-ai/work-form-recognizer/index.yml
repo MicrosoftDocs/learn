@@ -3,7 +3,7 @@ uid: learn.wwl.work-with-form-recognizer
 metadata:
   title: Extract data from forms with Form Recognizer
   description: "Form Recognizer extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Form Recognizer vision API."
-  ms.date: 03/08/2022
+  ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
@@ -13,8 +13,8 @@ summary: Form Recognizer uses machine learning technology to identify and extrac
 abstract: |
   In this module, you'll learn how to:
   - Identify how Form Recognizer's layout service, prebuilt models, and custom service can automate processes
-  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
-  - Develop and test custom models using supervised and unsupervised training
+  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form Recognizer Studio
+  - Develop and test custom models
 prerequisites: |
   To complete this module, you will need:
   - An active Azure account
@@ -36,11 +36,10 @@ units:
 - learn.wwl.work-with-form-recognizer.what-form-recognizer
 - learn.wwl.work-with-form-recognizer.get-started
 - learn.wwl.work-with-form-recognizer.understand-prebuilt-models
-- learn.wwl.work-with-form-recognizer.train-custom-models-without-labels
 - learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
 - learn.wwl.work-with-form-recognizer.use-models
 - learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
-- learn.wwl.work-with-form-recognizer.optical-character-recognition-test-tool
+- learn.wwl.work-with-form-recognizer.form-recognizer-studio
 - learn.wwl.work-with-form-recognizer.knowledge-check-summary
 - learn.wwl.work-with-form-recognizer.summary
 badge:

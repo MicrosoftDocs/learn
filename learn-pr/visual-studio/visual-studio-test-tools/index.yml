@@ -30,6 +30,8 @@ roles:
 products:
   - vs-ide
   - dotnet
+subjects:
+- development-tools
 units:
   - learn.visual-studio.visual-studio-test-tools.introduction
   - learn.visual-studio.visual-studio-test-tools.create-test

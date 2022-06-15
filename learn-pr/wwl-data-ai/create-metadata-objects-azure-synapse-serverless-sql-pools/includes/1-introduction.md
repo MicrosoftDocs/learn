@@ -1,17 +1,15 @@
-In this lesson, you will learn how you can create objects to help you query data or optimize your existing data transformation pipeline through Azure Synapse serverless SQL pools.
+Data analysts and engineers often find themselves forced to choose between the flexibility of storing data files in a data lake, with the advantages of a structured schema in a relational database. *Lake databases* in Azure Synapse Analytics provide a way to combine these two approaches and benefit from an explicit relational schema of tables, views, and relationships that is decoupled from file-based storage.
 
-After the completion of this lesson, you will be able to:
+In this module, you'll learn how to:
 
-- Create databases in Azure Synapse serverless SQL pools
-- Create and manage credentials in Azure Synapse serverless SQL pools
-- Create external data sources in Azure Synapse serverless SQL pools
-- Create external tables in Azure Synapse serverless SQL pools
-- Create views in Azure Synapse serverless SQL pools
+- Understand lake database concepts and components
+- Describe database templates in Azure Synapse Analytics
+- Create a lake database
 
 ## Prerequisites
 
-Before taking this lesson, it is recommended that the student is able to:
+Before starting this module, you should have the following prerequisite skills and knowledge:
 
-* Log into the Azure portal
-* Explain the different components of Azure Synapse Analytics
-* Use Azure Synapse Studio
+- Familiarity with the Microsoft Azure portal
+- Familiarity with data lake and data warehouse concepts
+- Experience of using SQL to query database tables

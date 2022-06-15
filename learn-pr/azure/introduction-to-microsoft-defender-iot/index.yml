@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.introduction-to-microsoft-defender-iot
+metadata:
+  moduleType: introduction
+  title: Introduction to Microsoft Defender for IoT
+  description: "Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical network environments."
+  ms.date: 05/18/2022
+  author: batamig
+  ms.author: bagol
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Microsoft Defender for IoT
+summary: "Evaluate whether Microsoft Defender for IoT is the right service for your organization's business scenarios. Learn about Defender for IoT components and features and how they support operational technology (OT) and IoT device security monitoring."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the components of Defender for IoT to see if they meet your security and operational goals.
+  - Evaluate whether Defender for IoT can provide unified asset discovery and security monitoring across your business-critical network environments.
+prerequisites: |
+  - Knowledge of how OT security is used in business-critical infrastructures.
+  - Familiarity of OT security concepts like operational and network security goals.
+  - Familiarity with the differences between OT and IT networks.
+  - Familiarity with the Purdue module of industrial control systems.
+  - Familiarity with the challenges in managing environments with OT and IoT devices.
+iconUrl: /learn/achievements/defender-for-iot/microsoft-defender-intro-iot.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - security-engineer
+  - technology-manager
+products:
+- azure
+- azure-defender-iot
+units:
+- learn.introduction-to-microsoft-defender-iot.introduction
+- learn.introduction-to-microsoft-defender-iot.what-is-microsoft-defender-iot
+- learn.introduction-to-microsoft-defender-iot.how-microsoft-defender-iot-works
+- learn.introduction-to-microsoft-defender-iot.when-to-use-microsoft-defender-iot
+- learn.introduction-to-microsoft-defender-iot.knowledge-check
+- learn.introduction-to-microsoft-defender-iot.summary
+badge:
+  uid: learn.introduction-to-microsoft-defender-iot.badge

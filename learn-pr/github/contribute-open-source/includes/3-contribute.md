@@ -4,13 +4,13 @@ When it comes to contributing work to an open-source project, communication is a
 
 Avoiding active communication with others who are involved in an open-source project means risking your time working on tasks that someone else is already working on. Or, you might work on features or improvements that don't align with the project's values or best practices. In either case, everyone's time is wasted. Conversely, committing to active communication ensures that your work will be well received and impactful.
 
-How can you ensure success when you communicate with other project members about new features and changes? First, try to keep an open mind. Be open to feedback, and practice patience. Open-source project maintainers most likely have a day job and a private life to tend to. If you don't get an answer immediately, wait a little longer before you ping the maintainers.
+How can you ensure success when you communicate with other project members about new features and changes? First, try to keep an open mind. Be open to feedback and practice patience. Open-source project maintainers most likely have a day job and a private life to tend to. If you don't get an answer immediately, wait a little longer before you ping the maintainers.
 
 ## Communicate your intent to maintainers
 
 You should always start by communicating your intent to contribute before you do any actual work. Unless indicated otherwise in the README file, the issue tracker is usually the best place for doing that.
 
-- If you want to work on an existing issue, check that nobody is assigned to it by looking at the **Assignees** section. Also check the **Linked pull requests** section. A linked pull request means somebody is already working on it. Look through the comments to see if someone stated their interest to work on the issue. If everything's clear, post a comment on the issue to indicate your interest to work on it. That way you're telling people who might come later that someone's working on the issue. Also, if needed, maintainers can reply to you with guidance and advice.
+- If you want to work on an existing issue, check that nobody is assigned to it by looking at the **Assignees** section. Also check the **Linked pull requests** section. A linked pull request means somebody is already working on it. Look through the comments to see if someone stated their interest to work on the issue. If everything's clear, post a comment on the issue to indicate your interest to work on it. That way, you're telling people who might come later that someone's working on the issue. Also, if needed, maintainers can reply to you with guidance and advice.
 
     :::image type="content" source="../media/3-checks.png" alt-text="Screenshot showing the Assignees and Linked pull requests sections.":::
 
@@ -24,16 +24,16 @@ Your contribution will take the form of a *pull request* or *PR*. A pull request
 
 - A title and description for your changes.
 - One or more commits that constitute the changes you're proposing.
-- Comments where everyone can participate in a discussion about the changes.
-- Code reviews where you can find detailed feedback on your changes and eventually commit suggestions.
-- Status checks that come, for example, from automated tests that the maintainers might have put in place. Status checks can serve different purposes. For example, they can ensure that your changes follow the project's rules or that your changes don't break the code.
+- Comments, where everyone can participate in a discussion about the changes.
+- Code reviews, where you can find detailed feedback on your changes and eventually commit suggestions.
+- Status checks that come, for example, from automated tests that the maintainers might have put in place. Status checks can serve different purposes. For example, they can ensure that your changes follow the project's rules, or that your changes don't break the code.
 
 After a pull request is created, it can be updated with new commits, comments, or code reviews. This process continues until the project maintainers approve and merge the pull request or reject the changes and close the pull request. When your pull request is merged, it means that your changes have been integrated into the project's codebase.
 
 ### Create a pull request step by step
 
-1. Open the GitHub page of the project you want to contribute to.
-1. Select the **Fork** button to create a copy of the repository on your GitHub account. This step is necessary because by default you don't have the permissions to make any changes on a public repository unless it's your own copy. By forking the project, you're creating a copy where you can make changes.
+1. Open the GitHub page of the project to which you want to contribute.
+1. Select the **Fork** button to create a copy of the repository on your GitHub account. This step is necessary because, by default, you don't have the permissions to make any changes on a public repository unless it's your own copy. By forking the project, you're creating a copy where you can make changes.
 
     :::image type="content" source="../media/3-fork.png" alt-text="Screenshot showing the Fork button of a GitHub project.":::
 
@@ -47,7 +47,7 @@ After a pull request is created, it can be updated with new commits, comments, o
 
     :::image type="content" source="../media/3-clone.png" alt-text="Screenshot showing the options for cloning a GitHub project.":::
 
-1. Select the **clipboard** icon to copy the repository URL, and then enter in a terminal:
+1. Select the **clipboard** icon to copy the repository URL, then enter in a terminal:
 
     ```sh
     git clone <REPOSITORY_URL>
@@ -69,16 +69,16 @@ After a pull request is created, it can be updated with new commits, comments, o
     git checkout -b <BRANCH_NAME>
     ```
 
-    This step isn't mandatory but is highly recommended. With a new branch, you can work on multiple contributions separately, each one using a different branch.
+    This step isn't mandatory, but is highly recommended. With a new branch, you can work on multiple contributions separately, each one using a different branch.
 
-1. Make the wanted changes to the project, and commit them:
+1. Make the desired changes to the project and commit them:
 
     ```sh
     git add .
     git commit -m "<COMMIT_MESSAGE>"
     ```
 
-    These commands will stage your changes for commit and then create a commit with the specified message. Be sure to describe your changes accurately in the commit message. It's also a good idea to check if there are mentions in the CONTRIBUTING file for commit message conventions you need to follow.
+    These commands will stage your changes for commit, then create a commit with the specified message. Be sure to describe your changes accurately in the commit message. It's also a good idea to check if there are mentions in the CONTRIBUTING file for commit-message conventions you need to follow.
 
 1. Push your changes to the remote by using the command:
 
@@ -97,7 +97,7 @@ After a pull request is created, it can be updated with new commits, comments, o
 
     :::image type="content" source="../media/3-pr-suggestion.png" alt-text="Screenshot showing the pull request suggestion box on GitHub.":::
 
-1. Fill in the title and description, and select **Create pull request**.
+1. Fill in the title and description and select **Create pull request**.
 
     :::image type="content" source="../media/3-create-pr.png" alt-text="Screenshot showing the pull request creation interface.":::
 

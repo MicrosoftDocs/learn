@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-regression-models.exercise-train-evaluate-regression-model
+title: Exercise - Train and evaluate a regression model
+metadata:
+  title: Exercise - Train and evaluate a regression model
+  description: In this exercise, you'll learn how to train and evaluate a regression model.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/3-exercise-train-evaluate-regression-model.ipynb

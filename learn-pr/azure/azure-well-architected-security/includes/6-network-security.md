@@ -12,7 +12,7 @@ Network security is protecting the communication of resources within and outside
 
 ## Layered approach to network security
 
-A common thread throughout this module has been taking a layered approach to security, and this approach is no different at the network layer. It's not enough to just focus on securing the network perimeter, or focusing on the network security between services inside a network. A layered approach provides multiple levels of protection so that if an attacker gets through one layer, further protections are in place to limit the attack.
+A common thread throughout this module has been taking a layered approach to security, and this approach is no different at the network layer. It's not enough to just focus on securing the network perimeter, or focusing on the network security between services inside a network. A layered approach provides multiple levels of protection, so that if an attacker gets through one layer, further protections are in place to limit the attack.
 
 Let's look at how Azure can provide the tools for a layered approach to securing your network footprint.
 
@@ -50,9 +50,9 @@ To isolate Azure services to allow communication only from virtual networks, use
 
 Securing service resources to a virtual network provides improved security by fully removing public internet access to resources and allowing traffic only from your virtual network. This technique:
 
-- Reduces the attack surface for your environment.
-- Reduces the administration required to limit communication between your virtual network and Azure services.
-- Provides optimal routing for this communication.
+- Reduces the attack surface for your environment
+- Reduces the administration required to limit communication between your virtual network and Azure services
+- Provides optimal routing for this communication
 
 ### Network integration
 

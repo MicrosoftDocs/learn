@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- infrastructure
 units:
 - learn.wwl.introduction-to-chef-puppet.introduction
 - learn.wwl.introduction-to-chef-puppet.what-is-chef

@@ -2,5 +2,5 @@ You explored the SAP NetWeaver with AnyDB architecture for deploying SAP workloa
 
 ## Learn more
 
- -  [Deploy SAP NetWeaver (Windows) for AnyDB on Azure virtual machines](/azure/architecture/reference-architectures/sap/sap-netweaver)
+ -  [Run SAP NetWeaver in Windows on Azure](/azure/architecture/reference-architectures/sap/sap-netweaver)
  -  [SAP NetWeaver on SQL Server](/azure/architecture/solution-ideas/articles/sap-netweaver-on-sql-server)

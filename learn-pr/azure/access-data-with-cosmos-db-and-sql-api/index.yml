@@ -3,7 +3,7 @@ uid: learn.access-data-with-cosmos-db-and-sql-api
 metadata:
   title: Insert and query data in your Azure Cosmos DB database
   description: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data. Create stored procedures in JavaScript.
-  ms.date: 09/24/2018
+  ms.date: 06/01/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -29,6 +29,8 @@ products:
 - azure-cosmos-db
 - azure-clis
 - azure-portal
+subjects:
+- data-engineering
 units:
 - learn.access-data-with-cosmos-db-and-sql-api.1-introduction
 - learn.access-data-with-cosmos-db-and-sql-api.2-setup-cosmosdb

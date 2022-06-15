@@ -40,6 +40,10 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-computing
+- data-analytics
+- devops
 units:
 - learn.wwl.design-processes-to-automate-application-analytics.introduction
 - learn.wwl.design-processes-to-automate-application-analytics.explore-rapid-responses-augmented-search

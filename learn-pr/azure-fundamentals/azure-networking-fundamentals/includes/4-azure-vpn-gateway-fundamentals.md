@@ -6,9 +6,9 @@ For our Tailwind Traders scenario, VPNs can enable branch offices to share sensi
 
 A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in a dedicated subnet of the virtual network and enable the following connectivity:
 
- -  Connect on-premises datacenters to virtual networks through a *site-to-site* connection.
- -  Connect individual devices to virtual networks through a *point-to-site* connection.
- -  Connect virtual networks to other virtual networks through a *network-to-network* connection.
+- Connect on-premises datacenters to virtual networks through a *site-to-site* connection.
+- Connect individual devices to virtual networks through a *point-to-site* connection.
+- Connect virtual networks to other virtual networks through a *network-to-network* connection.
 
 :::image type="content" source="../media/vpngateway-site-to-site-connection-diagram-0e1e7db2.png" alt-text="Visualization of a VPN connection to Azure.":::
 
@@ -22,9 +22,9 @@ Policy-based VPN gateways specify statically the IP address of packets that shou
 
 Key features of policy-based VPN gateways in Azure include:
 
- -  Support for IKEv1 only.
- -  Use of *static routing*, where combinations of address prefixes from both networks control how traffic is encrypted and decrypted through the VPN tunnel. The source and destination of the tunneled networks are declared in the policy and don't need to be declared in routing tables.
- -  Policy-based VPNs must be used in specific scenarios that require them, such as for compatibility with legacy on-premises VPN devices.
+- Support for IKEv1 only.
+- Use of *static routing*, where combinations of address prefixes from both networks control how traffic is encrypted and decrypted through the VPN tunnel. The source and destination of the tunneled networks are declared in the policy and don't need to be declared in routing tables.
+- Policy-based VPNs must be used in specific scenarios that require them, such as for compatibility with legacy on-premises VPN devices.
 
 ### Route-based VPNs
 
@@ -32,16 +32,16 @@ If defining which IP addresses are behind each tunnel is too cumbersome, route-b
 
 Use a route-based VPN gateway if you need any of the following types of connectivity:
 
- -  Connections between virtual networks
- -  Point-to-site connections
- -  Multisite connections
- -  Coexistence with an Azure ExpressRoute gateway
+- Connections between virtual networks
+- Point-to-site connections
+- Multisite connections
+- Coexistence with an Azure ExpressRoute gateway
 
 Key features of route-based VPN gateways in Azure include:
 
- -  Supports IKEv2
- -  Uses any-to-any (wildcard) traffic selectors
- -  Can use *dynamic routing protocols*, where routing/forwarding tables direct traffic to different IPSec tunnels In this case, the source and destination networks aren't statically defined as they are in policy-based VPNs or even in route-based VPNs with static routing. Instead, data packets are encrypted based on network routing tables that are created dynamically using routing protocols such as Border Gateway Protocol (BGP).
+- Supports IKEv2
+- Uses any-to-any (wildcard) traffic selectors
+- Can use *dynamic routing protocols*, where routing/forwarding tables direct traffic to different IPSec tunnels In this case, the source and destination networks aren't statically defined as they are in policy-based VPNs or even in route-based VPNs with static routing. Instead, data packets are encrypted based on network routing tables that are created dynamically using routing protocols such as Border Gateway Protocol (BGP).
 
 ## VPN gateway sizes
 
@@ -53,7 +53,7 @@ The capabilities of your VPN gateway are determined by the SKU or size that you 
 |VpnGw1/Az |Maximum: 30 |650 Mbps |Supported|
 |VpnGw2/Az |Maximum: 30 |1 Gbps |Supported|
 |VpnGw3/Az |Maximum: 30 |1.25 Gbps |Supported|
-|VpnGw4/Az |Maximum: 100 |5 Gbps Gbps |Supported|
+|VpnGw4/Az |Maximum: 100 |5 Gbps |Supported|
 |VpnGw5/Az |Maximum: 100 |10 Gbps |Supported|
 
 > [!NOTE]
@@ -67,17 +67,17 @@ Before you can deploy a VPN gateway, you'll need some Azure and on-premises reso
 
 You'll need these Azure resources before you can deploy an operational VPN gateway:
 
- -  **Virtual network**. Deploy a virtual network with enough address space for the additional subnet that you'll need for the VPN gateway. The address space for this virtual network must not overlap with the on-premises network that you'll be connecting to. You can deploy only one VPN gateway within a virtual network.
- -  **GatewaySubnet**. Deploy a subnet called `GatewaySubnet` for the VPN gateway. Use at least a **/27** address mask to make sure you have enough IP addresses in the subnet for future growth. You can't use this subnet for any other services.
- -  **Public IP address**. Create a Basic-SKU dynamic public IP address if you're using a non-zone-aware gateway. This address provides a public-routable IP address as the target for your on-premises VPN device. This IP address is dynamic, but it won't change unless you delete and re-create the VPN gateway.
- -  **Local network gateway**. Create a local network gateway to define the on-premises network's configuration, such as where the VPN gateway will connect and what it will connect to. This configuration includes the on-premises VPN device's public IPv4 address and the on-premises routable networks. This information is used by the VPN gateway to route packets that are destined for on-premises networks through the IPSec tunnel.
- -  **Virtual network gateway**. Create the virtual network gateway to route traffic between the virtual network and the on-premises datacenter or other virtual networks. The virtual network gateway can be either a VPN or ExpressRoute gateway, but this unit only deals with VPN virtual network gateways. (You'll learn more about ExpressRoute in a separate unit later in this module.)
- -  **Connection**. Create a connection resource to create a logical connection between the VPN gateway and the local network gateway.
-    
-     -  The connection is made to the on-premises VPN device's IPv4 address as defined by the local network gateway.
-     -  The connection is made from the virtual network gateway and its associated public IP address.
-    
-    You can create multiple connections.
+- **Virtual network**. Deploy a virtual network with enough address space for the additional subnet that you'll need for the VPN gateway. The address space for this virtual network must not overlap with the on-premises network that you'll be connecting to. You can deploy only one VPN gateway within a virtual network.
+- **GatewaySubnet**. Deploy a subnet called `GatewaySubnet` for the VPN gateway. Use at least a **/27** address mask to make sure you have enough IP addresses in the subnet for future growth. You can't use this subnet for any other services.
+- **Public IP address**. Create a Basic-SKU dynamic public IP address if you're using a non-zone-aware gateway. This address provides a public-routable IP address as the target for your on-premises VPN device. This IP address is dynamic, but it won't change unless you delete and re-create the VPN gateway.
+- **Local network gateway**. Create a local network gateway to define the on-premises network's configuration, such as where the VPN gateway will connect and what it will connect to. This configuration includes the on-premises VPN device's public IPv4 address and the on-premises routable networks. This information is used by the VPN gateway to route packets that are destined for on-premises networks through the IPSec tunnel.
+- **Virtual network gateway**. Create the virtual network gateway to route traffic between the virtual network and the on-premises datacenter or other virtual networks. The virtual network gateway can be either a VPN or ExpressRoute gateway, but this unit only deals with VPN virtual network gateways. (You'll learn more about ExpressRoute in a separate unit later in this module.)
+- **Connection**. Create a connection resource to create a logical connection between the VPN gateway and the local network gateway.
+
+  - The connection is made to the on-premises VPN device's IPv4 address as defined by the local network gateway.
+  - The connection is made from the virtual network gateway and its associated public IP address.
+
+  You can create multiple connections.
 
 The following diagram shows this combination of resources and their relationships to help you better understand what's required to deploy a VPN gateway.
 
@@ -87,8 +87,8 @@ The following diagram shows this combination of resources and their relationship
 
 To connect your datacenter to a VPN gateway, you'll need these on-premises resources:
 
- -  A VPN device that supports policy-based or route-based VPN gateways
- -  A public-facing (internet-routable) IPv4 address
+- A VPN device that supports policy-based or route-based VPN gateways
+- A public-facing (internet-routable) IPv4 address
 
 ## High-availability scenarios
 
@@ -104,7 +104,7 @@ By default, VPN gateways are deployed as two instances in an active/standby conf
 
 With the introduction of support for the BGP routing protocol, you can also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
-:::image type="content" source="../media/dual-redundancy-d76100c9.png" alt-text="Visualization of active active virtual network gateway.":::
+:::image type="content" source="../media/dual-redundancy-d76100c9.png" alt-text="Visualization of active virtual network gateway.":::
 
 ### ExpressRoute failover
 

@@ -29,6 +29,9 @@ roles:
   - developer
 products: 
 - azure
+subjects:
+- data-management
+- data-analytics
 units:
 - learn.data-management-analytics.introduction
 - learn.data-management-analytics.define-a-strategy
