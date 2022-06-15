@@ -1,20 +1,40 @@
-Now that you've created your Microsoft Purview account, we'll need to consider organization of your Data Map, and how users will access the account.
+Now that you've created your Microsoft Purview account, we'll need to add other users and start organizing your data map.
 
-At the core of your new account, the Microsoft Purview Data Map keeps an up-to-date map of your data assets (tables, files, etc...) and their metadata. To build this data map, you'll register and scan data sources into this map. In an organization there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
+As we discussed in the last section, the Microsoft Purview Data Map is the core of your account. It keeps an up-to-date map of your data assets (tables, files, etc...) and their metadata. 
+
+:::image type="content" source="../media/03.04-purview-data-map.png" alt-text="Microsoft Purview data map":::
+
+To build this data map, you'll register and scan your data sources into Microsoft Purview. The data map will store the metadata for these sources and create a navigable table that you can browser through.
+
+In a single corporation there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
 
 ## Collections
 
 A collection is a grouping of data sources and assets that are defined by your organization. Collections allow you to structure your data assets in a customized hierarchy that reflects your organization. Let's look at what that means.
 
-When you first create your Microsoft Purview account, only the root collection is automatically created. This collection has the same name as your Microsoft Purview account and will always be the top-level collection, but works like any other collection. You can add permissions for users, register sources, or create subcollections.
+:::image type="content" source="../media/example-collections.png" alt-text="Screenshot of collections in Microsoft Purview, with the root collection called Fabrikam Purview, and subcollections, Development, Finance, Marketing, Outreach, and Sales. Finance also has subcollections:":::
 
-All other collections will be created by you or your team, and should reflect your business landscape. These collections will be your map through your data estate in Microsoft Purview, and will be how you organize your data and access control.
+When you first create your Microsoft Purview account, only the root collection is automatically created. In the example above, the root collection is called FabrikamPurview.
+
+This collection has the same name as your Microsoft Purview account and will always be the top-level collection, but works like any other collection. You can add permissions for users, register sources, or create subcollections.
+
+All other collections will be created by you or your team, and should reflect your business landscape. In the example above, the collections are groups within the Fabrikam organization. When you set up collections in your account, you want to think about how your organization is structured, or how data is currently accessed and managed. These collections will be how you navigate through your data estate in Microsoft Purview, and will also be how you manage access control in your data map.
+
+Let's look at a smaller example:
 
 :::image type="content" source="../media/05.01-purview-collections.png" alt-text="Screenshot of a collection hierarchy, with the ACCOUNT-NAME root collection, and two subcollections beneath: Sales and Marketing":::
 
-In the example above, we have the root collection (ACCOUNT-NAME), and two sub collections: Sales and Marketing. For our Fabrikam proof of concept, we may create a structure like this if Fabrikam has organized teams, with specialized data they need to manage and discover. All data sources associated with Sales could be registered to the Sales collection, and all data sources associated with Marketing would be registered with the Marketing collection. Users on the Sales team could be granted permission to the Sales collection, and would only be able to see information on data sources that were registered to the Sales collection. The same for Marketing. If a user needed to be able to access all data, or maintain all collections within the Microsoft Purview account, they should be granted permission at the root collection, which will give them permission to the root collection (ACCOUNT-NAME) and its subcollections (Sales and Marketing).
+In the image above, we have the root collection (ACCOUNT-NAME), and two sub collections: Sales and Marketing. 
 
-When thinking about setting up collections, consider how your business is structured, your security requirements, and what kinds of data users might need. For the small proof of concept, we're only going to register a single storage account, but for an expanded proof of concept, or when deploying Microsoft Purview across an entire data estate (that is, registering all or most of your data sources to the data map), it's important that your sources are logically grouped. Sources that are well organized to reflect your business structure improve data management, discovery, and right use of data. When thinking about permissions in Microsoft Purview, best practice would be:
+For our Fabrikam proof of concept, we may create a structure like this if Fabrikam has organized teams with specialized functions, and specialized data they need to manage and discover. All data sources associated with Sales could be registered to the Sales collection, and all data sources associated with Marketing would be registered with the Marketing collection. 
+
+Users on the Sales team could be granted permission to the Sales collection, and would only be able to see information on data sources that were registered to the Sales collection. The same for Marketing. 
+
+If a user needed to be able to access all data, or maintain all collections within the Microsoft Purview account, they should be granted permission at the root collection, which will give them permission to the root collection (ACCOUNT-NAME) and its subcollections (Sales and Marketing).
+
+When thinking about setting up collections, consider how your business is structured, your security requirements, and what kinds of data users might need. For the small proof of concept, we're only going to register a single storage account, but for an expanded proof of concept, or when deploying Microsoft Purview across an entire data estate (that is, registering all or most of your data sources to the data map), it's important that your sources are logically grouped. 
+
+Sources that are well organized to reflect your business structure improve data management, discovery, and right use of data. When thinking about permissions in Microsoft Purview, best practice would be:
 
 - Users have the minimum amount of access they need to do their jobs.
 - Users don't have access to sensitive data that they don't need.
@@ -23,7 +43,7 @@ When thinking about setting up collections, consider how your business is struct
 
 To manage access control in collections, Microsoft Purview uses a set of predefined roles to control who can access what within the account. Access is applied at the level of the collection it's assigned, and inherited downwards.
 
-In our above example, permissions applied at the root collection (ACCOUNT-NAME) will also be applied to its subcollections, Sales and Marketing. But permissions on Sales and Marketing won't apply to any sources registered on the root collection, and they won't apply laterally to each other. They would only be applied to any sub, or child, collections that may be added later.
+In our above example, permissions applied at the root collection (ACCOUNT-NAME) will also be applied to its subcollections, Sales and Marketing. But permissions on Sales and Marketing won't apply to any sources registered on the root collection, and they won't apply laterally to each other. They would only be applied to any subcollections that may be added later.
 
 We won't need all the roles available for our proof of concept, but some of Microsoft Purview's roles currently are:
 
@@ -41,7 +61,7 @@ We won't need all the roles available for our proof of concept, but some of Micr
 
 ## Inherited access
 
-Like we discussed before, the permissions of a parent collection are automatically inherited by its subcollections. This allows you to assign some groups or users broad access across the organization, so users can discover and manage data across an entire section, without having to assign individual permissions to every single subcollection.
+The permissions of a parent collection are automatically inherited by its subcollections. This allows you to assign some groups or users broad access across the organization, so users can discover and manage data across an entire section, without having to assign individual permissions to every single subcollection.
 
 However, you may have groups within your organization that you know are dealing with sensitive data that need to restrict inheritance so only that group can discover and manage information within.
 
