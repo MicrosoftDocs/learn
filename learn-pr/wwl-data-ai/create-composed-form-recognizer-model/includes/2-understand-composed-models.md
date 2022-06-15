@@ -65,7 +65,7 @@ There are some restrictions on the models that can be added to the same composed
 - In versions of the Forms Recognizer API earlier than 2021-06-30-preview, only models trained under the same version of the API could be composed.
 - After version 2021-06-30-preview, models can be composed even if they have different API version numbers.
 
-## Learn mode
+## Learn more
 
 - [Composed custom models](/azure/applied-ai-services/form-recognizer/concept-composed-models)
 - [Compose custom models v3.0](/azure/applied-ai-services/form-recognizer/compose-custom-models-preview)
