@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: add-sign-in-support-python-webapp-identity-platform
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; 
+summary: Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Azure AD users and fetch data from a protected web API, such as the Microsoft Graph API.
 abstract: |
   By the end of this module, you'll be able to:
     - "TODO learning objective 1"
