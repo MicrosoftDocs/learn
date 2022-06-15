@@ -4,15 +4,14 @@ Azure Active Directory (Azure AD) self-service password reset (SSPR) gives users
 
 There are many benefits for the user and the organization to enabling self-service password reset:
 
- -  Users can reset their own password - no productivity loss
- -  No admin or IT intervention - enables IT to focus on bigger issues
+- Users can reset their own password - no productivity loss
+- No admin or IT intervention - enables IT to focus on bigger issues
 
 Note that a user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license is required.
 
 ## Enable self-service password reset
 
-:::image type="content" source="../media/sc300-enable-password-reset-d2295bf1.png" alt-text="Screenshot of Azure AD, configure Self-Service Password Reset dialog.  In the setting the SSPR feature is being enabled for a group of users called SSPR-Test-Group.":::
-
+:::image type="content" source="../media/enable-password-reset.png" alt-text="Screenshot of Azure AD, configure Self-Service Password Reset dialog. SSPR feature is being enabled for a group of users called SSPR-Test-Group.":::
 
 Basic steps to enable self-service password reset:
 
@@ -28,9 +27,9 @@ Create a user account that will be added to a security group.
 
 1.  In the Azure AD organization you created, under **Manage**, select **Users** then select **New User**.
 2.  The User pane now appears. Enter the following values:
-    
-     -  User name: Julieta
-     -  Name: Julieta Oliveira
+   
+     - User name: Julieta
+     - Name: Julieta Oliveira
 3.  Select **Show Password** and then copy it somewhere to reference it later.
 4.  Select **Create**.
 
@@ -42,60 +41,18 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 2.  Open the portal menu and then select **Azure Active Directory**.
 3.  On the Azure Active Directory screen, under **Manage**, select **+ New Group**.
 4.  Create a new group using the following information:
-    
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Group type
-      :::column-end:::
-      :::column:::
-        Security
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Group name
-      :::column-end:::
-      :::column:::
-        SSPRTesters
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Group description
-      :::column-end:::
-      :::column:::
-        Testers of SSPR rollout
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Membership type
-      :::column-end:::
-      :::column:::
-        Assigned
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Members
-      :::column-end:::
-      :::column:::
-        Julieta Oliveira
-      :::column-end:::
-    :::row-end:::
+   
+| Setting | Value |
+| :---- | :---- |
+| Group type | Security |
+| Group name | SSPRTesters |
+| Group description | Testers of SSPR rollout |
+| Membership type | Assigned |
+| Members | Julieta Oliveira |
     
 5.  Select **Create.**
     
-    :::image type="content" source="../media/create-self-service-password-reset-security-group-188899fc.png" alt-text="Screen image displaying the New Group blade with group type, group name, and create highlighted":::
-    
+    :::image type="content" source="../media/create-self-service-password-reset-security-group.png" alt-text="Screenshot ofthe New Group screen with group type, group name, and create highlighted.":::
 
 ## Enable self-service password reset
 
@@ -111,7 +68,7 @@ Enable SSPR for the group.
 5.  In the Default password reset policy pane, select the **SSPRTesters** group.
 6.  On the Password reset dialog, **Properties** page, select **Save**.
     
-    :::image type="content" source="../media/enable-password-reset-for-selected-group-221d22a2.png" alt-text="Screen image displaying the Password reset properties page with selected, select group, and save highlighted":::
+    :::image type="content" source="../media/enable-password-reset-for-selected-group.png" alt-text="Screenshot image displaying the Password reset properties page.":::
     
 7.  Under **Manage**, select and review the default values for the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
 
@@ -125,7 +82,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 4.  In the **More information required** dialog box, select **Next**.
 5.  On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.
     
-    :::image type="content" source="../media/keep-your-account-secure-page-b4a3ea61.png" alt-text="Screen image displaying the Keep your account secure page with the Choose a different method dialog box highlighted":::
+    :::image type="content" source="../media/keep-your-account-secure-page.png" alt-text="Screenshot displaying the Keep your account secure page with the Choose a different method dialog.":::
     
 6.  In this example, you'll use the Phone option. Enter your mobile phone details.
 7.  Select **Text me a code**.
@@ -142,11 +99,11 @@ Now let's test whether the user can reset their password.
 3.  On the Enter password page, select **Forgot my password**.
 4.  On the Get back into your account page, complete the requested information and then select **Next**.
     
-    :::image type="content" source="../media/get-back-into-your-account-page-6274ef45.png" alt-text="Screen image displaying the Get back into your account page with Email or Username, captcha box, and next button highlighted":::
+    :::image type="content" source="../media/get-back-into-your-account-page.png" alt-text="Screenshot of the Get back into your account page with Email or Username, captcha box.":::
     
 5.  In the **verification step 1** task, select **Text my mobile phone** or **Call my mobile phone**, enter your phone number and then select **Text**.
     
-    :::image type="content" source="../media/self-service-password-reset-verification-step-1-527f233c.png" alt-text="Screen image displaying verification step 1 with contact methods, phone number box, and text button highlighted":::
+    :::image type="content" source="../media/self-service-password-reset-verification-step.png" alt-text="Screenshot of verification step 1 with contact methods, phone number box, and text button highlighted.":::
     
 6.  Enter your verification code and then select **Next**.
 7.  In the choose a new password step, enter and then confirm your new password.
