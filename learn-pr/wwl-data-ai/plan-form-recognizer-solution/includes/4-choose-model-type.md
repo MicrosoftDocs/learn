@@ -6,7 +6,7 @@ In this unit, you'll learn about the prebuilt models available in Form Recognize
 
 ## Prebuilt models
 
-Document types such as invoices and receipts vary in different businesses and industry but have similar structures and key-value pairs. For example, a "Total cost" value is likely to appear on almost all invoices although it may be called "Total", "Sum", or some other name. Microsoft have provided a set of prebuilt models with Forms Recognizer to handle the most common types of documents. You don't have to train these models and you can create solutions using them very quickly.
+Document types such as invoices and receipts vary in different businesses and industry but have similar structures and key-value pairs. For example, a "Total cost" value is likely to appear on almost all invoices although it may be called "Total", "Sum", or some other name. Microsoft has provided a set of prebuilt models with Forms Recognizer to handle the most common types of documents. You don't have to train these models and you can create solutions using them very quickly.
 
 ### General document analysis models
 
@@ -14,39 +14,39 @@ Three of the prebuilt models are designed to handle general documents and extrac
 
 - **Read.** Use this model to extract words and lines from both printed and hand-written documents. It also detects the language used in the document.
 
-    :::image type="content" source="../media/04-read-model.png" alt-text="Screen shot showing the read model analyzing a document in german in Form Recognizer Studio." lightbox="../media/04-read-model.png":::
+    :::image type="content" source="../media/04-read-model.png" alt-text="Screenshot showing the read model analyzing a document in German in Form Recognizer Studio." lightbox="../media/04-read-model.png":::
 
 - **General document.** Use this model to extract key-value pairs and entities from any tables in your documents. The model can also recognize several categories of named entities, such as **person**, **location**, and **product**.
 
-    :::image type="content" source="../media/04-general-document-model.png" alt-text="Screen shot showing the general document model analyzing a document in Form Recognizer Studio." lightbox="../media/04-general-document-model.png":::
+    :::image type="content" source="../media/04-general-document-model.png" alt-text="Screenshot showing the general document model analyzing a document in Form Recognizer Studio." lightbox="../media/04-general-document-model.png":::
  
 - **Layout.** Use this model to extract text, tables, and structure information from forms. It can also recognize selection marks such as check boxes and radio buttons.
 
-    :::image type="content" source="../media/04-layout-model.png" alt-text="Screen shot showing the layout model analyzing a document in Form Recognizer Studio." lightbox="../media/04-layout-model.png":::
+    :::image type="content" source="../media/04-layout-model.png" alt-text="Screenshot showing the layout model analyzing a document in Form Recognizer Studio." lightbox="../media/04-layout-model.png":::
 
 > [!NOTE]
-> The model screen shots above show Form Recognizer models extracting data in Forms Recognizer Studio.
+> The model screenshots above show Form Recognizer models extracting data in Forms Recognizer Studio.
 
 ### Specific document type models
 
-The five other prebuilt models are each designed to handle, and trained on, a specific and commonly-used type of document. 
+The five other prebuilt models are each designed to handle, and trained on, a specific and commonly used type of document. 
 
 - **Invoice.** Use this model to extract key information from sales invoices in English and Spanish.
 
-    :::image type="content" source="../media/04-invoice-model.png" alt-text="Screen shot showing the invoice model analyzing a document in Form Recognizer Studio." lightbox="../media/04-invoice-model.png":::
+    :::image type="content" source="../media/04-invoice-model.png" alt-text="Screenshot showing the invoice model analyzing a document in Form Recognizer Studio." lightbox="../media/04-invoice-model.png":::
 
 - **Receipt.** Use this model to extract data from printed and handwritten receipts.
 
-    :::image type="content" source="../media/04-receipt-model.png" alt-text="Screen shot showing the receipt model analyzing a document in Form Recognizer Studio." lightbox="../media/04-receipt-model.png":::
+    :::image type="content" source="../media/04-receipt-model.png" alt-text="Screenshot showing the receipt model analyzing a document in Form Recognizer Studio." lightbox="../media/04-receipt-model.png":::
 
 - **W-2.** Use this model to extract data from United States government's W-2 tax declaration form.
 
-    :::image type="content" source="../media/04-w2-model.png" alt-text="Screen shot showing the W-2 model analyzing a document in Form Recognizer Studio." lightbox="../media/04-w2-model.png":::
+    :::image type="content" source="../media/04-w2-model.png" alt-text="Screenshot showing the W-2 model analyzing a document in Form Recognizer Studio." lightbox="../media/04-w2-model.png":::
 
 - **ID document.** Use this model to extract data from United States driver's licenses and international passports. 
 - **Business card.** Use this model to extract names and contact details from business cards.
 
-    :::image type="content" source="../media/04-business-card-model.png" alt-text="Screen shot showing the business card model analyzing a document in Form Recognizer Studio." lightbox="../media/04-business-card-model.png":::
+    :::image type="content" source="../media/04-business-card-model.png" alt-text="Screenshot showing the business card model analyzing a document in Form Recognizer Studio." lightbox="../media/04-business-card-model.png":::
 
 > [!NOTE]
 > At the time of writing, read, general document, and W-2 models are currently in preview.
@@ -59,7 +59,7 @@ To train a custom model, you must supply at least five examples of the completed
 
 Once you have trained a custom model in this way, Form Recognizer can accurately and predictably identify information in your unique forms.
 
-:::image type="content" source="../media/04-train-custom-model.png" alt-text="Screen shot showing how to train a custom model on business-specific example forms in Form Recognizer Studio." lightbox="../media/04-train-custom-model.png":::
+:::image type="content" source="../media/04-train-custom-model.png" alt-text="Screenshot showing how to train a custom model on business-specific example forms in Form Recognizer Studio." lightbox="../media/04-train-custom-model.png":::
 
 There are two kinds of custom model:
 

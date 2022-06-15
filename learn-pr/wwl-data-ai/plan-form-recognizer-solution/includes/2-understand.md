@@ -12,7 +12,7 @@ Manual data entry was the only option because it was difficult for computers to 
 
 Azure Form Recognizer is an Azure service that you can use to analyze forms completed by your customers, partners, employers, or others and extract the data that they contain.
 
-:::image type="content" source="../media/02-search-marketplace.png" alt-text="Screen shot showing that Forms Recognizer is an Azure service and can be found in the Azure Marketplace.":::
+:::image type="content" source="../media/02-search-marketplace.png" alt-text="Screenshot showing that Forms Recognizer is an Azure service and can be found in the Azure Marketplace.":::
 
 Azure Form Recognizer is one of the Azure Applied AI Services, which are built from individual Azure Cognitive Services. The other Applied AI Services include:
 
