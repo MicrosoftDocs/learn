@@ -7,7 +7,7 @@ With Azure Percept, you can:
 - **Streamline deployment and operating at scale** by using easy container packaging for AI models and applications for easy deployment to edge devices, you can securely deploy those AI model containers and applications across a wide range edge devices hardware configuration. Easily manage and update AI models and applications on edge devices with Percept Studio. Then leverage common Azure services like Azure Monitor, Azure Stream Analytics, and Power BI to aggregate, visualize, and monitor AI insights and results from Percept enabled devices.
 - **Ensure security across devices, apps, and data**. Azure Percept platform takes a Zero-Trust approach to securing AI solutions across devices, applications, and data at rest at the edge, in-transit to the cloud, and at-rest in the cloud. You can enable secure edge AI solutions from silicon to service, use Azure Certified Devices and the Edge Secure Core certification to enable devices to connect seamlessly to Azure edge and AI services, manage these devices through Azure so they remain up to date and secure, and ensure edge AI solutions are securely packaged in the right containers and deployed to the intended endpoint.
 
-As shown in the following diagram, Azure Percept's fully integrated platform combines three primary components that simplify creating and managing edge AI solutions:
+As shown in the following diagram, Azure Percept's fully integrated platform combines *three primary components* that simplify creating and managing edge AI solutions:
 
 :::image type="content" source="../images/azure-percept-components.png" border="false" alt-text="Diagram that shows the three primary components of Azure Percept.":::
 
