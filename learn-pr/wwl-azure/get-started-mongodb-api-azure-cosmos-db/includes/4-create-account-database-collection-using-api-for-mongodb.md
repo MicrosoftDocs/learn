@@ -77,7 +77,7 @@ You should be able to create or connect to your databases using the Java, Python
 
 You can use your favorite development tool to create your Azure Cosmos DB API for MongoDB application. We'll leverage on the MongoDB driver for each respective programming language to create our databases and collections.  Let's review the code to connect to the Azure Cosmos DB API for Cosmos DB accounts and to connect to the *products* database.
 
-::: zone pivot = "javascript"
+::: zone pivot="javascript"
   ***Node.js***
 
   ```JavaScript
@@ -116,7 +116,7 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
   ```
 ::: zone-end
 
-::: zone pivot = "java"
+::: zone pivot="java"
   ***Java***
 
   ```Java
@@ -154,7 +154,7 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
   ```
 ::: zone-end
 
-::: zone pivot = "python"
+::: zone pivot="python"
   ***Python***
 
   ```Python
@@ -177,7 +177,7 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
 ::: zone-end
 
 
-::: zone pivot = "csharp"
+::: zone pivot="csharp"
   ***C#***
 
   ```C#
@@ -218,7 +218,7 @@ It's that simple, once we connected using the driver, we either create a new dat
 
 To create or access an existing collection, we'll use a get collection method or reference depending on the programming language. Let's add some code to the previous example to create/connect to a collection and add one entry on that collection.
 
-::: zone pivot = "javascript"
+::: zone pivot="javascript"
   ***Node.js***
 
   ```JavaScript
@@ -228,7 +228,7 @@ To create or access an existing collection, we'll use a get collection method or
   ```
 ::: zone-end
 
-::: zone pivot = "java"
+::: zone pivot="java"
   ***Java***
 
   ```Java
@@ -241,7 +241,7 @@ To create or access an existing collection, we'll use a get collection method or
   ```
 ::: zone-end
 
-::: zone pivot = "python"
+::: zone pivot="python"
   ***Python***
 
   ```Python
@@ -251,7 +251,7 @@ To create or access an existing collection, we'll use a get collection method or
   ```
 ::: zone-end
 
-::: zone pivot = "csharp"
+::: zone pivot="csharp"
   ***C#***
 
 ```C#
