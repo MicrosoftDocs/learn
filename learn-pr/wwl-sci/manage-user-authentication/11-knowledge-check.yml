@@ -24,11 +24,11 @@ quiz:
       explanation: "Incorrect. SMS text message verification offers a moderate level of security, but there are other options that provide better security."
     - content: "Microsoft Authenticator App"
       isCorrect: true
-      explanation: "Correct. Microsoft recommends using the Microsoft Authenticator app, which provides the best user experience and multiple authentication mode."
+      explanation: "Correct. Microsoft recommends using the Microsoft Authenticator app, which provides the best user experience and multiple authentication methods."
     - content: "Voice call verification"
       isCorrect: false
       explanation: "Incorrect. Voice call verification offers a moderate level of security, but there are other options that provide better security."
-  - content: "Which of the following is a security group used by Hybrid Windows Hello for Business when no Windows Server 2016 or later domain controllers are deployed?"
+  - content: "In The answer list, which is a security group used by Hybrid Windows Hello for Business when no Windows Server 2016 or later domain controllers are deployed?"
     choices:
     - content: "KeyCredential Admins"
       isCorrect: true

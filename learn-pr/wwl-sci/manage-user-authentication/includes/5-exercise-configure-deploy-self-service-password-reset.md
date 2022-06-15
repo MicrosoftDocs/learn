@@ -7,7 +7,7 @@ There are many benefits for the user and the organization to enabling self-servi
 - Users can reset their own password - no productivity loss
 - No admin or IT intervention - enables IT to focus on bigger issues
 
-Note that a user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license is required.
+A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license is required.
 
 ## Enable self-service password reset
 
@@ -28,8 +28,8 @@ Create a user account that will be added to a security group.
 1.  In the Azure AD organization you created, under **Manage**, select **Users** then select **New User**.
 2.  The User pane now appears. Enter the following values:
    
-     - User name: Julieta
-     - Name: Julieta Oliveira
+     - User name: Mia
+     - Name: Mia Steele
 3.  Select **Show Password** and then copy it somewhere to reference it later.
 4.  Select **Create**.
 
@@ -48,7 +48,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 | Group name | SSPRTesters |
 | Group description | Testers of SSPR rollout |
 | Membership type | Assigned |
-| Members | Julieta Oliveira |
+| Members | Mia Steele |
     
 5.  Select **Create.**
     
@@ -77,7 +77,7 @@ Enable SSPR for the group.
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
 1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup). This is to ensure you'll be prompted for user authentication.
-2.  Sign in as **julieta@*organization-domain-name*.onmicrosoft.com** with the password that you noted earlier. Replace the organization-domain-name with your domain name.
+2.  Sign in as `mias@organization-domain-name.onmicrosoft.com` with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3.  When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4.  In the **More information required** dialog box, select **Next**.
 5.  On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.
@@ -88,14 +88,14 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 7.  Select **Text me a code**.
 8.  When you receive the code on your mobile phone, enter the code in the text box and then select Next.
 9.  After your phone has been registered, select Next and then select Done.
-10. Close the browser. You don't need to complete the sign in process.
+10. Close the browser. You don't need to complete the sign-in process.
 
 ## Test self-service password reset
 
 Now let's test whether the user can reset their password.
 
 1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/sspr](https://aka.ms/sspr). This is to ensure you well be prompted for user authentication.
-2.  In the **Email, phone, or Skype** box, enter **julieta@*organization-domain-name*.onmicrosoft.com** and then select Next. Replace the organization-domain-name with your domain name.
+2.  In the **Email, phone, or Skype** box, enter `mias@organization-domain-name.onmicrosoft.com` and then select Next. Replace the organization-domain-name with your domain name.
 3.  On the Enter password page, select **Forgot my password**.
 4.  On the Get back into your account page, complete the requested information and then select **Next**.
     
@@ -108,6 +108,6 @@ Now let's test whether the user can reset their password.
 6.  Enter your verification code and then select **Next**.
 7.  Choose a new password step, enter a password and then confirm your new password.
 8.  When complete, select **Finish**.
-9.  Sign in as **Julieta** with the new password you created.
+9.  Sign in as **Mia** with the new password you created.
 10. Enter your verification code and then verify you can complete the sign-in process.
 11. When finished, close your browser.

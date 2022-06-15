@@ -123,12 +123,12 @@ The following requirements apply to the Azure AD Password Protection DC agent:
 
 The following requirements apply to the Azure AD Password Protection proxy-service:
 
-- All machines where the Azure AD Password Protection proxy service will be installed must run Windows Server 2012 R2 or later.
+- All machines where the Azure AD Password Protection proxy-service will be installed must run Windows Server 2012 R2 or later.
     
     > [!NOTE]
     > The Azure AD Password Protection proxy-service deployment is a mandatory requirement for deploying Azure AD Password Protection even though the domain controller may have outbound direct internet connectivity.
 - All machines where the Azure AD Password Protection proxy-service will be installed must have .NET 4.7 installed.
-- All machines that host the Azure AD Password Protection proxy-service must be configured to grant domain controllers the ability to log on to the proxy service. This ability is controlled via the "Access this computer from the network" privilege assignment.
+- All machines that host the Azure AD Password Protection proxy-service must be configured to grant domain controllers the ability to sign into the proxy service. This ability is controlled via the "Access this computer from the network" privilege assignment.
 - All machines that host the Azure AD Password Protection proxy-service must be configured to allow outbound TLS 1.2 HTTP traffic.
 - A *Global Administrator* or *Security Administrator* account is required to register the Azure AD Password Protection proxy-service and forest with Azure AD.
 - Network access must be enabled for the set of ports and URLs specified in the Application Proxy environment setup procedures.
@@ -174,13 +174,13 @@ The Azure AD Password Protection proxy-service supports automatic upgrade. Autom
 
 The current setting can be queried using the `Get-AzureADPasswordProtectionProxyConfiguration` cmdlet. We recommend that the automatic upgrade setting always is enabled.
 
-The `Get-AzureADPasswordProtectionProxy` cmdlet may be used to query the software version of all currently installed Azure AD Password Protection proxy servers in a forest.
+The `Get-AzureADPasswordProtectionProxy` cmdlet may be used to query the software version of all currently installed Azure AD Password Protection proxy-servers in a forest.
 
 ### Manual upgrade process
 
 A manual upgrade is accomplished by running the latest version of the `AzureADPasswordProtectionProxySetup.exe` software installer. The latest version of the software is available on the Microsoft Download Center.
 
-It's not required to uninstall the current version of the Azure AD Password Protection proxy-service — the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade may be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
+It's not required to uninstall the current version of the Azure AD Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade may be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
 
 ## Upgrading the DC agent
 
