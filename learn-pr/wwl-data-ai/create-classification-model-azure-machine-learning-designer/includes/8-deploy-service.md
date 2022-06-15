@@ -45,6 +45,8 @@ After you've created and tested an inference pipeline for real-time inferencing,
 > [!NOTE]
 > The JSON above defines features for a patient, and uses the **predict-diabetes** service you created to predict a diabetes diagnosis.
 
-3. Select **Test**. On the right hand of the screen, you should see the output **'diabetic'**. The output is 1 if the patient is predicted to have diabetes, and 0 if the patient is predicted not to have diabetes.
+3. Select **Test**. On the right hand of the screen, you should see the output **'DiabetesPrediction'**. The output is 1 if the patient is predicted to have diabetes, and 0 if the patient is predicted not to have diabetes.  
 
     ![Screenshot of the Test pane.](../media/test-interface.png)
+
+    You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed. 
