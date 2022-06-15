@@ -121,7 +121,7 @@ A status code in the 400 range indicates a client or application error. For exam
 
 Status codes in the 500 range are indicative of a server-side error, such as the service being unavailable or too busy to handle the request.
 
-The `HttpResponseMessage` object returned by a request submitted through an `HttpClient` object can abstract much of the complexity of handling the different status codes. This code fragment shows how to verify that the status code in a response message indicates success, and handle status codes that indicate some sot of failure.
+The `HttpResponseMessage` object returned by a request submitted through an `HttpClient` object can abstract much of the complexity of handling the different status codes. This code fragment shows how to verify that the status code in a response message indicates success, and handle status codes that indicate some sort of failure.
 
 ```csharp
 static readonly HttpClient client = new HttpClient();
