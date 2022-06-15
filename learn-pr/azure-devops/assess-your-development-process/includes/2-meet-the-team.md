@@ -13,7 +13,7 @@ The _Space Game_ website is a .NET app written in C# that's deployed to Linux. T
 
 And here's what the leaderboard looks like:
 
-:::image type="content" source="../media/2-space-game-leaderboard.png" alt-text="A web browser showing the the Space Game leaderboard. The leaderboard shows the top 10 players and their high scores.":::
+:::image type="content" source="../media/2-space-game-leaderboard.png" alt-text="A web browser showing the Space Game leaderboard. The leaderboard shows the top 10 players and their high scores.":::
 
 You can filter the leaderboard by mode or by game map. You can also select a player's name to see their profile and game achievements:
 
@@ -38,10 +38,10 @@ Here are your team members:
 
 ## Good morning
 
-Irwin, the team's product manager, has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was just updated with several new features and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
+Irwin, the team's product manager, has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
 
 * Some features work correctly for only some game modes.
-* Updating the leaderboard takes too long, even with a small number of players.
+* Updating the leaderboard takes too long, even with a few players.
 * Multiple scores per player show up as multiple players.
 * The new ranking feature returns incorrect results.
 * There's no way to group scores according to a specific date or game session.
@@ -51,9 +51,9 @@ He demands, "How long before these problems are fixed?"
 
 **Andy thinks**: I bet it takes me a month to write that code.
 
-**Amita thinks**: It'll take me at least a week to test this and I can't start until Andy is finished, and he always wants to sneak in new code.
+**Amita thinks**: It'll take me at least a week to test this code and I can't start until Andy is finished, and he always wants to sneak in new code.
 
-**Tim thinks**: It'll take me at least a week to set up the environments and deploy this to production. I can't start until Amita is finished, and she's never willing to call something a release candidate.
+**Tim thinks**: It'll take me at least a week to set up the environments and deploy this code to production. I can't start until Amita is finished, and she's never willing to call something a release candidate.
 
 **Mara wonders**: Was taking this job a mistake?
 

@@ -1,4 +1,4 @@
-Creating a *value stream map*, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to visually show where in the process a team creates value and where there's waste. The goal, of course, is to arrive at a process that delivers maximum value to the customer with minimum waste. A VSM can help you pinpoint those areas that either don't contribute any value or that actually reduce the value of the product.
+Creating a *value stream map*, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to visually show where in the process a team creates value and where there's waste. The goal is to arrive at a process that delivers maximum value to the customer with minimum waste. A VSM can help you pinpoint those areas that either don't contribute any value or that actually reduce the value of the product.
 
 Let's see how Tailspin measures up.
 
@@ -36,7 +36,7 @@ Andy then has to take time to triage the bugs and assign work :::image type="ico
 
 When Amita approves a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for more testing. Often, the pre-production servers are out of sync with the latest patches and updates that are needed to run the website. It takes Tim about two days to deploy to pre-production and run some tests. Again, while deploying to pre-production doesn't add value, it's necessary :::image type="icon" source="../../shared/media/callout-05.png":::.
 
-After a build is ready for production, leadership needs to approve the release before it can be deployed. This happens in a meeting. It takes four days to get leadership to meet and review the release.
+After a build is ready for production, leadership needs to approve the release before it can be deployed. The approval happens in a meeting. It takes four days to get leadership to meet and review the release.
 
 Eventually, Tim deploys the feature and the feature makes it to the customer here on the upper right of the VSM. If the production server configuration has drifted so it's out of sync with pre-production, Tim first needs to update it, and this takes one day :::image type="icon" source="../../shared/media/callout-06.png":::.
 
@@ -58,19 +58,19 @@ $${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{\ =\ .23}$$
 
 Multiply the result by 100 and you get **23%**.
 
-As you can see, we have a lot of room for improvement. And taking 22 days to develop a feature is too long.
+As you can see, we have much room for improvement. And taking 22 days to develop a feature is too long.
 
 **Tim:** So how does this help us?
 
 ## Where do we go from here?
 
-**Mara:** It helps to see where we are now so that we can pinpoint the areas where there's waste. We want to minimize the time we spend that has no value to the customer. I believe we can really improve our efficiency by adopting a DevOps approach. For one thing, we can automate a lot of these steps, and that will definitely cut down on the time.
+**Mara:** It helps to see where we're now so that we can pinpoint the areas where there's waste. We want to minimize the time we spend that has no value to the customer. I believe we can really improve our efficiency by adopting a DevOps approach. For one thing, we can automate many of these steps, and that will definitely cut down on the time.
 
-I'm not suggesting we drop our current processes, but I think we can work toward a more efficient process in small increments without disrupting what we currently have in place.
+I'm not suggesting we drop our current processes, but I think we can work toward a more efficient process in small increments, without disrupting what we currently have in place.
 
 Let's look at just a couple of areas where we can improve.
 
-**Andy:** We might as well start at the beginning. It takes me a long time to get a label on the code so we can start the new feature. I have to walk around to the developers and ask them to check in what they have so we can build and test. If you can figure out how to speed that up, you'll have my attention.
+**Andy:** We might as well start at the beginning. It takes me a long time to get a label on the code so we can start the new feature. I have to walk around to the developers and ask them to check in what they've so we can build and test. If you can figure out how to speed that up, you'll have my attention.
 
 Also, I noticed that you don't have time in there for the build itself. That takes half a day right now. It would be nice to see that time improve.
 
@@ -80,4 +80,4 @@ Also, I noticed that you don't have time in there for the build itself. That tak
 
 **Andy:** We don't have time to change the process now. You heard Irwin. We're in crisis mode here!
 
-**Mara:** I understand. For now, let's do what we always do. But we can all think about our part in the process and how we can improve. We can start making small changes in parallel to our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics. If we end up adopting Azure DevOps practices, then we can revisit the numbers. Maybe we can update the VSM at some point.
+**Mara:** I understand. For now, let's do what we always do. But we can all think about our part in the process and how we can improve. We can start making small changes in parallel to our current processes. We can thus see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics. If we end up adopting Azure DevOps practices, then we can revisit the numbers. Maybe we can update the VSM at some point.

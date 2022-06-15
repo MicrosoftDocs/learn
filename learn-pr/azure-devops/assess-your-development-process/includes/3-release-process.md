@@ -1,6 +1,6 @@
 The first step to setting up a DevOps practice is to assess your current process. This means analyzing:
 
-* Your existing artifacts, such as deployment packages and NuGet, as well as your container repositories.
+* Your existing artifacts, like deployment packages and NuGet, as well as your container repositories.
 * Your existing test management tools.
 * Your existing work management tools.
 * Recommending migration and integration strategies.
@@ -40,7 +40,7 @@ A DevOps practice often begins with an understanding of your existing processes.
 :::column-end:::
 :::row-end:::
 
-Mara asks, "Have any of you ever performed a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
+Mara asks, "Have any of you ever done a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
 
 Mara says, "I get it. Leave it to me."
 
