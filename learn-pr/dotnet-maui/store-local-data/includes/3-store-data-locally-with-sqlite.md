@@ -112,7 +112,7 @@ The **Table** method returns a **TableQuery\<T>** object. To get a **List**, use
 
 ## Execute a SQLite query by using LINQ
 
-The  **Table** method retrieves all the rows from a table. On most occasions you want to return only a subset of the rows that match a set of specified criteria. For these tasks, use LINQ with SQLite-net.
+The  **Table** method retrieves all the rows from a table. On most occasions, you want to return only a subset of the rows that match a set of specified criteria. For these tasks, use LINQ with SQLite-net.
 
 SQLite-net supports many common LINQ queries including:
 
@@ -128,7 +128,7 @@ SQLite-net supports many common LINQ queries including:
 - ThenByDescending
 - Count
 
-With these methods, you can use the extension method syntax or the LINQ C# syntax. For example, here's a snippet of code that enables you to retrieve the details of a specified user a user:
+With these methods, you can use the extension method syntax or the LINQ C# syntax. For example, here's a snippet of code that enables you to retrieve the details of a specified user:
 
 ```csharp
 public User GetByUsername(string username)
@@ -142,7 +142,7 @@ public User GetByUsername(string username)
 
 ## Update and delete rows
 
-You update a row using the **Update** method of the **SQLiteConnection** object. You provide an object defining the row to be updated with its new values. The **Update** method modifies the row that has the same primary key value as the provided object. The value returned is the number of rows changed; if this value is zero, then no rows with a matching primary key were found, so nothing was updated. The next snippet shows this method in action:
+You update a row using the **Update** method of the **SQLiteConnection** object. You provide an object defining the row to be updated with its new values. The **Update** method modifies the row that has the same primary key value as the provided object. The value returned is the number of rows changed. If this value is zero, then no rows with a matching primary key were found, and nothing was updated. The next snippet shows this method in action:
 
 ```csharp
 public int UpdateUser(User user)
@@ -153,7 +153,7 @@ public int UpdateUser(User user)
 }
 ```
 
-Remove rows from a table with the **Delete** method of the **SQLiteConnection** object. The simplest form of this method takes the primary key of the item to be deleted as the parameter, as shown below. Note that this form of the **Delete** method is generic, and it requires a type parameter. The value returned is the number of rows removed from the table:
+Remove rows from a table with the **Delete** method of the **SQLiteConnection** object. The simplest form of this method takes the primary key of the item to be deleted as the parameter, as shown below. This form of the **Delete** method is generic, and it requires a type parameter. The value returned is the number of rows removed from the table:
 
 ```csharp
 public int DeleteUser(int userID)
