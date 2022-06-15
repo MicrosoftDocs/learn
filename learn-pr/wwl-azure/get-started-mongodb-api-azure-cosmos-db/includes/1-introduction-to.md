@@ -1,6 +1,6 @@
 Current MongoDB developers will feel right at home using the Azure Cosmos DB API for MongoDB. The API will allow them to use Azure Cosmos DB transparently as if they were using a MongoDB database. The developers can keep on using MongoDB drivers, SDKs and tools they're familiar with to create apps and connect to Azure Cosmos DB. 
 
-## Advantages of choosing the API for Mongo DB
+## Advantages of choosing the API for MongoDB
 
 Let's take a look at some advantages of using the Azure Cosmos DB API for MongoDB over other offerings like MongoDB Atlas.
 
