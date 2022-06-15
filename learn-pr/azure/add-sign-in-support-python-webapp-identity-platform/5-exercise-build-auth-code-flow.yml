@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.add-sign-in-support-python-webapp-identity-platform.exercise-build-auth-code-flow
-title: Enter exercise title
+title: Exercise - Build the authorization code flow
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Build the authorization code flow
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 06/14/2022
   author: Dickson-Mwendia

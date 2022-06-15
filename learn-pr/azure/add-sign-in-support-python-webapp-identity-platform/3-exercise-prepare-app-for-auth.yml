@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.add-sign-in-support-python-webapp-identity-platform.exercise-prepare-app-for-auth
-title: Enter exercise title
+title: Exercise - Register a Python web app in the Azure portal
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Register a Python web app in the Azure portal
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 06/14/2022
   author: Dickson-Mwendia

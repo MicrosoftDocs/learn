@@ -19,7 +19,7 @@ Azure Active Directory
 - An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/) module.
 - Familiarity with basic Python programming concepts and terminology.
 - An understanding of cloud computing concepts and services.
-- Basic knowledge  of the [Microsoft identity platform](https://docs.microsoft.com/en-us/learn/modules/explore-microsoft-identity-platform/)
+- Basic knowledge of the [Microsoft identity platform](https://docs.microsoft.com/en-us/learn/modules/explore-microsoft-identity-platform/)
 
 ## Summary
 
@@ -32,7 +32,7 @@ After completing this module, you'll be able to:
 
 - Register and configure a web app with the Microsoft identity platform.
 - Add code to support core authentication and authorization features.
-- Sign in your organizational users and fetch their data from a web API.
+- Sign in your organizational users and fetch data from a protected web API.
 
 
 ## Chunk your content into subtasks
