@@ -9,7 +9,7 @@ metadata:
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: add-sign-in-support-python-webapp-identity-platform
+title: Add sign-in support to a Python web app using the Microsoft identity platform
 summary: Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Azure AD users and fetch data from a protected web API, such as the Microsoft Graph API.
 abstract: |
   By the end of this module, you'll be able to:
@@ -17,10 +17,10 @@ abstract: |
     - Add code to support core authentication and authorization features.
     - Sign in your organizational users and fetch data from a protected web API.
 prerequisites: |
-  - An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/) module.
+  - An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](/learn/modules/create-an-azure-account/) module.
   - Familiarity with basic Python programming concepts and terminology.
   - An understanding of cloud computing concepts and services.
-  - Basic knowledge of the [Microsoft identity platform](https://docs.microsoft.com/en-us/learn/modules/explore-microsoft-identity-platform/)
+  - Basic knowledge of the [Microsoft identity platform](/learn/modules/explore-microsoft-identity-platform/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
