@@ -206,7 +206,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
     Note the above uses the `response.EnsureSuccessStatusCode` method. That will throw an error if anything other than a 2xx HTTP status code is returned.
 
-1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage. And then you can deserialize the JSON using `JsonConvert.DeserializeObject`.
+1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage`. Then, you can deserialize the JSON using `JsonConvert.DeserializeObject`.
 
     ```csharp
     var returnedJson = await response.Content.ReadAsStringAsync();
