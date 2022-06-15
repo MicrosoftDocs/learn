@@ -1,6 +1,6 @@
 The following example shows how to create mail flow rules to apply custom templates to email messages sent from your organization. Such a rule will apply custom branding, for example to senders from a specific department or members of a specific distribution group. You can also configure all mails from inside an organization to be encrypted when sent.
 
-In the following example, you will configure a mail flow rule that encrypts all mails sent to the external partner organization Fabrikam, Inc., with the domain "fabrikam.com".
+In the following example, you'll configure a mail flow rule that encrypts all mails sent to the external partner organization Fabrikam, Inc., with the domain "fabrikam.com".
 
 Perform the following steps to create a mail flow rule in the Exchange Admin Center (EAC):
 
@@ -16,15 +16,15 @@ Perform the following steps to create a mail flow rule in the Exchange Admin Cen
 
    1. In **Apply this rule if…**, select the condition **The recipient address includes…**, and **any of these words**.
 
-   1. Enter **fabrikam.com** and select the **plus (+)** sign and **Ok**.
+   1. Enter **fabrikam.com** and select the **plus (+)** sign and select **Ok**.
 
    1. From **Do the following…**, select the **Select one…** text and from the **RMS template** list, **Encrypt**.
 
    1. Select **Save.**
 
-The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Office 365 Message Encryption with the new capabilities and IRM is activated for your tenant.
+The list of templates includes default templates and options and any custom templates you create. If the list is empty, ensure that you have set up Microsoft Purview Message Encryption with the new capabilities and IRM is activated for your tenant.
 
-You can also perform this operation with Exchange Online PowerShell. If you use PowerShell you would not be using the RMS template named "Encrypt", but the OME Configuration name you want to configure instead. Use the following cmdlet to create a new mail flow rule to encrypt all messages sent to fabrikam.com:
+You can also perform this operation with Exchange Online PowerShell. If you use PowerShell you wouldn't be using the RMS template named "Encrypt", but the OME Configuration name you want to configure instead. Use the following cmdlet to create a new mail flow rule to encrypt all messages sent to fabrikam.com:
 
   ```powershell
     New-TransportRule -Name "Encrypt all mails to Fabrikam" -FromScope InOrganization -RecipientDomainIs "fabrikam.com" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
