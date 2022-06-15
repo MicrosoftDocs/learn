@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.azure-deployment-using-resource-manager-templates
-title: Azure deployments using resource manager templates
+title: Azure deployments using Resource Manager templates
 metadata:
-  title: Azure deployments using resource manager templates
-  description: "Azure deployments using resource manager templates"
+  title: Azure deployments using Resource Manager templates
+  description: "Azure deployments using Resource Manager templates"
   ms.date: 06/15/2022
   author: wwlpublish
   ms.author: lumac
