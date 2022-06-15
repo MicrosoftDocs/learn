@@ -13939,6 +13939,51 @@
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/7-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/2-understand-renderers.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/3-customize-existing-elements-with-derived-renderers.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/5-create-new-element-and-renderer.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/4-exercise-extend-an-existing-renderer.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/6-exercise-create-custom-element.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/7-Send-notifications-between-renderer-element.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/8-exercise-communicate-between-renderer-element.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
+      "redirect_document_id": false    
     }
   ]
 }
