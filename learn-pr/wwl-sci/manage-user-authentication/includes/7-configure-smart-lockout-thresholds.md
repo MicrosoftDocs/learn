@@ -4,7 +4,7 @@ Smart lockout helps lock out bad actors who try to guess your users' passwords o
 
 By default, smart lockout locks the account from sign-in attempts for one minute after 10 failed attempts. The account locks again after each subsequent failed sign-in attempt, for one minute at first and then longer in subsequent attempts. To minimize the ways an attacker could work around this behavior, we don't disclose the rate at which the lockout period grows over additional unsuccessful sign-in attempts.
 
-Smart lockout tracks the last three bad password hashes to avoid incrementing the lockout counter for the same password. If someone enters the same bad password multiple times, this behavior won't cause the account to lock out.
+Smart lockout tracks the last three bad-password hashes to avoid incrementing the lockout counter for the same password. If someone enters the same bad password multiple times, this behavior won't cause the account to lock out.
 
 Federated deployments that use AD FS 2016 and AF FS 2019 can enable similar benefits using AD FS Extranet Lockout and Extranet Smart Lockout.
 
@@ -17,7 +17,7 @@ Using smart lockout doesn't guarantee that a genuine user is never locked out. W
 
 Smart lockout can be integrated with hybrid deployments that use password hash sync or pass-through authentication to protect on-premises Active Directory Domain Services (AD DS) accounts from being locked out by attackers. By setting smart lockout policies in Azure AD appropriately, attacks can be filtered out before they reach on-premises AD DS.
 
-When using pass-through authentication, the following considerations apply:
+When the addmin configures pass-through authentication, the following considerations apply:
 
 - The Azure AD lockout threshold is **less** than the AD DS account lockout threshold. Set the values so that the AD DS account lockout threshold is at least two or three times longer than the Azure AD lockout threshold.
 - The Azure AD lockout duration must be set longer than the AD DS reset account lockout counter after duration. The Azure AD duration is set in seconds, while the AD duration is set in minutes.

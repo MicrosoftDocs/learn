@@ -8,25 +8,25 @@ Organizations can now improve the security of Windows and Linux virtual machines
 You can then centrally control and enforce Azure RBAC and Conditional Access policies that allow or deny access to the VMs.
 
 ### Benefits
-- Use Azure AD credentials to login to Windows VMs in Azure.
+- Use Azure AD credentials to log in to Windows VMs in Azure.
 - Reduce reliance on local administrator accounts.
 - Password complexity and password lifetime policies configured for your Azure AD.
 - Configure Conditional Access policies to require multifactor authentication and other signals such as user or sign in risk.
 
-### Configure Azure AD login for Windows VMs
+### Configure Azure AD sign in for Windows VMs
 
-To use Azure AD login for Windows VM in Azure, you must:
+To use Azure AD sign in for Windows VM in Azure, you must:
 
-- First enable the Azure AD login option for your Windows VM.
-- Then configure Azure role assignments for users who are authorized to login in to the VM.
+- First enable the Azure AD sign in option for your Windows VM.
+- Then configure Azure role assignments for users who are authorized to log in into the VM.
 
 :::image type="content" source="../media/azure-authentication-windows-machine.png" alt-text="Screenshot create or configure Windows virtual machine dialog.  The checkbox for Login with Azure AD is selected.":::
 
-### Configure Azure AD login for Linux VMs
-You can enable Azure AD login for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Azure AD logon:
+### Configure Azure AD sign in for Linux VMs
+You can enable Azure AD sign in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Azure AD logon:
 
 1. Sign in to the Azure portal, with an account that has access to create VMs, and select + Create a resource.
 2. Click on Create under Ubuntu Server 18.04 LTS in the Popular view.
-3. On the Management tab, Check the box to enable **Login with Azure Active Directory (Preview)**.
+3. On the Management tab, Check the box to enable `Login with Azure Active Directory (Preview)`.
 4. Ensure System assigned managed identity is checked.
 5. Complete the Linux virtual machine setup.

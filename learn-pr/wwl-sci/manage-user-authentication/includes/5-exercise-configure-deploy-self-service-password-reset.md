@@ -17,7 +17,7 @@ Basic steps to enable self-service password reset:
 
 1.  Sign in to the Azure portal using an account with global administrator permissions.
 2.  Search for and select Azure Active Directory, then select Password reset from the menu on the left side.
-3.  From the Properties page, under the option Self-service password reset enabled, select Select group
+3.  From the Properties page, under the option Self-service password reset, select Select group
 4.  Browse for and select your Azure AD group, like SSPR-Test-Group, then choose Select.
 5.  To enable SSPR for the select users, select Save.
 
@@ -52,7 +52,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
     
 5.  Select **Create.**
     
-    :::image type="content" source="../media/create-self-service-password-reset-security-group.png" alt-text="Screenshot ofthe New Group screen with group type, group name, and create highlighted.":::
+    :::image type="content" source="../media/create-self-service-password-reset-security-group.png" alt-text="Screenshot of the New Group screen with group type, group name, and create highlighted.":::
 
 ## Enable self-service password reset
 
@@ -76,7 +76,7 @@ Enable SSPR for the group.
 
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
-1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup). This is to ensure you will be prompted for user authentication.
+1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup). This is to ensure you'll be prompted for user authentication.
 2.  Sign in as **julieta@*organization-domain-name*.onmicrosoft.com** with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3.  When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4.  In the **More information required** dialog box, select **Next**.
@@ -106,8 +106,8 @@ Now let's test whether the user can reset their password.
     :::image type="content" source="../media/self-service-password-reset-verification-step.png" alt-text="Screenshot of verification step 1 with contact methods, phone number box, and text button highlighted.":::
     
 6.  Enter your verification code and then select **Next**.
-7.  In the choose a new password step, enter and then confirm your new password.
+7.  Choose a new password step, enter a password and then confirm your new password.
 8.  When complete, select **Finish**.
 9.  Sign in as **Julieta** with the new password you created.
-10. Enter your verification code and then verify you can complete the sign in process.
+10. Enter your verification code and then verify you can complete the sign-in process.
 11. When finished, close your browser.

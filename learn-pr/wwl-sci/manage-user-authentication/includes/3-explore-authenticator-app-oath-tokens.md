@@ -3,7 +3,7 @@ The Microsoft Entra Authenticator app provides an additional level of security t
 Users may receive a notification through the mobile app for them to approve or deny, or use the Authenticator app to generate an OATH verification code that can be entered in a sign-in interface. If you enable both a notification and verification code, users who register the Authenticator app can use either method to verify their identity.
 
 ## Microsoft Authenticator app
-:::image type="content" source="../media/authenticator-app.png" alt-text="Screenshot of the login vertification screen the user sees when verifying authentication with the app.":::
+:::image type="content" source="../media/authenticator-app.png" alt-text="Screenshot of the sign in verification screen the user sees when verifying authentication with the app.":::
 
 The Authenticator app provides a high level of security, and removes the need for the user to provide a password at sign-in. The Authenticator app can help prevent unauthorized access to accounts and stop fraudulent transactions. A push notification is sent to your smartphone or tablet for extra security. Users view the notification, and if it's legitimate, select Verify. Otherwise, they can select Deny.
 
