@@ -21,6 +21,8 @@ roles:
 - business-owner
 products:
 - azure-sovereign-us
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.describe-government-its-structure
 - learn.wwl.describe-significant-government-strategy-actions

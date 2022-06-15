@@ -31,6 +31,10 @@ roles:
 products:  
   - azure
   - azure-netapp-files
+subjects:
+- cloud-computing
+- virtual-machine
+- storage
 units:
   - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.introduction
   - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.overall-performance-suggestions

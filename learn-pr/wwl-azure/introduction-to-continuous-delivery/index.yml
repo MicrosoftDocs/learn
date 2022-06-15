@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
 units:
 - learn.wwl.introduction-to-continuous-delivery.introduction
 - learn.wwl.introduction-to-continuous-delivery.explore-traditional-it-development-cycle

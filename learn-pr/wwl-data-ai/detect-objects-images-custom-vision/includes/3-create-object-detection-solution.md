@@ -76,7 +76,7 @@ To train an object detection model, you need to upload images that contain the c
 Now that you've tagged the images in your project, you're ready to train a model.
 
 1. In the Custom Vision project, click **Train** to train an object detection model using the tagged images. Select the **Quick Training** option.
-2. Wait for training to complete (it might take ten minutes or so), and then review the *Precision*, *Recall*, and *mAP* performance metrics - these measure the prediction accuracy of the object detection model, and should all be high.
+2. Wait for training to complete (it might take ten minutes or so), and then review the *Precision*, *Recall*, and *mAP* performance metrics - these measure the prediction goodness of the object detection model, and should all be high.
 3. At the top right of the page, click **Quick Test**, and then in the **Image URL** box, enter `https://aka.ms/apple-orange` and view the prediction that is generated. Then close the **Quick Test** window.
 
 ## Publish the object detection model

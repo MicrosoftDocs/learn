@@ -27,7 +27,7 @@ Below is a list of some of the advantages git integration provides to the author
 
 ## Connect to a Git repository
 
-There are four different ways to connect a Git repository to your data factory for both Azure Repos and GitHub. After you connect to a Git repository, you can view and manage your configuration in the management hub under **Git configuration** in the **Source control** section.
+There are three different ways to connect a Git repository to your data factory for both Azure Repos and GitHub. After you connect to a Git repository, you can view and manage your configuration in the management hub under **Git configuration** in the **Source control** section.
 
 ### Configuration method 1: Home page
 

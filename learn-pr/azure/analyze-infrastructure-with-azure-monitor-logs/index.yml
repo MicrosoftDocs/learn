@@ -26,6 +26,9 @@ roles:
 products:
 - azure
 - azure-monitor
+subjects:
+- infrastructure
+- it-management-monitoring
 units:
 - learn.analyze-infrastructure-with-azure-monitor-logs.1-introduction
 - learn.analyze-infrastructure-with-azure-monitor-logs.2-features-azure-monitor-log

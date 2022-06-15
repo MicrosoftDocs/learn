@@ -44,6 +44,6 @@ quiz:
     - content: "Block malicious traffic against your Azure environment"
       isCorrect: false
       explanation: "Incorrect: Azure Blueprints isn't a networking/firewall tool."
-    - content: "Assign a blueprint to a management group."
+    - content: "Assigning a blueprint to a management group."
       isCorrect: true
       explanation: "Correct: This is one of the Azure Blueprints capabilities."

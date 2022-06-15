@@ -31,6 +31,8 @@ products:
 - azure-iot-hub
 - azure-monitor
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-hub-monitoring.introduction
 - learn.wwl.explore-iot-hub-monitoring.configure

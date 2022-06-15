@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-convert-cast.introduction
 - learn.languages.csharp-convert-cast.exercise-data-type-conversion

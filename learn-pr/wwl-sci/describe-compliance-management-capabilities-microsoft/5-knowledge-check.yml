@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When browsing Microsoft compliance documentation in the Service Trust Portal, you have found several documents that are specific to your industry. What is the best way of ensuring you keep up to date with the latest updates?"
+    choices:
+    - content: "Save the documents to your My Library."
+      isCorrect: true
+      explanation: "Correct. Saving the document to the My Library section of the Service Trust Portal, will ensure you have the latest updates."
+    - content: "Print each document so you can easily refer to them."
+      isCorrect: false
+      explanation: "Incorrect. Printing the document doesn't ensure you have the latest updates."
+    - content: "Download each document."
+      isCorrect: false
+      explanation: "Incorrect.  Downloading the document doesn't ensure you have the latest updates."
+  - content: "Microsoft's approach to privacy is built on six principles: Three of the principles are strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect. Identify the three other principles that are part of Microsoft's approach to privacy."
+    choices:
+    - content: "Customer control, transparency, and security."
+      isCorrect: true
+      explanation: "Correct. The foundation of Microsoft's approach to privacy is built on the following six principles: customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
+    - content: "Shared responsibility, transparency, and security."
+      isCorrect: false
+      explanation: "Incorrect. The shared responsibility model identifies which security tasks are handled by the cloud provider, and which security tasks are handled by you, the customer."
+    - content: "Customer control, transparency, and zero trust."
+      isCorrect: false
+      explanation: "Incorrect.  Although zero trust is a model employed by Microsoft, it's not one of the privacy principles.  The privacy principles include security more broadly. The general principles that represent Microsoft's approach to privacy are customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."

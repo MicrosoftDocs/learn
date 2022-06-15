@@ -24,6 +24,8 @@ roles:
 - administrator
 products:
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-virtual-machine-extensions.introduction
 - learn.wwl.configure-virtual-machine-extensions.implement-virtual-machines-extensions

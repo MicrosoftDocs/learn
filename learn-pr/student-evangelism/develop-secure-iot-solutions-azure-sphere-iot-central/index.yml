@@ -40,6 +40,10 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-central
+subjects:
+- iot
+- cloud-computing
+- threat-protection
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.design-secure-iot-solution
@@ -62,4 +66,3 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
-

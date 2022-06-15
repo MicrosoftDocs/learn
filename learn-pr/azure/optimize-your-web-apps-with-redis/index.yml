@@ -30,6 +30,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- cache
 units:
 - learn.optimize-web-app-with-redis.1-introduction
 - learn.optimize-web-app-with-redis.2-decide-if-you-want-use-redis-in-azure

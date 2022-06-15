@@ -26,6 +26,8 @@ products:
 - azure-clis
 - azure-resource-manager
 - azure-automation
+subjects:
+- cloud-computing
 modules:
 - learn.introduction-to-azure-virtual-machines
 - learn.create-linux-vm-in-azure

@@ -9,10 +9,10 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [What is a shared access signature?](/azure/storage/common/storage-dotnet-shared-access-signature-part-1?toc=%2fazure%2fstorage%2fblobs%2ftoc.json).
  -  [Azure Storage encryption for data at rest](/azure/storage/common/storage-service-encryption)
  -  [Learn - Secure your Azure Storage](/learn/modules/secure-azure-storage-account/)
- -  [Learn - Control access to Azure Storage with shared access signatures](/learn/modules/control-access-to-azure-storage-with-sas/)
- -  [Learn - Introduction to securing data at rest on Azure](/learn/modules/secure-data-at-rest/)
+ -  [Learn - Control access to Azure Storage with shared access signatures (Sandbox)](/learn/modules/control-access-to-azure-storage-with-sas/)
+ -  [Learn - Implement storage security](/learn/modules/storage-security/)

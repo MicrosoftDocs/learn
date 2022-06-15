@@ -35,6 +35,8 @@ roles: # user input: add roles from role taxonomy (https://review.docs.microsoft
   - devops-engineer
 products:
   - github
+subjects:
+- development-tools
 units:
 - learn.code-scanning-with-github-codeql.introduction
 - learn.code-scanning-with-github-codeql.what-codeql

@@ -38,6 +38,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- infrastructure
 modules:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals

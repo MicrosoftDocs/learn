@@ -14,7 +14,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**. This will bring up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
+1. Select **Edit**. Ensure that the branch is set to **main**, by selecting it from the dropdown menu. This will bring up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
     **Andy:** This was our previous build stage. I haven't made any changes yet, so we'll need to completely update it to build and push the container. We added some variables to the shared library that will make it easier to update the pipeline if we change our deployment settings. However, we have some other strings that will be reused across tasks, so we should set them as pipeline variables within the file itself.
 
@@ -67,13 +67,13 @@ Replace the entire **Deploy** stage with the code below.
 
 ## Save the pipeline to trigger a build and release
 
-1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
-1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web app container's deploy task and select the URL to view the deployed site.
+1. Select **Save** from the top right corner of the page. Type your commit message and then select **Save** to confirm.
+1. Select **Run**, and make sure your branch is set to *main*. Select **Run** when you are done.
+1. Select your pipeline to view the logs. After the build has succeeded, select the *AzureWebAppContainer* task and then select the *App Service Application URL* to view your deployed web app.
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
 
-1. You see the site running on App Service.
+1. You should see your web app running on App Service.
 
     :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 

@@ -27,6 +27,9 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- cloud-computing
+- data-engineering
 units:
 - learn.monitor-azure-cosmos-db.1-introduction
 - learn.monitor-azure-cosmos-db.2-request-units
@@ -39,4 +42,3 @@ units:
 - learn.monitor-azure-cosmos-db.9-summary
 badge:
   uid: learn.monitor-azure-cosmos-db.badge
-

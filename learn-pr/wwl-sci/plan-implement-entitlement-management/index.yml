@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-computing
 units:
 - learn.wwl.plan-implement-entitlement-management.introduction
 - learn.wwl.plan-implement-entitlement-management.define-access-packages

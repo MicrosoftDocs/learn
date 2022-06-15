@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.custom-name-entity-recognition
+metadata:
+  title: Custom name entity recognition
+  description: "Custom name entity recognition"
+  ms.date: 05/30/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Custom name entity recognition
+summary: Build a custom entity recognition solution to extract entities from unstructured documents
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand tagging entities in extraction projects
+  - Understand how to build entity recognition projects
+prerequisites: |
+  Before starting this module, you should be familiar with:
+  - The Azure portal
+  - Familiarity with Cognitive Services
+  - General programming technique
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.custom-name-entity-recognition.introduction
+- learn.wwl.custom-name-entity-recognition.understand-custom-named
+- learn.wwl.custom-name-entity-recognition.tag-your-data
+- learn.wwl.custom-name-entity-recognition.train-evaluate-your-model
+- learn.wwl.custom-name-entity-recognition.exercise-extract-custom-entities
+- learn.wwl.custom-name-entity-recognition.knowledge-check
+- learn.wwl.custom-name-entity-recognition.summary
+badge:
+  uid: learn.wwl.custom-name-entity-recognition.badge

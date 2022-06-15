@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-machines
 - sql-server
+subjects:
+- virtual-machine
 units:
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.introduction
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.considerations-sql-server-azure-virtual-machine-migrations

@@ -27,6 +27,9 @@ products:
 - azure
 - azure-migrate
 - azure-app-service
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.azure.migrate-java-app-azure-app-service.introduction
 - learn.azure.migrate-java-app-azure-app-service.containerization-overview

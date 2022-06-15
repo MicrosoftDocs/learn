@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-lab-services
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Lab Services
+  description: Evaluate whether Azure Lab Services is appropriate to your lab requirements.
+  ms.date: 02/17/2022
+  author: mikejo5000
+  ms.author: mikejo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Lab Services
+summary: Describe how lab plans, labs, and virtual machines work together to simplify the infrastructure for hosted classroom labs. Determine the types of business problems that can be solved using Azure Lab Services. 
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate whether Azure Lab Services is appropriate to your lab requirements.
+  - Describe how Azure Lab Services simplifies the creation, maintenance, and cost management of classroom labs.
+prerequisites: |
+  - Basic familiarity with Azure resources and how they work
+iconUrl: /learn/achievements/generic-badge.svg
+badge:
+  uid: learn.intro-to-azure-lab-services.badge
+levels: 
+- beginner
+roles: 
+- administrator
+products:
+- azure
+- azure-lab-services
+units:
+- learn.intro-to-azure-lab-services.introduction
+- learn.intro-to-azure-lab-services.what-is-azure-lab-services
+- learn.intro-to-azure-lab-services.how-azure-lab-services-works
+- learn.intro-to-azure-lab-services.when-to-use-azure-lab-services
+- learn.intro-to-azure-lab-services.knowledge-check
+- learn.intro-to-azure-lab-services.summary

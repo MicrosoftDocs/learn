@@ -22,6 +22,9 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- machine-learning
+- cloud-computing
 units:
 - learn.wwl.work-with-azure-machine-learning-deploy-serving-models.introduction
 - learn.wwl.work-with-azure-machine-learning-deploy-serving-models.use

@@ -38,7 +38,9 @@ prerequisites: |
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene.
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.azure-speech-services-tutorials-mrtk.1-introduction
 - learn.azure.azure-speech-services-tutorials-mrtk.2-integrate-speech-recognition-transcription
 - learn.azure.azure-speech-services-tutorials-mrtk.3-exercise-integrate-speech-recognition-transcription

@@ -28,7 +28,7 @@ When you compare the deployed Azure Databricks resources in a VNet injection dep
 
 Also, inter-node TLS communication between the clusters in the Data Plane is enabled in this deployment. One thing to note is that, while inter-node TLS is more secure, there is a slight impact on performance vs. the non-inter-node TLS found in a basic deployment.
 
-If your Azure Databricks workspace is deployed to your own virtual network (VNet), you can use custom routes, also known as [user-defined routes](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview#user-defined) (UDR), to ensure that network traffic is routed correctly for your workspace. For example, if you connect the virtual network to your on-premises network, traffic may be routed through the on-premises network and unable to reach the Azure Databricks control plane. User-defined routes can solve that problem. The diagram below shows UDRs, as well as the other components of a VNet injection deployment.
+If your Azure Databricks workspace is deployed to your own virtual network (VNet), you can use custom routes, also known as [user-defined routes](/azure/virtual-network/virtual-networks-udr-overview#user-defined) (UDR), to ensure that network traffic is routed correctly for your workspace. For example, if you connect the virtual network to your on-premises network, traffic may be routed through the on-premises network and unable to reach the Azure Databricks control plane. User-defined routes can solve that problem. The diagram below shows UDRs, as well as the other components of a VNet injection deployment.
 
 ![VNet injection deployment.](../media/vnet-injection-deployment.png)
 
@@ -44,7 +44,7 @@ Using Azure [Private Link](/azure/private-link/private-link-overview) is current
 
 #### Azure VNet service endpoints
 
-Virtual Network (VNet) [service endpoints](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview#key-benefits) extend your virtual network private address space. The endpoints also extend the identity of your VNet to the Azure services over a direct connection. Endpoints allow you to secure your critical Azure service resources to only your virtual networks. Traffic from your VNet to the Azure service always remains on the Microsoft Azure network backbone.
+Virtual Network (VNet) [service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview#key-benefits) extend your virtual network private address space. The endpoints also extend the identity of your VNet to the Azure services over a direct connection. Endpoints allow you to secure your critical Azure service resources to only your virtual networks. Traffic from your VNet to the Azure service always remains on the Microsoft Azure network backbone.
 
 Read more about [securely accessing Azure data sources from Azure Databricks](https://databricks.com/blog/2020/02/28/securely-accessing-azure-data-sources-from-azure-databricks.html).
 

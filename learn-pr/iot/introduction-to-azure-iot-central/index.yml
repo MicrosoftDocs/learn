@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with core Internet of Things (IoT) concepts such as devices, sensors and gateways.
   - Basic knowledge of cloud concepts such as the shared responsibility model and the following cloud service types: infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS).
   - Basic knowledge of REST services and APIs
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-iot-central.svg
 levels:
   - beginner
 roles:
@@ -31,6 +31,9 @@ roles:
 products:
   - azure
   - azure-iot-central
+subjects:
+- iot
+- cloud-computing
 units:
   - learn.introduction-to-azure-iot-central.introduction
   - learn.introduction-to-azure-iot-central.what-is-azure-iot-central
