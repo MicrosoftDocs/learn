@@ -1,14 +1,14 @@
 ﻿### YamlMime:Module
-uid: learn.oxford.explore-azure-percept-prerequisites
+uid: learn.azure-percept.prerequisites
 metadata:
-  title: "Explore Azure Percept prerequisites"
-  description: "Explain Azure Percept prerequisites"
+  title: Azure Percept prerequisites
+  description: Azure Percept prerequisites.
   ms.date: 06/08/2022
   ms.author: chnoring
   author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-title: "Explore Azure Percept prerequisites"
+title: Azure Percept prerequisites
 summary: "In this module, you'll learn about the prerequisites required for building and deploying an Edge AI solution with Azure Percept. As you complete the individual units in this module, you'll learn about basic concepts of Azure IoT and Artificial Intelligence (AI) Services."
 abstract: |
     After completing this module, you'll be able to:
@@ -16,9 +16,9 @@ abstract: |
     - Understand basic concepts of Azure IoT and Artificial Intelligence (AI) Services
 prerequisites: |
     - Basic knowledge of Azure cloud computing is helpful but not necessary
-iconUrl: /learn/achievements/introduction-to-azure-percept-prerequisites.svg
+iconUrl: /learn/achievements/azure-percept-prerequisites.svg
 badge:
-  uid: learn.oxford.explore-azure-percept-prerequisites.badge
+  uid: learn.azure-percept.prerequisites.badge
 levels:
 - beginner
 roles:
@@ -26,9 +26,9 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.oxford.explore-azure-percept-prerequisites.introduction
-- learn.oxford.explore-azure-percept-prerequisites.iot-services
-- learn.oxford.explore-azure-percept-prerequisites.artificial-intelligence-services
-- learn.oxford.explore-azure-percept-prerequisites.other-azure-services
-- learn.oxford.explore-azure-percept-prerequisites.knowledge-check
-- learn.oxford.explore-azure-percept-prerequisites.summary
+- learn.azure-percept.prerequisites.introduction
+- learn.azure-percept.prerequisites.iot-services
+- learn.azure-percept.prerequisites.artificial-intelligence-services
+- learn.azure-percept.prerequisites.other-azure-services
+- learn.azure-percept.prerequisites.knowledge-check
+- learn.azure-percept.prerequisites.summary
