@@ -1,4 +1,4 @@
-You've learned about the general concepts and key components offered by Defender for Cloud. Having reviewed the basic understanding of how Defender for Cloud works, you've gained the knowledge about how to protect Contoso's resources from outside threats while increasing your security posture to prevent attacks from occuring.
+You've learned about the general concepts and key components offered by Defender for Cloud. Having reviewed the basic understanding of how Defender for Cloud works, you've gained the knowledge about how to protect Contoso's resources from outside threats while increasing your security posture to prevent attacks from occurring.
 
 ## Learn more
 

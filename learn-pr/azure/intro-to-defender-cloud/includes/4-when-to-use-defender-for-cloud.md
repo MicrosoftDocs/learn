@@ -1,8 +1,8 @@
-Remember that your company wants to develop a new e-commerce website in order to sell clothin online. You need to determine which Defender for Cloud plans are the most appropriate to protect your company's resources.
+Remember that your company wants to develop a new e-commerce website in order to sell clothing online. You need to determine which Defender for Cloud plans are the most appropriate to protect your company's resources.
 
 ## Decision criteria
 
-When you are choosing which plans to activate you need to consider which resources your company will be using and what regulatory requirements your business may work under. Your companies requirements are:
+When you're choosing which plans to activate you need to consider which resources your company will be using and what regulatory requirements your business may work under. Your companies requirements are:
 
 - Protection for their servers.
 - Protection for their databases.
@@ -10,7 +10,7 @@ When you are choosing which plans to activate you need to consider which resourc
 
 ### Protect your servers
 
-The company's server is where most of its information will be stored. Applications can run off of it and it is susceptible to attacks.
+The company's server is where most of its information will be stored. Applications can run off of it and it's susceptible to attacks.
 
 The Defender for Servers plan offer advance threat protection, vulnerability assessment, adaptive network hardening and adaptive application controls.
 
@@ -33,13 +33,13 @@ Knowing where your databases are and how best to protect them is always the best
 
 ### Remediate issues that arise
 
-Just because you are aware of lapses in your security does not always mean you know exactly how to fix them. Even if you do know about potential risk factors and threats against your environments, you will still need to fix those issues.
+Just because you're aware of lapses in your security doesn't always mean you know exactly how to fix them. Even if you do know about potential risk factors and threats against your environments, you'll still need to fix those issues.
 
-Microsoft Defender for Cloud offers an easy to use solution to just this issue. The Recommendations page give you a birds eye view into all of your environments and offers easy to deploy solutions or guidance on how to remediate the issues 
+Microsoft Defender for Cloud offers an easy to use solution to just this issue. The Recommendations page shows you a birds eye view into all of your environments and offers easy to deploy solutions or guidance on how to remediate the issues.
 
-:::image type="content" source="../media/recommendations-page.png" alt-text="Screenshot that shows the Recommendations page in Defender for Cloud.":::
+:::image type="content" source="../media/recommendations-page.png" alt-text="Screenshot that shows the Recommendations page in Defender for Cloud." border="false":::
 
-By selecting a recommendation you will be presented with the following information:
+By selecting a recommendation, you'll be presented with the following information:
 
 - Severity level
 - Description of the issue
@@ -49,12 +49,12 @@ By selecting a recommendation you will be presented with the following informati
 
 Some recommendations have an easy fix button that you can select to automatically fix the issue on any of the available resources.
 
-:::image type="content" source="../media/quick-fix.png" alt-text="Screenshot of a recommendation and all the accompanying information that is provided.":::
+:::image type="content" source="../media/quick-fix.png" alt-text="Screenshot of a recommendation and all the accompanying information that is provided." border="false":::
 
 ## Select your protection
 
-After evaluating your needs, you decide that Microsoft Defender for Cloud and it's accompanying plans are the best fit for your company.
+After evaluating your needs, you decide that Microsoft Defenders for Cloud and its accompanying plans are the best fit for your company.
 
-- The ease of use with it's varied coverage offers the best possible solution to provide protections for your multicloud environments.
-- Its built in capabilities offer the best coverage for all types of resources.
-- If more advanced functionality is required, additional plans can always be added.
+- The ease of use with its varied coverage offers the best possible solution to provide protections for your multicloud environments.
+- Its built-in capabilities offer the best coverage for all types of resources.
+- If more advanced functionality is required, other plans can always be added.
