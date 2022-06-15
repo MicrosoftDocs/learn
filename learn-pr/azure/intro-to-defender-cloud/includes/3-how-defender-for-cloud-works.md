@@ -18,7 +18,7 @@ Defender for SQL will let Contoso know if their information needs further protec
 
 ## CWP
 
-Cloud workload protection is a reactive service provided by Defender for Cloud. Defender for Servers will send you alerts against cyberattacks such as brute-force attacks. You can also set up automatic protections should Defender for Cloud detect a cyberattack against your environments.
+Cloud workload protection is a reactive service. Defender for Servers will send you alerts against cyberattacks such as brute-force attacks. You can also set up automatic protections should Defender for Cloud detect a cyberattack against your environments.
 
 Alerts are available on the Recommendations page. The recommendations page tells you if you have any vulnerabilities and how to fix them so that you can protect your servers from attacks.
 
