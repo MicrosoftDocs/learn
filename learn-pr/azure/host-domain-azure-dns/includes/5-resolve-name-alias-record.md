@@ -1,6 +1,6 @@
-You've now successfully delegated the domain from the domain registrar to your Azure DNS, and configured an A record to link the domain to your web server.
+You've now successfully delegated the domain from the domain registrar to your Azure DNS and configured an A record to link the domain to your web server.
 
-The next phase of the deployment is to improve resiliency by using a load balancer. Load balancers distribute inbound data requests and traffic across one or more servers. They reduce the load on any one server, and improve performance. This technology is well established, and will be used throughout your on-premises network.
+The next phase of the deployment is to improve resiliency by using a load balancer. Load balancers distribute inbound data requests and traffic across one or more servers. They reduce the load on any one server and improve performance. This technology is well established, and will be used throughout your on-premises network.
 
 You know that the A record and CNAME record don't support direct connection to Azure resources like your load balancers. You've been tasked with finding out how to link the apex domain with a load balancer.
 
@@ -27,17 +27,17 @@ Alias records provide lifecycle tracking of target resources, ensuring that chan
 
 The alias record set supports the following DNS zone record types:
 
-- **A**: The IPv4 domain name-mapping record.
-- **AAAA**: The IPv6 domain name-mapping record.
-- **CNAME**: The alias for your domain, and links to the A record.
+- **A:** The IPv4 domain name-mapping record.
+- **AAAA:** The IPv6 domain name-mapping record.
+- **CNAME:** The alias for your domain, which links to the A record.
 
 ## Uses for alias records
 
 The following are some of the advantages of using alias records:
 
-- **Prevents dangling DNS records**: A dangling DNS record occurs when the DNS zone records aren't up-to-date with changes to IP addresses. Alias records prevent dangling references by tightly coupling the lifecycle of a DNS record with an Azure resource.
-- **Updates DNS record set automatically when IP addresses change**: When the underlying IP address of a resource, service, or application is changed, the alias record ensures that any associated DNS records are automatically refreshed.
-- **Hosts load-balanced applications at the zone apex**: Alias records allow for zone apex resource routing to Traffic Manager.
-- **Points zone apex to Azure Content Delivery Network endpoints**: With alias records, you can now directly reference your Azure Content Delivery Network instance.
+- **Prevents dangling DNS records:** A dangling DNS record occurs when the DNS zone records aren't up to date with changes to IP addresses. Alias records prevent dangling references by tightly coupling the lifecycle of a DNS record with an Azure resource.
+- **Updates DNS record set automatically when IP addresses change:** When the underlying IP address of a resource, service, or application is changed, the alias record ensures that any associated DNS records are automatically refreshed.
+- **Hosts load-balanced applications at the zone apex:** Alias records allow for zone apex resource routing to Traffic Manager.
+- **Points zone apex to Azure Content Delivery Network endpoints:** With alias records, you can now directly reference your Azure Content Delivery Network instance.
 
-An alias record enables you to link the zone apex (wideworldimports.com) to a load balancer. It creates a link to the Azure resource, rather than a direct IP-based connection. So, if the IP address of your load balancer changes, the zone apex record continues to work.
+An alias record allows you to link the zone apex (wideworldimports.com) to a load balancer. It creates a link to the Azure resource, rather than a direct IP-based connection. So, if the IP address of your load balancer changes, the zone apex record continues to work.

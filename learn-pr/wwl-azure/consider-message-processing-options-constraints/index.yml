@@ -29,6 +29,8 @@ products:
 - azure
 - azure-event-grid
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.wwl.consider-message-processing-options-constraints.introduction
 - learn.wwl.consider-message-processing-options-constraints.compare-iot-hub-message-routing-event-grid-integration

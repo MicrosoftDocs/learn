@@ -11,27 +11,27 @@ Usually, all refer to as a waterfall approach.
 
 The waterfall model follows a sequential order. A project development team only moves to the next development phase or testing if the previous step is completed successfully.
 
-It is what an engineer would do when building a bridge or a building. So, it might seem appropriate for software projects as well.
+It's what an engineer would do when building a bridge or a building. So, it might seem appropriate for software projects as well.
 
 However, the waterfall methodology has some drawbacks. One relates to the customer requirements.
 
-For example, It does not matter if the customer requirements are defined accurately at the start of a project.
+For example, It doesn't matter if the customer requirements are defined accurately at the start of a project.
 
 Usually, the project takes a long time, and the outcome may no longer match the customer's needs.
 
-There is a real challenge with the gathering of customer requirements in the first place.
+There's a real challenge with gathering customer requirements in the first place.
 
-Taking a long time to deliver something would often be different from what the customer need. Even if you built exactly what the customer asked.
+Taking a long time to deliver something would often be different from what the customer needs, even if you built exactly what the customer asked.
 
-Customers often do not know what they want until they see it or cannot explain what they need.
+Customers often don't know what they want until they see it or can't explain what they need.
 
 ## Agile
 
 By comparison, Agile methodology constantly emphasizes adaptive planning and early delivery with continual improvement.
 
-Rather than restricting development to rigid specifications, it encourages rapid and flexible responses to change as they occur.
+Rather than restricting development to rigid specifications, it encourages rapid and flexible responses to changes as they occur.
 
-In 2001, a group of highly regarded developers published a manifesto for Agile software development.
+In 2001, highly regarded developers published a manifesto for Agile software development.
 
 They said that:
 
@@ -48,10 +48,10 @@ Agile software development methods are based on releases and iterations:
     
      -  Features, bug fixes, enhancements, and refactoring width are assigned to a release.
      -  And then assigned again to a specific iteration within the release, generally on a priority basis.
- -  At the end of each iteration, they should be tested working code.
- -  In each iteration, the team must focus on the outcomes of the previous iteration and learn from it.
+ -  At the end of each iteration, there should be tested working code.
+ -  In each iteration, the team must focus on the outcomes of the previous iteration and learn from them.
 
-An advantage of having teams focused on shorter-term outcomes is that teams are also less likely to waste time over-engineering features. Or allowing unnecessary scope creep to occur.
+Having teams focused on shorter-term outcomes is that teams are also less likely to waste time over-engineering features. Or allowing unnecessary scope creep to occur.
 
 Agile software development helps teams keep focused on business outcomes.
 
@@ -86,7 +86,7 @@ Agile software development helps teams keep focused on business outcomes.
     All project development phases, such as design, development, and test, are completed once.
   :::column-end:::
   :::column:::
-    Follows an iterative development approach so that each phase may appear more than once.
+    It follows an iterative development approach so that each phase may appear more than once.
   :::column-end:::
 :::row-end:::
 :::row:::

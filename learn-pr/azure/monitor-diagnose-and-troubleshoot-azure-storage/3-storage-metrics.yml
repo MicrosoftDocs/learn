@@ -2,8 +2,8 @@
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.3-storage-metrics
 metadata:
   title: Troubleshoot with storage metrics
-  description: In this unit, we'll discuss how you can troubleshoot the performance of a storage account with storage metrics.
-  ms.date: 11/15/2019
+  description: In this unit, we'll discuss how you can troubleshoot issues in a storage account by using storage metrics.
+  ms.date: 05/05/2021
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial

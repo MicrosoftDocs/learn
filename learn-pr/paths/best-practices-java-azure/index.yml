@@ -19,7 +19,27 @@ summary: |
      - *Secure* access to and from Java apps, and
      - *Build* using Java tools that you know and love
 
-  As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  As always, use tools and frameworks that you know and love - Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+
+  Java on Azure learning paths:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/get-started-java-azure.svg" width="101" alt="The trophy for the get started with Java on Azure learning path." role="presentation"></img>
+
+    [Get started with Java on Azure](../get-started-java-azure/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/expand-capabilities-java-azure.svg" width="101" alt="The trophy for the expand the capabilities for Java apps on Azure learning path." role="presentation"></img>
+
+    [Expand the capabilities for Java apps on Azure](../expand-capabilities-java-azure/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/best-practices-java-azure.svg" width="101" alt="The trophy for the best practices for Java apps on Azure learning path." role="presentation"></img>
+
+    Best practices for Java apps on Azure
+  :::column-end:::
+  :::row-end:::
 prerequisites: |
   - An Azure subscription
   - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
@@ -47,17 +67,17 @@ products:
 - azure-cosmos-db
 - azure-database-mysql
 #- azure-devops
-- azure-spring-cloud
+- azure-spring-apps
 - azure-web-apps
 - msal-java
 - azure-service-bus
+subjects:
+- cloud-computing
 modules:
+- learn.manage-secrets-in-java-applications-zero-trust
 - learn.monitor-java-azure
-- learn.azure.deploy-java-azure-pipeline-terraform
-# Tune JVMs
 - learn.autoscale-java-azure
-# Secure communications
-# Key vault
+- learn.azure.deploy-java-azure-pipeline-terraform
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 - learn.develop-azure-functions-app-with-maven-plugin

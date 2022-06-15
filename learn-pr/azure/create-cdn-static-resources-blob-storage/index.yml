@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-cdn
+subjects:
+- storage
 units:
 - learn.azure.create-content-delivery-network-azure-cdn-blob-services.1-introduction
 - learn.azure.create-content-delivery-network-azure-cdn-blob-services.1b-exercise-deploy-a-website

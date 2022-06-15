@@ -31,6 +31,8 @@ products:
 - vs-code
 - vs-mac
 - azure-sdks
+subjects:
+- cloud-computing
 units:
 - learn.prepare-azure-dev-environment.1-introduction
 - learn.prepare-azure-dev-environment.2-set-up-dev-environment

@@ -32,6 +32,9 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- compliance
+- threat-protection
 units:
 - learn.improve-reliability-incidents.1-introduction
 - learn.improve-reliability-incidents.2-importance

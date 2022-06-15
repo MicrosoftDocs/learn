@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Train and test the machine learning model to predict rocket launch success
   description: Use the concepts of training and testing data to train your model.
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

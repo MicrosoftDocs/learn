@@ -21,6 +21,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- data-management
 modules:
 - learn.wwl.design-data-storage-solution-for-non-relational-data
 - learn.wwl.design-data-storage-solution-for-relational-data

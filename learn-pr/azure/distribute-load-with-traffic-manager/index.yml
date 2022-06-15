@@ -28,6 +28,8 @@ products:
 - azure
 - azure-traffic-manager
 - azure-virtual-network
+subjects:
+- business-continuity
 units:
 - learn.distribute-load-with-traffic-manager.1-introduction
 - learn.distribute-load-with-traffic-manager.2-routing-with-traffic-manager

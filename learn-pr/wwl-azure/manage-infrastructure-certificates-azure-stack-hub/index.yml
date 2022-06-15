@@ -3,7 +3,7 @@ uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub
 metadata:
   title: Manage infrastructure certificates for Azure Stack Hub
   description: "Manage infrastructure certificates for Azure Stack Hub"
-  ms.date: 02/28/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * Working experience creating, assigning, and securing corporate identities.
   * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-manage-infrastructure-certificates-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 units:
 - learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.introduction
 - learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.recommend-certificate-strategy

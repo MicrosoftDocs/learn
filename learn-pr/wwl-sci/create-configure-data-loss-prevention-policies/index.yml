@@ -28,6 +28,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- security
 units:
 - learn.wwl.create-configure-data-loss-prevention-policies.introduction
 - learn.wwl.create-configure-data-loss-prevention-policies.configure-data-loss-prevention-policies-for-power-platform

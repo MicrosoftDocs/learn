@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-cloud-shell
+subjects:
+- virtual-machine
 units:
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.1-introduction
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.2-decide-if-mean-is-right-for-you

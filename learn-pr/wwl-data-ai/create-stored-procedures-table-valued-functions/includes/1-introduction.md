@@ -2,7 +2,7 @@ Stored procedures are named groups of Transact-SQL (T-SQL) statements that can b
 
 Stored procedure can contain both data definition commands and data manipulation commands, providing a clean interface between a database and an application.
 
-There are advantages to using stored procedures, including: 
+There are advantages to using stored procedures, including:
 
 * **Re-use of code**. Stored procedure can be written, tested, and then reused as needed. This helps to eliminate errors and reduce development time.
 * **Security**. Stored procedures allow users and programs to perform certain operations on database objects, without giving permissions to the underlying tables. This allows you to control which processes and activities are allowed, thereby improving security.
@@ -24,4 +24,4 @@ After completing this module, you’ll be able to:
 * Pass parameters to procedures.
 * Create simple stored procedures that encapsulate a SELECT statement.
 * Construct and execute dynamic SQL with EXEC and sp_executesql.
-* Create simple inline table-valued functions and write queries against them.
+* Create simple user-defined functions and write queries against them.

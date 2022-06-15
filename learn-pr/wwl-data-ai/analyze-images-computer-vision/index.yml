@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- classification-analysis
 units:
 - learn.wwl.analyze-images-computer-vision.introduction
 - learn.wwl.analyze-images-computer-vision.get-started

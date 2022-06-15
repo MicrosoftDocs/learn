@@ -1,30 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-dependabot-security-updates-on-github-repo.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: Knowledge check # user input: module title for browser tab and search results
-  description: Knowledge check questions for configure Dependabot security updates on GitHub # user input: a description for site search and SEO
+  title: Knowledge check
+  description: Knowledge check questions for configure Dependabot security updates on GitHub.
   ms.date: 1/5/2022
   author: sterling463
   ms.author: csterling
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6 # user input: the estimate time to complete the unit
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+durationInMinutes: 6
 content: |
 quiz:
   title: Check your knowledge 
@@ -66,10 +52,10 @@ quiz:
     choices:
     - content: "`is:done`"
       isCorrect: true
-      explanation: "To view all of your notifications marked as 'Done', use the  `is:done` query."
-    - content: "`is: saved`"
+      explanation: "To view all of your notifications marked as 'Done', use the `is:done` query."
+    - content: "`is:saved`"
       isCorrect: false
       explanation: "To view all of your saved notifications, use the `is:saved` query."
-    - content: "`is: complete`"
+    - content: "`is:complete`"
       isCorrect: false
       explanation: "The `is:complete` query doesn't exist on GitHub."

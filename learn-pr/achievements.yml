@@ -962,3 +962,23 @@ achievements:
   title: Describe performance-related maintenance tasks in SQL Server
   summary: Implement tasks for both IaaS and PaaS  to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database.
   iconUrl: /learn/achievements/describe-performance-related-maintenance-tasks-in-sqlserver.svg
+- uid: learn.wwl.explore-concepts-of-non-relational-data.badge
+  type: badge
+  title: Explore concepts of non-relational data
+  summary: Learn about non-relational databases, and how they compare to relational databases. Understand the different types of non-relational databases commonly used by applications.
+  iconUrl: /learn/achievements/explore-concepts-of-non-relational-data.svg
+- uid: learn.wwl.explore-azure-synapse-serverless-sql-pools-capabilities.badge
+  type: badge
+  title: Explore Azure Synapse serverless SQL pools capabilities
+  summary: Explore the capabilities of Azure Synapse serverless SQL pools and how it can be used to interactively work with data in a data lake.
+  iconUrl: /learn/achievements/explore-azure-synapse-serverless-sql-pools-capabilities.svg
+- uid: learn.aks-workshop.badge
+  type: badge
+  title: Azure Kubernetes Service Workshop as issued by Microsoft
+  summary: Deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
+  iconUrl: /learn/achievements/aks-workshop-social.png
+- uid: learn.wwl.describe-sql-server-query-plans.badge
+  type: badge
+  title: Describe SQL Server query plans
+  summary: Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated.
+  iconUrl: /learn/achievements/describe-sql-server-query-plans.svg

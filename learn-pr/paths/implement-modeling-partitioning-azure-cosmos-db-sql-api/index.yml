@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- data-modeling
 modules:
 - learn.wwl.implement-non-relational-data-model
 - learn.wwl.design-data-partitioning-strategy

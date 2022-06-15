@@ -25,6 +25,9 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- security
+- data-analytics
 units:
 - learn.wwl.analyze-results-kql.introduction
 - learn.wwl.analyze-results-kql.use-summarize-operator

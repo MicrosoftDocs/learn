@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-endpoints-use-web-application-firewall.configure-virtual-network-for-azure-spring-cloud
+title: Configure virtual networking for Azure Spring Apps
+metadata:
+  title: Configure virtual networking for Azure Spring Apps
+  description: "Configure virtual networking for Azure Spring Apps"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-configure-virtual-network-for-azure-spring-cloud.md)]

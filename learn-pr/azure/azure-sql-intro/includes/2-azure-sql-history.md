@@ -2,7 +2,7 @@ Software and services for relational databases have been a large part of the Mic
 
 ## Launch of Windows Azure
 
-In 2008, at the Microsoft Professional Developers Conference, Microsoft Chief Software Architect at the time, Ray Ozzie, announced the new cloud computing operating system: Windows Azure. One of the five key components of the Azure Services Platform launch was Microsoft SQL Services. From the beginning, SQL has been a large part of Azure. SQL Azure was created to provide a cloud-hosted version of SQL Server. Windows Azure was later renamed to Microsoft Azure, SQL Azure was renamed to Azure SQL, and both have since dramatically expanded services.
+At the Microsoft Professional Developers Conference in 2008, Microsoft Chief Software Architect at the time, Ray Ozzie, announced the new cloud computing operating system: Windows Azure. One of the five key components of the Azure Services Platform launch was Microsoft SQL Services. From the beginning, SQL has been a large part of Azure. SQL Azure was created to provide a cloud-hosted version of SQL Server. Windows Azure was later renamed to Microsoft Azure, SQL Azure was renamed to Azure SQL, and both have since dramatically expanded services.
 
 ## Evolution of database services on Azure
 

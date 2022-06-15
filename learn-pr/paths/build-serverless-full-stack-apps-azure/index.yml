@@ -36,6 +36,9 @@ products:
 - azure-logic-apps
 - azure-devops
 - azure-blob-storage
+subjects:
+- cloud-computing
+- serverless-compute
 modules:
 - learn.azure.create-foundation-modern-apps
 - learn.azure.deploy-backend-apis
