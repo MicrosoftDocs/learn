@@ -13,10 +13,10 @@ summary: |
   Interested in building an edge AI solution with Azure Percept? Start here! You will learn about the basics of edge AI and the problems Azure Percept is trying to solve. 
   
   In this learning path, you'll:
-    - Understand the prerequisites needed to build and deploy an Edge AI solution with Azure Percept.
-    -	Understand basic concepts of Azure IoT and Artificial Intelligence (AI) Services.
-    - Understand what Azure Percept is and the benefits of using it.
-    - Describe how the components of Azure Percept work together to create Edge AI solutions.
+    - Understand the prerequisites needed to build and deploy an edge AI solution with Azure Percept.
+    -	Understand basic concepts of Azure IoT services and Azure AI services.
+    - Understand what Azure Percept is and the benefits of using Azure Percept.
+    - Describe how the components of Azure Percept work together to create edge AI solutions.
     - Evaluate the scenarios where you can use Azure Percept. 
 prerequisites: |
   - Basic knowledge of Azure cloud computing is helpful, but not necessary.
