@@ -35,8 +35,8 @@ Pattern:
 -->
 
 1. Explore extension options for adding custom properties to Microsoft Graph
-1. Add, query, and update custom properties and their associated data through Microsoft Graph
-1. Use data in custom properties to extend your application
+2. Add, query, and update custom properties and their associated data through Microsoft Graph
+3. Use data in custom properties to extend your application
 
 ## Chunk your content into subtasks
 
@@ -57,9 +57,9 @@ Add more units as needed for your content
 
 1. Introduction
 
-    Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves, they'll discover each other, their interests, and their social networks.
+    Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves and they'll discover each other, their interests, and their social networks.
 
-    The organization doesn't want to invest in another database and has identified Microsoft Graph extensibility options as suited for the data needs of the app. You want to evaluate the extension options available in Microsoft Graph and how to use them in the team bonding app.
+    The organization doesn't want to invest in another database and has identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the extension options and how to use them in the team bonding app.
 
 2. Examine Microsoft Graph extension attributes 1-15
 <!-- Conceptual unit -->
@@ -94,12 +94,11 @@ Add more units as needed for your content
 
 
 10. Knowledge check
-<!--
-    Guidance: https://review.docs.microsoft.com/en-us/help/learn/id-guidance-knowledge-check?branch=main
--->
+<!--     Guidance: https://review.docs.microsoft.com/en-us/help/learn/id-guidance-knowledge-check?branch=main  -->
+
 11. Summary
 
-    The company has extended employee information using Microsoft Graph and without using an external database. Through the team bonding app and the underlying extension attributes, employees can supply data about themselves. Through the app, employees can exercise curiosity about their colleagues and connect with them internally and through external social networks.
+    The company has extended employee information using Microsoft Graph and without using an external database. Through the team bonding app and the underlying Microsoft Graph extension attributes, employees can supply data about themselves. Through the app, employees can exercise curiosity about their colleagues and connect with them internally and through external social networks.
 
     + Comparison of the extension types
 
