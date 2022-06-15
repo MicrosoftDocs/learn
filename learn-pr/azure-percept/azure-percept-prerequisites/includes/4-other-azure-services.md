@@ -1,4 +1,4 @@
-This unit provides an overview of other Azure Services that are useful to know when you build and deploy an Edge AI solution with Azure Percept but aren’t necessary.
+This unit provides an overview of other Microsoft services that are useful to know when you build and deploy an edge AI solution with Azure Percept, but aren’t necessary.
 
 ## Introduction to Azure Stream Analytics
 

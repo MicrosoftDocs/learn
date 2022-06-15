@@ -1,7 +1,7 @@
 In this module, you learned: 
 
-- The prerequisites needed to build and deploy an Edge AI solution with Azure Percept.
-- A basic understanding of Azure IoT and Artificial Intelligence (AI) Services concepts.
+- Prerequisites to build and deploy an edge AI solution with Azure Percept.
+- A basic understanding of concepts in Azure IoT services and Azure AI services.
 
 You can learn more about these services from these resources:
 
@@ -13,10 +13,10 @@ You can learn more about these services from these resources:
 
 **Azure AI services**
 
-- [Getting started with AI on Azure](/learn/modules/get-started-ai-fundamentals/)
-- [Explore Computer vision](/learn/paths/explore-computer-vision-microsoft-azure/) 
+- [Get started with AI in Azure](/learn/modules/get-started-ai-fundamentals/)
+- [Explore Computer Vision](/learn/paths/explore-computer-vision-microsoft-azure/) 
 
-**Other Azure services**
+**Other Microsoft services**
 
 - [Stream Analytics](/learn/paths/implement-data-streaming-with-asa/)
 - [Introduction to Power BI](/learn/modules/introduction-power-bi/)

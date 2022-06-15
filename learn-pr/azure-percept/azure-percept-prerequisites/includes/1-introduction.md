@@ -2,7 +2,7 @@ Azure Percept is a fully integrated, easy-to-use platform with added security fo
 
 ## Azure IoT services
 
-Use these IoT services in Azure when you create your Azure Percept solution:
+Use these IoT services in Azure to create an Azure Percept solution:
 
 - Azure IoT
 - Azure IoT Hub
@@ -10,14 +10,14 @@ Use these IoT services in Azure when you create your Azure Percept solution:
 
 ## Azure AI services
 
-Use these AI services in Azure when you create your Azure Percept solution:
+Use these AI services in Azure to create your Azure Percept solution:
 
 - Azure AI
 - Computer Vision
 
-## Other Azure services
+## Other Microsoft services
 
-Use these other Azure services when you create your Azure Percept solution:
+Use these other Azure services to create your Azure Percept solution:
 
 - Azure Stream Analytics
 - Power BI

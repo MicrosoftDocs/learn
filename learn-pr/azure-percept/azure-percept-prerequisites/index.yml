@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
 title: Azure Percept prerequisites
-summary: In this module, you'll learn about the prerequisites for building and deploying an edge artificial intelligence (AI) solution with Azure Percept. As you complete the individual units in this module, you'll learn about basic concepts of Azure IoT services and Azure AI services."
+summary: In this module, you'll learn about the prerequisites for building and deploying an edge artificial intelligence (AI) solution with Azure Percept. As you complete the individual units in this module, you'll learn about basic concepts of Azure IoT services and Azure AI services.
 abstract: |
     After completing this module, you'll be able to:
     - Understand the prerequisites needed to build and deploy an edge AI solution with Azure Percept.
