@@ -16,7 +16,7 @@ Three of the prebuilt models are designed to handle general documents and extrac
 
     :::image type="content" source="../media/04-read-model.png" alt-text="Screenshot showing the read model analyzing a document in German in Form Recognizer Studio." lightbox="../media/04-read-model.png":::
 
-- **General document.** Use this model to extract key-value pairs and entities from any tables in your documents. The model can also recognize several categories of named entities, such as **person**, **location**, and **product**.
+- **General document.** Use this model to extract key-value pairs and tables in your documents.
 
     :::image type="content" source="../media/04-general-document-model.png" alt-text="Screenshot showing the general document model analyzing a document in Form Recognizer Studio." lightbox="../media/04-general-document-model.png":::
  
@@ -53,7 +53,7 @@ The five other prebuilt models are each designed to handle, and trained on, a sp
 
 ## Custom models
 
-If the prebuilt models don't suit your purposes, you can create a custom model and train it to analyze the specific type of document users will send to your Forms Recognizer service. The general document analyzer prebuilt models can extract rich information from these forms and you might be able to use them if your requirements are to obtain general data. However, by using a custom model, trained on forms with similar structures, key-value pairs, and entities, you will obtain more predictable and standardized results from your unusual form types.
+If the prebuilt models don't suit your purposes, you can create a custom model and train it to analyze the specific type of document users will send to your Forms Recognizer service. The general document analyzer prebuilt models can extract rich information from these forms and you might be able to use them if your requirements are to obtain general data. However, by using a custom model, trained on forms with similar structures and key-value pairs, you will obtain more predictable and standardized results from your unusual form types.
 
 To train a custom model, you must supply at least five examples of the completed form but the more examples you supply, the greater the confidence levels Forms Recognizer will return when it analyzes input. The more varied your documents are in terms of structure and terminology, the greater the number of example documents you will need to supply to train a reliable model. You can either supply a labeled dataset to describe the expected data or allow the model to identify key-value pairs and table data based on what it finds in the example forms. Also, make sure your training forms include examples that span the full range of possible input. For example, if you are expecting both hand-written and printed entries, include them both in your training.
 
@@ -63,12 +63,12 @@ Once you have trained a custom model in this way, Form Recognizer can accurately
 
 There are two kinds of custom model:
 
-- **Custom template models.** A custom template model is most appropriate when the forms you want to analyze have a consistent visual template. If you remove all the user-entered data from the forms and find that the blank forms are identical, use a custom template models. Custom template models support 9 different languages for handwritten text and a wide range of languages for printed text.
-- **Custom neural models.** A custom neural model is best when you have some variation in the structure of your documents. For example, if you have used three different versions of a survey document to collect data. Neural models only support English at the time of writing.
+- **Custom template models.** A custom template model is most appropriate when the forms you want to analyze have a consistent visual template. If you remove all the user-entered data from the forms and find that the blank forms are identical, use a custom template models. Custom template models support 9 different languages for handwritten text and a wide range of languages for printed text. If you have a few different variations of the form templates, train a model for each of the variations and then compose the models together into a single model. The service will invoke the model best suited to analyze the document.
+- **Custom neural models.** A custom neural model can work across the spectrum of structured to unstructured documents. Documents like contracts with no defined structure or highly structured forms can be analyzed with a neural model. Neural models work on English with the highest accuracy and a marginal drop in accuracy for Latin based languages like German, French, Italian, Spanish, and Dutch. Try using the custom neural model first if your scenario is addressed by the model. 
 
 ## Composed models
 
-A composed model is one that consists of multiple custom models. When a user submits a form to the composed model, Forms Analyzer automatically classifies it to determine which of the custom models should be used in its analysis. In this approach, a user doesn't have to know what kind of document it is before submission. That can be helpful when you're using lots of similar forms or when you want to publish a single endpoint for all your form types.
+A composed model is one that consists of multiple custom models. Typical scenarios where composed models help are when you don't know the submitted document type and want to classify and then analyze it. They are also useful if you have multiple variations of a form, each with a trained individual model. When a user submits a form to the composed model, Forms Analyzer automatically classifies it to determine which of the custom models should be used in its analysis. In this approach, a user doesn't have to know what kind of document it is before submission. That can be helpful when you're using lots of similar forms or when you want to publish a single endpoint for all your form types.
 
 > [!IMPORTANT]
 > The results from a composed model include the `docType` property, which indicates the custom model that was chosen to analyze each form.
