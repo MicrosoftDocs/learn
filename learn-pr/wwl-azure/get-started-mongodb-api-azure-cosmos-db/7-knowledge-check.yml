@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/15/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You created an Azure Cosmos DB API for MongoDB account called **ContosoMongoDBAccounts01** using version 4.0, what would the account's host address be?"
+    choices:
+    - content: "contosoMongoDBAccounts01.documents.azure.com"
+      isCorrect: false
+      explanation: "Incorrect. Your account URI will will be mongo.cosmos.azure.com appended to your account name for version 3.6+. This would actually be the correct URI if we would have created an account with version 3.2"
+    - content: "contosoMongoDBAccounts01.mongo.cosmos.azure.com"
+      isCorrect: true
+      explanation: "Correct. Your account URI will will be mongo.cosmos.azure.com appended to your account name for version 3.6+."
+    - content: "contosoMongoDBAccounts01.mongodb.cosmos.azure.com"
+      isCorrect: false
+      explanation: "Incorrect. Your account URI will will be mongo.cosmos.azure.com appended to your account name for version 3.6+."
+  - content: "Which of the following statements is true?"
+    choices:
+    - content: "Since an Azure Cosmos DB API for MongoDB account doesn't have a MongoDB engine, developers will need to use different tools and drivers than they currently use to connect to their current MongoDB 3.2, 3.6, 4.0 and 4.2 databases."
+      isCorrect: false
+      explanation: "Incorrect. Developers should be able to use their current drivers and tools."
+    - content: "Upgrading between Azure Cosmos DB API for MongoDB Server versions could take several hours depending on the databases sizes."
+      isCorrect: false
+      explanation: "Incorrect. Since all versions use the same code base, upgrading versions should incur zero downtime."
+    - content: "Azure Cosmos DB API for MongoDB accounts benefit from automatic and transparent sharding."
+      isCorrect: true
+      explanation: "Correct. While offerings like MongoDB Atlas require you to specify and manage scaling to a horizontal scaling, the Azure Cosmos DB API for MongoDB automatically manages all sharding and its infrastructure behinds the scenes for you."
+  - content: "Which .NET C# method will you use to create a new collection if it doesn't exist?"
+    choices:
+    - content: "**CreateNewCollection(\"CollectionName\")**."
+      isCorrect: false
+      explanation: "Incorrect. We need to use the *GetCollection* method."
+    - content: "**NewCollectionIfNotExist(\"CollectionName\")**."
+      isCorrect: false
+      explanation: "Incorrect. We need to use the *GetCollection* method."
+    - content: "**GetCollection(\"CollectionName\")**."
+      isCorrect: true
+      explanation: "Correct. This is the method we use to create new collections if they do not exist.  We also use this method to access existing collections."

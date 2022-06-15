@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.connect-query-api-for-mongodb
+title: Connect and query with an Azure Cosmos DB API for MongoDB
+metadata:
+  title: Connect and query with an Azure Cosmos DB API for MongoDB
+  description: "Connect and query with an Azure Cosmos DB API for MongoDB"
+  ms.date: 06/15/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-connect-query-api-for-mongodb.md)]
