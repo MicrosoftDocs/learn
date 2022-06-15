@@ -17,7 +17,7 @@ In this unit, you'll use the [Azure portal](https://portal.azure.com) to create 
 
     :::image type="content" source="../media/01.03-create-basic.png" alt-text="Screenshot of Microsoft Purview account creation - Basic tab, with the information boxes highlighted.":::
 
-1. Select **Next:Networking >** at the bottom of the page.
+1. Select **Next: Networking >** at the bottom of the page.
 
 1. On the **Networking** tab, select **All networks**.
 
