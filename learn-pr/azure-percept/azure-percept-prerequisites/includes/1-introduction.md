@@ -1,4 +1,4 @@
-Azure Percept is a fully integrated, easy-to-use platform with added security for creating edge AI solutions. To get started with using Azure Percept, there are three main prerequisite areas: *IoT*, *artificial Intelligence (AI)*, and *other Azure services*. In this module, we describe these services, which will help you to get started with Azure Percept. 
+Azure Percept is a fully integrated, easy-to-use platform with added security for creating edge AI solutions. To get started with using Azure Percept, there are three main prerequisite areas: *IoT*, *artificial Intelligence (AI)*, and *other Microsoft services*. In this module, we describe these services, which will help you to get started with Azure Percept. 
 
 ## Azure IoT services
 
@@ -17,7 +17,7 @@ Use these AI services in Azure to create your Azure Percept solution:
 
 ## Other Microsoft services
 
-Use these other Azure services to create your Azure Percept solution:
+Use these other Microsoft services to create your Azure Percept solution:
 
 - Azure Stream Analytics
 - Power BI

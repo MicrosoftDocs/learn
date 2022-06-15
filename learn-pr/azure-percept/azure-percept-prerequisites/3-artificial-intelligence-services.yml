@@ -5,8 +5,8 @@ metadata:
   title: Azure artificial intelligence services
   description: Get an introduction to artificial intelligence (AI) services in Azure.
   ms.date: 06/14/2022
-  ms.author: chnoring
-  author: amiyouss
+  ms.author: amiyouss
+  author: Amiyouss
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 4 

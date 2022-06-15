@@ -7,7 +7,7 @@ You can learn more about these services from these resources:
 
 ## Azure IoT services
 
-- [Introduction to Azure IoT](/learn/modules/introduction-iot/) 
+- [Introduction to Azure IoT](/learn/modules/introduction-iot/)
 - [Introduction to Azure IoT Hub](/learn/modules/introduction-to-iot-hub/)
 - [Introduction to Azure IoT Edge](/learn/modules/introduction-iot-edge/)  
 
@@ -18,5 +18,5 @@ You can learn more about these services from these resources:
 
 ## Other Microsoft services
 
-- [Stream Analytics](/learn/paths/implement-data-streaming-with-asa/)
+- [Azure Stream Analytics](/learn/paths/implement-data-streaming-with-asa/)
 - [Introduction to Power BI](/learn/modules/introduction-power-bi/)

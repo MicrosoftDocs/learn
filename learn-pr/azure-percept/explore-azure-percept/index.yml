@@ -4,8 +4,8 @@ metadata:
   title: Explore Azure Percept
   description: Learn what Azure Percept is, learn how the components of Azure Percept work together to create edge AI solutions, and understand the scenarios where you could use Azure Percept.
   ms.date: 06/14/2022
-  ms.author: chnoring
-  author: amiyouss
+  ms.author: amiyouss
+  author: Amiyouss
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
 title: Explore Azure Percept
