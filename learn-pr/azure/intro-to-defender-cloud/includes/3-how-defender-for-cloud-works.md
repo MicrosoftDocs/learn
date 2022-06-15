@@ -4,19 +4,17 @@ Here, we'll discuss how Defender for Cloud works to protect your multicloud envi
 
 Cloud Security Posture Management (CSPM) is a proactive system by which organizations can identify and remediate misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure.
 
-Defender for Cloud uses a secure score to inform you about the state of your overall security posture.
+Defender for Cloud uses a secure score to tell you about the state of your overall security posture.
 
 :::image type="content" source="../media/overview.png" alt-text="Screenshot of the overview page for Defender for Cloud." border="false":::
 
-On the overview page, you'll get a birds eye view of your multicloud environments and get a sense of how secure your systems are.
+The Overview page provides Contoso a birds eye view of their multicloud environments and how secure their systems are.Contoso will be able to review the provided recommendations and have their SOC team remediate them. For example, Contoso will find out if their servers are being protected by firewalls, and if the proper protocols are in place.
 
-From this page Contoso will know if the recommendations that were provided are being followed up by the SOC team, such as if their servers are being protected by firewalls, and if the proper protocols are in place.
-
-Contoso will also know if they're meeting their required policies and compliance standards in order to ensure they have all of their regulatory compliance standards in place, such as a PCI-DSS, which is a necessary compliance standard needed when accepting payments online.
+Contoso will also be able to review if their required policies and compliance standards are being met and ensure they have all of their regulatory compliance standards in place, such as a PCI-DSS, which is a necessary compliance standard needed when accepting payments online.
 
 :::image type="content" source="../media/pci-dss.png" alt-text="Screenshot that shows that Contoso isn't up to date with their PCI-DSS regulatory compliance.":::
 
-Defender for SQL will also be able to let you know if your information needs further protection.
+Defender for SQL will let Contoso know if their information needs further protection.
 
 ## CWP
 
