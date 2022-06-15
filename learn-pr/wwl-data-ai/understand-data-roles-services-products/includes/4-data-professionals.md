@@ -6,7 +6,7 @@ With organizations gathering, storing, and reporting on vast quantities of infor
 
 - **Data engineer** - Data engineers design and build data solutions that manage the flow of data around the business. This role involves developing databases, often populating them with data from internal files and data stores, and third-party systems. A data engineer integrates data from other systems. They conduct the necessary transformations so that the data is structured ready for other business users, such as data analysts and data scientists. They often work closely with the database administrator to plan and support the database servers.
 
-- **Data analyst** - The data analyst will model, query, and visualize data. Data analysts work with super users across the business tocreate reports and dashboards to supply each department with data that monitors performance. The analyst helps uncover patterns and trends to support the stakeholders with their decision-making.
+- **Data analyst** - The data analyst will model, query, and visualize data. Data analysts work with super users across the business to create reports and dashboards to supply each department with data that monitors performance. The analyst helps uncover patterns and trends to support the stakeholders with their decision-making.
 
 These data professionals also work alongside:
 
