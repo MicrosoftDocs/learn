@@ -4,12 +4,13 @@ title: Perform post-installation configuration with Windows Admin Center
 metadata:
   title: Perform post-installation configuration with Windows Admin Center
   description: "Perform post-installation configuration with Windows Admin Center"
-  ms.date: 02/26/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-perform-post-installation-with-windows-admin-center.md)]
