@@ -27,6 +27,9 @@ roles:
 - business-user
 products:
 - azure-sovereign-us
+subjects:
+- cloud-computing
+- data-analytics
 units:
 - learn.wwl.describe-cloud-business-case-analysis.introduction
 - learn.wwl.describe-cloud-business-case-analysis.perform-bca

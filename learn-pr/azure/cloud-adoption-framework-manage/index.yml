@@ -5,7 +5,7 @@ metadata:
   description: As workloads are deployed to the cloud, operations are critical to success.
   ms.date: 04/20/2022
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
@@ -44,6 +44,9 @@ products:
 - azure-monitor
 - azure-arc
 - azure-resource-manager
+subjects:
+- security
+- business-continuity
 units:
 - learn.cloud-adoption-framework-manage.1-introduction
 - learn.cloud-adoption-framework-manage.2-business-alignment

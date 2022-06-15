@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- cloud-computing
 units:
 - learn-windows.creating-ui-windows-10-apps.1-creating-a-ui-layout
 - learn-windows.creating-ui-windows-10-apps.2-adding-elements-to-your-ui

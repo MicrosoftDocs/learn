@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Use parameters to specify variability in functions
   description: Learn about parameters in Python.
   ms.date: 06/25/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

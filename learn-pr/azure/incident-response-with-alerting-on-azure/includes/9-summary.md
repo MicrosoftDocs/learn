@@ -16,7 +16,7 @@ Lastly, you explored how to use smart groups to reduce notification and alert no
 For more info about Azure Monitor, each of the alert types, and smart groups, see:
 
 - [Azure Monitor](/azure/azure-monitor/platform/alerts-overview)
-- [Metric alerts](/azure/azure-monitor/platform/alerts-metric-overview)
-- [Log alerts](/azure/azure-monitor/platform/alerts-unified-log)
-- [Activity log alerts](/azure/azure-monitor/platform/activity-log-alerts)
+- [Metric alerts](/azure/azure-monitor/alerts/alerts-types#metric-alerts)
+- [Log alerts](/azure/azure-monitor/alerts/alerts-types#log-alerts)
+- [Activity log alerts](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts)
 - [Smart groups](/azure/azure-monitor/platform/alerts-smartgroups-overview)

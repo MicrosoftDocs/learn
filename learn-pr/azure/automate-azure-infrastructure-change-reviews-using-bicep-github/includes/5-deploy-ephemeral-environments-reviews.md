@@ -55,7 +55,7 @@ By using a dedicated Azure subscription, you can also easily monitor the costs o
 
 Additionally, Azure provides many ways to help you to control the costs of ephemeral environments, including:
 
-- Azure Cost Management lets you set *budgets* for a subscription. Budgets trigger notifications, so that your team is made aware that the cost is approaching the threshold you specified.
+- Microsoft Cost Management lets you set *budgets* for a subscription. Budgets trigger notifications, so that your team is made aware that the cost is approaching the threshold you specified.
 - Many Azure resource types provide cheaper, or even free, tiers for non-production workloads. Consider whether you can use these pricing tiers and SKUs.
 - Azure Dev/Test pricing is available for some customers to use for their non-production subscriptions.
 - Resource tags can help you identify the resources that are associated with each ephemeral environment, and calculate the cost of each ephemeral environment.

@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - github
+subjects:
+- collaboration
 units:
 - learn.student-evangelism.collaborate-with-git.0-introduction
 - learn.student-evangelism.collaborate-with-git.1-collaborate-using-pull

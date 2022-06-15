@@ -20,6 +20,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
 modules:
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads

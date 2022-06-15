@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-modeling
 units:
 - learn.wwl.configure-azure-cosmos-db-sql-api.introduction
 - learn.wwl.configure-azure-cosmos-db-sql-api.choose-between-provisioned-throughput-serverless

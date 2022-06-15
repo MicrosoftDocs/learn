@@ -4,33 +4,33 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 It's common practice to train the model using a subset of the data, while holding back some data with which to test the trained model. This enables you to compare the labels that the model predicts with the actual known labels in the original dataset.
 
-In this exercise, you're going to work through steps to extend the **Auto Price Training** pipeline as shown here:
+In this exercise, you're going to work through steps to extend the **Auto Price Training** pipeline. 
 
-> [!div class="centered"]
-> ![split data, then train with linear regression and score](../media/train-score.png)
-
-Follow the steps below, using the image above for reference as you add and configure the required modules.
+Follow the steps below, using the image below step eight for reference as you add and configure the required modules.
 
 1. Open the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
+2. In the **Asset Library** pane on the left, in **Components** section, find and drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
+    
+    >[!TIP]
+    > Use the search bar to quickly locate modules. 
 
-2. In the pane on the left, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 3. Select the **Split Data** module, and configure its settings as follows:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
+    * **Randomized split**: True
     * **Random seed**: 123
     * **Stratified split**: False
 4. Expand the **Model Training** section in the pane on the left, and drag a **Train Model** module to the canvas, under the **Split Data** module. Then connect the *Result dataset1* (left) output of the **Split Data** module to the *Dataset* (right) input of the **Train Model** module.
 5. The model we're training will predict the **price** value, so select the **Train Model** module and modify its settings to set the **Label column** to  **price** (matching the case and spelling exactly!)
 6. The **price** label the model will predict is a numeric value, so we need to train the model using a *regression* algorithm. Expand the **Machine Learning Algorithms** section, and under **Regression**, drag a **Linear Regression** module to the canvas, to the left of the **Split Data** module and above the **Train Model** module. Then connect its output to the **Untrained model** (left) input of the **Train Model** module.
 
-> [!NOTE]
-> There are multiple algorithms you can use to train a regression model. For help choosing one, take a look at the [Machine Learning Algorithm Cheat Sheet for Azure Machine Learning designer](https://aka.ms/mlcheatsheet?azure-portal=true).
+    > [!NOTE]
+    > There are multiple algorithms you can use to train a regression model. For help choosing one, take a look at the [Machine Learning Algorithm Cheat Sheet for Azure Machine Learning designer](https://aka.ms/mlcheatsheet?azure-portal=true).
 
 7. To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset. Expand the **Model Scoring & Evaluation** section and drag a **Score Model** module to the canvas, below the **Train Model** module. Then connect the output of the **Train Model** module to the **Trained model** (left) input of the **Score Model** module; and drag the **Results dataset2** (right) output of the **Split Data** module to the **Dataset** (right) input of the **Score Model** module.
-8. Ensure your pipeline looks like this:
+8. Ensure your pipeline looks like this image:
 
-> [!div class="centered"]
-> ![split data, then train with linear regression and score](../media/train-score.png)
+    ![Split data, then train with linear regression and score](../media/train-score.png)
 
 ## Run the training pipeline
 

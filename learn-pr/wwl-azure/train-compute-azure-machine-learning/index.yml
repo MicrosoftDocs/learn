@@ -3,7 +3,7 @@ uid: learn.wwl.train-compute-azure-machine-learning
 metadata:
   title: Train compute-intensive models with Azure Machine Learning
   description: "Train compute-intensive models with Azure Machine Learning"
-  ms.date: 01/27/2022
+  ms.date: 06/02/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -17,13 +17,15 @@ abstract: |
   - How to distribute model training.
 prerequisites: |
   Before starting this module, you should be familiar with the Azure Machine Learning service and training machine learning and deep learning models.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-train-compute-intensive-models-with-azure-machine-learning.svg
 levels:
 - advanced
 roles:
 - data-scientist
 products:
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.train-compute-azure-machine-learning.introduction
 - learn.wwl.train-compute-azure-machine-learning.train-compute

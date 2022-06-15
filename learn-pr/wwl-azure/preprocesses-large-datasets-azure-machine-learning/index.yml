@@ -3,7 +3,7 @@ uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning
 metadata:
   title: Preprocesses large datasets with Azure Machine Learning
   description: "Preprocesses large datasets with Azure Machine Learning"
-  ms.date: 01/27/2022
+  ms.date: 06/01/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -17,13 +17,15 @@ abstract: |
   - Optimize data loading and preprocessing.
 prerequisites: |
   Before starting this module, you should be familiar with the Azure Machine Learning service and training machine learning and deep learning models.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-preprocessing-large-datasets-with-azure-machine-learning.svg
 levels:
 - advanced
 roles:
 - data-scientist
 products:
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.introduction
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.choose-appropriate-ai-approach-for-your-data

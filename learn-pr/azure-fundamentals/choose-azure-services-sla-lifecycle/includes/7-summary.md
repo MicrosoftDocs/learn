@@ -29,7 +29,7 @@ In this module, you learned about several factors that affect service guarantees
 
 ## Azure Fundamentals learning path
 
-This module is part of the [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true) learning path, which is one of six learning paths for Azure Fundamentals.
+This module is part of the [Azure Fundamentals part 6: Describe Microsoft cost management and service level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true) learning path, which is one of six learning paths for Azure Fundamentals.
 
 Here are the learning paths in this series:
 
@@ -38,4 +38,4 @@ Here are the learning paths in this series:
 - [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](../../../paths/az-900-describe-core-solutions-management-tools-azure/index.yml?azure-portal=true)
 - [Azure Fundamentals part 4: Describe general security and network security features](../../../paths/az-900-describe-general-security-network-security-features/index.yml?azure-portal=true)
 - [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](../../../paths/az-900-describe-identity-governance-privacy-compliance-features/index.yml?azure-portal=true)
-- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true)
+- [Azure Fundamentals part 6: Describe Microsoft cost management and service level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true)

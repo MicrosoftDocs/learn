@@ -25,6 +25,9 @@ roles:
 products:
 - m365
 - windows
+subjects:
+- threat-protection
+- information-protection-governance
 units:
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment.introduction
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment.create-your-environment

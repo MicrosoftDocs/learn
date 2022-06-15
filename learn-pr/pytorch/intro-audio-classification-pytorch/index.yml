@@ -29,6 +29,8 @@ prerequisites: |
   - Basic Python knowledge.
   - Basic knowledge about how to use Jupyter Notebooks.
   - Basic understanding of CNNs. The "Introduction to Computer Vision with PyTorch" module in this learning path is a good place to start.
+subjects:
+- classification-analysis
 units:
 - learn.pytorch.intro-audio-classification.introduction
 - learn.pytorch.intro-audio-classification.understand-audio-data

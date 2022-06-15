@@ -3,7 +3,7 @@ uid: learn.reactors.blockchain-create-ui-decentralized-apps
 metadata:
   title: Create a user interface with decentralized apps
   description: Learn about decentralized apps and how to build your own.
-  ms.date: 02/11/2022
+  ms.date: 05/31/2022
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -26,9 +26,10 @@ prerequisites: |
   - Basic knowledge of programming concepts
   - Familiarity with the command line to create new directories and install programs
   - Node.js installed
-  - Truffle and Ganache CLI installed
+  - Truffle and Ganache installed
+  - Git installed
   - Visual Studio Code installed
-  - Blockchain Development Kit for Ethereum installed
+  - Truffle for VS Code extension installed
 iconUrl: /learn/achievements/reactors/blockchain-create-ui-decentralized-apps.svg
 levels:
 - beginner
@@ -37,6 +38,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- blockchain
 units:
 - learn.reactors.blockchain-create-ui-decentralized-apps.1-introduction
 - learn.reactors.blockchain-create-ui-decentralized-apps.2-learn-dapps

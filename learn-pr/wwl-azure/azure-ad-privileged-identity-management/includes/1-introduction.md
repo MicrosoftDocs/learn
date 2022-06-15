@@ -2,7 +2,7 @@ Azure AD Privileged Identity Management (PIM) allows you to manage, control, and
 
 ## Scenario
 
-A security engineer uses Privileged Identity Management protect administrator privileges and mitigate the risk of excessive or misused access rights; some common tasks are:
+A security engineer uses Privileged Identity Management to protect administrator privileges and mitigate the risk of excessive or misused access rights; some common tasks are:
 
  -  Configuring the scope of users and roles based on zero trust.
  -  Setting up a PIM workflow to enforce approval for role usage, and monitor the access.
@@ -15,7 +15,6 @@ Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engin
 Manage identity and access (30-35%)
 
  -  Configure secure access by using Azure AD
-    
      -  monitor privileged access for Azure AD Privileged Identity Management (PIM)
      -  configure PIM
 

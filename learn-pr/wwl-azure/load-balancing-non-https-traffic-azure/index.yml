@@ -29,6 +29,8 @@ products:
 - azure-load-balancer
 - azure-traffic-manager
 - azure-virtual-network
+subjects:
+- storage
 units:
 - learn.wwl.load-balancing-non-https-traffic-azure.introduction
 - learn.wwl.load-balancing-non-https-traffic-azure.explore

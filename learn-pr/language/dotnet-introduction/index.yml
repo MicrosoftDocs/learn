@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - dotnet
+subjects:
+- cloud-computing
 units:
 - learn.languages.dotnet-introduction.introduction
 - learn.languages.dotnet-introduction.what-is-dotnet

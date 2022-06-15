@@ -20,4 +20,4 @@ Here are the learning paths in this series:
 - [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](../../../paths/az-900-describe-core-solutions-management-tools-azure/index.yml?azure-portal=true)
 - [Azure Fundamentals part 4: Describe general security and network security features](../../../paths/az-900-describe-general-security-network-security-features/index.yml?azure-portal=true)
 - [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](../../../paths/az-900-describe-identity-governance-privacy-compliance-features/index.yml?azure-portal=true)
-- [Azure Fundamentals part 6: Describe Azure cost management and service-level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true)
+- [Azure Fundamentals part 6: Describe Microsoft Cost Management and service-level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true)

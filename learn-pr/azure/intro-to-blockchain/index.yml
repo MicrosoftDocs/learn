@@ -29,6 +29,8 @@ products:
 - azure
 - azure-blockchain-service
 - azure-blockchain-workbench
+subjects:
+- blockchain
 units:
 - learn.azure-intro-to-blockchain.introduction
 - learn.azure-intro-to-blockchain.what-is-blockchain

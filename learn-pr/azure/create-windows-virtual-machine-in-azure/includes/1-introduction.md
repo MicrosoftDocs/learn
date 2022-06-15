@@ -8,10 +8,10 @@ Azure provides a robust virtual machine hosting solution that can meet your need
 
 In this module, you'll:
 
-- Understand the options that are available for virtual machines in Azure
-- Create a Windows virtual machine using the Azure portal
-- Connect to a running Windows virtual machine using Remote Desktop
-- Install software and change the network configuration on a VM using the Azure portal
+- Understand the options that are available for virtual machines in Azure.
+- Create a Windows virtual machine using the Azure portal.
+- Connect to a running Windows virtual machine using Remote Desktop.
+- Install software and change the network configuration on a VM using the Azure portal.
 
 ## Prerequisites
 

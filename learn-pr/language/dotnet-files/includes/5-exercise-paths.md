@@ -1,4 +1,4 @@
-The .NET `Path` class and `Directory.GetCurrentDirectory` are two ways to define and compose file system paths.
+The .NET `Path` class and `Directory.GetCurrentDirectory` are two ways to define and compose file-system paths.
 
 In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files in it or any subfolders.
 
@@ -14,7 +14,7 @@ In the current Program.cs code, you're passing the static location of the *store
     var currentDirectory = Directory.GetCurrentDirectory();
     ```
 
-1. Insert the following code after one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
+1. Insert the following code after the one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
 
     ```csharp
     var storesDirectory = Path.Combine(currentDirectory, "stores");
@@ -49,7 +49,7 @@ In the current Program.cs code, you're passing the static location of the *store
 
 1. The program should show the following output:
 
-    ```bash
+    ```output
     /home/username/dotnet-files/stores/sales.json  
     /home/username/dotnet-files/stores/201/sales.json  
     /home/username/dotnet-files/stores/202/sales.json  
@@ -98,7 +98,7 @@ Instead of looking for only *sales.json* files, the program needs to search for 
   
     The output now shows all .json files in each of the store ID directories:
 
-    ```bash
+    ```output
     /home/username/dotnet-files/stores/sales.json  
     /home/username/dotnet-files/stores/201/sales.json
     /home/username/dotnet-files/stores/201/salestotals.json  
