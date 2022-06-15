@@ -1,4 +1,4 @@
-Now let's put some of the data analysis principles amd techniques you've learned into action. In this lab you'll use Excel Online to analyze and visualize data.
+Now let's put some of the data analysis principles and techniques you've learned into action. In this lab you'll use Excel Online to analyze and visualize data.
 
 In this lab, you will analyze Rosie's lemonade sales, and create visualizations to help you gain insights from the data.
 
@@ -7,13 +7,13 @@ In this lab, you will analyze Rosie's lemonade sales, and create visualizations 
 > [!NOTE]
 > If you have completed the previous module in this learning path, you can skip the **Before you start** section.
 
-If you do not already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at <a href="https://signup.live.com" target="_blank" rel="noopener noreferrer">https://signup.live.com</a>.
+If you do not already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
 
 ### Upload the workbook to OneDrive
 
 1. In your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/one-drive.png" alt-text="OneDrive" lightbox="../media/one-drive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of OneDrive." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
@@ -24,21 +24,21 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
 
-    :::image type="content" source="../media/upload-files.png" alt-text="Uploading a file" lightbox="../media/upload-files.png":::
+    :::image type="content" source="../media/upload-files.png" alt-text="Screenshot of uploading a file." lightbox="../media/upload-files.png":::
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Lemonade.xlsx in OneDrive" lightbox="../media/lemonade-xlsx.png":::
+    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade.xlsx in OneDrive." lightbox="../media/lemonade-xlsx.png":::
 
 ### Open the workbook in Excel Online
 
 1. Click the **Lemonade.xlsx** file in your OneDrive folder to open it in Excel Online. When opened, it should look like this:
 
-    :::image type="content" source="../media/lemonade-workbook.png" alt-text="Lemonade workbook in Excel" lightbox="../media/lemonade-workbook.png":::
+    :::image type="content" source="../media/lemonade-workbook.png" alt-text="Screenshot of Lemonade workbook in Excel." lightbox="../media/lemonade-workbook.png":::
 
 2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as shown above. To see the dates, double-click the line between the **A** and **B** column headers. The dates will then be shown in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
 
-    :::image type="content" source="../media/widened-column.png" alt-text="Column A widened to show dates" lightbox="../media/widened-column.png":::
+    :::image type="content" source="../media/widened-column.png" alt-text="Screenshot of column A widened to show dates." lightbox="../media/widened-column.png":::
 
 ## Exercise 1: Analyze data with a PivotTable
 
@@ -48,16 +48,16 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 1. If you have not already done so, in your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
-    :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Lemonade workbook":::
+    :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook.":::
 
 2. Select any cell in the table of data, and on the **Insert** tab of the ribbon, click **PivotTable**, and create a PivotTable from your table of data in a new worksheet. Excel adds a new worksheet with a PivotTable that looks like this:
 
-    :::image type="content" source="../media/pivot-table.png" alt-text="An empty PivotTable":::
+    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty PivotTable.":::
 
 3. In the **PivotTable Fields** pane, select **Month**. Excel automatically adds **Month** to the **Rows** area of the PivotTable and displays the month names in chronological order.
 4. In the **PivotTable Fields** pane, select **Sales**. Excel automatically adds **Sum of Sales** to the **Values** area of the PivotTable and displays the total number (sum) of lemonade sales for each month, like this:
 
-    :::image type="content" source="../media/pivot-monthly-sales.png" alt-text="A PivotTable showing sales summed by month":::
+    :::image type="content" source="../media/pivot-monthly-sales.png" alt-text="Screenshot of a PivotTable showing sales summed by month.":::
 
     You can now see the sales aggregated by month – so for example, there were 1,056 sales in June.
 
@@ -65,26 +65,26 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 1. In the **PivotTable** Fields pane, select **Day**. Excel automatically adds **Day** to the **Rows** area of the PivotTable and displays the total number (sum) of lemonade sales for each weekday within each month, like this:
 
-    :::image type="content" source="../media/pivot-month-day.png" alt-text="A PivotTable showing sales grouped by month and day":::
+    :::image type="content" source="../media/pivot-month-day.png" alt-text="Screenshot of a PivotTable showing sales grouped by month and day.":::
 
     Now you can see monthly sales aggregated by weekday. For example, 57 of the sales in January were made on a Saturday. You can also expand/collapse months to *drill-up*/*drill-down* the levels of the hierarchy.
 
 2. In the **PivotTable Fields** pane, drag **Day** from the **Rows** area to the **Columns** area. Excel now shows total sales for each month on rows, broken down by weekday in columns; like this:
 
-    :::image type="content" source="../media/pivot-day-columns.png" alt-text="A PivotTable showing sales grouped by month on rows and day on columns":::
+    :::image type="content" source="../media/pivot-day-columns.png" alt-text="Screenshot of a PivotTable showing sales grouped by month on rows and day on columns.":::
 
-    You can still see monthly sales broken down by weekday, but you can also see (in the bottom row) the totals for each week day across the entire year. For example, a total of 1,324 sales were made on a Monday.
+    You can still see monthly sales broken down by weekday, but you can also see (in the bottom row) the totals for each weekday across the entire year. For example, a total of 1,324 sales were made on a Monday.
 
 ### Change the aggregation
 
 1. In the **PivotTable Fields** pane, in the **Values** area, click the drop-down arrow next to **Sum of Sales**, and then click **Value Field Settings**.
 2. In the **Value Field Settings** dialog box, select **Average** as shown here:
 
-    :::image type="content" source="../media/field-values-summary.png" alt-text="Setting field value settings to summarize value by average":::
+    :::image type="content" source="../media/field-values-summary.png" alt-text="Screenshot of setting field value settings to summarize value by average.":::
 
     The table of data now shows the average number of sales for each month and weekday, as shown here:
 
-    :::image type="content" source="../media/pivot-average-sales.png" alt-text="A PivotTable showing average sales grouped by month on rows and day on columns":::
+    :::image type="content" source="../media/pivot-average-sales.png" alt-text="Screenshot of a PivotTable showing average sales grouped by month on rows and day on columns.":::
  
     You can now see the average number of sales for each weekday by month. For example, the average number of sales on a Wednesday in February is 19.75.
 
@@ -103,7 +103,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Modify the PivotTable you created in the previous exercise so that it shows **Date** in the **Rows** area and the sum of **Sales** and sum of **Temperature** (in that order) in the **Values** area, like this:
 
-    :::image type="content" source="../media/pivot-date-sales-temperature.png" alt-text="A PivotTable showing sales and temperature totals by date":::
+    :::image type="content" source="../media/pivot-date-sales-temperature.png" alt-text="Screenshot of a PivotTable showing sales and temperature totals by date.":::
 
     Make sure your table looks like the one shown, before you proceed (note that the date may be formatted differently for your location).
 
@@ -118,23 +118,23 @@ It can often be easier to identify trends and relationships in data by creating 
 5. In the new sheet, select cell **A2**, and then on the **Home** tab click the **Paste** button (&#128203;) to paste the copied cells into the new worksheet. You may need to widen the **A** column to see the dates.
 6. In cells **A1** to **C1**, add the columns headers **Date**, **Sales**, and **Temperature**. Your new worksheet should look like this:
 
-    :::image type="content" source="../media/new-sheet-sales-date-temp.png" alt-text="A new worksheet showing sales amd temperature totals by date":::
+    :::image type="content" source="../media/new-sheet-sales-date-temp.png" alt-text="Screenshot of a new worksheet showing sales amd temperature totals by date.":::
 
 7. Select the **Date** and **Sales** data, including the headers (but <u>not</u> the temperature data). Then on the **Insert** tab of the ribbon, in the **Line** drop-down list, click the first line chart format. Excel inserts a line chart like this:
 
-    :::image type="content" source="../media/sales-line-chart.png" alt-text="A line chart showing sales by date":::
+    :::image type="content" source="../media/sales-line-chart.png" alt-text="Screenshot of a line chart showing sales by date.":::
 
     Note that the line chart shows daily fluctuations in sales, but the general trend seems to indicate that sales are higher during the summer months and lower at the beginning and end of the year.
 
 8. Delete the chart, and then select all the data and headers, including **Temperature** and insert a new line chart. This inserts a chart like this:
 
-    :::image type="content" source="../media/sales-temperature-line-chart.png" alt-text="A line chart showing sales and temperature by date":::
+    :::image type="content" source="../media/sales-temperature-line-chart.png" alt-text="Screenshot of a line chart showing sales and temperature by date.":::
 
     This time, the chart includes separate series for **Sales** and **Temperature**. Both series show a similar pattern; it seems sales and temperature both increase over the summer months.
 
 9. Select the chart and double-click the chart title. Then in the **Chart** pane on the **Format** tab, expand **Chart Title** and change the chart title to *Sales and Temperature*:
 
-    :::image type="content" source="../media/edit-chart-title.png" alt-text="Editing the chart title":::
+    :::image type="content" source="../media/edit-chart-title.png" alt-text="Screenshot of editing the chart title.":::
 
 10. Close the **Chart** pane.
 
@@ -142,31 +142,31 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Return to the worksheet containing the PivotTable, and modify it to show **Day** on rows with the *average* of **Revenue**. Your result should look like this although your days of the week may not be ordered:
 
-    :::image type="content" source="../media/pivot-day-average-revenue.png" alt-text="A PivotTable showing average revenue by day":::
+    :::image type="content" source="../media/pivot-day-average-revenue.png" alt-text="Screenshot of a PivotTable showing average revenue by day.":::
 
 2. Copy the day and average revenue values (but <u>not</u> the headers or total) to the clipboard, and then add a new worksheet, paste the copied data in cell **A2**, and add **Day** and **AverageRevenue** headers like this:
 
-    :::image type="content" source="../media/new-sheet-day-average-revenue.png" alt-text="A new worksheet showing average revenue by day":::
+    :::image type="content" source="../media/new-sheet-day-average-revenue.png" alt-text="Screenshot of a new worksheet showing average revenue by day.":::
 
 3. Select the **B** column header and on the **Home** ribbon tab, use the **\$** menu to format the revenue data as **\$ English (United States)**, like this:
 
-    :::image type="content" source="../media/format-average-revenue.png" alt-text="A worksheet showing average revenue by day formatted as US currency":::
+    :::image type="content" source="../media/format-average-revenue.png" alt-text="Screenshot of a worksheet showing average revenue by day formatted as US currency.":::
 
 4. Select all the data, including the **Day** and **AverageRevenue** headers, and on the **Insert** tab of the ribbon, in the **Column** drop-down list, select the first column chart format. A chart like this is created:
 
-    :::image type="content" source="../media/average-revenue-column-chart.png" alt-text="A column chart showing average revenue by day":::
+    :::image type="content" source="../media/average-revenue-column-chart.png" alt-text="Screenshot of a column chart showing average revenue by day.":::
 
     At first glance this chart appears to show some significant variation between average revenue of different days of the week; with revenue on Thursdays much higher than on Sundays. However, look more closely at the scale on the vertical (Y) axis – The difference is less than 30 cents.
 
 5. Select the column chart, and on the **Chart** tab of the ribbon, in the **Pie** drop-down list select the **2D Pie chart** format. The chart changes to a pie chart like this:
 
-    :::image type="content" source="../media/average-revenue-pie-chart.png" alt-text="A pie chart showing average revenue by day":::
+    :::image type="content" source="../media/average-revenue-pie-chart.png" alt-text="Screenshot of a pie chart showing average revenue by day.":::
 
     Note that the pie segments are more or less the same size for each day.
 
 6. Select the pie chart and on the **Chart** tab, in the **Data Labels** drop-down list, select **Inside End**. This displays the actual data amounts in the chart, like this:
 
-    :::image type="content" source="../media/average-revenue-pie-chart-labels.png" alt-text="A pie chart showing average revenue by day with data labels":::
+    :::image type="content" source="../media/average-revenue-pie-chart-labels.png" alt-text="Screenshot of a pie chart showing average revenue by day with data labels.":::
 
     Now it's clearer that there's little apparent variation in average revenue for different days of the week.
 
@@ -174,15 +174,15 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Return to the worksheet containing the PivotTable, and modify it to show **Date** on rows with the sum of **Flyers** and the sum of **Sales**, like this:
 
-    :::image type="content" source="../media/pivot-date-flyers-sales.png" alt-text="A PivotTable showing flyers and sales totals by date":::
+    :::image type="content" source="../media/pivot-date-flyers-sales.png" alt-text="Screenshot of a PivotTable showing flyers and sales totals by date.":::
 
 2. Copy the date, flyers, and sales values (but <u>not</u> the headers or totals) to a new worksheet and add **Date**, **Flyers**, and **Sales** headers like this:
 
-    :::image type="content" source="../media/new-sheet-date-flyers-sales.png" alt-text="A new worksheet showing total flyers and sales by date":::
+    :::image type="content" source="../media/new-sheet-date-flyers-sales.png" alt-text="Screenshot of a new worksheet showing total flyers and sales by date.":::
 
 3. Select the **Flyers** and **Sales** data and headers (but not the dates). Then on the **Insert** tab, in the **Scatter** drop-down list, select the first scatter-plot format. This creates a scatter-plot chart like this:
 
-    :::image type="content" source="../media/flyers-sales-scatter-plot.png" alt-text="A scatter plot showing total flyers by sales":::
+    :::image type="content" source="../media/flyers-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing total flyers by sales.":::
 
     Note that the chart shows the number of flyers distributed each day on the horizontal (X) axis, and the number of sales each day on the vertical (Y) axis. The plot forms a roughly diagonal line (with some variance), indicating a general trend where the number of sales tends to increase in-line with the number of flyers distributed.
 
@@ -190,15 +190,15 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Return to the worksheet containing the PivotTable, and modify it to show **Date** on rows with the sum of **Rainfall** and the sum of **Sales** as values, like this:
 
-    :::image type="content" source="../media/pivot-date-rainfall-sales.png" alt-text="A PivotTable showing rainfall and sales totals by date":::
+    :::image type="content" source="../media/pivot-date-rainfall-sales.png" alt-text="Screenshot of a PivotTable showing rainfall and sales totals by date.":::
 
 2. Copy the date, rainfall, and sales values (but <u>not</u> the headers or totals) to a new worksheet and add **Date**, **Rainfall**, and **Sales** headers like this:
 
-    :::image type="content" source="../media/new-sheet-date-rainfall-sales.png" alt-text="A new worksheet showing total rainfall and sales by date":::
+    :::image type="content" source="../media/new-sheet-date-rainfall-sales.png" alt-text="Screenshot of a new worksheet showing total rainfall and sales by date.":::
  
 3. Select the **Rainfall** and **Sales** data and headers (but <u>not</u> the dates). Then on the **Insert** tab, in the **Scatter** drop-down list, select the first scatter-plot format. This creates a scatter-plot chart like this:
 
-    :::image type="content" source="../media/rainfall-sales-scatter-plot.png" alt-text="A scatter plot showing total rainfall by sales":::
+    :::image type="content" source="../media/rainfall-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing total rainfall by sales.":::
  
     This plot seems to indicate some kind of relationship between rainfall and sales, with sales falling as rainfall increases. However, the line formed by the plots is curved. This often means there is a non-linear, possibly logarithmic relationship.
 
@@ -219,7 +219,7 @@ It can often be easier to identify trends and relationships in data by creating 
 8. Copy the formula to the other cells in the **LogSales** column. 
 9. Select the **LogRainfall** and **LogSales** data and headers. Then on the **Insert** tab, in the **Scatter** drop-down list, select the first scatter-plot format. This creates a scatter-plot chart like this:
 
-    :::image type="content" source="../media/log-rainfall-sales-scatter-plot.png" alt-text="A scatter plot showing log rainfall by log sales":::
+    :::image type="content" source="../media/log-rainfall-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing log rainfall by log sales.":::
  
     Note that this plot shows a linear relationship between the log of rainfall and the log of sales. This is potentially useful as we explore relationships in the data, as it is easier to calculate a linear equation that relates rainfall to sales than to define a logarithmic equation to do the same.
 

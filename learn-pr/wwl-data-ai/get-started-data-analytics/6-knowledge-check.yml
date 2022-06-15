@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/14/2022
+  ms.date: 06/15/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -39,14 +39,14 @@ quiz:
     - content: "Delete all rows where the store is not equal to New York and then summarize the Revenue field"
       isCorrect: false
       explanation: "That's incorrect. You don't need to delete the data, you can apply a grouping, and then summarize the data."
-  - content: "Which of the following columns in a dataset would not be appropriate use of a color scale indicator?"
+  - content: "Which of the following columns in a dataset would be an appropriate use of a color scale indicator?"
     choices:
     - content: "Temperature"
-      isCorrect: false
-      explanation: "That's incorrect. Temperature data would be ideal for use with a color scale to display high and low values."
-    - content: "Day"
       isCorrect: true
-      explanation: "That's correct. The Day column contains string values that would not be suitable for a color scale."
-    - content: "Revenue"
+      explanation: "That's correct. Temperature data would be ideal for use with a color scale to display high and low values."
+    - content: "Day"
       isCorrect: false
-      explanation: "That's incorrect. Revenue data could be represented by using a color scale to display high and low values."
+      explanation: "That's incorrect. The Day column contains string values that would not be suitable for a color scale."
+    - content: "LastName"
+      isCorrect: false
+      explanation: "That's incorrect. The LastName column contains string values that would not be suitable for a color scale."
