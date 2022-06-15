@@ -1,13 +1,13 @@
-In this module, you learned the following:
+In this module, you learned:
 
 - What Azure Percept is and its benefits.
 - The components of Azure Percept and how they work together to create Edge AI solutions.
 - The scenarios where you can use Azure Percept.
 
-**To learn more about Azure Percept, visit these resources:**
+To learn more about Azure Percept, visit these resources:
 
 - [Learn about Azure Percept](/services/azure-percept/)
-- [Learn about Azure Percept Technical Documentation](/azure/azure-percept/)
+- [Review Azure Percept technical documentation](/azure/azure-percept/)
 - [Learn more about our customer and partner stories](https://techcommunity.microsoft.com/t5/internet-of-things-blog/bg-p/IoTBlog/label-name/Azure%20Percept)
 
 **Microsoft Build 2022 Key Sessions**
@@ -24,4 +24,4 @@ In this module, you learned the following:
 
 - [Session: Automate your operations with Edge AI](https://myignite.microsoft.com/sessions/dfc3448c-4048-4f15-b8f4-86c0f1a76684?source=sessions)
 - [Microsoft and NVIDIA partner to accelerate Edge AI deployment](https://techcommunity.microsoft.com/t5/internet-of-things/microsoft-and-nvidia-partner-to-accelerate-edge-ai-deployment/ba-p/2897307)
-- [NVIDIA works with Microsoft to Bolster GPU-accelerated Edge AI and visualization](https://blogs.nvidia.com/blog/2021/10/28/nvidia-at-microsoft-ignite/)
+- [NVIDIA works with Microsoft to bolster GPU-accelerated edge AI and visualization](https://blogs.nvidia.com/blog/2021/10/28/nvidia-at-microsoft-ignite/)

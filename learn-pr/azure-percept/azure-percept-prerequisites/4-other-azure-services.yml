@@ -1,14 +1,14 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.oxford.explore-azure-percept-prerequisites.other-azure-services
-title: Other Azure Services
+uid: learn.azure-percept.prerequisites.other-azure-services
+title: Other Azure services
 metadata:
-  title: Introduce other Azure services
-  description: In this section, we introduce the other Azure Services.
-  ms.date: 06/08/2022
+  title: Other Azure services
+  description: Get an introduction to other Azure services.
+  ms.date: 06/14/2022
   ms.author: chnoring
   author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-azure-iot-edge
 durationInMinutes: 4 
 content: |
   [!include[](includes/4-other-azure-services.md)]

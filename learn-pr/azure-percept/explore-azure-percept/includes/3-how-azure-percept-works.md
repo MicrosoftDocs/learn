@@ -1,5 +1,7 @@
 Now that you understand what Azure Percept is, the next step is to learn how it works. Azure Percept brings intelligence to any asset through a fully integrated innovation platform for digital transformation. It is part of an integrated offering that serves as the Edge AI platform and provides the glue that bridges devices and cloud services with the unique capabilities required for securely deploying and managing AI resources on the edge.
 
+:::image type="content" source="../images/azure-percept-how.png" border="false" alt-text="Diagram that depicts how Azure Percept works.":::
+
 Azure Percept covers the full stack from silicon to services to solve the integration challenges of Edge AI at scale by enabling you to begin your journey at any layer to best suits your needs, with:
 
 - Turnkey SaaS with Dynamics Connected Spaces.

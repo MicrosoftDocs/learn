@@ -1,5 +1,7 @@
 Now that you understand what Azure Percept is and how it works, this section helps you decide if it’s right for your Edge AI needs. We highlight six industries and use cases where Azure Percept can drive value across in the manufacturing, energy, smart cities, smart buildings, connected automotive, retail, and healthcare environments. These are just a few industries where Azure Percept can drive incredible value.
 
+:::image type="content" source="../images/azure-percept-industries.png" alt-text="Series of photos that depict industries with highlighted use cases for Azure Percept.":::
+
 ## Manufacturing
 
 Manufacturing presents many challenges where you can use Edge AI, for example, often decisions must be made near real-time in areas where data connectivity is not always ideal.
@@ -32,7 +34,7 @@ Here are some use cases that Azure Percept can address in the smart cities and b
 
 ## Connected automotive
 
-Azure Percept can add value by deploying Edge AI in the connected automotive industry. 
+Azure Percept can add value by deploying Edge AI in the connected automotive industry.
 
 Here are some use cases that Azure Percept can address in the connected automotive space:
 
