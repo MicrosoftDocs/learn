@@ -1,4 +1,4 @@
-Azure Forms Recognizer is an AI solution that can replace manual data entry with automatic analysis of data in printed and hand-written forms and documents. You can use this tool to extract information from forms such as entities, key-value pairs, text, selection marks, and more. 
+Azure Forms Recognizer is an AI solution that can replace manual data entry with automatic analysis of data in printed and hand-written forms and documents. You can use this tool to extract information from forms such as key-value pairs, text, selection marks, and more. 
 
 Now that you have completed this module, you can:
 
