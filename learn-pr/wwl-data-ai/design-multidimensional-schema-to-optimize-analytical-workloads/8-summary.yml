@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.introduction
-title: Introduction
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Summary
+  description: "Summary"
   ms.date: 06/15/2022
   author: wwlpublish
   ms.author: jamesh
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/8-summary.md)]
