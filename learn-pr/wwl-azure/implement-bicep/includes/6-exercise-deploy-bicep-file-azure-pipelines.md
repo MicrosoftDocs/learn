@@ -22,39 +22,38 @@ You also need to have that Bicep file you created earlier pushed into the Azure 
     :::image type="content" source="../media/starter-pipeline-template-cf6fce79.jpg" alt-text="Screenshot of starter pipeline template.":::
     
 4.  Replace everything in the starter pipeline file with the following snippet.
-
-```Bicep
-trigger:
-    - main
-
-name: Deploy Bicep files
-
-variables:
-    vmImageName: 'ubuntu-latest'
-
-    azureServiceConnection: 'myServiceConnection'
-    resourceGroupName: 'Bicep'
-    location: 'eastus'
-    templateFile: 'main.bicep'
-pool:
-    vmImage: $(vmImageName)
-
-steps:
-    - task: AzureCLI@2
-      inputs:
-          azureSubscription: $(azureServiceConnection)
-          scriptType: bash
-          scriptLocation: inlineScript
-          inlineScript: |
-            az --version
-            az group create --name $(resourceGroupName) --location $(location)
-            az deployment group create --resource-group $(resourceGroupName) --template-file $(templateFile)
-
-```
-
+    
+    ```Bicep
+    trigger:
+        - main
+    
+    name: Deploy Bicep files
+    
+    variables:
+        vmImageName: 'ubuntu-latest'
+    
+        azureServiceConnection: 'myServiceConnection'
+        resourceGroupName: 'Bicep'
+        location: 'eastus'
+        templateFile: 'main.bicep'
+    pool:
+        vmImage: $(vmImageName)
+    
+    steps:
+        - task: AzureCLI@2
+          inputs:
+              azureSubscription: $(azureServiceConnection)
+              scriptType: bash
+              scriptLocation: inlineScript
+              inlineScript: |
+                az --version
+                az group create --name $(resourceGroupName) --location $(location)
+                az deployment group create --resource-group $(resourceGroupName) --template-file $(templateFile)
+    
+    ```
+    
     > [!NOTE]
     > Don't forget to replace the service connection name with yours.
-
 5.  Select **Save and run** to create a new commit in your repository containing the pipeline YAML file and then run the pipeline. Wait for the pipeline to finish running and check the status.:::image type="content" source="../media/azure-devops-ssuccessful-job-04b4875c.jpg" alt-text="Screenshot of Azure DevOps successful job.":::
     
 6.  Once the pipeline runs successfully, you should be able to see the resource group and the storage account.
