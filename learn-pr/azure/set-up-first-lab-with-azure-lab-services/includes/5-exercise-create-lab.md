@@ -1,0 +1,91 @@
+Educators can create labs containing VMs for students using the Azure Lab Services portal. In this unit, you create a lab with Windows 11 Pro image.  Once a lab is created, you configure the template VM and publish the lab.
+
+During the process, you'll:
+
+- Create a lab
+- Create a template virtual machine
+- Connect to the template virtual machine using Remote Desktop Connection (RDP).
+
+## Create a lab
+
+The following steps show how to create a lab with Azure Lab Services.
+
+1. Sign into the [Azure Lab Service portal](https://labs.azure.com).
+1. Select **New lab**.  
+
+    :::image type="content" source="../media/new-lab-button.png" alt-text="Screenshot of Azure Lab Services portal.  New lab button is highlighted.":::
+
+1. In the **New Lab** window, choose the basic settings for the lab.
+    1. Set the **Name** to *Lab 101*.
+    1. Set the **Virtual machine image** to **Windows 11 Pro**.
+
+       For this scenario, select **Windows 11 Pro** so you can easily connect to the lab using RDP.
+
+    1. Accept the default **Virtual machine size**.
+
+        :::image type="content" source="../media/new-lab-window.png" alt-text="Screenshot of the New lab window for Azure Lab Services.":::
+
+    1. On the **Virtual machine credentials** page, specify default administrator credentials for all VMs in the lab. Specify the **name** and the **password** for the administrator.  By default all the student VMs will have the same password as the one specified here.
+
+        :::image type="content" source="../media/new-lab-credentials.png" alt-text="Screenshot of the Virtual Machine credentials window for Azure Lab Services.":::
+
+    > [!NOTE]
+    > Make a note of user name and password. They won't be shown again.
+
+    1. On the **Lab policies** page, leave the default selections and select **Next**.
+
+    1. On the **Template virtual machine settings** window, leave the selection on **Create a template virtual machine**, and then choose **Finish**.
+
+1. You should see the following screen that shows the status of the template VM creation.
+
+    :::image type="content" source="../media/create-template-vm-progress.png" alt-text="Screenshot of status of the template VM creation.":::
+
+1. When the lab is completed, you'll see the **Template** page of the lab.
+
+   :::image type="content" source="../media/lab-template-page.png" alt-text="Screenshot of Template page of a lab.":::
+
+## Connect to the template VM from Windows using RDP
+
+Typically, the Remote Desktop client is already installed and configured on Windows.  As a result, all you need to do is select the command to connect to your template VM.
+
+1. On the template page for your lab, ensure the VM is running and select the **Connect to template** button.
+
+   If it's not running, choose **Start template** and wait for it to start up.
+
+    :::image type="content" source="../media/connect-template-vm.png" alt-text="Screenshot of My virtual machines page for Azure Lab Services.  The Connect to template VM button is highlighted.":::
+
+Once connected, you can install required software to the template VM. (We aren't installing any software in this exercise.)
+
+## Set a schedule for the lab
+
+Create a scheduled event for the lab so that VMs in the lab are automatically started and stopped at specific times. The user quota (default: 10 hours) you specified earlier is the extra time assigned to each student outside this scheduled time.
+
+1. Switch to the **Schedules** page, and select **Add scheduled event** on the toolbar.  **Add scheduled event** will be disabled if the lab is actively being published.
+
+    :::image type="content" source="../media/add-schedule-button.png" alt-text="Screenshot of the Add scheduled event button on the Schedules page. The Schedules menu and Add scheduled event button are highlighted.":::
+
+1. On the **Add scheduled event** page, do the following steps:
+    1. Confirm that **Standard** is selected the **Event type**.  
+    2. Select the **start date** for the class.
+    3. Select the **start time** at which you want the VMs to be started.
+    4. Select the **stop time** at which the VMs are to be shut down.
+    5. Select the **time zone** for the start and stop times you specified.
+1. On the same **Add scheduled event** page, select the current schedule in the **Repeat** section.  
+1. On the **Repeat** dialog box, do the following steps:
+    1. Confirm that **every week** is set for the **Repeat** field.
+    2. Select the days on which you want the schedule to take effect. For this scenario, select Tuesday-Friday.
+    3. Select an **end date** for the schedule.
+    4. Select **Save**.
+1. On the **Add scheduled event** page, for **Notes (optional)**, enter any description or notes for the schedule.
+1. On the **Add scheduled event** page, select **Save**.
+1. Navigate to the start date in the calendar to verify that the schedule is set.
+
+    :::image type="content" source="../media/schedule-calendar.png" alt-text="Screenshot of the Schedule page for Azure Lab Services.  Repeating schedule, Monday through Friday shown in the calendar.":::
+
+## Publish the lab
+
+At this point, you would normally add lab users. But for this example scenario, since you don't have actual students, you will skip that step.
+
+Instead, you will publish the lab.
+
+[STEPs]
