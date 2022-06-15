@@ -57,7 +57,7 @@ If you're enabling connectivity for the first time, it can be difficult to choos
 
 - **Service Principal** - A service principal is a good option if you need a single role to authenticate against multiple resources in your Azure subscription. A service principal is an application that functions as an identity that you can use to authenticate against Azure resources. Once it's created, you can assign roles to a service principal like you would for any user or group. One benefit of using a service principal, is that it has certificates and secrets that can be set to expire after a set time limit.
 
-- **Account Key** - for storage accounts in Azure, an account key gives you general access to a storage account without needing to provide authorization to a specific role or user. These keys can be rotated and regenerated to maintain security for your storage accounts. Account keys can be useful to securely manage broad-spectrum access across multiple applications without needing to provide roles for individual users.
+- **Account Key** - For storage accounts in Azure, an account key gives you general access to a storage account without needing to provide authorization to a specific role or user. These keys can be rotated and regenerated to maintain security for your storage accounts. Account keys can be useful to securely manage broad-spectrum access across multiple applications without needing to provide roles for individual users.
 
 ### Scanning
 
@@ -97,7 +97,7 @@ For example, if your data is only for customers in the Americas, you can use a c
 
 The **schedule** of your scan will determine how often your scan will run. This is an important decision as scanning is how your Microsoft Purview data catalog maintains an accurate understanding of your data landscape, but Microsoft Purview is also billed by compute power used during scanning.
 
-There are two types of scans: Once and reoccurring.
+There are two types of scans: Once and recurring.
 
 - **Once** - This scan will only run one time and is useful for proof of concept scenarios, for data sets that update rarely, or for legacy datasets that will remain unchanged. Scans can be manually re-run on demand, allowing you to run a scan when you know the data source has been updated.
 - **Recurring** - This scan will be set to run on a schedule, either monthly or weekly, at a specific time. Schedule a recurring scan for data sets that are regularly updated or changing. This will allow you to maintain an accurate picture of your data landscape, and audit sensitive data.
