@@ -2,8 +2,6 @@ Now it's your opportunity to explore Azure Cosmos DB.
 
 This exercise can be completed using a Microsoft Learn *sandbox*, which provides a temporary Azure subscription. To activate the sandbox subscription, you must sign in using a Microsoft account. The sandbox subscription will be automatically deleted when you complete this module. After the sandbox has been activated, [sign into the Azure portal using the credentials you used to start your sandbox session](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Ensure you're working in the **Microsoft Learn Sandbox** directory - indicated at the top right of the portal under your user ID. If not, select the user icon and switch directory.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 > [!TIP]
 > If you prefer, you can use your own Azure subscription. To do so, [sign into the Azure portal using credentials for your subscription](https://portal.azure.com?azure-portal=true). Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
 
@@ -17,7 +15,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     - **Subscription**: If you're using a sandbox, select *Concierge Subscription*. Otherwise, select your Azure subscription.
     - **Resource group**:  If you're using a sandbox, select the existing resource group (which will have a name like *learn-xxxx...*). Otherwise, create a new resource group with a name of your choice.
     - **Account Name**: Enter a unique name
-    - **Location**: Choose any available location
+    - **Location**: Choose any recommended location
     - **Capacity mode**: Provisioned throughput
     - **Apply Free-Tier Discount**: Select Apply if available
     - **Limit total account throughput**: Unselected
@@ -26,42 +24,44 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ## Create a sample database
 
+*Throughout this procedure, close any tips that are displayed in the portal*.
+
 1. On the page for your new Cosmos DB account, in the pane on the left, select **Data Explorer**.
-1. In the **Data Explorer** page, select **Start with Sample** and then observe the status in the panel at the bottom of the screen until the **SampleDB** database and the sample **Persons** container has been created (which may take a minute or so).
-1. Select **Close** on the notification message.
+1. In the **Data Explorer** page, select **Launch quick start**.
+1. In the **New container** tab, review the pre-populated settings for the sample database, and then select **OK**.
+1. Observe the status in the panel at the bottom of the screen until the **SampleDB** database and its **SampleContainer** container has been created (which may take a minute or so).
 
 ## View and create items
 
-1. In the Data Explorer page, expand the **SampleDB** database and the Persons container, and select **Items** to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
-2. Select any of the items in the list to see a JSON representation of the item data.
-3. At the top of the page, select **New Item** to create a new blank item.
-4. Modify the JSON for the new item as follows, and then select **Save**.
+1. In the Data Explorer page, expand the **SampleDB** database and the **SampleContainer** container, and select **Items** to see a list of items in the container. The items represent addresses, each with a unique id and other properties.
+1. Select any of the items in the list to see a JSON representation of the item data.
+1. At the top of the page, select **New Item** to create a new blank item.
+1. Modify the JSON for the new item as follows, and then select **Save**.
 
-```json
-{
-    "id": "123",
-    "firstname": "Bob",
-    "age": 54
-}
-```
+    ```json
+    {
+        "address": "1 Any St.",
+        "id": "123456789"
+    }
+    ```
 
-5. After saving the new item, notice that additional metadata properties are added automatically.
+1. After saving the new item, notice that additional metadata properties are added automatically.
 
 ## Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
-2. In the SQL Query editor, review the default query (`SELECT * FROM c`) and use the **Execute Query** button to run it.
-3. Review the results, which includes the full JSON representation of all items.
-4. Modify the query as follows:
+1. In the SQL Query editor, review the default query (`SELECT * FROM c`) and use the **Execute Query** button to run it.
+1. Review the results, which includes the full JSON representation of all items.
+1. Modify the query as follows:
 
-```sql
-SELECT c.id, c.firstname, c.age
-FROM c
-WHERE c.age > 40
-```
+    ```sql
+    SELECT c.id, c.address
+    FROM c
+    WHERE CONTAINS(c.address, "Any St.")
+    ```
 
-5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
-6. Close the SQL Query editor, discarding your changes.
+1. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with an **address** field containing the text "Any St.".
+1. Close the SQL Query editor, discarding your changes.
 
     You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
 
