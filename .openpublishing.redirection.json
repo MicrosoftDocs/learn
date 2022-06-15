@@ -13874,6 +13874,41 @@
       "source_path": "learn-pr/wwl-data-ai/describe-sql-server-query-plans/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/includes/2-detect-network-connectivity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/2-detect-network-connectivity",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/includes/3-consume-rest-service-with-httpclient.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/3-consume-rest-web-service",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/includes/4-exercise-consume-rest-service-with-httpclient.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/5-exercise-consume-rest-web-service",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/includes/5-use-platform-specific-network-features",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/4-use-platform-specific-features",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/consume-rest-services/includes/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/6-summary",
+      "redirect_document_id": false    
     }
   ]
 }
