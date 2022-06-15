@@ -2,7 +2,7 @@ What is an artifact? An artifact is a deployable component of your application. 
 
 In general, the idea about build and release pipelines and Continuous Delivery is to build once and deploy many times.
 
-It means that an artifact will be deployed to multiple environments. To achieve this, this implies that the artifact is a stable package.
+It means that an artifact will be deployed to multiple environments. The artifact should be a stable package if you want to achieve it.
 
 The configuration is the only thing you want to change when deploying an artifact to a new environment.
 
@@ -21,30 +21,16 @@ The release pipeline then uses a secure connection to this secured place to get 
 
 The significant advantage of using a build artifact is that the build produces a versioned artifact.
 
-The artifact is linked to the build and gives us automatic traceability. We can always find the sources that made this artifact.
+The artifact is linked to the build and gives us automatic traceability. We can always find the sources that made this artifact. Another possible artifact source is version control.
 
-Another possible artifact source is version control. We can directly link our version control to our release pipeline.
+We can directly link our version control to our release pipeline.
 
-The release is then related to a specific commit in our version control system. With that, we can also see which version of a file or script is eventually installed.
+The release is then related to a specific commit in our version control system. With that, we can also see which version of a file or script is eventually installed. In this case, the version doesn't come from the build but from version control.
 
-In this case, the version doesn't come from the build but version control.
-
-Consideration for choosing a version control artifact instead of a build artifact can be that you only want to deploy one specific file.
-
-If no more actions are required before this file is used in the release pipeline, creating a versioned package containing one that file doesn't make sense.
+Consideration for choosing a version control artifact instead of a build artifact can be that you only want to deploy one specific file. If you don't need to run more actions before using this file in your release pipeline, creating a versioned package (build artifact) containing only one file doesn't make sense.
 
 Helper scripts that do actions to support the release process (clean up, rename, string actions) are typically good candidates to get from version control.
 
-Another possibility of an artifact source can be a network share containing a set of files. However, you should be aware of the possible risk.
+Another possibility of an artifact source can be a network share containing a set of files. However, you should be aware of the possible risk. The risk is that you aren't 100% sure that the package you're going to deploy is the same package that was put on the network share. If other people can access the network share as well, the package might be compromised. For that reason, this option won't be sufficient to prove integrity in a regulated environment (banks, insurance companies).
 
-The risk is that you aren't 100% sure that the package you're going to deploy is the same package that was put on the network share.
-
-If other people can access the network share as well, the package might be compromised.
-
-For that reason, this option won't be sufficient to prove integrity in a regulated environment (banks, insurance companies).
-
-Finally, container registries are a rising star when it comes to artifact sources.
-
-Container registries are versioned repositories where container artifacts are stored.
-
-By pushing a versioned container to the content repository and consuming that same version within the release pipeline, it has more or less the same advantages as using a build artifact stored in a safe location.
+Finally, container registries are a rising star when it comes to artifact sources. Container registries are versioned repositories where container artifacts are stored. By pushing a versioned container to the content repository and consuming that same version within the release pipeline, it has more or less the same advantages as using a build artifact stored in a safe location.
