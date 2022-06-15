@@ -2,7 +2,7 @@ Azure Forms Recognizer includes some prebuilt models that are trained on common 
 
 In your polling company, invoices and receipts are often submitted as photos or scans of the paper documents. Sometimes the scan is poor and the paper is creased or damaged. You want to know if Forms Recognizer can get this information into your databases more efficiently than manual data entry.
 
-Here, you'll learn about the prebuilt model that handle financial, identity, and tax documents.
+Here, you'll learn about the prebuilt models that handle financial, identity, and tax documents.
 
 ## Using the invoice model
 
@@ -61,7 +61,7 @@ The ID document model can extract fields including:
 > [!IMPORTANT]
 > Since much of the data extracted by the ID document model is personal, it is of a sensitive nature and covered by data protection laws in most jurisdictions. Be sure that you have the permission of the individual to store their data and comply with all legal requirements in the way you handle this information.
 
-At the time of writing, Form Recognizer v3.0 is in preview. If adds the following new capabilities to the extraction of data from a driver's license:
+At the time of writing, Form Recognizer v3.0 is in preview. It adds the following new capabilities to the extraction of data from a driver's license:
 
 - **Endorsements.** Additional driving privileges possessed by the licensee.
 - **Restrictions.** Suspensions and revocations of privileges.
@@ -78,7 +78,7 @@ Business cards are a popular way to exchange contact information quickly and oft
 
 ## Using the W-2 model
 
-The W-2 form is issued by the United States Internal Revenue Service (IRS) and used and used by individuals to report employees' wages and taxes withheld. The form has more than 14 boxes and describes the employee's earnings in a year.
+The W-2 form is issued by the United States Internal Revenue Service (IRS) and used by individuals to report employees' wages and taxes withheld. The form has more than 14 boxes and describes the employee's earnings in a year.
 
 The Form Recognizer W-2 model is trained on many examples of the W-2 form and can extract many fields from it, including:
 

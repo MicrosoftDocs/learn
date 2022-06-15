@@ -6,11 +6,11 @@ Here, you'll learn how prebuilt models can help you analyze common document type
 
 ## What are prebuilt models?
 
-The general approach used in Artificial Intelligence (AI) solutions is to provide a large quantity of sample data and then train an optimized model by trying different data features, parameters, and statistical treatments. The combination that best predicts the values that interest you constitutes the trained model and you can use this to predict values from new data.
+The general approach used in Artificial Intelligence (AI) solutions is to provide a large quantity of sample data and then train an optimized model by trying different data features, parameters, and statistical treatments. The combination that best predicts the values that interest you constitute the trained model and you can use this to predict values from new data.
 
-Many of the forms that businesses use from day to day are of a few common types. For example, most businesses issue or receive invoices and receipts. Any business that has employees in the United States must use the W-2 tax declaration form. Also you often have more general documents that you might want to extract data from. For these cases, Microsoft have helped by providing prebuilt models. Prebuilt models are already trained on large numbers of their target form type.
+Many of the forms that businesses use from day to day are of a few common types. For example, most businesses issue or receive invoices and receipts. Any business that has employees in the United States must use the W-2 tax declaration form. Also you often have more general documents that you might want to extract data from. For these cases, Microsoft has helped by providing prebuilt models. Prebuilt models are already trained on large numbers of their target form type.
 
-If you want to use Form Analyzer to extract data from one of these common forms or documents, you can choose to use a prebuilt model and you don't have to train your own. Because Microsoft have trained these models on a large corpus of examples, you can expect them to provide accurate and reliable results when dealing with their intended forms.
+If you want to use Form Analyzer to extract data from one of these common forms or documents, you can choose to use a prebuilt model and you don't have to train your own. Because Microsoft has trained these models on a large corpus of examples, you can expect them to provide accurate and reliable results when dealing with their intended forms.
 
 Several of the prebuilt models are trained on specific form types:
 
@@ -68,7 +68,7 @@ PDF and TIFF files can have any number of pages but, in the standard tier, only 
 | W2               | X               | X               |          | X               | X      | X      |
 | ID document      | X               | X               |          |                 |        | X      |
 | Business card    | X               | X               |          |                 |        | X      |
-|                  |                 |                 |          |                 |        |        |
+
 
 Also consider that prebuilt models are designed for and trained on generic document and form types. If you have an industry-specific or unique form type that you use often, you might be able to obtain more reliable and predictable results by using a custom model. However, custom models take time to develop because you must invest the time and resources to train them on example forms before you can use it. The larger the number of example forms you provide for training, the better the model will be at prediction form content accurately.
 
@@ -78,7 +78,7 @@ Forms Recognizer is designed as a web service you can call using code in your cu
 
 You can choose any of the prebuilt models in Forms Recognizer Studio. Microsoft provide some sample documents for use with each model or you can add your own documents and analyze them.
 
-:::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screen shot showing how to use Forms Recognizer Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
+:::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screenshot showing how to use Forms Recognizer Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
 
 ## Calling prebuilt models by using APIs
 

@@ -8,7 +8,7 @@ Before you can call the Form Recognizer service, you must create a resource to h
 1. In the **Search services and marketplace** textbox, type **Forms Recognizer** and then press <kbd>Enter</kbd>.
 1. Under **Forms Recognizer**, select **Create**.
 
-    :::image type="content" source="../media/5-create-resource.png" alt-text="Screen shot showing how to select Forms Recognizer when you create a new Azure resource.":::
+    :::image type="content" source="../media/5-create-resource.png" alt-text="Screenshot showing how to select Forms Recognizer when you create a new Azure resource.":::
 
 1. On the **Basics** page of **Create Form Recognizer** wizard, in the **Subscription** list, select your subscription.
 1. Under the **Resource group** list, select **Create new**.
@@ -17,7 +17,7 @@ Before you can call the Form Recognizer service, you must create a resource to h
 1. In the **Name** box, type a globally unique name for your resource.
 1. In the **Pricing tier** list, select **Free F0** and then select **Review + create**.
 
-    :::image type="content" source="../media/5-create-resource-details.png" alt-text="Screenshot showing how to complete the Create Forms Recognizer wizard in the Azure Portal.":::
+    :::image type="content" source="../media/5-create-resource-details.png" alt-text="Screenshot showing how to complete the Create Forms Recognizer wizard in the Azure portal.":::
 
 1. On the **Review + create** page, select **Create**, and then wait while Azure creates the Forms Recognizer resource.
 1. When the deployment is complete, select **Go to resource**. Keep this page open for the rest of this exercise. 
@@ -29,13 +29,13 @@ Let's start by using the **Forms Recognizer Studio** and the read model to analy
 1. Open a new browser tab and go to [Forms Recognizer Studio](https://formrecognizer.appliedai.azure.com/studio).
 1. Under **Document Analysis**, select **Read**.
 
-    :::image type="content" source="../media/5-studio-home-page.png" alt-text="Screenshot showing the home page of the Forms Recognizer Studio." lightbox="../media/5-studio-home-page.png":::
+    :::image type="content" source="../media/5-studio-home-page.png" alt-text="Screenshot showing the home page of the Forms Recognizer Studio with Read selected." lightbox="../media/5-studio-home-page.png":::
 
 1. If you are asked to sign into your account, use your Azure credentials.
 1. If you are asked which Forms Recognizer resource to use, select the subscription and resource name you used when you created the Forms Recognizer resource.
 1. In the list of documents on the left, select **read-german.png**.
 
-    :::image type="content" source="../media/5-read-german-sample.png" alt-text="Screenshot showing the home page of the Forms Recognizer Studio." lightbox="../media/5-read-german-sample.png":::
+    :::image type="content" source="../media/5-read-german-sample.png" alt-text="Screenshot showing the Read page in Forms Recognizer Studio." lightbox="../media/5-read-german-sample.png":::
 
 1. At the top-left, select **Analyze**.
 1. When the analysis is complete, the text extracted from the image is shown on the right in the **Content** tab. Review this text and compare it to the text in the original image for accuracy.
@@ -50,12 +50,12 @@ We'll use Cloud Shell in your Azure subscription to host a console application t
 
 1. In the Azure portal select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
-    :::image type="content" source="../media/5-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
+    :::image type="content" source="../media/5-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal." lightbox="../media/5-open-cloud-shell.png":::
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you do not see this option, skip the step.
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
 
-    :::image type="content" source="../media/5-create-storage.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
+    :::image type="content" source="../media/5-create-storage.png" alt-text="Screenshot showing how to mount storage with Create storage highlighted." lightbox="../media/5-create-storage.png":::
 	
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it is *PowerShell*, switch to *Bash* by using the drop-down menu.
 
@@ -88,9 +88,9 @@ Now, let's write some code that uses your Forms Recognizer resource. You'll add 
 	code Program.cs
 	```
 
-1. Switch to the browser tab that displays the Forms Recognizer overview in the Azure Portal. To the right of the **Endpoint** value, click the **Copy to clipboard** button.
+1. Switch to the browser tab that displays the Forms Recognizer overview in the Azure portal. To the right of the **Endpoint** value, click the **Copy to clipboard** button.
 
-    :::image type="content" source="../media/5-find-endpoint-key.png" alt-text="Screenshot showing the where to find the endpoint and API key in the Azure portal." lightbox="../media/5-find-endpoint-key.png":::
+    :::image type="content" source="../media/5-find-endpoint-key.png" alt-text="Screenshot showing  where to find the endpoint and API key in the Azure portal." lightbox="../media/5-find-endpoint-key.png":::
 
 1. In the Cloud Shell code editor, in the list of files on the left, locate this line and replace `<Endpoint URL>` with the string you just copied:
 
@@ -98,7 +98,7 @@ Now, let's write some code that uses your Forms Recognizer resource. You'll add 
 	string endpoint = "<Endpoint URL>";
 	```
 
-1. Switch to the browser tab that displays the Forms Recognizer overview in the Azure Portal. To the right of the **KEY 1** value, click the *Copy to clipboard** button.
+1. Switch to the browser tab that displays the Forms Recognizer overview in the Azure portal. To the right of the **KEY 1** value, click the *Copy to clipboard** button.
 1. In the Cloud Shell code editor, locate this line and replace `<API Key>` with the string you just copied:
 
     ```csharp

@@ -2,7 +2,7 @@ If you want to extract text, languages, and other information from documents wit
 
 In your polling company, customers and partners often send specifications, tenders, statements of work, and other documents with unpredictable structures. You want to know if Azure Forms Recognizer can analyze and extract values from these documents.
 
-Here, you'll learn about the prebuilt models that Microsoft provide for general documents.
+Here, you'll learn about the prebuilt models that Microsoft provides for general documents.
 
 ## Using the read model
 
@@ -26,7 +26,7 @@ The general document model is the only prebuilt model to support entity extracti
 > [!NOTE]
 > At the time of writing, the general document model is in preview.
 
-The types of entity you can detect include:
+The types of entities you can detect include:
 
 - `Person`. The name of a person.
 - `PersonType`. A job title or role.
@@ -53,7 +53,7 @@ For example, each table cell is extracted with:
 
 - Its content text.
 - The size and position of its bounding box.
-- Whether it's part of a header column or not.
+- If it's part of a header column.
 - Indexes to indicate its row and column position in the table.
 
 Selection marks are extracted with their bounding box, a confidence indicator, and whether they are selected or not. 
