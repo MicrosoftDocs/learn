@@ -16,7 +16,7 @@ abstract: |
     - Understand basic concepts of Azure IoT services and Azure AI services.
 prerequisites: |
     - Basic knowledge of Azure cloud computing is helpful but not necessary
-iconUrl: /learn/achievements/azure-percept-prerequisites.svg
+iconUrl: /learn/achievements/azure-percept/azure-percept-prerequisites.svg
 badge:
   uid: learn.azure-percept.prerequisites.badge
 levels:
