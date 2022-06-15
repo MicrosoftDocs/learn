@@ -14154,6 +14154,11 @@
       "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/8-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/5-explore-multi-configuration-multi-agent.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-release-pipeline-devops/",
+      "redirect_document_id": false
     }
   ]
 }
