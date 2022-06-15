@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- storage
+- virtual-machine
 units:
 - learn.wwl.introduction-to-cluster-shared-volumes.introduction
 - learn.wwl.introduction-to-cluster-shared-volumes.determine-functionality-of

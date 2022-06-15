@@ -22,6 +22,8 @@ products:
 - azure-sql-database
 - azure-synapse-analytics
 - power-bi
+subjects:
+- data-analytics
 modules:
 - learn.wwl.explore-azure-data-services-for-modern-analytics
 - learn.wwl.understand-concepts-of-data-analytics

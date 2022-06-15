@@ -37,6 +37,9 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
+subjects:
+- iot
+- development-tools
 units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.1-introduction
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.2-introduction-artificial-intelligence-edge

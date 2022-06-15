@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- architecture
 units:
 - learn.azdo.deploy-azure-functions.1-introduction
 - learn.azdo.deploy-azure-functions.2-what-is-azure-functions

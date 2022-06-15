@@ -20,6 +20,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 modules:
 - learn.wwl.plan-resource-requirements
 - learn.wwl.configure-azure-cosmos-db-sql-api

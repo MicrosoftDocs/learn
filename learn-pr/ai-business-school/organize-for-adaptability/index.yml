@@ -25,7 +25,9 @@ roles:
 - business-user
 products: 
 - azure
-units: 
+subjects:
+- modern-work
+units:
 - learn-wwl.organize-for-adaptability.introduction
 - learn-wwl.organize-for-adaptability.understand-adaptability
 - learn-wwl.organize-for-adaptability.build-foundation-to-support-innovation

@@ -6,7 +6,7 @@ Microsoft Purview is a unified data governance service that helps organizations 
 
 Microsoft Purview automates data discovery by providing data scanning and classification as a service for assets across the organization's data estate. Metadata and descriptions of discovered data assets are integrated into a holistic map of the data estate. Atop this map, there are purpose-built apps that create environments for data discovery, access management, and insights about the organization's data landscape.
 
-:::image type="content" source="../media/microsoft-purview-inline.png" lightbox="../media/microsoft-purview-expanded.png" alt-text="Azure Purview high level architecture view.":::
+:::image type="content" source="../media/microsoft-purview-inline.png" lightbox="../media/microsoft-purview-expanded.png" alt-text="Screenshot of Microsoft Purview high level architecture.":::
 
 ### Data Map
 Microsoft Purview Data Map provides the foundation for data discovery and data governance. By scanning registered data sources, Azure Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data. Microsoft Purview supports Azure data sources and various data source categories including databases, file storage, and applications and services from third parties.
@@ -14,6 +14,6 @@ Microsoft Purview Data Map provides the foundation for data discovery and data g
 ### Data Catalog
 With the Microsoft Purview Data Catalog, business and technical users can quickly and easily find relevant data using a search experience with filters based on various lenses like glossary terms, classifications, sensitivity labels and more.
 
-### Data Insights
-With the Microsoft Purview Data Insights, data officers and security officers can get a bird’s eye view and at a glance understand what data is actively scanned, where sensitive data is, and how it moves.
+### Data Estate Insights
+With the Microsoft Purview Data Estate Insights, data officers and security officers can get a bird’s eye view and at a glance understand what data is actively scanned, where sensitive data is, and how it moves.
 

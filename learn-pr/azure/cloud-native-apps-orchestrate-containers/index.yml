@@ -32,6 +32,8 @@ products:
 - azure-kubernetes-service
 - azure-container-registry
 - azure-app-service
+subjects:
+- container
 units:
 - learn.azure.cna-orchestrate-containers.1-introduction
 - learn.azure.cna-orchestrate-containers.2-run-containers-with-aks

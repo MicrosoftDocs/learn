@@ -4,7 +4,7 @@ metadata:
   title: Distributed programming on the cloud
   description: Carnegie Mellon University's Cloud Developer course. Gain a deep understanding of data and how it's stored on the cloud.
   brand: azure
-  ms.date: 03/20/2020
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -43,6 +43,7 @@ prerequisites: |
   - Be familiar with NoSQL databases and object storage, and how they work
 showCreativeCommonsFooter: true
 iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-cloud-computing.svg
+hidden: true
 levels:
 - beginner
 - intermediate
@@ -51,6 +52,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.cmu-cloud-computing.distributed-programming.introduction
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce

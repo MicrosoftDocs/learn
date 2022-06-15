@@ -3,7 +3,7 @@ uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api
 metadata:
   title: Define indexes in Azure Cosmos DB SQL API
   description: "Discover indexes and indexing policies in Azure Cosmos DB SQL API."
-  ms.date: 03/25/2022
+  ms.date: 06/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.wwl.define-indexes-azure-cosmos-db-sql-api.introduction
 - learn.wwl.define-indexes-azure-cosmos-db-sql-api.understand-indexes

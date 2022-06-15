@@ -32,6 +32,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- cloud-computing
 units:
 - learn.oxford.5g-tech-azure-cloud.introduction
 - learn.oxford.5g-tech-azure-cloud.what-are-technology-components
@@ -39,5 +41,3 @@ units:
 - learn.oxford.5g-tech-azure-cloud.when-use-5G-azure-private-mec
 - learn.oxford.5g-tech-azure-cloud.knowledge-check
 - learn.oxford.5g-tech-azure-cloud.summary
-
-

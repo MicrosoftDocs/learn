@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- cloud-security
 units:
 - learn.azure-security.resolve-threats-with-azure-security-center.introduction
 - learn.azure-security.resolve-threats-with-azure-security-center.view-security-alerts

@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.hpc-storage-considerations.1-introduction
 - learn.hpc-storage-considerations.2-file-access

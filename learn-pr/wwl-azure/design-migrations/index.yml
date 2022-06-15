@@ -31,6 +31,8 @@ products:
 - azure-data-box-family
 - azure-database-migration
 - azure-migrate
+subjects:
+- migration
 units:
 - learn.wwl.design-migrations.introduction
 - learn.wwl.design-migrations.evaluate-migration-cloud-adoption-framework

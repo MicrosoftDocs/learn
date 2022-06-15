@@ -24,6 +24,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- virtual-machine
 modules:
 - learn.wwl.configure-manage-hyper-v
 - learn.wwl.configure-manage-hyper-v-virtual-machines

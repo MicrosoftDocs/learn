@@ -4,7 +4,7 @@ In the hotel reservation system, autoscaling is useful for handling short-term s
 
 ## What is autoscaling?
 
-Autoscaling is a cloud system or process that adjusts avalaible resources based on the current demand. Autoscaling performs scaling *in and out*, as opposed to scaling *up and down*.
+Autoscaling is a cloud system or process that adjusts available resources based on the current demand. Autoscaling performs scaling *in and out*, as opposed to scaling *up and down*.
 
 ## Azure App Service Autoscaling
 

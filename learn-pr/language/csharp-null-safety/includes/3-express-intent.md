@@ -9,7 +9,7 @@ With a nullable context enabled, you have more visibility into how the compiler 
 FooBar? fooBar = null;
 ```
 
-Note the `?` added to `FooBar`. This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
+Note the `?` added to `FooBar`. This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you don't intend for `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
 
 ```csharp
 // Define as non-nullable, but tell compiler to ignore warning
@@ -17,7 +17,7 @@ Note the `?` added to `FooBar`. This tells the compiler that you explicitly inte
 FooBar fooBar = null!;
 ```
 
-This example adds the null-forgiving (`!`) operator to `null`, which instructs the compiler that you're explicitly initializing this variable as null. The compiler will not issue warnings about this reference being null.
+This example adds the null-forgiving (`!`) operator to `null`, which instructs the compiler that you're explicitly initializing this variable as null. The compiler won't issue warnings about this reference being null.
 
 A good practice is to assign your non-nullable variables non-`null` values when they're declared, if possible:
 
@@ -44,7 +44,7 @@ When you initialize non-nullable types while a nullable context is enabled, you 
 
 using System.Collections.Generic;
 
-var fooList = new FooBar[]
+var fooList = new List<FooBar>
 {
     new(Id: 1, Name: "Foo"),
     new(Id: 2, Name: "Bar")
@@ -182,8 +182,8 @@ The preceding C# code:
 
 - Conditionally dereferences `fooBar`, assigning the result of `ToString` to the `str` variable.
   - The `str` variable is of type `string?` (nullable string).
-- It writes the value of `str` to standard output which is nothing.
-- Calling `Console.Write(null)` is valid, so there is no warnings.
+- It writes the value of `str` to standard output, which is nothing.
+- Calling `Console.Write(null)` is valid, so there's no warnings.
 - You would get a warning if you were to call `Console.Write(str.Length)` because you'd be potentially dereferencing null.
 
 > [!TIP]

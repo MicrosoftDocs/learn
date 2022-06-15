@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-cosmos-db-sql-api-azure-services
 metadata:
   title: Integrate Azure Cosmos DB SQL API with Azure services
   description: Integrate Azure Cosmos DB SQL API with Azure services
-  ms.date: 03/09/2022
+  ms.date: 06/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -20,6 +20,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 modules:
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 - learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed

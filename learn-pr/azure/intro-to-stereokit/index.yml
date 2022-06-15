@@ -35,7 +35,9 @@ prerequisites: |
   - Any OpenXR platforms: Windows MR, Oculus, SteamVR, Varjo, Monado, HoloLens, or an Oculus Quest.
   - Familiarity in C# and Mixed Reality.
   
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.intro-to-stereokit.1-introduction
 - learn.azure.intro-to-stereokit.2-overview-of-stereokit
 - learn.azure.intro-to-stereokit.3-exercise-getting-started-with-stereokit

@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.understand-app-service-deployment-slots.introduction
 - learn.wwl.understand-app-service-deployment-slots.explore-staging-environments

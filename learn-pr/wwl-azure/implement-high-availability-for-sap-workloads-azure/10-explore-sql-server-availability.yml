@@ -4,13 +4,13 @@ title: Explore SQL Server high availability for SAP in Azure
 metadata:
   title: Explore SQL Server high availability for SAP in Azure
   description: "Explore SQL Server high availability for SAP in Azure"
-  ms.date: 10/21/2021
+  ms.date: 05/05/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 11
+durationInMinutes: 8
 content: |
   [!include[](includes/10-explore-sql-server-availability.md)]

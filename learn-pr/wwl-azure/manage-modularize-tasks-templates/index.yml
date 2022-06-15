@@ -39,6 +39,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-computing
+- devops
 units:
 - learn.wwl.manage-modularize-tasks-templates.introduction
 - learn.wwl.manage-modularize-tasks-templates.examine-task-groups

@@ -20,6 +20,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 modules:
 - learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
 - learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api

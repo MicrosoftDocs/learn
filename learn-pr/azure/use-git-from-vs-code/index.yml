@@ -27,6 +27,8 @@ roles:
 - developer
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.azure.use-git-from-vs-code.introduction
 - learn.azure.use-git-from-vs-code.clone-branch

@@ -3,7 +3,7 @@ uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api
 metadata:
   title: Customize indexes in Azure Cosmos DB SQL API
   description: "Customize indexes in Azure Cosmos DB SQL API"
-  ms.date: 03/09/2022
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.customize-indexes-azure-cosmos-db-sql-api.introduction
 - learn.wwl.customize-indexes-azure-cosmos-db-sql-api.customize-indexing-policy

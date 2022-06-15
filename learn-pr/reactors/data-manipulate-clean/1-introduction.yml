@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to manipulating and cleaning data for data science.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ms.custom: team=nextgen

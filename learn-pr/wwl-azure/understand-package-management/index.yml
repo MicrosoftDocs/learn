@@ -3,7 +3,7 @@ uid: learn.wwl.understand-package-management
 metadata:
   title: Understand package management
   description: "Understand package management"
-  ms.date: 02/09/2022
+  ms.date: 06/13/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.understand-package-management.introduction
 - learn.wwl.understand-package-management.explore-packages
@@ -50,8 +52,7 @@ units:
 - learn.wwl.understand-package-management.consume-packages
 - learn.wwl.understand-package-management.introduction-to-azure-artifacts
 - learn.wwl.understand-package-management.publish-packages
-- learn.wwl.understand-package-management.create-package-feed
-- learn.wwl.understand-package-management.push-package
+- learn.wwl.understand-package-management.package-management-azure-artifacts
 - learn.wwl.understand-package-management.knowledge-check
 - learn.wwl.understand-package-management.summary
 badge:

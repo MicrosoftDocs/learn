@@ -12,18 +12,18 @@ As we can see in the image above, Azure provides built-in firewalls to limit acc
 
 Both server and database level firewalls use IP Address rules instead of SQL Server Logins, and allow all users at the same public IP Address to access the SQL Server. For most companies, this is their outbound IP address.
 
-Server level firewalls are configured to allow users to connect to all databases on the server. Database level firewalls are used to grant or block specific IP Addresses from accessing specific databases.
+Server-level firewalls are configured to allow users to connect to all databases on the server. Database level firewalls are used to grant or block specific IP Addresses from accessing specific databases.
 
 Server level firewall rules can be configured using the Azure portal or using the `sp_set_firewall_rule` stored procedure from within the *master* database.
 
  > [!NOTE]
  >The **Allow Azure Services and resources to access this server** server setting counts as a single firewall rule when enabled.
 
-### Database level firewall rules
+### Database-level firewall rules
 
-Database level firewall rules are configured through T-SQL only using the `sp_set_database_firewall_rule` stored procedure from within the user database. 
+Database-level firewall rules are configured through T-SQL only using the `sp_set_database_firewall_rule` stored procedure from within the user database.
 
-Upon connection, Azure SQL Database will look first for a server level firewall rule in the *master* database and then a database level firewall rule, if the connection string specifies a database name. If either of these exist, the connection will be completed.
+Upon connection, Azure SQL Database will look first for a database-level firewall rule for the database name specified in the connection string. If it does not exist, the firewall will then check the server-level IP firewall rules. Server-level IP firewall rules apply to all databases on the server. If either of these exist, the connection will be completed.
 
 If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they'll be prompted to create a firewall rule as shown below.
 

@@ -40,7 +40,7 @@ print("On Mercury, a double-decker bus weighs", bus_weight * gravity_on_planets[
 
 ## Use `min()` and `max()` with lists
 
-Python has built-in functions for calculating the biggest and smallest numbers in a list. The `max()` function returns the largest number, and `min()` returns the smallest. So `min(gravity_on_planets)` returns the smallest number in the `gravity_on_planets` list, which is 0.378 (Mercury).
+Python has built-in functions for calculating the biggest and smallest numbers in a list. The `max()` function returns the largest number, and `min()` returns the smallest. So `min(gravity_on_planets)` returns the smallest number in the `gravity_on_planets` list, which is 0.377 (Mars).
 
 The following code calculates the minimum and maximum weights in the solar system by using those functions:
 
@@ -53,6 +53,6 @@ print("The heaviest a bus would be in the solar system is", bus_weight * max(gra
 
 # Output
 # On Earth, a double-decker bus weighs 12650 kg
-# The lightest a bus would be in the solar system is 4781.7 kg
+# The lightest a bus would be in the solar system is 4769.05 kg
 # The heaviest a bus would be in the solar system is 29854 kg
 ```

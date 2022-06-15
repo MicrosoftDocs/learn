@@ -32,6 +32,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.oxford.deploy-prebuilt-module-edge-device.1-introduction
 - learn.oxford.deploy-prebuilt-module-edge-device.2-what-is-prebuilt-module

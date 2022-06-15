@@ -38,6 +38,8 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.use-built-functions-transact-sql.introduction
 - learn.wwl.use-built-functions-transact-sql.categorize-functions

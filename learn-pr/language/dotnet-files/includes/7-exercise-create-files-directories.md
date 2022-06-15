@@ -6,7 +6,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
 
 ## Create the SalesTotals directory
 
-1. In the `Program.cs` file, remove the `foreach` loop that iterates, and writes to the *Console* output each filename returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
+1. In the `Program.cs` file, remove the `foreach` loop that iterates and writes to the *Console* output each filename returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
 
 1. In the `Program.cs` file, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory:
 

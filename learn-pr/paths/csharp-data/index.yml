@@ -35,6 +35,8 @@ roles:
 - developer
 products:
 - dotnet
+subjects:
+- data-engineering
 modules:
 - learn.languages.csharp-choose-data-type
 - learn.languages.csharp-convert-cast

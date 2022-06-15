@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/07/2021
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -21,24 +21,24 @@ quiz:
     choices:
     - content: "Domain"
       isCorrect: true
-      explanation: "Correct. There is an investigation page for Domain."
+      explanation: "Correct. There's an investigation page for Domain."
     - content: "Hunter"
       isCorrect: false
-      explanation: "Incorrect. There is not an investigation page for Hunter."
+      explanation: "Incorrect. There isn't an investigation page for Hunter."
     - content: "Threat Actor"
       isCorrect: false
-      explanation: "Incorrect. Threat Actor is not a forensic artifact that can be collected."
+      explanation: "Incorrect. Threat Actor isn't a forensic artifact that can be collected."
   - content: "What information is provided by a deep file analysis?"
     choices:
     - content: "Command history"
       isCorrect: false
-      explanation: "Incorrect. The command history is not reported."
+      explanation: "Incorrect. The command history isn't reported."
     - content: "Registry Modifications"
       isCorrect: true
       explanation: "Correct. Registry modifications are reported."
     - content: "Code change history"
       isCorrect: false
-      explanation: "Incorrect. The code change history is not reported."
+      explanation: "Incorrect. The code change history isn't reported."
   - content: "Which information is provided on the user account page?"
     choices:
     - content: "Associated alerts"
@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. This is provided."
     - content: "Security groups"
       isCorrect: false
-      explanation: "Incorrect.  The security groups the user accounts belongs is not shown."
+      explanation: "Incorrect.  The security groups the user accounts belongs isn't shown."
     - content: "Threat hunt ID"
       isCorrect: false
-      explanation: "Incorrect.  The Threat hunt ID is not shown."
+      explanation: "Incorrect.  The Threat hunt ID isn't shown."

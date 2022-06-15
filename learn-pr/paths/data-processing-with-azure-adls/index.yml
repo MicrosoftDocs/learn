@@ -23,6 +23,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- data-lake
 modules:
 - learn.data-ai.introduction-to-azure-data-lake-storage
 - learn.data-ai.upload-data-to-azure-data-lake-storage

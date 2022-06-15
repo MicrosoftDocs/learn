@@ -23,6 +23,8 @@ roles:
 - administrator
 products:
 - azure-storage
+subjects:
+- storage
 units:
 - learn.azure.export-data-with-azure-import-export.introduction
 - learn.azure.export-data-with-azure-import-export.what-is-azure-import-export

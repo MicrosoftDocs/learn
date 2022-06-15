@@ -26,6 +26,9 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- virtual-machine
+- identity-access
 units:
 - learn.wwl.manage-access.introduction
 - learn.wwl.manage-access.rbac-for-azure-virtual-desktop
