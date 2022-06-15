@@ -62,7 +62,7 @@ Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Admin
 
 ## Assign roles
 
-There are multiple ways to assign roles within Azure AD. You need to pick the one the best meets your needs. The user interface might be slightly different each method, however the configuration options are similar. Methods for assigning roles include:
+There are multiple ways to assign roles within Azure AD. You need to pick the one that best meets your needs. The user interface might be slightly different for each method, however the configuration options are similar. Methods for assigning roles include:
 
 - Assign a role to a user or group
    -  **Azure AD** - **Roles and administration** - **Select a role** - **+ Add Assignment**
