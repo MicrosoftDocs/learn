@@ -28,7 +28,7 @@ Create a user account that will be added to a security group.
 1.  In the Azure AD organization you created, under **Manage**, select **Users** then select **New User**.
 2.  The User pane now appears. Enter the following values:
    
-     - User name: Mia
+     - User name: mias
      - Name: Mia Steele
 3.  Select **Show Password** and then copy it somewhere to reference it later.
 4.  Select **Create**.

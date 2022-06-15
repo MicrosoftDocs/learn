@@ -22,9 +22,9 @@ The following table outlines the security considerations for the available authe
 | Microsoft Authenticator app | High | High | High |
 | FIDO2 security key | High | High | High |
 | OATH hardware tokens (preview) | Medium | Medium | High |
-| OATH software tokens | Medium | Medium | |High |
+| OATH software tokens | Medium | Medium | High |
 | SMS | Medium | High | Medium |
-| Voice | Medium | |Medium | Medium |
+| Voice | Medium | Medium | Medium |
 | Password | Low | High | High |
 
 > [!TIP]
