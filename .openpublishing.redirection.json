@@ -13909,6 +13909,36 @@
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/6-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/2-create-a-xf-project-in-vs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/3-create-a-maui-project-visual-studio",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/3-exercise-create-your-first-xamarin-forms-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/4-exercise-create-your-first-maui-app",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/4-design-your-first-xamarin-forms-ui.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/5-add-controls-to-the-ui",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/5-exercise-create-phone-number-translator-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/6-exercise-create-phone-number-translator-app",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/7-summary",
+      "redirect_document_id": false    
     }
   ]
 }
