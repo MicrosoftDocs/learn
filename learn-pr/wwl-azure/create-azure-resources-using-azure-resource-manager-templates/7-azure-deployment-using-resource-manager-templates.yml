@@ -4,13 +4,13 @@ title: Azure deployments using resource manager templates
 metadata:
   title: Azure deployments using resource manager templates
   description: "Azure deployments using resource manager templates"
-  ms.date: 06/13/2022
+  ms.date: 06/15/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 60
 content: |
   [!include[](includes/7-azure-deployment-using-resource-manager-templates.md)]
