@@ -32,7 +32,7 @@ The prebuilt models are designed to extract different types of data from the doc
 
 - **Text extraction.** All the prebuilt models extract lines of text and words from hand-written and printed text.
 - **Key-value pairs.** Spans of text within a document that identify a label or key and its response or value are extracted by many models as key-values pairs. For example, a typical key may be **Weight** and its value might be **31 kg**.
-- **Entities.** Text that include common, more complex data structures can be extracted as entities. Entity types include people, locations, and dates. 
+- **Entities.** Text that includes common, more complex data structures can be extracted as entities. Entity types include people, locations, and dates. 
 - **Selection marks.** Spans of text that indicate a choice can be extracted by some models as selection marks. These marks include radio buttons and check boxes.
 - **Tables.** Many models can extract tables in scanned forms included the data contained in cells, the numbers of columns and rows, and column and row headings. Tables with merged cells are supported.
 - **Fields.** Models trained for a specific form type identify the values of a fixed set of fields. For example, the Invoice model includes **CustomerName** and **InvoiceTotal** fields.
@@ -76,7 +76,7 @@ Also consider that prebuilt models are designed for and trained on generic docum
 
 Forms Recognizer is designed as a web service you can call using code in your custom applications. However, it's often helpful to explore the models and how they behavior with your forms in a Graphical User Interface (GUI). You can perform such experiments by using [Forms Recognizer Studio](https://formrecognizer.appliedai.azure.com/studio) and use the experience to help design and write your code.
 
-You can choose any of the prebuilt models in Forms Recognizer Studio. Microsoft provide some sample documents for use with each model or you can add your own documents and analyze them.
+You can choose any of the prebuilt models in Forms Recognizer Studio. Microsoft provides some sample documents for use with each model or you can add your own documents and analyze them.
 
 :::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screenshot showing how to use Forms Recognizer Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
 
