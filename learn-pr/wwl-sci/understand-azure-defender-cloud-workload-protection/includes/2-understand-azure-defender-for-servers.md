@@ -25,6 +25,7 @@ Select the plan that you want and select Confirm.
 
 ## Plan features
 The following table describes what's included in each plan at a high level.
+
 | Feature | Defender for Servers Plan 1| Defender for Servers Plan 2|
 | :--- | :--- | :--- |
 |Automatic onboarding for resources in Azure, AWS, GCP| Yes| Yes|
