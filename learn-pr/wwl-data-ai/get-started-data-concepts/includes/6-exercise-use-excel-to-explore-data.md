@@ -18,7 +18,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
 1. In your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot showing OneDrive My Files folder." lightbox="../media/one-drive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot showing One Drive My Files folder." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DataFund**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
