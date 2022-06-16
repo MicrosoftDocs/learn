@@ -13,9 +13,7 @@ If you do not want members of the group to have standing access to a role, you c
 ## Best practices for Azure AD roles
 
 This section describes some of the best practices for using Azure Active
-Directory role-based access control (Azure AD RBAC). These best
-practices are derived from our experience with Azure AD RBAC and the
-experiences of customers like yourself.
+Directory role-based access control (Azure AD RBAC).
 
 ### Manage to least privilege
 
@@ -27,8 +25,7 @@ administrators: a specific set of permissions, over a specific scope,
 for a specific period of time. Avoid assigning broader roles at broader
 scopes even if it initially seems more convenient to do so. By limiting
 roles and scopes, you limit what resources are at risk if the security
-principal is ever compromised. Azure AD RBAC supports over 65 [built-in
-roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
+principal is ever compromised. Azure AD RBAC supports over 65 [built-in roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 There are Azure AD roles to manage directory objects like users, groups,
 and applications, and also to manage Microsoft 365 services like
 Exchange, SharePoint, and Intune.
@@ -47,7 +44,7 @@ require approval or receive notification emails when someone activates
 their role assignment. Notifications provide an alert when new users are
 added to highly privileged roles.
 
-### Turn on multifactor authentication (MFA) for all your administrator accounts
+### Turn on multifactor authentication (MFA) for all administrator accounts
 
 [Based on our studies](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984), your account is 99.9% less likely to be compromised if you use multifactor authentication (MFA).
 
@@ -69,7 +66,7 @@ following reasons:
 For information about access reviews for roles, see [Create an access review of Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review). For information about access reviews of groups that are assigned roles, see [Create an access review of groups and applications in Azure AD access
 reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
 
-### Limit the number of Global Administrators to less than 5
+### Limit the number of global administrators to less than five
 
 As a best practice, Microsoft recommends that you assign the Global
 Administrator role to **fewer than five** people in your organization.

@@ -93,7 +93,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -Type "Standard_LRS"
     ```
 
-1. Open [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
+1. Open [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -113,7 +113,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Enable CDC on your database
 
-In [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) open new query window and enable CDC on `AdventureWorksLT` Database by running below query:
+In [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) open new query window and enable CDC on `AdventureWorksLT` Database by running below query:
 
 ```sql
 USE AdventureWorksLT
