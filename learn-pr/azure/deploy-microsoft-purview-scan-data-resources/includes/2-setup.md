@@ -51,11 +51,11 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 
 1. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking or holding on the file and selecting **Extract All...**
 
-    :::image type="content" source="../media/02.10-explorer-unzip.png" alt-text="Screenshot of the BingCoronavirusQuerySet zip file with the menu open and Extract All highlighted.":::
+    :::image type="content" source="../media/explorer-unzip.png" alt-text="Screenshot of the BingCoronavirusQuerySet zip file with the menu open and Extract All highlighted.":::
 
 1. Select **Extract**.
 
-    :::image type="content" source="../media/02.11-explorer-extract.png" alt-text="Screenshot of the extract menu with the Extract button highlighted.":::
+    :::image type="content" source="../media/explorer-extract.png" alt-text="Screenshot of the extract menu with the Extract button highlighted.":::
 
 1. In the [Azure portal](https://portal.azure.com), locate your storage account, and in the left menu select **Storage browser**.
 

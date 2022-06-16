@@ -6,31 +6,31 @@ In this unit, you'll use the [Microsoft Purview governance portal](https://web.p
 
 1. On the left-hand menu of [Microsoft Purview governance portal](https://web.purview.azure.com/), navigate to **Data map**. 
 
-    :::image type="content" source="../media/06.01-purview-data-map.png" alt-text="Screenshot of the Microsoft Purview governance portal left hand menu, with Data map highlighted.":::
+    :::image type="content" source="../media/locate-purview-data-map.png" alt-text="Screenshot of the Microsoft Purview governance portal left hand menu, with Data map highlighted.":::
 
 1. Select **Collections**.
 
-    :::image type="content" source="../media/06.02-purview-collections.png" alt-text="Screenshot of the Microsoft Purview governance portal left hand menu, with the secondary menu opened and Collections highlighted.":::
+    :::image type="content" source="../media/locate-purview-collections.png" alt-text="Screenshot of the Microsoft Purview governance portal left hand menu, with the secondary menu opened and Collections highlighted.":::
 
 1. Select the root collection. This should be the only collection on your new account, and will have the same name as your account.
 
-    :::image type="content" source="../media/06.03-purview-root-collection.png" alt-text="Screenshot of the Microsoft Purview governance portal Collections page, with the root collection (ACCOUNT-NAME in this example) highlighted.":::
+    :::image type="content" source="../media/purview-root-collection.png" alt-text="Screenshot of the Microsoft Purview governance portal Collections page, with the root collection (ACCOUNT-NAME in this example) highlighted.":::
 
 1. Select **Role assignments**.
 
-    :::image type="content" source="../media/06.04-purview-role-assignments.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Role assignments button highlighted.":::
+    :::image type="content" source="../media/purview-role-assignments.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Role assignments button highlighted.":::
 
 1. Open the **Edit role assignments** menu and select **Data readers**.
 
-    :::image type="content" source="../media/06.05-purview-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Edit role assignment drop-down menu opened, and Data readers selected.":::
+    :::image type="content" source="../media/purview-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Edit role assignment drop-down menu opened, and Data readers selected.":::
 
 1. Search for another user within your Azure Active Directory, select their account, select **OK**. This will grant the user read permissions on your Microsoft Purview account.
 
-    :::image type="content" source="../media/06.06-purview-add-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal Add or remove data readers menu open. The search bar is highlighted, and an example user is highlighted below.":::
+    :::image type="content" source="../media/purview-add-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal Add or remove data readers menu open. The search bar is highlighted, and an example user is highlighted below.":::
 
 1. Back at your root collection, select **+ Add a collection**
 
-    :::image type="content" source="../media/06.07-add-a-collection.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Add a collection button highlighted.":::
+    :::image type="content" source="../media/add-a-collection.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Add a collection button highlighted.":::
 
 1. Give your new collection a name. In this example, we've used 'Finance', but any name that suits the top level of your organization will work. You can also choose to add a collection admin for this collection. The collection will automatically inherit an admin from the root collection, but you can add another.
 
@@ -42,9 +42,9 @@ In this unit, you'll use the [Microsoft Purview governance portal](https://web.p
 
 1. Let's add one more collection under our new 'Finance' collection. Select the 'Finance' collection, then select **+ Add a collection**, and give your new collection a name. In our example, we've chosen 'Investment'.
 
-    :::image type="content" source="../media/06.08-add-second-collection.png" alt-text="Screenshot creating a new collection called 'Investment'.":::
+    :::image type="content" source="../media/add-second-collection.png" alt-text="Screenshot creating a new collection called 'Investment'.":::
 
 
 1. Once you've created your new collection, select the new collection, select **Role assignments**. Enable to **Restrict inherited permissions** toggle. This will create a secure subcollection that won't inherit permissions from the Finance or root collections.
 
-    :::image type="content" source="../media/06.09-restrict-inherited-permissions.png" alt-text="Screenshot of the newly created collection called 'Investment', selected and open to the Role assignments tab. The Restrict inherited permissions option has been turned on.":::
+    :::image type="content" source="../media/restrict-inherited-permissions.png" alt-text="Screenshot of the newly created collection called 'Investment', selected and open to the Role assignments tab. The Restrict inherited permissions option has been turned on.":::

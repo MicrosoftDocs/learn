@@ -2,7 +2,7 @@ Now that you've created your Microsoft Purview account, we'll need to add other 
 
 As we discussed in the last section, the Microsoft Purview Data Map is the core of your account. It keeps an up-to-date map of your data assets (tables, files, etc.) and their metadata. 
 
-:::image type="content" source="../media/03.04-purview-data-map.png" alt-text="Microsoft Purview data map":::
+:::image type="content" source="../media/purview-data-map.png" alt-text="Microsoft Purview data map":::
 
 To build this data map, you'll register and scan your data sources into Microsoft Purview. The data map will store the metadata for these sources and create a navigable table that you can browser through.
 
@@ -22,7 +22,7 @@ All other collections will be created by you or your team, and should reflect yo
 
 Let's look at a smaller example:
 
-:::image type="content" source="../media/05.01-purview-collections.png" alt-text="Screenshot of a collection hierarchy, with the ACCOUNT-NAME root collection, and two subcollections beneath: Sales and Marketing":::
+:::image type="content" source="../media/purview-collections.png" alt-text="Screenshot of a collection hierarchy, with the ACCOUNT-NAME root collection, and two subcollections beneath: Sales and Marketing":::
 
 In the image above, we have the root collection (ACCOUNT-NAME), and two sub collections: Sales and Marketing. 
 
@@ -52,7 +52,7 @@ We won't need all the roles available for our proof of concept, but some of Micr
 * **Data curator**: Data curators can perform create, read, modify, and delete actions on catalog data objects and establish relationships between objects.
 * **Data reader**: Data readers have access to read catalog data objects.
 
-:::image type="content" source="../media/05.02-purview-roles.png" alt-text="Microsoft Purview Roles":::
+:::image type="content" source="../media/purview-roles.png" alt-text="Microsoft Purview Roles":::
 
 > [!TIP]
 > The Microsoft Purview Data Catalog is a companion to the Data Map. It's a searchable inventory of assets and their metadata that allows users to find and curate data across their data estate. The Data Catalog also includes a business glossary where subject matter experts can provide terms and definitions to add a business context to an asset.
