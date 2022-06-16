@@ -66,11 +66,14 @@ quiz:
       explanation: "defender for Servers doesn’t protect your ARM operations, that’s done by the Defender for Azure Resource Manager plan."
 
 
-  - content: "What type of databases can Microsoft Defender for Cloud secure?"
+  - content: "What type of databases can Defender for Cloud secure?"
     choices:
     - content: "SQL DBs, SQL on machines, MariaDB, MySQL, PostGreSQL, Cosmos DB."
       isCorrect: true
       explanation: ""
-    - content: "SQL DBs, SQL on machines, MySQL, MongoDB, Cosmos DB "
+    - content: "SQL DBs, SQL on machines, MySQL, MongoDB, Cosmos DB"
       isCorrect: false
       explanation: "Mongo DB is database that is not protected by Defender for Cloud."
+    - content: "SQL DBs, SQL on machines, MariaDB."
+      isCorrect: false
+      explanation: "Although these are all databases that are secured by Defender for Cloud, it is not a full list. MySQL, PostGreSQL, Cosmos DB are also protected by Defender for Cloud."
