@@ -23,8 +23,8 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
     - **Select task and settings**: 
         - **Task type**: Regression *(the model predicts a numeric value)* 
        
-
-    ![Select View additional configuration settings.](../media/new-automated-ml-run-4.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of a selection pane with boxes around the Regression task type and additional configuration settings.](../media/new-automated-ml-run-4.png)
 
     Notice under task type there are settings _View additional configuration settings_ and _View Featurization settings_. Now configure these settings.
 
@@ -33,8 +33,10 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
         - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
         - **Use all supported models**: <u>Un</u>selected. *You'll restrict the experiment to try only a few specific algorithms.*
         - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the experiment.*
+        
+        > [!div class="mx-imgBorder"]
+        > ![Screenshot of additional configurations with a box around the allowed models.](../media/allowed-models.png)  
 
-        ![Select the allowed models.](../media/allowed-models.png)            
         - **Exit criterion**:
             - **Training job time (hours)**: 0.5 — *ends the experiment after a maximum of 30 minutes.*
             - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the experiment ends.*
@@ -57,7 +59,9 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
 After the experiment has finished you can review the best performing model. In this case, you used exit criteria to stop the experiment. Thus the "best" model the experiment generated might not be the best possible model, just the best one found within the time allowed for this exercise.
 
 1. On the **Overview** tab of the automated machine learning run, note the best model summary.
-    ![Click on the algorithm name on the details pane.](../media/complete-run.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the best model summary of the automated machine learning run with a box around the algorithm name.](../media/complete-run.png)
 
 2. Select the text under **Algorithm name** for the best model to view its details.
 
@@ -69,21 +73,24 @@ After the experiment has finished you can review the best performing model. In t
 
 3. Next to the *Normalized root mean squared error* value, select **View all other metrics** to see values of other possible evaluation metrics for a regression model.
 
-    ![Review the other metrics for a regression model.](../media/review-run-1.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of how to locate view all other metrics on the Model tab.](../media/review-run-1.png)
 
 4. Select the **Metrics** tab and select the **residuals** and **predicted_true** charts if they are not already selected. 
-    ![Select the residuals and predicted_true charts.](../media/review-run-3.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/review-run-3.png)
 
     Review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
 
-    The **Residual Histogram** shows the frequency of residual value ranges. Residuals represent variance between predicted and true values that can't be explained by the model, in other words, errors. You should hope to see the most frequently occurring residual values clustered around zero. You want to small errors with fewer errors at the extreme ends of the scale.
+    The **Residual Histogram** shows the frequency of residual value ranges. Residuals represent variance between predicted and true values that can't be explained by the model, in other words, errors. You should hope to see the most frequently occurring residual values clustered around zero. You want small errors with fewer errors at the extreme ends of the scale.
 
-    ![Residuals histogram](../media/residual-histogram.png)
+    ![Screenshot of the residuals histogram that appears in the metrics tab.](../media/residual-histogram.png)
 
     The **Predicted vs. True** chart should show a diagonal trend in which the predicted value correlates closely to the true value. The dotted line shows how a perfect model should perform. The closer the line of your model's average predicted value is to the dotted line, the better its performance. A histogram below the line chart shows the distribution of true values.
 
-    ![Predicted vs True chart](../media/predicted-vs-true.png)
+    ![Screenshot of the Predicted vs True chart that appears in the metrics tab.](../media/predicted-vs-true.png)
 
-5. Select the **Explanations** tab. Select an explanation ID and then select **Aggregate feature Importance**. This chart shows how much each feature in the dataset influences the label prediction, like this:
+5. Select the **Explanations** tab. Select an explanation ID and then select **Aggregate feature importance**. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
-    ![Feature importance](../media/feature-importance.png)
+    ![Screenshot of the feature importance chart on the Explanations tab.](../media/feature-importance.png)
