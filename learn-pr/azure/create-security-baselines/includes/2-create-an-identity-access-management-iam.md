@@ -25,8 +25,8 @@ Users who aren't administrators shouldn't have access to the Azure AD administra
 
 ### Enable multifactor authentication for Azure AD users
 
-**Enable multifactor authentication for Azure AD privileged users - Level 1** <br />
-**Enable multifactor authentication for Azure AD non-privileged users - Level 2** <br />
+- **Enable multifactor authentication for Azure AD privileged users - Level 1**
+- **Enable multifactor authentication for Azure AD non-privileged users - Level 2**
 
 Enable multifactor authentication for all Azure AD users.
 
@@ -80,9 +80,9 @@ Ensure that no guest users exist, or alternatively, if the business requires gue
 
 ### Password options
 
-**Notify users on password resets - Level 1** <br />
-**Notify all admins when other admins reset passwords - Level 2** <br />
-**Require two methods to reset passwords - Level 1**
+- **Notify users on password resets - Level 1**
+- **Notify all admins when other admins reset passwords - Level 2**
+- **Require two methods to reset passwords - Level 1**
 
 With multifactor authentication set, an attacker would have to compromise both identity authentication forms before they could maliciously reset a user's password. Ensure that password reset requires two forms of identity authentication.
 
