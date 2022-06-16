@@ -14169,6 +14169,16 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-app-services/12-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-app-services/13-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-application-configuration/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-application-configuration/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-application-configuration/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-application-configuration/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
