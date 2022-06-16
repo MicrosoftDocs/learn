@@ -3,9 +3,8 @@
 
 Your organization has asked you if there is a way to mark queries executed by the CEO as more important than others, so they don't appear slow due to heavy data loading or other workloads in the queue. You decide to create a workload classifier and add importance to prioritize the CEO's queries. Keep in mind that workload groups correspond to resources classes which are created automatically for backward compatibility and cannot be dropped. 
     
-    > [!Note] 
-    > Eight (8) additional user-defined workload groups can be created in addition to the system defined 
-    > workload groups and should be used sparingly and not take excessive amount of resources.
+> [!Note] 
+> Eight (8) additional user-defined workload groups can be created in addition to the system defined workload groups and should be used sparingly and not take excessive amount of resources.
 
 1. Select the **Develop** hub. 
     > [!div class="mx-imgBorder"]  
