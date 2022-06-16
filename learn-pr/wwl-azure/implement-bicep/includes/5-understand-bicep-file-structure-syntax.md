@@ -1,6 +1,6 @@
 Azure Bicep comes with its own syntax, however, it's easy to understand and follow. We won't go deep into the syntax and structure, but let's review the main concepts using an example.
 
-## Sample Bicep .bicep file
+## Sample Bicep `.bicep` file
 
 ```Bicep
 @minLength(3)
@@ -45,7 +45,7 @@ output storageEndpoint object = stg.properties.primaryEndpoints
 
 ## Scope
 
-By default the target scope of all templates is set to `resourceGroup`, however, you can customize it by setting it explicitly. Additional allowed values are `subscription`, `managementGroup`, and `tenant`.
+By default the target scope of all templates is set for `resourceGroup`, however, you can customize it by setting it explicitly. As other allowed values, `subscription`, `managementGroup`, and `tenant`.
 
 ## Parameters
 

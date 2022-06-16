@@ -32,7 +32,7 @@ Make a note of this object since you'll need to add it to your GitHub secrets.
 
 ## Creating a GitHub secret
 
-In your GitHub repository, navigate to **Settings** &gt; **Secrets** &gt; **Actions**. Create a new secret called `AZURE_CREDENTIALS` and paste the entire JSON object you got from the previous step.
+In your GitHub repository, navigate to **Settings** > **Secrets** > **Actions**. Create a new secret called `AZURE_CREDENTIALS` and paste the entire JSON object you got from the previous step.
 
 Create another secret for the name of the resource group with a name such as `AZURE_RG` and one for the subscription.
 
@@ -75,7 +75,7 @@ Create another secret for the name of the resource group with a name such as `AZ
     
     > [!NOTE]
     > The first part of the workflow defines the trigger and a name. The rest defines a job and uses a few tasks to check out the code, sign in to Azure, and deploy the Bicep file.
-3.  Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit a new file**. :::image type="content" source="../media/github-commit-action-ee701105.jpg" alt-text="Screenshot of GitHub commiting a new file to the main branch.":::
+3.  Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit a new file**. :::image type="content" source="../media/github-commit-action-ee701105.jpg" alt-text="Screenshot of GitHub commits a new file to the main branch.":::
     
 4.  Navigate back to the Actions tab and select the newly created action that should be running. :::image type="content" source="../media/github-action-run-caf8225d.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
     

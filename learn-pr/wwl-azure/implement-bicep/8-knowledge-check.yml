@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/15/2022
+  ms.date: 06/16/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,17 +17,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following describes how to define the dependencies in a .bicep file?"
+  - content: "Which of the following describes how to define the dependencies in a bicep file?"
     choices:
     - content: "Bicep uses implicit dependency using symbolic names and parent child properties."
       isCorrect: true
       explanation: "Correct. Bicep uses implicit dependency using symbolic names and parent child properties."
     - content: "By adding the dependsOn property."
       isCorrect: false
-      explanation: "Incorrect. It's not the way to define dependencies in a .bicep file."
+      explanation: "Incorrect. It's not the way to define dependencies in a bicep file."
     - content: "Bicep doesn't support resource dependencies."
       isCorrect: false
-      explanation: "Incorrect. It's not the way to define dependencies in a .bicep file."
+      explanation: "Incorrect. It's not the way to define dependencies in a bicep file."
   - content: "Which of the following choices best describe the behavior of the webAppName parameter for a team that created a template that contains this line: param webAppName string = 'mySite${uniqueString(resourceGroup().id)}'?"
     choices:
     - content: "Whoever is deploying the template must provide a value for the webAppName."

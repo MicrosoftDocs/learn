@@ -10,7 +10,7 @@ You also learned some of the benefits and how to:
 
 ## Learn more
 
- -  [What is Bicep? \| Azure Bicep documentation](/azure/azure-resource-manager/bicep/overview?tabs=bicep).
+ -  [What is Bicep? \| Azure Bicep documentation](/azure/azure-resource-manager/bicep/overview).
  -  [Bicep on Microsoft Learn](/azure/azure-resource-manager/bicep/learn-bicep).
  -  [Best practices for Bicep \| Microsoft documentation](/azure/azure-resource-manager/bicep/best-practices).
  -  [Migrate to Bicep \| Microsoft documentation](/azure/azure-resource-manager/bicep/migrate).
