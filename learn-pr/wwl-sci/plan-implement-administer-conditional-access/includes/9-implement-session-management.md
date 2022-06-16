@@ -60,7 +60,7 @@ A persistent browser session allows users to remain signed in after closing and 
 
 ## Validation
 
-Use the What-If tool to simulate a sign in from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
+Use the What-If tool to simulate a sign-in from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
 
 :::image type="content" source="../media/conditional-access-what-if-tool-result.png" alt-text="Screenshot of the Conditional Access What If tool results.":::
 

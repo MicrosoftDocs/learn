@@ -49,7 +49,7 @@ For example, consider a policy where:
 
 IF user is in Group 1, THEN force MFA to access App 1.
 
-If a user not in Group 1 attempts to access the app, the **“if"** condition is met, and a token is issued. Excluding users outside of Group 1 requires a separate policy to block all other users.
+IF a user not in Group 1 attempts to access the app, THEN the **“if"** condition is met, and a token is issued. Excluding users outside of Group 1 requires a separate policy to block all other users.
 
 ## Follow best practices
 
