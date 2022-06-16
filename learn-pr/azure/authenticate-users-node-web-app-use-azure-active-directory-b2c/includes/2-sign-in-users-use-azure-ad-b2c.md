@@ -29,7 +29,7 @@ Azure AD B2C extends the standard OpenID Connect protocol to do more than just a
 
 Azure AD B2C extends the standard OpenID Connect protocol to introduce *policies*, which model user journeys. A user journey is the path that you want users to take in your application to achieve their goal. For example, you might want your users to sign up, sign in, and later update their profile.
 
-Policies enable you control user identity experience behaviors in your application such as the following:
+Policies enable you to control user identity experience behaviors in your application such as the following:
 
 * Account types used for sign-in, such as social accounts like a Facebook, or local accounts that use an email address and password for sign-in
 * Data to be collected from the consumer, such as first name, postal code, or country/region of residency.
