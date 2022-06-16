@@ -13,12 +13,12 @@ title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the A
 summary: "Microsoft Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? This guide will help you get started with Microsoft Purview by deploying a Microsoft Purview account through the Azure Portal, and registering an Azure Storage data source."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Deploy a Microsoft Purview account using the Azure portal"
-    - "Create collections and apply permissions to users in Microsoft Purview"
-    - "Register an Azure Data Lake resource in Microsoft Purview and scan it into the Microsoft Purview catalog"
+    - Deploy a Microsoft Purview account using the Azure portal
+    - Create collections and apply permissions to users in Microsoft Purview
+    - Register an Azure Data Lake resource in Microsoft Purview and scan it into the Microsoft Purview catalog
 prerequisites: |
-  - "Ability to navigate the Azure Portal"
-  - "Access to deploy resources within their Azure subscription"
+  - Ability to navigate the Azure Portal
+  - Access to deploy resources within their Azure subscription
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
   - beginner
