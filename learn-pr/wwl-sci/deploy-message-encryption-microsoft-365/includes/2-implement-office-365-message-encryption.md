@@ -1,4 +1,4 @@
-Once you have implemented your tenant encryption strategy, Office 365 Message Encryption can be implemented. To provide the best user experience, administrators should review their tenant settings for information rights management (IRM) features and OME settings before activating the encryption system for all users.
+Once you've implemented your tenant encryption strategy, Microsoft Purview Message Encryption can be implemented. To provide the best user experience, administrators should review their tenant settings for information rights management (IRM) features and OME settings before activating the encryption system for all users.
 
 ## Verify information rights management functionality
 
@@ -36,12 +36,12 @@ The IRM and OME configuration cmdlets allow you to configure how RMS content is 
 
 ## Implement custom Office Message Encryption settings
 
-OME is managed via configuration objects, or more precisely templates, which can be assigned and referenced. The default template for all users is named "OME Configuration" and any setting done in this configuration, is applied to all users. While the basic Office 365 Message Encryption allows only a single template, Office 365 Advanced Message Encryption provides more flexibility with multiple branding templates for different purposes.
+OME is managed via configuration objects, or more precisely templates, which can be assigned and referenced. The default template for all users is named "OME Configuration" and any setting done in this configuration, is applied to all users. While the basic Microsoft Purview Message Encryption allows only a single template, Microsoft Purview Advanced Message Encryption provides more flexibility with multiple branding templates for different purposes.
 
 The following examples provide a general description of which settings are available with the `*-OMEConfiguration` cmdlets and which settings should be configured when implementing OME for the first time. The first default template with the name "OME Configuration" is the default OME settings object for all users in a tenant.
 
 > [!NOTE]
-> If your tenant only includes Microsoft 365 E3 licenses, the number of cmdlets available is limited to managing the default OME template only. You cannot create new templates or add other Office 365 Advanced Message Encryption related settings.
+> If your tenant only includes Microsoft 365 E3 licenses, the number of cmdlets available is limited to managing the default OME template only. You cannot create new templates or add other Microsoft Purview Advanced Message Encryption related settings.
 
 ## OME branding templates
 
@@ -49,20 +49,20 @@ Customized company branding templates control the look of an organization's emai
 
 - Introductory text
 
-- Disclaimer text
+- Disclaimer text (TEST123)
 
 - URL for Your organization's privacy statement
 
-- Text in the OME portal
+- Text in the encrypted message portal
 
-- Logo that appears in the email message and OME portal, or whether to use a logo at all
+- Logo that appears in the email message and encrypted message portal, or whether to use a logo at all
 
-- Background color in the email message and OME portal
+- Background color in the email message and encrypted message portal
 
 You can also revert to the default look and feel at any time.
 
 > [!NOTE]
-> Only Office 365 Advanced Message Encryption supports multiple templates, which will be covered in the next unit.
+> Only Microsoft Purview Advanced Message Encryption supports multiple templates, which will be covered in the next unit.
 
 The following image provides an overview of the customizable areas of a branding template:
 
