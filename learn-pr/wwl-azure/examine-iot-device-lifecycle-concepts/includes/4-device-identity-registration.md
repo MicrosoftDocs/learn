@@ -11,7 +11,7 @@ Use the identity registry when you need to:
 
 ## Module identity
 
-For more sophisticated device implementations, IoT Hub enables you to configure subcomponents of the device by creating "module identities" under a device identity. Each module identity can be configured with an independent connection to IoT Hub, which means you can configure separate access control permissions. For example, you could separate access to diagnostic controls form general operator controls of a device. You can create up to 20 module identities under a device identity.
+For more sophisticated device implementations, IoT Hub enables you to configure subcomponents of the device by creating "module identities" under a device identity. Each module identity can be configured with an independent connection to IoT Hub, which means you can configure separate access control permissions. For example, you could separate access to diagnostic controls from general operator controls of a device. You can create up to 20 module identities under a device identity.
 
 ## Identity registry operations
 
