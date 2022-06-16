@@ -4,7 +4,7 @@ Here, we'll discuss how Defender for Cloud works to protect your multicloud envi
 
 Cloud Security Posture Management (CSPM) is a proactive system by which organizations can identify and remediate misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure.
 
-Defender for Cloud uses a Secure Score to tell you about the state of your overall security posture.
+Defender for Cloud uses a Secure Score to inform you of the state of your overall security posture.
 
 :::image type="content" source="../media/overview.png" alt-text="Screenshot of the overview page for Defender for Cloud." border="false":::
 
@@ -22,6 +22,6 @@ By following all of the provided recommendations and alerts, you can reduce your
 
 Cloud workload protection is the reactive part of Defender for Cloud. Defender for Servers will send you alerts informing you about potential cyberattacks such as brute-force attacks. You can also set up automatic protections should Defender for Cloud detect a cyberattack against your environments.
 
-Alerts are generated through Microsoft Defender for Cloud's Advanced Threat Protection functionality. Alerts are available on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts, about possible cyberattacks or potential malicious actions taken against your resources.
+Alerts are generated through Defender for Cloud's Advanced Threat Protection functionality. Alerts are available on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts, about possible cyberattacks or potential malicious actions taken against your resources.
 
 :::image type="content" source="../media/sql-database.png" alt-text="Screenshot of an SQL database alert." border="false":::
