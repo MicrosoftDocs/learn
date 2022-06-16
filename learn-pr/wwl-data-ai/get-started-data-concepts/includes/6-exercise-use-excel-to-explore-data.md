@@ -16,9 +16,9 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
 ### Upload the workbook to OneDrive
 
-1. In your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
+1. In your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot ofOneDrive." lightbox="../media/one-drive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot showing OneDrive My Files folder." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DataFund**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
@@ -29,7 +29,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
 
-    :::image type="content" source="../media/upload-files.png" alt-text="Uploading a file" lightbox="../media/upload-files.png":::
+    :::image type="content" source="../media/upload-files.png" alt-text="Screenshot showing the file uploads dialog box." lightbox="../media/upload-files.png":::
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
@@ -53,7 +53,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
     Excel automatically formats the data as a table and adds drop-down buttons to the header row as shown here:
 
-    :::image type="content" source="../media/excel-table.png" alt-text="Screenshot of a table in Excel." lightbox="../media/excel-table.png":::
+    :::image type="content" source="../media/excel-table.png" alt-text="Screenshot showing a table with data in Excel." lightbox="../media/excel-table.png":::
 
 2. Click any cell to deselect the table, and then click the drop-down button for the **Day** column, and click **Filter...**
 3. In the **Filter** dialog box, clear the **(Select All)** checkbox, and then select only the **Saturday** and **Sunday** checkboxes as shown here before clicking **OK**:
@@ -118,7 +118,7 @@ In this exercise, you will use formulas to create derived columns that extend th
 
 6. Scroll down to the bottom of the table of data, select cell **I367** (under the **Revenue** column). Then on the **Home** tab of the ribbon, in the **Editing** section, in the **AutoSum** (**&Sigma;**) drop-down menu, click **&Sigma; Sum**.
 
-    :::image type="content" source="../media/autosum.png" alt-text="Screenshot of the AutoSum menu." lightbox="../media/autosum.png":::
+    :::image type="content" source="../media/autosum.png" alt-text="Screenshot showing the AutoSum menu in Excel." lightbox="../media/autosum.png":::
 
 
     This enters the following formula:
@@ -133,7 +133,7 @@ In this exercise, you will use formulas to create derived columns that extend th
 
 7. Filter the **Month** column to show only the records for **July**, and then look at the subtotal at the bottom of the **Revenue** column (you may need to scroll to find it). It now shows the total revenue for July.
 
-    :::image type="content" source="../media/july-revenue.png" alt-text="Screenshot of total revenue for July." lightbox="../media/july-revenue.png":::
+    :::image type="content" source="../media/july-revenue.png" alt-text="Screenshot showing the total revenue for July." lightbox="../media/july-revenue.png":::
 
 8. Clear the filter on **Month** to show all the data, and verify that the revenue total reflects all months again.
 
@@ -155,7 +155,7 @@ In this exercise, you will apply conditional formatting to data to highlight key
 
 3. Select all the values in the **Rainfall** column, and then in the **Conditional Formatting** drop-down list, point to **Data Bars**, and select the **Light Blue Data Bar** gradient fill. The cells are formatted with a visual indication of the comparative level of rainfall for each day.
 
-    :::image type="content" source="../media/rainfall-data-bars.png" alt-text="Screenshot of rainfall data bars." lightbox="../media/rainfall-data-bars.png":::
+    :::image type="content" source="../media/rainfall-data-bars.png" alt-text="Screenshot showing rainfall data bars in Excel." lightbox="../media/rainfall-data-bars.png":::
 
 4. Select all the values in the **Sales** column, and then in the **Conditional Formatting** drop-down list, point to **Top/Bottom Rules**, and select **Top 10%**. Then in the **Top 10%** dialog box, select **Green Fill with Dark Green Text** and click **Done**. The cells containing sales values in the top 10% are highlighted in green (you may need to scroll to see them) and the **Conditional Formatting** pane remains open.
 
