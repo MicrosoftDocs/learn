@@ -17,7 +17,7 @@ In this exercise, you will create an Azure Database for MySQL flexible server an
 
 1. Under Azure services, select **+ Create a resource**. Under **Categories**, select **Databases**. Under **Azure Database for MySQL**, select **Create**.
 1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** drop down box to view the options. Select **Flexible server (Recommended)**. Select **Create**.
-    :::image type="content" source="../media/mysql_deployment_option.png" alt-text="Screenshot showing the Azure Database for MySQL Flexible server (recommended) page." lightbox="../media/mysql_deployment_option.png":::
+    :::image type="content" source="../media/mysql-deployment-option.png" alt-text="Screenshot showing the Azure Database for MySQL Flexible server (recommended) page." lightbox="../media/mysql-deployment-option.png":::
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. Subscription - your subscription.
     1. Resource group - MyFlex_nnn.
@@ -84,14 +84,14 @@ When you have completed this exercise, Select **STOP** to stop the server. This 
 
 1. Navigate to your new Azure Database for MySQL flexible server and select the **Overview** page. Notice that the availability zone is 1. which is what you specified for the primary server.
 1. From the left menu, under **Settings**, select **High availability**. Notice that that primary availability zone is 1 (as on the Overview page), and the standby availability zone is 3.
-    :::image type="content" source="../media/high_availability.png" alt-text="Screenshot showing the Azure Database for MySQL high availability primary zone and standby zone page." lightbox="../media/high_availability.png":::
+    :::image type="content" source="../media/high-availability.png" alt-text="Screenshot showing the Azure Database for MySQL high availability primary zone and standby zone page." lightbox="../media/high-availability.png":::
 
 ## Force a failover
 
 1. If necessary, from the left menu, under **Settings**, select **High availability**.
 1. Select **Forced failover**. Notice the estimated time for the failover operation to complete.
 1. Select **OK**. The failover process is initiated. When the failover is complete, a notification is displayed.
-    :::image type="content" source="../media/forced_failover.png" alt-text="Screenshot showing the Azure Database for MySQL forced failover page." lightbox="../media/forced_failover.png":::
+    :::image type="content" source="../media/forced-failover.png" alt-text="Screenshot showing the Azure Database for MySQL forced failover page." lightbox="../media/forced-failover.png":::
     :::image type="content" source="../media/notifications.png" alt-text="Screenshot showing the Azure Database for MySQL forced failover notification page." lightbox="../media/notifications.png":::
 1. Navigate to the **High availability** blade again. You may need to refresh your browser window to see the latest information. The primary zone is now 3 and the standby availability zone is 1.
 1. From the top menu, select **Delete** to delete the server. A notification is displayed. Select **Yes** to delete the server.

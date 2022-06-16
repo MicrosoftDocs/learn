@@ -3,7 +3,7 @@ uid: learn.wwl.explore-mysql-architecture
 metadata:
   title: Explore MySQL Architecture
   description: "Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL."
-  ms.date: 06/08/2022
+  ms.date: 06/16/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

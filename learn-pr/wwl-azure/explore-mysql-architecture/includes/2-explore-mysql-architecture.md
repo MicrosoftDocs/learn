@@ -1,6 +1,6 @@
 MySQL is a relational database based on the SQL standard. Data is stored on the server, in tables made up of columns and rows. Clients can access the server data via web sites, apps, or using an integrated developer environment (IDE) such as MySQL Workbench or dbForge. Examples in this module use MySQL Workbench.
 
-:::image type="content" source="../media/mysql_architecture.png" alt-text="Image showing the Graphical user interface Description automatically generated." lightbox="../media/mysql_architecture.png":::
+:::image type="content" source="../media/mysql-architecture.png" alt-text="Image showing the Graphical user interface Description automatically generated." lightbox="../media/mysql-architecture.png":::
 
 MySQL allows different storage engines to be used. The default storage engine is InnoDB, which is the storage engine supported by Azure Database for MySQL. Data files including databases, tales, log, and status files are stored in the **data directory**. You can display the location of data files by running:
 
