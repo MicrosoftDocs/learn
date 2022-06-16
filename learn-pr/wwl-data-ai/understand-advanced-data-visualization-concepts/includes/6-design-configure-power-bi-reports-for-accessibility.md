@@ -21,7 +21,7 @@ Without polling the audience, some immediate inclusive considerations are:
 
 In Power BI Desktop, you can set the **tab order** for how a keyboard user will experience your report. First, navigate to the **View** tab in the ribbon, then select **Selection** in the **Show Panes** section.
 
-<< image >>
+![Screenshot of the tab order menu with three ordered items and one hidden item.](../media/tab-order.png)
 
 You will see **Layer order** and **Tab order**, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user *tabs* to the next item. Use the up/down arrows to set the order. You can also hide items by clicking the eye icon, which will move it to the bottom of the list, remove the numbered position, and put a line through the eye to indicate hidden state.
 
