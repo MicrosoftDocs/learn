@@ -11,9 +11,9 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
 ### Upload the workbook to OneDrive
 
-1. In your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
+1. In your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of OneDrive." lightbox="../media/one-drive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of OneDrive My Files folder." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
@@ -24,7 +24,7 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
 
-    :::image type="content" source="../media/upload-files.png" alt-text="Screenshot of uploading a file." lightbox="../media/upload-files.png":::
+    :::image type="content" source="../media/upload-files.png" alt-text="Screenshot of uploading a file to OneDrive." lightbox="../media/upload-files.png":::
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
@@ -46,13 +46,13 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 ### Create a PivotTable
 
-1. If you have not already done so, in your web browser, navigate to <a href="https://onedrive.live.com" target="_blank" rel="noopener noreferrer">https://onedrive.live.com</a>, and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
+1. If you have not already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
-    :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook.":::
+    :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook in Excel Online.":::
 
 2. Select any cell in the table of data, and on the **Insert** tab of the ribbon, click **PivotTable**, and create a PivotTable from your table of data in a new worksheet. Excel adds a new worksheet with a PivotTable that looks like this:
 
-    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty PivotTable.":::
+    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty PivotTable in Excel Online.":::
 
 3. In the **PivotTable Fields** pane, select **Month**. Excel automatically adds **Month** to the **Rows** area of the PivotTable and displays the month names in chronological order.
 4. In the **PivotTable Fields** pane, select **Sales**. Excel automatically adds **Sum of Sales** to the **Values** area of the PivotTable and displays the total number (sum) of lemonade sales for each month, like this:
@@ -107,7 +107,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     Make sure your table looks like the one shown, before you proceed (note that the date may be formatted differently for your location).
 
-2. Using the following instructions, select the cells containing the date, daily sales, and temperature values only, but **<u>not</u>** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells:
+2. Using the following instructions, select the cells containing the date, daily sales, and temperature values only, but **not** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells:
     - Click cell **A4**, which should contain the date value for January 1 2017.
     - Then press SHIFT + CTRL + **&#8680;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to extend the selection to include the sales and temperature values.
     - Then press SHIFT + CTRL + **&#8681;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to select the rows beneath the current selection.
@@ -118,9 +118,9 @@ It can often be easier to identify trends and relationships in data by creating 
 5. In the new sheet, select cell **A2**, and then on the **Home** tab click the **Paste** button (&#128203;) to paste the copied cells into the new worksheet. You may need to widen the **A** column to see the dates.
 6. In cells **A1** to **C1**, add the columns headers **Date**, **Sales**, and **Temperature**. Your new worksheet should look like this:
 
-    :::image type="content" source="../media/new-sheet-sales-date-temp.png" alt-text="Screenshot of a new worksheet showing sales amd temperature totals by date.":::
+    :::image type="content" source="../media/new-sheet-sales-date-temp.png" alt-text="Screenshot of a new worksheet showing sales and temperature totals by date.":::
 
-7. Select the **Date** and **Sales** data, including the headers (but <u>not</u> the temperature data). Then on the **Insert** tab of the ribbon, in the **Line** drop-down list, click the first line chart format. Excel inserts a line chart like this:
+7. Select the **Date** and **Sales** data, including the headers (but **not** the temperature data). Then on the **Insert** tab of the ribbon, in the **Line** drop-down list, click the first line chart format. Excel inserts a line chart like this:
 
     :::image type="content" source="../media/sales-line-chart.png" alt-text="Screenshot of a line chart showing sales by date.":::
 
@@ -134,7 +134,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 9. Select the chart and double-click the chart title. Then in the **Chart** pane on the **Format** tab, expand **Chart Title** and change the chart title to *Sales and Temperature*:
 
-    :::image type="content" source="../media/edit-chart-title.png" alt-text="Screenshot of editing the chart title.":::
+    :::image type="content" source="../media/edit-chart-title.png" alt-text="Screenshot of editing the chart title in Excel Online.":::
 
 10. Close the **Chart** pane.
 
@@ -144,7 +144,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/pivot-day-average-revenue.png" alt-text="Screenshot of a PivotTable showing average revenue by day.":::
 
-2. Copy the day and average revenue values (but <u>not</u> the headers or total) to the clipboard, and then add a new worksheet, paste the copied data in cell **A2**, and add **Day** and **AverageRevenue** headers like this:
+2. Copy the day and average revenue values (but **not** the headers or total) to the clipboard, and then add a new worksheet, paste the copied data in cell **A2**, and add **Day** and **AverageRevenue** headers like this:
 
     :::image type="content" source="../media/new-sheet-day-average-revenue.png" alt-text="Screenshot of a new worksheet showing average revenue by day.":::
 
@@ -176,7 +176,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/pivot-date-flyers-sales.png" alt-text="Screenshot of a PivotTable showing flyers and sales totals by date.":::
 
-2. Copy the date, flyers, and sales values (but <u>not</u> the headers or totals) to a new worksheet and add **Date**, **Flyers**, and **Sales** headers like this:
+2. Copy the date, flyers, and sales values (but **not** the headers or totals) to a new worksheet and add **Date**, **Flyers**, and **Sales** headers like this:
 
     :::image type="content" source="../media/new-sheet-date-flyers-sales.png" alt-text="Screenshot of a new worksheet showing total flyers and sales by date.":::
 
@@ -192,11 +192,11 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/pivot-date-rainfall-sales.png" alt-text="Screenshot of a PivotTable showing rainfall and sales totals by date.":::
 
-2. Copy the date, rainfall, and sales values (but <u>not</u> the headers or totals) to a new worksheet and add **Date**, **Rainfall**, and **Sales** headers like this:
+2. Copy the date, rainfall, and sales values (but **not** the headers or totals) to a new worksheet and add **Date**, **Rainfall**, and **Sales** headers like this:
 
     :::image type="content" source="../media/new-sheet-date-rainfall-sales.png" alt-text="Screenshot of a new worksheet showing total rainfall and sales by date.":::
  
-3. Select the **Rainfall** and **Sales** data and headers (but <u>not</u> the dates). Then on the **Insert** tab, in the **Scatter** drop-down list, select the first scatter-plot format. This creates a scatter-plot chart like this:
+3. Select the **Rainfall** and **Sales** data and headers (but **not** the dates). Then on the **Insert** tab, in the **Scatter** drop-down list, select the first scatter-plot format. This creates a scatter-plot chart like this:
 
     :::image type="content" source="../media/rainfall-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing total rainfall by sales.":::
  
@@ -210,7 +210,7 @@ It can often be easier to identify trends and relationships in data by creating 
     ```
 
 6. Copy the formula to the other cells in the **LogRainfall** column. The easiest way to do this is to select the cell containing the formula and double-click on the small square "handle" (**&#9642;**) at the bottom right of the selected cell.
-7. In **E1**, add the column header **LogSales**, and and then select cell **E2** and enter the following formula in the ***fx*** box above the worksheet to calculate the base 10 log of the sales value:
+7. In **E1**, add the column header **LogSales**, and then select cell **E2** and enter the following formula in the ***fx*** box above the worksheet to calculate the base 10 log of the sales value:
 
     ```
     =log(C2)
