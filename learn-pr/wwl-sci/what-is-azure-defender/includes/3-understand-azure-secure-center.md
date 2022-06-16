@@ -47,7 +47,7 @@ To help you understand how important each recommendation is to your overall secu
 
 One of the most powerful tools Defender for Cloud provides for continuously monitoring your network's security status is the Network map. The map enables you to see the topology of your workloads, so you can see if each node is properly configured. You can see how your nodes are connected, which helps you block unwanted connections that could potentially make it easier for an attacker to creep along your network.
 
-:::image type="content" source="../media/security-center-net-map.png" alt-text="Screen shot of the Defender for Cloud Network map.":::
+:::image type="content" source="../media/security-center-net-map.png" alt-text="Screenshot of the Defender for Cloud Network map.":::
 
 ## Optimize and improve security by configuring recommended controls
 

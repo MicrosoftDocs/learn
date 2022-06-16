@@ -11,7 +11,7 @@ The central feature in Defender for Cloud that enables you to achieve those goal
 
 The Defender for Cloud provides visibility and control of the CWP features for your environment:
 
-:::image type="content" source="../media/workload-protections.png" alt-text="Screen shot of Defender for Cloud workload protections.":::
+:::image type="content" source="../media/workload-protections.png" alt-text="Screenshot of Defender for Cloud workload protections.":::
 
 ## What resource types can Microsoft Defender for Cloud secure?
 
