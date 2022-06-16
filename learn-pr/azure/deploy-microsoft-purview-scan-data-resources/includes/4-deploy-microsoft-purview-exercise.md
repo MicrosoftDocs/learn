@@ -29,4 +29,4 @@ In this unit, you'll use the [Azure portal](https://portal.azure.com) to create 
 
 1. Wait several minutes while your deployment is in progress. Once complete, select **Go to resource**.
 
-    :::image type="content" source="../media/goto-resource.png" alt-text="Screenshot of the deployment dashboard window with the deployment completed, and the go to resource button selected.":::
+    :::image type="content" source="../media/go-to-resource.png" alt-text="Screenshot of the deployment dashboard window with the deployment completed, and the go to resource button selected.":::
