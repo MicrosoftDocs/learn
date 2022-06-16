@@ -161,13 +161,13 @@ To deploy the updated *:::no-loc text="basket":::* service, follow these steps:
     basket-544bc9c7fc-wtznp           0/1    ContainerCreating    0          1s
     ```
 
-2. Run the following script to deploy the updated *:::no-loc text="signalR":::* service to AKS:
+2. Run the following script to deploy the updated *:::no-loc text="Signalr":::* service to AKS:
     
     ```bash
     deploy/k8s/deploy-application.sh --charts signalr --registry eshoplearn
     ```
 
-    The preceding script uses Helm to deploy the *:::no-loc text="signalr":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of signalr. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+    The preceding script uses Helm to deploy the *:::no-loc text="signalr":::* Docker image from your eshoplearn docker registry to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of signalr. The `STATUS` and `AGE` column values indicate that the deployments were successful:
 
     ```console
     NAME                              READY  STATUS              RESTARTS   AGE    
