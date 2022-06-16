@@ -23,7 +23,7 @@ To configure the length of time to retain a backup:
 1. In the Azure portal, navigate to your Azure Database for MySQL.
 1. From the overview blade, under **Essentials**, select **Configuration**. The Compute + storage blade is displayed.
 1. Under **Backups**, select Backup retention period (in days) using the slider. You can select from 1 to 35 days.
-    :::image type="content" source="../media/compute_and_storage_backup.png" alt-text="Screenshot showing the Compute + storage blade, where you can set the retention period for backups." lightbox="../media/compute_and_storage_backup.png":::
+    :::image type="content" source="../media/compute-storage-backup.png" alt-text="Screenshot showing the Compute + storage blade, where you can set the retention period for backups." lightbox="../media/compute_and_storage_backup.png":::
 
 ## Server configuration
 
