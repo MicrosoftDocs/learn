@@ -38,7 +38,7 @@ SET CHANGE_TRACKING = ON
 (CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON)
 ```
 
-You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio. To enable, use T-SQL.
+You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio. To enable, use T-SQL.
 
 You can specify the `CHANGE_RETENTION` and `AUTO_CLEANUP` options when you enable change tracking, and you can change the values at any time after change tracking is enabled.
 
@@ -58,7 +58,7 @@ ENABLE CHANGE_TRACKING
 WITH (TRACK_COLUMNS_UPDATED = ON)
 ```
 
-You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
+You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
 
 When the `TRACK_COLUMNS_UPDATED` option is set to `ON`, the SQL Server Database Engine stores extra information about which columns were updated to the internal change tracking table. Column tracking can enable an application to synchronize only those columns that were updated. This can improve efficiency and performance however, maintaining column tracking information adds some extra storage overhead, this option is set to OFF by default.
 

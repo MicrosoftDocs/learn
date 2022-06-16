@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/30/2021
+  ms.date: 06/10/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -36,7 +36,7 @@ quiz:
     - content: "Deploy and configure Azure Bastion."
       isCorrect: false
       explanation: "Incorrect. Although deploying Azure Bastion is a good solution in helping to secure remote connectivity to the VM, it's not a solution to the current problem."
-    - content: "Verify and test the RDP connection details being used to connect to the target VM"
+    - content: "Verify and test the RDP connection details being used to connect to the target VM."
       isCorrect: true
       explanation: "Correct. It's possible the details have changed."
   - content: "An administrator has received an error when they started a Windows Server VM. They've no idea why the VM won't start. What should they do first to determine the cause of the startup failure?"
