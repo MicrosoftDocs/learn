@@ -13,7 +13,7 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
 1. In your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. You should see the files and folders in your OneDrive, like this:
 
-    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of OneDrive My Files folder." lightbox="../media/one-drive.png":::
+    :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of One Drive My Files folder." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
@@ -24,11 +24,11 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
 
-    :::image type="content" source="../media/upload-files.png" alt-text="Screenshot of uploading a file to OneDrive." lightbox="../media/upload-files.png":::
+    :::image type="content" source="../media/upload-files.png" alt-text="Screenshot of uploading a file to One Drive." lightbox="../media/upload-files.png":::
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade.xlsx in OneDrive." lightbox="../media/lemonade-xlsx.png":::
+    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
 
 ### Open the workbook in Excel Online
 
@@ -52,12 +52,12 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 2. Select any cell in the table of data, and on the **Insert** tab of the ribbon, click **PivotTable**, and create a PivotTable from your table of data in a new worksheet. Excel adds a new worksheet with a PivotTable that looks like this:
 
-    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty PivotTable in Excel Online.":::
+    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty Pivot Table in Excel Online.":::
 
 3. In the **PivotTable Fields** pane, select **Month**. Excel automatically adds **Month** to the **Rows** area of the PivotTable and displays the month names in chronological order.
 4. In the **PivotTable Fields** pane, select **Sales**. Excel automatically adds **Sum of Sales** to the **Values** area of the PivotTable and displays the total number (sum) of lemonade sales for each month, like this:
 
-    :::image type="content" source="../media/pivot-monthly-sales.png" alt-text="Screenshot of a PivotTable showing sales summed by month.":::
+    :::image type="content" source="../media/pivot-monthly-sales.png" alt-text="Screenshot of a Pivot Table showing sales summed by month.":::
 
     You can now see the sales aggregated by month – so for example, there were 1,056 sales in June.
 
@@ -65,13 +65,13 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 1. In the **PivotTable** Fields pane, select **Day**. Excel automatically adds **Day** to the **Rows** area of the PivotTable and displays the total number (sum) of lemonade sales for each weekday within each month, like this:
 
-    :::image type="content" source="../media/pivot-month-day.png" alt-text="Screenshot of a PivotTable showing sales grouped by month and day.":::
+    :::image type="content" source="../media/pivot-month-day.png" alt-text="Screenshot of a Pivot Table showing sales grouped by month and day.":::
 
     Now you can see monthly sales aggregated by weekday. For example, 57 of the sales in January were made on a Saturday. You can also expand/collapse months to *drill-up*/*drill-down* the levels of the hierarchy.
 
 2. In the **PivotTable Fields** pane, drag **Day** from the **Rows** area to the **Columns** area. Excel now shows total sales for each month on rows, broken down by weekday in columns; like this:
 
-    :::image type="content" source="../media/pivot-day-columns.png" alt-text="Screenshot of a PivotTable showing sales grouped by month on rows and day on columns.":::
+    :::image type="content" source="../media/pivot-day-columns.png" alt-text="Screenshot of a Pivot Table showing sales grouped by month on rows and day on columns.":::
 
     You can still see monthly sales broken down by weekday, but you can also see (in the bottom row) the totals for each weekday across the entire year. For example, a total of 1,324 sales were made on a Monday.
 
@@ -84,7 +84,7 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
     The table of data now shows the average number of sales for each month and weekday, as shown here:
 
-    :::image type="content" source="../media/pivot-average-sales.png" alt-text="Screenshot of a PivotTable showing average sales grouped by month on rows and day on columns.":::
+    :::image type="content" source="../media/pivot-average-sales.png" alt-text="Screenshot of a Pivot Table showing average sales grouped by month on rows and day on columns.":::
  
     You can now see the average number of sales for each weekday by month. For example, the average number of sales on a Wednesday in February is 19.75.
 
@@ -103,7 +103,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Modify the PivotTable you created in the previous exercise so that it shows **Date** in the **Rows** area and the sum of **Sales** and sum of **Temperature** (in that order) in the **Values** area, like this:
 
-    :::image type="content" source="../media/pivot-date-sales-temperature.png" alt-text="Screenshot of a PivotTable showing sales and temperature totals by date.":::
+    :::image type="content" source="../media/pivot-date-sales-temperature.png" alt-text="Screenshot of a Pivot Table showing sales and temperature totals by date.":::
 
     Make sure your table looks like the one shown, before you proceed (note that the date may be formatted differently for your location).
 
@@ -142,7 +142,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Return to the worksheet containing the PivotTable, and modify it to show **Day** on rows with the *average* of **Revenue**. Your result should look like this although your days of the week may not be ordered:
 
-    :::image type="content" source="../media/pivot-day-average-revenue.png" alt-text="Screenshot of a PivotTable showing average revenue by day.":::
+    :::image type="content" source="../media/pivot-day-average-revenue.png" alt-text="Screenshot of a Pivot Table showing average revenue by day.":::
 
 2. Copy the day and average revenue values (but **not** the headers or total) to the clipboard, and then add a new worksheet, paste the copied data in cell **A2**, and add **Day** and **AverageRevenue** headers like this:
 
@@ -150,7 +150,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 3. Select the **B** column header and on the **Home** ribbon tab, use the **\$** menu to format the revenue data as **\$ English (United States)**, like this:
 
-    :::image type="content" source="../media/format-average-revenue.png" alt-text="Screenshot of a worksheet showing average revenue by day formatted as US currency.":::
+    :::image type="content" source="../media/format-average-revenue.png" alt-text="Screenshot of a worksheet showing average revenue by day formatted as U S currency.":::
 
 4. Select all the data, including the **Day** and **AverageRevenue** headers, and on the **Insert** tab of the ribbon, in the **Column** drop-down list, select the first column chart format. A chart like this is created:
 
@@ -174,7 +174,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 1. Return to the worksheet containing the PivotTable, and modify it to show **Date** on rows with the sum of **Flyers** and the sum of **Sales**, like this:
 
-    :::image type="content" source="../media/pivot-date-flyers-sales.png" alt-text="Screenshot of a PivotTable showing flyers and sales totals by date.":::
+    :::image type="content" source="../media/pivot-date-flyers-sales.png" alt-text="Screenshot of a Pivot Table showing flyers and sales totals by date.":::
 
 2. Copy the date, flyers, and sales values (but **not** the headers or totals) to a new worksheet and add **Date**, **Flyers**, and **Sales** headers like this:
 
@@ -184,13 +184,14 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/flyers-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing total flyers by sales.":::
 
-    Note that the chart shows the number of flyers distributed each day on the horizontal (X) axis, and the number of sales each day on the vertical (Y) axis. The plot forms a roughly diagonal line (with some variance), indicating a general trend where the number of sales tends to increase in-line with the number of flyers distributed.
+    > [!Note]
+    > The chart shows the number of flyers distributed each day on the horizontal (X) axis, and the number of sales each day on the vertical (Y) axis. The plot forms a roughly diagonal line (with some variance), indicating a general trend where the number of sales tends to increase in-line with the number of flyers distributed.
 
 ### View sales by rainfall
 
 1. Return to the worksheet containing the PivotTable, and modify it to show **Date** on rows with the sum of **Rainfall** and the sum of **Sales** as values, like this:
 
-    :::image type="content" source="../media/pivot-date-rainfall-sales.png" alt-text="Screenshot of a PivotTable showing rainfall and sales totals by date.":::
+    :::image type="content" source="../media/pivot-date-rainfall-sales.png" alt-text="Screenshot of a Pivot Table showing rainfall and sales totals by date.":::
 
 2. Copy the date, rainfall, and sales values (but **not** the headers or totals) to a new worksheet and add **Date**, **Rainfall**, and **Sales** headers like this:
 
