@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-service-types.describe-platform-as-service
+title: Describe Platform as a Service
+metadata:
+  title: Describe Platform as a Service
+  description: "Describe Platform as a Service"
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-platform-as-service.md)]
