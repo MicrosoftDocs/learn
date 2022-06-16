@@ -41,13 +41,13 @@ To access an instance of SQL Server through a firewall, you must configure the f
 
 1. In the **Networking** pane, on the **Public access** tab, ensure that a firewall rule exists. Ensure that no rule has a **Start IP** of `0.0.0.0` and **End IP** of `0.0.0.0` or another combination that allows access to wider public IP ranges.
 
-1. If you change any settings, iselect **Save**.
+1. If you change any settings, select **Save**.
 
-:::image type="content" source="../media/azure-networking/firewall.png" alt-text="Screenshot that shows the Frewalls and virtual networks pane." lightbox="../media/azure-networking/firewall.png#lightbox":::
+:::image type="content" source="../media/azure-networking/firewall.png" alt-text="Screenshot that shows the Firewalls and virtual networks pane." lightbox="../media/azure-networking/firewall.png#lightbox":::
 
 ### Enable Network Watcher - Level 1
 
-NSG flow logs are an Azure Network Watcher feature that give you information about IP ingress and egress traffic through an NSG. Flow logs are written in JSON format, and show:
+NSG flow logs are an Azure Network Watcher feature that gives you information about IP ingress and egress traffic through an NSG. Flow logs are written in JSON format and show:
 
 - Outbound and inbound flows on a per-rule basis.
 - The network interface (NIC) the flow applies to.
