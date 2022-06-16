@@ -15,5 +15,5 @@ Some easy ways to improve performance include:
 * **Set data types.** By default, Power BI will assume data types for imported columns, which should be verified, and all new columns must be manually set.
 * **Apply most restrictive filters.** More data will take more time to load, and isn't always the best user experience either. Consider limited results first, and allow drilling for more details.
 
->[!Tip]
-The best time to optimize your report is before sharing it with end-users as it allows you to improve performance before soliciting user feedback. However, improvement is a continual process and can and should be done regularly once the report is live as well. Stay informed with the [Optimization guide for Power BI](power-bi/guidance/power-bi-optimization).
+> [!TIP]
+> The best time to optimize your report is before sharing it with end-users as it allows you to improve performance before soliciting user feedback. However, improvement is a continual process and can and should be done regularly once the report is live as well. Stay informed with the [Optimization guide for Power BI](power-bi/guidance/power-bi-optimization).

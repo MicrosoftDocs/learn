@@ -33,5 +33,5 @@ Now that your custom theme has been exported, you and others will need to import
 
 Any changes made to this theme will need to be saved again to either overwrite the existing theme or as a new theme. Themes are local to the file as well, so changes made on someone’s copy on their computer won’t affect your copy. The theme could be saved as a **Power BI Template (.PBIT) file**, and then shared that way as well. When sharing custom themes, consider a business process to validate that the theme and/or template are being used.
 
->[!TIP]
- Once you’ve published your report, consider [creating themes for your dashboard in the Power BI service](/power-bi/create-reports/service-dashboard-themes).
+> [!TIP]
+> Once you’ve published your report, consider [creating themes for your dashboard in the Power BI service](/power-bi/create-reports/service-dashboard-themes).

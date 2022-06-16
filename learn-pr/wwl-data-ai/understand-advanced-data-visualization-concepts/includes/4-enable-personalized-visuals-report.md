@@ -1,7 +1,7 @@
 In an enterprise organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using **personalized visuals**. These allow individual consumers to make minor design changes to best understand the data themselves. 
 
->[!Tip]
-This is a powerful feature for more advanced report consumers. Empower your users by sharing the [Power BI Consumer Documentation](power-bi/consumer/end-user-personalize-visuals) for personalized visuals.
+> [!TIP]
+> This is a powerful feature for more advanced report consumers. Empower your users by sharing the [Power BI Consumer Documentation](power-bi/consumer/end-user-personalize-visuals) for personalized visuals.
 
 ## What can consumers change
 
@@ -24,7 +24,7 @@ You can enable personalized visuals in Power BI Desktop or Power BI service.
 
 By default, when you enable personalized visuals, it's enabled for all visuals in a report. You can modify each visual to allow personalization or not. You'll need to enable this setting for each report.
 
->[!Tip]
-Use a Power BI Template (.PBIT) file to enable personalized visuals and add on top of your custom theme for faster report building in the future.
+> [!TIP]
+> Use a Power BI Template (.PBIT) file to enable personalized visuals and add on top of your custom theme for faster report building in the future.
 
 For more information and limitations, see the [Power BI Documentation](power-bi/create-reports/power-bi-personalize-visuals).

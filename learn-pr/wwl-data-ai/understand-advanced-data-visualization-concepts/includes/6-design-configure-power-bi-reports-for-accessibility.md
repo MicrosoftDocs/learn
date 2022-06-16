@@ -1,7 +1,7 @@
 Accessibility is at the heart of Microsoft's values, and Power BI is committed to making Power BI experiences as accessible to as many people as possible. As the report creator, it's up to you to use the available tools to improve your users' experience.
 
->[!Note]
-This unit highlights some accessible design features, and more details including a checklist, can be found in the [Power BI Documentation](power-bi/create-reports/desktop-accessibility-creating-reports).
+> [!NOTE]
+> This unit highlights some accessible design features, and more details including a checklist, can be found in the [Power BI Documentation](power-bi/create-reports/desktop-accessibility-creating-reports).
 
 ## Consider your audience
 
@@ -25,5 +25,5 @@ In Power BI Desktop, you can set the **tab order** for how a keyboard user will 
 
 You'll see **Layer order** and **Tab order**, with a list of report elements. Layer order allows you to stack elements, whereas tab order dictates which item will be accessed next when the keyboard user *tabs* to the next item. Use the up/down arrows to set the order. Hide items by clicking the **eye icon**. This action will move the item to the bottom, remove the numbered position, and put a line through the eye to indicate hidden state.
 
->[!Tip]
-Set tab order and turn off tab order (mark the item as hidden) on any decorative items.
+> [!TIP]
+> Set tab order and turn off tab order (mark the item as hidden) on any decorative items.
