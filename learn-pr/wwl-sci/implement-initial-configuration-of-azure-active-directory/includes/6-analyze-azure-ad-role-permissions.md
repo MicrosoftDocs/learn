@@ -30,6 +30,6 @@ By adding roles to a given user account or group, you can add permissions on to 
 
 :::image type="content" source="../media/permissions-attribute-reader.png" alt-text="Screenshot of the Attribute definition reader.  You can see which permissions a built-in role grants.":::
 
-If possible, you only want to grant the minimum permissions a user needs.  So be care to know what all permissions are granted when you assign a role.  you can see the list of permissions in the **Attribute definition reader**.  To open it, launch Azure AD, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu.  Depending on the role you chose, you'll see a large or small number of permissions. Two sets of permissions:
+If possible, you only want to grant the minimum permissions a user needs.  So be sure to know what all permissions are granted when you assign a role.  You can see the list of permissions in the **Attribute definition reader**.  To open it, launch Azure AD, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu.  Depending on the role you chose, you'll see a large or small number of permissions. Two sets of permissions:
 - Role permissions
 - Guest and service principal basic read permissions
