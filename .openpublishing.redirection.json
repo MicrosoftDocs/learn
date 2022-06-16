@@ -14159,6 +14159,16 @@
       "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/5-explore-multi-configuration-multi-agent.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-release-pipeline-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-app-services/12-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/12-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-app-services/13-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
