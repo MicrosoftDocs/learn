@@ -33,7 +33,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in OneDrive." lightbox="../media/lemonade-xlsx.png":::
+    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
 
 ### Open the workbook in Excel Online
 
