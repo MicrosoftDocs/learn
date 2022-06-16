@@ -53,7 +53,7 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 ## Microsoft Pluton Security Processor
 
-:::image type="content" source="../media/pluton.png" alt-text="Diagram of the new Microsoft Pluton CPU chip on the motherboard next to the CPU and TPM chips.":::
+:::image type="content" source="../media/pluton.png" alt-text="Diagram of the new Microsoft Pluton C P U chip on the motherboard next to the C P U and T P M chips.":::
 
 Today, the heart of operating system security on most PCs lives in a chip separate from the CPU, called the TPM (Trusted Platform Module). The TPM is a hardware component, which is used to help securely store keys and measurements that verify the integrity of the system. TPMs have been supported in Windows for more than 10 years and power many critical technologies such as Windows Hello and BitLocker. Based on the effectiveness of the TPM at performing critical security tasks, attackers have begun to innovate ways to attack it. This is particularly common in situations where an attacker can steal or temporarily gain physical access to a PC. These sophisticated attack techniques target the communication channel between the CPU and TPM, which is typically a bus interface. This bus interface provides the ability to share information between the main CPU and security processor. It also provides an opportunity for attackers to steal or modify information in-transit using a physical attack.
 

@@ -1,6 +1,6 @@
 As part of the sign-in experience for accounts in Azure AD, there are different ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
 
-:::image type="content" source="../media/authentication-methods.png" alt-text="Screenshot of the strengths and preferred authentication methods in Azure AD":::
+:::image type="content" source="../media/authentication-methods.png" alt-text="Screenshot of the strengths and preferred authentication methods in Azure A D.":::
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
@@ -94,7 +94,7 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 
 In the example below a user has already provisioned their FIDO2 security key. The user can choose to sign in on the web with their FIDO2 security key inside of a supported browser on Windows 10 version 1903 or higher or Windows 11.
 
-:::image type="content" source="../media/fast-identity-windows-edge-sign-in.png" alt-text="Screenshot of the security key sign-in for Microsoft Edge.":::
+:::image type="content" source="../media/fast-identity-windows-edge-sign-in.png" alt-text="Screenshot of the security key sign-in for Microsoft Edge. Great multifactor verification process.":::
 
 ## Prerequisites for cloud-only deployment
 

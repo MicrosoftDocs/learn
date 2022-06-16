@@ -20,7 +20,7 @@ To use Azure AD sign-in for Windows VM in Azure, you must:
 - First enable the Azure AD sign-in option for your Windows VM.
 - Then configure Azure role assignments for users who are authorized to sign into the VM.
 
-:::image type="content" source="../media/azure-authentication-windows-machine.png" alt-text="Screenshot create or configure Windows virtual machine dialog.  The checkbox for `Login with Azure AD` is selected.":::
+:::image type="content" source="../media/azure-authentication-windows-machine.png" alt-text="Screenshot of create or configure Windows virtual machine dialog.  The checkbox for `Login with Azure A D` is selected.":::
 
 ### Configure Azure AD sign-in for Linux VMs
 You can enable Azure AD sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Azure AD authentication:

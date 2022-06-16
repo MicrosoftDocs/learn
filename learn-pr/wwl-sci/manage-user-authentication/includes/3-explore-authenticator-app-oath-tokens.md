@@ -10,7 +10,7 @@ The Authenticator app provides a high level of security, and removes the need fo
 The Authenticator app can be used as a software token to generate an OATH verification code. After entering your username and password, you enter the code provided by the Authenticator app into the sign-in interface. The verification code provides a second form of authentication. Users may have a combination of up to five OATH hardware tokens or authenticator applications, such as the Authenticator app, configured for use at any time.
 
 ## Open Authentication (OATH) tokens
-:::image type="content" source="../media/oath-token-menu.png" alt-text="Screenshot of the OATH token setup screen inside of multifactor authentication. Configure tokens using software or hardware.":::
+:::image type="content" source="../media/oath-token-menu.png" alt-text="Screenshot of the O A T H (Open Authentication) token setup screen inside of multifactor authentication. Configure tokens using software or hardware.":::
 
 OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. Azure AD doesn't support OATH HOTP, a different code generation standard. Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Azure AD generates the secret key, or seed, that's input into the app and used to generate each OTP.
 
