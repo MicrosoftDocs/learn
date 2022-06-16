@@ -1,10 +1,10 @@
-Ensuring your online business maintains the highest level security posture is paramount to ensure it is protected from cybersecurity threats. In order to be successful, businesses are becoming reliant on multicloud environments to handle the day to day operations of their basic system's infrastructure and information.
+Ensuring your online business maintains the highest level security posture is paramount to ensure it is protected from cybersecurity threats. In order to be successful, businesses are becoming reliant on multicloud environments to handle the day to day operations of their basic system's infrastructure and information. Businesses need to be alerted about potential and actual cyber-attacks as soon as they occur. Armed with this knowledge, they will have the best possible chance to protect themselves and prevent future attacks.
 
 :::image type="content" source="../media/defender-for-cloud-overview.png" alt-text="Screenshot showing a basic overview of Microsoft Defender for Cloud." border="false":::
 
 Suppose you work for Contoso, an online clothing retailer that is developing a new e-commerce website to sell its clothes. Contoso's new website will be made up of several parts, which will be hosted in a multicloud environment consisting of Microsoft's Azure, Amazon Web Services (AWS) or Google Cloud Platform (GCP). There will be backend Linux servers that are used to run the website's application. The website will also require SQL databases to store data.
 
-Contoso's website will need to ensure that its servers and data are secure. Defender for Cloud offers various plans that ensure the proper defensive measures are in place for multicloud environments. For example, in order to protect the company's website, Constoso would want to enable Defender for Cloud to protect them from cyberattacks They would need to enable both the Defender for Servers plan and the Defender for SQL plans.
+Contoso's website will need to ensure that its servers and data are secure. Defender for Cloud offers various plans that ensure the proper defensive measures are in place for multicloud environments. For example, in order to protect the company's website, Constoso would want to enable Defender for Cloud with both the Defender for Servers plan and the Defender for SQL plans enabled.
 
 Some of the protections that will be provided include:
 

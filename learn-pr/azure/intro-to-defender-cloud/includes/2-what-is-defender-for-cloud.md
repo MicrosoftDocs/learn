@@ -8,7 +8,7 @@ Defender for Cloud is a security software product that protects and secures your
 
 Defender for Cloud provides you with recommendations on how to improve your security posture via a Secure Score.
 
-The Secure Score is percentage based score that informs you of your security posture. The higher your Secure Score is, the more secure your environment is. You can increase your Secure Score by remediating recommendations associated with your environments.
+The Secure Score is percentage based KPI score that informs you of your security posture. The higher your Secure Score is, the more secure your environment is. The Secure Score is made up of several controls which contain recommendations. You can increase your Secure Score by remediating all of the recommendations in the controls associated with your environments.
 
 When you remediate recommendations, your environments are hardened, which in turn improves your security posture across Azure, AWS and GCP.  
 
@@ -31,7 +31,7 @@ All of these plans are integrated into the Defender for Cloud service and each p
 
 ## How to protect Contoso's new e-commerce website
 
-When Contoso develops its e-commerce website in order to sell clothes, it will need to provide protection for its SQL databases and servers. When you enable both the Defender for SQL plan and the Defender for Servers plan, Contoso will be able to use the Defender for Cloud dashboard, to monitor and configure protections and their workloads.
+When Contoso develops its e-commerce website in order to sell clothes, it will need to provide protection for its SQL databases and servers, among the other components. When you enable both the Defender for SQL plan and the Defender for Servers plan, Contoso will be able to use the Defender for Cloud dashboard, to monitor and configure protections and their workloads.
 
 Defender for Cloud uses threat detection to determine if there are any suspicious activities that have occurred on your resources. Based on the results, Defender for Cloud will create alerts and recommendations.
 
@@ -44,7 +44,7 @@ The Servers plan also provides protections with alerts that are meant to protect
 Some key terms you should know include:
 
 - **SOC** - Security Operations Center - Is an individual or team that deals with security issues on an organizational and technical level.
-- **Secure Score** - Is a percentage based score provided by Defender for Cloud that informs you of your security posture. The higher your Secure Score is, the more secure your environment is.
+- **Secure Score** - Is a percentage-based KPI that informs you of your security posture. The higher your Secure Score is, the more secure your environment is.
 - **Hybrid workloads** - Includes workloads that may be contained on Azure, AWS, GCP or on-premises.
 - **Regulatory compliance standards** - government regulations that different industries are required to meet. For example, NIST, PCI-DSS, ISO, HIPAA.
 - **CSPM** - Cloud Security Posture Management - a system by which organizations can identify and remediate misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure.
