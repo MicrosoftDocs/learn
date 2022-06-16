@@ -4,7 +4,7 @@ To start, install the Bicep CLI or the [Visual Studio Code Extension](https://ma
 
 The extension provides language support, IntelliSense, and linting support.
 
-:::image type="content" source="../media/bicep-extension-f990a375.png" alt-text="Screenshot of Bicep extension from VS Code marketplace.":::
+:::image type="content" source="../media/bicep-extension-f990a375.png" alt-text="Screenshot of Bicep extension from V S Code marketplace.":::
 
 
 To verify you've it installed, create a file with the `.bicep` extension and watch the language mode change in the lower right corner of VS Code.
@@ -35,7 +35,7 @@ winget install -e --id Microsoft.Bicep
 bicep --help
 ```
 
-:::image type="content" source="../media/bicep-cli-windows-aafe9494.png" alt-text="Screenshot of the Bicep CLI for Windows with the version output.":::
+:::image type="content" source="../media/bicep-cli-windows-aafe9494.png" alt-text="Screenshot of the Bicep C L I for Windows with the version output.":::
 
 
 ### Linux
