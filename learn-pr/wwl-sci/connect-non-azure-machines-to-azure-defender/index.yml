@@ -5,7 +5,7 @@ metadata:
   description: "Connect non-Azure resources to Microsoft Defender for Cloud"
   ms.date: 06/16/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect non-Azure resources to Microsoft Defender for Cloud
