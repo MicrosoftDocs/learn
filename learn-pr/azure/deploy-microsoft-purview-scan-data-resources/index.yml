@@ -38,7 +38,8 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 - azure
 - azure-purview
 units:
-- learn.deploy-microsoft-purview-scan-data-resources.introduction-and-setup
+- learn.deploy-microsoft-purview-scan-data-resources.introduction
+- learn.deploy-microsoft-purview-scan-data-resources.setup
 - learn.deploy-microsoft-purview-scan-data-resources.deploy-microsoft-purview
 - learn.deploy-microsoft-purview-scan-data-resources.deploy-microsoft-purview-excercise
 - learn.deploy-microsoft-purview-scan-data-resources.deployment-knowledge-check

@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-deploy-microsoft-purview-excercise.md)]
+  [!include[](includes/4-deploy-microsoft-purview-excercise.md)]
