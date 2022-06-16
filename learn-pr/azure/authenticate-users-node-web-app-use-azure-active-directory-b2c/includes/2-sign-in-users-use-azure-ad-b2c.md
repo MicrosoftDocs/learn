@@ -12,7 +12,7 @@ Azure AD B2C can support millions of users and billions of authentications per d
 
 ## What application types does Azure AD B2C support?
 
-Regardless of your preferred language or platform, Azure AD B2C supports authentication for various modern app architectures, which are based on industry-standard protocol, OpenID Connect. Currently, Azure AD B2C can authenticate users into the following application types:
+Regardless of your preferred language or platform, Azure AD B2C supports authentication for various modern application architectures, which are based on industry-standard protocol, OpenID Connect. Currently, Azure AD B2C can authenticate users into the following application types:
 
 * **Single-page applications (SPAs)** - JavaScript web applications that run in the browser, such as the apps written in JavaScript or frameworks like AngularJS, React and VueJs.
 * **Web applications** - Web applications that are hosted/runs on a server and accessed through a browser such as the app written in .NET, PHP, Java, Ruby, Python, and Node.js.
