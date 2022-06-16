@@ -2,7 +2,9 @@ After creating and running a pipeline to train the model, you need a second pipe
 
 ## Create and run an inference pipeline
 
-1. In Azure Machine Learning Studio, expand the left-hand pane by selecting the three lines at the top left of the screen. Click on **Jobs** (under **Assets**) to view all of the jobs you have run. Select the experiment **mslearn-auto-training**, then select the **mslearn-auto-training** pipeline. 
+1. In Azure Machine Learning studio, expand the left-hand pane by selecting the three lines at the top left of the screen. Click on **Jobs** (under **Assets**) to view all of the jobs you have run. Select the experiment **mslearn-auto-training**, then select the **mslearn-auto-training** pipeline. 
+    ![Screenshot of jobs on the left-hand menu. Select jobs and then select your experiment name.](../media/jobs-tab.png)
+
 2. Locate the menu above the canvas and click on **Create inference pipeline**. You may need to expand your screen to full and click on the three dots icon **...** on the top right hand corner of the screen in order to find **Create inference pipeline** in the menu.  
 
     ![Screenshot of location of create inference pipeline.](../media/create-inference-pipeline.png)
@@ -52,7 +54,7 @@ After creating and running a pipeline to train the model, you need a second pipe
     ![A visual inference pipeline](../media/inference-pipeline.png)
 
 11. Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster. The experiment may take a while to run.
-12. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.
+12. When the pipeline has completed, select **Job details**. In the new window, right click on the **Execute Python Script** module. Select **Preview data** and then **Result dataset** to see the predicted prices for the three cars in the input data.
 13. Close the visualization window.
 
 Your inference pipeline predicts prices for cars based on their features. Now you're ready to publish the pipeline so that client applications can use it.
