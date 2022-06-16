@@ -6,9 +6,9 @@ To scan a source, Microsoft Purview requires a set of **credentials**. For Azure
 * Service Principal
 * Account Key
 
-In this module we'll walk through how to grant the Microsoft Purview managed identity the necessary access to successfully configure and run a scan.
+In this module, we'll walk through how to grant the Microsoft Purview managed identity the necessary access to successfully configure and run a scan.
 
-1. Navigate to your Azure Data Lake Storage Gen2 account in the [Azure Portal](https://portal.azure.com/)) and select **Access Control (IAM)** from the left navigation menu.
+1. Navigate to your Azure Data Lake Storage Gen2 account in the [Azure portal](https://portal.azure.com/)) and select **Access Control (IAM)** from the left navigation menu.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.06-storage-access.png" alt-text="Screenshot of a storage account in the Azure portal, with Access Control (IAM) highlighted in the left menu.":::
 
@@ -94,7 +94,7 @@ At this point, we've registered a data source. Assets aren't written to the cata
 
 1. Navigate to **Purview Governance Portal** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
 
-    :::image type="content" source="../media/6-register-and-scan-exercise/02.80-wildcard-search.png" alt-text="Screenshot of the Microsoft Purview governance Portal with Data Catalog selected, and the search bar in the middle of the page highlighted.":::
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.80-wildcard-search.png" alt-text="Screenshot of the Microsoft Purview governance portal with Data Catalog selected, and the search bar in the middle of the page highlighted.":::
 
 1. You should be able to see a list of assets within the search results, which is a result of the scan.
 

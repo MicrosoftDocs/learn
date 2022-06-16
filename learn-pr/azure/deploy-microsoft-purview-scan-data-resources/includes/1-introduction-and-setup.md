@@ -15,7 +15,6 @@ Microsoft Purview helps chief data officers, data analysts, BI engineers, data s
 - What is the data being used for?
 - Is my data usage compliant?
 - How do I control access & use?
-- What is required by regulation X (read CELA, HIPAA, etc.)?
 - For what business purpose?
 - Where is the sensitive data?
 
@@ -49,12 +48,12 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 1. Sign in to the [Azure portal](https://portal.azure.com) with your Azure account.
 1. Select **Create a resource**.
 
-    :::image type="content" source="../media/create-storage-account/create-a-resource.png" alt-text="Screenshot of Azure Portal with the Create a Resource button selected in the Azure services menu at the top of the window.":::
+    :::image type="content" source="../media/create-storage-account/create-a-resource.png" alt-text="Screenshot of Azure portal with the Create a Resource button selected in the Azure services menu at the top of the window.":::
 
 1. Search for and select **Storage account**.
 1. Select the **Storage account** plan, and select **Create**.
 
-    :::image type="content" source="../media/create-storage-account/select-storage-account.png" alt-text="Screenshot of Azure marketplace, with storage account in the search bar, and the create menu selected under Storage account.":::
+    :::image type="content" source="../media/create-storage-account/select-storage-account.png" alt-text="Screenshot of Azure Marketplace, with storage account in the search bar, and the create menu selected under Storage account.":::
 
 1. Select an existing resource group, or create a new one.
 1. Create a unique storage account name.
@@ -104,6 +103,6 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 
 1. Once all your files are uploaded, you can exit the upload menu and select our new **raw** container.
 
-1. In the **raw** container, you should see all the files you just uploaded.
+1. In the **raw** container, you should see all the files you uploaded.
 
     :::image type="content" source="../media/add-data/all-files.png" alt-text="Screenshot of A D L S Gen 2 storage browser with the new raw container opened, and all the uploaded files listed below.":::

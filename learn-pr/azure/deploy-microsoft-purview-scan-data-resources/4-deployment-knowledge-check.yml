@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: "Data Map (Capacity Units)"
       isCorrect: true
-      explanation: "Microsoft Purview accounts come provisioned with a Data Map of at least 1 Capacity Unit, which is always on, and elastically scales based on need."
+      explanation: "Microsoft Purview accounts come provisioned with a Data Map of at least one Capacity Unit, which is always on, and elastically scales based on need."
     - content: "Scanning (vCore Hours)"
       isCorrect: false
       explanation: "Billing for automated population of the Data Map via scanning is serverless and based on the duration of scans or ingestion jobs."
@@ -54,7 +54,7 @@ quiz:
     choices:
     - content: "Data Map"
       isCorrect: false
-      explanation: "Microsoft Purview accounts come provisioned with a Data Map of at least 1 Capacity Unit, which is always on, and elastically scales based on need."
+      explanation: "Microsoft Purview accounts come provisioned with a Data Map of at least one Capacity Unit, which is always on, and elastically scales based on need."
     - content: "Scanning"
       isCorrect: true
       explanation: "Billing for automated population of the Data Map via scanning is serverless, measured in vCore Hours, and based on the duration of scans or ingestion jobs."

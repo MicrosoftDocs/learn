@@ -2,7 +2,7 @@ You were requested by Fabrikam to help establish the foundation for effective da
 
 Using Microsoft Purview as a central catalog, Frabrikam can now begin to discover a complete and comprehensive overview of their data estate by reviewing the scanned assets in Microsoft Purview and registering more data sources.
 
-If you don't want to keep the proof of concept you deployed today, you may want to considering removing the Microsoft Purview account and Storage Account you created, to ensure there are no ongoing costs. Remember, the Microsoft Purview Data Map always uses at least one capacity unit to store data and complete actions.
+If you don't want to keep the proof of concept you deployed today, you may want to consider removing the Microsoft Purview account and Storage Account you created, to ensure there are no ongoing costs. Remember, the Microsoft Purview Data Map always uses at least one capacity unit to store data and complete actions.
 
 ## Learn more
 
@@ -10,4 +10,4 @@ If you don't want to keep the proof of concept you deployed today, you may want 
 - [Create and manage collections in Microsoft Purview](/azure/purview/how-to-create-and-manage-collections)
 - [Manage data sources in Microsoft Purview](/azure/purview/manage-data-sources)
 - [Connect to Azure Data Lake Gen2 in Microsoft Purview](/azure/purview/register-scan-adls-gen2)
-- [Browse the Microsoft Purview data catalog](/azure/purview/how-to-browse-catalog)
+- [Browse the Microsoft Purview Data Catalog](/azure/purview/how-to-browse-catalog)

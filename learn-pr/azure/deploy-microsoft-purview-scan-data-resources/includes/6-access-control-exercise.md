@@ -28,7 +28,7 @@ In this unit, you'll use the [Microsoft Purview governance portal](https://web.p
 
     :::image type="content" source="../media/06.06-purview-add-data-reader.png" alt-text="Screenshot of the Microsoft Purview governance portal Add or remove data readers menu open. The search bar is highlighted, and an example user is highlighted below.":::
 
-1. Back at your root collection select **+ Add a collection**
+1. Back at your root collection, select **+ Add a collection**
 
     :::image type="content" source="../media/06.07-add-a-collection.png" alt-text="Screenshot of the Microsoft Purview governance portal root collection page, with the Add a collection button highlighted.":::
 

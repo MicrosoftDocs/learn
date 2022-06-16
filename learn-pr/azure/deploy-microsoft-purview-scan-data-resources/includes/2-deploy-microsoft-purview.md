@@ -26,7 +26,7 @@ Microsoft Purview creates a storage account and an Azure Event Hubs account as m
 
 Microsoft Purview Data Map provides the foundation for data governance and discovery in Microsoft Purview. The data map captures and organizes metadata from your data landscape so you can know what kind of data you’re storing and where.
 
-The data map is automatically kept up to date with built in scanning and classification, and it provides an interface that business users and developers can configure together to make a useable environment to discover and manage data.
+The data map is automatically kept up to date with built-in scanning and classification, and it provides an interface that business users and developers can configure together to make a useable environment to discover and manage data.
 
 The data map powers all of Microsoft Purview’s other applications by housing the information, and providing access control.
 

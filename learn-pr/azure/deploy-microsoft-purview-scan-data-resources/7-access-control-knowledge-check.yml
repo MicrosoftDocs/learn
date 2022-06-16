@@ -43,7 +43,7 @@ quiz:
       explanation: "Role assignments are applied against a collection."
     - content: "Resource Sets"
       isCorrect: false
-      explanation: "You are unable to perform role assignments against a resource set."
+      explanation: "You're unable to perform role assignments against a resource set."
     - content: "Data Sources"
       isCorrect: false
-      explanation: "You are unable to perform role assignments against a data source."
+      explanation: "You're unable to perform role assignments against a data source."

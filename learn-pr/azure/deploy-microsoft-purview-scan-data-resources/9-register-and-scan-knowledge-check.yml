@@ -4,7 +4,7 @@ title: Register and scan knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Knowledge check for registration and scanning in Microsoft Purview. These questions cover basic information to register a data source and scan it into the Microsoft Purview data map."
+  description: "Knowledge check for registration and scanning in Microsoft Purview. These questions cover basic information to register a data source and scan it into the Microsoft Purview Data Map."
   ms.date: 5/19/2022
   author: whhender
   ms.author: whhender
@@ -35,10 +35,10 @@ quiz:
       explanation: "Microsoft Purview uses Collections to organize data sources to reflect your data use landscape."
     - content: "Buckets"
       isCorrect: false
-      explanation: "Microsoft Purview does not use buckets to organize data."
+      explanation: "Microsoft Purview doesn't use buckets to organize data."
     - content: "Groups"
       isCorrect: false
-      explanation: "Microsoft Purview does not use groups to organize data."
+      explanation: "Microsoft Purview doesn't use groups to organize data."
   - content: "At which point does Microsoft Purview begin to populate the data catalog with assets?"
     choices:
     - content: "After a Microsoft Purview account is created"
@@ -50,14 +50,14 @@ quiz:
     - content: "After a Data Source has been scanned"
       isCorrect: true
       explanation: "Microsoft Purview captures technical metadata information like names, file size, and schema during scanning, and adds data assets to the catalog once scanning is complete."
-  - content: "Which of the following attributes is not automatically assigned to an asset as a result of the system-built scanning functionality?"
+  - content: "Which of the following attributes isn't automatically assigned to an asset as a result of the system-built scanning functionality?"
     choices:
-    - content: "Technical Metadata (e.g. Fully Qualified Name, Path, Schema, etc)"
+    - content: "Technical Metadata (for example, Fully Qualified Name, Path, Schema, etc.)"
       isCorrect: false
-      explanation: "Technical metadata is captured as part of the scanning process and is recorded for all assets. The kind of metadata recorded is dependant on the data type."
-    - content: "Glossary Terms (e.g. column Sales Tax is tagged with the Sales Tax glossary term)"
+      explanation: "Technical metadata is captured as part of the scanning process and is recorded for all assets. The kind of metadata recorded is dependent on the data type."
+    - content: "Glossary Terms (for example, column Sales Tax is tagged with the Sales Tax glossary term)"
       isCorrect: true
       explanation: "Business glossary terms define a business vocabulary for an organization to help bridge data gaps between departments. These are created by businesses and associated manually with data assets using tagging after an asset has been added to the catalog."
-    - content: "Classifications (e.g. column ccnum is tagged with the Credit Card Number classification)"
+    - content: "Classifications (for example, column ccnum is tagged with the Credit Card Number classification)"
       isCorrect: false
-      explanation: "Classifications and sensitivity lables are automatiacally applied to data as it is scanned, to organize your data into logical categories, and identify sensitive data in your data assets."
+      explanation: "Classifications and sensitivity labels are automatically applied to data as it is scanned, to organize your data into logical categories, and identify sensitive data in your data assets."

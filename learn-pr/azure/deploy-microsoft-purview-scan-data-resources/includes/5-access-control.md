@@ -1,12 +1,12 @@
 Now that you've created your Microsoft Purview account, we'll need to add other users and start organizing your data map.
 
-As we discussed in the last section, the Microsoft Purview Data Map is the core of your account. It keeps an up-to-date map of your data assets (tables, files, etc...) and their metadata. 
+As we discussed in the last section, the Microsoft Purview Data Map is the core of your account. It keeps an up-to-date map of your data assets (tables, files, etc.) and their metadata. 
 
 :::image type="content" source="../media/03.04-purview-data-map.png" alt-text="Microsoft Purview data map":::
 
 To build this data map, you'll register and scan your data sources into Microsoft Purview. The data map will store the metadata for these sources and create a navigable table that you can browser through.
 
-In a single corporation there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
+In a single corporation, there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
 
 ## Collections
 
