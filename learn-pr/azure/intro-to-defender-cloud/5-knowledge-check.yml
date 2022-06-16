@@ -42,13 +42,13 @@ quiz:
   questions:
   - content: "You want to use a security KPI to monitor your security posture. What Defender for Cloud mechanism should you use for this?"
     choices:
-    - content: "1.	Secure Score "
+    - content: "Secure Score"
       isCorrect: true
       explanation: ""
-    - content: "Regulatory Compliance Standards."
+    - content: "Regulatory Compliance Standards"
       isCorrect: false
       explanation: ""
-    - content: "Information Protection."
+    - content: "Information Protection"
       isCorrect: false
       explanation: ""
 
