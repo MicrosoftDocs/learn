@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.explore-teaching
+title: Explore teaching best practices
+metadata:
+  title: Explore teaching best practices
+  description: "Explore teaching best practices"
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-explore-teach.md)]

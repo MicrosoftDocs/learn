@@ -30,7 +30,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - azure-functions
 - azure-app-service
 - azure-key-vault

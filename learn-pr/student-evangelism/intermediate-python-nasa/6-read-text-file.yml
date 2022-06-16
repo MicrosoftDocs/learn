@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Import data from text files with Python
   description: Learn how to read a text file with Python.
   ms.date: 06/25/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

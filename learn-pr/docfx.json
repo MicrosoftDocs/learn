@@ -358,6 +358,19 @@
                 "dest": "modules"
             },
             {
+                "src": "startup",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "student-evangelism",
                 "files": [
                     "**/*.yml",

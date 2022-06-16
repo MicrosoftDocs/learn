@@ -59,7 +59,7 @@ As a compute engine, Azure Databricks sits at the center of your Azure-based sof
   - Scala - Apache Spark's primary language
   - Python - More commonly referred to as PySpark
   - R - [SparkR](https://spark.apache.org/docs/latest/sparkr.html) (R on Spark)
-  - Java
+  - Java - The single driver and its executors are written in Java
   - SQL - Closer to ANSI SQL 2003 compliance
     - Now running all 99 TPC-DS queries
     - New standards-compliant parser (with good error messages!)

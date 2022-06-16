@@ -33,7 +33,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 
 1. In a browser, sign in to GitHub with your GitHub account and navigate to the [Azure-Samples repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql).
 
-1. In the top-right corner of your browser, select **Fork** to create your own copy the the repository. The label for the fork in the top left should now read **\<yourID\>/serverless-fullstack-apps-azure-sql**.
+1. In the top-right corner of your browser, select **Fork** to create your own copy of the repository. The label for the fork in the top left should now read **\<yourID\>/serverless-fullstack-apps-azure-sql**.
 
 1. Below the toolbar, select the green **Code** button and copy the HTTPS Clone URL; for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
 
@@ -41,7 +41,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 
 1. In the file explorer dialog, select or create a local folder where you would like the repository to be copied to, and then select **Select Repository Location**.  Your forked repo of the Azure Samples is copied to your local folder. Visual Studio Code displays a notification that the repository was cloned.
 
-1. In the resulting popup notification, select **Open**. Visual Studio displays the folder in your the Explorer pane of you Visual Studio Code session.
+1. In the resulting popup notification, select **Open**. Visual Studio displays the folder in the Explorer pane of your Visual Studio Code session.
 
 1. Confirm that you see the same repository structure and files that you see in your GitHub fork.
 
@@ -76,7 +76,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     # Get resource group and location and random string
-    $resourceGroupName = "learn-2ad4649f-3635-4bb1-8fa0-2a9fefbc21dc"
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $location = $resourceGroup.Location
@@ -139,7 +139,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the repository toolbar, select **Settings**.
 
-1. In the Settings page navigation pane, select **Secrets** and on the Action Secrets pane, select **New repository secret**, and then enter the following items:
+1. In the Settings page navigation pane, select **Secrets**, then select **Actions**. On the Action Secrets pane, select **New repository secret**, and then enter the following items:
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
