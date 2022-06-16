@@ -1,6 +1,6 @@
 Planning your Conditional Access deployment is critical to achieving your organization's access strategy for apps and resources.
 
-In a mobile-first, cloud-first world, your users access your organization's resources from anywhere using a variety of devices and apps. As a result, focusing on who can access a resource is no longer enough. You also need to consider where the user is, the device being used, the resource being accessed, and more.
+In a mobile-first, cloud-first world, your users access your organization's resources from anywhere using various devices and apps. As a result, focusing on who can access a resource is no longer enough. You also need to consider where the user is, the device being used, the resource being accessed, and more.
 
 Azure AD Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
 
@@ -20,7 +20,7 @@ The benefits of deploying CA are:
 
 ## Understand Conditional Access policy components
 
-CA policies are if-then statements: If an assignment is met, then apply these access controls. When configuring CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
+CA policies are if-then statements: If an assignment is met, then apply these access controls. When the admin configures CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 
 :::image type="content" source="../media/create-policy.png" alt-text="Screenshot of the conditional access dialog with the create policy screen open for configuration.":::
 
@@ -49,7 +49,7 @@ For example, consider a policy where:
 
 IF user is in Group 1, THEN force MFA to access App 1.
 
-If a user not in Group 1 attempts to access the app, no “if’ condition is met, and a token is issued. Excluding users outside of Group 1 requires a separate policy to block all other users.
+If a user not in Group 1 attempts to access the app, the **“if"** condition is met, and a token is issued. Excluding users outside of Group 1 requires a separate policy to block all other users.
 
 ## Follow best practices
 
@@ -57,7 +57,7 @@ The Conditional Access framework provides you with great configuration flexibili
 
 ### Set up emergency access accounts
 
-If you misconfigure a policy, it can lock the organizations out of the Azure portal. Mitigate the impact of accidental administrator lock out by creating two or more emergency access accounts in your organization. You will learn more about emergency access accounts later in this course.
+If you misconfigure a policy, it can lock the organizations out of the Azure portal. Mitigate the accidental administrator lockout by creating two or more emergency access accounts in your organization. You will learn more about emergency access accounts later in this course.
 
 ### Set up report-only mode
 
@@ -67,7 +67,7 @@ It can be difficult to predict the number and names of users affected by common 
 - Requiring MFA.
 - Implementing sign-in risk policies.
 
-Report-only mode allows administrators to evaluate the impact of CA policies before enabling them in their environment.
+Report-only mode allows administrators to evaluate the CA policies before enabling them in their environment.
 
 ### Exclude countries from which you never expect a sign-in
 
@@ -83,8 +83,8 @@ When planning your CA policy solution, assess whether you need to create policie
 - **Require approved client applications.** Employees use their mobile devices for both personal and work tasks. For BYOD scenarios, you must decide whether to manage the entire device or just the data on it. If managing only data and access, you can require approved cloud apps that can protect your corporate data.
 - **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you are migrating an app to Azure AD, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.
 
-> [!IMPORTANT]
-> If you create a policy to block access for all users, be sure to exclude emergency access accounts and consider excluding all administrators from the policy.
+     > [!IMPORTANT]
+     > If you create a policy to block access for all users, be sure to exclude emergency access accounts and consider excluding all administrators from the policy.
 
 ## Build and test policies
 
@@ -99,7 +99,7 @@ When new policies are ready, deploy them in phases in the production environment
 
 ### Create test users
 
-Create a set of test users that reflect the users in your production environment. Creating test users enables you to verify policies work as expected before you impact real users and potentially disrupt their access to apps and resources.
+Create a set of test users that reflect the users in your production environment. Creating test users enables you to verify policies work as expected before you apply to real users and potentially disrupt their access to apps and resources.
 
 Some organizations have test tenants for this purpose. However, it can be difficult to recreate all conditions and apps in a test tenant to fully test the outcome of a policy.
 
@@ -119,4 +119,4 @@ The test plan is important to have a comparison between the expected results and
 
 ## License requirements
 
-Using this feature requires an Azure AD Premium P2 license. Customers with Microsoft 365 Business Premium licenses also have access to Conditional Access features.
+Using this feature requires an Azure AD Premium P2 license. Customers with Microsoft 365 Business Premium license also have access to Conditional Access features.

@@ -9,9 +9,9 @@ There are several key benefits to continuous access evaluation.
 - Token export to a machine outside of a trusted network can be prevented with Conditional Access location policies.
 
 ### Evaluation and revocation process flow
-:::image type="content" source="../media/user-revocation-event-flow.png" alt-text="Diagram of the process flow when a access token is revoked and a client has to re-verify access.":::
+:::image type="content" source="../media/user-revocation-event-flow.png" alt-text="Diagram of the process flow when an access token is revoked and a client has to reverify access.":::
 
-1. A continuous access evalution (CAE)-capable client presents credentials or a refresh token to Azure AD asking for an access token for some resource.
+1. A continuous access evaluation (CAE)-capable client presents credentials or a refresh token to Azure AD asking for an access token for some resource.
 2. An access token is returned along with other artifacts to the client.
 3. An Administrator explicitly revokes all refresh tokens for the user. A revocation event will be sent to the resource provider from Azure AD.
 4. An access token is presented to the resource provider. The resource provider evaluates the validity of the token and checks whether there's any revocation event for the user. The resource provider uses this information to decide to grant access to the resource or not.
