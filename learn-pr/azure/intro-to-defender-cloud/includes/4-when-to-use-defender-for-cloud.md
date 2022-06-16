@@ -41,7 +41,7 @@ The Security Posture page shows you a birds eye view of all of your environments
 
 The Recommendations page shows you all of the recommendations and security misconfigurations associated with your resources. This page offers an easy to deploy solutions or guidance on how to remediate them.
 
-:::image type="content" source="../media/recommendations-page.png" alt-text="Screenshot that shows the Recommendations page in Defender for Cloud. lightbox="../media/recommendations-page.png" border="false":::
+:::image type="content" source="../media/recommendations-page.png" alt-text="Screenshot that shows the Recommendations page in Defender for Cloud." lightbox="../media/recommendations-page.png" border="false":::
 
 By selecting a recommendation, you'll be presented with the following information:
 

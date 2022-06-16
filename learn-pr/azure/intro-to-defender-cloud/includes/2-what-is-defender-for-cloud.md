@@ -8,7 +8,7 @@ Defender for Cloud is a security software product that protects and secures your
 
 Defender for Cloud provides you with recommendations on how to improve your security posture via a Secure Score.
 
-The Secure Score is percentage based KPI score that informs you of your security posture. The higher your Secure Score is, the more secure your environment is. The Secure Score is made up of several controls which contain recommendations. You can increase your Secure Score by remediating all of the recommendations in the controls associated with your environments.
+The Secure Score is a percentage based KPI that informs you of your environment's security posture. The higher your Secure Score is, the more secure your environment is.  The higher your Secure Score is, the more secure your environment is. The Secure Score is made up of several controls which contain recommendations. You can increase your Secure Score by remediating all of the recommendations in the controls associated with your environments.
 
 When you remediate recommendations, your environments are hardened, which in turn improves your security posture across Azure, AWS and GCP.  
 
@@ -44,7 +44,7 @@ The Servers plan also provides protections with alerts that are meant to protect
 Some key terms you should know include:
 
 - **SOC** - Security Operations Center - Is an individual or team that deals with security issues on an organizational and technical level.
-- **Secure Score** - Is a percentage-based KPI that informs you of your security posture. The higher your Secure Score is, the more secure your environment is.
+- **Secure Score** - Is a percentage-based KPI that informs you of your environment's security posture. The higher your Secure Score is, the more secure your environment is.
 - **Hybrid workloads** - Includes workloads that may be contained on Azure, AWS, GCP or on-premises.
 - **Regulatory compliance standards** - government regulations that different industries are required to meet. For example, NIST, PCI-DSS, ISO, HIPAA.
 - **CSPM** - Cloud Security Posture Management - a system by which organizations can identify and remediate misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure.
