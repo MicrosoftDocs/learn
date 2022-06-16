@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/03/2021
+  ms.date: 06/16/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-knowledge-check.md)]
+  [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: ""
   questions:
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Connection strings"
       isCorrect: true
-      explanation: "That's correct. Connections strings follow the content across the swap."
+      explanation: "Correct. Connections strings follow the content across the swap."
     - content: "Custom domain names"
       isCorrect: false
-      explanation: "That's incorrect. Custom domain names do not follow the content across the swap."
+      explanation: "Incorrect. Custom domain names don't follow the content across the swap."
     - content: "Scale settings"
       isCorrect: false
-      explanation: "That's incorrect. Scale settings do not follow the content across the swap."
+      explanation: "Incorrect. Scale settings don't follow the content across the swap."
   - content: "The marketing team wants to know which web pages are most popular, at what times of day, and where the users are located. Which of the following should be recommended?"
     choices:
     - content: "Application Insights"
       isCorrect: true
-      explanation: "That's correct. Application Insights meets all the requirements. The product can also determine which pages perform best."
+      explanation: "Correct. Application Insights meets all the requirements. The product can also determine which pages perform best."
     - content: "Continuous deployment"
       isCorrect: false
-      explanation: "That's incorrect. Continuous deployment is the process of moving software that has been built and tested successfully into production."
+      explanation: "Incorrect. Continuous deployment is the process of moving software that has been built and tested successfully into production."
     - content: "Application logging"
       isCorrect: false
-      explanation: "That's incorrect. Enabling application logging provides authentication and authorization traces."
+      explanation: "Incorrect. Enabling application logging provides authentication and authorization traces."
   - content: "Which of the following is a valid automated deployment source?"
     choices:
     - content: "JavaScript code"
       isCorrect: false
-      explanation: "That's incorrect. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Incorrect. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "GitHub"
       isCorrect: true
-      explanation: "That's correct. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Correct. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "SharePoint"
       isCorrect: false
-      explanation: "That's incorrect. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Incorrect. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
