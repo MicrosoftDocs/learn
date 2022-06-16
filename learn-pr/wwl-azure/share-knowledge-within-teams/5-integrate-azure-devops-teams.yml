@@ -4,13 +4,13 @@ title: Integrate Azure DevOps and Teams
 metadata:
   title: Integrate Azure DevOps and Teams
   description: "Integrate Azure DevOps and Teams"
-  ms.date: 06/13/2022
+  ms.date: 06/16/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 60
 content: |
   [!include[](includes/5-integrate-azure-devops-teams.md)]
