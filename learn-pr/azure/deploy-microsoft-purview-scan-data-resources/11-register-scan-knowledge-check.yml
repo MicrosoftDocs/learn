@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for registration and scanning in Microsoft Purview. These questions cover basic information to register a data source and scan it into the Microsoft Purview Data Map."
-  ms.date: 5/19/2022
+  ms.date: 6/16/2022
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
