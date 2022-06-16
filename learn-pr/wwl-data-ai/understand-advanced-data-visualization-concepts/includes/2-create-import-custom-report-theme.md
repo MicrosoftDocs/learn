@@ -26,12 +26,12 @@ Using the **Customize current theme** option is a quick and easy way to create a
 
 ## Export and import themes
 
-After you’ve applied changes to your custom theme, you need to go back to the **Themes drop-down menu** and select **Save current theme** to export the theme. This will create a JSON file that can be shared with others and used for any future reports.
+After you’ve applied changes to your custom theme, you need to go back to the **Themes drop-down menu** and select **Save current theme** to export the theme. Doing this will create a JSON file that can be shared with others and used for any future reports.
 Now that your custom theme has been exported, you and others will need to import it to apply to other reports. Importing is as easy as exporting is – navigate to the **Themes drop-down menu** again, select **Browse for themes**, and choose the JSON file you just created (or that was shared with you). You'll get a notification when the theme successfully imports.
 
 ## Enterprise considerations
 
 Any changes made to this theme will need to be saved again to either overwrite the existing theme or as a new theme. Themes are local to the file as well, so changes made on someone’s copy on their computer won’t affect your copy. The theme could be saved as a **Power BI Template (.PBIT) file**, and then shared that way as well. When sharing custom themes, consider a business process to validate that the theme and/or template are being used.
 
- [!TIP]
+>[!TIP]
  Once you’ve published your report, consider [creating themes for your dashboard in the Power BI service](/power-bi/create-reports/service-dashboard-themes).
