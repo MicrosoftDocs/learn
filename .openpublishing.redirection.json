@@ -14179,6 +14179,16 @@
       "source_path": "learn-pr/wwl-azure/implement-application-configuration/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/implement-application-configuration/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-tools-track-usage-flow/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-tools-track-usage-flow/11-summary",
+      "redirect_document_id": true
     }
   ]
 }
