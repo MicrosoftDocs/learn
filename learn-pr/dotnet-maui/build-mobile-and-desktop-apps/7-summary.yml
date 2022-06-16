@@ -4,11 +4,11 @@ title: Summary
 metadata:
   unitType: summary 
   title: "Summary" 
-  description: "Summary" 
+  description: "Summary." 
   ms.date: 01/14/2022
   author: codemillmatt  
   ms.author: masoucou  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 1 
 content: |
