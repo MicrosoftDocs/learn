@@ -1,11 +1,11 @@
 
-Once you've installed and configured the .NET MAUI tools, you can use Visual Studio to build a .NET MAUI app. 
+After you install and configure the .NET MAUI tools, you can use Visual Studio to build a .NET MAUI app. 
 
 In this unit, you'll learn about the structure of the .NET MAUI template in Visual Studio. You'll use this template for creating cross-platform mobile and desktop apps.
 
 ## How to get started
 
-To create a new .NET MAUI project with Visual Studio, in the **Create a new project** dialog box select the .NET MAUI project type, and then choose the .NET MAUI App template:
+To create a new .NET MAUI project with Visual Studio, in the **Create a new project** dialog box, select the .NET MAUI project type, and then choose the .NET MAUI App template:
 
 :::image type="content" source="../media/3-create-maui-app.png" alt-text="A screenshot of the Create a new project dialog box in Visual Studio. The user has selected the .NET MAUI App template.":::
 
@@ -14,7 +14,6 @@ Follow the steps in the wizard to name the project and specify a location.
 A newly created .NET MAUI project contains the items as shown:
 
 :::image type="content" source="../media/3-new-solution.png" alt-text="A screenshot of the solution explorer of the default structure of a new .NET MAUI solution in Visual Studio.":::
-
 
 ## .NET MAUI project structure and application startup
 
@@ -197,7 +196,7 @@ The project contents include the following items:
 
 The following image illustrates the flow of control when a .NET MAUI app starts up:
 
-:::image type="content" source="../media/3-startup-flow.png" alt-text="A diagram of the flow of control when a .NET MAUI app starts up. It flows from the native specific startup, to the create MAUI app function, to finally the app object constructor. ":::
+:::image type="content" source="../media/3-startup-flow.png" border="false" alt-text="A diagram of the flow of control when a .NET MAUI app starts up. It flows from the native specific startup, to the create MAUI app function, to finally the app object constructor. ":::
 
 ## Project resources
 
