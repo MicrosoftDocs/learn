@@ -12,7 +12,7 @@ Use the following steps to update the `.env` file with new variable:
 
 1. Using Visual Studio Code (VS Code), open your Node web app that you created earlier.
 
-1. Select the `.env` file to open it, and add the following code into it:
+1. Select the `.env` file to open it, and add the following code into it while retaining the initial code:
 
     ```text
     #web apps client ID

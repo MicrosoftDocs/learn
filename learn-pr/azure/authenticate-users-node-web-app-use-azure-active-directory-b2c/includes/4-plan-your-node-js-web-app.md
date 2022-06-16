@@ -1,5 +1,5 @@
 
-You can build a web application using various languages such Node, .NET, PHP, Java and Python, but in the eCommerce organization scenario, you're launching a new Node web application. 
+You can build a web application using various programming languages such Node, .NET, PHP, Java and Python, but in the eCommerce organization scenario, you're launching a new Node web application. 
 
 Here, you'll learn Node.js concepts that will enable you to build the Node.js web application.
 
@@ -91,6 +91,8 @@ Where:
 * **METHOD** is an HTTP request method, in lowercase.
 * **PATH** is a path on the server.
 * **HANDLER** is the function to be executed when the route is matched.
+
+
 
 ## HandleBars templating language
 
