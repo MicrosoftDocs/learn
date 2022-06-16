@@ -80,7 +80,7 @@ Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
     ```dotnetcli
     pushd src/Web/WebSPA && \
-        dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore --version 4.0.0 && \
+        dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore --version 5.0.0 && \
         popd
     ```
 

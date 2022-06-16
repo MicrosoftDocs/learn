@@ -1,8 +1,5 @@
 In this exercise, you'll investigate ring-based deployment.
 
-> [!NOTE]
-> *Before starting this exercise, make sure you've done the steps in the prerequisites section and the previous exercises.*
-
 ## Steps
 
 Let's now look at how a release pipeline can stage features using ring-based deployments.

@@ -14114,6 +14114,51 @@
       "source_path": "learn-pr/reactors/blockchain-create-ui-decentralized-apps/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/blockchain-ethereum-networks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/2-design-implement-star-schema.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/2-design-star-schema",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/3-exercise-create-star-schema.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/4-design-implement-snowflake-schema.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/5-exercise-create-snowflake-schema.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/6-design-implement-time-dimension-table.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/7-exercise-create-populate-time-dimension-table.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-multidimensional-schema-to-optimize-analytical-workloads/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-multidimensional-schema-to-optimize-analytical-workloads/8-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/5-explore-multi-configuration-multi-agent.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-release-pipeline-devops/",
+      "redirect_document_id": false
     }
   ]
 }
