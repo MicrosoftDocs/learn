@@ -77,7 +77,7 @@ Create another secret for the name of the resource group with a name such as `AZ
     > The first part of the workflow defines the trigger and a name. The rest defines a job and uses a few tasks to check out the code, sign in to Azure, and deploy the Bicep file.
 3.  Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit a new file**. :::image type="content" source="../media/github-commit-action-ee701105.jpg" alt-text="Screenshot of GitHub commits a new file to the main branch.":::
     
-4.  Navigate back to the Actions tab and select the newly created action that should be running. :::image type="content" source="../media/github-action-run-caf8225d.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
+4.  Navigate back to the Actions tab and select the newly created action that should be running. :::image type="content" source="../media/github-action-run-a883eafa.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
     
 5.  Monitor the status and when the job is finished, check the Azure portal to see if the storage account is being created. :::image type="content" source="../media/github-success-job-eb496fe9.jpg" alt-text="Screenshot of GitHub action successful executed job.":::
     
