@@ -92,6 +92,8 @@ Where:
 * **PATH** is a path on the server.
 * **HANDLER** is the function to be executed when the route is matched.
 
+
+
 ## HandleBars templating language
 
 Handlebars is a templating engine. You use it to build your app's UI components. A templating engine takes a static HTML file, fills it with the data on the server side, and then sends it as an ordinary HTML file to the client such as a browser. To use handlebars in express, you need to store HTML code into a `.hbs` extension in the `views` folder in the source directory as HandleBars looks for the files in the views folder.

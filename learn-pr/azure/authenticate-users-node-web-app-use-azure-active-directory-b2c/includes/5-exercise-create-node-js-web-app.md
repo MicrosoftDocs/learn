@@ -8,21 +8,6 @@ Now that you've understood the important Node.js concepts that you need to creat
 
 1. From your VS Code editor terminal, run `npm init -y` command. This command creates a default package.json file for your Node.js project.
 
-1. Create more folders and files to achieve the following directory structure:
-
-    ```text
-        auth-app/
-        ├── index.js
-        └── package.json
-        └── .env
-        └── views/
-            └── layouts/
-                └── main.hbs
-            └── signin.hbs
-    ```
-
-The `views` folder will hold Handlebars files for the app's UI elements.
-
 ## Install app dependencies
 
 From your VS Code editor terminal, run the following commands:
@@ -46,7 +31,11 @@ The Node web app uses HandleBars to implement the UI components.
 
 Use the following steps to build the web app's UI:
 
-1. In VS Code, open the `main.hbs` file, add the following code:
+1. In the `auth-app` folder, create `views` folder. The `views` folder will hold Handlebars files for the app's UI elements.
+
+1. In the `views` folder, create `layouts` folder and `signin.hbs` file. In the `layouts` create `main.hbs` file.
+
+1. In VS Code, open the `main.hbs` file, and add the following code:
 
     ```html
     <!DOCTYPE html>
@@ -90,7 +79,7 @@ Use the following steps to build the web app's UI:
 
     The `main.hbs` file implements the UI built with the Bootstrap 5 CSS framework. We use `showSignInButton` boolean variable to control what a user sees when they sign in or sign out, but this feature will be clear once we add authentication to the web app.
 
-1. In VS Code, open the `signin.hbs` file, add the following code:
+1. In VS Code, open the `signin.hbs` file, and add the following code:
 
     ```html
     <div class="col-md-3" style="margin:auto">
@@ -108,14 +97,17 @@ Use the following steps to build the web app's UI:
 
 ## Add environment variables
 
-To keep app configurations, which can change from one environment to another, we separate them from the application's source code, so we put it in a separate file.  
+To keep app configurations, which can change from one environment to another, we separate them from the application's source code, so we put it in a separate file:
 
-In VS Code, open the `.env` file, add the following code:
+1. In the `auth-app` folder, create `.env` file.
+
+1. In VS Code, open the `.env` file, and add the following code:
 
 ```text
 #HTTP port
 SERVER_PORT=3000
 #session secret
+#This is the secret used to sign the session ID cookie
 SESSION_SECRET=sessionSecretHere
 ```
 
@@ -193,6 +185,19 @@ In the `index.js` file, we've added the following code components:
 
 * Start the express server to listen on the port number specified in the `.env` file.
 
+At this point, your project should've a directory structure like the one shown below:
+
+```text
+    auth-app/
+    ├── index.js
+    └── package.json
+    └── .env
+    └── views/
+        └── layouts/
+            └── main.hbs
+        └── signin.hbs
+```
+
 ## Run Node web app
 
 At this point, we can start our express server and access the web app in the browser:
@@ -203,4 +208,4 @@ At this point, we can start our express server and access the web app in the bro
 
     :::image type="content" source="../media/tutorial-login-page.png" alt-text="Screenshot of a Node web app sign in page.":::
 
-At the moment, the web app can't authenticate users, so if you select **Sign in** button, you see a message, **We haven't configure authentication!** In the next unit, we'll configure the web app to authenticate users.
+At the moment, the web app can't authenticate users, so if you select **Sign in** button, you see a message, **We haven't configured authentication!** In the next unit, we'll configure the web app to authenticate users.

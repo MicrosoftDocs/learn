@@ -6,7 +6,7 @@ Here you'll learn about the components that Azure AD B2C uses to support user au
 
 ## Role of Azure Active Directory B2C
 
-Azure Active Directory B2C (Azure AD B2C) is a white-label authentication solution for Microsoft. It's part of the Microsoft identity platform. It provides authentication capabilities by allowing customers to access organization apps using by creating new accounts or using existing credentials, including support for the most common social identity providers. If you're building a web application, instead of building authentication capability within the web application, you delegate this function to Azure AD B2C. The authentication scenarios include sign up, sign in, single sign on, sign out, forgot password, change password, multifactor authentication, profile editing and progressive profiling.
+Azure Active Directory B2C (Azure AD B2C) is a white-label authentication solution for Microsoft. It's part of the Microsoft identity platform. It provides authentication capabilities by enabling organizations to sign in users into customer facing apps. Customers do this by creating new accounts or using existing credentials, including the most common social identity providers. If you're building a web application, instead of building authentication capability within the web application, you delegate this function to Azure AD B2C. The authentication scenarios include sign up, sign in, single sign on, sign out, forgot password, change password, multifactor authentication, profile editing and progressive profiling.
 
 Azure AD B2C can support millions of users and billions of authentications per day. It also takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks.  
 
@@ -45,14 +45,20 @@ Azure AD B2C supports two types of policies:
 Azure AD B2C has the following types of *user flows* generally available:
 
 * **Sign up and sign in** - A combined sign in and sign up, which enables a user to create an account or sign in to their account. It also supports *forgot password* if you enable *Self-service password reset* feature.
+
 * **Sign in** - Enables a user to sign in to their account.
+
 * **Sign up** - Enables a user to create a new account.
+
 * **Password reset** - Enables a user to create a new password after verifying their email.
-* **Profile editing** - Enables a user to update their details.
+
+* **Profile editing** - Enables a user to update their profile details.
+
+* **Sign in using resource owner password credentials (ROPC)** - Enables a user with a local account to sign in directly in native applications as long there isn't any interruption to the authentication flow.
 
 ## Support different identity providers
 
-An identity provider is the method you use to allow users to be authenticated into your application. Users can create an account that is local to Azure AD B2C by using their email address or phone number, or use their existing social identities such as Facebook or LinkedIn. Azure AD B2C provides a list of identity providers you can choose from or you can add your own OpenID Connect identity provider.
+An identity provider is the method you use to allow users to be authenticated into your application. Users can create an account that is local to Azure AD B2C by using their email address, username, user ID or phone number, or use their existing social identities such as Facebook or LinkedIn. Azure AD B2C provides a list of identity providers you can choose from or you can add your own OpenID Connect identity provider.
 
 :::image type="content" alt-text="Screenshot of identity provider for Azure A D B 2 C." source="./../media/identity-providers.png" :::
 
