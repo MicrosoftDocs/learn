@@ -33,7 +33,7 @@ In this exercise, you will upload the Excel workbook containing Rosie's data to 
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade.xlsx in OneDrive." lightbox="../media/lemonade-xlsx.png":::
+    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in OneDrive." lightbox="../media/lemonade-xlsx.png":::
 
 ### Open the workbook in Excel Online
 
@@ -90,7 +90,7 @@ In this exercise, you will use formulas to create derived columns that extend th
 
     This inserts a new **Column1** column between the **Date** and **Day** columns as shown here:
 
-    :::image type="content" source="../media/column-1.png" alt-text="Screenshot of new Column1 added to the worksheet." lightbox="../media/column-1.png":::
+    :::image type="content" source="../media/column-1.png" alt-text="Screenshot of new Column 1 added to the worksheet." lightbox="../media/column-1.png":::
 
 3. In cell **B1**, rename **Column1** to **Month**. Then with cell **B2**selected, in the ***fx*** bar above the data, enter the following formula:
 
@@ -114,11 +114,11 @@ In this exercise, you will use formulas to create derived columns that extend th
 
 5. Click the **I** column header to select the entire column, and then on the **Home** tab of the ribbon, in the **Number** section, in the **\$** drop-down list, select **\$ English (United States)**. This formats the revenue data as US dollars:
 
-    :::image type="content" source="../media/format-revenue.png" alt-text="Screenshot of US dollar format applied to revenue data." lightbox="../media/format-revenue.png":::
+    :::image type="content" source="../media/format-revenue.png" alt-text="Screenshot of U S dollar format applied to revenue data." lightbox="../media/format-revenue.png":::
 
 6. Scroll down to the bottom of the table of data, select cell **I367** (under the **Revenue** column). Then on the **Home** tab of the ribbon, in the **Editing** section, in the **AutoSum** (**&Sigma;**) drop-down menu, click **&Sigma; Sum**.
 
-    :::image type="content" source="../media/autosum.png" alt-text="Screenshot showing the AutoSum menu in Excel." lightbox="../media/autosum.png":::
+    :::image type="content" source="../media/autosum.png" alt-text="Screenshot showing the Auto Sum menu in Excel." lightbox="../media/autosum.png":::
 
 
     This enters the following formula:
