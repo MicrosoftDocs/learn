@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "Design and implement a secure hybrid identity environment."
       isCorrect: true
-      explanation: "A secure hybrid identity environment securely integrates Windows Sever Active Directory with Azure Active Directory."
+      explanation: "A secure hybrid identity environment securely integrates Windows Server Active Directory with Azure Active Directory."
     - content: "Use familiar Azure services and management capabilities, regardless of where they live."
       isCorrect: false
       explanation: "This solution does not address the integration of Windows Server AD with Azure AD."
