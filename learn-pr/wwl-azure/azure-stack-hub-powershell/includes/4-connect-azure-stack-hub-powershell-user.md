@@ -10,7 +10,7 @@ To get setup:
 Make sure you replace the script variables with values listed below for your Azure Stack Hub configuration:
 
  -  **Azure AD tenant name**: The name of your Azure AD tenant used to manage Azure Stack Hub. For example, yourdirectory.onmicrosoft.com.
- -  **Azure Resource Manager endpoint**: For Azure Stack Development kit, this value is set to https://management.local.azurestack.external. To get this value for Azure Stack Hub integrated systems, contact your service provider.
+ -  **Azure Resource Manager endpoint**: For Azure Stack Development kit, this value is set to `https://management.local.azurestack.external`. To get this value for Azure Stack Hub integrated systems, contact your service provider.
 
 ### Connect to Azure Stack Hub with Azure AD.
 

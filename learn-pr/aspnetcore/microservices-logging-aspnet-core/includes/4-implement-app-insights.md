@@ -86,8 +86,8 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
     ```dotnetcli
     pushd src/Services/Catalog/Catalog.API/ && \
-        dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1 && \
-        dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1 && \
+        dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.20.1 && \
+        dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 2.0.2 && \
         dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0 && \
         popd
     ```
@@ -175,7 +175,7 @@ In the previous section, you modified the catalog service to enable Application 
 1. Redeploy the coupon and ordering services configured with their new `APPINSIGHTS_INSTRUMENTATIONKEY` environment variables:
 
     ```bash
-    deploy/k8s/deploy-application.sh --registry eshopdev --charts coupon,ordering
+    deploy/k8s/deploy-application.sh --registry eshoplearn --charts coupon,ordering
     ```
 
     The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images. As in the previous step, the `kubectl get pods` command is executed:
