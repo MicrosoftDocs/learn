@@ -1,90 +1,92 @@
-Logging and monitoring are a critical requirement when trying to identify, detect, and mitigate security threats. A proper logging policy can ensure you can determine when a security violation has occurred. Also, the policy can potentially identify the culprit responsible. Azure Activity logs provide data about both external access to a resource and diagnostic logs, which provide information about the operation of that specific resource.
+Logging and monitoring are critical requirements when you try to identify, detect, and mitigate security threats. A proper logging policy can ensure that you can determine when a security violation has occurred. The policy also can potentially identify who is responsible. Azure activity logs provide data about external access to a resource, and they provide diagnostic logs, so you have information about the operation of a specific resource.
 
 > [!NOTE]
-> An Azure activity log is a subscription log that provides insight into subscription-level events that have occurred in Azure. Using the activity log, you can determine the what, the who, and the when for any write operations taken on the resources in your subscription.
+> An Azure activity log is a subscription log that provides insight into subscription-level events that occurred in Azure. By using the activity log, you can determine the what, who, and when for any write operations that occurred on the resources in your subscription.
 
 ## Logging policy recommendations
 
-See the following security recommendations to set logging and monitoring policies on your Azure subscriptions. Each recommendation includes a procedure to follow in the Azure portal. Perform each procedure with your own subscription using your own resources to validate the security policy. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+The following sections describe the security recommendations in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0 to set logging and monitoring policies on your Azure subscriptions. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
 ### Ensure that a diagnostic setting exists - Level 1
 
-The Azure Activity Log provides insight into subscription-level events that have occurred in Azure. This log includes a range of data, from Azure Resource Manager operational data to updates on Service Health events. The Activity Log was previously known as Audit Logs or Operational Logs, since the Administrative category reports control-plane events for your subscriptions.
-There's a single Activity Log for each Azure subscription. It provides data about the operations on a resource from the outside. Diagnostic Logs are emitted by a resource and provide information about the operation of that resource. You must enable diagnostic settings for each resource.
+The Azure activity log provides insight into subscription-level events that occurred in Azure. This log includes a range of data, from Azure Resource Manager operational data to updates on Azure Service Health events. The activity log previously was called an *audit log* or an *operational log*. The Administrative category reports control-plane events for your subscriptions.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+Each Azure subscription has a single activity log. The log provides data about resource operations that originated outside Azure. 
 
-1. On the Azure **home** page, in the top search bar, search for and select *Monitor*. The **Monitor | Overview** pane displays.
+Diagnostic logs are emitted by a resource. Diagnostic logs provide information about the operation of the resource. You must enable diagnostic settings for each resource.
 
-1. In the left menu pane, select **Activity log**. The **Monitor | Activity log** pane displays.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Monitor**.
 
-1. Ensure that a **Diagnostic setting** is set. Select **Export activity logs**.
+1. In the left menu, select **Activity log**.
 
-1. If there are no settings, select your subscription, and then select **Add Diagnostic setting**.
+1. In the **Activity log** menu bar, select **Export activity logs**.
 
-    :::image type="content" source="../media/6-create-a-logging-and-monitoring-baseline/azure-monitor-diagnostic-settings-add-setting.png" alt-text="Screenshot that shows the Diagnostic settings pane and 'Add diagnostic setting' selected.":::
+1. If no settings are shown, select your subscription, and then select **Add diagnostic setting**.
 
-1. Enter a name for your diagnostic setting, and then configure the log categories and destination details.
+    :::image type="content" source="../media/azure-logging-monitoring/add-diagnostic-setting.png" alt-text="Screenshot that shows the Diagnostic settings pane and Add diagnostic setting selected.":::
 
-1. On the top menu bar, select **Save**.
+1. Enter a name for your diagnostic setting, and then select log categories and destination details.
 
-    :::image type="content" source="../media/6-create-a-logging-and-monitoring-baseline/azure-monitor-configure-diagnostic-setting.png" alt-text="Screenshot that shows the Diagnostic setting creation pane.":::
+1. In the menu bar, select **Save**.
 
-### Create an activity log alert for "Creating a policy assignment" - Level 1
+Here's an example of how to create a diagnostic setting:
 
- Monitoring when a policy is created illustrates who has that privilege. This might help detect a breach or misconfiguration.
+:::image type="content" source="../media/azure-logging-monitoring/configure-diagnostic-setting.png" alt-text="Screenshot that shows the Diagnostic settings creation pane and options selected.":::
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+### Create an activity log alert for creating a policy assignment - Level 1
 
-1. On the Azure **home** page, in the top search bar, search for and select *Monitor*. The **Monitor | Overview** pane displays.
+If you monitor policies that are created, you can see which users can create policies. The information might help you detect a breach or misconfiguration of your Azure resources or subscription.
 
-1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane displays.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Monitor**.
 
-1. On the top menu bar, select the **Create** drop-down, and then select **Alert rule**. The **Create alert rule** pane displays.
+1. In the left menu, select **Alerts**.
 
-1. Select **Select scope**. The **Select a resource** pane displays.
+1. In the **Alerts** menu bar, select the **Create** dropdown, and then select **Alert rule**.
 
-1. Select **Policy assignment (policyAssignments)** from the **Filter by resource type** dropdown list.
+1. In the **Create an alert rule** pane, select **Select scope**.
 
-1. Select **Done**.
+1. In the **Select a resource** pane, in the **Filter by resource type** dropdown, select **Policy assignment (policyAssignments)**.
 
-### Create an activity log alert for "Creating, updating, or deleting a Network Security Group" - Level 1
-
-By default, no monitoring alerts are created when NSGs are created, updated, or deleted. Changing or deleting a security group can allow internal resources to be accessed from improper sources, or for unexpected outbound network traffic.
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-1. On the Azure **home** page, in the top search bar, search for and select *Monitor*. The **Monitor | Overview** pane displays.
-
-1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane displays.
-
-1. On the top menu bar, select the **Create** drop-down, and then select **Alert rule**. The **Create alert rule** pane displays.
-
-1. Select **Select scope**. The **Select a resource** pane displays.
-
-1. Select **Network security groups** from the **Filter by resource type** dropdown list.
+1. Select a resource to monitor.
 
 1. Select **Done**.
 
-### Create an activity log alert for "Creating or updating an SQL Server firewall rule" - Level 1
+   :::image type="content" source="../media/azure-logging-monitoring/add-alert-resource.png" alt-text="Screenshot that shows adding a monitoring alert for an Azure resource." lightbox="../media/azure-logging-monitoring/add-alert-resource.png":::
 
-Monitoring for **Create or update SQL Server Firewall Rule** events provides insight into network access changes, and might reduce the time it takes to detect suspicious activity.
+1. To finish creating the alert, complete the steps that are described in [Create an alert rule from the Azure Monitor Alerts pane](/azure/azure-monitor/alerts/alerts-activity-log#create-an-alert-rule-from-the-azure-monitor-alerts-pane).
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+### Create an activity log alert for creating, updating, or deleting a network security group - Level 1
 
-1. On the Azure **home** page, in the top search bar, search for and select *Monitor*. The **Monitor | Overview** pane displays.
+By default, no monitoring alerts are created when NSGs are created, updated, or deleted. Changing or deleting a security group can allow internal resources to be accessed from improper sources or for unexpected outbound network traffic.
 
-1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane displays.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Monitor**.
 
-1. On the top menu bar, select the **Create** drop-down, and then select **Alert rule**. The **Create alert rule** pane displays.
+1. In the left menu, select **Alerts**.
 
-1. Select **Select scope**. The **Select a resource** pane displays.
+1. In the **Alerts** menu bar, select the **Create** dropdown, and then select **Alert rule**.
 
-1. Select **SQL servers** from the **Filter by resource type** dropdown list.
+1. In the **Create an alert rule** pane, select **Select scope**.
+
+1. In the **Select a resource** pane, in the **Filter by resource type** dropdown, select **Network security groups**.
 
 1. Select **Done**.
 
-    :::image type="content" source="../media/6-sql-server.png" alt-text="Screenshot of Select SQL servers resource." lightbox="../media/6-sql-server.png#lightbox":::
+1. To finish creating the alert, complete the steps that are described in [Create an alert rule from the Azure Monitor Alerts pane](/azure/azure-monitor/alerts/alerts-activity-log#create-an-alert-rule-from-the-azure-monitor-alerts-pane).
 
-    > [!TIP]
-    > Remember to select **Save** if you make changes to any of the settings.
+### Create an activity log alert for creating or updating a SQL Server firewall rule - Level 1
+
+Monitoring for events that create or update a SQL Server firewall rule provides insight into network access changes, and it might reduce the time it takes to detect suspicious activity.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Monitor**.
+
+1. In the left menu, select **Alerts**.
+
+1. In the **Alerts** menu bar, select the **Create** dropdown, and then select **Alert rule**.
+
+1. In the **Create alert rule** pane, select **Select scope**.
+
+1. In the **Select a resource** pane, in the **Filter by resource type** dropdown, select **SQL servers**.
+
+1. Select **Done**.
+
+1. To finish creating the alert, complete the steps that are described in [Create an alert rule from the Azure Monitor Alerts pane](/azure/azure-monitor/alerts/alerts-activity-log#create-an-alert-rule-from-the-azure-monitor-alerts-pane).
