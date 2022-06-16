@@ -1,78 +1,41 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The Microsoft identity platform performs identity and access management (IAM) only for registered applications. To securely authenticate and authorize users into your application using the identity platform, you start by registering your application in the Azure portal. 
 
-    Goal: briefly summarize the key skill this unit will teach
+## Create your Python Flask web application
 
-    Heading: none
+To complete the rest of the module, you'll need to create a Python Flask web app project. If you prefer using a completed code sample for learning, download the [Python Flask web app sample](https://github.com/Azure-Samples/ms-identity-docs-code-python) from GitHub. 
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+If you prefer following the module and building the Python Flask web app by yourself, follow the steps below:
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+1. Create a folder to host your application and name it python-flask-webapp, for example.
+1. Navigate to your project directory and create two files named app.py and default_settings.py.
+1. At the end of the module, your project's file and directory structure should look similar to this.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+```
+python-webapp/
+├── templates
+│   ├── 
+│   ├── 
+├── app.py
+├── default_settings.py
+│── requirements.txt
+```
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+## Install the authentication library
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Install the MSAL for Python package. Open your terminal at the project directory and run the following command:
+`pip install msal`
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Register your application in the Azure portal
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+Registering your application establishes a trust relationship between your application and the identity provider, the Microsoft identity platform. Follow these steps to create the app registration:
 
-    Goal: State concisely what's covered in this unit
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../../media/common/portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
+1. Search for and select **Azure Active Directory**.
+1. Under **Manage**, select **App registrations** > **New registration**. 
+1. Enter a **Name** for your application, for example `python-flask-webapp`. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time and multiple app registrations can share the same name.
+1. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**
+1. Don't enter anything for Redirect URI (optional). You'll configure a redirect URI in the next section
+1. Select **Register** to complete the initial app registration.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+When registration finishes, the Azure portal displays the app registration's Overview pane. You see the automatically generated Application (client) ID, a value that uniquely identifies your application in the Microsoft identity platform.
