@@ -37,3 +37,6 @@ units:
 - learn.wwl.specify-security-requirements-for-applications.summary
 badge:
   uid: learn.wwl.specify-security-requirements-for-applications.badge
+subjects:
+- security
+- architecture
