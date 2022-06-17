@@ -62,12 +62,12 @@ Now, let's label the fields in the example forms:
 
 1. In the **Label data** page, in the top-right of the page, select **+**, and then select **Field**.
 
-    :::image type="content" source="../media/4-add-label.png" alt-text="Screen shot showing how to add a new label in Forms Recognizer Studio." lightbox="../media/4-add-label.png":::
+    :::image type="content" source="../media/4-add-label.png" alt-text="Screenshot showing how to add a new label in Forms Recognizer Studio." lightbox="../media/4-add-label.png":::
 
 1. Type **FirstName** and then press <kbd>Enter</kbd>.
 1. In the document, select **John** and then select **FirstName**.
 
-    :::image type="content" source="../media/4-label-first-name.png" alt-text="Screen shot showing how to add a new label in Forms Recognizer Studio." lightbox="../media/4-label-first-name.png":::
+    :::image type="content" source="../media/4-label-first-name.png" alt-text="Screenshot showing how to complete a new label in Forms Recognizer Studio." lightbox="../media/4-label-first-name.png":::
 
 1. In the top-right of the page, select **+**, and then select **Field**.
 1. Type **LastName** and then press <kbd>Enter</kbd>.

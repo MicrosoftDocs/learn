@@ -17,7 +17,7 @@ If you prefer to use a Graphical User Interface (GUI), you can create a composed
 1. Under **My Projects** select one of the custom models and then in the left navigation, select **Models**.
 1. In the **Models** list, select all the models that you want to include in the new composed model, and then select **Compose**.
 
-    :::image type="content" source="../media/3-create-composed-model.png" alt-text="Screenshot showing how to compose a model in Forms Recognizer Studio." lightbox="../media/4-create-composed-model.png":::
+    :::image type="content" source="../media/3-create-composed-model.png" alt-text="Screenshot showing how to compose a model in Forms Recognizer Studio." lightbox="../media/3-create-composed-model.png":::
 
 1. In the **Compose a new model** dialog, enter a **Model ID** and a **Description** for the composed model and then select **Compose**.
 
