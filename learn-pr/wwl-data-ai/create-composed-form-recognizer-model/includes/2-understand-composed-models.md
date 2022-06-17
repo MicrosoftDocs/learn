@@ -63,7 +63,8 @@ There are some restrictions on the models that can be added to the same composed
 
 - The custom compose model operation is only available for custom models that were trained with labels. If you try to add an unlabeled model to a composed model, an error is returned.
 - In versions of the Forms Recognizer API earlier than 2021-06-30-preview, only models trained under the same version of the API could be composed.
-- After version 2021-06-30-preview, models can be composed even if they have different API version numbers.
+- After version 2021-06-30-preview, custom template models can be composed with other template model even if they have different API version numbers.
+- Custom neural models can be composed with other custom neural models but not with custom template models.
 
 ## Learn more
 
