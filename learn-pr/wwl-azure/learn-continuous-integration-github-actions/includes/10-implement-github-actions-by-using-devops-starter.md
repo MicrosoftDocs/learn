@@ -27,5 +27,5 @@ During this lab, you'll complete the following exercises:
  -  Exercise 1: Create a DevOps Starter project.
  -  Exercise 2: Remove the Azure lab resources.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Image of the button to launch the exercise.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_Implementing_GitHub_Actions_by_using_DevOps_Starter.html)
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
+](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_L07_Implementing_GitHub_Actions_by_using_DevOps_Starter.html)

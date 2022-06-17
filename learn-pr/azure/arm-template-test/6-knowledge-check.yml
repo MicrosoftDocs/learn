@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 05/21/2021
-  author: softchris
+  ms.date: 06/07/2022
+  author: ttorble
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -18,37 +18,37 @@ quiz:
     choices:
     - content: A parameter in your template isn't being used.
       isCorrect: true
-      explanation: The ARM-TTK detects unused parameters.
+      explanation: Correct. The ARM-TTK detects unused parameters.
     - content: The name you've chosen for a storage account has already been taken.
       isCorrect: false
-      explanation: The ARM-TTK doesn't validate whether resource names are already taken. Validating your deployment, or running the what-if command, will identify these issues.
+      explanation: Incorrect. The ARM-TTK doesn't validate whether resource names are already taken. Validating your deployment, or running the what-if command, will identify these issues.
     - content: A resource will be deleted if you run the deployment in complete mode.
       isCorrect: false
-      explanation: The what-if operation detects changes to resources, including resources that will be deleted.
+      explanation: Incorrect. The what-if operation detects changes to resources, including resources that will be deleted.
   - content: "How would you run a single test by using the test toolkit?"
     choices:
     - content: "Use the parameter `-TestName` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
       isCorrect: false
-      explanation: "The parameter is called `-Test`."
+      explanation: "Incorrect. The parameter is called `-Test`."
     - content: "Use the parameter `-Test` and specify the test as number between 1 and *n*, where *n* is the number of tests."
       isCorrect: false
-      explanation: "You can't use a number."    
+      explanation: "Incorrect. You can't use a number."    
     - content: "Use the parameter `-Test` and specify the test name with double quotation marks: \"Template Should Not Contain Blanks\"."
       isCorrect: true
-      explanation: "The answer is correct."
+      explanation: "Correct. The answer is correct."
     - content: "Use the `-Run-Only` parameter and specify which test with double quotation marks."
       isCorrect: false
-      explanation: "The parameter is called `-Test`."
+      explanation: "Incorrect. The parameter is called `-Test`."
   - content: |
       You are asked to create a new test for the ARM-TTK to detect whenever an API version is older than a specified value.
       Which of these helper cmdlets can you use to inspect the resource definitions?
     choices:
     - content: "`Test-AzTemplate`"
       isCorrect: false
-      explanation: The `Test-AzTemplate` cmdlet executes the ARM-TTK tests, but you don't use it to inspect resource definitions within your own custom tests.
+      explanation: Incorrect. The `Test-AzTemplate` cmdlet executes the ARM-TTK tests, but you don't use it to inspect resource definitions within your own custom tests.
     - content: "`Find-JsonContent`"
       isCorrect: true
-      explanation: You can use the `Find-JsonContent` cmdlet to search for attributes within the resource definition, including the `apiVersion`.
+      explanation: Correct. You can use the `Find-JsonContent` cmdlet to search for attributes within the resource definition, including the `apiVersion`.
     - content: "`Inspect-AzResourceDefinition`"
       isCorrect: false
-      explanation: This isn't a real helper cmdlet.
+      explanation: Incorrect. This isn't a real helper cmdlet.
