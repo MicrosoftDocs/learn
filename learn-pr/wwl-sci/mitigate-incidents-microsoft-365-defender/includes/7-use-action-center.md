@@ -23,7 +23,7 @@ The Action Center consists of pending and historical items:
 
 Select Automated Investigations, then Action center.
 
-:::image type="content" source="../media/action-center.png#lightbox" alt-text="Screen shot of the Microsoft 365 Defender Action center."](../media/action-center.png) ":::
+:::image type="content" source="../media/action-center.png" alt-text="Screen shot of the Microsoft 365 Defender Action center.":::
 
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be Malicious, Suspicious, or No threats found depending on:
 
