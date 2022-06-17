@@ -32,7 +32,7 @@ In this task, you’ll create a virtual machine using the Azure portal.
     Resource group
   :::column-end:::
   :::column:::
-    &lt;rng&gt;&lt;/rng&gt;
+    &lt;rng&gt;\[sandbox resource group name\]&lt;/rng&gt;
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -102,7 +102,7 @@ Once the deployment is created, you can verify that Azure created not only a VM,
 
 1.  Select Home
 2.  Select Resource groups
-3.  Select the &lt;rgn&gt;&lt;/rgn&gt; resource group
+3.  Select the &lt;rgn&gt;\[sandbox resource group name\]&lt;/rgn&gt; resource group
 
 You should see a list of resources in the resource group. The storage account and virtual network are associated with the Learn sandbox. However, the rest of the resources were created when you created the. By default, Azure gave them all a similar name to help with association and grouped them in the same resource group.
 

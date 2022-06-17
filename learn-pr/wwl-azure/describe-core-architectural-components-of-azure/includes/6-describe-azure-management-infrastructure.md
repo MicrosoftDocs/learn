@@ -1,6 +1,4 @@
-# Azure management Infrastructure
-
-The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts. Understanding the hierarchical organization will help you plan your projects and products within Azure.
+The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts. Understanding the hierarchical organization will help you plan your projects and products within Azure.<br>
 
 ## Describe Azure resources and resource groups
 

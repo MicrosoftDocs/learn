@@ -100,3 +100,5 @@ exit
 ## Use the Azure portal
 
 You’ll also have the option of using the Azure portal during sandbox exercises. It’s important that you use the link provided in the exercise to access the Azure portal to ensure the exercise remains free for you to complete.
+
+Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to check things out. Once in the portal, you can see all the services Azure has ot offer as well as look around at resource groups and so on.
