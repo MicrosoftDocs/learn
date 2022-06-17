@@ -21,8 +21,10 @@ To complete these exercises, you must have:
 1. Accept the default installation folder or select **Change** to specify a location.
 1. The Setup type dialog box is displayed, select **Complete**, and then select **Next**.
 1. The **Ready to Install the Program** dialog box is displayed. Check the installation settings, and then select **Install**. The program installs.
+    
     :::image type="content" source="../media/mysql-workbench-ready-install.png" alt-text="Screenshot showing the MySQL Workbench ready to install program page." lightbox="../media/mysql-workbench-ready-install.png":::
 1. When the wizard has completed the installation, ensure the **Launch MySQL Workbench now** is selected, and select **Finish**.
+    
     :::image type="content" source="../media/mysql-workbench-wizard-finished.png" alt-text="Screenshot showing the MySQL Workbench wizard complete page." lightbox="../media/mysql-workbench-wizard-finished.png":::
 
 ## Connect to a server

@@ -3,7 +3,7 @@ uid: learn.wwl.understand-client-server-communication-mysql
 metadata:
   title: Understand client-server communication in MySQL
   description: "Learn about connection handling in MySQL, backup and restore, and the client interrace options available for MySQL."
-  ms.date: 06/16/2022
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
