@@ -11,8 +11,11 @@ Form Recognizer is an Azure service and conforms to Azure's resource management 
 | Quota | Free (F0) | Standard (S0) |
 | --- | --- | --- |
 | Concurrent request limit | 1 | 15 by default |
-| Composed model limit | 5 | 100 |
+| Composed model limit | 5 | 200 |
 | Custom neural model train | 10 per month | 10 per month by default |
+
+> [!NOTE]
+> These quotas and limits are subject to change as the service is improved. For the latest information, see the **Form Recognizer service Quotas and Limits** link in the **Learn more** section at the end of this unit.
 
 > [!IMPORTANT]
 > If you're using the **Standard** tier, and find your requests are being throttled, you can submit an Azure Support Request to have the default limits increased. The **Free** tier is not available if you are using a multi-service resource.
@@ -76,3 +79,4 @@ AnalyzeResult result = operation.Value;
 
 - [Create a Form Recognizer resource](/azure/applied-ai-services/form-recognizer/create-a-form-recognizer-resource)
 - [Get started: Form Recognizer C# SDK (beta)](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-csharp-sdk)
+- [Form Recognizer service Quotas and Limits](/azure/applied-ai-services/form-recognizer/service-limits)
