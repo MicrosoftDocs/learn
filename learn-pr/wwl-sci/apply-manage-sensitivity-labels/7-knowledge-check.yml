@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/11/2021
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Marking content"
       isCorrect: false
-      explanation: "The answer is incorrect. Only marking a content is not the way to restrict access to a file."
+      explanation: "The answer isn't correct. Only marking content isn't the way to restrict access to a file."
     - content: "Encryption"
       isCorrect: true
-      explanation: "This answer is correct. Only a label with encryption can have a access rules to prevent other user to edit or open the file."
+      explanation: "This answer is correct. Only a label with encryption can have access rules to prevent other user to edit or open the file."
     - content: "Guest access"
       isCorrect: false
-      explanation: "The answer is incorrect. The Guest access prevention is only an option, but with it it´s not possible to restrict file access in detail."
+      explanation: "The answer isn't correct. The Guest access prevention is only an option, but with it´s not possible to restrict file access in detail."
   - content: "The Unified Labeling Scanner requires which other system to conduct scans?"
     choices:
     - content: "a SQL Server Standard or SQL Server Enterprise"
@@ -35,7 +35,7 @@ quiz:
       explanation: "This answer is correct. The SQL Server Express version is only for testing."
     - content: "Microsoft 365 alerts enabled."
       isCorrect: false
-      explanation: "The answer is incorrect."
+      explanation: "The answer isn't correct."
     - content: "A Linux server."
       isCorrect: false
-      explanation: "The answer is incorrect. A Windows server is needed."
+      explanation: "The answer isn't correct. A Windows server is needed."

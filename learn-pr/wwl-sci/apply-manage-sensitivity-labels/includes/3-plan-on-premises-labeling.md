@@ -45,7 +45,7 @@ To classify and protect your files, the scanner uses sensitivity labels configur
 
 - Microsoft 365 Security Center
 
-- Microsoft 365 Compliance Center
+- Microsoft Purview compliance portal
 
 ### Requirements for the unified labeling scanner
 
@@ -69,8 +69,8 @@ For the installation and to run the scanner the following service accounts are n
 
 | **Requirement**| **Details**|
 | :--- | :--- |
-| Log on locally user right assignment| Required to install and configure the scanner, but not required to run scans. Once you've confirmed that the scanner can discover, classify, and protect files, you can remove this right from the service account.|
-| Log on as a service user right assignment.| This right is automatically granted to the service account during the scanner installation and this right is required for the installation, configuration, and operation of the scanner.|
+| Sign in locally user right assignment| Required to install and configure the scanner, but not required to run scans. Once you've confirmed that the scanner can discover, classify, and protect files, you can remove this right from the service account.|
+| Sign in as a service user right assignment.| This right is automatically granted to the service account during the scanner installation and this right is required for the installation, configuration, and operation of the scanner.|
 | Permissions to the data repositories| *File shares or local files*: Grant Read, Write, and Modify permissions for scanning the files and then applying classification and protection as configured.SharePoint: You must grant Full Control permissions for scanning the files and then applying classification and protection to the files that meet the conditions in the Azure Information Protection policy.*Discovery mode*: To run the scanner in discovery mode only, Read permission is sufficient.|
 | For labels that reprotect or remove protection| To ensure that the scanner always has access to protected files, make this account a super user for Azure Information Protection, and ensure that the super user feature is enabled. Additionally, if you've implemented onboarding controls for a phased deployment, make sure that the service account is included in the onboarding controls you've configured.|
 | Specific URL level scanning:| To scan and discover sites and subsites under a specific URL, grant Site Collector Auditor rights to the scanner account on the farm level.|
