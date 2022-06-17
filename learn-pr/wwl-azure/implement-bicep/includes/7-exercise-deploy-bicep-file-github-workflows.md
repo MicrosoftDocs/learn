@@ -83,7 +83,7 @@ Create another secret for the name of the resource group with a name such as `AZ
     
 4.  Navigate back to the Actions tab and select the newly created action that should be running.
     
-    :::image type="content" source="../media/github-action-run-a883eafa.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
+    :::image type="content" source="../media/github-action-run-caf8225d.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
     
 5.  Monitor the status and when the job is finished, check the Azure portal to see if the storage account is being created.
     
