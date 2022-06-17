@@ -22,7 +22,7 @@ quiz:
     - content: "Business applications store data in an operational data store, which is synchronized with low latency to a separate analytical store for reporting and analysis."
       isCorrect: true
       explanation: "Correct. an HTAP solution replicates operational data to an analytical store, enabling you to perform analytics and reporting without impacting the performance of the operational system."
-    - content: "Business application store operational data in an analytical data store that is optimized for queries to support reporting and analysis."
+    - content: "Business applications store operational data in an analytical data store that is optimized for queries to support reporting and analysis."
       isCorrect: false
       explanation: "Incorrect. One of the goals of an HTAP solution is to optimize operational storage for applications without it being impacted by analytical queries."
   - content: "You want to use Azure Synapse Analytics to analyze operational data stored in a Cosmos DB core (SQL) API container. Which Azure Synapse Link service should you use?"
