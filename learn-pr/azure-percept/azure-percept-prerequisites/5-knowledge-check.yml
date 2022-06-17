@@ -12,9 +12,9 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What role does Azure IoT Edge have in distributing AI workloads to the edge?"
+  - content: "Which of the following characteristics of IoT Edge enables it to distribute AI workloads to the edge?"
     choices:
-    - content: "IoT Edge deploys models that are built and trained in the cloud, and runs them on edge devices."
+    - content: "IoT Edge deploys models that are built and trained in the cloud, and then it runs them on edge devices."
       isCorrect: true
       explanation: "Correct. When IoT Edge deploys a model to the edge, a model can process data locally and respond to the event rapidly."
     - content: "IoT Edge can optimize network functionality."
@@ -34,3 +34,14 @@ quiz:
     - content: "You use optimized hardware."
       isCorrect: false
       explanation: "Incorrect. Azure Cognitive Services doesn't require you to use specific hardware."
+  - content: "You're designing a new IoT solution, and you want the service to scale up to millions of simultaneously connected users. Which Azure product would you consider?"
+    choices:
+    - content: "IoT Edge, because it can handle edge analytics."
+      isCorrect: false
+      explanation: "Incorrect. Edge devices and edge analytics are independent of how the system scales as a whole."
+    - content: "Azure Stream Analytics, because it can manage a large number of IoT streams."
+      isCorrect: false
+      explanation: "Incorrect. Stream Analytics allows streaming to scale, as opposed to scaling the system as a whole."
+    - content: "IoT Hub, because it allows you to scale to millions of simultaneously connected devices and millions of events per second to support your IoT workloads."
+      isCorrect: true
+      explanation: "Correct. IoT Hub allows you to both scale and manage your connected devices."      

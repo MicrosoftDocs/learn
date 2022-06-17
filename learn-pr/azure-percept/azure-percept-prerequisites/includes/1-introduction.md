@@ -2,7 +2,7 @@ Azure Percept is a fully integrated, easy-to-use platform with added security fo
 
 ## Azure IoT services
 
-Use these IoT services in Azure to create an Azure Percept solution:
+This unit provides an overview of a few Azure IoT Services that are useful to know when you build and deploy an edge AI solution with Azure Percept.
 
 - Azure IoT
 - Azure IoT Hub
@@ -10,25 +10,12 @@ Use these IoT services in Azure to create an Azure Percept solution:
 
 ## Azure AI services
 
-Use these AI services in Azure to create your Azure Percept solution:
+This unit provides an overview of a few Azure IoT Services that are useful to know when you build and deploy an edge AI solution with Azure Percept.
 
 - Azure AI
 - Computer Vision
 
 ## Other Microsoft services
 
-Use these other Microsoft services to create your Azure Percept solution:
-
 - Azure Stream Analytics
 - Power BI
-
-## Learning objectives
-
-After completing this module, you'll be able to:
-
-- Understand the prerequisites needed to build and deploy an edge AI solution with Azure Percept.
-- Understand basic concepts of Azure IoT services and Azure AI services.
-
-## Prerequisites
-
-- Basic knowledge of Azure cloud computing is helpful, but not necessary.

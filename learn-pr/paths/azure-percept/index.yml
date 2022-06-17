@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.azure-percept
 metadata:
-  title: Build an edge AI solution with Azure Percept
+  title: Build edge AI solutions with Azure Percept
   description: Interested in building an edge AI solution with Azure Percept? Start here! You will learn about the basics of edge AI and the problems Azure Percept is trying to solve.  
   ms.date: 06/14/2022
   ms.author: amiyouss
   author: Amiyouss
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-title: Build an edge AI solution with Azure Percept
+title: Build edge AI solutions with Azure Percept
 summary: |
   Interested in building an edge AI solution with Azure Percept? Start here! You will learn about the basics of edge AI and the problems Azure Percept is trying to solve. 
   

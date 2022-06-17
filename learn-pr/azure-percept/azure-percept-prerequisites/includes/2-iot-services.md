@@ -1,4 +1,4 @@
-Learn about IoT services in Azure you'll use to create your Azure Percept solution.
+This unit provides an overview of a few Azure IoT services that are useful to know when you build and deploy an edge AI solution with Azure Percept.
 
 ## Introduction to Azure IoT
 

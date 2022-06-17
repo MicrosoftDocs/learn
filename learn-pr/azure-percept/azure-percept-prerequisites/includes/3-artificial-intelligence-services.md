@@ -1,8 +1,8 @@
-Learn about AI and AI services in Azure you'll use to create your Azure Percept solution.
+This unit provides an overview of a few Azure AI services that are useful to know when you build and deploy an edge AI solution with Azure Percept.
 
 ## Introduction to AI
 
-Artificial intelligence (AI) is the creation of software that imitates human behaviors and capabilities, Examples include visual senses, speech recognition, and decision-making, natural language understanding.
+Artificial intelligence (AI) is the creation of software that imitates human behaviors and capabilities, such as visual sense, speech recognition, decision-making, and natural language understanding.
 
 **Use AI for**:
 
