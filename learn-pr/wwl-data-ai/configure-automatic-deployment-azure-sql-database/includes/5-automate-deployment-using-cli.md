@@ -59,7 +59,7 @@ az sql server firewall-rule create --resource-group $resourceGroup --server $ser
 
 ```
 
-To learn more about all the Azure SQL CLI commands available, see [Azure SQL CLI commands.](/cli/azure/sql?view=azure-cli-latest)
+To learn more about all the Azure SQL CLI commands available, see [Azure SQL CLI commands.](/cli/azure/sql)
 
 ## Deploying Azure Resource Manager (ARM) template using Azure CLI and PowerShell
 

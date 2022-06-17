@@ -26,7 +26,7 @@ You have several options for the scope of your deployment when using PowerShell 
 
 Let's look at a JSON ARM template definition to create a single database in SQL Database:
 
-```JSON
+```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
@@ -137,7 +137,6 @@ The following are some benefits of Bicep:
 
 The following examples show the difference between a Bicep file and the equivalent JSON template. Both examples deploy a storage account.
 
-::: zone pivot="JSON"
 ```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -169,9 +168,7 @@ The following examples show the difference between a Bicep file and the equivale
   ]
 }
 ```
-::: zone-end
 
-::: zone pivot="bicep"
 ```bicep
 param location string = resourceGroup().location
 param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
@@ -188,13 +185,12 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-06-01' = {
   }
 }
 ```
-::: zone-end
 
 ### Bicep vs. JSON
 
 Both Bicep and JSON can be used to deploy a database. As the example above shows, Bicep is a lot more concise and simpler to read.  Here's an example of a JSON file to deploy a database:
 
-```JSON
+```json
 {
   "type": "Microsoft.Sql/servers",
   "apiVersion": "2021-11-01-preview",
