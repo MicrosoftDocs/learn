@@ -1,11 +1,18 @@
 
+Now that you've registered your application with the Azure Active Directory (Azure AD), you require additional configurations to allow your app communicate with the identity platform.
 
+In this exercise, you'll complete the following application-specific configurations on the Azure portal:
 
+- Add a redirect URI
+- Configure client credentials
+- Add app roles to your application registration
+- Assign app roles to users and groups
 
+After configuring these application-specific settings, you'll update your Python Flask web app to use the app registration details.
 
 ## Add a redirect URI
 
-You configure settings for each application type, including redirect URIs, in the **Platform configurations** section. The redirect URI, also known as Reply URL, is the location where the identity platform redirects a user's client and sends security tokens after authentication. During development, this is the endpoint where you run your app locally. To add a redirect URI for your Python Flask web app, follow these steps:
+The redirect URI, also known as Reply URL, is the location where the identity platform redirects a user's client and sends security tokens after authentication. During development, this is the endpoint where you run your app locally. To add a redirect URI for your Python Flask web app, follow these steps:
 
 1. In the Azure portal, in **App registrations**, select your application.
 2. Under **Manage**, select **Authentication**.
@@ -18,7 +25,7 @@ You configure settings for each application type, including redirect URIs, in th
 
 Credentials are used by confidential client applications, such as web apps, that access a web API. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime. You can add certificates, client secrets, or federated credentials to your confidential client app registration. 
 
-In this tutorial, we will use a client secret, also known as an application password. This is a string value that the app can use to prove its identity when requesting a token. To add a client secret, follow these steps:
+In this module, you'll use a client secret, also known as an application password. This is a string value that the app can use to prove its identity when requesting a token. To add a client secret, follow these steps:
 
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **Certificates & secrets** 
@@ -33,7 +40,7 @@ In this tutorial, we will use a client secret, also known as an application pass
 
 App roles defined during the app registration process are used to securely enforce authorization in your application. When using app roles, an administrator grants permissions to roles and not to individual users or groups. The administrator can then assign roles to different users and groups to control who has access to what content and functionality. 
 
-In this tutorial, one route requires an application-defined admin app role. To add this role, follow these steps:
+In this module, one route requires an application-defined admin app role. To add this role, follow these steps:
 
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **App roles** and then **Create app role**.
@@ -44,7 +51,8 @@ In this tutorial, one route requires an application-defined admin app role. To a
     - For **Description**, add a more detailed app role description such as `admin app role` 
 1. Select the checkbox under to enable this app role.
 1. Select **Apply** to complete creating the app role.
- 
+
+## Assign app roles to users and groups
 
 Once you've added the app roles in your application, you can assign users and groups to the roles. To assign users and groups to the created `admin role` using the Azure portal UI:
 
@@ -59,7 +67,7 @@ Once you've added the app roles in your application, you can assign users and gr
 1. Select the **Assign butto**n to finish the assignment of users and groups to the app.
 1. Confirm that the users and groups you added appear in the **Users and groups** list.
 
-##  Update the application to use your app registration details.
+## Update the application to use your app registration details.
 
 Open the default_settings.py file and modify the three Azure Active Directory configuration properties using the values from your app's registration in the Azure portal.
 
@@ -73,108 +81,3 @@ CLIENT_CREDENTIAL = ""
 # Full directory URL, in the form of https://login.microsoftonline.com/<tenant>
 AUTHORITY = ""
 ```
-
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise
-
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

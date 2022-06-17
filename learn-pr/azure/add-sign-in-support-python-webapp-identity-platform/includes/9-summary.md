@@ -27,6 +27,8 @@ TODO: restate the scenario problem
 TODO: add your lead-in sentence(s)
 TODO: add your list of techniques used to solve the scenario problem
 
+Adding authentication enables your web app to access limited profile information and customize the experience offered to users. Web apps authenticate a user in a web browser. In this scenario, the web application directs the user to sign in to Microsoft identity. Microsoft identity returns a sign-in response through the user’s browser, which contains claims about the user in an identity token.
+
 <!-- 3. Describe the experience without the product ---------------------------------------------------
 
     Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)

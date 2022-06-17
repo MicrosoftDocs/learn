@@ -1,14 +1,5 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Developers can leverage the identity platform to add authentication to a Python Flask web application to enable users to sign in. Adding authentication enables your application to access limited profile information. Once the signed in user grants consent, the application can obtain a token from Azure AD on behalf of the signed in user and use it to request data from web APIs, such as Microsoft Graph.
 
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
