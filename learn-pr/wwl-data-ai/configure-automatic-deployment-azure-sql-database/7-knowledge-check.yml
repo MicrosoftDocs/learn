@@ -28,7 +28,7 @@ quiz:
     - content: "T-SQL"
       isCorrect: false
       explanation: "That's incorrect. Templates do not support T-SQL."
-  - content: "If you want to specify the region for a resource group deployment which option should you include in your template?"
+  - content: "Which option should you include in your template when specifying the region for a resource group deployment?"
     choices:
     - content: "Parameter"
       isCorrect: true
