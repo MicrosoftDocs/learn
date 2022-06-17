@@ -12,7 +12,7 @@ Microsoft Defender for Storage provides:
 
 - **Response at scale** - Defender for Cloud's automation tools make it easier to prevent and respond to identified threats. Learn more in Automate responses to Defender for Cloud triggers.
 
-:::image type="content" source="../media/defender-for-storage-overview.png" alt-text="Screen shot of Microsoft Defender for Storage threat response.":::
+:::image type="content" source="../media/defender-for-storage-overview.png" alt-text="Screenshot of Microsoft Defender for Storage threat response.":::
 
 ## What kind of alerts does Microsoft Defender for Storage provide?
 

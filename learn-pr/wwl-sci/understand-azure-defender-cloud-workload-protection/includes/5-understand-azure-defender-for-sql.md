@@ -68,7 +68,7 @@ This Defender for Cloud plan brings threat protections for the following open-so
 
 When you enable this plan, Microsoft Defender for Cloud will provide alerts when it detects anomalous database access and query patterns and suspicious database activities.
 
-:::image type="content" source="../media/defender-alerts.png" alt-text="alert screen with open-source database alerts.":::
+:::image type="content" source="../media/defender-alerts.png" alt-text="Alert screen with open-source database alerts.":::
 
 ### Microsoft Defender alerts for open-source relational databases
 
