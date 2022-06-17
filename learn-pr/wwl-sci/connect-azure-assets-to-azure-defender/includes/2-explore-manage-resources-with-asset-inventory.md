@@ -56,7 +56,7 @@ Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that lets 
 
 - To use the Security findings contain filter, enter free text from the ID, security check, or CVE name of a vulnerability finding to filter to the affected resources:
 
-:::image type="content" source="../media/security-findings-contain-elements.png" alt-text="Screen shot of Defender for Cloud Security Findings":::
+:::image type="content" source="../media/security-findings-contain-elements.png" alt-text="Screenshot of Defender for Cloud Security Findings":::
 
 - To use the Defender for Cloud filter, select one or more options (Off, On, or Partial):
 

@@ -8,7 +8,7 @@ Data is collected using:
 
 - Security extensions, such as the Azure Policy Add-on for Kubernetes, which can also provide data to Security Center regarding specialized resource types.
 
-:::image type="content" source="../media/auto-provisioning-options.png" alt-text="Screen shot of Auto provisioning settings.":::
+:::image type="content" source="../media/auto-provisioning-options.png" alt-text="Screenshot of Auto provisioning settings.":::
 ## Why use auto provisioning?
 
 Any of the agents and extensions described on this page can be installed manually. However, auto provisioning reduces management overhead by installing all required agents and extensions on existing - and new - machines to ensure faster security coverage for all supported resources.
