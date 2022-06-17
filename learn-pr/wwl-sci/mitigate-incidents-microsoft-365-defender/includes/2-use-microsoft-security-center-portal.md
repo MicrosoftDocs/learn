@@ -25,7 +25,7 @@ The **More resources** option in the portal provides a list of these related por
 
 | Portal| Description|
 | :--- | :--- |
-| Microsoft 365 compliance center| Manage your compliance needs across Microsoft 365 services using integrated solutions for information governance, classification, case management, and more.|
+| Microsoft Purview compliance portal| Manage your compliance needs across Microsoft 365 services using integrated solutions for information governance, classification, case management, and more.|
 | Azure Active Directory| Manage your organization's identities. Set up multi-factor authentication, track user sign-ins, edit company branding, and more.|
 | Azure AD Identity Protection| Detect potential vulnerabilities affecting your organization's identities. Investigate suspicious incidents related to your organization's identities and set up automated responses to resolve them.|
 | Azure Information Protection| Configure and manage the Azure Information Protection client and scanner to automatically classify and protect your organization's email and docs. Use reports to monitor label usage and identify sensitive info that should be protected.|
@@ -45,7 +45,7 @@ The following table outlines the roles and permissions required to access each u
 
 
 
-| One of the following roles are required for Microsoft 365 Defender | One of the following roles are required for Defender for Endpoint | One of the following roles are required for Defender for Office 365 | One of the following roles are required for Defender for Cloud Apps |
+| One of the following roles is required for Microsoft 365 Defender | One of the following roles is required for Defender for Endpoint | One of the following roles is required for Defender for Office 365 | One of the following roles is required for Defender for Cloud Apps |
 | :--- | :--- | :--- | :--- |
 | Viewing investigation data: <br />- Alert page<br />- Alerts queue<br />- Incidents<br />- Incident queue<br />- Action center<br /> | View data-security operations | - View-only Manage alerts<br />- Organization<br />- configuration<br />- Audit logs<br />- View-only audit logs<br />- Security reader<br />- Security admin<br />- View-only recipients | - Global admin<br />- Security admin<br />- Compliance admin<br />- Security operator<br />- Security reader<br />- Global reader |
 | Viewing hunting data | View data-security operations | - Security reader<br />- Security admin<br />- View-only recipients | - Global admin<br />- Security admin<br />- Compliance admin<br />- Security operator<br />- Security reader<br />- Global reader |

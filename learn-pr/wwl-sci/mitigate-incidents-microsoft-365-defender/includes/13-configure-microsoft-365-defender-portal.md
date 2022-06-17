@@ -1,4 +1,4 @@
-The Settings page lets you configure related Microsoft Defender products. The specific settings for the Defender products will be discussed in the related learning content. The primary setting for Microsoft 365 Defender are the notifications email configuration.
+The Settings page lets you configure related Microsoft Defender products. The specific settings for the Defender products will be discussed in the related learning content. The primary setting for Microsoft 365 Defender is the notifications email configuration.
 
 
 ## Types of Microsoft 365 Defender portal email notifications

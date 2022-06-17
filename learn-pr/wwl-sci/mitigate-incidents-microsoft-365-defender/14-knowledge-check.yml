@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When reviewing a specific incident, which tab is contained on the incident page?"
+  - content: "When you're reviewing a specific incident, which tab is contained on the incident page?"
     choices:
     - content: "Networks"
       isCorrect: false
