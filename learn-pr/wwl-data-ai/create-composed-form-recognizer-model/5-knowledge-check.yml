@@ -28,7 +28,7 @@ quiz:
     - content: "docType."
       isCorrect: true
       explanation: "Correct. The docType property includes the model ID of the custom model that was used to analyze the document."
-  - content: "You've trying to create a composed model but you're receiving an error. Which of the following should you check?"
+  - content: "You're trying to create a composed model but you're receiving an error. Which of the following should you check?"
     choices:
     - content: "That the custom models were trained with labels."
       isCorrect: true
