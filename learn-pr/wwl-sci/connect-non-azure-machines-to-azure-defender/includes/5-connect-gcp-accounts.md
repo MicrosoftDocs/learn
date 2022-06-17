@@ -100,4 +100,4 @@ When the connector is successfully created and GCP Security Command Center has b
 
 - Security recommendations for your GCP resources will appear in the Security Center portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
 
-:::image type="content" source="../media/gcp-resources-recommendations.png" alt-text="g c p resources in recommendations":::
+:::image type="content" source="../media/gcp-resources-recommendations.png" alt-text="Screenshot of the G C P resources in recommendations":::
