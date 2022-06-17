@@ -1,4 +1,4 @@
-# Manage automated investigations
+## Manage automated investigations
 
 
 Your security operations team receives an alert whenever Microsoft Defender detects a malicious or suspicious artifact for Endpoint. Security operations teams face challenges in addressing the multitude of alerts that arise from the seemingly never-ending flow of threats. Microsoft Defender for Endpoint includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
