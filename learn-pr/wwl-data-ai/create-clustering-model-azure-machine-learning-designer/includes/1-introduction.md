@@ -1,4 +1,4 @@
-*Clustering* is a form of machine learning that is used to group similar items into clusters based on their features. For example, a researcher might take measurements of penguins, and group them based on similarities in their proportions.
+*Clustering* is a form of machine learning that is used to group similar items into clusters based on their features. For example, a researcher might take measurements of penguins, and group them based on similarities in their proportions. 
 
 ![Penguins clustered into groups](../media/penguins.png)
 
