@@ -24,7 +24,7 @@ In the new suppression rule pane, enter the details of your new rule.
 
 - Your rule can dismiss the alert on specific criteria - when it relates to a specific IP address, process name, user account, Azure resource, or location.
 
-:::image type="content" source="../media/new-suppression-rule-pane.png" alt-text="Screenshot of Defender for Cloud new alert suppression rule pane":::
+:::image type="content" source="../media/new-suppression-rule-pane.png" alt-text="Screenshot of Defender for Cloud new alert suppression rule pane.":::
 
 Enter details of the rule:
 
