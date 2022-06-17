@@ -71,7 +71,7 @@ As an Azure Applied AI Service, Forms Recognizer is a high-level AI service that
 
 If you use Azure Computer Vision with its Optical Character Recognition (OCR) feature, you can submit photographed or scanned documents and extract their words and text in JSON format. This functionality is similar to Form Recognizer and can make it difficult to choose from these services. 
 
-If you want to extract simple words and text from a form or document, without contextual information, Azure Computer Vision OCR is an appropriate service to consider. You might want to use this service if you already have your own analysis code, for example. However, Forms Recognizer includes a more sophisticated analysis of documents. For example, it can identify key/value pairs, entities, tables, and context-specific fields. If you want to deploy a complete document analysis solution that enables users to both extract and understand text, consider Forms Recognizer.
+If you want to extract simple words and text from a form or document, without contextual information, Azure Computer Vision OCR is an appropriate service to consider. You might want to use this service if you already have your own analysis code, for example. However, Forms Recognizer includes a more sophisticated analysis of documents. For example, it can identify key/value pairs, tables, and context-specific fields. If you want to deploy a complete document analysis solution that enables users to both extract and understand text, consider Forms Recognizer.
 
 ## Form Recognizer tools
 

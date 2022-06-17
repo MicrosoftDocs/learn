@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-data-concepts
+metadata:
+  title: Get started with data concepts
+  description: "Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data and when to calculate derived values from data."
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with data concepts
+summary: Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data, and when to calculate derived values from data.
+abstract: |
+  By the end of this module, you will be able to:
+  - Describe data
+  - Describe the need to sort and filter data
+  - Describe the need to calculate derived values
+  - Describe the need to highlight data
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- database-administrator
+products:
+- azure-database-mysql
+- azure-database-postgresql
+- azure-sql-database
+- azure-sqlserver-vm
+- sql-server
+subjects:
+- database
+units:
+- learn.wwl.get-started-data-concepts.introduction
+- learn.wwl.get-started-data-concepts.get-started-data
+- learn.wwl.get-started-data-concepts.sort-filter-data
+- learn.wwl.get-started-data-concepts.derive-data
+- learn.wwl.get-started-data-concepts.highlight-data
+- learn.wwl.get-started-data-concepts.exercise-use-excel-to-explore-data
+- learn.wwl.get-started-data-concepts.knowledge-check
+- learn.wwl.get-started-data-concepts.summary
+badge:
+  uid: learn.wwl.get-started-data-concepts.badge

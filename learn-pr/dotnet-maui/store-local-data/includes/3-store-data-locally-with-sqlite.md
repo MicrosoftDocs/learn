@@ -33,7 +33,7 @@ SQLite-net is shipped as a NuGet package. You must add the **sqlite-net-pcl** pa
 
 ## How to connect to a SQLite database
 
-You establish a connection to a SQLite database from an app through a **SQLiteConnection** object. This class is defined in the **SQLite** namespace, together with the other types and method provided by SQLite. When you instantiate this object, you pass in the filename for the database file. The constructor will then either open the file if it exists or create it if it isn't present.
+You establish a connection to a SQLite database from an app through a **SQLiteConnection** object. This class is defined in the **SQLite** namespace, together with the other types and methods provided by SQLite. When you instantiate this object, you pass in the filename for the database file. The constructor will then either open the file if it exists or create it if it isn't present.
 
 The following code shows an example:
 
@@ -48,7 +48,7 @@ Remember that **filename** should point to a location in the app sandbox.
 
 ## How to create a table
 
-Recall that SQLite-net is an object-relational mapper, which means you can build our database schema from C# classes. SQLite-net can build a database table from an ordinary C# class, but there are many attributes that you can add to a class to provide additional metadata. This metadata helps SQLite to enforce features such as uniqueness and apply constraints to your data.
+Recall that SQLite-net is an object-relational mapper, which means you can build your database schema from C# classes. SQLite-net can build a database table from an ordinary C# class, but there are many attributes that you can add to a class to provide additional metadata. This metadata helps SQLite to enforce features such as uniqueness and apply constraints to your data.
 
 The attributes available include:
 
@@ -59,7 +59,7 @@ The attributes available include:
 - **MaxLength**: Specify the maximum number of characters that can be used in the column.
 - **Unique**: Specify that the value in the column must be unique from all other rows.
 
-The code below shows updated version of the **User** class that applies these attributes:
+The following code shows an updated version of the **User** class that applies these attributes:
 
 ```csharp
 [Table("user")]
@@ -82,11 +82,11 @@ SQLiteConnection conn = new SQLiteConnection(filename);
 conn.CreateTable<User>();
 ```
 
-If table already exists in the database, the **CreateTable** method checks the schema to see if there are any changes. If there are, the operation attempts to update the database schema.
+If the table already exists in the database, the **CreateTable** method checks the schema to see if there are any changes. If there are, the operation attempts to update the database schema.
 
 ## How to do basic read and write operations
 
-After you create a table, you can start interacting with it. To add a row, use the **Insert** method on the **SQLiteConnection** instance and provide an object of the appropriate type that holds the data to be inserted. The code below shows how to add a new row to the **User** table:
+After you create a table, you can start interacting with it. To add a row, use the **Insert** method on the **SQLiteConnection** instance and provide an object of the appropriate type that holds the data to be inserted. The following code shows how to add a new row to the **User** table:
 
 ```csharp
 public int AddNewUser(User user)
@@ -108,11 +108,11 @@ public List<User> GetAllUsers()
 }
 ```
 
-The **Table** method returns a **TableQuery\<T>** object. To get a **List**, use the **ToList** method as shown above.
+The **Table** method returns a **TableQuery\<T>** object. To get a **List**, use the **ToList** method as shown in the preceding example.
 
 ## Execute a SQLite query by using LINQ
 
-The  **Table** method retrieves all the rows from a table. On most occasions you want to return only a subset of the rows that match a set of specified criteria. For these tasks, use LINQ with SQLite-net.
+The **Table** method retrieves all the rows from a table. On most occasions, you want to return only a subset of the rows that match a set of specified criteria. For these tasks, use LINQ with SQLite-net.
 
 SQLite-net supports many common LINQ queries including:
 
@@ -128,7 +128,7 @@ SQLite-net supports many common LINQ queries including:
 - ThenByDescending
 - Count
 
-With these methods, you can use the extension method syntax or the LINQ C# syntax. For example, here's a snippet of code that enables you to retrieve the details of a specified user a user:
+With these methods, you can use the extension method syntax or the LINQ C# syntax. For example, here's a snippet of code that enables you to retrieve the details of a specified user:
 
 ```csharp
 public User GetByUsername(string username)
@@ -142,7 +142,7 @@ public User GetByUsername(string username)
 
 ## Update and delete rows
 
-You update a row using the **Update** method of the **SQLiteConnection** object. You provide an object defining the row to be updated with its new values. The **Update** method modifies the row that has the same primary key value as the provided object. The value returned is the number of rows changed; if this value is zero, then no rows with a matching primary key were found, so nothing was updated. The next snippet shows this method in action:
+You update a row using the **Update** method of the **SQLiteConnection** object. You provide an object defining the row to be updated with its new values. The **Update** method modifies the row that has the same primary key value as the provided object. The value returned is the number of rows changed. If this value is zero, then no rows with a matching primary key were found, and nothing was updated. The next snippet shows this method in action:
 
 ```csharp
 public int UpdateUser(User user)
@@ -153,7 +153,7 @@ public int UpdateUser(User user)
 }
 ```
 
-Remove rows from a table with the **Delete** method of the **SQLiteConnection** object. The simplest form of this method takes the primary key of the item to be deleted as the parameter, as shown below. Note that this form of the **Delete** method is generic, and it requires a type parameter. The value returned is the number of rows removed from the table:
+Remove rows from a table with the **Delete** method of the **SQLiteConnection** object. The simplest form of this method takes the primary key of the item to be deleted as the parameter, as shown below. This form of the **Delete** method is generic, and it requires a type parameter. The value returned is the number of rows removed from the table:
 
 ```csharp
 public int DeleteUser(int userID)
