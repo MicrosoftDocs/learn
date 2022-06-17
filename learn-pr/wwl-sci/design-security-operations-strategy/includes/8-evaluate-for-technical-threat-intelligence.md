@@ -1,4 +1,4 @@
-Threat Intelligence teams provide context and insights to support all other functions (using a threat intelligence platform (TIP) in larger organizations). This could include many different facets including
+Threat Intelligence teams provide context and insights to support all other functions (using a threat intelligence platform (TIP) in larger organizations). This could include many different facets including:
 * Reactive technical research for active incidents
 * Proactive technical research into attacker groups, attack trends, high profile attacks, emerging techniques,etc. 
 * Strategic analysis, research, and insights to inform business and technical processes and priorities. 
@@ -18,7 +18,4 @@ Some notable parts of this process include:
 
 * **Data Collection and Analysis** - The data then goes through a collection and analysis phase to normalize it, apply various analytics (listed) to identify relevant security insights and findings, and publish to an internal API
 * **Product Integration** - Each of Microsoft’s security capabilities then access the data to provide findings, context, and insights relative to that capability and then automatically feed new detections and insights back in to enrich other product findings.  
-* **Hunters** – Additionally, human teams are constantly working with this intelligence to hunt for adversaries in various environments (Azure, Office 365, Microsoft IT, Microsoft 365 Defender Customers, etc.) as well as creating, tuning, and validating new analytics to improve the detection overall. Microsoft has over 8,500 experts working on the security challenges faced by the industry. 
-
-
-
+* **Hunters** – Additionally, human teams are constantly working with this intelligence to hunt for adversaries in various environments (Azure, Office 365, Microsoft IT, Microsoft 365 Defender Customers, etc.) as well as creating, tuning, and validating new analytics to improve the detection overall. Microsoft has over 8,500 experts working on the security challenges faced by the industry.
