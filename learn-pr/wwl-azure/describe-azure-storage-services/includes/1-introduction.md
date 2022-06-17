@@ -1,5 +1,3 @@
-# Describe Azure storage services
-
 In this module, you’ll be introduced to the Azure storage services. You’ll learn about the Azure Storage Account and how that relates to the different storage services that are available. You’ll also learn about blob storage tiers, data redundancy options, and ways to move data or even entire infrastructures to Azure.
 
 ## Learning objectives

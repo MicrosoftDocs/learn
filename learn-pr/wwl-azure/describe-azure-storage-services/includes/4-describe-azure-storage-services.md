@@ -1,5 +1,3 @@
-# Azure Storage services
-
 The Azure Storage platform includes the following data services:
 
  -  **Azure Blobs**: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.

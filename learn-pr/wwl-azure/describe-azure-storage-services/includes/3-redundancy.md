@@ -1,5 +1,3 @@
-# Azure Storage redundancy
-
 Azure Storage always stores multiple copies of your data so that it's protected from planned and unplanned events such as: transient hardware failures, network or power outages, and natural disasters. Redundancy ensures that your storage account meets its availability and durability targets even in the face of failures.
 
 When deciding which redundancy option is best for your scenario, consider the tradeoffs between lower costs and higher availability. The factors that help determine which redundancy option you should choose include:
@@ -74,4 +72,4 @@ The following diagram shows how your data is replicated with GZRS or RA-GZRS.
 Geo-redundant storage (with GRS or GZRS) replicates your data to another physical location in the secondary region to protect against regional outages. However, that data is available to be read only if the customer or Microsoft initiates a failover from the primary to secondary region. However, if you enable read access to the secondary region, your data is always available, even when the primary region is running optimally. For read access to the secondary region, enable read-access geo-redundant storage (RA-GRS) or read-access geo-zone-redundant storage (RA-GZRS).
 
 > [!IMPORTANT]
-> Important: Remember that the data in your secondary region may not be up-to-date due to RPO.
+> Remember that the data in your secondary region may not be up-to-date due to RPO.

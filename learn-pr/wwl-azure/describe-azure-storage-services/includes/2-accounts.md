@@ -1,6 +1,4 @@
-# What is an Azure Storage account?
-
-The following video introduces the different services that should be available with Azure Storage.<br>
+The following video introduces the different services that should be available with Azure Storage.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MAbS]
 

@@ -1,8 +1,8 @@
-# Task 1: Create a storage account
+## Task 1: Create a storage account
 
 In this task, we will create a new storage account.
 
-1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/)
+1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 2.  From the All services blade, search for and select Storage accounts, and then click + Add, + Create, + New.
 3.  On the Basics tab of the Create storage account blade, fill in the following information (replace xxxx in the name of the storage account with letters and digits such that the name is globally unique). Leave the defaults for everything else.
     
@@ -72,7 +72,7 @@ In this task, we will create a new storage account.
     [:::image type="content" source="https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/Instructions/images/0401.png" alt-text="Screenshot of the newly created storage account in the Azure portal .":::
     ](https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/Instructions/images/0401.png)
 
-# Task 2: Work with blob storage
+## Task 2: Work with blob storage
 
 In this task, we will create a Blob container and upload a blob file.
 
