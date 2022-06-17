@@ -60,7 +60,7 @@ You can choose to see only incidents that have mapped to multiple categories and
 
 **Multiple service sources**
 
-Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365).
+Filter to only see incidents that contain alerts from different sources. Sources include: Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365.
 
 **OS platform**
 
@@ -108,7 +108,7 @@ Managing incidents is critical in ensuring that threats are contained and addres
 
 You can edit the name of an incident, resolve it, set its classification and determination. You can also assign the incident to yourself, add incident tags and comments.
 
-In cases where you would like to move alerts from one incident to another while investigating, you can also do so from the Alerts tab, thus creating a larger or smaller incident that includes all relevant alerts.
+In cases where you would like to move alerts from one incident to another, during an investigation, you can also do so from the Alerts tab. Using the Alerts tab allows you to create a larger or smaller incident that includes all relevant alerts.
 
 ### Edit incident name
 
