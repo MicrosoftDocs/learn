@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-cli
+title: Automate deployment by using Azure CLI.md
+metadata:
+  title: Automate deployment by using Azure CLI.md
+  description: "Automate deployment by using Azure CLI.md"
+  ms.date: 06/17/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-automate-deployment-using-cli.md)]
