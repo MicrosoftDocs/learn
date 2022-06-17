@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/3-develop-integration-points-architecture.md)]
