@@ -12,7 +12,7 @@ Follow along with the team by setting up your own free Azure DevOps organization
 1. Sign in by using your **Microsoft account**. Or if you don't have a Microsoft account, select **Create One!** and finish the steps.
 
     > [!NOTE]
-    > You may have a Microsoft account already. Typically these end with hotmail.com or outlook.com.
+    > You might have a Microsoft account already. Typically these end with hotmail.com or outlook.com.
 1. Review the Terms of Service, Privacy Statement, and Code of Conduct, and select **Continue** if you agree to them.
 
     > [!NOTE]

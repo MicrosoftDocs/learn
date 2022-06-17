@@ -1,4 +1,4 @@
-DevOps is the union of people, process, and products to let continuous delivery of value to our customers. But what exactly does that mean? Let's join the team as Mara explains what DevOps is, what it isn't, and what makes elite performers successful.
+DevOps is the union of people, process, and products to enable continuous delivery of value to our customers. However, what exactly does that mean? Let's join the team as Mara explains what DevOps is, what it isn't, and what makes elite performers successful.
 
 Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
@@ -30,7 +30,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 **Mara:** Here's the definition I like to use:
 
-> _DevOps is the union of people, process, and products to let continuous delivery of value to our end users._
+> _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
 In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps:
 
@@ -46,7 +46,7 @@ Our goal is to give our customers games they'll love. We do that by working toge
 
 - **Agile planning**. Together, we'll create a backlog of work that everyone on the team and in management can see. We'll prioritize the items so we know what we need to work on first. The backlog can include user stories, bugs, and any other information that helps us.
 - **Continuous integration (CI)**. We'll automate how we build and test our code. We'll run that every time a team member commits changes to version control.
-- **Continuous delivery (CD)**. CD is how we test, set up, and deploy from a build to a QA or production environment.
+- **Continuous delivery (CD)**. CD is how we test, configure, and deploy from a build to a QA or production environment.
 - **Monitoring**. We'll use telemetry to get information about an application's performance and usage patterns. We can use that information to improve as we iterate.
 
 **Amita:** I don't know about automated testing. My tests are manual and I do them after Andy hands off the code to me. I don't have time to change how I do everything.
@@ -71,7 +71,7 @@ Elite performers:
 
     In fact, some teams deploy up to dozens of times per day.
 
-    Practices like monitoring, continuous testing, database change management, and integrating security earlier in the software development process help elite performers deploy more frequently, and with greater predictability and security.
+    Practices such as monitoring, continuous testing, database change management, and integrating security earlier in the software development process help elite performers deploy more frequently, and with greater predictability and security.
 
 - **Reduce lead time from commit to deploy**
 
@@ -91,7 +91,7 @@ Outsourcing can save money and provide a flexible labor pool, but it must be use
 
 ### The bottom line
 
-DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why we recommend you learn more about DevOps:
+DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why we recommend you to learn more about DevOps:
 
 **Ask Abel**
 
