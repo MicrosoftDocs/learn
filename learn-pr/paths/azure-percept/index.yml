@@ -4,10 +4,10 @@ metadata:
   title: Build edge AI solutions with Azure Percept
   description: Interested in building an edge AI solution with Azure Percept? Start here! You will learn about the basics of edge AI and the problems Azure Percept is trying to solve.  
   ms.date: 06/14/2022
-  ms.author: amiyouss
+  ms.author: chnoring
   author: Amiyouss
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.prod: learning-azure
 title: Build edge AI solutions with Azure Percept
 summary: |
   Interested in building an edge AI solution with Azure Percept? Start here! You will learn about the basics of edge AI and the problems Azure Percept is trying to solve. 
@@ -24,11 +24,25 @@ iconUrl: /learn/achievements/azure-percept/azure-percept.svg
 levels:
 - beginner
 roles:
+- ai-engineer
+- ai-edge-engineer
+- data-scientist
+- solution-architect
 - student
+- developer
+- business-user
 products:
+- azure-machine-learning
+- azure-cognitive-services
+- azure
+- azure-percept
+- azure-iot
 - azure-iot-edge
+- azure-iot-hub
 subjects:
-- development-tools
+- data-ai
+- artificial-intelligence
+- machine-learning
 modules:
 - learn.azure-percept.prerequisites
 - learn.azure-percept.explore

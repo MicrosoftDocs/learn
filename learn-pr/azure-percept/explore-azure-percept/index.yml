@@ -4,10 +4,10 @@ metadata:
   title: Explore Azure Percept
   description: Learn what Azure Percept is, learn how the components of Azure Percept work together to create edge AI solutions, and understand the scenarios where you could use Azure Percept.
   ms.date: 06/14/2022
-  ms.author: amiyouss
+  ms.author: chnoring
   author: Amiyouss
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.prod: learning-azure
 title: Explore Azure Percept
 summary: In this module, you'll learn what Azure Percept is, learn how the components of Azure Percept work together to create edge AI solutions, and understand the scenarios where you could use Azure Percept.
 abstract: |
@@ -23,9 +23,21 @@ badge:
 levels:
 - beginner
 roles:
+- ai-engineer
+- ai-edge-engineer
+- data-scientist
+- solution-architect
 - student
+- developer
+- business-user
 products:
+- azure-machine-learning
+- azure-cognitive-services
+- azure
+- azure-percept
+- azure-iot
 - azure-iot-edge
+- azure-iot-hub
 units:
 - learn.azure-percept.explore.introduction
 - learn.azure-percept.explore.what-is-azure-percept
