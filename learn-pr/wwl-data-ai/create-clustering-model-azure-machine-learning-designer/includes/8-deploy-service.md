@@ -45,3 +45,5 @@ After you've created and tested an inference pipeline for real-time inferencing,
 3. Select **Test**. On the right hand of the screen, you should see the output **'assignments'**. Notice how the assigned cluster is the one with the shortest distance to cluster center. 
 
     ![Screenshot of the Test pane.](../media/test-interface.png)
+
+You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
