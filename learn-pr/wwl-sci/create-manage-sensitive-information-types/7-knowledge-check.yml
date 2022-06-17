@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "A built-in sensitive information type."
       isCorrect: false
-      explanation: "This answer is not correct. Built-in information types cannot be modified to include custom keywords."
+      explanation: "This answer isn't correct. Built-in information types cannot be modified to include custom keywords."
     - content: "A Keyword List in a custom sensitive information type."
       isCorrect: false
-      explanation: "This answer is not correct. A Keyword List is defined in the .xml definition and not suitable for a very large number of keywords."
+      explanation: "This answer isn't correct. A Keyword List is defined in the .xml definition and not suitable for a very large number of keywords."
     - content: "A Keyword Dictionary."
       isCorrect: true
       explanation: "This answer is correct. A large number of keywords can be used best in a Keyword Dictionary."
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "Keyword Dictionary"
       isCorrect: false
-      explanation: "This answer is not correct."
+      explanation: "This answer isn't correct."
     - content: "Document Fingerprinting"
       isCorrect: true
       explanation: "This answer is correct."
     - content: "Proximity indicators"
       isCorrect: false
-      explanation: "This answer is not correct."
+      explanation: "This answer isn't correct."
   - content: "Which component of sensitive information types uses more evidence to reduce false positives?"
     choices:
     - content: "Character proximity"
       isCorrect: false
-      explanation: "This answer is not correct."
+      explanation: "This answer isn't correct."
     - content: "Primary pattern"
       isCorrect: false
-      explanation: "This answer is not correct."
+      explanation: "This answer isn't correct."
     - content: "Confidence level"
       isCorrect: true
       explanation: "This answer is correct."

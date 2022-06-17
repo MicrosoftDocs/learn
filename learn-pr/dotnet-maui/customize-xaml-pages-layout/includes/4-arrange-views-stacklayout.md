@@ -8,7 +8,7 @@ Stacking views in a vertical or horizontal list is a common design for user inte
 
 - `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which are good because most UI elements you'll work with in .NET MAUI derive from `View`. Layout panels are also derived from `View`, which means you can nest panels if you need to.
 
-- `VerticalStackLayout` and `HorizontalStackLayout` are the preferred layouts to use when you know that your orientation will not change as they are optimized for performance.
+- `VerticalStackLayout` and `HorizontalStackLayout` are the preferred layouts to use when you know that your orientation won't change as they are optimized for performance.
 
 ## How to add views to a StackLayout
 
@@ -57,7 +57,7 @@ The order of the views in the `Children` collection determines their layout orde
 
 ## How to change the space between views in a StackLayout
 
-It's common to want some space between the children of a `StackLayout`. `StackLayout` automatically adds a bit of room between each child, but you can control the space by using the `Spacing` property. The default value is six units, but you can set it to whatever looks good to you. Here's an example of setting the `Spacing` property to `30` in XAML:
+It's common to want some space between the children of a `StackLayout`. `StackLayout` lets you control the space between each child by using the `Spacing` property. The default value is zero units, but you can set it to whatever looks good to you. Here's an example of setting the `Spacing` property to `30` in XAML:
 
 ```xaml
 <StackLayout Spacing="30">
@@ -97,7 +97,7 @@ The following screenshot shows how the UI would render on an Android device:
 
 Every view has a `VerticalOptions` and `HorizontalOptions` property. You can use these properties to set the position of the view within the rectangular display area provided by the layout panel.
 
-As noted above, with `StackLayout`, the behavior of the `LayoutOptions` properties depends on the `Orientation` property of the `StackLayout`. `StackLayout` uses the `LayoutOptions` property in the direction opposite to its `Orientation`. By default, an element in a stack layout will not be allocated any extra space in the same direction as the `Orientation` of the stack layout. Assigning a position for that direction in this default case will not change the rendering of the element. There is a change in the rendering, though, when position is combined with expansion.
+As noted above, with `StackLayout`, the behavior of the `LayoutOptions` properties depends on the `Orientation` property of the `StackLayout`. `StackLayout` uses the `LayoutOptions` property in the direction opposite to its `Orientation`. By default, an element in a stack layout won't be allocated any extra space in the same direction as the `Orientation` of the stack layout. Assigning a position for that direction in this default case won't change the rendering of the element. There's a change in the rendering, though, when position is combined with expansion.
 
 ## What is expansion?
 
@@ -118,7 +118,8 @@ Here's how each of these values works:
 The orange box is the view and the gray rectangle represents the extra space given to it by the `Expands` property. The view fills the extra space only when you use the `FillAndExpand` value. When you use the other values, the extra space remains empty, but it can't be used by other views in the `StackLayout`.
 
 ## Optimized StackLayouts
-Mentioned earlier, the `VerticalStackLayout` and `HorizontalStackLayout` are optimized `StackLayout` controls with pre-defined orientations. It is recommended to use these controls when possible for the best layout performance. These layouts have the functionality of `LayoutOptions` and `Spacing` that the regular `StackLayout` has.
+
+As mentioned earlier, the `VerticalStackLayout` and `HorizontalStackLayout` are optimized `StackLayout` controls with pre-defined orientations. It's recommended to use these controls when possible for the best layout performance. These layouts have the functionality of `LayoutOptions` and `Spacing` that the regular `StackLayout` has.
 
 ```xaml
 <VerticalStackLayout Spacing="30">
