@@ -12,9 +12,9 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following characteristics of IoT Edge enables it to distribute AI workloads to the edge?"
+  - content: "Which properties of IoT Edge enables it to distribute AI workloads to the edge?"
     choices:
-    - content: "IoT Edge deploys models that are built and trained in the cloud, and then it runs them on edge devices."
+    - content: "IoT Edge deploys models that are built and trained in the cloud and then run them on edge devices."
       isCorrect: true
       explanation: "Correct. When IoT Edge deploys a model to the edge, a model can process data locally and respond to the event rapidly."
     - content: "IoT Edge can optimize network functionality."

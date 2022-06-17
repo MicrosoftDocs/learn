@@ -9,7 +9,9 @@ Manufacturing presents many challenges where you can use edge AI, for example, o
 Here are some use cases that Azure Percept can address in the manufacturing space:
 
 - **Predictive maintenance**. Use data analysis tools and techniques to detect anomalies and possible equipment defects and process them so you can fix them before they result in failure.
+
 - **Factory automation and defect detection**. Perform quality checks during and at the end of the production process to detect critical defects in products.
+
 - **Field service**. Manage work tasks that are completed in any remote location.
 
 ## Energy
@@ -19,7 +21,9 @@ With the current energy supply chain crisis, there are many areas where Azure Pe
 Here are some of the use cases that Azure Percept can address in the energy space:
 
 - **Energy management**. Control and reduce energy consumption for greater efficiency.
+
 - **Supply chain and operational efficiency**. The capability to make the most optimum use of resources (financial, human, technological or physical) to reduce operational costs and reduce time wastage.
+
 - **Worker Safety**. The capability to detect dangerous zone (machinery, trench), and worker slip and fall.
 
 ## Smart cities/buildings
@@ -29,7 +33,9 @@ The smart cities domain brings together many security, energy, access, and trans
 Here are some use cases that Azure Percept can address in the smart cities and buildings space:
 
 - **Transportation and traffic management**. The control, direction, and supervision of all functions related to the procurement and use of transportation services.
+
 - **Security and surveillance**. Continuous monitoring of specific individuals, groups, or areas.
+
 - **Access control**. Determine who can access and use information and resources.
 
 ## Connected automotive
@@ -39,7 +45,9 @@ Azure Percept can add value by deploying edge AI in the connected automotive ind
 Here are some use cases that Azure Percept can address in the connected automotive space:
 
 - **Factory automation**. Implementation of technology and systems to automate a manufacturing process with the ultimate goal of increasing productivity and reducing costs.
+
 - **Passenger detection**. Detection of the presence of an unauthorized person in the passenger compartment or elsewhere in the vehicle.
+
 - **Cabin intelligence**. Protection of drivers from fatigue and distraction while also identifying behaviors to recognize and reward.
 
 ## Retail
@@ -49,7 +57,9 @@ Modern retail spans core grocery store functions, discount stores, hypermarkets,
 Here are some use cases that Azure Percept can address in the retail space:
 
 - **Consumer behavior**. Analyze consumer traffic and behavior patterns within retail and drive-through stores and offering personalized recommendations.
+
 - **Shelf analytics**. Advanced product analytics through automated stockout analytics, product placement, planogram compliance, and end cap management.
+
 - **Inventory management and shrinkage reduction**. Track goods lost from the recorded inventory list.
 
 ## Healthcare
@@ -59,7 +69,9 @@ With the current and potential future pandemics coupled with an aging population
 Here are some use cases that Azure Percept can address in the healthcare space:
 
 - **Patient recognition and monitoring**. The capability to recognize, identify, and/or verify a patient from a digital image or video frame.
+
 - **Waiting room prioritization**. The capability to prioritize assignment of waiting rooms based on the patient’s priority or severity.
+
 - **Scheduling and reminders**. The ability to schedule appointments remotely and automatically send reminders.
 
-*To learn more, see additional resources in the summary section.*
+**_To learn more, see additional resources in the summary section._**
