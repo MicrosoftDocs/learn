@@ -56,6 +56,29 @@ Typically, the Remote Desktop client is already installed and configured on Wind
 
 Once connected, you can install required software to the template VM. (We aren't installing any software in this exercise.)
 
+## Publish a lab
+
+In this step, you publish the lab. When you publish the template VM, Azure Lab Services creates VMs in the lab by using the template. All virtual machines have the same configuration as the template.
+
+1. On the **Template** page, select **Publish** on the toolbar.
+
+    :::image type="content" source="./media/tutorial-setup-lab/template-page-publish-button.png" alt-text="Screenshot of Azure Lab Services template page. The Publish template menu button is highlighted.":::
+
+1. On the **Publish template** page, select **Publish**. Select **OK** when warned that publishing is a permanent action.
+
+   You see the **status of publishing** the template on page.
+
+1. Wait until the publishing is complete.
+
+1. Select **Virtual machine pool** on the left menu or select **Virtual machines** tile on the dashboard page to see the list of available machines. Confirm that you see virtual machines that are in **Unassigned** state. These VMs aren't assigned to students yet. They should be in **Stopped** state.
+
+    :::image type="content" source="./media/tutorial-setup-lab/virtual-machines-stopped.png" alt-text="Screenshot of virtual machines stopped.  The virtual machine pool menu is highlighted.":::
+
+    > [!NOTE]
+    > When an educator turns on a student VM, quota for the student isn't affected. Quota for a user specifies the number of lab hours available to a student outside of the scheduled class time.
+
+At this point, you would normally add lab users and send them invitations to the lab. But for this example scenario, since you don't have actual students, you will skip that step.
+
 ## Set a schedule for the lab
 
 Create a scheduled event for the lab so that VMs in the lab are automatically started and stopped at specific times. The user quota (default: 10 hours) you specified earlier is the extra time assigned to each student outside this scheduled time.
@@ -82,10 +105,3 @@ Create a scheduled event for the lab so that VMs in the lab are automatically st
 
     :::image type="content" source="../media/schedule-calendar.png" alt-text="Screenshot of the Schedule page for Azure Lab Services.  Repeating schedule, Monday through Friday shown in the calendar.":::
 
-## Publish the lab
-
-At this point, you would normally add lab users. But for this example scenario, since you don't have actual students, you will skip that step.
-
-Instead, you will publish the lab.
-
-[STEPs]
