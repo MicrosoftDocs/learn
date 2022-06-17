@@ -6,15 +6,19 @@ This is the core of **Zero Trust**. Instead of believing everything behind the c
 
 There are three foundational principles of Zero Trust:
 
-* **Verify explicitly** - Protect assets against attacker control by explicitly validating that all trust and security decisions use all relevant available information and telemetry. Limit access of a potentially compromised asset with just-in-time and just-enough-access (JIT/JEA) and risk-based policies like adaptive access control. Assume attackers can and will successfully attack anything in the system (identity, network, device, app, infrastructure, etc.) and plan accordingly.
-* **Use least privilege access** - A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. This is done by implementing Zero Trust controls and technologies across six foundational elements. Each of these is a source of signal, a control plane for enforcement, and a critical resource to be defended.
-* **Assume breach** - Different organizational requirements, existing technology implementations, and security stages all affect how a Zero Trust security model implementation is planned. Using our experience in helping customers to secure their organizations, as well as in implementing our own Zero Trust model, we've developed the following guidance to assess your readiness and to help you build a plan to get to Zero Trust.
+* **Verify explicitly** - Always authenticate and authorize based on all available data points.
+* **Use least privilege access** - Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+* **Assume breach** - Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
+
+This is the core of Zero Trust. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
 The following diagram visually illustrates the zero trust principles:
 
 :::image type="content" source="../media/zero-trust-principles.png" alt-text="Diagram showing zero trust principles." lightbox="../media/zero-trust-principles.png":::
 
 ## Technology pillars of Zero Trust
+
+A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. This is done by implementing Zero Trust controls and technologies across six foundational elements. Each of these is a source of signal, a control plane for enforcement, and a critical resource to be defended.
 
 The Zero Trust approach can be organized around key technological pillars:
 
@@ -29,3 +33,5 @@ ate access based on real-time analytics, monitor for abnormal behavior, control 
 * **Secure networks with Zero Trust** - All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and
 deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.
 * **Visibility, automation, and orchestration with Zero Trust** - In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each Of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
+
+With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
