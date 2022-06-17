@@ -2,14 +2,14 @@ These are a few try-this exercise to configure Privileged Identity Management (P
 
 ## Task 1: Azure AD PIM for roles
 
-In this task, we will configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
+In this task, we'll configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
 
 ### Configure PIM settings
 
 > [!NOTE]
 > This task requires a **AZ500User1** account with no assigned roles.
 
-In this task, we will review and configure the basic PIM settings.
+In this task, we'll review and configure the basic PIM settings.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure AD Roles**.
@@ -17,18 +17,18 @@ In this task, we will review and configure the basic PIM settings.
 4.  Select the **Billing Administrator** role.
 5.  Click **Edit**.
 6.  Notice the **Activation**, **Assignment**, and **Notification** tabs.
-7.  Be default, MFA is required on activation. For this demonstration, change the requirement to **None**.
+7.  By default, MFA is required on activation. For this demonstration, change the requirement to **None**.
 8.  Check the box to **Require approval to activate**.
 9.  Discuss the other possible settings including **Activation maximum duration** and **Require approval to activate**.
 10. Switch to the **Assignment** tab and require the settings.
 11. Notice the ability to expire eligible and active assignments.
 12. Switch to the **Notifications** tab and discuss the settings.
-13. Notice you can send notifications when member are assigned and activated.
+13. Notice you can send notifications when members are assigned and activated.
 14. Click **Update**.
 
 ### Configure PIM for Roles
 
-In this task, we will add the Billing Administrator role to PIM.
+In this task, we'll add the Billing Administrator role to PIM.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure AD Roles**.
@@ -39,7 +39,6 @@ In this task, we will add the Billing Administrator role to PIM.
 7.  Click **Add member**.
 8.  Click **Select member** and **Select** the **AZ500User1** user. You are now a Billing Administrator.
 9.  Select **Set membership settings**. Notice the settings can be permanent or limited in time.
-    
      -  Assignment type: **Eligible**
      -  Permanently eligible: **check the box**.
 10. **Save** your changes and **Add** the assignment.
@@ -47,7 +46,7 @@ In this task, we will add the Billing Administrator role to PIM.
 
 ### Activate a role
 
-In this task, we will activate the Billing Administrator role.
+In this task, we'll activate the Billing Administrator role.
 
 1.  In the **Portal**, search for and select **Azure Active Directory**.
 2.  Under **Manage** click **Users**.
@@ -80,11 +79,11 @@ In this task, test the Billing Administrator role.
 
 ## Task 2: Azure AD PIM for resources
 
-In this task, we will configure PIM for Azure resources, activate the Virtual Machine Contributor role, and test the role access.
+In this task, we'll configure PIM for Azure resources, activate the Virtual Machine Contributor role, and test the role access.
 
 ### Configure PIM for Azure resources
 
-In this task, we will add the subscription to PIM, then add the Virtual Machine Contributor role as a Active role.
+In this task, we'll add the subscription to PIM, then add the Virtual Machine Contributor role as an Active role.
 
 1.  In the **Portal**, search for and select **Azure AD Privileged Identity Management**.
 2.  Under **Manage** select **Azure Resources**.
@@ -104,7 +103,7 @@ In this task, we will add the subscription to PIM, then add the Virtual Machine 
 
 ### Activate the role
 
-In this task, we will sign-in as a user and activate the role.
+In this task, we'll sign-in as a user and activate the role.
 
 1.  Sign in to the **Portal** and **AZUser1**.
 2.  Search for and select **Azure AD Privileged Identity Management**.
@@ -121,7 +120,7 @@ In this task, we will sign-in as a user and activate the role.
 
 ### Test the role access
 
-In this task, we will check to ensure the role has been assigned.
+In this task, we'll check to ensure the role has been assigned.
 
 1.  Sign in to the Portal as **AZ500User1**.
 2.  Search for and select **Azure AD Privileged Identity Management**.
