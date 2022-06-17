@@ -16,7 +16,7 @@ Conceptual knowledge of security policies, requirements, zero trust architecture
 
 Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals 
 
-## Security Operations Strategy Overview 
+## Security Operations strategy overview 
 
 One of the significant changes in perspectives that are a hallmark of a Zero Trust security framework is moving away from trust-by-default toward trust-by-exception. However, this still requires a reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires gaining visibility into the activities on and around the request. 
 
