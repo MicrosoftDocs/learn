@@ -23,7 +23,7 @@ offered by a particular cloud provider in a specific location.
 
 The following video provides a good background on hybrid and multicloud strategy within the Cloud Adoption Framework:
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RWMBdw?postJsllMsg=true]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMBdw?postJsllMsg=true]
 
 ## Unified operations
 
