@@ -14,7 +14,7 @@ In this module, we'll walk through how to grant the Microsoft Purview managed id
 
 1. Select **Add role assignments**.
 
-    :::image type="content" source="../media/6-register-and-scan-exercise/storage-addrole.png" alt-text="Screenshot of Access Control menu in a storage account with the 'Add role assignment' button highlighted.":::
+    :::image type="content" source="../media/6-register-and-scan-exercise/storage-add-role.png" alt-text="Screenshot of Access Control menu in a storage account with the 'Add role assignment' button highlighted.":::
 
 1. Filter the list of roles by searching for `Storage Blob Data Reader`, select the row to select the role, and then select **Next**.
 
@@ -66,7 +66,7 @@ At this point, we've registered a data source. Assets aren't written to the cata
 
     [Scan Rule Sets](/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
-    :::image type="content" source="../media/6-register-and-scan-exercise/scan-ruleset.png" alt-text="Screenshot of the select a scan ruleset screen, with the AdlsGen2 system default rule set selected.":::
+    :::image type="content" source="../media/6-register-and-scan-exercise/scan-rule-set.png" alt-text="Screenshot of the select a scan rule set screen, with the AdlsGen2 system default rule set selected.":::
 
 1. Select **Once** and select **Continue**.
 
