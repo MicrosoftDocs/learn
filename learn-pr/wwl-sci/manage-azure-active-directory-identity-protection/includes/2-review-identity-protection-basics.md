@@ -1,10 +1,10 @@
-Identity Protection is a service that enables organizations to view the security posture of any account. This allows organizations to accomplish three key tasks:
+Identity Protection is a service that enables organizations to view the security posture of any account. Organizations can accomplish three key tasks:
 
 - Automate the detection and remediation of identity-based risks.
 - Investigate risks using data in the portal.
 - Export risk detection data to third-party utilities for further analysis.
 
-Always remember that Azure AD Identity Protection requires an Azure AD Premium P2 license to operate. This is covered in more detail in a later unit.
+Always remember that Azure AD Identity Protection requires an Azure AD Premium P2 license to operate. Licensing is covered in more detail in a later unit.
 
 Identity Protection uses the knowledge Microsoft has gained from its position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 6.5 trillion signals per day to identify and protect customers from threats.
 
@@ -35,10 +35,10 @@ Identity Protection requires users be a Security Reader, Security Operator, Secu
 | :----- | :----- | :---- |
 | Global Administrator | Full access to Identity Protection | |
 | Security Administrator | Full access to Identity Protection | Reset password for a user |
-| Security Operator | View all Identity Protection reports and Overview screen, Dismiss user risk, confirm safe sign in, confirm compromise | Configure or change policies, Reset password for a user, Configure alerts |
+| Security Operator | View all Identity Protection reports and Overview screen, Dismiss user risk, confirm safe sign-in, confirm compromise | Configure or change policies, Reset password for a user, Configure alerts |
 | Security Reader | View all Identity Protection reports and Overview screen | Configure or change policies, Reset password for a user, Configure alerts, Give feedback on detections |
 
-Currently, the Security Operator role cannot access the Risky sign ins report. Conditional Access Administrators can also create policies that factor in sign in risk as a condition.
+Currently, the Security Operator role cannot access the Risky sign ins report. Conditional Access Administrators can also create policies that factor in sign-in risk as a condition.
 
 ## License requirements
 
