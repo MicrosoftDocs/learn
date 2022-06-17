@@ -1,0 +1,16 @@
+In this module, you learned about some of the compute and networking services that are part of Azure. You learned about virtual machines, and the different options associate with them (such as virtual machine scale sets adn virtual machien availability sets). You were also introduced to some of the networking capabilities, including virtual networking, ExpressRoute, and virtual private networks.
+
+# Learning objectives
+
+You should now be able to:
+
+ -  Compare compute types, including container instances, virtual machines, and functions.
+ -  Describe virtual machine options, including virtual machines (VMs), virtual machine scale sets, virtual machine availability sets, and Azure Virtual Desktop.
+ -  Describe resources required for virtual machines.
+ -  Describe application hosting options, including Azure Web Apps, containers, and virtual machines.
+ -  Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute.
+ -  Define public and private endpoints.
+
+## Additional resources<br>
+
+For more information on some of the topics covered in this module or related topics, see the following resources.
