@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-data-analytics
+metadata:
+  title: Get started with data analytics
+  description: "Get started with data analytics"
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with data analytics
+summary: Converting raw data to useful information is essential for business users. This module covers fundamental concepts of aggregating data and grouping data.
+abstract: |
+  By the end of this module, you will be able to:
+  - Describe data aggregation
+  - Describe grouping of data
+  - Describe data visualizations
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- database-administrator
+products:
+- azure-database-mysql
+- azure-database-postgresql
+- azure-sql-database
+- azure-sqlserver-vm
+- sql-server
+subjects:
+- database
+units:
+- learn.wwl.get-started-data-analytics.introduction
+- learn.wwl.get-started-data-analytics.aggregate-data
+- learn.wwl.get-started-data-analytics.group-data
+- learn.wwl.get-started-data-analytics.visualize-data
+- learn.wwl.get-started-data-analytics.exercise-analyze-data
+- learn.wwl.get-started-data-analytics.knowledge-check
+- learn.wwl.get-started-data-analytics.summary
+badge:
+  uid: learn.wwl.get-started-data-analytics.badge
