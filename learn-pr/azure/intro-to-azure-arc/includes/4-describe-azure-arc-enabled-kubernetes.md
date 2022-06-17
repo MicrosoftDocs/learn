@@ -87,7 +87,7 @@ Azure Arc-enabled Kubernetes deploys several agents.
 > [!NOTE]
 > These agents run in the `azure-arc` namespace in your Kubernetes clusters.
 
-The following table describes these agents.
+The following table describes some of these agents:
 
 |Agent|Description|
 |---|---|
