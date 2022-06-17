@@ -1,6 +1,6 @@
-You have already learned that the MySQL server maintains a cache of threads available to new connections, and that when a thread is no longer required it is destroyed.
+You've already learned that the MySQL server maintains a cache of threads available to new connections, and that when a thread is no longer required it's destroyed.
 
-Azure Database for MySQL Flexible Server allows you to configure a **thread pool**, a feature which provides a pool of worker threads that limit the number of active threads running on the server. For workloads with many short-lived connections and short transaction queries, this feature improves performance and the scalability of Azure Database for MySQL.
+Azure Database for MySQL Flexible Server allows you to configure a **thread pool**, a feature that provides a pool of worker threads that limit the number of active threads running on the server. For workloads with many short-lived connections and short transaction queries, this feature improves performance and the scalability of Azure Database for MySQL.
 
 The Enterprise edition of MySQL offers a thread pool plugin.
 
@@ -17,7 +17,7 @@ Using Thread Pool is likely to be less efficient for the following scenarios:
 
 - Long periods of inactivity followed by high activity.
 - Long running queries that never wait.
-- Insufficient IOPS. Flexible server allows additional IOPS up to 20K above the IOPS limit.
+- Insufficient IOPS. Flexible server allows additional IOPS up to 20 K above the IOPS limit.
 
 To enable thread pool in the Azure portal:
 
@@ -36,7 +36,7 @@ There are two further settings that can improve performance by allowing threads 
 You can also define the number of threads in the pool by setting the following server parameters:
 
 - **thread_pool_max_threads** This defines the maximum number of threads in the pool at any one time.
-- **thread_pool_min_threads** This defines the minimum the number of threads that will be reserved in the pool, even after connections are closed.
+- **thread_pool_min_threads** This defines the minimum number of threads that will be reserved in the pool, even after connections are closed.
 
 > [!NOTE]
 > MySQL 5.6 does not support thread pools.
