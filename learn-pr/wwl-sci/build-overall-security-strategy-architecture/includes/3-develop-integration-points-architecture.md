@@ -60,3 +60,5 @@ The table below shows the full organizational security landscape, demonstrating 
 For a detailed discussion of many of the Azure components in the MCRA, view the following video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
+
+For a full series of videos covering all aspects of the MCRA, please see [Microsoft Cybersecurity Reference Architectures (MCRA)](https://www.youtube.com/playlist?list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ).
