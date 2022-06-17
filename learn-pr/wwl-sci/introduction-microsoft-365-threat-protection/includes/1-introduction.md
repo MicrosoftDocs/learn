@@ -2,7 +2,7 @@ Microsoft 365 Defender is an integrated threat protection suite. With solutions 
 
 In the sample attack chain graphic below, see the attacker activity visible to each Microsoft 365 Defender product.
 
-[![Diagram of Microsoft 365 Defender tools to Defend across attack chains.](../media/defend-across-attack-chains.png)](../media/defend-across-attack-chains.png#lightbox)
+:::image type="content" source="../media/defend-across-attack-chains.png" alt-text="Diagram of Microsoft 365 Defender tools to Defend across attack chains.":::
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft 365 Defender solutions.  You need to understand how Extended Detection and Response (XDR) combines signals from endpoints, identity, email, and applications to detect and mitigate threats. 
 

@@ -3,7 +3,7 @@ The following are examples of detection and mitigation use cases.
 ## Detection of Threat 
 This scenario depicts a case where Microsoft Defender for Endpoint detects a malicious payload (which could come from any source, including personal email or a USB drive). 
 
-[![Diagramming the Detection of a Compromised endpoint.](../media/comprimised-endpoint.png)](../media/comprimised-endpoint.png#lightbox)
+:::image type="content" source="../media/compromised-endpoint.png" alt-text="Diagram the Detection of a Compromised endpoint.":::
  
 The victim receives a malicious email on personal email account (not protected by Microsoft Defender for Office 365 (MDO)) or a USB drive and opens the attachment. 
 Once the attachment opens, the malware infects the computer. The user is unaware that an attack has taken place. But
@@ -23,7 +23,7 @@ Remediate Threat Variants in MDO and others – The threat signals in Microsoft 
 
 ## from the previous graphic when the user’s device was still compromised.   
 
-[![Diagram of steps to Suspend access during compromise.](../media/suspend-access-compromise.png)](../media/suspend-access-compromise.png#lightbox)
+:::image type="content" source="../media/suspend-access-compromise.png" alt-text="Diagram of steps to Suspend access during compromise.":::
 
   
 ### Access Restricted  

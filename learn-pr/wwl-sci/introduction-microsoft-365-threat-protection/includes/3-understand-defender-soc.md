@@ -1,7 +1,7 @@
 
 The following graphic provides an overview of how Microsoft 365 Defender and Microsoft Sentinel are integrated in a Modern SOC.                                                                                                                                                                                   
 
-[![In depth diagram of Security Operations.](../media/security-operations.png)](../media/security-operations.png#lightbox)
+:::image type="content" source="../media/security-operations.png" alt-text="Diagram that shows the layers and technologies of Security Operations.":::
 
 
 
@@ -15,7 +15,7 @@ While the assignment of responsibilities to individual people and teams will var
 > We primarily refer to the analysts by the team name, not the Tier numbers as these teams each have unique specialized skills, they are not a literal ranking/hierarchical of value. 
 
 
-[![Security Operations Model with functions and tools.](../media/security-operations-model.png)](../media/security-operations-model.png#lightbox)
+:::image type="content" source="../media/security-operations-model.png" alt-text="Diagram that shows the Security Operations Model with functions and tools.":::
 
 
 
@@ -49,7 +49,7 @@ This is a multi-disciplinary team focused on identifying attackers that may have
 - **Hunt** – This team proactively hunts for undetected threats, assists with escalations and advanced forensics for reactive investigations, and refines alerts/automation. These teams operate in more of a hypothesis-driven model than a reactive alert model and are also where red/purple teams connect with security operations. 
 
 
-### HOW IT COMES TOGETHER 
+### How It Comes Together 
 
 To give you an idea of how this works, let’s follow a common incident lifecycle
 
