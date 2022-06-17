@@ -1,4 +1,4 @@
-When you run at cloud scale, you need intelligent logging and monitoring tools that scale to your needs and provide insight into your data in real-time.
+When you run at a cloud-scale, you need intelligent logging and monitoring tools that scale to your needs and provide insight into your data in real-time.
 
 Azure Monitor is Microsoft's native cloud monitoring solution. Azure Monitor collects monitoring telemetry from different kinds of on-premises and Azure sources.
 
@@ -6,7 +6,7 @@ Azure Monitor provides Management tools, such as those in Azure Security Center 
 
 The service aggregates and stores this telemetry in a log data store optimized for cost and performance.
 
-With Azure Monitor, you can analyze data, set up alerts, get end-to-end views of your applications. And use machine-learning-driven insights to identify and resolve problems quickly.
+With Azure Monitor, you can analyze data, set up alerts, and get end-to-end views of your applications. And use machine-learning-driven insights to identify and resolve problems quickly.
 
 :::image type="content" source="../media/azure-monitor-68847a2c.png" alt-text="Azure Monitor":::
 
@@ -20,7 +20,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
 
 ## Getting started
 
-1.  To follow along, you'll need a resource group with one or more virtual machines that you have RDP access to.
+1.  You'll need a resource group with one or more virtual machines that you have access to RDP to follow along.
 2.  Log into [Azure Shell](https://shell.azure.com/powershell). Execute the command below. It will create a new resource group and create a new log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we'll be using it again.
     
     ```powershell
@@ -39,7 +39,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     }
     
     # Create the workspace
-    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroup
+    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -ResourceGroupName $ResourceGroup
     
     # List all solutions and their installation status
     Get-AzOperationalInsightsIntelligencePacks -ResourceGroupName $ResourceGroup -WorkspaceName $WorkspaceName
@@ -182,9 +182,9 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
     {
         ForEach ($Counter in $PerfCounters)
         {
-            New-AzureRmOperationalInsightsWindowsPerformanceCounterDataSource `
+            New-AzOperationalInsightsWindowsPerformanceCounterDataSource `
                         -ResourceGroupName 'azwe-rg-devtest-logs-001' `
-                        -WorkspaceName 'azwe-devtest-logs-001' `
+                        -WorkspaceName 'azwe-devtest-logs-01' `
                         -ObjectName $PerfObject `
                         -InstanceName $Instance `
                         -CounterName $Counter `
