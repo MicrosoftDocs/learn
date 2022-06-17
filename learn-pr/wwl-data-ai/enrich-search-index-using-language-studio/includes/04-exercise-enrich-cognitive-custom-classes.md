@@ -26,7 +26,7 @@ Install these tools to complete this exercise. You can still follow along with t
 To save you time, select this Azure arm template to create resources you'll need later in the exercise.
 
 ### Deploy a pre-built arm template 
-MicrosoftLearning/mslearn-doc-intelligence/main/cognitive-search/azuredeploy.json
+
 1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploytoazure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
 
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
@@ -541,7 +541,7 @@ You now have fields to store the enrichment, a skillset to call your function ap
 
 Each document in the index should have a new `textclass` field that can be searched. It contains a category field with the movies genres. It can be more than one. It also shows how confident the custom text classification model is about the identified genre.
 
-Now that you've completed the exercise, delete all resources you no longer need.
+Now that you've completed the exercise, delete all the resources you no longer need.
 
 ### Delete exercise resources
 
