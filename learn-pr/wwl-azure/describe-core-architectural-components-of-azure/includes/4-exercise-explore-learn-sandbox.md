@@ -52,7 +52,7 @@ Get-date
 
 You received an error because Get-date is a PowerShell specific command.
 
-:::image type="content" source="../media/sandbox-bash-date-8b20e391.png" alt-text="Screenshot of BASH error message "get-date: command not found".":::
+:::image type="content" source="../media/sandbox-bash-date-8b20e391.png" alt-text="Screenshot of BASH error message "get-date command not found".":::
 
 
 Use the date command to get the current date and time.
