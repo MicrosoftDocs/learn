@@ -11,7 +11,7 @@ Here's what the Books web application will look like.
 Here's how each component of the MEAN stack fits in.
 
 * MongoDB stores information about books.
-* Express routes each HTTP request to the appropriate handler.
+* Express.js routes each HTTP request to the appropriate handler.
 * AngularJS connects the user interface with the program's business logic.
 * Node.js hosts the server-side application.
 
@@ -20,9 +20,9 @@ Here's how each component of the MEAN stack fits in.
 
 ## What about Express?
 
-So far, you've installed MongoDB and Node.js on your VM. What about Express, the **E** in the MEAN acronym?
+So far, you've installed MongoDB and Node.js on your VM. What about Express.js, the **E** in the MEAN acronym?
 
-Express is a web server framework that's built for Node.js that simplifies the process for building web applications.
+Express.js is a web server framework that's built for Node.js that simplifies the process for building web applications.
 
 The main purpose of Express is to handle request routing. _Routing_ refers to how the application responds to a request to a specific endpoint. An endpoint is made up of a path, or URI, and a request method, such as GET or POST. For example, you might respond to a GET request to the `/book` endpoint by providing the list of all books in the database. You might respond to a POST request to the same endpoint by adding an entry to the database based on fields the user entered into a web form.
 
@@ -134,7 +134,7 @@ You're now back at your Cloud Shell session.
 
     Next, you'll create HTTP handlers that map GET, POST, and DELETE requests to database operations.
 
-### Create the Express routes that handle HTTP requests
+### Create the Express.js routes that handle HTTP requests
 
 1. From the editor, open `app/routes.js` and add the following code.
 
@@ -188,7 +188,7 @@ You're now back at your Cloud Shell session.
     | DELETE | `/book/:isbn` | Deletes the book as identified by its ISBN from the database. |
     | GET | `*` | Returns the index page when no other route is matched. |
 
-    Express can serve up HTTP responses directly in the route handling code or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
+    Express.js can serve up HTTP responses directly in the route handling code or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
 
 ### Create the client-side JavaScript application
 
@@ -306,9 +306,9 @@ You're now back at your Cloud Shell session.
 
     Although this is standard HTML code, the `ng-` HTML attributes may be unfamiliar to you. These HTML attributes wire up the AngularJS code to the user interface. For example, when you select **Add**, AngularJS calls the `add_book` function, which sends the form data to the server.
 
-    You can examine the code here to get a sense of how each of the `ng-` attributes relate to application's business logic.
+    You can examine the code here to get a sense of how each of the `ng-` attributes relates to application's business logic.
 
-### Create the Express server to host the application
+### Create the Express.js server to host the application
 
 1. From the editor, open `server.js` and add this code.
 
@@ -398,7 +398,7 @@ var mongoose = require('mongoose');
 
 Recall that the application uses Mongoose to help transfer data in and out of your MongoDB database.
 
-The application also requires Express and the body-parser packages. body-parser is a plugin that enables Express to work with data from the web form sent by the client.
+The application also requires Express.js and the body-parser packages. Body-parser is a plugin that enables Express to work with data from the web form sent by the client.
 
 Let's connect to your VM and install the packages you specified in `package.json`.
 
@@ -419,8 +419,7 @@ Let's connect to your VM and install the packages you specified in `package.json
 1. Run `npm install` to install the dependent packages.
 
     ```bash
-    sudo apt install npm
-    npm install
+    sudo apt install npm -y && npm install
     ```
 
 Keep your SSH connection open for the next part.

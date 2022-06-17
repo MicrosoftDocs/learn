@@ -982,3 +982,8 @@ achievements:
   title: Describe SQL Server query plans
   summary: Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated.
   iconUrl: /learn/achievements/describe-sql-server-query-plans.svg
+- uid: learn.reactors.blockchain-create-ui-decentralized-apps.badge
+  type: badge
+  title: Create a user interface with decentralized apps
+  summary: Learn about decentralized apps and how to build your own.
+  iconUrl: /learn/achievements/reactors/blockchain-create-ui-decentralized-apps.svg

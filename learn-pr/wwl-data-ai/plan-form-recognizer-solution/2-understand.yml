@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-form-recognizer-solution.understand
+title: Understand Form Recognizer
+metadata:
+  title: Understand Form Recognizer
+  description: "Understand Form Recognizer"
+  ms.date: 06/15/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand.md)]

@@ -41,7 +41,7 @@ The results of this query consist of JSON documents, similar to this:
 {
    "id": 123,
    "name": "Hammer",
-   "price": 2.99}
+   "price": 2.99
 }
 ```
 
