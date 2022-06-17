@@ -1,4 +1,4 @@
-Often, data analysts hear complaints that reports look outdated and take forever to load. You can solve many of these problems with features already available in Power BI. By implementing some of those advanced features, your reports will be more cohesive, inclusive, and efficient.
+Often, report creators hear complaints that reports look outdated and take forever to load. You can solve many of these problems with features already available in Power BI. As an enterprise data analyst, implementing these advanced features will make your reports more cohesive, inclusive, and efficient.
 
 In this module, you’ll learn how to:
 

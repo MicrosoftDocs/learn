@@ -1,8 +1,8 @@
-A good report designer is always looking for ways to improve the end-user experience, and report speed is a common complaint. By using **Performance Analyzer**, you can see which parts of your report are running suboptimally and make adjustments where possible. 
+A good report designer is always looking for ways to improve the end-user experience, and report speed is a common complaint. In an enterprise with many reports, every millisecond can improve the experience. By using Performance Analyzer, you can identify suboptimal report elements and adjust where possible.
 
 ## What is Performance Analyzer?
 
-Performance Analyzer is a built-in feature in Power BI Desktop that measures how long report elements take to update and refresh, allowing you to see if certain elements are significantly slower. 
+Performance Analyzer is a built-in feature in Power BI Desktop that measures how long report elements take to update and refresh, allowing you to see if certain elements are significantly slower.
 
 ## Monitor with Performance Analyzer
 

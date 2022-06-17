@@ -1,4 +1,4 @@
-In an enterprise organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using **personalized visuals**. These allow individual consumers to make minor design changes to best understand the data themselves. 
+In a larger organization, it can be difficult to design a single report that meets everyone's needs, so one solution is using **personalized visuals**. These allow individual consumers to make minor design changes to best understand the data themselves.
 
 > [!TIP]
 > This is a powerful feature for more advanced report consumers. Empower your users by sharing the [Power BI Consumer Documentation](power-bi/consumer/end-user-personalize-visuals) for personalized visuals.
@@ -13,7 +13,7 @@ Report consumers can make changes for the following items:
 * Compare multiple measures
 * Change aggregations
 
-After personalizing the report, consumers can create a personal bookmark to save their changes, and even [share changes](power-bi/consumer/end-user-bookmarks#share-changes) with others. Best of all, they can always **reset to default** to restore the report view.
+Consumers can create a personal bookmark to save their changes after personalizing a report, and even [share changes](power-bi/consumer/end-user-bookmarks#share-changes) with others. Best of all, they can always **reset to default** to restore the report view.
 
 ## Enable personalized visuals
 
