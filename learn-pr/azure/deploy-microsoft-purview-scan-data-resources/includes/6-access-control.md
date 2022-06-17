@@ -1,8 +1,10 @@
 Now that you've created your Microsoft Purview account, we'll need to add other users and start organizing your data map.
 
-As we discussed in the last section, the Microsoft Purview Data Map is the core of your account. It keeps an up-to-date map of your data assets (tables, files, etc.) and their metadata. 
+As we discussed in the last section, the Microsoft Purview Data Map is the core of your account. It keeps an up-to-date map of your data assets (tables, files, etc.) and their metadata.
 
-:::image type="content" source="../media/purview-data-map.png" alt-text="Microsoft Purview data map":::
+:::image type="complex" source="../media/purview-data-map.png" alt-text="Diagram showing the Microsoft Purview Data Map.":::
+   "The Data Map is at the top of the diagram, with on-premises, cloud, S A A S applications, and Power BI data flowing into the map. The data map information flows into collections. Collections are split into two parts: registered sources that contain assets (tables, files, etc.), and access control that contains users and groups assigned to roles."
+:::image-end:::
 
 To build this data map, you'll register and scan your data sources into Microsoft Purview. The data map will store the metadata for these sources and create a navigable table that you can browser through.
 

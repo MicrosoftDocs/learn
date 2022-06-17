@@ -9,7 +9,7 @@ The Microsoft Purview account name is used to programmatically access the Micros
 * The first and last characters must be a letter or number
 * Spaces aren't allowed
 
-:::image type="content" source="../media/purview-account-name.png" alt-text="Microsoft Purview account name":::
+:::image type="content" source="../media/purview-account-name.png" alt-text="Screenshot showing the create Microsoft Purview account window, with the account name box highlighted.":::
 
 But don't worry if the name you want isn't available. Your Microsoft Purview account can also have a friendly name that can include spaces and doesn't need to be globally unique. The friendly name can be added after the account is created, and will be the name displayed inside the Microsoft Purview governance portal, while the original account name will still be used to access the account programmatically.
 
@@ -20,7 +20,7 @@ Microsoft Purview creates a storage account and an Azure Event Hubs account as m
 * The name of the managed resource group will be auto-generated but can be changed during the Microsoft Purview account creation process.
 * The names of the storage account and Azure Event Hubs namespace will be auto-generated during account creation and can't be changed.
 
-:::image type="content" source="../media/purview-managed-resources.png" alt-text="Microsoft Purview managed resources":::
+:::image type="content" source="../media/purview-managed-resources.png" alt-text="Screenshot showing the create Microsoft Purview account window, with the Managed resources section shown, and the managed resource group name box highlighted with the default name included.":::
 
 ## Microsoft Purview Data Map
 
@@ -30,7 +30,9 @@ The data map is automatically kept up to date with built-in scanning and classif
 
 The data map powers all of Microsoft Purview’s other applications by housing the information, and providing access control.
 
-:::image type="content" source="../media/purview-data-map.png" alt-text="Microsoft Purview data map":::
+:::image type="complex" source="../media/purview-data-map.png" alt-text="Diagram showing the Microsoft Purview Data Map.":::
+   "The Data Map is at the top of the diagram, with on-premises, cloud, S A A S applications, and Power BI data flowing into the map. The data map information flows into collections. Collections are split into two parts: registered sources that contain assets (tables, files, etc.), and access control that contains users and groups assigned to roles."
+:::image-end:::
 
 Inside the data map you'll find **collections**, which serve two functions:
 
@@ -60,4 +62,4 @@ The compute required for this automated population of the Data Map is serverless
 
 You can connect to your Microsoft Purview account either publicly, via public IP addresses or service endpoints, or privately, using a private endpoint. In this module, our proof of concept will use a publicly available Microsoft Purview account, since we're creating a simple proof of concept. But you can also [learn more about private endpoints for your Microsoft Purview account](/azure/purview/catalog-private-link).
 
-:::image type="content" source="../media/purview-networking.png" alt-text="Microsoft Purview networking":::
+:::image type="content" source="../media/purview-networking.png" alt-text="Screenshot of the networking tab of the Create Microsoft Purview account window. Connectivity method shows two options: All networks and private endpoint.":::

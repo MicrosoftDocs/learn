@@ -19,15 +19,15 @@ When you're choosing which collection to register your data source to, consider 
 
 Once you've decided on a collection, we can register the data source from within the Microsoft Purview Governance Portal by going to the Data Map and selecting **Register**.
 
-:::image type="content" source="../media/register-source.png" alt-text="Register a data source":::
+:::image type="content" source="../media/register-source.png" alt-text="Screenshot of the Microsoft Purview governance portal, showing Data Map selected, then Sources, and then the Register button in the Sources page.":::
 
 Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. For any one of these data sources, information is needed to be able to register the source, and different information is required depending on the source. For example, if your data source is in your Azure subscription, you'll choose the necessary subscription, storage source name, and the collection where it will reside.
 
-:::image type="content" source="../media/register-adls.png" alt-text="Register Azure Data Lake Storage Gen2 source":::
+:::image type="content" source="../media/register-adls.png" alt-text="Screenshot showing the Register sources A D L S Gen2 page, with the Azure Subscription, Storage account name, and Select a collection highlighted.":::
 
 Once you've provided these details and select **Register** your data source will be listed under your selected collection.
 
-:::image type="content" source="../media/data-source.png" alt-text="Data source":::
+:::image type="content" source="../media/data-source.png" alt-text="Screenshot showing the Microsoft Purview Data Map tree, with the root collection at the top, the sub collection Your-Collection underneath, and in the sub collection, highlighted, is the newly registered A D L S Gen 2 resource.":::
 
 ## Scanning
 
@@ -37,7 +37,7 @@ Scanning is the process Microsoft Purview uses to access your data sources to ga
 - How that data is structured
 - If any data is sensitive
 
-This will allow you to audit and govern your data sources without having to manually investigate each individual file and source. The data is not imported to Microsoft Purview during this process. Microsoft Purview only gathers information about the data and stores that in its Data Map.
+This will allow you to audit and govern your data sources without having to manually investigate each individual file and source. The data isn't imported to Microsoft Purview during this process. Microsoft Purview only gathers information about the data and stores that in its Data Map.
 
 ### Authentication
 
@@ -63,7 +63,7 @@ If you're enabling connectivity for the first time, it can be difficult to choos
 
 Once you've decided on authentication method and gathered the connection information, you can authenticate with your source through the Azure portal. In your Data Map in the Microsoft Purview Governance Portal, select your data source and select **New Scan**.
 
-:::image type="content" source="../media/new-scan.png" alt-text="New scan":::
+:::image type="content" source="../media/new-scan.png" alt-text="Screenshot showing the data source tile in the Microsoft Purview Data Map, with the second button, the new scan button, highlighted.":::
 
 Initially, you'll be able to input your credentials and test your connection.
 
@@ -77,7 +77,7 @@ Once your credentials are successfully validated, it's time to set up your scan.
 
 The **scope** of a scan determines what parts of a data source you want to scan. For example, in Data Lake you can choose to scan an entire data lake, or a subset of folders.
 
-:::image type="content" source="../media/scope-scan.png" alt-text="Scope your scan":::
+:::image type="content" source="../media/scope-scan.png" alt-text="Screenshot of the Scope your scan window, with all the folders underneath the raw folder selected.":::
 
 Choosing a subset of folders might be useful if your organization has a single data lake that is organized by team or effort. The scope will be dependent on the data source type.
 
@@ -110,13 +110,13 @@ Here are some best practices to consider when scheduling your scan:
 
 Once you've determined your scope, rule set, and schedule select save and run and your scan will begin running.
 
-:::image type="content" source="../media/run-scan.png" alt-text="Save and run scan configuration":::
+:::image type="content" source="../media/run-scan.png" alt-text="Screenshot of the Review your scan window with the Save and run button selected.":::
 
 Depending on the size of your data source and the scope of your scan, a scan can take a long time to run. You can check its progress in your data source details.
 
-:::image type="content" source="../media/scan-details.png" alt-text="View scan details":::
+:::image type="content" source="../media/scan-details.png" alt-text="Screenshot showing the data source page in the Microsoft Purview governance portal, with the recent scan still in progress highlighted in the middle of the screen.":::
 
-Select Refresh to periodically update the status of the scan.
+Select Refresh to periodically update the status of the scan until it shows as completed.
 
 > [!NOTE]
 > After a scan has completed, Microsoft Purview runs an ingestion process where it adds all the new metadata and information into the catalog. This process depends on the size of the source data as well, and you won't see new assets in your Microsoft Purview catalog until this process is complete.

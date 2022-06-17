@@ -1,6 +1,6 @@
 You were requested by Fabrikam to help establish the foundation for effective data usage and unified data governance. You created a Microsoft Purview proof of concept by creating a Microsoft Purview account, creating collections, assigning permissions, and registering and scanning your first data source.
 
-Using Microsoft Purview as a central catalog, Frabrikam can now begin to discover a complete and comprehensive overview of their data estate by reviewing the scanned assets in Microsoft Purview and registering more data sources.
+Using Microsoft Purview as a central catalog, Fabrikam can now begin to discover a complete and comprehensive overview of their data estate by reviewing the scanned assets in Microsoft Purview and registering more data sources.
 
 If you don't want to keep the proof of concept you deployed today, you may want to consider removing the Microsoft Purview account and Storage Account you created, to ensure there are no ongoing costs. Remember, the Microsoft Purview Data Map always uses at least one capacity unit to store data and complete actions.
 
