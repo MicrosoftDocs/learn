@@ -42,3 +42,6 @@ units:
 - learn.wwl.evaluate-regulatory-compliance-strategy.summary
 badge:
   uid: learn.wwl.evaluate-regulatory-compliance-strategy.badge
+subjects:
+- security
+- architecture

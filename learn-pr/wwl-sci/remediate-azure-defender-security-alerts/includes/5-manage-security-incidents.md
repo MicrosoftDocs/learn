@@ -6,11 +6,11 @@ Incidents appear on the Security alerts page. Select an incident to view the rel
 
 On the Defender for Cloud overview page, select the Security alerts tile. The incidents and alerts are listed. Notice that security incidents have a different icon to security alerts.
 
-![Incidents in the Alerts page](../media/security-center-manage-alerts.png)
+:::image type="content" source="../media/security-center-manage-alerts.png" alt-text="Screenshot of Defender for Cloud Incidents in the Alerts page.":::
 
 To view details, select an incident. The Security incident page shows more details.
 
-![Incident details](../media/incident-details.png)
+:::image type="content" source="../media/incident-details.png" alt-text="Screenshot of Defender for Cloud Security Alert Incident details.":::
 
 The left pane of the security incident page shows high-level information about the security incident: title, severity, status, activity time, description, and the affected resource. Next to the affected resource, you can see the relevant Azure tags. Use these tags to infer the organizational context of the resource when investigating the alert.
 
@@ -66,7 +66,7 @@ From Defender for Cloud's sidebar, open the Security alerts page.
 
 Select an alert. The alerts details page opens with more details about the alert. Below is the Ransomware indicators detected alert details page.
 
-![ransomware indicators detected link to threat intel report](../media/ransomware-indicators-detected-link-to-threat-intel-report.png)
+:::image type="content" source="../media/ransomware-indicators-detected-link-to-threat-intel-report.png" alt-text="Screenshot of Defender for Cloud ransomware indicators detected link to threat intel report.":::
 
 Select the link to the report, and a PDF will open in your default browser.
 

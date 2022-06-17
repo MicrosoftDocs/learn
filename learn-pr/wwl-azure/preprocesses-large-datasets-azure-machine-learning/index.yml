@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning
 metadata:
-  title: Preprocesses large datasets with Azure Machine Learning
-  description: "Preprocesses large datasets with Azure Machine Learning"
-  ms.date: 06/01/2022
+  title: Preprocess large datasets with Azure Machine Learning
+  description: "Preprocess large datasets with Azure Machine Learning"
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Preprocesses large datasets with Azure Machine Learning
+title: Preprocess large datasets with Azure Machine Learning
 summary: Choose GPU compute in Azure Machine Learning when training compute-intensive models. To reduce the time needed to process the data, store your data efficiently and use a data manipulation library compatible with GPU compute.
 abstract: |
   In this module, you'll learn how to:

@@ -1,4 +1,4 @@
-Modern data warehousing architecture can vary, as can the specific technologies used to implement it; but in general, the following elements are included:
+Large-scale data warehousing architecture can vary, as can the specific technologies used to implement it; but in general, the following elements are included:
 
 ![An architecture diagram showing data ingestion and processing, an analytical data store, an analytical data model, and data visualization](../media/modern-data-warehousing.png)
 
