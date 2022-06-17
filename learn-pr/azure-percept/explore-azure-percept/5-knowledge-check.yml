@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Azure Percept is a fully integrated, and easy-to-use service for solution builders and developers of all skill levels and technical capability."
     - content: "Azure Percept offers only low-no code AI functionality."
       isCorrect: false
-      explanation: "Incorrect. Azure Percept offers low-no code as well as advanced developer AI functionality."
+      explanation: "Incorrect. Azure Percept offers both low-no code and advanced developer AI functionality."
   - content: "Azure Percept leverages other Microsoft services. Which of the following are correct?"
     choices:
     - content: "Azure Percept leverages e-commerce services so that you can pay for content at secure kiosks."
@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
     - content: "Azure Percept leverages remote connectivity services like satellite."
       isCorrect: false
-      explanation: "Incorrect. Satellite connectivity is not a valid service for Azure Percept."
+      explanation: "Incorrect. Satellite connectivity isn't a valid service for Azure Percept."
     - content: "Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
       isCorrect: true
       explanation: "Correct. Azure Percept leverages these services."
@@ -38,7 +38,7 @@ quiz:
     choices:
     - content: "Autonomous vehicles: Computer vision-related edge services on self-driving cars."
       isCorrect: false
-      explanation: "Incorrect. Azure Percept does not apply to autonomous vehicles as it stands."
+      explanation: "Incorrect. Azure Percept doesn't apply to autonomous vehicles as it stands."
     - content: "Shelf analytics: Advanced product analytics through automated stockout analytics, product placement, planogram compliance, and end cap management."
       isCorrect: true
       explanation: "Correct. Shelf analytics is one of the main applications of Azure Percept."
