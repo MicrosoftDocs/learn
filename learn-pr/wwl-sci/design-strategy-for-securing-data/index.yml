@@ -35,3 +35,6 @@ units:
 - learn.wwl.design-strategy-for-securing-data.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-data.badge
+subjects:
+- security
+- architecture
