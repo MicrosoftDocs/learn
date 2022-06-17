@@ -76,6 +76,6 @@ The Secure methodology consists of three ways to integrate security into the lar
 - Security governance - Security governance bridges your business priorities with technical implementation like architecture, standards, and policy. Governance teams provide oversight and monitoring to sustain and improve security posture over time. These teams also report compliance as required by regulating bodies.
 - Innovation security - Innovation is the lifeblood of an organization in the digital age and needs to be both enabled and protected. Innovation security protects the processes and data of innovation against cyberattacks. Innovation in the digital age takes the form of developing applications using the DevOps or DevSecOps method to rapidly innovate without waiting for the traditional waterfall ship schedule that can take months or years between releases.
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWVBXs?postJsllMsg=true]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWVBXs?postJsllMsg=true]
 
 For more information, see [Security in the Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/secure/)
