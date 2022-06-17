@@ -20,4 +20,4 @@ In this module, you will:
 
 - An Azure account
 - A basic understanding of how to create resources in Azure
-- (Optional) A basic understanding of how to use Python, to upload and tag the dataset images via Python instead of via the Azure user interface
+- (Optional) If you choose to use Python to upload and tag images rather than the Azure portal, a basic understanding of working with Python is required
