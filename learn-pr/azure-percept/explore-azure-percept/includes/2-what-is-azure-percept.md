@@ -22,10 +22,10 @@ As shown in the following diagram, Azure Percept's fully integrated platform com
 
 To securely deploy and manage AI resources at the edge, the following three components work together to create an ecosystem scale through third-party or first-party devices and applications:
 
-1. Device builders look for the pull-through demand created by these apps. 
+- Device builders look for the pull-through demand created by these apps. 
 
-1. Solution builders need devices built to run their apps. 
+- Solution builders need devices built to run their apps. 
 
-1. The certification program promises things will "just work."
+- The certification program promises things will "just work."
 
 **_To learn more, see additional resources in the summary section._**
