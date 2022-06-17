@@ -9,6 +9,6 @@ There are two main steps:
 
 1. Create the Azure AD admin user and obtain an access token.
 1. Connect using the token.
-    :::image type="content" source="../media/post-azure-ad-authentication-flow.png" alt-text="Diagram of the Azure AD authentication flow." lightbox="../media/post-azure-ad-authentication-flow.png":::
+    :::image type="content" source="../media/post-azure-active-directory-authentication-flow.png" alt-text="Diagram of the Azure AD authentication flow." lightbox="../media/post-azure-active-directory-authentication-flow.png":::
 
 Azure Data Studio is designed to work with Azure AD and will accept an Azure AD Account. This does not require a token.
