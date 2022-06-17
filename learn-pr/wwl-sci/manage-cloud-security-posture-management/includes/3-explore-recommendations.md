@@ -13,7 +13,7 @@ To view your Secure score recommendations:
 :::image type="content" source="../media/recommendations-view.png" alt-text="Screenshot of Defender for Cloud Secure Score Recommendations":::
 
 
-    Here you'll see the recommendations applicable to your environment(s). Recommendations are grouped into security controls.
+Here you'll see the recommendations applicable to your environment(s). Recommendations are grouped into security controls.
 
 - Select Secure score recommendations.
 
