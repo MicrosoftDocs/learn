@@ -36,7 +36,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
     ![The run button is highlighted in the query toolbar.](../media/synapse-studio-query-toolbar-run.png)
 
-    Now that we have confirmed that there are no running queries, we need to flood the system with queries and see what happens for `asa.sql.workload01` and `asa.sql.workload02`. To do this, we'll run a Azure Synapse Pipeline which triggers queries.
+    Now that we have confirmed that there are no running queries, we need to flood the system with queries and see what happens for `asa.sql.workload01` and `asa.sql.workload02`. To do this, we'll run an Azure Synapse Pipeline which triggers queries.
 
 6. Select the **Integrate** hub.
     > [!div class="mx-imgBorder"]  
