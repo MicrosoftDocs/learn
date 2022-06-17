@@ -20,7 +20,7 @@ Microsoft 365 Defender applies correlation analytics and aggregates all related 
 
 The Incidents queue shows a collection of flagged incidents from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
-:::image type="content" source="../media/incidents-queue.png#lightbox" alt-text="Screen shot of the Microsoft 365 Defender Incident Queue.](../media/incidents-queue.png) ":::
+:::image type="content" source="../media/incidents-queue.png" alt-text="Screen shot of the Microsoft 365 Defender Incident Queue.":::
 
 By default, the queue in the Microsoft 365 Defender portal displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
 
@@ -44,7 +44,7 @@ Filter incidents based on the set classifications of the related alerts. The val
 
 **Data sensitivity**
 
-Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize a response to those incidents.  Only applicable if Microsoft Purview Information Protection is turned on.
+Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has been compromised. And if a compromise is found you can prioritize a response to those incidents.  This filtering ability is only applicable if Microsoft Purview Information Protection is turned on.
 
 **Device group**
 
@@ -84,19 +84,19 @@ The portal pages provide preview information for most list-related data.
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 
-:::image type="content" source="../media/preview-options-from-list.png#lightbox" alt-text="Screen shot of Incident Preview information options.](../media/preview-options-from-list.png) ":::
+:::image type="content" source="../media/preview-options-from-list.png" alt-text="Screen shot of Incident Preview information options.":::
 
 **Circle**
 
 Selecting the circle will open a details window on the right side of the page with a preview of the line item with an option to open the full page of information.
 
-:::image type="content" source="../media/incident-circle.png#lightbox" alt-text="Screen shot of Incidents details window.](../media/incident-circle.png) ":::
+:::image type="content" source="../media/incident-circle.png" alt-text="Screen shot of Incidents details window.":::
 
 **Greater than symbol**
 
 If there are related records that can be displayed, selecting the greater than sign will display the records below the current record.
 
-:::image type="content" source="../media/greater-than.png#lightbox" alt-text="Screen shot of Related Incident records.](../media/greater-than.png) ":::
+:::image type="content" source="../media/greater-than.png" alt-text="Screen shot of Related Incident records.":::
 
 **Link**
 
