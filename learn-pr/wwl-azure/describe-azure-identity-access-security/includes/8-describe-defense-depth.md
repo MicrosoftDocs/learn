@@ -1,5 +1,3 @@
-# What is defense-in-depth?
-
 The objective of defense-in-depth is to protect information and prevent it from being stolen by those who aren't authorized to access it.
 
 A defense-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.

@@ -1,6 +1,6 @@
 In this module, you learned about Azure identity, access, and security services and tools. You covered authentication methods, including which ones are more secure. You learned about restricting access based on a role to help create a more secure environment. And, you learned about the Defense In Depth and Zero Trust models.
 
-# Learning objectives<br>
+## Learning objectives<br>
 
 You should now be able to:
 
@@ -13,6 +13,6 @@ You should now be able to:
  -  Describe the purpose of the defense in depth model.
  -  Describe the purpose of Microsoft Defender for Cloud.
 
-# Additional resources<br>
+## Additional resources<br>
 
-For more information on some of the topics covered in this module or related topics, see the following resources.
+The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
