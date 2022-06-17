@@ -8,7 +8,7 @@ In this module, you learned how to:
 
 - Configure a Cosmos DB Account to use Azure Synapse Link.
 - Create an analytical store enabled container.
-- Implement Azure Synapse Link for Cosmos DB.
+- Create a linked service for Cosmos DB.
 - Analyze linked data using Spark.
 - Analyze linked data using Synapse SQL.
 
