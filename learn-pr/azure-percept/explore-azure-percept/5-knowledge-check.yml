@@ -23,7 +23,7 @@ quiz:
     - content: "Azure Percept offers only low-no code AI functionality."
       isCorrect: false
       explanation: "Incorrect. Azure Percept offers both low-no code and advanced developer AI functionality."
-  - content: "Azure Percept leverages other Microsoft services. Which of the following are correct?"
+  - content: "Azure Percept leverages other Microsoft services. Which of the following statements is correct?"
     choices:
     - content: "Azure Percept leverages e-commerce services so that you can pay for content at secure kiosks."
       isCorrect: false
@@ -34,7 +34,7 @@ quiz:
     - content: "Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
       isCorrect: true
       explanation: "Correct. Azure Percept leverages these services."
-  - content: "Azure Percept is applicable to many industries and use cases. Which of the following is correct?"
+  - content: "Azure Percept is applicable to many industries and use cases. Which of the following statements is correct?"
     choices:
     - content: "Autonomous vehicles: Computer vision-related edge services on self-driving cars."
       isCorrect: false
@@ -42,6 +42,6 @@ quiz:
     - content: "Shelf analytics: Advanced product analytics through automated stockout analytics, product placement, planogram compliance, and end cap management."
       isCorrect: true
       explanation: "Correct. Shelf analytics is one of the main applications of Azure Percept."
-    - content: "Predictive maintenance and repair. Use data analysis tools and techniques to detect anomalies and possible equipment defects and process them, and then automatically fix them."
+    - content: "Predictive maintenance and repair: Use data analysis tools and techniques to detect anomalies and possible equipment defects and process them, and then automatically fix them."
       isCorrect: false
-      explanation: "Incorrect. Predictive maintenance is one of the main applications of Azure Percept, but Azure Percept doesn't automatically apply repairs."
+      explanation: "Incorrect. Predictive maintenance is one of the main applications of Azure Percept, but Azure Percept doesn't make repairs."
