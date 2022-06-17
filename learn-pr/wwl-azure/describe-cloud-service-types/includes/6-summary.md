@@ -8,3 +8,7 @@ You should now be able to:
  -  Describe platform as a service (PaaS).
  -  Describe software as a service (SaaS).
  -  Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
+
+## Additional resources
+
+The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
