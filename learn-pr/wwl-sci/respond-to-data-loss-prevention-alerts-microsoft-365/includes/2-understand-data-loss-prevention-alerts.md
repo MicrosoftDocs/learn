@@ -1,4 +1,4 @@
-As a Security Operations Analyst, you need to understand Compliance-related terminology and alerts.  The Data loss prevention (DLP) alerts will help you in your investigation to find the full scope of the incident.  DLP alerts can be generated from Microsoft 365 Compliance or Microsoft Defender for Cloud Apps.  You might not be the person creating the DLP Policies, but it is important for you to understand them so you can recommend changes.
+As a Security Operations Analyst, you need to understand Compliance-related terminology and alerts.  The Data loss prevention (DLP) alerts will help you in your investigation to find the full scope of the incident.  DLP alerts can be generated from Microsoft Purview Compliance or Microsoft Defender for Cloud Apps.  You might not be the person creating the DLP Policies, but it's important for you to understand them so you can recommend changes.
 
 To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personal information such as credit card numbers, social security numbers, or health records.
 
@@ -24,17 +24,17 @@ With a DLP policy, you can:
 
 ## Data loss prevention components
 
-If you have not worked with DLP, it is important to understand the underlying components.
+If you haven't worked with DLP, it's important to understand the underlying components.
 
 ### Sensitive information types
 
 A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
 
-Microsoft 365 compliance comes with built-in Sensitive information types like Credit Card Numbers, Bank Accounts, and more.  You can also create a custom sensitive info type matched on regular expressions, keywords, or an uploaded dictionary.
+Microsoft Purview Compliance comes with built-in Sensitive information types like Credit Card Numbers, Bank Accounts, and more.  You can also create a custom sensitive info type matched on regular expressions, keywords, or an uploaded dictionary.
 
 ### Sensitivity labels
 
-Sensitivity labels specify the classification of a document.  These could be terms like public, private, or classified.  With these labels, more functionality can be applied to the document, like encryption.  Labels are applied to documents either manually by the user or automatically based on sensitive info types.
+Sensitivity labels specify the classification of a document.  The labels could be terms like public, private, or classified.  With these labels, more functionality can be applied to the document, like encryption.  Labels are applied to documents either manually by the user or automatically based on sensitive info types.
 
 ### Data loss prevention policy
 
