@@ -1,4 +1,6 @@
-Power BI report themes allow you to cohesively modify the look and feel of your report. Themes may be familiar as they exist in other Microsoft products as well, such as Word and PowerPoint. Themes control design details including color, icon sets, font, backgrounds, and more. You can use the built-in themes, customize your own, or import from the [Power BI Community Themes Gallery](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery).
+Creation of a custom theme can accomplish a few critical things in an enterprise deployment. A custom theme can ensure that all reports within your organization adhere to:
+* Organizational branding, including color schemes and fonts
+* Accessibility requirements including color vision deficiency friendly color palettes and appropriate font sizes
 
 ## Access themes
 
@@ -26,8 +28,8 @@ Using the **Customize current theme** option is a quick and easy way to create a
 
 ## Export and import themes
 
-After you’ve applied changes to your custom theme, you need to go back to the **Themes drop-down menu** and select **Save current theme** to export the theme. Doing this will create a JSON file that can be shared with others and used for any future reports.
-Now that your custom theme has been exported, you and others will need to import it to apply to other reports. Importing is as easy as exporting is – navigate to the **Themes drop-down menu** again, select **Browse for themes**, and choose the JSON file you just created (or that was shared with you). You'll get a notification when the theme successfully imports.
+After you’ve applied changes to your custom theme, you need to go back to the **Themes** drop-down menu and select **Save current theme** to export the theme. Doing this will create a JSON file that can be shared with others and used for any future reports.
+Now that your custom theme has been exported, you and others will need to import it to apply to other reports. Importing is as easy as exporting is – navigate to the **Themes** drop-down menu again, select **Browse for themes**, and choose the JSON file you just created (or that was shared with you). You'll get a notification when the theme successfully imports.
 
 ## Enterprise considerations
 
