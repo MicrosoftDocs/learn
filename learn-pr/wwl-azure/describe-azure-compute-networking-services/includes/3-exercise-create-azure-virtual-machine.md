@@ -50,6 +50,4 @@ Nice work. In practice, you can create a standalone network security group that 
 
 ## Continue
 
-That's all for this exercise. The sandbox will keep running, and you'll come back to this point in a few topics to make the website accessible.
-
-## 
+That's all for this exercise. The sandbox will keep running, and you'll come back to this point in a few topics to update the network configuration so you can get to the website.

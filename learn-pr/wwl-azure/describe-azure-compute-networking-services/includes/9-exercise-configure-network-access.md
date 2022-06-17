@@ -1,5 +1,7 @@
 In this exercise, you configure network access to a virtual machine (VM) running on Azure.
 
+If the sandbox timed out and you have to reactivate the sandbox, you'll need to go complete the early exercise in this lesson (Exercise - Create an Azure virtual machine), and then come back here.
+
 You start by creating a Linux VM and installing Nginx, a popular web server, on that VM. To make your web server accessible, you then create a network security group (NSG) rule that allows inbound access on port 80 (HTTP).
 
 There are many ways to create and manage VMs, including their network settings. For example, you can use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
