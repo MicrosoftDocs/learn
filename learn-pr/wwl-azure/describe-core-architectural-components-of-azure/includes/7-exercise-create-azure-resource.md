@@ -85,20 +85,18 @@ In this task, you’ll create a virtual machine using the Azure portal.
 :::row-end:::
 
 
-4.  Select Review and Create.
+5.  Select Review and Create.
 
 > [!IMPORTANT]
 > Product details will include a cost associated with creating the virtual machine. This is a system function. If you’re creating the VM in the Learn sandbox, you won’t actually incur any costs.
 
-5.  Fill in the Preferred e-mail address field.
-6.  Fill in the Preferred phone number field.
-7.  Select Create
+6.  Select Create
 
-Wait while the VM is provisioned. Deployment is in progress will change to Deployment is complete.
+Wait while the VM is provisioned. Deployment is in progress will change to Deployment is complete when the VM is ready.
 
 ## Task 2: Verify resources created
 
-Once the deployment is created, you can verify that Azure created not only a VM, but all of the associated resources the VM needed.
+Once the deployment is created, you can verify that Azure created not only a VM, but all of the associated resources the VM needs.
 
 1.  Select Home
 2.  Select Resource groups
