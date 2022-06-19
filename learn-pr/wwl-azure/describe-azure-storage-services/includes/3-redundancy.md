@@ -49,9 +49,9 @@ By default, data in the secondary region isn't available for read or write acces
 
 ### Geo-redundant storage
 
-GRS copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in a using LRS. GRS offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year.
+GRS copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region (the region pair) using LRS. GRS offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year.
 
-The following diagram shows how your data is replicated with GRS or RA-GRS.
+The following diagram shows how your data is replicated with GRS.
 
 :::image type="content" source="../media/geo-redundant-storage-3432d558.png" alt-text="Diagram depicting geo-redundant storage.":::
 
@@ -62,7 +62,7 @@ GZRS combines the high availability provided by redundancy across availability z
 
 GZRS is designed to provide at least 16 nines (99.99999999999999%) of durability of objects over a given year.
 
-The following diagram shows how your data is replicated with GZRS or RA-GZRS.
+The following diagram shows how your data is replicated with GZRS.
 
 :::image type="content" source="../media/geo-redundant-storage-3432d558.png" alt-text="Diagram depicting geo-zone-redundant storage.":::
 

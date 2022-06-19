@@ -13,4 +13,7 @@ You should now be able to:
 
 ## Additional resources
 
-The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
+The following resources provide more information on topics in this module or related to this module.
+
+ -  [Store data in Azure](/learn/paths/store-data-in-azure/) is a Microsoft Learn course that covers more information about storing data in Azure.
+ -  [Microsoft Certified: Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/) is an entire certification, with associated training, that dives deeper into data fundamentals on Azure.

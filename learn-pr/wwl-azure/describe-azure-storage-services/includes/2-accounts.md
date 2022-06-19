@@ -4,7 +4,7 @@ The following video introduces the different services that should be available w
 
 A storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 
-When you create your storage account, you’ll start by picking the storage account type. The type of account determines the storage services and redundancy options and has an impat on the use cases. Below is a list of redundancy options that will be covered later in this module:
+When you create your storage account, you’ll start by picking the storage account type. The type of account determines the storage services and redundancy options and has an impact on the use cases. Below is a list of redundancy options that will be covered later in this module:
 
  -  Locally redundant storage (LRS)
  -  Geo-redundant storage (GRS)
@@ -87,7 +87,7 @@ When you create your storage account, you’ll start by picking the storage acco
 
 ## Storage account endpoints
 
-One of the benefits of using an Azure Storage Account is having unique namespace in Azure for your data. In order to do this, every storage account in Azure must have a unique-in-Azure account name. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account.
+One of the benefits of using an Azure Storage Account is having a unique namespace in Azure for your data. In order to do this, every storage account in Azure must have a unique-in-Azure account name. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account.
 
 When naming your storage account, keep these rules in mind:
 
