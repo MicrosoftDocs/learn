@@ -11,7 +11,7 @@ There are several benefits to using ExpressRoute as the connection service betwe
 
  -  Connectivity to Microsoft cloud services across all regions in the geopolitical region.
  -  Global connectivity to Microsoft services across all regions with the ExpressRoute Global Reach.
- -  Dynamic routing between your network and Microsoft via BGP.
+ -  Dynamic routing between your network and Microsoft via Border Gateway Protocol (BGP).
  -  Built-in redundancy in every peering location for higher reliability.
 
 ### Connectivity to Microsoft cloud services
@@ -29,7 +29,7 @@ You can enable ExpressRoute Global Reach to exchange data across your on-premise
 
 ### Dynamic routing
 
-ExpressRoute uses the Border Gateway Protocol (BGP) routing protocol. BGP is used to exchange routes between on-premises networks and resources running in Azure. This protocol enables dynamic routing between your on-premises network and services running in the Microsoft cloud.
+ExpressRoute uses the BGP. BGP is used to exchange routes between on-premises networks and resources running in Azure. This protocol enables dynamic routing between your on-premises network and services running in the Microsoft cloud.
 
 ### Built-in redundancy
 

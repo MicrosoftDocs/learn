@@ -1,4 +1,4 @@
-A virtual private network (VPN) uses an encrypted tunnel within another network. VPNs are typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks. VPNs can enable networks to safely and securely and share sensitive information.
+A virtual private network (VPN) uses an encrypted tunnel within another network. VPNs are typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks. VPNs can enable networks to safely and securely share sensitive information.
 
 ## VPN gateways
 
@@ -7,10 +7,9 @@ A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances 
  -  Connect on-premises datacenters to virtual networks through a site-to-site connection.
  -  Connect individual devices to virtual networks through a point-to-site connection.
  -  Connect virtual networks to other virtual networks through a network-to-network connection.
- -  Visualization of a VPN connection to Azure.
 
 :::image type="content" source="../media/vpngateway-site-to-site-connection-diagram-e330b5a1.png" alt-text="Visualization of a VPN connection to Azure.":::
-
+<br>
 
 All data transfer is encrypted inside a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network. However, you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
 

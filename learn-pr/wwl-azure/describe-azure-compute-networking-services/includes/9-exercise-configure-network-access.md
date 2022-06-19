@@ -154,11 +154,13 @@ Here, you create a network security rule that allows inbound access on port 80 (
 
 Now that you've configured network access to port 80, let's try to access the web server a second time.
 
+> [!NOTE]
+> After you update the NSG, it may take a few moments before the updated rules propagate. Retry the next step, with pauses between attempts, until you get the desired results.
+
 1.  Run the same `curl` command that you ran earlier:
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
-    
     ```
     
     You see this:
@@ -170,6 +172,6 @@ Now that you've configured network access to port 80, let's try to access the we
 2.  As an optional step, refresh your browser tab that points to your web server.<br><br>You see this:<br>:::image type="content" source="../media/7-browser-success-fc26691c.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
     
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This technique enables you to control network access to multiple VMs under a single, central set of rules.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]

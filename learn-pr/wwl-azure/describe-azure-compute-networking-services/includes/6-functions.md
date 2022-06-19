@@ -8,7 +8,7 @@ Azure Functions is an event-driven, serverless compute option that doesn’t req
 
 Using Azure Functions is ideal when you're only concerned about the code running your service and not about the underlying platform or infrastructure. Functions are commonly used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
 
-Functions scale automatically based on demand, so they're a solid choice when demand is variable.
+Functions scale automatically based on demand, so they may be a good choice when demand is variable.
 
 Azure Functions runs your code when it's triggered and automatically deallocates resources when the function is finished. In this model, you're only charged for the CPU time used while your function runs.
 
