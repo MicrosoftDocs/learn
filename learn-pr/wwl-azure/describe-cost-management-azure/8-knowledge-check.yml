@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cost-management-azure.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 06/19/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What Azure feature can you use to help stay organized and track usage based on metadata associated with resources?"
+    choices:
+    - content: "Tags"
+      isCorrect: true
+      explanation: "Tags allow you to associate metadata with a resource to help keep track of resource management, costs and optimization, security, and so on."
+    - content: "Tracers"
+      isCorrect: false
+      explanation: "Assigning tags to a resource lets you add metadata to the resource for improved reporting."
+    - content: "Values"
+      isCorrect: false
+      explanation: "Assigning tags to a resource lets you add metadata to the resource for improved reporting."
+  - content: "What’s the best method to estimate the cost of migrating to the cloud while incurring minimal costs?"
+    choices:
+    - content: "Migrate a small sample to the cloud and track costs over time."
+      isCorrect: false
+      explanation: "Migrating a small sample to the cloud may help you estimate the costs of a future full-migration, but consider using the total cost of ownership calculator for an even early estimate."
+    - content: "Use the Total Cost of Ownership calculator to estimate expected costs."
+      isCorrect: true
+      explanation: "The Total Cost of Ownership calculator lets you input your current infrastructure and requirements and provides you an estimate for running in the cloud."
+    - content: "Migrate to the cloud, but track usage closely using tags to rapidly understand costs."
+      isCorrect: false
+      explanation: "While you would get the most accurate information with this approach, it would also be the most expensive and would entail a full migration."
+  - content: "Which is not one of the types of alerts in Microsoft Cost Management?"
+    choices:
+    - content: "Credit alerts"
+      isCorrect: false
+      explanation: "Credit alerts are an alert type in Cost Management."
+    - content: "Average utilization alerts"
+      isCorrect: true
+      explanation: "Average utilization alerts aren't actually an alert type. Budget, Credit, and Department spending quota alerts are all alert types though."
+    - content: "Department spending quota alerts"
+      isCorrect: false
+      explanation: "Department spending quota alerts alerts are an alert type in Cost Management."
