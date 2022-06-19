@@ -1,5 +1,7 @@
 In this exercise, you’ll use the Azure portal to create a resource. The focus of the exercise is observing how Azure resource groups populate with created resources.
 
+The sandbox should already be activated, but if the sandbox closed, reactivate the sandbox before continuing.
+
 ## Task 1: Create a virtual machine
 
 In this task, you’ll create a virtual machine using the Azure portal.
@@ -102,7 +104,7 @@ Once the deployment is created, you can verify that Azure created not only a VM,
 2.  Select Resource groups
 3.  Select the &lt;rgn&gt;\[sandbox resource group name\]&lt;/rgn&gt; resource group
 
-You should see a list of resources in the resource group. The storage account and virtual network are associated with the Learn sandbox. However, the rest of the resources were created when you created the. By default, Azure gave them all a similar name to help with association and grouped them in the same resource group.
+You should see a list of resources in the resource group. The storage account and virtual network are associated with the Learn sandbox. However, the rest of the resources were created when you created the virtual machine. By default, Azure gave them all a similar name to help with association and grouped them in the same resource group.
 
 Congratulations! You've created a resource in Azure and had a chance to see how resources get grouped on creation.
 

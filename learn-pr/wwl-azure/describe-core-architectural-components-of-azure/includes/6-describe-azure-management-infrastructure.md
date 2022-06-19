@@ -1,6 +1,6 @@
 The management infrastructure includes Azure resources and resource groups, subscriptions, and accounts. Understanding the hierarchical organization will help you plan your projects and products within Azure.<br>
 
-## Describe Azure resources and resource groups
+## Azure resources and resource groups
 
 A resource is the basic building block of Azure. Anything you create, provision, deploy, etc. is a resource. Virtual Machines (VMs), virtual networks, databases, cognitive services, etc. are all considered resources within Azure.
 
@@ -17,7 +17,7 @@ For example, if you’re setting up a temporary dev environment, grouping all th
 
 There aren’t hard rules about how you use resource groups, so consider how to set up your resource groups to maximize their usefulness for you.
 
-## Describe subscriptions
+## Azure subscriptions
 
 In Azure, subscriptions are a unit of management, billing, and scale. Similar to how resource groups are a way to logically organize resources, subscriptions allow you to logically organize your resource groups and facilitate billing.
 
@@ -39,13 +39,13 @@ Similar to using resource groups to separate resources by function or access, yo
  -  **Organizational structures**: You can create subscriptions to reflect different organizational structures. For example, you could limit one team to lower-cost resources, while allowing the IT department a full range. This design allows you to manage and control access to the resources that users provision within each subscription.
  -  **Billing**: You can create additional subscriptions for billing purposes. Because costs are first aggregated at the subscription level, you might want to create subscriptions to manage and track costs based on your needs. For instance, you might want to create one subscription for your production workloads and another subscription for your development and testing workloads.
 
-## Describe management groups
+## Azure management groups
 
 The final piece is the management group. Resources are gathered into resource groups, and resource groups are gathered into subscriptions. If you’re just starting in Azure that might seem like enough hierarchy to keep things organized. But imagine if you’re dealing with multiple applications, multiple development teams, in multiple geographies.
 
 If you have many subscriptions, you might need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called management groups and apply governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group, the same way that resource groups inherit settings from subscriptions and resources inherit from resource groups. Management groups give you enterprise-grade management at a large scale, no matter what type of subscriptions you might have. Management groups can be nested.
 
-## Describe the hierarchy of resource groups, subscriptions, and management groups
+## Management group, subscriptions, and resource group hierarchy
 
 You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
@@ -54,9 +54,8 @@ You can build a flexible structure of management groups and subscriptions to org
 
 Some examples of how you could use management groups might be:<br>
 
-Create a hierarchy that applies a policy. You could limit VM locations to the US West Region in a group called Production. This policy will inherit onto all the subscriptions that are descendants of that management group and will apply to all VMs under those subscriptions. This security policy can't be altered by the resource or subscription owner, which allows for improved governance.
-
-Provide user access to multiple subscriptions. By moving multiple subscriptions under a management group, you can create one role-based access control (RBAC) assignment on the management group. Assigning RBAC at the management group level means that all sub-management groups, subscriptions, resource groups, and resources underneath that management group would also inherit those permissions. One assignment on the management group can enable users to have access to everything they need instead of scripting RBAC over different subscriptions.
+ -  **Create a hierarchy that applies a policy.** You could limit VM locations to the US West Region in a group called Production. This policy will inherit onto all the subscriptions that are descendants of that management group and will apply to all VMs under those subscriptions. This security policy can't be altered by the resource or subscription owner, which allows for improved governance.
+ -  **Provide user access to multiple subscriptions.** By moving multiple subscriptions under a management group, you can create one role-based access control (RBAC) assignment on the management group. Assigning RBAC at the management group level means that all sub-management groups, subscriptions, resource groups, and resources underneath that management group would also inherit those permissions. One assignment on the management group can enable users to have access to everything they need instead of scripting RBAC over different subscriptions.
 
 Important facts about management groups:
 

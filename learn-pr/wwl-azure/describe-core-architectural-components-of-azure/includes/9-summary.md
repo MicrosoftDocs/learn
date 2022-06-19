@@ -12,6 +12,4 @@ You should now be able to:
  -  Describe management groups.
  -  Describe the hierarchy of resource groups, subscriptions, and management groups.
 
-## Additional resources
-
-The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
+## 
