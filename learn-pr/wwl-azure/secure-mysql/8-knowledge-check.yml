@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/16/2022
+  ms.date: 06/20/2022
   author: wwlpublish
   ms.author: caroline
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
       explanation: "That's incorrect. Access control will provide access to the server, and not to one specific database."
     - content: "Use the CREATE USER keywords to create a user account and assign privileges."
       isCorrect: true
-      explanation: "That's correct. To give access to a specific database you use the CREATE USER statement."
+      explanation: "That's correct. To give access to a specific database, you use the CREATE USER statement."
     - content: "Use Azure RBAC to assign a role to the user."
       isCorrect: false
       explanation: "That's incorrect. RBAC provides access to the server, and not to one specific database."
@@ -43,16 +43,16 @@ quiz:
     choices:
     - content: "Use the server admin account to create more users and grant admin access to them."
       isCorrect: true
-      explanation: "That's correct. You can user the server admin account to create more users."
+      explanation: "That's correct. You can use the server admin account to create more users."
     - content: "Use the server admin account to create more privileged users."
       isCorrect: false
-      explanation: "That's incorrect. You cannot create users with more privileges than the server admin account."
+      explanation: "That's incorrect. You can;t create users with more privileges than the server admin account."
     - content: "Use the server admin account to create azure_superuser users."
       isCorrect: false
-      explanation: "That's incorrect. Azure_superuser is a system account created by Microsoft to manage the server. You cannot create azure_superuser accounts."
-  - content: "You have been asked to explore how best to secure sensitive data being held in Azure Database for MySQL. Which statement best describes your options?"
+      explanation: "That's incorrect. Azure_superuser is a system account created by Microsoft to manage the server. You can't create azure_superuser accounts."
+  - content: "You've been asked to explore how best to secure sensitive data being held in Azure Database for MySQL. Which statement best describes your options?"
     choices:
-    - content: "Consider moving data to another database because Azure Database for MySQL does not support data encryption."
+    - content: "Consider moving data to another database because Azure Database for MySQL doesn't support data encryption."
       isCorrect: false
       explanation: "That's incorrect. Azure Database for MySQL does support data at rest encryption."
     - content: "Azure Database for MySQL supports data encryption in transit and data at rest. When you create a table, you must configure the table to use encryption."
@@ -61,14 +61,14 @@ quiz:
     - content: "Azure Database for MySQL runs the Community Edition of MySQL. Only the Enterprise edition supports data at rest encryption."
       isCorrect: false
       explanation: "That's incorrect. Azure Database for MySQL community edition of MySQL supports data at rest encryption."
-  - content: "Your company uses Azure Database for MySQL flexible server to host several in-house database systems. You now want to configure Azure AD authentication. What must you do to configure this?"
+  - content: "Your company uses Azure Database for MySQL flexible server to host several in-house database systems. You now want to configure Azure AD authentication. What must you do to configure Azure AD authentication?"
     choices:
     - content: "Create a token"
       isCorrect: false
-      explanation: "That's incorrect. Azure Database for MySQL flexible server does not currently support Azure AD authentication."
+      explanation: "That's incorrect. Azure Database for MySQL flexible server doesn't currently support Azure AD authentication."
     - content: "Create an Azure AD administrator"
       isCorrect: false
-      explanation: "That's incorrect. Azure Database for MySQL flexible server does not currently support Azure AD authentication."
-    - content: "Azure Database for MySQL flexible server does not support Azure AD authentication."
+      explanation: "That's incorrect. Azure Database for MySQL flexible server doesn't currently support Azure AD authentication."
+    - content: "Azure Database for MySQL flexible server doesn't support Azure AD authentication."
       isCorrect: true
       explanation: "That's correct. Azure Database for MySQL single server currently supports Azure AD authentication, but not flexible server."

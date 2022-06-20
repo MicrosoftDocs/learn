@@ -6,7 +6,7 @@ In this exercise you will create an Azure Database for MySQL single server, and 
 ## Create an Azure Database for MySQL single server
 
 1. Under Azure services, select **+ Create a resource**. Under **Categories**, select **Databases**. Under **Azure Database for MySQL**, select **Create**.
-1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** drop down box to view the options. Select **Single server**. Select **Create**.
+1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** dropdown box to view the options. Select **Single server**. Select **Create**.
 1. On the **Basics** tab, enter each field as follows:
     1. **Subscription** - your subscription.
     1. **Resource group** - MyFlex_nnn.

@@ -7,4 +7,4 @@ There are two main steps:
 
 1. Create the Azure AD admin user and obtain an access token.
 1. Connect using the token.
-    :::image type="content" source="../media/azure-active-directory-authentication-flow.png" alt-text="Image showing the Azure AD authentication flow." lightbox="../media/azure-active-directory-authentication-flow.png":::
+    :::image type="content" source="../media/azure-active-directory-authentication-flow.png" alt-text="SCreenshot that shows the Azure AD authentication flow." lightbox="../media/azure-active-directory-authentication-flow.png":::

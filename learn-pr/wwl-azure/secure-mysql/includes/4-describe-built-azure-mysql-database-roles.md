@@ -15,7 +15,7 @@ To assign a role definition to a user or group:
 1. Select the role definition you want to assign, and then select **Members**.
 1. Select Assign access to **User, group, or service principal**.
 1. Next to Members, select **+ Select members**. A list of users is displayed. Select one or more users or groups, and then choose **Select**.
-1. To assign select **Review + Assign**.
+1. To assign, select **Review + Assign**.
 
 Use Azure RBAC to control access to the Azure Database for MySQL server. Within individual databases, uses SQL queries to create users and configure user permissions.
 
