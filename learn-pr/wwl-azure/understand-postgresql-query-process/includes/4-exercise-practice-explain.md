@@ -11,7 +11,7 @@
 
 ## Practice EXPLAIN ANALYZE
 
-1. In the [Azure Portal](https://portal.azure.com), navigate to your Azure Database for PostgreSQL flexible server. Check the server is started or restart it if necessary.
+1. In the [Azure portal](https://portal.azure.com), navigate to your Azure Database for PostgreSQL flexible server. Check the server is started or restart it if necessary.
 1. Open Azure Data Studio and connect to your Azure Database for PostgreSQL flexible server.
 1. Select **File**, **Open File**, and navigate to the folder where you saved the scripts. Open **RepopulateZoo.sql**. Reconnect to the server if necessary.
 1. Select **Run** to execute the query. This repopulates the zoodb database.

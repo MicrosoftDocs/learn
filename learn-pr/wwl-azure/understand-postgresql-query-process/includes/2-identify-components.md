@@ -36,7 +36,7 @@ The job of the planner is to take the query rules and understand which of the di
 
 The planner creates a plan tree, with nodes representing physical operations on the data.
 
-PostgreSQL uses a cost-based query optimizer to find the optimal plan for a query. The planner evaluates various execution plans and estimates how much of the required resources is needed, such as CPU cycles, I/O operations, etc. This estimate is then converted into units, known as the *plan cost*. The plan with the lowest cost is selected.
+PostgreSQL uses a cost-based query optimizer to find the optimal plan for a query. The planner evaluates various execution plans and estimates how much of the required resources are needed, such as CPU cycles, I/O operations, etc. This estimate is then converted into units, known as the *plan cost*. The plan with the lowest cost is selected.
 
 However, as the number of joins increases, the number of possible plans grows exponentially. Evaluating every possible plan becomes impossible even for relatively simple queries. Heuristics and algorithms are used to limit the number of possible plans. The result is that the selected plan may not be the optimal plan. It will be near-optimal, however, and selected in a reasonable time.
 
@@ -66,7 +66,7 @@ Schedule VACUUM and ANALYZE to run daily during a low-usage time. ANALYZE can ru
 
 ## Executor
 
-This phase takes the plan created by the planner and processes it recursively it to extract the required set of rows. Each time a plan node is called the executor must deliver a row, or report back to say that it has finished.
+This phase takes the plan created by the planner and processes it recursively to extract the required set of rows. Each time a plan node is called the executor must deliver a row, or report back to say that it has finished.
 
 The executor evaluates all four SQL query types:
 
