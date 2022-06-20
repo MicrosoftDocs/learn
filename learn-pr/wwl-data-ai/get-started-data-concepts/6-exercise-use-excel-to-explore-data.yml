@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-concepts.exercise-use-excel-to-explore-data
+title: 'Exercise: Use Excel to explore data'
+metadata:
+  title: 'Exercise: Use Excel to explore data'
+  description: "Exercise: Use Excel to explore data"
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-use-excel-to-explore-data.md)]

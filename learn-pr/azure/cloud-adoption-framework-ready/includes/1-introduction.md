@@ -10,7 +10,7 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Completion of the [getting-started Learn module about the Cloud Adoption Framework](\azure\cloud-adoption-framework-getting-started).
+- Completion of the [getting-started Learn module about the Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/).
 - An understanding of your organization's cloud adoption strategy.
 - Familiarity with Azure cloud environment, including network configuration, network connectivity, and Azure Active Directory.
 - Familiarity with Azure governance tools, including Azure Policy and Azure Resource Manager templates.
