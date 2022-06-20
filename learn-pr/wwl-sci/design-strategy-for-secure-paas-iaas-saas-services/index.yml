@@ -44,3 +44,6 @@ units:
 - learn.wwl.design-strategy-for-secure-paas-iaas-saas-services.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-paas-iaas-saas-services.badge
+subjects:
+- security
+- architecture

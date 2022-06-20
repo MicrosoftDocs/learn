@@ -38,3 +38,6 @@ units:
 - learn.wwl.understand-architecture-best-practices-how-change-cloud.summary
 badge:
   uid: learn.wwl.understand-architecture-best-practices-how-they-are-changing-cloud.badge
+subjects:
+- security
+- architecture
