@@ -44,7 +44,7 @@ The Overview tab displays a standard dashboard of information about the ingested
 
 ## Microsoft Sentinel sharing a Log Analytics Workspace
 
-Considering Microsoft Sentinel workspace uses a Log Analytics workspace, you do have the option to enable the Sentinel workspace in a Log Analytics workspace that is used by other solutions.  The most common scenario is sharing the Log Analytics workspace used by Microsoft Defender for Cloud.  Sharing the workspace enables one central workspace to query security data.  
+Considering that Microsoft Sentinel workspace uses a Log Analytics workspace, you have the option to enable the Sentinel workspace in a Log Analytics workspace that is used by other solutions. The most common scenario is sharing the Log Analytics workspace used by Microsoft Defender for Cloud.  Sharing the workspace enables one central workspace to query security data.  
 
 ## Microsoft Defender for Cloud
 When creating your Microsoft Sentinel workspace, you aren't allowed to use the **Default** Microsoft Defender for Cloud Log Analytics workspace.  You need to manually create a Log Analytics workspace then update the Microsoft Defender for Cloud tier.  Now you can select the manually created Log Analytics workspace for use with Microsoft Defender for Cloud.

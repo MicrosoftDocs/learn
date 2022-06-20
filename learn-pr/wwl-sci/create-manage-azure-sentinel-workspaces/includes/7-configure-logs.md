@@ -60,7 +60,8 @@ You can currently configure the following tables for Basic Logs:
 - ContainerLogV2, which Container Insights uses and which include verbose text-based log records.
 - AppTraces, which contain freeform log records for application traces in Application Insights.
 
-> [!NOTE] Basic Logs are currently in *Preview*.  The supported/eligible tables documentation will be updated with current information when the feature is *Generally Available*. 
+> [!NOTE] 
+Basic Logs are currently in *Preview*.  The supported/eligible tables documentation will be updated with current information when the feature is *Generally Available*. 
 
 
 
