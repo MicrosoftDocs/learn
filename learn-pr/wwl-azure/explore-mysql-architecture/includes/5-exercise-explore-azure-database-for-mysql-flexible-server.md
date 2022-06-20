@@ -16,7 +16,7 @@ In this exercise, you will create an Azure Database for MySQL flexible server an
 ## Create an Azure Database for MySQL flexible server
 
 1. Under Azure services, select **+ Create a resource**. Under **Categories**, select **Databases**. Under **Azure Database for MySQL**, select **Create**.
-1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** drop down box to view the options. Select **Flexible server (Recommended)**. Select **Create**.
+1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** dropdown box to view the options. Select **Flexible server (Recommended)**. Select **Create**.
     :::image type="content" source="../media/mysql-deployment-option.png" alt-text="Screenshot showing the Azure Database for MySQL Flexible server (recommended) page." lightbox="../media/mysql-deployment-option.png":::
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. Subscription - your subscription.
@@ -40,13 +40,13 @@ In this exercise, you will create an Azure Database for MySQL flexible server an
 ## Inspect the server and increase the backup retention period
 
 1. Navigate to the **Overview** blade, under **Settings**, select **Compute + storage**. This blade displays your current Compute tier, and the option to upgrade it. It also displays the amount of storage you have provisioned, and the option to increase storage.
-1. Under backups, the backup retention period in days is displayed. Using the slider bar, change the backup retention period to 1. days. Select **Save** to retain your changes.
+1. Under backups, the backup retention period in days is displayed. Use the slider bar to change the backup retention period to 1. days. Select **Save** to retain your changes.
 1. Under **Settings**, select **Databases**. The four system databases used by MySQL are displayed. When you create database, it will be listed here.
 
 ## Examine server parameters
 
 1. Under **Settings**, select **Server parameters**.
-1. Using the search bar, search for and examine the following parameters. Examine the options by selecting each drop list, but do not change these parameters.
+1. Use the search bar to search for and examine the following parameters. Examine the options by selecting each drop list, but do not change these parameters.
    - character_set_server
    - collation_server
    - default_storage_engine
@@ -60,7 +60,7 @@ When you have completed this exercise, Select **STOP** to stop the server. This 
 ## Optional exercise - Create an Azure Database for MySQL with high availability
 
 1. Under Azure services, select **+ Create a resource**. Under **Categories**, select **Databases**. Under **Azure Database for MySQL**, select **Create**.
-1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** drop down box to view the options. Select **Flexible server (Recommended)**. Select **Create**.
+1. Under **Choose a deployment option to create a MySQL server**, select the **Resource type** dropdown box to view the options. Select **Flexible server (Recommended)**. Select **Create**.
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. **Subscription** - your subscription.
     1. **Resource group** - MyFlex_nnn.

@@ -7,7 +7,7 @@
 
 Microsoft has implemented **Azure Database for MySQL** in Azure as Platform as a Service (PaaS) database. Azure Database for MySQL is a fully managed database service that is ready installed, ready configured with automatic backups and in-built security.
 
-For applications that require a fast response from the database, the number of CPU cores, amount of IOPS, and amount of RAM are important factors. When buying on-premises hardware, it can be difficult to predict future requirements as your needs change. Azure offers the flexibility of scaling up or down as needed. You can even stop Azure Database for MySQL when it isn't required, and you aren't charged for the resource whilst it's stopped. With Azure Database for MySQL Flexible server, you can increase IOPS without increasing storage.
+For applications that require a fast response from the database, the number of CPU cores, amount of IOPS, and amount of RAM are important factors. Whena company buys on-premises hardware, it can be difficult to predict future requirements as your needs change. Azure offers the flexibility of scaling up or down as needed. You can even stop Azure Database for MySQL when it isn't required, and you aren't charged for the resource whilst it's stopped. With Azure Database for MySQL Flexible server, you can increase IOPS without increasing storage.
 
 Azure Database for MySQL provides the MySQL Community Edition with:
 
@@ -23,7 +23,7 @@ Azure Database for MySQL provides the MySQL Community Edition with:
 - **Flexible Server** - runs on Linux. Flexible server provides a high level of flexibility in how you configure MySQL and is best suited to new developments as well as migration of production workloads.
 - **Single Server** - runs on Windows. Single server is designed for minimal customization and is best suited to existing applications that already leverage single server. Azure Database for MySQL Single server isn't available in all regions and you might need to alter the deployment region or use Azure Database for MySQL Flexible server.
 
-:::image type="content" source="../media/azure-mysql-deployment-options.png" alt-text="Image showing Azure Database for MySQL deployment options: single server or flexible server." lightbox="../media/azure-mysql-deployment-options.png":::
+:::image type="content" source="../media/azure-mysql-deployment-options.png" alt-text="Screenshot that shows Azure Database for MySQL deployment options: single server or flexible server." lightbox="../media/azure-mysql-deployment-options.png":::
 
 > [!NOTE]
 > Azure Database for MySQL does not allow access to the underlying operating system or file system, and some data manipulation commands aren't supported.

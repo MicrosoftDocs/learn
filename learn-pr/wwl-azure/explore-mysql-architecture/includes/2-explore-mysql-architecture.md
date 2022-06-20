@@ -1,6 +1,6 @@
 MySQL is a relational database based on the SQL standard. Data is stored on the server, in tables made up of columns and rows. Clients can access the server data via web sites, apps, or using an integrated developer environment (IDE) such as MySQL Workbench or dbForge. Examples in this module use MySQL Workbench.
 
-:::image type="content" source="../media/mysql-architecture.png" alt-text="Image showing the Graphical user interface Description automatically generated." lightbox="../media/mysql-architecture.png":::
+:::image type="content" source="../media/mysql-architecture.png" alt-text="Screenshot that shows the Graphical user interface Description automatically generated." lightbox="../media/mysql-architecture.png":::
 
 MySQL allows different storage engines to be used. The default storage engine is InnoDB, which is the storage engine supported by Azure Database for MySQL. Data files including databases, tales, log, and status files are stored in the **data directory**. You can display the location of data files by running:
 
@@ -11,7 +11,7 @@ SELECT @@datadir;
 > [!NOTE]
 > Azure Database for MySQL does not provide access to the underlying file system. You can see where data files are stored, but do not have access to the actual files except through the database.
 
-MySQL holds global parameters in a file called **my.cnf**. In Azure Database for MySQL, most of the server configuration parameters can be managed in the Azure portal. Navigate to your Azure Database for mySQL server and select **Server parameters**. Alternatively, you can use the Azure CLI.
+MySQL holds global parameters in a file called **my.cnf**. In Azure Database for MySQL, most of the server configuration parameters can be managed in the Azure portal. Navigate to your Azure Database for MySQL server and select **Server parameters**. Alternatively, you can use the Azure CLI.
 
 ## Query cache
 
@@ -42,7 +42,7 @@ The MySQL daemon, also known as the MySQL Server or **mysqld**, is a service pro
 > [!NOTE]
 > You can stop your Azure Database for MySQL when it is not in use and restart it when required. This can be done in the Azure portal, in Azure Cloud Shell, MySQL Workbench, or using MySQL for Visual Studio.
 
-The **mysqld** services runs continuously for as long as the server is running. When you stop your Azure Database for MySQL server, no MySQL services can be accessed until the server is restarted.
+The **mysqld** service runs continuously for as long as the server is running. When you stop your Azure Database for MySQL server, no MySQL services can be accessed until the server is restarted.
 
 > [!NOTE]
 > Azure Database for MySQL is a service, and does not provide access to individual files such as the MySQL daemon.

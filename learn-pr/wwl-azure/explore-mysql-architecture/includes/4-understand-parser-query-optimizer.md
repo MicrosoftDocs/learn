@@ -27,7 +27,7 @@ You can also find out the cost of the last executed query. After running the que
 SHOW STATUS LIKE 'last_query_cost';
 ```
 
-This displays the number of page reads required to execute the query. By displaying the last_query_cost after variations of your query, you can find out the relative "cost" of each query.
+This displays the number of pages reads required to execute the query. By displaying the last_query_cost after variations of your query, you can find out the relative "cost" of each query.
 
 MySQL's architecture is designed to execute many successful queries concurrently. Where you have a choice, consider executing more small queries, rather than fewer large and complex queries.
 
