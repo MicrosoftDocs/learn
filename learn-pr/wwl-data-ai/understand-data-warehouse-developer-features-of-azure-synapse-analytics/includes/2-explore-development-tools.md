@@ -80,19 +80,19 @@ Choose Microsoft SQL Server as the Connection type.
 
 The connection requires the following parameters:
 
-- Server: Server in the form <Azure Synapse workspace name>-ondemand.sql.azuresynapse.net
+- Server: Server in the form \<Azure Synapse workspace name\>-ondemand.sql.azuresynapse.net
 - Database: Database name
  
 If you would like to use serverless SQL pool (preview) the URL should look like:
-- <Azure Synapse workspace name>-ondemand.sql.azuresynapse.net.
+- \<Azure Synapse workspace name\>-ondemand.sql.azuresynapse.net.
 
 If you would like to use dedicated SQL pool the URL should look like:
-- <Azure Synapse workspace name>.sql.azuresynapse.net
+- \<Azure Synapse workspace name\>.sql.azuresynapse.net
 
 Choose Windows Authentication, Azure Active Directory, or SQL Login as the Authentication Type.
 
 To use SQL Login as the authentication type, add the username/password parameters:
-- User: Server user in the form <User>
+- User: Server user in the form \<User\>
 - Password: Password associated with the user
 
 To use Azure Active Directory, you need to choose the needed authentication type.
