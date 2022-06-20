@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2022
+  ms.date: 06/20/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Process-based connection handling."
       isCorrect: false
-      explanation: "That's incorrect. PostgreSQL uses process-based connection handling by default. If you have many idle connections this is inefficient and expensive on resources."
+      explanation: "That's incorrect. PostgreSQL uses process-based connection handling by default. If you have many idle connections, this is inefficient and expensive on resources."
     - content: "Connection pooling."
       isCorrect: true
       explanation: "That's correct. Connection pooling with pgBouncer can improve database performance."
     - content: "Set **max_connections** to the minimum possible value."
       isCorrect: false
-      explanation: "That's incorrect. Setting max_connections to an appropriate value is part of connection handling, but will not directly improve performance."
+      explanation: "That's incorrect. Setting max_connections to an appropriate value is part of connection handling, but won't directly improve performance."
   - content: "You want to benchmark the performance of your database after making some changes to server parameters. Which client tool is best suited to your needs?"
     choices:
     - content: "Azure Data Studio"
@@ -49,4 +49,4 @@ quiz:
       explanation: "That's correct. pgbench is designed to run benchmark tests on PostgreSQL databases."
     - content: "psql"
       isCorrect: false
-      explanation: "That's incorrect. psql is a command line utility that allows you to interact with a PostgreSQL server. It does not have any specialist benchmark testing capabilities."
+      explanation: "That's incorrect. psql is a command line utility that allows you to interact with a PostgreSQL server. It doesn't have any specialist benchmark testing capabilities."

@@ -1,6 +1,6 @@
-In this module you have learned about connection handling, and how you can use connection pooling to improve database performance. You have also learned about some of the client tools available to work with PostgreSQL servers.
+In this module you've learned about connection handling, and how you can use connection pooling to improve database performance. You've also learned about some of the client tools available to work with PostgreSQL servers.
 
-Now that you have completed this module, you are able to:
+Now that you've completed this module, you're able to:
 
 - Understand connection handling
 - Understand the PostgreSQL client tools
