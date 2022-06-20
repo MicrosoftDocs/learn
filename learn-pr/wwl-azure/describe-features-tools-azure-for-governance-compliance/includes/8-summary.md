@@ -1,18 +1,17 @@
-In this module, you learned about Azure identity, access, and security services and tools. You covered authentication methods, including which ones are more secure. You learned about restricting access based on a role to help create a more secure environment. And, you learned about the Defense In Depth and Zero Trust models.
+In this module, you learned about In this module, you learned about some of the features and tools you can use to help with governance of your Azure environment. You also learned about tools you can use to help keep resources in compliance with corporate or regulatory requirements.
 
 ## Learning objectives<br>
 
 You should now be able to:
 
- -  Describe directory services in Azure, including Azure Active Directory (AD) and Azure AD DS.<br>
- -  Describe authentication methods in Azure, including single sign-on (SSO), multifactor authentication (MFA), and passwordless.
- -  Describe external identities and guest access in Azure.
- -  Describe Azure AD Conditional Access.
- -  Describe Azure Role Based Access Control (RBAC).
- -  Describe the concept of Zero Trust.
- -  Describe the purpose of the defense in depth model.
- -  Describe the purpose of Microsoft Defender for Cloud.
+ -  Describe the purpose of Azure Blueprints
+ -  Describe the purpose of Azure Policy
+ -  Describe the purpose of resource locks
+ -  Describe the purpose of the Service Trust portal
 
 ## Additional resources<br>
 
-The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
+The following resources provide more information on topics in this module or related to this module.
+
+ -  [Intro to Azure blueprints](/learn/modules/intro-to-azure-blueprints/) is a Microsoft Learn module that covers Azure Blueprints in greater detail.
+ -  [Intro to Azure Policy](/learn/modules/intro-to-azure-policy/) is a Microsoft Learn module that introduces you further to Azure Policy.

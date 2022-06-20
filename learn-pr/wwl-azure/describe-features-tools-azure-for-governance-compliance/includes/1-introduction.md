@@ -1,5 +1,3 @@
-# Describe features and tools in Azure for governance and compliance
-
 In this module, you’ll be introduced to some of the features and tools you can use to help with governance of your Azure environment. You’ll also learn about tools you can use to help keep resources in compliance with corporate or regulatory requirements.
 
 ## Learning objectives
