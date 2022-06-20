@@ -43,3 +43,6 @@ units:
 - learn.wwl.build-overall-security-strategy-architecture.summary
 badge:
   uid: learn.wwl.build-overall-security-strategy-architecture.badge
+subjects:
+- security
+- architecture
