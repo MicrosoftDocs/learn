@@ -13,7 +13,7 @@ SecurityEvent
 
 ```
 
-:::image type="content" source="../media/make-list-results.png" alt-text="Screen shot of a make_list function results.":::
+:::image type="content" source="../media/make-list-results.png" alt-text="Screenshot of a make_list function results.":::
 
 ## make_set() function
 
@@ -28,5 +28,5 @@ SecurityEvent
 
 ```
 
-:::image type="content" source="../media/make-set-results.png" alt-text="Screen shot of a Make_set function results.":::
+:::image type="content" source="../media/make-set-results.png" alt-text="Screenshot of a Make_set function results.":::
 
