@@ -1,7 +1,7 @@
 Microsoft Defender for Cloud continually compares the configuration of your resources with requirements in industry standards, regulations, and benchmarks. The regulatory compliance dashboard provides insights into your compliance posture based on how you're meeting specific compliance requirements.
 
 
-:::image type="content" source="../media/compliance-dashboard.png" alt-text="Screen shot of the Regulatory compliance dashboard.":::
+:::image type="content" source="../media/compliance-dashboard.png" alt-text="Screenshot of the Regulatory compliance dashboard.":::
 
 
 ## How are regulatory compliance standards represented in Defender for Cloud?

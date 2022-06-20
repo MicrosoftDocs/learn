@@ -10,7 +10,7 @@ To view your Secure score recommendations:
 
 - Navigate to Microsoft Defender for Cloud > Recommendations.
 
-:::image type="content" source="../media/recommendations-view.png" alt-text="Screenshot of Defender for Cloud Secure Score Recommendations":::
+:::image type="content" source="../media/recommendations-view.png" alt-text="Screenshot of Defender for Cloud Secure Score Recommendations." lightbox="../media/recommendations-view.png":::
 
 
 Here you'll see the recommendations applicable to your environment(s). Recommendations are grouped into security controls.

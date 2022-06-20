@@ -12,4 +12,4 @@ With the integrated Azure Workbooks functionality, Microsoft Defender for Cloud 
 - **Compliance Over Time** workbook - View the status of a subscription's compliance with the regulatory or industry standards you've selected
 - **Active Alerts** workbook - view active alerts by severity, type, tag, MITRE ATT&CK tactics, and location.
 
-:::image type="content" source="../media/workbooks-gallery-microsoft-defender-for-cloud.png" alt-text="Screen shot of the Workbooks gallery in Defender for Cloud.":::
+:::image type="content" source="../media/workbooks-gallery-microsoft-defender-for-cloud.png" alt-text="Screenshot of the Workbooks gallery in Defender for Cloud.":::

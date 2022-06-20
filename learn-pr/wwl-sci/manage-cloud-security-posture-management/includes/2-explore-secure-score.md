@@ -4,7 +4,7 @@ In the Microsoft Defender for Cloud Overview page, the secure score is shown as 
 
 
 
-:::image type="content" source="../media/single-secure-score.png" alt-text="Screenshot of Defender for Cloud Security Posture Secure Score":::
+:::image type="content" source="../media/single-secure-score.png" alt-text="Screenshot of Defender for Cloud Security Posture Secure Score.":::
 
 
 To increase your security, review Defender for Cloud's recommendations page and remediate the recommendation by implementing the remediation instructions for each issue. Recommendations are grouped into security controls. Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. Your score only improves when you remediate all of the recommendations for a single resource within a control. To see how well your organization is securing each individual attack surface, review the scores for each security control.
@@ -16,7 +16,7 @@ To increase your security, review Defender for Cloud's recommendations page and 
 ## Manage your security posture
 On the Security posture page, you're able to see the secure score for your entire subscription, and each environment in your subscription. By default all environments are shown.
 
-:::image type="content" source="../media/security-posture-page.png" alt-text="Screenshot of Defender for Cloud Security Posture Overview":::
+:::image type="content" source="../media/security-posture-page.png" alt-text="Screenshot of Defender for Cloud Security Posture Overview." lightbox="../media/security-posture-page.png":::
 
 
 The bottom half of the page allows you to view, and manage all of your individual subscriptions, accounts, and projects, by viewing their individual secure scores, number of unhealthy resources and even view their recommendations.
