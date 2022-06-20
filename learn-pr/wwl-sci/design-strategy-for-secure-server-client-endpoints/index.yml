@@ -46,3 +46,6 @@ units:
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-server-client-endpoints.badge
+subjects:
+- security
+- architecture

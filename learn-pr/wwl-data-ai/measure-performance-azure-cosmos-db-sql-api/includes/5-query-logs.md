@@ -1,6 +1,6 @@
 Azure resources produce Azure Diagnostic Logs, which provide detailed operational data of those resources. Diagnostics settings are use to collect those resource logs.
 
-While some logs like activity and platform metrics are collected automatically, diagnostic settings must be created to collect resource logs. These logs can be forwarded outside of Azure Monitor.  Enabling diagnostics settings in Azure Cosmos DB accounts can be forwarded to *Log Analytics workspaces*, *Even hubs*, and *Storage Accounts*.
+While some logs like activity and platform metrics are collected automatically, diagnostic settings must be created to collect resource logs. These logs can be forwarded outside of Azure Monitor.  Enabling diagnostics settings in Azure Cosmos DB accounts can be forwarded to *Log Analytics workspaces*, *Event hubs*, and *Storage Accounts*.
 
 Forwarding data to Log Analytics workspaces, writes the logs into tables that can be queried using the *Kusto Query Language* (*KQL*). So, to use the diagnostic data stored in these tables, knowledge on reading and writing `Kusto` queries is essential. These tables can be a generic legacy table called **Azure Diagnostics**, or the recommended **Resource-specific** tables.
 

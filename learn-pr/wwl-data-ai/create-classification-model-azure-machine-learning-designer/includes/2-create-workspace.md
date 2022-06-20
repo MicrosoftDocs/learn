@@ -21,6 +21,6 @@ If you don't already have one, follow these steps to create a workspace:
     - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
 3. Select **Review + create**. Wait for your workspace to be created (it can take a few minutes). Then go to it in the portal.
 4. On the **Overview** page for your workspace, launch Azure Machine Learning studio (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true)), and sign into Azure Machine Learning studio using your Microsoft account.
-5. In Azure Machine Learning studio, toggle the &#9776; icon at the top left to view the various pages in the interface. You can use these pages to manage the resources in your workspace.
+5. In Azure Machine Learning studio, select the three lines at the top left to view the various pages in the interface. You can use these pages to manage the resources in your workspace.
 
 You can manage your workspace using the Azure portal, but for data scientists and Machine Learning operations engineers, Azure Machine Learning studio provides a more focused user interface for managing workspace resources.

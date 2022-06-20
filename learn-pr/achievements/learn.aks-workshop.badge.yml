@@ -1,5 +1,7 @@
 ### YamlMime:AchievementDetail
 achievementUid: learn.aks-workshop.badge
 metadata:
-  title: 'Microsoft Badge: Azure Kubernetes Service Workshop was issued by Microsoft'
+  title: >-
+    Microsoft Badge: Azure Kubernetes Service Workshop as issued by Microsoft
+    was issued by Microsoft
 socialImageUrl: /learn/achievements/aks-workshop-social.png
