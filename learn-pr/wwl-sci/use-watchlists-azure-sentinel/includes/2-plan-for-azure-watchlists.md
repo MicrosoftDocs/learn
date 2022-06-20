@@ -10,6 +10,3 @@ Common scenarios for using watchlists include:
 
 - Enriching event data. Use watchlists to enrich your event data with name-value combinations derived from external data sources.
 
-> [!TIP]
-> You can create and delete Watchlists, but you can't update Watchlists. If you are working with more dynamic lists, use KQL external data operators to create temporary virtual tables.
-
