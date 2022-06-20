@@ -131,7 +131,7 @@ In this section, you'll create a Blob container and upload a picture
 2.  Select Change access level
 3.  Set the Public access level to Blob (anonymous read access for blobs only)
     
-    :::image type="content" source="../media/blob-access-level-213a74e6.png":::
+    :::image type="content" source="../media/blob-access-level-213a74e6.png" alt-text="Screenshot with Change access level highlighted.":::
     
 4.  Select OK
 5.  Refresh the tab where you attempted to access the file earlier.
