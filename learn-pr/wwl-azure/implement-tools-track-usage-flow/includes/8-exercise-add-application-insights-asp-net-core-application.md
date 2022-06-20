@@ -12,7 +12,6 @@ In this tutorial, we'll learn how to get started with App Insights. We'll cover,
 ## Getting started
 
 1.  To add Application Insights to your [ASP.NET](http://asp.net/) website, you need to:
-    
      -  Install Visual Studio 2019 for Windows with the following workloads:
      -  [ASP.NET](http://asp.net/) and web development (Don't uncheck the optional components)
 

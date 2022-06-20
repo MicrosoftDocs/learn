@@ -12,8 +12,6 @@ Many security features, like security policy and recommendations, are available 
 
 The regulatory compliance dashboard in Microsoft Defender for Cloud shows your selected compliance standards with all their requirements, where supported requirements are mapped to applicable security assessments. The status of these assessments reflects your compliance with the standard. Below you have an example of the Regulatory Compliance Dashboard in Microsoft Defender for Cloud:
 
-![Screenshot showing an example of the Regulatory Compliance Dashboard in Microsoft Defender for Cloud.](../media/microsoft-defender-cloud-regulatory-policy.png)
+:::image type="content" source="../media/microsoft-defender-cloud-regulatory-policy.png" alt-text="Screenshot showing an example of the Regulatory Compliance Dashboard in Microsoft Defender for Cloud.":::
 
-The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
-Using the information in the regulatory compliance dashboard, you can improve your compliance posture by resolving recommendations directly within the dashboard. You can select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue. From there you can select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.
