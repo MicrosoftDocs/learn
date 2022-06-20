@@ -238,6 +238,8 @@ In this exercise, you'll use SQLite to store information locally with an applica
         {
             InitializeComponent();
 
+            MainPage = new AppShell();
+
             PersonRepo = repo;
         }
     }
