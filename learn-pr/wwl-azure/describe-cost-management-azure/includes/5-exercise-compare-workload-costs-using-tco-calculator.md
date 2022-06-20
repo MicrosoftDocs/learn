@@ -1,31 +1,29 @@
-In this exercise, you use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in the datacenter versus on Azure.
+In this exercise, you use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in your datacenter versus on Azure.
 
-Tailwind Traders is interested in moving some of its on-premises workloads to the cloud. But first, the Chief Financial Officer wants to understand more about moving from a relatively fixed cost structure to an ongoing monthly cost structure.
+Assume you're considering moving some of your on-premises workloads to the cloud. But first, you need to understand more about moving from a relatively fixed cost structure to an ongoing monthly cost structure.
 
-You've been tasked to investigate whether there are any potential cost savings in moving your European datacenter to the cloud over the next three years. You need to take into account all of the potentially hidden costs involved with operating on-premises and in the cloud.
+You'll need to investigate whether there are any potential cost savings in moving your datacenter to the cloud over the next three years. You need to take into account all of the potentially hidden costs involved with operating on-premises and in the cloud.
 
-Instead of manually collecting everything you think might be included, you use the TCO Calculator as a starting point. You adjust the provided cost assumptions to match Tailwind Traders' on-premises environment.
+Instead of manually collecting everything you think might be included, you use the TCO Calculator as a starting point. You adjust the provided cost assumptions to match your on-premises environment.
 
 > [!NOTE]
 > Remember, you don't need an Azure subscription to work with the TCO Calculator.
 
 Let's say that:
 
- -  Tailwind Traders runs two sets, or banks, of 50 virtual machines (VMs) in each bank.
+ -  You run two sets, or banks, of 50 virtual machines (VMs) in each bank.
  -  The first bank of VMs runs Windows Server under Hyper-V virtualization.
  -  The second bank of VMs runs Linux under VMware virtualization.
- -  There's also a storage area network (SAN) with 60 terabytes (TB) of disk storage.
+ -  There's also a storage area network (SAN) with 60 TB of disk storage.
  -  You consume an estimated 15 TB of outbound network bandwidth each month.
  -  There are also a number of databases involved, but for now, you'll omit those details.
 
 Recall that the TCO Calculator involves three steps:
 
-:::image type="content" source="../media/2-total-cost-ownership-steps-cfe38fc4.png" alt-text="A visual representation of the three steps, define your workloads, adjust assumptions, and view the report.":::
+<br>:::image type="content" source="../media/tco-calculator-steps-3c2dc1d4.png" alt-text="A visual representation of the three steps, define your workloads, adjust assumptions, and view the report.":::
 
 
-Let's see how Tailwind Traders' existing workloads compare in the datacenter versus on Azure.
-
-## Define your workloads
+## Define your workloads<br>
 
 Enter the specifications of your on-premises infrastructure into the TCO Calculator.
 
@@ -71,6 +69,14 @@ Enter the specifications of your on-premises infrastructure into the TCO Calcula
       :::column-end:::
       :::column:::
         **Windows**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Operating System License
+      :::column-end:::
+      :::column:::
+        **Datacenter**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -287,11 +293,8 @@ To make these adjustments:
 1.  Set **Timeframe** to **3 Years**.
 2.  Set **Region** to **North Europe**.
 
-Scroll to the summary at the bottom. You see a comparison of running your workloads in the datacenter versus on Azure. The prices you see might differ, but here's an example of the cost savings you might expect.
+Scroll to the summary at the bottom. You see a comparison of running your workloads in the datacenter versus on Azure.
 
-:::image type="content" source="../media/3-tco-calculator-summary-3f2f0de3.png" alt-text="A screenshot that shows the report summary. The summary estimates a total savings of more than 15 million over the course of three years when running on Azure.":::
-
-
-Select **Download** to download or print a copy of the report in PDF format.
+Select **Download** to download or print a copy of the report in PDF format.<br>
 
 Great work. You now have the information that you can share with your Chief Financial Officer. If you need to make adjustments, you can revisit the TCO Calculator to generate a fresh report.

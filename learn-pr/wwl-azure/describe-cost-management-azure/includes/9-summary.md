@@ -11,4 +11,6 @@ You should now be able to:
 
 ## Additional resources<br>
 
-The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
+The following resources provide more information on topics in this module or related to this module.
+
+ -  [Control Azure spending and manage bills with Microsoft Cost Management + Billing](/learn/paths/control-spending-manage-bills/) is a learning path designed to give you a deeper understanding of cost management tools and strategies in Azure.
