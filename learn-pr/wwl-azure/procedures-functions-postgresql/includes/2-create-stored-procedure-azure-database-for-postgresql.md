@@ -32,7 +32,7 @@ Procedures take the following parameters:
 - **default_expr** - a default expression (of the same type) to be used if the parameter isn't specified. Input parameters following a parameter with a default value must also have default values.
 - **lang_name -** the language used to write the procedure. May be sql, c, internal, or the name of a user-defined procedural language, for example, plpgsql.
 
-In this example, a stored procedure is created called myprocedure, which takes input parameters a and b. IN is the default for parameters, so we don't have to explicitly identify them as input parameters. When the stored procedure is called, the values assigned to these parameters will be inserted into mytable.
+In the following example, a stored procedure is created called myprocedure, which takes input parameters a and b. IN is the default for parameters, so we don't have to explicitly identify them as input parameters. When the stored procedure is called, the values assigned to these parameters will be inserted into mytable.
 
 ```sql
 CREATE PROCEDURE myprocedure (a integer, b integer)
@@ -42,4 +42,4 @@ CREATE PROCEDURE myprocedure (a integer, b integer)
     $$;
 ```
 
-The \$\$ symbol is used to start and end a string. You can also use single quotation marks, but this can cause problems with other programming languages so \$\$ is preferred.
+The \$\$ symbol is used to start and end a string. You can also use single quotation marks, but it can cause problems with other programming languages so \$\$ is preferred.
