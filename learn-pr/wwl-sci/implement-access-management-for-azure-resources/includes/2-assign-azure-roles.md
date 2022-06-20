@@ -12,10 +12,10 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
      Use the built-in roles or create a custom role with the specific capabilities you need.
      - Built-in Azure roles
          - Owner - full access to all resources.
-         - Contributor - Can create and manage all types of Azure resources, but cannot grant access.
+         - Contributor - Can create and manage all types of Azure resources, but can't grant access.
          - Reader - Can view the available Azure resources.
          - User Access Administrator - Assign access to Azure resources.
-         - There are several other task specific roles like Virtual Machine Contributor, that can be assigned.
+         - Other task specific roles, like Virtual Machine Contributor, can be assigned.
 
 3. Identify what level to assign the role (the Scope).
 
@@ -26,18 +26,18 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
         - If you assign the **Billing Reader role** to a group at the **subscription scope**, the members of that group can read billing data for every resource group and resource in the subscription.
         - If you assign the **Contributor role** to an application at the **resource group scope**, it can manage resources of all types in that resource group, but not other resource groups in the subscription.
 
-     It's a best practice to grant security principals the least privilege they need to perform their job. Avoid assigning broader roles at broader scopes even if it initially seems more convenient. By limiting roles and scopes, you limit what resources are at risk if the security principal is ever compromised. For more information, see Understand scope.
+     It's a best practice to grant security-principals the least privilege they need to perform their job. Avoid assigning broader roles at broader scopes even if it initially seems more convenient. By limiting roles and scopes, you limit what resources are at risk if the security-principal is ever compromised. For more information, see Understand scope.
 
 4. Comfirm the currently logged in user has the rights need to assign the Azure role.
 
 5. Assign the role.
 
-     Once you know the security principal, role, and scope, you can assign the role. You can assign roles using the Azure portal, Azure PowerShell, Azure CLI, Azure SDKs, or REST APIs. You can have up to 2000 role assignments in each subscription. This limit includes role assignments at the subscription, resource group, and resource scopes. You can have up to 500 role assignments in each management group.
+     Once you know the security-principal, role, and scope, you can assign the role. You can assign roles using the Azure portal, Azure PowerShell, Azure CLI, Azure SDKs, or REST APIs. You can have up to 2000 role assignments in each subscription. This limit includes role assignments at the subscription, resource group, and resource scopes. You can have up to 500 role assignments in each management group.
 
 ### Assign an Azure role from the portal
 :::image type="content" source="../media/assign-role-resource-group.png" alt-text="Screenshot of the Azure portal.  It shows a sample resource group with the Assign Role selected.":::
 
-Whether you are in the User, Group, Resource Group, or Subscription you will generally use the Access content (IAM) page to make the assign. It's also known as identity and access management (IAM) and appears in several locations in the Azure portal.
+Whether you are in the User, Group, Resource Group, or Subscription you'll generally use the Access content (IAM) page to make the assign. It's also known as identity and access management (IAM) and appears in several locations in the Azure portal.
 
 ### Assign an Azure role with script
 

@@ -10,7 +10,7 @@ You would assign a custom role to a user, group, or other resource the same as y
 4. Then name and assign the capabilities needed.
 
 ### Create a custom role from a JSON template
-You can use a JSON file to create a custom role.  Here is a sample:
+You can use a JSON file to create a custom role.  Here's a sample:
 
 ```
 {
@@ -40,4 +40,4 @@ You can use a JSON file to create a custom role.  Here is a sample:
 }
 ```
 
-The asterick (*) is used as a wildcard. If you need to assign all of the **read** permissions from the **Billing** resource, that use this command **Microsoft/Billing/*/read**.  The wildcard can exist at any level.
+The asterisk (*) is used as a wildcard. If you need to assign all of the **read** permissions from the **Billing** resource that use this command **Microsoft/Billing/*/read**.  The wildcard can exist at any level.

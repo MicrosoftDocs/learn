@@ -1,4 +1,4 @@
-Azure Key Vault is a secure tool for storing secrets, keys, and certificate.  Once stored, these items can be used by users and applications to perform actions and opperations in a secure method.  The process to retrieve any of these resources is pretty common.  So we will look at how to review a secret from a key vault.
+Azure Key Vault is a secure tool for storing secrets, keys, and certificate.  Once stored, these items can be used by users and applications to perform actions and operations in a secure method.  The process to retrieve any of these resources is common.  So we'll look at how to review a secret from a key vault.
 
 ### Add a secret to your key vault
 To add a secret to the vault, follow the steps:
@@ -17,7 +17,7 @@ To add a secret to the vault, follow the steps:
 5. Select **Create**.
 
 ### Retrieve a secret using the Azure portal
-This process is very simple.  Open you key vault, then open the secret you just created.  Select the **Show secret value** button.
+This process is simple.  Open your key vault, then open the secret you created.  Select the **Show secret value** button.
 
 :::image type="content" source="../media/key-vault-view-secret.png" alt-text="Screenshot of the Azure Key Vault, with a secret open and the show secret value selected. You can read or copy the value in plain text.":::
 
@@ -35,4 +35,4 @@ $secret = Get-AzKeyVaultSecret -VaultName "<your-unique-keyvault-name>" -Name "m
 ```
 
 ### Retrieve a secret in an application
-If you are building an application that needs access to your key vault secrets, certificates, and keys, that can be done.  You can access the key vault using .NET, Node.js, Python, and other languages.
+If you're building an application that needs access to your key vault secrets, certificates, and keys that can be done.  You can access the key vault using .NET, Node.js, Python, and other languages.
