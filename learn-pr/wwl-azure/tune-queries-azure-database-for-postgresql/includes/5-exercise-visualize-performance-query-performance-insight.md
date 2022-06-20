@@ -57,7 +57,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 1. Select **Remember password**.
 1. Start pgAdmin and enter the password that you specified during installation.
 1. Right-click **Servers**, select **Register**, and select **Server**.
-:::image type="content" source="../media/pgadmin-register.png" alt-text="Screenshot of server registration menu in pgAdmin.":::
+    :::image type="content" source="../media/pgadmin-register.png" alt-text="Screenshot of server registration menu in pgAdmin.":::
 1. In **Name**, type **PostgreSQL Exercise 10** and select the **Connection** tab.
 1. In **Host name/address**, type the value that you specified when you deployed the server.
 1. In **Username**, type **demo@** followed by your server name.
@@ -83,7 +83,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 1. In **Settings**, select **Server parameters**.
 1. Navigate to the **pg_qs.query_capture_mode** setting.
 1. Select **TOP**.
-    :::image type="content" source="../media/3-pg_qs_query_capture_mode.png" alt-text="Screenshot of settings to turn Query Store on" lightbox="../media/3-pg_qs_query_capture_mode.png":::
+    :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on" lightbox="../media/3-settings-turn-query-store-on.png":::
 1. Navigate to **pgms_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
     :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn pgms_wait_sampling.query_capture_mode on" lightbox="../media/3-query-capture-mode.png":::
 1. Select **Save**and wait for the server parameters to update.
@@ -107,7 +107,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 > For a newly created database, there might be limited statistics, if any. If you wait for 30 minutes there will be statistics from background processes.
 
 1. Select the **azure_sys** database.
-    :::image type="content" source="../media/5-azure_sys.png" alt-text="Screenshot of the database selector" lightbox="../media/5-azure_sys.png":::
+    :::image type="content" source="../media/5-database-selector.png" alt-text="Screenshot of the database selector" lightbox="../media/5-database-selector.png":::
 1. Type each of the following queries and select **Run**.
     ```sql
     SELECT * FROM query_store.query_texts_view;
@@ -135,4 +135,3 @@ When you have completed all of the exercises, you can delete the Azure Database 
 1. Select **Skip feedback**.
 1. Type the server name.
 1. Select **Delete**.
-1. 
