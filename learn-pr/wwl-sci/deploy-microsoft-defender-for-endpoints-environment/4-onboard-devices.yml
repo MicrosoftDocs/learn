@@ -4,7 +4,7 @@ title: Onboard devices
 metadata:
   title: Onboard devices
   description: "Onboard devices"
-  ms.date: 12/03/2021
+  ms.date: 06/20/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-onboard-devices.md)]
+  [!include[](includes/4-onboard-devices.md)]
