@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-azure-sentinel-workspaces.configure-logs
+title: Configure Logs
+metadata:
+  title: Configure Logs
+  description: "Configure Logs"
+  ms.date: 06/20/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-configure-logs.md)]
