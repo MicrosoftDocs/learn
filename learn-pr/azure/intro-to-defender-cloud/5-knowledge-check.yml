@@ -49,7 +49,7 @@ quiz:
       explanation: "Defender for Cloud uses the Secure Score to inform the Casino about any misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure. "
     - content: "Defender for cloud will use the Alerts page to inform the Casino about any known attacks."
       isCorrect: true
-      explanation: "Alerts are generated through Defender for Cloud's Advanced Threat Protection functionality. Alerts are available on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts, about possible cyberattacks or potential malicious actions taken against your resources."
+      explanation: "Alerts are generated through Defender for Cloud's enhanced security features on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts, about possible cyberattacks or potential malicious actions taken against your resources."
     - content: "Defender for Cloud creates workspaces whose job it is to actively investigate situations and will send text messages to the SOC team to handle any cyberattacks. "
       isCorrect: false
       explanation: "Defender for Cloud will provide alerts, recommendations and use the Secure Score to inform the casino of all of its issues and misconfigurations."

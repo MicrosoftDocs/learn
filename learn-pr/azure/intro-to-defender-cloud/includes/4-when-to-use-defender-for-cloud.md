@@ -10,15 +10,15 @@ When you're choosing which plans to activate you need to consider which resource
 
 ### Protect your servers
 
-The Defender for Servers plan offer advance threat protection, vulnerability assessment, adaptive network hardening and adaptive application controls.
+The Defender for Servers plan offers features such advance threat protection, vulnerability assessment, adaptive network hardening and adaptive application controls and more.
 
 All of these features will work to strengthen your company's security posture and protect their servers.
 
 ### Protect your databases
 
-Each database may contain sensitive information that no company would want exposed to the outside world. some examples could be saved usernames and passwords along with credit card information and home shipping addresses. The databases can also contain information such as profit reports and other important financial information.
+Each database may contain sensitive information that no company would want exposed to the outside world. Some examples could be saved usernames and passwords along with credit card information and home shipping addresses. The databases can also contain information such as profit reports and other important financial information.
 
-The Defender plans covering databases, along with Defender for Cloud, was designed to protect the following databases:
+The Defender plans covering databases, along with Defender for Cloud, were designed to protect the following databases:
 
 - SQL
 - SQL on machines
@@ -39,7 +39,7 @@ The Security Posture page shows you a birds eye view of all of your environments
 
 :::image type="content" source="../media/security-posture.png" alt-text="Screenshot of the security posture page." lightbox="../media/security-posture.png" border="false":::
 
-The Recommendations page shows you all of the recommendations and security misconfigurations associated with your resources. This page offers an easy to deploy solutions or guidance on how to remediate them.
+The Recommendations page shows you all of the recommendations and security misconfigurations associated with your resources. From here, you can find easy to deploy solutions or guidance on how to remediate the issues that are pointed out by the recommendations.
 
 :::image type="content" source="../media/recommendations-page.png" alt-text="Screenshot that shows the Recommendations page in Defender for Cloud." lightbox="../media/recommendations-page.png" border="false":::
 
@@ -48,7 +48,7 @@ By selecting a recommendation, you'll be presented with the following informatio
 - Severity level
 - Description of the issue
 - Related recommendations
-- Remediation steps, and a quick logic fix if available
+- Remediation steps, and a quick fix, if available
 - A list of the affected resources
 
 Some recommendations have a quick fix button that you can select to automatically fix the issue on any of the available resources.
@@ -61,4 +61,4 @@ After evaluating your needs, you decide that Defender for Cloud is the best fit 
 
 - The ease of use with its varied coverage offers the best possible solution to provide protections for your multicloud environments.
 - Its built-in capabilities offer the best coverage for all types of resources.
-- If more additional functionality is required, other plans can always be added.
+- If additional functionality is required, other plans can always be added.
