@@ -3,25 +3,25 @@
 
 In order to complete this exercise, you must have:
 
-- Created a resource group (link to Module 1, Unit 5)
-- Created an Azure Database for MySQL Flexible Server (link to Module 1, Unit 5)
-- Downloaded and installed MySQL Workbench (link to Module 2, Unit 5)
-- Created a Zoo database (link to Module 2, Unit 5)
-- Downloaded the scripts for this exercise (Link to GitHub)
+- Created a resource group (see Module 1, Unit 5)
+- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5)
+- Downloaded and installed MySQL Workbench (see Module 2, Unit 5)
+- Created a Zoo database (see Module 2, Unit 5)
+- Downloaded the scripts for this exercise from [GitHub](https://github.com/MicrosoftLearning/mslearn-mysql/tree/main/labfiles).
 
 ## Preparation - Configure MySQL Workbench
 
 1. Open MySQL Workbench and from the top menu select **Edit** > **Preferences**.
 1. From the left navigation under **General Editors**, select **Others**.
 1. Under **Others**, check **Allow more than one instance of MySQL Workbench to run**.
-    :::image type="content" source="../media/workbench-preferences.png" alt-text="Screenshot showing the Workbench Preferences > Others settings page." lightbox="../media/workbench-preferences.png":::
+    :::image type="content" source="../media/workbench-preferences.png" alt-text="Screenshot showing the Workbench Preferences, Others settings page." lightbox="../media/workbench-preferences.png":::
 1. From the left navigation, select **SQL Editor**.
 1. Under MySQL Session, change the **DBMS connection read timeout interval (in seconds):** to 300. (The default value was 30 seconds.)
 1. Select **OK**, and then close MySQL Workbench.
 1. Open MySQL Workbench and connect to your Azure Database for MySQL Flexible Server.
 1. Select **File**, **Open SQL Script**, and select **Lab5_repopulateAnimals.sql**.
 1. Select **Query** > **Execute (All or Selection)**. This creates the stored procedure RepopulateAnimals.
-    :::image type="content" source="../media/workbench-preferences-sql-editor.png" alt-text="Screenshot showing the Workbench Preferences > SQL Editor settings page." lightbox="../media/workbench-preferences-sql-editor.png":::
+    :::image type="content" source="../media/workbench-preferences-sql-editor.png" alt-text="Screenshot showing the Workbench Preferences, S Q L Editor settings page." lightbox="../media/workbench-preferences-sql-editor.png":::
 
 ## Understand transactions
 

@@ -39,4 +39,4 @@ You can also define the number of threads in the pool by setting the following s
 - **thread_pool_min_threads** This defines the minimum number of threads that will be reserved in the pool, even after connections are closed.
 
 > [!NOTE]
-> MySQL 5.6 does not support thread pools.
+> MySQL 5.6 doesn't support thread pools.
