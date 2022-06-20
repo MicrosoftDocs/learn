@@ -45,7 +45,7 @@ The application works well, but if the database contains many rows the UI can be
           // Call Init()
           await Init();
 
-          //basic validation to ensure a name was entered
+          // basic validation to ensure a name was entered
           if (string.IsNullOrEmpty(name))
                 throw new Exception("Valid name required");
     
