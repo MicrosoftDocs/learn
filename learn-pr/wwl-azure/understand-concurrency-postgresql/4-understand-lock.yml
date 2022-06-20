@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-concurrency-postgresql.understand-locking
+uid: learn.wwl.understand-concurrency-postgresql.understand-lock
 title: Understand locking
 metadata:
   title: Understand locking
   description: "Understand locking"
-  ms.date: 06/08/2022
+  ms.date: 06/20/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
-  [!include[](includes/4-understand-locking.md)]
+  [!include[](includes/4-understand-lock.md)]
