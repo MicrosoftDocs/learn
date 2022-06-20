@@ -4,8 +4,8 @@ To train a regression model, you need a dataset that includes historical *featur
 
 To use the Azure Machine Learning designer, you create a *pipeline* that you use to train a machine learning model. This pipeline starts with the dataset from which you want to train the model.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the &#9776; icon at the top left of the screen. View the **Designer** page (under **Author**), and select **+** to create a new pipeline.
-2. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top. 
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the three lines icon at the top left of the screen. View the **Designer** page (under **Author**), and select **+** to create a new pipeline.
+2. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top. 
 3. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML *compute-type***, select the compute cluster you created previously. 
 4. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date***) to **Auto Price Training**.   
 5. Select the *close icon* on the top right of the **Settings** pane to close the pane. 
@@ -15,7 +15,7 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you use
 
 In this module, you train a regression model that predicts the price of an automobile based on its characteristics. Azure Machine Learning includes a sample dataset that you can use for this model.
 
-1. Next to the pipeline name on the left, select the  **>>** icon to expand the panel if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Notice two buttons, **Data** and **Components**. 
+1. Next to the pipeline name on the left, select the arrows icon to expand the panel if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Notice two buttons, **Data** and **Components**. 
 
     ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
@@ -36,11 +36,11 @@ You typically apply data transformations to prepare the data for modeling. In th
 
     ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
 
-2. Search for the **Select Columns in Dataset** module and drag it to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
+2. Search for a **Select Columns in Dataset** module and place it to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
     ![The Automobile price data (Raw) dataset connected to the Select Columns in Dataset module](../media/dataset-select-columns.png)
 
-3. Double click on the **Select Columns in Dataset** module to access a pane on the right. Select **Edit column**. Then in the **Select columns** window, select **By name** and **Add all** to add all the columns. Then remove **normalized-losses**, so your final column selection looks like this:
+3. Double click on the **Select Columns in Dataset** module to access a settings pane on the right. Select **Edit column**. Then in the **Select columns** window, select **By name** and **Add all** to add all the columns. Then remove **normalized-losses**, so your final column selection looks like this:
 
     ![Screenshot of all columns other than normalized_losses](../media/select-columns.png)
 
@@ -50,7 +50,7 @@ In the rest of this exercise, you go through steps to create a pipeline that loo
 
 Follow the remaining steps, use the image for reference as you add and configure the required modules.
 
-4. Search for the **Clean Missing Data** module and place it under the **Select Columns in Dataset** module on the canvas. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
+4. In the **Asset Library**, search for a **Clean Missing Data** module and place it under the **Select Columns in Dataset** module on the canvas. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
 5. Double click the **Clean Missing Data** module, and in the pane on the right, click **Edit column**. Then in the **Select columns** window, select **With rules**, in the **Include** list select **Column names**, in the box of column names enter **bore**, **stroke**, and **horsepower** like this:
 
     ![bore, stroke, and horsepower columns are selected](../media/clean-missing-values.png)
@@ -63,7 +63,7 @@ Follow the remaining steps, use the image for reference as you add and configure
     >[!TIP]
     >If you view the statistics for the **bore**, **stroke**, and **horsepower** columns, you'll see a number of missing values. These columns have fewer missing values than **normalized-losses**, so they might still be useful in predicting **price** once you exclude the rows where the values are missing from training.
 
-7. Find a **Normalize Data** module and place it on the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
+7. In the **Asset library**, search for a **Normalize Data** module and place it on the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
 8. Double click on the **Normalize Data** module to view its parameters pane. Note that it requires you to specify the transformation method and the columns to be transformed. Then, set the transformation to **MinMax**. Apply a rule by selecting **Edit column** to include the following **Column names**:
     - **symboling**
     - **wheel-base**
@@ -100,9 +100,9 @@ To apply your data transformations, you must run the pipeline as an experiment.
 
     Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
 
-4. When the run has completed, click on **Job detail**. You will be taken to another window which will show the modules like this:
+4. When the run has completed, click on **Job detail**. You will be taken to another window. Note that the modules have completed check marks like this:
 
     ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules in completed state](../media/normalize-complete.png)
 
-The dataset is now prepared for model training.
+The dataset is now prepared for model training. Close the Job detail window to return to the pipeline. 
 

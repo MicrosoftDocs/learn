@@ -1,4 +1,4 @@
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
 - Analyze DLP reports
 
