@@ -52,7 +52,7 @@ When you work with pipelines, you usually can't use managed identities. This is 
 > Hosted agents and hosted runners aren't currently compatible with managed identities.
 
 > [!TIP]
-> In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's usually best to go with a managed identity. Those are easier to work with and can be more secure.
+> In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's best to go with a managed identity. They're easier to work with and are usually more secure.
 
 ## Why can't you just use your user account?
 
