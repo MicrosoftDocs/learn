@@ -1,78 +1,43 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Before making a REST call to an API, such as Microsoft Graph, you'll need to acquire an access token. To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
 
-    Goal: briefly summarize the key skill this unit will teach
+Note the scope requested by the application by referring app.py. By default, this array is set to `["User.Read]`, the Microsoft Graph API scope for accessing basic user account information. The graph endpoint for accessing this info is `https://graph.microsoft.com/v1.0/me`. 
 
-    Heading: none
+Any valid requests made to this endpoint must bear an access token containing scope `User.Read` in the Authorization header. A complete cache miss will result in an error and indicates that a former auth code flow exchange didn't include this scope in the request.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+```python
+# Invoke the acquire_token flow on the MSAL client for the requested
+# account and scope. Look for and retrieve an existing valid token in
+# the cache or use the refresh token to fetch a new access token.
+result: "dict[str: Any]" = msal_client.acquire_token_silent(
+    scopes=["https://graph.microsoft.com/User.Read"],
+    account=msal_client.get_accounts()[0],
+)
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+# Update the session's token cache to reflect the new access token and
+# refresh token.
+if token_cache.has_state_changed:
+    session["token_cache"] = token_cache.serialize()
+session["msal_http_response_cache"] = http_cache
+```
+# Call the Microsoft Graph API
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Now that you have a token, you can call a protected web API. To call the Microsoft Graph API, update `app.py` with the following code. 
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+```python
+# Simple HTTP Get to graph showing the usage of the retrieved access token
+response = requests.get(
+    "https://graph.microsoft.com/v1.0/me",
+    headers={"Authorization": f"Bearer {result['access_token']}"},
+).json()
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+# Show the "Graph" view for authenticated users
+return render_template("authenticated/graph.html", 
+    graphCallResponse=response,
+    graphAccessTokenExpiresInSeconds=result['expires_in'])
+```
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+A call to the Microsoft Graph API is a simple HTTP Get that contains the access token in the authorization header. After consenting to the requested permissions and signing in, the app displays that you've successfully logged in using your Azure AD credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for your user and received the following information. 
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+:::image type="content" source="../media/6-call-microsoft-graph-api.png" border="false" alt-text="Call Microsoft Graph API":::
 
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+ If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this tutorial, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial auth code flow and performing on-demand, step-up authentication depending on your desired user experience. 

@@ -1,69 +1,60 @@
 Developers can leverage the identity platform to add authentication to a Python Flask web application to enable users to sign in. Adding authentication enables your application to access limited profile information. Once the signed in user grants consent, the application can obtain a token from Azure AD on behalf of the signed in user and use it to request data from web APIs, such as Microsoft Graph.
 
+In this unit, you'll sign in users in a Python Flask web application that uses the Microsoft Authentication Library (MSAL). Follow these steps to enable sign in: 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+- Import the auth library
+- Import Flask modules
+- Build the authorization code flow
+- Create app routes
+- Create a confidential client
+- Sign in and sign out users
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+## Import the auth library
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Before you can sign in Azure AD users, install MSAL for Python in your application. Add the following code to `app.py`
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+```python
+# Import Microsoft Authentication Library (MSAL) for Python
+import msal
+from msal.authority import (AuthorityBuilder, AZURE_PUBLIC)
+```
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Import Flask modules
 
-    Goal: State concisely what's covered in this unit
+Next, import Flask modules to handle render templates and session access.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```python
+# Flask imports to handle render templates and session access
+from werkzeug.middleware.proxy_fix import ProxyFix
+from werkzeug.exceptions import Forbidden, Unauthorized
+from flask import Flask, render_template, session, request, redirect, url_for
+from flask_session import Session
+```
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+## Initialize the Flask app
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+After importing the required modules, add code to initialize your Python Flask application. You'll also load the default Flask configurations such as session configs, as shown below. 
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+```Python
+def create_app():
+    """Configure the flask application"""
 
-    Heading: none
--->
-TODO: add a visual element
+    # Initialize the flask app
+    app = Flask(__name__)
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+    # Load Flask configuration settings such as session configs
+    app.config.from_object("default_settings")
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+    # Initialize the serverside session for the app to cordinate auth flows, store the 
+    # "user" object and store MSAL client caches (token cache and http cache)
+    Session(app)
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+    # Support both http (localhost) and https (deployed behind a web
+    # proxy such as in most cloud deployments). See:
+    # https://flask.palletsprojects.com/en/2.0.x/deploying/wsgi-standalone/#proxy-setups
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
+```
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+In addition to the Flask-specific configurations, ` app.config.from_object("default_settings")` also gets the client id, client credential, and tenant id that will be used with the MSAL client.
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+The `Session(app)` object initializes a server side session that is used to coordinate the authorization code flow between auth legs and store the "User" object (id token/claims). It also stores two MSAL client caches; (i) the token cache that contains access tokens and refresh tokens and (ii) the http cache that contains highly cacheable content like the metadata endpoint.
