@@ -56,19 +56,19 @@ PDF and TIFF files can have any number of pages but, in the standard tier, only 
 
 ## Compare prebuilt models
 
- Use this table to select the best prebuilt model to support your business requirements. In the following units you'll learn further details about each model and how to set them up in Forms Recognizer. 
+Use this table to select the best prebuilt model to support your business requirements. In the following units you'll learn further details about each model and how to set them up in Forms Recognizer. 
 
 | Model            | Text extraction | Key-value pairs | Entities | Selection marks | Tables | Fields |
 | ---              | ---             | ---             | ---      | ---             | ---    | ---    |
 | Read             | X               |                 |          |                 |        |        |
-| General document | X               | X               |  X       | X               | X      |        |
+| General document | X               | X               | X        | X               | X      |        |
 | Layout           | X               |                 |          | X               | X      |        |
 | Invoice          | X               | X               |          | X               | X      | X      |
 | Receipt          | X               | X               |          |                 |        | X      |
 | W2               | X               | X               |          | X               | X      | X      |
 | ID document      | X               | X               |          |                 |        | X      |
 | Business card    | X               | X               |          |                 |        | X      |
-
+|                  |                 |                 |          |                 |        |        |
 
 Also consider that prebuilt models are designed for and trained on generic document and form types. If you have an industry-specific or unique form type that you use often, you might be able to obtain more reliable and predictable results by using a custom model. However, custom models take time to develop because you must invest the time and resources to train them on example forms before you can use it. The larger the number of example forms you provide for training, the better the model will be at prediction form content accurately.
 

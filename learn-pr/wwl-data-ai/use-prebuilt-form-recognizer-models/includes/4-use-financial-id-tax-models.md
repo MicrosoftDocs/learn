@@ -39,7 +39,7 @@ As for invoices, receipts often include a table of items, each of which is a pro
 - The total price for that quantity.
 
 > [!NOTE]
-> In Form Recognizer v3.0, which is currently in preview, the receipt model supports single-page hotel receipt processing. If a receipt is classified as a hotel receipt, the model extracts extra relevent fields such as arrival and departure dates.
+> In Form Recognizer v3.0, which is currently in preview, the receipt model supports single-page hotel receipt processing. If a receipt is classified as a hotel receipt, the model extracts extra relevant fields such as arrival and departure dates.
 
 ## Using the ID document model
 
