@@ -14,7 +14,7 @@ abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe Microsoft Sentinel workspace architecture
   - Install Microsoft Sentinel workspace
-  - Manage an Microsoft Sentinel workspace
+  - Manage a Microsoft Sentinel workspace
 prerequisites: |
   Basic experience with Azure services
 iconUrl: /learn/achievements/create-and-manage-azure-sentinel-workspaces.svg
