@@ -56,7 +56,7 @@ We'll use Cloud Shell in your Azure subscription to host a console application t
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
 
     :::image type="content" source="../media/5-create-storage.png" alt-text="Screenshot showing how to mount storage with Create storage highlighted." lightbox="../media/5-create-storage.png":::
-	
+
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it is *PowerShell*, switch to *Bash* by using the drop-down menu.
 
     :::image type="content" source="../media/5-switch-bash.png" alt-text="Screenshot showing how to change the Cloud Shell to Bash in the Azure portal.":::
@@ -74,19 +74,18 @@ Now, let's write some code that uses your Forms Recognizer resource. You'll add 
 
     :::image type="content" source="../media/5-sample-invoice.png" alt-text="Screenshot showing the sample invoice that the code will analyze." lightbox="../media/5-sample-invoice.png":::
 
-
 1. In the Cloud Shell, to clone the code repository, enter this command:
 
     ```bash
-	git clone https://github.com/MicrosoftLearning/mslearn-formrecognizer.git
-	```
+    git clone https://github.com/MicrosoftLearning/mslearn-formrecognizer.git
+    ```
 
 1. Change to the starter directory and then start the code editor:
 
     ```bash
-	cd formsreadermodules/Mod2/starter/invoicereader
-	code Program.cs
-	```
+    cd formsreadermodules/Mod2/starter/invoicereader
+    code Program.cs
+    ```
 
 1. Switch to the browser tab that displays the Forms Recognizer overview in the Azure portal. To the right of the **Endpoint** value, click the **Copy to clipboard** button.
 
@@ -95,34 +94,34 @@ Now, let's write some code that uses your Forms Recognizer resource. You'll add 
 1. In the Cloud Shell code editor, in the list of files on the left, locate this line and replace `<Endpoint URL>` with the string you just copied:
 
     ```csharp
-	string endpoint = "<Endpoint URL>";
-	```
+    string endpoint = "<Endpoint URL>";
+    ```
 
 1. Switch to the browser tab that displays the Forms Recognizer overview in the Azure portal. To the right of the **KEY 1** value, click the *Copy to clipboard** button.
 1. In the Cloud Shell code editor, locate this line and replace `<API Key>` with the string you just copied:
 
     ```csharp
-	string apiKey = "<API Key>";
+    string apiKey = "<API Key>";
     ```
 
 1. Locate the comment `// Create the client`. Following that, on new lines, enter the following code:
 
     ```csharp
-	var cred = new AzureKeyCredential(apiKey);
+    var cred = new AzureKeyCredential(apiKey);
     var client = new DocumentAnalysisClient(new Uri(endpoint), cred);
-	```
+    ```
 
 1. Locate the comment `// Analyze the invoice`. Following that, on new lines, enter the following code:
 
     ```csharp
-	AnalyzeDocumentOperation operation = await client.StartAnalyzeDocumentFromUriAsync("prebuilt-invoice", fileUri);
+    AnalyzeDocumentOperation operation = await client.StartAnalyzeDocumentFromUriAsync("prebuilt-invoice", fileUri);
     await operation.WaitForCompletionAsync();
-	```
+    ```
 
 1. Locate the comment `// Display invoice information to the user`. Following that, on news lines, enter the following code:
 
     ```csharp
-	AnalyzeResult result = operation.Value;
+    AnalyzeResult result = operation.Value;
     AnalyzedDocument invoice = result.Documents[0];
 
     if (invoice.Fields.TryGetValue("VendorName", out DocumentField vendorNameField))
@@ -133,22 +132,22 @@ Now, let's write some code that uses your Forms Recognizer resource. You'll add 
             Console.WriteLine($"Vendor Name: '{vendorName}', with confidence {vendorNameField.Confidence}.");
         }
     }
-	```
+    ```
 
     > [!NOTE]
-	> You've added code to display the vendor name. The starter project also includes code to display the customer name and invoice total.
-	
+    > You've added code to display the vendor name. The starter project also includes code to display the customer name and invoice total.
+
 1. To save your code and exit the editor, press <kbd>CTRL + S</kbd> and then press <kbd>CTRL + Q</kbd>.
 1. To build your project, enter this command:
 
     ```bash
-	dotnet build
-	```
-	
+    dotnet build
+    ```
+
 1. To run your code, enter this command:
 
     ```bash
-	dotnet run
-	```
-	
-	The program displays the vendor name, customer name, and invoice total with confidence levels. Compare the values it reports with the sample invoice you opened at the start of this section.
+    dotnet run
+    ```
+
+    The program displays the vendor name, customer name, and invoice total with confidence levels. Compare the values it reports with the sample invoice you opened at the start of this section.
