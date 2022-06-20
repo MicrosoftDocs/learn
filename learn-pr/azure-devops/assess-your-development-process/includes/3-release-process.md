@@ -13,7 +13,7 @@ Andy looks at Mara. "This is a lot to take in during your first few weeks."
 
 "That's okay," Mara answers. "Maybe you can explain to me how things work around here. How does a game move from dev to production?"
 
-"That's a great question," says Andy. I'm not sure we can give you a simple answer, but let's try."
+"That's a great question," says Andy. "I'm not sure we can give you a simple answer, but let's try."
 
 The team decides to go to a coffee shop to relax and have an informal discussion. Together, they'll try to figure out why they're having so many problems.
 

@@ -2,8 +2,8 @@
 uid: learn.choose-storage-approach-in-azure.2-classify-data
 metadata:
   title: Classify your data
-  description: Classify your data
-  ms.date: 11/03/2019
+  description: Classify your data.
+  ms.date: 06/05/2022
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
@@ -15,26 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "A JSON file is an example of which type of data?"
+  - content: "What type of data is a JSON file?"
     choices:
     - content: "Structured"
       isCorrect: false
-      explanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+      explanation: "Incorrect. A JSON file uses a serialization language and isn't structured."
     - content: "Semi-structured"
       isCorrect: true
-      explanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+      explanation: "Correct. A JSON file contains semi-structured data. The data contains tags that make the organization and hierarchy of the data apparent."
     - content: "Unstructured"
       isCorrect: false
-      explanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+      explanation: "Incorrect. A JSON file uses a serialization language and isn't unstructured."
 
-  - content: "A video is an example of which type of data?"
+  - content: "What type of data is a video?"
     choices:
     - content: "Structured"
       isCorrect: false
-      explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+      explanation: "Incorrect. A video might have an overall structure, but the data that forms the video itself isn't structured."
     - content: "Semi-structured"
       isCorrect: false
-      explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+      explanation: "Incorrect. A video might have an overall structure, but the data that forms the video itself isn't semi-structured."
     - content: "Unstructured"
       isCorrect: true
-      explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+      explanation: "Correct. A video might have an overall structure, but the data that forms the video itself is unstructured. Unstructured data often is delivered in file format. "
