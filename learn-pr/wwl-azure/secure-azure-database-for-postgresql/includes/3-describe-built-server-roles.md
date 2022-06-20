@@ -26,7 +26,7 @@ This means that the server admin user account that you created when the server w
 - Create additional users and grant those users into the **azure_pg_admin** role.
 - Create less privileged users and roles that have access to individual databases and schemas.
 
-PostgreSQL includes some default roles which can be assigned to users. These include commonly needed privileges for access:
+PostgreSQL includes some default roles that can be assigned to users. These include commonly needed privileges for access:
 
 - pg_read_all_settings
 - pg_signal_backend

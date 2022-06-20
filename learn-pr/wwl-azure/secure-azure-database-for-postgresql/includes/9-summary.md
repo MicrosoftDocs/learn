@@ -15,4 +15,3 @@ For more information about the topics in this module, see:
 - [Data encryption - Azure portal - for Azure Database for PostgreSQL - Single server | Microsoft Docs](https://docs.microsoft.com/azure/postgresql/howto-data-encryption-portal#:~:text=%20Data%20encryption%20for%20Azure%20Database%20for%20PostgreSQL,or%20replica%20servers.%20After%20Azure%20Database...%20More%20)
 - [Networking overview - Azure Database for PostgreSQL - Flexible Server | Microsoft Docs](/azure/postgresql/flexible-server/concepts-networking)
 - [Use Azure Active Directory for authenticating with PostgreSQL](/azure/postgresql/single-server/concepts-azure-ad-authentication)
-- [Use Azure Active Directory for authentication with PostgreSQL](/azure/postgresql/single-server/how-to-configure-sign-in-azure-ad-authentication)

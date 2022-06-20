@@ -4,7 +4,7 @@ To allow users access to databases hosted on your Azure Database for PostgreSQL 
 
 1. In Azure Data Studio (or your preferred client tool), connect to your Azure Database for PostgreSQL server with the admin sign-in credentials.
 1. With the relevant database as the current database, use CREATE ROLE with the relevant options to create a new role (user).
-1. As an example, the follow query:
+1. As an example, the following query:
     1. Creates a new database named testdb.
     1. Creates a new user with a strong password.
     1. Grants connect privileges to the testdb database.
