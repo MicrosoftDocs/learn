@@ -14259,6 +14259,26 @@
       "source_path": "learn-pr/wwl-sci/manage-user-authentication/8-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-user-authentication/12-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/7-build-your-own-custom-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-monitor-status-dashboards/6-build-your-own-custom-application",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/6-explore-grafana.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-monitor-status-dashboards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-monitor-status-dashboards/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-monitor-status-dashboards/8-summary",
+      "redirect_document_id": true
     }
   ]
 }
