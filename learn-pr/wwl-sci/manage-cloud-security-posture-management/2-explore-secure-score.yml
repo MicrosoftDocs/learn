@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-cloud-security-posture-management.explore-secure-score
+title: Explore Secure Score
+metadata:
+  title: Explore Secure Score
+  description: "Explore Secure Score"
+  ms.date: 06/20/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-secure-score.md)]
