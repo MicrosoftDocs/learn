@@ -27,13 +27,13 @@ The following table describes the errors you might encounter in the preceding si
 | Windows specialized| No errors| Provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username, and password| No errors| Provisioning failure error because the new VM is running with the original computer name, username, and password. Also, the original VM is not usable because it is marked as specialized|
 
 > [!TIP]
-> You must ensure that the type of the image doesn't change during the capture process to avoid errors when you deploy your custom image.
+> You must ensure that the type of the image doesn't change during the capture process to avoid errors when you deploy your custom image.
 ### Resolve upload errors
 
 To resolve both errors that result during upload, use `Add-AzVhd` to upload the original VHD, available on-premises, with the same setting as that for the operating system (generalized/specialized).
 
 > [!TIP]
-> To upload as generalized, remember to run `sysprep` first.
+> To upload as generalized, remember to run `sysprep` first.
 ### Resolve capture errors
 
 To resolve both errors that result during capture:
