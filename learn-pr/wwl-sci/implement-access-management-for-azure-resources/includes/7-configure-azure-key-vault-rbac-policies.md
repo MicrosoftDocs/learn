@@ -11,7 +11,7 @@ A Key Vault access policy determines whether a user, application, or group, can 
 4. Use the dialog to assign the specific permission you want service principal to have.
 
      > [!Note]
-     > Service principal represents the user, group, or application your're assigning the policy to.
+     > Service principal represents the user, group, or application you're assigning the policy to.
 
 5. Select **Add** to save and apply the access policy.
 

@@ -28,7 +28,7 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
      It's a best practice to grant security-principals the least privilege they need to perform their job. Avoid assigning broader roles at broader scopes even if it initially seems more convenient. By limiting roles and scopes, you limit what resources are at risk if the security-principal is ever compromised. For more information, see Understand scope.
 
-4. Comfirm the currently logged in user has the rights need to assign the Azure role.
+4. Confirm the currently logged in user has the rights need to assign the Azure role.
 
 5. Assign the role.
 

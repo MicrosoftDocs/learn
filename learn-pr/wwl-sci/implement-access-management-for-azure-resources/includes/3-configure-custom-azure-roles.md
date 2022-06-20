@@ -40,4 +40,4 @@ You can use a JSON file to create a custom role.  Here's a sample:
 }
 ```
 
-The asterisk (*) is used as a wildcard. If you need to assign all of the **read** permissions from the **Billing** resource that use this command **Microsoft/Billing/*/read**.  The wildcard can exist at any level.
+The asterisk (`*`) is used as a wildcard. If you need to assign all of the **read** permissions from the **Billing** resource that use this command **Microsoft/Billing/*/read**.  The wildcard can exist at any level.

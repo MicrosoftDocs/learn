@@ -7,7 +7,7 @@ What is a permission?  The dictionary definition of permission is the **consent 
 | Enumerate list of users and their contacts | Read own properties |
 | Invite guest users | Invite guest users |
 | Can create Security and Microsoft 365 Groups | Can search for non-hidden groups by name |
-| Register new applications | Read properities of registered and enterprise applications |
+| Register new applications | Read properties of registered and enterprise applications |
 
 > [!Note]
 > This is just a small subset, to show differences.  If you want a full list of the [Default User Permissions](/azure/active-directory/fundamentals/users-default-permissions)
@@ -30,6 +30,6 @@ By adding roles to a given user account or group, you can add permissions on to 
 
 :::image type="content" source="../media/permissions-attribute-reader.png" alt-text="Screenshot of the Attribute definition reader.  You can see which permissions a built-in role grants.":::
 
-You only want to grant the permissions a users needs.  So be careful to know what all permissions are granted when you assign a role.  you can see the list of permissions in the **Attribute definition reader**.  To open it, launch Azure AD, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu.  Depending on the role you chose, you'll see a large number of permissions or possibly a small number. Two sets of permissions:
+You only want to grant the permissions a user needs.  So be careful to know what all permissions are granted when you assign a role.  you can see the list of permissions in the **Attribute definition reader**.  To open it, launch Azure AD, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu.  Depending on the role you chose, you'll see a large number of permissions or possibly a small number. Two sets of permissions:
 - Role permissions
 - Guest and service principal basic read permissions
