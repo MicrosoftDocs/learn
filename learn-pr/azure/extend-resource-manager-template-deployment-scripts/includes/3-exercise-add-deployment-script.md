@@ -1,4 +1,4 @@
-[!INCLUDE [BYO subscription explanation](../../includes/azure-template-exercise-nosandbox-subscription.md)]
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
 
