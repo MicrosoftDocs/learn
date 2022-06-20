@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-arm-templates-bicep
+uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-azure-resource-manager-bicep
 title: Automate deployment by using ARM templates and Bicep
 metadata:
   title: Automate deployment by using ARM templates and Bicep
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-automate-deployment-using-arm-templates-bicep.md)]
+  [!include[](includes/3-automate-deployment-using-azure-resource-manager-bicep.md)]

@@ -36,7 +36,7 @@ subjects:
 units:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.introduction
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.describe-deployment-models-azure
-- learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-arm-templates-bicep
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-azure-resource-manager-bicep
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-powershell
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-cli
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.exercise-deploy-azure-database-using-template

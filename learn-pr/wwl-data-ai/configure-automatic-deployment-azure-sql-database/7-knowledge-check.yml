@@ -21,43 +21,43 @@ quiz:
     choices:
     - content: "JSON"
       isCorrect: true
-      explanation: "That's correct. An Azure Resource Manager template is a JSON (JavaScript Object Notation) document that describes the resources that will be deployed within an Azure Resource Group."
+      explanation: "Correct. An Azure Resource Manager template is a JSON (JavaScript Object Notation) document that describes the resources that will be deployed within an Azure Resource Group."
     - content: "C#"
       isCorrect: false
-      explanation: "That's incorrect. Templates can be called by C# programs, but it isn't their native format."
+      explanation: "Incorrect. Templates can be called by C# programs, but it isn't their native format."
     - content: "T-SQL"
       isCorrect: false
-      explanation: "That's incorrect. Templates do not support T-SQL."
+      explanation: "Incorrect. Templates don't support T-SQL."
   - content: "Which option should you include in your template when specifying the region for a resource group deployment?"
     choices:
     - content: "Parameter"
       isCorrect: true
-      explanation: "That's correct. Parameters are values that are provided to the template in order to customize resources at deployment time."
+      explanation: "Correct. Parameters are values that are provided to the template in order to customize resources at deployment time."
     - content: "Variable"
       isCorrect: false
-      explanation: "That's incorrect. Variables are values that are used as JSON fragments to simplify template language expressions."
+      explanation: "Incorrect. Variables are values that are used as JSON fragments to simplify template language expressions."
     - content: "Output"
       isCorrect: false
-      explanation: "That's incorrect. Output passes information back to downstream processes."
+      explanation: "Incorrect. Output passes information back to downstream processes."
   - content: "Which element of a template allows for you to build dependencies into resources?"
     choices:
     - content: "dependsOn"
       isCorrect: true
-      explanation: "That's correct. DependsOn allows you to build a dependency structure into your template."
+      explanation: "Correct. DependsOn allows you to build a dependency structure into your template."
     - content: "concat"
       isCorrect: false
-      explanation: "That's incorrect. Concat simply concatenates values."
+      explanation: "Incorrect. Concat simply concatenates values."
     - content: "apiVersion"
       isCorrect: false
-      explanation: "That's incorrect. ApiVersion specifics the version of the API to deploy a resource, but not dependencies."
+      explanation: "Incorrect. ApiVersion specifics the version of the API to deploy a resource, but not dependencies."
   - content: "Which Azure CLI command should you choose to create a SQL Database?"
     choices:
     - content: "az sql db op"
       isCorrect: false
-      explanation: "That's incorrect. `az sql db op` manages operations on a database."
+      explanation: "Incorrect. `az sql db op` manages operations on a database."
     - content: "az sql server create"
       isCorrect: true
-      explanation: "That's correct. `az sql server create` creates a SQL Database."
+      explanation: "Correct. `az sql server create` creates a SQL Database."
     - content: "az sql db create"
       isCorrect: false
-      explanation: "That's incorrect. `az sql db create` creates a database, not a SQL Database server."
+      explanation: "Incorrect. `az sql db create` creates a database, not a SQL Database server."
