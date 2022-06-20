@@ -40,7 +40,7 @@ MySQL Workbench has four main areas:
 From the top View menu, select Panels to display which panels you want to display at any one time. Alternatively, the top right icons allow you to select and deselect which panels are visible.
 
 Select the cog icon to display or edit Workbench Preferences including setting defaults for commonly used names and data types.
-:::image type="content" source="../media/cog-icon.png" alt-text="Image showing the MySQL Workbench cog icon." lightbox="../media/cog-icon.png":::
+:::image type="content" source="../media/cog-icon.png" alt-text="Screenshot that shows the MySQL Workbench cog icon." lightbox="../media/cog-icon.png":::
 
 ## dbForge Studio for MySQL
 
@@ -52,7 +52,7 @@ To connect to your MySQL server:
 1. Select **New Connection** and then provide the full server name, username, and password.
 1. Select **Test Connection** to check the connection works.
 
-You can migrate mySQL databases to Azure, backup and restore databases, as well as create and debug queries. dbForge for MySQL also has advanced administration abilities, such as the ability to compare and synchronize data and schemas.
+You can migrate MySQL databases to Azure, backup and restore databases, as well as create and debug queries. dbForge for MySQL also has advanced administration abilities, such as the ability to compare and synchronize data and schemas.
 
 ## MySQL for Visual Studio
 
@@ -83,4 +83,4 @@ To connect to a MySQL database from Visual Studio, from the top menu select **To
 > [!NOTE]
 > The first time you connect to a MySQL database after installing MySQL for Visual Studio you'll have to restart Visual Studio.
 
-If the Server Explorer panel isn't visible, from the top menu select **View**, then **Server Explorer**. Under **Data Connections**, your mySQL database is displayed. Expand the selection to see Tables, Views, Stored Procedures, Functions, and UDFs. Double-click an object to display details. Right-click to display a context-sensitive menu. You can then display objects, run queries, and create objects.
+If the Server Explorer panel isn't visible, from the top menu select **View**, then **Server Explorer**. Under **Data Connections**, your MySQL database is displayed. Expand the selection to see Tables, Views, Stored Procedures, Functions, and UDFs. Double-click an object to display details. Right-click to display a context-sensitive menu. You can then display objects, run queries, and create objects.

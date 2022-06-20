@@ -1,9 +1,9 @@
 ## Before you start
 To complete these exercises, you must have:
-•	Created a resource group (link to Module 1, Unit 5)
-•	Created an Azure Database for MySQL Flexible Server (link to Module 1, Unit 5)
-•	Downloaded and installed MySQL Workbench (link to Module 2, Unit 5)
-•	Downloaded the scripts for this exercise (link to GitHub).
+•	Created a resource group (see Module 1, Unit 5)
+•	Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5)
+•	Downloaded and installed MySQL Workbench (see Module 2, Unit 5)
+•	Downloaded the scripts for this exercise from [GitHub](https://github.com/MicrosoftLearning/mslearn-mysql/tree/main/labfiles).
 
 ## Download MySQL Workbench
 
