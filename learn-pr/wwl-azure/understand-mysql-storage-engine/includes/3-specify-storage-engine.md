@@ -5,7 +5,7 @@ In Azure Database for MySQL, you can display or modify the default storage engin
 > [!NOTE]
 > MySQL supports different storage engines at the table level. Azure database for MySQL currently supports InnoDB, Memory, and CSV.
 
-It is good practice, however, to specify the storage engine you want to use. When creating a script, the syntax is:
+It is good practice, however, to specify the storage engine you want to use. When you create a script, the syntax is:
 
 ```sql
 CREATE TABLE mytable (myID INT) ENGINE = INNODB;

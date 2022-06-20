@@ -2,7 +2,7 @@ Azure Database for MySQL current supports two storage engines: Innodb and Memory
 
 ## Innodb
 
-InnoDB is now MySQL's default storage engine, and the one that is most widely used. InnoDB is ACID (Atomicity, Consistency, Isolation, Durability) compliant,designed for short transactions that are normally committed, rather than being rolled back. It's a reliable, good general purpose storage engine that works well for most workloads.
+InnoDB is now MySQL's default storage engine, and the one that is most widely used. InnoDB is ACID (Atomicity, Consistency, Isolation, Durability) compliant, designed for short transactions that are normally committed, rather than being rolled back. It's a reliable, good general purpose storage engine that works well for most workloads.
 
 Some of the benefits of Innodb include:
 
