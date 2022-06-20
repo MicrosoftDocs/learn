@@ -9,7 +9,7 @@ Here, you'll learn how to create composed models.
 Before you start creating a composed model, you'll need:
 
 - A Forms Recognizer resource in your Azure subscription.
-- A set of custom models, trained and labelled, that you want to add to the composed model.
+- A set of custom models, trained and labeled, that you want to add to the composed model.
 
 If you prefer to use a Graphical User Interface (GUI), you can create a composed model in the Forms Recognizer Studio:
 
