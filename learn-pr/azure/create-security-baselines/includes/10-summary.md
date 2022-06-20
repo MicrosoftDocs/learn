@@ -1,38 +1,36 @@
-We've covered many things in this module to create a baseline security checklist for commonly used Azure services. Let's quickly recap what we've gone through.
+We've covered many things in this module to create a baseline security checklist for commonly used Azure services. Let's quickly recap what we've gone through:
 
-1. **Turn on Microsoft Defender for Cloud - it's free** - Upgrade your Azure subscription for Microsoft Defender for Cloud. Defender for Cloud's enhanced security features help you:
+- **Turn on Microsoft Defender for Cloud - it's free**. Upgrade your Azure subscription to turn on Microsoft Defender for Cloud. Defender for Cloud's enhanced security features help you:
 
-    - Find and fix security vulnerabilities.
-    - Apply access and application controls to block malicious activity.
-    - Detect threats using analytics and intelligence.
-    - Respond quickly when under attack.
+  - Find and fix security vulnerabilities.
+  - Apply access and application controls to block malicious activity.
+  - Detect threats by using analytics and intelligence.
+  - Respond quickly when under attack.
 
-1. **Adopt Center for Internet Security (CIS) Benchmarks** - Apply them to existing tenants.
+- **Adopt Center for Internet Security (CIS) Benchmarks**. Apply the benchmarks to existing tenants.
 
-1. **Use CIS VMs for new workloads** - Acquire from Azure Marketplace.
+- **Use CIS VMs for new workloads**. Get CIS hardened VM images in Azure Marketplace.
 
-1. **Store your keys and secrets in Azure Key Vault** (and not in your source code) - Key Vault is designed to support any type of secret: passwords, database credentials, API keys and, certificates.
+- **Store your keys and secrets in Azure Key Vault** (not in your source code). Key Vault is designed to support any type of secret, including passwords, database credentials, API keys, and certificates.
 
-1. **Install a web application firewall** - Web application firewall (WAF) is a feature of Application Gateway that provides centralized protection of your web applications from common exploits and vulnerabilities.
+- **Install a web application firewall**. A web application firewall (WAF) is a feature of Azure Application Gateway that provides centralized protection of your web applications from common exploits and vulnerabilities. Third parties also offered Azure-supported WAFs.
 
-1. **Enforce multi-factor verification for users, especially for your administrator accounts**- Azure AD Multi-Factor Authentication (Azure AD MFA) helps administrators protect their organizations and users with more authentication methods.
+- **Enforce multifactor verification for users, especially for your administrator accounts**. Multifactor authentication for Azure AD users helps administrators protect their organizations and users by requiring more than one authentication method.
 
-1. **Encrypt your virtual hard disk files** - This encryption will help protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
+- **Encrypt your virtual hard disk files**. Encryption helps protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
 
-1. **Connect Azure virtual machines (VMs) and appliances to other networked devices by placing them on Azure virtual networks** -  VMs connected to an Azure virtual network can connect to devices on the same virtual network, different virtual networks, the internet, or your own on-premises networks.
+- **Connect Azure VMs and appliances to other networked devices by placing them in Azure virtual networks**. VMs that are connected to an Azure virtual network can connect to devices that are on the same virtual network, on different virtual networks, on the internet, or on your own on-premises networks.
 
 ### Strong operational security practices to implement
 
-Strong operational security practices to implement every day are:
+Implement these strong operational security practices every day:
 
-1. **Manage your VM updates** - Azure VMs, like all on-premises VMs, are meant to be user managed. Azure doesn't push Windows updates to them. Ensure you have solid processes in place for important operations such as patch management and backup.
+- **Manage your VM updates**. Azure VMs, like all on-premises VMs, are meant to be user-managed. Azure doesn't push Windows updates to these VMs. Ensure that you have solid processes in place for important operations like patch management and backup.
 
-1. **Enable password management** and use appropriate security policies to prevent abuse.
+- **Enable password management**. Use appropriate security policies to prevent abuse.
 
-1. **Review your workload protection dashboard regularly** to get a central view of the security state of all of your Azure resources, and take action on the recommendations.
+- **Review your workload protection dashboard regularly**. Get a central view of the security state of all of your Azure resources, and take action on the recommendations regularly.
 
 ## Further reading
 
-To explore the topics presented in this module in more details, see the following article:
-
-- [CIS Microsoft Azure Foundations Security Benchmark](/security/benchmark/azure/v2-cis-benchmark)
+To explore the topics presented in this module in more detail, see [CIS Microsoft Azure Foundations Security Benchmark](/security/benchmark/azure/v2-cis-benchmark).

@@ -45,3 +45,6 @@ units:
 - learn.wwl.design-security-operations-strategy.summary
 badge:
   uid: learn.wwl.design-security-operations-strategy.badge
+subjects:
+- security
+- architecture

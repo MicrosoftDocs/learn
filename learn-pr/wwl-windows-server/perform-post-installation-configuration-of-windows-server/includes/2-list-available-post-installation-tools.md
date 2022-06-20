@@ -1,4 +1,4 @@
-Contoso is in the process of deploying Windows Server 2019 server computers throughout their organization. As a Windows Server administrator, it's your task to perform post-installation configuration on the newly deployed servers. You decide to investigate the available post-configuration options. 
+Contoso is in the process of deploying Windows Server server computers throughout their organization. As a Windows Server administrator, it's your task to perform post-installation configuration on the newly deployed servers. You decide to investigate the available post-configuration options. 
 
 ## What must you configure?
 
