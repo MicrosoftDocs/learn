@@ -1,18 +1,17 @@
-In this module, you learned about Azure identity, access, and security services and tools. You covered authentication methods, including which ones are more secure. You learned about restricting access based on a role to help create a more secure environment. And, you learned about the Defense In Depth and Zero Trust models.
+In this module, you were introduced to tools that help you monitor your environment and applications, both in Azure and in on-premises or multi-cloud environments.
 
 ## Learning objectives<br>
 
 You should now be able to:
 
- -  Describe directory services in Azure, including Azure Active Directory (AD) and Azure AD DS.<br>
- -  Describe authentication methods in Azure, including single sign-on (SSO), multifactor authentication (MFA), and passwordless.
- -  Describe external identities and guest access in Azure.
- -  Describe Azure AD Conditional Access.
- -  Describe Azure Role Based Access Control (RBAC).
- -  Describe the concept of Zero Trust.
- -  Describe the purpose of the defense in depth model.
- -  Describe the purpose of Microsoft Defender for Cloud.
+ -  Describe the purpose of Azure Advisor
+ -  Describe Azure Service Health
+ -  Describe Azure Monitor, including Azure Log Analytics, Azure Monitor Alerts, and Application Insights
 
 ## Additional resources<br>
 
 The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
+
+ -  [Get started with Azure Advisor](/learn/modules/get-started-azure-advisor/) is a Microsoft Learn module that helps you get started with Azure Advisor.
+ -  [Intro to Azure Service Health](/learn/modules/intro-to-azure-service-health/) is a Microsoft Learn module that provides additional information about Azure Service Health.
+ -  [Monitor the usage, performance, and availability of resources with Azure Monitor](/learn/paths/monitor-usage-performance-availability-resources-azure-monitor/) is a Microsoft Learn learning path that dives deeper into Azure Monitor. It provides helpful guidance on setting up and getting the most from the Azure Monitor service.
