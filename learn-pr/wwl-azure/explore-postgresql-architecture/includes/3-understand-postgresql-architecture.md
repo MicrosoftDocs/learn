@@ -2,7 +2,7 @@ PostgreSQL is a client/server relational database management system (RDMS). Post
 
 PostgreSQL also has its own query language called pgsql. In addition, PostgreSQL supports procedural languages such as Ruby on Rails.
 
-:::image type="content" source="../media/postgres-extensions-languages.png" alt-text="Image showing PostgreSQL extensions and languages." lightbox="../media/postgres-extensions-languages.png":::
+:::image type="content" source="../media/postgres-extensions-languages.png" alt-text="Screenshot showing PostgreSQL extensions and languages." lightbox="../media/postgres-extensions-languages.png":::
 
 ## Client/server architecture
 
@@ -16,11 +16,11 @@ A PostgreSQL session consists of three parts:
 
 ### Postmaster
 
-The Postmaster is the supervisory daemon process that manages a PostgreSQL server. The postmaster daemon manages communication amongst the various server processes including initializing the server, shutting the server down, handling connection requests, and performing other background processes. In Azure Database for PostgreSQL you do not have access to the file system, or to the Postmaster process.
+The Postmaster is the supervisory daemon process that manages a PostgreSQL server. The postmaster daemon manages communication amongst the various server processes including initializing the server, shutting down the server, handling connection requests, and performing other background processes. In Azure Database for PostgreSQL, you don't have access to the file system, or to the Postmaster process.
 
 ### Client applications
 
-Clients run queries and interact with databases on an Azure Database for PostgreSQL server. To run queries, you need a client tool such as Azure Data Studio, DBeaver, pgAdmin, or psql. You will learn about client tools in the next module.
+Clients run queries and interact with databases on an Azure Database for PostgreSQL server. To run queries, you need a client tool such as Azure Data Studio, DBeaver, pgAdmin, or psql. You'll learn about client tools in the next module.
 
 ### Server processes
 
@@ -29,17 +29,17 @@ Clients run queries and interact with databases on an Azure Database for Postgre
 Data for these databases is stored in the cluster's data directory called **PGDATA**. The **PGDATA** data directory includes a file containing the version of PostgreSQL being run, **pg_tblspc** which contains links to tablespaces, and **pg_xlog** which contains the write ahead log files.
 
 > [!NOTE]
-> Azure Databases for PostgreSQL is a service which manages storage and the underlying file system. As a user of this server you do not have direct access to the PGDATA directory, or any of its subdirectories.
+> Azure Databases for PostgreSQL is a service which manages storage and the underlying file system. As a user of this server you don't have direct access to the PGDATA directory, or any of its subdirectories.
 
 In addition to the databases you create, there are three system databases:
 
 - **postgres** - the default database. After your server has been created, you connect to the postgres database.
-- **azure_maintenance** - the database that manages service processes. You do not have direct access to this database.
+- **azure_maintenance** - the database that manages service processes. You don't have direct access to this database.
 - **azure_sys** - the Query Store database. You must not modify the **azure_sys** database or its schemas. Changing anything in **azure_sys** will prevent Query Store and other performance features from functioning correctly.
 
-**Schemas** - A schema is a named grouping of database objects. Large databases with very many objects benefit from organizing objects into schemas. For example, creating a schema for sales related objects, and a schema for client related objects will make it easier to find the correct object.
+**Schemas** - A schema is a named grouping of database objects. Large databases with many objects benefit from organizing objects into schemas. For example, creating a schema for sales related objects, and a schema for client related objects will make it easier to find the correct object.
 
-**Server parameters** - PostgreSQL has several configuration files which determine how the database engine should work. The main PostgreSQL configuration file is called **postgresql.conf**.
+**Server parameters** - PostgreSQL has several configuration files, which determine how the database engine should work. The main PostgreSQL configuration file is called **postgresql.conf**.
 
 Azure Database for PostgreSQL has replaced these configuration files with **Server parameters**, which can be accessed via the Azure postal, or using the Azure CLI.
 
@@ -49,21 +49,21 @@ To view or amend server parameters in the Azure portal:
 1. From the left menu, under **Settings**, select **Server parameters**.
 1. Use the search bar to filter the list of parameters or select the page number you require.
 
-**Storage** - Azure Database for PostgreSQL manages the data storage for you and is provisioned at the server level. Whether you select Burstable, General purpose, or Memory optimized compute tier, you can use between 32 GB and 16TB of storage. To provision more storage, navigate to your Azure Database for PostgreSQL server, and from the **Overview** blade select your **Configuration**. The **Compute + Storage** blade is displayed. Under Storage, and Storage size (in GB) use the slider to select the amount of storage you want to be provisioned.
+**Storage** - Azure Database for PostgreSQL manages the data storage for you and is provisioned at the server level. Whether you select Burstable, General purpose, or Memory optimized compute tier, you can use between 32 GB and 16 TB of storage. To provision more storage, navigate to your Azure Database for PostgreSQL server, and from the **Overview** blade select your **Configuration**. The **Compute + Storage** blade is displayed. Under Storage, and Storage size (in GB) use the slider to select the amount of storage you want to be provisioned.
 
 The amount of storage you provision defines the I/O capacity available to your Azure Database for PostgreSQL server. You can monitor your I/O consumption in the Azure portal or by using Azure CLI commands. The relevant metrics to monitor are [storage limit, storage percentage, storage used, and IO percent](/azure/postgresql/flexible-server/concepts-monitoring).
 
 > [!NOTE]
 > You can increase the amount of storage after you have created your Azure Database for PostgreSQL server, but you cannot reduce the amount of storage.
 
-**Tablespaces** - With an on-premises implementation of PostgreSQL you can create **tablespaces** which are linked to the main storage area called PGDATA using the **pg_tblspc** subdirectory. Azure Database for PostgreSQL does not support tablespaces: all tables are created in the main storage area.
+**Tablespaces** - With an on-premises implementation of PostgreSQL you can create **tablespaces** which are linked to the main storage area called PGDATA using the **pg_tblspc** subdirectory. Azure Database for PostgreSQL doesn't support tablespaces: all tables are created in the main storage area.
 
-**System catalogs** - PostgreSQL contains many system tables and views which store information about database objects. For example, **pg_database** will return all databases on a server and **pg_class** stores statistics about tables.
+**System catalogs** - PostgreSQL contains many system tables and views that store information about database objects. For example, **pg_database** will return all databases on a server and **pg_class** stores statistics about tables.
 
 > [!NOTE]
 > Azure Database for PostgreSQL allows access to some, but not all system catalogs.
 
-**Extensions** - PostgreSQL supports a range of extensions which extend the core functionality of the database engine. These extensions are made available on a repository called the PostgreSQL Extensions Network, or PGXN.
+**Extensions** - PostgreSQL supports a range of extensions that extend the core functionality of the database engine. These extensions are made available on a repository called the PostgreSQL Extensions Network, or PGXN.
 
 To use a PostgreSQL extension, it must be installed in your database. To install an extension, run the **[CREATE EXTENSION](https://www.postgresql.org/docs/current/static/sql-createextension.html)** command from the psql tool to load the extension into your database. For example:
 

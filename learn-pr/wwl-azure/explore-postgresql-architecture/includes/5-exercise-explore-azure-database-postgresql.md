@@ -1,7 +1,7 @@
-In this exercise, you will create an Azure Database for PostgreSQL flexible server and configure the backup retention period.
+In this exercise, you'll create an Azure Database for PostgreSQL flexible server and configure the backup retention period.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete this exercise. If you do not have an Azure subscription, you can create an [Azure free trial](https://azure.microsoft.com/free).
+> You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial](https://azure.microsoft.com/free).
 
 ## Create a Resource Group
 
@@ -24,7 +24,7 @@ In this exercise, you will create an Azure Database for PostgreSQL flexible serv
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Development**.
-    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Do not make any changes and close the blade.
+    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the blade.
     1. Availability zone - No preference.
     1. High availability - leave unchecked.
     1. In **admin username**, enter **demo**.
@@ -38,14 +38,14 @@ In this exercise, you will create an Azure Database for PostgreSQL flexible serv
 ## Examine server parameters
 
 1. Under **Settings** select **Server parameters**.
-1. In the **Search to filter items ...** box, enter **connections**. Server parameters related to connections are displayed. Note the value for **max_connections**. Do not make any changes.
+1. In the **Search to filter items ...** box, enter **connections**. Server parameters related to connections are displayed. Note the value for **max_connections**. Don't make any changes.
 1. From the left menu, select **Overview** to exit from **Server parameters**.
 
 ## Change backup retention period
 
-1. Navigate to the **Overview** blade, under **Settings**, select **Compute + storage**. This blade displays your current Compute tier, and the option to upgrade it. It also displays the amount of storage you have provisioned, and the option to increase storage.
+1. Navigate to the **Overview** blade, under **Settings**, select **Compute + storage**. This blade displays your current Compute tier, and the option to upgrade it. It also displays the amount of storage you've provisioned, and the option to increase storage.
 1. Under **backups**, the backup retention period in days is displayed. Using the slider bar, change the backup retention period to 14 days. Select **Save** to retain your changes.
-1. When you have completed this exercise, **STOP** the server. You will not be charged while the server is in a stopped state.
+1. When you've completed this exercise, **STOP** the server. You'll not be charged while the server is in a stopped state.
 
 ## Optional exercise - configure a high availability server
 
@@ -78,7 +78,7 @@ In this exercise, you will create an Azure Database for PostgreSQL flexible serv
 1. On the **High availability** blade, from the top menu select **Forced Failover**. A message is displayed, select **OK**.
 1. The failover process starts. A message is displayed when the failover operation has completed successfully.
 1. On the **High availability** blade, you can see that the primary zone is now 2, and the standby availability zone is 1. You may need to refresh your browser to see the latest information.
-1. When you have completed this exercise, delete the server.
+1. When you've completed this exercise, delete the server.
 
 > [!IMPORTANT]
-> The server for this lab exercise will incur charges. Delete the server once you have completed the exercise. 
+> The server for this lab exercise will incur charges. Delete the server once you've completed the exercise. 
