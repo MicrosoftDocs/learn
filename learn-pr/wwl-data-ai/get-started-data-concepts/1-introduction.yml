@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-concepts.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

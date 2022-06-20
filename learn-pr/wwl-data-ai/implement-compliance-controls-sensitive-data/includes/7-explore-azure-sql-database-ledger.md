@@ -4,23 +4,11 @@ The ledger feature of Azure SQL Database provides tamper-evidence capabilities i
 
 Cryptography and blockchain have begun to appear in far reaching areas of technology with varying degrees of success. One place where it has proved useful and beneficial is in being used as the technology behind the Azure SQL Database Ledger feature. The Ledger feature provides tamper-evidence capabilities in your database. Using the Ledger feature of the Azure SQL Database, you can provide concrete proof to auditors, business partners or any interested parties what data has been changed or tampered with.
 
-A traditional ledger is defined as a collection of accounts of a particular type and that's exactly what the Azure SQL Database Ledger feature provides in your environment. It helps protect data from bad actors including but not limited to attackers or even database or cloud administrators.
+A traditional ledger is defined as a collection of accounts of a particular type and that's exactly what the Azure SQL Database Ledger feature provides in your environment. It provides transparent protection of your data from bad actors including but not limited to attackers or even database or cloud administrators. It provides guarantees of cryptographic data integrity while maintaining the power, flexibility, and performance of Azure SQL Database.
 
-Ledger and the historical data are managed transparently, offering protection without any application changes. The feature maintains historical data in a relational form to support SQL queries for auditing, forensics, and other purposes. It provides guarantees of cryptographic data integrity while maintaining the power, flexibility, and performance of Azure SQL Database.
-
-:::image type="content" source="../media/dp-3300-module-33-lab-32.png" alt-text="Screenshot that shows the diagram of the ledger table architecture.":::
+:::image type="content" source="../media/dp-3300-module-33-lab-32.png" alt-text=" Diagram of the ledger table architecture.":::
 
 Each transaction that the database receives is cryptographically hashed (SHA-256). The function cryptographically links all transactions together, like a blockchain.
-
-## Benefits
-
-The Azure SQL Database Ledger feature provides multiple benefits:
-
-- **Streamlining Audits** – Audits are frequently enacted to ensure that proper security controls are in place to reduce potential attacks, backup and restore practices are as required, and thorough disaster recovery procedures are in place. Ledger provides the cryptographic proof that data hasn't been altered as well as nonrepudiation of the system's data. This greatly helps streamline the auditing process.
-
-- **Multiple-party business processes** – Ledger also can help establish trust between multiple-party business processes without the complexity and performance implications that network consensus can introduce.
-
-- **Trusted off-chain storage for blockchain** – Querying the data on a blockchain network without sacrificing performance can be a serious challenge. Ledger provides data integrity for off-chain storage of blockchain networks, which helps ensure complete data trust through the entire system.
 
 ## Components
 
@@ -28,13 +16,21 @@ Azure SQL Database Ledger function currently exists for tables in two forms: The
 
 ### Updatable ledger tables
 
-Updatable ledger tables are great for applications such as system of record applications that issue updates and deletes on tables in the database. You don't have to change any data patterns in your application to enable ledger functionality.
-
-Updatable ledger tables track the history of changes to any rows in your database using system-versioned tables when transactions that perform updates or deletions occur. Being system-versioned, there's also a history table tha stores the previous version of the row each time a row in the ledger table is updated or deleted.
+Updatable ledger table can be used for applications that issue updates and deletes and inserts. It works well for system of record applications and transactional systems where matter of fact record keeping and auditing is required and happen. The updatable ledger tables track history of changes to any rows and uses the built-in system versioning to create a history table that stores the previous version of the row for full history is kept for any updates or deletes.
 
 ### Append-only ledger tables
 
-Append-only ledger tables are great for insert only applications such as security information and event management (SIEM) applications as the ledger tables block all updates and deletes at the API level. Since the tables only allow inserts, there isn't a history table needed for this process.
+Append-only ledger tables work well with insert only applications such as an accounting system, which still needs auditing or security information and event management (SIEM) applications. The append-only ledger table blocks all updates and deletes at the API level so not only does it provide certainty, it aides in management.
+
+## Benefits
+
+The Azure SQL Database Ledger feature provides multiple benefits:
+
+**Ease Audits –** Audits are frequently enacted to ensure that proper security controls are in place to reduce potential attacks, backup and restore practices are as required, and thorough disaster recovery procedures are in place. Ledger provides documented proof that your data hasn't been altered in an auditing process.
+
+**Increased trust –** Ledger also can help establish trust between multiple-party business processes without the complexity and performance implications that network consensus can introduce.
+
+**Data integrity –** Querying the data on a blockchain network without sacrificing performance can be a serious challenge. Ledger provides data integrity for off-chain storage of blockchain networks, which helps ensure complete data trust through the entire system.
 
 ## Create a SQL database with ledger enabled
 
