@@ -15,7 +15,6 @@ Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Se
 Secure data and applications (20-25%)
 
  -  Configure security for storage
-    
      -  configure access control for storage accounts
      -  configure key management for storage accounts
      -  configure Azure AD authentication for Azure Storage
