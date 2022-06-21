@@ -48,7 +48,7 @@ Using this information, Visual Studio Code generates an Azure Functions project 
 
 Visual Studio Code integrates with Azure Functions Core tools to let you run this project on your local development computer before you publish to Azure.
 
-1. Make sure the terminal is open is Visual Studio Code. You can open the terminal by selecting **Terminal** and then **New Terminal** in the menu bar. 
+1. Make sure the terminal is open in Visual Studio Code. You can open the terminal by selecting **Terminal** and then **New Terminal** in the menu bar. 
 
 1. Press **F5** to start the function app project in the debugger. Output from Core Tools is displayed in the **Terminal** panel. Your app starts in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
 
