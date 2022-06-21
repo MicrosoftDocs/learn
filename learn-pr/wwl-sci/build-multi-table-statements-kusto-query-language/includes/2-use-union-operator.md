@@ -2,11 +2,11 @@ The union operator takes two or more tables and returns the rows of all of them.
 
 Based on the time window set in the Query window:
 
-- Query 1 will return all rows of SecurityEvent and all rows of SecurityAlert
+- Query 1 will return all rows of SecurityEvent and all rows of SigninLogs
 
-- Query 2 will return one row and column, which is the count of all rows of SecurityEvent and all rows of SecurityAlert
+- Query 2 will return one row and column, which is the count of all rows of SecurityEvent and all rows of SigninLogs
 
-- Query 3 will return all rows of SecurityEvent and one row for SecurityAlert.  
+- Query 3 will return all rows of SecurityEvent and one row for SigninLogs.  
 
 Run each Query separately to see the results.
 
@@ -14,19 +14,19 @@ Run each Query separately to see the results.
 // Query 1
 
 SecurityEvent 
-| union SecurityAlert  
+| union SigninLogs  
 
 // Query 2
 
 SecurityEvent 
-| union SecurityAlert  
+| union SigninLogs  
 | summarize count() 
 | project count_
 
 // Query 3
 
 SecurityEvent 
-| union (SecurityAlert | summarize count()| project count_)
+| union (SigninLogs | summarize count()| project count_)
 
 ```
 
