@@ -30,4 +30,4 @@ This module consists of three lessons:
 
 - Focus on explaining the consistency in a globally distributed database and its importance. 
 
-  - Utilize [this documentation](https://aka.ms/consistencylevelsinazurecosmosdb) when explaining consistency level in Azure Cosmos database 
+  - Utilize [this documentation](https://aka.ms/consistencylevelsdoc) when explaining consistency level in Azure Cosmos database 
