@@ -14,5 +14,5 @@ You can integrate threat intelligence (TI) into Microsoft Sentinel through the f
 
 - Perform threat hunting with your imported threat intelligence.
 
-:::image type="content" source="../media/sentinel-data-flow.png" alt-text="Threat Intelligence uses in Microsoft Sentinel":::
+:::image type="content" source="../media/sentinel-data-flow.png" alt-text="Screenshot of Threat Intelligence uses in Microsoft Sentinel":::
 
