@@ -50,6 +50,7 @@ The screenshot below shows both data classification and label in the Microsoft P
 - Classified as “Credit Card Number” because scan detected numbers corresponding to credit card patter rules.
 - Labeled as “Confidential – Finance” because credit card number was defined in your organization as confidential information (and this label brings encryption).
 
-![Screenshot of ReportTable asset in Purview showing both data classification and label in the Microsoft Purview Data Catalog.](../media/purview-classification-label.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of ReportTable asset in Purview showing both data classification and label in the Microsoft Purview Data Catalog.](../media/purview-classification-label.png)
 
 

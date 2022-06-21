@@ -62,7 +62,8 @@ After configuring and scoping your scan, you'll define the *scan rule set*. A sc
 
 Once a scan is complete, you can refer to the scan details to view information about the number of scans completed, assets detected, assets classified, Scan information. It’s a good place to monitor scan progress, including success or failure.
 
-[![Screenshot of Azure Data Lake Storage Gen 2 data source scan details in Purview Data Map.](../media/purview-scan-details.png)](../media/purview-scan-details.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot of Azure Data Lake Storage Gen 2 data source scan details in Purview Data Map.](../media/purview-scan-details.png)](../media/purview-scan-details.png#lightbox)
 
 > [!TIP]
 > Refer to [Scanning best practices](/azure/purview/concept-best-practices-scanning) for more information on scanning assets.
