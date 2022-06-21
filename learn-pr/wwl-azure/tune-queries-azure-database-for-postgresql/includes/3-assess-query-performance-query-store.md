@@ -2,9 +2,9 @@ The Query Store feature is often a more effective method than pg_stat_statements
 
 ## Enable the Query Store
 
-Query Store is not enabled by default, but can be turned on globally or on a per-database basis. You should also enable wait statistics. To enable Query Store and wait statistics, perform the following steps:
+Query Store isn't enabled by default, but can be turned on globally or on a per-database basis. You should also enable wait statistics. To enable Query Store and wait statistics, perform the following steps:
 
-1. Go to the Azure Portal and select your Azure Database for PostgreSQL server.
+1. Go to the Azure portal and select your Azure Database for PostgreSQL server.
 1. Select **Server parameters** and navigate to the **pg_qs.query_capture_mode** setting.
 1. Select **TOP**.
     :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on" lightbox="../media/3-settings-turn-query-store-on.png":::

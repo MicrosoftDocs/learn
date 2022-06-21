@@ -1,6 +1,5 @@
 [!IMPORTANT]
-
-You need your own Azure subscription to complete the exercises in this module. If you don't have an Azure subscription, you can set up a free trial account at [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/).
+> You need your own Azure subscription to complete the exercises in this module. If you don't have an Azure subscription, you can set up a free trial account at [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/).
 
 ## Create the exercise environment
 
@@ -9,7 +8,8 @@ You need your own Azure subscription to complete the exercises in this module. I
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com).
 
 1. Select **Create a resource**.
-    :::image type="content" source="../media/create-resource.png" alt-text="Create a resource icon":::
+
+    :::image type="content" source="../media/create-resource.png" alt-text="Screenshot of the Create a resource icon":::
 1. In **Search services and marketplace** type **PostgreSQL** and select **Azure Database for PostgreSQL**.
 1. Select **Create**.
 1. In **Single server**, select **Create**.
@@ -45,10 +45,13 @@ You need your own Azure subscription to complete the exercises in this module. I
 1. Start Azure Data Studio.
 1. Select the **View** menu and select **Extensions**.
 1. In **Search Extensions in Marketplace**, type **PostgreSQL** and select **Install**.
+
     :::image type="content" source="../media/postgresql-extension.png" alt-text="Screenshot of PostgreSQL extension install button.":::
 1. Select **Connections**.
+
     :::image type="content" source="../media/connections.png" alt-text="Screenshot of Connections button.":::
 1. Select **Servers** and select **New connection**.
+
     :::image type="content" source="../media/create-connection.png" alt-text="Screenshot of Create a connection button.":::
 1. In **Connection type**, select **PostgreSQL**.
 1. In **Server name**, type the value that you specified when you deployed the server followed by **.postgres.database.azure.com**.
@@ -72,6 +75,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 1. In **Number of jobs**, type **1**.
 1. In **Role name**, select **demo**.
 1. Select **Restore**.
+
     :::image type="content" source="../media/restore.png" alt-text="Screenshot of Restore dialog box.":::
 1. Wait until the restore process completes.
 1. You can disregard any errors that occur because those objects are not required for these modules.
@@ -83,6 +87,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 1. In **Settings**, select **Server parameters**.
 1. Navigate to the **pg_qs.query_capture_mode** setting.
 1. Select **TOP**.
+
     :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on" lightbox="../media/3-settings-turn-query-store-on.png":::
 1. Navigate to **pgms_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
     :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn pgms_wait_sampling.query_capture_mode on" lightbox="../media/3-query-capture-mode.png":::
@@ -92,6 +97,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 
 1. Start Azure Data Studio.
 1. Select **Connect**.
+
     :::image type="content" source="../media/5-connect.png" alt-text="Screenshot showing Connect icon" lightbox="../media/5-connect.png":::
 1. Select your PostgreSQL server and select **Connect**.
 1. Type each of the following query and select **Run**.
@@ -107,6 +113,7 @@ You need your own Azure subscription to complete the exercises in this module. I
 > For a newly created database, there might be limited statistics, if any. If you wait for 30 minutes there will be statistics from background processes.
 
 1. Select the **azure_sys** database.
+
     :::image type="content" source="../media/5-database-selector.png" alt-text="Screenshot of the database selector" lightbox="../media/5-database-selector.png":::
 1. Type each of the following queries and select **Run**.
     ```sql
