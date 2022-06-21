@@ -45,14 +45,14 @@ To create a composed model, we must first create two or more custom models. To c
 1. In the **Forms Recognizer or Cognitive Service Resource** drop-down list, select **FormsRecognizer**
 1. In the **API version** drop-down list, ensure that **2022-06-30-preview** is selected and then select **Continue**.
 
-    :::image type="content" source="../media/4-configure-service-resources.png" alt-text="Screen shot showing the Configure service resources page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-configure-service-resources.png":::
+    :::image type="content" source="../media/4-configure-service-resources.png" alt-text="Screenshot showing the Configure service resources page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-configure-service-resources.png":::
 
 1. On the **Configure training data source** page, in the **Subscription** drop-down list, select your Azure subscription.
 1. In the **Resource group** drop-down list, select **FormsRecognizerResources**.
 1. In the **Storage account** drop-down list, select the only storage account listed.
 1. In the **Blob container** drop-down list, select **1040examples**, and then select **Continue**.
 
-    :::image type="content" source="../media/4-connect-training-data-source.png" alt-text="Screen shot showing the Connect training data source page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-connect-training-data-source.png":::
+    :::image type="content" source="../media/4-connect-training-data-source.png" alt-text="Screenshot showing the Connect training data source page in Forms Recognizer Studio custom model wizard." lightbox="../media/4-connect-training-data-source.png":::
 
 1. In the **Review and create** page, select **Create project**.
 
@@ -168,7 +168,7 @@ Now that the composed model is complete, let's test it with an example form:
 
 1. The document you analyzed is an example of the 1040 tax form. Check the **DocType** property to see if the correct custom model has been used. Also check the **FirstName**, **LastName**, **City**, and **State** values identified by the model.
 
-## Clean up the exercise resouces
+## Clean up the exercise resources
 
 Now that you've seen how composed models work, let's remove the resources you created in your Azure subscription.
 
