@@ -31,7 +31,7 @@ Let's review the diffent workload parameters and the values to input.
     - When you choose automatic indexing, the estimated RU/s for the update operation is calculated as one property being changed per an update.
 - **Deletes/sec** - Number of delete operations expected per second per region.
 
-[![Diagram showing the Azure Cosmos DB capacity calculator - basic mode](../media/2-azure-cosmos-db-capacity-calculator-basic.png)](../media/2-azure-cosmos-db-capacity-calculator-basic.png#lightbox)
+[![Diagram showing the Azure Cosmos DB capacity calculator - basic mode](../media/5-azure-cosmos-db-capacity-calculator-basic.png)](../media/5-azure-cosmos-db-capacity-calculator-basic.png#lightbox)
 
 Once you select **Calculate**, the **Cost Estimate** tab will show the total cost for storage and provisioned throughput.  Notice that by default it will show you the **EST. THROUGHPUT REQUIRED**, but you can select **Show Details** to see the estimated cost of the different types of CRUD and query requests.
 
@@ -71,7 +71,7 @@ Once you signed in, you'll notice a more detailed set of parameters than the Bas
 - **Request unit (RU) charge per call** - The estimated RU/s charge to execute the selected operation type.
 - **Calls/sec per region** - Number selected operation types executed per second per region.
 
-[![Diagram showing the Azure Cosmos DB capacity calculator - Advanced mode](../media/2-azure-cosmos-db-capacity-calculator-advanced.png)](../media/2-azure-cosmos-db-capacity-calculator-advanced.png#lightbox)
+[![Diagram showing the Azure Cosmos DB capacity calculator - Advanced mode](../media/5-azure-cosmos-db-capacity-calculator-advanced.png)](../media/5-azure-cosmos-db-capacity-calculator-advanced.png#lightbox)
 
 Once you select **Calculate**, the **Cost Estimate** tab will show the total cost for storage and provisioned throughput.  Notice that by default it will show you the **EST. THROUGHPUT REQUIRED**, but you can select **Show Details** to see the estimated cost of the different types of CRUD and query requests.
 

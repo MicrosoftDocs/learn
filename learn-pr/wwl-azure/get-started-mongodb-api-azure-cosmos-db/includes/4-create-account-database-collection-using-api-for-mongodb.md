@@ -1,6 +1,6 @@
 Azure Cosmos DB is a fully managed platform-as-a-service (PaaS). To use this service, we'll need to first create an Azure Cosmos DB account under our subscription. Once our account has been created, we can then add database, containers and items under it.  For Azure Cosmos DB API for MongoDB accounts, a container is realized as a Collection and an item is realized as a Document.
 
-[![Diagram showing the Azure Cosmos DB Resource Model](../media/4-database-containers-items.png)](../media/4-database-containers-items.png#lightbox)
+[![Diagram showing the Azure Cosmos DB Resource Model](../media/3-database-containers-items.png)](../media/3-database-containers-items.png#lightbox)
 
 We'll take a look at a couple of ways to create the different Azure Cosmos DB API for MongoDB model elements.
 
@@ -31,7 +31,7 @@ One way of creating our Azure Cosmos DB account and its elements, is using the A
 
 [!NOTE] It can take several minutes to create your Azure Cosmos DB account.
 
-[![Diagram showing the Create Azure Cosmos DB Account - Azure Cosmos DB API for MongoDB creation page](../media/4-create-azure-cosmos-db-account-mongodb.png)](../media/4-create-azure-cosmos-db-account-mongodb.png#lightbox)
+[![Diagram showing the Create Azure Cosmos DB Account - Azure Cosmos DB API for MongoDB creation page](../media/3-create-azure-cosmos-db-account-mongodb.png)](../media/3-create-azure-cosmos-db-account-mongodb.png#lightbox)
 
 ### Create a database and container for the Azure Cosmos DB API for MongoDB
 
@@ -41,13 +41,13 @@ Creating a database and container in the Azure portal is straight forward, let's
 
 1. Select the pulldown to the right of the *New Collection* icon and select **New Database**. 
 
-[![Diagram showing the create an Azure Cosmos DB API for MongoDB database or collection](../media/4-create-azure-cosmos-db-database-or-collection-mongodb.png)](../media/4-create-azure-cosmos-db-database-or-collection-mongodb.png#lightbox)
+[![Diagram showing the create an Azure Cosmos DB API for MongoDB database or collection](../media/3-create-azure-cosmos-db-database-or-collection-mongodb.png)](../media/3-create-azure-cosmos-db-database-or-collection-mongodb.png#lightbox)
 
 1. Give your database a new name under the **Database id** textbox.
 
 1. While we could define the **Provision throughput** in the *New Database* dialog, in most cases you would select your provisioned throughput at the container level.  Let's *uncheck* the *Provision throughput* checkbox and select **Ok** for this example.
 
-[![Diagram showing the create an Azure Cosmos DB API for MongoDB database](../media/4-create-azure-cosmos-db-database-mongodb.png)](../media/4-create-azure-cosmos-db-database-mongodb.png#lightbox)
+[![Diagram showing the create an Azure Cosmos DB API for MongoDB database](../media/3-create-azure-cosmos-db-database-mongodb.png)](../media/3-create-azure-cosmos-db-database-mongodb.png#lightbox)
 
 We should now notice our new database under the *MONGO API* section. It's time to create our new collection.
 
@@ -65,22 +65,22 @@ We should now notice our new database under the *MONGO API* section. It's time t
         - **Advanced/Indexing** - We'll discuss indexes in more detail under the *Design* module. Leave the checkbox checked.
              
 
-[![Diagram showing the create an Azure Cosmos DB API for MongoDB collection](../media/4-create-azure-cosmos-db-collection-mongodb.png)](../media/4-create-azure-cosmos-db-collection-mongodb.png#lightbox)
+[![Diagram showing the create an Azure Cosmos DB API for MongoDB collection](../media/3-create-azure-cosmos-db-collection-mongodb.png)](../media/3-create-azure-cosmos-db-collection-mongodb.png#lightbox)
 
-We should now have a database and one collection to connect to.  In the next unit, we'll go into more detail on connecting to an Azure Cosmos DB API for MongoDB account.  Before that, let's review another way of creating our Azure Cosmos DB API for MongoDB databases and collections. 
+We should now have a database and one collection to connect to.  In the next unit, we'll go into more detail on connecting to an Azure Cosmos DB API for MongoDB account.  Before that, let's review another way of creating our Azure Cosmos DB API for MongoDB databases and collections.
 
-## Create or connect to a database and collection for the Azure Cosmos DB API for MongoDB using the SDKs
+## Create or connect to a database and collection for the Azure Cosmos DB API for MongoDB
 
-You should be able to create or connect to your databases using the Java, Python, Node.js, .NET and other programming language Azure Cosmos DB SDKs. Let's introduce some functions you would use to create these elements using in some of the different language SDKs.  At the beginning of this module, we stated that *the developers can keep on using MongoDB drivers, SDKs and tools they're familiar with to create apps and connect to Azure Cosmos DB.* We'll leverage on those drivers and their properties and methods to program our access and operations against our Azure Cosmos DB API for MongoDB accounts. So the developers will continue using the same code to access the Azure Cosmos DB API for MongoDB accounts that they've used in the past.
+You should be able to create or connect to your Azure Cosmos DB API for MongoDB account using the Java, Python, Node.js, .NET and other programming language. Let's introduce some functions you would use to create these elements using in some of the different languages.  At the beginning of this module, we stated that *the developers can keep on using MongoDB drivers, SDKs and tools they're familiar with to create apps and connect to Azure Cosmos DB.* We'll leverage on those drivers and their properties and methods to program our access and operations against our Azure Cosmos DB API for MongoDB accounts. So the developers will continue using the same code to access the Azure Cosmos DB API for MongoDB accounts that they've used in the past.
 
-### Create or connect to a database for the Azure Cosmos DB API for MongoDB using the SDKs
+### Create or connect to a database for the Azure Cosmos DB API for MongoDB
 
 You can use your favorite development tool to create your Azure Cosmos DB API for MongoDB application. We'll leverage on the MongoDB driver for each respective programming language to create our databases and collections.  Let's review the code to connect to the Azure Cosmos DB API for Cosmos DB accounts and to connect to the *products* database.
 
 ::: zone pivot="node"
   ***Node.js***
 
-  ```JavaScript
+  ```javascript
   const {MongoClient} = require("mongodb");
 
   async function main() {
@@ -114,19 +114,23 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
 
   main();
   ```
+
 ::: zone-end
 
 ::: zone pivot="java"
   ***Java***
 
-  ```Java
+  ```java
+  package com.fabrikam;
+
   import org.bson.Document;
   import com.mongodb.MongoClient;
   import com.mongodb.MongoClientURI;
   import com.mongodb.client.MongoDatabase;
   import com.mongodb.client.MongoCollection;
+  import static com.mongodb.client.model.Filters.eq;
 
-  public class Program {
+  public class App {
     public static void main(String[] args) {
 
       // We will discuss connection string in more detail in the next unit of this module
@@ -152,12 +156,13 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
     }
   }
   ```
+
 ::: zone-end
 
 ::: zone pivot="python"
   ***Python***
 
-  ```Python
+  ```python
   import pymongo
 
   # We will discuss connection string in more detail in the next unit of this module
@@ -174,13 +179,13 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
  
   # Add code to connect to a collection and add an entry here 
   ```
-::: zone-end
 
+::: zone-end
 
 ::: zone pivot="csharp"
   ***C#***
 
-  ```C#
+  ```csharp
   using MongoDB.Driver;
 
     public class Products {
@@ -198,7 +203,6 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
         @"mongodb://calopezdp420mongodb01:6CKYlfyagNSQ2ZmP8XEmc2Z6gozF6NkIJ6w1WoYFehZ8Z3842jEhz7xRBl7KeGX2QajQt54Y2g9bJ9MZXU8Z9Q==@calopezdp420mongodb01.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@calopezdp420mongodb01@";
 
       MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(connectionString));
-      settings.SslSettings = new SslSettings() { EnabledSslProtocols = SslProtocols.Tls12 };
 
       // We use the "MongoClient" method and the "settings" value to connect to the account 
       var mongoClient = new MongoClient(settings);
@@ -210,60 +214,137 @@ You can use your favorite development tool to create your Azure Cosmos DB API fo
     }
   }
   ```
+
 ::: zone-end
 
 It's that simple, once we connected using the driver, we either create a new database, or pointed to an existing one with the *GetDatabase* or similar methods depending on the language. Our application can now use the **ProductDatabase** variable to reference to the desired database.  Creating or connecting to a collection will be as simple as it was to create a new database.
 
-### Create a collection for the Azure Cosmos DB API for MongoDB using .NET
+### Create a collection for the Azure Cosmos DB API for MongoDB
 
 To create or access an existing collection, we'll use a get collection method or reference depending on the programming language. Let's add some code to the previous example to create/connect to a collection and add one entry on that collection.
 
 ::: zone pivot="node"
   ***Node.js***
 
-  ```JavaScript
-            // Add code to connect to a collection and add an entry here 
-            var collection = db.collection('documents');
-            var insertResult = await collection.insertOne({ ProductId: 10, name: "bread" });
+  ```javascript
+            // Add code to connect to a collection and add and find an entry here 
+            var collection = ProductDatabase.collection('documents');
+            var insertResult = await collection.insertOne({ ProductId: 1, name: "bread" });
+
+            // return data where ProductId = 1
+            const findProduct = await collection.find({ProductId: 1});
+            await findProduct.forEach(console.log);
   ```
+
 ::: zone-end
 
 ::: zone pivot="java"
   ***Java***
 
-  ```Java
-            // Add code to connect to a collection and add an entry here 
+  ```java
+            // Add code to connect to a collection and add and find an entry here 
             MongoCollection collection = ProductDatabase.getCollection("products");
 
             collection.insertOne(new Document()
                         .append("ProductId", 1)
                         .append("name", "bread"));
+
+            // return data where ProductId = 1
+            Document findProduct = (Document) collection.find(eq("ProductId", 1)).first();
+            System.out.println(findProduct.toJson());
   ```
+
 ::: zone-end
 
 ::: zone pivot="python"
   ***Python***
 
-  ```Python
+  ```python
   # Add code to connect to a collection and add an entry here 
   collection = ProductDatabase["products"]
   collection.insert_one({ "ProductId": 1, "name": "bread" })
   ```
+
 ::: zone-end
 
 ::: zone pivot="csharp"
   ***C#***
 
-```C#
+  ```csharp
       // Add code to connect to a collection and add an entry here 
       var mongoCollection = mongoDatabase.GetCollection<Products>("products");
 
       Products Product = new Products {ProductId=1,name="bread"};
       mongoCollection.InsertOne (Product);
   ```
+
 ::: zone-end
 
 In the next unit, we'll see how exactly did we created our connection string.
 
+## Use MongoDB extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
+
+As we discussed earlier, Azure Cosmos DB API for MongoDB gives us the ability to use the same drivers and code we used to access and create our objects in a MongoDB server for our Azure Cosmos DB account.  However, using that code to create our databases and collections will use the default Azure Cosmos DB creation parameters.  To take advantage of Azure Cosmos DB features, we'll need to be able to control our database and collection creation parameters like throughput, autoscaling, assigning shard keys, and defining indexes. Azure Cosmos DB API for MongoDB gives us this ability by using [extended commands][/azure/cosmos-db/mongodb/custom-commands] to define those parameters. These commands allow us to code more precise instructions on how to create or modify our databases and collections specifically for Azure Cosmos DB.
+
+Azure Cosmos DB API for MongoDB provides extension commands for the following request types:
+
+- Create database
+- Update database
+- Get database
+- Create collection
+- Update collection
+- Get collection
+
+The MongoDB drivers provide a function to run a command against a database, we'll use this function to send our extended commands to Azure Cosmos DB. Let's take a look at the code to create an IOT Device collection with a throughput of 2000 RUs and a shard key of DeviceId.
+
+::: zone pivot="node"
+  ***Node.js***
+
+  ```javascript
+      // create the Devices collection with a throughput of 2000 RUs and with DeviceId as the sharding key
+      var result = IOTDatabase.command({customAction: "CreateCollection", collection: "Devices", offerThroughput: 2000, shardKey: "DeviceId"});
+  ```
+
+::: zone-end
+
+::: zone pivot="java"
+  ***Java***
+
+  ```java
+        // create the Devices collection with a throughput of 2000 RUs and with DeviceId as the sharding key
+        Document DevCollectionDef = new Document();
+        DevCollectionDef.append("customAction", "CreateCollection");
+        DevCollectionDef.append("collection", "Devices");
+        DevCollectionDef.append("offerThroughput", 2000);
+        DevCollectionDef.append("shardKey", "DeviceId");
+    
+        Document result = IOTDatabase.runCommand(DevCollectionDef);
+  ```
+
+::: zone-end
+
+::: zone pivot="python"
+  ***Python***
+
+  ```python
+        # create the Devices collection with a throughput of 2000 RUs and with DeviceId as the sharding key
+        IOTDatabase.command({'customAction': "CreateCollection", 'collection': "Devices", 'offerThroughput': 2000, 'shardKey': "DeviceId"})
+  ```
+
+::: zone-end
+
+::: zone pivot="csharp"
+  ***C#***
+
+  ```csharp
+        // create the Devices collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
+        var result = IOTDatabase.RunCommand<BsonDocument>(@"{customAction: ""CreateCollection"", collection: ""Devices"", offerThroughput: 2000, shardKey: ""DeviceId""}");
+  ```
+
+::: zone-end
+
+In a similar fashion we can modify a collection or create or modify a database.  Review the [Use MongoDB extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB][/azure/cosmos-db/mongodb/custom-commands] article for more information.
+
 [/azure/cosmos-db/analytical-store-introduction]: https://docs.microsoft.com/azure/cosmos-db/analytical-store-introduction
 [/mongodb.driver]: https://www.nuget.org/packages/mongodb.driver
+[/azure/cosmos-db/mongodb/custom-commands]: https://docs.microsoft.com/azure/cosmos-db/mongodb/custom-commands

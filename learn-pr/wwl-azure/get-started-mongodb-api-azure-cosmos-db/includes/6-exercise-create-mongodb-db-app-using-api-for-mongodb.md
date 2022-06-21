@@ -1,7 +1,34 @@
-> [!NOTE]
-> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button above to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
+It's time to programmatically check out how to create our Azure Cosmos DB API for MongoDB databases, collections and add some data.
+
+This exercise can be completed using a Microsoft Learn *sandbox*, which provides a temporary Azure subscription. To activate the sandbox subscription, you must sign in using a Microsoft account. The sandbox subscription will be automatically deleted when you complete this module. After the sandbox has been activated, [sign into the Azure portal using the credentials for your sandbox subscription](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Ensure you're working in the **Microsoft Learn Sandbox** directory - indicated at the top right of the portal under your user ID. If not, select the user icon and switch directory.
 
 > [!TIP]
-> Alternatively, if you would like to use a development environment on your own computer, you can use this [setup guide](https://github.com/microsoftlearning/dp-420-cosmos-db-dev/blob/main/instructions/00-setup-environment.md) and follow these [exercise instructions](https://github.com/microsoftlearning/dp-420-cosmos-db-dev/blob/main/instructions/20-sdk-regions.md). The setup guide is designed for multiple development exercises, and may include software that is not required for this specific exercise. Additionally, due to the range of possible operating systems and setup configurations, we can't provide support if you choose to complete the exercise on your own computer.
+> If you prefer, you can use your own Azure subscription. To do so, [sign into the Azure portal using credentials for your subscription](https://portal.azure.com?azure-portal=true). Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
 
-When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+In this exercise, we'll start by using the MongoDB drivers and programmatically create our databases, collections and then insert and query some data in Azure Cosmos DB API for MongoDB like we would for any MongoDB server.  We'll then use the extension commands to have better control of our sharding key and throughput when we create our collections.
+
+::: zone pivot="node"
+
+To start this exercise, use the sandbox or your own environment and follow these [exercise instructions](https://github.com/MicrosoftLearning/mslearn-cosmosdb/blob/a27cc91a2ab4944172c942267d39ad9c3ba9425e/api-for-mongodb/instructions/01-create-mongodb-objects/node-create-mongodb-objects.md ).
+
+::: zone-end
+
+::: zone pivot="java"
+
+To start this exercise, use the sandbox or your own environment and follow these [exercise instructions](https://github.com/MicrosoftLearning/mslearn-cosmosdb/blob/a27cc91a2ab4944172c942267d39ad9c3ba9425e/api-for-mongodb/instructions/01-create-mongodb-objects/java-create-mongodb-objects.md ).
+
+::: zone-end
+
+::: zone pivot="python"
+
+To start this exercise, use the sandbox or your own environment and follow these [exercise instructions](https://github.com/MicrosoftLearning/mslearn-cosmosdb/blob/a27cc91a2ab4944172c942267d39ad9c3ba9425e/api-for-mongodb/instructions/01-create-mongodb-objects/python-create-mongodb-objects.md ).
+
+::: zone-end
+
+::: zone pivot="csharp"
+
+To start this exercise, use the sandbox or your own environment and follow these [exercise instructions](https://github.com/MicrosoftLearning/mslearn-cosmosdb/blob/a27cc91a2ab4944172c942267d39ad9c3ba9425e/api-for-mongodb/instructions/01-create-mongodb-objects/csharp-create-mongodb-objects.md ).
+
+::: zone-end
+
+Once you've completed this exercise, continue to the knowledge check questions for this module.

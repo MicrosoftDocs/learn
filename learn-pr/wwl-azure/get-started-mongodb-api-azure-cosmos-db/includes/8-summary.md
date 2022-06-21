@@ -27,6 +27,13 @@ For more information about the topics discussed in this module, see:
 - [Provision database, container or autoscale throughput on Azure Cosmos DB API for MongoDB resources][/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb]
 - [CosmosClient.GetDatabase(String) Method][/dotnet/api/microsoft.azure.cosmos.cosmosclient.getdatabase?view=azure-dotnet]
 - [APIForMongoDBQuickstart-WebAPI GitHub example][/Azure/azure-cosmos-dotnet-templates/tree/main/Templates/APIForMongoDBQuickstart-WebAPI]
+- [Use MongoDB extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB][/azure/cosmos-db/mongodb/custom-commands]
+- [MongoDB 3.6 lives on in Azure Cosmos DB][/cosmosdb/mongodb-3-6-lives-on-in-azure-cosmos-db/]
+- [Create Azure Cosmos containers and databases with autoscale throughput][/azure/cosmos-db/provision-throughput-autoscale]
+- [Achieve high availability with Cosmos DB][azure/cosmos-db/high-availability]
+- [Azure Cosmos DB serverless][/azure/cosmos-db/serverless]
+- [Upgrade the API version of your Azure Cosmos DB API for MongoDB account][azure/cosmos-db/mongodb/upgrade-mongodb-version]
+- [What is Azure Synapse Link for Azure Cosmos DB?][/azure/cosmos-db/synapse-link]
 
 [/azure/cosmos-db/mongodb/mongodb-introduction]: https://docs.microsoft.com/azure/cosmos-db/mongodb/mongodb-introduction
 [/azure/cosmos-db/mongodb/estimate-ru-capacity-planner]: https://docs.microsoft.com/azure/cosmos-db/mongodb/estimate-ru-capacity-planner
@@ -44,3 +51,10 @@ For more information about the topics discussed in this module, see:
 [/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb]: https://docs.microsoft.com/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb
 [/dotnet/api/microsoft.azure.cosmos.cosmosclient.getdatabase?view=azure-dotnet]: https://docs.microsoft.com/dotnet/api/microsoft.azure.cosmos.cosmosclient.getdatabase?view=azure-dotnet
 [/Azure/azure-cosmos-dotnet-templates/tree/main/Templates/APIForMongoDBQuickstart-WebAPI]: https://github.com/Azure/azure-cosmos-dotnet-templates/tree/main/Templates/APIForMongoDBQuickstart-WebAPI
+[/azure/cosmos-db/mongodb/custom-commands]: https://docs.microsoft.com/azure/cosmos-db/mongodb/custom-commands
+[/cosmosdb/mongodb-3-6-lives-on-in-azure-cosmos-db/]: https://devblogs.microsoft.com/cosmosdb/mongodb-3-6-lives-on-in-azure-cosmos-db/
+[/azure/cosmos-db/provision-throughput-autoscale]: https://docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale
+[azure/cosmos-db/high-availability]: https://docs.microsoft.com/azure/cosmos-db/high-availability
+[/azure/cosmos-db/serverless]: https://docs.microsoft.com/azure/cosmos-db/serverless
+[azure/cosmos-db/mongodb/upgrade-mongodb-version]: https://docs.microsoft.com/azure/cosmos-db/mongodb/upgrade-mongodb-version
+[/azure/cosmos-db/synapse-link]: https://docs.microsoft.com/azure/cosmos-db/synapse-link
