@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.understand-mysql-storage-engine
+metadata:
+  title: Understand the MySQL storage engine
+  description: "Learn about MySQL’s pluggable storage engine model, and learn about common storage engines, and those supported by Azure Database for MySQL."
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand the MySQL storage engine
+summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the common storage engines for MySQL
+  - Specify a storage engine
+  - Understand the storage engines supported by Azure Database for MySQL
+  - Explain tablespaces
+  - Optimize write ahead logging
+prerequisites: |
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-mysql
+- azure-storage
+subjects:
+- database
+units:
+- learn.wwl.understand-mysql-storage-engine.introduction
+- learn.wwl.understand-mysql-storage-engine.describe-common-storage-engines
+- learn.wwl.understand-mysql-storage-engine.specify-storage-engine
+- learn.wwl.understand-mysql-storage-engine.understand-supported-storage-engines
+- learn.wwl.understand-mysql-storage-engine.explain-tablespaces
+- learn.wwl.understand-mysql-storage-engine.optimize-write-ahead-log
+- learn.wwl.understand-mysql-storage-engine.exercise-compare-options
+- learn.wwl.understand-mysql-storage-engine.knowledge-check
+- learn.wwl.understand-mysql-storage-engine.summary
+badge:
+  uid: learn.wwl.understand-mysql-storage-engine.badge
