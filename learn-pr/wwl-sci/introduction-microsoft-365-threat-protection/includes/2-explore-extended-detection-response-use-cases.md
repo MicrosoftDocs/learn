@@ -5,7 +5,7 @@ This scenario depicts a case where Microsoft Defender for Endpoint detects a mal
 
 :::image type="content" source="../media/compromised-endpoint.png" alt-text="Diagram the Detection of a Compromised endpoint.":::
  
-The victim receives a malicious email on personal email account (not protected by Microsoft Defender for Office 365 (MDO)) or a USB drive and opens the attachment. 
+The victim receives a malicious email on personal email account (not protected by Microsoft Defender for Office 365 (MDO) or a USB drive and opens the attachment. 
 Once the attachment opens, the malware infects the computer. The user is unaware that an attack has taken place. But
 Microsoft Defender for Endpoints (MDE) detects this attack, raises an alert to security operations, and provides details about the threat to the Security team.
 Disable user access from device while infected - MDE communicates to Intune that risk level on this endpoint has changed. Intune marks the account in Azure Active Directory as noncompliant with organizations policy, and Conditional Access blocks user access based on that.  
