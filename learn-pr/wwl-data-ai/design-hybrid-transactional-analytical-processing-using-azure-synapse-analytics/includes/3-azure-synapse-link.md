@@ -6,7 +6,7 @@ Azure Cosmos DB is a global-scale NoSQL data service in Microsoft Azure that ena
 
 Azure Synapse Link for Azure Cosmos DB is a cloud-native HTAP capability that enables you to run near-real-time analytics over operational data stored in a Cosmos DB container. Azure Synapse Link creates a tight seamless integration between Azure Cosmos DB and Azure Synapse Analytics.
 
-![A diagram showing Azure Synapse Link integration with Azure Cosmos DB and Azure Synapse Analytics.](../media/synapse-link-cosmosdb.png)
+![A diagram showing Azure Synapse Link integration with Azure Cosmos DB and Azure Synapse Analytics.](../media/synapse-link-cosmos-db.png)
 
 In the diagram above, the following key features of the Azure Synapse Link for Cosmos DB architecture are illustrated:
 
