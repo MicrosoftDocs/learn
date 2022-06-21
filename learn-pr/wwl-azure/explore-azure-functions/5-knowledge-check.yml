@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "Functions Premium Plan"
       isCorrect: false
-      explanation: "That's incorrect. The Premium Plan does support scaling, but it it isn't predictive."
+      explanation: "That's incorrect. The Premium Plan does support scaling, but it isn't predictive."
     - content: "App service plan"
       isCorrect: true
       explanation: "That's correct. App service plans support setting autoscaling rules based on predictive usage."
     - content: "Consumption plan"
       isCorrect: false
-      explanation: "That's incorrect. The Consumption plan does support scaling, but it it isn't predictive."
+      explanation: "That's incorrect. The Consumption plan does support scaling, but it isn't predictive."
   - content: "An organization wants to implement a serverless workflow to solve a business problem. One of the requirements is the solution needs to use a designer-first (declarative) development model. Which of the choices below meets the requirements?"
     choices:
     - content: "Azure Functions"
