@@ -78,7 +78,7 @@ mydf.write.format("cosmos.oltp")\
 
 Spark SQL is a Spark API that provides SQL language syntax and relational database semantics in a Spark pool. You can use Spark SQL to define metadata for tables that can be queried using SQL.
 
-For example, the following PySpark code creates a table named **Products** based on the hypothetical container used in the previous examples:
+For example, the following code creates a table named **Products** based on the hypothetical container used in the previous examples:
 
 ```sql
 %%sql
