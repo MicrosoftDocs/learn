@@ -11,7 +11,7 @@ The Microsoft 365 Defender data connector provides alerts, incidents, and raw da
 - Microsoft Defender for Cloud Apps
 
 
-### Microsoft/Azure Services
+### Microsoft Azure Services
 
 The connectors for Microsoft and Azure-related services include (but aren't limited to):
 
@@ -46,7 +46,7 @@ The connectors for Microsoft and Azure-related services include (but aren't limi
 Microsoft Sentinel provides an ever-growing list of vendor-specific data connectors.  These connectors primarily use the CEF and Syslog connector as their foundation.
 
 > [!TIP]
-> Remember to check the connector page to see the Data Type (table) that the connector writes to
+> Remember to check the connector page to see the Data Type (table) that the connector writes to.
 
 ### Custom connectors using the Log Analytics API
 
@@ -74,9 +74,9 @@ To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must dep
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Microsoft Sentinel agent.
 
-:::image type="content" source="../media/learn-path-01.png" alt-text="Diagram of sending Syslog data to a dedicated Azure VM running":::
+:::image type="content" source="../media/learn-path-01.png" alt-text="Diagram of sending Syslog data to a dedicated Azure VM running.":::
 
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Microsoft Sentinel agent.
 
-:::image type="content" source="../media/learn-path-02.png" alt-text="Diagram of on-premises systems sending Syslog data to a dedicated on-premises system":::
+:::image type="content" source="../media/learn-path-02.png" alt-text="Diagram of on-premises systems sending Syslog data to a dedicated on-premises system.":::
 
