@@ -18,7 +18,8 @@ Give Microsoft Purview permissions to access your Power BI tenant.
 
 If you're using **Managed Identity** to authenticate to Power BI, you'll need to create a security group in Azure Active Directory, and add your Microsoft Purview managed identity to this security group.
 
-![Screenshot of Microsoft Azure Active Directory interface creating Security Group.](../media/purview-security-group.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Microsoft Azure Active Directory interface creating Security Group.](../media/purview-security-group.png)
 
 If a security group containing the Purview managed identity already exists, you can proceed to configuring the Power BI tenant.
 
@@ -26,17 +27,20 @@ If a security group containing the Purview managed identity already exists, you 
 
 Next you need to enable access to Power BI by Microsoft Purview in Power BI itself. This is done by enabling *Allow service principals to use read-only Power BI admin APIs* in the Power BI admin portal. 
 
-![Screenshot of Power B I admin portal focused on admin API settings section. Toggle is enabled.](../media/purview-power-bi-admin.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Power B I admin portal focused on admin API settings section. Toggle is enabled.](../media/purview-power-bi-admin.png)
 
 ## Register and scan Power BI
 
 Now that you've got access set up in both Microsoft Purview and Power BI, you can register and scan your Power BI tenant.
 
-![Screenshot of Microsoft Purview Data Map interface with pointer over blue register button.](../media/purview-register-power-bi.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Microsoft Purview Data Map interface with pointer over blue register button.](../media/purview-register-power-bi.png)
 
 After registering the Power BI tenant, initiate the scan by selecting **New scan**. Give your scan a name and step through the interface, where you'll be able to to exclude personal workspaces, confirm integration runtime and credentials, and select a connection. Test the connection to ensure authentication is set up properly.
 
-![Screenshot of Microsoft Purview Data Map interface with pointer over blue circular scan button.](../media/purview-scan-power-bi.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Microsoft Purview Data Map interface with pointer over blue circular scan button.](../media/purview-scan-power-bi.png)
 
 > [!NOTE]
 > If you're performing the scan, you must be both a Data Source Administrator and a Data Reader. 
@@ -44,6 +48,7 @@ After registering the Power BI tenant, initiate the scan by selecting **New scan
 
 You're able to track the progress of the scan in the data map, and once the scan is complete, you'll be able to search and browse the contents of your entire Power BI tenant!
 
-![Screenshot Microsoft Purview Data Map interface showing the scan details.](../media/purview-scan-power-bi-progress.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot Microsoft Purview Data Map interface showing the scan details.](../media/purview-scan-power-bi-progress.png)
 
 If you're having any issues with scanning your Power BI tenant, see [Troubleshoot Power BI tenant scans in Microsoft Purview](/azure/purview/register-scan-power-bi-tenant-troubleshoot) for details and helpful hints.
