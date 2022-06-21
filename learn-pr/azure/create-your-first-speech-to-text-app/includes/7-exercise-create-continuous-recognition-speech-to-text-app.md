@@ -8,69 +8,61 @@ In this exercise, you'll create an application that uses continuous recognition 
     code Program.cs
     ```
 
-1. Leave the existing `using` statements unmodified, but replace the `Main()` function with the following code, which will modify the application to use continuous recognition instead of single shot recognition.
+1. Update the `Main()` function with the following code to modify the application to use continuous recognition instead of single shot recognition.
 
     ```csharp
-    static async Task Main(string[] args)
+    try
     {
-        string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-        string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-        string ssmlFile = "Shakespeare.xml";
-        string waveFile = "Shakespeare.wav";
-    
-        try
+        FileInfo fileInfo = new FileInfo(ssmlFile);
+        if (fileInfo.Exists)
         {
-            FileInfo fileInfo = new FileInfo(ssmlFile);
-            if (fileInfo.Exists)
-            {
-                var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
-                using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
-                var stopRecognition = new TaskCompletionSource<int>();
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
+            using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
+            var stopRecognition = new TaskCompletionSource<int>();
                 
-                FileStream fileStream = File.OpenWrite(Path.Combine(fileInfo.DirectoryName, textFile));
-                StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
+            FileStream fileStream = File.OpenWrite(Path.Combine(fileInfo.DirectoryName, textFile));
+            StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
 
-                speechRecognizer.Recognized += (s, e) =>
+            speechRecognizer.Recognized += (s, e) =>
+            {
+                switch(e.Result.Reason)
                 {
-                    switch(e.Result.Reason)
-                    {
-                        case ResultReason.RecognizedSpeech:
-                            streamWriter.WriteLine(e.Result.Text);
-                            break;
-                        case ResultReason.NoMatch:
-                            Console.WriteLine("Speech could not be recognized.");
-                            break;
-                    }
-                };
+                    case ResultReason.RecognizedSpeech:
+                        streamWriter.WriteLine(e.Result.Text);
+                        break;
+                    case ResultReason.NoMatch:
+                        Console.WriteLine("Speech could not be recognized.");
+                        break;
+                }
+            };
 
-                speechRecognizer.Canceled += (s, e) =>
+            speechRecognizer.Canceled += (s, e) =>
+            {
+                if (e.Reason != CancellationReason.EndOfStream)
                 {
-                    if (e.Reason != CancellationReason.EndOfStream)
-                    {
-                        Console.WriteLine("Speech recognition canceled.");
-                    }
-                    stopRecognition.TrySetResult(0);
-                    streamWriter.Close();
-                };
+                    Console.WriteLine("Speech recognition canceled.");
+                }
+                stopRecognition.TrySetResult(0);
+                streamWriter.Close();
+            };
 
-                speechRecognizer.SessionStopped += (s, e) =>
-                {
-                    Console.WriteLine("Speech recognition stopped.");
-                    stopRecognition.TrySetResult(0);
-                    streamWriter.Close();
-                };
+            speechRecognizer.SessionStopped += (s, e) =>
+            {
+                Console.WriteLine("Speech recognition stopped.");
+                stopRecognition.TrySetResult(0);
+                streamWriter.Close();
+            };
 
-                Console.WriteLine("Speech recognition started.");
-                await speechRecognizer.StartContinuousRecognitionAsync();
-                Task.WaitAny(new[] { stopRecognition.Task });
-                await speechRecognizer.StopContinuousRecognitionAsync();
-            }
+            Console.WriteLine("Speech recognition started.");
+            await speechRecognizer.StartContinuousRecognitionAsync();
+            Task.WaitAny(new[] { stopRecognition.Task });
+            await speechRecognizer.StopContinuousRecognitionAsync();
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
     ```
 
