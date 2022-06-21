@@ -19,7 +19,6 @@ microsoft-graph
 1. Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
 2. Basic knowledge of REST APIs
 3. Basic knowledge of Microsoft Graph and working with Microsoft Graph APIs
-4. Sign in with your Azure AD credentials to an API client such as [Graph Explorer](https://aka.ms/ge) or [Postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork)
 
 ## Summary
 
@@ -34,7 +33,7 @@ Pattern:
     - Validate
 -->
 
-1. Explore extension options for adding custom properties to Microsoft Graph
+1. Choose extension options for adding custom properties to Microsoft Graph
 2. Add, query, and update custom properties and their associated data through Microsoft Graph
 3. Use data in custom properties to extend your application
 
@@ -59,37 +58,37 @@ Add more units as needed for your content
 
     Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves and they'll discover each other, their interests, and their social networks.
 
-    The organization doesn't want to invest in another database and has identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the extension options and how to use them in the team bonding app.
+    The organization doesn't want to invest in another database and has identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the available extension options and how to use them in the team bonding app.
 
-2. Examine Microsoft Graph extension attributes 1-15
+2. Choose extension attributes for Microsoft Graph data
 <!-- Conceptual unit -->
 
 
-3. Exercise - Extend Microsoft Graph data using extension attributes
+3. Exercise - Use extension attributes to extend Microsoft Graph data
 <!-- Exercise unit -->
 
 
-4. Examine Microsoft Graph directory extensions
+4. Examine directory extensions for Microsoft Graph data
 <!-- Conceptual unit -->
 
 
-5. Exercise - Extend Microsoft Graph data using directory extensions
+5. Exercise - Use directory extensions to extend Microsoft Graph data
 <!-- Exercise unit -->
 
 
-6. Examine Microsoft Graph schema extensions
+6. Consider schema extensions for Microsoft Graph data
 <!-- Conceptual unit -->
 
 
-7. Exercise - Extend Microsoft Graph data using schema extensions
+7. Exercise - Use schema extensions to extend Microsoft Graph data
 <!-- Exercise unit -->
 
 
-8. Examine Microsoft Graph open extensions
+8. Choose open extensions for Microsoft Graph data
 <!-- Conceptual unit -->
 
 
-9. Exercise - Extend Microsoft Graph data using open extensions
+9. Exercise - Use open extensions to extend Microsoft Graph data
 <!-- Exercise unit -->
 
 
