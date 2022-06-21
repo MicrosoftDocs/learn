@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/04/2021
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -45,7 +46,7 @@ quiz:
       explanation: "Incorrect. Certificates can be used as secrets to prove the applications identity when requesting a token. Also can be referred to as public keys. A secret string that the application uses to prove its identity when requesting a token. Also can be referred to as application password."
     - content: "Use the App manifest editor and API permissions."
       isCorrect: false
-      explanation: "Incorrect. API permissions is not correct. Applications are authorized to call APIs when they are granted permissions by users/admins as part of the consent process. The list of configured permissions should include all the permissions the application needs."
+      explanation: "Incorrect. API permissions is not correct. Applications are authorized to call APIs when they are granted permissions by users/admins as part of the consent process. The list of configured permissions should include all the permissions the application needs"
     - content: "Use the App roles and App manifest editor."
       isCorrect: true
       explanation: "Correct. Application roles are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Azure AD emits a roles claim for each role that the user has been granted individually to the user and from their group membership. The App roles and Manifest editor are found in the Manage section of the app."
