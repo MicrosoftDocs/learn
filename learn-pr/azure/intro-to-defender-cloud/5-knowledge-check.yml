@@ -30,7 +30,7 @@ quiz:
       isCorrect: true
       explanation: "The Secure Score increases when you remediate recommendations and alerts. The closer your score is to 100 the more secure your environment is."
   
-  - content: "Describe how the Cloud Security Posture Management (CSPM) of Defender for Cloud works to protect your multicloud environments??"
+  - content: "Describe how the Cloud Security Posture Management (CSPM) of Defender for Cloud works to protect your multicloud environments?"
     choices:
     - content: "Defender for Cloud uses the Secure Score to inform you of the misconfigurations, threats, misuse and compliance violations across your multicloud infrastructure."
       isCorrect: true
@@ -58,7 +58,7 @@ quiz:
     choices:
     - content: "Defender for Cloud has various plans that can protect databases."
       isCorrect: true
-      explanation: "Defender for Cloud uses its various plans and functionality to protect the following types of databses: SQL DBs, SQL on machines, MariaDB, MySQL, PostGreSQL, Cosmos DB."
+      explanation: "Defender for Cloud uses its various plans and functionality to protect the following types of databases: SQL DBs, SQL on machines, MariaDB, MySQL, PostGreSQL, Cosmos DB."
     - content: "Defender for Cloud will install an active firewall that surrounds and protects databases."
       isCorrect: false
       explanation: "Defender for Cloud may offer recommendations to install or alter a firewall, but it does not include firewall protection."

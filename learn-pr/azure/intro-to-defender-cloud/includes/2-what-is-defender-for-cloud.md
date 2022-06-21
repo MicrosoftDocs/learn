@@ -2,7 +2,7 @@ Cybersecurity is an ever growing concern for all business with an online presenc
 
 Let's start with a few definitions and a quick tour of the core features of Defender for Cloud. This overview should help you see whether Defender for Cloud might be a good fit for you.
 
-## What is Defender for Cloud?
+## Protect your environments with Defender for Cloud
 
 Defender for Cloud is a security software product that protects and secures your hybrid cloud environments in Azure, AWS, GCP, on-premises.
 
