@@ -14374,6 +14374,26 @@
       "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/9-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-azure-synapse-link-with-azure-cosmos-db/5-create-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/5-query-with-spark",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-azure-synapse-link-with-azure-cosmos-db/6-validate-connectivity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-azure-synapse-link-with-azure-cosmos-db/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-azure-synapse-link-with-azure-cosmos-db/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/9-summary",
+      "redirect_document_id": true
     }
   ]
 }
