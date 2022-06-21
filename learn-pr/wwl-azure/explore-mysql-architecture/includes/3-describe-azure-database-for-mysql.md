@@ -30,9 +30,9 @@ Azure Database for MySQL provides the MySQL Community Edition with:
 
 Both options can be deployed using one of three compute tiers:
 
-1. Basic (single server) or Burstable (flexible server). These are best suited to low concurrency workloads that don't need full compute capacity.
-1. General purpose. This is best suited for medium concurrency workloads.
-1. Memory optimized. This is the best solution for high concurrency workloads.
+* Basic (single server) or Burstable (flexible server). These are best suited to low concurrency workloads that don't need full compute capacity.
+* General purpose. This is best suited for medium concurrency workloads.
+* Memory optimized. This is the best solution for high concurrency workloads.
 
 Pricing is per-server, and not per-database. The pricing structure is based on the configuration of the compute tier, including the number of vCores and amount of storage (GB), and, for Flexible server, the amount of IOPS.
 

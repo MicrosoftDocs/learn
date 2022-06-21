@@ -16,7 +16,8 @@ abstract: |
   - Explore the MySQL architecture
   - Understand the parser and query optimizer
 prerequisites: |
-  Demonstrate an understanding of relational databases. Demonstrate an understanding of basic SQL.
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
