@@ -14289,6 +14289,41 @@
       "source_path": "learn-pr/wwl-azure/automate-inspection-health/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/automate-inspection-health/9-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-automatic-deployment-azure-sql-database/3-create-azure-resource-manager-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-automatic-deployment-azure-sql-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-automatic-deployment-azure-sql-database/4-deploy-azure-resource-manager-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-automatic-deployment-azure-sql-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-automatic-deployment-azure-sql-database/5-exercise-deploy-azure-database-using-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-automatic-deployment-azure-sql-database/6-exercise-deploy-azure-database-using-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-automatic-deployment-azure-sql-database/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-automatic-deployment-azure-sql-database/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-automatic-deployment-azure-sql-database/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-automatic-deployment-azure-sql-database/8-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-manage-azure-sentinel-workspaces/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-azure-sentinel-workspaces/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-manage-azure-sentinel-workspaces/8-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-azure-sentinel-workspaces/9-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
