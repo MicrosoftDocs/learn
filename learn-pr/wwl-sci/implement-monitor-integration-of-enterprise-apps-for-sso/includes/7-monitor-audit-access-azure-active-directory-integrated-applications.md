@@ -14,11 +14,11 @@ With Azure AD reports, you can get the information needed to determine how your 
 
 ## Use the report
 
-The usage and insights report shows the list of applications with one or more sign in attempts and allows you to sort by the number of successful sign-ins, failed sign-ins, and the success rate.
+The usage and insights report shows the list of applications with one or more sign-in attempts and allows you to sort by the number of successful sign-ins, failed sign-ins, and the success rate.
 
-Selecting **load more** at the bottom of the list allows you to view additional applications on the page. You can select the date range to view all applications that have been used within the range.
+Selecting **load more** at the bottom of the list allows you to view more applications on the page. You can select the date range to view all applications that have been used within the range.
 
-You can also set the focus on a specific application. Select **view sign-in activity** to see the sign in activity over time for the application as well as the top errors.
+You can also set the focus on a specific application. Select **view sign-in activity** to see the sign-in activity over time for the application and the top errors.
 
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
@@ -43,7 +43,7 @@ You can customize the list view by clicking **Columns** in the toolbar.
 
 :::image type="content" source="../media/columns.png" alt-text="Screenshot of the list of available Audit columns.  Configure the report based on your needs.":::
 
-This enables you to display additional fields or remove fields that are already displayed.
+This enables you to display other fields or remove fields that are already displayed.
 
 :::image type="content" source="../media/column-select.png" alt-text="Screenshot of the audit log columns.  Some of the fields have been selected to Remove.":::
 

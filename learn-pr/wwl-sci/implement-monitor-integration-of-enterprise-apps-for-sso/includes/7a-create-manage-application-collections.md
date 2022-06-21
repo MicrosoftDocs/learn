@@ -35,12 +35,12 @@ Users access the My Apps portal to:
 
 By default, all applications are listed together on a single page. Collections can be used to group together related applications and present them on a separate tab, making them easier to find. For example, use collections to create logical groupings of applications for specific job roles, tasks, projects, and so on. Every application to which a user has access appears in the default Apps collection, but a user can remove applications from the collection.
 
-### Create a collection using the my apps portal
+### Create a collection using the My Apps portal
 Follow these steps to create a collection.
 1. Open the **[My Apps](https://myapps.microsoft.com) portal**.
 2. Select the ellipsis (...) on the apps screen.
 3. Choose **Manage collections.**
 4. Select **Create collection.**
 5. Select the **+ Add apps** option to add all the apps you want in the collection.
-6. After picking you apps, select the **Add selected apps** button.
+6. After picking your apps, select the **Add selected apps** button.
 7. Give the collection a name and choose **Create collection**.
