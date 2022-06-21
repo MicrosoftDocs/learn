@@ -14324,6 +14324,16 @@
       "source_path": "learn-pr/wwl-sci/create-manage-azure-sentinel-workspaces/8-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-azure-sentinel-workspaces/9-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-watchlists-azure-sentinel/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-watchlists-azure-sentinel/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-watchlists-azure-sentinel/5-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-watchlists-azure-sentinel/6-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
