@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. There is a required setting in the Power BI admin portal that needs to be enabled."
     - content: "Enable enhanced metadata scanning in the Azure portal."
       isCorrect: false
-      explanation: "Incorrect. Enhanced metadata scanning of the Power BI tenant is not managed in the Azure Portal."
+      explanation: "Incorrect. Enhanced metadata scanning of the Power BI tenant is not managed in the Azure portal."
     - content: "Enable an admin API setting in the Power BI admin portal."
       isCorrect: true
       explanation: "Correct. Enabling the admin API settings will enable enhanced metadata scanning."
