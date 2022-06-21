@@ -8,22 +8,22 @@ In this exercise, you'll create an application that uses continuous recognition 
     code Program.cs
     ```
 
-1. Update the `Main()` function with the following code to modify the application to use continuous recognition instead of single shot recognition.
+1. Update try/catch block of the `Main()` function with the following code to modify the application to use continuous recognition instead of single shot recognition.
 
     ```csharp
     try
     {
-        FileInfo fileInfo = new FileInfo(ssmlFile);
+        FileInfo fileInfo = new FileInfo(waveFile);
         if (fileInfo.Exists)
         {
             var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
             using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
             using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             var stopRecognition = new TaskCompletionSource<int>();
-                
-            FileStream fileStream = File.OpenWrite(Path.Combine(fileInfo.DirectoryName, textFile));
+            
+            FileStream fileStream = File.OpenWrite(fileInfo.DirectoryName, textFile);
             StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
-
+    
             speechRecognizer.Recognized += (s, e) =>
             {
                 switch(e.Result.Reason)
@@ -36,7 +36,7 @@ In this exercise, you'll create an application that uses continuous recognition 
                         break;
                 }
             };
-
+    
             speechRecognizer.Canceled += (s, e) =>
             {
                 if (e.Reason != CancellationReason.EndOfStream)
@@ -46,14 +46,14 @@ In this exercise, you'll create an application that uses continuous recognition 
                 stopRecognition.TrySetResult(0);
                 streamWriter.Close();
             };
-
+    
             speechRecognizer.SessionStopped += (s, e) =>
             {
                 Console.WriteLine("Speech recognition stopped.");
                 stopRecognition.TrySetResult(0);
                 streamWriter.Close();
             };
-
+    
             Console.WriteLine("Speech recognition started.");
             await speechRecognizer.StartContinuousRecognitionAsync();
             Task.WaitAny(new[] { stopRecognition.Task });
@@ -97,7 +97,7 @@ In this exercise, you'll create an application that uses continuous recognition 
                         using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
                         var stopRecognition = new TaskCompletionSource<int>();
                         
-                        FileStream fileStream = File.OpenWrite(Path.Combine(fileInfo.DirectoryName, textFile));
+                        FileStream fileStream = File.OpenWrite(fileInfo.DirectoryName, textFile);
                         StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
     
                         speechRecognizer.Recognized += (s, e) =>
