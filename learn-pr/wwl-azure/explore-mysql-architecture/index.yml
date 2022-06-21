@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.explore-mysql-architecture
+metadata:
+  title: Explore MySQL Architecture
+  description: "Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL."
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore MySQL Architecture
+summary: Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure Database for MySQL
+  - Explore the MySQL architecture
+  - Understand the parser and query optimizer
+prerequisites: |
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-mysql
+- azure-storage
+subjects:
+- database
+units:
+- learn.wwl.explore-mysql-architecture.introduction
+- learn.wwl.explore-mysql-architecture.explore-mysql-architecture
+- learn.wwl.explore-mysql-architecture.describe-azure-database-for-mysql
+- learn.wwl.explore-mysql-architecture.understand-parser-query-optimizer
+- learn.wwl.explore-mysql-architecture.exercise-explore-azure-database-for-mysql-flexible-server
+- learn.wwl.explore-mysql-architecture.knowledge-check
+- learn.wwl.explore-mysql-architecture.summary
+badge:
+  uid: learn.wwl.explore-mysql-architecture.badge
