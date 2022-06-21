@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-microsoft-365-threat-protection.understand-defender-soc
+uid: learn.wwl.introduction-microsoft-365-threat-protection.understand-defender-security-operations-center
 title: Understand Microsoft 365 Defender in a SOC
 metadata:
   title: Understand Microsoft 365 Defender in a SOC
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-understand-defender-soc.md)]
+  [!include[](includes/3-understand-defender-security-operations-center.md)]
