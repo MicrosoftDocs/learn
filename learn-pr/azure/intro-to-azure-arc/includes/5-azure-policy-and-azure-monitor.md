@@ -17,11 +17,10 @@ By maintaining their on-premises infrastructures, Contoso could benefit from thi
 
 For example, to simplify the management of policy definitions, Contoso could consider combining multiple policies into initiatives and then create a few initiative assignments instead of multiple policy assignments.
 
-Azure Policy functionality is grouped into four main categories:
+Azure Policy functionality for Arc-enabled servers is grouped into these main categories:
 
 - Enforcing compliance when provisioning new Azure resources
 - Auditing the compliance of existing Azure resources
-- Remediating noncompliance of existing Azure resources
 - Auditing the compliance of the OS, application configuration, and environment settings within Azure VMs
 
 > [!TIP]
