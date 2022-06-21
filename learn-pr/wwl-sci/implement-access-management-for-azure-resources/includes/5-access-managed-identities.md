@@ -20,8 +20,3 @@ After you've enabled managed identity on an Azure resource, such as an Azure App
      :::image type="content" source="../media/managed-identity-select.png" alt-text="Screenshot of the Azure portal in the storage account page, choose the managed identity to grant role and access to.":::
 
 7. Complete the assignment with the **Review + assign** option.
-
-
-
-
-
