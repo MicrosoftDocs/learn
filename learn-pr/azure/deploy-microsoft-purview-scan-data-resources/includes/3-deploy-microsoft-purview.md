@@ -15,20 +15,22 @@ But don't worry if the name you want isn't available. Your Microsoft Purview acc
 
 ## Managed resources
 
-Microsoft Purview creates a storage account and an Azure Event Hubs account as managed resources within the subscription that the Microsoft Purview account is provisioned in. These resources are required to support enhanced security features during scanning.
+Microsoft Purview creates a storage account as a managed resource within the same subscription as the Microsoft Purview account. This resource is required to support enhanced security features during scanning.
 
 * The name of the managed resource group will be auto-generated but can be changed during the Microsoft Purview account creation process.
-* The names of the storage account and Azure Event Hubs namespace will be auto-generated during account creation and can't be changed.
+* The names of the storage account will be auto-generated during account creation and can't be changed.
 
 :::image type="content" source="../media/purview-managed-resources.png" alt-text="Screenshot showing the create Microsoft Purview account window, with the Managed resources section shown, and the managed resource group name box highlighted with the default name included.":::
 
+A managed Event Hubs namespace can also be optionally provisioned to support Atlas Kafka topics messages. You can choose this at creation, but it can be enabled and disabled anytime after creation.
+
 ## Microsoft Purview Data Map
 
-Microsoft Purview Data Map provides the foundation for data governance and discovery in Microsoft Purview. The data map captures and organizes metadata from your data landscape so you can know what kind of data you’re storing and where.
+The Microsoft Purview Data Map provides the foundation for data governance and discovery in Microsoft Purview. The data map captures and organizes metadata from your data landscape so you can know what kind of data you’re storing and where.
 
 The data map is automatically kept up to date with built-in scanning and classification, and it provides an interface that business users and developers can configure together to make a useable environment to discover and manage data.
 
-The data map powers all of Microsoft Purview’s other applications by housing the information, and providing access control.
+The data map powers all of Microsoft Purview’s other applications by housing the information and providing access control.
 
 :::image type="complex" source="../media/purview-data-map.png" alt-text="Diagram showing the Microsoft Purview Data Map.":::
    "The Data Map is at the top of the diagram, with on-premises, cloud, S A A S applications, and Power BI data flowing into the map. The data map information flows into collections. Collections are split into two parts: registered sources that contain assets (tables, files, etc.), and access control that contains users and groups assigned to roles."
@@ -36,12 +38,12 @@ The data map powers all of Microsoft Purview’s other applications by housing t
 
 Inside the data map you'll find **collections**, which serve two functions:
 
-- Data organization - collections organize sources (like SQL or storage accounts) and their assets (like tables and files) into customized groups that reflect your business.
+- Data organization - collections organize sources (like SQL or storage accounts) and their assets (like tables and files) into customized groups that reflect your business structure.
 - Access control - groups and users are assigned to roles in collections that allow you to manage who has access to your resources and assets.
 
 We'll discuss collections more deeply in the upcoming sections.
 
-Since the data map stored all your metadata, and provides the compute power to ingest this data, size of the Data Map is measured in Capacity Units, which are compute and storage units. There's no need to predetermine the number of Capacity Units required as Microsoft Purview will **auto-scale** up and down based on usage.
+Since the data map stores all your metadata and provides the compute power to ingest this data, the size of the Data Map is measured in Capacity Units, which are compute and storage units. There's no need to predetermine the number of Capacity Units required as Microsoft Purview will **auto-scale** up and down based on usage.
 
 ## Capacity Units
 

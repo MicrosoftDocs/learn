@@ -4,8 +4,8 @@ title: Setup
 metadata:
   unitType: introduction
   title: introduction
-  description: "This is the setup steps required before getting started with deploying a Microsoft Purview account."
-  ms.date: 6/16/2022
+  description: "These are the setup steps required before getting started with deploying a Microsoft Purview account."
+  ms.date: 6/21/2022
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial

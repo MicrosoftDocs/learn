@@ -6,9 +6,9 @@ As we discussed in the last section, the Microsoft Purview Data Map is the core 
    "The Data Map is at the top of the diagram, with on-premises, cloud, S A A S applications, and Power BI data flowing into the map. The data map information flows into collections. Collections are split into two parts: registered sources that contain assets (tables, files, etc.), and access control that contains users and groups assigned to roles."
 :::image-end:::
 
-To build this data map, you'll register and scan your data sources into Microsoft Purview. The data map will store the metadata for these sources and create a navigable table that you can browser through.
+To build this data map, you'll register and scan your data sources into Microsoft Purview. The data map will store the metadata for these sources and create a navigable table that you can browse through.
 
-In a single corporation, there might be thousands of sources of data! To organize all this information, and build security boundaries for access and data discovery, Microsoft Purview uses collections.
+In a single corporation there might be thousands of sources of data! To organize all this information and build security boundaries for access and data discovery, Microsoft Purview uses collections.
 
 ## Collections
 
@@ -43,9 +43,11 @@ Sources that are well organized to reflect your business structure improve data 
 
 ## Roles
 
-To manage access control in collections, Microsoft Purview uses a set of predefined roles to control who can access what within the account. Access is applied at the level of the collection it's assigned, and inherited downwards.
+To manage access control in collections, Microsoft Purview uses a set of predefined roles to control who can access what within the account. Access is applied at the level of the collection it's assigned and inherited downwards.
 
 In our above example, permissions applied at the root collection (ACCOUNT-NAME) will also be applied to its subcollections, Sales and Marketing. But permissions on Sales and Marketing won't apply to any sources registered on the root collection, and they won't apply laterally to each other. They would only be applied to any subcollections that may be added later.
+
+:::image type="content" source="../media/purview-collections.png" alt-text="A repeated screenshot of a collection hierarchy, with the ACCOUNT-NAME root collection, and two subcollections beneath: Sales and Marketing":::
 
 We won't need all the roles available for our proof of concept, but some of Microsoft Purview's roles currently are:
 
@@ -65,7 +67,7 @@ We won't need all the roles available for our proof of concept, but some of Micr
 
 The permissions of a parent collection are automatically inherited by its subcollections. This allows you to assign some groups or users broad access across the organization, so users can discover and manage data across an entire section, without having to assign individual permissions to every single subcollection.
 
-However, you may have groups within your organization that you know are dealing with sensitive data that need to restrict inheritance so only that group can discover and manage information within.
+However, you may have groups within your organization that have sensitive data that should restrict inheritance so only that group can discover and manage the information within.
 
 There's an option within every subcollection that is **Restrict permission inheritance** that stops this automatic process of inheritance. If you enable this option, its subcollections will no longer inherit permissions from the parent and will need to be added directly. However, collection admins that are automatically inherited from a parent collection can't be removed, so select your collection administrators carefully!
 
