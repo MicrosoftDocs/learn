@@ -21,7 +21,7 @@ In this exercise, you'll create an application that uses continuous recognition 
             using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             var stopRecognition = new TaskCompletionSource<int>();
             
-            FileStream fileStream = File.OpenWrite(fileInfo.DirectoryName, textFile);
+            FileStream fileStream = File.OpenWrite(textFile);
             StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
     
             speechRecognizer.Recognized += (s, e) =>
@@ -97,7 +97,7 @@ In this exercise, you'll create an application that uses continuous recognition 
                         using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
                         var stopRecognition = new TaskCompletionSource<int>();
                         
-                        FileStream fileStream = File.OpenWrite(fileInfo.DirectoryName, textFile);
+                        FileStream fileStream = File.OpenWrite(textFile);
                         StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
     
                         speechRecognizer.Recognized += (s, e) =>
