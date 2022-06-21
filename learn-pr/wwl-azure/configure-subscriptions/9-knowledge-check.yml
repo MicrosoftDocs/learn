@@ -35,7 +35,7 @@ quiz:
       explanation: "That's incorrect. This form of tracking is manual and prone to errors. Is there a more automated way to track resource usage?"
     - content: "Place the resources in different regions."
       isCorrect: false
-      explanation: "That's incorrect. Placing resources in different regions is not a complete solution."
+      explanation: "That's incorrect. Is there a better solution?"
     - content: "Apply a tag to each resource that includes the associated billing department."
       isCorrect: true
       explanation: "That's correct. Tags provide extra information, or metadata, about your resources. The team might create a tag that's named BillingDept whose value would be the name of the billing department. Azure policy ensures that the proper tags are assigned when resources are provisioned."
