@@ -1,15 +1,15 @@
-This unit looks at why applications integrate with Azure AD? Add applications to Azure AD to leverage one or more of the services it provides, including:
+This unit looks at why applications integrate with Azure AD? Add applications to Azure AD to apply one or more of the services it provides, including:
 
 - Application authentication and authorization.
 - User authentication and authorization.
-- Single sign-on (SSO) using federation or password.
+- Single-sign-on (SSO) using federation or password.
 - User provisioning and synchronization.
 - Role-based access control: Use the directory to define application roles to perform role-based authorization checks in an application.
 - OAuth authorization services: Used by Microsoft 365 and other Microsoft applications to authorize access to APIs/resources.
 - Application publishing and proxy: Publish an application from a private network to the internet.
-- Directory schema extension attributes: Extend the schema of service principal and user objects to store additional data in Azure AD.
+- Directory schema extension attributes: Extend the schema of service principal and user objects to store extra data in Azure AD.
 
-There are two representations of applications in Azure AD: [application objects](/azure/active-directory/develop/app-objects-and-service-principals) and service principals. The next two sections explain each, as well as how they interact with one another in the Azure portal.
+There are two representations of applications in Azure AD: [application objects](/azure/active-directory/develop/app-objects-and-service-principals) and service principals. The next two sections explain each, and how they interact with one another in the Azure portal.
 
 ## What are application objects and where do they come from?
 
@@ -102,7 +102,7 @@ For more detailed information on the service principal and application objects, 
 
 ## Adding a new app registration
 
-:::image type="content" source="../media/register-new-app.png" alt-text="Diagram of therelationship between app objects and service principals, focusing on process flow.":::
+:::image type="content" source="../media/register-new-app.png" alt-text="Diagram of the relationship between app objects and service principals, focusing on process flow.":::
 
 **Process flow of the diagram**
 
@@ -114,13 +114,13 @@ For more detailed information on the service principal and application objects, 
 
 ## Who has permission to add applications to my Azure AD instance?
 
-While there are some tasks that only Global Administrators can do by default (such as adding applications from the app gallery and configuring an application to use the Application Proxy), you can also assign roles like Application Administrator, and Cloud Application Administrator to perform these task. You **must remember** that by default all users in your directory have rights to register application objects they are developing, and they have discretion over which applications they share / give access to their organizational data through consent. When the first user in your directory signs in to an application and grants consent, that will create a service principal in your tenant; otherwise, the consent grant information will be stored on the existing service principal.
+While there are some tasks that only Global Administrators can do by default (such as adding applications from the app gallery and configuring an application to use the Application Proxy), you can also assign roles like Application Administrator, and Cloud Application Administrator to perform these tasks. You **must remember** that by default all users in your directory have rights to register application objects they're developing, and they have discretion over which applications they share / give access to their organizational data through consent. When the first user in your directory connects to an application, and grants consent, that will create a service principal. Otherwise, the consent grant information will be stored on the existing service principal.
 
 Allowing users to register and consent to applications might initially sound concerning, but keep the following in mind:
 
 - Applications have been able to leverage Windows Server Active Directory for user authentication for many years without requiring the application to be registered or recorded in the directory. Now the organization will have improved visibility to exactly how many applications are using the directory and for what purpose.
-- Delegating these responsibilities to users negates the need for an admin-driven application registration and publishing process. With Active Directory Federation Services (AD FS), an admin likely had to add an application as a relying party on behalf of their developers. Now developers can self-service.
-- Users signing in to applications using their organization accounts for business purposes is a good thing. If they subsequently leave the organization, they will automatically lose access to their account in the application they were using.
+- Delegating these responsibilities to users negates the need for an admin-driven application registration and publishing process. With Active Directory Federation Services (AD FS), an admin likely had to add an application as a relying party on behalf of their developers. Now developers can deploy themselves (self-service).
+- Users signing in to applications using their organization accounts for business purposes is a good thing. If they subsequently leave the organization, they'll automatically lose access to their account in the application they were using.
 - Having a record of what data was shared with which application is a good thing. Data is more transportable than ever and it's useful to have a clear record of who shared what data with which applications.
 - API owners who use Azure AD for OAuth decide exactly what permissions users are able to grant to applications and which permissions require an admin to agree to. Only admins can consent to larger scopes and more significant permissions, while user consent is scoped to the users' own data and capabilities.
 - When a user adds or allows an application to access their data, the event can be audited. You can view the Audit Reports within the Azure portal to determine how an application was added to the directory.
@@ -154,6 +154,7 @@ When it comes to developing apps, developers can choose to configure their app t
 In the Azure portal, you can configure your app to be single-tenant or multi-tenant by setting the audience as follows:
 
 ***Specific app access**
+
 | Audience | Single/multi-tenant | Who can sign in |
 | :----- | :----- | :----- |
 | Accounts in this directory only | Single tenant | All user and guest accounts in your directory can use your application or API. *Use this option if your target audience is internal to your organization*. |
@@ -166,4 +167,4 @@ Building great multi-tenant apps can be challenging because of the number of dif
 
 - Test your app in a tenant that has configured Conditional Access policies.
 - Follow the principle of least user access to ensure that your app only requests permissions it actually needs.
-- Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they are agreeing to when they attempt to use your app's APIs. For more information, see the best practices section in the permissions guide.
+- Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs. For more information, see the best practices section in the permissions guide.

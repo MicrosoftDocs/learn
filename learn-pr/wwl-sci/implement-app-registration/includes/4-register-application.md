@@ -4,13 +4,13 @@ Registering your application establishes a trust relationship between your app a
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global Administrator account.
 2.  Open the portal menu and then select **Azure Active Directory**.
-3.  On the **Azure Active Directory** blade, under **Manage**, select **App registrations.**
+3.  On the **Azure Active Directory** screen, under **Manage**, select **App registrations.**
 4.  On the **App registrations** page, on the menu, select **+ New registration**.
-5.  On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
+5.  On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.
 
-:::image type="content" source="../media/register-application.png" alt-text="Screenshot of the Register an application screen with the name and default settings highlighted.":::
+     :::image type="content" source="../media/register-application.png" alt-text="Screenshot of the Register an application screen with the name and default settings highlighted.":::
 
-6.  When complete, you will be directed to the **Demo app** screen.
+6.  When complete, you'll be directed to the **Demo app** screen.
 
 ## Add a redirect URI
 
@@ -33,11 +33,11 @@ To configure application settings based on the platform or device you're targeti
 
      | Platform | Configuration settings |
      | :----- | :----- |
-     | Web | Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication.Select this platform for standard web applications that run on a server. |
+     | Web | Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication. Select this platform for standard web applications that run on a server. |
      | Single-page application | Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication.Select this platform if you're building a client-side web app in JavaScript or with a framework like Angular, Vue.js, React.js, or Blazor WebAssembly. |
      | iOS/macOS | Enter the app **Bundle ID**, found in XCode in *Info.plist* or Build Settings.A redirect URI is generated for you when you specify a Bundle ID. |
      | Android | Enter the app **Package name**, which you can find in the AndroidManifest.xml file, and generate and enter the **Signature hash**.A redirect URI is generated for you when you specify these settings. |
-     | Mobile and desktop applications | Select one of the **Suggested redirect URIs** or specify a **Custom redirect URI**.For desktop applications, we recommend:https://login.microsoftonline.com/common/oauth2/nativeclient Select this platform for mobile applications that aren't using the latest Microsoft Authentication Library (MSAL) or are not using a broker. Also select this platform for desktop applications. |
+     | Mobile and desktop applications | Select one of the **Suggested redirect URIs** or specify a **Custom redirect URI**.For desktop applications, we recommend:https://login.microsoftonline.com/common/oauth2/nativeclient Select this platform for mobile applications that aren't using the latest Microsoft Authentication Library (MSAL) or aren't using a broker. Also select this platform for desktop applications. |
 
 5.  Select **Configure** to complete the platform configuration.
 
@@ -96,8 +96,8 @@ First, follow these steps to create an example scope named Employees.Read.All:
      | Who can consent | Whether this scope can be consented to by users or if admin consent is required. Select Admins only for higher-privileged permissions. | Admins and users |
      | Admin consent display name | A short description of the scope's purpose that only admins will see. | Read-only access to employee records |
      | Admin consent description | A more detailed description of the permission granted by the scope that only admins will see. | Allow the application to have read-only access to all employee data. |
-     | User consent display name | A short description of the scope's purpose. Shown to users only if you set Who can consent to Admins and users. | Read-only access to your employee records |
-     | User consent description | A more detailed description of the permission granted by the scope. Shown to users only if you set Who can consent to Admins and users. | Allow the application to have read-only access to your employee data. |
+     | User consent display name | A short description of the scope's purpose. Shown to users only if you set the *Who can consent to Admins and users*. | Read-only access to your employee records |
+     | User consent description | A more detailed description of the permission granted by the scope. Shown to users only if you set the *Who can consent to Admins and users*. | Allow the application to have read-only access to your employee data. |
 
 7.  Set the **State** to **Enabled**, and then select **Add scope**.
 8.  (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can *pre-authorize* the client application to access your web API. Pre-authorize *only* those client applications you trust since your users won't have the opportunity to decline consent.
@@ -136,7 +136,7 @@ For example, if your web API's application ID URI is `https://contoso.com/api` a
 
 ### Using the exposed scopes
 
-Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+Next, you'll configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
 
 Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration.
 
