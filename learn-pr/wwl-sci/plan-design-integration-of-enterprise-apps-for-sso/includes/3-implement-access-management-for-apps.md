@@ -27,7 +27,7 @@ Here, you’ll add an Enterprise app that you can use for the exercise.
     
 5.  In the **Browse Azure AD Gallery (Preview)** blade, in the **Search application** box, enter **GitHub**.
     
-    :::image type="content" source="../media/azure-active-directory-gallery-search-.png" alt-text="Screenshot of the Browse Azure AD Gallery screen with the search box highlighted.":::
+    :::image type="content" source="../media/azure-active-directory-gallery-search.png" alt-text="Screenshot of the Browse Azure AD Gallery screen with the search box highlighted.":::
     
 6.  In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
 7.  In the **GitHub Enterprise Cloud – Enterprise Account**, review the settings and then select **Create**.

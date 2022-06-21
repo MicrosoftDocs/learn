@@ -1,4 +1,4 @@
-In addition to the existing investigation of OAuth apps connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, and other OAuth apps. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enteprise Application.
+In addition to the existing investigation of OAuth apps connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, and other OAuth apps. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enterprise Application.
 
 ## Create a new OAuth app policy
 
@@ -15,5 +15,5 @@ In addition to the existing investigation of OAuth apps connected to your enviro
 6. You can set the policy based on the group memberships of the users who authorized the apps.
      - For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
 
-### Contol policies
+### Control policies
 Alternatively, you can also create the policy by selecting **Control** followed by **Policies**. Then select **Create policy** followed by **OAuth app policy**.

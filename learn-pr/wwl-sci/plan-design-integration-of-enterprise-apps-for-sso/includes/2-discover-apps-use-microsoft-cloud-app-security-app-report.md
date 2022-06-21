@@ -22,13 +22,13 @@ Microsoft Defender for Cloud Apps integrates visibility with your cloud by:
 
 ### Cloud Discovery
 
-:::image type="content" source="../media/cloud-discovery-screenshot.png" alt-text="Screenshot of the M D C A Cloud Discovery report in the Azure Portal. Report shows how many apps have been discovered.":::
+:::image type="content" source="../media/cloud-discovery-screenshot.png" alt-text="Screenshot of the M D C A Cloud Discovery report in the Azure portal. Report shows how many apps have been discovered.":::
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Microsoft Defender for Cloud Apps log collectors to periodically forward your logs.
 
 **Review the Cloud Discovery Dashboard**
 
-The first thing you should do to get a general picture of your Cloud Discovery apps is review the following information in the Cloud Discovery Dashboard:
+The first thing you should do to get a general picture of your Cloud Discovery apps, is review the following information in the Cloud Discovery Dashboard:
 
 - First look at the overall cloud app use in your organization in the High-level usage overview.
 - Then, dive one level deeper to see which are the top categories used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
@@ -42,12 +42,12 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 -  **App tag** - Select whether the app was sanctioned or unsanctioned or not tagged. Additionally, you can create a custom tag for your app and then use it to filter for specific types of apps.
 -  **Apps and domains** - Enables you to search for specific apps or apps used in specific domains.
 -  **Categories** - The categories filter, located on the left of the page, enables you to search for types of apps according to app categories. Example categories include social network apps, cloud storage apps, and hosting services. You can select multiple categories at a time, or a single category, then apply the basic and advanced filters on top.
--  **Compliance risk factor** - Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
--  **General risk factor** - Lets you search for general risk factors such as consumer popularity, data center locale, and more.
+-  **Compliance risk factor** - Search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
+-  **General risk factor** - Search for general risk factors such as consumer popularity, data center locale, and more.
 -  **Risk score** - Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Microsoft Defender for Cloud Apps. For more information, see Working with the risk score.
 -  **Security risk factor** - Enables you to filter based on specific security measures (such as Encryption at rest, multifactor authentication, etc.).
 -  **Usage** - Lets you filter based on the usage statistics of this app. Usage such as apps with less than or more than a specified number of data uploads, apps with more than or less than a specified number of Users.
--  **Legal risk factor** - Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users. Examples include GDPR ready cloud apps, DMCA, and data retention policy.
+-  **Legal risk factor** - Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users. Examples include safe-customer-data ready cloud apps, DMCA, and data retention policy.
 
 ### Sanctioning and unsanctioning an app
 
@@ -55,7 +55,7 @@ You can use Microsoft Defender for Cloud Apps to sanction or unsanction apps in 
 
 ## Active Directory Federation Services
 
-If you have an on-premises directory that contains user accounts, you likely have many applications to which users authenticate. Each of these apps is configured for users to access using their identities. Users may also authenticate directly with your on-premises Active Directory. Active Directory Federation Services (AD FS) is a standards-based on-premises identity service. AD FS extends the ability to use single sign-on (SSO) functionality between trusted business partners without requiring users to sign in separately to each application. This is known as federation. Many organizations have software as a service (SaaS) or custom line-of-business (LOB) apps federated directly to AD FS, alongside Microsoft 365 and Azure AD-based apps.
+If you have an on-premises directory that contains user accounts, you likely have many applications to which users authenticate. Each of these apps is configured for users to access using their identities. Users may also authenticate directly with your on-premises Active Directory. Active Directory Federation Services (AD FS) is a standards-based on-premises identity service. AD FS extends the ability to use single-sign-on (SSO) functionality between trusted business partners without requiring users to sign in separately to each application - federation. Many organizations have software as a service (SaaS) or custom line-of-business (LOB) apps federated directly to AD FS, alongside Microsoft 365 and Azure AD-based apps.
 
 :::image type="content" source="../media/app-integration-before-migration.png" alt-text="Screenshot of the Applications available directly on-premises. Other supporting data on app usage.":::
 
@@ -67,7 +67,7 @@ Many organizations use AD FS to provide SSO to cloud applications. Moving your A
 
 Sometimes the organization may be using alternate on-premises or cloud identity providers, such as SiteMinder, Oracle Access Manager, PingFederate, etc. Most of them are on-premises installations. Some cloud providers, such as Okta and OneLogin, offer similar services.
 
-The AD FS application activity report in the Azure portal enables you to quickly identify which applications you can migrate to Azure AD. It assesses all AD FS applications for compatibility with Azure AD, checks for any issues, and gives guidance on preparing individual applications for migration. With the AD FS application activity report, you can discover AD FS applications and scope your migration. The AD FS application activity report lists all AD FS applications in your organization that have had an active user login in the last 30 days. The activity data is available to users who are assigned any of these admin roles: global administrator, global reader, report reader, security reader, application administrator, or cloud application administrator.
+The AD FS application activity report in the Azure portal enables you to quickly identify which applications you can migrate to Azure AD. It assesses all AD FS applications for compatibility with Azure AD, checks for any issues, and gives guidance on preparing individual applications for migration. With the AD FS application activity report, you can discover AD FS applications and scope your migration. The AD FS application activity report lists all AD FS applications in your organization that have had an active user logged in within the last 30 days. The activity data is available to users who are assigned any of these admin roles: global administrator, global reader, report reader, security reader, application administrator, or cloud application administrator.
 
 ## Types of apps to migrate
 
@@ -75,14 +75,14 @@ Migrating all your application authentication to Azure AD is optimal, as it give
 
 There are two types of applications to migrate:
 
-1. SaaS applications, which are generally procured by the organization.
+1. SaaS applications, which are procured by the organization.
 2. Line-of-business applications, which are developed by the organization and not meant to be used by other companies.
 
      Your applications may use modern or legacy protocols for authentication. Most SaaS applications use modern authentication protocols and provide guidance on how to enable SSO. Consider first migrating applications that use modern authentication protocols (such as SAML and Open ID Connect). These apps can be reconfigured to authenticate with Azure AD via either a built-in connector in our App Gallery, or by registering the application in Azure AD. Integrate apps using older protocols by using [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) and/or Azure AD Domain Services.
 
 ## Discover AD FS applications that can be migrated
 
-The AD FS application activity report is available in the Azure portal under Azure AD **Usage &amp; insights** reporting. The AD FS application activity report analyzes each AD FS application to determine whether it can be migrated as-is or additional review is needed.
+The AD FS application activity report is available in the Azure portal under Azure AD **Usage and insights** reporting. The AD FS application activity report analyzes each AD FS application to determine whether it can be migrated as-is or after review.
 
 1.  Sign in to the Azure portal with an admin role that has access to AD FS application activity data (global administrator, report reader, security reader, application administrator, or cloud application administrator).
 2.  Select **Azure Active Directory**, and then select **Enterprise applications**.
