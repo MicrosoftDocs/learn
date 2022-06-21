@@ -112,9 +112,10 @@ In the Exposure & mitigations section, review the list of specific actionable re
 
 - Security updates—deployment of supported software security updates for vulnerabilities found on onboarded devices
 - Supported security configurations
-Cloud-delivered protection
-Potentially unwanted application (PUA) protection
-Real-time protection
+    - Cloud-delivered protection
+    - Potentially unwanted application (PUA) protection
+    - Real-time protection
+
 Mitigation information in this section incorporates data from threat and vulnerability management, which also provides detailed drill-down information from various links in the report.
 
 ### Set up email notifications for report updates
@@ -122,22 +123,22 @@ You can set up email notifications that will send you updates on threat analytic
 
 To set up email notifications for threat analytics reports, perform the following steps:
 
-- Select Settings in the Microsoft 365 Defender sidebar. Select Microsoft 365 Defender from the list of settings.
+1. Select Settings in the Microsoft 365 Defender sidebar. Select Microsoft 365 Defender from the list of settings.
 
-- Choose Email notifications > Threat analytics, and select the button, + Create a notification rule. A flyout will appear.
+2. Choose Email notifications > Threat analytics, and select the button, + Create a notification rule. A flyout will appear.
 
-- Follow the steps listed in the flyout. First, give your new rule a name. The description field is optional, but a name is required. You can toggle the rule on or off using the checkbox under the description field.
+3. Follow the steps listed in the flyout. First, give your new rule a name. The description field is optional, but a name is required. You can toggle the rule on or off using the checkbox under the description field.
 
 > [!NOTE]
 The name and description fields for a new notification rule only accept English letters and numbers. They don't accept spaces, dashes, underscores, or any other punctuation.
 
 
-- Choose which kind of reports you want to be notified about. You can choose between being updated about all newly published or updated reports, or only those reports which have a certain tag or type.
+4. Choose which kind of reports you want to be notified about. You can choose between being updated about all newly published or updated reports, or only those reports that have a certain tag or type.
 
-- Add at least one recipient to receive the notification emails. You can also use this screen to check how the notifications will be received, by sending a test email.
-Screenshot of the recipients screen. There are three recipients listed, and a test email has been sent, as indicated by a green checkmark
+5. Add at least one recipient to receive the notification emails. You can also use this screen to check how the notifications will be received, by sending a test email.
+<!-- missing Screenshot of the recipients screen. There are three recipients listed, and a test email has been sent, as indicated by a green checkmark -->
 
-- Review your new rule. If there's anything you would like to change, select the Edit button at the end of each subsection. Once your review is complete, select the Create rule button.
+6. Review your new rule. If there's anything you would like to change, select the Edit button at the end of each subsection. Once your review is complete, select the Create rule button.
 
 Your new rule has been successfully created. Select the Done button to complete the process and close the flyout. Your new rule will now appear in the list of Threat analytics email notifications.
 

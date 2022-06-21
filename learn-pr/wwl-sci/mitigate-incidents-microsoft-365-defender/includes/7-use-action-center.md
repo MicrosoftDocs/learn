@@ -23,7 +23,7 @@ The Action Center consists of pending and historical items:
 
 Select Automated Investigations, then Action center.
 
-:::image type="content" source="../media/action-center.png" alt-text="Screen shot of the Microsoft 365 Defender Action center.":::
+:::image type="content" source="../media/action-center.png" alt-text="Screenshot of the Microsoft 365 Defender Action center.":::
 
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be Malicious, Suspicious, or No threats found depending on:
 
@@ -55,7 +55,7 @@ To review completed actions:
 
 ### Undo completed actions
 
-If you’ve determined that a device or a file isn't a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. You can undo any of the following actions:
+You’ve determined that a device or a file isn't a threat. You can undo remediation actions that were taken, whether those actions were taken automatically or manually. You can undo any of the following actions:
 
 - Source
 
@@ -141,12 +141,12 @@ Same submissions in a 15-minute period: One submission
 
 ### Report suspicious content to Microsoft
 
-On the Submissions page, verify that the Emails or Email attachments or URLs tab is selected based on the type of content you want to report, and then click Submit to Microsoft for analysis icon. Submit to Microsoft for analysis.
+On the Submissions page, verify that the Emails, Email attachments, or URLs tab is selected based on the type of content you want to report. And then select the Submit to Microsoft for analysis icon. Submit to Microsoft for analysis.
 
 Use the Submit to Microsoft for analysis flyout that appears to submit the respective type of content (email, URL, or email attachment).
 
 > [!NOTE]
-File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
+> File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
 
 ### Notify users from within the portal
 
@@ -162,20 +162,19 @@ The reported message will be marked as a false positive or a false negative. An 
 
 - In the Add the network message ID or upload the email file section, use one of the following options:
 
-1. Add the email network message ID: This is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
+1. Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
 
-2. Upload the email file (.msg or .eml): Click Browse files. In the dialog that opens, find and select the .eml or .msg file, and then click Open.
+2. Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
+
 In the Choose a recipient who had an issue box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
 - In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-Shouldn't have been blocked (False positive)
-Should have been blocked (False negative): In the The email should have been categorized as section that appears, select one of the following values (if you're not sure, use your best judgment):
-Phish
-Malware
-Spam
+1. Shouldn't have been blocked (False positive)
+2. Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+Phish, Malware, or Spam
 
-- When you're finished, click Submit.
+- When you're finished, select Submit.
 
 
 ### Send a suspect URL to Microsoft
@@ -186,26 +185,25 @@ Spam
 
 - In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-Shouldn't have been blocked (False positive)
-Should have been blocked (False negative): In the This URL should have been categorized as section that appears, select one of the following values (if you're not sure, use your best judgment):
-Phish
-Malware
-When you're finished, click Submit.
+1. Shouldn't have been blocked (False positive)
+2. Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+Phish, Malware
+
+- When you're finished, select Submit.
 
 
 ### Submit a suspected email attachment to Microsoft
 - In the Select the submission type box, select Email attachment from the dropdown list.
 
-- In the File section that appears, click Browse files. In the dialog that opens, find and select the file, and then click Open.
+- In the File section that appears, select Browse files. In the dialog that opens, find and select the file, and then select Open.
 
 - In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-Shouldn't have been blocked (False positive)
-Should have been blocked (False negative): In the This file should have been categorized as section that appears, select one of the following values (if you're not sure, use your best judgment):
-Phish
-Malware
+1. Shouldn't have been blocked (False positive)
+2. Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+Phish, Malware
 
-- When you're finished, click Submit.
+- When you're finished, select Submit.
 
 > [!NOTE]
 If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see Manage quarantined messages and files as an admin.
@@ -214,29 +212,30 @@ If malware filtering has replaced the message attachments with the Malware Alert
 
 On the Submissions page, verify that the Emails, URL, or Email attachment tab is selected.
 
-You can sort the entries by clicking on an available column header. Click Customize columns to show a maximum of seven columns. The default values are marked with an asterisk (*):
+You can sort the entries by clicking on an available column header. Select Customize columns to show a maximum of seven columns. The default values are marked with an asterisk (*):
 
-Submission name*
-Sender*
-Recipient
-Date submitted*
-Reason for submitting*
-Status*
-Result*
-Filter verdict
-Delivery/Block reason
-Submission ID
-Network Message ID/Object ID
-Direction
-Sender IP
-Bulk compliant level (BCL)
-Destination
-Policy action
-Submitted by
-Phish simulation
-Tags*
-Allow
-When you're finished, click Apply.
+ - Submission name*
+ - Sender*
+ - Recipient
+ - Date submitted*
+ - Reason for submitting*
+ - Status*
+ - Result*
+ - Filter verdict
+ - Delivery/Block reason
+ - Submission ID
+ - Network Message ID/Object ID
+ - Direction
+ - Sender IP
+ - Bulk compliant level (BCL)
+ - Destination
+ - Policy action
+ - Submitted by
+ - Phish simulation
+ - Tags*
+ - Allow
+  
+When you're finished, select Apply.
 
 
 ### Admin submission result details
@@ -252,28 +251,28 @@ If an override was found, the result should be available in several minutes. If 
 ### View user submissions to Microsoft
 If you've deployed the Report Message add-in, the Report Phishing add-in, or people use the built-in reporting in Outlook on the web, you can see what users are reporting on the User reported message tab.
 
-- On the Submissions page, select the User reported messages tab.
+On the Submissions page, select the User reported messages tab.
 
-- You can sort the entries by clicking on an available column header. Click Customize columns to show the options. The default values are marked with an asterisk (*):
+You can sort the entries by clicking on an available column header. Select Customize columns to show the options. The default values are marked with an asterisk (*):
 
-Email subject*
-Reported by*
-Date reported*
-Sender*
-Reported reason*
-Result*
-Message reported ID
-Network Message ID
-Sender IP
-Reported from
-Phish simulation
-Converted to admin submission
-Tags*
-Marked as*
-Marked by
-Date marked
+ - Email subject*
+ - Reported by*
+ - Date reported*
+ - Sender*
+ - Reported reason*
+ - Result*
+ - Message reported ID
+ - Network Message ID
+ - Sender IP
+ - Reported from
+ - Phish simulation
+ - Converted to admin submission
+ - Tags*
+ - Marked as*
+ - Marked by
+ - Date marked
 
-- When you're finished, click Apply.
+When you're finished, select Apply.
 
 
 
@@ -286,7 +285,7 @@ Once a user submits a suspicious email to the custom mailbox, the user and admin
 ### Converting user reported messages from the custom mailbox into an admin submission
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
 
-On the User reported messages tab, select a message in the list, click Submit to Microsoft for analysis, and then select one of the following values from the dropdown list:
+On the User reported messages tab, select a message in the list, select Submit to Microsoft for analysis, and then select one of the following values from the dropdown list:
 
 - Report clean
 - Report phishing

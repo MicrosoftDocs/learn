@@ -20,7 +20,7 @@ Microsoft 365 Defender applies correlation analytics and aggregates all related 
 
 The Incidents queue shows a collection of flagged incidents from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
-:::image type="content" source="../media/incidents-queue.png" alt-text="Screen shot of the Microsoft 365 Defender Incident Queue.":::
+:::image type="content" source="../media/incidents-queue.png" alt-text="Screen shot of the Microsoft 365 Defender Incident Queue." lightbox="../media/incidents-queue.png":::
 
 By default, the queue in the Microsoft 365 Defender portal displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
 
@@ -84,19 +84,19 @@ The portal pages provide preview information for most list-related data.
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 
-:::image type="content" source="../media/preview-options-from-list.png" alt-text="Screen shot of Incident Preview information options.":::
+:::image type="content" source="../media/preview-options-from-list.png" alt-text="Screen shot of Incident Preview information options." lightbox="../media/preview-options-from-list.png":::
 
 **Circle**
 
 Selecting the circle will open a details window on the right side of the page with a preview of the line item with an option to open the full page of information.
 
-:::image type="content" source="../media/incident-circle.png" alt-text="Screen shot of Incidents details window.":::
+:::image type="content" source="../media/incident-circle.png" alt-text="Screen shot of Incidents details window." lightbox="../media/incident-circle.png":::
 
 **Greater than symbol**
 
 If there are related records that can be displayed, selecting the greater than sign will display the records below the current record.
 
-:::image type="content" source="../media/greater-than.png" alt-text="Screen shot of Related Incident records.":::
+:::image type="content" source="../media/greater-than.png" alt-text="Screen shot of Related Incident records." lightbox="../media/greater-than.png":::
 
 **Link**
 
