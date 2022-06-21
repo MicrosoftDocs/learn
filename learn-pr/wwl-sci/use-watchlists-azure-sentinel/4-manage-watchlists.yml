@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-watchlists-azure-sentinel.manage-watchlists
-title: Manage Watchlists
+title: Manage watchlists
 metadata:
-  title: Manage Watchlists
-  description: "Manage Watchlists"
+  title: Manage watchlists
+  description: "Manage watchlists"
   ms.date: 06/21/2022
   author: wwlpublish
   ms.author: kelawson

@@ -14,21 +14,21 @@ Edit a watchlist to edit or add an item to the watchlist.
 
 1. To edit an existing watchlist item,
 
-- Select the checkbox of that watchlist item.
+    1. Select the checkbox of that watchlist item.
 
-- Edit the item.
+    2. Edit the item.
 
-- Select Save.
+    3. Select Save.
 
-- Select Yes at the confirmation prompt.
+    4. Select Yes at the confirmation prompt.
 
 1. To add a new item to your watchlist,
 
-- Select Add new.
+    1. Select Add new.
 
-- Fill in the fields in the Add watchlist item panel.
+    2. Fill in the fields in the Add watchlist item panel.
 
-- At the bottom of that panel, select Add.
+    3. At the bottom of that panel, select Add.
 
 ## Bulk update a watchlist
 
@@ -52,4 +52,4 @@ To bulk update a watchlist,
 
 1. If you get an error, fix the issue in the file. Then select Reset and try the file upload again.
 
-1. Select Next: Review and update > Update.
+1. Select **Next: Review and update > Update**.
