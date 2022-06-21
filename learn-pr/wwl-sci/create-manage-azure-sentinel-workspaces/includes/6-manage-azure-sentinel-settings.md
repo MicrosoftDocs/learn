@@ -4,5 +4,5 @@ Microsoft Sentinel Environment Settings are managed in two areas.  In Microsoft 
 
 Data retention at the workspace level can be configured from 30 to 730 days (two years) for all workspaces unless they're using the legacy Free pricing tier.  To adjust the retention days, select the workspace settings in the Microsoft Sentinel Settings area.  The next screen is in the Log Analytics portal.  Select the "Usage and estimated costs" tab.  At the top of the page, select the "Retention" button.  A window will open, allowing for the adjustment of the retention days.
 
-:::image type="content" source="../media/retention.png" alt-text="Screen shot of setting the data retention":::
+:::image type="content" source="../media/retention.png" alt-text="Screenshot of setting the data retention.":::
 
