@@ -5,7 +5,7 @@ You learned how to describe the benefits and usage of:
  -  Implement automated inspection of health.
  -  Create and configure events.
  -  Configure notifications.
- -  Create service hooks to monitor pipeline.
+ -  Create service hooks to monitor the pipeline.
 
 ## Learn more
 
