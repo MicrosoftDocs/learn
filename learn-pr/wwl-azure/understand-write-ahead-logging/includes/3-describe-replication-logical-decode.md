@@ -8,7 +8,7 @@ When you configure high availability for Azure Database for PostgreSQL flexible 
 
 Each availability zone consists of one or more data centers. Availability zones have their own power supplies, cooling systems, network infrastructure, etc., making them independent of each other. Three copies of data files and WAL log files are stored on locally redundant storage within each availability zone, providing physical isolation between primary and standby servers. If one availability zone fails, the other two will likely keep working. Availability zones within a region are connected by fast fibre networks with round-trip latency of less than 2 milliseconds.
 
-:::image type="content" source="../media/availability-zones.png" alt-text="Image showing availability zones within a region are connected by fast fibre networks." lightbox="../media/availability-zones.png":::
+:::image type="content" source="../media/availability-zones.png" alt-text="Screenshot showing availability zones within a region are connected by fast fibre networks." lightbox="../media/availability-zones.png":::
 
 > [!NOTE]
 > Not all regions have availability zones.
@@ -35,7 +35,7 @@ You can add high availability for an existing database server. If you're enablin
 From the Azure portal:
 
 1. Navigate to your Azure Database for PostgreSQL server.
-1. From the **Overview** blade, select your current **Configuration**. The **Compute + Storage** blade is displayed.
+1. From the **Overview** section, select your current **Configuration**. The **Compute + Storage** blade is displayed.
 1. Under High availability, select **High Availability (zone redundant)** check box to enable high availability. High availability isn't supported for Burstable tier.
 
 It's important to note that high availability is a disaster recovery option. You can't use the standby server for any other purpose, such as allowing access to read-only databases. You can, however, configure replication between two Azure Database for PostgreSQL servers using a publisher and subscriber model. This maintains two servers with data being replicated between them. You then have full access to the subscriber server and can use the databases for any purpose. You'll practice this in the exercise at the end of this module.

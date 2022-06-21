@@ -24,7 +24,7 @@ In this exercise you'll configure logical replication, which is native to Postgr
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Development**.
-    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the blade.
+    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the section.
     1. Availability zone - 1. If availability zones aren't supported, leave as No preference.
     1. High availability - leave unchecked.
     1. In **admin username**, enter **demo**.
@@ -48,7 +48,7 @@ In this exercise you'll configure logical replication, which is native to Postgr
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Development**.
-    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the blade.
+    1. Compute + storage - **Burstable**. Select **Configure server** and examine the configuration options. Don't make any changes and close the section.
     1. Availability zone - 2. If availability zones aren't supported, leave as No preference.
     1. High availability - leave unchecked.
     1. In **admin username**, enter **demo**.
@@ -72,7 +72,7 @@ For both the publisher and subscriber servers:
 
 ## Set up the publisher
 
-1. Open Azure Data Studio and connect to the publisher server. (Copy the server name from the Overview blade.)
+1. Open Azure Data Studio and connect to the publisher server. (Copy the server name from the Overview section.)
 1. Open the script **Lab6_Replication.sql** and connect to the server.
 1. Highlight and run the section **Grant the admin user replication permission**.
 1. Highlight and run the section **Create zoodb database**.

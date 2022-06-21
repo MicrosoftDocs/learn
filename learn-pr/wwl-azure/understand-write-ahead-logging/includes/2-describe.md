@@ -21,6 +21,6 @@ The primary purpose of the write-ahead log (WAL) is to ensure database consisten
 Azure Database for PostgreSQL is a service, which doesn't allow access to the underlying file system. It does, however, include automatic full backups of the server including all databases. This allows you to recreate your data to a point in time. Backups are scheduled automatically and are done once a day. If you need to restore, you can restore up to the number of days you've specified for retaining backups, up to the maximum of 35 days. To specify how long backups should be retained for:
 
 1. In the Azure portal, navigate to your Azure Database for PostgreSQL flexible server.
-1. From the **Overview** blade, select your **Configuration**.
+1. From the **Overview** section, select your **Configuration**.
 1. Under Backups, find **Backup retention period (in days)**. The slider bar allows you to select the number of days you want backups to be retained.
 1. Select **Save** to retain your changes.

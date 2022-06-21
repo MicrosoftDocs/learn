@@ -1,9 +1,9 @@
-Azure Database for PostgreSQL writes all database changes to a log file before committing the changes to disk, and is called write-ahead logging. In this module you've learned how PostgreSQL prevents data loss in the event of a problem by using the write-ahead log. You've learned about high availability, and how this uses the write-ahead log to replicate your data. You'velearned about logical decoding, and how you can configure your server to stream data. You've also learned how to set up a second server, and replicate data from your main server to your second server to maintain a second copy of your data.
+Azure Database for PostgreSQL writes all database changes to a log file before committing the changes to disk, and is called write-ahead logging. In this module, you've learned how PostgreSQL prevents data loss in the event of a problem by using the write-ahead log. You've learned about high availability, and how this uses the write-ahead log to replicate your data. You've learned about logical decoding, and how you can configure your server to stream data. You've also learned how to set up a second server, and replicate data from your main server to your second server to maintain a second copy of your data.
 
-After completing this module, you're now to:
+After completing this module, you're able to:
 
-- Describe write-ahead logging
-- Understand replication and logical decoding
+- Describe write-ahead logging.
+- Understand replication and logical decoding.
 
 For more information about the topics covered in this module, see:
 
