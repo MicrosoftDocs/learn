@@ -28,7 +28,7 @@ Cloud Discovery uses your traffic logs to dynamically discover and analyze the c
 
 **Review the Cloud Discovery Dashboard**
 
-The first thing you should do to get a general picture of your Cloud Discovery apps, is review the following information in the Cloud Discovery Dashboard:
+The admin should review the information in the Cloud Discovery Dashboard first, to get a general picture of your Cloud Discovery apps.  Look for:
 
 - First look at the overall cloud app use in your organization in the High-level usage overview.
 - Then, dive one level deeper to see which are the top categories used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
