@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 6/2/2022
+  description: Learn about Microsoft Defender for Cloud and its capabilities. Learn how Defender for Cloud protects your multicloud environment and secures your online presence. You'll learn about Defender for Cloud's alerts and recommendations and how they protect you from cyberattacks.
+  ms.date: 06/21/2022
   author: ElazarK
   ms.author: elkrieger
   ms.topic: interactive-tutorial
