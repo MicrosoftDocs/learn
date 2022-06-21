@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-mysql.describe-isolation-levels
+title: Describe isolation levels
+metadata:
+  title: Describe isolation levels
+  description: "Describe isolation levels"
+  ms.date: 06/20/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-describe-isolation-levels.md)]
