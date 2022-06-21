@@ -25,7 +25,7 @@ The basic steps, to create and add an identity to your app, are:
 3) Select **Identity** from the menu then select either **System assigned** or **User assigned**.
 4) Select the **+ Add** item and complete the wizard.
 
-You can perform a similar action using script within the CLI, PowerShell, or an ARM template.  Sample could look like:
+You can perform a similar action using script within the CLI, PowerShell, or with a template.  Sample could look like:
 
 **Using the CLI**
 ```
@@ -37,7 +37,7 @@ Or using **PowerShell** with the AZ.ManagedServiceIdentity module installed
 Update-AzFunctionApp -Name <app-name> -ResourceGroupName <group-name> -IdentityType UserAssigned -IdentityId $userAssignedIdentity.Id
 ```
 
-Or within and **ARM template**
+Or within a **template**
 ```
 "identity": {
     "type": "UserAssigned",

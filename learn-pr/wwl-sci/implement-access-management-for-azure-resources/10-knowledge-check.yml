@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What tool is available in Azure to help administrators the ability to provide comprehensive visibility into permissions assigned to all identities – users and workloads – actions, and resources across cloud infrastructures and identity providers. It detects, right-sizes, and monitors unused and excessive permissions and enables Zero Trust security through least privilege access in Microsoft Azure, AWS, and GCP.?"
+  - content: "What tool is available in Azure to give administrators the ability to provide comprehensive visibility into permissions assigned to all identities – users and workloads – actions, and resources across cloud infrastructures and identity providers? It detects, right-sizes, and monitors unused and excessive permissions and enables Zero Trust security through least privilege access in Microsoft Azure, AWS, and GCP?"
     choices:
     - content: "Azure Monitor"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Microsoft Entra Permissions Management."
       isCorrect: true
       explanation: "Correct. CloudKnox was the original tool acquired by Microsoft. With permissions management you can detect and right-size permissions for your identities."
-  - content: "You want to assign the Azure role - Contributor - to a specific user.  What tools can you use to make this assignment."
+  - content: "You want to assign the Azure role - Contributor - to a specific user; what tools can you use to make this assignment?"
     choices:
     - content: "Azure portal, PowerShell, and CLI"
       isCorrect: true
