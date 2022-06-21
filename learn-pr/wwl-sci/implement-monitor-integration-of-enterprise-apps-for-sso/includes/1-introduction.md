@@ -5,18 +5,13 @@ In this module, you will learn how to implement token customizations and impleme
 In this module, you will:
 
 - Implement token customizations
-
 - Implement and configure consent settings
-
 - Integrate on-premises apps by using Azure AD application proxy
-
 - Integrate custom SaaS apps for SSO
-
 - Implement application user provisioning
-
+- Create and manage application collections
 - Monitor and audit access/sign-on to Azure AD-integrated enterprise applications
 
 ## Prerequisites
 
 none
-
