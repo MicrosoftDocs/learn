@@ -1,5 +1,5 @@
 
-The following graphic provides an overview of how Microsoft 365 Defender and Microsoft Sentinel are integrated in a Modern SOC.                                                                                                                                                                                   
+The following graphic provides an overview of how Microsoft 365 Defender and Microsoft Sentinel are integrated in a Modern Security Operations Center (SOC).                                                                                                                                                                                   
 
 :::image type="content" source="../media/security-operations.png" alt-text="Diagram that shows the layers and technologies of Security Operations.":::
 
