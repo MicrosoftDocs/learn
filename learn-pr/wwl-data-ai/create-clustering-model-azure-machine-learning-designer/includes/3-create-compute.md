@@ -13,29 +13,20 @@ In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expa
 > [!NOTE]
 > Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
 
-1. On the **Compute Instances** tab, add a new compute instance with the following settings:
-    - **Compute name**: *enter a unique name*
-    - **Location**: *Note the default. The compute instance's location is always created in the same location as the workspace.*
-    - **Virtual Machine type**: CPU
-    - **Virtual Machine size**: 
-        - Choose **Select from all options** 
-        - Search for and select **Standard_DS11_v2**
-    - Select **Create** 
-
-2. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings: 
+1. Navigate to the **Compute Clusters** tab and add a new compute cluster with the following settings: 
     - **Location**: *Select the same as your workspace. If that location is not listed, choose the one closest to you*
     - **Virtual Machine tier**: Dedicated
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: 
         - Choose **Select from all options** 
         - Search for and select **Standard_DS11_v2**
-    - Select **Next**
+1. Select **Next**
     - **Compute name**: *enter a unique name*
     - **Minimum number of nodes**: 0
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
     - **Enable SSH access**: Unselected
-    - Select **Create** 
+1. Select **Create** 
 
 > [!TIP]
 > After you finish the entire module, be sure to follow the **Clean Up** instructions at the end of the module to stop your compute resources. Stop your compute resources to ensure your subscription won't be charged. 
