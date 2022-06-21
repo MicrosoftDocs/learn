@@ -49,7 +49,7 @@ Create a GitHub Action for the build with the following steps:
             path: .
             dockerfile: './src/Services/Coupon/Coupon.API/Dockerfile.acr'
             repository: 'coupon.api'
-            tags: 'linux-latest'
+            tags: 'linux-net6-coupon'
             push: true
     ```
 

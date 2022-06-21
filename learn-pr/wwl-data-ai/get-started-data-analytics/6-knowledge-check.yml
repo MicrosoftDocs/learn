@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following aggregate functions can't be applied to a column with a string data type?"
+    choices:
+    - content: "Count"
+      isCorrect: false
+      explanation: "That's incorrect. The number of text values in a dataset can be counted."
+    - content: "Count distinct"
+      isCorrect: false
+      explanation: "That's incorrect. Count distinct can be used to count the number of distinct text values."
+    - content: "Sum"
+      isCorrect: true
+      explanation: "That's correct. Sum can only be applied to a column with numeric data, and isn't applicable to string data."
+  - content: "To uncover the revenue of the New York store in your dataset, what approach would you use?"
+    choices:
+    - content: "Group the dataset by the Store field, and summarize the Revenue field"
+      isCorrect: true
+      explanation: "That's correct. When you group on the Store field, the summary aggregation can then be applied."
+    - content: "Count the number of rows where the Store value is equal to New York"
+      isCorrect: false
+      explanation: "That's incorrect. The aggregation needs to be applied to the Revenue field to return the revenue value."
+    - content: "Delete all rows where the store isn't equal to New York and then summarize the Revenue field"
+      isCorrect: false
+      explanation: "That's incorrect. You don't need to delete the data, you can apply a grouping, and then summarize the data."
+  - content: "Which of the following columns in a dataset would be an appropriate use of a color scale indicator?"
+    choices:
+    - content: "Temperature"
+      isCorrect: true
+      explanation: "That's correct. Temperature data would be ideal for use with a color scale to display high and low values."
+    - content: "Day"
+      isCorrect: false
+      explanation: "That's incorrect. The Day column contains string values that wouldn't be suitable for a color scale."
+    - content: "LastName"
+      isCorrect: false
+      explanation: "That's incorrect. The LastName column contains string values that wouldn't be suitable for a color scale."
