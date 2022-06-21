@@ -31,7 +31,7 @@ Lineage enables easy troubleshooting and deeper analysis of analytics projects. 
 
 For example, you can detect the Azure Synapse Analytics pipeline that is responsible for the transformation of the data upstream of Power BI.
 
-![Screenshot showing lineage of a Power B I dashboard in the lineage view in Purview. Data comes from 5 sources and flows through 2 Synapse pipelines, through to 2 Power B I datasets, 2 Power B I reports, and finally one Power B I dashboard.](../media/purview-lineage.png)
+![Screenshot showing lineage of a Power B I dashboard. Data comes from 5 sources and flows through 2 Synapse pipelines,  2 Power B I datasets and reports, and one Power B I dashboard.](../media/purview-lineage.png)
 
 In the Purview Governance Portal, lineage is displayed from the asset you're currently viewing. 
 

@@ -18,7 +18,7 @@ You can fine-tune your search using the filters on the left side of the page. Fi
 
 ## Browse the Microsoft Purview Data Catalog
 
-Searching for specific assets is great if you know what you're looking for, but analysts and data consumers many not know exactly how their data estate is structured. The browse experience enables you to explore what data is available, either by collection or through traversing the hierarchy of each data source in the catalog.
+Searching for specific assets is great if you know what you're looking for, but analysts and data consumers may not know exactly how their data estate is structured. The browse experience enables you to explore what data is available, either by collection or through traversing the hierarchy of each data source in the catalog.
 
 To access the browse experience, select **Browse assets** from the governance portal home page.
 
@@ -26,7 +26,7 @@ To access the browse experience, select **Browse assets** from the governance po
 
 You can browse the data catalog either by collection or by source type, depending on your needs. Browsing by either collection or source type allows you to see assets you have access to. Once you find the asset you're looking for, you can select it to see details on schema, lineage, and a detailed classification list.
 
-![Screenshot of Microsoft Purview Governance Portal interface, displaying browse button.](../media/purview-browse-object-type.png)
+![Screenshot of Microsoft Purview Governance Portal interface, displaying search by collection or source type interface options.](../media/purview-browse-object-type.png)
 
 Uniquely, browsing by source type allows you to see the hierarchies of data sources using an explorer view. This is a helpful and familiar way to navigate to see lists of scanned assets.
 
@@ -35,4 +35,4 @@ Uniquely, browsing by source type allows you to see the hierarchies of data sour
 
 Select an asset to see details about the properties, schema, lineage, contacts, and related assets.
 
-![Screenshot of asset details.](../media/purview-asset.png)
+![Screenshot of asset details displaying overview, properties, schema, lineage, contacts, and related.](../media/purview-asset.png)
