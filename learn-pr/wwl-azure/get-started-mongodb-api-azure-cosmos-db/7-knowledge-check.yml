@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: "You're creating an inventory database. You'll need to add a collection to store your current products. You would like to use the ProductID as your shard key.  How would you programmatically create this collection?"
     choices:
-    - content: "Use the *GetCollection* function and assign *ProductID* to the *shardkey* parameter"
+    - content: "Use the *GetCollection* function and assign *ProductID* to the *shardKey* parameter."
       isCorrect: false
-      explanation: "Incorrect. *GetCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardkey* parameter"
-    - content: "Use the extended database run command function with the respective customAction, collection and shardKey parameters"
+      explanation: "Incorrect. *GetCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardKey* parameter"
+    - content: "Use the extended database run command function with the respective customAction, collection and shardKey parameters."
       isCorrect: true
       explanation: "Correct. To define the creation of a collection with a specific shardKey, you need to use extended commands"
-    - content: "Use the *CreateCollection* function and assign *ProductID* to the *shardkey* parameter"
+    - content: "Use the *CreateCollection* function and assign *ProductID* to the *shardKey* parameter."
       isCorrect: false
-      explanation: "Incorrect. *CreateCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardkey* parameter"
+      explanation: "Incorrect. *CreateCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardKey* parameter"
   - content: "Which of the following statements is true?"
     choices:
     - content: "Since an Azure Cosmos DB API for MongoDB account doesn't have a MongoDB engine, developers will need to use different tools and drivers than they currently use to connect to their current MongoDB 3.2, 3.6, 4.0 and 4.2 databases."
