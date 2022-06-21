@@ -6,7 +6,7 @@ In order to follow the hands-on exercises in this module, you'll need the follow
 - An [Azure account](https://azure.microsoft.com/free/) with an active subscription. If you don't have one, you can follow the link to create a free one.
 - Owner permissions within a Resource Group to create resources and manage role assignments. If you just created your Azure account, you'll have owner permissions already. If you didn't create your subscription, check with your Azure administrator to confirm [you have owner permissions within a resource group](/azure/role-based-access-control/quickstart-assign-role-user-portal).
 - An Azure Data Lake Store Gen2 or Azure Storage account. If you don't have one, [follow the steps below to create one](#create-a-storage-account).
-- Some data in your ADLS Gen2 or Azure Storage account. If you don't have any data, you can follow the [add data to your storage account section below](#add-data-to-your-storage-account).
+- Some data in your ADLS Gen2 or Azure Storage account. If you don't have any data, you can follow [the steps below to add data to your storage account](#add-data-to-your-storage-account).
 
 ## Create a storage account
 

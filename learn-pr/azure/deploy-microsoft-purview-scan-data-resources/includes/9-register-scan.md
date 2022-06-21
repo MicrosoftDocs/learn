@@ -31,7 +31,7 @@ Once you've provided these details and select **Register** your data source will
 
 ## Scanning
 
-Scanning is the process Microsoft Purview uses to access your data sources to gather technical metadata, schema information, and classify your data assets. This is one of the most important actions within Microsoft Purview. Scanning data assets allows you to understand:
+Scanning is the process Microsoft Purview uses to access your data sources to gather technical metadata, schema information and classify your data assets. This is one of the most important actions within Microsoft Purview. Scanning data assets allows you to understand:
 
 - What kind of data is stored in your data sources
 - How that data is structured
@@ -51,7 +51,7 @@ For authentication within Azure, there are several options available:
 - Account Key (using Key Vault)
 - Service Principal (using Key Vault)
 
-If you're enabling connectivity for the first time, it can be difficult to choose between these different kinds of authentication. Each source will have its own best practices, that you can find in the documentation, but here are some good general guidelines:
+If you're enabling connectivity for the first time, it can be difficult to choose between these different kinds of authentication. Each source will have its own best practices that you can find in the documentation, but here are some good general guidelines:
 
 - **Microsoft Purview system or user assigned Managed Identity** - This authentication method is usually the recommended method for Azure sources, and is one of the most straight-forward authentication methods between Azure resources. A managed identity is an identity in active directory that can be assigned roles just like a user or a group, but rather than being associated with a person, it's associated directly with an Azure resource. In this instance, Microsoft Purview. This allows Microsoft Purview to directly authenticate against your resource, rather than using a go-between identity. A **system-assigned managed identity** is created automatically when a resource is deployed. **User-assigned managed identities** can be used in the same way, but are user created, assigned, and managed, rather than being managed by Azure.
 
@@ -75,7 +75,7 @@ Once your credentials are successfully validated, it's time to set up your scan.
 
 #### Scope
 
-The **scope** of a scan determines what parts of a data source you want to scan. For example, in Data Lake you can choose to scan an entire data lake, or a subset of folders.
+The **scope** of a scan determines what parts of a data source you want to scan. For example, in Azure Data Lake Gen2 you can choose to scan an entire data lake, or a subset of folders.
 
 :::image type="content" source="../media/scope-scan.png" alt-text="Screenshot of the Scope your scan window, with all the folders underneath the raw folder selected.":::
 
@@ -85,7 +85,7 @@ Choosing a subset of folders might be useful if your organization has a single d
 
 The **scan rule set** is a set of instructions that allow you customize the kinds of data that will have their metadata and schema extracted, and the kinds of data that will be extracted.
 
-For example, the default Data Lake scan rule set extracts metadata from these kinds of files:
+For example, the default Azure Data Lake Gen2 scan rule set extracts metadata from these kinds of files:
 
 CSV, JSON, PSV, SSV, TSV, GZIP, TXT, XML, PARQUET, AVRO, ORC, DOC, DOCM, DOCX, DOT, ODP, ODS, ODT, PDF, POT, PPS, PPSX, PPT, PPTM, PPTX, XLC, XLS, XLSB, XLSM, XLSX, XLT
 
