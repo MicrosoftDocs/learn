@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/10/2021
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -13,11 +13,11 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-knowledge-check.md)]
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a typical scenario for using a Microsoft Sentinel watchlist?"
+  - content: "Which of the following operations is a typical scenario for using a Microsoft Sentinel watchlist?"
     choices:
     - content: "Creating more alerts to help identify issues."
       isCorrect: false
