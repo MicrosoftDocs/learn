@@ -90,7 +90,11 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
    :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output.":::
 
-1. The result, 3, is shown in the terminal output. When you consult your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
+1. The result, 3, is shown in the terminal output. When you consult this Fibonacci sequence chart that shows the zero-based sequence position for each value in parenthesis, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
+
+   ```text
+   0 (0), 1 (1), 1 (2), 2 (3), 3 (4), 5 (5), 8 (6), 13 (7), 21 (8)...
+   ```
 
 ## Analyze the issues
 
@@ -115,7 +119,7 @@ The lines at the top tell you that the default debugging settings enable the "Ju
 At the end of the debug console output, you'll see the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value. In this case, we asked the program to calculate the fifth value of the Fibonacci sequence:
 
 ```text
-0, 1, 1, 2, 3, 5, 8, 13, 21...
+0 (0), 1 (1), 1 (2), 2 (3), 3 (4), 5 (5), 8 (6), 13 (7), 21 (8)...
 ```
 
 The fifth value in this list is 5, but our program returned 3. Let's use the debugger to diagnose and fix this error.
@@ -160,7 +164,7 @@ Before we dig in further, let's remember that the Fibonacci sequence is a series
 
 That means that:
 
-```
+```text
 Fibonacci(0) = 0
 Fibonacci(1) = 1
 Fibonacci(2) = 1 (0 + 1)

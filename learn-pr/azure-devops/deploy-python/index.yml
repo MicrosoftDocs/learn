@@ -3,7 +3,7 @@ uid: learn.azdo.deploy-python
 metadata:
   title: Automate Python deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Python.
-  ms.date: 06/23/2021
+  ms.date: 06/21/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial

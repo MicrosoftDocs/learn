@@ -47,8 +47,8 @@ In this exercise, you'll use SQLite to store information locally with an applica
 ## Add the SQLite library
 
 1. Right-click on the **People** project node from the **Solution Explorer** in Visual Studio.
-1. In the context menu that appears, click **Manage NuGet Packages**.
-1. Search for **sqlite-net-pcl**. And then click install.
+1. In the context menu that appears, select **Manage NuGet Packages**.
+1. Search for **sqlite-net-pcl**. And then select install.
 
     :::image type="content" source="../media/4-sqlite-nuget-package.png" alt-text="A screenshot showing the NuGet package manager with the sequel light P C L library selected.":::
 
@@ -130,9 +130,10 @@ In this exercise, you'll use SQLite to store information locally with an applica
        if (conn != null)
           return;
 
-       conn = new SQLiteConnection(dbPath);
+       conn = new SQLiteConnection(_dbPath);
        conn.CreateTable<Person>();
     }
+    ```
 
 ## Insert a row into the database
 
@@ -159,6 +160,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
         }
         ...
     }
+    ```
 
 ## Retrieve rows from the database
 
