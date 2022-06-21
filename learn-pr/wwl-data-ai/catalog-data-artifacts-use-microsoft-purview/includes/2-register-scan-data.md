@@ -12,7 +12,7 @@ Collections also provide a security boundary for your metadata in the data map. 
 
 Data sources are registered at the collection level. Scan results can then be sent to this collection or a sub collection. The image below displays the structure of a collection.
 
-![Screenshot of collection structure in the Microsoft Purview interface containing four data sources.](../media/purview-collection-structure.png)
+[![Screenshot of collection structure in the Microsoft Purview interface containing four data sources.](../media/purview-collection-structure.png)](../media/purview-collection-structure.png#lightbox)
 
 > [!TIP]
 > Learn more about [Microsoft Purview collections architectures and best practices.](/azure/purview/concept-best-practices-collections)
@@ -28,7 +28,7 @@ Data governance using begins at collection level, with the registration of data 
 
 Registering a data source is done from within the Azure portal. Once you have a Microsoft Purview service configured in Azure, you use the Microsoft Purview governance portal to register your data sources.
 
-![Screenshot of the Microsoft Purview Governance Portal, where data sources are scanned and registered.](../media/purview-governance-portal.png)
+[![Screenshot of the Microsoft Purview Governance Portal, where data sources are scanned and registered.](../media/purview-governance-portal.png)](../media/purview-governance-portal.png#lightbox)
 
 To register a data source, you'll select the icon to register a data source as displayed in the image below. Selecting this icon will give you access to all data source connectors. 
 
@@ -36,7 +36,7 @@ To register a data source, you'll select the icon to register a data source as d
 
 Below is a small sample of available connectors in Microsoft Purview Data Catalog. See [supported data sources and file types](/azure/purview/azure-purview-connector-overview) for an up-to-date list of supported data sources and connectors.
 
-![Screenshot of a small sample of available connectors in Microsoft Purview, including Azure, AWS, and Azure Synapse Analytics.](../media/purview-connectors.png)
+[![Screenshot of a small sample of available connectors in Microsoft Purview, including Azure, AWS, and Azure Synapse Analytics.](../media/purview-connectors.png)](../media/purview-connectors.png)
 
 Registering a data source is straightforward, you need to complete the required fields. Authentication will be done during the scanning phase.
 
@@ -62,7 +62,7 @@ After configuring and scoping your scan, you'll define the *scan rule set*. A sc
 
 Once a scan is complete, you can refer to the scan details to view information about the number of scans completed, assets detected, assets classified, Scan information. It’s a good place to monitor scan progress, including success or failure.
 
-![Screenshot of new scan icon on Azure Data Lake Storage Gen 2 data source in Purview Data Map.](../media/purview-scan-details.png)
+[![Screenshot of Azure Data Lake Storage Gen 2 data source scan details in Purview Data Map.](../media/purview-scan-details.png)](../media/purview-scan-details.png#lightbox)
 
 > [!TIP]
 > Refer to [Scanning best practices](/azure/purview/concept-best-practices-scanning) for more information on scanning assets.
