@@ -102,6 +102,7 @@ In the next section you will sign in to Azure Data Studio, using the Azure AD ac
 1. In Azure AD tenant, select your Azure AD tenant.
 1. In account, from the drop-down list select **Add an account**. Select the Azure AD admin user you assigned earlier (yourself). If a sign in box appears - sign in with the relevant account details.
 1. Select **Connect**.
+
     :::image type="content" source="../media/connection-details.png" alt-text="Screenshot of the Connection Details page." lightbox="../media/connection-details.png":::
 
 Congratulations! You are now connected to the PostgreSQL single server you created, using Azure AD credentials.

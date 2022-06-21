@@ -12,6 +12,6 @@ For more information about the topics in this module, see:
 
 - [Use Azure Active Directory - Azure Database for PostgreSQL - Single Server | Microsoft Docs](/azure/postgresql/howto-configure-sign-in-aad-authentication)
 - [How to securely authenticate with SCRAM in Postgres 13 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/how-to-securely-authenticate-with-scram-in-postgres-13/ba-p/1548319)
-- [Data encryption - Azure portal - for Azure Database for PostgreSQL - Single server | Microsoft Docs](https://docs.microsoft.com/azure/postgresql/howto-data-encryption-portal#:~:text=%20Data%20encryption%20for%20Azure%20Database%20for%20PostgreSQL,or%20replica%20servers.%20After%20Azure%20Database...%20More%20)
+- [Data encryption - Azure portal - for Azure Database for PostgreSQL - Single server | Microsoft Docs](/azure/postgresql/single-server/how-to-data-encryption-portal)
 - [Networking overview - Azure Database for PostgreSQL - Flexible Server | Microsoft Docs](/azure/postgresql/flexible-server/concepts-networking)
 - [Use Azure Active Directory for authenticating with PostgreSQL](/azure/postgresql/single-server/concepts-azure-ad-authentication)
