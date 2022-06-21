@@ -6,4 +6,4 @@ In this module, you'll learn how to:
 - Create an analytical store enabled container.
 - Create a linked service for Cosmos DB.
 - Analyze linked data using Spark.
-- Analyze linked data using Synapse SQL.
+- Analyze linked data using Synapse SQL. 
