@@ -20,13 +20,13 @@ In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expa
     - **Virtual Machine size**: 
         - Choose **Select from all options** 
         - Search for and select **Standard_DS11_v2**
-    - Select **Next**
+1. Select **Next**
     - **Compute name**: *enter a unique name*
     - **Minimum number of nodes**: 0
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
     - **Enable SSH access**: Unselected
-    - Select **Create** 
+1. Select **Create** 
 
 > [!TIP]
 > After you finish the entire module, be sure to follow the **Clean Up** instructions at the end of the module to stop your compute resources. Stop your compute resources to ensure your subscription won't be charged. 

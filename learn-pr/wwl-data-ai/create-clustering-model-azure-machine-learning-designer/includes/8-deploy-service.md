@@ -15,7 +15,6 @@ After you've created and tested an inference pipeline for real-time inferencing,
     - **Compute type**: Azure Container Instance
 5. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
-## Test the service
 
 ## Test the service
 
@@ -23,24 +22,24 @@ After you've created and tested an inference pipeline for real-time inferencing,
     ![Screenshot of the location of the Endpoints option on the left-hand pane.](../media/endpoints-screenshot.png)
 2. When the **predict-penguin-clusters** endpoint opens, select the **Test** tab. We will use it to test our model with new data. Delete the current data under **Input data to test real-time endpoint**. Copy and paste the below data into the data section: 
 
-```JSON
-{
-    "Inputs": {
-        "WebServiceInput0": [
-            {
-                "CulmenLength": 49.1,
-                "CulmenDepth": 4.8,
-                "FlipperLength": 1220,
-                "BodyMass": 5150
-            }
-        ]
-    },
-    "GlobalParameters":  {}
-}
-```
+    ```JSON
+    {
+        "Inputs": {
+            "WebServiceInput0": [
+                {
+                    "CulmenLength": 49.1,
+                    "CulmenDepth": 4.8,
+                    "FlipperLength": 1220,
+                    "BodyMass": 5150
+                }
+            ]
+        },
+        "GlobalParameters":  {}
+    }
+    ```
 
-> [!NOTE]
-> The JSON above defines features for a penguin, and uses the **predict-penguin-clusters** service you created to predict a cluster assignment.
+    > [!NOTE]
+    > The JSON above defines features for a penguin, and uses the **predict-penguin-clusters** service you created to predict a cluster assignment.
 
 3. Select **Test**. On the right hand of the screen, you should see the output **'assignments'**. Notice how the assigned cluster is the one with the shortest distance to cluster center. 
 

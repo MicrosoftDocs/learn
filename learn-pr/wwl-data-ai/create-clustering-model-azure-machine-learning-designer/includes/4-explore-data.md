@@ -50,7 +50,7 @@ To get started with Azure machine learning designer, first you must create a pip
 
     ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
 
-2. 2. Click on **Data**. Search for and place the  **penguin-data** dataset onto the canvas.
+2. Click on **Data**. Search for and place the  **penguin-data** dataset onto the canvas.
 3. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and click on **Preview data**. 
 4. Review the *Profile* schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
 
