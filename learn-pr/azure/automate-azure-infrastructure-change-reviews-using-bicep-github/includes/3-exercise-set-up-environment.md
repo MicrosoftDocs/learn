@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you set up your toy company's pull request workflows, you need to configure your environment. 
 
 In this unit, you make sure that your Azure and GitHub environments are set up so that you can complete the rest of this module successfully.
