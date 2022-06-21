@@ -20,7 +20,7 @@ The Azure Command Line Interface, or CLI, is similar to PowerShell in that it ca
 
 The Azure portal is a graphical interface to Azure Resource Manager. Any resources you build and deploy using the portal will have an Azure Resource Manager template that you can capture by selecting **Export template** in the **Overview** section of your resource group.
 
-:::image type="content" source="../media/module-66-automation-final-01.png" alt-text="Screenshot of the export template option on resource group on Azure portal.":::
+:::image type="content" source="../media/module-66-automation-final-01.png" alt-text="Screenshot of the export template option on resource group on Azure portal." lightbox="../media/module-66-automation-final-01.png":::
 
 The Azure portal is usually the easiest way to get started when first learning about the Azure platform. Organizations (and DBAs) typically move into a more automated model of deployment as their Azure estate and experience grows.
 
