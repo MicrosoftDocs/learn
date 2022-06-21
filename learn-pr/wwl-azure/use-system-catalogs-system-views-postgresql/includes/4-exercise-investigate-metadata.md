@@ -8,6 +8,7 @@
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com).
 
 1. Select **Create a resource**.
+
     :::image type="content" source="../media/create-resource.png" alt-text="Create a resource icon":::
 1. In **Search services and marketplace** type **PostgreSQL** and select **Azure Database for PostgreSQL Flexible Server**.
 1. Select **Create**.
@@ -41,8 +42,10 @@
 1. In **Search Extensions in Marketplace**, type **PostgreSQL** and select **Install**.
     :::image type="content" source="../media/postgresql-extension.png" alt-text="Screenshot of PostgreSQL extension install button.":::
 1. Select **Connections**.
+
     :::image type="content" source="../media/connections.png" alt-text="Screenshot of Connections button.":::
 1. Select **Servers** and select **New connection**.
+
     :::image type="content" source="../media/create-connection.png" alt-text="Screenshot of Create a connection button.":::
 1. In **Connection type**, select **PostgreSQL**.
 1. In **Server name**, type the value that you specified when you deployed the server.
@@ -66,6 +69,7 @@
 1. In **Number of jobs**, type **1**.
 1. In **Role name**, select **demo**.
 1. Select **Restore**.
+
     :::image type="content" source="../media/restore.png" alt-text="Screenshot of Restore dialog box.":::
 1. Wait until the restore process completes.
 1. You can disregard any errors that occur because those objects aren't required for these modules.
@@ -74,9 +78,11 @@
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and sign in.
 1. Select **All resources**.
+
     :::image type="content" source="../media/4-all-resources.png" alt-text="Screenshot of All resources icon":::
 1. Select the Azure Database for PostgreSQL flexible server that you created for this exercise.
 1. In **Monitoring**, select **Metrics**.
+
     :::image type="content" source="../media/4-metrics.png" alt-text="Screenshot of Metrics icon":::
 1. Select **Metric** and select **CPU percent**.
     :::image type="content" source="../media/4-cpu-percent.png" alt-text="Screenshot showing Metric selection" lightbox="../media/4-cpu-percent.png":::
@@ -86,6 +92,7 @@
 
 1. Switch to Azure Data Studio.
 1. In **SERVERS**, select your PostgreSQL server and wait until a connection is made and a green circle is displayed on the server.
+
     :::image type="content" source="../media/4-connection.png" alt-text="Screenshot of connected server":::
 1. Right-click the server and select **New Query**.
 1. Type the following SQL and select **Run**:
@@ -181,4 +188,5 @@ When you've completed all of the tasks in the exercise, you can stop the Postgre
 
 1. In the Azure portal, select your PostgreSQL server and select **Overview**.
 1. Select **Stop**.
+
     :::image type="content" source="../media/4-stop-server.png" alt-text="Screenshot of the Stop icon" lightbox="../media/4-stop-server.png":::
