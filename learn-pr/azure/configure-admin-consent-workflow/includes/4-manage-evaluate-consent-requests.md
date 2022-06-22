@@ -1,8 +1,10 @@
-Once the user submits the request for admin consent via the consent prompt, a designated reviewer receives a notification of the request through email. The reviewer can respond to the request through the Azure portal.
+You enabled the admin consent workflow to help you keep track of incoming consent requests and evaluate them properly. You tried to access the application using a non-admin user account and the workflow enabled you to request admin consent.
+
+Once the request is submitted, a designated reviewer receives a notification of the request through email. The reviewer responds to the request through the Azure portal.
 
 ## Email notifications
 
-If configured, all reviewers will receive email notifications when:
+Email notifications alert reviewers about active and expired admin consent requests. If configured, all reviewers will receive email notifications when:
 
 - A new request has been created
 - A request has expired
@@ -20,7 +22,6 @@ Requestors will receive email notifications when:
 Granting tenant-wide admin consent is a sensitive operation. Permissions will be granted on behalf of the entire organization, and they can include permissions to attempt highly privileged operations. Examples of such operations are role management, full access to all mailboxes or all sites, and full user impersonation.
 
 Before you grant tenant-wide admin consent, it's important to ensure that you trust the application and the application publisher for the level of access you're granting. If you aren't confident that you understand who controls the application and why the application is requesting the permissions, don't grant consent.
-
 
 When you're evaluating a request to grant admin consent, here are some recommendations to consider:
 
@@ -41,5 +42,8 @@ When the user submits a consent request, the request shows up in the **Admin con
 :::image type="content" source="../media/4-consent-request-list.png" alt-text="Screenshot of admin consent request page.":::
 
 The designated reviewers will be able to evaluate pending consent requests in the **My Pending** queue. Global administrators, Application administrators, Cloud application administrators, and Global readers will be able to see all pending, expired, and completed consent requests in the **All (Preview)** queue. Reviewers will only be able to act on requests that were made after they were designated as reviewers.
+
+>[!NOTE]
+>Only reviewers with the global administrator role can approve admin consent requests
 
 After evaluating the request by reviewing the details of the application and the permissions it's requesting, the designated reviewers can choose to approve, deny or block requests.

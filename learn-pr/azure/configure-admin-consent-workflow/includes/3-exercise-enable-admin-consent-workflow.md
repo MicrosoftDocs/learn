@@ -67,7 +67,7 @@ Under **Admin consent requests**,  select **Yes** for **Users can request admin 
 > [!NOTE]
 > You can add or remove reviewers for this workflow by modifying the **Select admin consent requests reviewers** list. A current limitation of this feature is that a reviewer can retain the ability to review requests that were made while they were designated as a reviewer.
 
-To see how the admin consent workflow feature works, you'll need to disable user consent so that users aren't able to consent to the application.
+To see how admin consent workflow works for this single page application, you'll need to disable user consent so that users aren't able to consent to the application.
 
 ### Turn off user consent
 

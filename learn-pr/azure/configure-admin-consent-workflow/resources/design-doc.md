@@ -52,8 +52,10 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 
 1. Choose a secure user consent setting
 
-   1. Why use the admin consent workflow?
-   1. Consent experience without the admin consent workflow
+   1. Choose consent setting
+   1. Why enable admin consent workflow?
+   1. Consent experience without admin consent workflow
+   1. Consent experience with admin consent workflow
 
 1. Exercise - Create a test app
 
