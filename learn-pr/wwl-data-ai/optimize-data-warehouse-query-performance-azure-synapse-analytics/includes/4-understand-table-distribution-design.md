@@ -16,7 +16,7 @@ This is the default distribution created for a table and delivers fast performan
 
 A round-robin distributed table distributes data evenly across the table but without any further optimization. A distribution is first chosen at random and then buffers of rows are assigned to distributions sequentially.
 
-It is quick to load data into a round-robin table, but query performance can often be better with hash distributed tables for larger datasets.
+It's quick to load data into a round-robin table, but query performance can often be better with hash distributed tables for larger datasets.
 
 Joins on round-robin tables may negatively affect query workloads, as data that is gathered for processing then has to be reshuffled to other compute nodes, which take additional time and processing.
 
