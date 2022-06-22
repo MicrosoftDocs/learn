@@ -37,7 +37,7 @@ You have created a basic architecture and identified the tasks. You will be depl
     | Runtime stack | **PHP 7.4** |
     | Operating system | **Windows** |
     | Region | use the provided region |
-    | App service plan | accept the default configuration |
+    | App service plan | select a plan that supports [staging slots](/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits) |
 
 1. Click **Review + create**. 
 
