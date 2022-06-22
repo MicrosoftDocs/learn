@@ -51,7 +51,7 @@ When designing for Logic Apps consider integration, performance, conditionals, a
 
  
 
-:::image type="content" source="../media/investigate-logic-apps.png" alt-text="Flowchart to select Azure Logic Apps.":::
+:::image type="content" source="../media/investigate-logic-apps.png" alt-text="Flowchart to select Azure Logic Apps. Alternatives are described in the content.":::
 
 
 > [!NOTE]

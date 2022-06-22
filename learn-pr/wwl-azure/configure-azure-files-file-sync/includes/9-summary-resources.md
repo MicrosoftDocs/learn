@@ -14,4 +14,4 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
  -  [Azure Files documentation](/azure/storage/files/)
  -  [Planning for an Azure File Sync deployment](/azure/storage/files/storage-sync-files-planning)
  -  [Learn - Implement a hybrid file server infrastructure](/learn/modules/implement-hybrid-file-server-infrastructure/)
- -  [Learn - Extend your on-premises file share capacity using Azure File Sync](/learn/modules/extend-share-capacity-with-azure-file-sync/)
+ -  [Learn - Extend your on-premises file share capacity using Azure File Sync (Sandbox)](/learn/modules/extend-share-capacity-with-azure-file-sync/)
