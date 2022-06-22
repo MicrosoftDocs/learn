@@ -45,7 +45,7 @@ The following example creates a flyout containing two flyout items:
 </Shell>
 ```
 
-This will result with a flyout with 2 items. The `CatsPage` will be displayed by default when the app opens. Tapping on the second will display the `DogsPage`.
+This will result in a flyout with two items. The `CatsPage` will be displayed by default when the app opens. Tapping on the second will display the `DogsPage`.
 
 :::image type="content" source="../media/2-two-page-app-flyout.png" alt-text="A screenshot showing a flyout with 2 options.":::
 
