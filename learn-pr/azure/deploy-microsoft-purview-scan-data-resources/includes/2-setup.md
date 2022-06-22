@@ -47,7 +47,9 @@ To provide data for Microsoft Purview to classify, we'll set up an ADLS Gen 2 ac
 > [!NOTE]
 > If your storage account already has data you would like to scan, you can skip this section.
 
-1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
+1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. 
+    > [!NOTE]
+    > This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
 
 1. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking or holding on the file and selecting **Extract All...**
 
