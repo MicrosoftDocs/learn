@@ -9,7 +9,7 @@
 
 1. Select **Create a resource**.
 
-    :::image type="content" source="../media/create-resource.png" alt-text="Create a resource icon":::
+    :::image type="content" source="../media/create-resource.png" alt-text="Screenshot of Create a resource icon.":::
 1. In **Search services and marketplace** type **PostgreSQL** and select **Azure Database for PostgreSQL Flexible Server**.
 1. Select **Create**.
 1. Select the relevant **Subscription**, **Resource group**, and **Region** for your environment.
@@ -79,27 +79,27 @@
 1. Navigate to [the Azure portal](https://portal.azure.com) and sign in.
 1. Select **All resources**.
 
-    :::image type="content" source="../media/4-all-resources.png" alt-text="Screenshot of All resources icon":::
+    :::image type="content" source="../media/4-all-resources.png" alt-text="Screenshot of All resources icon.":::
 1. Select the Azure Database for PostgreSQL flexible server that you created for this exercise.
 1. In **Monitoring**, select **Metrics**.
 
-    :::image type="content" source="../media/4-metrics.png" alt-text="Screenshot of Metrics icon":::
+    :::image type="content" source="../media/4-metrics.png" alt-text="Screenshot of Metrics icon.":::
 1. Select **Metric** and select **CPU percent**.
-    :::image type="content" source="../media/4-cpu-percent.png" alt-text="Screenshot showing Metric selection" lightbox="../media/4-cpu-percent.png":::
-1. Note that you can view various metrics about your databases.
+    :::image type="content" source="../media/4-processor-percent.png" alt-text="Screenshot showing Metric selection." lightbox="../media/4-processor-percent.png":::
+1. Take note that you can view various metrics about your databases.
 
 ## Task 2: View data in system catalog tables
 
 1. Switch to Azure Data Studio.
 1. In **SERVERS**, select your PostgreSQL server and wait until a connection is made and a green circle is displayed on the server.
 
-    :::image type="content" source="../media/4-connection.png" alt-text="Screenshot of connected server":::
+    :::image type="content" source="../media/4-connection.png" alt-text="Screenshot of connected server.":::
 1. Right-click the server and select **New Query**.
 1. Type the following SQL and select **Run**:
     ```sql
     SELECT datname, xact_commit, xact_rollback FROM pg_stat_database;
     ```
-1. Note that you can view commits and rollbacks for each database.
+1. Take note that you can view commits and rollbacks for each database.
 
 ## Task 3: View a complex metadata query using a system view
 
@@ -109,7 +109,7 @@
     SELECT *
     FROM pg_catalog.pg_stats;
     ```
-1. Note that you can view a large amount of statistics information.
+1. Take note that you can view a large amount of statistics information.
 1. By using system views, you can reduce the complexity of the SQL that you need to write. The previous query would need the following code if you weren't using the **pg_stats** view:
     ```sql
     SELECT n.nspname AS schemaname,
@@ -175,11 +175,11 @@
             WHEN s.stakind5 = 5 THEN s.stanumbers5
             ELSE NULL::real[]
         END AS elem_count_histogram
-   FROM pg_statistic s
+    FROM pg_statistic s
      JOIN pg_class c ON c.oid = s.starelid
      JOIN pg_attribute a ON c.oid = a.attrelid AND a.attnum = s.staattnum
      LEFT JOIN pg_namespace n ON n.oid = c.relnamespace
-  WHERE NOT a.attisdropped AND has_column_privilege(c.oid, a.attnum, 'select'::text) AND (c.relrowsecurity = false OR NOT row_security_active(c.oid));
+    WHERE NOT a.attisdropped AND has_column_privilege(c.oid, a.attnum, 'select'::text) AND (c.relrowsecurity = false OR NOT row_security_active(c.oid));
     ```
 
 ## Task 4: Delete the PostgreSQL server

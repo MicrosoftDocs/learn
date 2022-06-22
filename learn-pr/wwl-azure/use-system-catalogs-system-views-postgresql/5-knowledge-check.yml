@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2022
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "pg_schema"
       isCorrect: false
-      explanation: "That's incorrect. pg_schema is not a system schema in PostgreSQL."
+      explanation: "Incorrect. pg_schema isn't a system schema in PostgreSQL."
     - content: "pg_catalog"
       isCorrect: true
-      explanation: "That's correct. The **pg_catalog** schema stores metadata."
+      explanation: "Correct. The **pg_catalog** schema stores metadata."
     - content: "pg_metadata"
       isCorrect: false
-      explanation: "That's incorrect. pg_metadata is not a system schema in PostgreSQL."
+      explanation: "Incorrect. pg_metadata isn't a system schema in PostgreSQL."
   - content: "Which system table contains lock information for each database?"
     choices:
     - content: "pg_database."
       isCorrect: false
-      explanation: "That's incorrect. pg_database has basic information such as the database owner, the collation, and the connection limit."
+      explanation: "Incorrect. pg_database has basic information such as the database owner, the collation, and the connection limit."
     - content: "pg_stat_database."
       isCorrect: true
-      explanation: "That's correct. pg_stat_database contains lock information for each database."
+      explanation: "Correct. pg_stat_database contains lock information for each database."
     - content: "pg_database_lock."
       isCorrect: false
-      explanation: "That's incorrect. pg_database_lock is not a system table in PostgreSQL."
+      explanation: "Incorrect. pg_database_lock isn't a system table in PostgreSQL."
   - content: "Which view can you use to get a list of all views in your database, which you can filter to display system views?"
     choices:
     - content: "pg_views."
       isCorrect: true
-      explanation: "That's correct. pg_views lists all views in the database and can be filtered to only show views in the pg_catalog schema."
+      explanation: "Correct. pg_views lists all views in the database and can be filtered to only show views in the pg_catalog schema."
     - content: "pg_catalog."
       isCorrect: false
-      explanation: "That's incorrect. pg_catalog is a schema."
+      explanation: "Incorrect. pg_catalog is a schema."
     - content: "pg_system_view."
       isCorrect: false
-      explanation: "That's incorrect. pg_system_view is not a system view in PostgreSQL."
+      explanation: "Incorrect. pg_system_view isn't a system view in PostgreSQL."
