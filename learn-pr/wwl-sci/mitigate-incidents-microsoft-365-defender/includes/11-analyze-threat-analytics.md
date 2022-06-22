@@ -12,7 +12,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
 
-:::image type="content" source="../media/ta_dashboard_mtp.png" alt-text="Screen shot of the Threat analytics dashboard.":::
+:::image type="content" source="../media/ta-dashboard-mtp.png" alt-text="Screenshot of the Threat analytics dashboard.":::
 
 High impact threats have the greatest potential to cause harm, while high exposure threats are the ones that your assets are most vulnerable to. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions.
 
@@ -129,8 +129,8 @@ To set up email notifications for threat analytics reports, perform the followin
 
 3. Follow the steps listed in the flyout. First, give your new rule a name. The description field is optional, but a name is required. You can toggle the rule on or off using the checkbox under the description field.
 
-> [!NOTE]
-The name and description fields for a new notification rule only accept English letters and numbers. They don't accept spaces, dashes, underscores, or any other punctuation.
+    > [!NOTE]
+    > The name and description fields for a new notification rule only accept English letters and numbers. They don't accept spaces, dashes, underscores, or any other punctuation.
 
 
 4. Choose which kind of reports you want to be notified about. You can choose between being updated about all newly published or updated reports, or only those reports that have a certain tag or type.
