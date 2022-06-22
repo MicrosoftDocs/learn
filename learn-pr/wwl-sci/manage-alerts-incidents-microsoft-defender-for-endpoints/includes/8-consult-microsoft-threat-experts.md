@@ -4,7 +4,7 @@ This new capability provides expert-driven insights and data through targeted at
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qZ0B?rel=0]
 
-Microsoft Defender for Endpoint customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you've been accepted into Microsoft Threat Experts managed threat hunting service.
+Microsoft Defender for Endpoint customers are required to apply for the Microsoft Threat Experts managed threat hunting service. Customers get proactive Targeted Attack Notifications and the ability to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you've been accepted into Microsoft Threat Experts managed threat hunting service.
 
 ## Targeted attack notification
 
@@ -14,7 +14,7 @@ Microsoft Threat Experts provides proactive hunting for the most important threa
 
 - Hunter-trained artificial intelligence to discover and prioritize both known and unknown attacks
 
-- Identifying the most important risks, helping SOCs maximize time and energy
+- Identification of the most important risks, helping SOCs maximize time and energy
 
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response.
 
