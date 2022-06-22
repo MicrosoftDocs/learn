@@ -3,7 +3,7 @@ uid: learn.wwl.understand-client-server-communication-postgresql
 metadata:
   title: Understand client-server communication in PostgreSQL
   description: "PostgreSQL is a client-server system, which allows many clients to connect to a central server. In this module you will learn how PostgreSQL manages connections from clients, as well as looking at some common PostgreSQL client tools."
-  ms.date: 06/20/2022
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
