@@ -28,7 +28,7 @@ quiz:
     - content: "Run a SELECT query to find dead rows that are no longer needed in the database."
       isCorrect: true
       explanation: "Correct. Rows marked for deletion that haven't yet been deleted can cause database \"bloat\" and take more storage space than required. Run a SELECT statement to find the number of dead rows in tables that are updated frequently."
-  - content: "you've tuned the server parameters to make autovacuum more efficient. However, users are complaining of slight delays when updating the single table in your database that has most updates. What could you do to resolve the problem?"
+  - content: "You've tuned the server parameters to make autovacuum more efficient. However, users are complaining of slight delays when updating the single table in your database that has most updates. What could you do to resolve the problem?"
     choices:
     - content: "Split the table into two."
       isCorrect: true
