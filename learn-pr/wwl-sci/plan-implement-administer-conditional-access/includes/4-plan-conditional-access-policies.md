@@ -107,10 +107,10 @@ Some organizations have test tenants for this purpose. However, it can be diffic
 
 The test plan is important to have a comparison between the expected results and the actual results. You should always have an expectation before testing something. The following table outlines example test cases. Adjust the scenarios and expected results based on how your CA policies are configured.
 
-| Policy | Scenario | Expected Result |
+| Name of policy | Scenario | Expected result |
 | :----- | :----- | :----- |
-| Require MFA when at work | Authorized user signs into app while on a trusted location / work | User is not prompted to MFA |
-| Require MFA when not at work | Authorized user signs into app while not on a trusted location / work | User is prompted to MFA and can sign in successfully |
+| Require MFA when working | Authorized user signs into app while on a trusted location / work | User is not prompted to MFA. User is authorized for access. User is connecting from a trusted location. You could choose to require MFA in this case. |
+| Require MFA when working | Authorized user signs into app while not on a trusted location / work | User is prompted to MFA and can sign in successfully |
 | Require MFA (for admin) | Global Admin signs into app |Admin is prompted to MFA |
 | Risky sign-ins | User signs into app using an unapproved browser | User is prompted to MFA |
 | Device management | Authorized user attempts to sign in from an authorized device | Access granted |
