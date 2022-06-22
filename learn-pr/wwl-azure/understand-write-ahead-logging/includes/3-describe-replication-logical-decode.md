@@ -35,7 +35,7 @@ You can add high availability for an existing database server. If you're enablin
 From the Azure portal:
 
 1. Navigate to your Azure Database for PostgreSQL server.
-1. From the **Overview** section, select your current **Configuration**. The **Compute + Storage** blade is displayed.
+1. From the **Overview** section, select your current **Configuration**. The **Compute + Storage** section is displayed.
 1. Under High availability, select **High Availability (zone redundant)** check box to enable high availability. High availability isn't supported for Burstable tier.
 
 It's important to note that high availability is a disaster recovery option. You can't use the standby server for any other purpose, such as allowing access to read-only databases. You can, however, configure replication between two Azure Database for PostgreSQL servers using a publisher and subscriber model. This maintains two servers with data being replicated between them. You then have full access to the subscriber server and can use the databases for any purpose. You'll practice this in the exercise at the end of this module.

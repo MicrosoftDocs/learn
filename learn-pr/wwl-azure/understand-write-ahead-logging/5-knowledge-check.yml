@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2022
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. Zone redundant high availability doesn't allow you to use the replicated copy for anything other than disaster recovery."
     - content: "Create a second Azure Database for PostgreSQL server and configure it as a subscriber. Configure your existing server as a publisher."
       isCorrect: true
-      explanation: "Correct. Configuring your current server as a publisher, and a second server as a subscriber will allow you to create a replica of your database onto the subscriber server. This can then be used for near-time reporting, without affecting performance."
+      explanation: "Correct. If you configure your current server as a publisher, and a second server as a subscriber will allow you to create a replica of your database onto the subscriber server. This can then be used for near-time reporting, without affecting performance."
   - content: "Your company uses Azure Database for PostgreSQL flexible server to maintain its stock system. You want to use the contents of the write-ahead log (WAL) for auditing purposes. What is the best way of doing this?"
     choices:
     - content: "Copy the log from **pg_wal** directory."

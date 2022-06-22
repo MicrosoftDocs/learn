@@ -1,7 +1,7 @@
 In this exercise you'll configure logical replication, which is native to PostgreSQL. You will create two servers, which act as publisher and subscriber. Data in the zoodb will be replicated between them.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial]([https://azure.microsoft.com/free]{.underline}).
+> You need your own Azure subscription to complete this exercise. If you don't have an Azure subscription, you can create an [Azure free trial](https://azure.microsoft.com/free).
 
 ## Create resource group
 
@@ -84,7 +84,7 @@ For both the publisher and subscriber servers:
 ## Set up the subscriber
 
 1. Open a second instance of Azure Data Studio.
-1. Open the script **Lab6_Replication.sql** and connect to the subscriber server. (Copy the server name from the Overview blade.)
+1. Open the script **Lab6_Replication.sql** and connect to the subscriber server. (Copy the server name from the Overview section.)
 1. Highlight and run the section **Grant the admin user replication permission**.
 1. Highlight and run the section **Create zoodb database**.
 1. Select zoodb as the current database using the dropdown list on the toolbar. Verify that zoodb is the current database by running the **SELECT** statement.
