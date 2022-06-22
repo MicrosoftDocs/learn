@@ -9,7 +9,7 @@ The first indication of a poor query performance issue is typically from busines
 
 ## Poor load performance
 
-Poor load performance may be reported by telemetry of the data loads through Azure Synapse pipelines, or you may get users reporting that the data in the reports is out of date. 
+Poor load performance may be reported by telemetry of the data loads through Azure Synapse pipelines, or users may be reporting that the data in the reports is out of date. 
 
 ## Low concurrency
 
@@ -29,4 +29,4 @@ To view queries and their assigned performance use sys.dm_pdw_exec_requests
 > [!Note]
 > sys.dm_pdw_exec_requests is not supported by serverless SQL pool in Azure Synapse Analytics, instead use sys.dm_pdw_exec_requests
 
-Even with these changes, performance issue may not be resolved. Then you would have to explore other areas that we will explore in this module to resolve the issue.
+Even with these changes, performance issue may not be resolved. The next step would be to explore other areas that will be explored later in this module to resolve the issue.
