@@ -14334,6 +14334,46 @@
       "source_path": "learn-pr/wwl-sci/use-watchlists-azure-sentinel/5-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-watchlists-azure-sentinel/6-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/3-describe-supported-analytical-workloads.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/3-azure-synapse-link",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/4-explain-htap-scenarios-context-of-synapse-link.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/5-describe-analytical-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/5-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/6-understand-well-defined-schemas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/7-design-schemas-to-support-type-of-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/8-design-writeback-scenarios.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }
