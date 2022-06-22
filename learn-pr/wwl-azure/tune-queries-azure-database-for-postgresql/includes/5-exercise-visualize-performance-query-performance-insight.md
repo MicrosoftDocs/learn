@@ -19,7 +19,7 @@
 1. In **Version**, select **11**.
 1. In **Compute + storage**, select **Configure server**.
 1. Select **Basic** and select **OK**.
-    :::image type="content" source="../media/5-create-single-server.png" alt-text="Screenshot of settings to create PostgreSQL server.":::
+    :::image type="content" source="../media/5-create-single-server.png" alt-text="Screenshot of settings to create PostgreSQL server." lightbox="../media/5-create-single-server.png":::
 1. In **Admin username** type **demo**.
 1. In **Password** type **Pa$$w0rd**.
 1. In **Confirm password** type **Pa$$w0rd**.
@@ -91,7 +91,7 @@
     :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on." lightbox="../media/3-settings-turn-query-store-on.png":::
 1. Navigate to **p g m s_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
     :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn p g m s_wait_sampling.query_capture_mode on." lightbox="../media/3-query-capture-mode.png":::
-1. Select **Save**and wait for the server parameters to update.
+1. Select **Save** and wait for the server parameters to update.
 
 ## View pg_stat data
 
