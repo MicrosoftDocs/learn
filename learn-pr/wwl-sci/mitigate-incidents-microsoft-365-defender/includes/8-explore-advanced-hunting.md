@@ -146,7 +146,8 @@ With the query in the query editor, select Create detection rule and specify the
 
 - Recommended actions—additional actions that responders might take in response to an alert
 
-Rule frequency
+
+**3. Rule frequency**
 
 When saved, a new custom detection rule immediately runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals and lookback durations based on the frequency you choose:
 
@@ -160,13 +161,13 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
-**3. Choose the impacted entities.**
+**4. Choose the impacted entities.**
 
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return both device and user IDs. Identifying which of these columns represents the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
 You can select only one column for each entity type. Columns that aren't returned by your query can't be selected.
 
-**4. Specify actions.**
+**5. Specify actions.**
 
 Your custom detection rule can automatically take actions on files or devices that are returned by the query.
 
@@ -190,7 +191,7 @@ These actions are applied to files in the SHA1 or the InitiatingProcessSHA1 colu
 
 - Quarantine file—deletes the file from its current location and places a copy in quarantine
 
-**5. Set the rule scope.**
+**6. Set the rule scope.**
 
 Set the scope to specify which devices are covered by the rule:
 
@@ -200,7 +201,7 @@ Set the scope to specify which devices are covered by the rule:
 
 Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
 
-**6. Review and turn on the rule.**
+**7. Review and turn on the rule.**
 
 After reviewing the rule, select Create to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 

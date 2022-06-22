@@ -162,16 +162,16 @@ The reported message will be marked as a false positive or a false negative. An 
 
 - In the Add the network message ID or upload the email file section, use one of the following options:
 
-1. Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
+     - Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
 
-2. Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
+    - Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
 
 In the Choose a recipient who had an issue box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
 - In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-1. Shouldn't have been blocked (False positive)
-2. Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    - Shouldn't have been blocked (False positive)
+    - Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware, or Spam
 
 - When you're finished, select Submit.
@@ -181,12 +181,12 @@ Phish, Malware, or Spam
 
 - In the Select the submission type box, select URL from the dropdown list.
 
-- In the URL box that appears, enter the full URL (for example, https://www.fabrikam.com/marketing.html).
+- In the URL box that appears, enter the full URL. For example, `https://www.fabrikam.com/marketing.html`.
 
 - In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-1. Shouldn't have been blocked (False positive)
-2. Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    - Shouldn't have been blocked (False positive)
+    - Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware
 
 - When you're finished, select Submit.
@@ -199,8 +199,8 @@ Phish, Malware
 
 - In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-1. Shouldn't have been blocked (False positive)
-2. Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    - Shouldn't have been blocked (False positive)
+    - Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware
 
 - When you're finished, select Submit.
@@ -243,7 +243,7 @@ Messages that are submitted in admin submissions are reviewed and results shown 
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policy hits that could have affected or overridden the verdict of a message.
-- Current detonation results to see if the URLs or files contained in the message were malicious or not.
+- Current detonation results to see if the URLs or files contained in the message are malicious or not.
 - Feedback from graders.
 
 If an override was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
