@@ -9,7 +9,7 @@
 
 1. Select **Create a resource**.
     
-    :::image type="content" source="../media/create-resource.png" alt-text="Create a resource icon":::
+    :::image type="content" source="../media/create-resource.png" alt-text="Create a resource icon.":::
 
 1. In **Search services and marketplace** type **PostgreSQL** and select **Azure Database for PostgreSQL Flexible Server**.
 1. Select **Create**.
@@ -102,11 +102,11 @@
 1. Select **Remember password**.
 1. Select **Connect**.
     
-    :::image type="content" source="../media/5-connection.png" alt-text="Screenshot of the Connection dialog box" lightbox="../media/5-connection.png":::
+    :::image type="content" source="../media/5-connection.png" alt-text="Screenshot of the Connection dialog box." lightbox="../media/5-connection.png":::
 
 1. Expand **Databases**, right-click **adventureworks** and select **New Query**.
     
-    :::image type="content" source="../media/5-new-query.png" alt-text="Screenshot of adventureworks highlighting New Query context menu item" lightbox="../media/5-new-query.png":::
+    :::image type="content" source="../media/5-new-query.png" alt-text="Screenshot of adventureworks highlighting New Query context menu item." lightbox="../media/5-new-query.png":::
     
 1. Repeat the previous step to create another query tab. You should now have a query tab with a name beginning **SQL_Query_1** and another query tab with a name beginning **SQL_Query_2**.
 1. Select the **SQLQuery_1** tab, type the following query and select **Run**.
