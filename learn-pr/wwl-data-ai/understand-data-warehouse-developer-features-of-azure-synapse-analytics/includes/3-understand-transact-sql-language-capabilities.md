@@ -21,7 +21,7 @@ The Azure Synapse SQL query language supports different features based on the re
 |DDL statements|Yes|Yes|
 
 ## Query execution plans
-In Synapse Analytics you can display the the query execution plan for a dedicated sql pool at the control and compute node levels using the database consistency check, **DBCC PDW_SHOWEXECUTIONPLAN**
+In Synapse Analytics you can display the query execution plan for a dedicated sql pool at the control and compute node levels using the database consistency check, **DBCC PDW_SHOWEXECUTIONPLAN**
  > [!Note]
  > This process is not supported by serverless SQL pool in Azure Synapse Analytics.
 
