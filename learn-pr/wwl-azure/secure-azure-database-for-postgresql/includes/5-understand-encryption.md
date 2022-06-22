@@ -29,12 +29,12 @@ Azure Database for PostgreSQL secures data in transit with Transport Layer Secur
 
 In the Azure portal, navigate to your Azure Database for PostgreSQL server. Under **Settings**, select **Server Parameters**. In the Search bar, enter TLS.
 
-- **ssl_min_protocol_version** - allows you to set the minimus SSL/TLS version to use. This is set to TLS V1.2 by default.
+- **ssl_min_protocol_version** - allows you to set the minimus SSL/TLS version to use. This parameter is set to TLS V1.2 by default.
 - **ssl_max_protocol_version** - allows you to set the maximum SSL/TLS version to use.
 
 ## Infrastructure double encryption enabled
 
-You can also add a second layer of encryption for data at rest. This uses service-managed keys but isn't enabled by default because of the performance impact. This second layer of encryption also uses FIPS 140-2 validated cryptographic module, but with a different encryption algorithm. Infrastructure Layer encryption has the benefit of being implemented at the layer closest to the storage device or network wires, and close to hardware that stores data at rest. 
+You can also add a second layer of encryption for data at rest. This encryption uses service-managed keys but isn't enabled by default because of the performance impact. This second layer of encryption also uses FIPS 140-2 validated cryptographic module, but with a different encryption algorithm. Infrastructure Layer encryption has the benefit of being implemented at the layer closest to the storage device or network wires, and close to hardware that stores data at rest. 
 
 You must enable infrastructure double encryption when the server is created. When a new Azure Database for PostgreSQL single server is being created, select the **Additional Settings** tab. Select **Infrastructure double encryption enabled**.
 

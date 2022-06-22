@@ -1,6 +1,6 @@
-In this module you have learned about the multiple layers of security that Azure Database for PostgreSQL uses to protect data. You have learned about the built-in server roles that are created when you create an Azure Database for PostgreSQL server, and you learned how to create and grant permissions to database users. You learned how to authenticate users with Azure AD, and how Azure Database for PostgreSQL encrypts your data at rest, and in transit.
+In this module, you've learned about the multiple layers of security that Azure Database for PostgreSQL uses to protect data. You've learned about the built-in server roles created when you create an Azure Database for PostgreSQL server. You learned how to create and grant permissions to database users. You learned how to authenticate users with Azure AD, and how Azure Database for PostgreSQL encrypts your data at rest, and in transit.
 
-Now that you have completed this module, you are able to:
+Now that you've completed this module, you're able to:
 
 - Describe Azure Database for PostgreSQL security.
 - Describe built-in Azure Database for PostgreSQL server roles.

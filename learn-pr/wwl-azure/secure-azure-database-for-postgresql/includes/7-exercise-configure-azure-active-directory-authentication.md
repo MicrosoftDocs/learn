@@ -1,4 +1,4 @@
-In this exercise you will create an Azure Database for PostgreSQL single server, and then create an Azure AD admin user and configure the server for Azure AD authentication.
+In this exercise you'll create an Azure Database for PostgreSQL single server, and then create an Azure AD admin user and configure the server for Azure AD authentication.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete this exercise. If you do not have an Azure subscription, create an [Azure free trial](https://azure.microsoft.com/free).
@@ -16,7 +16,7 @@ In this exercise you will create an Azure Database for PostgreSQL single server,
 ## Create an Azure Database for PostgreSQL single server
 
 1. Under Azure services, select **+ Create a resource**. Under **Categories**, select **Databases**. Under **Azure Database for PostgreSQL**, select **Create**.
-1. Under **Choose a deployment option to create a PostgreSQL server**, select the **Resource type** drop down box to view the options. Select **Single server**. When the message box appears, select **No - Create Single server**.
+1. Under **Choose a deployment option to create a PostgreSQL server**, select the **Resource type** dropdown box to view the options. Select **Single server**. When the message box appears, select **No - Create Single server**.
 1. On the **Basics** tab, enter each field as follows:
     1. **Subscription** - your subscription.
     1. **Resource group** - PostgresAzureAD.
@@ -31,11 +31,11 @@ In this exercise you will create an Azure Database for PostgreSQL single server,
 
 When the deployment is complete, select **Go to resource**.
 
-1. Under **Settings**, select **Connection security**. The Connection security blade is displayed.
+1. Under **Settings**, select **Connection security**. The Connection security section is displayed.
     1. Under Firewall rules, select **+ Add current client IP address**. This adds your current IP address as a firewall rule. Optionally name the firewall rule.
 1. Select **Save**.
 
-You have now created an Azure Database for PostgreSQL single server.
+You've now created an Azure Database for PostgreSQL single server.
 
 ## Create the Azure AD admin user
 
@@ -55,7 +55,7 @@ To create an Azure AD admin user:
 
 Setting the administrator adds a new user to the Azure Database for PostgreSQL server with full administrator permissions. The Azure AD Admin user has the role **azure_ad_admin**.
 
-Only one Azure AD admin can be created, and another selection will overwrite the existing Azure AD admin. Specify an Azure AD group if you want to have multiple administrators. If you specify a group, you will then sign in with the group name for administration purposes.
+Only one Azure AD admin can be created, and another selection will overwrite the existing Azure AD admin. Specify an Azure AD group if you want to have multiple administrators. If you specify a group, you'll then sign in with the group name for administration purposes.
 :::image type="content" source="../media/active-directory-admin.png" alt-text="Screenshot showing the PostgreSQL single server Active directory admin page." lightbox="../media/active-directory-admin.png":::
 
 ## Obtain an access token
@@ -64,7 +64,7 @@ To obtain an Azure AD access token:
 
 1. Sign in to the Azure portal using the Azure AD admin user credentials.
 1. Select **Cloud Shell** from the top menu. In the Cloud Shell pane, select **PowerShell**. (You can also use Bash, but this example uses PowerShell.)
-1. If you have no storage, a message is displayed to create storage. If necessary, provide the necessary details, and select **Create Storage**.
+1. If you've no storage, a message is displayed to create storage. If necessary, provide the necessary details, and select **Create Storage**.
 1. To get an access token, enter:
 
     ```sql
@@ -84,13 +84,13 @@ To obtain an Azure AD access token:
     :::image type="content" source="../media/access-token.png" alt-text="Screenshot showing the $accessToken.Token value page." lightbox="../media/access-token.png":::
 
 > [!IMPORTANT]
-> Delete the Azure Database for PostgreSQL single server when you have finished this exercise. You cannot STOP a single server, and you will be charged for the server until you delete it.
+> Delete the Azure Database for PostgreSQL single server when you have finished this exercise. You cannot STOP a single server, and you'll be charged for the server until you delete it.
 
-Congratulations! You have created an Azure Access token for use with a PostgreSQL admin tool that does not recognize Azure AD, such as pgAdmin or psql.
+Congratulations! You've created an Azure Access token for use with a PostgreSQL admin tool that doesn't recognize Azure AD, such as pgAdmin or psql.
 
-In the next section you will sign in to Azure Data Studio, using the Azure AD account WITHOUT a token. Azure Data Studio does recognize Azure AD and will accept account credentials. This is more convenient than using a token.
+In the next section you'll sign in to Azure Data Studio, using the Azure AD account WITHOUT a token. Azure Data Studio does recognize Azure AD and will accept account credentials. This is more convenient than using a token.
 
-## Sign into Azure Data Studio
+## Sign in to Azure Data Studio
 
 1. Open Azure Data Studio and select **New Connection**, or **Add Connection**, which appears when there are no existing connections.
 1. In Connection details, in Connection type select **PostgreSQL**.
@@ -100,9 +100,9 @@ In the next section you will sign in to Azure Data Studio, using the Azure AD ac
     1. Replace \<youradmin\> with the user name assigned as Azure AD admin
     1. Replace with your server name with the PostgreSQL single server you created.
 1. In Azure AD tenant, select your Azure AD tenant.
-1. In account, from the drop-down list select **Add an account**. Select the Azure AD admin user you assigned earlier (yourself). If a sign in box appears - sign in with the relevant account details.
+1. In account, from the dropdown list select **Add an account**. Select the Azure AD admin user you assigned earlier (yourself). If a signin box appears - sign in with the relevant account details.
 1. Select **Connect**.
 
     :::image type="content" source="../media/connection-details.png" alt-text="Screenshot of the Connection Details page." lightbox="../media/connection-details.png":::
 
-Congratulations! You are now connected to the PostgreSQL single server you created, using Azure AD credentials.
+Congratulations! You're now connected to the PostgreSQL single server you created, using Azure AD credentials.

@@ -21,9 +21,9 @@ SELECT * FROM pg_roles;
 
 When you created your server, a server admin user was also created. This user automatically became a member of the **azure_pg_admin** role. The Azure Database for PostgreSQL server admin user has the following privileges: LOGIN, NOSUPERUSER, INHERIT, CREATEDB, CREATEROLE, REPLICATION
 
-This means that the server admin user account that you created when the server was created, can:
+Now, the server admin user account that you created when the server was created, can:
 
-- Create additional users and grant those users into the **azure_pg_admin** role.
+- Create more users and grant those users into the **azure_pg_admin** role.
 - Create less privileged users and roles that have access to individual databases and schemas.
 
 PostgreSQL includes some default roles that can be assigned to users. These include commonly needed privileges for access:
