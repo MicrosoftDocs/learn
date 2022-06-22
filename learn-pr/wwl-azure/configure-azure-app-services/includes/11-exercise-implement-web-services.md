@@ -20,7 +20,7 @@ You have created a basic architecture and identified the tasks. You will be depl
 
 ## Task 1: Create an Azure web app
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the Azure portal. 
 
 1. In the Azure portal, search for and select **App services**.
 
