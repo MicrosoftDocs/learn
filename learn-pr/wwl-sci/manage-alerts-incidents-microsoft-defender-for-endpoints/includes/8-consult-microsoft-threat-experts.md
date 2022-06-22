@@ -1,10 +1,10 @@
-Microsoft Threat Experts is a managed threat hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to ensure critical threats in their unique environments are not missed.
+Microsoft Threat Experts is a managed threat hunting service that provides Security Operation Centers (SOCs) equipped with expert level monitoring and analysis to ensure critical threats aren't missed.
 
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qZ0B?rel=0]
 
-Microsoft Defender for Endpoint customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
+Microsoft Defender for Endpoint customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you've been accepted into Microsoft Threat Experts managed threat hunting service.
 
 ## Targeted attack notification
 
@@ -20,7 +20,7 @@ Microsoft Threat Experts provides proactive hunting for the most important threa
 
 ## Collaborate with experts, on demand
 
-Customers can engage our security experts directly from within Microsoft 365 Defender portal for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
+Customers can engage our security experts directly from within Microsoft 365 Defender portal for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization. From alert inquiries, potentially compromised devices, root causes of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
 - Get more clarification on alerts including root cause or scope of the incident
 

@@ -104,7 +104,7 @@ With the query in the query editor, select Create detection rule and specify the
 
 - Category—type of threat component or activity, if any.
 
-- MITRE ATT&CK techniques—one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework. This section is not available with certain alert categories, such as malware, ransomware, suspicious activity, and unwanted software
+- MITRE ATT&CK techniques—one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework. This section isn't available with certain alert categories, such as malware, ransomware, suspicious activity, and unwanted software
 
 - Description—more information about the component or activity identified by the rule
 
@@ -128,7 +128,7 @@ Select the frequency that matches how closely you want to monitor detections, an
 
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return both device and user IDs. Identifying which of these columns represents the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
-You can select only one column for each entity type. Columns that are not returned by your query cannot be selected.
+You can select only one column for each entity type. Columns that aren't returned by your query can't be selected.
 
 **4. Specify actions.**
 
@@ -150,7 +150,7 @@ Actions on files
 
 These actions are applied to files in the SHA1 or the InitiatingProcessSHA1 column of the query results:
 
-- Allow/Block—automatically adds the file to your custom indicator list so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected device groups. This scope is independent of the scope of the rule.
+- Allow/Block—automatically adds the file to your custom indicator list so that it's always allowed to run or blocked from running. You can set the scope of this action so that it's taken only on selected device groups. This scope is independent of the scope of the rule.
 
 - Quarantine file—deletes the file from its current location and places a copy in quarantine
 

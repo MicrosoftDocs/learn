@@ -2,7 +2,16 @@ Defender for Endpoint detection and response capabilities provides advanced atta
 
 When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an incident. Aggregating alerts in this manner makes it easy for analysts to investigate and respond to threats collectively.
 
-Inspired by the "assume breach" mindset, Defender for Endpoint continuously collects behavioral cyber telemetry. This includes process information, network activities, deep optics into the kernel and memory manager, user sign-in activities, registry and file system changes, and others. The information is stored for six months, enabling an analyst to travel back in time to the start of an attack. The analyst can then pivot in various views and approach an investigation through multiple vectors.
+Inspired by the "assume breach" mindset, Defender for Endpoint continuously collects behavioral cyber telemetry. This telemetry includes:
+
+- process information
+- network activities
+- deep views into the Operating System kernel and memory manager
+- user sign-in activities
+- registry and file system changes
+- and more
+
+The information is stored for six months, enabling an analyst to travel back in time to the start of an attack. The analyst can then pivot in various views and approach an investigation through multiple vectors.
 
 The response capabilities give you the power to promptly remediate threats by acting on the affected entities.
 
@@ -10,7 +19,7 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 ## Defender for Endpoint terminology
 
-It is important for you to understand the different components and how they work together.
+It's important for you to understand the different components and how they work together.
 
 ### Device
 

@@ -36,7 +36,7 @@ As alerts are triggered and an automated investigation runs, a verdict is genera
 
 As verdicts are reached, automated investigations can result in one or more remediation actions. Examples of remediation actions include sending a file to quarantine, stopping a service, removing a scheduled task, and more. (See Remediation actions.)
 
-Depending on the level of automation set for your organization, as well as other security settings, remediation actions can occur automatically or only upon approval by your security operations team. Additional security settings that can affect automatic remediation include protection from potentially unwanted applications (PUA).
+Depending on the level of automation set for your organization, and other security settings, remediation actions can occur automatically or only upon approval by your security operations team. Additional security settings that can affect automatic remediation include protection from potentially unwanted applications (PUA).
 
 All remediation actions, whether pending or completed, can be viewed in the Action Center [https://security.microsoft.com](https://security.microsoft.com?azure-portal=true). If necessary, your security operations team can undo a remediation action. 
 
@@ -72,7 +72,7 @@ Actions that were taken on files or executables in other folders can be viewed i
 
 **Semi - require approval for non-temp folders remediation (also a type of semi-automation)**
 
-With this level of semi-automation, approval is required for any remediation actions needed on files or executables that are not in temporary folders.
+With this level of semi-automation, approval is required for any remediation actions needed on files or executables that aren't in temporary folders.
 
 Temporary folders can include the following examples:
 
@@ -94,17 +94,17 @@ Temporary folders can include the following examples:
 
 Remediation actions can be taken automatically on files or executables that are in temporary folders.
 
-Pending actions for files or executables that are not in temporary folders can be viewed and approved in the Action Center, on the Pending tab.
+Pending actions for files or executables that aren't in temporary folders can be viewed and approved in the Action Center, on the Pending tab.
 
 Actions that were taken on files or executables in temporary folders can be viewed and approved in the Action Center on the History tab.
 
 **No automated response (also referred to as no automation)**
 
-With no automation, the automated investigation does not run on your organization's devices. As a result, no remediation actions are taken or pending as a result of an automated investigation. However, other threat protection features, such as protection from potentially unwanted applications, can be in effect, depending on how your antivirus and next-generation protection features are configured.
+With no automation, the automated investigation doesn't run on your organization's devices. As a result, no remediation actions are taken or pending as a result of an automated investigation. However, other threat protection features, such as protection from potentially unwanted applications, can be in effect, depending on how your antivirus and next-generation protection features are configured.
 
-Using the no automation option is not recommended because it reduces the security posture of your organization's devices. Consider setting up your automation level to full automation (or at least semi-automation).
+Using the no automation option isn't recommended because it reduces the security posture of your organization's devices. Consider setting up your automation level to full automation (or at least semi-automation).
 
 ### Important points about automation levels
 
-Full automation has proven to be reliable, efficient, and safe, and is recommended for all customers. Full automation frees up your critical security resources so they can focus more on your strategic initiatives.  If your security team has defined device groups with a level of automation, those settings are not changed by the new default settings that are rolling out.
+Full automation has proven to be reliable, efficient, and safe, and is recommended for all customers. Full automation frees up your critical security resources so they can focus more on your strategic initiatives.  If your security team has defined device groups with a level of automation, those settings aren't changed by the new default settings that are rolling out.
 
