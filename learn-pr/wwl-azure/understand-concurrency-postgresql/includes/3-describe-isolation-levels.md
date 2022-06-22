@@ -6,7 +6,7 @@ PostgreSQL has two levels of transaction isolation that prevent three types of c
 
 A dirty read occurs when one transaction reads the updated version of data that another transaction is editing. However, this update is never actually committed.
 
-For example, a transaction occurs on a savings account that would take the balance of the account below zero. Before the transaction is committed, the account balance is checked and the transaction is rolled back because savings accounts arn't allowed to have a balance below zero. At the same time, a report is being run to show the current balance of all savings accounts. If dirty reads are allowed, the negative balance would be returned, even though it's never actually committed.
+For example, a transaction occurs on a savings account that would take the balance of the account below zero. Before the transaction is committed, the account balance is checked and the transaction is rolled back because savings accounts aren't allowed to have a balance below zero. At the same time, a report is being run to show the current balance of all savings accounts. If dirty reads are allowed, the negative balance would be returned, even though it's never actually committed.
 
 ### Non-repeatable reads
 
@@ -42,7 +42,7 @@ Repeatable read differs from read committed because multiple SELECT statements w
 
 The serializable isolation level provides the highest level of transaction isolation and performs as if different transactions were running in serial, that is, one after the other. The disadvantage of the serializable isolation level is that if a transaction is performing an update it's more likely to be blocked by other transactions and have to wait until they complete, which will affect performance.
 
-Serializable transactions also can't make changes to any rows which are modified by other transactions during the the serializable transaction. If this form of conflict occurs, then an error message is returned and therefore it's important to have retry logic built into applications when serializable transactions are used.
+Serializable transactions also can't make changes to any rows which are modified by other transactions during the serializable transaction. If this form of conflict occurs, then an error message is returned and therefore it's important to have retry logic built into applications when serializable transactions are used.
 
 To update transaction isolation levels use the **TRANSACTION ISOLATION LEVEL** command within a transaction.
 
