@@ -5,7 +5,7 @@ metadata:
   title: Specify an encryption standard for data at rest and in motion
   description: "Specify an encryption standard for data at rest and in motion"
   ms.date: 06/09/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
