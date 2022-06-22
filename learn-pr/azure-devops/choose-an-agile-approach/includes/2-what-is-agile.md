@@ -20,10 +20,10 @@ After they shipped the release, Mara and Andy sat down for coffee. They were bot
 
 > We value:
 >
-> * Individuals and interactions over processes and tools
-> * Working software over comprehensive documentation
-> * Customer collaboration over contract negotiation
-> * Responding to change over following a plan
+> * Individuals and interactions over processes and tools.
+> * Working software over comprehensive documentation.
+> * Customer collaboration over contract negotiation.
+> * Responding to change over following a plan.
 
  **Andy:** Look, if you know some magic way to make life easier, I'm all for it. My kids are always asleep by the time I get home. But this sounds very touchy-feely without any concrete solutions.
 
@@ -45,7 +45,7 @@ However, vertical teams provide better results for Agile projects. Vertical team
 
 ### Mentor team members on Agile techniques and practices
 
-When they first start to adopt Agile techniques and practices, some teams decide to hire external coaches. Coaches may even work with multiple teams to help remove organizational roadblocks and silos, so they often have both teaching and managerial skills. They can also train team members in Agile techniques such as how to run stand-up and review meetings. Over time though, it's important for team members to develop an ability to mentor each other. This means that most work should be done collaboratively and not by individuals who spend most of their time working alone.
+When they first start to adopt Agile techniques and practices, some teams decide to hire external coaches. Coaches might even work with multiple teams to help remove organizational roadblocks and silos, so they often have both teaching and managerial skills. They can also train team members in Agile techniques like how to run stand-up and review meetings. Over time though, it's important for team members to develop an ability to mentor each other. This means that most work should be done collaboratively and not by individuals who spend most of their time working alone.
 
 ### Enable in-team and cross-team collaboration
 
@@ -57,7 +57,7 @@ When changing a culture, keep a few things in mind. It's important that team mem
 
 Meetings are a fact of life and they can feel like they take over a person's working life. To give team members more control, meetings need an agenda and strict time frames.
 
-Asynchronous communications, such as email and messages, can feel overwhelming and people often feel they have to be answered right away. Make it clear that not all of these communications need an immediate response.
+Asynchronous communications, like email and messages, can feel overwhelming and people often feel they have to be answered right away. Make it clear that not all of these communications need an immediate response.
 
 Remote team members are now the norm in many companies. Everyone needs to feel comfortable with all their team members and to treat them equally, whether they're in the office or working offsite. Collaboration via communication should become part of the organization's DNA.
 
@@ -69,9 +69,9 @@ Just as it's important for team members to work collaboratively, it's also impor
 
 #### Tools for collaboration
 
-Good tools can help your Agile team members collaborate more effectively, both within the team and with other teams. Here are a few suggestions to help you get started.
+Good tools can help your Agile team members collaborate more effectively, both within the team and with other teams. Here are a few suggestions to help you get started:
 
-* [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software?azure-portal=true). This is an application that provides a workplace for chat, meetings, notes, and file storage.
+* [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software?azure-portal=true). Teams is an application that provides a workplace for chat, meetings, notes, and file storage.
 * [Skype](https://www.skype.com/?azure-portal=true). Skype is easy to use and a good general-purpose tool. Many people have it already installed.
 * [Slack](https://slack.com/?azure-portal=true). Slack provides many separate communication channels, all from a single interface. These can be organized in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It's easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
 
