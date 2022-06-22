@@ -8,10 +8,10 @@ This article provides guidelines for managing emergency access accounts in Azure
 
 An organization might need to use an emergency access account in the following situations:
 
- -  The user accounts are federated, and federation is currently unavailable because of a cell-network break or an identity-provider outage. For example, if the identity provider host in your environment has gone down, users might be unable to sign in when Azure AD redirects to their identity provider.
- -  The administrators are registered through Azure AD Multi-Factor Authentication. All their individual devices are unavailable or the service is unavailable. Users might be unable to complete multi-factor authentication to activate a role. For example, a cell network outage is preventing them from answering phone calls or receiving text messages. Especially when these are the only two authentication mechanisms that they registered.
- -  The person with the most recent Global Administrator access has left the organization. Azure AD prevents the last Global Administrator account from being deleted, but it does not prevent the account from being deleted or disabled on-premises. Either situation might make the organization unable to recover the account.
- -  Unforeseen circumstances such as a natural disaster emergency, during which a mobile phone or other networks might be unavailable.
+- The user accounts are federated, and federation is currently unavailable because of a cell-network break or an identity-provider outage. For example, if the identity provider host in your environment has gone down, users might be unable to sign in when Azure AD redirects to their identity provider.
+- The administrators are registered through Azure AD Multi-Factor Authentication. All their individual devices are unavailable or the service is unavailable. Users might be unable to complete multi-factor authentication to activate a role. For example, a cell network outage is preventing them from answering phone calls or receiving text messages. Especially when these are the only two authentication mechanisms that they registered.
+- The person with the most recent Global Administrator access has left the organization. Azure AD prevents the last Global Administrator account from being deleted, but it does not prevent the account from being deleted or disabled on-premises. Either situation might make the organization unable to recover the account.
+- Unforeseen circumstances such as a natural disaster emergency, during which a mobile phone or other networks might be unavailable.
 
 ## Create emergency access accounts
 
@@ -19,10 +19,10 @@ Create two or more emergency access accounts. These accounts should be cloud-onl
 
 When configuring these accounts, the following requirements must be met:
 
- -  The emergency access accounts shouldn't be associated with any individual user in the organization. Make sure that your accounts aren't connected with any employee-supplied mobile phones, hardware tokens that travel with individual employees, or other employee-specific credentials. This precaution covers instances where an individual employee is unreachable when the credential is needed. Any registered devices need to be kept in known, secure location. These locations need multiple means of communicating with Azure AD.
- -  The authentication mechanism used for an emergency access account should be distinct. Keep it separate from that used by your other administrative accounts, including other emergency-access accounts. For example, if your normal administrator sign in is via on-premises MFA, then Azure AD MFA would be a different mechanism. However, if Azure AD MFA is your primary part of authentication for your administrative accounts, then consider a different approach for emergency-accounts. Try things such as using Conditional Access with a third-party MFA provider via Custom controls.
- -  The device or credential must not expire or be in scope of automated cleanup due to lack of use.
- -  You should make the Global Administrator role assignment permanent for your emergency access accounts.
+- The emergency access accounts shouldn't be associated with any individual user in the organization. Make sure that your accounts aren't connected with any employee-supplied mobile phones, hardware tokens that travel with individual employees, or other employee-specific credentials. This precaution covers instances where an individual employee is unreachable when the credential is needed. Any registered devices need to be kept in known, secure location. These locations need multiple means of communicating with Azure AD.
+- The authentication mechanism used for an emergency access account should be distinct. Keep it separate from that used by your other administrative accounts, including other emergency-access accounts. For example, if your normal administrator sign in is via on-premises MFA, then Azure AD MFA would be a different mechanism. However, if Azure AD MFA is your primary part of authentication for your administrative accounts, then consider a different approach for emergency-accounts. Try things such as using Conditional Access with a third-party MFA provider via Custom controls.
+- The device or credential must not expire or be in scope of automated cleanup due to lack of use.
+- You should make the Global Administrator role assignment permanent for your emergency access accounts.
 
 ### Exclude at least one account from phone-based multi-factor authentication
 
@@ -46,15 +46,15 @@ Organizations should monitor sign in and audit log activity from the emergency a
 
 When you train staff members to use emergency access accounts and validate the emergency access accounts, at minimum do the following steps at regular intervals:
 
- -  Ensure that security-monitoring staff are aware that the account-check activity is ongoing.
- -  Ensure that the emergency break-glass process to use these accounts is documented and current.
- -  Ensure that administrators and security officers who might need to perform these steps during an emergency are trained on the process.
- -  Update the account credentials, in particular any passwords, for your emergency access accounts, and then validate that the emergency access accounts can sign in and perform administrative tasks.
- -  Ensure that users haven't registered multi-factor authentication or self-service password reset (SSPR) to any individual user’s device or personal details.
- -  If the accounts are registered for multi-factor authentication to a device, for use during sign in or role activation, ensure that the device is accessible to all administrators who might need to use it during an emergency. Also verify that the device can communicate through at least two network paths that don't share a common failure mode. For example, the device can communicate to the internet through both a facility's wireless network and a cell provider network.
+- Ensure that security-monitoring staff are aware that the account-check activity is ongoing.
+- Ensure that the emergency break-glass process to use these accounts is documented and current.
+- Ensure that administrators and security officers who might need to perform these steps during an emergency are trained on the process.
+- Update the account credentials, in particular any passwords, for your emergency access accounts, and then validate that the emergency access accounts can sign in and perform administrative tasks.
+- Ensure that users haven't registered multi-factor authentication or self-service password reset (SSPR) to any individual user’s device or personal details.
+- If the accounts are registered for multi-factor authentication to a device, for use during sign in or role activation, ensure that the device is accessible to all administrators who might need to use it during an emergency. Also verify that the device can communicate through at least two network paths that don't share a common failure mode. For example, the device can communicate to the internet through both a facility's wireless network and a cell provider network.
 
 These steps should be performed at regular intervals and for key changes:
 
- -  At least every 90 days
- -  When there has been a recent change in IT staff, such as a job change, a departure, or a new hire
- -  When the Azure AD subscriptions in the organization have changed
+- At least every 90 days
+- When there has been a recent change in IT staff, such as a job change, a departure, or a new hire
+- When the Azure AD subscriptions in the organization have changed
