@@ -46,7 +46,7 @@ Displays additional information including the output column list for each node i
 Includes the estimated start-up cost, and total cost, plus the estimated number of rows and estimated width of each row.
 
 ## BUFFERS
-Buffers can only be used with the ANALYZE option. PostgreSQL uses a Least Recently Used (LRU) cache to store frequently used data in memory. Buffers displays how much of the data comes from a cache, and how much is retrieved from disk. Displays the number of shared, local, and temp blocks hits, reads, and writes. The data provided by BUFFERS can help to understand I/O-intensive parts of a query.
+Buffers can only be used with the ANALYZE option. PostgreSQL uses a Least Recently Used (LRU) cache to store frequently used data in memory. Buffers display how much of the data comes from a cache, and how much is retrieved from disk. Displays the number of shared, local, and temp blocks hits, reads, and writes. The data provided by BUFFERS can help to understand I/O-intensive parts of a query.
 
 ## FORMAT
 Defines the output format. XML, JSON, or YAML contain the same information as TEXT, but in a format that is easier for programs to use. TEXT is the default.
