@@ -9,7 +9,7 @@
 
 1. Select **Create a resource**.
 
-    :::image type="content" source="../media/create-resource.png" alt-text="Screenshot of the Create a resource icon":::
+    :::image type="content" source="../media/create-resource.png" alt-text="Screenshot of the Create a resource icon.":::
 1. In **Search services and marketplace** type **PostgreSQL** and select **Azure Database for PostgreSQL**.
 1. Select **Create**.
 1. In **Single server**, select **Create**.
@@ -29,7 +29,7 @@
 1. When the deployment is complete, select **Go to resource**.
 1. Select **Connection security**.
 1. Select **Add current client IP address**.
-    :::image type="content" source="../media/5-add-client-ip.png" alt-text="Screenshot of Add client IP" lightbox="../media/5-add-client-ip.png":::
+    :::image type="content" source="../media/5-add-client-ip.png" alt-text="Screenshot of Add client I P." lightbox="../media/5-add-client-ip.png":::
 1. In **Allow access to Azure services**, select **Yes**.
 1. Select **Save**.
 
@@ -60,7 +60,7 @@
 1. Select **Remember password**.
 1. Start pgAdmin and enter the password that you specified during installation.
 1. Right-click **Servers**, select **Register**, and select **Server**.
-    :::image type="content" source="../media/pgadmin-register.png" alt-text="Screenshot of server registration menu in pgAdmin.":::
+    :::image type="content" source="../media/pgadmin-register.png" alt-text="Screenshot of server registration menu in p g Admin.":::
 1. In **Name**, type **PostgreSQL Exercise 10** and select the **Connection** tab.
 1. In **Host name/address**, type the value that you specified when you deployed the server.
 1. In **Username**, type **demo@** followed by your server name.
@@ -88,9 +88,9 @@
 1. Navigate to the **pg_qs.query_capture_mode** setting.
 1. Select **TOP**.
 
-    :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on" lightbox="../media/3-settings-turn-query-store-on.png":::
-1. Navigate to **pgms_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
-    :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn pgms_wait_sampling.query_capture_mode on" lightbox="../media/3-query-capture-mode.png":::
+    :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on." lightbox="../media/3-settings-turn-query-store-on.png":::
+1. Navigate to **p g m s_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
+    :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn p g m s_wait_sampling.query_capture_mode on." lightbox="../media/3-query-capture-mode.png":::
 1. Select **Save**and wait for the server parameters to update.
 
 ## View pg_stat data
@@ -98,7 +98,7 @@
 1. Start Azure Data Studio.
 1. Select **Connect**.
 
-    :::image type="content" source="../media/5-connect.png" alt-text="Screenshot showing Connect icon" lightbox="../media/5-connect.png":::
+    :::image type="content" source="../media/5-connect.png" alt-text="Screenshot showing Connect icon." lightbox="../media/5-connect.png":::
 1. Select your PostgreSQL server and select **Connect**.
 1. Type each of the following query and select **Run**.
     ```sql
@@ -114,7 +114,7 @@
 
 1. Select the **azure_sys** database.
 
-    :::image type="content" source="../media/5-database-selector.png" alt-text="Screenshot of the database selector" lightbox="../media/5-database-selector.png":::
+    :::image type="content" source="../media/5-database-selector.png" alt-text="Screenshot of the database selector." lightbox="../media/5-database-selector.png":::
 1. Type each of the following queries and select **Run**.
     ```sql
     SELECT * FROM query_store.query_texts_view;

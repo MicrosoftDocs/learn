@@ -5,7 +5,7 @@ To view Query Store data in a graphical format in Azure Database fo PostgreSQL s
 > [!NOTE]
 > Query Performance Insight is not available in Azure Database for PostgreSQL flexible server and you must deploy Azure Database for PostgreSQL single server to use Query Performance Insight.
 
-:::image type="content" source="../media/4-query-performance-insight.png" alt-text="Screenshot of Query Performance Insight" lightbox="../media/4-query-performance-insight.png":::
+:::image type="content" source="../media/4-query-performance-insight.png" alt-text="Screenshot of Query Performance Insight." lightbox="../media/4-query-performance-insight.png":::
 
 Query Performance Insight has a display for **Long running queries** and a display for **Wait Statistics**. The displays graphically show which queries have the longest duration or longest wait and provide the **QUERY ID** of each query to enable you to find more information in the **azure_sys** database.
 
