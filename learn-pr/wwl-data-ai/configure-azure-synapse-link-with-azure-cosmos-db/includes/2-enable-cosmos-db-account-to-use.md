@@ -1,6 +1,6 @@
 Azure Synapse Link for Azure Cosmos DB is a cloud-native HTAP capability that enables integration between Azure Cosmos DB and Azure Synapse Analytics.
 
-![A diagram showing Azure Synapse Link integration with Azure Cosmos DB and Azure Synapse Analytics.](../media/synapse-link-cosmosdb.png)
+![A diagram showing Azure Synapse Link integration with Azure Cosmos DB and Azure Synapse Analytics.](../media/synapse-link-cosmos-db.png)
 
 In the diagram above, the following key features of the Azure Synapse Link for Cosmos DB architecture are illustrated:
 

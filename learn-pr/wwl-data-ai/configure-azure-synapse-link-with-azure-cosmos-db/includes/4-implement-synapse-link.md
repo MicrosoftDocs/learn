@@ -25,6 +25,6 @@ After creating a linked service, the Cosmos DB database and its containers will 
 >
 >| Analytical store enabled | Analytical store <u>not</u> enabled |
 >|--|--|
->|![An icon showing interlocking rectangles and a bar chart](../media/htap-container.png) | ![An icon showing interlocking rectangles but no bar chart](../media/oltp-container.png)|
+>|![An icon showing interlocking rectangles and a bar chart.](../media/htap-container.png) | ![An icon showing interlocking rectangles but no bar chart.](../media/oltp-container.png)|
 >
 > You can query a container without an analytical store, but you won't benefit from the advantages of an HTAP solution that offloads analytical query overhead from the operational data store.
