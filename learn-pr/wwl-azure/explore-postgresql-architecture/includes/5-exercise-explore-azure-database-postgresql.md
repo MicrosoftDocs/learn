@@ -20,7 +20,7 @@ In this exercise, you'll create an Azure Database for PostgreSQL flexible server
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. Subscription - your subscription.
     1. Resource group - **PostgreSQL_Flexi**.
-    1. Server name - **postgresql-fx99** (This must be globally unique, so replace 99 with random numbers).
+    1. Server name - **postgresql-fx99** (Server name must be globally unique, so replace 99 with random numbers).
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Development**.
@@ -32,7 +32,7 @@ In this exercise, you'll create an Azure Database for PostgreSQL flexible server
     1. Select **Next: Networking >**.
 1. On the Flexible server **Networking** tab, enter each field as follows:
     1. Connectivity method: (o) Public access (allowed IP addresses)
-    1. Under Firewall rules, select **+ Add current client IP address**. This adds your current IP address as a firewall rule. You can optionally name this firewall rule to something meaningful.
+    1. Under Firewall rules, select **+ Add current client IP address**, to add your current IP address as a firewall rule. You can optionally name this firewall rule to something meaningful.
 1. Select **Review + create**. Review your settings including how long it will take to create the server, then select **Create** to create your Azure Database for PostgreSQL flexible server. When the deployment is complete, select **Go to resource** ready for the next step.
 
 ## Examine server parameters
@@ -43,7 +43,7 @@ In this exercise, you'll create an Azure Database for PostgreSQL flexible server
 
 ## Change backup retention period
 
-1. Navigate to the **Overview** blade, under **Settings**, select **Compute + storage**. This blade displays your current Compute tier, and the option to upgrade it. It also displays the amount of storage you've provisioned, and the option to increase storage.
+1. Navigate to the **Overview** blade, under **Settings**, select **Compute + storage**. This section displays your current Compute tier, and the option to upgrade it. It also displays the amount of storage you've provisioned, and the option to increase storage.
 1. Under **backups**, the backup retention period in days is displayed. Using the slider bar, change the backup retention period to 14 days. Select **Save** to retain your changes.
 1. When you've completed this exercise, **STOP** the server. You'll not be charged while the server is in a stopped state.
 
@@ -54,7 +54,7 @@ In this exercise, you'll create an Azure Database for PostgreSQL flexible server
 1. On the Flexible server **Basics** tab, enter each field as follows:
     1. Subscription - your subscription.
     1. Resource group - **PostgreSQL_Flexi**.
-    1. Server name - **postgresql-fx99** (This must be globally unique, so replace 99 with random numbers).
+    1. Server name - **postgresql-fx99** (Server name must be globally unique, so replace 99 with random numbers).
     1. Region - select the same region as the resource group.
     1. PostgreSQL version - select 13.
     1. Workload type - **Production (Small / Medium)**
@@ -66,7 +66,7 @@ In this exercise, you'll create an Azure Database for PostgreSQL flexible server
     1. Select **Next: Networking >**.
 1. On the Flexible server **Networking** tab, enter each field as follows:
     1. Connectivity method: (o) Public access (allowed IP addresses)
-    1. Under Firewall rules, select **+ Add current client IP address**. This adds your current IP address as a firewall rule. You can optionally name this firewall rule to something meaningful.
+    1. Under Firewall rules, select **+ Add current client IP address**, ti add your current IP address as a firewall rule. You can optionally name this firewall rule to something meaningful.
 1. Select **Review + create**. Review your settings including how long it will take to create the server, then select **Create** to create your Azure Database for PostgreSQL flexible server. When the deployment is complete, select **Go to resource** ready for the next step.
 
 ### Inspect the new server
