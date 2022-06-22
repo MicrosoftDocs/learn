@@ -1,7 +1,7 @@
 Accessibility is at the heart of Microsoft's values, and Power BI is committed to making Power BI experiences as accessible to as many people as possible. As an enterprise report creator, it's up to you to use the available tools to create inclusive reporting across the organization.
 
 > [!NOTE]
-> This unit highlights some accessible design features, and more details including a checklist, can be found in the [Power BI Documentation](power-bi/create-reports/desktop-accessibility-creating-reports).
+> This unit highlights some accessible design features, and more details including a checklist, can be found in the [Power BI Documentation](/power-bi/create-reports/desktop-accessibility-creating-reports).
 
 ## Consider your audience
 
