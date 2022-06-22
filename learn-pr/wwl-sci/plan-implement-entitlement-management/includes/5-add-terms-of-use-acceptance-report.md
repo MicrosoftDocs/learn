@@ -84,7 +84,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 ## View report of who has accepted and declined
 
-The Terms of use screen shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
+The terms-of-use-screen shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
 1.  In Microsoft Azure, in **Identity Governance**, then **Terms of use**, locate your terms of use.
 2.  For the terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.
