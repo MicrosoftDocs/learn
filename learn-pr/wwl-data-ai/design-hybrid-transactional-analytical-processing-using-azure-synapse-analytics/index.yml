@@ -1,33 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
 metadata:
-  title: Design hybrid transactional and analytical processing using Azure Synapse Analytics
-  description: "Design hybrid transactional and analytical processing using Azure Synapse Analytics"
-  ms.date: 01/05/2022
+  title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
+  description: "Plan hybrid transactional and analytical processing using Azure Synapse Analytics"
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design hybrid transactional and analytical processing using Azure Synapse Analytics
-summary: Learn how hybrid transactional and analytical processing can help you perform operational analytics with Azure Synapse Analytics.
+title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
+summary: Learn how hybrid transactional / analytical processing (HTAP) can help you perform operational analytics with Azure Synapse Analytics.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand Hybrid Transactional and Analytical Processing patterns
-  - Describe the supported analytical workloads
-  - Explain HTAP scenarios in the context of Synapse Link
-  - Describe the analytical store
-  - Understand well defined schemas
-  - Design schemas to support type of analytics
-  - Design writeback scenarios
+  - Describe Hybrid Transactional / Analytical Processing patterns.
+  - Identify Azure Synapse Link services for HTAP.
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+  Before starting this module, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/?azure-portal=true) certification first.
 iconUrl: /learn/achievements/design-a-hybrid-transactional-and-analytical-processing.svg
 levels:
 - intermediate
 roles:
 - data-engineer
 products:
-- azure-cosmos-db
 - azure-synapse-analytics
 subjects:
 - data-analytics
@@ -36,11 +30,6 @@ units:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.introduction
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.understand-patterns
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.describe-supported-analytical-workloads
-- learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.explain-htap-scenarios-context-of-synapse-link
-- learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.describe-analytical-store
-- learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.understand-well-defined-schemas
-- learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.design-schemas-to-support-type-of-analytics
-- learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.design-writeback-scenarios
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.knowledge-check
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.summary
 badge:
