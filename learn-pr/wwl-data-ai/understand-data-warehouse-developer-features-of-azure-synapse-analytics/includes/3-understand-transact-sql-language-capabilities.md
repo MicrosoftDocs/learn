@@ -25,7 +25,7 @@ In Synapse Analytics you can display the query execution plan for a dedicated sq
  > [!Note]
  > This process is not supported by serverless SQL pool in Azure Synapse Analytics.
 
- In order to see which what is running on an Azure Synapse dedicated pool we can use the following query:
+ In order to see what is running on an Azure Synapse dedicated pool we can use the following query:
 
  ```sql
 
