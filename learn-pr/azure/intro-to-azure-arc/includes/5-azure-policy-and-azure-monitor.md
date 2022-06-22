@@ -5,7 +5,7 @@ Contoso IT staff can also use Azure Policy to manage and evaluate compliance for
 > [!IMPORTANT]
 > Currently, you can only audit settings in this context. Auto-remediation is not yet available.
 
-Contoso could use *Azure Monitor* to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers. Contoso could use Azure Monitor Container Insights to collect health and resource untilization data for their Azure Arc-enabled Kubernetes clusters.
+Contoso could use *Azure Monitor* to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers. Contoso could use Azure Monitor Container Insights to collect health and resource utilization data for their Azure Arc-enabled Kubernetes clusters.
 
 By maintaining their on-premises infrastructures, Contoso could benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, they could monitor resources such as their onboarded servers. For example, they could select **Insights** to review a map of their resources' network connections.
 
