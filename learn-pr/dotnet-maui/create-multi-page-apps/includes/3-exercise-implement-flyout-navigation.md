@@ -40,7 +40,7 @@ In this exercise, you'll add flyout navigation to the app.
     </FlyoutItem>
     ```
 
-1. Add a `FlyoutIcon` property to the `<Shell>` node to display an image. By default it will display 3 horizontal bars, but we can change it to be whatever we like. The markup should look like this:
+1. Add a `FlyoutIcon` property to the `<Shell>` node to display an image. By default it will display three horizontal bars, but we can change it to be whatever we like. The markup should look like this:
 
     ```xaml
     <Shell
