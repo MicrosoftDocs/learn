@@ -1,4 +1,4 @@
-The **HttpClient** class provides an abstraction of the connection to the network. An app that uses this class is independent of the native platform networking stack. The .NET MAUI templates map the **HttpClient** class to code that utilizes to the native networking stack of each platform. This enables an application to take advantage of platform-specific network configuration and optimization features. This is especially important when you need to configure a client application to connect securely to a REST web service.
+The **HttpClient** class provides an abstraction of the connection to the network. An app that uses this class is independent of the native platform networking stack. The .NET MAUI templates map the **HttpClient** class to code that utilizes the native networking stack of each platform. This enables an application to take advantage of platform-specific network configuration and optimization features. This is especially important when you need to configure a client application to connect securely to a REST web service.
 
 In this unit, you'll learn how to configure an HTTP client application to use the network protection capabilities provided by the underlying platform.
 
@@ -54,7 +54,7 @@ There are other options that you can add to be more specific about how you want 
 
 ## Configure Android Network security
 
-Like iOS, Android has a similar security model around network communication. This model was introduced with Android 9 (API level 28). Clear text (non-HTTPS) traffic is disabled by default when your application targets Android 9 (API Level 28) or higher. This policy may affect your development cycle if your app needs to download an image or file on a server hasn’t been configured for HTTPS. Also, you may just be trying to debug your application locally and don’t want to install development certificates. You may have strong business requirements that all web traffic on all versions of Android is always HTTPS. The Network Security Configuration feature of Android enables you to finely tune network traffic security in an app.
+Like iOS, Android has a similar security model around network communication. This model was introduced with Android 9 (API level 28). Clear text (non-HTTPS) traffic is disabled by default when your application targets Android 9 (API Level 28) or higher. This policy may affect your development cycle if your app needs to download an image or file on a server that hasn’t been configured for HTTPS. Also, you may just be trying to debug your application locally and don’t want to install development certificates. You may have strong business requirements that all web traffic on all versions of Android is always HTTPS. The Network Security Configuration feature of Android enables you to finely tune network traffic security in an app.
 
 ### Permit clear text traffic
 
