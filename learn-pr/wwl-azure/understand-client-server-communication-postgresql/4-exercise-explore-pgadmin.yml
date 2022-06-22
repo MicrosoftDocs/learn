@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-client-server-communication-postgresql.exercise-explore-pgadmin
+title: 'Exercise: Explore pgAdmin'
+metadata:
+  title: 'Exercise: Explore pgAdmin'
+  description: "Exercise: Explore pgAdmin"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-explore-pgadmin.md)]
