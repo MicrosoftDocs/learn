@@ -93,7 +93,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
      | Field | Description | Example |
      | :----- | :------ | :----- |
      | Scope name | The name of your scope. A common scope naming convention is resource.operation.constraint. | Employees.Read.All |
-     | Who can consent | Whether this scope can be consented to by users or if admin consent is required. Select Admins only for higher-privileged permissions. | Admins and users |
+     | Who can consent | The admin chooses if this scope can be consented to by users, or if admin consent is required. Select Admins only for higher-privileged permissions. | Admins and users |
      | Admin consent display name | A short description of the scope's purpose that only admins will see. | Read-only access to employee records |
      | Admin consent description | A more detailed description of the permission granted by the scope that only admins will see. | Allow the application to have read-only access to all employee data. |
      | User consent display name | A short description of the scope's purpose. Shown to users only if you set the *Who can consent to Admins and users*. | Read-only access to your employee records |
