@@ -3,8 +3,7 @@ You should have learned how to connect Microsoft 365 Defender security solutions
 You should now be able to:
 
 - Activate the Microsoft 365 Defender connector in Microsoft Sentinel
-- Activate the Microsoft Defender for Endpoint connector in Microsoft Sentinel
-- Activate the Microsoft Defender for Office 365 connector in Microsoft Sentinel
+- Activate the Microsoft Defender for Cloud connector in Microsoft Sentinel
 
 ## Learn more
 
