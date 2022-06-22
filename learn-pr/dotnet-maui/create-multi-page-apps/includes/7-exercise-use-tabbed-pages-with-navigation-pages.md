@@ -52,7 +52,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
     Whenever a `Button` is clicked, the app will navigate to the **AstronomicalBodyPage** page. But we still need to send what type of astronomical body to display.
 
-1. To send data to the **AstronomicalBodyPage** add a query parameter string to the routing information. It will be of the form `?astroName=astroBodyToDisplay`.
+1. To send data to the **AstronomicalBodyPage**, add a query parameter string to the routing information. It will be of the form `?astroName=astroBodyToDisplay`.
 
     ```csharp
     btnComet.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=comet");
@@ -61,7 +61,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
     btnSun.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=sun");
     ```
 
-1. To receive the data on the **AstronomicalBodyPage** first create a class-level property to hold the incoming data. Name it `AstroName`.
+1. To receive the data on the **AstronomicalBodyPage**, first create a class-level property to hold the incoming data. Name it `AstroName`.
 
     ```csharp
     string astroName;
@@ -80,7 +80,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
     Here the `UpdateAstroBodyUI(astroName)` is a helper function used to update the user interface immediately when the `AstroName` property is set.
 
-1. Then you need to decorate the class with an annotation that maps the incoming query parameter the property you just created.
+1. Then you need to decorate the class with an annotation that maps the incoming query parameter to the property you just created.
 
     ```csharp
     [QueryProperty(nameof(AstroName), "astroName")]
