@@ -36,6 +36,7 @@ units:
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-understand-performance-issues-related-to-tables
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-table-distribution-design
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-indexes-to-improve
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-query-plans
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-use-table-distribution-indexes-to-improve-performance
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.create-statistics-to-improve
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.improve-with-materialized-views

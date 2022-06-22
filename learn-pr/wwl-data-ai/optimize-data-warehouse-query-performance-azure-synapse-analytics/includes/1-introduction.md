@@ -6,6 +6,7 @@ In this module you will:
 -	Exercise - Understand Performance Issues Related to Tables
 -	Understand Table Distribution Design
 -	Use Indexes to Improve Query Performance
+-   Understand Query Plans
 -	Exercise - Use Table Distribution and Indexes to Improve Performance
 -	Create Statistics to Improve Query Performance
 -	Improve Query Performance with Materialized Views
