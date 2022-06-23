@@ -29,6 +29,8 @@ products:
 - azure-expressroute
 - azure-virtual-network
 - azure-vpn-gateway
+subjects:
+- security
 modules:
 - learn.azure.secure-network-connectivity-azure
 - learn.configure-the-network-for-your-virtual-machines

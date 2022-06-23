@@ -38,6 +38,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.bicep-conditions-loops.introduction
 - learn.azure.bicep-conditions-loops.use-conditions-deploy-resources

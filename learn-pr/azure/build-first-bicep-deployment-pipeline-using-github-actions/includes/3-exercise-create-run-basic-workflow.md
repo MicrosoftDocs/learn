@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 You want to automate deployment of updates to your toy company's website. As a first step, you create a basic workflow in GitHub Actions.
 
 In this exercise, you'll:

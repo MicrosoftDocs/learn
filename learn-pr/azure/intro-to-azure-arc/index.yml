@@ -10,11 +10,13 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Introduction to Azure Arc
-summary: In this module, you'll be able to describe Azure Arc enabled servers. You'll also be able to describe Azure Arc enabled Kubernetes.
+summary: In this module, you'll learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters. You'll also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance and how Azure Arc can integrate with other Azure services..
 abstract: | 
   In this module, you will:
-  - Describe Azure Arc enabled servers.
-  - Describe Azure Arc enabled Kubernetes.
+  - Describe Azure Arc-enabled servers.
+  - Describe Azure Arc-enabled Kubernetes.
+  - Describe Azure Arc-enabled data services.
+  - Describe how Azure Arc can integrate with other Azure services.
 prerequisites: | 
   - Knowledge of personal computer operating systems.
   - Fundamentals of cloud computing.
@@ -26,12 +28,16 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- cloud-computing
 units:
 - learn.azure.intro-to-azure-arc.1-introduction
 - learn.azure.intro-to-azure-arc.2-describe-azure-arc
 - learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
 - learn.azure.intro-to-azure-arc.4-describe-azure-arc-enabled-kubernetes
+- learn.azure.intro-to-azure-arc.4a-describe-azure-arc-enabled-data-services
 - learn.azure.intro-to-azure-arc.5-azure-policy-and-azure-monitor
+- learn.azure.intro-to-azure-arc.5a-azure-security
 - learn.azure.intro-to-azure-arc.6-knowledge-check
 - learn.azure.intro-to-azure-arc.7-summary
 badge:

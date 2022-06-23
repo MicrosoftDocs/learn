@@ -31,6 +31,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- cloud-computing
 units:
 - learn.iot.threadx-break-thread-suspension.introduction
 - learn.iot.threadx-break-thread-suspension.overview
@@ -42,4 +44,4 @@ units:
 - learn.iot.threadx-break-thread-suspension.knowledge-check
 - learn.iot.threadx-break-thread-suspension.summary
 badge:
-  uid: learn.iot.threadx-break-thread-suspension.badge 
+  uid: learn.iot.threadx-break-thread-suspension.badge

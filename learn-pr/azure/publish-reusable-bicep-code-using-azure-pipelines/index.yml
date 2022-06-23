@@ -50,6 +50,9 @@ languages:
 products:
   - azure-resource-manager
   - azure-devops
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.publish-reusable-bicep-code-using-azure-pipelines.introduction
 - learn.azure.publish-reusable-bicep-code-using-azure-pipelines.publish-bicep-code-deployment-pipeline

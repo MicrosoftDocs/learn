@@ -36,6 +36,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- blockchain
 units:
 - learn.reactors.blockchain-tokens.1-introduction
 - learn.reactors.blockchain-tokens.2-what-are-tokens

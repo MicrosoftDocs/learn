@@ -25,6 +25,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- virtual-machine
 modules:
 - learn.wwl.implement-hyper-v-replica
 - learn.wwl.implement-windows-server-failover-clustering

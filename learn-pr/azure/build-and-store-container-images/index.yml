@@ -27,6 +27,10 @@ products:
 - azure
 - azure-container-instances
 - azure-container-registry
+subjects:
+- container
+- database
+- data-engineering
 units:
 - learn.azure-container-registry.introduction
 - learn.azure-container-registry.deploy-acr

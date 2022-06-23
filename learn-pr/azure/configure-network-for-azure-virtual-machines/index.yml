@@ -31,6 +31,9 @@ products:
 - azure-expressroute
 - azure-vpn-gateway
 - azure-virtual-network
+subjects:
+- virtual-machine
+- networking
 units:
 - learn.configure-the-network-for-your-virtual-machines.1-introduction
 - learn.configure-the-network-for-your-virtual-machines.2-describe-azure-virtual-networking

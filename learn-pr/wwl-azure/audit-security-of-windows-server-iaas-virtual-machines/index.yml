@@ -42,6 +42,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- threat-protection
 units:
 - learn.wwl.audit-security-of-windows-server-iaas-vms.introduction
 - learn.wwl.audit-security-of-windows-server-iaas-vms.describe-azure-security-center

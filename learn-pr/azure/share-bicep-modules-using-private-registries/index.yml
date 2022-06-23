@@ -37,6 +37,9 @@ roles:
   - administrator
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.share-bicep-modules-using-private-registries.introduction
 - learn.azure.share-bicep-modules-using-private-registries.understand-module-registries

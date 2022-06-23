@@ -32,6 +32,9 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.introduction
 - learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.connect-to-privileged-endpoint

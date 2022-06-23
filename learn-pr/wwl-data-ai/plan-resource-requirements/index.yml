@@ -22,6 +22,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- infrastructure
 units:
 - learn.wwl.plan-resource-requirements.introduction
 - learn.wwl.plan-resource-requirements.understand-throughput

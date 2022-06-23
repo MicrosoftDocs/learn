@@ -7,13 +7,13 @@ From there, the team used the Pricing calculator to get a more detailed estimate
 The team also created a checklist of cost-saving measures that it can use to help keep down costs. This list includes:
 
 > [!div class="checklist"]
-> * Perform cost analysis before you deploy.
-> * Use Azure Advisor to monitor your usage.
-> * Use spending limits to prevent accidental spending.
-> * Use Azure Reservations to prepay.
-> * Choose low-cost locations and regions.
-> * Research available cost-saving offers.
-> * Apply tags to identify cost owners.
+> * Perform cost analysis before you deploy
+> * Use Azure Advisor to monitor your usage
+> * Use spending limits to prevent accidental spending
+> * Use Azure Reservations to prepay
+> * Choose low-cost locations and regions
+> * Research available cost-saving offers
+> * Apply tags to identify cost owners
 
 With these measures in place, the Tailwind Traders team is ready to take the next steps toward cloud migration.
 
@@ -27,7 +27,7 @@ Then, use the [Azure documentation](/azure/) to map your current infrastructure 
 
 In this module, you learned about the many factors that affect the total cost of running on Azure.
 
-The [Control Azure spending and manage bills with Azure Cost Management + Billing](../../../paths/control-spending-manage-bills/index.yml?azure-portal=true) learning path is a great next step toward learning how to monitor and control your Azure spending.
+The [Control Azure spending and manage bills with Microsoft Cost Management](../../../paths/control-spending-manage-bills/index.yml?azure-portal=true) learning path is a great next step toward learning how to monitor and control your Azure spending.
 
 Here are additional resources to help you go further.
 
@@ -43,10 +43,10 @@ Here are additional resources to help you go further.
 
 ### Manage and minimize costs
 
-* See [Azure Cost Management + Billing](https://azure.microsoft.com/services/cost-management?azure-portal=true) to learn more about analyzing costs, creating and managing budgets, exporting data, and reviewing and acting on recommendations.
+* See [Microsoft Cost Management](https://azure.microsoft.com/services/cost-management?azure-portal=true) to learn more about analyzing costs, creating and managing budgets, exporting data, and reviewing and acting on recommendations.
 * Take advantage of significant discounts on development and testing workloads. To learn more, see [Azure Dev/Test pricing](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true).
 * Learn more about how [Azure Reservations](/azure/billing/billing-save-compute-costs-reservations?azure-portal=true) can save you money when you commit to one-year or three-year pricing plans.
-* Learn how to [prevent unexpected charges with Azure billing and cost management](/azure/cost-management-billing/manage/getting-started?azure-portal=true).
+* Learn how to [prevent unexpected charges with Microsoft Cost Management](/azure/cost-management-billing/manage/getting-started?azure-portal=true).
 * See [Azure spending limit](/azure/billing/billing-spending-limit?azure-portal=true) to learn what happens when you reach your spending limit and how to remove it.
 * Learn how to [start and stop VMs during off-hours](/azure/automation/automation-solution-vm-management?azure-portal=true).
 * See how [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) can help save costs by bringing Windows Server and SQL Server on-premises licenses with Software Assurance to Azure.

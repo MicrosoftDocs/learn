@@ -25,6 +25,8 @@ products:
 - azure
 - azure-batch
 - azure-virtual-machines
+subjects:
+- cloud-computing
 units:
 - learn.intro-to-hpc.1-introduction
 - learn.intro-to-hpc.2-azure-batch

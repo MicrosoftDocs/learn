@@ -30,6 +30,8 @@ products:
 - dotnet
 - dotnet-core
 - azure-batch
+subjects:
+- cloud-computing
 units:
 - learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.introduction
 - learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.manage-azure-batch-workloads-from-dotnet-app

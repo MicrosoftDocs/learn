@@ -21,6 +21,9 @@ roles:
 products:
 - dynamics-365
 - dynamics-customer-service
+subjects:
+- collaboration
+- device-management
 modules:
 - learn.wwl.introduction-microsoft-learn-educators-program
 - learn.wwl.onboard-microsoft-learn-educators-program

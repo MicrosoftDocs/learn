@@ -42,6 +42,9 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?&azure-portal=true) version installed locally.
+subjects:
+  - devops
+  - cloud-computing
 units:
   - learn.arm-template-whatif.1-introduction
   - learn.arm-template-whatif.2-deployment-modes

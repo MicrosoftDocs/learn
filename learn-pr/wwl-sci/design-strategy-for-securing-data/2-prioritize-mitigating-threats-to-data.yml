@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-strategy-for-securing-data.prioritize-mitigating-threats-to-data
+title: Prioritize mitigating threats to data
+metadata:
+  title: Prioritize mitigating threats to data
+  description: "Prioritize mitigating threats to data"
+  ms.date: 06/09/2022
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-prioritize-mitigating-threats-to-data.md)]

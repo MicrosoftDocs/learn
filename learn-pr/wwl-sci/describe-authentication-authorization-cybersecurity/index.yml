@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- security
 units:
 - learn.wwl.describe-authentication-authorization-cybersecurity.introduction
 - learn.wwl.describe-authentication-authorization-cybersecurity.define-authentication

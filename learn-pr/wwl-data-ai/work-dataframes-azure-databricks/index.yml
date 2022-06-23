@@ -3,7 +3,7 @@ uid: learn.wwl.work-dataframes-azure-databricks
 metadata:
   title: Work with DataFrames in Azure Databricks
   description: "Work with DataFrames in Azure Databricks"
-  ms.date: 01/06/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -28,6 +28,10 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- artificial-intelligence
+- data-analytics
+- data-lake
 units:
 - learn.wwl.work-dataframes-azure-databricks.introduction
 - learn.wwl.work-dataframes-azure-databricks.describe-dataframe

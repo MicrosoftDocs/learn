@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-devtest-labs
+subjects:
+- virtual-machine
 units:
 - learn.azure.intro-to-azure-devtest-labs.1-introduction
 - learn.azure.intro-to-azure-devtest-labs.2-what-is-azure-devtest-labs

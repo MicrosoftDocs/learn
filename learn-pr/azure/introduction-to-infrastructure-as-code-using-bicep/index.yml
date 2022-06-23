@@ -31,7 +31,10 @@ languages:
   - bicep
 products:
   - azure-resource-manager
-units:  
+subjects:
+  - devops
+  - cloud-computing
+units:
 - learn.azure.introduction-infrastructure-code-using-bicep.introduction
 - learn.azure.introduction-infrastructure-code-using-bicep.what-infrastructure-code
 - learn.azure.introduction-infrastructure-code-using-bicep.what-azure-resource-manager

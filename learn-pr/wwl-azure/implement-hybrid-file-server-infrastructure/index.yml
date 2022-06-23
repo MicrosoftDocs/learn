@@ -44,6 +44,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- development-tools
 units:
 - learn.wwl.implement-hybrid-file-server-infrastructure.introduction
 - learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-services

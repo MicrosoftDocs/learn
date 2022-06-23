@@ -14,7 +14,7 @@ Logic Apps is a member of [Azure Integration Services](https://azure.microsoft.c
 
 Azure Logic Apps and Azure Functions may seem similar but there are basic differences. Azure Functions is a code-first technology. Azure Logic Apps is a design-first technology. 
 
-:::image type="content" source="../media/select-logic-apps.png" alt-text="Flowchart comparing Azure function and Azure Logic Apps solutions.":::
+:::image type="content" source="../media/select-logic-apps.png" alt-text="Flowchart comparing Azure Function and Azure Logic Apps solutions.":::
 
 
 
@@ -26,7 +26,7 @@ Here are some other differences.
 | Method| Write code and use the durable functions extension| Create orchestrations by using a GUI or editing configuration files |
 | Connectivity| [Large selection of built-in binding types](/azure/azure-functions/functions-triggers-bindings), write code for custom bindings| [Large collection of connectors](/azure/connectors/apis-list), [Enterprise Integration Pack for B2B scenarios](/azure/logic-apps/logic-apps-enterprise-integration-overview), [build custom connectors](/azure/logic-apps/custom-connector-overview) |
 | Monitoring| Azure Application Insights| Azure portal, Azure Monitor logs |
-| Execution context| Can be run locally or in the cloud| Runs only in the cloud |
+
 
 
 > [!TIP]
@@ -51,7 +51,7 @@ When designing for Logic Apps consider integration, performance, conditionals, a
 
  
 
-:::image type="content" source="../media/investigate-logic-apps.png" alt-text="Flowchart to select Azure Logic Apps.":::
+:::image type="content" source="../media/investigate-logic-apps.png" alt-text="Flowchart to select Azure Logic Apps. Alternatives are described in the content.":::
 
 
 > [!NOTE]

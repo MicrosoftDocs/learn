@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.introduction
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.create-azure-machine-learning-data-labeling-project

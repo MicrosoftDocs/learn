@@ -36,6 +36,8 @@ products:
 - azure-cost-management
 - azure-firewall
 - azure-key-vault
+subjects:
+- cloud-security
 modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.azure.secure-network-connectivity-azure

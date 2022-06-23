@@ -6,4 +6,4 @@ A major part of the job of a database administrator is proper performance monito
 - Identify critical Azure metrics
 - Learn how to collect metrics for an established baseline
 - Use extended events for performance analysis
-- Understand Azure SQL Database Intelligent Insights
+- Understand Azure SQL Insights

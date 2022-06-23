@@ -4,7 +4,7 @@
 
 In this module, you'll learn how to: 
 
-- Identify different kinds of machine learning model.
+- Identify different kinds of machine learning models.
 - Use the automated machine learning capability of Azure Machine Learning to train and deploy a predictive model.
 
 To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).

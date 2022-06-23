@@ -28,6 +28,9 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- data-engineering
+- networking
 units:
   - learn.aks-network-design-azure-container-network-interface.1-introduction
   - learn.aks-network-design-azure-container-network-interface.2-overview-of-kubernetes-networking

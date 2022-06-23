@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- devops
 units:
 - learn.get-started-with-devops.1-introduction
 - learn.get-started-with-devops.2-what-is-devops
