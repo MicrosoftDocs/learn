@@ -2,14 +2,14 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics
 metadata:
   title: Use Delta Lake in Azure Synapse Analytics
-  description: "Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Synapse Anaytics."
+  description: "Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Synapse Analytics."
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Delta Lake in Azure Synapse Analytics
-summary: Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Synapse Anaytics.
+summary: Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Synapse Analytics.
 abstract: |
   In this module, you'll learn how to:
   - Describe core features and capabilities of Delta Lake.
