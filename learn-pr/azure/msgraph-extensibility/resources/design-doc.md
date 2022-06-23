@@ -17,8 +17,8 @@ microsoft-graph
 ## Prerequisites
 
 1. Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
-2. Basic knowledge of REST APIs
-3. Basic knowledge of Microsoft Graph and working with Microsoft Graph APIs
+2. Basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations
+3. Basic knowledge of working with data in Azure AD and Microsoft 365 using Microsoft Graph
 
 ## Summary
 
