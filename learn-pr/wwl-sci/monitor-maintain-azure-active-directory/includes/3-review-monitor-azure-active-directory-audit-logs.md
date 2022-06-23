@@ -11,7 +11,7 @@ An audit log has a default list view that shows the:
 - Target
 - Initiator/actor (who) of an activity
 
-:::image type="content" source="../media/list-view.png" alt-text="Screenshot of the available Audit logs you can review to ensure your systems are running effectively.":::
+   :::image type="content" source="../media/list-view.png" alt-text="Screenshot of the available Audit logs you can review to ensure your systems are running effectively.":::
 
 You can customize the list view by clicking **Columns** in the toolbar.
 
@@ -37,7 +37,7 @@ You can filter the audit data on the following fields:
 - Initiated by (Actor)
 - Date range
 
-:::image type="content" source="../media/filter.png" alt-text="Screenshot of the Filter object dialog.  Use the filters to organize and review the data.":::
+   :::image type="content" source="../media/filter.png" alt-text="Screenshot of the Filter object dialog.  Use the filters to organize and review the data.":::
 
 The **Service** filter allows you to select from a drop-down list of the following services:
 

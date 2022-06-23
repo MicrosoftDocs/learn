@@ -51,7 +51,7 @@ A sign-ins log has a default list view that shows the:
 - Status of the risk detection
 - Status of the multifactor authentication (MFA) requirement
 
-:::image type="content" source="../media/sign-activity.png" alt-text="Screenshot shows the Office 365 SharePoint Online Sign-ins.  Check for activity that might be concerning.":::
+   :::image type="content" source="../media/sign-activity.png" alt-text="Screenshot shows the Office 365 SharePoint Online Sign-ins.  Check for activity that might be concerning.":::
 
 You can customize the list view by clicking Columns in the toolbar.
 
@@ -106,13 +106,13 @@ First, narrow down the reported data to a level that works for you. Second, filt
 | Authenticated SMTP |  | Used by POP and IMAP clients to send email messages. |
 | Autodiscover |  | Used by Outlook and EAS clients to find and connect to mailboxes in Exchange Online. |
 | Exchange ActiveSync |  | Shows all sign-in attempts where the EAS protocol has been attempted. |
-| Browser | yes | Shows all sign-in attempts from users using web browsers. |
+| Browser | Yes | Shows all sign-in attempts from users using web browsers. |
 | Exchange ActiveSync |  | Shows all sign-in attempts from users with client apps using Exchange ActiveSync to connect to Exchange Online. |
 | Exchange Online PowerShell |  | Used to connect to Exchange Online with remote PowerShell. If you block basic authentication for Exchange Online PowerShell, you need to use the Exchange Online PowerShell module to connect. |
 | Exchange Web Services |  | A programming interface that's used by Outlook, Outlook for Mac, and third-party apps. |
 | IMAP4 |  | A legacy mail client using IMAP to retrieve email. |
 | MAPI over HTTP |  | Used by Outlook 2010 and later. |
-| Mobile apps and desktop clients | yes | Shows all sign-in attempts from users using mobile apps and desktop clients. |
+| Mobile apps and desktop clients | Yes | Shows all sign-in attempts from users using mobile apps and desktop clients. |
 | Offline Address Book |  | A copy of address list collections that are downloaded and used by Outlook. |
 | Outlook Anywhere (RPC over HTTP) |  | Used by Outlook 2016 and earlier. |
 | Outlook Service |  | Used by the Mail and Calendar app for Windows 10. |
@@ -179,8 +179,8 @@ By clicking an item, you get more details about the sign-in operation:
 - MFA Required
 - Sign-in status
 
-> [!NOTE]
-> IP addresses are issued in such a way that there is no definitive connection between an IP address and where the computer with that address is physically located. Mapping IP addresses is complicated by the fact that mobile providers and VPNs issue IP addresses from central pools that are often very far from where the client device is actually used. Currently in Azure AD reports, converting an IP address to a physical location is a best effort based on traces, registry data, reverse look-ups, and other information.
+   > [!NOTE]
+   > IP addresses are issued in such a way that there is no definitive connection between an IP address and where the computer with that address is physically located. Mapping IP addresses is complicated by the fact that mobile providers and VPNs issue IP addresses from central pools that are often very far from where the client device is actually used. Currently in Azure AD reports, converting an IP address to a physical location is a best effort based on traces, registry data, reverse look-ups, and other information.
 
 On the **Users** page, you get a complete overview of all user sign-ins by clicking **Sign-ins** in the **Activity** section.
 
