@@ -16,12 +16,12 @@ summary: |
   > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
    In this module, you'll practice how to:
-    - "Install Hyper-V"
-    - "Create a Virtual Machine"
-    - "Deploy Active Directory"
-    - "Create a user in Active Directory"
-    - "Create an Azure AD tenant"
-    - "Create a global administrator account in Azure AD"
+    - Install Hyper-V
+    - Create a Virtual Machine
+    - Deploy Active Directory
+    - Create a user in Active Directory
+    - Create an Azure AD tenant
+    - Create a global administrator account in Azure AD
 prerequisites: | 
   - None
 iconUrl: /learn/achievements/provision-users-to-azure-ad-using-cloud-sync.svg
