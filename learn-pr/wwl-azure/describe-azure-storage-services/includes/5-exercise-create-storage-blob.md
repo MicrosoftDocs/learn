@@ -2,15 +2,17 @@
 
 In this task, we will create a new storage account.
 
+```azurecli
+<rgn>[sandbox resource group name]</rgn>
+```
+
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 2.  Select Create a resource.
 3.  Under Categories, select Storage.
 4.  Unders Storage Account, select Create.
 5.  On the Basics tab of the Create storage account blade, fill in the following information. Leave the defaults for everything else.
     
-    Setting | Value --------- | --------- Subscription | Default (Concierge) Resource Group | 
-    [sandbox resource group name]
-    Storage account name | User-defined Location | Default Performance | Standard Redundancy | Locally redundant storage (LRS)
+    Setting | Value --------- | --------- Subscription | Default (Concierge) Resource Group | <rgn>[sandbox resource group name]</rgn> Storage account name | User-defined Location | Default Performance | Standard Redundancy | Locally redundant storage (LRS)
     
     :::row:::
       :::column:::
@@ -33,7 +35,7 @@ In this task, we will create a new storage account.
         Resource group
       :::column-end:::
       :::column:::
-        \[sandbox resource group name\]
+        &lt;rgn&gt;\[sandbox resource group name\]&lt;/rgn&gt;
       :::column-end:::
     :::row-end:::
     :::row:::
