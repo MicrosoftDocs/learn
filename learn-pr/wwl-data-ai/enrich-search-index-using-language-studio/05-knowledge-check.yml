@@ -34,10 +34,10 @@ quiz:
       explanation: "Correct. You need to edit the index, indexer, and custom skillset to store the enrichments."
     - content: "Create a function app."
       isCorrect: false
-      explanation: "Incorrect. You do need to create a function app to call the trained model, but this doesn't store the enrichments in the search index."
+      explanation: "Incorrect. You do need to create a function app to call the trained model, but you don't store the enrichments in the search index."
     - content: "Train a custom text classification model."
       isCorrect: false
-      explanation: "Incorrect. You do need to train the classification model, but this doesn't store the enrichments in the search index."
+      explanation: "Incorrect. You do need to train the classification model, but you don't store the enrichments in the search index."
   - content: "Where do you copy the full endpoint to call the function app from?"
     choices:
     - content: "You can find the endpoint in the Azure portal."

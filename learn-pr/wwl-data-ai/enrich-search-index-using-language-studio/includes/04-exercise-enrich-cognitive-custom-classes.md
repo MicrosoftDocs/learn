@@ -1,6 +1,6 @@
 You've built a search solution and now want to add cognitive services for language enrichments to your indexes.
 
-:::image type="content" source="../media/exercise-overview.png" alt-text="A diagram showing the components of this exercise. Azure Cognitive Search, Cognitice services for Language, and a Function App." border="false":::
+:::image type="content" source="../media/exercise-overview.png" alt-text="A diagram showing the components of this exercise. Azure Cognitive Search, Cognitive services for Language, and a Function App." border="false":::
 
 In this exercise, you'll create an Azure Cognitive Search solution and enrich an index with the results from a Language Studio custom text classification project. You'll create a function app to connect search and your classification model together.
 
@@ -10,7 +10,7 @@ In this exercise, you'll create an Azure Cognitive Search solution and enrich an
 
 
 
-## Setup your development environment with Python, VSCode and VSCode Extensions
+## Set up your development environment with Python, VSCode and VSCode Extensions
 
 Install these tools to complete this exercise. You can still follow along with the steps without these tools.
 
@@ -21,11 +21,11 @@ Install these tools to complete this exercise. You can still follow along with t
 1. Install [Python Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 
-## Setup your Azure resources
+## Set up your Azure resources
 
-To save you time, select this Azure arm template to create resources you'll need later in the exercise.
+To save you time, select this Azure ARM template to create resources you'll need later in the exercise.
 
-### Deploy a pre-built arm template 
+### Deploy a pre-built ARM template 
 
 1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploytoazure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
 
@@ -39,7 +39,7 @@ To save you time, select this Azure arm template to create resources you'll need
 1. Select **Create**.
 
     > [!NOTE]
-    > There is an error shown, **You will need to Agree to the terms of service below to create this resource successfully.**, by selecting **Create** you are agreeing to them.
+    > There's an error shown, **You will need to Agree to the terms of service below to create this resource successfully.**, by selecting **Create** you are agreeing to them.
     
 1. Select **Go to resource group** to see all the resources that you've created.
 
@@ -110,7 +110,7 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
 
 1. Select **Create**.
 
-    :::image type="content" source="../media/select-additional-features.png" alt-text="A screenshot showing adding the custom text classifcation feature.":::
+    :::image type="content" source="../media/select-additional-features.png" alt-text="A screenshot showing adding the custom text classification feature.":::
 1. Add the **Custom text classification & Custom named entity recognition feature**.
 1. Select **Continue to create your resource**.
 
@@ -160,7 +160,7 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
 
 ### Train your custom text classification AI model
 
-1. On the left select **Training jobs**.
+1. On the left, select **Training jobs**.
 
     :::image type="content" source="../media/training-jobs.png" alt-text="A screenshot showing how to create to training job.":::
 
@@ -169,11 +169,11 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
     :::image type="content" source="../media/start-training-job.png" alt-text="A screenshot showing the information needed to create a training job.":::
 1. In **Train a new modal**, enter **movie-genre-classifier**.
 1. Select **Train**.
-1. Training the classifier model should take less than ten minutes. Wait for the status to change to **Training succeeded**.
+1. Training the classifier model should take less than 10 minutes. Wait for the status to change to **Training succeeded**.
 
 ### Deploy your custom text classification AI model
 
-1. On the left select **Deploying a model**.
+1. On the left, select **Deploying a model**.
 
     :::image type="content" source="../media/deploying-model.png" alt-text="A screenshot showing how to deploy a model.":::
 
@@ -211,7 +211,7 @@ Create a search index that you can enrich with this model, you'll index all the 
 
     :::image type="content" source="../media/connect-data.png" alt-text="A screenshot showing the data connection information.":::
 
-1. In **Data Source**, select **Azure BLob Storage**.
+1. In **Data Source**, select **Azure Blob Storage**.
 1. In **Data source name**, enter **movie-summaries**.
 1. Select Choose an existing connection, then select the container you just created, **search-data**.
 1. Select **Add cognitive skills**.
@@ -247,15 +247,15 @@ You'll now create a Python function app that your cognitive search custom skills
 1. In Visual Studio Code, open the **movie-genre-function** folder.
 
     :::image type="content" source="../media/optimize-visual-studio-code.png" alt-text="A screenshot of Visual Studio Code showing the optimize function app dialog.":::
-1. If you have installed all the required extensions you are prompted to optimize the project. Select **Yes**.
+1. If you've installed all the required extensions, you're prompted to optimize the project. Select **Yes**.
     
     :::image type="content" source="../media/select-python-interpreter.png" alt-text="A screenshot showing selecting version 3.8 of the Python interpreter.":::
 
 1. Select your Python interpreter, it should be version 3.8.
-1. The workspace will be updated, if you are asked to connect it to the workspace folder, select **Yes**.
+1. The workspace will be updated, if you're asked to connect it to the workspace folder, select **Yes**.
 1. Press <kbd>F5</kbd> to debug the app.
 
-    :::image type="content" source="../media/testing-function-app.png" alt-text="A screenshot shwoing the function app running.":::
+    :::image type="content" source="../media/testing-function-app.png" alt-text="A screenshot showing the function app running.":::
     
     If the app is running you should see a localhost URL that you can use for local testing.
 
@@ -282,7 +282,7 @@ You'll now create a Python function app that your cognitive search custom skills
 1. Select **local.settings.json**.
 1. On the left, select **Explorer**, then select **local.settings.json**.
 
-    :::image type="content" source="../media/edit-local-settings.png" alt-text="A screesnhot of the download app settings.":::
+    :::image type="content" source="../media/edit-local-settings.png" alt-text="A screenshot of the download app settings.":::
 
 The function app needs to be connected to your custom text classification model. Follow these steps to get the configuration settings.
 
@@ -293,7 +293,7 @@ The function app needs to be connected to your custom text classification model.
 1. Select **Get prediction URL**.
 1. Select the copy icon next to the **Prediction URL**.
 1. In Visual Studio Code, at the bottom of **local.settings.json**, paste the prediction URL.
-1. In **Language Studio**, on the left select **Project settings**.
+1. In **Language Studio**, on the left, select **Project settings**.
 
     :::image type="content" source="../media/project-settings-primary-key.png" alt-text="A screenshot showing where to copy the primary key for language services from.":::
 
@@ -338,7 +338,7 @@ The function app needs to be connected to your custom text classification model.
 
 ### Test your remote function app
 
-There is a sample query you can use to test that your function app and classifier model are working correctly.
+There's a sample query you can use to test that your function app and classifier model are working correctly.
 
 1. On the left, select **Explorer**, expand the **customtectcla** folder, then select **sample.dat**.
 
@@ -347,7 +347,7 @@ There is a sample query you can use to test that your function app and classifie
 1. Copy the contents of the file.
 1. On the left, select the **Azure** extension.
 
-    :::image type="content" source="../media/execute-remote-function.png" alt-text="A screenshot showing how to exeute a remote function app from inside Visual Studio Code.":::
+    :::image type="content" source="../media/execute-remote-function.png" alt-text="A screenshot showing how to execute a remote function app from inside Visual Studio Code.":::
 
 1. Under the **Function App**, expand **Functions**, right-click on **customtextcla**, then select **Execute Function now**.
 1. In **Enter request body**, paste the sample data you copied, then press **Enter**.

@@ -15,11 +15,11 @@ Here, you'll see what you need to consider to enrich a search index using a cust
 
 Azure Blob storage can be accessed from both Language Studio and Cognitive Services. The container needs to be accessible, so the simplest option is to choose Container, but it's also possible to use private containers with some additional configuration.
 
-Along with you data, you also need a way to assign classifications for each document. Language Studio provides a graphical tool that you can use to classify each document one at a time manually.
+Along with your data, you also need a way to assign classifications for each document. Language Studio provides a graphical tool that you can use to classify each document one at a time manually.
 
 You can choose between two different kinds of project, if a  document maps to a single class use a single label classification project. If you could map a document to more than one class, use the multi label classification project.
 
-If you don't want to manually classify each document you can label all your documents before you create your Language Studio project. This involves creating a labels JSON document in this format:
+If you don't want to manually classify each document, you can label all your documents before you create your Language Studio project. This process involves creating a labels JSON document in this format:
 
 ```json
 {
@@ -61,30 +61,30 @@ If you don't want to manually classify each document you can label all your docu
   }
 ```
 
-You add as many classes as you have to the `classes` array. You add a entry for each document in the `documents` array including which classes the document matches.
+You add as many classes as you have to the `classes` array. You add an entry for each document in the `documents` array including which classes the document matches.
 
 ### Create your Language Studio project
 
 There are two ways to create your Language Studio project. If you start using the Language Studio without first creating a language service in the Azure portal, Language Studio will offer to create one for you.
 
-The most flexible way to create a Language Studio project is to first create your language service using the Azure portal. If you choose this option you get the option to add custom features.
+The most flexible way to create a Language Studio project is to first create your language service using the Azure portal. If you choose this option, you get the option to add custom features.
 
 :::image type="content" source="../media/add-additional-features.png" alt-text="A screenshot showing creating a language service in the Azure portal.":::
 
-As you ware going to create a custom text classification, select that custom feature when creating your language service. You'll also link the language service to a storage account using this method.
+As you were going to create a custom text classification, select that custom feature when creating your language service. You'll also link the language service to a storage account using this method.
 
-Once the resource has been deployed you can navigate directly to the Language Studio from the overview pane of the language service. You can then create a new custom text classification project.
+Once the resource has been deployed, you can navigate directly to the Language Studio from the overview pane of the language service. You can then create a new custom text classification project.
 
 > [!NOTE]
 > If you have created your language service from Language Studio you might need to follow these steps, [Set roles for your Azure Language resource and storage account](/azure/cognitive-services/language-service/custom-text-classification/how-to/create-project?tabs=azure-portal%2Cstudio%2Cmulti-classification%2Csingle-classification#set-roles-for-your-azure-language-resource-and-storage-account), to connect your storage container to your custom text classification project.
 
 ### Train your classification model
 
-As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, be default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with you can label documents for testing.
+As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, be default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with, you can label documents for testing.
 
 :::image type="content" source="../media/assign-document-testing.png" alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
 
-In Language Studio, in your project, select Data labelling. You'll see all your documents. Select each document you'd like to add to teh testing set, then select **Testing the model's performance.** Save your updated labels and the create a new training job.
+In Language Studio, in your project, select Data labeling. You'll see all your documents. Select each document you'd like to add to the testing set, then select **Testing the model's performance.** Save your updated labels and then create a new training job.
 
 ### Create search index
 
@@ -242,7 +242,7 @@ In the Azure portal, go to your cognitive search resource, select the index and 
 }
 ```
 
-This adds a compound field to the index to store the class in a `category` field that is searchable. The second `confidenceScore` field stores the confidence percentage in a double field.
+This JSON adds a compound field to the index to store the class in a `category` field that is searchable. The second `confidenceScore` field stores the confidence percentage in a double field.
 
 #### Edit the custom skillset
 
@@ -292,6 +292,6 @@ The last change is to map the output into the index. In the Azure portal, select
 }
 ```
 
-The indexer now knows that the output from the function app `document/class` should be stored in the `classifiedtext` field. As this has been defined as a compound field the function app has to return a JSON array containing a `category` and `confidenceScore` field.
+The indexer now knows that the output from the function app `document/class` should be stored in the `classifiedtext` field. As this has been defined as a compound field, the function app has to return a JSON array containing a `category` and `confidenceScore` field.
 
 You can now search an enriched search index for your custom classified text.
