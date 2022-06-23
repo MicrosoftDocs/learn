@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.query-with-spark
+uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-resources
 title: Query Cosmos DB data with Spark
 metadata:
   title: Query Cosmos DB data with Spark
