@@ -12,7 +12,7 @@ title: Govern data across an enterprise
 prerequisites: |
   Familiarity with the Azure data ecosystem.
 summary: |
-  Use Microsoft Purview to register and scan data, catalogue data artifacts, find data for reporting, and manage Power BI artifacts to improve data governance in your organization.
+  Use Microsoft Purview to register and scan data, catalog data artifacts, find data for reporting, and manage Power BI artifacts to improve data governance in your organization.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
