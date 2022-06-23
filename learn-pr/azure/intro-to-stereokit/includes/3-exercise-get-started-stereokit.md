@@ -48,7 +48,7 @@ There are two templates provided:
 4. **[Native C++ Template (in development)](https://github.com/StereoKit/StereoKit/tree/master/StereoKit/Native)**: StereoKit does provide a C API, but experienced developers should only choose this if the benefits outweigh the lack of C API documentation.
 
 > [!Note]
->Iteration is slower with Universal Windows Platform, so use it only if HoloLens is essential to you. Building for ARM instead of ARM64 can save some time, as it can skip the .NET Native compile required by ARM64.
+> Iteration is slower with Universal Windows Platform, so use it only if HoloLens is essential to you. Building for ARM instead of ARM64 can save some time, as it can skip the .NET Native compile required by ARM64.
 >You may also skip the template and install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into an existing project.
 
 ### Download & install StereoKit's Visual Studio template
