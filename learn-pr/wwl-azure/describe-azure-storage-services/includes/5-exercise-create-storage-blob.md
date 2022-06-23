@@ -29,7 +29,7 @@ In this task, we will create a new storage account.
         Resource group
       :::column-end:::
       :::column:::
-        &lt;rgn&gt;\[sandbox resource group name\]&lt;/rgn&gt;
+        \[sandbox resource group name\]
       :::column-end:::
     :::row-end:::
     :::row:::
