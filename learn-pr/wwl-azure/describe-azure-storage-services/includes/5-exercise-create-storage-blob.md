@@ -12,8 +12,6 @@ In this task, we will create a new storage account.
 4.  Unders Storage Account, select Create.
 5.  On the Basics tab of the Create storage account blade, fill in the following information. Leave the defaults for everything else.
     
-    Setting | Value --------- | --------- Subscription | Default (Concierge) Resource Group | <rgn>[sandbox resource group name]</rgn> Storage account name | User-defined Location | Default Performance | Standard Redundancy | Locally redundant storage (LRS)
-    
     :::row:::
       :::column:::
         **Setting**
@@ -35,7 +33,7 @@ In this task, we will create a new storage account.
         Resource group
       :::column-end:::
       :::column:::
-        &lt;rgn&gt;\[sandbox resource group name\]&lt;/rgn&gt;
+        <rgn>[sandbox resource group name]</rgn>
       :::column-end:::
     :::row-end:::
     :::row:::
