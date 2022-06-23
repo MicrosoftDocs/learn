@@ -1,6 +1,6 @@
 <!-- See comment at the start of the previous unit about Navigation Pages within Tabbed Pages on Android and iOS-->
 
-In the astronomy app, you've been asked to add pages that enable the user to select different astronomical bodies and display their details. There may any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user will be able to select the body from this list. The app will then display the details for that body in a new page. The list page will act as a *root page* for stack navigation. You'll add the list page as a tab in the existing user interface.
+In the astronomy app, you've been asked to add pages that enable the user to select different astronomical bodies and display their details. There may be any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user will be able to select the body from this list. The app will then display the details for that body in a new page. The list page will act as a *root page* for stack navigation. You'll add the list page as a tab in the existing user interface.
 
 :::image type="content" source="../media/7-stack-navigation.png" alt-text="Diagram of the stack navigation model for moving between pages for astronomical bodies.":::
 
