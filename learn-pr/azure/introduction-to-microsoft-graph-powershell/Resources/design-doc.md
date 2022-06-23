@@ -22,11 +22,11 @@ Basic knowledge of REST services and APIs
 
 ## Summary
 
-Describe the features and benefits of using Microsoft Graph PowerShell to determine if Microsoft Graph PowerShell is the appropriate tool to automate your business processes.
+Characterize the types of business processes that Microsoft Graph PowerShell can automate. Describe the commands and permissions needed to automate processes with Microsoft Graph PowerShell. 
 
 ## Learning objectives
 
-1. Describe the features and benefits of using Microsoft Graph PowerShell
+1. Describe how the features in Microsoft Graph PowerShell work together to automate your business processes.
 1. Evaluate whether Microsoft Graph PowerShell is appropriate to automate your business processes
 
 ## Chunk your content into subtasks
