@@ -17,4 +17,4 @@ By default, B2B collaboration with other Azure AD organizations is enabled, and 
 Above you explored the default settings.  These settings are applied to all external connections.  However, you can configure specific collaboration settings on a per organization basis as well.  In the **cross-tenant access control** screen choose **Organizational settings** then add the tenant.  Once added you can configure the inbound and outbound settings.
 
 ### Microsoft cloud specific configuration
-What is your company has government contracts that need to connect to Microsoft Azure Government or Microsoft Azure China. Use the **Microsoft cloud settings** to connect to and configure the collaboration settings.
+What if your company has government contracts that need to connect to Microsoft Azure Government or Microsoft Azure China. Use the **Microsoft cloud settings** to connect to and configure the collaboration settings.
