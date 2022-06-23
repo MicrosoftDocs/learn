@@ -2,7 +2,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 
 ## Create virtual machines and deploy the vehicle registration site
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and sign in to the directory with access to the subscription you want to create resources in.
 
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
@@ -116,7 +116,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
         --backend-pool-name webServerBackendPool
     ```
 
-1. To create a health probe to check the availability of each VM instances, run the following command.
+1. To create a health probe to check the availability of each VM instance, run the following command.
 
     ```azurecli
       az network lb probe create \

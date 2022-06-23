@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-first-azure-front-door.routing-traffic-with-front-door
-title: Enter learning content title
+title: Routing requests with Front Door
 metadata:
   unitType: learning-content
   title: learning-content

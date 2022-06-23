@@ -14,15 +14,15 @@ When Front Door receives an HTTP/HTTPS request, it uses the request's host heade
 
 ### WAF rules evaluation
 
-If you configure Web Application Firewall (WAF) policy for you Front Door, WAF rules will be evaluated. If a rule has been violated then Front Door will return an error to the client and will stop processing the request any further.
+If you configure Web Application Firewall (WAF) policy for your Front Door, WAF rules will be evaluated. If a rule has been violated, then Front Door will return an error to the client and will stop processing the request any further.
 
 ### Route matching
 
-Once the request passes any WAF policy configured the request gets matched to a route. A route determines how the request is processed. A route can be broken down into two parts. The left-hand side where the properties of the request can be used to match a routing rule and the right-hand side which determines how to further process the request. Within a routing rule, rule sets can be configured to customize how requests get processed at the Front Door before being forwarded to the origin. A use case for rule sets is to route users to the mobile or desktop version of an application based on the client device type. Rule sets can also be used to redirect responses without ever forwarding to the origin. If a routing rule has caching enabled, Front Door will attempt to respond to the request from cache. If the cached response isn't available then the request will be forwarded to the appropriate origin that can respond.
+When a request passes any WAF policy configured, the request gets matched to a route. A route determines how the request is processed. A route can be broken down into two parts. The left-hand side where the properties of the request can be used to match a routing rule and the right-hand side, which determines how to further process the request. Within a routing rule, rule sets can be configured to customize how requests get processed at the Front Door before being forwarded to the origin. A use case for rule sets is to route users to the mobile or desktop version of an application based on the client device type. Rule sets can also be used to redirect responses without ever forwarding to the origin. If a routing rule has caching enabled, Front Door will attempt to respond to the request from cache. If the cached response isn't available, then the request will be forwarded to the appropriate origin that can respond.
 
 ## Traffic routing methods
 
-Front Door selects an origin from an origin group that can best respond to the client's request. When determining the best origin to service the request the following factors are used:
+Front Door selects an origin from an origin group that can best respond to the client's request. When Front Door is trying to determine the best origin to service the request the following factors are used:
 
 * **Health of origin** - Front Door monitors the health of each origin in the origin group by sending health probe based on the path, protocol, interval and probe method configured.
 * **Routing method** - By default origins are selected by lowest latency. A priority or weight value can be defined to prefer one origin over another.
@@ -30,4 +30,4 @@ Front Door selects an origin from an origin group that can best respond to the c
 
 ### Routing for motor vehicle department
 
-Revisiting our scenario of the motor vehicle department, Front Door can be used to address the government organization's fear that their web application is prone to regional failures and improve the overall experience of their end users globally. With route matching, users will be directed to the correct motor vehicle website with the lowest latency when requesting resource from the origin. Caching will also be enable to help accelerate the response time for frequently requested content by users. With 150 edge locations around the world, users can access the motor vehicle website from any where without fear of availability.
+Revisiting our scenario of the motor vehicle department, Front Door can be used to address the problem of a possible regional failure and at the same time improves the overall experience for their end users globally. With route matching, users will be directed to the correct motor vehicle website with the lowest latency when requesting resource from the origin. Caching is also enabled to help accelerate the response time for frequently requested content by users. With 150 edge locations around the world, users can access the motor vehicle website from anywhere without fear of availability.
