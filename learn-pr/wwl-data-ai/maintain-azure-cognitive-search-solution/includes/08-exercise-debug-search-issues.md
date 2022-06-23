@@ -8,7 +8,7 @@ In this exercise, you'll create an Azure Cognitive Search solution, import some 
 
 ## Create your search solution
 
-Before you can begin using a Debug Session you need to create an Azure Cognitive Search service. 
+Before you can begin using a Debug Session, you need to create an Azure Cognitive Search service. 
 
 1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="../media/deploytoazure.svg" alt="Azure resource deploy button."/></a> select this button to deploy all the resources you need in the Azure portal.
 
@@ -66,12 +66,12 @@ The indexer will now begin to ingest 50 documents. However, if you check the sta
 1. Create a container named **acs-debug-storage**, then choose **Select**.
 1. Select **Save Session**.
 
-    The dependency graph shows you that for each document there is a warning on three skills.
+    The dependency graph shows you that for each document there's a warning on three skills.
 
     :::image type="content" source="../media/warning-skill-selection.png" alt-text="A screenshot showing the three warnings on an enriched document.":::
 
 1. Select **V3**.
-1. On the skills details pane select **Errors/Warnings(1)**.
+1. On the skills details pane, select **Errors/Warnings(1)**.
 1. Expand the **Message** column so you can see details.
 
     The details are: 
@@ -85,9 +85,9 @@ The indexer will now begin to ingest 50 documents. However, if you check the sta
 
     :::image type="content" source="../media/language-detection-error.png" alt-text="A screenshot showing the Skill Settings for the Language Detection skill.":::
 
-    Looking at the skill settings JSON note that the field that is being used to deduce the language is the `HotelId`.
+    Looking at the skill settings JSON note the field being used to deduce the language is the `HotelId`.
 
-    This will be causing the error as the skill can't work out the language based on an id.
+    This field will be causing the error as the skill can't work out the language based on an ID.
 
 ## Resolve the warning on the indexer
 
@@ -109,9 +109,9 @@ The indexer will now begin to ingest 50 documents. However, if you check the sta
 
 1. Select **OK**.
 
-Now that you have updated the indexer, you'll need to run it to update the documents with the fixed AI enrichments. You should see that the warnings are now zero.
+Now that you've updated the indexer, you'll need to run it to update the documents with the fixed AI enrichments. You should see that the warnings are now zero.
 
-:::image type="content" source="../media/warnings-fixed-indexer.png" alt-text="A screenbshot showing everything resolved."::: 
+:::image type="content" source="../media/warnings-fixed-indexer.png" alt-text="A screenshot showing everything resolved."::: 
 
 > [!TIP]
 > Now you've completed the exercise, if you've finished exploring Azure Cognitive Search services, delete the Azure resources that you created during the exercise. The easiest way to do this is delete the **acs-cognitive-search-exercise** resource group.

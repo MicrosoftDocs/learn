@@ -12,11 +12,11 @@ You can also check what resources your search solution is using on the **Usage**
 
 :::image type="content" source="../media/usage-tab-cognitive-services.png" alt-text="A screenshot of the usage tab on the overview page of Azure Cognitive Search service." lightbox="../media/usage-tab-cognitive-services.png":::
 
-This basic information is a good start to monitoring, but you can go further with some additional configuration. If you are familiar with supporting other resources on the Azure platform, you'll know that Azure Monitor can be used for all your Azure resources.
+This basic information is a good start to monitoring, but you can go further with some more configuration. If you're familiar with supporting other resources on the Azure platform, you'll know that Azure Monitor can be used for all your Azure resources.
 
 In fact, you've already seen how to enable Azure Monitor in the [optimize performance](/learn/modules/maintain-azure-cognitive-search-solution/03-optimize-performance-of) unit. Follow those steps to allow Azure Monitor to use data captured in Log Analytics to see a full set of diagnostic data.
 
-Once you have started using Log Analytics you get access to performance and diagnostic data in these log tables:
+Once you have started using Log Analytics, you get access to performance and diagnostic data in these log tables:
 
 - **AzureActivity** - Shows you tasks that have been executed like scaling the search service
 - **AzureDiagnostics** - All the query and indexing operations
@@ -40,9 +40,9 @@ For example, you could plot search latency against the percentage of throttled q
 
 ### Write Kusto queries against your search solutions logs
 
-Log Analytics allows you to write any kusto query against captured log data. The easiest way to run these queries is by selecting Logs under the Monitor section. This opens Log Analytics with the quest window automatically scoped to your Azure Cognitive Search solution.
+Log Analytics allows you to write any Kusto query against captured log data. The easiest way to run these queries is by selecting Logs under the Monitor section. Logs opens Log Analytics with the quest window automatically scoped to your Azure Cognitive Search solution.
 
-:::image type="content" source="../media/azure-diagnostic-log-analytics-query.png" alt-text="A screenshot of a Log Analytics kusto query against the AzureDiagnostic table." lightbox="../media/azure-diagnostic-log-analytics-query.png":::
+:::image type="content" source="../media/azure-diagnostic-log-analytics-query.png" alt-text="A screenshot of a Log Analytics Kusto query against the AzureDiagnostic table." lightbox="../media/azure-diagnostic-log-analytics-query.png":::
 
 
 The above query lets you see a list of recent operations and how many times they happened.
@@ -173,7 +173,7 @@ The following are useful queries to help you monitor and diagnose issues with yo
 
 ## Create alerts to be notified about common search solution issues
 
-Alerts can let you proactively manage your search service. These are some commonly used alerts you should consider creating:
+Alerts can let you proactively manage your search service. Here are some commonly used alerts you should consider creating:
 
 :::image type="content" source="../media/cogntive-search-alerts.png" alt-text="A screenshot of all the metric you can create alerts for." lightbox="../media/cogntive-search-alerts.png":::
 

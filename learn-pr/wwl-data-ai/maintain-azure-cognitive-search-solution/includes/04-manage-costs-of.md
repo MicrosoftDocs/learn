@@ -18,7 +18,7 @@ The above example shows estimates based on the number of search units. The shown
 > [!IMPORTANT]
 > The prices shown are for illustration purposes, please check the price calculator for the most up-to-date values.
 
-Using the above information an estimate for an S2 tier search solution, using 4 search units (SU), extracting 80,000 images, and using 200,000 semantic queries would be:
+Using the above information an estimate for an S2 tier search solution, using four search units (SU), extracting 80,000 images, and using 200,000 semantic queries would be:
 
 
 |Item        |Estimate  |
@@ -28,15 +28,15 @@ Using the above information an estimate for an S2 tier search solution, using 4 
 |Semantic search |  **$500**       |
 |Total estimate |  **$4,504.48** per month       |
 
-The final costs related to running a search service are the data ingestion and storage costs. So the above estimate doesn't include other additional infrastructure costs you can accrue. These would be things like the storage and processing of your source data.
+The final costs related to running a search service are the data ingestion and storage costs. So the above estimate doesn't include other infrastructure costs you can accrue. These other costs would be things like the storage and processing of your source data.
 
-Part of running a cost-effective Azure Cognitive Search solution is always optimizing its capacity, from the tier you need, the data you are searching, and the features you use.
+Part of running a cost-effective Azure Cognitive Search solution is always optimizing its capacity, from the tier you need, the data you're searching, and the features you use.
 
 ## Understand the billing model
 
-Azure Cognitive Search is billed in the same way as other resources you use in Azure. Taking the above baseline estimate as an example, after you've created the all the resources you incur costs:
+Azure Cognitive Search is billed in the same way as other resources you use in Azure. Take the above baseline estimate as an example, after you've created the all the resources you incur costs:
 
-- Hourly for the service tier search units you are using ($3,924.48 ÷ 744 =  $5.27 per hour approximately)
+- Hourly for the service tier search units you're using ($3,924.48 ÷ 744 =  $5.27 per hour approximately)
 
 The other premium features are billed as you use them.
 
@@ -49,7 +49,7 @@ The other premium features are billed as you use them.
 |Semantic Search     | Number of queries of "queryType=semantic", billed at a progressive rate        |
 |Private Endpoints     | Billed as long as the endpoint exists, and billed for bandwidth        |
 
-Remember you are not charged for the number of search queries, responses, or documents ingested.
+Remember you're not charged for the number of search queries, responses, or documents ingested.
 
 > [!NOTE]
 > There are service quotas that you should be aware of, see [Service limits in Azure Cognitive Search](/azure/search/search-limits-quotas-capacity).
@@ -60,8 +60,8 @@ These tips can help you reduce the cost of running your search solution:
 
 1. Minimize bandwidth costs by using as few regions as possible. Ideally, all the resources should reside in the same region.
 1. If you have predictable patterns of indexing new data, consider scaling up inside your search tier. Then scale back down for your regular querying.
-1. To keep your search requests and responses inside the Azure datacenter boundary use an Azure Web App front-end as your search app.
-1. Enable enrichment caching if you are using AI enrichment on blob storage.
+1. To keep your search requests and responses inside the Azure datacenter boundary, use an Azure Web App front-end as your search app.
+1. Enable enrichment caching if you're using AI enrichment on blob storage.
 
 ## Manage search service costs using budgets and alerts
 
