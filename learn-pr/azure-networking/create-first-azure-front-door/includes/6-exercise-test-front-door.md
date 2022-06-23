@@ -23,7 +23,7 @@ echo https://$(az afd endpoint show \
 
 ## Test routing
 
-Now let's test the routing of the route configuration to each website. You configured a route that matches `/VehicleRegistration/` and `/VehicleRegistration/*` to go to the private endpoint for the web servers. For requests that matches `/LicenseRenewal/` and `/LicenseRenewal/*` you routed them to the App service. In this lab, communication between your Azure Front Door and the origin resources are private because you're using Private Link service to establish connectivity.
+Now let's test the routing of the route configuration to each website. You configured a route that matches `/VehicleRegistration/` and `/VehicleRegistration/*` to go to the private endpoint for the web servers. For requests that match `/LicenseRenewal/` and `/LicenseRenewal/*` you routed them to the App service. In this lab, communication between your Azure Front Door and the origin resources are private because you're using Private Link service to establish connectivity.
 
 1. To test routing to other pages for the Vehicle registration website, select **Register a Vehicle**. 
 
@@ -49,7 +49,7 @@ With this configuration you can direct your users to both web sites through the 
 
 1. Download and install [Git for Windows](https://git-scm.com/download/win). Use all default settings during installation. You'll need Git to clone the **gotestwaf** repository to your local machine.
 
-1. Once both softwares are installed, open **Git Bash** and run `git clone https://github.com/wallarm/gotestwaf.git` to download the **GoTestWAF** files to your local machine.
+1. Once both software are installed, open **Git Bash** and run `git clone https://github.com/wallarm/gotestwaf.git` to download the **GoTestWAF** files to your local machine.
 
     :::image type="content" source="./../media/6-clone.png" alt-text="Screenshot of cloning the gotestwaf repository with Git.":::
 

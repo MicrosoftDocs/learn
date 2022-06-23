@@ -1,4 +1,4 @@
-Front Door has a number of components that combines to accelerate requests to web applications while maintaining high availability at a global scale. Let's take a look at the different components that makes up the Front Door service and how they play a part in routing end user's requests.
+Front Door has a number of components that combine to accelerate requests to web applications while maintaining high availability at a global scale. Let's take a look at the different components that makes up the Front Door service and how they play a part in routing end user's requests.
 
 :::image type="content" source="../media/4-front-door-flow.png" alt-text="Diagram of Azure Front Door components in a flow chart.":::
 
@@ -8,7 +8,7 @@ An endpoint is a logical grouping of one or more routes and security policies th
 
 ### Routes
 
-Front Door routing rules determine how each request gets processed once it arrives at the at Front Door edge. A route contains information for mapping domains and URL paths to a specific origin group. Within a route, you can configure the protocols used for requests that gets forwarded to the origin. You can also enable caching for faster response of frequently requested content and set up rule sets for how to handle specific request types.
+Front Door routing rules determine how each request gets processed once it arrives at the at Front Door edge. A route contains information for mapping domains and URL paths to a specific origin group. Within a route, you can configure the protocols used for requests that get forwarded to the origin. You can also enable caching for faster response of frequently requested content and set up rule sets for how to handle specific request types.
 
 ### Origins
 
@@ -24,7 +24,7 @@ A rule set is a customized rules engine that groups a combination of rules into 
 
 #### Rules match conditions
 
-The match conditions identifies the specific type of requests the action should take. When using multiple match conditions in a rule they're grouped together using an AND logic.
+The match conditions identify the specific type of requests the action should take. When using multiple match conditions in a rule they're grouped together using an AND logic.
 
 The following type of match conditions can be found in a rule set:
 
@@ -46,7 +46,7 @@ An action is the behavior that gets applied to the request type that matches the
 
 ### Security policy
 
-Front Door supports Web Application Firewall (WAF) policy and rules. A security policy in a Front Door profile contains multiple WAF policies which can be used for different domains in the profile. WAF rules defends your web service against common exploits and vulnerabilities such as SQL injections, cross-site scripting, Java attacks and many more. The following features are currently support for WAF on Front Door:
+Front Door supports Web Application Firewall (WAF) policy and rules. A security policy in a Front Door profile contains multiple WAF policies which can be used for different domains in the profile. WAF rules defend your web service against common exploits and vulnerabilities such as SQL injections, cross-site scripting, Java attacks and many more. The following features are currently support for WAF on Front Door:
 
 * **Policy settings** - Allows you to control access to your web applications by using a set of custom and managed rules.
 * **Manage rules** - Provide an easy way to deploy protection against a common set of security threats. Since rule sets are managed by Azure, the rules are updated as needed to protect against new attack signatures.
@@ -55,7 +55,7 @@ Front Door supports Web Application Firewall (WAF) policy and rules. A security 
 * **Geo-filtering** - Allows you to restrict access to your web application by countries/regions.
 * **Bot protection** - Provides bot rules to identify good bots and protect from bad bots.
 * **IP restriction** - Lets you control access to your web applications by specifying a list of IP addresses or IP address ranges.
-* **Rate limiting** - A custom rate limit rule controls access based on matching conditions and the rates of incoming requests.
+* **Rate limiting** - A custom rate limit rule control access based on matching conditions and the rates of incoming requests.
 * **Tuning** - Lets you tune the WAF rules to suit the needs of your application and organization WAF requirements. Tuning features you can expect to see are defining rules exclusions, creating custom rules, and disabling of rules.
 * **Monitoring and logging** - Monitoring and logging is provided through integration with Azure Monitor and Azure Monitor logs.
 

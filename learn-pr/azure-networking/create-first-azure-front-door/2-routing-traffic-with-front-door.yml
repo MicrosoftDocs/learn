@@ -35,6 +35,6 @@ quiz:
     - content: "Front Door sends requests to web servers using a 5-tuple hash."
       isCorrect: false
       explanation: "Traffic routing methods for origin group can be by latency, priority, weight or by session affinity."
-    - content: "Front Door send requests to the origin with the lowest latency, but can also send requests based on weight, priority or session affinity."
+    - content: "Front Door sends requests to the origin with the lowest latency, but can also send requests based on weight, priority or session affinity."
       isCorrect: true
       explanation: "Correct!"
