@@ -5,7 +5,7 @@ metadata:
   description: "Connect threat indicators to Microsoft Sentinel"
   ms.date: 06/23/2022
   author: wwlpublish
-  ms.author: noswalek
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect threat indicators to Microsoft Sentinel
