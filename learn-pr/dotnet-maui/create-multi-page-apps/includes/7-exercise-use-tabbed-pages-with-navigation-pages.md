@@ -1,6 +1,6 @@
 <!-- See comment at the start of the previous unit about Navigation Pages within Tabbed Pages on Android and iOS-->
 
-In the astronomy app, you've been asked to add pages that enable the user to select different astronomical bodies and display their details. There may any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user will be able to select the body from this list. The app will then display the details for that body in a new page. The list page will act as a *root page* for stack navigation. You'll add the list page as a tab in the existing user interface.
+In the astronomy app, you've been asked to add pages that enable the user to select different astronomical bodies and display their details. There may be any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user will be able to select the body from this list. The app will then display the details for that body in a new page. The list page will act as a *root page* for stack navigation. You'll add the list page as a tab in the existing user interface.
 
 :::image type="content" source="../media/7-stack-navigation.png" alt-text="Diagram of the stack navigation model for moving between pages for astronomical bodies.":::
 
@@ -52,7 +52,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
     Whenever a `Button` is clicked, the app will navigate to the **AstronomicalBodyPage** page. But we still need to send what type of astronomical body to display.
 
-1. To send data to the **AstronomicalBodyPage** add a query parameter string to the routing information. It will be of the form `?astroName=astroBodyToDisplay`.
+1. To send data to the **AstronomicalBodyPage**, add a query parameter string to the routing information. It will be of the form `?astroName=astroBodyToDisplay`.
 
     ```csharp
     btnComet.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=comet");
@@ -61,7 +61,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
     btnSun.Clicked += async (s, e) => await Shell.Current.GoToAsync("astronomicalbodydetails?astroName=sun");
     ```
 
-1. To receive the data on the **AstronomicalBodyPage** first create a class-level property to hold the incoming data. Name it `AstroName`.
+1. To receive the data on the **AstronomicalBodyPage**, first create a class-level property to hold the incoming data. Name it `AstroName`.
 
     ```csharp
     string astroName;
@@ -80,7 +80,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
     Here the `UpdateAstroBodyUI(astroName)` is a helper function used to update the user interface immediately when the `AstroName` property is set.
 
-1. Then you need to decorate the class with an annotation that maps the incoming query parameter the property you just created.
+1. Then you need to decorate the class with an annotation that maps the incoming query parameter to the property you just created.
 
     ```csharp
     [QueryProperty(nameof(AstroName), "astroName")]

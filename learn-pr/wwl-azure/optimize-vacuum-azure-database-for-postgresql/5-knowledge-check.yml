@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You've recently taken over support for an Azure Database for PostgreSQL database in your company. You've noticed that the amount of storage required for the database appears to be growing at a rate greater than you would expect. What should you do to investigate?"
+    choices:
+    - content: "Check the server parameters to ensure autovacuum is switched OFF."
+      isCorrect: false
+      explanation: "Incorrect. Autovacuum should always be enabled. Check the server parameters to ensure autovacuum is ON."
+    - content: "Prevent users from adding more data to the database until the problem has been solved."
+      isCorrect: false
+      explanation: "Incorrect. First investigate whether dead rows are a cause of the storage problem. If not, increase the amount of storage provisioned for the database."
+    - content: "Run a SELECT query to find dead rows that are no longer needed in the database."
+      isCorrect: true
+      explanation: "Correct. Rows marked for deletion that haven't yet been deleted can cause database \"bloat\" and take more storage space than required. Run a SELECT statement to find the number of dead rows in tables that are updated frequently."
+  - content: "You've tuned the server parameters to make autovacuum more efficient. However, users are complaining of slight delays when updating the single table in your database that has most updates. What could you do to resolve the problem?"
+    choices:
+    - content: "Split the table into two."
+      isCorrect: true
+      explanation: "Correct. The autovacuum process locks the data page when running. When one table has most of the updates, splitting the table allows autovacuum to run in parallel reducing the time each data page is locked."
+    - content: "Increase the value for autovacuum_analyze_threshold."
+      isCorrect: false
+      explanation: "Incorrect. autovacuum_analyze_threshold determines the number of dead types before autovacuum will run. If this value is increased, autovacuum will have more work to do, increasing the latency for users."
+    - content: "Disable AUTOVACUUM and run VACUUM manually as required."
+      isCorrect: false
+      explanation: "Incorrect. Vacuum is the same process as autovacuum and won't alter the performance users are experiencing."
+  - content: "As part of an annual routine, a large number of records have been updated. This has been done over a holiday when your Azure Database for PostgreSQL database isn't in use. Now that the updates are complete, what should you do to ensure lost disk space is reclaimed?"
+    choices:
+    - content: "Manually run VACUUM."
+      isCorrect: true
+      explanation: "Correct. After having made a large number of updates while the database isn't in use you should run VACUUM to reclaim lost space."
+    - content: "Increase the autovacuum_work_mem."
+      isCorrect: false
+      explanation: "Incorrect. This parameter will increase the memory that is used by each autovacuum process and shouldn't be increased for an annual update."
+    - content: "Disable AUTOVACUUM and manually run VACUUM."
+      isCorrect: false
+      explanation: "Incorrect. Autovacuum shouldn't be disabled. You can run VACUUM with Autovacuum enabled."

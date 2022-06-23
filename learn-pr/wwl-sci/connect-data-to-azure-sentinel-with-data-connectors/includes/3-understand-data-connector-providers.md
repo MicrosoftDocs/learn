@@ -1,8 +1,6 @@
 ### Microsoft 365 Defender
 
-The Microsoft 365 Defender and related data connectors provide alerts and data that have already been normalized and used in the Microsoft 365 Defender portal.
-
-The Microsoft 365 Defender products include (but are not limited to):
+The Microsoft 365 Defender data connector provides alerts, incidents, and raw data from the Microsoft 365 Defender products including (but aren't limited to):
 
 - Microsoft Defender for Endpoint
 
@@ -12,15 +10,12 @@ The Microsoft 365 Defender products include (but are not limited to):
 
 - Microsoft Defender for Cloud Apps
 
-- Microsoft 365 Defender
 
-- Microsoft 365 Insider Risk Management (IRM) 
+### Microsoft Azure Services
 
-### Microsoft/Azure Services
+The connectors for Microsoft and Azure-related services include (but aren't limited to):
 
-The connectors for Microsoft and Azure-related services include (but are not limited to):
-
-- Azure Active Directory - audit logs and sign-in logs
+- Azure Active Directory 
 
 - Azure Activity
 
@@ -48,10 +43,10 @@ The connectors for Microsoft and Azure-related services include (but are not lim
 
 ### Vendor connectors
 
-Microsoft Sentinel provides an ever-growing list of vendor-specific data connectors.  These connectors primarily use the CEF and Syslog connector.
+Microsoft Sentinel provides an ever-growing list of vendor-specific data connectors.  These connectors primarily use the CEF and Syslog connector as their foundation.
 
 > [!TIP]
-> Remember to check the connector page to see the Data Type (table) that the connector writes to
+> Remember to check the connector page to see the Data Type (table) that the connector writes to.
 
 ### Custom connectors using the Log Analytics API
 
@@ -63,7 +58,7 @@ Using Microsoft Sentinel's output plugin for the Logstash data collection engine
 
 ## Common Event Format and Syslog connector
 
-If there is no vendor-provided connector, you can use the generic Common Event Format(CEF) or Syslog Connector.
+If there's no vendor-provided connector, you can use the generic Common Event Format(CEF) or Syslog Connector.
 
 Syslog is an event logging protocol that is common to Linux. Applications will send messages that may be stored on the local machine or delivered to a Syslog collector.
 
@@ -71,7 +66,7 @@ Common Event Format (CEF) is an industry-standard format on top of Syslog messag
 
 ### Syslog vs. Common Event Format
 
-CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you will need to write a parser to extract the specific fields.  The process to create a Parser for a Syslog message will be demonstrated in a later module.
+CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you'll need to write a parser to extract the specific fields.  The process to create a Parser for a Syslog message will be demonstrated in a later module.
 
 ### Connector architecture options
 
@@ -79,9 +74,9 @@ To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must dep
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Microsoft Sentinel agent.
 
-![sending Syslog data to a dedicated Azure VM running](../media/learn-path-01.png)
+:::image type="content" source="../media/learn-path-01.png" alt-text="Diagram of sending Syslog data to a dedicated Azure VM running.":::
 
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Microsoft Sentinel agent.
 
-![on-premises systems sending Syslog data to a dedicated on-premises system](../media/learn-path-02.png)
+:::image type="content" source="../media/learn-path-02.png" alt-text="Diagram of on-premises systems sending Syslog data to a dedicated on-premises system.":::
 
