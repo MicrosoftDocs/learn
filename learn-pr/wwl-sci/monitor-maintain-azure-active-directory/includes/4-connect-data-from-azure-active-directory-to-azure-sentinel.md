@@ -1,8 +1,8 @@
 ## What is Microsoft Sentinel
 
-:::image type="content" source="../media/azure-sentinel.png" alt-text="Screenshot of Azure Sentinel screenshot that shows the initial configuration screen that allows you to create a new KQL (kusto query language) queries.":::
+:::image type="content" source="../media/azure-sentinel.png" alt-text="Screenshot of Azure Sentinel screenshot that shows the initial configuration screen that allows you to create a new KQL (Kusto Query Language) queries.":::
 
-A security information and management (SIEM) aggregates and analyzes activity. A security orchestration automation and redemiation (SOAR) tool collects data on security threats and responds. Microsoft Sentinel is a scalable, cloud-native SIEM, and SOAR solution. Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+A security information and management (SIEM) aggregates and analyzes activity. A security orchestration automation and remediation (SOAR) tool collects data on security threats and responds. Microsoft Sentinel is a scalable, cloud-native SIEM, and SOAR solution. Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
 - Collect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds
 - Detect previously undetected threats, and minimize false positives using Microsoft analytics and unparalleled threat intelligence
@@ -11,7 +11,7 @@ A security information and management (SIEM) aggregates and analyzes activity. A
 
 ## Prerequisites
 
-- Any Azure AD license (Free/O365/P1/P2) is sufficient to ingest sign in logs into Microsoft Sentinel. Additional per-gigabyte charges may apply for Azure Monitor (Log Analytics) and Microsoft Sentinel.
+- Any Azure AD license (Free/O365/P1/P2) is sufficient to ingest sign in logs into Microsoft Sentinel. Extra per-gigabyte charges may apply for Azure Monitor (Log Analytics) and Microsoft Sentinel.
 - Your user must be assigned the Microsoft Sentinel Contributor role on the workspace.
 - Your user must be assigned the Global Administrator or Security Administrator roles on the tenant you want to stream the logs from.
 - Your user must have read and write permissions to the Azure AD diagnostic settings to be able to see the connection status.
@@ -43,7 +43,7 @@ You can use Microsoft Sentinel's built-in connector to collect data from [Azure 
 1.  In Microsoft Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
 2.  In the **Data connectors** list, select **Azure Active Directory** and then select **Open connector page**.
     
-    :::image type="content" source="../media/sentinel-add-azure-active-directory-connector.png" alt-text="Screenshot of the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted.":::
+    :::image type="content" source="../media/sentinel-add-azure-active-directory-connector.png" alt-text="Screenshot of the data connectors screen with the Azure Active Directory connector and Open Connector page highlighted.":::
     
 3.  Under **Configuration**, select the **Azure Active Directory Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.
     
