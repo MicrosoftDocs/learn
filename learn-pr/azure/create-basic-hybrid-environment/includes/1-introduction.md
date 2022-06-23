@@ -11,7 +11,7 @@ Active Directory first appeared in Windows 2000. It has undergone many revisions
 
 Then along came cloud computing.  Cloud computing offered many benefits over on-premises computing.  These benefits include setup, maintenance, scalability, and tax implications.  Because of these benefits, many organizations wanted to move to the cloud.
 
-![Diagram that shows a basic Azure A D environment.](../media/prepare-6.png)
+![Diagram that shows a basic Azure AD environment.](../media/prepare-6.png)
 
 To address this move, Microsoft introduced Azure.  Azure is a cloud platform with over 200 products and cloud services. In order to use these products and cloud services, a service similar to Active Directory was going to be needed.  To tackle this challenge, Microsoft introduced Azure Active Directory (Azure AD).  Azure AD is a cloud-based identity and access management service. 
 

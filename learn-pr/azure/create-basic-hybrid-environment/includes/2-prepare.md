@@ -11,7 +11,7 @@ You can use the environment you create in this module, to test various aspects o
 ![Diagram that shows the overview.](../media/prepare-3.png)
 
 
-## Project overview
+### Project overview description
 As an IT administrator and decision maker you're often tasked with:
    - evaluating cloud solutions
    - advising on moving current infrastructure to the cloud
@@ -34,7 +34,7 @@ In order to complete this module you'll need to perform a series of tasks.  The 
 
 The first two tasks will be covered in this section.  They'll allow you to prepare for execution of the PowerShell scripts and building the virtual machine that will be used.
 
-### Create Folder structure
+### Create folder structure
 
 This module uses PowerShell scripts to accomplish the goals of quickly setting up an on-premises environment.  These scripts have hardcoded paths to specific files.  You'll need to ensure either of the following:
   - change the paths to ones that reflect your environment.  For example:  `$VHDPath = 'D:\VM\DC1\DC1.vhdx'` might become `$VHDPath = 'C:\VM\DC1\DC1.vhdx'` if you move the VM folder to the `C:\` drive.
@@ -51,7 +51,7 @@ This module uses PowerShell scripts to accomplish the goals of quickly setting u
 
 This module uses PowerShell scripts so that you can create the environment in the quickest amount of time.  Each of the scripts uses variables that are declared at the beginning of the scripts.  These variables will be called out in tables prior to the exercise.  You can change the variables to reflect your environment.
 
-Versions of the PowerShell scripts that are used in this module are available on GitHub [here](https://github.com/billmath/learn-module-basic-ad-azure-ad-scripts).  You should download the zip files and the .iso image.
+Versions of the PowerShell scripts that are used in this module are available on GitHub under [learn-module-basic-ad-azure-ad-scripts](https://github.com/billmath/learn-module-basic-ad-azure-ad-scripts).  You should download the zip files and the .iso image.
 
 The following table describes each of the PowerShell scripts contained both the .ISO file and the .zip file.
 

@@ -1,7 +1,7 @@
 
 ## Install Active Directory and create a test user
 
-![Diagram that shows a basic Azure A D environment.](../media/4-exercise-1.png)
+![Diagram that shows a basic Azure AD environment.](../media/4-exercise-1.png)
 
 ## Change the ISO file in Hyper-V
 Now that we have the virtual machine up and the operating system installed, we want to change the ISO file that VM is using.  We're taking this action so we can run the remaining scripts from within the VM.  To change the ISO file, do the following tasks:

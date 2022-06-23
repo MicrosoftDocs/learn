@@ -1,6 +1,6 @@
 ## Create and configure your virtual machine
 
-![Diagram that shows a basic Azure A D environment.](../media/3-exercise-1.png)
+![Diagram that shows a basic Azure AD environment.](../media/3-exercise-1.png)
 
 
 ## Install and configure Hyper-V Manager
