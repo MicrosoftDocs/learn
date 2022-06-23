@@ -16,7 +16,7 @@ abstract: |
   *   Learn how to create accounts, databases and collections using the Azure Cosmos DB API for MongoDB.
   *   Learn how to connect and query using the Azure Cosmos DB API for MongoDB.
 prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+  Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
