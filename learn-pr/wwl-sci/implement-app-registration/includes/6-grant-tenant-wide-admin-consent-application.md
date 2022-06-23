@@ -15,7 +15,7 @@ Granting tenant-wide admin consent requires you to sign in as a user that is aut
 3.  In the left navigation, under **Manage**, select **API permissions**.
 4.  Under **Configured permissions**, select **Grant admin consent**.
 
-     :::image type="content" source="../media/api-permissions-admin-consent.png" alt-text="Screenshot of the API permission page with Grant admin consent for Contoso highlighted":::
+     :::image type="content" source="../media/api-permissions-admin-consent.png" alt-text="Screenshot of the API permission page with Grant admin consent for Contoso highlighted.":::
 
 5.  Review the dialogue box, and then select **Yes.**
 
