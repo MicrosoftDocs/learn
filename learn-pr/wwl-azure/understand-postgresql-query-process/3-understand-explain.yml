@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-postgresql-query-process.understand-explain
+title: Understand EXPLAIN
+metadata:
+  title: Understand EXPLAIN
+  description: "Understand EXPLAIN"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-explain.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api
 metadata:
   title: Build multi-item transactions with the Azure Cosmos DB SQL API
   description: "Author stored procedures using JavaScript in Azure Cosmos DB SQL API."
-  ms.date: 12/21/2021
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

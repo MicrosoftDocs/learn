@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql
+metadata:
+  title: Optimize vacuum in Azure Database for PostgreSQL
+  description: "Azure Database for PostgreSQL uses vacuum and autovacuum to remove rows that have been marked as soft-deleted after an update or deletion."
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize vacuum in Azure Database for PostgreSQL
+summary: Azure Database for PostgreSQL uses vacuum and autovacuum to remove rows that have been marked as soft-deleted after an update or deletion.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the purpose of vacuum and autovacuum.
+  - Configure autovacuum server parameters.
+prerequisites: |
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-postgresql
+subjects:
+- database
+units:
+- learn.wwl.optimize-vacuum-azure-database-for-postgresql.introduction
+- learn.wwl.optimize-vacuum-azure-database-for-postgresql.explain-purpose-vacuum-autovacuum
+- learn.wwl.optimize-vacuum-azure-database-for-postgresql.configure-autovacuum-server-parameters
+- learn.wwl.optimize-vacuum-azure-database-for-postgresql.exercise-configure-autovacuum-server-parameters
+- learn.wwl.optimize-vacuum-azure-database-for-postgresql.knowledge-check
+- learn.wwl.optimize-vacuum-azure-database-for-postgresql.summary
+badge:
+  uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql.badge
