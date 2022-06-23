@@ -36,7 +36,7 @@ units:
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.enable-cosmos-db-account-to-use
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-analytical-store-enabled-container
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.implement-synapse-link-for
-- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.query-with-spark
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-resources
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.query-with-sql
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.exercise-synapse-link-cosmos-db
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
