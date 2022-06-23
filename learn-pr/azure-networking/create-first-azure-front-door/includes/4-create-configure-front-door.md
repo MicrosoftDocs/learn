@@ -1,5 +1,7 @@
 Front Door has a number of components that combines to accelerate requests to web applications while maintaining high availability at a global scale. Let's take a look at the different components that makes up the Front Door service and how they play a part in routing end user's requests.
 
+:::image type="content" source="../media/4-front-door-flow.png" alt-text="Diagram of Azure Front Door components in a flow chart.":::
+
 ### Endpoints
 
 An endpoint is a logical grouping of one or more routes and security policies that is associated to a domain. A Standard or Premium tier profile can support more than one endpoint.
