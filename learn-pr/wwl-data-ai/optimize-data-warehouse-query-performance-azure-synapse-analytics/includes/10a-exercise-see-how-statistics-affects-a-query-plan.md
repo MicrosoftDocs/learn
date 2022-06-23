@@ -1,0 +1,1 @@
+## Exercise on impacts of statistics on a query plan ##

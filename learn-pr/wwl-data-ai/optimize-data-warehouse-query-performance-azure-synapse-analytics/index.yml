@@ -42,6 +42,7 @@ units:
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.improve-with-materialized-views
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-read-committed-snapshot-for-data-consistency
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.optimize-common-queries-with-result-set-caching
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-see-how-statistics-affects-a-query-plan
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.knowledge-check
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.summary
 badge:
