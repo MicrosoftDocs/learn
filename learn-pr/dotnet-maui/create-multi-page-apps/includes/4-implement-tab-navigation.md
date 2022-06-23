@@ -4,7 +4,7 @@ In this unit, you'll learn how to create an app that implements tab navigation.
 
 ## What is tab navigation?
 
-In an app that uses tab navigation, each tab represents a specific section or page of the app. Users select tabs within the tab strip to move between content in the application. As an example, the following illustration shows the use of tab navigation in the iOS Clock app. The icons highlighted at the base of the page enable you to switch between different view. These icons correspond to tabs, and the views are tabbed pages:
+In an app that uses tab navigation, each tab represents a specific section or page of the app. Users select tabs within the tab strip to move between content in the application. As an example, the following illustration shows the use of tab navigation in the iOS Clock app. The icons highlighted at the base of the page enable you to switch between different views. These icons correspond to tabs, and the views are tabbed pages:
 
 :::image type="content" source="../media/4-tab-navigation-example-world-clock.png" alt-text="Screenshot of the i O S Clock app showing the bottom tab bar containing various time-related tabs: World Clock, Alarm, Bedtime, Stopwatch, and Timer.":::
 

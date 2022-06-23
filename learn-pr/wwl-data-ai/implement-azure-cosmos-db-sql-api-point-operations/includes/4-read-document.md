@@ -13,7 +13,7 @@ string categoryId = "26C74104-40BC-4541-8EF5-9892F7F03D72";
 PartitionKey partitionKey = new (categoryId);
 ```
 
-Once we both item, we can invoke the asynchronous and generic **ReadItemAsync<>** method, which will return an item of the given generic type, **Product**, in this example.
+Once we have both items, we can invoke the asynchronous and generic **ReadItemAsync<>** method, which will return an item of the given generic type, **Product**, in this example.
 
 ```csharp
 Product saddle = await container.ReadItemAsync<Product>(id, partitionKey);
