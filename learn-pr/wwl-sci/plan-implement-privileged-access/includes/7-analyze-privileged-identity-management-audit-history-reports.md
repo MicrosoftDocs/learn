@@ -14,7 +14,7 @@ Follow these steps to view the audit history for privileged access groups.
 4. Under **Activity**, select **Resource audit**.
 5. Filter the history using a predefined date or custom range.
     
-    :::image type="content" source="../media/groups-resource-audit.png" alt-text="Screenshot of the Resource audit list with the availalbe filters displayed.":::
+    :::image type="content" source="../media/groups-resource-audit.png" alt-text="Screenshot of the Resource audit list with the available filters displayed.":::
 
 ## View my audit
 
@@ -26,4 +26,4 @@ Follow these steps to view the audit history for privileged access groups.
 4.  Under **Activity**, select **My audit**.
 5.  Filter the history using a predefined date or custom range.
     
-    :::image type="content" source="../media/my-audit-time.png" alt-text="Screenshot of the Audit list for the current user. Review the history to see the acitivity.":::
+    :::image type="content" source="../media/my-audit-time.png" alt-text="Screenshot of the Audit list for the current user. Review the history to see the activity.":::
