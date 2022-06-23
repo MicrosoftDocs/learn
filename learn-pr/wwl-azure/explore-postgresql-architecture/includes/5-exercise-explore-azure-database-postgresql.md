@@ -66,7 +66,7 @@ In this exercise, you'll create an Azure Database for PostgreSQL flexible server
     1. Select **Next: Networking >**.
 1. On the Flexible server **Networking** tab, enter each field as follows:
     1. Connectivity method: (o) Public access (allowed IP addresses)
-    1. Under Firewall rules, select **+ Add current client IP address**, ti add your current IP address as a firewall rule. You can optionally name this firewall rule to something meaningful.
+    1. Under Firewall rules, select **+ Add current client IP address**, to add your current IP address as a firewall rule. You can optionally name this firewall rule to something meaningful.
 1. Select **Review + create**. Review your settings including how long it will take to create the server, then select **Create** to create your Azure Database for PostgreSQL flexible server. When the deployment is complete, select **Go to resource** ready for the next step.
 
 ### Inspect the new server
