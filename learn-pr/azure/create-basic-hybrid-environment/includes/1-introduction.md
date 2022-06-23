@@ -4,14 +4,14 @@ Active directory is no different: its main function in most environments is to m
 
 Active Directory is the directory service in a Windows Server environment. It stores information about network resources and makes them accessible to users and applications. Directory services are important because they provide a consistent way to name, describe, locate, access, manage, and secure information about these resources.
 
-![Diagram that shows a basic AD environment.](../media/intro-1.png)
+![Diagram that shows a basic AD environment.](media/intro-1.png)
 
 
 Active Directory first appeared in Windows 2000. It has undergone many revisions. Many of these revisions relate to providing more functionality and storage so that an increasing number of Windows services and other applications use active directory to store their configuration data. Active directory is a mature, trusted and well-supported component.  Most organizations have adopted and use Active Directory.
 
 Then along came cloud computing.  Cloud computing offered many benefits over on-premises computing.  These benefits include setup, maintenance, scalability, and tax implications.  Because of these benefits, many organizations wanted to move to the cloud.
 
-![Diagram that shows a basic Azure A D environment.](../media/prepare-6.png)
+![Diagram that shows a basic Azure A D environment.](../learn/modules/create-basic-hybrid-environment/media/prepare-6.png)
 
 To address this move, Microsoft introduced Azure.  Azure is a cloud platform with over 200 products and cloud services. In order to use these products and cloud services, a service similar to Active Directory was going to be needed.  To tackle this challenge, Microsoft introduced Azure Active Directory (Azure AD).  Azure AD is a cloud-based identity and access management service. 
 
