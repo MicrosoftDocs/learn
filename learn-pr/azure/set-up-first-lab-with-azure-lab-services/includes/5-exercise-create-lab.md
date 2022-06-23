@@ -62,7 +62,7 @@ In this step, you publish the lab. When you publish the template VM, Azure Lab S
 
 1. On the **Template** page, select **Publish** on the toolbar.
 
-    :::image type="content" source="../media/tutorial-setup-lab/template-page-publish-button.png" alt-text="Screenshot of Azure Lab Services template page. The Publish template menu button is highlighted.":::
+    :::image type="content" source="../media/template-page-publish-button.png" alt-text="Screenshot of Azure Lab Services template page. The Publish template menu button is highlighted.":::
 
 1. On the **Publish template** page, select **Publish**. Select **OK** when warned that publishing is a permanent action.
 
@@ -72,7 +72,7 @@ In this step, you publish the lab. When you publish the template VM, Azure Lab S
 
 1. Select **Virtual machine pool** on the left menu or select **Virtual machines** tile on the dashboard page to see the list of available machines. Confirm that you see virtual machines that are in **Unassigned** state. These VMs aren't assigned to students yet. They should be in **Stopped** state.
 
-    :::image type="content" source="../media/tutorial-setup-lab/virtual-machines-stopped.png" alt-text="Screenshot of virtual machines stopped.  The virtual machine pool menu is highlighted.":::
+    :::image type="content" source="../media/virtual-machines-stopped.png" alt-text="Screenshot of virtual machines stopped.  The virtual machine pool menu is highlighted.":::
 
     > [!NOTE]
     > When an educator turns on a student VM, quota for the student isn't affected. Quota for a user specifies the number of lab hours available to a student outside of the scheduled class time.
