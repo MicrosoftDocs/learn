@@ -42,4 +42,4 @@ CREATE PROCEDURE myprocedure (a integer, b integer)
     $$;
 ```
 
-The \$\$ symbol is used to start and end a string. You can also use single quotation marks, but it can cause problems with other programming languages so \$\$ is preferred.
+The `$$` symbol is used to start and end a string. You can also use single quotation marks, but it can cause problems with other programming languages so `$$` is preferred.
