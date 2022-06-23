@@ -115,7 +115,7 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
     :::image type="content" source="../media/4-boards-sprints-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Sprints menu.":::
 
-1. Select **Set dates** from the upper right.
+1. Select **Set dates** from the upper-right corner.
 
 1. Leave the name as **Sprint 1**.
 
