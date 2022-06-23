@@ -4,14 +4,14 @@ The final step is to test the Front Door environment and verify if routing rules
 
 1. In Cloud Shell, run the following command to generate the URL for your Front Door endpoint.
 
-```azurecli
-echo https://$(az afd endpoint show \
-    --profile-name vehicleFrontDoor \
-    --endpoint-name $endpoint \
-    --resource-group $RG \
-    --query hostName \
-    --output tsv)
-```
+    ```azurecli
+    echo https://$(az afd endpoint show \
+        --profile-name vehicleFrontDoor \
+        --endpoint-name $endpoint \
+        --resource-group $RG \
+        --query hostName \
+        --output tsv)
+    ```
 
 1. Using a web browser, navigate to the web site at the URL returned in the previous command. This URL is the address of the endpoint you created in the Front Door profile. Verify that the home page of the vehicle registration web app appears. You'll notice the name of the web servers are shown on the page to let you know which instance is serving your request.
 
