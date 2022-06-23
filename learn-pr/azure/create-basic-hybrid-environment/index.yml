@@ -40,7 +40,7 @@ units:
 - learn.create-basic-hybrid-environment.2-prepare
 - learn.create-basic-hybrid-environment.3-exercise-create-vm
 - learn.create-basic-hybrid-environment.4-exercise-install-ad-create-user
-- learn.create-basic-hybrid-environment.5-exercise-Azure-AD-tenant
+- learn.create-basic-hybrid-environment.5-exercise-azure-ad-tenant
 - learn.create-basic-hybrid-environment.6-knowledge-check
 - learn.create-basic-hybrid-environment.7-summary
 badge:
