@@ -58,7 +58,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Setting | Value |
     |---|---|
     | **Network connectivity**|
-    | Connectivity method | *Public endpoint (all networks)*. We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
+    | Connectivity method | *Enable public access from all networks*. We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
     | **Network routing**|
     | Routing preference | *Microsoft network routing*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/22/2022
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "URL ping"
       isCorrect: false
-      explanation: "That's incorrect. The URL ping test is mainly used to test endpoint availability."
+      explanation: "That's incorrect. The URL ping test is used to test endpoint availability."
     - content: "Standard"
       isCorrect: false
       explanation: "That's incorrect. This single request test is similar to the URL ping test, but it includes additional information."
@@ -33,7 +33,7 @@ quiz:
       explanation: "That's incorrect. Log-based metrics are aggregated at query time and require more processing to produce results."
     - content: "Pre-aggregated"
       isCorrect: true
-      explanation: "That's correct. Pre-aggregated metrics are stored as a time series and only with key dimensions which enables near real-time alerting on dimensions of metrics, more responsive dashboards."
+      explanation: "That's correct. Pre-aggregated metrics are stored as a time series and only with key dimensions, which enable near real-time alerting on dimensions of metrics, more responsive dashboards."
     - content: "Azure Service Bus"
       isCorrect: false
       explanation: "That's incorrect. Azure Service Bus is message queueing service."
