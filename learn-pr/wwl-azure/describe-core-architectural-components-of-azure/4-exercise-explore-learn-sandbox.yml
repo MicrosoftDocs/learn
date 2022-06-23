@@ -9,8 +9,9 @@ metadata:
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
+azureSandbox: true
 labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-explore-learn-sandbox.md)]
+interactive: powershell
