@@ -1,6 +1,6 @@
 # Title
 
-Extend organizational data for your app by using extensions in Microsoft Graph
+Add custom data to your app using extensions in Microsoft Graph
 
 ## Role(s)
 
@@ -22,7 +22,7 @@ microsoft-graph
 
 ## Summary
 
-Add custom properties to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom properties and their associated data to build unique experiences for your applications using Microsoft Graph.
+Add custom properties to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom properties and their associated data to build unique experiences for your applications.
 
 ## Learning objectives
 
@@ -44,10 +44,10 @@ Identify the subtasks of module title.
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Identify extension types available in Microsoft Graph | Evaluate Microsoft Graph extensibility options for storing lightweight information without an external database | Knowledge check | 1 | Yes |
-| Use Microsoft Graph extension attributes 1-15 | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
-| Use Microsoft Graph directory extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
-| Use Microsoft Graph schema extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
-| Use Microsoft Graph open extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2 | Yes |
+| Use Microsoft Graph extension attributes 1-15 | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
+| Use Microsoft Graph directory extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
+| Use Microsoft Graph schema extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
+| Use Microsoft Graph open extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
 
 
 ## Outline the units
@@ -64,7 +64,7 @@ Add more units as needed for your content
 <!-- Conceptual unit -->
 
 
-3. Exercise - Use extension attributes to extend Microsoft Graph data
+3. Exercise - Add custom data using extension attributes
 <!-- Exercise unit -->
 
 
@@ -72,7 +72,7 @@ Add more units as needed for your content
 <!-- Conceptual unit -->
 
 
-5. Exercise - Use directory extensions to extend Microsoft Graph data
+5. Exercise - Add custom data using directory extensions
 <!-- Exercise unit -->
 
 
@@ -80,7 +80,7 @@ Add more units as needed for your content
 <!-- Conceptual unit -->
 
 
-7. Exercise - Use schema extensions to extend Microsoft Graph data
+7. Exercise - Add custom data using schema extensions
 <!-- Exercise unit -->
 
 
@@ -88,7 +88,7 @@ Add more units as needed for your content
 <!-- Conceptual unit -->
 
 
-9. Exercise - Use open extensions to extend Microsoft Graph data
+9. Exercise - Add custom data using open extensions
 <!-- Exercise unit -->
 
 
