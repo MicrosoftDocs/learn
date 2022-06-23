@@ -14,11 +14,8 @@ In this section, you'll create a new Unity project and get it ready for Mixed Re
 - Import the Mixed Reality Toolkit and configure the Unity project.
 
 1. In your project, give the scene a suitable name, such as **AzureSpatialAnchors**.
-1. If you haven't done so already, on the menu bar, select **Mixed Reality** > **Toolkit** > **Add to scene and configure.** This causes the Mixed Reality Toolkit (MRTK) options to appear in the **Inspector.**
-1. In the **Inspector**, in the **MixedReality Toolkit** component, select the **Spatial Awareness** button.
-
-
-Change the display options for spatial awareness to ensure that the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
+1. If you haven't done so already, on the menu bar, select **Mixed Reality** > **Toolkit** > **Add to scene and configure.** This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
+1. In the **Inspector**, at the top of the **MixedReality Toolkit** component, click the drop-down that displays **DefaultMixedRealityToolkitConfigurationProfile** and change that setting to **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Install in-built Unity packages and import the tutorial assets
 
