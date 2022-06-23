@@ -65,7 +65,7 @@ Select an item in the list view to get more detailed information.
 
 :::image type="content" source="../media/basic-sign.png" alt-text="Screenshot shows a detailed information view. Get the details from the report on sign-ins.":::
 
-Customers can now troubleshoot Conditional Access policies through all sign-in reports. By selecting the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](/azure/active-directory/reports-monitoring/reports-faq).
+Customers can now troubleshoot Conditional Access policies through all sign-in reports. When an admin selects the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](/azure/active-directory/reports-monitoring/reports-faq).
 
 ## Filter sign-in activities
 
