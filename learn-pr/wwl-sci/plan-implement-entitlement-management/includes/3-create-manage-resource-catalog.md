@@ -34,14 +34,14 @@ A catalog is a container of resources and access packages. You create a catalog 
 3.  In the left menu, under **Entitlement management**, select **Catalogs**.
 4.  On the top menu, select **+New Catalog**.
     
-    :::image type="content" source="../media/identity-governance-catalog.png" alt-text="Screenshot of the Identity governance catalog page with the New catalog menu highlighted":::
+    :::image type="content" source="../media/identity-governance-catalog.png" alt-text="Screenshot of the Identity governance catalog page with the New catalog menu highlighted.":::
     
 5.  In the New catalog pane, in the **Name** box, enter **Marketing**.
 6.  In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 7.  **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 8.  Under **Enabled, select No**. You may choose to enable the catalog for immediate use. You can disable if you intend to stage it or keep it unavailable. For this exercise, the catalog doesn't need to be enabled.
     
-    :::image type="content" source="../media/new-catalog-marketing.png" alt-text="Screenshot of the New catalog pan with the Name, Description, Enabled, and Create options highlighted":::
+    :::image type="content" source="../media/new-catalog-marketing.png" alt-text="Screenshot of the New catalog pan with the Name, Description, Enabled, and Create options highlighted.":::
 
 9.  Select Create.
 

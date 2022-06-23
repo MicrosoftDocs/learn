@@ -19,7 +19,7 @@ Capabilities of entitlement management include:
 | Entitlement management capability | Description and value |
 | :----- | :----- |
 | Delegate to non-administrators the ability to create access packages. | These access packages contain resources that users can request, and the delegated access package managers can define policies with rules for which users can request, who must approve their access, and when access expires. |
-| Select connected organizations whose users can request access. | When a user who is not yet in your directory requests access and is approved, they are automatically invited into your directory and assigned access. When their access expires, if they have no other access package assignments, their B2B account in your directory can be automatically removed. |
+| Select connected organizations whose users can request access. | When a user who isn't yet in your directory requests access and is approved, they're automatically invited into your directory and assigned access. When their access expires, if they have no other access package assignments, their B2B account in your directory can be automatically removed. |
 
 ## Summary of terminology
 
@@ -44,7 +44,7 @@ Entitlement management introduces to Azure AD the concept of an *access package*
 
 - Membership of Azure AD security groups.
 - Membership of Microsoft 365 Groups and Teams.
-- Assignment to Azure AD enterprise applications, including SaaS applications and custom-integrated applications that support federation/single sign-on and/or provisioning.
+- Assignment to Azure AD enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
 - Membership of SharePoint Online sites.
 
 You can also control access to other resources that rely upon Azure AD security groups or Microsoft 365 Groups. For example, you can provide:
@@ -65,7 +65,7 @@ Within each policy, an administrator or access package manager defines the alrea
 
 ## When should I use access packages?
 
-Access packages do not replace other mechanisms for access assignment. They are most appropriate in situations such as when:
+Access packages don't replace other mechanisms for access assignment. They're most appropriate in situations such as when:
 
 - Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department.
 - Access requires the approval of an employee's manager or other designated individuals.
@@ -76,4 +76,4 @@ The following diagram shows an example of the elements in entitlement management
 
 :::image type="content" source="../media/entitlement-management-overview.png" alt-text="Diagram of the Entitlement management overview. Process flow and components of entitlement.":::
 
-In **Access package 1**, there is only one single group as a resource. Access is defined with a policy that enables a set of users in the directory to request access. **Access package 2** includes a group, an application, and a SharePoint Online site as resources. Access is defined with two different policies. The first policy enables a set of users in the directory to request access. The second policy enables users in an external directory to request access.
+In **Access package 1**, there's only one single group as a resource. Access is defined with a policy that enables a set of users in the directory to request access. **Access package 2** includes a group, an application, and a SharePoint Online site as resources. Access is defined with two different policies. The first policy enables a set of users in the directory to request access. The second policy enables users in an external directory to request access.
