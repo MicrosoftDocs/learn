@@ -37,7 +37,7 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 **Andy:** I just wish there was a way to see these potential risks coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
 
-**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules impact each other. And I know the perfect Azure DevOps extension for the job.
+**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules impact each other.  
 
 ## Recommendations for managing multiple Agile teams
 

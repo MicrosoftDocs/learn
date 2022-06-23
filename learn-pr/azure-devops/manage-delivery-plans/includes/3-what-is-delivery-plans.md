@@ -1,8 +1,8 @@
-_Delivery Plans_ is an extension for Azure DevOps that helps organizations plan and review work schedules across multiple teams. The Tailspin team will use this extension to get a better idea of how their work relates to work to be produced by other teams.
+_Delivery Plans_ is a hub in Azure DevOps that helps organizations plan and review work schedules across multiple teams. The Tailspin team will use this hub to get a better idea of how their work relates to work to be produced by other teams.
 
-Mara installed Delivery Plans in the team's Azure DevOps organization. She then created a delivery plan and added the sprints for her team and the game engine team. Excited to show off the potential, she invites Andy over for a quick demo.
+Mara created a delivery plan and added the sprints for her team and the game engine team. Excited to show off the potential, she invites Andy over for a quick demo.
 
-**Mara:** After our last conversation I looked into our options for managing delivery plans. I found an Azure DevOps extension that seems to give us everything we need.
+**Mara:** After our last conversation I looked into our options for managing delivery plans. I found the Delivery Plans hub that seems to give us everything we need.
 
 **Andy:** I'm very interested to see what you've come up with. There's a lot of stress throughout the organization about the beta slip, so anything we can do to improve schedule efficiency will be quite welcome.
 
@@ -10,7 +10,7 @@ Mara installed Delivery Plans in the team's Azure DevOps organization. She then 
 
 :::image type="content" source="../media/3-delivery-plan-before.png" alt-text="A delivery plan showing schedules for the Web team and the Engine team.":::
 
-**Mara:** The Delivery Plans extensions allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They are shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
+**Mara:** Delivery Plans allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They are shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
 
 **Andy:** This is great! Now we know when something we're dependent on won't be available in time. We can even gauge the likelihood of delay based on how much other work and dependencies those teams have taken on. This should help mitigate some of the "schedule chicken" behavior that sometimes go on around here.
 
