@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-resources
-title: Validate connectivity from Spark
+title: Query Cosmos DB data with Spark
 metadata:
-  title: Validate connectivity from Spark
-  description: "Validate connectivity from Spark"
-  ms.date: 01/05/2022
+  title: Query Cosmos DB data with Spark
+  description: "Query Cosmos DB data with Spark"
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-create-resources.md)]
+  [!include[](includes/5-query-with-spark.md)]
