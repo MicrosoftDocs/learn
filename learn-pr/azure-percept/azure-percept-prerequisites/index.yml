@@ -19,6 +19,7 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-percept/azure-percept-prerequisites.svg
 badge:
   uid: learn.azure-percept.prerequisites.badge
+hidden: true
 levels:
 - beginner
 roles:
