@@ -1,7 +1,7 @@
 
 ## How to obtain a query plan in Azure Synapse Analytics dedicated SQL Pool ##
 
-Often Database Engineers and Database Administrators have a need to analysi and investigate query execution in SQL Pools. This is done through the use of dynamic management views (DMVs).
+Often Database Engineers and Database Administrators have a need to analyse and investigate query execution in SQL Pools. This is done through the use of dynamic management views (DMVs).
 > [!Note] 
 > Permissions to query the DMVs require either **VIEW DATABASE STATE** or **CONTROL** permission, in typical scenarios, granting **VIEW DATABASE STATE** is the preferred method as it is more restrictive
 > ``` SQL
@@ -47,19 +47,52 @@ ORDER BY step_index;
 
 When looking at the returned DSQL plan, further information about individual steps by looking at the *operation_type* of any long-running step. Take note of the **Step Index** which we'll use to investigate two types of perfomrnace impacting operations including 
 
+
 1 **SQL Operations** which include:
 - OnOperation
 - Remote Operation
 - Return Operation
 
 2 **Data Movement Operations** including:
--ShuffleMoveOperation
--BroadcastMoveOperation
--TrimMoveOperation
--PartitionMoveOperation
--MoveOperation
--CopyOperation
+- ShuffleMoveOperation
+- BroadcastMoveOperation
+- TrimMoveOperation
+- PartitionMoveOperation
+- MoveOperation
+- CopyOperation
 
+From the prior step using **sys.dm_pdw_request_steps** we want to net use the *request_id* and *step_index* to retrieve exection informatin of the query step on **all** of the distributed databasee using a query simsilar to the one below.
+```SQL
+--Find the distribution run times for a particular SQL Step
+--retrieve request_id and step_index with the values from the steps above.
 
-- Example of a bad operation (like a huge broadcast)
-- how to fix issues with query plans (stats, query design, table design, etc)
+SELECT * FROM sys.dm_pdw_sql_requests
+WHERE request_id = 'QID####' AND step_index = 4;
+```
+
+When the query step is still *running* the **DBCC PDW_SHOWEXECUTIONPLAN** can be utilized to retrieve the SQL Server estrimatedplan from the plan cache for the step running on a specific distribution as shown below.
+```SQL
+ --Retrieve the SQL Server execution plan for a running query on a particular SQL pool or control node
+ --Replace distribution_id and spid from the results from the previous query
+ --DBCC PDW_SHOWEXECUTIONPLAN( distribution_id, spid)
+
+ DBCC PDW_SHOWEXECUTIONPLAN(7, 31)
+```
+## Looking for movement on the distributed databases ##
+
+Using the *Request ID* and the *Step Index* as previously retrieved above in conjunction with **sys.dm_pdw_dms_workers** will allow the retrieval of information about any data movement steps running on each distribution as shown below.
+```SQL
+ --Find all workers that are completing a Data Movement Step and their details
+ --Replace request_id and step_index with the values from the prior steps shown above.
+
+SELECT * FROM sys.dm_pdw_dms_workers
+WHERE request_id = 'QID####' AND step_index = 2;
+
+```
+> [!Note]
+> checking the *total_elapsed_time* will help determine if a particular distribution is taking significantly longer than others for data movement.
+> for any long-running distribution, check the *rows_processed* column to derminie if it is materially larger than others. if so, this might indicate skew of your underlying data.
+
+One example of a bad operation that can cause performance problems such as data skew is distributing on a column that contains a lot of NULL values which will cause those rose to land in the same distribution. If possible, eliminate nulls or filter them out of your query althogether to increase performance.
+
+To help resolve issues, refer to the sections on [Create Statistics to Improve Performance](./7-create-statistics-to-improve.md), [Understand performance issues related to tables ](./2-understand-performance-issues-related-to-tables.md), [understand table distribution design](./4-understand-table-distribution-design.md), and [use indexes to improve performance](./5-use-indexes-to-improve.md)
