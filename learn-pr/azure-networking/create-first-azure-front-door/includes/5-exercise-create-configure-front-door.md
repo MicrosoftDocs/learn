@@ -15,22 +15,22 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
 
 1. Create the Azure Front Door profile with the following command:
 
-```azurecli
-az afd profile create \
-    --profile-name vehicleFrontDoor \
-    --resource-group $RG \
-    --sku Premium_AzureFrontDoor
-```
+    ```azurecli
+    az afd profile create \
+        --profile-name vehicleFrontDoor \
+        --resource-group $RG \
+        --sku Premium_AzureFrontDoor
+    ```
 
 1. Create the first endpoint within the profile with the following command:
 
-```azurecli
-endpoint="vehicle-$RANDOM"
-az afd endpoint create \
-    --endpoint-name $endpoint \
-    --profile-name vehicleFrontDoor \
-    --resource-group $RG
-```
+    ```azurecli
+    endpoint="vehicle-$RANDOM"
+    az afd endpoint create \
+        --endpoint-name $endpoint \
+        --profile-name vehicleFrontDoor \
+        --resource-group $RG
+    ```
 
 ## Create origin groups and add origins
 
