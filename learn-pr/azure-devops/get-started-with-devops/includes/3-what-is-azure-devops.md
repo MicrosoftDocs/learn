@@ -31,4 +31,4 @@ Here's a short video where Abel explains the five parts of Azure DevOps:
 
 **Tim:** What do we have to do?
 
-**Mara:** It's easy. All we do is set up an account and an organization. The whole process only takes a couple minutes.
+**Mara:** It's easy. All we do is set up an account and an organization. The whole process only takes a couple of minutes.
