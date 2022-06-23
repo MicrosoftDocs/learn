@@ -1,4 +1,4 @@
-Language Studio is included with the Azure Cognitive Service for Language. Language Studio lets you use UI tools to explore and build AI models focused in language into your solutions.
+Language Studio is included with the Azure Cognitive Service for Language. Language Studio lets you use UI tools to explore and build AI models focused in language into your solutions. 
 
 These AI models have endpoints that can be used in search solutions to enrich indexes.
 
