@@ -19,7 +19,7 @@ The standby server reports back to the primary server with information such as t
 
 The **max_wal_senders** parameter sets the maximum number of WAL sender processes.
 
-:::image type="content" source="../media/concepts-zone-redundant-high-availability-architecture.png" alt-text="Image showing the concepts zone redundant high availability architecture." lightbox="../media/concepts-zone-redundant-high-availability-architecture.png":::
+:::image type="content" source="../media/concepts-zone-redundant-high-availability-architecture.png" alt-text="Screenshot showing the concepts zone redundant high availability architecture." lightbox="../media/concepts-zone-redundant-high-availability-architecture.png":::
 
 The primary and standby servers are monitored, and appropriate actions are taken to remediate issues including triggering a failover to the standby server. The zone redundant high availability statuses are listed below:
 
