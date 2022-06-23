@@ -38,7 +38,7 @@ quiz:
     - content: "Train a custom text classification model."
       isCorrect: false
       explanation: "Incorrect. You do need to train the classification model, but you don't store the enrichments in the search index."
-  - content: "Where do you copy the full endpoint to call the function app from?"
+  - content: "Where do you copy the full endpoint of the function app to use in the custom webskill? This needs to include the api-version and path to the actual function name."
     choices:
     - content: "You can find the endpoint in the Azure portal."
       isCorrect: false
@@ -48,4 +48,4 @@ quiz:
       explanation: "Incorrect. You can find the endpoint for the deployed training model, not your function app."
     - content: "You can find the endpoint in the Azure extension inside VS Code."
       isCorrect: true
-      explanation: "Correct. You right click on the function in the Azure extension and select Copy function URL."
+      explanation: "Correct. You right click on the function name in the Azure extension and select Copy function URL."
