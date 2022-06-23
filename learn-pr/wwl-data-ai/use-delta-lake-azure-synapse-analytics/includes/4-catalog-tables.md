@@ -25,7 +25,7 @@ df.write.format("delta").option("path", "/mydata").saveAsTable("MyExternalTable"
 
 ### Creating a catalog table using SQL
 
-You can also create a catalog table by using the `CREATE TABLE` SQL statement with the `USING DELTA` clause, and an optional `LOCATION` parameter for external tables. You can run the statement using the SparkSQL API, like the following examples:
+You can also create a catalog table by using the `CREATE TABLE` SQL statement with the `USING DELTA` clause, and an optional `LOCATION` parameter for external tables. You can run the statement using the SparkSQL API, like the following example:
 
 ```python
 spark.sql("CREATE TABLE MyExternalTable USING DELTA LOCATION '/mydata'")
@@ -42,7 +42,7 @@ LOCATION '/mydata'
 ```
 
 > [!TIP]
-> The `CREATE TABLE` returns an error if a table with the specified name already exists in the catalog. To mitigate this, you can use a `CREATE TABLE IF NOT EXISTS` statement or the `CREATE OR REPLACE TABLE` statement.
+> The `CREATE TABLE` returns an error if a table with the specified name already exists in the catalog. To mitigate this behavior, you can use a `CREATE TABLE IF NOT EXISTS` statement or the `CREATE OR REPLACE TABLE` statement.
 
 #### Defining the table schema
 
@@ -92,6 +92,6 @@ SELECT orderid, salestotal
 FROM ManagedSalesOrders
 ```
 
-> [TIP]
+> [!TIP]
 > For more information about working with Delta Lake, see [Table batch reads and writes
 ](https://docs.delta.io/latest/delta-batch.html) in the Delta Lake documentation.

@@ -41,10 +41,10 @@ quiz:
     - content: "Spark Structured Streaming"
       isCorrect: false
       explanation: "Incorrect. Delta Lake tables do support Spark Structured Streaming, but that isn't what enables querying of previous versions."
-    - content: "Time Travel."
+    - content: "Time Travel"
       isCorrect: true
       explanation: "Correct. The Time Travel feature is based on the transaction log, which enables you to specify a version number or timestamp for the data you want to retrieve."
-    - content: "Catalog Tables."
+    - content: "Catalog Tables"
       isCorrect: false
       explanation: "Incorrect. You can create Catalog Tables for Delta Lake data, but that isn't what enables querying of previous versions."
   - content: "You have a managed catalog table that contains Delta Lake data. If you drop the table, what will happen?"
@@ -52,7 +52,7 @@ quiz:
     - content: "The table metadata and data files will be deleted."
       isCorrect: true
       explanation: "Correct. The life-cycle of the metadata and data for a managed table are the same."
-    - content: "The table metadata will be removed from the catalog, but the data files will remain intact"
+    - content: "The table metadata will be removed from the catalog, but the data files will remain intact."
       isCorrect: false
       explanation: "Incorrect. The life-cycle of the metadata and data for a managed table are the same."
     - content: "The table metadata will remain in the catalog, but the data files will be deleted."
@@ -63,9 +63,9 @@ quiz:
     - content: "Only a source"
       isCorrect: false
       explanation: "Incorrect. A Delta Lake table can be a source or a sink."
-    - content: "Only a sink."
+    - content: "Only a sink"
       isCorrect: false
       explanation: "Incorrect. A Delta Lake table can be a source or a sink."
-    - content: "Either a source or a sink."
+    - content: "Either a source or a sink"
       isCorrect: true
       explanation: "Correct. A Delta Lake table can be a source or a sink."

@@ -6,7 +6,7 @@ A typical stream processing solution involves constantly reading a stream of dat
 
 Spark includes native support for streaming data through *Spark Structured Streaming*, an API that is based on a boundless dataframe in which streaming data is captured for processing. A Spark Structured Streaming dataframe can read data from many different kinds of streaming source, including network ports, real time message brokering services such as Azure Event Hubs or Kafka, or file system locations.
 
-> [TIP]
+> [!TIP]
 > For more information about Spark Structured Streaming, see [Structured Streaming Programming Guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) in the Spark documentation.
 
 ## Streaming with Delta Lake tables
@@ -61,7 +61,7 @@ delta_stream = stream_df.writeStream.format("delta").option("checkpointLocation"
 > [!NOTE]
 > The `checkpointLocation` option is used to write a checkpoint file that tracks the state of the stream processing. This file enables you to recover from failure at the point where stream processing left off.
 
-After the streaming process has started, you can query the Delta Lake table to which the streaming output is being written to see the latest data. For example, the following code creates a catalog Delta Lake table folder and queries it:
+After the streaming process has started, you can query the Delta Lake table to which the streaming output is being written to see the latest data. For example, the following code creates a catalog table for the Delta Lake table folder and queries it:
 
 ```sql
 %%sql
