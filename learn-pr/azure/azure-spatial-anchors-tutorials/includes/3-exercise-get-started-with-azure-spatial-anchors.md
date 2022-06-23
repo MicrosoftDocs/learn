@@ -7,15 +7,18 @@ In this unit, you'll explore the steps required to:
 
 In this section, you'll create a new Unity project and get it ready for Mixed Reality Toolkit (MRTK) development.
 
-First, follow the steps in [Initializing your project and deploying your first application](/learn/paths/beginner-hololens-2-tutorials/) in the HoloLens 2 introduction module, excluding the "Build your application to HoloLens 2" instructions in unit 7. The steps that you'll follow include:
+1. Follow the steps in our [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk) article. The steps include:
 
-1. Create the Unity project and give it a suitable name, like **MRTK Tutorials**.
-2. Switch the build platform.
-3. Import the TextMeshPro Essential Resources.
-4. Import the Mixed Reality Toolkit and configure the Unity project.
-5. Create and configure the scene and give the scene a suitable name, like **AzureSpatialAnchors**.
+- Create the Unity project and give it a suitable name, like **MRTK Tutorials**.
+- Switch the build platform.
+- Import the Mixed Reality Toolkit and configure the Unity project.
 
-Then, change the display options for spatial awareness to ensure that the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
+1. In your project, give the scene a suitable name, such as **AzureSpatialAnchors**.
+1. If you haven't done so already, on the menu bar, select **Mixed Reality** > **Toolkit** > **Add to scene and configure.** This causes the Mixed Reality Toolkit (MRTK) options to appear in the **Inspector.**
+1. In the **Inspector**, in the **MixedReality Toolkit** component, select the **Spatial Awareness** button.
+
+
+Change the display options for spatial awareness to ensure that the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Install in-built Unity packages and import the tutorial assets
 
