@@ -24,9 +24,6 @@ TODO: restate the scenario problem
         * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
         * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
  -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
-
 Adding authentication enables your web app to access limited profile information and customize the experience offered to users. Web apps authenticate a user in a web browser. In this scenario, the web application directs the user to sign in to Microsoft identity. Microsoft identity returns a sign-in response through the user’s browser, which contains claims about the user in an identity token.
 
 <!-- 3. Describe the experience without the product ---------------------------------------------------
