@@ -21,7 +21,6 @@ roles:
 - data-engineer
 products:
 - power-bi
-- microsoft-purview
 subjects:
 - information-protection-governance
 modules:
