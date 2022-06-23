@@ -34,7 +34,7 @@ In the Azure portal, navigate to your Azure Database for PostgreSQL server. Unde
 
 ## Infrastructure double encryption enabled
 
-You can also add a second layer of encryption for data at rest. This encryption uses service-managed keys but isn't enabled by default because of the performance affect. This second layer of encryption also uses FIPS 140-2 validated cryptographic module, but with a different encryption algorithm. Infrastructure Layer encryption has the benefit of being implemented at the layer closest to the storage device or network wires, and close to hardware that stores data at rest. 
+You can also add a second layer of encryption for data at rest. This encryption uses service-managed keys but isn't enabled by default because of the performance effect. This second layer of encryption also uses FIPS 140-2 validated cryptographic module, but with a different encryption algorithm. Infrastructure Layer encryption has the benefit of being implemented at the layer closest to the storage device or network wires, and close to hardware that stores data at rest. 
 
 You must enable infrastructure double encryption when the server is created. When a new Azure Database for PostgreSQL single server is being created, select the **Additional Settings** tab. Select **Infrastructure double encryption enabled**.
 
