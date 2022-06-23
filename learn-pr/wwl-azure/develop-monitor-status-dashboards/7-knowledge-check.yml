@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2022
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -23,11 +23,11 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
     - content: "Power BI."
-      isCorrect: false
-      explanation: "Incorrect. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
-    - content: "Excel."
       isCorrect: true
       explanation: "Correct. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
+    - content: "Excel."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
   - content: "Which of the following choices is an Azure Dashboards limitation?"
     choices:
     - content: "Log charts can only be pinned to shared dashboards."
