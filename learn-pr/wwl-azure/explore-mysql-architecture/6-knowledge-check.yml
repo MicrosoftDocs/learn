@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-mysql-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your production application has a normally heavy workload with a requirement for high concurrency. Which implementation of Azure Database for MySQL should you select?"
+    choices:
+    - content: "Single server - Memory Optimized (2 - 1. vCores)"
+      isCorrect: false
+      explanation: "That's incorrect. Flexible server provides more granular control and flexibility with configuration. Flexible server should be selected unless there's a specific reason to select Single server."
+    - content: "Flexible Server - Memory Optimized (2 - 1. vCores)"
+      isCorrect: true
+      explanation: "That's correct. Memory optimized is the best solution for high concurrency workloads."
+    - content: "Flexible Server - Burstable (1 - 2. vCores)"
+      isCorrect: false
+      explanation: "That's incorrect. Flexible server Burstable SKU is best suited to low-concurrency workloads, with occasional peaks."
+  - content: "MySQL supports a pluggable storage engine architecture. You're porting your database to Azure Database for MySQL Flexible Server, which storage engine should you select?"
+    choices:
+    - content: "MyISAM"
+      isCorrect: false
+      explanation: "That's incorrect. MyISAM isn't supported on Azure Database for MySQL."
+    - content: "CSV"
+      isCorrect: false
+      explanation: "That's incorrect. CSV is supported on Azure Database for MySQL but would only be used for specific scenarios, not for the whole database."
+    - content: "InnoDb"
+      isCorrect: true
+      explanation: "That's correct. InnoDB is MySQL's default storage engine and is supported by Azure Database for MySQL."
+  - content: "How does the query optimizer ensure that queries run efficiently?"
+    choices:
+    - content: "The query optimizer estimates the cost of different execution plans, using statistics provided by the MySQL daemon."
+      isCorrect: false
+      explanation: "That's incorrect. The MySQL daemon is the service program that starts all other MySQL services. It doesn't directly ensure that the query optimizer finds the most efficient execution plan."
+    - content: "The query optimizer estimates the cost of different execution plans, using statistics provided by the storage engine."
+      isCorrect: true
+      explanation: "That's correct. The query optimizer uses statistics provided by the relevant storage engine to find the most efficient execution plan."
+    - content: "The query optimizer estimates the cost of different execution plans, using statistics provided by the EXPLAIN utility statement."
+      isCorrect: false
+      explanation: "That's incorrect. Explain displays the expected execution plan for a given query, it doesn't help the query optimizer to choose the most efficient execution plan."
