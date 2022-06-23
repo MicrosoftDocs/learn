@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  zone_pivot_groups: dev-lang-csharp-java-node-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
