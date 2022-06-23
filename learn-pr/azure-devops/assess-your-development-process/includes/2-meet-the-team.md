@@ -9,15 +9,15 @@ The _Space Game_ website is a .NET app written in C# that's deployed to Linux. T
 <!-- TODO: Host this under our team account. -->
 <!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->
 
-:::image type="content" source="../media/2-space-game-top.png" alt-text="A web browser showing the Space Game website. The page shows graphics from the game and a button to download the game.":::
+:::image type="content" source="../media/2-space-game-top.png" alt-text="Screenshot of a web browser showing the Space Game website. The page shows graphics from the game and a button to download the game.":::
 
 And here's what the leaderboard looks like:
 
-:::image type="content" source="../media/2-space-game-leaderboard.png" alt-text="A web browser showing the Space Game leaderboard. The leaderboard shows the top 10 players and their high scores.":::
+:::image type="content" source="../media/2-space-game-leaderboard.png" alt-text="Screenshot of a web browser showing the Space Game leaderboard. The leaderboard shows the top 10 players and their high scores.":::
 
 You can filter the leaderboard by mode or by game map. You can also select a player's name to see their profile and game achievements:
 
-:::image type="content" source="../media/2-player-profile.png" alt-text="The Space Game website showing the top player's profile information.":::
+:::image type="content" source="../media/2-player-profile.png" alt-text="Screenshot of the Space Game website showing the top player's profile information.":::
 
 > [!NOTE]
 > Although the game and the website aren't finished yet, you can [check out the website now](https://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
@@ -49,7 +49,7 @@ Irwin, the team's product manager, has called everyone into a meeting, and he's 
 
 He demands, "How long before these problems are fixed?"
 
-**Andy thinks**: I bet it takes me a month to write that code.
+**Andy thinks**: I bet it'll take me a month to write that code.
 
 **Amita thinks**: It'll take me at least a week to test this code and I can't start until Andy is finished, and he always wants to sneak in new code.
 
