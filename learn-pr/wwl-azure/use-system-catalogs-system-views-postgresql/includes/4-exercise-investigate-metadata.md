@@ -189,4 +189,4 @@ When you've completed all of the tasks in the exercise, you can stop the Postgre
 1. In the Azure portal, select your PostgreSQL server and select **Overview**.
 1. Select **Stop**.
 
-    :::image type="content" source="../media/4-stop-server.png" alt-text="Screenshot of the Stop icon" lightbox="../media/4-stop-server.png":::
+    :::image type="content" source="../media/4-stop-server.png" alt-text="Screenshot of the Stop icon." lightbox="../media/4-stop-server.png":::
