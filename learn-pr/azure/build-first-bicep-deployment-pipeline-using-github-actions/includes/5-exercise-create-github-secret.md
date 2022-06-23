@@ -123,15 +123,15 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-   -DisplayName ToyWebsiteWorkflow `
-   -Role Contributor `
-   -Scope $resourceGroupId
+     -DisplayName ToyWebsiteWorkflow `
+     -Role Contributor `
+     -Scope $resourceGroupId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $($servicePrincipal.AppId)
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $($azureContext.Subscription.Id)
+     tenantId = $($azureContext.Tenant.Id)
    }
    $output | ConvertTo-Json
    ```
