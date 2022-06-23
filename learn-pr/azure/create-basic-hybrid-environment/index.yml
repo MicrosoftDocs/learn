@@ -2,14 +2,14 @@
 uid: learn.create-basic-hybrid-environment
 metadata:
   moduleType: guided-project
-  title: create-basic-hybrid-environment
+  title: Create a basic hybrid environment
   description: "This module will demonstrate how to create an Active Directory and Azure AD tenant environment that will be used in subsequent learn modules."
   ms.date: 5/31/2022
   author: billmath
   ms.author: billmath
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: create-basic-hybrid-environment
+title: Create a basic hybrid environment
 summary: |
   Create an on-premises Active Directory environment and an Azure AD tenant.  This environment will be the basis for more guided projects that will demonstrate how to deploy hybrid environments and use the cloud.
   > [!NOTE]
@@ -39,7 +39,7 @@ units:
 - learn.create-basic-hybrid-environment.1-introduction
 - learn.create-basic-hybrid-environment.2-prepare
 - learn.create-basic-hybrid-environment.3-exercise-create-vm
-- learn.create-basic-hybrid-environment.4-exercise-install-AD-and-create-user
+- learn.create-basic-hybrid-environment.4-exercise-install-ad-create-user
 - learn.create-basic-hybrid-environment.5-exercise-Azure-AD-tenant
 - learn.create-basic-hybrid-environment.6-knowledge-check
 - learn.create-basic-hybrid-environment.7-summary

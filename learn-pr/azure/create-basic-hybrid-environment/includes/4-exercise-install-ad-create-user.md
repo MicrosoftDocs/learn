@@ -1,7 +1,7 @@
 
 ## Install Active Directory and create a test user
 
-![Diagram that shows a basic Azure A D environment.](/media/4-exercise-1.png)
+![Diagram that shows a basic Azure A D environment.](../media/4-exercise-1.png)
 
 ## Change the ISO file in Hyper-V
 Now that we have the virtual machine up and the operating system installed, we want to change the ISO file that VM is using.  We're taking this action so we can run the remaining scripts from within the VM.  To change the ISO file, do the following tasks:
@@ -9,7 +9,7 @@ Now that we have the virtual machine up and the operating system installed, we w
 1. In **Hyper-V**, right click on DC1 and select **Settings**.
 2. On the left, select **DVD Drive**.
 3. On the right, browse for the **LEARN_Scripts_Basic_AD_Azure_AD.ISO** file that was downloaded in the prepare section.
-  [![Change ISO](/media/4-exercise-2.png)](/media/4-exercise-2.png#lightbox)
+  [![Screenshot of Change ISO](../media/4-exercise-2.png)](../media/4-exercise-2.png#lightbox)
 4. Click **Apply** and **OK**. 
 
 ## Install Active Directory prerequisites
@@ -75,7 +75,7 @@ Variable|Description
 |$DomaninNetBIOSName|Specifies the NetBIOS name for the root domain in the new forest|
 |$ForestMode|Specifies the forest functional level for the new forest|
 |$LogPath|Specifies the fully qualified, non-UNC path to a directory on a fixed disk of the local computer where the log file for this operation is written|
-|$SysVolPath|Specifies the fully qualified, non-UNC path to a directory on a fixed disk of the local computer where the Sysvol file is written| 
+|$SysVolPath|Specifies the fully qualified, non-UNC path to a directory on a fixed disk of the local computer where the sysvol file is written| 
 |$featureLogPath|Sets the feature log file path| 
 |$Password|Supplies the password for the administrator account when the computer is started in Safe Mode or a variant of Safe Mode, such as Directory Services Restore Mode|  
 |$SecureString|Converts $Password to a secure string|
@@ -148,12 +148,12 @@ Do the following tasks:
     Set-ADUser -Identity $Identity -PasswordNeverExpires $true -ChangePasswordAtLogon $false -Enabled $true
 
 ## Create a checkpoint
-Once you have created the user, we want to create a snapshot of the work we have done so we can roll-back to this point if we need to.  To do this task, do the following tasks:
+Once you have created the user, we want to create a snapshot of the work we have done so we can roll back to this point if we need to.  To do this task, do the following tasks:
 
 1. In Hyper-V, right-click DC1.
 2. Select **Checkpoint**
 3. You should now see a checkpoint created.
-[![Create a checkpoint](/media/4-exercise-3.png)](/media/4-exercise-3.png#lightbox)
+[![Screenshot of Create a checkpoint](../media/4-exercise-3.png)](../media/4-exercise-3.png#lightbox)
 
 ## Check your work
 At this point, you should have your server renamed and Active Directory installed.  You should also have a new user named Allie McCray created.

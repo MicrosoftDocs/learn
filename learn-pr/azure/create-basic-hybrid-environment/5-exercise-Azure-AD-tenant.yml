@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-basic-hybrid-environment.5-exercise-Azure-AD-tenant
+uid: learn.create-basic-hybrid-environment.5-exercise-azure-ad-tenant
 title: Create an Azure AD tenant
 metadata:
   unitType: exercise
-  title: exercise
+  title: Create an Azure AD tenant
   description: "This exercise will guide you through creating an Azure AD tenant"
   ms.date: 5/31/2022
   author: billmath
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-Azure-AD-tenant.md)]
+  [!include[](includes/5-exercise-azure-ad-tenant.md)]

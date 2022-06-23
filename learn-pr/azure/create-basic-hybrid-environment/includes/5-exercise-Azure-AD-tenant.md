@@ -1,6 +1,6 @@
 ## Install Active Directory and create a test user
 
-![Diagram that shows a basic Azure A D environment.](/media/5-exercise-1.png)
+![Diagram that shows a basic Azure A D environment.](../media/5-exercise-1.png)
 
 ## Create an Azure AD tenant
 Now you need to create an Azure AD tenant so that you can synchronize our users to the cloud.  To create a new Azure AD tenant, do the following.
@@ -12,7 +12,7 @@ Now you need to create an Azure AD tenant so that you can synchronize our users 
 5.  Under select tenant type, choose **Azure Active Directory**.  Click **Next: Configuration**.
 6.  Enter the **Organization name** and an **Initial domain name** for your tenant.
 7.  Choose your **Country/Region**.
- ![create tenant](/media/tenant-1.png)
+ ![create tenant](../media/tenant-1.png)
 1.  Click **Review + create**
 2. Review the information and click **Create**.
 
