@@ -127,7 +127,7 @@ When you submit an email message for analysis, you'll get:
 
 - To submit messages and files to Microsoft, you need to have one of following roles:
 
-Security Administrator or Security Reader in the Microsoft 365 Defender portal.
+  Security Administrator or Security Reader in the Microsoft 365 Defender portal.
 
 
 - Admins can submit messages as old as 30 days if it's still available in the mailbox and not purged by the user or another admin.
