@@ -85,9 +85,9 @@ You’ve determined that a device or a file isn't a threat. You can undo remedia
 
 To remove a file from quarantine across multiple devices:
 
-- On the History tab, select a file that has the Action type Quarantine file.
+1. On the History tab, select a file that has the Action type Quarantine file.
 
-- In the pane on the right side of the screen, select Apply to X more instances of this file, and then select Undo.
+1. In the pane on the right side of the screen, select Apply to X more instances of this file, and then select Undo.
 
 ### Viewing action source details
 The Action center includes an Action source column that tells you where each action came from. The following table describes possible Action source values:
@@ -158,52 +158,52 @@ The reported message will be marked as a false positive or a false negative. An 
 
 ### Submit a questionable email to Microsoft
 
-- In the Select the submission type box, verify that Email is selected in the dropdown list.
+1. In the Select the submission type box, verify that Email is selected in the dropdown list.
 
-- In the Add the network message ID or upload the email file section, use one of the following options:
+1. In the Add the network message ID or upload the email file section, use one of the following options:
 
-     - Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
+    1. Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
 
-    - Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
+    1. Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
 
 In the Choose a recipient who had an issue box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
-- In the Select a reason for submitting to Microsoft section, select one of the following options:
+3. In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-    - Shouldn't have been blocked (False positive)
-    - Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    1. Shouldn't have been blocked (False positive)
+    1. Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware, or Spam
 
-- When you're finished, select Submit.
+2. When you're finished, select Submit.
 
 
 ### Send a suspect URL to Microsoft
 
-- In the Select the submission type box, select URL from the dropdown list.
+1. In the Select the submission type box, select URL from the dropdown list.
 
-- In the URL box that appears, enter the full URL. For example, `https://www.fabrikam.com/marketing.html`.
+1. In the URL box that appears, enter the full URL. For example, `https://www.fabrikam.com/marketing.html`.
 
-- In the Select a reason for submitting to Microsoft section, select one of the following options:
+1. In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-    - Shouldn't have been blocked (False positive)
-    - Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    1. Shouldn't have been blocked (False positive)
+    1. Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware
 
-- When you're finished, select Submit.
+1. When you're finished, select Submit.
 
 
 ### Submit a suspected email attachment to Microsoft
-- In the Select the submission type box, select Email attachment from the dropdown list.
+1, In the Select the submission type box, select Email attachment from the dropdown list.
 
-- In the File section that appears, select Browse files. In the dialog that opens, find and select the file, and then select Open.
+1. In the File section that appears, select Browse files. In the dialog that opens, find and select the file, and then select Open.
 
-- In the Select a reason for submitting to Microsoft section, select one of the following options:
+1. In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-    - Shouldn't have been blocked (False positive)
-    - Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    1. Shouldn't have been blocked (False positive)
+    1. Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware
 
-- When you're finished, select Submit.
+1. When you're finished, select Submit.
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see Manage quarantined messages and files as an admin.
