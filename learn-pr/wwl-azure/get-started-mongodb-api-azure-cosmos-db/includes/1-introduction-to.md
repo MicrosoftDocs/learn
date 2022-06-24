@@ -19,7 +19,7 @@ Azure Cosmos DB API for MongoDB is compatible with multiple MongoDB Server versi
 
 [![Diagram showing the MongoDB wire protocol](../media/1-mongodb-wire-protocol.png)](../media/1-mongodb-wire-protocol.png#lightbox)
 
-## Get started with Azure Cosmos DB API for MongoDB
+## Get started with Azure Cosmos DB API for MongoDB 
 
 After completing this module, you’ll be able to:
 
