@@ -9,7 +9,7 @@ You can start the Access Review process from the notification email or by going 
     > [!IMPORTANT]
     > There could be delays in receiving email. In some cases it could take up to 24 hours. Add azure-noreply@microsoft.com to your safe recipients list to make sure that you are receiving all emails. a. Look for an email from Microsoft asking you to review access. Here is an example email to review the access for a group.
     
-    :::image type="content" source="../media/access-review-email-0bf34680.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group":::
+    :::image type="content" source="../media/access-review-email.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group.":::
     
 2.  Select the **Start review** link to open the access review.
 3.  **If you don't have the email**, you can find your pending access reviews by following these steps:
@@ -26,8 +26,8 @@ Once you have opened the access review, you see the names of users who need to h
 
 There are two ways that you can approve or deny access:
 
- -  You can approve or deny access for one or more users 'manually' by choosing the appropriate action for each user request.
- -  You can accept the system recommendations.
+- You can approve or deny access for one or more users 'manually' by choosing the appropriate action for each user request.
+- You can accept the system recommendations.
 
 ### Approve or deny access for one or more users
 
@@ -35,18 +35,23 @@ There are two ways that you can approve or deny access:
     
      -  To approve or deny access for a single user, select the row to open a window to specify the action to take.
      -  To approve or deny access for multiple users, add check marks next to the users and then select the **Review X user(s)** button to open a window to specify the action to take.
+
 2.  Select **Approve** or **Deny**.
     
     > [!NOTE]
     > If you are unsure, you can select "Don't know" and the user gets to keep their access and your choice is recorded in the audit logs.
-3.  The administrator of the access review may require that you supply a reason in the **Reason** box for your decision. Even when a reason is not required. You can still provide a reason for your decision and the information that you include will be available to other reviewers.
+
+3.  The administrator of the access review may require that you supply a reason in the **Reason** box for your decision.
+
+     - Even when a reason is not required. You can still provide a reason for your decision and the information that you include will be available to other reviewers.
+
 4.  Once you have specified the action to take, select **Save**.
     
     > [!NOTE]
     > You can change your response at any time before the access review has ends. If you want to change your response, select the row and update the response. For example, you can approve a previously denied user or deny a previously approved user.
     
-     -  If a user is denied access, they aren't removed immediately. They are removed when the review period has ended. Or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
-     -  If there are multiple reviewers, the last submitted response is recorded. Consider an example where an administrator designates two reviewers – Alice and Bob. Alice opens the access review first and approves a user's access request. Before the review period ends, Bob opens the access review and denies access on the same request previously approved by Alice. The last decision denying the access is the response that gets recorded.
+     - If a user is denied access, they aren't removed immediately. They are removed when the review period has ended. Or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
+     - If there are multiple reviewers, the last submitted response is recorded. Consider an example where an administrator designates two reviewers – Alice and Bob. Alice opens the access review first and approves a user's access request. Before the review period ends, Bob opens the access review and denies access on the same request previously approved by Alice. The last decision denying the access is the response that gets recorded.
 
 ### Approve or deny access based on recommendations
 
