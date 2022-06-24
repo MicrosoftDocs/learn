@@ -4,14 +4,11 @@ You start by activating the Learn sandbox. Then, you’ll investigate each of th
 
 ## Activate the Learn Sandbox
 
-If you haven’t already, use the Activate sandbox button to activate the Learn sandbox.
+If you haven’t already, use the Activate sandbox button above to activate the Learn sandbox.
 
-:::image type="content" source="../media/sandbox-warning-e8585b5e.png" alt-text="Screenshot of the Activate sandbox button and associated text.":::
+If you receive a notice saying Microsoft Learn needs your permission to create Azure resource, use the Review permission button to review and accept the permissions. Once you approve the permissions, it may take a minute or two for the sandbox to activate.<br>
 
-
-If you receive a notice saying Microsoft Learn needs your permission to create Azure resource, use the Review permission button to review and accept the permissions. Once you approve the permissions, it may take a minute or two for the sandbox to activate.
-
-## Use the PowerShell CLI
+## Task 1: Use the PowerShell CLI
 
 Once the sandbox launches, half the screen will be in PowerShell command line interface (CLI) mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
 
@@ -33,7 +30,7 @@ Most Azure specific commands will start with the letters az. The Get-date comman
 az version
 ```
 
-## Use the BASH CLI
+## Task 2: Use the BASH CLI
 
 If you’re more familiar with BASH, you can use BASH command instead by shifting to the BASH CLI.
 
@@ -75,7 +72,7 @@ az upgrade
 
 You can change back to PowerShell mode by entering pwsh on the BASH command line.
 
-## Use Azure CLI interactive mode
+## Task 3: Use Azure CLI interactive mode
 
 Another way to interact is using the Azure CLI interactive mode. This changes CLI behavior to more closely resemble an integrated development environment (IDE). Interactive mode provides autocompletion, command descriptions, and even examples. If you’re unfamiliar with BASH and PowerShell, but want to use the command line, interactive mode may help you.
 
@@ -109,7 +106,7 @@ exit
 
 ```
 
-## Use the Azure portal
+## Task 4: Use the Azure portal
 
 You’ll also have the option of using the Azure portal during sandbox exercises. It’s important that you use the link provided in the exercise to access the Azure portal to ensure the exercise remains free for you to complete.
 
