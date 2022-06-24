@@ -17,9 +17,9 @@ Microsoft Graph PowerShell SDK
 
 ## Prerequisites
 
-Basic familiarity with using command-line shell like Command Prompt or Git Bash
-Basic knowledge PowerShell concepts such as command-naming conventions, parameters and variables
-Basic knowledge of REST services and APIs
+- Basic familiarity with using command-line shell like Command Prompt or Git Bash
+- Basic knowledge PowerShell concepts such as command-naming conventions, parameters and variables
+- Basic knowledge of REST services and APIs
 
 ## Summary
 
@@ -45,9 +45,9 @@ Identify the subtasks of introduction to Microsoft Graph PowerShell.
 
 1. Introduction
 
-    Implementing business process automation across a set of Microsoft 365 services can be challenging if the right tool is not available. Think about all repetitive bulk administrative tasks your company needs to do: user/guest lifecycle management, App management, Exchange, Sharepoint. How do you automate tasks across all these services? Microsoft Graph PowerShell exposes the entire Microsoft Graph API set for use in PowerShell providing a powerful way to optimize your work flow.
+    Implementing business process automation across a set of Microsoft 365 services can be challenging if the right tool isn't available. Think about all repetitive bulk administrative tasks your company needs to do: user/guest lifecycle management, App management, Exchange, Sharepoint. How do you automate tasks across all these services? Microsoft Graph PowerShell exposes the entire Microsoft Graph API set for use in PowerShell providing a powerful way to optimize your work flow.
 
-    Suppose you're the IT admin of a DevOps company that that has been using Azure Active Directory and other Microsoft 365 services. You maintain a database of all users accessing your applications. Getting user account statuses and updating their info has been a manual process that's time consuming. You are looking for a solution to automate the process of checking user account statuses and bulk update these information on a regular basis. You have been tasked with finding the best tool to automate tasks across all the Microsoft services including Azure AD. You are aware that each of these services has APIs available through Microsoft Graph.
+    Suppose you're the IT admin of a vendor company that develops software solutions. Your organization is using Azure Active Directory and other Microsoft 365 services. You maintain a database of all users accessing your applications. Getting user account statuses and updating their info has been a manual process that's time consuming. You're looking for a solution to automate the process of checking user account statuses and bulk updating this information regularly. You've been tasked with finding the best tool to automate tasks across all the Microsoft services including Azure AD. You know that each of these services has APIs available through Microsoft Graph.
 
 1. What is Microsoft Graph PowerShell?
     1. Define Microsoft Graph PowerShell
@@ -64,7 +64,7 @@ Identify the subtasks of introduction to Microsoft Graph PowerShell.
   
 1. Summary
 You were looking to automate the process of updating user account details in bulk and quickly checking the user account statuses. You needed you evaluate the capabilities of Microsoft Graph PowerShell to help you accomplish this task.
-We have covered what Microsoft Graph PowerShell is and its ability to manage users at bulk using its cmdlets. You've determined that Microsoft Graph PowerShell would be a best fit to manage identities at scale and automate bulk tasks across all Microsoft services that have a corresponding API in Microsoft Graph.
+We've covered what Microsoft Graph PowerShell is and its ability to manage users at bulk using its cmdlets. You've determined that Microsoft Graph PowerShell would be a best fit to manage identities at scale and automate bulk tasks across all Microsoft services that have a corresponding API in Microsoft Graph.
 
 ## Notes
 
