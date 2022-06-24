@@ -13,8 +13,8 @@ prerequisites: |
   - Demonstrate an understanding of relational databases.
   - Demonstrate an understanding of basic SQL.
 summary: |
-  Azure Database for MySQL is a fully managed database platform. In this learning path you will find out how to manage and optimize Azure Database for MySQL.
-  After completing this learning path, you will be able to:
+  Azure Database for MySQL is a fully managed database platform. In this learning path you'll find out how to manage and optimize Azure Database for MySQL.
+  After completing this learning path, you'll be able to:
   - Understand Azure Database for MySQL options
   - Describe the MySQL client query interfaces
   - Work with MySQL storage engines
