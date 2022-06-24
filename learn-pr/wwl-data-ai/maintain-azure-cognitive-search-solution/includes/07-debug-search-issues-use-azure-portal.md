@@ -1,6 +1,7 @@
 When you first create your search service, you have to make some assumptions about the data you are indexing. You make choices about the index and how to ingest that data. However, until you run your created indexer you can't be certain that you made all the correct choices.
 
 Here, you'll explore how to use the Debug Session tool inside Azure Cognitive Search, look at debugging and then fixing a specific skill, and look at an approach to locally debugging your own custom skills.
+
 ## Explore how to use the Debug Session tool in Azure Cognitive Search
 
 The Debug Session tool is an interactive visual editor that lets you step through the enrichment pipeline of a document as it's enriched. You can step into each individual skill, make changes and fixes, and then rerun the indexer in real-time. Once you've fixed any issues, you can update and republish the indexer so that it can be rerun to enrich all the documents in your index. 

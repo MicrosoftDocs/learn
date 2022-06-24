@@ -3,14 +3,14 @@ You've built your search solution but have noticed that there are some warnings 
 In this exercise, you'll create an Azure Cognitive Search solution, import some sample data, and then resolve a warning on the indexer.
 
 > [!NOTE]
->To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
->
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
+
 
 ## Create your search solution
 
 Before you can begin using a Debug Session, you need to create an Azure Cognitive Search service. 
 
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="../media/deploytoazure.svg" alt="Azure resource deploy button."/></a> select this button to deploy all the resources you need in the Azure portal.
+1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="../media/deploy-azure.svg" alt="Azure resource deploy button."/></a> select this button to deploy all the resources you need in the Azure portal.
 
     :::image type="content" source="../media/arm-template-deployment.png" alt-text="A screenshot of the arm deployment template with fields entered.":::
 

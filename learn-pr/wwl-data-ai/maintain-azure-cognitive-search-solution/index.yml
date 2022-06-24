@@ -3,7 +3,7 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution
 metadata:
   title: Maintain an Azure Cognitive Search solution
   description: "Maintain the performance, cost, and reliability of your Azure Cognitive Search solutions."
-  ms.date: 06/23/2022
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -33,12 +33,12 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.maintain-azure-cognitive-search-solution.introduction
-- learn.wwl.maintain-azure-cognitive-search-solution.manage-security-of
-- learn.wwl.maintain-azure-cognitive-search-solution.optimize-performance-of
-- learn.wwl.maintain-azure-cognitive-search-solution.manage-costs-of
-- learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of
-- learn.wwl.maintain-azure-cognitive-search-solution.monitor
-- learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-using-azure-portal
+- learn.wwl.maintain-azure-cognitive-search-solution.manage-security-of-azure-cognitive-search-solution
+- learn.wwl.maintain-azure-cognitive-search-solution.optimize-performance-of-azure-cognitive-search-solution
+- learn.wwl.maintain-azure-cognitive-search-solution.manage-costs-of-azure-cognitive-search-solution
+- learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of-azure-cognitive-search-solution
+- learn.wwl.maintain-azure-cognitive-search-solution.monitor-azure-cognitive-search-solution
+- learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-use-azure-portal
 - learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search-issues
 - learn.wwl.maintain-azure-cognitive-search-solution.knowledge-check
 - learn.wwl.maintain-azure-cognitive-search-solution.summary

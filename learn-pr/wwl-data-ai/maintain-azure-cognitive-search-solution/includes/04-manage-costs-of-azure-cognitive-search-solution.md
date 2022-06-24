@@ -9,7 +9,7 @@ The Azure pricing calculator is a great tool that allows you to estimate the cos
 1. Browse to the [Azure Cognitive Search pricing calculator](https://azure.microsoft.com/pricing/details/search/).
 1. Choose your region, currency, and hour or monthly pricing.
 
-:::image type="content" source="../media/azure-pricing-calculator.png" alt-text="A screenshot of the Azure pricing tool showing the cost estimates of an S1 and S2 tier service." lightbox="../media/azure-pricing-calculator.png":::
+:::image type="content" source="../media/azure-price-calculator.png" alt-text="A screenshot of the Azure pricing tool showing the cost estimates of an S1 and S2 tier service." lightbox="../media/azure-pricing-calculator.png":::
 
 The above example shows estimates based on the number of search units. The shown monthly costs don't include everything you need for an accurate estimate. The pricing calculator also lists estimates on the additional services.
 

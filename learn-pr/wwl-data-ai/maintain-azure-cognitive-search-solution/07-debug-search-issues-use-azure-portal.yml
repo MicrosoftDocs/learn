@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-using-azure-portal
+uid: learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-use-azure-portal
 title: Debug search issues using the Azure portal
 metadata:
   title: Debug search issues using the Azure portal
   description: "Debug search issues using the Azure portal"
-  ms.date: 06/23/2022
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/07-debug-search-issues-using-azure-portal.md)]
+  [!include[](includes/07-debug-search-issues-use-azure-portal.md)]

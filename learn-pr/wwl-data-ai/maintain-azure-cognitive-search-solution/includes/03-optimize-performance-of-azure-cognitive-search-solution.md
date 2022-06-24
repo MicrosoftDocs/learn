@@ -49,7 +49,7 @@ Run the command to see a bar chart of your search services HTTP responses. In th
 
 The best way to test individual query performance is with a client tool like Postman. You can use any tool that will show you the headers in the response to a query. Azure Cognitive Search will always return an 'elapsed-time' value for how long it took the service to complete the query.
 
-:::image type="content" source="../media/perf-elapsed-time.png" alt-text="Screenshot of Postman showing the elapsed time and total round trip time highlighted." lightbox="../media/perf-elapsed-time.png":::
+:::image type="content" source="../media/performance-elapsed-time.png" alt-text="Screenshot of Postman showing the elapsed time and total round trip time highlighted." lightbox="../media/perf-elapsed-time.png":::
 
 If you want to know how long it would take to send and then receive the response from the client, subtract the elapsed time from the total round trip. In the above, that would be 125 ms - 21 ms giving you 104 ms.
 
@@ -61,7 +61,7 @@ If you don't pay attention, indexes can grow over time. You should review that a
 
 If you can't remove any documents, can you reduce the complexity of the schema? Do you still need the same fields to be searchable? Do you still need all the skillsets you started the index with?
 
-:::image type="content" source="../media/perf-selective-field-attributes.png" alt-text="A screenshot of how to reduce the attributes on a field in a search index." lightbox="../media/perf-selective-field-attributes.png":::
+:::image type="content" source="../media/performance-selective-field-attributes.png" alt-text="A screenshot of how to reduce the attributes on a field in a search index." lightbox="../media/perf-selective-field-attributes.png":::
 
 Consider reviewing all the attributes you've enabled on each field. For example, adding support for filters, facets, and sorting can quadruple the storage needed to support your index.
 
