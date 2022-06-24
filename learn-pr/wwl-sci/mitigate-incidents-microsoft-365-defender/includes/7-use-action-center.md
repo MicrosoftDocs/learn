@@ -162,19 +162,19 @@ The reported message will be marked as a false positive or a false negative. An 
 
 1. In the Add the network message ID or upload the email file section, use one of the following options:
 
-    1. Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
+    - Add the email network message ID: The ID is a GUID value that's available in the X-MS-Exchange-Organization-Network-Message-Id header in the message or in the X-MS-Office365-Filtering-Correlation-Id header in quarantined messages.
 
-    1. Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
+    - Upload the email file (.msg or .eml): Select Browse files. In the dialog that opens, find and select the .eml or .msg file, and then select Open.
 
-In the Choose a recipient who had an issue box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
+    In the Choose a recipient who had an issue box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
-3. In the Select a reason for submitting to Microsoft section, select one of the following options:
+1. In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-    1. Shouldn't have been blocked (False positive)
-    1. Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    - Shouldn't have been blocked (False positive)
+    - Should have been blocked (False negative): In the, **"The email should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware, or Spam
 
-2. When you're finished, select Submit.
+1. When you're finished, select Submit.
 
 
 ### Send a suspect URL to Microsoft
@@ -185,22 +185,22 @@ Phish, Malware, or Spam
 
 1. In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-    1. Shouldn't have been blocked (False positive)
-    1. Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    - Shouldn't have been blocked (False positive)
+    - Should have been blocked (False negative): In the, **"This URL should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware
 
 1. When you're finished, select Submit.
 
 
 ### Submit a suspected email attachment to Microsoft
-1, In the Select the submission type box, select Email attachment from the dropdown list.
+1. In the Select the submission type box, select Email attachment from the dropdown list.
 
 1. In the File section that appears, select Browse files. In the dialog that opens, find and select the file, and then select Open.
 
 1. In the Select a reason for submitting to Microsoft section, select one of the following options:
 
-    1. Shouldn't have been blocked (False positive)
-    1. Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
+    - Shouldn't have been blocked (False positive)
+    - Should have been blocked (False negative): In the, **"This file should have been categorized as"** section that appears, select one of the following values (if you're not sure, use your best judgment):
 Phish, Malware
 
 1. When you're finished, select Submit.
