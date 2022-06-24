@@ -34,7 +34,7 @@ Follow these three steps, which are mapped with numbers in the following screen 
 2. Select **New flow**.
 3. Then select **Automated cloud flow**.
 
-![Screenshot of the Power Automate interface for creating a cloud flow, with the My flows, New flow, and Automated cloud flow options highlighted.]( ../media/build-a-cloud-flow-1.png)
+![Screenshot of the Power Automate interface for creating a cloud flow, with the My flows, New flow, and Automated cloud flow options highlighted.]( ../media/build-cloud-flow-1.png)
 
 Then, follow these four steps, which are mapped with numbers in the following screen capture.
 
@@ -43,7 +43,7 @@ Then, follow these four steps, which are mapped with numbers in the following sc
 3. Select the **When a new email arrives (V3)** trigger.
 4. Select **Create**.
 
-![Screenshot of the Build an automated cloud flow interface, with the flow name, Choose your flow's tirgger, and When a new email arrives (V3) options highlighted.]( ../media/build-a-cloud-flow-2.png)
+![Screenshot of the Build an automated cloud flow interface, with the flow name, Choose your flow's tirgger, and When a new email arrives (V3) options highlighted.]( ../media/build-cloud-flow-2.png)
 
 ### Configure the trigger to identify urgent emails
 
