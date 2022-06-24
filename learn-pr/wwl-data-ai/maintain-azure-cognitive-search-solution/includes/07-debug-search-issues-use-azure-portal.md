@@ -44,7 +44,7 @@ Your Debug Session lets you explore how a document is enriched as it passes thro
 
 1. In the dependency graph, select a **skill**.
 
-    :::image type="content" source="../media/enriched-doc-output-expression.png" alt-text="A screenshot of the Expression evaluator." lightbox="../media/enriched-doc-output-expression.png":::
+    :::image type="content" source="../media/enriched-document-output-expression.png" alt-text="A screenshot of the Expression evaluator." lightbox="../media/enriched-document-output-expression.png":::
 
 1. In the details pane to the right, select executions, then next to OUTPUTS, open the Expression evaluator by selecting **</>**.
 
