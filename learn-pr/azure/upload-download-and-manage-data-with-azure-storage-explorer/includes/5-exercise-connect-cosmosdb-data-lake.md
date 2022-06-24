@@ -9,7 +9,7 @@ Here, you'll learn how to use Storage Explorer to connect to Azure Data Lake Sto
 
 Let's now look at connecting to a Data Lake Storage Gen2 enabled account. Before you can use Storage Explorer to manage your Data Lake Storage Gen2 enabled account, you need to create the storage account in Azure.
 
-1. To create the Gen2 storage account, use the **az storage account create** command:
+To create the Gen2 storage account, use the **az storage account create** command:
 
    ```azurecli
    az storage account create \
@@ -20,22 +20,20 @@ Let's now look at connecting to a Data Lake Storage Gen2 enabled account. Before
        --kind StorageV2 \
        --hns
    ```
-> [!NOTE] 
-  >  Please give the Storage Account several minutes to complete.
+
+  > [!NOTE]
+  > Please give the Storage Account several minutes to complete.
 
 ## Connect to your Data Lake Gen2 enabled storage account
 
-Now that you've created a Gen2 enabled storage account, you can connect to it in Storage Explorer.
+Now that you've created a Gen2 enabled storage account, Storage Explorer should automatically connect to it.
 
 1. In Storage Explorer, in the **EXPLORER** pane, locate **Concierge Subscription** and expand it to show all the storage accounts.
 
-1. Right-click **Storage Accounts** and select **Connect to Azure storage**.
+    > [!NOTE]
+    > It might take several minutes for the storage account to display in Storage Explorer. If the storage account doesn't display, try to reauthenticate the concierge subscription.
 
-   ![Screenshot that shows the Connect to Azure storage option.](../media/5-connect-to-azure-storage.png)
-
-1. If you're prompted, sign in with your Azure account.
-
-1. When the connection is successful, you'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
+1. You'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
 
    ![Screenshot that shows the Azure Data Lake Storage Gen2 account.](../media/5-azure-data-lake-gen2-storage-account.png)
 
