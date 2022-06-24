@@ -2,11 +2,11 @@ Azure Lab Services lets you create labs whose infrastructure is managed by Azure
 
 ## Example scenario
 
-Suppose you work for an educational institution. You deliver classes on cybersecurity and data sciences software. Also, you provide practice environments after each class, where students develop and test code to consolidate their learning. Both classes and practice environments are currently hosted in your on-premises classrooms. You want to migrate these systems into the cloud.
+Suppose you work for an educational institution. You deliver classes on cybersecurity and data sciences software. Also, you provide practice environments after each class, where students develop and test code to consolidate their learning. Both classes and practice environments are currently hosted in your on-premises classrooms. To enable support for remote students, you want to migrate these systems into the cloud.
 
 ## What will we be doing?
 
-In this module, you'll configure a lab and connect to it so you can install required classroom software. From the lab plan, you'll create a lab using a template virtual machine.
+In this module, you'll start by creating a lab plan. From the lab plan, you'll create a lab that provides a template VM that you can install class-specific software on. You'll configure a lab and connect to it so you can install required classroom software.
 
 ## What is the main goal?
 

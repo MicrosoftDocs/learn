@@ -1,17 +1,17 @@
 
 Recall that a lab is powerful because it provides a quick and repeatable way to spin up a preconfigured virtualized classroom environment. You can use Azure Lab Services to add labs (virtual machines) that are preconfigured with required software components.
 
-Your educational institution has a large and expanding student body, and you need to use Azure Lab Services to create many classroom labs. The educators who configure each lab will access these VMs through Remote Desktop (RDP).
+Your educational institution has a large and expanding student body, and you need to use Azure Lab Services to create many classroom labs. The educators who configure each lab will access these VMs through Remote Desktop (RDP) or Secure Sockets Layer (SSL).
 
 In this unit, you'll learn about adding labs to an existing lab plan in Azure Lab Services, and how to connect to a lab for the purpose of pre-installing software.
 
 ## Labs
 
-The labs consist of the virtual machines on which students will execute their training tasks. When you set up a lab, you choose the operating system. For Windows, you specify a version and edition. For Linux, you can also choose from different distributions, such as Ubuntu or SUSE. For Windows, you can also apply certain policies by default.
+The labs consist of the virtual machines on which students will execute their training tasks. When you set up a lab, you choose the operating system. For Windows, you specify a version and edition. For Linux, you can also choose from different distributions, such as Ubuntu or SUSE.
 
 When you set up the lab, you typically choose a VM image from the Azure Marketplace, which always includes the operating system and may have some other software packages. You can also use a custom image instead by saving it to Azure Compute Gallery.
 
-When you create the lab, you create the template virtual machine. From this virtual machine, Azure will create each student virtual machine when the lab begins.
+When you create the lab, you create the template virtual machine. From this virtual machine, Azure Lab Services will create each student virtual machine when the lab begins.
 
 ## Automatic shut-down
 
@@ -30,7 +30,7 @@ When you set up a lab, you need to make sure that these virtual machines include
 
 ## Schedules
 
-Schedules are the time slots that an educator creates so the lab VMs are available for class time.  Schedules can be one-time or recurring.  Any scheduled time doesn't count against extra time students may be given to complete homework. A lab can use quota time, scheduled time, or a combination of both.
+Schedules are the time slots that an educator creates so the lab VMs are available for class time.  Schedules can be one-time or recurring.  Any scheduled time doesn't count against extra time students may be given to complete homework.
 
 Scheduled time is commonly used when students are following the educator's directions during class hours.
 
@@ -60,6 +60,6 @@ Here's the typical workflow when using Azure Lab Services:
    - If the administrator assigned the **Lab Creator** role at the resource group, the educator can choose from all lab plans in that resource group when creating new labs.
 1. Students use the registration link that they receive from educators to register to the lab.
    - Once they're registered, they can use VMs in the labs to do the class work and homework.
-   - If integration with Microsoft Teams or educational classroom software such as Canvas is used, this step is skipped by the students.
+   - If integration with Microsoft Teams or Canvas Learning Management System (Canvas LMS) is used, this step is skipped by the students.
 
 :::image type="content" source="../media/4-set-up-classroom.png" alt-text="Diagram describing the roles of educators and students in Azure Lab Services.":::

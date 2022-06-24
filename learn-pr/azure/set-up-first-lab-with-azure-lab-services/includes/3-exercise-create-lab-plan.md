@@ -23,8 +23,8 @@ The following steps show how to use the Azure portal to create a lab plan.
 
     |Setting  |Value |Description  |
     |---------|---------|---------|
-    |Subscription     | Concierge subscription | The lab plan must belong to a resource group. Here you select the Azure subscription to which the resource group belongs. |
-    |Resource group     | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the lab plan will belong. All Azure resources must belong to a resource group. |
+    |Subscription     | *Your Azure subscription* | The lab plan must belong to a resource group. Here you select the Azure subscription to which the resource group belongs. |
+    |Resource group     | Select *Your resource group* | The resource group to which the lab plan will belong. All Azure resources must belong to a resource group. |
     |Lab name     | *Enter a unique name*| Enter the name of your lab plan, such as *MyLabPlan*. The name must be unique within the subscription. |
     |Location     | Accept default value | The geographical region where the lab plan will be hosted. (Region for the lab plan is also the default region where your labs will be created.)|
 
