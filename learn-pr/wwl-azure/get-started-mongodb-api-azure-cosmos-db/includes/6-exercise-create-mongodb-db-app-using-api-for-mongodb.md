@@ -9,11 +9,11 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 ## Create MongoDB app using ***Node.js*** Azure Cosmos DB API for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of items to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
 
 ### Prepare your development environment
 
-If you haven't already prepared the Azure Cosmos DB account and environment where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and item to the App.js file** section.
+If you haven't already prepared the Azure Cosmos DB account and environment where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and document to the App.js file** section.
 
 1. In Azure Cloud Shell, copy and paste the following commands.
 
@@ -46,9 +46,9 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
 
     > &#128221; Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
 
-### Add the code to create the databases, collection and item to the App.js file
+### Add the code to create the databases, collection and document to the App.js file
 
-It's now time to add our JavaScript code to create a Database, a Collection and add an item to the collection.
+It's now time to add our JavaScript code to create a Database, a Collection and add an document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -99,16 +99,16 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
     
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one item to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an item to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```javascript
-      // create a collection "documents" and add one item for "bread"
+      // create a collection "documents" and add one document for "bread"
       var collection = ProductDatabase.collection('documents');
       var insertResult = await collection.insertOne({ ProductId: 1, name: "bread" });
     
     ```
 
-1. Lets now search for the item we just inserted and display it to the shell. Add the following to the script in the editor.
+1. Lets now search for the document we just inserted and display it to the shell. Add the following to the script in the editor.
 
     ```javascript
       // return data where ProductId = 1
@@ -156,7 +156,7 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
       // connect to the database "products"
       var ProductDatabase = mongoClient.db("products");
     
-      // create a collection "documents" and add one item for "bread"
+      // create a collection "documents" and add one document for "bread"
       var collection = ProductDatabase.collection('documents');
       var insertResult = await collection.insertOne({ ProductId: 1, name: "bread" });
     
@@ -179,7 +179,7 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
     node App.js
     ```  
 
-1. This should return a similar result to the one below.  This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below.  This means that we created the database, collection and added an document to it.
 
     ```json
     {
@@ -189,7 +189,7 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
     }
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and item on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
@@ -255,7 +255,7 @@ Let's create some code that will allow us to create a collection and define its 
 1. The rest will be pretty identical to the previous example, we will connect to the collection, insert some rows,  finally query and output a row back. Add the following to the script in the editor.
 
     ```javascript
-      // Connect to the collection "Employee" and add two items for "Marcos" and "Tam" 
+      // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
       var collection = EmployeeDatabase.collection('Employee');
 
       var insertResult = await collection.insertOne({EmployeeId: 1, email: "Marcos@fabrikam.com", name: "Marcos"});
@@ -304,7 +304,7 @@ Let's create some code that will allow us to create a collection and define its 
       // create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
       var result = EmployeeDatabase.command({customAction: "CreateCollection", collection: "Employee", offerThroughput: 1000, shardKey: "EmployeeId"});
     
-      // Connect to the collection "Employee" and add two items for "Marcos" and "Tam" 
+      // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
       var collection = EmployeeDatabase.collection('Employee');
 
       var insertResult = await collection.insertOne({EmployeeId: 1, email: "Marcos@fabrikam.com", name: "Marcos"});
@@ -329,7 +329,7 @@ Let's create some code that will allow us to create a collection and define its 
     node App.js
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
 
     ```json
     {
@@ -340,7 +340,7 @@ Let's create some code that will allow us to create a collection and define its 
     }
     ```
 
-1. However this last result set only confirmed that we indeed created a database, collection and items, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
+1. However this last result set only confirmed that we indeed created a database, collection and documents, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
 
     1. Let's verify that our Shard key changed to ***EmployeeId*** (the default is *id*).  *Don't forget to change the ***resource group name*** and ***account name*** for the names we saved at the beginning of this lab.*
 
@@ -366,11 +366,11 @@ This code illustrated the power of using extended commands in our code, which al
 
 ## Create MongoDB app using ***Java*** Azure Cosmos DB API for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of items to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. To use the Java engine, we'll create and compile an App running *Maven*. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. To use the Java engine, we'll create and compile an App running *Maven*. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
 
 ### Prepare your development environment
 
-If you haven't already prepared the environment and the Azure Cosmos DB account where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and item to the App.java file** section.
+If you haven't already prepared the environment and the Azure Cosmos DB account where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and document to the App.java file** section.
 
 1. In Azure Cloud Shell, copy and paste the following commands.
 
@@ -392,9 +392,9 @@ If you haven't already prepared the environment and the Azure Cosmos DB account 
 
     > &#128221; Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
 
-### Add the code to create the databases, collection and item to the App.java file
+### Add the code to create the databases, collection and document to the App.java file
 
-It's now time to add our Java code to create a Database, a Collection and add an item to the collection.
+It's now time to add our Java code to create a Database, a Collection and add an document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -445,10 +445,10 @@ It's now time to add our Java code to create a Database, a Collection and add an
     
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one item to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an item to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```java
-                // create a collection "documents" and add one item for "bread" 
+                // create a collection "documents" and add one document for "bread" 
                 MongoCollection collection = ProductDatabase.getCollection("products");
     
                 collection.insertOne(new Document()
@@ -457,7 +457,7 @@ It's now time to add our Java code to create a Database, a Collection and add an
     
     ```
 
-1. Lets now search for the item we just inserted and display it to the shell. Add the following to the script in the editor.
+1. Lets now search for the document we just inserted and display it to the shell. Add the following to the script in the editor.
 
     ```java
                 // return data where ProductId = 1
@@ -508,7 +508,7 @@ It's now time to add our Java code to create a Database, a Collection and add an
                 // connect to the database "products"
                 MongoDatabase ProductDatabase = mongoClient.getDatabase("products");
     
-                // create a collection "products" and add one item for "bread" 
+                // create a collection "products" and add one document for "bread" 
                 MongoCollection collection = ProductDatabase.getCollection("products");
     
                 collection.insertOne(new Document()
@@ -537,7 +537,7 @@ It's now time to add our Java code to create a Database, a Collection and add an
     mvn clean compile exec:java
     ```  
 
-1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **ProductId = 1** query in our code.  This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **ProductId = 1** query in our code.  This means that we created the database, collection and added an document to it.
 
     ```json
     INFO: Opened connection [connectionId{localValue:3, serverValue:74678510}] to learn-account-cosmos-665601-westus.mongo.cosmos.azure.com:10255
@@ -546,7 +546,7 @@ It's now time to add our Java code to create a Database, a Collection and add an
     INFO: Closed connection [connectionId{localValue:3, serverValue:74678510}] to learn-account-cosmos-665601-westus.mongo.cosmos.azure.com:10255 because the pool has been closed.
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and item on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
@@ -618,7 +618,7 @@ Let's create some code that will allow us to create a collection and define its 
 1. The rest will be pretty identical to the previous example, we will connect to the collection, insert some rows,  query and output a row back and finally close the collection. Add the following to the script in the editor.
 
     ```java
-                // Connect to the collection "Employee" and add two items for "Marcos" and "Tam" 
+                // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
                 MongoCollection collection = EmployeeDatabase.getCollection("Employee");
     
                 collection.insertOne(new Document()
@@ -683,7 +683,7 @@ Let's create some code that will allow us to create a collection and define its 
 
                 Document result = EmployeeDatabase.runCommand(employeeCollectionDef);
         
-                // Connect to the collection "Employee" and add two items for "Marcos" and "Tam" 
+                // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
                 MongoCollection collection = EmployeeDatabase.getCollection("Employee");
     
                 collection.insertOne(new Document()
@@ -718,7 +718,7 @@ Let's create some code that will allow us to create a collection and define its 
     mvn clean compile exec:java
     ```  
 
-1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **EmployeeId = 1** query in our code.  This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **EmployeeId = 1** query in our code.  This means that we created the database, collection and added an document to it.
 
     ```json
     INFO: Opened connection [connectionId{localValue:3, serverValue:2080122971}] to learn-account-cosmos-845083734-westus.mongo.cosmos.azure.com:10255
@@ -727,7 +727,7 @@ Let's create some code that will allow us to create a collection and define its 
     INFO: Closed connection [connectionId{localValue:3, serverValue:2080122971}] to learn-account-cosmos-845083734-westus.mongo.cosmos.azure.com:10255 because the pool has been closed.
         ```
 
-1. However this last result set only confirmed that we indeed created a database, collection and items, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
+1. However this last result set only confirmed that we indeed created a database, collection and documents, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
 
     1. Let's verify that our Shard key changed to ***EmployeeId*** (the default is *id*).  *Don't forget to change the ***resource group name*** and ***account name*** for the names we saved at the beginning of this lab.*
 
@@ -752,11 +752,11 @@ This code illustrated the power of using extended commands in our code, which al
 
 ## Create MongoDB app using ***Python*** Azure Cosmos DB API for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of items to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
 
 ### Prepare your development environment
 
-If you haven't already prepared the Azure Cosmos DB account and environment where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and item to the App.py file** section.
+If you haven't already prepared the Azure Cosmos DB account and environment where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and document to the App.py file** section.
 
 1. In Azure Cloud Shell, copy and paste the following commands.
 
@@ -775,9 +775,9 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
 
     > &#128221; Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
 
-### Add the code to create the databases, collection and item to the App.py file
+### Add the code to create the databases, collection and document to the App.py file
 
-It's now time to add our Python code to create a Database, a Collection and add an item to the collection.
+It's now time to add our Python code to create a Database, a Collection and add an document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -818,16 +818,16 @@ It's now time to add our Python code to create a Database, a Collection and add 
         
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one item to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an item to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```python
-        # create a collection "products" and add one item for "bread"
+        # create a collection "products" and add one document for "bread"
         collection = ProductDatabase["products"]
         collection.insert_one({ "ProductId": 1, "name": "bread" })
         
     ```
 
-1. Lets now search for the item we just inserted and display it to the shell. Add the following to the script in the editor.
+1. Lets now search for the document we just inserted and display it to the shell. Add the following to the script in the editor.
 
     ```python
         # return data where ProductId = 1
@@ -865,7 +865,7 @@ It's now time to add our Python code to create a Database, a Collection and add 
         # connect to the database "products"
         ProductDatabase = client["products"]
         
-        # create a collection "products" and add one item for "bread"
+        # create a collection "products" and add one document for "bread"
         collection = ProductDatabase["products"]
         collection.insert_one({ "ProductId": 1, "name": "bread" })
         
@@ -889,13 +889,13 @@ It's now time to add our Python code to create a Database, a Collection and add 
     python App.py
     ```  
 
-1. This should return a similar result to the one below.  This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below.  This means that we created the database, collection and added an document to it.
 
     ```json
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'ProductId': 1, 'name': 'bread'}
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and item on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
@@ -950,7 +950,7 @@ Let's create some code that will allow us to create a collection and define its 
 1. The rest will be pretty identical to the previous example, we will connect to the collection, insert some rows,  finally query and output a row back. Add the following to the script in the editor.
 
     ```python
-        # Connect to the collection "Employee" and add two items for "Marcos" and "Tam"
+        # Connect to the collection "Employee" and add two documents for "Marcos" and "Tam"
         collection = EmployeeDatabase["Employee"]
         collection.insert_one({ "EmployeeId": 1, "email": "Marcos@fabrikan.com", "name": "Marcos" })
         collection.insert_one({ "EmployeeId": 2, "email": "Tam@fabrikan.com", "name": "Tam" })
@@ -988,7 +988,7 @@ Let's create some code that will allow us to create a collection and define its 
         # create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
         EmployeeDatabase.command({'customAction': "CreateCollection", 'collection': "Employee", 'offerThroughput': 1000, 'shardKey': "EmployeeId"})
     
-        # Connect to the collection "Employee" and add two items for "Marcos" and "Tam"
+        # Connect to the collection "Employee" and add two documents for "Marcos" and "Tam"
         collection = EmployeeDatabase["Employee"]
         collection.insert_one({ "EmployeeId": 1, "email": "Marcos@fabrikan.com", "name": "Marcos" })
         collection.insert_one({ "EmployeeId": 2, "email": "Tam@fabrikan.com", "name": "Tam" })
@@ -1013,13 +1013,13 @@ Let's create some code that will allow us to create a collection and define its 
     python App.py
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
 
     ```json
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'EmployeeId': 1, 'email': 'Marcos@fabrikan.com', 'name': 'Marcos'}
     ```
 
-1. However this last result set only confirmed that we indeed created a database, collection and items, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
+1. However this last result set only confirmed that we indeed created a database, collection and documents, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
 
     1. Let's verify that our Shard key changed to ***EmployeeId*** (the default is *id*).  *Don't forget to change the ***resource group name*** and ***account name*** for the names we saved at the beginning of this lab.*
 
@@ -1045,11 +1045,11 @@ This code illustrated the power of using extended commands in our code, which al
 
 ## Create MongoDB app using ***C#*** Azure Cosmos DB API for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of items to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
 
 ### Prepare your development environment
 
-If you haven't already prepared the environment and the Azure Cosmos DB account where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and item to the app.cs file** section.
+If you haven't already prepared the environment and the Azure Cosmos DB account where you're working on this lab, follow these steps to do so. Otherwise, go to the **Add the code to create the databases, collection and document to the app.cs file** section.
 
 1. In Azure Cloud Shell, copy and paste the following commands.
 
@@ -1070,9 +1070,9 @@ If you haven't already prepared the environment and the Azure Cosmos DB account 
 
     > &#128221; Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
 
-### Add the code to create the databases, collection and item to the app.cs file
+### Add the code to create the databases, collection and document to the app.cs file
 
-It's now time to add our C# code to create a Database, a Collection and add an item to the collection.
+It's now time to add our C# code to create a Database, a Collection and add an document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -1125,10 +1125,10 @@ It's now time to add our C# code to create a Database, a Collection and add an i
     
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one item to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an item to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```csharp
-        // create a collection "products" and add one item for "bread" 
+        // create a collection "products" and add one document for "bread" 
         var mongoCollection = ProductDatabase.GetCollection<Products>("products");
 
         Products Product = new Products {ProductId=1,name="bread"};
@@ -1136,7 +1136,7 @@ It's now time to add our C# code to create a Database, a Collection and add an i
 
     ```
 
-1. Lets now search for the item we just inserted and display it to the shell. Add the following to the script in the editor.
+1. Lets now search for the document we just inserted and display it to the shell. Add the following to the script in the editor.
 
     ```csharp
         // return data where ProductId = 1
@@ -1177,7 +1177,7 @@ It's now time to add our C# code to create a Database, a Collection and add an i
         // connect to the database "products"
         var ProductDatabase = mongoClient.GetDatabase("products");
     
-        // create a collection "products" and add one item for "bread" 
+        // create a collection "products" and add one document for "bread" 
         var mongoCollection = ProductDatabase.GetCollection<Products>("products");
 
         Products Product = new Products {ProductId=1,name="bread"};
@@ -1198,13 +1198,13 @@ It's now time to add our C# code to create a Database, a Collection and add an i
     dotnet run
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
 
     ```json
     Id: 62affed8147b5206db146298, ProductId: 1, name: 'bread'
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and item on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
@@ -1273,7 +1273,7 @@ Let's create some code that will allow us to create a collection and define its 
 1. The rest will be pretty identical to the previous example, we will connect to the collection, insert some rows,  finally query and output a row back. Add the following to the script in the editor.
 
     ```csharp
-        // Connect to the collection "Employee" and add two items for "Marcos" and "Tam" 
+        // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
         var mongoCollection = EmployeeDatabase.GetCollection<Employees>("Employee");
     
         Employees Employee = new Employees {EmployeeId=1,email="Marcos@fabrikam.com",name="Marcos"};
@@ -1324,7 +1324,7 @@ Let's create some code that will allow us to create a collection and define its 
         // create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
         var result = EmployeeDatabase.RunCommand<BsonDocument>(@"{customAction: ""CreateCollection"", collection: ""Employee"", offerThroughput: 1000, shardKey: ""EmployeeId""}");
     
-        // Connect to the collection "Employee" and add two items for "Marcos" and "Tam" 
+        // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
         var mongoCollection = EmployeeDatabase.GetCollection<Employees>("Employee");
     
         Employees Employee = new Employees {EmployeeId=1,email="Marcos@fabrikam.com",name="Marcos"};
@@ -1348,13 +1348,13 @@ Let's create some code that will allow us to create a collection and define its 
     dotnet run
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an item to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
 
     ```json
     Id: 62affed8147b5206db146298, EmployeeId: 1, email: 'Marcos@fabrikam.com', name: 'Marcos'
     ```
 
-1. However this last result set only confirmed that we indeed created a database, collection and items, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
+1. However this last result set only confirmed that we indeed created a database, collection and documents, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
 
     1. Let's verify that our Shard key changed to ***EmployeeId*** (the default is *id*).  *Don't forget to change the ***resource group name*** and ***account name*** for the names we saved at the beginning of this lab.*
 
