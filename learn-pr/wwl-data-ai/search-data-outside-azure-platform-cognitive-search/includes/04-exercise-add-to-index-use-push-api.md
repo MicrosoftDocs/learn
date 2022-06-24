@@ -16,7 +16,7 @@ Install these tools to complete this exercise. You can still follow along with t
 
 To save you time, select this Azure ARM template to create resources you'll need later in the exercise.
 
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploytoazure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create an Azure Cognitive Search service.
+1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploy-azure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create an Azure Cognitive Search service.
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
 
 1. In **Resource group**, select **Create new**, name it **cog-search-language-exe**.
