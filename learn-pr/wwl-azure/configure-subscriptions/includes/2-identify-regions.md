@@ -2,7 +2,7 @@ Microsoft Azure is made up of datacenters located around the globe. These datace
 
 A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Azure is generally available in 60+ regions and available in 140 countries.
 
-:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="A map of the earth has all of the current Microsoft Azure regions marked.":::
+:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Diagram of the earth has all of the current Microsoft Azure regions marked.":::
 
 
 ## Things to know about regions
