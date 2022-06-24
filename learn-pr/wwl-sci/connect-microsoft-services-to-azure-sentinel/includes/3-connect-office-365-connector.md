@@ -1,4 +1,4 @@
-The Office 365 activity log connector provides insight into ongoing user activities. You will get details of operations such as file downloads, access requests sent, changes to group events, set-mailbox, and details of the user who performed the actions.​
+The Office 365 activity log connector provides insight into ongoing user activities. You'll get details of operations such as file downloads, access requests sent, changes to group events, set-mailbox, and details of the user who performed the actions.​
 
 To view the connector page, do these steps:
 
@@ -12,5 +12,5 @@ To view the connector page, do these steps:
 
 1. Select **Apply Changes**.
 
-:::image type="content" source="../media/office-365.png" alt-text="Office 365 Connector page":::
+:::image type="content" source="../media/office-365.png" alt-text="Screen shot of the Office 365 Connector page.":::
 
