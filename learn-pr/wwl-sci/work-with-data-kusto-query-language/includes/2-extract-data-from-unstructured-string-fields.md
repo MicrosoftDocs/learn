@@ -2,7 +2,7 @@ Security log data is often contained in unstructured string fields and requires 
 
 ## extract
 
-Extract gets a match for a regular expression from a text string. You have the option to convert the extracted substring to the indicated type.
+Extract gets a match for a regular expression from a text string. You may optionally convert the extracted substring to the indicated type.
 
 ```kusto
 print extract("x=([0-9.]+)", 1, "hello x=45.6|wo") == "45.6"
@@ -13,7 +13,7 @@ Arguments
 
 - regex: A regular expression.
 
-- captureGroup: A positive int constant indicating the capture group to extract. 0 stands for the entire match, 1 for the value matched by the first '('parenthesis')' in the regular expression, 2 or more for subsequent parentheses.
+- captureGroup: A positive int constant indicating the capture group to extract. A "0" stands for the entire match, a "1" for the value matched by the first '('parenthesis')' in the regular expression, 2 or more for subsequent parentheses.
 
 - text: A string to search.
 
@@ -28,34 +28,22 @@ If there's no match, or the type conversion fails: null.
 The following example uses the extract function to pull out the Account Name from the Account field of the SecurityEvent table.
 
 ```kusto
-// Shows fail user logons divided in to account names in attempts. Shows 5 top account names and others are named 'Other'.
-
-// Tags: #Initial Access #LateralMovement #Persistence
-
-let top5 = SecurityEvent
-| where EventID == 4625 and AccountType == 'User'
-| extend Account_Name = extract(@"^(.*\\)?([^@]*)(@.*)?$", 2, tolower(Account))
-| summarize Attempts = count() by Account_Name
-| where Account_Name != ""
-| top 5 by Attempts 
-| summarize make_list(Account_Name);
-
 SecurityEvent
-| where EventID == 4625 and AccountType == 'User'
-| extend Name = extract(@"^(.*\\)?([^@]*)(@.*)?$", 2, tolower(Account))
-| extend Account_Name = iff(Name in (top5), Name, "Other")
+| where EventID == 4672 and AccountType == 'User'
+| extend Account_Name = extract(@"^(.*\\)?([^@]*)(@.*)?$", 2, tolower(Account))
+| summarize LoginCount = count() by Account_Name
 | where Account_Name != ""
-| summarize Attempts = count() by Account_Name
+| where LoginCount < 10
 
 ```
 
 ## parse
 
-Evaluates a string expression and parses its value into one or more calculated columns. The computed columns will have nulls for unsuccessfully parsed strings.
+Parse evaluates a string expression and parses its value into one or more calculated columns. The computed columns will have nulls for unsuccessfully parsed strings.
 
 Syntax
 
-T | parse [kind=regex [flags=regex_flags] |simple|relaxed] Expression with * (StringConstant ColumnName [: ColumnType]) *...
+`T | parse [kind=regex [flags=regex_flags] |simple|relaxed] Expression with * (StringConstant ColumnName [: ColumnType]) *`
 
 Arguments
 
@@ -81,68 +69,20 @@ Returns
 
 The input table extended according to the list of columns that are provided to the operator.
 
-The following example uses a parse to SQL Audit events in the Application log of Windows Events.
+The following statement demonstrates the parse operator, which evaluates a string expression and parses its value into one or more calculated columns. Use for structuring unstructured data.
 
-> [!NOTE]
-> This example is not available in the demo environment.
 
 ```kusto
-// KQL SQL Audit Event Parser
-
-let SQlData = Event
-| where Source has "MSSQL"
-;
-
-let Sqlactivity = SQlData
-| where RenderedDescription !has "LGIS" and RenderedDescription !has "LGIF"
-| parse RenderedDescription with * "action_id:" Action:string 
-                                    " " * 
-| parse RenderedDescription with * "client_ip:" ClientIP:string
-" permission" * 
-| parse RenderedDescription with * "session_server_principal_name:" CurrentUser:string
-" " * 
-| parse RenderedDescription with * "database_name:" DatabaseName:string
-"schema_name:" Temp:string
-"object_name:" ObjectName:string
-"statement:" Statement:string
-"." *
-;
-
-let FailedLogon = SQlData
-| where EventLevelName has "error"
-| where RenderedDescription startswith "Login"
-| parse kind=regex RenderedDescription with "Login" LogonResult:string
-                                            "for user '" CurrentUser:string 
-                                            "'. Reason:" Reason:string 
-                                            "provided" *
-| parse kind=regex RenderedDescription with * "CLIENT" * ":" ClientIP:string 
-                                            "]" *
-;
-
-let dbfailedLogon = SQlData
-| where RenderedDescription has " Failed to open the explicitly specified database" 
-| parse kind=regex RenderedDescription with "Login" LogonResult:string
-                                            "for user '" CurrentUser:string 
-                                            "'. Reason:" Reason:string 
-                                            " '" DatabaseName:string
-                                            "'" *
-| parse kind=regex RenderedDescription with * "CLIENT" * ":" ClientIP:string 
-                                            "]" *
-;
-
-let successLogon = SQlData
-| where RenderedDescription has "LGIS"
-| parse RenderedDescription with * "action_id:" Action:string 
-                                    " " LogonResult:string 
-                                    ":" Temp2:string
-                                    "session_server_principal_name:" CurrentUser:string
-                                    " " *
-| parse RenderedDescription with * "client_ip:" ClientIP:string 
-                                    " " *
-;
-(union isfuzzy=true
-Sqlactivity, FailedLogon, dbfailedLogon, successLogon )
-| project TimeGenerated, Computer, EventID, Action, ClientIP, LogonResult, CurrentUser, Reason, DatabaseName, ObjectName, Statement
-
+let Traces = datatable(EventText:string)
+[
+"Event: NotifySliceRelease (resourceName=PipelineScheduler, totalSlices=27, sliceNumber=23, lockTime=02/17/2016 08:40:01, releaseTime=02/17/2016 08:40:01, previousLockTime=02/17/2016 08:39:01)",
+"Event: NotifySliceRelease (resourceName=PipelineScheduler, totalSlices=27, sliceNumber=15, lockTime=02/17/2016 08:40:00, releaseTime=02/17/2016 08:40:00, previousLockTime=02/17/2016 08:39:00)",
+"Event: NotifySliceRelease (resourceName=PipelineScheduler, totalSlices=27, sliceNumber=20, lockTime=02/17/2016 08:40:01, releaseTime=02/17/2016 08:40:01, previousLockTime=02/17/2016 08:39:01)",
+"Event: NotifySliceRelease (resourceName=PipelineScheduler, totalSlices=27, sliceNumber=22, lockTime=02/17/2016 08:41:01, releaseTime=02/17/2016 08:41:00, previousLockTime=02/17/2016 08:40:01)",
+"Event: NotifySliceRelease (resourceName=PipelineScheduler, totalSlices=27, sliceNumber=16, lockTime=02/17/2016 08:41:00, releaseTime=02/17/2016 08:41:00, previousLockTime=02/17/2016 08:40:00)"
+];
+Traces  
+| parse EventText with * "resourceName=" resourceName ", totalSlices=" totalSlices:long * "sliceNumber=" sliceNumber:long * "lockTime=" lockTime ", releaseTime=" releaseTime:date "," * "previousLockTime=" previousLockTime:date ")" *  
+| project resourceName, totalSlices, sliceNumber, lockTime, releaseTime, previousLockTime
 ```
 

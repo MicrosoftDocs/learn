@@ -49,7 +49,7 @@ AzureDiagnostics
 
 ### Resource-specific Queries
 
-Unlike the `AzureDiagnostic` queries, the resource-specific queries will be run against the different tables that were created for each log category chosen in the diagnostic setting dialog. To use these tables, prefix the table names in the list above with the string `CDB`.  Let's review aa couple of examples.
+Unlike the `AzureDiagnostic` queries, the resource-specific queries will be run against the different tables that were created for each log category chosen in the diagnostic setting dialog. To use these tables, prefix the table names in the list above with the string `CDB`.  Let's review a couple of examples.
 
 * Query that returns the count and the total request charged of the different Azure Cosmos DB operation types in the last hour.
 
