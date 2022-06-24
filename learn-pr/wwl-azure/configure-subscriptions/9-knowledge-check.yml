@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/15/2022
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -33,9 +33,9 @@ quiz:
     - content: "Track resource usage in a spreadsheet."
       isCorrect: false
       explanation: "That's incorrect. This form of tracking is manual and prone to errors. Is there a more automated way to track resource usage?"
-    - content: "Split the deployment into separate Azure subscriptions, where each subscription belongs to its own billing department."
+    - content: "Place the resources in different regions."
       isCorrect: false
-      explanation: "That's incorrect. Although  subscriptions can provide separate billing by department, is there another method that allows all resources to stay within the same subscription?"
+      explanation: "That's incorrect. Is there a better solution?"
     - content: "Apply a tag to each resource that includes the associated billing department."
       isCorrect: true
       explanation: "That's correct. Tags provide extra information, or metadata, about your resources. The team might create a tag that's named BillingDept whose value would be the name of the billing department. Azure policy ensures that the proper tags are assigned when resources are provisioned."

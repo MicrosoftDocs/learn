@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-mysql-databases-azure
+metadata:
+  title: Work with MySQL Databases on Azure
+  description: Work with MySQL Databases on Azure
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with MySQL Databases on Azure
+prerequisites: |
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
+summary: |
+  Azure Database for MySQL is a fully managed database platform. In this learning path you'll find out how to manage and optimize Azure Database for MySQL.
+  After completing this learning path, you'll be able to:
+  - Understand Azure Database for MySQL options
+  - Describe the MySQL client query interfaces
+  - Work with MySQL storage engines
+  - Secure your Azure Database for MySQL server
+  - Understand concurrency in MySQL
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-mysql
+subjects:
+- database
+modules:
+- learn.wwl.explore-mysql-architecture
+- learn.wwl.understand-client-server-communication-mysql
+- learn.wwl.understand-mysql-storage-engine
+- learn.wwl.secure-mysql
+- learn.wwl.understand-concurrency-mysql
+trophy:
+  uid: learn.wwl.work-mysql-databases-azure.trophy

@@ -1,6 +1,6 @@
-When you're building mobile applications, it's common to store data locally on a device for performance reasons. .NET MAUI enables you to cache data locally on the device on which the application is running. You can store this data using several different technologies. For store relational data, you can use a SQLite database.
+When you're building mobile applications, it's common to store data locally on a device for performance reasons. .NET MAUI enables you to cache data locally on the device on which the application is running. You can store this data using several different technologies. To store relational data, you can use a SQLite database.
 
-Suppose you're building a social media application that enables users to connect with each other. Since the data about users is stored remotely, you have to call the REST endpoint to get information about users with which you are connected every time you restart the application.
+Suppose you're building a social media application that enables users to connect with each other. Since the data about users is stored remotely, you have to call the REST endpoint to get information about the users you're connected with every time you restart the application.
 
 This design works. However, it's inefficient because you have to keep downloading the user information from the server every time you restart the application.
 
