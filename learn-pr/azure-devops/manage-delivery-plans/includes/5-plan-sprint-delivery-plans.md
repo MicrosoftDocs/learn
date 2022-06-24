@@ -18,7 +18,7 @@ The Delivery Plans Marketplace extension provides the features needed to create 
 1. On the **Azure DevOps** tab, search for "Delivery Plans".
 1. Select **Delivery Plans** from the results.
 
-    :::image type="content" source="../media/5-delivery-plans-extension.png" alt-text="A screenshot showing the Delivery Plans Marketplace extension.":::
+    :::image type="content" source="../media/5-delivery-plans-extension.png" alt-text="Screenshot of the Delivery Plans Marketplace extension.":::
 
 1. Select **Get it Free**.
 1. Select your Azure DevOps organization from the drop-down box.
@@ -41,7 +41,7 @@ Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many 
     
     Both the Web team and the Engine team share a common set of backlog items.
 
-    :::image type="content" source="../media/5-create-delivery-plan.png" alt-text="A screenshot showing the final delivery plan settings. ":::
+    :::image type="content" source="../media/5-create-delivery-plan.png" alt-text="Screenshot of the final delivery plan settings.":::
 
 1. Select **Create**.
 
@@ -55,7 +55,7 @@ Milestone markers can be added to the delivery plan as reference points. These h
 1. Select your delivery plan.
 1. In the top right toolbar, select **Settings**, and then, on the **Plan settings** pane, select **Markers**.
 
-    :::image type="content" source="../media/5-configure-plan-settings.png" alt-text="Selecting the Markers tab from the delivery plan settings.":::
+    :::image type="content" source="../media/5-configure-plan-settings.png" alt-text="Screenshot of selecting the Markers tab from the delivery plan settings.":::
 
 1. From the **Markers** tab, select **Add marker**.
 1. In the form, enter these fields:
@@ -63,7 +63,7 @@ Milestone markers can be added to the delivery plan as reference points. These h
     * **Label**: Cliffchella
     * **Color**: Red
 
-    :::image type="content" source="../media/5-add-marker.png" alt-text="Adding the milestone marker for the Cliffchella event.":::
+    :::image type="content" source="../media/5-add-marker.png" alt-text="Screenshot of adding the milestone marker for the Cliffchella event.":::
 
 1. Repeat the process to add markers with labels, dates, and colors:
     * **Beta**: five weeks from today (blue)
@@ -71,22 +71,22 @@ Milestone markers can be added to the delivery plan as reference points. These h
 1. Select **Save**.
 1. Use the **Scroll calendar** and **Zoom out** controls to bring all markers into view.
 
-    :::image type="content" source="../media/5-show-all-markers.png" alt-text="Bringing all four markers into view.":::
+    :::image type="content" source="../media/5-show-all-markers.png" alt-text="Screenshot of bringing all four markers into view.":::
 
 1. Select the **Beta** marker at the top of the design plan. A solid line shows the boundary of the beta milestone.
 
-    :::image type="content" source="../media/5-analyze-milestones.png" alt-text="Selecting the Beta milestone to show the boundary of the beta milestone.":::
+    :::image type="content" source="../media/5-analyze-milestones.png" alt-text="Screenshot of selecting the Beta milestone to show the boundary of the beta milestone.":::
 
 ### Optimize the work schedule
 
-1. Notice that there is a work item for the Web team to **Integrate with beta DB** that is scheduled to be completed before the beta will be ready. This will be a problem because this work item is dependent on that beta.
+1. Notice that there's a work item for the Web team to **Integrate with beta DB** that's scheduled to be completed before the beta will be ready. This will be a problem because this work item is dependent on that beta.
 1. Drag the integration work item from **Sprint 3** to **Sprint 4** to ensure that its dependency will be available.
 1. This change opens a significant amount of bandwidth in **Sprint 3**. Since that time is now available for productive work, drag the two **Fix** work items from **Sprint 4** back into **Sprint 3**.
 
-    :::image type="content" source="../media/5-adjust-work-schedule.png" alt-text="A screenshot that shows the direction in which to move work items.":::
+    :::image type="content" source="../media/5-adjust-work-schedule.png" alt-text="Screenshot of the direction in which to move work items.":::
 
 Your final sprint plan should look similar to this:
 
-:::image type="content" source="../media/5-optimized-work-schedule.png" alt-text="A screenshot showing the optimized work schedule.":::
+:::image type="content" source="../media/5-optimized-work-schedule.png" alt-text="Screenshot of the optimized work schedule.":::
 
-You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting on dependencies to be delivered, teams will have always productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up to date.
+You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting on dependencies to be delivered, teams will have always productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up-to-date.

@@ -1,9 +1,9 @@
 In this module, the Tailspin team took on some common organizational challenges around software delivery and adapted their process to better handle them. Some of the things you learned to do with Azure DevOps include how to:
 
-* Install the Delivery Plans extension
-* Create a delivery plan
-* Add team sprints and milestones to a delivery plan
-* Rearrange work items to fit the overall schedule
+* Install the Delivery Plans extension.
+* Create a delivery plan.
+* Add team sprints and milestones to a delivery plan.
+* Rearrange work items to fit the overall schedule.
 
 ## Learning path summary
 
