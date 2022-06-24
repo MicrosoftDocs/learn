@@ -14,7 +14,7 @@ Access to groups and applications for employees and guests changes over time. To
 2.  In the left menu, click **Access reviews**.
 3.  Click **New access review** to create a new access review.
     
-    :::image type="content" source="../media/access-reviews.png" alt-text="Screenshot of the Access reviews pane in Identity Governance" lightbox="../media/access-reviews.png":::
+    :::image type="content" source="../media/access-reviews.png" alt-text="Screenshot of the Access reviews pane in Identity Governance." lightbox="../media/access-reviews.png":::
 
 4.  In **Step 1: Select what to review** select the resource you would like to review.
     
