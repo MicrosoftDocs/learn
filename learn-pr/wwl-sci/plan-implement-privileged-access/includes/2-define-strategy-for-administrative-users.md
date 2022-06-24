@@ -68,7 +68,7 @@ Follow these steps to implement the principle of least privilege for your Azure 
 1.  Understand the granularity of the roles by reading and understanding the available Azure AD administrator roles. You and your team should also reference administrator roles by identity task in Azure AD, which explains the least privileged role for specific tasks.
 2.  List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
     
-    :::image type="content" source="../media/new-preview-page.png" alt-text="Screenshot of the Discovery and insights page to reduce exposure via privileged roles":::
+    :::image type="content" source="../media/new-preview-page.png" alt-text="Screenshot of the Discovery and insights page to reduce exposure via privileged roles.":::
     
 3.  For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
 4.  For all other Azure AD roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.

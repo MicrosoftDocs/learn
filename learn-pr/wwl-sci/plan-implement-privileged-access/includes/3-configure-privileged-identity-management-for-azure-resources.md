@@ -11,7 +11,7 @@ When you first set up PIM for Azure resources, you need to discover and select t
 2.  Open **Azure AD Privileged Identity Management**.
 3.  Select **Azure resources**.If this is your first time using PIM for Azure resources, you'll see a **Discover resources** page.
     
-    :::image type="content" source="../media/discover-resources-first-run.png" alt-text="Screenshot of the Azure resources page of the Privileged Identity Management":::
+    :::image type="content" source="../media/discover-resources-first-run.png" alt-text="Screenshot of the Azure resources page of the Privileged Identity Management.":::
     
 4.  If another administrator in your organization is already managing Azure resources in PIM, you'll see a list of the resources that are currently being managed.
     

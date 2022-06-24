@@ -65,7 +65,7 @@ Follow these steps to update or remove an existing role assignment.
 1.  In the Open Azure AD Privileged Identity Management then Azure AD roles screen, in the left navigation, select **Assignments**.
 2.  In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
     
-    :::image type="content" source="../media/privileged-identity-management-edit-role-assignments.png" alt-text="Screenshot of the options listed in the action column of the Compliance Adminsitrator":::
+    :::image type="content" source="../media/privileged-identity-management-edit-role-assignments.png" alt-text="Screenshot of the options listed in the action column of the Compliance Adminsitrator.":::
     
 3.  Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
 4.  Select **Remove**.

@@ -9,7 +9,7 @@ Follow these steps to open the settings for an Azure AD role.
 3.  In the Privileged Identity Management screen, in the left navigation, select **Azure AD roles.**
 4.  On the Quick start page, in the left navigation, select **Settings.**
     
-    :::image type="content" source="../media/privileged-identity-management-ad-roles-settings.png" alt-text="Screenshot of the Azure AD roles page with the Settings menu highlighted.":::
+    :::image type="content" source="../media/privileged-identity-management-roles-settings.png" alt-text="Screenshot of the Azure AD roles page with the Settings menu highlighted.":::
     
 5.  Review the list of roles and then, in the **Search by role name**, enter **compliance**.
 6.  In the results, select **Compliance Administrator**.
