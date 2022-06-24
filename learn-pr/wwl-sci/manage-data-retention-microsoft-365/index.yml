@@ -3,7 +3,7 @@ uid: learn.wwl.manage-data-retention-microsoft-365
 metadata:
   title: Manage data retention in Microsoft 365 workloads
   description: "Manage data retention in Microsoft 365 workloads"
-  ms.date: 06/20/2022
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Regain protected items from Exchange Mailboxes.
 prerequisites: |
   - Basic understanding of Microsoft 365 services
-  - Basic understanding of Microsoft 365 compliance features
+  - Basic understanding of Microsoft Purview
   - Basic understanding of how to create and publish retention labels
 iconUrl: /learn/achievements/manage-data-retention-in-microsoft-365.svg
 levels:
