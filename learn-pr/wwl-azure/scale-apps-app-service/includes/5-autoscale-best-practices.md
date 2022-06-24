@@ -72,7 +72,7 @@ Then the follow occurs:
 * If CPU is 76% and Memory is 50%, we scale-out.
 * If CPU is 50% and Memory is 76% we scale-out.
 
-On the other hand, if CPU is 25% and memory is 51% autoscale does not scale-in. In order to scale-in, CPU must be 29% and Memory 49%.
+On the other hand, if CPU is 25% and memory is 51% autoscale does not scale-in. An automatic scale-in would occur if the CPU is 29% and the Memory is 49% since both of the scale-in rules would be true.
 
 ### Always select a safe default instance count
 
