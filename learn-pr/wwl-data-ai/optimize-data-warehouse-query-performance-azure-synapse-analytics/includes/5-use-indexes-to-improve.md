@@ -8,7 +8,7 @@ Dedicated SQL Pools create a clustered columnstore index when no index options a
 
 Columnstore works on segments of 1,048,576 rows that get compressed and optimized by column. This segmentation further helps to filter out and reduce the data accessed through using metadata stored which summarizes the range and values within each segment during query optimization.
 
-As CCIs organize data into segements, we want as much saturation of data within the segment as possible which as can be seen above is measured by the number of rows in a compressed row group. to optimize segment quality, target at least 100K rows per compressed row group and peformance will continue to see gains until it reaches its current maximum size.
+As CCIs organize data into segments, we want as much saturation of data within the segment as possible which as can be seen above is measured by the number of rows in a compressed row group. to optimize segment quality, target at least 100K rows per compressed row group and performance will continue to see gains until it reaches its current maximum size.
 
 Using a view like the one listed below can help identify the average rows per row group and identify any suboptimal CCIs. The last column in this provided DDL can be used to rebuild those suboptimal indexes.
 
@@ -76,17 +76,17 @@ How to your results and what to look for in the resulting row groups analysis.
 | [row_count_per_distribution_MAX] | If all rows are evenly distributed this value would be the target number of rows per distribution. Compare this value with the compressed_rowgroup_count. |
 | [COMPRESSED_rowgroup_rows] | Total number of rows in columnstore format for the table. |
 | [COMPRESSED_rowgroup_rows_AVG] | If the average number of rows is significantly less than the maximum # of rows for a row group, then consider using CTAS or ALTER INDEX REBUILD to recompress the data |
-| [COMPRESSED_rowgroup_count] | Number of row groups in columnstore format. If this number is very high in relation to the table, it is an indicator that the columnstore density is low. |
+| [COMPRESSED_rowgroup_count] | Number of row groups in columnstore format. If this number is very high in relation to the table, it's an indicator that the columnstore density is low. |
 | [COMPRESSED_rowgroup_rows_DELETED] | Rows are logically deleted in columnstore format. If the number is high relative to table size, consider recreating the partition or rebuilding the index as this removes them physically. |
 | [COMPRESSED_rowgroup_rows_MIN] | Use this with the AVG and MAX columns to understand the range of values for the row groups in your columnstore. A low number over the load threshold (102,400 per partition aligned distribution) suggests that optimizations are available in the data load |
 | [COMPRESSED_rowgroup_rows_MAX] | Same as above |
-| [OPEN_rowgroup_count] | Open row groups are normal. One would reasonably expect one OPEN row group per table distribution (60). Excessive numbers suggest data loading across partitions. Double check the partitioning strategy to make sure it is sound |
+| [OPEN_rowgroup_count] | Open row groups are normal. One would reasonably expect one OPEN row group per table distribution (60). Excessive numbers suggest data loading across partitions. Double check the partitioning strategy to make sure it's sound |
 | [OPEN_rowgroup_rows] | Each row group can have 1,048,576 rows in it as a maximum. Use this value to see how full the open row groups are currently |
 | [OPEN_rowgroup_rows_MIN] | Open groups indicate that data is either being trickle loaded into the table or that the previous load spilled over remaining rows into this row group. Use the MIN, MAX, AVG columns to see how much data is sat in OPEN row groups. For small tables, it could be 100% of all the data! In which case ALTER INDEX REBUILD to force the data to columnstore. |
 | [OPEN_rowgroup_rows_MAX] | See above |
 | [OPEN_rowgroup_rows_AVG] | See above |
 | [CLOSED_rowgroup_rows] | Look at the closed row group rows as a sanity check. |
-| [CLOSED_rowgroup_count] | The number of closed row groups should be low if any are seen at all. Closed row groups can be converted to compressed row groups using the ALTER INDEX ... REORGANIZE command. However, this is not normally required. Closed groups are automatically converted to columnstore row groups by the background "tuple mover" process. |
+| [CLOSED_rowgroup_count] | The number of closed row groups should be low if any are seen at all. Closed row groups can be converted to compressed row groups using the ALTER INDEX ... REORGANIZE command. However, this isn't normally required. Closed groups are automatically converted to columnstore row groups by the background "tuple mover" process. |
 | [CLOSED_rowgroup_rows_MIN] | Closed row groups should have a very high fill rate. If the fill rate for a closed row group is low, then further analysis of the columnstore is required. |
 | [CLOSED_rowgroup_rows_MAX] | See above |
 | [CLOSED_rowgroup_rows_AVG] | See above |
@@ -95,7 +95,7 @@ How to your results and what to look for in the resulting row groups analysis.
 
 ### Considerations for when clustered columnstore indexes may not be a good option 
 
-1. Columnstore tables do not support varchar(max), nvarchar(max), and varbinary(max). Consider heap or clustered index instead.
+1. Columnstore tables don't support varchar(max), nvarchar(max), and varbinary(max). Consider heap or clustered index instead.
 2. Columnstore tables may be less efficient for transient data. Consider heap and perhaps even temporary tables.
 3. Small tables with less than 60 million rows. Consider heap tables.
 
