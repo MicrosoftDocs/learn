@@ -4,11 +4,11 @@ Dedicated SQL Pools have the following indexing options available:
 
 ## Clustered columnstore index (CCI)
 
-Dedicated SQL Pools create a clustered columnstore index when no index options are specified on a table and allows for the use of adaptive caching. Clustered columnstore indexes offer both the highest level of data compression as well as the best overall query performance. Clustered columnstore indexes will generally outperform clustered rowstore indexes or heap tables and are usually the best choice for large tables.
+Dedicated SQL Pools create a clustered columnstore index when no index options are specified on a table and allows for the use of adaptive caching. Clustered columnstore indexes offer both the highest level of data compression and the best overall query performance. Clustered columnstore indexes will generally outperform clustered rowstore indexes or heap tables and are usually the best choice for large tables.
 
-Columnstore works on segments of 1,048,576 rows that get compressed and optimized by column. This segmentation further helps to filter out and reduce the data accessed through leveraging metadata stored which summarizes the range and values within each segment during query optimization.
+Columnstore works on segments of 1,048,576 rows that get compressed and optimized by column. This segmentation further helps to filter out and reduce the data accessed through using metadata stored which summarizes the range and values within each segment during query optimization.
 
-As CCIs organize data into segements we want as much saturation of data within the segment as possible which as can be seen above is measured by the number of rows in a compressed row group. to optimize segment quality, target at least 100K rows per compressed row group and peformance will continue to see gains until it reaches its current maximum size.
+As CCIs organize data into segements, we want as much saturation of data within the segment as possible which as can be seen above is measured by the number of rows in a compressed row group. to optimize segment quality, target at least 100K rows per compressed row group and peformance will continue to see gains until it reaches its current maximum size.
 
 Using a view like the one listed below can help identify the average rows per row group and identify any suboptimal CCIs. The last column in this provided DDL can be used to rebuild those suboptimal indexes.
 

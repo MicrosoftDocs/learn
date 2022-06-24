@@ -1,7 +1,7 @@
 
 ## How to obtain a query plan in Azure Synapse Analytics dedicated SQL Pool ##
 
-Often Database Engineers and Database Administrators have a need to analyse and investigate query execution in SQL Pools. This is done through the use of dynamic management views (DMVs).
+Often Database Engineers and Database Administrators have a need to analyse and investigate query execution in SQL Pools. This analysis is done by using dynamic management views (DMVs).
 > [!Note] 
 > Permissions to query the DMVs require either **VIEW DATABASE STATE** or **CONTROL** permission, in typical scenarios, granting **VIEW DATABASE STATE** is the preferred method as it is more restrictive
 > ``` SQL
@@ -11,7 +11,7 @@ Often Database Engineers and Database Administrators have a need to analyse and 
 > [!Warning]
 > An attacker can use **sys.dm_pdw_exec_requests** to retrieve information about specific database objects by simply having VIEW SERVER STATE permission and by not having database-specific permission.
 >
-Azure Snyapse queries which are executed are logged, ** sys.dm_pdw_exec_requests ** contains the last 10,000 queries executed. 
+Azure Snyapse queries. which are executed are logged, ** sys.dm_pdw_exec_requests ** contains the last 10,000 queries executed. 
 you can use the following query to determine the top 10 longest running queries 
 ```SQL
 SELECT TOP 10 request_id, status, total_elapsed_time
@@ -19,7 +19,7 @@ FROM sys.dm_pdw_exec_requests
 WHERE status not in ('completed', 'Failed','Cancelled')
 ORDER BY total_elapsed_time DESC
 ```
-When looking at the results, note that those in a **suspended** state can be queued due to a lack of resources from a large number of active running queries. These queries will also appear in the **sys.dm_pdw_waits** in which your focus would be more on waits including **UserConcurrencyResourceType**. There are other reasons that queries may be in a wait queue such as object locks. More information on this topic can be found by [investating queries waiting for resources.](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor#monitor-waiting-queries)
+When looking at the results, those in a **suspended** state can be queued due to a lack of resources from a large number of active running queries. These queries will also appear in the **sys.dm_pdw_waits** in which your focus would be more on waits including **UserConcurrencyResourceType**. There are other reasons that queries may be in a wait queue such as object locks. More information on this topic can be found by [investating queries waiting for resources.](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor#monitor-waiting-queries)
 
 > [!Note]
 > It's a recommended best practice to use [LABEL](/sql/t-sql/queries/option-clause-transact-sql?toc=%2Fazure%2Fsynapse-analytics%2Fsql-data-warehouse%2Ftoc.json&bc=%2Fazure%2Fsynapse-analytics%2Fsql-data-warehouse%2Fbreadcrumb%2Ftoc.json&view=azure-sqldw-latest&preserve-view=true) so users can easily find and troubleshoot poorly performing queries using **sys.dm_pdw_exec_requests**shown below:
@@ -61,7 +61,7 @@ When looking at the returned DSQL plan, further information about individual ste
 - MoveOperation
 - CopyOperation
 
-From the prior step using **sys.dm_pdw_request_steps** we want to net use the *request_id* and *step_index* to retrieve exection informatin of the query step on **all** of the distributed databasee using a query simsilar to the one below.
+From the prior step using **sys.dm_pdw_request_steps**, we want to  use the *request_id* and *step_index* to retrieve exection informatin of the query step on **all** of the distributed databasee using a query simsilar to the one below.
 ```SQL
 --Find the distribution run times for a particular SQL Step
 --retrieve request_id and step_index with the values from the steps above.
@@ -70,7 +70,7 @@ SELECT * FROM sys.dm_pdw_sql_requests
 WHERE request_id = 'QID####' AND step_index = 4;
 ```
 
-When the query step is still *running* the **DBCC PDW_SHOWEXECUTIONPLAN** can be utilized to retrieve the SQL Server estrimatedplan from the plan cache for the step running on a specific distribution as shown below.
+When, the query step is still *running* the **DBCC PDW_SHOWEXECUTIONPLAN** can be utilized to retrieve the SQL Server estrimatedplan from the plan cache for the step running on a specific distribution as shown below.
 ```SQL
  --Retrieve the SQL Server execution plan for a running query on a particular SQL pool or control node
  --Replace distribution_id and spid from the results from the previous query
@@ -80,7 +80,7 @@ When the query step is still *running* the **DBCC PDW_SHOWEXECUTIONPLAN** can be
 ```
 ## Looking for movement on the distributed databases ##
 
-Using the *Request ID* and the *Step Index* as previously retrieved above in conjunction with **sys.dm_pdw_dms_workers** will allow the retrieval of information about any data movement steps running on each distribution as shown below.
+Using the *Request ID* and the *Step Index* as previously retrieved above with **sys.dm_pdw_dms_workers** will allow the retrieval of information about any data movement steps running on each distribution as shown below.
 ```SQL
  --Find all workers that are completing a Data Movement Step and their details
  --Replace request_id and step_index with the values from the prior steps shown above.
@@ -93,6 +93,6 @@ WHERE request_id = 'QID####' AND step_index = 2;
 > checking the *total_elapsed_time* will help determine if a particular distribution is taking significantly longer than others for data movement.
 > for any long-running distribution, check the *rows_processed* column to derminie if it is materially larger than others. if so, this might indicate skew of your underlying data.
 
-One example of a bad operation that can cause performance problems such as data skew is distributing on a column that contains a lot of NULL values which will cause those rose to land in the same distribution. If possible, eliminate nulls or filter them out of your query althogether to increase performance.
+One example of a bad operation that can cause performance problems such as data skew is distributing on a column that contains a lot of NULL values, which will cause those rose to land in the same distribution. If possible, eliminate nulls or filter them out of your query althogether to increase performance.
 
 To help resolve issues, refer to the sections on [Create Statistics to Improve Performance](./7-create-statistics-to-improve), [Understand performance issues related to tables ](./2-understand-performance-issues-related-to-tables), [understand table distribution design](./4-understand-table-distribution-design), and [use indexes to improve performance](./5-use-indexes-to-improve)
