@@ -97,14 +97,14 @@ Output Directory:
 
 ## Verbatim String Literal
 
-A verbatim string literal will keep all whitespace and characters without the need to escape the backslash.  To create a verbatim string, use the `@` directive before the literal string. You can use double quotes in the `@` directive to print double quotes around a string.
+A verbatim string literal will keep all whitespace and characters without the need to escape the backslash.  To create a verbatim string, use the `@` directive before the literal string. Two consecutive double-quote characters (`""`) are printed as a single double-quote character (`"`) in the output string.
 
 ```csharp-interactive
 Console.WriteLine(@"   c:\source\repos   
       (""this is where your code goes"")");
 ```
 
-Notice that as written in the `@` directive, the string spans two lines, the whitespace is kept, and double quotes are applied to the double-quoted string in the following output:
+Notice that as written in the `@` directive, the string spans two lines, the whitespace is kept, and two consecutive double-quote characters are applied as a single double-quote character in the following output:
 
 ```output
    c:\source\repos   
