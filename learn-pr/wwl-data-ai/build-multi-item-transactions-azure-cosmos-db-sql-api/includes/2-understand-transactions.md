@@ -5,8 +5,7 @@ In a database, a transaction is typically defined as a sequence of point operati
 - **Isolation** guarantees that no two transactions interfere with each other – generally, most commercial systems provide multiple isolation levels that can be used based on the application's needs.
 - **Durability** ensures that any change that's committed in the database will always be present.
 
-In Azure Cosmos DB SQL API, a stored procedure executes one or more operations as a single unit of work within the same scope. Stored procedures are registered in containers, and run within the scope of that specific container. Stored procedures are registered in containers, and run within the scope of that specific container.
-
+In Azure Cosmos DB SQL API, a stored procedure executes one or more operations as a single unit of work within the same scope. Stored procedures are registered in containers, and run within the scope of that specific container.
 > [!NOTE]
 > Stored procedures are scoped to a single logical partition. You cannot execute a stored procedure that performs operations across logical partition key values.
 
