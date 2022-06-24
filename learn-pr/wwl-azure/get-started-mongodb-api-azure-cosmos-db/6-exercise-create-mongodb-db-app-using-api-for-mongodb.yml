@@ -4,14 +4,15 @@ title: Exercise - Create a MongoDB DB app using the Azure Cosmos DB API for Mong
 metadata:
   title: Exercise - Create a MongoDB DB app using the Azure Cosmos DB API for MongoDB
   description: "Exercise - Create a MongoDB DB app using the Azure Cosmos DB API for MongoDB"
-  ms.date: 06/23/2022
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java-node-python
-azureSandbox: false
+azureSandbox: true
 labModal: false
 durationInMinutes: 25
 content: |
   [!include[](includes/6-exercise-create-mongodb-db-app-using-api-for-mongodb.md)]
+interactive: bash
