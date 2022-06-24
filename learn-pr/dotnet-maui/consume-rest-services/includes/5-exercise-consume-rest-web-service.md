@@ -150,7 +150,7 @@ The REST service requires you to sign in first to get an authorization token. Th
     }
     ```
 
-1. Build and run the app. When the app starts, the Part List page will appear and a list of parts retrieved by the **GetAll** method should appear. You can scroll up and down through the list. The following image shows the app running on Android:
+1. Build and run the app. When the app starts, the Part List page will appear and a list of parts retrieved by the **GetAll** method should appear. The following image shows the app running on Android:
 
     :::image type="content" source="../media/5-all-parts.png" alt-text="A screenshot of the Parts Client app running on Android showing a list of parts.":::
 
