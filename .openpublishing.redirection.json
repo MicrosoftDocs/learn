@@ -14414,6 +14414,16 @@
       "source_path": "learn-pr/wwl-sci/plan-implement-administer-conditional-access/14-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/plan-implement-administer-conditional-access/13-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-manage-access-review/5-manage-licenses-for-access-reviews.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-implement-manage-access-review/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-manage-access-review/4-monitor-findings.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-implement-manage-access-review/5-monitor-findings",
+      "redirect_document_id": true
     }
   ]
 }
