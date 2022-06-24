@@ -1,4 +1,4 @@
-Azure Cosmos DB is a fully managed platform-as-a-service (PaaS). To use this service, we'll need to first create an Azure Cosmos DB account under our subscription. Once our account has been created, we can then add database, containers and items under it.  For Azure Cosmos DB API for MongoDB accounts, a container is realized as a Collection and an item is realized as a Document.
+Azure Cosmos DB is a fully managed platform-as-a-service (PaaS). To use this service, we'll need to first create an Azure Cosmos DB account under our subscription. Once our account has been created, we can then add database, collections and documents within it.
 
 [![Diagram showing the Azure Cosmos DB Resource Model](../media/3-database-containers-items.png)](../media/3-database-containers-items.png#lightbox)
 
@@ -6,7 +6,7 @@ We'll take a look at a couple of ways to create the different Azure Cosmos DB AP
 
 ## Create an account, database and container for the Azure Cosmos DB API for MongoDB using the Azure portal
 
-One way of creating our Azure Cosmos DB account and its elements, is using the Azure portal.  In this example, we'll use the Azure portal to create a simple Azure Cosmos DB account using the Azure Cosmos DB API for MongoDB.  We'll then add a database and a container. For the moment, we won't worry about filling out more advanced settings that we'll cover in more detail in later modules. For this example, we'll just visit the Basics tab.  Let's create our account and its elements.
+One way of creating our Azure Cosmos DB account and its elements, is using the Azure portal.  In this example, we'll use the Azure portal to create a simple Azure Cosmos DB account using the Azure Cosmos DB API for MongoDB.  We'll then add a database and a collection. For the moment, we won't worry about filling out more advanced settings that we'll cover in more detail in later modules. For this example, we'll just visit the Basics tab.  Let's create our account and its elements.
 
 ### Create an account for the Azure Cosmos DB API for MongoDB
 
@@ -71,11 +71,11 @@ We should now have a database and one collection to connect to.  In the next uni
 
 ## Create or connect to a database and collection for the Azure Cosmos DB API for MongoDB
 
-You should be able to create or connect to your Azure Cosmos DB API for MongoDB account using the Java, Python, Node.js, .NET and other programming language. Let's introduce some functions you would use to create these elements using in some of the different languages.  At the beginning of this module, we stated that *the developers can keep on using MongoDB drivers, SDKs and tools they're familiar with to create apps and connect to Azure Cosmos DB.* We'll leverage on those drivers and their properties and methods to program our access and operations against our Azure Cosmos DB API for MongoDB accounts. So the developers will continue using the same code to access the Azure Cosmos DB API for MongoDB accounts that they've used in the past.
+You should be able to create or connect to your Azure Cosmos DB API for MongoDB account using the Java, Python, Node.js, .NET or other programming language with a MongoDB driver. Let's introduce some functions you would use to create these elements using some of the different languages.  At the beginning of this module, we stated that *the developers can keep on using MongoDB drivers, SDKs and tools they're familiar with to create apps and connect to Azure Cosmos DB.* We'll leverage on those drivers and their properties and methods to program our access and operations against our Azure Cosmos DB API for MongoDB account.
 
 ### Create or connect to a database for the Azure Cosmos DB API for MongoDB
 
-You can use your favorite development tool to create your Azure Cosmos DB API for MongoDB application. We'll leverage on the MongoDB driver for each respective programming language to create our databases and collections.  Let's review the code to connect to the Azure Cosmos DB API for Cosmos DB accounts and to connect to the *products* database.
+You can use your favorite development tool to create your Azure Cosmos DB API for MongoDB application. We'll leverage on the MongoDB driver for each respective programming language to create our databases and collections.  Let's review the code to connect to the Azure Cosmos DB API for MongoDB accounts and to connect to the *products* database.
 
 ::: zone pivot="node"
   ***Node.js***

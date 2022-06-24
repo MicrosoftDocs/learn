@@ -3,7 +3,7 @@ There are a couple of ways you can do capacity planning for your Azure Cosmos DB
 - If you're migrating your existing database workload but you only know your number of vcores and servers in your existing cluster, you'll need to estimate requests units using [vCores or vCPUs][/azure/cosmos-db/convert-vcore-to-request-unit]. We'll discuss this topic in more detail under the *migration* module.
 - If you know your current database workloads typical request rates, you can estimate request units by using the [Azure Cosmos DB capacity planner][/capacitycalculator/].
 
-To optimize cost and performance in Azure Cosmos DB, we must provide the  databases and collections workloads with the right amount of throughput (Request Units per seconds or RU/s for short). The [Azure Cosmos DB capacity planner][/capacitycalculator/] will help us estimate the required RU/s for our Azure Cosmos DB API for MongoDB workloads. Let's take a look at this tool in more details.
+To optimize cost and performance in Azure Cosmos DB, we must provide the  databases and collections workloads with the right amount of throughput (Request Units per second or RU/s for short). The [Azure Cosmos DB capacity planner][/capacitycalculator/] will help us estimate the required RU/s for our Azure Cosmos DB API for MongoDB workloads. Let's take a look at this tool in more details.
 
 ## Azure Cosmos DB capacity planner
 
@@ -39,7 +39,7 @@ Once you select **Calculate**, the **Cost Estimate** tab will show the total cos
 
 ### Advanced mode
 
-The *Advanced mode* requires a more detailed view of your workload. You'll need to provide more settings that will give us a much preside estimate on the cost and throughput of your workload. To choose the Advanced mode of the capacity planner, you'll need to sign in to the tool with an account you use to connect to Azure. You can find the **Sign In** option on the upper right hand corner of the tool. 
+The *Advanced mode* requires a more detailed view of your workload. You'll need to provide more settings that will yield a more precise estimate on the cost and throughput of your workload. To choose the Advanced mode of the capacity planner, you'll need to sign in to the tool with an account you use to connect to Azure. You can find the **Sign In** option on the upper right hand corner of the tool. 
 
 Once you signed in, you'll notice a more detailed set of parameters than the Basic mode. Let's review the diffent workload parameters and the values to input.
 
@@ -49,9 +49,8 @@ Once you signed in, you'll notice a more detailed set of parameters than the Bas
     - Enable it when you expect to have an active-active workload that requires low latency writes in different regions.
     - Multi-region writes guarantees 99.999% read and write availability. 
     - Multi-region writes require more throughput when compared to the single write regions.
-- **Default consistency** - Azure Cosmos DB API for MongoDB supports 5 [consistency levels][/azure/cosmos-db/consistency-levels], to allow developers to balance the tradeoff between consistency, availability, and latency tradeoffs. We'll discuss consistency levels in more details in the *Replication, Monitor and Optimize* module.
-    - ***By default, API for MongoDB uses session consistency***, which guarantees the ability to read your own writes in a session.
-- **Indexing policy** - This setting defines how your workload plans to use its indexes. We'll discuss indexes in more detail in the *Design MongoDB Databases for Azure Cosmos DB* module. To learn more, see [index management][azure/cosmos-db/mongodb/mongodb-indexing] in API for MongoDB.
+- **Default consistency** - Azure Cosmos DB API for MongoDB supports 4 [consistency levels][/azure/cosmos-db/mongodb/consistency-mapping], to allow developers to balance the tradeoff between consistency, availability, and latency tradeoffs. We'll discuss consistency levels in more details in the *Replication, Monitor and Optimize* module.
+ - **Indexing policy** - This setting defines how your workload plans to use its indexes. We'll discuss indexes in more detail in the *Design MongoDB Databases for Azure Cosmos DB* module. To learn more, see [index management][azure/cosmos-db/mongodb/mongodb-indexing] in API for MongoDB.
     - If you choose *Off* option, none of the properties are indexed that results in the lowest RU charge for writes. You'll need to query using the _id field and the shard key for every query, any other query will scan all partitions.
     - If you choose the *Automatic* option, will index all fields/properties in your documents that in turn allows flexible and efficient queries.
     - If you choose the *Custom* option, you can define the properties that are indexed with multi-key indexes or compound indexes. 
