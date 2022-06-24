@@ -7,12 +7,6 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 ::: zone pivot="node"
 
----
-lab:
-    title: 'Create MongoDB app using ***Node.js*** Azure Cosmos DB API for MongoDB'
-    module: 'Module 1 - Get Started with Azure Cosmos DB API for MongoDB '
----
-
 ## Create MongoDB app using ***Node.js*** Azure Cosmos DB API for MongoDB
 
 In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of items to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
@@ -369,12 +363,6 @@ This code illustrated the power of using extended commands in our code, which al
 ::: zone-end
 
 ::: zone pivot="java"
-
----
-lab:
-    title: 'Create MongoDB app using ***Java*** Azure Cosmos DB API for MongoDB'
-    module: 'Module 1 - Get Started with Azure Cosmos DB API for MongoDB '
----
 
 ## Create MongoDB app using ***Java*** Azure Cosmos DB API for MongoDB
 
@@ -762,12 +750,6 @@ This code illustrated the power of using extended commands in our code, which al
 
 ::: zone pivot="python"
 
----
-lab:
-    title: 'Create MongoDB app using ***Python*** Azure Cosmos DB API for MongoDB'
-    module: 'Module 1 - Get Started with Azure Cosmos DB API for MongoDB '
----
-
 ## Create MongoDB app using ***Python*** Azure Cosmos DB API for MongoDB
 
 In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of items to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
@@ -1060,12 +1042,6 @@ This code illustrated the power of using extended commands in our code, which al
 ::: zone-end
 
 ::: zone pivot="csharp"
-
----
-lab:
-    title: 'Create MongoDB app using ***C#*** Azure Cosmos DB API for MongoDB'
-    module: 'Module 1 - Get Started with Azure Cosmos DB API for MongoDB '
----
 
 ## Create MongoDB app using ***C#*** Azure Cosmos DB API for MongoDB
 

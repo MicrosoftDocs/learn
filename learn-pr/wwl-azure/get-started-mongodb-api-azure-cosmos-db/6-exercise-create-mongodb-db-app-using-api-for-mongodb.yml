@@ -12,7 +12,7 @@ metadata:
   zone_pivot_groups: dev-lang-csharp-java-node-python
 azureSandbox: true
 labModal: false
-durationInMinutes: 25
+durationInMinutes: 35
 content: |
   [!include[](includes/6-exercise-create-mongodb-db-app-using-api-for-mongodb.md)]
 interactive: bash
