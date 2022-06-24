@@ -23,18 +23,18 @@ Then, define the properties (or members) of the interface and their type. Proper
    }
    ```
 
-1. Now, you can implement the new interface. Let's start by using the `IceCream` interface as a type in a variable declaration. Declare a new variable called `iceCream` as type `IceCream` and then assign values to the required properties. Notice as you start to type the property names, Intellisense suggests the correct names and types. Check your work by displaying the value on the console.
+1. Now, you can implement the new interface. Let's start by using the `IceCream` interface as a type in a variable declaration. Declare a new variable called `myIceCream` as type `IceCream` and then assign values to the required properties. Notice as you start to type the property names, Intellisense suggests the correct names and types. Check your work by displaying the value on the console.
 
    ```typescript
-   let iceCream: IceCream = {
+   let myIceCream: IceCream = {
       flavor: 'vanilla',
       scoops: 2
    }
    
-   console.log(iceCream.flavor);
+   console.log(myIceCream.flavor);
    ```
 
-1. Click **Run**. Note the flavor is displayed in the **Log** window.
+1. Select **Run**. Note the flavor is displayed in the **Log** window.
 1. Next, let's create a function at the bottom called `tooManyScoops` that uses the `IceCream` interface as parameter type. This function checks the number of scoops in the IceCream object and returns a message based on the result. To test your work, pass in the object `{flavor: 'vanilla', scoops: 5}` as a parameter and check the result by returning it to the console.
 
    ```typescript
