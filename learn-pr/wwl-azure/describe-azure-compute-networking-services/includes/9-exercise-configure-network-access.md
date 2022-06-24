@@ -1,18 +1,8 @@
-In this exercise, you configure network access to a virtual machine (VM) running on Azure.
+In this exercise, you'll configure the access to the virtual machine (VM) you created earlier in this module. The Microsoft Learn sandbox should still be running. If the sandbox timed out, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
 
-If the sandbox timed out and you have to reactivate the sandbox, you'll need to go complete the early exercise in this lesson (Exercise - Create an Azure virtual machine), and then come back here.
+Right now, the VM you created and installed Nginx on isn't accessible from the internet. You'll create a network security group that changes that by allowing inbound HTTP access on port 80.<br>
 
-You start by creating a Linux VM and installing Nginx, a popular web server, on that VM. To make your web server accessible, you then create a network security group (NSG) rule that allows inbound access on port 80 (HTTP).
-
-There are many ways to create and manage VMs, including their network settings. For example, you can use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
-
-Here, you use the Azure CLI. The Azure CLI enables you to connect to Azure and run administrative commands on Azure resources. As with other command-line interfaces, you can run commands directly from a terminal or you can add commands to a Bash script or a PowerShell script. The Azure CLI runs on Windows, macOS, or Linux.
-
-Here, you access the Azure CLI from Azure Cloud Shell. Cloud Shell is a browser-based shell experience that you use to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
-
-If you're new to the Azure CLI or to Cloud Shell, just follow along.
-
-## Access your web server<br>
+## Task 1: Access your web server
 
 In this procedure, you get the IP address for your VM and attempt to access your web server's home page.
 
@@ -51,10 +41,11 @@ In this procedure, you get the IP address for your VM and attempt to access your
         
         You see an IP address, for example, *23.102.42.235*.
     2.  Copy the IP address that you see to the clipboard.
-    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening.<br>If you wait for the browser to time out, you'll see something like this:<br>:::image type="content" source="../media/7-browser-timeout-30747e19.png" alt-text="A web browser showing an error message that says the connection timed out.":::
-        <br>Keep this browser tab open for later.
+    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening.<br>If you wait for the browser to time out, you'll see something like this:<br><br>:::image type="content" source="../media/browser-request-timeout-d7cc0e02.png" alt-text="A web browser showing an error message that says the connection timed out.":::
+        
+    4.  Keep this browser tab open for later.
 
-## List the current network security group rules
+## Task 2: List the current network security group rules
 
 Your web server wasn't accessible. To find out why, let's examine your current NSG rules.
 
@@ -110,7 +101,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
 
 By default, a Linux VM's NSG allows network access only on port 22. This enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
 
-## Create the network security rule
+## Task 3: Create the network security rule
 
 Here, you create a network security rule that allows inbound access on port 80 (HTTP).
 
@@ -150,7 +141,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```
 
-## Access your web server again
+## Task 4: Access your web server again
 
 Now that you've configured network access to port 80, let's try to access the web server a second time.
 
@@ -169,7 +160,7 @@ Now that you've configured network access to port 80, let's try to access the we
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     
     ```
-2.  As an optional step, refresh your browser tab that points to your web server.<br><br>You see this:<br>:::image type="content" source="../media/7-browser-success-fc26691c.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
+2.  As an optional step, refresh your browser tab that points to your web server.<br><br>You see this:<br><br>:::image type="content" source="../media/browser-request-successful-df21c6f1.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
     
 
 Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This technique enables you to control network access to multiple VMs under a single, central set of rules.
