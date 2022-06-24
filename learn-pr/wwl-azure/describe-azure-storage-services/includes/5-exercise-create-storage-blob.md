@@ -2,10 +2,6 @@
 
 In this task, we will create a new storage account.
 
-```azurecli
-<rgn>[sandbox resource group name]</rgn>
-```
-
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 2.  Select Create a resource.
 3.  Under Categories, select Storage.
@@ -25,7 +21,7 @@ In this task, we will create a new storage account.
         Subscription
       :::column-end:::
       :::column:::
-        Leave provided default
+        Concierge Subscription
       :::column-end:::
     :::row-end:::
     :::row:::
