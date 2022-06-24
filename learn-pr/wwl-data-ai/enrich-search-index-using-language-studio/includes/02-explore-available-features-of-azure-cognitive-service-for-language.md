@@ -143,7 +143,7 @@ Language Studio guides you through the remaining steps. Follow the left navigati
 1. Deploy your model. When you're happy with the performance of your model, you deploy it. This makes it available to be called as an API from your app and test it.
 1. Test your deployment. This option allows you to test your model in the same way as pre-configured models.
 
-    :::image type="content" source="../media/testing-deployments.png" alt-text="A screenshot of testing a conversational language understanding model.":::
+    :::image type="content" source="../media/test-deployments.png" alt-text="A screenshot of testing a conversational language understanding model.":::
 
 Whichever feature your use you end up with a model that you can use in apps to add language understanding.
 

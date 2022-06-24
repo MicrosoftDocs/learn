@@ -5,9 +5,7 @@ You've built a search solution and now want to add cognitive services for langua
 In this exercise, you'll create an Azure Cognitive Search solution and enrich an index with the results from a Language Studio custom text classification project. You'll create a function app to connect search and your classification model together.
 
 > [!NOTE]
->To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
->
-
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
 
 
 ## Set up your development environment with Python, VSCode and VSCode Extensions
@@ -27,7 +25,7 @@ To save you time, select this Azure ARM template to create resources you'll need
 
 ### Deploy a pre-built ARM template 
 
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploytoazure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
+1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploy-azure.svg" alt="Deploy to Azure." data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
 
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
 
@@ -162,7 +160,7 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
 
 1. On the left, select **Training jobs**.
 
-    :::image type="content" source="../media/training-jobs.png" alt-text="A screenshot showing how to create to training job.":::
+    :::image type="content" source="../media/train-jobs.png" alt-text="A screenshot showing how to create to training job.":::
 
 1. Select **+ Start a training job**.
 
@@ -175,7 +173,7 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
 
 1. On the left, select **Deploying a model**.
 
-    :::image type="content" source="../media/deploying-model.png" alt-text="A screenshot showing how to deploy a model.":::
+    :::image type="content" source="../media/deploy-model.png" alt-text="A screenshot showing how to deploy a model.":::
 
 1. Select **Add a deployment**.
 
@@ -255,7 +253,7 @@ You'll now create a Python function app that your cognitive search custom skills
 1. The workspace will be updated, if you're asked to connect it to the workspace folder, select **Yes**.
 1. Press <kbd>F5</kbd> to debug the app.
 
-    :::image type="content" source="../media/testing-function-app.png" alt-text="A screenshot showing the function app running.":::
+    :::image type="content" source="../media/test-function-app.png" alt-text="A screenshot showing the function app running.":::
     
     If the app is running you should see a localhost URL that you can use for local testing.
 
@@ -427,7 +425,7 @@ You need a place to store the enrichment returned by your new function app. Foll
 
     Your index should now look like this.
 
-    :::image type="content" source="../media/edit-azureblob-index-fields.png" alt-text="A screenshot of the edited index JSON.":::
+    :::image type="content" source="../media/edit-azure-blob-index-fields.png" alt-text="A screenshot of the edited index JSON.":::
 
 1. Select **Save**.
 
@@ -510,7 +508,7 @@ You now have fields to store the enrichment, a skillset to call your function ap
 
     The indexer JSON definition should now look like this:
 
-    :::image type="content" source="../media/adding-output-fields-indexer.png" alt-text="A screenshot showing the edited JSON of an indexer with added output fields.":::
+    :::image type="content" source="../media/add-output-fields-indexer.png" alt-text="A screenshot showing the edited JSON of an indexer with added output fields.":::
 
 1. Select **Save**.
 1. Select **Reset**, then select **Yes**.
