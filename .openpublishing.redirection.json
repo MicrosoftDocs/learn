@@ -14424,6 +14424,131 @@
       "source_path": "learn-pr/wwl-sci/plan-implement-manage-access-review/4-monitor-findings.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/plan-implement-manage-access-review/5-monitor-findings",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/6-develop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/5-discover-supported-languages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/4-exercise-create-spark-notebook.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/7-exercise-develop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/11-exercise-load-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/9-exercise-run.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/2-introduction-spark-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/13-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/10-load-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/8-run.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/12-save.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/14-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/3-understand-use-cases.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/5-exercise-create-spark-table.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/7-exercise-flatten-nested-structures-explode-arrays.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/4-exercise-load-data-spark-dataframe.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/6-flatten-nested-structures-explode-arrays.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/2-introduction-dataframes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/3-load-data-spark-dataframe.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }
