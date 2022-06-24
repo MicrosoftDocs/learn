@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.use-delta-lake-azure-synapse-analytics
+metadata:
+  title: Use Delta Lake in Azure Synapse Analytics
+  description: "Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Synapse Analytics."
+  ms.date: 06/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use Delta Lake in Azure Synapse Analytics
+summary: Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Synapse Analytics.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe core features and capabilities of Delta Lake.
+  - Create and use Delta Lake tables in a Synapse Analytics Spark pool.
+  - Create Spark catalog tables for Delta Lake data.
+  - Use Delta Lake tables for streaming data.
+  - Query Delta Lake tables from a Synapse Analytics SQL pool.
+prerequisites: |
+  To get the best from this module, you will need existing knowledge of working with Spark pools in Azure Synapse Analytics. Consider completing the [Analyze data with Apache Spark in Azure Synapse Analytics](/learn/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics?azure-portal=true) module first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+subjects:
+- data-analytics
+- data-engineering
+- data-lake
+- data-warehousing
+units:
+- learn.wwl.use-delta-lake-azure-synapse-analytics.introduction
+- learn.wwl.use-delta-lake-azure-synapse-analytics.understand-delta-lake
+- learn.wwl.use-delta-lake-azure-synapse-analytics.create-delta-tables
+- learn.wwl.use-delta-lake-azure-synapse-analytics.catalog-tables
+- learn.wwl.use-delta-lake-azure-synapse-analytics.use-delta-lake-streaming-data
+- learn.wwl.use-delta-lake-azure-synapse-analytics.delta-with-sql
+- learn.wwl.use-delta-lake-azure-synapse-analytics.exercise-use-delta-lake
+- learn.wwl.use-delta-lake-azure-synapse-analytics.knowledge-check
+- learn.wwl.use-delta-lake-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.use-delta-lake-azure-synapse-analytics.badge
