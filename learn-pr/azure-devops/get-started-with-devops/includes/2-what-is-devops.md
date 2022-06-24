@@ -91,7 +91,7 @@ Outsourcing can save money and provide a flexible labor pool, but it must be use
 
 ### The bottom line
 
-DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why we recommend you to learn more about DevOps:
+DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why you should learn more about DevOps:
 
 **Ask Abel**
 
