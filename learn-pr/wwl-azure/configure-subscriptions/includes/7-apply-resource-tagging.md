@@ -2,7 +2,7 @@ You can apply tags to your Azure resources to logically organize them by categor
 
 With tags in place, you can retrieve all the resources in your subscription with that tag name and value. This means, you can retrieve related resources from different resource groups.
 
-:::image type="content" source="../media/resource-tags-357b5e1a.png" alt-text="Screenshot of Resource group page for adding tags under the Overview option. Tags is highlighted.":::
+:::image type="content" source="../media/resource-tags-357b5e1a.png" alt-text="Screenshot of resource group page for adding tags under the Overview option. Tags is highlighted.":::
 
 
 Perhaps one of the best uses of tags is to group billing data. When you download the usage CSV for services, the tags appear in the Tags column. You could then group virtual machines by cost center and production environment.

@@ -12,4 +12,4 @@
 
 The [Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) provides estimates in all areas of Azure including compute, networking, storage, web, and databases.
 
-:::image type="content" source="../media/pricing-calculator-c1cb80d5.png" alt-text="Screenshot of the Pricing Calculator. Estimates are provided in this example for an instance of a D1 series virtual machine on the Windows OS, running in the West US region, at the standard tier level.":::
+:::image type="content" source="../media/pricing-calculator-c1cb80d5.png" alt-text="Screenshot of the Pricing Calculator. Estimates are provided in this example for an instance of a D 1 series virtual machine on the Windows O S, running in the West US region, at the standard tier level.":::

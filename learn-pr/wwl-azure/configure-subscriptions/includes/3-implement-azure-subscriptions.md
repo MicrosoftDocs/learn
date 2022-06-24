@@ -2,7 +2,7 @@ An Azure subscription is a logical unit of Azure services that is linked to an A
 
 Subscriptions help you organize access to cloud service resources. They also help you control how resource usage is reported, billed, and paid for. Each subscription can have a different billing and payment setup, so you can have different subscriptions and different plans by department, project, regional office, and so on. Every cloud service belongs to a subscription, and the subscription ID may be required for programmatic operations.
 
-:::image type="content" source="../media/azure-subscriptions-e855533e.png" alt-text="Diagram showing the relationship between an Azure subscription and an account, which is simply an identity in Azure Active Directory. Users and services accessing subscription resources first authenticate through Azure AD.":::
+:::image type="content" source="../media/azure-subscriptions-e855533e.png" alt-text="Diagram showing the relationship between an Azure subscription and an account, which is simply an identity in Azure Active Directory.":::
 
 
 ## Azure accounts
