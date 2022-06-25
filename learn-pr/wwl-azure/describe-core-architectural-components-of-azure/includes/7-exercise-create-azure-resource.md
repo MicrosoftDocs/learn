@@ -34,7 +34,7 @@ In this task, you’ll create a virtual machine using the Azure portal.
     Resource group
   :::column-end:::
   :::column:::
-    <rng>[sandbox resource group name]</rng>
+    <rgn>[sandbox resource group name]</rgn>
   :::column-end:::
 :::row-end:::
 :::row:::
