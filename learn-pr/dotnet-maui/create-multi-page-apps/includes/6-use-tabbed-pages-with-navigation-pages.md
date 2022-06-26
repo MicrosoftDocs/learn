@@ -83,7 +83,7 @@ await Shell.Current.GoToAsync("..");
 
 ### Passing data
 
-Primitive data can be passed as string-based query parameters when performing URI-based programmatic navigation. This is achieved by appending `?` after a route, followed by a query parameter id, `=`, and a value:
+Primitive data can be passed as string-based query parameters when performing URI-based programmatic navigation. This is achieved by appending `?` after a route, followed by a query parameter ID, `=`, and a value:
 
 ```csharp
 string celestialName = "moon";
@@ -115,4 +115,4 @@ public partial class AstronomicalBodyPage : ContentPage
 }
 ```
 
-In this example the first argument for the QueryPropertyAttribute specifies the name of the property that will receive the data, with the second argument specifying the parameter id.
+In this example the first argument for the QueryPropertyAttribute specifies the name of the property that will receive the data, with the second argument specifying the parameter ID.

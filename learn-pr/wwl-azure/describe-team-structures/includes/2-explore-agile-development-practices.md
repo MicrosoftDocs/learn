@@ -45,7 +45,6 @@ Agile software development methods are based on releases and iterations:
  -  One release might consist of several iterations.
  -  Each iteration is like a small independent project.
  -  After being estimated and prioritization:
-    
      -  Features, bug fixes, enhancements, and refactoring width are assigned to a release.
      -  And then assigned again to a specific iteration within the release, generally on a priority basis.
  -  At the end of each iteration, there should be tested working code.
