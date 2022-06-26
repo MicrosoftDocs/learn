@@ -1,79 +1,147 @@
-Task 1: Add a Lock to the resource group and test deletion
+In this exercise, you’ll create a resource and configure a resource lock. Storage accounts are one of the easiest types of resource locks to quickly see the impact, so you’ll use a storage account for this exercise.
 
-In this task, we will add a resource lock to the resource group and test deleting the resource group.
+This exercise is a Bring your own subscription exercise, meaning you’ll need to provide your own Azure subscription to complete the exercise. Don’t worry though, the entire exercise can be completed for free with the 12 month free services when you sign up for an Azure account.
 
-Sign in to the Azure portal.
+For help singing up for an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/) learning module.
 
-In the Azure portal, navigate to the resource group myRGLocks.
+Once you’ve created your free account, follow the steps below. If you don’t have an Azure account, you can review the steps to see the process for adding a simple resource lock to a resource.
 
-You can apply a lock to a subscription, resource group, or individual resource to prevent accidental deletion or modification of critical resources.
+## Task 1: Create a resource
 
-In the Settings section, click Locks, and then click + Add.
+In order to apply a resource lock, you have to have a resource created in Azure. The first task focuses on creating a resource that you can then lock in subsequent tasks.
 
-Screenshot of the myRGLocks resource group with the Locks pane displaying.
+1.  Sign in to the Azure portal at https://portal.azure.com
+2.  Select Create a resource.
+3.  Under Categories, select Storage.
+4.  Unders Storage Account, select Create.
+5.  On the Basics tab of the Create storage account blade, fill in the following information. Leave the defaults for everything else.
+    
+    :::row:::
+      :::column:::
+        **Setting**
+      :::column-end:::
+      :::column:::
+        **Value**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Resource group
+      :::column-end:::
+      :::column:::
+        Create new
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Storage account name
+      :::column-end:::
+      :::column:::
+        enter a unique storage account name
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Location
+      :::column-end:::
+      :::column:::
+        default
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Performance
+      :::column-end:::
+      :::column:::
+        Standard
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Redundancy
+      :::column-end:::
+      :::column:::
+        Locally redundant storage (LRS)
+      :::column-end:::
+    :::row-end:::
+    
+6.  Select Review + Create to review your storage account settings and allow Azure to validate the configuration.
+7.  Once validated, select Create. Wait for the notification that the account was successfully created.
+8.  Select Go to resource.
 
-Configure the new lock. When you are done click OK.
+## Task 2: Apply a read-only resource lock
 
-Setting Value
+In this task you apply a read-only resource lock to the storage account. What impact do you think that will have on the storage account?
 
-Lock name ’'’RGLock’’’
+1.  Scroll down until you find the Settings section of the blade on the left of the screen.
+2.  Select Locks.
+3.  Select + Add.<br><br>:::image type="content" source="../media/read-only-lock-e7777623.png" alt-text="Screenshot of the Add lock feature on a storage account set for a read-only lock.":::
+    
+4.  Enter a Lock name.
+5.  Verify the Lock type is set to Read-only.
+6.  Select OK.
 
-Lock Type Delete
+## Task 3: Add a container to the storage account
 
-Click Overview and click Delete resource group. Type the name of the resource group and click OK. You receive an error message stating the resource group is locked and can’t be deleted.
+In this task, you add a container to the storage account, this container is where you can store your blobs.
 
-Screenshot of the delete locks failed.
+1.  Scroll up until you find the Data storage section of the blade on the left of the screen.
+2.  Select Containers.
+3.  Select + Container.<br><br>:::image type="content" source="../media/add-container-steps-a6739e88.png" alt-text="Screenshot of the add container process outlined in this task.":::
+    
+4.  Enter a container name and select Create.
+5.  You should receive an error message: Failed to create storage container.<br><br>:::image type="content" source="../media/failed-to-create-warning-291af699.png" alt-text="Screenshot of the Failed to create storage container error message.":::
+    
 
-Task 2: Test deleting a member of the resource group
+> [!NOTE]
+> The error message lets you know that you couldn't create a storage container because a lock is in place. The read-only lock prevents any create or update operations on the storage account, so you're unable to create a storage container.
 
-In this task, we will test if the resource lock protects a storage account in the resource group.
+## Task 4: Modify the resource lock and create a storage container<br>
 
-From the All services blade, search for and select Storage accounts, and then click + Add, + Create, or + New.
+1.  Scroll down until you find the Settings section of the blade on the left of the screen.
+2.  Select Locks.
+3.  Select the read-only resource lock you created.
+4.  Change the Lock type to Delete and select OK.<br><br>:::image type="content" source="../media/resource-lock-change-e5281189.png" alt-text="Screenshot midway through task process of changing the lock type on a resource lock.":::
+    
+5.  Scroll up until you find the Data storage section of the blade on the left of the screen.
+6.  Select Containers.
+7.  Select + Container.
+8.  Enter a container name and select Create.
+9.  Your storage container should appear in your list of containers.
 
-On the Storage Accounts page +Add +New +Create \*\* blade, fill in the following information (replace \*\*xxxx in the name of the storage account with letters and digits such that the name is globally unique). Leave the defaults for everything else.
+You can now understand how the read-only lock prevented you from adding a container to your storage account. Once the lock type was changed (you could have removed it instead), you were able to add a container.
 
-Setting Value
+## Task 5: Delete the storage account
 
-Subscription Select your subscription
+You'll actually do this last task twice. Remember that we have a delete lock on the storage account, so you won't actually be able to delete the storage account yet.
 
-Resource group myRGLocks
+1.  Scroll up until you find Overview at the top of the blade on the left of the screen.
+2.  Select Overview.<br>
+3.  Select Delete.<br>:::image type="content" source="../media/storage-overview-page-ec75f9e6.png" alt-text="Screenshot of the deletion process for deleting a storage account.":::
+    
 
-Storage account name storageaccountxxxx
+You should get a notification letting you know you can't delete the resource because it has a delete lock. In order to delete the storage account, you'll need to remove the delete lock.
 
-Location (US) East US
+:::image type="content" source="../media/storage-delete-lock-warning-5ea6faa5.png" alt-text="Screenshot of the Delete storage account error, explaining that a resource lock prevents deletion.":::
 
-Performance Standard
 
-Account kind StorageV2 (general purpose v2)
+## Task 6: Remove the delete lock and delete the storage account
 
-Replication Locally redundant storage (LRS)
+In the final task, you remove the resource lock and delete the storage account from your Azure account. This step is important. You want to make sure you don't have any idle resource just sitting in your account.
 
-Access tier (default) Hot
+1.  Select your storage account name in the breadcrumb at the top of the screen.
+2.  Scroll down until you find the Settings section of the blade on the left of the screen.
+3.  Select Locks.
+4.  Select Delete.
+5.  Select Home in the breadcrumb at the top of the screen.
+6.  Select Storage accounts
+7.  Select the storage account you used for this exercise.
+8.  Selete Delete.<br>
+9.  To prevent accidental deletion, Azure prompts you to enter the name of the storage account you want to delete. Enter the name of the storage account and select Delete.<br><br>:::image type="content" source="../media/storage-account-delete-f4d60c3b.png" alt-text="Screenshot of the deletion confirmation message before deleting a storage account.":::
+    
+10. You should receive a message that the storage account was deleted. If you go Home &gt; Storage accounts, you should see that the storage account you created for this exercise is gone.
 
-Click Review + Create to review your storage account settings and allow Azure to validate the configuration.
+Congratulations! You've completed configuring, updating, and removing a resource lock on an Azure resource.
 
-Once validated, click Create. Wait for the notification that the account was successfully created.
-
-Wait for the notification that the storage account was successfully created.
-
-Access your new storage account and from the Overview pane, click Delete. You receive an error message stating the resource or its parent has a delete lock.
-
-Screenshot of the error deleting the storage account.
-
-Note: Although we did not create a lock specifically for the storage account, we did create a lock at the resource group level, which contains the storage account. As such, this parent level lock prevents us from deleting the resource and the storage account inherits the lock from the parent.
-
-Task 3: Remove the resource lock
-
-In this task, we will remove the resource lock and test.
-
-Return to the myRGLocks-XXXXXXXX resource group blade and, in the Settings section, click Locks.
-
-Click Delete link to the far right of the myRGLocks-XXXXXXXX entry, to the right of Edit.
-
-Screenshot of the Lock with the Delete link highlighted.
-
-Return to the storage account blade and confirm you can now delete the resource.
-
-Congratulations! You created a resource group, added a lock to resource group and tested deletion, tested deleting a resource in the resource group, and removed the resource lock.
-
-Note: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click Delete resource group. Verify the name of the resource group and then click Delete. Monitor the Notifications to see how the delete is proceeding.
+> [!IMPORTANT]
+> Make sure you complete Task 6, the removal of the storage account. You are solely responsible for the resources in your Azure account. Make sure you clean up your account after completing this exercise.

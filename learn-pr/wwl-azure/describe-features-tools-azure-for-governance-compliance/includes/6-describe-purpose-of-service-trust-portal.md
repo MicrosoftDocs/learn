@@ -6,11 +6,13 @@ The Service Trust Portal contains details about Microsoft's implementation of co
 
 You can access the Service Trust Portal at [https://servicetrust.microsoft.com/](https://servicetrust.microsoft.com/). However, to access the different resources available in the Service Trust Portal you may need to login to an existing account or create a new account.
 
+:::image type="content" source="../media/service-trust-portal-f7b27e61.png" alt-text="Screenshot of the service trust portal with the main menu items visible.":::
+
+
 The Service Trust Portal features and content are accessible from the main menu. The categories on the main menu are:
 
  -  Service Trust Portal – provides a quick access hyperlink to return to the Service Trust Portal home page.
- -  Compliance Manager – the Compliance Manager has moved from the Service Trust Portal to the Microsoft 365 compliance center, the menu item will redirect you.
- -  Trust Documents – provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. Trust Documents has sub-items including: Audit Reports, Data Protection, and Azure Stack.
+ -  Trust Documents – provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. Trust Documents has sub-items including: Audit Reports, Data Protection, and Azure Stack.<br>
  -  Industries &amp; Regions – provides industry- and region-specific compliance information about Microsoft Cloud services.
  -  Trust Center – links to the Microsoft Trust Center, which provides more information about security, compliance, and privacy in the Microsoft Cloud. This includes information about the capabilities in Microsoft Cloud services that you can use to address specific requirements of the GDPR, documentation helpful to your GDPR accountability and to your understanding of the technical and organizational measures Microsoft has taken to support the GDPR.
  -  Resources – provides access to additional resources, including the Security and Compliance Center, information on Microsoft Global Datacenters, and Frequently Asked Questions.

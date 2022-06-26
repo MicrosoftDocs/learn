@@ -10,6 +10,9 @@ It is possible for artifacts to have no additional parameters (configurations). 
 
 Artifacts can also contain one or more parameters that you can configure. The following screenshot shows the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.
 
+:::image type="content" source="../media/allowed-locations-9d4921dd.png" alt-text="A screenshot showing the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.":::
+
+
 You can specify a parameter's value when you create the blueprint definition or when you assign the blueprint definition to a scope. In this way, you can maintain one standard blueprint but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.
 
 Azure Blueprints deploy a new environment based on all of the requirements, settings, and configurations of the associated artifacts. Artifacts can include things such as:
