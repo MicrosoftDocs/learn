@@ -12,3 +12,5 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
+content: |
+  [!include[](includes/2-modeling-partitioningsharding.md)]

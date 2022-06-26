@@ -29,7 +29,6 @@ Below we'll define some query scenarios to define some of our aggregation pipeli
 Let's assume we have a collection called *salesReceipts* and we have the following three documents in that collection.
 
 ```json
-[
     {
         "_id": 1
         , "ReceiptNo": 1000
@@ -38,7 +37,10 @@ Let's assume we have a collection called *salesReceipts* and we have the followi
             {"ItemName":"Milk","quantity":2,"priceperunit":4.25},
             {"ItemName":"Bread","quantity":1,"priceperunit":1.33}
         ]
-    },
+    }
+```
+
+```json
     {
         "_id": 2
         , "ReceiptNo": 1001
@@ -47,7 +49,10 @@ Let's assume we have a collection called *salesReceipts* and we have the followi
             {"ItemName":"Eggs","quantity":3,"priceperunit":3.55},
             {"ItemName":"Flour","quantity":1,"priceperunit":2.45}
         ]
-    },
+    }
+```
+
+```json
     {
         "_id": 3
         , "ReceiptNo": 1002
@@ -57,7 +62,6 @@ Let's assume we have a collection called *salesReceipts* and we have the followi
             {"ItemName":"Onions","quantity":4,"priceperunit":0.57}
         ]
     }
-]
 ```
 
 ### Aggregation Pipeline examples using the Mongo Shell
@@ -140,5 +144,7 @@ FROM salesReceipts s
         ON s.ReceiptNo = d.ReceiptNo
 GROUP BY s.ReceiptNo
 ```
+
+> &#128221; Note you can also run these *db.collection.aggregate* functions in the Azure Portal by using the *Shell* included in the Azure Cosmos DB API for MongoDB account page.  Under *Data Explorer*, expand your database and choose the collection you want to run the function against, you will see a *New Shell* option in the collection menu.
 
 As we've illustrated, Azure Cosmos DB API for MongoDB uses MongoDB aggregation pipelines to give us the ability of running complex queries right at the server with no issues. This reduces the need to send all the original documents back to the client to calculate those aggregations programmatically.
