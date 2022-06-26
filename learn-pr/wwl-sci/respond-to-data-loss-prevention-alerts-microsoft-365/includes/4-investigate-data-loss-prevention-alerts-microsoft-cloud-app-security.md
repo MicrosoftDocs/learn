@@ -1,4 +1,4 @@
-After a Defender for Cloud Apps File policy is created with a DLP-related configuration, file policy violation alerts are investigated in the Alerts area of Defender for Cloud Apps.
+When a Defender for Cloud Apps File policy is created with a DLP-related configuration, file policy violation alerts can be investigated in the Alerts area of Defender for Cloud Apps.
 
 To manage alerts:
 
