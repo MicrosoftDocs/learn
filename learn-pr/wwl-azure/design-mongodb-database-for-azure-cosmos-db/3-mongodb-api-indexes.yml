@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.mongodb-api-indexes
-title: MongoDB API in Azure Cosmos DB Indexes
+title: Azure Cosmos DB API for MongoDB indexes
 metadata:
-  title: MongoDB API in Azure Cosmos DB Indexes
-  description: "MongoDB API in Azure Cosmos DB Indexes"
+  title: Azure Cosmos DB API for MongoDB indexes
+  description: "Azure Cosmos DB API for MongoDB indexes"
   ms.date: 06/26/2022
   author: wwlpublish
   ms.author: calopez

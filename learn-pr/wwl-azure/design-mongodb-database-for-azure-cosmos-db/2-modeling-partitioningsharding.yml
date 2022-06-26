@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.modeling-partitioningsharding
-title: Modeling and partitioning/sharding
+title: Models and shard keys
 metadata:
-  title: Modeling and partitioning/sharding
-  description: "Modeling and partitioning/sharding"
+  title: Models and shard keys
+  description: "Models and shard keys"
   ms.date: 06/26/2022
   author: wwlpublish
   ms.author: calopez
