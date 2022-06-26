@@ -2,6 +2,9 @@ Azure Monitor is a platform for collecting data on your resources, analyzing tha
 
 The following diagram illustrates just how comprehensive Azure Monitor is:
 
+:::image type="content" source="../media/azure-monitor-overview-614cd2fd.svg" alt-text="An illustration showing the flow of information that Azure Monitor uses to provide monitoring and data visualization.":::
+
+
 On the left is a list of the sources of logging and metric data that can be collected at every layer in your application architecture, from application to operating system and network.
 
 In the center, the logging and metric data is stored in central repositories.
@@ -17,6 +20,9 @@ Azure Log Analytics is the tool in the Azure portal where you’ll write and run
 ## Azure Monitor Alerts
 
 Azure Monitor Alerts are an automated way to stay informed when Azure Monitor detects a threshold being crossed. You set the alert conditions, the notification actions, and then Azure Monitor Alerts notifies when an alert is triggered. Depending on your configuration, Azure Monitor Alerts can also attempt corrective action.
+
+:::image type="content" source="../media/azure-monitor-alerts-2478e941.png" alt-text="Screenshot of Azure Monitor Alerts showing total alerts, and then the alerts grouped by severity.":::
+
 
 Alerts can be set up to monitor the logs and trigger on certain log events, or they can be set to monitor metrics and trigger when certain metrics are crossed. For example, you could set a metric-based alert up to notify you when the CPU usage on a virtual machine exceeded 80%. Alert rules based on metrics provide near real time alerts based on numeric values. Rules based on logs allow for complex logic across data from multiple sources.
 

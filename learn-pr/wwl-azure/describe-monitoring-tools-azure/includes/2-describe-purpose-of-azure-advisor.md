@@ -10,4 +10,6 @@ When you're in the Azure portal, the Advisor dashboard displays personalized rec
  -  **Operational Excellence** is used to help you achieve process and workflow efficiency, resource manageability, and deployment best practices.
  -  **Cost** is used to optimize and reduce your overall Azure spending.
 
-The following image shows the Azure Advisor dashboard:
+The following image shows the Azure Advisor dashboard.
+
+:::image type="content" source="../media/azure-advisor-dashboard-baca22e2.png" alt-text="Screenshot of the Azure Advisor dashboard with boxes for the main areas of recommendations.":::
