@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-designing-api-for-mongodb-database
+title: Exercise – Designing an Azure Cosmos DB API for MongoDB database
+metadata:
+  title: Exercise – Designing an Azure Cosmos DB API for MongoDB database
+  description: "Exercise – Designing an Azure Cosmos DB API for MongoDB database"
+  ms.date: 06/26/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise-designing-api-for-mongodb-database.md)]
+interactive: bash

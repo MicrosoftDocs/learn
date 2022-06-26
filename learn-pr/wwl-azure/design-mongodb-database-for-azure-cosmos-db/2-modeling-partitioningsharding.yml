@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.modeling-partitioningsharding
+title: Modeling and partitioning/sharding
+metadata:
+  title: Modeling and partitioning/sharding
+  description: "Modeling and partitioning/sharding"
+  ms.date: 06/26/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8

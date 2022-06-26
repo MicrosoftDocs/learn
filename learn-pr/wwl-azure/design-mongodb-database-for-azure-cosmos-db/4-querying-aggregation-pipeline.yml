@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.querying-aggregation-pipeline
+title: Querying / Aggregation pipeline
+metadata:
+  title: Querying / Aggregation pipeline
+  description: "Querying / Aggregation pipeline"
+  ms.date: 06/26/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-java-node-python
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-querying-aggregation-pipeline.md)]
