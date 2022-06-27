@@ -31,7 +31,7 @@ Now that you've created a Gen2 enabled storage account, Storage Explorer should 
 1. In Storage Explorer, in the **EXPLORER** pane, locate **Concierge Subscription** and expand it to show all the storage accounts.
 
     > [!NOTE]
-    > It might take several minutes for the storage account to display in Storage Explorer. If the storage account doesn't display, try to reauthenticate the concierge subscription.
+    > It might take several minutes for the storage account to display in Storage Explorer.
 
 1. You'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
 
