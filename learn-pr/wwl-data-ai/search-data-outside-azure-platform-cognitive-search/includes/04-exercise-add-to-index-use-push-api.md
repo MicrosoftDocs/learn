@@ -16,7 +16,7 @@ Install these tools to complete this exercise. You can still follow along with t
 
 To save you time, select this Azure Resource Manager template to create resources you'll need later in the exercise.
 
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploy-azure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create an Azure Cognitive Search service.
+1. [![Deploy to Azure.](../media/deploy-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json) select this link to create an Azure Cognitive Search service.
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
 
 1. In **Resource group**, select **Create new**, name it **cog-search-language-exe**.
@@ -38,7 +38,7 @@ To save you time, select this Azure Resource Manager template to create resource
 1. In the list of resources, select the search service you created. In the above example **acs18245-search-service**.
 1. Copy the search service name into a text file.
 
-    :::image type="content" source="../media/search-api-keys.png" alt-text="A screenshot of the keys section of a search service.":::
+    :::image type="content" source="../media/search-api-keys.png" alt-text="A screenshot of the keys section of a search service." lightbox="../media/search-api-keys.png":::
 
 1. On the left, select **Keys**, then copy the **Primary admin key** into the same text file.
 
@@ -52,17 +52,17 @@ git clone https://github.com/Azure-Samples/azure-search-dotnet-samples samples
 
 In your file explorer, open the optimize-data-indexing/v11 folder in VS Code. For example, the full path might be `C:\samples\optimize-data-indexing\v11`.
 
-:::image type="content" source="../media/open-example-solution.png" alt-text="A screenshot showing the file explorer opening the sample code directory in VS Code.":::
+:::image type="content" source="../media/open-example-solution.png" alt-text="A screenshot showing the file explorer opening the sample code directory in VS Code." lightbox="../media/open-example-solution.png":::
 
 This action will open the V11 folder in VS Code.
 
-:::image type="content" source="../media/setup-visual-studio-code-solution.png" alt-text="A screenshot of VS Code showing the setup notifications.":::
+:::image type="content" source="../media/setup-visual-studio-code-solution.png" alt-text="A screenshot of VS Code showing the setup notifications." lightbox="../media/setup-visual-studio-code-solution.png":::
 
 1. In VS Code, in the notifications, select **Yes**, and then select **Restore**.
 
     VS Code will download the correct version of the `Azure.Search.Document` client library.
     
-    :::image type="content" source="../media/update-app-settings.png" alt-text="A screenshot showing the contents of the appsettings.json file.":::
+    :::image type="content" source="../media/update-app-settings.png" alt-text="A screenshot showing the contents of the appsettings.json file." lightbox="../media/update-app-settings.png":::
 
 1. In the navigation on the left, expand the **OptimizeDataIndexing** folder, then select the **appsettings.json** file.
 1. Paste in your search service name and primary admin key.
@@ -76,9 +76,9 @@ This action will open the V11 folder in VS Code.
     ```
 
     The settings file should look similar to the above.
-1. Run the app without debugging, press <kbd>CTRL</kbd>+<kbd>F5</kbd>.
+1. Run the app without debugging, press **CTRL**+**F5**.
 
-    :::image type="content" source="../media/debug-application.png" alt-text="A screenshot showing the app running in VS Code with an exception.":::
+    :::image type="content" source="../media/debug-application.png" alt-text="A screenshot showing the app running in VS Code with an exception." lightbox="../media/debug-application.png":::
 
     The app runs and will end with an exception because it's not running in a console.
 
@@ -90,7 +90,7 @@ There's code commented out that's ready to change the app to use threads to uplo
 
 1. In VS Code on the left, select **Explore**, then select **Program.cs**.
 
-    :::image type="content" source="../media/edit-program-code.png" alt-text="A screenshot of VS Code showing the Program.cs file.":::
+    :::image type="content" source="../media/edit-program-code.png" alt-text="A screenshot of VS Code showing the Program.cs file." lightbox="../media/edit-program-code.png":::
 
 1. Comment out lines 38 and 39.
 
@@ -115,14 +115,14 @@ There's code commented out that's ready to change the app to use threads to uplo
 
     The code that controls the batch size and number of threads is `await ExponentialBackoff.IndexDataAsync(searchClient, hotels, 1000, 8)`. The batch size is 1000 and the threads are eight.
 
-    :::image type="content" source="../media/thread-code-ready.png" alt-text="A screenshot showing all the edited code.":::
+    :::image type="content" source="../media/thread-code-ready.png" alt-text="A screenshot showing all the edited code." lightbox="../media/thread-code-ready.png":::
 
     Your code should look like the above.
 
-1. Save your changes, press <kbd>CTRL</kbd>+<kbd>S</kbd>.
-1. Run the app without debugging, press <kbd>CTRL</kbd>+<kbd>F5</kbd>.
+1. Save your changes, press **CTRL**+**S**.
+1. Run the app without debugging, press **CTRL**+**F5**.
 
-    :::image type="content" source="../media/upload-hundred-thousand-documents.png" alt-text="A screenshot showing the completed messages in the console.":::
+    :::image type="content" source="../media/upload-hundred-thousand-documents.png" alt-text="A screenshot showing the completed messages in the console." lightbox="../media/upload-hundred-thousand-documents.png":::
 
     The app will start eight threads, and then as each thread finishes writing a new message to the console:
 
@@ -160,7 +160,7 @@ Explore the code in the `ExponentialBackoffAsync` to see how the code implements
 
 You can search and verify that the documents have been added to the index in the Azure portal.
 
-:::image type="content" source="../media/check-search-service-index.png" alt-text="A screenshot showing the search index with 100000 documents.":::
+:::image type="content" source="../media/check-search-service-index.png" alt-text="A screenshot showing the search index with 100000 documents." lightbox="../media/check-search-service-index.png":::
 
 ### Delete exercise resources
 

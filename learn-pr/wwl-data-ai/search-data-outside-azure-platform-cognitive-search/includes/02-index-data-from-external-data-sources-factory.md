@@ -51,7 +51,7 @@ Create an Azure Cognitive Search service and an index to store this information 
 
 Create an index and add these fields and properties:
 
-:::image type="content" source="../media/search-index-fields.png" alt-text="A screenshot of the search index field definitions.":::
+:::image type="content" source="../media/search-index-fields.png" alt-text="A screenshot of the search index field definitions." lightbox="../media/search-index-fields.png":::
 
 At the moment you have to create the index first, as ADF can't create indexes.
 
@@ -59,7 +59,7 @@ At the moment you have to create the index first, as ADF can't create indexes.
 
 Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azure subscription and data factory name. 
 
-:::image type="content" source="../media/create-ingestion-pipeline.png" alt-text="A screenshot of Azure Data Factory and selecting ingest.":::
+:::image type="content" source="../media/create-ingestion-pipeline.png" alt-text="A screenshot of Azure Data Factory and selecting ingest." lightbox="../media/create-ingestion-pipeline.png":::
 
 1. Select **Ingest**.
 1. Select **Next**.
@@ -67,7 +67,7 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
     > [!NOTE]
     > You can choose to schedule the pipeline if your data is changing and you need to keep your index up-to-date. For this example, you'll import the data once.
 
-    :::image type="content" source="../media/create-http-linked-service.png" alt-text="A screenshot showing creating an HTTP linked service.":::
+    :::image type="content" source="../media/create-http-linked-service.png" alt-text="A screenshot showing creating an HTTP linked service." lightbox="../media/create-http-linked-service.png":::
 
 #### Create the source linked service
 
@@ -79,12 +79,12 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 1. Select **Create**.
 1. Select **Next**.
 
-    :::image type="content" source="../media/copy-data-configuration.png" alt-text="A screenshot of the configuration page of the lined service.":::
+    :::image type="content" source="../media/copy-data-configuration.png" alt-text="A screenshot of the configuration page of the lined service." lightbox="../media/copy-data-configuration.png":::
 
 1. In **File format**, select **JSON**.
 1. Select **Next**.
 
-    :::image type="content" source="../media/create-search-linked-service.png" alt-text="A screenshot showing creating a linked service to cognitive search.":::
+    :::image type="content" source="../media/create-search-linked-service.png" alt-text="A screenshot showing creating a linked service to cognitive search." lightbox="../media/create-search-linked-service.png":::
 
 #### Create the target linked service
 
@@ -99,7 +99,7 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 
 1. Select **Next**.
 
-    :::image type="content" source="../media/update-schema-mapping.png" alt-text="A screenshot of the schema mapping pane.":::
+    :::image type="content" source="../media/update-schema-mapping.png" alt-text="A screenshot of the schema mapping pane." lightbox="../media/update-schema-mapping.png":::
 
 1. If you created an index with field names that match the JSON attributes ADF will automatically map the JSON to the field in your search index.
 1. In the above example, three fields in the JSON document need mapping to fields in the index.
@@ -111,13 +111,13 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 
 1. On the **Summary** pane, select **Next**.
 
-    :::image type="content" source="../media/deployment-complete.png" alt-text="A screenshot showing the pipeline deployment complete.":::
+    :::image type="content" source="../media/deployment-complete.png" alt-text="A screenshot showing the pipeline deployment complete." lightbox="../media/deployment-complete.png":::
 
 1. Once the pipeline has been validated and deployed, select **Finish**.
 
 The pipeline has been deployed and run. The JSON document will have been added to your search index. You can use the Azure portal and run a search in the search explorer. You should see the imported JSON data.
 
-:::image type="content" source="../media/view-search-index-results.png" alt-text="A screenshot of the JSON data in the search index.":::
+:::image type="content" source="../media/view-search-index-results.png" alt-text="A screenshot of the JSON data in the search index." lightbox="../media/view-search-index-results.png":::
 
 Following these steps you've seen how you can push data into an index. The pipeline you've created by default merges updates into the index. If you amended the JSON data and rerun the pipeline, the search index would be updated. You can change the write behavior to upload only if you want the data to be replaced each time you run your pipeline. 
 
