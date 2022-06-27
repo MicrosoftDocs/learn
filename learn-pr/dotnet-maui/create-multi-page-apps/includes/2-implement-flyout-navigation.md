@@ -20,15 +20,38 @@ You use the `FlyoutItem` class to implement flyout navigation in .NET MAUI. `Fly
 
 Navigation with a flyout in .NET MAUI occurs when a `FlyoutItem` item is tapped. The `FlyoutItem` will automatically switch what's displayed in your app. You specify what gets displayed when a `FlyoutItem` gets tapped by setting its `ShellContent` property. That property will point to a page in your application.
 
-The `FlyoutItem` needs to be hosted in a `Shell` page, which serves as your application's main page.
+The `FlyoutItem` needs to be hosted in a `Shell` page, which serves as your application's main page. And you can have as many `FlyoutItem`s as you'd like.
 
-And you can have as many `FlyoutItem`s as you'd like.
+The following example creates a flyout containing two flyout items:
+
+```xaml
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:controls="clr-namespace:Xaminals.Controls"
+       xmlns:views="clr-namespace:Xaminals.Views"
+       x:Class="Xaminals.AppShell">
+    <FlyoutItem Title="Cats"
+                Icon="cat.png">
+       <Tab>
+           <ShellContent ContentTemplate="{DataTemplate views:CatsPage}" />
+       </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs"
+                Icon="dog.png">
+       <Tab>
+           <ShellContent ContentTemplate="{DataTemplate views:DogsPage}" />
+       </Tab>
+    </FlyoutItem>
+</Shell>
+```
 
 ## Create a flyout
 
-One or more flyout items can be added to the flyout, and each flyout item is represented by a `FlyoutItem` object. Each `FlyoutItem` object should be a child of the subclassed `Shell` object that serves as your app's `MainPage`. 
+One or more flyout items can be added to the flyout, and each flyout item is represented by a `FlyoutItem` object. Each `FlyoutItem` object should be a child of the subclassed `Shell` object that serves as your app's `MainPage`.
 
-The following example creates a flyout containing two flyout items:
+The `Shell` object has implicit conversion operators that enable the Shell visual hierarchy to be simplified. This is possible because a subclassed `Shell` object can only ever contain `FlyoutItem` objects or a `TabBar` object, which can only ever contain `Tab` objects, which can only ever contain `ShellContent` objects.
+
+These implicit conversion operators can be used to remove the `FlyoutItem` and `Tab` objects from the previous example:
 
 ```xaml
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -45,7 +68,7 @@ The following example creates a flyout containing two flyout items:
 </Shell>
 ```
 
-This will result in a flyout with two items. The `CatsPage` will be displayed by default when the app opens. Tapping on the second will display the `DogsPage`.
+This code will result in a flyout with two items. The `CatsPage` will be displayed by default when the app opens. Tapping on the second will display the `DogsPage`.
 
 :::image type="content" source="../media/2-two-page-app-flyout.png" alt-text="A screenshot showing a flyout with 2 options.":::
 

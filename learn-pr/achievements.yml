@@ -987,3 +987,13 @@ achievements:
   title: Create a user interface with decentralized apps
   summary: Learn about decentralized apps and how to build your own.
   iconUrl: /learn/achievements/reactors/blockchain-create-ui-decentralized-apps.svg
+- uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.badge
+  type: badge
+  title: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
+  summary: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
+  iconUrl: /learn/achievements/ingest-data-with-apache-spark-notebooks-in-azure-synapse-analytics.svg
+- uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.badge
+  type: badge
+  title: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
+  summary: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
+  iconUrl: /learn/achievements/transform-data-dataframes-apache-spark-pools-azure-synapse-analytics.svg
