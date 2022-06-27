@@ -1,4 +1,4 @@
-When building or deploying a cloud application, two of the biggest considerations are uptime (or availability) and the ability to handle demand (or scale).<br>
+When building or deploying a cloud application, two of the biggest considerations are uptime (or availability) and the ability to handle demand (or scale).
 
 ## High availability
 
@@ -8,7 +8,7 @@ When you’re architecting your solution, you’ll need to account for service a
 
 This short video describes Azure SLAs in more detail.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEA4z]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEA4z]
 
 ## Scalability
 
@@ -20,7 +20,7 @@ Scaling generally comes in two varieties: vertical and horizontal. Vertical scal
 
 ### Vertical scaling
 
-With vertical scaling, if you were developing an app and you needed more processing power, you could vertically scale up to add more CPUs or RAM to the virtual machine. Conversely, if you realized you had over-specified the needs, you could vertically scale down by lowering the CPU or RAM specifications.<br>
+With vertical scaling, if you were developing an app and you needed more processing power, you could vertically scale up to add more CPUs or RAM to the virtual machine. Conversely, if you realized you had over-specified the needs, you could vertically scale down by lowering the CPU or RAM specifications.
 
 ### Horizontal scaling
 

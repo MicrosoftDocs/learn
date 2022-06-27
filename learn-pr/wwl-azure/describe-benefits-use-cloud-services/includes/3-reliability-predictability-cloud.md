@@ -1,4 +1,4 @@
-Reliability and predictability are two crucial cloud benefits that help you develop solutions with confidence.<br>
+Reliability and predictability are two crucial cloud benefits that help you develop solutions with confidence.
 
 ## Reliability
 
