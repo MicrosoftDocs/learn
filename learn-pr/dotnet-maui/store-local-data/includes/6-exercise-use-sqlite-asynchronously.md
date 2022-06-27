@@ -8,7 +8,7 @@ The application works well, but if the database contains many rows the UI can be
 
 1. Change the **conn** property to a **SQLiteAsyncConnection**. and update the code in the **Init** method that initializes the connection.
 
-1. Replace the call to the synchronous **CreateTable** method with the asynchronous **CreateTableAsync** method. 
+1. Replace the call to the synchronous **CreateTable** method with the asynchronous **CreateTableAsync** method.
 
     The completed code should look like this:
 
@@ -30,6 +30,8 @@ The application works well, but if the database contains many rows the UI can be
 
 1. Modify the definition of the **AddNewPerson** method to be `async`. Change the return type of the method to `Task`.
 
+1. Add the `await` keyword to the **Init** method call because **Init** is now an `async` method.
+
 1. Update the **AddNewPerson** method to insert a new **Person** by using an asynchronous insert operation.
 
     ```csharp
@@ -40,7 +42,10 @@ The application works well, but if the database contains many rows the UI can be
        int result = 0;
        try
        {
-          //basic validation to ensure a name was entered
+          // Call Init()
+          await Init();
+
+          // basic validation to ensure a name was entered
           if (string.IsNullOrEmpty(name))
                 throw new Exception("Valid name required");
     
@@ -57,7 +62,9 @@ The application works well, but if the database contains many rows the UI can be
 
 ## Get all items from a table asynchronously
 
-1. Modify the definition of the **GetAllPeople**. This method should be `async` and return a `Task\<List\<Person>>` object.
+1. Modify the definition of the **GetAllPeople**. This method should be `async` and return a `Task<List<Person>>` object.
+
+1. Add the `await` keyword to the **Init** method call.
 
 1. Update the method to return the results by using an asynchronous call.
 
@@ -66,6 +73,7 @@ The application works well, but if the database contains many rows the UI can be
     {
        try
        {
+          await Init();
           return await conn.Table<Person>().ToListAsync();
        }
        catch (Exception ex)
