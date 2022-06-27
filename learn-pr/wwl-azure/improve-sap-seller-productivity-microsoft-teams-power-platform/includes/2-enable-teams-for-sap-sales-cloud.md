@@ -1,6 +1,6 @@
 Jenn, like other salespeople at Contoso, relies on Microsoft Teams to conduct meetings with colleagues and customers. Jenn wants to improve productivity by minimizing the time spent switching between SAP systems and her other apps.
 
-Andy knows that Microsoft and SAP worked together to integrate Teams across several SAP solutions:
+As the Contoso admin for both Microsoft and SAP solutions, Andy knows that Microsoft and SAP worked together to integrate Teams across several SAP solutions:
 
 - S/4HANA digital assistant – Access Teams capabilities inside your SAP S/4HANA system.
 - Work Zones – Access and share business information and apps while you chat with colleagues in Teams.
@@ -13,7 +13,7 @@ This module focuses on the Teams integration with SAP Sales Cloud.
 
 ## Enable SAP-Teams integration for an organization
 
-As the Contoso admin for both Microsoft and SAP solutions, Andy can enable the SAP-Teams integration with the following steps:
+Andy can enable the SAP-Teams integration with the following steps:
 
 1. Sign into SAP Sales Cloud as an administrator and navigate to Activity Management.
 1. Select the boxes next to the following scoping questions:
