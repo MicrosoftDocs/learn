@@ -2,7 +2,7 @@ Perhaps you've heard that Power BI can seamlessly handle trillions of rows of da
 
 This module introduces considerations for building enterprise scale, IT-driven solutions. You'll review data modeling best practices and Power BI premium features for working with large data.
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you will:
 - Describe the importance of building scalable data models
