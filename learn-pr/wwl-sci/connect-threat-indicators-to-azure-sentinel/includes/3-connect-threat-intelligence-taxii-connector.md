@@ -26,4 +26,4 @@ To view the connector page:
 
 The list of configure TAXII servers shows the currently connected TAXII servers and the last indicator received time. The ellipse at the end of the configured server provides the option to remove the server configuration.
 
-:::image type="content" source="../media/taxii-connectors.png" alt-text="The TAXII Connector page" lightbox="../media/taxii-connectors.png":::
+:::image type="content" source="../media/taxii-connectors.png" alt-text="Screenshot of the Sentinel T A X I I Connector page." lightbox="../media/taxii-connectors.png":::
