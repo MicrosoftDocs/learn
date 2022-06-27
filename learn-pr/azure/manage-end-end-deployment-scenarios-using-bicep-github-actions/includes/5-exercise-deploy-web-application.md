@@ -17,7 +17,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. In the *.github/workflows* folder, create a new file named *build.yml*.
 
-   :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the build dot Y M L file shown.":::
+   :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the build dot YML file shown.":::
 
 1. Add the following content to the *build.yml* workflow file:
 
@@ -101,7 +101,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
 
-   Notice that the job depends on the *deploy* job by using the `needs` keyword. This ensure the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the *deploy* job.
+   Notice that the job depends on the *deploy* job by using the `needs` keyword. This ensures the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the *deploy* job.
 
    Also, notice that this job includes steps to download the workflow artifacts and to sign in to Azure. Each job runs on its own runner, so it needs to be self-contained.
 
@@ -157,6 +157,6 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. Select the **Run smoke tests** step to view the associated section of the workflow log:
 
-   :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of GitHub showing the workflow run log, with the output of the smoke test displayed. The J S O N health test result is highlighted.":::
+   :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of GitHub showing the workflow run log, with the output of the smoke test displayed. The JSON health test result is highlighted.":::
 
    Notice that the workflow log indicates the website and configuration isn't healthy. There's a problem with the application's communication with Azure SQL Database. You haven't yet deployed or configured a database, which is why the website can't access it. You'll fix this soon.
