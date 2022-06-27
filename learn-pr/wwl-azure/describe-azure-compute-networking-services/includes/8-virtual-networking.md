@@ -60,4 +60,4 @@ You can link virtual networks together by using virtual network peering. Peering
 
 User-defined routes (UDR) allows you to control the routing tables between subnets within a virtual network or between virtual networks. This allows for greater control over network traffic flow.
 
-:::image type="content" source="../media/local-or-remote-gateway-in-peered-virual-network-f86e2725.png" alt-text="Illustration of a local or remote gateway in peered virtual network.":::
+:::image type="content" source="../media/local-remote-gateway-peered-virual-network-9323c425.png" alt-text="Illustration of a local or remote gateway in peered virtual network.":::
