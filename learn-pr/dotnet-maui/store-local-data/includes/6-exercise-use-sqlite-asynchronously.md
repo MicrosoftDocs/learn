@@ -62,7 +62,7 @@ The application works well, but if the database contains many rows the UI can be
 
 ## Get all items from a table asynchronously
 
-1. Modify the definition of the **GetAllPeople**. This method should be `async` and return a `Task\<List\<Person>>` object.
+1. Modify the definition of the **GetAllPeople**. This method should be `async` and return a `Task<List<Person>>` object.
 
 1. Add the `await` keyword to the **Init** method call.
 
