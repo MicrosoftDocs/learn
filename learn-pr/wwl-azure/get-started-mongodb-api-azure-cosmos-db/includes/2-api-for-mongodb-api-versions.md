@@ -10,7 +10,8 @@ By adhering to the MongoDB wire protocol, you should be able to use any client d
 
 Functions utilizing supported server commands are compatible with the Azure Cosmos DB API for MongoDB.
 
-[!NOTE] ***To take advantage of better data compression to save on query and storage costs, we recommend using versions 4.0+.***
+> [!NOTE] 
+> ***To take advantage of better data compression to save on query and storage costs, we recommend using versions 4.0+.***
 
 [/mongodb-wire-protocol/]: https://www.mongodb.com/docs/manual/reference/mongodb-wire-protocol/
 [/docs/drivers/]: https://www.mongodb.com/docs/drivers/

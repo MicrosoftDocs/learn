@@ -25,11 +25,13 @@ One way of creating our Azure Cosmos DB account and its elements, is using the A
     - **Limit total account throughput** - Leave *unchecked* for this example.
     - **Version** - Select *4.0*.
 
-        [!NOTE] To take better advantage of the supported features, we recommend that you use versions 3.6+ whenever possible.
+    > [!NOTE] 
+    > To take better advantage of the supported features, we recommend that you use versions 3.6+ whenever possible.
 
 1. Select **Review + Create**, and on a successful validation, select **Create**.
 
-[!NOTE] It can take several minutes to create your Azure Cosmos DB account.
+> [!NOTE] 
+> It can take several minutes to create your Azure Cosmos DB account.
 
 [![Diagram showing the Create Azure Cosmos DB Account - Azure Cosmos DB API for MongoDB creation page](../media/3-create-azure-cosmos-db-account-mongodb.png)](../media/3-create-azure-cosmos-db-account-mongodb.png#lightbox)
 

@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. While autoscale will allow you to set a limit on the RUs used and would scale up to that number, it still will at least charge you for the minimum RUs regardless if you use them or not."
     - content: "Serverless."
       isCorrect: true
-      explanation: "Correct. With Serverless, you're only charged per operation, and don't pay for the database when you don't use it.."
+      explanation: "Correct. With Serverless, you're only charged per operation, and don't pay for the database when you don't use it."

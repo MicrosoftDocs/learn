@@ -48,7 +48,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
 
 ### Add the code to create the databases, collection and document to the App.js file
 
-It's now time to add our JavaScript code to create a Database, a Collection and add an document to the collection.
+It's now time to add our JavaScript code to create a Database, a Collection and add a document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -99,7 +99,7 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
     
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add a document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```javascript
       // create a collection "documents" and add one document for "bread"
@@ -179,7 +179,7 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
     node App.js
     ```  
 
-1. This should return a similar result to the one below.  This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below.  This means that we created the database, collection and added a document to it.
 
     ```json
     {
@@ -329,7 +329,7 @@ Let's create some code that will allow us to create a collection and define its 
     node App.js
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added a document to it.
 
     ```json
     {
@@ -394,7 +394,7 @@ If you haven't already prepared the environment and the Azure Cosmos DB account 
 
 ### Add the code to create the databases, collection and document to the App.java file
 
-It's now time to add our Java code to create a Database, a Collection and add an document to the collection.
+It's now time to add our Java code to create a Database, a Collection and add a document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -445,7 +445,7 @@ It's now time to add our Java code to create a Database, a Collection and add an
     
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add a document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```java
                 // create a collection "documents" and add one document for "bread" 
@@ -537,7 +537,7 @@ It's now time to add our Java code to create a Database, a Collection and add an
     mvn clean compile exec:java
     ```  
 
-1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **ProductId = 1** query in our code.  This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **ProductId = 1** query in our code.  This means that we created the database, collection and added a document to it.
 
     ```json
     INFO: Opened connection [connectionId{localValue:3, serverValue:74678510}] to learn-account-cosmos-665601-westus.mongo.cosmos.azure.com:10255
@@ -718,7 +718,7 @@ Let's create some code that will allow us to create a collection and define its 
     mvn clean compile exec:java
     ```  
 
-1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **EmployeeId = 1** query in our code.  This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below. As we mentioned at the beginning of this exercise, we're using *Maven* to build and compile this app.  You'll notice that this output is very chatty, this is normal since this output is usually piped to a log file. However towards the end, you should see this *INFO* message below with the JSON results of our **EmployeeId = 1** query in our code.  This means that we created the database, collection and added a document to it.
 
     ```json
     INFO: Opened connection [connectionId{localValue:3, serverValue:2080122971}] to learn-account-cosmos-845083734-westus.mongo.cosmos.azure.com:10255
@@ -777,7 +777,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
 
 ### Add the code to create the databases, collection and document to the App.py file
 
-It's now time to add our Python code to create a Database, a Collection and add an document to the collection.
+It's now time to add our Python code to create a Database, a Collection and add a document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -818,7 +818,7 @@ It's now time to add our Python code to create a Database, a Collection and add 
         
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add a document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```python
         # create a collection "products" and add one document for "bread"
@@ -889,7 +889,7 @@ It's now time to add our Python code to create a Database, a Collection and add 
     python App.py
     ```  
 
-1. This should return a similar result to the one below.  This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below.  This means that we created the database, collection and added a document to it.
 
     ```json
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'ProductId': 1, 'name': 'bread'}
@@ -1013,7 +1013,7 @@ Let's create some code that will allow us to create a collection and define its 
     python App.py
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added a document to it.
 
     ```json
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'EmployeeId': 1, 'email': 'Marcos@fabrikan.com', 'name': 'Marcos'}
@@ -1072,7 +1072,7 @@ If you haven't already prepared the environment and the Azure Cosmos DB account 
 
 ### Add the code to create the databases, collection and document to the app.cs file
 
-It's now time to add our C# code to create a Database, a Collection and add an document to the collection.
+It's now time to add our C# code to create a Database, a Collection and add a document to the collection.
 
 1. In not already opened, open the Azure Cloud Shell.
 
@@ -1125,7 +1125,7 @@ It's now time to add our C# code to create a Database, a Collection and add an d
     
     ```
 
-1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add an document to the collection) or by using extension commands. Add the following to the script in the editor.
+1. Next, we'll connect to the **documents** collection if it already exists, and then adds one document to the collection. Note that if the collection doesn't exist this code will only create the collection if it also performs an operation on that collection in the same connection (for example, like add a document to the collection) or by using extension commands. Add the following to the script in the editor.
 
     ```csharp
         // create a collection "products" and add one document for "bread" 
@@ -1198,7 +1198,7 @@ It's now time to add our C# code to create a Database, a Collection and add an d
     dotnet run
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added a document to it.
 
     ```json
     Id: 62affed8147b5206db146298, ProductId: 1, name: 'bread'
@@ -1348,7 +1348,7 @@ Let's create some code that will allow us to create a collection and define its 
     dotnet run
     ```  
 
-1. This should return a similar result to the one below. This means that we created the database, collection and added an document to it.
+1. This should return a similar result to the one below. This means that we created the database, collection and added a document to it.
 
     ```json
     Id: 62affed8147b5206db146298, EmployeeId: 1, email: 'Marcos@fabrikam.com', name: 'Marcos'

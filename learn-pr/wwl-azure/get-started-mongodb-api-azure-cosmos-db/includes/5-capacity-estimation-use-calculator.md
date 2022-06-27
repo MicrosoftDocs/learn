@@ -35,7 +35,8 @@ Let's review the diffent workload parameters and the values to input.
 
 Once you select **Calculate**, the **Cost Estimate** tab will show the total cost for storage and provisioned throughput.  Notice that by default it will show you the **EST. THROUGHPUT REQUIRED**, but you can select **Show Details** to see the estimated cost of the different types of CRUD and query requests.
 
-[!TIP] Don't forget to select **Calculate** again if you change any of the parameters to get a new estimation.
+> [!TIP] 
+> Don't forget to select **Calculate** again if you change any of the parameters to get a new estimation.
 
 ### Advanced mode
 
@@ -74,9 +75,11 @@ Once you signed in, you'll notice a more detailed set of parameters than the Bas
 
 Once you select **Calculate**, the **Cost Estimate** tab will show the total cost for storage and provisioned throughput.  Notice that by default it will show you the **EST. THROUGHPUT REQUIRED**, but you can select **Show Details** to see the estimated cost of the different types of CRUD and query requests.
 
-[!TIP] Don't forget to select **Calculate** again if you change any of the parameters to get a new estimation.
+> [!TIP] 
+> Don't forget to select **Calculate** again if you change any of the parameters to get a new estimation.
 
-[!NOTE] All prices are shown in US dollars. Refer to the [Azure Cosmos DB pricing page][/pricing/details/cosmos-db/] to see all rates by region.
+> [!NOTE] 
+> All prices are shown in US dollars. Refer to the [Azure Cosmos DB pricing page][/pricing/details/cosmos-db/] to see all rates by region.
 
 [/capacitycalculator/]: https://cosmos.azure.com/capacitycalculator/
 [/azure/cosmos-db/consistency-levels]: https://docs.microsoft.com/azure/cosmos-db/consistency-levels
