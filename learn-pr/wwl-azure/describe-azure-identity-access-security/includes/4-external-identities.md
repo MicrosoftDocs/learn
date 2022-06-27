@@ -2,7 +2,7 @@ An external identity is a person, device, service, etc. that is outside your org
 
 External identities may sound similar to single sign-on. With External Identities, external users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD or Azure AD B2C to keep your resources protected.
 
-:::image type="content" source="../media/azure-ad-external-ids-c9520f6b.png" alt-text="Illustration showing B two B collaborators accessing your tenant and B two C collaborators accessing the AD B two C tennant.":::
+:::image type="content" source="../media/azure-active-directory-external-identities-5a892021.png" alt-text="Illustration showing B two B collaborators accessing your tenant and B two C collaborators accessing the AD B two C tennant.":::
 
 
 The following capabilities make up External Identities:
