@@ -2,23 +2,23 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
   title: Monitor and maintain Azure Active Directory
-  description: "Monitor and maintain Azure Active Directory"
-  ms.date: 02/07/2022
+  description: "Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor and maintain Azure Active Directory
-summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution.  Learn to monitor, troubleshoot, and analyze sign in data.
+summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 abstract: |
   By the end of this module, you'll be able to:
-  - Analyze and investigate sign in logs to troubleshoot access issues
-  - Review and monitor Azure AD audit logs
-  - Enable and integrate Azure AD diagnostic logs with Log Analytics / Azure Sentinel
-  - Export sign in and audit logs to a third-party SIEM (security information and event management)
-  - Review Azure AD activity by using Log Analytics / Azure Sentinel, excluding KQL (kusto query language) use
-  - Analyze Azure Active Directory workbooks / reporting
-  - Configure notifications
+  *   Analyze and investigate sign in logs to troubleshoot access issues
+  *   Review and monitor Azure AD audit logs
+  *   Enable and integrate Azure AD diagnostic logs with Log Analytics / Azure Sentinel
+  *   Export sign in and audit logs to a third-party SIEM (security information and event management)
+  *   Review Azure AD activity by using Log Analytics / Azure Sentinel, excluding KQL (Kusto Query Language) use
+  *   Analyze Azure Active Directory workbooks / reporting
+  *   Configure notifications
 prerequisites: |
   None
 iconUrl: /learn/achievements/monitor-and-maintain-azure-active-directory.svg
@@ -40,7 +40,7 @@ units:
 - learn.wwl.monitor-maintain-azure-active-directory.connect-data-from-azure-ad-to-azure-sentinel
 - learn.wwl.monitor-maintain-azure-active-directory.export-sign-audit-logs-to-third-party-siem
 - learn.wwl.monitor-maintain-azure-active-directory.analyze-azure-ad-workbooks-reporting
-- learn.wwl.monitor-maintain-azure-active-directory.configure-notifications
+- learn.wwl.monitor-maintain-azure-active-directory.monitor-security-posture-identity-secure-score
 - learn.wwl.monitor-maintain-azure-active-directory.knowledge-check
 - learn.wwl.monitor-maintain-azure-active-directory.summary-resources
 badge:
