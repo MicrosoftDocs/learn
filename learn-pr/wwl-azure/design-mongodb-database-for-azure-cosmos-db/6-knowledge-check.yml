@@ -35,7 +35,7 @@ quiz:
     - content: "When you read or update together."
       isCorrect: true
       explanation: "Correct. Data that's read or updated together is nearly always modeled as a single document. This is especially true because our objective for our NoSQL model is to reduce the number of requests to our database."
-  - content: "Your application needs to run a query that searches by **lastName** and **firstName**. What type of index should you create that will help return this result but is also the reduce filtering and indexing costs?"
+  - content: "Your application needs to run a query that searches by **lastName** and **firstName**. What type of index should you create that will help return this result but is also reduces the filtering and indexing costs?"
     choices:
     - content: "Wildcard."
       isCorrect: false
