@@ -183,11 +183,11 @@ There are five things the function app needs to know:
 
 The first is passed from your custom skillset in cognitive search to the function as input. The remaining four can be found in Language Studio.
 
-:::image type="content" source="../media/copy-prediction-endpoint.png" alt-text="A screenshot showing where to copy the prediction endpoint from.":::
+:::image type="content" source="../media/copy-prediction-endpoint.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
 
 The endpoint and deployment name is on the deploying a model pane.
 
-:::image type="content" source="../media/project-settings-primary-key.png" alt-text="A screenshot showing where to copy the primary key for language services from.":::
+:::image type="content" source="../media/project-settings-primary-key.png" alt-text="A screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
 
 The project name and primary key are on the project settings pane.
 
