@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.msgraph-extensibility
+metadata:
+  moduleType: standard
+  title: Add custom data to your app using extensions in Microsoft Graph
+  description: "Add custom properties to Microsoft Graph resources such as users and groups using extensions. Use the extensions to store lightweight data that can also be used to customize an app's functionality for example, through token customization."
+  ms.date: 24/06/2022
+  author: FaithOmbongi
+  ms.author: ombongifaith
+  ms.topic: interactive-tutorial
+  ms.prod: microsoft-graph
+title: Add custom data to your app using extensions in Microsoft Graph
+summary: "Add custom properties to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom properties and their associated data to build unique experiences for your applications."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Choose extension options for adding custom properties to Microsoft Graph
+    - Add, query, and update custom properties and their associated data through Microsoft Graph
+    - Use data in custom properties to extend your application
+prerequisites: |
+  - Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
+  - Basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations
+  - Basic knowledge of working with data in Azure AD and Microsoft 365 using Microsoft Graph
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+- microsoft-graph
+- azure-active-directory
+subjects:
+  - cloud-computing
+units:
+- learn.msgraph-extensibility.introduction
+- learn.msgraph-extensibility.msgraph-15onpremisesextensionattributes
+- learn.msgraph-extensibility.exercise-msgraph-15onpremisesextensionattributes
+- learn.msgraph-extensibility.learning-content
+- learn.msgraph-extensibility.exercise
+- learn.msgraph-extensibility.knowledge-check
+- learn.msgraph-extensibility.summary
+badge:
+  uid: learn.msgraph-extensibility.badge

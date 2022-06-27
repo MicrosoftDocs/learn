@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.msgraph-extensibility.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: introduction
+  description: "Explore Microsoft Graph extensions as a way to add custom properties to Microsoft Graph and store lightweight data that you can use to further customize your app and data needs."
+  ms.date: 24/06/2022
+  author: FaithOmbongi
+  ms.author: ombongifaith
+  ms.topic: interactive-tutorial
+  ms.prod: microsoft-graph
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
