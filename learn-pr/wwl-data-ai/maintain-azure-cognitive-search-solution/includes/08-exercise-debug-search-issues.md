@@ -57,7 +57,7 @@ The indexer will now begin to ingest 50 documents. However, if you check the sta
 
 1. Select **+ New Debug Session**.
 
-    :::image type="content" source="../media/connect-storage.png" alt-text="A screenshot connecting storage.":::
+    :::image type="content" source="../media/connect-storage.png" alt-text="A screenshot showing new de-bug session choosing a connection.":::
 
 1. Select **Choose an existing connection**, select the storage account.
 
@@ -85,7 +85,7 @@ The indexer will now begin to ingest 50 documents. However, if you check the sta
 
     :::image type="content" source="../media/language-detection-error.png" alt-text="A screenshot showing the Skill Settings for the Language Detection skill.":::
 
-    Looking at the skill settings JSON note the field being used to deduce the language is the `HotelId`.
+    Looking at the skill settings JSON, note the field being used to deduce the language is the `HotelId`.
 
     This field will be causing the error as the skill can't work out the language based on an ID.
 
@@ -93,7 +93,7 @@ The indexer will now begin to ingest 50 documents. However, if you check the sta
 
 1. Select **source** under inputs.
 
-    :::image type="content" source="../media/language-detection-fix.png" alt-text="A screenshot showing the fixed skill.":::
+    :::image type="content" source="../media/language-detection-fix.png" alt-text="A screenshot of the Language Detection SKill screen showing the fixed skill.":::
 
 1. Change the field to `/document/Description`.
 1. Select **Save**.

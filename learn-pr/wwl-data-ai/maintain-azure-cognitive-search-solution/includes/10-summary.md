@@ -1,4 +1,4 @@
-In this module, you learned how to run and maintain a successfull search solution by:
+In this module, you learned how to run and maintain a successful search solution by:
 
 - Managing the security of your search service and source data.
 - Optimizing the performance your indexes.

@@ -44,7 +44,7 @@ The default option when you create your ACS is key-based authentication. There a
 > [!IMPORTANT]
 > Role-based access control for data plane operations is currently in preview and under a [supplemental terms of use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/). The roles are only available in the Azure public cloud and using them can increase the latency of search requests.
  
-Role-based access control (RBAC) is provided by the Azure platform as a global system to control access to resources. You can use RBAC in ACS in the following ways:
+Role-based access control (RBAC) is provided by the Azure platform as a global system to control access to resources. You can use RBAC in Azure Cognitive Search in the following ways:
 
 - Roles can be granted access to administer the service
 - Define roles with access to create, load, and query indexes

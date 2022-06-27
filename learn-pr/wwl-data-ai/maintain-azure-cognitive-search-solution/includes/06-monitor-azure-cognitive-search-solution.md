@@ -40,7 +40,7 @@ For example, you could plot search latency against the percentage of throttled q
 
 ### Write Kusto queries against your search solutions logs
 
-Log Analytics allows you to write any Kusto query against captured log data. The easiest way to run these queries is by selecting Logs under the Monitor section. Logs opens Log Analytics with the quest window automatically scoped to your Azure Cognitive Search solution.
+Log Analytics allows you to write any Kusto query against captured log data. The easiest way to run these queries is by selecting **Logs** under the Monitor section. **Logs** opens Log Analytics with the quest window automatically scoped to your Azure Cognitive Search solution.
 
 :::image type="content" source="../media/azure-diagnostic-log-analytics-query.png" alt-text="A screenshot of a Log Analytics Kusto query against the AzureDiagnostic table." lightbox="../media/azure-diagnostic-log-analytics-query.png":::
 
