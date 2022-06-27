@@ -10,7 +10,7 @@ To view the connector page from Microsoft Sentinel:
 
 1. Select the Choose where to install the agent option to expand the instructions.
 
-:::image type="content" source="../media/syslog-connector.png" alt-text="Syslog connector page." lightbox="../media/syslog-connector.png":::
+:::image type="content" source="../media/syslog-connector.png" alt-text="Screenshot of the Syslog connector page." lightbox="../media/syslog-connector.png":::
 
 ## **For an Azure Linux VM:**
 
@@ -36,4 +36,4 @@ To install the agent on non-Azure Linux virtual hosts:
 
 1. The page also displays your Workspace ID, primary key, and secondary key.
 
-:::image type="content" source="../media/syslog-agent-management.png" alt-text="Agent Management for Linux hosts.":::
+:::image type="content" source="../media/syslog-agent-management.png" alt-text="Screenshot of Agent Management for Linux hosts.":::
