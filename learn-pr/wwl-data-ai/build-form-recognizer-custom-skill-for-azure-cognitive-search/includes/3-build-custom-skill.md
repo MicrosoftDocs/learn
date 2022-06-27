@@ -4,7 +4,8 @@ In your polling company, you've decided to implement a custom skill that sends c
 
 In this unit, you'll learn how to create and host a custom skill that calls Form Recognizer.
 
-> [!NOTE] The instructions in this unit assume that you've already deployed Form Recognizer and trained any custom model you want it to use.
+> [!NOTE] 
+> The instructions in this unit assume that you've already deployed Form Recognizer and trained any custom model you want it to use.
 
 ## Custom skill interface and requirements
 
@@ -25,7 +26,7 @@ From the input data, your code can formulate requests to send to Form Recognizer
 
 You can obtain both these values from the Form Recognizer resource in the Azure portal.
 
-You code should formulate a REST response that includes a JSON body. The Cognitive Search service expects this response to include:
+Your code should formulate a REST response that includes a JSON body. The Cognitive Search service expects this response to include:
 
 - `values`. A collection in which each item is one of the submitted forms.
   - `recordId`. Cognitive Search uses this value to match results to one of the input forms.
@@ -35,7 +36,7 @@ You code should formulate a REST response that includes a JSON body. The Cogniti
 
 ## Testing the custom skill
 
-During development, you'll need to test your custom skill by sending it REST requests and observing its responses. REST developers often use the **Postman** tool to help with this process, but any tool that helps you to formulate and submit REST requests with JSON message bodies can be used. You can also use the **Code + Test** tool in the Azure Portal to formulate and submit test REST requests.
+During development, you'll need to test your custom skill by sending it REST requests and observing its responses. REST developers often use the **Postman** tool to help with this process, but any tool that helps you to formulate and submit REST requests with JSON message bodies can be used. You can also use the **Code + Test** tool in the Azure portal to formulate and submit test REST requests.
 
 In Visual Studio, deploy the function locally by pressing <kbd>F5</kbd>. Then, you can submit requests to the function by sending them to this URL:
 

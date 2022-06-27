@@ -1,6 +1,6 @@
 If you integrate Cognitive Search with a Form Recognizer solution, you can enrich your index with fields that your Form Recognizer models are trained to extract.
 
-In your polling company, users can submit queries to your search service, which is built on Azure Cognitive services. However, users need to be able to locate a completed polling form by searching for a voter ID. You have already trained a Form Recognizer model to extract the voter ID from various polling forms. Now you want to ensure that the voter ID is included in your Cognitive Search index so users can locate the forms they need.
+In your polling company, users can submit queries to your search service, which is built on Azure Cognitive Services. However, users need to be able to locate a completed polling form by searching for a voter ID. You've already trained a Form Recognizer model to extract the voter ID from various polling forms. Now you want to ensure that the voter ID is included in your Cognitive Search index so users can locate the forms they need.
 
 In this unit, you'll learn how to integrate a Form Recognizer model by calling it from a Cognitive Search custom skill.
 
@@ -15,7 +15,7 @@ Azure Cognitive Search is a search service hosted in Azure that can index conten
 During the indexing process, Cognitive Search crawls your content, processes it, and creates a list of words that will be added to the index, together with their location. There are five stages to the indexing process:
 
 1. **Document Cracking.** In document cracking, the indexer opens the content files and extracts their content.
-1. **Field Mappings.** Fields such as titles, names, dates, and more are extracted from the content. You can use field mappings to control how they are stored in the index.
+1. **Field Mappings.** Fields such as titles, names, dates, and more are extracted from the content. You can use field mappings to control how they're stored in the index.
 1. **Skillset Execution.** In the optional skillset execution stage, custom AI processing is done on the content to enrich the final index.
 1. **Output field mappings.** If you're using a custom skillset, its output is mapped to index fields in this stage.
 1. **Push to index.** The results of the indexing process are stored in the index in Azure Cognitive Search.
@@ -48,9 +48,9 @@ PUT https://[service name].search.windows.net/skillsets/[skillset name]?api-vers
 In the above call:
 
 - [service name] is the name of your Cognitive Search service in Azure.
-- [skillset name] is a name for the skillset you are creating.
+- [skillset name] is a name for the skillset you're creating.
 - [api version] is the version of the Search REST API.
-- [admin key] is the API key for the Search service. You can obtain this key from the Azure Portal.
+- [admin key] is the API key for the Search service. You can obtain this key from the Azure portal.
 
 The JSON code that defines the skillset looks like this:
 
@@ -139,7 +139,7 @@ If you're writing a web service to integrate into a Cognitive Search indexing pi
 - The service must accept a JSON payload as an input and return a second JSON payload as its results.
 - The Output JSON should have a top-level entity named **values** that contains an array of objects.
 - The number of objects sent to the service should match the number of objects in the **values** entity.
-- Each object in **values** should include a unique **recordId** property, a **data** property with the returned information, a warnings property, and a errors property.
+- Each object in **values** should include a unique **recordId** property, a **data** property with the returned information, a warnings property, and an errors property.
 
 ## Integrate Cognitive Search and Form Recognizer
 

@@ -11,7 +11,7 @@ metadata:
 title: Build a Form Recognizer custom skill for Azure Cognitive Search
 summary: Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline.
 abstract: |
-  In this module, you will learn to:
+  In this module, you'll learn to:
   -	Describe how a custom skill can enrich content passed through an Azure Cognitive Search pipeline.
   -	Build a custom skill that calls an Azure Forms Analyzer solution to obtain data from forms.
 prerequisites: |
