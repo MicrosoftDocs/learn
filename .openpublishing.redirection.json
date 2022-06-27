@@ -14579,6 +14579,16 @@
       "source_path": "learn-pr/wwl-sci/mitigate-incidents-microsoft-365-defender/10-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/15-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/10-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/9-knowledge-check",
+      "redirect_document_id": true
     }
   ]
 }
