@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db
 metadata:
-  title: Design a MongoDB database for Azure Cosmos DB
+  title: Design an Azure Cosmos DB API for MongoDB database
   description: "Learn about indexes, shard keys, modeling and the aggregation pipeline."
   ms.date: 06/27/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design a MongoDB database for Azure Cosmos DB
+title: Design an Azure Cosmos DB API for MongoDB database
 summary: This module will introduce Azure Cosmos DB modeling, shard keys and indexing concepts. We will also discuss Azure Cosmos DB API for MongoDB collection's support for MongoDB aggregation pipelines.
 abstract: |
   - Modeling and sharded vs. dedicated.
@@ -27,11 +27,10 @@ subjects:
 - database
 units:
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db.introduction
-- learn.wwl.design-mongodb-database-for-azure-cosmos-db.modeling-partitioningsharding
+- learn.wwl.design-mongodb-database-for-azure-cosmos-db.models-and-shard-keys
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db.mongodb-api-indexes
-- learn.wwl.design-mongodb-database-for-azure-cosmos-db.querying-aggregation-pipeline
-- learn.wwl.design-mongodb-database-for-azure-cosmos-db.auth-security
-- learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-designing-api-for-mongodb-database
+- learn.wwl.design-mongodb-database-for-azure-cosmos-db.aggregation-pipeline-queries
+- learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-indexes-and-aggregation-pipelines
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db.knowledge-check
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db.summary
 badge:

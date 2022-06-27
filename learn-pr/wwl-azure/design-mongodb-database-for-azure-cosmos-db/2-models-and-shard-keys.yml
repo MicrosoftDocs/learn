@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.modeling-partitioningsharding
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.models-and-shard-keys
 title: Models and shard keys
 metadata:
   title: Models and shard keys
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-modeling-partitioningsharding.md)]
+  [!include[](includes/2-models-and-shard-keys.md)]

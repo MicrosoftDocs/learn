@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-designing-api-for-mongodb-database
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-indexes-and-aggregation-pipelines
 title: Exercise – Indexes and aggregation pipelines
 metadata:
   title: Exercise – Indexes and aggregation pipelines
@@ -13,5 +13,5 @@ azureSandbox: true
 labModal: false
 durationInMinutes: 25
 content: |
-  [!include[](includes/6-exercise-designing-api-for-mongodb-database.md)]
+  [!include[](includes/5-exercise-indexes-and-aggregation-pipelines.md)]
 interactive: bash

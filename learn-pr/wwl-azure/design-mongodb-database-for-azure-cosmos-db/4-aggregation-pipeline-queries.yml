@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.querying-aggregation-pipeline
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.aggregation-pipeline-queries
 title: Aggregation pipeline
 metadata:
   title: Aggregation pipeline
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-querying-aggregation-pipeline.md)]
+  [!include[](includes/4-aggregation-pipeline-queries.md)]
