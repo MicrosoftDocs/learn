@@ -8,6 +8,8 @@ The DMV [sys.dm_pdw_nodes_db_column_store_row_group_physical_stats](/sql/relatio
 
 There are two columns from `dm_pdw_nodes_db_column_store_row_group_physical_stats` worth looking into in detail. The `state_desc` column provides useful information on the state of a row group:
 
+For additional content on optimizing row group and clustered columnstore indexes review the content [Investigating Row Group Health](/learn/modules/optimize-data-warehouse-query-performance-azure-synapse-analytics/5-use-indexes-to-improve)
+
 Name         | Description
 -------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 `INVISIBLE`  | A rowgroup which is being compressed.
