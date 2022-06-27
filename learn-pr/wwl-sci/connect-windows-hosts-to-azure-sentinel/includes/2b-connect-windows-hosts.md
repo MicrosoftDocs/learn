@@ -10,7 +10,7 @@ The Security Events via Legacy Agent connector lets you stream all security even
 
 - None - No security or AppLocker events. (This setting is used to disable the connector.)
 
-:::image type="content" source="../media/security-events-connector.png" alt-text="Screen shot of the Security Events Connector Page." lightbox="../media/security-events-connector.png":::
+:::image type="content" source="../media/security-events-connector.png" alt-text="Screenshot of the Security Events Connector Page." lightbox="../media/security-events-connector.png":::
 
 ## Connect Azure Windows Virtual Machines
 
@@ -54,4 +54,4 @@ To view the connector page:
 
 1. Select **Apply Changes**.
 
-:::image type="content" source="../media/agent-download.png" alt-text="Log Analytics agent download." lightbox="../media/agent-download.png":::
+:::image type="content" source="../media/agent-download.png" alt-text="Screenshot of the Log Analytics agent download." lightbox="../media/agent-download.png":::

@@ -20,5 +20,5 @@ After connecting the Sysmon agent to the windows machine, perform the following 
 
 This connection can also be made from within Sentinel under **Settings > Agents Configuration**.  Once configured, the Sysmon events will be available in the Event table.  
 
-:::image type="content" source="../media/sysmon.png" alt-text="Screen shot of Log Analytics Sysmon configuration." lightbox="../media/sysmon.png":::
+:::image type="content" source="../media/sysmon.png" alt-text="Screenshot of Log Analytics Sysmon configuration." lightbox="../media/sysmon.png":::
 

@@ -14,9 +14,9 @@ The Windows Security Events via AMA Connector uses Data collection rules (DCRs) 
 
 Systems include:
 
-    - Windows servers installed on physical machines
-    - Windows servers installed on on-premises virtual machines
-    - Windows servers installed on virtual machines in non-Azure clouds
+- Windows servers installed on physical machines
+- Windows servers installed on on-premises virtual machines
+- Windows servers installed on virtual machines in non-Azure clouds
 
 ## Instructions
 
@@ -32,7 +32,8 @@ Systems include:
 
 1. On the Collect tab, choose the events you would like to collect: select All events or Custom to specify other logs or to filter events using XPath queries. Enter expressions in the box that evaluate to specific XML criteria for events to collect, then select Add. You can enter up to 20 expressions in a single box, and up to 100 boxes in a rule.
 
-> [!NOTE] The Windows Security Events connector offers two other pre-built event sets you can choose to collect: Common and Minimal. The Azure Monitor agent supports XPath queries for XPath version 1.0 only.
+    > [!NOTE] 
+    > The Windows Security Events connector offers two other pre-built event sets you can choose to collect: Common and Minimal. The Azure Monitor agent supports XPath queries for XPath version 1.0 only.
 
 1. When you've added all the filter expressions you want, select Next: Review + create.
 
