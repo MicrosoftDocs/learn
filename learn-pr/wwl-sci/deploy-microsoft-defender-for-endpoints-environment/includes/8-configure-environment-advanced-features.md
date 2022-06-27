@@ -1,10 +1,10 @@
-The Advanced Features area in the General Settings area provides many on/off switches for features within the product.  Some of these features you will learn about in later modules.  
+The Advanced Features area in the General Settings area provides many on/off switches for features within the product.  Some of these features you'll learn about in later modules.  
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Defender for Endpoint with.
 
 In the navigation pane, select Settings > Endpoints > Advanced features.
 Select the advanced feature you want to configure and toggle the setting between On and Off.
-Click Save preferences.
+Select Save preferences.
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
 ### Automated investigation
@@ -29,10 +29,10 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 ### Always remediate PUA
 Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted.
 
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection isn't configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
 
 ### Restrict correlation to within scoped device groups
-This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
+This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By enabling this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
 
 >[!NOTE]
 Changing this setting impacts future alert correlations only.
@@ -76,7 +76,7 @@ Tamper protection essentially locks Microsoft Defender Antivirus and prevents yo
 
 This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled.
 
-Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
+Leave tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
 ### Show user details
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:

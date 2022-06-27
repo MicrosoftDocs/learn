@@ -39,7 +39,7 @@ Supported Windows versions
 
 ## Microsoft Defender for Endpoint on macOS
 
-Microsoft Defender for Endpoint on macOS offers antivirus, endpoint detection and response (EDR), and vulnerability management capabilities for the three latest released versions of macOS. Customers can deploy and manage the solution through Microsoft Endpoint Manager and Jamf. Just like with Microsoft Office applications on macOS, Microsoft Auto Update is used to manage Microsoft Defender for Endpoint on Mac updates.
+Microsoft Defender for Endpoint on macOS offers antivirus, endpoint detection and response (EDR), and vulnerability management capabilities for the three latest released versions of macOS. Customers can deploy and manage the solution through Microsoft Endpoint Manager and Jamf. Just like with Microsoft Office applications on macOS, Microsoft AutoUpdate is used to manage Microsoft Defender for Endpoint on Mac updates.
 
 
 ## Microsoft Defender for Endpoint on Linux
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint on Linux offers preventative antivirus (AV), end
 
 ## Microsoft Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android is our mobile threat defense solution for devices running Android 6.0 and higher. Both Android Enterprise (Work Profile) and Device Administrator modes are supported. On Android, we offer web protection, which includes anti-phishing, blocking of unsafe connections, and setting of custom indicators. The solution scans for malware and potentially unwanted applications (PUA) and offers additional breach prevention capabilities through integration with Microsoft Endpoint Manager and Conditional Access.
+Microsoft Defender for Endpoint on Android is our mobile threat defense solution for devices running Android 6.0 and higher. Both Android Enterprise (Work Profile) and Device Administrator modes are supported. On Android, we offer web protection, which includes anti-phishing, blocking of unsafe connections, and setting of custom indicators. The solution scans for malware and potentially unwanted applications (PUA) and offers more breach prevention capabilities through integration with Microsoft Endpoint Manager and Conditional Access.
 
 
 ## Microsoft Defender for Endpoint on iOS
