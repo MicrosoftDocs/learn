@@ -6,11 +6,11 @@ Currently supported sources are the cloud detection engine of Defender for Endpo
 
 **Cloud detection engine**
 
-The Defender for Endpoint's cloud detection engine regularly scans collected data and tries to match the indicators you set. When there is a match, action will be taken according to the IoC settings you specified.
+The Defender for Endpoint's cloud detection engine regularly scans collected data and tries to match the indicators you set. When there's a match, action will be taken according to the IoC settings you specified.
 
 **Endpoint prevention engine**
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate), and a corresponding alert will be raised. Otherwise, if the Action is set to "Allow", Microsoft Defender AV will not detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate), and a corresponding alert will be raised. Otherwise, if the Action is set to "Allow", Microsoft Defender AV won't detect nor block the file from being run.
 
 **Automated investigation and remediation engine**
 
@@ -32,7 +32,7 @@ You can create an indicator for:
 
 - Certificates
 
-There is a limit of 15,000 indicators per tenant.
+There's a limit of 15,000 indicators per tenant.
 
 ## Manage indicators
 
@@ -62,7 +62,7 @@ Before you create indicators for files, you should understand the following prer
 
 - The Antimalware client version must be 4.18.1901.x or later.
 
-- It is supported on machines with Windows 10, version 1703 or later, Windows server 2016 and 2019.
+- It's supported on machines with Windows 10, version 1703 or later, Windows server 2016 and 2019.
 
 - To start blocking files, you first need to turn the Block or allow feature on in Settings.
 
@@ -83,7 +83,7 @@ Defender for Endpoint can block what Microsoft deems as malicious IPs/URLs throu
 
 The threat intelligence data set for this has been managed by Microsoft.
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.  Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.  Classless Inter-Domain Routing (CIDR) notation for IP addresses isn't supported.
 
 ### Prerequisites
 
@@ -97,7 +97,7 @@ You should understand the following prerequisites prior to creating indicators f
 
 - Ensure that *Custom network indicators* are enabled in Microsoft Defender Security Center > Settings > Advanced features. For more information, see Advanced features.
 
-Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge uses Network Protection to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios use Network Protection for inspection and enforcement:
+Only external IPs can be added to the indicator list. Indicators can't be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge uses Network Protection to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios use Network Protection for inspection and enforcement:
 
 - IP is supported for all three protocols
 
