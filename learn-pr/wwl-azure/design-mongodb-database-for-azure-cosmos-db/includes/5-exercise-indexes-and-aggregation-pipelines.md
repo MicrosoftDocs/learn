@@ -22,7 +22,8 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     bash init.sh
     ```
 
-    > &#128221; Note that this bash script will create the Azure Cosmos DB API for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+    > [!NOTE] 
+    > This bash script will create the Azure Cosmos DB API for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
 1. Since we'll be using the Azure portal with the Sandbox, don't forget to switch the directory on the Azure portal to use the Resource Group created by the Sandbox.
 
@@ -102,7 +103,8 @@ We'll use the Azure portal to run a few queries and review their impact.
 
 1. To add the index, just put the column name, **lastName** under the *Definition* column and select **Single Field** from the *Type* pulldown. Now select ***Save*** under the menu to create the index. You could also create multiple Single Field indexes at the same time.
 
-    > &#128221; Once you select ***Save*** you can scroll up on the Indexing Policy tab to see the progress of the index creation. It should take 5-20 seconds to create this index. Note that for very large indexes this could take from many minutes to hours.
+    > [!NOTE] 
+    > Once you select ***Save*** you can scroll up on the Indexing Policy tab to see the progress of the index creation. It should take 5-20 seconds to create this index. Note that for very large indexes this could take from many minutes to hours.
 
 1. Let's go back to the Shell, if the connection timed out, just open a New Shell.
 
