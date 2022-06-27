@@ -6,7 +6,7 @@ The following diagram displays the setup for a Linux VM in Azure.  The on-premis
 
 Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine.  The on-premises Syslog sources securely send events to a Linux VM.  The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
 
-:::image type="content" source="../media/learn-path5-02.png" alt-text="Diagram of the on-premises Syslog connector architecture":::
+:::image type="content" source="../media/learn-path5-02.png" alt-text="Diagram of the on-premises Syslog connector architecture.":::
 
 ## Security considerations
 

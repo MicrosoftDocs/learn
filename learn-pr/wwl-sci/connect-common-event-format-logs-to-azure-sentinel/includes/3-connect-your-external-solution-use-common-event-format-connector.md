@@ -26,7 +26,7 @@ To view the connector page:
 
 1. Copy the "sudo wget …"  command and run with elevated permissions on the dedicated Linux VM.
 
-:::image type="content" source="../media/common-event-format-connector.png" alt-text="Screen shot of the C E F Connector Page." lightbox="../media/common-event-format-connector.png":::
+:::image type="content" source="../media/common-event-format-connector.png" alt-text="Screenshot of the C E F Connector Page." lightbox="../media/common-event-format-connector.png":::
 
 ### Using the same machine to forward both plain Syslog and common even format messages
 
