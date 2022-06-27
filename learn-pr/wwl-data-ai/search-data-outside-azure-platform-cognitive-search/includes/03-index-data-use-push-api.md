@@ -6,7 +6,7 @@ Here, you'll see how to use the REST API effectively and explore the available o
 
 There are two supported REST APIs provided by cognitive search. Search and management APIs. This module focuses on the search REST APIs that provide operations on five features of search:
 
-|Feature     |Operatoins |
+|Feature     |Operations |
 |------------|------------|
 |Index       | Create, delete, update, and configure. |
 |Document    | Get, add, update, and delete. |
@@ -16,10 +16,10 @@ There are two supported REST APIs provided by cognitive search. Search and manag
 
 ### How to call the search REST API
 
-If you want to call the any of the search APIs you need to:
+If you want to call any of the search APIs you need to:
 
-1. Use the HTTPS endpoint (over the default port 443) provided by your search service, you must include an **api-version** in the URI.
-1. The request header must include an **api-key** attribute.
+- Use the HTTPS endpoint (over the default port 443) provided by your search service, you must include an **api-version** in the URI.
+- The request header must include an **api-key** attribute.
 
 To find the endpoint, api-version, and api-key go to the Azure portal.
 
@@ -29,7 +29,7 @@ In the portal, navigate to your search service, then select **Search explorer**.
 
 :::image type="content" source="../media/search-api-keys.png" alt-text="A screenshot of the keys section of a search service.":::
 
-To find the `api-key` on the left, select **Keys**. The primary or secondary admin key can be used if you are using the REST API to do more than just querying the index. If all you need is to search an index you can create and use query keys.
+To find the `api-key` on the left, select **Keys**. The primary or secondary admin key can be used if you're using the REST API to do more than just querying the index. If all you need is to search an index, you can create and use query keys.
 
 To add, update, or delete data in an index you need to use an admin key.
 
@@ -62,12 +62,12 @@ The JSON must be in this format:
 |Action  |Description  |
 |---------|---------|
 |**upload**   | Similar to an upsert, the document will be created or replaced.        |
-|**merge**     | Merge updates an existing document with the specified fields. This will fail if no document can be found.       |
+|**merge**     | Merge updates an existing document with the specified fields. Merge will fail if no document can be found.       |
 |**mergeOrUpload**     |  Merge updates an existing document with the specified fields, and uploads it if the document doesn't exist.        |
 |**delete**     | Deletes the whole document, you only need to specify the key_field_name.    |
 
 
-If your request is successful the API will return a 200 status code.
+If your request is successful, the API will return a 200 status code.
 
 > [!NOTE]
 > For a full list of all the response codes and error messages, see [Add, Update or Delete Documents (Azure Cognitive Search REST API)](/rest/api/searchservice/addupdate-or-delete-documents#response)
@@ -109,11 +109,11 @@ This example JSON uploads the customer record in the previous unit:
 }
 ```
 
-You can add as many documents in the value array as you want. However, for optimal performance consider batching the documents in your requests up to a maximum of 1,000 documents, or 16MB in total size.
+You can add as many documents in the value array as you want. However, for optimal performance consider batching the documents in your requests up to a maximum of 1,000 documents, or 16 MB in total size.
 
 ### Use .NET Core to index any data
 
-For best performance use the latest `Azure.Search.Document` client library, this is currently version 11. You can install the client library with NuGet:
+For best performance use the latest `Azure.Search.Document` client library, currently version 11. You can install the client library with NuGet:
 
 ```powershell
 dotnet add package Azure.Search.Documents --version 11.3.0
@@ -121,12 +121,12 @@ dotnet add package Azure.Search.Documents --version 11.3.0
 
 How your index performs is based on six key factors:
 
-1. The search service tier and how many replicas and partitions you've enabled.
-1. The complexity of the index schema. Reduce how many properties (searchable, facetable, sortable) each field has.
-1. The number of documents in each batch, the best size will depend on the index schema and the size of documents.
-1. How multithreaded your approach is.
-1. Handling errors and throttling. Use an exponential backoff retry strategy.
-1. Where your data resides, try to index your data as close to your search index. For example, run uploads from inside the Azure environment.
+- The search service tier and how many replicas and partitions you've enabled.
+- The complexity of the index schema. Reduce how many properties (searchable, facetable, sortable) each field has.
+- The number of documents in each batch, the best size will depend on the index schema and the size of documents.
+- How multithreaded your approach is.
+- Handling errors and throttling. Use an exponential backoff retry strategy.
+- Where your data resides, try to index your data as close to your search index. For example, run uploads from inside the Azure environment.
 
 #### Work out your optimal batch size
 
@@ -176,7 +176,7 @@ In the above example, the best batch size for throughput is **2.499** MB per sec
 
 #### Implement an exponential backoff retry strategy
 
-If your index starts to throttle requests due to overloads it responds with a 503 (request rejected due to heavy load) or 207 (some documents failed in the batch) status. You have to handle these responses and a good strategy is to backoff. This means pausing for some time before retrying your request again. If you increase this time for each error, you'll be exponentially backing off.
+If your index starts to throttle requests due to overloads, it responds with a 503 (request rejected due to heavy load) or 207 (some documents failed in the batch) status. You have to handle these responses and a good strategy is to backoff. Backing off means pausing for some time before retrying your request again. If you increase this time for each error, you'll be exponentially backing off.
 
 Look at this code:
 
@@ -234,13 +234,13 @@ do
 } while (true);
 ```
 
-The code keeps track of failed documents in a batch. If an error happens it waits for a delay and then doubles the delay for the next error.
+The code keeps track of failed documents in a batch. If an error happens, it waits for a delay and then doubles the delay for the next error.
 
-Finally, there's a maximum number of retries, if this is reached the program exists.
+Finally, there's a maximum number of retries, and if this maximum number is reached the program exists.
 
 #### Use threading to improve performance
 
-You can complete your document uploading app by combing the above backoff strategy with a threading approach. Here is some example code:
+You can complete your document uploading app by combing the above backoff strategy with a threading approach. Here's some example code:
 
 ```csharp
         public static async Task IndexDataAsync(SearchClient searchClient, List<Hotel> hotels, int batchSize, int numThreads)

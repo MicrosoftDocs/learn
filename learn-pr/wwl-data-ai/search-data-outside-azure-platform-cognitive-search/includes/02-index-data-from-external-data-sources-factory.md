@@ -106,7 +106,6 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 1. Map your fields, then select **Next**.
 1. On the **Settings** pane, in **Task name**, enter **jsonToSearchIndex**.
 1. Select **Next**.
-1. Select **Next**.
 
 #### Run the pipeline to push the data into the index
 

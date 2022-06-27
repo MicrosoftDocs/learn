@@ -1,4 +1,4 @@
-In this module you've seen how to push data into an Azure Cognitive Search index. Azure Data Factory has am Azure Search linked service that you can use as a sink in a copy data pipline. The search service supports REST requests to push data into indexes.
+In this module you've seen how to push data into an Azure Cognitive Search index. Azure Data Factory has am Azure Search linked service that you can use as a sink in a copy data pipeline. The search service supports REST requests to push data into indexes.
 
 You then used code to push data into an index using the best batch size and threading.
 

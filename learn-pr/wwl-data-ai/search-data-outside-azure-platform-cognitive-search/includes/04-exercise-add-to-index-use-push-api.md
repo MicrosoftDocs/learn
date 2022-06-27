@@ -9,12 +9,12 @@ In this exercise, you'll clone an existing C# solution and run it to work out th
 
 Install these tools to complete this exercise. You can still follow along with the steps without these tools.
 
-1. Install [VS Code](https://code.visualstudio.com/)
-1. Install [.NET Core 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1).
+- Install [VS Code](https://code.visualstudio.com/)
+- Install [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1).
 
 ### Set up your Azure resources
 
-To save you time, select this Azure ARM template to create resources you'll need later in the exercise.
+To save you time, select this Azure Resource Manager template to create resources you'll need later in the exercise.
 
 1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploy-azure.svg" alt="Deploy to Azure" data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create an Azure Cognitive Search service.
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
@@ -31,7 +31,7 @@ To save you time, select this Azure ARM template to create resources you'll need
     
 1. Select **Go to resource group** to see all the resources that you've created.
 
-    :::image type="content" source="../media/azure-resources-created.png" alt-text="A screenshot of the deployed resources." lightbox="../media/azure-resources-created.png":::
+    :::image type="content" source="../media/azure-resources-created.png" alt-text="A screenshot showing all of the deployed Azure resources." lightbox="../media/azure-resources-created.png":::
 
 ### Copy Azure Cognitive Search service REST API information
 
@@ -56,7 +56,7 @@ In your file explorer, open the optimize-data-indexing/v11 folder in VS Code. Fo
 
 This action will open the V11 folder in VS Code.
 
-:::image type="content" source="../media/setup-visual-studio-code-solution.png" alt-text="A screenshot of VS Code showing the set up notifications.":::
+:::image type="content" source="../media/setup-visual-studio-code-solution.png" alt-text="A screenshot of VS Code showing the setup notifications.":::
 
 1. In VS Code, in the notifications, select **Yes**, and then select **Restore**.
 
@@ -131,7 +131,7 @@ There's code commented out that's ready to change the app to use threads to uplo
     Sending a batch of 1000 docs starting with doc 57000...
     ```
 
-    After uploading 100,000 documents, the app writes a summary:
+    After 100,000 documents are uploaded, the app writes a summary:
 
     ```powershell
     Ended at: 6/17/2022 14:49:15 
