@@ -9,78 +9,21 @@ Language Studio groups its features into three areas:
 1. Extract information
 
 #### Classify text
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/analyze-sentiment-logo.svg" border="false":::
-        **Analyze sentiment**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/detect-language-demo-logo.svg" border="false":::
-        **Detect language**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/custom-text-classification-logo.svg" border="false":::
-        **Custom text classification***
-    :::column-end:::
-:::row-end:::
+
+|![icon](../media/analyze-sentiment-logo.svg)<br> **Analyze sentiment**|![icon](../media/detect-language-demo-logo.svg)<br> **Detect language**|![icon](../media/custom-text-classification-logo.svg)<br> **Custom text classification**|
+|--|--|--|
 
 #### Understand questions and conversational language
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/summarization-documents-logo.svg" border="false":::
-        **Summarize documents**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/answer-questions-logo.svg" border="false":::
-        **Answer questions**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/custom-question-answering-logo.svg" border="false":::
-        **Custom question answering***
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/custom-conversation-logo.svg" border="false":::
-        **Conversational language understanding***
-    :::column-end:::
-    :::column:::
 
-    :::column-end:::
-:::row-end:::
+|![icon](../media/summarization-documents-logo.svg)<br> **Summarize documents**|![icon](../media/answer-questions-logo.svg)<br> **Answer questions**|![icon](../media/custom-question-answering-logo.svg)<br> **Custom question answering**|
+|--|--|--|
+||![icon](../media/custom-conversation-logo.svg)<br> **Conversational language understanding**||
 
 #### Extract information
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/extract-pii-logo.svg" border="false":::
-        **Extract PII**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/extract-key-phrases-logo.svg" border="false":::
-        **Extract key phrases**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/find-linked-entities-logo.svg" border="false":::
-        **Find linked entities**        
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/extract-named-entities-logo.svg" border="false":::
-        **Extract named entries**
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/extract-health-logo.svg" border="false":::
-        **Extract health information**      
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/custom-entity-extraction-logo.svg" border="false":::
-        **Custom entity extraction***
-    :::column-end:::
 
-:::row-end:::
+|![icon](../media/extract-pii-logo.svg)<br> **Extract PII**|![icon](../media/extract-key-phrases-logo.svg)<br> **Extract key phrases**|![icon](../media/find-linked-entities-logo.svg)<br>**Find linked entities** |
+|--|--|--|
+|![icon](../media/extract-named-entities-logo.svg)<br> **Extract named entries**|![icon](../media/extract-health-logo.svg)<br> **Extract health information**|![icon](../media/custom-entity-extraction-logo.svg)<br> **Custom entity extraction**|
 
 Features can be either pre-configured or customizable. Pre-configured features can be tested straight away with a demo-like environment directly inside Language Studio. You can use them straight out of the box.
 
@@ -91,12 +34,12 @@ The other features with **\*** and green cogs in their logo need user customizat
 1. Go to the [Language Studio](https://aka.ms/languageStudio) and sign in with your Azure account.
 1. If you haven't got a language resource, create one.
 
-    :::image type="content" source="../media/select-analyze-sentiment.png" alt-text="A screenshot showing selecting analyze sentiment.":::
+    :::image type="content" source="../media/select-analyze-sentiment.png" alt-text="A screenshot showing selecting analyze sentiment." lightbox="../media/select-analyze-sentiment.png":::
 
 1. Scroll down to the classify text section, then select **Analyze sentiment and mine options**.
 1. Scroll down, then select **Sample 1**.
 
-    :::image type="content" source="../media/analyze-sentiment-demo-environment.png" alt-text="A screenshot of the demo-like testing environment.":::
+    :::image type="content" source="../media/analyze-sentiment-demo-environment.png" alt-text="A screenshot of the demo-like testing environment." lightbox="../media/analyze-sentiment-demo-environment.png":::
 
     Read the review text, how positive do you think it is?
 1. Select **I acknowledge that running this demo will incur usage and may incur costs to my Azure resource**.
@@ -132,7 +75,7 @@ Follow these steps in Language Studio.
 1. Select your language, then select **Next**.
 1. Select **Create**.
 
-    :::image type="content" source="../media/conversational-language-project.png" alt-text="A screenshot of the created conversational language project.":::
+    :::image type="content" source="../media/conversational-language-project.png" alt-text="A screenshot of the created conversational language project." lightbox="../media/conversational-language-project.png":::
 
 Language Studio guides you through the remaining steps. Follow the left navigation from top to bottom to:
 
@@ -143,7 +86,7 @@ Language Studio guides you through the remaining steps. Follow the left navigati
 1. Deploy your model. When you're happy with the performance of your model, you deploy it. This makes it available to be called as an API from your app and test it.
 1. Test your deployment. This option allows you to test your model in the same way as pre-configured models.
 
-    :::image type="content" source="../media/test-deployments.png" alt-text="A screenshot of testing a conversational language understanding model.":::
+    :::image type="content" source="../media/test-deployments.png" alt-text="A screenshot of testing a conversational language understanding model." lightbox="../media/test-deployments.png":::
 
 Whichever feature your use you end up with a model that you can use in apps to add language understanding.
 

@@ -25,7 +25,7 @@ To save you time, select this Azure ARM template to create resources you'll need
 
 ### Deploy a pre-built ARM template 
 
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json" rel="nofollow"><img src="../media/deploy-azure.svg" alt="Deploy to Azure." data-canonical-src="https://aka.ms/deploytoazurebutton"></a> select this link to create your starting resources.
+1. [![Deploy to Azure.](../media/deploy-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2Fmslearn-doc-intelligence%2Fmain%2Fcognitive-search%2Fazuredeploy.json) select this link to create your starting resources.
 
     :::image type="content" source="../media/deploy-azure-resources.png" alt-text="A screenshot of the options shown when deploying resources to Azure.":::
 
@@ -72,24 +72,24 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
 
 1. Download the [sample data](https://github.com/Azure-Samples/cognitive-services-sample-data-files/blob/master/language-service/Custom%20text%20classification/Custom%20multi%20classification%20-%20movies%20summary.zip) from GitHub, save it locally on your machine.
 
-    :::image type="content" source="../media/download-sample-data.png" alt-text="A screenshot showing where to select to download tha sample zip data.":::
+    :::image type="content" source="../media/download-sample-data.png" alt-text="A screenshot showing where to select to download tha sample zip data." lightbox="../media/download-sample-data.png":::
 1. Open the **Custom multi classification - movies summary.zip** file, and extract the folder containing all the files.
 
     > [!NOTE]
     > You use these files to train a model in Language Studio, and will also index all the files in Azure Cognitive Search.
 
-    :::image type="content" source="../media/select-storage-account.png" alt-text="A screenshot showing where to select the storage account from.":::
+    :::image type="content" source="../media/select-storage-account.png" alt-text="A screenshot showing where to select the storage account from." lightbox="../media/select-storage-account.png":::
 
 1. In the [Azure portal](https://portal.azure.com/), select **All resources**, then select the storage account you created, for example **acs18245str**.
 
-    :::image type="content" source="../media/select-azure-blob-storage.png" alt-text="A screenshot showing how to create a new storage container.":::
+    :::image type="content" source="../media/select-azure-blob-storage.png" alt-text="A screenshot showing how to create a new storage container." lightbox="../media/select-azure-blob-storage.png":::
 
 1. Select **Containers** from the left, then select **+ Containers**.
 1. In the **New container** pane, in **Name**, enter **language-studio-training-data**.
 1. In **Public access level**, choose **Container**.
 1. Select **Create**.
 
-    :::image type="content" source="../media/upload-files.png" alt-text="A screenshot of uploading files into the container.":::
+    :::image type="content" source="../media/upload-files.png" alt-text="A screenshot of uploading files into the container." lightbox="../media/upload-files.png":::
 
 1. Select the new container you just created, **language-studio-training-data**.
 1. Select **Upload** at the top of the pane.
@@ -251,17 +251,17 @@ You'll now create a Python function app that your cognitive search custom skills
 
 1. Select your Python interpreter, it should be version 3.8.
 1. The workspace will be updated, if you're asked to connect it to the workspace folder, select **Yes**.
-1. Press <kbd>F5</kbd> to debug the app.
+1. Press **F5** to debug the app.
 
     :::image type="content" source="../media/test-function-app.png" alt-text="A screenshot showing the function app running.":::
     
     If the app is running you should see a localhost URL that you can use for local testing.
 
-1. Stop debugging the app, press <kbd>SHIFT</kbd> + <kbd>F5</kbd>.
+1. Stop debugging the app, press **SHIFT** + **F5**.
 
 ### Deploy your local function app to Azure
 
-1. In Visual Studio Code, press <kbd>F1</kbd> to open the command palette.
+1. In Visual Studio Code, press **F1** to open the command palette.
 1. In the command palette, search for and select `Azure Functions: Create Function App in Azure...`.
 1. Enter a globally unique name for your function app, for example **acs13245str-function-app**.
 1. In **Select a runtime stack**, select **Python 3.8**.
@@ -330,7 +330,7 @@ The function app needs to be connected to your custom text classification model.
 
     The settings should look like above, with the values of your project.
  
-1. Press <kbd>CTRL</kbd>+<kbd>S</kbd> to save your **local.settings.json** changes.
+1. Press **CTRL**+**S** to save your **local.settings.json** changes.
 1. In the left navigation, select the **Azure** extension.
 1. Expand **Resources**, expand **Function App**, then right-click on **Application Settings**, select **Upload Local Settings**.
 
@@ -377,7 +377,7 @@ You need a place to store the enrichment returned by your new function app. Foll
 
 1. In the [Azure portal](https://portal.azure.com/), select **All resources**, then select the cognitive search service you created, for example **acs18245-search-service**.
 
-    :::image type="content" source="../media/select-search-index.png" alt-text="A screenshot of how to select a cognitive search index.":::
+    :::image type="content" source="../media/select-search-index.png" alt-text="A screenshot of how to select a cognitive search index." lightbox="../media/select-search-index.png":::
 
 1. On the **Overview** pane, select **Indexes**.
 1. Select **azurebob-index**.
@@ -425,7 +425,7 @@ You need a place to store the enrichment returned by your new function app. Foll
 
     Your index should now look like this.
 
-    :::image type="content" source="../media/edit-azure-blob-index-fields.png" alt-text="A screenshot of the edited index JSON.":::
+    :::image type="content" source="../media/edit-azure-blob-index-fields.png" alt-text="A screenshot of the edited index JSON." lightbox="../media/edit-azure-blob-index-fields.png":::
 
 1. Select **Save**.
 
@@ -435,7 +435,7 @@ The cognitive search index needs a way to have these new fields populated. Edit 
 
 1. At the top of the page, select the search service, for example **acs18245-search-service**.
 
-    :::image type="content" source="../media/select-custom-skillset.png" alt-text="A screenshot showing selecting the custom skillset.":::
+    :::image type="content" source="../media/select-custom-skillset.png" alt-text="A screenshot showing selecting the custom skillset." lightbox="../media/select-custom-skillset.png":::
 
 1. On the **Overview** pane, select **Skillsets**.
 1. Select **azureblob-skillset**.
@@ -492,7 +492,7 @@ You now have fields to store the enrichment, a skillset to call your function ap
 
 1. At the top of the page, select the search service, for example **acs18245-search-service**.
 
-    :::image type="content" source="../media/select-search-indexer.png" alt-text="A screenshot showing selecting the search indexer.":::
+    :::image type="content" source="../media/select-search-indexer.png" alt-text="A screenshot showing selecting the search indexer." lightbox="../media/select-search-indexer.png":::
 
 1. On the **Overview** pane, select **Indexers**.
 1. Select **azureblob-indexer**.
@@ -508,7 +508,7 @@ You now have fields to store the enrichment, a skillset to call your function ap
 
     The indexer JSON definition should now look like this:
 
-    :::image type="content" source="../media/add-output-fields-indexer.png" alt-text="A screenshot showing the edited JSON of an indexer with added output fields.":::
+    :::image type="content" source="../media/add-output-fields-indexer.png" alt-text="A screenshot showing the edited JSON of an indexer with added output fields." lightbox="../media/add-output-fields-indexer.png":::
 
 1. Select **Save**.
 1. Select **Reset**, then select **Yes**.
@@ -519,7 +519,7 @@ You now have fields to store the enrichment, a skillset to call your function ap
 1. Select **Execution history**.
 1. Check that the indexer has successfully run against the 210 documents.
 
-    :::image type="content" source="../media/check-indexer-results.png" alt-text="A screenshot showing the successful run of the indexer.":::
+    :::image type="content" source="../media/check-indexer-results.png" alt-text="A screenshot showing the successful run of the indexer." lightbox="../media/check-indexer-results.png":::
 
     You might need to select **Refresh** to update the status of the indexer.
 
@@ -527,12 +527,12 @@ You now have fields to store the enrichment, a skillset to call your function ap
 
 1. At the top of the page, select the search service, for example **acs18245-search-service**.
 
-    :::image type="content" source="../media/select-search-index.png" alt-text="A screenshot of how to select a cognitive search index.":::
+    :::image type="content" source="../media/select-search-index.png" alt-text="A screenshot of how to select a cognitive search index." lightbox="../media/select-search-index.png":::
 
 1. On the **Overview** pane, select **Indexes**.
 1. Select **azurebob-index**.
 
-    :::image type="content" source="../media/enriched-index.png" alt-text="A screenshot showing an enriched search index.":::
+    :::image type="content" source="../media/enriched-index.png" alt-text="A screenshot showing an enriched search index." lightbox="../media/enriched-index.png":::
 
 1. Select **Search**.
 1. Explore the search results.
@@ -545,6 +545,6 @@ Now that you've completed the exercise, delete all the resources you no longer n
 
 1. In the Azure portal, select **All resources**.
 
-    :::image type="content" source="../media/delete-resources.png" alt-text="A screenshot showing how to delete resources.":::
+    :::image type="content" source="../media/delete-resources.png" alt-text="A screenshot showing how to delete resources." lightbox="../media/delete-resources.png":::
 
 1. Select the resources you don't need, then select **Delete**.
