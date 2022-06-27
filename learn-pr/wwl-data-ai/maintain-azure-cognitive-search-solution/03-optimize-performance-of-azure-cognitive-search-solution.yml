@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.maintain-azure-cognitive-search-solution.optimize-performance-of-azure-cognitive-search-solution
+title: Optimize performance of an Azure Cognitive Search solution
+metadata:
+  title: Optimize performance of an Azure Cognitive Search solution
+  description: "Optimize performance of an Azure Cognitive Search solution"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/03-optimize-performance-of-azure-cognitive-search-solution.md)]
