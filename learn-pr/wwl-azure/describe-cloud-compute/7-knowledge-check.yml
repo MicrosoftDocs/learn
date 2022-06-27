@@ -39,7 +39,7 @@ quiz:
     - content: "Multi-cloud"
       isCorrect: false
       explanation: "The multi-cloud model leverages multiple public cloud providers to satisfy cloud needs."
-  - content: "According to the shared responsiblity model, which cloud service type places the most responsiblity on the customer?"
+  - content: "According to the shared responsibility model, which cloud service type places the most responsibility on the customer?"
     choices:
     - content: "Infrastructure as a Service (IaaS)"
       isCorrect: true
