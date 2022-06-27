@@ -49,7 +49,7 @@ If you have many subscriptions, you might need a way to efficiently manage acces
 
 You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
-:::image type="content" source="../media/management-groups-and-subscriptions-038e1eed.png" alt-text="Diagram showing an example of a management group hierarchy tree.":::
+:::image type="content" source="../media/management-groups-subscriptions-dfd5a108.png" alt-text="Diagram showing an example of a management group hierarchy tree.":::
 
 
 Some examples of how you could use management groups might be:<br>
