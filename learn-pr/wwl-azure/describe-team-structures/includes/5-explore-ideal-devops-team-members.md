@@ -23,13 +23,10 @@ This work requires various skills, including coaching, mentoring, teaching, and 
 There is more than one type of agile coach.
 
  -  Some coaches are technical experts who aim to show staff members how to apply specific concepts—for example, test-driven development and continuous integration or deployment.
-    
      -  These coaches might do peer programming sessions with staff members.
  -  Other coaches are focused on agile processes, determining requirements, and managing work activities.
-    
      -  They might help how to run effective stand-up and review meetings.
      -  Some coaches may themselves act as scrum masters.
-        
          -  They might mentor staff in how to fill these roles.
 
 Over time, though, team members need to develop an ability to mentor each other. Teams should aim to be self-organizing. Team members are often expected to learn as they work and to acquire skills from each other. To make it effective, though, the work itself needs to be done collaboratively, not by individuals working by themselves.

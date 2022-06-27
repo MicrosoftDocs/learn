@@ -47,7 +47,7 @@ There are several types of desserts you can create from the `IceCream` interface
     }
     ```
 
-1. Now, try implementing the `Sundae` interface in the `tooManyScoops` function. You should not see any errors in the function itself, but the call to the function in the next line generates an error. This is because it is expecting three required parameters. Fix the error by adding the `sauce` property to the function call.
+1. Now, try implementing the `Sundae` interface in the `tooManyScoops` function. You shouldn't see any errors in the function itself, but the call to the function in the next line generates an error. This is because it's expecting three required parameters. Fix the error by adding the `sauce` property to the function call.
 
     ```typescript
     function tooManyScoops(dessert: Sundae) {
