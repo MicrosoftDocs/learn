@@ -10,7 +10,7 @@ In this exercise, you'll create an Azure Cognitive Search solution, import some 
 
 Before you can begin using a Debug Session, you need to create an Azure Cognitive Search service. 
 
-1. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="../media/deploy-azure.svg" alt="Azure resource deploy button."/></a> select this button to deploy all the resources you need in the Azure portal.
+1. [![Azure resource deploy button.](../media/deploy-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-search-knowledge-mining%2Fmaster%2Fazuredeploy.json) select this button to deploy all the resources you need in the Azure portal.
 
     :::image type="content" source="../media/arm-template-deployment.png" alt-text="A screenshot of the arm deployment template with fields entered.":::
 
