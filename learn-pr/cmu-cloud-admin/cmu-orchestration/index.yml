@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cmu-orchestration
 metadata:
   title: Automate cloud resource management
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about how to automate cloud resource management with scripts and infrastructure-as-code tools like Terraform.
-  ms.date: 12/31/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ prerequisites: |
   - Be familiar with different organizational IT cost types like CapEx and OpEx
   - Understand how cloud resource provisioning works
 iconUrl: /learn/achievements/cmu-cloud-admin/cmu-orchestration.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -33,6 +34,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-admin.cmu-orchestration.0-introduction
 - learn.cmu-cloud-admin.cmu-orchestration.1-automation

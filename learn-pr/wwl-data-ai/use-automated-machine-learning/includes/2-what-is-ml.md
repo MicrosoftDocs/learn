@@ -1,7 +1,6 @@
 Machine learning is a technique that uses mathematics and statistics to create a model that can predict unknown values. 
 
-> [!div class="centered"]
-> ![Adventure Works cycle rental location, on a cloudy day in January](../media/adventureworks.png)
+![Illustration of Adventure Works cycle rental company on a cloudy summer day.](../media/adventureworks.png)
 
 For example, suppose *Adventure Works Cycles* is a business that rents cycles in a city. The business could use historic data to train a model that predicts daily rental demand in order to make sure sufficient staff and cycles are available.
 

@@ -28,6 +28,8 @@ products:
 - azure
 - azure-portal
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.create-cosmos-db-for-scale.1-introduction
 - learn.create-cosmos-db-for-scale.2-create-an-account

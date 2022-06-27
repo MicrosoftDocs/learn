@@ -3,7 +3,7 @@ uid: learn.github.manage-changes-pull-requests-github
 metadata:
   title: "Manage repository changes by using pull requests on GitHub"
   description: Learn how to manage changes to your repository source by using pull requests.
-  ms.date: 06/26/2020
+  ms.date: 05/12/2022
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -33,6 +33,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- process-workflow
 units:
 - learn.github.manage-changes-pull-requests-github.1-introduction
 - learn.github.manage-changes-pull-requests-github.2-what-are-pull-requests

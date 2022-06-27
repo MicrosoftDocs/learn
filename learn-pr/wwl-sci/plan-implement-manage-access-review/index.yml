@@ -2,14 +2,14 @@
 uid: learn.wwl.plan-implement-manage-access-review
 metadata:
   title: Plan, implement, and manage access review
-  description: "Plan, implement, and manage access review"
-  ms.date: 02/09/2022
+  description: "Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews."
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan, implement, and manage access review
-summary: Once identity is deployed, you will learn that proper governance is required. Using access reviews is necessary for a secure solution. Explore how to plan and implement access reviews.
+summary: Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews.
 abstract: |
   By the end of this module, you will be able to:
   - Plan for access reviews
@@ -29,12 +29,14 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.plan-implement-manage-access-review.introduction
 - learn.wwl.plan-implement-manage-access-review.plan-for-access-reviews
 - learn.wwl.plan-implement-manage-access-review.create-access-reviews-for-groups-apps
+- learn.wwl.plan-implement-manage-access-review.create-configure-access-review-programs
 - learn.wwl.plan-implement-manage-access-review.monitor-findings
-- learn.wwl.plan-implement-manage-access-review.manage-licenses-for-access-reviews
 - learn.wwl.plan-implement-manage-access-review.automate-management-tasks
 - learn.wwl.plan-implement-manage-access-review.configure-recurring-access-reviews
 - learn.wwl.plan-implement-manage-access-review.knowledge-check

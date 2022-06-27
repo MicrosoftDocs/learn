@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-work-git-for-enterprise-devops
 metadata:
-  title: 'AZ-400: Work with Git for enterprise DevOps'
-  description: 'AZ-400: Work with Git for enterprise DevOps'
-  ms.date: 03/18/2022
+  title: 'AZ-400: Development for enterprise DevOps'
+  description: 'AZ-400: Development for enterprise DevOps'
+  ms.date: 05/24/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'AZ-400: Work with Git for enterprise DevOps'
+title: 'AZ-400: Development for enterprise DevOps'
 prerequisites: |
   None
 summary: |
@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 modules:
 - learn.wwl.structure-your-git-repo
 - learn.wwl.manage-git-branches-workflows

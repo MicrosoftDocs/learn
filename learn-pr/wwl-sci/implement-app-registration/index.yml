@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-app-registration
 metadata:
   title: Implement app registration
-  description: "Implement app registration"
-  ms.date: 08/04/2021
+  description: "Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration."
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.implement-app-registration.grant-tenant-wide-admin-consent-to-application
 - learn.wwl.implement-app-registration.implement-application-authorization
 - learn.wwl.implement-app-registration.add-app-roles-to-application-receive-tokens
+- learn.wwl.implement-app-registration.manage-monitor-application-app-governance
 - learn.wwl.implement-app-registration.knowledge-check
 - learn.wwl.implement-app-registration.summary-resources
 badge:

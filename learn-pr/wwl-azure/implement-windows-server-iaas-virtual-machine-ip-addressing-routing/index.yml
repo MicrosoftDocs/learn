@@ -42,6 +42,10 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-computing
+- virtual-machine
+- networking
 units:
 - learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.introduction
 - learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.implement-virtual-network

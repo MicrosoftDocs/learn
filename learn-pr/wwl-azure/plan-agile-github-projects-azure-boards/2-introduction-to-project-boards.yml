@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-project-boards
+title: Introduction to GitHub Projects and Project boards
+metadata:
+  title: Introduction to GitHub Projects and Project boards
+  description: "Introduction to GitHub Projects and Project boards"
+  ms.date: 06/13/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-introduction-to-project-boards.md)]

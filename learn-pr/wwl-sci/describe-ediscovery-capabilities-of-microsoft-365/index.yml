@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
 metadata:
-  title: Describe the eDiscovery and audit capabilities of Microsoft 365
-  description: "Describe the eDiscovery and audit capabilities of Microsoft 365"
-  ms.date: 04/24/2022
+  title: Describe the eDiscovery and audit capabilities of Microsoft Purview
+  description: "Describe the eDiscovery and audit capabilities of Microsoft Purview"
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: Describe the eDiscovery and audit capabilities of Microsoft 365
-summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft 365 help organizations find relevant data quickly.
+title: Describe the eDiscovery and audit capabilities of Microsoft Purview
+summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft Purview help organizations find relevant data quickly.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the eDiscovery capabilities of Microsoft 365.
-  - Describe the auditing capabilities of Microsoft 365.
+  - Describe the eDiscovery capabilities of Microsoft Purview.
+  - Describe the auditing capabilities of Microsoft Purview.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- compliance
 units:
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.introduction
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-purpose-of-ediscovery

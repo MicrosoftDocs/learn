@@ -14,7 +14,7 @@ You should now be able to:
 
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise.
 
- -  [What is Azure Cost Management + Billing?](/azure/cost-management-billing/cost-management-billing-overview)
+ -  [What is Cost Management+ Billing?](/azure/cost-management-billing/cost-management-billing-overview)
  -  [Create an additional Azure subscription](/azure/cost-management-billing/manage/create-subscription)
  -  [Learn - Plan and manage your Azure costs (Sandbox)](/learn/modules/plan-manage-azure-costs/)
- -  [Learn - Introduction to analyzing costs and creating budgets with Azure Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
+ -  [Learn - Introduction to analyzing costs and creating budgets with Microsoft Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)

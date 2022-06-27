@@ -26,6 +26,8 @@ roles:
 products:
 - azure-purview
 - power-bi
+subjects:
+- infrastructure
 units:
 - learn.wwl.discover-trusted-data-use-azure-purview.introduction
 - learn.wwl.discover-trusted-data-use-azure-purview.search-browse-assets

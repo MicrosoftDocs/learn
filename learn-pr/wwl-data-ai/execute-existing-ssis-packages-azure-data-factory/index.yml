@@ -33,6 +33,10 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- cloud-computing
+- data-warehousing
+- data-analytics
 units:
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory.introduction
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory.describe-sql-server-integration-services

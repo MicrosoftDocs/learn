@@ -55,6 +55,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.distributed-programming.introduction.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.introduction.1-taxonomy-programs

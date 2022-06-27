@@ -5,8 +5,8 @@ metadata:
   description: "This *Space Jam: A New Legacy* - inspired learning path aims to equip you with data science, web development skills, and coding strategies to impact a game of basketball in real time, ensuring victory for the Tune Squad in their next game."
   brand: vs-code
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
@@ -56,6 +56,8 @@ products:
 - azure
 - azure-app-service-static
 - github
+subjects:
+- development-tools
 modules:
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings
 - learn.student-evangelism.optimize-basketball-player-rest-breaks

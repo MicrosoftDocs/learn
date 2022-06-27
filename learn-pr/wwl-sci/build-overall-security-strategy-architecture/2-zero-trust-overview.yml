@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-overall-security-strategy-architecture.zero-trust-overview
+title: Zero Trust overview
+metadata:
+  title: Zero Trust overview
+  description: "Zero Trust overview"
+  ms.date: 06/07/2022
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-zero-trust-overview.md)]

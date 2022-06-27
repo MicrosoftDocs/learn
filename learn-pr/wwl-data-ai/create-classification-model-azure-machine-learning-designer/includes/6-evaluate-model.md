@@ -3,7 +3,7 @@ The validation data you held back and used to score the model includes the known
 ## Add an Evaluate Model module
 
 1. Open the **Diabetes Training** pipeline you created in the previous unit if it's not already open.
-2. In the pane on the left, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Score Model** module, and connect the output of the **Score Model** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
+2. In the **Asset Library**, search for and place an **Evaluate Model** module to the canvas, under the **Score Model** module, and connect the output of the **Score Model** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
 > [!div class="centered"]
@@ -11,8 +11,9 @@ The validation data you held back and used to score the model includes the known
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
 5. Wait for the experiment run to finish.
-6. When the experiment run has finished, select the **Evaluate Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Evaluation results** section, use the **Preview Data** icon to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
-7. View the *confusion matrix* for the model, which is a tabulation of the predicted and actual value counts for each possible class. For a binary classification model like this one, where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **0** and **1**, similar to this:
+6. When the experiment run has finished, select **Job details**. You'll be directed to another window. 
+7. On the new window, right-click (Ctrl+click on a Mac) the **Evaluate Model** module on the canvas, and click on **Preview data**. Select **Evaluation results** to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
+8. Scroll down to view the *confusion matrix* for the model, which is a tabulation of the predicted and actual value counts for each possible class. For a binary classification model like this one, where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **0** and **1**, similar to this:
 
 > [!div class="centered"]
 > ![A confusion matrix showing actual and predicted value counts for each class](../media/confusion-matrix.png)

@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-monitor
+subjects:
+- it-management-monitoring
 modules:
 - learn.azure.intro-to-azure-monitor
 - learn.design-monitoring-strategy-on-azure

@@ -75,7 +75,7 @@ The Azure fundamentals learning path series can help you prepare for [Exam AZ-90
 :::row-end:::
 :::row:::
   :::column:::
-    Describe Azure cost management and Service Level Agreements
+    Describe Microsoft cost management and Service Level Agreements
   :::column-end:::
   :::column:::
     10-15%

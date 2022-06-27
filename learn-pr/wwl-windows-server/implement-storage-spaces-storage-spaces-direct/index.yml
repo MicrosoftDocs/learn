@@ -31,6 +31,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- storage
+- devops
 units:
 - learn.wwl.implement-storage-spaces-storage-spaces-direct.introduction
 - learn.wwl.implement-storage-spaces-storage-spaces-direct.define-architecture-its-components

@@ -30,6 +30,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- iot
 units:
 - learn.iot.threadx-event-flags-group-sync-threads.introduction
 - learn.iot.threadx-event-flags-group-sync-threads.overview
@@ -42,5 +44,4 @@ units:
 - learn.iot.threadx-event-flags-group-sync-threads.knowledge-check
 - learn.iot.threadx-event-flags-group-sync-threads.summary
 badge:
-  uid: learn.iot.threadx-event-flags-group-sync-threads.badge 
-
+  uid: learn.iot.threadx-event-flags-group-sync-threads.badge

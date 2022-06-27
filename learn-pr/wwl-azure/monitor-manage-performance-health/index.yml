@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- infrastructure
 units:
 - learn.wwl.monitor-manage-performance-health.introduction
 - learn.wwl.monitor-manage-performance-health.monitor-azure-virtual-desktop-by-using-azure-monitor

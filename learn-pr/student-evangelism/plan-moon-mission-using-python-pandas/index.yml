@@ -32,6 +32,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.plan-moon-mission-using-python-pandas.1-introduction
 - learn.student-evangelism.plan-moon-mission-using-python-pandas.2-rock-samples

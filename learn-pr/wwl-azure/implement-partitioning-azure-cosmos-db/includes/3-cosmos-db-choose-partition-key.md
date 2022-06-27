@@ -16,7 +16,7 @@ For **all** containers, your partition key should:
 
 ## Partition keys for read-heavy containers
 
-For large read-heavy containers you might want to choose a partition key that appears frequently as a filter in your queries. Queries can be [efficiently routed to only the relevant physical partitions](https://docs.microsoft.com/azure/cosmos-db/how-to-query-container#in-partition-query) by including the partition key in the filter predicate.
+For large read-heavy containers you might want to choose a partition key that appears frequently as a filter in your queries. Queries can be [efficiently routed to only the relevant physical partitions](/azure/cosmos-db/how-to-query-container#in-partition-query) by including the partition key in the filter predicate.
 
 If most of your workload's requests are queries and most of your queries have an equality filter on the same property, this property can be a good partition key choice. 
 
@@ -43,5 +43,5 @@ The *item ID* is a great partition key choice for the following reasons:
 Some things to consider when selecting the *item ID* as the partition key include:
 
 * If the *item ID* is the partition key, it will become a unique identifier throughout your entire container. You won't be able to have items that have a duplicate *item ID*.
-* If you have a read-heavy container that has a lot of [physical partitions](https://docs.microsoft.com/azure/cosmos-db/partitioning-overview#physical-partitions), queries will be more efficient if they have an equality filter with the *item ID*.
+* If you have a read-heavy container that has a lot of [physical partitions](/azure/cosmos-db/partitioning-overview#physical-partitions), queries will be more efficient if they have an equality filter with the *item ID*.
 * You can't run stored procedures or triggers across multiple logical partitions.

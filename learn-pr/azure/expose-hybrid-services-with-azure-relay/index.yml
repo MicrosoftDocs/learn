@@ -26,6 +26,9 @@ roles:
 products:
 - azure
 - azure-service-bus
+subjects:
+- cloud-security
+- cloud-computing
 units:
 - learn.expose-hybrid-services-with-azure-relay.1-introduction
 - learn.expose-hybrid-services-with-azure-relay.2-create-azure-relay-hybrid-connection

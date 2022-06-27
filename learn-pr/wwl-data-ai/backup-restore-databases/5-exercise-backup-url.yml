@@ -4,13 +4,13 @@ title: 'Exercise: Backup to URL'
 metadata:
   title: 'Exercise: Backup to URL'
   description: "Exercise: Backup to URL"
-  ms.date: 01/10/2022
+  ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 85904
+labId: 120594
 labModal: true
 durationInMinutes: 10
 content: |

@@ -40,6 +40,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.introduction
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.design-secure-iot-solution

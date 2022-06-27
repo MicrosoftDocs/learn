@@ -55,6 +55,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 modules:
 - learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline

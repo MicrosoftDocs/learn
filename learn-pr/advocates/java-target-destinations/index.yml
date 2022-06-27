@@ -27,10 +27,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - azure-functions
 - azure-app-service
 - azure-kubernetes-service
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.java-target-destinations.1-introduction
 - learn.java-target-destinations.2-application-deployment-types

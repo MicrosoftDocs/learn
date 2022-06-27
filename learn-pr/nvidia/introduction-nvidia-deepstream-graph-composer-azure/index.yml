@@ -32,6 +32,9 @@ roles:
 products:
 - azure
 - azure-container-registry
+subjects:
+- cloud-computing
+- data-visualization
 units:
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.1-introduction
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.2-introduction-nvidia-deepstream-graph-composer

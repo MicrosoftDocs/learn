@@ -26,6 +26,8 @@ roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- database
 units:
 - learn-sqlserver.deploy-sql-server-linux.1-introduction
 - learn-sqlserver.deploy-sql-server-linux.2-deploy-sql-server-ubuntu

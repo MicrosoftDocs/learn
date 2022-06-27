@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.bicep-pipelines-github-actions.trophy
+metadata:
+  title: >-
+    Microsoft Trophy: Deploy Azure resources by using Bicep and GitHub Actions
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/bicep/bicep-github-actions-social.png

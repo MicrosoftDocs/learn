@@ -22,7 +22,7 @@ To learn more about using notebooks, clone the labs archive where sample noteboo
 4. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
 ```
- https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/01-Introduction-to-Azure-Databricks.dbc?raw=true
+ https://github.com/MicrosoftLearning/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/01-Introduction-to-Azure-Databricks.dbc?raw=true
 ```
 
 1. Select **Import**.

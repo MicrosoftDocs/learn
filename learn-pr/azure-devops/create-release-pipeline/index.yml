@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET 5.0 SDK
+  - .NET 6.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-release-pipeline-with-azure-pipelines.svg
@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.create-release-pipeline.1-introduction
 - learn.azdo.create-release-pipeline.2-what-is-cd

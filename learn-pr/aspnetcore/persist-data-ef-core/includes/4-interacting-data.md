@@ -271,10 +271,8 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
                 {
                     var services = scope.ServiceProvider;
                     var context = services.GetRequiredService<PizzaContext>();
-                    if (context.Database.EnsureCreated())
-                    {
-                        DbInitializer.Initialize(context);
-                    }
+                    context.Database.EnsureCreated();
+                    DbInitializer.Initialize(context);
                 }
             }
         }

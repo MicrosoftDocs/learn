@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-container-registry
+subjects:
+- cloud-computing
 units:
 - learn.wwl.publish-container-image-to-azure-container-registry.introduction
 - learn.wwl.publish-container-image-to-azure-container-registry.discover

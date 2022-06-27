@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-provision-environments
 metadata:
-  title: Configure and provision environments
-  description: "Configure and provision environments"
-  ms.date: 03/18/2022
+  title: Provision and test environments
+  description: "Provision and test environments"
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure and provision environments
+title: Provision and test environments
 summary: This module details target environment provisioning, service connections creation process, and test infrastructure setup. You will learn how to configure functional test automation and run availability tests.
 abstract: |
   By the end of this module, you'll be able to:
@@ -39,13 +39,18 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-security
+- data-engineering
 units:
 - learn.wwl.configure-provision-environments.introduction
 - learn.wwl.configure-provision-environments.provision-configure-target-environments
 - learn.wwl.configure-provision-environments.exercise-set-up-service-connections
 - learn.wwl.configure-provision-environments.configure-automated-integration-functional-test-automation
-- learn.wwl.configure-provision-environments.set-up-test-infrastructure
 - learn.wwl.configure-provision-environments.set-up-run-availability-tests
+- learn.wwl.configure-provision-environments.explore-azure-load-testing
+- learn.wwl.configure-provision-environments.understand-shift-left
+- learn.wwl.configure-provision-environments.set-up-run-functional-tests
 - learn.wwl.configure-provision-environments.knowledge-check
 - learn.wwl.configure-provision-environments.summary
 badge:

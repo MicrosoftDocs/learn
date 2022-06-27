@@ -26,7 +26,7 @@ You can get these values from the connection string.
 
     The last line in the response is the connection string, which contains the endpoint for your namespace and the shared access key. It should resemble the following example:
 
-    ```csharp
+    ```output
     Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
@@ -204,7 +204,7 @@ You can get these values from the connection string.
 
     As the program runs, messages are printed to the console indicating that the app is sending a message:
   
-    ```command
+    ```output
     Sending a message to the Sales Messages queue...
     Sending message: $10,000 order for bicycle parts from retailer Adventure Works.
     Message was sent successfully.
@@ -226,7 +226,7 @@ You can get these values from the connection string.
 
 1. Run the following command to open the editor again:
 
-    ```command
+    ```bash
     code .
     ```
 
@@ -432,7 +432,7 @@ You can get these values from the connection string.
 
 1. Check the notifications in Cloud Shell. In the Azure portal, go to your Service Bus namespace and check your **Messages** chart:
 
-    ```command
+    ```output
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 

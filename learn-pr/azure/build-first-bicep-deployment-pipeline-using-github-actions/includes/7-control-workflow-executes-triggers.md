@@ -4,7 +4,7 @@ You now have a working workflow that deploys your Bicep file to your Azure envir
 
 ## What is a workflow trigger?
 
-A workflow trigger is a condition that, when met, automatically runs your workflow based on rules you create. You can set triggers to run your workflow at scheduled intervals. You can also set triggers to run your workflow every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time sometime changes your code.
+A workflow trigger is a condition that, when met, automatically runs your workflow based on rules you create. You can set triggers to run your workflow at scheduled intervals. You can also set triggers to run your workflow every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time someone changes your code.
 
 If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the workflow, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
@@ -23,7 +23,7 @@ on:
 
 ### Trigger when multiple branches change
 
-You can set up triggers to run your workflow on a specific branch or on sets of branches. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your workflow anytime your code changes on a branch that begins with the name *release/. You can use a `**` wildcard:
+You can set up triggers to run your workflow on a specific branch or on sets of branches. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your workflow anytime your code changes on a branch that begins with the name *release/*. You can use a `**` wildcard:
 
 ```yaml
 on:

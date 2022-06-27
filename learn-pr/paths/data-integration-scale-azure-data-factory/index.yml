@@ -25,6 +25,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-analytics
 modules:
 - learn.wwl.integrate-data-azure-data-factory
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory

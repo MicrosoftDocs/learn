@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.introduction
 - learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.create-user-defined-functions

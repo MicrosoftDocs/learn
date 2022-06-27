@@ -39,6 +39,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.child-extension-bicep-templates.introduction
 - learn.azure.child-extension-bicep-templates.resource-types

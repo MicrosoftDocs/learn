@@ -25,6 +25,8 @@ products:
 - azure-clis
 - azure-portal
 - azure-cost-management
+subjects:
+- infrastructure
 modules:
 - learn.align-requirements-in-azure
 - learn.control-azure-services-with-cli

@@ -3,9 +3,9 @@ uid: learn.wwl.connect-threat-indicators-to-azure-sentinel
 metadata:
   title: Connect threat indicators to Microsoft Sentinel
   description: "Connect threat indicators to Microsoft Sentinel"
-  ms.date: 12/09/2021
+  ms.date: 06/27/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect threat indicators to Microsoft Sentinel
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- security
 units:
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.introduction
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.plan-for-threat-intelligence-connectors

@@ -38,6 +38,8 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
   - dotnet
+subjects:
+- iot
 units:
 - learn.create-iot-device-dotnet.introduction
 - learn.create-iot-device-dotnet.construct-iot-hardware

@@ -52,7 +52,7 @@ Use these resources to discover more.
 
 - [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
 
-- [Azure Cost Management](https://azure.microsoft.com/services/cost-management/)
+- [Microsoft Cost Management](https://azure.microsoft.com/services/cost-management/)
 
 - [Create a financial model for cloud transformation](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/financial-models)
 

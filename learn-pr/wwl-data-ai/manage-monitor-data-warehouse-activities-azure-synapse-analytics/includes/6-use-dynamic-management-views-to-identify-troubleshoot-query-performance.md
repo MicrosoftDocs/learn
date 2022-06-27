@@ -138,4 +138,4 @@ You can also monitor additional aspects of Azure Synapse SQL pools including:
 -	Monitoring transaction log
 -	Monitoring PolyBase
 
-You can view information about [monitoring these areas here](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor)
+You can view information about [monitoring these areas here](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor#monitor-waiting-queries)
