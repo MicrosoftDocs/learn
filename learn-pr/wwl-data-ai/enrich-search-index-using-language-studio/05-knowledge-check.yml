@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enrich-search-index-using-language-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/05-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which of the following features of Language Studio can you use out of box without needing to train a model?"
+    choices:
+    - content: "Conversational language understanding."
+      isCorrect: false
+      explanation: "Incorrect. You need to train a model with the intents and entities."
+    - content: "Analyze sentiment."
+      isCorrect: true
+      explanation: "Correct. The analyze sentiment feature has a pre-built model that you can use without any training."
+    - content: "Custom text classification."
+      isCorrect: false
+      explanation: "Incorrect. You need to train a model with the classes you want to identify."
+  - content: "Which step enables a cognitive search index to store the enrichments from a Language Studio project?"
+    choices:
+    - content: "Update your Azure Cognitive Search solution."
+      isCorrect: true
+      explanation: "Correct. You need to edit the index, indexer, and custom skillset to store the enrichments."
+    - content: "Create a function app."
+      isCorrect: false
+      explanation: "Incorrect. You do need to create a function app to call the trained model, but you don't store the enrichments in the search index."
+    - content: "Train a custom text classification model."
+      isCorrect: false
+      explanation: "Incorrect. You do need to train the classification model, but you don't store the enrichments in the search index."
+  - content: "Where do you copy the full endpoint of the function app to use in the custom web skill that includes the api-version and path to the actual function name?"
+    choices:
+    - content: "You can find the endpoint in the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. You can find the endpoint for the overall function app in the Azure portal, but this wont give you the full URL to call the specific function."
+    - content: "You can find the endpoint in Language Studio."
+      isCorrect: false
+      explanation: "Incorrect. You can find the endpoint for the deployed training model, not your function app."
+    - content: "You can find the endpoint in the Azure extension inside VS Code."
+      isCorrect: true
+      explanation: "Correct. You right click on the function name in the Azure extension and select Copy function URL."

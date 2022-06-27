@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/05-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What is the limitation of using the Azure Search linked service as a sink in a copy data task?"
+    choices:
+    - content: "You can only upload one document at a time."
+      isCorrect: false
+      explanation: "Incorrect. You can upload multiple documents if they're defined in the source data."
+    - content: "The JSON can't contain complex data types like arrays."
+      isCorrect: true
+      explanation: "Correct. At the moment, the linked service only supports a limited number of field types."
+    - content: "You have to define the index in the Azure portal first."
+      isCorrect: false
+      explanation: "Incorrect. You do need to create the index first, but doing so isn't seen a limitation of the linked service."
+  - content: "Which feature of the REST API would you use to upload documents into a search index?"
+    choices:
+    - content: "Index."
+      isCorrect: true
+      explanation: "Correct. You use the index REST API focused on documents."
+    - content: "Indexer."
+      isCorrect: false
+      explanation: "Incorrect. The indexer is a feature of the search service that pulls data into an index."
+    - content: "Skillset."
+      isCorrect: false
+      explanation: "Incorrect. A skillset is used to enrich an index using cognitive services."
+  - content: "When implementing a backoff strategy, what return codes should you look for and then retry your request?"
+    choices:
+    - content: "200 and 201."
+      isCorrect: false
+      explanation: "Incorrect. These return codes are the responses when a request is successful."
+    - content: "404 and 501."
+      isCorrect: false
+      explanation: "Incorrect. These return codes are general HTTP response errors for when documents can't be found or there's a general error."
+    - content: "207 and 503."
+      isCorrect: true
+      explanation: "Correct. 503 is the response when a request is throttled. 207 is the response when a single document in a batch fails."
