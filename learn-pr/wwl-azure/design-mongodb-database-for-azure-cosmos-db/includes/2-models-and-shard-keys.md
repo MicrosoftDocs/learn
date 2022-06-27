@@ -4,7 +4,8 @@ Horizontal scalability allows Azure Cosmos DB support data sizes well beyond wha
 
 To achieve this level of scalability, users need to understand the concepts, techniques unique to NoSQL databases for modeling and sharding data.
 
-> &#128221; Note, shards are also referred as partitions in Azure Cosmos DB.
+> [!NOTE] 
+> Shards are also referred as partitions in Azure Cosmos DB.
 
 ## Identify access patterns for your app
 
