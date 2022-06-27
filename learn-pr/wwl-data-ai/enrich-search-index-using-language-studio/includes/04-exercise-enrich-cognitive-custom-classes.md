@@ -133,11 +133,11 @@ This exercise uses 210 text files that contain a plot summary for a movie. The t
 
 1. On the Language Studio home page, select **Create new**, then select **Custom text classification**.
 
-    :::image type="content" source="../media/create-custom-text-classification-project.png" alt-text="A screenshot of showing how to select the create a new custom text classification project.":::
+    :::image type="content" source="../media/create-custom-text-classification-project.png" alt-text="A screenshot showing how to select the create a new custom text classification project.":::
 
 1. Select **Next**.
 
-:::image type="content" source="../media/select-project-type.png" alt-text="A screenshot showing the multi label classification project type selected.":::
+    :::image type="content" source="../media/select-project-type.png" alt-text="A screenshot showing the multi label classification project type selected.":::
 
 1. Select **Multi label classification**, then select **Next**.
 

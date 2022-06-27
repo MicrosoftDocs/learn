@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/24/2022
+  ms.date: 06/27/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ quiz:
     - content: "Train a custom text classification model."
       isCorrect: false
       explanation: "Incorrect. You do need to train the classification model, but you don't store the enrichments in the search index."
-  - content: "Where do you copy the full endpoint of the function app to use in the custom webskill? This needs to include the api-version and path to the actual function name."
+  - content: "Where do you copy the full endpoint of the function app to use in the custom web skill that includes the api-version and path to the actual function name?"
     choices:
     - content: "You can find the endpoint in the Azure portal."
       isCorrect: false
