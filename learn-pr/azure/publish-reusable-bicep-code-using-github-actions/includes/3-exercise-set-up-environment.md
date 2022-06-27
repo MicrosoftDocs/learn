@@ -193,10 +193,10 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
      -Scope $resourceGroupId
 
    $output = @{
-     clientId = $($servicePrincipal.AppId)
+     clientId = $servicePrincipal.AppId
      clientSecret = $servicePrincipal.PasswordCredentials.SecretText
-     subscriptionId = $($azureContext.Subscription.Id)
-     tenantId = $($azureContext.Tenant.Id)
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
