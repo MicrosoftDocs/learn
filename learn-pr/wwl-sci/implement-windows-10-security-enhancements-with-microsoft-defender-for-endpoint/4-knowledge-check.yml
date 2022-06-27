@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 06/27/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "Block content from mobile devices"
       isCorrect: false
       explanation: "Incorrect.  This option is not an attack surface reduction rule that can be configured."
-  - content: "Which of the following is a deployment option?"
+  - content: "Which of the following items is a deployment option?"
     choices:
     - content: "PowerShell"
       isCorrect: true
