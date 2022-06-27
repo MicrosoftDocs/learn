@@ -22,4 +22,4 @@ Microsoft Sentinel integrates with Microsoft Graph Security API data sources to 
 
 1. To view the threat indicators imported into Microsoft Sentinel, navigate to **Microsoft Sentinel Logs > SecurityInsights, and then expand ThreatIntelligenceIndicator**.
 
-:::image type="content" source="../media/threat-intelligence-platform-connector.png" alt-text="Screen shot of the Threat Intelligence Platform connector page" lightbox="../media/threat-intelligence-platform-connector.png":::
+:::image type="content" source="../media/threat-intelligence-platform-connector.png" alt-text="Screenshot of the Threat Intelligence Platform connector page" lightbox="../media/threat-intelligence-platform-connector.png":::
