@@ -4,6 +4,12 @@ This new capability provides expert-driven insights and data through targeted at
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qZ0B?rel=0]
 
+>[!NOTE]
+>The video references shortened URLs for Microsoft Threat Experts. These are short URLs and the full links:
+>
+> - [aka.ms/MDATPDocsMTE](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts?view=o365-worldwide)
+> - [aka.ms/threatexperts](/microsoft-365/security/defender-endpoint/microsoft-threat-experts?view=o365-worldwide)
+
 Microsoft Defender for Endpoint customers are required to apply for the Microsoft Threat Experts managed threat hunting service. Customers get proactive Targeted Attack Notifications and the ability to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you've been accepted into Microsoft Threat Experts managed threat hunting service.
 
 ## Targeted attack notification
