@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-database-for-postgresql.configure-azure-active-directory-authentication
+title: Configure Azure Active Directory authentication
+metadata:
+  title: Configure Azure Active Directory authentication
+  description: "Configure Azure Active Directory authentication"
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-configure-azure-active-directory-authentication.md)]

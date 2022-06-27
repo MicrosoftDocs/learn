@@ -4,12 +4,13 @@ title: Configure application permission
 metadata:
   title: Configure application permission
   description: "Configure application permission"
-  ms.date: 08/04/2021
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/5-configure-application-permission.md)]

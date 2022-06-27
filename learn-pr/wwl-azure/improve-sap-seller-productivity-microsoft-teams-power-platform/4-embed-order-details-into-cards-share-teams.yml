@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.embed-order-details-into-cards-share-teams
+title: Embed order details into cards to share in Teams
+metadata:
+  title: Embed order details into cards to share in Teams
+  description: "Embed order details into cards to share in Teams"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-embed-order-details-into-cards-share-teams.md)]
