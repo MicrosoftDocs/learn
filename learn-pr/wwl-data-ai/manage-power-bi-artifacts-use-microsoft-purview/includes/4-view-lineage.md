@@ -12,12 +12,12 @@ After performing a search in the Purview Governance Portal, select a Power BI as
 Under the Schema tab, you can see the list of all the tables, columns, and measures created inside the Power BI dataset.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot showing Power B I enhanced metatdata in Purview. Data assets displayed include fields, classifications, sensitivity labels, glossary terms, and data types.](../media/purview-enhanced-metadata.png)
+> ![Screenshot showing Power B I enhanced metadata in Purview. Data assets displayed include fields, classifications, sensitivity labels, glossary terms, and data types.](../media/purview-enhanced-metadata.png)
 
 For more detail, selecting a particular field within the schema tab will take you to the details for that field. You can then view the overview, properties, lineage, contacts, and related assets for that particular field.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot showing Power B I enhanced metatdata details. Details displayed include overview, properties, and contacts.](../media/purview-enhanced-metadata-details.png)
+> ![Screenshot showing Power B I enhanced metadata details. Details displayed include overview, properties, and contacts.](../media/purview-enhanced-metadata-details.png)
 
 Metadata scanning requires no special license. It works for all of your tenant metadata, including that of artifacts that are located in non-Premium workspaces.
 
