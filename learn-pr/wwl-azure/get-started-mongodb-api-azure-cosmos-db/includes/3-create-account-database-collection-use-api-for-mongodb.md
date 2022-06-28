@@ -43,15 +43,15 @@ Creating a database and container in the Azure portal is straight forward, let's
 
 1. Select the pulldown to the right of the *New Collection* icon and select **New Database**. 
 
-[![Diagram showing the create an Azure Cosmos DB API for MongoDB database or collection](../media/3-create-azure-cosmos-db-database-or-collection-mongodb.png)](../media/3-create-azure-cosmos-db-database-or-collection-mongodb.png#lightbox)
+    [![Diagram showing the create an Azure Cosmos DB API for MongoDB database or collection](../media/3-create-azure-cosmos-db-database-collection-mongodb.png)](../media/3-create-azure-cosmos-db-database-collection-mongodb.png#lightbox)
 
 1. Give your database a new name under the **Database id** textbox.
 
 1. While we could define the **Provision throughput** in the *New Database* dialog, in most cases you would select your provisioned throughput at the container level.  Let's *uncheck* the *Provision throughput* checkbox and select **Ok** for this example.
 
-[![Diagram showing the create an Azure Cosmos DB API for MongoDB database](../media/3-create-azure-cosmos-db-database-mongodb.png)](../media/3-create-azure-cosmos-db-database-mongodb.png#lightbox)
+    [![Diagram showing the create an Azure Cosmos DB API for MongoDB database](../media/3-create-azure-cosmos-db-database-mongodb.png)](../media/3-create-azure-cosmos-db-database-mongodb.png#lightbox)
 
-We should now notice our new database under the *MONGO API* section. It's time to create our new collection.
+    We should now notice our new database under the *MONGO API* section. It's time to create our new collection.
 
 1. Select the **New Collection** icon. 
 
