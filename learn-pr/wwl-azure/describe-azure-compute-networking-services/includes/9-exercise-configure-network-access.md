@@ -1,6 +1,6 @@
 In this exercise, you'll configure the access to the virtual machine (VM) you created earlier in this module. The Microsoft Learn sandbox should still be running. If the sandbox timed out, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
 
-Right now, the VM you created and installed Nginx on isn't accessible from the internet. You'll create a network security group that changes that by allowing inbound HTTP access on port 80.<br>
+Right now, the VM you created and installed Nginx on isn't accessible from the internet. You'll create a network security group that changes that by allowing inbound HTTP access on port 80.
 
 ## Task 1: Access your web server
 
@@ -41,7 +41,11 @@ In this procedure, you get the IP address for your VM and attempt to access your
         
         You see an IP address, for example, *23.102.42.235*.
     2.  Copy the IP address that you see to the clipboard.
-    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening.<br>If you wait for the browser to time out, you'll see something like this:<br><br>:::image type="content" source="../media/browser-request-timeout-d7cc0e02.png" alt-text="A web browser showing an error message that says the connection timed out.":::
+    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening.
+        
+        If you wait for the browser to time out, you'll see something like this:
+        
+        :::image type="content" source="../media/browser-request-timeout-d7cc0e02.png" alt-text="Screenshot of a web browser showing an error message that says the connection timed out.":::
         
     4.  Keep this browser tab open for later.
 
@@ -160,7 +164,11 @@ Now that you've configured network access to port 80, let's try to access the we
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     
     ```
-2.  As an optional step, refresh your browser tab that points to your web server.<br><br>You see this:<br><br>:::image type="content" source="../media/browser-request-successful-df21c6f1.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
+2.  As an optional step, refresh your browser tab that points to your web server.
+    
+    You see this:
+    
+    :::image type="content" source="../media/browser-request-successful-df21c6f1.png" alt-text="A screenshot of a web browser showing the home page from the web server. The home page displays a welcome message.":::
     
 
 Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This technique enables you to control network access to multiple VMs under a single, central set of rules.

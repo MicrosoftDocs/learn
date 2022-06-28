@@ -23,7 +23,7 @@ For name resolution, you can use the name resolution service that's built into A
 
 ## Internet communications
 
-You can enable incoming connections from the internet by assigning a public IP address to an Azure resouce, or putting the resource behind a public load balancer.
+You can enable incoming connections from the internet by assigning a public IP address to an Azure resource, or putting the resource behind a public load balancer.
 
 ## Communicate between Azure resources
 
@@ -58,6 +58,4 @@ Azure virtual networks enable you to filter traffic between subnets by using the
 
 You can link virtual networks together by using virtual network peering. Peering allows two virtual networks to connect directly to each other. Network traffic between peered networks is private, and travels on the Microsoft backbone network, never entering the public internet. Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions, which allows you to create a global interconnected network through Azure.
 
-User-defined routes (UDR) allows you to control the routing tables between subnets within a virtual network or between virtual networks. This allows for greater control over network traffic flow.
-
-:::image type="content" source="../media/local-remote-gateway-peered-virual-network-9323c425.png" alt-text="Illustration of a local or remote gateway in peered virtual network.":::
+User-defined routes (UDR) allow you to control the routing tables between subnets within a virtual network or between virtual networks. This allows for greater control over network traffic flow.

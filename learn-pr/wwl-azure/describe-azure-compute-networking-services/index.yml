@@ -12,12 +12,12 @@ title: Describe Azure compute and networking services
 summary: This module focuses on some of the computer services and networking services available within Azure.
 abstract: |
   Upon completion of this module, you will be able to:
-  - Compare compute types, including container instances, virtual machines, and functions
-  - Describe virtual machine options, including VMs, VM scale sets, availability sets, Azure Virtual Desktop
-  - Describe resources required for virtual machines
-  - Describe application hosting options, including Azure Web Apps, containers, and virtual machines
-  - Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
-  - Define public and private endpoints
+  *   Compare compute types, including container instances, virtual machines, and functions
+  *   Describe virtual machine (VM) options, including VMs, virtual machine scale sets, availability sets, Azure Virtual Desktop
+  *   Describe resources required for virtual machines
+  *   Describe application hosting options, including Azure Web Apps, containers, and virtual machines
+  *   Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
+  *   Define public and private endpoints
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 iconUrl: /learn/achievements/generic-badge.svg
@@ -46,7 +46,7 @@ units:
 - learn.wwl.describe-azure-compute-networking-services.exercise-configure-network-access
 - learn.wwl.describe-azure-compute-networking-services.virtual-private-networks
 - learn.wwl.describe-azure-compute-networking-services.expressroute
-- learn.wwl.describe-azure-compute-networking-services.dns
+- learn.wwl.describe-azure-compute-networking-services.domain-name-system
 - learn.wwl.describe-azure-compute-networking-services.knowledge-check
 - learn.wwl.describe-azure-compute-networking-services.summary
 badge:

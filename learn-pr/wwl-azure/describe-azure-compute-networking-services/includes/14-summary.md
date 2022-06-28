@@ -11,7 +11,7 @@ You should now be able to:
  -  Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute.
  -  Define public and private endpoints.
 
-## Additional resources<br>
+## Additional resources
 
 The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
 

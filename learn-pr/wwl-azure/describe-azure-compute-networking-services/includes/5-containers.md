@@ -8,9 +8,9 @@ Containers are a virtualization environment. Much like running multiple virtual 
 
 The following video highlights several of the important differences between virtual machines and containers:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2yuaq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaq]
 
-### Azure Container Instances<br>
+### Azure Container Instances
 
 Azure Container Instances offer the fastest and simplest way to run a container in Azure; without having to manage any virtual machines or adopt any additional services. Azure Container Instances are a platform as a service (PaaS) offering. Azure Container Instances allow you to upload your containers and then the service will run the containers for you.
 

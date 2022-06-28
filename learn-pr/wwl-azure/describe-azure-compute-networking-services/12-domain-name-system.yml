@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.describe-azure-compute-networking-services.dns
+uid: learn.wwl.describe-azure-compute-networking-services.domain-name-system
 title: Describe Azure DNS
 metadata:
   title: Describe Azure DNS
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/12-dns.md)]
+  [!include[](includes/12-domain-name-system.md)]

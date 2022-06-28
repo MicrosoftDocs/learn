@@ -1,8 +1,8 @@
-Azure ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection, with the help of a connectivity provider. This connection is called an ExpressRoute Circuit. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365. This allows you to connect offices, datacenters, or other facilities to the Microsoft cloud. Each location would have its own ExpressRoute circuit.<br>
+Azure ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection, with the help of a connectivity provider. This connection is called an ExpressRoute Circuit. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365. This allows you to connect offices, datacenters, or other facilities to the Microsoft cloud. Each location would have its own ExpressRoute circuit.
 
 Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections don't go over the public Internet. This allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet.
 
-:::image type="content" source="../media/azure-expressroute-overview-be830b4f.png" alt-text="Visualization that shows a high-level overview of the Azure ExpressRoute service.":::
+:::image type="content" source="../media/azure-expressroute-overview-be830b4f.png" alt-text="Diagram that shows a high-level overview of the Azure ExpressRoute service.":::
 
 
 ## Features and benefits of ExpressRoute
@@ -43,9 +43,6 @@ ExpressRoute supports four models that you can use to connect your on-premises n
  -  Point-to-point Ethernet connection
  -  Any-to-any connection
  -  Directly from ExpressRoute sites
-
-:::image type="content" source="../media/azure-connectivity-models-3ea850f3.png" alt-text="Visualization of Azure connectivity models.":::
-
 
 ### Co-location at a cloud exchange
 

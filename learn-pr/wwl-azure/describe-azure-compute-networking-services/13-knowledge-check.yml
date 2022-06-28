@@ -24,11 +24,11 @@ quiz:
       explanation: "Availability sets stagger VM updates based on their update and fault domains."
     - content: "Scale sets"
       isCorrect: false
-      explanation: "Scale sets let you automatically scale and load balance your VMs, but a scale set doesn’t impact updates."
+      explanation: "Scale sets let you automatically scale and load balance your VMs, but a scale set doesn’t affect updates."
     - content: "Update sets"
       isCorrect: false
       explanation: "Availability sets stagger VM updates based on their update and fault domains."
-  - content: "Which Azure service allows you to use a cloud hosted version of Windows from any location and connect from most modern browsers?"
+  - content: "Which Azure service allows users to use a cloud hosted version of Windows from any location and connect from most modern browsers?"
     choices:
     - content: "Azure Virtual Desktop"
       isCorrect: true
@@ -39,14 +39,3 @@ quiz:
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "Azure Container Instances lets you provision containers in the cloud, but doesn’t provide access to a cloud-hosted version of windows available from most modern browsers."
-  - content: "Which of the following options is not a connection method supported by Azure Express Route?"
-    choices:
-    - content: "CloudExchange colocation"
-      isCorrect: false
-      explanation: "CloudExchange colocation is an ExpressRoute model."
-    - content: "Point-to-point ethernet connection"
-      isCorrect: false
-      explanation: "Point-to-point ethernet connection is an ExpressRoute model."
-    - content: "Site-to-site virtual private network"
-      isCorrect: true
-      explanation: "Site-to-site virtual private network is not an ExpressRoute model."

@@ -1,8 +1,8 @@
 In this exercise, you create an Azure virtual machine (VM) and install Nginx, a popular web server.
 
-You could use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.<br>
+You could use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
 
-In this instance, yo'ure going to use the Azure CLI.
+In this instance, you're going to use the Azure CLI.
 
 ## Task 1: Create a Linux virtual machine and install Nginx
 
@@ -42,4 +42,4 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
 
 ## Continue
 
-That's all for this exercise. The sandbox will keep running, and you'll come back to this point in a few topics to update the network configuration so you can get to the website.
+That's all for this exercise. The sandbox will keep running, and you'll come back to this point in a few units to update the network configuration so you can get to the website.

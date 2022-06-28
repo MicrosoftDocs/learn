@@ -8,10 +8,7 @@ A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances 
  -  Connect individual devices to virtual networks through a point-to-site connection.
  -  Connect virtual networks to other virtual networks through a network-to-network connection.
 
-:::image type="content" source="../media/vpngateway-site-to-site-connection-diagram-e330b5a1.png" alt-text="Visualization of a VPN connection to Azure.":::
-<br>
-
-All data transfer is encrypted inside a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network. However, you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
+All data transfer is encrypted inside a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network. However, you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.<br>
 
 When you deploy a VPN gateway, you specify the VPN type: either policy-based or route-based. The main difference between these two types of VPNs is how traffic to be encrypted is specified. In Azure, both types of VPN gateways use a pre-shared key as the only method of authentication.
 
@@ -33,15 +30,9 @@ If you’re configuring a VPN to keep your information safe, you also want to be
 
 By default, VPN gateways are deployed as two instances in an active/standby configuration, even if you only see one VPN gateway resource in Azure. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections without any user intervention. Connections are interrupted during this failover, but they're typically restored within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
 
-:::image type="content" source="../media/active-standby-09561938.png" alt-text="Visualization of active/standby virtual network gateway.":::
-
-
 ### Active/active
 
 With the introduction of support for the BGP routing protocol, you can also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
-
-:::image type="content" source="../media/dual-redundancy-b8f3f44b.png" alt-text="Visualization of active/active virtual network gateway.":::
-
 
 ### ExpressRoute failover
 
