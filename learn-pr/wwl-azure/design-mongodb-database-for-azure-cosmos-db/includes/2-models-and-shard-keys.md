@@ -75,7 +75,7 @@ In Azure Cosmos DB databases, JSON documents are stored within collections that 
 
 [![Diagram showing the physical shard](../media/2-physical-shards.png)](../media/2-physical-shards.png#lightbox)
 
-The shard key is a required document property that ensures documents with the same shard key value are routed to and stored within a specific physical shard. A physical shard supports a fixed maximum amount of storage and throughput (RU/s). When the capacity of a logical shard, which we will introduce below, gets close to the maximum storage, Azure Cosmos DB adds another physical shard to the collection. Azure Cosmos DB automatically distributes the logical shards across the available physical shards, again using the shard key value to so in a predictable way.
+The shard key is a required document property that ensures documents with the same shard key value are routed to and stored within a specific physical shard. A physical shard supports a fixed maximum amount of storage and throughput (RU/s). When the capacity of a physical shard gets close to the maximum storage, Azure Cosmos DB adds another physical shard to the collection. Azure Cosmos DB automatically distributes the logical shards across the available physical shards, again using the shard key value to so in a predictable way.
 
 In this unit, you'll learn more about logical shards and how to avoid hot shards. This information will help us choose the appropriate shard keys.
 
@@ -83,7 +83,7 @@ In Azure Cosmos DB, you increase storage and throughput by adding more physical 
 
 ### Logical shards in Azure Cosmos DB
 
-The shard key ensures documents with the same shard key value are considered to belong to the same logical shard and are routed to and stored within a specific physical shard. The concept of a logical shard allows for the grouping together of documents with same shard key value. Multiple logical shards can be stored within a single physical shard and the collection can have an unlimited number of logical shards. Individual logical shards are moved to new physical shard as a unit as the collection grows. Moving logical shards as a unit ensures that all documents within it reside on the same physical shard. The maximum size for a logical shard is 20 GB. Using a shard key with high cardinality to allows you to avoid this 20-GB limit by spreading your data across a larger number of logical shards.
+The shard key ensures documents with the same shard key value are considered to belong to the same logical shard and are routed to and stored within a specific physical shard. Multiple logical shards can be stored within a single physical shard. Collections can have an unlimited number of logical shards. Individual logical shards are moved to new physical shard as a unit as the collection grows. Moving logical shards as a unit ensures that all documents within it reside on the same physical shard. The maximum size for a logical shard is 20 GB. Using a shard key with high cardinality to allows you to avoid this 20-GB limit by spreading your data across a larger number of logical shards.
 
 [![Diagram showing the relationship between physical and logical shards](../media/2-relationship-between-physical-and-logical-shards.png)](../media/2-relationship-between-physical-and-logical-shards.png#lightbox)
 

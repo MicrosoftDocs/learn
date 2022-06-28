@@ -1,6 +1,6 @@
 Indexes are data structures that allow queries faster access to your documents. Azure Cosmos DB API for MongoDB takes advantage of the core index-management capabilities of Azure Cosmos DB. In this unit, we'll introduce different types of indexes and how to to set them up from the Azure portal Data Explorer or programmatically using collection commands. Indexes are set at the collection level.
 
-By default, Azure Cosmos DB API for MongoDB automatically indexes the ***_id*** field and on sharded collections, the shard key. Uniqueness is automatically enforced by the ***_id*** field per shard key.
+By default, Azure Cosmos DB API for MongoDB automatically indexes the ***_id*** field. Uniqueness is automatically enforced by the ***_id*** field per shard key.
 
 Let's review the different types of indexes supported by the Azure Cosmos DB API for MongoDB.
 
@@ -47,12 +47,7 @@ This ***getIndexes*** collection function should return a similar result as the 
   { v: 1, key: { _id: 1 }, name: '_id_', ns: 'inventory.products' },
   { v: 1, key: { '$**': 1 }, name: '$**_1', ns: 'inventory.products' },
   { v: 1, key: { name: 1 }, name: 'name_1', ns: 'inventory.products' },
-  {
-    v: 1,
-    key: { quantity: 1 },
-    name: 'quantity_1',
-    ns: 'inventory.products'
-  }
+  { v: 1, key: { quantity: 1 }, name: 'quantity_1', ns: 'inventory.products' }
 ]
 ```
 
@@ -183,12 +178,7 @@ This ***getIndexes*** collection function should return a similar result as the 
 [
   { v: 1, key: { _id: 1 }, name: '_id_', ns: 'employees.doctors' },
   { v: 1, key: { '$**': 1 }, name: '$**_1', ns: 'employees.doctors' },
-  {
-    v: 1,
-    key: { lastName: -1, firstName: -1 },
-    name: 'lastName_-1_firstName_-1',
-    ns: 'employees.doctors'
-  }
+  { v: 1, key: { lastName: -1, firstName: -1 }, name: 'lastName_-1_firstName_-1',ns: 'employees.doctors' }
 ]
 ```
 

@@ -24,7 +24,7 @@ While the *$match* and *$sort* pipelines filter and order our aggregations respe
 
 ## Using Aggregation Pipeline to query our data
 
-Below we'll define some query scenarios to define some of our aggregation pipelines. If you're familiar with the SQL query language, we'll also give you the SQL query for those scenarios to compare.
+Below we'll define some query scenarios to define some of our aggregation pipelines. 
 
 Let's assume we have a collection called *salesReceipts* and we have the following three documents in that collection.
 
@@ -82,11 +82,6 @@ db.salesReceipts.aggregate(
 )
 ```
 
-```sql
-SELECT COUNT(*) 
-FROM salesReceipts
-```
-
 Let's expand on this example slightly. Let's count all the sales receipts where "Milk" was sold.
 
 ```javascript
@@ -100,14 +95,6 @@ db.salesReceipts.aggregate(
         }
     ]
 )
-```
-
-```sql
-SELECT COUNT(*)
-FROM salesReceipts s
-    INNER JOIN salesReceiptsDetail d 
-        ON s.ReceiptNo = d.ReceiptNo
-WHERE d.ItemName = "Milk"
 ```
 
 Finally let's return the receipt number and the total of each receipt.
@@ -135,14 +122,6 @@ db.salesReceipts.aggregate(
         }
     ]
 )
-```
-
-```sql
-SELECT s.ReceiptNo, SUM(d.quantity*d.priceperunit)
-FROM salesReceipts s
-    INNER JOIN salesReceiptsDetail d 
-        ON s.ReceiptNo = d.ReceiptNo
-GROUP BY s.ReceiptNo
 ```
 
 > [!NOTE] 
