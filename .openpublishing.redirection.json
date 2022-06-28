@@ -14594,6 +14594,21 @@
       "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/3-establish-strategy-process-to-create-security-pocs.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/understand-architecture-best-practices-how-change-cloud/3-establish-process-security-evolution",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/2-implement-office-365-message-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/2-implement-microsoft-purview-message-encryption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/3-implement-office-365-advanced-message-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/3-implement-microsoft-purview-advanced-message-encryption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/4-use-office-message-encryption-templates-mail-flow-rules.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/4-use-microsoft-purview-message-encryption-templates-mail-flow-rules",
+      "redirect_document_id": true
     }
   ]
 }
