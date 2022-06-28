@@ -1,6 +1,6 @@
 The new term is going to start in a few weeks, and you are incorporating Microsoft Official Curriculum (MOC) into your class for the first time, maybe you have done this before and want a refresher, or maybe you have been teaching Microsoft Fundamentals and you are going to teach Advanced Role-Based content for the first time. Regardless, this module and checklist are for you.  
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Nm8]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Nm8]
 
 Getting ready to teach checklist: 
 

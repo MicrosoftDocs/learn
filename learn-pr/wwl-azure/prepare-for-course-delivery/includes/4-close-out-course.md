@@ -4,7 +4,7 @@ Demand for technical certifications is growing. For students who are looking to 
 
 Let’s work on wrapping up the term and supporting your students so that they can be successful on their certification exams.  
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oKf]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oKf]
 
 Checklist for closing out the term: 
 
