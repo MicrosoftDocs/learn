@@ -5,8 +5,8 @@ Current MongoDB developers will feel right at home using the Azure Cosmos DB API
 Let's take a look at some advantages of using the Azure Cosmos DB API for MongoDB over other offerings like MongoDB Atlas.
 
 - **Instantaneous scalability** - [Autoscale][/azure/cosmos-db/provision-throughput-autoscale] allows your database or containers to scale throughput up/down automatically and instantly.
-- Automatic and transparent sharding - While offerings like MongoDB Atlas require you to specify and manage scaling to a horizontal scaling, the Azure Cosmos DB API for MongoDB automatically manages all sharding and its infrastructure behinds the scenes for you. 
-- **99.999% availability** - Azure Cosmos DB offers [99.999%][azure/cosmos-db/high-availability] read and write availability for multi-region databases.
+- Automatic and transparent sharding - While offerings like MongoDB Atlas require you to specify and manage scaling to a horizontal scaling, the Azure Cosmos DB API for MongoDB automatically manages all sharding and its infrastructure behinds the scenes for you.
+- **99.999% availability** - Azure Cosmos DB offers [99.999%][/azure/cosmos-db/high-availability] read and write availability for multi-region databases.  (For information about the SLA, see the [Azure Cosmos DB service-level agreements page](/support/legal/sla/cosmos-db/v1_4/).)
 - **Cost efficient, granular, unlimited scalability** - While many MongoDB offerings might limit the size of the database, Azure Cosmos DB sharded collections can scale to any size. The Azure Cosmos DB infrastructure can scale in increments as small as 1/100th of the VMs hence giving you growth granularity and reducing cost.
 - **Serverless deployments** - Unlike MongoDB Atlas, the API for MongoDB is a cloud native database that offers a [serverless capacity mode][/azure/cosmos-db/serverless]. With Serverless, you're only charged per operation, and don't pay for the database when you don't use it.
 - **Free Tier** - Azure Cosmos DB offers a free tier that is applied at the account level. This tier gives you the first 1000 RU/s and 25 GB of storage in your account for free.
@@ -19,7 +19,7 @@ Azure Cosmos DB API for MongoDB is compatible with multiple MongoDB Server versi
 
 [![Diagram showing the MongoDB wire protocol](../media/1-mongodb-wire-protocol.png)](../media/1-mongodb-wire-protocol.png#lightbox)
 
-## Get started with Azure Cosmos DB API for MongoDB 
+## Get started with Azure Cosmos DB API for MongoDB
 
 After completing this module, you’ll be able to:
 
@@ -30,7 +30,8 @@ After completing this module, you’ll be able to:
 
 [/cosmosdb/mongodb-3-6-lives-on-in-azure-cosmos-db/]: https://devblogs.microsoft.com/cosmosdb/mongodb-3-6-lives-on-in-azure-cosmos-db/
 [/azure/cosmos-db/provision-throughput-autoscale]: https://docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale
-[azure/cosmos-db/high-availability]: https://docs.microsoft.com/azure/cosmos-db/high-availability
+[/azure/cosmos-db/high-availability]: https://docs.microsoft.com/azure/cosmos-db/high-availability
 [/azure/cosmos-db/serverless]: https://docs.microsoft.com/azure/cosmos-db/serverless
 [azure/cosmos-db/mongodb/upgrade-mongodb-version]: https://docs.microsoft.com/azure/cosmos-db/mongodb/upgrade-mongodb-version
 [/azure/cosmos-db/synapse-link]: https://docs.microsoft.com/azure/cosmos-db/synapse-link
+[/support/legal/sla/cosmos-db/v1_4/]: https://azure.microsoft.com/support/legal/sla/cosmos-db/v1_4/
