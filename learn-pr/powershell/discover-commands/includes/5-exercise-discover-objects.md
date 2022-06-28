@@ -20,6 +20,10 @@ In this scenario, you'll use the `Get-Member` cmdlet.
    Get-Process -Name 'selected-process-name' | Get-Member
    ```
 
+   > [!TIP]
+   > - Use <kbd>Left arrow</kbd> and <kbd>Right arrow</kbd> to reposition the cursor on the command line.
+   > - Use <kbd>Backspace</kbd> and <kbd>Delete</kbd> to edit on the command line.
+
    This command produces a long response that consists of all members, events, and methods. At this point, focus on the first line, which lists the following information:
 
    ```output

@@ -8,7 +8,7 @@ To deploy the template, you'll use Azure Cloud Shell, which is on the right side
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, region, and the full ssh key. You can copy and paste them into a tool like NotePad, OneNote, or another tool of choice.
 
-1. In bash on the right-hand side of your screen, enter the following code to generate a key. This key will enable easy access from the Cloud Shell to your virtual machine.
+1. In bash on the right-hand side of your screen, enter the following code to generate a public key. This key will enable easy access from the Cloud Shell to your virtual machine.
 
     ```bash
     mkdir .ssh
@@ -17,7 +17,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select the <kbd>Enter</kbd> key twice when prompted for a passphrase (no passphrase).
 
-1. Run the following code and copy the entire result into your notes tool of choice (include *ssh-rsa* at the beginning).
+1. Run the following code and copy the entire result into your notes tool of choice (include *ssh-rsa* at the beginning).  This result will serve as the public key for accessing an Azure hosted virtual machine that will be deployed in upcoming steps.
 
     ```bash
     cat .ssh/id_rsa.pub
@@ -34,7 +34,17 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the Azure Cloud Shell on the right-hand side of the screen, enter `pwsh` to switch from bash to PowerShell.
 
-1. Run the following commands in Cloud Shell. Be sure to paste in the entire ssh key. Then, enter a complex password and, at the prompt, enter your local public IP address, which you obtained in a preceding step.
+1. Run the following commands in Cloud Shell. Be sure to paste in the entire ssh key. Then, enter a **complex password and, at the prompt, enter your local public IP address, which you obtained in a preceding step.
+
+    > [!Note]
+    > A **complex password** must consist of:
+    >
+    > * 8 characters minimum and 16 characters maximum
+    > * Requires 3 out of 4 of the following:
+    >    * Lowercase characters
+    >    * Uppercase characters
+    >    * Numbers ( 0-9 )
+    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
 
     ```powershell
     # Collect ssh key
@@ -114,6 +124,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     az vm show --resource-group $resourceGroupName --name $iotSimulator --show-details --query publicIps
     ```
 
+    You will be prompted to provide a location. Depending on resource availability, you may have to try several. You can try `centralus`, `eastasia`, `westeurope`. If they all fail, you can list all the regions to try with `Get-AzLocation | select displayname,location`. 
+        
     The script will take 5-10 minutes to complete.
 
     > [!TIP]
@@ -197,7 +209,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Select **Settings** for the repository.
 
-1. Select **Secrets** > **New repository secret** and enter the following items:
+1. Select **Secrets** > **Actions** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_FUNCTIONAPP_PUBLISH_PROFILE**
     1. *Value*: **Azure Functions publish profile which you downloaded at the beginning of this section**
 

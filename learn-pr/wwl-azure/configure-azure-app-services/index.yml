@@ -3,15 +3,15 @@ uid: learn.wwl.configure-azure-app-services
 metadata:
   title: Configure Azure App Services
   description: "You will learn how to configure and monitor the Azure App Service including deployment slots."
-  ms.date: 11/03/2021
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure App Services
-summary: You will learn how to configure and monitor the Azure App Service including deployment slots.
+summary: You'll learn how to configure and monitor the Azure App Service including deployment slots.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Identify features and usage cases for the Azure App Service.
   - Create an App Service.
   - Configure deployment settings, specifically deployment slots.
@@ -41,6 +41,7 @@ units:
 - learn.wwl.configure-azure-app-services.create-custom-domain-names
 - learn.wwl.configure-azure-app-services.backup-app-service
 - learn.wwl.configure-azure-app-services.use-application-insights
+- learn.wwl.configure-azure-app-services.11-exercise-implement-web-services
 - learn.wwl.configure-azure-app-services.knowledge-check
 - learn.wwl.configure-azure-app-services.summary-resources
 badge:

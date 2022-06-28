@@ -248,7 +248,7 @@ New-AzResourceGroup -Name <name> -Location <location>
 
 ### Verify the resources
 
-The `Get-AzResource` lists your Azure resources, which is useful here to verify the resource group creation was successful.
+The `Get-AzResource` lists your Azure resources, which is useful here to verify the resources were created and the resource group creation was successful.
 
 ```powershell
 Get-AzResource

@@ -157,7 +157,7 @@ public static class PhonewordTranslator
     }
     ```
 
-1. Add the `translatedNumber` string variable and the following `OnTranslate` method to the `MainPage` class, after the constructor. The `OnTranslate` method retrieves the phone number from the `Text` property of the `Entry` control and passes it to the static ToNumber method of the `PhonewordTranslator` class that you created earlier.
+1. Add the `translatedNumber` string variable and the following `OnTranslate` method to the `MainPage` class, after the constructor. The `OnTranslate` method retrieves the phone number from the `Text` property of the `Entry` control and passes it to the static `ToNumber` method of the `PhonewordTranslator` class that you created earlier.
 
 
     ```csharp
@@ -257,7 +257,7 @@ public static class PhonewordTranslator
 
 ## Dial the phone number
 
-1. In the **MainPage.xaml.cs** code-behind file, edit the **OnCall** method and replace the **TODO** comment with the `try/catch` blocks:
+1. In the **MainPage.xaml.cs** code-behind file, edit the **OnCall** method and replace the **TODO** comment with the following `try/catch` blocks:
 
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
@@ -289,7 +289,7 @@ public static class PhonewordTranslator
     }
     ```
 
-    The **PhoneDialer** class in the **Microsoft.Maui.Application.Community** namespace provides an abstraction of the phone dialing functionality (and others) for the Windows, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
+    The **PhoneDialer** class in the **Microsoft.Maui.ApplicationModel.Communication** namespace provides an abstraction of the phone dialing functionality (and others) for the Windows, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
 
     The following steps show how to update the Android application manifest to enable Android to use the phone dialer. Windows, iOS, and MacCatalyst, applications follow the same general principle, except that you specify a different operating-system dependent capability in the manifest.
 

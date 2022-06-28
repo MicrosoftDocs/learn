@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET 5.0 SDK
+  - .NET 6.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-release-cadence-using-deployment-patterns.svg

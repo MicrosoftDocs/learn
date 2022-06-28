@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-overall-security-strategy-architecture.develop-integration-points-architecture
+title: Develop Integration points in an architecture
+metadata:
+  title: Develop Integration points in an architecture
+  description: "Develop Integration points in an architecture"
+  ms.date: 06/07/2022
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-develop-integration-points-architecture.md)]

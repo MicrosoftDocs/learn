@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
 metadata:
-  title: Configure automatic deployment for Azure SQL Database
-  description: "Configure automatic deployment for Azure SQL Database"
-  ms.date: 08/23/2021
+  title: Automate deployment of database resources
+  description: "Automate deployment of database resources"
+  ms.date: 06/28/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure automatic deployment for Azure SQL Database
-summary: Utilize Azure Resource Manager templates for deploying Azure SQL resources.
+title: Automate deployment of database resources
+summary: Explore multiple deployment models available on Azure. Use Azure Resource Manager (ARM) templates and Bicep files for deploying Azure SQL resources. Understand how to use PowerShell and Azure CLI for automation purposes.
 abstract: |
   After completing this module, you will be able to:
-  - Deploy an Azure Resource Manager template using PowerShell and CLI
-  - Deploy an Azure Resource Manager template using Azure DevOps
-  - Explore the structure of an Azure Resource Manager template
+  - Describe the deployment models available on Azure
+  - Deploy database resources using PowerShell and Azure CLI
+  - Deploy an Azure Resource Manager template and Bicep
+  - Understand the difference between multiple command-line options
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
@@ -35,8 +36,9 @@ subjects:
 units:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.introduction
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.describe-deployment-models-azure
-- learn.wwl.configure-automatic-deployment-for-azure-sql-database.create-azure-rm-template
-- learn.wwl.configure-automatic-deployment-for-azure-sql-database.deploy-azure-rm-template
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-azure-resource-manager-bicep
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-powershell
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-cli
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.exercise-deploy-azure-database-using-template
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.knowledge-check
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.summary
