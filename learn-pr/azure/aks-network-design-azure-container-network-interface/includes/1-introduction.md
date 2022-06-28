@@ -6,6 +6,8 @@ You want to build the application using containers and will be adopting DevOps p
 
 Your company has recently standardized on Kubernetes to host all container-based workloads. You've been asked to design the cluster for the new service, but you quickly come to realize that involves the design of the network, which is heavily influenced by the needs of the application. Where do you begin with designing your network?
 
+[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 ## Learning objectives
 
 Upon completing this module, you will be able to:
