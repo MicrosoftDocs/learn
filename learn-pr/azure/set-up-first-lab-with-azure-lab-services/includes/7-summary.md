@@ -10,7 +10,7 @@ Now, when you want to create labs for uses such as classroom training in cyberse
 
 ## Cleanup
 
-Delete the resource group that contains the lab plan to clean up your subscription.
+Delete the resource group that contains the lab plan and lab to clean up your subscription.
 
 ## References
 
