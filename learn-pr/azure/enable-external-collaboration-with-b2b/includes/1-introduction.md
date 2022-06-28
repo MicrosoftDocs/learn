@@ -6,7 +6,7 @@ Suppose you're an IT admin for a healthcare organization. Your company is publis
 
 ## What will we be doing?
 
-This module shows you how to share applications with external users so they can sign in using their own work, school, or social identities. You will invite a user to access an app using Azure AD B2B collaboration. You will also apply multi-factor authentication to external user sign-ins for added security.
+This module shows you how to share applications with external users so they can sign in using their own work, school, or social identities. You will invite a user to access an application using Azure AD B2B collaboration. You will also apply multi-factor authentication to external user sign-ins for added security.
 
 ## What is the main goal?
 

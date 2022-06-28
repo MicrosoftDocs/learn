@@ -1,5 +1,5 @@
 
-In our example scenario, you need to invite external clinicians to access your app using B2B collaboration. In our example, some of the clinicians will use their work accounts from an Azure AD organization, and some will need to use their personal social identities.
+In our example scenario, you need to invite external clinicians to access your health records application using B2B collaboration. In our example, some of the clinicians will use their work accounts from an Azure AD organization, and some will need to use their personal social identities.
 
 In this exercise, you first make sure your settings are configured to enable B2B collaboration. Then you go through the steps for sending an invitation to an external user and see the experience from the B2B collaboration user's perspective.
 
@@ -26,7 +26,7 @@ First, make sure that your External Identities settings and external collaborati
 
 ## Send a B2B collaboration invitation to an external user
 
-To add guest users, you'll use the a form. This form lets you input the guest user's email address, and any customized message you want to include in the body of the invitation. 
+To add guest users, you can invite them using a form that lets you enter the guest user's email address, name, and any customized message you want to include in the body of the invitation.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Search for and select the **Azure Active Directory** service.
@@ -45,10 +45,10 @@ To add guest users, you'll use the a form. This form lets you input the guest us
 
     ![Screenshot of inviting a user in the Azure portal.](../media/2-invite-guest-user.png)
 
-1. Now you can assign your healthcare application to the clinician's guest account. In the left menu, select **Enterprise applications**.
+1. Now you can assign your health records application to the clinician's guest account. In the left menu, select **Enterprise applications**.
 1. The **All applications** page appears, showing a list of all the enterprise applications registered in your Azure AD organization. Find your application in the list and select it.
 2. An overview of your application's properties appears. In the left menu, select **Users and groups**.
-3. The **Users and groups** list shows all the users who are currently assigned to this app. Because you want to add the clinician to this list, select **Add user/group**.
+3. The **Users and groups** list shows all the users who are currently assigned to this application. Because you want to add the clinician to this list, select **Add user/group**.
 4. On the Add Assignment page, under Users, select the **None Selected** link.
 5. Find the clinician's new guest account in the **Users** list, and select it. Then click the **Select** button.
 6. Back on the Add Assignment page, select the **Assign** button.
@@ -60,7 +60,8 @@ The B2B collaboration user receives an email invitation like the following.
 
 :::image type="content" source="../media/3-invitation-email.png" alt-text="Screenshot of invitation email." loc-scope="other"::: <!-- APEX 10 -->
 
-The user selects the **Accept invitation** link in the email invitation. The first time they click this link, they need to provide their consent to the privacy information.
+The user selects the **Accept invitation** link in the email invitation. The first time the link is used, the user is asked for consent. In this way, Azure AD B2B helps to provide transparency for partner users. Your external users will always know what information they're sharing. The user must accept the permissions needed by Azure AD B2B before they can gain access.
+
 
 :::image type="content" source="../media/3-review-permissions.png" alt-text="Screenshot of invitation email." loc-scope="other"::: <!-- APEX 10 -->
 
@@ -73,6 +74,4 @@ After the user provides their consent, they're brought to their Apps access pane
 
 :::image type="content" source="../media/3-apps-access-panel.png" alt-text="Screenshot of apps access page for external user." loc-scope="other"::: <!-- APEX10 -->
 
-Now the external clinician can open your healthcare app from their Apps access panel.
-
-Congratulations, you've added the B2B collaboration user, and now they can start collaborating using your application!
+Now the external clinician can open your health records application from their Apps access panel.

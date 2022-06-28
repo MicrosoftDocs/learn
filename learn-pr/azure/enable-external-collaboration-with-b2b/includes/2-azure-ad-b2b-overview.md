@@ -24,15 +24,11 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 
     ![Screenshot of inviting a user in the Azure portal.](../media/2-invite-guest-user.png)
 
-1. **The B2B collaboration user accepts your invitation and reviews permissions**
+1. **The B2B collaboration user accepts your invitation and reviews privacy information**
 
-    At the second stage in the diagram, the B2B collaboration user receives an invitation via email, and then uses the **Accept invitation** link to access the services you want to share with them.
+    At the second stage in the diagram, the B2B collaboration user receives an invitation via email, and then uses the **Accept invitation** link to access the services you want to share with them. The first time they use this link, they'll be asked to consent to privacy information and terms of use.
 
     :::image type="content" source="../media/2-email-confirmation.png" alt-text="Screenshot of the email confirmation." loc-scope="other"::: <!-- APEX10 -->
-
-    The first time the link is used, the user is asked for consent. In this way, Azure AD B2B helps to provide transparency for partner users. Your external users will always know what information they're sharing. The user must accept the permissions needed by Azure AD B2B before they can gain access.
-
-    ![Screenshot of permissions dialog box.](../media/2-consent-screen.png)
 
 1. **The user completes multi-factor authentication**
 
@@ -42,12 +38,7 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 
 1. **The user finds your apps on their access panel**
 
-    Your B2B collaboration user is then forwarded to the access panel page, where they can access all the applications and services you've shared with them. These applications and services can be cloud-based, or on-premises. Here's what it looks like for an external user when they access applications by using their identity through Azure AD B2B collaboration.
+    Your B2B collaboration user is then forwarded to the access panel page, where they can access all the applications and services you've shared with them. These applications and services can be cloud-based, or on-premises.
 
     :::image type="content" source="../media/2-shared-apps.png" alt-text="Screenshot of access panel page, showing shared apps." loc-scope="other"::: <!-- APEX10 -->
 
-## Adding protection through multi-factor authentication
-
-Conditional Access policies, such as multi-factor authentication, can add extra layers of security to your application. Even if your B2B collaboration user authenticates through their identity provider, they'd still need to meet a device challenge before they could access your application.
-
-You enforce multi-factor authentication by adding a new Conditional Access policy to your application's Azure AD settings in the portal. Then you select the users that should be affected by the policy (guest users in our case). Then you decide on the conditions you want to put in place. We'll talk about this in more detail later.
