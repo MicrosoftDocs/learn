@@ -19,7 +19,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- The latest version of [.NET Core](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true)
+- [.NET SDK 6.0](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
 - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
 - An Azure Quantum workspace
