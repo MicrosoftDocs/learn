@@ -4,7 +4,7 @@ title: Manage access
 metadata:
   title: Manage access
   description: "Manage access"
-  ms.date: 12/03/2021
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-manage-access.md)]
+  [!include[](includes/5-manage-access.md)]
