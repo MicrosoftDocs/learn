@@ -1,4 +1,4 @@
-As you are now a part of the Microsoft Learn for Educators (MSLE) program, preparing to deliver a class is the most exciting, crucial, and possibly overwhelming part of this journey toward empowering your students with the technical skills and industry-recognized certifications needed to prepare them for their future careers. In order to ensure the success of your class and your students, we have some tips and a checklist to help you in preparing for your upcoming class.  
+As you're now a part of the Microsoft Learn for Educators (MSLE) program, preparing to deliver a class is the most exciting, crucial, and possibly overwhelming part of this journey. You're empowering your students with the technical skills and industry-recognized certifications needed to prepare them for their future careers. In order to ensure the success of your class and your students, we have some tips and a checklist to help you in preparing for your upcoming class.  
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oKh]
 

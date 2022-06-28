@@ -1,4 +1,4 @@
-The new term is going to start in a few weeks, and you are incorporating Microsoft Official Curriculum (MOC) into your class for the first time, maybe you have done this before and want a refresher, or maybe you have been teaching Microsoft Fundamentals and you are going to teach Advanced Role-Based content for the first time. Regardless, this module and checklist are for you.  
+The new term is going to start in a few weeks, and you're incorporating Microsoft Official Curriculum (MOC) into your class for the first time. Maybe you have done this before and want a refresher, or maybe you have been teaching Microsoft Fundamentals and you're going to teach Advanced Role-Based content for the first time. Regardless, this module and checklist are for you.  
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Nm8]
 
@@ -24,30 +24,30 @@ Getting ready to teach checklist:
 
 4. Review [MOC Virtual Educator Prep Sessions (VEPS)](https://aka.ms/msletrainingtools) 
 
-   - MOC VEPS provide tips and tricks from Microsoft technical trainers on how to prepare your classes, which labs to use and when, how to introduce topics, and other resources and materials that might help your students to be more successful on their exams 
+   - MOC VEPS provides tips and tricks from Microsoft technical trainers on how to prepare your classes. You'll learn which labs to use and when, how to introduce topics, and other resources and materials that might help your students to be more successful on their exams 
 
    - Review the updated list of [Training and Tools](https://aka.ms/MSLETrainingTools) or through the training events tab on the [MSLE portal](https://aka.ms/MSLEPort) 
 
 5. Engage with other educators in the [MSLE Teams community](https://aka.ms/JoinEdTeams) 
 
-   - Find who else might be teaching the content you are teaching this term and talk about what you are doing in class and learn from what they might be doing or from the questions that their students are asking 
+   - Find who else might be teaching the content you're teaching this term and talk about what you're doing in class and learn from what they might be doing or from the questions that their students are asking 
 
-   - This community is a really important network and can help you feel supported and connected even beyond the term 
+   - This community is important network and can help you feel supported and connected even beyond the term 
 
 6. Finalize my student certification plan  
 
-   - To take an exam, students will first need exam vouchers or access to an institution’s certification license to sit the exams and use practice exams 
+   - To take an exam, students will first need exam vouchers, or access to an institution’s certification license to sit the exams and use practice exams 
 
    - Communicate the plan to your students through your syllabus and ensure that everyone is set up for success 
 
-7. Finalize syllabus, set expectations, and set-up Learning Management System (LMS) 
+7. Finalize syllabus, set expectations, and set up Learning Management System (LMS) 
 
    - Make sure your course page is fully set up in your LMS. Revisit the Microsoft Learn for Educators [course planning module](https://aka.ms/MSLEcourseplan) for more information on how to set-up your LMS  
 
    - Ensure that information is clearly communicated in the syllabus 
 
-   - Make sure that your course page is up to date with the resources from [Microsoft Learn](https://aka.ms/learn), GitHub, and others that you want your students to have access to for the course 
+   - Make sure that your course page is up to date with the resources from [Microsoft Learn](https://aka.ms/learn), GitHub, and others that you want your students to access for the course 
 
-   - Send students that email welcoming them to class, let them know about the exam they will be taking, that they can create their Azure for Students account to access $100 Azure credits (no payment is needed, and these credits are valid for 12 months of free Azure services)  
+   - Send students an email that welcomes them to class, let them know about the exam they'll be taking, that they can create their Azure for Students account to access $100 Azure credits. No payment is necessary. These credits are valid for 12 months of free Azure services.  
 
-   - You will receive an email about 14 days before your course starts that contains an email template with a link to a pre-survey that has been created specifically for your students. About 14 days before your class ends, you will receive another email template to send to your students with a post-survey link. The survey results will enable you to get insights into your students’ experiences, get feedback, and provide them with the best tools for the course 
+   - You'll receive an email about 14 days before your course starts that contains an email template with a link to a pre-survey that has been created specifically for your students. About 14 days before your class ends, you'll receive another email template to send to your students with a post-survey link. The survey results will enable you to get insights into your students’ experiences, get feedback, and provide them with the best tools for the course 

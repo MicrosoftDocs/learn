@@ -1,4 +1,4 @@
-Your students want skills that make them employable. Using the resources available from Microsoft to help prepare to teach your course will help you feel confident you are providing your students the skills they need skills to be successful across a variety of in-demand technical careers.  
+Your students want skills that make them employable. Using the resources available from Microsoft to help prepare to teach your course will help you feel confident you're providing your students the skills they need skills to be successful across various in-demand technical careers.  
 
 Supplemental Resources: 
 
