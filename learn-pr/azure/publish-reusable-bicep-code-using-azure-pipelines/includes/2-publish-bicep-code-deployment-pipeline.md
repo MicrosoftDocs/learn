@@ -43,7 +43,7 @@ When you publish a template spec from your own computer by using the Azure CLI, 
 ```azurecli
 az ts create \
   --name StorageWithoutSAS \
-  --location westus \
+  --location westus3 \
   --display-name "Storage account with SAS disabled" \
   --description "This template spec creates a storage account, which is preconfigured to disable SAS authentication." \
   --version 1 \
@@ -63,7 +63,7 @@ You can convert this Azure CLI command to a pipeline step:
     inlineScript: |
       az ts create \
         --name StorageWithoutSAS \
-        --location westus \
+        --location westus3 \
         --display-name "Storage account with SAS disabled" \
         --description "This template spec creates a storage account, which is preconfigured to disable SAS authentication." \
         --version 1 \
