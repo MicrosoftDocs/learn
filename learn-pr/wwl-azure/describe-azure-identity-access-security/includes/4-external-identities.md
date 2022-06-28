@@ -2,7 +2,7 @@ An external identity is a person, device, service, etc. that is outside your org
 
 External identities may sound similar to single sign-on. With External Identities, external users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD or Azure AD B2C to keep your resources protected.
 
-:::image type="content" source="../media/azure-active-directory-external-identities-5a892021.png" alt-text="Illustration showing B two B collaborators accessing your tenant and B two C collaborators accessing the AD B two C tennant.":::
+:::image type="content" source="../media/azure-active-directory-external-identities-5a892021.png" alt-text="Diagram showing B two B collaborators accessing your tenant and B two C collaborators accessing the AD B two C tennant.":::
 
 
 The following capabilities make up External Identities:
@@ -13,6 +13,6 @@ The following capabilities make up External Identities:
 
 Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities .
 
-With Azure Active Directory (Azure AD), you can easily enable collaboration across organizational boundaries by using the Azure AD B2B feature. Guest users from other tenants can be invited by administrators or by other users. This capability also applies to social identities such as Microsoft accounts.<br>
+With Azure Active Directory (Azure AD), you can easily enable collaboration across organizational boundaries by using the Azure AD B2B feature. Guest users from other tenants can be invited by administrators or by other users. This capability also applies to social identities such as Microsoft accounts.
 
-You also can easily ensure that guest users have appropriate access. You can ask the guests themselves or a decision maker to participate in an access review and recertify (or attest) to the guests' access. The reviewers can give their input on each user's need for continued access, based on suggestions from Azure AD. When an access review is finished, you can then make changes and remove access for guests who no longer need it.<br>
+You also can easily ensure that guest users have appropriate access. You can ask the guests themselves or a decision maker to participate in an access review and recertify (or attest) to the guests' access. The reviewers can give their input on each user's need for continued access, based on suggestions from Azure AD. When an access review is finished, you can then make changes and remove access for guests who no longer need it.

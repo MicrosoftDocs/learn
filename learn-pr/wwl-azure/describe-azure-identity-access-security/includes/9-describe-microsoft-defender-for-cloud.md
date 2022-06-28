@@ -40,7 +40,7 @@ Defender for Cloud fills three vital needs as you manage the security of your re
  -  Secure – Harden resources and services with Azure Security Benchmark.
  -  Defend – Detect and resolve threats to resources, workloads, and services.
 
-:::image type="content" source="../media/assess-secure-defend-46228306.png" alt-text="An illustration reinforcing assess, secure, and defend.":::
+:::image type="content" source="../media/assess-secure-defend-46228306.png" alt-text="Diagram reinforcing assess, secure, and defend.":::
 
 
 ### Continuously assess
@@ -63,7 +63,7 @@ In this way, Defender for Cloud enables you not just to set security policies, b
 
 To help you understand how important each recommendation is to your overall security posture, Defender for Cloud groups the recommendations into security controls and adds a secure score value to each control. The secure score gives you an at-a-glance indicator of the health of your security posture, while the controls give you a working list of things to consider to improve your security score and your overall security posture.
 
-:::image type="content" source="../media/defender-for-cloud-d47a71d8.png" alt-text="A Defender for Cloud screenshot showing the secure score.":::
+:::image type="content" source="../media/defender-for-cloud-d47a71d8.png" alt-text="Screenshot showing the Microsoft Defender for Cloud secure score.":::
 
 
 ### Defend

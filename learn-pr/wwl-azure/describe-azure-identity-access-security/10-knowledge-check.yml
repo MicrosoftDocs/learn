@@ -39,14 +39,14 @@ quiz:
     - content: "Role-based access control"
       isCorrect: false
       explanation: "Role-based access control provides the ability to grant or deny access based on a user or services assigned role."
-  - content: "You’re simultaneously assigned multiple roles that use role-based access control. The role permissions are: Role 1 - read || Role 2 - write || Role 3 - read and write."
+  - content: "A user is simultaneously assigned multiple roles that use role-based access control. What are their actual permissions? The role permissions are: Role 1 - read || Role 2 - write || Role 3 - read and write."
     choices:
     - content: "Read only"
       isCorrect: false
-      explanation: "Role-based access control works on an allow model, so you’d wouldn’t be limited to the permissions of only one role."
+      explanation: "Role-based access control works on an allow model, so they wouldn’t be limited to the permissions of only one role."
     - content: "Write only"
       isCorrect: false
-      explanation: "Role-based access control works on an allow model, so you’d wouldn’t be limited to the permissions of only one role."
+      explanation: "Role-based access control works on an allow model, so they wouldn’t be limited to the permissions of only one role."
     - content: "Read and write"
       isCorrect: true
       explanation: "Role-based access control, using an allow model, grants all of the permissions assigned in all of the assigned roles."

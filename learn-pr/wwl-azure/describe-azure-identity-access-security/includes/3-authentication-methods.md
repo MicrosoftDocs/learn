@@ -17,7 +17,8 @@ Consider the process of managing all those identities. More strain is placed on 
 
 With SSO, you need to remember only one ID and one password. Access across applications is granted to a single identity that's tied to the user, which simplifies the security model. As users change roles or leave an organization, access is tied to a single identity. This change greatly reduces the effort needed to change or disable accounts. Using SSO for accounts makes it easier for users to manage their identities and for IT to manage users.
 
-Important: Single sign-on is only as secure as the initial authenticator because the subsequent connections are all based on the security of the initial authenticator.
+> [!IMPORTANT]
+> Single sign-on is only as secure as the initial authenticator because the subsequent connections are all based on the security of the initial authenticator.
 
 ## What’s Multifactor Authentication?
 
