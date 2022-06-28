@@ -2,7 +2,7 @@ Your app is configured to use Orleans and two endpoints to provide basic functio
 
 ## Configure grain storage
 
-You can configure how the app stores grains by modifying the `UseOrleans` method. Update the existing `siloBuilder` configuration code in your app to match the example below.
+You can configure how the app stores grains by modifying the `UseOrleans` method. Update the existing `siloBuilder` configuration code in your app to match the following example:
 
 ```csharp
 builder.Host.UseOrleans(siloBuilder =>
@@ -18,7 +18,7 @@ This code instructs Orleans to store grains in memory and names the storage `url
 
 The next step is to update the `UrlShortenerGrain` to use persistent state.
 
-1) Add a constructor and corresponding field to the `UrlShortenerGrain` using the code below.
+1) Add a constructor to the `UrlShortenerGrain` and update the corresponding field so they match the following code:
 
     ```csharp
     private IPersistentState<KeyValuePair<string, string>> _cache;
@@ -35,13 +35,13 @@ The next step is to update the `UrlShortenerGrain` to use persistent state.
     
     The `PersistentState` attribute is provided by Orleans. The attribute handles many internal tasks related to storing and retrieving state values for the grain. You simply need to provide a name for the state object and the name of the storage silo. The `storageName` should be the same as the value you provided to the `AddMemoryGrainStorage` method in the silo configuration.
 
-2) Update the grain methods to use the new state field so that they match the code below.
+2) Update the grain methods to use the new state field so that they match the following code:
 
     ```csharp
     public async Task SetUrl(string shortenedRouteSegment, string fullUrl)
     {
         _cache.State = new KeyValuePair<string, string>(shortenedRouteSegment, fullUrl);
-        await _state.WriteStateAsync();
+        await _cache.WriteStateAsync();
     }
     
     public Task<string> GetUrl()

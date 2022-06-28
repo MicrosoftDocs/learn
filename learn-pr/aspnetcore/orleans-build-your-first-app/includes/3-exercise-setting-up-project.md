@@ -35,7 +35,7 @@ You can create and run a new minimal API project using the steps below.
     dotnet run
     ```
 
-    After a moment, the app should launch in your browser and display the message `Hello World`. By the end of the module you'll expand this app to provide URL shortening capabilities.
+    After a moment, the app should launch in your browser and display the message `Hello World!`. By the end of the module you'll expand this app to provide URL shortening capabilities.
 
 ## Adding Orleans to the project
 

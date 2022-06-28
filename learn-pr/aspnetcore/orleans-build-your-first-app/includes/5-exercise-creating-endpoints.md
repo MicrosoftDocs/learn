@@ -18,7 +18,7 @@ You'll build the endpoint to create and return shortened URLs first. This method
 
     This method is also marked as async to properly support the behavior of Orleans. Currently the method just returns an empty 200 OK, so you'll fix that next.
 
-1) Update the body of the GET method you created to match the code below.
+1) Update the body of the GET method you created to match the following code:
 
     ```csharp
     app.MapGet("/shorten/{*path}", async (HttpContext context, string path) =>
@@ -65,7 +65,7 @@ Next you need to create the endpoint that will redirect shortened URLs to the fu
 
 ## Testing the app
 
-The core functionality of the app should now work as expected. You can test the app using the steps below.
+The core functionality of the app should now work as expected, so now you can test your code.
 
 1) Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app.
 
@@ -73,7 +73,7 @@ The core functionality of the app should now work as expected. You can test the 
 dotnet run
 ```
 
-The app should launch in the browser, and you should see the familiar "Hello world!" text.
+The app should launch in the browser, and you should see the familiar `Hello world!` text.
 
 1) In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 

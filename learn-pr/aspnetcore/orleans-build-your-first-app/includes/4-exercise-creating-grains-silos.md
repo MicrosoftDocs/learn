@@ -13,12 +13,12 @@ Orleans grains should utilize an interface to define their methods and propertie
     ```csharp
     public interface IUrlShortenerGrain : IGrainWithStringKey
     {
-        Task SetUrl(string alias, string fullUrl);
+        Task SetUrl(string shortenedRouteSegment, string fullUrl);
         Task<string> GetUrl();
     }
     ```
 
-1. Create a `UrlShortenerGrain` class using the code below. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The `Grain` base class provides essential functionality for the internal behaviors of Orleans.
+1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The `Grain` base class provides essential functionality for the internal behaviors of Orleans.
 
     ```csharp
     public class UrlShortenerGrain : Grain, IUrlShortenerGrain
@@ -38,7 +38,7 @@ Orleans grains should utilize an interface to define their methods and propertie
     }
     ```
 
-    The `SetUrl` method stores the shortened route segment and the full URL in a field on the class. When the grain is retrieved using the alias identifier, the `GetUrl` method then returns the full URL. The full URL can be used by the app to redirect the user to the desired location.
+    The `SetUrl` method stores the shortened route segment and the full URL in a field on the class. When the grain is retrieved using the shortened identifier, the `GetUrl` method then returns the full URL. The full URL can be used by the app to redirect the user to the desired location.
 
 ## Creating and configuring the silo
 
@@ -56,10 +56,10 @@ You've defined a grain class and interface in your app. However, in order to imp
     
     var app = builder.Build();
     ```
-    
+
     The code uses a `SiloBuilder` class to create a silo that can store your grains. In this scenario, you'll use a localhost cluster, but in a production app you can configure more robust options. Remember, a cluster is the collection of silos for your app.
 
-2) Next, you need to retrieve an instance of a grain factory. Orleans provides a default grain factory that manages the creation and retrieval of grains using their identifier. Before calling `var app = builder.Build();`, add the following line of code to get the grain factory and store it in a variable called `grainFactory`:
+2) Next, you need to retrieve an instance of a grain factory. Orleans provides a default grain factory that manages the creation and retrieval of grains using their identifier. After calling `var app = builder.Build();`, add the following line of code to get the grain factory and store it in a variable called `grainFactory`:
 
     ```csharp
     var grainFactory = app.Services.GetRequiredService<IGrainFactory>();
