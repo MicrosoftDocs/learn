@@ -6,4 +6,4 @@ The Incident Investigation Graph includes an option for **Insights**.  Insights 
 
 Entity pages are designed to be part of multiple usage scenarios, and can be accessed from incident management, the investigation graph, bookmarks, or directly from the entity search page under **Entity behavior analytics** in the Microsoft Sentinel main menu.
 
-:::image type="content" source="../media/entity-behavior-5.png" alt-text="Entity Page":::
+:::image type="content" source="../media/entity-behavior-5.png" alt-text="Diagram of connections to the Entity Page.":::

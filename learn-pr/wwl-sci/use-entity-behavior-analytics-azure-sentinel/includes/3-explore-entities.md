@@ -1,8 +1,8 @@
-When alerts are sent to Microsoft Sentinel, they include data elements that Microsoft Sentinel identifies and classifies as entities, such as user accounts, hosts, IP addresses and others. On occasion, this identification can be a challenge, if the alert does not contain sufficient information about the entity.
+When alerts are sent to Microsoft Sentinel, they include data elements that Microsoft Sentinel identifies and classifies as entities, such as user accounts, hosts, IP addresses and others. On occasion, this identification can be a challenge, if the alert doesn't contain sufficient information about the entity.
 
 For example, user accounts can be identified in more than one way: using an Azure AD account’s numeric identifier (GUID), or its User Principal Name (UPN) value, or alternatively, using a combination of its username and its NT domain name. Different data sources can identify the same user in different ways. Therefore, whenever possible, Microsoft Sentinel merges those identifiers into a single entity, so that it can be properly identified.
 
-It can happen, though, that one of your resource providers creates an alert in which an entity is not sufficiently identified - for example, a user name without the domain name context. In such a case, the user entity cannot be merged with other instances of the same user account, which would be identified as a separate entity, and those two entities would remain separate instead of unified.
+It can happen, though, that one of your resource providers creates an alert in which an entity isn't sufficiently identified - for example, a user name without the domain name context. In such a case, the user entity can't be merged with other instances of the same user account, which would be identified as a separate entity, and those two entities would remain separate instead of unified.
 
 In order to minimize the risk of this happening, you should verify that all of your alert providers properly identify the entities in the alerts they produce. Additionally, synchronizing user account entities with Azure Active Directory may create a unifying directory, which will be able to merge user account entities.
 
@@ -48,7 +48,7 @@ The following types of entities are currently identified in Microsoft Sentinel:
 
 ### Entity pages
 
-When you encounter any entity (currently limited to users and hosts) in a search, an alert, or an investigation, you can select the entity and be taken to an **entity page**, a datasheet full of useful information about that entity. The types of information you will find on this page include basic facts about the entity, a timeline of notable events related to this entity and insights about the entity's behavior.
+When you encounter any entity (currently limited to users and hosts) in a search, an alert, or an investigation, you can select the entity and be taken to an **entity page**, a datasheet full of useful information about that entity. The types of information you'll find on this page include basic facts about the entity, a timeline of notable events related to this entity and insights about the entity's behavior.
 
 Entity pages consist of three parts:
 
@@ -60,7 +60,7 @@ Entity pages consist of three parts:
 
 ### The timeline
 
-:::image type="content" source="../media/entity-behavior-4.png" alt-text="Entity Behavior timeline":::
+:::image type="content" source="../media/entity-behavior-4.png" alt-text="Screen shot of an Entity Behavior timeline.":::
 
 The timeline is a major part of the entity page's contribution to behavior analytics in Microsoft Sentinel. It presents a story about entity-related events, helping you understand the entity's activity within a specific time frame.
 
@@ -68,7 +68,7 @@ You can choose the **time range** from among several preset options (such as *la
 
 The following types of items are included in the timeline:
 
-Alerts - any alerts in which the entity is defined as a **mapped entity**. Note that if your organization has created [custom alerts using analytics rules](/azure/sentinel/tutorial-detect-threats-custom?azure-portal=true), you should make sure that the rules' entity mapping is done properly.
+Alerts - any alerts in which the entity is defined as a **mapped entity**. If your organization has created [custom alerts using analytics rules](/azure/sentinel/tutorial-detect-threats-custom?azure-portal=true), you should make sure that the rules' entity mapping is done properly.
 
 Bookmarks - any bookmarks that include the specific entity shown on the page.
 
