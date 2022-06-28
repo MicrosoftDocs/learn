@@ -32,7 +32,7 @@ Make a note of this object since you'll need to add it to your GitHub secrets.
 
 ## Creating a GitHub secret
 
-In your GitHub repository, navigate to **Settings** &gt; **Secrets** &gt; **Actions**. Create a new secret called `AZURE_CREDENTIALS` and paste the entire JSON object you got from the previous step.
+In your GitHub repository, navigate to **Settings** > **Secrets** > **Actions**. Create a new secret called `AZURE_CREDENTIALS` and paste the entire JSON object you got from the previous step.
 
 Create another secret for the name of the resource group with a name such as `AZURE_RG` and one for the subscription.
 
