@@ -12,7 +12,7 @@ intermediate
 
 ## Product(s)
 
-microsoft-graph
+microsoft-graph-extensions-api
 
 ## Prerequisites
 
