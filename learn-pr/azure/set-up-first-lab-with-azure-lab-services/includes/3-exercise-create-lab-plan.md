@@ -48,7 +48,7 @@ The following steps show how to use the Azure portal to create a lab plan.
 1. Select **Labs settings** on the left menu.
 1. Select the auto-shutdown setting(s) that is appropriate for your scenario.  
 
-    :::image type="content" source="../media/automatic-shutdown-vm-disconnect.png" alt-text="Automatic shutdown setting at lab plan":::
+    :::image type="content" source="../media/automatic-shutdown-vm-disconnect.png" alt-text="Screenshot that shows automatic shutdown setting at lab plan.":::
 
     To disable the setting(s), uncheck the checkbox(s) on this page.
 

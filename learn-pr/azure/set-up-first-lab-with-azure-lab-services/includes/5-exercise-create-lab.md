@@ -29,8 +29,8 @@ The following steps show how to create a lab with Azure Lab Services.
 
         :::image type="content" source="../media/new-lab-credentials.png" alt-text="Screenshot of the Virtual Machine credentials window for Azure Lab Services.":::
 
-    > [!NOTE]
-    > Make a note of user name and password. They won't be shown again.
+        > [!NOTE]
+        > Make a note of user name and password. They won't be shown again.
 
     1. On the **Lab policies** page, leave the default selections and select **Next**.
 
