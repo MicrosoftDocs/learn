@@ -1,4 +1,4 @@
-Searching for information online has never been easier. However, it is still a challenge to find information from documents that are not in a search index. For example, every day, people deal with unstructured, typed, image-based, or hand-written documents. Often, people must manually read through these documents to extract and record their insights in order to persist the found data. Now we have solutions that can automate information extraction.  
+Searching for information online has never been easier. However, it's still a challenge to find information from documents that aren't in a search index. For example, every day, people deal with unstructured, typed, image-based, or hand-written documents. Often, people must manually read through these documents to extract and record their insights in order to persist the found data. Now we have solutions that can automate information extraction.  
 
 Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data. One of these knowledge mining solutions is Azure Cognitive Search, a private, enterprise, search solution that has tools for building indexes. The indexes can then be used for internal only use, or to enable searchable content on public facing internet assets.
 
@@ -8,7 +8,7 @@ Importantly, Azure Cognitive Search can utilize the built-in AI capabilities of 
 
 In this module, you will:
 
-- Understand how Azure Cognitive Search uses AI skills   
+- Understand how Azure Cognitive Search uses AI skills
 - Extract data from documents using an indexer in the Azure portal
-- Describe the purpose of a Knowledge Store 
-- Build and query a search index   
+- Describe the purpose of a Knowledge Store
+- Build and query a search index
