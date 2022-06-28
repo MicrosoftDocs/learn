@@ -1,4 +1,4 @@
-The few weeks leading up to the start of the term are filled with many activities to ensure you're prepared for class: You're finalizing your syllabus, ensuring that all of your course materials and assignments are posted to your class page, and figuring out the right first day activity to engage your students.  
+The few weeks leading up to the start of the term are filled with many activities to ensure you're prepared for class: You're finalizing your syllabus, ensuring that all of your course materials and assignments are posted to your class page, and figuring out first day activities to engage your students.  
 
 ### Learning objectives 
 

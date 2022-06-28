@@ -12,7 +12,7 @@ Checklist for closing out the term:
 
    - If your plan is to have your students apply the free Fundamentals certification exam vouchers from Microsoft, then ensure that they've all visited the [Student Certification page](https://aka.ms/studentcertification) to review the details 
 
-   - Ensure that you're explicit with your students about the date in which they'll need to take their exam and any expectation you may have around knowing the results of their exam 
+   - Ensure that you're explicit with your students about the date in which they'll take their exam and any expectations you have around knowing the results of their exam 
 
 2. Help improve MSLE 
 
@@ -24,4 +24,4 @@ Checklist for closing out the term:
 
    - We hope your course was a success and that you consider continuing to use Microsoft curriculum and teaching materials in your classes.  
 
-   - Check out [MSLE](https://aka.ms/MSLE) to find new materials we've added to the program. Once you determine what you're going to be teaching next, add those course details to the [MSLE portal](https://aka.ms/MSLEPort) so that we can continue to support you and your students. 
+   - Check out [MSLE](https://aka.ms/MSLE) to find new materials we've added to the program. Once you determine what you're going to be teaching next, add those course details to the [MSLE portal](https://aka.ms/MSLEPort) so that we can support you and your students. 
