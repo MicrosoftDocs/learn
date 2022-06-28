@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "CSV."
       isCorrect: false
-      explanation: "Incorrect. Your Azure Storage blob can contain all types of files, but CSV isn't supported for the Search index."
+      explanation: "Incorrect. If source data is a CSV file, you'll have to convert it to JSON before you can push it to an index. You can also use an indexer to parse CSV files stored in Azure Storage."
     - content: "SQL."
       isCorrect: false
-      explanation: "Incorrect. SQL isn't supported."
+      explanation: "Incorrect. SQL data isn't supported natively. You can either convert it to JSON or use an indexer that serializes the content for you."
     - content: "JSON."
       isCorrect: true
-      explanation: "Correct. Documents are imported as JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
+      explanation: "Correct. Cognitive Search can index JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
   - content: "Which explanation best describes an indexer and an index?"
     choices:
     - content: "An indexer converts documents into JSON and forwards them to a search engine for indexing."

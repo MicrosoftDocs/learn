@@ -6,7 +6,7 @@ Azure Cognitive Search results contain only your data, which can include text in
 
 ## Azure Cognitive Search features 
 
-Azure Cognitive Search exists to compliment existing technologies and provides a programmable search engine built on Apache Lucene, an open-source software library. It is a highly available platform offering a 99.9% uptime SLA available for cloud and on-premises assets.
+Azure Cognitive Search exists to complement existing technologies and provides a programmable search engine built on Apache Lucene, an open-source software library. It's a highly available platform offering a 99.9% uptime SLA available for cloud and on-premises assets.
 
 Azure Cognitive Search comes with the following features:
 
@@ -16,4 +16,3 @@ Azure Cognitive Search comes with the following features:
 - **Multi-lingual**: Azure Cognitive Search offers linguistic analysis for 56 languages to intelligently handle phonetic matching or language-specific linguistics. Natural language processors available in Azure Cognitive Search are the same as those used by Bing and Office.
 - **Geo-enabled**: Azure Cognitive Search supports geo-search filtering based on proximity to a physical location.
 - **Configurable user experience**: Azure Cognitive Search has several features to improve the user experience including autocomplete, autosuggest, pagination, and hit highlighting.
-

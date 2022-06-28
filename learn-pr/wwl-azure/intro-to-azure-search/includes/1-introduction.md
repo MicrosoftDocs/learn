@@ -8,7 +8,7 @@ Importantly, Azure Cognitive Search can utilize the built-in AI capabilities of 
 
 In this module, you will:
 
-- Understand how Azure Cognitive Search uses AI skills
-- Extract data from documents using an indexer in the Azure portal
-- Describe the purpose of a Knowledge Store
+- Understand how Azure Cognitive Search uses cognitive skills
+- Learn how indexers automate data ingestion steps, including JSON serialization
+- Describe the purpose of a knowledge store
 - Build and query a search index
