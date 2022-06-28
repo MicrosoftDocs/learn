@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
     - content: "Azure Percept leverages remote connectivity services like satellite."
       isCorrect: false
-      explanation: "Incorrect. Satellite connectivity isn't a valid service for Azure Percept."
+      explanation: "Incorrect. Satellite connectivity is not a valid use case for Azure Percept."
     - content: "Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
       isCorrect: true
       explanation: "Correct. Azure Percept leverages these services."

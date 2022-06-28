@@ -217,15 +217,15 @@ Next, create two service principals in Azure AD: one for your test environment a
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-       -DisplayName ToyWebsiteTest `
-       -Role Contributor `
-       -Scope $resourceGroupId
+     -DisplayName ToyWebsiteTest `
+     -Role Contributor `
+     -Scope $resourceGroupId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $servicePrincipal.AppId
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
@@ -250,15 +250,15 @@ Next, create two service principals in Azure AD: one for your test environment a
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-       -DisplayName ToyWebsiteProduction `
-       -Role Contributor `
-       -Scope $resourceGroupId
+     -DisplayName ToyWebsiteProduction `
+     -Role Contributor `
+     -Scope $resourceGroupId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $servicePrincipal.AppId
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
