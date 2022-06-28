@@ -14609,6 +14609,41 @@
       "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/4-use-office-message-encryption-templates-mail-flow-rules.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/4-use-microsoft-purview-message-encryption-templates-mail-flow-rules",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/3-onboard-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/4-onboard-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/4-manage-access.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/5-manage-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/5-create-manage-roles-for-role-based-access-control.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/6-create-manage-roles-for-role-based-access-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/6-configure-device-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/7-configure-device-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/7-configure-environment-advanced-features.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/8-configure-environment-advanced-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/9-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/10-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
