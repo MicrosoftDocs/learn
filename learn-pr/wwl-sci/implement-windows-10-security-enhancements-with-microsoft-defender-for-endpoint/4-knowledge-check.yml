@@ -35,18 +35,18 @@ quiz:
       explanation: "Incorrect.  PowerShell execution can't be blocked with an attack surface reduction rule."
     - content: "Block process creations originating from PSExec and WMI commands"
       isCorrect: true
-      explanation: "Correct.  This option is an attack surface reduction rule that can be configured."
+      explanation: "Correct.  Blocking process creation from PSExec is an attack surface reduction rule that can be configured."
     - content: "Block content from mobile devices"
       isCorrect: false
-      explanation: "Incorrect.  This option isn't an attack surface reduction rule that can be configured."
+      explanation: "Incorrect.  Not an attack surface reduction rule that can be configured."
   - content: "Which of the following items is a deployment option?"
     choices:
     - content: "PowerShell"
       isCorrect: true
-      explanation: "Correct. This is a deployment option."
+      explanation: "Correct. PowerShell is a valid deployment option."
     - content: "ASRConfig.exe"
       isCorrect: false
-      explanation: "Incorrect. This isn't a valid option."
+      explanation: "Incorrect. This utility isn't a valid option."
     - content: "Microsoft Deployment System"
       isCorrect: false
-      explanation: "Incorrect. This isn't a valid deployment option."
+      explanation: "Incorrect. This system isn't a valid deployment option."
