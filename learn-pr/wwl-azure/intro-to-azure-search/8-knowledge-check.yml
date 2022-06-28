@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data format is accepted by Azure Cognitive Search when you are pushing data to the index?"
+  - content: "Which data format is accepted by Azure Cognitive Search when you're pushing data to the index?"
     choices:
     - content: "CSV."
       isCorrect: false

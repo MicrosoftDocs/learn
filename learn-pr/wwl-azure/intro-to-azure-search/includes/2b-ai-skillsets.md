@@ -14,7 +14,7 @@ Some examples include:
 
 - Key Phrase Extraction: uses a pre-trained model to detect important phrases based on term placement, linguistic rules, proximity to other terms, and how unusual the term is within the source data.
 
-- Text Translation Skill: uses a pre-trained model to translate the input text into a variety of languages for normalization or localization use cases.
+- Text Translation Skill: uses a pre-trained model to translate the input text into various languages for normalization or localization use cases.
 
 **Image processing skills**: creates text representations of image content, making it searchable using the query capabilities of Azure Cognitive Search.
 
