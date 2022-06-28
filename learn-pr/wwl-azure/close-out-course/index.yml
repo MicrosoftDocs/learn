@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.wwl.close-out-course
+metadata:
+  title: Close out the course
+  description: "Close out the course"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Close out the course
+summary: Use the resources available from Microsoft to prepare to teach your course and feel confident you are providing your students the skills they need skills to pass a Microsoft Certification exam.
+abstract: |
+  After completing this module, you should be able to:
+  * Understand how students access free Microsoft Fundamentals exam practice tests and certification exam vouchers
+  * Understand how students access Microsoft Advanced Role-Based (ARB) Certification exam vouchers and free or discounted practice exams
+  * Understand how students schedule a certification exam
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+units:
+- learn.wwl.close-out-course.introduction
+- learn.wwl.close-out-course.get-my-students-certified-fundamentals
+- learn.wwl.close-out-course.get-my-students-certified-arb
+- learn.wwl.close-out-course.knowledge-check
+- learn.wwl.close-out-course.summary
+badge:
+  uid: learn.wwl.close-out-course.badge
