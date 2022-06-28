@@ -8,7 +8,7 @@ Perform the following steps to create a mail flow rule in the Exchange Admin Cen
 
 1. Sign in using a work or school account that has been granted Exchange administrator permissions.
 
-1. In the EAC, go to **Mail flow** > **Rules** and select **New ** > **Apply Office 365 Message Encryption and rights protection to messages…**
+1. In the EAC, go to **Mail flow** > **Rules** and select **New** > **Apply Office 365 Message Encryption and rights protection to messages…**
 
 1. Enter the following information:
 
