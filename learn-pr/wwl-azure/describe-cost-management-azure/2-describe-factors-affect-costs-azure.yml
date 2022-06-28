@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.describe-cost-management-azure.describe-factors-that-can-affect-costs-azure
+uid: learn.wwl.describe-cost-management-azure.describe-factors-affect-costs-azure
 title: Describe factors that can affect costs in Azure
 metadata:
   title: Describe factors that can affect costs in Azure
   description: "Describe factors that can affect costs in Azure"
-  ms.date: 06/27/2022
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-describe-factors-that-can-affect-costs-azure.md)]
+  [!include[](includes/2-describe-factors-affect-costs-azure.md)]

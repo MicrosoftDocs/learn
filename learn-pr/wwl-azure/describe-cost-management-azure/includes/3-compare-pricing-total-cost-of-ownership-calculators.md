@@ -9,7 +9,7 @@ The pricing calculator is designed to give you an estimated cost for provisionin
 
 With the pricing calculator, you can estimate the cost of any provisioned resources, including compute, storage, and associated network costs. You can even account for different storage options like storage type, access tier, and redundancy.
 
-:::image type="content" source="../media/pricing-calculator-770d0925.png" alt-text="Screenshot of the pricing calculator for reference.":::
+:::image type="content" source="../media/price-calculator-0a750ac3.png" alt-text="Screenshot of the pricing calculator for reference.":::
 
 
 ## TCO calculator

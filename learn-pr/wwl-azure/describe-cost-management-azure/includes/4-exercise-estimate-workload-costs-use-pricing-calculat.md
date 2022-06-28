@@ -37,7 +37,7 @@ In practice, you would define your requirements in greater detail. But here are 
 Let's start with a quick tour of the Pricing calculator.
 
 1.  Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
-2.  Notice the following tabs:<br><br>:::image type="content" source="../media/pricing-calculator-menu-bar-e3f8fee9.png" alt-text="A screenshot of the Pricing calculator menu bar with the Products tab selected.":::
+2.  Notice the following tabs:<br><br>:::image type="content" source="../media/price-calculator-menu-bar-4a43e988.png" alt-text="A screenshot of the Pricing calculator menu bar with the Products tab selected.":::
     
      -  **Products** This is where you choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
      -  **Example scenarios** Here you'll find several *reference architectures*, or common cloud-based solutions that you can use as a starting point.
