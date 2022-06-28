@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/27/2022
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: "Correct. You would first need to group by DeviceId and inside the *$group* stage you will calculate the count."
     - content: "**$unwind**"
       isCorrect: false
-      explanation: "Incorrect. *$unwind* flattens an array, but it does not calculations."
+      explanation: "Incorrect. *$unwind* flattens an array, but it does no calculations."
   - content: "When should you embed the data in your collections?"
     choices:
     - content: "When you read or update independently."
@@ -45,4 +45,4 @@ quiz:
       explanation: "Incorrect. While a compound index would have the same filtering cost than single indexes per field, it would have higher indexing cost than the single indexes per field."
     - content: "One single field index for **lastName** and one single field index for **firstName**."
       isCorrect: true
-      explanation: "Correct. Single indexes per field would have the same cost as a compound index of those fields, but would have a lower indexing cost than the indexing cost of the compound index."
+      explanation: "Correct. Single indexes per field would have the same filtering cost as a compound index of those fields, but would have a lower indexing cost than the indexing cost of the compound index."
