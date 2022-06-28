@@ -12,4 +12,4 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-Basic understanding of Microsoft 365.
+Basic understanding of Microsoft 365. 
