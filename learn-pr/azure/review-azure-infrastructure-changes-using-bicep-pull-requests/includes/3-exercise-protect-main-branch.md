@@ -290,7 +290,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
 
    Notice that your push fails with an error message that looks similar to this one:
 
-   :::code language="output" source="code/3-merge-error-github.txt" highlight="3" :::
+   :::code language="plaintext" source="code/3-merge-error-github.txt" highlight="3" :::
 
    The error message tells you that pushes to the main branch aren't permitted, and that you must use a pull request to update the branch.
 
@@ -325,7 +325,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
 
    Notice that your push fails with an error message that looks similar to this one:
 
-   :::code language="output" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
+   :::code language="plaintext" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
 
    The error message tells you that pushes to the main branch aren't permitted, and that you must use a pull request to update the branch.
 
