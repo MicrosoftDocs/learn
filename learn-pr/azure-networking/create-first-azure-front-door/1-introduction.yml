@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-first-azure-front-door.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction
+  ms.date: 06/08/2022
+  author: duongau
+  ms.author: duau
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
