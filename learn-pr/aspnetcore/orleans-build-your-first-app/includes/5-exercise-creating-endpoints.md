@@ -36,7 +36,7 @@ You'll build the endpoint to create and return shortened URLs first. This method
     ```
     
     The code above performs several tasks:
-    * First, a GUID is used to create a random five-character shortened route segment.
+    * First, a GUID is used to create a random shortened route segment from its hashcode as a hexadecimal string.
     * The shortened route segment is then used as an identifier by the grain factory to create a new grain.
     * The grain instance stores the shortened route segment and the original target URL so that it can be retrieved later.
     * Finally, a new URL with the shortened route segment is assembled and returned to the user.
