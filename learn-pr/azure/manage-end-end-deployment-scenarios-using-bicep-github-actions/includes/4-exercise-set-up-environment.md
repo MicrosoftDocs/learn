@@ -222,10 +222,10 @@ Next, create two service principals in Azure AD: one for your test environment a
      -Scope $resourceGroupId
 
    $output = @{
-     clientId = $($servicePrincipal.AppId)
+     clientId = $servicePrincipal.AppId
      clientSecret = $servicePrincipal.PasswordCredentials.SecretText
-     subscriptionId = $($azureContext.Subscription.Id)
-     tenantId = $($azureContext.Tenant.Id)
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
@@ -255,10 +255,10 @@ Next, create two service principals in Azure AD: one for your test environment a
      -Scope $resourceGroupId
 
    $output = @{
-     clientId = $($servicePrincipal.AppId)
+     clientId = $servicePrincipal.AppId
      clientSecret = $servicePrincipal.PasswordCredentials.SecretText
-     subscriptionId = $($azureContext.Subscription.Id)
-     tenantId = $($azureContext.Tenant.Id)
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
