@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "PowerShell"
       isCorrect: true
-      explanation: "Correct. Is a valid deployment option."
+      explanation: "Correct. This is a deployment option."
     - content: "ASRConfig.exe"
       isCorrect: false
-      explanation: "Incorrect. THis isn't a valid option."
+      explanation: "Incorrect. This isn't a valid option."
     - content: "Microsoft Deployment System"
       isCorrect: false
       explanation: "Incorrect. This isn't a valid deployment option."
