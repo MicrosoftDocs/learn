@@ -87,7 +87,7 @@ In addition to using Azure Disks as back-end storage, you can utilize both Azure
 
 If you want to understand how File Sync works, you must understand the terms that relate to it. The following diagram uses this terminology to depict how Azure File Sync works.
 
-:::image type="content" source="../media/azure-file-synchronization-components.png" alt-text="Azure File Sync using the storage synchronization service.":::
+:::image type="content" source="../media/azure-file-synchronization-components.png" alt-text="Diagram of the Azure File Sync using the storage synchronization service.":::
 
 
 

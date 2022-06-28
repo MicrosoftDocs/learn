@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-message-encryption-microsoft-365
 metadata:
-  title: Deploy message encryption in Office 365
-  description: "Deploy message encryption in Office 365"
-  ms.date: 06/15/2022
+  title: Deploy Microsoft Purview Message Encryption
+  description: "Deploy Microsoft Purview Message Encryption"
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: Deploy message encryption in Office 365
-summary: Learn about the different encryption methods Office 365 provides to protect messages.
+title: Deploy Microsoft Purview Message Encryption
+summary: Learn about the different encryption methods Microsoft Purview provides to protect messages.
 abstract: |
   After completing this module, you will be able to:
-  - Configure Office 365 Message Encryption for end users
-  - Implement Advanced Office 365 Message Encryption
+  - Configure Microsoft Purview Message Encryption for end users
+  - Implement Microsoft Purview Advanced Message Encryption
 prerequisites: |
   Fundamental knowledge of encryption in Microsoft 365
 iconUrl: /learn/achievements/deploy-message-encryption-microsoft-365.svg
