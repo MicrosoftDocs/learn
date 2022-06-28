@@ -1,14 +1,10 @@
 Orleans simplifies the process of building distributed, scalable applications. There are several key concepts to understand  in order to work with Orleans effectively.
 
-## The actor model
-
-Orleans is built around the "actor model", which is an established design pattern that has exited since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps. For now, you can easily complete the exercises ahead with only a simple introduction to the actor model.
-
-The actor model is a pattern that stores pieces of state data and corresponding behavior in lightweight, immutable objects called *actors*. Actors communicate with each other using asynchronous messages. Orleans manages and simplifies much of the parallel communication required by distributed apps for you. Orleans specifically uses a *Virtual actor* model where actors exist perpetually for whenever they need to be accessed. This architecture lends itself well to cloud native applications, which require distributed and resilient state and parallel operations.
+Orleans is built around the "actor model", which is an established design pattern that has exited since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps. For now, you can easily complete the exercises ahead with a basic understanding of a few important concepts.
 
 ## Understanding Grains
 
-Grains are the most essential primitives and building block of Orleans applications. They represent actors in the Actor model and define the state data and behavior of an entity, such as shopping cart or product. Grains are each identified and tracked through user-defined keys and can be accessed by other grains and clients.
+Grains are the most essential primitives and building blocks of Orleans applications. They represent actors in the Actor model and define the state data and behavior of an entity, such as shopping cart or product. Grains are each identified and tracked through user-defined keys and can be accessed by other grains and clients.
 
 :::image type="content" source="../media/grain-visual.png" alt-text="A diagram of the anatomy of a grain.":::
 
@@ -64,7 +60,7 @@ public sealed class UrlShortenerGrain : Grain, IGrainWithStringKey, IUrlShortene
 
 ## Understanding silos
 
-Silos are responsible for storing grains and are considered the core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process. You can organize your data by storing different types of grains in different silos. Your application can retrieve individual grains without having to worry about the details of how they're managed within the cluster.
+Silos are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process. You can organize your data by storing different types of grains in different silos. Your application can retrieve individual grains without having to worry about the details of how they're managed within the cluster.
 
 :::image type="content" source="../media/silos.png" alt-text="A diagram of silo architecture.":::
 
@@ -77,16 +73,4 @@ builder.Host.UseOrleans(siloBuilder =>
 });
 ```
 
-## Other features of Orleans
-
-Orleans supports plenty of other features for more specific or advanced scenarios.
-
-**Streams**: Streams help developers process sets of data in near-real-time. Like other features of Orleans, streams are managed by the runtime and available on demand. They're loosely coupled and can apply various queue technologies, such as Azure Event Hubs.
-
-**Timers and Reminders**: Orleans supports scheduling operations for grains. You can ensure that various actions are completed at a given time even on inactive grains.  
-
-**Versioning**: Grains can be versioned to account for changes in your application. Orleans will handle mapping and managing different implementations of your versioned grains across your silos and clusters.
-
-**ACID transactions**: Grains can have transactional state and support ACID transaction features.
-
-These capabilities can be explored as you start to build more complex apps. Next you'll create a basic application and apply some basic configurations to begin use Orleans.
+Orleans supports plenty of other features for more specific or advanced scenarios, such as streams and ACID transactions. These capabilities can be explored as you start to build more complex apps. Next you'll create a basic application and apply some basic configurations to begin use Orleans.
