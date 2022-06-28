@@ -38,15 +38,15 @@ quiz:
       explanation: "Correct.  This option is an attack surface reduction rule that can be configured."
     - content: "Block content from mobile devices"
       isCorrect: false
-      explanation: "Incorrect.  This option is not an attack surface reduction rule that can be configured."
+      explanation: "Incorrect.  This option isn't an attack surface reduction rule that can be configured."
   - content: "Which of the following items is a deployment option?"
     choices:
     - content: "PowerShell"
       isCorrect: true
-      explanation: "Correct. This is a valid deployment option."
+      explanation: "Correct. Is a valid deployment option."
     - content: "ASRConfig.exe"
       isCorrect: false
-      explanation: "Incorrect.  This is not a valid option."
+      explanation: "Incorrect. THis isn't a valid option."
     - content: "Microsoft Deployment System"
       isCorrect: false
-      explanation: "Incorrect. This is not a valid deployment option."
+      explanation: "Incorrect. This isn't a valid deployment option."
