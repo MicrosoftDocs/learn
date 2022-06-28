@@ -3,7 +3,7 @@ Before you can deploy your toy company's website by using a workflow, you need t
 > [!div class="checklist"]
 > * Create a resource group for your website.
 > * Create an Azure AD service principal and grant it access to the resource group.
-> * Create an GitHub secret and configure it to use the service principal's credentials.
+> * Create a GitHub secret and configure it to use the service principal's credentials.
 
 This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
@@ -123,15 +123,15 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-   -DisplayName ToyWebsiteWorkflow `
-   -Role Contributor `
-   -Scope $resourceGroupId
+     -DisplayName ToyWebsiteWorkflow `
+     -Role Contributor `
+     -Scope $resourceGroupId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $servicePrincipal.AppId
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
