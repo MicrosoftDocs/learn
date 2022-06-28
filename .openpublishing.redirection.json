@@ -14644,6 +14644,196 @@
       "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/9-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/10-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/az-400-create-manage-containers-using-docker-kubernetes/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/4-examine-kubernetes-extension-for-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/3-explore-helm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/2-explore-kubectl.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/4-examine-aks-architectural-components.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/8-exercise-deploy-connect-to-aks-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/3-explore-azure-kubernetes-service-aks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/7-explore-deployment-units.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/6-explore-ingress-controllers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/9-implement-continuous-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/2-introduction-to-kubernetes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/5-understand-kubernetes-networking.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/10-update-images.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/4-examine-considerations-multiple-stage-builds.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/3-examine-multi-stage-dockerfiles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/7-exercise-add-docker-support-to-existing-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/5-explore-builder-pattern.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/2-explore-multiple-stage-builds.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/6-manage-multiple-projects-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/3-explore-kubernetes-azure-key-vault.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/4-explore-readiness-liveness-probes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/2-integrate-aks-with-pipelines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
     }
   ]
 }
