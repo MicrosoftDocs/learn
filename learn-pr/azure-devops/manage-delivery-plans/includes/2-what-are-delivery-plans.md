@@ -2,7 +2,7 @@ As development organizations grow, they need to reorganize into smaller teams th
 
 A _delivery plan_ is a visualization of one or more work schedules. It's intended to provide teams and management an overall view of what each team is planning to produce and when. This allows decisions to be made that optimize the investments across the organization.
 
-It's important that teams regularly review their delivery plans to make sure that their work schedule aligns with the schedules of other teams. These reviews should ask questions like:
+It's important that teams regularly review their delivery plans to ensure that their work schedule aligns with the schedules of other teams. These reviews should ask questions like:
 * Are we sure we can deliver what we've committed to on our current schedule?
 * Are we confident that the teams we depend on will deliver what we need on their current schedule?
 * Are there lulls in our schedule that we could fill with work?
@@ -37,11 +37,11 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 **Andy:** I just wish there was a way to see these potential risks coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
 
-**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules affect each other. And I know the perfect Azure DevOps extension for the job.
+**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This helps both teams to identify how our schedules affect each other. And I know the perfect Azure DevOps extension for the job.
 
 ## Recommendations for managing multiple Agile teams
 
-An Agile approach, along with Azure DevOps, can substantially improve project transparency and predictability. However, projects may still run into traditional challenges, often related to personnel or miscommunication. Here are a few things to consider as you scale your Agile efforts.
+An Agile approach, along with Azure DevOps, can substantially improve project transparency and predictability. However, projects might still run into traditional challenges, often related to personnel or miscommunication. Here are a few things to consider as you scale your Agile efforts.
 
 ### Build trust in your people and processes
 

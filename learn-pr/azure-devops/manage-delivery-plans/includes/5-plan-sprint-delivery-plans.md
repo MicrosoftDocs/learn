@@ -35,9 +35,9 @@ Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many 
     > Ensure that you select **Delivery Plans**, and not **Plans**.
 1. Select **New plan**.
 1. In the form, enter these fields:
-    * **Name**: _Space Game Delivery Plan_
-    * Select the **Backlog items** backlog for the **Space Game Web Team**
-    * Add the **Space Game Engine Team's Backlog items** backlog using the **Add team** option
+    * **Name**: _Space Game Delivery Plan_.
+    * Select the **Backlog items** backlog for the **Space Game Web Team**.
+    * Add the **Space Game Engine Team's Backlog items** backlog using the **Add team** option.
     
     Both the Web team and the Engine team share a common set of backlog items.
 

@@ -21,7 +21,7 @@ Mara installed Delivery Plans in the team's Azure DevOps organization. She then 
 
 Andy nods in agreement. It would be nice for the teams to have more faith in each other.
 
-**Andy:** Well now that we know about the beta slip, we've to move our associated work out to a future sprint. On the bright side, it gives us an opportunity to pull some new work in to replace it. Let's swap the integration work with those two leaderboard bugs.
+**Andy:** Well now that we know about the beta slip, we have to move our associated work out to a future sprint. On the bright side, it gives us an opportunity to pull some new work in to replace it. Let's swap the integration work with those two leaderboard bugs.
 Mara drags the integration work item out to the following sprint. She then drags the two leaderboard bugs back in to fill the available capacity.
  
 :::image type="content" source="../media/5-adjust-work-schedule.png" alt-text="Screenshot of the delivery plan after work is reorganized.":::
