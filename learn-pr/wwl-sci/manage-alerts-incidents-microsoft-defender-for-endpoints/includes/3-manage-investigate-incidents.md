@@ -41,7 +41,7 @@ To analyze incident details, the investigation page includes the following tabs:
 
 - Graph
 
-:::image type="content" source="../media/incident-alert.png" alt-text="Screen shot of alerts tab with incident details page showing the reasons the alerts were linked together in that incident":::
+:::image type="content" source="../media/incident-alert.png" alt-text="Screenshot of alerts tab with incident details page showing the reasons the alerts were linked together in that incident.":::
 
 ### Alerts
 
