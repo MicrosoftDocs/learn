@@ -23,16 +23,13 @@ In addition to working with tools from ISVs, the Azure Migrate hub also includes
 
 Azure Data Box is a physical migration service that helps transfer large amounts of data in a quick, inexpensive, and reliable way. The secure data transfer is accelerated by shipping you a proprietary Data Box storage device that has a maximum usable storage capacity of 80 terabytes. The Data Box is transported to and from your datacenter via a regional carrier. A rugged case protects and secures the Data Box from damage during transit.
 
-:::image type="content" source="../media/data-box-combined-ea97be5d.png" alt-text="Front and back photo of Azure Data Box.":::
-
-
 You can order the Data Box device via the Azure portal to import or export data from Azure. Once the device is received, you can quickly set it up using the local web UI and connect it to your network. Once you’re finished transferring the data (either into or out of Azure), simply return the Data Box. If you’re transferring data into Azure, the data is automatically uploaded once Microsoft receives the Data Box back. The entire process is tracked end-to-end by the Data Box service in the Azure portal.
 
 ### Use cases
 
 Data Box is ideally suited to transfer data sizes larger than 40 TBs in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers.
 
-Here are the various scenarios where Data Box can be used to import data to Azure.<br>
+Here are the various scenarios where Data Box can be used to import data to Azure.
 
  -  Onetime migration - when a large amount of on-premises data is moved to Azure.
  -  Moving a media library from offline tapes into Azure to create an online media library.

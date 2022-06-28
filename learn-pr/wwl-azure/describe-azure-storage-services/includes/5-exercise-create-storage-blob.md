@@ -105,15 +105,17 @@ In this section, you'll create a Blob container and upload a picture
     :::row-end:::
     
 3.  Select Create.
-4.  Step 5 will need an image. If you want to upload an image you already have on your computer, continue to Step 5. Otherwise, open a new browser window and search Bing for an image of a flower. Save the image to your computer.
-5.  Back in the Azure Portal select the container you created, then select Upload.
-6.  Browse for the image file you want to upload. Select it and then select upload.
+    
+    > [!NOTE]
+    > Step 4 will need an image. If you want to upload an image you already have on your computer, continue to Step 4. Otherwise, open a new browser window and search Bing for an image of a flower. Save the image to your computer.
+4.  Back in the Azure portal select the container you created, then select Upload.
+5.  Browse for the image file you want to upload. Select it and then select upload.
 
     > [!NOTE]
-    > Note: You can upload as many blobs as you like in this way. New blobs will be listed within the container.
+    > You can upload as many blobs as you like in this way. New blobs will be listed within the container.
 
-7.  Select the Blob (file) you just uploaded. You should be on the properties tab.
-8.  Copy the URL from the URL field and paste it into a new tab.
+6.  Select the Blob (file) you just uploaded. You should be on the properties tab.
+7.  Copy the URL from the URL field and paste it into a new tab.
     
     You should receive an error message similar to the following.
     
@@ -127,7 +129,7 @@ In this section, you'll create a Blob container and upload a picture
 
 ## Change the access level of your blob
 
-1.  Go back to the Azure Portal
+1.  Go back to the Azure portal
 2.  Select Change access level
 3.  Set the Public access level to Blob (anonymous read access for blobs only)
     

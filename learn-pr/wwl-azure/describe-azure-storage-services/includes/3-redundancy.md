@@ -1,4 +1,4 @@
-Azure Storage always stores multiple copies of your data so that it's protected from planned and unplanned events such as: transient hardware failures, network or power outages, and natural disasters. Redundancy ensures that your storage account meets its availability and durability targets even in the face of failures.
+Azure Storage always stores multiple copies of your data so that it's protected from planned and unplanned events such as transient hardware failures, network or power outages, and natural disasters. Redundancy ensures that your storage account meets its availability and durability targets even in the face of failures.
 
 When deciding which redundancy option is best for your scenario, consider the tradeoffs between lower costs and higher availability. The factors that help determine which redundancy option you should choose include:
 
@@ -8,18 +8,13 @@ When deciding which redundancy option is best for your scenario, consider the tr
 
 ## Redundancy in the primary region
 
-Data in an Azure Storage account is always replicated three times in the primary region. Azure Storage offers two options for how your data is replicated in the primary region: locally redundant storage (LRS) and zone-redundant storage (ZRS).
+Data in an Azure Storage account is always replicated three times in the primary region. Azure Storage offers two options for how your data is replicated in the primary region, locally redundant storage (LRS) and zone-redundant storage (ZRS).
 
 ### Locally redundant storage
 
 Locally redundant storage (LRS) replicates your data three times within a single data center in the primary region. LRS provides at least 11 nines of durability (99.999999999%) of objects over a given year.
 
 LRS is the lowest-cost redundancy option and offers the least durability compared to other options. LRS protects your data against server rack and drive failures. However, if a disaster such as fire or flooding occurs within the data center, all replicas of a storage account using LRS may be lost or unrecoverable. To mitigate this risk, Microsoft recommends using zone-redundant storage (ZRS), geo-redundant storage (GRS), or geo-zone-redundant storage (GZRS).
-
-The following diagram shows how your data is replicated within a single data center with LRS:
-
-:::image type="content" source="../media/locally-redundant-storage-37247957.png" alt-text="Diagram depicting locally redundant storage.":::
-
 
 ### Zone-redundant storage
 
@@ -28,11 +23,6 @@ For Availability Zone-enabled Regions, zone-redundant storage (ZRS) replicates y
 With ZRS, your data is still accessible for both read and write operations even if a zone becomes unavailable. No remounting of Azure file shares from the connected clients is required. If a zone becomes unavailable, Azure undertakes networking updates, such as DNS repointing. These updates may affect your application if you access data before the updates have completed.
 
 Microsoft recommends using ZRS in the primary region for scenarios that require high availability. ZRS is also recommended for restricting replication of data within a country or region to meet data governance requirements.
-
-The following diagram shows how your data is replicated across availability zones in the primary region with ZRS.
-
-:::image type="content" source="../media/zone-redundant-storage-6dd46d22.png" alt-text="Diagram depicting zone-redundant storage.":::
-
 
 ## Redundancy in a secondary region
 
@@ -51,21 +41,11 @@ By default, data in the secondary region isn't available for read or write acces
 
 GRS copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region (the region pair) using LRS. GRS offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year.
 
-The following diagram shows how your data is replicated with GRS.
-
-:::image type="content" source="../media/geo-redundant-storage-3432d558.png" alt-text="Diagram depicting geo-redundant storage.":::
-
-
 ### Geo-zone-redundant storage
 
 GZRS combines the high availability provided by redundancy across availability zones with protection from regional outages provided by geo-replication. Data in a GZRS storage account is copied across three Azure availability zones in the primary region (similar to ZRS) and is also replicated to a secondary geographic region, using LRS, for protection from regional disasters. Microsoft recommends using GZRS for applications requiring maximum consistency, durability, and availability, excellent performance, and resilience for disaster recovery.
 
 GZRS is designed to provide at least 16 nines (99.99999999999999%) of durability of objects over a given year.
-
-The following diagram shows how your data is replicated with GZRS.
-
-:::image type="content" source="../media/geo-redundant-storage-3432d558.png" alt-text="Diagram depicting geo-zone-redundant storage.":::
-
 
 ## Read access to data in the secondary region
 

@@ -1,10 +1,10 @@
 In this module, you learned about the Azure storage services. You learned about the Azure Storage Account and how they relate to different storage services. You were introduced to storage blobs and redundancy options, and ways to migrate and move your data both into and within Azure.
 
-## Learning objectives<br>
+## Learning objectives
 
 You should now be able to:
 
- -  Compare Azure storage services.<br>
+ -  Compare Azure storage services.
  -  Describe storage tiers.
  -  Describe redundancy options.
  -  Describe storage account options and storage types.
@@ -16,4 +16,4 @@ You should now be able to:
 The following resources provide more information on topics in this module or related to this module.
 
  -  [Store data in Azure](/learn/paths/store-data-in-azure/) is a Microsoft Learn course that covers more information about storing data in Azure.
- -  [Microsoft Certified: Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/) is an entire certification, with associated training, that dives deeper into data fundamentals on Azure.
+ -  [Microsoft Certified: Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/) is an entire certification, with associated training that dives deeper into data fundamentals on Azure.

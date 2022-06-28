@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which tool would you select to automatically keep files between your on-premises Windows server and your cloud environment updated?"
+  - content: "Which tool automatically keeps files between an on-premises Windows server and an Azure cloud environment updated?"
     choices:
     - content: "Azure File Sync"
       isCorrect: true
@@ -28,11 +28,11 @@ quiz:
     - content: "AzCopy"
       isCorrect: false
       explanation: "AzCopy is a command-line file copy utility."
-  - content: "Which storage redundancy option provides the highest degree of durability, with 16 nines of durability? (Select two.)"
+  - content: "Which storage redundancy option provides the highest degree of durability, with 16 nines of durability?"
     choices:
-    - content: "Locally-redundant storage"
+    - content: "Locally redundant storage"
       isCorrect: false
-      explanation: "Locally-redundant storage (LRS) provides 11 nines of durability."
+      explanation: "Locally redundant storage (LRS) provides 11 nines of durability."
     - content: "Zone-redundant storage"
       isCorrect: false
       explanation: "Zone-redundant storage (ZRS) provides 12 nines of durability."

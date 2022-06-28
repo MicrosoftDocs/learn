@@ -1,6 +1,6 @@
 The following video introduces the different services that should be available with Azure Storage.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MAbS]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAbS]
 
 A storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 
@@ -109,7 +109,7 @@ The following table shows the endpoint format for Azure Storage services.
     Blob Storage
   :::column-end:::
   :::column:::
-    https://&lt;storage-account&gt;.blob.core.windows.net
+    https://storage-account-name.blob.core.windows.net
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -117,7 +117,7 @@ The following table shows the endpoint format for Azure Storage services.
     Data Lake Storage Gen2
   :::column-end:::
   :::column:::
-    https://&lt;storage-account&gt;.dfs.core.windows.net
+    https://storage-account-name.dfs.core.windows.net
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -125,7 +125,7 @@ The following table shows the endpoint format for Azure Storage services.
     Azure Files
   :::column-end:::
   :::column:::
-    https://&lt;storage-account&gt;.file.core.windows.net
+    https://storage-account-name.file.core.windows.net
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -133,7 +133,7 @@ The following table shows the endpoint format for Azure Storage services.
     Queue Storage
   :::column-end:::
   :::column:::
-    https://&lt;storage-account&gt;.queue.core.windows.net
+    https://storage-account-name.queue.core.windows.net
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +141,6 @@ The following table shows the endpoint format for Azure Storage services.
     Table Storage
   :::column-end:::
   :::column:::
-    https://&lt;storage-account&gt;.table.core.windows.net
+    https://storage-account-name.table.core.windows.net
   :::column-end:::
 :::row-end:::

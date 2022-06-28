@@ -11,9 +11,6 @@ AzCopy is a command-line utility that you can use to copy blobs or files to or f
 
 Azure Storage Explorer is a standalone app that provides a graphical interface to manage files and blobs in your Azure Storage Account. It works on Windows, macOS, and Linux operating systems and uses AzCopy on the backend to perform all of the file and blob management tasks. With Storage Explorer, you can upload to Azure, download from Azure, or move between storage accounts.
 
-:::image type="content" source="../media/storage-explorer-b0ab1185.png" alt-text="Screenshot of Azure Storage Explorer.":::
-
-
 ## Azure File Sync
 
 Azure File Sync is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server. It’s almost like turning your Windows file server into a miniature content delivery network. Once you install Azure File Sync on your local Windows server, it will automatically stay bi-directionally synced with your files in Azure.
