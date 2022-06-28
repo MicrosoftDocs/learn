@@ -18,11 +18,6 @@ Use these resources to discover more.
 
 - [Best practices to set up networking for workloads migrated to Azure - Cloud Adoption Framework | Microsoft Docs](/azure/cloud-adoption-framework/migrate/azure-best-practices/migrate-best-practices-networking)
 
-- [Best practices to set up networking for workloads migrated to Azure - Cloud Adoption Framework | Microsoft Docs](/azure/cloud-adoption-framework/migrate/azure-best-practices/migrate-best-practices-networking)
-
-- [Best practices to set up networking for workloads migrated to Azure - Cloud Adoption Framework | Microsoft Docs](/azure/cloud-adoption-framework/migrate/azure-best-practices/migrate-best-practices-networking)
-
-
 ### Learn more with self-paced training
 
 - [Introduction to Azure Virtual Networks - Learn](/learn/modules/introduction-to-azure-virtual-networks/)
