@@ -6,7 +6,7 @@ You start by activating the Learn sandbox. Then, you’ll investigate each of th
 
 If you haven’t already, use the Activate sandbox button above to activate the Learn sandbox.
 
-If you receive a notice saying Microsoft Learn needs your permission to create Azure resource, use the Review permission button to review and accept the permissions. Once you approve the permissions, it may take a minute or two for the sandbox to activate.<br>
+If you receive a notice saying Microsoft Learn needs your permission to create Azure resource, use the Review permission button to review and accept the permissions. Once you approve the permissions, it may take a few minutes for the sandbox to activate.
 
 ## Task 1: Use the PowerShell CLI
 
@@ -50,7 +50,6 @@ Again, use the Get-date command to get the current date and time.
 
 ```azurecli
 Get-date
-
 ```
 
 You received an error because Get-date is a PowerShell specific command.
@@ -108,7 +107,7 @@ exit
 
 ## Task 4: Use the Azure portal
 
-You’ll also have the option of using the Azure portal during sandbox exercises. It’s important that you use the link provided in the exercise to access the Azure portal to ensure the exercise remains free for you to complete.
+You’ll also have the option of using the Azure portal during sandbox exercises. You need to use the link provided in the exercise to access the Azure portal. Using the provided link, instead of opening the portal yourself, ensures the correct subscription is used and the exercise remains free for you to complete.
 
 Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to check out the Azure web interface. Once in the portal, you can see all the services Azure has to offer as well as look around at resource groups and so on.
 

@@ -1,9 +1,9 @@
 To create and use Azure services, you need an Azure subscription. When you're completing Learn modules, most of the time a temporary subscription is created for you, which runs in an environment called the Learn sandbox. When you're working with your own applications and business needs, you need to create an Azure account, and a subscription will be created for you. After you've created an Azure account, you're free to create additional subscriptions. For example, your company might use a single Azure account for your business and separate subscriptions for development, marketing, and sales departments. After you've created an Azure subscription, you can start creating Azure resources within each subscription.
 
-:::image type="content" source="../media/account-scope-levels-9ceb3abd.png" alt-text="Illustration showing the different levels of account scope.":::
+:::image type="content" source="../media/account-scope-levels-9ceb3abd.png" alt-text="Diagram showing the different levels of account scope.":::
 
 
-If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. When you're ready, you can choose to upgrade your free account. You can also create a new subscription that enables you to start paying for Azure services you need beyond the limits of a free account.<br>
+If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. When you're ready, you can choose to upgrade your free account. You can also create a new subscription that enables you to start paying for Azure services you need beyond the limits of a free account.
 
 ## Create an Azure account
 
@@ -33,7 +33,7 @@ The Azure free student account offer includes:
 
 The [Azure free student account](https://azure.microsoft.com/free/students/) is an offer for students that gives $100 credit and free developer tools. Also, you can sign up without a credit card.
 
-### What is the Learn sandbox?
+### What is the Microsoft Learn sandbox?
 
 Many of the Learn exercises use a technology called the sandbox, which creates a temporary subscription that's added to your Azure account. This temporary subscription allows you to create Azure resources during a Learn module. Learn automatically cleans up the temporary resources for you after you've completed the module.
 

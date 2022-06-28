@@ -28,12 +28,12 @@ quiz:
     - content: "Three"
       isCorrect: false
       explanation: "While you can have multiple resources and resource groups, a resource can only be in a single group at a time."
-  - content: "What happens to the resources within a resource group when you apply an action or setting at the Resource Group level?"
+  - content: "What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?"
     choices:
-    - content: "Current resources inherit the setting, but future resources do not."
+    - content: "Current resources inherit the setting, but future resources don't."
       isCorrect: false
       explanation: "Resource group permissions are inherited by all resources in the resource group, current and future."
-    - content: "Future resources inherit the setting, but current ones do not."
+    - content: "Future resources inherit the setting, but current ones don't."
       isCorrect: false
       explanation: "Resource group permissions are inherited by all resources in the resource group, current and future."
     - content: "The setting is applied to current and future resources."

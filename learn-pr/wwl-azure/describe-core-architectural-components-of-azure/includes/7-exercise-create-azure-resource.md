@@ -10,82 +10,82 @@ In this task, you’ll create a virtual machine using the Azure portal.
 2.  Select Create a resource &gt; Compute &gt; Virtual Machine &gt; Create.
 3.  The Create a virtual machine pane opens to the basics tab.
 4.  Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value.
-
-**Basics tab**
-
-:::row:::
-  :::column:::
-    **Setting**
-  :::column-end:::
-  :::column:::
-    **Value**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Subscription
-  :::column-end:::
-  :::column:::
-    Concierge Subscription
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Resource group
-  :::column-end:::
-  :::column:::
-    <rgn>[sandbox resource group name]</rgn>
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Virtual machine name
-  :::column-end:::
-  :::column:::
-    my-VM
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Authentication type
-  :::column-end:::
-  :::column:::
-    Password
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Username
-  :::column-end:::
-  :::column:::
-    azureuser
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Password
-  :::column-end:::
-  :::column:::
-    Enter a custom password
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Confirm password
-  :::column-end:::
-  :::column:::
-    Reenter the custom password
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Public inbound ports
-  :::column-end:::
-  :::column:::
-    None
-  :::column-end:::
-:::row-end:::
-
+    
+    **Basics tab**
+    
+    :::row:::
+      :::column:::
+        **Setting**
+      :::column-end:::
+      :::column:::
+        **Value**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Subscription
+      :::column-end:::
+      :::column:::
+        Concierge Subscription
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Resource group
+      :::column-end:::
+      :::column:::
+        <rgn>[sandbox resource group name]</rgn>
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Virtual machine name
+      :::column-end:::
+      :::column:::
+        my-VM
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Authentication type
+      :::column-end:::
+      :::column:::
+        Password
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Username
+      :::column-end:::
+      :::column:::
+        azureuser
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Password
+      :::column-end:::
+      :::column:::
+        Enter a custom password
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Confirm password
+      :::column-end:::
+      :::column:::
+        Reenter the custom password
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Public inbound ports
+      :::column-end:::
+      :::column:::
+        None
+      :::column-end:::
+    :::row-end:::
+    
 
 5.  Select Review and Create.
 
