@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-percept.explore.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 06/14/2022
+  ms.author: chnoring
+  author: Amiyouss
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "Which of the following is a benefit of Azure Percept?"
+    choices:
+    - content: "Azure Percept allows you to easily create prototypes and POCs."
+      isCorrect: true
+      explanation: "Correct. You can use Azure Percept for rapid prototyping."
+    - content: "Azure Percept increases development time and complexity."
+      isCorrect: false
+      explanation: "Incorrect. Azure Percept is a fully integrated, and easy-to-use service for solution builders and developers of all skill levels and technical capability."
+    - content: "Azure Percept offers only low-no code AI functionality."
+      isCorrect: false
+      explanation: "Incorrect. Azure Percept offers both low-no code and advanced developer AI functionality."
+  - content: "Azure Percept leverages other Microsoft services. Which of the following statements is correct?"
+    choices:
+    - content: "Azure Percept leverages e-commerce services so that you can pay for content at secure kiosks."
+      isCorrect: false
+      explanation: "Incorrect. Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
+    - content: "Azure Percept leverages remote connectivity services like satellite."
+      isCorrect: false
+      explanation: "Incorrect. Satellite connectivity is not a valid use case for Azure Percept."
+    - content: "Azure Percept leverages Azure AI and IoT services, like Azure IoT Hub, Custom Vision, and Azure Machine Learning."
+      isCorrect: true
+      explanation: "Correct. Azure Percept leverages these services."
+  - content: "Azure Percept is applicable to many industries and use cases. Which of the following statements is correct?"
+    choices:
+    - content: "Autonomous vehicles: Computer vision-related edge services on self-driving cars."
+      isCorrect: false
+      explanation: "Incorrect. Azure Percept doesn't apply to autonomous vehicles as it stands."
+    - content: "Shelf analytics: Advanced product analytics through automated stockout analytics, product placement, planogram compliance, and end cap management."
+      isCorrect: true
+      explanation: "Correct. Shelf analytics is one of the main applications of Azure Percept."
+    - content: "Predictive maintenance and repair: Use data analysis tools and techniques to detect anomalies and possible equipment defects and process them, and then automatically fix them."
+      isCorrect: false
+      explanation: "Incorrect. Predictive maintenance is one of the main applications of Azure Percept, but Azure Percept doesn't make repairs."
