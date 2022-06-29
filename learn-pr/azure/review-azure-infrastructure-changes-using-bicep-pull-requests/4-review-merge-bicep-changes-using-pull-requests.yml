@@ -6,8 +6,8 @@ metadata:
   title: Review and merge Bicep changes by using pull requests
   description: Learn about pull requests, including how to create, review, approve, and merge them.
   ms.date: 02/11/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: repository-hosting-platform
