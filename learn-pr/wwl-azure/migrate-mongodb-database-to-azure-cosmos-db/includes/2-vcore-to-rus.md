@@ -4,7 +4,7 @@ When migrating from a database environment were all you know is the total vCores
 
 We'll use the following formula to give us a starting point on RU/s estimate from vCores.
 
-```Bash
+```
 [Provisioned RU/s] = C*T/R
 ```
 
@@ -23,7 +23,7 @@ Let's use this formula to do some sample calculations.
 
     Plugin in the numbers to the formula you would get:
 
-    ```bash
+    ```
     [Provisioned RU/s] = (1,000 RU/s/vCore) * (12 vCores) / (3) = 4,000 RU/s
     ```
 
@@ -33,7 +33,7 @@ Let's use this formula to do some sample calculations.
 
     Plugin in the numbers to the formula you would get:
 
-    ```bash
+    ```
     [Provisioned RU/s] = (1,000 RU/s/vCore) * (36 vCores) / ((3+3+3)/3) = 12,000 RU/s
     ```
 
@@ -43,7 +43,7 @@ Let's use this formula to do some sample calculations.
 
     Plugin in the numbers to the formula you would get:
 
-    ```bash
+    ```
     [Provisioned RU/s] = (1,000 RU/s/vCore) * (36 vCores) / ((3+1+5)/3) = 12,000 RU/s
     ```
 
