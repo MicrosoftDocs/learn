@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-windows-hosts-to-azure-sentinel.connect-windows-hosts
-title: Connect Windows hosts
+title: Connect using the Security Events via Legacy Agent Connector
 metadata:
-  title: Connect Windows hosts
-  description: "Connect Windows hosts"
-  ms.date: 06/27/2022
+  title: Connect using the Security Events via Legacy Agent Connector
+  description: "Connect using the Security Events via Legacy Agent Connector"
+  ms.date: 06/29/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
