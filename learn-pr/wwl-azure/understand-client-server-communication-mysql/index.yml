@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.understand-client-server-communication-mysql
+metadata:
+  title: Understand client-server communication in MySQL
+  description: "Learn about connection handling in MySQL, back up and restore, and the client interrace options available for MySQL."
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand client-server communication in MySQL
+summary: Learn about connection handling in MySQL, back up and restore, and the client interface options available for MySQL.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand connection handling in MySQL
+  - Understand back up and restore
+  - Describe the client interface options
+prerequisites: |
+  Demonstrate an understanding of relational databases. Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-mysql
+subjects:
+- database
+units:
+- learn.wwl.understand-client-server-communication-mysql.introduction
+- learn.wwl.understand-client-server-communication-mysql.understand-connection-handle
+- learn.wwl.understand-client-server-communication-mysql.describe-client-interfaces
+- learn.wwl.understand-client-server-communication-mysql.understand-mysql-query-interface-options
+- learn.wwl.understand-client-server-communication-mysql.exercise-explore-mysql-workbench
+- learn.wwl.understand-client-server-communication-mysql.knowledge-check
+- learn.wwl.understand-client-server-communication-mysql.summary
+badge:
+  uid: learn.wwl.understand-client-server-communication-mysql.badge

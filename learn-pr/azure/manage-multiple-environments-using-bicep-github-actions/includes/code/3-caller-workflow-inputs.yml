@@ -3,14 +3,14 @@ on:
 
 jobs:
   job-test:
-    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    uses: ./.github/workflows/script.yml
     with:
       environmentType: Test
     secrets:
       AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_Test }}
 
   job-production:
-    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    uses: ./.github/workflows/script.yml
     with:
       environmentType: Production
     secrets:

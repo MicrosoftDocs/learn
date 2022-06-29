@@ -1,6 +1,6 @@
 There are several ways to get an Azure subscription: Enterprise agreements, Microsoft resellers, Microsoft partners, and a personal free account.
 
-:::image type="content" source="../media/get-subscription-a5167084.png" alt-text="Enterprise, resellers, partners, and personal.":::
+:::image type="content" source="../media/get-subscription-a5167084.png" alt-text="Diagram showing enterprise, resellers, partners, and personal.":::
 
 
 ## Enterprise agreements
