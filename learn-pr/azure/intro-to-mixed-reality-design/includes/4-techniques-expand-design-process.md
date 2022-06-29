@@ -13,7 +13,7 @@ In addition to the knowledge of designing applications for desktops, phones, and
 
 The mixed reality design process involves different roles and disciplines that aren't limited to 3D designers and developers. Team members without particular 3D expertise can still contribute before the prototype phase with techniques covered in this section.  These approaches help to complement and not replace the existing application design process. Later in development, we may discover new opportunities and problems.
 
-:::image type="content" source="../media/design-process-techniques.png" alt-text="Infographsic showing the techniques to expand the design process" lightbox="../media/design-process-techniques.png":::
+:::image type="content" source="../media/design-process-techniques.png" alt-text="Infographsic showing the techniques to expand the design process." lightbox="../media/design-process-techniques.png":::
 
 These techniques are:
 
@@ -25,7 +25,7 @@ These techniques are:
 
 The design process usually starts with whiteboarding and progresses to bodystorming and acting. Before starting with the prototyping and asset creation, you need to have a solid storyboard with a **One Line Concept**. The one line concept is a high-level definition of what the storyboard is trying to achieve. Mixed reality design often involves figuring out physical user interactions before getting into the development stage.
 
-:::image type="content" source="../media/design-process.png" alt-text="Infographic showing the design process" lightbox="../media/design-process.png":::
+:::image type="content" source="../media/design-process.png" alt-text="Infographic showing the design process." lightbox="../media/design-process.png":::
 
 The entire design process can be challenging and messy. In addition, it's a continuous and repetitive process that needs numerous revisions and revisits. The techniques mentioned above can ease the process and provide you with the right direction. Here are two ways to get on with the design process efficiently.
 

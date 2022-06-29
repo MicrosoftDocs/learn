@@ -14,7 +14,7 @@ If you have HoloLens 2 device, you can directly download and install the app<sup
 
 The Designing Holograms application allows you to gain hands-on experience with mixed reality UX design principles. Learning how to design in mixed reality can be tricky. As described in earlier chapters, the medium doesn't always transition well from the 2D design process. The Designing Holograms app takes a new approach to exploring mixed reality behaviors, suggestions, and recommendations to help you design your own engaging and stunning HoloLens applications.
 
-:::image type="content" source="../media/hololens-playground.gif" alt-text="Animated gif image showing the HoloLens playground app" lightbox="../media/hololens-playground.gif":::
+:::image type="content" source="../media/hololens-playground.gif" alt-text="Animated gif image showing the HoloLens playground app." lightbox="../media/hololens-playground.gif":::
 
 Download the app<sup>16</sup> for free from the Microsoft Store and learn from Microsoft's Mixed Reality Design Team!
 
@@ -22,7 +22,7 @@ Download the app<sup>16</sup> for free from the Microsoft Store and learn from M
 
 The HoloLens Playground is a fun application and a great place for developers to understand what's possible with the Mixed Reality Toolkit. You can experience new and intuitive ways of interacting with holograms in a mixed reality playground. For example, you can summon a hummingbird to your outstretched hand, play the piano with all your fingers, and use your eyes in some magical ways. This application is an exciting way to learn about MRTK.
 
-:::image type="content" source="../media/designing-hologram.png" alt-text="Screenshot showing the humming bird holograms and a human hand" lightbox="../media/designing-hologram.png":::
+:::image type="content" source="../media/designing-hologram.png" alt-text="Screenshot showing the humming bird holograms and a human hand." lightbox="../media/designing-hologram.png":::
 
 You can download HoloLens Playground<sup>17</sup> in the Microsoft Store.
 
@@ -30,7 +30,7 @@ You can download HoloLens Playground<sup>17</sup> in the Microsoft Store.
 
 The Galaxy Explorer has been one of the first mixed reality experiences for many. It was created as an open-source application for HoloLens (first version) through the Share Your Idea initiative. Currently, it's up-to-date for HoloLens 2.
 
-:::image type="content" source="../media/galaxy-explorer.png" alt-text="Screenshot showing the galaxy explorer app" lightbox="../media/galaxy-explorer.png":::
+:::image type="content" source="../media/galaxy-explorer.png" alt-text="Screenshot showing the galaxy explorer app." lightbox="../media/galaxy-explorer.png":::
 
 This project primarily uses the framework and tools like MRTK for its development. The entire project is accessible via GitHub by the developer communities. This project adopts the Microsoft Open Source Code of Conduct<sup>18</sup>.
 
@@ -42,7 +42,7 @@ The project is available on GitHub<sup>19</sup>, so give it a try! You can also 
 
 The Surfaces app is an open-source sample app from Microsoft's Mixed Reality Design Labs. It demonstrates how to use the Mixed Reality Toolkit (MRTK)'s input system and building blocks to create an app experience for HoloLens 2. It explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking. 
 
-:::image type="content" source="../media/surfaces.png" alt-text="Screenshot showing the surfaces app" lightbox="../media/surfaces.png":::
+:::image type="content" source="../media/surfaces.png" alt-text="Screenshot showing the surfaces app." lightbox="../media/surfaces.png":::
 
 In this project, you can find the examples of:
 
@@ -55,7 +55,7 @@ You can use this project's components to create your own mixed reality app exper
 
 Microsoft's Mixed Reality Design Labs has released an open-source sample app called the Periodic Table of Elements. The app was created in 2015 to demonstrate how to create an end-to-end experience utilizing MRTK's building blocks for the HoloLens 1st generation and immersive headsets. In addition, the software has been upgraded to use MRTK v2 to properly use the new articulated hand tracking and eye-tracking input on HoloLens 2.
 
-:::image type="content" source="../media/periodic-table.png" alt-text="Screenshot showing the periodic table app" lightbox="../media/periodic-table.png":::
+:::image type="content" source="../media/periodic-table.png" alt-text="Screenshot showing the periodic table app." lightbox="../media/periodic-table.png":::
 
 The Periodic Table of the Elements displays chemical elements and their properties in three dimensions. It includes fundamental HoloLens interactions such as gaze and air tap. In addition, animated 3D models let users learn about the elements. Users can visualize a chemical element's electron shell and nucleus, consisting of protons and neutrons.
 

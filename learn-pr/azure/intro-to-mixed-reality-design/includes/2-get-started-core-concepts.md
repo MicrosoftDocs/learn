@@ -14,7 +14,7 @@ It will be helpful to understand the following key concepts before getting into 
 
 Spatial mapping provides a detailed representation of real-world surfaces in the environment around the HoloLens. You can compare spatial mapping to a blueprint of the environment where you can accurately place the holograms. By making holographic objects interact with the physical surfaces provided by spatial mapping, you can create a convincing mixed reality experience using spatial mapping.
 
-:::image type="content" source="../media/spatial-mapping.png" alt-text="Screenshot of spatial mapping in the environment" lightbox="../media/spatial-mapping.png":::
+:::image type="content" source="../media/spatial-mapping.png" alt-text="Screenshot of spatial mapping in the environment." lightbox="../media/spatial-mapping.png":::
 
 ### Holographic frame
 
@@ -30,7 +30,7 @@ The spatial coordinate systems are measured in meters. Therefore, items position
 
 Human vision processes various kinds of information, or "cues," to understand 3D shapes and the relative positions of objects in view. Some cues, known as monocular cues, rely just on one eye. Other cues, known as binocular cues, rely on both eyes. Therefore, it's essential to produce and show content on head-mounted displays that mimics natural visual cues to ensure optimal comfort. From the physical standpoint, it's also important to create interactions that don't require tiring neck and arm movements. We'll go over some crucial design aspects to keep in mind to attain these objectives.
 
-:::image type="content" source="../media/optimal-distance.png" alt-text="Screenshot showing the optimal distance at which the holograms must be placed" lightbox="../media/optimal-distance.png":::
+:::image type="content" source="../media/optimal-distance.png" alt-text="Screenshot showing the optimal distance at which the holograms must be placed." lightbox="../media/optimal-distance.png":::
 
 ## Reference
 

@@ -30,7 +30,7 @@ Your journey is just starting. Consider the following articles to kick-start you
 1. [MRTK Figma Bridge for Unity](/windows/mixed-reality/design/figma-unity-bridge)
 1. [MRTK Examples Hub](https://www.microsoft.com/store/apps/9mv8c39l2sj4?cid=storebadge&ocid=badge)
 1. [Designing holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
-1. [HoloLens Playground](https://www.microsoft.com/en-us/p/hololens-playground/9nb31lh723s2?activetab=pivot:overviewtab)
+1. [HoloLens Playground](https://www.microsoft.com/p/hololens-playground/9nb31lh723s2?activetab=pivot:overviewtab)
 1. [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
 1. [GitHub Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer)
 1. [Galaxy Explore case study documentation](/windows/mixed-reality/out-of-scope/case-study-creating-a-galaxy-in-mixed-reality)

@@ -2,7 +2,7 @@ Resources are collections of valuable and informative content, articles, and gui
 
 ## Unity
 
-Unity is the most widely used game engine in the world. It has many features and is adaptable enough to create practically any game you can think of. Unity is popular among both amateurs and AAA studios due to its unparalleled cross-platform functionality. Pokemon Go, Heathstone, Rimworld, Cuphead, and other games have all used Unity as their development engine.
+Unity is the most widely used game engine in the world. It has many features and is adaptable enough to create practically any game you can think of. Unity is popular among both amateurs and AAA studios due to its unparalleled cross-platform functionality. Pokemon Go, Hearthstone, Rimworld, Cuphead, and other games have all used Unity as their development engine.
 
 Programmers love it because of the built-in Visual Studio integration and C# scripting API. For developers looking for an alternative to Visual Studio, Unity also offers JavaScript as a scripting language and MonoDevelop as IDE. On the other hand, artists prefer Unity since it comes with solid animation tools that are easy to use to create 3D sequences and 2D animations from scratch. In Unity, almost anything can be animated.
 
@@ -30,7 +30,7 @@ If you've already decided to use Unity, go ahead and jump right into it. However
 
 MRTK is a Microsoft-led open-source project that provides a set of components and functionalities to speed up your creation of cross-platform MR apps in Unity. You'll be able to find crucial building blocks for spatial interactions and UI for mixed reality that have been designed and polished by Microsoft's mixed reality design and engineering team.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyXHW ]
 
 There's no one-size-fits-all audience for MRTK. It has been developed to accommodate various use cases, from first-time hackathons to individuals creating complicated and shared workplace experiences. Some code and APIs may be created to favor one over the other. For example, some elements of the MRTK appear to be more optimized for "one-click configure." It's important to note that some of these are due to historical and resource reasons. As MRTK develops, added features will be scalable to suit various use cases.
 
@@ -49,7 +49,7 @@ MRTK offers the following features:
 
 The MRTK Figma Toolkit includes 2D versions of the Microsoft HoloLens 2 style UI controls seen in the **MRTK for Unity** and **MRTK for Unreal** toolkits. These can be used to make UI layouts and storyboards. For example, after you create a flat layout with MRTK's components, you can experiment with depth (z-position, rotation, and so on) in Unity or Unreal. Visit the MRTK Figma Toolkit Documentation<sup>13</sup> to learn more.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGqke ]
 
 Most of the controls in this Figma file's UI Gallery are a 2D replica of controls available as prefabs in MRTK for Unity. These prefabs are available in the MRTK Toolbox. Since the building components are visually similar, you or your Unity expert can easily recreate any layouts you design here in Unity.
 
@@ -57,7 +57,7 @@ Most of the controls in this Figma file's UI Gallery are a 2D replica of control
 
 The MRTK Figma Bridge for Unity allows you to import Figma Toolkit layouts into Unity. The bridge may import a UI layout developed using the MRTK Figma Toolkit and then create the corresponding MRTK prefabs with the correct size and position. Figma Bridge will aid design integration and collaboration between designers and developers.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWKiO4  ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKiO4  ]
 
 Learn more about MRTK Figma Bridge for Unity<sup>14</sup>.
 

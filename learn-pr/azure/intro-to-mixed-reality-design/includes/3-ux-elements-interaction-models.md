@@ -8,7 +8,7 @@ Let's go back to the basics and understand the fundamentals before diving deep i
 
 Color, lighting, and materials play a crucial role in designing visual assets for mixed reality. It's challenging and different from the familiar process of designing for non-immersive devices. For example, you might have to use the right light and materials to set the tone for your environment or use striking colors to represent some form of action. Here are some guidelines to render assets on both immersive and holographic headsets.
 
-:::image type="content" source="../media/color-light-material.png" alt-text="Photo of people working together with HoloLens for color, light, and material" lightbox="../media/color-light-material.png":::
+:::image type="content" source="../media/color-light-material.png" alt-text="Photo of people working together with HoloLens for color, light, and material." lightbox="../media/color-light-material.png":::
 
 * **Rendering**: Compared to holographic headsets, the content displayed in immersive headsets would appear visually different. Holographic headsets, such as the HoloLens, use color-sequential, see-through RGB displays to create holograms, while immersive headsets normally render content as one would on a 2D screen.
 
@@ -20,7 +20,7 @@ Color, lighting, and materials play a crucial role in designing visual assets fo
 
 * **Designing with color**: Certain colors may seem differently on holographic displays due to the nature of additive lighting. In certain lighting conditions, some colors will stand out more than others. Warm colors jump to the foreground while cool hues fade into the background. Consider the following criteria as you examine color in your design journey:
 
-  :::image type="content" source="../media/design-color.png" alt-text="Screenshot of designing with light and dark colors" lightbox="../media/design-color.png":::
+  :::image type="content" source="../media/design-color.png" alt-text="Screenshot of designing with light and dark colors." lightbox="../media/design-color.png":::
 
   * **Rendering light colors**: It should be used moderately because white is bright. Large, bright areas may cause eye irritation. Dark colors are recommended for the backplate of UI windows.
 
@@ -30,7 +30,7 @@ Color, lighting, and materials play a crucial role in designing visual assets fo
 
 * **Storytelling with light and color**: Light and color can help your holograms blend in more naturally with the user's surroundings while also providing guidance and assistance. Consider the following aspects as you explore lighting and color for holographic experiences:
 
-  :::image type="content" source="../media/story-telling-color.png" alt-text="Screenshot of story telling with light and color" lightbox="../media/story-telling-color.png":::
+  :::image type="content" source="../media/story-telling-color.png" alt-text="Screenshot of story telling with light and color." lightbox="../media/story-telling-color.png":::
 
   * **Vignetting**: Darkening materials with a vignette effect might draw the user's attention to the center of the field of view. This effect darkens the hologram's material at a certain distance from the user's sight vector. Viewing the holograms from an oblique or glancing angle is effective.
 
@@ -38,7 +38,7 @@ Color, lighting, and materials play a crucial role in designing visual assets fo
 
 * **Materials**: Materials are essential in creating realistic holograms. You may create interesting holographic objects that mix well with the physical world by giving them the right visual features. Materials are also necessary for delivering visual feedback for various user input activities. Since there's no physical feedback on holographic objects, providing visual feedback through materials is essential, especially for the direct interactions with hand-tracking input. For example, the holographic button UI in HoloLens 2 offers the following elements to improve the user's interaction confidence.
 
-  > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWJHgW ]
+  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJHgW ]
 
     * Proximity light
     * Hover light
@@ -54,17 +54,17 @@ There are various ways to convey an object's size, some of which may affect othe
 
 * **Use the distance of objects**: A large object placed close to the user could create discomfort issues, as the user needs to move both the head and body to see the whole object. If the objects are placed further away, the users can estimate their size by seeing the whole object in their field of view. Users could then move closer to the object for a more detailed inspection. Place objects 1-2 meters away from the user for comfortable initial discovery and observation.
 
-  :::image type="content" source="../media/use-distance-object.png" alt-text="Screenshot of hologram depicting how to scale according to the situation" lightbox="../media/use-distance-object.png":::
+  :::image type="content" source="../media/use-distance-object.png" alt-text="Screenshot of hologram depicting how to scale according to the situation." lightbox="../media/use-distance-object.png":::
 
 * **Modify a user's real space**: Another option uses holograms to alter users' physical space by replacing existing walls or ceilings with holograms or adding holographic 'holes' or 'windows.' Over-sized holograms can now appear to 'break-through' the actual physical space.
 
-  :::image type="content" source="../media/modify-real-space.png" alt-text="Screenshot of hologram depicting how to use real space" lightbox="../media/modify-real-space.png":::
+  :::image type="content" source="../media/modify-real-space.png" alt-text="Screenshot of hologram depicting how to use real space." lightbox="../media/modify-real-space.png":::
 
 ### Typography
 
 In your app experience, texts are essential for presenting information content. Texts need to be clear and readable, just like the typography on 2D screens. We use 2D text types for better legibility and readability, although we're designing mixed reality applications.
 
-:::image type="content" source="../media/typography.png" alt-text="Screenshot of Periodic Table typography used in mixed reality" lightbox="../media/typography.png":::
+:::image type="content" source="../media/typography.png" alt-text="Screenshot of Periodic Table typography used in mixed reality." lightbox="../media/typography.png":::
 
 The rules of typography in mixed reality are the same as everywhere else. The text must be readable and legible in real and virtual worlds. Texts can be displayed on a wall or superimposed on a physical object. They can also be floating alongside a digital user interface. We use the same typographic standards for reading and recognition regardless of context. Here are a few tips on how to correctly include typography in your application:
 
@@ -86,7 +86,7 @@ Because mixed reality applications lack a tactile interface, adding sound can re
 
 The mixed reality platform is built on the philosophy of fundamental, natural, and intuitive user interactions. There are three measures to ensure that app designers and developers can provide great experiences to their customers.
 
-:::image type="content" source="../media/interaction-model.png" alt-text="Screenshot of hologram interactions in mixed reality" lightbox="../media/interaction-model.png":::
+:::image type="content" source="../media/interaction-model.png" alt-text="Screenshot of hologram interactions in mixed reality." lightbox="../media/interaction-model.png":::
 
 * The sensors and input technologies combine into multimodal interaction models. These interaction models include hand and eye tracking along with natural language input.
 
@@ -112,25 +112,25 @@ Here are a few crucial building blocks for spatial interactions and UI in mixed 
 
 A cursor offers continuous feedback depending on the user's current focus. The area, hologram, or point in the virtual environment that responds to input is called cursor feedback. Even though the cursor is a digital representation of where the device believes the user's attention is focused. The cursor can provide additional visual feedback based on the user's different intentions or target object's capabilities, indicating grabbable, movable, resizable, etc. The cursor feedback also informs users about the system's expected replies. You may utilize the feedback to tell the device what they want, boosting user confidence.
 
-:::image type="content" source="../media/cursor.png" alt-text="Screenshot of cursor attached to holographic objects" lightbox="../media/cursor.png":::
+:::image type="content" source="../media/cursor.png" alt-text="Screenshot of cursor attached to holographic objects." lightbox="../media/cursor.png":::
 
 ### Button
 
 The button is the most fundamental UI component in mixed reality. Users can trigger immediate actions using buttons. Since no physical interaction is happening, it's essential to provide enough visual, and audio feedback to maintain user confidence. For example, HoloLens 2 has integrated multiple visual affordances and audio cues that help users' depth perception and interaction in space. It's important to support different interaction options for buttons in mixed reality. By default, we recommend that you support voice commands for all button controls. In addition, HoloLens 2's button design provides a tooltip during the hover state to improve discoverability.
 
-:::image type="content" source="../media/button.png" alt-text="Screenshot of a button" lightbox="../media/button.png":::
+:::image type="content" source="../media/button.png" alt-text="Screenshot of a button." lightbox="../media/button.png":::
 
 ### Bounding box
 
 In mixed reality, the bounding box is a standard interface for manipulating objects. This feature serves as a visual cue that the object can now be manipulated and changed by the user. The bounding box's corners indicate that the object can scale. The scale-adjustment handles follow a well-known design. The vertical rectangular resources on the edges of the bounding box are rotation indicators. These indicators allow users to adjust the size and rotation of holograms. On HoloLens 2, the bounding box works with direct hand manipulation and responds to the user's finger proximity. In addition, visual feedback helps the user to perceive the distance from the object.
 
-:::image type="content" source="../media/bounding-box.png" alt-text="Screenshot of bounding box" lightbox="../media/bounding-box.png":::
+:::image type="content" source="../media/bounding-box.png" alt-text="Screenshot of bounding box." lightbox="../media/bounding-box.png":::
 
 ### Hand menu
 
 You can also bring up the hand-attached UI with some gestures. The hand menu is one of the unique UX patterns in HoloLens 2 applications. Since it's accessible anytime and can show or hide easily, the hand menu is excellent for quick actions.
 
-:::image type="content" source="../media/hand-menu.png" alt-text="Screenshot of the hand menu" lightbox="../media/hand-menu.png":::
+:::image type="content" source="../media/hand-menu.png" alt-text="Screenshot of the hand menu." lightbox="../media/hand-menu.png":::
 
 Here are the best practices on what features to include on hand menus:
 
@@ -152,7 +152,7 @@ A near menu is a group of buttons on a panel that tags-along<sup>7</sup> with yo
 
 ### Billboarding and tag-along
 
-:::image type="content" source="../media/billboarding-tag-along.gif" alt-text="Animated gif image of billboarding and tag along" lightbox="../media/billboarding-tag-along.gif":::
+:::image type="content" source="../media/billboarding-tag-along.gif" alt-text="Animated gif image of billboarding and tag along." lightbox="../media/billboarding-tag-along.gif":::
 
 **Billboarding** is a mixed reality behavioral idea that may be applied to items. Billboarded objects always face the user. Normally, as users move around in space, the users' view of static objects placed in the environment (world-locked) can be easily obstructed. Billboarding is often applied to texts and menu panels. Objects with billboarding turned on can turn towards the user. Depending on the design, they can also be restricted to a single axis.
 
