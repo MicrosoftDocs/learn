@@ -4,7 +4,7 @@ By the end of this module, you'll be able to manage *content* in Microsoft Senti
 You should now be able to:
 
 - Install a content hub solution in Microsoft Sentinel
-- Connect a github repository to Microsoft Sentinel
+- Connect a GitHub repository to Microsoft Sentinel
 
 
 ## Learn more
