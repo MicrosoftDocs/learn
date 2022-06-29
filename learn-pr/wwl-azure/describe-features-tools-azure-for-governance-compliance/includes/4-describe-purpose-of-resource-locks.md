@@ -18,7 +18,7 @@ To view, add, or delete locks in the Azure portal, go to the Settings section of
 :::image type="content" source="../media/resource-lock-54695e43.png" alt-text="A screenshot showing the resource lock control, under settings, for a storage account.":::
 
 
-## How do I delete or change a locked resource?<br>
+## How do I delete or change a locked resource?
 
 Although locking helps prevent accidental changes, you can still make changes by following a two-step process.
 
