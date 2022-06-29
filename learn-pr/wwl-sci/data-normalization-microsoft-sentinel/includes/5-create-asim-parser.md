@@ -76,7 +76,8 @@ Filtering in KQL is done using the **where** operator. For example, **Sysmon eve
 Event | where Source == "Microsoft-Windows-Sysmon" and EventID == 1
 ```
 
-> [!IMPORTANT] A parser should not filter by time. The query which uses the parser will apply a time range.
+> [!IMPORTANT]
+> A parser should not filter by time. The query which uses the parser will apply a time range.
 
 ### Filtering by source type using a Watchlist
 In some cases, the event itself doesn't contain information that would allow filtering for specific source types.

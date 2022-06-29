@@ -3,7 +3,7 @@ uid: learn.wwl.data-normalization-microsoft-sentinel
 metadata:
   title: Data normalization in Microsoft Sentinel
   description: "Data normalization in Microsoft Sentinel"
-  ms.date: 06/28/2022
+  ms.date: 06/29/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -25,7 +25,6 @@ roles:
 products:
 - azure
 - microsoft-sentinel
-- kql
 units:
 - learn.wwl.data-normalization-microsoft-sentinel.introduction
 - learn.wwl.data-normalization-microsoft-sentinel.understand
