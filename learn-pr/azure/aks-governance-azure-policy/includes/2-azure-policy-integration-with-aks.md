@@ -1,4 +1,4 @@
-Azure Policy is an Azure service that helps you manage your compliance state across different Azure service. Azure Policy for Kubernetes enables you to use the same Azure policies in your Kubernetes clusters as well, which allows you to manage the compliance state of Kubernetes resources like pods, deployments, and services as if they were an Azure resource.
+Azure Policy is an Azure service that helps you manage your compliance state across different Azure services. Azure Policy for Kubernetes enables you to use the same Azure policies in your Kubernetes clusters as well, which allows you to manage the compliance state of Kubernetes resources like pods, deployments, and services as if they were an Azure resource.
 
 ## Introducing Azure Policy
 
