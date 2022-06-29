@@ -28,14 +28,14 @@ prerequisites: |
   This Learn module has no prerequisites. Come as you are and dive into mixed reality!
   
 units: 
-- learn.azure.design-considerations-mr-development.1-introduction
-- learn.azure.design-considerations-mr-development.2-get-started-core-concepts
-- learn.azure.design-considerations-mr-development.3-ux-elements-interaction-models
-- learn.azure.design-considerations-mr-development.4-techniques-expand-design-process
-- learn.azure.design-considerations-mr-development.5-mixed-reality-resources
-- learn.azure.design-considerations-mr-development.6-great-design-example-in-mixed-reality
-- learn.azure.design-considerations-mr-development.7-knowledge-check
-- learn.azure.design-considerations-mr-development.8-summary
+- learn.azure.design-considerations-mr-development.introduction
+- learn.azure.design-considerations-mr-development.get-started-core-concepts
+- learn.azure.design-considerations-mr-development.ux-elements-interaction-models
+- learn.azure.design-considerations-mr-development.techniques-expand-design-process
+- learn.azure.design-considerations-mr-development.mixed-reality-resources
+- learn.azure.design-considerations-mr-development.great-design-example-in-mixed-reality
+- learn.azure.design-considerations-mr-development.knowledge-check
+- learn.azure.design-considerations-mr-development.summary
 
 badge:
   uid: learn.azure.design-considerations-mr-development.badge
