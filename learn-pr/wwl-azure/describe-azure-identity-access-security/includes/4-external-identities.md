@@ -2,7 +2,7 @@ An external identity is a person, device, service, etc. that is outside your org
 
 External identities may sound similar to single sign-on. With External Identities, external users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD or Azure AD B2C to keep your resources protected.
 
-:::image type="content" source="../media/azure-active-directory-external-identities-5a892021.png" alt-text="Diagram showing B two B collaborators accessing your tenant and B two C collaborators accessing the AD B two C tennant.":::
+:::image type="content" source="../media/azure-active-directory-external-identities-5a892021.png" alt-text="Diagram showing B2B collaborators accessing your tenant and B2C collaborators accessing the AD B2C tennant.":::
 
 
 The following capabilities make up External Identities:
@@ -11,7 +11,7 @@ The following capabilities make up External Identities:
  -  **B2B direct connect** \- Establish a mutual, two-way trust with another Azure AD organization for seamless collaboration. B2B direct connect currently supports Teams shared channels, enabling external users to access your resources from within their home instances of Teams. B2B direct connect users aren't represented in your directory, but they're visible from within the Teams shared channel and can be monitored in Teams admin center reports.
  -  **Azure AD business to customer (B2C)** \- Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers, while using Azure AD B2C for identity and access management.
 
-Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities .
+Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities.
 
 With Azure Active Directory (Azure AD), you can easily enable collaboration across organizational boundaries by using the Azure AD B2B feature. Guest users from other tenants can be invited by administrators or by other users. This capability also applies to social identities such as Microsoft accounts.
 
