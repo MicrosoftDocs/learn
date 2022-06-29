@@ -3,53 +3,50 @@ uid: learn.create-cosmos-db-for-scale.3-what-is-a-request-unit
 metadata:
   title: What is an Azure Cosmos DB request unit?
   description: What is an Azure Cosmos DB request unit?
-  ms.date: 09/24/2018
+  ms.date: 06/20/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: What is a request unit?
-durationInMinutes: 8
+title: What is an Azure Cosmos DB request unit?
+durationInMinutes: 5
 content: |
   [!include[](includes/3-what-is-a-request-unit.md)] 
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'True or false: The number of RUs used for a given database operation over the same data varies over time.'
+  - content: Which of the following statements is true about the number of RUs used for a specific database operation on the same data?
     choices:
-    - content: 'True'
+    - content:  The number of RUs varies over time.
       isCorrect: false
-      explanation: Azure Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic.
-    - content: 'False'
+      explanation: Incorrect. Azure Cosmos DB ensures that the number of RUs for a specific database operation over a specific dataset doesn't change.
+    - content: The number of RUs is deterministic.
       isCorrect: true
-      explanation: Azure Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic.
+      explanation: Correct. Azure Cosmos DB ensures that the number of RUs for a specific database operation over a specific dataset is deterministic.
+    - content:  The average RU for the database operation in 30 days is the RU/s to use to plan for the next month.
+      isCorrect: false
+      explanation: Incorrect. In Azure Cosmos DB, the number of RUs for a specific database operation over a specific dataset is consistent and not based on average use.
 
-  - content: 'Which of the following options affects the number of request units it takes to write a document?'
+  - content: Which of the following options affects the number of RUs it takes to write a document?
     choices:
-    - content: Size of the document
+    - content: The size of the document, the database region, and the indexing policy.
       isCorrect: false
-      explanation: All the three options (size of the document, Item property count, and Indexing policy) are considered when provisioning request units.
-    - content: Item property count
+      explanation: Incorrect. Azure Cosmos DB replicates data to all the regions associated with your Cosmos DB account, so a database region doesn't affect RU provisioning.
+    - content: The size of the document, the item property count, and the Azure data retention policy.
       isCorrect: false
-      explanation: All the three options (size of the document, Item property count, and Indexing policy) are considered when provisioning request units.
-    - content: Indexing policy
-      isCorrect: false
-      explanation: All the three options (size of the document, Item property count, and Indexing policy) are considered when provisioning request units.
-    - content: All of the above
+      explanation: Incorrect. Azure Cosmos DB automatically, securely backs up your data, so you don't need to take data retention policy into account when you choose RUs for a database or container.
+    - content: The size of the document, the item property count, and the indexing policy.
       isCorrect: true
-      explanation: All the three options (size of the document, Item property count, and Indexing policy) are considered when provisioning request units.
+      explanation: Correct. Consider the size of the document, the item property count, and the indexing policy when you provision RUs.
       
-  - content: 'Which of the following statements is false about Request Units (RUs) in Azure Cosmos DB?'
+  - content: Which of the following statements is true about RUs in Azure Cosmos DB?
     choices:
-    - content: The cost to read a 1 KB item is approximately one Request Unit (or 1 RU).
-      isCorrect: false
-      explanation: You can increase or decrease the number of request units provisioned to a container or a database.
-    - content: Requests are rate-limited if you exceed the number of provisioned RU.
-      isCorrect: false
-      explanation: You can increase or decrease the number of request units provisioned to a container or a database.
-    - content: Once you set the number of request units, it's impossible to modify this number.
+    - content: The cost to read a 1-KB item is approximately 1 RU.
       isCorrect: true
-      explanation: You can increase or decrease the number of request units provisioned to a container or a database.
-    - content: If you provision 'R' RUs on an Azure Cosmos container (or a database), Azure Cosmos DB ensures that 'R' RUs are available in each region associated with your account.
+      explanation: Correct. The cost to read a 1-KB item is approximately 1 RU.
+    - content: When you set the number of RUs, you can't later change this number.
       isCorrect: false
-      explanation: You can increase or decrease the number of request units provisioned to a container or a database.
+      explanation: Incorrect. You can increase or decrease the number of RUs provisioned to a container or a database.
+    - content: If you provision a specific number of RUs on an Azure Cosmos container or database, you can't know whether that number of RUs are available in each region associated with your account.
+      isCorrect: false
+      explanation: Incorrect. Azure Cosmos DB ensures that the same number of RUs are available in each region associated with your account.

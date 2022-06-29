@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-service-types.describe-infrastructure-service
+title: Describe Infrastructure as a Service
+metadata:
+  title: Describe Infrastructure as a Service
+  description: "Describe Infrastructure as a Service"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-describe-infrastructure-service.md)]
