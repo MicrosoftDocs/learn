@@ -98,7 +98,7 @@ Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/i
 Defender for IoT has both agent-based and agentless monitoring solutions:
 
 -   **For end-user organizations**, Microsoft Defender for IoT provides agentless, network-layer monitoring that integrates smoothly with industrial equipment and SOC tools. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises.
--   **For IoT device builders**, Microsoft Defender for IoT also offers a lightweight micro-agent that supports standard IoT operating systems, such as Linux and RTOS. The Microsoft Defender device builder agent helps you ensure that security is built into your IoT/OT projects from the cloud. For more information, see [Microsoft Defender for IoT for device builders    documentation](https://docs.microsoft.com/device-builders/index.md).
+-   **For IoT device builders**, Microsoft Defender for IoT also offers a lightweight micro-agent that supports standard IoT operating systems, such as Linux and RTOS. The Microsoft Defender device builder agent helps you ensure that security is built into your IoT/OT projects from the cloud. For more information, see [Microsoft Defender for IoT for device builders    documentation](/azure/defender-for-iot/device-builders/overview).
 
 ## Threat Intelligence in Defender for Cloud
 
