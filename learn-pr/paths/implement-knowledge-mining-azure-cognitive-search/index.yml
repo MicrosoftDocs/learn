@@ -32,8 +32,6 @@ modules:
 - learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search
 - learn.wwl.enrich-search-index-using-language-studio
-- learn.wwl.implement-advanced-search-features-azure-cognitive-search
-- learn.wwl.build-azure-machine-learning-custom-skill-for-azure-cognitive-search
 - learn.wwl.search-data-outside-azure-platform-cognitive-search
 - learn.wwl.maintain-azure-cognitive-search-solution
 trophy:
