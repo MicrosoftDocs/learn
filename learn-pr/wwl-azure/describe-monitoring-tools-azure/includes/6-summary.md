@@ -1,6 +1,6 @@
 In this module, you were introduced to tools that help you monitor your environment and applications, both in Azure and in on-premises or multi-cloud environments.
 
-## Learning objectives<br>
+## Learning objectives
 
 You should now be able to:
 
@@ -8,7 +8,7 @@ You should now be able to:
  -  Describe Azure Service Health
  -  Describe Azure Monitor, including Azure Log Analytics, Azure Monitor Alerts, and Application Insights
 
-## Additional resources<br>
+## Additional resources
 
 The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
 

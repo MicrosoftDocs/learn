@@ -7,7 +7,7 @@ The following diagram illustrates just how comprehensive Azure Monitor is:
 
 On the left is a list of the sources of logging and metric data that can be collected at every layer in your application architecture, from application to operating system and network.
 
-In the center, the logging and metric data is stored in central repositories.
+In the center, the logging and metric data are stored in central repositories.
 
 On the right, the data is used in several ways. You can view real-time and historical performance across each layer of your architecture or aggregated and detailed information. The data is displayed at different levels for different audiences. You can view high-level reports on the Azure Monitor Dashboard or create custom views by using Power BI and Kusto queries.
 
@@ -32,7 +32,7 @@ Azure Monitor Alerts use action groups to configure who to notify and what actio
 
 Application Insights, an Azure Monitor feature, monitors your web applications. Application Insights is capable of monitoring applications that are running in Azure, on-premises, or in a different cloud environment.
 
-There are two ways to configure Application Insights to help monitor your application. You can either install an SDK in your application, or you can use the Application Insights agent. The Application Insights agent is supported in C\#.net, VB.net, Java, JavaScript, Node.js, and Python.
+There are two ways to configure Application Insights to help monitor your application. You can either install an SDK in your application, or you can use the Application Insights agent. The Application Insights agent is supported in C\#.NET, VB.NET, Java, JavaScript, Node.js, and Python.
 
 Once Application Insights is up and running, you can use it to monitor a broad array of information, such as:
 
