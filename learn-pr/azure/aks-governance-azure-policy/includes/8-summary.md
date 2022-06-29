@@ -4,6 +4,8 @@ In this module, you learned how Azure Policy for Kubernetes can be used to achie
 
 Without this solution, your team would be wasting time by manually creating company policies, asking coworkers not to do certain things and potentially opening your clusters to security and operational issues. In the long run, you've saved the company thousands of dollars in time by automating that manual work using Azure policies for AKS.
 
+[!INCLUDE [azure-optional-exercise-subscription-cleanup](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Clean up resources
 
 In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
