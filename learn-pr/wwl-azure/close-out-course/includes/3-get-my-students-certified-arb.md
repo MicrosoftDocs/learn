@@ -1,4 +1,4 @@
-For students who are starting or thinking about a career in technology, Microsoft’s ARB curriculum prepares students for the certification exam and provides associate level knowledge of Microsoft cloud and business application services. 
+For students who are starting or thinking about a career in technology, Microsoft’s ARB curriculum prepares students for the certification exam and provides associate-level knowledge of Microsoft cloud and business application services. 
 
 [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oK9] 
 
@@ -12,8 +12,8 @@ After attaining a Microsoft ARB Certification exam voucher, students must schedu
 
  - Through a [PearsonVUE Testing Center](https://aka.ms/PVUETC).  
 
- - Institutions can administer ARB exams by becoming a PearsonVUE Testing Center. If you’d like your institution to become a PearsonVUE Testing Center, please visit [Become a PearsonVUE test center](https://aka.ms/BecomePVUETC) to learn more. 
+ - Institutions can administer ARB exams by becoming a PearsonVUE Testing Center. If you’d like your institution to become a PearsonVUE Testing Center, visit [Become a PearsonVUE test center](https://aka.ms/BecomePVUETC) to learn more. 
 
  - Students can also take an Advanced Role Based (ARB) exam via online remote proctoring.  
 
-With PearsonVUE, individual students schedule exams through Microsoft without the help of a faculty member. A self-serve walkthrough is provided throughout the whole journey. Exams taken with PearsonVUE are not associated with an institution and any post-exam data does not go to the institution.  
+With PearsonVUE, individual students schedule exams through Microsoft without the help of a faculty member. A self-serve walkthrough is provided throughout the whole journey. Exams taken with PearsonVUE aren't associated with an institution and any post-exam data doesn't go to the institution.  

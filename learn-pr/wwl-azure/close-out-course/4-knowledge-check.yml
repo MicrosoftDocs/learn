@@ -24,7 +24,7 @@ quiz:
       explanation: "Correct. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
     - content: "Microsoft Learn Testing Center"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Learn does not offer certification exam testing. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
+      explanation: "Incorrect. Microsoft Learn doesn't offer certification exam testing. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
     - content: "Online Remote Proctoring"
       isCorrect: false
       explanation: "Incorrect. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Certiport Authorized Testing Center"
       isCorrect: false
-      explanation: "Incorrect. If you are taking a Microsoft Fundamentals Certification exam you can test at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center, however if you are taking an ARB certification exam, you will need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
+      explanation: "Incorrect. If you're taking a Microsoft Fundamentals Certification exam, you can test at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center. However, if you're taking an ARB certification exam, you'll need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
     - content: "Microsoft Learn Testing Center"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Learn does not offer certification exam testing. If you are taking an ARB certification exam, you will need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
+      explanation: "Incorrect. Microsoft Learn doesn't offer certification exam testing. If you're taking an ARB certification exam, you'll need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
     - content: "PearsonVUE Testing Center or Online Remote Proctoring"
       isCorrect: true
-      explanation: "Correct. If you are taking an advanced role-based certification exam, you will need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
+      explanation: "Correct. If you're taking an advanced role-based certification exam, you'll need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."

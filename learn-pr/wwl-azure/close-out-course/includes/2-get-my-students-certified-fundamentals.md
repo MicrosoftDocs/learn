@@ -22,8 +22,8 @@ With a Microsoft Academic Volume License, you can decide:
 
 If you choose to purchase a volume license for certifications for your students, you can purchase directly online from PearsonVUE or Certiport. 
 
-After attaining a Microsoft Fundamentals Certification exam voucher, students must schedule a certification exam: 
+After students attain a Microsoft Fundamentals Certification exam voucher, they must schedule a certification exam: 
 
-- Through a nearby Certiport Testing center that administers the Fundamentals certification exams. (If your institution is provisioning Certiport exam vouchers and want to make it one step easier for your students to get certified, your institution can administer Fundamentals certification exams for students by becoming a Certiport Testing Center. If you’d like your institution to become a Certiport Testing Center, visit Get Started as a [Certiport test center](https://aka.ms/certiporttestcenter) to learn more about the process) 
+- Through a nearby Certiport Testing center that administers the Fundamentals certification exams. (If your institution is provisioning Certiport exam vouchers, your institution can administer Fundamentals certification exams for students by becoming a Certiport Testing Center. If you’d like your institution to become a Certiport Testing Center, visit Get Started as a [Certiport test center](https://aka.ms/certiporttestcenter) to learn more about the process) 
 
-- Through a [PearsonVUE Testing Center](https://aka.ms/PVUETC). (If you want to administer Fundamentals exams as PearsonVUE Testing Center, please visit[ Become a PearsonVUE test center](https://aka.ms/BecomePVUETC) to learn more) 
+- Through a [PearsonVUE Testing Center](https://aka.ms/PVUETC). (If you want to administer Fundamentals exams as PearsonVUE Testing Center, visit[ Become a PearsonVUE test center](https://aka.ms/BecomePVUETC) to learn more) 
