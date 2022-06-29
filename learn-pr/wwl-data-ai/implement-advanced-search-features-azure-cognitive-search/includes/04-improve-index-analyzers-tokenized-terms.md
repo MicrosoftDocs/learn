@@ -1,4 +1,4 @@
-Cognitive Search is configured by default to analyze text and identify tokens that will be helpful in your index. The right tokens ensure that users can find the documents they need quickly. In most cases, the default configuration produces an optimal index but sometimes, when you have unusual or unique fields, you might want to configure exactly how text is analyzed.
+Cognitive Search is configured by default to analyze text and identify tokens that will be helpful in your index. The right tokens ensure that users can find the documents they need quickly. In most cases, the default configuration produces an optimal index. However, when you have unusual or unique fields, you might want to configure exactly how text is analyzed.
 
 Here, you'll learn how to define a custom analyzer to control how the content of a field is split into tokens for inclusion in the index.
 
@@ -10,7 +10,7 @@ When Cognitive Search indexes your content, it retrieves text. To build a useful
 - Stopwords, such as "the" and "it", should be removed because users don't search for them.
 - Words should be reduced to their root form. For example, past tense words, such as "ran", should be replaced with present tense words, such as "run".
 
-In Cognitive Search, this kind of processing is performed by analyzers. If you don't specify an analyzer for a field, the default Lucene analyzer is used. This is a good choice for most fields because it can process many languages and return useful tokens for your index. 
+In Cognitive Search, this kind of processing is performed by analyzers. If you don't specify an analyzer for a field, the default Lucene analyzer is used. The default Lucene analyzer is a good choice for most fields because it can process many languages and return useful tokens for your index. 
 
 Alternatively, you can specify one of the analyzers that are built into Cognitive Search. Built-in analyzers are of two types:
 
@@ -31,7 +31,7 @@ Let's examine these components in more detail.
 
 ### Character filters
 
-Some operations might need to be completed on the text before it is split into tokens. Character filters enable these operations. There are three character filters that you can use:
+Some operations might need to be completed on the text before it's split into tokens. Character filters enable these operations. There are three character filters that you can use:
 
 - **html_strip.** This filter removes HTML constructs such as tags and attributes.
 - **mapping.** This filter enables you to specify mappings that replace one string with another. For example, you could specify a mapping that replaces *TX* with *Texas*.
@@ -45,14 +45,14 @@ The tokenizer is the component that divides the text into the tokens that will b
 - A complete URL or email address.
 - Words based on the grammar of a specific language.
 
-There are 13 different tokenizers to choose from. These include:
+There are 13 different tokenizers to choose from. These tokenizers include:
 
 - **classic.** This tokenizer processes text based on grammar for European languages.
 - **keyword.** This tokenizer emits the entire input as a single token. Use this tokenizer for fields that should always be indexed as one value.
 - **lowercase.** This tokenizer divides text at non-letters and then modifies the resulting tokens to all lower case.
 - **microsoft_language_tokenizer.** This tokenizer divides text based on the grammar of the language you specify.
 - **pattern.** This tokenizer divides texts where it matches a regular expression that you specify.
-- **whitespace.** This tokenizer divides text wherever there is white space.
+- **whitespace.** This tokenizer divides text wherever there's white space.
 
 > [!NOTE]
 > For a full list of tokenizers, see **Add custom analyzers to string fields in an Azure Cognitive Search index** in the **Learn more** section below.
@@ -73,7 +73,7 @@ Once the tokenizer has divided the incoming text into tokens, you might want to 
 
 ## Create a custom analyzer
 
-You create a custom analyzer by specifying it when you define the index. You must do this with JSON code - there is no way to specify a custom index in the Azure portal. Use the `analyzers` section of the index at design time. You can include only one tokenizer but one or more character filters and one or more token filters. Use a unique name for your analyzer and set the `@odata.type` property to `Microsoft.Azure.Search.CustomAnalyzer`.
+You create a custom analyzer by specifying it when you define the index. You must do this with JSON code - there's no way to specify a custom index in the Azure portal. Use the `analyzers` section of the index at design time. You can include only one tokenizer but one or more character filters and one or more token filters. Use a unique name for your analyzer and set the `@odata.type` property to `Microsoft.Azure.Search.CustomAnalyzer`.
 
 In this example, a character filter removes HTML formatting, a tokenizer splits the text according to the grammar of Icelandic, and a token filter removes apostrophes:
 
@@ -141,11 +141,11 @@ Your request must also include a JSON body like this:
 }
 ```
 
-Replace `<analyzer name>` with the name you specified when you defined the custom analyzer. Be sure to test with lots of different `text` values until you are sure that the custom analyzer behaves as you expect.
+Replace `<analyzer name>` with the name you specified when you defined the custom analyzer. Be sure to test with lots of different `text` values until you're sure that the custom analyzer behaves as you expect.
 
 ## Use a custom analyzer for a field
 
-Once you've defined and tested a custom analyzer you can configure your index to use it. You can specify an analyzer for each field in your index.
+Once you've defined and tested a custom analyzer, you can configure your index to use it. You can specify an analyzer for each field in your index.
 
 You can use the `analyzer` field when you want to use the same analyzer for both indexing and searching:
 

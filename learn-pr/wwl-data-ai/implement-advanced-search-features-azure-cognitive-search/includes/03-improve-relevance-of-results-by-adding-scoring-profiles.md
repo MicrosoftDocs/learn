@@ -14,7 +14,7 @@ The search engine scores the documents returned from the first three phases. The
 
 As the default scoring works on the frequency of terms and rarity, the final calculated score might not return the highest score for the most relevant document. Each dataset is different, so Cognitive Search lets you influence a document score using scoring profiles.
 
-:::image type="content" source="../media/weighted-field-score.png" alt-text="A diagram showing a wieghted field score." border="false":::
+:::image type="content" source="../media/weighted-field-score.png" alt-text="A diagram showing a weighted field score." border="false":::
 
 The most straightforward scoring profile defines different weights for fields in an index. In the above example, the Hotel index has a scoring profile that has the Description field five times more relevant than data in the Location or Rooms fields. The Category field is twice as relevant as the HotelName.
 
@@ -36,7 +36,7 @@ You can add up to 100 scoring profiles to a search index. The simplest way to cr
 1. To set the scoring profile as a default to be applied to all searches, select the more menu **...**
 1. Select **Set as default profile**.
 
-:::image type="content" source="../media/azure-portal-scoring-profiles.png" alt-text="A screenshot of the Azure portal scpring profiles pane.":::
+:::image type="content" source="../media/azure-portal-scoring-profiles.png" alt-text="A screenshot of the Azure portal scoring profiles pane.":::
 
 In the above example, the `boost-category` scoring profile has been added to the `hotels-sample-index`. The Category has a weight of five.
 

@@ -4,7 +4,7 @@ You then explored the lexical analysis phase of search processing and how index 
 
 Finally, you improved your search index by adding languages and using geographical locations to order results by distance.
 
-To learn more about each of these topics see the documentaiotn:
+To learn more about each of these topics, see the documentation:
 
 - [Score tuning](/azure/search/search-lucene-query-architecture#score-tuning)
 - [Add scoring profiles to a search index](/azure/search/index-add-scoring-profiles)

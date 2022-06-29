@@ -27,17 +27,17 @@ quiz:
     - content: "!."
       isCorrect: false
       explanation: "Incorrect. ! is used to exclude a term in a full query."
-  - content: "Which of the following is a function you can use in a scoring profile?"
+  - content: "Which of the following options is a function you can use in a scoring profile?"
     choices:
     - content: "Tag."
       isCorrect: true
       explanation: "Correct. You can alter scores based on common tag values."
     - content: "Volume."
       isCorrect: false
-      explanation: "Incorrect. This isn't a function, but magnitude is."
+      explanation: "Incorrect. Volume isn't a function, but magnitude is."
     - content: "Staleness."
       isCorrect: false
-      explanation: "Incorrect. This isn't a function, but freshness is."
+      explanation: "Incorrect. Staleness isn't a function, but freshness is."
   - content: "What Azure product can you use to enrich an index with different language translations?"
     choices:
     - content: "Azure Cognitive Search."
@@ -48,4 +48,4 @@ quiz:
       explanation: "Incorrect. This product is focused on translating speech-to-text and text-to-speech services."
     - content: "Azure Cognitive Services."
       isCorrect: true
-      explanation: "Correct. Cognitive Services provide translation services."
+      explanation: "Correct. Cognitive Services provides translation services."

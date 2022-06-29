@@ -33,7 +33,7 @@ The last parameter on the query asks the index to count the total results.
 
 `$count=true`
 
-There is no lexical analysis needed so document retrieval returns 14 documents. The first three are:
+There's no lexical analysis needed so document retrieval returns 14 documents. The first three are:
 
 ```json
 {
@@ -85,7 +85,7 @@ The customer might be surprised that the top hotel you have that's supposed to b
 
 `search=luxury + air con&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 
-The search service now returns 5 documents but still the top results are in the budget category.
+The search service now returns five documents but still the top results are in the budget category.
 
 #### Enable the Lucene Query Parser
 
@@ -93,12 +93,12 @@ You can tell the search explorer to use the Lucene Query parser by adding `&quer
 
 `search=luxury AND air con&$select=HotelId, HotelName, Category, Tags, Description&$count=true&queryType=full`
 
-With the Lucene syntax, you can write more precise queries. A summary of features available are:
+With the Lucene syntax, you can write more precise queries. Here is a summary of available features:
 
 - **Boolean operators**: `AND`, `OR`, `NOT` for example `luxury AND 'air con'`
 - **Fielded search**: `fieldName:search term` for example `Description:luxury AND Tags:air con`
 - **Fuzzy search**: `~` for example `Description:luxury~` returns results with misspelled versions of luxury
-- **Term proximity search**: `"term1 term2"~n` for example `"indoor swimming pool"~3` returns documents with the words indoor swimming pool within 3 words of each other
+- **Term proximity search**: `"term1 term2"~n` for example `"indoor swimming pool"~3` returns documents with the words indoor swimming pool within three words of each other
 - **Regular expression search**: `/regular expression/` use a regular expression between `/` for example `/[mh]otel/` would return documents with hotel and motel
 - **Wildcard search**: `*`, `?` where `*` will match many characters and `?` matches a single character for example `'air con'*` would find air con and air conditioning
 - **Precedence grouping**: `(term AND (term OR term))` for example `(Description:luxury OR Category:luxury) AND Tags:air?con*`

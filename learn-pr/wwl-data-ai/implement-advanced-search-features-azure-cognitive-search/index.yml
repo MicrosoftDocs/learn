@@ -11,7 +11,7 @@ metadata:
 title: Implement advanced search features in Azure Cognitive Search
 summary: Use more advanced features of Azure Cognitive Search to improve your existing search solutions. Learn how to change the ranking on documents, boost terms, and allow searching in multiple languages.
 abstract: |
-  In this module, you will learn how to:
+  In this module, you'll learn how to:
   - Improve the ranking of a document with term boosting
   - Improve the relevance of results by adding scoring profiles
   - Improve an index with analyzers and tokenized terms
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Microsoft Azure
   - Application development experience with C# or Python
-  - Experience of building a basic search solution with Azure Cognitive Search. If you have not completed the [Create an Azure Cognitive Search](/learn/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
+  - Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search](/learn/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

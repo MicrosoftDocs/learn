@@ -1,4 +1,4 @@
-Support for multiple languages can be added to a search index. You can do this manually by providing all the translated text fields in all the different languages you want to support. You could also choose to use Cognitive Services to provide translated text through an enrichment pipeline. 
+Support for multiple languages can be added to a search index. You can add language support manually by providing all the translated text fields in all the different languages you want to support. You could also choose to use Cognitive Services to provide translated text through an enrichment pipeline. 
 
 Here, you'll see how to add fields with different languages to an index. You'll then constrain results to fields with specific languages. Finally, create a scoring profile to boost the native language of your end users.
 
@@ -6,7 +6,7 @@ Here, you'll see how to add fields with different languages to an index. You'll 
 
 To add multiple languages to an index, first, identify all the fields that need a translation. Then duplicate those fields for each language you want to support.
 
-For example, if an index has an English description field, you'd add description_fr for the French translation and description_de for German. For each field add to its definition the [corresponding language analyzer](/azure/search/index-add-language-analyzers#supported-language-analyzers).
+For example, if an index has an English description field, you'd add description_fr for the French translation and description_de for German. For each field, add to its definition the [corresponding language analyzer](/azure/search/index-add-language-analyzers#supported-language-analyzers).
 
 The JSON definition of the index could look like this:
 
@@ -105,7 +105,7 @@ Using the `searchFields` and `select` properties in the above results would retu
 
 ### Enrich an index with multiple languages using Cognitive Services
 
-If you don't have access to translations you can enrich your index and add translated fields using Cognitive Services.
+If you don't have access to translations, you can enrich your index and add translated fields using Cognitive Services.
 
 The steps are to add fields for each language, add a skill for each language, and then map the translated text to the correct fields.
 
