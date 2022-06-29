@@ -51,7 +51,7 @@ Finally, you're ready to create a link connection for Azure Synapse Link data sy
 After the link connection is created, you can start it to initialize synchronization. After a short time, the tables will be available to query in the dedicated SQL pool, and will be kept in sync with modifications in the source database by the change feed process.
 
 > [!TIP]
-> **Learn more:**:
+> Learn more:
 > 
 > - For more information about Synapse Link for SQL Server 2022, see [Azure Synapse Link for SQL Server 2022](/azure/synapse-analytics/synapse-link/sql-server-2022-synapse-link?azure-portal=true).
 > - To learn about limitations and restrictions that apply to Synapse Link for Azure SQL Database, see [Known limitations and issues with Azure Synapse Link for SQL](/azure/synapse-analytics/synapse-link/synapse-link-for-sql-known-issues?azure-portal=true).

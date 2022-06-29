@@ -41,7 +41,7 @@ Azure Synapse Link for SQL works uses the *change feed* feature in Azure SQL Dat
 After implementing Azure Synapse Link for SQL, you can use system views and stored procedures in your Azure SQL Database or SQL Server database to monitor and manage change feed activity.
 
 > [!TIP]
-> **Learn more**:
+> Learn more:
 > 
 > - For more information about change feed, see [Azure Synapse Link for SQL change feed](/sql/sql-server/synapse-link/synapse-link-sql-server-change-feed?azure-portal=true).
 > - To learn more about monitoring and managing change feed, see [Manage Azure Synapse Link for SQL Server and Azure SQL Database](/sql/sql-server/synapse-link/synapse-link-sql-server-change-feed-manage?azure-portal=true).

@@ -52,7 +52,7 @@ After creating the linked connection, you can configure the mappings between the
 When the linked connection is configured appropriately, you can start it to initialize synchronization. The source tables are initially copied to the target database as snapshots, and then subsequent data modifications are replicated.
 
 > [!TIP]
-> **Learn more:**:
+> Learn more:
 > 
 > - For more information about Synapse Link for Azure SQL Database, see [Azure Synapse Link for Azure SQL Database](/azure/synapse-analytics/synapse-link/sql-database-synapse-link?azure-portal=true).
 > - To learn about limitations and restrictions that apply to Synapse Link for Azure SQL Database, see [Known limitations and issues with Azure Synapse Link for SQL](/azure/synapse-analytics/synapse-link/synapse-link-for-sql-known-issues?azure-portal=true).
