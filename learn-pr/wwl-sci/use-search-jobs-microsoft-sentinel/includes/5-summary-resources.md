@@ -2,8 +2,8 @@ You should have learned how to perform search on large datasets in Microsoft Sen
 
 You should now be able to:
 
-- Create and view a Search Job in Microsoft Sentinel
-- Restore archived logs in Microsoft Sentinel
+* Create and view a Search Job in Microsoft Sentinel
+* Restore archived logs in Microsoft Sentinel
 
 
 ## Learn more
