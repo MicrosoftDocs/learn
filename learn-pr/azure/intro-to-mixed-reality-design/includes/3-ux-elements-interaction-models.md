@@ -24,7 +24,7 @@ Color, lighting, and materials play a crucial role in designing visual assets fo
 
   * **Rendering light colors**: It should be used moderately because white is bright. Large, bright areas may cause eye irritation. Dark colors are recommended for the backplate of UI windows.
 
-  * **Rendering dark colors**: Dark colors seem translucent on additive screens due to the nature of additive displays. Pure black (#000000) color will be completely transparent and won't be displayed on the additive display.
+  * **Rendering dark colors**: Dark colors seem translucent on additive screens due to the nature of additive displays. Pure black (#000000) color will be transparent and won't be displayed on the additive display.
 
   * **Color uniformity**: Holograms are often produced brightly to retain color consistency regardless of the background. Designers should avoid large areas of vivid and solid color. For more information, see challenges with bright color on a large surface<sup>3</sup>
 
@@ -50,7 +50,7 @@ Color, lighting, and materials play a crucial role in designing visual assets fo
 
 The scale plays an important role in mixed reality for creating immersive experiences. Holograms with unrealistic scaling can destroy the entire immersive experience. The key to displaying realistic holographic content is to align with the physical measurements of the real environment closely. Use visual cues to help users determine where objects are in the real world, their size and composition.
 
-There are various ways to convey an object's size, some of which may affect other perceptual characteristics. The most important is to show objects in 'real' size and keep to that size when a user walks about in space. Holograms, like physical objects, will take up a different portion of the user's visual angle as s/he moves closer or further away.
+There are various ways to convey an object's size, some of which may affect other perceptual characteristics. The most important is to show objects in 'real' size and keep to that size when a user walks about in space. Holograms, like physical objects, will take up a different portion of the user's visual angle as the user moves closer or further away.
 
 * **Use the distance of objects**: A large object placed close to the user could create discomfort issues, as the user needs to move both the head and body to see the whole object. If the objects are placed further away, the users can estimate their size by seeing the whole object in their field of view. Users could then move closer to the object for a more detailed inspection. Place objects 1-2 meters away from the user for comfortable initial discovery and observation.
 
@@ -66,7 +66,7 @@ In your app experience, texts are essential for presenting information content. 
 
 :::image type="content" source="../media/typography.png" alt-text="Screenshot of Periodic Table typography used in mixed reality" lightbox="../media/typography.png":::
 
-The rules of typography in mixed reality are the same as they're everywhere else. The text must be readable and legible in real and virtual worlds. Texts can be displayed on a wall or superimposed on a physical object. They can also be floating alongside a digital user interface. We use the same typographic standards for reading and recognition regardless of context. Here are a few tips on how to correctly include typography in your application:
+The rules of typography in mixed reality are the same as everywhere else. The text must be readable and legible in real and virtual worlds. Texts can be displayed on a wall or superimposed on a physical object. They can also be floating alongside a digital user interface. We use the same typographic standards for reading and recognition regardless of context. Here are a few tips on how to correctly include typography in your application:
 
 * Build contrast and hierarchy by using different type-sizes and weights.
 
@@ -80,7 +80,7 @@ The rules of typography in mixed reality are the same as they're everywhere else
 
 Including sounds in your application can create a more immersive experience for the user. Users can experience real connections with the application through sound experiences. You can use sound to inform and reinforce a user's mental model of the application's current state. When appropriate, use sound spatialization in the mixed-reality world. With audio and visuals, you can create great experiences in user interactions and thus increase user confidence in using your application.
 
-Because mixed reality applications lack a tactile interface, adding sound can reinforce interactions and create better-informed user experiences compared to 2D applications.
+Because mixed reality applications lack a tactile interface, adding sound can reinforce interactions, and create better-informed user experiences compared to 2D applications.
 
 ## Interaction models
 
@@ -96,7 +96,7 @@ The mixed reality platform is built on the philosophy of fundamental, natural, a
 
 The interaction models are, in many ways, the user's mental models of how to go through a workflow. Each interaction model can be designed for a particular users' need. When these interaction models are used effectively in your application, users will find your application convenient, powerful, and usable. 
 
-The three core interaction models described below are appropriate for most mixed reality scenarios. For detailed information on each interaction model, click the links below.
+The three core interaction models described below are appropriate for most mixed reality scenarios. For detailed information on each interaction model, select the links below.
 
 | Model | Example scenarios | Fit | Hardware |
 | ----- | ----- | ----- | ----- |
@@ -116,7 +116,7 @@ A cursor offers continuous feedback depending on the user's current focus. The a
 
 ### Button
 
-The button is the most fundamental UI component in mixed reality. Users can trigger immediate actions using buttons. Since no physical interaction is happening, it's essential to provide enough visual and audio feedback to maintain user confidence. For example, HoloLens 2 has integrated multiple visual affordances and audio cues that help users' depth perception and interaction in space. It's important to support different interaction options for buttons in mixed reality. By default, we recommend that you support voice commands for all button controls. In addition, HoloLens 2's button design provides a tooltip during the hover state to improve discoverability.
+The button is the most fundamental UI component in mixed reality. Users can trigger immediate actions using buttons. Since no physical interaction is happening, it's essential to provide enough visual, and audio feedback to maintain user confidence. For example, HoloLens 2 has integrated multiple visual affordances and audio cues that help users' depth perception and interaction in space. It's important to support different interaction options for buttons in mixed reality. By default, we recommend that you support voice commands for all button controls. In addition, HoloLens 2's button design provides a tooltip during the hover state to improve discoverability.
 
 :::image type="content" source="../media/button.png" alt-text="Screenshot of a button" lightbox="../media/button.png":::
 

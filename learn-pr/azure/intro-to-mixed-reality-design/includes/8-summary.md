@@ -4,18 +4,18 @@ You can now successfully build a seamless mixed reality application with all the
 
 ## Next steps
 
-Your journey is just starting. Consider the following topics to kick-start your mixed reality development adventure:
+Your journey is just starting. Consider the following articles to kick-start your mixed reality development adventure:
 
 * [Introduction to mixed reality development](/windows/mixed-reality/develop/development)
 * [App quality and criteria](/windows/mixed-reality/develop/advanced-concepts/app-quality-criteria-overview)
 * [Advanced concepts](/windows/mixed-reality/develop/advanced-concepts/advanced-concepts-overview)
-* Learn more about [Windows mixed reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
-* Learn about the mixed reality Toolkit SDK for [Unity](https://github.com/microsoft/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal).
+* Learn more about [Windows mixed reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* Learn about the mixed reality Toolkit SDK for [Unity](https://github.com/microsoft/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal)
 
 ## Additional reading
 
-1. [Introduction to mixed reality learn module](/learn/modules/intro-to-mixed-reality/).
-1. [Mixed Reality Toolkit standard shader](/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader).
+1. [Introduction to mixed reality learn module](/learn/modules/intro-to-mixed-reality/)
+1. [Mixed Reality Toolkit standard shader](/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader)
 1. [Challenges with bright color on a large surface](/windows/mixed-reality/design/designing-content-for-holographic-display#challenges-with-bright-color-on-a-large-surface)
 1. [Hands and motion controllers](/windows/mixed-reality/design/hands-and-tools)
 1. [Hands-free](/windows/mixed-reality/design/hands-free)
@@ -41,4 +41,4 @@ Your journey is just starting. Consider the following topics to kick-start your 
 1. [MRTK 2 Buttons](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 1. [MRTK 2 Object Manipulator](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
 1. [MRTK 2 Hand Menu](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
-1. [Periodic Table app package](https://github.com/microsoft/MRDL_Unity_PeriodicTable) 
+1. [Periodic Table app package](https://github.com/microsoft/MRDL_Unity_PeriodicTable)

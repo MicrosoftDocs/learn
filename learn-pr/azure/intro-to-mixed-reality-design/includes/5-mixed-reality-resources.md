@@ -20,7 +20,7 @@ Additionally, Unity 3D offers a version called "Unity Personal" that creators ca
 
 If you've already decided to use Unity, go ahead and jump right into it. However, if you're on the fence or just starting, you can look through other available platform and tool options, understand what they offer, and start creating!
 
-* **Unreal Engine**: The Unreal Engine<sup>10</sup> is a robust open-source development engine with complete mixed reality support in C++ and Blueprints. HoloLens support is now fully functional and ready for development in Unreal Engine 4.25. Designers may virtually access the full range of concepts and techniques, usually only available to programmers, due to features like the versatile Blueprints and Visual Scripting framework. Creators in various fields can use the freedom and control to create cutting-edge content, immersive virtual worlds, and interactive experiences.
+* **Unreal Engine**: The Unreal Engine<sup>10</sup> is a robust open-source development engine with complete mixed reality support in C++ and Blueprints. HoloLens support is now fully functional and ready for development in Unreal Engine 4.25. Designers may virtually access the full range of concepts and techniques, only available to programmers, due to features like the versatile Blueprints and Visual Scripting framework. Creators in various fields can use the freedom and control to create cutting-edge content, immersive virtual worlds, and interactive experiences.
 
 * **Native OpenXR**: OpenXR can be used to create a custom engine by native developers that have experience creating their own 3D renderers. OpenXR is a royalty-free API standard from Khronos that gives engines native access to a wide range of mixed reality devices from various vendors. For example, you can use OpenXR to build on a HoloLens 2 or Windows Mixed Reality immersive headset on a PC. ⁠StereoKit<sup>11</sup> is an easy-to-use open source mixed reality library for building HoloLens and VR applications with C# and OpenXR.
 
@@ -32,18 +32,18 @@ MRTK is a Microsoft-led open-source project that provides a set of components an
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW ]
 
-There's no one-size-fits-all audience for MRTK. It has been developed to accommodate various use cases, from first-time hackathons to individuals creating complicated and shared workplace experiences. Some code and APIs may be created to favor one over the other. For example, some elements of the MRTK appear to be more optimized for "one-click configure." It's important to note that some of these are due to historical and resource reasons. As MRTK develops, added features will be scalable to suit a variety of use cases.
+There's no one-size-fits-all audience for MRTK. It has been developed to accommodate various use cases, from first-time hackathons to individuals creating complicated and shared workplace experiences. Some code and APIs may be created to favor one over the other. For example, some elements of the MRTK appear to be more optimized for "one-click configure." It's important to note that some of these are due to historical and resource reasons. As MRTK develops, added features will be scalable to suit various use cases.
 
 MRTK also has to scale seamlessly across VR and AR scenarios. Creating applications that seamlessly fall back in behavior should be straightforward, whether launched on HoloLens 2 or HoloLens 1. Additionally, it should be simple to create OpenVR, Windows Mixed Reality (WMR) applications, and apps on other platforms. While the team may choose to focus a particular iteration on a specific system or platform, the long-term goal is to provide a wide range of support for users creating mixed reality experiences.
 
-MRTK includes a variety of example scenes that demonstrate the functionality and building elements of the toolkit for spatial user experience. Experimenting with and examining example scenes might help you learn and apply features to your projects. Visit Mixed Reality Toolkit Documentation<sup>8</sup> to learn more.
+MRTK includes various example scenes that demonstrate the functionality and building elements of the toolkit for spatial user experience. Experimenting with and examining example scenes might help you learn and apply features to your projects. Visit Mixed Reality Toolkit Documentation<sup>8</sup> to learn more.
 
 MRTK offers the following features:
 
 * Provides a cross-platform input mechanism and building blocks for spatial interactions and user interface design.
 * Rapid prototyping is possible thanks to an in-editor simulation that allows you to see changes right away.
 * MRTK functions as an extensible framework, allowing developers to swap out core components.
-* Supports a variety of platforms, including: OpenXR (Unity 2020.3.8+), Windows Mixed Reality, Oculus (Unity 2019.3 or newer), OpenVR, Ultraleap Hand Tracking, and Mobile.
+* Supports various platforms, including: OpenXR (Unity 2020.3.8+), Windows Mixed Reality, Oculus (Unity 2019.3 or newer), OpenVR, Ultraleap Hand Tracking, and Mobile.
 
 ## MRTK Figma Toolkit
 
