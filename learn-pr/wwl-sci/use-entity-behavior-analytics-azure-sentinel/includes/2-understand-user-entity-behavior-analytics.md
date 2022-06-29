@@ -2,7 +2,7 @@ Identifying threats inside your organization and their potential impact - whethe
 
 The Entity Behavior capability in Microsoft Sentinel eliminates the drudgery from your analysts’ workloads, and the uncertainty from their efforts. The Entity Behavior capability delivers high-fidelity and actionable intelligence, so they can focus on investigation and remediation.
 
-As Microsoft Sentinel collects logs and alerts from all the connected data sources, it analyzes and builds baseline behavioral profiles of your organization’s entities (users, hosts, IP addresses, applications etc.). The analysis is across the time and peer group horizon. Using various techniques and machine learning capabilities, Sentinel can then identify anomalous activity and help you determine if an asset has been compromised. Not only that, but it can also figure out the relative sensitivity of particular assets, identify peer groups of assets, and evaluate the potential impact of any given compromised asset (its “blast radius”). Armed with this information, you can effectively prioritize your investigation and incident handling.
+As Microsoft Sentinel collects logs and alerts from all the connected data sources, it analyzes and builds baseline behavioral profiles of your organization’s entities (users, hosts, IP addresses, applications etc.). The analysis is across the time and peer group horizon. Microsoft Sentinel uses various techniques and machine learning capabilities, and can then identify anomalous activity and help you determine if an asset has been compromised. Not only that, but it can also figure out the relative sensitivity of particular assets, identify peer groups of assets, and evaluate the potential impact of any given compromised asset (its “blast radius”). Armed with this information, you can effectively prioritize your investigation and incident handling.
 
 ### Architecture overview
 
@@ -12,7 +12,7 @@ As Microsoft Sentinel collects logs and alerts from all the connected data sourc
 
 Microsoft adopted Gartner’s paradigm for UEBA solutions, Microsoft Sentinel provides an "outside-in" approach, based on three frames of reference:
 
-**Use cases:** By prioritizing for relevant attack vectors and scenarios based on security research aligned with the MITRE ATT&CK framework of tactics, techniques, and subtechniques that put various entities as victims, perpetrators, or pivot points in the kill chain; Microsoft Sentinel focuses specifically on the most valuable logs each data source can provide.
+**Use cases:** Microsoft Sentinel prioritizes for relevant attack vectors and scenarios based on security research aligned with the MITRE ATT&CK framework of tactics, techniques, and subtechniques. The prioritization identifies various entities as victims, perpetrators, or pivot points in the kill chain. Microsoft Sentinel focuses specifically on the most valuable logs each data source can provide.
 
 **Data Sources:** While first and foremost supporting Azure data sources, Microsoft Sentinel thoughtfully selects third-party data sources to provide data that matches our threat scenarios.
 
