@@ -20,10 +20,10 @@ Let's say that:
 
 Recall that the TCO Calculator involves three steps:
 
-<br>:::image type="content" source="../media/total-cost-ownership-calculator-steps-76e927a5.png" alt-text="A visual representation of the three steps, define your workloads, adjust assumptions, and view the report.":::
+:::image type="content" source="../media/total-cost-ownership-calculator-steps-76e927a5.png" alt-text="A visual representation of the three steps, define your workloads, adjust assumptions, and view the report.":::
 
 
-## Define your workloads<br>
+## Define your workloads
 
 Enter the specifications of your on-premises infrastructure into the TCO Calculator.
 
@@ -295,6 +295,6 @@ To make these adjustments:
 
 Scroll to the summary at the bottom. You see a comparison of running your workloads in the datacenter versus on Azure.
 
-Select **Download** to download or print a copy of the report in PDF format.<br>
+Select **Download** to download or print a copy of the report in PDF format.
 
 Great work. You now have the information that you can share with your Chief Financial Officer. If you need to make adjustments, you can revisit the TCO Calculator to generate a fresh report.

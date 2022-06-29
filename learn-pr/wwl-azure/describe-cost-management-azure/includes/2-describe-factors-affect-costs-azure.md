@@ -1,6 +1,6 @@
 The following video provides an introduction to things that can impact your costs in Azure.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGNx4]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGNx4]
 
 Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on.
 

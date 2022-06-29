@@ -4,7 +4,7 @@ Microsoft Azure is a global cloud provider, meaning you can provision resources 
 
 Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
 
-Cost analysis is a subset of Cost Management that provides a quick visual for your Azure costs. Using cost analysis, you can quickly view the total cost in a variety of different ways, including by billing cycle, region, resource, and so on .
+Cost analysis is a subset of Cost Management that provides a quick visual for your Azure costs. Using cost analysis, you can quickly view the total cost in a variety of different ways, including by billing cycle, region, resource, and so on.
 
 :::image type="content" source="../media/cost-analysis-b52dedab.png" alt-text="Screenshot of initial view of cost analysis in the Azure portal.":::
 
@@ -13,7 +13,7 @@ You use cost analysis to explore and analyze your organizational costs. You can 
 
 ## Cost alerts
 
-Cost alerts provides a single location to quickly check on all of the different alert types that may show up in the Cost Management service. The three types of alerts that may show up are:
+Cost alerts provide a single location to quickly check on all of the different alert types that may show up in the Cost Management service. The three types of alerts that may show up are:
 
  -  Budget alerts
  -  Credit alerts
