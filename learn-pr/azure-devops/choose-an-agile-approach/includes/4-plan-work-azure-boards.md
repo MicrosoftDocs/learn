@@ -16,7 +16,7 @@ Here you'll create an Azure DevOps project:
 
 1. Enter a Project name.
 
-1. Select the Visibility. By default, its Enterprise.
+1. Select the **Visibility**. By default, its **Enterprise**.
 
 1. Select **+ Create project**.
 
@@ -30,7 +30,7 @@ Here you'll create an Azure DevOps project:
 
     Your new project is created.
 
-    However, if you select **+ New project**:
+However, if you select **+ New project**:
 1. In the **Project name** field, enter **Space Game - web**.
 1. In the **Description** field, enter **The Space Game website**.
 1. Under **Visibility**, choose whether to make your project public or private. For now, you can select private.
@@ -70,7 +70,7 @@ In practice, you might manage your team through an identity and access managemen
 
 ### Create the board
 
-Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to your board to practice the process.
+Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to her team, which you can use to practice the process.
 
 1. In the column on the left, point to **Boards**, and select **Boards** from the menu that appears.
 
@@ -84,7 +84,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. In the **To Do** column, select the green **+** button next to the **New item** field.
 
-1. Enter **Stabilize the build server**, and then press <kbd>Enter</kbd>.
+1. Enter **Stabilize the build server**, and then press Enter.
 
 1. Select the ellipsis (**...**), and then select **Open**.
 
@@ -103,7 +103,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. Drag **Stabilize the build server** to the top of the stack. Then, drag **Create a Git-based workflow** to the second item position. Your final board looks like this.
 
-    :::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
+    :::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Screenshot of Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
 
 ### Define a sprint
 

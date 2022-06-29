@@ -40,7 +40,7 @@ quiz:
       explanation: "Your Azure DevOps organization can have multiple projects. You can set up Azure Boards to plan and track work for each one of them."
   - content: "A _sprint_ is:"
     choices:
-    - content: "A fixed amount of time a team has to finish a set of tasks."
+    - content: "A fixed amount of time a team has to complete a set of tasks."
       isCorrect: true
       explanation: "When you plan your sprints, think about what's most important and what you can realistically accomplish during that time."
     - content: "Another name for a task board."

@@ -44,7 +44,7 @@ Each team member shares what they're working on and other concerns they have. As
   :::column-end:::
 :::row-end:::
 
-Eventually the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like:
+Eventually, the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like:
 
 :::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Screenshot of Azure Boards showing a backlog of issues.":::
 

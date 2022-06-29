@@ -1,14 +1,14 @@
-Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning, and continual learning. Agile isn't a process as much as it's a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
+Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning and learning. Agile isn't a process as much as it's a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
 
 Mara felt she'd made a few small steps toward interesting the team in DevOps, but progress has stalled. The team has been too busy fixing bugs in the last release to think about anything else.
 
-Recall that Irwin, the product manager, provided the team with some rather critical customer feedback about the racing game website. Resolving these issues wasn't fun. Andy and Mara would write code and then hand it to Amita, the tester. Amita always seemed to find new bugs and had to hand the code back. The build server failed. Tim couldn't get the game's website to work in production, even after it worked in dev and test. Everyone worked long hours and lost a couple weekends.
+Recall that Irwin, the product manager, provided the team with some rather critical customer feedback about the racing game website. Resolving these issues wasn't fun. Andy and Mara would write code and then hand it to Amita, the tester. Amita always seemed to find new bugs and had to hand the code back. The build server failed. Tim couldn't get the game's website to work in production, even after it worked in dev and test. Everyone worked long hours and lost a couple of weekends.
 
 After they shipped the release, Mara and Andy sat down for coffee. They were both tired. Mara was discouraged but Andy had a different attitude.
 
 **Andy:** I don't know why you're surprised. Getting software out the door is hard. It's always a slog. Have you ever done it differently?
 
-**Mara:** I have and I think we could make things easier here, too. I really believe DevOps can help us.
+**Mara:** I have, and I think we could make things easier here, too. I really believe DevOps can help us.
 
 **Andy:** I remember we did a value-stream mapping exercise, but now what? We've got to get started on the new release. I thought we were done with DevOps.
 
