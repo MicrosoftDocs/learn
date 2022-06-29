@@ -99,7 +99,7 @@ Immutable decisions. It's time to make several of your design decisions, not onl
 - **Choose the best Shard key** - Once we create our collection, we won't be able to change our shard key, so we need to choose the right one from the start. Once we pick the shard key for our collection, Azure Cosmos DB will manage the horizontal growth of our collection. In the previous module, we delved in detail into this topic under the ***Models and Shard keys*** unit. If you would like to read more on this topic, refer to the articles [Partitioning and horizontal scaling in Azure Cosmos DB][/azure/cosmos-db/partitioning-overview] and [Choosing a Partition Key][/azure/cosmos-db/partitioning-overview#choose-partitionkey] article. Remember that Sharding is also known as Partitioning.
 - **Choose the right model** - Again we discussed this topic in more detail in the previous module's ***Models and Shard keys*** unit. For more information, see the [Data modeling in Azure Cosmos DB][/azure/cosmos-db/sql/modeling-data] article.
 - **Choose between dedicated and shared throughput for each resource that you will migrate** - For more information, see the [Optimize provisioned throughput cost in Azure Cosmos DB][azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels ] article.
- 
+
     > [!TIP]
     > If your would like to review a real world example of how to model and partition your data refer to the *[How to model and partition data on Azure Cosmos DB using a real-world example][/azure/cosmos-db/sql/how-to-model-partition-example]* article.
 
@@ -124,9 +124,9 @@ The compatible tools for each migration scenario are shown below:
 
 | Source | Destination | Process Recommendation |
 | :--- | :---: | :--- |
-| ***Offline*** </br>&#8226; MongoDB on-premise cluster </br>&#8226; MongoDB IaaS VM cluster </br>&#8226; MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | &#8226; <10-GB data: MOngoDB native tools </br>&#8226; < 1-TB data: Azure DMS </br>&#8226;  > 1-TB data: Spark |
-| ***Online*** </br>&#8226; MongoDB on-premise cluster </br>&#8226; MongoDB IaaS VM cluster </br>&#8226; MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | </br>&#8226; < 1-TB data: Azure DMS </br>&#8226; > 1-TB data: Spark + Mongo ChangeStream |
-| &#8226;Need to change schema during migration </br>&#8226; need more flexibility than aforementioned tools | Azure Cosmos DB Mongo API | &#8226; ADF is more flexible than DMS, it supports schema modifications during migration and supports the most source/destination combinations. </br>&#8226; DMS will be better in terms of scale, for example faster migrations. |
+| ***Offline*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | • <10-GB data: MOngoDB native tools </br>• < 1-TB data: Azure DMS </br>•  > 1-TB data: Spark |
+| ***Online*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | </br>• < 1-TB data: Azure DMS </br>• > 1-TB data: Spark + Mongo ChangeStream |
+| • Need to change schema during migration </br>• need more flexibility than aforementioned tools | Azure Cosmos DB Mongo API | • ADF is more flexible than DMS, it supports schema modifications during migration and supports the most source/destination combinations. </br>• DMS will be better in terms of scale, for example faster migrations. |
 | JSON file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongoimport`***. |
 | CSV file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongoimport`***. |
 | BSON file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongorestore`***. |
