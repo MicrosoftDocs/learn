@@ -32,6 +32,8 @@ products:
 - azure
 - azure-policy
 - azure-resource-manager
+subjects:
+- cloud-computing
 units:
 - learn.azure.enterprise-scale-introduction.1-introduction
 - learn.azure.enterprise-scale-introduction.2-vision-customer-challenges

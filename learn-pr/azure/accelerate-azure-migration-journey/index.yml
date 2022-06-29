@@ -39,6 +39,8 @@ roles:
 products:
 - azure
 - azure-migrate
+subjects:
+- migration
 units:
 - learn.azure.accelerate-migration-journey.1-introduction
 - learn.azure.accelerate-migration-journey.2-azure-benefits

@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
-  title: Manage Azure PaaS resources using automated methods
-  description: "Manage Azure PaaS resources using automated methods"
-  ms.date: 02/10/2022
+  title: Manage Azure PaaS tasks using automation
+  description: "Manage Azure PaaS tasks using automation"
+  ms.date: 06/10/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage Azure PaaS resources using automated methods
-summary: Explore SQL automation for Azure SQL Database and Open Source databases. Configure elastic jobs and Azure Policy.
+title: Manage Azure PaaS tasks using automation
+summary: Explore automation for Azure SQL platform. Configure elastic jobs, explore Azure Automation, and evaluate different strategies for monitoring automation tasks.
 abstract: |
   After completing this module, you will be able to:
-  - Explore Azure Policy
-  - Implement Azure Automation
-  - Configure Elastic Jobs
+  - Undersand the benefits of Azure policy
+  - Explore the capabilities of Azure Automation
+  - Configure elastic jobs
+  - Use Logic Apps for database workflow
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
@@ -31,13 +32,17 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- cloud-computing
+- data-engineering
+- database
 units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.introduction
-- learn.wwl.manage-azure-paas-resources-using-automated-methods.implement-azure-policy
-- learn.wwl.manage-azure-paas-resources-using-automated-methods.use-azure-subscriptions-tag-azure-resources
-- learn.wwl.manage-azure-paas-resources-using-automated-methods.describe-azure-automation
+- learn.wwl.manage-azure-paas-resources-using-automated-methods.explore-elastic-jobs
+- learn.wwl.manage-azure-paas-resources-using-automated-methods.understand-azure-automation
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.build-automation-runbook
-- learn.wwl.manage-azure-paas-resources-using-automated-methods.describe-elastic-jobs-azure-sql-database
+- learn.wwl.manage-azure-paas-resources-using-automated-methods.automate-database-workflows-by-using-logic-apps
+- learn.wwl.manage-azure-paas-resources-using-automated-methods.monitor-automated-tasks
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.exercise-deploy-automation-runbook-rebuild-indexes
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.knowledge-check
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.summary

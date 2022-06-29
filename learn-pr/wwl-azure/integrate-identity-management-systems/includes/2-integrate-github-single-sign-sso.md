@@ -62,6 +62,4 @@ GitHub offers both **SAML** and **SCIM** support.
 
 For more information, see:
 
-[Enforcing SAML single sign-on for your organization](https://docs.github.com/organizations/managing-saml-single-sign-on-for-your-organization/enforcing-saml-single-sign-on-for-your-organization).
-
-[About SCIM](https://docs.github.com/organizations/managing-saml-single-sign-on-for-your-organization/about-scim).
+ -  [Enforcing SAML single sign-on for your organization](https://docs.github.com/organizations/managing-saml-single-sign-on-for-your-organization/enforcing-saml-single-sign-on-for-your-organization).

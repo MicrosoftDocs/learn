@@ -3,7 +3,7 @@ uid: learn.arm-template-test
 metadata:
   title: Validate Azure resources by using the ARM Template Test Toolkit
   description: Use the ARM Template Test Toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment.
-  ms.date: 05/21/2021
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -29,7 +29,8 @@ products:
 prerequisites: |
   - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
-  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
+subjects:
+- development-tools
 units:
   - learn.arm-template-test.1-introduction
   - learn.arm-template-test.4-test-toolkit

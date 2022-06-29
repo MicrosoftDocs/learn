@@ -12,7 +12,7 @@ As seen in the image above, each offering provides a certain level of administra
 
 ## Deployment models
 
-Azure SQL Database is available in three different deployment models:
+Azure SQL Database is available in two different deployment models:
 
 - **Single database –** a single database that is billed and managed on a per database level. You manage each of your databases individually from scale and data size perspectives. Each database deployed in this model has its own dedicated resources, even if deployed to the same logical server.
 

@@ -35,6 +35,8 @@ products:
   - azure
   - azure-kubernetes-service
   - azure-container-registry
+subjects:
+- container
 units:
 - learn.aks-app-scaling-keda.1-introduction
 - learn.aks-app-scaling-keda.2-concept-keda-scaling

@@ -199,19 +199,19 @@ To create your App Service instances, follow these steps:
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
     ```
 
     For learning purposes, here, you apply the same App Service plan, B1 Basic, to each App Service instance. In practice, you would assign a plan that matches your expected workload.

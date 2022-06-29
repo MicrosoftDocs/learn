@@ -28,6 +28,8 @@ products:
 - azure
 - azure-iot
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.wwl.examine-iot-hub-properties.introduction
 - learn.wwl.examine-iot-hub-properties.tiers

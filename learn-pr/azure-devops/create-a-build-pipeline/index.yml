@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET 5.0 SDK
+  - .NET 6.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
@@ -34,6 +34,8 @@ roles:
 products:
 - azure-devops
 - azure-pipelines
+subjects:
+- cloud-computing
 units:
 - learn.azdo.create-a-build-pipeline.1-introduction
 - learn.azdo.create-a-build-pipeline.2-what-is-azure-pipelines

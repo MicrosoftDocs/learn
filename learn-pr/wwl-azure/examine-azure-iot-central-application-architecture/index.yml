@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.wwl.intro-to-iot-central.introduction
 - learn.wwl.intro-to-iot-central.what-is-azure-iot-central

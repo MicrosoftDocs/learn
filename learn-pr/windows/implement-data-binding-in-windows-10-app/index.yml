@@ -31,6 +31,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- data-management
 units:
 - learn-windows.windows-10-ui-and-data.1-introduction
 - learn-windows.windows-10-ui-and-data.2-introducing-databinding

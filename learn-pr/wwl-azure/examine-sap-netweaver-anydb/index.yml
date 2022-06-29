@@ -26,6 +26,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.wwl.examine-sap-netweaver-anydb.introduction
 - learn.wwl.examine-sap-netweaver-anydb.explore-sap-netweaver-with-anydb
@@ -34,4 +36,4 @@ units:
 - learn.wwl.examine-sap-netweaver-anydb.knowledge-check
 - learn.wwl.examine-sap-netweaver-anydb.summary
 badge:
-  uid: learn.wwl.examine-sap-netweaver-anydb​.badge
+  uid: learn.wwl.examine-sap-netweaver-anydb.badge

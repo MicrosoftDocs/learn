@@ -25,7 +25,7 @@ This architecture is suitable for hybrid applications where the traffic between 
 
 [Hybrid network with VPN gateway](/azure/architecture/reference-architectures/hybrid-networking/vpn)
 
-:::image type="content" source="../media/virtual-private-network.png" alt-text="Hybrid network with VPN gateway":::
+:::image type="content" source="../media/virtual-private-network.png" alt-text="Diagram of an Azure virtual network uses a V P N gateway to communicate with an on-premises network and Azure Stack.":::
 
 
 ## Azure ExpressRoute connection
@@ -53,12 +53,12 @@ This architecture is suitable for hybrid applications running large-scale, missi
 
 - [Hybrid network with ExpressRoute](/azure/architecture/reference-architectures/hybrid-networking/expressroute)
 
-:::image type="content" source="../media/express-route.png" alt-text="Hybrid network with ExpressRoute.":::
+:::image type="content" source="../media/express-route.png" alt-text="Diagram of a hybrid network with ExpressRoute.":::
 
 
 ## ExpressRoute with VPN failover
 
-This options combines the previous two, using ExpressRoute in normal conditions, but failing over to a VPN connection if there is a loss of connectivity in the ExpressRoute circuit.
+This option combines the previous two, using ExpressRoute in normal conditions, but failing over to a VPN connection if there is a loss of connectivity in the ExpressRoute circuit.
 
 This architecture is suitable for hybrid applications that need the higher bandwidth of ExpressRoute, and also require highly available network connectivity.
 
@@ -76,7 +76,7 @@ This architecture is suitable for hybrid applications that need the higher bandw
 
 - [Hybrid network with ExpressRoute and VPN failover](/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover)
 
-:::image type="content" source="../media/express-route-failover.png" alt-text="Hybrid network with ExpressRoute and VPN failover.":::
+:::image type="content" source="../media/express-route-failover.png" alt-text="Diagram of a hybrid network with ExpressRoute and V P N failover.":::
 
 
 ## Hub-spoke network topology
@@ -115,12 +115,12 @@ Typical uses for this architecture include cases in which:
 
 ### Advantages
 
-:::image type="content" source="../media/hub-spoke-architecture.png" alt-text="Hub and spoke VWAN architecture.":::
+:::image type="content" source="../media/hub-spoke-architecture.png" alt-text="Diagram of a hub and spoke V W A N architecture.":::
 
 
 This diagram illustrates a few of the advantages that this architecture can provide:
 
-- A full meshed hubs among Azure Virtual Networks
+- A full meshed hub among Azure Virtual Networks
 
 - Branch to Azure connectivity
 

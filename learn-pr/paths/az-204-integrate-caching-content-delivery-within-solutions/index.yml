@@ -23,6 +23,8 @@ roles:
 products:
 - azure-cache-redis
 - azure-queue-storage
+subjects:
+- cache
 modules:
 - learn.wwl.develop-for-azure-cache-for-redis
 - learn.wwl.develop-for-storage-cdns

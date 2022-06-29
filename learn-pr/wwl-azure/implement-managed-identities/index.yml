@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.implement-managed-identities.introduction
 - learn.wwl.implement-managed-identities.explore

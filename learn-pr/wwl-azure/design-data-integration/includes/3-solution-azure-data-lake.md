@@ -34,7 +34,7 @@ There are three important steps to use Azure Data Lake Storage. These are:
 
 - For relational data-Use the Azure Data Factory service. It enables you to transfer data from any of the sources including Cosmos DB, SQL Database, Managed instances etc.
 
-- For steaming data-Use tools such as Apache Storm on Azure HDInsight, Azure Stream Analytics etc.
+- For streaming data-Use tools such as Apache Storm on Azure HDInsight, Azure Stream Analytics etc.
 
 Following diagram shows how ad hoc data and streaming data are bulk ingested or ad hoc ingested in Azure Data Lake Storage.
 

@@ -40,6 +40,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-computing
 units:
 - learn.wwl.manage-hybrid-workloads-with-azure-arc.introduction
 - learn.wwl.manage-hybrid-workloads-with-azure-arc.describe

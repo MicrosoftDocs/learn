@@ -1,37 +1,42 @@
 ### YamlMime:Module
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 metadata:
-  title: Design a multidimensional schema to optimize analytical workloads
-  description: "Design a multidimensional schema to optimize analytical workloads"
-  ms.date: 01/05/2022
+  title: Analyze data in a relational data warehouse
+  description: "Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis."
+  ms.date: 06/27/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design a multidimensional schema to optimize analytical workloads
-summary: In this module, you will understand the common schema implemented in a data warehouse.
+title: Analyze data in a relational data warehouse
+summary: Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis.
 abstract: |
-  In this module, you will:
-  *   Design and implement a star schema
-  *   Design and implement a snowflake schema
-  *   Design and implement a time dimension table
+  In this module, you'll learn how to:
+  - Design a schema for a relational data warehouse.
+  - Create fact, dimension, and staging tables.
+  - Use SQL to load data into data warehouse tables.
+  - Use SQL to query relational data warehouse tables.
 prerequisites: |
-  - Before taking this module, it is recommended that you complete Data Fundamentals.
+  Before taking this module, you should have:
+  -  An understanding of [data fundamentals](https://aka.ms/AzureLearn_DataFundamentals).
+  - Experience of [querying data with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql/).
 iconUrl: /learn/achievements/azure-synapse-analytics-multi-dimensional-schema.svg
 levels:
 - intermediate
 roles:
+- data-analyst
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
 units:
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.introduction
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-star-schema
-- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-star-schema
-- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-snowflake-schema
-- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-snowflake-schema
-- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-time-dimension-table
-- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-create-populate-time-dimension-table
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.create-tables
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.load-data
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.query-data
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-explore-data-warehouse
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.knowledge-check
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.summary
 badge:

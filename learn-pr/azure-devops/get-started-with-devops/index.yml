@@ -3,7 +3,8 @@ uid: learn.get-started-with-devops
 metadata:
   title: Introduction to Azure DevOps
   description: Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.
-  ms.date: 11/16/2018
+  ms.date: 06/15/2022
+  ms.custom: devdivchpfy22
   author: kathrynee
   ms.author: kaelli
   ms.topic: interactive-tutorial
@@ -27,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- devops
 units:
 - learn.get-started-with-devops.1-introduction
 - learn.get-started-with-devops.2-what-is-devops

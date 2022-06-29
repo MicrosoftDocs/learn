@@ -5,7 +5,7 @@ You can use GitHub Actions to automate Bicep deployments. GitHub Actions provide
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep template to use to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.
+Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep template to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.
 
 You also want your colleagues to be able to make changes to the Bicep templates and deploy the templates themselves. But, you need to make sure your colleagues follow the same process that you use. You decide to create a deployment workflow that will run automatically every time the Bicep code is updated in your shared repository. The workflow will deploy your Bicep files to Azure.
 

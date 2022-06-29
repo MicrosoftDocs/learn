@@ -23,6 +23,8 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- data-lake
 units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.introduction
 - learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake

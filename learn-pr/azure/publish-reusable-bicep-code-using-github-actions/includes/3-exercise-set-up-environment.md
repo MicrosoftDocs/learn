@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you start to publish your toy company's reusable Bicep code, you need to configure your environment. In this section, you make sure that your Azure and GitHub environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
@@ -117,7 +119,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
-   az group create --name ToyReusable --location westus
+   az group create --name ToyReusable --location westus3
    ```
 
 1. Look at the JSON output from the command. It includes an `id` property, which is the resource group ID.
@@ -131,7 +133,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
    ```azurepowershell
-   New-AzResourceGroup -Name ToyReusable -Location westus
+   New-AzResourceGroup -Name ToyReusable -Location westus3
    ```
 
 1. Look at the output from the command. It includes a `ResourceId` property, which is the fully qualified ID for the resource group.
@@ -191,10 +193,10 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
      -Scope $resourceGroupId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $servicePrincipal.AppId
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```

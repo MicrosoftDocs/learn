@@ -61,7 +61,7 @@ You'll be able to review any compatibility issues between the source and destina
 
 The following screenshot displays a typical Data Migration Assistant report.
 
-:::image type="content" source="../media/data-migration-supported-features.png" alt-text="Azure SQL database supported and unsupported features.":::
+:::image type="content" source="../media/data-migration-supported-features.png" alt-text="Diagram of Azure S Q L database supported and unsupported features.":::
 
 
 ### 2. Migrate the schema by using the Data Migration Assistant

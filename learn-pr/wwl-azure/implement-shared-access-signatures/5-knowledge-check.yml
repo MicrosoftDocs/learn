@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/09/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ quiz:
       explanation: "That's correct. The most flexible and secure way to use a service or account SAS is to associate the SAS tokens with a stored access policy."
     - content: "Always use HTTPS"
       isCorrect: false
-      explanation: "That's incorrect. Using HTTPS prevents main-in-the-middle attacks but isn't the most flexible and secure practice."
+      explanation: "That's incorrect. Using HTTPS prevents man-in-the-middle attacks but isn't the most flexible and secure practice."
     - content: "Implement a user delegation SAS"
       isCorrect: false
       explanation: "That's incorrect. A user delegation SAS is the most secure SAS, but isn't highly flexible because you must use Azure Active Directory to manage credentials."

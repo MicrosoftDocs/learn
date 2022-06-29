@@ -30,6 +30,8 @@ roles:
 products:
 - azure-app-service-static
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.react-states-events.1-introduction
 - learn.language.react-states-events.2-concepts

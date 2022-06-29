@@ -34,6 +34,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-ip-address-management.introduction
 - learn.wwl.implement-ip-address-management.define-ipam

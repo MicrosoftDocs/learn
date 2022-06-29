@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- security
 units:
 - learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.introduction
 - learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-backup-large-instances

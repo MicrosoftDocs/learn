@@ -1,4 +1,4 @@
-The CTO has asked you to design databases for Azure to meet all of the needs of existing structured data on premises and suggestion solutions for any new relational data workloads that Tailwinds might need. Structured data includes relational data and has a shared schema. Structured data is often stored in database tables with rows, columns, and keys. Structured data is often used for application storage like an ecommerce website.
+The CTO has asked you to design databases for Azure to meet all of the needs of existing structured data on premises and suggest solutions for any new relational data workloads that Tailwinds might need. Structured data includes relational data and has a shared schema. Structured data is often stored in database tables with rows, columns, and keys. Structured data is often used for application storage like an ecommerce website.
 
 Within the umbrella of the Azure SQL platform, there are many deployment options and choices that you need to make to meet your needs. These options give you the flexibility to get and pay for exactly what you need. Here, we'll cover some of the considerations you need to make when you choose various Azure SQL deployment options. We'll also cover some of the technical specifications for each of these options. The deployment options discussed here include SQL Server on virtual machines, Azure SQL Managed Instance, Azure SQL Database, Azure SQL Managed Instance pools, and Azure SQL Database elastic database pools.
 
@@ -49,7 +49,7 @@ AccuWeather has been analyzing and predicting the weather for more than 55 years
 
 ## What are SQL elastic pools?
 
-When you create your Azure SQL database, you can create a SQL elastic pool. They enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need, within the limits you set, depending on current load.
+When you create your Azure SQL Database, you can create a SQL elastic pool. They enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need, within the limits you set, depending on current load.
 
 Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
 

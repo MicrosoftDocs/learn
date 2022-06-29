@@ -3,7 +3,7 @@ uid: learn.wwl.describe-azure-databricks-delta-lake-architecture
 metadata:
   title: Describe Azure Databricks Delta Lake architecture
   description: "Describe Azure Databricks Delta Lake architecture"
-  ms.date: 01/06/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -23,6 +23,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-lake
 units:
 - learn.wwl.describe-azure-databricks-delta-lake-architecture.introduction
 - learn.wwl.describe-azure-databricks-delta-lake-architecture.describe-bronze-silver-gold-architecture

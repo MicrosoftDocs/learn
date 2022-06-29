@@ -3,7 +3,7 @@ uid: learn.wwl.implement-application-configuration
 metadata:
   title: Implement application configuration
   description: "Implement application configuration"
-  ms.date: 03/18/2022
+  ms.date: 06/16/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -40,11 +40,14 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-application-configuration.introduction
 - learn.wwl.implement-application-configuration.introduction-to-azure-app-configuration
 - learn.wwl.implement-application-configuration.examine-key-value-pairs
 - learn.wwl.implement-application-configuration.examine-app-configuration-feature-management
+- learn.wwl.implement-application-configuration.integrate-azure-key-vault-with-azure-devops
 - learn.wwl.implement-application-configuration.knowledge-check
 - learn.wwl.implement-application-configuration.summary
 badge:

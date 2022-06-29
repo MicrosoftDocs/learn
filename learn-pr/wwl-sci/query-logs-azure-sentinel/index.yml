@@ -3,9 +3,9 @@ uid: learn.wwl.query-logs-azure-sentinel
 metadata:
   title: Query logs in Microsoft Sentinel
   description: "Query logs in Microsoft Sentinel"
-  ms.date: 03/17/2022
+  ms.date: 06/21/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query logs in Microsoft Sentinel
@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- cloud-security
 units:
 - learn.wwl.query-logs-azure-sentinel.introduction
 - learn.wwl.query-logs-azure-sentinel.logs-page

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
   title: Manage and modularize tasks and templates
   description: "Manage and modularize tasks and templates"
-  ms.date: 02/09/2022
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -39,6 +39,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- cloud-computing
+- devops
 units:
 - learn.wwl.manage-modularize-tasks-templates.introduction
 - learn.wwl.manage-modularize-tasks-templates.examine-task-groups

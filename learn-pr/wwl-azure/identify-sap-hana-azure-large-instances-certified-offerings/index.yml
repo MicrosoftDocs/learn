@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- business-applications
 units:
 - learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.introduction
 - learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore

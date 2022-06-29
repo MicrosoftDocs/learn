@@ -35,6 +35,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- infrastructure
 units:
 - learn.oxford.intro-5g-azure.introduction
 - learn.oxford.intro-5g-azure.what-azure-private-multi-access-5g
@@ -42,5 +44,3 @@ units:
 - learn.oxford.intro-5g-azure.when-use-azure-private-multi-access-5g
 - learn.oxford.intro-5g-azure.knowledge-check
 - learn.oxford.intro-5g-azure.summary
-
-

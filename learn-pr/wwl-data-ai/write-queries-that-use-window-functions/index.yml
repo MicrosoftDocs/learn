@@ -3,7 +3,7 @@ uid: learn.wwl.write-queries-that-use-window-functions
 metadata:
   title: Write queries that use window functions
   description: "Write queries that use window functions"
-  ms.date: 10/09/2021
+  ms.date: 06/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -34,6 +34,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- development-tools
 units:
 - learn.wwl.write-queries-that-use-window-functions.introduction
 - learn.wwl.write-queries-that-use-window-functions.describe-window-functions

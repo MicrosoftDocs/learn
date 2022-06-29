@@ -3,7 +3,7 @@ uid: learn.wwl.troubleshoot-active-directory
 metadata:
   title: Troubleshoot Active Directory
   description: "Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues."
-  ms.date: 12/03/2021
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   *   Working knowledge of common Windows Server management tools
   *   Some experience of typical Windows Server workloads
   *   Basic knowledge of Windows PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/9-troubleshoot-active-directory.svg
 levels:
 - intermediate
 roles:
@@ -32,6 +32,8 @@ products:
 - azure-active-directory
 - azure-active-directory-domain
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.troubleshoot-active-directory.introduction
 - learn.wwl.troubleshoot-active-directory.recover-objects-from-ad-recycle-bin

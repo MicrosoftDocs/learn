@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.azure.store-access-data-cosmos-graph-api.introduction
 - learn.azure.store-access-data-cosmos-graph-api.determine-graph-database-fits-data-needs-of-your-application

@@ -3,9 +3,9 @@ uid: learn.wwl.connect-microsoft-services-to-azure-sentinel
 metadata:
   title: Connect Microsoft services to Microsoft Sentinel
   description: "Connect Microsoft services to Microsoft Sentinel"
-  ms.date: 03/02/2022
+  ms.date: 06/24/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect Microsoft services to Microsoft Sentinel
@@ -24,12 +24,15 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- security
 units:
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.introduction
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.plan-for-connectors
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-office-365-connector
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-active-directory-connector
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-active-directory-identity-protection-connector
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-activity-connector
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.knowledge-check
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.summary-resources
 badge:

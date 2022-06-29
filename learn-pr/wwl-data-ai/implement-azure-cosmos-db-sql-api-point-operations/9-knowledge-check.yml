@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/22/2021
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,23 +16,23 @@ quiz:
   questions:
   - content: "What parameter\\[s\\] are required to read an item in Azure Cosmos DB SQL API?"
     choices:
-    - content: "Both an id and partition key value"
+    - content: "Both an ID and partition key value"
       isCorrect: true
-      explanation: "That's correct. You can perform a point read with both the id and partition key values."
-    - content: "Only an id"
+      explanation: "That's correct. You can perform a point read with both the ID and partition key values."
+    - content: "Only an ID"
       isCorrect: false
-      explanation: "That's incorrect. Both a partition key value and id are required to perform a point read operation in Azure Cosmos DB SQL API."
+      explanation: "That's incorrect. Both a partition key value and ID are required to perform a point read operation in Azure Cosmos DB SQL API."
     - content: "Only a partition key value"
       isCorrect: false
-      explanation: "That's incorrect. Both a partition key value and id are required to perform a point read operation in Azure Cosmos DB SQL API."
+      explanation: "That's incorrect. Both a partition key value and ID are required to perform a point read operation in Azure Cosmos DB SQL API."
   - content: "Which method should you use to update an item in Azure Cosmos DB SQL API using the .NET SDK?"
     choices:
     - content: "PatchItemAsync<>"
       isCorrect: false
-      explanation: "That's incorrect. There is a separate set of methods to patch items in the SDK."
+      explanation: "That's incorrect. There's a separate set of methods to patch items in the SDK."
     - content: "UpdateItemAsync<>"
       isCorrect: false
-      explanation: "That's incorrect. This method does not exist in the SDK."
+      explanation: "That's incorrect. This method doesn't exist in the SDK."
     - content: "UpsertItemAsync<>"
       isCorrect: true
       explanation: "That's correct. TheUpsertItemAsync<> method takes in an item as the method parameter and updates the item."

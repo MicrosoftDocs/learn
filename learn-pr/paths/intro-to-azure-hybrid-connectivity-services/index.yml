@@ -23,6 +23,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- remote-hybrid-work
 modules:
 - learn.azure.intro-to-azure-vpn-gateway
 - learn.azure.intro-to-azure-expressroute

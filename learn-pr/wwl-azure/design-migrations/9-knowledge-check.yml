@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/20/2022
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -41,9 +41,9 @@ quiz:
       explanation: "Incorrect. Azure File Sync is primarily a service that allows you to cache Azure file shares. These files shares can be on cloud or on-premises virtual machines."
   - content: "What product would be best to estimate monthly costs before migrating?"
     choices:
-    - content: "Azure Cost Management"
+    - content: "Microsoft Cost Management"
       isCorrect: false
-      explanation: "Incorrect. Azure Cost Management helps monitor, optimize, and control your ongoing Azure costs."
+      explanation: "Incorrect. Microsoft Cost Management helps monitor, optimize, and control your ongoing Azure costs."
     - content: "Azure Advisor"
       isCorrect: false
       explanation: "Incorrect. Azure Advisor helps optimize your Azure resources for high availability, performance, and cost."

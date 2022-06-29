@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-bicep.understand-bicep-file-structure-syntax
+title: Understand Bicep file structure and syntax
+metadata:
+  title: Understand Bicep file structure and syntax
+  description: "Understand Bicep file structure and syntax"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: yasa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-understand-bicep-file-structure-syntax.md)]

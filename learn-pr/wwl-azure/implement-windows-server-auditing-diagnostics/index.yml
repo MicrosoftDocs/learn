@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-server-auditing-diagnostics
 metadata:
   title: Implement Windows Server auditing and diagnostics
   description: "Learn to audit and diagnose your Windows Server environment for regulatory compliance, user activity, and troubleshooting. Implement security best practices through regular audits of your network environment to gain early warning of potential malicious activity."
-  ms.date: 12/01/2021
+  ms.date: 06/02/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   *   Working knowledge of common Windows Server management tools
   *   Some experience of typical Windows Server workloads
   *   Basic knowledge of Windows PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-implement-windows-server-auditing-and-diagnostics.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- compliance
+- networking
 units:
 - learn.wwl.implement-windows-server-auditing-diagnostics.introduction
 - learn.wwl.implement-windows-server-auditing-diagnostics.describe-basic-auditing-categories
