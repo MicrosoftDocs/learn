@@ -31,7 +31,7 @@ Best of all, there’s no additional cost for configuring an availability set. Y
 
 ## Examples of when to use VMs
 
-Some commone examples or use cases for virtual machines include:
+Some common examples or use cases for virtual machines include:
 
  -  **During testing and development**. VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them.
  -  **When running applications in the cloud**. The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, an application might need to handle fluctuations in demand. Shutting down VMs when you don't need them or quickly starting them up to meet a sudden increase in demand means you pay only for the resources you use.
