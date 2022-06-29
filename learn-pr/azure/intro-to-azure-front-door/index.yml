@@ -17,7 +17,7 @@ abstract: |
     - Describe how web application firewall features of Azure Front Door help protect your apps.
 prerequisites: |
   - Experience with content delivery network (CDN) platforms
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
