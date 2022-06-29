@@ -15109,6 +15109,21 @@
       "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/6-what-is-puppet.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/4-track-emerging-threats-with-threat-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-track-emerging-threats-with-threat-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/6-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/7-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
