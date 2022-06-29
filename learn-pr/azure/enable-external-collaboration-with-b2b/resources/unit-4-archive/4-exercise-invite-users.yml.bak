@@ -3,7 +3,7 @@ uid: learn.enable-external-collaboration-with-b2b.4-exercise-invite-users
 metadata:
   title: Exercise - Invite guest users with Azure AD B2B through the Azure portal
   description: Exercise - Invite guest users with Azure AD B2B through the Azure portal
-  ms.date: 09/30/2019
+  ms.date: 06/29/2022
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

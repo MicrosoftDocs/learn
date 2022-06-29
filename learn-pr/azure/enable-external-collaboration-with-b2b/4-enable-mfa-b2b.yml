@@ -3,9 +3,9 @@ uid: learn.enable-external-collaboration-with-b2b.4-enable-mfa-b2b
 metadata:
   title: Enable multi-factor authentication in Azure AD B2B
   description: Enable multi-factor authentication in Azure AD B2B
-  ms.date: 03/12/2020
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  ms.date: 06/29/2022
+  author: msmimart
+  ms.author: mimart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable multi-factor authentication in Azure AD B2B
