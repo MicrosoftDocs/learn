@@ -18,4 +18,4 @@ Before taking this module, it is recommended that the student can:
 
 -	Log into the Azure portal
 -	Create a Synapse Analytics Workspace
--	Create an and connect to an Azure Synapse Analytics SQL Pool
+-	Create and connect to an Azure Synapse Analytics SQL Pool
