@@ -1,6 +1,6 @@
 Employers are looking for very specific markers of readiness and skill attainment when hiring – more and more they're seeking out candidates with industry-recognized technical certification, like those from Microsoft. 
 
-Your students want more than a diploma, they want real-world skills that make them employable from the outset. Further, employers highly value graduates who have their degree plus an industry recognized certification.   
+Your students want more than a diploma, they want real-world skills that make them employable from the outset. Further, employers highly value graduates who have a degree plus an industry recognized certification.   
 
 ### Learning Objectives 
 
