@@ -1,6 +1,6 @@
 Examine possible communication between your devices and external internet protocol (IP) addresses.
 
-Identifying all devices in the organization that communicated with a suspected or known malicious IP address, such as Command and Control (C2) servers, helps determine the potential scope of the breach, associated files, and infected devices.
+Identifying all devices in the organization that communicated with a suspected or known malicious IP address, such as Command and Control (C2) servers, helps determine the potential scope of the breach. You can then quarantine associated files, and infected devices.
 
 You can find information from the following sections in the IP address view:
 
