@@ -167,10 +167,10 @@ Later in this Microsoft Learn module, your pull request workflow will create res
      -Scope $subscriptionId
 
    $output = @{
-     clientId = $($servicePrincipal.AppId)
+     clientId = $servicePrincipal.AppId
      clientSecret = $servicePrincipal.PasswordCredentials.SecretText
-     subscriptionId = $($azureContext.Subscription.Id)
-     tenantId = $($azureContext.Tenant.Id)
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```
