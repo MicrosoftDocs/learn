@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is one of the major advantages of using Azure AD B2B collaboration?
+  - content: What is one of the main advantages of using Azure AD B2B collaboration?
     choices:
     - content: You can allow people outside of your organization to use their own credentials to sign in to your apps.
       isCorrect: true
@@ -25,8 +25,8 @@ quiz:
       explanation: Try again. A B2B collaboration user authenticates using their own credentials and their home organization or identity provider. You don't need to maintain a user ID or password for them.
     - content: You can allow people outside of your organization to access your apps without adding a user object to your directory.
       isCorrect: false
-      explanation: Try again. A user object for the B2B collaboration user is added to your directory, and you can manage it like other user objects in your directory, for example by assigning permissions, adding it to groups, and so on.
-  - content: How can you add an additional layer of protection to the application?
+      explanation: Try again. A user object for the B2B collaboration user is added to your directory, and you can manage it like other user objects in your directory. For example you can assign it permissions, add it to groups, and so on.
+  - content: How can you add a layer of protection to the application?
     choices:
     - content: Use unconditional access policies in Azure AD B2B.
       isCorrect: false

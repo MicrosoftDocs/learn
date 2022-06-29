@@ -22,23 +22,22 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 
     B2B collaboration users will show up in your directory, in the list of users. From here, you can manage users by making changes, removing users, or adding new ones.
 
-    ![Screenshot of inviting a user in the Azure portal.](../media/2-invite-guest-user.png)
+    ![Screenshot of the guest user in your directory.](../media/2-invite-guest-user.png)
 
 1. **The B2B collaboration user accepts your invitation and reviews privacy information**
 
     At the second stage in the diagram, the B2B collaboration user receives an invitation via email, and then uses the **Accept invitation** link to access the services you want to share with them. The first time they use this link, they'll be asked to consent to privacy information and terms of use.
 
-    :::image type="content" source="../media/2-email-confirmation.png" alt-text="Screenshot of the email confirmation." loc-scope="other"::: <!-- APEX10 -->
+    ![Screenshot of the email invitation.](../media/2-email-confirmation.png)
 
 1. **The user completes multi-factor authentication**
 
     At this point, if you've enabled multi-factor authentication, the user provides these extra details for their account. When multi-factor authentication is configured, the user must enter a verification code sent to their mobile device, before they're granted access.
 
-    ![Screenshot of multi-factor authentication dialog box.](../media/2-mfa.png)
+    ![Screenshot of the multi-factor authentication dialog box.](../media/2-mfa.png)
 
 1. **The user finds your apps on their access panel**
 
     Your B2B collaboration user is then forwarded to the access panel page, where they can access all the applications and services you've shared with them. These applications and services can be cloud-based, or on-premises.
 
-    :::image type="content" source="../media/2-shared-apps.png" alt-text="Screenshot of access panel page, showing shared apps." loc-scope="other"::: <!-- APEX10 -->
-
+    ![Screenshot of access panel page, showing shared apps.](../media/2-shared-apps.png)

@@ -15,36 +15,37 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is one of the External Collaboration settings you should review to make sure B2B collaboration is enabled?
+  - content: What is one of the **External Collaboration settings** you should review to make sure B2B collaboration is enabled?
     choices:
-    - content: Check your Collaboration restrictions to make sure **Enable global B2B collaboration** is selected.
-      isCorrect: false
-      explanation: Try again. This isn't one of the available settings in Azure AD.
-    - content: Check your Guest invite settings to make sure that **No one in the organization can invite guest users including admins** is selected.
-      isCorrect: false
-      explanation: Try again. This setting will block everyone in your organization, including admins, from sending B2B collaboration invitations to external users.
-    - content: Check your Collaboration restrictions to make sure that if “Deny invitations to the specified domains” is selected, the domains you want to invite are *not* listed.
+    - content: Check your **Collaboration restrictions** to make sure that if **Deny invitations to the specified domains** is selected, the domains you want to invite are *not* in the list.
       isCorrect: True
       explanation: Correct. This setting will block B2B collaboration with any domain that's listed below it. If this setting is selected, you'll want to make sure the domain you want to collaborate with hasn't been added to the list.
-  - content: At what levels can multi-factor authentication be enforced?
-    choices:
-    - content: Application level, user level, and category level.
+    - content: Check your **Collaboration restrictions** to make sure **Enable global B2B collaboration** is selected.
       isCorrect: false
-      explanation: Try again. There is no such thing as *category level* in multi-factor authentication enforcement that uses Conditional Access policies.
-    - content: Tenant level, user level, and application level.
-      isCorrect: True
-      explanation: Correct. You can enforce multi-factor authentication at different scopes through Conditional Access policies. This means that you can further secure your collaboration in Azure AD B2B.
-    - content: User level, application level, and strength level.
+      explanation: Try again. **Enable global B2B collaboration** isn't one of the available settings in Azure AD.
+    - content: Check your **Guest invite settings** to make sure that **No one in the organization can invite guest users including admins (most restrictive)** is selected.
       isCorrect: false
-      explanation: Try again. There is no such thing as *strength level* in multi-factor authentication enforcement that uses Conditional Access policies.
+      explanation: Try again. This setting will block everyone in your organization, including admins, from sending B2B collaboration invitations to external users.
   - content: Which of the following are valid categories for multi-factor authentication?
     choices:
-    - content: Something a user possesses, and something the user does not know.
+    - content: Something a user possesses, and something the user doesn't know.
       isCorrect: false
-      explanation: Try again. Something the user does not know is not a valid category.
-    - content: Something a user knows, and something the user does not possess.
+      explanation: Try again. Something the user doesn't know isn't an available category.
+    - content: Something a user knows, and something the user doesn't possess.
       isCorrect: false
-      explanation: Try again. Something the user does not possess is not a valid category.
+      explanation: Try again. Something the user doesn't possess isn't an available category.
     - content: Something a user possesses, and something a user knows.
       isCorrect: true
       explanation: Correct. Authentication can be dependent on something such as a user's device, or a phrase only known to the user.
+  - content: What's a good way to double-check identities of B2B collaboration users before they access an application?
+    choices:
+    - content: Configure multi-factor authentication by sending an invitation to a recovery email address for the B2B collaboration user.
+      isCorrect: false
+      explanation: Try again. You configure multi-factor authentication by creating a Conditional Access policy scoped to the application and to guest and external users.
+    - content: Configure multi-factor authentication by creating a Conditional Access policy and assigning it to your application and all guest and external users.
+      isCorrect: True
+      explanation: Correct. You configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal. The policy assignments should be your application and all guest and external users.
+    - content: Configure multi-factor authentication by using the What if tool to create a policy for your application.
+      isCorrect: false
+      explanation: Try again. The What if tool in the Azure portal is a useful way to test your policy after you've configured it.
+
