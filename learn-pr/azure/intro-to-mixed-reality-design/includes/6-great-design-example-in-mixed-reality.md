@@ -14,7 +14,7 @@ If you have HoloLens 2 device, you can directly download and install the app<sup
 
 The Designing Holograms application allows you to gain hands-on experience with mixed reality UX design principles. Learning how to design in mixed reality can be tricky. As described in earlier chapters, the medium doesn't always transition well from the 2D design process. The Designing Holograms app takes a new approach to exploring mixed reality behaviors, suggestions, and recommendations to help you design your own engaging and stunning HoloLens applications.
 
-:::image type="content" source="../media/hololens-playground.gif" alt-text="Gif showing the HoloLens playground app" lightbox="../media/hololens-playground.gif":::
+:::image type="content" source="../media/hololens-playground.gif" alt-text="Animated gif image showing the HoloLens playground app" lightbox="../media/hololens-playground.gif":::
 
 Download the app<sup>16</sup> for free from the Microsoft Store and learn from Microsoft's Mixed Reality Design Team!
 
@@ -22,7 +22,7 @@ Download the app<sup>16</sup> for free from the Microsoft Store and learn from M
 
 The HoloLens Playground is a fun application and a great place for developers to understand what's possible with the Mixed Reality Toolkit. You can experience new and intuitive ways of interacting with holograms in a mixed reality playground. For example, you can summon a hummingbird to your outstretched hand, play the piano with all your fingers, and use your eyes in some magical ways. This application is an exciting way to learn about MRTK.
 
-:::image type="content" source="../media/designing-hologram.png" alt-text="Screenshot showing the designing holograms app" lightbox="../media/designing-hologram.png":::
+:::image type="content" source="../media/designing-hologram.png" alt-text="Screenshot showing the humming bird holograms and a human hand" lightbox="../media/designing-hologram.png":::
 
 You can download HoloLens Playground<sup>17</sup> in the Microsoft Store.
 

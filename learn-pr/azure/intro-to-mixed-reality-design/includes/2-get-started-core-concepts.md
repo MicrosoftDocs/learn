@@ -6,7 +6,7 @@ To create a practical application in mixed reality, you'll need to understand so
 
 ## Core concepts of design
 
-To design immersive applications, one must be aware of several core concepts. At this point, your key priorities are to understand the users' point of view. You'll want to to arrange objects based on this point of view, and make sure users are comfortable and safe while using the application.
+To design immersive applications, one must be aware of several core concepts. At this point, your key priorities are to understand the users' point of view. You'll want to arrange objects based on this point of view, and make sure users are comfortable and safe while using the application.
 
 It will be helpful to understand the following key concepts before getting into the design of your application. Each topic below is an underlying component that influences and contributes to the quality of the mixed reality experience you're designing and developing.
 

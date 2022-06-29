@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.design-considerations-mr-development.7-knowledge-check
+uid: learn.azure.design-considerations-mr-development.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 12/10/2021
+  ms.date: 6/29/2022
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
@@ -57,7 +57,7 @@ quiz:
           explanation: Incorrect. Contrast colors, brightness, and lighting to draw attention to objects or points of interaction.
         - content: "Vignetting"
           isCorrect: true
-          explanation: Correct. Darkening materials with a vignette effect might assist draw the user's attention to the center of the field of view.
+          explanation: Correct. Darkening materials with a vignette effect might assist to draw the user's attention to the center of the field of view.
     - content: "What is 'One Line Concept'?"
       choices:
         - content: "It is the most straightforward combination of character and plot and typically consists of some event that starts the action, some sense of the main character, and some sense of the story's outcome."
@@ -68,4 +68,4 @@ quiz:
           explanation: Correct. One line concept is a high-level definition of what the storyboard is trying to achieve.
         - content: "A glimpse of an application"
           isCorrect: false
-          explanation: Incorrect. Prototype give a high level understanding of an application.
+          explanation: Incorrect. Prototypes give a high level understanding of an application.
