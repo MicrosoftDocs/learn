@@ -8,7 +8,7 @@ In this exercise, you'll create the *salesTotalDir* directory and *totals.txt* f
 
 1. In the `Program.cs` file, remove the `foreach` loop that iterates and writes each filename returned from the `FindFiles` function to the *Console* output. This will result in the `salesFiles` variable going unused. We'll leave it in here for now because it will be used again in a future lesson.
 
-1. In the `Program.cs` file, create a variable called `salesTotalDir`, which holds the path to the *salesTotal* directory:
+1. In the `Program.cs` file, create a variable called `salesTotalDir`, which holds the path to the *salesTotalDir* directory:
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();
