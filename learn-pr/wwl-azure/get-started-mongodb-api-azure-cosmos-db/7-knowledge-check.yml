@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You're creating an inventory database. You'll need to add a collection to store your current products. You would like to use the ProductID as your shard key.  How would you programmatically create this collection?"
+    choices:
+    - content: "Use the *GetCollection* function and assign *ProductID* to the *shardKey* parameter."
+      isCorrect: false
+      explanation: "Incorrect. *GetCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardKey* parameter"
+    - content: "Use the extended database run command function with the respective customAction, collection and shardKey parameters."
+      isCorrect: true
+      explanation: "Correct. To define the creation of a collection with a specific shardKey, you need to use extended commands"
+    - content: "Use the *CreateCollection* function and assign *ProductID* to the *shardKey* parameter."
+      isCorrect: false
+      explanation: "Incorrect. *CreateCollection* is not a function in all programing languages and for those languages that have this method, there is no *shardKey* parameter"
+  - content: "Which of the following statements is true?"
+    choices:
+    - content: "Since an Azure Cosmos DB API for MongoDB account doesn't have a MongoDB engine, developers will need to use different tools and drivers than they currently use to connect to their current MongoDB 3.2, 3.6, 4.0 and 4.2 databases."
+      isCorrect: false
+      explanation: "Incorrect. Developers should be able to use their current drivers and tools."
+    - content: "Upgrading between Azure Cosmos DB API for MongoDB Server versions could take several hours depending on the databases sizes."
+      isCorrect: false
+      explanation: "Incorrect. Since all versions use the same code base, upgrading versions should incur zero downtime."
+    - content: "Azure Cosmos DB API for MongoDB accounts benefit from automatic and transparent sharding."
+      isCorrect: true
+      explanation: "Correct. While offerings like MongoDB Atlas require you to specify and manage scaling to a horizontal scaling, the Azure Cosmos DB API for MongoDB automatically manages all sharding and its infrastructure behinds the scenes for you."
+  - content: "Your Accounting department needs a development database but would like to reduce cost since this database won't be used regularly.  Which capacity mode should you pick for the database?"
+    choices:
+    - content: "Provisioned."
+      isCorrect: false
+      explanation: "Incorrect. Provisioned will be the least desirable capacity mode since you would be charged regardless of usage."
+    - content: "Autoscale."
+      isCorrect: false
+      explanation: "Incorrect. While autoscale will allow you to set a limit on the RUs used and would scale up to that number, it still will at least charge you for the minimum RUs regardless if you use them or not."
+    - content: "Serverless."
+      isCorrect: true
+      explanation: "Correct. With Serverless, you're only charged per operation, and don't pay for the database when you don't use it."

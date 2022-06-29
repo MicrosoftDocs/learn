@@ -19,7 +19,7 @@ For more detail, selecting a particular field within the schema tab will take yo
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing Power B I enhanced metadata details. Details displayed include overview, properties, and contacts.](../media/purview-enhanced-metadata-details.png)
 
-Metadata scanning requires no special license. It works for all of your tenant metadata, including that of artifacts that are located in non-Premium workspaces.
+Metadata scanning requires no special license. It works for all of your tenant metadata, including items that are located in non-Premium workspaces.
 
 If you'd like more information about assets, you also have the option open the Power BI dataset in the Power BI service for further analytics, root-cause investigation, impact analysis, management tasks, and dataset enrichment.
 
@@ -27,7 +27,7 @@ If you'd like more information about assets, you also have the option open the P
 
 If you're using the search and browse features in Microsoft Purview to find assets for reporting or to troubleshoot existing assets, you likely need more information on where data actually comes from, and what transformation steps it has undergone. The lineage view displays the flow of data from the source through to Power BI assets, including dataflows, datasets, reports, and dashboards.
 
-Although you can track [data lineage in Power BI](/power-bi/collaborate-share/service-data-lineage), this information is limited to the artifacts in a single workspace. Lineage in Purview enables you to view the movement of data across more than one workspace, in a single view.
+Although you can track [data lineage in Power BI](/power-bi/collaborate-share/service-data-lineage), this information is limited to the items in a single workspace. Lineage in Purview enables you to view the movement of data across more than one workspace, in a single view.
 
 Lineage enables easy troubleshooting and deeper analysis of analytics projects. You're able to look both up and down-stream, to perform either root cause or impact analysis.
 
