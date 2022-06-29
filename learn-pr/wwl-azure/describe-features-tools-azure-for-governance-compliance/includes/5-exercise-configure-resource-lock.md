@@ -109,7 +109,7 @@ In the final task, you remove the resource lock and delete the storage account f
     
     :::image type="content" source="../media/storage-account-delete-f4d60c3b.png" alt-text="Screenshot of the deletion confirmation message before deleting a storage account.":::
     
-10. You should receive a message that the storage account was deleted. If you go Home &gt; Storage accounts, you should see that the storage account you created for this exercise is gone.
+10. You should receive a message that the storage account was deleted. If you go Home > Storage accounts, you should see that the storage account you created for this exercise is gone.
 
 Congratulations! You've completed configuring, updating, and removing a resource lock on an Azure resource.
 
