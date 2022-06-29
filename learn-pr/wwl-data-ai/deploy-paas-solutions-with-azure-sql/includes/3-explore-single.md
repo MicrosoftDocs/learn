@@ -10,7 +10,7 @@ In the blade in the image below, you’ll notice that the subscription should al
 
 - **Resource Group –** If there is an existing resource group that you wish to use, you may select it from the drop-down list. You can click on the “Create new” option if you wish to create a new resource group for this Azure SQL Database.
 - **Database Name –** You must provide a database name.
-- Server – Each database must reside on a logical server. If you have one already in existence in the appropriate region, you may choose to use it. Otherwise, you can click on the **Create new** link and follow the prompts to create a new logical server to host the database.
+- **Server –** Each database must reside on a logical server. If you have one already in existence in the appropriate region, you may choose to use it. Otherwise, you can click on the **Create new** link and follow the prompts to create a new logical server to host the database.
 - **Want to use SQL elastic pool?** – Determine whether to use an elastic pool.
 - **Compute + storage** – Determine the appropriate compute resources needed. By default, it will be a Gen5, 2vCore, with 32 GB of storage until something else is selected. Click on **Configure database** to view alternate configuration options.
 
@@ -22,7 +22,7 @@ The image below shows the portal blade in which you can configure the database o
 
 ## Deploying an Azure SQL Database via PowerShell/CLI
 
-You can also deploy your database using Azure PowerShell or the Azure CLI. The image below shows the PowerShell example where you are a creating a new resource group, and defining an admin called SqlAdmin and then creating a new server, database, and firewall rule.
+You can also deploy your database using Azure PowerShell or the Azure CLI. The image below shows the PowerShell example where you are creating a new resource group, and defining an admin called SqlAdmin and then creating a new server, database, and firewall rule.
 
 ```powershell
 # Connect-AzAccount
@@ -138,7 +138,7 @@ echo $password
 
 ## Deploying Azure SQL Database Using Azure Resource Manager templates
 
-Another method for deploying resources is as mentioned earlier is using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown below:
+Another method for deploying resources is as mentioned earlier using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown below:
 
 ```powershell
 #Define Variables for parameters to pass to template
