@@ -102,7 +102,7 @@ Defender for IoT has both agent-based and agentless monitoring solutions:
 
 ## Threat Intelligence in Defender for Cloud
 
-Defender for Cloud's threat protection works by monitoring security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats. For more information, see [How Microsoft Defender for Cloud detects and responds to threats](https://docs.microsoft.com/azure/defender-for-cloud/alerts-overview#detect-threats).
+Defender for Cloud's threat protection works by monitoring security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats. For more information, see [How Microsoft Defender for Cloud detects and responds to threats](/azure/defender-for-cloud/alerts-overview#detect-threats).
 
 When Defender for Cloud identifies a threat, it triggers a [security alert](/azure/defender-for-cloud/managing-and-responding-alerts), containing detailed information regarding the event, including suggestions for remediation. To help incident response teams investigate and remediate threats, Defender for Cloud provides threat intelligence
 reports containing information about detected threats. The report includes information such as:
