@@ -14,7 +14,7 @@ Content in Microsoft Sentinel includes any of the following types:
 
 To maintain **content** in for Microsoft Sentinel use:
 - **Content hub**: -  Microsoft Sentinel **solutions** are packages of Microsoft Sentinel content or Microsoft Sentinel API integrations, which fulfill an end-to-end product, domain, or industry vertical scenario in Microsoft Sentinel.
-- **Repositories**: - Repositories helps you automate the deployment and management of your Microsoft Sentinel content through central repositories.
+- **Repositories**: - Repositories help you automate the deployment and management of your Microsoft Sentinel content through central repositories.
 - **Community**:  Onboard community content on-demand to enable your scenarios.  The github repo at https://github.com/Azure/Azure-Sentinel contains content by Microsoft and the community that is tested and available for you to implement in your Sentinel workspace.
 
 
