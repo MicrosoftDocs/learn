@@ -22,10 +22,10 @@ quiz:
     - content: "Azure DevOps only"
       isCorrect: false
       explanation: "Incorrect.  Both repository types are supported."
-    - content: "Github only"
+    - content: "GitHub only"
       isCorrect: false
       explanation: "Incorrect.  Both repository types are supported."
-    - content: "Github and Azure DevOps"
+    - content: "GitHub and Azure DevOps"
       isCorrect: true
       explanation: "Correct.  Both repository types are supported."
   - content: "Which content type is supported by content hub solutions?"

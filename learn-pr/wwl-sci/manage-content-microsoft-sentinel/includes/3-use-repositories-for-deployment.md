@@ -38,7 +38,7 @@ To create your connection:
 
 - Select one of the following tabs, depending on your connection type:
 
-### Github
+### GitHub
 
 - Enter your GitHub credentials when prompted.
 
