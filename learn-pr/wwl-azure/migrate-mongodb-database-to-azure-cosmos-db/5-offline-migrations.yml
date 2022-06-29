@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.offline-migrations
+title: Offline migrations
+metadata:
+  title: Offline migrations
+  description: "Offline migrations"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3

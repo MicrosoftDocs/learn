@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.pre-migration
+title: Pre migration
+metadata:
+  title: Pre migration
+  description: "Pre migration"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-pre-migration.md)]

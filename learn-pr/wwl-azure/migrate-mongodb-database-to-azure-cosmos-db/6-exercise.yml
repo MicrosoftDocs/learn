@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.exercise
+title: Exercise - Migrate a MongoDB database to Azure Cosmos DB
+metadata:
+  title: Exercise - Migrate a MongoDB database to Azure Cosmos DB
+  description: "Exercise - Migrate a MongoDB database to Azure Cosmos DB"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
