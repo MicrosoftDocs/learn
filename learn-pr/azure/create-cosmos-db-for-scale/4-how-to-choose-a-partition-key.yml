@@ -3,7 +3,7 @@ uid: learn.create-cosmos-db-for-scale.4-how-to-choose-a-partition-key
 metadata:
   title: Choose a partition key in Azure Cosmos DB
   description: Learn how to create a container with a partition key that will enable your database to scale as your needs grow.
-  ms.date: 09/24/2018
+  ms.date: 06/20/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -15,21 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'True or false: You can **add** a partition key to an Azure Cosmos DB container after it has been created.'
+  - content: Which of the following statements is true about adding a partition key to an Azure Cosmos DB container after it has been created?
     choices:
-    - content: 'True'
+    - content: You can change the partition key after you create a container.
       isCorrect: false
-      explanation: You can set the partition key only when the container is created.
-    - content: 'False'
+      explanation: Incorrect. You can't change the partition key after you create a container.
+    - content: You can set the partition key on a container only when you create the container.
       isCorrect: true
-      explanation: You can set the partition key only when the container is created.
+      explanation: Correct. You can set the partition key only when the container is created.
+    - content: You can programmatically change a partition key on a container at any time if you have the correct permissions.
+      isCorrect: false
+      explanation: Incorrect. A partition key on a container can't be changed after you create the container.
 
-  - content: 'Your organization is planning to use Azure Cosmos DB to store vehicle telemetry data generated from millions of vehicles every second. Which of the following options for your Partition Key will optimize storage distribution?'
+  - content: Your organization plans to use Azure Cosmos DB to store vehicle telemetry data generated from millions of vehicles every second. Which of the following options for your partition key will optimize storage distribution?
     choices:
-    - content: 'Vehicle Model'
+    - content: Vehicle model
       isCorrect: false
-      explanation: Most auto manufactures only have a couple dozen models. This option is potentially the least granular, will create a fixed number of logical partitions, and may not distribute data evenly across all physical partitions.
-    - content: 'Vehicle Identification Number (VIN) which looks like WDDEJ9EB6DA032037'
+      explanation: Incorrect. Most auto manufacturers have only a couple dozen models. This option is potentially the least granular, will create a fixed number of logical partitions, and it might not distribute data evenly across all physical partitions.
+    - content: Vehicle Identification Number (VIN).
       isCorrect: true
-      explanation: Auto manufacturers have transactions occurring throughout the year. This option will create a more balanced distribution of storage across partition key values.
-
+      explanation: Correct. Auto manufacturer transactions occur throughout the year. Using VINs creates a more balanced distribution of storage across partition key values.
+    - content: Vehicle color.
+      isCorrect: false
+      explanation: Incorrect. Some vehicle colors are more popular among car buyers. Using automobile color for the partition key won't distribute data evenly across all physical partitions because ownership is heavily weight among a few popular colors.
