@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-machine-learn-job-for-automation.create-pipelines
+title: Create Azure Machine Learning pipelines
+metadata:
+  title: Create Azure Machine Learning pipelines
+  description: "Create Azure Machine Learning pipelines"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-create-pipelines.md)]
