@@ -67,7 +67,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. In the definition of the *Deploy* stage's deployment job (near line 59) configure the job to use the Windows hosted agent pool:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="56-65" highlight="6-7" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="57-67" highlight="6-7" :::
 
    Some of the pipeline steps that you'll add later to work with your database require the Windows operating system to run. You can use different agent pools for different jobs in your pipeline, so the other jobs continue to use the Ubuntu Linux pipeline agent pool.
 
