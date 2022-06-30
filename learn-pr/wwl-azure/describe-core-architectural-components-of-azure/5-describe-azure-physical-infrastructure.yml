@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-core-architectural-components-of-azure.describe-azure-physical-infrastructure
+title: Describe Azure physical infrastructure
+metadata:
+  title: Describe Azure physical infrastructure
+  description: "Describe Azure physical infrastructure"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-describe-azure-physical-infrastructure.md)]
