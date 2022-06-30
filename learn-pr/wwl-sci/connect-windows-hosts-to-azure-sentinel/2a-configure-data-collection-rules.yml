@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-windows-hosts-to-azure-sentinel.configure-data-collection-rules
-title: Configure data collection rules
+title: Connect using the Windows Security Events via AMA Connector
 metadata:
-  title: Configure data collection rules
-  description: "Configure data collection rules"
-  ms.date: 06/27/2022
+  title: Connect using the Windows Security Events via AMA Connector
+  description: "Connect using the Windows Security Events via AMA Connector"
+  ms.date: 06/29/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
