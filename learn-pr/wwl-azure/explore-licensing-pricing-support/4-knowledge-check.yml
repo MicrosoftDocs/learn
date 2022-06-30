@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "Azure Pricing calculator"
       isCorrect: false
-      explanation: "That’s incorrect. The Azure Pricing calculator provides an estimated price based on the resources added to a solution. It does not estimate cost savings."
+      explanation: "That’s incorrect. The Azure Pricing calculator provides an estimated price based on the resources added to a solution. It doesn't estimate cost savings."
     - content: "Azure TCO calculator"
       isCorrect: true
       explanation: "That's correct. The Azure TCO calculator helps you estimate the cost savings over time of operating a solution on Azure instead of in an on-premises datacenter."
     - content: "Azure Cloud Economics"
       isCorrect: false
-      explanation: "That’s incorrect. The Azure website includes information about how how to get the most value from an Azure investment, but this is not the tool for providing a specific estimate."
+      explanation: "That’s incorrect. The Azure website includes information about how to get the most value from an Azure investment, but this isn't the tool for providing a specific estimate."
