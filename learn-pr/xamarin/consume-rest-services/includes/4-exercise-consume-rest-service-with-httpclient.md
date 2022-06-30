@@ -24,11 +24,13 @@ Now that you have the REST service hosted, the rest of the work is done on your 
 
 1. In Visual Studio 2019, open the **BookClient** starter solution that's located in the **src/exercise1/start** folder.
 
-## Add NuGet packages
+## Add and update NuGet packages
 
-Now that the solution is open, add the Json.NET NuGet package. We use this package to serialize our book into JSON and deserialize the responses we get from the web service.
+Now that the solution is open, add the Json.NET NuGet package. We use this package to serialize our book into JSON and to deserialize the responses we get from the web service. We'll also check for NuGet package updates.
 
-1. Add the **Json.NET** (named **Newtonsoft.Json**) NuGet package to the **BookClient** project. Also add it to any platform projects you intend to test with, such as iOS or Android. If you use Visual Studio on Windows, right-click the solution node and select **Manage NuGet Packages for Solution**. On Visual Studio for Mac, you add the packages individually to each project via **Add** > **Add Packages**.
+1. Add the **Json.NET** (named **Newtonsoft.Json**) NuGet package to the **BookClient** project. Also add it to any platform projects you intend to test with, such as iOS or Android. If you're using Visual Studio on Windows and for Visual Studio for Mac, with the solution open, under **BookClient**, right-click **Dependencies** and select **Manage NuGet Packages**.
+
+1. Check for updates to packages the solution uses. In the **Manage NuGet Packages** dialog, select **Updates** and install the updates that are shown for the solution.
 
 ## Sign in to the service
 
