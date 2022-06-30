@@ -58,6 +58,8 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
     :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
 
+1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select Open.
+
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
