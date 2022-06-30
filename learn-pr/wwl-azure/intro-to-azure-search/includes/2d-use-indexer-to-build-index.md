@@ -1,4 +1,4 @@
-In order to index the documents in Azure Storage, they need to be exported from their original file type to JSON. In order to export data in any format to JSON, and load it into an index, we use an indexer. 
+In order to index the documents in Azure storage, they need to be exported from their original file type to JSON.  In order to export data in any format to JSON, and load it into an index, we use an indexer. 
 
 To create search documents, you can either generate JSON documents with application code or you can use Azure's indexer to export incoming documents into JSON.
 

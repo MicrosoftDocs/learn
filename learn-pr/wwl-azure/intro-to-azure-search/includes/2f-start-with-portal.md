@@ -1,8 +1,10 @@
-Before using an indexer to create an index, you'll first need to make your data available in a supported data source. Supported data sources include:
+Before using the Azure Search service, you'll first need to extract your data to an Azure data source. Supported data storage sources include:
 
-- Cosmos DB (SQL API)
-- Azure SQL (database, managed instance, and SQL Server on an Azure VM)
-- Azure Storage (Blob Storage, Table Storage, ADLS Gen2)
+- Azure SQL Database
+- SQL Server on an Azure VM
+- Cosmos DB
+- Azure Blob storage
+- Azure Table storage
 
 ### Using the Azure portal's Import data wizard
 

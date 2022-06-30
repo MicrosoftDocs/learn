@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 02/07/2022
+  ms.date: 06/30/2022
   author: heidisteen
-  ms.author: heidist
+  ms.author: ' heidist'
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -15,36 +15,36 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data format is accepted by Azure Cognitive Search when you're pushing data to the index?"
+  - content: "Which data format is accepted by Azure Cognitive Search when you are pushing data to the index?"
     choices:
     - content: "CSV."
       isCorrect: false
-      explanation: "Incorrect. If source data is a CSV file, you'll have to convert it to JSON before you can push it to an index. You can also use an indexer to parse CSV files stored in Azure Storage."
+      explanation: "Incorrect. Your Azure Storage blob can contain all types of files, but CSV isn't supported for the Search index."
     - content: "SQL."
       isCorrect: false
-      explanation: "Incorrect. SQL data isn't supported natively. You can either convert it to JSON or use an indexer that serializes the content for you."
+      explanation: "Incorrect. SQL isn't supported."
     - content: "JSON."
       isCorrect: true
-      explanation: "Correct. Cognitive Search can index JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
-  - content: "Which explanation best describes an indexer and an index?"
+      explanation: "Correct. Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
+  - content: "What is a correct explanation of an indexer and an index?"
     choices:
-    - content: "An indexer converts documents into JSON and forwards them to a search engine for indexing."
+    - content: "Azure's indexer exports incoming documents into JSON and pushes the JSON to an index for storage."
       isCorrect: true
-      explanation: "Correct. An indexer serializes a source document into JSON before passing it to a search engine for indexing. An indexer automates several steps of data ingestion, reducing the amount of code you need to write."
-    - content: "An indexer can be used instead of an index if the files are already in the proper format."
+      explanation: "Correct. Documents in Azure blob storage are exported to JSON before getting stored in the search index. Azure's indexer is a tool that automates the document export process."
+    - content: "Azure's indexer can be used instead of an index if the files are already in the proper format."
       isCorrect: false
-      explanation: "Incorrect. An indexer is used to populate an index, but isn't a replacement for an index."
-    - content: "An indexer is only used for AI enrichment and skillset execution."
+      explanation: "Incorrect. Azure's indexer is not a replacement for an index."
+    - content: "Azure's indexer is only used to implement a knowledge store which is stored in the index."
       isCorrect: false
-      explanation: "Incorrect. A skillset requires an indexer, but an indexer doesn't require a skillset. You can use indexers to create a search index from textual content in any supported data source."
-  - content: "If you set up a search index without including a skillset, which would you still be able to query?"
+      explanation: "Incorrect. Azure's indexer is not only used with AI skillsets to create knowledge stores."
+  - content: "If you set up a search index without including any AI skillsets, which would you still be able to query?"
     choices:
     - content: "Sentiment."
       isCorrect: false
-      explanation: "Incorrect. Detecting the sentiment in content requires a skillset that includes the Sentiment Analysis skill."
+      explanation: "Incorrect. Detecting the sentiment in content requires an AI skillset."
     - content: "Text content."
       isCorrect: true
-      explanation: "Correct. Cognitive Search is used for full text search over indexes containing alphanumeric content."
+      explanation: "Correct. Text from content can be directly saved as a field in an index."
     - content: "Image captions."
       isCorrect: false
-      explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill"
+      explanation: "Incorrect. Creating captions for images requires an AI skillset."
