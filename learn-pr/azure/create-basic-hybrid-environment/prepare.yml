@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-basic-hybrid-environment.2-prepare
+uid: learn.create-basic-hybrid-environment.prepare
 title: Prepare for the basic hybrid environment
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-prepare.md)]
+  [!include[](includes/prepare.md)]

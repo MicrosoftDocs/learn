@@ -36,12 +36,12 @@ products:
 subjects: 
   - cloud-computing
 units:
-- learn.create-basic-hybrid-environment.1-introduction
-- learn.create-basic-hybrid-environment.2-prepare
-- learn.create-basic-hybrid-environment.3-exercise-create-vm
-- learn.create-basic-hybrid-environment.4-exercise-install-ad-create-user
-- learn.create-basic-hybrid-environment.5-exercise-azure-ad-tenant
-- learn.create-basic-hybrid-environment.6-knowledge-check
-- learn.create-basic-hybrid-environment.7-summary
+- learn.create-basic-hybrid-environment.introduction
+- learn.create-basic-hybrid-environment.prepare
+- learn.create-basic-hybrid-environment.exercise-create-vm
+- learn.create-basic-hybrid-environment.exercise-install-ad-create-user
+- learn.create-basic-hybrid-environment.exercise-azure-ad-tenant
+- learn.create-basic-hybrid-environment.knowledge-check
+- learn.create-basic-hybrid-environment.summary
 badge:
   uid: learn.azure.create-basic-hybrid-environment.badge
