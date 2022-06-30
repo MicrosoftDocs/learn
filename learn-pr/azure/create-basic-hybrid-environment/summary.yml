@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-basic-hybrid-environment.7-summary
+uid: learn.create-basic-hybrid-environment.summary
 title: Summary
 metadata:
   unitType: summary
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/summary.md)]

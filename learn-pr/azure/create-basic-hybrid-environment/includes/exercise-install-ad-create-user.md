@@ -1,5 +1,6 @@
 
 ## Install Active Directory and create a test user
+In this exercise, you'll install Active Directory and create a user.  This user can be used for testing purposes. 
 
 ![Diagram that shows a basic Azure AD environment.](../media/4-exercise-1.png)
 
@@ -9,7 +10,7 @@ Now that we have the virtual machine up and the operating system installed, we w
 1. In **Hyper-V**, right click on DC1 and select **Settings**.
 2. On the left, select **DVD Drive**.
 3. On the right, browse for the **LEARN_Scripts_Basic_AD_Azure_AD.ISO** file that was downloaded in the prepare section.
-  [![Screenshot of Change ISO](../media/4-exercise-2.png)](../media/4-exercise-2.png#lightbox)
+  [![Screenshot of Change ISO.](../media/4-exercise-2.png)](../media/4-exercise-2.png#lightbox)
 4. Click **Apply** and **OK**. 
 
 ## Install Active Directory prerequisites
@@ -153,7 +154,7 @@ Once you have created the user, we want to create a snapshot of the work we have
 1. In Hyper-V, right-click DC1.
 2. Select **Checkpoint**
 3. You should now see a checkpoint created.
-[![Screenshot of Create a checkpoint](../media/4-exercise-3.png)](../media/4-exercise-3.png#lightbox)
+[![Screenshot of Create a checkpoint.](../media/4-exercise-3.png)](../media/4-exercise-3.png#lightbox)
 
 ## Check your work
 At this point, you should have your server renamed and Active Directory installed.  You should also have a new user named Allie McCray created.
@@ -167,8 +168,8 @@ To verify this exercise, we'll connect to the virtual machine.
 5. In ADUC, on the left, click **contoso**.
 6. On the right, click **Users** and verify that **Anna Ringdal** is there.
 
-</br>
+
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/6aae0840-98dc-b478-91f5-f1ecf1b8ddd0?autoplay=false&amp;showinfo=true]
 
-</br>
+

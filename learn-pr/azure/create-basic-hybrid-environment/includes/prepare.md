@@ -65,8 +65,7 @@ The following table describes each of the PowerShell scripts contained both the 
 Download the .zip file and extract  the contents to the ` D:\Scripts` folder.  Download the .iso image and move it to the ` D:\ISO` folder.
 
 
-</br>
+
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/8e890840-98dc-b478-2c31-f1ecf1b0a78a?autoplay=false&amp;showinfo=true]
 
-</br>

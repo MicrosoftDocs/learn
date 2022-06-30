@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-basic-hybrid-environment.3-exercise-create-vm
+uid: learn.create-basic-hybrid-environment.exercise-create-vm
 title: Install Hyper-V and create a VM
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-create-vm.md)]
+  [!include[](includes/exercise-create-vm.md)]

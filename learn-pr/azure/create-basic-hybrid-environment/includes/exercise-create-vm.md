@@ -1,4 +1,5 @@
 ## Create and configure your virtual machine
+In this exercise, you'll create and configure the a virtual machine.  This virutal machine will be used to represent our on-premises Active Directory environment.  
 
 ![Diagram that shows a basic Azure AD environment.](../media/3-exercise-1.png)
 
@@ -17,7 +18,7 @@ The first thing that you'll need to do is, install Hyper-V on the host computer.
  8. Select External and click **Create Virtual Switch**.
  9. Rename it **External**.
  10. Under External Network, make sure your Ethernet/wi-fi adapter is selected.
-  [![Screenshot of Virtual Switch Manager](../media/3-exercise-3.png)](../media/3-exercise-3.png#lightbox)
+  [![Screenshot of Virtual Switch Manager.](../media/3-exercise-3.png)](../media/3-exercise-3.png#lightbox)
  11.  Click Apply.  Click Ok.
  12. If you receive a warning saying, "Pending changes may disrupt network connectivity"  click "Yes".
  13. Click Okay to close the virtual switch Manager
@@ -71,7 +72,7 @@ $InstallMedia|Path and filename of the Windows Server 2019 build|
     Set-VMFirmware -VMName $VMName -FirstBootDevice $DVDDrive 
   ```
   3. Using a command line, navigate to ` D:\Scripts`, type `1_CreateVM_LEARN.ps1`, and hit enter.
-  [![Powershell session](../media/3-exercise-4.png)](../media/3-exercise-4.png#lightbox)
+  [![Screenshot of PowerShell session.](../media/3-exercise-4.png)](../media/3-exercise-4.png#lightbox)
   4.  Once this operation completes, you can move to finishing the operating system installation.
 
 ## Complete the operating system deployment
@@ -81,7 +82,7 @@ In order to finish building the virtual machine, you need to finish the operatin
  2. Click on the Start button.
  3. You'll be prompted to ‘Press any key to boot from CD or DVD’. Go ahead and do so.
  4. On the Windows Server startup screen, select your language and click **Next**.
-  [![Screenshot of Install windows](../media/3-exercise-5.png)](../media/3-exercise-5.png#lightbox)
+  [![Screenshot of Install windows.](../media/3-exercise-5.png)](../media/3-exercise-5.png#lightbox)
  6. Click **Install Now**.
  7. Select **Windows 2019 Standard (Desktop Experience)** and click **Next**.
  8. Check **I accept the license terms and click **Next**.
@@ -99,8 +100,7 @@ To verify this exercise, we'll connect to the virtual machine.
 3. Sign-in to the new virtual machine with the password used in the Complete the operating system deployment section.
 
 
-</br>
+
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/8e890840-98dc-b478-1fbc-f1ecf1b0b730?autoplay=false&amp;showinfo=true]
 
-</br>
