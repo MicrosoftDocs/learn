@@ -98,6 +98,8 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
+1. If you're asked to grant permission to access a resource, select **Permit**.
+
 1. Notice that Azure Pipelines prompts you for an approval. You also receive an email informing you that the pipeline needs your approval.
 
    :::image type="content" source="../media/7-pipeline-run-approval-required.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run, with the approval requirement highlighted.":::

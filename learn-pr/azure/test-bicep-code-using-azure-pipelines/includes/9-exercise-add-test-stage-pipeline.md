@@ -125,7 +125,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Find the definition for the Azure App Service app, and update it to include the `httpsOnly` property in its `properties` area:
 
-   :::code language="bicep" source="code/9-fixed.bicep" range="46-65" highlight="6" :::
+   :::code language="bicep" source="code/9-fixed.bicep" range="56-75" highlight="6" :::
 
 1. Save the file.
 
