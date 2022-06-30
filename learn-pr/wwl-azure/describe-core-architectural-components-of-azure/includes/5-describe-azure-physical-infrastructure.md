@@ -48,12 +48,10 @@ Most Azure regions are paired with another region within the same geography (suc
 > [!IMPORTANT]
 > Not all Azure services automatically replicate data or automatically fall back from a failed region to cross-replicate to another enabled region. In these scenarios, recovery and replication must be configured by the customer.
 
-Examples of region pairs in Azure are West US paired with East US and South-East Asia paired with East Asia.
+Examples of region pairs in Azure are West US paired with East US and South-East Asia paired with East Asia. Because the pair of regions are directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy.
 
-:::image type="content" source="../media/region-pairs-7c495a33.png" alt-text="Diagram showing relationship between geography, region pair, region, and datacenter.":::
+:::image type="content" source="../media/region-pairs-7c495a33.png" alt-text="Diagram showing the relationship between geography, region pair, region, and availability zone.":::
 
-
-Because the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy.
 
 #### Additional advantages of region pairs:
 

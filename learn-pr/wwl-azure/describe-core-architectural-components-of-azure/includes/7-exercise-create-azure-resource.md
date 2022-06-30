@@ -13,16 +13,16 @@ In this task, you’ll create a virtual machine using the Azure portal.
     
     **Basics tab**
     
-    | **Setting - TEST**   | **Value**                                                                                    |
-    | -------------------- | -------------------------------------------------------------------------------------------- |
-    | Subscription         | Concierge Subscription                                                                       |
-    | Resource group       | &lt;rgn&gt;\[sandbox resource group name\]&lt;/rgn&gt; |
-    | Virtual machine name | my-VM                                                                                        |
-    | Authentication type  | Password                                                                                     |
-    | Username             | azureuser                                                                                    |
-    | Password             | Enter a custom password                                                                      |
-    | Confirm password     | Reenter the custom password                                                                  |
-    | Public inbound ports | None                                                                                         |
+    | **Setting**          | **Value**                                                  |
+    | -------------------- | ---------------------------------------------------------- |
+    | Subscription         | Concierge Subscription                                     |
+    | Resource group       | Select the resource group name that begins with **learn**. |
+    | Virtual machine name | my-VM                                                      |
+    | Authentication type  | Password                                                   |
+    | Username             | azureuser                                                  |
+    | Password             | Enter a custom password                                    |
+    | Confirm password     | Reenter the custom password                                |
+    | Public inbound ports | None                                                       |
 
 5.  Select Review and Create.
 
