@@ -11,7 +11,7 @@ Multi-factor authentication asks the user to complete challenges that can be put
 - Something the user has
 - Something the user is
 
-![Graphic showing multi-factor authentication challenges.](../media/4-mfa.png)
+![Diagram showing multi-factor authentication challenges.](../media/4-mfa.png)
 
 Azure supports different forms of second factor methods, including:
 
@@ -32,12 +32,12 @@ Conditional Access policies have two key parts:
 
 In our health records application example, you create a Conditional Access policy specifically for your application. In the Azure portal, you navigate to the application's properties (**Enterprise applications** > *your application*), and select the **Security** > **Conditional Access** > **New policy** option to create a policy for guest and external users.
 
-   [ ![Graphic showing navigation to Conditional Access options for an application.](../media/4-app-new-policy.png) ](../media/4-app-new-policy.png#lightbox)
+   [ ![Diagram showing navigation to Conditional Access options for an application.](../media/4-app-new-policy.png) ](../media/4-app-new-policy.png#lightbox)
 
 When configuring this policy's **Assignments**, you specify **All guest and external users**.
 For **Access controls**, you select both **Grant access** and **Require multifactor authentication**.
 
-   [ ![Graphic showing the Conditional Access policy configuration for an application.](../media/4-create-conditional-access-policy.png) ](../media/4-create-conditional-access-policy.png#lightbox)
+   [ ![Diagram showing the Conditional Access policy configuration for an application.](../media/4-create-conditional-access-policy.png) ](../media/4-create-conditional-access-policy.png#lightbox)
 
 After you configure your policy and enable it, you can test it by using the **What If** tool in the Azure portal.
 
