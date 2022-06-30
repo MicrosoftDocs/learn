@@ -57,7 +57,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
     | Weight | Leave as default. **1000**. |
     | Private link | Select the checkbox for **Enable private link service**. |
     | Select a private link | Select **In my directory**. |
-    | Resource | Select **privatelinkservice**. |
+    | Resource | Select **myPrivateLinkService**. |
     | Region | Region will be selected when you select the resource. |
     | Request message | Enter **webServer private connection.** |
     | Status | Leave as checked. |
@@ -93,7 +93,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
 
 ### Approve private endpoint connections
 
-1. After enabling private link service for the origin resources, you'll need to approve the private endpoint connection request before the private connection can be established. To approve connectivity for the *web servers*, locate the Private link service resource you created in an earlier unit named **privatelinkservice**. Select **Private endpoint connections** from under *Settings* on the left side menu pane.
+1. After enabling private link service for the origin resources, you'll need to approve the private endpoint connection request before the private connection can be established. To approve connectivity for the *web servers*, locate the Private link service resource you created in an earlier unit named **myPrivateLinkService**. Select **Private endpoint connections** from under *Settings* on the left side menu pane.
 
 1. Select the pending connection with the description of *webServer private connection* and select **Approve**. Then select **Yes** to confirm approval to establish the connection.
 
