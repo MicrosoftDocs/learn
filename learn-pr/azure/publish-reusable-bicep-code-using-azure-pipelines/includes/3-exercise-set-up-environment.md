@@ -62,9 +62,9 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. You're using this repository for the first time, so you might be prompted to sign in.
 
-    If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 

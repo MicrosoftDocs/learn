@@ -9,11 +9,11 @@ You are responsible for gathering the requirements that will help SAP administra
 
 You will:
 
- -  Explore the monitoring requirements of Azure for SAP workloads.
- -  Examine monitoring, logging, and alerting services.
- -  Explore Azure VM monitoring considerations.
- -  Troubleshoot the Azure Extension for SAP.
- -  Explore Azure Monitor and Log Analytics.
- -  Explore SAP HANA alerts.
- -  Examine diagnostic tools.
- -  Explore operating system and workload updates for Azure virtual machines.
+- Explore the monitoring requirements of Azure for SAP workloads.
+- Examine monitoring, logging, and alerting services.
+- Explore Azure VM monitoring considerations.
+- Troubleshoot the Azure Extension for SAP.
+- Explore Azure Monitor and Log Analytics.
+- Explore SAP HANA alerts.
+- Examine diagnostic tools.
+- Explore operating system and workload updates for Azure virtual machines.
