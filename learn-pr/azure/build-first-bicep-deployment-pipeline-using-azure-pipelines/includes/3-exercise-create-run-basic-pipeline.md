@@ -15,7 +15,7 @@ In this exercise, you'll:
 
 1. If you created a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then prompts you to create a new project. Continue to the next step to set up the project.
 
-    If you signed in to an existing Azure DevOps organization, select your account ID in the resource bar, and then select **New project** to create a new project.
+    If you signed in to an existing Azure DevOps organization, select **New project** to create a new project.
 
     :::image type="content" source="../../includes/media/azure-devops-create-project.png" alt-text="Screenshot of Azure DevOps with new project button highlighted.":::
 
