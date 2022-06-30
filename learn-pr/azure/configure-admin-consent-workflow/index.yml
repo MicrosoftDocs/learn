@@ -25,7 +25,7 @@ prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
   - The Global Administrator, Cloud Application Administrator, or Application Administrator role.
   - Ability to develop with JavaScript or TypeScript at the beginner level.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/configure-admin-consent-workflow.svg
 levels:
   - intermediate
 roles:
