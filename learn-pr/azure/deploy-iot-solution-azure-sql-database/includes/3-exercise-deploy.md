@@ -141,7 +141,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Update the code below and run the the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
+1. Update the code below and run the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
 
     ```bash
     sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d iot-db -i azure-sql-iot/sql_schema/script.sql
