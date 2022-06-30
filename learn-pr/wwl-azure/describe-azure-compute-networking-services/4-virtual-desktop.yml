@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-desktop
-title: Describe Azure virtual desktop
+title: Describe Azure Virtual Desktop
 metadata:
-  title: Describe Azure virtual desktop
-  description: "Describe Azure virtual desktop"
-  ms.date: 06/29/2022
+  title: Describe Azure Virtual Desktop
+  description: "Describe Azure Virtual Desktop"
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial

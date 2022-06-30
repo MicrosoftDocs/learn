@@ -27,7 +27,7 @@ Availability sets do this by grouping VMs in two ways: update domain and fault d
  -  **Update domain**: The update domain groups VMs that can be rebooted at the same time. This allows you to apply updates while knowing that only one update domain grouping will be offline at a time. All of the machines in one update domain will be updated. An update group going through the update process is given a 30-minute time to recover before maintenance on the next update domain starts.
  -  **Fault domain**: The fault domain groups your VMs by common power source and network switch. By default, an availability set will split your VMs across up to three fault domains. This helps protect against a physical power or networking failure by having VMs in different fault domains (thus being connected to different power and networking resources).
 
-Best of all, there’s no additional cost for configuring an availability set. You only pay for the VM instances you create.<br>
+Best of all, there’s no additional cost for configuring an availability set. You only pay for the VM instances you create.
 
 ## Examples of when to use VMs
 

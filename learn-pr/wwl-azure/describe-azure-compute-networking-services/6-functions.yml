@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.functions
-title: Describe Azure functions
+title: Describe Azure Functions
 metadata:
-  title: Describe Azure functions
-  description: "Describe Azure functions"
-  ms.date: 06/29/2022
+  title: Describe Azure Functions
+  description: "Describe Azure Functions"
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
