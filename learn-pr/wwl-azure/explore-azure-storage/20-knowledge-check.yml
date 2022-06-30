@@ -63,13 +63,13 @@ quiz:
       explanation: "That’s correct. Ultra SSD managed disks have the highest performance of the four tiers."
   - content: "SAP HANA Dynamic Tiering 2.0 (DT 2.0) offers the ability to offload less frequently accessed data from memory into extended storage. Which of the following statements about DT 2.0 is true?"
     choices:
-    - content: "DT 2.0 does not need to be installed on a dedicated Azure VM."
+    - content: "DT 2.0 doesn't need to be installed on a dedicated Azure VM."
       isCorrect: false
       explanation: "That’s incorrect. DT 2.0 does need to be installed on a dedicated Azure VM."
     - content: "The SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
       isCorrect: true
       explanation: "That’s correct. To ensure supportability for SAP HANA Dynamic Tiering 2.0, the SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
-    - content: "SAP HANA and DT 2.0 VMs cannot be deployed within the same Azure virtual network."
+    - content: "SAP HANA and DT 2.0 VMs can't be deployed within the same Azure virtual network."
       isCorrect: false
       explanation: "That’s incorrect. SAP HANA and DT 2.0 VMs can be deployed within the same Azure virtual network."
   - content: "Are Azure Standard HDD storage-based managed disks supported for SAP workloads?"
@@ -90,7 +90,7 @@ quiz:
       explanation: "That’s incorrect. Only some Azure VM series can take advantage of Azure Write Accelerator."
     - content: "E-series and M-series VMs"
       isCorrect: false
-      explanation: "That’s incorrect. Azure E-series VMs cannot take advantage of Azure Write Accelerator."
+      explanation: "That’s incorrect. Azure E-series VMs can't take advantage of Azure Write Accelerator."
     - content: "M-series VMs only"
       isCorrect: true
       explanation: "That’s correct. Azure Write Accelerator is a functionality that is available for Azure M-Series VMs exclusively."

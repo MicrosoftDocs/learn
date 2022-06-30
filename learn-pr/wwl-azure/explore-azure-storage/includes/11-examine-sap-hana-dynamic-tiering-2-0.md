@@ -1,6 +1,6 @@
 SAP HANA Dynamic Tiering 2.0 (DT 2.0) offers the ability to offload less frequently accessed data from memory into extended storage. SAP HANA Dynamic Tiering 2.0 isn't supported by SAP BW or S/4HANA. Its primary use cases consist of native HANA applications.
 
-There is a set of mandatory requirements that must be followed to ensure supportability for DT 2.0 on Azure VMs:
+There's a set of mandatory requirements that must be followed to ensure supportability for DT 2.0 on Azure VMs:
 
 - DT 2.0 must be installed on a dedicated Azure VM. It may not run on the same VM where SAP HANA runs.
 - SAP HANA and DT 2.0 VMs must be deployed within the same Azure VNet.
@@ -57,7 +57,7 @@ Given the basic premise of DT 2.0, which is to offload "warm" data to save costs
   :::column-end:::
 :::row-end:::
 
-However, there is no strict rule about the possible combinations. The choice is dependent on the specific customer workload and all combinations of SAP HANA-certified M-series VMs with supported DT 2.0 VMs (M64-32ms and E32sv3) are supported.
+However, there's no strict rule about the possible combinations. The choice is dependent on the specific customer workload and all combinations of SAP HANA-certified M-series VMs with supported DT 2.0 VMs (M64-32ms and E32sv3) are supported.
 
 Installing DT 2.0 on a dedicated VM requires network throughput between the DT 2.0 VM and the SAP HANA VM of 10 Gb minimum. Therefore, it's mandatory to place all VMs within the same Azure VNet and enable Azure accelerated networking.
 
@@ -131,4 +131,4 @@ Depending on size requirements, there are different options to reach the maximum
 
 Based on heuristics, the recommended size of the log volume is 15% of the data volume size. The creation of the log volume can be accomplished by using different Azure disk types depending on cost and throughput requirements. If using the VM type M64-32ms Write Accelerator should be enabled.
 
-As with for SAP HANA scale-out, the **/hana/shared** directory must be shared between the SAP HANA VM and the DT 2.0 VM. The recommendation is to use the same architecture as for SAP HANA scale-out, which relies on dedicated VMs acting as a highly available NFS server. The identical design can be used in order to provide a shared backup volume. It is up to the customer to decide if HA is necessary or if it is enough to use a dedicated VM with enough storage capacity to act as a backup server.
+As with for SAP HANA scale-out, the **/hana/shared** directory must be shared between the SAP HANA VM and the DT 2.0 VM. The recommendation is to use the same architecture as for SAP HANA scale-out, which relies on dedicated VMs acting as a highly available NFS server. The identical design can be used in order to provide a shared backup volume. It's up to the customer to decide if HA is necessary or if it's enough to use a dedicated VM with enough storage capacity to act as a backup server.
