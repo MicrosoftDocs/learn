@@ -105,7 +105,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
 
 1. Select the connection with the description of *appService private connection.* and select **Approve**.
 
-    :::image type="content" source="./../media/5-app-service-private-endpoints.png" alt-text="Screenshot of private endpoint connection approval list for App service.":::
+    :::image type="content" source="./../media/5-approve-app-service-private-endpoint.png" alt-text="Screenshot of private endpoint connection approval list for App service.":::
 
 ### Add routes
 
