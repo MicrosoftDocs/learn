@@ -67,7 +67,7 @@ The deployment time may vary depending on the volume of content that you're depl
 
 ### Azure DevOps
 
-- You're automatically authorized to Azure DevOps using your current Azure credentials. To ensure valid connectivity, verify that you've authorized to the same Azure DevOps account that you're connecting to from Microsoft Sentinel, or use an InPrivate browser window to create your connection.
+- You're automatically authorized to Azure DevOps using your current Azure credentials. To ensure valid connectivity, verify that you've authorized to the same Azure DevOps organization that you're connecting to from Microsoft Sentinel, or use an InPrivate browser window to create your connection.
 
 - In Microsoft Sentinel, from the dropdown lists that appear, select your Organization, Project, Repository, Branch, and Content Types.
 
