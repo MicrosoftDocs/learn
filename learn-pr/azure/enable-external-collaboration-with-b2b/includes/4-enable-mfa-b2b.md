@@ -37,7 +37,7 @@ In our health records application example, you create a Conditional Access polic
 When configuring this policy's **Assignments**, you specify **All guest and external users**.
 For **Access controls**, you select both **Grant access** and **Require multifactor authentication**.
 
-   [ ![Screenshot of configuring the Conditional Access policy for the application.](../media/4-create-conditional-access-policy.png) ](../media/4-create-conditional-access-policy.png#lightbox)
+   [ ![Graphic showing the Conditional Access policy configuration for an application.](../media/4-create-conditional-access-policy.png) ](../media/4-create-conditional-access-policy.png#lightbox)
 
 After you configure your policy and enable it, you can test it by using the **What If** tool in the Azure portal.
 

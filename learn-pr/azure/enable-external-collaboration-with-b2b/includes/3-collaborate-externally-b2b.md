@@ -15,14 +15,14 @@ First, make sure that your External Identities settings and external collaborati
 1. Select **Cross-tenant access settings**. These settings manage whether you can use B2B collaboration with other Azure AD organizations.
 1. Select **Default settings**. Because some of the clinicians have Azure AD accounts with their own clinics, you'll want to make sure that Azure AD organizations are able to use B2B collaboration to access your app. Under **Inbound access settings**, on the **B2B collaboration** rows, look for a status of **All allowed**:
 
-    [ ![Screenshot of cross-tenant access default settings.](../media/3-cross-tenant-access-defaults.png) ](../media/3-cross-tenant-access-defaults.png#lightbox)
+   [ ![Screenshot of cross-tenant access default settings.](../media/3-cross-tenant-access-defaults.png) ](../media/3-cross-tenant-access-defaults.png#lightbox)
 
 1. Now, select **External collaboration settings** in the left menu. These settings determine other B2B collaboration capabilities and restrictions. Again, you'll want to make sure that you're allowed to invite external users, and that the clinicians' domains are allowed for collaboration. Check the following sections:
 
    - Under **Guest invite settings**, make sure any option other than **No on in the organization can invite guest users including admins (most restrictive)** is selected.
    - Under **Collaboration restrictions**, make sure the domains for the clinicians you want to invite are allowed.
 
-    [ ![Screenshot of External collaboration settings.](../media/3-external-collaboration-settings.png) ](../media/3-external-collaboration-settings.png#lightbox)
+   [ ![Screenshot of External collaboration settings.](../media/3-external-collaboration-settings.png) ](../media/3-external-collaboration-settings.png#lightbox)
 
 ## Send a B2B collaboration invitation to an external user
 
@@ -33,17 +33,17 @@ To add guest users, you can invite them using a form that lets you enter the gue
 1. Select **Users** in the left menu.
 1. Select **New user**, and then select **Invite external user**.
 
-    ![Screenshot of invitation email.](../media/3-invite-external-user.png)
+   ![Screenshot of invitation email.](../media/3-invite-external-user.png)
 
 1. Fill in the form, using the external clinician's email address in the **Email address** box. It's best to add a **Personal message** that helps the clinician recognize who's sending the invitation. This way they can make an informed decision about its authenticity and whether they should accept the invitation.
 
-    ![Screenshot of the invitation form.](../media/3-invitation-page.png)
+   ![Screenshot of the invitation form.](../media/3-invitation-page.png)
 
 1. Select **Invite**.
 
 1. After you send the invitation, the user is listed in your directory as a **User type** of **Guest**.
 
-    [ ![Screenshot of a guest user in the directory.](../media/3-directory-guest-user.png) ](../media/3-directory-guest-user.png#lightbox)
+   [ ![Screenshot of a guest user in the directory.](../media/3-directory-guest-user.png) ](../media/3-directory-guest-user.png#lightbox)
 
 1. Now you can assign your health records application to the clinician's guest account. In the upper left of the page, select **Home**.
 1. Search for and select the **Azure Active Directory** service.
