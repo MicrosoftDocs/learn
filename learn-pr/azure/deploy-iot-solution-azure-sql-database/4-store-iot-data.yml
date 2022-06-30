@@ -9,7 +9,7 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 10
 quiz:
   questions:
   - content: "What is **not** a piece of the shock absorber pattern?"
