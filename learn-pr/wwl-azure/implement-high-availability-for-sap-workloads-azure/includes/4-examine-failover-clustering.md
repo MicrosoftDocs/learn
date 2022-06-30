@@ -10,31 +10,31 @@ The SBD requires at least one additional virtual machine that acts as an iSCSI t
 
 ## High availability set up in SUSE using the STONITH
 
- -  Operating System: **SLES 12 SP1 for SAP**
- -  HANA Large Instances: **2xS192 (4 sockets, 2 TB)**
- -  HANA Version: **HANA 2.0 SP1**
- -  Server Names: **sapprdhdb95** (node1) and **sapprdhdb96** (node2)
- -  STONITH Device: **iSCSI based STONITH device**
- -  NTP set up on one of the HANA Large Instance nodes
- -  HANA Large Instance: When you set up HANA Large Instances with HSR, you can request the Microsoft Service Management team to set up STONITH.
+- Operating System: **SLES 12 SP1 for SAP**
+- HANA Large Instances: **2xS192 (4 sockets, 2 TB)**
+- HANA Version: **HANA 2.0 SP1**
+- Server Names: **sapprdhdb95** (node1) and **sapprdhdb96** (node2)
+- STONITH Device: **iSCSI based STONITH device**
+- NTP set up on one of the HANA Large Instance nodes
+- HANA Large Instance: When you set up HANA Large Instances with HSR, you can request the Microsoft Service Management team to set up STONITH.
 
 To set up the end-to-end HA using STONITH, the following steps need to be followed:
 
-1.  Identify the SBD. For existing customers, the Microsoft Service Management team provides the SDB device name.
-2.  Initialize the SBD on both the nodes.
-3.  Configure the cluster.
-    
-     -  Package installation
-     -  Set up the cluster - `ha-cluster-init` command, or use the yast2 wizard, **only on the Primary node**.
-4.  Set up the Softdog Watchdog on **both** nodes.
-5.  Join the node to the cluster.
-6.  Validate the cluster.
-7.  Configure the cluster properties and resources:
-    
-     -  Cluster bootstrap
-     -  STONITH Device
-     -  The Virtual IP Address
-8.  Test the failover process.
+1. Identify the SBD. For existing customers, the Microsoft Service Management team provides the SDB device name.
+2. Initialize the SBD on both the nodes.
+3. Configure the cluster.
+
+     - Package installation
+     - Set up the cluster - `ha-cluster-init` command, or use the yast2 wizard, **only on the Primary node**.
+4. Set up the Softdog Watchdog on **both** nodes.
+5. Join the node to the cluster.
+6. Validate the cluster.
+7. Configure the cluster properties and resources:
+
+     - Cluster bootstrap
+     - STONITH Device
+     - The Virtual IP Address
+8. Test the failover process.
 
 For a detailed step-by-step guide, refer to [High availability set up in SUSE using the STONITH device](/azure/virtual-machines/workloads/sap/ha-setup-with-stonith).
 
