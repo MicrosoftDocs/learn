@@ -12,7 +12,7 @@ Azure Arc provides a centralized, unified way to:
 
 The following diagram shows how Azure Arc extends Azure Resource Manager to multi-cloud and hybrid environments.
 
-:::image type="content" source="../media/azure-arc-d5977e44.png" alt-text="Diagram showing how Azure Arc is used by Azure Resource Manager to manage on-premises, multi-cloud, and edge resource.":::
+:::image type="content" source="../media/azure-arc-d5977e44.png" alt-text="Diagram showing how Azure Arc is used by Azure Resource Manager to manage on-premises, multi-cloud, and edge resource." ligthbox="../media/azure-arc-d5977e44.png":::
 
 
 ## What can Azure Arc do outside of Azure?
