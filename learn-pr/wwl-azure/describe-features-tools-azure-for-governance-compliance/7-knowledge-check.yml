@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-features-tools-azure-for-governance-compliance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many parameters does an Azure Blueprint Artifact need to be valid?"
+    choices:
+    - content: "0"
+      isCorrect: true
+      explanation: "Correct. It is possible for artifacts to have no additional parameters. An example is the Deploy threat detection on SQL servers policy, which requires no additional configuration."
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. Depending on the scope, an Azure Blueprint Artifact may not have any parameters."
+    - content: "2"
+      isCorrect: false
+      explanation: "Incorrect. Depending on the scope, an Azure Blueprint Artifact may not have any parameters."
+  - content: "How can you prevent non-compliant resources from being created, without having to manually evaluate each resource as it’s created?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "Correct. Azure policy lets you create policies and initiatives (groups of policies) that prevent non-compliant resource from being created."
+    - content: "Azure Blueprints"
+      isCorrect: false
+      explanation: "Incorrect. Azure Blueprints helps you automate the creation of resources, and will ensure resources created with the blueprint are consistent, but won’t prevent an out-of-police resource creation."
+    - content: "Azure Resource Monitor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is the best way to ensure that resource are created based on a set policy or group of policies."
