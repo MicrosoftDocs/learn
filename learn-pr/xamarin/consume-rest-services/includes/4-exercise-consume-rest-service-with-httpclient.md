@@ -28,9 +28,11 @@ Now that you have the REST service hosted, the rest of the work is done on your 
 
 Now that the solution is open, add the Json.NET NuGet package. We use this package to serialize our book into JSON and to deserialize the responses we get from the web service. We'll also check for NuGet package updates.
 
-1. Add the **Json.NET** (named **Newtonsoft.Json**) NuGet package to the **BookClient** project. Also add it to any platform projects you intend to test with, such as iOS or Android. If you're using Visual Studio on Windows and for Visual Studio for Mac, with the solution open, under **BookClient**, right-click **Dependencies** and select **Manage NuGet Packages**.
+1. Add the **Json.NET** (named **Newtonsoft.Json**) NuGet package to the **BookClient** project. If you're using Visual Studio on Windows or Visual Studio for Mac, with the solution open, under **BookClient**, right-click **Dependencies** and select **Manage NuGet Packages**.
 
 1. Check for updates to packages the solution uses. In the **Manage NuGet Packages** dialog, select **Updates** and install the updates that are shown for the solution.
+
+Repeat the steps for any platform projects you intend to test with, such as iOS or Android.
 
 ## Sign in to the service
 
