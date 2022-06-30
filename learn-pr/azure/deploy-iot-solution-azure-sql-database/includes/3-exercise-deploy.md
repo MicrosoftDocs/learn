@@ -48,7 +48,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     # Collect ssh key
-    $sshPublicKey=Read-Host "Please enter your ssh public key you just created" -MaskInput
+    $sshPublicKey = Read-Host "Please enter your ssh public key you just created" -MaskInput
     # Collect password 
     $adminSqlLogin = "cloudadmin"
     $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
