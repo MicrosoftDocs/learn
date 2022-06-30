@@ -10,11 +10,6 @@ Azure Arc provides a centralized, unified way to:
  -  Continue using traditional ITOps while introducing DevOps practices to support new cloud and native patterns in your environment.
  -  Configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions.
 
-The following diagram shows how Azure Arc extends Azure Resource Manager to multi-cloud and hybrid environments.
-
-:::image type="content" source="../media/azure-arc-d5977e44.png" alt-text="Diagram showing how Azure Arc is used by Azure Resource Manager to manage on-premises, multi-cloud, and edge resource." ligthbox="../media/azure-arc-d5977e44.png":::
-
-
 ## What can Azure Arc do outside of Azure?
 
 Currently, Azure Arc allows you to manage the following resource types hosted outside of Azure:
