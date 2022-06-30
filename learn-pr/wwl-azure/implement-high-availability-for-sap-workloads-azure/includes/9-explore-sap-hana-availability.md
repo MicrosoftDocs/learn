@@ -12,8 +12,8 @@ The next few scenarios use SAP HANA system replication. Scenarios without automa
 
 In this scenario, you use SAP HANA system replication to transfer data synchronously to bring RPO down to 0. On the other hand, you have a long enough RTO that you don't need either failover or data preloading into the HANA instance cache. In such a case, you can realize additional benefits by taking the following actions:
 
- -  Run another SAP HANA instance in the second Azure VM. The SAP HANA instance in the second VM will likely use most of its memory. In case of a failover to the second VM, you need to shut down the running SAP HANA instance that has the data fully loaded in the second VM, so that the replicated data can be loaded into the cache of the targeted HANA instance in the second VM.
- -  Use a smaller VM size on the second VM. If a failover occurs, you have an additional step before the manual failover. In this step, you resize the VM to the size of the source VM.
+- Run another SAP HANA instance in the second Azure VM. The SAP HANA instance in the second VM will likely use most of its memory. In case of a failover to the second VM, you need to shut down the running SAP HANA instance that has the data fully loaded in the second VM, so that the replicated data can be loaded into the cache of the targeted HANA instance in the second VM.
+- Use a smaller VM size on the second VM. If a failover occurs, you have an additional step before the manual failover. In this step, you resize the VM to the size of the source VM.
 
 Even if you don't use data preload in the HANA system replication target, you need at least 64 GB of memory. You also need enough memory in addition to 64 GB to keep the rowstore data in the memory of the target instance.
 

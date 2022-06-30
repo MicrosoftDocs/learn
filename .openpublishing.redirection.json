@@ -15124,6 +15124,61 @@
       "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/6-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/7-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/2-understand-security-operations-defender-for-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/3-manage-investigate-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/4-manage-investigate-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/5-auto-remediation-investigations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/6-action-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/7-advanced-hunting.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/8-consult-microsoft-threat-experts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
     }
   ]
 }
