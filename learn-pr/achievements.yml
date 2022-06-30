@@ -1052,3 +1052,8 @@ achievements:
   title: Introduction to Chef and Puppet
   summary: Introduction to Chef and Puppet
   iconUrl: /learn/achievements/6-introduction-to-chef-and-puppet.svg
+- uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
+  type: badge
+  title: Manage alerts and incidents in Microsoft Defender for Endpoint
+  summary: Learn how to investigate incidents and alerts using Microsoft Defender for Endpoints.  Perform advanced hunting and consult with threat experts.
+  iconUrl: /learn/achievements/manage-alerts-and-incidents-in-microsoft-defender-for-endpoints.svg
