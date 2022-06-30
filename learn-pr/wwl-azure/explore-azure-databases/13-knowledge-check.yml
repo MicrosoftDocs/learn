@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Yes. Encryption is automatically enabled, but you can choose to disable it."
       isCorrect: false
-      explanation: "That’s incorrect. Azure Storage encryption is automatically enabled for all storage accounts, including Resource Manager and classic storage accounts, and cannot be disabled."
+      explanation: "That’s incorrect. Azure Storage encryption is automatically enabled for all storage accounts, including Resource Manager and classic storage accounts, and can't be disabled."
     - content: "Yes. Encryption is automatically enabled, and you cannot disable it."
       isCorrect: true
-      explanation: "That’s correct. Azure Storage encryption is automatically enabled for all storage accounts, including Resource Manager and classic storage accounts, and cannot be disabled."
+      explanation: "That’s correct. Azure Storage encryption is automatically enabled for all storage accounts, including Resource Manager and classic storage accounts, and can't be disabled."
     - content: "No. Encryption must be enabled manually."
       isCorrect: false
-      explanation: "That’s incorrect. Azure Storage encryption is automatically enabled for all storage accounts, including Resource Manager and classic storage accounts, and cannot be disabled."
+      explanation: "That’s incorrect. Azure Storage encryption is automatically enabled for all storage accounts, including Resource Manager and classic storage accounts, and can't be disabled."
