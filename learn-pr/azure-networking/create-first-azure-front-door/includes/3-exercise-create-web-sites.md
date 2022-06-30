@@ -18,11 +18,11 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 
     ```azurecli
     az network vnet create \
-      --resource-group $RG \
-      --name vehicleAppVnet \
-      --address-prefixes 10.0.0.0/16 \
-      --subnet-name webServerSubnet \
-      --subnet-prefixes 10.0.1.0/24
+        --resource-group $RG \
+        --name vehicleAppVnet \
+        --address-prefixes 10.0.0.0/16 \
+        --subnet-name webServerSubnet \
+        --subnet-prefixes 10.0.1.0/24
     ```
 
 1. To download the script that creates the virtual machines, run the following command.
@@ -58,38 +58,38 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 
     ```azurecli
     az vm create \
-      --resource-group $RG \
-      --name webServer1 \
-      --image UbuntuLTS \
-      --admin-username azureuser \
-      --generate-ssh-keys \
-      --vnet-name vehicleAppVnet \
-      --subnet webServerSubnet \
-      --public-ip-address "" \
-      --nsg webNSG \
-      --custom-data module-files/scripts/vmconfig.sh 
-      --no-wait
+        --resource-group $RG \
+        --name webServer1 \
+        --image UbuntuLTS \
+        --admin-username azureuser \
+        --generate-ssh-keys \
+        --vnet-name vehicleAppVnet \
+        --subnet webServerSubnet \
+        --public-ip-address "" \
+        --nsg webNSG \
+        --custom-data module-files/scripts/vmconfig.sh \
+        --no-wait
 
     az vm create \
-      --resource-group $RG \
-      --name webServer2 \
-      --image UbuntuLTS \
-      --admin-username azureuser \
-      --generate-ssh-keys \
-      --vnet-name vehicleAppVnet \
-      --subnet webServerSubnet \
-      --public-ip-address "" \
-      --nsg webNSG \
-      --custom-data module-files/scripts/vmconfig.sh
+        --resource-group $RG \
+        --name webServer2 \
+        --image UbuntuLTS \
+        --admin-username azureuser \
+        --generate-ssh-keys \
+        --vnet-name vehicleAppVnet \
+        --subnet webServerSubnet \
+        --public-ip-address "" \
+        --nsg webNSG \
+        --custom-data module-files/scripts/vmconfig.sh
     ```
 
 1. To confirm both virtual machines were created successfully, run the following command.
 
     ```azurecli
     az vm list \
-      --resource-group $RG \
-      --show-details \
-      --output table
+        --resource-group $RG \
+        --show-details \
+        --output table
     ```
 
     You should see output similar to the following. Before continuing, ensure the **PowerState** is **VM running** for both virtual machines.
@@ -106,7 +106,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 1. To create an internal load balancer resource, run the following command.
 
     ```azurecli
-      az network lb create \
+    az network lb create \
         --resource-group $RG \
         --name webServerILB \
         --sku standard \
@@ -119,7 +119,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 1. To create a health probe to check the availability of each VM instance, run the following command.
 
     ```azurecli
-      az network lb probe create \
+    az network lb probe create \
         --resource-group $RG \
         --lb-name webServerILB \
         --name webServerHealthProbe \
@@ -130,7 +130,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 1. To create a load balancing rule to distribute traffic to the web servers, run the following command.
 
     ```azurecli
-      az network lb rule create \
+    az network lb rule create \
         --resource-group $RG \
         --lb-name webServerILB \
         --name myHTTPRule \
@@ -144,7 +144,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
         --enable-tcp-reset true
     ```
 
-1. To add both web servers to the backend pool of the internal load balancer, run the following command.
+1. To add both web servers to the backend pool of the internal load balancer, run the following commands.
 
     ```azurecli
     az network nic ip-config address-pool add \
@@ -166,7 +166,7 @@ In this exercise, you'll create a pair of virtual machines behind an internal lo
 
 The private link service is required to establish private communication between Front Door and the origin resources. A private endpoint is what Front Door will establish a connection with to achieve an internal connection over the Microsoft network.
 
-1. To create a private link service and associate it with the internal load balancer, run the following command. The first command disables private link network policy on the subnet to allow the private link service to be created.
+1. To create a private link service and associate it with the internal load balancer, run the following commands. The first command disables private link network policy on the subnet to allow the private link service to be created.
 
     ```azurecli
     az network vnet subnet update \
@@ -184,7 +184,7 @@ The private link service is required to establish private communication between 
         --lb-frontend-ip-configs webServerIP
     ```
 
-1. To create the private endpoint in a virtual network, run the following command. Requests to establish connectivity to this private endpoint is automatically approved.
+1. To create the private endpoint in a virtual network, run the following commands. Requests to establish connectivity to this private endpoint is automatically approved.
 
     ```azurecli
     export resourceid=$(az network private-link-service show \
