@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: What is one of the **External Collaboration settings** you should review to make sure B2B collaboration is enabled?
     choices:
-    - content: Check your **Collaboration restrictions** to make sure that if **Deny invitations to the specified domains** is selected, the domains you want to invite are *not* in the list.
+    - content: Make sure that the domains you want to invite are *not* listed under **Deny invitations to the specified domains**..
       isCorrect: True
       explanation: Correct. This setting will block B2B collaboration with any domain that's listed below it. If this setting is selected, you'll want to make sure the domain you want to collaborate with hasn't been added to the list.
-    - content: Check your **Collaboration restrictions** to make sure **Enable global B2B collaboration** is selected.
+    - content: Make sure **Enable global B2B collaboration** is selected.
       isCorrect: false
       explanation: Try again. **Enable global B2B collaboration** isn't one of the available settings in Azure AD.
-    - content: Check your **Guest invite settings** to make sure that **No one in the organization can invite guest users including admins (most restrictive)** is selected.
+    - content: Make sure **No one in the organization can invite guest users including admins (most restrictive)** is selected.
       isCorrect: false
       explanation: Try again. This setting will block everyone in your organization, including admins, from sending B2B collaboration invitations to external users.
   - content: Which of the following are valid categories for multi-factor authentication?

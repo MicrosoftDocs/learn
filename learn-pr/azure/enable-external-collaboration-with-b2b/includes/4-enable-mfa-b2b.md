@@ -3,7 +3,7 @@ It's important for your organization to secure your health records application a
 
 ## Adding protection through multi-factor authentication
 
-Multi-factor authentication adds an extra layer of security to your application. You can enforce multi-factor authentication by adding a new Conditional Access policy to your application's Azure AD settings in the portal. Then you can select the users that should be affected by the policy (guests and external users in our case). Then, even if a B2B collaboration user authenticates through their identity provider, they'll still need to meet another authentication challenge before they can access your application.
+Multi-factor authentication adds an extra layer of security to your application. You can enforce multi-factor authentication by adding a new Conditional Access policy to your application's Azure AD settings in the portal. Then you can select the users that should be affected by the policy (in this case, guests and external users). Then, even if a B2B collaboration user authenticates through their identity provider, they'll still need to meet another authentication challenge before they can access your application.
 
 Multi-factor authentication asks the user to complete challenges that can be put into three general categories:
 
@@ -23,25 +23,26 @@ A secret password or answer to a security question should be something that only
 
 ## Creating Conditional Access policies
 
-You configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal and applying it to your application. To create a Conditional Access policy, you must be either a Conditional Access administrator or a security administrator.
+You configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal and assigning it to your application. To create a Conditional Access policy, you must be either a Conditional Access administrator or a security administrator.
 
 Conditional Access policies have two key parts:
 
-- **Assignments** - specified users or groups, applications, or conditions the policy applies to
-- **Access controls** – if the specified assignments are met, whether to block access or grant access with or without multi-factor authentication
+- **Assignments**, which specify the users or groups, applications, and conditions the policy applies to.
+- **Access controls**, which determine whether to block access or grant access, with or without multi-factor authentication, if the specified assignments are met.
 
-In our health records application example, you create a Conditional Access policy specifically for your application:
-- When configuring this policy's **Assignments**, you specify **All guest and external users**. 
-- For **Access controls**, you select both **Grant access** and **Require multifactor authentication**.
+In our health records application example, you create a Conditional Access policy specifically for your application. In the Azure portal, you navigate to the application's properties (**Enterprise applications** > *your application*), and select the **Security** > **Conditional Access** > **New policy** option to create a policy for guest and external users.
 
-![Screenshot of configuring a Conditional Access policy.](../media/4-create-conditional-access-policy.png)
+   [ ![Graphic showing navigation to Conditional Access options for an application.](../media/4-app-new-policy.png) ](../media/4-app-new-policy.png#lightbox)
 
-When your policy is configured and enabled, you test it by using the **What If** tool in the Azure portal. 
+When configuring this policy's **Assignments**, you specify **All guest and external users**.
+For **Access controls**, you select both **Grant access** and **Require multifactor authentication**.
+
+   [ ![Screenshot of configuring the Conditional Access policy for the application.](../media/4-create-conditional-access-policy.png) ](../media/4-create-conditional-access-policy.png#lightbox)
+
+After you configure your policy and enable it, you can test it by using the **What If** tool in the Azure portal.
 
 ![Screenshot of the What If tool test.](../media/4-what-if.png)
 
 This tool helps simulate a user signing in, and shows you which policies are applied, based on your test simulation. If successful, the test shows your policy in the list that will apply, based on your simulation.
 
 ![Screenshot of the What If tool result.](../media/4-what-if-result.png)
-
-You then do a final test by attempting to sign in as the user for the application. Test the Conditional Access policy by verifying whether multi-factor authentication is enforced correctly. If you're happy with the configuration, you then enable the policy.
