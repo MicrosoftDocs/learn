@@ -105,7 +105,7 @@ The "reasonableness" or "usefulness" of an anomaly may depend on the conditions 
 ### Tune anomaly rules
 While anomaly rules are engineered for maximum effectiveness out of the box, every situation is unique, and sometimes anomaly rules need to be tuned.
 
-Since you can't edit an original active rule, you must first duplicate an active anomaly rule and then customize the copy.
+Since you can't edit an original active rule, you must first duplicate an active anomaly rule, and then customize the copy.
 
 The original anomaly rule will keep running until you either disable or delete it.
 
