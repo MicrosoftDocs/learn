@@ -38,7 +38,7 @@ In this exercise, you'll:
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
 
-1. In the **Clone to your computer** section, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open in Visual Studio Code**.
+1. In the **Clone to your computer** section, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
     :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot showing repository settings with the Clone in VS Code button highlighted.":::
 
