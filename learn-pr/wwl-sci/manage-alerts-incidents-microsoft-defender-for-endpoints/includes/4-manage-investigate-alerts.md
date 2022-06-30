@@ -1,12 +1,12 @@
 You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device.  Selecting an alert in either of those places brings up the Alert management pane.
 
-:::image type="content" source="../media/alert-queue.png" alt-text="Alert Queue":::
+:::image type="content" source="../media/alert-queue.png" alt-text="Screenshot of the Microsoft 365 Defender Alert Queue.":::
 
 ## Alert management
 
 You can view and set metadata about the Alert preview or Alert details page.
 
-:::image type="content" source="../media/alert-manage.png" alt-text="Alert page":::
+:::image type="content" source="../media/alert-manage.png" alt-text="Screenshot of the Microsoft 365 Defender Alert meta data page.":::
 
 The metadata fields include and actions include:
 
@@ -16,7 +16,7 @@ The metadata fields include and actions include:
 
 - **Medium (Orange) -** Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
 
-- **Low (Yellow)** - Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc. often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
+- **Low (Yellow)** - Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc. often don't indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
 
 - **Informational (Grey)** - Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
@@ -26,7 +26,7 @@ The Defender for Endpoint alert severity represents the severity of the detected
 
 So, for example:
 
-- The severity of a Defender for Endpoint alert about a Microsoft Defender AV detected threat that was prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
+- The severity of a Defender for Endpoint alert about a Microsoft Defender AV detected threat that was prevented and didn't infect the device is categorized as "Informational" because there was no actual damage.
 
 - An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender AV, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
 
@@ -76,7 +76,7 @@ You can create a new incident from the alert or link to an existing incident.
 
 ### Assign alerts
 
-If an alert is not yet assigned, you can select Assign to me to assign the alert to yourself.
+If an alert isn't yet assigned, you can select Assign to me to assign the alert to yourself.
 
 ### Suppress alerts
 
@@ -84,7 +84,7 @@ There might be scenarios where you need to suppress alerts from appearing in Mic
 
 Suppression rules can be created from an existing alert. They can be disabled and re-enabled if needed.
 
-When a suppression rule is created, it will take effect from the point when the rule is created. The rule will not affect existing alerts already in the queue prior to the rule creation. The rule will only be applied to alerts that satisfy the conditions set after the rule is created.
+When a suppression rule is created, it will take effect from the point when the rule is created. The rule won't affect existing alerts already in the queue prior to the rule creation. The rule will only be applied to alerts that satisfy the conditions set after the rule is created.
 
 There are two contexts for a suppression rule that you can choose from:
 
@@ -104,11 +104,11 @@ Alternatively, the team leader might assign the alert to the Resolved queue if t
 
 ### Alert classification
 
-You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it is used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
+You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it's used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
 
 ### Add comments and view the history of an alert
 
-You can add comments and view historical events about an alert to see previous changes made to the alert.  Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.  Added comments instantly appear on the pane.
+You can add comments and view historical events about an alert to see previous changes made to the alert.  Whenever a change or comment is made to an alert, it's recorded in the Comments and history section.  Added comments instantly appear on the pane.
 
 ## Alert investigation
 
@@ -136,5 +136,5 @@ Once you're done investigating, go back to the alert you started with, mark the 
 
 If you classify it as a true alert, you can also select a determination.
 
-If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
+If you're experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 

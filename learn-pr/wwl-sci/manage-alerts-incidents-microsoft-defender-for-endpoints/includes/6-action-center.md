@@ -14,7 +14,7 @@ The action center consists of two main tabs: Pending actions and History.
 
 Select Automated Investigations, then Action center.
 
-:::image type="content" source="../media/action-center.png" alt-text="action center detail":::
+:::image type="content" source="../media/action-center.png" alt-text="Screenshot of the Microsoft 365 Defender action center detail.":::
 
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be Malicious, Suspicious, or No threats found depending on:
 
@@ -46,7 +46,7 @@ To review completed actions:
 
 ### Undo completed actions
 
-If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. You can undo any of the following actions:
+If you’ve determined that a device or a file isn't a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. You can undo any of the following actions:
 
 - Source
 
