@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cost-management-azure.exercise-compare-workload-costs-use-total-cost-ownership-calculator
+title: Exercise - Compare workload costs using the TCO calculator
+metadata:
+  title: Exercise - Compare workload costs using the TCO calculator
+  description: "Exercise - Compare workload costs using the TCO calculator"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.md)]

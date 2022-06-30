@@ -4,9 +4,9 @@ In the scenarios deployed so far, customers use the unit in the DR region to run
 
 You then need to order a second set of disk volumes. The target disk volumes are the same size as the production volumes for the production instance in the disaster recovery units. These disk volumes are associated with the HANA Large Instance server unit in the disaster recovery (DR) site. The following volumes are replicated from the production region to the DR site:
 
- -  **/hana/data**
- -  **/hana/logbackups**
- -  **/hana/shared** (includes **/usr/sap**)
+- **/hana/data**
+- **/hana/logbackups**
+- **/hana/shared** (includes **/usr/sap**)
 
 The **hana/log** volume is not replicated because the SAP HANA transaction log is not needed in the way that the restore from those volumes is done.
 

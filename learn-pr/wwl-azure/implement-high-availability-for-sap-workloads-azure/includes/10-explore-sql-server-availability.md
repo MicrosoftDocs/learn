@@ -10,9 +10,9 @@ Another method that provides high availability is SQL Server Log Shipping. If th
 
 The SQL Server log shipping functionality is not commonly used in Azure to achieve high availability within the same Azure region. However, there are some Azure-based scenarios where SAP customers successfully leverage log shipping:
 
- -  Disaster Recovery scenarios between Azure regions.
- -  Disaster Recovery configuration between on-premises and Azure.
- -  Migration from on-premises to Azure. In those cases, log shipping is used to synchronize the new DBMS deployment in Azure with the existing production system on-premises. At the time of migration, production is shut down and the latest transaction log backups are transferred to the Azure DBMS deployment. Then the Azure DBMS deployment is configured as the production instance.
+- Disaster Recovery scenarios between Azure regions.
+- Disaster Recovery configuration between on-premises and Azure.
+- Migration from on-premises to Azure. In those cases, log shipping is used to synchronize the new DBMS deployment in Azure with the existing production system on-premises. At the time of migration, production is shut down and the latest transaction log backups are transferred to the Azure DBMS deployment. Then the Azure DBMS deployment is configured as the production instance.
 
 ## Database Mirroring
 
@@ -28,23 +28,23 @@ Always On is supported for SAP on-premises (see [SAP Note \#1772688](https://lau
 
 Additional considerations using an Availability Group Listener include:
 
- -  Using an Availability Group Listener is only possible with Windows Server 2012 or higher as guest OS of the VM. For Windows Server 2012 you need to make sure to apply the patch available at: [KB 2854082: Update enables SQL Server Availability Group Listeners on Windows Server 2008 R2 and Windows Server 2012-based Microsoft Azure virtual machines](https://support.microsoft.com/kb/2854082).
- -  For Windows Server 2008 R2, Always On needs to be used in the same manner as Database Mirroring by specifying a failover partner in the connections string (done through the SAP default.pfl parameter dbs/mss/server - see [SAP Note \#965908](https://launchpad.support.sap.com/#/notes/965908)).
- -  When using an Availability Group Listener, the Database VMs need to be connected to a dedicated load balancer. In order to avoid the scenario in which Azure assigns new IP addresses in cases where both VMs incidentally are shut down, one should assign static IP addresses to the network interfaces of those VMs in the Always On configuration.
- -  There are special steps required when building the WSFC cluster configuration where the cluster needs a special IP address assigned because Azure with its current functionality would assign the cluster name the same IP address as the node the cluster is created on. This means a manual step must be performed to assign a different IP address to the cluster.
- -  The Availability Group Listener is going to be created in Azure with TCP/IP endpoints, which are assigned to the VMs running the primary and secondary replicas of the Availability group.
+- Using an Availability Group Listener is only possible with Windows Server 2012 or higher as guest OS of the VM. For Windows Server 2012 you need to make sure to apply the patch available at: [KB 2854082: Update enables SQL Server Availability Group Listeners on Windows Server 2008 R2 and Windows Server 2012-based Microsoft Azure virtual machines](https://support.microsoft.com/kb/2854082).
+- For Windows Server 2008 R2, Always On needs to be used in the same manner as Database Mirroring by specifying a failover partner in the connections string (done through the SAP default.pfl parameter dbs/mss/server - see [SAP Note \#965908](https://launchpad.support.sap.com/#/notes/965908)).
+- When using an Availability Group Listener, the Database VMs need to be connected to a dedicated load balancer. In order to avoid the scenario in which Azure assigns new IP addresses in cases where both VMs incidentally are shut down, one should assign static IP addresses to the network interfaces of those VMs in the Always On configuration.
+- There are special steps required when building the WSFC cluster configuration where the cluster needs a special IP address assigned because Azure with its current functionality would assign the cluster name the same IP address as the node the cluster is created on. This means a manual step must be performed to assign a different IP address to the cluster.
+- The Availability Group Listener is going to be created in Azure with TCP/IP endpoints, which are assigned to the VMs running the primary and secondary replicas of the Availability group.
 
 Detailed documentation on deploying Always On with SQL Server in Azure VMs is available at:
 
- -  [Always On availability group on SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview)
- -  [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
+- [Always On availability group on SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview)
+- [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
 
 > [!NOTE]
 > If you are configuring the Azure load balancer for the virtual IP address of the Availability Group listener, make sure that the DirectServerReturn is configured. Configuring this option will reduce the network round trip latency between the SAP application layer and the DBMS layer.
 
 SQL Server Always On is the most commonly used high availability and disaster recovery functionality in Azure for Windows-based SAP deployments. Most customers use Always On for high availability within a single Azure region. If the deployment is restricted to two nodes only, you have two choices for connectivity:
 
- -  Using the Availability Group Listener. With the Availability Group Listener, you are required to deploy an Azure load balancer. This is usually the default method of deployment. SAP applications need to be configured to connect to the Availability Group listener rather than to a single node.
- -  Using the connectivity parameters of SQL Server Database Mirroring. In this case, you need to configure connectivity of the SAP applications by specifying both node names. Exact details of such configuration are documented in [SAP Note \#965908](https://launchpad.support.sap.com/#/notes/965908). By using this option, you eliminate the need for an Availability Group listener and, consequently, an Azure load balancer. As a result, the network latency between the SAP application layer and the DBMS layer is lower since the incoming traffic to the SQL Server instance is not routed through the Azure load balancer. But keep in mind that this option only works if you restrict your Availability Group to span two instances.
+- Using the Availability Group Listener. With the Availability Group Listener, you are required to deploy an Azure load balancer. This is usually the default method of deployment. SAP applications need to be configured to connect to the Availability Group listener rather than to a single node.
+- Using the connectivity parameters of SQL Server Database Mirroring. In this case, you need to configure connectivity of the SAP applications by specifying both node names. Exact details of such configuration are documented in [SAP Note \#965908](https://launchpad.support.sap.com/#/notes/965908). By using this option, you eliminate the need for an Availability Group listener and, consequently, an Azure load balancer. As a result, the network latency between the SAP application layer and the DBMS layer is lower since the incoming traffic to the SQL Server instance is not routed through the Azure load balancer. But keep in mind that this option only works if you restrict your Availability Group to span two instances.
 
 Quite a few customers are additionally applying the SQL Server Always On functionality for disaster recovery between Azure regions. Several customers also use the ability to perform backups from a secondary replica.
