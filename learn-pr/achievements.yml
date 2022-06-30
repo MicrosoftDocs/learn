@@ -1022,3 +1022,33 @@ achievements:
   title: Integrate AKS with pipelines
   summary: Integrate AKS with pipelines
   iconUrl: /learn/achievements/5-integrate-aks-with-pipelines.svg
+- uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.badge
+  type: badge
+  title: Design processes to capture and analyze user feedback
+  summary: Design processes to capture and analyze user feedback
+  iconUrl: /learn/achievements/6-design-processes-to-capture-and-analyze-user-feedback.svg
+- uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.badge
+  type: badge
+  title: Explore SRE and design practices to measure end-user satisfaction
+  summary: Explore SRE and design practices to measure end-user satisfaction
+  iconUrl: /learn/achievements/5-explore-sre-design-practices-measure-end-user-satisfaction.svg
+- uid: learn.wwl.implement-ansible.badge
+  type: badge
+  title: Implement Ansible
+  summary: Implement Ansible
+  iconUrl: /learn/achievements/7-implement-ansible.svg
+- uid: learn.wwl.implement-route-for-mobile-application-crash-report-data.badge
+  type: badge
+  title: Implement route for mobile application crash report data
+  summary: Implement route for mobile application crash report data
+  iconUrl: /learn/achievements/mobile-application-crash-report.svg
+- uid: learn.wwl.implement-terraform.badge
+  type: badge
+  title: Implement Terraform
+  summary: Implement Terraform
+  iconUrl: /learn/achievements/8-implement-terraform.svg
+- uid: learn.wwl.introduction-to-chef-puppet.badge
+  type: badge
+  title: Introduction to Chef and Puppet
+  summary: Introduction to Chef and Puppet
+  iconUrl: /learn/achievements/6-introduction-to-chef-and-puppet.svg
