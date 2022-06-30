@@ -153,7 +153,7 @@ This connection string points to an instance of SQL Server Express LocalDB by de
 
 ```json
 "ConnectionStrings": {
-    "RazorPagesPizzaIdentityDbContextConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True"
+    "RazorPagesPizzaAuthConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True"
 }
 ```
 
