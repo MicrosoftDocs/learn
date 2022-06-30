@@ -41,8 +41,8 @@ _Im_Dns
 ```
 
 The following table lists available unifying parsers:
-| Schema | Unifying parser| 
-| :--- | :--- | 
+| Schema | Unifying parser|
+| :--- | :--- |
 | Authentication | imAuthentication|
 | Dns| _Im_Dns|
 | File Event| imFileEvent|

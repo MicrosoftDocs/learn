@@ -12,9 +12,9 @@ title: Data normalization in Microsoft Sentinel
 summary: By the end of this module, you'll be able to use ASIM parsers to identify threats inside your organization.
 abstract: |
   After completing this module, you will be able to:
-  - Use ASIM Parsers
-  - Create ASIM Parser
-  - Create parameterized KQL functions
+  *   Use ASIM Parsers
+  *   Create ASIM Parser
+  *   Create parameterized KQL functions
 prerequisites: |
   Basic knowledge of Kusto Query Language (KQL).
 iconUrl: /learn/achievements/generic-badge.svg

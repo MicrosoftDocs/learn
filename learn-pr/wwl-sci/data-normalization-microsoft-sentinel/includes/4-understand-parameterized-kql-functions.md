@@ -35,7 +35,7 @@ Then create two parameters:
 Your screen should look like the image below:
 
 
-[ :::image type="content" source="../media/example-function-properties.png#lightbox" alt-text="KQL Function properties.](../media/example-function-properties.png) ":::
+:::image type="content" source="../media/example-function-properties.png#lightbox" alt-text="Screenshot of K Q L Function properties.":::
 
 Create a new query. Then enter:
 
@@ -44,7 +44,7 @@ AzureActivityByCategory("Administrative", todatetime("2021/04/05 5:40:01.032 PM"
 ```
 
 
-[ :::image type="content" source="../media/example-use-function.png#lightbox" alt-text="KQL calling Function.](../media/example-use-function.png) ":::
+:::image type="content" source="../media/example-use-function.png#lightbox" alt-text="Screenshot of the K Q L calling Function.":::
 
 
 
