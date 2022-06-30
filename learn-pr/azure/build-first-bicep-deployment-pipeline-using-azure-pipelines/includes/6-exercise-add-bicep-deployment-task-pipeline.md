@@ -154,7 +154,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of Azure DevOps that shows the pipeline log, with the '1 queue time variable used' item highlighted.":::
 
-   The value that you override for this pipeline's run is shown. The `DeployToyManualsStorageAccount` variable's value is *false* because you overrode the original value.
+   The overridden value for this pipeline run is shown. The `DeployToyManualsStorageAccount` variable's value is *false* because you overrode the original value.
 
 1. Inspect the rest of your pipeline output.
 

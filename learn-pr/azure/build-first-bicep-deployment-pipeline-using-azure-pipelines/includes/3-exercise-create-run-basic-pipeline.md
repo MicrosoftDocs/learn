@@ -82,6 +82,8 @@ Now that you've created your organization, project, and repository, you're ready
 
     :::code language="yaml" source="code/3-pipeline.yml":::
 
+1. Save your changes to the file.
+
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. A **TERMINAL** panel and an **OUTPUT** panel open.
 
 1. To commit and push the *azure-pipelines.yml* file to your Git repository, paste this code in the terminal panel, and then press <kbd>Enter</kbd>.
@@ -128,6 +130,15 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
     Azure Pipelines creates the pipeline and starts a first run.
 
 ## Verify the pipeline run
+
+> [!IMPORTANT]
+> If this is your first time using pipelines in this Azure DevOps organization, you might see an error saying:
+>
+> > *No hosted parallelism has been purchased or granted.*
+>
+> In order to protect against misuse, Azure DevOps requires that new organizations be approved before they can use Microsoft-hosted pipeline agents without a charge.
+>
+> [To request that your Azure DevOps organization be granted access to free pipeline agents, complete this form.](https://aka.ms/azpipelines-parallelism-request)
 
 1. When the pipeline run starts, a page displays information about the run.
 
