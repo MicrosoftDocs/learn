@@ -3,7 +3,7 @@ uid: learn.wwl.perform-threat-hunting-sentinel-with-notebooks
 metadata:
   title: Hunt for threats using notebooks in Microsoft Sentinel
   description: "Hunt for threats using notebooks in Microsoft Sentinel"
-  ms.date: 06/29/2022
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
