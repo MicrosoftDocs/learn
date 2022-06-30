@@ -76,7 +76,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $storageContainer = "iotstoragecontainer$($uniqueID)"
     $networkInterface = "iotnic$($uniqueID)"
     $vNet = "iotvnet$($uniqueID)"
-    $ipAddressName="publicip$($uniqueID)"
+    $ipAddressName = "publicip$($uniqueID)"
     Write-Host "Please note your unique ID for future exercises in this module:"  
     Write-Host $uniqueID
     Write-Host "Your resource group name is:"
