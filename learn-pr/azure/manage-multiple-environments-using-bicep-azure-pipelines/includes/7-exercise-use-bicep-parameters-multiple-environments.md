@@ -189,6 +189,8 @@ Because you're adding more parameters that vary between each environment, you de
 
    Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
 
+1. If you're asked to grant permission to access a resource, select **View** and then select **Permit**.
+
 1. Approve the deployment to the production environment by selecting **Review** > **Approve**.
 
    Wait for the pipeline to finish running.
