@@ -11,9 +11,7 @@ metadata:
 title: 'Microsoft Azure Fundamentals: Describe cloud concepts'
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
-summary: |
-  The Microsoft Azure Fundamentals training is comprised of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance.
-  Microsoft Azure Fundamentals : **Describe cloud concepts** is the first learning path in the series, which explores introductory cloud concepts and prepares you to dive deeper into the Microsoft Azure cloud.
+summary: ""
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
