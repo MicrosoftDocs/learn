@@ -49,7 +49,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the parameters, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="16-43" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="16-44" :::
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
@@ -58,11 +58,11 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the validation job, paste the definition of the deploy job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="45-66" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="46-67" :::
 
 1. Below the deploy job, paste the definition of the smoke test job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="68-81" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="69-82" :::
 
 1. Verify that your *deploy.yml* file now looks like the following example:
 
@@ -80,21 +80,15 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::code language="yaml" source="code/5-workflow.yml" range="10-14" highlight="5" :::
 
-   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct workflow definition file. Also, if you didn't use the name *toy-website-environments* for your repository, ensure you replace the repository name too.
-
 1. Delete everything in the file below the lint job that you just updated.
 
 1. At the bottom of the file, add the following code to deploy to the test environment:
 
    :::code language="yaml" source="code/5-workflow.yml" range="16-24" :::
 
-   Remember to replace *YOUR_GITHUB_USERNAME* with your own GitHub username, and the repository name if you didn't use *toy-website-environments*.
-
 1. Below the code you just added, add the following code to deploy to the production environment:
 
    :::code language="yaml" source="code/5-workflow.yml" range="26-34" :::
-
-   Remember to replace *YOUR_GITHUB_USERNAME* with your own GitHub username, and the repository name if you didn't use *toy-website-environments*.
 
    Now, the workflow runs the lint job once. Then it uses the *deploy.yml* called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
 

@@ -70,7 +70,7 @@ I'm not suggesting we drop our current processes, but I think we can work toward
 
 Let's look at just a couple of areas where we can improve.
 
-**Andy:** We might as well start at the beginning. It takes me a long time to get a label on the code so we can start the new feature. I have to walk around to the developers and ask them to check in what they've so we can build and test. If you can figure out how to speed that up, you'll have my attention.
+**Andy:** We might as well start at the beginning. It takes me a long time to get a label on the code so we can start the new feature. I have to walk around to the developers and ask them to check in what they have so we can build and test. If you can figure out how to speed that up, you'll have my attention.
 
 Also, I noticed that you don't have time in there for the build itself. That takes half a day right now. It would be nice to see that time improve.
 

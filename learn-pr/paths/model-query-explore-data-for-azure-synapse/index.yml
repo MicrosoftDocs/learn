@@ -3,7 +3,7 @@ uid: learn.wwl.model-query-explore-data-for-azure-synapse
 metadata:
   title: Model, query, and explore data in Azure Synapse
   description: Model, query, and explore data in Azure Synapse
-  ms.date: 06/23/2022
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -28,6 +28,6 @@ modules:
 - learn.wwl.introduction-to-azure-synapse-analytics
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 - learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics
-- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 trophy:
   uid: learn.wwl.model-query-explore-data-for-azure-synapse.trophy
