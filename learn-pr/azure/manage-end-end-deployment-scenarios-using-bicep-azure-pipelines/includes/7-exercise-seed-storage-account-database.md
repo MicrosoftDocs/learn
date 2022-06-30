@@ -71,7 +71,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
 1. Add an additional app setting to your App Service app for the database connection string:
 
-   :::code language="bicep" source="code/7-main.bicep" range="78-121" highlight="37-40" :::
+   :::code language="bicep" source="code/7-main.bicep" range="88-131" highlight="37-40" :::
 
 1. At the bottom of the file, add outputs to expose the host name of the Azure SQL logical server and the name of the database:
 
@@ -87,7 +87,7 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. To build the Visual Studio database project, copy the generated DACPAC file to a staging folder, and publish it as a pipeline artifact, add the following steps:
 
-   :::code language="yaml" source="code/7-build.yml" highlight="31-50" :::
+   :::code language="yaml" source="code/7-build.yml" highlight="30-48" :::
 
 1. Save your changes to the file.
 
