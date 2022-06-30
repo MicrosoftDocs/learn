@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement Azure Synapse Link for SQL
-summary: Azure Synapse link for SQL enables low-latency synchronization of operational data in a relational database to Azure Synapse Analytics.
+summary: Azure Synapse Link for SQL enables low-latency synchronization of operational data in a relational database to Azure Synapse Analytics.
 abstract: |
   In this module, you'll learn how to:
   - Understand key concepts and capabilities of Azure Synapse Link for SQL.

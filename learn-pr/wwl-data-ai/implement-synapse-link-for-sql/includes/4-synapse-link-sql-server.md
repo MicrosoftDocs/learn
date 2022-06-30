@@ -2,11 +2,11 @@ Microsoft SQL Server is one of the world's most commonly used relational databas
 
 Azure Synapse Link for SQL Server uses a *link connection* to map one or more tables in an Azure SQL Database instance to tables in a dedicated SQL pool in Azure Synapse Analytics. When the link connection is started, the tables are initialized by copying a .parquet file for each source table to a *landing zone* in Azure Data Lake Storage Gen2; from where the data is imported into tables in the dedicated SQL pool. Subsequently, the change feed process copies all changes as .csv files to the landing zone where they're applied to the target tables.
 
-![A diagram showing tables in a SQL Server database being synchronized to a landing zone Azure Data Lake Storage Gen2 and then imported into  tables in a dedicated SQL pool in Azure Synapse Analytics.](../media/synapse-link-sql-server.png)
+![A diagram showing tables in a SQL Server synchronized to a landing zone and then imported into a dedicated SQL pool in Azure Synapse Analytics.](../media/synapse-link-sql-server.png)
 
 Synchronization between SQL Server (which can be on-premises or in a private network) and Azure Synapse Analytics is achieved through a self-hosted integration runtime. An integration runtime is a software agent that handles secure connectivity when using Azure Data Factory or Azure Synapse Analytics to transfer data across networks. It must be installed on a Microsoft Windows computer with direct access to your SQL Server instance.
 
-> [TIP]
+> [!TIP]
 > For more information about using a self-hosted integration runtime to work with Azure Synapse Analytics, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime?tabs=synapse-analytics&azure-portal=true).
 
 ## Implementing Azure Synapse Link for SQL Server 2022
@@ -18,7 +18,7 @@ To use Azure Synapse Link for SQL Server 2022, you need to create storage for th
 You need to create an Azure Data Lake Storage Gen2 account in your Azure subscription to use as a landing zone. You can't use the default storage account for your Azure Synapse Analytics workspace.
 
 > [!TIP]
-> For more information about provisioning an Azure Data Lake Storage Gen 2 account, see [Create a storage account to use with Azure Data Lake Storage Gen2](/azure/storage/blobs/create-data-lake-storage-account?azure-portal-true).
+> For more information about provisioning an Azure Data Lake Storage Gen2 account, see [Create a storage account to use with Azure Data Lake Storage Gen2](/azure/storage/blobs/create-data-lake-storage-account?azure-portal-true).
 
 ### Create a master key in the SQL Server database
 
