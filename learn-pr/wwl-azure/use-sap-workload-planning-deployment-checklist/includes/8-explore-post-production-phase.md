@@ -2,4 +2,4 @@ This phase includes monitoring, operating, and administrating the system. In mig
 
 1. Monitoring and analyzing Azure resource billing.
 2. Optimizing price/performance ratio of Azure compute and storage resources.
-3. Minimizing cost by stopping/deallocating Azure VMs, which are not actively used.
+3. Minimizing cost by stopping/deallocating Azure VMs, which aren't actively used.

@@ -39,14 +39,14 @@ quiz:
     - content: "Record availability requirements"
       isCorrect: false
       explanation: "That’s incorrect. Recording availability requirements takes place during the non-production phase."
-  - content: "What is the last step that should be carried out when an SAP workload has just reached the Go Live stage of its deployment to Azure, if there are other SAP systems that were not part of the current Go Live phase, but which communicate with the deployed workload?"
+  - content: "What is the last step that should be carried out when an SAP workload has just reached the Go Live stage of its deployment to Azure, if there are other SAP systems that weren't part of the current Go Live phase, but which communicate with the deployed workload?"
     choices:
     - content: "Perform database backups"
       isCorrect: false
-      explanation: "That’s incorrect. For SAP systems that were not part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
+      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
     - content: "Verify that monitoring is operational"
       isCorrect: false
-      explanation: "That’s incorrect. For SAP systems that were not part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
+      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
     - content: "Reset the host name buffer"
       isCorrect: true
-      explanation: "That's correct. For SAP systems that were not part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
+      explanation: "That's correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that you moved into Azure in the current Go Live phase, you need to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances you moved into Azure."
