@@ -5,8 +5,8 @@ metadata:
   title: Use a skillset to define an enrichment pipeline
   description: "Use a skillset to define an enrichment pipeline"
   ms.date: 06/30/2022
-  author: heidisteen
-  ms.author: heidist
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

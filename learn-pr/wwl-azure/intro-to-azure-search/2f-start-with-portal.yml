@@ -5,8 +5,8 @@ metadata:
   title: Create an index in the Azure portal
   description: "Create an index in the Azure portal"
   ms.date: 06/30/2022
-  author: heidisteen
-  ms.author: heidist
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -6,7 +6,7 @@ metadata:
   description: "Exercise-Create an Azure Cognitive Search solution"
   ms.date: 06/30/2022
   author: wwlpublish
-  ms.author: robmcm
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
