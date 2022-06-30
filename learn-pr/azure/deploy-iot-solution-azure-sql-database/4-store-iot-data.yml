@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. You can configure 0-30 named replicas, but there are several extra options for read-scale."
     - content: "34"
       isCorrect: false
-      explanation: "Incorrect. You can configure 0-4 high availability replicas and 0-30 named replicas, but there;s also geo-replication."
+      explanation: "Incorrect. You can configure 0-4 high availability replicas and 0-30 named replicas, but there's also geo-replication."
     - content: "35"
       isCorrect: true
       explanation: "Correct! You can configure 0-4 high availability replicas, 0-30 named replicas, plus one geo-replica. When geo-replication becomes generally available, this number may increase!"   
