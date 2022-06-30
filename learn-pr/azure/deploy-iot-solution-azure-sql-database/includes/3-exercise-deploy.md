@@ -34,7 +34,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the Azure Cloud Shell on the right-hand side of the screen, enter `pwsh` to switch from bash to PowerShell.
 
-1. Run the following commands in Cloud Shell. Be sure to paste in the entire ssh key. Then, enter a **complex password and, at the prompt, enter your local public IP address, which you obtained in a preceding step.
+1. Run the following commands in Cloud Shell. Be sure to paste in the entire ssh key. Then, enter a **complex password** and, at the prompt, enter your local public IP address, which you obtained in a preceding step.
 
     > [!Note]
     > A **complex password** must consist of:
