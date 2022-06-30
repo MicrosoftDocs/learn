@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Create, review, and merge a pull request
   description: Create a pull request for a change to some Bicep code, and then review and merge the pull request.
   ms.date: 02/11/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: repository-hosting-platform
