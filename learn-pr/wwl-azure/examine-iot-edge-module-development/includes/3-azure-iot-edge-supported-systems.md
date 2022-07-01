@@ -14,11 +14,9 @@ Azure IoT Edge modules are implemented as containers, so IoT Edge needs a contai
 Azure IoT Edge runs on most operating systems that can run containers; however, all of these systems are not equally supported. Operating systems are grouped into tiers that represent the level of support users can expect.
 
  -  Tier 1 systems are supported. For tier 1 systems, Microsoft:
-    
      -  Has this operating system in automated tests.
      -  Provides installation packages for them.
  -  Tier 2 systems are compatible with Azure IoT Edge and can be used relatively easily. For tier 2 systems:
-    
      -  Microsoft has done some preliminary testing on the platforms or knows of a partner successfully running Azure IoT Edge on the platform.
      -  Installation packages for other platforms may work on these platforms.
 
