@@ -27,7 +27,6 @@ Once you've queried your data, you can start visualizing it on the line chart. Y
 
  -  **Time editor panel**: By default you data from the last day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an **Interval size** slider that controls the bucket or the interval size used to aggregate the data. :::image type="content" source="../media/m12-l03-iot-central-analyze-time-editor-panel-c6cddfee.png" alt-text="Screenshot that shows how to configure the analytics UI in IoT Central.":::
     
-    
      -  **Inner date range slider tool**: Use the two endpoint controls by dragging them over the time span you want. This inner date range is constrained by the outer date range slider control.
      -  **Outer date range slider control**: Use the endpoint controls to select the outer date range, which will be available for your inner date range control.
      -  **Increase and decrease date range buttons**: Increase or decrease your time span by selecting either button for the interval you want.
@@ -38,7 +37,6 @@ Once you've queried your data, you can start visualizing it on the line chart. Y
         > Interval size is determined dynamically based on the selected time span. Smaller time spans will enable aggregating the data into granular intervals of up to a few seconds.
  -  **Chart Legend**: Chart legend shows the selected telemetry on the chart. You can hover over each item on the legend to bring it into focus on the chart. When using 'Split By', the telemetry is grouped by the respective values of the selected dimension. You can toggle the visibility of each specific telemetry or the whole group by clicking on the group name.
  -  **Y-axis format control**: y-axis mode cycles through the available y-axis view options. This control is available only when different telemetries are being visualized. You can set the y-axis by choosing from one of three modes:
-    
      -  Stacked: A graph for every telemetry is stacked and each of the graphs have their own y-axis. This mode is set as default.
      -  Shared: A graph for every telemetry is plotted against the same y-axis.
      -  Overlap: Use it to stack multiple lines on the same y-axis, with the y-axis data changing based on the selected line.
@@ -49,3 +47,41 @@ Under the ellipsis, there are more chart controls to interact with the data.
  -  **View Data as a Table**: Your results are available in a table format, enabling you to view the specific value for each data point.
  -  **Download as CSV**: Export your results as a comma-separated values (CSV) file. The CSV file contains data for each device. Results are exported by using the interval and timeframe specified.
  -  **Drop a Marker**: The **Drop a Marker** control lets you anchor certain data points on the chart. It's useful when you're trying to compare data for multiple lines across different time periods.
+
+For detailed information about using the IoT Central Data explorer and building analytics queries, see: [https://docs.microsoft.com/azure/iot-central/core/howto-create-analytics](/azure/iot-central/core/howto-create-analytics).
+
+## Transform and export data
+
+In addition to using IoT Central's internal Data explorer tools, you can export your solution data to several different Azure services as well as Webhook endpoints.
+
+IoT Central's Data export feature can be used to continuously export filtered and enriched IoT data from your IoT Central application. Data export pushes changes in near real time to other parts of your cloud solution for warm-path insights, analytics, and storage.
+
+For example, you can:<br>
+
+ -  Continuously export telemetry, property changes, device connectivity, device lifecycle, and device template lifecycle data in JSON format in near real time.<br>
+ -  Filter the data streams to export data that matches custom conditions.
+ -  Enrich the data streams with custom values and property values from the device.
+ -  Transform the data streams to modify their shape and content.
+
+> [!NOTE]
+> To use data export features, you must have the Data export permission.
+
+### Transform data internally
+
+Since IoT devices send data in various formats, you may need to transform your device data before it's exported to other services.
+
+Transformations in an IoT Central data export definition let you manipulate the format and structure of the device data before it's exported to a destination. You can specify a transformation for each destination in an export definition. Each message passes through the transformation to create an output record that's exported to the destination.
+
+Use transformations to restructure JSON payloads, rename fields, filter out fields, and run simple calculations on telemetry values. For example, use a transformation to convert your messages into a tabular format that matches the schema of a destination such as an Azure Data Explorer table.
+
+For detailed information on setting up data transformations, see: [https://docs.microsoft.com/azure/iot-central/core/howto-transform-data-internally](/azure/iot-central/core/howto-transform-data-internally).
+
+### IoT Central data export destinations
+
+The IoT Central data export destination options include Azure Blob Storage, Azure Data Explorer, Azure Events Hubs, Azure Service Bus Queue, Azure Service Bus Topic, and Webhook. For detailed instructions on settng up and managing data exports, see the following reference locations:
+
+ -  Export to Blob Storage: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-blob-storage](/azure/iot-central/core/howto-export-to-blob-storage).
+ -  Export to Service Bus (queue or topic): [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-service-bus](/azure/iot-central/core/howto-export-to-service-bus).
+ -  Export to Event Hubs: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-event-hubs](/azure/iot-central/core/howto-export-to-event-hubs)
+ -  Export to Azure Data Explorer: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-azure-data-explorer](/azure/iot-central/core/howto-export-to-azure-data-explorer)
+ -  Export to webhook: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-webhook](/azure/iot-central/core/howto-export-to-webhook)

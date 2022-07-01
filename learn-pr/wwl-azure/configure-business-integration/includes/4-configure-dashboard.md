@@ -1,15 +1,27 @@
-You can create an application dashboard using either an industry focused template or the Custom application template. If you create your application from one of the industry focused templates, your application will have a pre-defined dashboard to start. If you create your application from the Custom application template, your dashboard will display a blank layout that you can customize yourself.
+In IoT Central, dashboards are used primarily to view and assess the property, telemetry, and state information of devices.
+
+Administrators create a default organization dashboard using either an industry focused application template or the Custom application template when they create the Azure IoT Central application. If your application was created from one of the industry focused templates, your application will have a pre-defined organization dashboard to start. If your application was created from the Custom application template, your default organization dashboard will display a blank layout that you can customize yourself.
+
+As an administrator, you can create more organization dashboards that are associated with a specific organization. An organization dashboard is only visible to users who have access to the organization the dashboard is associated with.
 
 > [!NOTE]
-> Users can create multiple dashboards in addition to the default application dashboard. These dashboards can be personal to the user only, or shared across all users of the application.
+> Only users in a role that has organization dashboard permissions can create, edit, and delete organization dashboards. All users can create personal dashboards, visible only to themselves. Users can switch between organization and personal dashboards.
 
-As an administrator, you can create up to 10 application dashboards that are visible to all application users. Only administrators can create, edit, and delete application-level dashboards.
+In addition to configuring dashboards, IoT Central administrators are often responsible for configuring UI customizations and managing security considerations. Application settings that affect security include settings for users, roles, and organizations (device authentication is normally configured by the solution builder or specified by the device developer). You can find detailed information about administering your IoT Central application in the following resources:
 
-All users can create their own personal dashboards. Users can switch between application dashboards and personal dashboards.
+ -  Customize your IoT Central application UI: [https://docs.microsoft.com/azure/iot-central/core/howto-customize-ui](/azure/iot-central/core/howto-customize-ui)
+ -  Manage users and roles:[ https://docs.microsoft.com/azure/iot-central/core/howto-manage-users-roles](/azure/iot-central/core/howto-manage-users-roles)
+ -  Manage organizations: [https://docs.microsoft.com/azure/iot-central/core/howto-create-organizations](/azure/iot-central/core/howto-create-organizations)
+
+## Create a dashboard
+
+Open your Dashboard page from the left pane of the IoT Central application. To create a new dashboard from scratch, select **+ New dashboard** in the upper-left corner of the page. To create a new dashboard by copying the current dashboard, select **Copy**. In the **Create dashboard** or **Duplicate dashboard** panel, give your dashboard a name and select either **Organization** or **Personal** as the dashboard type. If you're creating an organization dashboard, choose the organization the dashboard is associated with. An organization dashboard and its tiles only show the devices that are visible to the organization and any of its suborganizations.
 
 ## Add tiles to a dashboard
 
-Open your Dashboard page from the left pane of the IoT Central application. To begin customizing the default dashboard for your application, select **Edit** at the top-left of the Dashboard page. Selecting **Edit** opens the **Edit dashboard** panel, which can be used to add and remove tiles in order to customize the dashboard. Selecting either **New dashboard** or **Copy** will also place the dashboard in edit mode.
+If you're in a role with the appropriate permissions, you can customize an organization dashboard. All users can customize personal dashboards
+
+Open your Dashboard page from the left pane of the IoT Central application. To begin customizing the dashboard, select **Edit** at the top-left of the Dashboard page. Selecting **Edit** opens the **Edit dashboard** panel, which can be used to add and remove tiles in order to customize the dashboard. Selecting either **New dashboard** or **Copy** will also open a dashboard in edit mode.
 
 You have two initial options when preparing to add a tile to your dashboard, **Start with a visual** and **Start with a device**.
 

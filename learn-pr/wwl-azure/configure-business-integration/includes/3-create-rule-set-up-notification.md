@@ -30,7 +30,6 @@ After you define the condition, you set up the actions to take when the rule fir
 
 1.  Select **+ Email** in the **Actions** section.
 2.  Enter a display name for the action, specify a recipient email address, and provide a message for the body of the email. For example, following along with the temperature scenario from above:
-    
      -  Specify "Temperature warning" as the **Display name** for the action.
      -  Specify an email address that you can monitor during testing in the **To** field.
      -  Specify "You should check the device!" to appear in the body of the email in the **Note** field.
