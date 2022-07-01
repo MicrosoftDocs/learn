@@ -1,4 +1,4 @@
-During the past decade, the Internet of Things (IoT) has been defined in many ways by many people. Here is definition that captures the essence of IoT for developers:
+During the past decade, the Internet of Things (IoT) has been defined in many ways by many people. Here is a definition that captures the essence of IoT for developers:
 
 *The Internet of Things is a network of Internet connected devices that communicate embedded sensor data to the cloud for centralized processing*.
 
@@ -7,9 +7,23 @@ As this simple definition points out, an IoT solution involves two essential com
  -  A device-side (made up of individual devices) that acts as a data source.
  -  A cloud-side that gathers data and provides resources for analyzing and managing that data.
 
-Once your business begins planning an IoT solution you find that both the device-side and the cloud-side involve complex implementations that provide hundreds of required features, and even the communication between the device and cloud can be complex and will require secure communication protocols. Breaking down the solution into subsystems helps to provide clarity.
+Once your business begins planning an IoT solution you find that both the device-side and the cloud-side involve complex implementations that provide hundreds of required features, and even the communication between the device and cloud can be complex and will require secure communication protocols. To help you to meet these challenges, Microsoft has developed the Azure Well-Architected Framework (WAF).
 
-## Core subsystems
+The Azure WAF provides guidance that can be used to establish a high quality, stable, and efficient cloud architecture.
+
+For more information about the Azure WAF, see the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/).
+
+## IoT workload for Azure WAF and the IoT reference architecture
+
+The [IoT workload for the Microsoft Azure Well-Architected Framework](/azure/architecture/framework/iot/iot-overview) and the [Azure IoT reference architecture](/azure/architecture/reference-architectures/iot) can be used to help you design, build, and run your IoT solution according to your requirements and constraints. The services discussed in these resources work together across three components:
+
+ -  Things: The physical objects, or things such as industrial equipment, devices, and sensors, that connect to the cloud persistently or intermittently.<br>
+ -  Insights: The information collected by the things that's analyzed and turned into actionable knowledge either by people or AI.<br>
+ -  Actions: The way people or systems respond to insights and connect them to their business, as well as the systems and tools.<br>
+
+Your architecture decisions should be driven by a set of guiding principles and use a layered approach that identifies the logical elements of an IoT solution.<br>
+
+## Core subsystems of an IoT solution
 
 At its core, an IoT solution architecture consists of the following subsystems:
 
