@@ -14,7 +14,7 @@ Congratulations. You've completed the final module in the _Get started with Azur
 * Saw what DevOps is (and isn't) and created an Azure DevOps organization.
 * Learned how Azure Boards helps teams plan the work that needs to be done. You used the Basic process to set up a basic backlog of tasks you'll work on in upcoming modules.
 * Learned how to optimize sprint workloads across multiple Agile teams.
-* Leaned how to view and track dependencies within and across several Agile teams.
+* Learned how to view and track dependencies within and across several Agile teams.
 
 ## Continue the journey
 

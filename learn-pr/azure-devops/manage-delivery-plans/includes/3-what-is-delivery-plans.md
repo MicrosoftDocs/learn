@@ -12,7 +12,7 @@ Mara created a delivery plan and added the sprints for her team and the game eng
 
 **Mara:** Delivery Plans allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They are shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
 
-**Andy:** This view looks great! Now we know when something we're dependent on won't be available in time. We can even gauge the likelihood of delay based on how much other work and dependencies those teams have taken on. This should help mitigate some of the "schedule chicken" behavior that sometimes go on around here.
+**Andy:** This view looks great! Now we know when something we're dependent on won't be available in time. We can even gauge the likelihood of delay based on how much other work and dependencies those teams have taken on. This should help mitigate some of the "schedule chicken" behavior that sometimes goes on around here.
 
 > [!NOTE]
 > [Schedule chicken](https://wikipedia.org/wiki/Schedule_chicken?azure-portal=true) is when two or more teams are at risk of not meeting deadlines, but none of them want to admit it. Instead, each wait for another to slip their schedule first and then use the other team's slip as a pretext for delaying their own delivery.
