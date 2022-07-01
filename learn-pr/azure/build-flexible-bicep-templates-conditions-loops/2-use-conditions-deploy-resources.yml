@@ -6,8 +6,8 @@ metadata:
   title: Deploy resources conditionally
   description: Learn how to deploy resources conditionally,  based on Boolean values and expressions.
   ms.date: 05/09/2021
-  author: akasnik
-  ms.author: akasnik
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

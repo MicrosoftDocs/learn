@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Initialize a Git repository
   description: Learn how to install Git and initialize a Git repository to store your Bicep code.
   ms.date: 07/08/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
