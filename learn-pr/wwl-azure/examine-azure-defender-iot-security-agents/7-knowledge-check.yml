@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A developer wants to deploy Azure Defender for IoT. Which of the following choices describe the differences between the Built-in and Enhanced deployment options?"
+  - content: "A developer wants to deploy Microsoft Defender for IoT. Which of the following choices describe the differences between the Built-in and Enhanced deployment options?"
     choices:
     - content: "Real-time monitoring is only available with the Enhanced option."
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Enhanced mode uses device agents on your devices to aggregate and analyze raw security events from your devices."
       isCorrect: true
       explanation: "Correct. Enhanced mode uses device agents on your devices to aggregate and analyze raw security events from your devices."
-  - content: "A developer has deployed the Enhanced mode of Azure Defender for IoT, and they are now ready to implement security agents. Which of the following statements describe how security agents are used?"
+  - content: "A developer has deployed the Enhanced mode of Microsoft Defender for IoT, and they are now ready to implement security agents. Which of the following statements describe how security agents are used?"
     choices:
     - content: "Security agents handle raw event collection from the device operating system."
       isCorrect: true

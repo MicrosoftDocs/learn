@@ -1,4 +1,4 @@
-Azure Defender for IoT scans your Azure resources and IoT devices and provides security recommendations to reduce your attack surface. Security recommendations are actionable and aim to aid customers in complying with security best practices.
+Microsoft Defender for IoT scans your Azure resources and IoT devices and provides security recommendations to reduce your attack surface. Security recommendations are actionable and aim to aid customers in complying with security best practices.
 
 ## Recommendations for IoT Hub
 
@@ -37,7 +37,7 @@ Recommendation alerts provide insight and suggestions for actions to improve the
     Medium
   :::column-end:::
   :::column:::
-    Default IP filter policy should be deny.
+    Default IP filter policy should be "deny".
   :::column-end:::
   :::column:::
     IoT Hub
