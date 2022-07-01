@@ -3,7 +3,7 @@ uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot
 metadata:
   title: Examine Azure Security Center and Azure Defender for IoT
   description: "This module introduces you to various Azure services that can be used to monitor and enhance the security of your solution and examines the features and capabilities of Azure Defender for IoT."
-  ms.date: 02/24/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-Azure Defender for IoT continuously analyzes your IoT solution using advanced analytics and threat intelligence to alert you to malicious activity. In addition built-in alerts, you can create custom alerts based on your knowledge of expected behaviors. An alert acts as an indicator of potential compromise, and should be investigated and remediated.
+Microsoft Defender for IoT continuously analyzes your IoT solution using advanced analytics and threat intelligence to alert you to malicious activity. In addition built-in alerts, you can create custom alerts based on your knowledge of expected behaviors. An alert acts as an indicator of potential compromise, and should be investigated and remediated.
 
 The following list of built-in alerts can be triggered on your IoT Hub.
 
@@ -293,10 +293,10 @@ Azure Defender for IoT allows you to define custom alerts based on expected IoT 
     Low
   :::column-end:::
   :::column:::
-    Custom alert - The number of command queue purges that are outside of the allowed range.
+    Custom alert - The number of command-queue purges that are outside of the allowed range.
   :::column-end:::
   :::column:::
-    The number of command queue purges within a specific time window is outside the currently configured and allowable range.
+    The number of command-queue purges within a specific time window is outside the currently configured and allowable range.
   :::column-end:::
 :::row-end:::
 :::row:::
