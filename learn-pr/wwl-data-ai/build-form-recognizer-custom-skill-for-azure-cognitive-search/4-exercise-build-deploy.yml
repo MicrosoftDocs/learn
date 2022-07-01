@@ -4,13 +4,13 @@ title: 'Exercise: Build and deploy a Form Recognizer custom skill'
 metadata:
   title: 'Exercise: Build and deploy a Form Recognizer custom skill'
   description: "Exercise: Build and deploy a Form Recognizer custom skill"
-  ms.date: 06/27/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-build-deploy.md)]
