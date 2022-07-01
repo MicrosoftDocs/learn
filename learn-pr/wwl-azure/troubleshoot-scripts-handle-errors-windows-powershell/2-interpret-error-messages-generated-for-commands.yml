@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.interpret-error-messages-generated-for-commands
+title: Interpret error messages generated for Windows PowerShell commands
+metadata:
+  title: Interpret error messages generated for Windows PowerShell commands
+  description: "Interpret error messages generated for Windows PowerShell commands"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-interpret-error-messages-generated-for-commands.md)]
