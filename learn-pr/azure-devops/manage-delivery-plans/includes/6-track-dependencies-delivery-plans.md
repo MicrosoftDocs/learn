@@ -21,13 +21,13 @@ Dependency issues arise when a predecessor work item is scheduled to finish afte
 
 To view the work items that share in a dependency, click the card with an icon attached. Here, we click the *Update privacy policy* card. 
 
-A link appears that indicates which work item is participating in the dependency. In this case, it highlights that the *Complete community interaction training* work item for the Engine Team. 
+A link appears that indicates which work item is participating in the dependency. In this case, it highlights that the *Complete community interaction training* work item for the Engine Team. The arrow indicates the direction of the dependency, and the black line reinforces that there is no issue.
 
 :::image type="content" source="../media/6-view-dependency-across-teams-no-issues-delivery-plans.png" alt-text="A screenshot showing the dependency line between teams with no issues.":::
 
 To dismiss the dependency line, click the card or anywhere in the view. 
 
-Now, choose a card with an issue. Here we click *Update site branding*. An issue is shown with the link to the *Push beta* item defined for the Engine Team. 
+Now, choose a card with an issue. Here we click *Update site branding*. An issue is shown with the link to the *Push beta* item defined for the Engine Team. The red line indicates there is an issue and the arrow indicates that the *Push beta* item is scheduled to complete after *Update site branding*, which depends on it being completed first. 
 
 :::image type="content" source="../media/6-view-dependency-across-teams-with-issues-delivery-plans.png" alt-text="A screenshot showing the dependency line between teams with issues.":::
 

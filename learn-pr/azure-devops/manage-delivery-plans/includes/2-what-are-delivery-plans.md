@@ -6,6 +6,7 @@ It's important that teams regularly review their delivery plans in order to make
 * Are we sure we can deliver what we have committed to on our current schedule?
 * Are we confident that the teams we depend on will deliver what we need on their current schedule?
 * Are there lulls in our schedule that we could fill with work?
+* Are there issues with dependencies within a team or across teams? 
 
 Delivery plans add value at any point in a project's lifecycle. Since they are dynamically generated based on team backlogs, they're always up-to-date and offer the latest insights.
 
