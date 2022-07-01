@@ -20,7 +20,7 @@ prerequisites: |
   - A single sign-on enabled subscription for the application that you intend to use.
   - Familiarity with URLs and how they are used.
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/enable-single-sign-on.svg
 levels:
 - intermediate
 roles:
