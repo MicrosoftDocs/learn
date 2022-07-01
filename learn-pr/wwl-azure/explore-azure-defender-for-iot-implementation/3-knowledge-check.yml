@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,11 +17,11 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When considering the lab for this module, which of the following choices is an accurate statement?"
+  - content: "When you consider the lab for this module, which of the following choices is an accurate statement?"
     choices:
-    - content: "Azure Defender for IoT was evaluated using only the Built-in features for real-time monitoring of IoT Hub."
+    - content: "Microsoft Defender for IoT was evaluated using only the Built-in features for real-time monitoring of IoT Hub."
       isCorrect: false
-      explanation: "Incorrect. Azure Defender for IoT was implemented using features of the Enhanced mode, such as security agents."
+      explanation: "Incorrect. Microsoft Defender for IoT was implemented using features of the Enhanced mode, such as security agents."
     - content: "The lab installed a security agent and used key vault to securely store the symmetric key information used for authentication."
       isCorrect: false
       explanation: "Incorrect. The lab for this module did install a security agent but did not use key vault to store symmetric key information."
