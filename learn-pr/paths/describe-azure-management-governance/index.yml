@@ -12,8 +12,8 @@ title: 'Azure Fundamentals: Describe Azure management and governance'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |
-  The Microsoft Azure Fundamentals training is comprised of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance.
-  Microsoft Azure Fundamentals : Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.
+  The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance.
+  Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
