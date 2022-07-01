@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.implement-synapse-link-for-sql
+metadata:
+  title: Implement Azure Synapse Link for SQL
+  description: "Implement Azure Synapse Link for SQL"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Azure Synapse Link for SQL
+summary: Azure Synapse Link for SQL enables low-latency synchronization of operational data in a relational database to Azure Synapse Analytics.
+abstract: |
+  In this module, you'll learn how to:
+  - Understand key concepts and capabilities of Azure Synapse Link for SQL.
+  - Configure Azure Synapse Link for Azure SQL Database.
+  - Configure Azure Synapse Link for Microsoft SQL Server.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Synapse Analytics, Azure SQL Database, and SQL Server. Consider completing [Explore relational database services in Azure](/learn/modules/explore-provision-deploy-relational-database-offerings-azure?azure-portal=true) and [Introduction to Azure Synapse Analytics](/learn/modules/introduction-azure-synapse-analytics?azure-portal=true) first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- azure-sql-database
+- azure-synapse-analytics
+- sql-server
+subjects:
+- data-analytics
+- data-engineering
+units:
+- learn.wwl.implement-synapse-link-for-sql.introduction
+- learn.wwl.implement-synapse-link-for-sql.understand-synapse-link-sql
+- learn.wwl.implement-synapse-link-for-sql.synapse-link-azure-sql
+- learn.wwl.implement-synapse-link-for-sql.synapse-link-sql-server
+- learn.wwl.implement-synapse-link-for-sql.exercise-synapse-link-sql
+- learn.wwl.implement-synapse-link-for-sql.knowledge-check
+- learn.wwl.implement-synapse-link-for-sql.summary
+badge:
+  uid: learn.wwl.implement-synapse-link-for-sql.badge
