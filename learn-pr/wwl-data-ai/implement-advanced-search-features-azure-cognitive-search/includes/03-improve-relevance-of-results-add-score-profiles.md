@@ -6,7 +6,7 @@ Here, you'll see how to add scoring profiles to alter the scores for documents b
 
 Scoring is the last phase of processing a search query. 
 
-:::image type="content" source="../media/scoring-phase.png" alt-text="A diagram showing the score phase of search highlighted." border="false":::
+:::image type="content" source="../media/score-phase.png" alt-text="A diagram showing the score phase of search highlighted." border="false":::
 
 The search engine scores the documents returned from the first three phases. The score is a function of the number of times identified search terms appear in a document, the document's size, and the rarity of each of the terms. By default, the search results are ordered by their search score, highest first. If two documents have an identical search score, you can break the tie by adding an `$orderby` clause.
 

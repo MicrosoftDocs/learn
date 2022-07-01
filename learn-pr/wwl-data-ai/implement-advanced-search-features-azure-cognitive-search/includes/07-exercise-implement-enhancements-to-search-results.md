@@ -4,7 +4,6 @@ In this exercise, you'll add a scoring profile to improve the relevance of searc
 
 > [!NOTE]
 >To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
->
 
 
 ### Create Azure resources
@@ -33,7 +32,7 @@ Import the sample data.
 1. On the **Import data** pane, in **Data source**, select **Samples**. 
 1. Select **hotels-sample**.
 
-    :::image type="content" source="../media/adding-cognitive-services.png" alt-text="A screenshot showing selecting adding Cognitive Services.":::
+    :::image type="content" source="../media/add-cognitive-services.png" alt-text="A screenshot showing selecting adding Cognitive Services.":::
 
 1. On the **Add cognitive skills (Optional)** tab, expand **Attach Cognitive Services**, then select **Create new Cognitive Services resource**.
 
@@ -151,7 +150,7 @@ This hotel has matched the term lake in the `HotelName` field and on view in the
 1. Select **Add scoring profile**.
 1. Select **Add weights**.
 
-    :::image type="content" source="../media/adding-weights.png" alt-text="A screenshot of weights being added to a scoring profile.":::
+    :::image type="content" source="../media/add-weights.png" alt-text="A screenshot of weights being added to a scoring profile.":::
 1. In **Field name**, select **Description**.
 1. In **Weight**, enter **5**.
 1. In **Field name**, select **Category**.
