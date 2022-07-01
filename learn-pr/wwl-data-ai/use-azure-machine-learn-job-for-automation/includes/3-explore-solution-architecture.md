@@ -41,4 +41,7 @@ As part of the setup, the infrastructure team has created:
 6. A **data asset** in the workspace, which refers to a folder in the Azure Blob Storage that contains the data.
 7. **Compute resources** needed to run notebooks and scripts.
 
+> [!Tip]
+> In reality it's better to use ADLS
+
 Your first task towards MLOps, is to convert the work from the data scientists, so that you can easily automate the model development. Whereas the data science team worked in a Jupyter notebook, you need to use scripts and execute them using Azure Machine Learning jobs. The input of the job will be the data asset created by the infrastructure team, which points to the data residing on the Azure Blob Storage, connected to the Azure Machine Learning workspace.

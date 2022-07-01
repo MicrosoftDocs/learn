@@ -1,4 +1,4 @@
-Manage your machine learning models with the Azure Machine Learning extension for the CLI (v2). When you execute code as an Azure Machine Learning **job**, you can easily set up automated model training.
+You can manage your machine learning models with the Azure Machine Learning extension for the CLI (v2). When you execute code as an Azure Machine Learning **job**, you can easily set up automated model training.
 
 Imagine you're a machine learning engineer at a company providing health care. The data science team has created a classification model that is able to predict whether someone has diabetes, based on their medical information.
 

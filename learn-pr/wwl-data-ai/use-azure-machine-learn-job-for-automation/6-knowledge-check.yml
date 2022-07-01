@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "`https:`"
       isCorrect: false
-      explanation: "Incorrect. Use `https:` when referring to a URI of a public cloud path."
+      explanation: "Incorrect. Use `https:` when referring to a URI of a publicly accessible cloud path."
     - content: "`wasbs:`"
       isCorrect: false
-      explanation: "Incorrect. Use `wasbs:` when referring to a URI of a public Azure Blob Storage container."
+      explanation: "Incorrect. Use `wasbs:` when referring to a URI of a publicly accessible Azure Blob Storage container."
     - content: "`azureml:`"
       isCorrect: true
       explanation: "Correct. Use `azureml:` when referring to an existing registered data asset."
