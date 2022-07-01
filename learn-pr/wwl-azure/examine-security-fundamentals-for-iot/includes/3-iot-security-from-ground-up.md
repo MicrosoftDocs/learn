@@ -43,3 +43,12 @@ Using Azure Active Directory (AAD) for user authentication and authorization, Az
 Once data is in the cloud, it can be processed and stored in any user-defined workflow. Access to each part of the data is controlled with Azure Active Directory, depending on the storage service used.
 
 All keys used by the IoT infrastructure are stored in the cloud in secure storage, with the ability to roll over in case keys need to be reprovisioned. Data can be stored in Azure Cosmos DB or in SQL databases, enabling definition of the level of security desired. Additionally, Azure provides a way to monitor and audit all access to your data to alert you of any intrusion or unauthorized access.
+
+### Secure networks
+
+By default, IoT Hub's hostnames map to a public endpoint with a publicly routable IP address over the internet. This allows different customers to share this IoT Hub public endpoint, and ensures that IoT devices connecting over wide-area networks and on-premises networks can access your hub. However, there are situations where you might want to restrict access to your Azure resources. Azure IoT solutions support both IP filtering and virtual networks to help secure access when needed.
+
+For detailed information on securing network access, see the following resources:<br>
+
+ -  IoT Hub IP filtering: [https://docs.microsoft.com/azure/iot-hub/iot-hub-ip-filtering](/azure/iot-hub/iot-hub-ip-filtering).<br>
+ -  Virtual network support: [https://docs.microsoft.com/azure/iot-hub/virtual-network-support](/azure/iot-hub/virtual-network-support)<br>

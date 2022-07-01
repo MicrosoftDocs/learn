@@ -61,7 +61,7 @@ Consider the following STRIDE definitions:
  -  Tampering (T): Tampering attacks occur when the attacker modifies the data in transit (and for IoT may include compromising the physical device). For example, an attacker may compromise a physical device to obtain cryptographic key materials, then intercept and suppress data from the device on the communication path, and finally use extracted key material to replace the data with false data that is authenticated with the stolen key material.
  -  Repudiation (R): Repudiation occurs when someone performs an action and then claims that they didn't actually do it. Repudiation is typically associated with the ability to properly track and log user actions and for Azure IoT, this threat is mitigated by the Azure IoT Hub service. Repudiation does not apply to attacks against physical devices.
  -  Information Disclosure (I): Information Disclosure threats are straightforward - can the attacker view data that they're not supposed to view? For example, if you're transferring data from one computer to another and the attacker can sniff the data on the wire, then your component is subject to an information disclosure threat.
- -  Denial of Service (D): Denial of service threats occur when an attacker can degrade or deny service to users. For IoT, this degradation includes rendering a device incapable of functioning or communicating. For example, a surveillance camera that had its power or network connection intentionally knocked out cannot report data.
+ -  Denial of Service (D): A denial of service threat occurs when an attacker can degrade or deny service to users. For IoT, this degradation includes rendering a device incapable of functioning or communicating. For example, a surveillance camera that had its power or network connection intentionally knocked out cannot report data.
  -  Elevation of Privilege (E): An elevation of privilege threat occurs when an attacker has the ability to gain privileges that they'd not normally have. For IoT, this threat may be forcing a device to do something other than the intended function. For example, a valve that is programmed to open half way can be tricked to open all the way.
 
 ### Common threats against physical devices
@@ -203,8 +203,6 @@ Here are some examples of threats to physical devices:
  -  Denial of Service: The device can be turned off or turned into a mode where communication is not possible (which is intentional in many industrial machines).
  -  Tampering: The device can be reconfigured to operate in a state unknown to the control system (outside of known calibration parameters) and thus provide data that can be misinterpreted.
  -  Elevation of Privilege: A device that does specific function can be forced to do something else. For example, a valve that is programmed to open half way can be tricked to open all the way.
- -  Denial of Service: The device can be turned into a state where communication is not possible.
- -  Tampering: The device can be reconfigured to operate in a state unknown to the control system (outside of known calibration parameters) and thus provide data that can be misinterpreted.
 
 ### Common threats against communication
 
