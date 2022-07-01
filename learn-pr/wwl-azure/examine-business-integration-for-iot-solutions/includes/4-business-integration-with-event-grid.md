@@ -21,30 +21,39 @@ This image shows how Event Grid connects sources and handlers, and isn't a compr
 
 Currently, the following Azure services support sending events to Event Grid:
 
- -  Azure Subscriptions (management operations)
- -  Container Registry
- -  Custom Topics
- -  Event Hubs
- -  IoT Hub
- -  Media Services
- -  Resource Groups (management operations)
- -  Service Bus
- -  Storage Blob
+ -  Azure API Management
+ -  Azure App Configuration
+ -  Azure App Service
+ -  Azure Blob Storage
+ -  Azure Cache for Redis
+ -  Azure Communication Services
+ -  Azure Container Registry
+ -  Azure Event Hubs
+ -  Azure FarmBeats
+ -  Azure Health Data Services
+ -  Azure IoT Hub
+ -  Azure Key Vault
+ -  Azure Kubernetes Service
+ -  Azure Machine Learning
  -  Azure Maps
+ -  Azure Media Services
+ -  Azure Policy
+ -  Azure resource groups
+ -  Azure Service Bus
+ -  Azure SignalR
+ -  Azure subscriptions
 
 ## Event handlers
 
 Currently, the following Azure services support handling events from Event Grid:
 
- -  Azure Automation
- -  Azure Functions
+ -  Webhooks. Azure Automation runbooks and Logic Apps are supported via webhooks.
+ -  Azure functions
  -  Event Hubs
- -  Hybrid Connections
- -  Logic Apps
- -  Power Automate (Formerly known as Microsoft Flow)
- -  Queue Storage
- -  Service Bus
- -  WebHooks
+ -  Service Bus queues and topics
+ -  Relay hybrid connections
+ -  Storage queues
+ -  Partner destinations
 
 ## Concepts
 
@@ -80,7 +89,7 @@ When designing your application, you have flexibility when deciding how many top
 
 A subscription tells Event Grid which events on a topic you're interested in receiving. When creating the subscription, you provide an endpoint for handling the event. You can filter the events that are sent to the endpoint. You can filter by event type, or subject pattern.
 
-The event subscription is automatically expired after that date. Set an expiration for event subscriptions that are only needed for a limited time and you don't want to worry about cleaning up those subscriptions. For example, when creating an event subscription to test a scenario, you might want to set an expiration.
+You can set an expiration for event subscriptions that are only needed for a limited time and when you don't want to worry about cleaning up those subscriptions. The event subscription will be expired automatically after the specified date. For example, you might want to set an expiration date when using an event subscription within a test scenario.
 
 ### Event handlers definition
 
