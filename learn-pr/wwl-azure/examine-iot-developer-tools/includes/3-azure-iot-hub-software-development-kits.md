@@ -1,4 +1,5 @@
-Azure IoT provides a set of open-source Software Development Kits (SDKs) to simplify and accelerate the development of IoT solutions built with Azure IoT Hub. Using the SDKs in prototyping and production enables you to:
+> [!NOTE]
+> Azure IoT provides a set of open-source Software Development Kits (SDKs) to simplify and accelerate the development of IoT solutions built with Azure IoT Hub. Using the SDKs in prototyping and production enables you to:
 
  -  Develop a “future-proof” solution with minimal code: While you can use protocol libraries to communicate with Azure IoT Hub, you may regret this decision later. You may not have a chance to implement new features of IoT Hub, or you may spend time redeveloping code and functionality that you could get for free when using the SDKs. The SDKs support new features from IoT Hub, so you can incorporate them with minimal code and ensure your solution is up to date.
  -  Apply features designed for a complete software solution and focus on your specific need: The SDKs contain many libraries that address key problems and needs of IoT solutions such as security, device management, reliability, etc. You can speed up time to market by using these libraries directly so that you can focus on developing for your specific IoT scenario.
@@ -22,3 +23,7 @@ Microsoft provides SDK support in the following ways:
 
 > [!NOTE]
 > Microsoft also provides guidance on how to develop for mobile platforms such as iOS and Android.
+
+You can read more about the Azure IoT Hub service SDKs here: [https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks](/azure/iot-hub/iot-hub-devguide-sdks).
+
+You can read more about device development and the Azure IoT device SDKs here: [https://docs.microsoft.com/azure/iot-develop/about-iot-sdks](/azure/iot-develop/about-iot-sdks).
