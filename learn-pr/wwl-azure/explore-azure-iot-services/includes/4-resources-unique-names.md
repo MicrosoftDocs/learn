@@ -1,9 +1,9 @@
-When creating Azure resources, it is essential to adopt a sensible naming convention that scales well and complies with the naming rules and restrictions. The restrictions and recommendations are available online:
+When creating Azure resources, it is essential to adopt a sensible naming convention that scales well and complies with the naming rules and restrictions. Detailed information describing the restrictions and recommendations is available online:
 
  -  [Naming rules and restrictions for Azure resources](/azure/azure-resource-manager/management/resource-name-rules)
  -  [Recommended naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
 
-During this training, you will be creating Azure resources that are used to develop your IoT solution. To ensure consistency across the labs and to help in tidying up resources whenever you have finished with them, the lab instructions will include resource names that you should use. These names comply with many of the conventions suggested above. Many of these resources expose services that can be consumed across the web, which means they must have globally unique names. To achieve this, you will be using a unique identifier that will be added to the end of the resource name. The following instructions will help you to create your unique ID.
+During this training, you will be creating Azure resources that can be used to develop your IoT solution. To ensure some consistency in resource naming and to help with tidying up resources when you have completed hands-on activities, the lab instructions will include resource names that you should use. The suggested resource names generally comply with the conventions suggested by the online resources mentioned previously. Many of the Azure IoT resources that you can use to develop an IoT solution expose services that can be consumed across the web, which means they must have globally unique names. To create globally unique resource names in a lab environment, you will be appending a unique identifier (your unique ID) to the end of the resource name. The following instructions will help you to create your unique ID.
 
 ## Unique ID
 
@@ -22,9 +22,9 @@ dm210920
 
 ```
 
-Whenever you are expected to use your unique ID, you will see `{your-id}`. You will replace the entire string (including the `{}`) with your unique value.
+Whenever you are expected to use your unique ID, you will see `{your-id}`. You will replace the entire string (including the `{}`) with your unique ID value.
 
-Make a note of your unique ID now and **use the same value through the entire course** \- don't update the date each day.
+Make a note of your unique ID. If your training is conducted over muliple days, continue to use the same unique ID each day.
 
 Let's review some examples of resources and the names associated with them.
 
