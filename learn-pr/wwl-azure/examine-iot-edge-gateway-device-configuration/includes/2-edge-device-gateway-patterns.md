@@ -104,3 +104,11 @@ Here is a quick cheat sheet that compares IoT Hub primitives when using transpar
 
 
 When using an opaque gateway (protocol translation) pattern, all devices connecting through that gateway share the same cloud-to-device queue, which can contain at most 50 messages. It follows that the opaque gateway pattern should be used only when few devices are connecting through each field gateway, and their cloud-to-device traffic is low.
+
+## IoT Plug and Play bridge
+
+The IoT Plug and Play bridge is an open-source application for connecting existing devices attached to Windows or Linux gateway as IoT Plug and Play devices. After installing and configuring the application on your Windows or Linux machine, you can use it to connect attached devices to an IoT hub. You can use the bridge to map IoT Plug and Play interfaces to the telemetry the attached devices are sending, work with device properties, and invoke commands.
+
+IoT Plug and Play bridge can be deployed as a standalone executable on any IoT device, industrial PC, server, or gateway running Windows 10 or Linux. It can also be compiled into your application code. A simple configuration JSON file tells the IoT Plug and Play bridge which attached devices/peripherals should be exposed up to Azure.
+
+You can find more information about IoT Pluc and Play bridge here: [https://docs.microsoft.com/azure/iot-develop/concepts-iot-pnp-bridge](/azure/iot-develop/concepts-iot-pnp-bridge).
