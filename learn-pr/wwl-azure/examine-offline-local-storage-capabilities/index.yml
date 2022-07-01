@@ -3,7 +3,7 @@ uid: learn.wwl.examine-offline-local-storage-capabilities
 metadata:
   title: Examine offline and local storage capabilities
   description: "This module introduces you to IoT Edge support for extend offline scenarios, local storage on IoT Edge devices, and the process for configuring an IoT device to access to local storage."
-  ms.date: 01/25/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -34,8 +34,8 @@ products:
 - azure-portal
 subjects:
 - cloud-computing
-- storage
 - iot
+- storage
 units:
 - learn.wwl.examine-offline-local-storage-capabilities.introduction
 - learn.wwl.examine-offline-local-storage-capabilities.examine-extended-offline-capabilities
