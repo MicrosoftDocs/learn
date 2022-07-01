@@ -11,8 +11,7 @@ To automate model training with GitHub Actions, you'll need to:
 The service principal will be what GitHub Actions uses to authenticate with the Azure Machine Learning workspace to perform operations. For example, to train a model using Azure Machine Learning compute, you or any tool that you use, needs to be authorized to use that compute.
 
 > [!Tip]
-> Learn more about how to [use GitHub Actions to connect to Azure](
-https://docs.microsoft.com/azure/developer/github/connect-from-azure)
+> Learn more about how to [use GitHub Actions to connect to Azure](/azure/developer/github/connect-from-azure)
 
 ## Store the Azure credentials
 
@@ -22,29 +21,29 @@ To add a secret to your GitHub repository:
 
 1. Navigate to the **Settings** tab. 
 
-![Screenshot of settings tab in GitHub repository.](../media/04-01-settings.png)
+   ![Screenshot of settings tab in GitHub repository.](../media/04-01-settings.png)
 
 2. In the **Settings** tab, under **Security**, expand the **Secrets** option and select **Actions**.
 
-![Screenshot of secrets option in security section.](../media/04-02-secrets.png)
+   ![Screenshot of secrets option in security section.](../media/04-02-secrets.png)
 
 3. Enter your Azure credentials as a secret and name the secret `AZURE_CREDENTIALS`. 
 4. To use a secret containing Azure credentials in a GitHub Action, refer to the secret in the YAML file.
 
-```yml
-on: [push]
+   ```yml
+   on: [push]
 
-name: Azure Login Sample
+   name: Azure Login Sample
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Log in with Azure
-        uses: azure/login@v1
-        with:
-          creds: '${{secrets.AZURE_CREDENTIALS}}'
-```
+   jobs:
+     build-and-deploy:
+       runs-on: ubuntu-latest
+       steps:
+         - name: Log in with Azure
+           uses: azure/login@v1
+           with:
+             creds: '${{secrets.AZURE_CREDENTIALS}}'
+   ```
 
 ## Define the GitHub Action
 
