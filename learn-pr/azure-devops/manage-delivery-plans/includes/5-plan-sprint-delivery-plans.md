@@ -75,4 +75,4 @@ Your final sprint plan should look similar to this:
 
 :::image type="content" source="../media/5-optimized-work-schedule.png" alt-text="A screenshot showing the optimized work schedule.":::
 
-You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting on dependencies to be delivered, teams will have always productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up to date.
+While the team has made some adjustments, they haven't addressed all the dependency issues that are identified in the delivery plan. In the next unit, they learn more about dependencies and how to resolve the issues that can occur in the schedule.  
