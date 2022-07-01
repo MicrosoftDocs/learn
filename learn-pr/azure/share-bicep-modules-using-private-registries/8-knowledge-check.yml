@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 02/10/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
