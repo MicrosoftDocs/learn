@@ -189,7 +189,6 @@ You can create a new Azure Time Series Insights resource in the Azure portal usi
 There a few key differences between a Gen2 environment and Gen1 S1 or Gen1 S2 environments to bear in mind when you manage your environment through the Azure portal:
 
  -  The Azure portal Gen2 Overview pane has the following changes:<br>
-    
      -  Capacity is removed because it doesn't apply to Gen2 environments.<br>
      -  The Time series ID property is added. It determines how your data is partitioned.
      -  Reference data sets are removed.
