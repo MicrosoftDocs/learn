@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.data-normalization-microsoft-sentinel
+metadata:
+  title: Data normalization in Microsoft Sentinel
+  description: "Data normalization in Microsoft Sentinel"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Data normalization in Microsoft Sentinel
+summary: By the end of this module, you'll be able to use ASIM parsers to identify threats inside your organization.
+abstract: |
+  After completing this module, you will be able to:
+  *   Use ASIM Parsers
+  *   Create ASIM Parser
+  *   Create parameterized KQL functions
+prerequisites: |
+  Basic knowledge of Kusto Query Language (KQL).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- azure
+- microsoft-sentinel
+units:
+- learn.wwl.data-normalization-microsoft-sentinel.introduction
+- learn.wwl.data-normalization-microsoft-sentinel.understand
+- learn.wwl.data-normalization-microsoft-sentinel.use-asim-parsers
+- learn.wwl.data-normalization-microsoft-sentinel.understand-parameterized-kql-functions
+- learn.wwl.data-normalization-microsoft-sentinel.create-asim-parser
+- learn.wwl.data-normalization-microsoft-sentinel.configure-azure-monitor-data-collection-rules
+- learn.wwl.data-normalization-microsoft-sentinel.knowledge-check
+- learn.wwl.data-normalization-microsoft-sentinel.summary-resources
+badge:
+  uid: learn.wwl.data-normalization-microsoft-sentinel.badge
