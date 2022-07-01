@@ -14,7 +14,6 @@ The architecture includes:
 5. **Continuous deployment**: Test and deploy the model.
 6. **Monitoring**: Monitor model and compute performance.
 
-
 Specifically, we’re going to be automating the training portion of the model development, or inner loop, which will ultimately allow us to quickly train and register multiple models for deployment to staging and production environments. 
 
 The Azure Machine Learning workspace, Azure Machine Learning compute, and GitHub repository have all been created for you by the infrastructure team. 

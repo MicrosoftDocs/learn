@@ -1,6 +1,6 @@
 GitHub Actions is a platform that allows you to automate tasks triggered by events that occur within a GitHub repository. GitHub Actions consist of **jobs**. A job groups a **set of steps** that you can define. One of these steps can use the CLI (v2) to run an **Azure Machine Learning job** to train a model.
 
-To automate model training with GitHub Actions, you will need to:
+To automate model training with GitHub Actions, you'll need to:
 
 - Create a service principal using the Azure CLI.
 - Store the Azure credentials in a GitHub secret.
