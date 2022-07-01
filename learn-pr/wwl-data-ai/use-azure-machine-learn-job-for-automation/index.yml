@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-machine-learn-job-for-automation
 metadata:
   title: Use an Azure Machine Learning job for automation
   description: "MLOps, machine learning operations"
-  ms.date: 06/30/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,9 @@ abstract: |
   - Work with YAML to define a command or pipeline job.
   - Run scripts as a job with the CLI v2.
 prerequisites: |
-  Familiarity with Azure Machine Learning and basic DevOps concepts such as source control and CI/CD.
+  - Programming experience in Python or R
+  - Experience developing and training machine learning models
+  - Basic Azure Machine Learning concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

@@ -61,7 +61,7 @@ To install on Windows, use the following command:
 az extension add -n ml -y
 ```
 
-Once you've installed the Azure Machine Learning extension for the CLI and have access to the Azure subscription you want to work with, you can submit an Azure Machine Learning job usingt he following command:
+Once you've installed the Azure Machine Learning extension for the CLI and have access to the Azure subscription you want to work with, you can submit an Azure Machine Learning job using the following command:
 
 ```azurecli
 az ml job create --file job.yml

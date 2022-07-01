@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-azure-machine-learn-job-for-automation.create-pipelines
-title: Create Azure Machine Learning pipelines
+title: Create Azure Machine Learning jobs
 metadata:
-  title: Create Azure Machine Learning pipelines
-  description: "Create Azure Machine Learning pipelines"
-  ms.date: 06/30/2022
+  title: Create Azure Machine Learning jobs
+  description: "Create Azure Machine Learning jobs"
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
