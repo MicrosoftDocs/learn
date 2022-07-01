@@ -3,7 +3,7 @@ uid: learn.wwl.intro-to-iot-central
 metadata:
   title: Intro to IoT Central
   description: "This module introduces you to the features, capabilities, and UI components presented by the Azure IoT Central application platform, the underlying architecture built on Azure IoT services, and other support considerations."
-  ms.date: 03/15/2022
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

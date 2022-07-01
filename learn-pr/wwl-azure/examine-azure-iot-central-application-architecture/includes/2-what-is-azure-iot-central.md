@@ -9,7 +9,7 @@ The web UI lets you monitor device conditions, create rules, and manage millions
 
 The IoT Central documentation refers to four personas who interact with an IoT Central application:
 
- -  A solution builder is responsible for defining the types of devices that connect to the application and customizing the application for the operator.
+ -  A solution builder is responsible for defining the types of devices that connect to the application, customizing the application for the operator, and building custom applications that integrate with the IoT Central using the IoT Central REST APIs.
  -  An operator manages the devices connected to the application.
  -  An administrator is responsible for administrative tasks such as managing user roles and permissions within the application.
  -  A device developer creates the code that runs on a device or IoT Edge module connected to your application.
