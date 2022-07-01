@@ -5,8 +5,8 @@ metadata:
   title: Introduction to infrastructure as code using Bicep
   description: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.
   ms.date: 03/12/2021
-  author: joshuawaddell
-  ms.author: jowaddel
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to infrastructure as code using Bicep
