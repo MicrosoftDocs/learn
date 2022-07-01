@@ -6,17 +6,16 @@ The [Azure Pricing calculator](https://azure.microsoft.com/pricing/calculator/) 
 
 You also can access pricing details, product details, and documentation for each product from within the Pricing calculator.
 
-:::image type="content" source="../media/4-pricing-calculator-d8cb6385-ae3dd6de.png" alt-text="A screenshot of the Pricing calculator showing a sample estimate for virtual machines.":::
-
+:::image type="content" source="../media/4-pricing-calculator-d8cb6385-ae3dd6de.png" alt-text="Screenshot of the Pricing calculator showing a sample estimate for virtual machines.":::
 
 The options that you can configure in the Pricing calculator vary between products, but they can include:
 
- -  **Region**: A region is the geographical location in which you can provision a service. Southeast Asia, Central Canada, Western United States, and Northern Europe are a few examples.
- -  **Tier**: Tiers, such as the Free tier or Basic tier, have different levels of availability or performance and different associated costs.
- -  **Billing options**: Billing options highlight the different ways you can pay for a service. Options can vary based on your customer type and subscription type and can include options to save costs.
- -  **Support option**s: These options enable you to select additional support pricing options for certain services.
- -  **Programs and offers**: Your customer or subscription type might enable you to choose from specific licensing programs or other offers.
- -  **Azure Dev/Test pricing**: This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that's based on a Dev/Test offer.
+- **Region**: A region is the geographical location in which you can provision a service. Southeast Asia, Central Canada, Western United States, and Northern Europe are a few examples.
+- **Tier**: Tiers, such as the Free tier or Basic tier, have different levels of availability or performance and different associated costs.
+- **Billing options**: Billing options highlight the different ways you can pay for a service. Options can vary based on your customer type and subscription type and can include options to save costs.
+- **Support option**s: These options enable you to select additional support pricing options for certain services.
+- **Programs and offers**: Your customer or subscription type might enable you to choose from specific licensing programs or other offers.
+- **Azure Dev/Test pricing**: This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that's based on a Dev/Test offer.
 
 Keep in mind that the Pricing calculator provides estimates and *not* actual price quotes. Actual prices can vary depending upon the date of purchase, the payment currency you're using, and the type of Azure customer you are.
 

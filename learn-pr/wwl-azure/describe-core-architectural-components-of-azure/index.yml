@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.describe-core-architectural-components-of-azure
+metadata:
+  title: Describe the core architectural components of Azure
+  description: "Concepts around physical and management architecture for Azure, including data centers and regions, management groups and subscriptions, etc."
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe the core architectural components of Azure
+summary: This module explains the basic infrastructure components of Microsoft Azure. You'll learn about the physical infrastructure, how resources are managed, and have a chance to create an Azure resource.
+abstract: |
+  Upon completion of this module, you will be able to:
+  - Describe Azure regions, region pairs, and sovereign regions
+  - Describe Availability Zones
+  - Describe Azure datacenters
+  - Describe Azure resources and Resource Groups
+  - Describe subscriptions
+  - Describe management groups
+  - Describe the hierarchy of resource groups, subscriptions, and management groups
+prerequisites: |
+  * Basic familiarity with IT terms and concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- architecture
+- cloud-computing
+- infrastructure
+units:
+- learn.wwl.describe-core-architectural-components-of-azure.introduction
+- learn.wwl.describe-core-architectural-components-of-azure.what-microsoft-azure
+- learn.wwl.describe-core-architectural-components-of-azure.get-started-azure-accounts
+- learn.wwl.describe-core-architectural-components-of-azure.exercise-explore-learn-sandbox
+- learn.wwl.describe-core-architectural-components-of-azure.describe-azure-physical-infrastructure
+- learn.wwl.describe-core-architectural-components-of-azure.describe-azure-management-infrastructure
+- learn.wwl.describe-core-architectural-components-of-azure.exercise-create-azure-resource
+- learn.wwl.describe-core-architectural-components-of-azure.knowledge-check
+- learn.wwl.describe-core-architectural-components-of-azure.summary
+badge:
+  uid: learn.wwl.describe-core-architectural-components-of-azure.badge

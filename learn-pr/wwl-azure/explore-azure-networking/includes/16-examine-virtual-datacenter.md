@@ -2,14 +2,14 @@ The virtual datacenter (VDC) concept's primary purpose is to facilitate design a
 
 The key to unlocking the advantages of VDC is a centralized hub and spoke network topology with a mix of Azure services and features:
 
- -  Azure Virtual Network
- -  Network security groups
- -  Virtual network peering
- -  User-defined routes
- -  Azure Identity with role-based access control (RBAC role)
- -  Azure DNS
- -  Azure Firewall
- -  Azure Front Door
- -  Azure Virtual WAN
+- Azure Virtual Network
+- Network security groups
+- Virtual network peering
+- User-defined routes
+- Azure Identity with role-based access control (RBAC role)
+- Azure DNS
+- Azure Firewall
+- Azure Front Door
+- Azure Virtual WAN
 
 For more information, see [The virtual datacenter: A network perspective](/azure/architecture/vdc/networking-virtual-datacenter).
