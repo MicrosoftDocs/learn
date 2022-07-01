@@ -14589,6 +14589,596 @@
       "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/6-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/9-knowledge-check",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-architecture-best-practices-how-change-cloud/3-establish-strategy-process-to-create-security-pocs.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-architecture-best-practices-how-change-cloud/3-establish-process-security-evolution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/2-implement-office-365-message-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/2-implement-microsoft-purview-message-encryption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/3-implement-office-365-advanced-message-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/3-implement-microsoft-purview-advanced-message-encryption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/4-use-office-message-encryption-templates-mail-flow-rules.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-message-encryption-microsoft-365/4-use-microsoft-purview-message-encryption-templates-mail-flow-rules",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/3-onboard-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/4-onboard-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/4-manage-access.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/5-manage-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/5-create-manage-roles-for-role-based-access-control.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/6-create-manage-roles-for-role-based-access-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/6-configure-device-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/7-configure-device-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/7-configure-environment-advanced-features.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/8-configure-environment-advanced-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/9-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-microsoft-defender-for-endpoints-environment/10-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/az-400-create-manage-containers-using-docker-kubernetes/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/4-examine-kubernetes-extension-for-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/3-explore-helm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/2-explore-kubectl.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-kubernetes-tooling/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/4-examine-aks-architectural-components.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/8-exercise-deploy-connect-to-aks-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/3-explore-azure-kubernetes-service-aks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/7-explore-deployment-units.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/6-explore-ingress-controllers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/9-implement-continuous-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/2-introduction-to-kubernetes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/5-understand-kubernetes-networking.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-kubernetes-service/10-update-images.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/4-examine-considerations-multiple-stage-builds.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/3-examine-multi-stage-dockerfiles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/7-exercise-add-docker-support-to-existing-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/5-explore-builder-pattern.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/2-explore-multiple-stage-builds.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/6-manage-multiple-projects-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/3-explore-kubernetes-azure-key-vault.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/4-explore-readiness-liveness-probes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/2-integrate-aks-with-pipelines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-aks-pipelines/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/3-exercise-deploy-release-management-green-light-capabilities.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/2-explore-twitter-sentiment-release-gate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/3-capture-end-user-satisfaction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/4-capture-feedback-product.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/5-provide-feedback-from-product-roadmap.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/2-what-is-site-reliability-engineering.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/4-examine-ansible-components.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/7-examine-playbook-structure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/8-exercise-run-ansible-azure-cloud-shell.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/9-exercise-run-ansible-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/6-explore-ansible-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/3-explore-ansible-workflow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/5-install-ansible.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-ansible/2-what-ansible.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/3-configure-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/4-create-bug-tracker.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/2-explore-app-center-diagnostics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/3-examine-terraform-components.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/6-examine-terraform-configure-file-structure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/7-exercise-run-terraform-azure-cloud-shell.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/8-exercise-run-terraform-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/4-explore-terraform-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/5-install-terraform.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-terraform/2-what-terraform.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/7-deploy-puppet-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/5-examine-chef-knife-command.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/3-explore-chef-automate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/4-explore-chef-cookbooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/8-explore-manifest-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/2-what-is-chef.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-chef-puppet/6-what-is-puppet.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-manage-infrastructure-as-code-using-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/4-track-emerging-threats-with-threat-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-track-emerging-threats-with-threat-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/6-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/7-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/2-understand-security-operations-defender-for-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/3-manage-investigate-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/4-manage-investigate-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/5-auto-remediation-investigations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/6-action-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/7-advanced-hunting.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/8-consult-microsoft-threat-experts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
     }
   ]
 }

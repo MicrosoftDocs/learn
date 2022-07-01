@@ -12,11 +12,11 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which properties of IoT Edge enables it to distribute AI workloads to the edge?"
+  - content: "Which of the following reasons enables IoT Edge to distribute AI workloads to the edge?"
     choices:
-    - content: "IoT Edge deploys models that are built and trained in the cloud and then run them on edge devices."
+    - content: "IoT Edge allows you to deploy models that are built and trained in the cloud and then run them on edge devices."
       isCorrect: true
-      explanation: "Correct. When IoT Edge deploys a model to the edge, a model can process data locally and respond to the event rapidly."
+      explanation: "Correct. The ability to deploy models on the Edge allows the model to process data locally and respond to the event rapidly."
     - content: "IoT Edge can optimize network functionality."
       isCorrect: false
       explanation: "Incorrect. The capabilities of the underlying network don't directly enable IoT Edge to run distributed workloads."
@@ -25,16 +25,16 @@ quiz:
       explanation: "Incorrect. The ability to connect to sensors doesn't enable IoT Edge to run distributed workloads."
   - content: "What is the main advantage of using Azure Cognitive Services?"
     choices:
-    - content: "Your models run faster."
+    - content: "Your models will run faster."
       isCorrect: false
-      explanation: "Incorrect. Your models won't necessarily run faster with Azure Cognitive Services."
-    - content: "You gain access to prebuilt models."
+      explanation: "Incorrect. Your models wouldn't necessarily run faster with Azure Cognitive Services."
+    - content: "You could gain access to prebuilt models."
       isCorrect: true
-      explanation: "Correct. Azure Cognitive Services offers access to prebuilt models."
-    - content: "You use optimized hardware."
+      explanation: "Correct. Azure Cognitive Services enables you to access prebuilt models."
+    - content: "You could use optimized hardware."
       isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Services doesn't require you to use specific hardware."
-  - content: "You're designing a new IoT solution, and you want the service to scale up to millions of simultaneously connected users. Which Azure product would you consider?"
+      explanation: "Incorrect. Azure Cognitive Services doesn't require the use of specific hardware."
+  - content: "You’re designing a new IoT solution, and you want the service to scale up to millions of simultaneously connected users. Which Azure product would you consider?"
     choices:
     - content: "IoT Edge, because it can handle edge analytics."
       isCorrect: false

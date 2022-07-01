@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.describe-cost-management-azure
+metadata:
+  title: Describe cost management in Azure
+  description: "Describe cost management in Azure"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe cost management in Azure
+summary: This module explores methods to estimate, track, and manage costs in Azure.
+abstract: |
+  - Describe factors that can affect costs in Azure
+  - Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator
+  - Describe Azure Cost Management Tool
+  - Describe the purpose of tags
+prerequisites: |
+  * Basic familiarity with IT terms and concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.describe-cost-management-azure.introduction
+- learn.wwl.describe-cost-management-azure.describe-factors-affect-costs-azure
+- learn.wwl.describe-cost-management-azure.compare-pricing-total-cost-of-ownership-calculators
+- learn.wwl.describe-cost-management-azure.exercise-estimate-workload-costs-use-pricing-calculator
+- learn.wwl.describe-cost-management-azure.exercise-compare-workload-costs-use-total-cost-ownership-calculator
+- learn.wwl.describe-cost-management-azure.describe-azure-tool
+- learn.wwl.describe-cost-management-azure.describe-purpose-of-tags
+- learn.wwl.describe-cost-management-azure.knowledge-check
+- learn.wwl.describe-cost-management-azure.summary
+badge:
+  uid: learn.wwl.describe-cost-management-azure.badge
