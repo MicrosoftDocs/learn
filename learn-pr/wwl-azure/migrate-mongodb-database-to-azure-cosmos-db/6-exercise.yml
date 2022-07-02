@@ -9,7 +9,7 @@ metadata:
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+azureSandbox: false
 labModal: false
 durationInMinutes: 35
 content: |
