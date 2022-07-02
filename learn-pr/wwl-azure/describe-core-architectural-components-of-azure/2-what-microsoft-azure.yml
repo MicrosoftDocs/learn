@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-core-architectural-components-of-azure.what-microsoft-azure
+title: What is Microsoft Azure
+metadata:
+  title: What is Microsoft Azure
+  description: "What is Microsoft Azure"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-microsoft-azure.md)]

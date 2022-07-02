@@ -9,7 +9,7 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 20
 interactive: bash
 azureSandbox: true
 content: |

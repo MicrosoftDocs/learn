@@ -6,7 +6,7 @@ You need to ensure your company can maintain business continuity. Needs span fro
 
 You will:
 
- -  Explore snapshot strategies.
- -  Back up and restore the operating system for Type II SKUs.
- -  Implement disaster recovery on HANA Large Instances.
- -  Backup and restore SAP HANA on Azure (Large Instances).
+- Explore snapshot strategies.
+- Back up and restore the operating system for Type II SKUs.
+- Implement disaster recovery on HANA Large Instances.
+- Backup and restore SAP HANA on Azure (Large Instances).
