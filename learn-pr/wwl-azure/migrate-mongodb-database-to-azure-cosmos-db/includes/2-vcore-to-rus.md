@@ -1,4 +1,4 @@
-When migrating from a database environment were all you know is the total vCores, we will need to figure out a way to convert those vCores into Request Units ([Request Units][/azure/cosmos-db/request-units] or RUs, are how throughput capacity is provisioned on a collection). This will allow us to capacity plan and estimate the required RUs needed once our collections are migrated to an Azure Cosmos DB environment. Each collection we migrate will be stored in an Azure Cosmos DB collection consisting of a sharded cluster with a 4x replication factor.
+When migrating from a database environment where all you know is the total vCores, we will need to figure out a way to convert those vCores into Request Units ([Request Units][/azure/cosmos-db/request-units] or RUs, are how throughput capacity is provisioned on a collection). This will allow us to capacity plan and estimate the required RUs needed once our collections are migrated to an Azure Cosmos DB environment. Each collection we migrate will be stored in an Azure Cosmos DB collection consisting of a sharded cluster with a 4x replication factor.
 
 ## Estimating Provisioned Request Units per second (RU/s)
 
