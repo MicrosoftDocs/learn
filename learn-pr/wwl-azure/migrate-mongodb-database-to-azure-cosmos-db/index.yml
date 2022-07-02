@@ -11,8 +11,9 @@ metadata:
 title: Migrate a MongoDB database to Azure Cosmos DB
 summary: In this module we will learn several ways to migrate existing MongoDB databases to Azure Cosmos DB API for MongoDB.
 abstract: |
-  * Online migrations
-  * Offline migrations
+  *   Pre-migration steps and considerations
+  *   Online migrations
+  *   Offline migrations
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
 iconUrl: /learn/achievements/generic-badge.svg
