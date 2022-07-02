@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.pre-migration
-title: Pre migration
+title: Pre-migration steps and considerations
 metadata:
-  title: Pre migration
-  description: "Pre migration"
+  title: Pre-migration steps and considerations
+  description: "Pre-migration steps and considerations"
   ms.date: 07/02/2022
   author: wwlpublish
   ms.author: calopez
