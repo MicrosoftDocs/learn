@@ -1,6 +1,6 @@
 You should now better understand the MongoDB to Azure Cosmos DB migration process and the options you have to perform that migration.
 
-Now that you've completed this module, you can:
+Now that you've completed this module, you can: 
 
 - Understand how to calculate RUs from your current environment vCore count.
 - Know the pre-migration steps needed to have a successful migration.
