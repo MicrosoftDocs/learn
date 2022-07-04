@@ -21,11 +21,13 @@ To add a secret to your GitHub repository:
 
 1. Navigate to the **Settings** tab. 
 
-   ![Screenshot of settings tab in GitHub repository.](../media/04-01-settings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of settings tab in GitHub repository.](../media/04-01-settings.png)
 
 2. In the **Settings** tab, under **Security**, expand the **Secrets** option and select **Actions**.
 
-   ![Screenshot of secrets option in security section.](../media/04-02-secrets.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of secrets option in security section.](../media/04-02-secrets.png)
 
 3. Enter your Azure credentials as a secret and name the secret `AZURE_CREDENTIALS`. 
 4. To use a secret containing Azure credentials in a GitHub Action, refer to the secret in the YAML file.
