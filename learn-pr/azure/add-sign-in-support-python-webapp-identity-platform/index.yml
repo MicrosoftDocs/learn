@@ -37,7 +37,6 @@ units:
 - learn.add-sign-in-support-python-webapp-identity-platform.sign-in-azure-ad-users
 - learn.add-sign-in-support-python-webapp-identity-platform.exercise-build-auth-code-flow
 - learn.add-sign-in-support-python-webapp-identity-platform.call-protected-web-api
-- learn.add-sign-in-support-python-webapp-identity-platform.exercise-get-token-fetch-user-data
 - learn.add-sign-in-support-python-webapp-identity-platform.knowledge-check
 - learn.add-sign-in-support-python-webapp-identity-platform.summary
 badge:
