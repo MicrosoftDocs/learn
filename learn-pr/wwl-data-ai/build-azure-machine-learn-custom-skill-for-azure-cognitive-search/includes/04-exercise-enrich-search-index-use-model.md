@@ -154,17 +154,7 @@ Your inference cluster should now be ready to use. You've also edited the scorin
 
 1. Select **Deploy**, then select **Deploy to web service**.
 
-:::row:::
-    :::column:::
-        
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/deploy-model-details.png" alt-text="A screenshot of the fields needed to deploy a model."  lightbox="../media/deploy-model-details.png":::
-    :::column-end:::
-    :::column:::
-        
-    :::column-end:::
-:::row-end:::
+    :::image type="content" source="../media/deploy-model-details.png" alt-text="A screenshot of the fields needed to deploy a model."  lightbox="../media/deploy-model-details.png":::
 
 1. In the **Deploy a model** dialog, in Name, enter **car-evaluation-endpoint**.
 1. In **Computer name**, select **aml-acs-endpoint**.
