@@ -1,6 +1,6 @@
 For students who are starting or thinking about a career in technology, Microsoft’s ARB curriculum prepares students for the certification exam and provides associate-level knowledge of Microsoft cloud and business application services. 
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oK9] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oK9] 
 
 Exam vouchers are required to take an ARB certification exam. Institutions have two ways of purchasing ARB student vouchers: 
 
