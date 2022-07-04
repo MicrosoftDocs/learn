@@ -96,7 +96,7 @@ Now that you've created your organization, project, and repository, you're ready
 
 ## Set up the pipeline in Azure Pipelines
 
-You've created a pipeline definition. Next, register the pipeline with Azure Pipelines. This procedure follows the Create Pipeline workflow built into Azure.
+You've created a pipeline definition. Next, register the pipeline with Azure Pipelines.
 
 1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the resulting **Create your first Pipeline** pane, select **Create Pipeline**.
 

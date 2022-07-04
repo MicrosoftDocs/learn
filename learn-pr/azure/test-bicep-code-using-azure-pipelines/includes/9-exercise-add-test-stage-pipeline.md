@@ -67,7 +67,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="105-117" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="111-117" :::
 
    This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how this is displayed shortly.
 
@@ -79,7 +79,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="82-89, 91-117" :::
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="82-117" :::
 
    If it doesn't, update it to match this example, and then save it.
 
