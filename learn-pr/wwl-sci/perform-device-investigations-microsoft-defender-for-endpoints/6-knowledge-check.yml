@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect.  This is used with Defender AV."
     - content: "EDR in block mode"
       isCorrect: true
-      explanation: "Correct.  EDR in Block allows for blocking even when 3rd party AV is used."
+      explanation: "Correct.  EDR in Block allows for blocking even when third party AV is used."
     - content: "Feedback-loop blocking"
       isCorrect: false
       explanation: "Incorrect.  This is used with Defender AV."
@@ -44,9 +44,9 @@ quiz:
     - content: "The Device was renamed."
       isCorrect: false
       explanation: "Incorrect. Renaming the device has no impact on the Device list."
-    - content: "The Device is missing the latest KB's"
+    - content: "The Device is missing the latest KBs"
       isCorrect: false
-      explanation: "Incorrect. KB's has no impact on the Device list."
+      explanation: "Incorrect. KBs has no impact on the Device list."
     - content: "The Device hasn't had alerts in the past 30 days."
       isCorrect: true
       explanation: "Correct.  You can adjust the time setting to find the device."
