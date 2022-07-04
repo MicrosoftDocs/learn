@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.use-azure-machine-learn-job-for-automation
+metadata:
+  title: Use an Azure Machine Learning job for automation
+  description: "MLOps, machine learning operations"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use an Azure Machine Learning job for automation
+summary: Learn how to take your machine learning model from experimentation to production by using Azure Machine Learning jobs.
+abstract: |
+  In this module, you'll learn how to:
+  - Convert notebook to scripts.
+  - Work with YAML to define a command or pipeline job.
+  - Run scripts as a job with the CLI v2.
+prerequisites: |
+  - Programming experience in Python or R
+  - Experience developing and training machine learning models
+  - Basic Azure Machine Learning concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- devops-engineer
+products:
+- azure-machine-learning
+subjects:
+- artificial-intelligence
+- devops
+- machine-learning
+units:
+- learn.wwl.use-azure-machine-learn-job-for-automation.introduction
+- learn.wwl.use-azure-machine-learn-job-for-automation.understand-business-problem
+- learn.wwl.use-azure-machine-learn-job-for-automation.explore-solution-architecture
+- learn.wwl.use-azure-machine-learn-job-for-automation.create-pipelines
+- learn.wwl.use-azure-machine-learn-job-for-automation.exercise
+- learn.wwl.use-azure-machine-learn-job-for-automation.knowledge-check
+- learn.wwl.use-azure-machine-learn-job-for-automation.summary
+badge:
+  uid: learn.wwl.use-azure-machine-learning-job-for-automation.badge
