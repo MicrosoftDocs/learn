@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-course.get-students-certified-fundamentals
+title: Get my students certified - Fundamentals
+metadata:
+  title: Get my students certified - Fundamentals
+  description: "Get my students certified - Fundamentals"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-get-students-certified-fundamentals.md)]

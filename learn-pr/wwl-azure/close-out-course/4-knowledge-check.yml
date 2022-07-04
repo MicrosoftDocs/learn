@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-course.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can students take a Fundamentals certification exam?"
+    choices:
+    - content: "Certiport Authorized Testing Center or PearsonVUE Testing Center"
+      isCorrect: true
+      explanation: "Correct. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
+    - content: "Microsoft Learn Testing Center"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn doesn't offer certification exam testing. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
+    - content: "Online Remote Proctoring"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Fundamentals Certification exams can be taken at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center."
+  - content: "How can students take an ARB certification exam?"
+    choices:
+    - content: "Certiport Authorized Testing Center"
+      isCorrect: false
+      explanation: "Incorrect. If you're taking a Microsoft Fundamentals Certification exam, you can test at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center. However, if you're taking an ARB certification exam, you'll need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
+    - content: "Microsoft Learn Testing Center"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn doesn't offer certification exam testing. If you're taking an ARB certification exam, you'll need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
+    - content: "PearsonVUE Testing Center or Online Remote Proctoring"
+      isCorrect: true
+      explanation: "Correct. If you're taking an advanced role-based certification exam, you'll need to take your exam at a PearsonVUE Testing Center or use the Online Remote Proctoring option."
