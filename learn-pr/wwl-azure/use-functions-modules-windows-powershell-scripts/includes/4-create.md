@@ -12,7 +12,7 @@ Windows PowerShell uses the `$PSModulePath` environmental variable to define the
 - **C:\\Program Files\\WindowsPowerShell\\Modules**
 - **C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules**
 
-Windows PowerShell 7 includes the following additional paths:
+Windows PowerShell 7 includes the following other paths:
 
 - **C:\\Program Files\\PowerShell\\Modules**
 - **C:\\Program Files\\PowerShell\\7\\Modules**
