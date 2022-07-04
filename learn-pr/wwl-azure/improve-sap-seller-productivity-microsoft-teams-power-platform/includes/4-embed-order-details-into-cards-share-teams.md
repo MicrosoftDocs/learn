@@ -14,7 +14,7 @@ Adaptive Cards are platform-agnostic snippets of UI, authored in JSON, that apps
  
 ## Explore designing an Adaptive Card
 
-The [Adaptive Card Designer](https://adaptivecards.io/designe) tool offers an interactive design-time experience to modify the JSON in new and sample Adaptive Cards. Building the JSON to insert extracted data requires expertise with JSON and Adaptive Cards. You may need a developer for this process, which this module covers only at a high level.
+The [Adaptive Card Designer](https://adaptivecards.io/designer) tool offers an interactive design-time experience to modify the JSON in new and sample Adaptive Cards. Building the JSON to insert extracted data requires expertise with JSON and Adaptive Cards. You may need a developer for this process, which this module covers only at a high level.
 
 Andy finds an Adaptive Card sample with an approval mechanism to modify for Jenn’s purpose.
 
