@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.summary
+uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 07/04/2022
   author: wwlpublish
-  ms.author: eric
+  ms.author: gmalc
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/09-summary.md)]
