@@ -14,7 +14,7 @@ When you create the AML workspace Azure will also create storage accounts, a key
 
 AML studio lets you use a designer to use drag and drop to create pipelines that create and train models. There's an even easier way to create models by using prebuilt templates.
 
-:::image type="content" source="../media/prebuilt-components-list.png" alt-text="A screenshot of all the prebuilt components in the Azure Machine Learning studio.":::
+:::image type="content" source="../media/prebuilt-components-list.png" alt-text="A screenshot of all the prebuilt components in the Azure Machine Learning studio." lightbox="../media/prebuilt-components-list.png":::
 
 However you choose to create your models, they need to be registered in AML studio so that you can deploy the model to a web service.
 

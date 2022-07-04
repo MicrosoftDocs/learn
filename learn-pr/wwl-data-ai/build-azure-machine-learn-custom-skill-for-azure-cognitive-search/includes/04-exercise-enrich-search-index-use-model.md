@@ -29,12 +29,12 @@ You'll now create a regression model and train it using an Azure Machine Learnin
 
 1. On the home page, in the **Designer** block, select **Start now**.
 
-    :::image type="content" source="../media/select-pre-built-components.png" alt-text="A screenshot showing selecting the prebuilt regression model.":::
+    :::image type="content" source="../media/select-pre-built-components.png" alt-text="A screenshot showing selecting the prebuilt regression model." lightbox="../media/select-pre-built-components.png":::
 
 1. From the list of prebuilt components, select **Regression - Automobile Price Prediction (Basic)**.
 1. Select **Validate**.
 
-    :::image type="content" source="../media/create-compute-instance.png" alt-text="A screenshot showing how to create a compute instance to train the model.":::
+    :::image type="content" source="../media/create-compute-instance.png" alt-text="A screenshot showing how to create a compute instance to train the model." lightbox="../media/create-compute-instance.png":::
 
 1. On the **Graph validation** pane, select the error **Select compute target in the settings panel**.
 1. In the Settings pane, select **Create Azure ML instance**.
@@ -45,7 +45,7 @@ You'll now create a regression model and train it using an Azure Machine Learnin
 1. In **Select Azure ML compute instance**, select **compute-for-training**.
 1. Select **Validate**, the pipeline should look good.
 
-    :::image type="content" source="../media/submit-pipeline.png" alt-text="A screenshot showing the pipeline looking good, and the Submit button highlighted.":::
+    :::image type="content" source="../media/submit-pipeline.png" alt-text="A screenshot showing the pipeline looking good, and the Submit button highlighted." lightbox="../media/submit-pipeline.png":::
 
 1. Select **Submit**.
 1. In the **Set up pipeline job** dialog, select **Create new**.
@@ -58,7 +58,7 @@ While your pipeline is training a linear regression model, you can create the re
 
 1. On the left, select **Compute**.
 
-    :::image type="content" source="../media/create-inference-cluster.png" alt-text="A screenshot showing how to create a new inference cluster.":::
+    :::image type="content" source="../media/create-inference-cluster.png" alt-text="A screenshot showing how to create a new inference cluster." lightbox="../media/create-inference-cluster.png":::
 
 1. Select **Inference clusters**, then select **+ New**.
 1. On the **Create inference cluster** pane, select **Create new**.
@@ -76,12 +76,12 @@ Your pipeline job should have finished. You'll download the `score.py` and `cond
 
 1. On the left, select Jobs.
 
-    :::image type="content" source="../media/completed-pipeline.png" alt-text="A screenshot showing the completed pipeline job.":::
+    :::image type="content" source="../media/completed-pipeline.png" alt-text="A screenshot showing the completed pipeline job." lightbox="../media/completed-pipeline.png":::
 
 1. Select your completed job, for example, **Pipeline-Created-on-06-22-2022**.
 1. In the designer, select **Train Model**, and expand the settings pane.
 
-    :::image type="content" source="../media/download-score-conda.png" alt-text="A screenshot showing how to download score.py.":::
+    :::image type="content" source="../media/download-score-conda.png" alt-text="A screenshot showing how to download score.py." lightbox="../media/download-score-conda.png":::
 
 1. In **Other outputs**, expand the **trained_model_outputs** folder.
 1. Next to `score.py`, select the more menu (...), then select **Download**.
@@ -150,7 +150,7 @@ Your inference cluster should now be ready to use. You've also edited the scorin
 1. On the left, select **Models**.
 1. Select the mode you registered, **carevalmodel**.
 
-    :::image type="content" source="../media/deploy-web-service.png" alt-text="A screenshot showing the option to deploy a model as a web service.":::
+    :::image type="content" source="../media/deploy-web-service.png" alt-text="A screenshot showing the option to deploy a model as a web service." lightbox="../media/deploy-web-service.png":::
 
 1. Select **Deploy**, then select **Deploy to web service**.
 
@@ -220,7 +220,7 @@ Wait for the model to be deployed, it can take up to 10 minutes. You can check t
     ```
 1. Select **Consume**.
 
-    :::image type="content" source="../media/copy-rest-endpoint.png" alt-text="A screenshot showing how to copy the REST endpoint and primary key.":::
+    :::image type="content" source="../media/copy-rest-endpoint.png" alt-text="A screenshot showing how to copy the REST endpoint and primary key." lightbox="../media/copy-rest-endpoint.png":::
 
 1. Copy the **REST endpoint**.
 1. Copy the **Primary key**.
@@ -234,7 +234,7 @@ Now create a new Cognitive Search service and enrich an index using a custom ski
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select Resource groups.
 1. Select **aml-for-acs-enrichment**.
 
-    :::image type="content" source="../media/navigate-storage-account.png" alt-text="A screenshot showing selecting a storage account in the Azure portal.":::
+    :::image type="content" source="../media/navigate-storage-account.png" alt-text="A screenshot showing selecting a storage account in the Azure portal." lightbox="../media/navigate-storage-account.png":::
 1. Select the storage account, for example **amlforacsenric2940127500**.
 1. Under **Data storage**, select **Containers**.
 1. Create a new container to store index data, select **+ Container**.
@@ -464,7 +464,7 @@ The updated skillset will now add a predicted value to the test car document in 
 1. Select **Search**.
 1. Scroll to the bottom of the results.
 
-:::image type="content" source="../media/test-results-search-explorer.png" alt-text="A screenshot showing the predicted car price field added to the search results.":::
+:::image type="content" source="../media/test-results-search-explorer.png" alt-text="A screenshot showing the predicted car price field added to the search results." lightbox="../media/test-results-search-explorer.png":::
 
 You should see the populate field `predicted_price`.
 
