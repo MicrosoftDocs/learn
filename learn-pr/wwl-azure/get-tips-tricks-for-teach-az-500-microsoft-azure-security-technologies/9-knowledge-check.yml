@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up to date course materials?"
+    choices:
+    - content: "Every three years"
+      isCorrect: false
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
+    - content: "Once a year"
+      isCorrect: false
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
+    - content: "Quarterly"
+      isCorrect: true
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course, you know you have the most up-to-date materials."
+  - content: "Which teaching tool is great for giving students a visual representation of topics in the AZ-500: Microsoft Azure Security Technologies course?"
+    choices:
+    - content: "The Textbook"
+      isCorrect: false
+      explanation: "Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process. The Microsoft Whiteboard can increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Microsoft Whiteboard"
+      isCorrect: true
+      explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Flash Cards"
+      isCorrect: false
+      explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+  - content: "Which teaching tool allows students to build a strong foundation of concepts before beginning to work independently in the AZ-500: Microsoft Azure Security Technologies course?"
+    choices:
+    - content: "Accessibility Tools"
+      isCorrect: false
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. Students will walk through the labs with the instructor first and then solidify concepts when completing the labs on their own."
+    - content: "Azure Blog"
+      isCorrect: false
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. Students will walk through the labs with the instructor first and then solidify concepts when completing the labs on their own."
+    - content: "Instructor-led lab experiences"
+      isCorrect: true
+      explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. Students will walk through the labs with the instructor first and then solidify concepts when completing the labs on their own."
