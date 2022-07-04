@@ -3,7 +3,7 @@ uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 metadata:
   title: Trigger Azure Machine Learning jobs with GitHub Actions
   description: "MLOps, machine learning operations"
-  ms.date: 07/01/2022
+  ms.date: 07/04/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,9 +16,9 @@ abstract: |
   - Store Azure credentials securely using secrets in GitHub Secrets.
   - Create a GitHub Action using YAML that uses the stored Azure credentials to run an Azure Machine Learning job.
 prerequisites: |
-  - Programming experience in Python or R
+  - Programming experience with Python or R
   - Experience developing and training machine learning models
-  - Basic Azure Machine Learning concepts
+  - Familiarity with basic Azure Machine Learning concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

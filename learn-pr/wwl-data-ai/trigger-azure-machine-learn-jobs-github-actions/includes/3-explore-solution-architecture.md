@@ -10,9 +10,9 @@ The architecture includes:
 1. **Setup**: Create all necessary Azure resources for the solution.
 2. **Model development (inner loop)**: Explore and process the data to train and evaluate the model.
 3. **Continuous integration**: Package and register the model.
-4. **Model deployment (outer loop)**: Deploy and monitor the model.
-5. **Continuous deployment**: Test and deploy the model.
-6. **Monitoring**: Monitor model and compute performance.
+4. **Model deployment (outer loop)**: Deploy the model.
+5. **Continuous deployment**: Test the model and promote to production environment.
+6. **Monitoring**: Monitor model and endpoint performance.
 
 Specifically, we’re going to be automating the training portion of the model development, or inner loop, which will ultimately allow us to quickly train and register multiple models for deployment to staging and production environments. 
 

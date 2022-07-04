@@ -11,4 +11,4 @@ In this exercise, you will:
 Follow these instructions to complete the challenge:
 
 - View the [challenge repo on GitHub](https://microsoftlearning.github.io/mslearn-mlops/?azure-portal=true).
-- Complete challenge 2: trigger GitHub Actions with trunk-based development.
+- Complete challenge 2: trigger the Azure Machine Learning job with GitHub Actions.
