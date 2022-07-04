@@ -3,7 +3,7 @@ uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search
 metadata:
   title: Implement advanced search features in Azure Cognitive Search
   description: "Use more advanced features of Azure Cognitive Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages."
-  ms.date: 07/01/2022
+  ms.date: 07/04/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
