@@ -38,7 +38,7 @@ Your code should formulate a REST response that includes a JSON body. The Cognit
 
 During development, you'll need to test your custom skill by sending it REST requests and observing its responses. REST developers often use the **Postman** tool to help with this process, but any tool that helps you to formulate and submit REST requests with JSON message bodies can be used. You can also use the **Code + Test** tool in the Azure portal to formulate and submit test REST requests.
 
-In Visual Studio, deploy the function locally by pressing <kbd>F5</kbd>. Then, you can submit requests to the function by sending them to this URL:
+In Visual Studio, deploy the function locally by pressing **F5**. Then, you can submit requests to the function by sending them to this URL:
 
 ```http
 POST https://localhost:7071/api/analyze-form
