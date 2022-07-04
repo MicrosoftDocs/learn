@@ -1,4 +1,4 @@
-In this module, you learned about adding additional troubleshooting information to scripts, configuring breakpoints for troubleshooting, and describing error actions in Windows PowerShell. The following are the key takeaways:
+In this module, you learned about adding more troubleshooting information to scripts, configuring breakpoints for troubleshooting, and describing error actions in Windows PowerShell. The following are the key takeaways:
 
 - Errors can occur for reasons such as:
 
