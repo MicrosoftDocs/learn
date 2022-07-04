@@ -15179,6 +15179,11 @@
       "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-track-emerging-threats-with-threat-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/",
+      "redirect_document_id": false
     }
   ]
 }
