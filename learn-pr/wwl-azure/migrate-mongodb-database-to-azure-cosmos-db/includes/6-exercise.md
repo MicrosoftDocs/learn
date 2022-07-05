@@ -46,8 +46,8 @@ Let's put Visual studio Code to some good use, first, we need to clone the lab r
     1. Choose a folder to copy the repository to. It might be a good idea to create a new empty directory for this clone, that you can easily find later.
     1. Once it has completed downloading the repository it will ask ***Would you like to open the clone repository?***, select the **Open** button.
 
-    > [!NOTE]
-    > If you did not selected the ***Open*** button, select ***File*** -> ***Open folder*** and select the folder where you cloned the repo to open it.
+        > [!NOTE]
+        > If you did not selected the ***Open*** button, select ***File*** -> ***Open folder*** and select the folder where you cloned the repo to open it.
 
     1. If a dialog pops-up asking if you trust the authors, just check the checkbox, and select ***Yes, I trust the authors***.
     1. You can close any other pop-ups that might have appeared on the lower right hand side.
@@ -85,35 +85,35 @@ We'll run a script that will create the Azure storage and Azure Cosmos DB accoun
 
     1. If you already have a resource group you want to use, replace the string ***YOURRESOURCEGROUPHERE*** below for the name of your resource group. If you want the script to create a resource group for you, use the next step. *This script will open a browser window to sign in to your Azure account.*
 
-    > ```bash
-    > GitRepositoryRoot=$(pwd)
-    > # Open a browser window to login to Azure, once you are logged in,
-    > # close the browser window and continue running the script.
-    > az login
-    >
-    > # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
-    > # replace YOURRESOURCGROUPNAMEHERE with your Resource Group Name 
-    > bash $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh -r YOURRESOURCEGROUPNAMEHERE
-    > ```
+        ```bash
+        GitRepositoryRoot=$(pwd)
+        # Open a browser window to login to Azure, once you are logged in,
+        # close the browser window and continue running the script.
+        az login
+        
+        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        # replace YOURRESOURCGROUPNAMEHERE with your Resource Group Name 
+        bash $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh -r YOURRESOURCEGROUPNAMEHERE
+        ```
 
     1. If you want the script to create a resource group for you, run the following script. *This script will open a browser window to sign in to your Azure account.*
 
-    > ```bash
-    > GitRepositoryRoot=$(pwd)
-    > cd $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms
-    > # Open a browser window to login to Azure, once you are logged in,
-    > # close the browser window and continue running the script.
-    > az login
-    >
-    > # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
-    > bash $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh
-    > ```
+        ```bash
+        GitRepositoryRoot=$(pwd)
+        cd $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms
+        # Open a browser window to login to Azure, once you are logged in,
+        # close the browser window and continue running the script.
+        az login
+        
+        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        bash $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh
+        ```
 
-    > [!Tip]
-    > When the script completes it will return several of the account names and ids, you will need some of those later in the lab so store them somewhere.
+        > [!Tip]
+        > When the script completes it will return several of the account names and ids, you will need some of those later in the lab so store them somewhere.
 
-    > [!NOTE]
-    > This bash script will create the Azure Cosmos DB API for MongoDB account, create an Azure blob storage and copy the MongoDB backup into the blob storage. ***It can take 5-15 minutes to create these accounts*** and moved the files so it might be a good time to get a cup of coffee or tea.
+        > [!NOTE]
+        > This bash script will create the Azure Cosmos DB API for MongoDB account, create an Azure blob storage and copy the MongoDB backup into the blob storage. ***It can take 5-15 minutes to create these accounts*** and moved the files so it might be a good time to get a cup of coffee or tea.
 
     1. Don't close Visual Studio Code, we'll need it in a few minutes.
 
