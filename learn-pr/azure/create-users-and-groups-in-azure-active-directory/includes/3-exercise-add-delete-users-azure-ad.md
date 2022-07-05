@@ -10,7 +10,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**.
 
-1. In **Create a resource**, in the left menu under **Categories**, select **Identity**. Under **Popular Azure services**, for **Azure Active Directory**, select **Create**.
+1. In **Create a resource**, in the left menu under **Categories**, select **Identity**. Under **Popular Azure services**, select **Create** under **Azure Active Directory**.
 
     :::image type="content" source="../media/azure-active-directory-create.png" alt-text="Screenshot that shows the create link for Azure Active Directory under Azure services.":::
 
