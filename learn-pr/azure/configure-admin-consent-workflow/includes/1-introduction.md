@@ -10,7 +10,7 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 
 Admin consent workflow provides a secure way for administrators to onboard new applications into their organizations while still supporting the users through the process.
 
-:::image type="content" source="../media/1-user-aad-consent" alt-text="Image outlines the admin consent workflow process.":::
+:::image type="content" source="../media/1-user-aad-consent.png" alt-text="Image outlines the admin consent workflow process.":::
 
 In this module, a locally created single page application is used to demonstrate the admin consent workflow. However, you can use your own custom application if you already have one.
 
