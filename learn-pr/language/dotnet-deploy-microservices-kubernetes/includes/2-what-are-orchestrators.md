@@ -39,4 +39,4 @@ These tasks include:
 - Managing network traffic.
 - Storing and managing sensitive information, such as usernames and passwords.
 
-Because Kuberentes is a tool to orchestrate containerized workloads, and you can deploy .NET microservices into containers, you can use Kubernetes to orchestrate your .NET microservices. And that's what the rest of this module will teach you.
+Because Kubernetes is a tool to orchestrate containerized workloads, and you can deploy .NET microservices into containers, you can use Kubernetes to orchestrate your .NET microservices. And that's what the rest of this module will teach you.
