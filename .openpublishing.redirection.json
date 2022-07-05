@@ -14104,6 +14104,41 @@
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/9-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/2-create-a-custom-cell-layout.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/3-use-multiple-cell-layouts-in-a-listview.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/4-exercise-create-and-select-custom-cells.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/5-separate-data-into-groups.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/6-exercise-group-rows-by-first-letter.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
     }
   ]
 }
