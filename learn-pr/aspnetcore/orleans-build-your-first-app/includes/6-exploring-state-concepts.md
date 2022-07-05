@@ -53,12 +53,7 @@ public class UrlShortenerGrain : Grain, IUrlShortenerGrain
 
 ## Configuring grain state
 
-To persist grain state objects in storage, you first must configure a silo storage provider. The essential configurations are handled on the `SiloBuilder` within the `UseOrleans` method. The example below stores grain persistence in Azure Blob Storage, but there are plenty of other providers available.
-
-Remember, the `name` property of the storage provider must match the `storageName` parameter on the state object injected into your grain.
-
-> [!NOTE]
-> DefaultAzureCredential is the recommended way of configuration connections to Azure services and should be used whenever possible. This approach offers strong security and administrative benefits that you can explore in the [Managed Identity Overview](/dotnet/azure/sdk/authentication). However, you can also configure Orleans to connect to services using connection strings. Both approaches are demonstrated in the following code example:
+To persist grain state objects in storage, you first must configure a silo storage provider. The essential configurations are handled on the `SiloBuilder` within the `UseOrleans` method. The following example stores grain persistence in Azure Blob Storage, but there are plenty of other providers available. Remember, the `name` property of the storage provider must match the `storageName` parameter on the state object injected into your grain.
 
 ```csharp
 builder.Host.UseOrleans(siloBuilder =>
@@ -76,5 +71,8 @@ builder.Host.UseOrleans(siloBuilder =>
         });
 });
 ```
+
+> [!NOTE]
+> DefaultAzureCredential is the recommended way of configuration connections to Azure services and should be used whenever possible. This approach offers strong security and administrative benefits that you can explore in the [Managed Identity Overview](/dotnet/azure/sdk/authentication). However, you can also configure Orleans to connect to services using connection strings. Both approaches are demonstrated in the preceding example.
 
 A single grain can store state objects in multiple storage providers. For example, one state object could be stored in-memory, while another might be stored in Azure Table Storage or SQL Server.
