@@ -57,13 +57,13 @@ quiz:
           explanation: "Incorrect. There's no `GrainState` attribute available in Orleans."
     - content: "Which of the following accurately represents the order of a grain lifecycle?"
       choices:
-        - content: "Active → Deactivating → Persisted → Activating"
+        - content: "Activating → Active → Deactivating → Persisted"
           isCorrect: true
           explanation: "Correct. This list is the correct order of events in the grain life cycle."
         - content: "Active → Persisted → Recycled"
           isCorrect: false
           explanation: "Incorrect. This list isn't the correct order of events in the grain life cycle."
-        - content: "Active → Inactive → Persisted"
+        - content: "Activating → Inactive → Persisted"
           isCorrect: false
           explanation: "Incorrect. This list isn't the correct order of events in the grain life cycle."
         - content: "Active → Deactivating → Recycled → Initializing"

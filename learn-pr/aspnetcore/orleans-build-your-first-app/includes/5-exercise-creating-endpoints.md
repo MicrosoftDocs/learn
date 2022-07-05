@@ -69,7 +69,7 @@ The core functionality of the app should now work as expected, so now you can te
 
 1) Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app.
 
-```csharp
+```dotnetcli
 dotnet run
 ```
 

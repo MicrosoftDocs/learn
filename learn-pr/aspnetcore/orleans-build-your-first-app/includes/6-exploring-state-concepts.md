@@ -57,16 +57,22 @@ To persist grain state objects in storage, you first must configure a silo stora
 
 Remember, the `name` property of the storage provider must match the `storageName` parameter on the state object injected into your grain.
 
+> [!NOTE]
+> DefaultAzureCredential is the recommended way of configuration connections to Azure services and should be used whenever possible. This approach offers strong security and administrative benefits that you can explore in the [Managed Identity Overview](/dotnet/azure/sdk/authentication). However, you can also configure Orleans to connect to services using connection strings. Both approaches are demonstrated in the following code example:
+
 ```csharp
 builder.Host.UseOrleans(siloBuilder =>
 {
     siloBuilder.UseLocalhostClustering();
-    .AddAzureBlobGrainStorage(
-        name: "urls",
-        configureOptions: options =>
+    siloBuilder.AddAzureBlobGrainStorage("urls",
+        options =>
         {
-            // Configure the storage connection key
-            options.ConnectionString = "{connection-string}";
+            // Recommended: Connect to Blob Storage using DefaultAzureCredential
+            options.ConfigureBlobServiceClient(new Uri("https://<your-account-name>.blob.core.windows.net"),
+                new DefaultAzureCredential());
+
+            // Connect to Blob Storage using Connection strings
+            // options => options.ConfigureBlobServiceClient(connectionString));
         });
 });
 ```
