@@ -13984,6 +13984,41 @@
       "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/2-implement-stack-navigation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/2-implement-flyout-navigation",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/3-exercise-navigate-between-pages-using-stack-navigation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/3-exercise-implement-flyout-navigation",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/4-display-content-requiring-user-action-using-modal-pages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/5-implement-tab-navigation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/4-implement-tab-navigation",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/6-exercise-navigate-between-pages-using-tab-navigation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/5-exercise-implement-tab-navigation",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/8-summary",
+      "redirect_document_id": false    
     }
   ]
 }
