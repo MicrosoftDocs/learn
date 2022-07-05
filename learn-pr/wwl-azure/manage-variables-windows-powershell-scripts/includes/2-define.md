@@ -1,4 +1,4 @@
-When using the Windows PowerShell pipeline, you can pass data through the pipeline and perform operations on it. This lets you perform many bulk operations such as:
+When using the Windows PowerShell pipeline, you can pass data through the pipeline and perform operations on it. This capability lets you perform many bulk operations such as:
 
 - Querying a list of objects.
 - Filtering the objects.
