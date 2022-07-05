@@ -214,7 +214,9 @@ In the code sample above, you verify that the user is authenticated and that the
 
 ### Provide consent for application access
 
-When a signed-out user navigates to a route requiring authentication, their browser is redirected to the Azure AD sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data. 
+When a signed-out user navigates to a route requiring authentication, their browser is redirected to the Azure AD sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data.
+
+:::image type="content" source="../media/5-consent-to-permissions-request.png" border="false" alt-text="consent to the app's request for permissions":::
 
 Some Azure AD tenants have disabled user consent, which requires admins to consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent
 

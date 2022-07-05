@@ -1,4 +1,8 @@
-Before making a REST call to an API, such as Microsoft Graph, you'll need to acquire an access token. To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
+Before making a REST call to an API, such as Microsoft Graph, you'll need to acquire an access token.
+
+:::image type="content" source="../media/6-acquire-token-interactively.png" border="false" alt-text="Call Microsoft Graph API":::
+
+To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
 
 Note the scope requested by the application by referring app.py. By default, this array is set to `["User.Read]`, the Microsoft Graph API scope for accessing basic user account information. The graph endpoint for accessing this info is `https://graph.microsoft.com/v1.0/me`. 
 
@@ -42,6 +46,8 @@ A call to the Microsoft Graph API is a simple HTTP Get that contains the access 
 
  If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this tutorial, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial auth code flow and performing on-demand, step-up authentication depending on your desired user experience. 
 
+## Acquire token silently
+
 After a user signs in, your app shouldn't ask users to reauthenticate every time they need to access a protected resource. To prevent such reauthentication requests, you acquire an access token without user interaction by calling `acquire_token_silent`, as illustrated in the code sample above. This will first look for a valid access token from the cache, or if needed, find a valid refresh token and then use it to redeem a new access token. 
 
 If the `acquire_token_flow` found an expired access token and needed to use the refresh token, you update the session's token cache to reflect the new access token and refresh token. As such, the next invocation won't require exchanging the refresh token for the access token again.  
@@ -69,4 +75,4 @@ return render_template(
 
 Accessing the Microsoft Graph API with the admin role assigned returns the protected app page, as shown below.
 
-:::image type="content" source="../media/7-call-graph-admin-role.png" border="false" alt-text="Call Microsoft Graph API with defined role assignment":::
+:::image type="content" source="../media/6-call-graph-admin-role.png" border="false" alt-text="Call Microsoft Graph API with defined role assignment":::
