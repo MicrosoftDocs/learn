@@ -1,4 +1,4 @@
-When migrating from a database environment where all you know is the total vCores, we will need to figure out a way to convert those vCores into Request Units. Rememer that [Request Units][/azure/cosmos-db/request-units] or RUs, are how throughput capacity is provisioned on a database or collection in Azure Cosmos DB. This conversion will allow us to capacity plan and estimate the required RUs needed once our collections are migrated to an Azure Cosmos DB environment. Each collection we migrate will be stored in an Azure Cosmos DB collection consisting of a sharded cluster with a 4x replication factor.
+When migrating from a database environment were all you know is the total number of vCores, we will need to figure out a way to convert those vCores into Request Units. Remember that [Request Units][/azure/cosmos-db/request-units] or RUs, are how throughput capacity is provisioned on a database or collection in Azure Cosmos DB. This conversion will allow us to capacity plan and estimate the required RUs needed once our collections are migrated to an Azure Cosmos DB environment. Each collection we migrate will be stored in an Azure Cosmos DB collection consisting of a sharded cluster with a 4x replication factor.
 
 ## Estimating Provisioned Request Units per second (RU/s)
 
@@ -19,7 +19,8 @@ Let's use this formula to do some sample calculations.
 
 - Suppose you want to estimate the RU/s for a single replica set migration.
 
-    [![Diagram showing the single replica migration calculation](../media/2-single-replica-migration.png)](../media/2-single-replica-migration.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Diagram showing the single replica migration calculation.](../media/2-single-replica-migration.png)](../media/2-single-replica-migration.png#lightbox)
 
     Plugin in the numbers to the formula you would get:
 
@@ -29,7 +30,8 @@ Let's use this formula to do some sample calculations.
 
 - Suppose you want to estimate the RU/s for a cluster of homogeneous replica sets migration.
 
-    [![Diagram showing the homogeneous  replica migration calculation](../media/2-homogeneous-replica-migration.png)](../media/2-homogeneous-replica-migration.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Diagram showing the homogeneous replica migration calculation.](../media/2-homogeneous-replica-migration.png)](../media/2-homogeneous-replica-migration.png#lightbox)
 
     Plugin in the numbers to the formula you would get:
 
@@ -39,7 +41,8 @@ Let's use this formula to do some sample calculations.
 
 - Suppose you want to estimate the RU/s for a cluster of heterogeneous replica sets migration.
 
-    [![Diagram showing the heterogeneous replica migration calculation](../media/2-heterogeneous-replica-migration.png)](../media/2-heterogeneous-replica-migration.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Diagram showing the heterogeneous replica migration calculation.](../media/2-heterogeneous-replica-migration.png)](../media/2-heterogeneous-replica-migration.png#lightbox)
 
     Plugin in the numbers to the formula you would get:
 

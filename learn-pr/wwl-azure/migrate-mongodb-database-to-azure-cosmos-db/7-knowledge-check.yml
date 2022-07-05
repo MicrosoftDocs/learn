@@ -14,36 +14,36 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Your team needs to do and online migration of a 900-GB MongoDB database to Azure Cosmos DB. In the past, you did a similar migration but discovered that it caused some rate limiting errors. You would like to control the rate of your writes to reduce the possibility of this type of errors. Which tool should you use?"
+  - content: "The marketing team needs to do an online migration of a 900-GB MongoDB database to Azure Cosmos DB. However, during a previous similar migration, some rate limiting errors were discovered. To reduce the possibility of this type of errors, the migration will need to control the rate of writes it does. Which tool should be used for this migration?"
     choices:
     - content: "**Azure Data Factory (ADF)**"
       isCorrect: false
       explanation: "Incorrect. ADF should only be used for Offline migrations."
     - content: "**Azure Databricks and Spark**"
       isCorrect: true
-      explanation: "Correct. This method allows you to set the **maxBatchSize** value which controls the rate at which data is saved to the target Azure Cosmos DB collection, giving you control of preventing rate limiting errors."
+      explanation: "Correct. This method allows set the **maxBatchSize** value to be set, which controls the rate at which data is saved to the target Azure Cosmos DB collection, giving the migration control of preventing rate limiting errors."
     - content: "**Azure Data Migration Service (DMS)**"
       isCorrect: false
-      explanation: "Incorrect. While DMS is recommended for online migrations < 1 TB, DMS doesn't provide you with an option to control data rate, so rate limiting errors could occur."
-  - content: "You're about to start your pre-migration planning phase and heard that the Data Migration Assistant (DMA) is a great tool to collect information for a couple of the planning stages? Which planning stages will the DMA not directly collect information for."
+      explanation: "Incorrect. While DMS is recommended for online migrations < 1 TB, DMS doesn't provide the migration with an option to control data rate, so rate limiting errors could occur."
+  - content: "The accounting team about to start the pre-migration planning phase and heard that the Data Migration Assistant (DMA) is a great tool to collect information for a couple of the planning stages? Which planning stages will the DMA not directly collect information for."
     choices:
     - content: "***Pre-migration assessment***"
       isCorrect: false
-      explanation: "Incorrect. The DMA assesses the readiness of your existing MongoDB resources for data migration ."
+      explanation: "Incorrect. The DMA assesses the readiness of the existing MongoDB resources for data migration."
     - content: "***Pre-migration discovery***"
       isCorrect: false
-      explanation: "Incorrect. The DMA discovers your existing MongoDB resources and create a data estate spreadsheet to track them."
+      explanation: "Incorrect. The DMA discovers the existing MongoDB resources and creates a data estate spreadsheet to track them."
     - content: "***Pre-migration mapping***"
       isCorrect: true
-      explanation: "Correct. While you will use the DMA information it collected for the *Pre-migration assessment* and *Pre-migration discovery* stages for the *Pre-migration mapping* stage, the DMA itself does not collects or do the mapping."
-  - content: "During your pre-migration planning, you were informed that some of your planning decisions will be immutable so you have to be careful to get it right the first time. Out of the following decisions you made, which one is considered the most crucial because it can't be changed after the migration?"
+      explanation: "Correct. The DMA collects data for the *Pre-migration assessment* and *Pre-migration discovery* stages. This data will be used during the *Pre-migration mapping* stage. However, the DMA itself does not collects or does the mapping during the *Pre-migration mapping* stage."
+  - content: "During the pre-migration planning, the IT team was informed that some of the planning decisions will be immutable so they have to be careful to get it right the first time. Out of the following decisions to make, which one is considered the most crucial because it can't be changed after the migration?"
     choices:
     - content: "Choosing the MongoDB server version."
       isCorrect: false
-      explanation: "Incorrect. You can change the MongoDB server version at any time. Azure Cosmos DB only enables or disables features when you choose different versions, so it is not an immutable decision."
+      explanation: "Incorrect. The MongoDB server version can be changed at any time. Azure Cosmos DB only enables or disables features when a different versions is chosen, so it isn't an immutable decision."
     - content: "When setting the collection throughput, choose Autoscale or Manual Throughput."
       isCorrect: false
-      explanation: "Incorrect. If you are setting the throughput at the collection level, you can change between Autoscale and Manual at any moment, so it is not an immutable decision."
-    - content: "Choosing the Shard Key of your collection."
+      explanation: "Incorrect. If the throughput is set at the collection level, the throughtput can change between Autoscale and Manual at any moment, so it isn't an immutable decision."
+    - content: "Choosing the Shard Key of the collection."
       isCorrect: true
-      explanation: "Correct. One of the most important decisions you must make on the collection level, is choosing the best possible shard key.  Not only because it will define the performance of your collection, but also because once you set the shard key you cant change it.  This choice is immutable."
+      explanation: "Correct. One of the most important decisions to do on the collection level, is choosing the best possible shard key.  Not only because it will define the performance of the collection, but also because once the shard key is set, it can't be changed.  This choice is immutable."

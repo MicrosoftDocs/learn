@@ -9,7 +9,7 @@ Now that you've completed this module, you can:
 
 ## Learn more
 
-For more information about the topics discussed in this module, see:
+For more information about the subjects discussed in this module, see:
 
 - [Convert the number of vCores or vCPUs in your nonrelational database to Azure Cosmos DB RU/s][/azure/cosmos-db/convert-vcore-to-request-unit]
 - [Pre-migration steps for data migrations from MongoDB to Azure Cosmos DB's API for MongoDB][/azure/cosmos-db/mongodb/pre-migration-steps]
