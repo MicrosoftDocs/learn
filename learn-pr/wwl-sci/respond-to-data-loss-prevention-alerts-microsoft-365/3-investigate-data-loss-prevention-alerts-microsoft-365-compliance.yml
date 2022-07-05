@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.investigate-dlp-compliance
-title: Investigate data loss prevention alerts in Microsoft 365 compliance
+title: Investigate data loss prevention alerts in Microsoft Purview
 metadata:
-  title: Investigate data loss prevention alerts in Microsoft 365 compliance
-  description: "Investigate data loss prevention alerts in Microsoft 365 compliance"
-  ms.date: 03/11/2022
+  title: Investigate data loss prevention alerts in Microsoft Purview
+  description: "Investigate data loss prevention alerts in Microsoft Purview"
+  ms.date: 07/05/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
