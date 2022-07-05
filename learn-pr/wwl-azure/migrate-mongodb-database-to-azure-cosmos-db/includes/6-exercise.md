@@ -274,7 +274,7 @@ Now we should have everything we need to define the migration details of our pro
     > [!NOTE]
     > Since we chose a **1 vCore Standard** *price tier*, our migration ***can take 5-15 minutes to complete***, so it might be a good time to take another short break.
 
-1. A few minutes later you should see a status of Completed for all your databases.
+1. After a few minutes, you should see all your databases with a ***Completed*** status.
 
 ## Our documents have now been migrated to Azure Cosmos DB
 
