@@ -1,4 +1,4 @@
-Not every migration will have the luxury of allowing much downtime. For those migrations that require minimal downtime, you might need to do an online migration.  Azure Cosmos DB API for MongoDB has two options to perform online migrations, Azure Data Migration Service (DMS) or MongoDB Spark on Azure Databricks.
+Not every migration will have the luxury of allowing much downtime. For those migrations that require minimal downtime, you might need to do an online migration.  Azure Cosmos DB API for MongoDB has two options to perform online migrations, Azure Database Migration Service (DMS) or MongoDB Spark on Azure Databricks.
 
 With online migrations, businesses can migrate their databases to Azure while the databases continue to be operational. This means that migrations can be completed with minimum downtime for critical applications, limiting the impact to service level availability and inconvenience their end customers.
 

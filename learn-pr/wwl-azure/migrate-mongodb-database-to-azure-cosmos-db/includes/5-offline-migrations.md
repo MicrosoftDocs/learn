@@ -6,7 +6,7 @@ Just like for online migrations, we can perform offline MongoDB to Azure Cosmos 
 - MongoDB on IaaS VM clusters 
 - MongoDB Atlas clusters.
 
- If the source data size is smaller than 1 TB, we should perform this migration using Azure DMS pr ADF. If the data size is larger than 1 TB, we should perform this migration using MongoDB Spark on Databricks + MongoDB Change stream. However, we also have client side options for much smaller databases, so for databases less than 10 GB, you can use MongoDB native tools like mongexport/mongoimport and mogodump/mongorestore.
+ If the source data size is smaller than 1 TB, we should perform this migration using Azure DMS or ADF. If the data size is larger than 1 TB, we should perform this migration using MongoDB Spark on Databricks + MongoDB Change stream. However, we also have client side options for much smaller databases, so for databases less than 10 GB, you can use MongoDB native tools like mongexport/mongoimport and mogodump/mongorestore.
 
 [![Diagram showing the MongoDB offline migration options](../media/5-offline-migration.png)](../media/5-offline-migration.png#lightbox)
 
