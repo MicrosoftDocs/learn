@@ -14059,6 +14059,51 @@
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/8-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/2-benefits-of-using-xaml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/2-xaml-benefits",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/3-types-and-properties-in-xamarin-forms-xaml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/3-types-propeties-maui-xaml",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/4-event-handling-in-xaml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/4-event-handling-xaml",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/5-exercise-create-your-first-xaml-page.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/5-exercise-create-first-xaml-page",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/6-xaml-markup-extensions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/6-xaml-markup-extensions",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/7-platform-specific-values-in-xaml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/7-platform-specific-values-xaml",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/8-exercise-add-behavior-to-your-xaml-page.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/8-exercise-add-behavior-xaml-page",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/9-summary",
+      "redirect_document_id": false    
     }
   ]
 }
