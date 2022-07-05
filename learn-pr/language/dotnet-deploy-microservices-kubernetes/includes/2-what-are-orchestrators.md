@@ -8,7 +8,7 @@ The Contoso Pizza Company website consists of multiple microservices responsible
 
 ![Image illustrating adding multiple containers to a single machine instance](../media/2-container.png)
 
-If you increase the number of a shopping cart container instances and need to deploy a new version, you'll have to update _every single instance_ of that container.
+If you increase the number of shopping cart container instances and need to deploy a new version, you'll have to update _every single instance_ of that container.
 
 Container management helps with these tasks.
 
