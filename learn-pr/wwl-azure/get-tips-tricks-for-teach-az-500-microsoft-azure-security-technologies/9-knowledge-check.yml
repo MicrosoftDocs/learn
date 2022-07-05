@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Every three years"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the latest materials."
     - content: "Once a year"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the latest materials."
     - content: "Quarterly"
       isCorrect: true
-      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course, you know you have the most up-to-date materials."
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course, you know you have the latest materials."
   - content: "Which teaching tool is great for giving students a visual representation of topics in the AZ-500: Microsoft Azure Security Technologies course?"
     choices:
     - content: "The Textbook"

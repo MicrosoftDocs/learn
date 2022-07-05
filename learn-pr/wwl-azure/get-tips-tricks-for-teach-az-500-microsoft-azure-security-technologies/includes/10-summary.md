@@ -22,6 +22,6 @@ Supplemental Resources:
 
 - [AZ-500 Labs ](https://aka.ms/AZ500labs)
 
-- [Choose the right authentication method for your Azure Active Directory hybrid identity solution](http://aka.ms/AADAuthentication) 
+- [Choose the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn) 
 
-- [Features and licenses for Azure AD Multi-Factor Authentication ](http://aka.ms/AADfeaturesdoc)
+- [Features and licenses for Azure AD Multi-Factor Authentication ](/azure/active-directory/authentication/concept-mfa-licensing)
