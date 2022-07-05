@@ -14224,6 +14224,46 @@
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/11-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/11-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/2-accessibility-features.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/3-exercise-enable-screen-readers.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/4-automation-properties.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/5-exercise-add-automation-properties.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/6-keyboard-accessibility.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/7-exercise-keyboard-accessibility.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
+      "redirect_document_id": false    
     }
   ]
 }
