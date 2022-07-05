@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-automated-machine-learning.summary
-title: Summary
+uid: learn.wwl.use-automated-machine-learning.exercise
+title: Exercise
 metadata:
-  title: Summary
-  description: "Summary"
+  title: Exercise
+  description: "Exercise"
   ms.date: 07/05/2022
   author: wwlpublish
   ms.author: gmalc
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 50
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/6-exercise.md)]
