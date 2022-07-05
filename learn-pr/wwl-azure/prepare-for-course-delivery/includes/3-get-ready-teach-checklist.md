@@ -46,7 +46,7 @@ Getting ready to teach checklist:
 
    - Ensure that information is clearly communicated in the syllabus. 
 
-   - Make sure that your course page hast the latest resources from [Microsoft Learn](https://aka.ms/learn), GitHub, and others that you want your students to access for the course. 
+   - Make sure that your course page has the latest resources from [Microsoft Learn](https://aka.ms/learn), GitHub, and others that you want your students to access for the course. 
 
    - Send students an email that welcomes them to class, let them know about the exam they'll be taking, and that they can create their Azure for Students account to access $100 Azure credits. No payment is necessary. These credits are valid for 12 months of free Azure services.  
 

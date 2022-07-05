@@ -10,7 +10,7 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators course planning module](/learn/modules/microsoft-learn-educators-course-plan/) 
 
-- [Microsoft Learn for Educators Training and Tools](https:/aka.ms/MSLETrainingTools)  
+- [Microsoft Learn for Educators Training and Tools](/learn/educator-center/programs/msle/training)  
 
 - [MSLE Teams community ](https://aka.ms/JoinEdTeams)
 
