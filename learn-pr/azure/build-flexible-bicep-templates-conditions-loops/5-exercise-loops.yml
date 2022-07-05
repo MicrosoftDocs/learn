@@ -7,8 +7,8 @@ metadata:
   title: Exercise - Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
   ms.date: 05/09/2021
-  author: akasnik
-  ms.author: akasnik
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
