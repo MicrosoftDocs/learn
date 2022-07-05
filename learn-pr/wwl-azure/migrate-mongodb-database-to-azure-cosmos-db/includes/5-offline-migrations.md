@@ -15,22 +15,10 @@ Let's review some considerations for each of these migration options.
 
 | Migration type | Solution | Considerations |
 | :--- | :--- | :--- |
-| Offline | *[Azure Database Migration Service][/azure/dms/tutorial-mongodb-cosmos-db-online]* | • Makes use of the Azure Cosmos DB bulk executor library \
- • Suitable for large datasets and takes care of replicating live changes \
- •  Works only with other MongoDB sources |
-| Offline | *[Azure Data Factory][/azure/data-factory/connector-azure-cosmos-db?tabs=data-factory]* | • Easy to set up and supports multiple sources \
- • Makes use of the Azure Cosmos DB bulk executor library \
- • Suitable for large datasets \
- • No checkpointing so restart will be needed if issues were triggered during the migration \
- • No dead letter queue could stop the entire migration process because of a few erroneous files \
- • Needs custom code to increase read throughput for certain data sources |
-| Offline | *[Existing Mongo Tools \
- • mongodump \
- • mongorestore \
- • Studio3T)][/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db]* | • Easy to set up and integration \
- • Needs custom handling for throttles |
-| Offline | [Azure Databricks and Spark][/azure/cosmos-db/mongodb/migrate-databricks] | • Full control of migration rate and data transformation \
- • Requires custom coding |
+| Offline | *[Azure Database Migration Service][/azure/dms/tutorial-mongodb-cosmos-db-online]* | • Makes use of the Azure Cosmos DB bulk executor library </br>• Suitable for large datasets and takes care of replicating live changes </br>•  Works only with other MongoDB sources |
+| Offline | *[Azure Data Factory][/azure/data-factory/connector-azure-cosmos-db?tabs=data-factory]* | • Easy to set up and supports multiple sources </br>• Makes use of the Azure Cosmos DB bulk executor library </br>• Suitable for large datasets </br>• No checkpointing so restart will be needed if issues were triggered during the migration </br>• No dead letter queue could stop the entire migration process because of a few erroneous files </br>• Needs custom code to increase read throughput for certain data sources |
+| Offline | *[Existing Mongo Tools </br>• mongodump </br>• mongorestore </br>• Studio3T)][/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db]* | • Easy to set up and integration </br>• Needs custom handling for throttles |
+| Offline | [Azure Databricks and Spark][/azure/cosmos-db/mongodb/migrate-databricks] | • Full control of migration rate and data transformation </br> • Requires custom coding |
 
 Regardless if you need to do an online or an offline migration from MongoDB to Azure Cosmos DB, you should have plenty of options to cover all your migration needs. Azure Cosmos DB API for MongoDB got you covered.
 
