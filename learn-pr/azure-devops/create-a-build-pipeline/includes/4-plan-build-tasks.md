@@ -1,14 +1,14 @@
-Mara now has a copy of the *Space Game* code on her local machine. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 20.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
+Mara now has a copy of the *Space Game* code on her local machine. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 22.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
 
 Here are some notes that Mara collected when she talked to Andy, the dev lead:
 
-* The build machine is running Ubuntu 20.04
+* The build machine is running Ubuntu 22.04.
 * The build machine includes build tools like:
   * npm, the package manager for Node.js
   * NuGet, the package manager for .NET
   * .NET SDK
-* The project uses Sass to make it easier to author cascading style sheets (CSS) files
-* The project uses gulp to minify JavaScript and CSS files
+* The project uses Sass to make it easier to author cascading style sheets (CSS) files.
+* The project uses gulp to minify JavaScript and CSS files.
 
 A minified asset excludes unneeded data (like whitespace) and shortens variable names to help it download faster.
 
@@ -68,7 +68,7 @@ In Azure Pipelines, a _task_ is a packaged script or procedure that's been abstr
 
 An Azure Pipelines task abstracts away the underlying details. This abstraction makes it easier to run common build functions, like downloading build tools or packages your app depends on, or to build your project, running Visual Studio or Xcode.
 
-To build a C# project that targets .NET, here's an example that uses the `DotNetCoreCLI@2` task.
+To build a C# project that targets .NET, here's an example that uses the `DotNetCoreCLI@2` task:
 
 ```yml
 task: DotNetCoreCLI@2
@@ -107,13 +107,13 @@ Mara can use one of two methods to configure her pipeline:
 
 * The visual designer: Here, you drag tasks onto a form, and then configure each task to do exactly what you need.
 
-    :::image type="content" source="../media/4-visual-designer.png" alt-text="The Azure Pipelines visual designer showing build tasks for a .NET application.":::
+    :::image type="content" source="../media/4-visual-designer.png" alt-text="Screenshot of the Azure Pipelines visual designer showing build tasks for a .NET application.":::
 
 * A YAML file: YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
 
 Mara considers her options. She's used YAML previously to define similar build tasks and configuration. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
-_Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code.
+_Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code:
 
 **Ask Abel**
 
