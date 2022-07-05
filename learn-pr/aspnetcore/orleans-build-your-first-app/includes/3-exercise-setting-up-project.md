@@ -1,5 +1,11 @@
 In order to work with Orleans, you'll first need to create a properly configured application. For this module, you'll use an ASP.NET Core 6.0 Minimal API to build a lean but useful URL shortener web service. URL shorteners allow users to submit a long URL to the app, which will then return a much shorter URL they can share with their customers and network. When a user enters the shortened URL in the browser, they'll be redirected to the correct site at the full address.
 
+You can work through this module to create the URL shortener app from start to finish. Alternatively, you can also clone the completed sample project from GitHub to follow along or check your work against the completed code.
+
+```bash
+git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore
+```
+
 This module requires .NET 6.0 to be installed on your computer. You can verify which versions of .NET are installed using the .NET CLI command below.
 
 ```dotnetcli
