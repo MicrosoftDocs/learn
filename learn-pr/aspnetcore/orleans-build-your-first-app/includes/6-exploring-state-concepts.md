@@ -60,15 +60,14 @@ builder.Host.UseOrleans(siloBuilder =>
 {
     siloBuilder.UseLocalhostClustering();
     siloBuilder.AddAzureBlobGrainStorage("urls",
+        // Recommended: Connect to Blob Storage using DefaultAzureCredential
         options =>
         {
-            // Recommended: Connect to Blob Storage using DefaultAzureCredential
             options.ConfigureBlobServiceClient(new Uri("https://<your-account-name>.blob.core.windows.net"),
                 new DefaultAzureCredential());
-
-            // Connect to Blob Storage using Connection strings
-            // options => options.ConfigureBlobServiceClient(connectionString));
         });
+        // Connect to Blob Storage using Connection strings
+        // options => options.ConfigureBlobServiceClient(connectionString));
 });
 ```
 
