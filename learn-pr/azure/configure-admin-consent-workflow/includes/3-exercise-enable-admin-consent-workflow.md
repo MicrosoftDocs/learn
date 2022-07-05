@@ -97,6 +97,6 @@ We'll use the Node.js application to test the admin consent workflow.
 
 1. Sign in using a **Work or School Account** with a user *who isn't assigned* the global administrator role. On the next screen, you'll see the **Approval required** message. In the given text box, enter a justification for requiring admin consent and select **Request Approval**.
 
-   :::image type="content" source="../media/3-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
+   :::image type="content" source="../media/2-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
 
 The designated reviewer is alerted about this request through email and they can view the incoming admin consent request in the Azure portal.

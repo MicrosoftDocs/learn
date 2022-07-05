@@ -1,4 +1,4 @@
-Employees are typically expected to use many applications to accomplish tasks. For most of the applications, Employees have to sign in and consent to the application's permissions before they can use the application. Sometimes when the employee isn't able to consent to an application and doesn't know how to get approval from their administrator, they opt to create logins in the application's site with their personal work accounts. Since these logins aren't easy to track, it's recommended that all employees use their work accounts with single sign-on to access new applications.
+Employees are expected to use many applications to accomplish tasks. For most of the applications, Employees have to sign in and consent to the application's permissions before they can use the application. Sometimes when the employee isn't able to consent to an application and doesn't know how to get approval from their administrator, they opt to create logins in the application's site with their personal work accounts. Since these logins aren't easy to track, it's recommended that all employees use their work accounts with Single Sign-On to access new applications.
 
 To encourage employees to follow the recommended way of accessing new applications, an administrator can configure admin consent workflow to enable the employee to request admin consent right from the consent screen when the employee is unable to grant consent by themselves.
 
@@ -9,6 +9,8 @@ Suppose you work as an IT admin for a retail company that focuses on integrating
 ## What we'll be doing
 
 Admin consent workflow provides a secure way for administrators to onboard new applications into their organizations while still supporting the users through the process.
+
+:::image type="content" source="../media/1-user-aad-consent" alt-text="Image outlines the admin consent workflow process.":::
 
 In this module, a locally created single page application is used to demonstrate the admin consent workflow. However, you can use your own custom application if you already have one.
 
