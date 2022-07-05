@@ -83,7 +83,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Verify that your *deploy.yml* file now looks like the following code:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" highlight="1-6, 16-17, 23, 26, 29, 37-38, 44, 49, 51, 58-59, 71, 74, 77" :::
 
 1. Save your changes to the file.
 
@@ -171,7 +171,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Verify that your *deploy.yml* file now looks like the following code:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" highlight="30-31, 53-55, 82-83" :::
 
 1. Commit and push your changes to your Git repository by using the following commands: 
 
