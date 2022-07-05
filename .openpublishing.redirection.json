@@ -14139,6 +14139,36 @@
       "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/2-what-is-mvvm.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/3-use-a-viewmodel.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/4-exercise-manage-selection-with-a-viewmodel.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/5-use-commands-in-a-viewmodel.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
     }
   ]
 }
