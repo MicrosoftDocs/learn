@@ -59,7 +59,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
 
 1. Download the [product2.json](https://aka.ms/product2.json?azure-portal=true) JSON file from `https://aka.ms/product2.json` and save it on your computer in the same folder where you downloaded **product1.json** previously - you'll upload it to blob storage later).
-1. In the Azure portal page for your storage container, on the left side, scroll down to the **Settings** section, and select **Data Lake Gen2 upgrade**.
+1. In the Azure portal page for your storage account, on the left side, scroll down to the **Settings** section, and select **Data Lake Gen2 upgrade**.
 1. In the ****Data Lake Gen2 upgrade**** page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.
 1. When the upgrade is complete, in the pane on the left side, in the top section, select **Storage browser (preview)** and navigate back to the root of your **data** blob container, which still contains the **product_data** folder.
 1. Select the **product_data** folder, and verify it still contains the **product1.json** file you uploaded previously.

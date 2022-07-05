@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-relevance-of-results-add-score-profiles
+title: Improve the relevance of results by adding scoring profiles
+metadata:
+  title: Improve the relevance of results by adding scoring profiles
+  description: "Improve the relevance of results by adding scoring profiles"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-improve-relevance-of-results-add-score-profiles.md)]
