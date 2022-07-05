@@ -3,7 +3,7 @@ uid: learn.wwl.work-arrays-hash-tables-window-powershell-scripts
 metadata:
   title: Work with arrays and hash tables in Window PowerShell scripts
   description: "This module explains how to use arrays and hash tables in Windows PowerShell scripts."
-  ms.date: 07/01/2022
+  ms.date: 07/05/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

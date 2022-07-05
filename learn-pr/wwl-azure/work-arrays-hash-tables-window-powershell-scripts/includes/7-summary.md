@@ -17,7 +17,7 @@ In this module, you learned about arrays, array lists, and hash tables. The foll
 
 - To set the execution policy on a computer, use the **Set-ExecutionPolicy** cmdlet. 
 
-- Anr alternative for controlling the use of Windows PowerShell scripts is AppLocker. With AppLocker, you can set various restrictions that limit the running of specific scripts or scripts in specific locations.
+- An alternative for controlling the use of Windows PowerShell scripts is AppLocker. With AppLocker, you can set various restrictions that limit the running of specific scripts or scripts in specific locations.
 
 - ConstrainedLanguage mode allows all core Windows PowerShell functionality, such as scripting constructs. It also allows modules included in Windows to be loaded. However, it does limit access to running arbitrary code and accessing Microsoft .NET objects.
 
