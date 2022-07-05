@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.orleans-build-first-app
+metadata:
+  title: Build your first Orleans app with ASP.NET Core 6.0
+  description: Learn how to build cloud native, distributed apps with Orleans.
+  ms.date: 5/10/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Build your first Orleans app with ASP.NET Core 6.0
+summary: Learn how to build cloud native, distributed apps with Orleans.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and set up a project to use Orleans
+  - Work with core Orleans components such as grains and silo
+  - Integrate Orleans into web service endpoints
+  - Persist and manage state with Orleans
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure-app-service
+- dotnet-orleans
+subjects:
+  - development-tools
+prerequisites: |
+  - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com) with the Azure development workload installed
+units:
+- learn.orleans-build-first-app.introduction
+- learn.orleans-build-first-app.essential-concepts
+- learn.orleans-build-first-app.exercise-setting-up-projects
+- learn.orleans-build-first-app.exercise-creating-grains-silos
+- learn.orleans-build-first-app.exercise-creating-endpoints
+- learn.orleans-build-first-app.exploring-state-concepts
+- learn.orleans-build-first-app.exercise-persisting-state
+- learn.orleans-build-first-app.knowledge-check
+- learn.orleans-build-first-app.summary
+
+badge:
+  uid: learn.orleans-build-first-app.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.orleans-build-first-app.exercise-setting-up-projects
+title: Setting up the sample app
+metadata:
+  title: Setting up the sample app
+  description: Set up your first app to use Orleans.
+  ms.date: 5/15/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-setting-up-project.md)]
