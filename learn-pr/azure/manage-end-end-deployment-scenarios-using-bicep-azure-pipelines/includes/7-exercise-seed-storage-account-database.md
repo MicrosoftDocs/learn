@@ -105,7 +105,6 @@ Your website developers have prepared a Visual Studio database project that depl
    |-|-|
    | SqlServerAdministratorLogin | ToyCompanyAdmin |
    | SqlServerAdministratorLoginPassword | SecurePassword!111 |
-   | | |
 
 1. Select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable. This tells Azure Pipelines to treat the variable's value securely.
 
@@ -121,7 +120,6 @@ Your website developers have prepared a Visual Studio database project that depl
    |-|-|
    | SqlServerAdministratorLogin | TestToyCompanyAdmin |
    | SqlServerAdministratorLoginPassword | SecurePassword!999 |
-   | | |
 
    Remember to select the padlock icon next to the **SqlServerAdministratorLoginPassword** variable and save the variable group.
 
@@ -174,7 +172,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Verify that your *main.bicep* file looks like this:
 
-   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-36, 38-39, 55-60, 73-78, 112-127, 150-160, 163-186, 190-193" :::
+   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-39, 55-60, 73-78, 112-127, 150-160, 163-186, 190-193" :::
 
    If it doesn't, update it to match the file contents.
 

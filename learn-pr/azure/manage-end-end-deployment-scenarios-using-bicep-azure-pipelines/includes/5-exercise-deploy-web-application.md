@@ -90,7 +90,7 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Verify that your *deploy.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="62-63, 89, 96-105" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="62-63, 89, 96-106" :::
 
 1. Save your changes to the file.
 
