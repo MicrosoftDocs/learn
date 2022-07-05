@@ -14019,6 +14019,46 @@
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/8-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/2-specify-the-size-of-a-view.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/2-specify-size-view",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/3-exercise-explore-alignment-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/3-exercise-explore-alignment-options",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/4-arrange-view-with-stacklayout.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/4-arrange-views-stacklayout",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/5-exercise-use-stacklayout-to-build-a-ui.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/5-exercise-stacklayout-build-user-interface",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/6-arrange-view-with-grid.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/6-arrange-views-grid",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/7-exercise-use-grid-to-build-a-ui.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/7-exercise-grid-build-user-interface",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/8-summary",
+      "redirect_document_id": false    
     }
   ]
 }
