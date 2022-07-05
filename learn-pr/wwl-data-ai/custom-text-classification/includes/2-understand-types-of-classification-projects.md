@@ -17,7 +17,7 @@ In single label projects, each file is assigned one class during the tagging pro
 
 When tagging multiple label projects, you can assign as many classes that you want per file. The impact of the added complexity means your data has to remain clear and provide a good distribution of possible inputs for your model to learn from.
 
-![Conceptual diagram that shows mapping of documents to labels for single label and multiple label classifications.](../media/single-multiple-graphic.png#lightbox)
+[![Conceptual diagram that shows mapping of documents to labels for single label and multiple label classifications.](../media/single-multiple-graphic.png)](../media/single-multiple-graphic.png#lightbox)
 
 Tagging data correctly, especially for multiple label projects, is directly correlated with how well your model performs. The higher the quality, clarity, and variation of your data set is, the more accurate your model will be.
 

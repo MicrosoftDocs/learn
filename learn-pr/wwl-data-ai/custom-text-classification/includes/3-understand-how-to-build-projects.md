@@ -2,7 +2,7 @@ Custom text classification projects are your workspace to build, train, improve,
 
 ## Language service project life cycle
 
-![Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text.](../media/classify-development-lifecycle.png#lightbox)
+[![Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text.](../media/classify-development-lifecycle.png)](../media/classify-development-lifecycle.png#lightbox)
 
 * **Define labels**: Understanding the data you want to classify, identify the possible labels you want to categorize into. In our video game example, our labels would be "Action", "Adventure", "Strategy", and so on.
 * **Tag data**: Tag your existing data, specifying the label or labels each file falls under. Tagging data is important since it's how your model will learn how to classify future files. Best practice is to have clear differences between labels to avoid ambiguity, and provide good examples of each label for the model to learn from. For example, we'd tag "Quest for the Mine Brush" would be tagged as "Adventure", and "Flight Trainer" as "Action".
