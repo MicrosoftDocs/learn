@@ -14169,6 +14169,61 @@
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/2-define-and-use-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/2-define-and-use-resources",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/3-exercise-use-page-level-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/3-exercise-use-page-level-resources",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/4-use-and-update-dynamic-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/4-use-and-update-dynamic-resources",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/5-exercise-use-dynamicresource-to-update-elements.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/5-exercise-use-dynamic-resources-to-update-element",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/6-create-consistent-ui-with-styles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/6-create-consistent-ui-by-using-styles",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/7-exercise-create-and-apply-a-style.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/7-exercise-create-and-apply-a-style",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/8-create-and-use-applicationwide-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/8-create-and-use-application-wide-resources",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/9-exercise-use-application-wide-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/9-exercise-use-application-wide-resources",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/10-apply-user-accessibility-choices-with-builtin-styles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/11-summary",
+      "redirect_document_id": false    
     }
   ]
 }
