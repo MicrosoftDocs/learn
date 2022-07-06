@@ -1,6 +1,6 @@
-This deployment architecture is called active/active because you deploy your active SAP application servers across two or three zones. The SAP Central Services instance that uses enqueue replication will be deployed between two zones. The same is true for the DBMS layer, which will be deployed across the same zones as SAP Central Service.
+The deployment architecture is called active/active because you deploy your active SAP application servers across two or three zones. The SAP Central Services instance that uses enqueue replication will be deployed between two zones. The same is true for the DBMS layer, which will be deployed across the same zones as SAP Central Service.
 
-When considering this configuration, you need to find the two Availability Zones in your region that offer cross-zone network latency that's acceptable for your workload and your synchronous DBMS replication. You also want to be sure the delta between network latency within the zones you selected, and the cross-zone network latency isn't too large. This is because you don't want large variations, depending on whether a job runs in-zone with the DBMS server or across zones, in the running times of your business processes or batch jobs. Some variations are acceptable, but not factors of difference.
+When considering the active/active configuration, you need to find the two Availability Zones in your region that offer cross-zone network latency that's acceptable for your workload and your synchronous DBMS replication. You want a small delta between network latency within the zones you selected, and the cross-zone network. You don't want large variations in the running times of your business processes or batch jobs depending on whether a job runs in-zone with the DBMS server or across zones. Small latency reduces the batch job run time variation between zones.
 
 The following considerations apply for this configuration:
 
@@ -13,7 +13,7 @@ The following considerations apply for this configuration:
 
   - For Windows, a cluster solution that uses Storage Spaces Direct-based Scale Out File Server (SOFS) that provides a highly available share or SIOS DataKeeper, which emulates a highly available shared disk.
   - For SUSE Linux, an NFS share. To provide a highly available NFS share, SAP NetWeaver requires an NFS server. The NFS server can be provisioned by using Azure VMs in a separate cluster, Azure NetApp Files, or Red Hat GlusterFS.
-- Currently, the solution that uses Microsoft Scale-Out File Server is not supported across zones.
+- Currently, the solution that uses Microsoft Scale-Out File Server isn't supported across zones.
 - The third zone is used to host the SBD device in case you build a SUSE Linux Pacemaker cluster or additional application instances.
 - To achieve run time consistency for critical business processes, you can try to direct certain batch jobs and users to application instances that are in-zone with the active DBMS instance by using SAP batch server groups, logon groups, or RFC groups. However, if a zonal failover occurs, you would need to manually move these groups to instances running on VMs that are in-zone with the active DB VM.
 - You might want to deploy dormant dialog instances in each of the zones. This is to enable an immediate return to the former resource capacity if a zone used by part of your application instances is out of service.
