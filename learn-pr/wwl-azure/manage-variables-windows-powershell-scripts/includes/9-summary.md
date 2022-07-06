@@ -12,7 +12,7 @@ In this module, you learned about variables and some rules for how to use them. 
 - A DateTime variable contains both the date and the time. You can use the DateTime variable properties to access specific parts of the date or time. 
 
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following documents:
 
