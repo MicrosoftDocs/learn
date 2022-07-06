@@ -23,7 +23,7 @@ quiz:
           isCorrect: true
           explanation:
             "Correct. Azure Web PuSub is useful when an application requires
-            real-time publish-subscribe messaging service."
+            real-time publish-subscribe functionality."
         - content:
             "Azure Web PubSub requires you to configure and set up the infrastructure
             from scratch before using the service."
@@ -34,6 +34,7 @@ quiz:
         - content: "You can't use REST API with Azure Web PubSub"
           isCorrect: false
           explanation:
-            "Incorrect. Azure Web PubSub service provides REST API to enable
+            "Incorrect. Azure Web PubSub service provides a REST API to let
+            applications to post messages to clients, in any REST-capable programming language."
             applications to post messages to clients connected, in any REST
             capable programming languages."

@@ -3,7 +3,7 @@ uid: learn.intro-azure-web-pubsub.what-azure-web-pubsub
 title: What is Azure Web PubSub
 metadata:
   title: What is Azure Web PubSub
-  description: In this unit, we understand what Azure PubSub is and why we should use it.
+  description: In this unit, we understand what Azure Web PubSub is and why we should use it.
   author: saifeemustafaq
   ms.author: msaifee
   ms.date: 03/31/2022

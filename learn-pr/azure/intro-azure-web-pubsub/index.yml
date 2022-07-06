@@ -2,14 +2,14 @@
 uid: learn.intro-azure-web-pubsub
 metadata:
   title: Introduction to Azure Web PubSub
-  description: Learn what is Azure Web PubSub, when to use it and how it works.
+  description: Learn what Azure Web PubSub is, when to use it, and how it works.
   ms.date: 03/31/2022
   author: saifeemustafaq
   ms.author: msaifee
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Web PubSub
-summary: Azure Web PubSub is an excellent choice when you want to develop web applications with real-time messaging. It's a fully managed service that supports native and serverless WebSockets. Learn what is Azure Web PubSub, when to use it and how it works.
+summary: Azure Web PubSub is an excellent choice when you want to develop web applications with real-time messaging. It's a fully managed service that supports native and serverless WebSockets. Learn what Azure Web PubSub is, when to use it, and how it works.
 abstract: |
   In this module you'll learn:
   - What is Azure Web PubSub
@@ -22,7 +22,6 @@ roles:
   - developer
   - student
 products:
-  - vs
   - azure-web-pubsub
 prerequisites: |
   - Basic knowledge of server-client architecture.
