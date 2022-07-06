@@ -14344,6 +14344,66 @@
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/2-share-code-using-net-standard-libraries.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/3-use-an-interface-to-create-an-abstraction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/4-use-an-abstract-class-to-create-an-abstraction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/5-use-inversion-of-control-to-manage-platform-specific-dependencies.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/6-locate-dependencies-using-the-factory-pattern.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/7-exercise-use-the-factory-pattern-to-access-a-dependency-from-shared-code.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/8-use-a-service-locator-to-register-and-retrieve-dependencies.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/9-exercise-add-an-abstraction-and-service-locator-into-your-project-to-find-and-use-a-platform-specific-feature.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/10-use-an-ioc-container-to-automatically-inject-dependencies.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/11-exercise-switch-to-an-ioc-container-and-inject-your-dependency-into-your-code.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
     }
   ]
 }
