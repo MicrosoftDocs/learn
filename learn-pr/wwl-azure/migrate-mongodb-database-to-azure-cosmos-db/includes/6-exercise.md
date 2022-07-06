@@ -206,7 +206,7 @@ Azure Blob Storage connections strings are in a URI format. Additionally, these 
 1. Finally, select the **Generate SAS token and URL** button to generate the URI we need. A  ***Blob SAS token***, and a ***Blob SAS URL*** will be generated. Copy the **Blob SAS URL** because we'll need it in the next steps.
 
     > [!div class="mx-imgBorder"]
-    > [![Diagram showing the shared access signature web address.](../media/6-shared-access-signature-url.png)](../media/6-shared-access-signature-url.png#lightbox)
+    > [![Diagram showing the shared access signature web address.](../media/6-shared-access-signature-web-address.png)](../media/6-shared-access-signature-web-address.png#lightbox)
 
 ### Migration Project general information
 
