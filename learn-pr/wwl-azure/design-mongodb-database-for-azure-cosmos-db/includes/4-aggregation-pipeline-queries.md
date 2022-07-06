@@ -1,6 +1,6 @@
 While many times you might need your query to return a set of documents to be processed programmatically with the collection's *find* method, other times you might just want the query to return an aggregation like a sum or an average. Azure Cosmos DB API for MongoDB leverages on MongoDB's Aggregation pipelines that allow your queries to perform those aggregations at the server level. This gives you the ability to create more sophisticated queries.
 
-## Aggregation Pipeline
+## Aggregation pipeline
 
 Aggregation pipelines as the name suggests, uses a multi-stage data processing pipelines that transform and aggregate results. Let's take a look at some of the common stages used to define the pipelines.
 
@@ -22,7 +22,7 @@ While the *$match* and *$sort* pipelines filter and order our aggregations respe
 - **$avg** - Returns an average of numerical values.
 - **$sum** - Returns a sum of numerical values.
 
-## Using Aggregation Pipeline to query our data
+## Using aggregation pipeline to query our data
 
 Below we'll define some query scenarios to define some of our aggregation pipelines. 
 
@@ -64,7 +64,7 @@ Let's assume we have a collection called *salesReceipts* and we have the followi
     }
 ```
 
-### Aggregation Pipeline examples using the Mongo Shell
+### Aggregation pipeline examples using the Mongo Shell
 
 To run an aggregation pipeline query in the mongo shell, we'll use the collection's function ***aggregate***.
 

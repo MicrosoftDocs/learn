@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/05/2022
+  ms.date: 07/06/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -17,29 +18,29 @@ quiz:
     choices:
     - content: "**$sum**"
       isCorrect: false
-      explanation: "Incorrect. *$sum* isn't an aggregation pipeline stage* but an *aggregation pipeline operator*. Note that you'll still use the *$sum* with a property like **countAlert: { $sum: 1 }** inside the $group pipeline to calculate the counts."
+      explanation: "Incorrect. *$sum* isn't an *aggregation pipeline stage* but an *aggregation pipeline operator*. You'll still use the *$sum* with a property like **countAlert: { $sum: 1 }** inside the $group pipeline to calculate the counts."
     - content: "**$group**"
       isCorrect: true
-      explanation: "Correct. You would first need to group by DeviceId and inside the *$group* stage you will calculate the count."
+      explanation: "Correct. You would first need to group by DeviceId and inside the *$group* stage you'll calculate the count."
     - content: "**$unwind**"
       isCorrect: false
       explanation: "Incorrect. *$unwind* flattens an array, but it does no calculations."
   - content: "When should you embed the data in your collections?"
     choices:
-    - content: "When you read or update independently."
+    - content: "Embed when you read or update independently."
       isCorrect: false
-      explanation: "Incorrect. Specially in updates, where combining the entities will result in large documents, this will cause a larger cost every time you needed to updated the documents when most properties of unrelated entities would not be needed to be updated."
-    - content: "When you have 1:Many relationships."
+      explanation: "Incorrect. You should not embed data, specially in updates, where combining the entities will result in large documents. Embedding will cause a larger cost every time you needed to updated these documents. Larger cost would occur when most properties of unrelated entities wouldn't even need to be updated."
+    - content: "Embed when you have 1:Many relationships."
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB has a maximum document size of 2 MB, so in unbounded relationships these documents could grow extremely large and hit our document size limit."
-    - content: "When you read or update together."
+      explanation: "Incorrect. Azure Cosmos DB has a maximum document size of 2 MB, so in unbounded relationships these documents could grow large and hit our document size limit."
+    - content: "Embed when you read or update together."
       isCorrect: true
-      explanation: "Correct. Data that's read or updated together is nearly always modeled as a single document. This is especially true because our objective for our NoSQL model is to reduce the number of requests to our database."
+      explanation: "Correct. Data that's read or updated together is nearly always modeled as a single document. The benefit is especially true because our objective for our NoSQL model, is to reduce the number of requests to our database."
   - content: "Your application needs to run a query that searches by **lastName** and **firstName**. What type of index should you create that returns these documents quickly and also reduces the filtering and indexing costs?"
     choices:
     - content: "Wildcard."
       isCorrect: false
-      explanation: "Incorrect. Wildcards would index all fields either under the root or under a specified sub-property, and since most likely we have more fields than **lastName** and **firstName**, wildcards will most likely not help in this case."
+      explanation: "Incorrect. Wildcards would index all fields either under the root or under a specified subproperty. Since most likely we have more fields than **lastName** and **firstName**, wildcards will most likely not help in this case."
     - content: "One compound index for the fields **lastName** and **firstName**."
       isCorrect: false
       explanation: "Incorrect. While a compound index would have the same filtering cost than single indexes per field, it would have higher indexing cost than the single indexes per field."

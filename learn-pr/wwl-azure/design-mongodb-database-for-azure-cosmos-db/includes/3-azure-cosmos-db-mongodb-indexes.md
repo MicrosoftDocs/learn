@@ -22,7 +22,8 @@ Under your Azure Cosmos DB API for MongoDB database in the Azure portal, select 
 1. Under the next textbox, input **quantity** and select **Single Field** from the dropdown.
 1. Select on the Save icon.
 
-[![Diagram showing the how to add index policies using the Azure Portal Index Policy tab](../media/3-add-index-policy-azure-portal-index-policy-tab.png)](../media/3-add-index-policy-azure-portal-index-policy-tab.png#lightbox)
+  > [!div class="mx-imgBorder"]
+  > [![Diagram showing the how to add index policies using the Azure Portal Index Policy tab.](../media/3-add-index-policy-azure-portal-index-policy-tab.png)](../media/3-add-index-policy-azure-portal-index-policy-tab.png#lightbox)
 
 #### Create a single field index using the MongoDB Shell
 
@@ -153,7 +154,8 @@ One more interesting note about compound indexes, they can be used for reversed 
 db.doctors.find().sort({lastName:-1,firstName:-1})
 ```
 
-> &#128221; Note that you can't create a compound index using the Azure Portal.
+> [!NOTE] 
+> You can't create a compound index using the Azure Portal.
 
 Let's suppose we want to add a compound index by ***lastName*** descending and ***firstName*** descending for the *doctors* collection in the *employees* database.
 
@@ -313,7 +315,7 @@ We actually saw a wildcard index earlier, the index ***`$**`*** in the screensho
 
 Azure Cosmos DB API for MongoDB supports several index properties depending on the version. We'll look a couple of them here, to learn more, please review the [supported indexes and indexed properties][/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties] article.
 
-### Unique Indexes
+### Unique indexes
 
 To enforce uniqueness in your documents, you'll need to set the **unique** property to ***true*** when defining your index. Let's assume we want to make sure the *deviceId* is unique in our *IOT* collection. Using Mongo Shell we would run the following command to ensure uniqueness.
 
@@ -327,7 +329,8 @@ If our collection is sharded, we'll also need to provide the partition key to cr
 db.IOT.createIndex( {"locationId": 1, "deviceId" : 1 }, {unique:true} )
 ```
 
-> &#128221; Note that you can only create a unique index on an empty collection.
+> [!NOTE] 
+> You can only create a unique index on an empty collection.
 
 ### Unique partial indexes
 

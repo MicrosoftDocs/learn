@@ -8,7 +8,7 @@ Now that you've completed this module, you can:
 
 ## Learn more
 
-For more information about the topics discussed in this module, see:
+For more information about the subjects discussed in this module, see:
 
 - [Manage indexing in Azure Cosmos DB API for MongoDB][/azure/cosmos-db/mongodb/mongodb-indexing]
 - [Azure #CosmosDB extends support for MongoDB aggregation pipeline, unique indexes, and more][/blog/azure-cosmosdb-extends-support-for-mongodb-aggregation-pipeline-unique-indexes-and-more/]

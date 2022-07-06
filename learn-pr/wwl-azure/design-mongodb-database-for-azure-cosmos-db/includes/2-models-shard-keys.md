@@ -69,11 +69,12 @@ Reference data as separate documents when the following criteria apply to your d
 
 Separating these properties reduces throughput consumption for more efficiency. It also reduces latency for better performance.
 
-## Choose a Shard key
+## Choose a shard key
 
 In Azure Cosmos DB databases, JSON documents are stored within collections that are in turn distributed across physical shards and where the data is routed to the appropriate physical shard based on the value of a shard key.
 
-[![Diagram showing the physical shard](../media/2-physical-shards.png)](../media/2-physical-shards.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the physical shard.](../media/2-physical-shards.png)](../media/2-physical-shards.png#lightbox)
 
 The shard key is a required document property that ensures documents with the same shard key value are routed to and stored within a specific physical shard. A physical shard supports a fixed maximum amount of storage and throughput (RU/s). When the capacity of a physical shard gets close to the maximum storage, Azure Cosmos DB adds another physical shard to the collection. Azure Cosmos DB automatically distributes the logical shards across the available physical shards, again using the shard key value to so in a predictable way.
 
@@ -85,13 +86,15 @@ In Azure Cosmos DB, you increase storage and throughput by adding more physical 
 
 The shard key ensures documents with the same shard key value are considered to belong to the same logical shard and are routed to and stored within a specific physical shard. Multiple logical shards can be stored within a single physical shard. Collections can have an unlimited number of logical shards. Individual logical shards are moved to new physical shard as a unit as the collection grows. Moving logical shards as a unit ensures that all documents within it reside on the same physical shard. The maximum size for a logical shard is 20 GB. Using a shard key with high cardinality to allows you to avoid this 20-GB limit by spreading your data across a larger number of logical shards.
 
-[![Diagram showing the relationship between physical and logical shards](../media/2-relationship-between-physical-and-logical-shards.png)](../media/2-relationship-between-physical-and-logical-shards.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the relationship between physical and logical shards.](../media/2-relationship-between-physical-logical-shards.png)](../media/2-relationship-between-physical-logical-shards.png#lightbox)
 
 A shard key provides a way to route data for a logical shard. It's a property that exists within every document in your collection that routes your data. A collection is another abstraction and is for all data stored with the same shard key. The shard key is defined when you create a collection.
 
 In the following example, the collection has a shard key of *username*.
 
-[![Diagram showing the create collection shard key](../media/2-collection-shard-key.png)](../media/2-collection-shard-key.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the create collection shard key.](../media/2-collection-shard-key.png)](../media/2-collection-shard-key.png#lightbox)
 
 ### Avoid hot shards
 
@@ -105,21 +108,25 @@ When data isn't sharded correctly, it can result in hot shards. Hot shards preve
 
 A hot shard on storage occurs when you have a shard key that results in highly asymmetric storage patterns. As an example, consider a multi-tenant application that uses TenantId as its shard key with five tenants: A to F. Tenants B,C,D and E are very small, Tenant D has a little more data. However Tenant A is massive and quickly hits the 20-GB limit for its shard. In this scenario, we need to select a different shard key that will spread the storage across more logical shards.
 
-[![Diagram showing the storage distribution skew](../media/2-storage-distribution-skew.png)](../media/2-storage-distribution-skew.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the storage distribution skew.](../media/2-storage-distribution-skew.png)](../media/2-storage-distribution-skew.png#lightbox)
 
 #### Throughput hot shards
 
 Throughput can suffer from hot shards when most or all of the requests go to the same logical shard.
 
-It's important to understand the access patterns for your application to ensure that requests are spread as evenly as possible across shard key values. When throughput is provisioned for a collection in Azure Cosmos DB, it's allocated evenly across all the physical shards within a collection.
+> [!IMPORTANT]
+> It's important to understand the access patterns for your application to ensure that requests are spread as evenly as possible across shard key values. When throughput is provisioned for a collection in Azure Cosmos DB, it's allocated evenly across all the physical shards within a collection.
 
 As an example, if you have a collection with 30,000 RU/s, this workload is spread across the three physical shards for the same six tenants mentioned earlier. So each physical shard gets 10,000 RU/s. If tenant D consumes all of its 10,000 RU/s, it will be rate limited because it can't consume the throughput allocated to the other shard. This results in poor performance for tenant C and D, and leaving unused compute capacity in the other physical shards and remaining tenants. Ultimately, this shard key results in a database design where the application workload can't scale.
 
-[![Diagram showing the hot shard throughput](../media/2-hot-shard-throughput.png)](../media/2-hot-shard-throughput.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the hot shard throughput.](../media/2-hot-shard-throughput.png)](../media/2-hot-shard-throughput.png#lightbox)
 
 When data and requests are spread evenly, the database can grow in a way that fully utilizes both the storage and throughput. The result will be the best possible performance and highest efficiency. In short, the database design will scale.
 
-[![Diagram showing the even distribution of the shards](../media/2-shards-even.png)](../media/2-shards-even.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the even distribution of the shards.](../media/2-shards-even.png)](../media/2-shards-even.png#lightbox)
 
 #### Consider reads versus writes
 
@@ -129,10 +136,12 @@ For read-heavy workloads, you should ensure that queries are processed by one or
 
 The following illustration shows a collection that's sharded by *username*. This query will hit only a single logical shard, so its performance will always be good.
 
-[![Diagram showing the shard key being part of the query](../media/2-shard-key-in-query.png)](../media/2-shard-key-in-query.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the shard key being part of the query.](../media/2-query-shard-key.png)](../media/2-query-shard-key.png#lightbox)
 
 A query that filters on a different property, such as *favoriteColor*, would "fan out" to all shards in the collection. This is also known as a cross-shard query. Such a query will perform as expected when the collection is small and occupies only a single shard. However, as the collection grows and there are increasing number of physical shards, this query will become slower and more expensive because it will need to check every shard to get the results whether the physical shard collection data related to the query or not.
 
-[![Diagram showing the a cross-shard query](../media/2-cross-shard-query.png)](../media/2-cross-shard-query.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Diagram showing the a cross-shard query.](../media/2-cross-shard-query.png)](../media/2-cross-shard-query.png#lightbox)
 
 As you've seen in this unit, selecting the right model and shard key for your collections can improve performance and reduce costs.
