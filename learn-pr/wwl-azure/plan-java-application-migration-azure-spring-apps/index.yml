@@ -3,7 +3,7 @@ uid: learn.wwl.plan-java-application-migration-azure-spring-apps
 metadata:
   title: Plan a Java application migration to Azure Spring Apps
   description: "Plan a Java application migration to Azure Spring Apps"
-  ms.date: 06/06/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.plan-java-application-migration-azure-spring-apps.introduction

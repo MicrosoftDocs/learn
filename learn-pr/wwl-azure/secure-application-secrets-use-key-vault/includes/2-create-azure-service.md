@@ -2,7 +2,7 @@ Centralizing storage of application secrets in Azure Key Vault allows you to con
 
 Apps securely access the information by using URIs allowing them to retrieve specific versions of a secret after the application’s key or secret is stored in Azure Key Vault.
 
-Azure Key Vault helps solve the following problems:
+Azure Key Vault provides the following services:
 
  -  **Secrets Management** \- Store and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
  -  **Key Management** \- Use as a key management solution to create and control the encryption keys used to encrypt data.
@@ -15,7 +15,7 @@ From the Bash Git prompt, run the commands below to create an Azure Key Vault in
 ```Bash
 KEYVAULT_NAME=springcloudkv$RANDOM$RANDOM
 az keyvault create \
-    --name $KEYVAULT_NAME
+    --name $KEYVAULT_NAME \
     --resource-group $RESOURCE_GROUP \
     --location $LOCATION \
     --sku standard

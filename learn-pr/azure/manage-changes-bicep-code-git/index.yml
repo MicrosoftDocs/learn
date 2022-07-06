@@ -5,8 +5,8 @@ metadata:
   title: Manage changes to your Bicep code by using Git
   description: Learn how to use Git version control with your Bicep files and infrastructure as code.
   ms.date: 07/08/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage changes to your Bicep code by using Git

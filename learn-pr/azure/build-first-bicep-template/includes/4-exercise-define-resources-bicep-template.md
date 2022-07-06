@@ -31,7 +31,10 @@ During the process, you'll:
 
    Notice that Visual Studio Code automatically suggests property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values that you can use.
 
-1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique. Make sure the name is all lowercase, without any special characters, and fewer than 24 characters.
+1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a unique name. Make sure the name is all lowercase, without any special characters, and fewer than 24 characters.
+
+   > [!IMPORTANT]
+   > Don't skip this step. If you do, your Bicep file won't deploy successfully.
 
 1. Save the changes to the file.
 

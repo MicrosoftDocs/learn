@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.secure-mysql
+metadata:
+  title: Secure MySQL
+  description: "Learn about Azure Database for MySQL security, encryption in Azure Database for MySQL, and how to configure Azure AD authentication."
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure MySQL
+summary: Learn about Azure Database for MySQL security, encryption in Azure Database for MySQL, and how to configure Azure AD authentication.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe authentication
+  - Describe built-in Azure MySQL database roles
+  - Understand encryption in MySQL
+  - Configure Azure Active Directory authentication for Azure Database for MySQL
+prerequisites: |
+  Demonstrate an understanding of relational databases. Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-mysql
+- active-directory
+subjects:
+- database
+units:
+- learn.wwl.secure-mysql.introduction
+- learn.wwl.secure-mysql.describe-authentication
+- learn.wwl.secure-mysql.understand-super-user-access
+- learn.wwl.secure-mysql.describe-built-azure-mysql-database-roles
+- learn.wwl.secure-mysql.understand-encryption-mysql
+- learn.wwl.secure-mysql.configure-azure-active-directory-authentication
+- learn.wwl.secure-mysql.exercise-configure-azure-ad-authentication-mysql
+- learn.wwl.secure-mysql.knowledge-check
+- learn.wwl.secure-mysql.summary
+badge:
+  uid: learn.wwl.secure-mysql.badge

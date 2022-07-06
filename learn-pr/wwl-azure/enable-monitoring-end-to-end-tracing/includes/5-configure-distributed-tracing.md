@@ -9,7 +9,7 @@ To begin capturing log information, do the following procedure.
     ```Bash
     az monitor diagnostic-settings categories list \
         --resource $SPRING_CLOUD_SERVICE \
-    -g $RESOURCE_GROUP \
+        -g $RESOURCE_GROUP \
         --resource-type Microsoft.AppPlatform/Spring \
         --query value[].name
     ```
@@ -50,7 +50,7 @@ To begin capturing log information, do the following procedure.
     ]
     ```
 
-4.  Create the *metrics.json* in the same directory by doing the following procedure.
+4.  Create the **metrics.json**in the same directory by doing the following procedure.
     
     ```azurecli
     [

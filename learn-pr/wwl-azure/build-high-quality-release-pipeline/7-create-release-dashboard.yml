@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-high-quality-release-pipeline.create-release-dashboard
+title: Create a release dashboard
+metadata:
+  title: Create a release dashboard
+  description: "Create a release dashboard"
+  ms.date: 06/13/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-create-release-dashboard.md)]

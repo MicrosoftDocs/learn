@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.control-deployments-using-release-gates
+title: Control deployments using release gates
+metadata:
+  title: Control deployments using release gates
+  description: "Control deployments using release gates"
+  ms.date: 06/13/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 75
+content: |
+  [!include[](includes/13-control-deployments-using-release-gates.md)]

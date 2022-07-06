@@ -202,7 +202,7 @@ Notice that in the same way you can't access it, neither can any other resources
 
 Opening things up so that resources can connect requires some strategical planning!
 
-We recommend reading our [how to secure a workspace using a vnet](//azure/machine-learning/how-to-secure-workspace-vnet) guide for more in-depth reference.
+We recommend reading our [how to secure a workspace using a vnet](/azure/machine-learning/how-to-secure-workspace-vnet) guide for more in-depth reference.
 
 ## Summary
 

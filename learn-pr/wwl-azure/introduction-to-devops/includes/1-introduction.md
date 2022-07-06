@@ -37,55 +37,13 @@ DevOps professionals must design and implement DevOps practices for version cont
 
 There are seven domain areas.
 
-:::row:::
-  :::column:::
-    **AZ-400 Domain Area**
-  :::column-end:::
-  :::column:::
-    **Weight**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configure Processes and Communications.
-  :::column-end:::
-  :::column:::
-    13%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Design and Implement Source Control.
-  :::column-end:::
-  :::column:::
-    19%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Design and Implement Build and Release Pipelines.
-  :::column-end:::
-  :::column:::
-    42%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Develop a Security and Compliance Plan.
-  :::column-end:::
-  :::column:::
-    14%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Implement an Instrumentation Strategy.
-  :::column-end:::
-  :::column:::
-    13%
-  :::column-end:::
-:::row-end:::
-
+| **AZ-400 Domain Area**                            | **Weight** |
+| ------------------------------------------------- | ---------- |
+| Configure Processes and Communications.           | 13%        |
+| Design and Implement Source Control.              | 19%        |
+| Design and Implement Build and Release Pipelines. | 42%        |
+| Develop a Security and Compliance Plan.           | 14%        |
+| Implement an Instrumentation Strategy.            | 13%        |
 
 ## Learning objectives
 

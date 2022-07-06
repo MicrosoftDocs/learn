@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps
 metadata:
   title: Configure Azure Event Hubs for Azure Spring Apps
   description: "Configure Azure Event Hubs for Azure Spring Apps"
-  ms.date: 05/31/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -31,7 +31,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.introduction

@@ -1,4 +1,4 @@
-In this unit, you'll examine how Azure Database for MySQL can help with building a resilient, performant, and easy to maintain data store for your web-based app. Considering the expected business criticality and high demand, you’re particularly interested in its ability to scale both compute and storage resources. You also want to ensure that as a managed service, Azure Database for MySQL will minimize management and maintenance overhead, allowing you to focus on software development instead.
+In this unit, you'll examine how Azure Database for MySQL can help with building a resilient, performant, and easy to maintain data store for your web-based app. Considering the expected business criticality and high demand, you’re interested in its ability to scale both compute and storage resources. You also want to ensure that as a managed service, Azure Database for MySQL will minimize management and maintenance overhead, allowing you to focus on software development instead.
 
 ### What are the core capabilities of Azure Database for MySQL?
 
@@ -15,7 +15,7 @@ In addition, Flexible Server supports secure connectivity from the internet by h
 
 #### Compute
 
-*Azure Database for MySQL* Flexible Server is available in three compute tiers, with each tier geared towards a specific use case:
+*Azure Database for MySQL Flexible Server* is available in three compute tiers, with each tier geared towards a specific use case:
 
 - Burstable (for development or hobby projects)
 - General Purpose (for medium and large production workloads)
@@ -31,7 +31,7 @@ You access the tier options from the Azure portal’s **Flexible server Compute+
 
 #### Storage
 
-At the time of provisioning a server or at any point afterwards you can increase the amount of the storage allocated, up to the limit of 16,384 gibibytes (GiB). which is equivalent to 16 tebibytes (TiB). The lower limit of 20 GiB and the upper limit are the same regardless of the compute tier and size. In addition, storage sizing is independent of the compute tier and size you chose. You also have the option of enabling storage auto-growth.
+At the time, of provisioning a server or at any point afterwards you can increase the amount of the storage allocated, up to the limit of 16,384 gibibytes (GiB). which is equivalent to 16 tebibytes (TiB). The lower limit of 20 GiB and the upper limit are the same regardless of the compute tier and size. In addition, storage sizing is independent of the compute tier and size you chose. You also have the option of enabling storage auto-growth.
 
 > [!NOTE]
 > You cannot decrease the amount of storage again after you increase it.
@@ -51,7 +51,7 @@ Azure Database for MySQL Flexible Server supports the following two connectivity
 
   - For traffic originating from Azure, you need to allow public access from any Azure service.
 
-- Private access from designated Azure virtual networks, which leverages the VNet integration support. If you enable this option, the server will automatically block connections originating from the internet.
+- Private access from designated Azure virtual networks, which uses the VNet integration support. If you enable this option, the server will automatically block connections originating from the internet.
 
 > [!NOTE]
 > You should use the **Allow public access from any Azure service within Azure to this server** option only in development and testing scenarios. This is because it allows connections from IP addresses allocated to any Azure resource, including connections from other customers’ subscriptions.
@@ -59,7 +59,7 @@ Azure Database for MySQL Flexible Server supports the following two connectivity
 > [!NOTE]
 > To enable private access, you must implement custom Domain Name Service (DNS) name resolution. For details regarding this implementation, refer to the [**Microsoft technical documentation**](https://docs.microsoft.com) webpage.
 
-The server by default enforces Transport Layer Security (TLS 1.2) to help protect incoming network communication. While it is possible to allow unencrypted connections after the server is provisioned, we don’t recommend this option.
+The server by default enforces Transport Layer Security (TLS 1.2) to help protect incoming network communication. While it's possible to allow unencrypted connections after the server is provisioned, we don’t recommend this option.
 
 You access the network connectivity options from the Azure portal’s **Flexible server deployment** page, **Networking** tab.
 
@@ -67,7 +67,7 @@ You access the network connectivity options from the Azure portal’s **Flexible
 
 #### High availability
 
-Azure Database for MySQL Flexible Server supports high availability with automatic failover. This helps ensure that you never lose committed data as a result of localized failures. Once enabled, the platform automatically provisions and manages a standby replica.
+Azure Database for MySQL - Flexible Server supports high availability with automatic failover. This helps ensure that you never lose committed data as a result of localized failures. Once enabled, the platform automatically provisions and manages a standby replica.
 
 There are two high-availability architectural models, depending on the replica’s placement:
 
@@ -78,13 +78,13 @@ The single availability option is intended for scenarios in which minimizing lat
 
 #### Business continuity
 
-Azure Database for MySQL Flexible Server automatically creates point-in-time backups of its databases and retains them in the locally redundant storage for up to 35 days. When configuring backup, you can choose between the locally redundant and geo-redundant backup redundancy options. The latter allows you to recover from an outage affecting an entire Azure region.
+Azure Database for MySQL - Flexible Server automatically creates point-in-time backups of its databases and retains them in the locally redundant storage for up to 35 days. When configuring backup, you can choose between the locally redundant and geo-redundant backup redundancy options. The latter allows you to recover from an outage affecting an entire Azure region.
 
 Azure Database for MySQL also supports managed maintenance windows intended for automated server patching, which facilitates business continuity. By specifying a custom patching schedule, you can minimize the impact of a temporary downtime resulting from the server restart.
 
 #### Cost optimization
 
-Azure Database for MySQL Flexible Server offers numerous cost-optimization capabilities:
+Azure Database for MySQL - Flexible Server offers numerous cost-optimization capabilities:
 
 - Granular control over compute and storage configuration. You can configure the majority of server configuration options independently of each other, which allows you to optimize your deployment costs, based on your objectives and its intended use case. For example, you can adjust your individual options for:
 
@@ -95,18 +95,16 @@ Azure Database for MySQL Flexible Server offers numerous cost-optimization capab
   - Its IOPS
 
   - The backup retention period
-
 To configure these options, go to the Azure portal’s **Flexible server deployment** page, **Compute + storage** tab.
 
 - The ability to stop and start the server on-demand. The compute tier billing is stopped as soon as you stop the server. This can allow you to minimize costs during development, testing, and for production workloads with a reliably predictable schedule.
 
 - The choice of the Burstable compute tier. The Burstable Azure VM SKU offers competitive pricing for workloads characterized by low CPU utilization, with occasional CPU usage spikes.
 
-- Support for the reserved instance discount. This option allows you to save more than 60 percent of the original, non-discounted cost by committing to either a 1-year or 3-year purchase plan. Such an arrangement is particularly suitable for production workloads with predictable, long-term compute capacity requirements.
+- Support for the reserved instance discount. This option allows you to save more than 60 percent of the original, non-discounted cost by committing to either a 1-year or 3-year purchase plan. Such an arrangement is suitable for production workloads with predictable, long-term compute capacity requirements.
 
 - The option to use the Azure free account to evaluate Flexible Server at no cost for 12 months with monthly limits of up to:
 
   - 750 hours of Burstable B1MS instance, enough hours to run a database instance continuously each month.
 
-  - 32 GB storage and 32 GB backup storage.
-
+  - 32-GB storage and 32-GB backup storage.

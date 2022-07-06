@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What service helps you manage your Azure, on-premises, and multi-cloud environments?"
+    choices:
+    - content: "Azure Arc"
+      isCorrect: true
+      explanation: "Correct. Azure Arc, working with Azure Resource Manager, lets you extend your Azure compliance and monitoring to your hybrid and multi-cloud configurations."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect. Azure policy is focused on compliance for your Azure resources."
+    - content: "Azure Cloud Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Arc is best suited to managing on-premises or multi-cloud environments."
+  - content: "What two components could you use to implement a “infrastructure as code” deployment?"
+    choices:
+    - content: "Azure Blueprints and ARM Templates"
+      isCorrect: true
+      explanation: "Correct. Azure Blueprints applies policies in an automated fashion and ARM Templates allow you to deploy your resource as code. Using the two together helps ensure that you’re deploying consistent, compliant resources."
+    - content: "Azure Policy and Azure Arc"
+      isCorrect: false
+      explanation: "Incorrect. Azure Blueprints and ARM templates are the best choice for implementing an “infrastructure as code deployment”."
+    - content: "Azure Monitor and Azure Arc"
+      isCorrect: false
+      explanation: "Incorrect. Azure Blueprints and ARM templates are the best choice for implementing an “infrastructure as code deployment”."

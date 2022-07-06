@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cmu-virtualization
 metadata:
   title: Virtualize resources in the cloud
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover virtualization and how it enables many technologies in the cloud, including virtual machines, containers and networks.
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -27,6 +27,7 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand how cloud resource provisioning works
 iconUrl: /learn/achievements/cmu-cloud-admin/cmu-virtualization.svg
+hidden: true
 levels:
 - beginner
 roles:

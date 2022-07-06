@@ -33,6 +33,9 @@ You get the following features with Azure Database for MySQL:
  -  Automatic backups and point-in-time restore for the last 35 days.
  -  Enterprise-level security and compliance with legislation.
 
+:::image type="content" source="../media/my-sql-database-0dd052f1.png" alt-text="Diagram showing the features of fully managed MySQL database.":::
+
+
 ## Azure Database for PostgreSQL
 
 If you prefer PostgreSQL, you can choose Azure Database for PostgreSQL to run a PaaS implementation of PostgreSQL in the Azure Cloud. This service provides the same availability, performance, scaling, security, and administrative benefits as the MySQL service.

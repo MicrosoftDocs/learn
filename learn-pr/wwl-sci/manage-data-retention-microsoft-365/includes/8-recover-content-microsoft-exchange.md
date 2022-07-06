@@ -1,26 +1,31 @@
-Recovering content in Exchange Online, that is stored in the folder structure of mailboxes, can be done via compliance searches and eDiscovery cases. To perform the steps, administrators can use the Microsoft 365 Compliance Center and the Security & Compliance Center PowerShell module.
+Recovering content in Exchange Online that is stored in the folder structure of mailboxes, can be done via compliance searches and eDiscovery cases. To perform the steps, administrators can use the Microsoft Purview portal and the Security & Compliance Center PowerShell module.
 
 Perform the following steps to create an eDiscovery case and export data from mailboxes:
 
-1. Navigate to the **Microsoft 365 Compliance center**.
+1. Navigate to the **Microsoft Purview portal**.
 
-1. Select **eDiscovery** > **Core** in the left navigation pane.
+1. Select **eDiscovery** > **Standard** in the left navigation pane.
 
 1. Select **+ Create a case**.
 
 1. Enter a **Case name** and a meaningful **Case description** that helps you identify it later and select **Save**.
 
-1. Select the check mark left from the case an **Open case** from the top pane.
+1. Select the case.
 
 1. On the **Searches** tab, select **+ New search** to associate a search with the case.
 
-1. Input the keywords, conditions, and locations for the search and select **Save & run**.
+1. Enter a **Name** and **Description** for the search and select **Next**.
 
-1. Enter a **Name** and **Description** for the search and select **Save**.
+1. On the **Locations** page, choose the content locations you want to search and select **Next**.
+
+1. Input the keywords and conditions for the search and select **Next**.
+
+1. On the **Review your search and create it** page review the search and select **Submit** and then **Done**.
+
 
 1. Select the **Searches** tab and select the search.
 
-1. Select **Export results**, review the **Output options** and select **Generate**.
+1. Select **Actions** and then **Export results**, review the **Output options** and select **Export**.
 
 1. Go to the **Exports** tab and select the Export you generated.
 
@@ -28,7 +33,7 @@ Perform the following steps to create an eDiscovery case and export data from ma
 
 1. Fill out the information in the **Export Tool** and select **Start**.
 
-1. You will find the exported information in the form of one or more PST-files in the path you specified.
+1. You'll find the exported information in the form of one or more PST-files in the path you specified.
 
 You can also use the Exchange PowerShell and the New-ComplianceSearch cmdlet to create a Search:
 
@@ -51,9 +56,9 @@ New-ComplianceSearchAction -SearchName <case name> -Export
 
 ```
 
-To gain access to the PST-Files, you need to visit the Security & Compliance Center and download them using the ClickOnce application.
+To gain access to the PST-Files, you need to visit the Microsoft Purview compliance portal and download them using the ClickOnce application.
 
-1. In the **Microsoft 365 Compliance center**, under Solutions select **Content search**.
+1. In the **Microsoft Purview portal**, under Solutions select **Content search**.
 
 1. Go to the **Exports** tab and select the Export you generated.
 

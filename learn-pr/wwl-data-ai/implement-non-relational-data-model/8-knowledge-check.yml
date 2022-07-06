@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/01/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,9 +16,9 @@ quiz:
   questions:
   - content: "Which of the following criteria would define a good candidate to embed two entities in a single document schema?"
     choices:
-    - content: "``Many:Many relationship``"
+    - content: "``Many: Many relationships``"
       isCorrect: false
-      explanation: "That's incorrect. ``Many:Many relationship`` This is especially false if the relationship is unbounded. Azure Cosmos DB has a maximum document size of 2 MB. So, in situations where the 1:Many relationship is unbounded or can grow large, data should be referenced, not embedded."
+      explanation: "That's incorrect. ``Many: Many relationships`` This is especially false if the relationship is unbounded. Azure Cosmos DB has a maximum document size of 2 MB. So, in situations where the 1:Many relationship is unbounded or can grow large, data should be referenced, not embedded."
     - content: "Read or updated together"
       isCorrect: true
       explanation: "That's correct. This is correct because Data that's read or updated together is nearly always modeled as a single document. This is especially true because our objective for our NoSQL model is to reduce the number of requests to our database."
@@ -32,7 +32,7 @@ quiz:
       explanation: "That's incorrect. Throughput hot partitions would still be possible."
     - content: "This partition key will cause fan outs when filtering by ``countryId``."
       isCorrect: false
-      explanation: "That's incorrect. This partition will actually prevent Fan outs since we will be always going one partition per ``countryId``."
+      explanation: "That's incorrect. This partition will actually prevent Fan outs since we'll always going one partition per ``countryId``."
     - content: "This partition key could cause storage hot partitions"
       isCorrect: true
       explanation: "That's correct. Storage hot partitions are likely for regions 1 or 2 since they would have to bulk of the data stored."

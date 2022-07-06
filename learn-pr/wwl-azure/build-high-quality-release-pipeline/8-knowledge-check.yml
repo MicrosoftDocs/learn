@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/25/2022
+  ms.date: 06/13/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,23 +17,23 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices describe how do you measure the quality of your release process?"
+  - content: "Which of the following choices describe how you measure the quality of your release process?"
     choices:
     - content: "Based on the success and failures of your pipeline."
       isCorrect: false
-      explanation: "Incorrect. The quality of your release process cannot be measured directly because it is a process. What you can measure is how well your process works."
+      explanation: "Incorrect. The quality of your release process can't be measured directly because it's a process. What you can measure is how well your process works."
     - content: "Based on your pipeline's configuration and CI/CD implementation."
       isCorrect: false
-      explanation: "Incorrect. The quality of your release process cannot be measured directly because it is a process. What you can measure is how well your process works."
-    - content: "The quality of your release process cannot be measured directly because it is a process."
+      explanation: "Incorrect. The quality of your release process can't be measured directly because it's a process. What you can measure is how well your process works."
+    - content: "The quality of your release process can't be measured directly because it's a process."
       isCorrect: true
-      explanation: "Correct. The quality of your release process cannot be measured directly because it is a process. What you can measure is how well your process works."
+      explanation: "Correct. The quality of your release process can't be measured directly because it's a process. What you can measure is how well your process works."
   - content: "Which of the following choices describes the Release Notes and documentation importance?"
     choices:
     - content: "To comply with the internal company process and audit."
       isCorrect: false
       explanation: "Incorrect. When you deploy a new release to a customer or install new software on your server, you want to communicate what has been released. The usual way to do this is the use of release notes."
-    - content: "It is essential when you want to communicate what has been released to your customer."
+    - content: "It's essential when you want to communicate what has been released to your customer."
       isCorrect: true
       explanation: "Correct. When you deploy a new release to a customer or install new software on your server, you want to communicate what has been released. The usual way to do this is the use of release notes."
     - content: "To control what was delivered during the sprint."

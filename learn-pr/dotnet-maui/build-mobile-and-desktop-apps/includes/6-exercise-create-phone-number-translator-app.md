@@ -289,7 +289,7 @@ public static class PhonewordTranslator
     }
     ```
 
-    The **PhoneDialer** class in the **Microsoft.Maui.Application.Community** namespace provides an abstraction of the phone dialing functionality (and others) for the Windows, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
+    The **PhoneDialer** class in the **Microsoft.Maui.ApplicationModel.Communication** namespace provides an abstraction of the phone dialing functionality (and others) for the Windows, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
 
     The following steps show how to update the Android application manifest to enable Android to use the phone dialer. Windows, iOS, and MacCatalyst, applications follow the same general principle, except that you specify a different operating-system dependent capability in the manifest.
 

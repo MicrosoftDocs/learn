@@ -3,7 +3,7 @@ uid: learn.wwl.install-configure-apps-session-host
 metadata:
   title: Install and configure apps on a session host
   description: "Install and configure apps on a session host"
-  ms.date: 12/03/2021
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   *  Use Microsoft Teams on Azure Virtual Desktop.
   *  Publish built-in apps in Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-install-and-configure-apps-on-a-session-host.svg
 levels:
 - intermediate
 roles:

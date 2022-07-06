@@ -24,7 +24,7 @@ Let's verify that resources defined on one page aren't available on another page
 
 Let's create an application-wide resource dictionary to hold resources to use on multiple pages.
 
-1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. Navigate to the `Resources/Styls.xaml` to see the styles included by default.
+1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. To see all the styles included by default, view the **Resources/Styles.xaml** file.
 
     ```XML
     <?xml version = "1.0" encoding = "UTF-8" ?>
@@ -43,7 +43,7 @@ Let's create an application-wide resource dictionary to hold resources to use on
     </Application>
     ```
 
-1. Move the **fontSize** resource, and the **baseLabelStyle** and **infoLabelStyle** styles from the **StandardTipPage.xaml** file to the resource dictionary in the **App.xaml** file, after the existing styles:
+1. Open the **StandardTipPage.xaml** file, and move the **fontSize** resource, and the **baseLabelStyle** and **infoLabelStyle** styles to the resource dictionary in the **App.xaml** file. Place them after the existing styles so that the **App.Xaml** file looks like the following example:
 
     ```xml
     <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"

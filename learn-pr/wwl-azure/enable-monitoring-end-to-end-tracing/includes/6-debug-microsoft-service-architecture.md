@@ -1,19 +1,22 @@
-Now that you've begun collecting log data from your Spring Cloud Service, your next step will be to query the log data.
+Now that you've been collecting log data from your Spring Cloud Service, your next step will be to query the log data.
 
-Use this guidance to view the following entries:
+In this section, you'll view the following entries:
 
  -  Log entries containing errors or exceptions
  -  Ingress log entries.
  -  Container log entries
 
+:::image type="content" source="../media/service-logs-a667bb5c.png" alt-text="Displays a screenshot of the Service instande logs.":::
+
+
 To view the log entries, do the following procedures.
 
 1.  In the Azure portal, navigate to your resource group and to the **Log Analytics** Workspace.
 2.  Select **Logs**.
-3.  You can view the logs captured for *AppPlatformContainerEventLogs, AppPlatformIngressLogs, AppPlatformLogsforSpring, AppPlatformSystemLogs, AzureMetrics* and *AppPlatformBuildLogs.*
+3.  On the **Tables** tab, review the list of tables and verify that they include **AppPlatformContainerEventLogs, AppPlatformIngressLogs, AppPlatformLogsforSpring, AppPlatformSystemLogs, AzureMetrics** and **AppPlatformBuildLogs**.
     
     > [!NOTE]
-    > You may be unable to view all the categories immediately. Often, time may vary for the logging data to appear in your Log Analytics workspace.
+    > Not all of these categories will be available. It might takes extra time for the logging data to appear in the Log Analytics workspace. If needed, wait for a few minutes and refresh the web page displaying the Azure portal.
 
 4.  In the query editor, input the below query and select *Run*.
     
@@ -56,4 +59,4 @@ To view the log entries, do the following procedures.
     | render timechart
     ```
 
-8.  Select the **Chart** tab to view the results in graphical format. Select **Pin *to*** and then select **Azure dashboard** to pin the visual representation to your Azure Home screen.
+8.  Select the **Chart** tab to view the results in graphical format. Select **Pin to** and then select **Azure dashboard** to pin the visual representation to your Azure Home screen.

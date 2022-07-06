@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-azure-message-queue.create-manage-azure-queue-storage-queues-messages-by-using-net
-title: Create and manage Azure Queue Storage queues and messages by using .NET
+title: Create and manage Azure Queue Storage and messages by using .NET
 metadata:
-  title: Create and manage Azure Queue Storage queues and messages by using .NET
-  description: "Create and manage Azure Queue Storage queues and messages by using .NET"
-  ms.date: 06/01/2022
+  title: Create and manage Azure Queue Storage and messages by using .NET
+  description: "Create and manage Azure Queue Storage and messages by using .NET"
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

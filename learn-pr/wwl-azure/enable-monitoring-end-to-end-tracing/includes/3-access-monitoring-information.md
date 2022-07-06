@@ -29,14 +29,14 @@ The following diagram shows how Application Insights instrumentation in an app s
 
 Spring Cloud Service uses an in-process Java Agent for Application Insights. When you initially created your service, an Application Insights resource was created for you by default.
 
-You'll need to check whether an Application Insights instance is linked to your Spring Cloud Service.
+You'll need to check whether an Application Insights instance is linked to your Spring Cloud Service. If the instance isn't linked, then relink Application Insights.
 
 1.  Use the following command to determine whether Application Insights is linked to your Spring Cloud Service.
     
     ```azurecli
     az spring-cloud app-insights show \
-    -g $RESOURCE_GROUP \
-    -n $SPRING_CLOUD_SERVICE
+        -g $RESOURCE_GROUP \
+        -n $SPRING_CLOUD_SERVICE
     ```
     
     You should see output similar to what's displayed below:

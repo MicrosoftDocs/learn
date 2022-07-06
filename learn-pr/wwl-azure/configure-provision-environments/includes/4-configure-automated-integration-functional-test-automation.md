@@ -20,21 +20,17 @@ We can make four quadrants where each side of the square defines our targets wit
 
 Now we can place different test types we see in the other quadrants. For example, we can put Unit tests, Component tests, and System or integration tests in the first quadrant.
 
-In quadrant two, we can place functional tests, Story tests, prototypes, and simulations.
+In quadrant two, we can place functional tests, Story tests, prototypes, and simulations. These tests are there to support the team in delivering the correct functionality and are business-facing since they're more functional.
 
-These tests are there to support the team in delivering the correct functionality and are business-facing since they're more functional.
+In quadrant three, we can place tests like exploratory, usability, acceptance, etc.
 
-In quadrant three, we can place tests like exploratory, usability, acceptance, and so on.
+We place performance, load, security, and other non-functional requirements tests in quadrant four.
 
-In quadrant four, we place performance, load, security, and other non-functional requirements tests.
-
-Looking at these quadrants, you can see that specific tests are easy to automate or automated by nature. These tests are in quadrants 3 and 4. Tests that are automatable but most of the time not automated by nature are the tests in quadrant 1.
-
-Tests that are the hardest to automate are in quadrant 2.
+Looking at these quadrants, specific tests are easy to automate or automated by nature. These tests are in quadrants 1 and 4. Tests that are automatable but most of the time not automated by nature are the tests in quadrant 2. Tests that are the hardest to automate are in quadrant 3.
 
 We also see that the tests that can't be automated or are hard to automate are tests that can be executed in an earlier phase and not after release.
 
-We call shift-left, where we move the testing process more towards the development cycle.
+We call shift-left, where we move the testing process towards the development cycle.
 
 We need to automate as many tests as possible and test them.
 
@@ -48,9 +44,7 @@ A few of the principles we can use are:
 
 By testing at the lowest level possible, you'll find many tests that don't require infrastructure or applications to be deployed.
 
-We can use the pipeline to execute the tests that need an app or infrastructure.
-
-To execute tests within the pipeline, we can run scripts or use specific tests tools.
+We can use the pipeline to execute the tests that need an app or infrastructure. To perform tests within the pipeline, we can run scripts or use specific tests tools.
 
 On many occasions, these are external tools that you execute from the pipeline, like Owasp ZAP, SpecFlow, or Selenium.
 
@@ -58,12 +52,8 @@ You can use test functionality from a platform like Azure on other occasions. Fo
 
 When you want to write your automated tests, choose the language that resembles the language from your code.
 
-The application developers should also write the test in most cases, so it makes sense to use the same language.
-
-For example, write tests for your .NET application in .NET, and write tests for your Angular application in Angular.
+In most cases, the application developers should also write the test, so it makes sense to use the same language. For example, write tests for your .NET application in .NET, and write tests for your Angular application in Angular.
 
 The build and release agent can handle it to execute Unit Tests or other low-level tests that don't need a deployed application or infrastructure.
 
-When you need to do tests with a UI or other specialized functionality, you need a Test agent to run the test and report the results.
-
-Installation of the test agent then needs to be done upfront or as part of the execution of your pipeline.
+When you need to do tests with a UI or other specialized functionality, you need a Test agent to run the test and report the results. Installation of the test agent then needs to be done upfront or as part of the execution of your pipeline.

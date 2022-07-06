@@ -14,17 +14,20 @@ You'll assign an identity to the microservices used by the database:
     az spring-cloud app identity assign \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
-        --name customers-service
+        --name customers-service \
+        --system-assigned
     
     az spring-cloud app identity assign \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
-        --name visits-service
+        --name visits-service \
+        --system-assigned
     
     az spring-cloud app identity assign \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
-        --name vets-service
+        --name vets-service \
+        --system-assigned
     
     ```
 

@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.plan-form-recognizer-solution
+metadata:
+  title: Plan a Form Recognizer solution
+  description: "Learn how to use Azure Forms Analyzer to build solutions that analyze forms and output data for storage or further processing."
+  ms.date: 06/15/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan a Form Recognizer solution
+summary: Learn how to use Azure Forms Analyzer to build solutions that analyze forms and output data for storage or further processing.
+abstract: |
+  In this module, you will learn to:
+  -	Describe the components of a Form Recognizer solution.
+  -	Create and connect to Form Recognizer resources in Azure.
+  -	Choose whether to use a prebuilt, custom, or composed model.
+prerequisites: |
+  - Basic understanding of Form Recognizer
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+products:
+- azure-cognitive-services
+- azure-form-recognizer
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.plan-form-recognizer-solution.introduction
+- learn.wwl.plan-form-recognizer-solution.understand
+- learn.wwl.plan-form-recognizer-solution.resources
+- learn.wwl.plan-form-recognizer-solution.choose-model-type
+- learn.wwl.plan-form-recognizer-solution.knowledge-check
+- learn.wwl.plan-form-recognizer-solution.summary
+badge:
+  uid: learn.wwl.plan-form-recognizer-solution.badge

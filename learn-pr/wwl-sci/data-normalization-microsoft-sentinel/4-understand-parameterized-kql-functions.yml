@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.data-normalization-microsoft-sentinel.understand-parameterized-kql-functions
+title: Understand parameterized KQL functions
+metadata:
+  title: Understand parameterized KQL functions
+  description: "Understand parameterized KQL functions"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-understand-parameterized-kql-functions.md)]

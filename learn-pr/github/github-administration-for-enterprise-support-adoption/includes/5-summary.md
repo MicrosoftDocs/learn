@@ -17,5 +17,5 @@ Review the links below for more details about the information covered in this mo
 - [Viewing and managing a member's SAML access to your organization](https://docs.github.com/en/organizations/granting-access-to-your-organization-with-saml-single-sign-on/viewing-and-managing-a-members-saml-access-to-your-organization)
 - [Synchronizing a team with an identity provider](https://docs.github.com/en/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)
 - [GitHub API documentation on SCIM](https://docs.github.com/en/rest/reference/scim)
-- [About SCIM](https://docs.github.com/en/organizations/managing-saml-single-sign-on-for-your-organization/about-scim)
+- [About SCIM](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations)
 - [AuditEntry interface](https://docs.github.com/en/enterprise-server@3.1/graphql/reference/interfaces#auditentry)

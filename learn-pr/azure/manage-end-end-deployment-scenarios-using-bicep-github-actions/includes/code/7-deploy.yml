@@ -47,18 +47,19 @@ jobs:
            sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
          deploymentMode: Validate
      - if: inputs.environmentType == 'Production'
-       uses: Azure/cli@v1
+       uses: azure/arm-deploy@v1
        name: Run what-if
        with:
-         inlineScript: |
-             az deployment group what-if \
-               --resource-group ${{ inputs.resourceGroupName }} \
-               --template-file ./deploy/main.bicep \
-               --parameters environmentType=${{ inputs.environmentType }} \
-                            reviewApiUrl=${{ inputs.reviewApiUrl }} \
-                            reviewApiKey=${{ secrets.reviewApiKey }} \
-                            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }} \
-                            sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
+         failOnStdErr: false
+         resourceGroupName: ${{ inputs.resourceGroupName }}
+         template: ./deploy/main.bicep
+         parameters: >
+           environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
+           sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
+           sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
+         additionalArguments: --what-if
  
   deploy:
     needs: validate
@@ -111,14 +112,14 @@ jobs:
   deploy-database:
     needs: deploy
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/download-artifact@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: azure/sql-action@v1
+    - uses: azure/sql-action@v1.2
       name: Deploy DACPAC to database
       with:
         server-name: ${{ needs.deploy.outputs.sqlServerFullyQualifiedDomainName }}
@@ -130,7 +131,7 @@ jobs:
     - deploy
     - deploy-database
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
@@ -138,7 +139,7 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - if: inputs.environmentType != 'Production'
-      uses: azure/sql-action@v1
+      uses: azure/sql-action@v1.2
       name: Add test data to database
       with:
         server-name: ${{ needs.deploy.outputs.sqlServerFullyQualifiedDomainName }}

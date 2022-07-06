@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources
+metadata:
+  title: Describe features and tools for managing and deploying Azure resources
+  description: "Describe features and tools for managing and deploying Azure resources"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe features and tools for managing and deploying Azure resources
+summary: This module covers tools that help you manage your Azure and on-premises resources.
+abstract: |
+  * Describe Azure portal
+  * Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell
+  * Describe the purpose of Azure Arc
+  * Describe Azure Resource Manager (ARM) and Azure ARM templates
+prerequisites: |
+  * Basic familiarity with IT terms and concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+- cloud-security
+- compliance
+units:
+- learn.wwl.describe-features-tools-manage-deploy-azure-resources.introduction
+- learn.wwl.describe-features-tools-manage-deploy-azure-resources.describe-interacting-azure
+- learn.wwl.describe-features-tools-manage-deploy-azure-resources.describe-purpose-of-azure-arc
+- learn.wwl.describe-features-tools-manage-deploy-azure-resources.describe-azure-resource-manager-azure-arm-templates
+- learn.wwl.describe-features-tools-manage-deploy-azure-resources.knowledge-check
+- learn.wwl.describe-features-tools-manage-deploy-azure-resources.summary
+badge:
+  uid: learn.wwl.describe-features-tools-for-managing-deploying-azure-resources.badge

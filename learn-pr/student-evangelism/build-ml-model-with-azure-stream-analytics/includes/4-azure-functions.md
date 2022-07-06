@@ -6,7 +6,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
 1. In your browser, return to the [Azure portal](https://portal.azure.com?azure-portal=true). In **Azure services**, select **Create a resource**. In the resource menu, select **Compute**, and then select **Function App**.
 
-   ![Screenshot that shows numbered elements in the Azure portal that you select to create a new function app resource.](../media/select-create-resource-compute-function-app.png)
+   :::image type="content" source="../media/select-create-resource-compute-function-app.png" alt-text="Screenshot that shows numbered elements in the Azure portal that you select to create a new function app resource.":::
 
    _Create a new function app in Azure_
 
@@ -18,22 +18,24 @@ You can write a function app in Azure Functions in the Azure portal or externall
    - **Publish**: Leave **Code** selected.
    - **Runtime stack**: Select **Node.js**.
    - **Region**: Select **South Central US**.
+   - **Operating System**: Select your system.
+   - **Plan Type**: Select **Consumption (Serverless)**.
    - Select **Next : Hosting**.
 
-   ![Screenshot that shows the basic settings to select or enter for a new function app.](../media/create-new-function-app-basic-settings.png)
+   :::image type="content" source="../media/create-new-function-app-basic-settings.png" alt-text="Screenshot that shows the basic settings to select or enter for a new function app.":::
 
    _Configure the basic settings for a new function app_
 
-1. On the **Hosting** tab, select the storage account you created to upload wildlife photos to. For the other settings, accept the defaults, and then select **Review + create**.
+1. On the **Hosting** tab, select the storage account you created to upload wildlife photos to. Then select **Review + create**.
 
-   ![Screenshot that shows the hosting tab settings for a new function app.](../media/create-new-function-app-hosting-settings.png)
+   :::image type="content" source="../media/create-new-function-app-hosting-settings.png" alt-text="Screenshot that shows the hosting tab settings for a new function app.":::
 
    _Configure the hosting settings for a new function app_
 
 1. Wait for validation to finish, and then select **Create**.
-1. Wait for the function app to deploy, and then open the app in the Azure portal. In the resource menu, under **Functions**, select **Functions**, and then select **Add**.
+1. Wait for the function app to deploy, and then open the app in the Azure portal. In the resource menu, under **Functions**, select **Functions**, and then select **Create**.
 
-   ![Screenshot that highlights the elements to select to add a function in the Azure portal.](../media/create-new-function-app-add-function.png)
+   :::image type="content" source="../media/create-new-function-app-add-function.png" alt-text="Screenshot that highlights the elements to select to add a function in the Azure portal.":::
 
    _Add a function_
 
@@ -42,7 +44,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
    1. For **Development environment**, select **Develop in portal**.
    1. Under **Template**, select **Azure Blob Storage trigger**.
 
-   ![Screenshot that highlights the elements to select for a new function.](../media/create-new-function-choose-template.png)
+   :::image type="content" source="../media/create-new-function-choose-template.png" alt-text="Screenshot that highlights the elements to select for a new function.":::
 
    _Configure the settings and choose a template for a function_
 
@@ -63,7 +65,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    1. In **New Storage Account connection**, select the storage account you created earlier, and then select **OK**.
 
-   ![Screenshot that shows settings to use to set up the template to create a blob-triggered function.](../media/create-new-function-template-details.png)
+   :::image type="content" source="../media/create-new-function-template-details.png" alt-text="Screenshot that shows settings to use to set up the template to create a blob-triggered function.":::
 
    _Configure the template to create a blob-triggered function_
 
@@ -71,7 +73,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
 1. On the overview page for the new trigger function, under **Developer**, select **Code + Test**. The *index.js* file for the trigger opens in the portal.
 
-   ![Screenshot that highlights the portal elements to select to open the index dot J S file for the blob-triggered function.](../media/blob-triggered-function-update-code.png)
+   :::image type="content" source="../media/blob-triggered-function-update-code.png" alt-text="Screenshot that highlights the portal elements to select to open the index dot J S file for the blob-triggered function.":::
 
    _Open the index.js file for the trigger function_
 
@@ -151,13 +153,13 @@ You can write a function app in Azure Functions in the Azure portal or externall
    };
    ```
 
-   The modified function app uses the NPM [request](https://www.npmjs.com/package/request?azure-portal=true) module to call the Custom Vision service, passing the URL of the image to be analyzed. It parses the JSON results and retrieves the value that indicates the probability that the image contains a polar bear. Then, it writes the results to the output log. The threshold for determining whether an image contains a polar bear is 80 percent:
+   The modified function app uses the npm [request](https://www.npmjs.com/package/request?azure-portal=true) module to call the Custom Vision service, passing the URL of the image to be analyzed. It parses the JSON results and retrieves the value that indicates the probability that the image contains a polar bear. Then, it writes the results to the output log. The threshold for determining whether an image contains a polar bear is 80 percent:
 
    ```javascript
    var isPolarBear = probability > 0.8; // 80% threshold
    ```
 
-   Another notable aspect of this code is its use of a [shared access signature](/azure/storage/common/storage-dotnet-shared-access-signature-part-1?azure-portal=true). 
+   Another notable aspect of this code is its use of a [shared access signature](/azure/storage/common/storage-dotnet-shared-access-signature-part-1?azure-portal=true).
 
    The `photos` container that you created is private. To access the blobs stored there, you must have access to the storage account or have the storage account's access key. A shared access signature allows other users and services to access individual blobs, but only for a specified length of time and optionally with read-only access.
 
@@ -171,11 +173,11 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    - On the function app overview page, in the resource menu, under **Development Tools**, select **Console**.
 
-   ![Screenshot that shows how to open a console for a function app.](../media/open-function-app-console.png)
+   :::image type="content" source="../media/open-function-app-console.png" alt-text="Screenshot that shows how to open a console for a function app.":::
 
    _Open a function app console_
 
-1. In the console, run the following commands to install the NPM [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage?azure-portal=true), so your function app can use them.
+1. In the console, run the following commands to install the npm [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage?azure-portal=true), so your function app can use them.
 
    ```console
    npm install request
@@ -192,7 +194,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
    1. In **Add/Edit application setting**, add a setting named *PREDICTION_URL*. Set the value to the Custom Vision prediction URL that you saved in the preceding unit. Leave **Deployment slot setting** cleared. Select **OK**.
    1. Repeat the preceding step to add a setting named *PREDICTION_KEY*. Set the value to the Custom Vision prediction key that you saved in the preceding unit. Leave the **Deployment slot setting** cleared. Select **OK**.
 
-   ![Screenshot that shows selections to make in the Azure portal for application settings for a function app.](../media/function-app-application-settings.png)
+   :::image type="content" source="../media/function-app-application-settings.png" alt-text="Screenshot that shows selections to make in the Azure portal for application settings for a function app.":::
 
    _Configure the application settings for the function app_
 
@@ -203,44 +205,44 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
 1. To return to your `BlobTrigger` function app, in the resource menu, under **Functions**, select **Functions**, and then select **BlobTrigger**:
 
-   ![Screenshot that shows selections to make in the Azure portal to view the blob trigger function app.](../media/open-function-output-log-1.png)
+   :::image type="content" source="../media/open-function-output-log-1.png" alt-text="Screenshot that shows selections to make in the Azure portal to view the blob trigger function app.":::
 
    _Open the BlobTrigger function app_
 
 1. In the resource menu, under **Developer**, select **Code + Test**. Below the code that's shown, select the **Logs** up arrow. The log output pane opens.
 
-   ![Screenshot that shows how to open the output log for a function.](../media/open-function-output-log-2.png)
+   :::image type="content" source="../media/open-function-output-log-2.png" alt-text="Screenshot that shows how to open the output log for a function.":::
 
    _Open the function's output log_
 
    Keep the **Logs** pane open because we'll use it in a later step.
 
-1. To open the `photos` Blob Storage container, in the resource menu, under **Blob service**, select **Containers**. In the list of containers, select the `photos` container.
+1. To open the `photos` Blob Storage container, in the resource menu, under **Data storage**, select **Containers**. In the list of containers, select the `photos` container.
 
-   ![Screenshot that highlights the items you select in the Azure portal to open the photos container in the Blob Storage account.](../media/open-photos-container.png)
+   :::image type="content" source="../media/open-photos-container.png" alt-text="Screenshot that highlights the items you select in the Azure portal to open the photos container.":::
 
    _Open the photos container for your Blob Storage account_
     
-1. Next, upload an image to the photos container to try out your function app. 
-   1. In the `photos` container pane, select **Upload**. 
+1. Next, upload an image to the photos container to try out your function app.
+   1. In the `photos` container pane, select **Upload**.
    1. In **Upload blob**, under **Files**, select the folder icon.
    1. In Windows Explorer, go to the *photos* folder in your project directory.
    1. Select the *image_12.jpg* file, and select **Open**.
    1. In **Upload blob**, select **Upload**. When the upload is finished, select **X** to close the pane.
 
-   ![Screenshot that shows how to upload a photo to a container.](../media/upload-photo-to-container.png)
+   :::image type="content" source="../media/upload-photo-to-container.png" alt-text="Screenshot that shows how to upload a photo to a container.":::
 
    _Upload a photo to the container_
 
    Here's what **image_12.jpg** looks like:
 
-   ![Image 12 dot j p g, which shows a polar bear.](../media/image-12.jpg)
+   :::image type="content" source="../media/image-12.jpg" alt-text="Image 12 dot j p g, which shows a polar bear.":::
 
    _Image 12 in Blob Storage_
 
 1. In your browser, return to the function app log. Confirm that the function app executed, and that Custom Vision indicates that *image_12.jpg* contains a polar bear.
 
-   ![Screenshot that shows the output log details for uploading and analyzing image 12 dot j p g.](../media/function-output-1.png)
+   :::image type="content" source="../media/function-output-1.png" alt-text="Screenshot that shows the output log details for uploading and analyzing image 12 dot j p g.":::
 
    _View the output log details for uploading and analyzing image 12_
 
@@ -258,7 +260,7 @@ Next, run the simulated camera array you created earlier. Then, you'll check the
 
 1. In the Azure portal, return to the `BlobTrigger` function and watch the output log for a minute or two. Confirm that the function is being triggered and that it's calling Custom Vision to determine whether each photo uploaded to the `photos` container contains a polar bear.
 
-   ![Screenshot that shows logs in a terminal, with the log entry "Polar Bear detected" for one of the cameras and the camera's latitude and longitude.](../media/function-output-2.png)
+   :::image type="content" source="../media/function-output-2.png" alt-text="Screenshot that shows logs in a terminal, with the log entry Polar Bear detected for one of the cameras and the camera's latitude and longitude.":::
 
    _There be polar bears!_
 
