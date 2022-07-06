@@ -9,8 +9,8 @@ metadata:
     You'll learn about parameter decorators, which make your parameters easy to understand and work with.
     You'll also learn about the different ways that you can provide parameter values and how to protect these values when you're working with secure information.
   ms.date: 10/29/2021
-  author: wviriya
-  ms.author: wviriya
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
