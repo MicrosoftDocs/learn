@@ -19,7 +19,7 @@ Our pre-migration is broken down into the following four steps or stages.
 Following these four steps will ensure a successful migration. Let's discuss these stages in more detail below.
 
 > [!NOTE]
-> The [Database Migration Assistant](/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB)(DMA) will help you with the ***Discovery*** and ***Assessment*** stages of the planning.
+> The [Database Migration Assistant](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB) (DMA) will help you with the ***Discovery*** and ***Assessment*** stages of the planning.
 
 ## Pre-migration discovery
 
@@ -29,9 +29,9 @@ Our first step will be to create a ***data estate migration spreadsheet***.  Thi
 - Help you to plan migration from end-to-end.
 - Should be used as a tracking document throughout the migration process.
 
-While you can do a manual discovery, in this unit, we'll recommend that you use the [Database Migration Assistant](/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB)(DMA) to help you with the discovery. This tool is easy to use and will do much the work for you.
+While you can do a manual discovery, in this unit, we'll recommend that you use the [Database Migration Assistant](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB) (DMA) to help you with the discovery. This tool is easy to use and will do much the work for you.
 
-The DMA will create the estate migration sheet programmatically. We'll use the [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) to easily [install and use](/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma) the DMA tool. Just run it from any machine that has access to your source MongoDB environment.
+The DMA will create the estate migration sheet programmatically. We'll use the [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) to easily [install and use](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma) the DMA tool. Just run it from any machine that has access to your source MongoDB environment.
 
 The DMA will output the following files that you can use as the data estate migration spreadsheets.
 
@@ -58,14 +58,14 @@ The discovery and assessment were all about our MongoDB Source, now it's time to
 We can do some capacity planning by one of two ways.
 
 - **Convert vCores to RUs**. - If the only information we know is the number of servers or the number of vCores in our current MongoDB environment, we can convert those vCores to RUs.  In the previous unit, *[Convert vCores to RUs](/learn/modules/migrate-mongodb-database-to-azure-cosmos-db/2-vcore-to-rus)*, we went in more detail on how to estimate Request Units using vCores or vCPUs.
-- **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator](/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator)* unit.
+- **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator][/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator]* unit.
 
     > [!NOTE]
-    > You can also use the *[Azure Cosmos DB capacity calculator](/capacitycalculator/)* to estimate the cost of ownership of your new Azure Cosmos DB resource.
+    > You can also use the *[Azure Cosmos DB capacity calculator](https://cosmos.azure.com/capacitycalculator/)* to estimate the cost of ownership of your new Azure Cosmos DB resource.
 
 ### Estimating throughput
 
-As we discussed in the Capacity planning section above, we can use the *[Azure Cosmos DB capacity calculator](/capacitycalculator/)* to estimate the RU/s we'll need, or we can estimate the RUs by converting the vCores to RUs before the migration. But once the data is in Azure Cosmos DB how can we determine the real cost of our queries?
+As we discussed in the Capacity planning section above, we can use the *[Azure Cosmos DB capacity calculator](https://cosmos.azure.com/capacitycalculator/)* to estimate the RU/s we'll need, or we can estimate the RUs by converting the vCores to RUs before the migration. But once the data is in Azure Cosmos DB how can we determine the real cost of our queries?
 
 Once our data is in an Azure Cosmos DB collection, we can further understand the cost of our queries by using MongoDB Shell, and using the ***getLastRequestStastistics*** command to get the request charge. We'll first run our query in the MongoDB Shell and immediately after we would run the following command to get those RU statistics.
 
@@ -155,29 +155,3 @@ Steps to take:
     > For further information about post-migrations, see the *[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/post-migration-optimization)* guide.
 
 Migrating a MongoDB database isn't a point and click operation. You should spend some time planning for that migration. In the next couple of chapters, we'll discuss further the actual migration step itself.
-
-[Cosmos-DB-Migration-Assistant-for-API-for-MongoDB](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB)
-
-[Download and install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)
-
-[How to run the dma](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma)
-
-[Azure Cosmos DB API for MongoDB (4.2 server version): supported features and syntax](/azure/cosmos-db/mongodb/feature-support-42)
-
-[Per-account limits](/azure/cosmos-db/concepts-limits#per-account-limits)
-
-[Partitioning and horizontal scaling in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview)
-
-[Choose a partition key](/azure/cosmos-db/partitioning-overview#choose-partitionkey)
-
-[Optimize by provisioning throughput at different levels](azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels)
-
-[Data modeling in Azure Cosmos DB](/azure/cosmos-db/sql/modeling-data)
-
-[How to model and partition data on Azure Cosmos DB using a real-world example](/azure/cosmos-db/sql/how-to-model-partition-example)
-
-[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/post-migration-optimization)
-
-[Capacity estimation using calculator](/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator)
-
-[Azure Capacity Calculator](https://cosmos.azure.com/capacitycalculator/)

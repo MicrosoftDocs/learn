@@ -21,14 +21,3 @@ Let's review some considerations for each of these migration options.
 | Offline | [Azure Databricks and Spark](/azure/cosmos-db/mongodb/migrate-databricks) | • Full control of migration rate and data transformation </br> • Requires custom coding |
 
 Regardless if you need to do an online or an offline migration from MongoDB to Azure Cosmos DB, you should have plenty of options to cover all your migration needs. Azure Cosmos DB API for MongoDB got you covered.
-
-[Tutorial: Migrate MongoDB to Azure Cosmos DB's API for MongoDB online using DMS](/azure/dms/tutorial-mongodb-cosmos-db-online)
-
-[Migrate data from MongoDB to an Azure Cosmos DB API for MongoDB account by using Azure Databricks](/azure/cosmos-db/mongodb/migrate-databricks)
-
-[Copy and transform data in Azure Cosmos DB (SQL API) by using Azure Data Factory](/azure/data-factory/connector-azure-cosmos-db?tabs=data-factory)
-
-[Tutorial: Migrate MongoDB to Azure Cosmos DB's API for MongoDB offline using MongoDB native tools](/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db)
-
-[Migrate data from MongoDB to an Azure Cosmos DB API for MongoDB account by using Azure Databricks](/azure/cosmos-db/mongodb/migrate-databricks)
-

@@ -26,7 +26,7 @@ Let's prepare our environment to move the backup to the Azure Storage account. I
 1. Select **Azure CLI Tools** from the list and select **Install** on the *Extension: Azure CLI Tools* tab.
 
     > [!div class="mx-imgBorder"]
-    > [![Diagram showing the Visual Studio Code Azure Commnand Line Interface Tools Extension installation tab.](../media/6-visual-studio-code-azure-command-line-interface-extensions.png)](../media/6-visual-studio-code-azure-command-line-interface-extensions.png#lightbox)
+    > [![Diagram showing the Visual Studio Code Azure Command Line Interface Tools Extension installation tab.](../media/6-visual-studio-code-azure-command-line-interface-extensions.png)](../media/6-visual-studio-code-azure-command-line-interface-extensions.png#lightbox)
 
 1. Once the Install icon in the tab changes for a *Disable* and *Uninstall* button, you can close the tab since that means the extension is now installed.
 
@@ -44,7 +44,7 @@ Let's put Visual studio Code to some good use, first, we need to clone the lab r
     ```
 
     1. Choose a folder to copy the repository to. It might be a good idea to create a new empty directory for this clone, that you can easily find later.
-    1. Once it has completed downloading the repository it will ask ***Would you like to open the clone repository?*** , select the **Open** button.
+    1. Once it has completed downloading the repository it will ask ***Would you like to open the clone repository?***, select the **Open** button.
 
         > [!NOTE]
         > If you did not selected the ***Open*** button, select ***File*** -> ***Open folder*** and select the folder where you cloned the repo to open it.
@@ -128,7 +128,7 @@ Now that we've created our Azure Cosmos DB account, created an Azure Blob Storag
 
 1. Select ***+ Create Resource***.
 
-1. Search for ***Azure Database Migration Services*** and select it.
+1. Search for ***Azure Database Migration Service*** and select it.
 
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the step to select to a Database Migration Service.](../media/6-create-resource-database-migration-service-search.png)](../media/6-create-resource-database-migration-service-search.png#lightbox)
@@ -162,7 +162,7 @@ Now that we've created our Azure Cosmos DB account, created an Azure Blob Storag
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the Database Migration Service network tab.](../media/6-create-migration-service-network-tab.png)](../media/6-create-migration-service-network-tab.png#lightbox)
 
-    > [!NOTE] 
+    > [!NOTE]
     > In the Azure DMS ***Networking*** tab. you create, or use an existing virtual network, so your DMS can connect to source servers with public facing IPs. It is a required step.
 
 1. Select the **Review and Create** button and then select the **Create** button to create the *Database Migration Service*.
@@ -314,19 +314,3 @@ So the last thing we need to do, is check out the fruits of all this labor.
     > [![Diagram showing the post migration data in Cosmos DB.](../media/6-data-explorer.png)](../media/6-data-explorer.png#lightbox)
 
 In this exercise, we've introduced how to migrate MongoDB data into Azure Cosmos DB using the Azure Database Migration Service. Azure DMS, is just one of several options we have to migrate your MongoDB databases into Azure Cosmos DB. To learn more on online and offline migration take a look at the [Options to migrate your on-premises or cloud data to Azure Cosmos DB](/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api) article.
-
-[Visual Studio Code](https://azure.microsoft.com/products/visual-studio-code/)
-
-[Download](https://code.visualstudio.com/download)
-
-[Setup overview](https://code.visualstudio.com/docs/setup/setup-overview)
-
-[Get started with AzCopy](/azure/storage/common/storage-use-azcopy)
-
-[Download AzCopy](/azure/storage/common/storage-use-azcopy#download-azcopy)
-
-[Delegate access with a shared access signature](/rest/api/storageservices/delegate-access-with-shared-access-signature)
-
-[Create an account SAS](/rest/api/storageservices/create-account-sas)
-
-[Azure Cosmos DB Mongo API](/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api)
