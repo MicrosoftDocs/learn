@@ -14449,6 +14449,51 @@
       "source_path": "learn-pr/xamarin/intro-to-app-center/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/appcenter/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/2-what-is-xamarin-android.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/3-exercise-create-a-xamarin-android-tipcalculator-app.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/4-build-a-ui-for-an-activity.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/5-exercise-add-views-to-the-tipcalculator-app-ui.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/6-write-behavior-for-an-activity.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/7-exercise-add-behavior-to-the-tipcalculator-app-activity.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/8-update-your-android-sdk.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
+      "redirect_document_id": false    
     }
   ]
 }
