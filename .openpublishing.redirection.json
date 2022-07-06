@@ -14574,6 +14574,46 @@
       "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/2-use-databinding-in-xamarin-forms.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/3-exercise-replace-code-with-data-bindings.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/4-customize-databinding-capabilities.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/5-exercise-implement-inotifypropertychanged.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/6-databinding-mismatched-types.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/7-exercise-use-value-converter.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
+      "redirect_document_id": false    
     }    
   ]
 }
