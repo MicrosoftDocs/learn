@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- data-warehousing
 units:
 - learn.azdo.route-system-feedback.1-introduction
 - learn.azdo.route-system-feedback.2-continuously-monitor

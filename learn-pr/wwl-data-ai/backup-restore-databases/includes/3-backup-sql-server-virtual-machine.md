@@ -1,6 +1,6 @@
 Azure Backup can back up VMs that contain SQL Server. These backups would contain not just SQL Server databases; they would everything that is in the VM so it could be restored as a whole. While this option may not be right for everyone, it can potentially protect against problems like ransomware.
 
-VM-level backups are SQL Server-aware, also known as application aware, so they will create an application-consistent backup. This means that if you restore a VM-level backup, it will not ‘break’ SQL Server. If using this option, when looking in the SQL Server log you will see that the I/O has been momentarily frozen and then starts again when complete. If this causes issues with availability features like AGs, you may want to consider another backup strategy.
+VM-level backups are SQL Server-aware, also known as application aware, so they'll create an application-consistent backup. This means that if you restore a VM-level backup, it will not ‘break’ SQL Server. If using this option, when looking in the SQL Server log you'll see that the I/O has been momentarily frozen and then starts again when complete. If this causes issues with availability features like AGs, you may want to consider another backup strategy.
 
 Combining SQL Server backups with snapshots can potentially cause issues. If snapshot delays cause backup failures, set following registry key:
 
@@ -10,15 +10,15 @@ Combining SQL Server backups with snapshots can potentially cause issues. If sna
 
 ## Use local disks or a network share for backup files
 
-As with on premises SQL Server instances, databases can be backed up to disks attached to the VM or to network shares (including the file share in Azure called Azure Files) that SQL Server has access to. If you are backing up to disks local to the VM, ensure that they are not written to the ephemeral storage that is erased upon shutdown or restart. You might also want to make sure that the backups are copied to a second location so as not to create a single point of failure.
+As with on premises SQL Server instances, databases can be backed up to disks attached to the VM or to network shares (including the file share in Azure called Azure Files) that SQL Server has access to. If you're backing up to disks local to the VM, ensure that they aren't written to the ephemeral storage that is erased upon shutdown or restart. You might also want to make sure that the backups are copied to a second location so as not to create a single point of failure.
 
-## Backup Databases to and restore from URL
+## Backup databases to and restore from URL
 
 Another option is to configure backup to URL for the SQL Server instance installed in the VM. Unlike backups made on premises, backup and restore from URL for an IaaS VM is effectively a local option.
 
-Backup to URL requires an Azure storage account and uses the Azure blob storage service. Inside the storage account, there are containers, and the blobs are stored there. Unlike a path on your local disk, the path to a backup file will look something like `https://ACCOUNTNAME.blob.core.windows.net/ContainerName/MyDatabase.bak`. You can include additional folder names under your container for easier identification of backups (for example, FULL, DIFF, LOG).
+Backup to URL requires an Azure storage account and uses the Azure blob storage service. Inside the storage account, there are containers, and the blobs are stored there. Unlike a path on your local disk, the path to a backup file will look something like `https://ACCOUNTNAME.blob.core.windows.net/ContainerName/MyDatabase.bak`. You can include more folder names under your container for easier identification of backups (for example, FULL, DIFF, LOG).
 
-To backup to or restore from a URL, authentication must be established between the SQL Server instance and Azure. Remember that inside of an Azure VM, SQL Server does not know it is running on Azure. A SQL Server Credential can be composed of the Azure storage account name and access key authentication or a Shared Access Signature. If the former is used, the backup will be stored as a page blob and if the latter, it will be stored as a block blob. Starting with SQL Server 2016, only block blob is available so you should use a Shared Access Signature. From a cost perspective, block blobs are also cheaper, and Shared Access Signature tokens offer better security control.
+To backup to or restore from a URL, authentication must be established between the SQL Server instance and Azure. Remember that inside of an Azure VM, SQL Server doesn't know it's running on Azure. A SQL Server Credential can be composed of the Azure storage account name and access key authentication or a Shared Access Signature. If the former is used, the backup will be stored as a page blob and if the latter, it will be stored as a block blob. Starting with SQL Server 2016, only block blob is available so you should use a Shared Access Signature. From a cost perspective, block blobs are also cheaper, and Shared Access Signature tokens offer better security control.
 
 Restoring from a URL is as simple as restoring from disk or a network share. In the SQL Server Management Studio UI, select URL from the backup media type in the Wizard. If using Transact-SQL, instead of using FROM DISK, you would use FROM URL with the appropriate location and backup file name(s). Here are some sample statements:
 
@@ -50,4 +50,4 @@ The automated backup option is currently only available for Windows Server-based
 > [!IMPORTANT]
 > You choose one method of backing up databases with IaaS-based SQL Server deployments. For example, if you use automated backups, especially with transaction log backups, do not also configure those at the instance level inside the VM. You could cause problems with the log chain with restoring a database if things are uncoordinated, because each log backup clears the log and you must have an entire unbroken chain of log backups in order to do a log restore. For example, if transaction log backups happen inside the guest as well as at the Azure level, you may have to piece together the backups to do a restore.
 
-While the backups can be automated, restores cannot be. You would need to configure and use the restore from URL functionality within SQL Server.
+While the backups can be automated, restores can't be. You would need to configure and use the restore from URL functionality within SQL Server.

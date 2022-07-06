@@ -58,7 +58,7 @@ The same cmdlet is used to view a template spec version. Add the `-Version` para
 
 :::code language="azurepowershell" source="code/6-get-templatespec-2.ps1" highlight="4" :::
 
-You can access the JSON template by reading the `Template` property from within the `Versions` array:
+You can access the JSON template by reading the `MainTemplate` property from within the `Versions` array:
 
 :::code language="azurepowershell" source="code/6-get-templatespec-3.ps1" highlight="5" :::
 

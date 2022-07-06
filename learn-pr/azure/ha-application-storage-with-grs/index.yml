@@ -26,6 +26,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- storage
+- business-continuity
 units:
   - learn.ha-application-storage-with-grs.1-introduction
   - learn.ha-application-storage-with-grs.2-storage-account-replication-features

@@ -31,6 +31,8 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.azure.deploy-elastic-cloud-kubernetes-azure.introduction
 - learn.azure.deploy-elastic-cloud-kubernetes-azure.create-cluster-install

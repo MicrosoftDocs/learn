@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Display photos in Jupyter Notebook
   description: Run code to classify uploaded photos, and print the photos with the rock classification.
   ms.date: 04/11/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

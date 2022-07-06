@@ -75,7 +75,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Replace the value for the AccountName parameter with the account name value you copied.
 
-1. Copy the value for `AccountKey=` in the body of the connection string (do not include the quotation mark). Make sure to include the `==` at the end of the value.
+1. Copy the value for `AccountKey=` in the body of the connection string (don't include the quotation mark). Make sure to include the `==` at the end of the value.
 
 1. Replace the value of the AccountKey parameter with the account key value you copied.
 
@@ -131,9 +131,9 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. In a browser, paste the URL that was returned by the cURL command. Make sure you include the slash (/) at the end of the address.
 
-    The URL should be in this format: https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/. 
-    
-    Sign in if you're prompted to do so. The **Lamna Healthcare** Patient Diagnostic Image System appears.
+    The URL should be in this format: `https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/`. 
+
+    If you're prompted to sign in, refresh your browser window. The **Lamna Healthcare** Patient Diagnostic Image System appears.
 
 1. Select **Get all patients** to view a listing of all the images in the storage account.
 

@@ -110,7 +110,7 @@ When you have the WAQI API token, add the token key value to the environment var
     ```python
     # Load the World Air Quality Index key from the .env file.
     WAQI_API_KEY = os.environ["WAQI_API_KEY"]
-    WAQI_API_URL = https://api.waqi.info/map/bounds/?latlng={},{},{},{}&token={}
+    WAQI_API_URL = "https://api.waqi.info/map/bounds/?latlng={},{},{},{}&token={}"
     ```
 
     The `WAQI_API_URL` defines a call to get all the air quality readings for a rectangular region that’s defined by the `lon` and `lat` coordinates.
@@ -123,7 +123,7 @@ The last step is to add a data source to the map to render the AQI data. Azure M
 
 1.	In Visual Studio Code, open the *home.html* file in the *templates* folder for your app.
 
-1.	In the <i>app.py</i> code, find the statements that handle the `ready` event for the map. This code should appear on lines 46 through 52:
+1.	In this file, find the statements that handle the `ready` event for the map. This code should appear on lines 46 through 52:
 
     ```javascript
     // When the map is ready, center the map on the user's location.

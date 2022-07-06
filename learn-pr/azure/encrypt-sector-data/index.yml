@@ -34,7 +34,9 @@ products:
 - azure-vpn-gateway
 - azure-sql-database
 - azure-disk-encryption
-units: 
+subjects:
+- information-protection-governance
+units:
 - learn.azure.encrypt-sector-data.1-introduction
 - learn.azure.encrypt-sector-data.2-sector-key-management
 - learn.azure.encrypt-sector-data.3-data-encryption-transit

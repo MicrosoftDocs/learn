@@ -33,6 +33,8 @@ products:
 - azure-bot-service
 - azure-cognitive-services
 - azure-machine-learning
+subjects:
+- artificial-intelligence
 units:
 - learn.azure.ai-machine-learning-fundamentals.introduction
 - learn.azure.ai-machine-learning-fundamentals.identify-product-options

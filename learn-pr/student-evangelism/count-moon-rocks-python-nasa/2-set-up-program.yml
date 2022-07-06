@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Create a Jupyter Notebook to explore data about Moon rocks
   description: Set up the project to explore data about Moon rocks.
   ms.date: 06/29/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

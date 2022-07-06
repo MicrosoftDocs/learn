@@ -11,3 +11,4 @@ After completing this module, you'll be able to:
 * Send and receive message from a Service Bus queue by using .NET.
 * Identify the key components of Azure Queue Storage
 * Create queues and manage messages in Azure Queue Storage by using .NET.
+

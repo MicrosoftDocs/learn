@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - vs
+subjects:
+- mixed-reality
 units:
 - learn.sports-machine-learning.use-mixed-reality-toolkit.introduction
 - learn.sports-machine-learning.use-mixed-reality-toolkit.set-up-project

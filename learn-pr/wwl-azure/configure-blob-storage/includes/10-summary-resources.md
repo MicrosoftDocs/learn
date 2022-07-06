@@ -10,10 +10,10 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure Blob storage documentation](/azure/storage/blobs/).
  -  [Object blob replication overview](/azure/storage/blobs/object-replication-overview)
  -  [Access tiers for Azure Blob Storage - hot, cool, and archive](/azure/storage/blobs/storage-blob-storage-tiers)
- -  [Learn - Optimize storage performance and costs using Blob storage tiers](/learn/modules/optimize-archive-costs-blob-storage/)
- -  [Learn - Gather metrics from your Azure Blob Storage containers](/learn/modules/gather-metrics-blob-storage/)
+ -  [Learn - Optimize storage performance and costs using Blob storage tiers (Sandbox)](/learn/modules/optimize-archive-costs-blob-storage/)
+ -  [Learn - Gather metrics from your Azure Blob Storage containers (Sandbox)](/learn/modules/gather-metrics-blob-storage/)

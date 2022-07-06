@@ -27,6 +27,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- migration
+- cross-development
 units:
 - learn.wwl.explore-migration-options.introduction
 - learn.wwl.explore-migration-options.analyze-strategies-for-migrating-sap-systems-to-microsoft-azure

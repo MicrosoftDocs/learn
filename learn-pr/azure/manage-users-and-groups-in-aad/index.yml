@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.azure-security.manage-users-and-groups-in-aad.introduction
 - learn.azure-security.manage-users-and-groups-in-aad.create-aad

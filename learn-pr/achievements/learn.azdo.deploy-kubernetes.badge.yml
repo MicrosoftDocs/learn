@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.deploy-kubernetes.badge
+metadata:
+  title: >-
+    Microsoft Badge: Automate multi-container Kubernetes deployments with Azure
+    Pipelines was issued by Microsoft
+socialImageUrl: /learn/achievements/azure-devops/deploy-kubernetes-social.png

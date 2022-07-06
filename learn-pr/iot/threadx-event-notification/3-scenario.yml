@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-event-notification.scenario
+title: ProjectProducerConsumer scenario
+metadata:
+  title: ProjectProducerConsumer scenario
+  description: Illustrate the scenario for the project.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-scenario.md)]

@@ -27,6 +27,8 @@ roles:
 products:
 - azure-sdks
 - ms-graph
+subjects:
+- data-ai
 units:
 - learn.wwl.microsoft-graph.introduction
 - learn.wwl.microsoft-graph.discover

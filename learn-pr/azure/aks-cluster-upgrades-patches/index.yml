@@ -28,7 +28,9 @@ roles:
 products:  
   - azure
   - azure-kubernetes-service
-units:  
+subjects:
+- container
+units:
 - learn.aks-cluster-upgrades-patches.introduction
 - learn.aks-cluster-upgrades-patches.what-are-versions 
 - learn.aks-cluster-upgrades-patches.what-are-aks-versions 

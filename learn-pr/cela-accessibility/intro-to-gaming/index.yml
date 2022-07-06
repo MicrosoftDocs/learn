@@ -19,7 +19,7 @@ abstract: |
   - Describe the importance of considering diverse player experiences when you explore accessible features and solutions.
 prerequisites: |
  - You should have some basic familiarity with playing and creating video games.
- - You should have some familiarity with using game platforms like Xbox, PlayStation, Nintendo Switch, or Windows.
+ - You should have some familiarity with using game platforms like Xbox, Windows, and other common gaming console and PC platforms.
  - A basic understanding of foundational terms and concepts for disability and accessibility principles is helpful.
 iconUrl: /learn/achievements/intro-to-gaming.svg
 levels:
@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - xbox
+subjects:
+- gaming-innovation
 units:
 - learn.intro-to-gaming.introduction
 - learn.intro-to-gaming.approach-gameplay

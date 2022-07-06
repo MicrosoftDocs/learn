@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-performance-improvements.describe-wait-statistics
+title: Describe wait statistics
+metadata:
+  title: Describe wait statistics
+  description: "Describe wait statistics"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-describe-wait-statistics.md)]

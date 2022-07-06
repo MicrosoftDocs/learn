@@ -18,7 +18,7 @@
 
 - A resource can connect to resources in other resource groups. For example, you can have a web app that connects to a database in a different resource group.
 
-- Resources can be moved between resource groups.
+- Resources can be [moved between resource groups](/azure/azure-resource-manager/management/move-resource-group-and-subscription) with a some exceptions.
 
 - You can add a resource to or remove a resource from a resource group at any time.
 

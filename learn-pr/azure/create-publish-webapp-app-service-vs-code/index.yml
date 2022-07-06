@@ -28,6 +28,8 @@ products:
 - azure
 - azure-app-service
 - vs-code
+subjects:
+- cloud-computing
 units:
 - learn.azure.publish-express-node-app-service-vscode.1-introduction
 - learn.azure.publish-express-node-app-service-vscode.2-create-express-web-application-vs-code

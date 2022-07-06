@@ -15,7 +15,6 @@ Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engin
 Manage identity and access (30-35%)
 
  -  Manage Azure AD identities
-    
      -  configure authentication methods including password hash and Pass-Through Authentication (PTA), OAuth, and passwordless
 
 ## Learning objectives

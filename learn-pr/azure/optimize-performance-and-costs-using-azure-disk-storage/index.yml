@@ -34,6 +34,9 @@ products:
 - azure
 - azure-storage-accounts
 - azure-disk-storage
+subjects:
+- development-tools
+- storage
 units:
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.introduction
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.choose-right-azure-disk-storage-option

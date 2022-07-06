@@ -5,8 +5,8 @@ metadata:
   title: Explore DataFrame information
   description: Explore `DataFrame` information.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ms.custom: team=nextgen

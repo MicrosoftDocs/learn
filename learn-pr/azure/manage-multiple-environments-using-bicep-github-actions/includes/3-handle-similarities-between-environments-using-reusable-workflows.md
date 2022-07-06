@@ -42,11 +42,11 @@ When you create a reusable workflow, you use the `workflow_call` trigger to tell
 
 :::code language="yaml" source="code/3-called-workflow.yml" highlight="2" :::
 
-In the caller workflow, you refer to the called workflow by including the `uses:` keyword and specifying the path to the called workflow:
+In the caller workflow, you refer to the called workflow by including the `uses:` keyword and specifying the path to the called workflow within the current repository:
 
 :::code language="yaml" source="code/3-caller-workflow.yml" highlight="6" :::
 
-Ensure the path includes your GitHub username, the repository name, and the path to the called workflow file you're referencing.
+You can also refer to a workflow definition file in another repository.
 
 ## Called workflow inputs and secrets
 
@@ -65,6 +65,8 @@ Inputs can have several properties, including:
 - The *default value* of the input. This is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
 
 Secrets have names, but they don't have types or default values.
+
+In the example above, the workflow defines a mandatory string input named `environmentType`, and a mandatory secret named `AZURE_CREDENTIALS`.
 
 In your workflow, you use a special syntax to refer to the value of the parameter, like in this example: 
 

@@ -3,7 +3,7 @@ Your transportation company wants to set itself apart from other companies, with
 Here, you'll learn:
 
 - What considerations you need to make when creating an Azure SQL database, including:
-  - How a logical server acts as an administrative container for your databases.
+  - How a logical server acts as an administrative container for your databasFes.
   - Differences between purchasing models.
   - How elastic pools enable you to share processing power among databases.
   - How collation rules affect how data is compared and sorted.
@@ -114,7 +114,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
     b. Select **Apply**.
 
-1. On the **Create SQL Database** pane, select the **Additional settings** tab, and enter the following values for each setting.
+1. Select the **Additional settings** tab at the top of the screen, and enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -140,14 +140,14 @@ While deployment is in progress, **Deployment details** displays the resources t
 
 Your Azure SQL database is now up and running. There are many options that you can use to configure, secure, monitor, and troubleshoot your database. You can specify which systems are allowed to access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure. For the prototype, you only need access to the database from your local computer. Later, you can add more systems, such as your mobile app. For now, let's enable your computer to access the database through the firewall.
 
-1. On the command bar, select **Set server firewall**. The **Firewall settings** pane appears.
+1. On the command bar, select **Set server firewall**. The **Networking** pane appears.
 
     :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot showing command bar with Set server firewall highlighted.":::
 
-1. On the command bar, select **Add client IP**. This action automatically adds the IP address for your computer.
+1. Select **Add your client IP4 address**. This action automatically adds the IP address for your computer.
 
     :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP highlighted.":::
 
-1. On the command bar, select **Save**. When the firewall rules are updated, select **OK**.
+1. Select **Save**.
 
 In the next unit, you'll get some hands-on practice with your new database and with Azure Cloud Shell. You'll connect to the database, create a table, add some sample data, and execute a few SQL statements.

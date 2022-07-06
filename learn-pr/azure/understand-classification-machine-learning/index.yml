@@ -25,6 +25,9 @@ roles:
 - student
 products: 
 - azure
+subjects:
+- machine-learning
+- classification-analysis
 units:
 - learn.machinelearning.understand-classification-machine-learning.introduction
 - learn.machinelearning.understand-classification-machine-learning.what-is-classification

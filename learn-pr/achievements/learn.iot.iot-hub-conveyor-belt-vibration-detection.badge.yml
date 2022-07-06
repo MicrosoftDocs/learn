@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.iot.iot-hub-conveyor-belt-vibration-detection.badge
+metadata:
+  title: >-
+    Microsoft Badge: Identify anomalies by routing data via IoT Hub to a
+    built-in ML model in Azure Stream Analytics was issued by Microsoft
+socialImageUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection-social.png

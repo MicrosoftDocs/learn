@@ -3,7 +3,7 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
 metadata:
   title: Create a custom skill for Azure Cognitive Search
   description: "Create a custom skill for Azure Cognitive Search"
-  ms.date: 07/30/2021
+  ms.date: 05/17/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

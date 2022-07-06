@@ -28,6 +28,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
+- data-visualization
 units:
 - learn.student-evangelism.predict-flight-delays-with-python.introduction
 - learn.student-evangelism.predict-flight-delays-with-python.create-notebook-and-import-data

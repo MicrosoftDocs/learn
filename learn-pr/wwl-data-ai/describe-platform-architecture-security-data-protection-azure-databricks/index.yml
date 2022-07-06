@@ -3,7 +3,7 @@ uid: learn.wwl.describe-platform-architecture-security-data-protection-azure-dat
 metadata:
   title: Describe platform architecture, security, and data protection in Azure Databricks
   description: "Describe platform architecture, security, and data protection in Azure Databricks"
-  ms.date: 01/06/2022
+  ms.date: 05/27/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -24,6 +24,9 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- information-protection-governance
+- security
 units:
 - learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks.introduction
 - learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks.describe-platform-architecture

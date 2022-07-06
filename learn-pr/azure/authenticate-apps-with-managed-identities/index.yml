@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- security
 units:
 - learn.authenticate-apps-with-managed-identities.1-introduction
 - learn.authenticate-apps-with-managed-identities.2-service-principals

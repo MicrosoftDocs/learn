@@ -38,6 +38,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- migration
 modules:
 - learn.wwl.implement-hybrid-network-infrastructure
 - learn.wwl.implement-hybrid-identity-with-windows-server

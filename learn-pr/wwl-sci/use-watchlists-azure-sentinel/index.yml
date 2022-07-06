@@ -3,7 +3,7 @@ uid: learn.wwl.use-watchlists-azure-sentinel
 metadata:
   title: Use watchlists in Microsoft Sentinel
   description: "Use watchlists in Microsoft Sentinel"
-  ms.date: 12/10/2021
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -23,10 +23,13 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.use-watchlists-azure-sentinel.introduction
 - learn.wwl.use-watchlists-azure-sentinel.plan-for-azure-watchlists
 - learn.wwl.use-watchlists-azure-sentinel.create-watchlist
+- learn.wwl.use-watchlists-azure-sentinel.manage-watchlists
 - learn.wwl.use-watchlists-azure-sentinel.knowledge-check
 - learn.wwl.use-watchlists-azure-sentinel.summary-resources
 badge:

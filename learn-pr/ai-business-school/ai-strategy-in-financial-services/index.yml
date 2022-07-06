@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-financial-services.introduction
 - learn-wwl.ai-strategy-in-financial-services.ai-value-in-financial-services-insead
 - learn-wwl.ai-strategy-in-financial-services.financial-services-case-study-introduction

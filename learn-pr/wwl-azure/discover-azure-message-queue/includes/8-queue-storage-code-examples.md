@@ -111,7 +111,7 @@ if (queueClient.Exists())
     QueueMessage[] retrievedMessage = queueClient.ReceiveMessages();
 
     // Process (i.e. print) the message in less than 30 seconds
-    Console.WriteLine($"Dequeued message: '{retrievedMessage[0].MessageText}'");
+    Console.WriteLine($"Dequeued message: '{retrievedMessage[0].Body}'");
 
     // Delete the message
     queueClient.DeleteMessage(retrievedMessage[0].MessageId, retrievedMessage[0].PopReceipt);

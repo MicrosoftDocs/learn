@@ -32,6 +32,8 @@ products:
 - azure-resource-manager
 - azure-disk-storage
 - azure-disk-encryption
+subjects:
+- virtual-machine
 units:
 - learn.secure-your-azure-virtual-machine-disks.1-introduction
 - learn.secure-your-azure-virtual-machine-disks.2-encryption-options-for-protecting-windows-and-linux-vms

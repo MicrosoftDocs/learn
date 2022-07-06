@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- development-tools
 modules:
 - learn.wwl.perform-windows-server-secure-administration
 - learn.wwl.describe-windows-server-administration-tools

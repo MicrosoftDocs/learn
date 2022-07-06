@@ -24,6 +24,8 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- machine-learning
 units:
 - learn.wwl.tune-hyperparameters-with-azure-machine-learning.introduction
 - learn.wwl.tune-hyperparameters-with-azure-machine-learning.defining-search-space

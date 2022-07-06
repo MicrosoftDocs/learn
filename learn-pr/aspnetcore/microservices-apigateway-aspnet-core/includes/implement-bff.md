@@ -307,15 +307,11 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
 
     :::image type="content" source="../media/websalesagg-cluster-ip.png" alt-text="Screenshot that shows the cluster I P address of WebSalesAgg." lightbox="../media/websalesagg-cluster-ip.png":::
 
-1. Open a shell inside the pod. Replace `{webspa-pod-name}` with the pod name that you retrieved earlier.
+1. Deploy and open a shell on a new pod with a curl image
 
     ```bash
-    kubectl exec -it {webspa-pod-name} /bin/bash
+    kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
     ```
-
-    The following screenshot shows an example.
-
-    :::image type="content" source="../media/webspa-container-pod-bash.png" alt-text="Screenshot that shows WebSPA inside a container pod." lightbox="../media/webspa-container-pod-bash.png":::
 
 1. Within the pod, use cURL to verify that the service is listening. Use the IP address that you retrieved earlier.
 

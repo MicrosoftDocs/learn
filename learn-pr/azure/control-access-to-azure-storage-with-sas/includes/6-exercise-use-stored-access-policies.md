@@ -99,7 +99,7 @@ In this exercise, you'll update your web app to create SASs with stored access p
     dotnet build
     ```
 
-1. In the event that the port might have closed since you finished the previous exercise, run the `curl` command to open it again.
+1. In case the port has closed since you finished the previous exercise, run the `curl` command to open it again.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -141,7 +141,9 @@ In this exercise, you'll update your web app to create SASs with stored access p
 
 1. On the right, select the **...** menu, and then select **Edit** from the pop-up menu.
 
-1. In the Edit policy, change the **Permission** from **read** to **list**.
+1. In the Edit policy, change the **Permission** from **read** to **list** and select **OK** to confirm.
+
+1. Select **Save** on the **patient-images | Access policy** pane.
 
 ### Test a new SAS
 

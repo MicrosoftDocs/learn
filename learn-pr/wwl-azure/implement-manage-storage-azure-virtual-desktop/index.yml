@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- storage
 units:
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.introduction
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.fslogix-components

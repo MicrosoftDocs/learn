@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.source-control-for-machine-learning-projects.verify-your-code-locally
+title: Verify your code locally
+metadata:
+  title: Verify your code locally
+  description: "Verify your code locally"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-verify-your-code-locally.md)]

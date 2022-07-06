@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-site-recovery
+subjects:
+- business-continuity
 units:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.1-introduction
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.2-azure-site-recovery-overview

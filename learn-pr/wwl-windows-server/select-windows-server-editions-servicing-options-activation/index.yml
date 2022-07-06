@@ -31,6 +31,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
+- virtual-machine
 units:
 - learn.wwl.select-windows-server-editions-servicing-options-activation.introduction
 - learn.wwl.select-windows-server-editions-servicing-options-activation.choose-edition

@@ -3,19 +3,18 @@ uid: learn.wwl.integrate-azure-pipelines
 metadata:
   title: Integrate with Azure Pipelines
   description: "Integrate with Azure Pipelines"
-  ms.date: 04/13/2022
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Integrate with Azure Pipelines
-summary: This module details Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline. Also, it explores communication to deploy using Azure Pipelines to target servers.
+summary: This module details Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe advanced Azure Pipelines anatomy and structure
-  - Detail templates and YAML resources
-  - Implement and use multiple repositories
-  - Explore communication to deploy using Azure Pipelines
+  *   Describe advanced Azure Pipelines anatomy and structure
+  *   Detail templates and YAML resources
+  *   Implement and use multiple repositories
 prerequisites: ""
 iconUrl: /learn/achievements/6-integrate-with-azure-pipelines.svg
 levels:
@@ -39,6 +38,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.integrate-azure-pipelines.introduction
 - learn.wwl.integrate-azure-pipelines.describe-anatomy-of-pipeline
@@ -46,9 +47,7 @@ units:
 - learn.wwl.integrate-azure-pipelines.detail-templates
 - learn.wwl.integrate-azure-pipelines.explore-yaml-resources
 - learn.wwl.integrate-azure-pipelines.use-multiple-repositories-your-pipeline
-- learn.wwl.integrate-azure-pipelines.communicate-with-azure-pipelines
-- learn.wwl.integrate-azure-pipelines.communicate-to-deploy-to-target-servers
-- learn.wwl.integrate-azure-pipelines.examine-other-considerations
+- learn.wwl.integrate-azure-pipelines.integrate-external-source-control-with-azure-pipelines
 - learn.wwl.integrate-azure-pipelines.knowledge-check
 - learn.wwl.integrate-azure-pipelines.summary
 badge:

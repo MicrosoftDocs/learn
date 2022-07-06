@@ -31,6 +31,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- identity-access
 units:
 - learn.wwl.manage-multi-tenancy-for-azure-stack-hub.introduction
 - learn.wwl.manage-multi-tenancy-for-azure-stack-hub.configure-multi-tenancy

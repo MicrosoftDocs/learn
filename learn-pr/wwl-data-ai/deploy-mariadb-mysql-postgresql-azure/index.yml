@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-sql-database
+subjects:
+- database
+- cloud-computing
 units:
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.introduction
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.describe-open-source-offerings

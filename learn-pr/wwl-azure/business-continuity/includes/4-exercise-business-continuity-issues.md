@@ -23,7 +23,7 @@ Using the Cloud Shell on the right, run these commands to create the example top
 
 ## Create a backup
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
 
 1. Select the portal menu on the top left, select **Virtual machines**, and then select **labvm**.
 

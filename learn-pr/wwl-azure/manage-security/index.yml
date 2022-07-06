@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- security
 units:
 - learn.wwl.manage-security.introduction
 - learn.wwl.manage-security.plan-implement-conditional-access-policies-for-connections-to-azure-virtual-desk

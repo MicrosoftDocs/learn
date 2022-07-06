@@ -24,6 +24,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- it-management-monitoring
+- cloud-computing
 units:
 - learn.choose-compute-provisioning.1-introduction
 - learn.choose-compute-provisioning.2-provisioning-solutions

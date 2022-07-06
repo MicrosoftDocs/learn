@@ -1,4 +1,4 @@
-This module describes how to share knowledge within teams, Azure DevOps Wikis, and IT Service Management Connector (ITSMC). Also, integration with Azure Boards.
+This module describes how to share knowledge within teams, Azure DevOps Wikis, and integration with Azure Boards.
 
 ## Learning objectives
 
@@ -6,8 +6,7 @@ After completing this module, students and professionals can:
 
  -  Share knowledge with development teams.
  -  Work with Azure DevOps Wikis.
- -  Configure IT Service Management Connector (ITSMC).
- -  Integrate with Azure Boards.
+ -  Integrate with Azure Boards.<br>
 
 ## Prerequisites
 

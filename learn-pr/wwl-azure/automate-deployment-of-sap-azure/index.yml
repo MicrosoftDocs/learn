@@ -32,6 +32,8 @@ products:
 - azure-cloud-shell
 - azure-resource-manager
 - azure-sap
+subjects:
+- cloud-computing
 units:
 - learn.wwl.automate-deployment-of-sap-azure.introduction
 - learn.wwl.automate-deployment-of-sap-azure.explore-azure-integrated-automation-for

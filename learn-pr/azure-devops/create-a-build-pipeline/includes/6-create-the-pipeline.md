@@ -103,7 +103,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You can also define your own variables, which you'll do soon.
 
-    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
+    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
 1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to steps you performed earlier.
 

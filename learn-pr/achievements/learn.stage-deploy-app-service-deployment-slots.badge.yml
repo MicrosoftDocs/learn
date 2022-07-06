@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.stage-deploy-app-service-deployment-slots.badge
+metadata:
+  title: >-
+    Microsoft Badge: Stage a web app deployment for testing and rollback by
+    using App Service deployment slots was issued by Microsoft
+socialImageUrl: /learn/achievements/stage-deploy-app-service-deployment-slots-social.png

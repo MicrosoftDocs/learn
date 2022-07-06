@@ -8,7 +8,7 @@ In this exercise, you'll resolve the issue and check that the website can now be
 
    :::image type="content" source="../media/7-load-balancers.png" alt-text="A screenshot showing searching for load balancers." lightbox="../media/7-load-balancers.png":::
 
-1. Select the **myScaleSetLB** load balancer.
+1. Select the **webLoadBalancer** load balancer.
 
 1. Under **Settings**, select **Load balancing rules**.
 

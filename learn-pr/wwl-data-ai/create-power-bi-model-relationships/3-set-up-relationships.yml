@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-power-bi-model-relationships.set-up-relationships
+title: Set up relationships
+metadata:
+  title: Set up relationships
+  description: "Set up relationships"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-set-up-relationships.md)]

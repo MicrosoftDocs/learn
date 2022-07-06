@@ -1,4 +1,4 @@
-:::image type="content" source="../media/select-azure-container-instances.png" alt-text="Flowchart to select Azure Container Instances.":::
+:::image type="content" source="../media/select-azure-container-instances.png" alt-text="Flowchart to select Azure Container Instances. Alternatives are discussed in the text.":::
 
  
 
@@ -22,7 +22,7 @@ Virtual machines are an excellent way to reduce costs versus the investments tha
 
 The top-level resource in Azure Container Instances is the container group. A container group is a collection of containers that get scheduled on the same host machine. The containers in a container group share a lifecycle, resources, local network, and storage volumes.
 
-:::image type="content" source="../media/container-groups.png" alt-text="Container groups use DNS and access files.":::
+:::image type="content" source="../media/container-groups.png" alt-text="Diagram of container groups with D N S and Azure files. Groups are accesed by D N S and then access the files.":::
 
 
 Multi-container groups are useful in cases where you want to divide a single functional task into several container images. These images can then be delivered by different teams and have separate resource requirements. Example usage could include:

@@ -110,11 +110,11 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 
     ![Screenshot of the Azure portal, showing the instances for the virtual machine scale set.](../media/3-vmss-instances.png)
 
-1. Select **Properties**. Verify that the VMs are running Ubuntu Linux.
+1. Select an instance and then navigate to the **Properties** tab. Verify that the VMs are running Ubuntu Linux.
 
     ![Screenshot of the Azure portal, showing the operating system for the virtual machine scale set.](../media/3-vmss-operating-system.png)
 
 
 1. In your web browser, go to the public IP address of the scale set. Verify that the message ```Hello World from Virtual Machine Scale Set !``` appears.
 
-    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the web app running in a web browser with the desired message." loc-scope="other":::
+    :::image type="content" source="../media/7-web-app.png" alt-text="Screenshot of the web app running in a web browser with the desired message." loc-scope="other":::

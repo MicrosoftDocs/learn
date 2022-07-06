@@ -26,6 +26,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.display-collections-in-xamarin-forms-apps-with-listview.1-introduction
 - learn-xamarin.display-collections-in-xamarin-forms-apps-with-listview.2-display-collection-with-listview

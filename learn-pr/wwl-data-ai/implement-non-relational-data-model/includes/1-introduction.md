@@ -30,3 +30,4 @@ After completing this module, you’ll be able to:
 
 - Determine access patterns for data.
 - Apply data model and partitioning strategies to support an efficient and scalable NoSQL database.
+

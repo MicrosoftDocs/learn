@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.wwl.examine-iot-hub-message-routing.introduction
 - learn.wwl.examine-iot-hub-message-routing.review-message-processing-concepts

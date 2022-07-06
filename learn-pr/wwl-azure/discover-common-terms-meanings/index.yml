@@ -25,6 +25,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.discover-common-terms-meanings.introduction
 - learn.wwl.discover-common-terms-meanings.sap

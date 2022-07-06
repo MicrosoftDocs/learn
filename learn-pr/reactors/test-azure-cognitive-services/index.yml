@@ -3,9 +3,9 @@ uid: learn.reactors.test-azure-cognitive-services
 metadata:
   title: Test Azure Cognitive Services
   description: Learn how to test Azure Cognitive Services for data science operations.
-  ms.date: 05/19/2020
-  author: sguthals
-  ms.author: chnoring
+  ms.date: 06/23/2022
+  author: aahill
+  ms.author: aahi
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen
@@ -38,6 +38,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- artificial-intelligence
 units:
 - learn.reactors.test-azure-cognitive-services.1-introduction
 - learn.reactors.test-azure-cognitive-services.2-computer-vision
@@ -47,4 +49,4 @@ units:
 - learn.reactors.test-azure-cognitive-services.6-key-phrases-api
 - learn.reactors.test-azure-cognitive-services.7-entities-api
 badge:
-  uid: learn.reactors.test-azure-cognitive-services.badge 
+  uid: learn.reactors.test-azure-cognitive-services.badge

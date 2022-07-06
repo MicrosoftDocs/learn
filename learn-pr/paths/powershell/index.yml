@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - vs-code
+subjects:
+- it-management-monitoring
 modules:
 - learn.powershell.intro-to-powershell
 - learn.powershell.discover-commands

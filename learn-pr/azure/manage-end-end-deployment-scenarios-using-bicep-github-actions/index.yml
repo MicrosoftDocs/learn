@@ -48,6 +48,9 @@ languages:
 products:
   - azure-resource-manager
   - github
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.introduction
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.understand-end-end-deployments

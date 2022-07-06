@@ -27,6 +27,8 @@ products:
 - azure-cognitive-services
 - azure-language-understanding
 - azure-sdks
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.design-bot-conversation-flow
 - learn.wwl.create-bot-with-bot-framework-composer

@@ -116,8 +116,8 @@ The query engine will traverse the tree in the following order:
 1. The engine will start at the root. Right now, all items are still potential matches.
 1. The engine will traverse the **price** node. Still, all items match.
 1. The query engine will perform a binary search on all possible values to indicate whether they match the filter or not.
-1. Finally, the engine will map the matches values to their items. Only the **675.55** and **1215.40** nodes match. Then, only items **#1** and **#2** matches at this point
-1. The query engine will then load the entire JSON content for both items #1 and #2 and then return that in the result set.
+1. Finally, the engine will map the matches values to their items. Only the **675.55** node match. Then, only item **#1** matches at this point.
+1. The query engine will then load the entire JSON content for item **#1** and then return that in the result set.
 
 ![Search of an inverted tree for all values for a specific field](../media/2-search-price-range.png)
 

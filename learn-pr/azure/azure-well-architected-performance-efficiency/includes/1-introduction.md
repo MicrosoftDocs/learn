@@ -2,16 +2,16 @@ Whether you're running a public-facing application that handles massive amounts 
 
 In this module, you'll learn about the *performance efficiency* pillar of the Azure Well-Architected Framework.
 
-The concepts discussed in this module aren't all inclusive. They represent some of the important aspects to consider when you build a solution on the cloud. For more details on the Azure Well-Architected Framework, go to the [Azure Architecture Center](/azure/architecture/framework?azure-portal=true) as you start to plan and design your architecture.
+The concepts discussed in this module aren't all-inclusive. They represent some of the important aspects to consider when you build a solution on the cloud. For more details on the Azure Well-Architected Framework, go to the [Azure Architecture Center](/azure/architecture/framework?azure-portal=true) as you start to plan and design your architecture.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Scale your capacity based on workload.
-- Optimize network performance.
-- Optimize storage and database performance.
-- Improve application performance by identifying bottlenecks.
+- Scale your capacity based on workload
+- Optimize network performance
+- Optimize storage and database performance
+- Improve application performance by identifying bottlenecks
 
 ## Prerequisites
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2022
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,17 +17,6 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which storage redundancy option is best for the unstructured data?"
-    choices:
-    - content: "LRS"
-      isCorrect: false
-      explanation: "That’s incorrect. LRS only protects if a node within a data center becomes unavailable."
-    - content: "ZRS"
-      isCorrect: false
-      explanation: "That’s incorrect. ZRS provides the same protection as LRS plus protection at the data center level."
-    - content: "RA-GZRS"
-      isCorrect: true
-      explanation: "That’s correct. RA-GZRS provides read access in a secondary region if the primary region becomes unavailable."
   - content: "What replication option would be best for the Azure virtual machine backups?"
     choices:
     - content: "Azure Site Recovery"

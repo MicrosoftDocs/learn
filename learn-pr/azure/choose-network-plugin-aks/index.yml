@@ -29,6 +29,8 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - network-engineer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
   - azure-kubernetes-service
+subjects:
+- device-management
 units:
 - learn.choose-best-networking-plugin-for-aks.introduction
 - learn.choose-best-networking-plugin-for-aks.identify-plugin-options

@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.implement-desired-state-configuration-dsc.introduction
 - learn.wwl.implement-desired-state-configuration-dsc.understand-configuration-drift

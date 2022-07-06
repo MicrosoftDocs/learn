@@ -31,6 +31,8 @@ products:
 - azure
 - azure-cloud-services
 - azure-cognitive-services
+subjects:
+- data-analytics
 units:
 - learn.azure.intro-to-anomaly-detector.1-introduction
 - learn.azure.intro-to-anomaly-detector.2-what-is-anomaly-detector

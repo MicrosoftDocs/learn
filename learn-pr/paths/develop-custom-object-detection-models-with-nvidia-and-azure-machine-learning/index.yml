@@ -25,6 +25,8 @@ products:
 - azure
 - azure-storage
 - azure-machine-learning
+subjects:
+- machine-learning
 modules:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools

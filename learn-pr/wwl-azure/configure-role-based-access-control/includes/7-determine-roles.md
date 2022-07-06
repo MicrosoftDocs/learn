@@ -3,7 +3,7 @@ Azure includes several built-in roles that you can use. There are four fundament
  -  **Owner**. Has full access to all resources including the right to delegate access to others. The Service Administrator and Co-Administrators are assigned the Owner role at the subscription scope.
  -  **Contributor**. Can create and manage all types of Azure resources but can’t grant access to others.
  -  **Reader**. Can view existing Azure resources.
- -  **User Access Administrator**. Lets you manage user access to Azure resources, rather than to managing resources.
+ -  **User Access Administrator**. Lets you manage user access to Azure resources.
 
 ## Other things to know
 

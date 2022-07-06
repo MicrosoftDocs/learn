@@ -48,7 +48,7 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
 
    The job first checks out all the code onto the GitHub runner, and then signs in to your Azure environment.
 
-   > [!NOTE]
+   > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. Add a step to create the resource group with the name defined in the environment variable:

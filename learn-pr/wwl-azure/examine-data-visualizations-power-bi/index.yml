@@ -30,6 +30,9 @@ products:
 - azure-iot-hub
 - azure-portal
 - power-bi
+subjects:
+- data-analytics
+- data-visualization
 units:
 - learn.wwl.examine-data-visualizations-power-bi.introduction
 - learn.wwl.examine-data-visualizations-power-bi.review-options-capabilities

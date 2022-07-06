@@ -33,6 +33,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- virtual-machine
 units:
 - learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube.introduction
 - learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube.write-queries-that-pivot-unpivot-result-sets

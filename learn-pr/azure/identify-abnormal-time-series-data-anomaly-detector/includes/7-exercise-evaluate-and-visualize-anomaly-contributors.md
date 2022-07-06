@@ -245,3 +245,4 @@ show_contribution(raw_result, top_anomaly)
 ```
 [ ![Diagram displaying contributors of an anomaly.](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-2.png) ](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-2.png#lightbox)
 
+Congratulations, you have completed the exercises in this module!  See the summary to see how you can apply the techniques you have learned in your applications.

@@ -29,6 +29,8 @@ products:
 - azure
 - azure-translator
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.azure.intro-to-translator.introduction
 - learn.azure.intro-to-translator.what-is-translator

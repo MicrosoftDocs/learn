@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Completing your super sleuth personality quiz
   description: Program a five-question personality quiz based on fictional super sleuth characters.
   ms.date: 04/14/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

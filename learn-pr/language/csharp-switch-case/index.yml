@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-switch-case.introduction
 - learn.languages.csharp-switch-case.exercise-switch-case

@@ -1,4 +1,4 @@
-Organizing books in a library follows a set of design principles, as does organizing resources in subscriptions. Enterprise-scale architecture includes a reference implementation of the infrastructure-as-code, continuous integration and continuous delivery (CI/CD) pipeline, which helps organizations establish a cloud operating model. 
+Organizing books in a library follows a set of design principles, as does organizing resources in subscriptions. Enterprise-scale architecture includes a reference implementation of the infrastructure-as-code, continuous integration and continuous delivery (CI/CD) pipeline, which helps organizations establish a cloud-operating model. 
 
 Enterprise-scale architecture and reference implementation help organizations meet not only the criteria of success for cloud adoption, but also the requirements for success with continuous engineering. Familiarize yourself with these principles to understand their impact and the trade-offs associated with nonadherence.
 
@@ -19,7 +19,7 @@ Azure Policy provides guardrails for subscriptions to ensure continuous complian
 
 ## Single control and management plane
 
-Enterprise-scale architecture shouldn't rely on abstraction layers, such as internally developed portals or tooling. It should provide a consistent experience for both AppOps (centrally managed operation teams) and DevOps (dedicated application operation teams). It shouldn't differentiate between old and new applications or infrastructure as a service (IaaS) and platform as a service (PaaS) cloud-management paradigms. 
+Enterprise-scale architecture shouldn't rely on abstraction layers, such as internally developed portals or tooling. It should provide a consistent experience for both AppOps (centrally managed operation teams) and DevOps (dedicated application operation teams). It shouldn't differentiate between old and new applications or infrastructure as a service (IaaS) and platform as a service (PaaS) cloud-management paradigms.
 
 Ultimately, the architecture should provide a safe and secure foundation for all workload types to be deployed on the Azure platform. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels, subject to role-based access and policy-driven controls. The organization can use Azure to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
@@ -43,7 +43,7 @@ Enterprise-scale architecture strongly favors using native platform services and
 
 ## Critical design areas
 
-When organizations make architectural decisions, enterprise-scale design principles are a good guide to reducing friction in cloud adoption and the changes that scale requires. The critical design areas provide a common lexicon between on-premises and cloud platform landing zone design. 
+When organizations make architectural decisions, enterprise-scale design principles are a good guide to reducing friction in cloud adoption and the changes that scale requires. The critical design areas provide a common lexicon between on-premises and cloud platform landing zone design.
 
 The following high-level design guidelines can help translate your organization's requirements into Azure constructs and capabilities. Each critical design area addresses the mismatch between on-premises and cloud-design infrastructure, which typically creates dissonance and friction between the enterprise-scale definition and Azure adoption. A set of subsequent considerations and recommendations for critical design areas helps accelerate architectural design.  
 

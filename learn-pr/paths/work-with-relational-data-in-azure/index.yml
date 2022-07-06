@@ -24,6 +24,8 @@ products:
 - azure-sql-database
 - azure-cloud-shell
 - azure-clis
+subjects:
+- data-analytics
 modules:
 - learn.provision-azure-sql-db
 - learn.migrate-sql-server-relational-data

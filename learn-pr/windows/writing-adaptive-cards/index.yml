@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- data-modeling
 units:
 - learn-windows.writing-adaptive-cards.1-introducing-adaptive-cards
 - learn-windows.writing-adaptive-cards.2-engaging-your-users-with-adaptive-cards

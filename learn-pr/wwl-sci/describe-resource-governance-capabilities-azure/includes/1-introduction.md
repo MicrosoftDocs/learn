@@ -5,5 +5,5 @@ In this module, you’ll learn about the resource governance capabilities availa
 After completing this module, you'll be able to:
 
 - Describe Azure Policy.
-- Describe Azure Blueprints
-- Describe Azure Purview
+- Describe Azure Blueprints.
+- Describe Microsoft Purview.

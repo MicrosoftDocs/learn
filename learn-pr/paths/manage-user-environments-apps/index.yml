@@ -25,6 +25,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- virtual-machine
 modules:
 - learn.wwl.implement-manage-fslogix
 - learn.wwl.configure-user-experience-settings

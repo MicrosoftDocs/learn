@@ -5,7 +5,7 @@ In this unit, you'll learn how to create your Azure Service Bus Premium namespac
 Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services from each other, and it provides the following benefits:
 
 * Load balances work across competing workers
-* Safely routs and transfers data and controls across service and application boundaries
+* Safely routes and transfers data and controls across service and application boundaries
 * Coordinates transactional work that requires a high degree of reliability
 
 ## Messaging scenarios

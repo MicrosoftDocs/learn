@@ -3,7 +3,7 @@ uid: learn.github.communicate-using-markdown
 metadata:
   title: "Communicate effectively on GitHub by using Markdown"
   description: Learn to use Markdown to communicate with brevity, clarity, and expression.
-  ms.date: 06/26/2020
+  ms.date: 05/18/2022
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -31,6 +31,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 units:
 - learn.github.communicate-using-markdown.1-introduction
 - learn.github.communicate-using-markdown.2-what-is-markdown

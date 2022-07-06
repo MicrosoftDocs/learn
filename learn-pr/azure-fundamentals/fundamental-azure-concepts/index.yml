@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-functions
+subjects:
+- cloud-computing
 units:
 - learn.azure.fundamental-azure-concepts.introduction
 - learn.azure.fundamental-azure-concepts.types-of-cloud-computing

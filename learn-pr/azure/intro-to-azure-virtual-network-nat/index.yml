@@ -32,6 +32,8 @@ roles:
 products:
   - azure
   - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.azure.intro-to-azure-nat-gateway.1-introduction
 - learn.azure.intro-to-azure-nat-gateway.2-what-azure-virtual-network-nat

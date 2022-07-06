@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-automated-tests.introduction
 - learn.language.rust-automated-tests.unit-tests

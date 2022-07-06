@@ -26,6 +26,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.customize-layout-in-xamarin-forms-xaml-pages.1-introduction
 - learn-xamarin.customize-layout-in-xamarin-forms-xaml-pages.2-specify-the-size-of-a-view

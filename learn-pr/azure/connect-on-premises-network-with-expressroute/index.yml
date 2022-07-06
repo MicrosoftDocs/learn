@@ -26,6 +26,8 @@ products:
 - azure
 - azure-virtual-network
 - azure-expressroute
+subjects:
+- networking
 units:
 - learn.connect-on-premises-network-with-expressroute.1-introduction
 - learn.connect-on-premises-network-with-expressroute.2-expressroute-service

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-app-services.backup-app-service
-title: Backup an app service
+title: Back up an app service
 metadata:
-  title: Backup an app service
-  description: "Backup an app service"
-  ms.date: 11/03/2021
+  title: Back up an app service
+  description: "Back up an app service"
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

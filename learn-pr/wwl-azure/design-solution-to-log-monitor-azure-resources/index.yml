@@ -30,6 +30,8 @@ products:
 - azure-data-explorer
 - azure-log-analytics
 - azure-monitor
+subjects:
+- architecture
 units:
 - learn.wwl.design-solution-to-log-monitor-azure-resources.introduction
 - learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-monitor-data-sources

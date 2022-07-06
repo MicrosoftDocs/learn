@@ -12,7 +12,7 @@ Sign in to Azure either by using the PowerShell cmdlet `Connect-AzAccount` on yo
 First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks` and replace `EastUS` in the following command with the name of the region in which you'd like the group to be created.
 
 ```PowerShell
-$Location="WestUS" 
+$Location="EastUS" 
 New-AzResourceGroup -Name vm-networks -Location $Location
 ```
 

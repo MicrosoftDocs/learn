@@ -32,6 +32,8 @@ products:
 - vs
 - vs-code
 - azure-bot-service
+subjects:
+- chatbot
 units:
 - learn.build-azure-bot-services-bot.1-introduction
 - learn.build-azure-bot-services-bot.2-create-web-app-bot

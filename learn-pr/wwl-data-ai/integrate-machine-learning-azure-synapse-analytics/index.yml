@@ -26,6 +26,8 @@ roles:
 products:
 - azure-machine-learning
 - azure-synapse-analytics
+subjects:
+- machine-learning
 units:
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.introduction
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.describe-azure-machine-learning-how-it-integrates-with-workspace

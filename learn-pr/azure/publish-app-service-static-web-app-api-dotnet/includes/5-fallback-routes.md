@@ -11,7 +11,7 @@ Azure Static Web Apps supports custom routing rules defined in an optional _stat
 ```json
 {
   "navigationFallback": {
-    "rewrite": "index.html",
+    "rewrite": "/index.html",
     "exclude": ["/_framework/*", "/css/*"]
   }
 }
@@ -19,7 +19,7 @@ Azure Static Web Apps supports custom routing rules defined in an optional _stat
 
 | Setting | Value                       | Description                                                  |
 | ------- | --------------------------- | ------------------------------------------------------------ |
-| rewrite | `index.html`                  | The file to serve when a route didn't match any other files. |
+| rewrite | `/index.html`                  | The file to serve when a route didn't match any other files. |
 | exclude | `["/_framework/*", "/css/*"]` | Path(s) to ignore from fallback routing.                     |
 
 The navigation fallback rule is applied after any other routing rules that appear in the _staticwebapp.config.json_ file.

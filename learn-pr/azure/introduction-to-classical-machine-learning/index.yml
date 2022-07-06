@@ -26,7 +26,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- machine-learning
+units:
 - learn.machinelearning.introduction-to-classical-machine-learning.introduction
 - learn.machinelearning.introduction-to-classical-machine-learning.supervised-learning
 - learn.machinelearning.introduction-to-classical-machine-learning.exercise-separate-data-test-model

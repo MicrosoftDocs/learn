@@ -1,4 +1,4 @@
-In this module, you learned how to help Tailwind Traders migrate its database workloads to Microsoft Azure. You saw how Azure SQL Database, Azure Database for MySQL, and Azure Database for PostgreSQL will enable your company to migrate its existing SQL Server, MySQL, and PostgreSQL databases to the cloud. You can do this even while preserving your company's development and database administration strengths.
+In this module, you learned how to help Tailwind Traders migrate its database workloads to Microsoft Azure. You saw how Azure SQL Database, Azure Database for MySQL, and Azure Database for PostgreSQL will allow your company to migrate its existing SQL Server, MySQL, and PostgreSQL databases to the cloud. You can do this even while preserving your company's development and database administration strengths.
 
 In addition, you saw how Azure Cosmos DB works with a variety of popular APIs, including SQL, MongoDB, Cassandra, Tables, and Gremlin. You can use these to migrate your data to the cloud and retain or enhance your developers' skillsets. You also learned how you can use big data and analysis services like Azure Synapse Analytics, Azure HDInsight, Azure Databricks, and Azure Data Lake Analytics to analyze large volumes of data.
 
@@ -17,7 +17,7 @@ In addition, you saw how Azure Cosmos DB works with a variety of popular APIs, i
 
  -  [Migrate SQL workloads to Azure](/learn/paths/migrate-sql-workloads-azure/?azure-portal=true)
  -  [Migrate SQL Workloads to Azure SQL Databases](/learn/modules/migrate-sql-workloads-azure-sql-databases/?azure-portal=true)
- -  [Migrate SQL Workloads to Azure Managed Instances](/learn/modules/migrate-sql-workloads-azure-managed-instances/?azure-portal=true)
+ -  [Migrate SQL Workloads to Azure SQL Managed Instances](/learn/modules/migrate-sql-workloads-azure-managed-instances/?azure-portal=true)
  -  [Migrate on-premises MySQL databases to Azure Database for MySQL](/learn/modules/migrate-on-premises-mysql-databases/?azure-portal=true)
 
 ### Working with Azure databases

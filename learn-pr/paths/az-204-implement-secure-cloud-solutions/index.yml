@@ -25,6 +25,8 @@ products:
 - azure-app-configuration
 - azure-key-vault
 - azure-rbac
+subjects:
+- cloud-security
 modules:
 - learn.wwl.implement-azure-key-vault
 - learn.wwl.implement-managed-identities

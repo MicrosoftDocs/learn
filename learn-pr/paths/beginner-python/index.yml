@@ -37,6 +37,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- development-tools
 modules:
 - learn.beginner-python.create-run-jupyter-notebook
 - learn.languages.python-install-vscode

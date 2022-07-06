@@ -27,6 +27,9 @@ products:
 - azure
 - azure-virtual-machines
 - azure-storage
+subjects:
+- cache
+- storage
 units:
 - learn.caching-and-performance-azure-storage-and-disks.1-introduction
 - learn.caching-and-performance-azure-storage-and-disks.2-effect-of-caching-on-disk-performance-in-azure

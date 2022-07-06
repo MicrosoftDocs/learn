@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-healthcare.introduction
 - learn-wwl.ai-strategy-in-healthcare.ai-value-in-healthcare-insead
 - learn-wwl.ai-strategy-in-healthcare.healthcare-case-study-introduction

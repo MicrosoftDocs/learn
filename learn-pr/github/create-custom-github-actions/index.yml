@@ -31,6 +31,8 @@ prerequisites: |
   - The ability to navigate and edit files in GitHub
   - Basic familiarity with GitHub Actions and workflows
   - Basic familiarity with continuous integration using GitHub Actions and workflows
+subjects:
+- devops
 units:
   - learn.github.create-custom-github-actions.introduction
   - learn.github.create-custom-github-actions.create-custom-github-action

@@ -26,6 +26,9 @@ products:
 - azure-clis
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
+- cloud-security
 modules:
 - learn.azure-well-architected-security
 - learn.azure-security.create-security-baselines

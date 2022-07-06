@@ -39,6 +39,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.0-introduction
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.1-taxonomy

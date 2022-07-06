@@ -27,7 +27,10 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+- customer-relationship-management
+units:
 - learn-wwl.foster-ai-culture-customer-service.introduction
 - learn-wwl.foster-ai-culture-customer-service.customer-service-case-study-introduction
 - learn-wwl.foster-ai-culture-customer-service.customer-service-executive-qa

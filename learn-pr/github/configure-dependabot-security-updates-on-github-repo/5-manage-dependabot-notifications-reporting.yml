@@ -2,14 +2,14 @@
 uid: learn.configure-dependabot-security-updates-on-github-repo.manage-dependabot-notifications-reporting
 title: Manage Dependabot notifications and reports
 metadata:
-  unitType: Manage Dependabot notifications and reports 
-  title: Manage Dependabot notifications and reports # user input: module title for browser tab and search results
-  description: Properly managing Dependabot notifications help you better secure your repository. This practice also helps to make sure that important issues are promptly noticed by the right people.  # user input: a description for site search and SEO
+  unitType: learning-content 
+  title: Manage Dependabot notifications and reports
+  description: Properly managing Dependabot notifications help you better secure your repository. This practice also helps ensure that important issues are promptly noticed by the right people.
   ms.date: 1/5/2022
   author: sterling463
   ms.author: csterling 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4 # user input: the estimate time to complete the unit
+durationInMinutes: 4
 content: |
   [!include[](includes/5-manage-dependabot-notifications-reporting.md)]

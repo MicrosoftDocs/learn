@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- security
 units:
 - learn.azure-security.secure-vms-with-security-center.introduction
 - learn.azure-security.secure-vms-with-security-center.brute-force-attacks

@@ -24,6 +24,8 @@ products:
 - azure-sql-database
 - azure-synapse-analytics
 - azure-cosmos-db
+subjects:
+- architecture
 modules:
 - learn.azure.azure-database-fundamentals
 - learn.provision-azure-sql-db

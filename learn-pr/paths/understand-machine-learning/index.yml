@@ -38,6 +38,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- machine-learning
 modules:
 - learn.machinelearning.introduction-to-machine-learning
 - learn.machinelearning.introduction-to-classical-machine-learning

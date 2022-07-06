@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-break-thread-suspension.counting-semaphores
+title: Counting semaphores
+metadata:
+  title: Counting semaphores
+  description: Counting semaphores.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-counting-semaphores.md)]

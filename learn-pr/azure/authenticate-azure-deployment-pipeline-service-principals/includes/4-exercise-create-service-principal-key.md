@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you create the deployment pipeline for your toy company's website, you need to create a service principal and grant it access to your Azure environment. In this exercise, you'll create the service principal that you'll use for your deployment pipeline.
 
 During the process, you'll:
@@ -15,17 +17,7 @@ This exercise requires that you have permission to create applications and servi
 
 To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
-
-1. If the dropdown control at the right displays **bash**, you have the right shell to work from, and you can skip to the next section.
-
-    :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control." border="true":::
-
-    If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
-
-    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting a preferred terminal shell." border="true":::
-
-1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
+[!include[](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -43,17 +35,7 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
-
-1. If the dropdown control at the right displays **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
-
-    :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control." border="true":::
-
-   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.   
-
-    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting your preferred terminal shell." border="true":::
-
-1. Select the plus sign (**+**) in the terminal to create a new terminal with **pwsh** or **PowerShell** as the shell.
+[!include[](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -74,10 +56,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. Run this Azure CLI command in the Visual Studio Code terminal to create a service principal:
 
    ```azurecli
-   az ad sp create-for-rbac \
-     --role Contributor \
-     --scopes /subscriptions/<SUBSCRIPTION-ID> \
-     --name ToyWebsitePipeline
+   az ad sp create-for-rbac --name ToyWebsitePipeline
    ```
 
    [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
@@ -98,17 +77,16 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurepowershell
    $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsitePipeline `
-     -SkipAssignment
+     -DisplayName ToyWebsitePipeline
 
-   $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
+   $servicePrincipalKey = $servicePrincipal.PasswordCredentials.SecretText
    ```
 
 1. Run the following command to show the service principal's application ID, the key, and your Azure AD tenant ID:
 
    ```azurepowershell
    Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
-   Write-Output "Service principal key: $($plaintextSecret)"
+   Write-Output "Service principal key: $servicePrincipalKey"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```
 

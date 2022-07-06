@@ -3,7 +3,7 @@ uid: learn.wwl.explore-continuous-integration
 metadata:
   title: Explore continuous integration
   description: "Explore continuous integration"
-  ms.date: 02/15/2022
+  ms.date: 06/13/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -39,12 +39,15 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.explore-continuous-integration.introduction
 - learn.wwl.explore-continuous-integration.introduction-continuous-integration
 - learn.wwl.explore-continuous-integration.learn-four-pillars-continuous-integration
 - learn.wwl.explore-continuous-integration.explore-benefits-continuous-integration
 - learn.wwl.explore-continuous-integration.describe-build-properties
+- learn.wwl.explore-continuous-integration.enable-continuous-integration-azure-pipelines
 - learn.wwl.explore-continuous-integration.knowledge-check
 - learn.wwl.explore-continuous-integration.summary
 badge:

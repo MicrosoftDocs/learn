@@ -1,24 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
 metadata:
-  title: Configure Azure Synapse Link with Azure Cosmos DB
-  description: "Configure Azure Synapse Link with Azure Cosmos DB"
-  ms.date: 01/05/2022
+  title: Implement Azure Synapse Link with Azure Cosmos DB
+  description: "Implement Azure Synapse Link with Azure Cosmos DB"
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Azure Synapse Link with Azure Cosmos DB
-summary: Learn how to configure and enable Azure Synapse Link to interact with Azure Cosmos DB.
+title: Implement Azure Synapse Link with Azure Cosmos DB
+summary: Azure Synapse Link for Cosmos DB enables HTAP integration between operational data in Cosmos DB and Azure Synapse Analytics runtimes for Spark and SQL.
 abstract: |
   After completing this module, you'll be able to:
-  - Enable Cosmos DB Account to use Azure Synapse Link
-  - Create an analytical store enabled container
-  - Implement Synapse Link for Cosmos DB
-  - Validate connectivity from Spark
-  - Validate connectivity from SQL Serverless
+  - Configure a Cosmos DB Account to use Azure Synapse Link.
+  - Create an analytical store enabled container.
+  - Create a linked service for Cosmos DB.
+  - Analyze linked data using Spark.
+  - Analyze linked data using Synapse SQL.
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+  Before starting this module, you should have a basic knowledge of Azure Cosmos DB and Azure Synapse Analytics. Consider completing the following modules first:
+  - [Explore fundamentals of Azure Cosmos DB](/learn/modules/explore-non-relational-data-stores-azure?azure-portal=true)
+  - [Explore fundamentals of large-scale data warehousing](/learn/modules/examine-components-of-modern-data-warehouse?azure-portal=true)
 iconUrl: /learn/achievements/configure-azure-synapse-link-with-azure-cosmos-db.svg
 levels:
 - intermediate
@@ -27,13 +29,16 @@ roles:
 products:
 - azure-cosmos-db
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.introduction
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.enable-cosmos-db-account-to-use
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-analytical-store-enabled-container
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.implement-synapse-link-for
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-resources
-- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.validate-connectivity-from-spark-sql-serverless
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.query-with-sql
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.exercise-synapse-link-cosmos-db
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.summary
 badge:

@@ -18,7 +18,7 @@ To enable cost visibility for Contoso, follow these steps:
  1. The current cost visibility policy is shown for **Azure Usage** charges associated with the subscriptions for Contoso.  
     :::image type="content" source="../media/05-view-customer-cost-policy.png" alt-text="Example that shows the cost visibility policy." lightbox="../media/05-view-customer-cost-policy.png" :::
 
-When the cost visibility policy is set to **No**, Azure Cost Management isn't available for subscription users associated with Contoso. Unless Fabrikam enables it, the policy is disabled by default for all subscription users.
+When the cost visibility policy is set to **No**, Microsoft Cost Management isn't available for subscription users associated with Contoso. Unless Fabrikam enables it, the policy is disabled by default for all subscription users.
 
 When the cost visibility policy is set to **Yes**, subscription users associated with Contoso's tenant can see usage charges at pay-as-you-go rates. When the policy is enabled, all services that have subscription usage show costs at pay-as-you-go rates.
 

@@ -1,77 +1,108 @@
-It's time to put into practice your newly acquired debugging knowledge. It turns out we have the perfect opportunity for that. In our Tailwind Traders app, we're developing a new feature to allow a product's price to display in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's help.
+It's time to put into practice your newly acquired debugging knowledge. It turns out we have the perfect opportunity. In our Tailwind Traders app, we're developing a new feature to allow a product's price to display in multiple currencies. A coworker wrote some code for it, but they're having a hard time trying to figure out what's going wrong. Let's help.
 
-Open Visual Studio Code on your machine, and create a new file named `currency.js` with this code:
 
-```js
-const rates = {};
+## Create a JavaScript file in a Visual Studio workspace
 
-function setExchangeRate(rate, sourceCurrency, targetCurrency) {
-  if (rates[sourceCurrency] === undefined) {
-    rates[sourceCurrency] = {};
-  }
+For this exercise, you need a JavaScript file to practice debugging. To use the debugger launch controls, the JavaScript file must be in a Visual Studio workspace.
 
-  if (rates[targetCurrency] === undefined) {
-    rates[targetCurrency] = {};
-  }
+The goal of the program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then, we want to display how much value `10 EUR` is in the other currencies by using two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
 
-  rates[sourceCurrency][targetCurrency] = rate;
-  rates[targetCurrency][sourceCurrency] = 1 / rate;
-}
+1. In Visual Studio Code, select **File** > **New File**.
 
-function convertToCurrency(value, sourceCurrency, targetCurrency) {
-  const exchangeRate = rates[sourceCurrency][targetCurrency];
-  return exchangeRate && value * exchangeRate;
-}
+1. Paste the following code into the new file editor:
 
-function formatValueForDisplay(value) {
-  return value.toFixed(2);
-}
+    ```js
+    const rates = {};
 
-function printForeignValues(value, sourceCurrency) {
-  console.info(`The value of ${value} ${sourceCurrency} is:`);
+    function setExchangeRate(rate, sourceCurrency, targetCurrency) {
+      if (rates[sourceCurrency] === undefined) {
+        rates[sourceCurrency] = {};
+      }
 
-  for (const targetCurrency in rates) {
-    if (targetCurrency !== sourceCurrency) {
-      const convertedValue = convertToCurrency(value, sourceCurrency, targetCurrency);
-      const displayValue = formatValueForDisplay(convertedValue);
-      console.info(`- ${convertedValue} ${targetCurrency}`);
+      if (rates[targetCurrency] === undefined) {
+        rates[targetCurrency] = {};
+      }
+
+      rates[sourceCurrency][targetCurrency] = rate;
+      rates[targetCurrency][sourceCurrency] = 1 / rate;
     }
-  }
-}
 
-setExchangeRate(0.88, 'USD', 'EUR');
-setExchangeRate(107.4, 'USD', 'JPY');
-printForeignValues(10, 'EUR');
-```
+    function convertToCurrency(value, sourceCurrency, targetCurrency) {
+      const exchangeRate = rates[sourceCurrency][targetCurrency];
+      return exchangeRate && value * exchangeRate;
+    }
 
-To save the file, press <kbd>Ctrl+S</kbd> (Windows, Linux) or <kbd>Cmd+S</kbd> (Mac).
+    function formatValueForDisplay(value) {
+      return value.toFixed(2);
+    }
 
-The goal of this program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then, we want to display how much value `10 EUR` is in all the other currencies, with two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
+    function printForeignValues(value, sourceCurrency) {
+      console.info(`The value of ${value} ${sourceCurrency} is:`);
+
+      for (const targetCurrency in rates) {
+        if (targetCurrency !== sourceCurrency) {
+          const convertedValue = convertToCurrency(value, sourceCurrency, targetCurrency);
+          const displayValue = formatValueForDisplay(convertedValue);
+          console.info(`- ${convertedValue} ${targetCurrency}`);
+        }
+      }
+    }
+
+    setExchangeRate(0.88, 'USD', 'EUR');
+    setExchangeRate(107.4, 'USD', 'JPY');
+    printForeignValues(10, 'EUR');
+   ```
+
+1. To save the file, press <kbd>Ctrl+S</kbd> (Windows, Linux) or <kbd>Cmd+S</kbd> (Mac).
+
+   1. Browse to the folder where you want to save the new file.
+
+   1. For the file name, enter `currency`, and for the type, choose JavaScript (.js).
+
+1. Select **File** > **Add Folder to Workspace**.
+
+   1. Browse to the folder where you saved the new file.
+
+   1. Select **Add**.
+
 
 ## Create a launch configuration
 
-We're going to use the debugger a lot, so let's create a launch configuration for your app. Go to the **Run** tab in Visual Studio Code, select **create a launch.json file**, and then select **Node.js**.
+We're going to use the debugger a lot, so let's create a launch configuration for your app.
 
-The file `.vscode/launch.json` is created in your project. You can edit this file to further customize how your program should be started for debugging. By default, a launch configuration is created to execute the currently opened file. In this example, the file is `currency.js`.
+1. On the **Run** tab in Visual Studio Code, select **Add Configuration**. 
 
-:::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration.":::
+   Visual Studio code creates the `.vscode/launch.json` configuration file in your project and opens the launch file for editing.
 
-Check that the path and name of the program entry point match your setup.
+   :::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration.":::
 
-> [!NOTE]
-> Select **Add Configuration** if you want to create different launch configurations for your project.
+   By default, a launch configuration is created to execute the currently opened file. In this example, the open file is `currency.js`. You can modify the launch configuration to customize how your program should start when you're debugging.
 
-After you've finished preparing your configuration, to select it, at the top of the sidebar, use the dropdown. Next, to start debugging, select **Run**.
+1. In the launch configuration, update the value of the `program` property. Replace `${workspaceFolder}` or `${file}` with the path to the `currency.js` file on your machine. For example, change `"program": "{$workspace}/app.js"` to `"program": "C:/Users/UserName/FolderName/currency.js"`. Be sure to save your changes to the configuration file.
+
+1. Close the `.vscode/launch.json` file.
+
+> [!Note]
+> You can create different launch configurations for your project by selecting **Add Configuration** at the bottom right.
+
 
 ## Analyze the issues
 
-Now, to start the program, select **Start debugging**.
+Make sure your Visual Studio Code environment is ready to monitor the debugging process:
 
-:::image source="../media/start-debugging.png" alt-text="Screenshot of the Start debugging button in Visual Studio Code.":::
+- The debugger panel should be open on the left. Use the **Run** tab icon on the left to toggle visibility of the panel.
+- The debug console should be open at the bottom. You can open the console by selecting **View** > **Debug Console**, or by pressing <kbd>Ctrl+Shift+Y</kbd> (Windows, Linux) or <kbd>Cmd+Shift+Y</kbd> (Mac).
+- Check your error logging preferences. You can add `"outputCapture": "std",` to your launch configuration file to increase logging output.
+
+Now, you're ready to start debugging.
+
+In the debugger launch controls, start the program with debugging enabled (the green arrow).
+
+   :::image source="../media/start-debugging.png" alt-text="Screenshot of the Start debugging button in Visual Studio Code.":::
 
 You should see the program finish quickly. That's normal because you haven't added any breakpoints yet.
 
-If you don't have the debug console displayed, to turn it on, press <kbd>Ctrl+Shift+Y</kbd> (Windows, Linux) or <kbd>Cmd+Shift+Y</kbd> (Mac). You should see this text in the debug console, followed by an exception.
+You should see this text in the debug console, followed by an exception.
 
 ```text
 The value of 10 EUR is:
@@ -99,9 +130,10 @@ We can see two bugs here:
 - There are more than two digits after the decimal point.
 - The program crashed with an exception and failed to display the `JPY` value.
 
+
 ## Fix the digits display
 
-We'll start by fixing the first issue. Because you didn't write this code and there are different functions called, let's first understand the execution flow by using step-by-step execution.
+We'll start by fixing the first bug. Because you didn't write this code and there are different functions called, let's first understand the execution flow by using step-by-step execution.
 
 ### Use breakpoints and step-by-step execution
 
@@ -109,73 +141,114 @@ To add a breakpoint, click in the left margin at line **39**, on `printForeignVa
 
 :::image source="../media/add-breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
-Then, start debugging again, and step into the `printForeignValues()` function.
+Start debugging again, and step into the `printForeignValues()` function with the **Step into** debug control:
 
 :::image source="../media/step-into.png" alt-text="Screenshot of the Step into button.":::
 
+
 ### Check the variables state
 
-Now, take some time to inspect the different variables' values by using the **Variables** pane.
+Now, take some time to inspect the different variable values in the **Variables** pane.
 
 :::image source="../media/variables-panel.png" alt-text="Screenshot of the Variables pane.":::
 
-- What's the value of `value` and `sourceCurrency`?
-- Do you see the three expected keys, `USD`, `EUR`, and `JPY`, in the `rates` variable?
+- What are the values for the `value` and `sourceCurrency` variables?
+- For the `rates` variable, do you see the three expected keys, `USD`, `EUR`, and `JPY`?
 
-To advance step by step until the variable `convertedValue` is set, use **Step over**.
+To advance step by step until the `convertedValue` variable is set, use the **Step over** debug control:
 
 :::image source="../media/step-over.png" alt-text="Screenshot of the Step over button.":::
 
-You should see that the value seems correct at this point.
+After you use the **Step over** control five times, you should see the value of the `convertedValue` variable be set as expected `11.363636363636365`.
 
-Step a bit further to see the value of `displayValue`. It should contain the formatted string for display, with two digits as we expected.
+If we step over one more time, we'll see the value of the `displayValue` variable. The value should be the formatted string for display with two digits `11.36`.
 
-We can then conclude that up to this point, the functions `convertToCurrency()` and `formatValueForDisplay()` seem correct, and return the expected result.
+We can then conclude that up to this point in the program, the functions `convertToCurrency()` and `formatValueForDisplay()` seem correct, and they return the expected result.
+
 
 ### Correct the mistake
 
-Continue stepping until the `console.info()` call, and examine this line carefully. Do you see the mistake here?
+Use the **Step into** control once to reach the call to the `console.info()` function. Examine this line of code carefully. Do you see the mistake here?
 
-You can then fix the first bug by using `displayValue` instead of `convertedValue` when you print the value. Restart the program, and check that the `USD` value correctly displays `11.36`. First problem - solved.
+We need to fix this program bug by using the `displayValue` variable instead of the `convertedValue` variable to print the value.
+
+1. Update your `currency.js` file to use the correct the variable name. Change the call to the `console.info()` function on line 32 to use the `displayValue` variable instead of the `convertedValue` variable:
+
+   ```js
+   console.info(`- ${displayValue} ${targetCurrency}`);
+   ```
+
+1. Save the changes to your file.
+
+1. Restart the program.
+
+Check that the program correctly displays the `USD` value as `11.36`. First bug - solved.
+
 
 ## Find the cause of the crash
 
-Let's now find out why the program is crashing. Remove the current breakpoint, and to force the program to pause after the exception is raised, in the **Breakpoints** pane, check the `Uncaught exception` box.
+Let's now find out why the program is crashing.
 
-Run the program in the debugger again. It should pause on the exception with a large error log in the middle of the editor window.
+1. In your `currency.js` file, remove the breakpoint that you set on line 39.
+
+1. To force the program to pause after the exception is raised, in the **Breakpoints** pane, check the **Uncaught Exceptions** box.
+
+1. Run the program in the debugger again.
+
+The program should pause on the exception and show a large error report in the middle of the editor window.
 
 :::image source="../media/exception.png" alt-text="Screenshot of the exception message shown in Visual Studio Code.":::
 
-Look at the line where the execution stopped and the exception message `TypeError: Cannot read property 'toFixed' of undefined` appears. From that message, you can deduce that the `value` parameter function has the value `undefined` instead of being a number, which caused the exception.
+Look at the line where the execution stopped, and notice the exception message `TypeError: Cannot read property 'toFixed' of undefined`. From that message, you can deduce that the `value` parameter function has the value `undefined` instead of being a number. This error is what caused the exception.
+
 
 ### Rewind the call stack
 
-The *stack trace* you see under the error message can be a bit difficult to decipher. The good news is that Visual Studio Code processes the function call stack for you. By default, it shows only the meaningful information in the **Call stack** pane. Let's use it to find out which code led to this exception.
+The *stack trace* you see under the error message can be a bit difficult to decipher. The good news is that Visual Studio Code processes the function call stack for you. By default, it shows only the meaningful information in the **Call stack** pane. Let's use call stack information to find the code that led to this exception.
 
-We know that the exception was thrown in `formatValueForDisplay()`. To see where it was called, in the **Call stack** pane, double-click the function under it. You should end up at this line in `printForeignValues` function.
+We know that the exception was thrown in the call to the `formatValueForDisplay()` function.
 
-```js
-const displayValue = formatValueForDisplay(convertedValue);
-```
+1. In the debugger panel, go to the **Call stack** pane.
 
-Looking closely, you can see that the parameter that causes the exception comes from the `convertedValue` variable. Now, you need to find out at what point this value becomes `undefined`.
+1. To see where the `formatValueForDisplay()` function was called, double-click the function under it - the `printForeignValues` function.
 
-One option is to add a breakpoint at this line, and inspect the variable every time the breakpoint hits it. We don't know when it might occur, and in complex programs, this approach might be cumbersome.
+   Visual Studio Code goes to the line in the `printForeignValues` function in your `currency.js` file, where the `formatValueForDisplay()` function was called:
+
+   ```js
+   const displayValue = formatValueForDisplay(convertedValue);
+   ```
+
+Look closely at this line of code. The parameter that causes the exception comes from the `convertedValue` variable. You need to find out at what point this parameter value becomes `undefined`.
+
+One option is to add a breakpoint at this line, and then inspect the variable every time the breakpoint stops at this line. But, we don't know when the wrong value might occur, and in complex programs, this debugging approach can be cumbersome. Let's look at an alternate method.
+
 
 ### Add a conditional breakpoint
 
-What would be nice here is to tell the debugger to stop at this breakpoint only when `convertedValue` is `undefined`. It turns out, Visual Studio Code can do that. Instead of left-clicking to add a regular breakpoint at line `31`, right-click, and select **Add conditional breakpoint**.
+What would be helpful in our case is to be able to make the debugger stop at this breakpoint only when the value of the `convertedValue` variable is `undefined`. Fortunately, Visual Studio Code can do this action with right mouse click options. 
 
-:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code.":::
+1. In your `currency.js` file, in the left margin on line 31, right click and select **Add Conditional Breakpoint**.
 
-You can now input the condition that will trigger the breakpoint. Enter `convertedValue === undefined`, and press <kbd>Enter</kbd>. Restart the program, and it should stop right where you want.
+   :::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code.":::
+
+1. After you right-click, enter the following condition to trigger the breakpoint, and then press <kbd>Enter</kbd>:
+
+   ```js
+   `convertedValue === undefined`
+   ```
+   
+1. Restart the program.
+
+The program should now stop on line 31, and we can examine the call stack values.
+
 
 ### Observe the current state
 
-Now, take some time to analyze the current state.
+Let's take some time to analyze the current program state.
 
-- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so also check the parameters' values and confirm they're correct.
-- In particular, look at `value`, and see that it has the expected value `10`.
+- The value of the `convertedValue` variable comes from the call to the `convertToCurrency(value, sourceCurrency, targetCurrency)` function. We need to check the parameter values in this function call and confirm they're correct.
+
+- In particular, we need to examine the `value` variable and confirm it has the expected value `10`.
 
 Take a look at the code of the `convertToCurrency()` function.
 
@@ -186,27 +259,45 @@ function convertToCurrency(value, sourceCurrency, targetCurrency) {
 }
 ```
 
-You know that the result of this code is `undefined`. You also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover over the `rates` variable to take a peek.
+You know that the result of this code is `undefined`. You also know that the `value` variable is set to `10`. This information helps us see that the issue must be with the value of the `exchangeRate` variable. 
+
+In your `currency.js` file, hover over the `rates` variable to take a peek:
 
 :::image source="../media/peek-at-variable.png" alt-text="Screenshot of peeking at the rates variable value.":::
 
 You try to get the exchange rate from `EUR` to `JPY`, but if you unfold the `EUR` value, you can see that there's only a conversion rate for `USD`. The conversion rate for `JPY` is missing.
 
+
 ## Fix missing conversion rates
 
-Now that you know some conversion rates are missing, let's understand why. To remove all existing breakpoints, in the **Breakpoints** pane, select **Remove all breakpoints**.
+Now that you know some conversion rates are missing, let's understand why. To remove all existing breakpoints, in the **Breakpoints** pane, select the **Remove all breakpoints** icon.
 
 :::image source="../media/remove-all-breakpoints.png" alt-text="Screenshot of the button to remove all breakpoints.":::
 
+
 ### Watch the rates variable
 
-Add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and to watch the value of the `rates` variable, in the **Watch** pane, select **Plus**, and enter `rates`. Every time the value of `rates` is updated, and its value will be reflected in the **Watch** pane.
+Let's set a breakpoint to watch the `rates` variable.
 
-Step over the first `setExchangeRate()` call, and look at the result on `rates`.
+1. In your `currency.js` file, add a breakpoint on line `37` in the `setExchangeRate(0.88, 'USD', 'EUR');` function.
+ 
+1. In the **Watch** pane, select **Plus**, and enter `rates`.
 
-You can see, at this point, that `USD` and `EUR` have matching opposite conversion rates, as you expect. Now, step over one more time to look at the result of the second `setExchangeRate()` call.
+   Every time the value of the `rates` variable is changed, the updated value is shown in the **Watch** pane.
 
-You see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. It's time to look at the `setExchangeRate()` code.
+1. Restart the program.
+
+1. When the breakpoint stops at the first call to `setExchangeRate()` function, use the **Step over** control.
+
+1. In the **Watch** pane, look at the value of the `rates` variable.
+
+   At this point, `USD` and `EUR` have matching opposite conversion rates, as we expected.
+
+1. Step over again at the second call to the `setExchangeRate()` function.
+
+   You see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`.
+
+It's time to look at the code for the `setExchangeRate()` function.
 
 ```js
 function setExchangeRate(rate, sourceCurrency, targetCurrency) {
@@ -223,40 +314,53 @@ function setExchangeRate(rate, sourceCurrency, targetCurrency) {
 }
 ```
 
-The most important lines are the last two. It seems you've found the bug! The rates are only set between `sourceCurrency` and `targetCurrency`, but you also need to calculate the rate for the other currencies that were previously added.
+The most important lines in this function are the last two. It seems you've found the second bug! The conversion rates are only set between the `sourceCurrency` and `targetCurrency` variables. The program also needs to calculate the conversion rate for the other currencies that were added.
+
 
 ### Fix the code
 
-Replace these two lines:
+Let's fix the code for the conversion rate issue.
 
-```js
-rates[sourceCurrency][targetCurrency] = rate;
-rates[targetCurrency][sourceCurrency] = 1 / rate;
-```
+1. Update your `currency.js` file to calculate the conversion rate for the other currencies.
 
-with this code.
+   Replace the code on lines 12 and 13:
 
-```js
-  for (const currency in rates) {
-    if (currency !== targetCurrency) {
-      // Use a pivot rate for currencies that don't have the direct conversion rate
-      const pivotRate = currency === sourceCurrency ? 1 : rates[currency][sourceCurrency];
-      rates[currency][targetCurrency] = rate * pivotRate;
-      rates[targetCurrency][currency] = 1 / (rate * pivotRate);
-    }
-  }
-```
+   ```js
+   rates[sourceCurrency][targetCurrency] = rate;
+   rates[targetCurrency][sourceCurrency] = 1 / rate;
+   ```
+   with this updated code:
 
-Using this code, for every currency other than `sourceCurrency` and `targetCurrency`, you'll use the conversion rate of `sourceCurrency` to deduce the rate between the other currency and `targetCurrency`, and set it accordingly.
+   ```js
+   for (const currency in rates) {
+     if (currency !== targetCurrency) {
+       // Use a pivot rate for currencies that don't have the direct conversion rate
+       const pivotRate = currency === sourceCurrency ? 1 : rates[currency][sourceCurrency];
+       rates[currency][targetCurrency] = rate * pivotRate;
+       rates[targetCurrency][currency] = 1 / (rate * pivotRate);
+     }
+   }
+   ```
+
+1. Save the changes to your file.
+
+The updated code sets the conversion rate for any currencies other the `sourceCurrency` and `targetCurrency`. The program uses the conversion rate of the `sourceCurrency` to deduce the rate between the other currency and `targetCurrency`. The code then sets the conversion rate for the other currency accordingly.
 
 > [!NOTE]
-> This fix will only work if rates between `sourceCurrency` and other currencies already exist, which is an acceptable limitation in this case.
+> This fix only works if the rates between `sourceCurrency` and other currencies already exist, which is an acceptable limitation in this case.
+
 
 ### Test the correction
 
-Let's test our change. Remove all breakpoints, and then restart the program. You should now see the expected result in the console without any crash.
+Let's test our change.
 
-```text
+1. Remove all breakpoints and watch variables.
+
+1. Restart the program.
+
+You should now see the expected result in the console without any crash.
+
+```console
 The value of 10 EUR is:
 - 11.36 USD
 - 1220.45 JPY

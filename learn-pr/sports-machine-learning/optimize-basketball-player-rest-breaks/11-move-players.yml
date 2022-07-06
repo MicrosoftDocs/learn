@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Add button functionality for player buttons
   description: Add button functionality for player buttons
   ms.date: 3/10/2021
-  author: drguthals 
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

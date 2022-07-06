@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.azure.analyze-data-in-sentinel.1-introduction
 - learn.azure.analyze-data-in-sentinel.2-exercise-setup

@@ -3,7 +3,7 @@ uid: learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databri
 metadata:
   title: Describe lazy evaluation and other performance features in Azure Databricks
   description: "Describe lazy evaluation and other performance features in Azure Databricks"
-  ms.date: 01/06/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -26,6 +26,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.introduction
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.describe-difference-between-eager-lazy-execution

@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-if-elseif-else
 metadata:
-  title: 'Add decision logic to your code using the if-elseif-else statement in C#'
-  description: Learn to branch your code's execution path by evaluating boolean expressions.
-  ms.date: 09/19/2019
+  title: 'Add decision logic to your code using `if`, `else`, and `else if` statements in C#'
+  description: Learn to branch your code's execution path by evaluating Boolean expressions.
+  ms.date: 05/16/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add decision logic to your code using the if-elseif-else statement in C#
-summary: Learn to branch your code's execution path by evaluating boolean expressions.
+title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
+summary: Learn to branch your code's execution path by evaluating Boolean expressions.
 abstract: |
   In this module, you will:
-  - write code that evaluates conditions using the `if-elseif-else` statements
-  - build boolean expressions to evaluate a condition
-  - combine boolean expressions using logical operators
-  - nest code blocks within other code blocks
+  - Write code that evaluates conditions using `if`, `else`, and `else if` statements.
+  - Build Boolean expressions to evaluate a condition.
+  - Combine Boolean expressions using logical operators.
+  - Nest code blocks within other code blocks.
 prerequisites: |
-  - Experience declaring, initializing, setting, and retrieving variables using the `int` data type
-  - Experience printing messages to output using `Console.WriteLine()`
-  - Experience with string interpolation to combine variables into literal strings
-  - Experience working with the `System.Random` class to generate random numbers
+  - Experience declaring, initializing, setting, and retrieving variables by using the `int` data type.
+  - Experience printing messages to output by using `Console.WriteLine()`.
+  - Experience with string interpolation to combine variables into literal strings.
+  - Experience working with the `System.Random` class to generate random numbers.
 ratingEnabled: true
 iconUrl: /learn/achievements/csharp-if-elseif-else.svg
 levels:

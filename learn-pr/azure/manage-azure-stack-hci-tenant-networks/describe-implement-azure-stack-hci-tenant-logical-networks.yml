@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-azure-stack-hci-tenant-networks.describe-implement-azure-stack-hci-tenant-logical-networks
+title: Describe and implement Azure Stack HCI tenant logical networks 
+metadata:
+  title: Describe and implement Azure Stack HCI tenant logical networks 
+  description: Evaluate the use of Azure Stack HCI SDN logical networks.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/describe-implement-azure-stack-hci-tenant-logical-networks.md)]

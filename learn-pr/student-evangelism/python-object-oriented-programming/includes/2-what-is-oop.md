@@ -18,7 +18,7 @@ During the modeling phase, you look at a description of a domain and try to anal
 
 After you identify actors, you look at *what* they do, which is their behavior. Then you look at descriptions of the actors and any data that's needed to carry out the action. Actors are made into objects, the traits are encoded as data on the objects, and the behaviors are functions that also get added to the object.
 
-:::image type="content" source="../media/printer.png" alt-text="Visualization that shows a printer printing.":::
+:::image type="content" source="../media/printer.png" alt-text="Illustration visualizing a printer printing." border="false":::
 
 The idea is that data on objects can be altered by calling functions on the objects themselves. There's also the notion that objects *interact* with one another to achieve a tangible result.
 
@@ -42,7 +42,7 @@ Let's look at a manual flow that many companies struggle with, namely *invoice m
 
 The process usually starts with an initial sorting phase, where the invoice is sent to the appropriate department. Next, the invoice is checked for correctness and then approved by someone who has the proper authorization level. Lastly, the invoice is paid. For a small business, the business owner might do all of the steps. In a large company, many people and processes might be involved, which makes invoice management a complex activity.
 
-:::image type="content" source="../media/sort-invoice.png" alt-text="Visualization that shows the invoice system.":::
+:::image type="content" source="../media/sort-invoice.png" alt-text="Diagram showing a typical process flow for an invoice system." border="false":::
 
 What does this description have to do with OOP? If you took the preceding workflow &mdash; which is often a manual flow &mdash; and turned it into written software, the first thing you would do is try to model the system. With the context of invoice management, you can start seeing actors (objects), behaviors, and data by reading a description of the problem domain.
 

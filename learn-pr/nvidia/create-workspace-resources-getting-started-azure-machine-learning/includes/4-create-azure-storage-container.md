@@ -32,7 +32,7 @@ Now that we have an Azure Storage Account, we'll create a container that will al
 
     :::image type="content" source="../media/4-upload-image-data.png" alt-text="The steps to upload the image data into a storage container are shown in a screenshot." lightbox="../media/4-upload-image-data.png":::
 
-1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg).  _Note that at a minimum you'll need at least 50 images to train an AutoML for Images model in Azure Machine Learning studio_
+1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg).  _Note that at a minimum you'll need at least 10 images to train an AutoML for Images model in Azure Machine Learning studio_
 
     :::image type="content" source="../media/4-uploaded-image-data.png" alt-text="A screenshot shows the uploaded image data in the Azure Storage Container." lightbox="../media/4-uploaded-image-data.png":::
 

@@ -13,11 +13,11 @@ In this exercise, you connect Power BI Desktop to the SQL database.
 1. Open Power BI Desktop. If you're asked to sign in, sign in with your work or school account.
 
     > [!NOTE]
-    > There are two types of Microsoft accounts: personal Microsoft accounts and work or school accounts. You can sign in to Power BI with a work or school account, but not with a personal account. A Microsoft 365 subscription uses your work or school account. But, you can have a work or school account without having a Microsoft 365 subscription. Learn about the [differences between Microsoft work and personal accounts](http://www.brucebnews.com/2016/06/finding-your-way-through-microsofts-maze-of-work-and-personal-accounts/?azure-portal=true).
+    > There are two types of Microsoft accounts: personal Microsoft accounts and work or school accounts. You can sign in to Power BI with a work or school account, but not with a personal account. A Microsoft 365 subscription uses your work or school account. But, you can have a work or school account without having a Microsoft 365 subscription. Learn about the [differences between Microsoft work and personal accounts](https://www.bruceb.com/2020/10/understanding-microsoft-business-and-personal-accounts/?azure-portal=true).
 
 1. On the ribbon, select **Get Data**. In the left menu, select **Azure**, and then select **Azure SQL database**. Select **Connect**.
 
-    ![Screenshot that shows the Power BI Desktop items to select to add a data source.](../media/connect-database-1.png)
+    :::image type="content" source="../media/connect-database-1.png" alt-text="Screenshot that shows the Power B I Desktop items to select to add a data source.":::
 
     _Add a data source_
 
@@ -28,7 +28,7 @@ In this exercise, you connect Power BI Desktop to the SQL database.
     SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsPolarBear FROM dbo.PolarBears ORDER BY Timestamp DESC
     ```
 
-    ![Screenshot that shows configuring the S Q L Server database pane.](../media/connect-database-2.png)
+    :::image type="content" source="../media/connect-database-2.png" alt-text="Screenshot that shows configuring the S Q L Server database pane.":::
 
     _Connect to the database_
 
@@ -37,7 +37,7 @@ In this exercise, you connect Power BI Desktop to the SQL database.
    1. Select the database server from the drop-down list.
    1. Select **Connect**, and then select **Load**.
 
-    ![Screenshot that shows entering admin credentials and selecting the database server.](../media/connect-database-3.png)
+    :::image type="content" source="../media/connect-database-3.png" alt-text="Screenshot that shows entering admin credentials and selecting the database server.":::
 
     _Enter the admin credentials_
 
@@ -49,45 +49,45 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
 1. In **Visualizations**, select **Map** to add a map visual to the report.
 
-    ![Screenshot that shows the Map icon selected in the Visualizations pane.](../media/add-map-visual.png)
+    :::image type="content" source="../media/add-map-visual.png" alt-text="Screenshot that shows the Map icon selected in the Visualizations pane.":::
 
     _Add a map visual_
 
 1. In **Fields**, select **IsPolarBear**, **Latitude**, and **Longitude**  to include these fields in the map visual.
 
-    ![Screenshot that shows three fields selected in the Fields pane.](../media/check-latitude-longitude.png)
+    :::image type="content" source="../media/check-latitude-longitude.png" alt-text="Screenshot that shows three fields selected in the Fields pane.":::
 
     _Add fields to the map visual_
 
 1. In **Visualizations**, next to **Average of Latitude**, select the down arrow,  and then select **Don't summarize**. Do the same for **Average of Longitude**.
 
-    ![Screenshot that shows removing summary calculations for two fields.](../media/do-not-summarize.png)
+    :::image type="content" source="../media/do-not-summarize.png" alt-text="Screenshot that shows removing summary calculations for two fields.":::
 
     _Remove summary calculations_
 
 1. Select the empty area outside the map to deselect the map.
 1. In **Fields**, select **CameraId**, **IsPolarBear**, and **TimestampLabel** to add a table visual that contains those columns to the report.
 
-    ![Screenshot that shows how to add a table visual.](../media/add-table-visual.png)
+    :::image type="content" source="../media/add-table-visual.png" alt-text="Screenshot that shows how to add a table visual.":::
 
     _Add a table visual_
 
 1. Select an empty area to deselect the table visual.
-1. In **Visualizations**, select **Pie Chart** to convert the table into a pie chart. Then, in **Fields**, select **IsPolarBear** and **Latitude** to add another table visual. 
+1. In **Visualizations**, select **Pie Chart** to convert the table into a pie chart. Then, in **Fields**, select **IsPolarBear** and **Latitude** to add another table visual.
 
-    ![Screenshot that shows how to add a pie chart visual.](../media/add-pie-chart-visual.png)
+    :::image type="content" source="../media/add-pie-chart-visual.png" alt-text="Screenshot that shows how to add a pie chart visual.":::
 
     _Add a pie chart visual_
 
-1. In **Visualizations**, under **Values**, next to **Average of Latitude**, select the down arrow, and select **Count**. This setting configures the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected. 
+1. In **Visualizations**, under **Values**, next to **Average of Latitude**, select the down arrow, and select **Count**. This setting configures the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected.
 
-    ![Screenshot that shows a pie chart with text.](../media/refine-pie-chart-visual.png)
+    :::image type="content" source="../media/refine-pie-chart-visual.png" alt-text="Screenshot that shows a pie chart with text.":::
 
     _Refine the pie chart visual_
 
 1. Clear the pie chart visual and select **Slicer** to add a slicer to the report. Slicers are a convenient way to filter information in a Power BI report by narrowing the data that's shown in other visuals.
 
-   ![Screenshot that shows the Slider icon selected in the Fields pane.](../media/add-slicer.png)
+   :::image type="content" source="../media/add-slicer.png" alt-text="Screenshot that shows the Slider icon selected in the Fields pane.":::
 
     _Add a slicer_
 
@@ -95,19 +95,19 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
 1. Resize and reposition the visuals to achieve a layout similar to this example:
 
-    ![Screenshot that shows a map, pie chart, and table, with option check boxes.](../media/adjust-layout.png)
+    :::image type="content" source="../media/adjust-layout.png" alt-text="Screenshot that shows a map, pie chart, and table, with option check boxes.":::
 
     _Adjust the layout_
 
-1. With the report structure in place, the next task is to use some of the rich formatting options in Power BI to enhance the visuals. Start by selecting the map visual in the report designer. Then, in **Visualizations**, select **Format**.
+1. With the report structure in place, the next task is to use some of the rich formatting options in Power BI to enhance the visuals. Start by selecting the map visual in the report designer. Then, in **Visualizations**, select **Format Visual**.
 
-    ![Screenshot that shows the Format icon selected in the Visualizations pane.](../media/format-map.png)
+    :::image type="content" source="../media/format-map.png" alt-text="Screenshot that shows the Format icon selected in the Visualizations pane.":::
 
     _Format the map visual_
 
 1. In **Visualizations**, use the formatting controls to make the following changes to the map visual:
 
-    * **Legend**: Set **Legend Name** to **Polar Bear Sighted?**
+    * **Legend**: Set **Legend Title** to **Polar Bear Sighted?**
     * **Data colors**: Set the color for **True** to **00FF00 (pure green)** and set the color for **False** to **FF0000 (pure red)**.
     * **Bubbles**:  Set the bubble size to **30%**.
     * **Map styles**: Set the theme to **Aerial**.
@@ -115,24 +115,24 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
     Confirm that the resulting map looks something like this example:
 
-    ![Screenshot that shows a formatted map visual.](../media/formatted-map-visual.png)
+    :::image type="content" source="../media/formatted-map-visual.png" alt-text="Screenshot that shows a formatted map visual.":::
 
     _Formatted map visual_
 
 1. Select the pie chart visual and use the formatting controls in **Visualizations** to make the following changes:
 
-    * **Data colors**: Set **True** to **00FF00**, and set **False** to **FF0000**.
+    * **Slices**: Set **True** to **00FF00**, and set **False** to **FF0000**.
     * **Detail  labels**: Set the label style to **Data value, percent of total**.
     * **Title**: Change the title text to **Sightings Proportion**.
 
 1. Select the table visual and use the formatting controls in **Visualizations** to make the following changes:
 
     * **Style**: Change the table style to **Alternating rows**.
-    * **Title**: Select the check box to add a title. Change the title text to **Camera Activity**. 
+    * **Title**: Select **On**. Change the title text to **Camera Activity**.
 
 1. Select the slicer visual and use the formatting controls in **Visualizations** to make the following changes.
 
-    * Under **Selection controls**, clear the **Multi-select with CTRL** check box. With this setting, you don't have to use the Ctrl key to select more than one check box.
+    * Under **Selection controls**, select **Off**. With this setting, you don't have to use the Ctrl key to select more than one check box.
 
 1. In the bottom-left corner of the designer, double-click **Page 1**,  and change the report title to **Polar Bear Activity**.
 
@@ -156,11 +156,11 @@ Now that the report is prepared in Power BI, your final task is to run the end-t
     node run.js
     ```
 
-1. Return to Power BI Desktop. In the ribbon, select **Refresh**. Select it again every 15 seconds or so. The report refreshes automatically every few minutes, but you can refresh it manually as often as you like to update the visuals. 
+1. Return to Power BI Desktop. In the ribbon, select **Refresh**. Select it again every 15 seconds or so. The report refreshes automatically every few minutes, but you can refresh it manually as often as you like to update the visuals.
 
 1. Confirm that red and green bubbles appear at various locations around the island. Green bubbles indicate the presence of polar bears. Red bubbles represent locations where photos were taken but no polar bears were detected. Locations that have a mixture of sightings show red *and* green, as shown in the following screenshot:
 
-    ![Screenshot that shows the live map and tracking for polar bears, with red and green bubbles at different locations.](../media/live-map.png)
+    :::image type="content" source="../media/live-map.png" alt-text="Screenshot that shows the live map and tracking for polar bears, with red and green bubbles at different locations.":::
 
     _There be polar bears!_
 

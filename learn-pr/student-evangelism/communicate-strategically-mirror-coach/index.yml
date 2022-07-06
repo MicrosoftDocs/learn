@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- communication
 units:
 - learn.student-evangelism.communicate-strategically-mirror-coach.introduction
 - learn.student-evangelism.communicate-strategically-mirror-coach.what-is-mirror

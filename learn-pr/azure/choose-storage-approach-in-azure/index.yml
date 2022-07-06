@@ -2,19 +2,19 @@
 uid: learn.choose-storage-approach-in-azure
 metadata:
   title: Choose a data storage approach in Azure
-  description: Learn how using Azure Storage, Azure SQL Database, and Azure Cosmos DB - or a combination of them - for your business scenario is the best way to get the most performant solution.
-  ms.date: 09/24/2018
+  description: Learn how to use Azure Storage, Azure SQL Database, Azure Cosmos DB, or a combination of Azure resources for a performant solution in your business scenario.
+  ms.date: 06/05/2022
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose a data storage approach in Azure
-summary: Learn how using Azure Storage, Azure SQL Database, and Azure Cosmos DB - or a combination of them - for your business scenario is the best way to get the most performant solution.
+summary: Learn how to use Azure Storage, Azure SQL Database, Azure Cosmos DB, or a combination of Azure resources for a performant solution in your business scenario.
 abstract: | 
   In this module, you will:
-  - Learn how to classify your data as structured, semi-structured, or unstructured
-  - Learn how to determine the operational needs, latency requirements, and transaction requirements for your data
-  - Determine whether your data requires transactions 
+  - Learn how to classify your data as structured, semi-structured, or unstructured.
+  - Learn how to determine the operational needs, latency requirements, and transaction requirements of your data.
+  - Determine whether your data requires transactions.
 prerequisites: None
 iconUrl: /learn/achievements/choose-storage-approach-in-azure.svg
 levels:
@@ -26,6 +26,8 @@ products:
 - azure-storage
 - azure-sql-database
 - azure-cosmos-db
+subjects:
+- storage
 units:
 - learn.choose-storage-approach-in-azure.1-introduction
 - learn.choose-storage-approach-in-azure.2-classify-data

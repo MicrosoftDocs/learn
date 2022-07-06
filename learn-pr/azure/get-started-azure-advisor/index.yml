@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-advisor
+subjects:
+- security
 units:
 - learn.azure.get-started-azure-advisor.1-introduction
 - learn.azure.get-started-azure-advisor.2-recommendations

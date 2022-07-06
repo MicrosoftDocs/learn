@@ -30,6 +30,8 @@ products:
 - azure-sql-database
 - azure-sql-managed-instance
 - sql-server
+subjects:
+- migration
 units:
 - learn-wwl.migrate-sql-workloads-azure-managed-instances.introduction
 - learn-wwl.migrate-sql-workloads-azure-managed-instances.evaluate-migration-scenarios-sql-database-managed-instance

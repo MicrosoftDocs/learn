@@ -23,11 +23,11 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 3. Review and create the resource. 
 
-### Get the Key and Location for your Cognitive Services resource
+### Get the key and endpoint for your Cognitive Services resource
 
 1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, select the link to manage the keys for the service. You will need the endpoint and keys to connect to your Cognitive Services resource from client applications.
 
-2. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
+2. View the **Keys and Endpoint** page for your resource. You will need the **key** and **endpoint** to connect from client applications.
 
 
 ## Run Cloud Shell 
@@ -62,6 +62,9 @@ Now that you have a custom model, you can run a simple client application that u
     ```
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
+   
+    >[!TIP] 
+    > If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 

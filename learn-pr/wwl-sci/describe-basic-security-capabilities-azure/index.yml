@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-security
 units:
 - learn.wwl.describe-basic-security-capabilities-azure.introduction
 - learn.wwl.describe-basic-security-capabilities-azure.describe-azure-ddos-protection

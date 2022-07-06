@@ -178,19 +178,19 @@ Here you create App Service instances for the three stages that you'll deploy to
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-test-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-test-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-prod-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
     ```
 
     Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for _Dev_ and _Test_. You apply the App Service plan **Premium P1V2** to the App Service instance for _Staging_.
@@ -355,14 +355,12 @@ Here you push the initial configuration to GitHub so that you're up to date with
     git push origin blue-green
     ```
 
-1. In Azure Pipelines, go to the build. Then trace the build as it runs.
-1. After the build finishes, go to the summary page.
+1. In Azure Pipelines, go to the build. Then trace the build as it runs. When prompted, select **Permit** to grant deployment permissions to the different stages.
+
+1. After your pipeline run has been completed, navigate to the summary page to see your pipeline status.
 
     :::image type="content" source="../media/3-stages-complete.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
 
-    You see that each stage of the pipeline succeeded.
-1. Go to the URL that corresponds to each stage.
-
-    You see that the _Space Game_ website successfully deployed to each App Service environment.
+1. Navigate to the URL that corresponds to each stage. Your web app should be deployed to each environment.
 
     :::image type="content" source="../media/3-app-service-dev.png" alt-text="A screenshot of a web browser showing the Space Game website in the Dev environment.":::

@@ -41,6 +41,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.customize-windows-server-iaas-vm-images.introduction
 - learn.wwl.customize-windows-server-iaas-vm-images.create-generalized-image

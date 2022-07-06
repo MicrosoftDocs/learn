@@ -27,6 +27,8 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
+subjects:
+- classification-analysis
 units:
 - learn.tensorflow.intro-computer-vision.introduction
 - learn.tensorflow.intro-computer-vision.image-data

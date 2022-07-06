@@ -1,8 +1,11 @@
-Organizations must protect their data, to safeguard customers and business operations, and to meet compliance standards. Admins can enable their organization to protect its data, through capabilities and tools such as sensitivity labels and policies in Microsoft 365 compliance center.
+> [!NOTE]
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+
+Organizations must protect their data, to safeguard customers and business operations, and to meet compliance standards. Admins can enable their organization to protect its data, through capabilities and tools such as sensitivity labels and policies in the Microsoft Purview compliance portal.
 
 ## Sensitivity labels
 
-Sensitivity labels, available as part of information protection in the Microsoft 365 compliance center, enable the labeling and protection of content, without affecting productivity and collaboration. With sensitivity labels, organizations can decide on labels to apply to content such as emails and documents, much like different stamps are applied to physical documents:
+Sensitivity labels, available as part of information protection in the Microsoft Purview compliance portal, enable the labeling and protection of content, without affecting productivity and collaboration. With sensitivity labels, organizations can decide on labels to apply to content such as emails and documents, much like different stamps are applied to physical documents:
 
 Labels are:
 
@@ -18,7 +21,7 @@ Sensitivity labels can be configured to:
 - **Mark the content** when Office apps are used.  Marking the content includes adding watermarks, headers, or footers.  Headers or footers can be added to emails or documents. Watermarks can be applied to documents but not to email.
 - **Apply the label automatically** in Office apps or recommend a label. Admins choose the types of sensitive information to be labeled. The label can be applied automatically or configured to prompt users to apply the recommended label.
 - **Protect content in containers such as sites and groups**. This label configuration doesn't result in documents being automatically labeled. Instead, the label settings protect content by controlling access to the container where documents are stored.
-- **Extend sensitivity labels to third-party apps and services**. Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
+- **Extend sensitivity labels to third-party apps and services**. The Microsoft Purview Information Protection SDK enables third-party apps to read sensitivity labels and apply protection settings.
 - **Classify content without using any protection settings**. A classification can be assigned to content (just like a sticker) that persists and roams with the content as it's used and shared.  The classification can be used to generate usage reports and view activity data for sensitive content.
 
 ## Label policies

@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- networking
 units:
 - learn.azure.intro-to-arc-for-servers.introduction
 - learn.azure.intro-to-arc-for-servers.characteristics-azure-arc-enabled-servers

@@ -29,6 +29,8 @@ products:
 - azure-blueprints
 - azure-policy
 - azure-rbac
+subjects:
+- security
 modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.azure.build-cloud-governance-strategy-azure

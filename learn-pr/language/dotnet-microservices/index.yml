@@ -34,6 +34,8 @@ roles:
 - developer
 products:
 - dotnet
+subjects:
+- custom-app-development
 units:
 - learn.languages.dotnet-microservices.introduction
 - learn.languages.dotnet-microservices.what-are-microservices

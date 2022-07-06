@@ -266,7 +266,7 @@ With the routing option, advertise your public IP addresses to appropriate wide 
 
 To use ExpressRoute for authentication, advertise AD FS public IP addresses over ExpressRoute without NAT. This sends the traffic that originates from Microsoft through ExpressRoute to your on-premises AD FS server. The return traffic from your network that goes to Microsoft will use ExpressRoute because it's the preferred route over the internet.
 
-Alternatively, use SNAT to prevent asymmetric routing. For example, if you want to send SMPT traffic over the internet, do not advertise the public IP address of an on-premises SMTP server through ExpressRoute.
+Alternatively, use SNAT to prevent asymmetric routing. For example, if you want to send SMTP traffic over the internet, do not advertise the public IP address of an on-premises SMTP server through ExpressRoute.
 
 A request originating from Microsoft that goes to your on-premises SMTP server traverses the internet. You SNAT the incoming request to an internal IP address. The return traffic from the SMTP server will go to the edge firewall (which you use for NAT) instead of through ExpressRoute, ensuring that the return traffic will take the internet path.
 

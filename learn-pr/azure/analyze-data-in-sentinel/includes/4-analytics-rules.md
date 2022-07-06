@@ -18,7 +18,7 @@ Anomaly alerts are informational and identify anomalous behaviors.
 
 ## Fusion
 
-Fusion alerts identify and suspicious activities at various stages of the cyber kill chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
+Fusion alerts identify suspicious activities at various stages of the cyber kill chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
 
 > [!Note]
 > The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures (TTPs), used by attackers to infiltrate an organization’s networks and systems.

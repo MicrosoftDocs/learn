@@ -17,7 +17,7 @@ abstract: |
     - Describe how Azure Firewall Manager provides central security policy and route management for cloud-based security perimeters.
 prerequisites: |
   - Experience creating and configuring instances of Azure Firewall
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -30,7 +30,9 @@ products:
   - azure
   - azure-firewall
   - azure-firewall-manager
-units:  
+subjects:
+- security
+units:
 - learn.intro-to-azure-firewall-manager.1-introduction
 - learn.intro-to-azure-firewall-manager.2-what-is-azure-firewall-manager
 - learn.intro-to-azure-firewall-manager.3-how-azure-firewall-manager-works

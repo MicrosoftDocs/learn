@@ -19,7 +19,7 @@ This module focuses on Azure Blob Storage, which is Microsoft's object storage s
 - Storing backup, archive, and disaster recovery data.
 - Providing storage for data analysis, either on-premises or in Azure.
 
-You can access Blob Storage over HTTP or HTTPS from any global internet connection. Your options for accessing blob data include URLs, the Azure Storage REST API, Azure PowerShell, the Azure CLI, or one of the many Azure Storage client libraries. These client libraries can be in multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
+You can access Blob Storage over HTTP or HTTPS from any global internet connection. Your options for accessing blob data include URLs, the Azure Storage REST API, Azure PowerShell, the Azure CLI, or one of the many Azure Storage client libraries. These client libraries can be in multiple languages such as .NET, Java, Node.js, and Python.
 
 > [!NOTE]
 > Blob Storage supports Azure Data Lake Storage Gen2. Fore more information, see [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction).
@@ -42,9 +42,9 @@ Blob Storage supports three types of blobs:
 
 | Blob types | Description |
 |-----|-----|
-| Block blobs | These are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually. |
+| Block blobs | These are best for storing text and binary data with a maximum size of about 190.7 TiB. Block blobs consist of blocks of data that are managed individually. |
 | Append blobs | These consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines. |
-| Page blobs | These can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines. |
+| Page blobs | These can store random access files up to 8 TiB in size, such as virtual hard drive (VHD) files in Azure virtual machines. |
 
 ## Metrics
 
@@ -86,13 +86,9 @@ Viewing Blob Storage metrics in the Azure portal is the simpler way. The portal 
 
 ![Screenshot that shows the monitoring options for a storage account.](../media/2-Monitoring-classic-metrics.PNG)
 
-Selecting **Metrics** creates a **New chart** space, in which you can select the metrics that you want to display.
+Selecting **Metrics** creates a new chart space, in which you can select the metrics that you want to display.
 
 ![Screenshot that shows the current monitoring chart.](../media/2-current-metrics-create-chart.PNG)
-
-Selecting **Metrics (classic)** shows four charts for total requests, total egress, average E2E latency, and success percentage.
-
-![Screenshot that shows the four charts in classic monitoring.](../media/2-classic-metrics-create-chart.PNG)
 
 ### Filtering
 

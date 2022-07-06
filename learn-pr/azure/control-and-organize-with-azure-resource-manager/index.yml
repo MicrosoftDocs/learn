@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- infrastructure
 units:
 - learn.control-and-organize-with-resource-manager.1-introduction
 - learn.control-and-organize-with-resource-manager.2-principles-of-resource-groups

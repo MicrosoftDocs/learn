@@ -29,6 +29,9 @@ products:
 - azure
 - azure-virtual-machines
 - azure-virtual-network
+subjects:
+- cloud-computing
+- networking
 units:
 - learn.control-network-traffic-flow-with-routes.1-introduction
 - learn.control-network-traffic-flow-with-routes.2-azure-virtual-network-route

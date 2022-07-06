@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.deploy-java-containers.badge
+metadata:
+  title: >-
+    Microsoft Badge: Automate Java container deployments with Azure Pipelines
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/azure-devops/deploy-java-containers-social.png

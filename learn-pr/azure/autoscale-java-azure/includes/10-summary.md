@@ -4,7 +4,7 @@ Congratulations! You've learned about autoscaling for your Java applications on 
 
 In this module, you learned about:
 
-- Create a Sample Autoscale architecture with Azure Spring Cloud
+- Create a Sample Autoscale architecture with Azure Spring Apps
 
 - Investigate the sample scale rules
 
@@ -33,9 +33,9 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 - [Get started with Autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-00000-ropreddy)
 
-- [Azure Spring Cloud Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy)
+- [Azure Spring Apps Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy)
 
-- [Azure Spring Cloud locations and pricing](https://azure.microsoft.com/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
+- [Azure Spring Apps locations and pricing](https://azure.microsoft.com/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
 
 - [Azure Database for MySQL pricing](https://azure.microsoft.com/pricing/details/mysql/server?WT.mc_id=java-00000-ropreddy)
 

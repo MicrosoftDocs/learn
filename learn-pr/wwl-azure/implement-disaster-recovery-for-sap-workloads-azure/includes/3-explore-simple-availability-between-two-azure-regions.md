@@ -2,13 +2,12 @@ You might choose not to put any availability configuration in place within a sin
 
 If you are using the scenario of sharing the DR target with a QA system in one VM, you need to take these considerations into account:
 
- -  There are two operation modes with `delta_datashipping` and `logreplay`, which are available for such a scenario.
- -  Both operation modes have different memory requirements without preloading data.
- -  `delta_datashipping` might require drastically less memory without the preload option than `logreplay` could require.
- -  The memory requirement of `logreplay` operation mode without preload is not deterministic and depends on the columnstore structures loaded. In extreme cases, you might require 50% of the memory of the primary instance. The memory for `logreplay` operation mode is independent of whether you chose to have the data preloaded set or not.
+- There are two operation modes with `delta_datashipping` and `logreplay`, which are available for such a scenario.
+- Both operation modes have different memory requirements without preloading data.
+- `delta_datashipping` might require drastically less memory without the preload option than `logreplay` could require.
+- The memory requirement of `logreplay` operation mode without preload is not deterministic and depends on the columnstore structures loaded. In extreme cases, you might require 50% of the memory of the primary instance. The memory for `logreplay` operation mode is independent of whether you chose to have the data preloaded set or not.
 
-:::image type="content" source="../media/two-vms-over-two-regions-e9400b16.png" alt-text="Diagram of two VMs over two regions":::
-
+:::image type="content" source="../media/two-vms-over-two-regions-e9400b16.png" alt-text="Diagram illustrating two virtual machines over two regions.":::
 
 In this configuration, you can't provide an RPO = 0 because your HANA system replication mode is asynchronous. If you need to provide an RPO = 0, this configuration isn't the configuration of choice.
 

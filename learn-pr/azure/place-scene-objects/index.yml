@@ -39,7 +39,9 @@ prerequisites: |
   - Basic familiarity with Unity, including the interface, scene creation, package import, and the addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.place-scene-objects-tutorials-mrtk.4-1-introduction
 - learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-set-visibility
 - learn.azure.place-scene-objects-tutorials-mrtk.4-3-exercise-position-game-objects-set-visibility

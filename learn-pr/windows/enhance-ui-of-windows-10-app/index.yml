@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- cloud-computing
 units:
 - learn-windows.windows-ui-navigation-media.1-application-navigation
 - learn-windows.windows-ui-navigation-media.2-using-html

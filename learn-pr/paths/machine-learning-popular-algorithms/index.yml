@@ -4,8 +4,8 @@ metadata:
   title: 'Popular machine learning algorithms: Naive Bayes and PCA'
   description: Learn how to use and learn from popular machine learning algorithms, like Naive Bayes and PCA.
   ms.date: 06/30/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- machine-learning
 modules:
 - learn.reactors.text-classification-naive-bayes
 - learn.reactors.principal-component-analysis-food-composition

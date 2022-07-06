@@ -1,4 +1,4 @@
-Companies that have a business continuity and disaster recovery (BCDR) plan typically schedule test runs to ensure that the business can successfully recover from disasters. Now that you have successfully backed up your VMs, you want to explore the options available for restoring them as part of your BCDR testing.
+Companies that have a business continuity and disaster recovery (BCDR) plan typically schedule test runs to ensure that the business can successfully recover from disasters. Now that you've successfully backed up your VMs, you want to explore the options available for restoring them as part of your BCDR testing.
 
 In this unit, you'll learn about the options for restoring an Azure VM from a previous backup.
 
@@ -24,5 +24,5 @@ Azure Backup supports the backup and restore of machines encrypted through Azure
 Certain limitations apply when you restore encrypted VMs:
 
 - Azure Backup supports only standalone key encryption. Any key that's part of a certificate isn't currently supported.
-- File-level or folder-level restores are not supported with encrypted VMs. To restore to that level of granularity, the entire VM has to be restored. You can then manually copy the file or folders.
+- File-level or folder-level restores aren't supported with encrypted VMs. To restore to that level of granularity, the entire VM has to be restored. You can then manually copy the file or folders.
 - The **Replace existing VM** option isn't available for encrypted VMs.

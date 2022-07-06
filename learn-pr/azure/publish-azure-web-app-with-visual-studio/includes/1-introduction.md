@@ -4,7 +4,7 @@ Visual Studio and Azure App Service provide a powerful mechanism for creating, p
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Create an ASP.NET Core web app in Visual Studio
 - Publish a web app to Azure using Visual Studio

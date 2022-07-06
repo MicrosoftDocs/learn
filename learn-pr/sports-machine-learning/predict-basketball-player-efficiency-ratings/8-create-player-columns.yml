@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Data manipulation part 1 - Add qualifying player information'
   description: Use Python to programmatically create a column that identifies unique players based on the population they belong to.
   ms.date: 03/10/2021
-  author: drguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

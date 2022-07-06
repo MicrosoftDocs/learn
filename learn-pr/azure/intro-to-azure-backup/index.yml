@@ -122,6 +122,10 @@ products:
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern
 ###
+subjects:
+- data-management
+- storage
+- security
 units:
 - learn.azure.intro-to-azure-backup.introduction
 - learn.azure.intro-to-azure-backup.what-is-azure-backup

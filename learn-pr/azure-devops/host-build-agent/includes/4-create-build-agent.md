@@ -63,7 +63,7 @@ Recall that an agent pool organizes build agents. In this section, you create th
     1. Under **Pool type**, select **Self-hosted**.
     1. Under **Name**, enter *MyAgentPool*.
 
-    In practice, you would choose a more descriptive name for the purpose of your pool.
+    In practice, you would choose a more descriptive name for your pool.
 1. Select **Create**.
     The new agent pool appears in the list.
 
@@ -275,7 +275,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
     export AZP_AGENT_VERSION=$(curl -s https://api.github.com/repos/microsoft/azure-pipelines-agent/releases | jq -r '.[0].tag_name' | cut -d "v" -f 2)
     ```
 
-    A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you `curl` the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-portal=true). The command uses `jq` to read the latest version from the JSON string that's returned.
+    A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it's pre-release. The agent software is constantly updating, so you `curl` the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-portal=true). The command uses `jq` to read the latest version from the JSON string that's returned.
 
 1. Print the agent version to the console. Optionally, [check](https://github.com/microsoft/azure-pipelines-agent/releases?azure-portal=true) to make sure this is the latest version.
 
@@ -290,7 +290,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
     sudo -E ./build-agent.sh
     ```
 
-    `sudo` enables the script to run as the root user. The `-E` argument preserves the current environment variables, including the ones you set, so that they are available to the script.
+    `sudo` enables the script to run as the root user. The `-E` argument preserves the current environment variables, including the ones you set, so that they're available to the script.
 
     As the script runs, you can see the agent connect to Azure DevOps, see it added to the agent pool, and see the agent connection be tested.
 

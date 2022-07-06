@@ -29,6 +29,8 @@ products:
 - azure
 - m365
 - dynamics-365
+subjects:
+- marketing-sales
 units:
 - learn.azure.inclusive-marketing.1-introduction
 - learn.azure.inclusive-marketing.2-inclusive-marketing-overview

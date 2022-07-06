@@ -67,9 +67,10 @@ You can use Network Performance Monitor to monitor endpoint-to-endpoint connecti
 
 ## Network Watcher diagnostic tools
 
-Network Watcher includes six diagnostic tools:
+Network Watcher includes the following diagnostic tools:
 
 - IP flow verify
+- NSG diagnostic
 - Next hop
 - Effective security rules
 - Packet capture
@@ -83,6 +84,12 @@ Let's examine each tool and find out how they can help you solve problems.
 The IP flow verify tool tells you whether packets are allowed or denied for a specific virtual machine. If a network security group denies a packet, the tool tells you the name of that group so you can fix the problem.
 
 This tool uses a 5-tuple packet parameter-based verification mechanism to detect whether packets inbound or outbound are allowed or denied from a VM. Within the tool, you specify a local and remote port, the protocol (TCP or UDP), the local IP, the remote IP, the VM, and the VM's network adapter.
+
+### What is the NSG diagnostic tool?
+
+The Network Security Group (NSG) Diagnostics tool provides detailed information to help you understand and debug the security configuration of your network. 
+
+For a given source-destination pair, the tool shows you the NSGs that will be traversed, the rules that will be applied in each NSG, and the final allow/deny status for the flow. By understanding which traffic flows will be allowed or denied in your Azure Virtual Network, you can determine if your NSG rules are configured correctly.
 
 ### What is the next hop tool?
 
@@ -108,7 +115,7 @@ The packet capture tool records all of the packets sent to and from a VM. When e
 
 The packet capture tool is a virtual machine extension started remotely through Network Watcher. It starts automatically when you start a packet capture session.
 
-Keep in mind that there is a limit to the amount of packet-capture sessions allowed per region. The default usage limit is 100 packet-capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
+Keep in mind that there's a limit to the number of packet-capture sessions allowed per region. The default usage limit is 100 packet-capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
 
 Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. For links to instructions that detail the installation of the extension on Windows and Linux VMs, see the "Learn more" section at the end of this module.
 

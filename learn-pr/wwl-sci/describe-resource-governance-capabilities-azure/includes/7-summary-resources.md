@@ -3,11 +3,11 @@ You’ve seen how admins can use the resource governance capabilities in Azure t
 Now that you’ve completed this module, you'll be able to:
 
 - Describe Azure Policy.
-- Describe Azure Blueprints
-- Describe Azure Purview
+- Describe Azure Blueprints.
+- Describe Microsoft Purview.
 
 ## Learn more
 
 - [What is Azure Policy?](/azure/governance/policy/overview)
 - [What is Azure Blueprints?](/azure/governance/blueprints/overview)
-- [What is Azure Purview?](/azure/purview/overview)
+- [What is Microsoft Purview?](/azure/purview/overview)

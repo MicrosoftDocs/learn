@@ -14,15 +14,15 @@ The leases for the two datacenters are due to run out in 18 months and 2 years. 
 
 ## Plan for Tailwind Traders' new innovation effort
 
-Additionally, the retail innovation team will be updating its continuous integration and continuous delivery (CI/CD) pipelines to deploy new solutions to the cloud. You'll use the same migration assessment tools to overcome some documentation challenges among the innovation team's past efforts. You'll also use migration tools to test the compatibility of those solutions with basic Azure services. The inventory of data structures, applications, and other services help to validate the team's DevOps deployments.
+Additionally, the retail innovation team will be updating its continuous integration and continuous delivery (CI/CD) pipelines to deploy new solutions to the cloud. You'll use the same migration-assessment tools to overcome some documentation challenges among the innovation team's past efforts. You'll also use migration tools to test the compatibility of those solutions with basic Azure services. The inventory of data structures, applications, and other services help to validate the team's DevOps deployments.
 
 ## Build the cloud adoption plans
 
-To keep all the cloud adoption efforts on track, the Tailwind Traders CIO and project managers will create a set of cloud adoption plans to manage various activities and share progress across the organization.
+To keep all the cloud-adoption efforts on track, the Tailwind Traders CIO and project managers will create a set of cloud-adoption plans to manage various activities and share progress across the organization.
 
 <!-- docutune:casing "Migrate or Innovate" -->
 
-The exercises in the remaining units of this module walk through each step of translating the current adoption strategy and future efforts into an actionable cloud adoption plan. You use the following steps:
+The exercises in the remaining units of this module walk through each step of translating the current adoption strategy and future efforts into an actionable cloud-adoption plan. You use the following steps:
 
 1. **Confirm prerequisites.** Confirm that all prerequisite steps have been completed before you create your plan.
 2. **Define and prioritize workloads.** Prioritize your first 10 workloads to establish an initial adoption backlog.

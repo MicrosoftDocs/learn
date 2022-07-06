@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-site-recovery
+subjects:
+- infrastructure
 units:
 - learn.protect-infrastructure-with-azure-site-recovery.1-introduction
 - learn.protect-infrastructure-with-azure-site-recovery.2-what-is-site-recovery

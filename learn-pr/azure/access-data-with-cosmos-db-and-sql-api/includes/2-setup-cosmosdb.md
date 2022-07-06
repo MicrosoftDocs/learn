@@ -37,21 +37,44 @@ We'll run the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 
     ```json
     {
+      "analyticalStorageConfiguration": {
+        "schemaType": "WellDefined"
+      },
+      "apiProperties": null,
+      "backupPolicy": {
+        "migrationState": null,
+        "periodicModeProperties": {
+          "backupIntervalInMinutes": 240,
+          "backupRetentionIntervalInHours": 8,
+          "backupStorageRedundancy": "Geo"
+        },
+        "type": "Periodic"
+      },
       "capabilities": [],
+      "capacity": null,
+      "connectorOffer": null,
       "consistencyPolicy": {
         "defaultConsistencyLevel": "Session",
         "maxIntervalInSeconds": 5,
         "maxStalenessPrefix": 100
       },
+      "cors": [],
+      "createMode": null,
       "databaseAccountOfferType": "Standard",
+      "defaultIdentity": "FirstPartyIdentity",
+      "disableKeyBasedMetadataWriteAccess": false,
+      "disableLocalAuth": false,
       "documentEndpoint": "https://example.documents.azure.com:443/",
+      "enableAnalyticalStorage": false,
       "enableAutomaticFailover": false,
+      "enableCassandraConnector": null,
+      "enableFreeTier": false,
       "enableMultipleWriteLocations": false,
       "failoverPolicies": [
         {
           "failoverPriority": 0,
-          "id": "example-southcentralus",
-          "locationName": "South Central US"
+          "id": "example-westus",
+          "locationName": "West US"
         }
       ],
       ...

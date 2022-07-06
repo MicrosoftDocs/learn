@@ -1,29 +1,29 @@
-Here, we discuss how you can use filters, blame, and cross-linking to to search and organize repository history.
+Here, we'll discuss how you can use filters, blame, and cross-linking to search and organize repository history.
 
 Put yourself in the position of a developer who has just joined a large project. Someone just posted a new issue reporting a bug related to the web app's sidebar, and you've been assigned to fix it. You've already read through the report a few times and understand the problem being described, so now you need to figure out how to get started with the fix.
 
-As a new team member, you are not yet familiar with the codebase. You also haven't been part of the planning discussions, code reviews, or anything else that would provide you the context you need to start implementation. You'll first need to acquire that background knowledge to best determine the right fix. 
+As a new team member, you're not yet familiar with the codebase. You also haven't been part of the planning discussions, code reviews, or anything else that would provide you the context you need to start implementation. You'll first need to acquire that background knowledge to best determine the right fix.
 
 ## Searching GitHub
 
 Although you weren't around for the events that led to the sidebar's implementation, many of those events live on in the project's history. Searching the project's repository for "sidebar" will give you a starting point.
 
-There are two search methods available on GitHub: the global search at the top of the page and the scoped search available on certain repository tabs. They support the same syntax and function in the same way, with some key differences.
+There are two search methods available on GitHub: the global search at the top of the page, and the scoped search available on certain repository tabs. They support the same syntax and function in the same way, with some key differences.
 
 ### Global search
 
-The global search enables you to use [the complete search syntax](https://help.github.com/github/searching-for-information-on-github/searching-on-github?azure-portal=true) to search across all of GitHub.
+The global search lets you use [the complete search syntax](https://help.github.com/github/searching-for-information-on-github/searching-on-github?azure-portal=true) to search across all of GitHub.
 
 ![Searching across GitHub.](../media/2-global-search.png)
 
-The search results are comprehensive, and include everything from code to issues to the Marketplace and even users. This is the best way to find mentions of key terms across multiple result types and repositories.  
+The search results are comprehensive and include everything from code to issues to the Marketplace (and even users). This is the best way to find mentions of key terms across multiple result types and repositories.  
 
 ![Global search results.](../media/2-global-search-results.png)
 
 > [!NOTE]
-> The filter clause `is:pr` filters out issues returned from the issues/pull requests store. Some filter clauses, such as `is:pr`, are only supported by certain search providers and ignored by others. For example, the code search provider doesn't support that clause, so it will ignore it and return the same code results either way.
+> The filter clause `is:pr` filters out issues returned from the issues/pull requests store. Some filter clauses, such as `is:pr`, are only supported by certain search providers and ignored by others. For example, the code-search provider doesn't support that clause, so it will ignore it and return the same code results either way.
 
-In our scenario, using the global search scoped to the current repository is a good way to find code and commits that mention the term "sidebar". You will also likely get hits for issues and pull requests, although they're not as easy to filter further in the global search results view.
+In our scenario, using the global search scoped to the current repository is a good way to find code and commits that mention the term "sidebar". You'll also likely get hits for issues and pull requests, although they're not as easy to filter further in the global search results view.
 
 To craft a complex global search, try the [advanced search](https://github.com/search/advanced?azure-portal=true).
 
@@ -33,7 +33,7 @@ Context searches are available on certain tabs, such as **Issues** and **Pull re
 
 ![Context search within a repository.](../media/2-context-search.png)
 
-Using the context search is the preferred option when you're looking for something in the current repository. In our scenario, this would be a good way to find search results mentioning "sidebar", which could then be easily refined using the filter dropdowns.
+Using the context search is the preferred option when you're looking for something in the current repository. In our scenario, this would be a good way to find search results mentioning "sidebar," which you could then easily refine using the filter dropdowns.
 
 ### Using search filters
 
@@ -52,7 +52,7 @@ Learn more about [Understanding the search syntax](https://help.github.com/en/gi
 
 ## What is git blame?
 
-Despite its ominous name, `git blame` is a command that displays the commit history for a file. It makes it easy for you to see who made what changes and when. This makes it a lot easier to track down other people who have worked on a file in order to seek out their input or participation. 
+Despite its ominous name, `git blame` is a command that displays the commit history for a file. It makes it easy for you to see who made what changes and when. This makes it a lot easier to track down other people who have worked on a file in order to seek out their input or participation.
 
 > [!NOTE]
 > Some Git systems alias `git praise` onto `git blame` to avoid the implication of judgment.
@@ -63,7 +63,7 @@ GitHub extends the basic `git blame` functionality with a more robust user inter
 
 ![GitHub blame.](../media/2-github-blame.png)
 
-In our scenario, there are a few ways you might get to this view. You might have found some sidebar code from the global search and selected the **Blame** option to see who had worked on it last. Or maybe you found a pull request and tracked that back to the last commit that seems related to the bug description. However you got here, the blame view is an effective way to locate a subject matter expert for the task at hand. 
+In our scenario, there are a few ways you might get to this view. You might have found some sidebar code from the global search and selected the **Blame** option to see who worked on it last. Or maybe you found a pull request and tracked that back to the last commit that seems related to the bug description. However you got here, the blame view is an effective way to locate a subject matter expert for the task at hand.
 
 ## Cross-linking issues, commits, and more
 

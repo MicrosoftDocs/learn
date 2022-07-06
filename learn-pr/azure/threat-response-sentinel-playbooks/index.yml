@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.azure.threat-response-sentinel-playbooks.1-introduction
 - learn.azure.threat-response-sentinel-playbooks.2-exercise-setup

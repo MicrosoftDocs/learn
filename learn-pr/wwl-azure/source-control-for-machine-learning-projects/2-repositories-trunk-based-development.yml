@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.source-control-for-machine-learning-projects.repositories-trunk-based-development
+title: Repositories and trunk-based development
+metadata:
+  title: Repositories and trunk-based development
+  description: "Repositories and trunk-based development"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-repositories-trunk-based-development.md)]

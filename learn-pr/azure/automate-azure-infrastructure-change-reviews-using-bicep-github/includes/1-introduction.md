@@ -22,7 +22,7 @@ You'll configure your pull request workflow to scan your Bicep code against reco
 
 ## What is the main goal?
 
-After you complete this module, you'll be able to add automated checks and validation to your GitHub pull requests for your Bicep code.
+After completing this module, you'll be able to add automated checks and validation to your GitHub pull requests for your Bicep code.
 
 ## Prerequisites
 

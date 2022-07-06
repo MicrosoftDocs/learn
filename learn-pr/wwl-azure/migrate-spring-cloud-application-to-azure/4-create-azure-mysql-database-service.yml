@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-spring-cloud-application-to-azure.create-azure-mysql-database-service
+title: Create an Azure MySQL Database service
+metadata:
+  title: Create an Azure MySQL Database service
+  description: "Create an Azure MySQL Database service"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 18
+content: |
+  [!include[](includes/4-create-azure-mysql-database-service.md)]

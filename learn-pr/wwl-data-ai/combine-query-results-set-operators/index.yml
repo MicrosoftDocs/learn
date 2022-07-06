@@ -3,7 +3,7 @@ uid: learn.wwl.combine-query-results-set-operators
 metadata:
   title: Combine query results with set operators
   description: "Combine query results with set operators"
-  ms.date: 01/10/2022
+  ms.date: 06/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -34,6 +34,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- process-workflow
 units:
 - learn.wwl.combine-query-results-set-operators.introduction
 - learn.wwl.combine-query-results-set-operators.use-union-operator

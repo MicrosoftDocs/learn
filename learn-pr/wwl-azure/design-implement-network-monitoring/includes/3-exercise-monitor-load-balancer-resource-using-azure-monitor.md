@@ -65,16 +65,10 @@ In this section, you will create a virtual network and a subnet.
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
-1.  On the Azure portal home page, click **Create a resource**.
-2.  In the search box at the top of the page, type **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
-3.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
-4.  Click **Create**.
-
-    :::image type="content" source="../media/create-load-balancer-4-c6145228.png" alt-text="Create Load Balancer":::
-
-
-5.  On the **Basics** tab, use the information in the table below to create the load balancer.
-    
+1.  On the Azure home page, in the search bar, enter **Load Balancer** 
+2.  Select **Create Load Balancer**.
+3.  On the **Basics** tab, use the information in the table below to create the load balancer.
+        
     |      **Setting**      |        **Value**         |
     |:---------------------:|:------------------------:|
     |     Subscription      | Select your subscription |
@@ -84,11 +78,12 @@ In this section, you will create an internal Standard SKU load balancer. The rea
     |          SKU          |       **Standard**       |
     |         Type          |       **Internal**       |
     | Frontend IP configuration tab | + Add a frontend IP configuration |
+    |         Name          | **LoadBalancerFrontEnd** |
     |    Virtual network    |      **IntLB-VNet**      |
     |        Subnet         |   **myBackendSubnet**    |
     | IP address assignment |       **Dynamic**        |
-6.  Click **Review + create**.
-7.  Click **Create**.
+4.  Click **Review + create**.
+5.  Click **Create**.
 
 ## Task 3: Create a backend pool
 

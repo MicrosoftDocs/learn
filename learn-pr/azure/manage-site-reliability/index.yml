@@ -30,6 +30,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- site-reliability-engineering
 units:
 - learn.azdo.manage-site-reliability.1-introduction
 - learn.azdo.manage-site-reliability.2-site-reliability-engineering

@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- migration
 units:
 - learn.azure.copy-blobs-from-command-line-and-code.introduction
 - learn.azure.copy-blobs-from-command-line-and-code.choosing-a-tool-and-strategy

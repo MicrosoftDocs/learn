@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-databases-for-optimal-performance.explore-database-maintenance-checks
+title: Explore database maintenance checks
+metadata:
+  title: Explore database maintenance checks
+  description: "Explore database maintenance checks"
+  ms.date: 05/05/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-database-maintenance-checks.md)]

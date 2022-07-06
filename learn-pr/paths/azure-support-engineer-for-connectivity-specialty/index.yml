@@ -34,6 +34,8 @@ products:
 - azure-virtual-machines-windows
 - azure-virtual-network
 - azure-virtual-wan
+subjects:
+- networking
 modules:
 - learn.wwl.business-continuity
 - learn.wwl.name-resolution-issues

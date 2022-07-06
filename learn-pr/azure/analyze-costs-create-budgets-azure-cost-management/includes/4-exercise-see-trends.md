@@ -6,7 +6,7 @@ Now that you have had the opportunity to learn about the Cost Analysis tool, it'
 
 To start, sign in to the Azure portal using the following step.
 
-- Sign in to the [Azure portal](https://portal.azure.com), and enter your credentials.
+- Enter your credentials and sign in to the [Azure portal](https://portal.azure.com).
 
 ## Navigate to cost analysis
 
@@ -24,7 +24,7 @@ Next, in the Azure portal, navigate to **Cost analysis**.
 
 Next, group your results to view resources.
 
-- Select the **Group by** list to view a list of values to filter by, and then select **Resource**.
+- Select the **Group by** list to view a list of values to filter by, then select **Resource**.
 
 ## Adjust date range and granularity
 

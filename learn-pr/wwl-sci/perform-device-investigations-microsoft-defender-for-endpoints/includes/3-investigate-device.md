@@ -20,7 +20,7 @@ When you investigate a specific device, you'll see:
 
 - Response actions
 
-- Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
+- Tabs - overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs (Knowledge Base IDs)
 
 - Cards (active alerts, logged on users, security assessment)
 
@@ -64,7 +64,7 @@ You can view the overall number of active alerts from the last 30 days in your n
 
 **Logged on users**
 
-The Logged on users card shows how many users have logged on in the past 30 days, and the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays user type, sign-in type, and when the user was first and last seen.
+The Logged on users card shows how many users have logged on in the past 30 days, and the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays user type, sign in type, and when the user was first and last seen.
 
 **Security assessments**
 
@@ -126,7 +126,7 @@ Find the event that you want to flag.  Select the flag icon in the Flag column.
 
 **View flagged events**
 
-In the timeline Filters section, enable Flagged events.  Select Apply. Only flagged events are displayed. You can apply more filters by clicking the time bar. This will only show events prior to the flagged event.
+In the timeline Filters section, enable Only Flagged events.  Select Apply. Only flagged events are displayed. You can apply more filters by clicking the time bar. This will only show events prior to the flagged event.
 
 ### Event details
 

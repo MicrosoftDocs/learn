@@ -38,6 +38,8 @@ products:
 - azure-sphere
 - azure-app-service-static
 - azure-virtual-machines
+subjects:
+- iot
 units:
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.introduction
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.iot-central-concept

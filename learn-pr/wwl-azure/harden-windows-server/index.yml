@@ -3,7 +3,7 @@ uid: learn.wwl.hardening-windows-server
 metadata:
   title: Hardening Windows Server
   description: "Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic."
-  ms.date: 11/26/2021
+  ms.date: 06/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Working knowledge of common Windows Server administration basics
   - Experience with managing Active Directory Domain Services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/9-hardening-windows-server.svg
 hidden: true
 levels:
 - intermediate
@@ -30,6 +30,10 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- compliance
+- device-management
+- threat-protection
 units:
 - learn.wwl.hardening-windows-server.introduction
 - learn.wwl.hardening-windows-server.describe-local-password-administrator-solution

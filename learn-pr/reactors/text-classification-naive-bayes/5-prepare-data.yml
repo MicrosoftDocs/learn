@@ -5,8 +5,8 @@ metadata:
   title: Prepare the data for modeling
   description: Use the Natural Language Toolkit and scikit-learn to prepare the dataset to use in your machine learning model.
   ms.date: 06/30/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ms.custom: team=nextgen

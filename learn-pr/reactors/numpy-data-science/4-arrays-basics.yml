@@ -5,8 +5,8 @@ metadata:
   title: 'Work with NumPy arrays: The basics'
   description: Learn how to work with NumPy arrays in basic ways.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-linux-vm
+subjects:
+- virtual-machine
 units:
 - learn.azure.intro-to-azure-linux.1-introduction
 - learn.azure.intro-to-azure-linux.2-what

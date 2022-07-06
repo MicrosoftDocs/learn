@@ -27,6 +27,10 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- architecture
+- database
 units:
 - learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.introduction
 - learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.explore-high-level-architecture-of

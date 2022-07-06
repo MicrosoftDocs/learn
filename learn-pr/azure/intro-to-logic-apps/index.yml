@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-logic-apps
+subjects:
+- cloud-computing
 units:
 - learn.azure-intro-to-logic-apps.introduction
 - learn.azure-intro-to-logic-apps.what-is-logic-apps

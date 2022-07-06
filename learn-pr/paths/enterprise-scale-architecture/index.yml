@@ -19,6 +19,8 @@ roles:
 - solution-architect
 products: 
 - azure
+subjects:
+- architecture
 modules:
 - learn.azure.enterprise-scale-introduction
 - learn.azure.enterprise-scale-organizational-design-principles

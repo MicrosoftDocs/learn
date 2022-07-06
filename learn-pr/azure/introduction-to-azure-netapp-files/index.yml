@@ -29,6 +29,10 @@ roles:
   - solution-architect
 products:
   - azure-netapp-files
+subjects:
+- cloud-computing
+- storage
+- migration
 units:
 - learn.azure.introduction-to-azure-netapp-files.introduction
 - learn.azure.introduction-to-azure-netapp-files.what-is-azure-netapp-files

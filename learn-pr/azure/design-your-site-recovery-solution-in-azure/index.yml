@@ -27,6 +27,8 @@ products:
 - azure
 - azure-backup
 - azure-site-recovery
+subjects:
+- business-continuity
 units:
 - learn.design-your-site-recovery-solution-in-azure.1-introduction
 - learn.design-your-site-recovery-solution-in-azure.2-develop-bcdr-plan

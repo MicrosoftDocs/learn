@@ -2,7 +2,8 @@
 uid: learn.azure.beginner-hololens-2-tutorials
 metadata:
   title: 'HoloLens 2 fundamentals: develop mixed reality applications'
-  description: 'Explore best practices for developing Azure-enabled mixed reality applications with the Mixed Reality Toolkit.'
+  description: Learn about the best practices for developing Azure-enabled mixed reality applications with the Mixed Reality Toolkit.
+  ms.custom: kr2b-contr-experiment
   ms.date: 09/13/2021
   author: Sean-Kerawala
   ms.author: sekerawa
@@ -29,6 +30,8 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+subjects:
+- mixed-reality
 modules:
 - learn.azure.learn-introduction-tutorials-mrtk
 - learn.azure.place-scene-objects-tutorials-mrtk

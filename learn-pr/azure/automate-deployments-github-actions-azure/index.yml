@@ -39,7 +39,9 @@ products:
   - azure-app-service-static
   - azure-web-apps
   - azure-devops
-units:  
+subjects:
+- cloud-computing
+units:
 - learn.azure.automate-deployments-github-actions-azure.introduction
 - learn.azure.automate-deployments-github-actions-azure.catch-the-bus
 - learn.azure.automate-deployments-github-actions-azure.exercise-deploy-resources

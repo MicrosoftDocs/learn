@@ -12,7 +12,7 @@ metadata:
 title: Create and connect to a Data Science Virtual Machine
 summary: Create, connect to, and share data among users on a Data Science Virtual Machine that's preloaded with data science and machine learning tools.
 abstract: Azure virtual machines are a fast way to use familiar operating systems and tools on powerful hardware. The Data Science Virtual Machine is configured with applications, frameworks, and libraries for data science and machine learning. You'll learn how to create and connect to a Data Science Virtual Machine, how to access it with your choice of command-line or graphical interfaces, and how to share data and projects between users. 
-iconUrl: /media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner 
 roles: 
@@ -23,6 +23,9 @@ roles:
 products: 
   - azure-machine-learning 
   - azure-data-science-vm
+subjects:
+- data-ai
+- virtual-machine
 units:
   - learn.azure.intro-to-data-science-virtual-machine.introduction
   - learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine

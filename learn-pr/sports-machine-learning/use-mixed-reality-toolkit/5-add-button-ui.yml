@@ -5,7 +5,7 @@ metadata:
   description: Add UI to the buttons so that the Tune Squad players are visible.
   ms.date: 06/15/2021
   author: aprilspeight
-  ms.author: sguthals
+  ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

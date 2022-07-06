@@ -1,81 +1,30 @@
-In order to query the data within our Cosmos DB analytical store from Azure Synapse using Spark, we need to configure a linked service 
+When you have a Cosmos DB container with analytical store support, you can create a linked service in an Azure Synapse Analytics workspace to connect to it.
 
-## Configure Azure Synapse Linked Service for Azure Cosmos DB Core (SQL) API
+To create a linked service to a Cosmos DB analytical data store, use Azure Synapse Studio, and add a linked service on the **Data** page by selecting the **Connect to external data** option, as shown here:
 
-To configure the Azure Synapse Linked Service for Azure Cosmos DB Core (SQL) API, perform the following steps:
- 
-[![Azure Synapse Studio.](../media/azure-synapse-studio.png)](../media/azure-synapse-studio.png#lioghtbox)
+![A screenshot of Azure Synapse Studioshowing the Connect to external data page.](../media//add-cosmos-db-link.png)
 
-1.	Connect to a previously deployed Azure Synapse Workspace running an Azure Synapse SQL Serverless instance **(deployed by default with the workspace)** and an Azure Synapse Spark Pool **(you need to have previously deployed this)**. 
- 
-    [![Adding a new resource in Azure Synapse Studio.](../media/new-resource-azure-synapse-studio.png)](../media/new-resource-azure-synapse-studio.png#lightbox)
+As you complete the steps to create your linked service, select the type of Cosmos DB account (SQL or MongoDB) and then assign your linked service a meaningful name and provide the necessary information to connect to your Cosmos DB database.
 
-2.	In the left-hand menu, select **Data (1)**
+To connect to the Cosmos DB database, you can use any of the following authentication options:
 
-3.	Click on the **Linked tab** in the explorer view **(2)**
+- **Account key**: Specify an authentication key for your Cosmos DB account.
+- **Service Principal**: Use the identity of the Azure Synapse Analytics service.
+- **System Assigned Managed Identity**: Use system-assigned managed identity.
+- **User Managed Identity**: Use a user-defined managed identity.
 
-4.	Click the **+ button** to add a resource **(3)**
- 
-    ![Connect to external data in Azure Synapse Studio.](../media/connect-to-external-data-azure-synapse-studio.png)
+> [!TIP]
+> For more information about using managed identities in Azure Active Directory, see [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 
-5.	Select **Connect to external data** from the list that pops up **(4)**
- 
-    ![Connect to Cosmos DB in Azure Synapse Studio.](../media/connect-to-cosmos-db-azure-synapse-studio.png)
+After creating a linked service, the Cosmos DB database and its containers will be shown in the **Data** page of Azure Synapse Studio, as shown here:
 
-6.	Select **Azure Cosmos DB SQL API**
+![A screenshot of Azure Synapse Studio showing the Data page with a Cosmos DB linked service.](../media/linked-service.png)
 
-7.	Click **Continue** 
- 
-    ![Configuring Cosmos DB linked service in Azure Synapse Studio.](../media/cosmos-db-linked-service-azure-synapse-studio.png)
-
-8.	Type **AdventureWorksSQL** as the name of our linked service **(7)**
-
-9.	Select the **Azure Subscription** in which the previously configured Azure Cosmos DB Core (SQL) API account exists from the drop-down list **(8)**
-
-10.	Select the **Azure Cosmos DB account** from the drop-down list **(9)**
-
-11.	Select the **Sales** database for the drop-down list.
-
-12.	Click **Test connection**. 
-
-    You should immediately receive confirmation that the connection was successful.
-
-13.	Click **Create**.
-
-You are done creating your Linked service for your Azure Cosmos DB Core **(SQL)** API
-
-## Configure Azure Synapse linked service for Azure Cosmos DB API for MongoDB
-
-To configure the Azure Synapse Linked Service for Azure Cosmos DB API for MongoDB, perform the following steps:
-
-1.	Connect to a previous deployed Azure Synapse Workspace 
-
-2.	In the left-hand menu, select **Data** 
-
-3.	Click on the **Linked tab** in the explorer view. 
-
-4.	Click the **+ button** to add a resource. 
-
-5.	Select **Connect to external data** from the list that pops up.
- 
-    ![Configuring Cosmos DB linked service for Mongo DB in Azure Synapse Studio.](../media/cosmos-db-mongodb-linked-service-azure-synapse-studio.png)
-
-6.	Select **Azure Cosmos DB (MongoDB API) (5)**
-
-7.	Click **Continue (6)**
-
-8.	Type **AdventureWorksMongoDB** as the name of our linked service 
-
-9.	Select the **Azure Subscription** in which the previously configured Azure Cosmos DB API for MongoDB account exists from the drop-down list. 
-
-10.	Select the **Azure Cosmos DB account** from the drop-down list.
-
-11.	Select the **Sales** database for the drop-down list.
-
-12.	Click **Test connection** 
-
-    You should immediately receive confirmation that the connection was successful.
-
-13.	Click **Create**
-
-You are done creating your Linked service for your Azure Cosmos DB API for MongoDB
+> [!NOTE]
+>The user interface differentiates between containers with analytical store support and those without by using the following icons:
+>
+>| Analytical store enabled | Analytical store <u>not</u> enabled |
+>|--|--|
+>|![An icon showing interlocking rectangles and a bar chart.](../media/htap-container.png) | ![An icon showing interlocking rectangles but no bar chart.](../media/oltp-container.png)|
+>
+> You can query a container without an analytical store, but you won't benefit from the advantages of an HTAP solution that offloads analytical query overhead from the operational data store.

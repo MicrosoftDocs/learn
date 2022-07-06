@@ -25,6 +25,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- identity-access
 modules:
 - learn.wwl.manage-multi-tenancy-for-azure-stack-hub
 - learn.wwl.manage-access-for-azure-stack-hub

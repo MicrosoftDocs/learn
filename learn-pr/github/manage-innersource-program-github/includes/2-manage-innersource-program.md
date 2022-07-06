@@ -1,14 +1,14 @@
-Here, we discuss how you can design an InnerSource program to enjoy the best of open source patterns within any software development organization.
+Here, we'll discuss how you can design an InnerSource program to enjoy the best of open-source patterns within any software development organization.
 
 ## What is InnerSource?
 
-**InnerSource** is the practice of applying open source patterns to projects with a limited audience. For example, a company may establish an InnerSource program that mirrors the structure of a typical open source project, except that it is only accessible to the employees of that company. In effect, it's an open source program behind your company's firewall. 
+**InnerSource** is the practice of applying open-source patterns to projects with a limited audience. For example, a company may establish an InnerSource program that mirrors the structure of a typical open-source project, except that it is only accessible to the employees of that company. In effect, it's an open-source program behind your company's firewall. 
 
 ### InnerSource benefits
 
-An InnerSource program can offer numerous benefits beyond what traditional closed source models provide.
+An InnerSource program can offer numerous benefits beyond what traditional closed-source models provide.
 
-First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solved problems similar to the ones they're facing, and often find code and other assets that can be reused. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project. 
+First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solved problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
 
 Next, they *reduce friction*. If a consumer team is dependent on a bug fix or new feature for a project owned by a different team, they have a channel through which they can propose the changes they need. And if those changes cannot be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
@@ -20,13 +20,13 @@ These examples are just a few of the benefits enjoyed by InnerSource programs. T
 
 ### Setting repository visibility and permissions
 
-GitHub repositories can be configured with three levels of visibility. Users who do not meet the visibility requirement will see "not found" pages when trying to access your repository. The levels are:
+You can configure GitHub repositories with three levels of visibility. Users who do not meet the visibility requirement will see "not found" pages when trying to access your repository. The levels are:
 
 - **Public** repositories are visible to everyone. Use this visibility for projects that are truly open source and offer access to people inside and outside of your organization.
 - **Internal** repositories are only visible to members of the organization that owns them. Use this visibility for InnerSource projects.
 - **Private** repositories are only visible to the owner and any teams or individuals they add. Use this visibility for projects that should only be accessed by specific users and groups.
 
-Once you have established repository visibility, you can configure permissions on an individual or team basis. There are five permission levels:
+Once you've established repository visibility, you can configure permissions on an individual or team basis. There are five permission levels:
 
 - **Read** level is recommended for non-code contributors who want to view or discuss the project.
 - **Triage** level is recommended for contributors who need to proactively manage issues and pull requests without write access.
@@ -44,12 +44,12 @@ A few best practices include:
 
 - Use a descriptive repository name, such as `warehouse-api` or `supply-chain-web`.
 - Include a concise description. A sentence or two should be enough for potential users to know if the project might fit their needs.
-- Include a `README.md` file in the root of the repository. This file is used by GitHub as the landing page when people visit the repository.
+- Include a `README.md` file in the root of the repository. GitHub uses this file as the landing page when people visit the repository.
 	- Articulate the purpose and vision of the project so potential consumers understand whether it fits their needs.
 	- Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
 	- Include a link to a production or demo version of the app for review.
 	- Set expectations for prerequisites and deployment procedures. If the project has disqualifying prerequisites, then let potential users know early.
-	- Include references to projects you depend on. Visitors may only need to use one of the projects you depend on to meet their needs, and this will save everyone time. It's also a good way to promote the work of others.
+	- Include references to projects on which you depend. Visitors may only need to use one of the projects you depend on to meet their needs, and this will save everyone time. It's also a good way to promote the work of others.
 	- Make use of Markdown to guide readers through properly formatted content.
 
 Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).

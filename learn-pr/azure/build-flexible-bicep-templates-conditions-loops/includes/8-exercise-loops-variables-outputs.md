@@ -27,7 +27,7 @@ During the process, you'll:
    ::: code language="bicep" source="code/8-template.bicep" range="47-58" :::
 
    > [!NOTE]
-   > This example uses the same address space for all the virtual networks. Ordinarily, when you create multiple virtual networks, you would give them different address spaces in the event that might need to connect them together.
+   > This example uses the same address space for all the virtual networks. Ordinarily, when you create multiple virtual networks, you would give them different address spaces in the event that you need to connect them together.
 
 1. Save the changes to the file.
 
@@ -116,7 +116,7 @@ After the deployment is finished, you want to verify that new virtual networks a
 
 1. Select the virtual network named `teddybear-eastasia`.
 
-1. In the search bar enter **Subnets**. Under **Settings**, select **Subnets**.
+1. In the search bar, enter **Subnets**. Under **Settings**, select **Subnets**.
 
    :::image type="content" source="../media/8-varloop-deployment-vnet-search.png" alt-text="Screenshot of the Azure portal interface for the virtual network, showing the search field with Subnets entered." border="true":::
 

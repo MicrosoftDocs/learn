@@ -24,6 +24,10 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-analytics
+- data-lake
+- artificial-intelligence
 units:
 - learn.wwl.manage-machine-learning-models-azure-databricks.introduction
 - learn.wwl.manage-machine-learning-models-azure-databricks.describe-considerations-for-model-management

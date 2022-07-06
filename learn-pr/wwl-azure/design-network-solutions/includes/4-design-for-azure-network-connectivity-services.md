@@ -14,13 +14,13 @@ When you design a network from bottom up, you gather some basic information. Thi
 
 When you plan to deploy your applications and services in Azure, you will start by creating a logical boundary in Azure, which is called a virtual network. This virtual network is akin to a physical network boundary. As it is a virtual network, you don't need physical gear but still have to plan for the logical entities such as IP addresses, IP subnets, routing, and policies.
 
-When you create a virtual network in Azure, it's pre-configured with an IP range (10.0.0.0/16). This range isn't fixed, you can define your own IP range. You can define both IPv4 and IPv6 address ranges. IP ranges defined for the virtual network are not advertised to Internet. You can create multiple subnets from your IP range. These subnets will be used to assign IP addresses to virtual network interfaces (vNICs). First four IP addresses from each subnet are reserved and can't be used for IP allocation. There is no concept of VLANs in a public cloud. However, you can create isolation within a virtual network based on your defined subnets.
+When you create a virtual network in Azure, it's pre-configured with an IP range (10.0.0.0/16). This range isn't fixed, you can define your own IP range. You can define both IPv4 and IPv6 address ranges. IP ranges defined for the virtual network are not advertised to Internet. You can create multiple subnets from your IP range. These subnets will be used to assign IP addresses to virtual network interfaces (vNICs). Azure reserves the first four and last IP address for a total of 5 IP addresses within each subnet. There is no concept of VLANs in a public cloud. However, you can create isolation within a virtual network based on your defined subnets.
 
-You can create one large subnet encompassing all the virtual network address space or choose to create multiple subnets. However, if you are using a virtual network gateway, Azure requires you to create a subnet with the name "gateway subnet". Azure will use this subnet to assign IP addresses to virtual network gateways.
+You can create one large subnet encompassing all the virtual network address space or choose to create multiple subnets. 
 
 A virtual network is a virtual, isolated portion of the Azure public network. Each virtual network is dedicated to your subscription. Things to consider when deciding whether to create one virtual network, or multiple virtual networks in a subscription:
 
-- Do any organizational security requirements exist for isolating traffic into separate virtual networks? You can choose to connect virtual networks or not. If you connect virtual networks, you can implement a network virtual appliance, such as a firewall, to control the flow of traffic between the virtual networks. For more information, see [security](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) and [connectivity](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json).
+- Do any organizational security requirements exist for isolating traffic into separate virtual networks? You can choose to connect virtual networks or not. If you connect virtual networks, you can implement a network virtual appliance, such as a firewall, to control the flow of traffic between the virtual networks. For more information, visit [security](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) and [connectivity](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json).
 
 - Do any organizational requirements exist for isolating virtual networks into separate [subscriptions](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json) or [regions](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/networking/fundamentals/toc.json)?
 
@@ -50,9 +50,9 @@ The following three patterns are common when it comes to organizing your workloa
 
 In this pattern, all the components of your workload or, in some cases, your entire IT footprint is put inside a single virtual network. This pattern is possible if you're operating solely in a single region since a virtual network can't span multiple regions.
 
-The entities you would most likely use for creating segments inside this virtual network are NSGs,potentially using ASGs to simplify administration. The image below is an example of how such a segmented virtual network would look.
+The entities you would most likely use for creating segments inside this virtual network are NSGs,potentially using ASGs to simplify administration. The image below is an example of a segmented virtual network.
 
-:::image type="content" source="../media/single-azure-region.png" alt-text="Virtual network in a single region.":::
+:::image type="content" source="../media/single-azure-region.png" alt-text="Diagram of a virtual network in a single region.":::
 
 
 
@@ -64,18 +64,18 @@ Although we used NSGs to illustrate how subnet traffic can be governed, you can 
 
 This pattern is the extension of the previous pattern where you have multiple virtual networks with potential peering connections. You might opt for this pattern to group applications into separate virtual networks, or you might need presence in multiple Azure regions. You get built-in segmentation through virtual networks because you must explicitly peer a virtual network to another one for them to communicate. (Keep in mind that [virtual network peering](/azure/virtual-network/virtual-network-peering-overview) connectivity isn't transitive.) To further segment within a virtual network in a manner similar to pattern 1, use NSGs in the virtual networks.
 
-:::image type="content" source="../media/multiple-regions.png" alt-text="Azure networks in multiple regions.":::
+:::image type="content" source="../media/multiple-regions.png" alt-text="Diagram of an Azure networks in multiple regions.":::
 
 
 ### Pattern 3: Multiple virtual networks in a hub &amp; spoke model
 
 This pattern is a more advanced virtual network organization where you choose a virtual network in a given region as the hub for all the other virtual networks in that region. The connectivity between the hub virtual network and its spoke virtual networks is achieved by using [Azure virtual network peering](/azure/virtual-network/virtual-network-peering-overview). All traffic passes through the hub virtual network, and it can act as a gateway to other hubs in different regions. You set up your security posture at the hubs, so they get to segment and govern the traffic between the virtual networks in a scalable way. One benefit of this pattern is that. as your network topology grows, the security posture overhead doesn't grow (except when you expand to new regions).
 
-:::image type="content" source="../media/hub-spoke.png" alt-text="Hub and spoke in two Azure regions.":::
+:::image type="content" source="../media/hub-spoke.png" alt-text="Diagram of a hub and spoke in two Azure regions.":::
 
 
 
-The recommended Azure cloud native segmentation control is Azure Firewall. Azure Firewall works across both Virtual Networks and subscriptions to govern traffic flows using layer 3 to layer 7 controls. You can define how your communication rules look (for example, virtual network X can't talk with virtual network Y but can talk with virtual network Z, no Internet for Virtual network X except for access to *.github.com, and so on) and apply it consistently. With Azure Firewall Manager, you can centrally manage policies across multiple Azure Firewalls and enable DevOps teams to further customize local policies.
+The recommended Azure cloud native segmentation control is Azure Firewall. Azure Firewall works across both Virtual Networks and subscriptions to govern traffic flows using layer 3 to layer 7 controls. You can define your communication rules (for example, virtual network X can't talk with virtual network Y but can talk with virtual network Z, no Internet for Virtual network X except for access to *.github.com, and so on) and apply it consistently. With Azure Firewall Manager, you can centrally manage policies across multiple Azure Firewalls and enable DevOps teams to further customize local policies.
 
 | Network capabilities| Pattern 1| Pattern 2| Pattern 3 |
 | - | - | - | - |
@@ -94,7 +94,7 @@ The recommended Azure cloud native segmentation control is Azure Firewall. Azure
 
 Virtual Network NAT (network address translation) simplifies outbound-only Internet connectivity for virtual networks. When configured on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. NAT is fully managed and highly resilient. 
 
-:::image type="content" source="../media/flow-map.png" alt-text=" Virtual Network NAT (network address translation) flow diagram.":::
+:::image type="content" source="../media/flow-map.png" alt-text=" Diagram of a Virtual Network NAT (network address translation) flow diagram.":::
 
 Choose Virtual Network NAT gateway when:
 - You need on-demand outbound to internet connectivity without pre-allocation 

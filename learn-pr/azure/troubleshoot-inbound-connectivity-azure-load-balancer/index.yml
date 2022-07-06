@@ -28,6 +28,9 @@ products:
 - azure
 - azure-monitor
 - azure-load-balancer
+subjects:
+- cloud-computing
+- networking
 units:
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.introduction
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.troubleshoot-azure-load-balancer

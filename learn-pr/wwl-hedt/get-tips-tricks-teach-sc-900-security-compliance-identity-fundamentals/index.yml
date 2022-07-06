@@ -29,6 +29,9 @@ roles:
 - higher-ed-educator
 products:
 - azure-security-center
+subjects:
+- identity-access
+- compliance
 units:
 - learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.introduction
 - learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.learn-module-best-practices

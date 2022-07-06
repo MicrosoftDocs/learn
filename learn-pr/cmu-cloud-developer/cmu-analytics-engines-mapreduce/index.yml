@@ -49,6 +49,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.1-programming-model

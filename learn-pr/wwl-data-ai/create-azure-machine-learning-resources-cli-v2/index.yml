@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.create-azure-machine-learning-resources-cli-v2.introduction
 - learn.wwl.create-azure-machine-learning-resources-cli-v2.use-azure-cli-v2

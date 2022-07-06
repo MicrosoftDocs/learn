@@ -23,6 +23,8 @@ products:
 - azure
 - azure-active-directory
 - azure-firewall
+subjects:
+- information-protection-governance
 modules:
 - learn.wwl.perimeter-security
 - learn.wwl.network-security

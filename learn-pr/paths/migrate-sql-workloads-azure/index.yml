@@ -30,6 +30,10 @@ products:
 - azure-sql-database
 - azure-virtual-machines
 - sql-server
+subjects:
+- migration
+- database
+- cloud-computing
 modules:
 - learn.wwl.introduction-data-platform-modernization
 - learn-sqlserver.assess-convert-sql-server-databases-using-dma

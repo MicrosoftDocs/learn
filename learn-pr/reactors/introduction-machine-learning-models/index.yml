@@ -32,6 +32,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.reactors.introduction-machine-learning-models.1-introduction
 - learn.reactors.introduction-machine-learning-models.2-prediction-linear-regression
@@ -43,4 +45,4 @@ units:
 - learn.reactors.introduction-machine-learning-models.8-logistic-regression-evaluate-model
 - learn.reactors.introduction-machine-learning-models.9-classification-decision-trees
 badge:
-  uid: learn.reactors.introduction-machine-learning-models.badge 
+  uid: learn.reactors.introduction-machine-learning-models.badge

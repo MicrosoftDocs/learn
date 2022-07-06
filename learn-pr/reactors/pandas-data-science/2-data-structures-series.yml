@@ -5,8 +5,8 @@ metadata:
   title: 'Data structures: Series object'
   description: Learn about one of the primary pandas data structures, the Series object.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

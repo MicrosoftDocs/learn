@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.test-python-with-pytest.test-classes-and-methods
+title: Test classes and methods
+metadata:
+  title: Test classes and methods
+  description: Aside from test functions, you can use test classes and methods. Test classes come with helpers and capabilities that will help you write better tests.
+  ms.date: 1/25/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language # Edit as appropriate for your portfolio area
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-test-classes-and-methods.md)]

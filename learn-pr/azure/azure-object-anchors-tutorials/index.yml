@@ -37,7 +37,9 @@ prerequisites: |
   - Unity Hub with Unity 2019.4.X installed and the Universal Windows Platform Build Support module added
   - A physical object in your environment and its 3D model (either CAD or scanned).
   - (optional but preferred) Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.azure-object-anchors-tutorials.1-introduction
 - learn.azure.azure-object-anchors-tutorials.2-introduction-to-azure-object-anchors-run-time-sdk
 - learn.azure.azure-object-anchors-tutorials.3-exercise-create-object-anchors-account-retrieve-id-key

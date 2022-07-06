@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.cna-stream-iot-data
 metadata:
   title: Stream internet-of-things (IoT) data to a cloud-native app with IoT Central
@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.azure.cna-stream-iot-data.1-introduction
 - learn.azure.cna-stream-iot-data.2-what-is-azure-iot-central

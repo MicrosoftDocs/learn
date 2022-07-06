@@ -77,6 +77,6 @@ With the anticipation of a sufficiently large and fault-tolerant quantum compute
 
 In collaboration with [Microsoft Quantum researchers](https://www.microsoft.com/research/blog/cryptography-quantum-computing-intersect/?azure-portal=true), Microsoft has been developing concrete quantum estimates for breaking current encryption systems. It's also working on ways to make these systems robust against quantum attacks.
 
-Again, let's talk about graphs. The "path-finding problem" is a hard problem for explicit choices of expander graphs. The development of post-quantum cryptosystems (that is, classical protocols that are resistant to quantum attacks) [has been proposed](http://eprint.iacr.org/2006/021.pdf?azure-portal=true).
+Again, let's talk about graphs. The "path-finding problem" is a hard problem for explicit choices of expander graphs. The development of post-quantum cryptosystems (that is, classical protocols that are resistant to quantum attacks) [has been proposed](https://eprint.iacr.org/2006/021.pdf).
 
 The interaction between academia and industry has thrived in recent years and has resulted in the development of commercially viable quantum cryptography products. Quantum cryptography is a reality. We can expect mathematicians and cryptographers to be busy during the next few years trying to determine the best possible choices for post-quantum cryptography standards.

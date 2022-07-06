@@ -20,6 +20,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- virtual-machine
+- cloud-computing
 modules:
 - learn.wwl.introduction-azure-sap-workloads
 - learn.wwl.deploy-sap-certified-offerings

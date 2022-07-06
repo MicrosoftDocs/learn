@@ -4,7 +4,7 @@ metadata:
   title: Cloud administration basics
   description: You will learn various important skills you need as an admin like, provisioning and securing resources but also topics like elasticity and orchestration and more.
   brand: azure
-  ms.date: 07/01/2021
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -24,6 +24,7 @@ summary: |
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: none
 iconUrl: /learn/achievements/generic-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -31,6 +32,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
 - learn.cmu-cloud-admin.cloud-admin-provision-manage

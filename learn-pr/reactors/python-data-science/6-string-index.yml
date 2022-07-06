@@ -5,8 +5,8 @@ metadata:
   title: String indexing in Python for data science
   description: Understand string indexing in Python for data science.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

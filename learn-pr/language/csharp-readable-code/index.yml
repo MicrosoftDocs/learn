@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-readable-code.introduction
 - learn.languages.csharp-readable-code.choose-variable-names

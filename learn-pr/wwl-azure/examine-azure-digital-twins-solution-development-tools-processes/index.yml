@@ -37,6 +37,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- development-tools
 units:
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.introduction
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.review-tools-used-to-develop

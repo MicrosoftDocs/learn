@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET 5.0 SDK
+  - .NET 6.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-release-cadence-using-deployment-patterns.svg
@@ -34,6 +34,9 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- development-tools
+- data-engineering
 units:
 - learn.azdo.manage-release-cadence.1-introduction
 - learn.azdo.manage-release-cadence.2-what-are-deployment-patterns

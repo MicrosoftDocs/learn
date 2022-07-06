@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.azure.organize-blobs-properties-metadata.introduction
 - learn.azure.organize-blobs-properties-metadata.manage-blob-data-using-properties-and-metadata

@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-network
 - azure-application-gateway
+subjects:
+- security
 units:
 - learn.end-to-end-encryption-with-app-gateway.1-introduction
 - learn.end-to-end-encryption-with-app-gateway.2-application-gateway-and-encryption

@@ -134,9 +134,9 @@ We're going to use git to deploy the source code to the web app's production slo
 
 For your web app, you created one slot, the production slot, and you deployed source code to this slot. Let's create a deployment slot where you can stage new versions of your web app.
 
-1. On the Azure portal menu, select **Home**, and in **Azure services**, select **All resources**. ilter by **Type == App Service**, and then select **Apply**.
+1. On the Azure portal menu, select **Home**, and in **Azure services**, select **All resources**. Filter by **Type == App Service**, and then select **Apply**.
 
-1. Sort the result by **Type**, and then select the App Service that you created.. The **App Service** pane for your web app appears.
+1. Sort the result by **Type**, and then select the App Service that you created. The **App Service** pane for your web app appears.
 
 1. In the App Service menu, under **Deployment**, select **Deployment slots**. The **Deployment slots** pane for your App Service appears.
 
@@ -154,7 +154,7 @@ Let's set up the new slot to use git deployment.
 
 1. On the Azure portal, select **Home** page, and then from Azure services, select **All resources**. 
     
-1. Sort the resources by **Resource group**. for the resource group **mslearn-slots**, you''ll see two App Service types. Deployment slots are represented as separate apps in the portal. 
+1. Sort the resources by **Resource group**. for the resource group **mslearn-slots**, you'll see two App Service types. Deployment slots are represented as separate apps in the portal. 
     
 1. Select the staging slot. The Overview pane for your App Service (Slot) appears.
 

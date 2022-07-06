@@ -32,6 +32,8 @@ prerequisites: |
   - Familiarity with PyTorch framework, including tensors, basics of back propagation and building models
   - Understanding machine learning concepts, such as classification, train/test dataset, accuracy, etc.
 
+subjects:
+- classification-analysis
 units:
 - learn.pytorch.intro-computer-vision.introduction
 - learn.pytorch.intro-computer-vision.image-data

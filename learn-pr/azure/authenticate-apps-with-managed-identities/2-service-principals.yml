@@ -3,9 +3,9 @@ uid: learn.authenticate-apps-with-managed-identities.2-service-principals
 metadata:
   title: Authentication with service principals in Azure AD
   description: Learn about Azure service principals, the concept behind them, and how to implement them to gain access to Azure resources.
-  ms.date: 03/11/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 03/31/2022
+  author: barclayn
+  ms.author: barclayn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Authentication with service principals in Azure AD

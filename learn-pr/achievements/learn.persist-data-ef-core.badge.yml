@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.persist-data-ef-core.badge
+metadata:
+  title: >-
+    Microsoft Badge: Persist and retrieve relational data with Entity Framework
+    Core was issued by Microsoft
+socialImageUrl: /learn/achievements/aspnetcore/persist-data-ef-core-social.png

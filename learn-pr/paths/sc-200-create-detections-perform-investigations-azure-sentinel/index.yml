@@ -3,9 +3,9 @@ uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel
 metadata:
   title: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
   description: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
-  ms.date: 11/05/2021
+  ms.date: 07/05/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
@@ -22,11 +22,16 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 modules:
 - learn.azure.analyze-data-in-sentinel
+- learn.wwl.automation-microsoft-sentinel
 - learn.azure.threat-response-sentinel-playbooks
 - learn.azure.incident-management-sentinel
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel
+- learn.wwl.data-normalization-microsoft-sentinel
 - azure.query-data-sentinel
+- learn.wwl.manage-content-microsoft-sentinel
 trophy:
   uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel.trophy

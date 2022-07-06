@@ -34,6 +34,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-time-series-insights
+subjects:
+- business-applications
 modules:
 - learn.wwl.examine-business-integration-for-iot-solutions
 - learn.wwl.examine-azure-time-series-insights

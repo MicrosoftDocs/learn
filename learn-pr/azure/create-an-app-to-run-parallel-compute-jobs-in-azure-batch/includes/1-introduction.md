@@ -6,15 +6,15 @@ Learn how to manage Azure Batch jobs and storage from a .NET Core app.
 
 ## Learning objectives
 
-  In this module, you will:
+In this module, you will:
 
-  - Build and run an Azure Batch job from a .NET app
-  - Add an application package to a Batch account
-  - Interact programmatically with Batch and Storage resources
-  - Manage a Batch programmatically
+- Build and run an Azure Batch job from a .NET app
+- Add an application package to a Batch account
+- Interact programmatically with Batch and Storage resources
+- Manage a Batch programmatically
 
 ## Prerequisites
 
-  - Working knowledge of Azure and the Azure portal
-  - Familiarity with Azure Batch
-  - Experience developing .NET apps
+- Working knowledge of Azure and the Azure portal
+- Familiarity with Azure Batch
+- Experience developing .NET apps

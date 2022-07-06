@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.create-manage-cognitive-services.introduction-to-accounts
 - learn.wwl.create-manage-cognitive-services.create-an-account

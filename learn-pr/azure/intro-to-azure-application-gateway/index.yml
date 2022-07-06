@@ -28,6 +28,8 @@ roles:
   - solution-architect
 products:
   - azure-application-gateway
+subjects:
+- networking
 units:
   - learn.azure.intro-to-azure-application-gateway.introduction
   - learn.azure.intro-to-azure-application-gateway.what-is-azure-application-gateway

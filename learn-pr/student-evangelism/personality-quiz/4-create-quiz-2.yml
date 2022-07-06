@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Checking the user's response in your super sleuth personality quiz
   description: This unit introduces `if`, `elif`, and `else` statements in Python.
   ms.date: 04/14/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

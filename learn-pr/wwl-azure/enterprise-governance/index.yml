@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-security
 units:
 - learn.wwl.enterprise-governance.introduction
 - learn.wwl.enterprise-governance.shared-responsibility-model

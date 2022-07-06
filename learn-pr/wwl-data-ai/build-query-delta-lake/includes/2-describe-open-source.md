@@ -137,7 +137,7 @@ Upserting, or merging, in Delta Lake provides fine-grained updates of your data.
 ```sql
 MERGE INTO customers -- Delta table
 USING updates
-ON customers.customerId = source.customerId
+ON customers.customerId = updates.customerId
 WHEN MATCHED THEN
     UPDATE SET address = updates.address
 WHEN NOT MATCHED
@@ -249,7 +249,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
     ```
-    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/09-Building-And-Querying-A-Delta-Lake.dbc?raw=true
+    https://github.com/MicrosoftLearning/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/09-Building-And-Querying-A-Delta-Lake.dbc?raw=true
     ```
 
 5. Select **Import**.

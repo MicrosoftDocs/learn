@@ -31,6 +31,9 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- data-engineering
+- data-management
 units:
 - learn.azdo.deploy-kubernetes.1-introduction
 - learn.azdo.deploy-kubernetes.2-why-container-orchestration

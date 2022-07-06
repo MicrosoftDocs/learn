@@ -30,6 +30,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-sphere
+subjects:
+- iot
 units:
 - learn.oxford.industrial-iot-connectivity.introduction
 - learn.oxford.industrial-iot-connectivity.what-are-connectivity-options

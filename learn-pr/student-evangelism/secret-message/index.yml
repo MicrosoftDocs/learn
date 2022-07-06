@@ -32,6 +32,8 @@ roles:
 - developer
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.python-partnership.secret-message.introduction
 - learn.python-partnership.secret-message.vs-code-setup

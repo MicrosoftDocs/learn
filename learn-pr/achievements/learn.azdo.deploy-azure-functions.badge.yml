@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.deploy-azure-functions.badge
+metadata:
+  title: >-
+    Microsoft Badge: Automate Azure Functions deployments with Azure Pipelines
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/azure-devops/deploy-azure-functions-social.png

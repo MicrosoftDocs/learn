@@ -60,7 +60,7 @@ You'll need to provision a **Cognitive Services** resource that's in the same lo
     - **Storage account name**: *A unique name*
     - **Location**: *Choose any available location*
     - **Performance**: Standard
-    - **Redundancy**: Locally-redundant storage (LRS)
+    - **Redundancy**: Locally redundant storage (LRS)
 3. Click **Review + Create** and then click **Create**. Wait for deployment to complete, and then go to the deployed resource.
 
 ## Upload Documents to Azure Storage
@@ -193,8 +193,11 @@ Use the Search explorer to write and test queries. Search explorer is a tool bui
 Let's see the power of the knowledge store in action. When you ran the *Import data wizard*, you also created a knowledge store. Inside the knowledge store, you'll find the enriched data extracted by AI skills persists in the form of projections and tables.
 
 1. In the Azure portal, navigate back to your Azure storage account.
-2. In the left-hand menu pane, select **Storage browser (preview)**. In the storage browser tree, select **Blob containers**. Select the **knowledge-store** container.
-3. Select any of the items, and then click on the **objectprojection.json** file.
+2. In the left-hand menu pane, select **Containers**. Select the **knowledge-store** container.
+
+    :::image type="content" source="../media/knowledge-store-blob-0.png" alt-text="Screenshot of the knowledge-store container.":::
+
+1. Select any of the items, and then click the **objectprojection.json** file.
 
     :::image type="content" source="../media/knowledge-store-blob-1.png" alt-text="Screenshot of the objectprojection.json.":::
 

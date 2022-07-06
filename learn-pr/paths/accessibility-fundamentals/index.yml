@@ -20,6 +20,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- accessibility
 modules:
 - learn.cela-disability-intro
 - learn.cela-accessibility-features
