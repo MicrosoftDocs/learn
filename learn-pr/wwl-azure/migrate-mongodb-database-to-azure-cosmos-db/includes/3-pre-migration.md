@@ -19,7 +19,7 @@ Our pre-migration is broken down into the following four steps or stages.
 Following these four steps will ensure a successful migration. Let's discuss these stages in more detail below.
 
 > [!NOTE]
-> The [Database Migration Assistant][/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB](DMA) will help you with the ***Discovery*** and ***Assessment*** stages of the planning.
+> The [Database Migration Assistant](/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB)(DMA) will help you with the ***Discovery*** and ***Assessment*** stages of the planning.
 
 ## Pre-migration discovery
 
@@ -29,9 +29,9 @@ Our first step will be to create a ***data estate migration spreadsheet***.  Thi
 - Help you to plan migration from end-to-end.
 - Should be used as a tracking document throughout the migration process.
 
-While you can do a manual discovery, in this unit, we'll recommend that you use the [Database Migration Assistant][/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB](DMA) to help you with the discovery. This tool is easy to use and will do much the work for you.
+While you can do a manual discovery, in this unit, we'll recommend that you use the [Database Migration Assistant](/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB)(DMA) to help you with the discovery. This tool is easy to use and will do much the work for you.
 
-The DMA will create the estate migration sheet programmatically. We'll use the [Azure Data Studio][/sql/azure-data-studio/download-azure-data-studio] to easily [install and use][/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma] the DMA tool. Just run it from any machine that has access to your source MongoDB environment.
+The DMA will create the estate migration sheet programmatically. We'll use the [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) to easily [install and use](/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma) the DMA tool. Just run it from any machine that has access to your source MongoDB environment.
 
 The DMA will output the following files that you can use as the data estate migration spreadsheets.
 
@@ -45,7 +45,7 @@ The spreadsheets would be similar to the one below.
 
 ## Pre-migration assessment
 
-Once you've completed your discovery, you need to find out what features your current MongoDB environment uses that might not be supported by the [current MongoDB version][/azure/cosmos-db/mongodb/feature-support-42] Azure Cosmos DB API for MongoDB supports. You also need to keep in mind the Azure Cosmos DB [limits and quotas][/azure/cosmos-db/concepts-limits#per-account-limits]. Once you make this assessment, you'll be able to address those findings as needed during rest of the migration planning.
+Once you've completed your discovery, you need to find out what features your current MongoDB environment uses that might not be supported by the [current MongoDB version](/azure/cosmos-db/mongodb/feature-support-42) Azure Cosmos DB API for MongoDB supports. You also need to keep in mind the Azure Cosmos DB [limits and quotas](/azure/cosmos-db/concepts-limits#per-account-limits). Once you make this assessment, you'll be able to address those findings as needed during rest of the migration planning.
 
 Again, we'll use the DMA to help us collect the data needed from this stage. The DMA will run against the resources from the source MongoDB and list the required and recommended changes needed to proceed with the migration.  This data will be written to the **assessment_result.csv** file.
 
@@ -58,14 +58,14 @@ The discovery and assessment were all about our MongoDB Source, now it's time to
 We can do some capacity planning by one of two ways.
 
 - **Convert vCores to RUs**. - If the only information we know is the number of servers or the number of vCores in our current MongoDB environment, we can convert those vCores to RUs.  In the previous unit, *[Convert vCores to RUs](/learn/modules/migrate-mongodb-database-to-azure-cosmos-db/2-vcore-to-rus)*, we went in more detail on how to estimate Request Units using vCores or vCPUs.
-- **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator][/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator]* unit.
+- **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator](/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator)* unit.
 
     > [!NOTE]
-    > You can also use the *[Azure Cosmos DB capacity calculator][/capacitycalculator/]* to estimate the cost of ownership of your new Azure Cosmos DB resource.
+    > You can also use the *[Azure Cosmos DB capacity calculator](/capacitycalculator/)* to estimate the cost of ownership of your new Azure Cosmos DB resource.
 
 ### Estimating throughput
 
-As we discussed in the Capacity planning section above, we can use the *[Azure Cosmos DB capacity calculator][/capacitycalculator/]* to estimate the RU/s we'll need, or we can estimate the RUs by converting the vCores to RUs before the migration. But once the data is in Azure Cosmos DB how can we determine the real cost of our queries?
+As we discussed in the Capacity planning section above, we can use the *[Azure Cosmos DB capacity calculator](/capacitycalculator/)* to estimate the RU/s we'll need, or we can estimate the RUs by converting the vCores to RUs before the migration. But once the data is in Azure Cosmos DB how can we determine the real cost of our queries?
 
 Once our data is in an Azure Cosmos DB collection, we can further understand the cost of our queries by using MongoDB Shell, and using the ***getLastRequestStastistics*** command to get the request charge. We'll first run our query in the MongoDB Shell and immediately after we would run the following command to get those RU statistics.
 
@@ -100,12 +100,12 @@ Time to use our workload detail spreadsheets we created with the DMA. We now nee
 
 Immutable decisions. It's time to make several of your design decisions, not only because we need to plan the migration correctly, but also because we won't be able to change some of those configurations once the resources are created. To help us make the right choices that we can't change, we should:
 
-- **Choose the best Shard key** - Once we create our collection, we won't be able to change our shard key, so we need to choose the right one from the start. Once we pick the shard key for our collection, Azure Cosmos DB will manage the horizontal growth of our collection. In the previous module, we delved in detail into this subject under the ***Models and Shard keys*** unit. If you would like to read more on this subject, refer to the articles [Partitioning and horizontal scaling in Azure Cosmos DB][/azure/cosmos-db/partitioning-overview] and [Choosing a Partition Key][/azure/cosmos-db/partitioning-overview#choose-partitionkey] article. Remember that Sharding is also known as Partitioning.
-- **Choose the right model** - Again, we discussed this subject in more detail in the previous module's ***Models and Shard keys*** unit. For more information, see the [Data modeling in Azure Cosmos DB][/azure/cosmos-db/sql/modeling-data] article.
-- **Choose between dedicated and shared throughput for each resource that you will migrate** - For more information, see the [Optimize provisioned throughput cost in Azure Cosmos DB][azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels ] article.
+- **Choose the best Shard key** - Once we create our collection, we won't be able to change our shard key, so we need to choose the right one from the start. Once we pick the shard key for our collection, Azure Cosmos DB will manage the horizontal growth of our collection. In the previous module, we delved in detail into this subject under the ***Models and Shard keys*** unit. If you would like to read more on this subject, refer to the articles [Partitioning and horizontal scaling in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) and [Choosing a Partition Key](/azure/cosmos-db/partitioning-overview#choose-partitionkey) article. Remember that Sharding is also known as Partitioning.
+- **Choose the right model** - Again, we discussed this subject in more detail in the previous module's ***Models and Shard keys*** unit. For more information, see the [Data modeling in Azure Cosmos DB](/azure/cosmos-db/sql/modeling-data) article.
+- **Choose between dedicated and shared throughput for each resource that you will migrate** - For more information, see the [Optimize provisioned throughput cost in Azure Cosmos DB](azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels) article.
 
     > [!TIP]
-    > If your would like to review a real world example of how to model and partition your data refer to the *[How to model and partition data on Azure Cosmos DB using a real-world example][/azure/cosmos-db/sql/how-to-model-partition-example]* article.
+    > If your would like to review a real world example of how to model and partition your data refer to the *[How to model and partition data on Azure Cosmos DB using a real-world example](/azure/cosmos-db/sql/how-to-model-partition-example)* article.
 
 ## Pre-migration logistics planning
 
@@ -152,7 +152,7 @@ Steps to take:
 - **Plan your post migration configurations** - Subjects like indexing, global distribution, and consistency should be planned. Note that these settings can usually be changed on the fly and will most likely change during the lifespan of your collections, but you should plan where those setting will sit right after the migration is done.
 
     > [!TIP]
-    > For further information about post-migrations, see the *[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB][/azure/cosmos-db/mongodb/post-migration-optimization]* guide.
+    > For further information about post-migrations, see the *[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/post-migration-optimization)* guide.
 
 Migrating a MongoDB database isn't a point and click operation. You should spend some time planning for that migration. In the next couple of chapters, we'll discuss further the actual migration step itself.
 

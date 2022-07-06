@@ -39,12 +39,12 @@ Let's put Visual studio Code to some good use, first, we need to clone the lab r
 1. On the text box that opens on the top, type **Git:Clone** to clone the repository.
 1. Input the git URL
 
-    > ```bash
-    > https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
-    > ```
+    ```bash
+    https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
+    ```
 
     1. Choose a folder to copy the repository to. It might be a good idea to create a new empty directory for this clone, that you can easily find later.
-    1. Once it has completed downloading the repository it will ask ***Would you like to open the clone repository?***, select the **Open** button.
+    1. Once it has completed downloading the repository it will ask ***Would you like to open the clone repository?*** , select the **Open** button.
 
         > [!NOTE]
         > If you did not selected the ***Open*** button, select ***File*** -> ***Open folder*** and select the folder where you cloned the repo to open it.
@@ -60,7 +60,7 @@ You should have now installed Visual Studio Code, and cloned the lab repo. Time 
 
 ### Download and install AzCopy
 
-There are many ways we can get our Backup files to the Azure Blob Storage Account we'll create in this lab. For this exercise, we'll use [AzCopy][/azure/storage/common/storage-use-azcopy] to copy those files from our client to the Cloud.
+There are many ways we can get our Backup files to the Azure Blob Storage Account we'll create in this lab. For this exercise, we'll use [AzCopy](/azure/storage/common/storage-use-azcopy) to copy those files from our client to the Cloud.
 
 - [Download](/azure/storage/common/storage-use-azcopy#download-azcopy) the AzCopy program to your client.
 - Use your favorite decompressing tool to expand the compressed file.
@@ -178,7 +178,7 @@ For this exercise, our project will use a MongoDB `mongodump` backup of four dat
 
 ### Retrieving the Azure Blob Storage connection string
 
-Azure Blob Storage connections strings are in a URI format. Additionally, these connection strings usually are in a shared access signature ([SAS][/rest/api/storageservices/delegate-access-with-shared-access-signature]) format, which is a URI that grants restricted access rights to Azure Storage resources.
+Azure Blob Storage connections strings are in a URI format. Additionally, these connection strings usually are in a shared access signature ([SAS](/rest/api/storageservices/delegate-access-with-shared-access-signature)) format, which is a URI that grants restricted access rights to Azure Storage resources.
 
 1. Sign in to the Azure portal, https://portal.azure.com.
 
@@ -196,7 +196,7 @@ Azure Blob Storage connections strings are in a URI format. Additionally, these 
     > [![Diagram showing the shared access signature page.](../media/6-shared-access-signature-page-set-permissions.png)](../media/6-shared-access-signature-page-set-permissions.png#lightbox)
 
     > [!NOTE]
-    > The actual settings of this page are way beyond the scope of this lesson, your can read further on this topic under the [Create an account SAS][/rest/api/storageservices/create-account-sas] article.
+    > The actual settings of this page are way beyond the scope of this lesson, your can read further on this topic under the [Create an account SAS](/rest/api/storageservices/create-account-sas) article.
 
 1. Since we're going to perform this migration in a few minutes, we only need to set one setting, the ***Permissions*** setting. Select the **Permissions** pulldown, and select **Read** and **List**.
 
@@ -313,7 +313,7 @@ So the last thing we need to do, is check out the fruits of all this labor.
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the post migration data in Cosmos DB.](../media/6-data-explorer.png)](../media/6-data-explorer.png#lightbox)
 
-In this exercise, we've introduced how to migrate MongoDB data into Azure Cosmos DB using the Azure Database Migration Service. Azure DMS, is just one of several options we have to migrate your MongoDB databases into Azure Cosmos DB. To learn more on online and offline migration take a look at the [Options to migrate your on-premises or cloud data to Azure Cosmos DB][/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api] article.
+In this exercise, we've introduced how to migrate MongoDB data into Azure Cosmos DB using the Azure Database Migration Service. Azure DMS, is just one of several options we have to migrate your MongoDB databases into Azure Cosmos DB. To learn more on online and offline migration take a look at the [Options to migrate your on-premises or cloud data to Azure Cosmos DB](/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api) article.
 
 [Visual Studio Code](https://azure.microsoft.com/products/visual-studio-code/)
 
