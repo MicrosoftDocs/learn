@@ -41,7 +41,7 @@ The DMA will output the following files that you can use as the data estate migr
 The spreadsheets would be similar to the one below.
 
 > [!div class="mx-imgBorder"]
-> [![Diagram showing the Database Migration Assistant spreadsheet.](../media/3-database-migration-assistant-spreadsheet.png)](../media/3-database-migration-assistant-spreadsheet.png#lightbox)
+> [![Diagram showing the Data Migration Assistant spreadsheet.](../media/3-database-migration-assistant-spreadsheet.png)](../media/3-database-migration-assistant-spreadsheet.png#lightbox)
 
 ## Pre-migration assessment
 
@@ -93,6 +93,9 @@ Time to use our workload detail spreadsheets we created with the DMA. We now nee
     > [!NOTE]
     > Shared vs dedicated throughput is another critical, immutable decision which it is vital to make in the planning phase.
 
+    > [!NOTE]
+    > Collections which require predictable performance should have dedicated throughput rather than shared throughput. Collections using shared throughput should have roughly equal request and storage needs.
+
 ### Some decisions are permanent
 
 Immutable decisions. It's time to make several of your design decisions, not only because we need to plan the migration correctly, but also because we won't be able to change some of those configurations once the resources are created. To help us make the right choices that we can't change, we should:
@@ -104,7 +107,7 @@ Immutable decisions. It's time to make several of your design decisions, not onl
     > [!TIP]
     > If your would like to review a real world example of how to model and partition your data refer to the *[How to model and partition data on Azure Cosmos DB using a real-world example][/azure/cosmos-db/sql/how-to-model-partition-example]* article.
 
-## Pre-migration mapping logistics planning
+## Pre-migration logistics planning
 
 We've collected, mapped and modeled our Azure Cosmos DB resources, its time to plan the actual execution of the migration itself.
 
@@ -125,7 +128,7 @@ The compatible tools for each migration scenario are shown below:
 
 | Source | Destination | Process Recommendation |
 | :--- | :---: | :--- |
-| ***Offline*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | • <10-GB data: MOngoDB native tools </br>• < 1-TB data: Azure DMS </br>•  > 1-TB data: Spark |
+| ***Offline*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | • <10-GB data: MongoDB native tools </br>• < 1-TB data: Azure DMS </br>•  > 1-TB data: Spark |
 | ***Online*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | </br>• < 1-TB data: Azure DMS </br>• > 1-TB data: Spark + Mongo ChangeStream |
 | • Need to change schema during migration </br>• need more flexibility than aforementioned tools | Azure Cosmos DB Mongo API | • ADF is more flexible than DMS, it supports schema modifications during migration and supports the most source/destination combinations. </br>• DMS will be better in terms of scale, for example faster migrations. |
 | JSON file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongoimport`***. |
@@ -146,12 +149,12 @@ In the pre-migration phase, spend some time detailing the post migration steps.
 Steps to take:
 
 - **Cutover your application** - You should be repointing your application to the Azure Cosmos DB environment.
-- **Plan your post migration configurations** - Subjects like indexing, global distribution consistency should be planned. Note that these settings can usually be changed on the fly and will most likely change during the lifespan of your collections, but you should plan where those setting will sit right after the migration is done.
+- **Plan your post migration configurations** - Subjects like indexing, global distribution, and consistency should be planned. Note that these settings can usually be changed on the fly and will most likely change during the lifespan of your collections, but you should plan where those setting will sit right after the migration is done.
 
     > [!TIP]
     > For further information about post-migrations, see the *[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB][/azure/cosmos-db/mongodb/post-migration-optimization]* guide.
 
-Migrating a MongoDB database shouldn't be just a point and click option, you should spend some time planning for that migration. In the next couple of chapters, we'll discuss further the actual migration step itself.
+Migrating a MongoDB database isn't a point and click operation. You should spend some time planning for that migration. In the next couple of chapters, we'll discuss further the actual migration step itself.
 
 [/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB]: https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB
 [/sql/azure-data-studio/download-azure-data-studio]: https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/05/2022
+  ms.date: 07/06/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -25,17 +25,17 @@ quiz:
     - content: "**Azure Data Migration Service (DMS)**"
       isCorrect: false
       explanation: "Incorrect. While DMS is recommended for online migrations < 1 TB, DMS doesn't provide the migration with an option to control data rate, so rate limiting errors could occur."
-  - content: "The accounting team about to start the pre-migration planning phase and heard that the Data Migration Assistant (DMA) is a great tool to collect information for a couple of the planning stages? Which planning stages will the DMA not directly collect information for."
+  - content: "The accounting team about to start the pre-migration planning phase and heard that the Data Migration Assistant (DMA) is a great tool to collect information for a couple of the planning stages? During which planning stages will the DMA collect data."
     choices:
-    - content: "***Pre-migration assessment***"
+    - content: "***Pre-migration logistic planning***"
       isCorrect: false
-      explanation: "Incorrect. The DMA assesses the readiness of the existing MongoDB resources for data migration."
-    - content: "***Pre-migration discovery***"
-      isCorrect: false
-      explanation: "Incorrect. The DMA discovers the existing MongoDB resources and creates a data estate spreadsheet to track them."
+      explanation: "Incorrect. The DMA does not collect any information during the logistic planning stage."
     - content: "***Pre-migration mapping***"
+      isCorrect: false
+      explanation: "Incorrect. The DMA does not collect any information during the mapping stage."
+    - content: "***Pre-migration discovery***"
       isCorrect: true
-      explanation: "Correct. The DMA collects data for the *Pre-migration assessment* and *Pre-migration discovery* stages. This data will be used during the *Pre-migration mapping* stage. However, the DMA itself does not collects or does the mapping during the *Pre-migration mapping* stage."
+      explanation: "Correct. The DMA collects data for the *Pre-migration assessment* and *Pre-migration discovery* stages."
   - content: "During the pre-migration planning, the IT team was informed that some of the planning decisions will be immutable so they have to be careful to get it right the first time. Out of the following decisions to make, which one is considered the most crucial because it can't be changed after the migration?"
     choices:
     - content: "Choosing the MongoDB server version."

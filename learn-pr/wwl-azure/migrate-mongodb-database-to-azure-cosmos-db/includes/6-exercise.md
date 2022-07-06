@@ -112,6 +112,9 @@ We'll run a script that will create the Azure storage and Azure Cosmos DB accoun
         > [!Tip]
         > When the script completes it will return several of the account names and ids, you will need some of those later in the lab so store them somewhere.
 
+        > [!Tip]
+        > If you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call.
+
         > [!NOTE]
         > This bash script will create the Azure Cosmos DB API for MongoDB account, create an Azure blob storage and copy the MongoDB backup into the blob storage. ***It can take 5-15 minutes to create these accounts*** and moved the files so it might be a good time to get a cup of coffee or tea.
 
@@ -125,7 +128,7 @@ Now that we've created our Azure Cosmos DB account, created an Azure Blob Storag
 
 1. Select ***+ Create Resource***.
 
-1. Search for ***Azure Migration Service*** and select it.
+1. Search for ***Azure Database Migration Services*** and select it.
 
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the step to select to a Database Migration Service.](../media/6-create-resource-database-migration-service-search.png)](../media/6-create-resource-database-migration-service-search.png#lightbox)
@@ -158,6 +161,8 @@ Now that we've created our Azure Cosmos DB account, created an Azure Blob Storag
 
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the Database Migration Service network tab.](../media/6-create-migration-service-network-tab.png)](../media/6-create-migration-service-network-tab.png#lightbox)
+
+    > [!NOTE] In the Azure DMS ***Networking*** tab. you create, or use an existing virtual network, so your DMS can connect to source servers with public facing IPs. It is a required step.
 
 1. Select the **Review and Create** button and then select the **Create** button to create the *Database Migration Service*.
 
