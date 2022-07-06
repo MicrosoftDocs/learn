@@ -8,13 +8,13 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) with the same account you used to activate the sandbox.
 
-1. On the Azure portal home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal home page, under **Azure services**, select **Create a resource**.
 
-1. In the *Search services and marketplace* search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
+1. In **Create a resource**, in the left menu under **Categories**, select **Identity**. Under **Popular Azure services**, select **Create** under **Azure Active Directory**.
 
-1. Select **Create**. The **Create a tenant** pane appears.
+    :::image type="content" source="../media/azure-active-directory-create.png" alt-text="Screenshot that shows the create link for Azure Active Directory under Azure services.":::
 
-1. On the **Basics** tab, enter the following value for the setting.
+1. In **Create a tenant**, on the **Basics** tab, enter the following value for the setting.
 
     | Setting | Value |
     |---|---|

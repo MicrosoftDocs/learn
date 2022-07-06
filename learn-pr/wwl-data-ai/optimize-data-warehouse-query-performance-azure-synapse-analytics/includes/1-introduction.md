@@ -6,6 +6,7 @@ In this module you will:
 -	Exercise - Understand Performance Issues Related to Tables
 -	Understand Table Distribution Design
 -	Use Indexes to Improve Query Performance
+-   Understand Query Plans
 -	Exercise - Use Table Distribution and Indexes to Improve Performance
 -	Create Statistics to Improve Query Performance
 -	Improve Query Performance with Materialized Views
@@ -17,4 +18,4 @@ Before taking this module, it is recommended that the student can:
 
 -	Log into the Azure portal
 -	Create a Synapse Analytics Workspace
--	Create an and connect to an Azure Synapse Analytics SQL Pool
+-	Create and connect to an Azure Synapse Analytics SQL Pool

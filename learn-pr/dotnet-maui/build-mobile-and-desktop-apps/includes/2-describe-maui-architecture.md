@@ -12,13 +12,13 @@ While the BCL enables applications running on different types of devices to shar
 
 There may be times when you need to implement a platform-specific feature. In these situations, you can invoke methods in the platform-specific framework, as highlighted by arrow 3 in the following diagram,
 
-:::image type="content" source="../media/2-architecture.png" alt-text="Diagram of the .NET MAUI technology stack. The diagram highlights what was just talked about.":::
+:::image type="content" source="../media/2-architecture.png" border="false" alt-text="Diagram of the .NET MAUI technology stack and how to implement a platform-specific feature.":::
 
 ## How does .NET MAUI work?
 
 .NET MAUI abstracts the implementation of a UI element from its logical description. You can describe the UI using XAML, a platform-neutral language based on XML. For example, the XAML fragment below shows the description of a button control:
 
-```XML
+```xml
 <Button Text="Click me"
         SemanticProperties.Hint="Counts the number of times you click"
         Clicked="OnCounterClicked"
@@ -29,7 +29,7 @@ This example defines the label for the button ("Click me"), and specifies that a
 
 .NET MAUI always generates native code for the target device, so you get optimal performance. .NET MAUI uses "handlers" specific to each platform and UI element to carry out an operation. For example, if you target iOS for the app, a .NET MAUI handler will map this code to an iOS UIButton. If you run on Android, you'll get an Android AppCompatButton. These handlers are accessed indirectly through a control-specific interface provided by .NET MAUI, such as IButton for a button.
 
-:::image type="content" source="../media/2-button-handler.png" alt-text="Diagram of how .NET MAUI maps a XAML control to a native control. It shows the .NET MAUI control implements an interface that each native handler also implements.":::
+:::image type="content" source="../media/2-button-handler.png" border="false" alt-text="Diagram of how .NET MAUI maps a XAML control to a native control. It shows the .NET MAUI control implements an interface that each native handler also implements.":::
 
 > [!NOTE]
 > If you prefer, you can also create the UI dynamically using C# code. This approach enables you to modify the layout according to the environment. For example, you might not want certain controls to appear if the user doesn't have an appropriate level of authorization.

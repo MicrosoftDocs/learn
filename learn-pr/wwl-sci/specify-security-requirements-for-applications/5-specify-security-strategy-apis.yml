@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.specify-security-requirements-for-applications.specify-security-strategy-apis
+title: Specify a security strategy for applications and APIs
+metadata:
+  title: Specify a security strategy for applications and APIs
+  description: "Specify a security strategy for applications and APIs"
+  ms.date: 06/08/2022
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-specify-security-strategy-apis.md)]

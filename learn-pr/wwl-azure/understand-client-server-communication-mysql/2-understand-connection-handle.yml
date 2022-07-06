@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-client-server-communication-mysql.understand-connection-handle
+title: Understand connection handling
+metadata:
+  title: Understand connection handling
+  description: "Understand connection handling"
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-connection-handle.md)]

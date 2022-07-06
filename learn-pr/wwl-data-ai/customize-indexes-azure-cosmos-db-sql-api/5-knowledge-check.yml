@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/03/2022
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You are writing a C# application that interfaces with Azure Cosmos DB SQL API and are not tasked with creating a custom indexing policy in code. Which class should you use to author your new indexing policy and customize the indexing mode, enable automatic updates, and set the include/exclude paths?"
+  - content: "You are writing a C# application that interfaces with Azure Cosmos DB SQL API and are now tasked with creating a custom indexing policy in code. Which class should you use to author your new indexing policy and customize the indexing mode, enable automatic updates, and set the include/exclude paths?"
     choices:
     - content: "IndexingPolicy"
       isCorrect: true

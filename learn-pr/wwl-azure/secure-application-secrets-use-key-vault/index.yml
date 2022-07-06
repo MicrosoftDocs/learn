@@ -3,7 +3,7 @@ uid: learn.wwl.secure-application-secrets-use-key-vault
 metadata:
   title: Secure application secrets using Key Vault
   description: "Secure application secrets using Key Vault"
-  ms.date: 05/30/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-cloud
+- azure-spring-apps
 - github
 units:
 - learn.wwl.secure-application-secrets-use-key-vault.introduction

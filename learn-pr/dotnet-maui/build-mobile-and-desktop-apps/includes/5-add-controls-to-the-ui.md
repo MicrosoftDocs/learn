@@ -80,7 +80,7 @@ Some of the common controls used to define layouts are:
 
 - `VerticalStackLayout` and `HorizontalStackLayout`, optimized stack layouts that lay out controls in a top-to-bottom or left-to-right stack. A `StackLayout` is also available, which has a property named `StackOrientation`, which you can set to `Horizontal` or `Vertical`. On a tablet or phone, modifying this property in your application code enables you to adjust the display if the user rotates the device:
 
-    :::image type="content" source="../media/5-stacklayout-flow.png" alt-text="A diagram of how the horizontal and vertical orientations for the stack layout will lay out controls.":::
+    :::image type="content" source="../media/5-stacklayout-flow.png" border="false" alt-text="A diagram of how the horizontal and vertical orientations for the stack layout will lay out controls.":::
 
 - `AbsoluteLayout`, which lets you set exact coordinates for controls.
 
@@ -92,7 +92,7 @@ Some of the common controls used to define layouts are:
 
 The image below summarizes the key attributes of these common layout types:
 
-:::image type="content" source="../media/5-layout-types.png" alt-text="A diagram of the layouts most frequently used in a .NET MAUI U I. The stack layout shows four boxes arranged vertically. The absolute layout shows four boxes arranged on the screen exactly where the developer specified. The Flex Layout shows several boxes laid out on the screen to best make use of the screen area. The Grid layout shows several boxes on the screen laid out in a grid pattern.":::
+:::image type="content" source="../media/5-layout-types.png" border="false" alt-text="A diagram of the layouts most frequently used in a .NET MAUI U I. The stack layout shows four boxes arranged vertically. The absolute layout shows four boxes arranged on the screen exactly where the developer specified. The Flex Layout shows several boxes laid out on the screen to best make use of the screen area. The Grid layout shows several boxes on the screen laid out in a grid pattern.":::
 
 All controls have properties. You can set initial values for these properties using XAML. In many cases, you can modify these properties in the C# code of your application. For example, the code that handles the `Clicked` event for the **Click me** button in the default .NET MAUI app looks like this:
 

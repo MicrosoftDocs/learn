@@ -1,6 +1,6 @@
 When you deploy your web app, web app on Linux, mobile back end, or API app to Azure App Service, you can use a separate deployment slot instead of the default production slot when you're running in the **Standard**, **Premium**, or **Isolated** App Service plan tier. Deployment slots are live apps with their own hostnames. App content and configurations elements can be swapped between two deployment slots, including the production slot.
 
-:::image type="content" source="../media/deployment-slots-5b3660cc.png" alt-text="Screenshot of deployment slots.":::
+:::image type="content" source="../media/deployment-slots-5b3660cc.png" alt-text="Screenshot of deployment slots, production and testing.":::
 
 
 ## Deployment slot advantages

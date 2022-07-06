@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.exercise-synapse-link-cosmos-db
+title: Exercise - Implement Azure Synapse Link for Cosmos DB
+metadata:
+  title: Exercise - Implement Azure Synapse Link for Cosmos DB
+  description: "Exercise - Implement Azure Synapse Link for Cosmos DB"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 35
+content: |
+  [!include[](includes/7-exercise-synapse-link-cosmos-db.md)]

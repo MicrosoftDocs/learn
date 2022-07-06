@@ -113,7 +113,7 @@ cat ~/clouddrive/aspnet-learn/create-application-gateway-exports.txt
 Replace `{appgw-public-ip}` with the value of the variable `ESHOP_APPGATEWAYPUBLICIP` in the following command:
 
 ```bash
-deploy/k8s/deploy-application.sh --registry eshopdev --hostip {appgw-public-ip}
+deploy/k8s/deploy-application.sh --registry eshoplearn --hostip {appgw-public-ip}
 ```
 
 :::image type="content" source="../media/eshop-app-gateway-public-ip.png" alt-text="Screenshot that shows the gateway public I P address for the fetch app." lightbox="../media/eshop-app-gateway-public-ip.png":::

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-delta-lake-azure-synapse-analytics.understand-delta-lake
+title: Understand Delta Lake
+metadata:
+  title: Understand Delta Lake
+  description: "Understand Delta Lake"
+  ms.date: 06/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-delta-lake.md)]

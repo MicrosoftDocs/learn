@@ -41,5 +41,5 @@ During this lab, you'll complete the following exercises:
  -  Exercise 0: Configure the lab prerequisites.
  -  Exercise 1: Implement Security and Compliance in an Azure Pipeline using WhiteSource Bolt.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M10_Implement_Security_and_Compliance_in_an_Azure_DevOps_pipeline.html)
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
+](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M07_L15_Implement_Security_and_Compliance_in_an_Azure_Pipeline.html)

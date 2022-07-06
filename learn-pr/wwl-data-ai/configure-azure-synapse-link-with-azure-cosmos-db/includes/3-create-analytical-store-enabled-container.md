@@ -1,170 +1,74 @@
-Before we can query our data using Azure Synapse Analytics using Azure Synapse Link, we must first create the container that is going to hold our data at the same time enabling it to have an analytical store.
+After enabling Azure Synapse Link in a Cosmos DB account, you can create or update a container with support for an analytical store.
 
-> [!Note]
-> Today enabling analytical store is only available at the time of creating a container and cannot be completely disabled without deleting the container. Setting the default analytical store TTL value to 0 or null effectively disables the analytical store by no longer synchronize new items to it from the transactional store and deleting items already synchronized from the analytical store.
+An analytical store is a column-based store within the same container as a row-based operational store. An *auto-sync* process synchronizes changes in the operational store to the analytical store; from where it can be queried without incurring processing overhead in the operational store.
 
-## Create a new Azure Cosmos DB Core (SQL) API container
+## Analytical store schema types
 
-To create a new Azure Cosmos DB Core (SQL) API container with analytical store enabled, follow the following steps:
+As the data from the operational store is synchronized to the analytical store, the schema is updated dynamically to reflect the structure of the documents being synchronized. The specific behavior of this dynamic schema maintenance depends on the analytical store schema type configured for the Cosmos DB account. Two types of schema representation are supported:
 
-1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
+- **Well-defined**: The default schema type for a core (SQL) API account.
+- **Full fidelity**: The default (and only supported) schema type for a MongoDB API account.
 
-2.	Navigate to your previously created Azure Cosmos DB Core (SQL) API account
+The analytical store receives JSON data from the operational store and organizes it into a column-based structure. In a well-defined schema, the first non-null occurrence of a JSON field determines the data type for that field. Subsequent occurrences of the field that aren't compatible with the assigned data type aren't ingested into the analytical store.
 
-3.	Select **Data Explorer** on the left-hand menu **(3)**.
+For example, consider the following two JSON documents:
 
-4.	Click the **New Container** button at the top of screen. 
- 
-    [![Selecting a new container in Data Explorer](../media/select-new-container.png)](../media/select-new-container.png#lightbox)
+```json
+{"productID": 123, "productName": "Widget"}
+{"productID": "124", "productName": "Wotsit"}
+```
 
-    An Add Container dialog will appear.
- 
-    [![The add container dialog box in Data Explorer](../media/add-new-container.png)](../media/add-new-container.png#lightbox)
+The first document determines that the **productID** field is a numeric (integer) value. When the second document is encountered, its **productID** field has a string value, and so isn't imported into the analytical store. The document and the rest of its field is imported, but the incompatible field is dropped. The following columns represent the data in the analytical store:
 
-5.	Enter the **new databases** and **container** information:
-    a.	For the **Database ID** we will type in the name **AdventureWorks (5)**
-    b.	Ensure that you unselect the Provision database throughput checkbox **(6)**
-    c.	For the **container ID**, type **Sales**.
-    d.	Enter **/customerId** for the **Partition Key** **(8)**
+|productID | productName |
+|--|--|
+| 123 | Widget |
+| | Wotsit |
 
-6.	Choose the throughput for your container by selecting **Autoscale** and **specify a Max RU/s of 4000 (9)**
- 
-    [![Creating an analytical store in the add container dialog box.](../media/add-analytical-store.png)](../media/add-analytical-store.png#lightbox)
+In a full fidelity schema, the data type is appended to each instance of the field, with new columns created as necessary; enabling the analytical store to contain multiple occurrences of a field, each with a different data type, as shown in the following table:
 
-7.	Scroll down and enable analytical store by ensuring that the **Analytical store** on radio button is selected **(A)**
+|productID.int32 | productName.string | productID.string |
+|--|--|--|
+| 123 | Widget | |
+| | Wotsit | 124 |
 
-8.	Click **OK** to create the container.
+> [!NOTE]
+> For more information, see [What is Azure Cosmos DB analytical store?](/azure/cosmos-db/analytical-store-introduction).
 
-    Whilst this module assumes you understand how to appropriately configure an Azure Cosmos DB container to maximize performance and minimize cost lets briefly go over some of the thinking used to choose the values we dID:
-    
-    - We choose a partition key property of customerID as this attribute is used in many of the queries used to retrieve customer and sales order information in our application, it has relatively high cardinality (number of unique values) and thus will allow our container to scale as the number of customers and sales orders grows.
+## Enabling analytical store support in a container
 
-    - We chose to use autoscale provisioned throughput and set the maximum value to 4000 RU/s as we are just starting with our application and don’t expect massive query volumes initial. A max value 4000 RU/s will enable the container to automatically scale between this value all the way down to 10% of this max value (400 RU/s) when not needed. This should be plenty throughput for what we are going to do today. 
+You can enable analytical store support when creating a new container or for an existing container. To enable analytical store support, you can use the Azure portal, or you can use the Azure CLI or Azure PowerShell from a command line or in a script.
 
-## Load sample data into the Azure Cosmos DB Core (SQL) API container
+### Using the Azure portal
 
-Perform the following steps to load a couple of sample items into the newly created container:
+To enable analytical store support when creating a new container in the Azure portal, select the **On** option for **Analytical Store**, as shown here:
 
-1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
+![Screenshot showing the Analytical Store option when creating a new container in the Azure portal.](../media/new-container.png)
 
-2.	Navigate to your previously created Azure Cosmos DB Core (SQL) API account
+Alternatively, you can enable analytical store support for an existing container in the **Azure Synapse Link** page in the **Integrations** section of the page for your Cosmos DB account, as shown here:
 
-3.	Select **Data Explorer** in the left-hand menu **(3)**
+![Screenshot showing the Azure Synapse Link page in the Azure portal, with an existing container selected and the Enable Synapse Link on your container button enabled.](../media/existing-container.png)
 
-4.	Navigate to the **items folder** with the Sale container we just created by:
-    a.	Expanding AventureWorks database **(4)**
-    b.	Expanding the Sale Container **(5)** 
-    c.	Clicking on the **Items** folder **(6)**
+### Using the Azure CLI
 
-    You will see no item listed in the items list **(7)**; the container is empty.
+To use the Azure CLI to enable analytical store support in a core (SQL) API container, run the `az cosmosdb sql container create` command (to create a new container) or `az cosmosdb sql container update` command (to configure an existing container) with the `--analytical-storage-ttl` parameter, assigning a retention time for analytical data. Specifying an `-analytical-storage-ttl` parameter of **-1** enables permanent retention of analytical data. For example, the following command creates a new container named **my-container** with analytical store support.
 
-5.	Now create a new customer profile item by:
-    a.	Clicking the **New Item** button on the top ribbon **(7)**
-    b.	Enter customer profile JSON in the **edit pane (8)**
-    c.	Click the **Save** button on the ribbon **(9)** to save the item.
- 
-    [![Creating a customer profile.](../media/create-customer-profile.png)](../media/create-customer-profile.png#lightbox)
+```
+az cosmosdb sql container create --resource-group my-rg --account-name my-cosmos-db --database-name my-db --name my-container --partition-key-path "/productID" --analytical-storage-ttl -1
+```
 
-    You will now see a new row in the items list (A),and if you click on this row in the items list an updated version the item will appear in the items pane, that includes some additional item meta data the service automatically adds and maintains within the item body when an item is added or updated (B) 
+For a MongoDB API account, use the `az cosmosdb mongodb collection create` or `az cosmosdb mongodb collection update` command with the `--analytical-storage-ttl` parameter.
 
-6.	Now create a new sales order item for our previously added customer by:
-    a.	Clicking the New Item button on the top ribbon **(C)**
-    b.	Copy the customer sales order JSON from below and past it in the edit pane **(D)**
-    c.	Click the Same button on the ribbon **(9)** to save the item.
+### Using Azure PowerShell
 
-    [![Creating a new sales order item.](../media/create-new-sales-order-item.png)](../media/create-new-sales-order-item.png#lightbox)
+To use Azure PowerShell to enable analytical store support in a core (SQL) API container, run the `New-AzCosmosDBSqlContainer` cmdlet (to create a new container) or `Update-AzCosmosDBSqlContainer` cmdlet (to configure an existing container) with the `-AnalyticalStorageTtl` parameter, assigning a retention time for analytical data. Specifying an `-AnalyticalStorageTtl` parameter of **-1** enables permanent retention of analytical data. For example, the following command creates a new container named **my-container** with analytical store support.
 
-    And you will now see a second document in the Items list **(F)**
+```
+New-AzCosmosDBSqlContainer -ResourceGroupName "my-rg" -AccountName "my-cosmos-db" -DatabaseName "my-db" -Name "my-container" -PartitionKeyKind "hash" -PartitionKeyPath "/productID" -AnalyticalStorageTtl -1
+```
 
-    [![Viewing a second document in the items list.](../media/view-second-document.png)](../media/view-second-document.png#lightbox)
+For a MongoDB API account, use the `New-AzCosmosDBMongoDBCollection` or `Update-AzCosmosDBMongoDBCollection` cmdlet with the `-AnalyticalStorageTtl` parameter.
 
-7.	Let run a quick query against this data to retrieve customer profile and sales order information for a specific customer, this is typical of the queries our application runs:
-    a.	Click the **New SQL Query** icon **(F)**
-    b.	Enter the query into the query window **(G)**
-    c.	Click the **Execute** button **(H)**
+### Considerations for enabling analytical store support
 
-    You will see the results immediately returned in the results pain including the content of both items we previously created (I)
-
-    [![Running a query.](../media/run-query.png)](../media/run-query.png#lightbox)
-
-## Create a new Azure Cosmos DB API for MongoDB container
-
-To create a new Azure Cosmos DB API for MongoDB container with analytical store enabled by executing the following steps, in a manner similar to what we recently dID for the SQL API
-
-1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
-
-2.	Navigate to your previously created Azure Cosmos DB API for MongoDB account
-
-    [![Add a collection and database.](../media/add-collection.png)](../media/add-collection.png#lightbox)
-
-3.	Select **Data Explorer** on the left-hand menu (1).
-
-4.	Click the **New Container** button at the top of screen (2). 
-
-    An Add Container dialog will appear.
-
-5.	Enter the new databases and container information:
-    a.	For the **Database ID**, type in the name AdventureWorks **(3)**
-    b.	Ensure that use unselect the **Provision database throughput** checkbox **(4)**
-    c.	For the **container ID**, type Sales **(4)**
-    d.	Select **unlimited** for the storage capacity **(6)**, this is an option that we don’t have on creating a SQL API container since all SQL API containers are now unlimited.
-    e.	Type **customerId** for the **Shard Key (7)**, this is the MongoDB API equivalent of the SQL API partition key.
-
-6.	Choose the throughput for your container by selecting **Autoscale** and specify a Max RU/s of 4000 **(8)**
-
-    [![Enable an analytics store.](../media/enable-analytics-store.png)](../media/enable-analytics-store.png#lightbox)
-
-7.	Scroll down and enable analytical store by ensuring that the **Analytical store** on radio button is selected **(A)**
-
-8.	Click **OK** to create the container **(B)**. 
-
-## Load sample data into the Azure Cosmos DB API for MongoDB container
-
-Perform the following steps to load a couple of sample items into the newly created MonoDB API container:
-
-1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
-
-2.	Navigate to your previously created Azure Cosmos DB API for MongoDB account
- 
-    [![creating a customer profile in MongoDB.](../media/create-customer-profile-mongodb.png)](../media/create-customer-profile-mongodb.png#lightbox)
-
-3.	Select **Data Explorer** in the left-hand menu **(1)**
-
-4.	Navigate to the items folder with the Sale container we just created by:
-    a.	Expanding AventureWorks database **(2)**
-    b.	Expanding the Sale Collection **(3)** 
-    c.	Clicking on the Documents folder **(4)**
-
-    You will see no Document _IDs listed in the documents list **(5)**; the collection is empty.
-
-5.	Now create a new customer profile item by:
-    a.	Clicking the New Document button on the top ribbon **(6)**
-    b.	Enter code into the edit pane **(7)**
-    c.	Click the **Save** button on the ribbon **(8)** to save the item.
-
-    You will now see a new row in the documents list. 
-
-6.	Now create a new sales order document for our previously added customer by:
-    a.	Click the **New Document** button on the top ribbon **(6)**
-    b.	Enter code into the edit pane. 
-    c.	Click the **Save** button on the ribbon (8) to save the item.
-
-    And you will now see a second document in the document list.
-
-7.	Let’s run a quick query against this data to retrieve customer profile and sales order information for a specific customer, this is typical of the queries our application runs:
- 
-    [![run a query to retrieve data.](../media/query-to-retrieve-data.png)](../media/query-to-retrieve-data.png#lightbox)
-
-    a.	Click the New Shell **(A)**
- 
-    [![Opening a mongo client shell within the portal..](../media/open-mongo-client-shell.png)](../media/open-mongo-client-shell.png#lightbox)
-
-    This will open a mongo client shell within the portal.
-
-    b.	Type “show collections” and press enter **(B)**
-    
-    This will return the Sales collection as the only collection in our database.
-    
-    c.	Type ```cmd db.Sales.find({“customerID” : “54AB87A7-BDB9-4FAE-A668-AA9F43E26628”``` and press enter **(C)**
-
-    This will return our results immediately including the content of both documents we just created **(D)**
+Analytical store support can't be disabled without deleting the container. Setting the analytical store TTL value to 0 or *null* effectively disables the analytical store by no longer synchronizing new items to it from the operational store and deleting items already synchronized from the analytical store. After setting this value to 0, you can't re-enable analytical store support in the container.

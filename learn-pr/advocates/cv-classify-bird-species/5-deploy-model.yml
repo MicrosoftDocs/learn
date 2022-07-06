@@ -4,9 +4,9 @@ title: Exercise - Deploy the model and consume the endpoint
 metadata:
   title: Exercise - Deploy the model and consume the endpoint
   description: Deploy the model and consume the endpoint
-  ms.date: 01/19/2021
-  author: PatrickFarley
-  ms.author: pafarley  
+  ms.date: 06/07/2022
+  author: cassiebreviu
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, team=cloud_advocates

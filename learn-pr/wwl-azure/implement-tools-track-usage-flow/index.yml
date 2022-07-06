@@ -3,7 +3,7 @@ uid: learn.wwl.implement-tools-to-track-usage-flow
 metadata:
   title: Implement tools to track usage and flow
   description: "Implement tools to track usage and flow"
-  ms.date: 03/18/2022
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -51,6 +51,7 @@ units:
 - learn.wwl.implement-tools-to-track-usage-flow.explore-application-insights
 - learn.wwl.implement-tools-to-track-usage-flow.implement-application-insights
 - learn.wwl.implement-tools-to-track-usage-flow.exercise-add-application-insights-asp-net-core-application
+- learn.wwl.implement-tools-to-track-usage-flow.monitor-application-performance-app-insights
 - learn.wwl.implement-tools-to-track-usage-flow.knowledge-check
 - learn.wwl.implement-tools-to-track-usage-flow.summary
 badge:

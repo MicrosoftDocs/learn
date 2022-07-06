@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-microsoft-defender-for-endpoints-environment.understand-operating-systems-compatibility-features
+title: Understand operating systems compatibility and features
+metadata:
+  title: Understand operating systems compatibility and features
+  description: "Understand operating systems compatibility and features"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-operating-systems-compatibility-features.md)]

@@ -116,7 +116,7 @@ You've been asked to add some further features to this page. Before you start, y
     </ContentPage>
     ```
 
-1. Add a child `Grid` the `VerticalStackLayout`. This `Grid` should have three columns; the first and third are sized automatically, while the second has a width of 30:
+1. Add a child `Grid` to the `VerticalStackLayout`. This `Grid` should have three columns; the first and third are sized automatically, while the second has a width of 30:
 
     ```xml
     <ContentPage ...>
@@ -137,17 +137,15 @@ You've been asked to add some further features to this page. Before you start, y
     ```xml
     <ContentPage ...>
         <VerticalStackLayout ...>
-            <Grid ...>
-                <Label .../>
+            <Label .../>
     
-                <Editor .../>
+            <Editor .../>
 
-                <Grid ...>                    
-                    <Button Grid.Column="0"
-                            Text="Save" 
-                            WidthRequest="100"
-                            Clicked="OnSaveButtonClicked" />
-                </Grid>
+            <Grid ...>                    
+                <Button Grid.Column="0"
+                        Text="Save" 
+                        WidthRequest="100"
+                        Clicked="OnSaveButtonClicked" />
             </Grid>
         </VerticalStackLayout>
     </ContentPage>
@@ -158,19 +156,17 @@ You've been asked to add some further features to this page. Before you start, y
     ```xml
     <ContentPage ...>
         <VerticalStackLayout ...>
-            <Grid ...>
-                <Label .../>
+            <Label .../>
     
-                <Editor .../>
+            <Editor .../>
 
-                <Grid ...>                    
-                    <Button ... />
+            <Grid ...>                    
+                <Button ... />
 
-                    <Button Grid.Column="2"
-                            Text="Delete" 
-                            WidthRequest="100"
-                            Clicked="OnDeleteButtonClicked" />
-                </Grid>
+                <Button Grid.Column="2"
+                        Text="Delete" 
+                         WidthRequest="100"
+                        Clicked="OnDeleteButtonClicked" />
             </Grid>
         </VerticalStackLayout>
     </ContentPage>

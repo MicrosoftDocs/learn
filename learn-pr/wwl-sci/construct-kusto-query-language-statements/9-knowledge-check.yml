@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/27/2022
+  ms.date: 06/20/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: "What does the search operator do?"
     choices:
-    - content: "Searches across tables and is not column-specific."
+    - content: "Searches across tables and isn't column-specific."
       isCorrect: true
       explanation: "Correct. The search will search across all columns in tables specified"
     - content: "Searches only data in the last hour."

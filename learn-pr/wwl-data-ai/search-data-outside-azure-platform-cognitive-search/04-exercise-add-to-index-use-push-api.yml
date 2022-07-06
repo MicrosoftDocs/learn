@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.exercise-add-to-index-using-push-api
+title: 'Exercise: Add to an index using the push API'
+metadata:
+  title: 'Exercise: Add to an index using the push API'
+  description: "Exercise: Add to an index using the push API"
+  ms.date: 07/05/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/04-exercise-add-to-index-use-push-api.md)]

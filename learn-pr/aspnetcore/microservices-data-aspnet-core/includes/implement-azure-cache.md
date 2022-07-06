@@ -106,6 +106,12 @@ In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value 
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
+Save your changes. And then,
+
+In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
+
+:::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
+
 Save your changes.
 
 > [!NOTE]
@@ -153,6 +159,20 @@ To deploy the updated *:::no-loc text="basket":::* service, follow these steps:
     NAME                              READY  STATUS              RESTARTS   AGE    
     basket-4365c9c7fc-rwacb           0/1    Terminating          0          1s
     basket-544bc9c7fc-wtznp           0/1    ContainerCreating    0          1s
+    ```
+
+2. Run the following script to deploy the updated *:::no-loc text="Signalr":::* service to AKS:
+    
+    ```bash
+    deploy/k8s/deploy-application.sh --charts signalr --registry eshoplearn
+    ```
+
+    The preceding script uses Helm to deploy the *:::no-loc text="signalr":::* Docker image from your eshoplearn docker registry to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of signalr. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+
+    ```console
+    NAME                              READY  STATUS              RESTARTS   AGE    
+    signalr-4365c9c745-rwacb           0/1    Terminating          0          1s
+    signalr-544bc9cdfg-wtznp           0/1    ContainerCreating    0          1s
     ```
 
 When all the health checks return to a healthy status, sign out of the app, then refresh your browser. Test the application as before to validate your changes were successful.

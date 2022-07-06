@@ -2,11 +2,11 @@ In this unit, you'll send and receive messages to the **visits** service.
 
 Below is the activity flow.
 
- -  The **message-emulator** sends a `PetClinicMessageRequest`to the **visits-requests** queue.
+ -  The **message-emulator** sends a `PetClinicMessageRequest` to the **visits-requests** queue.
  -  The **visits** service listens to the queue every time a `VisitRequest` arrives and creates a new `visit` for the pet ID inside the message.
  -  The **visits** service sends back a `VisitResponse`as a confirmation to the **visits-confirmations** queue, which is the queue the **message-emulator** is listening to.
 
-1.  In the **spring-petclinic-visits-service**, create a new *src/main/java/org/springframework/samples/petclinic/visits/entities* folder and a`VisitRequest.java`class with the code displayed below.
+1.  In the **spring-petclinic-visits-service**, create a new *s**rc/main/java/org/springframework/samples/petclinic/visits/entities*** folder and a`VisitRequest.java` class with the code displayed below.
     
     ```
     package org.springframework.samples.petclinic.visits.entities;
@@ -50,7 +50,7 @@ Below is the activity flow.
     }
     ```
 
-2.  In the *src/main/java/org/springframework/samples/petclinic/visits/entities* directory, add a `VisitResponse.java` class using the code below.
+2.  In the ***src/main/java/org/springframework/samples/petclinic/visits/entities*** directory, add a `VisitResponse.java` class using the code below.
     
     ```
     
@@ -94,9 +94,10 @@ Below is the activity flow.
     }
     ```
 
-3.  In the **spring-petclinic-visits-service**, create a new *src/main/java/org/springframework/samples/petclinic/visits/config* directory and add a `MessagingConfig.java` class using the code listed below.
+3.  In the **spring-petclinic-visits-service**, create a new***src/main/java/org/springframework/samples/petclinic/visits/config*** directory and add a `MessagingConfig.java` class using the code listed below.
     
     ```
+    package org.springframework.samples.petclinic.visits.config;
     
     import java.util.HashMap;
     import java.util.Map;
@@ -131,9 +132,26 @@ Below is the activity flow.
     }
     ```
 
-4.  In the **spring-petclinic-visits-service**, create a new *src/main/java/org/springframework/samples/petclinic/visits/service* directory and add a `VisitsReceiver.java_ class` using the code seen below.
+4.  In the **spring-petclinic-visits-service/src/main/java/org/springframework/samples/petclinic/visits/config** subdirectory, add another `QueueConfig.java` class file containing the following code:
+    
+    ```java
+    package org.springframework.samples.petclinic.visits.config;
+    
+    import org.springframework.beans.factory.annotation.Value;
+    
+    public class QueueConfig {
+        @Value("${spring.jms.queue.visits-requests:visits-requests}")
+        private String visitsRequestsQueue;
+        public String getVisitsRequestsQueue() {
+            return visitsRequestsQueue;
+        }
+    }
+    ```
+
+5.  In the **spring-petclinic-visits-service**, create a new ***src/main/java/org/springframework/samples/petclinic/visits/service*** directory and add a `VisitsReceiver.java` class using the code seen below.
     
     ```
+    package org.springframework.samples.petclinic.visits.service;
     
     import java.util.Date;
     
@@ -179,16 +197,16 @@ Below is the activity flow.
     
     The procedure below sends a confirmation message to the **visits-confirmations** queue.
 
-5.  Rebuild your application.
+6.  Rebuild your application.
     
     ```azurecli
     mvn clean package -DskipTests
     ```
 
-6.  Redeploy the **visits** microservice.
+7.  Redeploy the **visits** microservice.
     
     ```azurecli
-    az spring-cloud app deploy
+    az spring-cloud app deploy \
         --service $SPRING_CLOUD_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
@@ -197,4 +215,9 @@ Below is the activity flow.
         --env SPRING_PROFILES_ACTIVE=mysql
     ```
 
-7.  You can now peek the queue. You should see messages being received by the **visits** microservice. Use the **message-emulator** microservice to view details on **visits** being created.
+8.  To validate the resulting functionality, in the Azure portal, navigate back to the page of the **visits-requests** queue of the Service Bus namespace you deployed earlier.
+9.  On the **Overview** page of the **visits-requests** queue, verify that there are no active messages.
+10. In the web browser window, open another tab and navigate to the public endpoint of the **api-gateway** service.
+11. On the **Welcome to Petclinic** page, select **Owners** and select **All**.
+12. In the list of owners, select the first entry (**George Franklin**).
+13. On the **Owner Information** page, in the **Pets and Visits** section, verify the presence of an entry representing the message you submitted earlier in this lab.

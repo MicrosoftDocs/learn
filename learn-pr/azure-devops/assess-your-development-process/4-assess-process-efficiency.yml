@@ -4,7 +4,8 @@ title: Assess process efficiency with value stream maps
 metadata:
   title: Assess process efficiency with value stream maps
   description: See how the team performs against a value-stream-mapping exercise.
-  ms.date: 05/20/2021
+  ms.date: 06/14/2022
+  ms.custom: devdivchpfy22
   author: kathrynee
   ms.author: kaelli
   ms.topic: interactive-tutorial
@@ -32,7 +33,7 @@ quiz:
     - content: "Waste is time between tasks."
       isCorrect: false
       explanation: "Waste is time spent on tasks that don't have direct customer value. For example, setting up source control. It's an important task, but it doesn't have direct customer value."
-    - content: "Waste means we are having to rewrite code and throw away the old code."
+    - content: "Waste means we're having to rewrite code and throw away the old code."
       isCorrect: false
       explanation: "Waste is time spent on tasks that don't have direct customer value. For example, setting up source control. It's an important task, but it doesn't have direct customer value."
     - content: "Waste is time spent on tasks that don't have direct customer value."

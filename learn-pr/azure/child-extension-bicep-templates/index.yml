@@ -5,8 +5,8 @@ metadata:
   title: Deploy child and extension resources by using Bicep
   description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
   ms.date: 01/23/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy child and extension resources by using Bicep

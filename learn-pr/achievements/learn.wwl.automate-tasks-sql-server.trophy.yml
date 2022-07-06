@@ -1,5 +1,7 @@
 ### YamlMime:AchievementDetail
 achievementUid: learn.wwl.automate-tasks-sql-server.trophy
 metadata:
-  title: 'Microsoft Trophy: Automate tasks in SQL Server was issued by Microsoft'
+  title: >-
+    Microsoft Trophy: Automate database tasks for Azure SQL was issued by
+    Microsoft
 socialImageUrl: /learn/achievements/automate-tasks-in-sql-server-social.png

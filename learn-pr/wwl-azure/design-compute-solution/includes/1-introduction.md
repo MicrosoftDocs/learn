@@ -2,8 +2,7 @@
 
 Let’s suppose you work as an Architect at Tailwind Traders. Tailwind Traders is a company that specializes in hardware manufacturing with online sales. Your management team tells you several development projects need to migrate to the cloud. There are also several new projects that should be optimized for the cloud. 
 
-:::image type="content" source="../media/tailwind-traders-logo.png" alt-text="Tailwind Traders logo.":::
-
+:::image type="content" source="../media/tailwind-traders-logo.png" alt-text="The Tailwind Traders logo for the course module.":::
 
 You know the department's budget is tight. It will be important to select the right compute technology for each project. Ideally, you would like to create compute resources, configure the resources, and pay for only what you use.
 

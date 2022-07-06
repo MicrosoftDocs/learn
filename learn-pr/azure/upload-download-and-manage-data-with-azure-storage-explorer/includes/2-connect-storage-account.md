@@ -56,7 +56,7 @@ All locally emulated storage connection types appear in **Local & Attached** > *
 
 There are several ways to connect your Storage Explorer application to your Azure storage accounts.
 
-You need two permissions to access your Azure storage account: management and data. However, you can use Storage Explorer with only the data-layer permission. The data layer requires the user to be granted, at a minimum, a read data role. The nature of the read/write role should be specific to the type of data stored in the storage account. The data layer is used to access blobs, containers, and other data resources. 
+You need two permissions to access your Azure storage account: management and data. However, you can use Storage Explorer with only the data-layer permission. The data layer requires the user to be granted, at a minimum, a read data role. The nature of the read/write role should be specific to the type of data stored in the storage account. The data layer is used to access blobs, containers, and other data resources.
 
 The management role grants access to see lists of your various storage accounts, containers, and service endpoints.
 
@@ -94,15 +94,15 @@ Any connections that you create through this approach will appear in the resourc
 
 A shared access signature (SAS) URI is an unambiguous identifier that's used to access your Azure Storage resources.
 
-With this connection method, you'll use a SAS URI for the required storage account. You'll need a SAS URI whether you want to use a file share, table, queue, or blob container. You can get a SAS URI either from the Azure portal or from Storage Explorer.
+With this connection method, you'll use a SAS URI for the required storage account. You'll need a SAS URI whether you want to use a file share, table, queue, or blob container. You can get a SAS URI either from the Azure portal or from Storage Explorer. For more information, see [Create an account SAS](/rest/api/storageservices/create-account-sas?redirectedfrom=MSDN).
 
 To add a SAS connection:
 
 1. Open Storage Explorer.
 1. Connect to your Azure storage account.
-1. Select the connection type: **shared access signature (SAS) URI**.
+1. Select the connection type: **shared access signature URI (SAS)**.
 1. Provide a meaningful name for the connection.
-1. When you're prompted, provide the SAS URI.
+1. Provide the SAS URI.
 1. Review and verify the connection details, and then select **Connect**.
 
 When you've added a connection, it appears in the resource tree as a new node. You'll find the connection node in this branch: **Local & attached** > **Storage Accounts** > **Attached Container** > **Service**.
