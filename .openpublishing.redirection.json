@@ -14539,6 +14539,41 @@
       "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
       "redirect_document_id": false    
-    }
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/2-prepare-your-application-for-publishing.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/3-preparing-for-release.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/4-link-your-application.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/5-preserve-critical-code.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/6-publish-your-application.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    }    
   ]
 }
