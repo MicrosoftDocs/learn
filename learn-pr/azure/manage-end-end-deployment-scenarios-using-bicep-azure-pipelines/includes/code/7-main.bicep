@@ -47,6 +47,11 @@ var environmentConfigurationMap = {
         capacity: 1
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_LRS'
+      }
+    }
     sqlDatabase: {
       sku: {
         name: 'Standard'
@@ -58,6 +63,11 @@ var environmentConfigurationMap = {
     appServicePlan: {
       sku: {
         name: 'F1'
+      }
+    }
+    storageAccount: {
+      sku: {
+        name: 'Standard_GRS'
       }
     }
     sqlDatabase: {
@@ -135,9 +145,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   name: storageAccountName
   location: location
   kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
+  sku: environmentConfigurationMap[environmentType].storageAccount.sku
 
   resource blobService 'blobServices' existing = {
     name: 'default'
