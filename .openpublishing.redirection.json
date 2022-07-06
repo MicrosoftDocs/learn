@@ -14649,6 +14649,41 @@
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/7-summary",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/2-apply-an-effect-to-an-element.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/3-create-a-platform-effect.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/4-exercise-create-an-effect.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/5-configure-an-effect-with-attached-properties.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/6-exercise-add-configurable-properties-to-an-effect.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
+      "redirect_document_id": false    
     }    
   ]
 }
