@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-java-application-migration-azure-spring-apps.run-azure-services-for-host-java-applications
+title: Run Azure services for hosting Java applications
+metadata:
+  title: Run Azure services for hosting Java applications
+  description: "Run Azure services for hosting Java applications"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-run-azure-services-for-host-java-applications.md)]

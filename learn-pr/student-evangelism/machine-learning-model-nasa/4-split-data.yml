@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Split data into training and testing datasets
   description: Learn how to call functions to split data into two groups.
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

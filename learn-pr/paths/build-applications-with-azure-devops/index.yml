@@ -52,6 +52,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.implement-code-workflow

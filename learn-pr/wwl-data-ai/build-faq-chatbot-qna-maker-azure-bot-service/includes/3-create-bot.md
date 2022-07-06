@@ -81,15 +81,15 @@ The knowledge base provides a back-end service that client applications can use 
 3. In the Azure portal, create a Web App Bot with the following settings (most of these will be pre-populated for you):
     - **Bot handle**: *A unique name for your bot*
     - **Subscription**: *Your Azure subscription*
-    - **Resource group**: *The resource group containing your QnA Maker resource*
-    - **Location**: *The same location as your QnA Maker service*.
-    - **Pricing tier**: F0
+    - **Resource group**: *The resource group containing your Language resource*
+    - **Location**: *The same location as your Language service*.
+    - **Pricing tier**: Free (F0)
     - **App name**: *Same as the **Bot handle** with **.azurewebsites.net** appended automatically*
     - **SDK language**: *Choose either C# or Node.js*
-    - **QnA Auth Key**: *This should automatically be set to the authentication key for your knowledge base*
-    - **App service plan/location**: *This should be set automatically to a suitable plan and location*
+    - **Language Resource Key**: *automatically generated, if you do not see it, you need to start by creating a question answering project in the Language Studio* 
+    - **App service plan/Location**: *Select the arrow to create a plan. Then create a unique App service plan name and choose a suitable location*
     - **Application Insights**: Off
-    - **Microsoft App ID and password**: Auto create App ID and password.
+    - **Microsoft App ID and password**: *Auto create App ID and password*
 4. Wait for your bot to be created (the notification icon at the top right, which looks like a bell, will be animated while you wait). Then in the notification that deployment has completed, click **Go to resource** (or alternatively, on the home page, click **Resource groups**, open the resource group where you created the web app bot, and click it.)
 5. In the left-hand pane of your bot look for **Settings**, click on **Test in Web Chat**, and wait until the bot displays the message **Hello and welcome!** (it may take a few seconds to initialize).
 6. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting *I need to cancel my hotel*.
@@ -98,7 +98,7 @@ Experiment with the bot. You'll probably find that it can answer questions from 
 
 ## Learn more
 
-- To learn more about the QnA Maker service, view [the custom question answering documentation](/azure/cognitive-services/qnamaker/custom-question-answering).
+- To learn more about the Question Answering service, view [the documentation](/azure/cognitive-services/language-service/question-answering/overview).
 - To learn more about the Microsoft Bot Service, view [the Azure Bot Service page](https://azure.microsoft.com/services/bot-service/).
 
 

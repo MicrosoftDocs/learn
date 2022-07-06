@@ -33,6 +33,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- infrastructure
 units:
 - learn.azure.intro-to-azure-hybrid-services.1-introduction
 - learn.azure.intro-to-azure-hybrid-services.2-hybrid-cloud-overview

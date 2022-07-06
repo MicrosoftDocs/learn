@@ -24,6 +24,8 @@ roles:
 products: 
 - azure
 - azure-sql-database
+subjects:
+- data-analytics
 modules:
 - learn.azure-sql-intro
 - learn.azure-sql-deploy-configure

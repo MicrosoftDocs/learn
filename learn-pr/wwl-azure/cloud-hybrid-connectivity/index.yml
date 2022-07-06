@@ -2,8 +2,8 @@
 uid: learn.wwl.cloud-hybrid-connectivity
 metadata:
   title: Troubleshoot cloud and hybrid connectivity in Microsoft Azure
-  description: "Troubleshooting cloud and hybrid connectivity includes Microsoft ExpressRoute, Azure virtual networks, and Azure Virtual WAN. This module enables you to manage and troubleshoot different network configurations to support your organization’s needs."
-  ms.date: 03/31/2022
+  description: "Troubleshooting cloud and hybrid connectivity includes Microsoft ExpressRoute, Azure virtual networks, and Azure Virtual WAN. This module enables you to manage and troubleshoot different network configurations to support your organization’s needs. AZ720 AZ-720 az-720 networking"
+  ms.date: 06/15/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -22,13 +22,15 @@ prerequisites: |
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
   - Know how to run Cloud Shell to run commands
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/connectivity-cloud-hybrid.svg
 levels:
 - intermediate
 roles:
 - support-engineer
 products:
 - azure-expressroute
+subjects:
+- networking
 units:
 - learn.wwl.cloud-hybrid-connectivity.introduction
 - learn.wwl.cloud-hybrid-connectivity.setup-troubleshooting-environment

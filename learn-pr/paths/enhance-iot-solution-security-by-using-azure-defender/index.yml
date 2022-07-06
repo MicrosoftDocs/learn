@@ -31,6 +31,8 @@ products:
 - azure-iot-sdk
 - azure-portal
 - azure-security-center
+subjects:
+- security
 modules:
 - learn.wwl.examine-security-fundamentals-for-iot
 - learn.wwl.examine-azure-security-center-azure-defender-for-iot

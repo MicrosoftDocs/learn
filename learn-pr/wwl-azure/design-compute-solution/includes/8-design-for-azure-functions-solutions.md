@@ -1,4 +1,4 @@
-:::image type="content" source="../media/select-azure-functions.png" alt-text="Flowchart for selecting Azure function solutions.":::
+:::image type="content" source="../media/select-azure-functions.png" alt-text="Flowchart for selecting Azure function solutions. Alternatives include virtual machines, Azure Batch, and Azure App Service.":::
 
 
 
@@ -14,7 +14,7 @@
 
 Azure Functions are best when handling specific definable actions triggered by an event. For example, a function could process an API call and then store the processed data in Cosmos DB. Once the data transfer happens, another function could trigger a notification. 
 
-:::image type="content" source="../media/azure-functions-events.png" alt-text="Azure functions handle API calls and output data to notifications hubs.":::
+:::image type="content" source="../media/azure-functions-events.png" alt-text="Diagram of Azure functions with A P I calls and output data to notifications hubs. ":::
 
 
 
@@ -27,11 +27,9 @@ Azure Functions are best when handling specific definable actions triggered by a
 
 - **Know when to use durable functions**. [Durable functions](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) let you write stateful functions. So, behind the scenes, the function manages app state, checkpoints, and restarts. An example application pattern for durable functions is function chaining. Function chaining executes a sequence of functions in a specific order. The output of one function is applied to the input of another function. Do you understand how timeout issues can be overcome with durable functions and smaller function sets?
 
-:::image type="content" source="../media/durable-functions.png" alt-text="Durable functions pass information.":::
+:::image type="content" source="../media/durable-functions.png" alt-text="Diagram of durable functions passing information. There is an API call, the data is stored in Cosmos D B, and the data is processed.":::
 
- 
-
-- **Organize functions for performance and scaling.** Consider how you want to group functions with different load profiles. For example, let’s say you have two functions. One function processes many thousands of queued messages and has low memory requirements. The other function is only called occasionally but has high memory requirements. You might want to deploy separate function apps, so each function gets its own set of resources. Separate resources mean you can independently scale the functions.
+ - **Organize functions for performance and scaling.** Consider how you want to group functions with different load profiles. For example, let’s say you have two functions. One function processes many thousands of queued messages and has low memory requirements. The other function is only called occasionally but has high memory requirements. You might want to deploy separate function apps, so each function gets its own set of resources. Separate resources mean you can independently scale the functions.
 
 - **Write defensive functions.** Design your functions assuming an exception could occur at any time. Downstream services, network outages, or memory limits could cause the function to fail. Plan out how you continue from a failure point. 
 
@@ -40,5 +38,3 @@ Azure Functions are best when handling specific definable actions triggered by a
 > [!TIP]
 > Take a few minutes to read about other [Azure Function best practices](/azure/azure-functions/functions-best-practices).
 
-> [!NOTE]
-> Relativity, an e-discovery company, is using Azure functions to identify and resolve performance issues. Take a few minutes to [read about their successes](https://customers.microsoft.com/story/relativity-partner-professional-services-azure). 

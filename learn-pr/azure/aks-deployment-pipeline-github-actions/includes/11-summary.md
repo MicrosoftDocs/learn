@@ -29,6 +29,14 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Scroll down and select the red **Delete this repository** button. To confirm the deletion, enter the full name of the repository.
 
+1. To delete the PAT created previously, select your profile photo, then click **Settings**.
+
+1. Select **Developer settings**.
+
+1. Select **Personal access tokens**.
+
+1. Select **Delete**. When the pop-up window appears, select **I understand, delete this token**
+
 ## Learn more
 
 To learn more about Azure Kubernetes Service and GitHub Actions, see the following articles and Microsoft Learn modules:

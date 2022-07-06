@@ -276,7 +276,7 @@ ValueError: operands could not be broadcast together with shapes (3,2) (3,)
 
 Ufuncs enable you to avoid using slow Python loops. Broadcasting builds on that.
 
-A common data practice is to *center* an array of data. For example, say we have an array of 10 observations, each of which consists of three values (called features in this context). We might want to center that data so that we have the differences from the mean rather than the raw data itself. Doing so can help us better compare the different values.
+A common data practice is to *center* an array of data. For example, say we have an array of 10 observations, each of which consists of three values (called features in this context). We might want to center that data so we have the differences from the mean rather than the raw data itself. Doing so can help us better compare the different values.
 
 We'll store this data in a 10 x 3 array:
 
@@ -335,7 +335,7 @@ array([[ 0.4683551 ,  0.4451044 , -0.24209541],
        [-0.39920105,  0.04742813, -0.14721234]])
 ```
 
-This method isn't just faster. It's also easier than writing a loop to do this.
+This method isn't just faster, it's also easier than writing a loop to do this.
 
 >[!div class="alert is-tip"]
 >### Takeaway

@@ -1,4 +1,4 @@
-In addition to tables, a relational database can contains other structures that help to optimize data organization, encapsulate programmatic actions, and improve the speed of access. In this unit, you'll learn about three of these structures in more detail: *views*, *stored procedures*, and *indexes*.
+In addition to tables, a relational database can contain other structures that help to optimize data organization, encapsulate programmatic actions, and improve the speed of access. In this unit, you'll learn about three of these structures in more detail: *views*, *stored procedures*, and *indexes*.
 
 ## What is a view?
 
@@ -10,7 +10,7 @@ AS
 SELECT o.OrderNo, o.OrderDate,
        c.FirstName, c.LastName, c.Address, c.City
 FROM Order AS o JOIN Customer AS c
-ON o.CustomerID = c.ID;
+ON o.Customer = c.ID;
 ```
 
 You can query the view and filter the data in much the same way as a table. The following query finds details of orders for customers who live in Seattle:

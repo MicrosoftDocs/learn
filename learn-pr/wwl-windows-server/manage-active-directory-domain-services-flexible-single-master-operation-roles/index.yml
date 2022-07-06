@@ -31,6 +31,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- infrastructure
 units:
 - learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.introduction
 - learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.deploy

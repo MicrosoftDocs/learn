@@ -33,7 +33,9 @@ prerequisites: |
   - Familiarity with OneDrive, SharePoint, and Excel.
   - Power Apps application installed in a mobile device.
   
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.power-apps-tutorial.1-introduction
 - learn.azure.power-apps-tutorial.2-add-data-source-gallery-controls
 - learn.azure.power-apps-tutorial.3-exercise-add-data-source-gallery-controls

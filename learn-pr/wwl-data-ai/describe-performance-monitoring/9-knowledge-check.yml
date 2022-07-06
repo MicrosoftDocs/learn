@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Intelligent Insights options provide SQL Insights?"
+    choices:
+    - content: "Log Analytics"
+      isCorrect: true
+      explanation: "Correct. Storing data in Azure Log Analytics allows you to gain further intelligence on the events in your database."
+    - content: "Azure Storage"
+      isCorrect: false
+      explanation: "Incorrect. Azure storage stores the files as extended events, and they have to be analyzed using Azure SQL."
+    - content: "Event Hubs"
+      isCorrect: false
+      explanation: "Incorrect. Event Hubs allows you to forward events to another consumer, but does not perform analysis."
+  - content: "Which Performance Monitor counter reflects how long SQL Server expects to retain data in memory?"
+    choices:
+    - content: "Page Life Expectancy"
+      isCorrect: true
+      explanation: "Correct. PLE is how long the engine expects a given page to live in memory."
+    - content: "Processor Queue Length"
+      isCorrect: false
+      explanation: "Incorrect. Process queue length is an indication of CPU pressure."
+    - content: "Paging File Usage"
+      isCorrect: false
+      explanation: "Incorrect. Page file usage is an OS metric that indicates memory pressure in the OS."
+  - content: "What tool should you use to see the sizes of your SQL Server databases running in an Azure virtual machine?"
+    choices:
+    - content: "The SQL virtual machine resource provider"
+      isCorrect: true
+      explanation: "Correct. The SQL virtual machine resource provider enhances manageability features for SQL Server running on Azure Virtual Machines."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor does not include data from within the VM resource."
+    - content: "SQL Insights"
+      isCorrect: false
+      explanation: "Incorrect. Intelligent Insights provide performance data, but does not include SQL Server information."
+  - content: "Which extended event target counts how many times each specified event occurs?"
+    choices:
+    - content: "The *etw_classic_sync_target* target"
+      isCorrect: false
+      explanation: "Incorrect. The *etw_classic_sync_target* target operates with Event Tracing for Windows (ETW) to monitor system activity."
+    - content: "The *event_file* target"
+      isCorrect: false
+      explanation: "Incorrect. The *event_file* writes event session output from buffer to a disk file."
+    - content: "The *event_counter* target"
+      isCorrect: true
+      explanation: "Correct. The *event_counter* target counts how many times each specified event occurs."

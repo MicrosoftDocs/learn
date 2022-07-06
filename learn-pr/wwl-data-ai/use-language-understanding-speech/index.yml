@@ -29,6 +29,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-language-understanding
+subjects:
+- natural-language-processing
 units:
 - learn.wwl.use-language-understanding-speech.introduction
 - learn.wwl.use-language-understanding-speech.understand-service-integration

@@ -26,6 +26,8 @@ products:
 - azure-iot-dps
 - azure-iot-hub
 - azure-portal
+subjects:
+- iot
 modules:
 - learn.wwl.introduction-iot-solution-architecture
 - learn.wwl.examine-components-iot-solution

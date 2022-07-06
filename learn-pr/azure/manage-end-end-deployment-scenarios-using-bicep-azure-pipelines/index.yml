@@ -50,6 +50,9 @@ products:
   - azure-resource-manager
   - azure-devops
   - azure-pipelines
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.introduction
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.understand-end-end-deployments

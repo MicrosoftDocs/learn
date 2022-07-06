@@ -8,8 +8,7 @@ metadata:
   ms.date: 07/15/2021
   ms.author: mixie 
   author: microsoftmichelle
-  sandbox: true
-  interactive: bash
+  sandbox: false
   ms.product: learning-azure
   ms.topic: interactive-tutorial
 durationInMinutes: 30

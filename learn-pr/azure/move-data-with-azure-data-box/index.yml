@@ -25,6 +25,8 @@ roles:
 products:
 - azure-storage
 - azure-data-box-family
+subjects:
+- storage
 units:
 - learn.azure.move-data-with-azure-data-box.introduction
 - learn.azure.move-data-with-azure-data-box.what-is-azure-data-box-family

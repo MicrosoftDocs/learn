@@ -46,8 +46,6 @@ You see two files: the project file *QuantumRNG.csproj* and *Program.qs*, which 
 
 ## Define the GenerateRandomBit operation
 
-Compare that with the operation below. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`. To measure a qubit, you use the operation [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true).
-
 To define the full operation:
 
 1. Replace the contents of *Program.qs* with this code:
@@ -60,7 +58,7 @@ To define the full operation:
 
     [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
-    `EntryPoint` tells the Q# compiler to begin executing the program here. In Q#, qubits are allocated through the `use` keyword. When a qubit is allocated, it is always in the `Zero` state. The `H` operation places the qubit in superposition. The `M` operation measures the qubit and returns the measured value (a zero or a one).
+    `EntryPoint` tells the Q# compiler to begin executing the program here. In Q#, qubits are allocated through the `use` keyword. When a qubit is allocated, it is always in the `Zero` state. The `H` operation places the qubit in superposition. To measure a qubit, you use the operation [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true), which returns the measured value (a zero or a one).
 
 ## Run the program
 

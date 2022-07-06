@@ -30,6 +30,9 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- cloud-computing
+- artificial-intelligence
 units:
 - learn.monitor-cognitive-services.introduction
 - learn.monitor-cognitive-services.monitor-cost

@@ -39,7 +39,9 @@ prerequisites: |
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.use-eye-tracking-voice-commands-mrtk.6-1-introduction
 - learn.azure.use-eye-tracking-voice-commands-mrtk.6-2-eye-tracking
 - learn.azure.use-eye-tracking-voice-commands-mrtk.6-3-exercise-eye-tracking

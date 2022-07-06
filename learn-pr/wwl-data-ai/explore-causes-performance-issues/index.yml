@@ -33,6 +33,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- infrastructure
 units:
 - learn.wwl.explore-causes-of-performance-issues.introduction
 - learn.wwl.explore-causes-of-performance-issues.describe-sql-server-query-store

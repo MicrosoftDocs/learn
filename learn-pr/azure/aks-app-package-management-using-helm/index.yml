@@ -22,6 +22,7 @@ prerequisites: |
   - Basic knowledge of creating Kubernetes YAML manifest files
   - Basic knowledge of executing commands using Kubectl
 iconUrl: /learn/achievements/app-package-management-using-helm.svg
+hidden: true
 badge:
   uid: learn.app-package-management-using-helm.badge
 levels:
@@ -34,6 +35,8 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+subjects:
+- development-tools
 units:
 - learn.app-package-management-using-helm.introduction
 - learn.app-package-management-using-helm.what-is-helm

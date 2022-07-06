@@ -4,7 +4,7 @@ As we learned previously, a user can be granted access to a GitHub organization 
 
 ## Authorization with SAML SSO through SCIM
 
-SAML single sign-on (SSO) gives organization owners and enterprise owners on GitHub a way to control and secure access to organization resources like repositories, issues, and pull requests. If you use SAML SSO in your organization, you can implement SCIM or _System for Cross-domain Identity Management_. SCIM enables you to add, manage, or remove organization member access within GitHub. SCIM was developed to allow synchronization of information between an IdP and multiple applications.
+SAML single sign-on (SSO) gives organization owners and enterprise owners on GitHub a way to control and secure access to organization resources like repositories, issues, and pull requests. If you use SAML SSO in your organization, you can implement SCIM or *System for Cross-domain Identity Management*. SCIM lets you add, manage, or remove organization member access within GitHub. SCIM was developed to allow synchronization of information between an IdP and multiple applications.
 
 :::image type="content" source="../media/enable-scim-user-provisioning-example.png" alt-text="screenshot of the SCIM setting." :::
 
@@ -25,7 +25,7 @@ To access your organization's protected resources using the API and Git on the c
 
 After you enable SAML SSO, there are multiple ways you can add new members to your organization. Organization owners can invite new members manually on GitHub or using the API. To provision new users without an invitation from an organization owner, you can use the URL `https://github.com/orgs/ORGANIZATION/sso/sign_up`, replacing *ORGANIZATION* with the name of your organization. For example, you can configure your IdP so that anyone with access to the IdP can click a link on the IdP's dashboard to join your GitHub organization.
 
-SCIM and SAML SSO also have security benefits. The first time a member uses SAML SSO to access your organization, GitHub automatically creates a record that links your organization, the member's GitHub account, and the member's account on your IdP. You can review the SAML SSO identity that a member has linked to their GitHub account. When available, the entry will include SCIM data for the user. You can also view and revoke the linked SAML identity, active sessions, and authorized credentials for members of your organization or enterprise account. When an employee leaves the company, the off boarding process is automated and deprovisioning happens automatically. When you unassign the application from a user or deactivate a user's account on your IdP, it will communicate with GitHub.com to invalidate any SAML sessions for that user. The automation of these tasks reduces the time required for an administrator to manage user credentials, and the risk of error associated with manually entering and updating user information is also mitigated.
+SCIM and SAML SSO also have security benefits. The first time a member uses SAML SSO to access your organization, GitHub automatically creates a record that links your organization, the member's GitHub account, and the member's account on your IdP. You can review the SAML SSO identity that a member has linked to their GitHub account. When available, the entry will include SCIM data for the user. You can also view and revoke the linked SAML identity, active sessions, and authorized credentials for members of your organization or enterprise account. When an employee leaves the company, the off-boarding process is automated and deprovisioning happens automatically. When you unassign the application from a user or deactivate a user's account on your IdP, it will communicate with GitHub.com to invalidate any SAML sessions for that user. The automation of these tasks reduces the time required for an administrator to manage user credentials, and the risk of error associated with manually entering and updating user information is also mitigated.
 
 ### Connect your IdP to your organization
 
@@ -42,8 +42,8 @@ If your support request is outside of the scope of what our team can help you wi
 - CI/CD, such as Jenkins
 - Writing scripts
 - Configuration of external authentication systems, such as SAML identity providers
-- Open Source projects
+- Open-source projects
 
-Some companies may have built their own system and synchronize their accounts in a custom way. GitHub doesn't support these custom created accounts with technical assistance. Technical support by GitHub for changes in the way GitHub.com uses SCIM and SAML is available for enterprises that are using one of the providers above.
+Some companies may have built their own system and synchronize their accounts in a custom way. GitHub doesn't support these custom-created accounts with technical assistance. Technical support by GitHub for changes in the way GitHub.com uses SCIM and SAML is available for enterprises that are using one of the providers above.
 
-If you're uncertain if the issue is out of scope, open a ticket with GitHub support and they'll be happy to help you determine the best way to continue.
+If you're uncertain if the issue is out of scope, open a ticket with GitHub support, and they'll be happy to help you determine the best way to continue.

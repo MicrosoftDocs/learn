@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-educators-course-plan.knowledge-check
+title: Knowledge check
+metadata:
+  title: 4-Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the suggested ways to integrate Microsoft certifications into your curriculum?"
+    choices:
+    - content: "Course-level approach"
+      isCorrect: true
+      explanation: "Correct. Institutions can decide to implement certifications one of two ways; with the course-level approach or develop a new or integrate into a program using the program-level approach."
+    - content: "Certification-level approach"
+      isCorrect: false
+      explanation: "Incorrect. While certification success can be an outcome of learning technology skills, Institutions can decide to implement certifications one of two ways; with the course-level approach or develop a new or integrate into a program using the program-level approach."
+    - content: "Job-level approach"
+      isCorrect: false
+      explanation: "Incorrect. While job and career success can be an outcome of learning technology skills, Institutions can decide to implement certifications one of two ways; with the course-level approach or develop a new or integrate into a program using the program-level approach."
+  - content: "Which tool enables you to integrate Microsoft Learn modules and learning paths into curricula?"
+    choices:
+    - content: "MSLE portal"
+      isCorrect: false
+      explanation: "Incorrect. While you'll record your course details in the MSLE portal, the Microsoft Learn LMS Learning Tools Interoperability (LTI) application works with your LMS to enable you to integrate Microsoft Learn modules and learning paths into curricula while providing hands-on experiences with Azure and other Microsoft technologies."
+    - content: "LTI application"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Learn LMS Learning Tools Interoperability (LTI) application works with your LMS to enable you to integrate Microsoft Learn modules and learning paths into curricula while providing hands-on experiences with Azure and other Microsoft technologies."
+    - content: "MSLE Download Center"
+      isCorrect: false
+      explanation: "Incorrect. While the MSLE Download Center is where you can access curricula, the Microsoft Learn LMS Learning Tools Interoperability (LTI) application works with your LMS to enable you to integrate Microsoft Learn modules and learning paths into curricula while providing hands-on experiences with Azure and other Microsoft technologies."
+  - content: "Where do you go to record your course details to ensure you're getting announcements related to the course you're currently teaching?"
+    choices:
+    - content: "MSLE portal"
+      isCorrect: true
+      explanation: "Correct. By adding your course information to the MSLE Portal, we can provide you with the most up-to-date information about the curriculum, new resources, and student events."
+    - content: "LTI application"
+      isCorrect: false
+      explanation: "Incorrect. While the Microsoft Learn LMS Learning Tools Interoperability (LTI) application works with your LMS to enable you to integrate Microsoft Learn modules and learning paths into curricula, by adding your course information to the MSLE Portal, we can provide you with the most up-to-date information about the curriculum, new resources, and student events."
+    - content: "MSLE Download Center"
+      isCorrect: false
+      explanation: "Incorrect. While the MSLE Download Center is where you can access curricula, by adding your course information to the MSLE Portal, we can provide you with the most up-to-date information about the curriculum, new resources, and student events."

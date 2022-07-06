@@ -21,6 +21,8 @@ roles:
 - data-engineer
 products:
 - azure-cosmos-db
+subjects:
+- migration
 modules:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db
 - learn.wwl.migrate-cassandra-workloads-cosmos-db

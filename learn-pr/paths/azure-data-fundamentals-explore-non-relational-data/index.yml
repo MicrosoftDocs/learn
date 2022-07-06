@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-management
 modules:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 - learn.wwl.explore-non-relational-data-stores-azure

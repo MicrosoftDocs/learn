@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.work-with-data-in-aml.introduction
 - learn.wwl.work-with-data-in-aml.datastores

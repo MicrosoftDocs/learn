@@ -1,4 +1,4 @@
-Here, you learn about GitHub Actions and workflows for CI. 
+Here, you'll learn about GitHub Actions and workflows for CI. 
 
 You'll learn to:
 
@@ -11,9 +11,9 @@ You'll learn to:
 
 ## Create a workflow from a template
 
-To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
+To create a workflow, you'll start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
 
-On the main page of your repository, select the *Actions* tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node; and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
+On the main page of your repository, select the **Actions** tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node; and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
 
 :::image type="content" source="../media/2-workflow-template.png" alt-text="GitHub Actions tab with the New Workflow button highlighted and the Node.js template selected." border="true":::
 
@@ -71,7 +71,7 @@ If there is an error or if a test has failed, you see a red X rather than a gree
 
 :::image type="content" source="../media/2-log-details.png" alt-text=" GitHub Actions log with details on a failed test." border="true":::
 
-In the exercise, you identify failed tests by examining the details in the logs. You can access the logs from the *Actions* tab.
+In the exercise, you identify failed tests by examining the details in the logs. You can access the logs from the **Actions** tab.
 
 ## Customize workflow templates
 
@@ -113,9 +113,9 @@ test:
 
 ## What are artifacts?
 
-When a workflow produces something other than a log entry, it's called an *artifact*. For example, the Node.js build will produce a Docker container that can be deployed. This artifact, the container, can be uploaded to storage using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and downloaded from storage using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
+When a workflow produces something other than a log entry, it's called an *artifact*. For example, the Node.js build will produce a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
 
-Storing an artifact helps to preserve it between jobs. Each job uses a fresh instance of a VM, so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job, and download it for the other job.
+Storing an artifact helps to preserve it between jobs. Each job uses a fresh instance of a VM, so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job and download it for the other job.
 
 ## Artifact storage
 
@@ -146,7 +146,7 @@ test:
     runs-on: ubuntu-latest
 ```
 
-In the following workflow snippet, you see we download the artifact. Now the test job can use the artifact for testing.
+In the following workflow snippet, we download the artifact. Now the test job can use the artifact for testing.
 
 ```yml
 steps:
@@ -179,4 +179,4 @@ Another action we could take is to add a label to the pull request. In this case
 
 Notice the block called ```env:```. This is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The ```GITHUB_TOKEN``` variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
 
-Adding a label could be an event that starts another workflow, such as a a merge. We'll cover this in the next module on continuous delivery with GitHub Actions.
+Adding a label could be an event that starts another workflow, such as a merge. We'll cover this in the next module on continuous delivery with GitHub Actions.

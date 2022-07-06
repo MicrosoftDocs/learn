@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- collaboration
 units:
 - learn.student-evangelism.practice-active-listening.introduction
 - learn.student-evangelism.practice-active-listening.what-is-effective-communication

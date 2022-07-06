@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-portal
+title: Describe the Microsoft 365 Defender portal
+metadata:
+  title: Describe the Microsoft 365 Defender portal
+  description: "Describe the Microsoft 365 Defender portal"
+  ms.date: 04/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-describe-microsoft-defender-portal.md)]

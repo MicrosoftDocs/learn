@@ -31,6 +31,8 @@ products:
 - azure-cosmos-db
 - azure-storage
 - azure-key-vault
+subjects:
+- security
 units:
 - learn.secure-data-at-rest.1-introduction
 - learn.secure-data-at-rest.2-classify-data

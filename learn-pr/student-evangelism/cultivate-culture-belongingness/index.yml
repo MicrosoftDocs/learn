@@ -31,6 +31,9 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- communication
+- communication
 units:
 - learn.student-evangelism.cultivate-culture-belong-tech.introduction
 - learn.student-evangelism.cultivate-culture-belong-tech.examine-recognize-belonging
@@ -44,4 +47,4 @@ units:
 - learn.student-evangelism.cultivate-culture-belong-tech.knowledge-check
 - learn.student-evangelism.cultivate-culture-belong-tech.summary
 badge:
-  uid: learn.student-evangelism.cultivate-culture-belong-tech.badge 
+  uid: learn.student-evangelism.cultivate-culture-belong-tech.badge

@@ -1,12 +1,12 @@
-While developing using agile methods does not require specific tooling, tools can often enhance the outcomes achieved.
+While developing agile methods does not require specific tooling, tools can often enhance the achieved outcomes.
 
 It is essential to realize that the vital tool for agile development is the process itself.
 
-Become familiar with the procedures that you need to follow before working out how to implement tools. Several categories of tools are commonly used.
+Become familiar with the procedures you need to follow before working out how to implement tools. Several categories of tools are commonly used.
 
 ## Physical tools
 
-Not all tools need to be digital tools. Many teams make extensive use of whiteboards for collaborating on ideas, index cards for recording stories, and sticky notes for moving around tasks.
+Not all tools need to be digital tools. Many teams use whiteboards to collaborate on ideas, index cards for recording stories, and sticky notes for moving around tasks.
 
 Even when digital tools are available, it might be more convenient to use these physical tools during stand-up and other meetings.
 
@@ -26,12 +26,12 @@ These tools usually include:
 
 These tools will also provide detailed visualizations, often as a graphic dashboard that shows team progress against assigned goals and targets.
 
-Some tools also integrate directly with code repositories and CI/CD tools and add code-related metrics, including quality metrics, along with direct support for code reviews.
+Some tools integrate directly with code repositories and CI/CD tools and add code-related metrics, including quality metrics and direct support for code reviews.
 
 :::image type="content" source="../media/devops-ds-image-105-fb4f408c.png" alt-text="Three consoles are shown with various desktop tools.":::
 
 
-And a complete CI/CD system, Azure DevOps includes:
+As a complete CI/CD system, we have Azure DevOps and GitHub that includes:
 
  -  Flexibility in Kanban boards.
  -  Traceability through Backlogs.
@@ -40,9 +40,8 @@ And a complete CI/CD system, Azure DevOps includes:
  -  Integrability directly with code repositories.
  -  Code changes can be linked directly to tasks or bugs.
 
-Apart from Azure DevOps, other standard tools include:
+Apart from Azure DevOps and GitHub, other standard tools include:
 
- -  GitHub.
  -  Jira.
  -  Trello.
  -  Active Collab.
@@ -61,7 +60,7 @@ Apart from Azure DevOps, other standard tools include:
  -  Asana.
  -  Binfire.
  -  Proggio.
- -  VivifyScrum, and many others.<br>
+ -  VivifyScrum, and many others.
 
 ## Screen recording tools
 

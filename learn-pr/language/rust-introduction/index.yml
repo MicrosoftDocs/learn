@@ -28,6 +28,8 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-introduction.1-introduction
 - learn.language.rust-introduction.2-rust-overview

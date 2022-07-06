@@ -9,7 +9,7 @@ As mentioned before, Visual Studio Code is free. If you're using a Windows compu
 > [!NOTE]
 > The picture below shows someone using Windows 11 with the Microsoft Edge browser. If you're using a macOS or Linux device, select the appropriate version from the dropdown or select **(other downloads)** to make the selection that best represents your system. We'll walk you through how to [install Python](/learn/modules/install-code-tools-python-nasa/7-install-python) and all of the necessary extensions in Unit 7 of this module.
 
-:::image type="content" source="../media/download-vs-code.png" alt-text="Screenshot of the VS Code download page on the Visual Studio Code website.":::
+:::image type="content" source="../media/download-vs-code.png" alt-text="Screenshot of the Visual Studio Code download page on the Visual Studio Code website.":::
 
 After you start the installation, you'll be asked to accept the license agreement and fill out your preferences for the application. You'll also be asked where to install the program. Read and accept the license agreement and then select **Next**.
 

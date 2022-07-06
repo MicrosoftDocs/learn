@@ -156,7 +156,7 @@ The other members of your team have been impressed with the Bicep code you've bu
 
 One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they're available to customers. However, you want to make sure you don't spend too much money on your non-production environments. So you decide on some policies together:
 
-- In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for high resiliency. App Service plans will be deployed at the `P2_v3` SKU for high performance.
+- In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for high resiliency. App Service plans will be deployed at the `P2v3` SKU for high performance.
 - In non-production environments, storage accounts will be deployed at the `Standard_LRS` (locally redundant storage) SKU. App Service plans will be deployed at the free `F1` SKU.
 
 One way to implement these business requirements is to use parameters to specify each SKU. However, specifying every SKU as a parameter can get difficult to manage, especially when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.

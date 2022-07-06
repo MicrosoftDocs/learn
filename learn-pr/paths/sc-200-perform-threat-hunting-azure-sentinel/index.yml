@@ -3,9 +3,9 @@ uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel
 metadata:
   title: 'SC-200: Perform threat hunting in Microsoft Sentinel'
   description: 'SC-200: Perform threat hunting in Microsoft Sentinel'
-  ms.date: 11/05/2021
+  ms.date: 06/30/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'SC-200: Perform threat hunting in Microsoft Sentinel'
@@ -22,9 +22,12 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 modules:
 - learn.wwl.what-is-threat-hunting-azure-sentinel
 - learn.azure.hunt-threats-sentinel
+- learn.wwl.use-search-jobs-microsoft-sentinel
 - learn.wwl.perform-threat-hunting-sentinel-with-notebooks
 trophy:
   uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel.trophy

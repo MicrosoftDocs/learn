@@ -25,6 +25,9 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- natural-language-processing
+- artificial-intelligence
 units:
 - learn-windows.narrator-and-voice-input.1-introduction
 - learn-windows.narrator-and-voice-input.2-audio-descriptions-with-narrator

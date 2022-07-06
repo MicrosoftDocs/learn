@@ -56,7 +56,7 @@ By default, the summary displays open alerts in the last 24 hours. You can also 
 
 - Time range (24 hours, week, two weeks, 30 days, or custom)
 
-    :::image type="content" source="../media/2-backup-reports.png" alt-text="Screenshot that shows Backup Report.":::
+    :::image type="content" source="../media/2-backup-reports.png" alt-text="Screenshot that shows Backup Report." lightbox="../media/2-backup-reports.png":::
 
 ### Alerts by email notification
 
@@ -119,7 +119,7 @@ The following views are available from the tabs:
 ## Troubleshooting backups with Microsoft Azure Recovery Services (MARS)
 
 > [!NOTE] 
-> Microsoft documentation refers to both the backup agent and MARS interchangeably: both refer to the same service. In this module, it is referred to as Microsoft Azure Recovery Services (MARS).
+> Microsoft documentation refers to both the backup agent and MARS interchangeably: both refer to the same service name (cbengine). In this module, it is referred to as Microsoft Azure Recovery Services (MARS).
 
 Microsoft Azure Recovery Services is also known as the backup agent. This is the Azure service that is used to back up data. The MARS agent can run on:
 
@@ -258,3 +258,5 @@ If you have problems with scheduled backups, try the following:
 - The VMs must be in the same region and subscription as the recovery vault.
 
 - If you get a message saying the recovery point is crash-consistent, check whether the VM is switched on. If the VM is not on, it will be backed up as an offline VM and the recovery point will be crash-consistent. This means that Azure gives no guarantee about the consistency of the data on the storage medium.
+
+- [Troubleshoot scheduled backup job failures - Data Protection Manager | Microsoft Docs](/troubleshoot/system-center/dpm/troubleshoot-scheduled-backup-job-failures)

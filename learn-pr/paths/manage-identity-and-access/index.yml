@@ -29,6 +29,8 @@ products:
 - azure-clis
 - azure-portal
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.azure.protect-against-security-threats-azure
 - learn.create-azure-account

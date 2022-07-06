@@ -3,7 +3,7 @@ uid: learn.wwl.manage-user-authentication
 metadata:
   title: Manage user authentication
   description: "There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs."
-  ms.date: 03/03/2022
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -29,13 +29,19 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.manage-user-authentication.introduction
 - learn.wwl.manage-user-authentication.administer-fido2-passwordless-authentication-methods
+- learn.wwl.manage-user-authentication.explore-authenticator-app-oath-token
 - learn.wwl.manage-user-authentication.implement-authentication-solution-based-windows-hello-for-business
 - learn.wwl.manage-user-authentication.exercise-configure-deploy-self-service-password-reset
 - learn.wwl.manage-user-authentication.deploy-manage-password-protection
-- learn.wwl.manage-user-authentication.implement-manage-tenant-restrictions
+- learn.wwl.manage-user-authentication.configure-smart-lockout-thresholds
+- learn.wwl.manage-user-authentication.exercise-manage-azure-ad-smart-lockout-values
+- learn.wwl.manage-user-authentication.implement-kerberos-certificate-based-authentication-azure-ad
+- learn.wwl.manage-user-authentication.configure-azure-ad-user-authentication-virtual-machines
 - learn.wwl.manage-user-authentication.knowledge-check
 - learn.wwl.manage-user-authentication.summary-resources
 badge:

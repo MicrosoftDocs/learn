@@ -72,10 +72,10 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 
 ## Redeploy the coupon service
 
-Publish the existing `coupon-api` docker image from the `eshopdev` DockerHub with the following script:
+Publish the existing `coupon-api` docker image from the `eshoplearn` DockerHub with the following script:
 
 ```bash
-deploy/k8s/deploy-application.sh --charts coupon --registry eshopdev
+deploy/k8s/deploy-application.sh --charts coupon --registry eshoplearn
 ```
 
 As there are no code changes, so there's no need to rebuild `coupon-api` docker image. The preceding script uses Helm to deploy the existing *:::no-loc text="coupon":::* Docker image to AKS with a new configuration. The script runs the `kubectl get pods` command, whose output contains entries for the pod of basket api. The `STATUS` and `AGE` column values indicate that the deployments were successful:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-educators-course-plan.introduction
+title: Introduction
+metadata:
+  title: 1-Introduction
+  description: "Introduction"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

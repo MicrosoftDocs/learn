@@ -29,6 +29,8 @@ products:
 - azure-expressroute
 - azure-virtual-network
 - azure-vpn-gateway
+subjects:
+- networking
 units:
 - learn.design-a-hybrid-network-architecture.1-introduction
 - learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure

@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.aks-deploy-container-app.badge
+metadata:
+  title: >-
+    Microsoft Badge: Deploy a containerized application on Azure Kubernetes
+    Service was issued by Microsoft
+socialImageUrl: /learn/achievements/aks-deploy-container-apps.png

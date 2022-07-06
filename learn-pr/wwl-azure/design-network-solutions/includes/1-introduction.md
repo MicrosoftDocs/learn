@@ -3,7 +3,7 @@
 :::image type="content" source="../media/tailwind-traders.png" alt-text="The Tailwind Traders logo.":::
 
 
-[Tailwind Traders](https://www.tailwindtraders.com/) is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. It's looking at cloud technologies to improve business operations and support growth into new markets. By moving to the cloud, the company plans to enhance its shopping experience to further differentiate itself from competitors.
+Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. It's looking at cloud technologies to improve business operations and support growth into new markets. By moving to the cloud, the company plans to enhance its shopping experience to further differentiate itself from competitors.
 
 As the Tailwind Traders Enterprise IT team prepares to define the strategy to migrate some of company’s workloads to Azure, it must identify the required networking components and design a network infrastructure necessary to support them. Considering the global scope of its operations, Tailwind Traders will be using multiple Azure regions to host its applications. Most of these applications have dependencies on infrastructure and data services, which will also reside in Azure. Internal applications migrated to Azure must remain accessible to Tailwind Traders users. Internet-facing applications migrated to Azure must remain accessible to any external customer. 
 

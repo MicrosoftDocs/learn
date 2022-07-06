@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - dotnet
+subjects:
+- custom-app-development
 modules:
 - learn.languages.csharp-write-first
 - learn.languages.dotnet-introduction

@@ -30,6 +30,8 @@ products:
 - azure
 - azure-portal
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.azure-security.secure-aad-users-with-mfa.introduction
 - learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentication

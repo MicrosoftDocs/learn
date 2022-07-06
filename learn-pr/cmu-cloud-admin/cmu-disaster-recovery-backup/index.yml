@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup
 metadata:
   title: Disaster recovery and backup
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. What do you do when something goes wrong with your resources on the cloud? How do you prepare for such an issue? Learn about disaster backup and recovery with this module.
-  ms.date: 03/15/2020
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -36,12 +36,15 @@ prerequisites: |
   - Know how data centers work and how data is stored in the cloud
   - Understand the basics of cloud security
 iconUrl: /learn/achievements/cmu-cloud-admin/cmu-disaster-recovery-backup.svg
+hidden: true
 levels:
 - beginner
 roles:
 - administrator
 products:
 - azure
+subjects:
+- business-continuity
 units:
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.0-introduction
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup.1-failures-fault-tolerance

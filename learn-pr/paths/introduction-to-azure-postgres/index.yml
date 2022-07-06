@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-database-postgresql
+subjects:
+- database
 modules:
 - learn.create-azure-db-for-postgresql
 - learn.azure.create-and-connect-to-azure-database-postgresql

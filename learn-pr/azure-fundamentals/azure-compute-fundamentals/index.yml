@@ -36,6 +36,8 @@ products:
 - azure-container-registry
 - azure-kubernetes-service
 - azure-virtual-machines
+subjects:
+- cloud-computing
 units:
 - learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.overview

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dotnet-debug-visual-studio-app-service
+metadata:
+  title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
+  description: 'Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.'
+  ms.date: 5/10/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
+summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
+abstract: |
+  By the end of this module, you will be able to:
+  - Deploy an ASP.NET Core app to Azure App Service and configure remote debugging settings.
+  - Attach the Visual Studio debugger to apps running in Azure App Service.
+  - Manage debugging symbols for remote apps.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- vs-ide
+- azure-app-service
+subjects:
+  - development-tools
+prerequisites: |
+  - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio 2022](https://visualstudio.com) with the Azure development workload installed
+  - Familiarity with Git and GitHub
+units:
+- learn.dotnet-debug-visual-studio-app-service.introduction
+- learn.dotnet-debug-visual-studio-app-service.remote-debugging-concepts
+- learn.dotnet-debug-visual-studio-app-service.deploy-to-azure
+- learn.dotnet-debug-visual-studio-app-service.attach-to-process
+- learn.dotnet-debug-visual-studio-app-service.knowledge-check
+- learn.dotnet-debug-visual-studio-app-service.summary
+
+badge:
+  uid: learn.dotnet-debug-visual-studio-app-service.badge

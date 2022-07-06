@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.aspnet-configurationbuilder.badge
+metadata:
+  title: >-
+    Microsoft Badge: Externalize the configuration of an ASP.NET app by using an
+    Azure key vault was issued by Microsoft
+socialImageUrl: /learn/achievements/aspnet-configurationbuilder-social.png

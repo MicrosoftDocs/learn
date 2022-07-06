@@ -73,9 +73,9 @@ Normally, a pull request is reviewed by someone other than its author. For this 
    > [!TIP]
    > Imagine that you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the *main.bicep* file that was changed, hover over line 12 and select the button with the plus sign (**+**).
+1. In the *main.bicep* file that was changed, hover over line 18 and select the button with the plus sign (**+**).
 
-   :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="Screenshot of GitHub that shows changes to the main dot bicep file. The mouse is hovering over line 12, and the button for adding comments is highlighted.":::
+   :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="Screenshot of GitHub that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding comments is highlighted.":::
 
 1. In the comment box, enter the following text: **Should this be capitalized?**
 
@@ -107,9 +107,9 @@ Normally, a pull request is reviewed by someone other than its author. For this 
    > [!TIP]
    > Imagine that you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the *main.bicep* file that was changed, hover over line 12 and select the comment button.
+1. In the *main.bicep* file that was changed, hover over line 18 and select the comment button.
 
-   :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="Screenshot of Azure DevOps that shows changes to the main dot bicep file. The mouse is hovering over line 12, and the button for adding a comment is highlighted.":::
+   :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="Screenshot of Azure DevOps that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding a comment is highlighted.":::
 
 1. In the comment box, enter the following text: **Should this be capitalized?**
 

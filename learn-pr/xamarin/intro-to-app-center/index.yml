@@ -28,6 +28,8 @@ products:
 - azure
 - azure-portal
 - vs-app-center
+subjects:
+- devops
 units:
 - learn.azure.intro-to-app-center.introduction
 - learn.azure.intro-to-app-center.what-is-app-center

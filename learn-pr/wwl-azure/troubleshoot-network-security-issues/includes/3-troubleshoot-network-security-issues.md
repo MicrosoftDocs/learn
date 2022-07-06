@@ -2,7 +2,7 @@
 
 Occasionally, requests that should pass through your Web Application Firewall (WAF) are blocked.
 
-To tune the strict Open Web Application Security Project (OWASP) regulations for the needs of an application or organization, WAF helps you to customize, or disable the rules, or create exclusions, that may be causing issues or false positives. This is done on a per-site and per-URI basis. That is, changes to the policies will only affect specific sites/URIs and wouldn’t concern other sites that might not have the same issues.
+To tune the strict Open Web Application Security Project (OWASP) regulations for the needs of an application or organization, WAF helps you to customize, or disable the rules, or create exclusions, that may be causing issues or false positives. This is done on a per-site and per-URI basis. That is, changes to the policies will only affect specific sites/URIs and wouldn't concern other sites that might not have the same issues.
 
 The following articles will help you understand how the WAF functions and how its rule and logs work:
 
@@ -14,7 +14,7 @@ The following articles will help you understand how the WAF functions and how it
 
 ## Understanding WAF logs
 
-WAF logs work as a statement of all evaluated requests that are matched or blocked.  If you notice a false positive, when the WAF blocks a request that it shouldn’t, you can do the following steps:
+WAF logs work as a statement of all evaluated requests that are matched or blocked.  If you notice a false positive, when the WAF blocks a request that it shouldn't, you can do the following steps:
 
 1. Find the specific request.
 
@@ -211,7 +211,7 @@ A point-to-site (P2S) VPN connection is initiated by a single endpoint and is us
 
 P2S VPN supports Secure Socket Tunneling Protocol (SSTP), and IKEv2. You can securely connect different clients running Windows, Linux, or macOS to an Azure VNet through point-to-site connection.
 
-:::image type="content" source="../media/2-point-to-site.png" alt-text="Diagram showing point-to-site VPN connection.":::
+:::image type="content" source="../media/2-point-to-site.png" alt-text="Diagram showing point-to-site VPN connection." border="false":::
 
 ## Generate certificates
 
@@ -242,7 +242,7 @@ P2S VPN supports Secure Socket Tunneling Protocol (SSTP), and IKEv2. You can sec
 
       A client certificate is automatically installed on the computer where it is generated from a self-signed root certificate. For installing a client certificate on another client computer, you need to export it as a .pfx file, along with the entire certificate chain. The .pfx file will contain the root certificate information required for client authentication. There are two methods to create client certificates, enterprise certificate, or self-signed root certificate.
 
-      It is recommended to generate a unique certificate for each client instead of using the same certificate. This is because, if you want to revoke a particular client certificate, you don’t need to generate and install a new one for every client that uses the same certificate. To generate client certificate, consider the following steps:
+      It is recommended to generate a unique certificate for each client instead of using the same certificate. This is because, if you want to revoke a particular client certificate, you don't need to generate and install a new one for every client that uses the same certificate. To generate client certificate, consider the following steps:
 
 1. Use the following example if the PowerShell console session is still open:
 
@@ -259,7 +259,7 @@ P2S VPN supports Secure Socket Tunneling Protocol (SSTP), and IKEv2. You can sec
 
    ```
 
-1. If it’s a new PowerShell console session, consider the following steps:
+1. If it's a new PowerShell console session, consider the following steps:
 
    - Identify the self-signed root certificate that is installed on the computer. This cmdlet returns a list of certificates that are installed on your computer.
 
@@ -429,7 +429,6 @@ The following steps will guide you to ensure that all the required configuration
 The IPsec and IKE protocol standard supports a wide range of cryptographic algorithms in various combinations. The article [IPsec/IKE parameters](/azure-stack/user/azure-stack-vpn-gateway-settings) explains which parameters are supported in Azure Stack Hub to meet your compliance or security requirements.
 
 
-
 Note the following important considerations when using these policies:
 
 - The IPsec/IKE policy only works on the Standard and HighPerformance (route-based) gateway SKUs.
@@ -442,7 +441,7 @@ Note the following important considerations when using these policies:
 
 The following steps show how to create and configure an IPsec/IKE policy, and apply it to a new or existing connection. For detailed step-by-step instructions, follow [Steps to configure an IPsec/IKE policy for site-to-site (S2S) VPN connections in Azure Stack Hub](/azure-stack/user/azure-stack-vpn-s2s).
 
-- Create and set IPsec/IKE policy.
+1. Create and set IPsec/IKE policy.
 
 1. Create a new site-to-site VPN connection with IPsec/IKE policy:
 

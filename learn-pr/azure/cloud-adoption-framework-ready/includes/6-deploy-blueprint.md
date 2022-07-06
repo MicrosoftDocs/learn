@@ -1,87 +1,88 @@
-The first step toward the deployment of an Azure landing zone is the implementation of a Cloud Adoption Framework template. When you're following the *start small and expand* approach, you start with the CAF Migration landing zone blueprint.
+Based on the customer narrative, Tailwind Traders will start by deploying a few specific configuration options to meet its constraints. When you're deploying the Azure landing zone accelerator, the following options will mimic the process that Tailwind Traders follows.
 
-## Deploy the blueprint sample
+## Prerequisites
 
-Starting with an empty Azure subscription, you'll deploy the blueprint sample by doing the following tasks:
+Before you deploy the Azure landing zone accelerator, you need to create two Azure subscriptions:
 
-- Create a new blueprint from the sample.
-- Mark your copy of the sample as **Published**.
-- Assign your copy of the blueprint to a current subscription.
+- A networking subscription to host networking and connectivity assets
+- An identity subscription to host identity and access management assets 
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+You might also want to create a management subscription, if you plan to deploy the operations management configuration. Tailwind Traders chose not to use that configuration option.
 
-## Create a new blueprint from the sample
+The article [Create an additional Azure subscription](/azure/cost-management-billing/manage/create-subscription?msclkid=155dc2d3d16511ec86451b2c110c6653) can guide you through the process of creating these subscriptions.
 
-First, implement the blueprint sample by creating a new blueprint in your environment.
+## Deploy the Azure landing zone accelerator
 
-1. Select **All services** on the left pane. Search for and select **Blueprints**.
+1. Open the [Azure landing zone accelerator in the Azure portal](https://aka.ms/caf/ready/accelerator). This portal experience will guide you through deployment.
+1. On the **Deployment location** tab:
+   1. For **Directory**, choose the appropriate Azure Active Directory tenant.
+      
+      If you don't have proper permissions, an error appears below your tenant.
+   1. For **Region**, select a region from the dropdown list. 
+   
+      Tailwind Traders chooses the default option: **West Central US**.
+1. On the **Azure core setup** tab:
+   1. For **Management Group prefix**, enter a prefix. 
+   
+      Tailwind Traders enters **tailwind-**.
+   1. For **Select dedicated subscriptions or single subscription for platform resources**, choose the **Dedicated** option to keep all platform resources in a dedicated subscription.
 
-1. From the **Getting started** page on the left, select the **Create** button under **Create a blueprint**.
+      > [!NOTE]
+      > The choice of dedicated subscriptions for all platform resources will centralize any tools needed to manage the environment. As Tailwind Traders adds security, operations, and governance, it will use the dedicated subscription and management group structure that this dedication option has created. Choosing the option for a single subscription could require significant rework later in the adoption process.
 
-1. Find the **CAF Migration landing zone** blueprint sample under **Other Samples** and select **Use this sample**.
+1. On the **Platform management, security, and governance** tab, you choose whether to deploy a Log Analytics workspace and enable monitoring. Select **No**.
 
-1. Under **Basics**, enter the following information:
-   - For **Blueprint name**, provide a name for your copy of the sample CAF Migration landing zone blueprint.
-   - For **Definition location**, use the ellipsis and select the management group to which you'll save your copy of the sample.
+   Tailwind Traders makes this choice because it will enhance its landing zone later to address security, management, and governance needs.
+1. On the **Platform DevOps and automation** tab, you would normally select options that apply to your organization. 
 
-1. Select the **Artifacts** tab at the top of the page or **Next: Artifacts** at the bottom of the page.
+   Because Tailwind Traders chose not to add any of the Log Analytics features, it can't add any of the DevOps and automation features. As such, there's nothing to choose here.
+1. On the **Network topology and connectivity** tab:
+   1. Select the **Hub and spoke with Azure Firewall** option. This will create a dedicated subscription for connectivity. 
+   
+      Tailwind Traders selects this option. After the accelerator is deployed, the company's MPLS solution will connect to an Azure ExpressRoute instance deployed into that subscription. This setup will allow any application landing zone to connect over MPLS, but route traffic through Azure Firewall first.
+   1. After you choose the option for hub and spoke with Azure Firewall, more options appear so you can configure the connectivity subscription:
+      1. For **Subscription**, choose your connectivity subscription.
+      1. For **Address space**, enter an address space for any IPs in your networking hub.
+      1. For **Region for the first networking hub**, choose a region for your deployment. 
+      
+         Tailwind Traders selects **West Central US** to ensure that the networking hub is in the same region as the other deployments.
+      1. For **Enable DDoS Protection Standard**, select **No**. 
+      
+         Tailwind Traders makes this choice because it doesn't want to enable DDoS at this time. The company is deferring security decisions and isn't ready to approve the cost of that service yet.
+      1. For **Create Private DNS Zones for Azure PaaS services**, select **Yes**. 
+      
+         Tailwind Traders will deploy some workloads as PaaS services, so it chooses to enable this free service.
+      1. For **Deploy VPN Gateway** and **Deploy VPN Gateway**, leave the default selection of **No**. 
+      
+         Tailwind Traders makes this choice because it isn't ready to connect its MPLS to Azure ExpressRoute at this time.
+      1. For **Deploy Azure Firewall**, leave the default selection of **Yes** to deploy Azure Firewall.
+      1. For **Subnet for Azure Firewall**, set the subnet range for your Azure Firewall instance.
+      
+      For any options not included in the preceding steps, leave the default values.
+1. On the **Identity** tab:
+   1. For **Assign recommended policies to govern identity and domain controllers**, leave the default selection of **Yes (recommended)**.
+      
+      Tailwind Traders isn't ready to adhere to the principle of policy-driven governance. However, it does choose to enable policies that govern its identity and domain controllers. This first step into governance automation will help keep the company's identity controllers safer in the cloud.
+   1. For **Subscription**, choose which subscription will host identity-related assets.
+   1. Leave all the policy-related options set to the default of **Yes (recommended)**.
+   1. For **Virtual network address space**, enter the address space for the virtual network that will host identity-related assets.
+1. On the **Landing zone configuration** tab:
+   1. For **Connect corp landing zones to the connectivity hub**, select **Yes**.
+   1. For **Corp landing zone subscriptions**, make a selection from the dropdown list. 
+   
+      Tailwind Traders has one existing subscription that will be used as the destination for most virtual machines and other assets being migrated. The company chooses that subscription here.
+   1. For **Online landing zone subscriptions**, make a selection from the dropdown list. 
+   
+      Tailwind Traders also has a subscription that was allocated to host any of its public-facing applications. The company chooses that subscription here.
+   1. For the series of recommended policies, select **Audit only**. 
+   
+      Tailwind Traders sets all of the listed policies this way because it isn't ready to adopt policy-driven governance.
 
-1. Review the list of artifacts that make up the blueprint sample. Many of the artifacts have parameters that we'll define later. Select **Save Draft** when you've finished reviewing the blueprint sample.
+      > [!NOTE]
+      > If Tailwind Traders wanted to adhere to the design principles of app-centric design or subscription democratization, there would be several additional subscriptions selected in the dropdown list (or added later).
+      >
+      > If Tailwind Traders wanted to adhere to the design principle of policy-driven governance, it would leave all of the listed policies with the recommended option of **Yes (recommended)** to automatically enforce governance decisions via Azure Policy.
 
-## Publish the sample copy
+1. On the **Review + create** tab, select **Create** to deploy your environment.
 
-Your copy of the blueprint sample has now been created in your environment. It's created in **Draft** mode and must be in **Published** mode before you can assign and deploy it. The copy of the blueprint sample can be customized to your environment and needs, but that modification might move it away from the guidance for the CAF Migrate landing zone blueprint.
-
-1. Select **All services** on the left pane. Search for and select **Blueprints**.
-
-1. Select the **Blueprint definitions** page on the left. Use the filters to find your copy of the blueprint sample and then select it.
-
-1. Select **Publish blueprint** at the top of the page. 
-
-1. In the new page on the right:
-
-   1. For **Version**, provide a version for your copy of the blueprint sample. This property is useful for later modifications. 
-   1. For **Change notes**, provide notes such as "first version published from the CAF Migration landing zone blueprint sample." 
-   1. Select **Publish** at the bottom of the page.
-
-## Assign the sample copy
-
-After the copy of the blueprint sample has been successfully published, you can assign it to a subscription within the management group where it was saved. This procedure is where you provide parameters to make your deployment of a copy of the blueprint sample unique.
-
-1. Select **All services** on the left pane. Search for and select **Blueprints**.
-
-1. Select the **Blueprint definitions** page on the left. Use the filters to find your copy of the blueprint sample and then select it.
-
-1. Select **Assign blueprint** at the top of the blueprint definition page.
-
-1. Provide the parameter values for the blueprint assignment:
-   - Make the following selections under **Basics**:
-     - **Subscriptions**: Select one or more of the subscriptions that are in the management group where you saved your copy of the blueprint sample. If you select more than one subscription, the parameters that you enter will be used to create an assignment for each subscription.
-     - **Assignment name**: The name is pre-populated for you based on the name of the blueprint. Change as needed or leave as is.
-     - **Location**: Select a region in which to create the managed identity. Azure Blueprints uses this managed identity to deploy all artifacts in the assigned blueprint.
-     - **Blueprint definition version**: Pick a **Published** version of your copy of the blueprint sample.
-   - Under **Lock assignment**, select the blueprint lock setting for your environment.
-   - Under **Managed identity**, choose either the default **system assigned** identity option or the **user assigned** identity option.
-   - Under **Blueprint parameters**, define the following parameters. Many of the artifacts in the blueprint definition use these parameters to provide consistency.
-
-       - **Organization**: Enter your organization's name. It must be unique.
-       - **AzureRegion**: Select one Azure region for deployment.
-
-   - The parameters defined in the **Artifact parameters** section apply to the artifact under which they're defined. These parameters are dynamic because they're defined during the assignment of the blueprint.
-
-1. After you've entered all parameters, select **Assign** at the bottom of the page. The blueprint assignment is created and artifact deployment begins. Deployment takes roughly five minutes. To check on the status of deployment, open the blueprint assignment.
-
-> [!WARNING]
-> The Azure Blueprints service and the built-in blueprint samples are *free of cost*. Azure resources are [priced by product](https://azure.microsoft.com/pricing/?azure-portal=true). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true) to estimate the cost of running resources that this blueprint sample deploys.
-
-## Artifact parameters
-
-The following table lists the parameters for blueprint artifacts:
-
-|Artifact name|Artifact type|Parameter name|Description|
-|-|-|-|-|
-| Deploy VNet landing zone | Azure Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets (for example, 10.0). |
-| Deploy Key Vault | Azure Resource Manager template | `KV-AccessPolicy` | **Locked** - The group or user object ID to grant permissions to in Azure Key Vault. |
-| Deploy Log Analytics | Azure Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The number of days that data will be retained in Log Analytics. |
-| Deploy Log Analytics | Azure Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used for establishing the workspace. |
-| Deploy Azure Migrate | Azure Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate. |
+You have successfully deployed an Azure landing zone by using the accelerator. If you followed the preceding process, that deployment should be aligned to the constraints of Tailwind Traders.

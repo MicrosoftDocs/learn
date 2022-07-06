@@ -1,4 +1,4 @@
-Measuring objectives and identifying the return expected from a specific can help you to define a financial consideration. Cost is another key financial consideration. In this unit, we explore various outcome-driven considerations, a few formulas to calculate costs, and how organizations can reduce capital expenditures.
+Measuring objectives and identifying the return expected from a specific objective can help you to define a financial consideration. Cost is another key financial consideration. In this unit, we explore various outcome-driven considerations, a few formulas to calculate costs, and how organizations can reduce capital expenditures.
 
 ## Understand your financial stories
 
@@ -6,7 +6,7 @@ The core financial benefits of Azure are driven by a fundamental shift in the IT
 
 **Balance sheet**: When you operate on-premises in datacenters, you might have invested up front in long-term assets that limit the cash and capital required to grow your business. While in the cloud, you can shift datacenter operations costs into modernization, developing cloud applications, and other projects that drive business growth. This shift can make your balance sheet more agile.
 
-**Cash flow statement**: The pay-for-what-you-consume model and the ability to apply policies and tags to your Azure resources help you improve the predictability of your cash flow statement. This model delays spend and improves the timing of your cash flow.
+**Cash flow statement**: The pay-for-what-you-consume model and the ability to apply policies and tags to your Azure resources can help you improve the predictability of your cash flow statement. This model delays spend and improves the timing of your cash flow.
 
 **Income statement (profit and loss)**: You can improve profitability over time by taking advantage of Azure's flexibility, low management costs, services, and pricing models.
 
@@ -16,7 +16,7 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 ## Terms
 
-**Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. , if you purchase a license worth USD100, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of USD20 per year that impacts your income statement.
+**Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. For example, if you purchase a license worth USD100, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of USD20 per year that impacts your income statement.
 
 **Balance sheet**: A balance sheet is a financial statement that reports a company's assets, liabilities, and shareholders' equity as of a specific date.
 
@@ -127,18 +127,18 @@ In some cases, retired assets can be sold as a source of revenue. This revenue o
 
 Recurring expenses that are required to operate a business often are called operating expenses. This category is broad. In most accounting models, this expense category includes:
 
-- Software licensing.
-- Internet hosting expenses.
-- Electric bills.
-- Real estate rentals.
-- Cooling expenses.
-- Temporary staff required for operations.
-- Equipment rentals.
-- Replacement parts.
-- Maintenance contracts.
-- Repair services.
-- Business continuity and disaster recovery services.
-- Other expenses that don't require capital expense approvals.
+- Software licensing
+- Internet hosting expenses
+- Electric bills
+- Real estate rentals
+- Cooling expenses
+- Temporary staff required for operations
+- Equipment rentals
+- Replacement parts
+- Maintenance contracts
+- Repair services
+- Business continuity and disaster recovery services
+- Other expenses that don't require capital expense approvals
 
 This category provides one of the highest earning deltas. When you're considering a cloud migration, time invested in making this list exhaustive rarely is wasted. Ask the CIO and finance team questions to ensure that all operational costs are accounted for.
 
@@ -160,7 +160,7 @@ An exception occurs when operational capacity is provided by a third party or an
 
 #### Capital expense reductions or avoidance
 
-Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense  generally would fit into a capital expense category.
+Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense generally would fit into a capital expense category.
 
 More common are basic equipment refresh cycles. Some companies have rigid hardware refresh cycles, which means that assets are retired and replaced on a regular cycle (usually every three, five, or eight years). These cycles often coincide with asset lease cycles or with the forecasted life span of equipment. In a new refresh cycle, IT draws on capital expense to acquire new equipment.
 
@@ -168,13 +168,13 @@ If a refresh cycle is approved and budgeted, a cloud transformation might help e
 
 ## What is cloud accounting?
 
-The cloud changes how IT accounts for costs. Various IT accounting models are much easier to support because of how the cloud allocates costs, so it's important to understand how to account for cloud costs before you begin a cloud transformation journey. This article outlines the most common cloud accounting models for IT.
+The cloud changes how IT accounts for costs. Various IT accounting models are much easier to support because of how the cloud allocates costs, so it's important to understand how to account for cloud costs before you begin a cloud-transformation journey. This article outlines the most common cloud accounting models for IT.
 
 ### Traditional IT accounting (cost-center model)
 
 It's often accurate to consider IT a cost center. In the traditional IT accounting model, IT consolidates purchasing power for all IT assets. As we pointed out in the financial models article, that purchasing power consolidation can include software licenses, recurring charges for CRM licensing, purchase of employee desktops, and other large costs.
 
-When IT serves as a cost center, the perceived value of IT is largely viewed through a procurement management lens. This perception makes it difficult for the board or other executives to understand the true value that IT provides. Procurement costs tend to skew the view of IT by outweighing any other value added by the organization. This view explains why IT is often lumped into the responsibilities of either the chief financial officer or the chief operating officer. This perception of IT is limited and might be shortsighted.
+When IT serves as a cost center, the perceived value of IT is largely viewed through a procurement-management lens. This perception makes it difficult for the board or other executives to understand the true value that IT provides. Procurement costs tend to skew the view of IT by outweighing any other value added by the organization. This view explains why IT is often lumped into the responsibilities of either the chief financial officer or the chief operating officer. This perception of IT is limited and might be shortsighted.
 
 ### Central IT accounting (profit-center model)
 
@@ -188,9 +188,9 @@ In a central IT accounting model, the IT team marks up the services provided to 
 
 One of the common first steps in changing IT's reputation as a cost center is implementing a chargeback model of accounting. This model is especially common in smaller enterprises or highly efficient IT organizations. In the chargeback model, any IT costs that are associated with a specific business unit are treated like an operating expense in that business unit's budget. This practice reduces the cumulative cost effects on IT, allowing business values to show more clearly.
 
-In a legacy on-premises model, chargeback is difficult to realize because someone still has to carry the large capital expenses and depreciation. The ongoing conversion from capital expenditures to operating expenses associated with usage is a difficult accounting exercise. This difficulty is a major reason for the creation of the traditional IT accounting model and the central IT accounting model. The operating expenses model of cloud cost accounting is almost required if you want to efficiently deliver a chargeback model.
+In a legacy on-premises model, chargeback is difficult to realize because someone still has to carry the large capital expenses and depreciation. The ongoing conversion from capital expenditures to operating expenses associated with usage is a difficult accounting exercise. This difficulty is a major reason for the creation of the traditional IT accounting model and the central IT accounting model. The operating-expenses model of cloud cost accounting is almost required if you want to efficiently deliver a chargeback model.
 
-But, you shouldn't implement this model without considering the implications. Here are a few consequences that are unique to a chargeback model:
+However, you shouldn't implement this model without considering the implications. Here are a few consequences that are unique to a chargeback model:
 
 * Chargeback results in a massive reduction of the overall IT budget. For IT organizations that are inefficient or require extensive complex technical skills in operations or maintenance, this model can expose those expenses in an unhealthy way.
 
@@ -198,13 +198,28 @@ But, you shouldn't implement this model without considering the implications. He
 
 * Difficulty with accounting for shared services is another common consequence. If the organization has grown through acquisition and is carrying technical debt as a result, it's likely that a high percentage of shared services must be maintained to keep all systems working together effectively.
 
-Cloud transformations include solutions to these and other consequences associated with a chargeback model. But each of those solutions includes implementation and operating expenses. The CIO and CFO should carefully weigh the pros and cons of a chargeback model before considering one.
+Cloud transformations include solutions to these and other consequences associated with a chargeback model, but each of those solutions includes implementation and operating expenses. The CIO and CFO should carefully weigh the pros and cons of a chargeback model before considering one.
 
 ### Showback or awareness-back
 
 For larger enterprises, a showback or awareness-back model is a safer first step in the transition from cost center to value center. This model doesn't affect financial accounting. In fact, the P&Ls of each organization don't change. The biggest shift is in mindset and awareness. In a showback or awareness-back model, IT manages the centralized, consolidated buying power as an agent for the business. In reports back to the business, IT attributes any direct costs to the relevant business unit, which reduces the perceived budget directly consumed by IT. IT also plans budgets based on the needs of the associated business units, which allows IT to more accurately account for costs associated with purely IT initiatives.
 
 This model provides a balance between a true chargeback model and more traditional models of IT accounting.
+
+## Cloud accounting tools
+
+There are several valuable tools you can leverage to project the costs involved in migrating to the cloud up front. Predicting and estimating costs will provide your organization with KPIs you can later use to compare predicted versus actual costs once you’ve completed your cloud migration.
+
+**Azure Pricing Calculator**: Use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) to configure and estimate the costs for Azure products.
+
+Try the Azure Pricing Calculator [here](https://azure.microsoft.com/pricing/calculator/).
+
+**Azure Virtual Machine (VM) Cost Estimator**: The Azure VM Cost Estimator is a Power BI template that allows you to estimate your cost savings against pay-as-you-go pricing by optimizing Azure offers and benefits for VMs like Azure Hybrid Benefit and reserved instances. When you’re evaluating large-scale data centers, more than a hundred compute units, for example, using the web-based Azure Pricing Calculator can be challenging because it requires you to input a significant number of technical criteria. The Azure VM Cost Estimator includes an Excel file that feeds data into the BI template, allowing you to input a much larger list of criteria, along with additional technical specifications like the number of cores assigned to a specific compute unit or the memory footprint and associated utilization. You can even specify the currency value you want the price list generated in, and the different Azure targets you want to place your workloads in. In that way, the Azure VM Cost Estimator helps you automate the cloud cost estimation process.
+
+Download the following files to use the Power BI model:
+
+- [Power BI template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/azure-virtual-machine-cost-estimator.pbix)
+- [Excel file that feeds data into the Power BI template](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FCloudAdoptionFramework%2Fmaster%2Fstrategy%2Fon-premises-compute-unit-lists.xlsx&wdOrigin=BROWSELINK) 
 
 ## Impact of cloud accounting models
 

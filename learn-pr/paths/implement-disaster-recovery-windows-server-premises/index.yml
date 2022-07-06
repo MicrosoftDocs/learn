@@ -30,6 +30,9 @@ products:
 - azure-backup
 - azure-site-recovery
 - windows-server
+subjects:
+- business-continuity
+- infrastructure
 modules:
 - learn.wwl.implement-hyper-v-replica
 - learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas

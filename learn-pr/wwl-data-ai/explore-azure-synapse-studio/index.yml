@@ -28,6 +28,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- cloud-computing
 units:
 - learn.wwl.explore-azure-synapse-studio.introduction
 - learn.wwl.explore-azure-synapse-studio.use

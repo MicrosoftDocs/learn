@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.test-python-with-pytest.pytest-basics
+title: Pytest basics
+metadata:
+  title: Pytest basics
+  description: Find about the basics on testing conventions in Python and Pytest. These conventions will help you organize your tests and get them discovered.
+  ms.date: 1/25/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-pytest-basics.md)]

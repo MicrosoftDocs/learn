@@ -32,6 +32,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- database
 units:
 - learn.azure-sql-performance.1-introduction
 - learn.azure-sql-performance.2-performance-capabilities

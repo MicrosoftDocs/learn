@@ -1,4 +1,4 @@
-In today's fast-paced, digital world, your users expect more from your applications. You want them to have a great experience and not be affected by performance issues. How do you identify potential performance bottlenecks in your architecture?
+In today's fast-paced digital world, your users expect more from your applications. You want them to have a great experience and not be affected by performance issues. How do you identify potential performance bottlenecks in your architecture?
 
 In this unit, you'll look at processes and tools that can help you make sure that your application performs well. They also can help you discover the cause if your application doesn't perform well.
 
@@ -8,9 +8,9 @@ Before we talk about performance, it's important to talk about requirements. In 
 
 *Nonfunctional requirements* help you find that point. These particular requirements don't tell you what your app must *do*. Instead, they tell you what quality levels it must meet. For example, you can define nonfunctional requirements to discover:
 
-- How fast a transaction must return under a given load.
-- How many simultaneous connections your application needs to support before it begins to return errors.
-- If there's server failure, what's the maximum amount of time your application is allowed to be down before a backup is online.
+- How fast a transaction must return under a given load
+- How many simultaneous connections your application needs to support before it begins to return errors
+- If there's server failure, the maximum amount of time your application is allowed to be down before a backup is online
 
 Defining these requirements in advance of building your solution is critical. They ensure that your application meets expectations but doesn't require more effort or cost more money than necessary. You can also plan your monitoring and operations rules around these nonfunctional requirements.
 
@@ -22,7 +22,7 @@ In the following section, let's look at some ways to track performance in your a
 
 Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business application and associated resources.
 
-You want to be kept informed that your applications are running smoothly. Proactive notifications can be used to inform about critical issues that arise. There are many layers of monitoring to consider. Let's focus on the infrastructure layer and the application layer.
+You want to be kept informed that your applications are running smoothly. You can use proactive notifications to inform about critical issues that arise. There are many layers of monitoring to consider. Let's focus on the infrastructure layer and the application layer.
 
 ### Azure Monitor
 
@@ -42,7 +42,7 @@ Azure Monitor can collect data from a variety of sources. You can think of monit
 
 As soon as you create an Azure subscription and start adding resources, such as VMs and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified. Metrics tell you how the resource is performing and the resources that it's consuming. You can also extend the data you collect. You can enable diagnostics in your apps and add agents to collect telemetry data from Linux and Windows or Application Insights.
 
-Azure Monitor is the place to start for all your resource metric insights gathered in near real time. Many Azure resources start outputting metrics automatically after they're deployed. For example, web apps built with the Web Apps feature of Azure App Service output compute and application request metrics. Metrics from Application Insights are also collated here in addition to VM host diagnostic metrics. VM guest diagnostic metrics also appear after you opt in.
+Azure Monitor is the place to start for all your resource metric insights gathered in near-real time. Many Azure resources start outputting metrics automatically after they're deployed. For example, web apps built with the Web Apps feature of Azure App Service output compute and application-request metrics. Metrics from Application Insights are also collated here, in addition to VM host diagnostic metrics. VM guest diagnostic metrics also appear after you opt in.
 
 ### Log Analytics
 
@@ -64,6 +64,6 @@ You can use Application Insights to consume telemetry from the host environments
 
 Application Insights stores its data in a common repository, and metrics are shared with Azure Monitor. Application Insights can also take advantage of shared functionality such as alerts, dashboards, and deep analysis with the Log Analytics query language.
 
-A common pattern used to determine the availability of a web application is the health endpoint monitoring pattern. This pattern is used to monitor web applications and their associated back-end services to ensure that they're available and performing correctly. The pattern is implemented by querying a particular URI. The endpoint checks on the status of many components. Even the back-end services that the app depends on are checked instead of only the availability of the front end itself. The health endpoint monitoring pattern acts as a service-level health check that returns an indication of the overall health of the service.
+A common pattern used to determine the availability of a web application is the health endpoint monitoring pattern. This pattern is used to monitor web applications and their associated back-end services to ensure that they're available and performing correctly. The pattern is implemented by querying a particular URI. The endpoint checks on the status of many components. Even the back-end services that the app depends on are checked, instead of only the availability of the front end itself. The health endpoint monitoring pattern acts as a service-level health check that returns an indication of the overall health of the service.
 
-You should use an APM solution such as Application Insights to gain a deep understanding of your application and to correlate activity across your application. An APM solution can help you understand how a specific action works in the client browser, on the server, and through to downstream services. It also provides insight into trends. An APM solution provides notifications when there's a problem, helps to identify where the problem is, and informs you on how to fix it before your users are aware of it.
+You should use an APM solution such as Application Insights to gain a deep understanding of your application and to correlate activity across your application. An APM solution can help you understand how a specific action works in the client browser, on the server, and through to downstream services. It also provides insight into trends. An APM solution provides notifications when there's a problem, helps to identify where the problem is, and informs you how to fix it before your users are aware of it.

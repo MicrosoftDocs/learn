@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- cloud-computing
 modules:
 - learn.student-evangelism.intro-to-python
 - learn.student-evangelism.python-object-oriented-programming

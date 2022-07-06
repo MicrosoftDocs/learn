@@ -28,6 +28,9 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- devops
+- development-tools
 units:
 - learn.language.rust-set-up-environment.1-introduction
 - learn.language.rust-set-up-environment.2-install-vs-code

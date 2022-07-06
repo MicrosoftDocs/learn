@@ -33,6 +33,8 @@ roles:
 - solution-architect
 products:
 - github
+subjects:
+- devops
 modules:
 - learn.github.introduction-to-github
 - learn.github.release-based-workflow-github

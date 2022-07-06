@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-classification-models.exercise-train-evaluate-multiclass-models
+title: Exercise - Train and evaluate multiclass classification models
+metadata:
+  title:  Exercise - Train and evaluate multiclass classification models
+  description: In this exercise, you'll train and evaluate multiclass classification models.
+  ms.date: 05/11/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: /learn/modules/introduction-classification-models/notebooks/7-exercise-train-evaluate-multiclass-models.ipynb

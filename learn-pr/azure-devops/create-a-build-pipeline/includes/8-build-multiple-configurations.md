@@ -32,7 +32,7 @@ A better solution is to use a template.
 
 A *template* lets you define common build tasks one time and reuse those tasks multiple times.
 
-You will call a template from the parent pipeline as a build step. You can pass parameters into a template from the parent pipeline.
+You'll call a template from the parent pipeline as a build step. You can pass parameters into a template from the parent pipeline.
 
 Mara can define tasks to build and publish the app as a template, and then apply that template to each configuration she needs.
 
@@ -63,7 +63,7 @@ You'll now create a template that can build any configuration that's defined in 
 
    - In a template file, use the `parameters` section instead of `variables` to define inputs.
    - In a template file, use `${{ }}` syntax instead of `$()` to read a parameter's value.
-        When you read a parameter's value, you will include the `parameters` section in its name. For example, `${{ parameters.buildConfiguration }}`.
+        When you read a parameter's value, you'll include the `parameters` section in its name. For example, `${{ parameters.buildConfiguration }}`.
 
 ## Call the template from the pipeline
 

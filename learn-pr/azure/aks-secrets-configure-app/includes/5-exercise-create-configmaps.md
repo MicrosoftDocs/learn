@@ -15,10 +15,12 @@ The back-end part of the application is deployed and now you need to deploy the 
 
 ## Before we start
 
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
 
 ```azurecli-interactive
-export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export RESOURCE_GROUP=rg-ship-manager
 export CLUSTER_NAME=ship-manager-cluster
 ```
 
@@ -153,7 +155,7 @@ The complete cluster creation can take up to five minutes.
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-ship-manager-frontend
@@ -166,9 +168,12 @@ The complete cluster creation can take up to five minutes.
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: contoso-ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: contoso-ship-manager-frontend
+                    port: 
+                      name: http
     ```
 
     Change the DNS zone present in the Ingress to match the DNS you copied from the first step.
@@ -178,7 +183,7 @@ The complete cluster creation can take up to five minutes.
 1. Deploy the application by running the following command:
 
     ```bash
-    kubectl apply -f frontend.yaml`.
+    kubectl apply -f frontend.yaml
     ```
 
 1. Check your work by querying the Kubernetes API:

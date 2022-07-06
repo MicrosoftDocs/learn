@@ -30,6 +30,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.introduction-to-ad-ds.introduction
 - learn.wwl.introduction-to-ad-ds.define

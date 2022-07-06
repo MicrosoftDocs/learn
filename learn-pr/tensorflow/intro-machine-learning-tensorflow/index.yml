@@ -30,6 +30,8 @@ prerequisites: |
   - Basic Python knowledge.
   - Basic knowledge about how to use Jupyter Notebooks.
   - Completion of module 1 of this learning path or knowledge of Keras.
+subjects:
+- development-tools
 units:
 - learn.tensorflow.intro-machine-learning-tensorflow.introduction
 - learn.tensorflow.intro-machine-learning-tensorflow.tensors-variables

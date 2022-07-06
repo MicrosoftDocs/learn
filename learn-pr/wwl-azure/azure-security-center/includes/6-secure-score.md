@@ -10,7 +10,7 @@ The secure score page of Security Center includes:
 
  -  **The score** \- The secure score is shown as a percentage value, but the underlying values are also clear:
 
-:::image type="content" source="../media/az500-secure-score-1-f06d5cd2.png" alt-text="ASC secure score as shown on the security score page.":::
+:::image type="content" source="../media/az500-secure-score-1-f06d5cd2.png" alt-text="Microsoft Defender for Cloud secure score as shown on the security score page.":::
 
 
  -  **Security controls** \- Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. A control is a set of security recommendations, with instructions that help you implement those recommendations. Your score only improves when you remediate all of the recommendations for a single resource within a control. The higher the score, the lower the identified risk level.
@@ -21,7 +21,7 @@ To immediately determine how well your organization is securing each individual 
 
 The contribution of each security control towards the overall secure score is shown clearly on the recommendations page.
 
-:::image type="content" source="../media/az500-secure-score-2-73470cd2.png" alt-text="Security Center - Recommendations page is displayed.":::
+:::image type="content" source="../media/az500-secure-score-2-73470cd2.png" alt-text="Microsoft Defender for Cloud - Recommendations page is displayed.":::
 
 
 To get all the possible points for a security control, all your resources must comply with all of the security recommendations within the security control. For example, Security Center has multiple recommendations regarding how to secure your management ports. In the past, you could remediate some of those related and interdependent recommendations while leaving others unsolved, and your secure score would improve. When looked at objectively, it's easy to argue that your security hadn't improved until you had resolved them all. Now, you must remediate them all to make a difference to your secure score.

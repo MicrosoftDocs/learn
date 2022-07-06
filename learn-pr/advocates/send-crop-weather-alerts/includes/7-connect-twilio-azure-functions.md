@@ -13,30 +13,30 @@ func azure functionapp list-functions $FUNCTION_APP_NAME --show-keys
 In the output, find the `SetupAlert` URL:
 
 ```output
-Functions in cropweatheralertjabenn:
+Functions in cropweatheralert20200519:
     CheckForecast - [timerTrigger]
 
     ProcessAndNotify - [queueTrigger]
 
     SetupAlert - [httpTrigger]
-        Invoke url: https://cropweatheralertjabenn.azurewebsites.net/api/setupalert?code=Secr3tC0de
+        Invoke url: https://cropweatheralert20200519.azurewebsites.net/api/setupalert?code=Secr3tC0de
 ```
 
 The full URL is displayed after `Invoke url:`. Copy and save the URL to use in the next section.
 
 ### Set up Twilio to respond to function app requests
 
-Now that everything is set up, the only thing left to do is to make Twilio call the function app endpoint for incoming text messages.
+Now that everything is set up, the only thing left is to make Twilio call the function app endpoint for incoming text messages.
 
 1. In a web browser, sign in to [Twilio](https://www.twilio.com?azure-portal=true).
 
-1. In the left menu, select the ellipsis (**...**).
+1. In the **Develop** menu, select **Phone Numbers**.
 
-    :::image type="content" source="../media/twilio-elipses.png" alt-text="Screenshot that shows the ellipsis button highlighted in Twilio."::: 
+1. Select **Manage** > **Active numbers**, and then select your phone number.
 
-1. Select **Super Network** > **Phone Numbers** > **Manage Numbers** > **Active Numbers**. Select your phone number.
+    :::image type="content" source="../media/twilio-develop.png" alt-text="Screenshot that shows the Active numbers button highlighted in Twilio.":::
 
-1. In the **Messaging** section, paste the function endpoint URL that you copied in the preceding unit as the webhook destination for arriving messages.
+1. In the **Messaging Service** section, paste the function endpoint URL that you copied in the preceding section as the webhook destination for arriving messages.
 
     :::image type="content" source="../media/twilio-webhook.png" alt-text="Screenshot that shows the webhook destination.":::
 

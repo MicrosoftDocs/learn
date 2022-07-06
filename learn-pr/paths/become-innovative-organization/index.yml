@@ -22,6 +22,9 @@ products:
 - azure
 - dynamics-365
 - m365
+subjects:
+- artificial-intelligence
+- business-applications
 modules:
 - learn-wwl.organize-for-adaptability
 - learn-wwl.cultivate-innovative-mindset

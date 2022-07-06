@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database
+metadata:
+  moduleType: standard
+  title: Deploy Express.js web app with MongoDB database to Azure App Service
+  description: "Learn how to create, configure and deploy an Express.js (Node.js) web app with a MongoDB database to Azure App Service."
+  ms.date: 05/06/2022
+  author: diberry
+  ms.author: diberry
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.custom: team=devex
+title: Deploy Express.js web app with MongoDB database to Azure App Service
+summary: "Learn how to create, configure and deploy an Express.js (Node.js) web app with a MongoDB database to Azure App Service."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Set up and run local development environment.
+    - Create and configure Azure resources for an Express.js + MongoDB app.
+    - Deploy app and data to Azure.
+prerequisites: |
+  - Conceptual understanding of cloud development and deployment
+  - JavaScript server web development experience
+  - MongoDB database experience
+  - GitHub experience
+  - Visual Studio Code for the local development environment
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+  - developer
+  - devops-engineer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+- azure
+- azure-app-service
+- azure-cosmos-db
+units:
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.introduction
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.set-up
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-set-up
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-local-database
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-local-database
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.set-up-azure-resources
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-set-up-azure-resources
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmos-db-resource
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-create-cosmos-db-resource
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.configure-app-service-connection-to-cosmos-db
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-configure-app-service-connection-to-cosmos-db
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.knowledge-check
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.summary
+badge:
+  uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.badge

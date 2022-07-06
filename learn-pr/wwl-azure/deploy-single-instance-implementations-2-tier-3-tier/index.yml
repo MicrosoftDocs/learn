@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.introduction
 - learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.explore-deployment-methodologies

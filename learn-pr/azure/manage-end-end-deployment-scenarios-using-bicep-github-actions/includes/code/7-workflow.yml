@@ -11,15 +11,15 @@ jobs:
 
   # Build the application and database.
   build:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/build.yml@main
+    uses: ./.github/workflows/build.yml
 
   # Lint the Bicep file.
   lint:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/lint.yml@main
+    uses: ./.github/workflows/lint.yml
 
   # Deploy to the test environment.
   deploy-test:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
     needs: [build, lint]
     with:
       environmentType: Test
@@ -33,7 +33,7 @@ jobs:
 
   # Deploy to the production environment.
   deploy-production:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
     needs:
     - lint
     - build

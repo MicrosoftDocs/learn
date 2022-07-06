@@ -30,6 +30,8 @@ products:
 prerequisites: |
   - Familiarity with .NET 6
   - A basic understanding of what an API is
+subjects:
+- database
 units:
   - learn.aspnetcore.build-web-api-minimal-database.introduction
   - learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-core
@@ -40,4 +42,3 @@ units:
   - learn.aspnetcore.build-web-api-minimal-database.summary
 badge:
   uid: learn.aspnetcore.build-web-api-minimal-database.badge
-  

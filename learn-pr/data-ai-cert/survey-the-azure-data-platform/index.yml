@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- data-engineering
 units:
 - learn.data-ai.survey-the-azure-data-platform.introduction
 - learn.data-ai.survey-the-azure-data-platform.structured-vs-non-structured

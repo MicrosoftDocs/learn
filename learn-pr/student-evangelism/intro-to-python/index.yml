@@ -27,6 +27,8 @@ roles:
   - student
 products:
   - azure
+subjects:
+- development-tools
 units:
   - learn.student-evangelism.intro-to-python.introduction
   - learn.student-evangelism.intro-to-python.what-is-python

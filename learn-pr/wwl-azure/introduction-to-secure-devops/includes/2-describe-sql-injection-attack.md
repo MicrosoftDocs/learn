@@ -21,33 +21,33 @@ In this tutorial, we'll simulate a SQL injection attack.
  -  Use the [SQL Injection Azure Resource Manager Template](https://azure.microsoft.com/resources/templates/sql-injection-attack-prevention/) to provision a web app and an SQL database with known SQL injection vulnerability.
  -  Ensure you browse the 'Contoso Clinic' web app provisioned in your SQL injection resource group.
 
-    :::image type="content" source="../media/contoso-clinic-web-browser-8d46b68d.png" alt-text="Contoso Clinic from web browser.":::
+    :::image type="content" source="../media/contoso-clinic-web-browser-8d46b68d.png" alt-text="Screenshot of the Contoso Clinic application from web browser.":::
 
 
 ## How it works
 
 1.  Navigate to the Patients view, and in the search box, type `"'"` and hit enter. You'll see an error page with SQL exception indicating that the search box feeds the text into a SQL statement.
 
-    :::image type="content" source="../media/server-error-application-syntax-f441fe7d.png" alt-text="Server error in application. SQL syntax.":::
+    :::image type="content" source="../media/server-error-application-syntax-f441fe7d.png" alt-text="Screenshot of server error in application. SQL syntax.":::
 
 
     The helpful error message is enough to guess that the text in the search box is being appended into the SQL statement.
 
 2.  Next, try passing a SQL statement `'AND FirstName = 'Kim'--` in the search box. You'll see that the results in the list below are filtered down to only show the entry with firstname Kim.
 
-    :::image type="content" source="../media/patients-table-290c5cdd.png" alt-text="Patients table.":::
+    :::image type="content" source="../media/patients-table-290c5cdd.png" alt-text="Screenshot of the patients table. Schema representation.":::
 
 
 3.  You can try to order the list by SSN by using this statement in the search box `'order by SSN--`.
 
-    :::image type="content" source="../media/patients-table-order-2f2ef7cf.png" alt-text="Patients table order by SSN.":::
+    :::image type="content" source="../media/patients-table-order-2f2ef7cf.png" alt-text="Screenshot of the patients table order by SSN.":::
 
 
 4.  Now for the finale, run this drop statement to drop the table that holds the information displayed on this page... `'AND 1=1; Drop Table Patients --`. Once the operation is complete, try and load the page. You'll see that the view errors out with an exception indicating that the dbo.patients table can't be found.
 
-    :::image type="content" source="../media/invalid-object-name-patients-5a5dc6b9.png" alt-text="Invalid object name dbo.Patients.":::
+    :::image type="content" source="../media/invalid-object-name-patients-5a5dc6b9.png" alt-text="Screenshot of an invalid object name dbo.Patients.":::
 
 
 ## There's more
 
-The Azure security center team has other [playbooks](https://azure.microsoft.com/blog/enhance-your-devsecops-practices-with-azure-security-center-s-newest-playbooks/) you can look at to learn how vulnerabilities are exploited to trigger a virus attack and a DDoS attack.
+The Azure security center team has other [playbooks](/azure/security-center/security-center-playbooks) you can look at to learn how vulnerabilities are exploited to trigger a virus attack and a DDoS attack.

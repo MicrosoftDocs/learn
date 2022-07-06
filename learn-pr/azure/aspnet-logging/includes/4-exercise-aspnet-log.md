@@ -287,7 +287,7 @@ The sample logger currently is set to write to a local file. Although this appro
     > [!NOTE]
     > The scripts in these files run when data is added to the database. Data is added automatically the first time the application is run with a new database as the target. The statements that you commented out are required only when you run the application locally. When the application runs with the Azure SQL Database instance as the target, the database to be used is specified as part of the connection string.
 
-1. Ensure that you are signed in to your Azure account in Visual Studio.
+1. Ensure that you're signed in to your Azure account in Visual Studio.
 
    :::image type="content" source="../media/4-toolbar-sign-in.png" alt-text="Screenshot of the Visual Studio toolbar, with the Sign in link highlighted.":::
 
@@ -297,7 +297,7 @@ The sample logger currently is set to write to a local file. Although this appro
 
 1. If you didn't previously deploy the web app and configure the connection to Azure SQL Database, complete the following substeps. Otherwise, go to step 7.
 
-    1. In the Azure PowerShell window, run the following command to give your computer access the SQL Database server you created in the setup unit. Replace *YourIPAddress* with the public IP address of your computer.
+    1. In the Azure PowerShell window, run the following command to give your computer access to the SQL Database server you created in the setup unit. Replace *YourIPAddress* with the public IP address of your computer.
 
         > [!NOTE]
         > Make sure you specify the public IP address of your computer, not the IP address of the host that's running Cloud Shell.
@@ -367,7 +367,7 @@ The sample logger currently is set to write to a local file. Although this appro
 
     :::image type="content" source="../media/4-search-storage.png" alt-text="Screenshot of the start page in the Azure portal, with Storage in the search box and Storage accounts under Services highlighted.":::
 
-1. On the **Storage accounts** pane, select the storage account you created earlier to store the web application logs. In this exercise, the storage account name is prefixed with your ID and the number you specified when you created you user alias in the setup unit. Other storage accounts might exist and be used by Cloud Shell and other services.
+1. On the **Storage accounts** pane, select the storage account you created earlier to store the web application logs. In this exercise, the storage account name is prefixed with your ID and the number you specified when you created your user alias in the setup unit. Other storage accounts might exist and be used by Cloud Shell and other services.
 
     :::image type="content" source="../media/4-select-storage.png" alt-text="Screenshot of the Storage accounts pane, with the storage account that contains the web application logs highlighted.":::
 

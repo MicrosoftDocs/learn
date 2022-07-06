@@ -42,6 +42,9 @@ products:
 - azure-monitor
 - azure-portal
 - azure-virtual-machines
+subjects:
+- devops
+- knowledge-management
 units:
 - learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.introduction
 - learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.inventory

@@ -20,6 +20,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- cloud-computing
+- marketing-sales
 modules:
 - learn.wwl.implement-azure-vm-based-sap-solutions
 - learn.wwl.migrate-sap-workloads-azure

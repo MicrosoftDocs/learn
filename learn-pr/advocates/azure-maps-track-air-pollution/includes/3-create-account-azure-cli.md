@@ -23,7 +23,7 @@ The message **Sandbox activated!** appears, and you can continue with the learni
 Activate the sandbox, and then run this command to create a new Azure Maps account:
 
 ```console
-az maps account create --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn> --accept-tos
+az maps account create --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn> --accept-tos --sku g2 --kind gen2
 ```
 
 > [!Note]

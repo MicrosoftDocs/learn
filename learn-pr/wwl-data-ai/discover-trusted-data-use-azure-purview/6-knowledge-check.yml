@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-trusted-data-use-azure-purview.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/21/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What feature of Microsoft Purview can analysts and other data consumers use to find trustworthy data for reports?"
+    choices:
+    - content: "Data map."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview data map makes data meaningful by graphing data assets and their relationships across a data estate."
+    - content: "Data catalog."
+      isCorrect: true
+      explanation: "Correct. Microsoft Purview data catalog helps users find trusted data sources by browsing and searching data assets across a data estate."
+    - content: "Data policies."
+      isCorrect: false
+      explanation: "Incorrect. Data access policies in Microsoft Purview enable you to manage access to different data systems."
+  - content: "If an analyst is looking for a specific asset by name and type, what is the most efficient way to find that asset in the data catalog?"
+    choices:
+    - content: "Browse assets."
+      isCorrect: false
+      explanation: "Incorrect. Browsing assets is a good option when users want to explore what data is available."
+    - content: "Manage glossary."
+      isCorrect: false
+      explanation: "Incorrect. The business glossary is a definition of terms specific to a domain of knowledge that is commonly used, communicated, and shared in organizations as they are conducting business."
+    - content: "Search catalog."
+      isCorrect: true
+      explanation: "Correct. Searching the data catalog can help users quickly find assets they're looking for."
+  - content: "How can users download Power BI data source files that contain connections to assets discovered in Microsoft Purview?"
+    choices:
+    - content: "In the Microsoft Purview data catalog, in the asset view."
+      isCorrect: true
+      explanation: "Correct. There's a button in the asset view to open the asset in Power BI desktop."
+    - content: "In the Microsoft Purview insights report."
+      isCorrect: false
+      explanation: "Incorrect. The insights report gives a bird's eye view of a data estate, and its distribution by source type, by classification and by file size as some of the dimensions."
+    - content: "Users can't download Power BI data source files from Microsoft Purview."
+      isCorrect: false
+      explanation: "Incorrect. Users can download Power BI data source files from Microsoft Purview."

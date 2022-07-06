@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Data manipulation part 3 - Impute missing values by using machine learning'
   description: Use a linear regression machine learning model to impute data in complex columns.
   ms.date: 03/10/2021
-  author: drguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

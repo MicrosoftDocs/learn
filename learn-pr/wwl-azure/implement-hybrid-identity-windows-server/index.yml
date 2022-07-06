@@ -46,6 +46,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-computing
 units:
 - learn.wwl.implement-hybrid-identity-with-windows-server.introduction
 - learn.wwl.implement-hybrid-identity-with-windows-server.select-azure-ad-integration-model

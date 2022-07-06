@@ -1,12 +1,12 @@
-Here, we discuss some ways you can automate security checks in a repository that are available to GitHub repository administrators.
+Here, we'll discuss some ways you can automate security checks in a repository that are available to GitHub repository administrators.
 
 ## Detect and fix outdated dependencies with security vulnerabilities
 
-Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they can introduce other security risks. Staying on top of these packages and their vulnerability status can be time-consuming, especially given how each dependency may have its own dependencies that can become difficult to track and maintain. Fortunately, GitHub provides features that reduce this workload.
+Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they can introduce other security risks. Staying on top of these packages and their vulnerability status can be time consuming, especially given how each dependency may have its own dependencies that can become difficult to track and maintain. Fortunately, GitHub provides features that reduce this workload.
 
 ### Repository dependency graphs
 
-One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs enable project owners to recursively track all of the dependencies their project relies on.
+One default feature every repository enjoys is dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs allow project owners to recursively track all of the dependencies their project relies on.
 
 ![GitHub dependency graph](../media/2-dependency-graph.png)
 
@@ -28,9 +28,9 @@ To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot
 
 Similar to how Dependabot scans your repository for dependency alerts, you can use code scanning to analyze and find security vulnerabilities and errors in the code in a GitHub repository. Code scanning has several benefits; you can use it to find, triage, and prioritize fixes for existing problems or potential security vulnerabilities. It's also useful to help prevent developers from introducing any new security problems into the code.
 
-Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data which enables you to create custom queries, or use queries maintained by the open-source community. Code scanning gives you freedom to customize and maintain how the code within your repository is being scanned. 
+Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data, which lats you create custom queries or use queries maintained by the open-source community. Code scanning gives you the freedom to customize and maintain how the code within your repository is being scanned.
 
-You can enable code scanning alerts and workflows in the security tab of a GitHub repository:
+You can enable code-scanning alerts and workflows in the security tab of a GitHub repository:
 
 :::image type="content" source="../media/security-overview.png" alt-text="A list of policies, advisories, and alerts with links to more information.":::
 
@@ -40,6 +40,6 @@ Learn more about [Code scanning and CodeQL](https://docs.github.com/en/free-pro-
 
 Another automated scanning feature within a GitHub repository is secret scanning. Similar to the previous security scanning features, secret scanning looks for known secrets or credentials committed within the repository. This scanning is done to prevent the use of fraudulent behavior and to secure the integrity of any sensitive data. By default, secret scanning occurs on public repositories and can be enabled on private repositories by repository administrators or organization owners.
 
-When secret scanning detects a set of credentials, GitHub notifies the service provider who issued the secret. The service provider validates the credential and then decides whether they should revoke the secret, issue a new secret, or reach out to you directly, which will depend on the associated risks to you or the service provider. 
+When secret scanning detects a set of credentials, GitHub notifies the service provider who issued the secret. The service provider validates the credential, then decides whether they should revoke the secret, issue a new secret, or reach out to you directly, which will depend on the associated risks to you or the service provider.
 
 Learn more about [Secret scanning for public and private repositories](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-secret-scanning).

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.azure.manage-azure-stack-hci-storage.replace-drives
+title: Replace drives in Azure Stack HCI
+metadata:
+  title: Replace drives in Azure Stack HCI
+  description: Overview of the process for managing drive failures.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/replace-drives.md)]

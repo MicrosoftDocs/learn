@@ -10,9 +10,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure Active Directory fundamentals documentation](/azure/active-directory/fundamentals/)
-
- -  [Learn - Manage users and groups in Azure Active Directory](/learn/modules/manage-users-and-groups-in-aad/)
+ -  [Learn - Manage users and groups in Azure Active Directory (Sandbox)](/learn/modules/manage-users-and-groups-in-aad/)
  -  [Learn - Create Azure users and groups in Azure Active Directory](/learn/modules/create-users-and-groups-in-azure-active-directory/)

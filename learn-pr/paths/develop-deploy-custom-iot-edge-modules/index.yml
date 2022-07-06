@@ -32,6 +32,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 modules:
 - learn.wwl.examine-iot-edge-module-development
 - learn.wwl.examine-offline-local-storage-capabilities

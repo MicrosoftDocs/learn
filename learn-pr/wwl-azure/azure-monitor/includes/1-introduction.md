@@ -15,7 +15,6 @@ Managing the secure operation of Azure is a part of [Exam AZ-500: Microsoft Azur
 Manage Security Operations (25-30%)
 
  -  Monitor security by using Azure Monitor
-    
      -  create and customize alerts
      -  monitor security logs by using Azure Monitor
      -  configure diagnostic logging and log retention

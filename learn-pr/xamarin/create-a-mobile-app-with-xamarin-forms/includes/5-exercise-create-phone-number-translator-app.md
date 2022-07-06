@@ -276,6 +276,9 @@ Build and run on any platform. It should display the alert, and allow you to dis
 
 Next, we'll use a cross-platform library called Xamarin.Essentials, which abstracts several platform-specific functions through a single API. Xamarin.Essentials offers a phone dialing API to make calls on the iOS and Android platforms. This library is provided as a NuGet package that we add to each of our projects. Because it provides implementations for our platforms and the shared abstraction, we add it to all of our projects.
 
+> [!NOTE]
+> If your project's Target Android version is set to **Android 11 (R API 30)**, you'll need to update your Android manifest. [Learn more](/xamarin/essentials/phone-dialer?tabs=android) about updating with queries used with the new package visibility requirements.
+
 ### Add permissions to the Android project
 
 To make calls on Android an additional step is required. We must explicitly declare the calling permission.

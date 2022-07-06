@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- cross-development
+- process-workflow
 units:
 - learn.azdo.deploy-nodejs.1-introduction
 - learn.azdo.deploy-nodejs.2-azure-support-nodejs

@@ -26,6 +26,8 @@ roles:
 - administrator
 products:
 - azure-kubernetes-service
+subjects:
+- infrastructure
 units:
 - learn.wwl.configure-azure-kubernetes-service.introduction
 - learn.wwl.configure-azure-kubernetes-service.explore-aks-terminology

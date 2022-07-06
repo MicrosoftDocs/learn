@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-synapse-link-for-sql.exercise-synapse-link-sql
+title: Exercise - Implement Azure Synapse Link for SQL
+metadata:
+  title: Exercise - Implement Azure Synapse Link for SQL
+  description: "Exercise - Implement Azure Synapse Link for SQL"
+  ms.date: 07/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 35
+content: |
+  [!include[](includes/5-exercise-synapse-link-sql.md)]

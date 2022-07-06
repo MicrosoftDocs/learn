@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.govern-azure-arc-enabled-servers
+metadata:
+  title: Govern your hybrid and multicloud machines through Azure Arc-enabled servers
+  description: Understand the governance capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Policy, Azure Automation, and Azure Automanage.
+  ms.date: 05/12/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Govern your hybrid and multicloud machines through Azure Arc-enabled servers
+summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about governance of Azure Arc-enabled servers.
+abstract: |
+  After you've completed this module, you will be able to:
+    - Understand the usage of Azure Policy and Guest Configuration with Azure Arc-enabled servers 
+    - Evaluate different Azure Automation offerings across inventory management, change tracking, and update management
+    -	Understand the onboarding process for and benefits of using Azure Automanage with Azure Arc-enabled servers 
+prerequisites: |
+  - Basic characteristics of Azure services and Azure Arc 
+  - Compute, storage, networking, and virtualization technologies 
+  - Basic Windows Server and Linux administration tasks 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-arc
+- azure-policy
+units:
+- learn.azure.govern-azure-arc-enabled-servers.introduction
+- learn.azure.govern-azure-arc-enabled-servers.govern-azure-arc-enabled-servers-with-azure-policy-guest-configuration
+- learn.azure.govern-azure-arc-enabled-servers.assign-azure-policies-to-govern-azure-arc-enabled-servers
+- learn.azure.govern-azure-arc-enabled-servers.azure-automanage-arc-best-practices
+- learn.azure.govern-azure-arc-enabled-servers.modernize-azure-arc-enabled-servers-with-azure-automation
+- learn.azure.govern-azure-arc-enabled-servers.knowledge-check
+- learn.azure.govern-azure-arc-enabled-servers.summary
+badge:
+  uid: learn.azure.govern-azure-arc-enabled-servers.badge

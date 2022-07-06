@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-github-packages.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices contains valid packages that GitHub Packages can host?"
+    choices:
+    - content: "Apache Maven, Gradle and Go modules."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Packages do not support Go modules."
+    - content: "RubyGems, Docker and NuGet."
+      isCorrect: true
+      explanation: "Correct. GitHub Packages can host npm, RubyGems, Apache Maven, Gradle, Docker, NuGet, and GitHub's Container registry."
+    - content: "NuGet, Conan (for C/C++), and Cargo (for Rust)."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Packages do not support Conan (for C/C++) and Cargo (for Rust)."
+  - content: "Which of the following choices is the most secure and recommended authentication method for GitHub Packages?"
+    choices:
+    - content: "Personal Access Token (PAT)."
+      isCorrect: true
+      explanation: "Correct. It's recommended to use PAT for a secure GitHub Packages authentication."
+    - content: "User and Password."
+      isCorrect: false
+      explanation: "Incorrect. User and Password isn't the most secure authentication method."
+    - content: "OAuth token."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Packages don't support OAuth tokens for authentication."
+  - content: "Which of the following choices is the minimum user or team permission within the GitHub organization that allows a package delete action?"
+    choices:
+    - content: "Write."
+      isCorrect: false
+      explanation: "Incorrect. Write permission can upload and download packages and read and write package metadata."
+    - content: "Read."
+      isCorrect: false
+      explanation: "Incorrect. Read permission can download packages and read package metadata."
+    - content: "Admin."
+      isCorrect: true
+      explanation: "Correct. Admin permission can upload, download, delete, and manage packages. Also, the admin can read and write package metadata and grant package permissions."

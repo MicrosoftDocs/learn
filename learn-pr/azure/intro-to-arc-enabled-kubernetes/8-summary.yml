@@ -2,13 +2,15 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.8-summary
 metadata:
   title: Summary
-  description: In this module, you learned how Azure Arc enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
-  ms.date: 12/14/2020
+  description: In this module, you learned how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
+  ms.date: 05/24/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
 title: Summary
 durationInMinutes: 3
 content: |

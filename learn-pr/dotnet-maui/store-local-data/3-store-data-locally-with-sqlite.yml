@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.store-local-data.store-data-locally-with-sqlite
+title: Store data locally with SQLite
+metadata:
+  unitType: unit
+  title: "Store data locally with SQLite"
+  description: "Use SQLite to store data in a .NET MAUI application"
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 15 
+content: |
+  [!include[](includes/3-store-data-locally-with-sqlite.md)]

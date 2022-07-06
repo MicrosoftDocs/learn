@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.onboard-microsoft-learn-educators-program.join-microsoft-learn-educators-community
+title: Demonstrate how to join the Microsoft Learn for Educators community
+metadata:
+  title: 7-Demonstrate how to join the Microsoft Learn for Educators community
+  description: "Demonstrate how to join the Microsoft Learn for Educators community"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-demonstrate-join-microsoft-learn-educators-community.md)]

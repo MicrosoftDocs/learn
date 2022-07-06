@@ -2,11 +2,11 @@ In this unit, you'll review Azure Migrate and how to use it to migrate specific 
 
 ## Virtual machine replication
 
-Add Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment completed during the Cloud Adoption Framework planning module. You can begin your replication by selecting **Replicate** in the tool window. 
+Add Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment completed during the Cloud Adoption Framework planning module. You can begin your replication by selecting **Replicate** in the tool window.
 
 Azure Migrate performs concurrent replication for up to 500 virtual machines (VMs) and can manage up to 200 concurrent migrations. If you need to do more, we recommend that you create multiple batches. Times for replication will vary based on number and size of VMs, along with connection speeds between your datacenter and Azure.
 
-During the replication setup phase, you can use the migration settings that your earlier Azure Migrate assessment suggested in terms of Azure Virtual Machines sizes. Or you can specify the settings yourself. This step gives you the option to configure the VM size and storage disk settings that you feel are appropriate to the workload being migrated.
+During the replication setup phase, you can use the migration settings that your earlier Azure Migrate assessment suggested in terms of Azure Virtual Machines sizes, or you can specify the settings yourself. This step gives you the option to configure the VM size and storage-disk settings that you feel are appropriate to the workload being migrated.
 
 Also at this stage, you're asked to specify the subscription, resource group, and virtual network where your VMs will reside after migration. You can also configure availability options such as Availability Zones or availability sets, helping to protect your applications and data from datacenter outages and maintenance events.
 
@@ -31,19 +31,19 @@ Testing your migration is a great feature that helps you become comfortable with
 
 When you're ready for the production migration, select **Migrate** from the **Replicating machines** page of the Azure admin center.
 
-The process will prompt you to shut down the machine before migration, which is an optional stage. If you shut down the machine, Azure Migrate will perform a planned migration with zero data loss (minimum data loss if you're using agent-based replication for the machine). If you choose not to shut down the machine, a final sync will be performed before the migration, but any changes that happen on the machine after the final sync is started won't be replicated. 
+The process will prompt you to shut down the machine before migration, which is an optional stage. If you shut down the machine, Azure Migrate will perform a planned migration with zero data loss (minimum data loss if you're using agent-based replication for the machine). If you choose not to shut down the machine, a final sync will be performed before the migration, but any changes that happen on the machine after the final sync is started won't be replicated.
 
-Termination of the source machine is an important step. But you should evaluate which option is best suited to each workload.
+Termination of the source machine is an important step, but you should evaluate which option is best suited to each workload.
 
 Because this step might affect production systems, migration should be completed during off-peak hours to minimize disruption to the business.
 
 :::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of the Server Migration page for replicating machines in the Azure admin center." border="false":::
 
-Now Server Migration will run through the production migration process. You can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
+Now, Server Migration will run through the production migration process. You can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
 
 ## Release tasks
 
-After the migration, you can release production traffic to the VM by rerouting network traffic to it. Before you reroute traffic, evaluate the workloads to ensure that each has a completed business change plan, technical validation, and business validation.
+After the migration, you can release production traffic to the VM by rerouting network traffic to it. Before you reroute traffic, evaluate the workloads to ensure that each has a completed business-change plan, technical validation, and business validation.
 
 **Business change plan:** Ensure that the following aspects of the business change plan are properly communicated to avoid business disruption:
 
@@ -66,6 +66,6 @@ After the migration, you can release production traffic to the VM by rerouting n
 - **Cost validation (plan versus actual).** Testing is likely to produce changes in sizing and architecture. Ensure that deployment pricing still aligns with the original plan.
 - **Communicate and execute cutover plan.** Prior to cutover, communicate the cutover and execute accordingly.
 
-Complete clean-up tasks for the remaining on-premises servers. Such tasks might include removing the servers from local backups and removing their raw disk files from storage-area network (SAN) storage to free up space. Update documentation related to the migrated servers to reflect their new IP addresses and locations in Azure.
+Complete cleanup tasks for the remaining on-premises servers. Such tasks might include removing the servers from local backups and removing their raw disk files from storage-area network (SAN) storage to free up space. Update documentation related to the migrated servers to reflect their new IP addresses and locations in Azure.
 
 After the final task in the preceding list is completed, the VM and supported workload are considered released. The final phase or discipline of migration is now finished for that workload.

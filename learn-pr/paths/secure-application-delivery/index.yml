@@ -25,6 +25,8 @@ products:
 - azure-web-application-firewall
 - azure-private-link
 - azure-bastion
+subjects:
+- cloud-security
 modules:
 - learn.intro-to-azure-front-door
 - introduction-azure-web-application-firewall

@@ -38,16 +38,11 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
     /* === using directive BEGIN === */
     using Microsoft.OpenApi.Models;
     /* === using directive END === */
-
-    namespace InventoryManagement.ApiApp
-    {
     ```
 
-1. Add the following code lines into the `ConfigureServices(IServiceCollection)` method.
+1. Replace all of the code inside of the `ConfigureServices(IServiceCollection)` method, with the following code:
 
     ```csharp
-    public void ConfigureServices(IServiceCollection services)
-    {
         services.AddControllers();
 
         /* === SwaggerGen BEGIN === */
@@ -56,14 +51,11 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "Inventory Management", Version = "v1" });
         });
         /* === SwaggerGen END === */
-    }
     ```
 
-1. Add the following code lines into the `Configure(IApplicationBuilder, IWebHostEnvironment)` method.
+1. Within the `Configure(IApplicationBuilder, IWebHostEnvironment)` method, find the `if (env.IsDevelopment())` conditional statement and replace everything above that statement with the following code:
 
     ```csharp
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
         /* === SwaggerUI BEGIN === */
         app.UseSwagger(c =>
         {
@@ -74,9 +66,6 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
         });
         app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "InventoryManagement.ApiApp v1"));
         /* === SwaggerUI END === */
-
-        if (env.IsDevelopment())
-        {
     ```
 
    You've just completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.

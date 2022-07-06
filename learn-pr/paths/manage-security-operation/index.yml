@@ -24,6 +24,8 @@ products:
 - azure-monitor
 - azure-security-center
 - azure-sentinel
+subjects:
+- cloud-security
 modules:
 - learn.wwl.azure-monitor
 - learn.wwl.azure-security-center

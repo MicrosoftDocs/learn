@@ -29,6 +29,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 units:
 - learn.wwl.azure-monitor-azure-stack-hub.introduction
 - learn.wwl.azure-monitor-azure-stack-hub.azure-monitor

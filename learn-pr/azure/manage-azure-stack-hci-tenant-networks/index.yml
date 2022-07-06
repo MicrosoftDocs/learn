@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.manage-azure-stack-hci-tenant-networks
+metadata:
+  title: 'Manage Azure Stack HCI tenant networks'
+  description: Azure Stack HCI provides a highly flexible and more secure multitenant networking environment.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Manage Azure Stack HCI tenant networks'
+summary: Manage Azure Stack HCI tenant networks.
+abstract:  | 
+  After completing this module, you’ll be able to:
+  - Describe and implement Azure Stack HCI logical and virtual networks.
+  - Describe the functionality and implementation of Gateway Services for hyperconverged infrastructure (HCI) tenant virtual machines (VMs) that use Remote Access Service (RAS) gateways and understand the Route Reflector role.
+  
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A good understanding of networking technologies and their implementation on the Windows operating system platform
+  - General familiarity with software-defined networking concepts
+  - General familiarity with Software-Defined Networking (SDN) on Microsoft Azure Stack HCI
+  - Experience in implementing Azure Stack HCI
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+- security-engineer
+products:
+- azure-stack-hci
+units:
+- learn.azure.manage-azure-stack-hci-tenant-networks.introduction
+- learn.azure.manage-azure-stack-hci-tenant-networks.describe-implement-azure-stack-hci-tenant-logical-networks
+- learn.azure.manage-azure-stack-hci-tenant-networks.describe-implement-azure-stack-hci-tenant-virtual-networks
+- learn.azure.manage-azure-stack-hci-tenant-networks.describe-implement-ras-gateway-azure-stack-hci
+- learn.azure.manage-azure-stack-hci-tenant-networks.describe-route-reflector-azure-stack-hci
+- learn.azure.manage-azure-stack-hci-tenant-networks.knowledge-check
+- learn.azure.manage-azure-stack-hci-tenant-networks.summary
+badge:
+  uid: learn.azure.manage-azure-stack-hci-tenant-networks.badge

@@ -1,8 +1,8 @@
 The ability to automate translation between languages helps remove barriers to collaboration across cultural and geographical boundaries.
 
-The Translator Text and Speech cognitive services in Azure provide cloud-based intelligence to support text and speech translation, enabling a wide range of scenarios for real-time and batch-process translation.
+The Translator and Speech cognitive services in Azure provide cloud-based intelligence to support text and speech translation, enabling a wide range of scenarios for real-time and batch-process translation.
 
-You can find out more about the using these services for translation in the [Translator text service documentation](/azure/cognitive-services/translator/) and the [Speech service documentation](/azure/cognitive-services/speech-service/).
+You can find out more about the using these services for translation in the [Translator service documentation](/azure/cognitive-services/translator/) and the [Speech service documentation](/azure/cognitive-services/speech-service/).
 
 ## Clean-up
 
@@ -14,4 +14,4 @@ If you have finished learning, you can delete the resource group or individual r
 
 1. In the [Azure portal](https://portal.azure.com/), in the **Resource groups** page, open the resource group you specified when creating your resource.
 
-2. Click **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**. You can also choose to delete individual resources by selecting the resource(s), clicking on the three dots to see more options, and clicking **Delete**.
+2. Select **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**. You can also choose to delete individual resources by selecting the resource(s), selecting the three dots to see more options, and selecting **Delete**.

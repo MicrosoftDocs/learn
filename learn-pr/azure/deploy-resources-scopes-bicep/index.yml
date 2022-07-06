@@ -5,8 +5,8 @@ metadata:
   title: Deploy resources to subscriptions, management groups, and tenants by using Bicep
   description: Learn how to deploy resources to subscription, management group, and tenant scopes within your Bicep code.
   ms.date: 10/14/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy resources to subscriptions, management groups, and tenants by using Bicep
@@ -43,6 +43,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.deploy-resources-different-scopes.introduction
 - learn.azure.deploy-resources-different-scopes.understand-deployment-scopes

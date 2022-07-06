@@ -32,6 +32,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- cloud-computing
 units:
 - learn.oxford.5g-business-models.introduction
 - learn.oxford.5g-business-models.business-functions

@@ -95,7 +95,7 @@ To create a starter web application, we'll use Maven, a commonly used project ma
 
     ```bash
     cd ~
-    mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
+    mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
     ```
 
 1. Now, run these commands to change to the new "helloworld" application directory and package the application for deployment:
@@ -212,7 +212,7 @@ While you are running the helloworld web app, you can verify it is running local
 
 To create a starter web application, we'll use the web application framework Flask.
 
-1. Run the following commands to set up a virtual environment, and install Flask in your profile.
+1. Run the following commands to set up a virtual environment and install Flask in your profile.
 
     ```bash
     python3 -m venv venv

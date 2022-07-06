@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- infrastructure
 modules:
 - learn.wwl.deploy-manage-dhcp
 - learn.wwl.implement-windows-server-dns

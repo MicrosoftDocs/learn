@@ -16,7 +16,7 @@ Some popular dialects of SQL include:
 Users who plan to work specifically with a single database system should learn the intricacies of their preferred SQL dialect and platform.
 
 > [!NOTE]
-> The SQL code examples in this module are based on the Transact-SQL dialog, unless otherwise indicated. The syntax for other dialogs is generally similar, but may vary in some details.
+> The SQL code examples in this module are based on the Transact-SQL dialect, unless otherwise indicated. The syntax for other dialects is generally similar, but may vary in some details.
 
 ## SQL statement types
 
@@ -96,7 +96,7 @@ The basic form of an **INSERT** statement will insert one row at a time. By defa
 > [!WARNING]
 > SQL doesn't provide *are you sure?* prompts, so be careful when using DELETE or UPDATE without a WHERE clause because you can lose or modify a lot of data.
 
-The following code is an example of a SQL statement that selects all columns (indicated by \*) from the **Customer** table where the **City** column value is "Seattle":
+The following code is an example of a SQL statement that selects all rows (indicated by \*) from the **Customer** table where the **City** column value is "Seattle":
 
 ```SQL
 SELECT *

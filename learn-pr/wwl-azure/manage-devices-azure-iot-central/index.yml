@@ -29,6 +29,9 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
+- device-management
 units:
 - learn.wwl.manage-devices-azure-iot-central.introduction
 - learn.wwl.manage-devices-azure-iot-central.manage-your-devices

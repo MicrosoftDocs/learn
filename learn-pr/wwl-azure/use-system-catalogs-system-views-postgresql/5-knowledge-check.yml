@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-system-catalogs-system-views-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/23/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which schema stores metadata in PostgreSQL?"
+    choices:
+    - content: "pg_schema"
+      isCorrect: false
+      explanation: "Incorrect. pg_schema isn't a system schema in PostgreSQL."
+    - content: "pg_catalog"
+      isCorrect: true
+      explanation: "Correct. The **pg_catalog** schema stores metadata."
+    - content: "pg_metadata"
+      isCorrect: false
+      explanation: "Incorrect. pg_metadata isn't a system schema in PostgreSQL."
+  - content: "Which system table contains lock information for each database?"
+    choices:
+    - content: "pg_database."
+      isCorrect: false
+      explanation: "Incorrect. pg_database has basic information such as the database owner, the collation, and the connection limit."
+    - content: "pg_stat_database."
+      isCorrect: true
+      explanation: "Correct. pg_stat_database contains lock information for each database."
+    - content: "pg_database_lock."
+      isCorrect: false
+      explanation: "Incorrect. pg_database_lock isn't a system table in PostgreSQL."
+  - content: "Which view can you use to get a list of all views in your database, which you can filter to display system views?"
+    choices:
+    - content: "pg_views."
+      isCorrect: true
+      explanation: "Correct. pg_views lists all views in the database and can be filtered to only show views in the pg_catalog schema."
+    - content: "pg_catalog."
+      isCorrect: false
+      explanation: "Incorrect. pg_catalog is a schema."
+    - content: "pg_system_view."
+      isCorrect: false
+      explanation: "Incorrect. pg_system_view isn't a system view in PostgreSQL."

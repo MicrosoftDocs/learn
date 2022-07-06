@@ -26,6 +26,8 @@ products:
 - azure
 - azure-virtual-network
 - azure-expressroute
+subjects:
+- architecture
 units:
 - learn.hub-and-spoke-network-architecture.1-introduction
 - learn.hub-and-spoke-network-architecture.2-implement-hub-spoke

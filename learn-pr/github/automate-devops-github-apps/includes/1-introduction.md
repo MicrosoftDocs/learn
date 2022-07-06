@@ -4,11 +4,11 @@ Suppose you are looking for a feature that GitHub doesn't yet support. Maybe you
 
 Optimizing the value of apps and features to manage users in your workflow to help speed up your processes while maintaining efficiency, security, and reliability. In this module, you'll learn about the use of these tools and their features.
 
-In this module, you learn how to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
+In this module, you'll learn how to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
 
 ## Learning objectives
 
-By the end of this module, you will:
+By the end of this module, you'll:
 
 - Identify available GitHub Access Tokens needed to support GitHub users
 - Understand how to monitor token rate limits
@@ -20,6 +20,6 @@ By the end of this module, you will:
 - A GitHub account
 - The ability to navigate and edit files in GitHub
 
-This module covers the automation of common GitHub tasks through GitHub Apps. To fully appreciate the benefits this module discusses, it's recommended that you complete the following module first:
+This module covers the automation of common GitHub tasks through GitHub Apps. To fully appreciate the benefits this module discusses, we recommend that you complete the following module first:
 
 - [Introduction to GitHub](/learn/modules/introduction-to-github)

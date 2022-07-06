@@ -25,6 +25,8 @@ products:
 - azure-event-grid
 - azure-event-hubs
 - azure-storage
+subjects:
+- cloud-computing
 modules:
 - learn.choose-messaging-model
 - learn.implement-message-workflows-with-service-bus

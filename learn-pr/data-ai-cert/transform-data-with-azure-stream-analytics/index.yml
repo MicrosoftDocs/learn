@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-stream-analytics
+subjects:
+- data-analytics
 units:
 - learn.data-ai.transform-data-with-azure-stream-analytics.introduction
 - learn.data-ai.transform-data-with-azure-stream-analytics.stream-analytics-workflow

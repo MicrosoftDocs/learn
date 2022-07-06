@@ -25,6 +25,10 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-analytics
+- data-lake
+- artificial-intelligence
 units:
 - learn.wwl.get-started-azure-databricks.introduction
 - learn.wwl.get-started-azure-databricks.understand

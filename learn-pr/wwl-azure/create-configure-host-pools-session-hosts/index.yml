@@ -27,6 +27,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- infrastructure
 units:
 - learn.wwl.create-configure-host-pools-session-hosts.introduction
 - learn.wwl.create-configure-host-pools-session-hosts.automate-creation-of-azure-virtual-desktop-host-pool-using-powershell

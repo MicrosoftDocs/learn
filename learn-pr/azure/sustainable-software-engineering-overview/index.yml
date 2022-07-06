@@ -39,6 +39,8 @@ products:
 - azure
 - dotnet
 - power-platform
+subjects:
+- architecture
 units:
 - learn.azure.sustainable-software-engineering-overview.1-introduction
 - learn.azure.sustainable-software-engineering-overview.2-overview

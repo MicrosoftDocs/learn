@@ -85,7 +85,7 @@ Apps can access user and organizational data if they're given consent. You shoul
 
 The default access level is to allow access to all enterprise applications for every user. However, applications can be assigned to just a subset of users. In Azure Active Directory admin center, select **Enterprise applications**. Select the relevant application and select **Users and groups**. You can now see a list of assigned users and groups and, if necessary, add more.
 
-![Assign user account to zn application in your Azure AD tenant.](../media/2-add-users.png)
+:::image type="content" source="../media/2-add-users.png" alt-text="Assign user account to zn application in your Azure AD tenant.":::
 
 Troubleshoot issues where users become locked out of their account
 
@@ -97,7 +97,7 @@ You should check whether a user could be using an incorrect password, or whether
 
 To preemptively log account lockout issues, you should enable security audits for Azure AD DS. You can enable security audits in the Azure portal. Search for Azure AD Domain Services, select it and select your managed domain. **Select Diagnostic settings** then select **Add diagnostic setting**.
 
-:::image type="content" source="../media/../media/2-add-diagnostic-settings.png" alt-text="Screen shot showing add diagnostic settings screen.":::
+:::image type="content" source="../media/2-add-diagnostic-settings.png" alt-text="Screen shot showing add diagnostic settings screen.":::
 
 For more information on enabling security audits, see [Enable security audits for Azure Active Directory Domain Services](/azure/active-directory-domain-services/security-audit-events).
 

@@ -200,7 +200,7 @@ In this exercise, you will:
 
 1.  In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 2.  In Virtual network gateways, select **ManufacturingVnetGateway**.
-3.  In CoreServicesGateway, select **Connections**, and then select **+ Add**.
+3.  In ManufacturingVnetGateway, select **Connections**, and then select **+ Add**.
 4.  Use the information in the following table to create the connection:
     
     |           **Option**           |             **Value**             |

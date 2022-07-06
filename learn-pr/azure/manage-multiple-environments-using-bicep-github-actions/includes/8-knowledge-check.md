@@ -13,14 +13,14 @@ on:
 
 jobs:
   deploy-sandbox:
-    uses: mygithubuser/myworkflow/.github/workflows/deploy.yml@main
+    uses: /.github/workflows/deploy.yml
     with:
       environmentName: Sandbox
     secrets:
       AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
 
   deploy-production:
-    uses: mygithubuser/myworkflow/.github/workflows/deploy.yml@main
+    uses: /.github/workflows/deploy.yml
     needs: deploy-sandbox
     with:
       environmentName: Production
@@ -60,5 +60,5 @@ jobs:
         template: ./deploy/main.bicep
         parameters: deploy/parameters.${{ inputs.environmentName }}.json
 ```
-\
+
 The Git repository's *deploy* folder also contains the Bicep file and parameter files.

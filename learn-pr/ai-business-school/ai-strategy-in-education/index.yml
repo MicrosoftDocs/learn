@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-education.introduction
 - learn-wwl.ai-strategy-in-education.ai-value-in-education-insead
 - learn-wwl.ai-strategy-in-education.education-executive-QA

@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.azure.stack-hci-arc-integration.1-introduction
 - learn.azure.stack-hci-arc-integration.2-azure-arc-capabilities

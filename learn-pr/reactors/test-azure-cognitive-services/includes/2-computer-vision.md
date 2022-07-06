@@ -336,7 +336,7 @@ What other images with words can be analyzed?
 You can find more Cognitive Services demonstrations at the following URLs:
 
 - [Hands on with AI - Interactive demos](https://aidemos.microsoft.com?azure-portal=true)
-- [Student demos on GitHub](https://github.com/microsoft/AcademicContent/tree/master/Events%20and%20Hacks)
+- [Student demos on GitHub](https://github.com/microsoft/AcademicContent/tree/main/archive/Events%20and%20Hacks)
 - [Cognitive Services site](https://azure.microsoft.com/services/cognitive-services/directory/?azure-portal=true)
 
 Images come in varying sizes. Sometimes you might want to create a thumbnail of an image. For these cases, we need to install the Pillow library. To learn about the Pillow library, see the [Pillow website](https://python-pillow.org/). Pillow is the Python Imaging Library (PIL) fork, which allows for image processing.
@@ -370,4 +370,3 @@ image.save('thumbnail.jpg')
 The output is:
 
 :::image type="content" alt-text="A generated thumbnail." source="../media/thumbnail.jpg" loc-scope="azure":::
-

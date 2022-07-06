@@ -27,6 +27,9 @@ products:
 - azure-iot
 - azure-iot-dps
 - azure-iot-hub
+subjects:
+- iot
+- architecture
 units:
 - learn.wwl.introduction-iot-solution-architecture.introduction
 - learn.wwl.introduction-iot-solution-architecture.examine-subsystems-architecture

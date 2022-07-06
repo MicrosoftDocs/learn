@@ -20,11 +20,11 @@ In this unit, you'll use the [HttpRepl](/aspnet/core/web-api/http-repl/) tool to
 
 1. Inspect the output from running the app.
     - EF Core echoes SQL commands as `info` log events as they execute.
-    - The tables and indexes are defined with `CREATE` SQL commands.
-    - `INSERT` commands are executed when the database is seeded.
-    - For security, the parameter values are not echoed to the console.
+    - If the database does not already exist, then the tables and indexes are defined with `CREATE` SQL commands.
+    - If the database has not yet been seeded, then `INSERT` commands are executed to add the seed data.
+    - For security, the parameter values are not echoed to the console. This can be changed using [EnableSensitiveDataLogging](/ef/core/logging-events-diagnostics/extensions-logging#sensitive-data)
 
-1. Use Sqlite Explorer to explore the seeded database. Each table has data.
+1. Use SQLite Explorer to explore the seeded database. Each table has data.
 1. Since the terminal is blocked by the running app, open another terminal (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd>) to test the app.
 1. In the new terminal, run the following command:
 
@@ -36,7 +36,7 @@ In this unit, you'll use the [HttpRepl](/aspnet/core/web-api/http-repl/) tool to
 
 ## Test database operations
 
-Now that you've connected with HttpRepl, let's try out our app. After each CRUD operation, inspect the database in Sqlite Explorer to see the changes as they happen.
+Now that you've connected with HttpRepl, let's try out our app. After each CRUD operation, inspect the database in SQLite Explorer to see the changes as they happen.
 
 1. At the HttpRepl command prompt, run the following command to list the discovered endpoints.
 

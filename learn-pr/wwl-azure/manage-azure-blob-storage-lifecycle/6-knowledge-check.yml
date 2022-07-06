@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/22/2022
+  ms.date: 05/25/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
       explanation: "That's incorrect. Blobs in the cool tier can be read and modified."
     - content: "Archive"
       isCorrect: true
-      explanation: "That's correct. Blobs in the archive tier must be rehydrated to either the hot or cool tears before it can be read or modified."
+      explanation: "That's correct. Blobs in the archive tier must be rehydrated to either the hot or cool tier before it can be read or modified."
     - content: "Hot"
       isCorrect: false
       explanation: "That's incorrect. Blobs in the hot tier can be read and modified."

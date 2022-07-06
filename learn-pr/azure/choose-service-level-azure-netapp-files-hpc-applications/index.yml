@@ -29,6 +29,9 @@ roles:
   - administrator
 products:  
 - azure-netapp-files
+subjects:
+- storage
+- cloud-computing
 units:
 - learn.azure.choose-service-level-azure-netapp-files-hpc-applications.introduction
 - learn.azure.choose-service-level-azure-netapp-files-hpc-applications.identify-decision-criteria

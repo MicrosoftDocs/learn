@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/16-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can instructors prepare for complex lab environments that require provisioning in the AZ-104: Microsoft Azure Administrator course?"
+    choices:
+    - content: "Provision student labs individually"
+      isCorrect: false
+      explanation: "Incorrect. For labs requiring extra provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This step allows time for the lab provisioning to take place and makes effective use of instructional time."
+    - content: "Begin with a demonstration of how to set up the lab environment"
+      isCorrect: true
+      explanation: "Correct. For labs requiring extra provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This step allows time for the lab provisioning to take place and makes effective use of instructional time."
+    - content: "Provision labs following module instructional time"
+      isCorrect: false
+      explanation: "Incorrect. For labs requiring extra provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This step allows time for the lab provisioning to take place and makes effective use of instructional time."
+  - content: "Which teaching tool is great for giving students a visual representation of topics in the AZ-104: Microsoft Azure Administrator course?"
+    choices:
+    - content: "The Textbook"
+      isCorrect: false
+      explanation: "Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Microsoft Whiteboard"
+      isCorrect: true
+      explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Flash Cards"
+      isCorrect: false
+      explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+  - content: "Which teaching tool allows students to build a strong foundation of concepts before beginning to work independently in the AZ-104: Microsoft Azure Administrator course?"
+    choices:
+    - content: "Accessibility Tools"
+      isCorrect: false
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking students through the labs with the instructor first, students will be able to solidify concepts when completing labs on their own."
+    - content: "Instructor-led lab experiences"
+      isCorrect: true
+      explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking students through the labs with the instructor first, students will be able to solidify concepts when completing labs on their own."
+    - content: "Azure Blog"
+      isCorrect: false
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking students through the labs with the instructor first, students will be able to solidify concepts when completing labs on their own."

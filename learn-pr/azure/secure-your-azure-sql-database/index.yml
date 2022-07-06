@@ -3,7 +3,7 @@ uid: learn.secure-your-azure-sql-database
 metadata:
   title: Secure your Azure SQL Database
   description: Secure an Azure SQL database to keep the information safe and diagnose potential security concerns as they happen.
-  ms.date: 11/09/2018
+  ms.date: 07/05/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-portal
 - azure-sql-database
+subjects:
+- cloud-security
 units:
 - learn.secure-your-azure-sql-database.0-introduction
 - learn.secure-your-azure-sql-database.1-create-database

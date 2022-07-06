@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-concepts-methodologies.describe-ways-encryption,-hashing,-signing-can-secure-your-data
+title: Describe encryption and hashing
+metadata:
+  title: Describe encryption and hashing
+  description: "Describe encryption and hashing"
+  ms.date: 04/12/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-describe-encryption-hashing.md)]

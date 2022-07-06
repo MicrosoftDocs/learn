@@ -1,0 +1,5 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.django.generic-views.badge
+metadata:
+  title: 'Microsoft Badge: Use generic views in Django was issued by Microsoft'
+socialImageUrl: /learn/achievements/django-generic-views-social.png

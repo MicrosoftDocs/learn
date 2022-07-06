@@ -30,6 +30,8 @@ roles:
 - developer
 products:
 - github
+subjects:
+- devops
 units:
 - learn.github.configure-and-use-secret-scanning-in-your-github-repository.introduction
 - learn.github.configure-and-use-secret-scanning-in-your-github-repository.what-is-scret-scanning

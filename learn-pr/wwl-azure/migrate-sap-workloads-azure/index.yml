@@ -24,6 +24,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.wwl.migrate-sap-workloads-azure.introduction
 - learn.wwl.migrate-sap-workloads-azure.understand-migration-options-sap-workloads

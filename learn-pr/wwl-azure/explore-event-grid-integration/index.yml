@@ -33,6 +33,10 @@ products:
 - azure-iot-hub
 - azure-logic-apps
 - azure-portal
+subjects:
+- cloud-computing
+- iot
+- communication
 units:
 - learn.wwl.explore-event-grid-integration.introduction
 - learn.wwl.explore-event-grid-integration.integrate-azure-iot-hub

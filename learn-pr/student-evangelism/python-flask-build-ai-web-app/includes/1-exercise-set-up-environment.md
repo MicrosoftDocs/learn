@@ -24,13 +24,13 @@ Visual Studio Code is an open-source code editor that allows you to create almos
 To complete this unit, you must have Python 3.6 or later installed on your computer. There's a chance you might already have Python installed, especially if you've already used it. You can confirm whether it's installed by executing one of the following commands:
 
 ```bash
-python3 --version
+python --version
 ```
 
 If Python is installed, the output shows the Python version number. If you need to install Python, follow the steps in the [Install Python 3](/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true&WT.mc_id=python-11210-chrhar) documentation for Visual Studio Code. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
 
 > [!IMPORTANT]
-> If you're using Windows, make sure you select the **Add to PATH** option on the installer. If you miss this step you'll receive an error message "Python isn't found", even after performing the installation.
+> If you're using Windows, make sure that the folder location where you installed Python is added to your PATH environment variable. If you miss this step you'll receive an error message "Python isn't found", even after performing the installation.
 
 ## Create the project directory
 
@@ -58,13 +58,13 @@ To use a virtual environment, we'll create and activate it. We create it by usin
 ```bash
 # Windows
 # Create the environment
-python3 -m venv venv
+python -m venv venv
 # Activate the environment
 .\venv\scripts\activate
 
 # macOS or Linux
 # Create the environment
-python3 -m venv venv
+python -m venv venv
 # Activate the environment
 source ./venv/bin/activate
 ```
@@ -81,7 +81,7 @@ During later exercises, we'll use a couple of other libraries, including **reque
    code .
    ```
 
-2. In Visual Studio Code, in the **Explorer** window, select **New File**
+2. In Visual Studio Code, in the **Explorer** window, select **New File** next to the **contoso** directory
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)

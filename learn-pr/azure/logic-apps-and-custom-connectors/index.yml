@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-logic-apps
+subjects:
+- custom-app-development
 units:
 - learn.azure.logic-apps-and-custom-connectors.1-introduction
 - learn.azure.logic-apps-and-custom-connectors.2-connectors-for-azure-logic-apps

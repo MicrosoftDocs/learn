@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-to-devops
 metadata:
-  title: Migrate to DevOps
-  description: "Migrate to DevOps"
-  ms.date: 03/18/2022
+  title: Choose the DevOps tools
+  description: "Choose the DevOps tools"
+  ms.date: 06/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate to DevOps
+title: Choose the DevOps tools
 summary: This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
 abstract: |
   By the end of this module, you'll be able to:
@@ -41,6 +41,9 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
+- migration
 units:
 - learn.wwl.migrate-to-devops.introduction
 - learn.wwl.migrate-to-devops.what-is-azure-devops

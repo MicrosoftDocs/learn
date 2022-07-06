@@ -25,7 +25,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
    - **Subscription**: Select the subscription group you're using for this module.
    - **Resource group**: Choose your module resource group.
    - **Location**: Select the location you're using for this module.
-   
+
    Select **Create**.
 
    ![Screenshot of the "Create Namespace" pane](../media/create-event-hubs-namespace.png)
@@ -33,14 +33,14 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 ## Create an event hub
 
 1. After your Event Hubs namespace is provisioned, browse to it and add a new event hub by selecting the **+ Event Hub** button on the toolbar.
- 
+
    ![Screenshot of an Event Hubs namespace with the button for adding an event hub highlighted.](../media/add-event-hub.png)
 
 1. On the **Create Event Hub** pane, enter:
 
    - **Name**: Enter **databricks-demo-eventhub**.
    - **Partition Count**: Enter **2**.
-    
+   
    Select **Create**.
 
    ![Screenshot of the "Create Event Hub" pane](../media/create-new-event-hubs.png)
@@ -109,11 +109,11 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
     ```
-    https://github.com/MicrosoftDocs/mslearn_databricks/blob/main/streaming/1.1.0/Labs.dbc?raw=true
+    https://github.com/MicrosoftLearning/microsoft-learning-paths-databricks-notebooks/tree/master/data-engineering/DBC/10-Structured-Streaming.dbc?raw=true
     ```
 
 5. Select **Import**.
-6. Select the **streaming** folder that appears.
+6. Select the **10-Structured-Streaming** folder that appears.
 
 ## Complete the following notebook
 

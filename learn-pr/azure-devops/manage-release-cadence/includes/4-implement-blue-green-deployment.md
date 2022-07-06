@@ -113,6 +113,10 @@ You can also use this task to start, stop, or delete a slot. Or you can use it t
     ```
 
 1. In Azure Pipelines, trace the build through each of the steps.
+
+> [!NOTE]
+> If your run into the following error `...'staging' slot did not respond to http ping. (CODE: 417)` try restarting your app service. If the problem persists, reset auto swap for your slot.
+
 1. As an optional step, in a browser, go to the URL that corresponds to each stage.
 
     Although you haven't yet made changes to the website, you see that the _Space Game_ website successfully deployed to each App Service environment.

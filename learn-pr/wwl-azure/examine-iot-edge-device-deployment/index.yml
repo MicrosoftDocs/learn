@@ -32,6 +32,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.examine-iot-edge-device-deployment.introduction
 - learn.wwl.examine-iot-edge-device-deployment.deployment-concepts

@@ -23,6 +23,8 @@ roles:
 - student
 products:
 - azure-search
+subjects:
+- artificial-intelligence
 modules:
 - learn.azure-introduction-to-azure-search
 trophy:

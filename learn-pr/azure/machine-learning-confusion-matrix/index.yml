@@ -25,7 +25,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- classification-analysis
+units:
 - learn.machinelearning.evaluate-real-world-models.introduction
 - learn.machinelearning.evaluate-real-world-models.confusion-matrices
 - learn.machinelearning.evaluate-real-world-models.exercise-building-matrix

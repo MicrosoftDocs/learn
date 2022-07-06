@@ -4,8 +4,8 @@ metadata:
   title: Space rocks on planet Earth
   description: Learn about space rocks that fell to Earth as meteorites and where they're most likely to be found.
   ms.date: 04/08/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

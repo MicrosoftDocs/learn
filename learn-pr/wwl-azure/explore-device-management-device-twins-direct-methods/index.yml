@@ -31,6 +31,9 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
+- development-tools
 units:
 - learn.wwl.explore-device-management-device-twins-direct-methods.introduction
 - learn.wwl.explore-device-management-device-twins-direct-methods.manage-devices-using

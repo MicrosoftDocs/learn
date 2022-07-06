@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.wwl.create-manage-device-templates.introduction
 - learn.wwl.create-manage-device-templates.introduction-to-device-templates

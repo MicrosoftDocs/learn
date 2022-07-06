@@ -26,6 +26,10 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- data-analytics
+- data-warehousing
+- data-visualization
 units:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.introduction
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.describe-synapse-workspace-integration

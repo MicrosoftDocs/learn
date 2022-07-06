@@ -36,6 +36,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service.0-introduction
 - learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service.1-middleware

@@ -44,14 +44,15 @@ jobs:
       name: Sign in to Azure
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: Azure/cli@v1
+    - uses: azure/arm-deploy@v1
       name: Run what-if
       with:
-        inlineScript: |
-            az deployment group what-if \
-              --resource-group ${{ env.AZURE_RESOURCEGROUP_NAME }} \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=${{ env.ENVIRONMENT_TYPE }}
+        failOnStdErr: false
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: deploy/main.bicep
+        parameters: >
+          environmentType=${{ env.ENVIRONMENT_TYPE }}
+        additionalArguments: --what-if
  
   deploy:
     runs-on: ubuntu-latest

@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.0-introduction
 - learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.1-pros-cons

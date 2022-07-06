@@ -23,6 +23,8 @@ products:
 - azure-cost-management
 - azure-resource-manager
 - azure-policy
+subjects:
+- infrastructure
 modules:
 - learn.control-and-organize-with-resource-manager
 - learn.azure.build-cloud-governance-strategy-azure

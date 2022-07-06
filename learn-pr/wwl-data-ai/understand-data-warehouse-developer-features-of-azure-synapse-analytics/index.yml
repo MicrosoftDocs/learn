@@ -3,7 +3,7 @@ uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-ana
 metadata:
   title: Understand data warehouse developer features of Azure Synapse Analytics
   description: "Understand data warehouse developer features of Azure Synapse Analytics"
-  ms.date: 01/05/2022
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -27,6 +27,10 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-analytics
+- data-lake
+- data-warehousing
 units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.introduction
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.explore-development-tools-for

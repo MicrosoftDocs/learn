@@ -3,7 +3,7 @@ uid: learn.wwl.implement-ci-cd-azure-devops
 metadata:
   title: Implement CI/CD with Azure DevOps
   description: "Implement CI/CD with Azure DevOps"
-  ms.date: 01/06/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -24,6 +24,8 @@ roles:
 - data-engineer
 products:
 - azure-databricks
+subjects:
+- cloud-computing
 units:
 - learn.wwl.implement-ci-cd-azure-devops.introduction
 - learn.wwl.implement-ci-cd-azure-devops.describe-ci-cd

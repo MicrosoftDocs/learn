@@ -34,6 +34,8 @@ prerequisites: |
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
   - Beginner-level experience with Azure Functions
+subjects:
+- identity-access
 units:
   - learn.azure.publish-static-web-app-authentication.1-introduction
   - learn.azure.publish-static-web-app-authentication.2-exercise-get-started

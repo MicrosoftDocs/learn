@@ -2,22 +2,23 @@ An AKS cluster with Kubernetes operator lets you deploy complex applications on 
 
 ## Begin in the Azure portal
 
-1.	Start by creating an AKS cluster through the Azure portal
-    1.	Choose your subscription
-    1.	Create a new resource group named elastic-on-azure-rg
-    1.	Choose the region closest to you
-    1.	Select the default Kubernetes version
-    1.	Use the standard node size and set the node count to 3
+1. Start by creating an AKS cluster through the Azure portal
+    1. Choose your subscription
+    1. Create a new resource group named *elastic-on-azure-rg*
+    1. Provide a name for the AKS cluster, such as *elastic-on-aks-cluster*
+    1. Choose the region closest to you
+    1. Select the default Kubernetes version
+    1. Use the standard node size and set the node count to 3
 
     :::image type="content" source="../media/create-cluster-dialog.png" alt-text="A screenshot of the Create a Kubernetes cluster window in the Azure portal.":::
 
 1. After configuring your AKS cluster, proceed to **Review + create** from this screen.
 
-1. Once your AKS cluster deployment is complete, select “Overview” from the side menu to view the details of your newly created cluster.
+1. Once your AKS cluster deployment is complete, select **Overview** from the side menu to view the details of your newly created cluster.
 
     :::image type="content" source="../media/cluster-overview.png" alt-text="A screenshot of the Kubernetes services Overview menu in Azure":::
 
-1. Click “Connect” at the top to open a commands screen.
+1. Click **Connect** at the top to open a commands screen.
 
 1. Copy the two commands provided on the connect screen.
 
@@ -28,7 +29,8 @@ An AKS cluster with Kubernetes operator lets you deploy complex applications on 
 1. Next, run the kubectl apply -f command with the yaml file below in Azure Cloud Shell to install the Kubernetes operator, Elastic Cloud on Kubernetes, and apply custom resource definitions and RBAC rules to the cluster.
 
     ```bash
-    kubectl apply -f https://download.elastic.co/downloads/eck/1.4.0/all-in-one.yaml
+    kubectl create -f https://download.elastic.co/downloads/eck/2.1.0/crds.yaml
+    kubectl apply -f https://download.elastic.co/downloads/eck/2.1.0/operator.yaml
     ```
 
     :::image type="content" source="../media/kubectl-apply-output.png" alt-text="An image of the CLI after installing Elastic Cloud on Kubernetes with custom resources definitions and RBAC rules.":::

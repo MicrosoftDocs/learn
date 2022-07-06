@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.integrate-azure-devops-tools
+title: Integrate Azure Machine Learning with DevOps tools
+metadata:
+  title: Integrate Azure Machine Learning with DevOps tools
+  description: "Integrate Azure Machine Learning with DevOps tools"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-integrate-azure-development-operations-tools.md)]

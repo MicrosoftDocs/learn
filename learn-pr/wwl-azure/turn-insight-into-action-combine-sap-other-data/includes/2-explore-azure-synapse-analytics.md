@@ -2,7 +2,7 @@ Azure Synapse Analytics is an integrated analytics platform. Within one environm
 
 The following figure provides a rough overview of the components that comprise Azure Synapse Analytics. Potential data sources display on the left feeding into Azure Synapse. To the right are some of the Azure services that are deeply integrated with Azure Synapse. This module focuses on the highlighted components.
 
-![Graphic shows the components of Azure Synapse Analytics, along with potential data sources on the left, and some of the Azure services on the right that are deeply integrated with Azure Synapse. Highlighted components indicate the components referenced in this Learn module: SAP and Cosmos DB, Synapse Studio, SQL, Azure Machine Learning, Power BI, Power Apps, and Power Automate.](../media/azure-synapse-analytics-highlights.png)
+![Components of Azure Synapse Analytics, along with potential data sources on the left, and Azure services that are deeply integrated with Azure Synapse on the right. Highlighted components: SAP and Cosmos DB, Synapse Studio, SQL, Azure Machine Learning, Power BI, Power Apps, and Power Automate.](../media/azure-synapse-analytics-highlights.png)
 
 ## When to use Azure Synapse Analytics
 
@@ -21,7 +21,7 @@ With Azure Synapse, you can perform most activities required for your business s
 
 To get started with Synapse, sign into the Azure portal. Search on Synapse and select Create. Provide your details in the series of panels that display. Select Review + create to deploy your Synapse workspace.  
 
-![Screenshot from Azure portal to create a Synapse workspace.](../media/create-synapse-workspace.png)
+![Azure portal screen to create a Synapse workspace.](../media/create-synapse-workspace.png)
 
 After you create and navigate to the Azure Synapse Analytics Workspace, the system automatically creates a set of resources for your use.
 

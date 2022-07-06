@@ -9,7 +9,7 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. 
 
  -  [Azure App Service plan overview](/azure/app-service/overview-hosting-plans)
  -  [Scale up an app in Azure App Service](/azure/app-service/manage-scale-up)

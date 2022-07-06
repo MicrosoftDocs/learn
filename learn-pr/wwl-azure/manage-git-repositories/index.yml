@@ -2,21 +2,23 @@
 uid: learn.wwl.manage-git-repositories
 metadata:
   title: Manage Git repositories
-  description: "Manage Git repositories"
-  ms.date: 03/18/2022
+  description: "This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub."
+  ms.date: 05/31/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage Git repositories
-summary: This module explores how to work with large repositories and purge repository data.
+summary: This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub.
 abstract: |
   By the end of this module, you'll be able to:
-  - Understand large Git repositories
-  - Explain Git Virtual File System (GVFS)
-  - Use Git Large File Storage (LFS)
-  - Purge repository data
-prerequisites: ""
+  *   Understand large Git repositories
+  *   Explain VFS for Git
+  *   Use Git Large File Storage (LFS)
+  *   Purge repository data
+  *   Manage and Automate Release Notes with GitHub
+prerequisites: |
+  None
 iconUrl: /learn/achievements/6-manage-git-repositories.svg
 levels:
 - advanced
@@ -39,10 +41,14 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.manage-git-repositories.introduction
 - learn.wwl.manage-git-repositories.work-large-repositories
 - learn.wwl.manage-git-repositories.purge-repository-data
+- learn.wwl.manage-git-repositories.manage-releases-github-repos
+- learn.wwl.manage-git-repositories.automate-release-notes-github
 - learn.wwl.manage-git-repositories.knowledge-check
 - learn.wwl.manage-git-repositories.summary
 badge:

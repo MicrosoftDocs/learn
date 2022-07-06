@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- database
 modules:
 - learn.wwl.explore-azure-cosmos-db
 - learn.wwl.implement-partitioning-azure-cosmos-db

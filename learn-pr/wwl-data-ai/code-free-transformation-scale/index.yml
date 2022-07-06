@@ -36,6 +36,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.perform-code-free-transformation-scale-azure-data-factory.introduction
 - learn.wwl.perform-code-free-transformation-scale-azure-data-factory.explain-transformation-methods

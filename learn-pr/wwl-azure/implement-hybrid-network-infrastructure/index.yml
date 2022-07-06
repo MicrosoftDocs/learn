@@ -42,6 +42,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- networking
 units:
 - learn.wwl.implement-hybrid-network-infrastructure.introduction
 - learn.wwl.implement-hybrid-network-infrastructure.describe-azure-network-topologies

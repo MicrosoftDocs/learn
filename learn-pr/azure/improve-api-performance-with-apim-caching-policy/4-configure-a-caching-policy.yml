@@ -4,7 +4,7 @@ title: Configure a caching policy
 metadata:
   title: Configure a caching policy
   description: In this unit, you will learn how to use the cache control policies in API Management to accelerate responses.
-  ms.date: 04/25/2019
+  ms.date: 05/15/2022
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.azure.enterprise-scale-networking
 metadata:
   title: Network design principles for enterprise-scale architecture
   description: Network design principles for enterprise-scale architecture
-  ms.date: 09/21/2020
+  ms.date: 04/15/2022
   author: jknightly
   ms.author: joknight
   ms.topic: interactive-tutorial
@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- networking
+- architecture
 units:
 - learn.azure.enterprise-scale-networking.1-introduction
 - learn.azure.enterprise-scale-networking.2-ip-addressing

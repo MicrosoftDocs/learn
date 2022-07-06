@@ -34,6 +34,8 @@ products:
 - azure-iot-hub
 - azure-event-grid
 - azure-logic-apps
+subjects:
+- iot
 units:
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.introduction
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.business-integration-event-grid

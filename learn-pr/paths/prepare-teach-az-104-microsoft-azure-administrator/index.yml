@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-teach-az-104-microsoft-azure-administrator
+metadata:
+  title: AZ-104
+  description: Prepare to teach AZ-104 Microsoft Azure Administrator in the classroom
+  ms.date: 05/26/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to teach AZ-104 Microsoft Azure Administrator in the classroom
+prerequisites: |
+  - None
+summary: |
+  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure AI fundamentals.
+  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure AI solutions in the classroom.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure
+modules:
+- learn.wwl.introduction-microsoft-learn-educators-program
+- learn.wwl.onboard-microsoft-learn-educators-program
+- learn.wwl.microsoft-learn-educators-course-preparation
+- learn.wwl.microsoft-learn-educators-course-plan
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104
+- learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator
+trophy:
+  uid: learn.wwl.prepare-teach-az-104-microsoft-azure-administrator.trophy

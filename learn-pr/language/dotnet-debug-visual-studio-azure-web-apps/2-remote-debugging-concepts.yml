@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug-visual-studio-app-service.remote-debugging-concepts
+title: Remote debugging concepts
+metadata:
+  title: Remote debugging concepts
+  description: Review essential remote debugging concepts to understand how to debug apps running in Azure.
+  ms.date: 5/15/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-remote-debugging-concepts.md)]

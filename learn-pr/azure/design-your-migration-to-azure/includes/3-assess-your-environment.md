@@ -6,7 +6,7 @@ In this unit, you'll look at Azure Migrate, a service you use to assess readines
 
 ## What is Azure Migrate?
 
-Azure Migrate is a free service, provided by Microsoft, that discovers, assesses, and migrates on-premises systems to Azure. The service helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines that you'll migrate and estimate the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, as well as physical servers. Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time. Understanding the dependencies gives you confidence that nothing will be left behind.
+Azure Migrate is a free service provided by Microsoft that discovers, assesses, and migrates on-premises systems to Azure. The service helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines that you'll migrate and estimate the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, as well as physical servers. Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time. Understanding the dependencies gives you confidence that nothing will be left behind.
 
 ## Work with Azure Migrate
 
@@ -19,13 +19,13 @@ After you create a project, Azure Migrate requires you to complete two steps to 
 
 ### Discover machines
 
-To perform an agentless discovery, the Azure Migrate: Server Assessment tool guides you through downloading a lightweight collector appliance, which carries out the discovery of systems in your environment. The collector appliance is available to download to VMware or Hyper-V environment. Import and spin up the collector appliance, and then complete its configuration to connect it to the Azure Migrate project.
+To perform an agentless discovery, the Azure Migrate: Server Assessment tool guides you through downloading a lightweight collector appliance, which carries out the discovery of systems in your environment. You can download the collector appliance to VMware or Hyper-V environments. Import and spin up the collector appliance, and then complete its configuration to connect it to the Azure Migrate project.
 
 The collector gathers data about VM cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 
 When the data collection is complete, it's pushed to your Azure Migrate project. On the Azure portal, you can now view all the discovered systems or download a report to review.
 
-For VMware environments, the process can be visualized as follows:
+For VMware environments, you can visualize process as follows:
 
 ![Azure Migrate Architecture.](../media/3-azure-migrate-architecture.svg)
 

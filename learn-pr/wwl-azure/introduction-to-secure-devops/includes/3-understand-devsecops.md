@@ -3,11 +3,9 @@ While the adoption of cloud computing is on the rise to support business product
 The 2018 Microsoft Security Intelligence Report finds that:
 
  -  Data **isn't** encrypted both at rest and in transit by:
-    
      -  7% of software as a service (SaaS) storage apps.
      -  86% percent of SaaS collaboration apps.
  -  HTTP headers session protection is supported by **only**:
-    
      -  4% of SaaS storage apps.
      -  3% of SaaS collaboration apps.
 

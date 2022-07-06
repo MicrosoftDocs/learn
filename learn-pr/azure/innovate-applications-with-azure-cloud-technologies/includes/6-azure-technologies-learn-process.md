@@ -1,8 +1,8 @@
-In this unit, you'll learn how to apply the results of the measure step in the innovation lifecycle, and how important data democratization is.
+In this unit, you'll learn how to apply the results of the measure step in the innovation lifecycle, and the importance of data democratization.
 
 ## Data democratization
 
-As you've learned in previous units, you can collect data from your customers by using multiple sources. These sources include micro surveys, utilization data derived by Azure Application Insights, and feature flags that customers can decide on their own to enable or disable. The more data you have, the better your decisions will be. But you need a way to handle this ever-increasing flow of data.
+As you've learned in previous units, you can collect data from your customers by using multiple sources. These sources include micro surveys, utilization data derived by Azure Application Insights, and feature flags that customers can decide on their own to enable or disable. The more data you have, the better your decisions will be, but you need a way to handle this ever-increasing flow of data.
 
 In 2014, [Satya Nadella talked](https://blogs.microsoft.com/blog/2014/04/15/a-data-culture-for-everyone?azure-portal=true) about the importance of the data culture in an organization. He said that decisions shouldn't be made based on feelings or subjective opinions, but by using data to validate them. He also said that data should be available to every individual who needs it, and it should be easily converted into actionable insights to facilitate data-driven decisions.
 
@@ -46,8 +46,8 @@ Microsoft Power BI can help with data sharing from multiple perspectives. Here s
 The main problem of data centralization is scale at different levels. At the risk of oversimplifying, it can be reduced to the three "V's" of big data:
 
 - **Volume**: [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction?azure-portal=true) is a cost-effective and scalable Azure platform for data storage. Based on the massive scalability provided by Azure Storage, Azure Data Lake Storage has been designed to service multiple petabytes of information while sustaining hundreds of gigabits of throughput.
-- **Variety**: This term often refers to the fact that data is not always structured. You might have semi-structured and even unstructured data too. [Azure Synapse](/azure/synapse-analytics/overview-what-is?azure-portal=true) shines in this area, because it brings together the best of SQL technologies used in enterprise data warehousing with Spark, which is often used for big data.
-- **Velocity**: A problem often found in older data architectures is the interdependency between storage capacity, analysis speed, and ingestion rates. In Azure data solutions, an organization can scale different dimensions of the platform independently, by decoupling them. Data can be ingested, processed, and shared through data pipelines that use the required Azure data services, as the [enterprise business intelligence architecture](/azure/architecture/reference-architectures/data/enterprise-bi-synapse?azure-portal=true) shows.
+- **Variety**: This term often refers to the fact that data is not always structured. You might have semi-structured and even unstructured data, too. [Azure Synapse](/azure/synapse-analytics/overview-what-is?azure-portal=true) shines in this area, because it brings together the best of SQL technologies used in enterprise data warehousing with Spark, which is often used for big data.
+- **Velocity**: A problem often found in older data architectures is the interdependency between storage capacity, analysis speed, and ingestion rates. In Azure data solutions, an organization can scale different dimensions of the platform independently by decoupling them. Data can be ingested, processed, and shared through data pipelines that use the required Azure data services, as the [enterprise business intelligence architecture](/azure/architecture/reference-architectures/data/enterprise-bi-synapse?azure-portal=true) shows.
 
 ### Data governance
 
@@ -55,29 +55,29 @@ In today's world, data represents both a critical asset and a significant respon
 
 As a consequence, data governance is critical for any organization that has a goal of data democratization. The first step toward data governance is classifying data that needs to be treated in specific ways. As an example, Microsoft uses these data categories internally for data classification:
 
-- **Non-business**: Data from your personal life that doesn't belong to Microsoft.
-- **Public**: Business data that's freely available and approved for public consumption.
-- **General**: Business data that isn't meant for a public audience.
-- **Confidential**: Business data that can cause harm to Microsoft if overshared.
-- **Highly confidential**: Business data that would cause extensive harm to Microsoft if overshared.
+- **Non-business**: Data from your personal life that doesn't belong to Microsoft
+- **Public**: Business data that's freely available and approved for public consumption
+- **General**: Business data that isn't meant for a public audience
+- **Confidential**: Business data that can cause harm to Microsoft if overshared
+- **Highly confidential**: Business data that would cause extensive harm to Microsoft if overshared
 
 The next step after data classification is ensuring that each data category is protected from unauthorized access. Azure supports these technologies that enforce confidentiality:
 
 - **Encryption of data at rest**: All Azure data is encrypted when stored in Microsoft datacenters. Some Azure services offer specific encryption features, such as [transparent data encryption](/azure/azure-sql/database/transparent-data-encryption-tde-overview?azure-portal=true) in Azure Synapse and Azure SQL Database.
 - **Encryption of data in flight**: All Azure data services encrypt data with SSL or TLS before sending it through the network. Some services, such as Azure Storage, can optionally allow unencrypted traffic. Organizations should disable any unencrypted communication for any type of sensitive data.
 - **Data access control**: Azure offers sophisticated authentication and authorization mechanisms both for access to the Azure platform and for access to data itself. [Azure role-based access control](/azure/role-based-access-control/overview?azure-portal=true), [Conditional Access](/azure/active-directory/conditional-access/overview?azure-portal=true), and [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure?azure-portal=true) are three examples of essential services that can help to ensure that only authorized people have access to sensitive information.
-- **Data auditing**: Many regulatory compliance standards demand evidence of data protection mechanisms, by documenting who has done certain operations and accessed certain data. As described in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview?azure-portal=true), data auditing in Azure contemplates three aspects of auditing:
-  - *Retain* an audit trail of selected events, where you can define categories of data actions to be audited.
-  - *Report* on database activity, optionally with preconfigured reports and dashboards to get started quickly.
-  - *Analyze* reports to uncover suspicious events, unusual activity, and trends.
+- **Data auditing**: Many regulatory compliance standards demand evidence of data protection mechanisms by documenting who has done certain operations and accessed certain data. As described in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview?azure-portal=true), data auditing in Azure contemplates three aspects of auditing:
+  - *Retain* an audit trail of selected events, where you can define categories of data actions to be audited
+  - *Report* on database activity, optionally with preconfigured reports and dashboards to get started quickly
+  - *Analyze* reports to uncover suspicious events, unusual activity, and trends
 
 ## Growth mindset
 
-The learn phase sometimes delivers bad news. Hypotheses that you thought were right might turn out to be wrong. Being open to alternative ideas is key for the innovation process to flow smoothly. Maybe the whole hypothesis was wrong, or maybe the problem was only the way in which the prototype was developed. 
+The learn phase sometimes delivers bad news. Hypotheses that you thought were right might turn out to be wrong. Being open to alternative ideas is key for the innovation process to flow smoothly. Maybe the whole hypothesis was wrong, or maybe the problem was only the way in which the prototype was developed.
 
 In any case, conclusions should always be backed by data. The team should move on to formulating the next hypothesis, possibly some kind of revision or iteration of the initial one.
 
-Existing data might not allow you to unequivocally conclude whether the hypothesis was right or wrong. In this case, the data set that's helping the decision process should be enhanced. Either introduce new telemetry points in the application, or figure out new ways of getting information about the customer experience. 
+Existing data might not allow you to unequivocally conclude whether the hypothesis was right or wrong. In this case, the data set that's helping the decision process should be enhanced. Either introduce new telemetry points in the application, or figure out new ways of getting information about the customer experience.
 
 A growth mindset is fundamental at this stage. Think of hypotheses proven wrong or partially wrong as learning opportunities. Organizations shouldn't waste time on an innovation that doesn't generate the expected business outcomes.
 

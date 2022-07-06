@@ -1,4 +1,4 @@
-Azure Cosmos DB is a globally distributed, multimodel database. You can deploy it by using  several API models:
+Azure Cosmos DB is a globally distributed, multimodel database. You can deploy it by using several API models:
 
 - SQL API
 - MongoDB API
@@ -22,11 +22,17 @@ Contoso's network operations manager confirms the problem. It's that the company
 
 ## Key features
 
-Azure Cosmos DB supports 99.999 percent uptime. You can invoke a regional failover by using programing or the Azure portal. An Azure Cosmos DB database will automatically fail over if there's a regional disaster. 
+Azure Cosmos DB supports 99.999 percent uptime. You can invoke a regional failover by using programing or the Azure portal. An Azure Cosmos DB database will automatically fail over if there's a regional disaster.
 
-By using multimaster replication, Azure Cosmos DB is guaranteed to achieve a response time of less than 10 ms for reads and writes.
+By using multi-master replication, Azure Cosmos DB is guaranteed to achieve a response time of less than 10 ms for reads and writes.
 
-To maintain the consistency of the data in Azure Cosmos DB, your engineering team should introduce a new set of consistency levels that address the unique challenges of planet-scale solutions. Consistency levels include strong, bounded staleness, session, consistent prefix, and eventual.
+To maintain the consistency of the data in Azure Cosmos DB, your engineering team should introduce a new set of consistency levels that address the unique challenges of planet-scale solutions. Consistency levels in Azure Cosmos DB include:
+
+- Strong
+- Bounded staleness
+- Session
+- Consistent prefix
+- Eventual
 
 ## Data ingestion
 

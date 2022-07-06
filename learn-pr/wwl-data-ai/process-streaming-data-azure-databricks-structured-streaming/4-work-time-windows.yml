@@ -4,12 +4,13 @@ title: Work with Time Windows
 metadata:
   title: Work with Time Windows
   description: "Work with Time Windows"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-work-time-windows.md)]

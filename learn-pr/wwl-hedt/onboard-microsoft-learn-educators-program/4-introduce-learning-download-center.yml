@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.onboard-microsoft-learn-educators-program.explore-learning-download-center
+title: Introduce the Learning Download Center
+metadata:
+  title: 4-Introduce the Learning Download Center
+  description: "Introduce the Learning Download Center"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-introduce-learning-download-center.md)]

@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.deploy-templates-command-line-github-actions.badge
+metadata:
+  title: >-
+    Microsoft Badge: Automate the deployment of JSON ARM templates by using
+    GitHub Actions was issued by Microsoft
+socialImageUrl: /learn/achievements/deploy-templates-command-line-github-actions-social.png

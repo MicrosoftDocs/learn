@@ -33,6 +33,8 @@ products:
 - azure
 - azure-container-registry
 - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.microservices-aspnet-core.1-introduction
 - learn.microservices-aspnet-core.2-deploy-application

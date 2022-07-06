@@ -33,6 +33,8 @@ products:
 - azure-site-recovery
 - azure-backup
 - azure-expressroute
+subjects:
+- architecture
 modules:
 - learn.azure-well-architected-introduction
 - learn.azure-well-architected-cost-optimization

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.submit-confirmed-pos-sap
+title: Submit confirmed POs to SAP
+metadata:
+  title: Submit confirmed POs to SAP
+  description: "Submit confirmed POs to SAP"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-submit-confirmed-pos-sap.md)]

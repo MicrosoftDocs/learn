@@ -1,8 +1,8 @@
-Let statements bind names to expressions. For the rest of the scope, where the let statement appears, the name refers to its bound value.  Let statements improve modularity and reuse since they allow you to break a potentially complex expression into multiple parts. Each part is bound to a name through the let statement, and together they compose the whole. The let statement allows for the creation of user-defined functions and views. The views are expressions whose results look like a new table.
+Let statements bind names to expressions. For the rest of the scope, where the let statement appear, the name refers to its bound value.  Let statements improve modularity and reuse since they allow you to break a potentially complex expression into multiple parts. Each part is bound to a name through the let statement, and together they compose the whole. Let statements allow for the creation of user-defined functions and views. The views are expressions whose results look like a new table.
 
 ## Declare and reuse variables
 
-The let statement allows for the creating variables to be used in later statements.  In this example, timeOffSet and discardEventId are created and used as part of the SecurityEvent "where" clause.
+Let statements allow for the creation of variables to be used in later statements.  In this example, timeOffSet and discardEventId are created and used as part of the SecurityEvent "where" clause.
 
 ```kusto
 let timeOffset = 7d;
@@ -19,7 +19,7 @@ SecurityEvent
 
 ## Declare dynamic tables or lists
 
-The let statement allows for the creation of dynamics tables or lists.
+Let statements allow for the creation of dynamic tables or lists.
 
 ```kusto
 let suspiciousAccounts = datatable(account: string) [
@@ -33,9 +33,9 @@ SecurityEvent | where Account in (suspiciousAccounts)
 let LowActivityAccounts =
     SecurityEvent 
     | summarize cnt = count() by Account 
-    | where cnt < 10;
+    | where cnt < 1000;
 
-LowActivityAccounts | where Account contains "Mal"
+LowActivityAccounts | where Account contains "SQL"
 
 ```
 

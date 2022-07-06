@@ -22,6 +22,7 @@ In Microsoft Azure, you can use the following cognitive services to build natura
 | **Language** | Use this service to access features for understanding and analyzing text, training language models that can understand spoken or text-based commands, and building intelligent applications. |
 | **Translator** | Use this service to translate text between more than 60 languages.|
 | **Speech** | Use this service to recognize and synthesize speech, and to translate spoken languages.|
+| **Azure Bot** | This service provides a platform for conversational AI, the capability of a software "agent" to participate in a conversation. Developers can use the *Bot Framework* to create a bot and manage it with Azure Bot Service - integrating back-end services like Language, and connecting to channels for web chat, email, Microsoft Teams, and others.|
 
 ## Try this
 

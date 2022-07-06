@@ -34,6 +34,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.azure.threat-modeling-enterprise-security.1-introduction
 - learn.azure.threat-modeling-enterprise-security.2-assessment-questions

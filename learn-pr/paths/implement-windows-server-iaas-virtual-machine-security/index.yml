@@ -37,6 +37,8 @@ products:
 - azure-monitor
 - azure-portal
 - azure-virtual-machines
+subjects:
+- security
 modules:
 - learn.wwl.audit-security-of-windows-server-iaas-vms
 - learn.wwl.manage-azure-updates

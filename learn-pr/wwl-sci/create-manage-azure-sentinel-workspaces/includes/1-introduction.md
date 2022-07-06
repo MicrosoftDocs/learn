@@ -2,9 +2,9 @@ Deploying the Microsoft Sentinel environment involves designing a workspace conf
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel.  You're responsible for setting up the Microsoft Sentinel environment to meet the company requirement to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.  
 
-You start by understanding the Microsoft Sentinel workspace's architecture. After you have decided on your workspace implementation options, you create your first Microsoft Sentinel workspace.
+You start by understanding the Microsoft Sentinel workspace's architecture. After you've decided on your workspace implementation options, you create your first Microsoft Sentinel workspace.
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Describe Microsoft Sentinel workspace architecture
 - Install Microsoft Sentinel workspace

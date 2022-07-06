@@ -40,7 +40,7 @@ Alternatively, if you prefer to work in code, you can create or edit a workflow 
 
 ![Screenshot of the Logic Apps code editor in the Azure portal.](../media/2-logic-apps-code-editor.png)
 
-One reason why Logic Apps is so good at integration is that [over 200 connectors are included](/connectors/connector-reference/). A *connector* is a Logic Apps component that provides an interface to an external service. For example, the [Twitter connector](/connectors/twitter/) allows you to send and retrieve tweets, while the [Office 365 Outlook connector](/connectors/office365/) lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from a Logic Apps, you can [create your own connector](/connectors/custom-connectors/) if your system exposes a REST API.
+One reason why Logic Apps is so good at integration is that [over 200 connectors are included](/connectors/connector-reference/). A *connector* is a Logic Apps component that provides an interface to an external service. For example, the [Twitter connector](/connectors/twitter/) allows you to send and retrieve tweets, while the [Office 365 Outlook connector](/connectors/office365/) lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from Logic Apps, you can [create your own connector](/connectors/custom-connectors/) if your system exposes a REST API.
 
 ### Microsoft Power Automate
 
@@ -52,18 +52,18 @@ There are four different types of flow that you can create:
 
 - **Automated**: Starts by a trigger from some event. For example, the event could be the arrival of a new tweet or a new file being uploaded.
 - **Button**: Runs a repetitive task with a single click from your mobile device.
-- **Scheduled**: Runs on a regular basis such like once a week, on a specific date, or after 10 hours.
-- **Business process**: Models a business process such as the stock ordering process or the complaints procedure. The flow process can have: notification to required people; with their approval recorded; calendar dates for steps; and recorded time of flow steps.
+- **Scheduled**: Runs regularly. For example, once a week, on a specific date, or after 10 hours.
+- **Business process**: Models a business process such as the stock ordering process or the complaints procedure. The flow process can have: notifications to required people; with their approval recorded; calendar dates for steps; and recorded time of flow steps.
 
-Microsoft Power Automate provides an easy-to-use design surface to create flows of the above types. As the following screenshot illustrates, the designer makes it easy to design and lay out your process.
+Microsoft Power Automate provides an easy-to-use design surface to create these types of flows. As the following screenshot illustrates, the designer makes it easy to design and lay out your process.
 
 ![Screenshot of the Microsoft Power Automate designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
 
-Under the hood, Microsoft Power Automate is built on Logic Apps. This fact means that Power Automate [supports the same range of connectors and actions](https://flow.microsoft.com/connectors/). You can also use [custom connectors](/power-automate/get-started-flow-dev) in Microsoft Power Automate.
+Under the hood, Microsoft Power Automate is built on Logic Apps. This fact means that Power Automate [supports the same range of connectors and actions](https://flow.microsoft.com/connectors/) as Logic Apps. You can also use [custom connectors](/power-automate/get-started-flow-dev) in Microsoft Power Automate.
 
 ### Design-first technologies compared
 
-As you can see from the following table, Microsoft Power Automate is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Logic Apps are usually a better fit:
+As you can see from the following table, Microsoft Power Automate is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Logic Apps is usually a better fit:
 
 | | Microsoft Power Automate| Logic Apps |
 | -- | -- | -- |
@@ -84,10 +84,10 @@ The [Azure App Service](https://azure.microsoft.com/services/app-service/) is a 
 
 [WebJobs](/azure/app-service/webjobs-create) are a part of the Azure App Service that you can use to run a program or script automatically. There are two kinds of WebJob:
 
-- **Continuous.** Run in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
-- **Triggered.** Run when you manually start them or on a schedule.
+- **Continuous.** Starts immediately when the WebJob is created and runs in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
+- **Triggered.** Starts based on a binding event, on a schedule, or when you trigger it manually (on demand).
 
-To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or JavaScript.  These WebJobs do have a few limitations, such as only supporting ASP.NET / SDK 2.x; however SDK 3.x supports .NET Core.
+To determine what actions your WebJob takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Java, or JavaScript.
 
 You can also program a WebJob by using the .NET Framework or the .NET Core Framework and a .NET language such as C# or VB.NET. In this case, you can also use the WebJobs SDK to make the task easier. The SDK includes a range of classes, such as `JobHostConfiguration` and `HostBuilder`, which reduce the amount of code required to interact with the Azure App Service.
 
@@ -119,12 +119,12 @@ In most cases, the simple administration and more flexible coding model provided
 
 | | Azure WebJobs | Azure Functions |
 | -- | --| -- |
-| **Supported languages** | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and so on |
+| **Supported languages** | C# if you're using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and so on |
 | **Automatic scaling** | No | Yes |
 | **Development and testing in a browser** | No | Yes |
 | **Pay-per-use pricing** | No | Yes |
 | **Integration with Logic Apps** | No | Yes |
-| **Package managers** | NuGet if you are using the WebJobs SDK | NuGet and NPM |
+| **Package managers** | NuGet if you're using the WebJobs SDK | NuGet and NPM |
 | **Can be part of an App Service application** | Yes | Yes (hosted under App Service plan) |
 | **Provides close control of `JobHost`** | Yes | No |
 

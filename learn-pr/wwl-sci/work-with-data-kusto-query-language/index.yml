@@ -3,9 +3,9 @@ uid: learn.wwl.work-with-data-kql
 metadata:
   title: Work with data in Microsoft Sentinel using Kusto Query Language
   description: "Work with data in Microsoft Sentinel using Kusto Query Language"
-  ms.date: 11/08/2021
+  ms.date: 06/20/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with data in Microsoft Sentinel using Kusto Query Language
@@ -23,6 +23,8 @@ roles:
 - security-operations-analyst
 products:
 - azure-sentinel
+subjects:
+- data-engineering
 units:
 - learn.wwl.work-with-data-kql.introduction
 - learn.wwl.work-with-data-kql.extract-data-from-unstructured-string-fields

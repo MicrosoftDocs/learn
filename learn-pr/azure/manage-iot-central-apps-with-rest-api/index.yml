@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.iot.manage-iot-central-apps-with-rest-api.introduction
 - learn.iot.manage-iot-central-apps-with-rest-api.authorize-api

@@ -1,9 +1,9 @@
-Each role is a set of properties defined in a JSON file. This role definition includes Name, Id, and Description. The definition also includes the allowable permissions (Actions), denied permissions (NotActions), and scope (read access, etc.) for the role.
+Each role is a set of properties defined in a JSON file. For example, Actions, NotActions., and DataActions. 
 
 :::image type="content" source="../media/role-definition-bf297cac.png" alt-text="The built-in Contributor role has actions, notactions, and dataactions.":::
 
 
-In this example, the Owner role means all (asterisk) actions, no denied actions, and all (/) scopes.
+In this next example, the Owner role means all (asterisk) actions, no denied actions, and all (/) scopes.
 
 ```PowerShell
 Name: Owner

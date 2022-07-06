@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.execute-jupyter-notebook-produce-object-detection-model-automl
+title: Execute the Jupyter Notebook to produce an object detection model using AutoML
+metadata:
+  title: Execute the Jupyter Notebook to produce an object detection model using AutoML
+  description: Execute the Jupyter Notebook to produce an object detection model using AutoML.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 03/14/2022
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-execute-jupyter-notebook-produce-object-detection-model-automl.md)]

@@ -26,6 +26,9 @@ products:
 - azure
 - azure-virtual-machines
 - azure-monitor
+subjects:
+- it-management-monitoring
+- virtual-machine
 units:
 - learn.azure.monitor-azure-vm-using-diagnostic-data.introduction
 - learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health

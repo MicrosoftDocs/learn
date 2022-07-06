@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.aspnet-core-signalr-polling-fix.badge
+metadata:
+  title: >-
+    Microsoft Badge: Replace client-side polling with ASP.NET Core SignalR was
+    issued by Microsoft
+socialImageUrl: /learn/achievements/generic-badge-social.png

@@ -26,7 +26,7 @@ quiz:
     - content: "The branch contains sensitive information that you don't want other repository participants to be able to see."
       isCorrect: true
       explanation: "Protecting a branch doesn't hide its contents."
-  - content: "Suppose your team repository contains several long-lived branches, including `master`, `release-v1.0`, and `release-v2.0`. Which of the following Git commands best enables you to apply specific commits from `master` into `release-v1.0` to apply hotfixes to the legacy version of the codebase?"
+  - content: "Suppose your team repository contains several long-lived branches, including `main`, `release-v1.0`, and `release-v2.0`. Which of the following Git commands best enables you to apply specific commits from `main` into `release-v1.0` to apply hotfixes to the legacy version of the codebase?"
     choices:
     - content: "`git merge`"
       isCorrect: false
@@ -45,6 +45,6 @@ quiz:
     - content: "Create a Git tag."
       isCorrect: false
       explanation: "This option will only inform the limited number of people who are paying attention to changes in your project's tags. Many may not understand the significance of this specific tag."
-    - content: "Merge the changes into `master` using a pull request."
+    - content: "Merge the changes into `main` using a pull request."
       isCorrect: false
       explanation: "This option will only inform the limited number of people who are paying attention to changes in your project's source. Many may not understand the significance of this specific pull request."

@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.bicep-pipelines-azdo.trophy
+metadata:
+  title: >-
+    Microsoft Trophy: Deploy Azure resources by using Bicep and Azure Pipelines
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/bicep/bicep-azure-pipelines-social.png

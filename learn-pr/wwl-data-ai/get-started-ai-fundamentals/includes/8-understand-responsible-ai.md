@@ -12,7 +12,7 @@ For more details about considerations for fairness, watch the following video.
 
 ## Reliability and safety
 
-AI systems should perform reliably and safely. For example, consider an AI-based software system for an autonomous vehicle; or a machine learning model that diagnoses patient symptoms and recommends prescriptions. Unreliability in these kinds of system can result in substantial risk to human life.
+AI systems should perform reliably and safely. For example, consider an AI-based software system for an autonomous vehicle; or a machine learning model that diagnoses patient symptoms and recommends prescriptions. Unreliability in these kinds of systems can result in substantial risk to human life.
 
 AI-based software application development must be subjected to rigorous testing and deployment management processes to ensure that they work as expected before release.
 
@@ -46,7 +46,7 @@ For more details about considerations for transparency, watch the following vide
 
 ## Accountability
 
-People should be accountable for AI systems. Designers and developers of AI-based solution should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
+People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
 
 For more details about considerations for accountability, watch the following video.
 

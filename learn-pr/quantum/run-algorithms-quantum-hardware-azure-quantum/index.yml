@@ -29,6 +29,9 @@ roles:
 - developer
 products:
 - azure-quantum
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.quantum.run-quantum-algorithms-hardware.1-introduction
 - learn.quantum.run-quantum-algorithms-hardware.2-quantum-hardware-overview

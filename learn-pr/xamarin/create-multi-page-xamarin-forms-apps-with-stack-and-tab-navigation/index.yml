@@ -26,6 +26,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- cloud-computing
 units:
 - learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.1-introduction
 - learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.2-implement-stack-navigation

@@ -1,4 +1,4 @@
-As a member of the Security Operations team in your company, you are responsible for helping to craft a security incident response plan and identifying and responding to active threats to your servers and network.
+As part of the Security Operations team in your company, you're going to help craft a security incident response plan. You'll use this plan to identify and respond to active threats to your servers and network.
 
 ![Image background showing threats to our infrastructure.](../media/1-intro-logo.png)
 

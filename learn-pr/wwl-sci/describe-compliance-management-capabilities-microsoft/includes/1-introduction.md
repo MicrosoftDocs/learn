@@ -1,10 +1,11 @@
-Organizations must stay in line with compliance-related legal and regulatory standards to protect their customers, partners, and themselves. Microsoft provides tools and capabilities to enable organizations to manage compliance.
+Microsoft Cloud services are built on a foundation of trust, security, and compliance. The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
-In this lesson, you’ll learn about the common compliance needs organizations are required to meet. You will know where to go to find compliance documentation by exploring the Service Trust Portal.  You will also learn about Microsoft's privacy principles. You’ll also explore solutions like the Microsoft 365 compliance center and the Compliance Manager, which can help manage and simplify compliance across an organization.
+Microsoft also helps organizations meet their privacy requirements, with Microsoft Priva. Priva helps organizations safeguard personal data and build a privacy-resilient workplace.
 
-After completing this lesson, you'll be able to:
+In this module you'll learn about the Service Trust Portal and resources it provides, including audit reports, security assessments, and compliance guides that enable organizations to manage compliance.  You'll learn about Microsoft's commitment to privacy and its privacy principles.  Lastly, you'll learn about Microsoft Priva, which helps organizations meet their privacy goals.
 
-- Find compliance documentation.
+After completing this module, you'll be able to:
+
+- Describe the offerings of the Service Trust Portal.
 - Describe Microsoft’s privacy principles.
-- Explore the Microsoft 365 compliance center.
-- Describe the benefits of Compliance Manager.
+- Describe Microsoft Priva.

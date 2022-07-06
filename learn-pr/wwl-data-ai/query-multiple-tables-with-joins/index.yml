@@ -36,6 +36,8 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- database
 units:
 - learn.wwl.query-multiple-tables-with-joins.introduction
 - learn.wwl.query-multiple-tables-with-joins.join-concepts

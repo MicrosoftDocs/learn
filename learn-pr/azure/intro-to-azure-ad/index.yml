@@ -29,6 +29,9 @@ products:
 - azure-active-directory
 - azure-active-directory-b2c
 - azure-active-directory-domain
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.intro-to-azure-ad.1-introduction
 - learn.intro-to-azure-ad.2-overview

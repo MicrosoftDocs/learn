@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-storage
 metadata:
   title: Explore Azure for SAP storage
   description: "This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 01/20/2022
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.wwl.explore-azure-storage.introduction
 - learn.wwl.explore-azure-storage.types

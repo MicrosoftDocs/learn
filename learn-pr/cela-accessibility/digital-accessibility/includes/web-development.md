@@ -16,7 +16,7 @@ of a page: \<header\>, \<nav\>, \<main\>, and \<footer\>. If used properly, thes
 However, to maximize accessibility, it is best to use the HTML5 elements in conjunction with ARIA roles. ARIA roles include: role="banner", role="navigation", role="main", and role="contentinfo." These ARIA roles
 create a landmark structure that enables people using screen readers to quickly and easily navigate to a desired part of a web page. For example, rather than having to wait for the screen reader to narrate each element one-by-one, a person can skip to a specific landmark further down a web page right away.
 
-For more information, explore the W3C [ARIA Landmarks Example](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html).
+For more information, explore the W3C [ARIA Landmarks Example](https://w3c.github.io/aria-practices/#aria_lh_main).
 
 ## Page structure
 

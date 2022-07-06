@@ -110,9 +110,9 @@ The LCM on each node can operate in two modes.
 
     ![Diagram showing a pull architecture in DSC.](../media/2-pull.png)
 
-Both modes have advantages: 
-- Push mode is easy to set up. It doesn't need its own dedicated infrastructure, and it can run on a laptop. Push mode is helpful to test the functionality of DSC. You could also use push mode to get a newly imaged machine to the baseline desired state. 
-- 
+Both modes have advantages:
+
+- Push mode is easy to set up. It doesn't need its own dedicated infrastructure, and it can run on a laptop. Push mode is helpful to test the functionality of DSC. You could also use push mode to get a newly imaged machine to the baseline desired state.
 - Pull mode is useful in an enterprise deployment that spans a large number of machines. The LCM regularly polls the pull server and makes sure the nodes are in the desired state. If an external tool or team applies hotfixes that result in configuration drift on individual machines, those machines are quickly brought back in line with the configuration you've set. This process can help you achieve a state of continuous compliance for your security and regulatory obligations.
 
 ## Supported platforms and operating systems
@@ -132,7 +132,7 @@ Azure Automation DSC supports the following operating systems:
   - 8.1
   - 7
 - Linux
-  - Most variants, but not Debian or Ubuntu 18.04
+  - The DSC Linux extension supports all the Linux distributions listed in the [PowerShell DSC documentation](/powershell/dsc/getting-started/lnxgettingstarted).
 
 PowerShell DSC is installed on all Linux machines supported by Azure Automation DSC.
 
@@ -150,9 +150,7 @@ Proxy support for the DSC agent is available in Windows builds 1809 and later. P
 
 If your nodes are located in a private network, DSC needs the following port and URLs to communicate with Azure Automation:
 
-  - **Port**: Only TCP 443 is required for outbound internet access.
-  - **Global URL**:  *.azure-automation.net
-  - **Global URL of US Gov Virginia**: *.azure-automation.us
-  - **Agent service**: https://`<workspaceId>`.agentsvc.azure-automation.net
-
-
+- **Port**: Only TCP 443 is required for outbound internet access.
+- **Global URL**:  *.azure-automation.net
+- **Global URL of US Gov Virginia**: *.azure-automation.us
+- **Agent service**: https://`<workspaceId>`.agentsvc.azure-automation.net

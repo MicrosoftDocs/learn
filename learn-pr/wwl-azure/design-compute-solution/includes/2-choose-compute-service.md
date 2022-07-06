@@ -18,10 +18,10 @@ Compute refers to the hosting model for the computing resources that your applic
 
 This [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) provides high-level guidance on when to select each compute option. You’ll want to refer to this diagram as we go through the choices. 
 
-:::image type="content" source="../media/compute-flowchart.png" alt-text="A detailed flowchart to show compute solutions.":::
+> [!NOTE]
+> This diagram has been edited to include only the services covered in this module. 
 
- 
-
+:::image type="content" source="../media/compute-flowchart.png" alt-text="Flowchat to show other possible compute solutions. Other solutions include Kubernetes, Functions, and Azure Batch.":::
 
 On the diagram, **Cloud optimized** is a strategy for migrating to the cloud. Cloud optimized refactors an application to take advantage of cloud-native features and capabilities. A **lift and shift** strategy migrates workloads without redesigning the application or making code changes. Lift-and-shift lets organizations keep running their applications with minimal changes and disruption.
 
@@ -32,7 +32,7 @@ On the diagram, **Cloud optimized** is a strategy for migrating to the cloud. Cl
 
 The compute solution has three hosting options: Infrastructure as a Service, Platform as a Service, and Function as a Service? There’s also Software-as-a-Service which isn’t a compute solution. The [hosting option](/azure/security/fundamentals/shared-responsibility) determines the developer and cloud provider responsibilities. This hosting decision will influence your design. 
 
-:::image type="content" source="../media/host-infrastructures.png" alt-text="Responsibilities for IaaS, PaaS, and FaaS.":::
+:::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram of responsibilities for infrastructure and platform services.":::
 
 
 - **Infrastructure-as-a-Service** (IaaS) lets you create individual VMs along with the associated networking and storage components. Then you deploy whatever software and applications you want onto those VMs. This model is the closest to a traditional on-premises environment, except that Microsoft manages the infrastructure. You still manage the individual VMs.

@@ -26,7 +26,9 @@ roles:
 products: 
 - azure
 - dynamics-365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.secure-responsible-conversational-ai.introduction
 - learn-wwl.secure-responsible-conversational-ai.consequential-use-cases
 - learn-wwl.secure-responsible-conversational-ai.respectful-protecting-bots

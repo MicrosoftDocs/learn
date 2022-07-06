@@ -33,6 +33,10 @@ products:
 - azure-iot-hub
 - azure-storage
 - azure-stream-analytics
+subjects:
+- iot
+- data-analytics
+- storage
 units:
 - learn.wwl.explore-message-processing-tasks.introduction
 - learn.wwl.explore-message-processing-tasks.implement-message-routing-azure-stream-analytics

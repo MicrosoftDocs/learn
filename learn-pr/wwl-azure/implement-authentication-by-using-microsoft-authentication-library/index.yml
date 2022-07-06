@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure-sdks
+subjects:
+- identity-access
 units:
 - learn.wwl.implement-authentication-by-using-microsoft-authentication-library.introduction
 - learn.wwl.implement-authentication-by-using-microsoft-authentication-library.explore

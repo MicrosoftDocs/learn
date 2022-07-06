@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- security
 modules:
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
 - learn.wwl.describe-concepts-of-cryptography

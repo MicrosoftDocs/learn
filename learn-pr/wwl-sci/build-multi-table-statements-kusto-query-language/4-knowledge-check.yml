@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/20/2021
+  ms.date: 06/20/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "kind=fullouter"
       isCorrect: false
       explanation: "Incorrect.  Fullouter Contains a row for every row on the left and right, even if it has no match."
-  - content: "When using the join operator, how do you specify fields from each table?"
+  - content: "When you're using the join operator, how do you specify fields from each table?"
     choices:
     - content: "`$1.columname` and `$2.columnname`"
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: "`$inner.columname` and `$outer.columnname`"
       isCorrect: false
       explanation: "Incorrect. The $left and $right preceding the field name specifies the table."
-  - content: "When you union two tables, the two tables need matching columns?"
+  - content: "When you use union on two tables, do the two tables need matching columns?"
     choices:
     - content: "No."
       isCorrect: true

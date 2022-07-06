@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-office-365-formerly-office-365-atp
+title: Describe Microsoft Defender for Office 365
+metadata:
+  title: Describe Microsoft Defender for Office 365
+  description: "Describe Microsoft Defender for Office 365"
+  ms.date: 04/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-describe-defender-office.md)]

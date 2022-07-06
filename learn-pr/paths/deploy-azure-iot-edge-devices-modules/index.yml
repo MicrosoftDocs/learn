@@ -30,6 +30,9 @@ products:
 - azure-iot-sdk
 - azure-portal
 - azure-stream-analytics
+subjects:
+- iot
+- device-management
 modules:
 - learn.wwl.examine-azure-iot-edge-environment
 - learn.wwl.examine-iot-edge-device-deployment

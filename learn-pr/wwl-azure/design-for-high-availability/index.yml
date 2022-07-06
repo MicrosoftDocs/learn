@@ -3,7 +3,7 @@ uid: learn.wwl.design-for-high-availability
 metadata:
   title: Design for high availability
   description: "Azure Architects design and recommend highly available solutions."
-  ms.date: 03/16/2022
+  ms.date: 06/20/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -30,6 +30,8 @@ products:
 - azure
 - azure-front-door
 - azure-traffic-manager
+subjects:
+- architecture
 units:
 - learn.wwl.design-for-high-availability.introduction
 - learn.wwl.design-for-high-availability.identify-availability-requirements-of-azure-resources

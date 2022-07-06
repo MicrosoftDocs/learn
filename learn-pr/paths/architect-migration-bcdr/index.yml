@@ -27,6 +27,10 @@ products:
 - azure-site-recovery
 - azure-app-service
 - azure-sql-database
+- azure-migrate
+subjects:
+- business-continuity
+- migration
 modules:
 - learn.design-your-migration-to-azure
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery

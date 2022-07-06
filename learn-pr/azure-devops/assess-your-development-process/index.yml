@@ -3,7 +3,8 @@ uid: learn.azdo.assess-your-development-process
 metadata:
   title: Assess your existing software development process
   description: Find out how to assess efficiency with a value stream map to help you examine your existing release processes and technologies.
-  ms.date: 06/23/2021
+  ms.date: 06/10/2022
+  ms.custom: devdivchpfy22
   author: kathrynee
   ms.author: kaelli
   ms.topic: interactive-tutorial
@@ -28,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.assess-your-development-process.1-introduction
 - learn.azdo.assess-your-development-process.2-meet-the-team

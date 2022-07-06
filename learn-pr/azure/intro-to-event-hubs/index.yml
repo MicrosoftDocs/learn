@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-event-hubs
+subjects:
+- data-management
 units:
 - learn.azure.intro-to-event-hubs.introduction
 - learn.azure.intro-to-event-hubs.what-is-event-hubs

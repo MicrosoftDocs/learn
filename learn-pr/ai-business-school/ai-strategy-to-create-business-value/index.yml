@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-to-create-business-value.introduction
 - learn-wwl.ai-strategy-to-create-business-value.holistic-business-ai-strategy-insead
 - learn-wwl.ai-strategy-to-create-business-value.transform-applications-case-study-introduction

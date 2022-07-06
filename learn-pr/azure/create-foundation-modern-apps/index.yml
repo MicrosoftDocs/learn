@@ -38,7 +38,9 @@ products:
   - vs-code
   - azure-blob-storage
   - azure-devops
-units:  
+subjects:
+- architecture
+units:
 - learn.azure.create-foundation-modern-apps.introduction
 - learn.azure.create-foundation-modern-apps.architect-solution
 - learn.azure.create-foundation-modern-apps.exercise-configure-environment

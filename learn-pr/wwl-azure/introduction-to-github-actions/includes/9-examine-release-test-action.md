@@ -39,7 +39,7 @@ steps:
 
 ### Branches
 
-A common way to request actions is to refer to the branch that you want to work with. You'll then get the latest version from that branch. That means you'll benefit from updates, but it also increases the chance of code-breaking.
+A common way to request actions is to refer to the branch you want to work with. You'll then get the latest version from that branch. That means you'll benefit from updates, but it also increases the chance of code-breaking.
 
 ```YAML
 steps:

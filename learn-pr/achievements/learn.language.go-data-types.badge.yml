@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.language.go-data-types.badge
+metadata:
+  title: >-
+    Microsoft Badge: Use data types and structs, arrays, slices, and maps in Go
+    was issued by Microsoft
+socialImageUrl: /learn/achievements/go/go-data-types-social.png

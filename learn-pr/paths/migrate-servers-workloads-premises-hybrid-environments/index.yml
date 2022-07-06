@@ -29,6 +29,8 @@ products:
 - azure-active-directory
 - azure-storage-accounts
 - windows-server
+subjects:
+- migration
 modules:
 - learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms
 - learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines

@@ -1,8 +1,8 @@
 In this demonstration, you'll learn to:
 
-- Generate the installation script from the Azure portal.
-- Install and validate the agent on Windows.
-- Verify the connection with Azure Arc.
+ -  Generate the installation script from the Azure portal.
+ -  Install and validate the agent on Windows.
+ -  Verify the connection with Azure Arc.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4p]
 
@@ -14,6 +14,6 @@ If you want to repeat these steps, [get a free trial Azure subscription](https:/
 
 ---
 
+## 
 
-
----
+Choose the best response for each of the questions below. Then select **Check your answers**.

@@ -229,6 +229,54 @@ The last step in our example is to associate the Public subnet with the new rout
 > [!NOTE] 
 > In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
 
+## Secure a VNet by using forced tunneling
+
+Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. This is a critical security requirement for most enterprise IT policies. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal.
+
+In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
+
+:::image type="content" source="../media/forced-tunnel-ba8d30e6.png" alt-text="Backend and Mid-tier subnets Forced Tunneled via  S 25 V P N Frontend subnets routed directly to Internet.":::
+
+
+### Configure forced tunneling
+
+Forced tunneling in Azure is configured using virtual network custom user-defined routes.
+
+ -  Each virtual network subnet has a built-in, system routing table. The system routing table has the following three groups of routes:
+    
+     -  Local VNet routes: Route directly to the destination VMs in the same virtual network.
+     -  On-premises routes: Route to the Azure VPN gateway.
+     -  Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
+ -  To configure forced tunneling, you must:
+    
+     -  Create a routing table.
+     -  Add a user-defined default route to the VPN Gateway.
+     -  Associate the routing table to the appropriate VNet subnet(s).
+ -  Forced tunneling must be associated with a VNet that has a route-based VPN gateway.
+    
+     -  You must set a default site connection among the cross-premises local sites connected to the virtual network.
+     -  The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
+
+Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires.
+
+## Configure Azure Route Server
+
+Azure Route Server simplifies dynamic routing between your network virtual appliance (NVA) and your virtual network. It allows you to exchange routing information directly through Border Gateway Protocol (BGP) routing protocol between any NVA that supports the BGP routing protocol and the Azure Software Defined Network (SDN) in the Azure Virtual Network (VNET) without the need to manually configure or maintain route tables. Azure Route Server is a fully managed service and is configured with high availability.
+
+Azure Route Server simplifies configuration, management, and deployment of your NVA in your virtual network.
+
+- You no longer need to manually update the routing table on your NVA whenever your virtual network addresses are updated.
+
+- You no longer need to update User-Defined Routes manually whenever your NVA announces new routes or withdraw old ones.
+
+- You can peer multiple instances of your NVA with Azure Route Server. You can configure the BGP attributes in your NVA and, depending on your design (e.g., active-active for performance or active-passive for resiliency), let Azure Route Server know which NVA instance is active or which one is passive.
+
+- The interface between NVA and Azure Route Server is based on a common standard protocol. As long as your NVA supports BGP, you can peer it with Azure Route Server. 
+
+- You can deploy Azure Route Server in any of your new or existing virtual network.
+
+- Learn how to deploy [Azure Route Server](/azure/route-server/quickstart-configure-route-server-portal)
+
 ## Diagnose a routing problem
 
 Imagine your attempts to connect to a specific virtual machine (VM) in your Azure virtual network fail persistently. You can diagnose a routing problem by viewing the routes that are effective for a network interface in a VM. The effective routes for all network interfaces in a subnet are the combination of routes you create, Azure's default routes, and any routes propagated from your on-premises network through an Azure VPN gateway via the border gateway protocol (BGP).
@@ -271,35 +319,6 @@ Steps you might take to resolve the routing problem might include:
 3.  Ensure that the route table is associated to the correct subnet (the one that contains the network interface). Learn how to [associate a route table to a subnet](/azure/virtual-network/manage-route-table).
 4.  Ensure that devices such as Azure VPN gateway or network virtual appliances you've deployed are operating as intended.
 
-## Secure a VNet by using forced tunneling
-
-Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. This is a critical security requirement for most enterprise IT policies. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal.
-
-In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
-
-:::image type="content" source="../media/forced-tunnel-ba8d30e6.png" alt-text="Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.":::
-
-
-### Configure forced tunneling
-
-Forced tunneling in Azure is configured using virtual network custom user-defined routes.
-
- -  Each virtual network subnet has a built-in, system routing table. The system routing table has the following three groups of routes:
-    
-     -  Local VNet routes: Route directly to the destination VMs in the same virtual network.
-     -  On-premises routes: Route to the Azure VPN gateway.
-     -  Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
- -  To configure forced tunneling, you must:
-    
-     -  Create a routing table.
-     -  Add a user-defined default route to the VPN Gateway.
-     -  Associate the routing table to the appropriate VNet subnet(s).
- -  Forced tunneling must be associated with a VNet that has a route-based VPN gateway.
-    
-     -  You must set a default site connection among the cross-premises local sites connected to the virtual network.
-     -  The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
-
-Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires.
 
 ## Check your knowledge
 

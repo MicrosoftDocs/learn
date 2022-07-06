@@ -39,6 +39,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.introduction
 - learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.describe-azure

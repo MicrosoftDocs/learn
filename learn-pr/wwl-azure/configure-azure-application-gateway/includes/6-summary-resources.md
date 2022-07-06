@@ -8,8 +8,10 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
- -  [What is Azure Application Gateway](/azure/application-gateway/overview).
- -  [Learn - Load balance your web service traffic with Application Gateway](/learn/modules/load-balance-web-traffic-with-application-gateway/)
- -  [Learn - Introduction to Azure Web Application Firewall](/learn/modules/introduction-azure-web-application-firewall/)
+ -  [What is Azure Application Gateway](/azure/application-gateway/overview)
+ -  [Learn - Introduction to Azure Application Gateway](/learn/modules/intro-to-azure-application-gateway/)
+ -  [Learn - Load balance HTTP(S) traffic in Azure (Sandbox)](/learn/modules/load-balancing-https-traffic-azure/)
+ -  [Learn - Load balance your web service traffic with Application Gateway (Sandbox)](/learn/modules/load-balance-web-traffic-with-application-gateway/)
+ -  [Learn - Encrypt network traffic end to end with Azure Application Gateway (Sandbox)](/learn/modules/end-to-end-encryption-with-app-gateway/)

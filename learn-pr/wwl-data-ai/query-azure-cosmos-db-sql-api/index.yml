@@ -3,7 +3,7 @@ uid: learn.wwl.query-azure-cosmos-db-sql-api
 metadata:
   title: Query the Azure Cosmos DB SQL API
   description: "Author queries for Azure Cosmos DB SQL API using the SQL query language."
-  ms.date: 01/19/2022
+  ms.date: 06/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -24,6 +24,9 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- cloud-computing
+- database
 units:
 - learn.wwl.query-azure-cosmos-db-sql-api.introduction
 - learn.wwl.query-azure-cosmos-db-sql-api.understand-sql-query-language

@@ -29,6 +29,8 @@ products:
 - azure-iot-sdk
 - azure-storage
 - azure-stream-analytics
+subjects:
+- data-analytics
 modules:
 - learn.wwl.examine-iot-hub-message-routing
 - learn.wwl.consider-message-processing-options-constraints

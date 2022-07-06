@@ -6,9 +6,9 @@ Encryption is a vital step towards ensuring data privacy, compliance, and data r
 
 Azure supports various encryption models, including:
 
-- Server-side encryption by using service-managed keys.
-- Customer-managed keys in Azure Key Vault.
-- Customer-managed keys on customer-controlled hardware.
+- Server-side encryption by using service-managed keys
+- Customer-managed keys in Azure Key Vault
+- Customer-managed keys on customer-controlled hardware
 
 With client-side encryption, you can manage and store keys on-premises or in another secure location. An organization should define its encryption requirements for the services it uses, and enforce encryption configurations via Azure Policy.
 
@@ -40,6 +40,6 @@ Make Microsoft Defender for Cloud the starting point for security monitoring of 
 
 Planning for platform security is essential to maintaining a healthy security posture in Azure. An organization must be able to control the initial platform settings and account for changes as the Azure services evolve.
 
-To effectively control an enterprise estate, an organization must develop a security allow-list plan to assess services and their security configurations. The security-configuration standards can then be enforced by using Azure Policy to ensure that the organization remains compliant with those standards. In addition to defining security standards for allowed services, an organization must establish a regular review cadence to align configurations with new service and platform capabilities.
+To effectively control an enterprise estate, an organization must develop a security allowlist plan to assess services and their security configurations. The security-configuration standards can then be enforced by using Azure Policy to ensure that the organization remains compliant with those standards. In addition to defining security standards for allowed services, an organization must establish a regular review cadence to align configurations with new service and platform capabilities.
 
 Incident-response plans must also be incorporated into the platform security strategy. For each allowed service, make a plan for how to manage security-related incidents. The plans should include prescriptive remediation activities and designate responsible teams for escalation.

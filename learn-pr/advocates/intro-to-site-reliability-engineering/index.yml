@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.intro-to-site-reliability-engineering.1-introduction
 - learn.intro-to-site-reliability-engineering.2-what-is-sre-and-why-does-it-matter

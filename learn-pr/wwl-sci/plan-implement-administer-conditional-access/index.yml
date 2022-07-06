@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer Conditional Access
-  description: "Plan, implement, and administer Conditional Access"
-  ms.date: 08/13/2021
+  description: "Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe."
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -13,9 +13,9 @@ summary: Conditional Access gives a fine granularity of control over which users
 abstract: |
   By the end of this module, you will be able to:
   - Plan and implement security defaults.
-  - Plan Conditional Access policies.
-  - Implement Conditional Access policy controls and assignments (targeting, applications, and conditions).
-  - Test and troubleshoot Conditional Access policies.
+  - Plan conditional access policies.
+  - Implement conditional access policy controls and assignments (targeting, applications, and conditions).
+  - Test and troubleshoot conditional access policies.
   - Implement application controls.
   - Implement session management.
   - Configure smart lockout thresholds.
@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.plan-implement-administer-conditional-access.introduction
 - learn.wwl.plan-implement-administer-conditional-access.plan-security-defaults
@@ -42,8 +44,7 @@ units:
 - learn.wwl.plan-implement-administer-conditional-access.implement-application-controls
 - learn.wwl.plan-implement-administer-conditional-access.implement-session-management
 - learn.wwl.plan-implement-administer-conditional-access.exercise-configure-authentication-session-controls
-- learn.wwl.plan-implement-administer-conditional-access.configure-smart-lockout-thresholds
-- learn.wwl.plan-implement-administer-conditional-access.exercise-manage-azure-ad-smart-lockout-values
+- learn.wwl.plan-implement-administer-conditional-access.implement-continuous-access-evaluation
 - learn.wwl.plan-implement-administer-conditional-access.knowledge-check
 - learn.wwl.plan-implement-administer-conditional-access.summary-resources
 badge:

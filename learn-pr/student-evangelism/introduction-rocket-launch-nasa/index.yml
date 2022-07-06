@@ -29,6 +29,8 @@ roles:
 - data-scientist
 products:
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.student-evangelism.introduction-rocket-launch-nasa.1-introduction
 - learn.student-evangelism.introduction-rocket-launch-nasa.2-predict-weather-for-launch
@@ -43,4 +45,4 @@ units:
 - learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
 - learn.student-evangelism.introduction-rocket-launch-nasa.10-summary
 badge:
-  uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge 
+  uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge

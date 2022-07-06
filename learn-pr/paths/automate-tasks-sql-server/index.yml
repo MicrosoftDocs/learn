@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.automate-tasks-sql-server
 metadata:
-  title: Automate tasks in SQL Server
-  description: Automate tasks in SQL Server
-  ms.date: 12/14/2020
+  title: Automate database tasks for Azure SQL
+  description: Automate database tasks for Azure SQL
+  ms.date: 06/08/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Automate tasks in SQL Server
+title: Automate database tasks for Azure SQL
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
@@ -26,6 +26,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- database
 modules:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database
 - learn.wwl.schedule-tasks-using-sql-server-agent

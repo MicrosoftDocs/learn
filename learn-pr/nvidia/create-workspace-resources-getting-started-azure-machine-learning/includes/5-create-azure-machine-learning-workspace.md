@@ -54,10 +54,10 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
 
     :::image type="content" source="../media/5-find-resource.png" alt-text="A screenshot that demonstrates how to navigate to your Azure Machine Learning resource." lightbox="../media/5-find-resource.png":::  
 
-1. When you've successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in upcoming steps.
+1. When you've successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in Module 3.
 
     :::image type="content" source="../media/5-download-config.png" alt-text="A screenshot showing where to Download the Azure Machine Learning workspace configuration." lightbox="../media/5-download-config.png":::
 
-1. While in the **Overview** section of the Azure Machine Learning workspace resource, select **Launch Studio** to prepare open your workspace in the browser and prepare for the next unit.
+1. While in the **Overview** section of the Azure Machine Learning workspace resource, select **Launch Studio** to open your workspace in the browser and prepare for the next unit.
 
     :::image type="content" source="../media/5-launch-studio.png" alt-text="A screenshot showing the launch studio option is highlighted." lightbox="../media/5-launch-studio.png":::

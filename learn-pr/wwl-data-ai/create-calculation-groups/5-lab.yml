@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-calculation-groups.lab
+title: 'Exercise: Create calculation groups'
+metadata:
+  title: 'Exercise: Create calculation groups'
+  description: "Exercise: Create calculation groups"
+  ms.date: 04/24/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 119303
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-lab.md)]

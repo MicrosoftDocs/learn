@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-educators-course-preparation.demonstrate-how-get-certified
+title: Demonstrate how to get certified
+metadata:
+  title: 3-Demonstrate how to get certified
+  description: "Demonstrate how to get certified"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-demonstrate-how-get-certified.md)]

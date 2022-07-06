@@ -37,6 +37,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-stream-analytics
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-edge-module-deployment.introduction
 - learn.wwl.explore-iot-edge-module-deployment.deploy-module-to-device

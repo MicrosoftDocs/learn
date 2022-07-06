@@ -4,7 +4,7 @@ Only after testing is the quality of the package known.
 
 Since package versions can't and shouldn't be changed, it becomes challenging to choose a specific version beforehand.
 
-Azure Artifacts recognizes a quality level of packages in its feeds and the difference between prerelease and release versions.
+Azure Artifacts recognizes the quality level of packages in its feeds and the difference between prerelease and release versions.
 
 It offers different views on the list of packages and their versions, separating these based on their quality level.
 
@@ -14,9 +14,9 @@ Still, its extra metadata from the Azure Artifacts feed is called a `descriptor`
 
 Feeds in Azure Artifacts have three different views by default. These views are added when a new feed is created. The three views are:
 
- -  **Release.** The `@Release` view contains all packages that are considered official releases.
- -  **Prerelease.** The `@Prerelease` view contains all packages that have a label in their version number.
  -  **Local.** The `@Local` view contains all release and prerelease packages and the packages downloaded from upstream sources.
+ -  **Prerelease.** The `@Prerelease` view contains all packages that have a label in their version number.
+ -  **Release.** The `@Release` view contains all packages that are considered official releases.
 
 ## Using views
 

@@ -29,6 +29,8 @@ products:
 - azure-portal
 - azure-active-directory
 - azure-rbac
+subjects:
+- identity-access
 units:
 - learn.secure-azure-resources-with-rbac.1-introduction
 - learn.secure-azure-resources-with-rbac.2-rbac-overview

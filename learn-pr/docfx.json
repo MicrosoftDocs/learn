@@ -124,6 +124,19 @@
                 "dest": "modules"
             },
             {
+                "src": "azure-percept",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -358,6 +371,19 @@
                 "dest": "modules"
             },
             {
+                "src": "startup",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "student-evangelism",
                 "files": [
                     "**/*.yml",
@@ -439,6 +465,19 @@
             },
             {
                 "src": "wwl-azure",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-hedt",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -1094,6 +1133,12 @@
                     "zh-tw"
                 ],
                 "wwl-azure/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-hedt/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",

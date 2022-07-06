@@ -1,16 +1,16 @@
-Just like any other computer, virtual machines in Azure use disks as a place to store an operating system, applications, and data. These disks are called virtual hard disks (VHDs).
+Just like any other computer, virtual machines in Azure use disks as a place to store an operating systems, applications, and data. These disks are called virtual hard disks (VHDs).
 
-Suppose you have created a virtual machine (VM) in Azure, which will host the database of case histories that your law firm relies on. A well-designed disk configuration is fundamental to good performance and resilience for SQL Server.
+Suppose you have created a virtual machine (VM) in Azure, which will host the database of case histories on which your law firm relies. A well-designed disk configuration is fundamental to good performance and resilience for SQL Server.
 
 In this unit, you'll learn how to choose the right configuration values for your disks and how to attach those disks to a VM.
 
-## How disks are used by VMs
+## How VMs use disks
 
 VMs use disks for three different purposes:
 
-- **Operating system storage**. Every VM includes one disk that stores the operating system. This drive is registered as a SATA drive and labeled as the C: drive in Windows and mounted at "/" in Unix-like operating systems. It has a maximum capacity of 4,095 gibibytes (GiB), and its content is taken from the VM image you used to create the VM.
+- **Operating system storage**. Every VM includes one disk that stores the operating system. This drive is registered as a SATA drive and labeled as the C: drive in Windows or mounted at "/" in Unix-like operating systems. It has a maximum capacity of 4,095 gibibytes (GiB), and its content is taken from the VM image you used to create the VM.
 - **Temporary storage**. Every VM includes a temporary VHD that is used for page and swap files. Data on this drive may be lost during a maintenance event or redeployment. The drive is labeled as D: on a Windows VM by default. Do not use this drive to store important data that you do not want to lose.
-- **Data storage**. A data disk is any other disk attached to a VM. You use data disks to store files, databases, and any other data that you need to persist across reboots. Some VM images include data disks by default. You can also add additional data disks up to the maximum number specified by the size of the VM. Each data disk is registered as a SCSI drive and has a max capacity of 32,767 GiB. You can choose drive letters or mount points for your data drives.
+- **Data storage**. A data disk is any other disk attached to a VM. You can use data disks to store files, databases, and any other data that you need to persist across reboots. Some VM images include data disks by default. You can also add additional data disks up to the maximum number specified by the VM's size. Each data disk is registered as a SCSI drive and has a max capacity of 32,767 GiB. You can choose drive letters or mount points for your data drives.
 
 ## Storing VHD files
 
@@ -28,17 +28,17 @@ Both general-purpose standard and premium storage support page blobs. Choose a s
 
 ## Attach data disks to VMs
 
-You can add data disks to a virtual machine at any time by attaching them to the VM. Attaching a disk associates the VHD file with the VM. 
+You can add data disks to a virtual machine at any time by attaching them to the VM. Attaching a disk associates the VHD file with the VM.
 
-The VHD can't be deleted from storage while it's attached.
+You can't delete the VHD from storage while it's attached.
 
 ### Attach an existing data disk to an Azure VM
 
-You may already have a VHD that stores the data you want to use in your Azure VM. In our law firm scenario, for example, perhaps you've already converted your physical disks to VHDs locally. In this case, you can use the PowerShell `Add-AzVhd` cmdlet to upload it to the storage account. This cmdlet is optimized for transferring VHD files and may complete the upload faster than other methods. The transfer is completed by using multiple threads for best performance. Once the VHD has been uploaded, attach it to an existing VM as a data disk. This approach an excellent way to deploy data of all types to Azure VMs. The data is automatically present in the VM, and there's no need to partition or format the new disk.
+You may already have a VHD that stores the data you want to use in your Azure VM. In our law firm scenario, for example, perhaps you've already converted your physical disks to VHDs locally. In this case, you can use the PowerShell `Add-AzVhd` cmdlet to upload it to the storage account. This cmdlet is optimized for transferring VHD files, and may complete the upload faster than other methods. The transfer is completed by using multiple threads for best performance. Once the VHD has been uploaded, attach it to an existing VM as a data disk. This approach an excellent way to deploy data of all types to Azure VMs. The data is automatically present in the VM, and there's no need to partition or format the new disk.
 
 ### Attach a new data disk to an Azure VM
 
-You can use the Azure portal to add a new, empty data disk to a VM. 
+You can use the Azure portal to add a new, empty data disk to a VM.
 
 This process will create a **.vhd** file as a page blob in the storage account that you specify, and attach that .vhd file as a data disk to the VM.
 

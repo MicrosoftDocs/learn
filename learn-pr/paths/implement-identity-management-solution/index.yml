@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.wwl.implement-initial-configuration-of-azure-active-directory
 - learn.wwl.create-configure-manage-identities

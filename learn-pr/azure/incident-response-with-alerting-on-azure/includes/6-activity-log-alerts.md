@@ -14,7 +14,7 @@ Activity log alerts are designed to work with Azure resources. Typically, you cr
 
 There are two types of activity log alerts:
 
-- **Specific operations**: Apply to resources within your Azure subscription, and often have a scope with specific resources or a resource group. You use this type when you need to receive an alert that reports a change to an aspect of your subscription. For example, you can receive an alert if a VM is deleted or new roles are assigned to a user.
+- **Specific operations**: Applies to resources within your Azure subscription, and often has a scope with specific resources or a resource group. You use this type when you need to receive an alert that reports a change to an aspect of your subscription. For example, you can receive an alert if a VM is deleted or new roles are assigned to a user.
 - **Service health events**: Include notice of incidents and maintenance of target resources.
 
 ## Composition of an activity log alert
@@ -44,9 +44,9 @@ Changing the monitor service will enable you to reduce the list of options. Sele
 
 ### Create a service health alert
 
-Service health alerts are not like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
+Service health alerts aren't like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
 
-![Screenshot that shows how to create a new service health alert.](../media/6-service-health-alerts.png)
+:::image type="content" source="../media/6-service-health-alerts.png" alt-text="Screenshot that shows how to create a new service health alert.":::
 
 The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event that you want to be alerted on. It's possible to select service issues, planned maintenance, or health advisories, or to choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
 

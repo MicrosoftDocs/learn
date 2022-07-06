@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn-pr.azure.manage-azure-stack-hci-volumes
+metadata:
+  title: 'Manage Azure Stack HCI volumes'
+  description: Azure Stack HCI provides highly resilient and performant software-defined volumes.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Manage Azure Stack HCI volumes'
+summary: Manage Azure Stack HCI volumes.
+abstract:  | 
+  After completing this module, you’ll be able to:
+  - Plan for volumes in Microsoft Azure Stack HCI. 
+  - Create and delete volumes in Azure Stack HCI.
+  - Maintain volumes in Azure Stack HCI.
+  
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A good understanding of storage technologies and their implementation on the Windows operating system platform
+  - General familiarity with software defined storage concepts
+  - General familiarity with software defined storage on Azure Stack HCI
+  - Experience in implementing Azure Stack HCI
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- security-engineer
+products:
+- azure-stack-hci 
+units:
+- learn-pr.azure.manage-azure-stack-hci-volumes.introduction
+- learn-pr.azure.manage-azure-stack-hci-volumes.describe-fault-tolerance-storage-efficiency-options
+- learn-pr.azure.manage-azure-stack-hci-volumes.plan-volumes
+- learn-pr.azure.manage-azure-stack-hci-volumes.create-volumes
+- learn-pr.azure.manage-azure-stack-hci-volumes.create-stretched-volumes-configure-replication
+- learn-pr.azure.manage-azure-stack-hci-volumes.delete-volumes
+- learn-pr.azure.manage-azure-stack-hci-volumes.expand-volumes
+- learn-pr.azure.manage-azure-stack-hci-volumes.encrypt-deduplicate-compress-volumes
+- learn-pr.azure.manage-azure-stack-hci-volumes.knowledge-check
+- learn-pr.azure.manage-azure-stack-hci-volumes.summary
+badge:
+  uid: learn-pr.azure.manage-azure-stack-hci-volumes.badge

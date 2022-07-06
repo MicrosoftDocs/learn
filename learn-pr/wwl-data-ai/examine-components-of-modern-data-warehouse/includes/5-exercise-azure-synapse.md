@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Synapse Analytics workspace and use it to ingest and analyze some data.
 
-The exercise is designed to familiarize you with some key elements of a modern data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. The exercise should take around 30 minutes to complete.
+The exercise is designed to familiarize you with some key elements of a large-scale data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. The exercise should take around 30 minutes to complete.
 
 > [!NOTE]
 > To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?azure-portal=true). You cannot use a Microsoft Learn sandbox subscription for this exercise.
@@ -51,11 +51,11 @@ To use Azure Synapse Analytics, you must provision an Azure Synapse Analytics Wo
 
 One of the key tasks you can perform with Azure Synapse Analytics is to define *pipelines* that transfer (and if necessary, transform) data from a wide range of sources into your workspace for analysis.
 
-1. In Synapse Studio, on the **Home** page, select **Ingest** to open the **Copy Data** tool
+1. In Synapse Studio, on the **Home** page, select **Ingest** and then choose **Built-in copy task** to open the **Copy Data tool** tool.
 2. In the Copy Data tool, on the **Properties** step, ensure that **Built-in copy task** and **Run once now** are selected, and click **Next >**.
 3. On the **Source** step, in the **Dataset** substep, select the following settings:
-    - **Source type**: HTTP
-    - **Connection**: *Create a new connection with the following properties:*
+    - **Source type**: All
+    - **Connection**: *Create a new connection, and in the **Linked service** pane that appears, on the **File** tab, select **HTTP**. Then continue and create a connection to a data file using the following settings:*
         - **Name**: AdventureWorks Products
         - **Description**: Product list via HTTP
         - **Connect via integration runtime**: AutoResolveIntegrationRuntime
@@ -78,16 +78,8 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
     - **Compression type**: None
 7. On the **Target** step, in the **Dataset** substep, select the following settings:
     - **Target type**: Azure Data Lake Storage Gen 2
-    = **Connection**: *Create a new connection with the following properties:*
-        - **Name**: Products
-        - **Description**: Product list
-        - **Connect via integration runtime**: AutoResolveIntegrationRuntime
-        - **Authentication method**: Account key
-        - **Account selection method**: From subscription
-            - **Azure subscription**: *select your subscription*
-            - **Storage account name**: *Select your storage account*
-        - **Test connection**: To linked service
-8. After creating the connection, on the **Target/Dataset** step, ensure the following settings are selected, and then select **Next >**:
+    - **Connection**: *Select the existing connection to your data lake store (this was created for you when you created the workspace).*
+8. After selecting the connection, on the **Target/Dataset** step, ensure the following settings are selected, and then select **Next >**:
     - **Folder path**: *Browse to your file system folder*
     - **File name**: products.csv
     - **Copy behavior**: None
@@ -240,6 +232,9 @@ While SQL is a common language for querying structured datasets, many data analy
     ```
 
 7.  Use the **&#9655;** icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
+> [!NOTE]
+> If an error occurs because the Python Kernel isn't available yet, run the cell again.
+
 8. Eventually, the results should appear below the cell, and they should be similar to this:
 
     | _c0_ | _c1_ | _c2_ | _c3_ |

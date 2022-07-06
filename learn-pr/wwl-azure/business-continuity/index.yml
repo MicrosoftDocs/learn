@@ -2,8 +2,8 @@
 uid: learn.wwl.business-continuity
 metadata:
   title: Troubleshoot business continuity with Microsoft Azure
-  description: "Businesses rely on data for decision making, compliance, and for day-to-day operations. When systems fail for any reason, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery."
-  ms.date: 04/01/2022
+  description: "Businesses rely on data for decision making, compliance, and for day-to-day operations. When systems fail for any reason, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery. AZ720 AZ-720 az-720 networking"
+  ms.date: 06/10/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -19,13 +19,15 @@ prerequisites: |
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
   - Know how to run Cloud Shell to run commands
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/business-continuity.svg
 levels:
 - intermediate
 roles:
 - support-engineer
 products:
 - azure-backup
+subjects:
+- business-continuity
 units:
 - learn.wwl.business-continuity.introduction
 - learn.wwl.business-continuity.troubleshoot-backup-issues

@@ -8,7 +8,7 @@ In addition to managing your Azure Digital Twins instance in the Azure portal, A
  -  Managing routes.
  -  Configuring security via Azure role-based access control (Azure RBAC).
 
-The command set is called `az dt`, and is part of the Azure IoT extension for Azure CLI. You can view the full list of commands and their usage as part of the reference documentation for the `az iot` command set: [az dt command reference](/cli/azure/ext/azure-iot/dt).
+The command set is called `az dt`, and is part of the Azure IoT extension for Azure CLI. You can view the full list of commands and their usage as part of the reference documentation for the `az iot` command set: [az dt command reference](/cli/azure/dt).
 
 > [!NOTE]
 > The `az dt` extension for Azure CLI requires Azure CLI version 2.0.70 or higher. If you're using the Azure CLI with PowerShell, the extension package requires that your Azure CLI version to be 2.3.1 or above.

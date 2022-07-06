@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.aks-cluster-upgrades-patches.badge
+metadata:
+  title: >-
+    Microsoft Badge: Apply cluster upgrades and security patches with Azure
+    Kubernetes Service was issued by Microsoft
+socialImageUrl: /learn/achievements/aks-cluster-upgrades-patches-social.png

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-message-queues.activities
+title: ProjectMessageQueues activities
+metadata:
+  title: ProjectMessageQueues activities
+  description: Describe the activities of the project.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-activities.md)]

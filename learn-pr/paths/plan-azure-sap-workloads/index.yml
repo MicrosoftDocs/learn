@@ -20,6 +20,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture
 - learn-pr.wwl.planning-implementing-sap-solutions-azure

@@ -18,7 +18,7 @@ In this module, you will:
 ## Prerequisites
 
 - Experience writing C# at the beginner level
-- Experience using relational databases and SQL as a developer
+- A basic understanding of relational databases
 - Visual Studio Code
 - .NET SDK 6.0 or greater
 - Git command-line client

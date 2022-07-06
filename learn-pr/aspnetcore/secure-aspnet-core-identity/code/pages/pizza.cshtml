@@ -1,0 +1,56 @@
+<!-- <snippet_Create> -->
+<h1>Pizza List 🍕</h1>
+@if (Model.IsAdmin)
+{
+<form method="post" class="card p-3">
+    <div class="row">
+        <div asp-validation-summary="All"></div>
+    </div>
+    <div class="form-group mb-0 align-middle">
+        <label asp-for="NewPizza.Name">Name</label>
+        <input type="text" asp-for="NewPizza.Name" class="mr-5">
+        <label asp-for="NewPizza.Size">Size</label>
+        <select asp-for="NewPizza.Size" asp-items="Html.GetEnumSelectList<PizzaSize>()" class="mr-5"></select>
+        <label asp-for="NewPizza.Price"></label>
+        <input asp-for="NewPizza.Price" class="mr-5" />
+        <label asp-for="NewPizza.IsGlutenFree">Gluten Free</label>
+        <input type="checkbox" asp-for="NewPizza.IsGlutenFree" class="mr-5">
+        <button class="btn btn-primary">Add</button>
+    </div>
+</form>
+}
+<!-- </snippet_Create> -->
+
+<!-- <snippet_Delete> -->
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Size</th>
+            <th scope="col">Gluten Free</th>
+            @if (Model.IsAdmin)
+            {
+            <th scope="col">Delete</th>
+            }
+        </tr>
+    </thead>
+    @foreach (var pizza in Model.pizzas)
+    {
+        <tr>
+            <td>@pizza.Name</td>
+            <td>@($"{pizza.Price:C}")</td>
+            <td>@pizza.Size</td>
+            <td>@Model.GlutenFreeText(pizza)</td>
+            @if (Model.IsAdmin)
+            {
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@pizza.Id">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+            }
+        </tr>
+    }
+</table>
+<!-- </snippet_Delete> -->

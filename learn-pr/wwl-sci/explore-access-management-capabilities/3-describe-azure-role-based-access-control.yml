@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
-title: Describe Azure AD role-based access control
+title: Describe the benefits of Azure AD roles and role-based access control
 metadata:
-  title: Describe Azure AD role-based access control
-  description: "Describe Azure AD role-based access control"
-  ms.date: 12/06/2021
+  title: Describe the benefits of Azure AD roles and role-based access control
+  description: "Describe the benefits of Azure AD roles and role-based access control"
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/3-describe-azure-role-based-access-control.md)]

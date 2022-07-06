@@ -3,7 +3,7 @@ uid: learn.github.authenticate-authorize-user-identities-github
 metadata:
   title: Authenticate and authorize user identities on GitHub 
   description: Learn how to manage the authentication and authorization of user identities on GitHub.
-  ms.date: 11/01/2021
+  ms.date: 04/11/2022
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
@@ -30,6 +30,8 @@ products:
 - github
 prerequisites: |
   - Administrative access to your GitHub organization or GitHub Enterprise
+subjects:
+- identity-access
 units:
 - learn.github.authenticate-authorize-user-identities-github.1-introduction
 - learn.github.authenticate-authorize-user-identities-github.2-user-identity-access-management

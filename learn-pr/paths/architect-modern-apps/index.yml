@@ -23,6 +23,8 @@ products:
 - azure-container-instances
 - azure-app-service
 - azure-cache-redis
+subjects:
+- cloud-computing
 modules:
 - learn.intro-to-containers
 - learn.run-docker-containers-aci

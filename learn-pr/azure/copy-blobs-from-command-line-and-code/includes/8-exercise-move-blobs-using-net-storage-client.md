@@ -1,4 +1,4 @@
-The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications tha move data around Azure storage.
+The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications that move data around Azure storage.
 
 In this exercise, you'll see how to write an application that can migrate blobs from hot to cool storage.
 
@@ -186,7 +186,7 @@ To have some blobs with a different modified date from the batch upload time, yo
 
 1. Select the **Edit** tab from the blob panel, and add any text you want.
 
-1. select **Save** to commit the changes to the blob.
+1. Select **Save** to commit the changes to the blob.
 
 1. Repeat this for one or two additional blob files.
 

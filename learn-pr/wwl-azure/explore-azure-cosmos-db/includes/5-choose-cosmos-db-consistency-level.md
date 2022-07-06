@@ -14,7 +14,7 @@ Consider the following points if your application is built using SQL API or Tabl
 
 * If you need less strict consistency guarantees than the ones provided by session consistency, it is recommended that you use consistent prefix consistency level.
 
-* If you need the highest availability and the lowest latency, then use eventual consistency level.
+* If you need the highest throughput and the lowest latency, then use eventual consistency level.
 
 * If you need even higher data durability without sacrificing performance, you can create a custom consistency level at the application layer. 
 

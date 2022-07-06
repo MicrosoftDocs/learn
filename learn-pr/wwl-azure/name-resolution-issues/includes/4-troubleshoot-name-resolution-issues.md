@@ -38,14 +38,14 @@ Built-in Azure name resolution has some limitations:
 
 Azure Private DNS allows you to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. You can use custom domain names, rather than the Azure-provided names.  
 
-DNS resolution using a private DNS zone works only from virtual networks that are linked to it. These private DNS zones records cannot be resolved from the internet.  
+DNS resolution using a private DNS zone works only from virtual networks that are linked to it. These private DNS zones records can be resolved from the internet, but the private IP address is not routable via the Internet.
 
 You can link a private DNS zone to one or more virtual networks by creating [virtual network links](/azure/dns/private-dns-virtual-network-links). You can also enable the [autoregistration](/azure/dns/private-dns-autoregistration) feature to automatically manage the life cycle of the DNS records for the virtual machines that get deployed in a virtual network. With autoregistration enabled, Azure DNS will update the zone record whenever a virtual machine gets created, changes its' IP address, or gets deleted. 
 
 > [!NOTE]
 > A Virtual Network can only have autoregistration enabled on one Private DNS Zone link. If you try to link two private DNS zones to the same VNet, only one of the links will be enabled for autoregistration.
 
-:::image type="content" source="../media/4-link-zones.png" alt-text="Diagram of private DNS zones on the same Vnet.":::
+:::image type="content" source="../media/4-link-zones.png" alt-text="Diagram of private DNS zones on the same Vnet." border="false" lightbox="../media/4-link-zones.png":::
 
 There are limits on how many private DNS zones you can create, how many records sets, and records per record set.
 
@@ -95,7 +95,7 @@ To troubleshoot issues related to DNS records:
 
 1. CNAME record sets cannot have the same name as other record sets.
 
-1. Apex records consist of the ‘@’ character.
+1. Apex records consist of the '@' character.
 
 1. The maximum number of records that can be created is shown in the Azure portal, under the 'Properties' for the zone. If you've reached this limit, then either delete some record sets or contact Azure Support to raise your record limit for this zone.
 

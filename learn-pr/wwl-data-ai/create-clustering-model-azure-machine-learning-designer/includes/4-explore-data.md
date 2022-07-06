@@ -4,19 +4,21 @@ To train a clustering model, you need a dataset that includes multiple observati
 
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*. In this module, you'll use a dataset that includes observations of three species of penguin.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the three lines at the top left of the screen. View the **Data** page (under **Assets**). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
 2. Create a dataset from web files, using the following settings:
     * **Basic Info**:
         * **Web URL**: https://aka.ms/penguin-data
         * **Name**: penguin-data
         * **Dataset type**: Tabular
         * **Description**: Penguin data
+        * **Skip data validation**: _do not select_
     * **Settings and preview**:
         * **File format**: Delimited
         * **Delimiter**: Comma
         * **Encoding**: UTF-8
         * **Column headers**:  Only first file has headers
         * **Skip rows**: None
+        * **Dataset contains multi-line data**: _do not select_
     * **Schema**:
         * Include all columns other than **Path**
         * Review the automatically detected types
@@ -33,19 +35,28 @@ Network](https://lternet.edu/).
 
 ## Create a pipeline
 
-To get started with Azure machine Learning designer, first you must create a pipeline and add the dataset you want to work with.
+To get started with Azure machine learning designer, first you must create a pipeline and add the dataset you want to work with.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and create a new pipeline.
-2. At the top left-hand side of the screen, click on the  default pipeline name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering**. 
-3. You need to specify a compute target on which to run the pipeline. In the **Settings** pane, click on **Select compute target** to select the compute cluster you created previously (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
-4. Next to the pipeline name on the left, select the button **>>** to expand the panel. Drag the **penguin-data** dataset you created in the previous exercise onto the canvas.
-5. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
-6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the three lines icon at the top left of the screen. View the **Designer** page (under **Author**), and select the plus sign to create a new pipeline.
+2. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top. 
+3. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML *compute-type***, select the compute cluster you created previously. 
+4. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering**
+5. Select the *close icon* on the top right of the **Settings** pane to close the pane. 
 
-> [!div class="centered"]
-> ![A visualization of the penguin-data dataset, showing its columns and some sample data.](../media/penguin-visualization.png)
+    ![Screenshot of the Machine Learning Studio Settings pane.](../media/create-pipeline-help.png)
 
-7. Note the following characteristics of the dataset:
+### Load data to canvas 
+1. Next to the pipeline name on the left, select the arrows icon to expand the panel if it is not already expanded. The panel should open by default to the **Asset Library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Notice two buttons, **Data** and **Components**. 
+
+    ![Screenshot of location of designer asset library, search bar, and data icon.](../media/designer-asset-library-data.png)
+
+2. Click on **Data**. Search for and place the  **penguin-data** dataset onto the canvas.
+3. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and click on **Preview data**. 
+4. Review the *Profile* schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
+
+    ![A visualization of the penguin-data dataset, showing its columns and some sample data.](../media/penguin-visualization.png)
+
+5. Note the following characteristics of the dataset:
 
     - The dataset includes the following columns:
         - **CulmenLength**: Length of the penguin's bill in millimeters.
@@ -56,72 +67,66 @@ To get started with Azure machine Learning designer, first you must create a pip
     - There are two missing values in the **CulmenLength** column (the **CulmenDepth**, **FlipperLength**, and **BodyMass** columns also have two missing values).
     - The measurement values are in different scales (from tens of millimeters to thousands of grams).
 
-8. Close the dataset visualization so you can see the dataset on the pipeline canvas.
+6. Close the dataset visualization so you can see the dataset on the pipeline canvas.
 
 ## Apply transformations
 
 To cluster the penguin observations, we're going to use only the measurements; so we'll discard the species column. We also need to remove rows where values are missing, and normalize the numeric measurement values so they're on a similar scale.
 
-1. In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
-2. To cluster the penguin observations, we're going to use only the measurements - we'll ignore the species column. So, drag a **Select Columns in Dataset** module to the canvas, below the **penguin-data** module and connect the output at the bottom of the **penguin-data** module to the input at the top of the **Select Columns in Dataset** module, like this:
+1. In the **Asset Library** pane on the left, click on **Components**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
 
-> [!div class="centered"]
-> ![The penguin-data dataset connected to the Select Columns in Dataset module](../media/dataset-select-columns.png)
+    ![Screenshot of location of designer asset library, search bar, and components icon.](../media/designer-asset-library-components.png)
 
-3. Select the **Select Columns in Dataset** module, and in its **Settings** pane on the right, select **Edit column**. Then in the **Select columns** window, select **By name** and use the **+** links to select the column names **CulmenLength**, **CulmenDepth**, **FlipperLength**, and **BodyMass**; like this:
+2. To cluster the penguin observations, we're going to use only the measurements - we'll ignore the species column. So, search for a **Select Columns in Dataset** module and place it on the canvas, below the **penguin-data** module and connect the output at the bottom of the **penguin-data** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
-> [!div class="centered"]
-> ![include column names CulmenLength, CulmenDepth, FlipperLength, and BodyMass](../media/select-columns.png)
+    ![The penguin-data dataset connected to the Select Columns in Dataset module](../media/dataset-select-columns.png)
 
-4. Save the **Select Columns in a Dataset** module settings to return to the designer canvas.
-5. Drag a **Clean Missing Data** module to the canvas, below the **Select columns in a dataset** module and connect them like this:
+3. Double click on the **Select Columns in Dataset** module, and in the pane on the right, select **Edit column**. Then in the **Select columns** window, select **By name** and use the **+** links to select the column names **CulmenLength**, **CulmenDepth**, **FlipperLength**, and **BodyMass**; like this:
 
-> [!div class="centered"]
-> ![Connect the output of the Select Columns in Dataset module to the input of the Clean Missing Data module](../media/clean-missing-data.png)
+    ![include column names CulmenLength, CulmenDepth, FlipperLength, and BodyMass](../media/select-columns.png)
 
-6. Select the **Clean Missing Data** module, and in the settings pane on the right, click **Edit column**. Then in the **Select columns** window, select **With rules** and include **All columns**; like this:
+4. Close the **Select Columns in a Dataset** module settings to return to the designer canvas.
+5. In the **Asset library**, search for a **Clean Missing Data** module and place it onto the canvas, below the **Select columns in a dataset** module and connect them like this:
 
-> [!div class="centered"]
-> ![Use the With rules option to Select all columns](../media/normalize-columns.png)
+    ![Connect the output of the Select Columns in Dataset module to the input of the Clean Missing Data module](../media/clean-missing-data.png)
+
+6. Double click the **Clean Missing Data** module, and in the settings pane on the right, click **Edit column**. Then in the **Select columns** window, select **With rules** and include **All columns**; like this:
+
+    ![Use the With rules option to Select all columns](../media/normalize-columns.png)
 
 7. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings:
     - **Minimum missing value ratio**: 0.0
     - **Maximum missing value ratio**: 1.0
     - **Cleaning mode**: Remove entire row
 
-8. Drag a **Normalize Data** module to the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
+8. In the **Asset library**, search for a **Normalize Data** module and place it to the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
 
-> [!div class="centered"]
-> ![Connect the output of the Clean Missing Data module to the input of the Normalize Data module](../media/dataset-normalize.png)
+    ![Connect the output of the Clean Missing Data module to the input of the Normalize Data module](../media/dataset-normalize.png)
 
-9. Select the **Normalize Data** module, and in its **Settings** pane on the right, set the **Transformation method** to **MinMax** and select **Edit column**. Then in the **Select columns** window, select **With rules** and include **All columns**; like this:
+9. Double click the **Normalize Data** module, and in the pane on the right, set the **Transformation method** to **MinMax** and select **Edit column**. Then in the **Select columns** window, select **With rules** and include **All columns**; like this:
 
-> [!div class="centered"]
-> ![Use the With rules option to Select all columns](../media/normalize-columns.png)
+    ![Use the With rules option to Select all columns](../media/normalize-columns.png)
 
-10. Save the **Normalize Data** module settings to return to the designer canvas.
+10. Close the **Normalize Data** module settings to return to the designer canvas.
 
 ## Run the pipeline
 
 To apply your data transformations, you need to run the pipeline as an experiment.
 
-1. Ensure your pipeline looks similar to this:
+1. Select **Submit**, and run the pipeline as a **new experiment** named **mslearn-penguin-training** on your compute cluster.
+2. Wait for the run to finish. This may take 5 minutes or more. 
 
-> [!div class="centered"]
-> ![The penguin-data dataset, a Select Columns in Dataset module, a Clean Missing Data module, and a Normalize Data module](../media/data-preparation.png)
+    ![Screenshot of designer asset library with the completed job and job details button below.](../media/completed-job.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-penguin-training** on your compute cluster.
-3. Wait for the run to finish. This may take 5 minutes or more. When the run has completed, the modules should look like this:
-
-> [!div class="centered"]
-> ![Select Columns in Dataset and Normalize Data modules with a "Completed" state](../media/normalize-complete.png)
+    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Complete**. 
 
 ## View the transformed data
 
-The dataset is now prepared for model training.
+1. When the run has completed, the dataset is now prepared for model training. Click on **Job Details**. You will be taken to another window which will show the modules like this:
+    ![Select Columns in Dataset and Normalize Data modules with a "Completed" state](../media/normalize-complete.png)
 
-1. Select the completed **Normalize Data** module, and in its **Settings** pane on the right, on the **Outputs + logs** tab, select the **Visualize** icon for the **Transformed dataset**.
-2. View the data, noting that the **Species** column has been removed, there are no missing values, and the values for all four features have been normalized to a common scale.
-3. Close the normalized data result visualization.
+2. In the new window, right click on the **Normalize Data** module, select **Preview data**, then select **Transformed dataset** to view the results. 
+3. View the data, noting that the **Species** column has been removed, there are no missing values, and the values for all four features have been normalized to a common scale.
+4. Close the normalized data result visualization. Return to the previous pipeline window.
 
 Now that you have selected and prepared the features you want to use from the dataset, you're ready to use them to train a clustering model.

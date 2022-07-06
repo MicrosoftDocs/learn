@@ -1,6 +1,6 @@
 In this module, you learned how to troubleshoot a deployment of Azure Active Directory (Azure AD) that is based entirely in the cloud and a hybrid deployment of Azure AD that is part cloud-based and part on-premises. You also learned how to troubleshoot authorization issues when using Microsoft Azure.
 
-Now that you’ve completed this module, you should be able to:
+Now that you've completed this module, you should be able to:
 
 - Troubleshoot Azure AD authentication.
 

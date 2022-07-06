@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 04/28/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: |
+      You're concerned that applying controls to your production Azure environment might cause problems with automated deployments. In particular, you're concerned that you won't discover problems until your changes are deployed to production, when it's too late to fix them.
+      
+      What can you do to mitigate this risk?
+    choices:
+    - content: Apply the same controls to some of your non-production environments.
+      isCorrect: true
+      explanation: Correct. When you apply controls to your non-production environments, your code is exposed to the controls that you have in your production environment sooner and with less risk. If the controls cause problems, you'll find out more quickly and can correct the problems without affecting production.
+    - content: Disable the controls on your production environment.
+      isCorrect: false
+      explanation: Incorrect. You shouldn't disable the controls in your production environment. Instead, look for opportunities to discover the problems sooner.
+    - content: Apply branch protection rules to your repository's *main* branch.
+      isCorrect: false
+      explanation: Incorrect. Branch protection rules don't help in this situation.
+  - content: You decide to enforce the deployment of your infrastructure as code. You want to prohibit manual changes to your resources. Which of the following tools should you implement?
+    choices:
+    - content: Azure Monitor
+      isCorrect: false
+      explanation: Incorrect. Azure Monitor doesn't prohibit manual changes to resources.
+    - content: Role-based access control (RBAC)
+      isCorrect: true
+      explanation: Correct. You use RBAC to control who has access to your Azure resources. You can configure RBAC to disallow users to access resources and grant access to only your pipeline's service principal.
+    - content: Resource tags
+      isCorrect: false
+      explanation: Incorrect. Resource tags don't prohibit manual changes to resources.
+  - content: Which of the following statements describes a benefit of using Privileged Identity Management (PIM)?
+    choices:
+    - content: PIM prevents all unauthorized changes to your Azure environment.
+      isCorrect: false
+      explanation: Incorrect. PIM doesn't prevent all unauthorized changes. It helps reduce them by giving users a small set of permissions and temporarily elevating their assigned permissions when required.
+    - content: PIM enables users to use a separate account to access your Azure environment with higher permissions than they usually have.
+      isCorrect: false
+      explanation: Incorrect. Unlike break-glass accounts, PIM doesn't require a separate user account.
+    - content: PIM enables users to request that their accounts are temporarily granted higher permissions than they usually have.
+      isCorrect: true
+      explanation: Correct. PIM allows users to use their own user accounts and identities, with a set of additional permissions granted temporarily.

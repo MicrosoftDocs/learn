@@ -38,6 +38,9 @@ products:
 - azure-monitor
 - azure-portal
 - azure-virtual-machines
+subjects:
+- it-management-monitoring
+- virtual-machine
 modules:
 - learn.wwl.administer-manage-windows-server-iaas-vm-remotely
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances

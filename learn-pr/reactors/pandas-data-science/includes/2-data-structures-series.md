@@ -1,10 +1,10 @@
 <!--- Reviewer note: This unit uses LaTex math formatting. The dollar sign $ starts and ends each LaTeX statement. -->
 
-Both `Series` and `DataFrames` are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficient data storage and handling at the scales necessary for data science. What both of them provide that `ndarrays` lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make `Series` and `DataFrames` essential to the "data munging" that make up so much of data science.
+Both `Series` and `DataFrames` are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficient data storage and handling at the scales necessary for data science. What both provide that `ndarrays` lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make `Series` and `DataFrames` essential to the "data munging" that makes up so much of data science.
 
 ## Series objects in pandas
 
-A pandas `Series` is a lot like an `ndarray` in NumPy, a one-dimensional array of indexed data. You can create a simple `Series` from an array of data like this:
+A pandas `Series` is a lot like an `ndarray` in NumPy: a one-dimensional array of indexed data. You can create a simple `Series` from an array of data like this:
 
 ```python
 Series_example = pd.`Series`([-0.5, 0.75, 1.0, -2])
@@ -23,7 +23,7 @@ dtype: float64
 
 Similar to an `ndarray`, a `Series` upcasts entries to be of the same type of data (that -2 integer in the original array became a -2.00 float in the `Series`).
 
-What is different from an `ndarray` is that the `Series` automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the `Series` object that you can access with the `values` and `index` attributes.
+What is different from an `ndarray` is that the `Series` automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the `Series` object, which you can access with the `values` and `index` attributes.
 
 Try accessing the `values` first. They're just a familiar NumPy array:
 
@@ -75,7 +75,7 @@ The output is:
 dtype: float64
 ```
 
-Despite a lot of similarities, pandas `Series` have an important distinction from NumPy `ndarrays`. Whereas `ndarrays` have _implicitly defined_ integer indices (as do Python lists), pandas `Series` have explicitly defined indices. The best part is that you can set the index:
+Despite a lot of similarities, pandas `Series` have an important distinction from NumPy `ndarrays`. Whereas `ndarrays` have *implicitly defined* integer indices (as do Python lists), pandas `Series` have *explicitly defined* indices. The best part is that you can set the index:
 
 ```python
 Series_example2 = pd.`Series`([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
@@ -106,7 +106,7 @@ The output is:
 
 ### Try it yourself
 
-You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test.
+You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new superpowers to predict and test.
 
 - Predict: What would happen if you sliced `series_example2` by using its explicit index?
 - Test: Try it out in Visual Studio Code. Was the output what you expected?
@@ -133,7 +133,7 @@ You're experienced in Jupyter Notebooks and experimenting with Python now, so us
 
 ***
 
-Do explicit `Series` indices work exactly the way you might expect? Try slicing `Series_example2` by using its explicit index, and find out.
+Do explicit `Series` indices work exactly the way you might expect? Try slicing `Series_example2` by using its explicit index and find out.
 
 With explicit indices in the mix, a `Series` is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like `ndarrays`, these data are all of the same type, which is important. Just as the type-specific compiled code behind `ndarray` makes them more efficient than a Python lists for certain operations, the type information of pandas `Series` makes them much more efficient than Python dictionaries for certain operations.
 
@@ -203,7 +203,7 @@ But you can also do powerful, array-like operations with `Series`, like slicing.
 
 ### Try it yourself
 
-You can also add elements to a `Series` the way that you would to an `ndarray`.
+You can also add elements to a `Series` the way you would to an `ndarray`.
 
 - Try adding elements to a `Series` in the following code cell.
 - Try running `population['Albania'] = 2937590` (or another country of your choice).

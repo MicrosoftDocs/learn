@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-event-hubs
+subjects:
+- data-ai
 units:
 - learn.wwl.azure-event-hubs.introduction
 - learn.wwl.azure-event-hubs.discover

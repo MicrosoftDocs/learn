@@ -10,7 +10,7 @@ param environmentType string
 
 var appServicePlanName = 'toy-product-launch-plan'
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2v3' : 'F1'
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: storageAccountName

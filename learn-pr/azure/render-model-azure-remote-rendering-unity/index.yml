@@ -37,6 +37,8 @@ products:
 - azure-remote-rendering
 - windows-mixed-reality
 - hololens
+subjects:
+- mixed-reality
 units:
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.1-introduction
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering

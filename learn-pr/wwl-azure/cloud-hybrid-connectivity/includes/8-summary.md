@@ -10,7 +10,7 @@ Now that you've completed this module, you should be able to:
 
 ## Resources
 
-For more information about the topics discussed in this module, see:
+Follow these links for more information about what you've seen in this module:
 
 ### ExpressRoute
 

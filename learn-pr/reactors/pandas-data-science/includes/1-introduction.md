@@ -1,8 +1,8 @@
-Now that you've explored NumPy, it's time to get to know the other workhorse of data science in Python: pandas. The pandas library in Python makes working with data, like importing, cleaning, and organizing it, easier. It's hard to imagine doing data science in Python without it.
+Now that you've explored NumPy, it's time to get to know the other workhorse of data science in Python: pandas. The pandas library in Python makes working with data &mdash; like importing, cleaning, and organizing it &mdash; easier. It's hard to imagine doing data science in Python without it.
 
-But it was not always this way. Wes McKinney developed the library out of necessity in 2008, while at AQR Capital Management, in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module are drawn from McKinney's book, _[Python for Data Analysis](https://wesmckinney.com/pages/book.html?azure-portal=true)_.)
+But it wasn't always this way. Wes McKinney developed the library out of necessity in 2008, while at AQR Capital Management, in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module are drawn from McKinney's book, _[Python for Data Analysis](https://wesmckinney.com/pages/book.html?azure-portal=true)_.)
 
-The name _pandas_ actually has nothing to do with Chinese bears, but rather comes from the term _panel data_. Panel data is a form of multidimensional data involving measurements over time, and it comes out of the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it here. Instead, we'll focus on the two most widely used data structures in pandas: `Series` and `DataFrames`.
+The name *pandas* actually has nothing to do with Chinese bears, but rather comes from the term *panel data*. Panel data is a form of multidimensional data involving measurements over time, and it comes out of the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it here. Instead, we'll focus on the two most widely used data structures in pandas: `Series` and `DataFrames`.
 
 ## Reminders about importing and documentation
 
@@ -12,7 +12,7 @@ Just as you imported NumPy with the alias `np`, you'll import pandas under the a
 import pandas as pd
 ```
 
-As with the NumPy convention, `pd` is an important and widely used convention in the data science world. We recommend that you use it in your own coding.
+As with the NumPy convention, `pd` is an important and widely used convention in the data-science world. We recommend you use it in your own coding.
 
 As you progress through this module, don't forget that IPython provides the tab-completion feature and function documentation with the `?` character. If you don't understand anything about a function you see in this module, take a moment and read the documentation. The docs can help a great deal. As a reminder, to display the built-in pandas documentation, use this code:
 
@@ -63,12 +63,12 @@ Here are just a few of the things that pandas does well:
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Import the pandas library into Jupyter Notebooks in Visual Studio Code
 - Understand how to use `Series` and `DataFrames` to store remote data
 - Learn how to clean and manipulate large, remote datasets
-- Apply operations to `Series` and `DataFrames` for data science analysis
+- Apply operations to `Series` and `DataFrames` for data-science analysis
 
 ## Prerequisites
 

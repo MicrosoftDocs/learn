@@ -3,7 +3,7 @@ uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
 metadata:
   title: Author complex queries with the Azure Cosmos DB SQL API
   description: "Create SQL queries for Azure Cosmos DB SQL API that uses subqueries or cross-products."
-  ms.date: 12/22/2021
+  ms.date: 06/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.introduction
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.implement-correlated-subqueries

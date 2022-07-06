@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-storage-services.exercise-create-storage-blob
+title: Exercise - Create a storage blob
+metadata:
+  title: Exercise - Create a storage blob
+  description: "Exercise - Create a storage blob"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-storage-blob.md)]
+interactive: bash

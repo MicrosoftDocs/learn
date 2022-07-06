@@ -8,7 +8,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Load Balancer documentation](/azure/load-balancer/).
- -  [Learn - Improve application scalability and resiliency by using Azure Load Balancer](/learn/modules/improve-app-scalability-resiliency-with-load-balancer/)
+ -  [Learn - Improve application scalability and resiliency by using Azure Load Balancer (Sandbox)](/learn/modules/improve-app-scalability-resiliency-with-load-balancer/)
+ -  [Learn - Load balance non-HTTP(S) traffic in Azure](/learn/modules/load-balancing-non-https-traffic-azure/)

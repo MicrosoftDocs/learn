@@ -1,6 +1,6 @@
 To create a class, define its members: properties, a `constructor`, accessors, and methods.
 
-Let's create a new class called `Car`. You can use the `Car` class on its own to create basic `Car` objects, or you can extend the `Car` class to create new classes for specific types of cars, like a `GasCar` or an `ElectricCar` class. These properties will inherit the properties and methods of the `Car` class, as well as have their own properties and methods.
+Let's create a new class called `Car`. You can use the `Car` class on its own to create basic `Car` objects, or you can extend the `Car` class to create new classes for specific types of cars, like a `GasCar` or an `ElectricCar` class. These classes will inherit the properties and methods of the `Car` class, as well as have their own properties and methods.
 
 1. Open the [Playground](https://www.typescriptlang.org/play?azure-portal=true) and remove any existing code.
 1. Create a new `class` by using the `class` keyword followed by the class name, `Car`. By convention, class names are PascalCase. Let's also add some comments to make it easier to add the class members in the correct places.
@@ -46,14 +46,14 @@ A `constructor` function initializes the properties of the class and has three p
   - It is not required to define a parameter for every property in the class.
   - As with all TypeScript functions, the parameters can be required or optional, have default values, or be rest parameters. (This is a key difference from JavaScript.)
   - The parameter names can be different from the property names. Keep in mind that these names will appear in Intellisense when you work with objects of this type so use names that are sufficiently descriptive.
-- The property assignments. Each statement assigns the value of a parameter to the value of a property. To indicate that you are accessing a member of the class (in this case, the property), apply the `this.` keyword.
+- The property assignments. Each statement assigns the value of a parameter to the value of a property. To indicate that you're accessing a member of the class (in this case, the property), apply the `this.` keyword.
 
 A class may contain at most one `constructor` declaration. If a class contains no `constructor` declaration, an automatic constructor is provided.
 
 Continue defining the `Car` class in the Playground.
 
 1. Create the `constructor` for the `Car` class. Start with the `constructor` keyword and then define the parameters and types that will be passed to the new `Car` object when a new instance is created. For the `Car` class, define one parameter for each of the three properties and annotate it with the type. Make the `doors` parameter optional with a default value of `4`.
-1. Inside the code block for the `constructor`, assign a parameter value to each property (for example, `this._make = make`). In this case, you'll just set it to the value of the associated parameter but note that you can assign any expression that returns the required type.
+1. Inside the code block for the `constructor`, assign a parameter value to each property (for example, `this._make = make`). In this case, set it to the value of the associated parameter but note that you can assign any expression that returns the required type.
 
     ```typescript
     // Constructor
@@ -69,7 +69,7 @@ Continue defining the `Car` class in the Playground.
 
 ## Define the accessors
 
-While you can access the class properties directly (they are `public`, by default), TypeScript supports getters/setters as a way of intercepting access to a property. This gives you finer-grained control over how a member is accessed on each object.
+While you can access the class properties directly (they're `public`, by default), TypeScript supports getters/setters as a way of intercepting access to a property. This gives you finer-grained control over how a member is accessed on each object.
 
 To `set` or return the value of the object's members from code, you must define `get` and `set` accessors in the class.
 
@@ -124,7 +124,7 @@ You can define any TypeScript function within a class and call it as a method on
 
 Continue defining the `Car` class in the Playground.
 
-1. Define these four methods for the `Car` class: `accelerate`, `brake`, `turn`, and `worker`. You'll notice that there is no `function` keyword. This is not required or allowed when defining functions in a class, so it helps you keep the syntax succinct.
+1. Define these four methods for the `Car` class: `accelerate`, `brake`, `turn`, and `worker`. You'll notice that there's no `function` keyword. This is not required or allowed when defining functions in a class, so it helps you keep the syntax succinct.
 
     ```typescript
     // Methods

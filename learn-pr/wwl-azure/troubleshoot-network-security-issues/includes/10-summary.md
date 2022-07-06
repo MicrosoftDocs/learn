@@ -2,7 +2,7 @@ As a support engineer, you have investigated various network security issues. Ha
 
 You now understand how to protect your Azure Virtual Network through network security policies and resources.
 
-Now that you’ve completed this module, you should be able to:
+Now that you've completed this module, you should be able to:
 
 - Troubleshoot network security issues.
 

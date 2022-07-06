@@ -32,6 +32,8 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.aks-cluster-autoscaling.1-introduction
 - learn.aks-cluster-autoscaling.2-concepts-cluster-scaling

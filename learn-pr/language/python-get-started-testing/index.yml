@@ -28,6 +28,8 @@ roles:
   - student
 products:
   - vs-code
+subjects:
+- development-tools
 units:
 - learn.python-get-started-testing.introduction
 - learn.python-get-started-testing.python-unittest

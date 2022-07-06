@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Score the machine learning model that predicts rocket launch success
   description: See how accurate the model is.
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -1,8 +1,5 @@
 In this exercise, you'll investigate ring-based deployment.
 
-> [!NOTE]
-> *Before starting this exercise, make sure you've done the steps in the prerequisites section and the previous exercises.*
-
 ## Steps
 
 Let's now look at how a release pipeline can stage features using ring-based deployments.
@@ -57,7 +54,7 @@ We start by assuming that a new feature has already been deployed to the Green s
     :::image type="content" source="../media/12-06-thirty-percent-e756e7af.png" alt-text="Thirty percent":::
 
 
-    `Az webapp traffic -routing set --resource-group $(ResourceGroupName) --name $(WebsiteName) --distribution staging=30`
+    `Az webapp traffic-routing set --resource-group $(ResourceGroupName) --name $(WebsiteName) --distribution staging=30`
 
     It allows us to move the new feature into broader distribution if it works ok in smaller users.
 

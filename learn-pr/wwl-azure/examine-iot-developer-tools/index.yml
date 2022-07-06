@@ -29,6 +29,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-iot-sdk
+subjects:
+- iot
 units:
 - learn.wwl.examine-iot-developer-tools.introduction
 - learn.wwl.examine-iot-developer-tools.review-coding-tool-options
