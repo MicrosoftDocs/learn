@@ -1,6 +1,6 @@
 Cybersecurity is an ever growing concern for all businesses with an online presence. Taking advantage of multicloud environments and the benefits they offer opens your business, data, and customers to cyber threats. Every business with an online presence needs to ensure it has the proper security in place and protect its workloads running in Azure and hybrid environments.
 
-Let's start with a few definitions and a quick tour of the core features of Defender for Cloud. This overview should help you see whether Defender for Cloud might be a good fit for you.
+Let's start with a few definitions and a quick tour of the core features of Microsoft Defender for Cloud. This overview should help you see whether Defender for Cloud might be a good fit for you.
 
 ## Protect your environments with Defender for Cloud
 
@@ -8,7 +8,7 @@ Defender for Cloud is a security software product that protects and secures your
 
 Defender for Cloud provides you with recommendations on how to improve your security posture via a Secure Score.
 
-The Secure Score is a percentage based KPI that informs you of your environment's security posture. The higher your Secure Score is, the more secure your environment is. The Secure Score is made up of several controls which contain recommendations. You can increase your Secure Score by remediating all of the recommendations in the controls associated with your environments.
+The Secure Score is a percentage based KPI that informs you of your environment's security posture. The higher your Secure Score, the more secure your environment. The Secure Score is made up of several controls which contain recommendations. You can increase your Secure Score by remediating all of the recommendations in the controls associated with your environments.
 
 When you remediate recommendations, your environments are hardened, which in turn improves your security posture across Azure, AWS and GCP.  
 
