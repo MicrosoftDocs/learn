@@ -14614,6 +14614,41 @@
       "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/1-introduction",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/2-compare-storage-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/2-compare-storage-options",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/3-store-data-locally-with-sqlite.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/3-store-data-locally-with-sqlite",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/4-exercise-store-data-locally-with-sqlite.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/4-exercise-store-data-locally-with-sqlite",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/5-use-sqlite-asynchronously.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/5-use-sqlite-asynchronously",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/6-exercise-use-sqlite-asynchronously.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/6-exercise-use-sqlite-asynchronously",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/7-summary",
+      "redirect_document_id": false    
     }    
   ]
 }
