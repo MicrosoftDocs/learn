@@ -1,4 +1,4 @@
-Cybersecurity is an ever growing concern for all business with an online presence. Taking advantage of multicloud environments and the benefits they offer, opens your business, data and customers to cyber threats. Every business with an online presence needs to ensure it has the proper security in place and protect its workloads running in Azure and hybrid environments.
+Cybersecurity is an ever growing concern for all businesses with an online presence. Taking advantage of multicloud environments and the benefits they offer opens your business, data, and customers to cyber threats. Every business with an online presence needs to ensure it has the proper security in place and protect its workloads running in Azure and hybrid environments.
 
 Let's start with a few definitions and a quick tour of the core features of Defender for Cloud. This overview should help you see whether Defender for Cloud might be a good fit for you.
 
