@@ -14684,6 +14684,51 @@
       "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/2-display-two-screens.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/3-exercise-add-twopaneview.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/4-span-unspan.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/5-exercise-use-dualscreeninfo.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/6-larger-screens.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/7-exercise-tablet-support.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/8-hinge-angle.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
+      "redirect_document_id": false    
     }    
   ]
 }
