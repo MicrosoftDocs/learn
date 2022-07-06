@@ -14494,6 +14494,51 @@
       "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/xamarin/android/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/2-what-is-xamarin-ios.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/3-create-a-xamarin-ios-app.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/4-exercise-create-a-tip-calculator-app.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/5-explore-ios-terminology.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/6-add-views-to-your-app.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/7-add-controls-and-behavior-to-your-app.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/8-exercise-add-ui-and-behavior-to-a-tip-calculator-app.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
+      "redirect_document_id": false    
     }
   ]
 }
