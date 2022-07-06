@@ -3,7 +3,7 @@ uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
 metadata:
   title: Build a Form Recognizer custom skill for Azure Cognitive Search
   description: "Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline."
-  ms.date: 07/04/2022
+  ms.date: 07/06/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -30,7 +30,7 @@ subjects:
 units:
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.introduction
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.understand-enrichment-pipelines
-- learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.build-form-fecognizer-custom-skill
+- learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.build-form-recognizer-custom-skill
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.exercise-build-deploy
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.knowledge-check
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.summary
