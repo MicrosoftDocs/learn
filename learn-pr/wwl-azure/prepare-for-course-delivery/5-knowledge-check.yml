@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-for-course-delivery.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/06/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What steps will help prepare you to teach a Microsoft Fundamentals or Advanced Role-Based course?"
+    choices:
+    - content: "Draft my syllabus, record my class in the MSLE portal, set up my lab seats, and review MOC Virtual Educator Prep Sessions (VEPS). Then engage with other educators in the MSLE Teams community, finalize my student certification plan, finalize syllabus, set expectations, set-up Learning Management System (LMS), and register for the Microsoft Learn for Educators testing center."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn for Educators doesn't offer certification exam testing."
+    - content: "Draft my syllabus, record my class in the MSLE portal, set up my lab seats, and review MOC Virtual Educator Prep Sessions (VEPS). Then engage with other educators in the MSLE Teams community, finalize my student certification plan, finalize syllabus, set expectations, and set-up Learning Management System (LMS)."
+      isCorrect: true
+      explanation: "Correct. These steps will help you prepare for your upcoming course."
+    - content: "Draft my syllabus, record my class in the MSLE portal, set up my lab seats, and review MOC Virtual Educator Prep Sessions (VEPS). Then engage with other educators in the MSLE Teams community, finalize my student certification plan, finalize syllabus, set expectations, set-up Learning Management System (LMS), and request a practice exam from Microsoft Learn."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn doesn't offer practice exams."
+  - content: "Why are the pre-survey and post-surveys important?"
+    choices:
+    - content: "The feedback will enable you to get insights into what course you should teach next."
+      isCorrect: false
+      explanation: "Incorrect. The survey results will enable you to get insights into your students’ experiences, get feedback, and provide them with the best tools for the course."
+    - content: "The feedback will enable you to get insights into your students’ certification exam results."
+      isCorrect: false
+      explanation: "Incorrect. The survey results will enable you to get insights into your students’ experiences, get feedback, and provide them with the best tools for the course."
+    - content: "The survey results will enable you to get insights into your students’ experiences, get feedback, and provide them with the best tools for the course."
+      isCorrect: true
+      explanation: "Correct. The survey results will enable you to get insights into your students’ experiences, get feedback, and provide them with the best tools for the course."

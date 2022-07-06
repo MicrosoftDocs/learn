@@ -13,7 +13,6 @@ In its simplest structure, a template has the following elements:
   "resources": [  ],
   "outputs": {  }
 }
-
 ```
 
 :::row:::
@@ -134,7 +133,6 @@ The API profile property is especially helpful when deploying a template to diff
   :::column-end:::
 :::row-end:::
 
+## Optional demo
 
-## Optional demo:
-
- -  [Demonstration: Explore QuickStart templates](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-quickstart-templates.md)
+- [Demonstration: Explore QuickStart templates](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-quickstart-templates.md)
