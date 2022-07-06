@@ -24,7 +24,7 @@ In most cases, users don't know who their admin is, so either they give up or th
 
 ## Consent experience with admin consent workflow
 
-When a user tries to access an application but is unable to provide consent, they can send a request for admin approval.
+When a user tries to access an application, but is unable to provide consent, they can send a request for admin approval.
 
 :::image type="content" source="../media/2-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
 

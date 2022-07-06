@@ -7,7 +7,7 @@ To create the single page application, you'll create a Node.js web server to ser
 >[!NOTE]
 >The instructions below assume you are using v2.14.2 of the Microsoft Authentication Library for JavaScript 2.0.
 
-Before you proceed, ensure you have the latest version of Node.js v16.14.2 or later installed and you've set the environment path variables for the application to run.
+Before you proceed, ensure you have the latest version of Node.js v16.14.2, or later installed and you've set the environment path variables for the application to run.
 
 1. Visit [this link](https://github.com/Azure-Samples/app-mgnt-javascript-node-spa) to access the code sample you'll use to create the test application in this unit.
 1. Follow the instructions in the readme file to clone the repo and set up the project dependencies on your local machine.

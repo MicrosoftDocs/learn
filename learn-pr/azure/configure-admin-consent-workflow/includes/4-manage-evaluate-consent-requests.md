@@ -21,7 +21,7 @@ Requestors will receive email notifications when:
 
 Granting tenant-wide admin consent is a sensitive operation. Permissions will be granted on behalf of the entire organization, and they can include permissions to attempt highly privileged operations. Examples of such operations are role management, full access to all mailboxes or all sites, and full user impersonation.
 
-Before you grant tenant-wide admin consent, it's important to ensure that you trust the application and the application publisher for the level of access you're granting. If you aren't confident that you understand who controls the application and why the application is requesting the permissions, don't grant consent.
+Before you grant tenant-wide admin consent, it's important to ensure that you trust the application, and the application publisher for the level of access you're granting. If you aren't confident that you understand who controls the application and why the application is requesting the permissions, don't grant consent.
 
 When you're evaluating a request to grant admin consent, here are some recommendations to consider:
 
