@@ -54,7 +54,7 @@ The second namespace, `http://schemas.microsoft.com/winfx/2009/xaml`, references
 </ContentPage>
 ```
 
-You can reference types in your own assembles in XAML code through a XAML namespace. For example, if you have types and methods that you want to use in your XAML code defined in a namespace named **Utils** in your project, you can add the **Utils** namespace to the page as shown below. In this example, you access the types in this namespace by prefixing them with the alias **mycode**.
+You can reference types in your own assemblies in XAML code through a XAML namespace. For example, if you have types and methods that you want to use in your XAML code defined in a namespace named **Utils** in your project, you can add the **Utils** namespace to the page as shown below. In this example, you access the types in this namespace by prefixing them with the alias **mycode**.
 
 ```xml
 <ContentPage ...

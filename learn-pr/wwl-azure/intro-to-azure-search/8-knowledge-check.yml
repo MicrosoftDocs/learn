@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 02/07/2022
-  author: heidisteen
-  ms.author: heidist
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -47,4 +47,4 @@ quiz:
       explanation: "Correct. Cognitive Search is used for full text search over indexes containing alphanumeric content."
     - content: "Image captions."
       isCorrect: false
-      explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill"
+      explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill."
