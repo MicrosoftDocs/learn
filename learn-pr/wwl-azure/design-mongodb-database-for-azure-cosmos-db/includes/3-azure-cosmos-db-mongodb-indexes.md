@@ -313,7 +313,7 @@ We actually saw a wildcard index earlier, the index ***`$**`*** in the screensho
 
 ## Index properties
 
-Azure Cosmos DB API for MongoDB supports several index properties depending on the version. We'll look a couple of them here, to learn more, please review the [supported indexes and indexed properties][/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties] article.
+Azure Cosmos DB API for MongoDB supports several index properties depending on the version. We'll look a couple of them here, to learn more, please review the [supported indexes and indexed properties](/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties) article.
 
 ### Unique indexes
 
@@ -356,7 +356,8 @@ All index updates are always done in the background. Index updates consume Reque
 
 Adding a new index doesn't affect read availability. While the index is being created Azure Cosmos DB will use the existing indexes to support queries. No inconsistency of query results will happen when new indexes are being built or added.
 
-For more information on MongoDB indexes please review the [Manage indexing in Azure Cosmos DB API for MongoDB][azure/cosmos-db/mongodb/mongodb-indexing] document.
+For more information on MongoDB indexes please review the [Manage indexing in Azure Cosmos DB API for MongoDB](azure/cosmos-db/mongodb/mongodb-indexing) document.
 
-[azure/cosmos-db/mongodb/mongodb-indexing]: https://docs.microsoft.com/azure/cosmos-db/mongodb/mongodb-indexing
-[/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties]:https://docs.microsoft.com/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties
+[Manage indexing in Azure Cosmos DB API for MongoDB](azure/cosmos-db/mongodb/mongodb-indexing)
+
+[Indexes and index properties](/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties)
