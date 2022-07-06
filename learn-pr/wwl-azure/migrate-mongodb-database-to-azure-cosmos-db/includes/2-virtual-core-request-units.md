@@ -51,5 +51,3 @@ Let's use this formula to do some sample calculations.
     ```
 
 Finding the Request Unit estimate will be an important step in anticipating the scale of your Azure Cosmos DB data estate after migration.
-
-[Request Units in Azure Cosmos DB](/azure/cosmos-db/request-units)

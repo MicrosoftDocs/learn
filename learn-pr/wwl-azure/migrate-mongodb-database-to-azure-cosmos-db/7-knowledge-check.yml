@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "Choosing the MongoDB server version."
       isCorrect: false
-      explanation: "Incorrect. The MongoDB server version can be changed at any time. Azure Cosmos DB only enables or disables features when a different versions is chosen, so it isn't an immutable decision."
+      explanation: "Incorrect. The MongoDB server version can be changed at any time. Azure Cosmos DB only enables or disables features when a different version is chosen, so it isn't an immutable decision."
     - content: "When setting the collection throughput, choose Autoscale or Manual Throughput."
       isCorrect: false
-      explanation: "Incorrect. If the throughput is set at the collection level, the throughtput can change between Autoscale and Manual at any moment, so it isn't an immutable decision."
+      explanation: "Incorrect. If the throughput is set at the collection level, the throughput can change between Autoscale and Manual at any moment, so it isn't an immutable decision."
     - content: "Choosing the Shard Key of the collection."
       isCorrect: true
       explanation: "Correct. One of the most important decisions to do on the collection level, is choosing the best possible shard key.  Not only because it will define the performance of the collection, but also because once the shard key is set, it can't be changed.  This choice is immutable."
