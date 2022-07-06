@@ -14404,6 +14404,51 @@
       "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/12-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/2-what-is-app-center.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/3-how-app-center-build-works.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/4-how-app-center-test-works.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/5-how-app-center-distribute-works.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/6-how-app-center-diagnostics-works.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/7-how-app-center-analytics-works.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/8-exercise-create-app-center-account.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/appcenter/",
+      "redirect_document_id": false    
     }
   ]
 }
