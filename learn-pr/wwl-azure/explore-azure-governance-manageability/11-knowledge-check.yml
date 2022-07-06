@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/30/2022
+  ms.date: 07/06/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,14 +21,14 @@ quiz:
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group.Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group."
+      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group."
     - content: "5"
       isCorrect: false
-      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group.Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group."
+      explanation: "That’s incorrect. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group."
     - content: "15"
       isCorrect: true
-      explanation: "That's correct. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group are not inherited by the resources in that resource group."
-  - content: "In Azure Resource Manager, can the same resource can be added to multiple resource groups simultaneously?"
+      explanation: "That's correct. Each resource or resource group can have a maximum of 15 tag name/value pairs. Tags applied to the resource group aren't inherited by the resources in that resource group."
+  - content: "In Azure Resource Manager, can the same resource be added to multiple resource groups simultaneously?"
     choices:
     - content: "Yes"
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "No"
       isCorrect: true
       explanation: "That's correct. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
-    - content: "Yes, but you cannot delete the resource from one resource group without also deleting it from the others"
+    - content: "Yes, but you can't delete the resource from one resource group without also deleting it from the others"
       isCorrect: false
       explanation: "That’s incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
   - content: "Which of the following elements in the Azure Resource Manager template scheme is a required element?"
