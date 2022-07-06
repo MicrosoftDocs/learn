@@ -34,6 +34,9 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
         bash $GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/02-indexes-and-aggregation-pipelines/init.sh -r YOURRESOURCEGROUPNAMEHERE
         ```
 
+    > [!Tip]
+    > If you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call.
+
     > [!NOTE]
     > This bash script will create the Azure Cosmos DB API for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
