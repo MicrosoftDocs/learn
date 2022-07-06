@@ -6,7 +6,7 @@ Together, you can use automation and source control to trigger tasks in the mach
 
 For example, after retraining a model using new hyperparameter values, you want to update the hyperparameter in the source code. After verifying and approving the change to the code that is used to train the model, you want to trigger the new model to be trained.
 
-GitHub is a platform that offers GitHub Actions for automation and repositories (repo) using Git for source control. You can configure your GitHub Actions workflows to be triggered by a change in your repo. 
+GitHub is a platform that offers GitHub Actions for automation and repositories using Git for source control. You can configure your GitHub Actions workflows to be triggered by a change in your repo. 
 
 ## Learning objectives
 

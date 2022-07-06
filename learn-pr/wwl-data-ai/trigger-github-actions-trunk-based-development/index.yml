@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Trigger GitHub Actions with trunk-based development
-summary: Learn how to automate your machine learning workflows by using GitHub Actions.
+summary: Learn how to protect your main branch and how to trigger tasks in the machine learning workflow based on changes to the code.
 abstract: |
   In this module, you'll learn how to:
   - Work with trunk-based development.

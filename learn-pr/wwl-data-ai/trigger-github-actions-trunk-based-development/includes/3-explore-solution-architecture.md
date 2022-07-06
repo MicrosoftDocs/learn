@@ -16,17 +16,19 @@ The architecture includes:
 5. **Continuous deployment**: Test the model and promote to production environment.
 6. **Monitoring**: Monitor model and endpoint performance.
 
-The training script to train the model is stored in a repository (repo) on GitHub. Even though a first iteration of the model was considered accurate enough to be deployed and consumed by the web application, the data science team wants to keep experimenting to try to improve the model. 
+The data science team is responsible for the model development. The software development team is responsible for integrating the deployed model with the web app used by practitioners to assess whether a patient has diabetes. You're responsible of taking the model from model development to model deployment.
 
-You want to allow the data science team to experiment, without touching the code ready for production. You also want to ensure that whenever any new or updated code goes through quality checks. After you verify the code to train the model, you'll use the updated training script to train a new model and deploy it.
+You expect the data science team to constantly propose changes to the scripts used to train the model. Whenever there's a change to the training script, you need to retrain the model and redeploy the model to the existing endpoint. 
 
-To keep track of changes and to verify your code before changing the production code, it's necessary to work with branches. You've agreed with the data science team that every time they want to make a change, that they'll create a **feature branch** to copy the code in the repo and make their changes there.
+You want to allow the data science team to experiment, without touching the code ready for production. You also want to ensure that any new or updated code automatically goes through agreed upon quality checks. After you verify the code to train the model, you'll use the updated training script to train a new model and deploy it.
+
+To keep track of changes and to verify your code before updating the production code, it's *necessary* to work with branches. You've agreed with the data science team that every time they want to make a change, they'll create a **feature branch** to create a copy of the code and make their changes to the copy.
 
 Any data scientist can create a feature branch and work in there. Once they've updated the code and want that code to be the new production code, they'll have to create a **pull request**. 
-In the pull request, it will be visible for others what the proposed changes. 
+In the pull request, it will be visible for others what the proposed changes are, giving others the opportunity to review and discuss the changes.
 
-Whenever a pull request is created, you want to automatically check whether the code works and that the quality of the code is up to your standards. After the code passes the quality checks, the lead data scientist needs to review the changes and approve the updates before the pull request can be merged, and the code in the main branch can be updated accordingly.
+Whenever a pull request is created, you want to automatically check whether the code works and that the quality of the code is up to your organization's standards. After the code passes the quality checks, the lead data scientist needs to review the changes and approve the updates before the pull request can be merged, and the code in the main branch can be updated accordingly.
 
 > [!Important]
-> No one should ever be allowed to push changes to the main branch. To safeguard your code, especially production code, you'll want to enforce that the main branch can only be updated through pull requests that need to be approved.
+> **No one** should ever be allowed to **push changes to the main branch**. To safeguard your code, especially production code, you'll want to enforce that the main branch can only be updated through pull requests that need to be approved.
 
