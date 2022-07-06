@@ -1,6 +1,6 @@
 Before making a REST call to an API, such as Microsoft Graph, you'll need to acquire an access token.
 
-:::image type="content" source="../media/6-acquire-token-interactively.png" border="false" alt-text="Call Microsoft Graph API":::
+:::image type="content" source="../media/6-acquire-token-interactively.png" border="false" alt-text="Acquire token flow diagram":::
 
 To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
 
