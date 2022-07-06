@@ -21,43 +21,43 @@ quiz:
     choices:
     - content: "General purpose"
       isCorrect: false
-      explanation: "That’s incorrect. General purpose virtual machines provide balanced CPU-to-memory ratio. There are faster and more powerful CPUs available."
+      explanation: "Incorrect. General purpose virtual machines provide balanced CPU-to-memory ratio. There are faster and more powerful CPUs available."
     - content: "Compute optimized"
       isCorrect: false
-      explanation: "That’s incorrect. Compute optimized virtual machines provide high CPU-to-memory ratio, but they are not the fastest and most powerful CPU available."
+      explanation: "Incorrect. Compute optimized virtual machines provide high CPU-to-memory ratio, but they aren't the fastest and most powerful CPU available."
     - content: "High performance compute"
       isCorrect: true
-      explanation: "That’s correct. High performance compute VMs (including the H size) provide the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA)."
+      explanation: "Correct. High performance compute VMs (including the H size) provide the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA)."
   - content: "Which category of Azure virtual machine is ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases?"
     choices:
     - content: "GPU"
       isCorrect: false
-      explanation: "That’s incorrect. GPU virtual machines are targeted for heavy graphic rendering and video editing, as well as model training."
+      explanation: "Incorrect. GPU virtual machines are targeted for heavy graphic rendering and video editing, as well as model training."
     - content: "Storage optimized"
       isCorrect: true
-      explanation: "That’s correct. Storage optimized VMs (including Lsv3, Lasv3, and Lsv2-series sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
+      explanation: "Correct. Storage optimized VMs (including Lsv3, Lasv3, and Lsv2-series sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
     - content: "Memory optimized"
       isCorrect: false
-      explanation: "That’s incorrect. Memory optimized virtual machines provide high memory-to-CPU ratio, great for relational database servers, medium to large caches, and in-memory analytics."
+      explanation: "Incorrect. Memory optimized virtual machines provide high memory-to-CPU ratio, great for relational database servers, medium to large caches, and in-memory analytics."
   - content: "What is the advantage of using a constrained vCPU virtual machine for a workload that doesn't require a high core count?"
     choices:
     - content: "It increases the I/O bandwidth"
       isCorrect: false
-      explanation: "That’s incorrect. Using a constrained vCPU virtual machine does not increase the I/O bandwidth."
+      explanation: "Incorrect. Using a constrained vCPU virtual machine doesn't increase the I/O bandwidth."
     - content: "It has higher RAM"
       isCorrect: false
-      explanation: "That’s incorrect. Constrained vCPU virtual machines do not have higher RAM."
+      explanation: "Incorrect. Constrained vCPU virtual machines don't have higher RAM."
     - content: "It has lower licensing fees"
       isCorrect: true
-      explanation: "That’s correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
+      explanation: "Correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
   - content: "How many total network data flows does the Azure networking stack support with good performance, for VMs with 8 CPU cores or more?"
     choices:
     - content: "100,000"
       isCorrect: false
-      explanation: "That’s incorrect. The Azure networking stack supports 100-K total flows with good performance for VMs with less than 8 CPU cores."
+      explanation: "Incorrect. The Azure networking stack supports 100-K total flows with good performance for VMs with less than 8 CPU cores."
     - content: "250,000"
       isCorrect: true
-      explanation: "That’s correct. The Azure networking stack supports 250-K total network flows with good performance for VMs with 8 CPU cores or more and 100-K total flows with good performance for VMs with less than 8 CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1-M total flows, 500-K inbound and 500-K outbound, after which additional flows are dropped."
+      explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for VMs with 8 CPU cores or more and 100-K total flows with good performance for VMs with less than 8 CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1-M total flows, 500-K inbound and 500-K outbound, after which additional flows are dropped."
     - content: "1,000,000"
       isCorrect: false
-      explanation: "That’s incorrect. 1-M total flows (500 K inbound and 500-K outbound) is the hard limit after which flows are dropped."
+      explanation: "Incorrect. 1-M total flows (500 K inbound and 500-K outbound) is the hard limit after which flows are dropped."
