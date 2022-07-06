@@ -156,16 +156,28 @@ Steps to take:
 
 Migrating a MongoDB database isn't a point and click operation. You should spend some time planning for that migration. In the next couple of chapters, we'll discuss further the actual migration step itself.
 
-[/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB]: https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB
-[/sql/azure-data-studio/download-azure-data-studio]: https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio
-[/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma]: https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma
-[/azure/cosmos-db/mongodb/feature-support-42]: https://docs.microsoft.com/azure/cosmos-db/mongodb/feature-support-42
-[/azure/cosmos-db/concepts-limits#per-account-limits]: https://docs.microsoft.com/azure/cosmos-db/concepts-limits#per-account-limits
-[/azure/cosmos-db/partitioning-overview]: https://docs.microsoft.com/azure/cosmos-db/partitioning-overview
-[/azure/cosmos-db/partitioning-overview#choose-partitionkey]: https://docs.microsoft.com/azure/cosmos-db/partitioning-overview#choose-partitionkey
-[azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels ]: https://docs.microsoft.com/azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels 
-[/azure/cosmos-db/sql/modeling-data]: https://docs.microsoft.com/azure/cosmos-db/sql/modeling-data
-[/azure/cosmos-db/sql/how-to-model-partition-example]: https://docs.microsoft.com/azure/cosmos-db/sql/how-to-model-partition-example
-[/azure/cosmos-db/mongodb/post-migration-optimization]: https://docs.microsoft.com/azure/cosmos-db/mongodb/post-migration-optimization
-[/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator]: https://docs.microsoft.com/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator
-[/capacitycalculator/]: https://cosmos.azure.com/capacitycalculator/
+[Cosmos-DB-Migration-Assistant-for-API-for-MongoDB](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB)
+
+[Download and install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)
+
+[How to run the dma](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma)
+
+[Azure Cosmos DB API for MongoDB (4.2 server version): supported features and syntax](/azure/cosmos-db/mongodb/feature-support-42)
+
+[Per-account limits](/azure/cosmos-db/concepts-limits#per-account-limits)
+
+[Partitioning and horizontal scaling in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview)
+
+[Choose a partition key](/azure/cosmos-db/partitioning-overview#choose-partitionkey)
+
+[Optimize by provisioning throughput at different levels](azure/cosmos-db/optimize-cost-throughput#optimize-by-provisioning-throughput-at-different-levels)
+
+[Data modeling in Azure Cosmos DB](/azure/cosmos-db/sql/modeling-data)
+
+[How to model and partition data on Azure Cosmos DB using a real-world example](/azure/cosmos-db/sql/how-to-model-partition-example)
+
+[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/post-migration-optimization)
+
+[Capacity estimation using calculator](/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator)
+
+[Azure Capacity Calculator](https://cosmos.azure.com/capacitycalculator/)

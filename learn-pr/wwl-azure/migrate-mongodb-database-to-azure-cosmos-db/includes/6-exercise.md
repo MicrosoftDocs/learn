@@ -16,10 +16,10 @@ Azure DMS has three different modes to select your source for the migration. The
 
 Let's prepare our environment to move the backup to the Azure Storage account. In this exercise, we'll use Visual Studio Code to copy the files to the Azure Storage account. If you've previously completed any of these steps, just move to the next step.
 
-1. Download and setup [Visual Studio Code][/products/visual-studio-code/] in your client environment.
+1. Download and setup [Visual Studio Code](https://azure.microsoft.com/products/visual-studio-code/) in your client environment.
 
-    1. [Download][/download] Visual Studio Code.
-    1. [Install/Setup][/docs/setup/setup-overview] Visual Studio Code.
+    1. [Download](https://code.visualstudio.com/download) Visual Studio Code.
+    1. [Install/Setup](https://code.visualstudio.com/docs/setup/setup-overview) Visual Studio Code.
 
 1. Once Visual Studio Code has been installed on your client, let's go ahead and open it. The Bash script we'll run need to connect and run Azure CLI commands, so we'll need to add the Azure Extensions to your Visual Studio Code environment. Let's search for Azure or cloud extensions in the VS Code Extensions view (**Ctrl**+**Shift**+**X**) and type ***Azure CLI Tools***. If the extension is already installed, go to the next section.
 
@@ -62,7 +62,7 @@ You should have now installed Visual Studio Code, and cloned the lab repo. Time 
 
 There are many ways we can get our Backup files to the Azure Blob Storage Account we'll create in this lab. For this exercise, we'll use [AzCopy][/azure/storage/common/storage-use-azcopy] to copy those files from our client to the Cloud.
 
-- [Download][/azure/storage/common/storage-use-azcopy#download-azcopy] the AzCopy program to your client.
+- [Download](/azure/storage/common/storage-use-azcopy#download-azcopy) the AzCopy program to your client.
 - Use your favorite decompressing tool to expand the compressed file.
 - Move the **azcopy.exe** file (or **azcopy** under Linux) to the ***mslearn-cosmosdb*** directory created when we cloned the repo in the previous section. The *init.sh* script will expect to find the *azcopy* file in that directory.
 
@@ -162,7 +162,8 @@ Now that we've created our Azure Cosmos DB account, created an Azure Blob Storag
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the Database Migration Service network tab.](../media/6-create-migration-service-network-tab.png)](../media/6-create-migration-service-network-tab.png#lightbox)
 
-    > [!NOTE] In the Azure DMS ***Networking*** tab. you create, or use an existing virtual network, so your DMS can connect to source servers with public facing IPs. It is a required step.
+    > [!NOTE] 
+    > In the Azure DMS ***Networking*** tab. you create, or use an existing virtual network, so your DMS can connect to source servers with public facing IPs. It is a required step.
 
 1. Select the **Review and Create** button and then select the **Create** button to create the *Database Migration Service*.
 
@@ -286,7 +287,7 @@ Now we should have everything we need to define the migration details of our pro
     1. Change all the **Shard Keys** in the **Collection Setting** tab for their corresponding ***pk*** field in the json file. The `_id` field isn't the same as `id`, so you'll need to change those shard keys too.
 
     > [!div class="mx-imgBorder"]
-    > [![Diagram showing the new shard key change](../media/6-migration-project-shard-key.png)](../media/6-migration-project-shard-key.png#lightbox)
+    > [![Diagram showing the new shard key change.](../media/6-migration-project-shard-key.png)](../media/6-migration-project-shard-key.png#lightbox)
 
 1. Once you're done changing all your Shard Keys, we're finally ready to start our migration. Select the **Next: Migration summary >>** button.
 
@@ -314,11 +315,18 @@ So the last thing we need to do, is check out the fruits of all this labor.
 
 In this exercise, we've introduced how to migrate MongoDB data into Azure Cosmos DB using the Azure Database Migration Service. Azure DMS, is just one of several options we have to migrate your MongoDB databases into Azure Cosmos DB. To learn more on online and offline migration take a look at the [Options to migrate your on-premises or cloud data to Azure Cosmos DB][/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api] article.
 
-[/products/visual-studio-code/]: https://azure.microsoft.com/products/visual-studio-code/
-[/download]: https://code.visualstudio.com/download
-[/docs/setup/setup-overview]: https://code.visualstudio.com/docs/setup/setup-overview
-[/azure/storage/common/storage-use-azcopy]: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
-[/azure/storage/common/storage-use-azcopy#download-azcopy]: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy#download-azcopy
-[/rest/api/storageservices/delegate-access-with-shared-access-signature]: https://docs.microsoft.com/rest/api/storageservices/delegate-access-with-shared-access-signature
-[/rest/api/storageservices/create-account-sas]: https://docs.microsoft.com/rest/api/storageservices/create-account-sas
-[/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api]: https://docs.microsoft.com/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api
+[Visual Studio Code](https://azure.microsoft.com/products/visual-studio-code/)
+
+[Download](https://code.visualstudio.com/download)
+
+[Setup overview](https://code.visualstudio.com/docs/setup/setup-overview)
+
+[Get started with AzCopy](/azure/storage/common/storage-use-azcopy)
+
+[Download AzCopy](/azure/storage/common/storage-use-azcopy#download-azcopy)
+
+[Delegate access with a shared access signature](/rest/api/storageservices/delegate-access-with-shared-access-signature)
+
+[Create an account SAS](/rest/api/storageservices/create-account-sas)
+
+[Azure Cosmos DB Mongo API](/azure/cosmos-db/cosmosdb-migrationchoices#azure-cosmos-db-mongo-api)

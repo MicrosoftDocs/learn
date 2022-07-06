@@ -2,7 +2,7 @@ Not every migration will have the luxury of allowing much downtime. For those mi
 
 With online migrations, businesses can migrate their databases to Azure while the databases continue to be operational. This means that migrations can be completed with minimum downtime for critical applications, retaining their service level availability and reducing the inconvenience to their end customers.
 
-We can perform online MongoDB to Azure Cosmos DB migrations for:
+We can perform online MongoDB to Azure Cosmos DB migrations for: 
 
 - MongoDB on-premise clusters
 - MongoDB on IaaS VM clusters 
@@ -17,10 +17,11 @@ Let's review some considerations for each of these migration options.
 
 | Migration type | Solution | Considerations |
 | :--- | :--- | :--- |
-| Online | *[Azure Database Migration Service][/azure/dms/tutorial-mongodb-cosmos-db-online]* | • Makes use of the Azure Cosmos DB bulk executor library </br>• Suitable for large datasets and takes care of replicating live changes </br>•  Works only with other MongoDB sources |
-| Online | *[Azure Databricks and Spark][/azure/cosmos-db/mongodb/migrate-databricks]* | • Full control of migration rate and data transformation </br> • Requires custom coding |
+| Online | *[Azure Database Migration Service](/azure/dms/tutorial-mongodb-cosmos-db-online)* | • Makes use of the Azure Cosmos DB bulk executor library </br>• Suitable for large datasets and takes care of replicating live changes </br>•  Works only with other MongoDB sources |
+| Online | *[Azure Databricks and Spark](/azure/cosmos-db/mongodb/migrate-databricks)* | • Full control of migration rate and data transformation </br> • Requires custom coding |
 
 Now that we looked at online migration options, on the next unit we'll introduce offline migration options.
 
-[/azure/dms/tutorial-mongodb-cosmos-db-online]: https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online
-[/azure/cosmos-db/mongodb/migrate-databricks]: https://docs.microsoft.com/azure/cosmos-db/mongodb/migrate-databricks
+[Tutorial: Migrate MongoDB to Azure Cosmos DB's API for MongoDB online using DMS](/azure/dms/tutorial-mongodb-cosmos-db-online)
+
+[Migrate data from MongoDB to an Azure Cosmos DB API for MongoDB account by using Azure Databricks](/azure/cosmos-db/mongodb/migrate-databricks)
