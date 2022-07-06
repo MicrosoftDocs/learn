@@ -5,7 +5,7 @@ In this module, you learned:
 
 ## Check out the Next Module in this learning path
 
-- [Explore Azure Percept - Learn | Microsoft Docs](https://docs.microsoft.com/en-us/learn/modules/explore-azure-percept/)
+- [Explore Azure Percept - Learn | Microsoft Docs](/learn/modules/explore-azure-percept/)
 
 You can learn more about IoT, AI and other Microsoft services from these resources:
 
