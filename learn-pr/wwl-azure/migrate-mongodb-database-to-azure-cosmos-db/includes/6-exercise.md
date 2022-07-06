@@ -308,7 +308,7 @@ So the last thing we need to do, is check out the fruits of all this labor.
 
 1. Go to the **Data Explorer**.
 
-1. The four databases should be there. Expand them and you'll see their respective collections. Expand the collections and you'll see their documents. The collection's throughput and Shard Key will have the setting we selected in the migration wizard collection tab.
+1. The four databases should be there. Expand them and you'll see their respective collections. Expand the collections and you'll see their documents. The collection's throughput and Shard Key will have the setting values we selected in the migration wizard collection tab.
 
     > [!div class="mx-imgBorder"]
     > [![Diagram showing the post migration data in Cosmos DB.](../media/6-data-explorer.png)](../media/6-data-explorer.png#lightbox)

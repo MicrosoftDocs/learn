@@ -21,11 +21,11 @@ quiz:
       explanation: "Incorrect. ADF should only be used for Offline migrations."
     - content: "**Azure Databricks and Spark**"
       isCorrect: true
-      explanation: "Correct. This method allows set the **maxBatchSize** value to be set, which controls the rate at which data is saved to the target Azure Cosmos DB collection, giving the migration control of preventing rate limiting errors."
+      explanation: "Correct. This method allows the **maxBatchSize** value to be set, which controls the rate at which data is saved to the target Azure Cosmos DB collection, giving the migration control of preventing rate limiting errors."
     - content: "**Azure Data Migration Service (DMS)**"
       isCorrect: false
       explanation: "Incorrect. While DMS is recommended for online migrations < 1 TB, DMS doesn't provide the migration with an option to control data rate, so rate limiting errors could occur."
-  - content: "The accounting team about to start the pre-migration planning phase and heard that the Data Migration Assistant (DMA) is a great tool to collect information for a couple of the planning stages? During which planning stages will the DMA collect data."
+  - content: "The accounting team is about to start the pre-migration planning phase and heard that the Data Migration Assistant (DMA) is a great tool to collect information for a couple of the planning stages. During which planning stages will the DMA collect data."
     choices:
     - content: "***Pre-migration logistic planning***"
       isCorrect: false
