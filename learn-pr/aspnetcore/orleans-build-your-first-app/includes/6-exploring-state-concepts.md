@@ -74,4 +74,4 @@ builder.Host.UseOrleans(siloBuilder =>
 > [!NOTE]
 > DefaultAzureCredential is the recommended way of configuration connections to Azure services and should be used whenever possible. This approach offers strong security and administrative benefits that you can explore in the [Managed Identity Overview](/dotnet/azure/sdk/authentication). However, you can also configure Orleans to connect to services using connection strings. Both approaches are demonstrated in the preceding example.
 
-A single grain can store state objects in multiple storage providers. For example, one state object could be stored in-memory, while another might be stored in Azure Table Storage or SQL Server.
+A single grain can store state objects in multiple storage providers. For example, one state object could be stored in-memory while another might be stored in Azure Table Storage or SQL Server.
