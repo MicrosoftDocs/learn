@@ -356,8 +356,4 @@ All index updates are always done in the background. Index updates consume Reque
 
 Adding a new index doesn't affect read availability. While the index is being created Azure Cosmos DB will use the existing indexes to support queries. No inconsistency of query results will happen when new indexes are being built or added.
 
-For more information on MongoDB indexes please review the [Manage indexing in Azure Cosmos DB API for MongoDB](azure/cosmos-db/mongodb/mongodb-indexing) document.
-
-[Manage indexing in Azure Cosmos DB API for MongoDB](azure/cosmos-db/mongodb/mongodb-indexing)
-
-[Indexes and index properties](/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties)
+For more information on MongoDB indexes please review the [Manage indexing in Azure Cosmos DB API for MongoDB](/azure/cosmos-db/mongodb/mongodb-indexing) document.

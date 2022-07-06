@@ -14,29 +14,29 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You have a collection named *IotAlerts* with a shard key of *DeviceId*. You need add a pipeline to your aggregation to calculate the number of times each device created an alert.  What type of *aggregation pipeline stage* would you use to calculate this count?"
+  - content: "The IT team has a collection named *IotAlerts* with a shard key of *DeviceId*. The team need to add a pipeline to the aggregation to calculate the number of times each device created an alert.  What type of *aggregation pipeline stage* would be used to calculate this count?"
     choices:
     - content: "**$sum**"
       isCorrect: false
-      explanation: "Incorrect. *$sum* isn't an *aggregation pipeline stage* but an *aggregation pipeline operator*. You'll still use the *$sum* with a property like **countAlert: { $sum: 1 }** inside the $group pipeline to calculate the counts."
+      explanation: "Incorrect. *$sum* isn't an *aggregation pipeline stage* but an *aggregation pipeline operator*. The $sum aggregation will still be used to calculate the count inside the $group pipeline (**countAlert: { $sum: 1 }**)."
     - content: "**$group**"
       isCorrect: true
-      explanation: "Correct. You would first need to group by DeviceId and inside the *$group* stage you'll calculate the count."
+      explanation: "Correct. To calculate the count, the Devices will need to be grouped by the *DeviceId* property inside the *$group* stage."
     - content: "**$unwind**"
       isCorrect: false
       explanation: "Incorrect. *$unwind* flattens an array, but it does no calculations."
-  - content: "When should you embed the data in your collections?"
+  - content: "When should data in the collections be embedded?"
     choices:
-    - content: "Embed when you read or update independently."
+    - content: "Embed when the data needs to be read or updated independently."
       isCorrect: false
-      explanation: "Incorrect. You should not embed data, specially in updates, where combining the entities will result in large documents. Embedding will cause a larger cost every time you needed to updated these documents. Larger cost would occur when most properties of unrelated entities wouldn't even need to be updated."
-    - content: "Embed when you have 1:Many relationships."
+      explanation: "Incorrect. Data shouldn't be embedded when read or updated independently. Specially during updates, where combining the entities will result in large documents. Embedding will cause a larger cost every time the documents needed to be updated. Larger cost would occur when most properties of unrelated entities wouldn't even need to be updated."
+    - content: "Embed when the data has 1:Many relationships."
       isCorrect: false
       explanation: "Incorrect. Azure Cosmos DB has a maximum document size of 2 MB, so in unbounded relationships these documents could grow large and hit our document size limit."
-    - content: "Embed when you read or update together."
+    - content: "Embed when the data is read or updated together."
       isCorrect: true
       explanation: "Correct. Data that's read or updated together is nearly always modeled as a single document. The benefit is especially true because our objective for our NoSQL model, is to reduce the number of requests to our database."
-  - content: "Your application needs to run a query that searches by **lastName** and **firstName**. What type of index should you create that returns these documents quickly and also reduces the filtering and indexing costs?"
+  - content: "The customer application needs to run a query that searches by **lastName** and **firstName**. What type of index should be created that returns these documents quickly and also reduces the filtering and indexing costs?"
     choices:
     - content: "Wildcard."
       isCorrect: false

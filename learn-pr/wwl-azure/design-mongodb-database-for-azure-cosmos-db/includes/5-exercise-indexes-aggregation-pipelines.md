@@ -24,7 +24,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
         bash $GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/02-indexes-and-aggregation-pipelines/init.sh
         ```
 
-    1. If you already have a resource group you want to use in your environment, replace the string ***YOURRESOURCEGROUPNAMEHERE*** below for the name of your resource group. *If you are not using the Sandbox, you will need to run the ***az login*** command before running the ***init*** bash script below*..
+    1. If you already have a resource group you want to use in your environment, replace the string ***YOURRESOURCEGROUPNAMEHERE*** below for the name of your resource group. *If you are not using the Sandbox, you will need to run the ***az login*** command before running the ***init*** bash script below*.
 
         ```bash
         # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
