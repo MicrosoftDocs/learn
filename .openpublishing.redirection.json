@@ -14299,6 +14299,51 @@
       "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/2-choose-between-split-and-pop-over-for-your-master-view.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/3-define-ui-for-drawer-navigation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/4-exercise-define-drawer-navigation-ui-using-xamarin-forms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/5-navigate-between-pages-in-a-drawer-menu.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/6-exercise-respond-to-item-selection-in-your-drawer-menu.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/7-display-a-collection-with-split-view.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/8-exercise-display-a-collection-with-master-detail-split-view.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_document_id": false    
     }
   ]
 }
