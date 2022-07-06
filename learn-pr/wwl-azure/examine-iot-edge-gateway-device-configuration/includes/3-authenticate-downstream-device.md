@@ -260,7 +260,7 @@ Code samples for other coding languages are available as follows:
   :::column-end:::
   :::column:::
     simple\_sample\_device\_x509.js
-https://github.com/Azure/azure-iot-sdk-node/blob/master/device/samples/simple\_sample\_device\_x509.js
+https://github.com/Azure/azure-iot-sdk-node/blob/main/device/samples/javascript/simple_sample_device_x509.js
   :::column-end:::
 :::row-end:::
 :::row:::
