@@ -1,7 +1,7 @@
 
 When designing the security strategy for your cloud workloads, you need to take into consideration that different cloud services will have different security requirements. In this module you'll learn how to design a strategy for security PaaS, IaaS and SaaS services.
 
-## Learning Objectives 
+### Learning Objectives 
 
 In this module, you'll learn how to:
 
@@ -14,5 +14,3 @@ In this module, you'll learn how to:
 - Specify security requirements for storage workloads
 - Specify security requirements for containers
 - Specify security requirements for container orchestration
-
-The content in the module will help you prepare for exam SC-100: Microsoft Cybersecurity Architect.

@@ -37,7 +37,9 @@ Let's cover the principles of what we suggest:
      -  Automate what you inspect and validate as part of pull requests.
      -  Tracks pull request completion duration and set goals to reduce the time it takes.
 
-We'll be using the myWebApp created in the previous exercises. In this recipe, we'll be using three trendy extensions from the marketplace:
+We'll be using the myWebApp created in the previous exercises. See [Describe working with Git locally.](/learn/modules/describe-types-of-source-control-systems/7-describe-working-git-locally)
+
+In this recipe, we'll be using three trendy extensions from the marketplace:
 
  -  [Azure CLI](/cli/azure/install-azure-cli): is a command-line interface for Azure.
  -  [Azure DevOps CLI](/azure/devops/cli): It's an extension for the Azure CLI for working with Azure DevOps and Azure DevOps Server. It's designed to seamlessly integrate with Git, CI pipelines, and Agile tools. With the Azure DevOps CLI, you can contribute to your projects without leaving the command line. CLI runs on Windows, Linux, and Mac.

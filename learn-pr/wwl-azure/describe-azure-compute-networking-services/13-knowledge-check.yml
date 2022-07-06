@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-compute-networking-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure Virtual Machine feature staggers updates across VMs based on their update domain and fault domain?"
+    choices:
+    - content: "Availability sets"
+      isCorrect: true
+      explanation: "Availability sets stagger VM updates based on their update and fault domains."
+    - content: "Scale sets"
+      isCorrect: false
+      explanation: "Scale sets let you automatically scale and load balance your VMs, but a scale set doesn’t affect updates."
+    - content: "Update sets"
+      isCorrect: false
+      explanation: "Availability sets stagger VM updates based on their update and fault domains."
+  - content: "Which Azure service allows users to use a cloud hosted version of Windows from any location and connect from most modern browsers?"
+    choices:
+    - content: "Azure Virtual Desktop"
+      isCorrect: true
+      explanation: "Azure Virtual Desktop provides access to a cloud-hosted version of Windows, and it works with most modern browsers."
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Azure Virtual Machines can provide the ability to configure a Windows environment, but it doesn’t provide access via most modern browsers by default."
+    - content: "Azure Container Instances"
+      isCorrect: false
+      explanation: "Azure Container Instances lets you provision containers in the cloud, but doesn’t provide access to a cloud-hosted version of windows available from most modern browsers."
