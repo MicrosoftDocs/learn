@@ -14264,6 +14264,41 @@
       "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/2-display-collection-with-listview.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/3-exercise-display-collection-with-listview.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/4-dynamically-add-and-remove-listview-items.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/5-customize-listview-rows.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/6-exercise-customize-row-using-built-in-cell-types.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
+      "redirect_document_id": false    
     }
   ]
 }
