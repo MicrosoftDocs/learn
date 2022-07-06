@@ -14,7 +14,7 @@ In this bicycle rental example, the details about a given day (day of the week, 
 
 The specific operation that the ***f*** function performs on *x* to calculate *y* depends on a number of factors, including the type of model you're trying to create and the specific algorithm used to train the model. Additionally in most cases, the data used to train the machine learning model requires some pre-processing before model training can be performed.
 
-## Types of machine learning: 
+## Types of machine learning 
 
 There are two general approaches to machine learning, supervised and unsupervised machine learning. In both approaches, you train a model to make predictions. 
     

@@ -74,9 +74,9 @@ The compute cluster will take some time to be created. You can move onto the nex
 
 > **Citation**: *This data is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement).*
 
-## Run an automated machine learning experiment 
+## Run an automated machine learning job 
 
-Follow the next steps to run an experiment that uses automated machine learning to train a regression model that predicts bicycle rentals.
+Follow the next steps to run an job that uses automated machine learning to train a regression model that predicts bicycle rentals.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Author**).
 
@@ -97,13 +97,13 @@ Follow the next steps to run an experiment that uses automated machine learning 
     - **Additional configuration settings:**
         - **Primary metric**: Select **Normalized root mean squared error** 
         - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
-        - **Use all supported models**: <u>Un</u>selected. *You'll restrict the experiment to try only a few specific algorithms.*
-        - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the experiment.*
+        - **Use all supported models**: <u>Un</u>selected. *You'll restrict the job to try only a few specific algorithms.*
+        - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
 
         ![Screenshot of additional configurations with a box around the allowed models.](../media/allowed-models.png)            
         - **Exit criterion**:
-            - **Training job time (hours)**: 0.5 — *ends the experiment after a maximum of 30 minutes.*
-            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the experiment ends.*
+            - **Training job time (hours)**: 0.5 — *ends the job after a maximum of 30 minutes.*
+            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*
         - **Concurrency**: *do not change*
     - **Featurization settings:**
         - **Enable featurization**: Selected — *automatically preprocess the features before training.*
@@ -116,7 +116,7 @@ Follow the next steps to run an experiment that uses automated machine learning 
 
 3. When you finish submitting the automated machine learning run details, it starts automatically. Wait for the run status to change from *Preparing* to *Running*.
 4. When the run status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page automatically refreshes periodically, but you can also select **Refresh**. It might take 10 minutes or so before models start to appear, as the cluster nodes must be initialized before training can begin.
-5. Wait for the experiment to finish. It might take a while — now might be a good time for a coffee break!
+5. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
 
 ## Review the best model
 
@@ -140,7 +140,7 @@ Follow the next steps to run an experiment that uses automated machine learning 
 
 ## Deploy a predictive service 
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select the run for your automated machine learning experiment.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select the run for your automated machine learning job.
 
 2. On the **Details** tab, select the algorithm name for the best model.
    

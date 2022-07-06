@@ -12,7 +12,7 @@ Machine learning models must be trained with existing data. Data scientists expe
 
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*. You can create your own dataset in Azure Machine Learning studio. 
 
-![Screenshot of the data](../media/auto-machine-learning-select-data.png)
+![Screenshot of selecting data for an automated machine learning job.](../media/auto-machine-learning-select-data.png)
 
 ## Train model 
 
@@ -23,19 +23,19 @@ The automated machine learning capability in Azure Machine Learning supports *su
 - **Time series forecasting** (predicting numeric values at a future point in time)
 
 In Automated Machine Learning you can select from several types fo tasks: 
-![Screenshot of portal choices.](../media/choose-task-settings.png)
+![Screenshot of portal choices in automated machine learning.](../media/choose-task-settings.png)
 
 In Automated Machine Learning, you can select configurations for the primary metric, type of model used for training, exit criteria, and concurrency limits.  
 
-![Screenshot of portal configurations.](../media/machine-learning-run-configurations.png)
+![Screenshot of portal configurations in automated machine learning.](../media/machine-learning-run-configurations.png)
 
-Importantly, AutoML will split data into a training set and a validation set. You can configure the details in the settings before you run the experiment. 
+Importantly, AutoML will split data into a training set and a validation set. You can configure the details in the settings before you run the job. 
 
-![Screenshot of training and validation.](../media/training-validation.png)
+![Screenshot of training and validation in automated machine learning.](../media/training-validation.png)
 
 
 ## Evaluate performance  
-After the experiment has finished you can review the best performing model. In this case, you used exit criteria to stop the experiment. Thus the "best" model the experiment generated might not be the best possible model, just the best one found within the time allowed for this exercise.
+After the job has finished you can review the best performing model. In this case, you used exit criteria to stop the job. Thus the "best" model the job generated might not be the best possible model, just the best one found within the time allowed for this exercise.
 
 The best model is identified based on the evaluation metric you specified, *Normalized root mean squared error*. 
 
