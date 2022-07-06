@@ -33,11 +33,11 @@ prerequisites: |
 units:
 - learn.orleans-build-first-app.introduction
 - learn.orleans-build-first-app.essential-concepts
-- learn.orleans-build-first-app.exercise-setting-up-projects
-- learn.orleans-build-first-app.exercise-creating-grains-silos
-- learn.orleans-build-first-app.exercise-creating-endpoints
-- learn.orleans-build-first-app.exploring-state-concepts
-- learn.orleans-build-first-app.exercise-persisting-state
+- learn.orleans-build-first-app.exercise-set-up-projects
+- learn.orleans-build-first-app.exercise-create-grains-silos
+- learn.orleans-build-first-app.exercise-create-endpoints
+- learn.orleans-build-first-app.explore-state-concepts
+- learn.orleans-build-first-app.exercise-persist-state
 - learn.orleans-build-first-app.knowledge-check
 - learn.orleans-build-first-app.summary
 

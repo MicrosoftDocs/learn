@@ -69,14 +69,14 @@ The core functionality of the app should now work as expected, so now you can te
 
 1) Inside the Visual Studio Code terminal, run the `dotnet run` command again to launch the app.
 
-```dotnetcli
-dotnet run
-```
+    ```dotnetcli
+    dotnet run
+    ```
 
-The app should launch in the browser, and you should see the familiar `Hello world!` text.
+    The app should launch in the browser and display the familiar `Hello world!` text.
 
-1) In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
+2) In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 
-1) Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to *https://microsoft.com*. 
+3) Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to *https://microsoft.com*. 
 
 The app is progressing nicely, but there's still room for improvement. In the next step, you'll explore how adding state persistence can improve the durability of your app.
