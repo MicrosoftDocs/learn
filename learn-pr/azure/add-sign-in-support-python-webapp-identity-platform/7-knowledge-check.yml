@@ -15,7 +15,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "How can a developer implement authorization logic for access control using app roles in a web app?"
+  - content: "How can a developer implement authorization logic for access control in a web app using app roles?"
     choices:
     - content: "Make all access control settings and configurations accessible to the systems administrator only, so that only users with the designated admin role can change access permissions."
       isCorrect: false
