@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-model-github-actions
+metadata:
+  title: Deploy a model with GitHub Actions
+  description: "machine learning operations, MLOps, model deployment, online endpoint"
+  ms.date: 07/07/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a model with GitHub Actions
+summary: Learn how to automate and test model deployment with GitHub Actions and the Azure Machine Learning CLI (v2).
+abstract: |
+  In this module, you'll learn how to:
+  - Deploy a model to a managed endpoint.
+  - Trigger model deployment with GitHub Actions.
+  - Test the deployed model.
+prerequisites: |
+  - Programming experience with Python or R
+  - Experience developing and training machine learning models
+  - Familiarity with basic Azure Machine Learning concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- devops-engineer
+products:
+- azure-machine-learning
+- github
+subjects:
+- artificial-intelligence
+- devops
+- machine-learning
+units:
+- learn.wwl.deploy-model-github-actions.introduction
+- learn.wwl.deploy-model-github-actions.understand-business-problem
+- learn.wwl.deploy-model-github-actions.explore-solution-architecture
+- learn.wwl.deploy-model-github-actions.model-deployment
+- learn.wwl.deploy-model-github-actions.exercise
+- learn.wwl.deploy-model-github-actions.knowledge-check
+- learn.wwl.deploy-model-github-actions.summary
+badge:
+  uid: learn.wwl.deploy-model-github-actions.badge
