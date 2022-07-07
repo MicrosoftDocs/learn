@@ -2,7 +2,7 @@
 uid: learn.configure-admin-consent-workflow
 metadata:
   moduleType: standard
-  title: Configure admin consent workflow using Azure Active Directory.
+  title: Configure admin consent workflow using Azure Active Directory
 
   description: Configure the admin consent workflow to enable users to request admin consent right from the screen. Designated reviewers view and respond to the requests through the Azure portal.
 
@@ -11,7 +11,7 @@ metadata:
   ms.author: jomondi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure admin consent workflow using Azure Active Directory.
+title: Configure admin consent workflow using Azure Active Directory
 
 summary: "To enable admin consent workflow, you'll create or add a new Azure AD application. When the user attempts to sign in to the application, they request admin consent by submitting a request to the designated reviewer via the consent screen. The reviewer receives an email notification, acts on the request via the Azure portal, then the user is notified of the reviewer's action."
 abstract: |
