@@ -17,7 +17,7 @@ Let's review some considerations for each of these migration options.
 
 | Migration type | Solution | Considerations |
 | :--- | :--- | :--- |
-| Online | *[Azure Database Migration Service](/azure/dms/tutorial-mongodb-cosmos-db-online)* | • Makes use of the Azure Cosmos DB bulk executor library </br>• Suitable for large datasets and takes care of replicating live changes </br>•  Works only with other MongoDB sources |
-| Online | *[Azure Databricks and Spark](/azure/cosmos-db/mongodb/migrate-databricks)* | • Full control of migration rate and data transformation </br> • Requires custom coding |
+| Online | *[Azure Database Migration Service](/azure/dms/tutorial-mongodb-cosmos-db-online)* | • Makes use of the Azure Cosmos DB bulk executor library <br>• Suitable for large datasets and takes care of replicating live changes <br>•  Works only with other MongoDB sources |
+| Online | *[Azure Databricks and Spark](/azure/cosmos-db/mongodb/migrate-databricks)* | • Full control of migration rate and data transformation <br> • Requires custom coding |
 
 Now that we looked at online migration options, on the next unit we'll introduce offline migration options.
