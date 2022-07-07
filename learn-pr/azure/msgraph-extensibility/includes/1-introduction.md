@@ -8,13 +8,13 @@ The employees have expressed a need to share the following details in their app 
 + Their Skype ID
 + Their Xbox gamertag
 
-Azure AD, Microsoft 365, and Microsoft Graph do not expose these properties natively to allow the employees to update their profiles. However, the organization also doesn't want to invest in another database.
+Azure AD, Microsoft 365, and Microsoft Graph don't expose these properties natively to allow the employees to update their profiles. However, the organization also doesn't want to invest in another database.
 
 You have identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the available extension options, their suitability to extend user profile data in your team bonding app, and how to use them.
 
 ## What will we be doing?
 
-1. You will use an Azure AD test tenant and a API client to call Microsoft Graph and create custom properties using the available extension options.
+1. You'll use an Azure AD test tenant and an API client to call Microsoft Graph and create custom properties using the available extension options.
 2. You'll then add new properties to store the LinkedIn profile URL, Skype ID, and Xbox gamertag.
 3. You'll model the HTTP requests for managing and reading the extensions properties and associated data.
 

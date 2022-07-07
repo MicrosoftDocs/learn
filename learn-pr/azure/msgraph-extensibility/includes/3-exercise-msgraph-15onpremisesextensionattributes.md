@@ -155,11 +155,11 @@ Content-type: application/json
 
 With the extension attribute properties already predefined in Microsoft Graph, you can use them to the LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-In this exercise, we'll store these pieces of data for the user named **Adele Vance** who is identified by user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
+In this exercise, you'll store these pieces of data for the user named **Adele Vance** who is identified by user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
 
 ### Request
 
-You store data in the existing **onPremisesExtensionAttributes** property by updating the user profile using an HTTP PATCH request and specifying the new values in the request body. We'll store Adele's public LinkedIn profile URL, Skype ID, and Xbox gamertag in **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
+You store data in the existing **onPremisesExtensionAttributes** property by updating the user profile using an HTTP PATCH request and specifying the new values in the request body. You'll store Adele's public LinkedIn profile URL, Skype ID, and Xbox gamertag in **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
 In the team bonding app, Adele would use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
