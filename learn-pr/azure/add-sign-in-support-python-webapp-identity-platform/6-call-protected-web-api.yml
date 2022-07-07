@@ -9,7 +9,7 @@ metadata:
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure 
 durationInMinutes: 8
 content: |
   [!include[](includes/6-call-protected-web-api.md)]

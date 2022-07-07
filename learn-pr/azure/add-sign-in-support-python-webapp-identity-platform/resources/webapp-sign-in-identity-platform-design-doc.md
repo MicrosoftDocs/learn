@@ -86,12 +86,9 @@ Add more units as needed for your content
    1. Sign in the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
    1. Create a new app in the Azure portal
    1. Add a client secret to the created app
-   1. Take note of the following app registration value:
-      1. Application (client) ID
-      1. Object ID
-      1. Directory (tenant) ID
-      1. Client secrets
-      1. Directory URL
+   1. Take note of the application registration values
+   1. Add app roles to your application
+   1. Assign app roles to users and groups. 
 
 1. Add code to authenticate and authorize users
 
@@ -99,32 +96,23 @@ Add more units as needed for your content
 
    1. Update the app configuration with the following values:
          1. Application (client) ID
-         1. Object ID
          1. Directory (tenant) ID
-         1. Client secrets
-         1. Directory URL
+         1. Client secret
 
    1. Build the authorization code flow
 
    **Exercise**
    List the steps that apply the learning content from previous unit:
 
-   1. Write Python code that instantiates a public client application
+   1. Write code to build the authorization code flow in a Python web app application
 
 1. Get access tokens and fetch user data from a web API
 
    List the content that will enable the learner to _call Microsoft Graph API_:
 
    1. Configure the Microsoft Graph API endpoint
-      1. Identify the correct endpoint
-      1. Update configuration file with Graph endpoint
-
-   **Exercise**
-   List the steps that apply the learning content from previous unit:
-
-   1. Get a response using the HTTP GET request method
-      1. Pass the Microsoft Graph endpoint
-      1. Pass a valid access token
+   1. Acquire a token interactively and silently 
+      
 
 1. Summary
 
@@ -133,6 +121,7 @@ Add more units as needed for your content
    1. Installed the Microsoft Authentication Library (MSAL) for Python
    1. Registered an application in the Azure portal and configured it to use the Microsoft identity platform
    1. Built the authorization code flow
+   1. Defined and created app roles for access control
    1. Acquired a valid access token for calling a protected web API
 
 
