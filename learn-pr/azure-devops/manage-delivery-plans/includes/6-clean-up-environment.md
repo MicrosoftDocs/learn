@@ -8,11 +8,11 @@ Here you delete your Azure DevOps project, including what's in Azure Boards. In 
 
 To delete the project:
 
-1. In Azure DevOps, go to your project. Earlier we recommended that you name this project **Space Game - web - Delivery plans**.
+1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Delivery plans**.
 1. Select **Project settings** in the lower corner.
 1. At the bottom of the **Project details** area, select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Screenshot of Azure Pipelines showing the location of the Delete button.":::
-1. In the window that appears, enter the project name, and then select **Delete** again.
+1. In the window that appears, enter the project name and then select **Delete** again.
 
 Your project is now deleted.

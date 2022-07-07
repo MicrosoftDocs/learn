@@ -1,4 +1,4 @@
-Azure DevOps can help your team scale their development processes to deliver bigger and more ambitious projects. Let's rejoin the Tailspin Toys team as they tackle a common problem organizations face as they grow. Together, we'll discover what it takes to effectively manage work schedules across multiple teams.
+Azure DevOps can help your team scale their development processes to deliver bigger, more ambitious projects. Let's rejoin the Tailspin Toys team as they tackle common problems organizations face as they grow. Together, we'll discover what it takes to manage work schedules across multiple teams effectively.
 
 You met the team at Tailspin Toys earlier in this learning path. In the [previous module](/learn/modules/choose-an-agile-approach?azure-portal=true), you watched as they began to manage their work schedule through Azure Boards. Soon, word of their early success began to spread, and now other teams are exploring how they can enjoy the same benefits.
 
