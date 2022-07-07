@@ -1,4 +1,4 @@
-In this unit, you'll test whether the Python web application you created can sign in users. You'll also use application to call a protected web API and fetch user data.
+In this unit, you'll test whether the Python web application you created can sign in users. You'll also use the application to call a protected web API and fetch user data.
 
 ## Run the application
 
@@ -24,7 +24,7 @@ Some Azure AD tenants have disabled user consent, which requires admins to conse
 
 ## Call the Microsoft Graph API
 
-Before making a REST call to an API, such as Microsoft Graph, you'll need to acquire an access token.
+Before making a call to an API, such as Microsoft Graph, you'll need to acquire an access token.
 
 :::image type="content" source="../media/6-acquire-token-interactively.png" border="false" alt-text="Acquire token flow diagram":::
 
