@@ -3,8 +3,9 @@
 
 In this exercise, you will:
 
-- Run the Azure Machine Learning job by using GitHub Actions.
-- Trigger the pipeline with a change to the repo.
+- Set up a development and production environment.
+- Use environments in GitHub Actions.
+- Add a required reviewer to the staging job environment.
 
 ## Instructions
 

@@ -12,3 +12,5 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

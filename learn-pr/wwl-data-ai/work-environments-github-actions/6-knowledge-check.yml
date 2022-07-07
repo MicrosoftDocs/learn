@@ -12,3 +12,29 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "An organization uses three environments in their machine learning operations strategy. Which environment is best suited for quality assurance?"
+    choices:
+    - content: "Development"
+      isCorrect: false
+      explanation: "Incorrect. Quality assurance is not yet needed during model development."
+    - content: "Staging"
+      isCorrect: true
+      explanation: "Correct. Quality assurance is a crucial aspect during staging."
+    - content: "Production"
+      isCorrect: false
+      explanation: "Incorrect. When a model reaches production, quality assurance already needs to be performed."
+  - content: "What may be a reason to add an approval for an environment when using GitHub Actions?"
+    choices:
+    - content: "Someone needs to verify the code and model before the model moves to the next environment."
+      isCorrect: false
+      explanation: "Incorrect. Though the code and model should be verified, this should be part of creating and discussing a pull request."
+    - content: "Someone needs to verify whether all runs and tests have executed successfully before moving the model to the next environment."
+      isCorrect: true
+      explanation: "Correct. Even when GitHub Actions workflows ran successfully, someone may still need to review the output in the Azure Machine Learning workspace."
+    - content: "Someone needs to deploy and test the model before moving the model to the next environment."
+      isCorrect: false
+      explanation: "Incorrect. Deployment and testing can be automated. Manual approval should be used for tasks that require a human-in-the-loop."
