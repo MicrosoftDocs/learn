@@ -8,6 +8,6 @@ This workflow illustrates how a user request flows through an SAP landscape buil
 4. The request is sent from App Server to SAP HANA running on primary Large Instance blades.
 5. **Primary and secondary blades are clustered** at OS level for 99.99% availability, and data replication is handled through HANA System Replication in synchronous mode (HSR) from primary to secondary, enabling zero RPO.
 6. In-memory data of SAP HANA is persisted to high-performance NFS storage.
-7. Data from NFS storage is periodically backed up in seconds, using built-in storage snapshots on the local storage, without affect on database performance.
+7. Data from NFS storage is periodically backed up in seconds, using built-in storage snapshots on the local storage, without effect on database performance.
 8. Persistent data volume on secondary storage is replicated to dedicated DR system through a **dedicated backbone network for HANA storage replication**.
 9. The Large Instance on the DR side can be used for non-production to save costs, by mounting both the QA storage and DR replicated volume (read-only). At the disaster recovery (DR) site, the HLI unit is used for the Quality Assurance (QA) instance. Production operations run from the primary site. During DR failover (or failover test), the QA instance at the DR site is taken down.
