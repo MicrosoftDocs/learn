@@ -69,6 +69,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | **Disk options** |
     | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
     | Delete with VM | Accept the default (checked) | 
+    | Encryption at host | Accept the default (unchecked) |     
     | Encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
     | Enable Ultra Disk compatibility | Accept the default (unchecked) |
     | **Data disks** |
