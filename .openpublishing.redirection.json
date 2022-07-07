@@ -15319,6 +15319,36 @@
       "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/2-write-basic-queries-against-single-container.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/3-create-workspace.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/4-create-compute.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/5-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/6-use-auto-ml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/7-deploy-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/7a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/7-knowledge-check",
+      "redirect_document_id": true
     }
   ]
 }
