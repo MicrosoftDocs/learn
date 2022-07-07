@@ -15124,6 +15124,231 @@
       "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/6-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/7-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/2-understand-security-operations-defender-for-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/3-manage-investigate-incidents.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/4-manage-investigate-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/5-auto-remediation-investigations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/6-action-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/7-advanced-hunting.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/8-consult-microsoft-threat-experts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/use-threat-vulnerability-management-microsoft-defender-for-endpoint/5-track-emerging-threats-with-threat-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-threat-vulnerability-management-microsoft-defender-for-endpoint/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/3-connect-alerts-from-microsoft-defender-for-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/5-connect-microsoft-365-defender-connector.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/3-connect-microsoft-365-defender-connector",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/4-connect-alerts-from-microsoft-defender-for-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/6-connect-microsoft-defender-cloud-connector.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/4-connect-microsoft-defender-cloud-connector",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/7-connect-microsoft-defender-iot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/5-connect-microsoft-defender-iot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/8-connect-microsoft-defender-legacy-connectors.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/6-connect-microsoft-defender-legacy-connectors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-microsoft-defender-365-to-azure-sentinel/8-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/2-analytical-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/5-perform-complex-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/4-perform-cross-container-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/3-perform-simple-aggregations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/8-read-data-from-transactional-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/6-work-with-windowing-function-other-aggregations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics/7-write-data-back-to-transactional-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/4-perform-complex-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/3-perform-cross-container-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/5-work-with-windowing-functions-other-aggregations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics/2-write-basic-queries-against-single-container.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-synapse-link-with-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/3-create-workspace.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/4-create-compute.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/5-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/6-use-auto-ml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/7-deploy-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/7a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-automated-machine-learning/7-knowledge-check",
+      "redirect_document_id": true
     }
   ]
 }

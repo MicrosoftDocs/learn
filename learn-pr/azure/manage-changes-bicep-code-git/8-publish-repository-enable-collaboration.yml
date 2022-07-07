@@ -6,8 +6,8 @@ metadata:
   title: Publish your repository to enable collaboration
   description: Learn how to publish your Git repository to GitHub or Azure Repos.
   ms.date: 07/08/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
