@@ -41,7 +41,7 @@ quiz:
       explanation: 'Clear outline of the script is not the reason that parameterized queries are more secure than inline SQL.'
     - content: 'Parameterized queries substitute variables before running queries, meaning it avoids the opportunity for code to be submitted in place of a variable.'
       isCorrect: true
-      explanation: 'Parameter fields used in parameterized queries are treated as data, not code, protecting against injection vulnerabilities. For more information on how to implement parameterized queries please see the [OWASP Query Parameterization Cheat Sheet]( https://www.owasp.org/index.php/Query_Parameterization_Cheat_Sheet).'
+      explanation: 'Parameter fields used in parameterized queries are treated as data, not code, protecting against injection vulnerabilities. For more information on how to implement parameterized queries please see the [OWASP Query Parameterization Cheat Sheet]( https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).'
 
   - content: 'Which of the following data needs to be output encoded?'
     choices:
