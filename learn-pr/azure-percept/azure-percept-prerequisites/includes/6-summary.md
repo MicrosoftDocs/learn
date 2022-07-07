@@ -3,7 +3,7 @@ In this module, you learned:
 - Prerequisites to build and deploy an edge AI solution with Azure Percept.
 - A basic understanding of concepts in Azure IoT services and Azure AI services.
 
-## Check out the Next Module in this learning path
+## Check out the next module in this learning path
 
 - [Explore Azure Percept - Learn | Microsoft Docs](/learn/modules/explore-azure-percept/)
 
