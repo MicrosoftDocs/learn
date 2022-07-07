@@ -10,7 +10,7 @@ metadata:
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -23,41 +23,41 @@ durationInMinutes: 1
 ###  - No "Not" or "Except" in questions
 ###  - No second person ("you") in the questions or answers
 ###  - Provide a meaningful explanation for both correct and incorrect answers
-###
+
 ###########################################################################
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "How can a developer implement authorization logic for access control using app roles in a web app?"
     choices:
-    - content: ""
+    - content: "Make all access control settings and configurations accessible to the systems administrator only, so that only those with the designated admin role can change access permissions."
+      isCorrect: false
+      explanation: "This is a form of mandatory access control where users only access data that their security labels allow them to. All access permissions are controlled by the admin, which is not the case in RBAC using app roles"
+    - content: "Define app roles in your application, create the roles in your app registration, and assign them to groups or directly to users."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: " To implement RBAC, define the app roles for the application and assign users or groups to it. When users make a request, evaluate the role assignments in the tokens coming into the application and act on them accordingly"
+    - content: "The admin creates rules that determine the access and usage of data, for instance office hours timeframe. Users cannot access these organizations resources outside the defined access criteria."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "This is a form of access control used by some cloud services based on rules rather than roles and permissions. "
+  - content: "Where does the identity platform send security tokens after authenticating clients?"
     choices:
-    - content: ""
+    - content: "Redirect URI"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Also known as Reply URL, this is the location where the identity platform redirects a user's client and sends security tokens after authentication."
+    - content: "client ID"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The client ID is a value that uniquely identifies your application in the Microsoft identity platform."
+    - content: "Client secret"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Also known as application password, a client secret is a string value your app can use in place of a certificate to identify itself."
+  - content: "Why is it advisable to implement the flow that acquires a token silently when integrating a web app with the Microsoft identity platform?"
     choices:
-    - content: ""
+    - content: "The user's refresh token will not be revoked by the server because of a change in credentials, user action, or admin action."
+      isCorrect: false
+      explanation: "When a user changes their credentials, the refresh token is revoked and will therefore invoke the flow to acquire an access token interactively."
+    - content: "Users will not need to re-enter their credentials once their session has expired."
+      isCorrect: false
+      explanation: "When a user session expires and the refresh token is invalid, they are prompted to sign in again"
+    - content: "The application will not prompt users to reauthenticate every time they need to access a protected resource."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
       explanation: ""

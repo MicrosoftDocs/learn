@@ -10,6 +10,6 @@ metadata:
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 14
+durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-build-auth-code-flow.md)]
