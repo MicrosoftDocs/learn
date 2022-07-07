@@ -43,7 +43,7 @@ A `constructor` function initializes the properties of the class and has three p
 
 - The `constructor` keyword.
 - A parameter list, which defines the parameters that will be passed to the new object when a new instance is created. When defining the parameter list, remember that:
-  - It is not required to define a parameter for every property in the class.
+  - It's not required to define a parameter for every property in the class.
   - As with all TypeScript functions, the parameters can be required or optional, have default values, or be rest parameters. (This is a key difference from JavaScript.)
   - The parameter names can be different from the property names. Keep in mind that these names will appear in Intellisense when you work with objects of this type so use names that are sufficiently descriptive.
 - The property assignments. Each statement assigns the value of a parameter to the value of a property. To indicate that you're accessing a member of the class (in this case, the property), apply the `this.` keyword.
@@ -65,7 +65,7 @@ Continue defining the `Car` class in the Playground.
     ```
 
 > [!TIP]
-> The underscore (`_`) before the property name is not required in the property declaration but it provides a way to distinguish the property declaration from the parameters that are accessible through the constructor, while still tying the two together visually.
+> The underscore (`_`) before the property name isn't required in the property declaration but it provides a way to distinguish the property declaration from the parameters that are accessible through the constructor, while still tying the two together visually.
 
 ## Define the accessors
 
@@ -124,7 +124,7 @@ You can define any TypeScript function within a class and call it as a method on
 
 Continue defining the `Car` class in the Playground.
 
-1. Define these four methods for the `Car` class: `accelerate`, `brake`, `turn`, and `worker`. You'll notice that there's no `function` keyword. This is not required or allowed when defining functions in a class, so it helps you keep the syntax succinct.
+1. Define these four methods for the `Car` class: `accelerate`, `brake`, `turn`, and `worker`. You'll notice that there's no `function` keyword. This isn't required or allowed when defining functions in a class, so it helps you keep the syntax succinct.
 
     ```typescript
     // Methods
