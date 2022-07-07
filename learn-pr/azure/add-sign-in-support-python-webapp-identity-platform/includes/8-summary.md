@@ -1,68 +1,15 @@
-<!-- 1. Restate the scenario problem --------------------------------------------------------------------------------
 
-    Goal: Summarize the challenge(s) posed in the introduction scenario; be brief (1-2 sentences)
+You're developing a confidential client application that signs in users and allows them to access data based on their roles in the company. The application you build will leverage the Microsoft identity platform to enforce authentication and provide access control.
 
-    Heading: none
+Adding authentication enables your web app to access limited profile information and customize the experience offered to users. In this scenario, the web application authenticates users in a web browser by redirecting them to sign in to Microsoft identity. Microsoft identity then returns a sign-in response through the user’s browser, which contains claims about the user in an identity token.
 
-    Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
+You also used Role-based access control (RBAC) to enforce authorization in the Python Flask web application.To implement the app role business logic in this scenario, you defined the app roles in **App registrations**. Then, you assigned the roles to different users in the **Enterprise applications** pane. The assigned app roles are included in any token that's issued for your application, either ID tokens when the app is signing in a user or access tokens when the app is calling a protected web API. By using RBAC, you securely control who has access to what content and what functionality.
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
--->
-TODO: restate the scenario problem
+While it is possible to build an application without delegating authentication and authorization to a centralized identity provider like Azure AD,
+it would bring a high administrative burden to the developer. You'd need to create an application that maintains all username and password information and find a mechanism for adding, removing, and adjusting user permissions across multiple apps. As the number of users increase, and your application grows in scale and complexity, app roles become even more useful. 
 
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
+ "## References
 
-    Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Recommended: format this as lead-in sentence(s) followed by a list
-
-    Example: "You did some research and found that Plain English is a good writing style for safety-critical communications. You applied several Plain English techniques to your instructions:
-        * Removed unnecessary words, which made your sentences easier to read even in a stressful situation like a fire.
-        * Made sure all sentences used the active voice, which made your content more direct.
-        * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
-        * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-Adding authentication enables your web app to access limited profile information and customize the experience offered to users. Web apps authenticate a user in a web browser. In this scenario, the web application directs the user to sign in to Microsoft identity. Microsoft identity returns a sign-in response through the user’s browser, which contains claims about the user in an identity token.
-
-<!-- 3. Describe the experience without the product ---------------------------------------------------
-
-    Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
-
-    Heading: none; typically this will be a new paragraph
-
-    Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
-
- -->
-TODO: describe the experience without the product
-
-<!-- 4. Describe the business impact ----------------------------------------------------
-
-    Goal: explain the business impact of using the product to solve the problem
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
- -->
-TODO: describe the business impact
-
-<!-- 5. References (optional) ----------------------------------------------------
-
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: "## References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-
-<!-- Do not include any other content -->
+* [Microsoft identity platform web app documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/index-web-app)
+* [Microsoft identity platform and OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+* [Using app roles to enforce role-based access control (RBAC)?](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)

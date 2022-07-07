@@ -76,3 +76,7 @@ return render_template(
 Accessing the Microsoft Graph API with the admin role assigned returns the protected app page, as shown below.
 
 :::image type="content" source="../media/6-call-graph-admin-role.png" border="false" alt-text="Call Microsoft Graph API with defined role assignment":::
+
+When a signed in user tries to navigate to a protected route without the required role assigned, Microsoft identity prevents them froom accessing the content as shown below.
+
+:::image type="content" source="../media/6-required-admin-role-missing.png" border="false" alt-text="required app-defined role missing":::
