@@ -1,13 +1,10 @@
-Developers can leverage the identity platform to add authentication to a Python Flask web application to enable users to sign in. Adding authentication enables your application to access limited profile information. Once the signed in user grants consent, the application can obtain a token from Azure AD on behalf of the signed in user and use it to request data from web APIs, such as Microsoft Graph.
+Developers can leverage the identity platform to add authentication to a Python Flask web application to enable users to sign in. Adding authentication enables your application to access limited profile information. Once the user grants consent, the application can obtain a token from Azure AD on their behalf and use it to request data from a protected web API.
 
 In this unit, you'll sign in users in a Python Flask web application that uses the Microsoft Authentication Library (MSAL). Follow these steps to enable sign in: 
 
 - Import the auth library
 - Import Flask modules
-- Build the authorization code flow
-- Create app routes
-- Create a confidential client
-- Sign in and sign out users
+- Initialize the Flask app
 
 ## Import the auth library
 
