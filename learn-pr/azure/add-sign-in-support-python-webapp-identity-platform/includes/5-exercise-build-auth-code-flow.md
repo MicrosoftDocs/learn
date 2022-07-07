@@ -70,7 +70,7 @@ def authorized():
     """
 
     # After the user signs in and accepts the required application
-    # permissions, Azure AD will redirect the user back to this route.
+    # permissions, Azure AD #will redirect the user back to this route.
     # Pop out the auth code flow in which we started in their prior call
     # as it isn't needed that after this request is complete.
     auth_code_flow: "dict[str, Any]" = session.pop("auth_code_flow")
@@ -133,8 +133,7 @@ The first step of the sign-in process is to send a request to the `/authorize` e
 
 
 ```python
-# Create an MSAL client using the app's configuration values and provide
-# the token cache.
+# Create an MSAL client using the app's configuration values and provide the token cache.
 msal_client = msal.ConfidentialClientApplication(
     app.config.get("CLIENT_ID"),
     authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
@@ -144,11 +143,11 @@ msal_client = msal.ConfidentialClientApplication(
 )
 ```
 
-The MSAL client doesn't need a token_cache as none of its interactions use or produce tokens in the initiate_auth_code_flow process.
+The MSAL client doesn't need a token cache as none of its interactions use or produce tokens in the initiate auth code flow process.
 
 ## Sign in users
 
-This confidential client_instance is leveraged to construct an /authorize request URL with the appropriate parameters, and the browser is redirected to this URL.
+This confidential client instance is leveraged to construct an `/authorize` request URL with the appropriate parameters, and the browser is redirected to this URL.
 
 To create a route that authenticates users without specific role assignments, add the following code to `app.py`.
 
@@ -211,14 +210,6 @@ def admin():
 ```
 
 In the code sample above, you verify that the user is authenticated and that their session is still valid. If either of the two statements is false, raise an unauthorized error to trigger the auth code flow and redirect the user to the sign in page. After signing in, we perform a role check to verify that the user has the application-defined, admin-role assigned. If the user's claim doesn't exist or doesn't contain the `admin` role, prevent the user from accessing the page. If the required application-defined role exists, grant access to the page. 
-
-### Provide consent for application access
-
-When a signed-out user navigates to a route requiring authentication, their browser is redirected to the Azure AD sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data.
-
-:::image type="content" source="../media/5-consent-to-permissions-request.png" border="false" alt-text="consent to the app's request for permissions":::
-
-Some Azure AD tenants have disabled user consent, which requires admins to consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent
 
 ## Sign out users
 

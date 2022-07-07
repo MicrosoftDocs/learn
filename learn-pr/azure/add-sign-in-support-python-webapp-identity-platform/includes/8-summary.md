@@ -8,8 +8,8 @@ You also used Role-based access control (RBAC) to enforce authorization in the P
 While it is possible to build an application without delegating authentication and authorization to a centralized identity provider like Azure AD,
 it would bring a high administrative burden to the developer. You'd need to create an application that maintains all username and password information and find a mechanism for adding, removing, and adjusting user permissions across multiple apps. As the number of users increase, and your application grows in scale and complexity, app roles become even more useful. 
 
- "## References
+## References
 
-* [Microsoft identity platform web app documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/index-web-app)
-* [Microsoft identity platform and OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-* [Using app roles to enforce role-based access control (RBAC)?](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)
+* [Microsoft identity platform web app documentation](/azure/active-directory/develop/index-web-app)
+* [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+* [Using app roles to enforce role-based access control (RBAC)?](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)

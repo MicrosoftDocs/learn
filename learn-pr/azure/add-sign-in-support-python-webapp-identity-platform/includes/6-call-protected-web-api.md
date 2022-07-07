@@ -1,3 +1,29 @@
+In this unit, you'll test whether the Python web application you created can sign in users. You'll also use application to call a protected web API and fetch user data.
+
+## Run the application
+
+To start the server, run the following commands from within the project directory:
+
+```python
+pip install -r requirements.txt
+flask run --host=localhost
+```
+Open your browser and navigate to [http://localhost:5000](http://localhost:5000). If everything worked, the sample app should produce output similar to this:
+
+:::image type="content" source="../media/6-python-webapp-homepage.png" border="false" alt-text="Python web app homepage":::
+
+The application's homepage is accessible by all users as it requires no authentication or authorization, as created in the previous unit.
+
+## Provide consent for application access
+
+When a user navigates to any of the routes that require authentication, their browser is redirected to the Azure AD sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data.
+
+:::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text="consent to the app's request for permissions":::
+
+Some Azure AD tenants have disabled user consent, which requires admins to consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent
+
+## Call the Microsoft Graph API
+
 Before making a REST call to an API, such as Microsoft Graph, you'll need to acquire an access token.
 
 :::image type="content" source="../media/6-acquire-token-interactively.png" border="false" alt-text="Acquire token flow diagram":::
@@ -23,7 +49,6 @@ if token_cache.has_state_changed:
     session["token_cache"] = token_cache.serialize()
 session["msal_http_response_cache"] = http_cache
 ```
-# Call the Microsoft Graph API
 
 Now that you have a token, you can call a protected web API. To call the Microsoft Graph API, update `app.py` with the following code. 
 
@@ -44,17 +69,17 @@ A call to the Microsoft Graph API is a simple HTTP Get that contains the access 
 
 :::image type="content" source="../media/6-call-microsoft-graph-api.png" border="false" alt-text="Call Microsoft Graph API":::
 
- If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this tutorial, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial auth code flow and performing on-demand, step-up authentication depending on your desired user experience. 
+If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this tutorial, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial auth code flow and performing on-demand, step-up authentication depending on your desired user experience. 
 
 ## Acquire token silently
 
-After a user signs in, your app shouldn't ask users to reauthenticate every time they need to access a protected resource. To prevent such reauthentication requests, you acquire an access token without user interaction by calling `acquire_token_silent`, as illustrated in the code sample above. This will first look for a valid access token from the cache, or if needed, find a valid refresh token and then use it to redeem a new access token. 
+After a user signs in, your app shouldn't ask users to reauthenticate every time they need to access a protected resource. To prevent such re-authentication requests, you acquire an access token without user interaction by calling `acquire_token_silent`, as illustrated in the code sample above. This will first look for a valid access token from the cache, or if needed, find a valid refresh token and then use it to redeem a new access token. 
 
 If the `acquire_token_flow` found an expired access token and needed to use the refresh token, you update the session's token cache to reflect the new access token and refresh token. As such, the next invocation won't require exchanging the refresh token for the access token again.  
 
 There are some situations, however, where you might need to force users to interact with the Microsoft identity platform. For example:
 
-- Users need to reenter their credentials because the session has expired.
+- Users need to re-enter their credentials because the session has expired.
 - The refresh token has expired.
 - Your application is requesting access to a resource and you need the user's consent.
 - Two-factor authentication is required.
@@ -77,6 +102,6 @@ Accessing the Microsoft Graph API with the admin role assigned returns the prote
 
 :::image type="content" source="../media/6-call-graph-admin-role.png" border="false" alt-text="Call Microsoft Graph API with defined role assignment":::
 
-When a signed in user tries to navigate to a protected route without the required role assigned, Microsoft identity prevents them froom accessing the content as shown below.
+When a signed in user tries to navigate to a protected route without the required role assigned, Microsoft identity prevents them from accessing the content, as shown below.
 
 :::image type="content" source="../media/6-required-admin-role-missing.png" border="false" alt-text="required app-defined role missing":::
