@@ -31,7 +31,7 @@ quiz:
     - content: "Redirect URI"
       isCorrect: true
       explanation: "The Redirect URI, also known as Reply URL, is the location where the identity platform redirects a user's client and sends security tokens after authentication."
-    - content: "client ID"
+    - content: "Client ID"
       isCorrect: false
       explanation: "The client or application ID is a value that uniquely identifies your application in the Microsoft identity platform."
     - content: "Client secret"
