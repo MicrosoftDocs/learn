@@ -12,7 +12,7 @@ With Data Guard, you can maintain an identical copy of a database on separate ph
 
 Data Guard offers advantages over storage-level replication:
 
- -  As the replication is database-aware, only relevant traffic is replicated.
- -  Certain workloads can generate high input/output on temporary tablespaces, which aren't required on standby and so aren't replicated.
- -  Validation on the replicated blocks occurs at the standby database, so physical corruptions on the primary database aren't replicated to the standby database.
- -  Prevents logical intra-block corruptions and lost-write corruptions. It also eliminates the risk of mistakes made by storage administrators from replicating to the standby. Redo can be delayed for a pre-determined period, so user errors aren't immediately replicated to the standby.
+- As the replication is database-aware, only relevant traffic is replicated.
+- Certain workloads can generate high input/output on temporary tablespaces, which aren't required on standby and so aren't replicated.
+- Validation on the replicated blocks occurs at the standby database, so physical corruptions on the primary database aren't replicated to the standby database.
+- Prevents logical intra-block corruptions and lost-write corruptions. It also eliminates the risk of mistakes made by storage administrators from replicating to the standby. Redo can be delayed for a pre-determined period, so user errors aren't immediately replicated to the standby.

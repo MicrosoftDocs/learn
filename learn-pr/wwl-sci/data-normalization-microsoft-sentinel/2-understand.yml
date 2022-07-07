@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.data-normalization-microsoft-sentinel.understand
+title: Understand data normalization
+metadata:
+  title: Understand data normalization
+  description: "Understand data normalization"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand.md)]
