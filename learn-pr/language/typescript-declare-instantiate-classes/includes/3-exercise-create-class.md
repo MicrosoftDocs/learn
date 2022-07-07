@@ -24,7 +24,7 @@ You can think of the properties of a class as the raw data that is passed to the
 
 The properties of the `Car` class are those that apply to any car, regardless of the specific make or model. For example, these properties may include the make of the car, the color, and the number of doors. Because you're working in TypeScript, you can also apply type attributes to the properties.
 
-1. Declare the three properties for the `Car` class: `_model: string`, `_color: string`, and `_doors: number`.
+1. Declare the three properties for the `Car` class: `_make: string`, `_color: string`, and `_doors: number`.
 
     ```typescript
     // Properties
