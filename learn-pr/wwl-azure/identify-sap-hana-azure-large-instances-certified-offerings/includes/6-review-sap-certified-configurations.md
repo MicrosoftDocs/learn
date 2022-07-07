@@ -3,6 +3,6 @@ To implement SAP workloads on Azure in a supported manner, customers should foll
 - **SAP product**
 - **Operating system**
 - **RDBMS**
-- **Azure offering**, including Azure VM SKU and (in case of HANA) SAP HANA on Azure (Large Instances)
+- **Azure offering**, including Azure VM SKU and (if HANA) SAP HANA on Azure (Large Instances)
 
 This information is summarized at [SAP certifications and configurations running on Microsoft Azure](/azure/virtual-machines/workloads/sap/sap-certifications).
