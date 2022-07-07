@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/30/2022
+  ms.date: 07/07/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "That’s incorrect. SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region."
+      explanation: "That’s incorrect.  A three-tier, Azure-specific architecture where the SAP application layer hosted on Azure VMs and the database layer resides on SAP TDI-configured hardware in a Microsoft-hosted Large Instance stamp in the same Azure region."
     - content: "2"
       isCorrect: false
-      explanation: "That’s incorrect. SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region."
+      explanation: "That’s incorrect.  A three-tier, Azure-specific architecture where the SAP application layer is hosted on Azure VMs and the database layer resides on SAP TDI-configured hardware in a Microsoft-hosted Large Instance stamp in the same Azure region."
     - content: "3"
       isCorrect: true
-      explanation: "That's correct. SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region."
+      explanation: "That's correct. A three-tier, Azure-specific architecture where the SAP application layer is hosted on Azure VMs and the database layer resides on SAP TDI-configured hardware in a Microsoft-hosted Large Instance stamp in the same Azure region."
   - content: "What service is used to connect HANA Large Instances with the Azure virtual network?"
     choices:
     - content: "ExpressRoute"
