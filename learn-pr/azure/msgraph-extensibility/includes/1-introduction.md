@@ -1,13 +1,12 @@
 
-Microsoft Graph extensions allow you to extend Microsoft Graph resources by adding custom properties and using them to store app-specific data.
+Microsoft Graph provides a unified endpoint that you can use to access the tremendous amount of data in Microsoft cloud services such as Microsoft 365, Enterprise Mobility + Security, and Windows. In addition, Microsoft Graph also supports **extensions** as a lightweight option for adding custom properties and using them to store app-specific data.
 
 Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves and they'll discover each other, their interests, and their social networks.
 
-<!--placeholder. Need to explicitly call out at this stage the info (and their associated properties) that we'll store then build the different conceptuals and exercise units around this info.-->
 The employees have expressed a need to share the following details in their app profiles:
-+ Their public LinkedIn URL profile
++ Their public LinkedIn profile URL
 + Their Skype ID
-+ Their XBox gamertag
++ Their Xbox gamertag
 
 Azure AD, Microsoft 365, and Microsoft Graph do not expose these properties natively to allow the employees to update their profiles. However, the organization also doesn't want to invest in another database.
 
@@ -16,7 +15,7 @@ You have identified extensibility options available in Microsoft Graph as suited
 ## What will we be doing?
 
 1. You will use an Azure AD test tenant and a API client to call Microsoft Graph and create custom properties using the available extension options.
-2. You'll then add new properties and store user-specific data in the properties.
+2. You'll then add new properties to store the LinkedIn profile URL, Skype ID, and Xbox gamertag.
 3. You'll model the HTTP requests for managing and reading the extensions properties and associated data.
 
 
@@ -27,3 +26,7 @@ By the end of this module, you'll be able to:
 1. Choose an extension option for adding custom properties to Microsoft Graph.
 2. Add, query, and update custom properties and their associated data through Microsoft Graph.
 3. Use data in custom properties to extend your application.
+
+
+> [!NOTE]
+> Microsoft Graph exposes two endpoints - `beta` and `v1.0` where `beta` retrieves the preview version of an API while `v1.0` retrieves the generally available version of an API. APIs that are generally available are recommended for production. For the exercises in this module, we will use the generally available version of Microsoft Graph APIs.

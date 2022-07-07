@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.msgraph-extensibility.exercise
-title: Enter exercise title
+uid: learn.msgraph-extensibility.exercise-msgraph-directoryextensions
+title: Exercise - Add custom data using directory extensions
 metadata:
   unitType: exercise
   title: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: microsoft-graph-extensions-api
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise-msgraph-directoryextensions.md)]
