@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/06/2022
+  ms.date: 07/07/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "How do you enforce that data scientists can only edit code in feature branches?"
+  - content: "How does a machine learning engineer enforce that data scientists can only edit code in feature branches?"
     choices:
     - content: "Trigger a workflow with a pull request."
       isCorrect: false
@@ -26,8 +26,8 @@ quiz:
       explanation: "Incorrect. This will allow them to make changes to the main branch."
     - content: "Add a branch protection rule."
       isCorrect: true
-      explanation: "Correct. By protecting the main branch, data scientists will only be able to edit feature branches."
-  - content: "Which event should you use to trigger a GitHub Actions workflow to run when a pull request is merged?"
+      explanation: "Correct. When the machine learning engineer protects the main branch, data scientists will only be able to edit feature branches."
+  - content: "Which event should a machine learning engineer use to trigger a GitHub Actions workflow to run when a pull request is merged?"
     choices:
     - content: "`pull_request`"
       isCorrect: false
