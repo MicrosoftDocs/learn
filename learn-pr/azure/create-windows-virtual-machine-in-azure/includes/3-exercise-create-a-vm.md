@@ -42,10 +42,10 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Security type | Standard |
     | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen2** from the dropdown list. |
     | Azure Spot instance| Accept default (unchecked). |
-    | Size | The **Size** field is not directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
+    | Size | The **Size** field isn't directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
-    | Username | Enter a username you will use to sign in to the VM. |
-    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
+    | Username | Enter a username you'll use to sign in to the VM. |
+    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that isn't '\\' or '-'. Use something you'll remember or write it down, as you'll need it later. |
     | Confirm password | Confirm your password. |
     | **Inbound port rules** |
     | Public inbound ports | Select **Allow selected ports**. We want to be able to access the desktop for this Windows VM using RDP. |
