@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-core-architectural-components-of-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many resource groups can a resource be in at the same time?"
+    choices:
+    - content: "One"
+      isCorrect: true
+      explanation: "A resource can only be in one group at a time."
+    - content: "Two"
+      isCorrect: false
+      explanation: "While you can have multiple resources and resource groups, a resource can only be in a single group at a time."
+    - content: "Three"
+      isCorrect: false
+      explanation: "While you can have multiple resources and resource groups, a resource can only be in a single group at a time."
+  - content: "What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?"
+    choices:
+    - content: "Current resources inherit the setting, but future resources don't."
+      isCorrect: false
+      explanation: "Resource group permissions are inherited by all resources in the resource group, current and future."
+    - content: "Future resources inherit the setting, but current ones don't."
+      isCorrect: false
+      explanation: "Resource group permissions are inherited by all resources in the resource group, current and future."
+    - content: "The setting is applied to current and future resources."
+      isCorrect: true
+      explanation: "Resources inherit permissions from their resource group."
+  - content: "What Azure feature replicates resources across regions that are at least 300 miles away from each other?"
+    choices:
+    - content: "Region pairs"
+      isCorrect: true
+      explanation: "Most Azure regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away."
+    - content: "Availability Zones"
+      isCorrect: false
+      explanation: "A region pair is when an Azure Region is paired with another region at least 300 miles away."
+    - content: "Sovereign regions"
+      isCorrect: false
+      explanation: "A region pair is when an Azure Region is paired with another region at least 300 miles away."

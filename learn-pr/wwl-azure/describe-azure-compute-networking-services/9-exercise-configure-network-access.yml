@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-compute-networking-services.exercise-configure-network-access
+title: Exercise - Configure network access
+metadata:
+  title: Exercise - Configure network access
+  description: "Exercise - Configure network access"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-exercise-configure-network-access.md)]
+interactive: bash

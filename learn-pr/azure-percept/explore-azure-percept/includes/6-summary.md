@@ -6,7 +6,7 @@ In this module, you learned:
 
 To learn more about Azure Percept, visit these resources:
 
-- [Learn about Azure Percept](/services/azure-percept/)
+- [Learn about Azure Percept](https://azure.microsoft.com/services/azure-percept/)
 - [Review Azure Percept technical documentation](/azure/azure-percept/)
 - [Learn more about our customer and partner stories](https://techcommunity.microsoft.com/t5/internet-of-things-blog/bg-p/IoTBlog/label-name/Azure%20Percept)
 
