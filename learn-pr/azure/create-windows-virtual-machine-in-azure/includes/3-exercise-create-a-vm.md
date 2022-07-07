@@ -8,7 +8,7 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 1. On the Azure portal, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In *Search services and marketplace* search box, search for and select *Windows Server*, and press <kbd>Enter</kbd>. The **Windows Server** pane appears.
+1. In *Search services and marketplace* search box, search for and select *Windows Server*, and press <kbd>Enter</kbd>. Select **Windows Server** by Microsoft. The **Windows Server** pane appears.
 
 1. There are several Windows Server options to choose from to create your VM. In the **Plan** dropdown list, scroll down, and select **[smalldisk] Windows Server 2019 Datacenter**.
 
