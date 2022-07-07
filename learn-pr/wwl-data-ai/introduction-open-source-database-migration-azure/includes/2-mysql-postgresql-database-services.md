@@ -99,7 +99,7 @@ The Single Server deployment option for PostgreSQL provides similar benefits as 
 Azure Database for PostgreSQL - Flexible Server provides similar benefits as MySQL Flexible Server. You can use it to provide the greatest levels of availability and convenient restarts.
 
 > [!NOTE]
-> At the time of writing, the Azure Database for PostgreSQL Flexible Server deployment option is in public preview. It's a fully functional service, but doesn't yet offer a service-level agreement (SLA).
+> At the time of writing, the Azure Database for PostgreSQL Flexible Server deployment option is in GA. It's a fully functional service, but doesn't yet offer a service-level agreement (SLA).
 
 #### Azure Database for PostgreSQL Hyperscale (Citus)
 
