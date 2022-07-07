@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-environments-github-actions.set-up-environments
+title: Set up environments
+metadata:
+  title: Set up environments
+  description: "Set up environments"
+  ms.date: 07/07/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
