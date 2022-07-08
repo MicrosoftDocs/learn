@@ -17,7 +17,7 @@ If you wanted to achieve this availability in an on-premises network, you would 
 - An environmentally controlled datacenter.
 - Uninterruptible power supplies and backup generators.
 
-All these components are expensive and require skill to implement and run. They would also consume significant administrative resources. With Azure, these requirements are already solved; you just create the database, and high availability is built-in.
+All these components are expensive and require skill to implement and run. They would also consume significant administrative resources. With Azure, these requirements are already solved; you just create the database, and high availability is built in.
 
 ### Scalability
 
@@ -44,7 +44,7 @@ Azure Database for MySQL is a PaaS implementation of MySQL in the Azure cloud, b
 
 You get the following features with Azure Database for MySQL:
 
-- High availability features built-in.
+- High availability features built in.
 - Predictable performance.
 - Easy scaling that responds quickly to demand.
 - Secure data, both at rest and in motion.
