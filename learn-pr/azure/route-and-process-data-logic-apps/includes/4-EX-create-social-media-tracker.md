@@ -26,9 +26,9 @@ Let's configure basic settings, like resource group and location.
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
-    | Type | Consumption |
     | Logic app name | Enter *ShoeTracker* |
     | Region | Select a location closest to you from the dropdown list. |
+    | Type | Consumption |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
