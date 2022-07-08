@@ -1,8 +1,8 @@
 Orleans simplifies the process of building distributed, scalable applications. There are several key concepts to understand  in order to work with Orleans effectively.
 
-Orleans is built around the "actor model", which is an established design pattern that has exited since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps. For now, you can easily complete the exercises ahead with a basic understanding of a few important concepts.
+Orleans is built around the "actor model", which is an established design pattern that has exited since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps. For now, you can easily complete the exercises ahead with a basic understanding of a few important concepts, such as grains and silos.
 
-## Understanding Grains
+## What are Grains?
 
 Grains are the most essential primitives and building blocks of Orleans applications. They represent actors in the Actor model and define the state data and behavior of an entity, such as shopping cart or product. Grains are each identified and tracked through user-defined keys and can be accessed by other grains and clients.
 
@@ -12,7 +12,7 @@ Grains are stored in silos, which you explore later. Grains that are currently a
 
 :::image type="content" source="../media/grain-lifecycle.png" alt-text="A diagram of the grain life cycle.":::
 
-## Working with grains
+## How are grains implemented?
 
 In more concrete coding terms, a grain is a class that inherits from the `Grain` base class. The `Grain` class manages various internal behaviors and integration points with the Orleans framework. Your grain classes should also implement one of the grain interface types listed below. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
 
@@ -58,7 +58,7 @@ public sealed class UrlShortenerGrain : Grain, IGrainWithStringKey, IUrlShortene
 }
 ```
 
-## Understanding silos
+## What are silos?
 
 Silos are responsible for storing grains and are another core building block of Orleans. A silo can contain one or more grains; a group of silos is known as a cluster. The cluster coordinates work between silos, allowing communication with grains as though they were all available in a single process. You can organize your data by storing different types of grains in different silos. Your application can retrieve individual grains without having to worry about the details of how they're managed within the cluster.
 

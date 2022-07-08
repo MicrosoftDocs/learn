@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.orleans-build-first-app.exercise-persist-state
-title: Persisting grain state
+title: Exercise - Persist grain state
 metadata:
-  title: Persist grain state
+  title: Exercise - Persist grain state
   description: Learn how to persist state using Orleans grains.
   ms.date: 5/15/2022
   author: alexwolfmsft
