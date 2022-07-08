@@ -1,4 +1,4 @@
-When you work on smaller projects with smaller teams, it may make sense to have one Azure Machine Learning workspace. The one workspace can be used for everything: to train, test, and deploy your model. However, at Proseware, we want to have a robust and future-proof solution that can easily scale when we build and maintain multiple models that we want to integrate with our web application for practitioners. 
+When you work on smaller projects with smaller teams, it may make sense to have one Azure Machine Learning workspace. The one workspace can be used for everything: to train, test, and deploy your model. However, at Proseware, you want to have a robust and future-proof solution that can easily scale when you build and maintain multiple models that you want to integrate with our web application for practitioners. 
 
 To quickly but safely move a model from development to production, you've agreed upon a high-level **machine learning operations** (**MLOps**) architecture.
 
@@ -35,13 +35,13 @@ The **staging** environment is used for part of the outer loop:
 3. Test the code and model with linting and unit testing.
 4. Deploy the model to test the endpoint.
 
-The **production** environment is used for the second part of the outer loop:
+The **production** environment is used for the another part of the outer loop:
 
 5. Deploy the model to the production endpoint. The production endpoint is integrated with the web application.
 6. Monitor the model and endpoint performance to trigger retraining when necessary.
 
-Although many machine learning tasks can and should be automated, you'll also want to plan for points where you want gated approval. When a model has been trained and packaged, you want to assign specific reviewers to validate the model before it moves to the staging environment. 
+Although many machine learning tasks can and should be automated, you'll also want to plan for points where you want gated approval. When a model has been trained and packaged, you want to notify the lead data scientist to validate the model before it moves to the staging environment. 
 
-Similarly, after the model has been tested vigorously in the staging environment, you want to add gated approval to ensure someone verifies that all tests were successful before deploying your model to production.
+Similarly, after the model has been tested vigorously in the staging environment, you want to add gated approval to ensure someone from the software development team verifies that all tests were successful before deploying your model to production.
 
 When you work with environments, gated approval allows you to control deployments from one environment to the next.
