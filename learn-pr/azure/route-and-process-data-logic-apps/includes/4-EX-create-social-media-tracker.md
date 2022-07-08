@@ -60,7 +60,7 @@ Now, let's create the trigger and provide values for all required parameters.
 
 1. Select **Sign in**. Sign in with your existing Twitter account and password, and select **Authorize app**. This action establishes the log in connection to your Twitter account.
 
-1. When the Twitter **When a new tweet is posted** dialog box reappears you have created a valid connection. The dialog box has three required parameters:
+1. When the Twitter **When a new tweet is posted** dialog box reappears, you've created a valid connection. The dialog box has three required parameters:
 
    - **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
    - **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
@@ -89,7 +89,7 @@ At this point, our logic app is scanning Twitter every minute for tweets contain
 
 1. Select **Refresh** once a minute until you see a row in the **Runs history** table.
 
-1. While you are waiting, locate the section in **Overview** labeled **Trigger history**. Notice the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
+1. While you're waiting, locate the section in **Overview** labeled **Trigger history**. Notice the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
 
 1. Go back to **Runs history**. After you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the designer you used to create the trigger. This view lets you see the data that flowed through each step of this run of your app.
 
