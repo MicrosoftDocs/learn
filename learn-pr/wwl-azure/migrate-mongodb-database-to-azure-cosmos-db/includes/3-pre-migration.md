@@ -41,7 +41,7 @@ The DMA will output the following files that you can use as the data estate migr
 The spreadsheets would be similar to the one below.
 
 > [!div class="mx-imgBorder"]
-> [![Diagram showing the Data Migration Assistant spreadsheet.](../media/3-database-migration-assistant-spreadsheet.png)](../media/3-database-migration-assistant-spreadsheet.png#lightbox)
+> [![Spreadsheet showing the Data Migration Assistant information.](../media/3-database-migration-assistant-spreadsheet.png)](../media/3-database-migration-assistant-spreadsheet.png#lightbox)
 
 ## Pre-migration assessment
 
@@ -128,9 +128,9 @@ The compatible tools for each migration scenario are shown below:
 
 | Source | Destination | Process Recommendation |
 | :--- | :---: | :--- |
-| ***Offline*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | • <10-GB data: MongoDB native tools </br>• < 1-TB data: Azure DMS </br>•  > 1-TB data: Spark |
-| ***Online*** </br>• MongoDB on-premise cluster </br>• MongoDB IaaS VM cluster </br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | </br>• < 1-TB data: Azure DMS </br>• > 1-TB data: Spark + Mongo ChangeStream |
-| • Need to change schema during migration </br>• need more flexibility than aforementioned tools | Azure Cosmos DB Mongo API | • ADF is more flexible than DMS, it supports schema modifications during migration and supports the most source/destination combinations. </br>• DMS will be better in terms of scale, for example faster migrations. |
+| ***Offline*** <br>• MongoDB on-premise cluster <br>• MongoDB IaaS VM cluster <br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | • <10-GB data: MongoDB native tools <br>• < 1-TB data: Azure DMS <br>•  > 1-TB data: Spark |
+| ***Online*** <br>• MongoDB on-premise cluster <br>• MongoDB IaaS VM cluster <br>• MongoDB Atlas cluster  | Azure Cosmos DB Mongo API | <br>• < 1-TB data: Azure DMS <br>• > 1-TB data: Spark + Mongo ChangeStream |
+| • Need to change schema during migration <br>• need more flexibility than aforementioned tools | Azure Cosmos DB Mongo API | • ADF is more flexible than DMS, it supports schema modifications during migration and supports the most source/destination combinations. <br>• DMS will be better in terms of scale, for example faster migrations. |
 | JSON file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongoimport`***. |
 | CSV file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongoimport`***. |
 | BSON file |  Azure Cosmos DB Mongo API | MongoDB native tools specifically ***`mongorestore`***. |
