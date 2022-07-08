@@ -8,7 +8,7 @@ There are several ways you can engage with your customers through the commercial
 
 No matter how you choose to publish to the commercial marketplace, you'll be able to provide your product’s marketing materials and other content, like videos, to help customers discover your solution.
 
-When you choose to fully invest in your commercial marketplace engagement by making your offers transactable, you’ll be able to take advantage of a flexible set of billing, packaging, and deployment options to fit you and your customers’ specific needs.
+When you choose to fully invest in your commercial marketplace engagement by making your offers transactable, you’ll be able to take advantage of a flexible set of billing, packaging, and deployment options to fit your and your customers’ specific needs.
 
 By default, your Microsoft AppSource and Azure Marketplace solutions are available to all customers, but you can also extend custom offers to individual customers privately by using private offer capabilities.
 
