@@ -1,16 +1,13 @@
-Soon after launching the setup script, the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution. The editor opens to the *:::no-loc text="~/clouddrive/aspnet-learn/src/":::* directory. You can investigate the solution while the script continues to deploy the Docker containers to Azure Kubernetes Service (AKS). While doing so, the script will continue to run.
-
-> [!NOTE]
-> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
->
-> ```bash
-> cd ~/clouddrive/aspnet-learn/src/ && \
->   code .
-> ```
+You can investigate the solution while the script continues to deploy the Docker containers to Azure Kubernetes Service (AKS). While doing so, the script will continue to run.
 
 ## Review code
 
-The following *:::no-loc text="src":::* subdirectories contain .NET Core projects, each of which is containerized and deployed to AKS:
+Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-aspnet-core*. 
+
+> [!IMPORTANT]
+> For brevity, all directory paths described in this module are relative to the *modules/microservices-aspnet-core* directory.
+
+The following subdirectories located in *src* contain .NET projects, each of which is containerized and deployed to AKS:
 
 | Project directory | Description |
 |-------------------|-------------|
@@ -21,7 +18,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 
 ## Verify deployment to AKS
 
-After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
+After the app has deployed to AKS, you'll see a variation of the following message in the terminal:
 
 ```console
 The eShop-Learn application has been deployed.
@@ -33,22 +30,18 @@ You can begin exploring these services (when available):
 ```
 
 > [!TIP]
-> To display these URLs again, run the following command:
->
-> ```bash
-> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-> ```
+> This output is stored in *modules/microservices-aspnet-core/deployment-urls.txt*.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
-1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
     :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Health check page." border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
-1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. After all the services are healthy, select the **Web SPA application** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 

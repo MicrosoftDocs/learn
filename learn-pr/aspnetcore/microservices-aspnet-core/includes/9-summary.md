@@ -14,7 +14,7 @@ The initial setup script created an Azure service principal, which allows Azure 
 To remove the service principal, run the following script:
 
 ```bash
-./deploy/k8s/cleanup-service-principal.sh
+./cleanup-service-principal.sh
 ```
 
 The preceding script:
@@ -31,11 +31,5 @@ The preceding script:
 
 > [!NOTE]
 > More than one service principal is expected if the setup script has been run more than once. Each time the setup script is run, it creates a new service principal.
-
-[!INCLUDE[revert the .NET SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
-
-[!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
-
-[!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
 [!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]

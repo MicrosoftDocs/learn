@@ -2,10 +2,10 @@ In this unit, you run a script to deploy the coupon service and other configurat
 
 ## Deploy changes
 
-Run the following script in the command shell to update the existing Azure Kubernetes Service (AKS) cluster with the new configuration:
+Run the following script in the terminal to update the existing Azure Kubernetes Service (AKS) cluster with the new configuration:
 
 ```bash
-./deploy/k8s/update-aks.sh
+update-aks.sh
 ```
 
 The preceding script uses `helm` commands to:
