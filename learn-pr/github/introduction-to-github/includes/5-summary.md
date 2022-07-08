@@ -12,7 +12,7 @@ You learned about:
 - How a repository fork differs from a clone 
 - Repository labels and where to apply them in issues and pull requests 
 
-Now that you're familiar with the basics of GitHub, learn to [Upload your project by using GitHub best practices](/learn/modules/upload-project-github/).
+Now that you're familiar with the basics of GitHub, learn to [Upload your project by using GitHub best practices](https://docs.microsoft.com/en-us/learn/modules/upload-project-github/).
 
 ## Learn more
 
