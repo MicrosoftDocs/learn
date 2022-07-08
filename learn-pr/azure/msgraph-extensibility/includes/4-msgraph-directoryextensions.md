@@ -1,78 +1,47 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. The second type of extensions is the **directory extensions**, also called **Azure AD** extensions.
 
-    Goal: briefly summarize the key skill this unit will teach
+In the team bonding app scenario, we want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-    Heading: none
+Here, you'll learn how to use the directory extensions to store the three pieces of user data about the employees.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Directory (Azure AD) extensions
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
+The Microsoft Graph directory extensions are only available for use by specific resources in Azure Active Directory (Azure AD) including the **user** and **group** resources.
+
+Directory extensions are closely tied to the application that creates them. To use directory extensions:
+1. First create the directory extension definition in an app and explicitly define the resource types that can be assigned the directory extensions. You *can't* update the directory extension definition later.
+    1. The name of the directory extension becomes the directory extension property name.
+1. Manage the directory extension property and its associated values on instances of the target resource objects.
+1. During the lifecycle of their use, maintain the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
+
+### Directory extension definitions
+
+A directory extension definition is a simple structure of the directory extension. The definition includes the name and return type and also explicitly allowlists the Azure AD resource types that be assigned the directory extensions. To allow directory extensions to be used to store the three custom data, you must specify the user resource as a target object.
+
+After the directory extension definition has been created, it's immediately available for use.
+
+Directory extension definitions can't be updated to avoid breaking changes when the extensions are in use. However, they can be deleted.
+
+### Use directory extensions
+
+After you're defined the directory extension, it's now available for use in user profiles.
+
+You manage the directory extension properties on user profiles through the same HTTP methods used to manage users.
++ Using a POST request, you can store data in the directory extension property when creating a new user
++ Using a PATCH request, you can either store data in the directory extension property, update the stored data, or delete the existing data
++ Using a GET request, you can read the directory extension properties for all users or individual users in the tenant
+
+#### Query capabilities supported by directory extension properties
+
+Directory extension properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` operator.
+
+### Considerations for using directory extensions
+
+<!--TO-DO
+
+Qs:
+
++ Does deleting an app also delete it's directory extensions data?
++ Does restoring an app also restore the directory extensions properties and associated data on the resource instances?
++ Can you protect an app that defines directory extensions from accidental deletion?  Restrict management of the app for example?
 -->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

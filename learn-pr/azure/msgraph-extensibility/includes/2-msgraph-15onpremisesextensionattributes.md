@@ -11,7 +11,7 @@
 
 <!--TODO: add your topic sentences(s)-->
 
-Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. One of these extensions is the 15 predefined extension attribute properties.
+Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. The first type of extensions is the 15 predefined **extension attribute properties**.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -123,6 +123,12 @@ You don't need to store data in all extension attributes. You only store data ba
 You also don't need to use the extension attributes in their logical order. For example, you can choose to use **extensionAttribute14** only or **extensionAttribute1** and **extensionAttribute9** only. To store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag, you can choose to use **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15**.
 
 You can assign values to the extension properties when creating new users or by updating the properties for existing users. For your scenario, the employees will be updating their existing profiles through the team bonding app user interface that calls Microsoft Graph as the underlying API.
+
+#### Query capabilities supported by extension attribute properties
+
+Extension attribute properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty.
+
+The extension attribute properties are specially indexed in Microsoft Graph for advanced querying. This means the HTTP request must include the `$count=true` query parameter and set the **ConsistencyLevel** header to `eventual`.
 
 ### Considerations for using extension attribute properties
 

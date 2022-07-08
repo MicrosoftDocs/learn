@@ -10,7 +10,7 @@
 -->
 <!--TODO: add your topic sentences(s)-->
 
-Microsoft Graph provides a set of 15 extension attributes for storing custom data. In the team bonding app scenario, we need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
+Microsoft Graph provides a set of 15 extension attributes for storing custom data. In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -72,9 +72,9 @@ In this exercise, you'll use an API client such as [Graph Explorer](https://aka.
 
 Sign in to Graph Explorer as an administrator with both the *User Administrator* and *Groups Administrator* Azure AD role.
 
-Consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph permission to perform the API operations in this exercise.
+Consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permission to allow them to discover their colleagues and update their own profile information.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permission to allow them to discover their colleagues and update their own profile information respectively.
 
 ## Define the extension attributes
 
@@ -161,7 +161,7 @@ In this exercise, you'll store these pieces of data for the user named **Adele V
 
 You store data in the existing **onPremisesExtensionAttributes** property by updating the user profile using an HTTP PATCH request and specifying the new values in the request body. You'll store Adele's public LinkedIn profile URL, Skype ID, and Xbox gamertag in **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
-In the team bonding app, Adele would use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
+In the team bonding app, Adele can use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
@@ -327,10 +327,11 @@ As an administrator, call Microsoft Graph through an HTTP POST request to create
 ##### Request
 
 In the following request body:
-+ The **groupTypes** property specifies that we're creating a Microsoft 365 group with dynamic membership.
++ The **groupTypes** property specifies that you're creating a Microsoft 365 group with dynamic membership.
 + The **mailEnabled** and **mailNickname** properties specify that the group can receive mails through the specified mail alias.
 + The **membershipRuleProcessingState** property specifies that
 + The **membershipRule** property specifies the rule that is calculated to calculate users who should be members of the group. In this case, the rule specifies that members are users whose **extensionAttribute15** property in their isn't empty.
++ The **resourceProvisioningOptions** specifies a Teams team to be provisioned when the group is created.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/groups
@@ -346,7 +347,10 @@ POST https://graph.microsoft.com/v1.0/groups
     "mailNickname": "Xboxers",
     "securityEnabled": false,
     "membershipRule": "(user.extensionAttribute15 -ne null)",
-    "membershipRuleProcessingState": "On"
+    "membershipRuleProcessingState": "On",
+    "resourceProvisioningOptions": [
+        "Team"
+    ]
 }
 ```
 
@@ -377,6 +381,9 @@ Content-type: application/json
     "membershipRuleProcessingState": "On",
     "proxyAddresses": [
         "SMTP:Xboxers@M365EDU334089.onmicrosoft.com"
+    ],
+    "resourceProvisioningOptions": [
+        "Team"
     ],
     "renewedDateTime": "2022-07-07T10:06:47Z",
     "securityEnabled": false,
@@ -424,7 +431,7 @@ Content-type: application/json
 }
 ```
 
-And we've confirmed that the Xboxers group is now open for collaboration!
+And you've confirmed that the Xboxers group is now open for collaboration!
 
 ### Customize tokens using data in extension attribute properties
 
