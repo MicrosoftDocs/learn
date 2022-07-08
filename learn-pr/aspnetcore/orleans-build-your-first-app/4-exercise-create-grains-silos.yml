@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.orleans-build-first-app.exercise-create-grains-silos
-title: Creating grains and silos
+title: Exercise - Create grains and silos
 metadata:
-  title: Create grains and silos
+  title: Exercise - Create grains and silos
   description: Learn how to create grains and silos using Orleans.
   ms.date: 5/15/2022
   author: alexwolfmsft
