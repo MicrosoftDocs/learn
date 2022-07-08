@@ -4,6 +4,8 @@ This module explores completing the coupon service, adding it to the existing so
 
 [!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md.md)]
+
 ## Learning objectives
 
 In this module, you will:
@@ -19,3 +21,4 @@ In this module, you will:
 * Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
 * Conceptual knowledge of containers at the beginner level
 * Access to an Azure subscription
+* Ability to run development containers in Docker or Github Codespaces
