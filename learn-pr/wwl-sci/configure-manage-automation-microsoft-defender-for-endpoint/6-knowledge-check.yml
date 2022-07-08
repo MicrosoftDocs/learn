@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 07/01/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -24,10 +24,10 @@ quiz:
       explanation: "Correct.  This is a valid remediation level."
     - content: "Semi - user accounts only"
       isCorrect: false
-      explanation: "Incorrect.  This is not a valid remediation level."
+      explanation: "Incorrect.  This isn't a valid remediation level."
     - content: "Semi - files only"
       isCorrect: false
-      explanation: "Incorrect.  This is not a valid remediation level."
+      explanation: "Incorrect.  This isn't a valid remediation level."
   - content: "A security operations analyst needs to exclude a custom executable file c:\\myapp\\myapp.exe, which exclusion type should they use?"
     choices:
     - content: "File"
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "Enable EDR in block mode"
       isCorrect: true
-      explanation: "Correct. EDR in block mode is used with 3rd party antivirus"
+      explanation: "Correct. EDR in block mode is used with third party antivirus"
     - content: "Allow or block file"
       isCorrect: false
       explanation: "Incorrect. The feature requires Defender antivirus"
     - content: "Automated Investigation"
       isCorrect: false
-      explanation: "Incorrect. Automated investigations are not specific to blocking files."
+      explanation: "Incorrect. Automated investigations aren't specific to blocking files."

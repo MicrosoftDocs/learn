@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform
+metadata:
+  title: Improve SAP seller productivity with Microsoft Teams and Power Platform
+  description: "Integrate applications from SAP with the Microsoft 365 applications. Enable productivity and collaboration in &quot;SAP Sales and Service Core&quot; Teams app to support sales by building Power Automate flows."
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Improve SAP seller productivity with Microsoft Teams and Power Platform
+summary: Integrate applications from SAP with the Microsoft 365 applications. Enable productivity and collaboration in &quot;SAP Sales and Service Core&quot; Teams app to support sales by building Power Automate flows.
+abstract: |
+  After completing this module, you'll be able to:
+  - Enable Teams integration with SAP Sales and Service Core.
+  - Build a Power Automate flow to embed email details into cards for approval
+  - Build a Power Automate flow to send email details to SAP applications.
+prerequisites: |
+  - Working with Microsoft Teams
+  - Background in SAP Sales Cloud
+  - [Get started with Power Automate](/learn/modules/m365-teams-collab-manage-teams/)
+  - [Manage Microsoft Teams](/learn/modules/get-started-flows/)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- business-user
+- functional-consultant
+- solution-architect
+- technology-manager
+products:
+- azure
+- office-teams
+- power-apps
+- power-automate
+subjects:
+- business-applications
+- collaboration
+- marketing-sales
+- modern-work
+- productivity
+units:
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.introduction
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.enable-teams-for-sap-sales-cloud
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.monitor-inbox-for-sap-order-details
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.embed-order-details-into-cards-share-teams
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.submit-confirmed-pos-sap
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.knowledge-check
+- learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.summary
+badge:
+  uid: learn.wwl.improve-sap-collaboration-ms-team.badge

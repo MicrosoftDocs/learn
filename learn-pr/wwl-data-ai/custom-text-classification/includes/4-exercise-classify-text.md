@@ -31,7 +31,7 @@ If you haven't already done so, create a **Language service** resource in your A
 ### Get Language resource key and endpoint
 
 1. Go to the resource group in the [Azure portal](https://portal.azure.com?azure-portal=true), and select the Language resource
-2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these into Notepad for now or we'll come back to this page at that time.
+2. Select **Keys and Endpoint** from the menu on the left side, located under **Resource Management**. You can copy it to your clipboard with the icon next to the key. We'll need one of the keys and the endpoint later, so either paste these values into Notepad for now or we'll come back to this page at that time.
 
 ## Upload sample articles
 

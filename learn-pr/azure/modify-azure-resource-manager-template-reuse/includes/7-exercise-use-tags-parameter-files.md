@@ -1,10 +1,10 @@
-In this exercise, you add tags to help organize and track your Microsoft Azure resources. You also use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations for each deployment.
+In this exercise, you'll add tags to help organize and track your Microsoft Azure resources. You'll also use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations for each deployment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create a tag to track the resource deployment environment and project
 
-First, you create a parameter to use as a resource tag in your template.
+First, you'll create a parameter to use as a resource tag in your template.
 
 1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor after the closing brace for the `storageSKU` parameter. Add a comma and select the <kbd>Enter</kbd> key.
 1. Type **par**. You see a list of related snippets.
@@ -104,8 +104,8 @@ First, you create a parameter to use as a resource tag in your template.
 
 ### Verify that the new tags are in the deployment
 
-1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the storage account you deployed.
-1. You see the **Environment : Dev** and **Project : Tutorial** tags:
+1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group, then select the storage account you deployed.
+1. You'll see the **Environment : Dev** and **Project : Tutorial** tags:
 
     :::image type="content" source="../media/7-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Tutorial Storage account tags." border="true":::
 

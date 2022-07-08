@@ -50,7 +50,7 @@ az deployment group create \
 5.  Obtain the IP address by running the following command:
 
 ```azurecli
-    IPADDRESS=$(az vm show \
+    $IPADDRESS=$(az vm show \
       --name SimpleWinVM \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --show-details \

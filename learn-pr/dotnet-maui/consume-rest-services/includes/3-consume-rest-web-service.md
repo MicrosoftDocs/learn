@@ -6,7 +6,7 @@ The REST model is built on top of the HTTP protocol. A .NET MAUI application can
 
 `HttpClient` is a .NET class that an app can use to send HTTP requests and receive HTTP responses from a REST web service. The resources that the web service exposes are identified by a set of URIs. A URI combines the address of the web service with the name of a resource available at that address.
 
-The `HttpClient` class uses a task-based API for performance, and gives you access to information in requests messages such as HTTP headers, status codes, as well as message bodies that contain the actual data being send and received.
+The `HttpClient` class uses a task-based API for performance, and gives you access to information in request messages such as HTTP headers, status codes, as well as message bodies that contain the actual data being sent and received.
 
 ![Diagram showing how a client app uses an HttpClient object to send and receive HTTP messages and responses](..\media\3-http-client.png)
 
@@ -35,7 +35,7 @@ A REST web service enables a client to perform operations against data through a
 
 ### Create a new resource with HttpClient
 
-To create a new resource by using `HttpClient`, you can use the `SendAsync` method passing it a `HttpRequestMessage` object.
+To create a new resource by using `HttpClient`, you can use the `SendAsync` method passing it an `HttpRequestMessage` object.
 
 The `HttpRequestMessage` is meant to model the request that is sent to the web service. You specify the HTTP verb, the web service's URL, and populate any payload to send via the `HttpRequestMessage.Content` property.
 
@@ -96,7 +96,7 @@ HttpResponseMessage response = await client.SendAsync(message);
 
 ### Delete a resource with HttpClient
 
-To delete a resource by using `HttpClient`, call `SendAsync` with a `HttpRequestMessage` initialized with a **DELETE** verb:
+To delete a resource by using `HttpClient`, call `SendAsync` with an `HttpRequestMessage` initialized with a **DELETE** verb:
 
 ```csharp
 HttpClient client = new HttpClient();
@@ -111,7 +111,7 @@ The response contains the headers, status code, and deleted object.
 
 All HTTP requests return a response message. The data in the response depends on which verb was sent by the app. For example, the response body of an HTTP `GET` request contains the data for the requested resource.
 
-The response body `POST` request returns a copy of the resource that was created, but the response body of a `PUT` request should be empty.
+The response body of a `POST` request returns a copy of the resource that was created, but the response body of a `PUT` request should be empty.
 
 You should always check and handle the status code in the response message. If this status code is in the 200 range (200, 201, 202, and so on), then the operation is deemed to have been successful, although further information may be required later.
 

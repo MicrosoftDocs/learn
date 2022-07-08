@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-windows-hosts-to-azure-sentinel.configure-data-collection-rules
+title: Connect using the Windows Security Events via AMA Connector
+metadata:
+  title: Connect using the Windows Security Events via AMA Connector
+  description: "Connect using the Windows Security Events via AMA Connector"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2a-configure-data-collection-rules.md)]

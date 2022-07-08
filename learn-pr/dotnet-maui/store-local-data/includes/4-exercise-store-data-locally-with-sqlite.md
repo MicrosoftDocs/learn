@@ -150,7 +150,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
             // enter this line
             Init();
 
-            //basic validation to ensure a name was entered
+            // basic validation to ensure a name was entered
             if (string.IsNullOrEmpty(name))
                 throw new Exception("Valid name required");
 
@@ -237,6 +237,8 @@ In this exercise, you'll use SQLite to store information locally with an applica
         public App(PersonRepository repo)
         {
             InitializeComponent();
+
+            MainPage = new AppShell();
 
             PersonRepo = repo;
         }

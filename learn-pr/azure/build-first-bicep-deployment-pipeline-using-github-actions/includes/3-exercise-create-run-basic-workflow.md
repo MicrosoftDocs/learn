@@ -13,7 +13,7 @@ In this exercise, you'll:
 
 1. In a browser, go to [GitHub](https://www.github.com?azure-portal=true). Sign in by using your GitHub account, or create a new account if you don't have one.
 
-1. Select the **+** icon in the upper right of the window, and then select **New repository**.
+1. Select the plus (**+**) icon in the upper right of the window, and then select **New repository**.
 
    :::image type="content" source="../media/3-github-new-repository-menu.png" alt-text="Screenshot of the GitHub interface that shows the menu for creating a new repository." border="true":::
 
