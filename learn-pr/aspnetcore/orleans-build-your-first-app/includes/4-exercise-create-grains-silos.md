@@ -40,7 +40,7 @@ Orleans grains should utilize an interface to define their methods and propertie
 
     The `SetUrl` method stores the shortened route segment and the full URL in a field on the class. When the grain is retrieved using the shortened identifier, the `GetUrl` method then returns the full URL. The full URL can be used by the app to redirect the user to the desired location.
 
-## Creating and configuring the silo
+## Create and configure the silo
 
 You've defined a grain class and interface in your app. However, in order to implement the grain successfully, you still need to configure your app to use Orleans.
 
