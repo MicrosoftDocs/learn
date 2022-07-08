@@ -6,5 +6,3 @@ The dev container runs in one of two environments:
 
 1. [Visual Studio Code and a supported Docker environment on your local machine](/learn/modules/use-docker-container-dev-env-vs-code/).
 1. [GitHub Codespaces](https://github.com/features/codespaces) (costs may apply).
-
-Before beginning, ensure you have access to one of these environments.
