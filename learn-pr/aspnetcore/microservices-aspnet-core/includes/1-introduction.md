@@ -4,7 +4,7 @@ This module explores completing the coupon service, adding it to the existing so
 
 [!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
-[!INCLUDE[Dev containers](../../includes/dev-containers/required.md.md)]
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
 
 ## Learning objectives
 
