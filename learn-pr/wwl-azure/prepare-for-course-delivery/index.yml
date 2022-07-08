@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-for-course-delivery
 metadata:
-  title: prepare for course delivery
+  title: Microsoft Learn for Educators preparing for course delivery
   description: "Use the resources available from Microsoft to prepare to teach your course and feel confident you're providing your students the skills they need skills to be successful across various in-demand technical careers."
-  ms.date: 07/06/2022
+  ms.date: 07/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: prepare for course delivery
+title: Microsoft Learn for Educators preparing for course delivery
 summary: Use the resources available from Microsoft to prepare to teach your course and feel confident you're providing your students the skills they need skills to be successful across various in-demand technical careers.
 abstract: |
   After completing this module, you should be able to:
