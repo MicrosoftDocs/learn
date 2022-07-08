@@ -125,6 +125,6 @@ db.salesReceipts.aggregate(
 ```
 
 > [!NOTE] 
-> You can also run these *db.collection.aggregate* functions in the Azure Portal by using the *Shell* included in the Azure Cosmos DB API for MongoDB account page.  Under *Data Explorer*, expand your database and choose the collection you want to run the function against, you will see a *New Shell* option in the collection menu.
+> You can also run these *db.collection.aggregate* functions in the Azure portal by using the *Shell* included in the Azure Cosmos DB API for MongoDB account page.  Under *Data Explorer*, expand your database and choose the collection you want to run the function against, you will see a *New Shell* option in the collection menu.
 
 As we've illustrated, Azure Cosmos DB API for MongoDB uses MongoDB aggregation pipelines to give us the ability of running complex queries right at the server with no issues. This reduces the need to send all the original documents back to the client to calculate those aggregations programmatically.

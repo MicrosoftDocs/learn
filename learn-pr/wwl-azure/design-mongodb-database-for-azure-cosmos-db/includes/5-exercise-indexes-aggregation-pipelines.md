@@ -49,12 +49,12 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
 1. Select the user icon on the upper right hand corner besides your sign-in name.  Select **Switch Directory**.
 
     > [!div class="mx-imgBorder"]
-    > [![Diagram showing the switch directory option.](../media/5-switch-directory-login.png)](../media/5-switch-directory-login.png#lightbox)
+    > [![Screenshot showing the switch directory option.](../media/5-switch-directory-login.png)](../media/5-switch-directory-login.png#lightbox)
 
 1. Select the **Switch** button.  You'll notice in the upper right hand corner that you should now be in the Microsoft Learn Sandbox directory.
 
     > [!div class="mx-imgBorder"]
-    > [![Diagram showing the switch button.](../media/5-switch-directory.png)](../media/5-switch-directory.png#lightbox)
+    > [![Screenshot showing the switch button.](../media/5-switch-directory.png)](../media/5-switch-directory.png#lightbox)
 
 Let's continue with the lab.  
 
@@ -69,7 +69,7 @@ We'll use the Azure portal to run a few queries and review their impact.
 1. On the right hand side of the collection menu, select ***>_ New Shell***.
 
     > [!div class="mx-imgBorder"]
-    > [![Diagram showing the New Shell option.](../media/5-mongodb-api-new-shell.png)](../media/5-mongodb-api-new-shell.png#lightbox)
+    > [![Screenshot showing the New Shell option.](../media/5-cosmos-mongodb-new-shell.png)](../media/5-cosmos-mongodb-new-shell.png#lightbox)
 
 1. Time to run a simple query to return all the documents for customers with the last name ***Benson***. To do so, on the Shell prompt run the query below.
 
@@ -124,7 +124,7 @@ We'll use the Azure portal to run a few queries and review their impact.
 
 1. To add the index, just put the column name, **lastName** under the *Definition* column and select **Single Field** from the *Type* pulldown. Now select ***Save*** under the menu to create the index. You could also create multiple Single Field indexes at the same time.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Once you select ***Save*** you can scroll up on the Indexing Policy tab to see the progress of the index creation. It should take 5-20 seconds to create this index. Note that for very large indexes this could take from many minutes to hours.
 
 1. Let's go back to the Shell, if the connection timed out, just open a New Shell.

@@ -23,7 +23,7 @@ Under your Azure Cosmos DB API for MongoDB database in the Azure portal, select 
 1. Select on the Save icon.
 
   > [!div class="mx-imgBorder"]
-  > [![Diagram showing the how to add index policies using the Azure Portal Index Policy tab.](../media/3-add-index-policy-azure-portal-index-policy-tab.png)](../media/3-add-index-policy-azure-portal-index-policy-tab.png#lightbox)
+  > [![Screenshot showing the how to add index policies using the Azure portal Index Policy tab.](../media/3-add-index-policy-azure-portal-index-policy-tab.png)](../media/3-add-index-policy-azure-portal-index-policy-tab.png#lightbox)
 
 #### Create a single field index using the MongoDB Shell
 
@@ -155,7 +155,7 @@ db.doctors.find().sort({lastName:-1,firstName:-1})
 ```
 
 > [!NOTE] 
-> You can't create a compound index using the Azure Portal.
+> You can't create a compound index using the Azure portal.
 
 Let's suppose we want to add a compound index by ***lastName*** descending and ***firstName*** descending for the *doctors* collection in the *employees* database.
 
