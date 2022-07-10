@@ -12,7 +12,7 @@ The context in which your functions run is called a function app. A function app
 
 In the Consumption and Premium plans, Functions scales CPU and memory resources by adding more function app instances. The number of instances is determined based on the number of events that trigger a function. All functions within a function app share resource within an instance and scale at the same time.
 
-## Azure Functions Monitoring
+## Azure Functions monitoring
 
 Azure Functions offers built-in integration with Azure Application Insights to monitor functions. Application Insights collects log, performance, and error data. It helps you detect performance anomalies, diagnose issues and better understand how your functions are used.
 
@@ -23,7 +23,7 @@ Application Insights instrumentation is built into Azure Functions. With Applica
 
 The following image shows an example of how to view data in Application Insights for a Function App.
 
-:::image type="content" source="../media/Monitoring_Telemetry_data_for_Azure_Functions.png" alt-text="Monitoring Telemetry data for Azure Functions":::
+:::image type="content" source="../media/monitoring-telemetry-data-for-azure-functions.png" alt-text="Screenshot showing Monitoring telemetry data for Azure Functions":::
 
 ## Azure Functions Components
 

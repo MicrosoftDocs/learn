@@ -19,10 +19,10 @@ quiz:
       choices:
         - content: "To host my Web API."
           isCorrect: false
-          explanation: "Incorrect! Even though you could build a Web API with Azure Functions and host it you are most likely looking for something like App Service. Azure Functions makes use of event-based triggers, and the code only runs when a condition is met."
-        - content: "To run long > 30 min batch jobs."
+          explanation: "Incorrect! Even though you could build a Web API with Azure Functions and host it, you're most likely looking for something like App Service. Azure Functions makes use of event-based triggers, and the code only runs when a condition is met."
+        - content: "To run long > 30-min batch jobs."
           isCorrect: false
-          explanation: "Incorrect! Azure Function is meant to execute the code for a shorter period of time <10 min. Longer jobs could be split up in smaller parts and leverage Durable Functions but generally there are better choices than Azure Functions for this use case."
+          explanation: "Incorrect! Azure Function is meant to execute the code for a shorter period of time <10 min. Longer jobs could be split up in smaller parts and use Durable Functions but generally there are better choices than Azure Functions for this use case."
         - content: "To run code that needs to run for a reason."
           isCorrect: true
           explanation: "Correct! Azure Functions is event based and the code runs for a reason, when a certain condition has been met."
