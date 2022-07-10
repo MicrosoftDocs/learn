@@ -6,7 +6,7 @@ There are a lot of benefits to using Azure Web PubSub. Here's a list of benefits
 
 :::image type="content" source="../media/benefits.png" alt-text="This image depicts the benefits of Azure Web PubSub":::
 
-- **Built-in support for large-scale client connections and highly available architectures:** Azure Web PubSub service is designed for large scale real-time applications. The service allows multiple instances to work together and scale to millions of client connections. Web PubSub also supports multiple global regions for sharding, high availability, or disaster recovery purposes.
+- **Built-in support for large-scale client connections and highly available architectures:** Azure Web PubSub service is designed for large-scale real-time applications. The service allows multiple instances to work together and scale to millions of client connections. Web PubSub also supports multiple global regions for sharding, high availability, or disaster recovery purposes.
 
 - **Support for a wide variety of client SDKs and programming languages:** Azure Web PubSub service works with a broad range of clients, such as web and mobile browsers, desktop apps, mobile apps, server process, IoT devices, and game consoles. Since this service supports the standard WebSocket connection with publish-subscribe pattern, it's easy to use any standard WebSocket client SDK in different languages with this service.
 
