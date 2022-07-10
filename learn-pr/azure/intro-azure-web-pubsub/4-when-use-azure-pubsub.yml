@@ -33,12 +33,4 @@ quiz:
             well as server-based applications, hence infrastructure isn't a mandatory requirement, it is optional."
         - content: "You can't use REST API with Azure Web PubSub"
           isCorrect: false
-<<<<<<< HEAD
           explanation: "Incorrect. Azure Web PubSub service provides REST API to enable applications to post messages to clients connected, in any REST capable programming languages."
-=======
-          explanation:
-            "Incorrect. Azure Web PubSub service provides a REST API to let
-            applications to post messages to clients, in any REST-capable programming language."
-            applications to post messages to clients connected, in any REST
-            capable programming languages."
->>>>>>> 68355a2542082ee6f35a0e6815124f9662522859
