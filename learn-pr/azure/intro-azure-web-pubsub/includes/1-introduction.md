@@ -21,9 +21,3 @@ In this module, you will:
 - Understand what Azure Web PubSub is.
 - Describe how Azure Web PubSub works.
 - Learn when to use Azure Web PubSub.
-
-## Prerequisites
-
-- Basic knowledge about server-client architecture.
-- A basic understanding of serverless applications.
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/) before you begin.
