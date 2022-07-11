@@ -6,7 +6,7 @@ Azure Synapse Link for Azure SQL Database uses a *link connection* to map one or
 
 ## Implementing Azure Synapse Link for Azure SQL Database
 
-To use Azure Synapse Link for Azure SQL Database, you need to set some configuration in your Azure SQL Database server, before creating a link connection in Azure Synapse Analytics.
+To use Azure Synapse Link for Azure SQL Database, you need to configure some settings in your Azure SQL Database server, before creating a link connection in Azure Synapse Analytics.
 
 ### Configure Azure SQL Database
 
@@ -29,7 +29,7 @@ ALTER ROLE [db_owner] ADD MEMBER my_synapse_workspace;
 
 Azure Synapse Link for Azure SQL Database synchronizes the source data to tables in a dedicated SQL pool in Azure Synapse Analytics. You therefore need to create and start a dedicated SQL pool in your Azure Synapse Analytics workspace before you can create the link connection.
 
-The database associated with the dedicated SQL pool must include the appropriate schema for the target table. If source tables are defined a schema other than the default **dbo** schema, you must create a schema of the same name in the dedicated SQL pool database:
+The database associated with the dedicated SQL pool must include the appropriate schema for the target table. If source tables are defined in a schema other than the default **dbo** schema, you must create a schema of the same name in the dedicated SQL pool database:
 
 ```sql
 CREATE SCHEMA myschema;
@@ -39,7 +39,7 @@ CREATE SCHEMA myschema;
 
 To create a linked connection, add a **linked connection** on the **Integrate** page in Azure Synapse Studio. You'll need to:
 
-1. Select or create a *linked service* for your Azure SQL Database. You can create this separately ahead of time or as part of the process of creating a linked connection for Azure Synapse Link. You can use a managed identity of SQL authentication to connect the linked service to Azure SQL Database.
+1. Select or create a *linked service* for your Azure SQL Database. You can create this separately ahead of time, or as part of the process of creating a linked connection for Azure Synapse Link. You can use a managed identity or SQL authentication to connect the linked service to Azure SQL Database.
 2. Select the tables in the source database that you want to include in the linked connection.
 3. Select the target dedicated SQL pool in which the target tables should be created.
 4. Specify the number of CPU cores you want to use to process synchronization. Four driver cores will be used in addition to the number of cores you specify.

@@ -6,11 +6,11 @@ You need to prepare for the kickoff meeting for planning for migration one of yo
 
 You will:
 
- -  Explore SAP HANA on Azure (Large Instances).
- -  Explore deployment options for SAP solutions on Azure.
- -  Review available SKUs for SAP HANA on Azure (Large Instances).
- -  Explore custom sizing for SAP HANA on Azure (Large Instances).
- -  Review SAP-certified configurations.
- -  Examine SAP HANA certifications.
- -  Review SAP HANA on Azure (Large Instances) supported operating systems.
- -  Explore SAP HANA on Azure (Large Instances) storage.
+- Explore SAP HANA on Azure (Large Instances).
+- Explore deployment options for SAP solutions on Azure.
+- Review available SKUs for SAP HANA on Azure (Large Instances).
+- Explore custom sizing for SAP HANA on Azure (Large Instances).
+- Review SAP-certified configurations.
+- Examine SAP HANA certifications.
+- Review SAP HANA on Azure (Large Instances) supported operating systems.
+- Explore SAP HANA on Azure (Large Instances) storage.
