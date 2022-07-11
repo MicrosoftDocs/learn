@@ -202,7 +202,7 @@
                 "dest": "modules"
             },
             {
-                "src": "dotnet-maui",
+                "src": "dot-net-maui",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
