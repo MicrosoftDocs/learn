@@ -22,7 +22,7 @@ roles:
 - data-analyst
 - data-engineer
 products:
-- azure-purview
+- microsoft-purview
 subjects:
 - data-analytics
 - information-protection-governance

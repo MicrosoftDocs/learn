@@ -8,10 +8,10 @@ You need to prepare the specifications to use the Azure Governance collection of
 
 You will:
 
- -  Explore Azure Resource Manager and Azure Resource Manager templates.
- -  Examine role-based access control.
- -  Organize Azure resources with tags.
- -  Explore Azure Policy.
- -  Explore management groups.
- -  Explore Azure Automation.
- -  Explore security and compliance services.
+- Explore Azure Resource Manager and Azure Resource Manager templates.
+- Examine role-based access control.
+- Organize Azure resources with tags.
+- Explore Azure Policy.
+- Explore management groups.
+- Explore Azure Automation.
+- Explore security and compliance services.

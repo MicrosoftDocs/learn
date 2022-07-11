@@ -7,7 +7,7 @@ To create the single page application, you'll create a Node.js web server to ser
 >[!NOTE]
 >The instructions below assume you are using v2.14.2 of the Microsoft Authentication Library for JavaScript 2.0.
 
-Before you proceed, ensure you have the latest version of Node.js v16.14.2 or later installed and you've set the environment path variables for the application to run.
+Before you proceed, ensure you have the latest version of Node.js v16.14.2, or later installed and you've set the environment path variables for the application to run.
 
 1. Visit [this link](https://github.com/Azure-Samples/app-mgnt-javascript-node-spa) to access the code sample you'll use to create the test application in this unit.
 1. Follow the instructions in the readme file to clone the repo and set up the project dependencies on your local machine.
@@ -97,6 +97,6 @@ We'll use the Node.js application to test the admin consent workflow.
 
 1. Sign in using a **Work or School Account** with a user *who isn't assigned* the global administrator role. On the next screen, you'll see the **Approval required** message. In the given text box, enter a justification for requiring admin consent and select **Request Approval**.
 
-   :::image type="content" source="../media/3-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
+   :::image type="content" source="../media/2-need-admin-approval-justification.png" alt-text="Screenshot of the consent screen for requesting admin consent.":::
 
 The designated reviewer is alerted about this request through email and they can view the incoming admin consent request in the Azure portal.
