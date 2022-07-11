@@ -3,7 +3,7 @@ The .NET SDK client library for the Azure Cosmos DB SQL API enables client appli
 The SDK is available using the NuGet package manager and is also open-source on GitHub:
 
 | Source | Description | Link |
-| ---: | ---: | :--- |
+| --- | --- | --- |
 | NuGet | Client library package for .NET applications | [github.com/azure/azure-cosmos-dotnet-v3](https://github.com/azure/azure-cosmos-dotnet-v3) |
 | GitHub | Open-source repository | [nuget.org/packages/microsoft.azure.cosmos](https://www.nuget.org/packages/microsoft.azure.cosmos) |
 | Microsoft Docs | API reference and code samples | [docs.microsoft.com/azure/cosmos-db/sql/samples-dotnet](/azure/cosmos-db/sql/samples-dotnet) |
