@@ -97,7 +97,7 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
             spec:
               containers:
                 - name: coupon-api
-                  image: {{ .Values.registry }}/coupon.api:linux-latest
+                  image: {{ .Values.registry }}/coupon.api:linux-net6-initial
                   imagePullPolicy: Always
                   ports:
                     - containerPort: 80
