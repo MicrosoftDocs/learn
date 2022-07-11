@@ -3,7 +3,7 @@ uid: learn.wwl.examine-iot-edge-device-deployment
 metadata:
   title: Examine IoT Edge device deployment
   description: "This module introduces you to IoT Edge device deployment concepts, the IoT Edge deployment manifest, and other considerations when preparing for IoT Edge device deployments."
-  ms.date: 07/01/2022
+  ms.date: 07/11/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
