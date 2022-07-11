@@ -33,7 +33,7 @@ The implementation details for Azure Synapse Link vary between the two types of 
 
 ### Change feed
 
-Azure Synapse Link for SQL works uses the *change feed* feature in Azure SQL Database and Microsoft SQL Server 2022 to capture changes to the source tables. All data modifications are recorded in the transaction log for the source database. The change feed feature monitors the log and applies the same data modifications in the target database. In the case of Azure SQL Database, the modifications are made directly to the target database. When using Azure Synapse Link for SQL Server, the changes are recorded in files and saved to a *landing zone* in Azure Data Lake Gen2 storage before being applied to the target database.
+Azure Synapse Link for SQL uses the *change feed* feature in Azure SQL Database and Microsoft SQL Server 2022 to capture changes to the source tables. All data modifications are recorded in the transaction log for the source database. The change feed feature monitors the log and applies the same data modifications in the target database. In the case of Azure SQL Database, the modifications are made directly to the target database. When using Azure Synapse Link for SQL Server, the changes are recorded in files and saved to a *landing zone* in Azure Data Lake Gen2 storage before being applied to the target database.
 
 > [!NOTE]
 > Change feed is similar to the *change data capture* (CDC) feature in SQL Server. The key difference is that CDC is used to reproduce data modifications in a table in the same database as the modified table. Change feed caches the data modification in memory and forwards it to Azure Synapse Analytics.
