@@ -9,7 +9,7 @@ Your objectives for the end users at your organization will likely focus on one 
 
 ## Access organizational apps and email
 
-Users expect to work from devices using your organization's apps, including reading and responding to email, updating and sharing data, and more. You must determine the different types of apps your organization uses and needs. To accomplish this objective, start by making a list of the apps your end users regularly use. Also, review the [Microsoft InTune protected apps ](/mem/intune/apps/apps-supported-intune-apps?azure-portal=true). In addition, you can become more familiar with app management overall in [Intune](/mem/intune/apps/app-management?azure-portal=true) and 
+Users expect to work from devices using your organization's apps, including reading and responding to email, updating and sharing data, and more. You must determine the different types of apps your organization uses and needs. To accomplish this objective, start by making a list of the apps your end users regularly use. Also, review the [Microsoft Intune protected apps ](/mem/intune/apps/apps-supported-intune-apps?azure-portal=true). In addition, you can become more familiar with app management overall in [Intune](/mem/intune/apps/app-management?azure-portal=true) and 
 [Configuration Manager](/mem/configmgr/apps/understand/introduction-to-application-management?azure-portal=true).
 
 ## Secure access on all devices
