@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.trigger-github-actions-trunk-based-development.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/07/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "How does a machine learning engineer enforce that data scientists can only edit code in feature branches?"
+    choices:
+    - content: "Trigger a workflow with a pull request."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests allow you to discuss proposed changes."
+    - content: "Give the data scientists write access to the repo."
+      isCorrect: false
+      explanation: "Incorrect. This will allow them to make changes to the main branch."
+    - content: "Add a branch protection rule."
+      isCorrect: true
+      explanation: "Correct. When the machine learning engineer protects the main branch, data scientists will only be able to edit feature branches."
+  - content: "Which event should a machine learning engineer use to trigger a GitHub Actions workflow to run when a pull request is merged?"
+    choices:
+    - content: "`pull_request`"
+      isCorrect: false
+      explanation: "Incorrect. This will trigger a workflow when a pull request is created."
+    - content: "`push`"
+      isCorrect: true
+      explanation: "Correct. Use a push to main event to trigger a workflow whenever a pull request is merged."
+    - content: "`fork`"
+      isCorrect: false
+      explanation: "Incorrect. This will trigger a workflow when someone forks the repository."

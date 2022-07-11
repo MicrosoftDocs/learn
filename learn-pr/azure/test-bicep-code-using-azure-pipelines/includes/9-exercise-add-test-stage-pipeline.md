@@ -32,15 +32,17 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
 
-1. In the **Deploy** stage, update `inlineScript` to the following code:
+1. In the **Deploy** stage, update the deployment step to publish the outputs to a variable:
 
-   :::code language="bash" source="code/9-pipeline.yml" range="76-83" highlight="1-2, 7-8" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="71-82" highlight="12" :::
 
-   Now, your deployment process still uses the same Azure CLI command as it did previously, but the output of that command is stored in a script variable named `deploymentOutput`. The output of Azure CLI commands is formatted as JSON.
+   Now, your deployment process still uses the same task as it did previously, but the outputs from the deployments are stored in a pipeline variable named `deploymentOutputs`. The output variable is formatted as JSON.
 
-   If an error happens during the deployment, the `set -e` command ensures that the step fails, which then causes the pipeline to stop.
+1. To convert the JSON-formatted outputs into pipeline variables, add the following script step below the deployment step:
 
-   If the deployment completes successfully, the script accesses the value of the `appServiceAppHostName` output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable named `appServiceAppHostName`.
+   :::code language="yaml" source="code/9-pipeline.yml" range="84-89" :::
+
+   If the deployment completes successfully, the script accesses the value of each output from the Bicep deployment. It does this by using the `jq` tool to access the relevant part of the JSON output. Then, it publishes the value to a stage output variable with the same name as the Bicep deployment output.
 
    > [!NOTE]
    > Pester and jq are both preinstalled on Microsoft-hosted agents for Azure Pipelines. You don't need to do anything special to use them in a script step.
@@ -53,19 +55,19 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="85-90" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="91-96" :::
 
    This code defines the stage and a job. It also creates a variable in the job named `appServiceAppHostName`. This variable takes its value from the output variable that you created in the preceding section.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="91-103" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="97-109" :::
 
    This step runs a PowerShell script to run the test script that you wrote earlier by using the Pester testing tool.
 
 1. At the bottom of the file, add the following step definition to the **SmokeTest** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="105-111" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="111-117" :::
 
    This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how this is displayed shortly.
 
@@ -77,7 +79,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="76-83, 85-111" :::
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="82-117" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -123,7 +125,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Find the definition for the Azure App Service app, and update it to include the `httpsOnly` property in its `properties` area:
 
-   :::code language="bicep" source="code/9-fixed.bicep" range="46-65" highlight="6" :::
+   :::code language="bicep" source="code/9-fixed.bicep" range="56-75" highlight="6" :::
 
 1. Save the file.
 
