@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-automated-machine-learning.automated-machine-learning
+title: What is automated machine learning?
+metadata:
+  title: What is automated machine learning?
+  description: "What is automated machine learning?"
+  ms.date: 07/06/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-what-is-automated-machine-learning.md)]
