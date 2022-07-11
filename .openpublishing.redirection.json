@@ -15392,37 +15392,37 @@
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/1-introduction",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/2-detect-network-connectivity.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/2-detect-network-connectivity",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/2-detect-network-connectivity",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/3-consume-rest-web-service.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/3-consume-rest-web-service",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/3-consume-rest-web-service",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/4-use-platform-specific-features.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/4-use-platform-specific-features",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/4-use-platform-specific-features",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/5-exercise-consume-rest-web-service.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/5-exercise-consume-rest-web-service",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/5-exercise-consume-rest-web-service",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/6-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/6-summary",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/dotnet-maui/consume-rest-services/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services/index",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/index",
       "redirect_document_id": true
     },
     {
