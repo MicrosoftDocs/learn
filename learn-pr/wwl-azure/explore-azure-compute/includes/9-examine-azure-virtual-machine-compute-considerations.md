@@ -13,9 +13,9 @@ Hyperthreading on bare-metal server improves the overall throughput. However, th
 
 The following NetWeaver and/or SAP HANA certified Azure VM families are running on host hardware where Intel Hyperthreading is enabled:
 
- -  **D(S)v3**
- -  **E(S)v3**
- -  **M-Series**
+- **D(S)v3**
+- **E(S)v3**
+- **M-Series**
 
 When sizing your intended deployment, you must also consider whether you'll implement it by using the 2-tier or 3-tier architecture. This is reflected in the SAPS ratings for Azure VM sizes documented in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), which provides distinct SAP numbers for both architecture type for each VM size.
 
@@ -25,10 +25,10 @@ To maximize performance, Microsoft recommends applying additional factors and co
 
 There are several approaches to sizing SAP systems:
 
- -  **Reference-based sizing** – Sizing based on the comparison of ST03N and other actual production performance data of known systems with similar performance data and a known hardware configuration
- -  **Early Watch Alerts (EWA)** – EWA reports will show existing hardware and current performance and growth for 12 months, letting you map it to similar Azure hardware (CPU type, core count, memory, etc.). Alternatively, EWA reports provide the hardware vendor/model, and you can look up SAPS for the old hardware
- -  **SAP Quick Sizer** – SAP tool that calculates SAPS, database size and RAM based on many inputs including business document volumes and number of users
- -  **T-Shirt** – Sizing based on the anticipated number of SAP users where precise information is unavailable
+- **Reference-based sizing** – Sizing based on the comparison of ST03N and other actual production performance data of known systems with similar performance data and a known hardware configuration
+- **Early Watch Alerts (EWA)** – EWA reports will show existing hardware and current performance and growth for 12 months, letting you map it to similar Azure hardware (CPU type, core count, memory, etc.). Alternatively, EWA reports provide the hardware vendor/model, and you can look up SAPS for the old hardware
+- **SAP Quick Sizer** – SAP tool that calculates SAPS, database size and RAM based on many inputs including business document volumes and number of users
+- **T-Shirt** – Sizing based on the anticipated number of SAP users where precise information is unavailable
 
 > [!NOTE]
 > For more information on SAP sizing, see the [SAP documentation](https://www.sap.com/about/benchmark/sizing.html). When you look at the current utilization using either SAP Early Watch Alert reports or other tools, often peak CPU and memory utilization is much lower than the size of the current machines. The general guidance is to use an average target CPU utilization of 65%. If your average utilization is below 30%, the CPU is considered oversized. In Azure, rather than size each VM for its peak workload, you can simply scale up the VM when required and scale it back down again when the workload reduces.<br>
@@ -37,12 +37,12 @@ You might have the option of evaluating performance of your existing Azure deplo
 
 Additional sizing considerations applicable to scenarios involving migrating from anyDB to SAP HANA are documented in the following SAP notes:
 
- -  [1872170 – Suite on HANA – S/4 sizing report](https://launchpad.support.sap.com/#/notes/1872170)
- -  [1995209 – Suite on HANA memory Sizing report – Advanced correction 1](https://launchpad.support.sap.com/#/notes/1995209)
- -  [2062017 – Suite on HANA memory Sizing report – Advanced correction 2](https://launchpad.support.sap.com/#/notes/2062017)
- -  [2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://launchpad.support.sap.com/#/notes/2080648)
- -  [2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://launchpad.support.sap.com/#/notes/2175150)
- -  [2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://launchpad.support.sap.com/#/notes/2213586)
- -  [2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://launchpad.support.sap.com/#/notes/2303847)
+- [1872170 – Suite on HANA – S/4 sizing report](https://launchpad.support.sap.com/#/notes/1872170)
+- [1995209 – Suite on HANA memory Sizing report – Advanced correction 1](https://launchpad.support.sap.com/#/notes/1995209)
+- [2062017 – Suite on HANA memory Sizing report – Advanced correction 2](https://launchpad.support.sap.com/#/notes/2062017)
+- [2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://launchpad.support.sap.com/#/notes/2080648)
+- [2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://launchpad.support.sap.com/#/notes/2175150)
+- [2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://launchpad.support.sap.com/#/notes/2213586)
+- [2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://launchpad.support.sap.com/#/notes/2303847)
 
 In particular, [SAP Note \#1872170](https://launchpad.support.sap.com/#/notes/1872170) documents reports (/SDF/HDB\_SIZING and ZNEWHDB\_SIZE) that facilitate estimating the memory and disk space requirements for the database tables of Business Suite on HANA, S/4HANA systems, and any other ABAP-based systems running on HANA (except for BW). The sizing process includes running an SAP report.
