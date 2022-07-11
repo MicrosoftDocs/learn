@@ -69,7 +69,7 @@ Now, let's create a user account.
 
 1. In the Azure AD organization you created, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
-1. In the top menu bar, select **New user**. The **New user** pane appears for *Contoso Marketing Company*.
+1. In the top menu bar, select **New user**, then select **Create new user** in the drop-down. The **New user** pane appears for *Contoso Marketing Company*.
 
 1. Enter the following values for each setting.
 
