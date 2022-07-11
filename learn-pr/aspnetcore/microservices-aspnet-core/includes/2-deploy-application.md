@@ -39,7 +39,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     az account show -o table
     ```
 
-    If the wrong subscription is selected, select the correct one using the [az account set](/cli/azure/account?view=azure-cli-latest#az-account-set) command.
+    If the wrong subscription is selected, select the correct one using the [az account set](/cli/azure/account#az-account-set) command.
 
 1. Run the quickstart script:
 
