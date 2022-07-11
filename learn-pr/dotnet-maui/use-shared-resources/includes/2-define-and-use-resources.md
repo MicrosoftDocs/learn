@@ -71,7 +71,7 @@ To create a resource, you declare it inside the **Resources** property for a pag
 </ContentPage.Resources>
 ```
 
-When you select a key for your resource, choose a name that reflects the use rather than the value of the resource. For example, to set a label's background to Red, dDon't use **RedColor** as the key, use **BackgroundColor** instead.
+When you select a key for your resource, choose a name that reflects the use rather than the value of the resource. For example, to set a label's background to Red, don't use **RedColor** as the key, use **BackgroundColor** instead.
 
 ## Apply a resource by using StaticResource
 

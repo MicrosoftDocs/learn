@@ -21,7 +21,7 @@ CosmosClient client = new (connectionString, options);
 
 For context, how do we usually perform a single “Create Item” operation? Here, we invoke the **CreateItemAsync** method, which returns a **Task**, which is in turn immediately invoked using the **await** keyword, so we never really handle the **Task** object. It’s just a syntax shortcut to make our code easier to read.
 
-```bash
+```csharp
 await container.CreateItemAsync<Product>(product, partitionKey);
 ```
 
