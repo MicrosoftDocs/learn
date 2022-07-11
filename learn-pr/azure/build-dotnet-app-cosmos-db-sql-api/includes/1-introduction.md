@@ -1,62 +1,31 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The .NET SDK client library for the Azure Cosmos DB SQL API enables client applications to connect to Azure Cosmos via the SQL API endpoint. Many of the SQL API's resources, such as containers, databases, and items, can be created using the SDK.
 
-    Goal: orient the learner to the area covered in this module
+The SDK is available using the NuGet package manager and is also open-source on GitHub:
 
-    Heading: none
+| Source | Description | Link |
+| ---: | ---: | :--- |
+| NuGet | Client library package for .NET applications | [github.com/azure/azure-cosmos-dotnet-v3](https://github.com/azure/azure-cosmos-dotnet-v3) |
+| GitHub | Open-source repository | [nuget.org/packages/microsoft.azure.cosmos](https://www.nuget.org/packages/microsoft.azure.cosmos) |
+| Microsoft Docs | API reference and code samples | [docs.microsoft.com/azure/cosmos-db/sql/samples-dotnet](/azure/cosmos-db/sql/samples-dotnet) |
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
-TODO: add your scenario
+
+Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you'll build will add multiple items using the .NET SDK for Azure Cosmos DB SQL API. Although this is the first version of the application, you'll try to use the documented best practices when using the SDK.
+
 TODO: add a visual element
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+This module walks through the steps to connect to an Azure Cosmos DB SQL API account from a .NET application. Your application will create a database and container resource if they don't already exist. You'll then use both individual and orchestrated operations to create multiple items within the container. Once the data is populated, you'll query the items.
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
+In short, the application will:
 
-    Heading: "## What is the main goal?"
+- **Connect** to the SQL API using a connection string
+- **Create** the necessary databases and containers
+- **Insert** new items into a container
+- **Orchestrate** multiple item operations together within the same container
+- **Query** the resulting items in the container
 
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this module, you'll be able to create a .NET application that connects to Azure Cosmos DB SQL API and perform standard operations and queries.

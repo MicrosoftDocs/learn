@@ -4,7 +4,8 @@ title: Enter exercise title
 metadata:
   unitType: exercise
   title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: |
+    TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords.
   sandbox: true
   interactive: bash-editor
   author: seesharprun
@@ -12,6 +13,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 7/11/2022
-durationInMinutes: 1
+durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise.md)]

@@ -3,7 +3,8 @@ uid: learn.build-dotnet-app-cosmos-db-sql-api
 metadata:
   moduleType: guided-project
   title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: |
+    This module walks through connecting to Azure Cosmos DB SQL API to create and query container items from a .NET console application. 
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
@@ -11,18 +12,22 @@ metadata:
   ms.date: 7/11/2022
 title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
 summary: |
-  TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title, include the note below; see 
+  Connect to an Azure Cosmos DB SQL API account using C# and .NET to perform common operations. Your code will create resources, coordinate multiple operations, and query items using SQL.
+  
   > [!NOTE]
   > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
    In this module, you'll practice how to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3"
+    - Connect to an Azure Cosmos DB SQL API account using the .NET SDK
+    - Create Azure Cosmos DB SQL API database, container, and item resources
+    - Execute multiple Azure Cosmos DB SQL API .NET SDK operations either as a transaction
+    - Query Azure Cosmos DB SQL API items and iterate through the result set
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3"
+  - Experience with Azure Cosmos DB concepts such as databases, containers, and items
+  - Experience writing SQL queries for Azure Cosmos DB SQL API
+  - Ability to execute scripts with Azure CLI
+  - Experience with top-level statement projects in .NET 6 or later
+  - Ability to write C# at an intermediate level
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -33,13 +38,13 @@ products:
 subjects:
   - cloud-computing
 units:
-- learn.build-dotnet-app-cosmos-db-sql-api.introduction
-- learn.build-dotnet-app-cosmos-db-sql-api.prepare
-- learn.build-dotnet-app-cosmos-db-sql-api.exercise-first
-- learn.build-dotnet-app-cosmos-db-sql-api.exercise-second
-- learn.build-dotnet-app-cosmos-db-sql-api.exercise-third
-- learn.build-dotnet-app-cosmos-db-sql-api.exercise-fourth
-- learn.build-dotnet-app-cosmos-db-sql-api.knowledge-check
-- learn.build-dotnet-app-cosmos-db-sql-api.summary
+  - learn.build-dotnet-app-cosmos-db-sql-api.introduction
+  - learn.build-dotnet-app-cosmos-db-sql-api.prepare
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-first
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-second
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-third
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-fourth
+  - learn.build-dotnet-app-cosmos-db-sql-api.knowledge-check
+  - learn.build-dotnet-app-cosmos-db-sql-api.summary
 badge:
   uid: learn.build-dotnet-app-cosmos-db-sql-api.badge

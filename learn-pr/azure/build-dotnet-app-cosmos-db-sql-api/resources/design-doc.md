@@ -44,11 +44,11 @@ Connect to an Azure Cosmos DB SQL API account using C# and .NET to perform commo
 
 1. Introduction
     - Prose table-of-contents
-        - This module walks through the steps to connect to an Azure Cosmos DB SQL API account from a .NET application. Your application will create a database and container resource if they don't already exist. You will then use both individual and orchestrated operations to create multiple items within the container. Once the data is populated, you will query the items.
+        - This module walks through the steps to connect to an Azure Cosmos DB SQL API account from a .NET application. Your application will create a database and container resource if they don't already exist. You'll then use both individual and orchestrated operations to create multiple items within the container. Once the data is populated, you'll query the items.
     - Scenario
-        - Suppose you are a developer at a sporting goods retail company. You are working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they just imported. The application you will build will add multiple items using the .NET SDK for Azure Cosmos DB SQL API. Although this is the first version of the application, you will try to use the documented best practices when using the SDK.
+        - Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you'll build will add multiple items using the .NET SDK for Azure Cosmos DB SQL API. Although this is the first version of the application, you'll try to use the documented best practices when using the SDK.
     - Terminal learning objective (goal)
-        - By the end of this module, you will be able to create a .NET application that connects to Azure Cosmos DB SQL API and perform standard operations and queries.
+        - By the end of this module, you'll be able to create a .NET application that connects to Azure Cosmos DB SQL API and perform standard operations and queries.
 1. Prepare
     - Project overview
     - Setup
@@ -78,8 +78,8 @@ Connect to an Azure Cosmos DB SQL API account using C# and .NET to perform commo
     - Project results to serialize as C# type
     - Parse LINQ and identify SQL equivalent
 1. Summary
-    - Your developer team needed a .NET applications that connects to Azure Cosmos DB SQL API. This application implements common operations using the SDK and illustrate best practices for your team to follow.
-    - You create an application that created and managed databases, containers, and items. Your application also used the SQL query language and LINQ to perform queries on items in Azure Cosmos DB.
+    - Your developer team needed a .NET application that connects to Azure Cosmos DB SQL API. This application implements common operations using the SDK and illustrates best practices for your team to follow.
+    - You authored an application that created and managed databases, containers, and items. Your application also used the SQL query language and LINQ to perform queries on items in Azure Cosmos DB.
     - With the .NET SDK for Azure Cosmos DB SQL API, you were able to illustrate the best way to create, manage, and query data. The .NET SDK made it possible to share a concise sample with your development team that focused solely on the code necessary for them to be successful.
 
 ## Timing
@@ -88,8 +88,7 @@ Connect to an Azure Cosmos DB SQL API account using C# and .NET to perform commo
 | --- | --- |
 | Introduction | 2 |
 | Prepare | 4 |
-| Exercise: Configure an Azure Cosmos DB account | 6 |
-| Exercise: Connect to Azure Cosmos DB account | 6 |
+| Exercise: Create .NET app and import library | 12 |
 | Exercise: Create account resources | 10 |
 | Exercise: Query and read items | 10 |
 | Exercise: Enumerate items using language-intergrated query | 10 |
