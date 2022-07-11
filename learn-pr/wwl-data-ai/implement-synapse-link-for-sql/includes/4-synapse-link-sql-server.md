@@ -42,7 +42,7 @@ Next, in Azure Synapse Analytics, create a linked service for your SQL Server da
 
 ### Create a linked service for your Data Lake Storage Gen2 account
 
-In addition to the linked service for SQL Server, you need a linked service for the Data Lake Storage Gen2 account that will be used as a landing zone. To support this, you need to add the managed identity of your Azure Synapse Analytics Workspace to the Storage Blob Data Contributor role for your storage account and configure the linked service to use the managed identity for authentication.
+In addition to the linked service for SQL Server, you need a linked service for the Data Lake Storage Gen2 account that will be used as a landing zone. To support this, you need to add the managed identity of your Azure Synapse Analytics Workspace to the **Storage Blob Data Contributor** role for your storage account and configure the linked service to use the managed identity for authentication.
 
 ### Create a link connection for Azure Synapse Link
 
