@@ -42,7 +42,7 @@ LOCATION '/mydata'
 ```
 
 > [!TIP]
-> The `CREATE TABLE` returns an error if a table with the specified name already exists in the catalog. To mitigate this behavior, you can use a `CREATE TABLE IF NOT EXISTS` statement or the `CREATE OR REPLACE TABLE` statement.
+> The `CREATE TABLE` statement returns an error if a table with the specified name already exists in the catalog. To mitigate this behavior, you can use a `CREATE TABLE IF NOT EXISTS` statement or the `CREATE OR REPLACE TABLE` statement.
 
 #### Defining the table schema
 

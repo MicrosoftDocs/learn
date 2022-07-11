@@ -1,13 +1,13 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-In this exercise, you create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
+In this exercise, you'll create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
 
 In this exercise, you'll use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create the ARM template file
 
-In the previous module, you created an ARM template that deployed a storage account. You added parameters and an output to this file. Here, you start with that file, but the output has been removed to reduce the overhead.
+In the previous module, you created an ARM template that deployed a storage account. You added parameters and an output to this file. Here, you'll start with that file, but the output has been removed to reduce the overhead.
 
 1. Open Visual Studio Code and create a file called **azuredeploy.json**. If you have this file from the previous module, you can use that file.
 
@@ -23,7 +23,7 @@ Instead of passing in the name of the storage account, you'll change the paramet
 
 1. In the `parameters` section, change ```storageName``` to **storagePrefix**.
 
-1. Change value of the ```maxLength:``` attribute of the `storagePrefix` parameter to **11**. The maximum length for a storage account name is 24 characters. So you want to be sure the added hash from the function you create doesn't cause the name to be longer than that.
+1. Change value of the ```maxLength:``` attribute of the `storagePrefix` parameter to **11**. The maximum length for a storage account name is 24 characters, so you want to be sure the added hash from the function you create doesn't cause the name to be longer than that.
 
 1. Create the expression to set the unique storage account name. In the `resources` section, change the values of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. You learned about this expression in the previous unit. The file should now look like this file:
 
@@ -107,7 +107,7 @@ You learned about the deployment commands in the previous module. Here, we're us
       --parameters storagePrefix={your-prefix}
     ```
 
-    In the first section of this code, you set Azure CLI variables for the path to the template file that you want to deploy and the name of the deployment. You then use the ```az deployment group create``` command to deploy the template to Azure.
+    In the first section of this code, you set Azure CLI variables for the path to the template file that you want to deploy and the name of the deployment. You then used the ```az deployment group create``` command to deploy the template to Azure.
 
     You'll see ```Running...``` in the terminal.
 
@@ -176,13 +176,13 @@ You learned about the deployment commands in the previous module. Here, we're us
       -storagePrefix {your-prefix}
     ```
 
-      In the first section of this code, you set Azure PowerShell variables for the path to the template file that you want to deploy and the name of the deployment. You then use the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure.
+In the first section of this code, you set Azure PowerShell variables for the path to the template file that you want to deploy and the name of the deployment. You then used the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure.
 
 ::: zone-end
 
 ### Check your deployment
 
-When the deployment finishes, go to [Azure](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To check the subscription, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, select the **Microsoft Learn Sandbox** directory.
+When the deployment finishes, go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To check the subscription, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, select the **Microsoft Learn Sandbox** directory.
 
 1. In the left pane, select **Resource groups**.
 1. Select <rgn>[sandbox resource group name]</rgn>.
