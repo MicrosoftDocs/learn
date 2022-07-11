@@ -6,9 +6,6 @@ If you have source code in Subversion, Mercurial, Team Foundation Version Contro
 
 During an import, depending on the version control system you're importing from, you can authenticate with your remote repository, update commit author attribution, and import repositories with large files (or remove large files if you don't want to use Git Large File Storage).
 
-```
-<html>
-<body>
 <!--StartFragment-->
 
 | Import Action | Subversion | Mercurial | TFVC | Git |
@@ -19,9 +16,6 @@ During an import, depending on the version control system you're importing from,
 | Remove large files from your repository | X | X | X |  |
 
 <!--EndFragment-->
-</body>
-</html>
-```
 
 ### Importing a repository with GitHub Importer
 
@@ -33,21 +27,21 @@ Repositories and individual files are subject to size limits. For more informati
 
 Follow these steps to import a repository: 
 
-1. In the upper-right corner of any page, click +, and then click **Import repository**.
+1. In the upper-right corner of any page, click +, and then click **Import repository**.<br>
       :::image type="content" source="../media/1-import-repository.png" alt-text="screenshot import repository":::
-2. Under "Your old repository's clone URL", type the URL of the project you want to import.
+2. Under "Your old repository's clone URL", type the URL of the project you want to import.<br>
       :::image type="content" source="../media/2-import-url.png" alt-text="screenshot import URL":::
-3. Choose your user account or an organization to own the repository, then type a name for the repository on GitHub.
+3. Choose your user account or an organization to own the repository, then type a name for the repository on GitHub.<br>
       :::image type="content" source="../media/3-import-repo-owner-name.png" alt-text="screenshot import repo owner name"::: 
-4. Specify whether the new repository should be public or private. For more information, see "[Setting repository visibility.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)"
+4. Specify whether the new repository should be public or private. For more information, see "[Setting repository visibility.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)"<br>
       :::image type="content" source="../media/4-import-public-or-private.png" alt-text="screenshot import public or private":::
-5. Review the information you entered, then click **Begin import**.
+5. Review the information you entered, then click **Begin import**.<br>
       :::image type="content" source="../media/5-begin-import-button.png" alt-text="screenshot begin import button":::
-6. If your old project was protected by a password, type your login information for that project, then click **Submit**.
+6. If your old project was protected by a password, type your login information for that project, then click **Submit**.<br>
       :::image type="content" source="../media/6-submit-old-credentials-importer.png" alt-text="screenshot submit old credentials importer":::
-7. If there are multiple projects hosted at your old project's clone URL, choose the project you'd like to import, then click **Submit**.
+7. If there are multiple projects hosted at your old project's clone URL, choose the project you'd like to import, then click **Submit**.<br>
       :::image type="content" source="../media/7-choose-project-importer.png" alt-text="screenshot choose project importer"::: 
-8. If your project contains files larger than 100 MB, choose whether to import the large files using [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files), then click **Continue**.
+8. If your project contains files larger than 100 MB, choose whether to import the large files using [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files), then click **Continue**.<br>
       :::image type="content" source="../media/8-select-gitlfs-importer.png" alt-text="screenshot select gitlfs importer":::
 
 You'll receive an email when the repository has been completely imported.
