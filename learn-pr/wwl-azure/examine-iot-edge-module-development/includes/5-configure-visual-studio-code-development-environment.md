@@ -26,9 +26,9 @@ Install Visual Studio Code first and then add the following extensions:
      -  Java: Java Extension Pack for Visual Studio Code.
      -  C: C/C++ extension.
 
-## Language-specific tools
+### Prerequisites
 
-You'll also need to install some other, language-specific tools to develop your module:
+The module templates for some languages and services have prerequisites that are necessary to build the project folders on your development machine with Visual Studio Code.
 
  -  C\#, including Azure Functions: .NET Core 2.1 SDK.
  -  Python: Python and Pip for installing Python packages (typically included with your Python installation).
