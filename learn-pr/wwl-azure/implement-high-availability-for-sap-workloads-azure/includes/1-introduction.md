@@ -1,6 +1,6 @@
 ## Scenario
 
-You need to prepare for the migration of several of your company's SAP workloads to Azure. You will implement high availability for all of the SAP workloads in Azure such as:
+You need to prepare for the migration of several of your company's SAP workloads to Azure. You'll implement high availability for all of the SAP workloads in Azure such as:
 
 - SAP application servers
 - SAP ASCS-SCS instances
