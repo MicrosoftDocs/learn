@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.dot-net-maui.consume-rest-services
+uid: learn.dotnet-maui.consume-rest-services
 metadata:
   moduleType: standard
   title: "Consume REST web services in .NET MAUI apps"
@@ -31,12 +31,12 @@ products:
   - dotnet
   - dotnet-maui
 units:
-- learn.dot-net-maui.consume-rest-services.introduction
-- learn.dot-net-maui.consume-rest-services.detect-network-connectivity
-- learn.dot-net-maui.consume-rest-services.consume-rest-web-service
-- learn.dot-net-maui.consume-rest-services.use-platform-specific-features
-- learn.dot-net-maui.consume-rest-services.exercise-consume-rest-web-service
-- learn.dot-net-maui.consume-rest-services.summary
+- learn.dotnet-maui.consume-rest-services.introduction
+- learn.dotnet-maui.consume-rest-services.detect-network-connectivity
+- learn.dotnet-maui.consume-rest-services.consume-rest-web-service
+- learn.dotnet-maui.consume-rest-services.use-platform-specific-features
+- learn.dotnet-maui.consume-rest-services.exercise-consume-rest-web-service
+- learn.dotnet-maui.consume-rest-services.summary
 
 badge:
   uid: learn.dotnet-maui.consume-rest-services.badge
