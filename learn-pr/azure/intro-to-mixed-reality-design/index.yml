@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure.design-considerations-mr-development
 metadata:
-  title: Design consideration for mixed reality development
+  title: Designing for mixed reality
   description: Learn about all the foundational elements required to design a mixed reality application.
   ms.date: 6/29/2022
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design consideration for mixed reality development
+title: Designing for mixed reality
 summary: Learn about all the foundational elements required to design a mixed reality application and equip yourselves with the required tools.
 abstract: |
   By the end of this module you will be able to:
   - Understand core concepts in designing a mixed reality application.
   - Describe a few available UX components and interaction models.
   - Understand the available mixed reality resources.
-  - Look into a few great example applications build using mixed reality.
+  - Look into a few great example applications built using mixed reality.
 iconUrl: /learn/achievements/mixed-reality-design-badge.svg
 levels:
 - beginner

@@ -8,7 +8,7 @@ The Contoso Pizza Company website consists of multiple microservices responsible
 
 ![Image illustrating adding multiple containers to a single machine instance](../media/2-container.png)
 
-If you increase the number of a shopping cart container instances and need to deploy a new version, you'll have to update _every single instance_ of that container.
+If you increase the number of shopping cart container instances and need to deploy a new version, you'll have to update _every single instance_ of that container.
 
 Container management helps with these tasks.
 
@@ -39,4 +39,4 @@ These tasks include:
 - Managing network traffic.
 - Storing and managing sensitive information, such as usernames and passwords.
 
-Because Kuberentes is a tool to orchestrate containerized workloads, and you can deploy .NET microservices into containers, you can use Kubernetes to orchestrate your .NET microservices. And that's what the rest of this module will teach you.
+Because Kubernetes is a tool to orchestrate containerized workloads, and you can deploy .NET microservices into containers, you can use Kubernetes to orchestrate your .NET microservices. And that's what the rest of this module will teach you.
