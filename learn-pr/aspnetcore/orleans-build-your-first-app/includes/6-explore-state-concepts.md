@@ -1,4 +1,4 @@
-## Persisting data using grains
+## Persist data using grains
 
 When working with grains, you'll often need to persist state to ensure your data is safe between application restarts, grain deactivations, and other situations. Orleans is designed for cloud native applications that are durable and fault tolerant.
 
@@ -25,7 +25,7 @@ The three methods on this interface help you manage the `TState` object.
 * `WriteStateAsync`: This method is used to persist changes made to the state object. When a change is made to the properties or data of the state object, those changes aren't automatically saved until `WriteStateAsync` is called.
 * `ReadStateAsync`: The read method is called automatically when the grain is activated in order to surface state values to other components. However, this method can also be called explicitly to re-read the latest grain state.
 
-## Working with grain state
+## Work with grain state
 
 You define the objects you want to persist in state by declaring them in the constructor of the grain and decorating them with the `PersistentStateAttribute`. Objects decorated with this attribute have access to the API methods covered previously.
 
@@ -38,20 +38,20 @@ The example below demonstrates how to store a `KeyValuePair` object in grain sta
 ```csharp
 public class UrlShortenerGrain : Grain, IUrlShortenerGrain
 {
-    private readonly IPersistentState<KeyValuePair<string, string>> _state;
+    private readonly IPersistentState<KeyValuePair<string, string>> _cache;
 
     public UrlShortenerGrain(
         [PersistentState(
             stateName: "url",
             storageName: "urls")]
-            IPersistentState<KeyValuPair<string, string>> state,
+            IPersistentState<KeyValuePair<string, string>> state)
     {
-        _state = state;
+        _cache = state;
     }
 }
 ```
 
-## Configuring grain state
+## Configure grain state
 
 To persist grain state objects in storage, you first must configure a silo storage provider. The essential configurations are handled on the `SiloBuilder` within the `UseOrleans` method. The following example stores grain persistence in Azure Blob Storage, but there are plenty of other providers available. Remember, the `name` property of the storage provider must match the `storageName` parameter on the state object injected into your grain.
 
