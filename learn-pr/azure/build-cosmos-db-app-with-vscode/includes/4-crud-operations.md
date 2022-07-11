@@ -14,7 +14,7 @@ The main operations for Azure Cosmos DB documents are part of the [DocumentClien
 
 Upsert performs a create or replace operation depending on whether the document already exists.
 
-To perform any of these operations, you need to create a class that represents the object stored in the database. Because we're working with a database of users, you'll want to create a **User** class to store primary data such as their first name, last name, and user id (which is required, as that's the partition key to enable horizontal scaling) and classes for shipping preferences and order history.
+To perform any of these operations, you need to create a class that represents the object stored in the database. Because we're working with a database of users, you'll want to create a **User** class to store primary data such as their first name, last name, and user ID (which is required, as that's the partition key to enable horizontal scaling) and classes for shipping preferences and order history.
 
 Once you have those classes created to represent your users, you'll create new user documents for each instance, and then we'll perform some basic CRUD operations on the documents.
 
@@ -79,7 +79,7 @@ Once you have those classes created to represent your users, you'll create new u
 1. Copy and paste the **WriteToConsoleAndPromptToContinue** method under the **BasicOperations** task near the top of the **Program.cs** file.
 
     ```csharp
-    private void WriteToConsoleAndPromptToContinue(string format, params object[] args)
+    void WriteToConsoleAndPromptToContinue(string format, params object[] args)
     {
         Console.WriteLine(format, args);
         Console.WriteLine("Press any key to continue ...");
