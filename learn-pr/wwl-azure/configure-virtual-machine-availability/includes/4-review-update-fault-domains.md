@@ -1,4 +1,4 @@
-Update Domains and Fault Domains helps Azure maintain high availability and fault tolerance when deploying and upgrading applications. Each virtual machine in an availability set is placed in one update domain and one fault domain.
+Update Domains and Fault Domains help Azure maintain high availability and fault tolerance when deploying and upgrading applications. Each virtual machine in an availability set is placed in one update domain and one fault domain.
 
 :::image type="content" source="../media/update-fault-domains-c1ceee00.png" alt-text="An illustration showing two fault domains with two virtual machines each. ":::
 
