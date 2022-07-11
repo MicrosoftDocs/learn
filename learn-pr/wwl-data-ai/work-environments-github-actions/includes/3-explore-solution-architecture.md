@@ -35,7 +35,7 @@ The **staging** environment is used for part of the outer loop:
 3. Test the code and model with linting and unit testing.
 4. Deploy the model to test the endpoint.
 
-The **production** environment is used for the another part of the outer loop:
+The **production** environment is used for another part of the outer loop:
 
 5. Deploy the model to the production endpoint. The production endpoint is integrated with the web application.
 6. Monitor the model and endpoint performance to trigger retraining when necessary.
