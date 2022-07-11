@@ -1,4 +1,4 @@
-Managing endpoints with Microsoft Endpoint Manager involves using a number of technologies. These technologies require your organization to purchase plans that provide the appropriate licenses involved in managing all endpoint management aspects. You can determine which plan meets your organization's needs. The different plans provide different levels of services and capabilities.
+Managing endpoints with Microsoft Endpoint Manager involves using a number of technologies. These technologies require your organization to purchase plans that provide the appropriate licenses involved in managing all endpoint-management aspects. You can determine which plan meets your organization's needs. The different plans provide different levels of services and capabilities.
 
 ## Services and capabilities
 
