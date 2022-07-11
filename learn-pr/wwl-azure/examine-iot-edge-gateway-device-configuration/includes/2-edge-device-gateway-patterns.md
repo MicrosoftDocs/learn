@@ -111,4 +111,4 @@ The IoT Plug and Play bridge is an open-source application for connecting existi
 
 IoT Plug and Play bridge can be deployed as a standalone executable on any IoT device, industrial PC, server, or gateway running Windows 10 or Linux. It can also be compiled into your application code. A simple configuration JSON file tells the IoT Plug and Play bridge which attached devices/peripherals should be exposed up to Azure.
 
-You can find more information about IoT Pluc and Play bridge here: [https://docs.microsoft.com/azure/iot-develop/concepts-iot-pnp-bridge](/azure/iot-develop/concepts-iot-pnp-bridge).
+You can find more information about IoT Plug and Play bridge here: [https://docs.microsoft.com/azure/iot-develop/concepts-iot-pnp-bridge](/azure/iot-develop/concepts-iot-pnp-bridge).
