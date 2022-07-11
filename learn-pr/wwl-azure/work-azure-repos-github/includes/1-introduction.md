@@ -1,4 +1,4 @@
-This module introduces Azure Repos and GitHub and explores ways to migrate from TFVC to Git and work with GitHub Codespaces for development.<br>
+This module introduces Azure Repos and GitHub and explores ways to migrate from TFVC to Git and work with GitHub Codespaces for development.
 
 ## Learning objectives
 
