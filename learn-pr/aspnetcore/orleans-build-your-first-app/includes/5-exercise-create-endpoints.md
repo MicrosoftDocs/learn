@@ -10,23 +10,25 @@ You'll build the endpoint to create and return shortened URLs first. This method
 1) Below the existing "Hello World" `Get` endpoint, add the following code:
 
     ```csharp
-    app.MapGet("/shorten/{*path}", async (HttpContext context, string path) =>
+    app.MapMethods("/shorten/{*path}",
+        async (IGrainFactory grains, HttpRequest request, string path) =>
     {
         return Results.Ok();
     });
     ```
 
-    This method is also marked as async to properly support the behavior of Orleans. Currently the method just returns an empty 200 OK, so you'll fix that next.
+    This method is marked as async to properly support the behavior of Orleans and injects the grain factory that was previously registered with the dependency injection container. Currently the method just returns an empty 200 OK, so you'll fix that next.
 
 1) Update the body of the GET method you created to match the following code:
 
     ```csharp
-    app.MapGet("/shorten/{*path}", async (HttpContext context, string path) =>
+    app.MapMethods("/shorten/{*path}",
+    async (IGrainFactory grains, HttpRequest request, string path) =>
     {
         var shortenedRouteSegment = Guid.NewGuid().GetHashCode().ToString("X");
-        var shortenerGrain = grainFactory.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
+        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
         await shortenerGrain.SetUrl(shortenedRouteSegment, path);
-        var resultBuilder = new UriBuilder(context.Request.GetEncodedUrl())
+        var resultBuilder = new UriBuilder(request.GetEncodedUrl())
         {
             Path = $"/go/{shortenedRouteSegment}"
         };
@@ -48,12 +50,13 @@ Next you need to create the endpoint that will redirect shortened URLs to the fu
 1) Below the `shorten` endpoint, add another endpoint to handle redirecting the user. This endpoint expects the user to pass in the shortened route segment that was creating using the `shorten` method as a URL path parameter.
 
     ```csharp
-    app.MapGet("/go/{shortenedRouteSegment}", async (string shortenedRouteSegment) =>
+    app.MapGet("/go/{shortenedRouteSegment}",
+        async (IGrainFactory grains, string shortenedRouteSegment) =>
     {
-        var shortenerGrain = grainFactory.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
+        var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
         var url = await shortenerGrain.GetUrl();
     
-        return url is not null ? Results.Redirect(url) : Results.NotFound();
+        return Results.Redirect(url);
     });
     ```
 
@@ -63,7 +66,7 @@ Next you need to create the endpoint that will redirect shortened URLs to the fu
     * The full URL string is retrieved from the grain.
     * If an appropriate URL was found, the user is redirected to that address, otherwise a 404 is returned.
 
-## Testing the app
+## Test the app
 
 The core functionality of the app should now work as expected, so now you can test your code.
 
