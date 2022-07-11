@@ -21,7 +21,7 @@ quiz:
         - content: "A convolutional layer contains more parameters"
           isCorrect: false
           explanation: "A convolutional layer contains small filters that have the same weights for the whole image"
-        - content: "A convolutional layer contains less parameters"
+        - content: "A convolutional layer contains fewer parameters"
           isCorrect: true
           explanation: "Correct, a convolutional layer contains small filters that have the same weights for the whole image"
     - content: "If the size of an input image is **320x200x3**, what would be the size of the tensor after applying a 5x5 convolutional layer with 16 filters?"
@@ -34,10 +34,10 @@ quiz:
           explanation: "First dimension should correspond to the number of filters"
         - content: "320x200x3x16"
           isCorrect: false
-          explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
+          explanation: "Color dimension goes away after applying filters. Also, don't forget that sliding window reduces the spatial dimension."
         - content: "320x200x48"
           isCorrect: false
-          explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
+          explanation: "Color dimension goes away after applying filters. Also, don't forget that sliding window reduces the spatial dimension."
     - content: "Which layers do we apply to significantly reduce spatial dimension in multi-layered CNN?"
       choices:
         - content: "Convolution"
