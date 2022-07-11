@@ -13,7 +13,7 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 In this exercise, you'll provision and test an Azure SQL Database resource.
 
-1. In the Azure portal, select **&#65291; Create a resource** from the upper left-hand corner and search for *Azure SQL*. Then in the resulting **Azure SQL** page, select **Create**.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), select **&#65291; Create a resource** from the upper left-hand corner and search for *Azure SQL*. Then in the resulting **Azure SQL** page, select **Create**.
 
 1. Review the Azure SQL options that are available, and then in the **SQL databases** tile, ensure **Single database** is selected and select **Create**.
 

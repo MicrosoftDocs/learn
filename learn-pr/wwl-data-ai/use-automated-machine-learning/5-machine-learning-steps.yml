@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-automated-machine-learning.machine-learning-steps
+title: Understand the AutoML process
+metadata:
+  title: Understand the AutoML process
+  description: "Understand the AutoML process"
+  ms.date: 07/06/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-machine-learning-steps.md)]
