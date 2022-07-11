@@ -21,7 +21,7 @@ Requestors will receive email notifications when:
 
 Granting tenant-wide admin consent is a sensitive operation. Permissions will be granted on behalf of the entire organization, and they can include permissions to attempt highly privileged operations. Examples of such operations are role management, full access to all mailboxes or all sites, and full user impersonation.
 
-Before you grant tenant-wide admin consent, it's important to ensure that you trust the application and the application publisher for the level of access you're granting. If you aren't confident that you understand who controls the application and why the application is requesting the permissions, don't grant consent.
+Before you grant tenant-wide admin consent, it's important to ensure that you trust the application, and the application publisher for the level of access you're granting. If you aren't confident that you understand who controls the application and why the application is requesting the permissions, don't grant consent.
 
 When you're evaluating a request to grant admin consent, here are some recommendations to consider:
 
@@ -39,9 +39,11 @@ When you're evaluating a request to grant admin consent, here are some recommend
 
 When the user submits a consent request, the request shows up in the **Admin consent request** page in the Azure portal. Designated reviewers sign in to view and act on the new requests. Reviewers only see consent requests that were created after they were designated as reviewers.
 
-:::image type="content" source="../media/4-consent-request-list.png" alt-text="Screenshot of admin consent request page.":::
+:::image type="content" source="../media/4-reviewer-deny-block-add.png" alt-text="Diagram shows what actions reviewers and global administrators can take on admin consent requests.":::
 
 The designated reviewers will be able to evaluate pending consent requests in the **My Pending** queue. Global administrators, Application administrators, Cloud application administrators, and Global readers will be able to see all pending, expired, and completed consent requests in the **All (Preview)** queue. Reviewers will only be able to act on requests that were made after they were designated as reviewers.
+
+:::image type="content" source="../media/4-consent-request-list.png" alt-text="Screenshot of admin consent request page.":::
 
 >[!NOTE]
 >Only reviewers with the global administrator role can approve admin consent requests
