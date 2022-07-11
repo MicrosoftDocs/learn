@@ -23,7 +23,7 @@ Installing Microsoft Defender for IoT micro agents on your devices provides enha
 :::image type="content" source="../media/m10-l02-defender-iot-security-architecture-37a94c17.png" alt-text="Diagram that shows Microsoft Defender for IoT micro agent within a security architecture.":::
 
 
-Micro agents, and other applications use the Azure send security message SDK to send security information into Azure IoT Hub. IoT Hub picks up this information and forwards it to the Azure Defender for IoT service.
+Micro agents, and other applications use the Azure send security message SDK to send security information into Azure IoT Hub. IoT Hub picks up this information and forwards it to the Microsoft Defender for IoT service.
 
 Once the Microsoft Defender for IoT service is enabled, in addition to the forwarded data, IoT Hub also sends out all of its internal data for analysis by Microsoft Defender for IoT. This data includes device-cloud operation logs, device identities, and Hub configuration. All of this information helps to create the Microsoft Defender for IoT analytics pipeline.
 

@@ -32,7 +32,7 @@ In addition to automatic relationship detection, you can also pick and choose wh
 
 Your selections allow you to add entire subscriptions, resource groups, or single resources.
 
-Once Microsoft Defender for IoT has defined all of the resource relationships, it works with Azure Security Center to provide you security recommendations and alerts for these resources.
+Once Microsoft Defender for IoT has defined all of the resource relationships, it works with Microsoft Defender for Cloud to provide you security recommendations and alerts for these resources.
 
 To turn Microsoft Defender for IoT service on a specific IoT Hub on or off:
 

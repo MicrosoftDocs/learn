@@ -154,7 +154,7 @@ The following list of built-in alerts can be triggered on your IoT Hub.
 
 ## Built-in custom alerts for IoT Hub
 
-Azure Defender for IoT allows you to define custom alerts based on expected IoT Hub and/or device behavior.
+Microsoft Defender for IoT allows you to define custom alerts based on expected IoT Hub and/or device behavior.
 
 :::row:::
   :::column:::
