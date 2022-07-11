@@ -58,7 +58,7 @@ Here are some resources:
     Azure](https://azsk.azurewebsites.net/).
 
 -   [Guidance on DevOps pipeline
-    security](https://www.owasp.org/index.php/OWASP_AppSec_Pipeline#tab=Main) by
+    security](https://owasp.org/www-project-appsec-pipeline/#tab=Main) by
     OWASP.
 
 #### 3- Mitigate the identified threats

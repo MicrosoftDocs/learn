@@ -1,4 +1,4 @@
-Even though we may be able to connect to the database over the network, that doesn't mean we can actually gain access to the data itself. Following a layered approach, we'll want to ensure that only users who need access to the data can actually access it. This is where authentication and authorization come in to play.
+Even though we might be able to connect to the database over the network, that doesn't mean we can actually gain access to the data itself. Following a layered approach, we'll want to ensure that only users who need access to the data can actually access it. This access is where authentication and authorization come in to play.
 
 ## Authentication
 
@@ -6,7 +6,7 @@ Authentication is the process of verifying an identity. This identity could be a
 
 ### SQL authentication
 
-SQL authentication method uses a username and password. User accounts can be created in the master database and can be granted permissions in all databases on the server, or they can be created in the database itself (called contained users) and given access to only that database. When you created the logical server for your database, you specified a "server admin" login with a username and password. Using these credentials, you can authenticate to any database on that server as the database owner, or "dbo".
+SQL authentication method uses a username and password. User accounts can be created in the main database and can be granted permissions in all databases on the server, or they can be created in the database itself (called contained users) and given access to only that database. When you created the logical server for your database, you specified a "server admin" login with a username and password. Using these credentials, you can authenticate to any database on that server as the database owner, or "dbo".
 
 ### Azure Active Directory authentication
 
@@ -14,9 +14,9 @@ This authentication method uses identities managed by Azure AD, and is supported
 
 ## Authorization
 
-Authorization refers to what an identity can do within an Azure SQL Database. This is controlled by permissions granted directly to the user account and/or database role memberships. A database role is used to group permissions together to ease administration, and a user is added to a role to be granted the permissions the role has. These permissions can grant things such as the ability to log in to the database, the ability to read a table, and the ability to add and remove columns from a database. As a best practice, you should grant users the least privileges necessary. The process of granting authorization to both SQL and Azure AD users is the same.
+Authorization refers to what an identity can do within an Azure SQL Database. This authorization is controlled by permissions granted directly to the user account and/or database role memberships. A database role is used to group permissions together to ease administration, and a user is added to a role to be granted the permissions the role has. These permissions can grant things such as the ability to sign in to the database, the ability to read a table, and the ability to add and remove columns from a database. As a best practice, you should grant users the least privileges necessary. The process of granting authorization to both SQL and Azure AD users is the same.
 
-In our example here, the server admin account you are connecting with is a member of the db_owner role, which has authority to do anything within the database.
+In our example here, the server admin account you're connecting with is a member of the db_owner role, which has authority to do anything within the database.
 
 ## Authentication and authorization in practice
 
@@ -36,7 +36,7 @@ Let's go ahead and create a new user that we can use to grant access to.
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
-1. Run the following command to create a new user. This will be a _contained user_ and will only allow access to the _marketplace_ database. Feel free to adjust the password as necessary, but be sure and note it as we'll need it for a future step.
+1. Run the following command to create a new user. This is a _contained user_ and will only allow access to the _marketplace_ database. Feel free to adjust the password as necessary, but be sure and note it as we'll need it for a future step.
 
     ```sql
     CREATE USER ApplicationUser WITH PASSWORD = 'YourStrongPassword1';
@@ -64,17 +64,17 @@ Let's make the user a member of the `db_datareader` and `db_datawriter` roles, g
     GO
     ```
 
-Let's now log in as that user and take a look at this in action.
+Let's now sign in as that user and take a look at this in action.
 
 1. While still at the T-SQL prompt, enter `exit` to exit your session.
 
-1. Now let's log back in to the database, but as the user we just created.
+1. Now let's sign back in to the database, but as the user we created.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
-1. Run the following query. This is pulling data from a table that the user is authorized to access.
+1. Run the following query. This query is pulling data from a table that the user is authorized to access.
 
     ```sql
     SELECT FirstName, LastName, EmailAddress, Phone FROM SalesLT.Customer;
