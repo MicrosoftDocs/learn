@@ -1,4 +1,4 @@
-The deployment scenarios described earlier rely extensively on Availability Sets. In some cases, these scenarios can be adapted to the use of Azure Availability Zones. This, however, warrants some additional considerations and architectural changes.
+The deployment scenarios described earlier rely extensively on Availability Sets. In some cases, these scenarios can be adapted to the use of Azure Availability Zones. This, however, warrants some other considerations and architectural changes.
 
 An Azure Availability Zone is defined as: Unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. As of the typical SAP NetWeaver or S/4HANA architecture, you need to protect three different layers:
 
@@ -20,8 +20,8 @@ Every organization has unique requirements, and you should design your applicati
 Account for the following when considering using Availability Zones:
 
 - There are no guarantees regarding the distances between various Availability Zones within an Azure region.
-- Availability Zones are not an ideal DR solution. Natural disasters can cause widespread damage in world regions, including heavy damage to power infrastructures. The distances between various zones might not be large enough to constitute a proper DR solution.
-- The network latency across Availability Zones is not the same in all Azure regions. In some cases, you can deploy and run the SAP application layer across different zones because the network latency from one zone to the active DBMS VM is acceptable. But in some Azure regions, the latency between the active DBMS VM and the SAP application instance, when deployed in different zones, might not be acceptable for SAP business processes. In these cases, the deployment architecture needs to be different, with an active/active architecture for the application or an active/passive architecture where cross-zone network latency is too high.
+- Availability Zones aren't an ideal DR solution. Natural disasters can cause widespread damage in world regions, including heavy damage to power infrastructures. The distances between various zones might not be large enough to constitute a proper DR solution.
+- The network latency across Availability Zones isn't the same in all Azure regions. In some cases, you can deploy and run the SAP application layer across different zones because the network latency from one zone to the active DBMS VM is acceptable. But in some Azure regions, the latency between the active DBMS VM and the SAP application instance, when deployed in different zones, might not be acceptable for SAP business processes. In these cases, the deployment architecture needs to be different, with an active/active architecture for the application or an active/passive architecture where cross-zone network latency is too high.
 - When deciding where to use Availability Zones, base your decision on the network latency between the zones. Network latency plays an important role in two areas:
 
   - Latency between the two DBMS instances that need to have synchronous replication. The higher the network latency, the more likely it will affect the scalability of your workload.

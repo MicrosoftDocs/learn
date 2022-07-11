@@ -147,7 +147,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   kind: 'StorageV2'
   sku: environmentConfigurationMap[environmentType].storageAccount.sku
 
-  resource blobService 'blobServices' existing = {
+  resource blobService 'blobServices' = {
     name: 'default'
 
     resource storageAccountImagesBlobContainer 'containers' = {

@@ -1,6 +1,6 @@
 # Title
 
-Streamline the process of managing consent requests using admin consent workflow in Azure Active Directory
+Configure admin consent workflow using Azure Active Directory
 
 ## Role(s)
 
@@ -23,7 +23,7 @@ intermediate
 
 ## Summary
 
-Create an Azure AD application and enable the admin consent workflow. When users attempt to sign in to the application, they request admin consent by submitting a request to the admin via the consent screen.
+To enable admin consent workflow, you'll create or add a new Azure AD application. When the user attempts to sign in to the application, they request admin consent by submitting a request to the designated reviewer via the consent screen. The reviewer receives an email notification, acts on the request via the Azure portal, then the user is notified of the reviewer's action.
 
 ## Learning objectives
 
